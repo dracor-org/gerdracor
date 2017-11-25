@@ -31,8 +31,8 @@
           </availability>
           <bibl type="originalSource">
             <title>Gustav von Moser: Krieg oder Frieden? Berlin: Eduard Bloch, [o.J.].</title>
-            <date type="print" when="1881"/>
-            <date type="premiere"/>
+            <date type="print" when="1859"/>
+            <date type="premiere" when="1859"/>
             <date type="written"/>
           </bibl>
         </bibl>
@@ -41,30 +41,30 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="johann">
-            <persName>JOHANN</persName>
+          <person xml:id="johann" sex="MALE">
+            <persName>Johann</persName>
           </person>
-          <person xml:id="major">
-            <persName>MAJOR</persName>
+          <person xml:id="major" sex="MALE">
+            <persName>Major</persName>
           </person>
-          <person xml:id="jenny">
-            <persName>JENNY</persName>
+          <person xml:id="jenny" sex="FEMALE">
+            <persName>Jenny</persName>
           </person>
-          <person xml:id="barbier">
-            <persName>BARBIER</persName>
+          <person xml:id="barbier" sex="MALE">
+            <persName>Barbier</persName>
           </person>
-          <person xml:id="milchfrau">
-            <persName>MILCHFRAU</persName>
+          <person xml:id="milchfrau" sex="FEMALE">
+            <persName>Milchfrau</persName>
           </person>
-          <person xml:id="paddemann">
-            <persName>PADDEMANN</persName>
-            <persName xml:id="paddermann">PADDERMANN</persName>
+          <person xml:id="paddemann" sex="MALE">
+            <persName>Paddemann</persName>
+            <persName type="variant">Paddermann</persName>
           </person>
-          <person xml:id="assessor">
-            <persName>ASSESSOR</persName>
+          <person xml:id="assessor" sex="MALE">
+            <persName>Assessor</persName>
           </person>
-          <person xml:id="kulike">
-            <persName>KULIKE</persName>
+          <person xml:id="kulike" sex="MALE">
+            <persName>Kulike</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -79,6 +79,8 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
+        <change who="#ff" when="2017-11-25">rectify IDs; add gender; correct print and premiere
+          date</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -89,8 +91,6 @@
         <head>Krieg oder Frieden?</head>
         <head>Dramatische Bagatelle in einem Akt</head>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head>Personen.</head>
@@ -104,6 +104,9 @@
           <castItem>Eine Milchfrau.</castItem>
         </castList>
       </div>
+      <set>
+        <p>Das Stück spielt zu Berlin, in der Wohnung des Majors von Voß. Zeit: Gegenwart.</p>
+      </set>
       <div type="Dramatis_Personae">
         <castList>
           <head>Charakteristik der Personen.</head>
@@ -122,6 +125,12 @@
           <castItem><hi>Barbier.</hi> Berliner Barbier.</castItem>
         </castList>
       </div>
+      <set>
+        <p>Zimmer im Hause des Major v. Voß. Thüren: in der Mitte, rechts und links. Vorne rechts
+          kleiner Tisch mit Stuhl, ebenso links.</p>
+      </set>
+    </front>
+    <body>
       <div type="scene">
         <head>Erste Scene.</head>
         <stage>
@@ -1745,7 +1754,7 @@
           <speaker>MAJOR.</speaker>
           <l> So so! Haben sie die 20000 Thaler Schon aufgenommen, Herr Paddermann?</l>
         </sp>
-        <sp who="#paddermann">
+        <sp who="#paddemann">
           <speaker>PADDERMANN.</speaker>
           <p> Nein, Herr Major, guter Herr Major, nein. – Es bleibt zwar Friede – aber pumpen thut
             Einem das Geldvolk doch nicht. Aber – die Staatsschuldscheine sind wieder gestiegen,
