@@ -42,75 +42,70 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="kunrad">
-            <persName>KUNRAD</persName>
+          <person xml:id="kunrad" sex="MALE">
+            <persName>Kunrad</persName>
           </person>
-          <person xml:id="heinrich">
-            <persName>HEINRICH</persName>
+          <person xml:id="heinrich" sex="MALE">
+            <persName>Heinrich</persName>
           </person>
-          <person xml:id="gisela">
-            <persName>GISELA</persName>
+          <person xml:id="gisela" sex="FEMALE">
+            <persName>Gisela</persName>
           </person>
-          <person xml:id="ernst">
-            <persName>ERNST</persName>
+          <person xml:id="ernst" sex="MALE">
+            <persName>Ernst</persName>
           </person>
-          <person xml:id="hermann">
-            <persName>HERMANN</persName>
+          <person xml:id="hermann" sex="MALE">
+            <persName>Hermann</persName>
           </person>
-          <person xml:id="mangold">
-            <persName>MANGOLD</persName>
+          <person xml:id="mangold" sex="MALE">
+            <persName>Mangold</persName>
           </person>
-          <person xml:id="warmann">
-            <persName>WARMANN</persName>
+          <person xml:id="warmann" sex="MALE">
+            <persName>Warmann</persName>
           </person>
-          <person xml:id="die_fürsten">
-            <persName>DIE FÜRSTEN</persName>
+          <person xml:id="die_fürsten" sex="MALE">
+            <persName>Die Fürsten</persName>
           </person>
-          <person xml:id="die_bischöfe">
-            <persName>DIE BISCHÖFE</persName>
+          <person xml:id="die_bischöfe" sex="MALE">
+            <persName>Die Bischöfe</persName>
           </person>
-          <person xml:id="hugo">
-            <persName>HUGO</persName>
+          <person xml:id="hugo" sex="MALE">
+            <persName>Hugo</persName>
           </person>
-          <person xml:id="odo">
-            <persName>ODO</persName>
+          <person xml:id="odo" sex="MALE">
+            <persName>Odo</persName>
           </person>
-          <person xml:id="kriegsknecht">
-            <persName>KRIEGSKNECHT</persName>
+          <person xml:id="werner" sex="MALE">
+            <persName>Werner</persName>
+            <persName type="variant">Ein Kriegsknecht</persName>
           </person>
-          <person xml:id="werner">
-            <persName>WERNER</persName>
+          <person xml:id="pilger" sex="MALE">
+            <persName>Pilger</persName>
           </person>
-          <person xml:id="pilger">
-            <persName>PILGER</persName>
+          <person xml:id="adalbert" sex="MALE">
+            <persName>Adalbert</persName>
           </person>
-          <person xml:id="adalbert">
-            <persName>ADALBERT</persName>
+          <person xml:id="warin" sex="MALE">
+            <persName>Warin</persName>
           </person>
-          <person xml:id="warin">
-            <persName>WARIN</persName>
+          <person xml:id="wache" sex="MALE">
+            <persName>Wache</persName>
           </person>
-          <person xml:id="wache">
-            <persName>WACHE</persName>
+          <person xml:id="kriegsleute" sex="MALE">
+            <persName>Kriegsleute</persName>
+            <persName type="variant">Die Andern</persName>
           </person>
-          <person xml:id="ein_kriegsmann">
-            <persName>EIN KRIEGSMANN</persName>
-            <persName xml:id="kriegsmann">KRIEGSMANN</persName>
-            <persName xml:id="erster">ERSTER</persName>
+          <person xml:id="ein_kriegsmann" sex="MALE">
+            <persName>Ein Kriegsmann</persName>
           </person>
-          <person xml:id="andrer">
-            <persName>ANDRER</persName>
-            <persName xml:id="zweiter">ZWEITER</persName>
+          <person xml:id="andrer_kriegsmann" sex="MALE">
+            <persName>Andrer Kriegsmann</persName>
           </person>
-          <person xml:id="dritter">
-            <persName>DRITTER</persName>
+          <person xml:id="dritter_kriegsmann" sex="MALE">
+            <persName>Dritter Kriegsmann</persName>
           </person>
-          <person xml:id="kriegsleute">
-            <persName>KRIEGSLEUTE</persName>
-            <persName xml:id="die_andern">DIE ANDERN</persName>
-          </person>
-          <person xml:id="ritter">
-            <persName>RITTER</persName>
+          <person xml:id="ein_ritter" sex="MALE">
+            <persName>Ein Ritter</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -125,6 +120,7 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
+        <change who="#ff" when="2017-11-25">dissolve and unify IDs; add gender info</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -136,26 +132,36 @@
         <head>Trauerspiel in fünf Aufzügen</head>
         <pb n="61"/>
       </div>
+      <castList>
+        <head>Personen.</head>
+        <castItem>Kunrad der Zweite, römischer Kaiser.</castItem>
+        <castItem>Gisela, seine Gemahlin.</castItem>
+        <castItem>Heinrich, Kunrads und Giselas zwölfjähriger Sohn.</castItem>
+        <castGroup>
+          <castItem>Ernst,</castItem>
+          <castItem>Hermann,</castItem>
+          <roleDesc>Söhne der Gisela erster Ehe.</roleDesc>
+        </castGroup>
+        <castItem>Warmann, Bischof von Konstanz.</castItem>
+        <castItem>Odo, Graf von Champagne.</castItem>
+        <castItem>Hugo von Egisheim, Graf im Elsaß.</castItem>
+        <castGroup>
+          <castItem>Werner von Kiburg,</castItem>
+          <castItem>Mangold von Veringen,</castItem>
+          <roleDesc>Grafen in Schwaben.</roleDesc>
+        </castGroup>
+        <castGroup>
+          <castItem>Adalbert von Falkenstein,</castItem>
+          <castItem>Warin,</castItem>
+          <roleDesc>schwäbische Edle.</roleDesc>
+        </castGroup>
+        <castItem>Geistliche und weltliche Reichsstände. Kriegsleute. Volk.</castItem>
+      </castList>
+      <set>
+        <p>Die Handlung fällt in das Jahr 1030.</p>
+      </set>
     </front>
     <body>
-      <div type="Dramatis_Personae">
-        <castList>
-          <head>Personen.</head>
-          <castItem>Kunrad der Zweite, römischer Kaiser.</castItem>
-          <castItem>Gisela, seine Gemahlin.</castItem>
-          <castItem>Heinrich, Kunrads und Giselas zwölfjähriger Sohn.</castItem>
-          <castItem>Ernst,</castItem>
-          <castItem>Hermann, Söhne der Gisela erster Ehe.</castItem>
-          <castItem>Warmann, Bischof von Konstanz.</castItem>
-          <castItem>Odo, Graf von Champagne.</castItem>
-          <castItem>Hugo von Egisheim, Graf im Elsaß.</castItem>
-          <castItem>Werner von Kiburg,</castItem>
-          <castItem>Mangold von Veringen, Grafen in Schwaben.</castItem>
-          <castItem>Adalbert von Falkenstein,.</castItem>
-          <castItem>Warin, schwäbische Edle.</castItem>
-          <castItem>Geistliche und weltliche Reichsstände. Kriegsleute. Volk.</castItem>
-        </castList>
-      </div>
       <div type="act">
         <head>1. Akt</head>
         <div type="scene">
@@ -262,7 +268,7 @@
             <lg>
               <l>Ward Herzog Ernst entsetzt und eingekerkert,</l>
               <l>Nicht unverschuldet litt er solche Schmach,</l>
-              <l>Und nicht durch meinen, durch des <hi>Reiches</hi> Spruch;</l>
+              <l>Und nicht durch meinen, durch des <emph>Reiches</emph> Spruch;</l>
               <l>Aufrührer war er, seines Königs Feind.</l>
               <l>Begnadigt nach so frevelhafter Tat,</l>
               <l>Empört' er gleichwohl sich zum zweitenmal</l>
@@ -671,7 +677,7 @@
               <l>Du weißt, wie eine Reiterschar sich schwenkt,</l>
               <l>Noch aber kennst du nicht den Lauf der Welt.</l>
               <l>Wohl wahr, es kommen Augenblicke, wo</l>
-              <l>Die kampfbewegte Welt mit <hi>einem</hi> Schlag</l>
+              <l>Die kampfbewegte Welt mit <emph>einem</emph> Schlag</l>
               <l>Zum sel'gen Paradies verwandelt scheint:</l>
               <l>Der Wolf hat sich zum Lamme hingestreckt,</l>
               <l>Der Geier nistet mit der frommen Taube,</l>
@@ -734,13 +740,10 @@
               <l>Erwartet und ich selber kaum geahnt.</l>
             </lg>
             <stage>
-              <hi>Der Kaiser, Gisels, Heinrich, Ernst, Hermann, geistliche und weltliche
+              <hi>Der Kaiser, Gisela, Heinrich, Ernst, Hermann, geistliche und weltliche
                 Reichsstände ziehen auf. Kunrad läßt sich auf <pb n="70"/> dem Throne nieder, Gisela
-                zu seiner Rechten, Heinrich zur Linken, neben Gisela </hi>
-            </stage>
-            <stage>
-              <hi>die geistlichen, neben Heinrich die weltlichen Stände. Hinter den Schranken
-                Volk.</hi>
+                zu seiner Rechten, Heinrich zur Linken, neben Gisela die geistlichen, neben Heinrich
+                die weltlichen Stände. Hinter den Schranken Volk.</hi>
             </stage>
           </sp>
           <sp who="#kunrad">
@@ -1422,9 +1425,9 @@
             <l>An dieses Weibes liebevoller Brust</l>
             <l>Hätt ich genesen können. Vieles noch</l>
             <l>Und Härtres hätt ich auszustehn vermocht,</l>
-            <l>Wenn <hi>sie</hi> mir blieb. Noch kannt ich keine Schmach,</l>
+            <l>Wenn <emph>sie</emph> mir blieb. Noch kannt ich keine Schmach,</l>
             <l>Kein Drangsal, keine Wunde, keinen Schmerz,</l>
-            <l>Dafür nicht <hi>sie</hi> der süße Balsam war;</l>
+            <l>Dafür nicht <emph>sie</emph> der süße Balsam war;</l>
             <l>Ja, sie erquickte mich Gefangenen;</l>
             <l>Sie hätte dem erschöpften Pilgersmann</l>
             <l>Noch einst den frischen Lebenskelch gereicht.</l>
@@ -1435,7 +1438,7 @@
             <hi>Er will abgehen, ein Kriegsknecht vertritt ihm den Weg.</hi>
           </stage>
         </sp>
-        <sp who="#kriegsknecht">
+        <sp who="#werner">
           <speaker>KRIEGSKNECHT.</speaker>
           <l>Halt!</l>
         </sp>
@@ -1443,7 +1446,7 @@
           <speaker>ERNST.</speaker>
           <l>Wer da?</l>
         </sp>
-        <sp who="#kriegsknecht">
+        <sp who="#werner">
           <speaker>KRIEGSKNECHT.</speaker>
           <l>Halt!</l>
         </sp>
@@ -1457,7 +1460,7 @@
             <l>Noch bin ich Mördern kampfgerecht.</l>
           </lg>
         </sp>
-        <sp who="#kriegsknecht">
+        <sp who="#werner">
           <speaker>KRIEGSKNECHT.</speaker>
           <lg>
             <l>Stoß zu!</l>
@@ -1590,7 +1593,7 @@
           <speaker>ERNST.</speaker>
           <lg>
             <l>Wenn etwas noch mich aufzurichten taugt,</l>
-            <l>Ein Wort aus <hi>deinem</hi> Munde muß es sein.</l>
+            <l>Ein Wort aus <emph>deinem</emph> Munde muß es sein.</l>
           </lg>
         </sp>
         <sp who="#werner">
@@ -1628,7 +1631,7 @@
             <l>Am schönen Rheinstrom, zwischen Worms und Mainz,</l>
             <l>Wo unabsehbar sich die ebne Flur</l>
             <l>Auf beiden Ufern breitet, sammelte</l>
-            <l>Der Andrang sich; die Mauern <hi>einer</hi> Stadt</l>
+            <l>Der Andrang sich; die Mauern <emph>einer</emph> Stadt</l>
             <l>Vermochten nicht das deutsche Volk zu fassen.</l>
             <l>Am rechten Ufer spannten ihr Gezelt</l>
             <l>Die Sachsen samt der slaw'schen Nachbarschaft,</l>
@@ -1696,7 +1699,7 @@
             <l>Zum Festzug aber scharten sich die Reihn,</l>
             <l>Voran der König, folgend mit Gesang</l>
             <l>Die Geistlichen und Laien; so viel Preis</l>
-            <l>Erscholl zum Himmel nie an <hi>einem</hi> Tag.</l>
+            <l>Erscholl zum Himmel nie an <emph>einem</emph> Tag.</l>
             <l>Wär Kaiser Karl gestiegen aus der Gruft,</l>
             <l>Nicht freudiger hätt ihn die Welt begrüßt.</l>
             <l>So wallten sie den Strom entlang nach Mainz,</l>
@@ -2418,7 +2421,7 @@
             <l>Der Schuld, die mich zermalmte, bin ich los,</l>
             <l>Das Tor der Gnade schließt sich leuchtend auf,</l>
             <l>Dem Hoffnungslosen ist ein Weg gezeigt.</l>
-            <l>Nicht <hi>das</hi> entsühnte meine Mörderhand,</l>
+            <l>Nicht <emph>das</emph> entsühnte meine Mörderhand,</l>
             <l>Daß ich sie wund gerungen im Gebet,</l>
             <l>Nein, hülfreich sei dem Sohne sie gereicht,</l>
             <l>Dem sie den Vater freventlich geraubt!</l>
@@ -2452,10 +2455,10 @@
               <l>Hat auf sein Haupt den Wetterstrahl gelenkt.</l>
               <l>Sein Leben war so schön, so morgenhell,</l>
               <l><pb n="97"/> Bis ich sein Freund und sein Verderber ward.</l>
-              <l><hi>Ich</hi> bin's, der in den wilden Streit ihn riß,</l>
-              <l><hi>Ich</hi> warf ihn ins Gefängnis, <hi>ich</hi> hab ihn</l>
-              <l>Geächtet, <hi>ich</hi> sein Liebesglück zerstört,</l>
-              <l><hi>Mein</hi> Werk ist er, wie er hier vor mir liegt,</l>
+              <l><emph>Ich</emph> bin's, der in den wilden Streit ihn riß,</l>
+              <l><emph>Ich</emph> warf ihn ins Gefängnis, <emph>ich</emph> hab ihn</l>
+              <l>Geächtet, <emph>ich</emph> sein Liebesglück zerstört,</l>
+              <l><emph>Mein</emph> Werk ist er, wie er hier vor mir liegt,</l>
               <l>Doch er ist immer freundlich, immer treu;</l>
               <l>Kein andrer Vorwurf ward mir je von ihm</l>
               <l>Als diese Blässe seines Angesichts</l>
@@ -2961,10 +2964,7 @@
               <l>Die Freiheit mögt ihr binden, diesen nicht.</l>
             </lg>
             <stage>
-              <hi><pb n="104"/> Werner tritt auf; der Saal füllt sich mit Kriegsleuten </hi>
-            </stage>
-            <stage>
-              <hi>Ernsts.</hi>
+              <hi><pb n="104"/> Werner tritt auf; der Saal füllt sich mit Kriegsleuten Ernsts.</hi>
             </stage>
           </sp>
           <sp who="#werner">
@@ -2997,7 +2997,7 @@
             <speaker>WARIN.</speaker>
             <l>Zum Kampf begehren wir.</l>
           </sp>
-          <sp who="#die_andern">
+          <sp who="#kriegsleute">
             <speaker>DIE ANDERN.</speaker>
             <l>Zum Kampf! zum Kampf!</l>
           </sp>
@@ -3083,14 +3083,14 @@
               <l>Als Kaiser Heinrich einst zu Regensburg</l>
               <l>Aufs Jagen ausritt, gab er den Befehl,</l>
               <l>Daß keiner von den Herren seines Hofs</l>
-              <l>Sich folgen lasse mehr denn <hi>einen</hi> Knecht.</l>
+              <l>Sich folgen lasse mehr denn <emph>einen</emph> Knecht.</l>
               <l>Gleichwohl kam ihm der Graf von Abensberg</l>
               <l>Mit dreiunddreißig Reisigen getrabt,</l>
               <l>Ein rüstig Häuflein, sauber angetan,</l>
               <l>Die Rößlein wohl gesattelt und gezäumt.</l>
               <l>Da sprach der Kaiser: »Ist Euch unbekannt,</l>
-              <l>Daß Ihr nur <hi>einen</hi> Diener bringen sollt?«</l>
-              <l>Der Graf darauf: »Nur <hi>einen</hi> bring ich mit.« –</l>
+              <l>Daß Ihr nur <emph>einen</emph> Diener bringen sollt?«</l>
+              <l>Der Graf darauf: »Nur <emph>einen</emph> bring ich mit.« –</l>
               <l><pb n="106"/> »Wer sind die andern?« – »Meine Söhne sind's:</l>
               <l>Sie alle schenk ich und befehl ich Euch.</l>
               <l>Sie seien Euch im Frieden eine Zier,</l>
@@ -3162,7 +3162,7 @@
             <speaker>WERNER.</speaker>
             <l>Heil unsrem Herzog!</l>
           </sp>
-          <sp who="#die_andern">
+          <sp who="#kriegsleute">
             <speaker>DIE ANDERN.</speaker>
             <l>Heil dem Herzog Ernst!</l>
             <pb n="107"/>
@@ -3292,7 +3292,7 @@
             <l>Mein Sohn, der du im Kampfe mich vertrittst,</l>
             <l>Du bist ein Lehrling in der Waffenkunst;</l>
             <l>Jetzt tummle dich! Es ist dein erster Strauß,</l>
-            <l>Es kann der letzte sein: an <hi>einem</hi> Tag</l>
+            <l>Es kann der letzte sein: an <emph>einem</emph> Tag</l>
             <l>Mußt du erringen deine Meisterschaft.</l>
             <l>Schwing hoch dein Schwert, wirf sicher deinen Speer,</l>
             <l>Triff unsre Feinde, triff den Herzog nicht!</l>
@@ -3332,7 +3332,7 @@
             <l>Hinein. Für Herzog Ernst!</l>
           </lg>
         </sp>
-        <sp who="#die_andern">
+        <sp who="#kriegsleute">
           <speaker>DIE ANDERN.</speaker>
           <l>Für Herzog Ernst!</l>
           <stage>
@@ -3356,11 +3356,11 @@
           <speaker>EIN KRIEGSMANN.</speaker>
           <l>Jetzt, jetzt sind sie zusammen.</l>
         </sp>
-        <sp who="#andrer">
+        <sp who="#andrer_kriegsmann">
           <speaker>ANDRER.</speaker>
           <l>Welch ein Stoß!</l>
         </sp>
-        <sp who="#dritter">
+        <sp who="#dritter_kriegsmann">
           <speaker>DRITTER.</speaker>
           <l>Sie brechen durch.</l>
         </sp>
@@ -3372,14 +3372,14 @@
             <l>Durchbrochen ist das erste Glied.</l>
           </lg>
         </sp>
-        <sp who="#kriegsmann">
+        <sp who="#ein_kriegsmann">
           <speaker>KRIEGSMANN.</speaker>
           <lg>
             <l>Schon tritt</l>
             <l>Das zweite vor.</l>
           </lg>
         </sp>
-        <sp who="#andrer">
+        <sp who="#andrer_kriegsmann">
           <speaker>ANDRER.</speaker>
           <l>Seht mir den Werner, seht!</l>
         </sp>
@@ -3392,7 +3392,7 @@
             <l>Schlägt er, er schlägt die ganze Schar.</l>
           </lg>
         </sp>
-        <sp who="#kriegsmann">
+        <sp who="#ein_kriegsmann">
           <speaker>KRIEGSMANN.</speaker>
           <lg>
             <l>Wer liegt</l>
@@ -3403,35 +3403,35 @@
           <speaker>ADALBERT.</speaker>
           <l>Der Mangold ist's.</l>
         </sp>
-        <sp who="#kriegsmann">
+        <sp who="#ein_kriegsmann">
           <speaker>KRIEGSMANN.</speaker>
           <lg>
             <l>Er rafft sich wieder auf;</l>
             <l>Er führt die dritte Reih heran.</l>
           </lg>
         </sp>
-        <sp who="#andrer">
+        <sp who="#andrer_kriegsmann">
           <speaker>ANDRER.</speaker>
           <lg>
             <l>O schaut!</l>
             <l>Die Unsern rasten.</l>
           </lg>
         </sp>
-        <sp who="#dritter">
+        <sp who="#dritter_kriegsmann">
           <speaker>DRITTER.</speaker>
           <lg>
             <l>Traun, kein Wunder ist's,</l>
             <l>Wenn sie ermüdet sind.</l>
           </lg>
         </sp>
-        <sp who="#erster">
+        <sp who="#ein_kriegsmann">
           <speaker>ERSTER.</speaker>
           <lg>
             <l>Sie sammeln sich.</l>
             <l>O! die sind stark geschmolzen.</l>
           </lg>
         </sp>
-        <sp who="#zweiter">
+        <sp who="#andrer_kriegsmann">
           <speaker>ZWEITER.</speaker>
           <lg>
             <l>Seht den Wall</l>
@@ -3439,7 +3439,7 @@
             <pb n="110"/>
           </lg>
         </sp>
-        <sp who="#dritter">
+        <sp who="#dritter_kriegsmann">
           <speaker>DRITTER.</speaker>
           <l>O seht den Strom von Blut!</l>
         </sp>
@@ -3453,15 +3453,15 @@
             <l>Jetzt lüftet er die Schwingen, jetzt. Gebt acht!</l>
           </lg>
         </sp>
-        <sp who="#kriegsmann">
+        <sp who="#ein_kriegsmann">
           <speaker>KRIEGSMANN.</speaker>
           <l>Sie holen aus, sie brechen furchtbar los.</l>
         </sp>
-        <sp who="#andrer">
+        <sp who="#andrer_kriegsmann">
           <speaker>ANDRER.</speaker>
           <l>Jetzt gilt's.</l>
         </sp>
-        <sp who="#dritter">
+        <sp who="#dritter_kriegsmann">
           <speaker>DRITTER.</speaker>
           <l>Jetzt ist's ihr Letztes.</l>
         </sp>
@@ -3472,11 +3472,11 @@
             <l>Der Bürde loszuwerden, die mich drückt.</l>
           </lg>
         </sp>
-        <sp who="#kriegsmann">
+        <sp who="#ein_kriegsmann">
           <speaker>KRIEGSMANN.</speaker>
           <l>Sie sind umflügelt.</l>
         </sp>
-        <sp who="#andrer">
+        <sp who="#andrer_kriegsmann">
           <speaker>ANDRER.</speaker>
           <l>Sie sind mitten drin.</l>
         </sp>
@@ -3487,11 +3487,11 @@
             <l>Das Banner schwankt, ein Segelbaum im Sturm.</l>
           </lg>
         </sp>
-        <sp who="#kriegsmann">
+        <sp who="#ein_kriegsmann">
           <speaker>KRIEGSMANN.</speaker>
           <l>Dort blickt man durch.</l>
         </sp>
-        <sp who="#andrer">
+        <sp who="#andrer_kriegsmann">
           <speaker>ANDRER.</speaker>
           <lg>
             <l>Sie sind auf einen Knaul</l>
@@ -3509,18 +3509,18 @@
             <l>Die gräßliche Umkettung von sich drückt.</l>
           </lg>
         </sp>
-        <sp who="#kriegsmann">
+        <sp who="#ein_kriegsmann">
           <speaker>KRIEGSMANN.</speaker>
           <l>Der Kampfplatz schließt sich wieder.</l>
         </sp>
-        <sp who="#andrer">
+        <sp who="#andrer_kriegsmann">
           <speaker>ANDRER.</speaker>
           <lg>
             <l>Jetzt sind sie</l>
             <l>Verschlungen.</l>
           </lg>
         </sp>
-        <sp who="#dritter">
+        <sp who="#dritter_kriegsmann">
           <speaker>DRITTER.</speaker>
           <lg>
             <l>Nein, sie reißen sich hervor,</l>
@@ -3531,15 +3531,15 @@
           <speaker>ADALBERT.</speaker>
           <l>Wo ist der Werner?</l>
         </sp>
-        <sp who="#kriegsmann">
+        <sp who="#ein_kriegsmann">
           <speaker>KRIEGSMANN.</speaker>
           <l>Wo? Ich seh ihn nicht.</l>
         </sp>
-        <sp who="#andrer">
+        <sp who="#andrer_kriegsmann">
           <speaker>ANDRER.</speaker>
           <l>Dort ist er.</l>
         </sp>
-        <sp who="#dritter">
+        <sp who="#dritter_kriegsmann">
           <speaker>DRITTER.</speaker>
           <lg>
             <l>Weh! sie führen ihn herauf;</l>
@@ -3776,7 +3776,7 @@
             <hi>Ein Ritter mit einigen Kriegsleuten tritt auf.</hi>
           </stage>
         </sp>
-        <sp who="#ritter">
+        <sp who="#ein_ritter">
           <speaker>RITTER.</speaker>
           <l>Der Kaiser naht. Es ruhe jeder Kampf!</l>
         </sp>
