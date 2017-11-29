@@ -42,26 +42,26 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="ulfo">
-            <persName>ULFO</persName>
+          <person xml:id="ulfo" sex="MALE">
+            <persName>Ulfo</persName>
           </person>
-          <person xml:id="estrithe">
-            <persName>ESTRITHE</persName>
+          <person xml:id="estrithe" sex="FEMALE">
+            <persName>Estrithe</persName>
           </person>
-          <person xml:id="gunilde">
-            <persName>GUNILDE</persName>
+          <person xml:id="gunilde" sex="FEMALE">
+            <persName>Gunilde</persName>
           </person>
-          <person xml:id="godewin">
-            <persName>GODEWIN</persName>
+          <person xml:id="godewin" sex="MALE">
+            <persName>Godewin</persName>
           </person>
-          <person xml:id="canut">
-            <persName>CANUT</persName>
+          <person xml:id="canut" sex="MALE">
+            <persName>Canut</persName>
           </person>
-          <person xml:id="haqvin">
-            <persName>HAQVIN</persName>
+          <person xml:id="haqvin" sex="MALE">
+            <persName>Haqvin</persName>
           </person>
-          <person xml:id="godschalk">
-            <persName>GODSCHALK</persName>
+          <person xml:id="godschalk" sex="MALE">
+            <persName>Godschalk</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -76,6 +76,7 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
+        <change who="#ff" when="2017-11-29">lowercase character names, add gender info</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -86,8 +87,6 @@
         <head>Canut</head>
         <head>Ein Trauerspiel</head>
       </div>
-    </front>
-    <body>
       <div type="dedication">
         <head><pb n="172"/> Anrede Canuts des Grossen an Se. Majest. Friedrich den Fünften,</head>
         <stage>
@@ -222,11 +221,19 @@
           <castItem>Estrithe, dessen Schwester.</castItem>
           <castItem>Gunilde, ihre Vertraute.</castItem>
           <castItem>Ulfo, Estrithens Gemahl.</castItem>
-          <castItem>Haqvin,</castItem>
-          <castItem>Godewin, , Kriegsbediente des Canut.</castItem>
+          <castGroup>
+            <castItem>Haqvin,</castItem>
+            <castItem>Godewin,</castItem>
+            <roleDesc>Kriegsbediente des Canut.</roleDesc>
+          </castGroup>
           <castItem>Godschalk, Prinz der Slaven.</castItem>
         </castList>
       </div>
+      <set>
+        <p>Der Schauplatz stellet ein Gemach des Königl. Schlosses vor.</p>
+      </set>
+    </front>
+    <body>
       <div type="act">
         <head>1. Akt</head>
         <div type="scene">
