@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Der zerbrochene Krug</title>
+        <title type="main">Der zerbrochene Krug</title>
+        <title type="sub">Ein Lustspiel</title>
         <author key="pnd:118563076">Kleist, Heinrich von</author>
       </titleStmt>
       <publicationStmt>
@@ -43,46 +44,44 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="licht">
-            <persName>LICHT</persName>
+          <person xml:id="licht" sex="MALE">
+            <persName>Licht</persName>
           </person>
-          <person xml:id="adam">
-            <persName>ADAM</persName>
+          <person xml:id="adam" sex="MALE">
+            <persName>Adam</persName>
           </person>
-          <person xml:id="der_bediente">
-            <persName>DER BEDIENTE</persName>
+          <person xml:id="der_bediente" sex="MALE">
+            <persName>Der Bediente</persName>
           </person>
-          <person xml:id="erste_magd">
-            <persName>ERSTE MAGD</persName>
-            <persName xml:id="die_magd">DIE MAGD</persName>
+          <person xml:id="erste_magd" sex="FEMALE">
+            <persName>Erste Magd</persName>
           </person>
-          <person xml:id="zweite_magd">
-            <persName>ZWEITE MAGD</persName>
-            <persName xml:id="die_zweite_magd">DIE ZWEITE MAGD</persName>
+          <person xml:id="zweite_magd" sex="FEMALE">
+            <persName>Zweite Magd</persName>
           </person>
-          <person xml:id="walter">
-            <persName>WALTER</persName>
+          <person xml:id="walter" sex="MALE">
+            <persName>Walter</persName>
           </person>
-          <person xml:id="der_büttel">
-            <persName>DER BÜTTEL</persName>
+          <person xml:id="der_buettel" sex="MALE">
+            <persName>Der Büttel</persName>
           </person>
-          <person xml:id="frau_marthe">
-            <persName>FRAU MARTHE</persName>
+          <person xml:id="frau_marthe" sex="FEMALE">
+            <persName>Frau Marthe</persName>
           </person>
-          <person xml:id="veit">
-            <persName>VEIT</persName>
+          <person xml:id="veit" sex="MALE">
+            <persName>Veit</persName>
           </person>
-          <person xml:id="ruprecht">
-            <persName>RUPRECHT</persName>
+          <person xml:id="ruprecht" sex="MALE">
+            <persName>Ruprecht</persName>
           </person>
-          <person xml:id="eve">
-            <persName>EVE</persName>
+          <person xml:id="eve" sex="FEMALE">
+            <persName>Eve</persName>
           </person>
-          <person xml:id="frau_brigitte">
-            <persName>FRAU BRIGITTE</persName>
+          <person xml:id="frau_brigitte" sex="FEMALE">
+            <persName>Frau Brigitte</persName>
           </person>
-          <person xml:id="mehrere">
-            <persName>MEHRERE</persName>
+          <person xml:id="mehrere" sex="UNKNOWN">
+            <persName>Mehrere</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -97,6 +96,7 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
+        <change who="#ff" when="2017-12-09">add gender info</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -108,8 +108,6 @@
         <head>Ein Lustspiel</head>
         <pb n="234"/>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head>Personen.</head>
@@ -124,6 +122,12 @@
           <castItem>Ein Bedienter, Büttel, Mägde usw.</castItem>
         </castList>
       </div>
+      <set>
+        <p>Die Handlung spielt in einem niederländischen Dorfe bei Utrecht.</p>
+        <p>Szene: Die Gerichtsstube.</p>
+      </set>
+    </front>
+    <body>
       <div type="scene">
         <head>Erster Auftritt</head>
         <stage>
@@ -885,7 +889,7 @@
             <hi>Die erste Magd geht ab.</hi>
           </stage>
         </sp>
-        <sp who="#die_zweite_magd">
+        <sp who="#zweite_magd">
           <speaker>DIE ZWEITE MAGD.</speaker>
           <l>Sprecht, soll man Euch verstehn!</l>
           <pb n="242"/>
@@ -1031,7 +1035,7 @@
           <speaker>LICHT.</speaker>
           <l>Es war ein Mißverständnis.</l>
         </sp>
-        <sp who="#die_zweite_magd">
+        <sp who="#zweite_magd">
           <speaker>DIE ZWEITE MAGD</speaker>
           <stage>
             <hi>tritt auf.</hi>
@@ -1673,7 +1677,7 @@
           <speaker>ADAM.</speaker>
           <l>Auch das.</l>
         </sp>
-        <sp who="#der_büttel">
+        <sp who="#der_buettel">
           <speaker>DER BÜTTEL</speaker>
           <stage>
             <hi>tritt auf.</hi>
@@ -3704,7 +3708,7 @@
           <speaker>ADAM.</speaker>
           <l>Ein Glas mit Wasser! –</l>
         </sp>
-        <sp who="#die_magd">
+        <sp who="#erste_magd">
           <speaker>DIE MAGD.</speaker>
           <l>Gleich!</l>
         </sp>
@@ -4673,7 +4677,7 @@
             <hi>Die Magd tritt auf.</hi>
           </stage>
         </sp>
-        <sp who="#die_magd">
+        <sp who="#erste_magd">
           <speaker>DIE MAGD.</speaker>
           <l>Hier.</l>
         </sp>
@@ -6806,8 +6810,8 @@
           <stage>
             <hi>Alle ab.</hi>
           </stage>
-          <p>Ende.</p>
         </sp>
+        <stage>Ende.</stage>
       </div>
     </body>
   </text>
