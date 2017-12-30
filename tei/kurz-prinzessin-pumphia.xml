@@ -4,7 +4,9 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Prinzessin Pumphia</title>
+        <title type="main">Die Getreue Prinzeßin Pumphia, und Hanns-Wurst, der tyrannische
+          Tartar-Kulikan</title>
+        <title type="sub">Eine Parodie in lächerlichen Versen</title>
         <author key="pnd:118725602">Kurz, Joseph von</author>
       </titleStmt>
       <publicationStmt>
@@ -42,50 +44,53 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="cyrus">
-            <persName>CYRUS</persName>
+          <person xml:id="cyrus" sex="MALE">
+            <persName>Cyrus</persName>
           </person>
-          <person xml:id="sigelvax">
-            <persName>SIGELVAX</persName>
+          <person xml:id="sigelvax" sex="MALE">
+            <persName>Sigelvax</persName>
           </person>
-          <person xml:id="kulican">
-            <persName>KULICAN</persName>
+          <person xml:id="kulican" sex="MALE">
+            <persName>Kulican</persName>
           </person>
-          <person xml:id="mortong">
-            <persName>MORTONG</persName>
+          <person xml:id="mortong" sex="MALE">
+            <persName>Mortong</persName>
           </person>
-          <person xml:id="pumphia">
-            <persName>PUMPHIA</persName>
+          <person xml:id="pumphia" sex="FEMALE">
+            <persName>Pumphia</persName>
           </person>
-          <person xml:id="pinxi">
-            <persName>PINXI</persName>
+          <person xml:id="pinxi" sex="MALE">
+            <persName>Pinxi</persName>
           </person>
-          <person xml:id="knab">
-            <persName>KNAB</persName>
+          <person xml:id="knab" sex="MALE">
+            <persName>Knab</persName>
           </person>
-          <person xml:id="das_volk">
-            <persName>DAS VOLK</persName>
+          <person xml:id="das_volk" sex="UNKNOWN">
+            <persName>Das Volk</persName>
           </person>
-          <person xml:id="faustibus">
-            <persName>FAUSTIBUS</persName>
+          <person xml:id="faustibus" sex="MALE">
+            <persName>Faustibus</persName>
           </person>
-          <person xml:id="miketey">
-            <persName>MIKETEY</persName>
+          <person xml:id="miketey" sex="MALE">
+            <persName>Miketey</persName>
           </person>
-          <person xml:id="soffocles">
-            <persName>SOFFOCLES</persName>
+          <person xml:id="soffocles" sex="MALE">
+            <persName>Soffocles</persName>
           </person>
-          <person xml:id="arleckin">
-            <persName>ARLECKIN</persName>
+          <person xml:id="arleckin" sex="MALE">
+            <persName>Arleckin</persName>
           </person>
-          <person xml:id="colombina">
-            <persName>COLOMBINA</persName>
+          <person xml:id="colombina" sex="FEMALE">
+            <persName>Colombina</persName>
+          </person>
+          <person xml:id="chorus" sex="UNKNOWN">
+            <persName>Chorus</persName>
           </person>
         </listPerson>
       </particDesc>
       <textClass>
         <keywords>
-          <term type="genreTitle">Tragödie</term>
+          <term type="genreTitle">Parodie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -94,6 +99,8 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
+        <change who="#ff" when="2017-12-30">markup corrections; formalities; add gender
+          info</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -103,8 +110,6 @@
         <head>Joseph von Kurz</head>
         <head>Prinzessin Pumphia</head>
       </div>
-    </front>
-    <body>
       <div>
         <head>[Titel]</head>
         <p><pb n="1"/> Eine neue Tragœdie,</p>
@@ -182,8 +187,10 @@
         <p>Comicus Bernardon.</p>
         <pb n="4"/>
       </div>
+    </front>
+    <body>
       <div type="act">
-        <head>1. Akt</head>
+        <head>Erste Abhandlung.</head>
         <div type="scene">
           <head>Erster Auftritt.</head>
           <stage>
@@ -1413,7 +1420,7 @@
               <l>Hätt' ich den Ehestand schon längsten nicht erfahren,</l>
               <l>Der Himmel sollte mich vor einem Mann bewahren.</l>
             </lg>
-            <p>Aria.</p>
+            <stage>Aria.</stage>
             <lg>
               <l>Wann gleich ein Manns-bild rotzt, und weint,</l>
               <l>Was ligt mir dann daran,</l>
@@ -1440,12 +1447,12 @@
             <stage>
               <hi>Pumphia ab.</hi>
             </stage>
-            <p>Ende der ersten Abhandlung.</p>
+            <stage>Ende der ersten Abhandlung.</stage>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>2. Akt</head>
+        <head>Zweyte Abhandlung.</head>
         <div type="scene">
           <head>Erster Auftritt.</head>
           <sp who="#faustibus">
@@ -2843,11 +2850,11 @@
           </sp>
           <sp who="#kulican">
             <speaker>KULICAN.</speaker>
-            <lg>
-              <l>Ihr aber richtet euch zum Tod und zum Verderben.</l>
-              <l>PUMPHIA, CYRUS UND FAUSTIBUS.</l>
-              <l>Ja Wüttrich! ja Tyrann! wir wollen alle sterben.</l>
-            </lg>
+            <l>Ihr aber richtet euch zum Tod und zum Verderben.</l>
+          </sp>
+          <sp who="#pumphia #cyrus #faustibus">
+            <speaker>PUMPHIA, CYRUS UND FAUSTIBUS.</speaker>
+            <l>Ja Wüttrich! ja Tyrann! wir wollen alle sterben.</l>
           </sp>
           <sp who="#pumphia">
             <speaker>PUMPHIA.</speaker>
@@ -2865,7 +2872,7 @@
               <hi>Alle 3. umarmen sich, und weinen, hier folget das Quartetto von Kulican, Cyrus,
                 Faustibus, und Pumphia.</hi>
             </stage>
-            <p>Quartetto.</p>
+            <stage>Quartetto.</stage>
             <stage>
               <hi>Von Pumphia, Kulican, Cyrus, und Faustibus.</hi>
             </stage>
@@ -2892,9 +2899,11 @@
           </sp>
           <sp who="#kulican">
             <speaker>KULICAN.</speaker>
+            <l>Fort zum Tod?</l>
+          </sp>
+          <sp who="#pumphia #cyrus #faustibus">
+            <speaker>PUMPHIA, CYRUS UND FAUSTIBUS.</speaker>
             <lg>
-              <l>Fort zum Tod?</l>
-              <l>PUMPHIA, CYRUS UND FAUSTIBUS.</l>
               <l>Ein gesetzter Geist</l>
               <l>Der die Sorg verschmeist,</l>
               <l>Weiß von keiner Noht.</l>
@@ -2902,9 +2911,11 @@
           </sp>
           <sp who="#kulican">
             <speaker>KULICAN.</speaker>
+            <l>Fort zum Tod!</l>
+          </sp>
+          <sp who="#pumphia #cyrus #faustibus">
+            <speaker>PUMPHIA, CYRUS UND FAUSTIBUS.</speaker>
             <lg>
-              <l>Fort zum Tod!</l>
-              <l>PUMPHIA, CYRUS UND FAUSTIBUS.</l>
               <l>Wann, O ihr Götter! wird sich doch</l>
               <l>Unser Centner schwäres Joch,</l>
               <l>Einmal von uns wenden?</l>
@@ -2915,7 +2926,11 @@
             <lg>
               <l>Durch den Tod, ja durch den Tod.</l>
               <l>Wird sich alles enden.</l>
-              <l>PUMPHIA, CYRUS UND FAUSTIBUS.</l>
+            </lg>
+          </sp>
+          <sp who="#pumphia #cyrus #faustibus">
+            <speaker>PUMPHIA, CYRUS UND FAUSTIBUS.</speaker>
+            <lg>
               <l>Alle Qual und Plagen</l>
               <l>Wollen wir ertragen,</l>
               <l>Und uns ligt an dir Tyrann,</l>
@@ -3206,17 +3221,11 @@
               <l>Auf, Pumphia beherzt, gedenk an keine Noht,</l>
               <l>Du willst es Kulican? ich geh zu meinen Tod.</l>
             </lg>
-            <p>Aria.</p>
-          </sp>
-          <sp who="#">
-            <speaker/>
+            <stage>Aria.</stage>
             <stage>
-              <hi>NB.</hi>
-            </stage>
-            <stage>
-              <hi> Der Verfasser hat in der Ober-pfalz in Wald-München ohngefähr vor drithalb Jahren
-                in einer schmerzhaften Comödie von der dasigen sogenannten ersten Actrice eine
-                Wälische Aria singen hören, in welcher er kein Wort, als Tschiri Tschantschere
+              <hi>NB. Der Verfasser hat in der Ober-pfalz in Wald-München ohngefähr vor drithalb
+                Jahren in einer schmerzhaften Comödie von der dasigen sogenannten ersten Actrice
+                eine Wälische Aria singen hören, in welcher er kein Wort, als Tschiri Tschantschere
                 verstehen können, der Text kann also nicht hieher gesetzt werden, diese Arie wird
                 also nach seinen Gusto von ihme imitiret, und Pumphia wird nach der Aria von denen
                 Soldaten abgeführet.</hi>
@@ -3235,7 +3244,9 @@
           <stage>
             <hi>Soffocles tritt à tempo ein.</hi>
           </stage>
-          <p>Was bringst du Sophocles?</p>
+          <sp who="#kulican">
+            <l>Was bringst du Sophocles?</l>
+          </sp>
           <sp who="#soffocles">
             <speaker>SOFFOCLES.</speaker>
             <lg>
@@ -3388,12 +3399,14 @@
             <hi>Entstehet inwendig ein grosser Lärmen, Cyrus, Miketey, Faustibus, Sigelvax, und
               Soffocles, der Leztere aber bleibt zurück.</hi>
           </stage>
-          <p>CYRUS, MIKETEY, FAUSTIBUS UND SIGELVAX.</p>
-          <p>Es lebe Pumphia! Es lebe Pumphia!</p>
-          <stage>
-            <hi>Sie reissen Kulican vom Thron auf die Erde.</hi>
-          </stage>
-          <p>Du Mörder! Henkers-knecht! jetzt seynd wir alle da.</p>
+          <sp who="#cyrus #miketey #faustibus #sigelvax">
+            <speaker>CYRUS, MIKETEY, FAUSTIBUS UND SIGELVAX.</speaker>
+            <l>Es lebe Pumphia! Es lebe Pumphia!</l>
+            <stage>
+              <hi>Sie reissen Kulican vom Thron auf die Erde.</hi>
+            </stage>
+            <l>Du Mörder! Henkers-knecht! jetzt seynd wir alle da.</l>
+          </sp>
           <sp who="#cyrus">
             <speaker>CYRUS.</speaker>
             <l>Und zwar zu deiner Schmach, und gänzlichen Verderben,</l>
@@ -3554,94 +3567,94 @@
             <castItem>Etliche zwanzig Juden, und Jüdinnen, nebst ihrem Rabiner.</castItem>
             <castItem>Zwey Laqueyen.</castItem>
           </castList>
-          <p>
-            <hi>NB. Die kleine Colombina, welche die Antonia Kurtzin vorstellet, wird sich in 4
-              Caracteren, und 4. lustigen Arien besonders distinguiren. <pb n="52"/></hi>
-          </p>
+          <stage><hi>NB. Die kleine Colombina, welche die Antonia Kurtzin vorstellet, wird sich in 4
+              Caracteren, und 4. lustigen Arien besonders distinguiren. <pb n="52"/></hi></stage>
         </div>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <p>Zimmer des Pantalons, Arleckin und Colombina sitzen, und halten eine stumme verliebte
-            Unterredung.</p>
+          <stage>Zimmer des Pantalons, Arleckin und Colombina sitzen, und halten eine stumme
+            verliebte Unterredung.</stage>
         </div>
         <div type="scene">
           <head>Anderter Auftritt.</head>
-          <p>Piro als der Rival des Arleckins kommet dazu, aus Eifersucht holet er den Pantalon, und
-            lauft ab, Arleckin und Colombina versichern einander ihre Treue, dazu</p>
+          <stage>Piro als der Rival des Arleckins kommet dazu, aus Eifersucht holet er den Pantalon,
+            und lauft ab, Arleckin und Colombina versichern einander ihre Treue, dazu</stage>
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <p>Pantalon und Piro. Pantalon voller Zorn, will den Arleckin und Colombina ermorden, wird
-            aber von Piro abgehalten, Colombina und Arleckin bitten kniend um ihr Leben, Pantalon
-            prügelt den Arleckin ab. Colombina kommt vor Raserey ausser sich, wird endlich durch
-            Piro (welcher sie trösten will) abgebracht.</p>
+          <stage>Pantalon und Piro. Pantalon voller Zorn, will den Arleckin und Colombina ermorden,
+            wird aber von Piro abgehalten, Colombina und Arleckin bitten kniend um ihr Leben,
+            Pantalon prügelt den Arleckin ab. Colombina kommt vor Raserey ausser sich, wird endlich
+            durch Piro (welcher sie trösten will) abgebracht.</stage>
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <p>Pantalon prügelt Arleckin aus dem Haus, nihmt die Pagage des Arleckins, welche ein
+          <stage>Pantalon prügelt Arleckin aus dem Haus, nihmt die Pagage des Arleckins, welche ein
             Laquay traget, und wirft sie den Arleckin vor die Füsse, und mit nochmaliger Bedrohung
             nicht mehr in sein Haus zu kommen, geht er mit dem Laquay in sein Haus ab. Arleckin ganz
-            bestürzt, setzt sich auf seine Pagage.</p>
+            bestürzt, setzt sich auf seine Pagage.</stage>
         </div>
         <div type="scene">
           <head><pb n="53"/> Fünfter Auftritt.</head>
-          <p>Kommt ein Zauberer, welcher den Arleckin seine Pagage in einen kleinen Teufel
+          <stage>Kommt ein Zauberer, welcher den Arleckin seine Pagage in einen kleinen Teufel
             verwandelt, endlich verspricht der Zauberer ihm in seiner Liebe zu helfen, gibt dem
             Arleckin eine Blume, vermög derselben er sich in seiner Liebe wird glücklich machen
             können, und gehet ab. Arleckin wegen seinen zukünftigen Glück fangt vor Freuden an zu
-            tanzen, und da er die Thür des Pantalons eröffnen siehet, tanzet er ab.</p>
+            tanzen, und da er die Thür des Pantalons eröffnen siehet, tanzet er ab.</stage>
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <p>Pantalon, und Piro, welcher einen weissen Sack traget, beyde wollen auf den Markt
+          <stage>Pantalon, und Piro, welcher einen weissen Sack traget, beyde wollen auf den Markt
             gehen, allerhand Speisen zu der Hochzeit einzukauffen, Pantalon sperret das Haus gut zu,
             und mit Piro ganz vergnügt ab. Arleckin welcher solches von hinten observiret, will
             diese schöne Gelegenheit nicht aus denen Händen lassen, probiret die Würkung seiner
             Blume, schlägt an das Haus, sogleich zeiget sich Colombina für seinen Augen, Arleckin
             ist in Sorgen, wie er sie fortbringen kann, lauft ab, und bringt einen Sack, stecket
             Colombina hinein, da sie ihm aber zum tragen zu schwär ist, hohlet er einen
-            Schübe-karren, indessen kommt</p>
+            Schübe-karren, indessen kommt</stage>
         </div>
         <div type="scene">
           <head>Siebender Auftritt</head>
-          <p>Pantalon, und Piro wieder zurück, erschröcken, einen Sack vor ihren Haus zu sehen, sie
-            machen denselben auf, seynd voller Verwunderung die Colombina in selbigen zu finden,
+          <stage>Pantalon, und Piro wieder zurück, erschröcken, einen Sack vor ihren Haus zu sehen,
+            sie machen denselben auf, seynd voller Verwunderung die Colombina in selbigen zu finden,
             Pantalon jagt Colombina ins Haus, und den Arleckin recht auszuzahlen, steckt er sich in
             den Sack, Piro den Arleckin zu prügeln, gehet in das Haus einen prafen Prügel zu
-            hohlen.</p>
+            hohlen.</stage>
         </div>
         <div type="scene">
           <head><pb n="54"/> Achter Auftritt.</head>
-          <p>Arleckin mit dem Schub-karren will die vermeinte Colombina hinein legen, Pantalon
+          <stage>Arleckin mit dem Schub-karren will die vermeinte Colombina hinein legen, Pantalon
             weigert sich durch Gebährden, Arleckin macht den Sack auf, Pantalon steigt aus
-            demselben, und jagt den Arleckin ab.</p>
+            demselben, und jagt den Arleckin ab.</stage>
         </div>
         <div type="scene">
           <head>Neunter Auftritt.</head>
-          <p>Der Zauberer stellet einen anderen Sack an des vorigen Platz, und wieder ab.</p>
+          <stage>Der Zauberer stellet einen anderen Sack an des vorigen Platz, und wieder
+            ab.</stage>
         </div>
         <div type="scene">
           <head>Zehender Auftritt.</head>
-          <p>Piro mit einem grossen Prügel, in der Meinung, daß Pantalon noch im Sack stecke, fragt,
-            ob Arleckin noch nicht da gewesen? da er aber keine rechte Antwort bekommet, macht er
-            den Sack auf, ein kleiner Teuffel, welcher in dem Sack war, jaget den Piro ab.</p>
+          <stage>Piro mit einem grossen Prügel, in der Meinung, daß Pantalon noch im Sack stecke,
+            fragt, ob Arleckin noch nicht da gewesen? da er aber keine rechte Antwort bekommet,
+            macht er den Sack auf, ein kleiner Teuffel, welcher in dem Sack war, jaget den Piro
+            ab.</stage>
         </div>
         <div type="scene">
           <head>Eilfter Auftritt.</head>
-          <p>Arleckin schlägt wieder auf das Haus, und Colombina zeiget sich auf vorige Art, beyde
-            sind vergnügt, und wollen ihre Zuflucht in einem Haus suchen, welches sich auf dem
-            Theater zeiget, gehen in dasselbige hinein.</p>
+          <stage>Arleckin schlägt wieder auf das Haus, und Colombina zeiget sich auf vorige Art,
+            beyde sind vergnügt, und wollen ihre Zuflucht in einem Haus suchen, welches sich auf dem
+            Theater zeiget, gehen in dasselbige hinein.</stage>
         </div>
         <div type="scene">
           <head>Zwölfter Auftritt.</head>
-          <p>Pantalon, und Piro, so den Arleckin, und die Colombina haben in das Haus gehen sehen,
-            klopfen bey der Thüre an. Sogleich kommt</p>
+          <stage>Pantalon, und Piro, so den Arleckin, und die Colombina haben in das Haus gehen
+            sehen, klopfen bey der Thüre an. Sogleich kommt</stage>
         </div>
         <div type="scene">
           <head>Dreyzehender Auftritt.</head>
-          <p>Arleckin als Lieder-singer, und Colombina als Lieder-singerin, stellen sich auf eine
-            Bank, auf welcher ein Bild siehet, und singen folgendes <hi>Duetto:</hi>
-          </p>
+          <stage>Arleckin als Lieder-singer, und Colombina als Lieder-singerin, stellen sich auf
+            eine Bank, auf welcher ein Bild siehet, und singen folgendes <hi>Duetto:</hi>
+          </stage>
           <p><pb n="55"/> Duetto.</p>
           <sp who="#arleckin">
             <speaker>ARLECKIN.</speaker>
@@ -3680,17 +3693,23 @@
               <l>Sich dahin zu bequemen.</l>
               <l>Sie hatte ihrem Arleckin</l>
               <l>Die Treue schon geschworen.</l>
-              <l>ARLECKIN, COLOMBINA.</l>
+            </lg>
+          </sp>
+          <sp who="#arleckin #colombina">
+            <speaker>ARLECKIN, COLOMBINA.</speaker>
+            <lg>
               <l>Nimm noch einmal mein Herze hin,</l>
               <l>Du bist für mich geboren.</l>
             </lg>
-            <p>Nach dem Duetto</p>
-            <p>Erkennet Piro den Arleckin, und die Colombina. Arleckin, so solches merket, schlägt
-              beyden das Bild auf die Köpf, und lauft mit seiner Colombina ins Haus ab. Pantalon,
-              und Piro sind deswegen zornig, klopfen wieder an das Haus, sogleich eröfnet sich an
-              der Seiten ein Galanterie-gewölb, Colombina kommt als Tyrollerin heraus-getanzet, und
-              singt folgende</p>
-            <p>Aria.</p>
+          </sp>
+          <stage>Nach dem Duetto</stage>
+          <stage>Erkennet Piro den Arleckin, und die Colombina. Arleckin, so solches merket, schlägt
+            beyden das Bild auf die Köpf, und lauft mit seiner Colombina ins Haus ab. Pantalon, und
+            Piro sind deswegen zornig, klopfen wieder an das Haus, sogleich eröfnet sich an der
+            Seiten ein Galanterie-gewölb, Colombina kommt als Tyrollerin heraus-getanzet, und singt
+            folgende</stage>
+          <sp who="#colombina">
+            <stage>Aria.</stage>
             <lg>
               <l>Liebe Leutel schauts mi an,</l>
               <l>Ob i enk gefallen kan?</l>
@@ -3703,16 +3722,16 @@
               <l>I gedenk ä selbst an mich,</l>
               <l>Gelt mei Bue, ich war für dich.</l>
             </lg>
-            <p>Nach der Aria</p>
-            <p>Traget Colombina dem Piro, und Pantalon ihre Waaren an, diese aber wollen nichts
+            <stage>Nach der Aria</stage>
+            <stage>Traget Colombina dem Piro, und Pantalon ihre Waaren an, diese aber wollen nichts
               kauffen, fragen, wo Colombina, und Arleckin seye? Colombina stellt sich von nichts zu
               wissen, und da ihr Piro nichtes abkauffen will, schenkt sie ihm ihren ganzen Gram, und
               lauft ins Haus wieder ab. Pantalon und Piro verwundern sich über die Freygebigkeit
               dieser Tyrollerin. Piro macht das Kästel auf, findet allerhand lustige Sachen.
               Pantalon wird wieder zornig, klopft abermal an das Haus, sogleich an der andern Seiten
               zeiget sich eine Kösten-brater- hüten, in welcher Colombina als Kösten-braterin
-              beschäftiget ist, kommt zu ihnen heraus, und singt folgende</p>
-            <p>Aria.</p>
+              beschäftiget ist, kommt zu ihnen heraus, und singt folgende</stage>
+            <stage>Aria.</stage>
             <lg>
               <l>Ihr Herrn kafts Kösten,</l>
               <l>Sie seynd ja von Besten,</l>
@@ -3728,57 +3747,41 @@
               <l>Ich kriegs aus Tyroll.</l>
             </lg>
             <pb n="57"/>
-            <p>Nach der Aria fängt Pantalon mit ihr an zu reden, ob sie den Arleckin und die
+            <stage>Nach der Aria fängt Pantalon mit ihr an zu reden, ob sie den Arleckin und die
               Colombina nicht gesehen? Unter dieser Zeit stihlt Piro Kastanien aus der Pfanne.
               Colombina schmeichelt ihm, macht ihme mit Carressen im Gesicht schwarz, und lauft ab.
               Pantalon, so den Piro wegen seinen schwarzen Gesicht auslachet; dieser ärgert sich,
               beyde gehen, ob sie durch das Schlüssel-loch nichtes sehen könnten; hier werden sie
               durch einen kleinen Teufel geschoren, sogleich kommet Colombina als
-                <hi>Petit-Maitre,</hi> und singet folgende Französische</p>
-            <p>Aria.</p>
+                <hi>Petit-Maitre</hi>, und singet folgende Französische</stage>
+            <stage>Aria.</stage>
             <lg>
-              <l>
-                <hi>Colombine est plus charmante,</hi>
-              </l>
-              <l>
-                <hi>Que l'aurore naissante.</hi>
-              </l>
-              <l>
-                <hi>La Jeunesse brillante</hi>
-              </l>
-              <l>
-                <hi>N'eut jamais tant d'appas;</hi>
-              </l>
-              <l>
-                <hi>Quand sa bouche riante chante</hi>
-              </l>
-              <l>
-                <hi>L'on diroit que Colombine tente</hi>
-              </l>
-              <l>
-                <hi>Une seconde fois</hi>
-              </l>
-              <l>
-                <hi>Arranger quelque Amant</hi>
-              </l>
-              <l>
-                <hi>Sous les loix.</hi>
-              </l>
+              <l><emph>Colombine est plus charmante,</emph></l>
+              <l><emph>Que l'aurore naissante.</emph></l>
+              <l><emph>La Jeunesse brillante</emph></l>
+              <l><emph>N'eut jamais tant d'appas;</emph></l>
+              <l><emph>Quand sa bouche riante chante</emph></l>
+              <l><emph>L'on diroit que Colombine tente</emph></l>
+              <l><emph>Une seconde fois</emph></l>
+              <l><emph>Arranger quelque Amant</emph></l>
+              <l><emph>Sous les loix.</emph></l>
             </lg>
-            <p>Nach der Aria ziehet sie dem Piro ein Frauen-kleid, welches ihr ein Laquay
-              nachgetragen, an. Piro muß mit ihr tanzen, und da sie denselben unter den Tanzen genug
-              geplaget, lauft sie wieder in das Haus ab. Pantalon tröstet den Piro, wollen mit
-              Gewalt die Thür einsprengen; sogleich verwandelt sich das ganze Theater in eine
-              herrliche Juden-sinagoge, etliche zwanzig Kinder als Juden, und Jüdinen machen die
-              Juden-schule. Hier folget ein Ballet, alsdann die Copulation von Arleckin und
-              Colombina. Nach derselben erkennen Pantalon und Piro den Arleckin und die Colombina.
-              Pantalon <pb n="58"/> will sie beyde ermorden. Arleckin und Colombina verstecken sich
-              hinter den Tisch, wo der Reby gestanden. Piro und Pantalon gehen ihnen nach; sogleich
-              verwandelt sich der Tisch in eine lustige Maschine, in welcher sich Pantalon und Piro
-              eingesperret. Nach der Zeit gibt Piro und Pantalon seine Einwilligung in die Heyraht
-              des Arleckins und der Colombina. Arleckin läst sie aus ihrem Arrest heraus, und
-              endiget sich diese Pantomime mit folgendem</p>
-            <p>Chorus.</p>
+          </sp>
+          <stage>Nach der Aria ziehet sie dem Piro ein Frauen-kleid, welches ihr ein Laquay
+            nachgetragen, an. Piro muß mit ihr tanzen, und da sie denselben unter den Tanzen genug
+            geplaget, lauft sie wieder in das Haus ab. Pantalon tröstet den Piro, wollen mit Gewalt
+            die Thür einsprengen; sogleich verwandelt sich das ganze Theater in eine herrliche
+            Juden-sinagoge, etliche zwanzig Kinder als Juden, und Jüdinen machen die Juden-schule.
+            Hier folget ein Ballet, alsdann die Copulation von Arleckin und Colombina. Nach
+            derselben erkennen Pantalon und Piro den Arleckin und die Colombina. Pantalon <pb n="58"
+            /> will sie beyde ermorden. Arleckin und Colombina verstecken sich hinter den Tisch, wo
+            der Reby gestanden. Piro und Pantalon gehen ihnen nach; sogleich verwandelt sich der
+            Tisch in eine lustige Maschine, in welcher sich Pantalon und Piro eingesperret. Nach der
+            Zeit gibt Piro und Pantalon seine Einwilligung in die Heyraht des Arleckins und der
+            Colombina. Arleckin läst sie aus ihrem Arrest heraus, und endiget sich diese Pantomime
+            mit folgendem</stage>
+          <sp who="chorus">
+            <stage>Chorus.</stage>
             <lg>
               <l>Last uns tanzen, last uns singen,</l>
               <l>Last den Paß, die Geige klingen,</l>
@@ -3787,9 +3790,9 @@
               <l>Vivat, alle sollen leben,</l>
               <l>Die uns heute zugeschaut!</l>
             </lg>
-            <p>Ende.</p>
-            <pb n="59"/>
           </sp>
+          <stage>Ende.</stage>
+          <pb n="59"/>
         </div>
       </div>
     </body>
