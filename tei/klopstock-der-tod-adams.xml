@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Der Tod Adams</title>
+        <title type="main">Der Tod Adams</title>
+        <title type="sub">Ein Trauerspiel</title>
         <author key="pnd:118563386">Klopstock, Friedrich Gottlieb</author>
       </titleStmt>
       <publicationStmt>
@@ -42,40 +43,38 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="selima">
-            <persName>SELIMA</persName>
+          <person xml:id="selima" sex="FEMALE">
+            <persName>Selima</persName>
           </person>
-          <person xml:id="seth">
-            <persName>SETH</persName>
-            <persName xml:id="seht">SEHT</persName>
-            <persName xml:id="seh">SEH</persName>
+          <person xml:id="seth" sex="MALE">
+            <persName>Seth</persName>
           </person>
-          <person xml:id="adam">
-            <persName>ADAM</persName>
+          <person xml:id="adam" sex="MALE">
+            <persName>Adam</persName>
           </person>
-          <person xml:id="der_todesengel">
-            <persName>DER TODESENGEL</persName>
+          <person xml:id="der_todesengel" sex="UNKNOWN">
+            <persName>Der Todesengel</persName>
           </person>
-          <person xml:id="kain">
-            <persName>KAIN</persName>
+          <person xml:id="kain" sex="MALE">
+            <persName>Kain</persName>
           </person>
-          <person xml:id="eva">
-            <persName>EVA</persName>
+          <person xml:id="eva" sex="FEMALE">
+            <persName>Eva</persName>
           </person>
-          <person xml:id="heman">
-            <persName>HEMAN</persName>
+          <person xml:id="heman" sex="MALE">
+            <persName>Heman</persName>
           </person>
-          <person xml:id="eine_mutter">
-            <persName>EINE MUTTER</persName>
+          <person xml:id="eine_mutter" sex="FEMALE">
+            <persName>Eine Mutter</persName>
           </person>
-          <person xml:id="noch_eine">
-            <persName>NOCH EINE</persName>
+          <person xml:id="noch_eine" sex="FEMALE">
+            <persName>Noch eine</persName>
           </person>
-          <person xml:id="die_dritte">
-            <persName>DIE DRITTE</persName>
+          <person xml:id="die_dritte" sex="FEMALE">
+            <persName>Die dritte</persName>
           </person>
-          <person xml:id="sunim">
-            <persName>SUNIM</persName>
+          <person xml:id="sunim" sex="MALE">
+            <persName>Sunim</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -90,6 +89,7 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
+        <change who="#ff" when="2018-01-15">work on IDs; formalities; add gender info</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -100,8 +100,6 @@
         <head>Der Tod Adams</head>
         <head>Ein Trauerspiel</head>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head><pb n="2"/> Personen.</head>
@@ -116,6 +114,10 @@
           <castItem>Ein Todesengel.</castItem>
         </castList>
       </div>
+      <set>
+        <p>Der Schauplatz ist eine Hütte. In der Tiefe derselben ist Adams besonderes Zimmer, wo
+          Abels Altar steht, und wo er zu beten pflegt.</p>
+      </set>
       <div type="preface">
         <head>Vorbericht.</head>
         <p>Die Schönheiten eines Trauerspiels, die es mehr durch Gewohnheiten und Sitten einer
@@ -153,8 +155,10 @@
           Theater gehöret.</p>
         <pb n="4"/>
       </div>
+    </front>
+    <body>
       <div type="act">
-        <head>1. Akt</head>
+        <head>Erste Handlung.</head>
         <div type="scene">
           <head>Erster Auftritt.</head>
           <stage>
@@ -162,7 +166,7 @@
           </stage>
           <sp who="#selima">
             <speaker>SELIMA.</speaker>
-            <p> Wie schön ist dieser glückselige Tag der Liebe! Wie hell ist er! Wie viel freudiger,
+            <p>Wie schön ist dieser glückselige Tag der Liebe! Wie hell ist er! Wie viel freudiger,
               als alle Tage, die ich gelebt habe! Und nun ist unsre Mutter auch hingegangen, daß sie
               sehe, wie ihre Töchter meine Brautlaube schmücken, und mit mütterlicher Hand auch
               einen Zweig in die Laube flechte. Ich habe kühlende Früchte abgebrochen. Ich habe sie
@@ -178,16 +182,16 @@
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Meine Selima! Ich sann mit ernsten Freuden deiner Glückseligkeit nach.</l>
+            <p>Meine Selima! Ich sann mit ernsten Freuden deiner Glückseligkeit nach.</p>
           </sp>
           <sp who="#selima">
             <speaker>SELIMA.</speaker>
-            <l> Aber du sagtest ja Dieses – du sagtest es mit einer Stimme, die Unruh verschweigen
-              wollte.</l>
+            <p>Aber du sagtest ja Dieses – du sagtest es mit einer Stimme, die Unruh verschweigen
+              wollte.</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <p> Was kann ich dir, Selima, verbergen! Ich wollte es dir verbergen. Allein die reine
+            <p>Was kann ich dir, Selima, verbergen! Ich wollte es dir verbergen. Allein die reine
               Aufrichtigkeit meines Herzens und dieser wartende Kummer, mit dem du vor mir stehst,
               zwingen mich, daß ich dir es sagen muß. Aber betrübe dich nicht, Selima. Die Liebe zu
               unserm Vater machte mich zu aufmerksam auf seinen Ernst, mit dem er zu Abels Altare
@@ -195,13 +199,13 @@
           </sp>
           <sp who="#selima">
             <speaker>SELIMA.</speaker>
-            <p> Soll ich hingehen, und seine Hand umfassen? und sie festhalten? und ihn kindlich
+            <p>Soll ich hingehen, und seine Hand umfassen? und sie festhalten? und ihn kindlich
               ansehen? und ihm flehn, daß er nicht traurig sey? – Ach, mein Bruder! mein Bruder! du
               verschweigst mir noch etwas! So hab' ich dich noch niemals weinen gesehen!</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <p> Meine Selima, wärst du in der Vorhütte geblieben! Du hast mich zu sehr bewegt! Denn
+            <p>Meine Selima, wärst du in der Vorhütte geblieben! Du hast mich zu sehr bewegt! Denn
               nun – ja, nun muß ich dir Alles sagen. Noch niemals hab' ich unsern Vater so gesehen,
               wie er erst vor mir vorüberging. Sein Gesicht war fürchterlich bleich! Er bebte fort,
               kaum ging er. Seine Augen starrten auf mich her! Er sah mich nicht. Er ging zum Altare
@@ -218,14 +222,14 @@
           </stage>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Seth und Selima sind hier? – Es ist ein finstrer, es ist ein schreckenvoller Tag! –
+            <p>Seth und Selima sind hier? – Es ist ein finstrer, es ist ein schreckenvoller Tag! –
               Er wird wieder heiter werden, Selima! Doch geh zu deiner Mutter und lies Blumen mit
               ihr, deine Brautlaube zu schmücken. Sag' ihr, daß es auf meinen Befehl geschieht, daß
               du hierin wider die Gewohnheit einer Verlobten handelst.</p>
           </sp>
           <sp who="#selima">
             <speaker>SELIMA.</speaker>
-            <l> Ich gehe, mein Vater. –</l>
+            <p>Ich gehe, mein Vater. –</p>
           </sp>
         </div>
         <div type="scene">
@@ -235,7 +239,7 @@
           </stage>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Sie hat eine schöne Seele! Wie sie es empfand, daß sie uns verlassen mußte. Mein
+            <p>Sie hat eine schöne Seele! Wie sie es empfand, daß sie uns verlassen mußte. Mein
               Sohn! – – (Gott segne sie! Ich werde sie nicht wieder sehen! Sie ist wie Eva, da der
               Fluch noch nicht war! Gott segne sie!) Mein Sohn! Mein bester Sohn! Ich weiß, wie du
               den Unerschaffnen kennst, und wie tief du ihn anbetest! Du bist ein Mann mein Sohn!
@@ -246,11 +250,11 @@
             <stage>
               <hi>vor sich.</hi>
             </stage>
-            <l> Mein Vater! – Adam! mein Vater!</l>
+            <p>Mein Vater! – Adam! mein Vater!</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Er verstummt! Ich werde bald länger verstummen! <hi>Zu Seth.</hi> Mein ganzes Herz
+            <p>Er verstummt! Ich werde bald länger verstummen! <hi>Zu Seth.</hi> Mein ganzes Herz
               empört sich da ich dich leiden sehe! Aber du mußt mich hören! Viel fürchterlicher war
               die Stimme, da ich das erste Mal das <pb n="7"/> erstaunungsvolle Wort, Tod! vernahm.
               Unter allen meinen Kindern bist du der Einzige, der mich sterben sehen, der mir
@@ -280,30 +284,30 @@
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Sage mir, ach! sage mir, mein Vater: Du willst sterben?</l>
+            <p>Sage mir, ach! sage mir, mein Vater: Du willst sterben?</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Wie gern blieb' ich noch unter euch, meine Kinder!</l>
+            <p>Wie gern blieb' ich noch unter euch, meine Kinder!</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Ach, bleib denn, mein Vater, bleib!</l>
+            <p>Ach, bleib denn, mein Vater, bleib!</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Laß mich, mein Sohn! Meine Seele hängt an deiner Seele! Laß mich! Du bist mein sehr
+            <p>Laß mich, mein Sohn! Meine Seele hängt an deiner Seele! Laß mich! Du bist mein sehr
               theurer Sohn! Aber, der das Todesurtheil über mich aussprach, ist anbetenswürdig!</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <p> Er ist es! Er ist es! – Aber könnte dich, mein Vater, die Liebe zu deinen Kindern
+            <p>Er ist es! Er ist es! – Aber könnte dich, mein Vater, die Liebe zu deinen Kindern
               nicht täuschen, daß du eine starke Erschütterung deiner männlichen Gesundheit, dieser
               Gesundheit, die Jahrhunderte gedauert hat, für den kommenden Tod hieltest?</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Wie kann ich dem geliebtesten meiner Söhne antworten, wenn er so redet? O, wenn es
+            <p>Wie kann ich dem geliebtesten meiner Söhne antworten, wenn er so redet? O, wenn es
               der Todesengel nur nicht zu schnell entscheidet! Wenn meines Sohnes Augen den
               Furchtbaren nur nicht selbst sehn! – Dort ist Abels Altar, Sohn! dort, wo er noch mit
               dem Blute deines Bruders bezeichnet ist! dort fass' ihn mit ringenden Händen! dort
@@ -312,7 +316,7 @@
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> O Vater! – Adam, mein Vater! – Ich gehe.</l>
+            <p>O Vater! – Adam, mein Vater! – Ich gehe.</p>
           </sp>
         </div>
         <div type="scene">
@@ -336,21 +340,21 @@
           </stage>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Du kömmst wieder. Hast du gebetet, Sohn?</l>
+            <p>Du kömmst wieder. Hast du gebetet, Sohn?</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Wie ich noch nie gebetet habe. Schauer auf Schauer! Das war mein Gebet.</l>
+            <p>Wie ich noch nie gebetet habe. Schauer auf Schauer! Das war mein Gebet.</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Aber, mein Sohn! Wenn nun Eva mit ihren Kindern käme! Sollen sie mich sterben sehen?
+            <p>Aber, mein Sohn! Wenn nun Eva mit ihren Kindern käme! Sollen sie mich sterben sehen?
               Geh, Sohn, und sage ihnen, daß ich allein opfern wolle, und daß sie erst kommen, wenn
               die Sonne untergegangen ist.</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <p> Ich kann dich jetzt nicht verlassen, mein Vater, Das kann ich nicht! Ich habe dir in
+            <p>Ich kann dich jetzt nicht verlassen, mein Vater, Das kann ich nicht! Ich habe dir in
               meinem ganzen Leben <pb n="10"/> gehorcht. Doch heute kann ich dich nicht verlassen!
               Dazu ist Selima schon hingegangen und hat sie traurig gemacht! Denn sie bat mich und
               überwand mein Herz. Ich sagte ihr, mit welcher Bangigkeit du zum Altare
@@ -358,16 +362,16 @@
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> So kommen sie denn! Nun, so wird mein Herz eher brechen.</l>
+            <p>So kommen sie denn! Nun, so wird mein Herz eher brechen.</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Ich höre Fußtritte. Das sind die Füße Selima.</l>
+            <p>Ich höre Fußtritte. Das sind die Füße Selima.</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Jetzt kommen sie schon! O meine Kinder, meine Kinder! Ich unglückseligster unter den
-              Vätern!</l>
+            <p>Jetzt kommen sie schon! O meine Kinder, meine Kinder! Ich unglückseligster unter den
+              Vätern!</p>
           </sp>
         </div>
         <div type="scene">
@@ -380,12 +384,12 @@
             <stage>
               <hi>vor sich.</hi>
             </stage>
-            <p> Sie ist todtblaß, wie Abel war, da er am Altare lag! <hi>Zu Selima.</hi> Warum bist
+            <p>Sie ist todtblaß, wie Abel war, da er am Altare lag! <hi>Zu Selima.</hi> Warum bist
               du so bekümmert, Selima? Sey ruhig, meine Tochter.</p>
           </sp>
           <sp who="#selima">
             <speaker>SELIMA.</speaker>
-            <p> Zürne nicht mit mir, mein Vater, daß ich dir nicht gehorchte. Habe Mitleiden mit
+            <p>Zürne nicht mit mir, mein Vater, daß ich dir nicht gehorchte. Habe Mitleiden mit
               deiner Selima. Da ich eilte zu meiner Mutter zu gehn, da wurde ich so bang, so
               beklommen über Das, was mir Seth von dir gesagt hatte, daß es mir auf Einmal dunkel
               vor meinen Augen ward. Weiter weiß ich nicht, was geschah. Ich habe mich seitdem unter
@@ -396,7 +400,7 @@
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Steh' auf, Selima! Du bist meine geliebte Tochter! Sey meinetwegen nicht bekümmert.
+            <p>Steh' auf, Selima! Du bist meine geliebte Tochter! Sey meinetwegen nicht bekümmert.
               Ich habe nur eine <pb n="11"/> ernsthafte Unterredung mit Seth. Ich bin in der
               Vorhütte gewesen. Du hast den Weinstock noch nicht so hoch an den Ulm hinaufgewunden,
               als du mir sagtest, da du thun wolltest. Du bist meine geliebte Selima. Geh' hin und
@@ -411,7 +415,7 @@
           </stage>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Wäre sie länger geblieben, so hätte ich ihren Anblick nicht mehr aushalten können.
+            <p>Wäre sie länger geblieben, so hätte ich ihren Anblick nicht mehr aushalten können.
               Ach, du kannst mir es nicht nachempfinden, Seth, wie unglücklich ich bin! Diese Blume,
               diese unschuldvolle Blume wird auch abfallen und in Staub sinken! und die Enkelinnen
               ihrer Enkelinnen auch! Du weißt es, und du verstandst mich immer am Meisten, wenn ich
@@ -422,22 +426,22 @@
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <p> Ich verlasse dich nicht! Und du sollst dir kein Grab machen! Ich beschwöre dich bei
+            <p>Ich verlasse dich nicht! Und du sollst dir kein Grab machen! Ich beschwöre dich bei
               dem lebendigen Gott! mache dir kein Grab!</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Abel liegt dort begraben! Ich will dort auch begraben liegen! Wollt ihr mich vor
+            <p>Abel liegt dort begraben! Ich will dort auch begraben liegen! Wollt ihr mich vor
               euren Augen verwesen sehn?</p>
             <pb n="12"/>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Du furchtbarer Gott, der uns gerichtet hat! –</l>
+            <p>Du furchtbarer Gott, der uns gerichtet hat! –</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Die Schrecken des Allmächtigen ergreifen mich zu sehr! Ich muß mein Antlitz von dir
+            <p>Die Schrecken des Allmächtigen ergreifen mich zu sehr! Ich muß mein Antlitz von dir
               wen den, Sohn! – Es ist ein dunkler Tag! Was bebt dort? Ein schwarzer entsetzlicher
               Tag! – Hörst du die Felsen beben, Sohn? Er wandelt immer näher herauf! Vernahmst du,
               wie jetzt der Hügel an unsrer Hütte bewegt ward? Auf dem Hügel steht er! Siehst du den
@@ -445,39 +449,38 @@
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Es ist Nacht um mich; aber mein Ohr hört!</l>
+            <p>Es ist Nacht um mich; aber mein Ohr hört!</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM</speaker>
             <stage>
               <hi>zu Seth.</hi>
             </stage>
-            <p> So hör denn mich und ihn! <hi>Zum Todesengel.</hi> Ich kannte den Fußtritt deines
+            <p>So hör denn mich und ihn! <hi>Zum Todesengel.</hi> Ich kannte den Fußtritt deines
               Ganges wohl, Gesandter des Gerichts! Todesengel! Verderber! hier bin ich!</p>
           </sp>
           <sp who="#der_todesengel">
             <speaker>DER TODESENGEL.</speaker>
-            <p> So sagt Der, der dich aus Staube zum Menschen schuf: Eh die Sonne den Cedernwald
-              hinunter gestiegen ist, sollst <hi>du des </hi>
-              <hi>Todes sterben!</hi> Einige deiner Nachkommen werden entschlummern, einige sterben;
-              aber du sollst <hi>des Todes sterben!</hi> Das sollst du, wenn ich wiederkomme und auf
-              diesen Felsen trete und ihn erschüttre, daß er hinstürzt. Dein Auge wird dunkel seyn
-              und nicht sehen; aber dein Ohr wird den donnernden Felsen hören, eh die Sonne den
-              Cedernwald hinunter gestiegen ist.</p>
+            <p>So sagt Der, der dich aus Staube zum Menschen schuf: Eh die Sonne den Cedernwald
+              hinunter gestiegen ist, sollst <hi>du des Todes sterben!</hi> Einige deiner Nachkommen
+              werden entschlummern, einige sterben; aber du sollst <hi>des Todes sterben!</hi> Das
+              sollst du, wenn ich wiederkomme und auf diesen Felsen trete und ihn erschüttre, daß er
+              hinstürzt. Dein Auge wird dunkel seyn und nicht sehen; aber dein Ohr wird den
+              donnernden Felsen hören, eh die Sonne den Cedernwald hinunter gestiegen ist.</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Sage Dem, der mich geschaffen und gerichtet hat, daß ich mich aufmache und komme und
+            <p>Sage Dem, der mich geschaffen und gerichtet hat, daß ich mich aufmache und komme und
               anbete! Fleh' ihn an, du Furchtbarer, daß er Lindrung in meine Todesangst mische.</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> O du mein theurer Vater, ich will mit dir sterben! Warum gehst du von mir, mein
-              Vater?</l>
+            <p>O du mein theurer Vater, ich will mit dir sterben! Warum gehst du von mir, mein
+              Vater?</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Anzubeten!</l>
+            <p>Anzubeten!</p>
           </sp>
         </div>
         <div type="scene">
@@ -496,7 +499,7 @@
         </div>
       </div>
       <div type="act">
-        <head>2. Akt</head>
+        <head>Zweite Handlung.</head>
         <div type="scene">
           <head>Erster Auftritt.</head>
           <stage>
@@ -507,7 +510,7 @@
             <stage>
               <hi>der, an den Altar gelehnt, bei seinem Grabe steht.</hi>
             </stage>
-            <p> Es ist fürchterlich, Sohn! Zwar diese kühle Erde, in der auch die duftende Rose und
+            <p>Es ist fürchterlich, Sohn! Zwar diese kühle Erde, in der auch die duftende Rose und
               die schadende Ceder wächst, ist es nicht! Aber hier soll ich <hi>verwesen!</hi> Ich,
               der unter der bildenden Hand des Allmächtigen aufsprang, den keine Sterbliche geboren
               hat. Und schon kündigt sich die Verwesung bei mir, so fern nicht mehr, an. Mein Auge
@@ -522,38 +525,38 @@
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Dort liegt Edens Gebirge.</l>
+            <p>Dort liegt Edens Gebirge.</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Ich sehe kein Gebirge mehr! Ist die Sonne mit Wolken ganz bedeckt, Sohn?</l>
+            <p>Ich sehe kein Gebirge mehr! Ist die Sonne mit Wolken ganz bedeckt, Sohn?</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Es sind noch viel Wolken da, aber die Sonne ist nicht ganz bedeckt.</l>
+            <p>Es sind noch viel Wolken da, aber die Sonne ist nicht ganz bedeckt.</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Ist sie noch weit vom Cedernwalde? Doch sage mir's nicht, ich will dich hernach
-              wieder fragen.</l>
+            <p>Ist sie noch weit vom Cedernwalde? Doch sage mir's nicht, ich will dich hernach
+              wieder fragen.</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Jetzt bedecken sie die Wolken wieder. Schwarze Wolken bedecken sie.</l>
+            <p>Jetzt bedecken sie die Wolken wieder. Schwarze Wolken bedecken sie.</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> So seh' ich sie nicht mehr, wenn sie auch hernach wieder hervorkömmt! denn, sobald
+            <p>So seh' ich sie nicht mehr, wenn sie auch hernach wieder hervorkömmt! denn, sobald
               ich zu meinem Grabe zurück gegangen bin, so geh' ich nicht wieder davon weg. Komm,
               mein Sohn, daß ich mich an dich lehne.</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Mein Vater! –</l>
+            <p>Mein Vater! –</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Ihr schöne Gefilde! Ihr hohe quellvolle Berge! Ihr schattende kühle Thäler, und ihr
+            <p>Ihr schöne Gefilde! Ihr hohe quellvolle Berge! Ihr schattende kühle Thäler, und ihr
               Kinder der Berge und der Thäler! die ihr euch unter dem Fuße des Wandrers biegt oder
               eure Wipfel über die hohe Wolke emporhebt! ihr segenvolle Gefilde, wo ich gewandelt,
               wo ich Leben und Freude eingeathmet, wo ich so lange, wo ich so oft glückselig gewesen
@@ -570,36 +573,36 @@
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <p> Nun kann ich's dir nicht mehr verschweigen, mein Vater. Es kömmt mir vor, als wenn
+            <p>Nun kann ich's dir nicht mehr verschweigen, mein Vater. Es kömmt mir vor, als wenn
               ich Selima schon einige Zeit ängstlich hin und her gehen höre. Sie geht schneller
               gegen die Thüre zu, als sie zurück geht.</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Sage mir, mein Sohn, würd' ich's ihr verbergen können? Oder fängt der Tod schon an,
+            <p>Sage mir, mein Sohn, würd' ich's ihr verbergen können? Oder fängt der Tod schon an,
               sich auf meinem Wangen zu verbreiten? Du wendest dich von mir?</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <p> Ach, jedes Wort aus deinem Munde geht mir durch die Seele! Du bist fürchterlich
+            <p>Ach, jedes Wort aus deinem Munde geht mir durch die Seele! Du bist fürchterlich
               bleich, mein Vater! Ich habe Abel nicht gesehen, aber ich habe einen Jüngling gesehen,
               der in seiner Blüthe starb, und dessen Tod sie dir verborgen haben.</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Also treff' ich bei Abel noch meiner Kinder an? Ach, sie haben vielleicht mir und
+            <p>Also treff' ich bei Abel noch meiner Kinder an? Ach, sie haben vielleicht mir und
               auch dir noch vieler andern Tod verborgen! Er fürchtete den Allmächtigen doch, der
               Jüngling?</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <p> Er hatte eine schöne Seele. Ueber ihn vergaß ich die finstre Seite des Todes lange.
+            <p>Er hatte eine schöne Seele. Ueber ihn vergaß ich die finstre Seite des Todes lange.
               Denn er starb mit dem Lächeln eines Engels. Aber ich konnte seinen Anblick nicht
               aushalten, da er todt war. Doch Selima kömmt.</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Ach, Sunim, mein jüngster Sohn, Sunim auch noch nicht wieder gefunden!</l>
+            <p>Ach, Sunim, mein jüngster Sohn, Sunim auch noch nicht wieder gefunden!</p>
           </sp>
         </div>
         <div type="scene">
@@ -609,7 +612,7 @@
           </stage>
           <sp who="#selima">
             <speaker>SELIMA.</speaker>
-            <p> Mein Vater, werde nicht zornig, daß ich schon wieder dein Gebot übertrete. Aber höre
+            <p>Mein Vater, werde nicht zornig, daß ich schon wieder dein Gebot übertrete. Aber höre
               mich, mein Vater. Es geht ein Mann, ein Mann, wie ich noch keinen gesehen habe, um
               unsre Hütte herum und droht mir, daß ich ihm die Hütte öffne. Er will zu Adam. Er
               erschreckte mich sehr. Es müssen noch irgendwo Menschen wohnen, die deine Söhne nicht
@@ -617,28 +620,28 @@
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Wie ist der Mann gestaltet, Selima?</l>
+            <p>Wie ist der Mann gestaltet, Selima?</p>
           </sp>
           <sp who="#selima">
             <speaker>SELIMA.</speaker>
-            <p> Es ist ein hoher drohender Mann. Er hat tiefe Augen, mit denen er wild umherschaut.
+            <p>Es ist ein hoher drohender Mann. Er hat tiefe Augen, mit denen er wild umherschaut.
               Er hat sich mit fleckigen Häuten bedeckt, die schimmern. Er trägt eine schwere
               knotenvolle Keule. Er sieht verbrannt und doch bleich aus; aber nicht so bleich, als
               du jetzt bist. Ach, mein Vater! –</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Hatte der Mann seine Stirn' entblößt?</l>
+            <p>Hatte der Mann seine Stirn' entblößt?</p>
           </sp>
           <sp who="#selima">
             <speaker>SELIMA.</speaker>
-            <p> Ja, er hatte sie entblößt und auf derselben etwas, das ich nicht beschreiben kann,
+            <p>Ja, er hatte sie entblößt und auf derselben etwas, das ich nicht beschreiben kann,
               weil ich es kaum anzusehen vermochte. Röthlich, glühend, fürchterlich lief es über sie
               herunter, wie der zückende Blitz.</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Es ist Kain, Seth, es ist Kain! Der Allmächtige hat ihn gesandt, daß er mir meinen
+            <p>Es ist Kain, Seth, es ist Kain! Der Allmächtige hat ihn gesandt, daß er mir meinen
               Tod noch bittrer mache. Geh, daß wir gewiß erfahren, ob ihn der Allmächtige gesandt
               habe, geh, sag' ihm, daß er sich wende und mein Angesicht nicht sehe! Aber, wenn er
               dennoch kommen will, so hab' ichs verdient, daß er komme, und so hat ihn Gott gesandt!
@@ -652,55 +655,55 @@
           </stage>
           <sp who="#selima">
             <speaker>SELIMA.</speaker>
-            <l> Mein Vater, ach, was war denn Das für eine geöffnete Tiefe bei dem Altare?</l>
+            <p>Mein Vater, ach, was war denn Das für eine geöffnete Tiefe bei dem Altare?</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Du hast noch kein Grab gesehen, Selima?</l>
+            <p>Du hast noch kein Grab gesehen, Selima?</p>
           </sp>
           <sp who="#selima">
             <speaker>SELIMA.</speaker>
-            <l> Was ist Das, ein Grab, mein Vater?</l>
+            <p>Was ist Das, ein Grab, mein Vater?</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM</speaker>
             <stage>
               <hi>vor sich.</hi>
             </stage>
-            <l> Zu jammervoller Tag! Kain kömmt! Und dieses unschuldvolle, dieses geliebte Kind vor
-              mir!</l>
+            <p>Zu jammervoller Tag! Kain kömmt! Und dieses unschuldvolle, dieses geliebte Kind vor
+              mir!</p>
           </sp>
           <sp who="#selima">
             <speaker>SELIMA.</speaker>
-            <p> O, rede mit mir, mein Vater! Du bist doch nicht zornig auf Selima? Sonst nanntest du
+            <p>O, rede mit mir, mein Vater! Du bist doch nicht zornig auf Selima? Sonst nanntest du
               mich ja deine Selima.</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Du bist es auch! Du bist meine sehr geliebte Tochter!</l>
+            <p>Du bist es auch! Du bist meine sehr geliebte Tochter!</p>
           </sp>
           <sp who="#selima">
             <speaker>SELIMA.</speaker>
-            <p> Ach, du sagtest ja, mein Vater, daß Kain gekommen wäre, dir deinen Tod noch bittrer
+            <p>Ach, du sagtest ja, mein Vater, daß Kain gekommen wäre, dir deinen Tod noch bittrer
               zu machen. Ach! ich kann's nicht aussprechen! – Du willst doch nicht sterben, mein
               Vater?</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Sey nicht so bekümmert, meine Selima. Dn weißt es ja, daß uns Gott gesagt hat: Wir
+            <p>Sey nicht so bekümmert, meine Selima. Dn weißt es ja, daß uns Gott gesagt hat: Wir
               sollen wieder Erde werden, woraus wir gemacht sind. Meine Haare sind schon lange grau
               gewesen, lange vorher, eh du geboren wurdest! Wenn mich nun Kain heut zu sehr
               betrübte! –</p>
           </sp>
           <sp who="#selima">
             <speaker>SELIMA.</speaker>
-            <p> Ach, um deiner bessern Söhne willen, um Abels, um Seths, um Hemans willen <hi>Sie
+            <p>Ach, um deiner bessern Söhne willen, um Abels, um Seths, um Hemans willen <hi>Sie
                 umfaßt seine Knie.</hi> um der Unmündigen willen die du heute das erste Mal segnen
               wirst, stirb nicht, ach, stirb nicht, mein Vater! –</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Weine nicht, du theure Tochter! – Steh' auf. Sie kommen.</l>
+            <p>Weine nicht, du theure Tochter! – Steh' auf. Sie kommen.</p>
           </sp>
         </div>
         <div type="scene">
@@ -710,23 +713,23 @@
           </stage>
           <sp who="#kain">
             <speaker>KAIN.</speaker>
-            <l> Ist Das Adam? Du wurdest ja sonst beim Anblick Derjenigen nicht bleich, die du elend
-              gemacht hast.</l>
+            <p>Ist Das Adam? Du wurdest ja sonst beim Anblick Derjenigen nicht bleich, die du elend
+              gemacht hast.</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Schone mindstens dieser weinenden Unschuld!</l>
+            <p>Schone mindstens dieser weinenden Unschuld!</p>
           </sp>
           <sp who="#kain">
             <speaker>KAIN.</speaker>
-            <l> Ist Unschuld auf der Erden gewesen, seitdem Adam Kinder geboren sind?</l>
+            <p>Ist Unschuld auf der Erden gewesen, seitdem Adam Kinder geboren sind?</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM</speaker>
             <stage>
               <hi>zu Selima.</hi>
             </stage>
-            <l> Verlass' uns, meine Tochter Selima. Seth soll dich wieder zu mir rufen.</l>
+            <p>Verlass' uns, meine Tochter Selima. Seth soll dich wieder zu mir rufen.</p>
           </sp>
         </div>
         <div type="scene">
@@ -736,48 +739,48 @@
           </stage>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Warum hast du mein Gebot übertreten und bist in meine friedsame Hütte gekommen,
-              Kain?</l>
+            <p>Warum hast du mein Gebot übertreten und bist in meine friedsame Hütte gekommen,
+              Kain?</p>
           </sp>
           <sp who="#kain">
             <speaker>KAIN.</speaker>
-            <p> Beantworte mir vorher auch eine Frage, so will ich dir antworten. Wer ist der Mann,
+            <p>Beantworte mir vorher auch eine Frage, so will ich dir antworten. Wer ist der Mann,
               der mich zu dir hereingeführt hat?</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Es ist mein zweiter Sohn Seth.</l>
+            <p>Es ist mein zweiter Sohn Seth.</p>
           </sp>
           <sp who="#kain">
             <speaker>KAIN.</speaker>
-            <p> Ich mag deines Mitleids nicht! Es ist dein dritter Sohn! Und nun will ich dir auch
+            <p>Ich mag deines Mitleids nicht! Es ist dein dritter Sohn! Und nun will ich dir auch
               antworten. Ich bin gekommen, mich an dir zu rächen, Adam!</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Willst du meinen Vater auch erwürgen?</l>
+            <p>Willst du meinen Vater auch erwürgen?</p>
           </sp>
           <sp who="#kain">
             <speaker>KAIN.</speaker>
-            <p> Eh du geboren wurdest, war ich schon ganz elend! Laß mich und Adam allein reden. Ich
+            <p>Eh du geboren wurdest, war ich schon ganz elend! Laß mich und Adam allein reden. Ich
               will deinen Vater nicht tödten!</p>
             <pb n="20"/>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Wofür willst du dich an mir rächen, Kain?</l>
+            <p>Wofür willst du dich an mir rächen, Kain?</p>
           </sp>
           <sp who="#kain">
             <speaker>KAIN.</speaker>
-            <l> Daß du mir das Leben gabst!</l>
+            <p>Daß du mir das Leben gabst!</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Dafür, mein erstgeborner Sohn?</l>
+            <p>Dafür, mein erstgeborner Sohn?</p>
           </sp>
           <sp who="#kain">
             <speaker>KAIN.</speaker>
-            <p> Ja, dafür, daß ich meinen Bruder Abel erwürget habe! daß sein Blut laut zum
+            <p>Ja, dafür, daß ich meinen Bruder Abel erwürget habe! daß sein Blut laut zum
               Allmächtigen gerufen hat! daß ich der Unglückseligste unter allen deinen Kindern bin,
               die dir geboren sind und noch geboren werden sollen! daß ich, mit diesem Elende
               belastet, auf der Erde herumirre und keine Ruhe finde! selbst im Himmel keine finden
@@ -785,79 +788,79 @@
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Eh' ich dir gebot, daß du mein Antlitz nicht mehr sehen solltest, hab' ich dir Dieß
+            <p>Eh' ich dir gebot, daß du mein Antlitz nicht mehr sehen solltest, hab' ich dir Dieß
               schon oft beantwortet. Aber so hast du es mir noch nie gesagt, und so hab' ich es noch
               nie empfunden, als an diesem schrecklichsten meiner Tage!</p>
           </sp>
           <sp who="#kain">
             <speaker>KAIN.</speaker>
-            <p> Du hast es mir nie genug beantwortet. Und wenn du es heut' empfunden hast, wie stark
+            <p>Du hast es mir nie genug beantwortet. Und wenn du es heut' empfunden hast, wie stark
               und wie wahr es ist, so ist Das doch meine Rache noch nicht! Jahre schon, lange Jahre
               hab' ich dich, heiße, gerechte, wiedervergeltende Rache, beschlossen! heut' will ich
               dich ausführen!</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Wenn dein starres Auge vor Wuth noch sieht, so schau', o Kain, schau seine grauen
-              Haare!</l>
+            <p>Wenn dein starres Auge vor Wuth noch sieht, so schau', o Kain, schau seine grauen
+              Haare!</p>
           </sp>
           <sp who="#kain">
             <speaker>KAIN.</speaker>
-            <p> Grau oder abgefallen! Ich bin der Unglückseligste unter seinen Kindern! Ich will
-              mich an ihm rächen! Rächen will ich mich, daß er mir das Leben gab!</p>
+            <p>Grau oder abgefallen! Ich bin der Unglückseligste unter seinen Kindern! Ich will mich
+              an ihm rächen! Rächen will ich mich, daß er mir das Leben gab!</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM</speaker>
             <stage>
               <hi>zu Seth.</hi>
             </stage>
-            <l> Sein und mein Richter hat ihn hergesandt! – Was ist denn deine Rache, Kain?</l>
+            <p>Sein und mein Richter hat ihn hergesandt! – Was ist denn deine Rache, Kain?</p>
           </sp>
           <sp who="#kain">
             <speaker>KAIN.</speaker>
-            <l> Ich will dir fluchen! – –</l>
+            <p>Ich will dir fluchen! – –</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Das ist zu viel, mein Sohn Kain! Fluche deinem Vater nicht! Um der Rettung willen,
+            <p>Das ist zu viel, mein Sohn Kain! Fluche deinem Vater nicht! Um der Rettung willen,
               die du noch finden kannst, fluch' Adam nicht!</p>
             <pb n="21"/>
           </sp>
           <sp who="#kain">
             <speaker>KAIN.</speaker>
-            <l> Ich will dir fluchen!</l>
+            <p>Ich will dir fluchen!</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> So komm denn, ich will dir den Ort zeigen, wo du mir fluchen sollst! Komm, Dieß ist
+            <p>So komm denn, ich will dir den Ort zeigen, wo du mir fluchen sollst! Komm, Dieß ist
               deines Vaters Grab! Ich werde heut sterben! Ein Todesengel hat mirs angekündigt!</p>
           </sp>
           <sp who="#kain">
             <speaker>KAIN.</speaker>
-            <l> Und was ist Das für ein Altar?</l>
+            <p>Und was ist Das für ein Altar?</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <p> Du Unglückseligster unter den Menschen, weil du der Boshafteste unter ihnen bist!
-              Das ist Abels Altar! und, an diesen Steinen, Das ist sein Blut! –</p>
+            <p>Du Unglückseligster unter den Menschen, weil du der Boshafteste unter ihnen bist! Das
+              ist Abels Altar! und, an diesen Steinen, Das ist sein Blut! –</p>
           </sp>
           <sp who="#kain">
             <speaker>KAIN.</speaker>
-            <p> Die Wuth des Abgrunds steigt zu mir herauf! Der Altar, der fürchterliche Altar,
-              liegt wie ein Fels auf mir! Wo bin ich? – Wo ist Adam? – Höre mich, Adam! Mein Fluch
+            <p>Die Wuth des Abgrunds steigt zu mir herauf! Der Altar, der fürchterliche Altar, liegt
+              wie ein Fels auf mir! Wo bin ich? – Wo ist Adam? – Höre mich, Adam! Mein Fluch
               beginnt: An dem Tage, da du sterben willst, Adam! – an dem letzten deiner Tage – müsse
               dich die Todesangst von siebentausend Sterbenden ergreifen! müsse das Bild der
               Verwesung – –</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Es ist zu viel! Es ist zu viel, mein erstgeborner Sohn! – Nun versteh' ich dich
-              ganz, du Todesurtheil, das dort über mich ausgesprochen ward, ich verstehe dich ganz!
-              – Lass' ab von mir, mein erstgeborner Sohn!</p>
+            <p>Es ist zu viel! Es ist zu viel, mein erstgeborner Sohn! – Nun versteh' ich dich ganz,
+              du Todesurtheil, das dort über mich ausgesprochen ward, ich verstehe dich ganz! –
+              Lass' ab von mir, mein erstgeborner Sohn!</p>
           </sp>
           <sp who="#kain">
             <speaker>KAIN.</speaker>
-            <p> Ach! Ach! – hab' ich meines Vaters Blut vergossen? Wo bin ich? Wer leitet mich aus
+            <p>Ach! Ach! – hab' ich meines Vaters Blut vergossen? Wo bin ich? Wer leitet mich aus
               dieser schreckenden Dämmerung, wer leitet mich, daß ich die Nacht des Abgrunds finde?
               – – – Doch hier ist mein Vater! – Ist er es selbst? oder erscheint er mir? Wende dein
               Antlitz von mir, daß ich entfliehn kann.</p>
@@ -873,9 +876,9 @@
           </stage>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Er hat meine ganze Seele erschüttert! Geh' ihm nach, Seth. Er ist mein Sohn! Geh'
-              ihm nach und such ihn auf und sag' ihm: daß er seine Hand nicht an mich gelegt hat,
-              und daß ich ihm vergebe. Erinnere ihn nicht daran, daß ich heute sterbe.</p>
+            <p>Er hat meine ganze Seele erschüttert! Geh' ihm nach, Seth. Er ist mein Sohn! Geh' ihm
+              nach und such ihn auf und sag' ihm: daß er seine Hand nicht an mich gelegt hat, und
+              daß ich ihm vergebe. Erinnere ihn nicht daran, daß ich heute sterbe.</p>
           </sp>
         </div>
         <div type="scene">
@@ -901,7 +904,7 @@
           </stage>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <p> Ich habe Kain gefunden. Er lag auf der Erde ausgestreckt. Da er mich sah, stützt' er
+            <p>Ich habe Kain gefunden. Er lag auf der Erde ausgestreckt. Da er mich sah, stützt' er
               sich auf und rief mir zu: Ach, einen Trunk aus dieser Quelle, Seth, einen Trunk, daß
               ich nicht sterbe! Ich schöpfte und gab ihm, und er trank. Ich sagte ihm Alles, was du
               mir gebotst. Er richtete sich noch mehr auf und sah mich an. Es schien, als wenn er
@@ -910,34 +913,34 @@
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Es ist genug! –</l>
+            <p>Es ist genug! –</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Du bist ja so ruhig, mein Vater!</l>
+            <p>Du bist ja so ruhig, mein Vater!</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Ich bin's!</l>
+            <p>Ich bin's!</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <p> Was in mir vorgeht, weiß ich nicht. Ist es Betäubung? Ist es höhere Kraft, die mich
+            <p>Was in mir vorgeht, weiß ich nicht. Ist es Betäubung? Ist es höhere Kraft, die mich
               stärkt? Ich bin auch auf Einmal ruhig geworden.</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Lass' uns sehn, ob unsre Ruhe in unserm Herzen sey oder nur leicht darüber schwebe?
+            <p>Lass' uns sehn, ob unsre Ruhe in unserm Herzen sey oder nur leicht darüber schwebe?
               Hast du die Sonne gesehn, da du zurückkamst?</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <p> Sie war mit Wolken bedeckt, doch war sie nicht ganz dunkel eingehüllt. Wenn mich
-              mein Auge nicht trügt, so war sie – weit herunter gestiegen!</p>
+            <p>Sie war mit Wolken bedeckt, doch war sie nicht ganz dunkel eingehüllt. Wenn mich mein
+              Auge nicht trügt, so war sie – weit herunter gestiegen!</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Weit herunter. – Siehe aus, mein Sohn, ob die Wolken nicht weg sind? und ob deine
+            <p>Weit herunter. – Siehe aus, mein Sohn, ob die Wolken nicht weg sind? und ob deine
               Mutter nicht kömmt? Angst, Todesangst hat mich wieder ringsum eingeschlossen! Jammer,
               wenn ich sie wieder sehe! Und, wenn ich sie nicht wieder sehe, Jammer! – Soll ich sie
               rufen? oder soll ich meine Hütte fest vor ihr verschließen?</p>
@@ -945,11 +948,11 @@
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Die Wolken sind nicht weg, und Eva kömmt nicht.</l>
+            <p>Die Wolken sind nicht weg, und Eva kömmt nicht.</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Was soll ich thun? – Ich will es Dem überlassen, der der Sonne ihren Lauf und dem
+            <p>Was soll ich thun? – Ich will es Dem überlassen, der der Sonne ihren Lauf und dem
               Todesengel Gericht gab. Es geschehe, wie er es beschlossen hat! – Mein Sohn Seth, mein
               erstgeborner Sohn – denn Kain hat mir geflucht, und Abel ist nicht mehr – wenn du nun
               auch alt und grau geworden bist, und deiner Kinder Kinder, die Enkel meiner Enkel um
@@ -977,17 +980,17 @@
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Sein Haupt sinkt starrend hin. Ach! – stirbt er? Adam! mein Vater! mein Vater! lebst
-              du, mein Vater?</l>
+            <p>Sein Haupt sinkt starrend hin. Ach! – stirbt er? Adam! mein Vater! mein Vater! lebst
+              du, mein Vater?</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Laß mich! Es ist Linderung in der Todesangst. Es ist der letzte Schlummer, den ich
-              schlummre.</l>
+            <p>Laß mich! Es ist Linderung in der Todesangst. Es ist der letzte Schlummer, den ich
+              schlummre.</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <p> Wie schnell er eingeschlafen ist! Wie sanft er schlummert! Ich will sein heiliges
+            <p>Wie schnell er eingeschlafen ist! Wie sanft er schlummert! Ich will sein heiliges
               Haupt zudecken – Ach, ich will deinen Gebeinen nicht fluchen, du bester Vater! – Ach,
               so tief, so tief ist die Sonne herunter gestiegen! – Wer kömmt dort in der Ferne? Aber
               unsre Mutter kömmt ja sonst niemals allein, sie kömmt immer mit ihren Kindern – Sie
@@ -998,7 +1001,7 @@
         </div>
       </div>
       <div type="act">
-        <head>3. Akt</head>
+        <head>Dritte Handlung.</head>
         <div type="scene">
           <head>Erster Auftritt.</head>
           <stage>
@@ -1006,12 +1009,12 @@
           </stage>
           <sp who="#selima">
             <speaker>SELIMA.</speaker>
-            <l> Ach, da kömmt meine unglückselige Mutter! Nein, ich kann ihren Anblick nicht
-              aushalten!</l>
+            <p>Ach, da kömmt meine unglückselige Mutter! Nein, ich kann ihren Anblick nicht
+              aushalten!</p>
           </sp>
           <sp who="#eva">
             <speaker>EVA.</speaker>
-            <p> Alles ist hier so einsam! Wo ist Adam? Wo ist Seth? Wo ist Selima? O, wo sind sie,
+            <p>Alles ist hier so einsam! Wo ist Adam? Wo ist Seth? Wo ist Selima? O, wo sind sie,
               daß ich ihnen alle meine Freuden, daß ich ihnen die ganze Glückseligkeit dieses Tages
               erzähle? Ach, ich Glückselige! Ich Glückselige unter den Müttern!</p>
           </sp>
@@ -1021,44 +1024,44 @@
           <stage>
             <hi>Seth. Eva.</hi>
           </stage>
-          <sp who="#seht">
-            <speaker>SEHT</speaker>
+          <sp who="#seth">
+            <speaker>SETH</speaker>
             <stage>
               <hi>ehe ihn Eva sieht.</hi>
             </stage>
-            <p> Verstumme, du blutender Schmerz, verstumme! Helft mir ihren Anblick, helft mir den
+            <p>Verstumme, du blutender Schmerz, verstumme! Helft mir ihren Anblick, helft mir den
               aushalten, ihr Engel!</p>
             <pb n="27"/>
           </sp>
           <sp who="#eva">
             <speaker>EVA.</speaker>
-            <p> Da kömmt mein Sohn Seth! Mein Sohn Seth, ich bin die Glückseligste unter den
-              Müttern! Wo ist Adam? Ach, ich bin die Glückseligste unter den Müttern!</p>
+            <p>Da kömmt mein Sohn Seth! Mein Sohn Seth, ich bin die Glückseligste unter den Müttern!
+              Wo ist Adam? Ach, ich bin die Glückseligste unter den Müttern!</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Adam schläft, meine Mutter.</l>
+            <p>Adam schläft, meine Mutter.</p>
           </sp>
           <sp who="#eva">
             <speaker>EVA.</speaker>
-            <l> Wo ist er? Wo schläft er? daß ich ihn aufwecke und ihm alle meine Freuden sage!</l>
-          </sp>
-          <sp who="#seh">
-            <speaker>SEH.</speaker>
-            <l> Er ist nur erst eingeschlummert. Lass' ihn noch meine Mutter!</l>
-          </sp>
-          <sp who="#eva">
-            <speaker>EVA.</speaker>
-            <l> Laß mich hingehen, mein Sohn. Ich muß ihn aufwecken! Ach ich Glückselige!</l>
+            <p>Wo ist er? Wo schläft er? daß ich ihn aufwecke und ihm alle meine Freuden sage!</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <p> Nein, thu' es noch nicht, meine Mutter. Er bittet dich, daß du ihn nicht aufweckst.
+            <p>Er ist nur erst eingeschlummert. Lass' ihn noch meine Mutter!</p>
+          </sp>
+          <sp who="#eva">
+            <speaker>EVA.</speaker>
+            <p>Laß mich hingehen, mein Sohn. Ich muß ihn aufwecken! Ach ich Glückselige!</p>
+          </sp>
+          <sp who="#seth">
+            <speaker>SETH.</speaker>
+            <p>Nein, thu' es noch nicht, meine Mutter. Er bittet dich, daß du ihn nicht aufweckst.
               Er hat mir's gesagt.</p>
           </sp>
           <sp who="#eva">
             <speaker>EVA.</speaker>
-            <p> Er wird in der Nähe so vieler Freuden nicht lange schlafen können. Er wird von sich
+            <p>Er wird in der Nähe so vieler Freuden nicht lange schlafen können. Er wird von sich
               selbst aufwachen. Ach, mein Sohn Seth, ich habe den Knaben, deinen jüngsten Bruder,
               ich habe Sunim wieder gefunden! Da er zu den Hütten seiner Brüder gehn wollte, hat er
               sich in einer Einöde diese lange traurige Zeit verloren und ist wunderbar erhalten,
@@ -1073,45 +1076,45 @@
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> O du geliebte Mutter!</l>
+            <p>O du geliebte Mutter!</p>
             <pb n="28"/>
           </sp>
           <sp who="#eva">
             <speaker>EVA.</speaker>
-            <l> Warum siehst du mich so ernst an, mein Sohn? Freuest du dich nicht mit deiner
-              Mutter?</l>
+            <p>Warum siehst du mich so ernst an, mein Sohn? Freuest du dich nicht mit deiner
+              Mutter?</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> So viel Freuden auf Einmal machen mich ernst!</l>
+            <p>So viel Freuden auf Einmal machen mich ernst!</p>
           </sp>
           <sp who="#eva">
             <speaker>EVA.</speaker>
-            <l> Ich sehe die Mütter von ferne kommen! Ich muß gehn und Adam aufwecken.</l>
+            <p>Ich sehe die Mütter von ferne kommen! Ich muß gehn und Adam aufwecken.</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH</speaker>
             <stage>
               <hi>der die Hände zusammenschlägt und gen Himmel sieht, vor sich.</hi>
             </stage>
-            <l> O du unglückselige Mutter! <hi>Zu Eva.</hi> Dort ist Adam nicht, wo du ihn
-              suchst.</l>
+            <p>O du unglückselige Mutter! <hi>Zu Eva.</hi> Dort ist Adam nicht, wo du ihn
+              suchst.</p>
           </sp>
           <sp who="#eva">
             <speaker>EVA.</speaker>
-            <l> Wo ist er denn, mein Sohn, wenn er schläft?</l>
+            <p>Wo ist er denn, mein Sohn, wenn er schläft?</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Beim Altare.</l>
+            <p>Beim Altare.</p>
           </sp>
           <sp who="#eva">
             <speaker>EVA.</speaker>
-            <l> Beim Altare schläft Adam?</l>
+            <p>Beim Altare schläft Adam?</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Er hat sich dort ein Lager bereitet. Dort will er nun immer schlafen.</l>
+            <p>Er hat sich dort ein Lager bereitet. Dort will er nun immer schlafen.</p>
           </sp>
         </div>
         <div type="scene">
@@ -1124,27 +1127,27 @@
             <stage>
               <hi>die den Teppich vor dem Altare aufzieht.</hi>
             </stage>
-            <p> Ach, Das ist seine unüberwindliche Traurigkeit wegen Abel! Warum hat er sein Antlitz
+            <p>Ach, Das ist seine unüberwindliche Traurigkeit wegen Abel! Warum hat er sein Antlitz
               bedeckt, mein Sohn? Was habt ihr dort aufgegraben? Hat Adam seines Sohns Gebeine
               gesucht? Ach, der Schmerz um Abel wird Adam noch tödten! Du antwortest mir nicht?</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Es ist ein Grab, meine Mutter!</l>
+            <p>Es ist ein Grab, meine Mutter!</p>
           </sp>
           <sp who="#eva">
             <speaker>EVA.</speaker>
-            <p> Verbergt mir die Gebeine! Zeigt mir meines Sohnes Gebeine nicht. Mein Herz würde mir
+            <p>Verbergt mir die Gebeine! Zeigt mir meines Sohnes Gebeine nicht. Mein Herz würde mir
               brechen, wenn ich sie sähe.</p>
             <pb n="29"/>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Wir haben keine Gebeine.</l>
+            <p>Wir haben keine Gebeine.</p>
           </sp>
           <sp who="#eva">
             <speaker>EVA.</speaker>
-            <p> So sind auch sie zu Staube geworden? – Seth, mein Sohn Seth, dein Vater schläft sehr
+            <p>So sind auch sie zu Staube geworden? – Seth, mein Sohn Seth, dein Vater schläft sehr
               ängstlich. Und diese Hände! O Himmel, diese bleichen Hände!</p>
           </sp>
           <sp who="#seth">
@@ -1152,11 +1155,11 @@
             <stage>
               <hi>der von der einen Seite zurückkömmt, vor sich.</hi>
             </stage>
-            <p> So dicht am Walde! <hi>Zu Eva.</hi> Meine Mutter, meine theure Mutter! Nein, nun
-              kann ich nicht länger schweigen. <hi>Er verhüllt sich.</hi> Es ist Adams Grab! – Er
-              wird sterben, ehe die Sonne den Cedernwald hinunter ist. – Er hat eine Erscheinung
-              gehabt. Ich habe den Todesengel selbst gehöret. – Der Todesengel kömmt wieder. Er
-              kömmt bald. Dann stürzt der Fels an der Hütte ein, und dann –</p>
+            <p>So dicht am Walde! <hi>Zu Eva.</hi> Meine Mutter, meine theure Mutter! Nein, nun kann
+              ich nicht länger schweigen. <hi>Er verhüllt sich.</hi> Es ist Adams Grab! – Er wird
+              sterben, ehe die Sonne den Cedernwald hinunter ist. – Er hat eine Erscheinung gehabt.
+              Ich habe den Todesengel selbst gehöret. – Der Todesengel kömmt wieder. Er kömmt bald.
+              Dann stürzt der Fels an der Hütte ein, und dann –</p>
             <stage>
               <hi>Eva sinkt an die andre Seite des Altars.</hi>
             </stage>
@@ -1166,52 +1169,52 @@
             <stage>
               <hi>der erwacht und sich aufdeckt.</hi>
             </stage>
-            <p> Das ist ein ängstlicher Schlummer gewesen! Du, in dieser Ruhestatt, du wirst süßer
+            <p>Das ist ein ängstlicher Schlummer gewesen! Du, in dieser Ruhestatt, du wirst süßer
               seyn! – Hast du Selima zu mir gebracht, Seth? Sey nicht so sehr gebeugt, Selima! deine
               Mutter, deine liebevolle Mutter lebt ja noch!</p>
           </sp>
           <sp who="#eva">
             <speaker>EVA.</speaker>
-            <l> Ich bin – ach, wenn du diese gebrochne Stimme noch kennst, o Adam – ich bin nicht
-              Selima!</l>
+            <p>Ich bin – ach, wenn du diese gebrochne Stimme noch kennst, o Adam – ich bin nicht
+              Selima!</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> O Tod, den ich sterbe!</l>
+            <p>O Tod, den ich sterbe!</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH</speaker>
             <stage>
               <hi>der Adams Knie umfaßt.</hi>
             </stage>
-            <l> Mein Vater, stirbst du?</l>
+            <p>Mein Vater, stirbst du?</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Stürzte der Fels ein?</l>
+            <p>Stürzte der Fels ein?</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Der Fels stürzt nicht ein.</l>
+            <p>Der Fels stürzt nicht ein.</p>
           </sp>
           <sp who="#eva">
             <speaker>EVA.</speaker>
-            <l> Leite mich zu ihm, Sohn! – Kennst du mich nun, Adam?</l>
+            <p>Leite mich zu ihm, Sohn! – Kennst du mich nun, Adam?</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Ich würde dich nicht ganz kennen, wenn ich deine Stimme nicht hörte.</l>
+            <p>Ich würde dich nicht ganz kennen, wenn ich deine Stimme nicht hörte.</p>
           </sp>
           <sp who="#eva">
             <speaker>EVA.</speaker>
-            <p> Nannte denn der Todesengel meinen Namen nicht mit deinem Namen? Ach, soll ich nicht
+            <p>Nannte denn der Todesengel meinen Namen nicht mit deinem Namen? Ach, soll ich nicht
               mit dir sterben? Das war immer meine Zuflucht in meinen trüben Stunden, <pb n="30"/>
               mein stiller einziger Trost war es dann, daß ich mit dir sterben würde. Ich bin ja mit
               Adam geschaffen! Aber ich Verlass'ne! ich Einsame! soll ich nicht mit dir sterben?</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> O du Geliebteste unter den Geliebten! Noch theurer, noch geliebter an diesem dunkeln
+            <p>O du Geliebteste unter den Geliebten! Noch theurer, noch geliebter an diesem dunkeln
               entsetzlichen Tage! Eva! Du Mitgeschaffne! Eva, meine Eva! (sehn kann mein Auge nicht
               mehr, aber es kann doch noch weinen!) Lass' ab von mir! Er ist noch mehr Tod, der Tod,
               wenn ich deine Stimme höre!</p>
@@ -1221,15 +1224,15 @@
             <stage>
               <hi>vor sich.</hi>
             </stage>
-            <l> O Himmel, die Mütter kommen auch!</l>
+            <p>O Himmel, die Mütter kommen auch!</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Was für Fußtritte hör' ich?</l>
+            <p>Was für Fußtritte hör' ich?</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Es sind die drei Mütter und Heman.</l>
+            <p>Es sind die drei Mütter und Heman.</p>
           </sp>
         </div>
         <div type="scene">
@@ -1240,32 +1243,32 @@
           </stage>
           <sp who="#selima">
             <speaker>SELIMA.</speaker>
-            <l> Nun will ich mitgehn. Nun will ich auch hineingehn!</l>
+            <p>Nun will ich mitgehn. Nun will ich auch hineingehn!</p>
           </sp>
           <sp who="#heman">
             <speaker>HEMAN.</speaker>
-            <l> Ich will auch mitgehn, meine Selima! Ach, meine Selima! Nein, ich kann's noch nicht
-              glauben!</l>
+            <p>Ich will auch mitgehn, meine Selima! Ach, meine Selima! Nein, ich kann's noch nicht
+              glauben!</p>
           </sp>
           <sp who="#eine_mutter">
             <speaker>EINE MUTTER.</speaker>
-            <l> Komm, Sunim!</l>
+            <p>Komm, Sunim!</p>
           </sp>
           <sp who="#noch_eine">
             <speaker>NOCH EINE.</speaker>
-            <l> Was seh' ich!</l>
+            <p>Was seh' ich!</p>
           </sp>
           <sp who="#die_dritte">
             <speaker>DIE DRITTE.</speaker>
-            <l> Ist Das unser Vater?</l>
+            <p>Ist Das unser Vater?</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Geh zu ihnen, mein Sohn Seth.</l>
+            <p>Geh zu ihnen, mein Sohn Seth.</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Schaut mich nicht an, sonst verstumme ich vor euch!</l>
+            <p>Schaut mich nicht an, sonst verstumme ich vor euch!</p>
             <stage>
               <hi><pb n="31"/> Die erste verhüllt sich; die zweite sieht weg; die dritte beugt sich
                 über ihren Sohn.</hi>
@@ -1277,56 +1280,56 @@
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Was ist Das für eine Stimme unter den Stimmen der Weinenden, der ich mich nicht
-              genug erinnere! Das ist keine von den Müttern! Das ist auch nicht die Stimme Selimas
-              oder Hemans.</p>
+            <p>Was ist Das für eine Stimme unter den Stimmen der Weinenden, der ich mich nicht genug
+              erinnere! Das ist keine von den Müttern! Das ist auch nicht die Stimme Selimas oder
+              Hemans.</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <p> So freue dich denn noch einmal in deinem Leben, mein Vater! Es ist Sunims Stimme.
-              Sie haben deinen Sohn Sunim wieder gefunden.</p>
+            <p>So freue dich denn noch einmal in deinem Leben, mein Vater! Es ist Sunims Stimme. Sie
+              haben deinen Sohn Sunim wieder gefunden.</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Will mich mein Sohn Seth in meinem Tode täuschen, der mich in meinem Leben nie
+            <p>Will mich mein Sohn Seth in meinem Tode täuschen, der mich in meinem Leben nie
               getäuscht hat, damit ich mich noch einmal freue? Wisse, Sohn, für mich ist hier keine
               Freude mehr!</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Mein Vater! – –</l>
+            <p>Mein Vater! – –</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Aber – warum redet Sunim nicht, daß ich seine Stimme höre?</l>
+            <p>Aber – warum redet Sunim nicht, daß ich seine Stimme höre?</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Der Knabe ist vor Schmerz verstummt.</l>
+            <p>Der Knabe ist vor Schmerz verstummt.</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> So führ' ihn denn her zu mir, daß ich seine starken Locken, daß ich die Wange des
-              Knaben fühle.</l>
+            <p>So führ' ihn denn her zu mir, daß ich seine starken Locken, daß ich die Wange des
+              Knaben fühle.</p>
           </sp>
-          <sp who="#seh">
-            <speaker>SEH.</speaker>
-            <l> Hier ist er.</l>
+          <sp who="#seth">
+            <speaker>SETH.</speaker>
+            <p>Hier ist er.</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM</speaker>
             <stage>
               <hi>zu Sunim, der sein Knie umfaßt.</hi>
             </stage>
-            <l> Du bist es! Du bist es, du bist mein Sohn Sunim!</l>
+            <p>Du bist es! Du bist es, du bist mein Sohn Sunim!</p>
           </sp>
           <sp who="#sunim">
             <speaker>SUNIM.</speaker>
-            <l> Ich bin Sunim! –</l>
+            <p>Ich bin Sunim! –</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Geh zu deiner Mutter, mein Sohn!</l>
+            <p>Geh zu deiner Mutter, mein Sohn!</p>
             <stage>
               <hi>Sunim geht zu Eva.</hi>
             </stage>
@@ -1334,14 +1337,14 @@
           </sp>
           <sp who="#eva">
             <speaker>EVA.</speaker>
-            <l> Gehe zu deinem Bruder Seth! Ach, du hast keine Mutter mehr!</l>
+            <p>Gehe zu deinem Bruder Seth! Ach, du hast keine Mutter mehr!</p>
             <stage>
               <hi>Sunim lehnt sich an Seth.</hi>
             </stage>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <p> O du Todesurtheil, das über sie gesprochen ward! – – – Richte dich auf, mein Sunim!
+            <p>O du Todesurtheil, das über sie gesprochen ward! – – – Richte dich auf, mein Sunim!
               Laß mich! Ich komme eilend zu dir zurück. <hi>Da er zurückkommt.</hi> Mein Vater –
               denn heut' ist kein Tag des Schonens, kein Tag des Schweigens – die Sonne steigt
               hinunter! die Cedern fangen schon an sie zu decken. Gib uns deinen Segen, mein
@@ -1349,17 +1352,17 @@
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Sie steigt hinunter? – Komm, komm', o Tod, so komm denn, Tod! – Ich kann euch nicht
+            <p>Sie steigt hinunter? – Komm, komm', o Tod, so komm denn, Tod! – Ich kann euch nicht
               segnen, meine Kinder. Der euch geschaffen hat, segne euch! Ich kann euch nicht segnen:
               der Fluch ruht auf mir.</p>
           </sp>
-          <sp who="#alle">
+          <sp who="#selima #heman #eine_mutter #noch_eine #die_dritte #seth #sunim #eva">
             <speaker>ALLE.</speaker>
-            <l> Gib uns deinen Segen! Gib uns deinen Segen! – –</l>
+            <p>Gib uns deinen Segen! Gib uns deinen Segen! – –</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Ich habe keinen Segen! – <hi>Vor sich.</hi> Sie ist noch nicht vorüber, die namlose
+            <p>Ich habe keinen Segen! – <hi>Vor sich.</hi> Sie ist noch nicht vorüber, die namlose
               Angst! Sie steigt noch! Mit diesen neuen Empfindungen steigt sie! Mein Leben, das
               Leben meiner ersten Tage empört sich noch einmal ganz in mir! Meine erste
               Unsterblichkeit, sie, sie ist es, die in meinen Gebeinen bebt! – Wo werd' ich
@@ -1378,22 +1381,22 @@
             <stage>
               <hi>der gen Himmel sieht.</hi>
             </stage>
-            <l> Wenn diese gerungenen Hände, wenn dieß Herz, das mit seinem Herzen bricht – –</l>
+            <p>Wenn diese gerungenen Hände, wenn dieß Herz, das mit seinem Herzen bricht – –</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Ist Seth, ist mein Sohn Seth so nahe bei mir? Ich hörte deine Stimme, Seth. Ach, ich
+            <p>Ist Seth, ist mein Sohn Seth so nahe bei mir? Ich hörte deine Stimme, Seth. Ach, ich
               habe so sanft geschlummert.</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <p> O ihr Engel, er lächelt! – Kommt, kommt! Komm', Eva! komm', Heman und Selima! und
+            <p>O ihr Engel, er lächelt! – Kommt, kommt! Komm', Eva! komm', Heman und Selima! und
               Sunim, du! Kommt, ihr Mütter! laßt uns sein letztes Lächeln sehn! Wir sind Alle hier.
               Segne uns, mein Vater!</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Kommt her, meine Kinder! Wo bist du, Seth, daß ich meine Rechte auf dich lege, auf
+            <p>Kommt her, meine Kinder! Wo bist du, Seth, daß ich meine Rechte auf dich lege, auf
               dich, Heman, meine Linke. Selima neige sich an Heman, und Sunim an Seth. Kommt, ihr
               Mütter, und führt mir eure Söhne her. Eva segne ihre Kinder mit mir!</p>
             <stage>
@@ -1405,21 +1408,21 @@
             <stage>
               <hi>indem sie zuletzt auch niederkniet.</hi>
             </stage>
-            <l> Du mußt mich auch segnen, Adam!</l>
+            <p>Du mußt mich auch segnen, Adam!</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Ich soll Eva auch segnen? Da hast du meinen Segen: Komm mir eilend nach! Du wurdest
+            <p>Ich soll Eva auch segnen? Da hast du meinen Segen: Komm mir eilend nach! Du wurdest
               bald nach mir geschaffen, du Mutter der Menschen! So müssest du nach mir sterben! Hier
               ist mein Grab!</p>
           </sp>
           <sp who="#eva">
             <speaker>EVA.</speaker>
-            <l> Das waren Worte eines Engels, die du sprachst, o Adam!</l>
+            <p>Das waren Worte eines Engels, die du sprachst, o Adam!</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <p> Das ist mein Segen, meine Kinder, Das ist mein Segen, mit dem ich die Enkel eurer
+            <p>Das ist mein Segen, meine Kinder, Das ist mein Segen, mit dem ich die Enkel eurer
               Enkel, mit dem ich das ganze Geschlecht der Menschen segne. – Der Gott eures Vaters,
               der Staub zum Menschen emporgehoben und ihm eine unsterbliche Seele eingehaucht hat,
               dessen Erscheinungen ich gesehen habe, der mich gesegnet und gerichtet<pb n="34"/> hat
@@ -1444,20 +1447,20 @@
             <stage>
               <hi>der ängstlich aufspringt.</hi>
             </stage>
-            <l> Hört ihr die Felsen beben?</l>
+            <p>Hört ihr die Felsen beben?</p>
           </sp>
           <sp who="#eva">
             <speaker>EVA.</speaker>
-            <l> Adam!</l>
+            <p>Adam!</p>
           </sp>
           <sp who="#seth">
             <speaker>SETH.</speaker>
-            <l> Sie beben immer näher herauf!</l>
+            <p>Sie beben immer näher herauf!</p>
           </sp>
           <sp who="#adam">
             <speaker>ADAM.</speaker>
-            <l> Richter der Welt! ich komme! <hi>Indem der Fels krachend einstürzt.</hi> O Tod! – Du
-              bist's! Ich sterbe!</l>
+            <p>Richter der Welt! ich komme! <hi>Indem der Fels krachend einstürzt.</hi> O Tod! – Du
+              bist's! Ich sterbe!</p>
           </sp>
         </div>
       </div>
