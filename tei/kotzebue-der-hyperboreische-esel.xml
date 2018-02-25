@@ -4,7 +4,9 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Der Hyperboreische Esel, oder Die heutige Bildung</title>
+        <title type="main">Der Hyperboreische Esel, oder Die heutige Bildung</title>
+        <title type="sub">Ein drastisches Drama und philosophisches Lustspiel für Jünglinge / In
+          einem Aufzuge</title>
         <author key="pnd:118565796">Kotzebue, August von</author>
       </titleStmt>
       <publicationStmt>
@@ -33,7 +35,7 @@
             <title>August von Kotzebue: Theater. Rechtmäßige Original-Auflage, Leipzig: Verlag von
               Eduard Kummer und Wien: Ignatz Klang, 1840.</title>
             <date type="print" when="1799"/>
-            <date type="premiere"/>
+            <date type="premiere" when="1799"/>
             <date type="written"/>
           </bibl>
         </bibl>
@@ -42,24 +44,24 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="baron">
-            <persName>BARON</persName>
+          <person xml:id="baron" sex="MALE">
+            <persName>Baron</persName>
           </person>
-          <person xml:id="frau_von_berg">
-            <persName>FRAU VON BERG</persName>
-            <persName xml:id="mutter">MUTTER</persName>
+          <person xml:id="frau_von_berg" sex="FEMALE">
+            <persName>Frau von Berg</persName>
+            <persName type="variant">Mutter</persName>
           </person>
-          <person xml:id="malchen">
-            <persName>MALCHEN</persName>
+          <person xml:id="malchen" sex="FEMALE">
+            <persName>Malchen</persName>
           </person>
-          <person xml:id="hans">
-            <persName>HANS</persName>
+          <person xml:id="hans" sex="MALE">
+            <persName>Hans</persName>
           </person>
-          <person xml:id="karl">
-            <persName>KARL</persName>
+          <person xml:id="karl" sex="MALE">
+            <persName>Karl</persName>
           </person>
-          <person xml:id="fürst">
-            <persName>FÜRST</persName>
+          <person xml:id="fuerst" sex="MALE">
+            <persName>Fürst</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -74,6 +76,7 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
+        <change who="#ff" when="2018-02-25">formalities, add gender info</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -87,19 +90,29 @@
         <head>Ein drastisches Drama und philosophisches Lustspiel für Jünglinge</head>
         <head>In einem Aufzuge</head>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head><pb n="166"/> Personen.</head>
           <castItem>Baron Kreutz.</castItem>
           <castItem>Malchen, seine Tochter.</castItem>
           <castItem>Frau von Berg, seine Schwester, eine arme Witwe.</castItem>
-          <castItem>Karl,</castItem>
-          <castItem>Hans, ihre Söhne.</castItem>
+          <castGroup>
+            <castItem>Karl,</castItem>
+            <castItem>Hans,</castItem>
+            <roleDesc>ihre Söhne.</roleDesc>
+          </castGroup>
           <castItem>Der Fürst von **</castItem>
         </castList>
       </div>
+      <set>
+        <p>Die Scene ist auf dem Landgute des Baron Kreutz.</p>
+        <p>Die Rolle des <emph>Karl</emph> ist einzig und allein, und zwar <emph>wörtlich</emph> aus
+          den bekannten und berühmten Schriften der Herren Gebrüder Schlegel gezogen. Alle die
+          goldenen Sprüchlein dieser Weisen sind sorgfältig unterstrichen worden, theils, damit man
+          nicht glauben möge, ich wolle mich mit fremden Federn schmücken, theils weil – wie
+          gleichfalls Einer ihrer goldenen Sprüche behauptet – <emph>in der wahren Prosa Alles
+            unterstrichen sein muß</emph>.</p>
+      </set>
       <div type="dedication">
         <head>[Widmung]</head>
         <head>Zueignungsschrift an die Herren Verfasser und Herausgeber des Athenäum.</head>
@@ -122,18 +135,16 @@
           war er gar so verwegen, mir eine Stelle aus <hi>Duclos moeurs de ce siècle</hi>
           vorzulesen, und sie recht unverschämt auf Sie zu appliciren. Sie lautet nämlich
           folgendergestalt:</p>
-        <p>
-          <hi><pb n="167"/> Qui sont ceux qui jouissent du droit de pononcer? – degens, qui, à force
-            de braver le mèpris, viennent à bout de se faire respecter et de donner le ton; qui
-            n'ont que des opinions et jamais des sentiments; qui en changent, les quittent et les
-            reprennent, sans le savoir ni s'en douter; ou qui sont opiniâtres sans être constans.
-            Voilà cependant les juges des reputations; voilà ceux dont on mépise les sentimens et
-            dont on recherche le suffrage; ceux qui procurent la Consideration, sans en avoir eux
-            mêmes aucune. – Vous voyez des hommes dont on vante le mérite; si l'on veut examiner en
-            quoi il consiste, on est étonné du vide; on trouve que tout se borne à un air, un
-            d'importance et de suffsance; un peu d'impertinence n'y nuit pas; et quelques fois le
-            maintien suffit.</hi>
-        </p>
+        <p><hi><pb n="167"/> Qui sont ceux qui jouissent du droit de pononcer? – degens, qui, à
+            force de braver le mèpris, viennent à bout de se faire respecter et de donner le ton;
+            qui n'ont que des opinions et jamais des sentiments; qui en changent, les quittent et
+            les reprennent, sans le savoir ni s'en douter; ou qui sont opiniâtres sans être
+            constans. Voilà cependant les juges des reputations; voilà ceux dont on mépise les
+            sentimens et dont on recherche le suffrage; ceux qui procurent la Consideration, sans en
+            avoir eux mêmes aucune. – Vous voyez des hommes dont on vante le mérite; si l'on veut
+            examiner en quoi il consiste, on est étonné du vide; on trouve que tout se borne à un
+            air, un d'importance et de suffsance; un peu d'impertinence n'y nuit pas; et quelques
+            fois le maintien suffit.</hi></p>
         <p>In deutsch: »Wer sind denn die Herren, die das Recht zu entscheiden ausüben? – Leute, die
           der Verachtung so lange trotzen, bis sie es endlich dahin bringen, sich geltend zu machen,
           und den Ton anzugeben; die nie <hi>Grundsätze,</hi> sondern nur <hi>Meinungen</hi> haben,
@@ -151,20 +162,20 @@
           zeigte auf Ihre <hi>Fragmente,</hi> Ihre <hi>Lucinde</hi> u.s.w. Von der Lucinde meinte
           er, hätten sich von den <hi>Gergesener Säuen,</hi> deren Sie <hi>pag.</hi> 84, der
           Fragmente <pb n="168"/> als sämmtlich ersäuft erwähnen, doch wohl einige gerettet, und
-          zwar die feistesten, um da hinein zufahren.<hi> Dabei sei nichts kläglicher, als sich dem
+          zwar die feistesten, um da hinein zufahren. <hi>Dabei sei nichts kläglicher, als sich dem
             Teufel umsonst ergeben, nämlich schlüpfrige Gedichte machen, die nicht einmal
             vortrefflich sind</hi>
           <ref><anchor/><ptr/><hi>5</hi></ref>.</p>
         <p>Ich wurde zornig, aber er kehrte sich nicht daran. Von der Lucinde kam er auf Ihre schöne
           poetische Wuth, schlechte Sachen anpreisen, von welcher Sie zuweilen ergriffen würden,
-          wenn nämlich Ihre Gönner oder Freunde die Verfasser wären. Er meinte, viele<hi> Lobredner
+          wenn nämlich Ihre Gönner oder Freunde die Verfasser wären. Er meinte, viele <hi>Lobredner
             bewiesen die Größe ihres Abgottes antithetisch durch die Darlegung ihrer eigenen
             Kleinheit</hi>
           <ref><anchor/><ptr/><hi>6</hi></ref>.</p>
         <p>Ich wollte ihm das Lästermaul stopfen ich deutete auf Ihre Fragmente. Da sagte er: die
           meisten wären hoher Unsinn, den Niemand, auch Sie selbst nicht einmal verstünden.</p>
         <p>Länger konnte ich mich nicht halten, denn eben ergriff mich ein Gedanke – diesmal war es
-          aber kein<hi> Profil,</hi> sondern eine <hi>Seele von einem Gedanken</hi>
+          aber kein <hi>Profil</hi>, sondern eine <hi>Seele von einem Gedanken</hi>
           <ref><anchor/><ptr/><hi>7</hi></ref> – und frohlockend rief ich aus, daß es diesen
           herrlichen Fragmenten nur an einer faßlichern Form fehle, um verstanden zu werden; daß sie
           nur nicht eben <hi>Igel</hi>
@@ -299,6 +310,8 @@
           </note>
         </div>
       </div>
+    </front>
+    <body>
       <div type="scene">
         <head>Erste Scene.</head>
         <stage>
@@ -311,166 +324,166 @@
         </stage>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Freut euch, Kinder! heute kommt er.</l>
+          <p>Freut euch, Kinder! heute kommt er.</p>
         </sp>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <l> Wer? mein Karl?</l>
+          <p>Wer? mein Karl?</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN</speaker>
           <stage>
             <hi>blutroth.</hi>
           </stage>
-          <l> Der Vetter?</l>
+          <p>Der Vetter?</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON</speaker>
           <stage>
             <hi>ihr nachspottend.</hi>
           </stage>
-          <l> Ja, ja, der Vetter. Werde du nur roth bis über beide Ohren.</l>
+          <p>Ja, ja, der Vetter. Werde du nur roth bis über beide Ohren.</p>
         </sp>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <l> Woher weißt du, Bruder –?</l>
+          <p>Woher weißt du, Bruder –?</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Je nun, er ist gestern Mittag schon in der Stadt gewesen.</l>
+          <p>Je nun, er ist gestern Mittag schon in der Stadt gewesen.</p>
         </sp>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <l> Nur eine Stunde von hier? und noch nicht selbst hier?</l>
+          <p>Nur eine Stunde von hier? und noch nicht selbst hier?</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Seinen Franz hat er vorausgeschickt. Es soll da in der Stadt ein tiefgelehrter Mann
+          <p>Seinen Franz hat er vorausgeschickt. Es soll da in der Stadt ein tiefgelehrter Mann
             wohnen, den hat er nur noch besuchen wollen.</p>
         </sp>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <p> Wie? drei Jahre war er abwesend von Mutter und Braut? Kaum noch ein Spazirgang trennt
+          <p>Wie? drei Jahre war er abwesend von Mutter und Braut? Kaum noch ein Spazirgang trennt
             ihn von beiden? und er findet noch Muße Gelehrte zu besuchen?</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Nun, nun, Schwester, er muß doch das Handwerk grüßen.</l>
+          <p>Nun, nun, Schwester, er muß doch das Handwerk grüßen.</p>
           <pb n="173"/>
         </sp>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <l> Ei, ei, das gefällt mir nicht.</l>
+          <p>Ei, ei, das gefällt mir nicht.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Mir auch nicht.</l>
+          <p>Mir auch nicht.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Was hast du darein zu reden? Eitelkeit, nich weiter. Ein Bursche wie Karl, der alle
+          <p>Was hast du darein zu reden? Eitelkeit, nich weiter. Ein Bursche wie Karl, der alle
             vier Fakultäten im Kopfe hat –</p>
         </sp>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <l> Soll d'rum doch die Mutter im Herz behalten.</l>
+          <p>Soll d'rum doch die Mutter im Herz behalten.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Das wird er auch. Die Wissenschaften veredeln den Menschen, machen ihn – wie nennen se
+          <p>Das wird er auch. Die Wissenschaften veredeln den Menschen, machen ihn – wie nennen se
             es doch gleich? – <hi>human.</hi> Das ist ein neues Modewort.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Wenn wir nur über den neuen <hi>Wor</hi>
-            <hi>ten</hi> nicht die alten <hi>Gefühle</hi> verlieren.</l>
+          <p>Wenn wir nur über den neuen <hi>Worten</hi> nicht die alten <hi>Gefühle</hi>
+            verlieren.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Naseweiß! Du meinst wohl, Karl sollte noch immer den Schäfer aus Geßners Idyllen
+          <p>Naseweiß! Du meinst wohl, Karl sollte noch immer den Schäfer aus Geßners Idyllen
             spielen? – Der tändelt nicht mehr, der ist jetzt transcendental!</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Was heißt denn das?</l>
+          <p>Was heißt denn das?</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Das weiß ich selbst nicht. Aber es ist was Großes, was Schönes.</l>
+          <p>Das weiß ich selbst nicht. Aber es ist was Großes, was Schönes.</p>
         </sp>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <l> Ich zitt're, ihn wieder zu seh'n!</l>
+          <p>Ich zitt're, ihn wieder zu seh'n!</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Ich auch, aber vor Freuden.</l>
+          <p>Ich auch, aber vor Freuden.</p>
         </sp>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <l> Mein letztes Vermögen hab' ich an ihn gewandt, um seinen viel versprechenden Geist zu
-            bilden –</l>
+          <p>Mein letztes Vermögen hab' ich an ihn gewandt, um seinen viel versprechenden Geist zu
+            bilden –</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Das war brav von dir.</l>
+          <p>Das war brav von dir.</p>
         </sp>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <l> Eine Stütze im Alter hofft' ich mir an ihm zu ziehen –</l>
+          <p>Eine Stütze im Alter hofft' ich mir an ihm zu ziehen –</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Das soll er auch werden. Mein Schwiegersohn und Erbe oben d'rein.</l>
+          <p>Das soll er auch werden. Mein Schwiegersohn und Erbe oben d'rein.</p>
         </sp>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <l> Wenn wir ihn nicht so fänden, wie unsere hoffende Liebe ihn malt –</l>
+          <p>Wenn wir ihn nicht so fänden, wie unsere hoffende Liebe ihn malt –</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Possen.</l>
+          <p>Possen.</p>
           <pb n="174"/>
         </sp>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <l> Seine Briefe, Bruder – gesteh' es mir – sie sind hochtönend, aber kalt.</l>
+          <p>Seine Briefe, Bruder – gesteh' es mir – sie sind hochtönend, aber kalt.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Das kommt dir nur so vor, weil wir die neue Sprache nicht versteh'n.</l>
+          <p>Das kommt dir nur so vor, weil wir die neue Sprache nicht versteh'n.</p>
         </sp>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <l> Mit <hi>mir</hi> sollte er, wie vormals, vom Herzen zum Herzen reden.</l>
+          <p>Mit <hi>mir</hi> sollte er, wie vormals, vom Herzen zum Herzen reden.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Mit mir auch.</l>
+          <p>Mit mir auch.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Kinder, andere Zeiten, andere Sitten. Jetzt herrscht die Vernunft! die kritische
-            Vernunft!</l>
+          <p>Kinder, andere Zeiten, andere Sitten. Jetzt herrscht die Vernunft! die kritische
+            Vernunft!</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <p> Allen Respekt vor der Vernunft; aber wenn sie sich nicht mit dem Herzen vermählt, so
+          <p>Allen Respekt vor der Vernunft; aber wenn sie sich nicht mit dem Herzen vermählt, so
             kommt sie mir vor, wie unser langer dürrer Nachbar, der Hagestolz.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Schweig', und störe mir meine Freude nicht. O, ich habe euch noch mehr zu sagen. Es
-            ist heute ein wichtiger Tag für Karln und für uns Allle. Der Fürst jagt in meinem
+          <p>Schweig', und störe mir meine Freude nicht. O, ich habe euch noch mehr zu sagen. Es ist
+            heute ein wichtiger Tag für Karln und für uns Allle. Der Fürst jagt in meinem
             Forste.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Das find' ich nur wichtig für Jhre Hasen.</l>
+          <p>Das find' ich nur wichtig für Jhre Hasen.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Er wird aber ein Frühstück bei uns einnehmen. Wenn nur Karl bald käme, daß ich ihn dem
+          <p>Er wird aber ein Frühstück bei uns einnehmen. Wenn nur Karl bald käme, daß ich ihn dem
             Fürsten sogleich vorstellen könnte. Was gilt's, der macht ihn auf's wenigste zum
             Geheimde-Kabinetsrath.</p>
         </sp>
@@ -479,29 +492,27 @@
           <stage>
             <hi>lächelnd.</hi>
           </stage>
-          <l> Du bau'st schöne Luftschlösser.</l>
+          <p>Du bau'st schöne Luftschlösser.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Was Luftschlösser! Karl hat bei <hi>Fichte </hi>
-            <hi>die Wissenschaftslehre,</hi> bei <hi>Schle</hi>
-            <hi>gel</hi> die Ästhetik, bei <hi>Schiller</hi> die Historie gehört; Sapperment,
+          <p>Was Luftschlösser! Karl hat bei <hi>Fichte die Wissenschaftslehre</hi>, bei
+              <hi>Schlegel</hi> die Ästhetik, bei <hi>Schiller</hi> die Historie gehört; Sapperment,
             Kinder! er muß ein ganzer Kerl sein.</p>
         </sp>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <l> Wenn er nur auch seine ganze Unverdorbenheit wieder mit zurückbringt.</l>
+          <p>Wenn er nur auch seine ganze Unverdorbenheit wieder mit zurückbringt.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Hör' einmal auf, Schwester, mit deinem ewigen, <hi>wenn nur</hi> und <hi>wenn
-              nur.</hi>
-          </l>
+          <p>Hör' einmal auf, Schwester, mit deinem ewigen, <hi>wenn nur</hi> und <hi>wenn
+            nur.</hi></p>
           <pb n="175"/>
         </sp>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <p> Ach, Bruder, du hast keine <hi>Söhne;</hi> du weißt nicht, wie einer Mutter zu Muthe
+          <p>Ach, Bruder, du hast keine <hi>Söhne;</hi> du weißt nicht, wie einer Mutter zu Muthe
             ist, die ihren Liebling hinaus in die weite Welt schickt, ohne mit sorglicher
             Mutterliebe in der Ferne über seine Schritte wachen zu dürfen; die ein gesundes,
             herziges Naturkind aus ihren Armen ließ, und vielleicht einen physisch und moralisch
@@ -509,28 +520,27 @@
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Aber ein solches vielleicht ist hier gar nicht anwendbar.</l>
+          <p>Aber ein solches vielleicht ist hier gar nicht anwendbar.</p>
         </sp>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <p> Das bitt' ich euch, wenn er kommt, laßt mich nur gleich mit ihm allein, daß ich nur
+          <p>Das bitt' ich euch, wenn er kommt, laßt mich nur gleich mit ihm allein, daß ich nur
             erst sein Herz erforsche, mit seinem Wissen mag es dann bestellt sein wie es wolle.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Schon gut, Schwester. Komm, wir wollen die Buchenallee hinab ihm entgegen wandeln; er
+          <p>Schon gut, Schwester. Komm, wir wollen die Buchenallee hinab ihm entgegen wandeln; er
             kann nicht lange mehr bleiben.</p>
         </sp>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <p> Gern, Bruder. Ich hoffe, die alte Mutter werde nicht vergebens geh'n, weil er etwa mit
+          <p>Gern, Bruder. Ich hoffe, die alte Mutter werde nicht vergebens geh'n, weil er etwa mit
             den Gelehrten noch zu sprechen hat.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Du, Malchen, sorge indessen für das Frühstück. <hi>Beide ab durch eine
-              Seitenthür.</hi>
-          </l>
+          <p>Du, Malchen, sorge indessen für das Frühstück. <hi>Beide ab durch eine
+            Seitenthür.</hi></p>
         </sp>
       </div>
       <div type="scene">
@@ -540,7 +550,7 @@
           <stage>
             <hi>allein.</hi>
           </stage>
-          <p> Ich freue mich – und doch ist mir so bänglich zu Muthe – wenn er auch hinanreicht an
+          <p>Ich freue mich – und doch ist mir so bänglich zu Muthe – wenn er auch hinanreicht an
             das mütterliche Ideal, wird er d'rum <hi>mir</hi> noch sein, was er vor drei Jahren war?
             – wird meine Natürlichkeit sich mit seiner hohen Weisheit vertragen?</p>
         </sp>
@@ -555,43 +565,43 @@
           <stage>
             <hi>im Jagdkleid mit der Flinte.</hi>
           </stage>
-          <l> Guten Morgen, liebe Cousine.</l>
+          <p>Guten Morgen, liebe Cousine.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Guten Morgen, Vetter. Wissen Sie schon, daß Ihr Bruder gleich hier sein wird?</l>
+          <p>Guten Morgen, Vetter. Wissen Sie schon, daß Ihr Bruder gleich hier sein wird?</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <l> Mein Bruder? wirklich? o, das ist schön!</l>
+          <p>Mein Bruder? wirklich? o, das ist schön!</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Unsere Eltern sind schon hinunter ihm entgegen.</l>
+          <p>Unsere Eltern sind schon hinunter ihm entgegen.</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <p> Wie wird die gute Mutter sich freuen! O, das ist recht schön! Nun darf sie nicht mehr
+          <p>Wie wird die gute Mutter sich freuen! O, das ist recht schön! Nun darf sie nicht mehr
             klagen, daß sie keine Stütze hat, weil ich so dumm bin, und nichts lernen kann.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Ei, Vetter, das hat sie nie gesagt.</l>
+          <p>Ei, Vetter, das hat sie nie gesagt.</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <p> Gesagt wohl nicht, aber es ist doch wahr. O, ich fühle es recht gut, daß ich nur ein
+          <p>Gesagt wohl nicht, aber es ist doch wahr. O, ich fühle es recht gut, daß ich nur ein
             simpler Mensch bin. Ich meine es wohl gut, aber ich kann es nicht so von mir geben. Wenn
             zuweilen ein Brief von meinem Bruder vorgelesen wird, und ich verstehe kein Wort davon,
             da muß ich manchmal fortgehen und mich schämen.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Sie sind ein braver Mensch, Vetter, Sie brauchen sich nicht zu schämen.</l>
+          <p>Sie sind ein braver Mensch, Vetter, Sie brauchen sich nicht zu schämen.</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <p> Ach, liebe Cousine! ich kann ja so gar nichts für meine alte Mutter thun! Die Jägerei
+          <p>Ach, liebe Cousine! ich kann ja so gar nichts für meine alte Mutter thun! Die Jägerei
             hab' ich freilich gelernt, aber was hilft das? Alle Dienste sind besetzt; ich verstehe
             mich auch nicht zu präsentiren; schwatzen kann ich vollends gar nicht, und so bleib' ich
             sitzen. Ach! Sie glauben nicht, wie mich, das schmerzt, daß ich meiner Mutter und dem
@@ -603,83 +613,81 @@
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Vermuthlich.</l>
+          <p>Vermuthlich.</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <p> Sehen Sie, das ist ein großes Glück, denn sind gar ein wackeres Mädchen. Was man doch
+          <p>Sehen Sie, das ist ein großes Glück, denn sind gar ein wackeres Mädchen. Was man doch
             glücklich ist, wenn man Verstand hat!</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Nicht immer.</l>
+          <p>Nicht immer.</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <p> Ja, wenn ich auch so ein gescheiter Kerl geworden wäre, wahrlich, liebe Cousine, Sie
+          <p>Ja, wenn ich auch so ein gescheiter Kerl geworden wäre, wahrlich, liebe Cousine, Sie
             hätte ich mir nicht nehmen lassen.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Mich?</l>
+          <p>Mich?</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <l> Werden Sie nur nicht böse, daß ich es so gerade heraussage; ich habe Sie sehr lieb –
-            sehr lieb!</l>
+          <p>Werden Sie nur nicht böse, daß ich es so gerade heraussage; ich habe Sie sehr lieb –
+            sehr lieb!</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Ich Sie auch.</l>
+          <p>Ich Sie auch.</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <p> Ja. Sie sind mir wohl gut, Sie haben Mitleid mit mir; aber ich – mein Leben könnt' ich
+          <p>Ja. Sie sind mir wohl gut, Sie haben Mitleid mit mir; aber ich – mein Leben könnt' ich
             für Sie lassen.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Guter Vetter.</l>
+          <p>Guter Vetter.</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <p> Nun, es ist nun einmal so. Wir können ja nicht alle klug sein, und der Klügste muß die
+          <p>Nun, es ist nun einmal so. Wir können ja nicht alle klug sein, und der Klügste muß die
             Beste haben, von Rechts wegen. In Zukunft werde ich Sie Schwester nennen, nicht
             wahr?</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Lieber Bruder!</l>
+          <p>Lieber Bruder!</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <p> Und Sie und Karl werden mich noch ein wenig zustutzen, was sich so eben hinein bringen
+          <p>Und Sie und Karl werden mich noch ein wenig zustutzen, was sich so eben hinein bringen
             läßt; viel wird es nicht sein, aber freuen werde ich mich über Ihr Glück, das brauchen
             Sie nicht erst hinein zu bringen, das ist schon hier in meinem Herzen.</p>
           <pb n="178"/>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Sie müssen dann auch ein gutes Mädchen heirathen.</l>
+          <p>Sie müssen dann auch ein gutes Mädchen heirathen.</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <p> Beileibe nicht! wenn ich nur immer mit Ihnen sein kann, bei Ihnen bin ich am liebsten.
+          <p>Beileibe nicht! wenn ich nur immer mit Ihnen sein kann, bei Ihnen bin ich am liebsten.
             Jetzt muß ich gehen. Der Fürst jagt in unserm Forste. Es thut mir leid, daß ich meinen
             Bruder nicht empfangen kann. Sagen Sie ihm das. Es thut mir recht leid. Er soll d'rum
             nicht denken, daß ich ihn weniger liebe, oder daß ich etwa gar – neidisch auf ihn wäre.
             Nein, der Oheim hat's befohlen. Ich muß in den Wald. Adieu, liebe Cousine! –
-              <hi>Bewegt.</hi> Adieu, liebe Schwester! <hi>Ab durch den Garten.</hi>
-          </p>
+              <hi>Bewegt.</hi> Adieu, liebe Schwester! <hi>Ab durch den Garten.</hi></p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN</speaker>
           <stage>
             <hi>allein – ihm nachsehend.</hi>
           </stage>
-          <l> Guter Mensch! wer weiß, ob Karl mich liebt, wie du. <hi>Ab durch die Seitenthür, aus
-              welchger Hans kam.</hi>
-          </l>
+          <p>Guter Mensch! wer weiß, ob Karl mich liebt, wie du. <hi>Ab durch die Seitenthür, aus
+              welchger Hans kam.</hi></p>
         </sp>
       </div>
       <div type="scene">
@@ -689,7 +697,7 @@
         </stage>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <p> Noch einmal drücke ich dich an mein mütterliches Herz! <hi>Sie umarmt ihn.</hi> Gott
+          <p>Noch einmal drücke ich dich an mein mütterliches Herz! <hi>Sie umarmt ihn.</hi> Gott
             sei Dank, daß ich dich wieder habe! Dich, meine Hoffnung, meinen Stolz, mein Alles! –
             Bist du noch, der du warst? der gute, fromme, herzliche Mensch? – O ja, du wirst es
             sein! Magst du doch viel oder wenig gelernt haben; die bekümmerte Mutter möchte dich
@@ -699,293 +707,261 @@
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Liebe Mutter, <hi>es gibt keine andere </hi>
-            <hi>Tugend als Konsequenz</hi>
-            <ref><anchor/><ptr/><hi>2</hi></ref>.</l>
+          <p>Liebe Mutter, <hi>es gibt keine andere Tugend als Konsequenz</hi>
+            <ref><anchor/><ptr/><hi>2</hi></ref>.</p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Wie? so könnte ja auch der ärgste Bösewicht tugendhaft sein?</l>
+          <p>Wie? so könnte ja auch der ärgste Bösewicht tugendhaft sein?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Wenn er konsequent handelt –</l>
+          <p>Wenn er konsequent handelt –</p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> O weh! was ist das! Karl, du hast doch noch Religion?</l>
+          <p>O weh! was ist das! Karl, du hast doch noch Religion?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Die Religion ist meistens nur </hi><hi>ein Supplement oder gar ein
-              Sur</hi><hi>rogat der Bildung</hi><ref><anchor/><ptr/><hi>3</hi></ref> –</l>
+          <p><hi>Die Religion ist meistens nur ein Supplement oder gar ein Surrogat der
+                Bildung</hi><ref><anchor/><ptr/><hi>3</hi></ref> –</p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Nichts weiter?</l>
+          <p>Nichts weiter?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Nichts ist religiös im stren</hi><hi>gen Sinne, was nicht ein Produkt </hi><hi>der
-              Freiheit ist</hi><ref><anchor/><ptr/><hi>4</hi></ref>.</l>
+          <p><hi>Nichts ist religiös im strengen Sinne, was nicht ein Produkt der Freiheit
+                ist</hi><ref><anchor/><ptr/><hi>4</hi></ref>.</p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <p> Ich kann darüber mit dir nicht streiten, auch begehre ich nur Beruhigung. Man hat mir
-            so manches von den jetzigen Modesistemen erzählt.<hi> Sie legt ihre Hand auf seine
+          <p>Ich kann darüber mit dir nicht streiten, auch begehre ich nur Beruhigung. Man hat mir
+            so manches von den jetzigen Modesistemen erzählt. <hi>Sie legt ihre Hand auf seine
               Schulter und spricht ängstlich.</hi> Karl! du glaubst doch an Gott?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Ich selbst bin Gott.</l>
+          <p>Ich selbst bin Gott.</p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Weh' mir! er ist geworden wie der arme Wenzel in Sondershausen!</l>
+          <p>Weh' mir! er ist geworden wie der arme Wenzel in Sondershausen!</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Jeder gute Mensch wird immer </hi><hi>mehr und mehr Gott. Gott werden,
-              </hi><hi>Mensch sein, sich bilden, sind </hi><hi>Ausdrücke, die Einerlei
-              bedeu</hi><hi>ten</hi><ref><anchor/><ptr/><hi>5</hi></ref>.</p>
+          <p><hi>Jeder gute Mensch wird immer mehr und mehr Gott. Gott werden, Mensch sein, sich
+              bilden, sind Ausdrücke, die Einerlei
+            bedeuten</hi><ref><anchor/><ptr/><hi>5</hi></ref>.</p>
           <pb n="180"/>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Was ist das! Ich fürchte, er möchte gar keinen Gott glauben, und er glaubt deren
-            Millionen!</l>
+          <p>Was ist das! Ich fürchte, er möchte gar keinen Gott glauben, und er glaubt deren
+            Millionen!</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Wenn jedes unendliche Indivi</hi><hi>duum Gott ist, so gibt's so viele
-              </hi><hi>Götter, als Ideale</hi><ref><anchor/><ptr/><hi>6</hi></ref>.</l>
+          <p><hi>Wenn jedes unendliche Individuum Gott ist, so gibt's so viele Götter, als
+              Ideale</hi><ref><anchor/><ptr/><hi>6</hi></ref>.</p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Hin ist sein Christenthum!</l>
+          <p>Hin ist sein Christenthum!</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Das wissenschaftliche Ideal </hi><hi>des Christianismus ist eine
-              Cha</hi><hi>rakteristik der Gottheit mit un</hi><hi>endlich vielen
-                Variationen</hi><ref><anchor/><ptr/><hi>7</hi></ref>.</p>
+          <p><hi>Das wissenschaftliche Ideal des Christianismus ist eine Charakteristik der Gottheit
+              mit unendlich vielen Variationen</hi><ref><anchor/><ptr/><hi>7</hi></ref>.</p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Sprichst du von einem Rondo?</l>
+          <p>Sprichst du von einem Rondo?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Gott ist nicht blos ein Gedan </hi><hi>ke, sondern zugleich auch eine
-              </hi><hi>Sache, wie alle Gedanken, die </hi><hi>nicht bloße Einbildungen
-                sind</hi><ref><anchor/><ptr/><hi>8</hi></ref>.</p>
+          <p><hi>Gott ist nicht blos ein Gedanke, sondern zugleich auch eine Sache, wie alle
+              Gedanken, die nicht bloße Einbildungen
+            sind</hi><ref><anchor/><ptr/><hi>8</hi></ref>.</p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Sprich, welche Religion hast du denn eigentlich?</l>
+          <p>Sprich, welche Religion hast du denn eigentlich?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Es ist ein sehr natürlicher, ja </hi><hi>fast unvermeidlicher Wunsch, alle
-              </hi><hi>Gattungen der Religion in sich </hi><hi>vereinigen zu
-                wollen</hi><ref><anchor/><ptr/><hi>9</hi></ref>.</p>
+          <p><hi>Es ist ein sehr natürlicher, ja fast unvermeidlicher Wunsch, alle Gattungen der
+              Religion in sich vereinigen zu wollen</hi><ref><anchor/><ptr/><hi>9</hi></ref>.</p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Alle? –</l>
+          <p>Alle? –</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Alle.</l>
+          <p>Alle.</p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <p> Ach! ich kann dir nicht antworten. Aber ich bitte dich, rede mit unserm Pfarrer, er
-            ist ein wackerer, vernünftiger Mann –</p>
+          <p>Ach! ich kann dir nicht antworten. Aber ich bitte dich, rede mit unserm Pfarrer, er ist
+            ein wackerer, vernünftiger Mann –</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p> Ich mag nicht. <hi>Die Religion ist </hi>
-            <hi>schlechthin groß wie die Natur. </hi>
-            <hi>Der vortrefflichste Priester hat </hi>
-            <hi>doch nur ein Stück davon</hi>
+          <p>Ich mag nicht. <hi>Die Religion ist schlechthin groß wie die Natur. Der vortrefflichste
+              Priester hat doch nur ein Stück davon</hi>
             <ref><anchor/><ptr/><hi>10</hi></ref>.</p>
           <pb n="181"/>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Ich versichere dich, er hat sie ganz.</l>
+          <p>Ich versichere dich, er hat sie ganz.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Ueber dies bin ich selbst Priester.</l>
+          <p>Ueber dies bin ich selbst Priester.</p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER</speaker>
           <stage>
             <hi>erstaunt.</hi>
           </stage>
-          <l> Zugleich Gott und Priester?</l>
+          <p>Zugleich Gott und Priester?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Das Verhältniß des wahren </hi><hi>Künstlers und des wahren Men</hi><hi>schen zu
-              seinen Idealen ist durch</hi><hi>aus Religion. Wem dieser innere </hi><hi>Gottesdienst
-              Ziel und Geschäft </hi><hi>des ganzen Lebens ist, der ist </hi><hi>Priester,</hi> und
-            folglich bin ich auch Priester<ref><anchor/><ptr/><hi>11</hi></ref>.</p>
+          <p><hi>Das Verhältniß des wahren Künstlers und des wahren Menschen zu seinen Idealen ist
+              durchaus Religion. Wem dieser innere Gottesdienst Ziel und Geschäft des ganzen Lebens
+              ist, der ist Priester,</hi> und folglich bin ich auch
+                Priester<ref><anchor/><ptr/><hi>11</hi></ref>.</p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Sohn! Sohn! was soll aus dir werden in dieser und jener Welt!</l>
+          <p>Sohn! Sohn! was soll aus dir werden in dieser und jener Welt!</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Bei den Neuern redet man </hi><hi>immer von dieser und jener Welt, </hi><hi>als ob
-              es mehr als eine Welt </hi><hi>gebe</hi><ref><anchor/><ptr/><hi>12</hi></ref>.</l>
+          <p><hi>Bei den Neuern redet man immer von dieser und jener Welt, als ob es mehr als eine
+              Welt gebe</hi><ref><anchor/><ptr/><hi>12</hi></ref>.</p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Weh' dir! du bist in den Stricken des Satans!</l>
+          <p>Weh' dir! du bist in den Stricken des Satans!</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
           <p>
-            <hi>Der Satan ist eine deutsche </hi>
-            <hi>Erfindung denn der deutsche </hi>
-            <hi>Satan ist satanischer als der ita</hi>
-            <hi>lienische und englische. Er ist </hi>
-            <hi>ein Favorit deutscher Dichter und </hi>
-            <hi>Philosophen, er muß also auch </hi>
-            <hi>wohl sein Gutes haben.</hi>
-          </p>
+            <hi>Der Satan ist eine deutsche Erfindung denn der deutsche Satan ist satanischer als
+              der italienische und englische. Er ist ein Favorit deutscher Dichter und Philosophen,
+              er muß also auch wohl sein Gutes haben.</hi></p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Der Satan sein Gutes?!</l>
+          <p>Der Satan sein Gutes?!</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l>
-            <hi>Das gefällt mir nicht in der </hi>
-            <hi>christlichen Mythologie, daß die </hi>
-            <hi>Satanisken fehlen.</hi>
-          </l>
+          <p>
+            <hi>Das gefällt mir nicht in der christlichen Mythologie, daß die Satanisken
+              fehlen.</hi></p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Ach mein Gott! haben wir denn an <hi>Einem</hi> Satan noch nicht genug? –</l>
+          <p>Ach mein Gott! haben wir denn an <hi>Einem</hi> Satan noch nicht genug? –</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p> Mutter, ich bitte Sie, <hi>nicht diese Ele</hi>
-            <hi>gien von der heroisch kläglichen </hi>
-            <hi>Art; es sind die Empfindungen<pb n="182"/>
-            </hi>
-            <hi>der Jämmerlichkeit bei dem Ge</hi>
-            <hi>danken der Albernheit von den </hi>
-            <hi>Verhältnissen der Plattheit zur </hi>
-            <hi>Tollheit</hi>
+          <p>Mutter, ich bitte Sie, <hi>nicht diese Elegien von der heroisch kläglichen Art; es sind
+              die Empfindungen<pb n="182"/> der Jämmerlichkeit bei dem Gedanken der Albernheit von
+              den Verhältnissen der Plattheit zur Tollheit</hi>
             <ref><anchor/><ptr/><hi>13</hi></ref>.</p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Wohl mir, daß ich deine Schmähungen nicht versehe.</l>
+          <p>Wohl mir, daß ich deine Schmähungen nicht versehe.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p> Sie wollen mich in meiner Bahn aufhalten? <hi>Dies ist umsonst. Wer Einmal </hi>
-            <hi>thöricht oder edel sich bestrebt </hi>
-            <hi>hat, in den Gang des menschli</hi>
-            <hi>chen Geistes mit einzugrei</hi>
-            <hi>fen</hi> –<ref><anchor/><ptr/><hi>14</hi></ref>
-          </p>
+          <p>Sie wollen mich in meiner Bahn aufhalten? <hi>Dies ist umsonst. Wer Einmal thöricht
+              oder edel sich bestrebt hat, in den Gang des menschlichen Geistes mit
+              einzugreifen</hi> –<ref><anchor/><ptr/><hi>14</hi></ref></p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Eingreifen? in einen Gang? was heißt das?</l>
+          <p>Eingreifen? in einen Gang? was heißt das?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p> – <hi>Der muß mit fort, oder er ist </hi>
-            <hi>nicht besser daran als ein Hund </hi>
-            <hi>im Bratenwender, der die Pfoten </hi>
-            <hi>nicht vorwärts setzen will.</hi>
-          </p>
+          <p>– <hi>Der muß mit fort, oder er ist nicht besser daran als ein Hund im Bratenwender,
+              der die Pfoten nicht vorwärts setzen will.</hi></p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <p> Ach! ich bitte dich, setze die Pfoten rückwärts! Deine hohe Geistesverwirrung kann
-            dich einst zu Verzweiflung und Selbstmord führen!</p>
+          <p>Ach! ich bitte dich, setze die Pfoten rückwärts! Deine hohe Geistesverwirrung kann dich
+            einst zu Verzweiflung und Selbstmord führen!</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Der Selbstmord ist nur eine </hi><hi>Begebenheit, selten eine
-              Hand</hi><hi>lung</hi><ref><anchor/><ptr/><hi>15</hi></ref>.</l>
+          <p><hi>Der Selbstmord ist nur eine Begebenheit, selten eine
+                Handlung</hi><ref><anchor/><ptr/><hi>15</hi></ref>.</p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> O! es wäre für mich eine schreckliche Begebenheit!</l>
+          <p>O! es wäre für mich eine schreckliche Begebenheit!</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
           <p>
-            <hi>Ist es eine Handlung, so kann </hi>
-            <hi>vom Recht gar nicht die Rede </hi>
-            <hi>sein, sondern nur von der Schick</hi>
-            <hi>lichkeit.</hi>
-          </p>
+            <hi>Ist es eine Handlung, so kann vom Recht gar nicht die Rede sein, sondern nur von der
+              Schicklichkeit.</hi></p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Es ist weder recht noch schicklich.</l>
+          <p>Es ist weder recht noch schicklich.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Sie irren. <hi>Es ist nie unrecht, frei</hi>
-            <hi>willig <pb n="183"/> zu sterben, aber oft unan</hi>
-            <hi>ständig länger zu leben.</hi>
-          </l>
+          <p>Sie irren. <hi>Es ist nie unrecht, freiwillig <pb n="183"/> zu sterben, aber oft
+              unanständig länger zu leben.</hi></p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Was muß ich hören! weh' mir! wie bitter hat meine Hoffnung mich getäuscht!</l>
+          <p>Was muß ich hören! weh' mir! wie bitter hat meine Hoffnung mich getäuscht!</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Getrost, Mutter, Sie werden bald selbst denken wie ich.</l>
+          <p>Getrost, Mutter, Sie werden bald selbst denken wie ich.</p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER</speaker>
           <stage>
             <hi>mit Abscheu.</hi>
           </stage>
-          <l> Nimmermehr!</l>
+          <p>Nimmermehr!</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p> Sie meinen vielleicht wie Rousseau: <hi>daß </hi>
-            <hi>irgend eine gute und schöne<ref><anchor/><ptr/><hi>16</hi></ref>
-            </hi>
-            <hi>Freigeisterei den Frauen weniger </hi>
-            <hi>zieme als den Männern?</hi>
-          </p>
+          <p>Sie meinen vielleicht wie Rousseau: <hi>daß irgend eine gute und
+                  schöne<ref><anchor/><ptr/><hi>16</hi></ref> Freigeisterei den Frauen weniger zieme
+              als den Männern?</hi></p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <l> Weder euch noch uns.</l>
+          <p>Weder euch noch uns.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Aber das ist nur Eine von </hi><hi>Rousseaus unendlich vielen, all</hi><hi>gemein
-              geltenten Plattheiten</hi><ref><anchor/><ptr/><hi>17</hi></ref>.</l>
+          <p><hi>Aber das ist nur Eine von Rousseaus unendlich vielen, allgemein geltenten
+              Plattheiten</hi><ref><anchor/><ptr/><hi>17</hi></ref>.</p>
         </sp>
-        <sp who="#mutter">
+        <sp who="#frau_von_berg">
           <speaker>MUTTER.</speaker>
-          <p> Alberner Mensch! es ist unverschämt so von Rousseau zu sprechen. Aber großer Gott!
+          <p>Alberner Mensch! es ist unverschämt so von Rousseau zu sprechen. Aber großer Gott!
             möchtest du doch blos unverschämt sein! – Ich verlasse dich tief gebeugt. Ich bin nur
             ein Weib, und kann dir nichts entgegen setzen, als mein Gefühl. Dein Oheim ist ein Mann,
-            er mag männlich mit dir sprechen. <hi>Ab.</hi>
-          </p>
+            er mag männlich mit dir sprechen. <hi>Ab.</hi></p>
         </sp>
       </div>
       <div type="scene">
@@ -995,10 +971,9 @@
           <stage>
             <hi>allein.</hi>
           </stage>
-          <p><hi>Der platte Mensch beur</hi><hi>theilt alle andere Menschen wie </hi><hi>Menschen,
-              behandelt sie aber wie </hi><hi><pb n="184"/> Sachen, und begreift es durchaus
-              </hi><hi>nicht, daß sie andere Menschen </hi><hi>sind als
-                er</hi><ref><anchor/><ptr/><hi>18</hi></ref>.</p>
+          <p><hi>Der platte Mensch beurtheilt alle andere Menschen wie Menschen, behandelt sie aber
+              wie <pb n="184"/> Sachen, und begreift es durchaus nicht, daß sie andere Menschen sind
+              als er</hi><ref><anchor/><ptr/><hi>18</hi></ref>.</p>
         </sp>
       </div>
       <div type="scene">
@@ -1008,203 +983,196 @@
         </stage>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Nun Vetter? Deine Mutter scheint nicht recht mit dir zufrieden.</l>
+          <p>Nun Vetter? Deine Mutter scheint nicht recht mit dir zufrieden.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Sie hat ihre Begriffe noch aus der <hi>Aler</hi>
-            <hi>thümlichkeit</hi>
-            <ref><anchor/><ptr/><hi>19</hi></ref>.</l>
+          <p>Sie hat ihre Begriffe noch aus der <hi>Alterthümlichkeit</hi>
+            <ref><anchor/><ptr/><hi>19</hi></ref>.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Das sind nicht immer die schlechtesten. Aber freilich, du bist ein Genie.</l>
+          <p>Das sind nicht immer die schlechtesten. Aber freilich, du bist ein Genie.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Was man gewöhnlich Genie </hi><hi>nennt, ist Genie des
-                Genies</hi><ref><anchor/><ptr/><hi>20</hi></ref>.</l>
+          <p><hi>Was man gewöhnlich Genie nennt, ist Genie des
+                Genies</hi><ref><anchor/><ptr/><hi>20</hi></ref>.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> So? Das ist verzweifelt scharfsinnig.</l>
+          <p>So? Das ist verzweifelt scharfsinnig.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Genialischer Scharfsinn ist </hi><hi>scharfsinniger Gebrauch des
-              </hi><hi>Scharfsinnes</hi><ref><anchor/><ptr/><hi>21</hi></ref>.</l>
+          <p><hi>Genialischer Scharfsinn ist scharfsinniger Gebrauch des
+                Scharfsinnes</hi><ref><anchor/><ptr/><hi>21</hi></ref>.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Was man doch nicht alles erfährt! Aber sieh' nur Vetter, du mußt dich ein wenig in
+          <p>Was man doch nicht alles erfährt! Aber sieh' nur Vetter, du mußt dich ein wenig in
             deine Mutter fügen, wieder herzlich werden wie vormals. Du bist so kalt, so
             ernsthaft.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Der Mensch ist eine ernsthaf</hi><hi>te
-              Bestie</hi><ref><anchor/><ptr/><hi>22</hi></ref>.</l>
+          <p><hi>Der Mensch ist eine ernsthafte
+            Bestie</hi><ref><anchor/><ptr/><hi>22</hi></ref>.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Eine Bestie? Schäme dich. Ich merke schon, du hast zu viel studirt, bist zu einsam
+          <p>Eine Bestie? Schäme dich. Ich merke schon, du hast zu viel studirt, bist zu einsam
             gewesen. Ich werde dich in gute Gesellschaften führen.</p>
           <pb n="185"/>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Die Gesellschaften der Deut</hi><hi>schen sind ernsthaft, ihre Komö </hi><hi>dien
-              und Satyren sind ernsthaft, </hi><hi>ihre Kritik ist ernsthaft, ihre </hi><hi>ganze
-              schöne Literatur ist ernst</hi><hi>haft</hi><ref><anchor/><ptr/><hi>23</hi></ref>.</p>
+          <p><hi>Die Gesellschaften der Deutschen sind ernsthaft, ihre Komödien und Satyren sind
+              ernsthaft, ihre Kritik ist ernsthaft, ihre ganze schöne Literatur ist
+                ernsthaft</hi><ref><anchor/><ptr/><hi>23</hi></ref>.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> O es gibt auch Narren genug unter den Deutschen.</l>
+          <p>O es gibt auch Narren genug unter den Deutschen.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Narrheit ist absolute Ver</hi><hi>kehrtheit der Tendenz, gänzlicher </hi><hi>Mangel
-              an historischen Geist</hi><ref><anchor/><ptr/><hi>24</hi></ref>.</l>
+          <p><hi>Narrheit ist absolute Verkehrtheit der Tendenz, gänzlicher Mangel an historischen
+              Geist</hi><ref><anchor/><ptr/><hi>24</hi></ref>.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Hör' einmal Vetter, bleib' mir mit dem Krimskrams vom Halse, und laß uns vernünftig
+          <p>Hör' einmal Vetter, bleib' mir mit dem Krimskrams vom Halse, und laß uns vernünftig
             reden. Ich habe ein Project für dich.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Ein Project ist der subjetive </hi><hi>Keim eines werdenden
-                Objects</hi><ref><anchor/><ptr/><hi>25</hi></ref>.</l>
+          <p><hi>Ein Project ist der subjetive Keim eines werdenden
+                Objects</hi><ref><anchor/><ptr/><hi>25</hi></ref>.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Gleichviel. Du mußt eine Existenz haben.</l>
+          <p>Gleichviel. Du mußt eine Existenz haben.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Es kann nichts anmaßender </hi><hi>sein, als überhaupt zu existiren, </hi><hi>oder
-              gar auf eine bestimmte </hi><hi>selbstständige Art zu
-                existiren</hi><ref><anchor/><ptr/><hi>26</hi></ref>.</p>
+          <p><hi>Es kann nichts anmaßender sein, als überhaupt zu existiren, oder gar auf eine
+              bestimmte selbstständige Art zu
+            existiren</hi><ref><anchor/><ptr/><hi>26</hi></ref>.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Nun, zum Teufel! wie existire ich denn?</l>
+          <p>Nun, zum Teufel! wie existire ich denn?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Sie? Sie existiren gar nicht.</l>
+          <p>Sie? Sie existiren gar nicht.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON</speaker>
           <stage>
             <hi>prallt zurück.</hi>
           </stage>
-          <l> Gar nicht?</l>
+          <p>Gar nicht?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Die meisten Menschen sind </hi><hi>nur gleich berechtigte Prätenden</hi><hi>tender
-              Existenz; es gibt wenig
-            </hi><hi>Existenten</hi><ref><anchor/><ptr/><hi>27</hi></ref>.</p>
+          <p><hi>Die meisten Menschen sind nur gleich berechtigte Prätendenten der Existenz; es gibt
+              wenig Existenten</hi><ref><anchor/><ptr/><hi>27</hi></ref>.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Mensch! du bist entweder närrisch oder toll.</l>
+          <p>Mensch! du bist entweder närrisch oder toll.</p>
           <pb n="186"/>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Die Narrheit ist blos dadurch </hi><hi>von der Tollheit verschieden, daß
-              </hi><hi>sie willkürlich ist, wie die
-                </hi><hi>Dummheit</hi><ref><anchor/><ptr/><hi>28</hi></ref>.</p>
+          <p><hi>Die Narrheit ist blos dadurch von der Tollheit verschieden, daß sie willkürlich
+              ist, wie die Dummheit</hi><ref><anchor/><ptr/><hi>28</hi></ref>.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Also ist deine Narrheit willkürlich? Gut, so lasse ich dich einsperren. – O Karl!
-            Karl! nicht wahr, du verstellst dich nur? du bist nicht so ein Erz-Genie? – rede, was
-            hast du denn eigentlich studirt?</p>
+          <p>Also ist deine Narrheit willkürlich? Gut, so lasse ich dich einsperren. – O Karl! Karl!
+            nicht wahr, du verstellst dich nur? du bist nicht so ein Erz-Genie? – rede, was hast du
+            denn eigentlich studirt?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Göthes rein poetische Poesie, </hi><hi>denn sie ist die vollständigste
-              </hi><hi>Poesie der Poesie</hi><ref><anchor/><ptr/><hi>29</hi></ref>.</l>
+          <p><hi>Göthes rein poetische Poesie, denn sie ist die vollständigste Poesie der
+              Poesie</hi><ref><anchor/><ptr/><hi>29</hi></ref>.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Gott helfe mir! du bist der vollständigste Narr aller Narren! Höre, Vetter! noch will
+          <p>Gott helfe mir! du bist der vollständigste Narr aller Narren! Höre, Vetter! noch will
             ich mich moderiren –</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Moderantismus ist Geist der </hi><hi>kastrirten
-                Illiberalität</hi><ref><anchor/><ptr/><hi>30</hi></ref>.</l>
+          <p><hi>Moderantismus ist Geist der kastrirten
+                Illiberalität</hi><ref><anchor/><ptr/><hi>30</hi></ref>.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p><hi>Solche überschwengliche </hi><hi>Dummheiten sollten in den Jahr</hi><hi>büchern des
-              menschlichen Geistes </hi><hi>aufbewahrt werden, man kann sie </hi><hi>mit allem
-              Verstande nicht so er</hi><hi>finden</hi><ref><anchor/><ptr/><hi>31</hi></ref>. Hast
-            du weiter nichts gelernt, so ist es ewig Schade um das schöne Geld und die kostbare
-            Zeit. – Was soll nun aus dir werden?</p>
+          <p><hi>Solche überschwengliche Dummheiten sollten in den Jahrbüchern des menschlichen
+              Geistes aufbewahrt werden, man kann sie mit allem Verstande nicht so
+                erfinden</hi><ref><anchor/><ptr/><hi>31</hi></ref>. Hast du weiter nichts gelernt,
+            so ist es ewig Schade um das schöne Geld und die kostbare Zeit. – Was soll nun aus dir
+            werden?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Um zu sagen, was der Mensch </hi><hi>soll, muß man Einer sein, und es
-              </hi><hi>nebenbei auch wissen</hi><ref><anchor/><ptr/><hi>32</hi></ref>.</l>
+          <p><hi>Um zu sagen, was der Mensch soll, muß man Einer sein, und es nebenbei auch
+              wissen</hi><ref><anchor/><ptr/><hi>32</hi></ref>.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Ich habe immer gedacht, das wäre mein Fall. – Rede, kannst du dich in der Welt
+          <p>Ich habe immer gedacht, das wäre mein Fall. – Rede, kannst du dich in der Welt
             benehmen? verstehst du, <pb n="187"/> mit aller deiner kritischen Weisheit dir in
             schwierigen Fällen zu helfen?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>O das Talent aus einer Mu</hi><hi>stercharte von Mitteln die
-              zweck</hi><hi>mäßigsten auszuwählen, ist so ge</hi><hi>ringfügig, daß auch der
-              gemeinste </hi><hi>Verstand dazu
-            hinreicht</hi><ref><anchor/><ptr/><hi>33</hi></ref>.</p>
+          <p><hi>O das Talent aus einer Mustercharte von Mitteln die zweckmäßigsten auszuwählen, ist
+              so geringfügig, daß auch der gemeinste Verstand dazu
+                hinreicht</hi><ref><anchor/><ptr/><hi>33</hi></ref>.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Wollte Gott, du hättest diesen gemeinsten Verstand! – Da steht er nun, der
-            Jammermensch mit der hohen Anmaßung! Was ist aus ihm geworden!</p>
+          <p>Wollte Gott, du hättest diesen gemeinsten Verstand! – Da steht er nun, der Jammermensch
+            mit der hohen Anmaßung! Was ist aus ihm geworden!</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Ich ist äqual ich</hi><ref><anchor/><ptr/><hi>34</hi></ref>.</l>
+          <p><hi>Ich ist äqual ich</hi><ref><anchor/><ptr/><hi>34</hi></ref>.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Dein Ich ist äqual einem Narren. Ich meinte es so gut mit dir; ich hatte dir meine
+          <p>Dein Ich ist äqual einem Narren. Ich meinte es so gut mit dir; ich hatte dir meine
             Tochter bestimmt, das liebe naive Mädchen. –</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Naiv ist, was bis zur Ironie, </hi><hi>oder bis zum steten Wechsel von
-              </hi><hi>Selbstschöpfung und Selbstver</hi><hi>nichtung natürlich, individuell
-              </hi><hi>oder klassisch ist oder
-            scheint</hi><ref><anchor/><ptr/><hi>35</hi></ref>.</p>
+          <p><hi>Naiv ist, was bis zur Ironie, oder bis zum steten Wechsel von Selbstschöpfung und
+              Selbstvernichtung natürlich, individuell oder klassisch ist oder
+                scheint</hi><ref><anchor/><ptr/><hi>35</hi></ref>.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Potz Unsinn und kein Ende! Vetter, ich rathe dir Gutes. Lenke wieder ein, oder du
-            wirst nimmer mein Schwiegersohn.</p>
+          <p>Potz Unsinn und kein Ende! Vetter, ich rathe dir Gutes. Lenke wieder ein, oder du wirst
+            nimmer mein Schwiegersohn.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> So bleib' ich mir selbst genug. <hi>Es ist </hi>
-            <hi>schön, wenn ein schöner Geist </hi>
-            <hi>sich selbst anlächelt</hi>
-            <ref><anchor/><ptr/><hi>36</hi></ref>.</l>
+          <p>So bleib' ich mir selbst genug. <hi>Es ist schön, wenn ein schöner Geist sich selbst
+              anlächelt</hi>
+            <ref><anchor/><ptr/><hi>36</hi></ref>.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Ei lächle du dich an so viel du willst. Ich ziehe meine Hand von dir ab. – Es bleibt
+          <p>Ei lächle du dich an so viel du willst. Ich ziehe meine Hand von dir ab. – Es bleibt
             mir nur noch eine Hoffnung übrig: ich will dir das Mädchen herschicken. Wenn <pb n="188"
             /> es der Liebe nicht gelingt, diesen verrückten Kopf wieder an Ort und Stelle zu
-            rücken, so ist Alles verloren! <hi>Ab.</hi>
-          </p>
+            rücken, so ist Alles verloren! <hi>Ab.</hi></p>
         </sp>
       </div>
       <div type="scene">
@@ -1214,10 +1182,10 @@
           <stage>
             <hi>allein.</hi>
           </stage>
-          <p><hi> Er lächelt.</hi><hi>Es gibt rechtliche </hi><hi>und angenehme Leute, die den
-              </hi><hi>Menschen und das Leben so be</hi><hi>trachten, als ob von der besten
-              </hi><hi>Schafzucht die Rede wäre. Es </hi><hi>sind die Oekonomen der
-                Moral</hi><ref><anchor/><ptr/><hi>37</hi></ref>.</p>
+          <p><stage>Er lächelt.</stage>
+            <hi>Es gibt rechtliche und angenehme Leute, die den Menschen und das Leben so
+              betrachten, als ob von der besten Schafzucht die Rede wäre. Es sind die Oekonomen der
+              Moral</hi><ref><anchor/><ptr/><hi>37</hi></ref>.</p>
         </sp>
       </div>
       <div type="scene">
@@ -1230,33 +1198,32 @@
           <stage>
             <hi>eilt ihr entgegen, und reißt sie wüthend an seine Brust.</hi>
           </stage>
-          <l> Ha! meine Amalie!</l>
+          <p>Ha! meine Amalie!</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Gemach! Gemach, lieber Vetter! Sie erdrücken mich.</l>
+          <p>Gemach! Gemach, lieber Vetter! Sie erdrücken mich.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Es liegt in der Natur des </hi><hi>Mannes ein gewisser tölpelhafter
-              </hi><hi>Enthusiasmus, der leicht bis zur </hi><hi>Grobheit göttlich
-                ist</hi><ref><anchor/><ptr/><hi>38</hi></ref>. <hi>Er will sie abermals
-              umarmen.</hi></p>
+          <p><hi>Es liegt in der Natur des Mannes ein gewisser tölpelhafter Enthusiasmus, der leicht
+              bis zur Grobheit göttlich ist</hi><ref><anchor/><ptr/><hi>38</hi></ref>. <hi>Er will
+              sie abermals umarmen.</hi></p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN</speaker>
           <stage>
             <hi>verschämt und sich sträubend.</hi>
           </stage>
-          <l> Nicht so ungestüm, lieber Karl.</l>
+          <p>Nicht so ungestüm, lieber Karl.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL</speaker>
           <stage>
             <hi>betrachtet sie lächelnd.</hi>
           </stage>
-          <l><hi>Es ist doch </hi><hi>wirklich eine komische Situation, </hi><hi>ein unschuldiges
-              Mädchen zu</hi><hi>sein</hi><ref><anchor/><ptr/><hi>39</hi></ref>.</l>
+          <p><hi>Es ist doch wirklich eine komische Situation, ein unschuldiges Mädchen zu
+                sein</hi><ref><anchor/><ptr/><hi>39</hi></ref>.</p>
           <pb n="189"/>
         </sp>
         <sp who="#malchen">
@@ -1264,285 +1231,254 @@
           <stage>
             <hi>erstaunt.</hi>
           </stage>
-          <l> Wie? eine komische Situation?</l>
+          <p>Wie? eine komische Situation?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p> Allerdings, aber <hi>die Frauen müssen </hi>
-            <hi>wohl prüde bleiben, so lange die </hi>
-            <hi>Männer sentimental, dumm und </hi>
-            <hi>schlecht genug sind, ewige Un</hi>
-            <hi>schuld und Mangel an Bildung </hi>
-            <hi>von ihnen zu fordern</hi>
+          <p>Allerdings, aber <hi>die Frauen müssen wohl prüde bleiben, so lange die Männer
+              sentimental, dumm und schlecht genug sind, ewige Unschuld und Mangel an Bildung von
+              ihnen zu fordern</hi>
             <ref><anchor/><ptr/><hi>40</hi></ref>.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Sie fordern also keine Unschuld von mir?</l>
+          <p>Sie fordern also keine Unschuld von mir?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Sie sind ein <hi>blühendes Mädchen, </hi>
-            <hi>und folglich das reizendste Sym</hi>
-            <hi>bol vom reinen guten Willen</hi>
-            <ref><anchor/><ptr/><hi>41</hi></ref>.</l>
+          <p>Sie sind ein <hi>blühendes Mädchen, und folglich das reizendste Symbol vom reinen guten
+              Willen</hi>
+            <ref><anchor/><ptr/><hi>41</hi></ref>.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Ein sonderbares <hi>Compliment!</hi>
-          </l>
+          <p>Ein sonderbares <hi>Compliment!</hi></p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Wir werden uns heirathen.</l>
+          <p>Wir werden uns heirathen.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Vielleicht.</l>
+          <p>Vielleicht.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Zwar fehlt es den Frauen an </hi><hi>Sinn für die Kunst, an Anlage zur
-              </hi><hi>Wissenschaft und an
-              Abstracti</hi><hi>on<ref><anchor/><ptr/><hi>42</hi></ref>, zwar ist muthwillige
-              Bos</hi><hi>heit mit naiver Kälte und lachen</hi><hi>der Gefühllosigkeit eine
-              angebor</hi><hi>ne Kunst Ihres Geschlechts</hi>
-            –<ref><anchor/><ptr/><hi>43</hi></ref>.</p>
+          <p><hi>Zwar fehlt es den Frauen an Sinn für die Kunst, an Anlage zur Wissenschaft und an
+                  Abstraction<ref><anchor/><ptr/><hi>42</hi></ref>, zwar ist muthwillige Bosheit mit
+              naiver Kälte und lachender Gefühllosigkeit eine angeborne Kunst Ihres Geschlechts</hi>
+                –<ref><anchor/><ptr/><hi>43</hi></ref>.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Eine schmeichelhafte Schilderung!</l>
+          <p>Eine schmeichelhafte Schilderung!</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Dennoch bin ich entschlossen den Versuch zu wagen.</l>
+          <p>Dennoch bin ich entschlossen den Versuch zu wagen.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Einen Versuch? Allerliebst.</l>
+          <p>Einen Versuch? Allerliebst.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Fast alle Ehen sind nur Kon</hi><hi>kubinate, provisorische Versuche </hi><hi>zu
-              einer wirklichen Ehe</hi><ref><anchor/><ptr/><hi>44</hi></ref>.</l>
+          <p><hi>Fast alle Ehen sind nur Konkubinate, provisorische Versuche zu einer wirklichen
+              Ehe</hi><ref><anchor/><ptr/><hi>44</hi></ref>.</p>
           <pb n="190"/>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Herr Vetter, ich <hi>hoffe,</hi> daß ich Sie nicht verstehe.</l>
+          <p>Herr Vetter, ich <hi>hoffe,</hi> daß ich Sie nicht verstehe.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Wir könnten auch allenfalls den Wunsch in's Große treiben. Zum Exempel eine Ehe <hi>à
-              quatre.</hi>
-          </l>
+          <p>Wir könnten auch allenfalls den Wunsch in's Große treiben. Zum Exempel eine Ehe <hi>à
+              quatre.</hi></p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN</speaker>
           <stage>
             <hi>fast stumm vor Erstaunen.</hi>
           </stage>
-          <l> Wie?</l>
+          <p>Wie?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Ja, es läßt sich nicht abseh'n, </hi><hi>was man gegen eine Ehe</hi><hi>à
-              quatre</hi><hi>gründliches einwenden
-            könnte</hi><ref><anchor/><ptr/><hi>45</hi></ref>.</l>
+          <p><hi>Ja, es läßt sich nicht abseh'n, was man gegen eine Ehe <emph>à quatre</emph>
+              gründliches einwenden könnte</hi><ref><anchor/><ptr/><hi>45</hi></ref>.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Sie wären wirklich im Stande Ihre Geliebte zu theilen?</l>
+          <p>Sie wären wirklich im Stande Ihre Geliebte zu theilen?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Ich werde mich bemühen Sie so zu besitzen, als ob ich Sie nicht besäße.</l>
+          <p>Ich werde mich bemühen Sie so zu besitzen, als ob ich Sie nicht besäße.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Eine angenehme Aussicht!</l>
+          <p>Eine angenehme Aussicht!</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Das ist die Pflicht des wahren <hi>Cyni</hi>
-            <hi>kers</hi>
-            <ref><anchor/><ptr/><hi>46</hi></ref>.</l>
+          <p>Das ist die Pflicht des wahren <hi>Cynikers</hi>
+            <ref><anchor/><ptr/><hi>46</hi></ref>.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN</speaker>
           <stage>
             <hi>mit ausbrechender Ungeduld.</hi>
           </stage>
-          <l> Herr Vetter, Sie werden mich wahrscheinlich gar nicht besitzen.</l>
+          <p>Herr Vetter, Sie werden mich wahrscheinlich gar nicht besitzen.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Wie, Amalie? Haben Sie die schönen Zeiten schon vergessen, <hi>wo ein Chaos von </hi>
-            <hi>Harmonien in uns war?</hi>
-            <ref><anchor/><ptr/><hi>47</hi></ref>
-          </l>
+          <p>Wie, Amalie? Haben Sie die schönen Zeiten schon vergessen, <hi>wo ein Chaos von
+              Harmonien in uns war?</hi>
+            <ref><anchor/><ptr/><hi>47</hi></ref></p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Jetzt scheint ein Chaos von Dissonanzen daraus geworden zu sein.</l>
+          <p>Jetzt scheint ein Chaos von Dissonanzen daraus geworden zu sein.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Was mißfällt Ihnen an mir?</l>
+          <p>Was mißfällt Ihnen an mir?</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Ihr gänzlicher Mangel an Delikatesse –</l>
+          <p>Ihr gänzlicher Mangel an Delikatesse –</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Niedliche Gemeinheit und ge</hi><hi>bildete Unart heißt in der Spra</hi><hi>che des
-              feinen Umgangs Delika</hi><hi>tesse</hi><ref><anchor/><ptr/><hi>48</hi></ref>.</l>
+          <p><hi>Niedliche Gemeinheit und gebildete Unart heißt in der Sprache des feinen Umgangs
+              Delikatesse</hi><ref><anchor/><ptr/><hi>48</hi></ref>.</p>
           <pb n="191"/>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Ihre Immoralität –</l>
+          <p>Ihre Immoralität –</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Warum sollt es auch nicht un</hi><hi>moralische Menschen geben dür</hi><hi>fen, so
-              gut wie unphilosophische </hi><hi>und
-              unpoetische</hi><ref><anchor/><ptr/><hi>49</hi></ref>.</p>
+          <p><hi>Warum sollt es auch nicht unmoralische Menschen geben dürfen, so gut wie
+              unphilosophische und unpoetische</hi><ref><anchor/><ptr/><hi>49</hi></ref>.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Sie proponiren mir eine Ehe <hi>à quatre</hi> wie eine Partie <hi>whist.</hi>
-          </l>
+          <p>Sie proponiren mir eine Ehe <hi>à quatre</hi> wie eine Partie <hi>whist.</hi></p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Nun ja.</l>
+          <p>Nun ja.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Fühlen Sie denn nicht einmal was die Welt dazu sagen würde?</l>
+          <p>Fühlen Sie denn nicht einmal was die Welt dazu sagen würde?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Die Menge nicht zu achten, </hi><hi>ist
-                sittlich</hi><ref><anchor/><ptr/><hi>50</hi></ref>.</l>
+          <p><hi>Die Menge nicht zu achten, ist
+            sittlich</hi><ref><anchor/><ptr/><hi>50</hi></ref>.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Eine schöne Sittlichkeit.</l>
+          <p>Eine schöne Sittlichkeit.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Die öffentliche Meinung ist </hi><hi>ein Unthier, das man muthig auf </hi><hi>den
-              Rücken werfen muß, und dann </hi><hi>ist es nur ein gemeiner
-                Frosch</hi><ref><anchor/><ptr/><hi>51</hi></ref>.</p>
+          <p><hi>Die öffentliche Meinung ist ein Unthier, das man muthig auf den Rücken werfen muß,
+              und dann ist es nur ein gemeiner Frosch</hi><ref><anchor/><ptr/><hi>51</hi></ref>.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Ich fürchte mich auch vor Fröschen; und kurz, Herr Vetter, wir passen nicht mehr für
-            einander.</l>
+          <p>Ich fürchte mich auch vor Fröschen; und kurz, Herr Vetter, wir passen nicht mehr für
+            einander.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Was sagen Sie? Wir, <hi>die wir uns </hi>
-            <hi>einst umarmten mit eben so viel </hi>
-            <hi>Ausgelassenheit als Religion?</hi>
-            <ref><anchor/><ptr/><hi>52</hi></ref>
-          </l>
+          <p>Was sagen Sie? Wir, <hi>die wir uns einst umarmten mit eben so viel Ausgelassenheit als
+              Religion?</hi>
+            <ref><anchor/><ptr/><hi>52</hi></ref></p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Wahrlich, Ihre Sprache ist fast noch sonderbarer als Ihre Meinungen.</l>
+          <p>Wahrlich, Ihre Sprache ist fast noch sonderbarer als Ihre Meinungen.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Die Sprache der Liebe sei frei </hi><hi>und kühn nach alter klassischer
-              </hi><hi>Sitte</hi><ref><anchor/><ptr/><hi>53</hi></ref>.</l>
+          <p><hi>Die Sprache der Liebe sei frei und kühn nach alter klassischer
+                Sitte</hi><ref><anchor/><ptr/><hi>53</hi></ref>.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Aber nicht leichtfertig.</l>
+          <p>Aber nicht leichtfertig.</p>
           <pb n="192"/>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p> Warum nicht? <hi>Leichtfertige Ge</hi>
-            <hi>spräche müssen ruchlos genug </hi>
-            <hi>sein, sie sind das Salz an die </hi>
-            <hi>Speisen. Es frägt sich gar nicht, </hi>
-            <hi>warum man sie sagen soll, son</hi>
-            <hi>dern nur wie man sie sagen soll, </hi>
-            <hi>denn lassen kann und darf man es </hi>
-            <hi>doch nicht</hi>
+          <p>Warum nicht? <hi>Leichtfertige Gespräche müssen ruchlos genug sein, sie sind das Salz
+              an die Speisen. Es frägt sich gar nicht, warum man sie sagen soll, sondern nur wie man
+              sie sagen soll, denn lassen kann und darf man es doch nicht</hi>
             <ref><anchor/><ptr/><hi>54</hi></ref>.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Wahrlich, es wäre besser, man ließe es.</l>
+          <p>Wahrlich, es wäre besser, man ließe es.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p> Aber, <hi>es wäre ja grob, mit </hi>
-            <hi>einem reizenden Mädchen so zu </hi>
-            <hi>reden, als ob sie ein geschlecht</hi>
-            <hi>loses Amphibion wäre</hi>
+          <p>Aber, <hi>es wäre ja grob, mit einem reizenden Mädchen so zu reden, als ob sie ein
+              geschlechtloses Amphibion wäre</hi>
             <ref><anchor/><ptr/><hi>55</hi></ref>.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Ersparen Sie sich diese Gattung von Höflichkeit.</l>
+          <p>Ersparen Sie sich diese Gattung von Höflichkeit.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Es ist Pflicht und Schuldig</hi><hi>keit immer auf das anzuspielen, </hi><hi>was
-              sie ist und sein wird</hi><ref><anchor/><ptr/><hi>56</hi></ref>.</l>
+          <p><hi>Es ist Pflicht und Schuldigkeit immer auf das anzuspielen, was sie ist und sein
+              wird</hi><ref><anchor/><ptr/><hi>56</hi></ref>.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Mein Gott, ich entlasse Sie der Pflicht wie der Schuldigkeit.</l>
+          <p>Mein Gott, ich entlasse Sie der Pflicht wie der Schuldigkeit.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p> Geben Sie doch nur Acht auf die Kinder. Ein kleines Mädchen <hi>findet nicht selten
-              ein </hi>
-            <hi>unbeschreibliches Vergnügen </hi>
-            <hi>darin, mit den Beinchen in die </hi>
-            <hi>Höhe zu gesticuliren, unbeküm</hi>
-            <hi>mert um ihren Rock, und um das </hi>
-            <hi>Urtheil der Welt. Wenn das ein </hi>
-            <hi>kleines Mädchen thut, was darf </hi>
-            <hi>ich nicht thun, da ich doch bei </hi>
-            <hi>Gott ein Mann bin, und nicht zar</hi>
-            <hi>ter zu sein brauche als das zarte</hi>
-            <hi>ste weibliche Wesen?</hi>
-            <ref><anchor/><ptr/><hi>57</hi></ref>
-          </p>
+          <p>Geben Sie doch nur Acht auf die Kinder. Ein kleines Mädchen <hi>findet nicht selten ein
+              unbeschreibliches Vergnügen darin, mit den Beinchen in die Höhe zu gesticuliren,
+              unbekümmert um ihren Rock, und um das Urtheil der Welt. Wenn das ein kleines Mädchen
+              thut, was darf ich nicht thun, da ich doch bei Gott ein Mann bin, und nicht zarter zu
+              sein brauche als das zarteste weibliche Wesen?</hi>
+            <ref><anchor/><ptr/><hi>57</hi></ref></p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <p> Vortrefflich! Wenn es noch länger dauert, <pb n="193"/> so fängt er an zu
-            gesticuliren. Geh'n Sie, mein Herr, Sie werden frech.</p>
+          <p>Vortrefflich! Wenn es noch länger dauert, <pb n="193"/> so fängt er an zu gesticuliren.
+            Geh'n Sie, mein Herr, Sie werden frech.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Die Bildung der Frechheit ist </hi><hi>groß und
-                edel</hi><ref><anchor/><ptr/><hi>58</hi></ref>.</l>
+          <p><hi>Die Bildung der Frechheit ist groß und
+              edel</hi><ref><anchor/><ptr/><hi>58</hi></ref>.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <p> Ich habe gnug. Sind das die Wunderdinge, die wir erwarteten? – Welche Täuschung! Guter
+          <p>Ich habe gnug. Sind das die Wunderdinge, die wir erwarteten? – Welche Täuschung! Guter
             Hans! Wie liebenswürdig erscheint gegen dies hohe kritische Aufklärung dein simples
             ehrliches Gemüth!</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Gemüth ist die Poesie der er</hi><hi>habenen
-                Vernunft</hi><ref><anchor/><ptr/><hi>59</hi></ref>.</l>
+          <p><hi>Gemüth ist die Poesie der erhabenen
+              Vernunft</hi><ref><anchor/><ptr/><hi>59</hi></ref>.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Wieder eine hohe Albernheit. Ich werde dem Menschen nicht mehr antworten.</l>
+          <p>Wieder eine hohe Albernheit. Ich werde dem Menschen nicht mehr antworten.</p>
         </sp>
       </div>
       <div type="scene">
@@ -1555,24 +1491,24 @@
           <stage>
             <hi>eilig.</hi>
           </stage>
-          <l> So eben reitet der Fürst auf den Hof. Nun Malchen, wie ist's?</l>
+          <p>So eben reitet der Fürst auf den Hof. Nun Malchen, wie ist's?</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Ach!</l>
+          <p>Ach!</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Auch da nichts? Nun so hol' dich der Teufel! – Denk nur, Malchen, was der Hans eben
+          <p>Auch da nichts? Nun so hol' dich der Teufel! – Denk nur, Malchen, was der Hans eben
             gemach hat, der brave Junge.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Nun?</l>
+          <p>Nun?</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Der Fürst – du kennst ihn – auf der Jagd ist er ein Wagehals. Da hat er eine Wilde Sau
+          <p>Der Fürst – du kennst ihn – auf der Jagd ist er ein Wagehals. Da hat er eine Wilde Sau
             gereizt, die Bestie stürzt wüthend auf ihn los, kein Jäger in der Nähe, retiriren kann
             er nicht mehr, bei meiner armen Seele! es war um ihn gescheh'n. Flugs springt unser Hans
             vor, zuckt <pb n="194"/> sein Weidmesser, stellt sich dem erboßten hier entgegen, und
@@ -1580,28 +1516,26 @@
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Das war brav.</l>
+          <p>Das war brav.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Ein wackerer Junge. Der Fürst soll sehr gnädig gegen ihn gewesen sein. Ich muß fort,
+          <p>Ein wackerer Junge. Der Fürst soll sehr gnädig gegen ihn gewesen sein. Ich muß fort,
             Se. Durchlaucht zu empfangen. – Nun Karl, noch ist es Zeit, besinne dich, sei
             vernünftig. Ich werde dich dem Fürsten vorstellen. Wenn du aber auch da dumme Streiche
-            machst, so sind wir geschiedene Leute. <hi>Ab.</hi>
-          </p>
+            machst, so sind wir geschiedene Leute. <hi>Ab.</hi></p>
         </sp>
         <sp who="#karl">
           <speaker>KARL</speaker>
           <stage>
             <hi>kalt lächelnd.</hi>
           </stage>
-          <p><hi>Wenn Verstand und </hi><hi>Unverstand sich berühren, so gibt </hi><hi>es einen
-              elektrischen Schlag, das </hi><hi>nennt man
-                Polemik</hi><ref><anchor/><ptr/><hi>60</hi></ref>.</p>
+          <p><hi>Wenn Verstand und Unverstand sich berühren, so gibt es einen elektrischen Schlag,
+              das nennt man Polemik</hi><ref><anchor/><ptr/><hi>60</hi></ref>.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Schön. Der Herr Vetter macht sich noch lustig über seinen alten biedern Oheim.</l>
+          <p>Schön. Der Herr Vetter macht sich noch lustig über seinen alten biedern Oheim.</p>
         </sp>
       </div>
       <div type="scene">
@@ -1614,7 +1548,7 @@
           <stage>
             <hi>läuft auf Karl zu, und drückt ihn feurig an seine Brust.</hi>
           </stage>
-          <p> Bruder! lieber Bruder! es ist recht fatal, daß der Fürst eben kommt, daß ich dir nicht
+          <p>Bruder! lieber Bruder! es ist recht fatal, daß der Fürst eben kommt, daß ich dir nicht
             sagen kann, wie sehr ich mich freue! wie lieb ich dich habe! Aber nun bleiben wir ja
             wieder beisammen, und wenn ich gleich gegen dich nur ein einfältiger Mensch bin, so
             wirst du doch mein Freund sein, nicht wahr? Mein väterlicher Freund?</p>
@@ -1624,30 +1558,29 @@
           <stage>
             <hi>seine Liebkosungen steif erwidernd.</hi>
           </stage>
-          <p><hi>Jeder </hi><hi>ungebildete Mensch ist die Kari</hi><hi>katur von sich
+          <p><hi>Jeder ungebildete Mensch ist die Karikatur von sich
                 selbst</hi><ref><anchor/><ptr/><hi>61</hi></ref>. Dein Freund kann ich also nicht
-            sein. <hi>Denn die Freund</hi><hi>schaft <pb n="195"/> ist für dich wie für die
-              </hi><hi>Weiber, zu vielseitig und zu ein</hi><hi>seitig. Sie muß ganz geistig sein,
-              </hi><hi>und durchaus bestimmte Grenzen
-                </hi><hi>haben</hi><ref><anchor/><ptr/><hi>62</hi></ref>.</p>
+            sein. <hi>Denn die Freundschaft <pb n="195"/> ist für dich wie für die Weiber, zu
+              vielseitig und zu einseitig. Sie muß ganz geistig sein, und durchaus bestimmte Grenzen
+              haben</hi><ref><anchor/><ptr/><hi>62</hi></ref>.</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <l> Ach die meinige für dich, ist grenzenlos!</l>
+          <p>Ach die meinige für dich, ist grenzenlos!</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Diese Absonderung würde </hi><hi>dein Wesen nur auf eine feinere </hi><hi>Art eben
-              so vollkommen zerstö</hi><hi>ren, wie bloße Sinnlichkeit ohne
-                </hi><hi>Liebe</hi><ref><anchor/><ptr/><hi>63</hi></ref>.</p>
+          <p><hi>Diese Absonderung würde dein Wesen nur auf eine feinere Art eben so vollkommen
+              zerstören, wie bloße Sinnlichkeit ohne
+            Liebe</hi><ref><anchor/><ptr/><hi>63</hi></ref>.</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <l> Was ist das, liebe Cousine? Ich verstehe ihn nicht.</l>
+          <p>Was ist das, liebe Cousine? Ich verstehe ihn nicht.</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Ich auch nicht.</l>
+          <p>Ich auch nicht.</p>
         </sp>
       </div>
       <div type="scene">
@@ -1657,401 +1590,360 @@
         </stage>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Hier habe ich die Ehre, Ew. Durchlaucht meinen ältern Vetter vorzustellen, der so eben
+          <p>Hier habe ich die Ehre, Ew. Durchlaucht meinen ältern Vetter vorzustellen, der so eben
             von der Universität zurückgekommen, wo er studirt hat bis an den Hals.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST</speaker>
           <stage>
             <hi>lächelnd.</hi>
           </stage>
-          <p> Ich will hoffen, auch noch ein wenig höher hinauf. <hi>Zu Karl.</hi> Herr von Berg,
-            ich freue mich, kennen zu lernen. Ihre Familie hat meinem Hause jederzeit wichtige
-            Dienste geleistet. Ihr Vater war ein braver Mann.</p>
+          <p>Ich will hoffen, auch noch ein wenig höher hinauf. <hi>Zu Karl.</hi> Herr von Berg, ich
+            freue mich, kennen zu lernen. Ihre Familie hat meinem Hause jederzeit wichtige Dienste
+            geleistet. Ihr Vater war ein braver Mann.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Ich darf kühnlich antworten, </hi><hi>wie Sthenelos dem Agamemnon: </hi><hi>wir
-              rühmen uns viel besser zu </hi><hi>sein als unsere
-                Väter</hi><ref><anchor/><ptr/><hi>64</hi></ref>.</p>
+          <p><hi>Ich darf kühnlich antworten, wie Sthenelos dem Agamemnon: wir rühmen uns viel
+              besser zu sein als unsere Väter</hi><ref><anchor/><ptr/><hi>64</hi></ref>.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST</speaker>
           <stage>
             <hi>lächelnd.</hi>
           </stage>
-          <l> Das klingt fast ein wenig arrogant.</l>
+          <p>Das klingt fast ein wenig arrogant.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Arrogant ist, wer Sinn und </hi><hi>Charakter zugleich hat, und sich </hi><hi>dann
-              und wann merken <pb n="196"/> läßt, daß </hi><hi>diese Verbindung gut und
-              nütz</hi><hi>lich sei</hi><ref><anchor/><ptr/><hi>65</hi></ref>.</p>
+          <p><hi>Arrogant ist, wer Sinn und Charakter zugleich hat, und sich dann und wann merken
+                <pb n="196"/> läßt, daß diese Verbindung gut und nützlich
+                sei</hi><ref><anchor/><ptr/><hi>65</hi></ref>.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <p> Sie scheinen viel Vertrauen auf sich zu haben; fast ein wenig mehr als sich mit der
+          <p>Sie scheinen viel Vertrauen auf sich zu haben; fast ein wenig mehr als sich mit der
             Bescheidenheit verträgt.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
           <p>
-            <hi>Was darf sich der nicht zu </hi>
-            <hi>trauen, zu dem der Witz selbst </hi>
-            <hi>durch eine Stimme vom geöffne</hi>
-            <hi>ten Himmel sprach: du bist mein </hi>
-            <hi>lieber Sohn, an dem ich Wohlge</hi>
-            <hi>fallen habe!</hi>
+            <hi>Was darf sich der nicht zu trauen, zu dem der Witz selbst durch eine Stimme vom
+              geöffneten Himmel sprach: du bist mein lieber Sohn, an dem ich Wohlgefallen habe!</hi>
             <ref>
               <anchor/>
               <ptr/>
               <hi>66</hi>
-            </ref>
-          </p>
+            </ref></p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST</speaker>
           <stage>
             <hi>bei Seite.</hi>
           </stage>
-          <l> Das ist zu arg.</l>
+          <p>Das ist zu arg.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON</speaker>
           <stage>
             <hi>der sich nicht länger zu halten vermag.</hi>
           </stage>
-          <p> Vetter, ich weiß nicht, ob der Witz Wohlgefallen an dir hat; aber das weiß ich, daß
-            Sr. Durchlaucht, ich, deine Mutter und wir alle ein großes Mißfallen an dir haben.</p>
+          <p>Vetter, ich weiß nicht, ob der Witz Wohlgefallen an dir hat; aber das weiß ich, daß Sr.
+            Durchlaucht, ich, deine Mutter und wir alle ein großes Mißfallen an dir haben.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <p> Gelassen, lieber Baron. Diese Zuversichtlichkeit gründet sich vielleicht auf ein sehr
+          <p>Gelassen, lieber Baron. Diese Zuversichtlichkeit gründet sich vielleicht auf ein sehr
             ausgezeichnetes Verdienst, und dann ist sie schon verzeihlich. Lassen Sie doch hören,
             junger Herr, worauf haben Sie sich am meisten applicirt?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Auf das Philosophiren, <hi>das heißt, die </hi>
-            <hi>Allwissenheit gemeinschaftlich </hi>
-            <hi>suchen</hi>
-            <ref><anchor/><ptr/><hi>67</hi></ref>.</l>
+          <p>Auf das Philosophiren, <hi>das heißt, die Allwissenheit gemeinschaftlich suchen</hi>
+            <ref><anchor/><ptr/><hi>67</hi></ref>.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Die Allwissenheit? das ist wieder ein wenig stark. Haben Sie die Rechte studirt?</l>
+          <p>Die Allwissenheit? das ist wieder ein wenig stark. Haben Sie die Rechte studirt?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Nein.</l>
+          <p>Nein.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Vielleicht waren sie Ihnen zu trocken? Es gibt doch aber auch philosophische
-            Juristen.</l>
+          <p>Vielleicht waren sie Ihnen zu trocken? Es gibt doch aber auch philosophische
+            Juristen.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>So nennen sich solche, die </hi><hi>neben ihren <pb n="197"/> andern Rechten, die
-              </hi><hi>oft so unrechtlich sind, auch ein </hi><hi>Naturrecht haben, welches nicht
-              </hi><hi>selten noch unrechtlicher ist</hi><ref><anchor/><ptr/><hi>68</hi></ref>.</p>
+          <p><hi>So nennen sich solche, die neben ihren <pb n="197"/> andern Rechten, die oft so
+              unrechtlich sind, auch ein Naturrecht haben, welches nicht selten noch unrechtlicher
+              ist</hi><ref><anchor/><ptr/><hi>68</hi></ref>.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Hart abgesprochen. Sind Sie mit der Geschichte vertraut?</l>
+          <p>Hart abgesprochen. Sind Sie mit der Geschichte vertraut?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Der Historiker ist ein rück</hi><hi>wärts gekehrter
-                Prophet</hi><ref><anchor/><ptr/><hi>69</hi></ref>.</l>
+          <p><hi>Der Historiker ist ein rückwärts gekehrter
+                Prophet</hi><ref><anchor/><ptr/><hi>69</hi></ref>.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Ich liebe die Geschichte.</l>
+          <p>Ich liebe die Geschichte.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Der historische Styl muß vor</hi><hi>nehm sein durch nackte Gediegen</hi><hi>heit,
-              erhabene Eil und großartige
-              </hi><hi>Fröhlichkeit</hi><ref><anchor/><ptr/><hi>70</hi></ref>.</p>
+          <p><hi>Der historische Styl muß vornehm sein durch nackte Gediegenheit, erhabene Eil und
+              großartige Fröhlichkeit</hi><ref><anchor/><ptr/><hi>70</hi></ref>.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Welch' ein Bombast von Worten! Haben Sie sich vielleicht der Staatsverwaltung
-            gewidmet?</l>
+          <p>Welch' ein Bombast von Worten! Haben Sie sich vielleicht der Staatsverwaltung
+            gewidmet?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Wenn nur nicht in den Hand</hi><hi>lungen der gesetzgebenden, aus</hi><hi>übenden
-              oder richterlichen Ge</hi><hi>walt oft etwas willkürliches vor</hi><hi>käme, wozu sie
-              für sich nicht be</hi><hi>rechtigt
-            scheinen</hi><ref><anchor/><ptr/><hi>71</hi></ref>.</p>
+          <p><hi>Wenn nur nicht in den Handlungen der gesetzgebenden, ausübenden oder richterlichen
+              Gewalt oft etwas willkürliches vorkäme, wozu sie für sich nicht berechtigt
+              scheinen</hi><ref><anchor/><ptr/><hi>71</hi></ref>.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Was wäre dabei zu thun?</l>
+          <p>Was wäre dabei zu thun?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l>
-            <hi>Ist die Befugniß dazu nicht </hi>
-            <hi>etwa von der konstitutiven Ge</hi>
-            <hi>walt entlehnt?</hi>
+          <p>
+            <hi>Ist die Befugniß dazu nicht etwa von der konstitutiven Gewalt entlehnt?</hi>
             <ref>
               <anchor/>
               <ptr/>
               <hi>72</hi>
-            </ref>
-          </l>
+            </ref></p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Kann sein.</l>
+          <p>Kann sein.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l>
-            <hi>Die daher nothwendig auch </hi>
-            <hi>ein Veto haben müßte?</hi>
+          <p>
+            <hi>Die daher nothwendig auch ein Veto haben müßte?</hi>
             <ref>
               <anchor/>
               <ptr/>
               <hi>73</hi>
-            </ref>
-          </l>
+            </ref></p>
           <pb n="198"/>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <p> Jetzt merke ich, wo Sie hinaus wollen, und rathe Ihnen wohlmeinend, sich mit der
+          <p>Jetzt merke ich, wo Sie hinaus wollen, und rathe Ihnen wohlmeinend, sich mit der
             Staatsverwaltung nicht zu befassen; wenigstens nicht in meinem Lande, wo Ruhe und
             Sittlichkeit herrschen.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p> Sittlichkeit? das glaube ich kaum. <hi>Denn </hi>
-            <hi>die erste Regung der Sittlichkeit </hi>
-            <hi>ist Opposition gegen die positive </hi>
-            <hi>Gesetzlichkeit und konvenzionel</hi>
-            <hi>le Rechtlichkeit.</hi>
-            <ref><anchor/><ptr/><hi>74</hi></ref>
-          </p>
+          <p>Sittlichkeit? das glaube ich kaum. <hi>Denn die erste Regung der Sittlichkeit ist
+              Opposition gegen die positive Gesetzlichkeit und konvenzionelle Rechtlichkeit.</hi>
+            <ref><anchor/><ptr/><hi>74</hi></ref></p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Das schmeckt sehr nach den neuern alles zerstörenden Grundsätzen.</l>
+          <p>Das schmeckt sehr nach den neuern alles zerstörenden Grundsätzen.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Es ist natürlich, daß die </hi><hi>Franzosen dominiren, denn sie </hi><hi>sind eine
-              chemische Nation; das </hi><hi>Zeitalter ist gleichfalls ein che</hi><hi>misches
-              Zeitalter</hi><ref><anchor/><ptr/><hi>75</hi></ref>.</p>
+          <p><hi>Es ist natürlich, daß die Franzosen dominiren, denn sie sind eine chemische Nation;
+              das Zeitalter ist gleichfalls ein chemisches
+                Zeitalter</hi><ref><anchor/><ptr/><hi>75</hi></ref>.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Immer besser.</l>
+          <p>Immer besser.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
           <p>
-            <hi>Die französische Revolution, </hi>
-            <hi>Fichtes Wissenschaftslehre und </hi>
-            <hi>Goethes Meister sind die größten </hi>
-            <hi>Tendenzen des Zeitalters.</hi>
-          </p>
+            <hi>Die französische Revolution, Fichtes Wissenschaftslehre und Goethes Meister sind die
+              größten Tendenzen des Zeitalters.</hi></p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Nun habe ich genug. Aber noch immer weiß ich nicht, was Sie eigentlich gelernt
-            haben?</l>
+          <p>Nun habe ich genug. Aber noch immer weiß ich nicht, was Sie eigentlich gelernt
+            haben?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Ich verstehe mich auf die Kunst. Ich weiß, <hi>wie Diderot Gemälde musicirt</hi>
-            <ref><anchor/><ptr/><hi>76</hi></ref>.</l>
+          <p>Ich verstehe mich auf die Kunst. Ich weiß, <hi>wie Diderot Gemälde musicirt</hi>
+            <ref><anchor/><ptr/><hi>76</hi></ref>.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST</speaker>
           <stage>
             <hi>lächelnd.</hi>
           </stage>
-          <l> Weiter.</l>
+          <p>Weiter.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>Ich trage einen Theorieneier</hi><hi>stock im Gehirn, und lege täglich </hi><hi>wie
-              eine Henne meine Theorie</hi><ref><anchor/><ptr/><hi>77</hi></ref>.</l>
+          <p><hi>Ich trage einen Theorieneierstock im Gehirn, und lege täglich wie eine Henne meine
+              Theorie</hi><ref><anchor/><ptr/><hi>77</hi></ref>.</p>
           <pb n="199"/>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST</speaker>
           <stage>
             <hi>ein wenig ungeduldig.</hi>
           </stage>
-          <l> Aber welches Amt wären Sie im Stande zu verwalten?</l>
+          <p>Aber welches Amt wären Sie im Stande zu verwalten?</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Ich wünsche blos <hi>liberal</hi> zu sein.</l>
+          <p>Ich wünsche blos <hi>liberal</hi> zu sein.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Liberal? ich kenne kein solches Amt.</l>
+          <p>Liberal? ich kenne kein solches Amt.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Liberal ist, wer von allen </hi><hi>Seiten und nach allen Richtungen </hi><hi>wie
-              von selbst frei ist, und in </hi><hi>seiner ganzen Menschheit
-                </hi><hi>wirkt</hi><ref><anchor/><ptr/><hi>78</hi></ref>.</p>
+          <p><hi>Liberal ist, wer von allen Seiten und nach allen Richtungen wie von selbst frei
+              ist, und in seiner ganzen Menschheit
+            wirkt</hi><ref><anchor/><ptr/><hi>78</hi></ref>.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <p> Armer Schwärmer! das kann niemand, so lange er ein Mitglied der Gesellschaft ist,
+          <p>Armer Schwärmer! das kann niemand, so lange er ein Mitglied der Gesellschaft ist,
             welche Fleiß und Nutzen von ihm fordert.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Fleiß und Nutzen sind die To</hi><hi>desengel mit dem feurigen </hi><hi>Schwerte,
-              welche dem Menschen </hi><hi>die Rückkehr in's Paradies
-                ver</hi><hi>wehren</hi><ref><anchor/><ptr/><hi>79</hi></ref>.</p>
+          <p><hi>Fleiß und Nutzen sind die Todesengel mit dem feurigen Schwerte, welche dem Menschen
+              die Rückkehr in's Paradies verwehren</hi><ref><anchor/><ptr/><hi>79</hi></ref>.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Himmel, welche ungeheure Behauptung!</l>
+          <p>Himmel, welche ungeheure Behauptung!</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l> Kennen Sie, mein Fürst, <hi>die Gott ähn</hi>
-            <hi>liche Faulheit?</hi>
-            <ref><anchor/><ptr/><hi>80</hi></ref>
-          </l>
+          <p>Kennen Sie, mein Fürst, <hi>die Gott ähnliche Faulheit?</hi>
+            <ref><anchor/><ptr/><hi>80</hi></ref></p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Dem Himmel sei Dank, nein!</l>
+          <p>Dem Himmel sei Dank, nein!</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l><hi>O, Müssiggang! Müssiggang! </hi><hi>du bist die Lebensluft der Un</hi><hi>schuld
-              und der Begeisterung</hi><ref><anchor/><ptr/><hi>81</hi></ref>.</l>
+          <p><hi>O, Müssiggang! Müssiggang! du bist die Lebensluft der Unschuld und der
+              Begeisterung</hi><ref><anchor/><ptr/><hi>81</hi></ref>.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Aber nicht die Lebensluft meiner Staaten.</l>
+          <p>Aber nicht die Lebensluft meiner Staaten.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l>
-            <hi>Dich athmen die Seligen und </hi>
-            <hi>selig ist, wer dich hat und hegt, </hi>
-            <hi>du heiliges Kleinod!</hi>
-          </l>
+          <p>
+            <hi>Dich athmen die Seligen und selig ist, wer dich hat und hegt, du heiliges
+              Kleinod!</hi></p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Bei diesem Kleinod würden meine Unterthanen verhungern.</l>
+          <p>Bei diesem Kleinod würden meine Unterthanen verhungern.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <l>
-            <hi>Einziges Fragment von Gott</hi>
-            <hi>ähnlichkeit, das uns noch aus dem </hi>
-            <hi>Paradiese blieb!</hi>
-          </l>
+          <p>
+            <hi>Einziges Fragment von Gottähnlichkeit, das uns noch aus dem Paradiese
+            blieb!</hi></p>
           <pb n="200"/>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST</speaker>
           <stage>
             <hi>sich zu den übrigen wendend.</hi>
           </stage>
-          <l> Sie sehen, mit diesem jungen Menschen läßt sich nichts anfangen.</l>
+          <p>Sie sehen, mit diesem jungen Menschen läßt sich nichts anfangen.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON</speaker>
           <stage>
             <hi>mit Bitterkeit und verbissenem Grimm.</hi>
           </stage>
-          <l> Allenfalls könnten Ew. Durchlaucht einen Professor der Aesthetik aus ihm machen.</l>
+          <p>Allenfalls könnten Ew. Durchlaucht einen Professor der Aesthetik aus ihm machen.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <p> Ich hatte den besten Willen ihm nützlich zu werden, aber er ist der größte moralische
+          <p>Ich hatte den besten Willen ihm nützlich zu werden, aber er ist der größte moralische
             Vagabund, der mir jemals vorgekommen ist. Er weiß nichts von Pflichten gegen Gott, den
             Staat und seine Mitbürger.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p><hi>Aus dem Unterschied, den man </hi><hi>zwischen Pflichten macht, entste</hi><hi>hen
-              die Fantome von Hingebung, </hi><hi>Aufopferung, Großmuth, und was </hi><hi>alles für
-              moralisches Unheil</hi><ref><anchor/><ptr/><hi>82</hi></ref>.</p>
+          <p><hi>Aus dem Unterschied, den man zwischen Pflichten macht, entstehen die Fantome von
+              Hingebung, Aufopferung, Großmuth, und was alles für moralisches
+                Unheil</hi><ref><anchor/><ptr/><hi>82</hi></ref>.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Da hören Sie es. Aufopferung und Großmuth nennt er Fantome, moralisches Unheil.</l>
+          <p>Da hören Sie es. Aufopferung und Großmuth nennt er Fantome, moralisches Unheil.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
           <p>
-            <hi>Ich gebe mich selbst wie ein </hi>
-            <hi>Kunstwerk, welches, im Freien </hi>
-            <hi>ausgestellt, jedermann den Zutritt </hi>
-            <hi>verstattet, und doch nur von </hi>
-            <hi>denen genossen und verstanden </hi>
-            <hi>wird, die Sinn und Studium mit</hi>
-            <hi>bringen</hi>
+            <hi>Ich gebe mich selbst wie ein Kunstwerk, welches, im Freien ausgestellt, jedermann
+              den Zutritt verstattet, und doch nur von denen genossen und verstanden wird, die Sinn
+              und Studium mitbringen</hi>
             <ref>
               <anchor/>
               <ptr/>
               <hi>83</hi>
-            </ref>
-          </p>
+            </ref></p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <p> Sehr wohl, junger Herr, diesen Sinn und Studium habe ich freilich nicht, und alles,
-            was mir zu Ihrer Entschuldigung übrig bleibt, ist der menschenfreundliche Glaube, daß
-            Sie verrückt sind.</p>
+          <p>Sehr wohl, junger Herr, diesen Sinn und Studium habe ich freilich nicht, und alles, was
+            mir zu Ihrer Entschuldigung übrig bleibt, ist der menschenfreundliche Glaube, daß Sie
+            verrückt sind.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
           <p>
-            <hi>Es wird mir immer klarer und </hi>
-            <hi>fester, daß vollendete Narrheit </hi>
-            <hi>und Dummheit im <pb n="201"/> Großen, das ei</hi>
-            <hi>gentliche Vorrecht der Männer </hi>
-            <hi>sei<ref><anchor/><ptr/><hi>84</hi></ref>.</hi>
-          </p>
+            <hi>Es wird mir immer klarer und fester, daß vollendete Narrheit und Dummheit im <pb
+                n="201"/> Großen, das eigentliche Vorrecht der Männer
+                  sei<ref><anchor/><ptr/><hi>84</hi></ref>.</hi></p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Wirklich mißbrauchen Sie dieses Vorrecht ein wenig.</l>
+          <p>Wirklich mißbrauchen Sie dieses Vorrecht ein wenig.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL.</speaker>
-          <p> Mein Fürst, sagen und glauben Sie was Sie wollen. <hi>Es gibt unvermeidliche </hi>
-            <hi>Lagen und Verhältnisse, die man </hi>
-            <hi>nur dadurch liberal behandeln </hi>
-            <hi>kann, daß man sie durch einen </hi>
-            <hi>kühnen Act der Willkür verwan</hi>
-            <hi>delt, und durchaus als Poesie be</hi>
-            <hi>trachtet</hi>
+          <p>Mein Fürst, sagen und glauben Sie was Sie wollen. <hi>Es gibt unvermeidliche Lagen und
+              Verhältnisse, die man nur dadurch liberal behandeln kann, daß man sie durch einen
+              kühnen Act der Willkür verwandelt, und durchaus als Poesie betrachtet</hi>
             <ref><anchor/><ptr/><hi>85</hi></ref>.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <p> Junger Herr, ich schicke Sie einstweilen in's Tollhaus, und bitte Sie, dieses
-            Tollhaus, Kraft Ihrer kühnen Willkür, als Poesie zu betrachten.</p>
+          <p>Junger Herr, ich schicke Sie einstweilen in's Tollhaus, und bitte Sie, dieses Tollhaus,
+            Kraft Ihrer kühnen Willkür, als Poesie zu betrachten.</p>
         </sp>
         <sp who="#karl">
           <speaker>KARL</speaker>
           <stage>
             <hi>indem er stolz abgeht.</hi>
           </stage>
-          <p><hi>Das Leben des </hi><hi>universellen Geistes ist eine un</hi><hi>unterbrochene Kette
-              innerer Re</hi><hi>volutionen, alle Individuen, die </hi><hi>ursprünglichen ewigen
-              nämlich, </hi><hi>leben in ihm. Er ist echter Poly</hi><hi>theist und trägt den ganzen
-              </hi><hi>Olymp in sich</hi><ref><anchor/><ptr/><hi>86</hi></ref>. <hi>Ab.</hi></p>
+          <p><hi>Das Leben des universellen Geistes ist eine ununterbrochene Kette innerer
+              Revolutionen, alle Individuen, die ursprünglichen ewigen nämlich, leben in ihm. Er ist
+              echter Polytheist und trägt den ganzen Olymp in
+                sich</hi><ref><anchor/><ptr/><hi>86</hi></ref>. <hi>Ab.</hi></p>
         </sp>
       </div>
       <div type="scene">
@@ -2059,9 +1951,9 @@
         <stage>
           <hi>Die Vorigen ohne Karl.</hi>
         </stage>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <p> Das ist also unsere heutige Bildung? Impertinente Anmaßung, hochtrabender Unsinn, und
+          <p>Das ist also unsere heutige Bildung? Impertinente Anmaßung, hochtrabender Unsinn, und
             gänzliche Mutlosigkeit.</p>
           <pb n="202"/>
         </sp>
@@ -2070,40 +1962,39 @@
           <stage>
             <hi>bei Seite.</hi>
           </stage>
-          <l> Ich möchte bersten!</l>
+          <p>Ich möchte bersten!</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <p> Wenn diese Pest um sich greift, was soll aus der menschlichen Gesellschaft werden! –
+          <p>Wenn diese Pest um sich greift, was soll aus der menschlichen Gesellschaft werden! –
             Weinen Sie nicht, Madame. Er verdient Ihr Mitleid, nicht Ihren Zorn. Ein paar Jahre im
             Tollhause werden ihn schon zur Vernunft bringen. – <hi>Zu Hans.</hi> Nun, mein lieber
             junger Freund, Sie sagen gar nichts zu dem Allen?</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <l> Ich, Ew. Durchlaucht? ich habe auch gar nichts davon verstanden.</l>
+          <p>Ich, Ew. Durchlaucht? ich habe auch gar nichts davon verstanden.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Desto besser für Sie.</l>
+          <p>Desto besser für Sie.</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <p> Ach nein, gnädigster Herr. Wenn ich Alles verstanden hätte, so würde ich vielleicht
+          <p>Ach nein, gnädigster Herr. Wenn ich Alles verstanden hätte, so würde ich vielleicht
             meinen Bruder zu vertheidigen wissen.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <l> Schwerlich. Auch gehört das nicht in Ihr Departement, Herr Oberforstmeister.</l>
+          <p>Schwerlich. Auch gehört das nicht in Ihr Departement, Herr Oberforstmeister.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Oberforstmeister? Wie? <hi>Alle stutzen.</hi>
-          </l>
+          <p>Oberforstmeister? Wie? <hi>Alle stutzen.</hi></p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <p> Sie stutzen? kann ich denn weniger für einen Mann thun, der mir diesen Morgen
+          <p>Sie stutzen? kann ich denn weniger für einen Mann thun, der mir diesen Morgen
             vielleicht das Leben gerettet hat?</p>
         </sp>
         <sp who="#hans">
@@ -2111,15 +2002,15 @@
           <stage>
             <hi>ganz verblüfft.</hi>
           </stage>
-          <l> Ew. Durchlaucht –</l>
+          <p>Ew. Durchlaucht –</p>
         </sp>
         <sp who="#frau_von_berg">
           <speaker>FRAU VON BERG.</speaker>
-          <l> Gnädigster Fürst –</l>
+          <p>Gnädigster Fürst –</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <p> Keinen Dank. Ich will das nicht. Es war längst mein Vorsatz, in Einem Ihrer Söhne die
+          <p>Keinen Dank. Ich will das nicht. Es war längst mein Vorsatz, in Einem Ihrer Söhne die
             Verdienste seiner Vorfahren zu belohnen. Der Zufall im Wald macht mir diese Belohnung
             jetzt zur persönlichen Pflicht.</p>
         </sp>
@@ -2128,18 +2019,18 @@
           <stage>
             <hi>Hans umarmend.</hi>
           </stage>
-          <p> Gott! so warst du mir zum Versorger erkohren! du, an dem ich mich oft durch
+          <p>Gott! so warst du mir zum Versorger erkohren! du, an dem ich mich oft durch
             Geringschätzung versündigt habe!</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <p> Es geschieht nicht selten, Madam, daß Eltern den simpeln, aber nützlichen Menschen
+          <p>Es geschieht nicht selten, Madam, daß Eltern den simpeln, aber nützlichen Menschen
             vernachlässigen, und <pb n="203"/> den Feuerkopf zum Liebling wählen, der Alles
             durcheinander wirft, aber nichts wieder in Ordnung stellt.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <p> Gnädigster Herr – ich bin so bewegt – komm' her, Vetter – laß dich an mein Herz
+          <p>Gnädigster Herr – ich bin so bewegt – komm' her, Vetter – laß dich an mein Herz
             drücken! Auch ich habe dir abzubitten. Ja, du bist ein wackerer Mensch, und ein guter
             Oberforstmeister. Du verstehst Wälder anzupflanzen, die einst unsern Nachkommen Schatten
             und Wärme geben werden; jener Bube versteht nur Alles auszuwurzeln, was unsern Vorfahren
@@ -2147,54 +2038,54 @@
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <l> Mein Gott, ich habe nichts gethan, und Sie loben mich Alle.</l>
+          <p>Mein Gott, ich habe nichts gethan, und Sie loben mich Alle.</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Weil du ein löblicher Mensch bist. Ja, Hans, du sollst mein Erbe werden, mein
-            Schwiegersohn.</l>
+          <p>Weil du ein löblicher Mensch bist. Ja, Hans, du sollst mein Erbe werden, mein
+            Schwiegersohn.</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <l> Oheim! – um Gotteswillen! ist das Ernst?</l>
+          <p>Oheim! – um Gotteswillen! ist das Ernst?</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Ernst, Herr Oberforstmeister.</l>
+          <p>Ernst, Herr Oberforstmeister.</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS.</speaker>
-          <l> Wird Malchen wollen?</l>
+          <p>Wird Malchen wollen?</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Den Hals drehe ich ihr um, wenn sie noch an dem Tollhäusler hängt.</l>
+          <p>Den Hals drehe ich ihr um, wenn sie noch an dem Tollhäusler hängt.</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS</speaker>
           <stage>
             <hi>ängstlich zu Malchen.</hi>
           </stage>
-          <l> Cousine – Schwester –</l>
+          <p>Cousine – Schwester –</p>
         </sp>
         <sp who="#malchen">
           <speaker>MALCHEN.</speaker>
-          <l> Nichts mehr davon – <hi>Sie reicht ihm freundlich die Hand.</hi> Dein Weib.</l>
+          <p>Nichts mehr davon – <hi>Sie reicht ihm freundlich die Hand.</hi> Dein Weib.</p>
         </sp>
         <sp who="#hans">
           <speaker>HANS</speaker>
           <stage>
             <hi>an ihre Brust sinkend.</hi>
           </stage>
-          <l> Ach! das verdien' ich nicht!</l>
+          <p>Ach! das verdien' ich nicht!</p>
         </sp>
         <sp who="#baron">
           <speaker>BARON.</speaker>
-          <l> Verzeihen Ew. Durchlaucht, es ist wider den Respekt.</l>
+          <p>Verzeihen Ew. Durchlaucht, es ist wider den Respekt.</p>
         </sp>
-        <sp who="#fürst">
+        <sp who="#fuerst">
           <speaker>FÜRST.</speaker>
-          <p> Was? – doch wohl nicht diese Scene? – Was könnte einem Fürsten willkomm'ner sein, als
+          <p>Was? – doch wohl nicht diese Scene? – Was könnte einem Fürsten willkomm'ner sein, als
             das häusliche Glück seiner Unterthanen!</p>
           <stage>
             <hi>Der Vorhang fällt.</hi>
@@ -2248,13 +2139,11 @@
           <p><anchor/><ref>14</ref><hi>ibid. pag.</hi> 7.</p>
         </note>
         <note>
-          <p><anchor/><ref>15</ref> ibid pag. 5. <hi>seq.</hi>
-          </p>
+          <p><anchor/><ref>15</ref> ibid pag. 5. <hi>seq.</hi></p>
         </note>
         <note>
           <p><anchor/><ref>16</ref><hi>Belle et bonne,</hi> man kennt den französischen Ausdruck, so
-            viel wie <hi>derb.</hi>
-          </p>
+            viel wie <hi>derb.</hi></p>
         </note>
         <note>
           <p><anchor/><ref>17</ref> Fragmente <hi>pag.</hi> 130.</p>
