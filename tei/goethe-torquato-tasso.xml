@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Torquato Tasso</title>
+        <title type="main">Torquato Tasso</title>
+        <title type="sub">Ein Schauspiel</title>
         <author key="pnd:118540238">Goethe, Johann Wolfgang</author>
       </titleStmt>
       <publicationStmt>
@@ -43,20 +44,20 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="prinzessin">
-            <persName>PRINZESSIN</persName>
+          <person xml:id="prinzessin" sex="FEMALE">
+            <persName>Prinzessin</persName>
           </person>
-          <person xml:id="leonore">
-            <persName>LEONORE</persName>
+          <person xml:id="leonore" sex="FEMALE">
+            <persName>Leonore</persName>
           </person>
-          <person xml:id="alfons">
-            <persName>ALFONS</persName>
+          <person xml:id="alfons" sex="MALE">
+            <persName>Alfons</persName>
           </person>
-          <person xml:id="tasso">
-            <persName>TASSO</persName>
+          <person xml:id="tasso" sex="MALE">
+            <persName>Tasso</persName>
           </person>
-          <person xml:id="antonio">
-            <persName>ANTONIO</persName>
+          <person xml:id="antonio" sex="MALE">
+            <persName>Antonio</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -71,6 +72,7 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
+        <change who="#ff" when="2018-03-20">formalities; add gender info</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -82,8 +84,6 @@
         <head>Ein Schauspiel</head>
         <pb n="73"/>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head>Personen.</head>
@@ -94,14 +94,17 @@
           <castItem>Antonio Montecatino, Staatssekretär</castItem>
         </castList>
       </div>
+      <set>
+        <p>Der Schauplatz ist auf Belriguardo, einem Lustschlosse.</p>
+      </set>
+    </front>
+    <body>
       <div type="act">
-        <head>1. Akt</head>
+        <head>Erster Aufzug</head>
         <div type="scene">
           <head>Erster Auftritt</head>
-          <stage>
-            <hi>Gartenplatz, mit Hermen der epischen Dichter geziert. Vorn an der Szene zur Rechten
-              Virgil, zur Linken Ariost. Prinzessin. Leonore.</hi>
-          </stage>
+          <stage>Gartenplatz, mit Hermen der epischen Dichter geziert. Vorn an der Szene zur Rechten
+            Virgil, zur Linken Ariost. Prinzessin. Leonore.</stage>
           <sp who="#prinzessin">
             <speaker>PRINZESSIN.</speaker>
             <lg>
@@ -131,9 +134,7 @@
               <l>Sie haben gleich ein würdig Haupt gefunden,</l>
               <l>Ich setze sie Virgilen dankbar auf.</l>
             </lg>
-            <stage>
-              <hi>Sie kränzt die Herme Virgils.</hi>
-            </stage>
+            <stage>Sie kränzt die Herme Virgils.</stage>
             <pb n="73"/>
           </sp>
           <sp who="#leonore">
@@ -142,9 +143,7 @@
               <l>So drück ich meinen vollen frohen Kranz</l>
               <l>Dem Meister Ludwig auf die hohe Stirne –</l>
             </lg>
-            <stage>
-              <hi>Sie kränzt Ariostens Herme.</hi>
-            </stage>
+            <stage>Sie kränzt Ariostens Herme.</stage>
             <lg>
               <l>Er, dessen Scherze nie verblühen, habe</l>
               <l>Gleich von dem neuen Frühling seinen Teil.</l>
@@ -487,9 +486,7 @@
         </div>
         <div type="scene">
           <head>Zweiter Auftritt</head>
-          <stage>
-            <hi>Die Vorigen. Alfons.</hi>
-          </stage>
+          <stage>Die Vorigen. Alfons.</stage>
           <sp who="#alfons">
             <speaker>ALFONS.</speaker>
             <lg>
@@ -532,7 +529,7 @@
           <sp who="#alfons">
             <speaker>ALFONS.</speaker>
             <lg>
-              <l>Er soll willkommen sein <hi>wenn</hi> er es bringt</l>
+              <l>Er soll willkommen sein <emph>wenn</emph> er es bringt</l>
               <l>Und losgesprochen sein auf lange Zeit.</l>
               <l>So sehr ich teil an seiner Arbeit nehme,</l>
               <l>So sehr in manchem Sinn das große Werk</l>
@@ -711,9 +708,7 @@
           </sp>
           <sp who="#prinzessin">
             <speaker>PRINZESSIN</speaker>
-            <stage>
-              <hi>nach der Szene gekehrt.</hi>
-            </stage>
+            <stage>nach der Szene gekehrt.</stage>
             <lg>
               <l>Schon lange seh ich Tasso kommen. Langsam</l>
               <l>Bewegt er seine Schritte, steht bisweilen</l>
@@ -736,14 +731,10 @@
         </div>
         <div type="scene">
           <head>Dritter Auftritt</head>
-          <stage>
-            <hi>Die Vorigen. Tasso.</hi>
-          </stage>
+          <stage>Die Vorigen. Tasso.</stage>
           <sp who="#tasso">
             <speaker>TASSO</speaker>
-            <stage>
-              <hi>mit einem Buche in Pergament geheftet.</hi>
-            </stage>
+            <stage>mit einem Buche in Pergament geheftet.</stage>
             <lg>
               <l>Ich komme langsam dir ein Werk zu bringen,</l>
               <l>Und zaudre noch es dir zu überreichen.</l>
@@ -757,9 +748,7 @@
               <l><pb n="83"/> Daß Freunde seiner schonend sich erfreuen:</l>
               <l>So kann ich auch nur sagen: Nimm es hin!</l>
             </lg>
-            <stage>
-              <hi>Er übergibt den Band.</hi>
-            </stage>
+            <stage>Er übergibt den Band.</stage>
           </sp>
           <sp who="#alfons">
             <speaker>ALFONS.</speaker>
@@ -801,7 +790,7 @@
               <l>Mir Freiheit gab, daß meine Seele sich</l>
               <l>Zu mutigem Gesang entfalten konnte;</l>
               <l>Und welchen Preis nun auch mein Werk erhält,</l>
-              <l>Euch dank ich ihn, denn <hi>euch</hi> gehört es zu.</l>
+              <l>Euch dank ich ihn, denn <emph>euch</emph> gehört es zu.</l>
             </lg>
           </sp>
           <sp who="#alfons">
@@ -815,7 +804,7 @@
             <speaker>TASSO.</speaker>
             <lg>
               <l>O könnt ich sagen wie ich lebhaft fühle</l>
-              <l><pb n="84"/> Daß ich von <hi>euch</hi> nur habe was ich bringe!</l>
+              <l><pb n="84"/> Daß ich von <emph>euch</emph> nur habe was ich bringe!</l>
               <l>Der tatenlose Jüngling – nahm er wohl</l>
               <l>Die Dichtung aus sich selbst? Die kluge Leitung</l>
               <l>Des raschen Krieges – hat er die ersonnen?</l>
@@ -857,7 +846,7 @@
               <l>Hier spricht Erfahrung, Wissenschaft, Geschmack,</l>
               <l>Ja, Welt und Nachwelt seh ich vor mir stehn.</l>
               <l>Die Menge macht den Künstler irr und scheu:</l>
-              <l>Nur wer <hi>euch</hi> ähnlich ist, versteht und fühlt,</l>
+              <l>Nur wer <emph>euch</emph> ähnlich ist, versteht und fühlt,</l>
               <l>Nur der allein soll richten und belohnen!</l>
             </lg>
           </sp>
@@ -871,9 +860,7 @@
               <l>Ihm ohne Neid ums Haupt gewunden sieht,</l>
               <l>Erblick ich hier auf deines Ahnherrn Stirne.</l>
             </lg>
-            <stage>
-              <hi>Auf die Herme Virgils deutend.</hi>
-            </stage>
+            <stage>Auf die Herme Virgils deutend.</stage>
             <lg>
               <l>Hat es der Zufall, hat's ein Genius</l>
               <l>Geflochten und gebracht? Es zeigt sich hier</l>
@@ -885,10 +872,8 @@
               <l>Mein Marmorbild ist schon bekränzt genug,</l>
               <l>Der grüne Zweig gehört dem Leben an.</l>
             </lg>
-            <stage>
-              <hi>Alfons winkt seiner Schwester, sie nimmt den Kranz von der Büste Virgils und
-                nähert sich Tasso. Er tritt zurück.</hi>
-            </stage>
+            <stage>Alfons winkt seiner Schwester, sie nimmt den Kranz von der Büste Virgils und
+              nähert sich Tasso. Er tritt zurück.</stage>
           </sp>
           <sp who="#leonore">
             <speaker>LEONORE.</speaker>
@@ -913,9 +898,7 @@
           </sp>
           <sp who="#prinzessin">
             <speaker>PRINZESSIN</speaker>
-            <stage>
-              <hi>indem sie den Kranz in die Höhe hält.</hi>
-            </stage>
+            <stage>indem sie den Kranz in die Höhe hält.</stage>
             <lg>
               <l>Du gönnest mir die seltne Freude, Tasso,</l>
               <l>Dir ohne Wort zu sagen wie ich denke.</l>
@@ -927,22 +910,16 @@
               <l>Die schöne Last aus deinen teuren Händen</l>
               <l>Empfang ich knieend auf mein schwaches Haupt.</l>
             </lg>
-            <stage>
-              <hi>Er kniet nieder, die Prinzessin setzt ihm den Kranz auf.</hi>
-            </stage>
+            <stage>Er kniet nieder, die Prinzessin setzt ihm den Kranz auf.</stage>
           </sp>
           <sp who="#leonore">
             <speaker>LEONORE</speaker>
-            <stage>
-              <hi>applaudierend.</hi>
-            </stage>
+            <stage>applaudierend.</stage>
             <lg>
               <l>Es lebe der zum erstenmal Bekränzte!</l>
               <l>Wie zieret den bescheidnen Mann der Kranz!</l>
             </lg>
-            <stage>
-              <hi>Tasso steht auf.</hi>
-            </stage>
+            <stage>Tasso steht auf.</stage>
           </sp>
           <sp who="#alfons">
             <speaker>ALFONS.</speaker>
@@ -1083,9 +1060,7 @@
               <l>Ich freue mich, wenn du mit Geistern redest,</l>
               <l>Daß du so menschlich sprichst und hör es gern.</l>
             </lg>
-            <stage>
-              <hi>Ein Page tritt zu dem Fürsten und richtet leise etwas aus.</hi>
-            </stage>
+            <stage>Ein Page tritt zu dem Fürsten und richtet leise etwas aus.</stage>
           </sp>
           <sp who="#alfons">
             <speaker>ALFONS.</speaker>
@@ -1097,9 +1072,7 @@
         </div>
         <div type="scene">
           <head>Vierter Auftritt</head>
-          <stage>
-            <hi>Die Vorigen. Antonio.</hi>
-          </stage>
+          <stage>Die Vorigen. Antonio.</stage>
           <sp who="#alfons">
             <speaker>ALFONS.</speaker>
             <lg>
@@ -1165,7 +1138,7 @@
               <l>An deinen eignen Zweck dich führen soll.</l>
               <l>Wer seines Herren Vorteil rein bedenkt,</l>
               <l>Der hat in Rom gar einen schweren Stand:</l>
-              <l>Denn Rom will <hi>alles</hi> nehmen, geben <hi>nichts</hi>;</l>
+              <l>Denn Rom will <emph>alles</emph> nehmen, geben <emph>nichts</emph>;</l>
               <l>Und kommt man hin um etwas zu erhalten,</l>
               <l>Erhält man nichts, man bringe denn was hin,</l>
               <l>Und glücklich, wenn man da noch was erhält.</l>
@@ -1261,9 +1234,7 @@
           </sp>
           <sp who="#leonore">
             <speaker>LEONORE</speaker>
-            <stage>
-              <hi>zu Alfons.</hi>
-            </stage>
+            <stage>zu Alfons.</stage>
             <l>Du willst mich reizen, es gelingt dir nicht</l>
           </sp>
           <sp who="#alfons">
@@ -1276,9 +1247,7 @@
               <l>Nun gut, so bleib ich heut in deiner Schuld!</l>
               <l>Verzeih und störe meine Fragen nicht.</l>
             </lg>
-            <stage>
-              <hi>Zu Antonio.</hi>
-            </stage>
+            <stage>Zu Antonio.</stage>
             <l>Hat er für die Nipoten viel getan?</l>
           </sp>
           <sp who="#antonio">
@@ -1290,7 +1259,7 @@
               <l>Getadelt. Still und mäßig weiß Gregor</l>
               <l>Den Seinigen zu nutzen, die dem Staat</l>
               <l>Als wackre Männer dienen, und erfüllt</l>
-              <l>Mit <hi>einer</hi> Sorge zwei verwandte Pflichten.</l>
+              <l>Mit <emph>einer</emph> Sorge zwei verwandte Pflichten.</l>
             </lg>
           </sp>
           <sp who="#tasso">
@@ -1385,7 +1354,7 @@
             <speaker>ANTONIO.</speaker>
             <lg>
               <l>Er ist durch euch schon seines Ruhms gewiß.</l>
-              <l>Wer dürfte zweifeln, wo <hi>ihr</hi> preisen könnt?</l>
+              <l>Wer dürfte zweifeln, wo <emph>ihr</emph> preisen könnt?</l>
               <l>Doch sage mir, wer druckte diesen Kranz</l>
               <l>Auf Ariostens Stirne?</l>
             </lg>
@@ -1435,7 +1404,7 @@
           <sp who="#prinzessin">
             <speaker>PRINZESSIN.</speaker>
             <lg>
-              <l>Wer <hi>ein</hi> Verdienst so wohl zu schätzen weiß,</l>
+              <l>Wer <emph>ein</emph> Verdienst so wohl zu schätzen weiß,</l>
               <l>Der wird das andre nicht verkennen. Du</l>
               <l>Sollst uns dereinst in Tassos Liedern zeigen</l>
               <l>Was wir gefühlt und was nur du erkennst.</l>
@@ -1449,23 +1418,17 @@
               <l>Dann sollst du bis zum Untergang der Sonne</l>
               <l>Den Frauen angehören. Komm! Lebt wohl.</l>
             </lg>
-            <stage>
-              <hi>Dem Fürsten folgt Antonio, den Damen Tasso.</hi>
-            </stage>
+            <stage>Dem Fürsten folgt Antonio, den Damen Tasso.</stage>
             <pb n="93"/>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>2. Akt</head>
+        <head>Zweiter Aufzug</head>
         <div type="scene">
           <head>Erster Auftritt</head>
-          <stage>
-            <hi>Saal.</hi>
-          </stage>
-          <stage>
-            <hi>Prinzessin. Tasso.</hi>
-          </stage>
+          <stage>Saal.</stage>
+          <stage>Prinzessin. Tasso.</stage>
           <sp who="#tasso">
             <speaker>TASSO.</speaker>
             <lg>
@@ -1521,7 +1484,7 @@
               <l>Was mir noch jetzt die ganze Seele füllt,</l>
               <l>Es waren die Gestalten jener Welt,</l>
               <l>Die sich lebendig, rastlos, ungeheuer</l>
-              <l>Um <hi>einen</hi> großen, einzig klugen Mann</l>
+              <l>Um <emph>einen</emph> großen, einzig klugen Mann</l>
               <l>Gemessen dreht und ihren Lauf vollendet,</l>
               <l>Den ihr der Halbgott vorzuschreiben wagt.</l>
               <l>Begierig horcht ich auf, vernahm mit Lust</l>
@@ -1564,7 +1527,7 @@
               <l>Gedrängt die ersten Männer unsrer Zeit.</l>
               <l>Erstaunt durchlief der Blick die edle Menge;</l>
               <l>Man rief: sie alle hat das Vaterland,</l>
-              <l>Das <hi>eine</hi>, schmale, meerumgebne Land,</l>
+              <l>Das <emph>eine</emph>, schmale, meerumgebne Land,</l>
               <l>Hierher geschickt. Zusammen bilden sie</l>
               <l>Das herrlichste Gericht, das über Ehre,</l>
               <l>Verdienst und Tugend je entschieden hat.</l>
@@ -1629,7 +1592,7 @@
               <l>Der Gottheit Nähe leicht und willig heilt;</l>
               <l>So war auch ich von aller Phantasie,</l>
               <l>Von jeder Sucht, von jedem falschen Triebe</l>
-              <l>Mit <hi>einem</hi> Blick in deinen Blick geheilt.</l>
+              <l>Mit <emph>einem</emph> Blick in deinen Blick geheilt.</l>
               <l>Wenn unerfahren die Begierde sich</l>
               <l>Nach tausend Gegenständen sonst verlor,</l>
               <l>Trat ich beschämt zuerst in mich zurück,</l>
@@ -1664,7 +1627,7 @@
               <l>Ist denn kein Herz mehr wert, daß sie sich ihm</l>
               <l>Vertrauen dürfte, kein Gemüt dem ihren</l>
               <l>Mehr gleich gestimmt? Ist Geist und Witz verloschen?</l>
-              <l>Und war die <hi>eine</hi> Frau, so trefflich sie</l>
+              <l>Und war die <emph>eine</emph> Frau, so trefflich sie</l>
               <l>Auch war, denn alles? Fürstin! o verzeih!</l>
               <l>Da dacht ich manchmal an mich selbst und wünschte</l>
               <l>Dir etwas sein zu können. Wenig nur</l>
@@ -1745,7 +1708,7 @@
             <speaker>PRINZESSIN.</speaker>
             <lg>
               <l>Doch läßt sich ihm vertraun, und das ist viel.</l>
-              <l>Du mußt von <hi>einem</hi> Mann nicht alles fordern,</l>
+              <l>Du mußt von <emph>einem</emph> Mann nicht alles fordern,</l>
               <l>Und dieser leistet was er dir verspricht.</l>
               <l>Hat er sich erst für deinen Freund erklärt,</l>
               <l>So sorgt er selbst für dich wo du dir fehlst.</l>
@@ -1961,7 +1924,7 @@
             <speaker>TASSO.</speaker>
             <lg>
               <l>Was auch in meinem Liede widerklingt,</l>
-              <l>Ich bin nur <hi>einer, einer</hi> alles schuldig!</l>
+              <l>Ich bin nur <emph>einer</emph>, <emph>einer</emph> alles schuldig!</l>
               <l>Es schwebt kein geistig unbestimmtes Bild</l>
               <l>Vor meiner Stirne, das der Seele bald</l>
               <l>Sich überglänzend nahte, bald entzöge.</l>
@@ -2028,7 +1991,7 @@
               <l>Entdeckt sich meinem Auge, welches Reich!</l>
               <l>Wie köstlich wird der heiße Wunsch belohnt!</l>
               <l>Ich träumte mich dem höchsten Glücke nah,</l>
-              <l>Und <hi>dieses</hi> Glück ist über alle Träume.</l>
+              <l>Und <emph>dieses</emph> Glück ist über alle Träume.</l>
               <l>Der Blindgeborne denke sich das Licht,</l>
               <l>Die Farben wie er will, erscheinet ihm</l>
               <l>Der neue Tag, ist's ihm ein neuer Sinn.</l>
@@ -2051,7 +2014,7 @@
               <l>Im stillen Hain die goldne Leier mir,</l>
               <l>Sie weihe mich der Ruh und ihrem Preis:</l>
               <l>Ihr bin ich, bildend soll sie mich besitzen;</l>
-              <l>Mein Herz bewahrte jeden Schatz für <hi>sie</hi>.</l>
+              <l>Mein Herz bewahrte jeden Schatz für <emph>sie</emph>.</l>
               <l>O hätt ein tausendfaches Werkzeug mir</l>
               <l>Ein Gott gegönnt, kaum drückt ich dann genug</l>
               <l>Die unaussprechliche Verehrung aus.</l>
@@ -2060,7 +2023,7 @@
               <l>Genährt war, wünscht ich mir. Nein, künftig soll</l>
               <l><pb n="104"/> Nicht Tasso zwischen Bäumen, zwischen Menschen</l>
               <l>Sich einsam, schwach und trübgesinnt verlieren!</l>
-              <l>Er ist nicht mehr allein, er ist mit <hi>dir</hi>.</l>
+              <l>Er ist nicht mehr allein, er ist mit <emph>dir</emph>.</l>
               <l>O daß die edelste der Taten sich</l>
               <l>Hier sichtbar vor mich stellte, rings umgeben</l>
               <l>Von gräßlicher Gefahr! Ich dränge zu</l>
@@ -2068,7 +2031,7 @@
               <l>Von ihren Händen habe – forderte</l>
               <l>Die besten Menschen mir zu Freunden auf,</l>
               <l>Unmögliches mit einer edeln Schar</l>
-              <l>Nach <hi>ihrem</hi> Wink und Willen zu vollbringen.</l>
+              <l>Nach <emph>ihrem</emph> Wink und Willen zu vollbringen.</l>
               <l>Voreiliger, warum verbarg dein Mund</l>
               <l>Nicht das was du empfandst, bis du dich wert</l>
               <l>Und werter ihr zu Füßen legen konntest?</l>
@@ -2092,16 +2055,14 @@
         </div>
         <div type="scene">
           <head>Dritter Auftritt</head>
-          <stage>
-            <hi>Tasso. Antonio.</hi>
-          </stage>
+          <stage>Tasso. Antonio.</stage>
           <sp who="#tasso">
             <speaker>TASSO.</speaker>
             <lg>
               <l>Sei mir willkommen, den ich gleichsam jetzt</l>
               <l>Zum erstenmal erblicke! Schöner ward</l>
               <l>Kein Mann mir angekündigt. Sei willkommen!</l>
-              <l>Dich kenn ich nun und <hi>deinen</hi> ganzen Wert,</l>
+              <l>Dich kenn ich nun und <emph>deinen</emph> ganzen Wert,</l>
               <l>Dir biet ich ohne Zögern Herz und Hand</l>
               <l><pb n="105"/> Und hoffe, daß auch du mich nicht verschmähst.</l>
             </lg>
@@ -2232,7 +2193,7 @@
           <sp who="#antonio">
             <speaker>ANTONIO.</speaker>
             <lg>
-              <l>In <hi>einem</hi> Augenblicke forderst du,</l>
+              <l>In <emph>einem</emph> Augenblicke forderst du,</l>
               <l>Was wohlbedächtig nur die Zeit gewährt.</l>
             </lg>
           </sp>
@@ -2518,9 +2479,7 @@
           <sp who="#tasso">
             <speaker>TASSO.</speaker>
             <l>Verzeihe mir der Ort daß ich es litt.</l>
-            <stage>
-              <hi>Er zieht den Degen.</hi>
-            </stage>
+            <stage>Er zieht den Degen.</stage>
             <lg>
               <l>Zieh oder folge! Wenn ich nicht auf ewig,</l>
               <l>Wie ich dich hasse, dich verachten soll.</l>
@@ -2529,9 +2488,7 @@
         </div>
         <div type="scene">
           <head>Vierter Auftritt</head>
-          <stage>
-            <hi>Alfons. Die Vorigen.</hi>
-          </stage>
+          <stage>Alfons. Die Vorigen.</stage>
           <sp who="#alfons">
             <speaker>ALFONS.</speaker>
             <l>In welchem Streit treff ich euch unerwartet?</l>
@@ -2650,9 +2607,7 @@
           </sp>
           <sp who="#alfons">
             <speaker>ALFONS</speaker>
-            <stage>
-              <hi>zu Tasso.</hi>
-            </stage>
+            <stage>zu Tasso.</stage>
             <l>Du hast nicht wohl getan.</l>
           </sp>
           <sp who="#tasso">
@@ -2748,13 +2703,9 @@
           </sp>
           <sp who="#tasso">
             <speaker>TASSO</speaker>
-            <stage>
-              <hi>zu Antonio.</hi>
-            </stage>
+            <stage>zu Antonio.</stage>
             <l>Mit dir hab ich vorerst nichts mehr zu reden.</l>
-            <stage>
-              <hi>Zu Alfons.</hi>
-            </stage>
+            <stage>Zu Alfons.</stage>
             <lg>
               <l>O Fürst, es übergibt dein ernstes Wort</l>
               <l>Mich Freien der Gefangenschaft. Es sei!</l>
@@ -2839,17 +2790,13 @@
               <l>Und wer geschmückt, o Herr, den du verkennst?</l>
               <l>Gefangen geh ich, warte des Gerichts.</l>
             </lg>
-            <stage>
-              <hi>Auf des Fürsten Wink hebt ein Page den Degen mit dem Kranze auf und trägt ihn
-                weg.</hi>
-            </stage>
+            <stage>Auf des Fürsten Wink hebt ein Page den Degen mit dem Kranze auf und trägt ihn
+              weg.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt</head>
-          <stage>
-            <hi>Alfons. Antonio.</hi>
-          </stage>
+          <stage>Alfons. Antonio.</stage>
           <sp who="#antonio">
             <speaker>ANTONIO.</speaker>
             <lg>
@@ -2921,7 +2868,7 @@
               <l>So haben sie von diesem raschen Eindruck</l>
               <l>Die letzte Spur vertilgt. Es scheint, Antonio,</l>
               <l>Du willst nicht aus der Übung kommen! Du</l>
-              <l>Hast <hi>ein</hi> Geschäft kaum erst vollendet, nun</l>
+              <l>Hast <emph>ein</emph> Geschäft kaum erst vollendet, nun</l>
               <l>Kehrst du zurück und schaffst dir gleich ein neues.</l>
               <l>Ich hoffe, daß auch dieses dir gelingt.</l>
             </lg>
@@ -2939,7 +2886,7 @@
         </div>
       </div>
       <div type="act">
-        <head>3. Akt</head>
+        <head>Dritter Aufzug</head>
         <div type="scene">
           <head>Erster Auftritt</head>
           <sp who="#prinzessin">
@@ -2958,9 +2905,7 @@
         </div>
         <div type="scene">
           <head>Zweiter Auftritt</head>
-          <stage>
-            <hi>Prinzessin. Leonore.</hi>
-          </stage>
+          <stage>Prinzessin. Leonore.</stage>
           <sp who="#prinzessin">
             <speaker>PRINZESSIN.</speaker>
             <lg>
@@ -3038,10 +2983,10 @@
               <l>Es Waffen leicht und glücklich wieder her.</l>
               <l>Zwei Männer sind's, ich hab es lang gefühlt,</l>
               <l>Die darum Feinde sind, weil die Natur</l>
-              <l>Nicht <hi>einen</hi> Mann aus ihnen beiden formte.</l>
+              <l>Nicht <emph>einen</emph> Mann aus ihnen beiden formte.</l>
               <l>Und wären sie zu ihrem Vorteil klug,</l>
               <l>So würden sie als Freunde sich verbinden.</l>
-              <l>Dann stünden sie für <hi>einen</hi> Mann, und gingen</l>
+              <l>Dann stünden sie für <emph>einen</emph> Mann, und gingen</l>
               <l>Mit Macht und Glück und Lust durchs Leben hin.</l>
               <l>So hofft ich selbst, nun seh ich wohl umsonst.</l>
               <l>Der Zwist von heute, sei er wie er sei,</l>
@@ -3217,7 +3162,7 @@
             <lg>
               <l>O blicke nicht nach dem, was jedem fehlt,</l>
               <l>Betrachte, was noch einem jeden bleibt!</l>
-              <l>Was bleibt nicht <hi>dir</hi>, Prinzessin?</l>
+              <l>Was bleibt nicht <emph>dir</emph>, Prinzessin?</l>
             </lg>
           </sp>
           <sp who="#prinzessin">
@@ -3384,7 +3329,7 @@
             <lg>
               <l>Wohl ist sie schön die Welt! in ihrer Weite</l>
               <l>Bewegt sich so viel Gutes hin und her.</l>
-              <l>Ach daß es immer nur um <hi>einen</hi> Schritt</l>
+              <l>Ach daß es immer nur um <emph>einen</emph> Schritt</l>
               <l>Von uns sich zu entfernen scheint,</l>
               <l>Und unsre bange Sehnsucht durch das Leben</l>
               <l>Auch Schritt vor Schritt bis nach dem Grabe lockt!</l>
@@ -3427,7 +3372,7 @@
               <l>Es weiß, es kennt auch jeder, was du hast!</l>
               <l>Dich nennt dein Vaterland und sieht auf dich,</l>
               <l>Das ist der höchste Gipfel jedes Glücks.</l>
-              <l>Ist <hi>Laura</hi> denn allein der Name, der</l>
+              <l>Ist <emph>Laura</emph> denn allein der Name, der</l>
               <l>Von allen zarten Lippen klingen soll?</l>
               <l>Und hatte nur Petrarch allein das Recht,</l>
               <l>Die unbekannte Schöne zu vergöttern?</l>
@@ -3462,9 +3407,7 @@
         </div>
         <div type="scene">
           <head>Vierter Auftritt</head>
-          <stage>
-            <hi>Leonore. Antonio.</hi>
-          </stage>
+          <stage>Leonore. Antonio.</stage>
           <sp who="#leonore">
             <speaker>LEONORE.</speaker>
             <lg>
@@ -3664,7 +3607,7 @@
               <l>Und daß er klüger ist, als wie man denkt.</l>
               <l>Er rühmt sich zweier Flammen! knüpft und löst</l>
               <l><pb n="129"/> Die Knoten hin und wider, und gewinnt</l>
-              <l>Mit <hi>solchen</hi> Künsten <hi>solche</hi> Herzen! Ist's</l>
+              <l>Mit <emph>solchen</emph> Künsten <emph>solche</emph> Herzen! Ist's</l>
               <l>Zu glauben?</l>
             </lg>
           </sp>
@@ -3715,7 +3658,7 @@
               <l>Auf einmal, wie ein unbemerkter Funke</l>
               <l>Die Mine zündet, sei es Freude, Leid,</l>
               <l>Zorn oder Grille, heftig bricht er aus:</l>
-              <l>Dann will er <hi>alles</hi> fassen, <hi>alles</hi> halten,</l>
+              <l>Dann will er <emph>alles</emph> fassen, <emph>alles</emph> halten,</l>
               <l>Dann soll geschehn was er sich denken mag;</l>
               <l>In einem Augenblicke soll entstehn,</l>
               <l>Was Jahre lang bereitet werden sollte,</l>
@@ -3725,7 +3668,7 @@
               <l><pb n="130"/> Damit er es von andern fordern dürfe,</l>
               <l>Die letzten Enden aller Dinge will</l>
               <l>Sein Geist zusammen fassen; das gelingt</l>
-              <l>Kaum <hi>einem</hi> unter Millionen Menschen,</l>
+              <l>Kaum <emph>einem</emph> unter Millionen Menschen,</l>
               <l>Und er ist nicht der Mann: er fällt zuletzt,</l>
               <l>Um nichts gebessert, in sich selbst zurück.</l>
             </lg>
@@ -3797,7 +3740,7 @@
           <sp who="#antonio">
             <speaker>ANTONIO.</speaker>
             <lg>
-              <l>Das Alter muß doch <hi>einen</hi> Vorzug haben,</l>
+              <l>Das Alter muß doch <emph>einen</emph> Vorzug haben,</l>
               <l>Daß wenn es auch dem Irrtum nicht entgeht,</l>
               <l><pb n="131"/> Es doch sich auf der Stelle fassen kann.</l>
               <l>Du warst, mich deinem Freunde zu versöhnen,</l>
@@ -3828,17 +3771,13 @@
         </div>
       </div>
       <div type="act">
-        <head>4. Akt</head>
+        <head>Vierter Aufzug</head>
         <div type="scene">
           <head>Erster Auftritt</head>
-          <stage>
-            <hi>Zimmer.</hi>
-          </stage>
+          <stage>Zimmer.</stage>
           <sp who="#tasso">
             <speaker>TASSO</speaker>
-            <stage>
-              <hi>allein.</hi>
-            </stage>
+            <stage>allein.</stage>
             <lg>
               <l>Bist du aus einem Traum erwacht und hat</l>
               <l>Der schöne Trug auf einmal dich verlassen?</l>
@@ -3864,8 +3803,8 @@
               <l>Wie ich den Mann empfangen wollte, der</l>
               <l>Von alten Zeiten mir verdächtig war!</l>
               <l>Allein was immer dir begegnet sei,</l>
-              <l>So halte dich an <hi>der</hi> Gewißheit fest:</l>
-              <l>Ich habe <hi>sie</hi> gesehn! Sie stand vor mir!</l>
+              <l>So halte dich an <emph>der</emph> Gewißheit fest:</l>
+              <l>Ich habe <emph>sie</emph> gesehn! Sie stand vor mir!</l>
               <l>Sie sprach zu mir, ich habe sie vernommen!</l>
               <l>Der Blick, der Ton, der Worte holder Sinn,</l>
               <l>Sie sind auf ewig mein, es raubt sie nicht</l>
@@ -3897,9 +3836,7 @@
         </div>
         <div type="scene">
           <head>Zweiter Auftritt</head>
-          <stage>
-            <hi>Leonore. Tasso.</hi>
-          </stage>
+          <stage>Leonore. Tasso.</stage>
           <sp who="#leonore">
             <speaker>LEONORE.</speaker>
             <lg>
@@ -4048,7 +3985,7 @@
               <l>Der, wenn er die Gedanken mancher Dichter</l>
               <l>Zusammenreiht, sich selbst ein Dichter scheint?</l>
               <l>Weit eher gönnt er mir des Fürsten Gunst,</l>
-              <l>Die er doch gern auf <hi>sich</hi> beschränken möchte,</l>
+              <l>Die er doch gern auf <emph>sich</emph> beschränken möchte,</l>
               <l>Als das Talent, das jene Himmlischen</l>
               <l>Dem armen, dem verwaisten Jüngling gaben.</l>
             </lg>
@@ -4307,9 +4244,7 @@
           <head>Dritter Auftritt</head>
           <sp who="#tasso">
             <speaker>TASSO</speaker>
-            <stage>
-              <hi>allein.</hi>
-            </stage>
+            <stage>allein.</stage>
             <lg>
               <l>Ich soll erkennen, daß mich niemand haßt,</l>
               <l>Daß niemand mich verfolgt, daß alle List</l>
@@ -4401,15 +4336,13 @@
               <l>Die kalt und starr mich von sich läßt. – Ich gehe! –</l>
               <l>Nur hüte dich und laß dich keinen Schein</l>
               <l>Von Freundschaft oder Güte täuschen! Niemand</l>
-              <l>Betrügt dich nun, wenn <hi>du</hi> dich nicht betrügst.</l>
+              <l>Betrügt dich nun, wenn <emph>du</emph> dich nicht betrügst.</l>
             </lg>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt</head>
-          <stage>
-            <hi>Antonio. Tasso.</hi>
-          </stage>
+          <stage>Antonio. Tasso.</stage>
           <sp who="#antonio">
             <speaker>ANTONIO.</speaker>
             <lg>
@@ -4762,9 +4695,7 @@
           <head>Fünfter Auftritt</head>
           <sp who="#tasso">
             <speaker>TASSO</speaker>
-            <stage>
-              <hi>allein.</hi>
-            </stage>
+            <stage>allein.</stage>
             <lg>
               <l>Ja gehe nur und gehe sicher weg,</l>
               <l>Daß du mich überredest was du willst.</l>
@@ -4791,7 +4722,7 @@
               <l>Mit ungebundnem Stolz, mit übertriebner</l>
               <l>Empfindlichkeit und eignem düstern Sinn.</l>
               <l>Es sei nicht anders, einmal habe nun</l>
-              <l>Den <hi>einen</hi> Mann das Schicksal so gebildet,</l>
+              <l>Den <emph>einen</emph> Mann das Schicksal so gebildet,</l>
               <l>Nun müsse man ihn nehmen wie er sei,</l>
               <l>Ihn dulden, tragen und vielleicht an ihm</l>
               <l>Was Freude bringen kann am guten Tage</l>
@@ -4811,7 +4742,7 @@
             </lg>
             <lg>
               <l>Hat nicht die Ankunft dieses Manns allein</l>
-              <l>Mein ganz Geschick zerstört, in <hi>einer</hi> Stunde?</l>
+              <l>Mein ganz Geschick zerstört, in <emph>einer</emph> Stunde?</l>
               <l>Nicht dieser das Gebäude meines Glücks</l>
               <l>Von seinem tiefsten Grund aus umgestürzt?</l>
               <l>O muß ich das erfahren? Muß ich's heut?</l>
@@ -4870,15 +4801,11 @@
         </div>
       </div>
       <div type="act">
-        <head>5. Akt</head>
+        <head>Fünfter Aufzug</head>
         <div type="scene">
           <head>Erster Auftritt</head>
-          <stage>
-            <hi>Garten.</hi>
-          </stage>
-          <stage>
-            <hi>Alfons. Antonio.</hi>
-          </stage>
+          <stage>Garten.</stage>
+          <stage>Alfons. Antonio.</stage>
           <sp who="#antonio">
             <speaker>ANTONIO.</speaker>
             <lg>
@@ -4944,7 +4871,7 @@
           <sp who="#antonio">
             <speaker>ANTONIO.</speaker>
             <lg>
-              <l>Wenn andre vieles um den <hi>einen</hi> tun,</l>
+              <l>Wenn andre vieles um den <emph>einen</emph> tun,</l>
               <l>So ist's auch billig, daß der eine wieder</l>
               <l>Sich fleißig frage was den andern nützt.</l>
               <l>Wer seinen Geist so viel gebildet hat,</l>
@@ -5024,7 +4951,7 @@
               <l>Der Schutz von keinem Fürsten macht ihn sicher,</l>
               <l>Der Busen keines Freundes kann ihn laben.</l>
               <l>Und willst du einem solchen Ruh und Glück,</l>
-              <l>Willst du von ihm wohl Freude <hi>dir</hi> versprechen?</l>
+              <l>Willst du von ihm wohl Freude <emph>dir</emph> versprechen?</l>
             </lg>
           </sp>
           <sp who="#alfons">
@@ -5107,14 +5034,10 @@
         </div>
         <div type="scene">
           <head>Zweiter Auftritt</head>
-          <stage>
-            <hi>Alfons. Tasso.</hi>
-          </stage>
+          <stage>Alfons. Tasso.</stage>
           <sp who="#tasso">
             <speaker>TASSO</speaker>
-            <stage>
-              <hi>mit Zurückhaltung.</hi>
-            </stage>
+            <stage>mit Zurückhaltung.</stage>
             <lg>
               <l>Die Gnade, die du mir so oft bewiesen,</l>
               <l>Erscheinet heute mir in vollem Licht.</l>
@@ -5148,7 +5071,7 @@
               <l>An Freunde dir nach Rom, und wünsche sehr</l>
               <l>Daß du dich zu den Meinen überall</l>
               <l>Zutraulich halten mögest, wie ich dich</l>
-              <l>Als <hi>mein</hi>, obgleich entfernt, gewiß betrachte.</l>
+              <l>Als <emph>mein</emph>, obgleich entfernt, gewiß betrachte.</l>
             </lg>
           </sp>
           <sp who="#tasso">
@@ -5295,9 +5218,7 @@
               <l>Der hat den Schein der Ehrlichkeit voraus.</l>
               <l>Es wird schon gehn, nur übe dich mit ihnen.</l>
             </lg>
-            <stage>
-              <hi>Nach einer Pause.</hi>
-            </stage>
+            <stage>Nach einer Pause.</stage>
             <lg>
               <l>Du triumphierst zu früh, dort kommt sie her!</l>
               <l>Die holde Fürstin kommt! O welch Gefühl!</l>
@@ -5308,9 +5229,7 @@
         </div>
         <div type="scene">
           <head>Vierter Auftritt</head>
-          <stage>
-            <hi>Prinzessin. Tasso. Gegen das Ende des Auftritts die übrigen.</hi>
-          </stage>
+          <stage>Prinzessin. Tasso. Gegen das Ende des Auftritts die übrigen.</stage>
           <sp who="#prinzessin">
             <speaker>PRINZESSIN.</speaker>
             <lg>
@@ -5401,9 +5320,7 @@
           </sp>
           <sp who="#tasso">
             <speaker>TASSO</speaker>
-            <stage>
-              <hi>wendet sich weg.</hi>
-            </stage>
+            <stage>wendet sich weg.</stage>
           </sp>
           <sp who="#prinzessin">
             <speaker>PRINZESSIN.</speaker>
@@ -5431,7 +5348,7 @@
               <l>Es hat der Fürst so manches schöne Schloß,</l>
               <l>So manchen Garten, der das ganze Jahr</l>
               <l><pb n="159"/> Gewartet wird, und ihr betretet kaum</l>
-              <l>Ihn <hi>einen</hi> Tag, vielleicht nur <hi>eine</hi> Stunde.</l>
+              <l>Ihn <emph>einen</emph> Tag, vielleicht nur <emph>eine</emph> Stunde.</l>
               <l>Ja wählet den entferntsten aus, den ihr</l>
               <l>In ganzen Jahren nicht besuchen geht,</l>
               <l>Und der vielleicht jetzt ohne Sorge liegt,</l>
@@ -5554,50 +5471,34 @@
               <l>Du hast mich ganz auf ewig dir gewonnen,</l>
               <l>So nimm denn auch mein ganzes Wesen hin.</l>
             </lg>
-            <stage>
-              <hi>Er fällt ihr in die Arme und drückt sie fest an sich.</hi>
-            </stage>
+            <stage>Er fällt ihr in die Arme und drückt sie fest an sich.</stage>
           </sp>
           <sp who="#prinzessin">
             <speaker>PRINZESSIN</speaker>
-            <stage>
-              <hi>ihn von sich stoßend und hinwegeilend.</hi>
-            </stage>
+            <stage>ihn von sich stoßend und hinwegeilend.</stage>
             <l>Hinweg!</l>
           </sp>
           <sp who="#leonore">
             <speaker>LEONORE</speaker>
-            <stage>
-              <hi>die sich schon eine Weile im Grunde sehen lassen, herbeieilend.</hi>
-            </stage>
+            <stage>die sich schon eine Weile im Grunde sehen lassen, herbeieilend.</stage>
             <l>Was ist geschehen? Tasso! Tasso!</l>
-            <stage>
-              <hi>Sie geht der Prinzessin nach.</hi>
-            </stage>
+            <stage>Sie geht der Prinzessin nach.</stage>
           </sp>
           <sp who="#tasso">
             <speaker>TASSO</speaker>
-            <stage>
-              <hi>im Begriff ihnen zu folgen.</hi>
-            </stage>
+            <stage>im Begriff ihnen zu folgen.</stage>
             <l>O Gott!</l>
           </sp>
           <sp who="#alfons">
             <speaker>ALFONS</speaker>
-            <stage>
-              <hi>der sich schon eine Zeitlang mit Antonio genähert.</hi>
-            </stage>
+            <stage>der sich schon eine Zeitlang mit Antonio genähert.</stage>
             <l>Er kommt von Sinnen, halt ihn fest.</l>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt</head>
-          <stage>
-            <hi>Tasso. Antonio.</hi>
-          </stage>
+          <stage>Tasso. Antonio.</stage>
           <sp who="#antonio">
             <speaker>ANTONIO.</speaker>
             <lg>
@@ -5614,9 +5515,7 @@
           </sp>
           <sp who="#tasso">
             <speaker>TASSO</speaker>
-            <stage>
-              <hi>nach einer langen Pause.</hi>
-            </stage>
+            <stage>nach einer langen Pause.</stage>
             <lg>
               <l>Vollende nur dein Amt, ich seh du bist's!</l>
               <l>Ja du verdienst das fürstliche Vertraun,</l>
@@ -5629,9 +5528,7 @@
               <l>Sei Kerkermeister, sei der Marterknecht,</l>
               <l>Wie wohl! wie eigen steht dir beides an!</l>
             </lg>
-            <stage>
-              <hi>Gegen die Szene.</hi>
-            </stage>
+            <stage>Gegen die Szene.</stage>
             <lg>
               <l>Ja, gehe nur Tyrann! Du konntest dich</l>
               <l>Nicht bis zuletzt verstellen, triumphiere!</l>
@@ -5641,9 +5538,7 @@
               <l>Den Abscheu, den die Übermacht erregt,</l>
               <l>Die frevelhaft und ungerecht ergreift.</l>
             </lg>
-            <stage>
-              <hi>Nach einer Pause.</hi>
-            </stage>
+            <stage>Nach einer Pause.</stage>
             <lg>
               <l>So seh ich mich am Ende denn verbannt,</l>
               <l>Verstoßen und verbannt als Bettler hier?</l>
@@ -5678,7 +5573,7 @@
               <l>Und ehren die Verworfnen die uns ehren.</l>
               <l>Die Menschen kennen sich einander nicht;</l>
               <l>Nur die Galeerensklaven kennen sich,</l>
-              <l>Die eng an <hi>eine</hi> Bank geschmiedet keuchen;</l>
+              <l>Die eng an <emph>eine</emph> Bank geschmiedet keuchen;</l>
               <l>Wo keiner was zu fordern hat und keiner</l>
               <l>Was zu verlieren hat, die kennen sich!</l>
               <l>Wo jeder sich für einen Schelmen gibt,</l>
@@ -5691,7 +5586,7 @@
               <l>Die Buhlerin, die kleine Künste treibt.</l>
               <l>Die Maske fällt, Armiden seh ich nun</l>
               <l>Entblößt von allen Reizen – ja, du bist's!</l>
-              <l>Von <hi>dir</hi> hat ahndungsvoll mein Lied gesungen!</l>
+              <l>Von <emph>dir</emph> hat ahndungsvoll mein Lied gesungen!</l>
             </lg>
             <lg>
               <l>Und die verschmitzte kleine Mittlerin!</l>
@@ -5788,8 +5683,8 @@
               <l>Ist kein Talent mehr übrig, tausendfältig</l>
               <l>Mich zu zerstreun, zu unterstützen?</l>
               <l>Ist alle Kraft verloschen, die sich sonst</l>
-              <l>In meinem Busen regte? bin ich <hi>nichts</hi>,</l>
-              <l>Ganz <hi>nichts</hi> geworden?</l>
+              <l>In meinem Busen regte? bin ich <emph>nichts</emph>,</l>
+              <l>Ganz <emph>nichts</emph> geworden?</l>
               <l>Nein, es ist alles da und ich bin nichts;</l>
               <l>Ich bin mir selbst entwandt, sie ist es mir!</l>
             </lg>
@@ -5809,7 +5704,7 @@
               <l>Stellt sich kein edler Mann mir vor die Augen,</l>
               <l>Der mehr gelitten als ich jemals litt,</l>
               <l>Damit ich mich mit ihm vergleichend fasse?</l>
-              <l>Nein, <hi>alles</hi> ist dahin! – Nur <hi>eines</hi> bleibt:</l>
+              <l>Nein, <emph>alles</emph> ist dahin! – Nur <emph>eines</emph> bleibt:</l>
               <l>Die Träne hat uns die Natur verliehen,</l>
               <l>Den Schrei des Schmerzens, wenn der Mann zuletzt</l>
               <l>Es nicht mehr trägt – Und mir noch über alles –</l>
@@ -5818,9 +5713,7 @@
               <l>Und wenn der Mensch in seiner Qual verstummt,</l>
               <l>Gab mir ein Gott zu sagen, wie ich leide.</l>
             </lg>
-            <stage>
-              <hi>Antonio tritt zu ihm und nimmt ihn bei der Hand.</hi>
-            </stage>
+            <stage>Antonio tritt zu ihm und nimmt ihn bei der Hand.</stage>
           </sp>
           <sp who="#tasso">
             <speaker>TASSO.</speaker>
