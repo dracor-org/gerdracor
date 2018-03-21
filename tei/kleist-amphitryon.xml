@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Amphitryon</title>
+        <title type="main">Amphitryon</title>
+        <title type="sub">Ein Lustspiel nach Molière</title>
         <author key="pnd:118563076">Kleist, Heinrich von</author>
       </titleStmt>
       <publicationStmt>
@@ -35,7 +36,7 @@
               Rudolf Loch, Berlin und Weimar: Aufbau, 1978.</title>
             <date type="print" when="1807"/>
             <date type="premiere" when="1899"/>
-            <date type="written" when="1806">wohl 1806</date>
+            <date type="written" when="1806">"Sommer 1803" (Wikipedia)</date>
           </bibl>
         </bibl>
       </sourceDesc>
@@ -43,53 +44,51 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="sosias">
-            <persName>SOSIAS</persName>
+          <person xml:id="sosias" sex="MALE">
+            <persName>Sosias</persName>
           </person>
-          <person xml:id="merkur">
-            <persName>MERKUR</persName>
+          <person xml:id="merkur" sex="MALE">
+            <persName>Merkur</persName>
           </person>
-          <person xml:id="jupiter">
-            <persName>JUPITER</persName>
+          <person xml:id="jupiter" sex="MALE">
+            <persName>Jupiter</persName>
           </person>
-          <person xml:id="alkmene">
-            <persName>ALKMENE</persName>
+          <person xml:id="alkmene" sex="FEMALE">
+            <persName>Alkmene</persName>
           </person>
-          <person xml:id="charis">
-            <persName>CHARIS</persName>
+          <person xml:id="charis" sex="FEMALE">
+            <persName>Charis</persName>
           </person>
-          <person xml:id="amphitryon">
-            <persName>AMPHITRYON</persName>
+          <person xml:id="amphitryon" sex="MALE">
+            <persName>Amphitryon</persName>
           </person>
-          <person xml:id="erster_feldherr">
-            <persName>ERSTER FELDHERR</persName>
+          <person xml:id="erster_feldherr" sex="MALE">
+            <persName>Erster Feldherr</persName>
           </person>
-          <person xml:id="zweiter_feldherr">
-            <persName>ZWEITER FELDHERR</persName>
+          <person xml:id="zweiter_feldherr" sex="MALE">
+            <persName>Zweiter Feldherr</persName>
           </person>
-          <person xml:id="dritter_feldherr">
-            <persName>DRITTER FELDHERR</persName>
+          <person xml:id="dritter_feldherr" sex="MALE">
+            <persName>Dritter Feldherr</persName>
           </person>
-          <person xml:id="einer_aus_dem_volk">
-            <persName>EINER AUS DEM VOLK</persName>
-            <persName xml:id="derselbe">DERSELBE</persName>
+          <person xml:id="einer_aus_dem_volk" sex="MALE">
+            <persName>Einer aus dem Volk</persName>
           </person>
-          <person xml:id="zweiter_oberster">
-            <persName>ZWEITER OBERSTER</persName>
+          <person xml:id="zweiter_oberster" sex="MALE">
+            <persName>Zweiter Oberster</persName>
           </person>
-          <person xml:id="erster_oberster">
-            <persName>ERSTER OBERSTER</persName>
+          <person xml:id="erster_oberster" sex="MALE">
+            <persName>Erster Oberster</persName>
           </person>
-          <person xml:id="das_volk">
-            <persName>DAS VOLK</persName>
-            <persName xml:id="volk">VOLK</persName>
-          </person>
-          <person xml:id="die_obersten">
-            <persName>DIE OBERSTEN</persName>
-          </person>
-          <person xml:id="die_feldherren">
-            <persName>DIE FELDHERREN</persName>
-          </person>
+          <personGrp xml:id="das_volk" sex="UNKNOWN">
+            <name>Das Volk</name>
+          </personGrp>
+          <personGrp xml:id="die_obersten" sex="MALE">
+            <name>Die Obersten</name>
+          </personGrp>
+          <personGrp xml:id="die_feldherren" sex="MALE">
+            <name>Die Feldherren</name>
+          </personGrp>
         </listPerson>
       </particDesc>
       <textClass>
@@ -103,6 +102,7 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
+        <change who="#ff" when="2018-03-21">formalities; work on IDs; add gender info</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -114,8 +114,6 @@
         <head>Ein Lustspiel nach Molière</head>
         <pb n="326"/>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head>Personen.</head>
@@ -128,15 +126,19 @@
           <castItem>Feldherren.</castItem>
         </castList>
       </div>
+      <set>
+        <p>Die Szene ist in Theben vor dem Schlosse des Amphitryon.</p>
+      </set>
+    </front>
+    <body>
       <div type="act">
-        <head>1. Akt</head>
+        <head>Erster Akt</head>
+        <stage>Es ist Nacht.</stage>
         <div type="scene">
           <head>Erste Szene</head>
           <sp who="#sosias">
             <speaker>SOSIAS</speaker>
-            <stage>
-              <hi>tritt mit einer Laterne auf.</hi>
-            </stage>
+            <stage>tritt mit einer Laterne auf.</stage>
             <lg>
               <l>Heda! Wer schleicht da? Holla! – Wenn der Tag</l>
               <l>Anbräche, wär mir's lieb; die Nacht ist – Was?</l>
@@ -187,9 +189,7 @@
               <l>Hier soll der Audienzsaal sein, und diese</l>
               <l>Latern Alkmene, die mich auf dem Thron erwartet.</l>
             </lg>
-            <stage>
-              <hi>Er setzt die Laterne auf den Boden.</hi>
-            </stage>
+            <stage>Er setzt die Laterne auf den Boden.</stage>
             <lg>
               <l>Durchlauchtigste! mich schickt Amphitryon,</l>
               <l>Mein hoher Herr und Euer edler Gatte,</l>
@@ -223,9 +223,7 @@
               <l>Stellt Euch, wenn Ihr die Güte haben wollt,</l>
               <l>Auf dieser Seite hier –</l>
             </lg>
-            <stage>
-              <hi>Er bezeichnet die Örter auf seiner Hand –.</hi>
-            </stage>
+            <stage>Er bezeichnet die Örter auf seiner Hand –.</stage>
             <lg>
               <l>Pharissa vor</l>
               <l>– Was eine Stadt ist, wie Ihr wissen werdet,</l>
@@ -253,14 +251,10 @@
         </div>
         <div type="scene">
           <head>Zweite Szene</head>
-          <stage>
-            <hi>Merkur tritt in der Gestalt des Sosias aus Amphitryons Haus. Sosias.</hi>
-          </stage>
+          <stage>Merkur tritt in der Gestalt des Sosias aus Amphitryons Haus. Sosias.</stage>
           <sp who="#merkur">
             <speaker>MERKUR</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Wenn ich den ungerufnen Schlingel dort</l>
               <l>Beizeiten nicht von diesem Haus entferne,</l>
@@ -272,9 +266,7 @@
           </sp>
           <sp who="#sosias">
             <speaker>SOSIAS</speaker>
-            <stage>
-              <hi>ohne den Merkur zu sehn.</hi>
-            </stage>
+            <stage>ohne den Merkur zu sehn.</stage>
             <lg>
               <l>Es ist zwar nichts und meine Furcht verschwindet,</l>
               <l>Doch um den Abenteuern auszuweichen,</l>
@@ -284,9 +276,7 @@
           </sp>
           <sp who="#merkur">
             <speaker>MERKUR</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Du überwindest den Merkur, Freund, oder</l>
               <l>Dich werd ich davon abzuhalten wissen.</l>
@@ -315,25 +305,19 @@
           </sp>
           <sp who="#sosias">
             <speaker>SOSIAS</speaker>
-            <stage>
-              <hi>erblickt den Merkur.</hi>
-            </stage>
+            <stage>erblickt den Merkur.</stage>
             <lg>
               <l>Ach bei den Göttern der Nacht! Ich bin verloren.</l>
               <l>Da schleicht ein Strauchdieb um das Haus, den ich</l>
               <l>Früh oder spät am Galgen sehen werde.</l>
               <l>– Dreist muß ich tun, und keck und zuversichtlich.</l>
             </lg>
-            <stage>
-              <hi>Er pfeift.</hi>
-            </stage>
+            <stage>Er pfeift.</stage>
             <pb n="330"/>
           </sp>
           <sp who="#merkur">
             <speaker>MERKUR</speaker>
-            <stage>
-              <hi>laut.</hi>
-            </stage>
+            <stage>laut.</stage>
             <lg>
               <l>Wer denn ist jener Tölpel dort, der sich</l>
               <l>Die Freiheit nimmt, als wär er hier zu Hause,</l>
@@ -374,9 +358,7 @@
           </sp>
           <sp who="#merkur">
             <speaker>MERKUR</speaker>
-            <stage>
-              <hi>vertritt ihm den Weg.</hi>
-            </stage>
+            <stage>vertritt ihm den Weg.</stage>
             <l>Halt dort! Wer geht dort?</l>
           </sp>
           <sp who="#sosias">
@@ -495,15 +477,11 @@
           <sp who="#sosias">
             <speaker>SOSIAS.</speaker>
             <l>Ich muß, jedoch, Geschäfts halb, mich empfehlen.</l>
-            <stage>
-              <hi>Er will gehn.</hi>
-            </stage>
+            <stage>Er will gehn.</stage>
           </sp>
           <sp who="#merkur">
             <speaker>MERKUR</speaker>
-            <stage>
-              <hi>tritt ihm in den Weg.</hi>
-            </stage>
+            <stage>tritt ihm in den Weg.</stage>
             <l>Wohin?</l>
           </sp>
           <sp who="#sosias">
@@ -610,9 +588,7 @@
           </sp>
           <sp who="#sosias">
             <speaker>SOSIAS.</speaker>
-            <l>
-              <hi>Sosias.</hi>
-            </l>
+            <l><emph>Sosias.</emph></l>
           </sp>
           <sp who="#merkur">
             <speaker>MERKUR.</speaker>
@@ -705,9 +681,7 @@
           </sp>
           <sp who="#sosias">
             <speaker>SOSIAS</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Wenn ich dem</l>
               <l>Entkomme, will ich eine Flasche Wein</l>
@@ -723,7 +697,7 @@
             <lg>
               <l>Ach laß mich gehn.</l>
               <l>Dein Stock kann machen, daß ich nicht mehr bin;</l>
-              <l>Doch nicht, daß ich nicht <hi>Ich</hi> bin, weil ich bin.</l>
+              <l>Doch nicht, daß ich nicht <emph>Ich</emph> bin, weil ich bin.</l>
               <l>Der einz'ge Unterschied ist, daß ich mich</l>
               <l>Sosias jetzo der geschlagne, fühle.</l>
             </lg>
@@ -731,9 +705,7 @@
           <sp who="#merkur">
             <speaker>MERKUR.</speaker>
             <l>Hund, sieh, so mach ich kalt dich.</l>
-            <stage>
-              <hi>Er droht.</hi>
-            </stage>
+            <stage>Er droht.</stage>
           </sp>
           <sp who="#sosias">
             <speaker>SOSIAS.</speaker>
@@ -802,9 +774,7 @@
           </sp>
           <sp who="#sosias">
             <speaker>SOSIAS</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Ihr ew'gen Götter dort! So muß ich auf</l>
               <l>Mich selbst Verzicht jetzt leisten, mir von einem</l>
@@ -966,9 +936,7 @@
           </sp>
           <sp who="#sosias">
             <speaker>SOSIAS</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Da hat er recht! Und ohne daß man selbst</l>
               <l>Sosias ist, kann man von dem, was er</l>
@@ -980,9 +948,7 @@
               <l>– Ich muß ihm ein paar Fragen tun, die mich</l>
               <l>Aufs Reine bringen.</l>
             </lg>
-            <stage>
-              <hi>Laut.</hi>
-            </stage>
+            <stage>Laut.</stage>
             <lg>
               <l>Von der Beute,</l>
               <l>Die in des Feindes Lager ward gefunden,</l>
@@ -1037,9 +1003,7 @@
           </sp>
           <sp who="#sosias">
             <speaker>SOSIAS</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Er weiß um alles. – Alle Teufel jetzt!</l>
               <l>Ich fang im Ernst an mir zu zweifeln an.</l>
@@ -1055,9 +1019,7 @@
               <l>– Gut, diese Frage wird mir Licht verschaffen.</l>
               <l>Was gilt's? Dies fängt ihn – nun wir werden sehn.</l>
             </lg>
-            <stage>
-              <hi>Laut.</hi>
-            </stage>
+            <stage>Laut.</stage>
             <lg>
               <l>Als beide Heer im Handgemenge waren,</l>
               <l>Was machtest du, sag an, in den Gezelten,</l>
@@ -1070,9 +1032,7 @@
           </sp>
           <sp who="#sosias">
             <speaker>SOSIAS</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <l>Hat den Kerl der Teufel –?</l>
           </sp>
           <sp who="#merkur">
@@ -1088,9 +1048,7 @@
           </sp>
           <sp who="#sosias">
             <speaker>SOSIAS</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Nun ist es gut. Nun wär's gleichviel, wenn mich</l>
               <l>Die Erde gleich von diesem Platz verschlänge,</l>
@@ -1098,9 +1056,7 @@
               <l>Wenn man, wie ich, zufällig nicht im Sacke</l>
               <l>Den Schlüssel, der gepaßt, gefunden hätte.</l>
             </lg>
-            <stage>
-              <hi>Laut.</hi>
-            </stage>
+            <stage>Laut.</stage>
             <lg>
               <l>Ich sehe, alter Freund, nunmehr, daß du</l>
               <l>Die ganze Portion Sosias bist,</l>
@@ -1109,8 +1065,8 @@
               <l>Fern sei mir, den Zudringlichen zu spielen,</l>
               <l>Und gern tret ich vor dir zurück. Nur habe die</l>
               <l>Gefälligkeit für mich, und sage mir,</l>
-              <l>Da ich Sosias nicht bin, <hi>wer</hi> ich bin?</l>
-              <l>Denn <hi>etwas</hi>, gibst du zu, muß ich doch sein.</l>
+              <l>Da ich Sosias nicht bin, <emph>wer</emph> ich bin?</l>
+              <l>Denn <emph>etwas</emph>, gibst du zu, muß ich doch sein.</l>
             </lg>
           </sp>
           <sp who="#merkur">
@@ -1132,22 +1088,16 @@
               <l>Und das Gescheiteste, zum Schluß zu kommen,</l>
               <l>Ist, daß ich meiner Wege geh. – Leb wohl.</l>
             </lg>
-            <stage>
-              <hi>Er geht dem Hause zu.</hi>
-            </stage>
+            <stage>Er geht dem Hause zu.</stage>
           </sp>
           <sp who="#merkur">
             <speaker>MERKUR</speaker>
-            <stage>
-              <hi>stößt ihn zurück.</hi>
-            </stage>
+            <stage>stößt ihn zurück.</stage>
             <lg>
               <l>Wie, Galgenstrick! So muß ich alle Knochen</l>
               <l>Dir lähmen?</l>
             </lg>
-            <stage>
-              <hi>Er schlägt ihn.</hi>
-            </stage>
+            <stage>Er schlägt ihn.</stage>
           </sp>
           <sp who="#sosias">
             <speaker>SOSIAS.</speaker>
@@ -1161,9 +1111,7 @@
               <l>Das war mir eine rühmliche Gesandtschaft!</l>
               <l>Wie wird dein Herr, Sosias, dich empfangen?</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
             <pb n="339"/>
           </sp>
         </div>
@@ -1191,9 +1139,7 @@
         </div>
         <div type="scene">
           <head>Vierte Szene</head>
-          <stage>
-            <hi>Jupiter in der Gestalt Amphitryons. Alkmene; Charis; Merkur; Fackeln.</hi>
-          </stage>
+          <stage>Jupiter in der Gestalt Amphitryons. Alkmene; Charis; Merkur; Fackeln.</stage>
           <sp who="#jupiter">
             <speaker>JUPITER.</speaker>
             <lg>
@@ -1248,7 +1194,7 @@
               <l>Und eine Pflicht, und daß, wer Liebe nicht erwirbt,</l>
               <l>Noch Liebe vor dem Richter fordern kann.</l>
               <l>Sieh dies Gesetz, es stört mein schönstes Glück.</l>
-              <l><hi>Dir</hi> möcht ich, deinem Herzen, Teuerste,</l>
+              <l><emph>Dir</emph> möcht ich, deinem Herzen, Teuerste,</l>
               <l>Jedwede Gunst verdanken, möchte gern</l>
               <l>Nicht, daß du einer Förmlichkeit dich fügtest,</l>
               <l>Zu der du dich vielleicht verbunden wähnst.</l>
@@ -1282,7 +1228,7 @@
               <l>Und der Gedanke ist mir unerträglich,</l>
               <l>Daß du den Laffen bloß empfangen hast,</l>
               <l>Der kalt ein Recht auf dich zu haben wähnt.</l>
-              <l><hi>Ich</hi> möchte dir, mein süßes Licht,</l>
+              <l><emph>Ich</emph> möchte dir, mein süßes Licht,</l>
               <l>Dies Wesen eigner Art erschienen sein,</l>
               <l>Besieger dein, weil über dich zu siegen,</l>
               <l>Die Kunst, die großen Götter mich gelehrt.</l>
@@ -1361,21 +1307,15 @@
           <sp who="#alkmene">
             <speaker>ALKMENE.</speaker>
             <l>Er ist berauscht, glaub ich. Ich bin es auch.</l>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfte Szene</head>
-          <stage>
-            <hi>Merkur. Charis.</hi>
-          </stage>
+          <stage>Merkur. Charis.</stage>
           <sp who="#charis">
             <speaker>CHARIS</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Das nenn ich Zärtlichkeit mir! Das mir Treue!</l>
               <l>Das mir ein artig Fest, wenn Eheleute</l>
@@ -1386,9 +1326,7 @@
           </sp>
           <sp who="#merkur">
             <speaker>MERKUR</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Jetzt muß ich eilen und die Nacht erinnern,</l>
               <l>Daß uns der Weltkreis nicht aus aller Ordnung kommt.</l>
@@ -1400,9 +1338,7 @@
           </sp>
           <sp who="#charis">
             <speaker>CHARIS</speaker>
-            <stage>
-              <hi>laut.</hi>
-            </stage>
+            <stage>laut.</stage>
             <l>Jetzt seht den Unempfindlichen! da geht er.</l>
           </sp>
           <sp who="#merkur">
@@ -1578,9 +1514,7 @@
               <l>Fahr wohl jetzt, Charis, Schatzkind! Fort muß ich.</l>
               <l>Amphitryon wird schon im Lager sein.</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
           <sp who="#charis">
             <speaker>CHARIS.</speaker>
@@ -1596,12 +1530,11 @@
         </div>
       </div>
       <div type="act">
-        <head>2. Akt</head>
+        <head>Zweiter Akt</head>
+        <stage>Es ist Tag.</stage>
         <div type="scene">
           <head>Erste Szene</head>
-          <stage>
-            <hi>Amphitryon. Sosias.</hi>
-          </stage>
+          <stage>Amphitryon. Sosias.</stage>
           <sp who="#amphitryon">
             <speaker>AMPHITRYON.</speaker>
             <lg>
@@ -1866,7 +1799,7 @@
               <l>Daß er von dieser Sache was begreift.</l>
               <l>Es ist gehauen nicht und nicht gestochen,</l>
               <l>Ein Vorfall, koboldartig, wie ein Märchen,</l>
-              <l>Und dennoch <hi>ist</hi> es, wie das Sonnenlicht.</l>
+              <l>Und dennoch <emph>ist</emph> es, wie das Sonnenlicht.</l>
             </lg>
           </sp>
           <sp who="#amphitryon">
@@ -2045,9 +1978,7 @@
           </sp>
           <sp who="#sosias">
             <speaker>SOSIAS</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>So ist's. Weil es aus meinem Munde kommt,</l>
               <l>Ist's albern Zeug, nicht wert, daß man es höre.</l>
@@ -2066,9 +1997,7 @@
         </div>
         <div type="scene">
           <head>Zweite Szene</head>
-          <stage>
-            <hi>Alkmene. Charis. Die Vorigen.</hi>
-          </stage>
+          <stage>Alkmene. Charis. Die Vorigen.</stage>
           <sp who="#alkmene">
             <speaker>ALKMENE.</speaker>
             <lg>
@@ -2077,9 +2006,7 @@
               <l>Laß ihren großen, heil'gen Schutz noch ferner</l>
               <l><pb n="352"/> Mich auf den besten Gatten niederflehn.</l>
             </lg>
-            <stage>
-              <hi>Da sie den Amphitryon erblickt.</hi>
-            </stage>
+            <stage>Da sie den Amphitryon erblickt.</stage>
             <l>O Gott! Amphitryon!</l>
           </sp>
           <sp who="#amphitryon">
@@ -2355,20 +2282,14 @@
           <sp who="#sosias">
             <speaker>SOSIAS.</speaker>
             <l>Hier.</l>
-            <stage>
-              <hi>Er zieht ein Kästchen aus der Tasche.</hi>
-            </stage>
+            <stage>Er zieht ein Kästchen aus der Tasche.</stage>
           </sp>
           <sp who="#amphitryon">
             <speaker>AMPHITRYON.</speaker>
             <l>Das Siegel ist noch unverletzt!</l>
-            <stage>
-              <hi>Er betrachtet den Gürtel an Alkmenes Brust.</hi>
-            </stage>
+            <stage>Er betrachtet den Gürtel an Alkmenes Brust.</stage>
             <l>Und gleichwohl – trügen mich nicht alle Sinne –</l>
-            <stage>
-              <hi>Zu Sosias.</hi>
-            </stage>
+            <stage>Zu Sosias.</stage>
             <l>Schnell öffne mir das Schloß.</l>
           </sp>
           <sp who="#sosias">
@@ -2401,9 +2322,7 @@
           </sp>
           <sp who="#alkmene">
             <speaker>ALKMENE</speaker>
-            <stage>
-              <hi>zu Charis.</hi>
-            </stage>
+            <stage>zu Charis.</stage>
             <lg>
               <l>Was kann in aller Welt ihn so bewegen?</l>
               <l>Warum ergreift Bestürzung ihn, Entgeisterung,</l>
@@ -2422,9 +2341,7 @@
           </sp>
           <sp who="#alkmene">
             <speaker>ALKMENE</speaker>
-            <stage>
-              <hi>zu Amphitryon.</hi>
-            </stage>
+            <stage>zu Amphitryon.</stage>
             <lg>
               <l>Nach diesem Zeugnis, sonderbarer Freund,</l>
               <l>Wirst du noch leugnen, daß du mir erschienst</l>
@@ -2548,9 +2465,7 @@
           </sp>
           <sp who="#amphitryon">
             <speaker>AMPHITRYON</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <l>Kann man, frag ich, den Dolch lebhafter fühlen?</l>
           </sp>
           <sp who="#alkmene">
@@ -2683,9 +2598,7 @@
               <l>Schweig, ich will nichts wissen.</l>
               <l>Du bleibst, und harrst auf diesem Platze mein.</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
           <sp who="#charis">
             <speaker>CHARIS.</speaker>
@@ -2697,16 +2610,12 @@
               <l>Schweig, ich will nichts wissen,</l>
               <l>Verfolg mich nicht, ich will ganz einsam sein.</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritte Szene</head>
-          <stage>
-            <hi>Charis. Sosias.</hi>
-          </stage>
+          <stage>Charis. Sosias.</stage>
           <sp who="#charis">
             <speaker>CHARIS.</speaker>
             <lg>
@@ -2726,9 +2635,7 @@
           </sp>
           <sp who="#charis">
             <speaker>CHARIS</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Was gibt's? Er hat die Unverschämtheit dort,</l>
               <l>Mir maulend noch den Rücken zuzukehren.</l>
@@ -2948,9 +2855,7 @@
         </div>
         <div type="scene">
           <head>Vierte Szene</head>
-          <stage>
-            <hi>Alkmene. Die Vorigen.</hi>
-          </stage>
+          <stage>Alkmene. Die Vorigen.</stage>
           <sp who="#alkmene">
             <speaker>ALKMENE.</speaker>
             <lg>
@@ -3174,8 +3079,8 @@
               <l>Gewiß, hier ist ein Irrtum, beste Fürstin.</l>
               <l>Wenn dieses fremde Zeichen ihn nicht irrte,</l>
               <l>So folgt, daß es dem Steine eigen ist,</l>
-              <l>Und Wahn hat <hi>gestern</hi> uns getäuscht, geblendet;</l>
-              <l>Doch <hi>heut</hi> ist alles, wie es soll.</l>
+              <l>Und Wahn hat <emph>gestern</emph> uns getäuscht, geblendet;</l>
+              <l>Doch <emph>heut</emph> ist alles, wie es soll.</l>
             </lg>
           </sp>
           <sp who="#alkmene">
@@ -3185,8 +3090,8 @@
               <l>Und jetzt mit allen Feldherrn wiederkehrte,</l>
               <l>Und die Behauptung rasend wiederholte,</l>
               <l><pb n="366"/> Daß er die Schwelle noch des Hauses nicht betrat!</l>
-              <l>Nicht nur entblößt bin ich von <hi>jedem</hi> Zeugnis,</l>
-              <l>Ein Zeugnis <hi>wider mich</hi> ist dieser Stein.</l>
+              <l>Nicht nur entblößt bin ich von <emph>jedem</emph> Zeugnis,</l>
+              <l>Ein Zeugnis <emph>wider mich</emph> ist dieser Stein.</l>
               <l>Was kann ich, ich Verwirrte, dem entgegnen?</l>
               <l>Wohin rett ich vor Schmerz mich, vor Vernichtung,</l>
               <l>Wenn der Verdacht der Männer ihn geprüft?</l>
@@ -3197,7 +3102,7 @@
               <l>Ja, schwör ich auf den Altar gleich, daß er</l>
               <l>Mir das Gestein selbst gestern überreicht,</l>
               <l>Bin ich wohl sicher, sprich, daß ich auch gestern</l>
-              <l>Das <hi>Zeichen</hi>, das hier steht, von ihm empfing?</l>
+              <l>Das <emph>Zeichen</emph>, das hier steht, von ihm empfing?</l>
             </lg>
           </sp>
           <sp who="#charis">
@@ -3207,9 +3112,7 @@
         </div>
         <div type="scene">
           <head>Fünfte Szene</head>
-          <stage>
-            <hi>Jupiter. Die Vorigen.</hi>
-          </stage>
+          <stage>Jupiter. Die Vorigen.</stage>
           <sp who="#alkmene">
             <speaker>ALKMENE.</speaker>
             <lg>
@@ -3339,9 +3242,8 @@
           <sp who="#jupiter">
             <speaker>JUPITER.</speaker>
             <lg>
-              <l><hi>Er</hi> war</l>
-              <l>Der Hintergangene, mein Abgott! <hi>Ihn</hi>
-              </l>
+              <l><emph>Er</emph> war</l>
+              <l>Der Hintergangene, mein Abgott! <emph>Ihn</emph></l>
               <l>Hat seine böse Kunst, nicht dich getäuscht,</l>
               <l>Nicht dein unfehlbares Gefühl! Wenn er</l>
               <l>In seinem Arm dich wähnte, lagst du an</l>
@@ -3554,7 +3456,7 @@
             <speaker>JUPITER.</speaker>
             <lg>
               <l>Ob du der Gnade wert, ob nicht, kömmt nicht</l>
-              <l>Zu prüfen <hi>dir</hi> zu. Du wirst über dich,</l>
+              <l>Zu prüfen <emph>dir</emph> zu. Du wirst über dich,</l>
               <l>Wie er dich würdiget, ergehen lassen.</l>
               <l>Du unternimmst, Kurzsicht'ge, ihn zu meistern,</l>
               <l>Ihn, der der Menschen Herzen kennt?</l>
@@ -3636,9 +3538,7 @@
           <sp who="#alkmene">
             <speaker>ALKMENE.</speaker>
             <l>Nun ja.</l>
-            <stage>
-              <hi>Sie küßt ihn.</hi>
-            </stage>
+            <stage>Sie küßt ihn.</stage>
           </sp>
           <sp who="#jupiter">
             <speaker>JUPITER.</speaker>
@@ -3720,7 +3620,7 @@
           <sp who="#jupiter">
             <speaker>JUPITER.</speaker>
             <lg>
-              <l>Weshalb <hi>warfst</hi> du aufs Antlitz dich? – War's nicht,</l>
+              <l>Weshalb <emph>warfst</emph> du aufs Antlitz dich? – War's nicht,</l>
               <l><pb n="373"/> Weil in des Blitzes zuckender Verzeichnung</l>
               <l>Du einen wohlbekannten Zug erkannt?</l>
             </lg>
@@ -3769,9 +3669,9 @@
           <sp who="#jupiter">
             <speaker>JUPITER.</speaker>
             <lg>
-              <l>Gewiß! Er kam, <hi>wenn</hi> er dir niederstieg,</l>
-              <l>Dir nur, um dich zu <hi>zwingen</hi> ihn zu denken,</l>
-              <l>Um sich an dir, Vergessenen, zu <hi>rächen</hi>.</l>
+              <l>Gewiß! Er kam, <emph>wenn</emph> er dir niederstieg,</l>
+              <l>Dir nur, um dich zu <emph>zwingen</emph> ihn zu denken,</l>
+              <l>Um sich an dir, Vergessenen, zu <emph>rächen</emph>.</l>
             </lg>
           </sp>
           <sp who="#alkmene">
@@ -3875,9 +3775,7 @@
           </sp>
           <sp who="#jupiter">
             <speaker>JUPITER</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <l>Verflucht der Wahn, der mich hieher gelockt!</l>
             <pb n="375"/>
           </sp>
@@ -3896,7 +3794,7 @@
               <l>Auch der Olymp ist öde ohne Liebe.</l>
               <l>Was gibt der Erdenvölker Anbetung</l>
               <l>Gestürzt in Staub, der Brust, der lechzenden?</l>
-              <l><hi>Er</hi> will geliebt sein, nicht ihr Wahn von ihm.</l>
+              <l><emph>Er</emph> will geliebt sein, nicht ihr Wahn von ihm.</l>
               <l>In ew'ge Schleier eingehüllt,</l>
               <l>Möcht er sich selbst in einer Seele spiegeln,</l>
               <l>Sich aus der Träne des Entzückens widerstrahlen.</l>
@@ -4054,21 +3952,15 @@
               <l>Und du, du gehst, und rufst zu einem Feste</l>
               <l>Im Lager mir, wo du sie triffst, die Gäste.</l>
             </lg>
-            <stage>
-              <hi>Beide ab.</hi>
-            </stage>
+            <stage>Beide ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Sechste Szene</head>
-          <stage>
-            <hi>Charis. Sosias.</hi>
-          </stage>
+          <stage>Charis. Sosias.</stage>
           <sp who="#charis">
             <speaker>CHARIS</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Was hast du da gehört, Unselige?</l>
               <l>Olymp'sche Götter wären es gewesen?</l>
@@ -4079,23 +3971,17 @@
           </sp>
           <sp who="#sosias">
             <speaker>SOSIAS</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <l>Der Blitzgott! Zeus soll es gewesen sein.</l>
           </sp>
           <sp who="#charis">
             <speaker>CHARIS</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <l>Pfui, schäme dich, wie du dich aufgeführt.</l>
           </sp>
           <sp who="#sosias">
             <speaker>SOSIAS</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Mein Seel, er war nicht schlecht bedient.</l>
               <l>Ein Kerl, der seinen Mann stund, und sich</l>
@@ -4104,13 +3990,9 @@
           </sp>
           <sp who="#charis">
             <speaker>CHARIS</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <l>Wer weiß auch, irr ich nicht. Ich muß ihn prüfen.</l>
-            <stage>
-              <hi>Laut.</hi>
-            </stage>
+            <stage>Laut.</stage>
             <l>Komm, laß uns Frieden machen auch, Sosias.</l>
           </sp>
           <sp who="#sosias">
@@ -4168,16 +4050,12 @@
               <l>Pferd und Esel!</l>
               <l>Ein Gott und eine Fürstin!</l>
             </lg>
-            <stage>
-              <hi>Für sich.</hi>
-            </stage>
+            <stage>Für sich.</stage>
             <lg>
               <l>Der auch kömmt</l>
               <l>Wohl vom Olymp nicht.</l>
             </lg>
-            <stage>
-              <hi>Laut.</hi>
-            </stage>
+            <stage>Laut.</stage>
             <lg>
               <l>Du beliebst</l>
               <l>Mit deiner schlechten Dienerin zu scherzen.</l>
@@ -4343,9 +4221,7 @@
               <l>Ich bin der alte, wohlbekannte Esel</l>
               <l>Sosias!</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
           <sp who="#charis">
             <speaker>CHARIS.</speaker>
@@ -4355,14 +4231,12 @@
               <l>Halunke, gut, daß ich das weiß,</l>
               <l>So wird die Bratwurst heute dir nicht heiß.</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>3. Akt</head>
+        <head>Dritter Akt</head>
         <div type="scene">
           <head>Erste Szene</head>
           <sp who="#amphitryon">
@@ -4403,14 +4277,10 @@
         </div>
         <div type="scene">
           <head>Zweite Szene</head>
-          <stage>
-            <hi>Merkur auf dem Altan. Amphitryon.</hi>
-          </stage>
+          <stage>Merkur auf dem Altan. Amphitryon.</stage>
           <sp who="#merkur">
             <speaker>MERKUR</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Auf dies verliebte Erdenabenteuer</l>
               <l>Dir, alter Vater Jupiter, zu folgen,</l>
@@ -4725,9 +4595,7 @@
               <l>Willst du nicht, daß er selber dir erscheine,</l>
               <l>Und deine Unverschämtheit strafen soll.</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
         <div type="scene">
@@ -4752,9 +4620,7 @@
         </div>
         <div type="scene">
           <head>Vierte Szene</head>
-          <stage>
-            <hi>Sosias. Feldherren. Amphitryon.</hi>
-          </stage>
+          <stage>Sosias. Feldherren. Amphitryon.</stage>
           <sp who="#sosias">
             <speaker>SOSIAS.</speaker>
             <lg>
@@ -4792,9 +4658,7 @@
           <sp who="#amphitryon">
             <speaker>AMPHITRYON.</speaker>
             <l>Du wußtest es, Verräter?</l>
-            <stage>
-              <hi>Er legt die Hand an den Degen.</hi>
-            </stage>
+            <stage>Er legt die Hand an den Degen.</stage>
           </sp>
           <sp who="#sosias">
             <speaker>SOSIAS.</speaker>
@@ -4803,9 +4667,7 @@
           <sp who="#erster_feldherr">
             <speaker>ERSTER FELDHERR.</speaker>
             <l>Verzeiht!</l>
-            <stage>
-              <hi>Er fällt ihm in den Arm.</hi>
-            </stage>
+            <stage>Er fällt ihm in den Arm.</stage>
           </sp>
           <sp who="#amphitryon">
             <speaker>AMPHITRYON.</speaker>
@@ -4851,9 +4713,7 @@
           <sp who="#sosias">
             <speaker>SOSIAS.</speaker>
             <l>Ich bin schon tot.</l>
-            <stage>
-              <hi>Er sinkt in die Knie.</hi>
-            </stage>
+            <stage>Er sinkt in die Knie.</stage>
           </sp>
           <sp who="#erster_feldherr">
             <speaker>ERSTER FELDHERR.</speaker>
@@ -4942,16 +4802,12 @@
               <l>Oh! hier im Busen brennt's, mich aufzuklären,</l>
               <l>Und ach! ich fürcht es, wie den Tod.</l>
             </lg>
-            <stage>
-              <hi>Er klopft.</hi>
-            </stage>
+            <stage>Er klopft.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfte Szene</head>
-          <stage>
-            <hi>Jupiter. Die Vorigen.</hi>
-          </stage>
+          <stage>Jupiter. Die Vorigen.</stage>
           <sp who="#jupiter">
             <speaker>JUPITER.</speaker>
             <lg>
@@ -4992,15 +4848,11 @@
               <l>Ihr Herrn, hier ist Amphitryon, der andre,</l>
               <l>Ein Schubiack ist's, der Züchtigung verdient.</l>
             </lg>
-            <stage>
-              <hi>Er stellt sich auf Jupiters Seite.</hi>
-            </stage>
+            <stage>Er stellt sich auf Jupiters Seite.</stage>
           </sp>
           <sp who="#dritter_feldherr">
             <speaker>DRITTER FELDHERR</speaker>
-            <stage>
-              <hi>auf Amphitryon deutend.</hi>
-            </stage>
+            <stage>auf Amphitryon deutend.</stage>
             <l>Unglaublich! Dieser ein Verfälscher hier?</l>
           </sp>
           <sp who="#amphitryon">
@@ -5009,9 +4861,7 @@
               <l>Gnug der unwürdigen Bezauberung!</l>
               <l>Ich schließe das Geheimnis auf.</l>
             </lg>
-            <stage>
-              <hi>Er legt die Hand an den Degen.</hi>
-            </stage>
+            <stage>Er legt die Hand an den Degen.</stage>
           </sp>
           <sp who="#erster_feldherr">
             <speaker>ERSTER FELDHERR.</speaker>
@@ -5244,16 +5094,12 @@
               <l>Ihm in die Brust, aussaugend, daß der Wind</l>
               <l>Mit seinem trocknen Bein mir spielen soll.</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Sechste Szene</head>
-          <stage>
-            <hi>Jupiter. Sosias. Die Feldherrn.</hi>
-          </stage>
+          <stage>Jupiter. Sosias. Die Feldherrn.</stage>
           <sp who="#jupiter">
             <speaker>JUPITER.</speaker>
             <lg>
@@ -5274,9 +5120,7 @@
               <l>Jetzt schließt mit dem Erstaunen Waffenstillstand,</l>
               <l>Und geht, und tischt, und pokuliert bis morgen.</l>
             </lg>
-            <stage>
-              <hi>Jupiter und die Feldherrn ab.</hi>
-            </stage>
+            <stage>Jupiter und die Feldherrn ab.</stage>
             <pb n="392"/>
           </sp>
         </div>
@@ -5296,9 +5140,7 @@
         </div>
         <div type="scene">
           <head>Achte Szene</head>
-          <stage>
-            <hi>Merkur. Sosias.</hi>
-          </stage>
+          <stage>Merkur. Sosias.</stage>
           <sp who="#merkur">
             <speaker>MERKUR.</speaker>
             <lg>
@@ -5363,11 +5205,11 @@
           <sp who="#sosias">
             <speaker>SOSIAS.</speaker>
             <lg>
-              <l>Gleichviel! <hi>Ein</hi> mütterlicher Schoß hat uns</l>
-              <l>Geboren, <hi>eine</hi> Hütte uns beschirmt,</l>
-              <l>In <hi>einem</hi> Bette haben wir geschlafen,</l>
-              <l><hi>Ein</hi> Kleid ward brüderlich, <hi>ein</hi> Los uns beiden,</l>
-              <l>So laß uns auch aus <hi>einer</hi> Schüssel essen.</l>
+              <l>Gleichviel! <emph>Ein</emph> mütterlicher Schoß hat uns</l>
+              <l>Geboren, <emph>eine</emph> Hütte uns beschirmt,</l>
+              <l>In <emph>einem</emph> Bette haben wir geschlafen,</l>
+              <l><emph>Ein</emph> Kleid ward brüderlich, <emph>ein</emph> Los uns beiden,</l>
+              <l>So laß uns auch aus <emph>einer</emph> Schüssel essen.</l>
             </lg>
           </sp>
           <sp who="#merkur">
@@ -5510,9 +5352,7 @@
           </sp>
           <sp who="#sosias">
             <speaker>SOSIAS</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Wie ich dich schmeißen würde, hätt ich Herz,</l>
               <l>Du von der Bank gefallner Gauner, du,</l>
@@ -5565,9 +5405,7 @@
               <l>Du lebst jetzt wohl. Doch juckt der Rücken dir,</l>
               <l>In diesem Haus hier kannst du mich erfragen.</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
         <div type="scene">
@@ -5596,12 +5434,8 @@
         </div>
         <div type="scene">
           <head>Zehnte Szene</head>
-          <stage>
-            <hi>Amphitryon mit Obersten, von der einen Seite.</hi>
-          </stage>
-          <stage>
-            <hi>Volk, von der andern.</hi>
-          </stage>
+          <stage>Amphitryon mit Obersten, von der einen Seite.</stage>
+          <stage>Volk, von der andern.</stage>
           <sp who="#amphitryon">
             <speaker>AMPHITRYON.</speaker>
             <l>Seid mir gegrüßt! Wer rief euch, meine Freunde?</l>
@@ -5617,7 +5451,7 @@
             <speaker>AMPHITRYON.</speaker>
             <l>Herolde! Und zu welchem Zweck?</l>
           </sp>
-          <sp who="#derselbe">
+          <sp who="#einer_aus_dem_volk">
             <speaker>DERSELBE.</speaker>
             <lg>
               <l>Wir sollten Zeugen sein, so sagte man,</l>
@@ -5628,9 +5462,7 @@
           </sp>
           <sp who="#amphitryon">
             <speaker>AMPHITRYON</speaker>
-            <stage>
-              <hi>zu den Obersten.</hi>
-            </stage>
+            <stage>zu den Obersten.</stage>
             <lg>
               <l>Der Übermüt'ge!</l>
               <l>Kann man die Unverschämtheit weiter treiben?</l>
@@ -5654,9 +5486,7 @@
           </sp>
           <sp who="#amphitryon">
             <speaker>AMPHITRYON</speaker>
-            <stage>
-              <hi>zum Volk.</hi>
-            </stage>
+            <stage>zum Volk.</stage>
             <lg>
               <l>Ihr Bürger Thebens, hört mich an!</l>
               <l>Ich bin es nicht, der euch hieher gerufen,</l>
@@ -5703,7 +5533,7 @@
               <l>Der dieses Helmes Feder eingeknickt.</l>
             </lg>
           </sp>
-          <sp who="#volk">
+          <sp who="#das_volk">
             <speaker>VOLK.</speaker>
             <lg>
               <l>Oh! Oh! Was machst du? laß die Feder ganz,</l>
@@ -5801,12 +5631,8 @@
         </div>
         <div type="scene">
           <head>Eilfte Szene</head>
-          <stage>
-            <hi>Jupiter. Alkmene. Merkur. Charis.</hi>
-          </stage>
-          <stage>
-            <hi>Feldherren. Die Vorigen.</hi>
-          </stage>
+          <stage>Jupiter. Alkmene. Merkur. Charis.</stage>
+          <stage>Feldherren. Die Vorigen.</stage>
           <sp who="#alkmene">
             <speaker>ALKMENE.</speaker>
             <lg>
@@ -5814,7 +5640,7 @@
               <l>Und schmachvoll willst du seinem Blick mich zeigen?</l>
             </lg>
           </sp>
-          <sp who="#volk">
+          <sp who="#das_volk">
             <speaker>VOLK.</speaker>
             <l>Ihr ew'gen Götter! Was erblicken wir!</l>
           </sp>
@@ -5822,7 +5648,7 @@
             <speaker>JUPITER.</speaker>
             <lg>
               <l>Die ganze Welt, Geliebte, muß erfahren,</l>
-              <l>Daß <hi>niemand</hi> deiner Seele nahte,</l>
+              <l>Daß <emph>niemand</emph> deiner Seele nahte,</l>
               <l>Als nur dein Gatte, als Amphitryon.</l>
             </lg>
           </sp>
@@ -5842,7 +5668,7 @@
             <speaker>JUPITER.</speaker>
             <lg>
               <l>Du bist dir's, Teuerste, du bist mir's schuldig,</l>
-              <l>Du <hi>mußt</hi>, du wirst, mein Leben, dich bezwingen;</l>
+              <l>Du <emph>mußt</emph>, du wirst, mein Leben, dich bezwingen;</l>
               <l>Komm, sammle dich, dein wartet ein Triumph!</l>
             </lg>
           </sp>
@@ -5860,15 +5686,11 @@
               <l>Mordhund! Sie kamen dir den Tod zu geben.</l>
               <l>Auf jetzt!</l>
             </lg>
-            <stage>
-              <hi>Er zieht.</hi>
-            </stage>
+            <stage>Er zieht.</stage>
           </sp>
           <sp who="#zweiter_feldherr">
             <speaker>ZWEITER FELDHERR</speaker>
-            <stage>
-              <hi>tritt ihm in den Weg.</hi>
-            </stage>
+            <stage>tritt ihm in den Weg.</stage>
             <l>Halt dort!</l>
           </sp>
           <sp who="#amphitryon">
@@ -5877,9 +5699,7 @@
           </sp>
           <sp who="#erster_feldherr">
             <speaker>ERSTER FELDHERR</speaker>
-            <stage>
-              <hi>auf Amphitryon deutend.</hi>
-            </stage>
+            <stage>auf Amphitryon deutend.</stage>
             <l>Thebaner, greift ihn, ruf ich, den Verräter!</l>
           </sp>
           <sp who="#amphitryon">
@@ -5900,9 +5720,7 @@
               <l>Tod! Teufel! Wut und keine Rache!</l>
               <l>Vernichtung!</l>
             </lg>
-            <stage>
-              <hi>Er fällt dem Sosias in die Arme.</hi>
-            </stage>
+            <stage>Er fällt dem Sosias in die Arme.</stage>
           </sp>
           <sp who="#jupiter">
             <speaker>JUPITER.</speaker>
@@ -5927,9 +5745,7 @@
           </sp>
           <sp who="#amphitryon">
             <speaker>AMPHITRYON</speaker>
-            <stage>
-              <hi>erwachend.</hi>
-            </stage>
+            <stage>erwachend.</stage>
             <l>Wen kennt die eigne Frau hier?</l>
           </sp>
           <sp who="#erster_oberster">
@@ -5948,9 +5764,7 @@
               <l>In Staub zu treten, die das sagt!</l>
               <l>Sie anerkennt ihn nicht!</l>
             </lg>
-            <stage>
-              <hi>Er erhebt sich wieder.</hi>
-            </stage>
+            <stage>Er erhebt sich wieder.</stage>
           </sp>
           <sp who="#erster_feldherr">
             <speaker>ERSTER FELDHERR.</speaker>
@@ -5965,7 +5779,7 @@
             <lg>
               <l>Sie anerkennt ihn nicht, ich wiederhol's!</l>
               <l>– Wenn sie als Gatten ihn erkennen kann,</l>
-              <l>So frag ich nichts danach mehr, wer ich <hi>bin</hi>:</l>
+              <l>So frag ich nichts danach mehr, wer ich <emph>bin</emph>:</l>
               <l>So will ich ihn Amphitryon begrüßen.</l>
             </lg>
           </sp>
@@ -6025,7 +5839,7 @@
               <l>Als sie dort jenen Fremdling anerkennen.</l>
             </lg>
           </sp>
-          <sp who="#volk">
+          <sp who="#das_volk">
             <speaker>VOLK.</speaker>
             <l>Wär's möglich? Er, Amphitryon? Sie zaudert.</l>
           </sp>
@@ -6137,9 +5951,7 @@
               <l>Noch keiner Fürstentochter ist geworden.</l>
               <l>Und einen Augenblick verweilst du noch.</l>
             </lg>
-            <stage>
-              <hi>Zu Amphitryon.</hi>
-            </stage>
+            <stage>Zu Amphitryon.</stage>
             <l>Glaubst du nunmehr, daß ich Amphitryon?</l>
           </sp>
           <sp who="#amphitryon">
@@ -6233,9 +6045,7 @@
           </sp>
           <sp who="#jupiter">
             <speaker>JUPITER</speaker>
-            <stage>
-              <hi>zu Alkmenen.</hi>
-            </stage>
+            <stage>zu Alkmenen.</stage>
             <l>Meinst du, dir sei Amphitryon erschienen?</l>
           </sp>
           <sp who="#alkmene">
@@ -6255,20 +6065,16 @@
           <sp who="#amphitryon">
             <speaker>AMPHITRYON.</speaker>
             <l>Heraus jetzt mit der Sprache dort: Wer bist du?</l>
-            <stage>
-              <hi>Blitz und Donnerschlag. Die Szene verhüllt sich mit Wolken. Es schwebt ein Adler
-                mit dem Donnerkeil aus den Wolken nieder.</hi>
-            </stage>
+            <stage>Blitz und Donnerschlag. Die Szene verhüllt sich mit Wolken. Es schwebt ein Adler
+              mit dem Donnerkeil aus den Wolken nieder.</stage>
           </sp>
           <sp who="#jupiter">
             <speaker>JUPITER.</speaker>
             <l>Du willst es wissen?</l>
-            <stage>
-              <hi>Er ergreift den Donnerkeil; der Adler entflieht.</hi>
-            </stage>
+            <stage>Er ergreift den Donnerkeil; der Adler entflieht.</stage>
             <pb n="404"/>
           </sp>
-          <sp who="#volk">
+          <sp who="#das_volk">
             <speaker>VOLK.</speaker>
             <l>Götter!</l>
           </sp>
@@ -6276,16 +6082,14 @@
             <speaker>JUPITER.</speaker>
             <l>Wer bin ich?</l>
           </sp>
-          <sp who="#die_feldherren #obersten">
+          <sp who="#die_feldherren #die_obersten">
             <speaker>DIE FELDHERREN UND OBERSTEN.</speaker>
             <l>Der Schreckliche! Er selbst ist's! Jupiter!</l>
           </sp>
           <sp who="#alkmene">
             <speaker>ALKMENE.</speaker>
             <l>Schützt mich ihr Himmlischen!</l>
-            <stage>
-              <hi>Sie fällt in Amphitryons Arme.</hi>
-            </stage>
+            <stage>Sie fällt in Amphitryons Arme.</stage>
           </sp>
           <sp who="#amphitryon">
             <speaker>AMPHITRYON.</speaker>
@@ -6295,12 +6099,10 @@
               <l>Und dein ist alles, was ich habe.</l>
             </lg>
           </sp>
-          <sp who="#volk">
+          <sp who="#das_volk">
             <speaker>VOLK.</speaker>
             <l>Er ist's! In Staub! In Staub das Antlitz hin!</l>
-            <stage>
-              <hi>Alles wirft sich zur Erde außer Amphitryon.</hi>
-            </stage>
+            <stage>Alles wirft sich zur Erde außer Amphitryon.</stage>
           </sp>
           <sp who="#jupiter">
             <speaker>JUPITER.</speaker>
@@ -6363,11 +6165,9 @@
               <l>Doch laß sie ruhn, wenn sie dir bleiben soll! –</l>
               <l>Hermes!</l>
             </lg>
-            <stage>
-              <hi>Er verliert sich in den Wolken, welche sich mittlerweile in der Höhe geöffnet
-                haben, und den Gipfel des Olymps zeigen, auf welchem die Olympischen gelagert
-                sind.</hi>
-            </stage>
+            <stage>Er verliert sich in den Wolken, welche sich mittlerweile in der Höhe geöffnet
+              haben, und den Gipfel des Olymps zeigen, auf welchem die Olympischen gelagert
+              sind.</stage>
           </sp>
           <sp who="#alkmene">
             <speaker>ALKMENE.</speaker>
@@ -6385,9 +6185,7 @@
               <l>Und daß ich mehr und minder nicht, als Hermes,</l>
               <l>Der Fußgeflügelte der Götter bin!</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
           <sp who="#sosias">
             <speaker>SOSIAS.</speaker>
