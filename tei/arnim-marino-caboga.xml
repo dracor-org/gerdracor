@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Marino Caboga</title>
+        <title type="main">Marino Caboga</title>
+        <title type="sub">Dramatische Erzählung in drei Handlungen</title>
         <author key="pnd:118504177">Arnim, Ludwig Achim von</author>
       </titleStmt>
       <publicationStmt>
@@ -43,59 +44,71 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="johannes_müller">
-            <persName>JOHANNES MÜLLER</persName>
+          <person xml:id="johannes_mueller" sex="MALE">
+            <persName>Johannes Müller</persName>
           </person>
-          <person xml:id="büsching">
-            <persName>BÜSCHING</persName>
+          <person xml:id="buesching" sex="MALE">
+            <persName>Büsching</persName>
           </person>
-          <person xml:id="bettler">
-            <persName>BETTLER</persName>
+          <person xml:id="bettler" sex="MALE">
+            <persName>Bettler</persName>
           </person>
-          <person xml:id="carofilli">
-            <persName>CAROFILLI</persName>
+          <person xml:id="carofilli" sex="MALE">
+            <persName>Carofilli</persName>
           </person>
-          <person xml:id="caboga">
-            <persName>CABOGA</persName>
+          <person xml:id="caboga" sex="MALE">
+            <persName>Caboga</persName>
           </person>
-          <person xml:id="procoli">
-            <persName>PROCOLI</persName>
+          <person xml:id="procoli" sex="MALE">
+            <persName>Procoli</persName>
           </person>
-          <person xml:id="mitrovich">
-            <persName>MITROVICH</persName>
+          <person xml:id="mitrovich" sex="MALE">
+            <persName>Mitrovich</persName>
           </person>
-          <person xml:id="marina">
-            <persName>MARINA</persName>
+          <person xml:id="marina" sex="FEMALE">
+            <persName>Marina</persName>
           </person>
-          <person xml:id="crook">
-            <persName>CROOK</persName>
+          <person xml:id="crook" sex="MALE">
+            <persName>Crook</persName>
           </person>
-          <person xml:id="cornelia">
-            <persName>CORNELIA</persName>
+          <person xml:id="cornelia" sex="FEMALE">
+            <persName>Cornelia</persName>
           </person>
-          <person xml:id="herzog">
-            <persName>HERZOG</persName>
+          <person xml:id="herzog" sex="MALE">
+            <persName>Herzog</persName>
           </person>
-          <person xml:id="viele">
-            <persName>VIELE</persName>
+          <personGrp xml:id="viele_1" sex="UNKNOWN">
+            <name>Viele (I)</name>
+          </personGrp>
+          <person xml:id="ratsherr" sex="MALE">
+            <persName>Ratsherr</persName>
           </person>
-          <person xml:id="ratsherr">
-            <persName>RATSHERR</persName>
+          <personGrp xml:id="alle_1" sex="UNKNOWN">
+            <name>Alle (I)</name>
+          </personGrp>
+          <person xml:id="hitrov" sex="MALE">
+            <persName>Hitrov</persName>
           </person>
-          <person xml:id="hitrov">
-            <persName>HITROV</persName>
+          <person xml:id="czirich" sex="MALE">
+            <persName>Czirich</persName>
           </person>
-          <person xml:id="czirich">
-            <persName>CZIRICH</persName>
+          <personGrp xml:id="alle_2" sex="UNKNOWN">
+            <name>Alle (II)</name>
+          </personGrp>
+          <person xml:id="kassuba" sex="MALE">
+            <persName>Kassuba</persName>
           </person>
-          <person xml:id="kassuba">
-            <persName>KASSUBA</persName>
+          <person xml:id="polo" sex="MALE">
+            <persName>Polo</persName>
           </person>
-          <person xml:id="polo">
-            <persName>POLO</persName>
-          </person>
-          <person xml:id="einer">
-            <persName>EINER</persName>
+          <personGrp xml:id="viele_3" sex="UNKNOWN">
+            <name>Viele (III)</name>
+          </personGrp>
+          <personGrp xml:id="alle_3" sex="UNKNOWN">
+            <name>Alle (III)</name>
+          </personGrp>
+          <person xml:id="einer" sex="MALE">
+            <persName>Einer</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -110,6 +123,7 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
+        <change who="#ff" when="2018-04-29">formalities; work on IDs; add gender info</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -120,8 +134,6 @@
         <head>Marino Caboga</head>
         <head>Dramatische Erzählung in drei Handlungen</head>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head><pb n="466"/> Personen.</head>
@@ -140,17 +152,20 @@
           <castItem>Ratsherrn, Wachen, Mönche, Volkshaufen.</castItem>
         </castList>
       </div>
+      <set>
+        <p>Ort: Ragusa. Zeit: 1667.</p>
+        <p>Zum erstenmal aufgeführt von der neu errichteten Theaterschule auf dem Theater des
+          Marchese, im Casale der Maremme, sonst genannt die Krähenhütte auf der Seehütung.</p>
+      </set>
+    </front>
+    <body>
       <div type="prologue">
         <head>Prolog</head>
-        <stage>
-          <hi>Scene: Ein Büchersaal.</hi>
-        </stage>
-        <sp who="#johannes_müller">
+        <stage>Scene: Ein Büchersaal.</stage>
+        <sp who="#johannes_mueller">
           <speaker>JOHANNES MÜLLER</speaker>
-          <stage>
-            <hi>tritt aus dem Bücherschranke herunter und spricht.</hi>
-          </stage>
-          <p> Langsam erhob sich Ragusa von den Trümmern des großen Erdbebens: sechstausend Bürger
+          <stage>tritt aus dem Bücherschranke herunter und spricht.</stage>
+          <p>Langsam erhob sich Ragusa von den Trümmern des großen Erdbebens: sechstausend Bürger
             waren in demselben verschüttet, die übrigen zerstreut worden. Der große Rat war
             versammelt, als der Stoß den Palast einstürzte, welches den ganzen Adel begrub. Marino
             Caboga, ein leidenschaftlicher Jüngling, der im Senat seinen Oheim umgebracht hatte, war
@@ -158,51 +173,43 @@
             aufloderten und Räuber sich rotteten, ergriff hoher Sinn den Marino Caboga. Er rief die
             Reste der Bürger zur Rettung ihrer Vaterstadt zusammen, so stellte er Ragusa her.</p>
         </sp>
-        <sp who="#büsching">
+        <sp who="#buesching">
           <speaker>BÜSCHING</speaker>
-          <stage>
-            <hi>bietet ihm die Hand und spricht weiter.</hi>
-          </stage>
-          <p> Die Republik Ragusa begreift ein Stück von Dalmatien und liegt am Adriatischen Meere,
+          <stage>bietet ihm die Hand und spricht weiter.</stage>
+          <p>Die Republik Ragusa begreift ein Stück von Dalmatien und liegt am Adriatischen Meere,
             ist aber klein. Die Einwohner sind slawonischen Ursprungs, reden aber fast insgesamt
             italienisch. Der türkische Kaiser ist ihr vornehmster Schutzherr. Die Hauptstadt Ragusa
             ist wohlgebaut, hat einen berühmten Hafen.</p>
-          <stage>
-            <hi>Beide steigen auf die Bücherrepositorien zurück, von denen sie herabgestiegen
-              waren.</hi>
-          </stage>
+          <stage>Beide steigen auf die Bücherrepositorien zurück, von denen sie herabgestiegen
+            waren.</stage>
           <pb n="467"/>
         </sp>
       </div>
       <div type="act">
         <head>Erste Handlung</head>
-        <stage>
-          <hi>Ragusa. Eingang der Marienkirche. Wohlgeordnete Sitze bezeichnen in einer Kapelle den
-            Ort, wo sich der Rat bei feierlicher Gelegenheit versammelt. Ein Bettler mit einem
-            Stelzfuße steht an der Türe. Carofilli, der Weber, tritt ein, sieht sich nach allen
-            Seiten um.</hi>
-        </stage>
+        <stage>Ragusa. Eingang der Marienkirche. Wohlgeordnete Sitze bezeichnen in einer Kapelle den
+          Ort, wo sich der Rat bei feierlicher Gelegenheit versammelt. Ein Bettler mit einem
+          Stelzfuße steht an der Türe. Carofilli, der Weber, tritt ein, sieht sich nach allen Seiten
+          um.</stage>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <l> Gewiß, du suchst mich, mir etwas in die Hand zu drücken.</l>
+          <p>Gewiß, du suchst mich, mir etwas in die Hand zu drücken.</p>
         </sp>
         <sp who="#carofilli">
           <speaker>CAROFILLI</speaker>
-          <stage>
-            <hi>drückt ihm die Hand.</hi>
-          </stage>
-          <l> Mehr kann ich dir nicht geben, Alter.</l>
+          <stage>drückt ihm die Hand.</stage>
+          <p>Mehr kann ich dir nicht geben, Alter.</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <p> Der Händedruck ist mehr wert als ein Skudi, den so ein reicher Herr aus Übermut mir
+          <p>Der Händedruck ist mehr wert als ein Skudi, den so ein reicher Herr aus Übermut mir
             reicht, und in der Angst, ich möchte ihn mit meiner Hand berühren, mir vor die Füße
             fallen läßt zur Erde, daß ich gleich einem Hund mir meinen Brocken suchen soll, und soll
             ihn doch nicht beißen, wie ein Hund.</p>
         </sp>
         <sp who="#carofilli">
           <speaker>CAROFILLI.</speaker>
-          <p> Zehntausend Arten Aussatz nähren sich von solchem reichen Leibe, die Ärzte müssen
+          <p>Zehntausend Arten Aussatz nähren sich von solchem reichen Leibe, die Ärzte müssen
             täglich an ihm flicken, das Beichten nimmt kein Ende, doch halten sie uns armen Leute
             für vergiftet, weil wir uns nicht das Haar mit Rosenöl gesalbt. Das türkische Rosenöl
             kommt teuer mir zu stehn! Weil ich die Schatzung zum Tribut der Türken nicht zahlen
@@ -212,14 +219,14 @@
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <p> Bist besser dran als ich. Sie zwangen mich, die Falken für die Spanier im Gebürg zu
+          <p>Bist besser dran als ich. Sie zwangen mich, die Falken für die Spanier im Gebürg zu
             fangen, die ihnen als Tribut versprochen, da brach ich dieses Bein, und ward aus einem
             rüst'gen Kerl zum Krüppel. Gott weiß, warum er uns verdammt, den Völkern aller Art
             Tribut zu zahlen, und sind doch edler als sie alle.</p>
         </sp>
         <sp who="#carofilli">
           <speaker>CAROFILLI.</speaker>
-          <p> Das macht der Handel der Geschlechter, sie wollen überall ihr Wesen treiben, die
+          <p>Das macht der Handel der Geschlechter, sie wollen überall ihr Wesen treiben, die
             Freundschaft fremder Völker müssen wir bezahlen. Sie sind mit nichts zufrieden, was das
             Land gezogen; sie wollen türkische geblümte Zeuge tragen, mit Griechenweine ihre Kehlen
             netzen. Nur Fremdes gilt. »Zieht hin«, so ruf ich oft, »werdet Türken, wir sind dann
@@ -228,39 +235,39 @@
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <p> Es wird bald alles anders werden, ich spür's in meinem Fuße, mir ist's, als trüg ich
+          <p>Es wird bald alles anders werden, ich spür's in meinem Fuße, mir ist's, als trüg ich
             ihn noch unversehrt. Es liegt was Großes in der Luft.</p>
         </sp>
         <sp who="#carofilli">
           <speaker>CAROFILLI.</speaker>
-          <l> Nun freilich, mit der Luft kam's an, mit gutem Winde, ich mein das Schiff.</l>
+          <p>Nun freilich, mit der Luft kam's an, mit gutem Winde, ich mein das Schiff.</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <l> Was für ein Schiff?</l>
+          <p>Was für ein Schiff?</p>
         </sp>
         <sp who="#carofilli">
           <speaker>CAROFILLI.</speaker>
-          <l> Du sahst doch, daß ich etwas suchte hier.</l>
+          <p>Du sahst doch, daß ich etwas suchte hier.</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <p> Das Schiff der Kirche? Von der soll's kommen? Die Kirche plündert auch die Armen aus,
+          <p>Das Schiff der Kirche? Von der soll's kommen? Die Kirche plündert auch die Armen aus,
             und schont nicht der Reichen.</p>
         </sp>
         <sp who="#carofilli">
           <speaker>CAROFILLI.</speaker>
-          <p> Nicht doch, das Schiff warf gestern abend Anker, ich weiß nicht, wie es heißt, es
+          <p>Nicht doch, das Schiff warf gestern abend Anker, ich weiß nicht, wie es heißt, es
             brachte den holländischen Gesandten mit der großen blonden Tochter, er geht nach
             Konstantinopel, und auf dem Schiffe kam auch der Caboga.</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <l> Marino Caboga?</l>
+          <p>Marino Caboga?</p>
         </sp>
         <sp who="#carofilli">
           <speaker>CAROFILLI.</speaker>
-          <p> Ich sucht ihn hier, denn dies ist seine Kirche, er kauft mir sicher einen andern
+          <p>Ich sucht ihn hier, denn dies ist seine Kirche, er kauft mir sicher einen andern
             Webstuhl. Es war mein Spielkamerad, der hielt auf Ordnung, wir folgten ihm, ogbleich er
             keinem zu befehlen hatte, denn keiner von den Seinen unterstützte ihn, ich glaub, sie
             hätten's gern gesehn, wenn wir ihn tot geschlagen. Ach, würde der Caboga Herzog, da
@@ -269,99 +276,91 @@
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <p> Du bist noch jung, hast noch nicht viel erlebt. Wenn der Caboga erst das rote Kleid
+          <p>Du bist noch jung, hast noch nicht viel erlebt. Wenn der Caboga erst das rote Kleid
             hätte angezogen, da könnt er sich auch nicht mehr rühren, es ist gar eng und warm, die
             Herzogskrone kühlt das Hirn, er würde den angeerbten Schnupfen nicht mehr los.</p>
         </sp>
         <sp who="#carofilli">
           <speaker>CAROFILLI.</speaker>
-          <p> Willst du mir noch das bißchen Hoffnung nehmen, so wär's mir recht, wenn alles heut zu
+          <p>Willst du mir noch das bißchen Hoffnung nehmen, so wär's mir recht, wenn alles heut zu
             Grunde ginge, die reiche Stadt mit allem meinem Plunder.</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <l> Du armer Narr, du denkst, daß Sonn und Mond mit deinem Webstuhl sollen stille
-            stehn.</l>
+          <p>Du armer Narr, du denkst, daß Sonn und Mond mit deinem Webstuhl sollen stille
+            stehn.</p>
         </sp>
         <sp who="#carofilli">
           <speaker>CAROFILLI.</speaker>
-          <l> Nein, nein, sie mögen dreifach glänzend über uns sich zeigen, denn meine Augen sehen
-            den Caboga.</l>
-          <stage>
-            <hi>Procoli und Caboga treten ein.</hi>
-          </stage>
+          <p>Nein, nein, sie mögen dreifach glänzend über uns sich zeigen, denn meine Augen sehen
+            den Caboga.</p>
+          <stage>Procoli und Caboga treten ein.</stage>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA</speaker>
-          <stage>
-            <hi>zu Carofilli.</hi>
-          </stage>
-          <l> Sieh, Carofilli, ich irre nicht, du bist's!</l>
+          <stage>zu Carofilli.</stage>
+          <p>Sieh, Carofilli, ich irre nicht, du bist's!</p>
         </sp>
         <sp who="#carofilli">
           <speaker>CAROFILLI.</speaker>
-          <p> Ja, lieber Herr, ich weiß nicht, wie ich Euch soll nennen <pb n="469"/> denn Freud und
+          <p>Ja, lieber Herr, ich weiß nicht, wie ich Euch soll nennen <pb n="469"/> denn Freud und
             Jammer drücken noch das Herz mir ab. O, nur ein heimlich Wort, ich schäme mich.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Vertrau mir alles. <hi>Er geht mit ihm zur Seite, sie sprechen sachte, und Caboga
-              steckt ihm etwas zu, worauf sich Carofilli mit Bewegungen des Danks entfernt.</hi>
-          </p>
+          <p>Vertrau mir alles. <stage>Er geht mit ihm zur Seite, sie sprechen sachte, und Caboga
+              steckt ihm etwas zu, worauf sich Carofilli mit Bewegungen des Danks
+            entfernt.</stage></p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI</speaker>
-          <stage>
-            <hi>zum Bettler.</hi>
-          </stage>
-          <p> Da, Stelzfuß, hast du deinen Teil von Gottes Segen. So schwere Münzen sind dir wohl
+          <stage>zum Bettler.</stage>
+          <p>Da, Stelzfuß, hast du deinen Teil von Gottes Segen. So schwere Münzen sind dir wohl
             lange nicht gefallen. Bete für mich, daß Gottes Segen noch ein paarmal so über mich
             komme.</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <l> Dank, Herr! Wie heißt Ihr, Herr? Damit die Heiligen mich verstehn, für wen ich
-            bete.</l>
+          <p>Dank, Herr! Wie heißt Ihr, Herr? Damit die Heiligen mich verstehn, für wen ich
+            bete.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Was? Du kennst mich nicht, den Procoli aus der Venezianerstraße, den sogenannten Vogel
+          <p>Was? Du kennst mich nicht, den Procoli aus der Venezianerstraße, den sogenannten Vogel
             Greif von meinem Hauszeichen?</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <l> Nein, Herr, wir Bettler kennen Euer Haus noch nicht.</l>
+          <p>Nein, Herr, wir Bettler kennen Euer Haus noch nicht.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Überlauf mich künftig nur nicht, ich bringe schon selbst, wenn es gut geht. Also, du
+          <p>Überlauf mich künftig nur nicht, ich bringe schon selbst, wenn es gut geht. Also, du
             betest für Procoli Caboga, und auch für den Neffen, Marino Caboga, denn dem danke ich
             diesen Gewinn.</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <p> Gern will ich für den Caboga beten. Heil Euch, junger Herr, ich sah Euch als Kind, nun
+          <p>Gern will ich für den Caboga beten. Heil Euch, junger Herr, ich sah Euch als Kind, nun
             seid Ihr ein großer Kaufmann geworden, und habt Euren Oheim reich gemacht.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Oheim, Ihr macht mich schamrot, – Ihr ehrt den Glückswurf allzu hoch in mir, – da,
+          <p>Oheim, Ihr macht mich schamrot, – Ihr ehrt den Glückswurf allzu hoch in mir, – da,
             Alter, hast du auch von mir ein Scherflein, damit ich Anteil habe an deinem Gebete.</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <p> Ihr schenkt mir, ohne zu sehen, was Ihr aus Eurer Tasche zieht, so nehmt auch etwas
-            aus meinem kleinen Liederkram, wie ich es fasse, wie's das Glück mir in die Hände gibt.
-              <hi>Er reicht ihm ein Blatt, und geht nach einer andern Seite der Kirche.</hi>
-          </p>
+          <p>Ihr schenkt mir, ohne zu sehen, was Ihr aus Eurer Tasche zieht, so nehmt auch etwas aus
+            meinem kleinen Liederkram, wie ich es fasse, wie's das Glück mir in die Hände gibt.
+              <stage>Er reicht ihm ein Blatt, und geht nach einer andern Seite der
+            Kirche.</stage></p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> So recht, du hast Ehre im Leibe, und willst nichts umsonst annehmen. Ich muß doch
+          <p>So recht, du hast Ehre im Leibe, und willst nichts umsonst annehmen. Ich muß doch
             sehen, was das Glück mir hat verehrt.</p>
-          <stage>
-            <hi>Er liest.</hi>
-          </stage>
+          <stage>Er liest.</stage>
           <lg>
             <l>Seh ich aus der feuchten Höhle</l>
             <l>Meiner Augen in die Welt ...</l>
@@ -374,7 +373,7 @@
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Ihr sollt keine traurigen, keine müßigen Tage mehr erleben, Ihr sollt für mein Haus
+          <p>Ihr sollt keine traurigen, keine müßigen Tage mehr erleben, Ihr sollt für mein Haus
             reisen, ich lasse Euch einen Anteil am Gewinn. Weiß Gott, ich hätte Euch solche gute
             Spekulation nicht zugetraut, wie Ihr mir mit den Korallen gemacht habt. Das Doppelte
             haben die Holländer bezahlt, die Venezianer betrogen mich, wart, wart, ich will sie
@@ -382,7 +381,7 @@
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Dank, lieber Oheim, für Euer Anerbieten, aber ich bin nicht geschaffen es anzunehmen.
+          <p>Dank, lieber Oheim, für Euer Anerbieten, aber ich bin nicht geschaffen es anzunehmen.
             Den Handel habe ich wohl kennen gelernt auf meiner Reise, aber ich trieb ihn nur als
             Nebensache, wie ein andrer das Kartenspiel; von meinen Spekulationen führte ich nur die
             aus, die mir Spaß machten, und sie trugen mir so reichlich ein, daß ich überall mit
@@ -390,21 +389,21 @@
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <l> Ihr habt unserm Hause überall Ehre gemacht.</l>
+          <p>Ihr habt unserm Hause überall Ehre gemacht.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Es war mir nicht darum zu tun, ich suchte nur Gelegenheit alles zu sehen, was die
-            Leute ohne Grund sonst den Fremden verbergen. – Wir könnten viel, viel von den fremden
-            Staaten lernen, viel in Künsten, mehr noch in Einrichtungen und Gesetzen.</p>
+          <p>Es war mir nicht darum zu tun, ich suchte nur Gelegenheit alles zu sehen, was die Leute
+            ohne Grund sonst den Fremden verbergen. – Wir könnten viel, viel von den fremden Staaten
+            lernen, viel in Künsten, mehr noch in Einrichtungen und Gesetzen.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <l> Ei was, – Ihr meint, hier wäre nicht alles zum besten eingerichtet?</l>
+          <p>Ei was, – Ihr meint, hier wäre nicht alles zum besten eingerichtet?</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Hier? Betrug, Bestechung, Willkür überall, um <hi>uns,</hi> die wenigen übrigen
+          <p>Hier? Betrug, Bestechung, Willkür überall, um <emph>uns</emph>, die wenigen übrigen
             Geschlechter von denen, die den Staat einst gründeten, statt des ganzen Volkes empor zu
             bringen, in Frevel und Übermut zu schützen; der Herzog immerdar ein trockener Schwamm,
             der sich in seinem kurzen Regierungsjahre voll saugt. Mein Herz entflammte schon früh in
@@ -415,13 +414,13 @@
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Stille, sachte, Neffe, daß uns nur keiner hört, es läuft mir ganz kalt über den
-            Rücken, Ihr tragt seltsame Dinge mit Euch <pb n="471"/> herum. Sollen wir das
-            Lumpenpack, das jedem dienbar, der es bezahlt, in den Rat ziehen?</p>
+          <p>Stille, sachte, Neffe, daß uns nur keiner hört, es läuft mir ganz kalt über den Rücken,
+            Ihr tragt seltsame Dinge mit Euch <pb n="471"/> herum. Sollen wir das Lumpenpack, das
+            jedem dienbar, der es bezahlt, in den Rat ziehen?</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Euch danke ich die Freiheit, in der ich mein Vaterland kennen lernte, andre Söhne der
+          <p>Euch danke ich die Freiheit, in der ich mein Vaterland kennen lernte, andre Söhne der
             Geschlechter werden im Kloster oder in vornehmer Abgeschiedenheit erzogen, Ihr ließet
             mich umherlaufen, daß ich manche Nacht in der Markthalle schlief, da lernte ich unser
             gutes niedergebeugtes Volk kennen, o, es ist fromm und gut wie wenige: aber diese Brut
@@ -429,7 +428,7 @@
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Hätte nicht gedacht, daß Ihr auf so etwas acht gegeben, als Ihr gegen meine Ermahnung
+          <p>Hätte nicht gedacht, daß Ihr auf so etwas acht gegeben, als Ihr gegen meine Ermahnung
             umherlieft; die Leute hielten Euch damals für einfältig und schwachköpfig. Eure
             Handelsspekulationen zeigen Euch ganz anders, aber laßt den Staat gehen, wie er so lange
             gegangen, es hat auch sein Gutes zu herrschen, Ihr werdet's erfahren; schwer wird's, das
@@ -437,23 +436,19 @@
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Himmlisch leicht würde mir's, wenn ich durch meine Geburt nicht mitverflochten wäre in
+          <p>Himmlisch leicht würde mir's, wenn ich durch meine Geburt nicht mitverflochten wäre in
             diesen Strick, der dem Volke um den Hals gelegt ist. Unsre Härte straft uns selbst, denn
             ungewiß unserer eignen Rechte sind wir zinsbar aller Gewalt fremder Völker, mitten in
             unserm Hochmut sind wir nichts als die Schergen fremder Nationen gegen unser eignes
             Volk: bei verschlossenen Türen müssen wir schwelgen, daß Türken und Venezianer nicht
             merken, wie wir reich sind. Ihr schweigt – ich habe recht.</p>
-          <stage>
-            <hi>Es kommt Marina verschleiert in die Kirche; als sie Caboga sieht, bleibt sie einen
-              Augenblick wie erschrocken stehen, dann grüßt sie Procoli und geht vorüber.</hi>
-          </stage>
+          <stage>Es kommt Marina verschleiert in die Kirche; als sie Caboga sieht, bleibt sie einen
+            Augenblick wie erschrocken stehen, dann grüßt sie Procoli und geht vorüber.</stage>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI</speaker>
-          <stage>
-            <hi>leise.</hi>
-          </stage>
-          <p> Sie erkannte ihn, bei allen Teufeln, sie bebte, ich ersticke im bittern Gifte, sie
+          <stage>leise.</stage>
+          <p>Sie erkannte ihn, bei allen Teufeln, sie bebte, ich ersticke im bittern Gifte, sie
             bebte, das Blut spricht noch für ihn, er muß fort auf eine oder die andre Art,
             verfluchtes Spiel des Zufalls, dies Zusammentreffen, er wirft mir die Karten an den
             Kopf, aber ich will den Tisch umwerfen, daß nur ich in die Kasse greife, wenn die
@@ -461,14 +456,14 @@
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Oheim, Ihr seid so nachdenklich geworden bei dem Anblick der Jungfrau, wahr ist's,
-            ihre Gestalt trat mir bekannt entgegen, eine edle Gestalt, vielleicht eine der Unsern.
-            Etwa die Procoli von Delphin?</p>
+          <p>Oheim, Ihr seid so nachdenklich geworden bei dem Anblick der Jungfrau, wahr ist's, ihre
+            Gestalt trat mir bekannt entgegen, eine edle Gestalt, vielleicht eine der Unsern. Etwa
+            die Procoli von Delphin?</p>
           <pb n="472"/>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Weit gefehlt, – mein junger Herr, nichts Edles, aber darum nicht weniger niedlich, –
+          <p>Weit gefehlt, – mein junger Herr, nichts Edles, aber darum nicht weniger niedlich, –
             das schöne Kind setzt mich beim bloßen Anblick wie ein Blitz in Feuer und Flammen, und
             ich ärgre mich, daß ich in der Kirche bin, – kommt Eurem Oheim nicht in die Wildbahn, –
             meine schöne Gärtnerin ist wohlbezahlt. Ihr seht mich an, junger Herr? Auch unser einer
@@ -477,12 +472,12 @@
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Ihr scherzt; wie strenge habt Ihr mir sonst vorgepredigt, alle höllischen Feuer
-            sollten einst den Buhlern ewiglich durch die Adern laufen.</p>
+          <p>Ihr scherzt; wie strenge habt Ihr mir sonst vorgepredigt, alle höllischen Feuer sollten
+            einst den Buhlern ewiglich durch die Adern laufen.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Ihr waret noch zu jung, als Ihr hier die Liebschaft anfingt mit der Tochter des
+          <p>Ihr waret noch zu jung, als Ihr hier die Liebschaft anfingt mit der Tochter des
             Fischers, Gott weiß wie sie hieß; auch nahmet Ihr die Sache zu ernsthaft. Das Sprichwort
             sagt: »Jugend schont, Alter lohnt«, so habe ich's gemacht, und kein Mensch soll mir die
             sechzig Jahre ansehen. Habe noch kein weißes Haar auf dem Kopfe, alle Zähne im Munde,
@@ -492,26 +487,25 @@
             ist nichts, darum mit vollen Zügen erworben und genossen, seht hier meine
             Lebensweisheit. Seid aufrichtig, Ihr seid nicht häßlich, die fremden Weiber müssen Euch
             liebgewonnen haben, beschreibt mir ein paar Eurer Abenteuer, ich höre so etwas gar gern.
-            Sind sie auch schöner wie die Regierungsformen? Sprecht frei von der Leber. <hi>Vor
-              sich.</hi> Ich will ihn dabei zu seiner bebenden Schönen heranführen, sie soll einen
-            doppelten Schreck bekommen, wenn er von seinen liederlichen Streichen los legt.</p>
+            Sind sie auch schöner wie die Regierungsformen? Sprecht frei von der Leber. <stage>Vor
+              sich.</stage> Ich will ihn dabei zu seiner bebenden Schönen heranführen, sie soll
+            einen doppelten Schreck bekommen, wenn er von seinen liederlichen Streichen los
+            legt.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Ich – ich – soll Euch von Liebschaften erzählen? – Auf Ehre, ich weiß von keiner,
-            viele Weiber habe ich ohne Schleier gesehen, aber ich dachte immer an Marina, so weiß
-            ich nicht mehr, ob sie schön waren, aber klug und tätig waren sie, wie keine bei uns,
-            vieles wußten sie zu besorgen, wozu wir hier kaum einsichtige Männer finden, und in
-            ihrer Freiheit schienen sie treuer, als unsre Frauen hinter Gitter und Riegel.</p>
+          <p>Ich – ich – soll Euch von Liebschaften erzählen? – Auf Ehre, ich weiß von keiner, viele
+            Weiber habe ich ohne Schleier gesehen, aber ich dachte immer an Marina, so weiß ich
+            nicht mehr, ob sie schön waren, aber klug und tätig waren sie, wie keine bei uns, vieles
+            wußten sie zu besorgen, wozu wir hier kaum einsichtige Männer finden, und in ihrer
+            Freiheit schienen sie treuer, als unsre Frauen hinter Gitter und Riegel.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI</speaker>
-          <stage>
-            <hi>vor sich.</hi>
-          </stage>
-          <p> Sie bebte, sie bebte, noch trägt sie die Untreue wie ein unreifes Kind, aber die Zeit
-            wird ihre Sünde reifen. Caboga muß fort. – <hi>Laut.</hi> Eure strengen Grundsätze sind
-            wohl <pb n="473"/> nur Redensarten, die Ihr Euch in der Fremde angewöhnt habt; hier
+          <stage>vor sich.</stage>
+          <p>Sie bebte, sie bebte, noch trägt sie die Untreue wie ein unreifes Kind, aber die Zeit
+            wird ihre Sünde reifen. Caboga muß fort. – <stage>Laut.</stage> Eure strengen Grundsätze
+            sind wohl <pb n="473"/> nur Redensarten, die Ihr Euch in der Fremde angewöhnt habt; hier
             werft sie ab, hier gelten sie nichts, Ihr werdet damit ausgelacht. Die Leute meinen Euch
             abgelebt und überdrüssig, und Ihr kriegt keine reiche Erbin; wer vielen kann gefallen,
             der gefällt bald allen; vieljährige Erfahrung macht den Feldherrn, und gibt ihm das
@@ -519,20 +513,20 @@
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Sagt nur, wo Marina wohnt, und Ihr sollt die Freude haben, mich verliebt zu sehen;
+          <p>Sagt nur, wo Marina wohnt, und Ihr sollt die Freude haben, mich verliebt zu sehen;
             vergebens fragte ich nach ihr in ihrem Hause, nur fremde Leute sahen mich verwundert
             an.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Marina, – nicht doch, – die Liebschaft könnte wieder zu weit führen, – bei Gott, es
+          <p>Marina, – nicht doch, – die Liebschaft könnte wieder zu weit führen, – bei Gott, es
             fehlte nur ein Schritt, Ihr hättet das Mädchen geheiratet, und unser Geschlecht auf ewig
             beschimpft, – da schickte ich Euch fort, und das Mädchen heiratete einen Morlacken, und
             zog fort, – weiß nicht, wohin.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Einen Morlacken! Und mir hatte sie im herzzerreißenden Abschied ewige Treue auf ein
+          <p>Einen Morlacken! Und mir hatte sie im herzzerreißenden Abschied ewige Treue auf ein
             Kruzifix geschworen. O, ich war freilich damals zu jung, zu treu, zu ehrlich, ich
             glaubte, und war selig. Fort mit dem Taumel unreifer Jahre, – ich bin zu ernsterem
             Geschäfte geboren, alle Gedanken sollen sich in der einen Liebe zum Vaterlande
@@ -541,10 +535,8 @@
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI</speaker>
-          <stage>
-            <hi>vor sich.</hi>
-          </stage>
-          <p> Das stürzt ihn, das treibt ihn fort, und sie bleibt mir. <hi>Laut.</hi> Recht so,
+          <stage>vor sich.</stage>
+          <p>Das stürzt ihn, das treibt ihn fort, und sie bleibt mir. <stage>Laut.</stage> Recht so,
             Neffe, in solcher Stimmung ist eine Bestimmung, Ihr müßt es dem Herzog und dem Rat derb
             unter die Nase reiben, was Ihr erfahren, sie sollen niesen. Zeigt Euch heute gleich bei
             Eurer Einführung in den Rat, wes Geistes Kind Ihr seid, der Eindruck verlöscht nicht
@@ -556,50 +548,48 @@
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Pelzröcke legen sich leichter ab, als ungerechtes Gut und Herrschaft, ich möchte noch
+          <p>Pelzröcke legen sich leichter ab, als ungerechtes Gut und Herrschaft, ich möchte noch
             erst alle Schliche und Ränke der letzten Zeit sammeln, meine alten Freunde sprechen, daß
             mir kein Einwurf begegnet.</p>
           <pb n="474"/>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Ihr wißt mehr als zuviel, auch habt Ihr nicht Zeit, in Eurer Rede so ins einzelne zu
+          <p>Ihr wißt mehr als zuviel, auch habt Ihr nicht Zeit, in Eurer Rede so ins einzelne zu
             gehen, nur munter drauf, die meisten denken eigentlich wie Ihr, ich sehe Euch schon im
             Taumel nach Hause getragen, und wie mir die Ratsherren Glück wünschen, daß ich solch
-            einen Neffen habe. <hi>Vor sich.</hi> Der soll anlaufen, wie ein Vogel gegen ein
+            einen Neffen habe. <stage>Vor sich.</stage> Der soll anlaufen, wie ein Vogel gegen ein
             Glasfenster.</p>
-          <stage>
-            <hi>Mitrovich kommt eilig, winkt aus der Ferne dem Caboga, und tritt zu Procoli.</hi>
-          </stage>
+          <stage>Mitrovich kommt eilig, winkt aus der Ferne dem Caboga, und tritt zu
+            Procoli.</stage>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <p> Reicher edler Herr, ich spreche doch mit dem mächtigen, weltberühmten Procoli von
+          <p>Reicher edler Herr, ich spreche doch mit dem mächtigen, weltberühmten Procoli von
             Caboga, dessen goldner Greif alle Meere durchstreift?</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <l> Kurz, mein guter Mann, ich bin kein Freund von Lobeserhebungen, und zahle keinen
-            Pfennig dafür.</l>
+          <p>Kurz, mein guter Mann, ich bin kein Freund von Lobeserhebungen, und zahle keinen
+            Pfennig dafür.</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <p> Ich spreche nur, wie mir mein Herr, der smyrnaische Konsul Vandamme vorgesagt, der
+          <p>Ich spreche nur, wie mir mein Herr, der smyrnaische Konsul Vandamme vorgesagt, der
             Eurer vor der Kirche wartet in großer Sehnsucht, weil er von Euch noch alles, was Ihr an
             Korallen besitzt und verschaffen könnt, ankaufen möchte; in einer Stunde geht ein Schiff
             nach Holland, die Sache ist dringend und die Zahlung bar.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Alle Korallen, – bar Geld! – Freund, wenn der Handel gemacht ist, sollt Ihr nicht
+          <p>Alle Korallen, – bar Geld! – Freund, wenn der Handel gemacht ist, sollt Ihr nicht
             vergessen werden. Nehmt es nicht übel, werter Neffe, daß ich Euch verlasse, aber die
-            Sache ist wichtig, – ich komme wieder, gewiß wird heute noch eine Messe gelesen. <hi>Ab
-              mit Mitrovich, der wieder Caboga heimliche Zeichen macht.</hi>
-          </p>
+            Sache ist wichtig, – ich komme wieder, gewiß wird heute noch eine Messe gelesen.
+              <stage>Ab mit Mitrovich, der wieder Caboga heimliche Zeichen macht.</stage></p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Ich kann den Mitrovich nicht verstehen, hat er sie gefunden, soll sie hier erscheinen,
+          <p>Ich kann den Mitrovich nicht verstehen, hat er sie gefunden, soll sie hier erscheinen,
             war es erlogen, was mir Procoli von ihr sagte? Wie, ist der Mann verwandelt, oder kannte
             ich ihn nie, wie schreckte mich sonst sein Ernst, seine Strenge, und doch bewunderte ich
             ihn darum, und buhlte um seinen Beifall. Wie tätig ernst umspannte seine Klugheit die
@@ -613,35 +603,33 @@
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH</speaker>
-          <stage>
-            <hi>eilig herbeilaufend zu Caboga.</hi>
-          </stage>
-          <p> Hast du sie gesprochen, ist sie schon fort? Der Procoli ging in die Falle, er rumpelt
+          <stage>eilig herbeilaufend zu Caboga.</stage>
+          <p>Hast du sie gesprochen, ist sie schon fort? Der Procoli ging in die Falle, er rumpelt
             mit Kisten und Kasten, das ganze Haus läuft und rennt, der Holländer spielt seine Rolle,
             und tut, als ob er alles kaufen will.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <l> Wen soll ich sprechen? Wo? Hier? Marina? Ist sie nicht vermählt?</l>
+          <p>Wen soll ich sprechen? Wo? Hier? Marina? Ist sie nicht vermählt?</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <p> Du hast sie nicht gesprochen? Du hast nicht meine Zeichen verstanden? Hast sie nicht
+          <p>Du hast sie nicht gesprochen? Du hast nicht meine Zeichen verstanden? Hast sie nicht
             erkannt? Vielleicht ist sie in der Kirche, gewiß ging sie an dir vorüber!</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Heilige Jungfrau, sie war's, ich fühlte ihre Nähe, und wollte meinem Herzen nicht
+          <p>Heilige Jungfrau, sie war's, ich fühlte ihre Nähe, und wollte meinem Herzen nicht
             glauben. Er nannte die edle Gestalt sein Liebchen.</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <p> Freilich, – freilich, – sie wohnt bei ihm, dreifach bewacht; draußen stehen die
+          <p>Freilich, – freilich, – sie wohnt bei ihm, dreifach bewacht; draußen stehen die
             Morlacken, die sie in Empfang nehmen, wenn sie die Kirche verläßt.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Das übermannt mich, dieser Schande bin ich nicht gewachsen, die Schönheit entehrt, die
+          <p>Das übermannt mich, dieser Schande bin ich nicht gewachsen, die Schönheit entehrt, die
             ich im Staube verehrte, anbetete, von der ich nichts Unedles mir zu fabeln wagte! Es
             kann nicht sein, – er mag sie unterstützt, erzogen haben, vielleicht kamen meine
             Geschenke nicht immer richtig in ihre Hände, er versprach's mir, sie ihr treulich zu
@@ -650,60 +638,54 @@
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH</speaker>
-          <stage>
-            <hi>lachend.</hi>
-          </stage>
-          <p> Freilich, wer kennt den edlen, keuschen, großmütigen Procoli nicht? Die Mädchen
+          <stage>lachend.</stage>
+          <p>Freilich, wer kennt den edlen, keuschen, großmütigen Procoli nicht? Die Mädchen
             betrachtet er nur wie schöne Bilder aus der rechten Ferne, und bläst den Staub davon ab.
             Aufgeschaut, Ihr seid ein Glückskind, und ich laufe bescheiden in mein Betwinkelchen.
-              <hi>Ab.</hi>
-          </p>
+              <stage>Ab.</stage></p>
         </sp>
         <sp who="#marina">
           <speaker>MARINA</speaker>
-          <stage>
-            <hi>nähert sich Caboga, erhebt den Schleier einen Augenblick.</hi>
-          </stage>
-          <l> Caboga!</l>
+          <stage>nähert sich Caboga, erhebt den Schleier einen Augenblick.</stage>
+          <p>Caboga!</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <l> Bei diesem Blick, bei diesem Ruf, du bist noch mein!</l>
+          <p>Bei diesem Blick, bei diesem Ruf, du bist noch mein!</p>
         </sp>
         <sp who="#marina">
           <speaker>MARINA.</speaker>
-          <p> Könntest du meine Freude wägen, dich wiederzusehen, und du wüßtest, wie viel du mir
+          <p>Könntest du meine Freude wägen, dich wiederzusehen, und du wüßtest, wie viel du mir
             giltst, und was ich dir wert bin! O, welchem Jammer hast du mich überlassen, der Gewalt
             des harten Procoli!</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <l> Dem Procoli? Mich schaudert, du bist sein?</l>
+          <p>Dem Procoli? Mich schaudert, du bist sein?</p>
         </sp>
         <sp who="#marina">
           <speaker>MARINA.</speaker>
-          <p> Noch widerstand meine Liebe zu dir seiner tollen Glut, <pb n="476"/> aber gefangen bin
+          <p>Noch widerstand meine Liebe zu dir seiner tollen Glut, <pb n="476"/> aber gefangen bin
             ich ihm durch Geldschuld, und kein Recht schützt mich gegen ihn. Viele Mörder umgeben
             mich, – sei bedächtig, – begleite mich nicht, ich wäre verloren, – bete zu allen
             Heiligen um Rat, um meinetwillen verzweifle nicht.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Sei ruhig, ich bin nicht mehr der unkluge Knabe, der sein Herz im Munde trug, ich kann
+          <p>Sei ruhig, ich bin nicht mehr der unkluge Knabe, der sein Herz im Munde trug, ich kann
             schweigen, ich kann guten Rat nutzen, die Liebe soll meine Klugheit entzünden; bleibe,
             erhalte dich mir, und vertraue meinem Arm und dem Glück, das uns hier
             zusammenführte.</p>
         </sp>
         <sp who="#marina">
           <speaker>MARINA.</speaker>
-          <p> Du kennst nicht mehr Ragusa, kennst noch nicht Procolis Tücke? Ich sehe die Morlacken,
+          <p>Du kennst nicht mehr Ragusa, kennst noch nicht Procolis Tücke? Ich sehe die Morlacken,
             wende dich fort, leb wohl, du süßer Freund; wo wir uns wiedersehen, ist der Himmel.
-              <hi>Ab.</hi>
-          </p>
+              <stage>Ab.</stage></p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Sei meiner gewiß, solange ich atme! – So nahe war sie mir, und ich darf ihr nicht
+          <p>Sei meiner gewiß, solange ich atme! – So nahe war sie mir, und ich darf ihr nicht
             folgen, und wie nach himmlischer Erscheinung liegt die Welt wesenlos und nichtig vor mir
             offen. Sehnlich und freudig schwelte meine Seele, doch erhebt sich schon das Ungewitter
             der Rache über Procolis Haupt. Übermächtiger Zorn, sahst du nicht ihr mildes Augenlicht,
@@ -716,43 +698,40 @@
             ausrasen, so sei es morgen. Heute diene ich dem Vaterlande aus, daß der morgende Tag
             ganz meine sei; o, daß ich erst abgeschlossen hätte mit diesem Tage! Ha, es nahen die
             Freunde aus Holland, ich kann sie nicht sprechen, jetzt nicht, – aber beten will ich,
-            und meine Unruhe in die ewige Ruhe versenken. <hi>Ab.</hi>
-          </p>
-          <stage>
-            <hi>Crook, der holländische Gesandte am türkischen Hofe tritt ein mit seiner Tochter
-              Cornelia.</hi>
-          </stage>
+            und meine Unruhe in die ewige Ruhe versenken. <stage>Ab.</stage></p>
+          <stage>Crook, der holländische Gesandte am türkischen Hofe tritt ein mit seiner Tochter
+            Cornelia.</stage>
         </sp>
         <sp who="#crook">
           <speaker>CROOK.</speaker>
-          <l> Ich nehme kein Weihwasser, das bin ich meinem reineren Glauben schuldig.</l>
+          <p>Ich nehme kein Weihwasser, das bin ich meinem reineren Glauben schuldig.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <p> Stellt Euch wenigstens so an, Vater, wir werden uns bei den Türken bald noch mehr
+          <p>Stellt Euch wenigstens so an, Vater, wir werden uns bei den Türken bald noch mehr
             verstellen müssen. Ich meine, <pb n="477"/> Caboga kniet dort, es läßt doch gut, diese
             tiefe Demut in der Kirche.</p>
         </sp>
         <sp who="#crook">
           <speaker>CROOK.</speaker>
-          <p> Wäre Caboga nur unseres Glaubens, ich hätte nichts gegen eine Heirat mit dir, mein
+          <p>Wäre Caboga nur unseres Glaubens, ich hätte nichts gegen eine Heirat mit dir, mein
             liebes Kind, einzuwenden, die Hochmögenden könnten ihn an diesem Platze mit Nutzen
             anstellen.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <p> Gnädiger Vater, war meine selige Frau Mutter nicht katholischer Religion, und doch
+          <p>Gnädiger Vater, war meine selige Frau Mutter nicht katholischer Religion, und doch
             beweinet Ihr noch jetzt ihr Ableben? Und wenn ich am Gram sterbe, so werdet Ihr mir auch
             vergebliche Tränen nachweinen.</p>
         </sp>
         <sp who="#crook">
           <speaker>CROOK.</speaker>
-          <p> Die Seite berühre nicht, liebes Kind, du weißt es, ich bin weichherzig. Gott gebe
-            einen guten Ausgang, und dazu bedarf ich deines Rats und deiner Klugheit.</p>
+          <p>Die Seite berühre nicht, liebes Kind, du weißt es, ich bin weichherzig. Gott gebe einen
+            guten Ausgang, und dazu bedarf ich deines Rats und deiner Klugheit.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <p> Ich meine, wir sind auf gutem Wege, der Herzog ging heißhungrig auf das köstliche
+          <p>Ich meine, wir sind auf gutem Wege, der Herzog ging heißhungrig auf das köstliche
             Schaugericht der Souveränität ein, er fühlt sich mächtig genug, alles noch in diesen
             Tagen zu erzwingen. Wir bringen die Nachricht nach Konstantinopel; und, lieber Vater,
             hier tritt mein Plan ein. Schon habe ich dem Herzog eingeredet, wir brauchten Caboga als
@@ -766,13 +745,13 @@
         </sp>
         <sp who="#crook">
           <speaker>CROOK.</speaker>
-          <p> Jedes deiner Worte ist mir Überraschung, du treibst mich zu einem Ziele, was ich nicht
+          <p>Jedes deiner Worte ist mir Überraschung, du treibst mich zu einem Ziele, was ich nicht
             ahnde, wärst du ein Jüngling, wo fändest du eine Grenze? Das geliebte Vaterland sähe
             durch dich die Vollendung seiner kühn begründeten Macht.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <p> Seit ich Caboga sah, berührt mich der Schmerz nicht mehr, daß ich eine Jungfrau bin,
+          <p>Seit ich Caboga sah, berührt mich der Schmerz nicht mehr, daß ich eine Jungfrau bin,
             für mich soll jetzt diese Klugheit wuchern, die Ihr von mir rühmt, die ich sonst für ein
             unruhiges Volk vergeuden würde, dessen eifersüchtiger Freiheitssinn die glücklichsten
             Pläne seiner großen Männer wie Spinngewebe in einem unwirschen Augenblicke zerriß.</p>
@@ -780,71 +759,69 @@
         </sp>
         <sp who="#crook">
           <speaker>CROOK.</speaker>
-          <l> Du machst mich zweifelhaft an allem, was die Erfahrung mir in langen Jahren
-            zusicherte.</l>
+          <p>Du machst mich zweifelhaft an allem, was die Erfahrung mir in langen Jahren
+            zusicherte.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <p> Was ist Erfahrung? Gewohnheit. Was ist Gewohnheit? Ein sanfter Sieg der Zeit über die
+          <p>Was ist Erfahrung? Gewohnheit. Was ist Gewohnheit? Ein sanfter Sieg der Zeit über die
             Freiheit des ewigen Geistes.</p>
         </sp>
         <sp who="#crook">
           <speaker>CROOK.</speaker>
-          <p> Ich kann dir nicht folgen. Still jetzt, der Herzog kommt; jetzt laß mich auch einmal
-            zu Worten kommen, daß ich nicht als überflüssig neben dir stehe, es ist auch Klugheit,
+          <p>Ich kann dir nicht folgen. Still jetzt, der Herzog kommt; jetzt laß mich auch einmal zu
+            Worten kommen, daß ich nicht als überflüssig neben dir stehe, es ist auch Klugheit,
             seine Klugheit nicht immer zeigen zu wollen.</p>
-          <stage>
-            <hi>Der Herzog kommt und begrüßt sie.</hi>
-          </stage>
+          <stage>Der Herzog kommt und begrüßt sie.</stage>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Eure Excellenz sei uns heute ein willkommener Zuhörer der Ratsversammlung, scheut sich
+          <p>Eure Excellenz sei uns heute ein willkommener Zuhörer der Ratsversammlung, scheut sich
             Eure edle Tochter nicht vor der neugierigen Menge?</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <l> Mein Vaterland hat mich daran gewöhnt, die Art und Weise fremder Völker reizt mich;
-            ich lerne gern.</l>
+          <p>Mein Vaterland hat mich daran gewöhnt, die Art und Weise fremder Völker reizt mich; ich
+            lerne gern.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Ihr werdet hier nichts zu lernen finden, obenein heute, wo die Zeit mit der Einführung
+          <p>Ihr werdet hier nichts zu lernen finden, obenein heute, wo die Zeit mit der Einführung
             des jungen Caboga aufgehen wird. Wann ziehen wir ihn ins Vertrauen?</p>
         </sp>
         <sp who="#crook">
           <speaker>CROOK.</speaker>
-          <l> Wann? Was meinst du, Cornelia, ist es gut, ihn sogleich ins Vertrauen zu ziehen?</l>
+          <p>Wann? Was meinst du, Cornelia, ist es gut, ihn sogleich ins Vertrauen zu ziehen?</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <p> Mein Vater meinte vorher, dazu wäre noch Zeit auf der Fahrt, seine Verschwiegenheit
-            sei noch nicht so geprüft, wie sein Geschick zu Geschäften.</p>
+          <p>Mein Vater meinte vorher, dazu wäre noch Zeit auf der Fahrt, seine Verschwiegenheit sei
+            noch nicht so geprüft, wie sein Geschick zu Geschäften.</p>
         </sp>
         <sp who="#crook">
           <speaker>CROOK.</speaker>
-          <l> Freilich, so meinte ich.</l>
+          <p>Freilich, so meinte ich.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Recht so, Überraschung sichert allein mein Unternehmen; dreihundert Ungarn, die eben
+          <p>Recht so, Überraschung sichert allein mein Unternehmen; dreihundert Ungarn, die eben
             müßig bei meinem Landgut vorüberzogen, sind frisch geworben, ich fühle mich übermächtig,
             kaum kann ich die Stunde erwarten, die alles vereinigt, alles krönt.</p>
         </sp>
         <sp who="#crook">
           <speaker>CROOK.</speaker>
-          <p> Eile mit Weile, gnädiger Herr. Ein Freistaat, wenn er auch noch so eingerostet ist,
-            hat doch immer noch ein paar tausend blanke Dolche gegen den übrig, der ihn umstürzt,
+          <p>Eile mit Weile, gnädiger Herr. Ein Freistaat, wenn er auch noch so eingerostet ist, hat
+            doch immer noch ein paar tausend blanke Dolche gegen den übrig, der ihn umstürzt,
             insbesondre gegen den Mitbürger, der sich über alle erheben will.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <p> Die Überraschung hält sie alle in der Scheide, es ist dem Mut gegeben, der Zeit
+          <p>Die Überraschung hält sie alle in der Scheide, es ist dem Mut gegeben, der Zeit
             entbehren zu können, und der unwillig übereilten Welt fehlt gegen ihn die Besinnung.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Edles Fräulein, Ihr beflügelt mich, – wie sage ich wenig, wenn ich Euch ein Wunder
+          <p>Edles Fräulein, Ihr beflügelt mich, – wie sage ich wenig, wenn ich Euch ein Wunder
             Eures Geschlechts nenne, auch in <pb n="479"/> unserm wäret Ihr ein Wunder, – Euer
             Besitz würde Kronen sichern, – verzeiht mir, wenn der Drang dieser Tage Euch so
             unvorbereitet die geheimen Wünsche meines Herzens aussagt, – Ihr habt mich verstanden,
@@ -853,12 +830,12 @@
         </sp>
         <sp who="#crook">
           <speaker>CROOK.</speaker>
-          <p> Gnädiger Herr, Ihr habt Cornelien überrascht, – gedenkt der Verschiedenheit des
+          <p>Gnädiger Herr, Ihr habt Cornelien überrascht, – gedenkt der Verschiedenheit des
             Glaubens, der Sitten und Gewohnheiten.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <p> Gnädiger Herr, jetzt dürft Ihr keine Fremde freien, das wisset Ihr zu gut, seid Ihr
+          <p>Gnädiger Herr, jetzt dürft Ihr keine Fremde freien, das wisset Ihr zu gut, seid Ihr
             unumschränktes Haupt der Gesetze, dann fraget Euch, ob eine Fremde nicht das Zutrauen
             des Volks von Euch abstoße; jetzt aber fordert Euer Unternehmen jedes Nachdenken, jede
             Sehnsucht, jede Aufmerksamkeit; um unser aller Heil, gedenket meiner nicht, hört meinen
@@ -867,66 +844,62 @@
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <l> Dies ist der schwerste Rat, den Ihr mir je gegeben; wird meine Geduld ausdauern?</l>
+          <p>Dies ist der schwerste Rat, den Ihr mir je gegeben; wird meine Geduld ausdauern?</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <p> Die Geschäfte dieser Tage werden Euch bald mit ihrem Wirbel mir entreißen. Sieh da,
-            schon naht Euch ein geschäftiger Ratsherr. <hi>Vor sich.</hi> Diesmal war meine oft
-            gerühmte Klugheit seltsam überrascht.</p>
-          <stage>
-            <hi>Procoli tritt hastig zum Herzog und zieht ihn bei Seite.</hi>
-          </stage>
+          <p>Die Geschäfte dieser Tage werden Euch bald mit ihrem Wirbel mir entreißen. Sieh da,
+            schon naht Euch ein geschäftiger Ratsherr. <stage>Vor sich.</stage> Diesmal war meine
+            oft gerühmte Klugheit seltsam überrascht.</p>
+          <stage>Procoli tritt hastig zum Herzog und zieht ihn bei Seite.</stage>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <l> Was gibt's, Procoli?</l>
-          <stage>
-            <hi>Crook und Cornelia entfernen sich, indem sie die Bilder der nächsten Kapelle mit dem
-              Anstande von Kunstkennern beschauen.</hi>
-          </stage>
+          <p>Was gibt's, Procoli?</p>
+          <stage>Crook und Cornelia entfernen sich, indem sie die Bilder der nächsten Kapelle mit
+            dem Anstande von Kunstkennern beschauen.</stage>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Gnädiger Herr, ich wollte Euch dringend warnen vor den Holländern, es sind Betrüger.
+          <p>Gnädiger Herr, ich wollte Euch dringend warnen vor den Holländern, es sind Betrüger.
             Eben hat einer, der smyrnaische Konsul, mein ganzes Warenlager mit einem Hochmut
             angesehen, als ob er alles und mehr kaufen wollte, – und am Ende sagte er, es sei ihm
             alles zu schlecht.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Nichts weiter! – In einer halben Stunde wird's Euch nicht mehr ärgern, laßt Euch Zeit.
+          <p>Nichts weiter! – In einer halben Stunde wird's Euch nicht mehr ärgern, laßt Euch Zeit.
             Habt Ihr nie umsonst Eure Waren ausgekramt? Der Kaufmann muß sich selbst daran
             erfreuen.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Ihr wißt noch nicht alles, Durchlaucht, der Zorn nimmt mir die Sprache. Während der
+          <p>Ihr wißt noch nicht alles, Durchlaucht, der Zorn nimmt mir die Sprache. Während der
             Holländer mich äffte, hat Caboga, mein verrückter Neffe, der mit ihm einverstanden, mit
               <pb n="480"/> meiner Geliebten hier in der Kirche gesprochen, einer meiner Morlacken
             hat's durch die Türritze gesehen.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Armer Procoli, haltet inne Eure Schöne, nehmt keinen Wettstreit mit der Jugend auf,
+          <p>Armer Procoli, haltet inne Eure Schöne, nehmt keinen Wettstreit mit der Jugend auf,
             Jugend hat ein seltsames Verdienst in Weiberaugen, kein Mensch weiß, worin es liegt.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Ich bin auch jung gewesen, aber so wild und töricht, wie dieser Neffe, habe ich nicht
+          <p>Ich bin auch jung gewesen, aber so wild und töricht, wie dieser Neffe, habe ich nicht
             gegen alle Sitten angestürmt. Die Diener des holländischen Gesandten haben ausgesagt,
             Caboga habe sich mit dessen Tochter Cornelia verlobt, – denkt Euch, eine Fremde, eine
             Ketzerin.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Mit Cornelien! <hi>Vor sich.</hi> Kommt daher der kalte Zugwind ihrer Weigerung? –
-              <hi>Laut.</hi> Freilich, dies dürfen die Geschlechter nicht dulden, doch das
+          <p>Mit Cornelien! <stage>Vor sich.</stage> Kommt daher der kalte Zugwind ihrer Weigerung?
+            – <stage>Laut.</stage> Freilich, dies dürfen die Geschlechter nicht dulden, doch das
             Ungewisse, noch Ungeschehene, wer kann's richten?</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Er wird's bald kein Hehl haben, denn seine Frechheit übertrifft noch seine
+          <p>Er wird's bald kein Hehl haben, denn seine Frechheit übertrifft noch seine
             Schändlichkeit. Was ihm einfällt, meint er, habe noch niemand vor ihm gesehen und
             geraten, nichts ist ihm recht in den weisen Einrichtungen unsres Landes, die sein
             Bestehen von der Gewalt der Jahrhunderte erkauft haben; selbst sein eignes Dasein, das
@@ -938,55 +911,48 @@
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Gefahr! Das Stadtvolk läuft nicht gegen eine Mauer von Eisen, der Weber braucht seine
+          <p>Gefahr! Das Stadtvolk läuft nicht gegen eine Mauer von Eisen, der Weber braucht seine
             Füße zu notwendig, und der Schneider seine Hände, jeder wartet auf den andern, daß er
             tue, was ihm zu gefährlich scheint. Ich muß ihn kennen lernen, diesen Neffen, ist er so
             übereilt, wie Ihr ihn schildert, so wird er über seine eigenen Füße fallen. Die Glocken
             läuten, der Rat versammelt sich, mäßigt Euch und stellt den Neffen uns vor.</p>
-          <stage>
-            <hi>Die Räte versammeln sich, begrüßen den Herzog, der Herrn Crook und seiner Tochter
-              zwei Plätze in der Nähe der Versammlung anweisen läßt. Caboga kommt mit den letzten
-              Ratsherrn aus der Kirche.</hi>
-          </stage>
+          <stage>Die Räte versammeln sich, begrüßen den Herzog, der Herrn Crook und seiner Tochter
+            zwei Plätze in der Nähe der Versammlung anweisen läßt. Caboga kommt mit den letzten
+            Ratsherrn aus der Kirche.</stage>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA</speaker>
-          <stage>
-            <hi>vor sich.</hi>
-          </stage>
-          <p> Der Herr sei gelobt, das schmerzliche Gebot <pb n="481"/> hat Ruhe in mir ausgesät,
-            und mein geliebtes Land soll die gute Saat ernten.</p>
+          <stage>vor sich.</stage>
+          <p>Der Herr sei gelobt, das schmerzliche Gebot <pb n="481"/> hat Ruhe in mir ausgesät, und
+            mein geliebtes Land soll die gute Saat ernten.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI</speaker>
-          <stage>
-            <hi>zu Caboga.</hi>
-          </stage>
-          <p> Nun, lieber Neffe, Ihr seid doch bereit mit Eurer Anrede? Wie freue ich mich, daß
-            endlich die Zeit gereift ist, Euch in die Versammlung der Edlen einzuführen. <hi>Zur
-              Versammlung.</hi> Durchlauchtiger Herzog, edle Väter des Vaterlandes, ein edler Zweig
-            unsres edlen Geschlechtsbaumes ist angewachsen zu dem Alter, wo Blüte und Frucht von ihm
-            erwartet werden kann; hier stelle ich Euch meinen Neffen, Marino Caboga vor, möge er in
-            die Fußstapfen seines frühverstorbenen löblichen Vaters treten. <hi>Vor sich.</hi> Mag
-            ihm noch heute der Teufel das Genick brechen, und ihn zu seinem Vater führen.</p>
+          <stage>zu Caboga.</stage>
+          <p>Nun, lieber Neffe, Ihr seid doch bereit mit Eurer Anrede? Wie freue ich mich, daß
+            endlich die Zeit gereift ist, Euch in die Versammlung der Edlen einzuführen. <stage>Zur
+              Versammlung.</stage> Durchlauchtiger Herzog, edle Väter des Vaterlandes, ein edler
+            Zweig unsres edlen Geschlechtsbaumes ist angewachsen zu dem Alter, wo Blüte und Frucht
+            von ihm erwartet werden kann; hier stelle ich Euch meinen Neffen, Marino Caboga vor,
+            möge er in die Fußstapfen seines frühverstorbenen löblichen Vaters treten. <stage>Vor
+              sich.</stage> Mag ihm noch heute der Teufel das Genick brechen, und ihn zu seinem
+            Vater führen.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Marino Caboga ist im goldnen Buche eingetragen, <hi>Er schlägt das Buch auf.</hi> der
-            edle Procoli bezeugt, daß dies Marino Caboga sei. Sei uns willkommen, Caboga! Du hast
-            das Jahr erreicht, dein Eintritt sei unserm Rate ein gutes Zeichen, sage uns den Gruß
-            deiner Ergebenheit.</p>
+          <p>Marino Caboga ist im goldnen Buche eingetragen, <stage>Er schlägt das Buch auf.</stage>
+            der edle Procoli bezeugt, daß dies Marino Caboga sei. Sei uns willkommen, Caboga! Du
+            hast das Jahr erreicht, dein Eintritt sei unserm Rate ein gutes Zeichen, sage uns den
+            Gruß deiner Ergebenheit.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA</speaker>
-          <stage>
-            <hi>leise zu Crook.</hi>
-          </stage>
-          <l> Mir klopft das Herz, da er sprechen soll, ich fürchte, er bleibt stecken.</l>
+          <stage>leise zu Crook.</stage>
+          <p>Mir klopft das Herz, da er sprechen soll, ich fürchte, er bleibt stecken.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Mit inniger Andacht begrüß ich heute zum ersten Male die Herrscher des geliebten
+          <p>Mit inniger Andacht begrüß ich heute zum ersten Male die Herrscher des geliebten
             Vaterlandes, und vieles, was ich zu sagen ratsam glaubte, verstummt in mir vor dem
             ungewohnten Gefühle, einen Kreis zu betreten, gegen den mein Herz manche bittre Klage
             geführt hat, und dessen Absichten ich doch nur aus dem unglücklichen Erfolge kennen zu
@@ -1000,21 +966,17 @@
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA</speaker>
-          <stage>
-            <hi>leise zu Crook.</hi>
-          </stage>
-          <l> Welche schöne aber unkluge Kühnheit. Er stürzt sich ins Verderben.</l>
+          <stage>leise zu Crook.</stage>
+          <p>Welche schöne aber unkluge Kühnheit. Er stürzt sich ins Verderben.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI</speaker>
-          <stage>
-            <hi>zu Caboga.</hi>
-          </stage>
-          <l> Das war kurz, Neffe.</l>
+          <stage>zu Caboga.</stage>
+          <p>Das war kurz, Neffe.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> In Demut traten sonst die Jünglinge, wenn sie den <pb n="482"/> Kinderschuhen
+          <p>In Demut traten sonst die Jünglinge, wenn sie den <pb n="482"/> Kinderschuhen
             entwachsen, in diesen ehrenwerten Kreis; Ihr scheltet uns in Eurer Andacht aus, Ihr
             nennt Torheit dieser edlen Väter Weisheit. Hat Procoli Euch das gelehrt? Sagt
             deutlicher, was Ihr an uns bestreitet; der dumpfe Unmut findet alles tadelnswert, nur
@@ -1022,60 +984,60 @@
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Mein gnädiger Herr, ich lehrte ihm den Frevel nicht, allein von früher Jugend an
+          <p>Mein gnädiger Herr, ich lehrte ihm den Frevel nicht, allein von früher Jugend an
             empörte er sich gegen jede Zucht.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Ihr rühmt noch, Oheim, was Ihr habt an mir gesündigt, verleugnet, was Ihr heute mir
-            geraten habt! – <hi>Zu der Versammlung.</hi> Die Eltern starben mir zu früh, und dieser
-            Procoli, der seine Zucht hier rühmt, verwandte keine Sorge und kein Geld auf mich,
-            obgleich er jene meinem Vater zugeschworen, und dieses reichlich überkam als Vormund. So
-            wuchs ich mit den Bettelknaben auf, und wanderte durchs Land auf Wegen, die ihr wohl nie
-            betreten habt, ihr edlen Herrn; Unterdrückung, Jammer, blödsinnige Furcht, Verrat,
-            Bestechung, Gewalt der fremden Krieger, Gelderpressung begegneten mir überall. In meiner
-            Einfalt glaubte ich, so sei's in aller Welt, doch war mein stetes Denken, wie sich mein
-            Vaterland von dieser Schmach befreien lasse. Ein seltsam Schicksal stieß mich auch auf
-            Procolis Geheiß, zur Ferne, als ich noch kaum zum Mann gereift. Ich sah den Himmel
-            trüber, die Erde dürr, die Sonne kalt, doch Menschen fand ich frei in Hütten, und keiner
-            war so arm wie unsre Leute, und jeder war des Seinigen gewiß. Sie schauderten, wenn ich
-            von aller Schändlichkeit erzählte, die hier, gedankenlos vollbracht, das eigne Land
-            verdirbt. Ich dachte nach, was uns so schlecht gemacht, bei aller Quälerei und Aufsicht
-            für das öffentliche Wohl. Es liegt in dem allmählichen Vergessen unsres Ursprungs.
-            Schlagt auf die Bücher der Geschichte, die frühen Väter, die den Staat begründeten, sie
-            waren alle wohlbelehrt in strenger Schule allgemeiner Freiheit, ein jedes Wort traf da
-            den Nagel auf den Kopf, und förderte den Bau der ganzen Stadt. Da sprach ein jeder, den
-            sein Gewissen trieb, ein jeder nannte sein des Lebens Güter, und nannte sein das Land,
-            und schützte es in freiem Mut, die großen Staaten schätzten unsern Bund, und unsere
-            Schiffe wirkten öfter zur Entscheidung großer Weltgeschicke. Wir boten keinem Gold, sie
-            lohnten reichlich unsre Hülfe. Doch mit dem Reichtum zog die Sklaverei hier ein, die
-            Reicheren verbanden sich zum Herrschen, erst schien's den Kleinern Wohltat, wie viel
-            Versäumnis <pb n="483"/> wurde nicht erspart. Die Reichen gingen über dieses Landes
-            Schranken gierig im Verkehr hinaus, sie suchten ihren Handel überall zu gründen, sie
-            wurden so die Sklaven aller Welt, und rissen so hartherzig auch das Volk in diese
-            Sklaverei, dies Volk, das durch den fremden Handel, fremde Waren, im Gewerb erlahmte und
-            verdarb. Und öde ward das Land, der Hafen liegt voll fremder Schiffe, die fremden
-            Krieger plündern in dem Land, die Armen flüchten in die Fremde, nur wir, die kleine
-            Zahl, sind reich. Wir müssen diesen Rat aus unserm ganzen Land erneuern, daß jede Not
-            hier ihren Anwalt findet, nur so erhebt sich wieder unser Staat zu Ehren.</p>
+          <p>Ihr rühmt noch, Oheim, was Ihr habt an mir gesündigt, verleugnet, was Ihr heute mir
+            geraten habt! – <stage>Zu der Versammlung.</stage> Die Eltern starben mir zu früh, und
+            dieser Procoli, der seine Zucht hier rühmt, verwandte keine Sorge und kein Geld auf
+            mich, obgleich er jene meinem Vater zugeschworen, und dieses reichlich überkam als
+            Vormund. So wuchs ich mit den Bettelknaben auf, und wanderte durchs Land auf Wegen, die
+            ihr wohl nie betreten habt, ihr edlen Herrn; Unterdrückung, Jammer, blödsinnige Furcht,
+            Verrat, Bestechung, Gewalt der fremden Krieger, Gelderpressung begegneten mir überall.
+            In meiner Einfalt glaubte ich, so sei's in aller Welt, doch war mein stetes Denken, wie
+            sich mein Vaterland von dieser Schmach befreien lasse. Ein seltsam Schicksal stieß mich
+            auch auf Procolis Geheiß, zur Ferne, als ich noch kaum zum Mann gereift. Ich sah den
+            Himmel trüber, die Erde dürr, die Sonne kalt, doch Menschen fand ich frei in Hütten, und
+            keiner war so arm wie unsre Leute, und jeder war des Seinigen gewiß. Sie schauderten,
+            wenn ich von aller Schändlichkeit erzählte, die hier, gedankenlos vollbracht, das eigne
+            Land verdirbt. Ich dachte nach, was uns so schlecht gemacht, bei aller Quälerei und
+            Aufsicht für das öffentliche Wohl. Es liegt in dem allmählichen Vergessen unsres
+            Ursprungs. Schlagt auf die Bücher der Geschichte, die frühen Väter, die den Staat
+            begründeten, sie waren alle wohlbelehrt in strenger Schule allgemeiner Freiheit, ein
+            jedes Wort traf da den Nagel auf den Kopf, und förderte den Bau der ganzen Stadt. Da
+            sprach ein jeder, den sein Gewissen trieb, ein jeder nannte sein des Lebens Güter, und
+            nannte sein das Land, und schützte es in freiem Mut, die großen Staaten schätzten unsern
+            Bund, und unsere Schiffe wirkten öfter zur Entscheidung großer Weltgeschicke. Wir boten
+            keinem Gold, sie lohnten reichlich unsre Hülfe. Doch mit dem Reichtum zog die Sklaverei
+            hier ein, die Reicheren verbanden sich zum Herrschen, erst schien's den Kleinern
+            Wohltat, wie viel Versäumnis <pb n="483"/> wurde nicht erspart. Die Reichen gingen über
+            dieses Landes Schranken gierig im Verkehr hinaus, sie suchten ihren Handel überall zu
+            gründen, sie wurden so die Sklaven aller Welt, und rissen so hartherzig auch das Volk in
+            diese Sklaverei, dies Volk, das durch den fremden Handel, fremde Waren, im Gewerb
+            erlahmte und verdarb. Und öde ward das Land, der Hafen liegt voll fremder Schiffe, die
+            fremden Krieger plündern in dem Land, die Armen flüchten in die Fremde, nur wir, die
+            kleine Zahl, sind reich. Wir müssen diesen Rat aus unserm ganzen Land erneuern, daß jede
+            Not hier ihren Anwalt findet, nur so erhebt sich wieder unser Staat zu Ehren.</p>
         </sp>
-        <sp who="#viele">
+        <sp who="#viele_1">
           <speaker>VIELE.</speaker>
-          <l> Stille, stille, – ein jedes Wort Verrat – stoßt ihn aus.</l>
+          <p>Stille, stille, – ein jedes Wort Verrat – stoßt ihn aus.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Belachenswert ist der tolle Vorschlag, ei, Neffe, Ihr wollt zum Kinderspiel uns
+          <p>Belachenswert ist der tolle Vorschlag, ei, Neffe, Ihr wollt zum Kinderspiel uns
             brauchen, wir sollen auf dem Kopf gehn, die Beine oben.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Belachenswert mein Ernst, mein Glaube? – Ihr Heil'gen, kühlt mein Blut. Habt Ihr mich
+          <p>Belachenswert mein Ernst, mein Glaube? – Ihr Heil'gen, kühlt mein Blut. Habt Ihr mich
             nicht zum freien Reden bei dem Eintritt in den Rat aufgefordert?</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Er faselt, ihr kennt mich besser. Verzeiht, ihr Herrn, ich hab's euch nicht voraus
+          <p>Er faselt, ihr kennt mich besser. Verzeiht, ihr Herrn, ich hab's euch nicht voraus
             verkündet, damit mich nicht der Argwohn mög umstricken, als trüg ich Sehnsucht nach
             Cabogas Gütern, – schon frühe gab er Zeichen wilden Blödsinns, war meines Lebens oft bei
             ihm nicht sicher, so ließ ich ihn in seiner Freiheit gehn, ob sich das Übel nicht durch
@@ -1086,38 +1048,35 @@
             Phantasieren, so könnten wir in guter Laune wünschen, daß jeder Bürger von Ragusa
             täglich zehen Skudi zu verzehren habe, ohne Arbeit, ohne Mühe.</p>
         </sp>
-        <sp who="#viele">
+        <sp who="#viele_1">
           <speaker>VIELE.</speaker>
-          <l> Das war gut gegeben! <hi>Lachend.</hi>
-          </l>
+          <p>Das war gut gegeben! <stage>Lachend.</stage></p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Bin ich nicht toll, so macht Ihr mich doch rasend, Oheim, mit Euren Lügen, Eurer
-            Tücke. Wäre mir diese Rache nicht zu gemein, ich möchte diese lustigen Räte fragen, ob
-            es auch leere Phantasie von mir, daß Ihr mein Eigentum, die Jungfrau raubtet, die Ihr
-            mir versagt, daß Ihr sie zu entehren trachtet? Ha, <pb n="484"/> alter Sünder, sieh
-            deinen Kahlkopf in dem Spiegel, deine sündlichen Gedanken haben keine Jugenddecke mehr,
-            sie liegen offen vor mir.</p>
+          <p>Bin ich nicht toll, so macht Ihr mich doch rasend, Oheim, mit Euren Lügen, Eurer Tücke.
+            Wäre mir diese Rache nicht zu gemein, ich möchte diese lustigen Räte fragen, ob es auch
+            leere Phantasie von mir, daß Ihr mein Eigentum, die Jungfrau raubtet, die Ihr mir
+            versagt, daß Ihr sie zu entehren trachtet? Ha, <pb n="484"/> alter Sünder, sieh deinen
+            Kahlkopf in dem Spiegel, deine sündlichen Gedanken haben keine Jugenddecke mehr, sie
+            liegen offen vor mir.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI</speaker>
-          <stage>
-            <hi>vor sich.</hi>
-          </stage>
-          <p> Sie hat ihm alles gesagt. <hi>Laut.</hi> Jungfrauen? Ihr Freunde, hört den Wahnsinn,
-            er nennt sein Eigentum eine Jungfrau; seit ich von seiner eingebildeten Ehre ihm etwas
-            streiche, meint er, daß ich sein Eigentum, die Villa Madonna schände.</p>
+          <stage>vor sich.</stage>
+          <p>Sie hat ihm alles gesagt. <stage>Laut.</stage> Jungfrauen? Ihr Freunde, hört den
+            Wahnsinn, er nennt sein Eigentum eine Jungfrau; seit ich von seiner eingebildeten Ehre
+            ihm etwas streiche, meint er, daß ich sein Eigentum, die Villa Madonna schände.</p>
         </sp>
-        <sp who="#viele">
+        <sp who="#viele_1">
           <speaker>VIELE.</speaker>
-          <l> Sperrt ihn ein, seine Tollheit beschimpft unsre Versammlung vor den Fremden.</l>
+          <p>Sperrt ihn ein, seine Tollheit beschimpft unsre Versammlung vor den Fremden.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Mein letztes Wort, hört noch, ihr Herren. Hat kein Gefühl im Innern euch verkündet,
-            daß Wahrheit aus mir redete? – Seid ihr verloren diesem himmlischen Berühren, so seid
-            ihr schon vernichtet. <hi>Er deckt mit beiden Händen sein Antlitz.</hi> Dieser Stern,
+          <p>Mein letztes Wort, hört noch, ihr Herren. Hat kein Gefühl im Innern euch verkündet, daß
+            Wahrheit aus mir redete? – Seid ihr verloren diesem himmlischen Berühren, so seid ihr
+            schon vernichtet. <stage>Er deckt mit beiden Händen sein Antlitz.</stage> Dieser Stern,
             der wie St. Elmos Feuer vor meinen Augen glänzt, und auf dem herzoglichen Szepter
             niedersinkt, er deutet mir ein ernstes Strafgericht des Himmels. Tut Buße aller eurer
             Sünden, vor Gottes Zorne sinken Städte in den Staub, wie Bau der Kinder in den Sand beim
@@ -1125,74 +1084,65 @@
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <l> Habt ihr den Stern gesehen? Ich sah eine Spinne, die sich von der Decke an dünnen
-            Faden niederließ.</l>
+          <p>Habt ihr den Stern gesehen? Ich sah eine Spinne, die sich von der Decke an dünnen Faden
+            niederließ.</p>
         </sp>
-        <sp who="#viele">
+        <sp who="#viele_1">
           <speaker>VIELE.</speaker>
-          <l> Das ist sein Gestirn.</l>
+          <p>Das ist sein Gestirn.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <l> Wartet doch, bis die Johanniswürmer fliegen, da könnt Ihr den Propheten spielen wie
-            Mahomet.</l>
+          <p>Wartet doch, bis die Johanniswürmer fliegen, da könnt Ihr den Propheten spielen wie
+            Mahomet.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Teufelswurm, du spottest der warnenden himmlischen Zeichen, – wohl bin ich Prophet,
+          <p>Teufelswurm, du spottest der warnenden himmlischen Zeichen, – wohl bin ich Prophet,
             weil ich den Mut habe, alles zu sagen, was mit ewiger Gewißheit mich ergreift. – Wollte
             ich auch alles tun, Elender, du würdest vor mir beben.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI</speaker>
-          <stage>
-            <hi>in Begriff Hand an ihn zu legen.</hi>
-          </stage>
-          <l> Züchtigen würde ich dich in meiner Angst.</l>
+          <stage>in Begriff Hand an ihn zu legen.</stage>
+          <p>Züchtigen würde ich dich in meiner Angst.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Du wagst deine Hand gegen mich zu erheben, und bist in meine Hand gegeben. <hi>Er
-              sticht nach Procoli, Procoli sinkt.</hi>
-          </p>
+          <p>Du wagst deine Hand gegen mich zu erheben, und bist in meine Hand gegeben. <stage>Er
+              sticht nach Procoli, Procoli sinkt.</stage></p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <l> Hülfe! Mord!</l>
+          <p>Hülfe! Mord!</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA</speaker>
-          <stage>
-            <hi>halblaut zuflüsternd.</hi>
-          </stage>
-          <l> Geht, eilt, und rettet Euch Caboga.</l>
+          <stage>halblaut zuflüsternd.</stage>
+          <p>Geht, eilt, und rettet Euch Caboga.</p>
         </sp>
         <sp who="#crook">
           <speaker>CROOK</speaker>
-          <stage>
-            <hi>hält sie.</hi>
-          </stage>
-          <l> Still, still, mein liebes Kind.</l>
+          <stage>hält sie.</stage>
+          <p>Still, still, mein liebes Kind.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <l> Ergreifet, haltet ihn, he, Wache.</l>
-          <stage>
-            <hi><pb n="485"/> Die Wache tritt ein.</hi>
-          </stage>
+          <p>Ergreifet, haltet ihn, he, Wache.</p>
+          <stage><pb n="485"/> Die Wache tritt ein.</stage>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Tut eure Pflicht, und fürchtet mich nicht mehr, die Ehre ist gerettet, die Liebe ist
+          <p>Tut eure Pflicht, und fürchtet mich nicht mehr, die Ehre ist gerettet, die Liebe ist
             gerächt, Blut ist geflossen, der Leib ist euer, nichts Gutes und nichts Böses mag ich
             mehr auf Erden tun. Hier nehmet meinen Dolch, hier nehmet meine Hände und bindet sie;
             faßt euch ein Herz, ihr fremden Krieger, ich töte nicht mit meinen Augen.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Tragt Procoli mit Sorgfalt in sein Haus, ihr geht zu Grido, dem Chirurgen, und führet
-            ihn zu Procoli. Ihr, Hitrov, bringt Caboga ins Laurenz- Kastell. <hi>Procoli wird
-              fortgetragen, Caboga geht still und düster ohne umzublicken fort.</hi> Ein
+          <p>Tragt Procoli mit Sorgfalt in sein Haus, ihr geht zu Grido, dem Chirurgen, und führet
+            ihn zu Procoli. Ihr, Hitrov, bringt Caboga ins Laurenz- Kastell. <stage>Procoli wird
+              fortgetragen, Caboga geht still und düster ohne umzublicken fort.</stage> Ein
             unglückseliger Tag, der Rat befleckt mit Blut, Blutsfreunde auf den Tod entzweit, es
             ist, als ob die alte Ordnung sei veraltet, und nicht mehr bändigt den gereizten
             Jugendmut. Der Schrecken hält euch noch gefesselt, ach, der Geschlechter edler Stamm
@@ -1200,171 +1150,160 @@
         </sp>
         <sp who="#ratsherr">
           <speaker>RATSHERR.</speaker>
-          <l> Er sei erfrischt mit dem Blut des Schuldigen.</l>
+          <p>Er sei erfrischt mit dem Blut des Schuldigen.</p>
         </sp>
-        <sp who="#viele">
+        <sp who="#viele_1">
           <speaker>VIELE.</speaker>
-          <l> Tod über ihn.</l>
+          <p>Tod über ihn.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA</speaker>
-          <stage>
-            <hi>zu ihrem Vater.</hi>
-          </stage>
-          <l> Vater, unterstützt mich, daß meine Schwachheit niemand kundig werde.</l>
+          <stage>zu ihrem Vater.</stage>
+          <p>Vater, unterstützt mich, daß meine Schwachheit niemand kundig werde.</p>
         </sp>
         <sp who="#crook">
           <speaker>CROOK.</speaker>
-          <l> Mein armes Kind, zieh ein den flücht'gen Duft von meinem Salze, er stärkt das
-            Haupt.</l>
+          <p>Mein armes Kind, zieh ein den flücht'gen Duft von meinem Salze, er stärkt das
+            Haupt.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <l> Ist keiner, der für ihn um Gnade bittet, der Seinen keiner?</l>
+          <p>Ist keiner, der für ihn um Gnade bittet, der Seinen keiner?</p>
         </sp>
         <sp who="#ratsherr">
           <speaker>RATSHERR.</speaker>
-          <p> Sein Sinn, der in der Rede ausgedrückt, sein Wille, der sich in dem Mord gezeigt, sie
+          <p>Sein Sinn, der in der Rede ausgedrückt, sein Wille, der sich in dem Mord gezeigt, sie
             machen jeder ihn des Todes wert, dies schwöre ich, sein naher Vetter.</p>
         </sp>
-        <sp who="#alle">
+        <sp who="#alle_1">
           <speaker>ALLE.</speaker>
-          <l> Tod über ihn.</l>
+          <p>Tod über ihn.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Tod über ihn ist euer Wille, doch heimlich sei sein Tod, daß niemand von den Seinen
-            sei dadurch beschimpft. Ich streich ihn aus dem goldnen Buche aus, mit schwarzem Kreuz
+          <p>Tod über ihn ist euer Wille, doch heimlich sei sein Tod, daß niemand von den Seinen sei
+            dadurch beschimpft. Ich streich ihn aus dem goldnen Buche aus, mit schwarzem Kreuz
             durchs lichte Gold. Vollbringen werde ich des Rates Willen.</p>
-          <stage>
-            <hi>Hitrov, ein Morlacke tritt ein.</hi>
-          </stage>
+          <stage>Hitrov, ein Morlacke tritt ein.</stage>
         </sp>
         <sp who="#hitrov">
           <speaker>HITROV.</speaker>
-          <p> Mein gnäd'ger Herzog, unerhörte Tat beraubt Euch dreier treuen Diener. Das arme
+          <p>Mein gnäd'ger Herzog, unerhörte Tat beraubt Euch dreier treuen Diener. Das arme
             Stadtvolk, sonst so scheu vor jedem blanken Säbel, als es erfahren, wir führten den
             Caboga, hat sich am Markt mit blinder Wut auf uns gestürzt, im ersten Augenblicke <pb
               n="486"/> war ich fortgeschleudert, die andern dreie wild zertreten, Caboga frei.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <l> Ich atme auf!</l>
+          <p>Ich atme auf!</p>
         </sp>
         <sp who="#crook">
           <speaker>CROOK.</speaker>
-          <l> Stille!</l>
+          <p>Stille!</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <l> Wohin hat ihn das Volk entführt? Jetzt schlägt die rechte Stunde auch für mich.</l>
+          <p>Wohin hat ihn das Volk entführt? Jetzt schlägt die rechte Stunde auch für mich.</p>
         </sp>
         <sp who="#hitrov">
           <speaker>HITROV.</speaker>
-          <p> Caboga redete am Markte mit dem Volke, und klagte sich des Mordes an, und ging
+          <p>Caboga redete am Markte mit dem Volke, und klagte sich des Mordes an, und ging
             freiwillig unterm Weinen alles Volkes den steilen Weg hinauf zu dem Kastell, und gab
             sich dort in die Gefangenschaft der Unsern.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Bei Gott, ein seltner Geist, der in dem Frevel zur Bewundrung zwingt. – Ihr Herrn, was
+          <p>Bei Gott, ein seltner Geist, der in dem Frevel zur Bewundrung zwingt. – Ihr Herrn, was
             ratet ihr zur Sicherung der Stadt?</p>
         </sp>
         <sp who="#ratsherr">
           <speaker>RATSHERR.</speaker>
-          <p> Cabogas Todesurteil sei noch heute öffentlich zum Schrecken dieses frechen Volkes an
+          <p>Cabogas Todesurteil sei noch heute öffentlich zum Schrecken dieses frechen Volkes an
             ihm vollstreckt. Ihr seht, daß er auf einer mächtigen Verschwörung sich gestützt, als er
             mit frecher Rede auftrat zwischen uns. Ein hoch Schafott sei am Kastell errichtet, und
             alle Krieger unter Waffen, das bricht den Übermut.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <l> Blutdürst'ge Feigheit!</l>
+          <p>Blutdürst'ge Feigheit!</p>
         </sp>
-        <sp who="#alle">
+        <sp who="#alle_1">
           <speaker>ALLE.</speaker>
-          <l> So sei's beschlossen, so vollbracht, Caboga sterbe heut vor allem Volke.</l>
+          <p>So sei's beschlossen, so vollbracht, Caboga sterbe heut vor allem Volke.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Nach eurer Weisheit werd ich es vollbringen. Es drängt die Zeit, auf Sicherheit zu
+          <p>Nach eurer Weisheit werd ich es vollbringen. Es drängt die Zeit, auf Sicherheit zu
             denken. Ihr seid entlassen, edle Herrn.</p>
-          <stage>
-            <hi>Der Rat zerstreut sich mit Eilfertigkeit.</hi>
-          </stage>
+          <stage>Der Rat zerstreut sich mit Eilfertigkeit.</stage>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG</speaker>
-          <stage>
-            <hi>vor sich.</hi>
-          </stage>
-          <p> Der Tag begünstigt mich mit jeder Stunde, die flüchtig im Gewirr vorüber rauscht, ganz
+          <stage>vor sich.</stage>
+          <p>Der Tag begünstigt mich mit jeder Stunde, die flüchtig im Gewirr vorüber rauscht, ganz
             ohne Aufsehn darf ich jetzt die Krieger sammeln und verteilen, und die Geschlechter
-            fördern ihre Niederlage. <hi>Laut zu Cornelia.</hi> Es tut mir weh die Störung, Ihr seid
-            erschreckt.</p>
+            fördern ihre Niederlage. <stage>Laut zu Cornelia.</stage> Es tut mir weh die Störung,
+            Ihr seid erschreckt.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA</speaker>
-          <stage>
-            <hi>zum Herzog.</hi>
-          </stage>
-          <p> Ich würde vor Euch niederknieen, wenn hier kein Zeuge, doch fleh ich Euch bei dem
+          <stage>zum Herzog.</stage>
+          <p>Ich würde vor Euch niederknieen, wenn hier kein Zeuge, doch fleh ich Euch bei dem
             Geheimnis an, das Euch mit naher Hoffnung jetzt erfüllt, errettet den Caboga, sein Geist
             ist beßrer Tage wert, die Eure Herrschaft diesem Land wird strahlen.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Ihr schmeichelt mir für einen Nebenbuhler, ich weiß es jetzt, warum Ihr meine Hand
+          <p>Ihr schmeichelt mir für einen Nebenbuhler, ich weiß es jetzt, warum Ihr meine Hand
             verschmäht. Ich dürfte ihn aus <pb n="487"/> Eifersucht vernichten, doch meine Liebe
             überwiegt. Ich lasse ihn durch sichere Leute nach der türk'schen Grenze bringen, wenn
             Ihr gewährt, wonach mein Herz verlangt, wenn Ihr die Krone teilt mit mir.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA</speaker>
-          <stage>
-            <hi>leise.</hi>
-          </stage>
-          <p> Weh mir, hier löset keine Klugheit aus. <hi>Laut.</hi> Was wollt Ihr dann mit mir,
-            wenn alles Euch gelungen? Viel schönre Frauen sind Euch dann im ganzen Land ergeben, die
-            Euern Anhang durch Verwandtschaft mehren.</p>
+          <stage>leise.</stage>
+          <p>Weh mir, hier löset keine Klugheit aus. <stage>Laut.</stage> Was wollt Ihr dann mit
+            mir, wenn alles Euch gelungen? Viel schönre Frauen sind Euch dann im ganzen Land
+            ergeben, die Euern Anhang durch Verwandtschaft mehren.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Versteckt Euch nicht, verschwendet nicht Cabogas letzte Augenblicke! Euch selbst,
-            Euch, Eures Geistes Reichtum, will ich mir gewinnen, mit Klugheit Eure Klugheit zwingen.
+          <p>Versteckt Euch nicht, verschwendet nicht Cabogas letzte Augenblicke! Euch selbst, Euch,
+            Eures Geistes Reichtum, will ich mir gewinnen, mit Klugheit Eure Klugheit zwingen.
             Schlagt ein, bekennt Euch überwunden, und schämt Euch nicht, es führt uns kein gemeines
             Schicksal hier zusammen. Ich bilde hier ein Männervolk, Ihr bildet Frauen mit aller
             Freiheit Rechten.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <l> Mein Vater, darf es sein?</l>
+          <p>Mein Vater, darf es sein?</p>
         </sp>
         <sp who="#crook">
           <speaker>CROOK.</speaker>
-          <l> Ich suche Rat bei dir, die mir so oft geraten. Caboga tut mir leid, als wär's mein
-            Sohn.</l>
+          <p>Ich suche Rat bei dir, die mir so oft geraten. Caboga tut mir leid, als wär's mein
+            Sohn.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <l> Nehmt hin die Hand; wenn erst Caboga frei, die Krone Euer, so bin ich Euch vermählt, –
-            nicht eher.</l>
+          <p>Nehmt hin die Hand; wenn erst Caboga frei, die Krone Euer, so bin ich Euch vermählt, –
+            nicht eher.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> So selig treibt mich alles zu dem Ziele, o, diese Hand, schon nenne ich sie mein, denn
-            diese Krone kann mir ird'sche Macht nicht mehr entreißen. <hi>Er führt Cornelia und
-              Crook fort.</hi>
-          </p>
-          <p>BETTLER, <hi>der bisher in seinem Winkelchen gestanden, tritt vor, und deckt die
-              sammetnen Sessel mit Überzügen.</hi> Wie quälen und treiben sich die reichen Leute so
-            vergeblich! In meinem Fuße da fühl ich, es reißt sich ein mit scharfem Griffel, alles
-            wird heut noch anders, von Grund auf anders. Und wenn ich's zu aller Welt schreien
-            wollte, so nennte mich alle Welt einen Narren, wie den Caboga; darum will ich still
-            sein; es kommt noch alles anders nach Gottes Willen.</p>
-          <stage>
-            <hi>Er singt.</hi>
-          </stage>
+          <p>So selig treibt mich alles zu dem Ziele, o, diese Hand, schon nenne ich sie mein, denn
+            diese Krone kann mir ird'sche Macht nicht mehr entreißen. <stage>Er führt Cornelia und
+              Crook fort.</stage></p>
+        </sp>
+        <sp who="#bettler">
+          <speaker>BETTLER,</speaker>
+          <stage>der bisher in seinem Winkelchen gestanden, tritt vor, und deckt die sammetnen
+            Sessel mit Überzügen.</stage>
+          <p>Wie quälen und treiben sich die reichen Leute so vergeblich! In meinem Fuße da fühl
+            ich, es reißt sich ein mit scharfem Griffel, alles wird heut noch anders, von Grund auf
+            anders. Und wenn ich's zu aller Welt schreien wollte, so nennte mich alle Welt einen
+            Narren, wie den Caboga; darum will ich still sein; es kommt noch alles anders nach
+            Gottes Willen.</p>
+          <stage>Er singt.</stage>
           <lg>
             <l>Wacht auf mit innern Sinnen,</l>
             <l>Erhebt die Augenlider,</l>
@@ -1405,48 +1344,42 @@
             <l>Wird reich vergütigt werden,</l>
             <l>Euch selig Scheidenden.</l>
           </lg>
-          <stage>
-            <hi>Ab.</hi>
-          </stage>
+          <stage>Ab.</stage>
         </sp>
       </div>
       <div type="act">
         <head>Zweite Handlung</head>
-        <stage>
-          <hi>Gefängnis auf dem Laurenz-Kastell. Caboga angekettet.</hi>
-        </stage>
+        <stage>Gefängnis auf dem Laurenz-Kastell. Caboga angekettet.</stage>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Freiwillig gab ich mich gefangen, – dennoch haben die Ehrlosen mich angekettet, wie
-            den zehnfach entlaufenen Dieb. Alle meine Reichtümer und Güter sind in den Händen dieser
+          <p>Freiwillig gab ich mich gefangen, – dennoch haben die Ehrlosen mich angekettet, wie den
+            zehnfach entlaufenen Dieb. Alle meine Reichtümer und Güter sind in den Händen dieser
             regierenden Toren, und doch haben sie nur noch alle kleine Schätze aus meinen Taschen
             gestohlen, die mir durch Erinnerung so Heb waren. Nur dies schmutzige kleine Liederblatt
             ist mir geblieben, das mir der Bettler reichte, und das mir damals zu traurig anhob. O,
             du ahndungsvoller alter Knabe!</p>
-          <stage>
-            <hi><pb n="489"/> Er liest.</hi>
-          </stage>
-          <p>Seh ich aus der feuchten Höhle</p>
-          <p>Meiner Augen in die Welt,</p>
-          <p>Die so recht mit ganzer Seele</p>
-          <p>In die Sonne sich gestellt:</p>
-          <p>Ach, womit soll ich mich stählen,</p>
-          <p>Bei dem Quälen?</p>
-          <p>Es klirren die Ketten durch Zitherklang,</p>
-          <p>Es rufen die Wachen im Felsengang,</p>
-          <p>Es zimmern viel Äxte an meinem Schafott,</p>
-          <p>Gnade mir Gott!</p>
+          <stage><pb n="489"/> Er liest.</stage>
+          <lg>
+            <l>Seh ich aus der feuchten Höhle</l>
+            <l>Meiner Augen in die Welt,</l>
+            <l>Die so recht mit ganzer Seele</l>
+            <l>In die Sonne sich gestellt:</l>
+            <l>Ach, womit soll ich mich stählen,</l>
+            <l>Bei dem Quälen?</l>
+            <l>Es klirren die Ketten durch Zitherklang,</l>
+            <l>Es rufen die Wachen im Felsengang,</l>
+            <l>Es zimmern viel Äxte an meinem Schafott,</l>
+            <l>Gnade mir Gott!</l>
+          </lg>
           <p>Ja, so ist es wirklich. Ihr Todesurteil hat mich losgesprochen von allem Edelmute, –
             sie haben Gericht gehalten über mich gegen das Recht unsrer edlen Häuser, sie haben aus
             Furcht keine öffentliche Verteidigung mir gestattet, – sie sind ihrem eigenen Gesetze
             verfallen. Und was könnte mich hindern, wenn dieses Wasserfaß mit Pulver gefüllt wäre,
             und meine Augen sprühten Feuer, mich und diese Kerkerwände in die Luft zu sprengen? –
-              <hi>Sie</hi> würde erschrecken, die dort im Marmorgiebel unter den Flügeln des Vogel
-            Greif wohnt, – vielleicht auf den Tod erschrecken, – mit mir sterben, Himmel und
+              <emph>Sie</emph> würde erschrecken, die dort im Marmorgiebel unter den Flügeln des
+            Vogel Greif wohnt, – vielleicht auf den Tod erschrecken, – mit mir sterben, Himmel und
             Hölle!</p>
-          <stage>
-            <hi>Er liest.</hi>
-          </stage>
+          <stage>Er liest.</stage>
           <lg>
             <l>Feuern fern des Waldes Blätter</l>
             <l>Froh zur Sonne herbstlich rot,</l>
@@ -1459,13 +1392,9 @@
             <l>Es schleichen die Kröten am schimmelnden Grund,</l>
             <l>Greuliche Stund!</l>
           </lg>
-          <stage>
-            <hi>Zitherspiel draußen.</hi>
-          </stage>
+          <stage>Zitherspiel draußen.</stage>
           <l>Und Zitherspiel begleitet solche Worte, die herbe mir die ernste Wahrheit sagen.</l>
-          <stage>
-            <hi>Er liest.</hi>
-          </stage>
+          <stage>Er liest.</stage>
           <lg>
             <l>Vor dem Gitter Äpfel wiegen</l>
             <l>Sich am Zweig im Sonnenschein,</l>
@@ -1481,9 +1410,7 @@
           <p>Das Lied lügt; statt der goldnen Äpfel mit roten Wangen, sind bleiche Pilze am Gitter
             gewachsen, und Marina sandte mir keine Blumen, auf die ich blicken kann, – wenn mich der
             Zweifel plagt.</p>
-          <stage>
-            <hi>Er wirft das Blatt fort und spricht heftig.</hi>
-          </stage>
+          <stage>Er wirft das Blatt fort und spricht heftig.</stage>
           <lg>
             <l>Treu und ehrlich willst du scheinen,</l>
             <l>Und ich traute dir so gern;</l>
@@ -1522,43 +1449,41 @@
             <l>Sie führt euch im Kampfe, sie führt aus der Not,</l>
             <l>Umsonst ist kein Tod.</l>
           </lg>
-          <stage>
-            <hi>Mitrovich ist mit der Zither eingetreten.</hi>
-          </stage>
+          <stage>Mitrovich ist mit der Zither eingetreten.</stage>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <p> Caboga, edler Kamerad, dir kann man doch noch mit Vergnügen etwas vorklimpern, du
+          <p>Caboga, edler Kamerad, dir kann man doch noch mit Vergnügen etwas vorklimpern, du
             singst so frisch noch, als wenn dir nichts fehle.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <l> Warst du's? Meine Stimme zitterte doch zuweilen bei deiner Zither.</l>
+          <p>Warst du's? Meine Stimme zitterte doch zuweilen bei deiner Zither.</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <l> Beim Element, nein! Es tat mir wohl, als ich dir zuhorchte, als wär's Trommelschlag
-            gewesen.</l>
+          <p>Beim Element, nein! Es tat mir wohl, als ich dir zuhorchte, als wär's Trommelschlag
+            gewesen.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Bringst du mir etwas von ihr, – schnell heraus damit, ich flehe dich an. Wie bist du
-            zu mir geschlichen? Das heißt Treue, mich hier im kalten Erdenschoß aufzusuchen.</p>
+          <p>Bringst du mir etwas von ihr, – schnell heraus damit, ich flehe dich an. Wie bist du zu
+            mir geschlichen? Das heißt Treue, mich hier im kalten Erdenschoß aufzusuchen.</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <p> Nichts von ihr – und deinen Dank verdiene ich auch nicht, und geschlichen bin ich auch
+          <p>Nichts von ihr – und deinen Dank verdiene ich auch nicht, und geschlichen bin ich auch
             nicht, sondern mit großem Lärmen, mit vollständiger Janitscharenmusik ward ich
             bewillkommt. Mit einem Worte, ich bin heute
               Kommandant<ref><anchor/><ptr/><hi>1</hi></ref>.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <l> Laß scherzen, die zu leben denken, wir müssen uns ernsten Gedanken ergeben.</l>
+          <p>Laß scherzen, die zu leben denken, wir müssen uns ernsten Gedanken ergeben.</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <p> Kein Scherz, der ist mir heute fast vergangen. Ich merke schon, du kennst noch nicht
+          <p>Kein Scherz, der ist mir heute fast vergangen. Ich merke schon, du kennst noch nicht
             unsre tolle Weisheit, seit dem Verrate der Cassoris eingeführt. An jedem Tage wird ein
             andrer Mann auf freier Straße von den Ungarn, die uns dienen, bald hier, bald dort
             eingefangen, lebt hier einen Tag in Ehren als Kommandant, der Wachtmeister sagt ihm,
@@ -1571,13 +1496,13 @@
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Der Himmel wollte mir noch Freundestrost gewähren! <pb n="492"/> Dachtest du, daß ich
+          <p>Der Himmel wollte mir noch Freundestrost gewähren! <pb n="492"/> Dachtest du, daß ich
             so enden würde, als ihr mich triumphierend als Knabe umhergezogen? Du sollst ihr meinen
             letzten Gruß bringen, ihr zusichern, daß ich im letzten Augenblicke ihrer dachte!</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <p> Nichts von letzten Grüßen und Sterbestunden, selbst am Weine ärgert mich nichts, als
+          <p>Nichts von letzten Grüßen und Sterbestunden, selbst am Weine ärgert mich nichts, als
             die Neige. Wenn das Letzte da ist, je nun, es kann's keiner zum Ersten umdrehen, doch
             wie du da kräftig vor mir stehst, magst du mir recht viel vom Liebchen, nichts vom Tode
             erzählen. Ich mache dich frei, das verlangt die Ehre unserer jugendlichen Kameradschaft.
@@ -1587,14 +1512,14 @@
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Ich mag nicht fliehn. Zwar ist's ein sündig Blut, das ich vergossen habe, doch
-            drückt's so schwer, als wär's mir in das Herz geflossen. Unstät und flüchtig auf der
-            Welt zu irren, ist langsamer Tod. Es war mein nah verwandtes Blut, das ich vergossen,
-            mein Vater wird's in Ewigkeit mir nicht verzeihen.</p>
+          <p>Ich mag nicht fliehn. Zwar ist's ein sündig Blut, das ich vergossen habe, doch drückt's
+            so schwer, als wär's mir in das Herz geflossen. Unstät und flüchtig auf der Welt zu
+            irren, ist langsamer Tod. Es war mein nah verwandtes Blut, das ich vergossen, mein Vater
+            wird's in Ewigkeit mir nicht verzeihen.</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <p> Das hindert dich! Auf, frisch, dir lös ich gleich die Fesseln mit meiner alten
+          <p>Das hindert dich! Auf, frisch, dir lös ich gleich die Fesseln mit meiner alten
             Schlösserpraktik. Der Procoli steht wieder auf den krummen Beinen, – der Aderlaß hat ihm
             recht wohl getan, er leidet an dem Übermaß der Säfte. Der Schrecken mehr, als die Gewalt
             des Stichs hat ihn im Rat ohnmächtig hingestreckt. Du hast gewiß noch keinen umgebracht,
@@ -1606,79 +1531,75 @@
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Mein Geld, ich wollt's ihm gönnen, wenn ich dafür Marina von ihm kaufen könnte. Weißt
+          <p>Mein Geld, ich wollt's ihm gönnen, wenn ich dafür Marina von ihm kaufen könnte. Weißt
             du denn nichts von ihr?</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <p> Hier weiß niemand von ihr. Bist du frei, so brechen wir ein bei ihr, wir nehmen sie
-            mit uns ins Türkenland. Ich bin da wohl bekannt, und günstig ist dir Crook und seine
+          <p>Hier weiß niemand von ihr. Bist du frei, so brechen wir ein bei ihr, wir nehmen sie mit
+            uns ins Türkenland. Ich bin da wohl bekannt, und günstig ist dir Crook und seine
             Tochter, sie werden uns in Konstantinopel empfehlen. Leute von unserm Schlage kommen
             überall durch, wir brauchen nicht viel, und sind zu allem zu gebrauchen.</p>
           <pb n="493"/>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Was du möglich glaubst, ich kann es wagen, habe nichts zu verlieren; aber, Mitrovich,
+          <p>Was du möglich glaubst, ich kann es wagen, habe nichts zu verlieren; aber, Mitrovich,
             dein Leben setze ich nicht für mich aufs Spiel.</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <p> Mein Leben? – Wenn ich von meinem Leben ein Wort weiß, laß ich mich hängen; wie
-            sieht's aus, wo steckt's? ich habe gar kein solches Werkzeug in mir. Ich tue, was ich
-            nicht lassen kann, und zwingt mich einer zu etwas, so renne ich mir den Kopf ein, und
-            will mich einer wovon abhalten, so ringe ich darum, bis mir die Arme brechen. Ich will
-            dich retten, ich will mit dir gehen, du kannst mich nicht davon abhalten, und der
-            Lumpenstaat Ragusa mag sich einen andern Kommandanten greifen. Fort mit den Ketten.
-              <hi>Er öffnet die Schlösser.</hi> Müßig träumend bleibst du sitzen! Marina ruft dich,
-            Procoli droht ihr.</p>
+          <p>Mein Leben? – Wenn ich von meinem Leben ein Wort weiß, laß ich mich hängen; wie sieht's
+            aus, wo steckt's? ich habe gar kein solches Werkzeug in mir. Ich tue, was ich nicht
+            lassen kann, und zwingt mich einer zu etwas, so renne ich mir den Kopf ein, und will
+            mich einer wovon abhalten, so ringe ich darum, bis mir die Arme brechen. Ich will dich
+            retten, ich will mit dir gehen, du kannst mich nicht davon abhalten, und der Lumpenstaat
+            Ragusa mag sich einen andern Kommandanten greifen. Fort mit den Ketten. <stage>Er öffnet
+              die Schlösser.</stage> Müßig träumend bleibst du sitzen! Marina ruft dich, Procoli
+            droht ihr.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Weh mir, soll ich kaum bereute Todsünde wieder auf mich laden? Bei Gott, er soll ihr
-            nicht drohen! <hi>Er springt auf.</hi>
-          </p>
+          <p>Weh mir, soll ich kaum bereute Todsünde wieder auf mich laden? Bei Gott, er soll ihr
+            nicht drohen! <stage>Er springt auf.</stage></p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <p> Halt, – leg die Ketten um dich, – Geräusch an der Türe, sie fragen nach dem
-            Kommandanten, – wart einen Augenblick, es darf uns niemand beisammen finden. <hi>Ab
-              durch eine untere Türe, während oben der Herzog mit einer Schar Türken eintritt.</hi>
-          </p>
+          <p>Halt, – leg die Ketten um dich, – Geräusch an der Türe, sie fragen nach dem
+            Kommandanten, – wart einen Augenblick, es darf uns niemand beisammen finden. <stage>Ab
+              durch eine untere Türe, während oben der Herzog mit einer Schar Türken
+              eintritt.</stage></p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG</speaker>
-          <stage>
-            <hi>zu den Türken.</hi>
-          </stage>
-          <p> Verteilet euch mit Vorsicht, beachtet wohl den Kommandanten und die Ungarn. <hi>Er
-              steigt nieder zu Caboga, der die Fesseln wieder scheinbar angelegt hat.</hi>
-          </p>
+          <stage>zu den Türken.</stage>
+          <p>Verteilet euch mit Vorsicht, beachtet wohl den Kommandanten und die Ungarn. <stage>Er
+              steigt nieder zu Caboga, der die Fesseln wieder scheinbar angelegt hat.</stage></p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <l> Ihr lasset Euch zu mir herab, mein gnädiger Herr!</l>
+          <p>Ihr lasset Euch zu mir herab, mein gnädiger Herr!</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Caboga, ich habe den ernsten Sinn Eurer Worte verstanden, die dem Rate ein
-            jugendlicher Mutwille schienen, ich fühle ein tiefes Mitleid, daß Ihr so untergeht, daß
-            Euer guter Wille dem Staate verloren.</p>
+          <p>Caboga, ich habe den ernsten Sinn Eurer Worte verstanden, die dem Rate ein jugendlicher
+            Mutwille schienen, ich fühle ein tiefes Mitleid, daß Ihr so untergeht, daß Euer guter
+            Wille dem Staate verloren.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Procoli lebt, Ihr wollet mir Gnade verkünden, gnädiger Herr, und rührt mich lebendiger
+          <p>Procoli lebt, Ihr wollet mir Gnade verkünden, gnädiger Herr, und rührt mich lebendiger
             durch den Anteil, den Ihr meinen Worten schenkt, die ich im leeren Luftraum verschallt
             glaubte.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Daß er lebt, ist ein Zufall, und nicht Euer Wille, Eure Begnadigung steht nicht in
+          <p>Daß er lebt, ist ein Zufall, und nicht Euer Wille, Eure Begnadigung steht nicht in
             meiner Macht, der Rat ist unversöhnlich gegen Euch.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Freilich, – heute morgen hätte ich ihn am Altar zerschmettert, wenn er sich dahin
+          <p>Freilich, – heute morgen hätte ich ihn am Altar zerschmettert, wenn er sich dahin
             geflüchtet hätte, – die Sonne ist höher hinaufgestiegen, Procoli ist genesen, der Zorn
             ist in der Reue zerknirscht, und nur graut, daß ich in die Strafgerichte des Ewigen über
             diesen hämischen Bösewicht eingreifen wollte. Tückisch reizte <pb n="494"/> er mich, die
@@ -1694,7 +1615,7 @@
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Mein Herz entschuldigt Euch, der Fehler war so menschlich in dem jugendlichen
+          <p>Mein Herz entschuldigt Euch, der Fehler war so menschlich in dem jugendlichen
             Ehrgefühle. Weh mir, ich habe nur die Macht zum Schlechten, Begnadigung ist dem Rate
             vorbehalten. Ihr habt nicht alle Schwächen unserer Verfassung aufgedeckt. Mein Jahr zu
             nutzen mit Betrug und mit Gewalt, um lange nachzuzehren von der Ernte, und jedem andern
@@ -1707,23 +1628,23 @@
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Wär unser Rat vollständig ein Abbild unsres Staats, er würde sich zu den Geschäften
+          <p>Wär unser Rat vollständig ein Abbild unsres Staats, er würde sich zu den Geschäften
             drängen, und nimmer fehlte guter Rat dem Herzog, der ihn zur Tat dann förderte, –
             versprecht es, Herr, gebt einen solchen Rat dem Lande, – so sterb ich gern.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Kann sein, – wahr, richtig, – doch über viele Leichen geht hier nur der Weg zur
+          <p>Kann sein, – wahr, richtig, – doch über viele Leichen geht hier nur der Weg zur
             freieren Verfassung; gedenkt der fremden Krieger! – Könnt Ihr Vertrauen schätzen und
             bewahren? –</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <l> Vertrauen ist ein Heiligtum.</l>
+          <p>Vertrauen ist ein Heiligtum.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Das Staatselend ging mir lang zu Herzen, durch Crook ist mir ein anderer Weg eröffnet,
+          <p>Das Staatselend ging mir lang zu Herzen, durch Crook ist mir ein anderer Weg eröffnet,
             es zu enden. Es muß hier einer erblich herrschen, in welchem jedermann das Bild des
             ganzen Staats erkennt, und der für alles bürgt, und alles wie sein Eigentum beschützt, –
             ich fühle mich dazu berufen, ich habe Macht, es zu erzwingen, und Crook bestimmt für
@@ -1736,7 +1657,7 @@
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Die Würfel fallen seltsam um mein Leben. Ich fühle mich überrascht. Indes ich müßig
+          <p>Die Würfel fallen seltsam um mein Leben. Ich fühle mich überrascht. Indes ich müßig
             träume oder nutzlos zu den Edlen rede, habt Ihr in anderm Sinn den neuen Staat
             begründet. Ich kann nicht dienen ohne Überzeugung, und wie ich auch dies Euer
             Unternehmen schaue, ich bleib ihm abgewandt. Mein gnädiger Herr, Ihr habt Euch übereilt.
@@ -1745,7 +1666,7 @@
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Zu schnell bist du entschieden, Jüngling, mich reiften der Erfahrung lange, schwere
+          <p>Zu schnell bist du entschieden, Jüngling, mich reiften der Erfahrung lange, schwere
             Jahre. Nicht überleben möchte ich, daß je mein Geist dem lang geprüften Glauben untreu
             würde, auch hab ich dessen keine Sorge. Vertraue mir, nicht dich zu opfern kam ich,
             nein, daß dir geopfert werde von Beglückten. Zum Übereilen bin ich nicht mehr jung
@@ -1759,7 +1680,7 @@
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Großherzog? Der Künste Schöpfer, wie jener Großherzog in Florenz. – Er fand ein Volk,
+          <p>Großherzog? Der Künste Schöpfer, wie jener Großherzog in Florenz. – Er fand ein Volk,
             das seiner Freiheit überdrüssig, – ich find ein Volk, der Freiheit so bedürftig, daß es
             dem Großherzog nichts abzugeben hat. – Großmütig seid Ihr, Ihr bietet mir so viel für
             leichten Dienst, o, gebt dem Volke etwas für so lange schwere Dienste. Kleinmütig bin
@@ -1771,11 +1692,11 @@
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <l> Wer schützt denn diesen Rat und dieses Volk? Wem geben wir Tribut?</l>
+          <p>Wer schützt denn diesen Rat und dieses Volk? Wem geben wir Tribut?</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Tribut bezahlen wir dem Meer, wer kann's beschließen? So auch den Türken, nur eine
+          <p>Tribut bezahlen wir dem Meer, wer kann's beschließen? So auch den Türken, nur eine
             Kleinigkeit von dem, was wir durch sie gewinnen. Wir sind im Bund der Christen stark
             genug, ja nicht zu fürchten, wenn sie nach Herrschaft über uns einst trachten. Durch
             Türken herrschen über Christen, das ist Greuel, – ich bleibe hier gefangen, lasse die
@@ -1783,7 +1704,7 @@
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Der Winter geht so schnell vorüber wie die alten Vorurteile. Es ist doch schön zu
+          <p>Der Winter geht so schnell vorüber wie die alten Vorurteile. Es ist doch schön zu
             leben, wenn neues Grün durch alle Fluren leuchtet. Du liebst, Caboga, ich hab's
             vernommen, du liebst ein Mädchen von gemeiner Abkunft, die Procoli gefangen hält. Sie zu
             befreien, wäre mir erste Pflicht. Nichts hindert eure Ehe, wenn jene alten Schranken
@@ -1791,29 +1712,29 @@
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Sie werden fallen, wenn die Zeit den Gipfel erstiegen, Gott wird sie halten gegen die
+          <p>Sie werden fallen, wenn die Zeit den Gipfel erstiegen, Gott wird sie halten gegen die
             Gewalt des Erbfeinds. Was ist der Menschen Liebe ohne einen reinen Strahl des Ew'gen? O,
             viel gemeiner noch als Lust der Tiere, ich hab's an Procoli erlebt. Die Liebe soll mich
             nicht zum Schlechten führen.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Was ich beschlossen, kann ich ohne dich vollbringen, du kannst durch mich zu großer
+          <p>Was ich beschlossen, kann ich ohne dich vollbringen, du kannst durch mich zu großer
             Wirksamkeit geboren werden. Dein altes Leben hast du nutzlos aufgebraucht, – benutze die
             Stunde, wo Freundschaft dir ein neues Leben bietet.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Ich habe meinen Dolch verschwendet, den Schatten traf ich nur vom Wesen, dem ich
-            zürne. Der Procoli reißt eines Bürgers Eigentum an sich mit List und mit Gewalt. Du
-            willst das Eigentum von allen, das liebste, diese langbewahrte Freiheit rauben, um's zu
+          <p>Ich habe meinen Dolch verschwendet, den Schatten traf ich nur vom Wesen, dem ich zürne.
+            Der Procoli reißt eines Bürgers Eigentum an sich mit List und mit Gewalt. Du willst das
+            Eigentum von allen, das liebste, diese langbewahrte Freiheit rauben, um's zu
             verschwenden. Die fremde Macht, der du dich anvertraut, wird einen andern Götzen sich
             erheben, der türk'sche Mond wird zum Kometen, ein Schweif von Elend folgt dem kurzen
             Glanze.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Es spricht aus dir ein böser Geist: wo du erkennen solltest, willst du rühren. Ich
+          <p>Es spricht aus dir ein böser Geist: wo du erkennen solltest, willst du rühren. Ich
             bleibe fest. Du kennest nicht die Zeit, die überall zur Führung durch den einzelnen die
             wilde Irrung der <pb n="497"/> Gewalten rüttelt. Vergebens sehnte sich manch alter Römer
             nach seines Staates erster Freiheit. Geschehen mußte, was notwendig, und Einer herrschte
@@ -1821,28 +1742,27 @@
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Die Christenwelt hat anderes Gesetz, ihr ward Vergebung, sie wird erneut in ew'ger
+          <p>Die Christenwelt hat anderes Gesetz, ihr ward Vergebung, sie wird erneut in ew'ger
             Gnade, die Zeit wird wesenlos, die Tugend schafft sich Kraft zu allem Großen, der Glaube
             bricht des Unterdrückten Ketten.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <l> So mache dich frei durch deinen Glauben, brich diese Ketten.</l>
+          <p>So mache dich frei durch deinen Glauben, brich diese Ketten.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <l> Ich könnte sie fallen lassen, wenn ich wollte, und dich verderben, – doch du kamst als
-            Freund.</l>
+          <p>Ich könnte sie fallen lassen, wenn ich wollte, und dich verderben, – doch du kamst als
+            Freund.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Was ist's, was mich in dir erschrecket? Doch wenig Atemzüge noch, und du wirst
-            schweigen. <hi>Ab mit der Wache.</hi>
-          </p>
+          <p>Was ist's, was mich in dir erschrecket? Doch wenig Atemzüge noch, und du wirst
+            schweigen. <stage>Ab mit der Wache.</stage></p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Schweigen? Wird mir's so schwer? Ja, als die Zuversicht mein Blut bewegte, mit meinem
+          <p>Schweigen? Wird mir's so schwer? Ja, als die Zuversicht mein Blut bewegte, mit meinem
             Wort zu siegen über Lüge, da wär's mir ganz unmöglich. Ich habe gesprochen, – vergebens,
             – es ist vorüber, – ich hab nur leere Luft bewegt. Jetzt kann ich schweigen, möchte ewig
             schweigen, und der Geliebten denken. So wohl könnte mir nicht werden, hätt ich das ganze
@@ -1851,121 +1771,108 @@
             Krone von dem Haupte rollt. Des Freundes Hülfe ist vereitelt durch den Herzog, ich ahnd
             es wohl, die Stunden eilen, und milde schweigen ird'sche Sorgen an des Lebens ernster
             Grenze, und mächtiger als alle ist des Schlafes süße Schwäche, der Träume liebevolle
-            Nähe. <hi>Er schläft ein.</hi>
-          </p>
-          <stage>
-            <hi>Procoli und Marina treten ein.</hi>
-          </stage>
+            Nähe. <stage>Er schläft ein.</stage></p>
+          <stage>Procoli und Marina treten ein.</stage>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <l> Hier soll Caboga liegen, und deine Bitte wird erfüllt, ihn einmal noch vor seinem Tod
-            zu sehen.</l>
+          <p>Hier soll Caboga liegen, und deine Bitte wird erfüllt, ihn einmal noch vor seinem Tod
+            zu sehen.</p>
         </sp>
         <sp who="#marina">
           <speaker>MARINA.</speaker>
-          <p> Ja, so erfüllt der Böse auch des Menschen Bitte, Ihr reißt mich her zu ihm, daß ich
+          <p>Ja, so erfüllt der Böse auch des Menschen Bitte, Ihr reißt mich her zu ihm, daß ich
             sein Blut soll fließen sehen. Die Augen möcht ich mir eindrücken!</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> War's meine Absicht? Ich suchte nicht den Herzog auf, ich bat um keine Rache. Du
-            sahst, er drückte ohne meine Bitte die Pistole in meine Hand, als ich an ihm
-            vorüberging, und ihm erzählte, daß ich als nächster Anverwandter nach altem Recht den
-            Angeklagten <pb n="498"/> noch besuche; er gab Erlaubnis mir, ihn heimlich zu
-            erschießen, daß keine öffentliche Hinrichtung des alten hochgeehrten Hauses Glanz
-            beflecke.</p>
+          <p>War's meine Absicht? Ich suchte nicht den Herzog auf, ich bat um keine Rache. Du sahst,
+            er drückte ohne meine Bitte die Pistole in meine Hand, als ich an ihm vorüberging, und
+            ihm erzählte, daß ich als nächster Anverwandter nach altem Recht den Angeklagten <pb
+              n="498"/> noch besuche; er gab Erlaubnis mir, ihn heimlich zu erschießen, daß keine
+            öffentliche Hinrichtung des alten hochgeehrten Hauses Glanz beflecke.</p>
         </sp>
         <sp who="#marina">
           <speaker>MARINA.</speaker>
-          <p> Er ist des Hauses Glanz, befleckt ihn nicht mit Blut, die Zeit verändert viel, sie
-            kann ihn retten. Ihr dürft nicht morden, wenn Ihr mich wirklich liebt. Seht nur, er
-            schläft so sicher auf dem feuchten Stroh, als schlief er allen Engeln in dem Schoß.</p>
+          <p>Er ist des Hauses Glanz, befleckt ihn nicht mit Blut, die Zeit verändert viel, sie kann
+            ihn retten. Ihr dürft nicht morden, wenn Ihr mich wirklich liebt. Seht nur, er schläft
+            so sicher auf dem feuchten Stroh, als schlief er allen Engeln in dem Schoß.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Nicht wahr, du wünschest heimlich, er schliefe dir im Schoße, du möchtest ihn mit
+          <p>Nicht wahr, du wünschest heimlich, er schliefe dir im Schoße, du möchtest ihn mit
             Küssen wecken? Sieh ihn nur also liebreich tränend an, das macht mich hart wie meinen
             Feuerstein.</p>
         </sp>
         <sp who="#marina">
           <speaker>MARINA.</speaker>
-          <l> Ich wag ihn gar nicht anzusehn.</l>
+          <p>Ich wag ihn gar nicht anzusehn.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Nicht quälen will ich ihn, er ist mein Neffe, gerad ins Herz, so will ich zielen.
-              <hi>Er zielt mit der Pistole.</hi>
-          </p>
+          <p>Nicht quälen will ich ihn, er ist mein Neffe, gerad ins Herz, so will ich zielen.
+              <stage>Er zielt mit der Pistole.</stage></p>
         </sp>
         <sp who="#marina">
           <speaker>MARINA</speaker>
-          <stage>
-            <hi>knieet nieder.</hi>
-          </stage>
-          <l> Bei allen Heiligen, Ihr tötet mich in ihm.</l>
+          <stage>knieet nieder.</stage>
+          <p>Bei allen Heiligen, Ihr tötet mich in ihm.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Ich laß dir noch die Wahl, die du so keck hast ausgeschlagen, – du mußt dich mir
+          <p>Ich laß dir noch die Wahl, die du so keck hast ausgeschlagen, – du mußt dich mir
             ergeben, oder er wird seines Hauses Ehre hier geopfert, – ich schieße gut, – sprich
             schnell.</p>
         </sp>
         <sp who="#marina">
           <speaker>MARINA.</speaker>
-          <p> Seht Eures Hauses Adel in seinem Angesicht mit höchstem Glänze ausgeprägt, Ihr könnt
-            es nicht zerstören. Wenn solch ein Antlitz Euch nicht bändigt, wie soll ich sicher sein
-            an Eurer Seite? Dem Henker laßt solch ehrlos Amt, wärt Ihr mit seinem Blut befleckt, mir
+          <p>Seht Eures Hauses Adel in seinem Angesicht mit höchstem Glänze ausgeprägt, Ihr könnt es
+            nicht zerstören. Wenn solch ein Antlitz Euch nicht bändigt, wie soll ich sicher sein an
+            Eurer Seite? Dem Henker laßt solch ehrlos Amt, wärt Ihr mit seinem Blut befleckt, mir
             würde ewig vor Euch schaudern. Ja, seht ihn lächeln hier im Schlafe, wie selig! – –</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <l> Du rühmst ihn, du verhöhnst mich, – nun ist die Wahl zu spät! <hi>Er zielt.</hi>
-          </l>
+          <p>Du rühmst ihn, du verhöhnst mich, – nun ist die Wahl zu spät! <stage>Er
+            zielt.</stage></p>
         </sp>
         <sp who="#marina">
           <speaker>MARINA.</speaker>
-          <p> Halt, – so nimm mich hin, die kein Gesetz kann schützen, die aufgegebne Sklavin, nimm
+          <p>Halt, – so nimm mich hin, die kein Gesetz kann schützen, die aufgegebne Sklavin, nimm
             sie hin als Braut, – doch führe schnell mich fort, ich darf ihn nicht mehr sehen; er
             darf nicht wissen, wer sein Leben rettet, das schwöre mir.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Bei Gott, er soll von seiner Rettung gar nichts wissen. Doch lasse jetzt zum erstenmal
+          <p>Bei Gott, er soll von seiner Rettung gar nichts wissen. Doch lasse jetzt zum erstenmal
             dich küssen, hier vor seinen Augen.</p>
-          <stage>
-            <hi>Marina entflieht.</hi>
-          </stage>
+          <stage>Marina entflieht.</stage>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <l> Je mehr des Zwangs, je mehr der Lust. Ha, Czirich, alter Freund.</l>
-          <stage>
-            <hi>Czirich kommt.</hi>
-          </stage>
+          <p>Je mehr des Zwangs, je mehr der Lust. Ha, Czirich, alter Freund.</p>
+          <stage>Czirich kommt.</stage>
         </sp>
         <sp who="#czirich">
           <speaker>CZIRICH.</speaker>
-          <l> Ihr braucht mich, denn Ihr nennt mich Freund.</l>
+          <p>Ihr braucht mich, denn Ihr nennt mich Freund.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <p> Hier ist ein schwerer Beutel, und hier ist die Pistole, <pb n="499"/> gut geladen. Ist
+          <p>Hier ist ein schwerer Beutel, und hier ist die Pistole, <pb n="499"/> gut geladen. Ist
             dieses Tor geschlossen hinter mir, daß nicht der Knall kann weiter hallen, so schieße
             den Gefangenen nieder, der Herzog hat es mir erlaubt, zu meines Hauses Ehre, du hast es
             wohl vernommen.</p>
         </sp>
         <sp who="#czirich">
           <speaker>CZIRICH.</speaker>
-          <l> Wohl hört ich es, es ist des Herzogs Wille, will Euch das Stückchen Arbeit wohl
-            verrichten.</l>
-          <stage>
-            <hi>Procoli ab.</hi>
-          </stage>
+          <p>Wohl hört ich es, es ist des Herzogs Wille, will Euch das Stückchen Arbeit wohl
+            verrichten.</p>
+          <stage>Procoli ab.</stage>
         </sp>
         <sp who="#czirich">
           <speaker>CZIRICH.</speaker>
-          <p> Wie so ein reicher Herr für Kleinigkeit sein Geld verschleudert, ich schämte mich, so
+          <p>Wie so ein reicher Herr für Kleinigkeit sein Geld verschleudert, ich schämte mich, so
             viele Worte drum zu geben. Feigherzig ist das reiche Volk, ein Dutzend Menschen schlügen
             sie wohl all zusammen. Er wollte sein Gewissen retten, ich merk es wohl, allein am
             Jüngsten Tag mach ich ihn einst zu Schanden, ich will schon sagen, wie es zugegangen,
@@ -1978,7 +1885,7 @@
             Ein heller Tanz von Sturm und Blitzen. Die Quadern reißen aus einander; nun, falle nur
             nicht auf mich, du schwerer Bogen, ich will mein lebelang nicht morden, doch steh nur,
             bis ich unter dir hinweg zur Türe, ich rühre keinen Dolch mehr an, das schwöre ich der
-            heil'gen Mutter. <hi>Er will zur Türe, sie stürzt zusammen.</hi> Der Ausgang ist
+            heil'gen Mutter. <stage>Er will zur Türe, sie stürzt zusammen.</stage> Der Ausgang ist
             verschlossen, wo steh ich sicher? Hier am Fensterbogen? Das ging vorüber und dies
             Gewölbe scheint noch fest. Daß ich ein solcher Hase war, hier dem Gewerbe abzuschwören,
             das mich und auch die Meinen lange nährte. Was ist's denn mehr, ein Erdbeben; hab
@@ -1995,15 +1902,13 @@
             Caboga, jetzt leiste mir Gesellschaft, ich schenke dir dafür das Leben, mir wird so
             angst und bange; wach auf, Caboga, damit du auch auf Erden was erlebst, was deine Enkel
             dir nicht glauben werden. Ha!</p>
-          <stage>
-            <hi>Der eine Bogen des Gewölbes stürzt auf Czirich und mit der Seite des Felsens nieder,
-              auf welchem Czirich stand, man erblickt einen Teil der stürzenden aufflammenden Stadt.
-              Caboga erwacht unversehrt.</hi>
-          </stage>
+          <stage>Der eine Bogen des Gewölbes stürzt auf Czirich und mit der Seite des Felsens
+            nieder, auf welchem Czirich stand, man erblickt einen Teil der stürzenden aufflammenden
+            Stadt. Caboga erwacht unversehrt.</stage>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Wer rief mich aus einem guten Traume? Ach, ungeschehen war des Tages Unglück! – Riefst
+          <p>Wer rief mich aus einem guten Traume? Ach, ungeschehen war des Tages Unglück! – Riefst
             du mich, Mitrovich? Noch bin ich ganz geblendet. Keine Antwort. Die Sterne, ein mächtig
             heller Himmel über mir, und tausend Vögel, die gescheucht mich umkreisen; erwach ich auf
             dem Rabensteine, hat mich des Henkers Hand nur halb erdrosselt? Nein, hier die Kette und
@@ -2022,56 +1927,54 @@
             gewinnen. Was ist Zerstörung, als ein mahnend Wort zum Schaffen? Bin ich berufen? frag
             ich die Zerstörung, die neu ertobend aus den Tiefen kracht <pb n="501"/> und an dem
             Letzten nagt; ich frag die Blitzesflammen, die durch den heitern Himmel ziehn,
-            vernichtet mich, wenn ich in Torheit frevle! <hi>Er wirft die Ketten ab.</hi> Die
+            vernichtet mich, wenn ich in Torheit frevle! <stage>Er wirft die Ketten ab.</stage> Die
             Schrecken, die Gewalt gehen mir vorüber, dort unten wütet Gottes Zorn, das Schlechte
             soll vergehn, – fort mit den Schlacken, mich erquickt der reine Silberblick des
             aufgehenden Vollmonds, Ave Maria!</p>
-          <stage>
-            <hi>Er sinkt betend nieder, es rufen Stimmen Cabogas Namen, er beachtet es nicht;
-              Cornelia, mit einem Schwert bewaffnet, Mitrovich und holländische bewaffnete Matrosen
-              steigen auf einer Leiter an den Felsenabsturz hinan.</hi>
-          </stage>
+          <stage>Er sinkt betend nieder, es rufen Stimmen Cabogas Namen, er beachtet es nicht;
+            Cornelia, mit einem Schwert bewaffnet, Mitrovich und holländische bewaffnete Matrosen
+            steigen auf einer Leiter an den Felsenabsturz hinan.</stage>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <l> Hier kann's nicht sein, hier ist nicht Raum für einen Turm, steigt nieder.</l>
+          <p>Hier kann's nicht sein, hier ist nicht Raum für einen Turm, steigt nieder.</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <l> Ich irre nicht, hier stand der Turm, wo er gefesselt lag.</l>
+          <p>Ich irre nicht, hier stand der Turm, wo er gefesselt lag.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <l> Er gibt nicht Antwort unserm Ruf.</l>
+          <p>Er gibt nicht Antwort unserm Ruf.</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <l> Der Herzog wollte ihn durch Procoli ermorden lassen.</l>
+          <p>Der Herzog wollte ihn durch Procoli ermorden lassen.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <l> So ehrlos dacht ich nicht den Herzog.</l>
+          <p>So ehrlos dacht ich nicht den Herzog.</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <l> Weh uns, da liegt er hingestreckt.</l>
+          <p>Weh uns, da liegt er hingestreckt.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <p> Seid ruhig, Freund, Caboga lebt. <hi>Caboga sieht sie knieend voll Staunen stumm
-              an.</hi> Caboga, Eure Feinde sind gefallen; der Rat, versammelt in der Marienkirche,
-            weil sich der Herzog des Kastells bemächtigt, ist durch des Turmes Einsturz ausgetilgt.
-            Ich sehe, Eure Ketten sind gelöst, Euch bringe ich das Schwert, Ihr sollt der Stadt die
-            Ordnung wieder schenken, ich grüße Euch als Herzog; die Armen, Eure Freunde leben, und
-            keiner ist hier mächtiger als Ihr.</p>
+          <p>Seid ruhig, Freund, Caboga lebt. <stage>Caboga sieht sie knieend voll Staunen stumm
+              an.</stage> Caboga, Eure Feinde sind gefallen; der Rat, versammelt in der
+            Marienkirche, weil sich der Herzog des Kastells bemächtigt, ist durch des Turmes
+            Einsturz ausgetilgt. Ich sehe, Eure Ketten sind gelöst, Euch bringe ich das Schwert, Ihr
+            sollt der Stadt die Ordnung wieder schenken, ich grüße Euch als Herzog; die Armen, Eure
+            Freunde leben, und keiner ist hier mächtiger als Ihr.</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <l> Von dir erwartet unsre Stadt die Rettung aus der Räuber Hand.</l>
+          <p>Von dir erwartet unsre Stadt die Rettung aus der Räuber Hand.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> O, wie besteht die Freundschaft aller Welt Zerstörung! Die Ketten löste mir der treue
+          <p>O, wie besteht die Freundschaft aller Welt Zerstörung! Die Ketten löste mir der treue
             Mitrovich, Euch danke ich dies Schwert und küsse seinen kalten Stahl, o, dieses mächtige
             Zeichen dank ich Euch, Euch sandte mir der Himmel, den ich um Zeichen angefleht. Nicht
             herrschen will ich, keiner soll hier künftig herrschen, als die Weisheit aller, das
@@ -2082,94 +1985,91 @@
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <l> Das fremde Kriegsvolk, das im Solde der Geschlechter war, benutzt zur Plünderung die
-            Unglücksstunde.</l>
+          <p>Das fremde Kriegsvolk, das im Solde der Geschlechter war, benutzt zur Plünderung die
+            Unglücksstunde.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <p> Ich habe die Matrosen aller fremden Schiffe zu dem eignen Schutz versammelt und
+          <p>Ich habe die Matrosen aller fremden Schiffe zu dem eignen Schutz versammelt und
             bewaffnet, ich bring Euch eine Schar von unserm Schiffe, sie sind der Kern, um den sich
             Eure Freunde, alle gute Bürger sammeln, und viele Stimmen rufen schon nach Euch.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <l> Mit solcher Klugheit solch ein Mut in einem Geiste!</l>
+          <p>Mit solcher Klugheit solch ein Mut in einem Geiste!</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <p> Die Probe ist noch nicht bestanden. <hi>Sie nimmt ein andres Schwert.</hi> Befehlet,
-            führet uns, wohin die Not uns ruft.</p>
+          <p>Die Probe ist noch nicht bestanden. <stage>Sie nimmt ein andres Schwert.</stage>
+            Befehlet, führet uns, wohin die Not uns ruft.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Ihr wollt mich in den Tod begleiten? Schont Eures Vaters, bewahrt Euch ihm zum Tröste,
+          <p>Ihr wollt mich in den Tod begleiten? Schont Eures Vaters, bewahrt Euch ihm zum Tröste,
             ich darf ihm nicht sein liebstes Kleinod rauben, Ihr habt genug getan für eine fremde
             Stadt.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <p> Den guten Vater hat mir die Zerstörung von der Seite fortgerissen, er ist nicht mehr.
+          <p>Den guten Vater hat mir die Zerstörung von der Seite fortgerissen, er ist nicht mehr.
             Verwaist gehör ich dieser Stadt, ich bin ihr eigen, weil sie Euch geboren hat. Die Euch
             das Schwert in der Zerstörung brachte, sie darf das Schwert schon führen. – Darf
             ich?</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <l> Gott wird Euch führen.</l>
+          <p>Gott wird Euch führen.</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <p> Zu meinem Glücke oder in den Untergang, das ist mein ernster Wunsch, er wird mich mild
+          <p>Zu meinem Glücke oder in den Untergang, das ist mein ernster Wunsch, er wird mich mild
             behüten, daß ich nicht zwischen Glück und Unglück zweifelnd schwebe, wenn dieser Kampf
             beendet ist.</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <l> Ich sehe vom Kastelle einen Zug mit Fackeln niedersteigen. Wer nahet uns?</l>
-          <stage>
-            <hi>Hitrov und ein anderer Morlacke tragen den zerschmetterten Herzog beim
-              Fackelscheine.</hi>
-          </stage>
+          <p>Ich sehe vom Kastelle einen Zug mit Fackeln niedersteigen. Wer nahet uns?</p>
+          <stage>Hitrov und ein anderer Morlacke tragen den zerschmetterten Herzog beim
+            Fackelscheine.</stage>
         </sp>
         <sp who="#hitrov">
           <speaker>HITROV.</speaker>
-          <p> Wir tragen unsern Herzog, der schwer verwundet aus den Trümmern des Kastells
+          <p>Wir tragen unsern Herzog, der schwer verwundet aus den Trümmern des Kastells
             hervorgehoben. Geht's hier hinunter? Kein Ausweg ist zu finden.</p>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <l> Wer spricht mit Euch?</l>
+          <p>Wer spricht mit Euch?</p>
         </sp>
         <sp who="#cornelia">
           <speaker>CORNELIA.</speaker>
-          <p> Ich bin's, Cornelia, die Euch anspricht. Seht her, und kränket Euch im falschen
-            Herzen, Caboga lebt, den Ihr ermorden wolltet, statt ihn frei zu lassen, ich steh an
-            seiner Seite, wir sind bewaffnet, Euer Reich geendet.</p>
+          <p>Ich bin's, Cornelia, die Euch anspricht. Seht her, und kränket Euch im falschen Herzen,
+            Caboga lebt, den Ihr ermorden wolltet, statt ihn frei zu lassen, ich steh an seiner
+            Seite, wir sind bewaffnet, Euer Reich geendet.</p>
           <pb n="503"/>
         </sp>
         <sp who="#herzog">
           <speaker>HERZOG.</speaker>
-          <p> Mein Reich und auch die eitlen Hoffnungen, zu denen Ihr mich angefeuert, alles
+          <p>Mein Reich und auch die eitlen Hoffnungen, zu denen Ihr mich angefeuert, alles
             umgestürzt, und nur die Einsicht der Verkehrtheit meiner Wünsche überlebt sie selbst!
-              <hi>Er stirbt.</hi>
-          </p>
+              <stage>Er stirbt.</stage></p>
         </sp>
         <sp who="#hitrov">
           <speaker>HITROV.</speaker>
-          <l> Er senkt sein Haupt, er sprach zu viel für seine Schwäche.</l>
+          <p>Er senkt sein Haupt, er sprach zu viel für seine Schwäche.</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <l> Er spricht nicht mehr, das schwör ich euch.</l>
+          <p>Er spricht nicht mehr, das schwör ich euch.</p>
         </sp>
         <sp who="#hitrov">
           <speaker>HITROV.</speaker>
-          <p> Bei Gott, er hat geendet; so setzt ihn nieder hier, daß wir die Leiche nicht
+          <p>Bei Gott, er hat geendet; so setzt ihn nieder hier, daß wir die Leiche nicht
             zerschmettern auf dem Wege; wir wollen sehn nach unsern Frauen.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Wie seltsam und bedeutend! Des Herzogs Leiche steht hier ausgestellt, wo er mich
+          <p>Wie seltsam und bedeutend! Des Herzogs Leiche steht hier ausgestellt, wo er mich
             angefesselt hatte, mit dem Tod mir drohte, die Fesseln sind sein Ehrenbett. Ihr Leute,
             seht, so hat die Welt sich umgedreht, und eine andre Macht, die Freiheit, will
             erscheinen. Folgt mir, die Euren sucht ihr doch vergebens in der allgemeinen Flucht, für
@@ -2178,34 +2078,28 @@
         </sp>
         <sp who="#hitrov">
           <speaker>HITROV.</speaker>
-          <l> Hier meine Hand; mein Herzog ist gestorben, ich folge Euch mit meinen Leuten.</l>
+          <p>Hier meine Hand; mein Herzog ist gestorben, ich folge Euch mit meinen Leuten.</p>
         </sp>
-        <sp who="#alle">
+        <sp who="#alle_2">
           <speaker>ALLE.</speaker>
-          <l> Caboga soll uns führen.</l>
+          <p>Caboga soll uns führen.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Es regt sich frisch in allen. Ist unsre Schar auch klein, wir wollen nur das Rechte,
+          <p>Es regt sich frisch in allen. Ist unsre Schar auch klein, wir wollen nur das Rechte,
             wir treten den Verrätern wie ein Nachtgespenst entgegen, daß sie im schlechten Werk
             erzittern. Ist diese Nacht durch Kampf gesichert, am Morgen wird Ragusa mächtiger sich
             fühlen unter Trümmern, als da der Reichtum in Palästen glänzte. Mit Gott zum Heil der
             Stadt.</p>
-          <stage>
-            <hi>Er klettert herunter, die andern folgen.</hi>
-          </stage>
+          <stage>Er klettert herunter, die andern folgen.</stage>
         </sp>
       </div>
       <div type="act">
         <head>Dritte Handlung</head>
-        <stage>
-          <hi>Die halbzerstörte Marienkirche zu Ragusa.</hi>
-        </stage>
+        <stage>Die halbzerstörte Marienkirche zu Ragusa.</stage>
         <sp who="#bettler">
           <speaker>BETTLER</speaker>
-          <stage>
-            <hi>sucht umher.</hi>
-          </stage>
+          <stage>sucht umher.</stage>
           <lg>
             <l>Was ich im hohlen Stein bewahrt,</l>
             <l>Das war doch ganz umsonst gespart</l>
@@ -2232,9 +2126,7 @@
             <l>Und wenn Caboga hier regiert,</l>
             <l>Wohl keiner hier sein Brot verliert.</l>
           </lg>
-          <stage>
-            <hi>Er naht sich dem Altare.</hi>
-          </stage>
+          <stage>Er naht sich dem Altare.</stage>
           <lg>
             <l>O Herr, das Haus ist umgestürzt,</l>
             <l>Das ich mit dir bewohnte,</l>
@@ -2251,9 +2143,7 @@
             <l>Wer wird sie ehrlich hier begraben?</l>
             <l>Das ist zu schwer mir alten Knaben.</l>
           </lg>
-          <stage>
-            <hi>Kassuba und Polo springen herein.</hi>
-          </stage>
+          <stage>Kassuba und Polo springen herein.</stage>
         </sp>
         <sp who="#kassuba">
           <speaker>KASSUBA.</speaker>
@@ -2291,122 +2181,113 @@
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <p> Ihr edlen tugendsamen Leute, wißt ihr denn nicht, daß Caboga diese Nacht Ordnung
+          <p>Ihr edlen tugendsamen Leute, wißt ihr denn nicht, daß Caboga diese Nacht Ordnung
             stiftete, Räuber mit dem Schwert strafen ließ? Darum hütet euch, ihr habt auch ein jeder
             einen Hals.</p>
         </sp>
         <sp who="#kassuba">
           <speaker>KASSUBA.</speaker>
-          <p> Wenn Caboga lebte, da brauchten wir nicht zu stehlen, da hätten wir Beute im Felde.
+          <p>Wenn Caboga lebte, da brauchten wir nicht zu stehlen, da hätten wir Beute im Felde.
             Allein, das Blatt hat sich gewendet. Die Türken in des toten Herzogs Dienst, sie
             stürmten durch die eingestürzten Mauern, die Unsern sind geschlagen, und wenn wir nicht
             so rasche Beine hätten, die langen Feuerröhre der Türken hätten uns auch erreicht.</p>
         </sp>
         <sp who="#polo">
           <speaker>POLO.</speaker>
-          <p> Nun wollen wir uns etwas sammeln und ins Gebirge fliehen. Da liegt ein Kerl, der trägt
+          <p>Nun wollen wir uns etwas sammeln und ins Gebirge fliehen. Da liegt ein Kerl, der trägt
             gewaltig schöne Ringe. Zieh ab.</p>
         </sp>
         <sp who="#kassuba">
           <speaker>KASSUBA.</speaker>
-          <l> Er macht die Finger krumm, ich kann sie ihm nicht abziehen.</l>
+          <p>Er macht die Finger krumm, ich kann sie ihm nicht abziehen.</p>
         </sp>
         <sp who="#polo">
           <speaker>POLO.</speaker>
-          <l> Der muß es lange gewohnt gewesen sein, krumme Finger zu machen.</l>
+          <p>Der muß es lange gewohnt gewesen sein, krumme Finger zu machen.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI</speaker>
-          <stage>
-            <hi>unter den Steinen.</hi>
-          </stage>
-          <l> Helft, – hebt ab, – ach, mein Kreuz.</l>
+          <stage>unter den Steinen.</stage>
+          <p>Helft, – hebt ab, – ach, mein Kreuz.</p>
         </sp>
         <sp who="#polo">
           <speaker>POLO.</speaker>
-          <l> Es muß jeder sein Kreuz tragen. Was gibst du uns, wenn wir dich retten?</l>
+          <p>Es muß jeder sein Kreuz tragen. Was gibst du uns, wenn wir dich retten?</p>
           <pb n="506"/>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <l> Den Beutel voll Skudi in meiner Tasche.</l>
+          <p>Den Beutel voll Skudi in meiner Tasche.</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <p> Das ist der Procoli, ich kenn die Stimme, der lebt noch unterm Felsenstück, indessen
+          <p>Das ist der Procoli, ich kenn die Stimme, der lebt noch unterm Felsenstück, indessen
             der Caboga starb. Hilf doch, Kassuba, ist's gleich ein schlechter Kerl, es ist doch ein
             Mensch.</p>
         </sp>
         <sp who="#kassuba">
           <speaker>KASSUBA.</speaker>
-          <p> Ist das der böse Procoli, der unsrem toten Caboga Liebchen, Gut und Ehre rauben
-            wollte? Da wäre ich ein schlechter Kerl, nahm ich sein Geld. Drei große Steine roll ich
-            der Katze auf den Rücken, so sinkt er in den Höllenabgrund.</p>
+          <p>Ist das der böse Procoli, der unsrem toten Caboga Liebchen, Gut und Ehre rauben wollte?
+            Da wäre ich ein schlechter Kerl, nahm ich sein Geld. Drei große Steine roll ich der
+            Katze auf den Rücken, so sinkt er in den Höllenabgrund.</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <l> Gott mög es euch verzeihn, ich kann euch nicht ganz Unrecht geben.</l>
+          <p>Gott mög es euch verzeihn, ich kann euch nicht ganz Unrecht geben.</p>
         </sp>
         <sp who="#procoli">
           <speaker>PROCOLI.</speaker>
-          <l> Ach – ach – Caboga, – Gottes Hand, wie schwer!</l>
-          <stage>
-            <hi>Sie häufen Steine über ihn.</hi>
-          </stage>
+          <p>Ach – ach – Caboga, – Gottes Hand, wie schwer!</p>
+          <stage>Sie häufen Steine über ihn.</stage>
         </sp>
         <sp who="#polo">
           <speaker>POLO.</speaker>
-          <l> Er hat sein Denkmal, nun laß uns auch an unsern Vorteil denken.</l>
-          <stage>
-            <hi>Carofilli tritt mit einer Schar bewaffneter Weber ein.</hi>
-          </stage>
+          <p>Er hat sein Denkmal, nun laß uns auch an unsern Vorteil denken.</p>
+          <stage>Carofilli tritt mit einer Schar bewaffneter Weber ein.</stage>
         </sp>
         <sp who="#carofilli">
           <speaker>CAROFILLI</speaker>
-          <stage>
-            <hi>zum Bettler.</hi>
-          </stage>
-          <l> Ist alles in der Ordnung? Alles? Kein Raub, kein Mord an der geweihten Stätte?</l>
+          <stage>zum Bettler.</stage>
+          <p>Ist alles in der Ordnung? Alles? Kein Raub, kein Mord an der geweihten Stätte?</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <l> Sieh zu.</l>
+          <p>Sieh zu.</p>
         </sp>
         <sp who="#carofilli">
           <speaker>CAROFILLI.</speaker>
-          <l> Im Namen der Zünfte: Jedem das Seine. Hier liegen große Schätze, viele
-            Heiligtümer.</l>
+          <p>Im Namen der Zünfte: Jedem das Seine. Hier liegen große Schätze, viele Heiligtümer.</p>
         </sp>
         <sp who="#kassuba">
           <speaker>KASSUBA.</speaker>
-          <l> Der Schatz ist mein, die Heiligtümer schenk ich dir.</l>
+          <p>Der Schatz ist mein, die Heiligtümer schenk ich dir.</p>
         </sp>
         <sp who="#carofilli">
           <speaker>CAROFILLI.</speaker>
-          <p> Ihr von der Hölle ausgespienen Missetäter wollt reich an unserm Unglück werden. Greift
+          <p>Ihr von der Hölle ausgespienen Missetäter wollt reich an unserm Unglück werden. Greift
             zu und bindet sie.</p>
         </sp>
         <sp who="#polo">
           <speaker>POLO.</speaker>
-          <l> Seid vernünftig, gönnt ihr den Türken dieses liebe Gut? Wir wollten es nur retten.</l>
+          <p>Seid vernünftig, gönnt ihr den Türken dieses liebe Gut? Wir wollten es nur retten.</p>
         </sp>
         <sp who="#kassuba">
           <speaker>KASSUBA.</speaker>
-          <l> Ihr wißt wohl nicht, was Christen sind.</l>
+          <p>Ihr wißt wohl nicht, was Christen sind.</p>
         </sp>
         <sp who="#carofilli">
           <speaker>CAROFILLI.</speaker>
-          <l> Ihr schwärmt wie die Wölfe um die Leichen, statt wie die andern Christen
-            mitzufechten.</l>
+          <p>Ihr schwärmt wie die Wölfe um die Leichen, statt wie die andern Christen
+            mitzufechten.</p>
         </sp>
         <sp who="#kassuba">
           <speaker>KASSUBA.</speaker>
-          <l> Das Fechten nahm ein Ende, als Caboga fiel; bis dahin haben wir, bei Gott, uns brav
-            gehalten.</l>
+          <p>Das Fechten nahm ein Ende, als Caboga fiel; bis dahin haben wir, bei Gott, uns brav
+            gehalten.</p>
         </sp>
         <sp who="#carofilli">
           <speaker>CAROFILLI.</speaker>
-          <p> So wißt, es hat sich Großes zugetragen. Caboga war nur leicht verwundet, er richtete
+          <p>So wißt, es hat sich Großes zugetragen. Caboga war nur leicht verwundet, er richtete
             sich wieder auf und schlug die eingedrungnen Türken aus der Stadt. Vor ihm allein
             erzitterte der wilde Haufen, ein Engel mähte vor ihm her die Lanzen nieder. Der Sieger
             hat auf blut'gem Schlachtfeld, als wir ihm wütend nachgingen, die alten Rechte unsrer
@@ -2415,33 +2296,31 @@
         </sp>
         <sp who="#polo">
           <speaker>POLO.</speaker>
-          <p> Wir denken gar nicht, euch zu widerstreben, vielmehr aus Ehrfurcht gegen den Caboga
+          <p>Wir denken gar nicht, euch zu widerstreben, vielmehr aus Ehrfurcht gegen den Caboga
             ward ein Exempel guter Ordnung hier gegeben, der Feind Cabogas, der alte Procoli,
             bestraft und hingerichtet.</p>
         </sp>
         <sp who="#kassuba">
           <speaker>KASSUBA.</speaker>
-          <l> Caboga lebt, die Türken sind geschlagen? Kaum kann ich's glauben, der ich ihre
-            Übermacht gesehn.</l>
+          <p>Caboga lebt, die Türken sind geschlagen? Kaum kann ich's glauben, der ich ihre
+            Übermacht gesehn.</p>
         </sp>
         <sp who="#polo">
           <speaker>POLO.</speaker>
-          <p> Ja, wären wir dabei gewesen, wir könnten jubilieren mit den andern, nun kommt ein Neid
+          <p>Ja, wären wir dabei gewesen, wir könnten jubilieren mit den andern, nun kommt ein Neid
             mir an, ich gönne keinem dieses Glück, und möchte jedem es verkleinern.</p>
         </sp>
         <sp who="#carofilli">
           <speaker>CAROFILLI.</speaker>
-          <p> Habt ihr am Sieg heut keinen Teil, des Sieges Segen, die neue gute Ordnung strahlet
+          <p>Habt ihr am Sieg heut keinen Teil, des Sieges Segen, die neue gute Ordnung strahlet
             über alle, erhebt die Schwachen, die Gebeugten. Hört ihr den Freudenstrom, der brausend
             über alle Trümmer sich ergießt? Der Geist ist jedem heut erhöht, in fremden Zungen
             spricht das ganze Volk.</p>
-          <stage>
-            <hi>Caboga tritt mit mehreren Männern ein.</hi>
-          </stage>
+          <stage>Caboga tritt mit mehreren Männern ein.</stage>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Ihr werten Herrn des neuen Rats, verkündet allen, die euch mir gesandt, daß ich so
+          <p>Ihr werten Herrn des neuen Rats, verkündet allen, die euch mir gesandt, daß ich so
             viele Macht, wie ihr mir anvertrauen wollt, in keiner Hand, auch in der meinen nicht, je
             dulden werde; der Mißbrauch liegt in dem Gebrauch, ein Heil'ger könnte nur die Grenze
             halten. Jetzt aber, werte Freunde, haltet ab den freud'gen Andrang dieses guten Volks,
@@ -2453,38 +2332,34 @@
         </sp>
         <sp who="#ratsherr">
           <speaker>RATSHERR.</speaker>
-          <p> Wir ehren Eure Trauer und fühlen ganz mit Euch; wie viel die Stadt der edlen Fremden
+          <p>Wir ehren Eure Trauer und fühlen ganz mit Euch; wie viel die Stadt der edlen Fremden
             dankt; ihr Tod ist einzige Trauer dieses Tages.</p>
-          <stage>
-            <hi>Die Ratsherrn, Carofilli mit den Seinen, Kassuba und Polo sehen ab.</hi>
-          </stage>
+          <stage>Die Ratsherrn, Carofilli mit den Seinen, Kassuba und Polo sehen ab.</stage>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Ach, nicht der einzige Verlust ist mir Corneliens Tod an sie zu denken hebet meine
+          <p>Ach, nicht der einzige Verlust ist mir Corneliens Tod an sie zu denken hebet meine
             Seele; doch wilder Schmerz verwirret meine Sinne, wenn ich in selbstgeschaffner Qual der
             Leiden <pb n="508"/> mich ersinne, in denen die Geliebte unter Trümmern, unter Flammen,
             umsonst mit allen Kräften gegenringend, ach, mein wohl nicht gedenkend, auf immer von
             der öden Erde schied.</p>
-          <stage>
-            <hi>Die Leiche Corneliens wird mit Schwert und Lorbeerkranz geschmückt von Mönchen mit
-              einem leisen Kirchengesange zu der noch stehenden Seite der Kirche hingetragen.</hi>
-          </stage>
+          <stage>Die Leiche Corneliens wird mit Schwert und Lorbeerkranz geschmückt von Mönchen mit
+            einem leisen Kirchengesange zu der noch stehenden Seite der Kirche hingetragen.</stage>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Sie können ruhig singen, wo mir's die Kehle zuschnürt, das Herz abstößt. <hi>Zum
-              Bettler.</hi> He, Alter, warst du es nicht, der mir mein Schicksal in dem Lied
+          <p>Sie können ruhig singen, wo mir's die Kehle zuschnürt, das Herz abstößt. <stage>Zum
+              Bettler.</stage> He, Alter, warst du es nicht, der mir mein Schicksal in dem Lied
             verkündet, das du mir geschenkt?</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <l> Ich gab Euch, Herr, ein Lied, doch weiß ich nicht, was drinnen stand, ich griff's
-            heraus aus vielen.</l>
+          <p>Ich gab Euch, Herr, ein Lied, doch weiß ich nicht, was drinnen stand, ich griff's
+            heraus aus vielen.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> So wunderbarer ist die Hand, die es herausgegriffen. Hör, Alter, zu dir ergreift mich
+          <p>So wunderbarer ist die Hand, die es herausgegriffen. Hör, Alter, zu dir ergreift mich
             eine seltne Zuversicht, du hast ein lahmes Bein, und doch mußt du mich stützen. Ich habe
             alle Lieben heut verloren, die meinem Herzen nah, ich muß dich an mich drücken, daß ich
             ein menschlich Wesen mir befreundet fühle. Sieh nur, da tragen sie die treue Freundin
@@ -2496,63 +2371,62 @@
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <p> Herr, Herr, Ihr ehret mich zu hoch mit dem Vertrauen, ich sinne mich zu Tode, was ich
+          <p>Herr, Herr, Ihr ehret mich zu hoch mit dem Vertrauen, ich sinne mich zu Tode, was ich
             Euch dafür geben soll. Da fällt mir ein, daß Ihr mit solcher Heftigkeit ein Jungfräulein
             hier angesprochen habt, vielleicht weiß ich von der Euch zu erzählen.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Was weißt du? sprich, es war Marina, die Nächste meinem Herzen, – sie ist nicht mehr,
+          <p>Was weißt du? sprich, es war Marina, die Nächste meinem Herzen, – sie ist nicht mehr,
             sie ist verbrannt mit ihrem Hause, und diese Flamme möchte ich beneiden, und diese Asche
             will ich trinken in dem Wein.</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <p> Verbrannt? Ihr irret, Herr! Sie kam mit Procoli hieher geflüchtet im ersten
-            Augenblicke der Gefahr, sie war die einzige Jungfrau in der Menge, dort stand sie unter
-            dem gewölbten Grabmal des heil'gen Bischofs, der die Kirche hat erbaut, als mich der
-            Sturz des Turms betäubte. Und als ich auferwacht, da lebte ich, <pb n="509"/> der ganz
-            unnütze Alte, ganz allein, und all die schöne Jugend lag verschüttet.</p>
+          <p>Verbrannt? Ihr irret, Herr! Sie kam mit Procoli hieher geflüchtet im ersten Augenblicke
+            der Gefahr, sie war die einzige Jungfrau in der Menge, dort stand sie unter dem
+            gewölbten Grabmal des heil'gen Bischofs, der die Kirche hat erbaut, als mich der Sturz
+            des Turms betäubte. Und als ich auferwacht, da lebte ich, <pb n="509"/> der ganz unnütze
+            Alte, ganz allein, und all die schöne Jugend lag verschüttet.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> O, du bist mir zum Heil errettet, du bist der Dank, den mir der Himmel gab für mein
+          <p>O, du bist mir zum Heil errettet, du bist der Dank, den mir der Himmel gab für mein
             Bemühn um diese Stadt. Ich weiß, wo der geliebte Leib zu finden, du schenkest ihm ein
-            Grab in meinem Herzen, und meiner Seele schenkest du den Frieden. <hi>Die Mönche gehen
-              in feierlicher Ordnung und Stille von Corneliens Leiche fort und zur Kirche
-              hinaus.</hi> So sind vereint die beiden Lieben, und näher will ich sie einander
+            Grab in meinem Herzen, und meiner Seele schenkest du den Frieden. <stage>Die Mönche
+              gehen in feierlicher Ordnung und Stille von Corneliens Leiche fort und zur Kirche
+              hinaus.</stage> So sind vereint die beiden Lieben, und näher will ich sie einander
             bringen, daß ich von jeder eine Hand kann fassen, so will ich ruhn; hier, sagst du,
-            stand das Grabmal? <hi>Er arbeitet an den Steinen.</hi>
-          </p>
+            stand das Grabmal? <stage>Er arbeitet an den Steinen.</stage></p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <p> Es reichen eines Menschen Kräfte nicht, die schweren Steine abzuwälzen, und ich bin
+          <p>Es reichen eines Menschen Kräfte nicht, die schweren Steine abzuwälzen, und ich bin
             lahm und schwach, ich will Euch aus der Menge vor der Kirchtür starke Männer wählen.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Still, nein, denn das verbiet ich dir; kein andrer soll dies liebe Werk vollenden, aus
+          <p>Still, nein, denn das verbiet ich dir; kein andrer soll dies liebe Werk vollenden, aus
             meinen Schmerzen steigt mir Kraft, ich will allein die Liebliche erblicken.</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <p> Ich staune über Eure Kraft und Eile, zerstört Euch nicht, ich fleh Euch an, schont
-            Euch für unsre Stadt. <hi>Er hilft ihm.</hi> Seht da, ein weiblich Kleid!</p>
+          <p>Ich staune über Eure Kraft und Eile, zerstört Euch nicht, ich fleh Euch an, schont Euch
+            für unsre Stadt. <stage>Er hilft ihm.</stage> Seht da, ein weiblich Kleid!</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Ein weiblich Kleid, ihr Heiligen, ihr Kleid, wie werd ich sie erblicken? Noch einen
+          <p>Ein weiblich Kleid, ihr Heiligen, ihr Kleid, wie werd ich sie erblicken? Noch einen
             Augenblick möcht ich zu leben haben.</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <p> Faßt Hoffnung, Herr, sie kann nicht ganz zerschmettert sein, der kleine Bogen an dem
+          <p>Faßt Hoffnung, Herr, sie kann nicht ganz zerschmettert sein, der kleine Bogen an dem
             Grabmal hat sich noch gehalten.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Die Steine rollen wie von selbst herab, die sie verschließen! Gott, Gott, – da liegt
+          <p>Die Steine rollen wie von selbst herab, die sie verschließen! Gott, Gott, – da liegt
             sie still und bleich, – doch unversehrt. Marina! O, könnt ich meine Seele dir
             einhauchen, o nimm mich fort in deine Ruhe. Marina! O Sehnsucht, fülle nicht mein Herz
             mit Lüge, ich will nicht töricht mich mit Hoffnung täuschen; die Steine rollen unter
@@ -2561,91 +2435,81 @@
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <l> Glaubt Eurem Glück, sie reget sich, sie schlägt die Augen auf.</l>
+          <p>Glaubt Eurem Glück, sie reget sich, sie schlägt die Augen auf.</p>
         </sp>
         <sp who="#marina">
           <speaker>MARINA</speaker>
-          <stage>
-            <hi>schwach.</hi>
-          </stage>
-          <p> Im Grabe Hingt des Treuen Stimme noch, – <pb n="510"/> dem Himmel Dank, der mir das
+          <stage>schwach.</stage>
+          <p>Im Grabe Hingt des Treuen Stimme noch, – <pb n="510"/> dem Himmel Dank, der mir das
             reine Leben nahm, – und dich zu mir in selige Nähe führte.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <l> Du atmest, und du sprichst, du hebst dich unversehrt aus Schreckenstiefe.</l>
+          <p>Du atmest, und du sprichst, du hebst dich unversehrt aus Schreckenstiefe.</p>
         </sp>
         <sp who="#marina">
           <speaker>MARINA.</speaker>
-          <l> Erfüllet ist die himmlische Verheißung, wir sind erstanden zu dem Tage des
-            Gerichts.</l>
+          <p>Erfüllet ist die himmlische Verheißung, wir sind erstanden zu dem Tage des
+            Gerichts.</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER.</speaker>
-          <p> Wie schön wird einst der Jüngste Tag der Welt erscheinen, das lehrt uns allen Schmerz
+          <p>Wie schön wird einst der Jüngste Tag der Welt erscheinen, das lehrt uns allen Schmerz
             der Welt ertragen.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <l> Ich bin so selig wie im ewigen Leben.</l>
+          <p>Ich bin so selig wie im ewigen Leben.</p>
         </sp>
         <sp who="#marina">
           <speaker>MARINA.</speaker>
-          <p> Was höre ich, es schallen noch die Glocken der Sankt Markus-Kirche? Sag mir,
-            Geliebter, ist es noch das vor'ge Leben, die Erdenwelt, die uns umgibt?</p>
+          <p>Was höre ich, es schallen noch die Glocken der Sankt Markus-Kirche? Sag mir, Geliebter,
+            ist es noch das vor'ge Leben, die Erdenwelt, die uns umgibt?</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <l> Die Erden weit verklärt in himmlischer Liebe.</l>
+          <p>Die Erden weit verklärt in himmlischer Liebe.</p>
         </sp>
         <sp who="#marina">
           <speaker>MARINA.</speaker>
-          <p> So sei mir lieb nur deinetwegen diese Welt der Schrecken und Vernichtung. Doch sprich,
+          <p>So sei mir lieb nur deinetwegen diese Welt der Schrecken und Vernichtung. Doch sprich,
             Caboga: wird irdische Gewalt mich wieder dir entreißen?</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Der Vorzeit ernste Strenge trennt uns nicht mehr, die Feinde unsrer Liebe können uns
+          <p>Der Vorzeit ernste Strenge trennt uns nicht mehr, die Feinde unsrer Liebe können uns
             nicht schaden, – das ganze Land, dem ich die Freiheit gab, wird dich als meine
             Herrscherin verehren.</p>
         </sp>
         <sp who="#marina">
           <speaker>MARINA.</speaker>
-          <p> So mußten alles Unglück wir bestehn zur Wonne dieser Stunde, – und du bist mein, und
+          <p>So mußten alles Unglück wir bestehn zur Wonne dieser Stunde, – und du bist mein, und
             ich bin dein, es ist mein einziger Gedanke, und wie auf Wolken schweb ich selig dir im
             Arm, und deine Augen sind mir Himmelssterne.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Wir sind zu selig, wir zwei beide. Eröffne das verschloßne Tor, mein alter Freund, daß
+          <p>Wir sind zu selig, wir zwei beide. Eröffne das verschloßne Tor, mein alter Freund, daß
             meine Treuen, daß die geliebte Stadt mein Glück mit Jubel preise, wie sie mein Unglück
             schonend hat geehrt.</p>
         </sp>
         <sp who="#bettler">
           <speaker>BETTLER</speaker>
-          <stage>
-            <hi>öffnet das Kirchentor.</hi>
-          </stage>
-          <l> Nun tretet ein, ihr Bürger, Caboga rufet euch, er kann mit euch sich wieder
-            freuen.</l>
-          <stage>
-            <hi>Es gehen Mitrovich, Carofilli, Hitrov, die netten Ratsherren, die bewaffneten
-              Scharen in stiller </hi>
-          </stage>
-          <stage>
-            <hi>Ordnung ein.</hi>
-          </stage>
+          <stage>öffnet das Kirchentor.</stage>
+          <p>Nun tretet ein, ihr Bürger, Caboga rufet euch, er kann mit euch sich wieder freuen.</p>
+          <stage>Es gehen Mitrovich, Carofilli, Hitrov, die netten Ratsherren, die bewaffneten
+            Scharen in stiller Ordnung ein.</stage>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <p> Caboga, sage an, was ist geschehn, ich hatte mich bisher vor dir versteckt, um nicht
-            mit dir zu trauern. <hi>Er sieht Marina.</hi> Sie lebt, Marina lebt. O, nun begreif ich,
-            daß du dich mit uns kannst freun.</p>
+          <p>Caboga, sage an, was ist geschehn, ich hatte mich bisher vor dir versteckt, um nicht
+            mit dir zu trauern. <stage>Er sieht Marina.</stage> Sie lebt, Marina lebt. O, nun
+            begreif ich, daß du dich mit uns kannst freun.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Ihr schaut des Himmels Gnade hier in diesem Angesicht, <pb n="511"/> vernehmt mein
-            ganz Geschick. Cornelia, die edle Flamme, die mir der Ehre Bahn bezeichnete, erlosch im
+          <p>Ihr schaut des Himmels Gnade hier in diesem Angesicht, <pb n="511"/> vernehmt mein ganz
+            Geschick. Cornelia, die edle Flamme, die mir der Ehre Bahn bezeichnete, erlosch im
             letzten Sturm des Feinds. Ihr Denkmal ist der Schmerz in eurer Brust, die sich des Danks
             nicht mehr entlasten kann; was sie für mich getan, geschah für euch! Den tiefsten
             Schmerz, der mir allein nur eigen, verschwieg ich euch. Ich trauerte zugleich um diese
@@ -2654,50 +2518,48 @@
         </sp>
         <sp who="#marina">
           <speaker>MARINA.</speaker>
-          <p> Ja, wunderbar und gütig ist der Herr, und alles Heil'ge wirkt in seiner Kraft. Dem
+          <p>Ja, wunderbar und gütig ist der Herr, und alles Heil'ge wirkt in seiner Kraft. Dem
             Herrn zu danken ist die einz'ge Sehnsucht, nachdem ich dich gefunden, nachdem du mir
             verbunden.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA</speaker>
-          <stage>
-            <hi>führt sie zu Corneliens Leiche.</hi>
-          </stage>
-          <p> Hier ist sein Altar. Bei diesem festen Herzen bete, hier sage Dank mit deinen reinen
+          <stage>führt sie zu Corneliens Leiche.</stage>
+          <p>Hier ist sein Altar. Bei diesem festen Herzen bete, hier sage Dank mit deinen reinen
             Lippen für alles Herrliche, was dieses Leben, neu gewonnen, uns verspricht. Mich hat ein
             himmlischer Gedanke neuer Tätigkeit ergriffen. Ihr Männer, steht mir bei.</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <l> Bereit ist jedes Schwert, dein Wort gibt Kraft den Müden.</l>
+          <p>Bereit ist jedes Schwert, dein Wort gibt Kraft den Müden.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Der Kraft bedarf ich, nicht des Schwerts, zur Arbeit geht es aus dem Kampfe. Wie viele
+          <p>Der Kraft bedarf ich, nicht des Schwerts, zur Arbeit geht es aus dem Kampfe. Wie viele
             edle Bürger unsrer Stadt, die hier versammelt waren, kann dieser Schutt bedecken, wo ich
             Marina unverletzt gefunden; und retten wir auch keinen, so ist's doch unsre Treue, die
             sich dadurch bewährt.</p>
         </sp>
-        <sp who="#viele">
+        <sp who="#viele_3">
           <speaker>VIELE.</speaker>
-          <p> Wir sind bereit, wir folgen dir, wir finden sicher von den Unsern auch am Leben, die
+          <p>Wir sind bereit, wir folgen dir, wir finden sicher von den Unsern auch am Leben, die
             Schwachen können wir erfrischen, und die Beschädigten noch heilen.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Ja, schwört, nicht eher von der Arbeit abzulassen, ich teil euch ein zur Arbeit und
-            zur Ruhe, so lange noch ein Bürger lebend oder tot hier unter Trümmern kann geahndet
-            werden. Der Seinen Schicksal soll ein jedes Haus erfahren, mit treuem Arm die Lebenden
-            erwecken, die Toten in geweihte Erde legen.</p>
+          <p>Ja, schwört, nicht eher von der Arbeit abzulassen, ich teil euch ein zur Arbeit und zur
+            Ruhe, so lange noch ein Bürger lebend oder tot hier unter Trümmern kann geahndet werden.
+            Der Seinen Schicksal soll ein jedes Haus erfahren, mit treuem Arm die Lebenden erwecken,
+            die Toten in geweihte Erde legen.</p>
         </sp>
         <sp who="#mitrovich">
           <speaker>MITROVICH.</speaker>
-          <p> Ich schwör in aller Namen, doch laßt uns lieber jeden andern Ort zuerst durchwühlen
-            als diesen, wo Eure Feinde, die Feinde unsrer Freiheit sind verschüttet.</p>
+          <p>Ich schwör in aller Namen, doch laßt uns lieber jeden andern Ort zuerst durchwühlen als
+            diesen, wo Eure Feinde, die Feinde unsrer Freiheit sind verschüttet.</p>
         </sp>
         <sp who="#caboga">
           <speaker>CABOGA.</speaker>
-          <p> Sie können mir, sie können euch nicht schaden, die alte Zeit ist ausgetilgt im
+          <p>Sie können mir, sie können euch nicht schaden, die alte Zeit ist ausgetilgt im
             Schrecken, durch unsren Sieg ist eine neue Welt und Stadt geschaffen, ein anderes Gesetz
             ist neu begründet, <pb n="512"/> wir sind von Gottes Gnaden freie Männer, doch denkt
             daran, daß diese auch zu ihrer Zeit durch Gottes Gnade uns beherrschten, für uns
@@ -2706,9 +2568,9 @@
             das nichts, – sie sind die Nächsten hier, dem Nächsten reichen wir die Hand. – Zur
             Arbeit frisch, als wär's ein Ehrenkampf.</p>
         </sp>
-        <sp who="#alle">
+        <sp who="#alle_3">
           <speaker>ALLE.</speaker>
-          <l> Zur Arbeit frisch.</l>
+          <p>Zur Arbeit frisch.</p>
         </sp>
         <sp who="#einer">
           <speaker>EINER.</speaker>
@@ -2721,7 +2583,7 @@
             <l>Es wankten die Sterne, ich irrte im Sturm.«</l>
           </lg>
         </sp>
-        <sp who="#viele">
+        <sp who="#viele_3">
           <speaker>VIELE.</speaker>
           <lg>
             <l>Was klagest du, Tor, erhebst ein Geschrei,</l>
@@ -2741,7 +2603,7 @@
             <l>Auf schwankendem Schiffe in Sturmes Graus.«</l>
           </lg>
         </sp>
-        <sp who="#alle">
+        <sp who="#alle_3">
           <speaker>ALLE.</speaker>
           <lg>
             <l>Die Erde erbebte, Ragusa wird frei,</l>
@@ -2761,7 +2623,7 @@
             <l>Die Freiheit wurde uns allen zu Teil.«</l>
           </lg>
         </sp>
-        <sp who="#alle">
+        <sp who="#alle_3">
           <speaker>ALLE.</speaker>
           <lg>
             <l>Die Erde wird fest, die Erde wird frei,</l>
