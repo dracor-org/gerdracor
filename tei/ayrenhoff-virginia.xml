@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Virginia oder das abgeschaffte Decemvirat</title>
+        <title type="main">Virginia oder Das abgeschaffte Decemvirat</title>
+        <title type="sub">Trauerspiel in vier Aufzügen</title>
         <author key="pnd:118869647">Ayrenhoff, Cornelius Hermann von</author>
       </titleStmt>
       <publicationStmt>
@@ -42,56 +43,69 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="marcus">
-            <persName>MARCUS</persName>
-            <persName xml:id="markus">MARKUS</persName>
+          <person xml:id="marcus" sex="MALE">
+            <persName>Marcus</persName>
           </person>
-          <person xml:id="lucius">
-            <persName>LUCIUS</persName>
+          <person xml:id="lucius" sex="MALE">
+            <persName>Lucius</persName>
           </person>
-          <person xml:id="virginia">
-            <persName>VIRGINIA</persName>
+          <person xml:id="virginia" sex="FEMALE">
+            <persName>Virginia</persName>
           </person>
-          <person xml:id="albina">
-            <persName>ALBINA</persName>
+          <person xml:id="albina" sex="FEMALE">
+            <persName>Albina</persName>
           </person>
-          <person xml:id="quintus">
-            <persName>QUINTUS</persName>
+          <person xml:id="quintus" sex="MALE">
+            <persName>Quintus</persName>
           </person>
-          <person xml:id="ruffus">
-            <persName>RUFFUS</persName>
+          <person xml:id="ruffus" sex="MALE">
+            <persName>Ruffus</persName>
           </person>
-          <person xml:id="numitorius">
-            <persName>NUMITORIUS</persName>
-            <persName xml:id="numitor">NUMITOR</persName>
+          <person xml:id="numitorius" sex="MALE">
+            <persName>Numitorius</persName>
           </person>
-          <person xml:id="icilius">
-            <persName>ICILIUS</persName>
+          <person xml:id="icilius" sex="MALE">
+            <persName>Icilius</persName>
           </person>
-          <person xml:id="ein_paar_vom_volke">
-            <persName>EIN PAAR VOM VOLKE</persName>
+          <personGrp xml:id="alle_1-5" sex="UNKNOWN">
+            <name>Alle (I/5)</name>
+          </personGrp>
+          <personGrp xml:id="ein_paar_vom_volke_2-2" sex="UNKNOWN">
+            <name>Ein paar vom Volke (II/2)</name>
+          </personGrp>
+          <personGrp xml:id="das_volk_2-3" sex="UNKNOWN">
+            <name>Das Volk (II/3)</name>
+          </personGrp>
+          <person xml:id="appius" sex="MALE">
+            <persName>Appius</persName>
           </person>
-          <person xml:id="das_volk">
-            <persName>DAS VOLK</persName>
+          <personGrp xml:id="alle_2-5" sex="UNKNOWN">
+            <name>Alle (II/5)</name>
+          </personGrp>
+          <personGrp xml:id="das_volk_2-5" sex="UNKNOWN">
+            <name>Das Volk (II/5)</name>
+          </personGrp>
+          <personGrp xml:id="einige_vom_volk_3-3" sex="UNKNOWN">
+            <name>Einige vom Volk (III/3)</name>
+          </personGrp>
+          <personGrp xml:id="alle_3-3" sex="UNKNOWN">
+            <name>Alle (III/3)</name>
+          </personGrp>
+          <person xml:id="virginius" sex="MALE">
+            <persName>Virginius</persName>
           </person>
-          <person xml:id="appius">
-            <persName>APPIUS</persName>
+          <person xml:id="valerius" sex="MALE">
+            <persName>Valerius</persName>
           </person>
-          <person xml:id="einige_vom_volk">
-            <persName>EINIGE VOM VOLK</persName>
+          <personGrp xml:id="die_zeugen" sex="UNKNOWN">
+            <name>Die Zeugen</name>
+          </personGrp>
+          <person xml:id="laelia" sex="FEMALE">
+            <persName>Lälia</persName>
           </person>
-          <person xml:id="virginius">
-            <persName>VIRGINIUS</persName>
-          </person>
-          <person xml:id="valerius">
-            <persName>VALERIUS</persName>
-          </person>
-          <person xml:id="die_zeugen">
-            <persName>DIE ZEUGEN</persName>
-          </person>
-          <person xml:id="lälia">
-            <persName>LÄLIA</persName>
-          </person>
+          <personGrp xml:id="das_volk_4-6" sex="UNKNOWN">
+            <name>Das Volk (IV/6)</name>
+          </personGrp>
         </listPerson>
       </particDesc>
       <textClass>
@@ -105,6 +119,7 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
+        <change who="#ff" when="2018-05-05">formalities; work on IDs; add gender info</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -117,8 +132,6 @@
         <head>Das abgeschaffte Decemvirat</head>
         <head>Trauerspiel in vier Aufzügen</head>
       </div>
-    </front>
-    <body>
       <div type="dedication">
         <p>Dem Herrn Abbte de' Giorgi Bertòla gewidmet</p>
       </div>
@@ -135,17 +148,24 @@
           <castItem>Lälia, des Marcus Gemahlinn.</castItem>
           <castItem>Valerius, Chef der Besatzung des Capitols.</castItem>
           <castItem>Lucius, ein Offizier des Appius.</castItem>
-          <castItem>Ruffus,</castItem>
-          <castItem>Quintus, , Römische Bürger.</castItem>
+          <castGroup>
+            <castItem>Ruffus,</castItem>
+            <castItem>Quintus,</castItem>
+            <roleDesc>Römische Bürger.</roleDesc>
+          </castGroup>
           <castItem>Wachen, Lictoren, vier Sklaven des Marcus, und Volk, worunter auch Weiber
             sind.</castItem>
         </castList>
       </div>
+      <set>
+        <p>Die Bühne stellt das Forum romanum vor. In der Tiefe schließt das Capitol, an dessen Fuße
+          (dem Zuschauer links) man einen Tempel sieht.</p>
+      </set>
       <div type="preface">
         <head>Zuschrift an den Herrn Abbt von Bertòla.</head>
         <p>Schätzbarster Freund!</p>
-        <p>Der schmeichelhafte Beyfall, mit welchem ich meine Kleopatra in Ihrer <hi>Idea della
-            bella Letteratura Alemanna</hi> aufgenommen fand, ermunterte mich zu einem neuen
+        <p>Der schmeichelhafte Beyfall, mit welchem ich meine Kleopatra in Ihrer <emph>Idea della
+            bella Letteratura Alemanna</emph> aufgenommen fand, ermunterte mich zu einem neuen
           tragischen Versuche. Lesen Sie ihn! und erwägen Sie dann, ob Sie Gutes oder Übels
           gestiftet haben.</p>
         <p>Ich wählte mir die Geschichte der Virginia lieber als eine andere, theils, weil dieselbe,
@@ -159,8 +179,8 @@
           meines ersten und zweyten Akts gewahr werden können, daß mir die Virginia ihres Grafen von
           Alfieri nicht unbekannt ist, werden Sie doch auch erkennen, daß nicht sie, sondern die
           wahre Geschichte meine Führerinn war. Der ganze Inhalt <pb n="247"/> der beyden ersten
-          Akte liegt beynahe wie hier in der <hi>Histoire des revolutions de la republique
-            Romaine</hi> vom Vertot. Der dritte Akt besteht zwar größtentheils aus meinen eignen,
+          Akte liegt beynahe wie hier in der <emph>Histoire des revolutions de la republique
+            Romaine</emph> vom Vertot. Der dritte Akt besteht zwar größtentheils aus meinen eignen,
           aber doch solchen Erdichtungen, zu denen mir die eben genannte Geschichte Wink oder Anlaß
           gab. Dahin gehört Icils Vorschlag zur Flucht nach dem heiligen Berge – die Ermordung
           seines Bruders durch Miethmörder, und die vermeinte Ermordung des Virginius. Nur im
@@ -193,21 +213,21 @@
           weniger wahrscheinlich, als die Erdichtung ist. –</p>
         <p>Übrigens bin ich versichert, mir Ihren Beyfall dadurch verdienet zu haben, daß ich in
           diesem, wie in meinen übrigen Theaterprodukten, die Regeln der Alten pünktlich zu befolgen
-          getrachtet habe. Die Regel: <hi>Neve minor, neu fit quinto productior actu fabula!</hi>
-          gehört weniger als alle andern für uns Neuere, da sie nicht wie die Regeln der Einheiten,
-          die Illusion (den Hauptzweck des Drama, wie aller schönen Künste) befördern hilft.
-          Vielleicht war sie den Alten, ihrer Chöre, auch anderer Ursachen wegen, zur Form ihrer
-          Tragödien wesentlicher als uns; aber sie war doch immer nur eine conventionelle, nie eine
-          nothwendige Regel. Meines Erachtens gibt es wenig einfache tragische Handlungen, die man
-          füglich gerade in fünf Akte eintheilen kann, ohne sich ganz willkührliche und zwecklose
-          Zwischenakte, oder (nach Art der meisten englischen Dichter) entbehrliche, und deßhalb
-          fehlerhafte Episoden zu erlauben, oder (nach der nicht ungewöhnlichen Art der Franzosen)
-          ganze Akte mit einer erzählenden Exposition auszufüllen. Die Eintheilung des Stoffs muß
-          also unstreitig der Beurtheilung des Dichters heimgestellt bleiben, so wie es der
-          Beurtheilung des Geschichtmalers heimgestellt ist, in einem großen Gemälde (auch wann ihm
-          Inhalt und Raum vorgeschrieben <pb n="249"/> werden) die Anzahl seiner Gruppen selbst zu
-          bestimmen. – Doch warum erwähne ich dieses Umstands gegen Sie? Meine Kleopatra ist wie
-          diese Virginia in vier Akten, und sie erhielt Ihren Beyfall.</p>
+          getrachtet habe. Die Regel: <emph>Neve minor, neu fit quinto productior actu
+            fabula!</emph> gehört weniger als alle andern für uns Neuere, da sie nicht wie die
+          Regeln der Einheiten, die Illusion (den Hauptzweck des Drama, wie aller schönen Künste)
+          befördern hilft. Vielleicht war sie den Alten, ihrer Chöre, auch anderer Ursachen wegen,
+          zur Form ihrer Tragödien wesentlicher als uns; aber sie war doch immer nur eine
+          conventionelle, nie eine nothwendige Regel. Meines Erachtens gibt es wenig einfache
+          tragische Handlungen, die man füglich gerade in fünf Akte eintheilen kann, ohne sich ganz
+          willkührliche und zwecklose Zwischenakte, oder (nach Art der meisten englischen Dichter)
+          entbehrliche, und deßhalb fehlerhafte Episoden zu erlauben, oder (nach der nicht
+          ungewöhnlichen Art der Franzosen) ganze Akte mit einer erzählenden Exposition auszufüllen.
+          Die Eintheilung des Stoffs muß also unstreitig der Beurtheilung des Dichters heimgestellt
+          bleiben, so wie es der Beurtheilung des Geschichtmalers heimgestellt ist, in einem großen
+          Gemälde (auch wann ihm Inhalt und Raum vorgeschrieben <pb n="249"/> werden) die Anzahl
+          seiner Gruppen selbst zu bestimmen. – Doch warum erwähne ich dieses Umstands gegen Sie?
+          Meine Kleopatra ist wie diese Virginia in vier Akten, und sie erhielt Ihren Beyfall.</p>
         <p>Ein Umstand, welcher mehr eine Erwähnung verdienet, ist die Verschiedenheit der Versart,
           in welcher die beyden Stücke geschrieben sind. Unsere deutschen Theater-Dichter und
           Richter find noch nicht ganz einig, welche Gattung der Verse der Tragödie vorzüglich
@@ -226,8 +246,8 @@
           nur das Ganze Ihren Beyfall, so ist mein Hauptziel erreichet; so bringe ich Ihnen in
           meiner Virginia kein ganz unwürdiges Opfer meiner Hochachtung, und rechtfertige zu
           gleicher Zeit, doch einigermaßen, das – zu günstige Urtheil, welches Sie in Ihrer
-            <hi>Idea</hi> etc. über meine dramatischen Versuche gefället haben. Wien den 15ten März
-          1790.</p>
+            <emph>Idea</emph> etc. über meine dramatischen Versuche gefället haben. Wien den 15ten
+          März 1790.</p>
         <p>Ihr ganz ergebenster Diener und Freund</p>
         <p>Ayrenhoff.</p>
         <pb n="250"/>
@@ -240,13 +260,13 @@
           </note>
         </div>
       </div>
+    </front>
+    <body>
       <div type="act">
         <head>1. Akt</head>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Marcus mit vier Sklaven. Lucius.</hi>
-          </stage>
+          <stage>Marcus mit vier Sklaven. Lucius.</stage>
           <sp who="#marcus">
             <speaker>MARCUS.</speaker>
             <lg>
@@ -320,18 +340,12 @@
         </div>
         <div type="scene">
           <head>Zweyter Auftritt.</head>
-          <stage>
-            <hi>Virginia, Albina aus dem Tempel. Die Vorigen. Dann Volk.</hi>
-          </stage>
-          <sp who="#markus">
-            <speaker>MARKUS</speaker>
-            <stage>
-              <hi>etwas leiser.</hi>
-            </stage>
+          <stage>Virginia, Albina aus dem Tempel. Die Vorigen. Dann Volk.</stage>
+          <sp who="#marcus">
+            <speaker>MARCUS</speaker>
+            <stage>etwas leiser.</stage>
             <l>Nun Knechte!</l>
-            <stage>
-              <hi>Zween Sklaven ergreiffen Virginien.</hi>
-            </stage>
+            <stage>Zween Sklaven ergreiffen Virginien.</stage>
             <pb n="252"/>
           </sp>
           <sp who="#virginia">
@@ -396,9 +410,7 @@
               <l>Dieß wähnst du nur zu seyn; du bist es nicht.</l>
               <l>Mehr Licht hievon werd' ich dir bald ertheilen.</l>
             </lg>
-            <stage>
-              <hi>Quintus, Ruffus und einiges Volk zeigen sich in der Ferne.</hi>
-            </stage>
+            <stage>Quintus, Ruffus und einiges Volk zeigen sich in der Ferne.</stage>
             <l>Folg itzt nur unverweilt mir in mein Haus!</l>
           </sp>
           <sp who="#virginia">
@@ -427,15 +439,11 @@
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <stage>
-            <hi>Quintus, Ruffus. Die Vorigen.</hi>
-          </stage>
+          <stage>Quintus, Ruffus. Die Vorigen.</stage>
           <sp who="#quintus">
             <speaker>QUINTUS.</speaker>
             <l>Was geht hier vor?</l>
-            <stage>
-              <hi>Ruffus und das Volk nähern sich allmählich.</hi>
-            </stage>
+            <stage>Ruffus und das Volk nähern sich allmählich.</stage>
           </sp>
           <sp who="#albina">
             <speaker>ALBINA.</speaker>
@@ -447,9 +455,7 @@
           <sp who="#marcus">
             <speaker>MARCUS.</speaker>
             <l>Fort, sag ich euch, mit ihr!</l>
-            <stage>
-              <hi>Zur Albina.</hi>
-            </stage>
+            <stage>Zur Albina.</stage>
             <lg>
               <l>Du Kühne, schweig,</l>
               <l>soll deinen Lästermund der Tod nicht schließen!</l>
@@ -501,16 +507,12 @@
           </sp>
           <sp who="#ruffus">
             <speaker>RUFFUS</speaker>
-            <stage>
-              <hi>zu einem Bürger.</hi>
-            </stage>
+            <stage>zu einem Bürger.</stage>
             <lg>
               <l>Eile hin,</l>
               <l>von diesem Zufall ihn zu unterrichten</l>
             </lg>
-            <stage>
-              <hi>Einer geht ab.</hi>
-            </stage>
+            <stage>Einer geht ab.</stage>
             <lg>
               <l>Auch Numitorius ist mir bekannt,</l>
               <l>mit Ruhm bekannt.</l>
@@ -549,9 +551,7 @@
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <stage>
-            <hi>Numitorius. Die Vorigen.</hi>
-          </stage>
+          <stage>Numitorius. Die Vorigen.</stage>
           <sp who="#ruffus">
             <speaker>RUFFUS.</speaker>
             <lg>
@@ -714,10 +714,8 @@
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
-          <stage>
-            <hi>Icilius mit dem Bürger, der im dritten Auftritt den Numitor zu hohlen abgegangen
-              war. Die Vorigen.</hi>
-          </stage>
+          <stage>Icilius mit dem Bürger, der im dritten Auftritt den Numitor zu hohlen abgegangen
+            war. Die Vorigen.</stage>
           <sp who="#icilius">
             <speaker>ICILIUS.</speaker>
             <lg>
@@ -725,9 +723,7 @@
               <l>der seine kühne Faust nicht von ihr zieht!</l>
               <l>Zurück Unglücklicher!</l>
             </lg>
-            <stage>
-              <hi>Zu einem, der Hand an ihr hat.</hi>
-            </stage>
+            <stage>Zu einem, der Hand an ihr hat.</stage>
             <pb n="259"/>
           </sp>
           <sp who="#virginia">
@@ -739,9 +735,7 @@
           </sp>
           <sp who="#icilius">
             <speaker>ICILIUS</speaker>
-            <stage>
-              <hi>sie umarmend.</hi>
-            </stage>
+            <stage>sie umarmend.</stage>
             <lg>
               <l>Virginia! – so ists denn wahr! – o Wuth!</l>
               <l>Und Du! Du bists, der sie mir rauben will?</l>
@@ -894,9 +888,7 @@
           </sp>
           <sp who="#icilius">
             <speaker>ICILIUS</speaker>
-            <stage>
-              <hi>indem er sein Schwert zücket.</hi>
-            </stage>
+            <stage>indem er sein Schwert zücket.</stage>
             <l>Du stirbst, legt Einer seine Hand an sie.</l>
           </sp>
           <sp who="#numitorius">
@@ -953,15 +945,13 @@
             <speaker>QUINTUS.</speaker>
             <l>Auch Mich!</l>
           </sp>
-          <sp who="#alle">
+          <sp who="#alle_1-5">
             <speaker>ALLE.</speaker>
             <l>Uns alle.</l>
           </sp>
           <sp who="#marcus">
             <speaker>MARCUS</speaker>
-            <stage>
-              <hi>nach einer Pause.</hi>
-            </stage>
+            <stage>nach einer Pause.</stage>
             <lg>
               <l>Wohlan! so kränkend mir der Ausspruch ist –</l>
               <l>von meiner Achtung euch zu überzeugen,</l>
@@ -976,17 +966,13 @@
           <sp who="#marcus">
             <speaker>MARCUS.</speaker>
             <l>Lebt wohl!</l>
-            <stage>
-              <hi>Marcus geht auf der einen, und Lucius, der immer von ferne zugehört hatte, auf der
-                andern Seite ab.</hi>
-            </stage>
+            <stage>Marcus geht auf der einen, und Lucius, der immer von ferne zugehört hatte, auf
+              der andern Seite ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head><pb n="264"/> Sechster Auftritt.</head>
-          <stage>
-            <hi>Virginia, Albina, Icilius, Numitorius, Volk.</hi>
-          </stage>
+          <stage>Virginia, Albina, Icilius, Numitorius, Volk.</stage>
           <sp who="#numitorius">
             <speaker>NUMITORIUS.</speaker>
             <lg>
@@ -998,15 +984,11 @@
           <sp who="#icilius">
             <speaker>ICILIUS.</speaker>
             <l>Und wär' ichs nicht aus heil'ger Pflicht geworden?</l>
-            <stage>
-              <hi>Umarmt sie.</hi>
-            </stage>
+            <stage>Umarmt sie.</stage>
           </sp>
           <sp who="#numitorius">
             <speaker>NUMITORIUS</speaker>
-            <stage>
-              <hi>zum Volke.</hi>
-            </stage>
+            <stage>zum Volke.</stage>
             <lg>
               <l>Nun aber bitt' ich euch, laßt uns sogleich</l>
               <l>uns trennen! daß den Feinden des Icil</l>
@@ -1022,20 +1004,14 @@
               <l>er uns die Schlingen der Tyrannen wies.</l>
               <l>Kommt!</l>
             </lg>
-            <stage>
-              <hi>Zum Numit.</hi>
-            </stage>
+            <stage>Zum Numit.</stage>
             <l>Bey Gericht sollt ihr uns wiedersehn!</l>
-            <stage>
-              <hi>Das Volk geht auf verschiedenen Orten ab.</hi>
-            </stage>
+            <stage>Das Volk geht auf verschiedenen Orten ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Siebenter Auftritt.</head>
-          <stage>
-            <hi>Virginia, Albina, Numitorius, Icilius.</hi>
-          </stage>
+          <stage>Virginia, Albina, Numitorius, Icilius.</stage>
           <sp who="#numitorius">
             <speaker>NUMITORIUS.</speaker>
             <l>Komm nun Virginia!</l>
@@ -1212,9 +1188,7 @@
               <l>sich wider uns die Macht des Lasters zeigt,</l>
               <l>laßt für die Tugend uns noch thät'ger seyn!</l>
             </lg>
-            <stage>
-              <hi>Alle gehen ab.</hi>
-            </stage>
+            <stage>Alle gehen ab.</stage>
             <p>Ende des ersten Aufzugs.</p>
           </sp>
         </div>
@@ -1223,9 +1197,7 @@
         <head>2. Akt</head>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Ruffus, Quintus und einiges Volk.</hi>
-          </stage>
+          <stage>Ruffus, Quintus und einiges Volk.</stage>
           <sp who="#quintus">
             <speaker>QUINTUS.</speaker>
             <l>Nie harrt' ich ängstlicher auf einem Spruch.</l>
@@ -1276,9 +1248,7 @@
         </div>
         <div type="scene">
           <head>Zweyter Auftritt.</head>
-          <stage>
-            <hi>Lucius. Die Vorigen.</hi>
-          </stage>
+          <stage>Lucius. Die Vorigen.</stage>
           <sp who="#lucius">
             <speaker>LUCIUS.</speaker>
             <lg>
@@ -1326,7 +1296,7 @@
               <l>die hart uns itzo drückt. Er leb!</l>
             </lg>
           </sp>
-          <sp who="#ein_paar_vom_volke">
+          <sp who="#ein_paar_vom_volke_2-2">
             <speaker>EIN PAAR VOM VOLKE.</speaker>
             <l>Er lebe!</l>
           </sp>
@@ -1379,18 +1349,14 @@
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <stage>
-            <hi>Appius, Wachen und Lictoren gehen vor ihm her. Der curulische Stuhl wird
-              aufgestellt. Die Wachen reihen sich hinter demselben. Ruffus, Quintus, und das Volk
-              treten hinter die Wachen. Wann Appius auftritt, ruft.</hi>
-          </stage>
-          <sp who="#das_volk">
+          <stage>Appius, Wachen und Lictoren gehen vor ihm her. Der curulische Stuhl wird
+            aufgestellt. Die Wachen reihen sich hinter demselben. Ruffus, Quintus, und das Volk
+            treten hinter die Wachen. Wann Appius auftritt, ruft.</stage>
+          <sp who="#das_volk_2-3">
             <speaker>DAS VOLK.</speaker>
             <l>Er lebe! lebe!</l>
-            <stage>
-              <hi>Appius bleibt einen Augenblick stehen, und nicket mit dem Kopfe dem Volk auf
-                beyden Seiten seinen Dank zu; geht er mit Lucius vorwärts.</hi>
-            </stage>
+            <stage>Appius bleibt einen Augenblick stehen, und nicket mit dem Kopfe dem Volk auf
+              beyden Seiten seinen Dank zu; geht er mit Lucius vorwärts.</stage>
           </sp>
           <sp who="#appius">
             <speaker>APPIUS.</speaker>
@@ -1445,17 +1411,13 @@
           <sp who="#appius">
             <speaker>APPIUS.</speaker>
             <l>Ich geboth es ihm.</l>
-            <stage>
-              <hi>Appius setzt sich auf den Richterstuhl; einige Beamte und die Lictoren stellen
-                sich ihm zur Seite.</hi>
-            </stage>
+            <stage>Appius setzt sich auf den Richterstuhl; einige Beamte und die Lictoren stellen
+              sich ihm zur Seite.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <stage>
-            <hi>Virginia, Icilius, Numitorius, mit ihnen einiges Volk, und die Vorigen.</hi>
-          </stage>
+          <stage>Virginia, Icilius, Numitorius, mit ihnen einiges Volk, und die Vorigen.</stage>
           <sp who="#icilius">
             <speaker>ICILIUS.</speaker>
             <lg>
@@ -1644,9 +1606,7 @@
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
-          <stage>
-            <hi>Marcus mit einem Römer, einem Sklaven und einer Sklavinn. Die Vorigen.</hi>
-          </stage>
+          <stage>Marcus mit einem Römer, einem Sklaven und einer Sklavinn. Die Vorigen.</stage>
           <p>Herr! seh' ich gleich hier</p>
           <p>durch List und Eile meiner Gegner, mich</p>
           <p>schon angeklagt, so komm ich dennoch als</p>
@@ -1740,9 +1700,7 @@
               <l>durch diesen Kauf verlor, dem Ehrenmanne</l>
               <l>verdoppelt zu ersetzen.</l>
             </lg>
-            <stage>
-              <hi>Er reicht dem Appius einen Beutel mit Geld.</hi>
-            </stage>
+            <stage>Er reicht dem Appius einen Beutel mit Geld.</stage>
             <lg>
               <l>Laß es Herr!</l>
               <l>indeß für ihn verwahren.</l>
@@ -1750,9 +1708,7 @@
           </sp>
           <sp who="#appius">
             <speaker>APPIUS</speaker>
-            <stage>
-              <hi>indem er den Beutel nimmt, und einem Officier gibt.</hi>
-            </stage>
+            <stage>indem er den Beutel nimmt, und einem Officier gibt.</stage>
             <lg>
               <l>Diese That</l>
               <l>ist deines Nahmens werth. – Man nehme gleich</l>
@@ -1803,9 +1759,7 @@
               <l>der ihren Meineid hemmt, und der Dich selbst</l>
               <l>vor einem schrecklichen Vergehn bewahrt.</l>
             </lg>
-            <stage>
-              <hi>Es entsteht Bewegung und Geräusch unter dem Volk.</hi>
-            </stage>
+            <stage>Es entsteht Bewegung und Geräusch unter dem Volk.</stage>
           </sp>
           <sp who="#appius">
             <speaker>APPIUS.</speaker>
@@ -1823,9 +1777,7 @@
               <l><pb n="281"/> Du nennst mich kühn? ich bins! bin strafbar auch,</l>
               <l>Wenn nicht der größte Theil der Edlen hier</l>
             </lg>
-            <stage>
-              <hi>Auf das Volk zeigend.</hi>
-            </stage>
+            <stage>Auf das Volk zeigend.</stage>
             <lg>
               <l>Mit Mir gleich denkt und fühlt. In ihren Blicken</l>
               <l>erkenn' ich dieß Gefühl Auf Römer! sprecht!</l>
@@ -1841,7 +1793,7 @@
             <speaker>QUINTUS.</speaker>
             <l>Ich bins!</l>
           </sp>
-          <sp who="#alle">
+          <sp who="#alle_2-5">
             <speaker>ALLE.</speaker>
             <l>Wir Alle sind's!</l>
           </sp>
@@ -1867,9 +1819,7 @@
               <l>in Ruh – versichert meiner untäuschbaren</l>
               <l>und strengen Billigkeit!</l>
             </lg>
-            <stage>
-              <hi>Er will aufstehen.</hi>
-            </stage>
+            <stage>Er will aufstehen.</stage>
           </sp>
           <sp who="#marcus">
             <speaker>MARCUS.</speaker>
@@ -1918,16 +1868,12 @@
               <l>Das sollst du nicht. Nach altem Brauche wach'</l>
               <l>indeß das Auge des Gerichtes über sie!</l>
             </lg>
-            <stage>
-              <hi>Zum Lucius.</hi>
-            </stage>
+            <stage>Zum Lucius.</stage>
             <l>Nimm in Verwahrung sie!</l>
           </sp>
           <sp who="#icilius">
             <speaker>ICILIUS</speaker>
-            <stage>
-              <hi>indem er sie bey der Hand ergreifft.</hi>
-            </stage>
+            <stage>indem er sie bey der Hand ergreifft.</stage>
             <lg>
               <l>Nein! Niemand soll</l>
               <l>nur einen Augenblick sie mir entziehn!</l>
@@ -1957,9 +1903,7 @@
               <l>ein Sturz vom Felsen lähm' auf ewig ihm</l>
               <l>die Lästerzunge! Fort!</l>
             </lg>
-            <stage>
-              <hi>Die Wachen ergreiffen ihn.</hi>
-            </stage>
+            <stage>Die Wachen ergreiffen ihn.</stage>
           </sp>
           <sp who="#virginia">
             <speaker>VIRGINIA.</speaker>
@@ -1974,9 +1918,7 @@
               <l>Könnt ihr das sehn ihr Römer? gebt ihr zu,</l>
               <l>daß man mich tödtet, eh ihr mich gehört?</l>
             </lg>
-            <stage>
-              <hi>Die Wache will ihn abführen.</hi>
-            </stage>
+            <stage>Die Wache will ihn abführen.</stage>
           </sp>
           <sp who="#quintus">
             <speaker>QUINTUS.</speaker>
@@ -2006,7 +1948,7 @@
             <speaker>QUINTUS.</speaker>
             <l>Er fodert Billigkeit; es sprech' Icil!</l>
           </sp>
-          <sp who="#alle">
+          <sp who="#alle_2-5">
             <speaker>ALLE.</speaker>
             <l>Es sprech' Icil!</l>
           </sp>
@@ -2152,18 +2094,14 @@
               <l>sogleich, Verleumder, dich zur Strafe ziehn;</l>
               <l>Doch bis zum Ausgang Seiner Sache</l>
             </lg>
-            <stage>
-              <hi>Des Marcus.</hi>
-            </stage>
+            <stage>Des Marcus.</stage>
             <lg>
               <l>sollst</l>
               <l>du leben! frey, selbst Augenzeuge seyn!</l>
               <l>Noch mehr! bis morgen kann Virginia</l>
               <l>in ihres Oheims Haus – doch ohne Dich</l>
             </lg>
-            <stage>
-              <hi>Den Icil.</hi>
-            </stage>
+            <stage>Den Icil.</stage>
             <l>zu sehn, verbleiben.</l>
           </sp>
           <sp who="#marcus">
@@ -2192,23 +2130,17 @@
           </sp>
           <sp who="#ruffus">
             <speaker>RUFFUS</speaker>
-            <stage>
-              <hi>indem er den Arm empor strecket.</hi>
-            </stage>
+            <stage>indem er den Arm empor strecket.</stage>
             <l>Auch ich!</l>
           </sp>
-          <sp who="#das_volk">
+          <sp who="#das_volk_2-5">
             <speaker>DAS VOLK</speaker>
-            <stage>
-              <hi>eben so.</hi>
-            </stage>
+            <stage>eben so.</stage>
             <l>Wir alle!</l>
           </sp>
           <sp who="#appius">
             <speaker>APPIUS</speaker>
-            <stage>
-              <hi>indem er aufsteht.</hi>
-            </stage>
+            <stage>indem er aufsteht.</stage>
             <lg>
               <l>Genug ihr Bürger Roms! verlasset nun</l>
               <l>ohn' Aufenthalt das Forum; ich will selbst</l>
@@ -2216,21 +2148,15 @@
               <l>bis morgen zu der Stunde des Gerichts,</l>
               <l>damit Roms Ruh indeß kein Zufall störe!</l>
             </lg>
-            <stage>
-              <hi>Alle gehen auf verschiednen Orten ab.</hi>
-            </stage>
+            <stage>Alle gehen auf verschiednen Orten ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head><pb n="288"/> Sechster Auftritt.</head>
-          <stage>
-            <hi>Appius, Lucius, Lictoren, und Wachen.</hi>
-          </stage>
+          <stage>Appius, Lucius, Lictoren, und Wachen.</stage>
           <sp who="#appius">
             <speaker>APPIUS</speaker>
-            <stage>
-              <hi>indem er vorwärts gehet.</hi>
-            </stage>
+            <stage>indem er vorwärts gehet.</stage>
             <lg>
               <l>Ha Lucius! kaum kenn' ich mich vor Wuth!</l>
               <l>Mir solchen Schimpf? Mir diesen kühnen Trotz –</l>
@@ -2307,13 +2233,9 @@
               <l>dein kühner Pöbel sich! Du bist zu schwach,</l>
               <l>der Wünsche feurigsten mir zu vernichten!</l>
             </lg>
-            <stage>
-              <hi>Alle gehen ab.</hi>
-            </stage>
+            <stage>Alle gehen ab.</stage>
             <p>Ende des zweyten Aufzugs.</p>
-            <stage>
-              <hi>Es wird Racht, doch nur durch Verdunklung der vordern Lampen-Reihe.</hi>
-            </stage>
+            <stage>Es wird Racht, doch nur durch Verdunklung der vordern Lampen-Reihe.</stage>
           </sp>
         </div>
       </div>
@@ -2321,9 +2243,7 @@
         <head>3. Akt</head>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Ruffus, Quintus und einiges Volk, welches sich dann allmählich vermehrt.</hi>
-          </stage>
+          <stage>Ruffus, Quintus und einiges Volk, welches sich dann allmählich vermehrt.</stage>
           <sp who="#quintus">
             <speaker>QUINTUS.</speaker>
             <l>Bist du es Ruffus?</l>
@@ -2392,10 +2312,8 @@
         </div>
         <div type="scene">
           <head>Zweyter Auftritt.</head>
-          <stage>
-            <hi>Icilius mit zwey Fackelträgern, einem am Kopfe verwundeten Sklaven, und einigem
-              Volke. Die Vorigen.</hi>
-          </stage>
+          <stage>Icilius mit zwey Fackelträgern, einem am Kopfe verwundeten Sklaven, und einigem
+            Volke. Die Vorigen.</stage>
           <sp who="#icilius">
             <speaker>ICILIUS.</speaker>
             <lg>
@@ -2602,8 +2520,7 @@
               <l>ihr Geist in denen, die dem Vaterlande</l>
               <l>bald Sicciuse, bald Virgine morden?</l>
               <l><pb n="296"/> Die Haufen Golds zu sammeln, Nebenbürger</l>
-              <l>zu Bettlern wuchern; die wie Marcius,<ref><anchor/><ptr/><hi>1</hi></ref>
-              </l>
+              <l>zu Bettlern wuchern; die wie Marcius,<ref><anchor/><ptr/><hi>1</hi></ref></l>
               <l>Roms Feinden wider Rom als Führer dienen? –</l>
               <l>Sinds andere Tugenden? O Tugend! kennt</l>
               <l>die zügellose Brut, so lange schon</l>
@@ -2680,9 +2597,7 @@
         </div>
         <div type="scene">
           <head><pb n="298"/> Dritter Auftritt.</head>
-          <stage>
-            <hi>Virginia. Albina. Die Vorigen.</hi>
-          </stage>
+          <stage>Virginia. Albina. Die Vorigen.</stage>
           <sp who="#virginia">
             <speaker>VIRGINIA.</speaker>
             <l>Ah Römer! wer ihr immer seyd! entdeckt ...</l>
@@ -2700,9 +2615,7 @@
               <l>der Väter, auf der Straß' ermordet worden?</l>
               <l>– Du schweigest – Götter!</l>
             </lg>
-            <stage>
-              <hi>Sie sinkt Albinen in die Arme.</hi>
-            </stage>
+            <stage>Sie sinkt Albinen in die Arme.</stage>
           </sp>
           <sp who="#icilius">
             <speaker>ICILIUS.</speaker>
@@ -2732,9 +2645,7 @@
               <l>O Himmel! lohnest du der Tugend so? – –</l>
               <l>Wer? Wer hat ihn gemordet?</l>
             </lg>
-            <stage>
-              <hi>Zum Ruffus.</hi>
-            </stage>
+            <stage>Zum Ruffus.</stage>
             <lg>
               <l>Du? doch nein!</l>
               <l><pb n="299"/> du bist der edle Mann, der gestern mich</l>
@@ -2779,15 +2690,11 @@
               <l><pb n="300"/> den Dolch ins Herz zu stoßen! stärke Du</l>
               <l>nur meinen Arm, mein Muth ist stark genug!</l>
             </lg>
-            <stage>
-              <hi>Sie will fort.</hi>
-            </stage>
+            <stage>Sie will fort.</stage>
           </sp>
           <sp who="#icilius">
             <speaker>ICILIUS</speaker>
-            <stage>
-              <hi>indem er sie zurückhält.</hi>
-            </stage>
+            <stage>indem er sie zurückhält.</stage>
             <lg>
               <l>Virginia! bey allen Göttern! bleib!</l>
               <l>Willst du dem Bösewicht, der auf dich lauert</l>
@@ -2796,9 +2703,7 @@
           </sp>
           <sp who="#virginia">
             <speaker>VIRGINIA</speaker>
-            <stage>
-              <hi>sich besinnend.</hi>
-            </stage>
+            <stage>sich besinnend.</stage>
             <lg>
               <l>Nein! – – nein Icil! –</l>
               <l>Das wäre schrecklich! – Doch – – Ah mein Verstand! –</l>
@@ -2855,9 +2760,7 @@
           </sp>
           <sp who="#ruffus">
             <speaker>RUFFUS</speaker>
-            <stage>
-              <hi>indem er sie aufhebt.</hi>
-            </stage>
+            <stage>indem er sie aufhebt.</stage>
             <lg>
               <l>Halt ein Virginia! du folterst mich,</l>
               <l>durchbohrst mit jedem Worte mir das Herz!</l>
@@ -2875,22 +2778,18 @@
           <sp who="#icilius">
             <speaker>ICILIUS.</speaker>
             <l>An meine Brust ihr Freunde.</l>
-            <stage>
-              <hi>Er umarmet beyde.</hi>
-            </stage>
-            <stage>
-              <hi>Zum Volke.</hi>
-            </stage>
+            <stage>Er umarmet beyde.</stage>
+            <stage>Zum Volke.</stage>
             <lg>
               <l>Ganz gewiß</l>
               <l>regt, Brüder, sich in euch ein gleich Gefühl?</l>
             </lg>
           </sp>
-          <sp who="#einige_vom_volk">
+          <sp who="#einige_vom_volk_3-3">
             <speaker>EINIGE VOM VOLK.</speaker>
             <l>Ja!</l>
           </sp>
-          <sp who="#alle">
+          <sp who="#alle_3-3">
             <speaker>ALLE.</speaker>
             <l>Ja!</l>
           </sp>
@@ -2900,38 +2799,30 @@
               <l>Wohlan! in größter Eile nun</l>
               <l>zu Werk! Auf Wiedersehn am Anio!</l>
             </lg>
-            <stage>
-              <hi>Indem sie eben auseinander gehen, kommt Virginius.</hi>
-            </stage>
+            <stage>Indem sie eben auseinander gehen, kommt Virginius.</stage>
           </sp>
         </div>
         <div type="scene">
           <head><pb n="302"/> Vierter Auftritt.</head>
-          <stage>
-            <hi>Es wird Tag.</hi>
-          </stage>
-          <stage>
-            <hi>Virginius mit einem Bürger. Die Vorigen.</hi>
-          </stage>
+          <stage>Es wird Tag.</stage>
+          <stage>Virginius mit einem Bürger. Die Vorigen.</stage>
           <sp who="#virginius">
             <speaker>VIRGINIUS.</speaker>
             <l>Weilt Römer! weilet noch!</l>
           </sp>
           <sp who="#ruffus">
             <speaker>RUFFUS.</speaker>
-            <lg>
-              <l>Virginius!</l>
-              <l>ALBINA, ICILIUS, QUINTUS <hi>zugleich.</hi>
-              </l>
-              <l>Virginius?</l>
-            </lg>
+            <l>Virginius!</l>
+          </sp>
+          <sp who="#albina #icilius #quintus">
+            <speaker>ALBINA, ICILIUS, QUINTUS</speaker>
+            <stage>zugleich.</stage>
+            <l>Virginius?</l>
           </sp>
           <sp who="#virginia">
             <speaker>VIRGINIA.</speaker>
             <l>Mein Vater!</l>
-            <stage>
-              <hi>Sie eilet ihn zu umarmen.</hi>
-            </stage>
+            <stage>Sie eilet ihn zu umarmen.</stage>
           </sp>
           <sp who="#virginius">
             <speaker>VIRGINIUS.</speaker>
@@ -2957,9 +2848,7 @@
               <l>Und Du Freund, ohne den schon tochterlos</l>
               <l>ich wäre, Du mein Sohn! laß dich umarmen.</l>
             </lg>
-            <stage>
-              <hi>Sie umarmen einander.</hi>
-            </stage>
+            <stage>Sie umarmen einander.</stage>
             <lg>
               <l>Doch sprich Icil – ich zittre bey der Frage! –</l>
               <l>weißt du vom Schicksal deines Bruders nichts?</l>
@@ -2977,9 +2866,7 @@
           <sp who="#icilius">
             <speaker>ICILIUS.</speaker>
             <l>– Dein guter Diener</l>
-            <stage>
-              <hi>Er zeigt auf ihn.</hi>
-            </stage>
+            <stage>Er zeigt auf ihn.</stage>
             <l>bracht' ihn – sterbend mir.</l>
           </sp>
           <sp who="#virginius">
@@ -3215,9 +3102,7 @@
           </sp>
           <sp who="#virginia">
             <speaker>VIRGINIA</speaker>
-            <stage>
-              <hi>ihrem Vater die Hand küssend.</hi>
-            </stage>
+            <stage>ihrem Vater die Hand küssend.</stage>
             <lg>
               <l>O Nein Icil! Dieß kann der gütigste,</l>
               <l>der beste Vater nicht! du irrest ...</l>
@@ -3248,9 +3133,7 @@
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
-          <stage>
-            <hi>Lucius. Mit Wachen. Die Vorigen.</hi>
-          </stage>
+          <stage>Lucius. Mit Wachen. Die Vorigen.</stage>
           <sp who="#lucius">
             <speaker>LUCIUS.</speaker>
             <lg>
@@ -3264,9 +3147,7 @@
               <l>des Todes schuldig. Trennt euch unverweilt!</l>
               <l>sonst folgt sogleich der Warnung Strafe nach.</l>
             </lg>
-            <stage>
-              <hi>Einige Römer gehen ab.</hi>
-            </stage>
+            <stage>Einige Römer gehen ab.</stage>
             <lg>
               <l>Nur Du Centurio, bleib noch! Es kömmt</l>
               <l>mit dir zu sprechen der Decemvir her.</l>
@@ -3279,19 +3160,13 @@
               <l>verlaß mich nun! und nimm mit diesem Kusse</l>
               <l>des Vaters Segen!</l>
             </lg>
-            <stage>
-              <hi>Virginia und Albina gehen ab.</hi>
-            </stage>
+            <stage>Virginia und Albina gehen ab.</stage>
             <lg>
               <l>Ihr, ihr edlen Freunde.</l>
               <l>folgt meinem Beyspiel nach! gehorcht!</l>
             </lg>
-            <stage>
-              <hi>Die übrigen Römer gehen ab.</hi>
-            </stage>
-            <stage>
-              <hi>Virgin, indem er Icilen umarmt.</hi>
-            </stage>
+            <stage>Die übrigen Römer gehen ab.</stage>
+            <stage>Virgin, indem er Icilen umarmt.</stage>
             <lg>
               <l>Icil!</l>
               <l>mein theurer Eidam! – bald siehst du mich wieder.</l>
@@ -3300,9 +3175,7 @@
           <sp who="#icilius">
             <speaker>ICILIUS.</speaker>
             <l>Ich schweige – denn du willst's – Leb wohl!</l>
-            <stage>
-              <hi>Icil geht ab; Lucius ebenfalls, aber an einem andern Orte.</hi>
-            </stage>
+            <stage>Icil geht ab; Lucius ebenfalls, aber an einem andern Orte.</stage>
           </sp>
           <sp who="#virginius">
             <speaker>VIRGINIUS.</speaker>
@@ -3311,9 +3184,7 @@
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <stage>
-            <hi>Virginius. Wachen.</hi>
-          </stage>
+          <stage>Virginius. Wachen.</stage>
           <sp who="#virginius">
             <speaker>VIRGINIUS.</speaker>
             <lg>
@@ -3332,10 +3203,8 @@
         </div>
         <div type="scene">
           <head>Siebenter Auftritt.</head>
-          <stage>
-            <hi>Virginius, Appius, Lucius, Lictoren. Appius geht vorwärts zum Virgin; Lucius und die
-              Lictoren treten zurück zu den Wachen.</hi>
-          </stage>
+          <stage>Virginius, Appius, Lucius, Lictoren. Appius geht vorwärts zum Virgin; Lucius und
+            die Lictoren treten zurück zu den Wachen.</stage>
           <sp who="#appius">
             <speaker>APPIUS.</speaker>
             <lg>
@@ -3759,9 +3628,7 @@
               <l>Ich zittern? – Sieh dieß Haar! es ward im Dienste</l>
               <l>des Vaterlandes grau; sieh diese Narben!</l>
             </lg>
-            <stage>
-              <hi>Er entblößet seine Brust.</hi>
-            </stage>
+            <stage>Er entblößet seine Brust.</stage>
             <lg>
               <l>im Dienst des Vaterlands erhielt ich sie,</l>
               <l>mit einem Muth, der nie die Furcht gekannt.</l>
@@ -3787,9 +3654,7 @@
               <l>Kurz. Alles Appius, räth Mäßigung,</l>
               <l>räth Klugheit dir – ich schweige von der Pflicht ...</l>
             </lg>
-            <stage>
-              <hi>Gegen Ende obiger Rede zeigt sich Virginia verschleyert an einer Kulisse.</hi>
-            </stage>
+            <stage>Gegen Ende obiger Rede zeigt sich Virginia verschleyert an einer Kulisse.</stage>
           </sp>
           <sp who="#appius">
             <speaker>APPIUS.</speaker>
@@ -3800,16 +3665,13 @@
               <l>Dafür sorgt Appius. Virginiens</l>
               <l>Bestimmung, wird ein Rechtsspruch nun entscheiden.</l>
             </lg>
-            <stage>
-              <hi>Er will abgehen.</hi>
-            </stage>
+            <stage>Er will abgehen.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Achter Auftritt.</head>
-          <stage>
-            <hi>Virginia, die sich entschleiert und dem Appius in den Weg tritt. Die Vorigen.</hi>
-          </stage>
+          <stage>Virginia, die sich entschleiert und dem Appius in den Weg tritt. Die
+            Vorigen.</stage>
           <sp who="#virginia">
             <speaker>VIRGINIA.</speaker>
             <lg>
@@ -3847,16 +3709,12 @@
               <l>weil das Gesetz alleine sprechen darf.</l>
               <l>Leb wohl.</l>
             </lg>
-            <stage>
-              <hi>Er geht ab, die Wachen nach ihm.</hi>
-            </stage>
+            <stage>Er geht ab, die Wachen nach ihm.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Neunter Auftritt.</head>
-          <stage>
-            <hi>Virginius. Virginia.</hi>
-          </stage>
+          <stage>Virginius. Virginia.</stage>
           <sp who="#virginia">
             <speaker>VIRGINIA.</speaker>
             <lg>
@@ -3945,9 +3803,7 @@
           </sp>
           <sp who="#virginius">
             <speaker>VIRGINIUS</speaker>
-            <stage>
-              <hi>sie umarmend.</hi>
-            </stage>
+            <stage>sie umarmend.</stage>
             <lg>
               <l>O Tochter! O mein Blut! mit solchem Muthe</l>
               <l>trotzt man Tyrannen, trotzt man dem Geschick.</l>
@@ -3958,9 +3814,7 @@
               <l>Erflehn wir uns des Himmels mächt'gen Schutz,</l>
               <l>so stürmt der Hölle Macht umsonst auf uns.</l>
             </lg>
-            <stage>
-              <hi>Gehen ab.</hi>
-            </stage>
+            <stage>Gehen ab.</stage>
             <p>Ende des dritten Aufzugs.</p>
           </sp>
         </div>
@@ -3971,9 +3825,7 @@
           <head>Erster Auftritt.</head>
           <sp who="#valerius">
             <speaker>VALERIUS</speaker>
-            <stage>
-              <hi>der vorwerts gehet, indem die capitolinische Besatzung das Forum besetzt.</hi>
-            </stage>
+            <stage>der vorwerts gehet, indem die capitolinische Besatzung das Forum besetzt.</stage>
             <lg>
               <l>Woher der Unmuth dieser bangen Brust?</l>
               <l>die Scheu, vor der Erfüllung einer Pflicht? –</l>
@@ -3999,9 +3851,7 @@
         </div>
         <div type="scene">
           <head><pb n="323"/> Zweyter Auftritt.</head>
-          <stage>
-            <hi>Virginius mit einem Soldaten. Valerius.</hi>
-          </stage>
+          <stage>Virginius mit einem Soldaten. Valerius.</stage>
           <sp who="#valerius">
             <speaker>VALERIUS.</speaker>
             <lg>
@@ -4071,9 +3921,7 @@
           <sp who="#virginius">
             <speaker>VIRGINIUS.</speaker>
             <l>Roms Volk bezeiget sich</l>
-            <stage>
-              <hi>Auf die Soldaten zeigend.</hi>
-            </stage>
+            <stage>Auf die Soldaten zeigend.</stage>
             <l>wie Jene wollen.</l>
           </sp>
           <sp who="#valerius">
@@ -4130,12 +3978,10 @@
               <l>wie wär' ich fähig ein, mit so viel Kunst</l>
               <l>verborgnes Werk der Nacht, ans Licht zu ziehn?</l>
             </lg>
-            <stage>
-              <hi>Während der vorstehenden Rede kommt ein Abgeordneter des Appius, und sagt dem
-                Valerius einige Worte ins Ohr. Dieser winket rückwärts, und man gibt vom Capitol
-                durch Trompetenschall das Zeichen zur Versammlung, worauf sich sogleich – doch nach
-                und nach – das Volk einfindet.</hi>
-            </stage>
+            <stage>Während der vorstehenden Rede kommt ein Abgeordneter des Appius, und sagt dem
+              Valerius einige Worte ins Ohr. Dieser winket rückwärts, und man gibt vom Capitol durch
+              Trompetenschall das Zeichen zur Versammlung, worauf sich sogleich – doch nach und nach
+              – das Volk einfindet.</stage>
           </sp>
           <sp who="#valerius">
             <speaker>VALERIUS.</speaker>
@@ -4191,9 +4037,7 @@
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <stage>
-            <hi>Virginia. Numitorius. Albina. Die Vorigen.</hi>
-          </stage>
+          <stage>Virginia. Numitorius. Albina. Die Vorigen.</stage>
           <sp who="#virginia">
             <speaker>VIRGINIA.</speaker>
             <lg>
@@ -4265,9 +4109,7 @@
           </sp>
           <sp who="#virginius">
             <speaker>VIRGINIUS</speaker>
-            <stage>
-              <hi>sie umarmend.</hi>
-            </stage>
+            <stage>sie umarmend.</stage>
             <l>O meine Tochter!</l>
           </sp>
           <sp who="#virginia">
@@ -4286,9 +4128,7 @@
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <stage>
-            <hi>Icilius mit entblößtem Schwert. Quintus. Einige Römer. Die Vorigen.</hi>
-          </stage>
+          <stage>Icilius mit entblößtem Schwert. Quintus. Einige Römer. Die Vorigen.</stage>
           <sp who="#icilius">
             <speaker>ICILIUS.</speaker>
             <lg>
@@ -4313,15 +4153,13 @@
               <l>vom Marcus!</l>
             </lg>
           </sp>
-          <sp who="#virginius #numitor">
+          <sp who="#virginius #numitorius">
             <speaker>VIRGINIUS UND NUMITOR.</speaker>
             <l>Marcus?</l>
           </sp>
           <sp who="#virginia">
             <speaker>VIRGINIA</speaker>
-            <stage>
-              <hi>mit obigen zugleich.</hi>
-            </stage>
+            <stage>mit obigen zugleich.</stage>
             <l>Götter!</l>
           </sp>
           <sp who="#icilius">
@@ -4331,9 +4169,7 @@
               <l>nicht einen Pfeilflug fern von uns, verröchelt</l>
               <l>der Bösewicht die lasterhafte Seele.</l>
             </lg>
-            <stage>
-              <hi>Er steckt sein Schwert ein.</hi>
-            </stage>
+            <stage>Er steckt sein Schwert ein.</stage>
           </sp>
           <sp who="#virginius">
             <speaker>VIRGINIUS.</speaker>
@@ -4411,15 +4247,11 @@
               <l>er Tugend Schutz, des Lasters Sturz zu seyn.</l>
               <l>Gibts einen schönern Tod?</l>
             </lg>
-            <stage>
-              <hi>Er drückt ihre Hand an seinen Mund.</hi>
-            </stage>
+            <stage>Er drückt ihre Hand an seinen Mund.</stage>
           </sp>
           <sp who="#valerius">
             <speaker>VALERIUS</speaker>
-            <stage>
-              <hi>leise zum Numitorius.</hi>
-            </stage>
+            <stage>leise zum Numitorius.</stage>
             <l>Rath' ihm die Flucht!</l>
           </sp>
           <sp who="#numitorius">
@@ -4475,9 +4307,7 @@
           </sp>
           <sp who="#virginius">
             <speaker>VIRGINIUS</speaker>
-            <stage>
-              <hi>indem er zu ihm eilt und ihn mit Heftigkeit umarmt.</hi>
-            </stage>
+            <stage>indem er zu ihm eilt und ihn mit Heftigkeit umarmt.</stage>
             <lg>
               <l>O mein Icil! O wackrer junger Mann!</l>
               <l>wie hoch erhebt dein muthiger Entschluß</l>
@@ -4492,10 +4322,8 @@
               <l>der Sarden wird jedweder Bürger Roms</l>
               <l>als Freund empfangen, gegen Noth geschützt.</l>
             </lg>
-            <stage>
-              <hi>Ein Abgeordneter des Appius kommt in Eile und spricht dem Vater einige Worte in
-                das Ohr.</hi>
-            </stage>
+            <stage>Ein Abgeordneter des Appius kommt in Eile und spricht dem Vater einige Worte in
+              das Ohr.</stage>
             <lg>
               <l>Erreichst du diesen freundschaftlichen Strand,</l>
               <l>so harre, bis in Rom Lossprechung wir</l>
@@ -4515,10 +4343,8 @@
           <sp who="#virginius">
             <speaker>VIRGINIUS.</speaker>
             <l>Ihr Götter!</l>
-            <stage>
-              <hi>Zween Soldaten treten hinter den Icil: er überreicht ihnen sein Schwert. Der
-                Abgeordnete geht ab.</hi>
-            </stage>
+            <stage>Zween Soldaten treten hinter den Icil: er überreicht ihnen sein Schwert. Der
+              Abgeordnete geht ab.</stage>
             <lg>
               <l><pb n="332"/> Nein Grausame! nicht Ihn! Um meinetwillen</l>
               <l>vergoß er Marcus Blut; mich strafe man!</l>
@@ -4569,16 +4395,12 @@
               <l>doch niemals ihren Muth verlieren darf! –</l>
               <l>Und du mein Vater!</l>
             </lg>
-            <stage>
-              <hi>Ihn umarmend.</hi>
-            </stage>
+            <stage>Ihn umarmend.</stage>
             <lg>
               <l>ach! zu viel empfindet</l>
               <l>mein Herz! verzeih den stummen Abschied mir!</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
           <sp who="#virginius">
             <speaker>VIRGINIUS.</speaker>
@@ -4592,15 +4414,11 @@
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
-          <stage>
-            <hi>Appius vor dem Wachen und Lictoren gehn; nach ihm. Lucius mit Marcus Zeugen und ein
-              paar andern Bürgern.</hi>
-          </stage>
+          <stage>Appius vor dem Wachen und Lictoren gehn; nach ihm. Lucius mit Marcus Zeugen und ein
+            paar andern Bürgern.</stage>
           <sp who="#appius">
             <speaker>APPIUS</speaker>
-            <stage>
-              <hi>nachdem er sich gesetzet.</hi>
-            </stage>
+            <stage>nachdem er sich gesetzet.</stage>
             <lg>
               <l>Nie, Römer, hielt ich es für nöthiger,</l>
               <l>vor Unglück euch zu warnen als anitzt.</l>
@@ -4804,9 +4622,7 @@
           </sp>
           <sp who="#virginius">
             <speaker>VIRGINIUS</speaker>
-            <stage>
-              <hi>da die Zeugen vortreten.</hi>
-            </stage>
+            <stage>da die Zeugen vortreten.</stage>
             <lg>
               <l>– Bleibt! –</l>
               <l>Kein Meineid zieh' um Mich der Götter Zorn</l>
@@ -4819,9 +4635,7 @@
               <l>Lictoren! übergebt des Marcus Sklavinn,</l>
               <l>nach dessen letztem Wunsch, dem Lucius!</l>
             </lg>
-            <stage>
-              <hi>Die Lictoren befolgen den Befehl.</hi>
-            </stage>
+            <stage>Die Lictoren befolgen den Befehl.</stage>
           </sp>
           <sp who="#virginia">
             <speaker>VIRGINIA.</speaker>
@@ -4859,9 +4673,7 @@
           <sp who="#virginia">
             <speaker>VIRGINIA.</speaker>
             <l>O Vater!</l>
-            <stage>
-              <hi>Umarmung und Pause.</hi>
-            </stage>
+            <stage>Umarmung und Pause.</stage>
           </sp>
           <sp who="#virginius">
             <speaker>VIRGINIUS.</speaker>
@@ -4877,23 +4689,15 @@
           <sp who="#virginius">
             <speaker>VIRGINIUS.</speaker>
             <l>Küß meine Wange!</l>
-            <stage>
-              <hi>Sie küßt ihn. Er sie.</hi>
-            </stage>
+            <stage>Sie küßt ihn. Er sie.</stage>
             <l>Stirb unentehrt!</l>
-            <stage>
-              <hi>Er stoßt ihr einen Dolch in die Brust.</hi>
-            </stage>
+            <stage>Er stoßt ihr einen Dolch in die Brust.</stage>
           </sp>
           <sp who="#virginia">
             <speaker>VIRGINIA</speaker>
-            <stage>
-              <hi>niedersinkend.</hi>
-            </stage>
+            <stage>niedersinkend.</stage>
             <l>Dank dir mein Vater! Dank!</l>
-            <stage>
-              <hi>Sie stirbt.</hi>
-            </stage>
+            <stage>Sie stirbt.</stage>
           </sp>
           <sp who="#appius">
             <speaker>APPIUS.</speaker>
@@ -4901,9 +4705,7 @@
           </sp>
           <sp who="#virginius">
             <speaker>VIRGINIUS</speaker>
-            <stage>
-              <hi>indem er den Dolch zu des Appius Füßen wirft.</hi>
-            </stage>
+            <stage>indem er den Dolch zu des Appius Füßen wirft.</stage>
             <lg>
               <l>Hier Appius!</l>
               <l>dieß Blut bring über dich des Himmel Fluch,</l>
@@ -4931,24 +4733,18 @@
               <l>wie deine That! beym Gott des Höllenreichs!</l>
               <l>Lictoren, greiffet ihn!</l>
             </lg>
-            <stage>
-              <hi>Er geht den Lictoren gelassen entgegen: zu gleicher Zeit entsteht Geräusch unter
-                dem Volk.</hi>
-            </stage>
+            <stage>Er geht den Lictoren gelassen entgegen: zu gleicher Zeit entsteht Geräusch unter
+              dem Volk.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <stage>
-            <hi>Lälia, die eilig kommt, und sich durch das Volk und die Wachen dränget.</hi>
-          </stage>
+          <stage>Lälia, die eilig kommt, und sich durch das Volk und die Wachen dränget.</stage>
           <p>Ich muß vor ihn!</p>
           <p>Laßt mich! ich muß!</p>
           <sp who="#appius">
             <speaker>APPIUS</speaker>
-            <stage>
-              <hi>aufgebracht.</hi>
-            </stage>
+            <stage>aufgebracht.</stage>
             <l>Welch ein Getöse.</l>
           </sp>
           <sp who="#lucius">
@@ -4965,15 +4761,11 @@
               <l>Sie wird um Rache für den Gatten fleh'n.</l>
             </lg>
           </sp>
-          <sp who="#lälia">
+          <sp who="#laelia">
             <speaker>LÄLIA</speaker>
-            <stage>
-              <hi>mit einigen Papieren in der Hand.</hi>
-            </stage>
+            <stage>mit einigen Papieren in der Hand. Sie trift, da sie durch das Volk kommt, gerade
+              auf Virginiens Leichnam.</stage>
             <lg>
-              <l>
-                <hi> Sie trift, da sie durch das Volk kommt, gerade auf Virginiens Leichnam.</hi>
-              </l>
               <l>O schrecklich! Hier auch Leichen? – O sie ists!</l>
               <l>es ist das edle Mädchen, dessen Reize</l>
               <l>der Keim vom Tode meines Gatten waren!</l>
@@ -4989,7 +4781,7 @@
               <pb n="340"/>
             </lg>
           </sp>
-          <sp who="#lälia">
+          <sp who="#laelia">
             <speaker>LÄLIA.</speaker>
             <lg>
               <l>Schweig Ungeheur!</l>
@@ -5012,7 +4804,7 @@
               <l>ist hier kein Ort. Man führe sie von hier!</l>
             </lg>
           </sp>
-          <sp who="#lälia">
+          <sp who="#laelia">
             <speaker>LÄLIA.</speaker>
             <l>Nein Römer! höret mich.</l>
           </sp>
@@ -5020,15 +4812,11 @@
             <speaker>APPIUS.</speaker>
             <l>Entfernet sie!</l>
           </sp>
-          <sp who="#lälia">
+          <sp who="#laelia">
             <speaker>LÄLIA</speaker>
-            <stage>
-              <hi>indem sie die Briefe unter das Volk wirft.</hi>
-            </stage>
+            <stage>indem sie die Briefe unter das Volk wirft. Valerius hebt sogleich einen auf, und
+              liest ihn.</stage>
             <lg>
-              <l>
-                <hi> Valerius hebt sogleich einen auf, und liest ihn.</hi>
-              </l>
               <l>Hier Römer, sind die gültigsten Beweise</l>
               <l>für Mich und wider Ihn. Sie zeigen euch</l>
               <l>im heilsten Licht die Schwärze seiner Seele,</l>
@@ -5045,11 +4833,9 @@
               <l>Fort Lictoren! schleppt</l>
               <l>sie fort!</l>
             </lg>
-            <stage>
-              <hi>Man will sie abführen.</hi>
-            </stage>
+            <stage>Man will sie abführen.</stage>
           </sp>
-          <sp who="#lälia">
+          <sp who="#laelia">
             <speaker>LÄLIA.</speaker>
             <l>Helft Römer!</l>
             <pb n="341"/>
@@ -5064,28 +4850,20 @@
               <l>Ihr Römern! Appius ist ein Tyrann,</l>
               <l>ein Bösewicht.</l>
             </lg>
-            <stage>
-              <hi>Zu einem Offizier.</hi>
-            </stage>
+            <stage>Zu einem Offizier.</stage>
             <l>Icil sey frey!</l>
-            <stage>
-              <hi>Der Offizier geht ab.</hi>
-            </stage>
+            <stage>Der Offizier geht ab.</stage>
             <lg>
               <l>Virgin!</l>
               <l>Lies', edelmüth'ger Greis, die Schande Roms,</l>
               <l>dein Ungluck!</l>
             </lg>
-            <stage>
-              <hi>Er gibt Virgin den Brief; Dieser lieset, und wirft sich dann auf den Leichnam
-                seiner Tochter.</hi>
-            </stage>
+            <stage>Er gibt Virgin den Brief; Dieser lieset, und wirft sich dann auf den Leichnam
+              seiner Tochter.</stage>
           </sp>
           <sp who="#appius">
             <speaker>APPIUS</speaker>
-            <stage>
-              <hi>aufstehend zum Valer.</hi>
-            </stage>
+            <stage>aufstehend zum Valer.</stage>
             <lg>
               <l>Ha Verwegener! auch Du</l>
               <l>Verräther? – Denkt an euern Eidschwur, Ihr</l>
@@ -5103,15 +4881,13 @@
           </sp>
           <sp who="#ruffus">
             <speaker>RUFFUS</speaker>
-            <stage>
-              <hi>der einen von den Briefen zeiget.</hi>
-            </stage>
+            <stage>der einen von den Briefen zeiget.</stage>
             <lg>
               <l>Auch Dieses Blatt erweiset sein Vergehn,</l>
               <l>ihr Römer!</l>
             </lg>
           </sp>
-          <sp who="#lälia">
+          <sp who="#laelia">
             <speaker>LÄLIA.</speaker>
             <lg>
               <l>Und doch lebt der Wüthrich noch?</l>
@@ -5119,9 +4895,7 @@
               <l>Harrt man vielleicht, bis Ich, ein Weib den Dolch</l>
               <l>ins Herz ihm stoße?</l>
             </lg>
-            <stage>
-              <hi>Geräusch unter dem Volke.</hi>
-            </stage>
+            <stage>Geräusch unter dem Volke.</stage>
           </sp>
           <sp who="#ruffus">
             <speaker>RUFFUS.</speaker>
@@ -5129,12 +4903,10 @@
               <l>Nein, beym Jupiter!</l>
               <l>Dieß soll kein Weib!</l>
             </lg>
-            <stage>
-              <hi>Er und einige Bürger gehen auf den Appius los. Dieser zücket sein unter der Toga
-                verborgenes Schwert, indem er von den Richterstuhl herab tritt sich zur Wehre zu
-                stellen. Zu gleicher Zeit stellt sich Valerius dem herannahenden Volke in den Weg,
-                und ruft.</hi>
-            </stage>
+            <stage>Er und einige Bürger gehen auf den Appius los. Dieser zücket sein unter der Toga
+              verborgenes Schwert, indem er von den Richterstuhl herab tritt sich zur Wehre zu
+              stellen. Zu gleicher Zeit stellt sich Valerius dem herannahenden Volke in den Weg, und
+              ruft.</stage>
             <pb n="342"/>
           </sp>
           <sp who="#valerius">
@@ -5143,14 +4915,10 @@
               <l>Nicht Römern! mäßiget</l>
               <l>der Rache Trieb!</l>
             </lg>
-            <stage>
-              <hi>Zu den Soldaten.</hi>
-            </stage>
+            <stage>Zu den Soldaten.</stage>
             <l>Verhaftet ihn!</l>
-            <stage>
-              <hi>Einige Soldaten springen auf ihn los. Und da er durch die nächste Kulisse abgeht,
-                folgen sie ihm. Valerius spricht inzwischen fort, zu dem Volke.</hi>
-            </stage>
+            <stage>Einige Soldaten springen auf ihn los. Und da er durch die nächste Kulisse abgeht,
+              folgen sie ihm. Valerius spricht inzwischen fort, zu dem Volke.</stage>
             <lg>
               <l>Nicht morden,</l>
               <l>ihn richten müssen wir! Die Tyranney,</l>
@@ -5159,9 +4927,7 @@
               <l>Nimm es auf dich, o Numitorius,</l>
               <l>des Bösewichts uns zu versichern!</l>
             </lg>
-            <stage>
-              <hi>Numitorius folgt eilig nach.</hi>
-            </stage>
+            <stage>Numitorius folgt eilig nach.</stage>
           </sp>
           <sp who="#ruffus">
             <speaker>RUFFUS.</speaker>
@@ -5182,12 +4948,10 @@
           </sp>
           <sp who="#virginius">
             <speaker>VIRGINIUS</speaker>
-            <stage>
-              <hi>der plötzlich aufsteht.</hi>
-            </stage>
+            <stage>der plötzlich aufsteht.</stage>
             <l>Auch meines Herzens!</l>
           </sp>
-          <sp who="#quintus #das_volk">
+          <sp who="#quintus #das_volk_4-6">
             <speaker>QUINTUS UND DAS VOLK.</speaker>
             <l>Aller!</l>
           </sp>
@@ -5197,9 +4961,7 @@
               <l>Ihr! tretet hinter ihn Lictoren! Er</l>
               <l>ist unser Consul.</l>
             </lg>
-            <stage>
-              <hi>Die Lictoren treten hinter ihn.</hi>
-            </stage>
+            <stage>Die Lictoren treten hinter ihn.</stage>
           </sp>
           <sp who="#valerius">
             <speaker>VALERIUS.</speaker>
@@ -5216,16 +4978,12 @@
           <head>Letzter Auftritt.</head>
           <sp who="#icilius">
             <speaker>ICILIUS</speaker>
-            <stage>
-              <hi>in Eile mit den Soldaten.</hi>
-            </stage>
+            <stage>in Eile mit den Soldaten.</stage>
             <lg>
               <l>Todt? todt Virginia! Wo ist sie? Wo? ...</l>
               <l>Ihr Götter!</l>
             </lg>
-            <stage>
-              <hi>Er wirft sich auf den Leichnam.</hi>
-            </stage>
+            <stage>Er wirft sich auf den Leichnam.</stage>
           </sp>
           <sp who="#valerius">
             <speaker>VALERIUS.</speaker>
@@ -5233,9 +4991,7 @@
               <l>Welch ein Augenblick, o Himmel,</l>
               <l>für ein so zärtlich Herz! –</l>
             </lg>
-            <stage>
-              <hi>Zum Numitor, der in Eile zurück kommt.</hi>
-            </stage>
+            <stage>Zum Numitor, der in Eile zurück kommt.</stage>
             <l>Du schon zurück?</l>
           </sp>
           <sp who="#numitorius">
