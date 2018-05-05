@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Die Nase des Michelangelo</title>
+        <title type="main">Die Nase des Michelangelo</title>
+        <title type="sub">Tragikomödie</title>
         <author key="pnd:118506234">Ball, Hugo</author>
       </titleStmt>
       <publicationStmt>
@@ -42,38 +43,39 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="michelangelo">
-            <persName>MICHELANGELO</persName>
+          <person xml:id="michelangelo" sex="MALE">
+            <persName>Michelangelo</persName>
           </person>
-          <person xml:id="torrigiano">
-            <persName>TORRIGIANO</persName>
+          <person xml:id="torrigiano" sex="MALE">
+            <persName>Torrigiano</persName>
           </person>
-          <person xml:id="cellini">
-            <persName>CELLINI</persName>
+          <person xml:id="cellini" sex="MALE">
+            <persName>Cellini</persName>
           </person>
-          <person xml:id="erster_student">
-            <persName>ERSTER STUDENT</persName>
+          <person xml:id="erster_student" sex="MALE">
+            <persName>Erster Student</persName>
           </person>
-          <person xml:id="zweiter_student">
-            <persName>ZWEITER STUDENT</persName>
+          <person xml:id="zweiter_student" sex="MALE">
+            <persName>Zweiter Student</persName>
           </person>
-          <person xml:id="die_menge">
-            <persName>DIE MENGE</persName>
+          <personGrp xml:id="die_menge" sex="UNKNOWN">
+            <name>Die Menge</name>
+          </personGrp>
+          <person xml:id="ein_herold" sex="MALE">
+            <persName>Ein Herold</persName>
           </person>
-          <person xml:id="ein_herold">
-            <persName>EIN HEROLD</persName>
+          <person xml:id="der_papst" sex="MALE">
+            <persName>Der Papst</persName>
           </person>
-          <person xml:id="der_papst">
-            <persName>DER PAPST</persName>
+          <person xml:id="kardinal_aus_dem_gefolge" sex="MALE">
+            <persName>Kardinal aus dem Gefolge</persName>
           </person>
-          <person xml:id="kardinal_aus_dem_gefolge">
-            <persName>KARDINAL AUS DEM GEFOLGE</persName>
-            <persName xml:id="kardinal">KARDINAL</persName>
+          <person xml:id="kardinal" sex="MALE">
+            <persName>Kardinal</persName>
           </person>
-          <person xml:id="stimmen_aus_dem_volk">
-            <persName>STIMMEN AUS DEM VOLK</persName>
-            <persName xml:id="stimmen">STIMMEN</persName>
-          </person>
+          <personGrp xml:id="stimmen_aus_dem_volk" sex="UNKNOWN">
+            <name>Stimmen aus dem Volk</name>
+          </personGrp>
         </listPerson>
       </particDesc>
       <textClass>
@@ -87,6 +89,7 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
+        <change who="#ff" when="2018-05-05">formalities; work on IDs; add gender info</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -97,8 +100,6 @@
         <head>Die Nase des Michelangelo</head>
         <head>Tragikomödie</head>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head><pb n="5"/> Personen.</head>
@@ -110,13 +111,16 @@
           <castItem>Schüler des Michelangelo und Gefolge des Papstes.</castItem>
         </castList>
       </div>
+      <set>
+        <p>Ort der Handlung: Die Werkstätte des Michelangelo zu Rom.</p>
+      </set>
+    </front>
+    <body>
       <div type="scene">
         <head>Erster Auftritt</head>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>allein.</hi>
-          </stage>
+          <stage>allein.</stage>
           <lg>
             <l>Was sträubst du dich noch länger? Ists nicht wahr, daß du</l>
             <l>Die Zähne schon verlierst? Daß du aus Leder nur</l>
@@ -154,9 +158,7 @@
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO</speaker>
-          <stage>
-            <hi>herein und sinkt ins Knie.</hi>
-          </stage>
+          <stage>herein und sinkt ins Knie.</stage>
           <lg>
             <l>Was zieht mich auf den Boden hin? Ich will nicht knien!</l>
             <l>Ists die Beklemmung? Nein, denn auf der Brust hier steckt</l>
@@ -169,9 +171,7 @@
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>vor einer zerschlagenen Statue.</hi>
-          </stage>
+          <stage>vor einer zerschlagenen Statue.</stage>
           <lg>
             <l>So kommt er noch. Geputzt hat ihn das Elend nicht!</l>
             <l>Der Haufe Schutt verräts in dem und jenem Brocken.</l>
@@ -338,9 +338,7 @@
             <l>Irrst du. Ich bin Pietro Torrigiano selbst.</l>
             <l>Sieh her! Wer zeichnet so?</l>
           </lg>
-          <stage>
-            <hi>Zieht ein Blatt hervor.</hi>
-          </stage>
+          <stage>Zieht ein Blatt hervor.</stage>
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO.</speaker>
@@ -389,9 +387,7 @@
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>sarkastisch.</hi>
-          </stage>
+          <stage>sarkastisch.</stage>
           <l>So sprich! Ich bin die erste deiner drei Instanzen.</l>
         </sp>
         <sp who="#torrigiano">
@@ -542,9 +538,7 @@
         <sp who="#michelangelo">
           <speaker>MICHELANGELO.</speaker>
           <l>Diener, he!</l>
-          <stage>
-            <hi>Zwei Diener erscheinen, denen Michelangelo aber sogleich wieder abwinkt.</hi>
-          </stage>
+          <stage>Zwei Diener erscheinen, denen Michelangelo aber sogleich wieder abwinkt.</stage>
           <l>Ich kann es nicht!</l>
         </sp>
         <sp who="#torrigiano">
@@ -565,9 +559,7 @@
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <lg>
             <l>Ich haßte ihn und hasse ihn nicht mehr. Das ists:</l>
             <l>Ich fühl ihn tief mit mir verwandt, und was er mir</l>
@@ -587,9 +579,7 @@
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>immer noch für sich.</hi>
-          </stage>
+          <stage>immer noch für sich.</stage>
           <lg>
             <l>Mensch bleibt Mensch.</l>
             <l>Die Hand weg vom Ixionsrade! Keiner hemmts!</l>
@@ -638,9 +628,7 @@
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO</speaker>
-          <stage>
-            <hi>stößt Michelangelos Hand zurück.</hi>
-          </stage>
+          <stage>stößt Michelangelos Hand zurück.</stage>
           <lg>
             <l>Ein schlechter Spaß? Denk an Florenz! Ich bin der Mann</l>
             <l>Nicht, der sich foppen läßt, und dächt, das wüßtest du!</l>
@@ -702,9 +690,7 @@
             <l>So nehm ich beide Hände, Michelangelo!</l>
             <l>Für jetzt nur das!</l>
           </lg>
-          <stage>
-            <hi>Händedruck.</hi>
-          </stage>
+          <stage>Händedruck.</stage>
           <lg>
             <l>Denn stottern will ich nicht, und noch</l>
             <l>Klemmts mir die Brust zu sehr. Hast du mich vor den Papst</l>
@@ -718,15 +704,11 @@
             <l>Ich zieh</l>
             <l>Mein andres Kleid an und wir gehn.</l>
           </lg>
-          <stage>
-            <hi>Ab.</hi>
-          </stage>
+          <stage>Ab.</stage>
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO</speaker>
-          <stage>
-            <hi>allein.</hi>
-          </stage>
+          <stage>allein.</stage>
           <lg>
             <l>S'ist lächerlich!</l>
             <l>Das war mein Plan: Von hier zum Papst, vom Papst hernach</l>
@@ -740,9 +722,7 @@
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>kommt umgekleidet zurück.</hi>
-          </stage>
+          <stage>kommt umgekleidet zurück.</stage>
           <lg>
             <l>Beim Papste hab ich stete Audienz. S' ist nur</l>
             <l>Die Formel der Begnadigung, was warten läßt.</l>
@@ -772,9 +752,7 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>mit einem Schwarm von Pilgern auftretend.</hi>
-          </stage>
+          <stage>mit einem Schwarm von Pilgern auftretend.</stage>
           <lg>
             <l>Hier herein müßt ihr, ihr Herrn!</l>
             <l>Doch erst das staubige Lederzeug vorn Fuß gestreift,</l>
@@ -792,9 +770,7 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>winkt seinen Begleitern ab.</hi>
-          </stage>
+          <stage>winkt seinen Begleitern ab.</stage>
           <lg>
             <l>Michelangelo,</l>
             <l>Es ist ein Schwarm Scholasten, Edler und Studenten.</l>
@@ -822,9 +798,7 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>zurücksprechend.</hi>
-          </stage>
+          <stage>zurücksprechend.</stage>
           <l>Schwarzgallig ist er immer, wenn das Wetter trüb.</l>
         </sp>
         <sp who="#zweiter_student">
@@ -836,9 +810,7 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>zu Michelangelo.</hi>
-          </stage>
+          <stage>zu Michelangelo.</stage>
           <lg>
             <l>Die Alpenwand vermochte nicht mehr deinen Ruf</l>
             <l>Zu stauen. Schäumend brandete er drüber weg.</l>
@@ -863,9 +835,7 @@
             <l>Von Torrigianos Gegenwart im hiesigen Rom</l>
             <l>Zu wissen tun versuchte.</l>
           </lg>
-          <stage>
-            <hi>Michelangelo hält den Torrigiano zurück.</hi>
-          </stage>
+          <stage>Michelangelo hält den Torrigiano zurück.</stage>
           <lg>
             <l>Blutige Köpfe gabs.</l>
             <l>Da wollte ich mich erst verschnaufen, eh ich kam,</l>
@@ -881,20 +851,14 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>leidenschaftlich.</hi>
-          </stage>
+          <stage>leidenschaftlich.</stage>
           <l>läßt sie</l>
-          <stage>
-            <hi>Die andern stimmen ein.</hi>
-          </stage>
+          <stage>Die andern stimmen ein.</stage>
           <l>huldigen!«</l>
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>abweisend.</hi>
-          </stage>
+          <stage>abweisend.</stage>
           <lg>
             <l>Dem Papst, nicht mir!</l>
             <l>Er nennt sich Stellvertreter Gottes und beweists.</l>
@@ -905,9 +869,7 @@
         <sp who="#cellini">
           <speaker>CELLINI.</speaker>
           <l>Das mir?</l>
-          <stage>
-            <hi>Zu den Begleitern.</hi>
-          </stage>
+          <stage>Zu den Begleitern.</stage>
           <l>Erwartet mich!</l>
         </sp>
         <sp who="#michelangelo">
@@ -936,9 +898,7 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>zurückspringend.</hi>
-          </stage>
+          <stage>zurückspringend.</stage>
           <lg>
             <l>Du bist mir höchst verhaßt</l>
             <l>In diesem Augenblick!</l>
@@ -954,9 +914,7 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>zu Torrigiano.</hi>
-          </stage>
+          <stage>zu Torrigiano.</stage>
           <lg>
             <l>Ihr hörts! Es war sein Fehler immer, daß es ihm</l>
             <l>An Selbstgefühl gebrach. Er geht noch dran zugrund.</l>
@@ -993,9 +951,7 @@
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO</speaker>
-          <stage>
-            <hi>zu Cellini.</hi>
-          </stage>
+          <stage>zu Cellini.</stage>
           <l>Was haßt Ihr mich?</l>
         </sp>
         <sp who="#michelangelo">
@@ -1004,15 +960,11 @@
             <l>Es ist</l>
             <l>Pietro Torrigiano!</l>
           </lg>
-          <stage>
-            <hi>Pause.</hi>
-          </stage>
+          <stage>Pause.</stage>
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>lacht hell auf.</hi>
-          </stage>
+          <stage>lacht hell auf.</stage>
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO.</speaker>
@@ -1042,9 +994,7 @@
             <l>Ich fürcht,</l>
             <l>Die Dinge gehen schief,</l>
           </lg>
-          <stage>
-            <hi>Zu Cellini.</hi>
-          </stage>
+          <stage>Zu Cellini.</stage>
           <l>Du irrst.</l>
         </sp>
         <sp who="#torrigiano">
@@ -1057,9 +1007,7 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>lachend.</hi>
-          </stage>
+          <stage>lachend.</stage>
           <lg>
             <l>So willst</l>
             <l>Du also elendig zugrund gehn, wie du weisst,</l>
@@ -1083,9 +1031,7 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>argwöhnisch und feindselig.</hi>
-          </stage>
+          <stage>argwöhnisch und feindselig.</stage>
           <lg>
             <l>Sieh dich vor!</l>
             <l>Sorgfalt verwandtst du auf dein Schwindelkleid! Bis zur</l>
@@ -1095,9 +1041,7 @@
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO</speaker>
-          <stage>
-            <hi>stampft mit dem Fuß.</hi>
-          </stage>
+          <stage>stampft mit dem Fuß.</stage>
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI.</speaker>
@@ -1116,9 +1060,7 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>lauernd.</hi>
-          </stage>
+          <stage>lauernd.</stage>
           <lg>
             <l>Ja, eins gehört allein</l>
             <l>Dem echten Torrigiano an.</l>
@@ -1133,17 +1075,13 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>zu Torrigiano.</hi>
-          </stage>
+          <stage>zu Torrigiano.</stage>
           <l>Wirf Michelangelos Profil auf dieses Blatt!</l>
           <pb n="27"/>
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO</speaker>
-          <stage>
-            <hi>höhnisch.</hi>
-          </stage>
+          <stage>höhnisch.</stage>
           <l>Ich tats bereits. Drehs um!</l>
         </sp>
         <sp who="#michelangelo">
@@ -1156,9 +1094,7 @@
             <l>Dem Teufel stand</l>
             <l>Ich gegenüber und sah seinen Pferdfuß nicht!</l>
           </lg>
-          <stage>
-            <hi>Gegen die Tür.</hi>
-          </stage>
+          <stage>Gegen die Tür.</stage>
           <lg>
             <l>Herbei, herbei, Gesellen! Torrigiano ist</l>
             <l>Wahrhaft in Rom!</l>
@@ -1166,9 +1102,7 @@
         </sp>
         <sp who="#die_menge">
           <speaker>DIE MENGE</speaker>
-          <stage>
-            <hi>die sich an der Tür versammelt hat.</hi>
-          </stage>
+          <stage>die sich an der Tür versammelt hat.</stage>
           <lg>
             <l>Der Torrigiano ist in Rom?</l>
             <l>Wo ist er denn?</l>
@@ -1191,32 +1125,22 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>beugt vor Michelangelo das Knie.</hi>
-          </stage>
+          <stage>beugt vor Michelangelo das Knie.</stage>
           <lg>
             <l>Hab Dank, daß du</l>
             <l>Ihn hieltst.</l>
           </lg>
-          <stage>
-            <hi>Zu Torrigiano.</hi>
-          </stage>
+          <stage>Zu Torrigiano.</stage>
           <l>Zieh, Schuft!</l>
           <pb n="28"/>
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO</speaker>
-          <stage>
-            <hi>zu Michelangelo.</hi>
-          </stage>
+          <stage>zu Michelangelo.</stage>
           <l>So wärs Verrat?</l>
-          <stage>
-            <hi>Zu Cellini.</hi>
-          </stage>
+          <stage>Zu Cellini.</stage>
           <l>Dann wahre dich!</l>
-          <stage>
-            <hi>Hitziges Gefecht.</hi>
-          </stage>
+          <stage>Hitziges Gefecht.</stage>
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO.</speaker>
@@ -1224,31 +1148,23 @@
             <l>Laß ich sie fechten, stell ichs ihrem Stahl anheim,</l>
             <l>Sich einen wegzufressen?</l>
           </lg>
-          <stage>
-            <hi>Cellini erhält eine Stirnwunde.</hi>
-          </stage>
+          <stage>Cellini erhält eine Stirnwunde.</stage>
           <lg>
             <l>Eine Lösung wärs.</l>
             <l>Der eine hat mein Wort. Der andere mein Herz</l>
             <l>Es muß sich anders, muß sich sittlich klären.</l>
           </lg>
-          <stage>
-            <hi>Er tritt zwischen sie.</hi>
-          </stage>
+          <stage>Er tritt zwischen sie.</stage>
           <lg>
             <l>Halt!</l>
             <l>Kein Mißverständnis!</l>
           </lg>
-          <stage>
-            <hi>Zu Cellini.</hi>
-          </stage>
+          <stage>Zu Cellini.</stage>
           <lg>
             <l>Nirgends gab ich dir das Recht,</l>
             <l>In diesem Raum jemanden feindlich anzufallen;</l>
           </lg>
-          <stage>
-            <hi>Zu Torrigiano.</hi>
-          </stage>
+          <stage>Zu Torrigiano.</stage>
           <lg>
             <l>Dir einen Grund, an meinem Wort zu zweifeln. Steckt</l>
             <l>Die Degen ein!</l>
@@ -1263,9 +1179,7 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>zu Michelangelo.</hi>
-          </stage>
+          <stage>zu Michelangelo.</stage>
           <l>Vor den Papst? Was will er dort?</l>
         </sp>
         <sp who="#michelangelo">
@@ -1275,9 +1189,7 @@
         <sp who="#cellini">
           <speaker>CELLINI.</speaker>
           <l>Man hängt ihn an der nächsten Vogelfelle auf.</l>
-          <stage>
-            <hi>Zu Torrigiano.</hi>
-          </stage>
+          <stage>Zu Torrigiano.</stage>
           <lg>
             <l>Schlugst du die Nase des Buonarotti ein,</l>
             <l>Streckst du die Zunge dafür raus! S' ist billig Recht.</l>
@@ -1290,9 +1202,7 @@
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO</speaker>
-          <stage>
-            <hi>zu Cellini.</hi>
-          </stage>
+          <stage>zu Cellini.</stage>
           <lg>
             <l>Ich habe vorerst nichts</l>
             <l>Mit dir zu tun. Wenn du auch Rechenschaft mir stehst,</l>
@@ -1315,16 +1225,12 @@
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO</speaker>
-          <stage>
-            <hi>triumphierend.</hi>
-          </stage>
+          <stage>triumphierend.</stage>
           <l>Nun, Cellini, lenkst du ein?</l>
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>zu Michelangelo.</hi>
-          </stage>
+          <stage>zu Michelangelo.</stage>
           <lg>
             <l>Du hast</l>
             <l>Dich – –</l>
@@ -1336,16 +1242,12 @@
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO</speaker>
-          <stage>
-            <hi>zu Cellini, höhnisch.</hi>
-          </stage>
+          <stage>zu Cellini, höhnisch.</stage>
           <l>Du schweigst?</l>
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>zu Michelangelo.</hi>
-          </stage>
+          <stage>zu Michelangelo.</stage>
           <l>Du hast ihm gar – –?</l>
           <pb n="30"/>
         </sp>
@@ -1391,12 +1293,10 @@
             <l><pb n="31"/> Die Achtung dem zu wahren, wie sie ihm gebührt,</l>
             <l>Dazu bin ich berufen, wärs auch wider ihn.</l>
           </lg>
-          <stage>
-            <hi>Zu Michelangelo.</hi>
-          </stage>
+          <stage>Zu Michelangelo.</stage>
           <lg>
             <l>Drum: Kennst du mich nicht mehr, ists, weil Cellini jetzt</l>
-            <l>Für den Buonarotti strebt, deß <hi>du</hi> dich nicht</l>
+            <l>Für den Buonarotti strebt, deß <emph>du</emph> dich nicht</l>
             <l>Mehr würdig zeigst.</l>
           </lg>
         </sp>
@@ -1443,7 +1343,7 @@
         <sp who="#cellini">
           <speaker>CELLINI.</speaker>
           <lg>
-            <l>Versuchs! Doch du <hi>verführst</hi> mich auch nicht wider dich!</l>
+            <l>Versuchs! Doch du <emph>verführst</emph> mich auch nicht wider dich!</l>
             <l>Ich kenne meine Pflicht. Durch Unbestechlickeit</l>
             <l>Bring ichs vielleicht dahin, daß du dich noch besinnst.</l>
           </lg>
@@ -1455,7 +1355,7 @@
         <sp who="#michelangelo">
           <speaker>MICHELANGELO.</speaker>
           <lg>
-            <l>So gibts nur <hi>eine</hi> Möglichkeit,</l>
+            <l>So gibts nur <emph>eine</emph> Möglichkeit,</l>
             <l>Daß wir verbunden bleiben: Eil und bring sogleich</l>
             <l>Das Volk zur Ruh, das draußen durch die Gassen schreit!</l>
             <l>Dann steht dirs frei, wenn ich um Torrigianos Wohl</l>
@@ -1470,24 +1370,18 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>triumphierend.</hi>
-          </stage>
+          <stage>triumphierend.</stage>
           <lg>
             <l>Wohlan! Jetzt hörte ich</l>
             <l>Den Michelangelo von ehedem!</l>
           </lg>
-          <stage>
-            <hi>Zu Torrigiano.</hi>
-          </stage>
+          <stage>Zu Torrigiano.</stage>
           <lg>
             <l>Gewiß:</l>
             <l>Stirbst du gerichtet, sparn wir das Begräbnis! Die</l>
             <l>Justiz besorgt es mit. Auf Wiedersehen denn!</l>
           </lg>
-          <stage>
-            <hi>Ab.</hi>
-          </stage>
+          <stage>Ab.</stage>
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO.</speaker>
@@ -1511,9 +1405,7 @@
             <l>Der Jugend, dem Cellini und</l>
             <l>Den Wetterfahnen trau ich nicht! –</l>
           </lg>
-          <stage>
-            <hi>Horcht.</hi>
-          </stage>
+          <stage>Horcht.</stage>
           <l>Ein zweiter Freund?</l>
         </sp>
       </div>
@@ -1529,9 +1421,7 @@
         <sp who="#michelangelo">
           <speaker>MICHELANGELO.</speaker>
           <l>Dank für die Ehre! Ich erwarte ihn.</l>
-          <stage>
-            <hi>Der Herold ab.</hi>
-          </stage>
+          <stage>Der Herold ab.</stage>
           <lg>
             <l>Besuch</l>
             <l>Vom Papst? Was soll mir das?</l>
@@ -1554,19 +1444,14 @@
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>tritt auf in pontificalibus mit einem mäßigen Gefolge, das ungefähr dieselbe Zahl
-              aufweist wie die auf der entgegengesetzten Seite erschienenen Schüler des
-              Michelangelo, die sich in einiger Entfernung hinter Michelangelo und Torrigiano
-              aufstellen.</hi>
-          </stage>
+          <stage>tritt auf in pontificalibus mit einem mäßigen Gefolge, das ungefähr dieselbe Zahl
+            aufweist wie die auf der entgegengesetzten Seite erschienenen Schüler des Michelangelo,
+            die sich in einiger Entfernung hinter Michelangelo und Torrigiano aufstellen.</stage>
           <lg>
             <l>Den Gruß erlaß ich euch. Das Schauspiel auf dem Weg</l>
             <l>Hierher tat mir genug.</l>
           </lg>
-          <stage>
-            <hi>Zurücksprechend.</hi>
-          </stage>
+          <stage>Zurücksprechend.</stage>
           <lg>
             <l>Naiver Witz! Man knickt</l>
             <l>Ein Bein ein, um geköpft zu scheinen! Apropos,</l>
@@ -1582,9 +1467,7 @@
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>zu Michelangelo.</hi>
-          </stage>
+          <stage>zu Michelangelo.</stage>
           <lg>
             <l>So komm ich, Meister, denn</l>
             <l>Zu Euch! Schon wieder schwingt die Luft von dem Geschrei:</l>
@@ -1625,15 +1508,11 @@
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>verbeugt sich.</hi>
-          </stage>
+          <stage>verbeugt sich.</stage>
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>mit dem Stab stampfend.</hi>
-          </stage>
+          <stage>mit dem Stab stampfend.</stage>
           <lg>
             <l>Nun, nun? Anstatt zu reden, beugt</l>
             <l>Ihr euch, zerdrückt die Worte vollends, die im Bauch</l>
@@ -1668,15 +1547,11 @@
             <l>Hier steht Pietro Torrigiano aus Florenz</l>
             <l>Und er bewies es, daß ers ist.</l>
           </lg>
-          <stage>
-            <hi>Hebt die Zeichnung auf.</hi>
-          </stage>
+          <stage>Hebt die Zeichnung auf.</stage>
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>fixiert den Torrigiano.</hi>
-          </stage>
+          <stage>fixiert den Torrigiano.</stage>
           <lg>
             <l>Durch ein Papier</l>
             <l>Erst noch? Du hast ein trotziges Gesicht, mein Sohn!</l>
@@ -1697,12 +1572,10 @@
         <sp who="#torrigiano">
           <speaker>TORRIGIANO.</speaker>
           <l>Daß ich</l>
-          <stage>
-            <hi>Auf Michelangelo deutend.</hi>
-          </stage>
+          <stage>Auf Michelangelo deutend.</stage>
           <lg>
             <l>dem Manne, als er noch ein Knabe war.</l>
-            <l>Der, als <hi>Charakter,</hi> in Florenz bei weitem nicht</l>
+            <l>Der, als <emph>Charakter</emph>, in Florenz bei weitem nicht</l>
             <l>So viel wie ich, der üble Torrigiano galt,</l>
             <l>Das Nasenbein zerschmetterte – im Jähzorn wars –</l>
             <l>Weil er ein Bild mir schmähte. Wahr ist:</l>
@@ -1714,9 +1587,7 @@
             <l>Machst dus so?</l>
             <l>Dann fahr auch hin!</l>
           </lg>
-          <stage>
-            <hi>Sucht den Meisel.</hi>
-          </stage>
+          <stage>Sucht den Meisel.</stage>
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO.</speaker>
@@ -1796,13 +1667,9 @@
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>schlägt den Torrigiano.</hi>
-          </stage>
+          <stage>schlägt den Torrigiano.</stage>
           <l>Wirst du wohl schweigen, lächerlicher Nasenheld?</l>
-          <stage>
-            <hi>Indem er ihn beständig schlägt.</hi>
-          </stage>
+          <stage>Indem er ihn beständig schlägt.</stage>
           <lg>
             <l>Corpus delicti also ist ein Stücklein Mensch,</l>
             <l>Von dessen Niedertracht und Kleinigkeit sich mit</l>
@@ -1820,10 +1687,8 @@
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>dem ein Kardinal die Nachricht eines Boten ins Ohr geflüstert hat, zu
-              Michelangelo.</hi>
-          </stage>
+          <stage>dem ein Kardinal die Nachricht eines Boten ins Ohr geflüstert hat, zu
+            Michelangelo.</stage>
           <lg>
             <l>An der Sixtina gehen schlimme Dinge vor.</l>
             <l>Was glaubst du, Künstlereitelkeit, daß ich nun tu?</l>
@@ -1834,9 +1699,7 @@
             <l>Daß unsre Heiligkeit in eigener Person</l>
             <l>Am Feiertag in einer Werkstatt stehen muß?</l>
           </lg>
-          <stage>
-            <hi>Tritt einen Schritt zurück.</hi>
-          </stage>
+          <stage>Tritt einen Schritt zurück.</stage>
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO.</speaker>
@@ -1928,17 +1791,13 @@
             <l>Die Schellenkappe mir auch auf das Haupt zu tun,</l>
             <l>Weil eurem Mummenschanz nur noch die Krone fehlt?</l>
           </lg>
-          <stage>
-            <hi>Zum Gefolge zurücksprechend.</hi>
-          </stage>
+          <stage>Zum Gefolge zurücksprechend.</stage>
           <l>Wie hieß die Meldung doch vorhin? Der Pöbelhauf –</l>
         </sp>
         <sp who="#kardinal">
           <speaker>KARDINAL.</speaker>
           <l>Sei mit den Wachen handgemein geworden.</l>
-          <stage>
-            <hi>Michelangelo erschrickt. Eine neue Meldung erfolgt.</hi>
-          </stage>
+          <stage>Michelangelo erschrickt. Eine neue Meldung erfolgt.</stage>
           <lg>
             <l>Die Kapelle ist enthüllt. Das Volk ist unterwegs</l>
             <l>Hierher, wie mir ein zweiter Bote sagt.</l>
@@ -1954,9 +1813,7 @@
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>halb für sich.</hi>
-          </stage>
+          <stage>halb für sich.</stage>
           <lg>
             <l>Ich fürchte fast,</l>
             <l>Daß er, verführt, der Führer war!</l>
@@ -2028,8 +1885,7 @@
             <l>Bestätigt durch den Handschlag und durch Vorführung,</l>
             <l>Hört an, was doch die Stadt, die sich so aufgeregt</l>
             <l>Gebahrt, durch eines Mannes Mund, dem sie vertraut,</l>
-            <l><hi>Gen</hi> Torrigiano vorbringt, wenn ich selbst mich <hi>für</hi>
-            </l>
+            <l><emph>Gen</emph> Torrigiano vorbringt, wenn ich selbst mich <emph>für</emph></l>
             <l>Ihn in die Schanze schlage.</l>
           </lg>
         </sp>
@@ -2045,18 +1901,14 @@
             <l>Ins Angesicht! Drum abermals: Ich lasse hier</l>
             <l>Pietro Torrigiano, den ihr alle seht,</l>
           </lg>
-          <stage>
-            <hi>Er führt ihn vor.</hi>
-          </stage>
+          <stage>Er führt ihn vor.</stage>
           <lg>
             <l>Frei gehn, wohin er will. Dem Michelangelo</l>
             <l>Empfehle ich Geduld und mehr Bescheidenheit;</l>
             <l>Doch den Cellini, der aufrührerisch den Zank</l>
             <l>Zu Unruhen benutzte – holt ihn mir hierher!</l>
           </lg>
-          <stage>
-            <hi>Man eilt, den Befehl zu vollziehn. Aufregung für und wider.</hi>
-          </stage>
+          <stage>Man eilt, den Befehl zu vollziehn. Aufregung für und wider.</stage>
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO.</speaker>
@@ -2067,9 +1919,7 @@
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>zum Papst.</hi>
-          </stage>
+          <stage>zum Papst.</stage>
           <lg>
             <l>Der Friede einer Stadt kommt vor den Künstlernasen.</l>
             <l>Und doch! Nimm dich in Acht vor einer Menge, die</l>
@@ -2110,19 +1960,13 @@
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>ärgerlich zu Torrigiano.</hi>
-          </stage>
+          <stage>ärgerlich zu Torrigiano.</stage>
           <l>Steh auf!</l>
-          <stage>
-            <hi>Von draußen rasch anschwellender Lärm.</hi>
-          </stage>
+          <stage>Von draußen rasch anschwellender Lärm.</stage>
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO</speaker>
-          <stage>
-            <hi>stehend.</hi>
-          </stage>
+          <stage>stehend.</stage>
           <lg>
             <l>Rauscht nur herein,</l>
             <l>Granate, Myrth und Lorbeer, die ich lang genug</l>
@@ -2140,9 +1984,7 @@
       </div>
       <div type="scene">
         <head><pb n="47"/> Vierter Auftritt</head>
-        <stage>
-          <hi>Von beiden Seilen drängt viel Volk herein.</hi>
-        </stage>
+        <stage>Von beiden Seilen drängt viel Volk herein.</stage>
         <sp who="#stimmen_aus_dem_volk">
           <speaker>STIMMEN AUS DEM VOLK.</speaker>
           <lg>
@@ -2157,12 +1999,10 @@
             <l>Dies Haus ist meines. Auch beherbergt es den Papst.</l>
             <l>Hinaus!</l>
           </lg>
-          <stage>
-            <hi>Kniefälle. Mürrisches Zurückweichen der Menge.</hi>
-          </stage>
+          <stage>Kniefälle. Mürrisches Zurückweichen der Menge.</stage>
           <l>Wo ist Cellini?</l>
         </sp>
-        <sp who="#stimmen">
+        <sp who="#stimmen_aus_dem_volk">
           <speaker>STIMMEN.</speaker>
           <lg>
             <l>Heil! Cellini Heil!</l>
@@ -2180,9 +2020,7 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>arbeitet sich durch die Menge.</hi>
-          </stage>
+          <stage>arbeitet sich durch die Menge.</stage>
           <lg>
             <l>Nein, bleibt!</l>
             <l>Bleibt alle und vernehmt von mir, wie ich den hier</l>
@@ -2195,9 +2033,7 @@
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>nachdem auf einen Wink den Papstes hin die Türen geschlossen wurden.</hi>
-          </stage>
+          <stage>nachdem auf einen Wink den Papstes hin die Türen geschlossen wurden.</stage>
           <l>Sprich, wo kommst du her?</l>
         </sp>
         <sp who="#cellini">
@@ -2264,9 +2100,7 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>sieht den Papst erst jetzt.</hi>
-          </stage>
+          <stage>sieht den Papst erst jetzt.</stage>
           <l>Der Papst?</l>
         </sp>
         <sp who="#michelangelo">
@@ -2291,17 +2125,13 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>zieht den Degen.</hi>
-          </stage>
+          <stage>zieht den Degen.</stage>
           <l>Wer wagt, sich mir zu nähern?</l>
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO.</speaker>
           <l>Ich wags und zwar so!</l>
-          <stage>
-            <hi>Schlägt ihm den Degen aus der Faust.</hi>
-          </stage>
+          <stage>Schlägt ihm den Degen aus der Faust.</stage>
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI.</speaker>
@@ -2338,11 +2168,9 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>trotzig.</hi>
-          </stage>
+          <stage>trotzig.</stage>
           <lg>
-            <l>Und <hi>wenn</hi> ich mich zum Haupt des Frevels machte, den</l>
+            <l>Und <emph>wenn</emph> ich mich zum Haupt des Frevels machte, den</l>
             <l>Du Aufruhr nennst, ich aber nur Begeisterung?</l>
           </lg>
         </sp>
@@ -2357,7 +2185,7 @@
         <sp who="#cellini">
           <speaker>CELLINI.</speaker>
           <lg>
-            <l><hi>Wenn</hi> ichs einräum? <hi>wer</hi> glaubt, daß</l>
+            <l><emph>Wenn</emph> ichs einräum? <emph>wer</emph> glaubt, daß</l>
             <l>Er in Italien dann die Verzückung, die</l>
             <l>Vom Musendienste ausgeht, als ein Staatsvergehn</l>
             <l>Behandeln darf?</l>
@@ -2398,37 +2226,27 @@
             <l>Denn wahrlich: auch empören würd ich mich für ihn,</l>
             <l>Und hier ganz Rom, das einstimmt, sagt: Er ist im Recht!</l>
           </lg>
-          <stage>
-            <hi>Zurufe und Johlen der Menge.</hi>
-          </stage>
+          <stage>Zurufe und Johlen der Menge.</stage>
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>tritt zurück und zu Torrigiano.</hi>
-          </stage>
+          <stage>tritt zurück und zu Torrigiano.</stage>
           <l>Ich nicht! Von heut an bin ich einsamer als je!</l>
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>indem er die Tiara an einen Kardinal gibt.</hi>
-          </stage>
+          <stage>indem er die Tiara an einen Kardinal gibt.</stage>
           <lg>
             <l>So nehm ich die Tiara ab, als wär es schon</l>
             <l>Geschehen und geglückt.</l>
           </lg>
-          <stage>
-            <hi>Für sich.</hi>
-          </stage>
+          <stage>Für sich.</stage>
           <lg>
             <l>Ein Bürschlein, das man, wie</l>
             <l>Den Schmetterling, mit Daum und Zeigefinger schon</l>
             <l>Zerdrückt, hat es gewagt, mir zu begegnen!</l>
           </lg>
-          <stage>
-            <hi>Zu Cellini.</hi>
-          </stage>
+          <stage>Zu Cellini.</stage>
           <lg>
             <l>Sag,</l>
             <l>Was du nun forderst!</l>
@@ -2436,9 +2254,7 @@
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>zu Michelangelo.</hi>
-          </stage>
+          <stage>zu Michelangelo.</stage>
           <lg>
             <l>Bleib! Du nimmst mein Leben mit!</l>
             <l><pb n="53"/> Ich liebte dich wie eine Braut den Bräutigam,</l>
@@ -2525,32 +2341,24 @@
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>zu Cellini.</hi>
-          </stage>
+          <stage>zu Cellini.</stage>
           <l>Du hast Gericht verlangt.</l>
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI.</speaker>
           <l>Hei, ich bin mitten drin!</l>
-          <stage>
-            <hi>Zu Michelangelo.</hi>
-          </stage>
+          <stage>Zu Michelangelo.</stage>
           <lg>
             <l>Zu dir nichts mehr! Du zuckst</l>
             <l><pb n="55"/> Ja nur noch, statt zu leben; denn mein Wort war Gift.</l>
             <l>In stillen Stunden schleichts dich an. Ich kenne dich.</l>
           </lg>
-          <stage>
-            <hi>Gegen Torrigiano.</hi>
-          </stage>
+          <stage>Gegen Torrigiano.</stage>
           <l>Doch nun zu dem!</l>
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>von einem Podium herab, auf das man einen Stuhl gestellt hat.</hi>
-          </stage>
+          <stage>von einem Podium herab, auf das man einen Stuhl gestellt hat.</stage>
           <lg>
             <l>Wohlan! Doch Eins zuvor! Wer mich</l>
             <l>Verstand, wenn ich jetzt sprach, erhebe seinen Arm!</l>
@@ -2564,10 +2372,8 @@
             <l>Ein Bruch geschehn. Bei meinem Stab: Ich werde ihn</l>
             <l>Verkitten. Wann, womit und wie, das hört ihr noch.</l>
           </lg>
-          <stage>
-            <hi>Pause. Cellini erbleicht. Alle, außer ihm, seinem Anhang und Torrigiano erheben den
-              Arm.</hi>
-          </stage>
+          <stage>Pause. Cellini erbleicht. Alle, außer ihm, seinem Anhang und Torrigiano erheben den
+            Arm.</stage>
           <lg>
             <l>Der Papst ist abgesetzt. Zugleich jedoch verlangt</l>
             <l>Man, daß ich Richter sei als Papst. Man sieht: es soll</l>
@@ -2577,9 +2383,7 @@
             <l>Verlangen. Schöffe ist mein Kardinalgefolge</l>
             <l>Und Auditorium ganz Rom.</l>
           </lg>
-          <stage>
-            <hi>Er setzt sich.</hi>
-          </stage>
+          <stage>Er setzt sich.</stage>
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI.</speaker>
@@ -2599,9 +2403,7 @@
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>zu Torrigiano.</hi>
-          </stage>
+          <stage>zu Torrigiano.</stage>
           <lg>
             <l>Der Torrigiano trete vor! Wie heißest du?</l>
             <l>Gib auch Gewerbe, Alter und die Herkunft an!</l>
@@ -2667,9 +2469,7 @@
             <l>Durch ein Versäumnis meinerseits das Rechtsverfahrn</l>
             <l>Gefährdet. Ich besitze einen Schutzbrief,</l>
           </lg>
-          <stage>
-            <hi>Er zieht ihn hervor.</hi>
-          </stage>
+          <stage>Er zieht ihn hervor.</stage>
           <lg>
             <l>den</l>
             <l>Mir Englands König gab, als ich vor Monaten</l>
@@ -2678,24 +2478,18 @@
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>greift darnach.</hi>
-          </stage>
+          <stage>greift darnach.</stage>
           <l>Diesen Brief – –</l>
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO.</speaker>
           <l>Zerreiße ich!</l>
-          <stage>
-            <hi>Aufsehen.</hi>
-          </stage>
+          <stage>Aufsehen.</stage>
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST.</speaker>
           <l>Das gibt zu denken,</l>
-          <stage>
-            <hi>Zu Cellini.</hi>
-          </stage>
+          <stage>Zu Cellini.</stage>
           <lg>
             <l>Doch fahr fort! Zu welcher Zeit</l>
             <l>Verübte er, weß du ihn schuldig hältst? Sodann:</l>
@@ -2732,15 +2526,11 @@
             <l>Die Stücke noch zu Staub zertreten, sage ich.</l>
             <l>Die Zeugen –</l>
           </lg>
-          <stage>
-            <hi>Zwei Männer in fremder Tracht treten vor.</hi>
-          </stage>
+          <stage>Zwei Männer in fremder Tracht treten vor.</stage>
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>zu Torrigiano.</hi>
-          </stage>
+          <stage>zu Torrigiano.</stage>
           <l>Antwort!</l>
         </sp>
         <sp who="#torrigiano">
@@ -2768,15 +2558,11 @@
             <l>Und ob man vom Beklagten sich der Ketzerei</l>
             <l>Versehen muß!</l>
           </lg>
-          <stage>
-            <hi>Sieht sich nach den Schöffen um, die nicken.</hi>
-          </stage>
+          <stage>Sieht sich nach den Schöffen um, die nicken.</stage>
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>halb für sich.</hi>
-          </stage>
+          <stage>halb für sich.</stage>
           <lg>
             <l>Jetzt, Torrigiano, ists um dich</l>
             <l>Geschehn.</l>
@@ -2784,9 +2570,7 @@
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>fortfahrend.</hi>
-          </stage>
+          <stage>fortfahrend.</stage>
           <lg>
             <l>Da mein ich denn, ist es von Wichtigkeit,</l>
             <l>Daß jener Schutzbrief, den er vorhin noch zerriß,</l>
@@ -2795,9 +2579,7 @@
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>nur halb unterdrückt.</hi>
-          </stage>
+          <stage>nur halb unterdrückt.</stage>
           <l>Heuchelei!</l>
         </sp>
         <sp who="#der_papst">
@@ -2806,9 +2588,7 @@
             <l>Ich komme auf die Muttergottesschändung noch</l>
             <l>Zurück! Jetzt zu der andern Freveltat,</l>
           </lg>
-          <stage>
-            <hi>Zu Cellini.</hi>
-          </stage>
+          <stage>Zu Cellini.</stage>
           <lg>
             <l>Wie machst</l>
             <l>Du sie plausibel? Wie und wo ward sie verübt?</l>
@@ -2834,9 +2614,7 @@
             <l>Buonarotti so das Nasenbein zerschlagen,</l>
             <l>Wie man zum Trum entstellt, es heut noch sehen kann.</l>
           </lg>
-          <stage>
-            <hi>Man drängt sich neugierig hinzu.</hi>
-          </stage>
+          <stage>Man drängt sich neugierig hinzu.</stage>
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST.</speaker>
@@ -2872,9 +2650,7 @@
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>tückisch.</hi>
-          </stage>
+          <stage>tückisch.</stage>
           <lg>
             <l>Was du da sagst, ist tief gedacht, doch sprich</l>
             <l>Nur zu!</l>
@@ -2910,9 +2686,7 @@
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>zu Torrigiano.</hi>
-          </stage>
+          <stage>zu Torrigiano.</stage>
           <l>Zunächst: Hast dus getan?</l>
         </sp>
         <sp who="#michelangelo">
@@ -2983,9 +2757,7 @@
         <sp who="#der_papst">
           <speaker>DER PAPST.</speaker>
           <l>Cellini, wirst du dich verteidigen?</l>
-          <stage>
-            <hi>Indem er auf einen Schöffen zeigt.</hi>
-          </stage>
+          <stage>Indem er auf einen Schöffen zeigt.</stage>
           <lg>
             <l>Dem dünkt,</l>
             <l>Daß Michelangelo damals noch Knabe war,</l>
@@ -3003,16 +2775,12 @@
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>zu Michelangelo.</hi>
-          </stage>
+          <stage>zu Michelangelo.</stage>
           <lg>
             <l>Die Unterbrechung ist</l>
             <l>Mir stark zuwider,</l>
           </lg>
-          <stage>
-            <hi>Zu Cellini.</hi>
-          </stage>
+          <stage>Zu Cellini.</stage>
           <lg>
             <l>Sprich nur zu, mein Sohn!</l>
             <l>Wie wirst</l>
@@ -3048,17 +2816,11 @@
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>indem er aufsteht.</hi>
-          </stage>
+          <stage>indem er aufsteht.</stage>
           <l>Du wirst wohl an dir selber irr?</l>
-          <stage>
-            <hi>Plötzlich.</hi>
-          </stage>
+          <stage>Plötzlich.</stage>
           <l>Wer hilft ihm jetzt?</l>
-          <stage>
-            <hi>Murren und Unruhe, bis Cellini weiterspricht.</hi>
-          </stage>
+          <stage>Murren und Unruhe, bis Cellini weiterspricht.</stage>
           <pb n="65"/>
         </sp>
         <sp who="#cellini">
@@ -3097,9 +2859,7 @@
             <l>Trotz alledem nach Rom um Wiedereinsetzung</l>
             <l>Zu kommen? Wiederholt: Das Rad hat er verdient!</l>
           </lg>
-          <stage>
-            <hi>Tumult.</hi>
-          </stage>
+          <stage>Tumult.</stage>
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO.</speaker>
@@ -3108,9 +2868,7 @@
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>schiebt ihn beiseite.</hi>
-          </stage>
+          <stage>schiebt ihn beiseite.</stage>
           <lg>
             <l>Du bist ein Laffe!</l>
             <l>Der Streit, beginnt! Denn ich behaupte, daß ein Mann</l>
@@ -3146,9 +2904,7 @@
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>setzt sich.</hi>
-          </stage>
+          <stage>setzt sich.</stage>
           <pb n="67"/>
         </sp>
         <sp who="#michelangelo">
@@ -3161,9 +2917,7 @@
         <sp who="#der_papst">
           <speaker>DER PAPST.</speaker>
           <l>Der Spruch, der Spruch, er fällt mir immer leicht!</l>
-          <stage>
-            <hi>Zu Michelangelo.</hi>
-          </stage>
+          <stage>Zu Michelangelo.</stage>
           <lg>
             <l>Du sagst,</l>
             <l>Wir haben es mit einem neuen Heiligen</l>
@@ -3216,9 +2970,7 @@
             <l>Verschafft. Noch ists nicht soweit, daß die Anarchie</l>
             <l>In Rom die alte Wolfsstadt auferstehen ließ.</l>
           </lg>
-          <stage>
-            <hi>Den Faden wieder aufnehmend.</hi>
-          </stage>
+          <stage>Den Faden wieder aufnehmend.</stage>
           <lg>
             <l>Ein Ketzer also ist der Torrigiano nicht.</l>
             <l>Doch die Verbrennung war ihm auch nicht zuverlangt.</l>
@@ -3228,30 +2980,22 @@
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>sich abwendend.</hi>
-          </stage>
+          <stage>sich abwendend.</stage>
           <lg>
             <l>Da bleibt</l>
             <l>Nichts übrig, als der Meisel und der Hammer!</l>
           </lg>
-          <stage>
-            <hi>Bearbeitet einen hohen Marmorblock, daß die Stücke fliegen.</hi>
-          </stage>
+          <stage>Bearbeitet einen hohen Marmorblock, daß die Stücke fliegen.</stage>
         </sp>
         <sp who="#torrigiano #cellini">
           <speaker>TORRIGIANO UND CELLINI</speaker>
-          <stage>
-            <hi>zugleich.</hi>
-          </stage>
+          <stage>zugleich.</stage>
           <l>Sags!</l>
           <pb n="69"/>
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>nachdem er sich nach den Schöffen umsah.</hi>
-          </stage>
+          <stage>nachdem er sich nach den Schöffen umsah.</stage>
           <lg>
             <l>Der Schöffe schweigt. Ich denke hin und denke her.</l>
             <l>In unsrer Frage nach des Torrigiano Schuld</l>
@@ -3260,24 +3004,20 @@
             <l>Doch zur Entscheidung zeigt das Werkzeug sich zu stumpf.</l>
             <l>Was tat man wohl zu frührer Zeit in solchem Fall?</l>
             <l>Man wandte sich zur höhern Macht hinauf, die dann</l>
-            <l>Mit <hi>einem</hi> Griff hienieden alles ordnete.</l>
+            <l>Mit <emph>einem</emph> Griff hienieden alles ordnete.</l>
             <l>Wenn man den heutigen Tag zurückbetrachtet, lag</l>
             <l>Das Ziel ja ungeahnt nur halb verhüllt, das ich</l>
             <l>Jetzt so gestalte: Hält sich Torrigiano selbst</l>
-            <l>Für schuldig oder nicht? Mit <hi>einem</hi> Worte:</l>
+            <l>Für schuldig oder nicht? Mit <emph>einem</emph> Worte:</l>
           </lg>
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO</speaker>
-          <stage>
-            <hi>will sprechen, schweigt.</hi>
-          </stage>
+          <stage>will sprechen, schweigt.</stage>
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>der wieder herbeigekommen ist.</hi>
-          </stage>
+          <stage>der wieder herbeigekommen ist.</stage>
           <l>Nein!</l>
         </sp>
         <sp who="#der_papst">
@@ -3297,22 +3037,16 @@
         </sp>
         <sp who="#torrigiano">
           <speaker>TORRIGIANO</speaker>
-          <stage>
-            <hi>springt in die Mitte vor, über dem Haupt den Degen schwingend.</hi>
-          </stage>
+          <stage>springt in die Mitte vor, über dem Haupt den Degen schwingend.</stage>
           <lg>
             <l>Der Gipfel der Verrücktheit ist erreicht! Die Welt</l>
             <l><pb n="70"/> Bricht auseinander. Schlagt sie ganz ins Nichts hinein!</l>
           </lg>
-          <stage>
-            <hi>Großer Tumult.</hi>
-          </stage>
+          <stage>Großer Tumult.</stage>
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>richtet sich hoch auf.</hi>
-          </stage>
+          <stage>richtet sich hoch auf.</stage>
           <lg>
             <l>Er ist vom höchsten Finger angerührt! Er tobt!</l>
             <l>Er tobt! Wer ihn nicht fesselt, werfe sich aufs Knie</l>
@@ -3321,34 +3055,24 @@
         </sp>
         <sp who="#michelangelo">
           <speaker>MICHELANGELO</speaker>
-          <stage>
-            <hi>verhüllt sich die Augen.</hi>
-          </stage>
+          <stage>verhüllt sich die Augen.</stage>
           <l>Sie reißen ihn –</l>
         </sp>
         <sp who="#cellini">
           <speaker>CELLINI</speaker>
-          <stage>
-            <hi>unerbittlich.</hi>
-          </stage>
+          <stage>unerbittlich.</stage>
           <lg>
             <l>Zu Boden! So</l>
             <l>Ists recht!</l>
           </lg>
-          <stage>
-            <hi>Torrigiano fällt, während er sich durchsticht, mit einem Knäul von Männern zu Boden.
-              Alle andern, außer Cellini und Michelangelo knien.</hi>
-          </stage>
+          <stage>Torrigiano fällt, während er sich durchsticht, mit einem Knäul von Männern zu
+            Boden. Alle andern, außer Cellini und Michelangelo knien.</stage>
         </sp>
         <sp who="#der_papst">
           <speaker>DER PAPST</speaker>
-          <stage>
-            <hi>indem man ihm die Tiara aufsetzt.</hi>
-          </stage>
+          <stage>indem man ihm die Tiara aufsetzt.</stage>
           <l>Der Nasenstreit ist aus! Die Krone her!</l>
-          <stage>
-            <hi>Vorhang.</hi>
-          </stage>
+          <stage>Vorhang.</stage>
         </sp>
       </div>
     </body>
