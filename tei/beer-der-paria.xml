@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Der Paria</title>
+        <title type="main">Der Paria</title>
+        <title type="sub">Trauerspiel in einem Aufzuge</title>
         <author key="pnd:118657887">Beer, Michael</author>
       </titleStmt>
       <publicationStmt>
@@ -32,6 +33,8 @@
           <bibl type="originalSource">
             <title>Michael Beer: Sämmtliche Werke. Herausgegeben von Eduard von Schenk, Leipzig:
               F.A. Brockhaus, 1835.</title>
+            <idno type="GoogleBooks" xml:base="https://books.google.com/books?id="
+              >KVxBAAAAYAAJ</idno>
             <date type="print" when="1826"/>
             <date type="premiere" when="1823"/>
             <date type="written"/>
@@ -42,33 +45,35 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="maja">
-            <persName>MAJA</persName>
+          <person xml:id="maja" sex="FEMALE">
+            <persName>Maja</persName>
           </person>
-          <person xml:id="gadhi">
-            <persName>GADHI</persName>
+          <person xml:id="gadhi" sex="MALE">
+            <persName>Gadhi</persName>
           </person>
-          <person xml:id="stimmen">
-            <persName>STIMMEN</persName>
+          <personGrp xml:id="stimmen_1" sex="UNKNOWN">
+            <name>Stimmen von außen (1)</name>
+          </personGrp>
+          <person xml:id="erster_indianer" sex="MALE">
+            <persName>Erster Indianer</persName>
           </person>
-          <person xml:id="erster_indianer">
-            <persName>ERSTER INDIANER</persName>
+          <person xml:id="zweiter_indianer" sex="MALE">
+            <persName>Zweiter Indianer</persName>
           </person>
-          <person xml:id="zweiter_indianer">
-            <persName>ZWEITER INDIANER</persName>
+          <personGrp xml:id="die_indianer" sex="UNKNOWN">
+            <name>Die Indianer</name>
+          </personGrp>
+          <person xml:id="benascar" sex="MALE">
+            <persName>Benascar</persName>
           </person>
-          <person xml:id="benascar">
-            <persName>BENASCAR</persName>
+          <personGrp xml:id="stimmen_5" sex="UNKNOWN">
+            <name>Stimmen von außen (5)</name>
+          </personGrp>
+          <person xml:id="das_kind" sex="MALE">
+            <persName>Das Kind</persName>
           </person>
-          <person xml:id="das_kind">
-            <persName>DAS KIND</persName>
-          </person>
-          <person xml:id="indianer">
-            <persName>INDIANER</persName>
-            <persName xml:id="die_indianer">DIE INDIANER</persName>
-          </person>
-          <person xml:id="bramine">
-            <persName>BRAMINE</persName>
+          <person xml:id="bramine" sex="MALE">
+            <persName>Bramine</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -83,6 +88,7 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
+        <change who="#ff" when="2018-05-07">work on IDs; formalities; add gender info</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -93,8 +99,6 @@
         <head>Der Paria</head>
         <head>Trauerspiel in einem Aufzuge</head>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head><pb n="234"/> Personen.</head>
@@ -106,25 +110,28 @@
           <castItem>Indianer.</castItem>
         </castList>
       </div>
-      <div type="set">
-        <p><hi>Ort: Hütte des Paria.</hi></p>
+      <set>
+        <p>Ort: Hütte des Paria.</p>
         <pb n="234"/>
-      </div>
+        <p>Das Innere der ärmlichen Hütte des Paria. Der Stamm einer Banane ist sichtbar, an welche
+          sich die Hütte lehnt. Die mit Moos belegten Wurzeln bilden einen Sitz. Links eine mit
+          Matten belegte Ruhebank. Im Hintergrunde eine niedrige Thür. Die zeltartige Seitenwand
+          läßt rechts noch einen zweiten Raum vermuthen. Es ist Nacht. Eine am Baumstamme befestigte
+          brennende Fackel erhellt das dürftige Gemach. – Wenn der Vorhang aufgezogen ist, herrscht
+          mehrere Secunden lang eine tiefe Stille auf dem Theater; dann folgt ein starker Blitz,
+          begleitet von einem heftigen Donnerschlage.</p>
+      </set>
+    </front>
+    <body>
       <div type="scene">
         <head>Erster Auftritt.</head>
-        <stage>
-          <hi>Gadhi. Maja. Gadhi ist beschäftigt, mit Matten und Buschwerk eine Lücke der Hinterwand
-            zu verstopfen.</hi>
-        </stage>
+        <stage>Gadhi. Maja. Gadhi ist beschäftigt, mit Matten und Buschwerk eine Lücke der
+          Hinterwand zu verstopfen.</stage>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>erschreckt und ängstlich ausrufend.</hi>
-          </stage>
+          <stage>erschreckt und ängstlich ausrufend.</stage>
           <l>Mein Kind!</l>
-          <stage>
-            <hi>Sie eilt in die Kammer und kommt bald etwas beruhigter zurück.</hi>
-          </stage>
+          <stage>Sie eilt in die Kammer und kommt bald etwas beruhigter zurück.</stage>
           <pb n="235"/>
         </sp>
         <sp who="#gadhi">
@@ -200,9 +207,7 @@
             <l>Der Jäger jauchzt und schlägt den Freudenwirbel;</l>
             <l>Denn Brama lächelt, wenn ein Paria fällt.</l>
           </lg>
-          <stage>
-            <hi>Heftiger Blitz und Donner.</hi>
-          </stage>
+          <stage>Heftiger Blitz und Donner.</stage>
           <pb n="237"/>
         </sp>
         <sp who="#maja">
@@ -327,9 +332,7 @@
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>sie umfassend.</hi>
-          </stage>
+          <stage>sie umfassend.</stage>
           <lg>
             <l>Zwei Edelsteine unschätzbaren Werths,</l>
             <l>Die ich gefunden in dem Schacht des Elends.</l>
@@ -345,9 +348,7 @@
             <l>Zur Larve Menschenbildung nur gegeben.</l>
             <l>Stellt mich euch gleich und seht, ob ich euch gleiche!</l>
           </lg>
-          <stage>
-            <hi>Mit steigender Kraft.</hi>
-          </stage>
+          <stage>Mit steigender Kraft.</stage>
           <lg>
             <l>Ich hab' ein Vaterland, ich will's beschützen.</l>
             <l>Gebt mir ein Leben und ich zahl's mit Wucher,</l>
@@ -421,28 +422,20 @@
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>in höchster Angst.</hi>
-          </stage>
+          <stage>in höchster Angst.</stage>
           <l>Und wardst gesehen.</l>
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>bejaht es schweigend.</hi>
-          </stage>
+          <stage>bejaht es schweigend.</stage>
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>wendet sich mit einem Laute des Entsetzens ab.</hi>
-          </stage>
+          <stage>wendet sich mit einem Laute des Entsetzens ab.</stage>
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>nach einer Pause.</hi>
-          </stage>
+          <stage>nach einer Pause.</stage>
           <lg>
             <l>Kaum sind sechs Sonnen unter – und ich ging</l>
             <l>Ins nahe Gärtchen, Früchte suchend. Ruhig</l>
@@ -544,9 +537,7 @@
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>ihm in die Arme sinkend.</hi>
-          </stage>
+          <stage>ihm in die Arme sinkend.</stage>
           <lg>
             <l>Soll's der Tod</l>
             <l>Eh' als der Räuber unsers Glücks besitzen.</l>
@@ -558,9 +549,7 @@
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>aus seinen Armen aufschreckend.</hi>
-          </stage>
+          <stage>aus seinen Armen aufschreckend.</stage>
           <l>Horch, Gadhi! hörst du nichts?</l>
         </sp>
         <sp who="#gadhi">
@@ -584,11 +573,9 @@
             <l>Und Tritte naher Menschen!</l>
           </lg>
         </sp>
-        <sp who="#stimmen">
+        <sp who="#stimmen_1">
           <speaker>STIMMEN</speaker>
-          <stage>
-            <hi>von außen.</hi>
-          </stage>
+          <stage>von außen.</stage>
           <l>Hierher! Licht!</l>
           <pb n="246"/>
         </sp>
@@ -635,32 +622,22 @@
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>ihr mit Widerstreben folgend.</hi>
-          </stage>
+          <stage>ihr mit Widerstreben folgend.</stage>
           <lg>
             <l>Sicher?</l>
             <l>Entsetzenvolle Sicherheit der Schmach!</l>
           </lg>
-          <stage>
-            <hi>Beide ab ins zweite Gemach.</hi>
-          </stage>
+          <stage>Beide ab ins zweite Gemach.</stage>
         </sp>
       </div>
       <div type="scene">
         <head>Zweiter Auftritt.</head>
-        <stage>
-          <hi>Man hört von außen ein verworrenes Geräusch; kurz darauf stürzen mehrere Indianer,
-            einer nach dem andern, in die Hütte, scheu umherblickend.</hi>
-        </stage>
-        <stage>
-          <hi>Indianer. Gleich darauf Benascar.</hi>
-        </stage>
+        <stage>Man hört von außen ein verworrenes Geräusch; kurz darauf stürzen mehrere Indianer,
+          einer nach dem andern, in die Hütte, scheu umherblickend.</stage>
+        <stage>Indianer. Gleich darauf Benascar.</stage>
         <sp who="#erster_indianer">
           <speaker>ERSTER INDIANER</speaker>
-          <stage>
-            <hi>hereinstürzend.</hi>
-          </stage>
+          <stage>hereinstürzend.</stage>
           <l>Hier Licht und Niemand hier – kommt Alle – kommt!</l>
         </sp>
         <sp who="#zweiter_indianer">
@@ -669,9 +646,7 @@
         </sp>
         <sp who="#erster_indianer">
           <speaker>ERSTER INDIANER</speaker>
-          <stage>
-            <hi>nachdem er sich umgesehen und die Bauart genau betrachtet.</hi>
-          </stage>
+          <stage>nachdem er sich umgesehen und die Bauart genau betrachtet.</stage>
           <lg>
             <l>Fort, wir sind verloren!</l>
             <l>Hier wohnt ein Paria.</l>
@@ -681,35 +656,27 @@
           <speaker>ZWEITER INDIANER.</speaker>
           <l>Hilf, Brama, hilf!</l>
         </sp>
-        <sp who="#alle">
+        <sp who="#die_indianer">
           <speaker>ALLE</speaker>
-          <stage>
-            <hi>gegen den Eingang fliehend.</hi>
-          </stage>
+          <stage>gegen den Eingang fliehend.</stage>
           <l>Ein Paria! ein Paria!</l>
         </sp>
         <sp who="#erster_indianer">
           <speaker>ERSTER INDIANER</speaker>
-          <stage>
-            <hi>an der Thür.</hi>
-          </stage>
+          <stage>an der Thür.</stage>
           <l>Flieh', Herr! hier muß ein Paria hausen.</l>
           <pb n="248"/>
         </sp>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>von zwei Indianern geführt, am linken Arm verwundet, erschöpft eintretend.</hi>
-          </stage>
+          <stage>von zwei Indianern geführt, am linken Arm verwundet, erschöpft eintretend.</stage>
           <lg>
             <l>Laßt mich!</l>
             <l>Und müßt' ich auch hier begegnen</l>
             <l>Dem Geist des Unheils selbst; ich kann nicht weiter,</l>
             <l>Mein Blut entströmt und meine Kraft verläßt mich.</l>
           </lg>
-          <stage>
-            <hi>Er sinkt auf den Sitz ermattet nieder.</hi>
-          </stage>
+          <stage>Er sinkt auf den Sitz ermattet nieder.</stage>
         </sp>
         <sp who="#erster_indianer">
           <speaker>ERSTER INDIANER.</speaker>
@@ -784,18 +751,14 @@
         </sp>
         <sp who="#die_indianer">
           <speaker>DIE INDIANER</speaker>
-          <stage>
-            <hi>ziehen sich besorgt zurück.</hi>
-          </stage>
+          <stage>ziehen sich besorgt zurück.</stage>
         </sp>
       </div>
       <div type="scene">
         <head>Dritter Auftritt.</head>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>allein.</hi>
-          </stage>
+          <stage>allein.</stage>
           <lg>
             <l>Wenn du's beschlossen, Brama, jetzt die Blüthe</l>
             <l>Des Lebens, eh' sie Früchte trug, zu brechen,</l>
@@ -810,29 +773,21 @@
       </div>
       <div type="scene">
         <head>Vierter Auftritt.</head>
-        <stage>
-          <hi>Gadhi. Benascar.</hi>
-        </stage>
+        <stage>Gadhi. Benascar.</stage>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>leise auftretend.</hi>
-          </stage>
+          <stage>leise auftretend.</stage>
           <lg>
             <l>Fort sind sie Alle, und doch schien es mir,</l>
             <l>Als hört' ich ächzen –</l>
           </lg>
-          <stage>
-            <hi>Benascar erblickend und den Bogen spannend.</hi>
-          </stage>
+          <stage>Benascar erblickend und den Bogen spannend.</stage>
           <lg>
             <l>Ha! dort! dort – ein Kranker,</l>
             <l>Verwundet, hülflos und allein. – Hinab</l>
             <l>In deinen Abgrund, dunkler Geist der Rache!</l>
           </lg>
-          <stage>
-            <hi>Die Senne abspannend.</hi>
-          </stage>
+          <stage>Die Senne abspannend.</stage>
           <lg>
             <l>Hernieder perlenhelles Mitleid, lösche</l>
             <l><pb n="251"/> Mit Himmelsthau die Flammen dieser Brust.</l>
@@ -845,15 +800,11 @@
             <l>Fort! Ungeheuer! Fort!</l>
             <l>Nimm dies für deine gottverhaßte Brust!</l>
           </lg>
-          <stage>
-            <hi>Er schleudert einen Dolch nach ihm, der vor Gadhi niederfällt.</hi>
-          </stage>
+          <stage>Er schleudert einen Dolch nach ihm, der vor Gadhi niederfällt.</stage>
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>den Dolch emporhebend.</hi>
-          </stage>
+          <stage>den Dolch emporhebend.</stage>
           <lg>
             <l>Sieh, Herr! so schwach, so machtlos bist du, daß</l>
             <l>Des Hasses Waffe, die mich tödten sollte,</l>
@@ -873,9 +824,7 @@
             <l>Befürcht' es nicht, du sollst</l>
             <l>Mit meinem Blute nicht die Hand beflecken.</l>
           </lg>
-          <stage>
-            <hi>Ihm den Dolch zurückschleudernd.</hi>
-          </stage>
+          <stage>Ihm den Dolch zurückschleudernd.</stage>
           <lg>
             <l>Nimm deinen Stahl zurück und lohn' mit Mord</l>
             <l>Dem Wirth, der dir ein gastlich Dach gewährt.</l>
@@ -885,10 +834,8 @@
         </sp>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>der sich aufrichtete, den Dolch zu verbergen, sinkt nun in großer Erschöpfung auf
-              den Sitz zurück.</hi>
-          </stage>
+          <stage>der sich aufrichtete, den Dolch zu verbergen, sinkt nun in großer Erschöpfung auf
+            den Sitz zurück.</stage>
           <pb n="252"/>
         </sp>
         <sp who="#gadhi">
@@ -909,9 +856,7 @@
             <l>Höhnen?</l>
             <l>Dir helfen möcht' ich, wenn – –</l>
           </lg>
-          <stage>
-            <hi>Er hat sich Benascar genähert und seinen Arm ergriffen.</hi>
-          </stage>
+          <stage>Er hat sich Benascar genähert und seinen Arm ergriffen.</stage>
           <lg>
             <l>Ja, noch, ich seh' es,</l>
             <l>Gelobt sei Brama! noch ist Hülfe möglich;</l>
@@ -927,9 +872,7 @@
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <lg>
             <l>Nicht Edelmuth und Wohlthat nicht verkehrt</l>
             <l>Zu Taubensinn der Schlangen gift'ge Art.</l>
@@ -938,29 +881,21 @@
             <l>Doch folgen muß ich dem gewalt'gen Drang,</l>
             <l>Dem lauten Schlag des tiefbewegten Herzens.</l>
           </lg>
-          <stage>
-            <hi>Er eilt in die Kammer.</hi>
-          </stage>
+          <stage>Er eilt in die Kammer.</stage>
         </sp>
       </div>
       <div type="scene">
         <head><pb n="253"/> Fünfter Auftritt.</head>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>allein.</hi>
-          </stage>
+          <stage>allein.</stage>
           <l>Er geht, und –</l>
-          <stage>
-            <hi>Sich mühsam emporrichtend und in die Scene rufend.</hi>
-          </stage>
+          <stage>Sich mühsam emporrichtend und in die Scene rufend.</stage>
           <l>Auf! Gefährten!</l>
         </sp>
-        <sp who="#stimmen">
+        <sp who="#stimmen_5">
           <speaker>STIMMEN</speaker>
-          <stage>
-            <hi>von außen.</hi>
-          </stage>
+          <stage>von außen.</stage>
           <l>Herr!</l>
         </sp>
         <sp who="#benascar">
@@ -969,25 +904,17 @@
             <l>Seid wachsam,</l>
             <l>Gewärtig meines Rufs – mir droht Verrath!</l>
           </lg>
-          <stage>
-            <hi>Man hört zum Zeichen der Antwort Schwerter an einander schlagen.</hi>
-          </stage>
+          <stage>Man hört zum Zeichen der Antwort Schwerter an einander schlagen.</stage>
         </sp>
       </div>
       <div type="scene">
         <head>Sechster Auftritt.</head>
-        <stage>
-          <hi>Gadhi tritt ein, Maja führend, die verschleiert ist und ein Gefäß und Linnen in der
-            Hand trägt.</hi>
-        </stage>
-        <stage>
-          <hi>Benascar. Gadhi. Maja.</hi>
-        </stage>
+        <stage>Gadhi tritt ein, Maja führend, die verschleiert ist und ein Gefäß und Linnen in der
+          Hand trägt.</stage>
+        <stage>Benascar. Gadhi. Maja.</stage>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>zu Gadhi.</hi>
-          </stage>
+          <stage>zu Gadhi.</stage>
           <l>Was thatest du! wenn's jener Fremdling –</l>
         </sp>
         <sp who="#gadhi">
@@ -997,9 +924,7 @@
             <l>Mit gleichem Blitz der Himmel Schuld und Wohlthat?</l>
             <l>Ich will's nicht denken – nein – er wird's nicht sein.</l>
           </lg>
-          <stage>
-            <hi><pb n="254"/> Zu Benascar.</hi>
-          </stage>
+          <stage><pb n="254"/> Zu Benascar.</stage>
           <lg>
             <l>Sieh, Herr, mein Weib, das mit dem kund'gen Blick</l>
             <l>Das Kraut erspäht, das heilende, im Thale;</l>
@@ -1013,17 +938,10 @@
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <l>Er ist's! gerechter Brama! Fassung!</l>
-          <stage>
-            <hi>Sie ermannt sich und geht mit schnellen Schritten zu Benascar, der auf dem Sitze
-              ruht, indeß sie vor ihm </hi>
-          </stage>
-          <stage>
-            <hi>hinknieet und die Wunde verbindet.</hi>
-          </stage>
+          <stage>Sie ermannt sich und geht mit schnellen Schritten zu Benascar, der auf dem Sitze
+            ruht, indeß sie vor ihm hinknieet und die Wunde verbindet.</stage>
         </sp>
         <sp who="#benascar">
           <speaker>BENASCAR.</speaker>
@@ -1047,23 +965,17 @@
         </sp>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>zu Maja, die von sichtbarer Angst bewegt wird.</hi>
-          </stage>
+          <stage>zu Maja, die von sichtbarer Angst bewegt wird.</stage>
           <l>Was zitterst du? –</l>
           <pb n="255"/>
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>hat den Verband vollendet und will sich entfernen.</hi>
-          </stage>
+          <stage>hat den Verband vollendet und will sich entfernen.</stage>
         </sp>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>ihre Hand ergreifend.</hi>
-          </stage>
+          <stage>ihre Hand ergreifend.</stage>
           <lg>
             <l>Dein Balsam</l>
             <l>Kühlt lindernd mir den Schmerz; doch fühl' ich mich</l>
@@ -1072,9 +984,7 @@
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>will gehen.</hi>
-          </stage>
+          <stage>will gehen.</stage>
         </sp>
         <sp who="#benascar">
           <speaker>BENASCAR.</speaker>
@@ -1091,9 +1001,7 @@
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>ihm die Frucht entreißend.</hi>
-          </stage>
+          <stage>ihm die Frucht entreißend.</stage>
           <lg>
             <l>Unglücklicher, halt ein!</l>
             <l>Du bist des Todes! giftig ist die Frucht.</l>
@@ -1166,19 +1074,13 @@
             <l>Mir trotzest du, Verworf'ner, feiger Sklave!</l>
             <l>So nimm den Tod –</l>
           </lg>
-          <stage>
-            <hi>Er will den Dolch nach ihm schleudern.</hi>
-          </stage>
+          <stage>Er will den Dolch nach ihm schleudern.</stage>
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>sich zwischen Beide werfend.</hi>
-          </stage>
+          <stage>sich zwischen Beide werfend.</stage>
           <l>Halt' ein! mich schauen willst du?</l>
-          <stage>
-            <hi>Sich entschleiernd.</hi>
-          </stage>
+          <stage>Sich entschleiernd.</stage>
           <lg>
             <l>So schaue, Wüth'rich, die unsel'gen Züge;</l>
             <l>Und legte jetzt erbarmend die Natur</l>
@@ -1217,18 +1119,14 @@
             <l>Wie schön bist du! wie fühl' ich ganz zu dir</l>
             <l>Mit schwellendem Gefühl mich hingezogen!</l>
           </lg>
-          <stage>
-            <hi>Mit erwachendem Stolze.</hi>
-          </stage>
+          <stage>Mit erwachendem Stolze.</stage>
           <lg>
             <l>Doch war's nicht Haß, was du mir zugeschworen?</l>
             <l>Verschmähst du nicht des freien Mannes Triebe?</l>
             <l>So siege denn Gewalt, wenn nicht die Liebe!</l>
             <l>Zu meiner Sklavin hab ich dich erkoren!</l>
           </lg>
-          <stage>
-            <hi>In die Scene rufend.</hi>
-          </stage>
+          <stage>In die Scene rufend.</stage>
           <l>Herbei, Gefährten!</l>
         </sp>
         <sp who="#maja">
@@ -1237,9 +1135,7 @@
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>mit einem Blick gen Himmel.</hi>
-          </stage>
+          <stage>mit einem Blick gen Himmel.</stage>
           <lg>
             <l>Brama!</l>
             <l>Jetzt wär's zu donnern Zeit – und du bist stumm!</l>
@@ -1248,15 +1144,11 @@
       </div>
       <div type="scene">
         <head><pb n="259"/> Siebenter Auftritt.</head>
-        <stage>
-          <hi>Die Indianer. Die Vorigen.</hi>
-        </stage>
+        <stage>Die Indianer. Die Vorigen.</stage>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>zu den eintretenden Indianern, die sich beim Anblick des Paria nicht zu nähern
-              wagen.</hi>
-          </stage>
+          <stage>zu den eintretenden Indianern, die sich beim Anblick des Paria nicht zu nähern
+            wagen.</stage>
           <l>Ergreift dies Weib!</l>
         </sp>
         <sp who="#erster_indianer">
@@ -1272,23 +1164,17 @@
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>zu Maja.</hi>
-          </stage>
+          <stage>zu Maja.</stage>
           <l>Umklamm're dich nur fester, fester noch.</l>
         </sp>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>zu den Indianern, indem er Maja aus ihres Gatten Armen reißt.</hi>
-          </stage>
+          <stage>zu den Indianern, indem er Maja aus ihres Gatten Armen reißt.</stage>
           <l>Was zögert ihr?</l>
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>vor ihm niederstürzend.</hi>
-          </stage>
+          <stage>vor ihm niederstürzend.</stage>
           <lg>
             <l>Barmherzigkeit! ich flehe;</l>
             <l>Ich lieg' im Staub vor meines Glückes Räuber,</l>
@@ -1316,9 +1202,7 @@
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>zu Gadhi.</hi>
-          </stage>
+          <stage>zu Gadhi.</stage>
           <l>Was willst du thun?</l>
         </sp>
         <sp who="#gadhi">
@@ -1353,9 +1237,7 @@
         <sp who="#gadhi">
           <speaker>GADHI.</speaker>
           <l>Ihr seht dies Weib –</l>
-          <stage>
-            <hi>Von Rührung überwältigt.</hi>
-          </stage>
+          <stage>Von Rührung überwältigt.</stage>
           <lg>
             <l>O komm an dieses Herz!</l>
             <l>Vergönnt mir nur noch einmal, sie zu drücken</l>
@@ -1372,9 +1254,7 @@
             <l>Mein Weib! – einst hatt' ich Muth, dich zu erretten;</l>
             <l>Dich zu verlieren, fühl' ich mich zu schwach.</l>
           </lg>
-          <stage>
-            <hi>Gefaßter zu Benascar.</hi>
-          </stage>
+          <stage>Gefaßter zu Benascar.</stage>
           <lg>
             <l>Verflucht ist mein Geschlecht. Wo sich das Leben</l>
             <l>In friedlicher Gemeinschaft fröhlich eint,</l>
@@ -1498,9 +1378,7 @@
             <l>Ruft die Unglückliche – »und ich, Geliebter,</l>
             <l>Ich sterbe mit ihm!«</l>
           </lg>
-          <stage>
-            <hi>Zu Benascar.</hi>
-          </stage>
+          <stage>Zu Benascar.</stage>
           <lg>
             <l>Zücke deinen Dolch,</l>
             <l>Zeig mir den Tod in jeglicher Gestalt;</l>
@@ -1566,9 +1444,7 @@
         </sp>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>zu Gadhi.</hi>
-          </stage>
+          <stage>zu Gadhi.</stage>
           <lg>
             <l>Nenn' ihn! soll ich nicht eitel Truggespinnst</l>
             <l>Die list'ge Rede halten.</l>
@@ -1584,27 +1460,19 @@
         </sp>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>stößt einen Schrei des Entsetzens aus.</hi>
-          </stage>
+          <stage>stößt einen Schrei des Entsetzens aus.</stage>
         </sp>
         <sp who="#die_indianer">
           <speaker>DIE INDIANER</speaker>
-          <stage>
-            <hi>wenden sich bestürzt ab.</hi>
-          </stage>
+          <stage>wenden sich bestürzt ab.</stage>
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>verhüllt sich.</hi>
-          </stage>
+          <stage>verhüllt sich.</stage>
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>zu Benascar.</hi>
-          </stage>
+          <stage>zu Benascar.</stage>
           <lg>
             <l>So groß einst – jetzt so elend, und du willst</l>
             <l>Sie tiefer stürzen in unnennbar Leid?</l>
@@ -1618,9 +1486,7 @@
             <l>Gerührt? – es ist die Wuth,</l>
             <l>Die auf den Lippen mir das Wort erstarrt.</l>
           </lg>
-          <stage>
-            <hi>Zu Maja.</hi>
-          </stage>
+          <stage>Zu Maja.</stage>
           <lg>
             <l>Verruchte, rede: lebt denn Keiner dir,</l>
             <l><pb n="268"/> Der Rechenschaft von deinem Handeln fordern</l>
@@ -1659,15 +1525,11 @@
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>stürzt zu Boden.</hi>
-          </stage>
+          <stage>stürzt zu Boden.</stage>
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>nach einer Pause zu Benascar.</hi>
-          </stage>
+          <stage>nach einer Pause zu Benascar.</stage>
           <l>Herr, ich bin schuldig, tödte mich!</l>
         </sp>
         <sp who="#benascar">
@@ -1685,33 +1547,25 @@
             <l>Der Rath ist gut,</l>
             <l>Er sei dein letztes Wort!</l>
           </lg>
-          <stage>
-            <hi>Indem er mit gezücktem Dolche auf Gadhi eindringen will, erwacht Maja.</hi>
-          </stage>
+          <stage>Indem er mit gezücktem Dolche auf Gadhi eindringen will, erwacht Maja.</stage>
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>abwesend, starr auf Benascar blickend.</hi>
-          </stage>
+          <stage>abwesend, starr auf Benascar blickend.</stage>
           <lg>
             <l>Wo bin ich? Weh'!</l>
             <l>Die Gräber geben ihren Raub zurück,</l>
             <l>Mit bleichem Antlitz, zürnend naht mein Vater,</l>
             <l>Das ist sein Geist!</l>
           </lg>
-          <stage>
-            <hi>Mit zurückkehrendem Bewußtsein.</hi>
-          </stage>
+          <stage>Mit zurückkehrendem Bewußtsein.</stage>
           <lg>
             <l>Mein Bruder – ja – mein Bruder!</l>
             <l>O wie so süß der ungewohnte Klang</l>
             <l>Des theuren Namens mir zum Herzen dringt!</l>
             <l>Mein Bruder, du wirst menschlich sein –</l>
           </lg>
-          <stage>
-            <hi>Den Dolch in seiner Hand erblickend.</hi>
-          </stage>
+          <stage>Den Dolch in seiner Hand erblickend.</stage>
           <lg>
             <l>Weh' mir!</l>
             <l>Dein Herz ist Eisen, deine Blicke Mord,</l>
@@ -1720,9 +1574,7 @@
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>zu Benascar.</hi>
-          </stage>
+          <stage>zu Benascar.</stage>
           <lg>
             <l>Was zögerst du?</l>
             <l>Ich bin bereit zu sterben.</l>
@@ -1738,9 +1590,7 @@
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>sich zwischen Beide werfend.</hi>
-          </stage>
+          <stage>sich zwischen Beide werfend.</stage>
           <lg>
             <l>Entsetzlicher!</l>
             <l>Halt' ein! was willst du thun?</l>
@@ -1787,9 +1637,7 @@
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>zu Benascar.</hi>
-          </stage>
+          <stage>zu Benascar.</stage>
           <lg>
             <l>Sie ras't.</l>
             <l>O höre sie nicht an! Mein ist der Frevel.</l>
@@ -1800,15 +1648,11 @@
             <l>Entlade sich auf dieses Haupt. Sei gnädig</l>
             <l>Und tödte rasch!</l>
           </lg>
-          <stage>
-            <hi>Er wirft sich vor ihm nieder.</hi>
-          </stage>
+          <stage>Er wirft sich vor ihm nieder.</stage>
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>sich ebenfalls vor Benascar hinwerfend.</hi>
-          </stage>
+          <stage>sich ebenfalls vor Benascar hinwerfend.</stage>
           <lg>
             <l>Du wirst barmherzig sein</l>
             <l>Und nicht die einz'ge Gunst der Schwester weigern.</l>
@@ -1822,9 +1666,7 @@
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>einfallend.</hi>
-          </stage>
+          <stage>einfallend.</stage>
           <l>Wähle mich zum Opfer.</l>
         </sp>
         <sp who="#maja">
@@ -1835,9 +1677,7 @@
         <sp who="#benascar">
           <speaker>BENASCAR.</speaker>
           <l>Beide seid ihr's.</l>
-          <stage>
-            <hi>Zu Maja.</hi>
-          </stage>
+          <stage>Zu Maja.</stage>
           <lg>
             <l>Drängst du dich zu dem Tod der Schande? Lebe,</l>
             <l>Ein stilles Leben reuevoller Buße,</l>
@@ -1846,9 +1686,7 @@
             <l>Das auf für dich in diesem Busen flammte,</l>
             <l>Seit ich zum ersten Mal dich sah.</l>
           </lg>
-          <stage>
-            <hi>Zu Gadhi.</hi>
-          </stage>
+          <stage>Zu Gadhi.</stage>
           <lg>
             <l>Du stirbst!</l>
             <l>Und wie sich hier vor den Gefährten frei</l>
@@ -1856,23 +1694,18 @@
             <l>So will ich auch, daß sichtbar jedem Auge</l>
             <l>Das Schreckensbeispiel meiner Rache sei.</l>
           </lg>
-          <stage>
-            <hi>Zu seinen Gefährten.</hi>
-          </stage>
+          <stage>Zu seinen Gefährten.</stage>
           <lg>
             <l>Nicht mich allein, Gott selbst hat er geschändet,</l>
             <l>Und wenn er fällt, und wenn er blutig endet,</l>
             <l>Sei's am Altare durch des Priesters Beil.</l>
           </lg>
-          <stage>
-            <hi>Gadhi und Maja sinken einander in die Arme und halten sich fest umschlungen.</hi>
-          </stage>
+          <stage>Gadhi und Maja sinken einander in die Arme und halten sich fest
+            umschlungen.</stage>
         </sp>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>zu den Indianern.</hi>
-          </stage>
+          <stage>zu den Indianern.</stage>
           <lg>
             <l>Der Morgen graut. Ihr eilt hinweg und sucht</l>
             <l>Den Diener Brama's in dem nahen Tempel.</l>
@@ -1882,16 +1715,12 @@
         </sp>
         <sp who="#die_indianer">
           <speaker>DIE INDIANER</speaker>
-          <stage>
-            <hi>gehen ab.</hi>
-          </stage>
+          <stage>gehen ab.</stage>
           <pb n="273"/>
         </sp>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <lg>
             <l>Fassung, Herz!</l>
             <l>Er ist gekämpft, der schwere Kampf der Pflicht.</l>
@@ -1900,14 +1729,10 @@
       </div>
       <div type="scene">
         <head>Achter Auftritt.</head>
-        <stage>
-          <hi>Gadhi. Maja. Benascar.</hi>
-        </stage>
+        <stage>Gadhi. Maja. Benascar.</stage>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>zu Maja.</hi>
-          </stage>
+          <stage>zu Maja.</stage>
           <l>Unglückliche!</l>
         </sp>
         <sp who="#maja">
@@ -1946,9 +1771,7 @@
             <l>Nein, er lebe!</l>
             <l>Ich soll ja leben; gönne mir den Trost.</l>
           </lg>
-          <stage>
-            <hi>Zu Benascar.</hi>
-          </stage>
+          <stage>Zu Benascar.</stage>
           <lg>
             <l>Dort schläft das Kind den sorgenlosen Schlummer</l>
             <l>Und ahnet nicht, daß um die blüh'nde Stirne</l>
@@ -1975,17 +1798,13 @@
         </sp>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>in die Kammer eilend.</hi>
-          </stage>
+          <stage>in die Kammer eilend.</stage>
           <l>Ich will ihn retten.</l>
         </sp>
       </div>
       <div type="scene">
         <head>Neunter Auftritt.</head>
-        <stage>
-          <hi>Vorige, ohne Benascar.</hi>
-        </stage>
+        <stage>Vorige, ohne Benascar.</stage>
         <sp who="#gadhi">
           <speaker>GADHI.</speaker>
           <l>Was thatest du?</l>
@@ -1993,14 +1812,10 @@
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>die sich mit der Freude eines gelungenen Entwurfs aus ihres Gatten Arm
-              gerissen.</hi>
-          </stage>
+          <stage>die sich mit der Freude eines gelungenen Entwurfs aus ihres Gatten Arm
+            gerissen.</stage>
           <l>Was mir der Himmel eingab.</l>
-          <stage>
-            <hi>Die brennende Fackel vom Baumstamme reißend.</hi>
-          </stage>
+          <stage>Die brennende Fackel vom Baumstamme reißend.</stage>
           <lg>
             <l>Die Fackel schleudern will ich in die Kammer,</l>
             <l>Und Vater, Mutter, Kind und Feind verderben.</l>
@@ -2008,16 +1823,12 @@
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>ihr die Fackel entreißend.</hi>
-          </stage>
+          <stage>ihr die Fackel entreißend.</stage>
           <lg>
             <l>Weh' dir! das ist des Unglücks höchster Jammer,</l>
             <l>Daß es zur Rettung das Verbrechen ruft.</l>
           </lg>
-          <stage>
-            <hi>Die Fackel umstürzend.</hi>
-          </stage>
+          <stage>Die Fackel umstürzend.</stage>
           <lg>
             <l>Stirb, Flamme! Wie ich lebte, will ich sterben,</l>
             <l>Versöhnt und rein geh' ich hinab zur Gruft.</l>
@@ -2026,28 +1837,20 @@
         <sp who="#maja">
           <speaker>MAJA.</speaker>
           <l>Großherziger! Gewalt'ger!</l>
-          <stage>
-            <hi>Die giftige Frucht am Boden erblickend; für sich.</hi>
-          </stage>
+          <stage>Die giftige Frucht am Boden erblickend; für sich.</stage>
           <lg>
             <l>Dank dir, Himmel!</l>
             <l>So bleibt ein and'res Mittel, wir sind frei.</l>
           </lg>
-          <stage>
-            <hi>Sie verbirgt die Frucht, ohne daß es Gadhi bemerkt.</hi>
-          </stage>
+          <stage>Sie verbirgt die Frucht, ohne daß es Gadhi bemerkt.</stage>
         </sp>
       </div>
       <div type="scene">
         <head>Zehnter Auftritt.</head>
-        <stage>
-          <hi>Vorige. Das Kind. Benascar.</hi>
-        </stage>
+        <stage>Vorige. Das Kind. Benascar.</stage>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>von innen.</hi>
-          </stage>
+          <stage>von innen.</stage>
           <l>Wer löscht das Licht?</l>
           <pb n="276"/>
         </sp>
@@ -2060,9 +1863,7 @@
         </sp>
         <sp who="#das_kind">
           <speaker>DAS KIND</speaker>
-          <stage>
-            <hi>vor Benascar fliehend.</hi>
-          </stage>
+          <stage>vor Benascar fliehend.</stage>
           <l>O! Vater! Mutter!</l>
         </sp>
         <sp who="#maja">
@@ -2082,9 +1883,7 @@
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>den Knaben fest umklammernd.</hi>
-          </stage>
+          <stage>den Knaben fest umklammernd.</stage>
           <l>Weh' mir!</l>
         </sp>
         <sp who="#das_kind">
@@ -2102,16 +1901,12 @@
         </sp>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>hat sich indessen entfernt, und kehrt nun zurück.</hi>
-          </stage>
+          <stage>hat sich indessen entfernt, und kehrt nun zurück.</stage>
           <pb n="277"/>
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>ihn erblickend.</hi>
-          </stage>
+          <stage>ihn erblickend.</stage>
           <l>Er kommt! er kommt! er will ihn mir entreißen.</l>
         </sp>
         <sp who="#benascar">
@@ -2123,36 +1918,26 @@
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>niedersinkend und das Kind an sich pressend.</hi>
-          </stage>
+          <stage>niedersinkend und das Kind an sich pressend.</stage>
           <l>Meine Kraft verläßt mich.</l>
         </sp>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>ihr den Knaben entreißend.</hi>
-          </stage>
+          <stage>ihr den Knaben entreißend.</stage>
           <l>So tödtest du dein Kind.</l>
         </sp>
         <sp who="#maja">
           <speaker>MAJA.</speaker>
           <l>Mein Kind!</l>
-          <stage>
-            <hi>Benascar mit dem Knaben ab.</hi>
-          </stage>
+          <stage>Benascar mit dem Knaben ab.</stage>
         </sp>
       </div>
       <div type="scene">
         <head>Elfter Auftritt.</head>
-        <stage>
-          <hi>Gadhi. Maja.</hi>
-        </stage>
+        <stage>Gadhi. Maja.</stage>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>aufspringend.</hi>
-          </stage>
+          <stage>aufspringend.</stage>
           <l>Jetzt Muth!</l>
         </sp>
         <sp who="#gadhi">
@@ -2161,9 +1946,7 @@
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>ihm die Frucht zeigend.</hi>
-          </stage>
+          <stage>ihm die Frucht zeigend.</stage>
           <lg>
             <l>Sieh, Gadhi, diese Frucht:</l>
             <l><pb n="278"/> Entrissen hab' ich sie dem Wütherich,</l>
@@ -2196,18 +1979,14 @@
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>hat den Saft der Frucht in einen Becher gedrückt; ihn emporhebend.</hi>
-          </stage>
+          <stage>hat den Saft der Frucht in einen Becher gedrückt; ihn emporhebend.</stage>
           <lg>
             <l>Willkommen, Tod der Wonne! nur die Schuld</l>
             <l>Erbleicht, wenn sich die dunkle Stunde naht.</l>
             <l>Mit hellem Blick und muthvoll stirbt die Treue.</l>
             <l>Auf Wiederseh'n, mein Freund!</l>
           </lg>
-          <stage>
-            <hi>Sie trinkt.</hi>
-          </stage>
+          <stage>Sie trinkt.</stage>
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI.</speaker>
@@ -2216,27 +1995,19 @@
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>ihm den Becher reichend.</hi>
-          </stage>
+          <stage>ihm den Becher reichend.</stage>
           <l>Und dies für dich.</l>
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>leert den Becher.</hi>
-          </stage>
+          <stage>leert den Becher.</stage>
           <l>Dank!</l>
-          <stage>
-            <hi>Sie sinken einander in die Arme.</hi>
-          </stage>
+          <stage>Sie sinken einander in die Arme.</stage>
         </sp>
       </div>
       <div type="scene">
         <head>Zwölfter Auftritt.</head>
-        <stage>
-          <hi>Vorige. Benascar.</hi>
-        </stage>
+        <stage>Vorige. Benascar.</stage>
         <sp who="#benascar">
           <speaker>BENASCAR.</speaker>
           <l>Geborgen ist der Knab' –</l>
@@ -2285,9 +2056,7 @@
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>droht zu sinken.</hi>
-          </stage>
+          <stage>droht zu sinken.</stage>
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI.</speaker>
@@ -2303,9 +2072,7 @@
         </sp>
         <sp who="#maja">
           <speaker>MAJA</speaker>
-          <stage>
-            <hi>zu Benascar.</hi>
-          </stage>
+          <stage>zu Benascar.</stage>
           <lg>
             <l>Was starrst du so? Es war dein eigner Wille.</l>
             <l><pb n="281"/> Du wähnst, ich liebte, und ich könnte nicht</l>
@@ -2330,17 +2097,13 @@
         </sp>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>zu Gadhi.</hi>
-          </stage>
+          <stage>zu Gadhi.</stage>
           <l>Ha, Ungeheuer! das hast du gethan!</l>
         </sp>
         <sp who="#maja">
           <speaker>MAJA.</speaker>
           <l>Ich selbst – ich selbst – oh, wie das schmerzt – wie's brennt!</l>
-          <stage>
-            <hi>Schleier und Stirnband abreißend.</hi>
-          </stage>
+          <stage>Schleier und Stirnband abreißend.</stage>
           <lg>
             <l>Hinab den ird'schen Tand – ah! Freiheit! Luft!</l>
             <l>Das Leben ist ein Feuermeer und sprengt</l>
@@ -2349,20 +2112,17 @@
             <l>Mir wird die Welt zu eng.</l>
           </lg>
         </sp>
-        <sp who="#indianer">
+        <sp who="#die_indianer">
           <speaker>INDIANER</speaker>
-          <stage>
-            <hi>in die Hütte stürzend.</hi>
-          </stage>
+          <stage>in die Hütte stürzend.</stage>
           <lg>
             <l>Nieder mit des Paria Hütte!</l>
             <l><pb n="282"/> Nieder mit dem Paria selbst!</l>
             <l>Heil Brama! Heil!</l>
           </lg>
-          <stage>
-            <hi>Die Hütte wird niedergerissen. Man erblickt ein reizendes Thal. Morgenröthe. Aus dem
-              Hintergrunde naht langsam, unter rauschender Musik, der Zug mit dem Braminen.</hi>
-          </stage>
+          <stage>Die Hütte wird niedergerissen. Man erblickt ein reizendes Thal. Morgenröthe. Aus
+            dem Hintergrunde naht langsam, unter rauschender Musik, der Zug mit dem
+            Braminen.</stage>
         </sp>
         <sp who="#maja">
           <speaker>MAJA.</speaker>
@@ -2386,9 +2146,7 @@
             <l>Kein Schmerz – Entzücken – Freiheit – Licht –</l>
             <l>Mein Gadhi – folge mir – –</l>
           </lg>
-          <stage>
-            <hi>Sie stirbt.</hi>
-          </stage>
+          <stage>Sie stirbt.</stage>
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI.</speaker>
@@ -2404,24 +2162,18 @@
         </sp>
         <sp who="#benascar">
           <speaker>BENASCAR</speaker>
-          <stage>
-            <hi>an Maja's Leiche, von seinem Gefühl überwältigt, ihm die Hand reichend.</hi>
-          </stage>
+          <stage>an Maja's Leiche, von seinem Gefühl überwältigt, ihm die Hand reichend.</stage>
           <l>Ich schütz' es dir.</l>
         </sp>
         <sp who="#gadhi">
           <speaker>GADHI</speaker>
-          <stage>
-            <hi>heftet den Blick starr auf ihn und stirbt.</hi>
-          </stage>
+          <stage>heftet den Blick starr auf ihn und stirbt.</stage>
         </sp>
       </div>
       <div type="scene">
         <head>Dreizehnter Auftritt.</head>
-        <stage>
-          <hi>Vorige. Der Zug mit dem Braminen, der auf einem Palankin getragen wird, ist in den
-            Vordergrund gekommen.</hi>
-        </stage>
+        <stage>Vorige. Der Zug mit dem Braminen, der auf einem Palankin getragen wird, ist in den
+          Vordergrund gekommen.</stage>
         <sp who="#bramine">
           <speaker>BRAMINE.</speaker>
           <l>Wo ist das Opfer?</l>
