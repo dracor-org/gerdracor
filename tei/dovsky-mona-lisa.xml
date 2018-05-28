@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Mona Lisa</title>
+        <title type="main">Mona Lisa</title>
+        <title type="sub">Oper in zwei Akten</title>
         <author key="pnd:12686022X">Dovsky, Beatrice</author>
       </titleStmt>
       <publicationStmt>
@@ -42,64 +43,63 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="der_laienbruder">
-            <persName>DER LAIENBRUDER</persName>
-            <persName xml:id="der_bruder">DER BRUDER</persName>
+          <person xml:id="der_laienbruder" sex="MALE">
+            <persName>Der Laienbruder</persName>
+            <persName type="variant">Der Bruder</persName>
           </person>
-          <person xml:id="die_frau">
-            <persName>DIE FRAU</persName>
+          <person xml:id="die_frau" sex="FEMALE">
+            <persName>Die Frau</persName>
           </person>
-          <person xml:id="der_fremde">
-            <persName>DER FREMDE</persName>
+          <person xml:id="der_fremde" sex="MALE">
+            <persName>Der Fremde</persName>
           </person>
-          <person xml:id="pietro">
-            <persName>PIETRO</persName>
+          <person xml:id="pietro" sex="MALE">
+            <persName>Pietro</persName>
           </person>
-          <person xml:id="sandro">
-            <persName>SANDRO</persName>
+          <person xml:id="sandro" sex="MALE">
+            <persName>Sandro</persName>
           </person>
-          <person xml:id="masolino">
-            <persName>MASOLINO</persName>
+          <person xml:id="masolino" sex="MALE">
+            <persName>Masolino</persName>
           </person>
-          <person xml:id="alessio">
-            <persName>ALESSIO</persName>
+          <person xml:id="alessio" sex="MALE">
+            <persName>Alessio</persName>
           </person>
-          <person xml:id="arrigo">
-            <persName>ARRIGO</persName>
-            <persName xml:id="arrigos_stimme">ARRIGOS STIMME</persName>
+          <person xml:id="arrigo" sex="MALE">
+            <persName>Arrigo</persName>
           </person>
-          <person xml:id="francesco">
-            <persName>FRANCESCO</persName>
+          <person xml:id="francesco" sex="MALE">
+            <persName>Francesco</persName>
           </person>
-          <person xml:id="dianora">
-            <persName>DIANORA</persName>
+          <person xml:id="dianora" sex="FEMALE">
+            <persName>Dianora</persName>
           </person>
-          <person xml:id="chor">
-            <persName>CHOR</persName>
+          <personGrp xml:id="chor" sex="UNKNOWN">
+            <name>Chor</name>
+          </personGrp>
+          <personGrp xml:id="doppelchor_marienchor" sex="UNKNOWN">
+            <name>Doppelchor (Marienchor)</name>
+          </personGrp>
+          <personGrp xml:id="venus-chor" sex="UNKNOWN">
+            <name>Venus-Chor</name>
+          </personGrp>
+          <personGrp xml:id="chor_der_moenche" sex="MALE">
+            <name>Chor der Mönche</name>
+          </personGrp>
+          <personGrp xml:id="stimmen_des_volkes" sex="UNKNOWN">
+            <name>Stimmen des Volkes</name>
+          </personGrp>
+          <person xml:id="ginevra" sex="FEMALE">
+            <persName>Ginevra</persName>
           </person>
-          <person xml:id="doppelchor_marienchor">
-            <persName>DOPPELCHOR (MARIENCHOR)</persName>
+          <person xml:id="lisa" sex="FEMALE">
+            <persName>Lisa</persName>
           </person>
-          <person xml:id="chor_der_mönche">
-            <persName>CHOR DER MÖNCHE</persName>
+          <person xml:id="giovanni" sex="MALE">
+            <persName>Giovanni</persName>
           </person>
-          <person xml:id="stimmen_des_volkes">
-            <persName>STIMMEN DES VOLKES</persName>
-          </person>
-          <person xml:id="ginevra">
-            <persName>GINEVRA</persName>
-            <persName xml:id="stimme_der_ginevra">STIMME DER GINEVRA</persName>
-          </person>
-          <person xml:id="lisa">
-            <persName>LISA</persName>
-          </person>
-          <person xml:id="giovanni">
-            <persName>GIOVANNI</persName>
-            <persName xml:id="giovannis_stimme">GIOVANNIS STIMME</persName>
-          </person>
-          <person xml:id="piccarda">
-            <persName>PICCARDA</persName>
-            <persName xml:id="piccardas_stimme">PICCARDAS STIMME</persName>
+          <person xml:id="piccarda" sex="FEMALE">
+            <persName>Piccarda</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -114,6 +114,7 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
+        <change who="#ff" when="2018-05-28">work on IDs; add gender info; formalities</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -124,18 +125,16 @@
         <head>Mona Lisa</head>
         <head>Oper in zwei Akten</head>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head><pb n="1"/> Personen</head>
-          <head><hi>(der ersten und letzen Szene):</hi></head>
+          <head><emph>(der ersten und letzen Szene):</emph></head>
           <castItem>Ein Fremder, (Bariton)</castItem>
           <castItem>Eine Frau, (Sopran)</castItem>
           <castItem>Ein Laienbruder, (Tenor)</castItem>
         </castList>
         <castList>
-          <head><hi>(der übrigen Szenen):</hi></head>
+          <head><emph>(der übrigen Szenen):</emph></head>
           <castItem>Messer Francesco del Giocondo, (Bariton)</castItem>
           <castItem>Messer Pietro Tumoni, (Baß)</castItem>
           <castItem>Messer Arrigo Oldofredi, (Tenor)</castItem>
@@ -152,6 +151,12 @@
             Savonarola. Diener</castItem>
         </castList>
       </div>
+      <set>
+        <p>Die Handlung spielt zu Florenz. Die erste und letzte Szene in der Gegenwart, die anderen
+          zu Ende des 15. Jahrhunderts.</p>
+      </set>
+    </front>
+    <body>
       <div type="act">
         <head>Erster Akt.</head>
         <sp who="#der_laienbruder">
@@ -174,7 +179,7 @@
           <speaker>DIE FRAU.</speaker>
           <l>Ein junges Weib?</l>
         </sp>
-        <sp who="#der_bruder">
+        <sp who="#der_laienbruder">
           <speaker>DER BRUDER.</speaker>
           <lg>
             <l>Madonna Fiordalisa Gherardini,</l>
@@ -233,7 +238,7 @@
             <pb n="3"/>
           </lg>
         </sp>
-        <sp who="#der_bruder">
+        <sp who="#der_laienbruder">
           <speaker>DER BRUDER.</speaker>
           <l>Noch wen'ger ich – – –</l>
         </sp>
@@ -252,7 +257,7 @@
           <speaker>DIE FRAU.</speaker>
           <l>Beneidet? Ach ...</l>
         </sp>
-        <sp who="#der_bruder">
+        <sp who="#der_laienbruder">
           <speaker>DER BRUDER.</speaker>
           <l>Perlen bedeuten Tränen, sagt das Volk.</l>
         </sp>
@@ -268,7 +273,7 @@
           <speaker>DER FREMDE.</speaker>
           <l>Zeigt nun den Saal!</l>
         </sp>
-        <sp who="#der_bruder">
+        <sp who="#der_laienbruder">
           <speaker>DER BRUDER.</speaker>
           <l>Ja, dort ist geschehen, was die Chronik meldet ...</l>
         </sp>
@@ -276,7 +281,7 @@
           <speaker>DIE FRAU.</speaker>
           <l>Von Mona Lisa?</l>
         </sp>
-        <sp who="#der_bruder">
+        <sp who="#der_laienbruder">
           <speaker>DER BRUDER.</speaker>
           <lg>
             <l>Das Drama der Faschingsnacht,</l>
@@ -297,11 +302,11 @@
             <l>Die eines Mannes Sinn zu denken kaum vermag.</l>
             <l>Lieb' macht sie stark – und Haß unüberwindlich!</l>
             <l>Des Weibes Herz, es birgt in seiner Tiefe</l>
-            <l>Die Lüsternheit der <hi>Eva</hi> nach verbot'ner Frucht;</l>
-            <l>Der <hi>Magdalena</hi> sündhaft-buhlerischen Trieb</l>
+            <l>Die Lüsternheit der <emph>Eva</emph> nach verbot'ner Frucht;</l>
+            <l>Der <emph>Magdalena</emph> sündhaft-buhlerischen Trieb</l>
             <l>Und ihre wunderbare Kraft der Reue,</l>
             <l>Den Blut- und Rachedurst der Mörderin Johannis,</l>
-            <l>Und der <hi>Maria</hi> Reinheit, Milde und Erbarmnis!</l>
+            <l>Und der <emph>Maria</emph> Reinheit, Milde und Erbarmnis!</l>
             <l>Je nachdem des Lebens Würfel rollen,</l>
             <l>Verwandelt sich das rätselhafte Wesen »Weib«.</l>
           </lg>
@@ -311,7 +316,7 @@
           <l>Seid ihr so erfahren?</l>
           <pb n="4"/>
         </sp>
-        <sp who="#der_bruder">
+        <sp who="#der_laienbruder">
           <speaker>DER BRUDER.</speaker>
           <lg>
             <l>Herr, ich zitiere!</l>
@@ -325,7 +330,7 @@
             <l>Die tausend Möglichkeiten ...</l>
           </lg>
         </sp>
-        <sp who="#der_bruder">
+        <sp who="#der_laienbruder">
           <speaker>DER BRUDER.</speaker>
           <lg>
             <l>Der Medicäer toller Carneval</l>
@@ -373,7 +378,7 @@
             <l>Das »Morgen« ist ja ungewiß!</l>
           </lg>
         </sp>
-        <sp who="#die_anderen">
+        <sp who="#pietro #sandro #masolino #alessio">
           <speaker>DIE ANDEREN.</speaker>
           <lg>
             <l>Wer fröhlich sein will, sei es heut',</l>
@@ -394,7 +399,7 @@
             <pb n="5"/>
           </lg>
         </sp>
-        <sp who="#die_andern">
+        <sp who="#pietro #sandro #masolino #alessio">
           <speaker>DIE ANDERN.</speaker>
           <lg>
             <l>Jugend ist so hold und süß,</l>
@@ -479,7 +484,7 @@
           <speaker>ARRIGO.</speaker>
           <l>Salve, Venus victrix, Genevra!</l>
         </sp>
-        <sp who="#doppelchor_(marienchor)">
+        <sp who="#doppelchor_marienchor">
           <speaker>DOPPELCHOR (MARIENCHOR).</speaker>
           <lg>
             <l>Jungfrau Maria, mild und süß,</l>
@@ -494,7 +499,11 @@
             <l>Bitt' für uns bei deinem Sohne;</l>
             <l>Leit' uns auf der Buße Pfade</l>
             <l>Hin zu Gottes gold'nem Throne!</l>
-            <l>VENUS-CHOR.</l>
+          </lg>
+        </sp>
+        <sp who="#venus-chor">
+          <speaker>VENUS-CHOR.</speaker>
+          <lg>
             <l>Huldin du, blühenden Angesichts,</l>
             <l>Von Zaubern und Wundern umfangen,</l>
             <l>Unerschöpfliche Quelle des Lichts,</l>
@@ -549,7 +558,7 @@
           <speaker>ARRIGO.</speaker>
           <l>Ihr Prior dort in weißer Kutte!</l>
         </sp>
-        <sp who="#chor_der_mönche">
+        <sp who="#chor_der_moenche">
           <speaker>CHOR DER MÖNCHE.</speaker>
           <lg>
             <l>Fuge, Zion, Fuge</l>
@@ -563,7 +572,7 @@
           <speaker>PIETRO.</speaker>
           <l>Savonarola!</l>
         </sp>
-        <sp who="#alle">
+        <sp who="#sandro #masolino #alessio #arrigo #francesco #dianora">
           <speaker>ALLE.</speaker>
           <l>Savonarola!</l>
         </sp>
@@ -580,7 +589,7 @@
           <l>Der Gifthauch des Zeloten!</l>
           <pb n="7"/>
         </sp>
-        <sp who="#chor_der_mönche">
+        <sp who="#chor_der_moenche">
           <speaker>CHOR DER MÖNCHE.</speaker>
           <lg>
             <l>Florenz, du feile Dirne!</l>
@@ -620,7 +629,7 @@
           <speaker>PIETRO.</speaker>
           <l>Er nimmt es ernst mit seinem Amt!</l>
         </sp>
-        <sp who="#stimme_der_ginevra">
+        <sp who="#ginevra">
           <speaker>STIMME DER GINEVRA.</speaker>
           <l>Ah ...! Misericordia!</l>
         </sp>
@@ -701,7 +710,7 @@
           <speaker>PIETRO.</speaker>
           <l>Gott zum Gruße, Kind.</l>
         </sp>
-        <sp who="#die_andern">
+        <sp who="#sandro #masolino #alessio #arrigo #francesco">
           <speaker>DIE ANDERN.</speaker>
           <l>Signorina, schlafet wohl!</l>
         </sp>
@@ -753,8 +762,8 @@
           <speaker>PIETRO.</speaker>
           <l>Als Stimulans laß ich sein Fluchen mir gefallen!</l>
         </sp>
-        <sp who="#die_andere">
-          <speaker>DIE ANDERE.</speaker>
+        <sp who="#sandro #masolino #alessio #arrigo #francesco">
+          <speaker>DIE ANDEREN.</speaker>
           <l>Wenn eines weichen Armes ihr bedürft –</l>
         </sp>
         <sp who="#ginevra">
@@ -1003,8 +1012,7 @@
         </sp>
         <sp who="#francesco">
           <speaker>FRANCESCO.</speaker>
-          <l>Es ist <hi>darum.</hi>
-          </l>
+          <l>Es ist <emph>darum</emph>.</l>
         </sp>
         <sp who="#pietro">
           <speaker>PIETRO.</speaker>
@@ -1659,7 +1667,7 @@
             <l>Den Zwang, den verhaßten, ende ich!</l>
           </lg>
         </sp>
-        <sp who="#beide">
+        <sp who="#lisa #giovanni">
           <speaker>BEIDE.</speaker>
           <lg>
             <l>Auf einsamen Wegen</l>
@@ -1906,8 +1914,7 @@
         <sp who="#francesco">
           <speaker>FRANCESCO.</speaker>
           <lg>
-            <l>Nein, nein, er ist es <hi>nicht,</hi>
-            </l>
+            <l>Nein, nein, er ist es <emph>nicht</emph>,</l>
             <l>Die Klinke schnappt' ich einfach ein,</l>
             <l>Und jeder könnte da heraus, herein.</l>
             <pb n="21"/>
@@ -1978,7 +1985,7 @@
             <l>– – Höre nur! – –</l>
           </lg>
         </sp>
-        <sp who="#arrigos_stimme">
+        <sp who="#arrigo">
           <speaker>ARRIGOS STIMME.</speaker>
           <lg>
             <l>»Wenn, o geliebtes Kind, ein weißer Schleier</l>
@@ -2079,7 +2086,7 @@
             <l>Sollst du leben!</l>
           </lg>
         </sp>
-        <sp who="#giovannis_stimme">
+        <sp who="#giovanni">
           <speaker>GIOVANNIS STIMME.</speaker>
           <l>Oeffnet mir!</l>
         </sp>
@@ -2114,7 +2121,7 @@
             <l>Sag: Ich liebe dich, Francesco!</l>
           </lg>
         </sp>
-        <sp who="#giovannis_stimme">
+        <sp who="#giovanni">
           <speaker>GIOVANNIS STIMME.</speaker>
           <l>Du Satan! Oeffnet mir!</l>
         </sp>
@@ -2129,7 +2136,7 @@
             <l>Sag: Francesco, ich bin dein!</l>
           </lg>
         </sp>
-        <sp who="#giovannis_stimme">
+        <sp who="#giovanni">
           <speaker>GIOVANNIS STIMME.</speaker>
           <l>Ah!</l>
         </sp>
@@ -2195,7 +2202,7 @@
             <l>Den Rausch der Lieb' mich schlürfen!</l>
           </lg>
         </sp>
-        <sp who="#piccardas #arrigos_stimmen">
+        <sp who="#piccarda #arrigo">
           <speaker>PICCARDAS UND ARRIGOS STIMMEN.</speaker>
           <lg>
             <l>Jugend ist so hold und süß,</l>
@@ -2583,7 +2590,7 @@
             <l>War ich vom Wein benommen?</l>
             <l>War's eine Täuschung?</l>
             <l>Könnt' sie so lächeln, unschuldvoll und sanft,</l>
-            <l>Wenn ich ihr <hi>das</hi> getan? – Ich bin ganz irre –</l>
+            <l>Wenn ich ihr <emph>das</emph> getan? – Ich bin ganz irre –</l>
           </lg>
         </sp>
         <sp who="#lisa">
@@ -2656,7 +2663,7 @@
           <speaker>DIE FRAU.</speaker>
           <l>Und – Mona Lisa?</l>
         </sp>
-        <sp who="#der_bruder">
+        <sp who="#der_laienbruder">
           <speaker>DER BRUDER.</speaker>
           <lg>
             <l>Von ihr gibt die Chronik fürder keine Kunde,</l>
@@ -2675,27 +2682,24 @@
           <lg>
             <l>Nehmt – mein Bruder –</l>
             <l>Laßt eine Messe lesen</l>
-            <l>Für's Seelenheil der <hi>armen</hi> Mona Lisa!</l>
+            <l>Für's Seelenheil der <emph>armen</emph> Mona Lisa!</l>
           </lg>
         </sp>
         <sp who="#der_fremde">
           <speaker>DER FREMDE.</speaker>
           <lg>
-            <l>Der <hi>armen?</hi>
-            </l>
+            <l>Der <emph>armen</emph>?</l>
             <l>Wir danken, Bruder.</l>
           </lg>
         </sp>
-        <sp who="#der_bruder">
+        <sp who="#der_laienbruder">
           <speaker>DER BRUDER.</speaker>
           <lg>
             <l>Wer bist du? – – – Eva?</l>
             <l>Magdalena? – Bath-Seba? – – Versucherin!</l>
             <l>Mona – Lisa! – – Mona – Lisa!</l>
           </lg>
-          <stage>
-            <hi>Ende</hi>
-          </stage>
+          <stage>Ende</stage>
           <pb n="32"/>
         </sp>
       </div>
