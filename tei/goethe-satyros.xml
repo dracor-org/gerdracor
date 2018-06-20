@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Satyros oder der vergötterte Waldteufel</title>
+        <title type="main">Satyros oder der vergötterte Waldteufel</title>
+        <title type="sub">Drama</title>
         <author key="pnd:118540238">Goethe, Johann Wolfgang</author>
       </titleStmt>
       <publicationStmt>
@@ -43,39 +44,53 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="einsiedler">
-            <persName>EINSIEDLER</persName>
+          <person xml:id="einsiedler" sex="MALE">
+            <persName>Einsiedler</persName>
           </person>
-          <person xml:id="satyros">
-            <persName>SATYROS</persName>
+          <person xml:id="satyros" sex="MALE">
+            <persName>Satyros</persName>
           </person>
-          <person xml:id="arsinoe">
-            <persName>ARSINOE</persName>
+          <person xml:id="arsinoe" sex="FEMALE">
+            <persName>Arsinoe</persName>
           </person>
-          <person xml:id="psyche">
-            <persName>PSYCHE</persName>
+          <person xml:id="psyche" sex="FEMALE">
+            <persName>Psyche</persName>
           </person>
-          <person xml:id="hermes">
-            <persName>HERMES</persName>
+          <person xml:id="hermes" sex="MALE">
+            <persName>Hermes</persName>
           </person>
-          <person xml:id="eudora">
-            <persName>EUDORA</persName>
+          <person xml:id="einer_aus_dem_volk_3" sex="MALE">
+            <persName>Einer aus dem Volk (III)</persName>
           </person>
-          <person xml:id="das_volk">
-            <persName>DAS VOLK</persName>
-            <persName xml:id="volk">VOLK</persName>
+          <person xml:id="ein_anderer_3" sex="MALE">
+            <persName>Ein Anderer (III)</persName>
           </person>
-          <person xml:id="einer_aus_dem_volk">
-            <persName>EINER AUS DEM VOLK</persName>
-            <persName xml:id="einer">EINER</persName>
-            <persName xml:id="einer_des_volks">EINER DES VOLKS</persName>
+          <personGrp xml:id="das_volk" sex="MALE">
+            <name>Das Volk</name>
+          </personGrp>
+          <person xml:id="einer_4" sex="MALE">
+            <persName>Einer (IV)</persName>
           </person>
-          <person xml:id="ein_anderer">
-            <persName>EIN ANDERER</persName>
-            <persName xml:id="ein_andrer">EIN ANDRER</persName>
+          <person xml:id="ein_andrer_4" sex="MALE">
+            <persName>Ein Andrer (IV)</persName>
           </person>
-          <person xml:id="ein_dritter">
-            <persName>EIN DRITTER</persName>
+          <person xml:id="einer_4b" sex="MALE">
+            <persName>Einer (IV)</persName>
+          </person>
+          <person xml:id="einer_4c" sex="MALE">
+            <persName>Einer (IV)</persName>
+          </person>
+          <person xml:id="eudora" sex="FEMALE">
+            <persName>Eudora</persName>
+          </person>
+          <person xml:id="einer_des_volks_5" sex="MALE">
+            <persName>Einer des Volks (V)</persName>
+          </person>
+          <person xml:id="ein_andrer_5" sex="MALE">
+            <persName>Ein Andrer (V)</persName>
+          </person>
+          <person xml:id="ein_dritter_5" sex="MALE">
+            <persName>Ein Dritter (V)</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -90,6 +105,7 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
+        <change who="#ff" when="2018-06-20">work on IDs; formalities; gender info</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -166,9 +182,7 @@
             <l>Wo mancher Bärwolf ist schon tot</l>
             <l>Aus Ängsten vor der Hungersnot.</l>
           </lg>
-          <stage>
-            <hi>Man hört von ferne heulen.</hi>
-          </stage>
+          <stage>Man hört von ferne heulen.</stage>
           <l>U! U! Au! Au! Weh! Weh! Ai! Ai!</l>
           <pb n="166"/>
         </sp>
@@ -197,9 +211,7 @@
         <sp who="#einsiedler">
           <speaker>EINSIEDLER.</speaker>
           <l>Hockt auf! Hier in die Hütte rein.</l>
-          <stage>
-            <hi>Einsiedler bockt ihn auf, trägt ihn in die Hütte und legt ihn aufs Bett.</hi>
-          </stage>
+          <stage>Einsiedler bockt ihn auf, trägt ihn in die Hütte und legt ihn aufs Bett.</stage>
         </sp>
         <sp who="#einsiedler">
           <speaker>EINSIEDLER.</speaker>
@@ -215,9 +227,7 @@
             <l>Ihr seid ein Fratz! So halt denn still!</l>
             <l>Wie, Teufel, ich Euch da schindeln will?</l>
           </lg>
-          <stage>
-            <hi>Verbindet ihn.</hi>
-          </stage>
+          <stage>Verbindet ihn.</stage>
           <l>So bleibt nur wenigstens in Ruh.</l>
         </sp>
         <sp who="#satyros">
@@ -291,16 +301,14 @@
             <l>Will sehen, ob ich nicht etwan</l>
             <l>Für Euren Gaum was finden kann.</l>
           </lg>
-          <p>Ende des ersten Akts.</p>
         </sp>
+        <stage>Ende des ersten Akts.</stage>
       </div>
       <div type="act">
         <head>Zweiter Akt</head>
         <sp who="#satyros">
           <speaker>SATYROS</speaker>
-          <stage>
-            <hi>erwachend.</hi>
-          </stage>
+          <stage>erwachend.</stage>
           <lg>
             <l>Das ist eine Hunde-Lagerstätt!</l>
             <l>Ein's Missetäters Folterbett!</l>
@@ -329,8 +337,8 @@
             <l>Seinen Herrgott will ich runter reißen</l>
             <l>Und draußen in den Gießbach schmeißen.</l>
           </lg>
-          <p>Ende des zweiten Akts.</p>
         </sp>
+        <stage>Ende des zweiten Akts.</stage>
       </div>
       <div type="act">
         <head>Dritter Akt</head>
@@ -346,9 +354,7 @@
             <l>Natur ist rings so liebebang;</l>
             <l>Ich will dich letzen mit Flöt und Sang.</l>
           </lg>
-          <stage>
-            <hi>Zwei Mägdlein mit Wasserkrügen.</hi>
-          </stage>
+          <stage>Zwei Mägdlein mit Wasserkrügen.</stage>
         </sp>
         <sp who="#arsinoe">
           <speaker>ARSINOE.</speaker>
@@ -375,9 +381,7 @@
         </sp>
         <sp who="#satyros">
           <speaker>SATYROS</speaker>
-          <stage>
-            <hi>singt.</hi>
-          </stage>
+          <stage>singt.</stage>
           <lg>
             <l>Dein Leben, Herz, für wen erglüht's?</l>
             <l>Dein Adlerauge, was ersieht's?</l>
@@ -398,9 +402,7 @@
         </sp>
         <sp who="#satyros">
           <speaker>SATYROS</speaker>
-          <stage>
-            <hi>singt.</hi>
-          </stage>
+          <stage>singt.</stage>
           <lg>
             <l>Hast Melodie vom Himmel geführt</l>
             <l>Und Fels und Wald und Fluß gerührt;</l>
@@ -515,9 +517,7 @@
         <sp who="#psyche">
           <speaker>PSYCHE.</speaker>
           <l>So lauf und bring ihn geschwind herbei!</l>
-          <stage>
-            <hi>Arsinoe ab.</hi>
-          </stage>
+          <stage>Arsinoe ab.</stage>
         </sp>
         <sp who="#satyros">
           <speaker>SATYROS.</speaker>
@@ -547,9 +547,7 @@
             <l>Ich bin ein armes Mägdelein,</l>
             <l>Dem du, Herr! wollest gnädig sein.</l>
           </lg>
-          <stage>
-            <hi>Er umfaßt sie.</hi>
-          </stage>
+          <stage>Er umfaßt sie.</stage>
         </sp>
         <sp who="#satyros">
           <speaker>SATYROS.</speaker>
@@ -593,9 +591,7 @@
             <l>Und aller Seligkeit Wahntraumbild</l>
             <l>Fühl ich erbebend voll erfüllt.</l>
           </lg>
-          <stage>
-            <hi>Er küßt sie mächtig.</hi>
-          </stage>
+          <stage>Er küßt sie mächtig.</stage>
         </sp>
         <sp who="#psyche">
           <speaker>PSYCHE.</speaker>
@@ -603,9 +599,7 @@
             <l>Laßt ab! – mich schaudert's – Wonn und Weh –</l>
             <l>O Gott im Himmel! ich vergeh –</l>
           </lg>
-          <stage>
-            <hi>Hermes und Arsinoe kommen.</hi>
-          </stage>
+          <stage>Hermes und Arsinoe kommen.</stage>
         </sp>
         <sp who="#hermes">
           <speaker>HERMES.</speaker>
@@ -625,9 +619,7 @@
         </sp>
         <sp who="#arsinoe">
           <speaker>ARSINOE</speaker>
-          <stage>
-            <hi>leise zu Psyche.</hi>
-          </stage>
+          <stage>leise zu Psyche.</stage>
           <l>Dem Fratzen da ist gar nichts recht.</l>
         </sp>
         <sp who="#psyche">
@@ -657,9 +649,7 @@
         </sp>
         <sp who="#arsinoe">
           <speaker>ARSINOE</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <l>Aber mir!</l>
         </sp>
         <sp who="#satyros">
@@ -691,15 +681,13 @@
             <l><pb n="172"/> Seid all zur Sklaverei verdammt,</l>
             <l>Nichts Ganzes habt ihr allzusamt!</l>
           </lg>
-          <stage>
-            <hi>Es drängt sich allerlei Volk zusammen.</hi>
-          </stage>
+          <stage>Es drängt sich allerlei Volk zusammen.</stage>
         </sp>
-        <sp who="#einer_aus_dem_volk">
+        <sp who="#einer_aus_dem_volk_3">
           <speaker>EINER AUS DEM VOLK.</speaker>
           <l>Wer mag der mächtig' Redner sein?</l>
         </sp>
-        <sp who="#ein_anderer">
+        <sp who="#ein_anderer_3">
           <speaker>EIN ANDERER.</speaker>
           <l>Einem dringt das Wort durch Mark und Bein.</l>
         </sp>
@@ -785,23 +773,17 @@
         <sp who="#das_volk">
           <speaker>DAS VOLK.</speaker>
           <l>Rohe Kastanien! Unser die Welt!</l>
-          <p>Ende des dritten Akts.</p>
         </sp>
+        <stage>Ende des dritten Akts.</stage>
       </div>
       <div type="act">
         <head>Vierter Akt</head>
-        <stage>
-          <hi>Im Wald.</hi>
-        </stage>
-        <stage>
-          <hi>Satyros, Hermes, Psyche, Arsinoe, das Volk sitzen in einem Kreise, alle gekauert wie
-            die Eichhörnchen, haben Kastanien in den Händen und nagen daran.</hi>
-        </stage>
+        <stage>Im Wald.</stage>
+        <stage>Satyros, Hermes, Psyche, Arsinoe, das Volk sitzen in einem Kreise, alle gekauert wie
+          die Eichhörnchen, haben Kastanien in den Händen und nagen daran.</stage>
         <sp who="#hermes">
           <speaker>HERMES</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <lg>
             <l>Sackerment! ich habe schon</l>
             <l>Von der neuen Religion</l>
@@ -886,11 +868,11 @@
             <l>Betet an!</l>
           </lg>
         </sp>
-        <sp who="#einer">
+        <sp who="#einer_4a">
           <speaker>EINER.</speaker>
           <l>Sei uns gnädig!</l>
         </sp>
-        <sp who="#ein_andrer">
+        <sp who="#ein_andrer_4">
           <speaker>EIN ANDRER.</speaker>
           <lg>
             <l>Wundertätig</l>
@@ -901,7 +883,7 @@
           <speaker>DAS VOLK.</speaker>
           <l>Nimm dies Opfer an!</l>
         </sp>
-        <sp who="#einer">
+        <sp who="#einer_4b">
           <speaker>EINER.</speaker>
           <l>Die Finsternis ist vergangen.</l>
         </sp>
@@ -909,7 +891,7 @@
           <speaker>DAS VOLK.</speaker>
           <l>Nimm dies Opfer an!</l>
         </sp>
-        <sp who="#einer">
+        <sp who="#einer_4c">
           <speaker>EINER.</speaker>
           <l>Der Tag bricht herein.</l>
           <pb n="175"/>
@@ -920,9 +902,7 @@
             <l>Wir sind dein!</l>
             <l>Gott, dein! ganz dein!</l>
           </lg>
-          <stage>
-            <hi>Der Einsiedler kommt durch den Wald gerade auf de Satyros zu.</hi>
-          </stage>
+          <stage>Der Einsiedler kommt durch den Wald gerade auf den Satyros zu.</stage>
         </sp>
         <sp who="#einsiedler">
           <speaker>EINSIEDLER.</speaker>
@@ -983,9 +963,7 @@
         <sp who="#das_volk">
           <speaker>DAS VOLK.</speaker>
           <l>Doch verlaß uns nicht!</l>
-          <stage>
-            <hi>Satyros ab.</hi>
-          </stage>
+          <stage>Satyros ab.</stage>
         </sp>
         <sp who="#einsiedler">
           <speaker>EINSIEDLER.</speaker>
@@ -998,9 +976,7 @@
             <l>Bringt ihn an einen sichern Ort!</l>
             <l>Geht, verschließt ihn in meine Wohnung.</l>
           </lg>
-          <stage>
-            <hi>Sie führen den Einsiedler ab.</hi>
-          </stage>
+          <stage>Sie führen den Einsiedler ab.</stage>
         </sp>
         <sp who="#das_volk">
           <speaker>DAS VOLK.</speaker>
@@ -1036,23 +1012,19 @@
             <l>Zu tilgen den Spott.</l>
           </lg>
         </sp>
-        <sp who="#alle">
+        <sp who="#hermes #psyche #das_volk">
           <speaker>ALLE.</speaker>
           <lg>
             <l>Zernichtet die Lästrer,</l>
             <l>Verherrlichet Gott!</l>
           </lg>
-          <p>Ende des vierten Akts.</p>
         </sp>
+        <stage>Ende des vierten Akts.</stage>
       </div>
       <div type="act">
         <head>Fünfter Akt</head>
-        <stage>
-          <hi>Wohnung des Hermes.</hi>
-        </stage>
-        <stage>
-          <hi>Eudora, Hermes' Frau. Der Einsiedler.</hi>
-        </stage>
+        <stage>Wohnung des Hermes.</stage>
+        <stage>Eudora, Hermes' Frau. Der Einsiedler.</stage>
         <sp who="#eudora">
           <speaker>EUDORA.</speaker>
           <lg>
@@ -1167,25 +1139,18 @@
             <l>Einer, der um sein Leben spricht,</l>
             <l>Hat Gewalt. Ich wage, und du sollst reden.</l>
           </lg>
-          <stage>
-            <hi>Ab.</hi>
-          </stage>
+          <stage>Ab.</stage>
         </sp>
         <sp who="#einsiedler">
           <speaker>EINSIEDLER.</speaker>
           <l>Geht's nicht, so mögen sie mich töten.</l>
-          <stage>
-            <hi><pb n="178"/> Der Tempel.</hi>
-          </stage>
-          <stage>
-            <hi>Satyros sitzt ernst-wild auf dem Altar. Das Volk vor ihm auf den Knien. Psyche an
-              ihrer Spitze.</hi>
-          </stage>
+          <stage><pb n="178"/> Der Tempel.</stage>
+          <stage>Satyros sitzt ernst-wild auf dem Altar. Das Volk vor ihm auf den Knien. Psyche an
+            ihrer Spitze.</stage>
         </sp>
         <sp who="#das_volk">
-          <speaker>DAS VOLK.</speaker>
+          <speaker>DAS VOLK. CHORUS.</speaker>
           <lg>
-            <l> CHORUS.</l>
             <l>Geist des Himmels, Sohn der Götter,</l>
             <l>Zürne nicht!</l>
             <l>Frevlern deiner Stirne Wetter,</l>
@@ -1194,9 +1159,7 @@
             <l>Sieh herab, du wirst gerochen!</l>
             <l>Schrecklich nahet sein Gericht.</l>
           </lg>
-          <stage>
-            <hi>Hermes. Ihm folgt ein Trupp, den Einsiedler gebunden führend.</hi>
-          </stage>
+          <stage>Hermes. Ihm folgt ein Trupp, den Einsiedler gebunden führend.</stage>
         </sp>
         <sp who="#das_volk">
           <speaker>DAS VOLK.</speaker>
@@ -1208,9 +1171,7 @@
         </sp>
         <sp who="#satyros">
           <speaker>SATYROS</speaker>
-          <stage>
-            <hi>herabsteigend.</hi>
-          </stage>
+          <stage>herabsteigend.</stage>
           <lg>
             <l>Ich hab ihm seine Missetat verziehn!</l>
             <l>Der Gerechtigkeit überlaß ich ihn.</l>
@@ -1235,13 +1196,9 @@
         </sp>
         <sp who="#einsiedler">
           <speaker>EINSIEDLER</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <l>Weh mir! Ihr Götter, wollet bei mir stehn!</l>
-          <stage>
-            <hi>Satyros ab.</hi>
-          </stage>
+          <stage>Satyros ab.</stage>
         </sp>
         <sp who="#einsiedler">
           <speaker>EINSIEDLER.</speaker>
@@ -1263,15 +1220,15 @@
             <l>Mit diesem Geist der Erd entschwinden soll.</l>
           </lg>
         </sp>
-        <sp who="#einer_des_volks">
+        <sp who="#einer_des_volks_5">
           <speaker>EINER DES VOLKS.</speaker>
           <l>Ich kenn ihn; er ist der Künste voll.</l>
         </sp>
-        <sp who="#ein_andrer">
+        <sp who="#ein_andrer_5">
           <speaker>EIN ANDRER.</speaker>
           <l>Was Künste! Unser Gott weiß das all.</l>
         </sp>
-        <sp who="#ein_dritter">
+        <sp who="#ein_dritter_5">
           <speaker>EIN DRITTER.</speaker>
           <l>Ob er sie sagt, das ist ein andrer Fall.</l>
         </sp>
@@ -1303,17 +1260,13 @@
         </sp>
         <sp who="#einsiedler">
           <speaker>EINSIEDLER</speaker>
-          <stage>
-            <hi>leise.</hi>
-          </stage>
+          <stage>leise.</stage>
           <lg>
             <l>Nichts weniger als den Stein der Weisen.</l>
             <l>Komm von der Menge</l>
             <l>Nur einen Schritt in diese Gänge.</l>
           </lg>
-          <stage>
-            <hi>Sie wollen gehn.</hi>
-          </stage>
+          <stage>Sie wollen gehn.</stage>
         </sp>
         <sp who="#das_volk">
           <speaker>DAS VOLK.</speaker>
@@ -1326,18 +1279,15 @@
             <l>Vergissest des Gottes Gebot?</l>
           </lg>
         </sp>
-        <sp who="#volk">
+        <sp who="#das_volk">
           <speaker>VOLK.</speaker>
           <l>Auf! Auf! Des Frevlers Blut und Tod.</l>
-          <stage>
-            <hi>Sie reißen den Einsiedler zum Altare. Einer dringt dem Hermes das Messer auf.</hi>
-          </stage>
+          <stage>Sie reißen den Einsiedler zum Altare. Einer dringt dem Hermes das Messer
+            auf.</stage>
         </sp>
         <sp who="#eudora">
           <speaker>EUDORA</speaker>
-          <stage>
-            <hi>inwendig.</hi>
-          </stage>
+          <stage>inwendig.</stage>
           <l>Hülfe! Hülfe!</l>
           <pb n="180"/>
         </sp>
@@ -1358,31 +1308,25 @@
         </sp>
         <sp who="#eudora">
           <speaker>EUDORA</speaker>
-          <stage>
-            <hi>inwendig.</hi>
-          </stage>
+          <stage>inwendig.</stage>
           <l>Hülfe, Hermes! Hülfe!</l>
         </sp>
         <sp who="#hermes">
           <speaker>HERMES.</speaker>
           <l>Mein Weib! Götter, mein Weib!</l>
-          <stage>
-            <hi>Er stößt die Türen des Heiligtums auf. Man sieht Eudora, sich gegen des Satyros
-              Umarmungen verteidigend.</hi>
-          </stage>
+          <stage>Er stößt die Türen des Heiligtums auf. Man sieht Eudora, sich gegen des Satyros
+            Umarmungen verteidigend.</stage>
         </sp>
         <sp who="#hermes">
           <speaker>HERMES.</speaker>
           <l>Es ist nicht möglich!</l>
-          <stage>
-            <hi>Satyros läßt Eudoren los.</hi>
-          </stage>
+          <stage>Satyros läßt Eudoren los.</stage>
         </sp>
         <sp who="#eudora">
           <speaker>EUDORA.</speaker>
           <l>Da seht ihr euren Gott!</l>
         </sp>
-        <sp who="#volk">
+        <sp who="#das_volk">
           <speaker>VOLK.</speaker>
           <l>Ein Tier! ein Tier!</l>
         </sp>
@@ -1403,9 +1347,7 @@
         <sp who="#hermes">
           <speaker>HERMES.</speaker>
           <l>Geh! wir begehren deiner nit.</l>
-          <stage>
-            <hi>Satyros ab.</hi>
-          </stage>
+          <stage>Satyros ab.</stage>
         </sp>
         <sp who="#einsiedler">
           <speaker>EINSIEDLER.</speaker>
