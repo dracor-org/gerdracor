@@ -96,11 +96,12 @@
           <person xml:id="wagner" sex="MALE">
             <persName>Wagner</persName>
           </person>
-          <person xml:id="erster_musikant_1-5" sex="MALE">
-            <persName>Erster Musikant (I/5)</persName>
+          <person xml:id="erster_musikant" sex="MALE">
+            <persName>Erster Musikant</persName>
           </person>
-          <personGrp xml:id="musikanten" sex="MALE">
+          <personGrp xml:id="musikanten_musiker" sex="MALE">
             <name>Musikanten</name>
+            <persName type="variant">Musiker</persName>
           </personGrp>
           <person xml:id="schmidt" sex="MALE">
             <persName>Schmidt</persName>
@@ -109,19 +110,16 @@
             <persName>Lysander</persName>
           </person>
           <person xml:id="viren" sex="MALE">
-            <persName>Viren</persName>
-          </person>
-          <person xml:id="erster_musikant_1-9" sex="MALE">
-            <persName>Erster Musikant (I/9)</persName>
+            <persName>Baron Viren</persName>
           </person>
           <person xml:id="die_jungfrau" sex="FEMALE">
-            <persName>Die Jungfrau</persName>
+            <persName>Die Jungfrau (Maskenspiel)</persName>
           </person>
           <person xml:id="die_frau" sex="FEMALE">
-            <persName>Die Frau</persName>
+            <persName>Die Frau (Maskenspiel)</persName>
           </person>
           <person xml:id="lindor" sex="MALE">
-            <persName>Lindor</persName>
+            <persName>Lindor (Maskenspiel)</persName>
           </person>
           <personGrp xml:id="zuschauer" sex="UNKNOWN">
             <name>Zuschauer</name>
@@ -129,12 +127,6 @@
           <personGrp xml:id="bediente" sex="UNKNOWN">
             <name>Bediente</name>
           </personGrp>
-          <personGrp xml:id="musiker" sex="MALE">
-            <name>Musiker</name>
-          </personGrp>
-          <person xml:id="erster_musikant_1-15" sex="MALE">
-            <persName>Erster Musikant (I/15)</persName>
-          </person>
           <person xml:id="ein_anderer_musikant" sex="MALE">
             <persName>Ein anderer Musikant</persName>
           </person>
@@ -168,7 +160,10 @@
           <personGrp xml:id="kinder" sex="MALE">
             <name>Kinder</name>
           </personGrp>
-          <person xml:id="gast" sex="MALE">
+          <person xml:id="gast_a" sex="MALE">
+            <persName>Gast</persName>
+          </person>
+          <person xml:id="gast_b" sex="MALE">
             <persName>Gast</persName>
           </person>
           <person xml:id="einer_2-10" sex="MALE">
@@ -193,16 +188,16 @@
             <persName>Ein Hallor (II/11)</persName>
           </person>
           <person xml:id="herold" sex="MALE">
-            <persName>Herold</persName>
+            <persName>Herold (Maskenspiel)</persName>
           </person>
           <person xml:id="prinzessin" sex="FEMALE">
-            <persName>Prinzessin</persName>
+            <persName>Prinzessin (Maskenspiel)</persName>
           </person>
           <person xml:id="weissprinz" sex="MALE">
-            <persName>Weißprinz</persName>
+            <persName>Weißprinz (Maskenspiel)</persName>
           </person>
           <person xml:id="mohrenprinz" sex="MALE">
-            <persName>Mohrenprinz</persName>
+            <persName>Mohrenprinz (Maskenspiel)</persName>
           </person>
           <person xml:id="celinde" sex="FEMALE">
             <persName>Celinde</persName>
@@ -308,6 +303,7 @@
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
         <change who="#ff" when="2018-05-05">work on IDs; add gender info; formalities</change>
+        <change who="#ff" when="2018-08-08">minor corrections on IDs</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -331,7 +327,7 @@
           <castItem>Edelchen, dessen Frau.</castItem>
           <castItem>Nathanael, deren Sohn.</castItem>
           <castItem>Einige Enkel des Nathan.</castItem>
-          <castItem>Baron Viren, Professor der rechte.</castItem>
+          <castItem>Baron Viren, Professor der Rechte.</castItem>
           <castItem>Olympie, dessen Schwester.</castItem>
           <castItem>Eine Geistergestalt, der Olympie ähnlich.</castItem>
           <castItem>Doris, Olympiens Kammerjungfer.</castItem>
@@ -341,6 +337,7 @@
           <castItem>Ein Magister aus Leipzig.</castItem>
           <castGroup>
             <castItem>Dienemann,</castItem>
+            <castItem>Kümmermann,</castItem>
             <castItem>Stürmer,</castItem>
             <castItem>Suppius,</castItem>
             <castItem>Becker,</castItem>
@@ -1148,7 +1145,7 @@
               Marsch, marschiret drei mal um den Markt, daß er sich allen zeige und wendet euch dann
               zum Rathskeller, wo ihr zum Schmause musiciren sollt.</p>
           </sp>
-          <sp who="#erster_musikant_1-5">
+          <sp who="#erster_musikant">
             <speaker>ERSTER MUSIKANT.</speaker>
             <p>Je Herrchen, denkt doch an uns, wir sind so nüchtern, wie wir vom Balle sind gekommen
               und sollten in der Mittagssonne nun<pb n="24"/> pausiren und musiciren, so wie ihr mit
@@ -1161,7 +1158,7 @@
               trinkt zuviel und jeder doch was kriegt. Gebt Achtung! <stage>Geht in den Thorweg
                 ab.</stage></p>
           </sp>
-          <sp who="#erster_musikant_1-5">
+          <sp who="#erster_musikant">
             <speaker>ERSTER MUSIKANT.</speaker>
             <p>Ein Herrchen von Conduite; ein artig Herrchen, so ein Kluckerfläschen für uns
               herzutragen. He habt ihr wohl den Feuerwerker Hase noch gekannt, wenn der ein
@@ -1169,30 +1166,30 @@
               Kluckerfläschen und setzt es an den Mund und küpte mit dem Kopfe über, daß ihm der Hut
               zur Erde fiel. <stage>Er trinkt.</stage></p>
           </sp>
-          <sp who="#musikanten">
+          <sp who="#musikanten_musiker">
             <speaker>MUSIKANTEN.</speaker>
             <p>He Domine, laß etwas drein.</p>
           </sp>
-          <sp who="#erster_musikant_1-5">
+          <sp who="#erster_musikant">
             <speaker>ERSTER MUSIKANT.</speaker>
             <p>Dann klappt er zu den Mund, da stand das ganze Feuerwerk ihm vor den Augen.</p>
           </sp>
-          <sp who="#musikanten">
+          <sp who="#musikanten_musiker">
             <speaker>MUSIKANTEN.</speaker>
             <p>Wir wollen dir ein Feuerwerk vor deinen Augen schlagen, Domine, die Kluckerflasche
               ist wahrhaftig leer.</p>
           </sp>
-          <sp who="#erster_musikant_1-5">
+          <sp who="#erster_musikant">
             <speaker>ERSTER MUSIKANT.</speaker>
             <p>Sagt warum wär ich auch der erste von euch allen, thät ich nichts für euch alle?</p>
           </sp>
-          <sp who="#musikanten">
+          <sp who="#musikanten_musiker">
             <speaker>MUSIKANTEN.</speaker>
             <p>So musicir auch für uns alle. Domine, wir müssen erst bei Herrmann was pausiren.
                 <stage>Gehen nach der Schenke.</stage></p>
             <pb n="25"/>
           </sp>
-          <sp who="#erster_musikant_1-5">
+          <sp who="#erster_musikant">
             <speaker>ERSTER MUSIKANT.</speaker>
             <p>Da steh ich nun mit der Posaune ganz allein, was werden doch die Herrchen sagen zu
               der Musik, ich werd vor ihnen blasen wie der Hirte vor dem Vieh, das wird mal Schläge
@@ -1276,7 +1273,7 @@
               mehrt, das klingt ja wunderlich, das Fenster öffnet sich, da kuckt ja Dienemann
               heraus, hält sich das Schnupftuch vor die Augen.</p>
           </sp>
-          <sp who="#erster_musikant_1-5">
+          <sp who="#erster_musikant">
             <speaker>ERSTER MUSIKANT.</speaker>
             <p>Ei guten Morgen, Herrchen soll ich blasen.</p>
           </sp>
@@ -1351,7 +1348,7 @@
               wollt ihr das Trommelfell uns zersprengen, wie der posaunt: nun lasset uns den Leib
               begraben, da blasen jene noch den lustigen Marsch.</p>
           </sp>
-          <sp who="#erster_musikant_1-5">
+          <sp who="#erster_musikant">
             <speaker>ERSTER MUSIKANT.</speaker>
             <p>Ja Herrchen mit Erlaubniß, die wissen nichts vom ganzen Unglück, die sehn den Himmel
               an für einen Dudelsack. Ihr Leutchen seht ihr nicht den Todten, spielt das Todtenlied.
@@ -1759,7 +1756,7 @@
             </lg>
             <stage>Cardenio und Pamphilio kommen mit Musikanten und Masken.</stage>
           </sp>
-          <sp who="#erster_musikant_1-9">
+          <sp who="#erster_musikant">
             <speaker>ERSTER MUSIKANT.</speaker>
             <p>Ja Herrchen, es ist so duster mir vor meinen Augen, was wird mir das bedeuten.</p>
             <pb n="42"/>
@@ -1768,7 +1765,7 @@
             <speaker>PAMPHILIO.</speaker>
             <p>Daß du nun um so heller singen kannst, wie Nachtigallen, die geblendet sind.</p>
           </sp>
-          <sp who="#erster_musikant_1-9">
+          <sp who="#erster_musikant">
             <speaker>ERSTER MUSIKANT.</speaker>
             <p>Je Herchen, ich kann den Steg nicht finden über diese Gosse.</p>
           </sp>
@@ -2172,12 +2169,13 @@
           <sp who="#zuschauer">
             <speaker>ZUSCHAUER</speaker>
             <stage>die sich allmählig eingefunden haben.</stage>
-            <p>Der Spaß ist aus, ich wollt, er wär noch einmal so lang gewesen. Zweiter. Mir ist
-              mein Lebtag kein solch Vivat vorgekommen. Dritter. War es denn die kleine Ach-Herr-je,
-              die gesungen hat mit ihrer kleinen Schwester, der Bursche war Lungenfeld. Vierter. Mir
-                <pb n="50"/> ists dabei im Magen kalt geworden, ich geh zu Dost, er ist noch stets
-              mein Trost. Fünfter. Gut Nacht, ich will noch Veilchen pflücken. <stage>Die Zuschauer
-                ab.</stage></p>
+            <p>Der Spaß ist aus, ich wollt, er wär noch einmal so lang gewesen.
+                <stage>Zweiter.</stage> Mir ist mein Lebtag kein solch Vivat vorgekommen.
+                <stage>Dritter.</stage> War es denn die kleine Ach-Herr-je, die gesungen hat mit
+              ihrer kleinen Schwester, der Bursche war Lungenfeld. <stage>Vierter.</stage> Mir <pb
+                n="50"/> ists dabei im Magen kalt geworden, ich geh zu Dost, er ist noch stets mein
+              Trost. <stage>Fünfter.</stage> Gut Nacht, ich will noch Veilchen pflücken. <stage>Die
+                Zuschauer ab.</stage></p>
           </sp>
           <sp who="#cardenio">
             <speaker>CARDENIO.</speaker>
@@ -2550,7 +2548,7 @@
             <p>Halt, was geschieht hier, blanke Degen, Olympie erblassend, ich wollt ich wäre weit
               davon.</p>
           </sp>
-          <sp who="#musiker">
+          <sp who="#musikanten_musiker">
             <speaker>MUSIKER.</speaker>
             <p>Haltet ein, ihr Herren, hört doch die Vernunft mit kaltem Blute an.</p>
           </sp>
@@ -2559,7 +2557,7 @@
             <p>Bei Gott, ich bin ein Gletscher, kann euch alles sagen, wie vor den Gerichten. Ihr
               Herren sagt, wann bin ich in dies Haus gedrungen?</p>
           </sp>
-          <sp who="#erster_musikant_1-15">
+          <sp who="#erster_musikant">
             <speaker>ERSTER MUSIKANT.</speaker>
             <p>Je Herrchen, das müssen Sie am besten wissen, es sind nicht fünf Minuten, daß wir Sie
               auf der Straße hingestreckt erblickten, seufzend nach den Sternen, so sagt der
@@ -2579,7 +2577,7 @@
             <speaker>VIREN.</speaker>
             <p>Es ist nicht wahr.</p>
           </sp>
-          <sp who="#erster_musikant_1-15">
+          <sp who="#erster_musikant">
             <speaker>ERSTER MUSIKANT.</speaker>
             <p>Mein Herr Viren, wir kennen uns ja länger, ich gab ja schon Ihrem Herrn Vater
               Unterricht auf Geige und auf Flöte, er lernte erst nicht viel, dann aber kriegte er
@@ -2589,7 +2587,7 @@
             <speaker>PAMPHILIO.</speaker>
             <p>Was soll das hier.</p>
           </sp>
-          <sp who="#erster_musikant_1-15">
+          <sp who="#erster_musikant">
             <speaker>ERSTER MUSIKANT.</speaker>
             <p>Das Herrchen ist so böse, es erkennt mich nicht, ob ich ihm gleich zwei Stunden alle
               Woche gebe auf der Geige. Ja Herr Viren ich schwör es ihnen bei meiner Ehre, hab ich
@@ -2605,7 +2603,7 @@
             <speaker>VIREN.</speaker>
             <p>So schweig doch Schwester vor den Leuten. – Nun weiter.</p>
           </sp>
-          <sp who="#erster_musikant_1-15">
+          <sp who="#erster_musikant">
             <speaker>ERSTER MUSIKANT.</speaker>
             <p>– – – wenn Sie meinen, daß er das Haus hat aufgestört, er sprengte erst nach vielem
               Hülfe-Schreien, das drin erscholl, die große Thüre, wir drangen mit ihm ein, und er
@@ -3576,40 +3574,44 @@
           <head>Fünfter Auftritt.</head>
           <stage>Das Wohnzimmer des Juden Nathan.</stage>
           <stage>Zwei Knaben sitzen am Boden und spielen mit Papieren und singen.</stage>
-          <lg>
-            <l>Ein Zicklein, ein Zicklein,</l>
-            <l>Das hat gekauft das Väterlein</l>
-            <l>Um zwei rothe Pfenning</l>
-            <l>Ein Zicklein</l>
-            <l><pb n="90"/> Da kam das Kätzlein</l>
-            <l>Und aß das Zicklein,</l>
-            <l>Das hat gekauft mein Väterlein</l>
-            <l>Um zwei rothe Pfenning,</l>
-            <l>Ein Zicklein, ein Zicklein!</l>
-          </lg>
+          <sp who="#erster_knabe #zweiter_knabe">
+            <lg>
+              <l>Ein Zicklein, ein Zicklein,</l>
+              <l>Das hat gekauft das Väterlein</l>
+              <l>Um zwei rothe Pfenning</l>
+              <l>Ein Zicklein</l>
+              <l><pb n="90"/> Da kam das Kätzlein</l>
+              <l>Und aß das Zicklein,</l>
+              <l>Das hat gekauft mein Väterlein</l>
+              <l>Um zwei rothe Pfenning,</l>
+              <l>Ein Zicklein, ein Zicklein!</l>
+            </lg>
+          </sp>
           <stage>Nathan tritt in einem Schlafrocke, die Tabakspfeife der Hand, herein.</stage>
-          <p>Es soll sein ein Abgeordneter von den Juden in Jerusalem, daß wir ihnen geben Geld,
-            damit sie kaufen los ihre Juden, die da schmachten in der Gefangenschaft von den Türken,
-            es soll sein, er hat seine Briefe, aber was gehts mich an, schickt mir einer aus
-            Jerusalem ein Geld, wenn ich meine Wechsel nicht bezahlen kann und komm in die
-            Gefangenschaft von den Christen, er solls sein, wenn er nun mit dem Gelde geht in die
-            weite Welt? soll ich mit laufen, Krieg die Kränk, Ahasverus. Für die Juden soll ich
-            bezahlen, Wein trinken mit den Christen bei Pernize, au weih, wie soll das gehn
-            zusammen, Christen sind Verschwender, lassen sich taufen meine Kinder, werden sie auch
-            Verschwender, ich hab es immer geförcht, wenn ich sie laufen sah mit der Wurst, mit dem
-            Schinken. Wer die Forcht hat, der hats Malör. Ich habe nichts gegen das Taufen, laß ich
-            doch meine Kinder waschen alle Tage, aber das Taufen löscht den Credit aus, da wollen
-            sie Staat machen, wie die Christen, sprechen von das Literatur, sind nervenkrank, was
-            ich spar bei der Lampe, verbrennt beim Wachslicht, <pb n="91"/> Thee und Chocolate alle
-            Tage und der Zucker – der Zucker steigt seit gestern wieder ganz erschrecklich, ich
-            verkauf noch nicht, er muß noch höher steigen – wenn sie doch dächten, wie viel Bienchen
-            das ganze Jahr zusammentragen, an einem Wachslichte. Was so ein kleines Thierchen nicht
-            kann, wenn die Kinder doch auch so was machen könnten, die machen aber was Schönes, wozu
-            haben sie ihre menschliche Seele, wenn sie nicht einmal so einträglich sind wie die
-            unvernünftigen Thiere – die Kinder schicken meine Töchter ein, wenn sie nichts mehr
-            haben, ich seh sie nicht an, es sind Christenkinder, die jagen alle gute Engel weg, sie
-            kosten mir doch alle Tage was, ein Tag und alle Tage für sechs Pfennige Milch, für sechs
-            Pfennige Semmel, dann ...</p>
+          <sp who="#nathan">
+            <p>Es soll sein ein Abgeordneter von den Juden in Jerusalem, daß wir ihnen geben Geld,
+              damit sie kaufen los ihre Juden, die da schmachten in der Gefangenschaft von den
+              Türken, es soll sein, er hat seine Briefe, aber was gehts mich an, schickt mir einer
+              aus Jerusalem ein Geld, wenn ich meine Wechsel nicht bezahlen kann und komm in die
+              Gefangenschaft von den Christen, er solls sein, wenn er nun mit dem Gelde geht in die
+              weite Welt? soll ich mit laufen, Krieg die Kränk, Ahasverus. Für die Juden soll ich
+              bezahlen, Wein trinken mit den Christen bei Pernize, au weih, wie soll das gehn
+              zusammen, Christen sind Verschwender, lassen sich taufen meine Kinder, werden sie auch
+              Verschwender, ich hab es immer geförcht, wenn ich sie laufen sah mit der Wurst, mit
+              dem Schinken. Wer die Forcht hat, der hats Malör. Ich habe nichts gegen das Taufen,
+              laß ich doch meine Kinder waschen alle Tage, aber das Taufen löscht den Credit aus, da
+              wollen sie Staat machen, wie die Christen, sprechen von das Literatur, sind
+              nervenkrank, was ich spar bei der Lampe, verbrennt beim Wachslicht, <pb n="91"/> Thee
+              und Chocolate alle Tage und der Zucker – der Zucker steigt seit gestern wieder ganz
+              erschrecklich, ich verkauf noch nicht, er muß noch höher steigen – wenn sie doch
+              dächten, wie viel Bienchen das ganze Jahr zusammentragen, an einem Wachslichte. Was so
+              ein kleines Thierchen nicht kann, wenn die Kinder doch auch so was machen könnten, die
+              machen aber was Schönes, wozu haben sie ihre menschliche Seele, wenn sie nicht einmal
+              so einträglich sind wie die unvernünftigen Thiere – die Kinder schicken meine Töchter
+              ein, wenn sie nichts mehr haben, ich seh sie nicht an, es sind Christenkinder, die
+              jagen alle gute Engel weg, sie kosten mir doch alle Tage was, ein Tag und alle Tage
+              für sechs Pfennige Milch, für sechs Pfennige Semmel, dann ...</p>
+          </sp>
           <sp who="#erster_knabe #zweiter_knabe">
             <speaker>DIE KINDER</speaker>
             <stage>unter einander.</stage>
@@ -4215,7 +4217,7 @@
             <stage>stößt einen der Gäste um.</stage>
             <p>Geh aus dem Wege.</p>
           </sp>
-          <sp who="#gast">
+          <sp who="#gast_a">
             <speaker>GAST.</speaker>
             <p>Das schien mir doch ein wenig impoli. <stage>Ab.</stage></p>
           </sp>
@@ -4247,7 +4249,7 @@
               wird mich genug verführen und zerquälen bis ich es wieder los. <stage>Zu einem
                 Gaste.</stage> Wohin so schön geputzt?</p>
           </sp>
-          <sp who="#gast">
+          <sp who="#gast_b">
             <speaker>GAST.</speaker>
             <p>Bin ich euch Antwort schuldig.</p>
           </sp>
@@ -4255,7 +4257,7 @@
             <speaker>CARDENIO.</speaker>
             <p>Beim Himmel ja.</p>
           </sp>
-          <sp who="#gast">
+          <sp who="#gast_b">
             <speaker>GAST.</speaker>
             <p>Wir gehen zu Lysanders und Olympiens Hochzeit. <stage>Ab.</stage></p>
           </sp>
@@ -4597,12 +4599,13 @@
             <speaker>OLYMPIE.</speaker>
             <p>Je lieber Mann, ich war gerührt und bin es noch, nicht durch des Herren Pred'gers
               halbverstandne Worte, es war nur meine Schuld, ich weiß es wohl, daß ich ihn nicht
-              verstanden, denn was mich rührte, hat mich auch zerstreut, es war das Schluchsen aller
-              ältern Frauen rings im Kreise. Ich kannte sie doch sonst so scheinbar glücklich alle,
-              doch schien da ein verschwiegnes Wehe, das auf dem Ehstand <pb n="119"/> ruht,
-              gewaltsam sich im Augenblicke jedes neuen Opfers Luft zu machen, und auch nachher dann
-              thaten sie so gegen mich, als dächten sie noch stets in tiefer Sehnsucht ihrer
-              Unschuld Spiele und Vergnügen. Was ist für Schuld beim Ehestand Herr Prediger?</p>
+              verstanden, denn was mich rührte, hat mich auch zerstreut, es war das
+                <emph>Schluchsen</emph> aller ältern Frauen rings im Kreise. Ich kannte sie doch
+              sonst so scheinbar glücklich alle, doch schien da ein verschwiegnes Wehe, das auf dem
+              Ehstand <pb n="119"/> ruht, gewaltsam sich im Augenblicke jedes neuen Opfers Luft zu
+              machen, und auch nachher dann thaten sie so gegen mich, als dächten sie noch stets in
+              tiefer Sehnsucht ihrer Unschuld Spiele und Vergnügen. Was ist für Schuld beim Ehestand
+              Herr Prediger?</p>
           </sp>
           <sp who="#prediger_2-11">
             <speaker>PREDIGER.</speaker>
