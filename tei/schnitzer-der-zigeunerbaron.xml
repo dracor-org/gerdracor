@@ -44,65 +44,68 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="ottokar">
+          <person xml:id="ottokar" sex="MALE">
             <persName>Ottokar</persName>
           </person>
-          <person xml:id="czipra">
+          <person xml:id="czipra" sex="MALE">
             <persName>Czipra</persName>
           </person>
-          <person xml:id="chor_der_schiffer">
+          <person xml:id="chor_der_schiffer" sex="MALE">
             <persName>Chor der Schiffer</persName>
           </person>
-          <person xml:id="barinkay">
+          <person xml:id="barinkay" sex="MALE">
             <persName>Barinkay</persName>
           </person>
-          <person xml:id="chor">
+          <person xml:id="chor" sex="UNKNOWN">
             <persName>Chor</persName>
           </person>
-          <person xml:id="carnero">
+          <person xml:id="carnero" sex="MALE">
             <persName>Carnero</persName>
           </person>
-          <person xml:id="saffi">
+          <person xml:id="saffi" sex="FEMALE">
             <persName>Saffi</persName>
           </person>
-          <person xml:id="zsupan">
+          <person xml:id="zsupan" sex="MALE">
             <persName>Zsupán</persName>
           </person>
-          <person xml:id="mirabella">
+          <person xml:id="mirabella" sex="FEMALE">
             <persName>Mirabella</persName>
           </person>
-          <person xml:id="arsena">
+          <person xml:id="arsena" sex="FEMALE">
             <persName>Arsena</persName>
           </person>
-          <person xml:id="chor_der_maedchen">
-            <persName>CHOR DER MÄDCHEN</persName>
+          <personGrp xml:id="chor_der_maedchen" sex="FEMALE">
+            <name>Chor der Mädchen</name>
+          </personGrp>
+          <personGrp xml:id="chor_der_zigeuner" sex="UNKNOWN">
+            <name>Chor der Zigeuner</name>
+            <name type="variant">Zigeuner-Chor</name>
+            <name type="variant">Zigeuner</name>
+          </personGrp>
+          <personGrp xml:id="zsupans_gruppe" sex="MALE">
+            <name>Chor der Zsupán'schen Gruppe</name>
+            <name type="variant">Chor Zsupán's</name>
+            <name type="variant">Zsupán's Gruppe</name>
+          </personGrp>
+          <personGrp xml:id="barinkays_gruppe" sex="MALE">
+            <name>Barinkays Gruppe</name>
+          </personGrp>
+          <person xml:id="pali" sex="MALE">
+            <persName>Pali</persName>
           </person>
-          <person xml:id="chor_der_zsupanschen_gruppe">
-            <persName>CHOR DER ZSUPÁN'SCHEN GRUPPE</persName>
-            <persName xml:id="chor_zsupans">CHOR ZSUPÁN'S</persName>
-          </person>
-          <person xml:id="barinkays_gruppe">
-            <persName>BARINKAYS GRUPPE</persName>
-          </person>
-          <person xml:id="die_zigeuner">
-            <persName>DIE ZIGEUNER</persName>
-            <persName xml:id="chor_der_zigeunerinnen">CHOR DER ZIGEUNERINNEN</persName>
-            <persName xml:id="chor_der_zigeuner">CHOR DER ZIGEUNER</persName>
-            <persName xml:id="zigeuner">ZIGEUNER</persName>
-          </person>
-          <person xml:id="der_alte_pali">
-            <persName>Der alte Pali</persName>
-          </person>
-          <person xml:id="allgemeiner_chor">
-            <persName>ALLGEMEINER CHOR</persName>
-            <persName xml:id="allgemeiner_schlußchor">ALLGEMEINER SCHLUßCHOR</persName>
-          </person>
-          <person xml:id="graf_homonay">
+          <personGrp xml:id="chor_der_zigeunerinnen" sex="FEMALE">
+            <name>Chor der Zigeunerinnen</name>
+          </personGrp>
+          <personGrp xml:id="allgemeiner_chor" sex="UNKNOWN">
+            <name>Allgemeiner Chor</name>
+            <name type="variant">Allgemeiner Schlußchor</name>
+          </personGrp>
+          <person xml:id="graf_homonay" sex="MALE">
             <persName>Graf Homonay</persName>
           </person>
-          <person xml:id="chor_der_soldaten">
-            <persName>Chor der Soldaten</persName>
-          </person>
+          <personGrp xml:id="chor_der_soldaten" sex="MALE">
+            <name>Chor der Soldaten</name>
+          </personGrp>
         </listPerson>
       </particDesc>
       <textClass>
@@ -116,7 +119,7 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
-        <change who="#ff" when="2018-09-17">formalities, IDs (to be finished)</change>
+        <change who="#ff" when="2018-09-24">formalities; IDs</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -127,8 +130,6 @@
         <head>Der Zigeunerbaron</head>
         <head>Operette in 3 Acten</head>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head>Personen</head>
@@ -141,24 +142,30 @@
           <castItem>Ottokar, ihr Sohn</castItem>
           <castItem>Czipra, Zigeunerin</castItem>
           <castItem>Saffi, Zigeunermädchen</castItem>
-          <castItem>Pali</castItem>
-          <castItem>Jószi</castItem>
-          <castItem>Ferko</castItem>
-          <castItem>Mihály</castItem>
-          <castItem>Janesi, Zigeuner</castItem>
+          <castGroup>
+            <castItem>Pali</castItem>
+            <castItem>Jószi</castItem>
+            <castItem>Ferko</castItem>
+            <castItem>Mihály</castItem>
+            <castItem>Janesi</castItem>
+            <roleDesc>Zigeuner</roleDesc>
+          </castGroup>
           <castItem>Der Bürgermeister von Wien</castItem>
           <castItem>Ein Herold</castItem>
           <castItem>Seppl, Laternenbub</castItem>
           <castItem>Miksa, Schiffsknecht</castItem>
           <castItem>Ein Zigeunerknabe</castItem>
-          <castItem>Irma</castItem>
-          <castItem>Tercsi</castItem>
-          <castItem>Aranka</castItem>
-          <castItem>Katicza</castItem>
-          <castItem>Iulcsa</castItem>
-          <castItem>Etelka</castItem>
-          <castItem>Jolán</castItem>
-          <castItem>Ilka, Arsena's Freundinnen</castItem>
+          <castGroup>
+            <castItem>Irma</castItem>
+            <castItem>Tercsi</castItem>
+            <castItem>Aranka</castItem>
+            <castItem>Katicza</castItem>
+            <castItem>Iulcsa</castItem>
+            <castItem>Etelka</castItem>
+            <castItem>Jolán</castItem>
+            <castItem>Ilka</castItem>
+            <roleDesc>Arsena's Freundinnen</roleDesc>
+          </castGroup>
           <castItem>István, Zsupán's Knecht</castItem>
           <castItem>Gyuri</castItem>
           <castItem>Imre</castItem>
@@ -173,8 +180,35 @@
             Rathsherren, Volk, etc. etc.</castItem>
         </castList>
       </div>
+      <set>
+        <p>Ort der Handlung:</p>
+        <p>1. Akt: Im Temeser Banate.</p>
+        <p>2. Akt: In einem Zigeunerdorfe ebendaselbst.</p>
+        <p>3. Akt: In Wien.</p>
+        <p>Zeit der Handlung: Gegen Mitte des vorigen Jahrhunderts</p>
+      </set>
+    </front>
+    <body>
       <div type="act">
-        <head>1. Akt</head>
+        <head>Erster Act.</head>
+        <sp who="#chor_der_schiffer">
+          <speaker>CHOR DER SCHIFFER.</speaker>
+          <lg>
+            <l>Das wär' kein rechter Schiffersknecht,</l>
+            <l>Der sich vor'm Wasser fürchten möcht! –</l>
+            <l>Nur d'rauf und dran</l>
+            <l>Vertrau' dem Kahn</l>
+            <l>Auf schwanker Bahn</l>
+            <l>Dich sorglos an! Hollah Hoh! Hollah Hoh!</l>
+            <l>Geh' fahr' mit mir, Herzliebste mein,</l>
+            <l>Wir steuern in die Eh' hinein –</l>
+            <l>Hab' keine Scheu</l>
+            <l>Wir sind ja Zwei,</l>
+            <l>Wenn's schief geht,</l>
+            <l>Bin ich auch dabei!</l>
+            <l>Hollah Hoh!</l>
+          </lg>
+        </sp>
         <div type="scene">
           <head>Erste Scene.</head>
           <sp who="#ottokar">
@@ -893,7 +927,11 @@
               <l>So schwör' ich, kriegt er mich nicht zahm –</l>
               <l>Sein Weib, das will ich niemals sein,</l>
               <l>Da sag' ich zehnmal »Nein«! –</l>
-              <l>ZSUPÁN, CARNERO, MIRABELLA UND CHOR.</l>
+            </lg>
+          </sp>
+          <sp who="#zsupan #carnero #mirabella #chor">
+            <speaker>ZSUPÁN, CARNERO, MIRABELLA UND CHOR.</speaker>
+            <lg>
               <l>Wenn man sie sieht,</l>
               <l>Das Herz in Lieb' erglüht,</l>
               <l>Wer sie erblickt,</l>
@@ -926,8 +964,8 @@
               <l>Zu gratuliren, zu gratuliren</l>
               <l>Wäre dann</l>
               <l>Ihm nie dem armen</l>
+              <l>Armen Mann!</l>
             </lg>
-            <l>Armen Mann!</l>
             <stage>Sortie.</stage>
           </sp>
           <sp who="#arsena">
@@ -1065,7 +1103,11 @@
             <lg>
               <l>O holde Nacht –</l>
               <l>Die Liebe wacht!</l>
-              <l>BARINKAY, SAFFI UND CZIPRA.</l>
+            </lg>
+          </sp>
+          <sp who="#barinkay #saffi #czipra">
+            <speaker>BARINKAY, SAFFI UND CZIPRA.</speaker>
+            <lg>
               <l>Nur sachte,– sacht' –</l>
               <l>Zu früh gelacht!</l>
             </lg>
@@ -1088,7 +1130,11 @@
             <lg>
               <l>O welche Nacht ...</l>
               <l>O holde Nacht ...</l>
-              <l>BARINKAY, SAFFI UND CZIPRA.</l>
+            </lg>
+          </sp>
+          <sp who="#barinkay #saffi #czipra">
+            <speaker>BARINKAY, SAFFI UND CZIPRA.</speaker>
+            <lg>
               <l>Gebt Acht, – gebt Acht,</l>
               <l>Die Rache wacht!</l>
             </lg>
@@ -1111,7 +1157,11 @@
             <lg>
               <l>Von uns wird sacht</l>
               <l>Er ausgelacht.</l>
-              <l> BARINKAY, SAFFI UND CZIPRA.</l>
+            </lg>
+          </sp>
+          <sp who="#barinkay #saffi #czipra">
+            <speaker>BARINKAY, SAFFI UND CZIPRA.</speaker>
+            <lg>
               <l>Gebt Acht – gebt Acht,</l>
               <l>Die Rache wacht!</l>
             </lg>
@@ -1189,7 +1239,11 @@
             <lg>
               <l>Gut' Nacht – gut' Nacht –</l>
               <l>Die Liebe wacht!</l>
-              <l>BARINKAY, SAFFI UND CZIPRA.</l>
+            </lg>
+          </sp>
+          <sp who="#barinkay #saffi #czipra">
+            <speaker>BARINKAY, SAFFI UND CZIPRA.</speaker>
+            <lg>
               <l>Gebt Acht – gebt Acht,</l>
               <l>Die Rache wacht!</l>
             </lg>
@@ -1197,9 +1251,13 @@
         </div>
         <div type="scene">
           <head>Zwölfte Scene.</head>
-          <p>ZIGEUNER-CHOR.</p>
-          <p>Dschingrah – dschingrah!</p>
-          <p>Dschingrah – dschingrah!</p>
+          <sp who="#chor_der_zigeuner">
+            <speaker>ZIGEUNER-CHOR.</speaker>
+            <lg>
+              <l>Dschingrah – dschingrah!</l>
+              <l>Dschingrah – dschingrah!</l>
+            </lg>
+          </sp>
           <sp who="#barinkay">
             <speaker>BARINKAY.</speaker>
             <l>Ha – was hör' ich da für Klänge!</l>
@@ -1215,9 +1273,11 @@
           </sp>
           <sp who="#czipra">
             <speaker>CZIPRA.</speaker>
+            <l>Uns're Leute kehren wieder!</l>
+          </sp>
+          <sp who="#chor_der_zigeuner">
+            <speaker>ZIGEUNER-CHOR.</speaker>
             <lg>
-              <l>Uns're Leute kehren wieder!</l>
-              <l>ZIGEUNER-CHOR.</l>
               <l>O habet Acht, –</l>
               <l>Habet Acht –</l>
               <l>Vor den Kindern der Nacht!</l>
@@ -1236,11 +1296,13 @@
               <l>Hell und klar</l>
               <l>Klingt's fürwahr</l>
               <l>Immerdar!</l>
-              <l>SAFFI, CZIPRA UND BARINKAY.</l>
-              <l>Dieses Lied – es sprüht und glüht!</l>
             </lg>
           </sp>
-          <sp who="#alle">
+          <sp who="#saffi #czipra #barinkay">
+            <speaker>SAFFI, CZIPRA UND BARINKAY.</speaker>
+            <l>Dieses Lied – es sprüht und glüht!</l>
+          </sp>
+          <sp who="#saffi #czipra #barinkay #chor_der_zigeuner">
             <speaker>ALLE.</speaker>
             <lg>
               <l>Dschingrah – dschingrah – sa, sa, sa –</l>
@@ -1286,7 +1348,11 @@
               <l>Um Treu' ihm zu schwören,</l>
               <l>Treu ihm zu schwören –</l>
               <l>Mann für Mann!</l>
-              <l>ZIGEUNER-CHOR.</l>
+            </lg>
+          </sp>
+          <sp who="#chor_der_zigeuner">
+            <speaker>ZIGEUNER-CHOR.</speaker>
+            <lg>
               <l>Heran, heran!</l>
               <l>Welches Glück ist uns bescheert!</l>
               <l>Der Woywode heimgekehrt!</l>
@@ -1323,9 +1389,11 @@
               <l>Da hab' ich, was ich brauchen kann!</l>
             </lg>
             <stage>Zu den Zigeunern.</stage>
+            <l>Ich nehme Eure Huldigung an!</l>
+          </sp>
+          <sp who="#chor_der_zigeuner">
+            <speaker>ZIGEUNER-CHOR.</speaker>
             <lg>
-              <l>Ich nehme Eure Huldigung an!</l>
-              <l>ZIGEUNER-CHOR.</l>
               <l>Er nimmt uns're Huldigung an!</l>
               <l>Er nimmt uns're Huldigung an! Heran!</l>
               <l>So möge nun unser Herr er bleiben –</l>
@@ -1353,9 +1421,9 @@
             <stage>ironisch.</stage>
             <l>Herr Schweinefürst – ich bin es blos!</l>
           </sp>
-          <sp who="#chor_der_aus_dem_haus_kommenden_gruppe">
-            <speaker>CHOR <hi>der aus dem Haus kommenden Gruppe.</hi>
-            </speaker>
+          <sp who="#zsupans_gruppe">
+            <speaker>CHOR</speaker>
+            <stage>der aus dem Haus kommenden Gruppe.</stage>
             <lg>
               <l>Was hat für wicht'ge Kunde</l>
               <l>Er zu so später Stunde?</l>
@@ -1368,19 +1436,22 @@
           <sp who="#barinkay">
             <speaker>BARINKAY</speaker>
             <stage>zu Zsupán.</stage>
-            <lg>
-              <l>Du wolltest ja zum Schwiegersohn ...</l>
-              <l>ARSENA, ZSUPÁN.</l>
-              <l>Einen Baron ...</l>
-            </lg>
+            <l>Du wolltest ja zum Schwiegersohn ...</l>
+          </sp>
+          <sp who="#arsena #zsupan">
+            <speaker>ARSENA, ZSUPÁN.</speaker>
+            <l>Einen Baron ...</l>
           </sp>
           <sp who="#barinkay">
             <speaker>BARINKAY.</speaker>
             <lg>
               <l>Ich bin es schon!</l>
               <l>Ja staunet nur – ich bin Baron!</l>
-              <l>CARNERO, SAFFI, ARSENA, CZIPRA <hi>Chor der Zsupán'schen Truppe.</hi>
-              </l>
+            </lg>
+          </sp>
+          <sp who="#carnero #saffi #arsena #czipra #zsupans_gruppe">
+            <speaker>CARNERO, SAFFI, ARSENA, CZIPRA, CHOR DER ZSUPÁN'SCHEN TRUPPE.</speaker>
+            <lg>
               <l>Baron – Baron – er ist Baron!?</l>
               <l>Ah – ah – er ist Baron.</l>
             </lg>
@@ -1389,7 +1460,7 @@
             <speaker>BARINKAY</speaker>
             <stage>auf die Zigeuner deutend.</stage>
             <lg>
-              <l>Komm' her und schau' Dir <hi>die</hi> Leute an,</l>
+              <l>Komm' her und schau' Dir <emph>die</emph> Leute an,</l>
               <l>Sie alle sind mir unterthan, –</l>
               <l>Ich bin ihr Woywode, bin ihr Baron,</l>
               <l>Und mein ist der Zigeunerthron!</l>
@@ -1460,7 +1531,7 @@
               <l>Herz und Sinn!</l>
             </lg>
           </sp>
-          <sp who="#chor_der_zsupanschen_gruppe">
+          <sp who="#zsupans_gruppe">
             <speaker>CHOR DER ZSUPÁN'SCHEN GRUPPE.</speaker>
             <l>Woywode der Zigeuner – Hahaha!!!</l>
           </sp>
@@ -1490,7 +1561,7 @@
               <l>So war es nicht gemeint! –</l>
             </lg>
           </sp>
-          <sp who="#chor_der_zsupanschen_gruppe">
+          <sp who="#zsupans_gruppe">
             <speaker>CHOR DER ZSUPÁNSCHEN GRUPPE.</speaker>
             <l>So war es nicht gemeint!</l>
           </sp>
@@ -1499,7 +1570,7 @@
             <stage>Saffi aus der Menge holend.</stage>
             <lg>
               <l>Wie ich es meine, zeig' ich Dir!</l>
-              <l>Mein Weib – wird – <hi>diese</hi> hier! –</l>
+              <l>Mein Weib – wird – <emph>diese</emph> hier! –</l>
             </lg>
           </sp>
           <sp who="#saffi">
@@ -1510,11 +1581,11 @@
             <speaker>BARINKAY</speaker>
             <stage>zu Saffi.</stage>
             <lg>
-              <l>Bei <hi>Dir</hi> find' ich ein treues Herz,</l>
-              <l>Zu dem vor <hi>dieser</hi> ich mich rette!</l>
+              <l>Bei <emph>Dir</emph> find' ich ein treues Herz,</l>
+              <l>Zu dem vor <emph>dieser</emph> ich mich rette!</l>
             </lg>
           </sp>
-          <sp who="#chor_zsupans">
+          <sp who="#zsupans_gruppe">
             <speaker>CHOR ZSUPÁN'S.</speaker>
             <l>Er nimmt sich die Zigeunerin – hahaha!</l>
           </sp>
@@ -1629,19 +1700,19 @@
             <stage>auffahrend.</stage>
             <l>Du wagst es ...?</l>
             <stage>Carnero und Barinkay stehen sich drohend gegenüber.</stage>
-            <pb n="25"/>
+          </sp>
+          <pb n="25"/>
+          <sp who="#chor_der_zigeuner">
+            <speaker>ZIGEUNER-CHOR.</speaker>
             <lg>
-              <l>ZIGEUNER-CHOR.</l>
               <l>Droht dem Woywoden Gefahr,</l>
               <l>So schützt ihn seine Schaar!</l>
             </lg>
           </sp>
           <sp who="#zsupan">
             <speaker>ZSUPÁN</speaker>
-            <stage>
-              <hi>Carnero tritt beschützend zwischen diesen und Barinkay, wird aber von Barinkay
-                fortgestoßen.</hi>
-            </stage>
+            <stage>Carnero tritt beschützend zwischen diesen und Barinkay, wird aber von Barinkay
+              fortgestoßen.</stage>
             <lg>
               <l>Oho! Oho!</l>
               <l>Das geht nicht so</l>
@@ -1653,7 +1724,7 @@
             <stage>Polternd.</stage>
             <lg>
               <l>Jetzt wird es mir zu dick!</l>
-              <l>Ich <hi>laß'</hi> mich nicht blamiren!</l>
+              <l>Ich <emph>laß'</emph> mich nicht blamiren!</l>
             </lg>
           </sp>
           <sp who="#mirabella">
@@ -1664,14 +1735,22 @@
               <l>Verletzet Ihr den Stolz der Schönen,</l>
               <l>Uns Alle wagt Ihr zu verhöhnen –</l>
               <l>Das werden wir Euch abgewöhnen!</l>
-              <l>ZSUPÁN, OTTOKAR, MIRABELLA.</l>
+            </lg>
+          </sp>
+          <sp who="#zsupan #ottokar #mirabella">
+            <speaker>ZSUPÁN, OTTOKAR, MIRABELLA.</speaker>
+            <lg>
               <l>Um frech dem Uebermuth zu fröhnen,</l>
               <l>Verletzet Ihr den Stolz der Schönen,</l>
               <l>Uns Alle wagt Ihr zu verhöhnen?</l>
               <l>Das werden wir Euch abgewöhnen!</l>
-              <l>CARNERO, ZSUPÁN, MIRABELLA, OTTOKAR UND CHOR.</l>
+            </lg>
+          </sp>
+          <sp who="#carnero #zsupan #mirabella #ottokar #chor">
+            <speaker>CARNERO, ZSUPÁN, MIRABELLA, OTTOKAR UND CHOR.</speaker>
+            <lg>
               <l>Man muß die saubern Herren</l>
-              <l>Mitunter <hi>mores</hi> lehren –</l>
+              <l>Mitunter <emph>mores</emph> lehren –</l>
               <l>Auch dann, wenn sie sich dagegen wehren!</l>
             </lg>
           </sp>
@@ -1698,8 +1777,10 @@
               <l>Um mich zu freien ...!</l>
               <pb n="26"/>
             </lg>
+          </sp>
+          <sp who="#chor_der_zigeuner">
+            <speaker>ZIGEUNER-CHOR.</speaker>
             <lg>
-              <l>ZIGEUNER-CHOR.</l>
               <l>Er wählet sich Saffi – so ehrlich ist Keiner</l>
               <l>Er wählet zur Gattin ein Kind der Zigeuner!</l>
             </lg>
@@ -1709,7 +1790,11 @@
             <lg>
               <l>Eure Ränke sind erkannt,</l>
               <l>Nie erhält sie meine Hand.</l>
-              <l>ARSENA, MIRABELLA, ZSUPÁN CARNERO.</l>
+            </lg>
+          </sp>
+          <sp who="#arsena #mirabella #zsupan #carnero">
+            <speaker>ARSENA, MIRABELLA, ZSUPÁN, CARNERO.</speaker>
+            <lg>
               <l>Ha, welche Sprache –</l>
               <l>Das fordert Rache!</l>
             </lg>
@@ -1752,62 +1837,76 @@
           </sp>
           <sp who="#ottokar">
             <speaker>OTTOKAR.</speaker>
-            <lg>
-              <l>Holt das Militär!</l>
-              <l>SAFFI, CZIPRA, ZIGEUNER-CHOR.</l>
-              <l>Fürchte nichts, o Herr!</l>
-              <l>CARNERO, ZSUPÁN.</l>
-              <l>Führt sie vor's Gericht!</l>
-            </lg>
+            <l>Holt das Militär!</l>
+          </sp>
+          <sp who="#saffi #czipra #chor_der_zigeuner">
+            <speaker>SAFFI, CZIPRA, ZIGEUNER-CHOR.</speaker>
+            <l>Fürchte nichts, o Herr!</l>
+          </sp>
+          <sp who="#carnero #zsupan">
+            <speaker>CARNERO, ZSUPÁN.</speaker>
+            <l>Führt sie vor's Gericht!</l>
           </sp>
           <sp who="#barinkay">
             <speaker>BARINKAY.</speaker>
+            <l>Weg Du feiger Wicht!</l>
+          </sp>
+          <sp who="#barinkay #saffi #czipra #chor_der_zigeuner">
+            <speaker>BARINKAY, SAFFI, CZIPRA, ZIGEUNER-CHOR.</speaker>
             <lg>
-              <l>Weg Du feiger Wicht!</l>
-              <l>BARINKAY, SAFFI, CZIPRA, ZIGEUNER-CHOR.</l>
               <l>Halt – berührt sie nicht!</l>
               <l>Wagt Euch nicht anher,</l>
-              <l>ZSUPÁN'S GRUPPE, ARSENA, MIRABELLA.</l>
-              <l>O welche Qual – welche Qual!</l>
-              <pb n="27"/>
             </lg>
+          </sp>
+          <sp who="#zsupans_gruppe #arsena #mirabella">
+            <speaker>ZSUPÁN'S GRUPPE, ARSENA, MIRABELLA.</speaker>
+            <l>O welche Qual – welche Qual!</l>
+            <pb n="27"/>
           </sp>
           <sp who="#mirabella">
             <speaker>MIRABELLA.</speaker>
-            <lg>
-              <l>O der Skandal – der Skandal!</l>
-              <l>ZSUPÁN, OTTOKAR, CARNERO.</l>
-              <l>Wir massacriren Euch ...</l>
-            </lg>
+            <l>O der Skandal – der Skandal!</l>
           </sp>
-          <sp who="#barinkay #die_zigeuner">
+          <sp who="#zsupan #ottokar #carnero">
+            <speaker>ZSUPÁN, OTTOKAR, CARNERO.</speaker>
+            <l>Wir massacriren Euch ...</l>
+          </sp>
+          <sp who="#barinkay #chor_der_zigeuner">
             <speaker>BARINKAY UND DIE ZIGEUNER.</speaker>
             <l>Wagt Euch nicht heran –</l>
             <stage>Drohend.</stage>
-            <lg>
-              <l>Sonst wehrt Euch Mann für Mann!</l>
-              <l>ZSUPÁN'S GRUPPE.</l>
-              <l>Wir hau'n Euch windelweich!</l>
-            </lg>
+            <l>Sonst wehrt Euch Mann für Mann!</l>
           </sp>
-          <sp who="#barinkay #seine_gruppe">
+          <sp who="#zsupans_gruppe">
+            <speaker>ZSUPÁN'S GRUPPE.</speaker>
+            <l>Wir hau'n Euch windelweich!</l>
+          </sp>
+          <sp who="#barinkay #barinkays_gruppe">
             <speaker>BARINKAY UND SEINE GRUPPE.</speaker>
-            <lg>
-              <l>Ach, der Streit ist arg und graus ...</l>
-              <l>ZSUPÁN'S GRUPPE.</l>
-              <l>Ha, Ihr fordert uns heraus ...</l>
-            </lg>
+            <l>Ach, der Streit ist arg und graus ...</l>
+          </sp>
+          <sp who="#zsupans_gruppe">
+            <speaker>ZSUPÁN'S GRUPPE.</speaker>
+            <l>Ha, Ihr fordert uns heraus ...</l>
           </sp>
           <sp who="#barinkay">
             <speaker>BARINKAY.</speaker>
             <lg>
               <l>Laßt mich ruhig weiter zieh'n</l>
               <l>Mit meiner Liebe ...</l>
-              <l>ZSUPÁN'S GRUPPE.</l>
+            </lg>
+          </sp>
+          <sp who="#zsupans_gruppe">
+            <speaker>ZSUPÁN'S GRUPPE.</speaker>
+            <lg>
               <l>Ha, Ihr fordert uns heraus,</l>
               <l>Ihr Kesselflicker – Pferdediebe!</l>
-              <l>SAFFI, CZIPRA, BARINKAY <hi>für sich.</hi>
-              </l>
+            </lg>
+          </sp>
+          <sp who="#saffi #czipra #barinkay">
+            <speaker>SAFFI, CZIPRA, BARINKAY</speaker>
+            <stage>für sich.</stage>
+            <lg>
               <l>Ach ich wußte ia</l>
               <l>Daß das Glück uns nah</l>
               <l>Seit ich ihn, (Seit ich <emph>»sie«</emph>)</l>
@@ -1818,7 +1917,11 @@
             <lg>
               <l>Was ich ersehnt,</l>
               <l>Stand herrlich vor mir da! –</l>
-              <l>ZSUPÁN, ARSENA, CARNERO MIRABELLA, OTTOKAR.</l>
+            </lg>
+          </sp>
+          <sp who="#zsupan #arsena #carnero #mirabella #ottokar">
+            <speaker>ZSUPÁN, ARSENA, CARNERO, MIRABELLA, OTTOKAR.</speaker>
+            <lg>
               <l>Ha, wie frech sie sind ...</l>
               <l>Ha, er verachtet mein Kind ...</l>
               <l>Welch' ein Hohn, welch' ein Hohn</l>
@@ -1826,7 +1929,7 @@
               <l>Ihn ereilet unser Grimm!</l>
             </lg>
           </sp>
-          <sp who="#die_zigeuner">
+          <sp who="#chor_der_zigeuner">
             <speaker>DIE ZIGEUNER</speaker>
             <stage>zu Barinkay.</stage>
             <lg>
@@ -1836,20 +1939,33 @@
               <l>Wer gegen ihn sich wagt ...</l>
               <l>Ja wir schützen Dich bei Tag und Nacht</l>
               <l>Weh dem, der Dich zu berühren wagt!</l>
-              <l>BARINKAY, SAFFI, CZIPRA.</l>
+            </lg>
+          </sp>
+          <sp who="#barinkay #saffi #czipra">
+            <speaker>BARINKAY, SAFFI, CZIPRA.</speaker>
+            <lg>
               <l>Habt Ihr auch Geld wie Heu</l>
               <l>Uns ist das ganz einerlei –</l>
               <l>Nimmer macht uns Geld und Gold</l>
               <l>Allein das Leben hold! –</l>
-              <l>ZSUPÁN'S CHOR.</l>
+            </lg>
+          </sp>
+          <sp who="#zsupans_gruppe">
+            <speaker>ZSUPÁN'S CHOR.</speaker>
+            <lg>
               <l>Wir vergelten Alles ihm</l>
               <l>Wir rächen uns an Euch!</l>
-              <l>ZIGEUNER-CHOR.</l>
+            </lg>
+          </sp>
+          <sp who="#chor_der_zigeuner">
+            <speaker>ZIGEUNER-CHOR.</speaker>
+            <lg>
               <l>Weh' dem, der Dich zu berühren wagt!</l>
               <l>Wagt keinen Streich!</l>
             </lg>
           </sp>
-          <sp who="#alle">
+          <sp
+            who="#zsupan #barinkay #zsupans_gruppe #carnero #arsena #mirabella #saffi #czipra #ottokar #chor_der_zigeuner">
             <speaker>ALLE.</speaker>
             <lg>
               <l>Da wir nun Euch erkannt,</l>
@@ -1862,11 +1978,19 @@
               <l>Er reicht Euch uns're Hand!</l>
               <l>(Nur wer's verdient</l>
               <l>Dem reichen wir die Hand!)</l>
-              <l>ZSUPÁN'S CHOR.</l>
+            </lg>
+          </sp>
+          <sp who="#zsupans_gruppe">
+            <speaker>ZSUPÁN'S CHOR.</speaker>
+            <lg>
               <l>Die Rache ist ihm ganz gewiß</l>
               <l>Der freche Wicht entgeht uns nicht!</l>
-              <l>ZIGEUNER-CHOR <hi>zu Barinkay.</hi>
-              </l>
+            </lg>
+          </sp>
+          <sp who="#chor_der_zigeuner">
+            <speaker>ZIGEUNER-CHOR</speaker>
+            <stage>zu Barinkay.</stage>
+            <lg>
               <l>Nimm auf's Neue</l>
               <l>Den Schwur der Treue</l>
               <l>Gut und Leben</l>
@@ -1887,7 +2011,7 @@
         </div>
       </div>
       <div type="act">
-        <head>2. Akt</head>
+        <head>Zweiter Act.</head>
         <div type="scene">
           <head>Erste Scene.</head>
           <stage>Introduction.</stage>
@@ -2007,8 +2131,8 @@
               <l>Mein – mein – mein auf immerdar:</l>
               <l>Es ist wie ein Märchen, doch so wahr!</l>
             </lg>
-            <stage>No. 9.</stage>
           </sp>
+          <stage>No. 9.</stage>
           <sp who="#saffi">
             <speaker>SAFFI.</speaker>
             <lg>
@@ -2166,16 +2290,18 @@
               <l>Ha – 's ist grandios!!</l>
             </lg>
           </sp>
-          <sp who="#alle_drei">
+          <sp who="#saffi #barinkay #czipra">
             <speaker>ALLE DREI.</speaker>
             <lg>
               <l>Der Schatz!! Der Schatz!!</l>
               <l>Seht dies Gefunkel – diese Pracht</l>
               <l>Ei, wer hätte das gedacht!! Ah!</l>
             </lg>
-            <stage>Schatz-Walzer. Terzett.</stage>
+          </sp>
+          <stage>Schatz-Walzer. Terzett.</stage>
+          <sp who="#saffi #barinkay #czipra">
+            <speaker>SAFFI, BARINKAY UND CZIPRA.</speaker>
             <lg>
-              <l>SAFFI, BARINKAY UND CZIPRA.</l>
               <l>Ha seht, es winkt,</l>
               <l>Es blinkt,</l>
               <l>Es klingt!</l>
@@ -2238,7 +2364,7 @@
               <l>Könnet sagen:</l>
             </lg>
           </sp>
-          <sp who="#alle_drei">
+          <sp who="#saffi #barinkay #czipra">
             <speaker>ALLE DREI.</speaker>
             <lg>
               <l>Ha seht, es winkt,</l>
@@ -2266,7 +2392,7 @@
               <l>Die Dir's entgegenschlägt!</l>
             </lg>
           </sp>
-          <sp who="#alle_drei">
+          <sp who="#saffi #barinkay #czipra">
             <speaker>ALLE DREI.</speaker>
             <lg>
               <l>Ha seht – es winkt,</l>
@@ -2280,12 +2406,12 @@
               <l>Hier sind die Schätze,</l>
               <l>Die wir gewollt!</l>
             </lg>
-            <stage>No. 10.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweite Scene.</head>
-          <sp who="#der_alte_pali">
+          <stage>No. 10.</stage>
+          <sp who="#pali">
             <speaker>DER ALTE PALI.</speaker>
             <lg>
               <l>Auf! – Auf! – Auf!</l>
@@ -2353,7 +2479,11 @@
             <speaker>ALLGEMEINER CHOR.</speaker>
             <lg>
               <l>Ha das Eisen wird gefüge etc. etc.</l>
-              <l>ABGANGS-CHOR.</l>
+            </lg>
+          </sp>
+          <sp who="#abgangs-chor">
+            <speaker>ABGANGS-CHOR.</speaker>
+            <lg>
               <l>Kling und Klang!</l>
               <l>Eisen macht Gesang,</l>
               <l>Kling und Klang!</l>
@@ -2371,11 +2501,9 @@
           <stage>No. 11.</stage>
           <sp who="#carnero">
             <speaker>CARNERO.</speaker>
-            <lg>
-              <l>Sein <emph>Weib</emph>? Wer hat Euch denn getraut?</l>
-            </lg>
-            <stage>No. 11½. Duett.</stage>
+            <l>Sein <emph>Weib</emph>? Wer hat Euch denn getraut?</l>
           </sp>
+          <stage>No. 11½. Duett.</stage>
           <sp who="#barinkay">
             <speaker>BARINKAY.</speaker>
             <stage>I.</stage>
@@ -2392,7 +2520,7 @@
             <speaker>BARINKAY.</speaker>
             <l>Der Dompfaff, der hat uns getraut!</l>
           </sp>
-          <sp who="#alle">
+          <sp who="#arsena #czipra #mirabella #pali #zsupan #ottokar #carnero #chor_der_zigeuner">
             <speaker>ALLE.</speaker>
             <l>Der Dompfaff, der hat sie getraut! Ja, ja!</l>
           </sp>
@@ -2410,14 +2538,18 @@
               <l>Mit Sternengold,</l>
               <l>Mit Sternengold,</l>
               <l>So weit Ihr schaut, besä't!</l>
-              <l>SAFFI, BARINKAY.</l>
+            </lg>
+          </sp>
+          <sp who="#saffi #barinkay">
+            <speaker>SAFFI, BARINKAY.</speaker>
+            <lg>
               <l>Und mild sang die Nachtigall</l>
               <l>Ihr Liedchen in die Nacht:</l>
               <l>Die Liebe, die Liebe</l>
               <l>Ist eine Himmelsmacht!</l>
             </lg>
           </sp>
-          <sp who="#alle">
+          <sp who="#arsena #czipra #mirabella #pali #zsupan #ottokar #carnero #chor_der_zigeuner">
             <speaker>ALLE.</speaker>
             <lg>
               <l>Ja – mild sang die Nachtigall</l>
@@ -2447,7 +2579,7 @@
             <speaker>BARINKAY.</speaker>
             <l>Zwei Störche, die klapperten laut –</l>
           </sp>
-          <sp who="#alle">
+          <sp who="#arsena #czipra #mirabella #pali #zsupan #ottokar #carnero #chor_der_zigeuner">
             <speaker>ALLE.</speaker>
             <l>Zwei Störche, die klapperten laut! Ja ja!</l>
           </sp>
@@ -2468,14 +2600,18 @@
               <l>Als sagten sie:</l>
               <l>O liebet Euch,</l>
               <l>Ihr seid ja Weib und Mann!</l>
-              <l>SAFFI, BARINKAY.</l>
+            </lg>
+          </sp>
+          <sp who="#saffi #barinkay">
+            <speaker>SAFFI, BARINKAY.</speaker>
+            <lg>
               <l>Vergeßt nie, – daß oft der Storch</l>
               <l>Das Glück in's Haus gebracht, –</l>
               <l>Wo Liebe, – ja Liebe</l>
               <l>Daheim – die Himmelsmacht!</l>
             </lg>
           </sp>
-          <sp who="#alle">
+          <sp who="#arsena #czipra #mirabella #pali #zsupan #ottokar #carnero #chor_der_zigeuner">
             <speaker>ALLE.</speaker>
             <lg>
               <l>Vergeßt nie, daß oft der Storch</l>
@@ -2483,9 +2619,9 @@
               <l>Wo Liebe, – ja Liebe</l>
               <l>Daheim – die Himmelsmacht!</l>
             </lg>
-            <stage>Sittencommissions-Couplet.</stage>
-            <stage>No. 12.</stage>
           </sp>
+          <stage>Sittencommissions-Couplet.</stage>
+          <stage>No. 12.</stage>
           <sp who="#carnero">
             <speaker>CARNERO.</speaker>
             <lg>
@@ -2550,9 +2686,9 @@
               <l>[:Ausgeglitten</l>
               <l>Vor der Sittencommission:]</l>
             </lg>
-            <stage>No. 12½.</stage>
-            <stage>Werberlied.</stage>
           </sp>
+          <stage>No. 12½.</stage>
+          <stage>Werberlied.</stage>
           <sp who="#graf_homonay">
             <speaker>GRAF HOMONAY.</speaker>
             <stage>1.</stage>
@@ -2567,7 +2703,7 @@
               <l>Ha, der Feind soll es erfahren!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_der_soldaten">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Hier der Csako, her den Hut,</l>
@@ -2597,7 +2733,7 @@
               <l>Die uns den Feind soll verderben</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_der_soldaten">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Lieber möge unser Blut</l>
@@ -2635,10 +2771,11 @@
               <l>Und Beide süß und klar und wahr,</l>
               <l>So liebt sie der Hußar!</l>
             </lg>
-            <stage>No. 13. Finale II.</stage>
-            <stage>Walzer-Introduction.</stage>
           </sp>
-          <sp who="#alle">
+          <stage>No. 13. Finale II.</stage>
+          <stage>Walzer-Introduction.</stage>
+          <sp
+            who="#saffi #arsena #czipra #mirabella #barinkay #pali #zsupan #ottokar #carnero #chor_der_zigeuner #graf_homonay #chor_der_soldaten">
             <speaker>ALLE.</speaker>
             <l>Nach Wien?!</l>
           </sp>
@@ -2799,7 +2936,8 @@
               <l>Und nun wird Alles offenbar!</l>
             </lg>
           </sp>
-          <sp who="#alle">
+          <sp
+            who="#saffi #arsena #mirabella #barinkay #pali #zsupan #ottokar #carnero #chor_der_zigeuner #graf_homonay #chor_der_soldaten">
             <speaker>ALLE</speaker>
             <stage>außer Czipra.</stage>
             <lg>
@@ -2812,7 +2950,8 @@
             <speaker>GRAF HOMONAY.</speaker>
             <l>Vor Euch seht Ihr – ein Fürstenkind;</l>
           </sp>
-          <sp who="#alle_anderen">
+          <sp
+            who="#saffi #arsena #czipra #mirabella #barinkay #pali #zsupan #ottokar #carnero #chor_der_zigeuner #chor_der_soldaten">
             <speaker>ALLE ANDEREN.</speaker>
             <l>Ein Fürstenkind!</l>
           </sp>
@@ -2835,12 +2974,16 @@
               <l>Der <emph>letzte Pascha im Ungarland</emph>.</l>
             </lg>
           </sp>
-          <sp who="#alle">
+          <sp
+            who="#saffi #arsena #czipra #mirabella #barinkay #pali #zsupan #ottokar #carnero #chor_der_zigeuner #chor_der_soldaten">
             <speaker>ALLE.</speaker>
             <l>Ah!!</l>
-            <stage>Ensemble.</stage>
+          </sp>
+          <stage>Ensemble.</stage>
+          <sp who="#arsena #mirabella #czipra #barinkay #graf_homonay #ottokar #zsupan #carnero">
+            <speaker>ARSENA, MIRABELLA, CZIPRA, BARINKAY, HOMONAY, OTTOKAR, ZSUPÁN UND
+              CARNERO.</speaker>
             <lg>
-              <l>ARSENA, MIRABELLA, CZIPRA, BARINKAY, HOMONAY, OTTOKAR, ZSUPÁN UND CARNERO.</l>
               <l>Ein Fürstenkind – ein Wunder ist gescheh'n,</l>
               <l>Ha, sie verdient, daß wir um Gnade fleh'n –</l>
               <l>Soeben noch Zigeunermaid,</l>
@@ -2898,7 +3041,7 @@
             <speaker>SAFFI.</speaker>
             <l>Mich verlassen?!</l>
           </sp>
-          <sp who="#graf_homonay #chor">
+          <sp who="#graf_homonay #chor_der_soldaten">
             <speaker>GRAF HOMONAY UND CHOR.</speaker>
             <lg>
               <l>Bruder, komm zum Militär,</l>
@@ -2909,7 +3052,11 @@
               <l>Seine Erde färben,</l>
               <l>Eh' die Hand im Kampfe ruht,</l>
               <l>Die uns den Feind soll verderben!</l>
-              <l>ZSUPÁN, OTTOKAR, MIRABELLA, ARSENA UND CARNERO.</l>
+            </lg>
+          </sp>
+          <sp who="#zsupan #ottokar #mirabella #arsena #carnero">
+            <speaker>ZSUPÁN, OTTOKAR, MIRABELLA, ARSENA UND CARNERO.</speaker>
+            <lg>
               <l>Bringt der Teufel die daher</l>
               <l>Just bei uns zu werben!</l>
               <l>Was thu' ich beim Militär?</l>
@@ -3002,7 +3149,7 @@
               <l>Wo alle Menschen das Leben versteh'n!</l>
             </lg>
           </sp>
-          <sp who="#zigeuner">
+          <sp who="#chor_der_zigeuner">
             <speaker>ZIGEUNER.</speaker>
             <lg>
               <l>O voll Fröhlichkeit</l>
@@ -3044,9 +3191,10 @@
         </div>
       </div>
       <div type="act">
-        <head>3. Akt</head>
+        <head>Dritter Act.</head>
         <div type="scene">
           <head>1. Scene.</head>
+          <stage>No. 14.</stage>
           <sp who="#allgemeiner_chor">
             <speaker>ALLGEMEINER CHOR.</speaker>
             <lg>
@@ -3058,8 +3206,8 @@
               <l>Als Sieger kehren sie zurück –</l>
               <l>O Freude – o Glück!</l>
             </lg>
-            <stage>No. 15. Lied.</stage>
           </sp>
+          <stage>No. 15. Lied.</stage>
           <sp who="#arsena">
             <speaker>ARSENA.</speaker>
             <stage>1.</stage>
@@ -3081,7 +3229,7 @@
               <pb n="49"/>
             </lg>
           </sp>
-          <sp who="#alle_drei">
+          <sp who="#arsena #zsupan #carnero">
             <speaker>ALLE DREI.</speaker>
             <lg>
               <l>Ja, dies und das und noch etwas</l>
@@ -3114,7 +3262,7 @@
               <l>Als ich verlassen saß!</l>
             </lg>
           </sp>
-          <sp who="#alle_drei">
+          <sp who="#arsena #zsupan #carnero">
             <speaker>ALLE DREI.</speaker>
             <lg>
               <l>Ja, dies und das und noch etwas</l>
@@ -3146,7 +3294,7 @@
               <l>Bringt uns der Ehe Spaß!</l>
             </lg>
           </sp>
-          <sp who="#alle_drei">
+          <sp who="#arsena #zsupan #carnero">
             <speaker>ALLE DREI.</speaker>
             <lg>
               <l>Ja, dies und das und noch etwas</l>
@@ -3158,9 +3306,7 @@
         </div>
         <div type="scene">
           <head>Sechste Scene.</head>
-          <stage>
-            <hi>No. 16. Couplet.</hi>
-          </stage>
+          <stage>No. 16. Couplet.</stage>
           <sp who="#zsupan">
             <speaker>ZSUPÁN.</speaker>
             <stage>1.</stage>
@@ -3258,7 +3404,7 @@
             <lg>
               <l>Hier trag' ich ihn als theures Liebespfand!</l>
               <l>So machte schlau ich's überall,</l>
-              <l>Beim <hi>Feind</hi> war mir das ganz egal!</l>
+              <l>Beim <emph>Feind</emph> war mir das ganz egal!</l>
             </lg>
             <lg>
               <l>Und ein jedesmal</l>
@@ -3271,10 +3417,12 @@
               <l>Gott sei Dank, daß er aus!</l>
               <l>etc. etc.</l>
             </lg>
-            <stage>No. 17. Großer Einzug.</stage>
+          </sp>
+          <stage>No. 17. Großer Einzug.</stage>
+          <sp who="#chor_der_soldaten">
+            <speaker>SOLDATEN-MARSCHLIED</speaker>
+            <stage>Chor.</stage>
             <lg>
-              <l>SOLDATEN-MARSCHLIED <hi>Chor.</hi>
-              </l>
               <l>Hurrah – die Schlacht</l>
               <l>Mitgemacht</l>
               <l>Haben wir im fernen Land, –</l>
@@ -3337,8 +3485,8 @@
               <l>[:Dann lieb ich wohlgemuth,</l>
               <l>Das liegt in unser'm Blut etc. etc.:]</l>
             </lg>
-            <stage>No. 18. Finale III.</stage>
           </sp>
+          <stage>No. 18. Finale III.</stage>
           <sp who="#saffi">
             <speaker>SAFFI</speaker>
             <stage>im Hintergrunde.</stage>
@@ -3363,7 +3511,7 @@
               <l>Ist's nicht schwer – ist's nicht schwer.</l>
             </lg>
           </sp>
-          <sp who="#allgemeiner_schlusschor">
+          <sp who="#allgemeiner_chor">
             <speaker>ALLGEMEINER SCHLUßCHOR.</speaker>
             <lg>
               <l>Ja das Alles auf Ehr'</l>
