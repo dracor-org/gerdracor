@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Johann Faust</title>
+        <title type="main">Johann Faust</title>
+        <title type="sub">Ein Allegorisches Drama von fünf Aufzügen</title>
         <author key="pnd:119497921">Weidmann, Paul</author>
       </titleStmt>
       <publicationStmt>
@@ -43,57 +44,57 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="schönheitlieb">
-            <persName>SCHÖNHEITLIEB</persName>
+          <person xml:id="wagner" sex="MALE">
+            <persName>Wagner</persName>
           </person>
-          <person xml:id="theodor">
-            <persName>THEODOR</persName>
+          <person xml:id="theodor" sex="MALE">
+            <persName>Theodor</persName>
           </person>
-          <person xml:id="elisabeth">
-            <persName>ELISABETH</persName>
+          <person xml:id="elisabeth" sex="FEMALE">
+            <persName>Elisabeth</persName>
           </person>
-          <person xml:id="wagner">
-            <persName>WAGNER</persName>
+          <person xml:id="donnerschlag" sex="MALE">
+            <persName>Donnerschlag</persName>
           </person>
-          <person xml:id="donnerschlag">
-            <persName>DONNERSCHLAG</persName>
+          <person xml:id="spuraus" sex="MALE">
+            <persName>Spuraus</persName>
           </person>
-          <person xml:id="spuraus">
-            <persName>SPURAUS</persName>
+          <person xml:id="emilie" sex="FEMALE">
+            <persName>Emilie</persName>
           </person>
-          <person xml:id="emilie">
-            <persName>EMILIE</persName>
+          <person xml:id="faust" sex="MALE">
+            <persName>Faust</persName>
           </person>
-          <person xml:id="faust">
-            <persName>FAUST</persName>
+          <person xml:id="ithuriel" sex="MALE">
+            <persName>Ithuriel</persName>
           </person>
-          <person xml:id="ithuriel">
-            <persName>ITHURIEL</persName>
+          <person xml:id="helena" sex="FEMALE">
+            <persName>Helena</persName>
           </person>
-          <person xml:id="helena">
-            <persName>HELENA</persName>
+          <person xml:id="mephistopheles" sex="MALE">
+            <persName>Mephistopheles</persName>
           </person>
-          <person xml:id="mephistopheles">
-            <persName>MEPHISTOPHELES</persName>
+          <person xml:id="friedreich" sex="MALE">
+            <persName>Friedreich</persName>
           </person>
-          <person xml:id="friedreich">
-            <persName>FRIEDREICH</persName>
+          <person xml:id="silbergeitz" sex="MALE">
+            <persName>Silbergeitz</persName>
           </person>
-          <person xml:id="silbergeitz">
-            <persName>SILBERGEITZ</persName>
+          <person xml:id="schoenheitlieb" sex="FEMALE">
+            <persName>Schönheitlieb</persName>
           </person>
-          <person xml:id="raufgern">
-            <persName>RAUFGERN</persName>
+          <person xml:id="raufgern" sex="MALE">
+            <persName>Raufgern</persName>
           </person>
-          <person xml:id="sorgenvoll">
-            <persName>SORGENVOLL</persName>
+          <person xml:id="sorgenvoll" sex="MALE">
+            <persName>Sorgenvoll</persName>
           </person>
-          <person xml:id="waisenplag">
-            <persName>WAISENPLAG</persName>
+          <person xml:id="waisenplag" sex="MALE">
+            <persName>Waisenplag</persName>
           </person>
-          <person xml:id="chor">
-            <persName>CHOR</persName>
-          </person>
+          <personGrp xml:id="chor_3-4" sex="UNKNOWN">
+            <name>Chor (III/4)</name>
+          </personGrp>
         </listPerson>
       </particDesc>
       <textClass>
@@ -107,6 +108,7 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
+        <change who="#ff" when="2018-09-24">formalities, IDs</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -119,14 +121,12 @@
         <epigraph>
           <l>Quid ergo inquis, Stulti ac mali non gaudent?</l>
           <l>Non magis, quam prædam nacti Leones!</l>
-          <bibl><hi>Senec:</hi></bibl>
+          <bibl>Senec:</bibl>
         </epigraph>
         <p>Zum Erstenmahl</p>
         <p>Ausgeführt auf der Königl. Prager Schaubühne von der von Brunianischen Gesellschaft.
           1775</p>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head>Personen.</head>
@@ -134,9 +134,12 @@
           <castItem>Theodor, ein Landmann sein Vater.</castItem>
           <castItem>Elisabeth, seine Mutter.</castItem>
           <castItem>Helena, seine Geliebte.</castItem>
-          <castItem>Eduard, ihr Sohn, ein Knade,</castItem>
-          <castItem>Ithuriel, ein guter Geist.</castItem>
-          <castItem>Meyhistopheles, ein böser Geist. In der Gestalt seine Vertrauten.</castItem>
+          <castItem>Eduard, ihr Sohn, ein Knabe.</castItem>
+          <castGroup>
+            <castItem>Ithuriel, ein guter Geist.</castItem>
+            <castItem>Meyhistopheles, ein böser Geist.</castItem>
+            <roleDesc>In der Gestalt seiner Vertrauten.</roleDesc>
+          </castGroup>
           <castItem>Wagner, sein Kammerdiener.</castItem>
         </castList>
       </div>
@@ -155,186 +158,175 @@
           <castItem>Eine Jägerbande.</castItem>
           <castItem>Sänger, und Sängerinnen.</castItem>
           <castItem>Tänzer, und Tänzerinnen.</castItem>
-          <castItem>Dienet.</castItem>
+          <castItem>Diener.</castItem>
         </castList>
       </div>
+      <set>
+        <p>Die Handlung geht vor im Pallast des Faust.</p>
+        <p>Die Bühne stellt einen prächtigen Saal vor, wo alle Kunst verschwendet ist. Man sieht
+          Statuen in Reihen gestellt. Vorne steht ein Soffa.</p>
+        <p>Die Handlung fängt an mit frühem Morgen, und schlieft sich mit der Mitternacht.</p>
+      </set>
       <div type="preface">
-        <div type="h4">
-          <head>Vorbericht</head>
-          <p>Allegorische Wesen zubekörpern, und auf die Bühne zubringen, ist eine Gewohnheit, die
-            so alt ist als das Theater selbst. Euripides der gröste tragische Dichter ist ein
-            Beweis. Aristoteles sucht schon dem Misbrauche zusteuren / und Horaz giebt die
-            Regel.</p>
-          <p>
-            <hi>Nec Deus intersit, nisi dignus vindice nodus.</hi>
-          </p>
-          <p>In der That muß man bey diesen Allegorien sehr behutsam gehn, auch nicht zu oft mit
-            solchen erscheinen / damit das Volk, welches selten in der Geist, und in die Seele der
-            Dinge hineindringet, nicht zu sehr durch dergleichen mystische Vorstellungen getäuscht,
-            und in seinen Vorurtheilen, und Irrthümern bestärkt werde. Die Alten wußten diesen
-            Personen einen gewissen Anstand und Majestät zugehen, welches wie selten erreichen. Ihre
-            Furien beweisen es. Was machen unsere neuern Teufel, und Geister für eine elende ja
-            lächerliche Figur!</p>
-          <p>Ich habe übrigens diesen Stoff nicht gewählt, um etwa dem Pöbel zugefallen, oder die
-            glänzenden Beyspiele eines Chakespear und Voltaire durch Geistererscheinungen
-              <hi>nachzuahmen</hi>. Nichtsweniger als dieß war mein Augenmerk. Ich fand in dem
-            Stoffe des Faust so was Finsters / so etwas Erschütterendes, welches sich mit meiner
-            Einbildungskraft nicht gut verträgt, daß ich mir das Vergnügen nicht versagen konnte /
-            diese tragische Lage eines Menschen zubeschreiben, und dem Publikum meine Gedanken
-            hierüber mitzutheilen. Melanchton, und andere mitlebende Gefchichtschreiber wollen es
-            zwar als eine wahre Geschichte angeben; aber wenn es auch nur eine Chimäre ist; so hat
-            doch die Dichtkunst das erhabene Vorrecht, sich in die Gränzen des Unmöglichen zu
-            schwingen.</p>
-        </div>
+        <head>Vorbericht</head>
+        <p>Allegorische Wesen zubekörpern, und auf die Bühne zubringen, ist eine Gewohnheit, die so
+          alt ist als das Theater selbst. Euripides der gröste tragische Dichter ist ein Beweis.
+          Aristoteles sucht schon dem Misbrauche zusteuren / und Horaz giebt die Regel.</p>
+        <p>Nec Deus intersit, nisi dignus vindice nodus.</p>
+        <p>In der That muß man bey diesen Allegorien sehr behutsam gehn, auch nicht zu oft mit
+          solchen erscheinen / damit das Volk, welches selten in der Geist, und in die Seele der
+          Dinge hineindringet, nicht zu sehr durch dergleichen mystische Vorstellungen getäuscht,
+          und in seinen Vorurtheilen, und Irrthümern bestärkt werde. Die Alten wußten diesen
+          Personen einen gewissen Anstand und Majestät zugehen, welches wie selten erreichen. Ihre
+          Furien beweisen es. Was machen unsere neuern Teufel, und Geister für eine elende ja
+          lächerliche Figur!</p>
+        <p>Ich habe übrigens diesen Stoff nicht gewählt, um etwa dem Pöbel zugefallen, oder die
+          glänzenden Beyspiele eines Chakespear und Voltaire durch Geistererscheinungen
+            <emph>nachzuahmen</emph>. Nichtsweniger als dieß war mein Augenmerk. Ich fand in dem
+          Stoffe des Faust so was Finsters / so etwas Erschütterendes, welches sich mit meiner
+          Einbildungskraft nicht gut verträgt, daß ich mir das Vergnügen nicht versagen konnte /
+          diese tragische Lage eines Menschen zubeschreiben, und dem Publikum meine Gedanken
+          hierüber mitzutheilen. Melanchton, und andere mitlebende Gefchichtschreiber wollen es zwar
+          als eine wahre Geschichte angeben; aber wenn es auch nur eine Chimäre ist; so hat doch die
+          Dichtkunst das erhabene Vorrecht, sich in die Gränzen des Unmöglichen zu schwingen.</p>
       </div>
+    </front>
+    <body>
       <div type="act">
-        <head>1. Akt</head>
+        <head>Erster Aufzug.</head>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Wagner / mit einer Jägerbande.</hi>
-          </stage>
-          <stage>
-            <hi>Die Jäger blasen auf ihren Waldhörnern eine Frühmusick. Sie stehen in einer Reihe
-              vor dem Schlafgemache des Faust. Wagner blickt immer hinein, und geht auf und ab.</hi>
-          </stage>
-          <stage>
-            <hi>Wagner.</hi>
-          </stage>
-          <sp who="#schönheitlieb">
-            <speaker>SCHÖNHEITLIEB.</speaker>
-            <p> sechs Uhr! – Und noch nicht aus den Glaumen? – Mein Herr wollte heut auf die Jagd
-              gehn. – Hm, das geht mir im Gehirn herum. Ich höre ja reden – Ithuriels Stimme: – der
-              junge Läcker verdränget mich ganz aus der Gunst meines Herrn – Aber nur Geduld, junger
-              Laffe, das Lustspiel eilt zur Entwicklung. Du kömmst erst beym letzten Auftritt. Die
-              Hauptrolle hab ich gespielt. – Es ist heut ein wichtiger Tag – Nu blaset doch! –
-              Vielleicht <pb n="1"/> blasen wir morgen nicht mehr. So geht es hey den Großen. Es hat
-              alles sein Ende.</p>
+          <stage>Wagner / mit einer Jägerbande.</stage>
+          <stage>Die Jäger blasen auf ihren Waldhörnern eine Frühmusick. Sie stehen in einer Reihe
+            vor dem Schlafgemache des Faust. Wagner blickt immer hinein, und geht auf und
+            ab.</stage>
+          <stage>Wagner.</stage>
+          <sp who="#wagner">
+            <p>Schon sechs Uhr! – Und noch nicht aus den Flaumen? – Mein Herr wollte heut auf die
+              Jagd gehn. – Hm, das geht mir im Gehirn herum. Ich höre ja reden – Ithuriels Stimme: –
+              der junge Läcker verdränget mich ganz aus der Gunst meines Herrn – Aber nur Geduld,
+              junger Laffe, das Lustspiel eilt zur Entwicklung. Du kömmst erst beym letzten
+              Auftritt. Die Hauptrolle hab ich gespielt. – Es ist heut ein wichtiger Tag – Nu blaset
+              doch! – Vielleicht <pb n="1"/> blasen wir morgen nicht mehr. So geht es hey den
+              Großen. Es hat alles sein Ende.</p>
           </sp>
         </div>
         <div type="scene">
           <head>Zweyter Auftritt.</head>
-          <stage>
-            <hi>Theodor, Elisabeth, Vorige.</hi>
-          </stage>
+          <stage>Theodor, Elisabeth, Vorige.</stage>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> Da sieht es prächtig aus, Mutter! – Hier kann unser Sohn unmöglich wohnen.</l>
+            <p>Da sieht es prächtig aus, Mutter! – Hier kann unser Sohn unmöglich wohnen.</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <l> Vater, es ist gewiß, es sagen es ja alle Leute.</l>
+            <p>Vater, es ist gewiß, es sagen es ja alle Leute.</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> Aber so schau nur herum, Elisabeth, es kann der Kaiser kein schöners Haus haben.</l>
+            <p>Aber so schau nur herum, Elisabeth, es kann der Kaiser kein schöners Haus haben.</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <l> Du sprichst gut, Vater; aber –</l>
+            <p>Du sprichst gut, Vater; aber –</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <l> Was wollt ihr Leute?</l>
+            <p>Was wollt ihr Leute?</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <l> Wir, gnädiger Herr –</l>
+            <p>Wir, gnädiger Herr –</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <l> Sie sehen mich für etwas wichtiges an. Er bläht sich</l>
+            <p>Sie sehen mich für etwas wichtiges an. Er bläht sich</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> Sehn sie gnädiger Herr, ich suche meinen Sohn –</l>
+            <p>Sehn sie gnädiger Herr, ich suche meinen Sohn –</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <l> Wer ist euer Sohn? Ist er ein Lakey, oder ein Reitknecht von unserm Hause?</l>
+            <p>Wer ist euer Sohn? Ist er ein Lakey, oder ein Reitknecht von unserm Hause?</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <p> J nu, ich heise Theodor Faust. Mein Sohn heißt Johann. Er soll nach der gemeinen
-              Sage hier wohnen. Gnädiger Herr geben sie uns eine Auskunft.</p>
+            <p>J nu, ich heise Theodor Faust. Mein Sohn heißt Johann. Er soll nach der gemeinen Sage
+              hier wohnen. Gnädiger Herr geben sie uns eine Auskunft.</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <p> Was hör ich! – das ist ein verfluchter Streich! – Die Leute muß ich abweisen. Ihr
+            <p>Was hör ich! – das ist ein verfluchter Streich! – Die Leute muß ich abweisen. Ihr
               guten Leute, man hat euch in April geschikt.</p>
             <pb n="2"/>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <p> Dacht ichs doch. Siehst du Mutter, so gehts, wenn die Kinder zu reich werden, ihre
+            <p>Dacht ichs doch. Siehst du Mutter, so gehts, wenn die Kinder zu reich werden, ihre
               armen Eltern können sie nicht mehr finden.</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <l> Es sagen alle Nachbarn –</l>
+            <p>Es sagen alle Nachbarn –</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <p> Genug sie lügen, denn ich sage euch das Widerspiel, und ich werde wohl mehr Glauben
+            <p>Genug sie lügen, denn ich sage euch das Widerspiel, und ich werde wohl mehr Glauben
               verdienen, als der gemeine Pöbel.</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> Bey Gott, gnädiger Herr, sie haben recht. Haben sie ihn auch niemals gesehn?</l>
+            <p>Bey Gott, gnädiger Herr, sie haben recht. Haben sie ihn auch niemals gesehn?</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <p> Ich errinnere mich, auf meinen Reisen, so einen Menschen gesehen zu haben. Er nährte
+            <p>Ich errinnere mich, auf meinen Reisen, so einen Menschen gesehen zu haben. Er nährte
               sich mit Taschenspielen. Ich sand ihn einst in einer Weinschenke. Er wird vermuthlich
               die ganze Welt ausreisen.</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> Nu so gehn wir in des Himmels Namen, nach unserer Hütte zurück.</l>
+            <p>Nu so gehn wir in des Himmels Namen, nach unserer Hütte zurück.</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <p> Ich arme Mutter, ich glaubte meinen Sohn nochmal zu sehen. Nu so sey es denn! Gehn
+            <p>Ich arme Mutter, ich glaubte meinen Sohn nochmal zu sehen. Nu so sey es denn! Gehn
               wir Vater, gehn wir. Schönen Dank, gnädiger Herr.</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> Komm Mutter. Leben sie wohl. <hi>Beide gehen ab.</hi>
-            </l>
+            <p>Komm Mutter. Leben sie wohl. <stage>Beide gehen ab.</stage></p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <p> Da würde ich meinem Herrn eine schöne Freude machen. Nein gute Leute, hier wohne
-              euer Sohn nicht. – Zwar es sind ehrliche Leute Aber die Welt liebt das Große. – Still,
-              wie geht es im Schlafzimmer? Sie sprechen miteinander – Blaset, blaset Freunde, daß
-              ihr den Athem verlirt.</p>
+            <p>Da würde ich meinem Herrn eine schöne Freude machen. Nein gute Leute, hier wohne euer
+              Sohn nicht. – Zwar es sind ehrliche Leute Aber die Welt liebt das Große. – Still, wie
+              geht es im Schlafzimmer? Sie sprechen miteinander – Blaset, blaset Freunde, daß ihr
+              den Athem verlirt.</p>
             <pb n="3"/>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <stage>
-            <hi>Donnerschlag, Vorige.</hi>
-          </stage>
-          <stage>
-            <hi>Donnerschlag schreyt schon unter der Scene zu den Dienern, die ihn führen.</hi>
-          </stage>
+          <stage>Donnerschlag, Vorige.</stage>
+          <stage>Donnerschlag schreyt schon unter der Scene zu den Dienern, die ihn führen.</stage>
           <sp who="#donnerschlag">
             <speaker>DONNERSCHLAG.</speaker>
-            <p> Verfluchte Schneken, geht doch von der Stelle! Brecht euch den Hals! Ihr seyd wie
-              die Krebsen, ihr eilt rückwärts. Nu, wo hat denn der Henker den Teufelsbahner? – Beym
+            <p>Verfluchte Schneken, geht doch von der Stelle! Brecht euch den Hals! Ihr seyd wie die
+              Krebsen, ihr eilt rückwärts. Nu, wo hat denn der Henker den Teufelsbahner? – Beym
               Wetter ist niemand hier? Ich schlage euch alle Fenster zu Scherben! – Guten Tag! Es
               lebe die kriegerische Musick! das erquikt meine martialischen Ohren. Wer ist er
               Schlingel?</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <p> Bald zu viel, bald zu wenig. Erst war ich ein gnädiger Herr, und itzt ein Schlingel.
+            <p>Bald zu viel, bald zu wenig. Erst war ich ein gnädiger Herr, und itzt ein Schlingel.
               Ich muß es bey diesem Eisenfresser wohlfeiler geben. Was befehlen Sie?</p>
           </sp>
           <sp who="#donnerschlag">
             <speaker>DONNERSCHLAG.</speaker>
-            <p> Er ist gewiß so ein Thier, das Kammerdiener heist? – Hör er ich muß seinen Herrn
+            <p>Er ist gewiß so ein Thier, das Kammerdiener heist? – Hör er ich muß seinen Herrn
               sprechen. Ich erfuhr, daß er mit der Hölle sehr bekannt ist. Ich bin verhert worden,
               das ist unstreitig. Ich liebte ein Mädchen und das Mädchen war schön. Zum Wetter ich
               liebte sie von ganzen Herzen. Ein Monat, zwey Monate vergehn, ich liebte nicht mehr so
@@ -346,257 +338,241 @@
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <l> Es ist ihnen vielleicht noch zu helfen.</l>
+            <p>Es ist ihnen vielleicht noch zu helfen.</p>
           </sp>
           <sp who="#donnerschlag">
             <speaker>DONNERSCHLAG.</speaker>
-            <l> Zum Wetter, meynt er?</l>
+            <p>Zum Wetter, meynt er?</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <p> Sie müßten sich erstens entschliessen, ihr ganzes Leben sich nicht mehr zu zörnen.
+            <p>Sie müßten sich erstens entschliessen, ihr ganzes Leben sich nicht mehr zu zörnen.
               Dann ein Monat kein Wort zu sprechen, und endlich das Baad zu brauchen. Das Uebrige
               lassen sie mich sorgen.</p>
           </sp>
           <sp who="#donnerschlag">
             <speaker>DONNERSCHLAG.</speaker>
-            <l> Der Kerl spricht doch so wie ein Mensch, der Grütze im Schedel hat.</l>
+            <p>Der Kerl spricht doch so wie ein Mensch, der Grütze im Schedel hat.</p>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <stage>
-            <hi>Spuraus, Vorige</hi>
-          </stage>
-          <stage>
-            <hi>Spuraus kömmt mit tausend gezwungenen Bücklingen.</hi>
-          </stage>
+          <stage>Spuraus, Vorige</stage>
+          <stage>Spuraus kömmt mit tausend gezwungenen Bücklingen.</stage>
           <sp who="#donnerschlag">
             <speaker>DONNERSCHLAG.</speaker>
-            <l> Sieh da Spuraus, welcher Sturmwind führt dich her? Was macht dein Weib,
-              eifersüchtiger Gimpel?</l>
+            <p>Sieh da Spuraus, welcher Sturmwind führt dich her? Was macht dein Weib,
+              eifersüchtiger Gimpel?</p>
           </sp>
           <sp who="#spuraus">
             <speaker>SPURAUS.</speaker>
-            <l> O ihr unterthänigster Diener, sie ist schon zu den Vätern gereiset.</l>
+            <p>O ihr unterthänigster Diener, sie ist schon zu den Vätern gereiset.</p>
           </sp>
           <sp who="#donnerschlag">
             <speaker>DONNERSCHLAG.</speaker>
-            <l> Verfluchter Mann, wie viel Weiber begräbst du schon?</l>
+            <p>Verfluchter Mann, wie viel Weiber begräbst du schon?</p>
           </sp>
           <sp who="#spuraus">
             <speaker>SPURAUS.</speaker>
-            <l> Ich bin eben wieder ein Bräutigäm.</l>
+            <p>Ich bin eben wieder ein Bräutigäm.</p>
             <pb n="5"/>
           </sp>
           <sp who="#donnerschlag">
             <speaker>DONNERSCHLAG.</speaker>
-            <p> Da seh man einmal die Kreatur! Beym Blitz, das ist erschröcklich wär ich nicht
+            <p>Da seh man einmal die Kreatur! Beym Blitz, das ist erschröcklich wär ich nicht
               verhert, ich risse dir den Bissen vom Munde weg; aber die höllische Lahmung ist dein
               Glück, sonst –</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <l> Was suchen sie hier?</l>
+            <p>Was suchen sie hier?</p>
           </sp>
           <sp who="#spuraus">
             <speaker>SPURAUS.</speaker>
-            <l> Ich wünsche nur ein Paar Worte in geheim mit ihnen zu sprechen. Sehn sie, ich bin
-              ein Bräutigam.</l>
+            <p>Ich wünsche nur ein Paar Worte in geheim mit ihnen zu sprechen. Sehn sie, ich bin ein
+              Bräutigam.</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <l> Es freut mich, die Ehre zu haben – Sind sie vieleicht auch verhext, oder ihre
-              holdseelige Braut?</l>
+            <p>Es freut mich, die Ehre zu haben – Sind sie vieleicht auch verhext, oder ihre
+              holdseelige Braut?</p>
           </sp>
           <sp who="#spuraus">
             <speaker>SPURAUS.</speaker>
-            <p> Nichts weniger, dem Himmel sey Dank; aber sehn sie, ich habe einen Naturfehler, ich
+            <p>Nichts weniger, dem Himmel sey Dank; aber sehn sie, ich habe einen Naturfehler, ich
               bin eifersüchtig.</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <l> So sollen sie nicht heurathen.</l>
+            <p>So sollen sie nicht heurathen.</p>
           </sp>
           <sp who="#spuraus">
             <speaker>SPURAUS.</speaker>
-            <l> Sie haben leicht reden; ich bin ja verliebt. Ich möchte also gerne mich unsichtbar
-              machen können.</l>
+            <p>Sie haben leicht reden; ich bin ja verliebt. Ich möchte also gerne mich unsichtbar
+              machen können.</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <p> Das ist sehr leicht. Sie nehmen einen Postwagen, und fahren davon ohne Abschied
+            <p>Das ist sehr leicht. Sie nehmen einen Postwagen, und fahren davon ohne Abschied
               zunehmen. So sind sie unsichtbar.</p>
           </sp>
           <sp who="#spuraus">
             <speaker>SPURAUS.</speaker>
-            <p> Hahaha, sie scherzen. Nein, ich möchte zugegen, und doch nicht gesehen seyn, um
-              meine Braut täglich zu behorchen, was sie von mir spricht und denkt. Es soll ihr
-              Schade nicht seyn. Hier haben sie ein Dutzend Goldstücke zum voraus.</p>
+            <p>Hahaha, sie scherzen. Nein, ich möchte zugegen, und doch nicht gesehen seyn, um meine
+              Braut täglich zu behorchen, was sie von mir spricht und denkt. Es soll ihr Schade
+              nicht seyn. Hier haben sie ein Dutzend Goldstücke zum voraus.</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <p> Ich werde ihre Sache überdenken, kommen sie in acht Tagen wieder. Wir haben itzt
+            <p>Ich werde ihre Sache überdenken, kommen sie in acht Tagen wieder. Wir haben itzt
               einige Regimenter Soldaten über den Hals, <pb n="6"/> die sich alle auf der Gränze
               unsichtbar machen wollen. Sobald dieß geschehen seyn wird, so wird man auf sie
               denken.</p>
           </sp>
           <sp who="#donnerschlag">
             <speaker>DONNERSCHLAG.</speaker>
-            <p> Also vergiß er nicht auf mich. Da hat er ein Geschenk. Leb er wohl, und geh er zum
+            <p>Also vergiß er nicht auf mich. Da hat er ein Geschenk. Leb er wohl, und geh er zum
               Teufel. Spuraus viel Glück zur Hochzeit. Ich wollte gerne dabey tanzen, aber meine
-              Knochen sind steif. Die verwünschte Here! <hi>Geht ab.</hi>
-            </p>
+              Knochen sind steif. Die verwünschte Here! <stage>Geht ab.</stage></p>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
-          <stage>
-            <hi>Emilie, Vorige.</hi>
-          </stage>
+          <stage>Emilie, Vorige.</stage>
           <sp who="#spuraus">
             <speaker>SPURAUS.</speaker>
-            <p> Gütiger Himmel, meine Braut – Ich zittre O Apoll! – Mein Engel, ich küsse dir die
+            <p>Gütiger Himmel, meine Braut – Ich zittre O Apoll! – Mein Engel, ich küsse dir die
               Hand – Wie kömmst du hieher?</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <p> Ist das ihre Braut? Wegen der wollen sie sich unsichtbar machen? Da verliert die
+            <p>Ist das ihre Braut? Wegen der wollen sie sich unsichtbar machen? Da verliert die
               Zauberey ihre Kraft.</p>
           </sp>
           <sp who="#emilie">
             <speaker>EMILIE.</speaker>
-            <l> Was machst denn du hier? das kömmt mir verdächtig vor.</l>
+            <p>Was machst denn du hier? das kömmt mir verdächtig vor.</p>
           </sp>
           <sp who="#spuraus">
             <speaker>SPURAUS.</speaker>
-            <p> Ich habe dem gnädigen Herrn ein Kochbuch in leberreimen gewidmet. Wenn du erlaubst,
+            <p>Ich habe dem gnädigen Herrn ein Kochbuch in leberreimen gewidmet. Wenn du erlaubst,
               so will ich wieder gehn.</p>
           </sp>
           <sp who="#emilie">
             <speaker>EMILIE.</speaker>
-            <l> Ich erlaube dir zu bleiben.</l>
+            <p>Ich erlaube dir zu bleiben.</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <l> Was suchen sie hier mein Engel? (die gröste Lüge, die ich in meinem Leben gesagt
-              habe.</l>
+            <p>Was suchen sie hier mein Engel? (die gröste Lüge, die ich in meinem Leben gesagt
+              habe.</p>
           </sp>
           <sp who="#emilie">
             <speaker>EMILIE.</speaker>
-            <p> Es hat mir eine Zigeunerinn in meiner Jugend die Nativität gestelllt, daß ich einst
+            <p>Es hat mir eine Zigeunerinn in meiner Jugend die Nativität gestelllt, daß ich einst
               die Liebste eines gekrönten Hauptes seyn sollte.</p>
           </sp>
           <sp who="#spuraus">
             <speaker>SPURAUS.</speaker>
-            <l> Was, eines gekrönten Hauptes?</l>
+            <p>Was, eines gekrönten Hauptes?</p>
             <pb n="7"/>
           </sp>
           <sp who="#emilie">
             <speaker>EMILIE.</speaker>
-            <l> Nu freylich.</l>
+            <p>Nu freylich.</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <l> Nur Geduld, sie könnten noch immer gekrönt werden.</l>
+            <p>Nur Geduld, sie könnten noch immer gekrönt werden.</p>
           </sp>
           <sp who="#emilie">
             <speaker>EMILIE.</speaker>
-            <l> Ich bin itzt nicht mehr als achzehn Jahr alt –</l>
+            <p>Ich bin itzt nicht mehr als achzehn Jahr alt –</p>
           </sp>
           <sp who="#spuraus">
             <speaker>SPURAUS</speaker>
-            <stage>
-              <hi>zerrt sie beym Kleide.</hi>
-            </stage>
-            <l> Mein Schatz –</l>
+            <stage>zerrt sie beym Kleide.</stage>
+            <p>Mein Schatz –</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <l> Sie lügt besser als ich.</l>
+            <p>Sie lügt besser als ich.</p>
           </sp>
           <sp who="#emilie">
             <speaker>EMILIE.</speaker>
-            <p> Ich könnte also vermög meiner Jugend nochwohl dieß Glück erwarten.</p>
-            <p><hi>Sie zieht eine Brille heraus, und liest.</hi> Sehen sie selbst, hier stehr es
-              klar: du wirst einst die Gattinn eines gekrönten Hauptes.</p>
+            <p>Ich könnte also vermög meiner Jugend nochwohl dieß Glück erwarten.</p>
+            <p><stage>Sie zieht eine Brille heraus, und liest.</stage> Sehen sie selbst, hier stehr
+              es klar: du wirst einst die Gattinn eines gekrönten Hauptes.</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <l> Mein Herr, wer sind sie?</l>
+            <p>Mein Herr, wer sind sie?</p>
           </sp>
           <sp who="#spuraus">
             <speaker>SPURAUS.</speaker>
-            <l> Ich war Baccalaureus, und <hi>Poeta Laureatus</hi>.</l>
+            <p>Ich war Baccalaureus, und <emph>Poeta Laureatus</emph>.</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <l> Nu also, sie sind ja ein gekröntes Haupt.</l>
+            <p>Nu also, sie sind ja ein gekröntes Haupt.</p>
           </sp>
           <sp who="#spuraus">
             <speaker>SPURAUS.</speaker>
-            <l> Aber im <hi>Sensu latissimo</hi>.</l>
+            <p>Aber im <emph>Sensu latissimo</emph>.</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <l> Das thut nichts. Die Prophezeyung ist erfüllt.</l>
+            <p>Das thut nichts. Die Prophezeyung ist erfüllt.</p>
           </sp>
           <sp who="#emilie">
             <speaker>EMILIE.</speaker>
-            <p> In der That. Itzt verstehe ich die ganze Sache. Sie öfnen mir die Augen. Nehmen sie
+            <p>In der That. Itzt verstehe ich die ganze Sache. Sie öfnen mir die Augen. Nehmen sie
               dieß Geschenk. Komm mein lieber Schatz. Mein Herz schlägt ganz jugendlich. Wir sind
               vom Himmel für einander geschaffen.</p>
           </sp>
           <sp who="#spuraus">
             <speaker>SPURAUS.</speaker>
-            <p> Ja mein Engel, ich küsse diese schöne Hand. Komm, wir wollen wie Turteltäubchen mit
-              einander leben. <hi>Gehn ab.</hi>
-            </p>
+            <p>Ja mein Engel, ich küsse diese schöne Hand. Komm, wir wollen wie Turteltäubchen mit
+              einander leben. <stage>Gehn ab.</stage></p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <p> Keine Stelle so gering, die keine Sporteln hat. Meine Winkelhexenmeisterey wird <pb
+            <p>Keine Stelle so gering, die keine Sporteln hat. Meine Winkelhexenmeisterey wird <pb
                 n="8"/> einträglich. Still man kömmt. Mein Herr sieht ganz traurig aus. Ich fürchte
               den Ausgang.</p>
           </sp>
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <stage>
-            <hi>Ithuriel, Faust, Vorige.</hi>
-          </stage>
-          <stage>
-            <hi>Faust ruht auf dem Arm des Ithuriels. Er ist schwermüthig.</hi>
-          </stage>
+          <stage>Ithuriel, Faust, Vorige.</stage>
+          <stage>Faust ruht auf dem Arm des Ithuriels. Er ist schwermüthig.</stage>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Man laß uns allein.</l>
+            <p>Man laß uns allein.</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <l> Gehn sie nicht auf die Jagd?</l>
+            <p>Gehn sie nicht auf die Jagd?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Nein.</l>
-            <stage>
-              <hi>Faust wirft sich auf das Soffa. Wagner und die Jäger gehn ab.</hi>
-            </stage>
+            <p>Nein.</p>
+            <stage>Faust wirft sich auf das Soffa. Wagner und die Jäger gehn ab.</stage>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Lächeln, und Freude kehrt mit der Sonne auf die Erde zurücke. Nur mich allein flieht
+            <p>Lächeln, und Freude kehrt mit der Sonne auf die Erde zurücke. Nur mich allein flieht
               die Ruhe. In dieses Herz schleicht kein Stral von Vergnügen mehr. Ithuriel, mein
               Freund, seitdem du bey mir bist, grüß ich dieses Morgenroth. Sonst sah ich die Sonne
               nie über die Berge heraufglänzen. Nur der blasse Mond war Zeuge meiner Thorheiten.</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Freund, du traurest stäts, seitdem ich bey dir bin. Heißt das mich bewillkommen?</l>
+            <p>Freund, du traurest stäts, seitdem ich bey dir bin. Heißt das mich bewillkommen?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Sieh her Ithuriel, der ermüdete Sklave der Lüste keucht nach Ruhe, und findet sie
+            <p>Sieh her Ithuriel, der ermüdete Sklave der Lüste keucht nach Ruhe, und findet sie
               nicht. Ich habe alle Laster durchgeschwelget. Bon Schandthat zu Schandthat bin ich
               getaumelt; aber seit du bey mir bist, ändert sich meine Natur. Umsonst lokt mich der
               Ehrgeiz, ich erkenne seinen Dunst, um sonst <pb n="9"/> funkelt der Reichthum vor
@@ -608,18 +584,18 @@
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Weil er zur grössern Wonne eingeladen ist. Der Mensch ist zu groß zu erhaben
+            <p>Weil er zur grössern Wonne eingeladen ist. Der Mensch ist zu groß zu erhaben
               gebohren, als daß ein irdisches Nichts ihn ersättigen sollte. Der Mensch ist zu
               wollüstig, als daß vergängliche Lüste ihn begnügen könnten, er sehnt sich nach
               unsterblichem Vergnügen.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Aber vielleicht ist die Unsterblichkeit dem Menschen versagt.</l>
+            <p>Aber vielleicht ist die Unsterblichkeit dem Menschen versagt.</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> So ist der Mensch nichts mehr als ein elender Wurm. Sieh Freund, wie du klügelst. Du
+            <p>So ist der Mensch nichts mehr als ein elender Wurm. Sieh Freund, wie du klügelst. Du
               entfliehst stäts der Wahrheit. Du fürchtest dich deinem Gewissen zu begegnen. Du
               machest es wie schöne Weiber, die von einer Unpäßlichkeit sich erholen. Sie fürchten
               nichts mehr als den Spiegel, der ihnen den Verlust ihrer Reitze sagen könnte. Du
@@ -627,46 +603,46 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Keine Vorwürfe! Freund, tröste mich lieber. Ich bin genug gequält. Ich höre die
+            <p>Keine Vorwürfe! Freund, tröste mich lieber. Ich bin genug gequält. Ich höre die
               strengen Verweise meines Gewissens. – Unsterblich! – Unsterblich – Unsterblich, doch
               zur Quaal! – Gedanke –</p>
             <pb n="10"/>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Du hast schon einiges Licht von Wahrheit. Vernachlässige es nicht. Spur weiter, und
+            <p>Du hast schon einiges Licht von Wahrheit. Vernachlässige es nicht. Spur weiter, und
               du eilst zum hellesten Mittag.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Unsterblich! – Ithuriel, sprich warum hat der Mensch bey so viel Schwäche auch die
+            <p>Unsterblich! – Ithuriel, sprich warum hat der Mensch bey so viel Schwäche auch die
               Macht, sich selbst unglücklich zu machen?</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Der Mensch ist frey, und muß es seyn, denn Gott liebt keine willenlose Maschinen,
-              der Himmel will die Wohlfahrt des Menschen. Sein Verderben läßt er zu. Er läst ihn,
-              aber zwingt ihn nicht. Er beut ihm die Glückseeligkeit an, er überredet. Der Mensch
-              wählt. Von dieser Wahl hangt sein Schicksal ab.</p>
+            <p>Der Mensch ist frey, und muß es seyn, denn Gott liebt keine willenlose Maschinen, der
+              Himmel will die Wohlfahrt des Menschen. Sein Verderben läßt er zu. Er läst ihn, aber
+              zwingt ihn nicht. Er beut ihm die Glückseeligkeit an, er überredet. Der Mensch wählt.
+              Von dieser Wahl hangt sein Schicksal ab.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Aber wenn diese Wahl geschehen ist, darf ich nicht mehr ändern?</l>
+            <p>Aber wenn diese Wahl geschehen ist, darf ich nicht mehr ändern?</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> So lange du lebst. Der letzte Hauch kann erst deinen Willen bestimmen. Schon der
+            <p>So lange du lebst. Der letzte Hauch kann erst deinen Willen bestimmen. Schon der
               Wille ist deinem Gott genug. Ein guter Gedanke ist im Stande seinen Zorn zu
               besänftigen.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Noch etwas. Ithuriel, du siehst, daß ich dich liebe. Noch eines erklär mir. Woher
+            <p>Noch etwas. Ithuriel, du siehst, daß ich dich liebe. Noch eines erklär mir. Woher
               kömmt dieser Streit in mir? Ich möchte gut seyn; aber das Böse zieht mich wieder.</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Die Wollust giebt dem Menschen einen Schlaftrunk. In dieser Sinnloßigkeit schläft
+            <p>Die Wollust giebt dem Menschen einen Schlaftrunk. In dieser Sinnloßigkeit schläft
               sein Gewissen. Das Laster scheint ihm von ferne kleiner. Er umarmt es vertraut.
               Umsonft sucht er zuletzt die eisernen Fässel der Gewohnheit zu zerbrechen. Sie
               schleppet ihn fort wieder seinen Willen. Trink fort dieß giftige Honig; aber die
@@ -675,77 +651,74 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ich fühl es! – Ach! Verzweiflung; macht mein Elend unerträglich.</l>
+            <p>Ich fühl es! – Ach! Verzweiflung; macht mein Elend unerträglich.</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Verzweisiung? Freund, entreissest du mir den Preiß meiner Sorgen? Weist du, warum
-              ich dich besuche? – Dich zu retten!</p>
+            <p>Verzweisiung? Freund, entreissest du mir den Preiß meiner Sorgen? Weist du, warum ich
+              dich besuche? – Dich zu retten!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Das kannst du nicht! – Fort, flieh, du arbeitest umsonst. Ich bin verloren!</l>
+            <p>Das kannst du nicht! – Fort, flieh, du arbeitest umsonst. Ich bin verloren!</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Wie huldreich schikt der Himmel dir seine Einladung, und du verschmähest seine
-              Bitte. Du verweigerst zu kommen? – Ja, du bist schon bey deinen Thorheiten
-              versprochen. Leb wohl – Ich gehe.</p>
+            <p>Wie huldreich schikt der Himmel dir seine Einladung, und du verschmähest seine Bitte.
+              Du verweigerst zu kommen? – Ja, du bist schon bey deinen Thorheiten versprochen. Leb
+              wohl – Ich gehe.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Freund, auch du verlässest mich?</l>
+            <p>Freund, auch du verlässest mich?</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Die Tugend reicht dir den Faden aus diesem Labyrinth zukommen, und du bist blind.
+            <p>Die Tugend reicht dir den Faden aus diesem Labyrinth zukommen, und du bist blind.
               Sieh mich zu deinen Füssen. Ich liebe dich, als Freund. Hör mich, folg mir, verlasse
               diesen Ort, wo du nur Verderben findest. Belohne meine Bitte mit einem frohen Ja – Du
               zauderst – Leb wohl –</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Reich mir die Hand. Ich folge. Freund wer kömmt? – O Helena –</l>
+            <p>Reich mir die Hand. Ich folge. Freund wer kömmt? – O Helena –</p>
           </sp>
         </div>
         <div type="scene">
           <head>Siebenter Auftritt.</head>
-          <stage>
-            <hi>Helena, Eduard, Vorige.</hi>
-          </stage>
+          <stage>Helena, Eduard, Vorige.</stage>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Mein theurer Freund, ich grüße dich mit dem lieblichsten Gruß der Liebe.</l>
+            <p>Mein theurer Freund, ich grüße dich mit dem lieblichsten Gruß der Liebe.</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Ich lasse dich.</l>
+            <p>Ich lasse dich.</p>
             <pb n="12"/>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Nur ein Wort will ich noch mit Helena sprechen. Das letzte Wort, und dann folg ich
+            <p>Nur ein Wort will ich noch mit Helena sprechen. Das letzte Wort, und dann folg ich
               dir, wohin du willst.</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Du dauerst mich. Bergieß nicht auf dich selbst. <hi>Geht ab.</hi>
-            </l>
+            <p>Du dauerst mich. Bergieß nicht auf dich selbst. <stage>Geht ab.</stage></p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Wie finster, wie kalt, wie unfreundlich erwiederst du meine Umarmung! – Sprich,
+            <p>Wie finster, wie kalt, wie unfreundlich erwiederst du meine Umarmung! – Sprich,
               liebst du mich nicht mehr? – Du schweigst? – Was seh ich, Thränen auf deinen Augen! –
               Ach, ich bin verschmäht! Ha nun versteh ich meinen Traum, der mich heut früh
               erschröckte.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ein Traum – Verachte ihn, Helena!</l>
+            <p>Ein Traum – Verachte ihn, Helena!</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Es war ein schreckbarer Morgentraum. Hör: ich saß in einem blumenreichen Felde. Die
+            <p>Es war ein schreckbarer Morgentraum. Hör: ich saß in einem blumenreichen Felde. Die
               Sonne lächelte so lieblich herab. Die Bögel sangen mir reizend zu. Die Zephyre
               hauchten rings um mich. Ich war in einer angenehmen Bezauberung. Jäh schleicht sich
               eine schön gefleckte Schlange zu mir. Sie windet sich schmäuchelhaft. Sie spielt mit
@@ -757,32 +730,32 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Keine. Sey ruhig. Erwarte dein Schicksal.</l>
+            <p>Keine. Sey ruhig. Erwarte dein Schicksal.</p>
             <pb n="13"/>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Wo eilst du hin? – Mit dieser Antwort verlässest du mich? Grausamer hab ich dieß um
-              dich verdient?</l>
+            <p>Wo eilst du hin? – Mit dieser Antwort verlässest du mich? Grausamer hab ich dieß um
+              dich verdient?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Wisse, dieß ist ein fürchterlicher Tag! Für mich fürchterlich! Aber du kannst ruhig
+            <p>Wisse, dieß ist ein fürchterlicher Tag! Für mich fürchterlich! Aber du kannst ruhig
               seyn. – Wir müssen uns trennen.</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Trennen! – Ich verstehe dich. Du liebst mich nicht mehr. Geh Treuloser!</l>
+            <p>Trennen! – Ich verstehe dich. Du liebst mich nicht mehr. Geh Treuloser!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Du irrest dich. Ich liebe dich zärtlich; aber ich muß dich verlassen, um dich nicht
+            <p>Du irrest dich. Ich liebe dich zärtlich; aber ich muß dich verlassen, um dich nicht
               vielleicht mit mir unglücklich zu machen. Fang an, mich zu vergessen, mich zu hassen,
               das ist das erste, was du für dich selbst thun must.</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Ich dich hassen? – Du verdientest zwar meinen Haß; aber mein gutes Herz spricht noch
+            <p>Ich dich hassen? – Du verdientest zwar meinen Haß; aber mein gutes Herz spricht noch
               für dich, Undankbarer, so mishandelst du mich! – Um dich hab ich Eltern, Freunde,
               Anverwandte verlassen. Dir hab ich mein Glück, meine Tugend, meine Ehre aufgeopfert.
               Dir hab ich mein Herz, meine Liebe geweiht, und du willst mich verlassen? – Geh, eil,
@@ -792,50 +765,48 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> O Helena verbittre mir nicht durch deine Vorwürfe diese Stunden der Angst. O wustest
+            <p>O Helena verbittre mir nicht durch deine Vorwürfe diese Stunden der Angst. O wustest
               du – Aber ich kann, ich darf dirs nicht entdecken – Ach!</p>
             <pb n="14"/>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Du hast Geheimniße vor mir – Freund, ich liebe dich, und du verräthst mich! – Gieb
+            <p>Du hast Geheimniße vor mir – Freund, ich liebe dich, und du verräthst mich! – Gieb
               mir deine Zärtlichkeit wieder. Oefne mir dein verschlossenes Herz!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Ich sehe den Mephistopheles kommen. Ich muß ihn sprechen. Geh, sey ruhig. Erwarte
+            <p>Ich sehe den Mephistopheles kommen. Ich muß ihn sprechen. Geh, sey ruhig. Erwarte
               mich im Garten. Gleich bin ich wieder bey dir.</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Wohl, ich will dich dort erwarten.</l>
+            <p>Wohl, ich will dich dort erwarten.</p>
           </sp>
         </div>
         <div type="scene">
           <head>Achter Auftritt.</head>
-          <stage>
-            <hi>Faust, Mephistopheles.</hi>
-          </stage>
+          <stage>Faust, Mephistopheles.</stage>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Faust, alle deine Wünsche sind erfüllt. Drey Tage war ich beschäftigt deine Befehle
+            <p>Faust, alle deine Wünsche sind erfüllt. Drey Tage war ich beschäftigt deine Befehle
               zu vollziehen. Itzt hast du noch einen Tag.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Zu was soll ich ihn anwenden?</l>
+            <p>Zu was soll ich ihn anwenden?</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Fröhlig zu seyn, und noch mehr Uebel zu thun, als du schon gethan hast.</l>
+            <p>Fröhlig zu seyn, und noch mehr Uebel zu thun, als du schon gethan hast.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Der Tag macht mich zittern – Du bist ein Teufel –</l>
+            <p>Der Tag macht mich zittern – Du bist ein Teufel –</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Warum bebst du heut? Was fürchtest du? – Weil vie Zeit kurz ist; so wollen wir
+            <p>Warum bebst du heut? Was fürchtest du? – Weil vie Zeit kurz ist; so wollen wir
               vectraut miteinander sprechen. Oefne die Augen. Wer warst du, eh du mich kanntest?
               Sprich, in welchem Stande hat dich dein so gepriesener Schöpfer gesetzt? – Du warst
               ein Elender, der Spott der Erde, ein Bettler jeder Stunde. Er giebt euch ein elendes
@@ -848,217 +819,210 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Wie kann ich das wissen?</l>
+            <p>Wie kann ich das wissen?</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Schließ von dem gegenwärtigen Leben auf das Zukünftige- Wenn euch dieser Gott so
+            <p>Schließ von dem gegenwärtigen Leben auf das Zukünftige- Wenn euch dieser Gott so
               liebt, wenn er euer zärtlicher Vater ist, wie er sich rühmet, warum verweiset Er euch
               seme Kinder auf eine unfruchtbare, verfluchte Erde? warum öfnet er euch nicht sein
               leeres Paradies? warum löst er seinen Himmel unbevölkert, den wir geraumt haben?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Du bist beredt, aber meine Seele –</l>
+            <p>Du bist beredt, aber meine Seele –</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Wird bey uns gut wohnen. Schämst du dich etwa unser? – Wer bist du verächtlicher
+            <p>Wird bey uns gut wohnen. Schämst du dich etwa unser? – Wer bist du verächtlicher
               Erdewurm? Wir sind die ersten Geister, die einst die Zierde der ganzen Schöpfung, und
               die Stärke des göttlichen Thrones waren. Folg mir, bey uns tritst du in die
               feyerlichen Rechte erhabener Geister, du sollst frey denken!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Wenn eure Hölle nicht fürchterlich ist, warum ist sie ein Ort der Strafe; warum
+            <p>Wenn eure Hölle nicht fürchterlich ist, warum ist sie ein Ort der Strafe; warum
               empört sich unsere Natur vor ihr und euch?</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Das ist ein Kunstgriff unsers Feindes. Er will dadurch unsere Parthey schwächen.
-              Wenn <pb n="16"/> ihr klug wäret; so schlüget ihr euch alle zu uns. Wir sind eure
-              wahren Freunde; wir kämpfen mit euch, und für euch.</p>
+            <p>Das ist ein Kunstgriff unsers Feindes. Er will dadurch unsere Parthey schwächen. Wenn
+                <pb n="16"/> ihr klug wäret; so schlüget ihr euch alle zu uns. Wir sind eure wahren
+              Freunde; wir kämpfen mit euch, und für euch.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Noch wankt mein Herz –</l>
+            <p>Noch wankt mein Herz –</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Warum klügelst du heut? Das soll ein feyerlicher Tag seyn. Du must dich von der Erde
+            <p>Warum klügelst du heut? Das soll ein feyerlicher Tag seyn. Du must dich von der Erde
               mit Vergnügen setzen. Komm, reich mir die Hand. Wir sind Freunde. Ich will die
               Traurigkeit aus deinem Herzen verbannen. In Wollust sollst du schwimmen, und ganze
               Ströme Freuden sollst du hinabtrinten.</p>
-            <stage>
-              <hi>Ende des ersten Aufzugs.</hi>
-            </stage>
+            <stage>Ende des ersten Aufzugs.</stage>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>2. Akt</head>
+        <head>Zweyter Aufzug.</head>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Ithuriel, Mephistopheles</hi>
-          </stage>
+          <stage>Ithuriel, Mephistopheles</stage>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Was seh ich! – Ithuriel in dieser Maske! – Ein Geist, der stäts am Throne des Ewigen
+            <p>Was seh ich! – Ithuriel in dieser Maske! – Ein Geist, der stäts am Throne des Ewigen
               steht, in der Kleidung eines Wurms!</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Ich schäme mich der Hülle nicht, die ein Grösserer als ich getragen hat; aber der
+            <p>Ich schäme mich der Hülle nicht, die ein Grösserer als ich getragen hat; aber der
               flolze Geist, der sich vor keinem Menschen beugen wollte, <pb n="17"/> ist hier in der
               verächtlichen Schaale des Staubes!</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Was macht ihr müßigen Speichellecker?</l>
+            <p>Was macht ihr müßigen Speichellecker?</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Wir schmieden Donner, euch Brevler zu zermalmen!</l>
+            <p>Wir schmieden Donner, euch Brevler zu zermalmen!</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Hahaha, wir höhnen eure Donnerchen. Singt lieber Weichlinge, und kriecht!</l>
+            <p>Hahaha, wir höhnen eure Donnerchen. Singt lieber Weichlinge, und kriecht!</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Das kriechen kömmt euch Auswürflingen zu. Das ist euer Fluch, euch zu schmiegen.</l>
+            <p>Das kriechen kömmt euch Auswürflingen zu. Das ist euer Fluch, euch zu schmiegen.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Wisse, wir sind keine vertriebene, wir sind freye Geister, die sich Verbunden haben,
+            <p>Wisse, wir sind keine vertriebene, wir sind freye Geister, die sich Verbunden haben,
               in der Hölle frey zu denken.</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Still, sprich nicht zu laut von eurer Freyheit, ich höre deine Ketten rasseln!</l>
+            <p>Still, sprich nicht zu laut von eurer Freyheit, ich höre deine Ketten rasseln!</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Wir tragen Ketten; aber nur zur Vorsorge, um euch Süßlinge einst daran zu
-              schmieden!</l>
+            <p>Wir tragen Ketten; aber nur zur Vorsorge, um euch Süßlinge einst daran zu
+              schmieden!</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Wir zittern schon. Der Thron des mächtigsten Gottes wird von euch nochmal
+            <p>Wir zittern schon. Der Thron des mächtigsten Gottes wird von euch nochmal
               erschüttert. Hahaha, du Echo eines Pralers, der in der Hölle mit diamantenen Fässeln
               angeschmiedet ist. Was machst du hier?</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Was anders, als die Werke eures Königs vernichten!</l>
+            <p>Was anders, als die Werke eures Königs vernichten!</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Eine rühmliche That für dich, wenn du schwache Menschen verführst.</l>
+            <p>Eine rühmliche That für dich, wenn du schwache Menschen verführst.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Der Mensch selbst ist in unsern Augen ein verächtlicher Wurm. Wir würden ihn mit
+            <p>Der Mensch selbst ist in unsern Augen ein verächtlicher Wurm. Wir würden ihn mit
               Füssen treten, und verachten, wenn er nicht den <pb n="18"/> Liebling unsers Feindes
               wäre; aber um uns an ihm zu rächen, greifen wir sein Schooßkind an.</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Ihr werdet so lange wüten, bis dieser mächtige Gott euch in euer Nichts wieder
+            <p>Ihr werdet so lange wüten, bis dieser mächtige Gott euch in euer Nichts wieder
               zurückschleudern wird.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Besser nichts, als ein kriechendes Etwas! – Aber wisse, vernichten kann er uns nicht
+            <p>Besser nichts, als ein kriechendes Etwas! – Aber wisse, vernichten kann er uns nicht
               mehr, wir sind unsterbliche Geister.</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Zu eurer Quaal unsterblich.</l>
+            <p>Zu eurer Quaal unsterblich.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Was ist denn deine Beschäftigung hier?</l>
+            <p>Was ist denn deine Beschäftigung hier?</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Dein Werk zu zerstöhren!</l>
+            <p>Dein Werk zu zerstöhren!</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Du? Wie, du willst mir den Preiß so vieler Jahre rauben?</l>
+            <p>Du? Wie, du willst mir den Preiß so vieler Jahre rauben?</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> So wills meine Pflicht.</l>
+            <p>So wills meine Pflicht.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Ich will dich hintergehn!</l>
+            <p>Ich will dich hintergehn!</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Und ich will dich beschämen, und deinen Klauen eine kostbare Seele entreissen. Den
+            <p>Und ich will dich beschämen, und deinen Klauen eine kostbare Seele entreissen. Den
               Leib geb ich dir preis.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Wer hat dich zum Richter gemacht?</l>
+            <p>Wer hat dich zum Richter gemacht?</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Eben der, welcher dich aus deinem Nichts gezogen.</l>
+            <p>Eben der, welcher dich aus deinem Nichts gezogen.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Du sprichst stolz. Wir wollen das End abwarten. Wir werden aus allen Kräften gegen
+            <p>Du sprichst stolz. Wir wollen das End abwarten. Wir werden aus allen Kräften gegen
               einander kämpfen. Laß sehen, wer siegen wird.</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Geh, ich fürchte gefallene Geisterchen nicht. Noch einen Befehl muß ich dir geben.
-              Du wirst mich nicht verrathen, geh, und gehorche!<hi> Geht ab.</hi>
-            </p>
+            <p>Geh, ich fürchte gefallene Geisterchen nicht. Noch einen Befehl muß ich dir geben. Du
+              wirst mich nicht verrathen, geh, und gehorche! <stage>Geht ab.</stage></p>
             <pb n="19"/>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Ich zittre noch nicht vor dir. Du draust wie jener, dessen Sklave du bist.</l>
+            <p>Ich zittre noch nicht vor dir. Du draust wie jener, dessen Sklave du bist.</p>
           </sp>
         </div>
         <div type="scene">
           <head>Zweyter Auftritt.</head>
-          <stage>
-            <hi>Faust, Mephistopheles.</hi>
-          </stage>
+          <stage>Faust, Mephistopheles.</stage>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Faust, du kömmst eben recht. Sprich, welch einen Buben hast du hier in deinem
-              Dienste?</l>
+            <p>Faust, du kömmst eben recht. Sprich, welch einen Buben hast du hier in deinem
+              Dienste?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Er ist mein Freund, Ich liebe ihn sehr.</l>
+            <p>Er ist mein Freund, Ich liebe ihn sehr.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Welche unzeitige Zärtlichkeit! Daher kommen deine Zweifel. Du leihest dein Ohr jedem
+            <p>Welche unzeitige Zärtlichkeit! Daher kommen deine Zweifel. Du leihest dein Ohr jedem
               Thoren, der dich betäuben will. Ich habe ältere Rechte auf deine Freundschaft. Berbann
               diesen jungen Laffen aus deinen Augen, ich wills.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Knecht, du gebeutst mir! Noch bin ich dein Herr, zittre!</l>
+            <p>Knecht, du gebeutst mir! Noch bin ich dein Herr, zittre!</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Ohnmächtiger, du draust mir? Was hält mich, daß ich dich nicht diesen Augenblick
-              zerschmettere!</l>
+            <p>Ohnmächtiger, du draust mir? Was hält mich, daß ich dich nicht diesen Augenblick
+              zerschmettere!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Du bist entlarvet, Betrüger! Zu früh hab ich dir den Schleyer weggerissen. Noch ist
+            <p>Du bist entlarvet, Betrüger! Zu früh hab ich dir den Schleyer weggerissen. Noch ist
               der Tag nicht zu Ende. Der Himmel beut mir Gnade an, und ich ergreife sie mit beiden
               Händen. Wisse, verruchter Geist, ich habe deine Macht nur dazu verwandt Wohlthaten
               auszuüben.</p>
@@ -1066,30 +1030,29 @@
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Wohlthaten, du Wohlthaten? Wisse Thörichter, daß du lauter unglückliche gemacht
-              host.</l>
+            <p>Wohlthaten, du Wohlthaten? Wisse Thörichter, daß du lauter unglückliche gemacht
+              host.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> So hab ich denn keinen glücklich gemacht?</l>
+            <p>So hab ich denn keinen glücklich gemacht?</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Nur einen, nämlich deinen Feind, dem du aus Haß, Glück, Ehre, Vermögen und alles
-              geraubt hast.</l>
+            <p>Nur einen, nämlich deinen Feind, dem du aus Haß, Glück, Ehre, Vermögen und alles
+              geraubt hast.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ich will ihn sprechen, und auch andere. Ich befehl es!</l>
+            <p>Ich will ihn sprechen, und auch andere. Ich befehl es!</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Das Vergnügen sollst du haben. <hi>Geht ab.</hi>
-            </l>
+            <p>Das Vergnügen sollst du haben. <stage>Geht ab.</stage></p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> So hab ich denn keinen glücklich gemacht? – Welch ein Ungeheuer bin ich! Ich zittre
+            <p>So hab ich denn keinen glücklich gemacht? – Welch ein Ungeheuer bin ich! Ich zittre
               vor mir selbst – Welch eine schauernde Aussicht! – Nichs als Laster – Ich bebe – Die
               Hölle gähnt schon nach mir – Es ist keine Rettung. Ithuriel mein Freund, auch du hast
               mich getäuscht. Du versprichst mir Gnade; aber Ach, süsse Hoffnung, die mich in
@@ -1098,12 +1061,10 @@
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <stage>
-            <hi>Friedreich, Faust, Mephistopheles.</hi>
-          </stage>
+          <stage>Friedreich, Faust, Mephistopheles.</stage>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Ja, da kömmt ein Greis! – Ja ich erkenne seine Züge. Mein Herz empört sich noch bey
+            <p>Ja, da kömmt ein Greis! – Ja ich erkenne seine Züge. Mein Herz empört sich noch bey
               seinem Anblicke. Er war mein Feind, aber ich habe ihn meine ganze Rache fühlen lassen.
                 <pb n="21"/> Wie er aussieht! diese Lumden die ihn decken, dieser gekrümte Rücken,
               dieser Staab, der ihn stützt, sind die klarsten Zeichen meiner Rache. Ha, ich fühle
@@ -1111,120 +1072,116 @@
           </sp>
           <sp who="#friedreich">
             <speaker>FRIEDREICH.</speaker>
-            <p> Ja, ich erkenne ihn! meine Augen sehen meinen Wohlthäter. Sey mir gesegnet, Freund,
+            <p>Ja, ich erkenne ihn! meine Augen sehen meinen Wohlthäter. Sey mir gesegnet, Freund,
               sey mir tausendmal gesegnet! – Ich breite über diese wohlthätigen Hände meine grauen
               Haare, und wasche sie mit meinen Thränen.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Was hör ich! Ich staune!</l>
+            <p>Was hör ich! Ich staune!</p>
           </sp>
           <sp who="#friedreich">
             <speaker>FRIEDREICH.</speaker>
-            <l> Der Himmel wolle dir wieder vergelten, was du mir Gutes gethan hast.</l>
+            <p>Der Himmel wolle dir wieder vergelten, was du mir Gutes gethan hast.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ich habe dich ja deines Vermögens beraubt.</l>
+            <p>Ich habe dich ja deines Vermögens beraubt.</p>
           </sp>
           <sp who="#friedreich">
             <speaker>FRIEDREICH.</speaker>
-            <p> Dafür dank ich dir tausendmal. Ich war ein reicher Schwelger, der Eckel begleitete
+            <p>Dafür dank ich dir tausendmal. Ich war ein reicher Schwelger, der Eckel begleitete
               mich überall; aber durch deine Güte trat ich in den glücklichen Stand, in dem ich der
               Reichste bin.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Was besitzest du denn in diesem Stande?</l>
+            <p>Was besitzest du denn in diesem Stande?</p>
           </sp>
           <sp who="#friedreich">
             <speaker>FRIEDREICH.</speaker>
-            <l> Nichts!</l>
+            <p>Nichts!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Nichts! und du bist der Reichste?</l>
+            <p>Nichts! und du bist der Reichste?</p>
           </sp>
           <sp who="#friedreich">
             <speaker>FRIEDREICH.</speaker>
-            <p> Aber setze hinzu, daß ich auch nichts bedarf. Der ist ein Bettler mit einem
+            <p>Aber setze hinzu, daß ich auch nichts bedarf. Der ist ein Bettler mit einem
               Königreich, der andere ein König mit einem Jochacker.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Was macht denn dich reich?</l>
+            <p>Was macht denn dich reich?</p>
           </sp>
           <sp who="#friedreich">
             <speaker>FRIEDREICH.</speaker>
-            <p> Dieß Herz! – In meinem Gemüthe herrscht eine Stille, diese würzet mir das Allmosen,
+            <p>Dieß Herz! – In meinem Gemüthe herrscht eine Stille, diese würzet mir das Allmosen,
               das mir die Menschlichkeit zukommen läst.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Geh, ich erkenne es, du bist reicher, glücklicher als ich jemals gewesen bin. Wenn
+            <p>Geh, ich erkenne es, du bist reicher, glücklicher als ich jemals gewesen bin. Wenn
               ich <pb n="22"/> dich noch haßte; so gäb ich dir deine Reichthümer wieder. Geh hin in
               Frieden, und leb wohl.</p>
           </sp>
           <sp who="#friedreich">
             <speaker>FRIEDREICH.</speaker>
-            <l> Leb ewig wohl, mein Wohlthäter, ich werde den Himmel für dich anruffen. <hi>Geht
-                ab.</hi>
-            </l>
+            <p>Leb ewig wohl, mein Wohlthäter, ich werde den Himmel für dich anruffen. <stage>Geht
+                ab.</stage></p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Was hab ich gesagt? Bist du überzeugt? Aber ich will dir noch mehr Beweise geben. Es
+            <p>Was hab ich gesagt? Bist du überzeugt? Aber ich will dir noch mehr Beweise geben. Es
               kommen schon einige von denen, die du glücklich machen wolltest. Sey itzt ihr
               Vertrauter, ich werde einen Fremdling spielen. Sie werden uns ihr Herz eröfnen.</p>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <stage>
-            <hi>Silbergeitz, Vorige.</hi>
-          </stage>
+          <stage>Silbergeitz, Vorige.</stage>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Sieh hier kömmt Silbergeitz. Er war ein verdorbener Kaufmann. Durch deine Wohlthaten
+            <p>Sieh hier kömmt Silbergeitz. Er war ein verdorbener Kaufmann. Durch deine Wohlthaten
               besitzt er itzt Millionen. Prüf in einmal, wozu er sein Geld anwendet. Ich gebe dir
               hiemit die Gestalt seines vertrauten Dieners Ich aber werde von ihm Geld
               ausborgen.</p>
-            <stage>
-              <hi>Silbergeitz kömmt schüchtern mit einem Geldsacke, den er verbirgt. Er sieht sich
-                beständig um, und verschliest sorgfältig seine Taschen.</hi>
-            </stage>
+            <stage>Silbergeitz kömmt schüchtern mit einem Geldsacke, den er verbirgt. Er sieht sich
+              beständig um, und verschliest sorgfältig seine Taschen.</stage>
           </sp>
           <sp who="#silbergeitz">
             <speaker>SILBERGEITZ.</speaker>
-            <p> O die bösen Menschen, man kann nicht genug auf der Hut seyn. <hi>Zu Faust.</hi> Sieh
-              da, mein lieber Johann! eben recht, daß ich dich finde. Ich habe die Zinsen von einmal
-              hunderttausend Gulden gezogen. Das ist ein Glück bey <pb n="23"/> diesen schweren
-              Zeiten. Mann kann kaum mehr leben. Gieb nur sorgfältig auf mein Hausgesinde acht, daß
-              die Diener und Mädge nicht zu viel essen. Ihre Mädgen sind unersättlich. Vier Brod die
-              Woche scheinen mir genug. Meinem Weib und Kindern hab ichs schon angesagt, daß wir die
-              Woche künftig drey strenge Fasttage halten. Hahaha, ich hab ihn weiß gemacht, es sey
-              ein Gelübde; aber es geschieht nur aus Ersparniß. Ich höre daß das Fleisch auf dem
-              Lande wohlfeiler ist, man muß es künftig nicht mehr in der Stadt nehmen.</p>
+            <p>O die bösen Menschen, man kann nicht genug auf der Hut seyn. <stage>Zu Faust.</stage>
+              Sieh da, mein lieber Johann! eben recht, daß ich dich finde. Ich habe die Zinsen von
+              einmal hunderttausend Gulden gezogen. Das ist ein Glück bey <pb n="23"/> diesen
+              schweren Zeiten. Mann kann kaum mehr leben. Gieb nur sorgfältig auf mein Hausgesinde
+              acht, daß die Diener und Mädge nicht zu viel essen. Ihre Mädgen sind unersättlich.
+              Vier Brod die Woche scheinen mir genug. Meinem Weib und Kindern hab ichs schon
+              angesagt, daß wir die Woche künftig drey strenge Fasttage halten. Hahaha, ich hab ihn
+              weiß gemacht, es sey ein Gelübde; aber es geschieht nur aus Ersparniß. Ich höre daß
+              das Fleisch auf dem Lande wohlfeiler ist, man muß es künftig nicht mehr in der Stadt
+              nehmen.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Mein Herr, ich habe sie zu sprechen.</l>
+            <p>Mein Herr, ich habe sie zu sprechen.</p>
           </sp>
           <sp who="#silbergeitz">
             <speaker>SILBERGEITZ.</speaker>
-            <p> Was wollen sie – Gehn sie mir nur nicht so nahe – Johann hab Acht auf ihn. Er mag
-              ein ehrlicher Mann seyn; aber man sieht nicht jedem in das Herz. Was man für Mühe hat,
-              sem bischen Geld vor den Dieben zu bewahren! Tag und Nacht muß ich wachen. Ich prüfe
-              alle Schlößer tausendmal. O die bösen Menschen machen mir viel unruhige Nächte! – Also
-              was wollen sie?</p>
+            <p>Was wollen sie – Gehn sie mir nur nicht so nahe – Johann hab Acht auf ihn. Er mag ein
+              ehrlicher Mann seyn; aber man sieht nicht jedem in das Herz. Was man für Mühe hat, sem
+              bischen Geld vor den Dieben zu bewahren! Tag und Nacht muß ich wachen. Ich prüfe alle
+              Schlößer tausendmal. O die bösen Menschen machen mir viel unruhige Nächte! – Also was
+              wollen sie?</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Leihen sie mir auf meine Handschrift, oder auf ein Pfand, zehen Thaler.</l>
+            <p>Leihen sie mir auf meine Handschrift, oder auf ein Pfand, zehen Thaler.</p>
           </sp>
           <sp who="#silbergeitz">
             <speaker>SILBERGEITZ.</speaker>
-            <p> Zehen Thaler! gütiger Himmel, zehen Thaler! Wissen sie, daß ich über fünf tausend
+            <p>Zehen Thaler! gütiger Himmel, zehen Thaler! Wissen sie, daß ich über fünf tausend
               Gulden bey solchen Betrügern verloren habe? Gott weis es, ob ich einen Höller jemals
               wieder bekomme. Da kömmt jeder Taugenichts, verspricht mit hundert Eiden, Kapital, und
               Interesse <pb n="24"/> nebst noch einem christlichen Geschenk zu bezahlen; aber leere
@@ -1233,71 +1190,64 @@
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Ich zahle ihnen künftige Woche fünfzehn.</l>
+            <p>Ich zahle ihnen künftige Woche fünfzehn.</p>
           </sp>
           <sp who="#silbergeitz">
             <speaker>SILBERGEITZ.</speaker>
-            <p> Gehn sie mit ihrer Kleinigkeit. Ich kann mein Geld nicht so wagen. Ich bin ein armer
+            <p>Gehn sie mit ihrer Kleinigkeit. Ich kann mein Geld nicht so wagen. Ich bin ein armer
               Mann. Die Zeiten sind schwer.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Ich gebe zwanzig.</l>
+            <p>Ich gebe zwanzig.</p>
           </sp>
           <sp who="#silbergeitz">
             <speaker>SILBERGEITZ</speaker>
-            <stage>
-              <hi>zu Faust.</hi>
-            </stage>
-            <p> Mein lieber Johann, hier will ich einen Meisterstreich machen. Ich habe
-              ungewichtiges Gold, das kann ich hier wohl anbringen. Dabey gewinn ich nebst zehen
-              Thaler Interesse noch drey Thaler an Agio.</p>
+            <stage>zu Faust.</stage>
+            <p>Mein lieber Johann, hier will ich einen Meisterstreich machen. Ich habe ungewichtiges
+              Gold, das kann ich hier wohl anbringen. Dabey gewinn ich nebst zehen Thaler Interesse
+              noch drey Thaler an Agio.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Unglückseeliger, geh, verlaß mich! Eil fort aus meinen Augen. Ich hätte Lust, dich
+            <p>Unglückseeliger, geh, verlaß mich! Eil fort aus meinen Augen. Ich hätte Lust, dich
               nachbrücklich zu strafen; aber du bist schon gestraft genug.</p>
           </sp>
           <sp who="#silbergeitz">
             <speaker>SILBERGEITZ.</speaker>
-            <p> Ich gehe. Man könnte mich betrügen. Geschwind, ist etwa unterdessen ein Dieb
-              eingebrochen. O weh! <hi>Geht ab.</hi>
-            </p>
+            <p>Ich gehe. Man könnte mich betrügen. Geschwind, ist etwa unterdessen ein Dieb
+              eingebrochen. O weh! <stage>Geht ab.</stage></p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Welch ein Ungeheuer!</l>
+            <p>Welch ein Ungeheuer!</p>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
-          <stage>
-            <hi>Schönheitlieb, Diener, Vorige.</hi>
-          </stage>
+          <stage>Schönheitlieb, Diener, Vorige.</stage>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Hier kömmt die Gräfinn Schönheitlieb. Sie war eine tugendhafte Dame, das Glück ihres
+            <p>Hier kömmt die Gräfinn Schönheitlieb. Sie war eine tugendhafte Dame, das Glück ihres
               Mannes, und die Zierde des Adels, so lang <pb n="25"/> ihre Gestalt mittelmässig war.
               Du hast ihr durch meine Kunst seltne Reize gegeben. Laß sehen, wozu hat sie deine Gabe
               angewandt. Ich gebe dir die Gestalt ihrer vertrauten Dienerin Lisette.</p>
-            <stage>
-              <hi>Zwey Diener tragen ihr den Schlender. Einer trägt ihr den Spiegel vor. Sie lächelt
-                hinein, gebärdet sich thöricht, und wirft sich in einen Sessel.</hi>
-            </stage>
+            <stage>Zwey Diener tragen ihr den Schlender. Einer trägt ihr den Spiegel vor. Sie
+              lächelt hinein, gebärdet sich thöricht, und wirft sich in einen Sessel.</stage>
           </sp>
-          <sp who="#schönheitlieb">
+          <sp who="#schoenheitlieb">
             <speaker>SCHÖNHEITLIEB.</speaker>
-            <p> Ach, welch eine ermüdende Rolle ich spiele! – <hi>Zu Faust.</hi> He Lisette, hör
-              mich, wie reich glaubst du, daß itzt meine Hofstaat ist? – Ich habe dreyßig
+            <p>Ach, welch eine ermüdende Rolle ich spiele! – <stage>Zu Faust.</stage> He Lisette,
+              hör mich, wie reich glaubst du, daß itzt meine Hofstaat ist? – Ich habe dreyßig
               Anbeter.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> diese werden sie stark beschäftigen.</l>
+            <p>diese werden sie stark beschäftigen.</p>
           </sp>
-          <sp who="#schönheitlieb">
+          <sp who="#schoenheitlieb">
             <speaker>SCHÖNHEITLIEB.</speaker>
-            <p> Es kostet Mühe, diese Sklaven alle in meinen Fässeln zu erhalten. Ich studire die
+            <p>Es kostet Mühe, diese Sklaven alle in meinen Fässeln zu erhalten. Ich studire die
               ganze Nacht, und überdenke die krotische Rolle, die ich beym Tag spielen werde. Ich
               vertheile mit Borsicht meine Stunden, damit sich die Nebenbuhler nicht begegnen. Der
               Morgen, und der Vormittag ist verwandt, meine Reize schimmernd zu machen. Ach Lisette,
@@ -1312,35 +1262,32 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Welch eine Närrinn! – Madame! belieben sie meine Wohnung eilends zu verlassen.</l>
+            <p>Welch eine Närrinn! – Madame! belieben sie meine Wohnung eilends zu verlassen.</p>
           </sp>
-          <sp who="#schönheitlieb">
+          <sp who="#schoenheitlieb">
             <speaker>SCHÖNHEITLIEB.</speaker>
-            <p> Es ist Zeit. Meine Anbeter erwarten mich. Sie schmachten wie die Blumen, wenn die
-              Sonne abwesend ist. Ich will diese Geschöpfchen durch mein Lächeln wieder beleben.<hi>
-                Geht ab.</hi>
-            </p>
+            <p>Es ist Zeit. Meine Anbeter erwarten mich. Sie schmachten wie die Blumen, wenn die
+              Sonne abwesend ist. Ich will diese Geschöpfchen durch mein Lächeln wieder beleben.
+                <stage>Geht ab.</stage></p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Bist du nicht vollends überzeugt? – Aber nur Geduld.</l>
+            <p>Bist du nicht vollends überzeugt? – Aber nur Geduld.</p>
           </sp>
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <stage>
-            <hi>Raufgern, Vorige.</hi>
-          </stage>
+          <stage>Raufgern, Vorige.</stage>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Hier kömmt Raufgern. Er war einst ein unbekannter Mensch in der bürgerlichen
+            <p>Hier kömmt Raufgern. Er war einst ein unbekannter Mensch in der bürgerlichen
               Gesellschaft. Du hast ihn durch mich tapfer gemacht, und am Hofe empfohlen. Er stieg
               empor. Er spielte im letzten Kriege die Rolle eines Freybeuters. Wir wollen sehen, was
               für Gesinnungen dieser Mann itzt heget.</p>
           </sp>
           <sp who="#raufgern">
             <speaker>RAUFGERN.</speaker>
-            <p> Es lebe der Krieg! Blutvergießen ist meine Freude. Zum Wetter, wenn ich im Blut
+            <p>Es lebe der Krieg! Blutvergießen ist meine Freude. Zum Wetter, wenn ich im Blut
               watte, und auf Leichen einberklettre; das ist meine Wollust. Ich hasse den verfluchten
               Frieden, da verrosten die Degen, und das Herz im <pb n="27"/> Leibe modert. Fort die
               träge Ruhe. Zum Bös, wenn ich die Schandhütten der verfluchten Bauern anzünden, die
@@ -1354,61 +1301,54 @@
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Man hat uns beleidiget, wir wollen uns rächen, ich bitte sie um Beystand.</l>
+            <p>Man hat uns beleidiget, wir wollen uns rächen, ich bitte sie um Beystand.</p>
           </sp>
           <sp who="#raufgern">
             <speaker>RAUFGERN.</speaker>
-            <p> Ein Zweykampf! – Du sollst leben Bruder. Umarme mich, und küsse mich Freund! – Wo
-              ist der Wurm, der euch beleidiget hat? Die Seel im Leibe will ich ihm zerfleischen.
-              Ihr könnt euch das Vergnügen nicht vorstellen, das ich empfinde, wenn ich todte Körper
-              um mich liegen sehe!</p>
+            <p>Ein Zweykampf! – Du sollst leben Bruder. Umarme mich, und küsse mich Freund! – Wo ist
+              der Wurm, der euch beleidiget hat? Die Seel im Leibe will ich ihm zerfleischen. Ihr
+              könnt euch das Vergnügen nicht vorstellen, das ich empfinde, wenn ich todte Körper um
+              mich liegen sehe!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Welch ein Ungeheuer. Die Natur empört sich vor ihm. Ich glaube die Menschlichkeit
-              hat ihn vergessen. Geh Wüttrich, vertilge deine Brüder, und mache dich groß mit dem
+            <p>Welch ein Ungeheuer. Die Natur empört sich vor ihm. Ich glaube die Menschlichkeit hat
+              ihn vergessen. Geh Wüttrich, vertilge deine Brüder, und mache dich groß mit dem
               Unglücke deiner Nebenmeuschen.</p>
             <pb n="28"/>
           </sp>
           <sp who="#raufgern">
             <speaker>RAUFGERN.</speaker>
-            <p> Ich höre überall von einem Friedensbruch. O wenn nur die ganze Welt in Krieg
-              verwickelt würde. Es lebe der Krieg! <hi>Geht ab.</hi>
-            </p>
+            <p>Ich höre überall von einem Friedensbruch. O wenn nur die ganze Welt in Krieg
+              verwickelt würde. Es lebe der Krieg! <stage>Geht ab.</stage></p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES</speaker>
-            <stage>
-              <hi>hönisch.</hi>
-            </stage>
-            <l> Welch ein glücklicher Mensch.</l>
+            <stage>hönisch.</stage>
+            <p>Welch ein glücklicher Mensch.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> So glücklich als ein Tyger! – Traurige Wohlthat. Ich habe diesem Menschen nur
+            <p>So glücklich als ein Tyger! – Traurige Wohlthat. Ich habe diesem Menschen nur
               emporgeholfen, daß er sich und andere unglücklich macht.</p>
           </sp>
         </div>
         <div type="scene">
           <head>Siebenter Auftritt.</head>
-          <stage>
-            <hi>Sorgenvoll, Klienten, Vorige.</hi>
-          </stage>
+          <stage>Sorgenvoll, Klienten, Vorige.</stage>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Hier nähert sich uns Graf Sorgenvoll. Er saß einst ruhig auf seinen verschuldeten
+            <p>Hier nähert sich uns Graf Sorgenvoll. Er saß einst ruhig auf seinen verschuldeten
               Gütern, und besorgte seine Wirthschaft. Du zahltest seine Schulden, du machtest ihn
               durch meine Macht am Hofe bekannt. Er spielte mit Kunst die Rolle des Schmäuchlers. Er
               gewann das Herz seines Königs. Sieh zu wie er diese Wohlthaten genützt hat. Du sollst
               itzt in seinen Augen die Miene seines vertrauten Freundes haben.</p>
-            <stage>
-              <hi>Sorgenvoll tritt stolz ein. Einige Männer reichen ihm Bittschriften, er nimmt sie
-                verächtlich, und steckt sie zu sich. Dann wirft er sich in einen Stuhl.</hi>
-            </stage>
+            <stage>Sorgenvoll tritt stolz ein. Einige Männer reichen ihm Bittschriften, er nimmt sie
+              verächtlich, und steckt sie zu sich. Dann wirft er sich in einen Stuhl.</stage>
           </sp>
           <sp who="#sorgenvoll">
             <speaker>SORGENVOLL.</speaker>
-            <p> Ha, sieh da, mein Freund! O wie gut ist es, daß ich dich finde. O laß mich in <pb
+            <p>Ha, sieh da, mein Freund! O wie gut ist es, daß ich dich finde. O laß mich in <pb
                 n="29"/> deinen Busen meine Sorgen ausschütten. Graf Ehrenreich will mich
               verdrängen. Er ist geschäftig im Vorzimmer. Er häuft seine Parthey. Er schmäuchelt dem
               Monarchen Aber zittre. Ich hasse dich von ganzen Herzen! Ach mein Freund, beklage
@@ -1416,11 +1356,11 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Aber warum übernehmen sie mehr, als ihre Schultern zu tragen vermögen?</l>
+            <p>Aber warum übernehmen sie mehr, als ihre Schultern zu tragen vermögen?</p>
           </sp>
           <sp who="#sorgenvoll">
             <speaker>SORGENVOLL.</speaker>
-            <p> Arbeite ich nicht alles; so hab ich Mitarbeiter, und folglich lauter Nebenbuhler. O
+            <p>Arbeite ich nicht alles; so hab ich Mitarbeiter, und folglich lauter Nebenbuhler. O
               mein Freund, du kennst noch nicht die gleitende Würde eines Günstlings. Nichts als
               Neider sind um mich. Ich muß jeden Augenblick zittern, daß mich der König
               verabschiedet, und seine Gunst einem andern schenkt. Bedenke diese traurige Lage, in
@@ -1437,28 +1377,25 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Gehn sie, vergiften sie nicht nochmehr mein Herz. Ich bin zugequält. Schleppen sie
+            <p>Gehn sie, vergiften sie nicht nochmehr mein Herz. Ich bin zugequält. Schleppen sie
               den Schwarm ihrer Sorgen mit sich.</p>
           </sp>
           <sp who="#sorgenvoll">
             <speaker>SORGENVOLL.</speaker>
-            <p> Ich eile nach Hof. Meine Feinde könnten sich meiner Abwesenheit bedienen. Sie sollen
-              stürzen die Verräther! <hi>Geht ab.</hi>
-            </p>
+            <p>Ich eile nach Hof. Meine Feinde könnten sich meiner Abwesenheit bedienen. Sie sollen
+              stürzen die Verräther! <stage>Geht ab.</stage></p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> O wie elend ist seine Lage!</l>
+            <p>O wie elend ist seine Lage!</p>
           </sp>
         </div>
         <div type="scene">
           <head>Achter Auftritt.</head>
-          <stage>
-            <hi>Waisenplag, Vorige.</hi>
-          </stage>
+          <stage>Waisenplag, Vorige.</stage>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Hier kömmt Waisenplag. Er war einst ein armer Bogenschreiber. Er nährte sich mit
+            <p>Hier kömmt Waisenplag. Er war einst ein armer Bogenschreiber. Er nährte sich mit
               Mühe. Durch dich ward er ein berufener Anwald. Ich gab ihm auf deinen Befehl die
               tiefsten Einsichten der Rechte, und ein glänzende Wohlredenheit. Wir wollen sehen, wie
               er diese Gaben zu nützen weiß. Ich gebe dir die Gestalt eines Edelmannes dessen
@@ -1466,7 +1403,7 @@
           </sp>
           <sp who="#waisenplag">
             <speaker>WAISENPLAG.</speaker>
-            <p> Ha, sind sie hier? Ich habe ihren Prozeß reif überwogen. Sie haben die ungerechteste
+            <p>Ha, sind sie hier? Ich habe ihren Prozeß reif überwogen. Sie haben die ungerechteste
               Sache; aber danken sie dem Himmel, sie haben auch den geschicktesten Anwald. Können
               sie falsch schwören? – Seltsamme Frage, verzeihen sie mir diesen jungferlichen
               Zweifel. Man giebt dem Schwure zweydeutige Worte, und denkt <pb n="31"/> anders als
@@ -1486,86 +1423,82 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Verwünschter Rabulist! Geh, eil, vergifte nicht länger durch deine Gegenwart meine
+            <p>Verwünschter Rabulist! Geh, eil, vergifte nicht länger durch deine Gegenwart meine
               Wohnung. Ich habe dich unterstützt; aber verflucht sey meine Wohlthat!</p>
             <pb n="32"/>
           </sp>
           <sp who="#waisenplag">
             <speaker>WAISENPLAG.</speaker>
-            <l> Ich muß vor Gericht. Leben Sie wohl. Sie sind zu gewissenhaft. <hi>Geht ab.</hi>
-            </l>
+            <p>Ich muß vor Gericht. Leben Sie wohl. Sie sind zu gewissenhaft. <stage>Geht
+                ab.</stage></p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Die Menschen sind wie Spinnen, aus eben dem Saft, aus welchem die Biene Honig macht,
+            <p>Die Menschen sind wie Spinnen, aus eben dem Saft, aus welchem die Biene Honig macht,
               zeugen sie Gift. Mein Herz unterliegt itzt ganz seinen Sorgen.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Du verdienst es. Warum hörst du nicht meinen Roth. Verbanne alle Sorgen. Sey munter,
+            <p>Du verdienst es. Warum hörst du nicht meinen Roth. Verbanne alle Sorgen. Sey munter,
               und sey mein Freund. Hör niemand als mich. Ich will alles hervorsuchen dich
               zuergötzen; Hahaha –</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Worüber lachst du?</l>
+            <p>Worüber lachst du?</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Sieh einmal hinab über das Fenster. Dort trägt man die Leiche eines Kindes.</l>
+            <p>Sieh einmal hinab über das Fenster. Dort trägt man die Leiche eines Kindes.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ich sehe auch einen Greisen, der in Thränen zerfliest.</l>
+            <p>Ich sehe auch einen Greisen, der in Thränen zerfliest.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Er weint, weil er glaubt er sey Vater dieses Kindes; aber seine Frau hat es nur
+            <p>Er weint, weil er glaubt er sey Vater dieses Kindes; aber seine Frau hat es nur
               unterschoben, damit sie sein Vermögen erben kann, welches ihr sonst die Freunde rauben
               würden. Wie der alberne Greis weint. Hahaha!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Wer ist der Jüngling, der dort dem Alten so zärtlich die Hände küst.</l>
+            <p>Wer ist der Jüngling, der dort dem Alten so zärtlich die Hände küst.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Es ist der Neffe, der von seinem Onkel fünfzig tausend Gulden erwartet. Er wünscht
+            <p>Es ist der Neffe, der von seinem Onkel fünfzig tausend Gulden erwartet. Er wünscht
               ihm eben mit dem Munde graue Nestors Jahre, und im Herzen eine wohlthätige
               Lungensucht, damit er bald erben kann.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Wer kömmt denn dort so wütend daher?</l>
+            <p>Wer kömmt denn dort so wütend daher?</p>
             <pb n="33"/>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Das elendeste Geschöpf auf Erden. Ein Spieler, der Tag und Nacht an einen Sessel
+            <p>Das elendeste Geschöpf auf Erden. Ein Spieler, der Tag und Nacht an einen Sessel
               angeleimet ist, um das Bergnügen zu haben, sein Geld zu verlieren. Er flucht eben über
               das Spiel, und wird gleich wieder spielen, sobald er Geld ausgeborgt hat.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Nichts kann mich zerstreuen. – He, Wagner!</l>
+            <p>Nichts kann mich zerstreuen. – He, Wagner!</p>
           </sp>
         </div>
         <div type="scene">
           <head>Neunter Auftritt.</head>
-          <stage>
-            <hi>Wagner, Vorige.</hi>
-          </stage>
+          <stage>Wagner, Vorige.</stage>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Spiel er mir ein Stück auf der Harfe. Vielleicht erquickt mich die Musick.</l>
+            <p>Spiel er mir ein Stück auf der Harfe. Vielleicht erquickt mich die Musick.</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER</speaker>
-            <stage>
-              <hi>singt, und spielt.</hi>
-            </stage>
+            <stage>singt, und spielt.</stage>
+            <stage>Arie.</stage>
             <lg>
-              <head>Arie.</head>
               <l>O wie lächelnd sind die Stunden,</l>
               <l>Wenn die Seele fröhlich ist!</l>
               <l>Es wird jede Lust empfunden;</l>
@@ -1584,87 +1517,78 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> So ist mein Herz. Jede Freude ist mit Elend, und Gram begleitet.</l>
+            <p>So ist mein Herz. Jede Freude ist mit Elend, und Gram begleitet.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Komm, folg mir. Ich will dein Aug erquicken. Ich werde dir die angenehmsten Scenen
+            <p>Komm, folg mir. Ich will dein Aug erquicken. Ich werde dir die angenehmsten Scenen
               des Vergnügens zeigen.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <lg>
-              <l> Wohlan, ich folge dir. Freund, ermüden kannst du mich; aber erquicken nicht.</l>
-            </lg>
-            <stage>
-              <hi>Ende des zweyten Aufzugs.</hi>
-            </stage>
+            <p>Wohlan, ich folge dir. Freund, ermüden kannst du mich; aber erquicken nicht.</p>
+            <stage>Ende des zweyten Aufzugs.</stage>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>3. Akt</head>
+        <head>Dritter Aufzug.</head>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Ithuriel, Theod., Elisabeth.</hi>
-          </stage>
-          <stage>
-            <hi>Es ist im Saal eine prächtige Tafel gedeckt.</hi>
-          </stage>
+          <stage>Ithuriel, Theod., Elisabeth.</stage>
+          <stage>Es ist im Saal eine prächtige Tafel gedeckt.</stage>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> So ist es denn wahr, daß ich hier meinen Sohn finde?</l>
+            <p>So ist es denn wahr, daß ich hier meinen Sohn finde?</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Du sollst ihn finden, Greis.</l>
+            <p>Du sollst ihn finden, Greis.</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <l> O ich werde ihn wieder sehen!</l>
+            <p>O ich werde ihn wieder sehen!</p>
             <pb n="35"/>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Ihr werdet ihn wieder finden; aber eure Freude wird kurz seyn.</l>
+            <p>Ihr werdet ihn wieder finden; aber eure Freude wird kurz seyn.</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> Schämt er sich unser? Gott, das würde mir ein Schmerz seyn.</l>
+            <p>Schämt er sich unser? Gott, das würde mir ein Schmerz seyn.</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Ihr habt vielmehr Ursach, euch seiner zu schämen; aber die ehrliche Armuth ist in
-              den Augen des reichen Lasters ein Gräuel.</p>
+            <p>Ihr habt vielmehr Ursach, euch seiner zu schämen; aber die ehrliche Armuth ist in den
+              Augen des reichen Lasters ein Gräuel.</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> Wodurch hat er seine Schätze erworben?</l>
+            <p>Wodurch hat er seine Schätze erworben?</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Mit Schande!</l>
+            <p>Mit Schande!</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <l> Theodor, unser Sohn! – Ach, ich fühle mein mütterliches Herz ist ganz
-              durchbohrt.</l>
+            <p>Theodor, unser Sohn! – Ach, ich fühle mein mütterliches Herz ist ganz durchbohrt.</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <p> Elender Vater, der ich bin! Ich habe mein weniges Vermögen angewandt, diesen
-              einzigen Sohn zu bilden. Itzt sind alle meine Hofnungen hin. Grosser Gott, hättest du
-              mir lieber diesen ungerathenen Sohn geraubt, als daß ich an ihm itzt einen Bösewicht
+            <p>Elender Vater, der ich bin! Ich habe mein weniges Vermögen angewandt, diesen einzigen
+              Sohn zu bilden. Itzt sind alle meine Hofnungen hin. Grosser Gott, hättest du mir
+              lieber diesen ungerathenen Sohn geraubt, als daß ich an ihm itzt einen Bösewicht
               finden soll. O Mutter, was hast du mir für einen Sohn gegeben!</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <l> Vater, mach mir keine Vorwürfe. Habe Mitleid mit meinen Schmerzen.</l>
+            <p>Vater, mach mir keine Vorwürfe. Habe Mitleid mit meinen Schmerzen.</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <p> Siehst du Mutter, so geht es, wenn die Eltern zu grosse Aussichten mit ihren Kindern
+            <p>Siehst du Mutter, so geht es, wenn die Eltern zu grosse Aussichten mit ihren Kindern
               haben. Wär er beym Pfluge geblieben; so wär er itzt vielleicht ein ehrlicher Bauer,
               und sässe mit Tugend in seiner Schaubhütte: aber ihr Weiber wollt eure Kinder groß
               sehen. Ich that mein Möglichstes; ich schickte ihn auf die beste Schule; da ist unser
@@ -1673,22 +1597,21 @@
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Ihr ehrlichen Leute, macht euch keine Vorwürfe. Ihr verdienet mein Mitleid. Hört,
+            <p>Ihr ehrlichen Leute, macht euch keine Vorwürfe. Ihr verdienet mein Mitleid. Hört,
               euer Sohn ist in gröster Gefahr. Mehr sag ich euch nicht. Ihr könnt ihn noch retten.
-                <hi>Beide fallen ihn zu Füssen.</hi>
-            </p>
+                <stage>Beide fallen ihn zu Füssen.</stage></p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> Bester Freund, sag an! was sollen wir thun?</l>
+            <p>Bester Freund, sag an! was sollen wir thun?</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <l> O ich beschwöre dich mein junger Herr!</l>
+            <p>O ich beschwöre dich mein junger Herr!</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Ihr rühret mich. Geht, sucht euren Sohn zu bereden, alles zu verlassen, und euch zu
+            <p>Ihr rühret mich. Geht, sucht euren Sohn zu bereden, alles zu verlassen, und euch zu
               folgen. In der tugendhaften Armuth will ich ihn euch wieder schenken. Sein Herz ist
               noch nicht ganz verderbt. Ich finde noch schwache Keime von einer Tugend in ihm. Ich
               will diese Funken anfachen, und sie sollen das edelste Feuer hervorbringen. Geht,
@@ -1697,103 +1620,100 @@
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <p> Lieber Herr, was sollen wir unserm Sohne sagen? Er wird uns nicht mehr anhören, weil
+            <p>Lieber Herr, was sollen wir unserm Sohne sagen? Er wird uns nicht mehr anhören, weil
               er so vornehm ist. Wir Leute auf dem Lande sind nicht so beredt als die Städter.</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <l> Auf dem Lande ist man ehrlich; aber nicht weise.</l>
+            <p>Auf dem Lande ist man ehrlich; aber nicht weise.</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Der Himmel segnet euer gerechtes Unternehmen. Traut auf ihn, und eure Zunge wird
+            <p>Der Himmel segnet euer gerechtes Unternehmen. Traut auf ihn, und eure Zunge wird
               Wohlredenheit des Herzens haben. Geht, betet, denn die Erleuchtung kömmt von oben
               herab. Enfernet euch itzt. Gleich bin ich wieder <pb n="37"/> bey euch. Ich werde euch
               in allem unterrichten.</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <l> Ich küsse dir die Hand, mein bester Freund.</l>
+            <p>Ich küsse dir die Hand, mein bester Freund.</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> So jung, und soviel Verstand! Jüngling, du setzest mich in Erstaunung. Wer bist
-              du?</l>
+            <p>So jung, und soviel Verstand! Jüngling, du setzest mich in Erstaunung. Wer bist
+              du?</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Ein Freund eures Sohnes.</l>
+            <p>Ein Freund eures Sohnes.</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> O wenn mein Sohn noch solche Freunde hat; so habe ich noch gute Hofnung. Warum bist
-              du sein Freund?</l>
+            <p>O wenn mein Sohn noch solche Freunde hat; so habe ich noch gute Hofnung. Warum bist
+              du sein Freund?</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Aus Mitleid.</l>
+            <p>Aus Mitleid.</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <l> O so sey auch unser Freund, seys aus Mitleid!</l>
+            <p>O so sey auch unser Freund, seys aus Mitleid!</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Ich bin es, und was noch mehr ist, ihr verdient es. Eure Redlichkeit ist die Zierde
-              der Erde, und ein Wohlgeruch im Himmel. <hi>Gehen ab.</hi>
-            </p>
+            <p>Ich bin es, und was noch mehr ist, ihr verdient es. Eure Redlichkeit ist die Zierde
+              der Erde, und ein Wohlgeruch im Himmel. <stage>Gehen ab.</stage></p>
           </sp>
         </div>
         <div type="scene">
           <head>Zweyter Auftritt.</head>
-          <stage>
-            <hi>Ithuriel, Mephistopheles.</hi>
-          </stage>
+          <stage>Ithuriel, Mephistopheles.</stage>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Wie, bist du noch in diesen irdischen Gemächern?</l>
+            <p>Wie, bist du noch in diesen irdischen Gemächern?</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Ich bin überall, wo ich kostbare Seelen retten kann.</l>
+            <p>Ich bin überall, wo ich kostbare Seelen retten kann.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Du arbeitest fleißig. Gieb Rechenschaft von deinem Tagwerke! Was hast du zu Stande
-              gebracht?</l>
+            <p>Du arbeitest fleißig. Gieb Rechenschaft von deinem Tagwerke! Was hast du zu Stande
+              gebracht?</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Dein Sklave wankt.</l>
+            <p>Dein Sklave wankt.</p>
             <pb n="38"/>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Ist dieß alles? Laß ihn wanken, ich weis ihn doch auf meiner Seite zuerhalten.</l>
+            <p>Ist dieß alles? Laß ihn wanken, ich weis ihn doch auf meiner Seite zuerhalten.</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Die Schwäche des Menschen hilft dir. Sein eigne Hang führt ihn zur Wollust, und
+            <p>Die Schwäche des Menschen hilft dir. Sein eigne Hang führt ihn zur Wollust, und
               fässelt ihn an die Erde. Du hast nichts zu thun als seiner Leidenschaft zu
               schmäucheln; aber ich muß ihn von allem losreissen, ich muß seine entartetete Natur
               bekämpfen. Sieh Elender, welch ein Unterschied!</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Und dieses schwache elende Geschöpf, der Mensch ist der Liebling jenes, der uns
+            <p>Und dieses schwache elende Geschöpf, der Mensch ist der Liebling jenes, der uns
               erhabneste Geister verworfen hat.</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Sieh Aufrührer, das ist dein unzeitiges Hohngelächter. Warum zerstörst du die weise
+            <p>Sieh Aufrührer, das ist dein unzeitiges Hohngelächter. Warum zerstörst du die weise
               Ordnung der Dinge? Soll der Mensch ein Engel, und der Engel ein Gott seyn?
-              Verworfener, der du die Narben des Donners. <hi>Trägst, blick auf, und lerne.</hi>
-              Engel, die aus Stolz Götter seyn wollten, wurden Teufel, und Menschen, die aus ihrer
-              Sphäre sich heben würden, wären Rebeilen!</p>
+              Verworfener, der du die Narben des Donners trägst, blick auf, und lerne: Engel, die
+              aus Stolz Götter seyn wollten, wurden Teufel, und Menschen, die aus ihrer Sphäre sich
+              heben würden, wären Rebeilen!</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Die Menschen waren Rebellen, und sind es täglich. Sie treten mit frecher Stirne die
+            <p>Die Menschen waren Rebellen, und sind es täglich. Sie treten mit frecher Stirne die
               Gesetze unsers Feindes zu Boden; aber dieser Schöpfer, der uns wegen einem edlen,
               erhabnen Gedanken verworfen hat, verlischt hier seine Donner, verzeiht gerne seinen
               Lieblingen, trägt Mitleid mit ihrer Schwäche, erniedert sich so gar von seiner Grösse,
@@ -1803,7 +1723,7 @@
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Sieh allwissender Geist, da verliert sich deine Weisheit. Deine Fässel haben deinen
+            <p>Sieh allwissender Geist, da verliert sich deine Weisheit. Deine Fässel haben deinen
               Verstand zur Hölle, tief zur Hölle, hinabgebeugt. Er kann sich zu so hohen Geheimnißen
               nicht mehr aufschwingen. Das ist euer Fluch. Uns Engeln ist es aufbewahrt, in die
               tiefste göttliche Weisheit einzudringen. Wir finden den schönen Zusammenhang seiner
@@ -1814,20 +1734,20 @@
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Du irrest dich sehr, wenn du unsere Weisheit einschränkest.</l>
+            <p>Du irrest dich sehr, wenn du unsere Weisheit einschränkest.</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Wohlan Allmächtiger geh, zeig mir deine Macht, und ich falle vor dir nieder, und
-              bete dich an.</l>
+            <p>Wohlan Allmächtiger geh, zeig mir deine Macht, und ich falle vor dir nieder, und bete
+              dich an.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Du höhnest mich?</l>
+            <p>Du höhnest mich?</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Wie es dein. Stolz verdienet! Sag mir Verwägner, wann hat Gott seinen Anfang
+            <p>Wie es dein. Stolz verdienet! Sag mir Verwägner, wann hat Gott seinen Anfang
               genommen? Wer ordnet seine Entschliessungen? Wer hat ihm den Plan seiner Schöpfung
               vorgezeichnet? Bist dus? Wohlan so komm, und lehre mich! Wann hast du aus einem Chaos
               diese Welt bereitet? Wann hast du den Donner gebildet? <pb n="40"/> Wann heißest du
@@ -1837,56 +1757,53 @@
               deine Schwäche? Ohnmächtiger, bist du beschämt, zu Boden geworfen, vernichtet? Geh,
               Vertilgter, eil sättige deine höllische Rache. Diese Macht ist dir noch gelassen.
               Verführ die Menschen; sey ein Löwe, laure in der Finsterniß auf Beute; wirf eine
-              Handvoll Menschenblut gegen den Himmel, und verzweifle! <hi>Geht ab.</hi>
-            </p>
+              Handvoll Menschenblut gegen den Himmel, und verzweifle! <stage>Geht ab.</stage></p>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <stage>
-            <hi>Mephistopheles, Wagner, und ein Haufe schöner Mädchen, zu ihnen Faust.</hi>
-          </stage>
+          <stage>Mephistopheles, Wagner, und ein Haufe schöner Mädchen, zu ihnen Faust.</stage>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <p> Meine Schönen belieben sie nur herein zu spatzieren. Artige Gesichter! – Nach der
+            <p>Meine Schönen belieben sie nur herein zu spatzieren. Artige Gesichter! – Nach der
               Wahl! – Monsieur Mephistopheles darf ich mir nicht eines unter diesen allerliebsten
               Kindern auswählen?</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Schweig itzt, Ich habe wichtigere Dinge.</l>
+            <p>Schweig itzt, Ich habe wichtigere Dinge.</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <p> Eure Gnaden verzeihn, daß ich hochdieselben in ihren – Gedanken gestört habe. – Mein
+            <p>Eure Gnaden verzeihn, daß ich hochdieselben in ihren – Gedanken gestört habe. – Mein
               Herr wird Augen machen, wenn er so hübsche Gesichter sehen wird. Er versteht das Werk
               so <pb n="41"/> gut als ein alter Hofmann: Zum Henker, ich fühle selbsten, wenn ich
               kein Kammerdiener wäte – Aber still, da kömmt der Sultan.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Freund, sieh auf! – Blicke um dich, ich habe diese Mädchen der Freude zu deiner
-              Tafel geladen. Du siehst, wie ich beschäftig bin dich zu vergnügen. Wähl unter ihnen,
-              welche gefällt?</p>
+            <p>Freund, sieh auf! – Blicke um dich, ich habe diese Mädchen der Freude zu deiner Tafel
+              geladen. Du siehst, wie ich beschäftig bin dich zu vergnügen. Wähl unter ihnen, welche
+              gefällt?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Keine!</l>
+            <p>Keine!</p>
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <p> Das versteh ich nicht, mit gefallen sie alle. Herr Mephistopheles ich empfehle mich
+            <p>Das versteh ich nicht, mit gefallen sie alle. Herr Mephistopheles ich empfehle mich
               in ihre Gnad. Wenn das Willdpret ausgetheilt wird, so bekomme ich mein Theilchen.
               Schicken sie mir die Kinder in das Vorzimmer. Man müste ein Herz von Kieselstein haben
               –</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Warum bist du immer so traurig? Ergieb dich der Freude.</l>
+            <p>Warum bist du immer so traurig? Ergieb dich der Freude.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Ach mein Herz öfnet sich nicht mehr dem Vergnügen. Ich war erst im Garten. Ich warf
+            <p>Ach mein Herz öfnet sich nicht mehr dem Vergnügen. Ich war erst im Garten. Ich warf
               mich ermüdet auf den Rasen nieder. Umsonst legte die manigsaltige Natur ihren Reiz vor
               mir aus, meine Augen sahen tief zur Erde; umsonst sangen mir die Vögel ihre
               harmonischen Lieder zu, mein Ohr hörtez aber die Lieblichkeit dringt nicht mehr in
@@ -1895,32 +1812,28 @@
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Weg diese Träume! Sieh deine Helena kömmt, und beut dir die Arme entgegen.</l>
+            <p>Weg diese Träume! Sieh deine Helena kömmt, und beut dir die Arme entgegen.</p>
             <pb n="42"/>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <stage>
-            <hi>Helena, Eduard, Vorige.</hi>
-          </stage>
+          <stage>Helena, Eduard, Vorige.</stage>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Mein Freund, immer misse ich dich. Sonst eiltest du mir zu. Itzt muß ich alle
+            <p>Mein Freund, immer misse ich dich. Sonst eiltest du mir zu. Itzt muß ich alle
               Gemächer durchlausen dich zu finden. Schenk mir meinen Freund wieder.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Beste Freundinn, wenn mein Herz noch etwas fühlet; so ist es die Freundschaft für
+            <p>Beste Freundinn, wenn mein Herz noch etwas fühlet; so ist es die Freundschaft für
               dich, und die Liebe für mein Sohn. Ja die Natur behauptet noch allein ihre Rechte.
               Aber bey diesen Umarmungen seufzt noch mein Herz. Genug, last uns zur Tafel gehn.</p>
-            <stage>
-              <hi>Alles setzt sich zur Tafel. Man ißt, man trinkt. Bey dem ersten Gläsern schallen
-                Paucken und Trompeten. Endlich erscheine ein Haufe Sänger und Sängerinnen. Wagner
-                stellt sich an ihre Spitze.</hi>
-            </stage>
+            <stage>Alles setzt sich zur Tafel. Man ißt, man trinkt. Bey dem ersten Gläsern schallen
+              Paucken und Trompeten. Endlich erscheine ein Haufe Sänger und Sängerinnen. Wagner
+              stellt sich an ihre Spitze.</stage>
           </sp>
-          <p>Arie.</p>
+          <stage>Arie.</stage>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
             <lg>
@@ -1935,7 +1848,7 @@
             </lg>
             <pb n="43"/>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_3-4">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Nützet die Stunden bey freudigem Scherzen,</l>
@@ -1947,32 +1860,28 @@
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
-          <stage>
-            <hi>Ithuriel, Theodor, Elisabeth, Vorige.</hi>
-          </stage>
+          <stage>Ithuriel, Theodor, Elisabeth, Vorige.</stage>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Was seh ich, – Meine Eltern!</l>
+            <p>Was seh ich, – Meine Eltern!</p>
           </sp>
-          <sp who="#alle">
+          <sp who="#mephistopheles #wagner #helena">
             <speaker>ALLE.</speaker>
-            <l> Seine Eltern!</l>
+            <p>Seine Eltern!</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Was wollt ihr?</l>
+            <p>Was wollt ihr?</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> Die Brosamen des Reichen einsammeln!</l>
-            <stage>
-              <hi>Mephistopheles giebt ein Zeichen, die Gäste folgen ihm. Helena entfernet sich mit
-                ihrem Sohne. Faust springt von der Tafel auf.</hi>
-            </stage>
+            <p>Die Brosamen des Reichen einsammeln!</p>
+            <stage>Mephistopheles giebt ein Zeichen, die Gäste folgen ihm. Helena entfernet sich mit
+              ihrem Sohne. Faust springt von der Tafel auf.</stage>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <p> Du bebst, du schämst dich unser? – Ich sehe wohl deinen Pracht. Gold schmückt deinen
+            <p>Du bebst, du schämst dich unser? – Ich sehe wohl deinen Pracht. Gold schmückt deinen
               Leib. Dein Stolz ist ohne Schranken, so wie es dein Reichthum zu seyn scheinet.
               Niemals ward die beräucherte Luft von deinem Aechzen gestört, niemals der glänzende
               Boden von deiner Thräne benetzt. Du schläfst und du erwachst unter den Tönen
@@ -1984,14 +1893,14 @@
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <p> Undankbarer Sohn, sind dieß die Grüße mit denen du uns bewillkommest? du
+            <p>Undankbarer Sohn, sind dieß die Grüße mit denen du uns bewillkommest? du
               verschliessest uns die Thüre; du erröthest bey unserer Ankunft; du solllest mit
               kindlicher Zärtlichkeit uns entgegen eilen, und uns mit deinen Küssen und Umarmungen
               belohnen. Geh, du bist nicht mein Sohn!</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <p> Glaubst du etwa, ich solle dich glücklich preisen? Nein mich blendest du nicht. Du
+            <p>Glaubst du etwa, ich solle dich glücklich preisen? Nein mich blendest du nicht. Du
               bist es nicht. Du bist der Elendeste! – Rasender, bist du am Ende deiner Laster; ist
               dein Witz nun gänzlich erschöpft? Du warst sinnreich wie Satan, und nun gähnst du vor
               Langweile. Auf, ist keine Unschuld zu schänden übrig; lebt keine Tugend mehr, um sie
@@ -2001,21 +1910,21 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Mein Vater! Meine Mutter!</l>
+            <p>Mein Vater! Meine Mutter!</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> Ich bin nicht mehr dein Vater. Ich bin nur gekommen, dir meinen Fluch zugeben!</l>
+            <p>Ich bin nicht mehr dein Vater. Ich bin nur gekommen, dir meinen Fluch zugeben!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Seht mich zu euren Füssen – Ich bin ein Ungeheuer, ich gesteh es; aber ich bin euer
+            <p>Seht mich zu euren Füssen – Ich bin ein Ungeheuer, ich gesteh es; aber ich bin euer
               Sohn – Habt. Mitleid!</p>
             <pb n="45"/>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <p> Er rührt mich. Mein Herz spricht noch für ihn. Ich kann nicht hart seyn. Vater laß
+            <p>Er rührt mich. Mein Herz spricht noch für ihn. Ich kann nicht hart seyn. Vater laß
               dich bewegen. Vielleicht bessert er sich. Mein Sohn, wir haben viel Böses von dir
               gehört. Du führst einen abscheulichen Lebenswandel. Du hast das Vermögen deines Onkels
               verschwelget. Wie du diese Reichthümer bekommen das, das weis Gott. Man schreye dich
@@ -2026,7 +1935,7 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Hört meine lieben Eltern. Ich bezahle die Thorheuen meiner Jugend sehr theuer. Ein
+            <p>Hört meine lieben Eltern. Ich bezahle die Thorheuen meiner Jugend sehr theuer. Ein
               Fehltritt war die Folge von Tausenden. Ich verschwendete mein kleines Vermögen, und
               war verlassen. Ich fand überall nur Unmenschen, die mir alle Hilfe versagten. Mein
               Unglück hatte mein Herz verhärtet. Die Menschen waren in meinen Augen Ungeheuer, und
@@ -2039,7 +1948,7 @@
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <p> Du pressest mir mütterliche Thränen aus. Mein Sohn, du willst uns das letzte Kleinod
+            <p>Du pressest mir mütterliche Thränen aus. Mein Sohn, du willst uns das letzte Kleinod
               entreissen. Du warst stäts unsere Hofnung, unser Trost, unser Stolz, unser Ehrgeiz.
               Mein zärtliches Herz dankte bisher täglich dem Himmel um diese Gabe, die er mir
               geschenkt. Und du raubst uns dieß Vergnügen! Soll ich die Stunde verwünschen in der
@@ -2050,7 +1959,7 @@
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <p> Wohlan, ich verzeih ihm mit der Bedingniß, daß er uns diesen Augenblick folgt, und
+            <p>Wohlan, ich verzeih ihm mit der Bedingniß, daß er uns diesen Augenblick folgt, und
               alles verläst, was ihn uns wieder entreissen könnte. Laß zurück deine Thorheiten; laß
               zurück deine Metzen, dein Gold, dein Silber, nimm nichts mit dir als ein gelehriges
               Herz! In meiner Schaubhütte will ich dich dem Himmel zuführen. Sein Seegen wird auf
@@ -2059,30 +1968,28 @@
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <l> Reich mir die Hand!</l>
+            <p>Reich mir die Hand!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ich folge.</l>
+            <p>Ich folge.</p>
             <pb n="47"/>
           </sp>
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <stage>
-            <hi>Mephistopheles, Helena, Eduard, Vorige.</hi>
-          </stage>
+          <stage>Mephistopheles, Helena, Eduard, Vorige.</stage>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Wo eilst du hin?</l>
+            <p>Wo eilst du hin?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Leb wohl!</l>
+            <p>Leb wohl!</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Du willst mich verlassen? Grausamer bleib! dieß Herz hat auf dich Ansprüche. Meine
+            <p>Du willst mich verlassen? Grausamer bleib! dieß Herz hat auf dich Ansprüche. Meine
               Liebe wird dich verfolgen. Umsonst entreissest du dich meinen Armen. Mein Freund, sieh
               mich zu deinen Füssen. Wenn du mich jemals geliebt; wenn meine zärtliche Liebe mir
               dein Herz erworben; so hör mich, hör meine Bitte; sieh meine Thränen mit Erbarmungen
@@ -2092,134 +1999,117 @@
               Ungeheuer geh! verlaß mich; aber zittre, meine Flüche werden dich verfolgen! – Du
               hörst die Liebe nicht mehr; so hör die Natur! Sieh deinen Sohn, er fleht dich an um
               Mitleid, er streckt seine kleinen Hände nach dir aus. Willst du ihn grausam verlassen?
-              Hat er dich beleidiget? – Du zitterst – <hi>Sie zieht den Dolch auf Eduard.</hi>
+              Hat er dich beleidiget? – Du zitterst – <stage>Sie zieht den Dolch auf Eduard.</stage>
               Entschließ dich! – Geh, flieh; aber nimm dieß unschuldige Blut, und meine
               Verwünschungen mit dir!</p>
             <pb n="48"/>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Halt ein! Helena! Mein Sohn!</l>
+            <p>Halt ein! Helena! Mein Sohn!</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Nähere dich nicht; oder Eduard ist des Todes!</l>
+            <p>Nähere dich nicht; oder Eduard ist des Todes!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Was soll ich thun? Sprich Vater!</l>
+            <p>Was soll ich thun? Sprich Vater!</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Du bleib hier, und ihr entweicht!</l>
+            <p>Du bleib hier, und ihr entweicht!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Vater, Mutter, was soll ich wählen?</l>
+            <p>Vater, Mutter, was soll ich wählen?</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> Folg mir, hör diese Verführerinn nicht!</l>
+            <p>Folg mir, hör diese Verführerinn nicht!</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <l> Das arme Kind dauert mich. Man muß den Knaben retten.</l>
+            <p>Das arme Kind dauert mich. Man muß den Knaben retten.</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Geht, folget mir, last den Unwürdigen seinem Elend über.</l>
+            <p>Geht, folget mir, last den Unwürdigen seinem Elend über.</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> Nimm meinen Fluch!</l>
+            <p>Nimm meinen Fluch!</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <l> Und meine Thränen!</l>
+            <p>Und meine Thränen!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Mein Vater – Halt ein! Verweile!</l>
+            <p>Mein Vater – Halt ein! Verweile!</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Bleib, oder der Tod deines Sohns ist gewiß!</l>
+            <p>Bleib, oder der Tod deines Sohns ist gewiß!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Seht mich zu euren Füssen! – Ich wanke – Ich zittere – Meine Seele ist
-              erschüttert!</l>
+            <p>Seht mich zu euren Füssen! – Ich wanke – Ich zittere – Meine Seele ist
+              erschüttert!</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> Verlassen wir ihn, er soll verderben!</l>
+            <p>Verlassen wir ihn, er soll verderben!</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Zum letztenmal frag ich, was wählest du?</l>
+            <p>Zum letztenmal frag ich, was wählest du?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Vater verzeih – Ich liebe dich; aber die Natur siegt über mich. Lebt wohl – Helena,
-              ich bin dein!</l>
-            <stage>
-              <hi>Ithuriel, Theodor, Elisabeth entweichen.</hi>
-            </stage>
+            <p>Vater verzeih – Ich liebe dich; aber die Natur siegt über mich. Lebt wohl – Helena,
+              ich bin dein!</p>
+            <stage>Ithuriel, Theodor, Elisabeth entweichen.</stage>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Ha, welch ein Sieg! – Faust diese Wahl macht mir Ehre!</l>
+            <p>Ha, welch ein Sieg! – Faust diese Wahl macht mir Ehre!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Aber sie ist meinem Herzen theuer.</l>
+            <p>Aber sie ist meinem Herzen theuer.</p>
             <pb n="49"/>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Mein Freund, schenk dich mir. Ich will dich ewig lieben. Ja mein Herz fühlt diese
+            <p>Mein Freund, schenk dich mir. Ich will dich ewig lieben. Ja mein Herz fühlt diese
               Probe. Ich danke dir für deine Freundschaft und Liebe. Ich werde jede Minute anwenden,
               dich glücklich zu machen.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Helena, ich liebe dich, und küße dich mein lieber Sohn – Nur mein Herz mischet immer
+            <p>Helena, ich liebe dich, und küße dich mein lieber Sohn – Nur mein Herz mischet immer
               in meine Freude eine gewisse Unruhe –</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Die will ich zerstreuen. Ich bin dein Freund. Ich will mich bestreben dich ganz
+            <p>Die will ich zerstreuen. Ich bin dein Freund. Ich will mich bestreben dich ganz
               aufzuheitern. Folg mir, schenk dich der Liebe, schenk dich der Freundschaft, schenk
               dich der Freude. Kommt, ich will euch ein neues Vergnügen verschaffen.</p>
-            <stage>
-              <hi>Ende des Dritten Aufzugs.</hi>
-            </stage>
+            <stage>Ende des Dritten Aufzugs.</stage>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>4. Akt</head>
+        <head>Vierter Aufzug.</head>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Faust, Helena, Eduard, Wagner, Mephistopheles, Tänzer, und Tänzerinnen.</hi>
-          </stage>
-          <stage>
-            <hi>Die Bühne stellt einen prächtig beleuchteten Saal vor. Vorne ist ein Soffa, worauf
-              Faust, und seine Gesellschaft zuschauen. Im Grunde der</hi>
-          </stage>
-          <stage>
-            <hi>Bühne ist ein Thron mit einigen</hi>
-          </stage>
-          <stage>
-            <hi>Stuffen errichtet.</hi>
-          </stage>
-          <stage>
-            <hi><pb n="50"/> Der Ballet fängt an / genannt der Zauberpallast</hi>
-          </stage>
-          <stage>
-            <hi>der Liebe.</hi>
-          </stage>
+          <stage>Faust, Helena, Eduard, Wagner, Mephistopheles, Tänzer, und Tänzerinnen.</stage>
+          <stage>Die Bühne stellt einen prächtig beleuchteten Saal vor. Vorne ist ein Soffa, worauf
+            Faust, und seine Gesellschaft zuschauen. Im Grunde der Bühne ist ein Thron mit einigen
+            Stuffen errichtet.</stage>
+          <stage><pb n="50"/> Der Ballet fängt an / genannt der Zauberpallast</stage>
+          <stage>der Liebe.</stage>
           <p>»Amor schläft auf dem Throne nachläßig ausgestreckt. Er ist mir Blumenkränzen geziert.
             Am Fusse des Thrones sitzen auf beiden Seiten in einer Reihe schlummernde Mädchen. Jede
             hat eine andere Stellung. Die Liebhaber knien vor ihnen auf verschiedene Art. Der küst
@@ -2261,59 +2151,47 @@
             Erde, und Jünglinge, und Mädchen umarmen sich! Man tänzt. Venus steigt auf den Thron,
             krönet ihren Sohn, und auf dem Stufen huldiget alles der Liebe. Der Ballet schließt mit
             dieser Gruppe.«</p>
-          <stage>
-            <hi>Auf einmal verfinstere sich die ganze Bühne. Ein Schatten erscheint an der Wand, <pb
-                n="53"/> schreibt, und verschwindet. Alles zittert. Die Musick drückt Angst und
-              Verwirrung aus. Tänzer und Tänzerinnen entfliehn. Faust, Helena, Eduard, Wagner
-              Mephistopheles laufen ängstlich herum. An der Stelle des Schatten Lißt man mit goldnen
-              Buchstaben.</hi>
-          </stage>
-          <p>
-            <hi>Faust,</hi>
-          </p>
-          <p>
-            <hi>es wird</hi>
-          </p>
-          <p>
-            <hi>Abend.</hi>
-          </p>
+          <stage>Auf einmal verfinstere sich die ganze Bühne. Ein Schatten erscheint an der Wand,
+              <pb n="53"/> schreibt, und verschwindet. Alles zittert. Die Musick drückt Angst und
+            Verwirrung aus. Tänzer und Tänzerinnen entfliehn. Faust, Helena, Eduard, Wagner
+            Mephistopheles laufen ängstlich herum. An der Stelle des Schatten Lißt man mit goldnen
+            Buchstaben.</stage>
+          <p><emph>Faust,</emph></p>
+          <p><emph>es wird</emph></p>
+          <p><emph>Abend.</emph></p>
         </div>
         <div type="scene">
           <head>Zweyter Auftritt.</head>
-          <stage>
-            <hi>Faust, Ithuriel.</hi>
-          </stage>
+          <stage>Faust, Ithuriel.</stage>
           <sp who="#faust">
             <speaker>FAUST</speaker>
-            <stage>
-              <hi>lißt.</hi>
-            </stage>
-            <p> Faust es wird Abend – O schreckbater Abend! – Welch eine himmlische Warnung! – Ich
+            <stage>lißt.</stage>
+            <p>Faust es wird Abend – O schreckbarer Abend! – Welch eine himmlische Warnung! – Ich
               schaue mit Zittern über den schmalen Rand meines Lebens hinab – Bald fall ich tief –
               Ithuriel!</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Deine Augen scheuen sich den Meinigen zu begegnen – Sorgloser, weckt dich nichts von
+            <p>Deine Augen scheuen sich den Meinigen zu begegnen – Sorgloser, weckt dich nichts von
               deinen göldnen Träumen? – Wann folgst du mir?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Morgen, Freund, Morgen!</l>
+            <p>Morgen, Freund, Morgen!</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Heut, heut! denn morgen bist du nicht mehr!</l>
+            <p>Heut, heut! denn morgen bist du nicht mehr!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Grausamer, warum errinnerst du mich auf mein Elend? Laß mir doch diesen Tag, well er
-              der letzte ist.</l>
+            <p>Grausamer, warum errinnerst du mich auf mein Elend? Laß mir doch diesen Tag, well er
+              der letzte ist.</p>
             <pb n="54"/>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> O Freund, noch ist es Zeit, noch kannst du zur Weisheit und Tugend kehren. Fasse die
+            <p>O Freund, noch ist es Zeit, noch kannst du zur Weisheit und Tugend kehren. Fasse die
               Allmacht, eh sie dich fasset! – Sieh auf, sie bittet dich, sie beut dir Gnade an; sie
               verspricht dir eine fröhlige Ewigkeit, und du siossest sie von dir? Undankbarer, der
               Himmmel ist gütig; aber must du deswegen ein Unmensch seyn? Du bist einen Schritt weit
@@ -2321,11 +2199,11 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ich schenke noch wenige Minuten der Freude.</l>
+            <p>Ich schenke noch wenige Minuten der Freude.</p>
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Minuten, Minuten! – Aber diese Minuten machen Stunden, die Stunde Jahre, und Jahre
+            <p>Minuten, Minuten! – Aber diese Minuten machen Stunden, die Stunde Jahre, und Jahre
               dein ganzes Leben. Sey itzt weise, der Thor sagt, ich werde weise seyn. Folg mir,
               flieh diese Wohnung der Lüste. Hier begegnest du stäts der Verführung. Hier lauern
               deine Feinde. Sieh dort jenen Kundschafter stäts um dich. Er späht auf dein schwachen
@@ -2334,7 +2212,7 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Ich solle mich von allem was ich liebe, losreissen; ich solle diese Wohnung des
+            <p>Ich solle mich von allem was ich liebe, losreissen; ich solle diese Wohnung des
               Ueberflusses mit der Hütte des Elends vertauschen; Ich solle Helena verlassen, die
               mich liebt, und die ich liebe; Ich solle sie und meinen Sohn dem ungewissen
               Schicksaale, der Schande, der Verzweiflung überlassen? Sprich, was foderst du vom
@@ -2343,41 +2221,36 @@
           </sp>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Wie sinnreich! Dein Feind hat deine Augen ganz verblendet. Reisender Thor mit
-              welchem prächtigen Gefolge willst du die schmalen Gleise der Tugend antreten! Nimm
-              deinen Zug mit dir. Bergiß dein Gold nicht. Schleppe dein ganzes Haus mit fort auf
-              deinem Rücken. Blinder, ich will dich den Verführungen entreissen, und du eilst ihnen
-              entgegen. Du bist ganz Feuer, und schleppest Pechkränzen mit fort. Ich frage dich zum
-              leztenmale, willst du folgen? Du wankst, du hörst mich nicht –</p>
+            <p>Wie sinnreich! Dein Feind hat deine Augen ganz verblendet. Reisender Thor mit welchem
+              prächtigen Gefolge willst du die schmalen Gleise der Tugend antreten! Nimm deinen Zug
+              mit dir. Bergiß dein Gold nicht. Schleppe dein ganzes Haus mit fort auf deinem Rücken.
+              Blinder, ich will dich den Verführungen entreissen, und du eilst ihnen entgegen. Du
+              bist ganz Feuer, und schleppest Pechkränzen mit fort. Ich frage dich zum leztenmale,
+              willst du folgen? Du wankst, du hörst mich nicht –</p>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <stage>
-            <hi>Theodor, Elisabeth, Vorige.</hi>
-          </stage>
-          <stage>
-            <hi>Beide liegen zu seinen Füssen, und ergreifen weinend seine Hände.</hi>
-          </stage>
+          <stage>Theodor, Elisabeth, Vorige.</stage>
+          <stage>Beide liegen zu seinen Füssen, und ergreifen weinend seine Hände.</stage>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <l> Hör die jenigen, die dir das Leben gegeben! <hi>Geht ab.</hi>
-            </l>
+            <p>Hör die jenigen, die dir das Leben gegeben! <stage>Geht ab.</stage></p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <p> Ich bin nicht gekommen, dir Vorwürfe zu machen, nein, dich zu bitten, dich zu
+            <p>Ich bin nicht gekommen, dir Vorwürfe zu machen, nein, dich zu bitten, dich zu
               bemitleiden, dich zu bedaueren.</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <p> Mein Sohn, da ich itzt mit meinen mütterlichen Thränen deine Hand bethaue, hör meine
+            <p>Mein Sohn, da ich itzt mit meinen mütterlichen Thränen deine Hand bethaue, hör meine
               Bitte, laß mich nicht unerhört von dir gehn. B lohne meine Liebe, mein Freundschaft,
               meine Sorgen, gieb mir meinen Sohn wieder!</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <p> Ich nehme meinen väterlichen Fluch zurück. Du bist unglücksselig genug, du hast <pb
+            <p>Ich nehme meinen väterlichen Fluch zurück. Du bist unglücksselig genug, du hast <pb
                 n="56"/> schon den Fluch deines Gottes. Welchen Jammer bringst du auf meine grauen
               Haare. Ich werde hinschmachten, ich werde Kerben, und niemand wird mir die Augen
               zudrücken. Ich werde nichts als den schauervollen Gedanken mit mir zu Grabe nehmen,
@@ -2386,7 +2259,7 @@
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <p> Elende Mutter, ich muß meine Fruchtbarkeit verfluchen. Ich bat den Himmel um einen
+            <p>Elende Mutter, ich muß meine Fruchtbarkeit verfluchen. Ich bat den Himmel um einen
               Sohn; aber er hat mir ihn in seinem Zorne bewilliget. Ich empfieng dich, und hob dich
               zum Himmel empor, ich flehte seinen Segen herab; aber Ach, wie sind alle meine
               Hofnungen hintergangen! Mein Leib hat nur Schande getragen, und meine Brüste haben den
@@ -2394,37 +2267,35 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Ich kann nicht länger widerstehn. Mein Herz ist ganz euer. Siegt, meine geliebten
+            <p>Ich kann nicht länger widerstehn. Mein Herz ist ganz euer. Siegt, meine geliebten
               Eltern umarmet mich! –</p>
           </sp>
-          <sp who="#beide">
+          <sp who="#theodor #elisabeth">
             <speaker>BEIDE.</speaker>
-            <l> Mein Sohn!</l>
+            <p>Mein Sohn!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Mein Vater, meine Mutter!</l>
+            <p>Mein Vater, meine Mutter!</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <p> O mein liebster Sohn, komm, wir wollen mit unserm Gebet den Himmel bestürmen. Verlaß
+            <p>O mein liebster Sohn, komm, wir wollen mit unserm Gebet den Himmel bestürmen. Verlaß
               eilends diesen Ort, wo die Weichlichkeit wohnet.</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <p> Folg mir mein Sohn, du bist uns wiedergeschenkt, vom Himmel wiedergegeben. Verlieten
+            <p>Folg mir mein Sohn, du bist uns wiedergeschenkt, vom Himmel wiedergegeben. Verlieten
               wir keine Minute.</p>
             <pb n="57"/>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <stage>
-            <hi>Helena, Vorige.</hi>
-          </stage>
+          <stage>Helena, Vorige.</stage>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Mein Freund, du sollst mich nicht verlassn. Hör mich. Ich folge dir überall; wodu
+            <p>Mein Freund, du sollst mich nicht verlassn. Hör mich. Ich folge dir überall; wodu
               bist, ist auch meine Wohnung, Ich will dich begleiten. Verlasse mich nicht. Sieh mich
               zu deinen Füssen. Ich und mein Sohn wollen dir in die Hütte der Armuth folgen. Da will
               ich dir Speise bereiten, ich will dir dienen, wie eine Magd, und o glücklich, wenn oft
@@ -2434,138 +2305,131 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Vater, hör sie, und klag meine Schwäche an –</l>
+            <p>Vater, hör sie, und klag meine Schwäche an –</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <p> Weib, ich kann deinen Thränen nicht wir derstehn. Komm, folg uns, wir werden nur
-              eine Familie ausmachen.</p>
+            <p>Weib, ich kann deinen Thränen nicht wir derstehn. Komm, folg uns, wir werden nur eine
+              Familie ausmachen.</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <p> Umarme mich meine Tochter. Ja, so sollst du heissen. Bring deinen Sohn, wir wollen
+            <p>Umarme mich meine Tochter. Ja, so sollst du heissen. Bring deinen Sohn, wir wollen
               euch liebreich aufnehmen. Verlassen wir nur bald, diese häßliche Wohnung.</p>
             <pb n="58"/>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
-          <stage>
-            <hi>Mephistopheles, Eduard, Vorige.</hi>
-          </stage>
-          <stage>
-            <hi>Mephistopheles hält den Knaben mit seiner Hand, und bleibt etwelche Schritte
-              entfernt.</hi>
-          </stage>
+          <stage>Mephistopheles, Eduard, Vorige.</stage>
+          <stage>Mephistopheles hält den Knaben mit seiner Hand, und bleibt etwelche Schritte
+            entfernt.</stage>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Faust, die Zeit unsers Bundes ist geendet. Wenige Stunden sind dir noch übrig.
+            <p>Faust, die Zeit unsers Bundes ist geendet. Wenige Stunden sind dir noch übrig.
               Umsonst suchst du dich mir zuentreissen. Du bist die Beute der Hölle. Hier ist meine
               Geißel! – Zittre!</p>
-            <stage>
-              <hi>Helena und Faust fallen ihm zu Füssen.</hi>
-            </stage>
+            <stage>Helena und Faust fallen ihm zu Füssen.</stage>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Mein Sohn!</l>
+            <p>Mein Sohn!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Schone den unschuldigen Knaben!</l>
+            <p>Schone den unschuldigen Knaben!</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Barmherzigkeit!</l>
+            <p>Barmherzigkeit!</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> Unser Sohn, Mutter, ist schon verlobten. Kom, laß uns diese Wohnung der Hölle
-              fliehen.</l>
+            <p>Unser Sohn, Mutter, ist schon verlobten. Kom, laß uns diese Wohnung der Hölle
+              fliehen.</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <l> Ich unglückliche Mutter! <hi>Sie gehn.</hi>
-            </l>
+            <p>Ich unglückliche Mutter! <stage>Sie gehn.</stage></p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Meine Eltern! – Sie verlassen mich! – Wartet! – Höret mich an! – Mephistopheles gieb
-              mir Zeit zur Ueberlegung – Gleich erschein ich wieder – Mein Vater! <hi>Geht ab.</hi>
-            </p>
+            <p>Meine Eltern! – Sie verlassen mich! – Wartet! – Höret mich an! – Mephistopheles gieb
+              mir Zeit zur Ueberlegung – Gleich erschein ich wieder – Mein Vater! <stage>Geht
+                ab.</stage></p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Du, wer du immer bist, sieh meine Thränen, erhöre die Seufzer einer Mutter.
-              Verschone meine Geliebten, und gieb mir meinen <pb n="59"/> Sohn wieder! Welch ein
-              Recht hast du auf uns?</p>
+            <p>Du, wer du immer bist, sieh meine Thränen, erhöre die Seufzer einer Mutter. Verschone
+              meine Geliebten, und gieb mir meinen <pb n="59"/> Sohn wieder! Welch ein Recht hast du
+              auf uns?</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Faust ist mein Sklave. Er hat sich mir verkauft.</l>
+            <p>Faust ist mein Sklave. Er hat sich mir verkauft.</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Ich zittre! – Gnade!</l>
+            <p>Ich zittre! – Gnade!</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Du kannst dich, deinen Freund, und deinen Sohn retten.</l>
+            <p>Du kannst dich, deinen Freund, und deinen Sohn retten.</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Ich kann sie retten? Sprich, wodurch kann ich sie retten?</l>
+            <p>Ich kann sie retten? Sprich, wodurch kann ich sie retten?</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Theodor ist mein Feind, geh, nimm diesen Dolch, räche mich! – Ich schenke dir für
+            <p>Theodor ist mein Feind, geh, nimm diesen Dolch, räche mich! – Ich schenke dir für
               diese That alles was du liebst.</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Ich bebe vor Schrecken zurück – Wie bin ich erniedert! Verführer, wen sprichst du?
-              So tief bin ich im Laster gefallen! Meine Hand ward noch niemals mit Menschenblute
+            <p>Ich bebe vor Schrecken zurück – Wie bin ich erniedert! Verführer, wen sprichst du? So
+              tief bin ich im Laster gefallen! Meine Hand ward noch niemals mit Menschenblute
               befleckt. Du willst mich zu einer Mörderinn brandmarken? – Geh, entweich du kömmst aus
               der Hölle. Dein Ton verräth dich.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Weih welche Gewissenszweifel wandeln dich an? Ist dein Herz vom Verbrechen rein?
-              Hast du dir nichts vorzuwerfen? Thörin ist ein Laster nicht wie das andere? Was liegt
+            <p>Weih welche Gewissenszweifel wandeln dich an? Ist dein Herz vom Verbrechen rein? Hast
+              du dir nichts vorzuwerfen? Thörin ist ein Laster nicht wie das andere? Was liegt
               daran, ob du mit einem oder mit tausend Verbrechen die Erde verlässest? – Schwaches
               Weib, deine Seele ist zu klein, als das sie sich zu höherer Einstcht erheben
               könnte.</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Ich bin schwach wie unsere Stammutter: aber ich verachte deine giftige Sprache, die
+            <p>Ich bin schwach wie unsere Stammutter: aber ich verachte deine giftige Sprache, die
               nach der Hölle riecht.</p>
             <pb n="60"/>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Einen Greisen zu erwürgen, trägst du Bedenken. Du begehst eine Wohlthat. Raub ihm
+            <p>Einen Greisen zu erwürgen, trägst du Bedenken. Du begehst eine Wohlthat. Raub ihm
               sieche, und elende Tage. Wie lang soll er noch mit gekrümten Rücken auf dieser
               verfluchten Erde kriechen?</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Warum soll ich unschuldiges Blut vergießen?</l>
+            <p>Warum soll ich unschuldiges Blut vergießen?</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Unschuldig? Ist der unschuldig, der mich beleidiget hat?</l>
+            <p>Unschuldig? Ist der unschuldig, der mich beleidiget hat?</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> So räche dich selbst.</l>
+            <p>So räche dich selbst.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Dieser Feind ist nicht in meiner Macht; aber in deiner. Menschen können sich
-              einander schaden; wir können die Menschen nur durch sich selbst stürzen. Wir führen
-              unsere Rathschläge durch euch aus. Wir wafnen einen wieder den andern. Wollen wir
-              Kriege erregen; so geben wir den Großen verschiedene Meinungen; wir blasen den Erobern
+            <p>Dieser Feind ist nicht in meiner Macht; aber in deiner. Menschen können sich einander
+              schaden; wir können die Menschen nur durch sich selbst stürzen. Wir führen unsere
+              Rathschläge durch euch aus. Wir wafnen einen wieder den andern. Wollen wir Kriege
+              erregen; so geben wir den Großen verschiedene Meinungen; wir blasen den Erobern
               Ehrgeitz ein; dann erwürgen sie Myriaden um einen Spanne elende Erde. Wollen wir
               Völker zerstören; so fachen wir den Religionseifer an; Dann waffnet sich Bruder wieder
               Bruder. Der Vater durchbohrt die Brust des Sohnes. Die Mutter zerfleischt ihre
@@ -2581,17 +2445,16 @@
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Ach!</l>
+            <p>Ach!</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Ich lasse dich. Sobald die Dämmerung diesen Pallast verfinstert, werde ich dir die
-              Beute überliefern. Dein Sohn bleibt meine Geißel. <hi>Geht ab.</hi>
-            </p>
+            <p>Ich lasse dich. Sobald die Dämmerung diesen Pallast verfinstert, werde ich dir die
+              Beute überliefern. Dein Sohn bleibt meine Geißel. <stage>Geht ab.</stage></p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Ich trage dieß höllische Mordeisen in meinen Händen! – Wie zittert meine Hand! –
+            <p>Ich trage dieß höllische Mordeisen in meinen Händen! – Wie zittert meine Hand! –
               Welche schwarze Wetter sind rings um mich! – Mein schwacher Geist verliert sich – Was
               seh ich – Die Blitze leuchten; die Donner brüllen; die entfässelten Winde heulen; die
               Erdklöße erheben sich; Himmel und Wasser sind vermischet; die Erde dräut mich zu
@@ -2611,75 +2474,73 @@
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <stage>
-            <hi>Faust, Helena.</hi>
-          </stage>
+          <stage>Faust, Helena.</stage>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Ich liege an deinen Busen. Ich wasche dich mit meinen Thränen. Freund, schenkst du
+            <p>Ich liege an deinen Busen. Ich wasche dich mit meinen Thränen. Freund, schenkst du
               dich mir wieder. Komm laß mich in deinen Armen meine letzten Thränen verweinen. Aber
               welche Todesbläße sitzt auf deinen Lippen! Du bebst, bester, theuerster, öfne mir dein
               Herz –</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Du, die mit mir durch die Tage der flüchtigen Freuden gewandelt ist, du, der ich
+            <p>Du, die mit mir durch die Tage der flüchtigen Freuden gewandelt ist, du, der ich
               meine Liebe geweiht, hör mich, und zittre!</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Ach!</l>
+            <p>Ach!</p>
             <pb n="63"/>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ich bin hintergangen, durch schwatze Berräther hintergangen!</l>
+            <p>Ich bin hintergangen, durch schwatze Berräther hintergangen!</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Wer sind sie?</l>
+            <p>Wer sind sie?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Ich, Ich, Ich selbst! – Mein Gewissen erwacht; aber zu spät. Für mich ist keine
+            <p>Ich, Ich, Ich selbst! – Mein Gewissen erwacht; aber zu spät. Für mich ist keine
               Rettung mehr. Die Stunden der Hofnung sind vorüber, und die Augenblicke der
               Verzweiflung nahe.</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Du erschrelft mich. Wie wild deine Blicke sind! – Schwarze Wolken hängen auf deiner
+            <p>Du erschrelft mich. Wie wild deine Blicke sind! – Schwarze Wolken hängen auf deiner
               Stirne – Ach Freund, hör mich; heitre deine Blicke auf; lächle mich an –</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> O was foderst du von mir? Sturm ist mein Herz, und mein Geist ist von rasenden Wogen
+            <p>O was foderst du von mir? Sturm ist mein Herz, und mein Geist ist von rasenden Wogen
               hin und her getrieben. Kein Stral von Hofnung schleicht mehr in meinen Busen. Geh,
               verlaß mich. Ich will mich meinem Jammer ganz ergeben.</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Ich habe alle deine Freuden mit dir getheilt, laß mich auch Theil an deinen
-              Schmerzen nehmen.</l>
+            <p>Ich habe alle deine Freuden mit dir getheilt, laß mich auch Theil an deinen Schmerzen
+              nehmen.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ich bin verloten!</l>
+            <p>Ich bin verloten!</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> So will ich es auch seyn!</l>
+            <p>So will ich es auch seyn!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ich muß sterben!</l>
+            <p>Ich muß sterben!</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> So sterbe ich mit dir! Helena wird jedes Schicksal mit dir theilen.</l>
+            <p>So sterbe ich mit dir! Helena wird jedes Schicksal mit dir theilen.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Bestes Weib, ich erkenne deinen Werth; aber du sollst nicht in mein Unglück
+            <p>Bestes Weib, ich erkenne deinen Werth; aber du sollst nicht in mein Unglück
               verwickelt seyn. Geh, nimm deinen Sohn, raffe mein Vermögen zusammen, entflieh aus
               diesen Mauern. <pb n="64"/> Eil entzieh dich dem Hohngelächter der spottenden Welt;
               entzieh dich der Wuth meiner Feinde. Du bist frey, du bist durch keinen Eid an die
@@ -2687,30 +2548,29 @@
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Ich eile dich zu retten.</l>
+            <p>Ich eile dich zu retten.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Du mich retten? bestes Weib, das kannst du nicht.</l>
+            <p>Du mich retten? bestes Weib, das kannst du nicht.</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Vertrau auf meine Hilfe!</l>
+            <p>Vertrau auf meine Hilfe!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Du sprichst Räthsel – Eröfne mir –</l>
+            <p>Du sprichst Räthsel – Eröfne mir –</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Hof auf meinen Beystand! – Ich eile, ich verrichte mehr, als du von einem schwachen
-              Weibe erwarten kanst. Sey ruhig indessen. Bald umarme ich dich wieder! <hi>Geht
-                ab.</hi>
-            </p>
+            <p>Hof auf meinen Beystand! – Ich eile, ich verrichte mehr, als du von einem schwachen
+              Weibe erwarten kanst. Sey ruhig indessen. Bald umarme ich dich wieder! <stage>Geht
+                ab.</stage></p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Welch einen Plan kann sie haben? – Ich begreife nichts – Arme Helena, du enttrirfst
+            <p>Welch einen Plan kann sie haben? – Ich begreife nichts – Arme Helena, du enttrirfst
               zu spät meine Rettung – Alles verläst mich in diesen Stunden des Kampfes – Mein Vater,
               meine Mutter, wo seyd ihr, entflieht ihr meinen Armen? – Ithuriel, tröstest du mich
               nicht mehr? Richtest du meinen gefallenen Geist nicht mehr empor? – Hier harre ich auf
@@ -2721,16 +2581,14 @@
         </div>
         <div type="scene">
           <head>Siebenter Auftritt.</head>
-          <stage>
-            <hi>Wagner, Faust.</hi>
-          </stage>
+          <stage>Wagner, Faust.</stage>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <l> Es sieht ganz traurig bey uns aus –</l>
+            <p>Es sieht ganz traurig bey uns aus –</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Freund, komm, ich habe dich zu sprechen. Du hast mir treu gedient. Du hast in meinen
+            <p>Freund, komm, ich habe dich zu sprechen. Du hast mir treu gedient. Du hast in meinen
               Diensten die Jahre deiner Jugend verloren. Vielleicht hat sich dein Aug und deine Ohr
               oft an meinen Handlungen geärgert. Bergiß was du bey mir gesehen, und gehört hast.
               Wisse, daß ein Leben voll Freude eine traurige Entwicklung habe. Du bist noch jung, du
@@ -2743,36 +2601,28 @@
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <p> Bester Herr, sie lehren mich wie ein Vater. Ich soll sie verlassen – Ach, ich netze
+            <p>Bester Herr, sie lehren mich wie ein Vater. Ich soll sie verlassen – Ach, ich netze
               ihre Hände mit meinen Thränen – Mein Herz fühlt ihre Lehren, und ich werde sie in
               Ausübung bringen.</p>
             <pb n="66"/>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <lg>
-              <l> Mein Freund, thue es, und du wirst mir dadurch die erste Freude in meinem Elend
-                machen. Leb wohl!</l>
-            </lg>
-            <stage>
-              <hi>Ende des Vierten Aufzugs.</hi>
-            </stage>
+            <p>Mein Freund, thue es, und du wirst mir dadurch die erste Freude in meinem Elend
+              machen. Leb wohl!</p>
+            <stage>Ende des Vierten Aufzugs.</stage>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>5. Akt</head>
+        <head>Fünfter Aufzug.</head>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Helena.</hi>
-          </stage>
-          <stage>
-            <hi>Helena ist mit einem Dolche gerüstet. Den Saal beleuchtet eine Lampe.</hi>
-          </stage>
+          <stage>Helena.</stage>
+          <stage>Helena ist mit einem Dolche gerüstet. Den Saal beleuchtet eine Lampe.</stage>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Wo geh ich hin? – Noch wankt mein Fuß – Es zittert meine Hand – Das Herz pocht – Ha,
+            <p>Wo geh ich hin? – Noch wankt mein Fuß – Es zittert meine Hand – Das Herz pocht – Ha,
               schwarze Schatten sind rings um mich. Nacht, bedecke meine Schande, Mond entflieh, und
               sey kein Zeuge meines Lasters! – Ich wandle fort im Schrecken – Ein Schauer befällt
               mich – Alles schläft, nur ich bin wach – Ich suche wie ein hungriger Tyger eine
@@ -2790,46 +2640,44 @@
         </div>
         <div type="scene">
           <head>Zweyter Auftritt.</head>
-          <stage>
-            <hi>Mephistopheles, Helena.</hi>
-          </stage>
+          <stage>Mephistopheles, Helena.</stage>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Helena, du verschleuderst kostbare Minuten.</l>
+            <p>Helena, du verschleuderst kostbare Minuten.</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Geh, entweich aus meinen Augen. Ich kam deinen höllischen Rath nicht vollztehen.</l>
+            <p>Geh, entweich aus meinen Augen. Ich kam deinen höllischen Rath nicht vollztehen.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Schwaches Weib, was hemmt deinen Schritt? Was hält dich zurück?</l>
+            <p>Schwaches Weib, was hemmt deinen Schritt? Was hält dich zurück?</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Ich soll den erwürgen, der mich nicht beleidiget hat.</l>
+            <p>Ich soll den erwürgen, der mich nicht beleidiget hat.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Mich hat er grausam beleidiget!</l>
+            <p>Mich hat er grausam beleidiget!</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> So räche dich selbst.</l>
+            <p>So räche dich selbst.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Ja, ich werde mich rächen; aber an dir, an deinem Sohn, und an Faust! Zittre
-              Ungehorsame!</l>
+            <p>Ja, ich werde mich rächen; aber an dir, an deinem Sohn, und an Faust! Zittre
+              Ungehorsame!</p>
             <pb n="68"/>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Ach! Halt ein!</l>
+            <p>Ach! Halt ein!</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Die letzte Stunde unsers Bundes ist erschienen. Noch kannst du ihn retten. Eil,
+            <p>Die letzte Stunde unsers Bundes ist erschienen. Noch kannst du ihn retten. Eil,
               flieg, durchbohr die Brust meines Feindes, und bring mir den siegreichen Dolch! – Was
               zauderst du Helena? dein Schlachtopfer ist reif zum Tod. Seine wankenden Knochen sind
               am Rande des Grabs. Stirbt der zu früh, der nur im Elend herumkriecht? Geh, zaudre
@@ -2837,25 +2685,23 @@
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Wohlan, das Blut sey vergossen; aber es fliesse über dich!</l>
+            <p>Wohlan, das Blut sey vergossen; aber es fliesse über dich!</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Geh, fürchte nichts. Dort schläft mein Feind. Ich hab ihn durch eitle Hofnungen
+            <p>Geh, fürchte nichts. Dort schläft mein Feind. Ich hab ihn durch eitle Hofnungen
               eingewiegt, und hier zurück gehalten. Verwandle seinen Schlummer in einen ewigen
               Schlaf.</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Die Hölle siegt – Ich eile –</l>
-            <stage>
-              <hi>Sie eilt fort. Bey der Thüre wankt sie, und lehnt ihr müdes Haupt auf die Hand.
-                Endlich stürzt sie wütend hinein.</hi>
-            </stage>
+            <p>Die Hölle siegt – Ich eile –</p>
+            <stage>Sie eilt fort. Bey der Thüre wankt sie, und lehnt ihr müdes Haupt auf die Hand.
+              Endlich stürzt sie wütend hinein.</stage>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Hahaha! getäuschte Sterbliche! – So fallet ihr in unsere Fallstricke. Ihr seyd unser
+            <p>Hahaha! getäuschte Sterbliche! – So fallet ihr in unsere Fallstricke. Ihr seyd unser
               Spielwerk. Du Donnerer sieh herab auf die Erde. Nicht du, wir herrschen hier! – Uns
               betet dein Liebling der Mensch an. Unsere Altäre rauchen öfter als die deinigen. Die
               Hölle, die du uns zum Exil geöfnet hast, ist das Gefängniß deiner Menschen. – Still,
@@ -2865,16 +2711,14 @@
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <stage>
-            <hi>Faust, Mephistopheles.</hi>
-          </stage>
+          <stage>Faust, Mephistopheles.</stage>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> (Laß mich seine letzten Gedanken erschleichen.)</l>
+            <p>(Laß mich seine letzten Gedanken erschleichen.)</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Das Zeichen zum schleinigen Aufbruch wird gegeben. Ich blicke mit zittern über die
+            <p>Das Zeichen zum schleinigen Aufbruch wird gegeben. Ich blicke mit zittern über die
               kleine Frist des Lebens hinüber. Wo eil ich hin? in eine fürchterliche Ewigkeit! die
               flüchtige Lebensuhr ist bereits ausgelaufen. O unwiederruflicher Flug der kostbahren
               Zeit! kehr wieder – Des Mondes düsterer Schimmer ist rings um mich. Die Nacht breitet
@@ -2891,100 +2735,98 @@
               segnen? Ich von Gott verfluchter, ich Wurm ihn segnen! – Ein Sturwind wird meinen
               Segen von meinen Lippen wehen – Wie hin ich entkräftet – Meine Seele keucht nach Ruhe
               –</p>
-            <stage>
-              <hi>Mephistopheles hebt einen Teppich von einem Tische, darauf siehe man allerhand
-                Mordgewehr.</hi>
-            </stage>
+            <stage>Mephistopheles hebt einen Teppich von einem Tische, darauf siehe man allerhand
+              Mordgewehr.</stage>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <l> Faust!</l>
+            <p>Faust!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Mephistopheles!</l>
+            <p>Mephistopheles!</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Warum zitterst du bey meinen Anblick? Bist du etwa mein Schuldner? Ja, ich habe mich
+            <p>Warum zitterst du bey meinen Anblick? Bist du etwa mein Schuldner? Ja, ich habe mich
               in deinem ecklen Dienfle müde gearbeitet, Ich fodre meinen Sold. Wir wechseln Rollen.
               Itzt bin ich Herr, und du bist mein Sklave.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ich dein Sklave?</l>
+            <p>Ich dein Sklave?</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Ruf zwanzig Jahre zurück, und du bist frey! – Folg mir, ich führe dich in meinen
+            <p>Ruf zwanzig Jahre zurück, und du bist frey! – Folg mir, ich führe dich in meinen
               Pallast; ich will dir dort dein Amt anweisen.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Und welches?</l>
+            <p>Und welches?</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Deinen Schöpfer zu fluchen! – Diese Verwünschungen sind in unsern Ohren ein
+            <p>Deinen Schöpfer zu fluchen! – Diese Verwünschungen sind in unsern Ohren ein
               Freudegesang. – Folg mir!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ach! – Ich folge –</l>
+            <p>Ach! – Ich folge –</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Diese verächtliche Hülle must du ablegen. Mit Staub tritt man nicht in unsere
+            <p>Diese verächtliche Hülle must du ablegen. Mit Staub tritt man nicht in unsere
               Wohnungen. Wähl hier das letzte Geschenk. Willst du das Schwert, den Giftbecher, das
               tödliche <pb n="71"/> Bley, den Strick? Sieh, das sind unsere Orden, womit wir am Ende
               unsere Liblinge beschenken.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ich solle mich selbst tödten!</l>
+            <p>Ich solle mich selbst tödten!</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Willst du lieber mit Geräusche sterben? – Wenn du klug bist; so vermeide wenigstens
+            <p>Willst du lieber mit Geräusche sterben? – Wenn du klug bist; so vermeide wenigstens
               die Schande. Dank es meiner Güte.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Dek mir meine Zukunft auf.</l>
+            <p>Dek mir meine Zukunft auf.</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Ich soll dir die Zukunft aufdecken? Dein eignes Herz kann es besser. Wie man säet,
-              so ärntet man. Dicser streut Disteln aus, wird er wohl süsse Früchten einsammeln
-              können? Hingegen jener streut reines Korn, umsonst zerstört ihm der Hagel seine
-              Felder, die Hofnung einiger Aernte bleibt ihm doch.</p>
+            <p>Ich soll dir die Zukunft aufdecken? Dein eignes Herz kann es besser. Wie man säet, so
+              ärntet man. Dicser streut Disteln aus, wird er wohl süsse Früchten einsammeln können?
+              Hingegen jener streut reines Korn, umsonst zerstört ihm der Hagel seine Felder, die
+              Hofnung einiger Aernte bleibt ihm doch.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> So haft du noch nie gesprochen. Beerüger, du hast mich schwarz hintergangen!</l>
+            <p>So haft du noch nie gesprochen. Beerüger, du hast mich schwarz hintergangen!</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Warum machst du deinen Feind zum Vertrauten? Du haft dich selbst hintergangen. Du
+            <p>Warum machst du deinen Feind zum Vertrauten? Du haft dich selbst hintergangen. Du
               verrähtst den, der für euch so gnädig ist. Uns hat er wegen einem Gedanken vernichtet;
               euch sieht er Myriaden Laster nach.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Habt ihr diesen frechen Gedanken je bereut?</l>
+            <p>Habt ihr diesen frechen Gedanken je bereut?</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Dazu sind wir zu groß. Unser Feind weis es daß wir zu stoltz sind zu flehen, und er
+            <p>Dazu sind wir zu groß. Unser Feind weis es daß wir zu stoltz sind zu flehen, und er
               ist zu hart, uns diese Erniedrigung zuerlassen. Genug; uns übrigt nur Rache!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Und wie rächet ihr euch?</l>
+            <p>Und wie rächet ihr euch?</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Indem wir seine Werke zerstören! Faust, wir sprechen nicht mehr in Räthseln. Wisset
+            <p>Indem wir seine Werke zerstören! Faust, wir sprechen nicht mehr in Räthseln. Wisset
                 <pb n="72"/> Menschen, mir sind eure geschwornen Feinde. Wir arbeiten nur euch zu
               stürzen, und euch zu Mitverbrechern und Gesärten unserer Peinen zumachen. Nimm hin
               diesen Becher, trink, und du wirst zum erstenmal den Neftar unserer Hölle
@@ -2992,23 +2834,21 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Verfluchter Geist, entweich aus meinen Augen, und laß mich die letzte Stunde noch
-              vollends genießen!</l>
+            <p>Verfluchter Geist, entweich aus meinen Augen, und laß mich die letzte Stunde noch
+              vollends genießen!</p>
           </sp>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Das sollst du; aber dann bist du mein. Trink, oder ich reisse dich durch die
-              Gemächer fort! – Stirb, verzweifle, fluch deinen Gott, verwünsche dich – Ich gehe!</p>
+            <p>Das sollst du; aber dann bist du mein. Trink, oder ich reisse dich durch die Gemächer
+              fort! – Stirb, verzweifle, fluch deinen Gott, verwünsche dich – Ich gehe!</p>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <stage>
-            <hi>Faust zu ihm Wagner.</hi>
-          </stage>
+          <stage>Faust zu ihm Wagner.</stage>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> So bin ich denn ohne Hofnung verlohren, ewig verloren! Ich falle hinab, zehentausend
+            <p>So bin ich denn ohne Hofnung verlohren, ewig verloren! Ich falle hinab, zehentausend
               Meilen hinab, und ich falle noch immer – Welch ein Abgrund ist vor mir! – Ich sinke
               nieder, mein stockendes Blut vergißt zu sliessen, alles empört sich in mir – Wetter
               kocht mein Herz, und Stürme zeugt mein Geist. Gott, dein Zorn donnert mich schon zur
@@ -3026,11 +2866,11 @@
           </sp>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
-            <l> Herr, was thust du?</l>
+            <p>Herr, was thust du?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Sterben! – Sieh mich an, so ein End nimmt ein Wollüstling! O Freund, könnt ich itzt
+            <p>Sterben! – Sieh mich an, so ein End nimmt ein Wollüstling! O Freund, könnt ich itzt
               um mich diesen tanzenden Schwarm versammeln, könnt ich ihnen noch früh genug die Larve
               vom Gesichte reissen, dieß wär noch mein Sterbetrost. – Ha, das Gift wirkt. Angst, und
               Entsetzen ergreift mich wie eine Gebährerinn – das Verderben nähert mit geschäftigen
@@ -3048,52 +2888,46 @@
               Helena! wen durchbohrst du – Ich sinke – Dort ringt der sterbende Greis mit dem Tod. –
               Die händerinde Mutter – Das Blut fließt aus der Wunde – Geh aus meinen Augen Mörderinn
               – Flieh Ungeheuer! –</p>
-            <stage>
-              <hi>Wagner entflicht. Man hört einen Schrey.</hi>
-            </stage>
+            <stage>Wagner entflicht. Man hört einen Schrey.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
-          <stage>
-            <hi>Faust, Helena, Theodor, Elisabeth.</hi>
-          </stage>
-          <stage>
-            <hi>Helena mit zerstreuten Haaren, mit einem blutigen Dolch stürzt aus der Mittenpforte.
-              Hinter ihr sieht man den sterbenden Theodor. Er kriecht heraus, Elisabeth hält ihn
-              weinend in ihren Armen.</hi>
-          </stage>
+          <stage>Faust, Helena, Theodor, Elisabeth.</stage>
+          <stage>Helena mit zerstreuten Haaren, mit einem blutigen Dolch stürzt aus der
+            Mittenpforte. Hinter ihr sieht man den sterbenden Theodor. Er kriecht heraus, Elisabeth
+            hält ihn weinend in ihren Armen.</stage>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Mein Vater! Meine Mutter! – Helena, was hast du gethan?</l>
+            <p>Mein Vater! Meine Mutter! – Helena, was hast du gethan?</p>
             <pb n="75"/>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Ich wollte dich retten, und mit diesem Blut das deinige erkaufen.</l>
+            <p>Ich wollte dich retten, und mit diesem Blut das deinige erkaufen.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Unglückseelige, was hast du verübt! Du hast die Höllenschlange gehört. Wisse, diese
+            <p>Unglückseelige, was hast du verübt! Du hast die Höllenschlange gehört. Wisse, diese
               Minute muß ich sterben. Ich habe Gift getrunken.</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Du must sterben? – Ich bin getäuscht – Ich sterbe mit dir. <hi>Sie sticht den Dolch
-                in die Brust.</hi> Verflucht sey der Arm, den ich über diesen Unschuldigen
+            <p>Du must sterben? – Ich bin getäuscht – Ich sterbe mit dir. <stage>Sie sticht den
+                Dolch in die Brust.</stage> Verflucht sey der Arm, den ich über diesen Unschuldigen
               ausgestreckt habe; er soll am Leide verdorren!</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> Mein Sohn, wo bist du?</l>
+            <p>Mein Sohn, wo bist du?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Mein Vater!</l>
+            <p>Mein Vater!</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <p> Bald wird dieser entkräftete Staub zur sanften Ruhe einschlummern. Ich kehre fröhlig
+            <p>Bald wird dieser entkräftete Staub zur sanften Ruhe einschlummern. Ich kehre fröhlig
               in mein Geburtsort zurück; aber du bist aus deinem Baterlande auf ewig verwiesen. Ich
               sehe dich zum letztenmale. Wir werden uns dort nicht mehr begegnen. O Sohn soll ich
               denn die Stunde deiner Geburt verfluchen? Nein, ich bin noch dein Vater, ich fühle es,
@@ -3102,7 +2936,7 @@
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Fluche mich, verwünsche mich; aber nein, ich bin deines Mitleids würdig. – Du kannst
+            <p>Fluche mich, verwünsche mich; aber nein, ich bin deines Mitleids würdig. – Du kannst
               mir vergeben – Wie oft durchbohrst du mein Herz. Sieh dieß strafbare Blut rächet schon
               deinen Tod. Dein Feind hat ihn gefodert, und ich war blind genug seinem höllischen
               Rath zu folgen.</p>
@@ -3110,26 +2944,24 @@
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <p> Betrogne Kinder. Ihr dauert mich beyde. Der verschlagenste Geist ist euer Verführer.
+            <p>Betrogne Kinder. Ihr dauert mich beyde. Der verschlagenste Geist ist euer Verführer.
               Eure menschliche Blindheit macht mein ganzes Mitleid rege. Ich sterbe; aber mein Tod
               soll nicht euch zur Last fallen, er falle über den Verführer! – Reicht mir eure Hände,
               ich vergeb euch von Herzen.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Mein bester Vater!</l>
+            <p>Mein bester Vater!</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Laß mich diese wohlthätige Hand küssen.</l>
-            <stage>
-              <hi>Theodor erhebt sich, sammelt die letzten Kräften, ergreift die Hand der Helena und
-                des Faust, und betet.</hi>
-            </stage>
+            <p>Laß mich diese wohlthätige Hand küssen.</p>
+            <stage>Theodor erhebt sich, sammelt die letzten Kräften, ergreift die Hand der Helena
+              und des Faust, und betet.</stage>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <p> O Vater der Menschen, du hast uns nicht in deinem Zorn, sondern aus Liebe geschafen.
+            <p>O Vater der Menschen, du hast uns nicht in deinem Zorn, sondern aus Liebe geschafen.
               Du ruftest uns aus nichts, damit wir an deiner Seeligkeit Theil nehmen sollten. Warum,
               Herr, willst du solche Würmer wie wir sind, in deinem Zorne zertreten? Es ist die
               schönste That eines Gottes zu verzeihn. Begnüge dich mit unserm Blut, und nimm unsere
@@ -3139,31 +2971,31 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Mein theuerster Vater!</l>
+            <p>Mein theuerster Vater!</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Erlaube daß ich dich mit diesem mir süssen Namen nenne – O verzeih mir!</l>
+            <p>Erlaube daß ich dich mit diesem mir süssen Namen nenne – O verzeih mir!</p>
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <p> Ja, ich verzethe dir, und nehme dich an. Meine Kinder lebt wohl. Erhebt eure Herzen,
+            <p>Ja, ich verzethe dir, und nehme dich an. Meine Kinder lebt wohl. Erhebt eure Herzen,
               zu dem, der allein verzeihen kann. Elisabeth, <pb n="77"/> theure Elisabeth, erhole
               dich, bestes Weth.</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <l> Vater, mein Geist wird dich begleiten. Meine Kinder betet, verliert keinen
-              Augenblick.</l>
+            <p>Vater, mein Geist wird dich begleiten. Meine Kinder betet, verliert keinen
+              Augenblick.</p>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <p> Meine Seele hat sich im Gebet mit der eurigen empor geschwungen, eine sanfte
-              Tröstung fiel auf mich herab.</p>
+            <p>Meine Seele hat sich im Gebet mit der eurigen empor geschwungen, eine sanfte Tröstung
+              fiel auf mich herab.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Wenn ich den Allmächtigen bitte, wird er nicht mit Donnern mich anhören. – Du
+            <p>Wenn ich den Allmächtigen bitte, wird er nicht mit Donnern mich anhören. – Du
               unerschöpflich gütiger Gott, ruf itzt deine Wetter zurück, und höre den mindsten
               deiner Knechte. Warum willst du an mir deine Allmacht verschwenden? Erniedre nicht
               deine Größe mit einem Staube. Du bist lauter Liebe, lauter Güte, lauter
@@ -3174,41 +3006,33 @@
           </sp>
           <sp who="#theodor">
             <speaker>THEODOR.</speaker>
-            <l> Du hast mein Herz gerührt. Leb wohl, – Lebt alle wohl!</l>
+            <p>Du hast mein Herz gerührt. Leb wohl, – Lebt alle wohl!</p>
           </sp>
           <sp who="#elisabeth">
             <speaker>ELISABETH.</speaker>
-            <l> Ich sinke – Gott sieh uns bey!</l>
-            <stage>
-              <hi>Es schlägt die Uhr Zwölf.</hi>
-            </stage>
+            <p>Ich sinke – Gott sieh uns bey!</p>
+            <stage>Es schlägt die Uhr Zwölf.</stage>
           </sp>
           <sp who="#helena">
             <speaker>HELENA.</speaker>
-            <l> Ich erblasse –</l>
+            <p>Ich erblasse –</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Gnade! Gnade!</l>
-            <stage>
-              <hi>Sie fallen einander in die Arme, und alles ist unbeweglich.</hi>
-            </stage>
+            <p>Gnade! Gnade!</p>
+            <stage>Sie fallen einander in die Arme, und alles ist unbeweglich.</stage>
             <pb n="78"/>
           </sp>
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <stage>
-            <hi>Mephistopheles, Furien, Vorige.</hi>
-          </stage>
-          <stage>
-            <hi>Mephistopheles ist fürchterlich gekleidet nach Art der Furien mit einem Helm auf dem
-              Haupte. Ihm folgen eine Schaar Furien mit brenenden Fakeln. Sie schwärmen um die
-              Todten in Greisen herum. Die Posaune rächelt.</hi>
-          </stage>
+          <stage>Mephistopheles, Furien, Vorige.</stage>
+          <stage>Mephistopheles ist fürchterlich gekleidet nach Art der Furien mit einem Helm auf
+            dem Haupte. Ihm folgen eine Schaar Furien mit brenenden Fakeln. Sie schwärmen um die
+            Todten in Greisen herum. Die Posaune rächelt.</stage>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES.</speaker>
-            <p> Hölle blick herauf! Gefährten seht – Welch ein herrlicher Sieg! Ich habe die
+            <p>Hölle blick herauf! Gefährten seht – Welch ein herrlicher Sieg! Ich habe die
               Geschöpfe unsers Feindes vernichtet! – Sieh herab Donnerschleuderer, bewundere meine
               Thaten! – Schon stehn ihre Seelen beym Richterstuhl – Was seh ich! – Die Schaale wankt
               – Verflucht sey ihr Schicksal!</p>
@@ -3216,36 +3040,27 @@
         </div>
         <div type="scene">
           <head>Siebenter Auftritt.</head>
-          <stage>
-            <hi>Ithuriel, eine Schaar Krigel, Vorige.</hi>
-          </stage>
-          <stage>
-            <hi>Der Donner rollt, Blitze leuchten. Ithuriel erscheint in einer glänzenden Gestalt,
-              mit einem göldnen Schilde, und einem blitzenden Schwerte. Sein Gefolg ist prächtig und
-              schimmernd. Die Tracht gleicht den alten Helden. Mephistopheles und seine Furien
-              zittern. Der Donner schweigt.</hi>
-          </stage>
+          <stage>Ithuriel, eine Schaar Krigel, Vorige.</stage>
+          <stage>Der Donner rollt, Blitze leuchten. Ithuriel erscheint in einer glänzenden Gestalt,
+            mit einem göldnen Schilde, und einem blitzenden Schwerte. Sein Gefolg ist prächtig und
+            schimmernd. Die Tracht gleicht den alten Helden. Mephistopheles und seine Furien
+            zittern. Der Donner schweigt.</stage>
           <sp who="#ithuriel">
             <speaker>ITHURIEL.</speaker>
-            <p> Der Allmächtige, der im Himmel seinen Thron hat; der mit einem Wink tausend <pb
+            <p>Der Allmächtige, der im Himmel seinen Thron hat; der mit einem Wink tausend <pb
                 n="79"/> Welten aus nichts heraufrufet; der Sonnen leuchten, und Donnerbrüllen
               heist, der Gott hat die Sünder gerichtet. Die Waage der Gerechtigkeit hat sie zu
               leicht gefunden; aber die unendliche Barmherzigkeit hat ihre Laster weit überwogen! –
               Frevler zittert, und betet an seihe gerechten Urtheile! – Er nimmt die Reuigen in
               seinen väterlichen Schooß auf, und stürzt euch verfluchte Verführer in eine ewige
               Höll.</p>
-            <stage>
-              <hi>Der Donner brüllt. Mephistopheles und seine Gefährten stürzen zu Boden.</hi>
-            </stage>
+            <stage>Der Donner brüllt. Mephistopheles und seine Gefährten stürzen zu Boden.</stage>
             <p>Ende des Drama.</p>
           </sp>
-          <sp who="#">
-            <speaker/>
-            <stage><hi>NB</hi>.</stage>
-            <p> Bey dieser Scene muß die ganze Beleuchtung der Bühne auf der Seite des Ithuriels
-              seyn: auf jener des Mephistopheles muß die äusserste Dunkelheit herrschen.</p>
-            <pb n="80"/>
-          </sp>
+          <stage><emph>NB.</emph> Bey dieser Scene muß die ganze Beleuchtung der Bühne auf der Seite
+            des Ithuriels seyn: auf jener des Mephistopheles muß die äusserste Dunkelheit
+            herrschen.</stage>
+          <pb n="80"/>
         </div>
       </div>
     </body>
