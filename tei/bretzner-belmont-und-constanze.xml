@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Belmont und Constanze</title>
+        <title type="main">Belmont und Constanze oder Die Entführung aus dem Serail</title>
+        <title type="sub">Eine Operette in drey Akten</title>
         <author key="pnd:115849238">Bretzner, Christoph Friedrich</author>
       </titleStmt>
       <publicationStmt>
@@ -44,39 +45,39 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="belmonte">
-            <persName>BELMONTE</persName>
+          <person xml:id="belmonte" sex="MALE">
+            <persName>Belmonte</persName>
           </person>
-          <person xml:id="osmin">
-            <persName>OSMIN</persName>
+          <person xml:id="osmin" sex="MALE">
+            <persName>Osmin</persName>
           </person>
-          <person xml:id="pedrillo">
-            <persName>PEDRILLO</persName>
+          <person xml:id="pedrillo" sex="MALE">
+            <persName>Pedrillo</persName>
           </person>
-          <person xml:id="chor">
-            <persName>CHOR</persName>
+          <personGrp xml:id="chor" sex="MALE">
+            <name>Chor (Janitscharen)</name>
+          </personGrp>
+          <person xml:id="eine_oder_zwo_stimmen" sex="MALE">
+            <persName>Eine oder zwo Stimmen</persName>
           </person>
-          <person xml:id="eine_oder_zwo_stimmen">
-            <persName>EINE ODER ZWO STIMMEN</persName>
+          <person xml:id="selim" sex="MALE">
+            <persName>Selim</persName>
           </person>
-          <person xml:id="selim">
-            <persName>SELIM</persName>
+          <person xml:id="constanze" sex="FEMALE">
+            <persName>Constanze</persName>
+            <persName type="variant">Konstanze</persName>
           </person>
-          <person xml:id="konstanze">
-            <persName>KONSTANZE</persName>
-            <persName xml:id="constanze">CONSTANZE</persName>
+          <person xml:id="blonde" sex="FEMALE">
+            <persName>Blonde</persName>
           </person>
-          <person xml:id="blonde">
-            <persName>BLONDE</persName>
+          <person xml:id="klaas" sex="MALE">
+            <persName>Klaas</persName>
           </person>
-          <person xml:id="klaas">
-            <persName>KLAAS</persName>
-          </person>
-          <person xml:id="wache">
-            <persName>WACHE</persName>
-          </person>
-          <person xml:id="einer_von_der_wache">
-            <persName>EINER VON DER WACHE</persName>
+          <personGrp xml:id="wache" sex="MALE">
+            <name>Wache</name>
+          </personGrp>
+          <person xml:id="einer_von_der_wache" sex="MALE">
+            <persName>Einer von der Wache</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -91,6 +92,7 @@
         <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from
           source</change>
         <change who="#ff" when="2017-08-04T01:01:05.278+02:00">structural cleanup</change>
+        <change who="#ff" when="2018-10-08">formalities, IDs</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -103,8 +105,6 @@
         <head>Die Entführung aus dem Serail</head>
         <head>Eine Operette in drey Akten</head>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head><pb n="2"/> Personen</head>
@@ -120,16 +120,20 @@
           <castItem>Wache</castItem>
         </castList>
       </div>
+      <set>
+        <p>Die Scene ist auf dem Landgute des Bassa.</p>
+      </set>
+    </front>
+    <body>
       <div type="act">
-        <head>1. Akt</head>
+        <head>Erster Akt.</head>
+        <stage>Platz vor dem Palast des Bassa am Ufer des Meeres.</stage>
         <div type="scene">
           <head>Erster Auftritt.</head>
           <sp who="#belmonte">
             <speaker>BELMONTE</speaker>
-            <stage>
-              <hi>allein.</hi>
-            </stage>
-            <p> Hier, Constanze, sollt' ich dich wieder finden? – Dis wär der Ort, der mein Mädchen,
+            <stage>allein.</stage>
+            <p>Hier, Constanze, sollt' ich dich wieder finden? – Dis wär der Ort, der mein Mädchen,
               mein Alles verbärge? – O daß es Wahrheit wäre! daß mich kein süßer Traum täuschte! –
               Ah, Liebe, Liebe! Du gabst mir der Leiden so viel; wie Morgenträume schwanden deine
               Freuden dahin. – O, gieb mir sie zurück, das Mädchen meiner Seele! gieb mir sie
@@ -141,10 +145,8 @@
         </div>
         <div type="scene">
           <head>Zweyter Auftritt.</head>
-          <stage>
-            <hi>Belmonte. Osmin, mit einer Leiter, welche er an einen Baum vor der Thüre des Palasts
-              lehnt, hinauf steigt und Feigen abnimmt.</hi>
-          </stage>
+          <stage>Belmonte. Osmin, mit einer Leiter, welche er an einen Baum vor der Thüre des
+            Palasts lehnt, hinauf steigt und Feigen abnimmt.</stage>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
             <lg>
@@ -158,14 +160,12 @@
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <p> Vielleicht daß ich durch diesen Alten etwas erfahre. – He, Freund! Ist das nicht das
+            <p>Vielleicht daß ich durch diesen Alten etwas erfahre. – He, Freund! Ist das nicht das
               Landhaus des Bassa Selim?</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN</speaker>
-            <stage>
-              <hi>singt wie zuvor, während der Arbeit.</hi>
-            </stage>
+            <stage>singt wie zuvor, während der Arbeit.</stage>
             <lg>
               <l>Doch sie treu sich zu erhalten,</l>
               <l>Schließ' er Liebchen sorglich ein:</l>
@@ -177,11 +177,13 @@
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> He, Alter, he! hört Ihr nicht? – Ist hier des Bassa Selim Palast?</l>
-            <pb n="4"/>
+            <p>He, Alter, he! hört Ihr nicht? – Ist hier des Bassa Selim Palast?</p>
+          </sp>
+          <pb n="4"/>
+          <sp who="#osmin">
+            <speaker>OSMIN</speaker>
+            <stage>sieht ihn an, dreht sich herum, und singt wie zuvor:</stage>
             <lg>
-              <l>OSMIN <hi>sieht ihn an, dreht sich herum, und singt wie zuvor:</hi>
-              </l>
               <l>Sonderlich bey'm Mondenscheine</l>
               <l>Freunde, nehmt sie wohl in Acht!</l>
               <l>Oft lauscht da ein junges Herrchen,</l>
@@ -192,140 +194,126 @@
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <lg>
-              <l> Verwünscht seyst du und dein Lied!</l>
-            </lg>
-            <stage>
-              <hi>Osmin steigt mit den Feigen vom Baume herab, und will wieder in das Haus
-                hinein.</hi>
-            </stage>
+            <p>Verwünscht seyst du und dein Lied!</p>
+            <stage>Osmin steigt mit den Feigen vom Baume herab, und will wieder in das Haus
+              hinein.</stage>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Nur ein Wort, Alter, nur ein Wort!</l>
+            <p>Nur ein Wort, Alter, nur ein Wort!</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Was giebts?</l>
+            <p>Was giebts?</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Gehört dieses Landhaus dem Bassa Selim?</l>
+            <p>Gehört dieses Landhaus dem Bassa Selim?</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Ja, 's gehört ihm. <hi>Will immer ins Haus.</hi>
-            </l>
+            <p>Ja, 's gehört ihm. <stage>Will immer ins Haus.</stage>
+            </p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Seyd Ihr in seinen Diensten?</l>
+            <p>Seyd Ihr in seinen Diensten?</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Getroffen!</l>
+            <p>Getroffen!</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Ist nicht ein Aufseher über die Gärten hier, der Pedrillo heißt?</l>
+            <p>Ist nicht ein Aufseher über die Gärten hier, der Pedrillo heißt?</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Ja, 's ist so ein Schurke da.</l>
+            <p>Ja, 's ist so ein Schurke da.</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Kann ich ihn sprechen?</l>
+            <p>Kann ich ihn sprechen?</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Das ist Eure Sorge.<hi> Will immer ins Haus.</hi>
-            </l>
+            <p>Das ist Eure Sorge. <stage>Will immer ins Haus.</stage>
+            </p>
             <pb n="5"/>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Ey so wartet doch einen Augenblick, und laßt mit Euch reden.</l>
+            <p>Ey so wartet doch einen Augenblick, und laßt mit Euch reden.</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <p> 's beliebt mir nicht. Ihr habt just so eine schurksche ausländische Miene, wie jener
+            <p>'s beliebt mir nicht. Ihr habt just so eine schurksche ausländische Miene, wie jener
               Galgendieb, und seht einem Spion so ähnlich, wie ein Ey dem andern. Geht zum
               Henker!</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <p> Hab' ich je so einen alten griesgrämigen Schurken gesehen? <hi>Laut.</hi> Aber ich
-              hab' Geschäfte beym Pedrillo, und muß ihn nothwendig sprechen.</p>
+            <p>Hab' ich je so einen alten griesgrämigen Schurken gesehen? <stage>Laut.</stage> Aber
+              ich hab' Geschäfte beym Pedrillo, und muß ihn nothwendig sprechen.</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Geschäfte? Ja, Spitzbüberey zu treiben, und mit ihm halb Part zu machen. Trollt
-              Euch, trollt Euch!</l>
+            <p>Geschäfte? Ja, Spitzbüberey zu treiben, und mit ihm halb Part zu machen. Trollt Euch,
+              trollt Euch!</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Der Henker hole den Isegrimm! –<hi> Laut.</hi> Ich verlange: Eure Dienste nicht
-              umsonst, Alter! –</l>
+            <p>Der Henker hole den Isegrimm! – <stage>Laut.</stage> Ich verlange: Eure Dienste nicht
+              umsonst, Alter! –</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Und ich Eure Geschenke nicht.</l>
+            <p>Und ich Eure Geschenke nicht.</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Seht einmal diesen blanken Dukaten! sollt ihn haben.</l>
+            <p>Seht einmal diesen blanken Dukaten! sollt ihn haben.</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Und Ihr funfzig tüchtige Prügel auf die Fußsohlen.</l>
+            <p>Und Ihr funfzig tüchtige Prügel auf die Fußsohlen.</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE</speaker>
-            <stage>
-              <hi>bey Seite.</hi>
-            </stage>
-            <l> Das ist ein Vieh von einem Kerl! <hi>Laut.</hi> Aber wer seyd Ihr denn, daß Ihr so
-              mit mir sprecht?</l>
+            <stage>bey Seite.</stage>
+            <p>Das ist ein Vieh von einem Kerl! <stage>Laut.</stage> Aber wer seyd Ihr denn, daß Ihr
+              so mit mir sprecht?</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Hab' ich Euch gefragt?</l>
+            <p>Hab' ich Euch gefragt?</p>
             <pb n="6"/>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Das ist zum rasend werden!</l>
+            <p>Das ist zum rasend werden!</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <p> Und wenn Ihr noch viel Murmelus und Federlesens macht, so lass' ich Euch eine
+            <p>Und wenn Ihr noch viel Murmelus und Federlesens macht, so lass' ich Euch eine
               Vastonnade auftischen, die Ihr so bald nicht verdauen sollt. – Immer marsch von der
               Thüre weg! Geht zum Teufel, wo Ihr hergekommen seyd! Hier setzt's nichts zu
               gaunern!</p>
-            <stage>
-              <hi>Er treibt ihn zurück.</hi>
-            </stage>
+            <stage>Er treibt ihn zurück.</stage>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE</speaker>
-            <stage>
-              <hi>im Abgehen.</hi>
-            </stage>
-            <l> Ah, Geduld, armes Herz! O Constanze!</l>
+            <stage>im Abgehen.</stage>
+            <p>Ah, Geduld, armes Herz! O Constanze!</p>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <stage>
-            <hi>Osmin. Hernach Pedrillo.</hi>
-          </stage>
+          <stage>Osmin. Hernach Pedrillo.</stage>
           <sp who="#osmin">
             <speaker>OSMIN</speaker>
-            <stage>
-              <hi>allein.</hi>
-            </stage>
-            <p> Könnt' ich mir doch noch so einen Schurken auf die Nase setzen, wie den Pedrillo; so
+            <stage>allein.</stage>
+            <p>Könnt' ich mir doch noch so einen Schurken auf die Nase setzen, wie den Pedrillo; so
               einen Gaudieb, der Tag und Nacht nichts thut, als nach meinen Weibern herum zu
               schleichen, und zu schnobern, ob's nichts für seinen Schnabel setzt: aber ich lauere
               ihm sicher auf den Dienst, und wohl bekomm dir die Prügelsuppe, wenn ich dich einmal
@@ -335,72 +323,67 @@
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Nun wie stehts, Osmin? Ist der Bassa noch nicht zurück?</l>
+            <p>Nun wie stehts, Osmin? Ist der Bassa noch nicht zurück?</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Sieh darnach, wenn du's wissen willst.</l>
+            <p>Sieh darnach, wenn du's wissen willst.</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Schon wieder Sturm im Kalender? – Hast du das Gericht Feigen für mich gepflückt?</l>
+            <p>Schon wieder Sturm im Kalender? – Hast du das Gericht Feigen für mich gepflückt?</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Gift für dich, verwünschter Schmarozer!</l>
+            <p>Gift für dich, verwünschter Schmarozer!</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Was in aller Welt ich dir nun gethan haben muß, daß du beständig mit mir zankst. Laß
+            <p>Was in aller Welt ich dir nun gethan haben muß, daß du beständig mit mir zankst. Laß
               uns doch einmal Friede machen.</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <p> Friede mit dir? mit so einem schleichenden spitzbübischen Paßauf, der nur spionirt,
+            <p>Friede mit dir? mit so einem schleichenden spitzbübischen Paßauf, der nur spionirt,
               wie er mir eins versetzen kann? Erdrosseln möcht' ich dich! –</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Aber sag nur, warum? warum?</l>
+            <p>Aber sag nur, warum? warum?</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <p> Warum? – Weil ich dich nicht leiden kann, weil du dem Galgen entlaufen bist, und
-              weil ich nicht ruhen kann, als bis ich dich Verräther aus der Welt geschickt habe! –
-              –</p>
-            <stage>
-              <hi>Geht ins Haus.</hi>
-            </stage>
+            <p>Warum? – Weil ich dich nicht leiden kann, weil du dem Galgen entlaufen bist, und weil
+              ich nicht ruhen kann, als bis ich dich Verräther aus der Welt geschickt habe! – –</p>
+            <stage>Geht ins Haus.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <stage>
-            <hi>Pedrillo. Hernach Belmonte.</hi>
-          </stage>
+          <stage>Pedrillo. Hernach Belmonte.</stage>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Geh nur, alter verwünschter Aufpasser; es ist noch nicht aller Tage Abend. Wer weiß,
+            <p>Geh nur, alter verwünschter Aufpasser; es ist noch nicht aller Tage Abend. Wer weiß,
               wer den <pb n="8"/> Andern überlistet; und dir mißtrauischem gehäßigen Menschenfeinde
               eine Grube zu graben, sollte ein wahres Fest für mich sehn!</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Pedrillo, guter Podrillo!</l>
+            <p>Pedrillo, guter Podrillo!</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Ach mein bester Herr! Ists möglich? Sind Sie's wirklich? Bravo, Madam Fortuna,
-              bravo! das heißt doch Wort gehalten! Schon verzweifelte ich, ob einer meiner Briefe
-              Sie getroffen hätte.</p>
+            <p>Ach mein bester Herr! Ists möglich? Sind Sie's wirklich? Bravo, Madam Fortuna, bravo!
+              das heißt doch Wort gehalten! Schon verzweifelte ich, ob einer meiner Briefe Sie
+              getroffen hätte.</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Sag, guter Pedrillo, lebt meine Konstanze noch?</l>
+            <p>Sag, guter Pedrillo, lebt meine Konstanze noch?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Lebt, und noch hoff' ich für Sie. Seit dem schrecklichen Tage, an welchem das Glück
+            <p>Lebt, und noch hoff' ich für Sie. Seit dem schrecklichen Tage, an welchem das Glück
               uns einen so häßlichen Streich spielte, und unser Schiff von den Seeräubern erobern
               ließ, haben wir mancherley Drangsal erfahren. Glücklicher Weise traf sichs noch, daß
               der Bassa Selim uns alle drey kaufte: Ihre Konstanze nämlich, meine Blonde, und mich.
@@ -409,49 +392,49 @@
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Ah! was sagst du?</l>
+            <p>Ah! was sagst du?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Na, nur nicht so hitzig! Sie ist noch nicht in die schlimmsten Hände gefallen. Der
+            <p>Na, nur nicht so hitzig! Sie ist noch nicht in die schlimmsten Hände gefallen. Der
               Bassa ist ein Renegat, und hat noch so viel Delikatesse,<pb n="9"/> keine seiner
               Weiber zu seiner Liebe zu zwingen; und so viel ich weis, spielt er noch immer den
               unerhörten Liebhaber.</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Wär es möglich? Wär Konstanze noch treu?</l>
+            <p>Wär es möglich? Wär Konstanze noch treu?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Sicher noch, lieber Herr! Aber wie's mit meinem Blondgen steht, weis der Himmel! Das
+            <p>Sicher noch, lieber Herr! Aber wie's mit meinem Blondgen steht, weis der Himmel! Das
               arme Ding schmachtet bey einem alten häßlichen Kerl, dem sie der Bassa geschenkt hat;
               und vielleicht – ach ich darf gar nicht dran denken! –</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Doch nicht der alte Kerl, der so eben ins Haus ging?</l>
+            <p>Doch nicht der alte Kerl, der so eben ins Haus ging?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Eben der.</l>
+            <p>Eben der.</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Und dies ist der Liebling des Bassa?</l>
+            <p>Und dies ist der Liebling des Bassa?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Liebling, Spion, und Ausbund aller Spitzbuben, der mich mit den Augen vergiften
+            <p>Liebling, Spion, und Ausbund aller Spitzbuben, der mich mit den Augen vergiften
               möchte, wenns möglich wäre.</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> O guter Pedrillo! was sagst du?</l>
+            <p>O guter Pedrillo! was sagst du?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Nur nicht gleich verzagt! Unter uns gesagt: ich hab' auch einen Stein im Brete beym
+            <p>Nur nicht gleich verzagt! Unter uns gesagt: ich hab' auch einen Stein im Brete beym
               Bassa. Durch mein bischen Geschick in der Gärtnerey hab' ich seine Gunst weggekriegt,
               und dadurch hab' ich so ziemliche Freyheit, die tausend Andere nicht haben würden. Da
               sonst jede Mannsperson sich entfernen muß, wenn eine seiner Weiber in <pb n="10"/>
@@ -461,59 +444,55 @@
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Ists wöglich? Du hast sie gesprochen? – O sag, sag! Liebt sie nicht noch?</l>
+            <p>Ists wöglich? Du hast sie gesprochen? – O sag, sag! Liebt sie nicht noch?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Hm! daß Sie daran zweifeln! Ich dächte, Sie kennten die gute Konstanze mehr als zu
+            <p>Hm! daß Sie daran zweifeln! Ich dächte, Sie kennten die gute Konstanze mehr als zu
               gut; hätten Proben genug ihrer Liebe. – Doch damit dürfen wir uns gar nicht aufhalten.
               Hier ist blos die Frage, wie's anzufangen ist, hier weg zu kommen?</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <p> O da hab' ich für alles gesorgt! Ich hab' hier ein Schiff in einiger Entfernung vom
+            <p>O da hab' ich für alles gesorgt! Ich hab' hier ein Schiff in einiger Entfernung vom
               Hafen, das uns auf den ersten Wink einnimmt, und –</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Ah, sachte, sachte! Erst müssen wir die Mädels haben, ehe wir zu Schiffe gehen; und
+            <p>Ah, sachte, sachte! Erst müssen wir die Mädels haben, ehe wir zu Schiffe gehen; und
               das geht nicht so husch, husch! wie Sie meynen.</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <p> O lieber guter Pedrillo, mach nur, daß ich sie sehen, daß ich sie sprechen kann! Das
+            <p>O lieber guter Pedrillo, mach nur, daß ich sie sehen, daß ich sie sprechen kann! Das
               Herz schlägt mir vor Angst, vor Freude! –</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Pfiffig müssen wir das Ding anfangen, und rasch müssen wir's ausführen, dannt wir
-                <pb n="11"/> den alten Aufpasser übertölpeln. Bleiben Sie hier in der Nähe. Jetzt
-              wird der Bassa bald von einer Lustfahrt auf dem Wasser zurück kommen. Ich will Sie ihm
-              als einen geschickten Baumeister vorstellen: denn Bauen und Gartnerey sind seine
+            <p>Pfiffig müssen wir das Ding anfangen, und rasch müssen wir's ausführen, dannt wir <pb
+                n="11"/> den alten Aufpasser übertölpeln. Bleiben Sie hier in der Nähe. Jetzt wird
+              der Bassa bald von einer Lustfahrt auf dem Wasser zurück kommen. Ich will Sie ihm als
+              einen geschickten Baumeister vorstellen: denn Bauen und Gartnerey sind seine
               Steckenpferde. Aber lieber goldner Herr, halten Sie sich in Schranken; Konstanze ist
               bey ihm –</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Konstanze bey ihm? Was sagst du? Ich soll sie sehen?</l>
+            <p>Konstanze bey ihm? Was sagst du? Ich soll sie sehen?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Gemach, gemach ums Himmels willen, lieber Herr! sonst stolpern wir – Ah ich glaube,
+            <p>Gemach, gemach ums Himmels willen, lieber Herr! sonst stolpern wir – Ah ich glaube,
               dort seh' ich sie schon angefahren kommen. Gehn Sie nur auf die Seite, wenn er kommt;
               ich will ihm entgegen gehen.</p>
-            <stage>
-              <hi>Geht ab.</hi>
-            </stage>
+            <stage>Geht ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
           <sp who="#belmonte">
             <speaker>BELMONTE</speaker>
-            <stage>
-              <hi>allein.</hi>
-            </stage>
+            <stage>allein.</stage>
             <l>Konstanze! Dich wieder zu sehen – –</l>
             <lg>
               <l>O wie ängstlich, o wie feurig</l>
@@ -533,24 +512,16 @@
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO</speaker>
-            <stage>
-              <hi>kommt hurtig gelaufen.</hi>
-            </stage>
-            <lg>
-              <l> Geschwind, geschwind auf die Seite und versteckt! Der Bassa kommt.</l>
-            </lg>
-            <stage>
-              <hi>Belmonte versteckt sich.</hi>
-            </stage>
+            <stage>kommt hurtig gelaufen.</stage>
+            <p>Geschwind, geschwind auf die Seite und versteckt! Der Bassa kommt.</p>
+            <stage>Belmonte versteckt sich.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <stage>
-            <hi>Der Bassa Selim und Constanze kommen in einem Lustschiffe angefahren, vor welchem
-              ein anderes Schiff mit Janitscharen Musik voraus landet. Die Janitscharen stellen sich
-              am Ufer in Ordnung, stimmen folgendes Chor an, und entfernen sich dann.</hi>
-          </stage>
+          <stage>Der Bassa Selim und Constanze kommen in einem Lustschiffe angefahren, vor welchem
+            ein anderes Schiff mit Janitscharen Musik voraus landet. Die Janitscharen stellen sich
+            am Ufer in Ordnung, stimmen folgendes Chor an, und entfernen sich dann.</stage>
           <sp who="#chor">
             <speaker>CHOR.</speaker>
             <lg>
@@ -583,52 +554,46 @@
               <l>Und vom Ufer halle wieder,</l>
               <l>Unsrer Lieder Jubelklang.</l>
             </lg>
-            <stage>
-              <hi>Janitscharen ab.</hi>
-            </stage>
+            <stage>Janitscharen ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Siebenter Auftritt.</head>
-          <stage>
-            <hi>Selim. Constanze.</hi>
-          </stage>
+          <stage>Selim. Constanze.</stage>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <p> Immer noch traurig, geliebte Konstanze? immer in Thränen? – Sieh, dieser schöne <pb
+            <p>Immer noch traurig, geliebte Konstanze? immer in Thränen? – Sieh, dieser schöne <pb
                 n="14"/> Abend, diese reizende Gegend, diese bezaubernde Musik, meine zärtliche
               Liebe für dich – Sag', kann nichts von allem dich endlich beruhigen, endlich dein Herz
               rühren? – Sieh, ich könnte befehlen, könnte grausam mit dir verfahren, dich zwingen
               –</p>
-            <stage>
-              <hi>Constanze seufzt.</hi>
-            </stage>
+            <stage>Constanze seufzt.</stage>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Aber nein, Konstanze; dir selbst will ich dein Herz zu danken haben – dir selbst
-              –</l>
+            <p>Aber nein, Konstanze; dir selbst will ich dein Herz zu danken haben – dir selbst
+              –</p>
           </sp>
           <sp who="#constanze">
             <speaker>CONSTANZE.</speaker>
-            <l> Großmüthiger Mann! o daß ich es könnte! daß ichs erwiedern könnte – aber –</l>
+            <p>Großmüthiger Mann! o daß ich es könnte! daß ichs erwiedern könnte – aber –</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Sag, Konstanze, sag, was hält dich zurück?</l>
+            <p>Sag, Konstanze, sag, was hält dich zurück?</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <l> Du wirst mich hassen.</l>
+            <p>Du wirst mich hassen.</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <p> Nein, ich schwöre dir's. Du weißt, wie sehr ich dich liebe, wie viel Freyheit ich
-              dir vor allen meinen Weibern gestatte; dich wie meine Einzige schätze –</p>
+            <p>Nein, ich schwöre dir's. Du weißt, wie sehr ich dich liebe, wie viel Freyheit ich dir
+              vor allen meinen Weibern gestatte; dich wie meine Einzige schätze –</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <l> O so verzeih!</l>
+            <p>O so verzeih!</p>
             <lg>
               <l>Ach, ich liebte,</l>
               <l>War so glücklich,</l>
@@ -641,75 +606,69 @@
               <l>Und nun schwimmt mein Aug' in Thränen,</l>
               <l>Kummer ruht in meinem Schoos.</l>
             </lg>
-            <stage>
-              <hi>Während des Gesanges geht der Bassa unwillig hin und her.</hi>
-            </stage>
+            <stage>Während des Gesanges geht der Bassa unwillig hin und her.</stage>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <p> Ach, ich sagt' es wohl, du würdest mich hassen. Aber verzeih, verzeih dem
+            <p>Ach, ich sagt' es wohl, du würdest mich hassen. Aber verzeih, verzeih dem
               liebekranken Mädchen! – du bist ja so großmüthig, so gut – Ich will dir dienen, deine
               Sklavin seyn, bis ans Ende meines Lebens: nur verlange nicht ein Herz von mir, das auf
               ewig versagt ist. –</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Ha, Undankbare! Was wagst du zu bitten?</l>
+            <p>Ha, Undankbare! Was wagst du zu bitten?</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <p> Tödte mich, Selim, tödte mich! nur zwinge mich nicht, meineidig zu werden. – Noch
+            <p>Tödte mich, Selim, tödte mich! nur zwinge mich nicht, meineidig zu werden. – Noch
               zuletzt, wie mich der Seeräuber aus den Armen meines Geliebten riß, schwur ich aufs
               feyerlichste –</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Halt ein! nicht ein Wort! Reize meinen Zorn nicht noch mehr. Bedenke, daß du in
-              meiner Gewalt bist –</l>
+            <p>Halt ein! nicht ein Wort! Reize meinen Zorn nicht noch mehr. Bedenke, daß du in
+              meiner Gewalt bist –</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <p> Ich bin es: aber du wirst dich ihrer nicht bedienen, ich kenne dein gutes, dein
+            <p>Ich bin es: aber du wirst dich ihrer nicht bedienen, ich kenne dein gutes, dein
               mitleidvolles <pb n="16"/> Herz. Hätte ichs sonst wagen können, dir das meinige zu
               entdecken? –</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Wag' es nicht, meine Güte zu mißbrauchen –</l>
+            <p>Wag' es nicht, meine Güte zu mißbrauchen –</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <l> Nur Aufschub gönne mir, Herr! Nur Zeit, meinen Schmerz zu vergessen –</l>
+            <p>Nur Aufschub gönne mir, Herr! Nur Zeit, meinen Schmerz zu vergessen –</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Wie oft schon gewährt' ich dir diese Bitte –</l>
+            <p>Wie oft schon gewährt' ich dir diese Bitte –</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <l> Nur noch dis Mal!</l>
+            <p>Nur noch dis Mal!</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Es sey! zum lezten Male! – Geh, Konstanze, geh! Besinne dich eines Bessern, und
-              Morgen –</l>
+            <p>Es sey! zum lezten Male! – Geh, Konstanze, geh! Besinne dich eines Bessern, und
+              Morgen –</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE</speaker>
-            <stage>
-              <hi>im Abgehn.</hi>
-            </stage>
-            <l> Unglückliches Mädchen! O Belmonte, Belmonte!</l>
+            <stage>im Abgehn.</stage>
+            <p>Unglückliches Mädchen! O Belmonte, Belmonte!</p>
           </sp>
         </div>
         <div type="scene">
           <head>Achter Auftritt.</head>
-          <stage>
-            <hi>Selim. Pedrillo. Belmonte.</hi>
-          </stage>
+          <stage>Selim. Pedrillo. Belmonte.</stage>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <p> Ihr! Schmerz, ihre Thränen, ihre Standhaftigkeit bezaubern mein Herz immer mehr,
+            <p>Ihr! Schmerz, ihre Thränen, ihre Standhaftigkeit bezaubern mein Herz immer mehr,
               machen mir ihre Liebe nur noch wünschenswerther. Ha! wer wollte gegen ein solches Herz
               Gewalt brauchen? – Nein, Konstanze, nein, auch Selim hat ein Herz; auch Selim kennt
               Liebe –</p>
@@ -717,161 +676,147 @@
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Herr! verzeih, daß ich es wage, dich in deinen Betrachtungen zu stören –</l>
+            <p>Herr! verzeih, daß ich es wage, dich in deinen Betrachtungen zu stören –</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Was willst du, Pedrillo?</l>
+            <p>Was willst du, Pedrillo?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Dieser junge Mann, der sich in Italien mit vielem Fleiß auf die Baukunst gelegt, hat
+            <p>Dieser junge Mann, der sich in Italien mit vielem Fleiß auf die Baukunst gelegt, hat
               von deiner Macht, von deinem Reichthum gehört, und kommt her, dir als Baumeister seine
               Dienste anzubieten.</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Herr! könnte ich so glücklich seyn, durch meine geringen Fähigkeiten deinen Beyfall
-              zu verdienen.</l>
+            <p>Herr! könnte ich so glücklich seyn, durch meine geringen Fähigkeiten deinen Beyfall
+              zu verdienen.</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <p> Hm! Du gefällst mir. Laß sehen, was du kannst. – <hi>Zum Pedrill.</hi> Sorge für
-              seinen Unterhalt. Morgen werde ich dich wieder rufen lassen. –</p>
-            <stage>
-              <hi>Der Bassa geht ab.</hi>
-            </stage>
+            <p>Hm! Du gefällst mir. Laß sehen, was du kannst. – <stage>Zum Pedrill.</stage> Sorge
+              für seinen Unterhalt. Morgen werde ich dich wieder rufen lassen. –</p>
+            <stage>Der Bassa geht ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Neunter Auftritt.</head>
-          <stage>
-            <hi>Belmonte. Pedrillo.</hi>
-          </stage>
+          <stage>Belmonte. Pedrillo.</stage>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Ha! Triumph, Triumph, Herr! der erste Schritt war gethan.</l>
+            <p>Ha! Triumph, Triumph, Herr! der erste Schritt war gethan.</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <p> Ach laß mich zu mir selbst kommen! – Ich hab sie gesehen, hab das gute treue beste
+            <p>Ach laß mich zu mir selbst kommen! – Ich hab sie gesehen, hab das gute treue beste
                 <pb n="18"/> Mädchen gesehen! – O Konstanze, Konstanze! Was könnt' ich für dich
               thun, was für dich wagen?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Ha! gemach gemach, bester Herr! Stimmen Sie den Ton ein Bischen herab; Verstellung
+            <p>Ha! gemach gemach, bester Herr! Stimmen Sie den Ton ein Bischen herab; Verstellung
               wird uns weit bessere Dienste leisten. Wir sind nicht in unserm Vaterlande. Hier
               fragen sie den Henker darnach, ob's einen Kopf mehr oder weniger in der Welt giebt.
               Bastonade und Strick um Hals sind hier wie ein Morgenbrod.</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Ach, Pedrillo! wenn du die Liebt kenntest –</l>
+            <p>Ach, Pedrillo! wenn du die Liebt kenntest –</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Hm! Als wenns mit unser einem gar nichts wäre. Ich habe so gut meine zärtlichen
+            <p>Hm! Als wenns mit unser einem gar nichts wäre. Ich habe so gut meine zärtlichen
               Stunden als andere Leute. Und denken Sie denn, daß mirs nicht auch im Bauche grimmt,
               wenn ich mein Blondchen von so einem alten Spitzbuben, wie der Osmin ist, bewacht
               sehen muß?</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> O wenn es möglich wäre, sie zu sprechen –</l>
+            <p>O wenn es möglich wäre, sie zu sprechen –</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Wir wollen sehen, was zu thun ist. Kommen Sie nur mit mir in Garten: aber um alles
-              in der Welt, vorsichtig und fein. Denn hier ist alles Aug und Ohr.</p>
-            <stage>
-              <hi>Sie wollen in den Palast, Osmin kommt ihnen in der Thür' entgegen, und hält sie
-                zurück.</hi>
-            </stage>
+            <p>Wir wollen sehen, was zu thun ist. Kommen Sie nur mit mir in Garten: aber um alles in
+              der Welt, vorsichtig und fein. Denn hier ist alles Aug und Ohr.</p>
+            <stage>Sie wollen in den Palast, Osmin kommt ihnen in der Thür' entgegen, und hält sie
+              zurück.</stage>
             <pb n="19"/>
           </sp>
         </div>
         <div type="scene">
           <head>Zehnter Auftritt.</head>
-          <stage>
-            <hi>Die Vorigen. Osmin.</hi>
-          </stage>
+          <stage>Die Vorigen. Osmin.</stage>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Wohin?</l>
+            <p>Wohin?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Hinein!</l>
+            <p>Hinein!</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN</speaker>
-            <stage>
-              <hi>zu Belmonte.</hi>
-            </stage>
-            <l> Was will das Gesicht? – Zurück mit dir, zurück!</l>
+            <stage>zu Belmonte.</stage>
+            <p>Was will das Gesicht? – Zurück mit dir, zurück!</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Ha, gemach Meister Grobian, gemach! Er ist in des Bassa Diensten.</l>
+            <p>Ha, gemach Meister Grobian, gemach! Er ist in des Bassa Diensten.</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> In des Henkers Diensten mag er seyn! Er soll nicht herein!</l>
+            <p>In des Henkers Diensten mag er seyn! Er soll nicht herein!</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Er soll aber hinein!</l>
+            <p>Er soll aber hinein!</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Kommt mir nur einen Schritt über die Schwelle –</l>
+            <p>Kommt mir nur einen Schritt über die Schwelle –</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Unverschämter! Hast du nicht mehr Achtung für einen Mann meines Standes?</l>
+            <p>Unverschämter! Hast du nicht mehr Achtung für einen Mann meines Standes?</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Ey, Ihr mögt mir vom Stande seyn! – Fort, fort, oder ich will euch Beine machen.</l>
+            <p>Ey, Ihr mögt mir vom Stande seyn! – Fort, fort, oder ich will euch Beine machen.</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Alter Dummkopf! Es ist ja der Baumeister, den der Bassa angenommen hat.</l>
+            <p>Alter Dummkopf! Es ist ja der Baumeister, den der Bassa angenommen hat.</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <p> Meinethalben sey er Stockmeister: nur komm er mir hier nicht zu nahe. Ich müßte
-              nicht sehen, daß es so ein Kumpan deines Gelichters ist, und daß das so eine abgeredte
-              Karte ist, <pb n="20"/> uns zu überlisten. Der Bassa ist weich wie Butter, mit dem
-              könnt ihr machen, was ihr wollt: aber ich habe eine feinere Nase. Gaunerey ists um den
-              ganzen Kram, mit euch fremden Gesindel; und ihr abgefeimten Betrüger habt lange eure
-              Plängen angelegt, eure Pfiffe auszuführen: aber wart ein Bischen! Osmin schläft nicht.
-              Wär ich Bassa, ihr wärt längst gespießt. – Ja! schneidit nur Gesichter, lacht nur
-              hönisch in Bart hinein!</p>
+            <p>Meinethalben sey er Stockmeister: nur komm er mir hier nicht zu nahe. Ich müßte nicht
+              sehen, daß es so ein Kumpan deines Gelichters ist, und daß das so eine abgeredte Karte
+              ist, <pb n="20"/> uns zu überlisten. Der Bassa ist weich wie Butter, mit dem könnt ihr
+              machen, was ihr wollt: aber ich habe eine feinere Nase. Gaunerey ists um den ganzen
+              Kram, mit euch fremden Gesindel; und ihr abgefeimten Betrüger habt lange eure Plängen
+              angelegt, eure Pfiffe auszuführen: aber wart ein Bischen! Osmin schläft nicht. Wär ich
+              Bassa, ihr wärt längst gespießt. – Ja! schneidit nur Gesichter, lacht nur hönisch in
+              Bart hinein!</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Ereifre dich nicht so, Alter; es hilft dir doch nichts. Sieh, so eben werden wir
-              hinein spatzieren.</l>
+            <p>Ereifre dich nicht so, Alter; es hilft dir doch nichts. Sieh, so eben werden wir
+              hinein spatzieren.</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Ha! das will ich sehen! <hi>Stellt sich vor die Thüre.</hi>
-            </l>
+            <p>Ha! das will ich sehen! <stage>Stellt sich vor die Thüre.</stage>
+            </p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Mach keine Umstände. –</l>
+            <p>Mach keine Umstände. –</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <lg>
-              <l> Weg, Niederträchtiger!</l>
-            </lg>
-            <stage>
-              <hi>Terzet.</hi>
-            </stage>
+            <p>Weg, Niederträchtiger!</p>
+            <stage>Terzet.</stage>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
@@ -906,9 +851,7 @@
             <lg>
               <l>Wir gehn hinein.</l>
             </lg>
-            <stage>
-              <hi>ie drängen ihn von der Thüre weg.</hi>
-            </stage>
+            <stage>ie drängen ihn von der Thüre weg.</stage>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
@@ -918,8 +861,8 @@
             <speaker>BELMONTE UND PEDRILLO.</speaker>
             <l>Platz fort!</l>
           </sp>
-          <sp who="#_osmin">
-            <speaker> OSMIN.</speaker>
+          <sp who="#osmin">
+            <speaker>OSMIN.</speaker>
             <l>Ich schlage drein!</l>
           </sp>
           <sp who="#belmonte #pedrillo">
@@ -927,23 +870,20 @@
             <lg>
               <l>Wir gehn hinein!</l>
             </lg>
-            <stage>
-              <hi>Sie stoßen ihn weg, und gehn hinein.</hi>
-            </stage>
+            <stage>Sie stoßen ihn weg, und gehn hinein.</stage>
             <pb n="22"/>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>2. Akt</head>
+        <head>Zweiter Akt.</head>
+        <stage>Garten am Palast des Bassa Selim; an der Seite Osmins Wohnung.</stage>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Osmin. Blonde.</hi>
-          </stage>
+          <stage>Osmin. Blonde.</stage>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <p> O des Zankens, Befehlens und Murrens wird auch kein Ende! Einmal für allemal: das
+            <p>O des Zankens, Befehlens und Murrens wird auch kein Ende! Einmal für allemal: das
               steht mir nicht an! Denkst du alter Murrkopf etwa eine türkische Sklavin vor dir zu
               haben, die bey deinen Befehlen zittert? o da irrst du dich sehr! Mit europäischen
               Mädchen springt man nicht so herum; denen begegnet man ganz anders.</p>
@@ -960,60 +900,56 @@
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <p> Ey seht doch mal, was das Mädchen vorschreiben kann! Zärtlichkeit! Schmeicheln! – Es
+            <p>Ey seht doch mal, was das Mädchen vorschreiben kann! Zärtlichkeit! Schmeicheln! – Es
               ist mir wie pure Zärtlichkeit! – Wer Teufel hat dir das Zeug im Kopf gesetzt? – Hier
               sind wir in der Türkey, und da gehts aus einem andern Tone. Ich dein Herr; du meine
               Sklavin; ich befehle, du mußt gehorchen!</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <p> Deine Sklavin? ich deine Sklavin? – Ha! ein Mädchen eine Sklavin! Noch einmal sag
-              mir das, noch einmal!</p>
+            <p>Deine Sklavin? ich deine Sklavin? – Ha! ein Mädchen eine Sklavin! Noch einmal sag mir
+              das, noch einmal!</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
-            <p> Ich möchte toll werden, was das Madchen für ein starrköpfiges Ding ist.
-                <hi>Laut.</hi> Du hast doch wohl nicht vergessen, daß dich der Bassa mir zur Sklavin
-              geschenkt hat?</p>
+            <stage>für sich.</stage>
+            <p>Ich möchte toll werden, was das Madchen für ein starrköpfiges Ding ist.
+                <stage>Laut.</stage> Du hast doch wohl nicht vergessen, daß dich der Bassa mir zur
+              Sklavin geschenkt hat?</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <p> Bassa hin, Bassa her! Mädchen sind keine Waare zum Verschenken! Ich bin eine
+            <p>Bassa hin, Bassa her! Mädchen sind keine Waare zum Verschenken! Ich bin eine
               Engländerin, zur Freyheit geboren; und trotz jedem, der mich zu etwas zwingen
               will!</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN</speaker>
-            <stage>
-              <hi>bey Seite.</hi>
-            </stage>
-            <p> Gift und Dolch über das Mädchen! – Beym Mahomet! sie macht mich rasend. – Und doch
-              lieb' ich die Spitzbübin, trotz ihres tollen Kopfs! – <hi>Laut.</hi> Ich befehle dir
-              augenblicklich, mich zu lieben.</p>
+            <stage>bey Seite.</stage>
+            <p>Gift und Dolch über das Mädchen! – Beym Mahomet! sie macht mich rasend. – Und doch
+              lieb' ich die Spitzbübin, trotz ihres tollen Kopfs! – <stage>Laut.</stage> Ich befehle
+              dir augenblicklich, mich zu lieben.</p>
             <pb n="24"/>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <l> Hahaha! Komm mir nur ein wenig näher, ich will dir fühlbare Beweise davon geben.</l>
+            <p>Hahaha! Komm mir nur ein wenig näher, ich will dir fühlbare Beweise davon geben.</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Tolles Ding! Weißt du, daß du mein bist, und ich dich dafür züchtigen kann?</l>
+            <p>Tolles Ding! Weißt du, daß du mein bist, und ich dich dafür züchtigen kann?</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <l> Wag's nicht, mich anzurühren, wenn dir deine Augen lieb sind.</l>
+            <p>Wag's nicht, mich anzurühren, wenn dir deine Augen lieb sind.</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Wie? du unterstehst dich –</l>
+            <p>Wie? du unterstehst dich –</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <p> Da ist was zu unterstehen! Du bist der Unverschämte, der sich zu viel Freyheit
+            <p>Da ist was zu unterstehen! Du bist der Unverschämte, der sich zu viel Freyheit
               herausnimmt. So ein altes häßliches Gesicht untersteht sich, einem Mädchen wie ich,
               jung, schön, zur Freude geboren, wie einer Magd zu befehlen! Wahrhaftig, das stünde
               mir an! Uns! uns gehört das Regiment; ihr seyd unsre Sklaven, und glücklich, wenn ihr
@@ -1021,106 +957,100 @@
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Bey meinem Bart, sie ist toll! Hier, hier in der Türkey?</l>
+            <p>Bey meinem Bart, sie ist toll! Hier, hier in der Türkey?</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <p> Türkey hin, Türkey her! Weib ist Weib, sie sey wo sie wolle! Sind eure Weiber solche
+            <p>Türkey hin, Türkey her! Weib ist Weib, sie sey wo sie wolle! Sind eure Weiber solche
               Rörrinnen, sich von euch unterjochen zu lassen, desto schlimmer für sie; in Europa
               verstehen sie das Ding besser. Laß mich nur einmal Fuß hier gefaßt haben, sie sollen
               bald anders werden.</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Beym Alla! die wär' im Stande, <pb n="25"/> uns allen die Weiber rebellisch zu
-              machen – Aber –</l>
+            <p>Beym Alla! die wär' im Stande, <pb n="25"/> uns allen die Weiber rebellisch zu machen
+              – Aber –</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <p> Aufs Bitten müßt ihr euch legen, wenn ihr etwas von uns erhalten wollt; besonders
+            <p>Aufs Bitten müßt ihr euch legen, wenn ihr etwas von uns erhalten wollt; besonders
               Liebhaber deines Gelichters. –</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <p> Freylich, wenn ich Pedrillo wär', so eine runde Figur wie er machte, da wär' ich
+            <p>Freylich, wenn ich Pedrillo wär', so eine runde Figur wie er machte, da wär' ich
               vermuthlich willkommen: denn euer Mienenspiel hab' ich lange weg.</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <p> Errathen, guter Alter, errathen! Das kannst du dir wohl einbilden, daß mir der
+            <p>Errathen, guter Alter, errathen! Das kannst du dir wohl einbilden, daß mir der
               hübsche fette Pedrillo lieber ist, wie dein ausgehungertes Gesicht. Also, wenn du klug
               wärst –</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Sollt' ich dir Freyheit geben, zu thun und zu machen, was du wolltest? He?</l>
+            <p>Sollt' ich dir Freyheit geben, zu thun und zu machen, was du wolltest? He?</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <l> Besser würdest du immer dabey fahren: denn so wirst du sicher betrogen!</l>
+            <p>Besser würdest du immer dabey fahren: denn so wirst du sicher betrogen!</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Gift und Dolch! Nun reißt mir die Geduld! Den Augenblick hinein ins Haus! Und wo
-              du's wagst –</l>
+            <p>Gift und Dolch! Nun reißt mir die Geduld! Den Augenblick hinein ins Haus! Und wo du's
+              wagst –</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <l> Mach' mich nicht zu lachen.</l>
+            <p>Mach' mich nicht zu lachen.</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Ins Haus, sag ich!</l>
+            <p>Ins Haus, sag ich!</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <l> Nicht von der Stelle!</l>
+            <p>Nicht von der Stelle!</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Mach' nicht, daß ich Gewalt brauche –</l>
+            <p>Mach' nicht, daß ich Gewalt brauche –</p>
             <pb n="26"/>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <p> Gewalt werd' ich mit Gewalt vertreiben. Meine Gebieterin hat mich hier im Garten
+            <p>Gewalt werd' ich mit Gewalt vertreiben. Meine Gebieterin hat mich hier im Garten
               bestellt; sie ist die Geliebte des Bassa, sein Augapfel, sein Alles; und es kostet mir
               ein Wort, so hast du funfzig auf die Fußsohlen. Also geh –</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
-            <p> Der Henker hole die Engländerinnen! Jetzt muß ich schon tanzen, wie sie pfeift: aber
-              alle Tritt' und Schritte will ich beobachten.<hi> Laut.</hi> Ich gehe: aber wo du eine
-              Miene machst, den Pedrillo zu sprechen –</p>
+            <stage>für sich.</stage>
+            <p>Der Henker hole die Engländerinnen! Jetzt muß ich schon tanzen, wie sie pfeift: aber
+              alle Tritt' und Schritte will ich beobachten. <stage>Laut.</stage> Ich gehe: aber wo
+              du eine Miene machst, den Pedrillo zu sprechen –</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <lg>
-              <l> Fort, fort, fort! da kommt Konstanze.</l>
-            </lg>
-            <stage>
-              <hi>Osmin geht unwillig ab.</hi>
-            </stage>
+            <p>Fort, fort, fort! da kommt Konstanze.</p>
+            <stage>Osmin geht unwillig ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweyter Auftritt.</head>
-          <stage>
-            <hi>Blonde. Konstanze.</hi>
-          </stage>
+          <stage>Blonde. Konstanze.</stage>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <p> Wie traurig das gute Mädchen daher kommt! Freylich thuts weh, den Geliebten zu
+            <p>Wie traurig das gute Mädchen daher kommt! Freylich thuts weh, den Geliebten zu
               verlieren und Sklavin zu seyn. Es geht mir wohl auch nicht viel besser; aber ich habe
               doch noch das Vergnügen, meinen Pedrillo manchmal zu sehen, obs gleich auch mager und
               verstohlen genug geschehen muß: doch wer kann wider den Strom schwimmen? –</p>
-            <pb n="27"/>
+          </sp>
+          <pb n="27"/>
+          <sp who="#constanze">
+            <speaker>CONSTANZE</speaker>
+            <stage>tritt, ohne Blonden zu bemerken, mit folgender Arie auf:</stage>
             <lg>
-              <l>CONSTANZE <hi>tritt, ohne Blonden zu bemerken, mit folgender Arie auf:</hi>
-              </l>
               <l>Traurigkeit ward mir zum Loose,</l>
               <l>Weil ich dir entrissen bin.</l>
               <l>Gleich der wurmzernagten Rose,</l>
@@ -1135,40 +1065,36 @@
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <l> Ach mein bestes Fräulein! noch immer so traurig?</l>
+            <p>Ach mein bestes Fräulein! noch immer so traurig?</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <p> Kannst du fragen, da du meinen Kummer weißt? – Wieder ein Abend, und noch keine
+            <p>Kannst du fragen, da du meinen Kummer weißt? – Wieder ein Abend, und noch keine
               Nachricht, noch keine Hofnung! – Und morgen – ach Gott! ich darf nicht daran
               denken.</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <p> Heitern Sie sich wenigstens ein Bisschen auf. Sehn Sie, wie schön der Abend ist, wie
+            <p>Heitern Sie sich wenigstens ein Bisschen auf. Sehn Sie, wie schön der Abend ist, wie
               blühend uns alles entgegen lacht, wie freudig uns die Vögel zu ihrem Gesang einladen!
               Verbamen Sie die Grillen, und fassen Sie Muth! – – Kommen Sie, lassen Sie uns unsern
                 Rund<pb n="28"/> gesang anstimmen; vielleicht ist die Hülfe nicht mehr weit.</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <l> Wie glücklich bist du Mädchen, bey deinem Schicksale so gelassen zu seyn! O daß ich
-              es auch könnte!</l>
+            <p>Wie glücklich bist du Mädchen, bey deinem Schicksale so gelassen zu seyn! O daß ich
+              es auch könnte!</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <p> Hoffen wir es wenigstens! Aber bestes Fräulein, das Rondo! Sie wissen ja, mit
-              welchem Zauber die Musik aufs Herz wirkt; und es ist ja Ihr Lieblingsstück, so
-              schmelzend, so zärtlich! O ich fange an!</p>
-            <stage>
-              <hi>Rondeau.</hi>
-            </stage>
+            <p>Hoffen wir es wenigstens! Aber bestes Fräulein, das Rondo! Sie wissen ja, mit welchem
+              Zauber die Musik aufs Herz wirkt; und es ist ja Ihr Lieblingsstück, so schmelzend, so
+              zärtlich! O ich fange an!</p>
+            <stage>Rondeau.</stage>
           </sp>
-          <sp who="#konstanze #blonde">
+          <sp who="#constanze #blonde">
             <speaker>KONSTANZE UND BLONDE</speaker>
-            <stage>
-              <hi>zugleich.</hi>
-            </stage>
+            <stage>zugleich.</stage>
             <lg>
               <l>Hofnung, Trösterin im Leiden!</l>
               <l>Du versüßest allen Schmerz;</l>
@@ -1176,7 +1102,7 @@
               <l>Freuden ins gebeugte Herz.</l>
             </lg>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
             <lg>
               <l>Oft im öden Hain verlassen,</l>
@@ -1194,11 +1120,9 @@
               <l>Nur in ferner Dämmrung zeigt.</l>
             </lg>
           </sp>
-          <sp who="#konstanze #blonde">
+          <sp who="#constanze #blonde">
             <speaker>KONSTANZE UND BLONDE</speaker>
-            <stage>
-              <hi>zugleich.</hi>
-            </stage>
+            <stage>zugleich.</stage>
             <lg>
               <l>Hofnung, Trösterin im Leiden!</l>
               <l>Du versüßest allen Schmerz;</l>
@@ -1206,7 +1130,7 @@
               <l>Freuden ins gebeugte Herz.</l>
             </lg>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
             <lg>
               <l>Wenn von Sturm und Nacht umgeben</l>
@@ -1224,11 +1148,9 @@
               <l>Süße Hofnung, dir im Schooß.</l>
             </lg>
           </sp>
-          <sp who="#konstanze #blonde">
+          <sp who="#constanze #blonde">
             <speaker>KONSTANZE UND BLONDE</speaker>
-            <stage>
-              <hi>zugleich.</hi>
-            </stage>
+            <stage>zugleich.</stage>
             <lg>
               <l>Hofnung, Trösterin im Leiden!</l>
               <l>Du versüßest allen Schmerz;</l>
@@ -1239,138 +1161,125 @@
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <p> Nicht wahr, es ist Ihnen nicht mehr so eng ums Herz? – Ach! dort seh ich den Bassa;
+            <p>Nicht wahr, es ist Ihnen nicht mehr so eng ums Herz? – Ach! dort seh ich den Bassa;
               vermuthlich hat er Ihnen was zu sagen –</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <lg>
-              <l> Den Bassa? – Ach ich muß seinen Anblick vermeiden! – Einsame Schatten! seyd ihr
-                meine Tröster!</l>
-            </lg>
-            <stage>
-              <hi>Geht ab.</hi>
-            </stage>
+            <p>Den Bassa? – Ach ich muß seinen Anblick vermeiden! – Einsame Schatten! seyd ihr meine
+              Tröster!</p>
+            <stage>Geht ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <stage>
-            <hi>Blonde. Hernach Pedrillo.</hi>
-          </stage>
+          <stage>Blonde. Hernach Pedrillo.</stage>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <p> Die gute Donna! sie dauert mich herzlich! – Aber ist das nicht Pedrillo, der mir so
+            <p>Die gute Donna! sie dauert mich herzlich! – Aber ist das nicht Pedrillo, der mir so
               geheimnißvoll winkt? – Was muß der mir zu sagen haben?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Bst, Bst! Blondchen, Blondchen! Ist der Weg rein?</l>
+            <p>Bst, Bst! Blondchen, Blondchen! Ist der Weg rein?</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <p> Komm nur, komm! Der Bassa ist wieder zurück. Ich habe eben meinem Alten den Kopf ein
+            <p>Komm nur, komm! Der Bassa ist wieder zurück. Ich habe eben meinem Alten den Kopf ein
               Bischen gewaschen. Was hast du denn?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> O Neuigkeiten, Neuigkeiten, die dich entzücken werden.</l>
+            <p>O Neuigkeiten, Neuigkeiten, die dich entzücken werden.</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <l> Nun? hurtig heraus damit!</l>
+            <p>Nun? hurtig heraus damit!</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Erst, liebes Herzensblondchen, laß <pb n="31"/> dir vor allen Dingen einen recht
+            <p>Erst, liebes Herzensblondchen, laß <pb n="31"/> dir vor allen Dingen einen recht
               herzlichen Kuß geben: du weißt ja, wie gestohlnes Gut schmeckt.</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <l> Pfuy, pfuy! Wenn das deine Neuigkeiten alle sind –</l>
+            <p>Pfuy, pfuy! Wenn das deine Neuigkeiten alle sind –</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Narrchen, mach darum keinen Lärm: der alte spitzbübische Osmin lauert uns sicher auf
-              den Dienst.</l>
+            <p>Narrchen, mach darum keinen Lärm: der alte spitzbübische Osmin lauert uns sicher auf
+              den Dienst.</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <l> Nun? und die Neuigkeiten? –</l>
+            <p>Nun? und die Neuigkeiten? –</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Sind, daß das Ende unsrer Sklaverey vor der Thüre ist. – <hi>Er sieht sich
-                sorgfältig um.</hi> Belmonte, Konstanzens Geliebter, ist angekommen; und ich hab'
+            <p>Sind, daß das Ende unsrer Sklaverey vor der Thüre ist. – <stage>Er sieht sich
+                sorgfältig um.</stage> Belmonte, Konstanzens Geliebter, ist angekommen; und ich hab'
               ihn unter dem Namen eines Baumeisters hier im Palast eingeführt.</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <l> Ah was sagst du? Belmonte da?</l>
+            <p>Ah was sagst du? Belmonte da?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Mit Leib und Seele!</l>
+            <p>Mit Leib und Seele!</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <l> Ha! das muß Konstanze wissen! <hi>Will fort.</hi>
-            </l>
+            <p>Ha! das muß Konstanze wissen! <stage>Will fort.</stage></p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Hör nur Blondchen, hör nur erst: Er hat ein Schiff hier in der Nähe in Bereitschaft,
+            <p>Hör nur Blondchen, hör nur erst: Er hat ein Schiff hier in der Nähe in Bereitschaft,
               und wir haben beschlossen, euch diese Nacht zu entführen.</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <p> O allerliebst, allerliebst! Herzens-Pedrillo! Das verdient einen Kuß. Geschwind,
-              geschwind zu Konstanzen! <hi>Will wieder fort.</hi>
+            <p>O allerliebst, allerliebst! Herzens-Pedrillo! Das verdient einen Kuß. Geschwind,
+              geschwind zu Konstanzen! <stage>Will wieder fort.</stage>
             </p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Halt nur halt, und laß erst mit dir <pb n="32"/> reden. Um Mitternacht kommt
-              Belmonte mit einer Leiter zu Konstanzens Fenster, und ich zu dem deinigen; und dann
-              gehts Heidi davon!</p>
+            <p>Halt nur halt, und laß erst mit dir <pb n="32"/> reden. Um Mitternacht kommt Belmonte
+              mit einer Leiter zu Konstanzens Fenster, und ich zu dem deinigen; und dann gehts Heidi
+              davon!</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <l> O vortreflich! Aber Osmin?</l>
+            <p>O vortreflich! Aber Osmin?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Hier ist ein Schlaftrunk für den alten Schlaukopf, den misch ihm fein manierlich ins
+            <p>Hier ist ein Schlaftrunk für den alten Schlaukopf, den misch ihm fein manierlich ins
               Getränke; verstehst du? Ich habe dort auch schon ein Fläschchen angefüllt. Geht's hier
               nicht, wird's dort wohl gehen.</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <l> Sorg' nicht für mich! – Aber kann Konstanze ihren Geliebten nicht sprechen?</l>
+            <p>Sorg' nicht für mich! – Aber kann Konstanze ihren Geliebten nicht sprechen?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Sobald es vollends finster ist, kommt er hier in Garten. Nun geh' und bereite
+            <p>Sobald es vollends finster ist, kommt er hier in Garten. Nun geh' und bereite
               Konstanzen vor; ich will hier Belmonten erwarten. Leb wohl, Herzchen; leb wohl!</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <lg>
-              <l> Leb wohl, guter Pedrillo! Ach, was werd ich für Freude anrichten!</l>
-            </lg>
-            <stage>
-              <hi>Blonde ab.</hi>
-            </stage>
+            <p>Leb wohl, guter Pedrillo! Ach, was werd ich für Freude anrichten!</p>
+            <stage>Blonde ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
           <sp who="#pedrillo">
             <speaker>PEDRILLO</speaker>
-            <stage>
-              <hi>allein.</hi>
-            </stage>
-            <p> Ah, daß es schon vorbey wäre! daß wir schon auf offner See wären, unsre Mädels im
+            <stage>allein.</stage>
+            <p>Ah, daß es schon vorbey wäre! daß wir schon auf offner See wären, unsre Mädels im
               Arm, und dieß verwünschte Land im Rucken hätten! Doch <pb n="33"/> sey's gewagt;
               entweder itzt oder niemals. Wer zagt, verliert!</p>
             <lg>
@@ -1390,74 +1299,68 @@
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
-          <stage>
-            <hi>Pedrillo. Osmin.</hi>
-          </stage>
+          <stage>Pedrillo. Osmin.</stage>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Ha! Geht's hier so lustig zu? Es muß dir verteufelt wohl gehen.</l>
+            <p>Ha! Geht's hier so lustig zu? Es muß dir verteufelt wohl gehen.</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Ey, wer wird so ein Kopfhänger seyn; es kommt beym Henker da nichts bey heraus: das
+            <p>Ey, wer wird so ein Kopfhänger seyn; es kommt beym Henker da nichts bey heraus: das
               haben die Pedrillos von jeher in ihrer Familie gehabt. Fröhlichkeit und Wein versüßt
               die härteste Sklaverey. Freylich könnt ihr armen Schlucker das nicht begreifen, daß es
               so ein herrlich Ding um ein Gläschen guten alten Lustigmacher ist. Wahrhaftig, da hat
               euer Vater Mahomet einen verzwei<pb n="34"/> felten Bock geschossen, daß er euch den
               Wein verboten hat. Wenn das verwünschte Gesetz nicht wäre, du müßtest ein Gläschen mit
-              mir trinken, du möchtest wollen oder nicht. <hi>Für sich.</hi> Vielleicht beißt er an:
-              er trinkt ihn gar zu gerne.</p>
+              mir trinken, du möchtest wollen oder nicht. <stage>Für sich.</stage> Vielleicht beißt
+              er an: er trinkt ihn gar zu gerne.</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Wein mit dir? Ja Gift –</l>
+            <p>Wein mit dir? Ja Gift –</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Immer Gift und Dolch, und Dolch und Gift! Laß doch den alten Groll einmal fahren und
-              sey vernünftig. Sich einmal, ein Paar Flaschen Cyperwein! – Ah – <hi>Er zeigt ihm zwey
-                Flaschen, wovon die eine größer als die andere ist.</hi> Die sollen mir treflich
-              schmecken!</p>
+            <p>Immer Gift und Dolch, und Dolch und Gift! Laß doch den alten Groll einmal fahren und
+              sey vernünftig. Sich einmal, ein Paar Flaschen Cyperwein! – Ah – <stage>Er zeigt ihm
+                zwey Flaschen, wovon die eine größer als die andere ist.</stage> Die sollen mir
+              treflich schmecken!</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
-            <l> Wenn ich trauen dürfte?</l>
+            <stage>für sich.</stage>
+            <p>Wenn ich trauen dürfte?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Das ist ein Wein! das ist ein Wein! <hi>Er setzt sich nach türkischer Art auf die
-                Erde, und trinkt aus der kleinen Flasche.</hi>
+            <p>Das ist ein Wein! das ist ein Wein! <stage>Er setzt sich nach türkischer Art auf die
+                Erde, und trinkt aus der kleinen Flasche.</stage>
             </p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Kost einmal die große Flasche auch.</l>
+            <p>Kost einmal die große Flasche auch.</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Denkst wohl gar, ich habe Gift hinein gethan? Ha! laß dir keine graue Haare wachsen.
+            <p>Denkst wohl gar, ich habe Gift hinein gethan? Ha! laß dir keine graue Haare wachsen.
               Es verlohnte sich der Mühe, daß ich deinetwegen zum Teufel führe. Da sieh, ob ich
-              trinke. <hi>Er trinkt aus der großen Flasche ein Wenig.</hi> Nun hast du noch
-              Bedenken? tran'st mir noch nicht? Pfuy, Osmin! sollt'st dich schämen – Da nimm! <hi>Er
-                giebt ihm die große Flasche.</hi> Oder willst du die kleine?</p>
+              trinke. <stage>Er trinkt aus der großen Flasche ein Wenig.</stage> Nun hast du noch
+              Bedenken? tran'st mir noch nicht? Pfuy, Osmin! sollt'st dich schämen – Da nimm!
+                <stage>Er giebt ihm die große Flasche.</stage> Oder willst du die kleine?</p>
             <pb n="35"/>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Nein laß nur, laß nur! Aber wenn du mich verräthst. – <hi>Sieht sich sorgfältig
-                um.</hi>
-            </l>
+            <p>Nein laß nur, laß nur! Aber wenn du mich verräthst. – <stage>Sieht sich sorgfältig
+                um.</stage>
+            </p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Als wenn wir einander nicht weiter brauchten. Immer frisch! Mahomet liegt längst
-              aufm Ohr, und hat nöthiger zu thun, als sich um deine Flasche Wein zu bekümmern.</p>
-            <stage>
-              <hi>Duett.</hi>
-            </stage>
+            <p>Als wenn wir einander nicht weiter brauchten. Immer frisch! Mahomet liegt längst aufm
+              Ohr, und hat nöthiger zu thun, als sich um deine Flasche Wein zu bekümmern.</p>
+            <stage>Duett.</stage>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
@@ -1492,7 +1395,7 @@
               <pb n="36"/>
             </lg>
           </sp>
-          <sp who="#beide">
+          <sp who="#pedrillo #osmin">
             <speaker>BEIDE.</speaker>
             <lg>
               <l>Es leben die Mädchen,</l>
@@ -1508,7 +1411,7 @@
             <speaker>OSMIN.</speaker>
             <l>Das schmeckt herrlich!</l>
           </sp>
-          <sp who="#beide">
+          <sp who="#pedrillo #osmin">
             <speaker>BEIDE.</speaker>
             <lg>
               <l>Ah! das heiß ich Göttertrank!</l>
@@ -1519,163 +1422,139 @@
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Wahrhaftig, das muß ich gestehen, es geht doch nichts über den Wein! Wein ist mir
+            <p>Wahrhaftig, das muß ich gestehen, es geht doch nichts über den Wein! Wein ist mir
               lieber, als Geld und Mädchen. Bin ich verdrüßlich, mürrisch, launisch: hurtig nehm'
               ich meine Zuflucht zur Flasche; und kaum seh' ich den ersten Boden: weg ist alle mein
               Verdruß! – Meine Flasche macht mir kein schiefes Gesicht, wie mein Mädchen, wenn ihr
               der Kopf nicht auf dem rechten Flecke steht; und schwatzt mir von Süßigkeit der <pb
                 n="37"/> Liebe und des Ehestands, was ihr wollt: Wein auf der Zunge geht über
               alles!</p>
-            <stage>
-              <hi>Osmin fängt bereits an die Wirkung des Weins und des Schlaftrunks zu spüren, und
-                wird bis zu Ende des Auftritts immer schläfriger und träger, doch darfs der
-                Schauspieler nicht übertreiben, und muß nur immer halb träumend und schlaftrunken
-                bleiben.</hi>
-            </stage>
+            <stage>Osmin fängt bereits an die Wirkung des Weins und des Schlaftrunks zu spüren, und
+              wird bis zu Ende des Auftritts immer schläfriger und träger, doch darfs der
+              Schauspieler nicht übertreiben, und muß nur immer halb träumend und schlaftrunken
+              bleiben.</stage>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <p> Das ist wahr – Wein – Wein – ist ein schönes Getränke; und unser großer – Prophet
-              mag mirs nicht übel nehmen – – Gift und Dolch! es ist doch eine hübsche Sache um den
-              Wein! – Nicht – – Bruder Pedrillo?</p>
+            <p>Das ist wahr – Wein – Wein – ist ein schönes Getränke; und unser großer – Prophet mag
+              mirs nicht übel nehmen – – Gift und Dolch! es ist doch eine hübsche Sache um den Wein!
+              – Nicht – – Bruder Pedrillo?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Richtig, Bruder Osmin, richtig!</l>
+            <p>Richtig, Bruder Osmin, richtig!</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <p> Man wird gleich so – munter <hi>Er nickt zuweilen.</hi> so vergnügt – so aufgeräumt
-              – – Hast du nichts mehr, Bruder?</p>
-            <stage>
-              <hi>Er langt auf eine lächerliche Art nach einer zwoten Flasche, die Pedrillo ihm
-                reicht.</hi>
-            </stage>
+            <p>Man wird gleich so – munter <stage>Er nickt zuweilen.</stage> so vergnügt – so
+              aufgeräumt – – Hast du nichts mehr, Bruder?</p>
+            <stage>Er langt auf eine lächerliche Art nach einer zwoten Flasche, die Pedrillo ihm
+              reicht.</stage>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Hör du, Alter: trink mir nicht zu viel; es kommt einem im Kopf.</l>
+            <p>Hör du, Alter: trink mir nicht zu viel; es kommt einem im Kopf.</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <p> Trag doch keine – Sorge, ich bin <pb n="38"/> ja – so – nüchtern wie möglich – Aber
-              das ist wahr – <hi>Er fängt an, auf die Erde bin und her zu wanken.</hi> es schmeckt –
-              – vortreflich! –</p>
+            <p>Trag doch keine – Sorge, ich bin <pb n="38"/> ja – so – nüchtern wie möglich – Aber
+              das ist wahr – <stage>Er fängt an, auf die Erde bin und her zu wanken.</stage> es
+              schmeckt – – vortreflich! –</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
-            <l> Es wirkt, Alter; es wirkt!</l>
+            <stage>für sich.</stage>
+            <p>Es wirkt, Alter; es wirkt!</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <p> Aber verrathen mußt du mich nicht – Brüderchen – verrathen – denn – wenns Mahomet –
-              – nein, nein – der Bassa wüßte – – denn siehst du – – – liebes Blondchen – – ja oder
+            <p>Aber verrathen mußt du mich nicht – Brüderchen – verrathen – denn – wenns Mahomet – –
+              nein, nein – der Bassa wüßte – – denn siehst du – – – liebes Blondchen – – ja oder
               nein! – –.</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
-            <lg>
-              <l> Nun wirds Zeit, ihn fortzuschaffen! <hi>Laut.</hi> Nun komm, Alter, komm, wir
-                wollen schlafen gehn!</l>
-            </lg>
-            <stage>
-              <hi>Er hebt ihn auf.</hi>
-            </stage>
+            <stage>für sich.</stage>
+            <p>Nun wirds Zeit, ihn fortzuschaffen! <stage>Laut.</stage> Nun komm, Alter, komm, wir
+              wollen schlafen gehn!</p>
+            <stage>Er hebt ihn auf.</stage>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <p> Schlafen? – Schämst du dich nicht? – – Gift und Dolch! Wer wird denn so schläfrig
+            <p>Schlafen? – Schämst du dich nicht? – – Gift und Dolch! Wer wird denn so schläfrig
               seyn – es ist ja kaum Morgen –</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Ho ho, die Sonne ist schon hinunter! – Komm, komm, daß uns der Bassa nicht
-              überrascht!</l>
+            <p>Ho ho, die Sonne ist schon hinunter! – Komm, komm, daß uns der Bassa nicht
+              überrascht!</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN</speaker>
-            <stage>
-              <hi>im Abführen.</hi>
-            </stage>
-            <p> Ja, ja, – – eine Flasche – guter – Bassa – geht über – – alles! – Gute Nacht – –
+            <stage>im Abführen.</stage>
+            <p>Ja, ja, – – eine Flasche – guter – Bassa – geht über – – alles! – Gute Nacht – –
               Brüderchen – gute Nacht –</p>
-            <stage>
-              <hi>Pedrillo führt ihn hinein, kemmt aber gleich wieder zurück.</hi>
-            </stage>
+            <stage>Pedrillo führt ihn hinein, kemmt aber gleich wieder zurück.</stage>
             <pb n="39"/>
           </sp>
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <stage>
-            <hi>Pedrillo. Hernach Belmonte. Konstanze. Blonde.</hi>
-          </stage>
+          <stage>Pedrillo. Hernach Belmonte. Konstanze. Blonde.</stage>
           <sp who="#pedrillo">
             <speaker>PEDRILLO</speaker>
-            <stage>
-              <hi>machts Osmin nach.</hi>
-            </stage>
-            <p> Gute Nacht – Brüderchen – gute Nacht! Hahahaha, alter Eisenfresser! erwischt man
-              dich so? Gift und Dolch! – Du hast deine Ladung! Nur fürcht' ich, ists noch zu zeitig
-              am Tage; bis Mitternacht sind noch drey Stunden, und da könnt er leicht wieder
+            <stage>machts Osmin nach.</stage>
+            <p>Gute Nacht – Brüderchen – gute Nacht! Hahahaha, alter Eisenfresser! erwischt man dich
+              so? Gift und Dolch! – Du hast deine Ladung! Nur fürcht' ich, ists noch zu zeitig am
+              Tage; bis Mitternacht sind noch drey Stunden, und da könnt er leicht wieder
               ausgeschlafen haben. – – Ach! kommen Sie, kommen Sie, liebster Herr! Unser Argus ist
               blind; ich hab ihn tüchtig zugedeckt.</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> O daß wir glücklich wären! – Aber sag: ist Konstanze noch nicht hier?</l>
+            <p>O daß wir glücklich wären! – Aber sag: ist Konstanze noch nicht hier?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Eben kommt sie da den Gang herauf. Reden Sie alles mit ihr ab. aber fassen Sie sich
+            <p>Eben kommt sie da den Gang herauf. Reden Sie alles mit ihr ab. aber fassen Sie sich
               kurz; denn der Verrärher schläft nicht immer.</p>
-            <stage>
-              <hi>Währender Unterredung des Belmonde mit Konstanzen, unterhält sich Pedrillo mit
-                Blonden, der er durch Pantomime den ganzen Auftritt mit dem Osmin vormacht, und
-                jenen nachahmt; zuletzt unterrichtet er sie ebenfalls, daß er um Mitter<pb n="40"/>
-                nacht mit einer Leiter unter ihr Fenster kommen wolle, um sie zu entführen.</hi>
-            </stage>
-            <stage>
-              <hi>Einander im Arm.</hi>
-            </stage>
+            <stage>Währender Unterredung des Belmonde mit Konstanzen, unterhält sich Pedrillo mit
+              Blonden, der er durch Pantomime den ganzen Auftritt mit dem Osmin vormacht, und jenen
+              nachahmt; zuletzt unterrichtet er sie ebenfalls, daß er um Mitter<pb n="40"/> nacht
+              mit einer Leiter unter ihr Fenster kommen wolle, um sie zu entführen.</stage>
+            <stage>Einander im Arm.</stage>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <l> O mein Belmonte!</l>
+            <p>O mein Belmonte!</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> O Konstanze!</l>
+            <p>O Konstanze!</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <p> Ists möglich? – Nach so viel Tagen der Angst, nach so viel ausgestandenen Leiden,
+            <p>Ists möglich? – Nach so viel Tagen der Angst, nach so viel ausgestandenen Leiden,
               dich wieder in meinen Armen –</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> O dieser Augenblick versüßt allen Kummer, macht mich all meinen Schmerz vergessen
-              –</l>
+            <p>O dieser Augenblick versüßt allen Kummer, macht mich all meinen Schmerz vergessen
+              –</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <p> Hier will ich an deinem Busen liegen und weinen! – Ach, jetzt fühl ichs: die Freude
+            <p>Hier will ich an deinem Busen liegen und weinen! – Ach, jetzt fühl ichs: die Freude
               hat auch ihre Thränen!</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <p> Laß mich sie hinweg küssen diese Thränen; o daß es die letzten wären! – Aber,
+            <p>Laß mich sie hinweg küssen diese Thränen; o daß es die letzten wären! – Aber,
               Konstanze, ists wahr? Du bist die Geliebte des Bassa? –</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <p> Wie, Belmonte? Konntest du glauben, daß deine Konstanze jemals untreu werden könnte?
+            <p>Wie, Belmonte? Konntest du glauben, daß deine Konstanze jemals untreu werden könnte?
               Traust du einem Mädchen nicht mehr Treue und Standhaftigkeit zu? – Wie viel Nächte
               hab' ich schlaflos auf meinem Lager durchwacht, wie viel Seufzer für dich zum Himmel
               geschickt – Ha! rief ich aus: Gütiger Himmel! erhalte nur meinen <pb n="41"/>
@@ -1684,28 +1563,28 @@
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <p> O verzeih, Konstanze, verzeih dem mißtranischen Liebhaber. Du weißt ja: Unglück
-              macht mißtrauisch. Mit diesem Kuß empfange meine Gelübde aufs Neue, ewig, ewig der
-              Deinige zu seyn! – – Und nun zu unserm Vorhaben: Ich hab hier ein Schiff in
-              Bereitschaft; um Mitternacht, wenn alles schläft, komm ich an dein Fenster; und dann
-              sey die Liebe unser Schutzengel!</p>
+            <p>O verzeih, Konstanze, verzeih dem mißtranischen Liebhaber. Du weißt ja: Unglück macht
+              mißtrauisch. Mit diesem Kuß empfange meine Gelübde aufs Neue, ewig, ewig der Deinige
+              zu seyn! – – Und nun zu unserm Vorhaben: Ich hab hier ein Schiff in Bereitschaft; um
+              Mitternacht, wenn alles schläft, komm ich an dein Fenster; und dann sey die Liebe
+              unser Schutzengel!</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <l> Mit tausend Freuden! Was wollt ich nicht mit dir wagen? Ich erwarte dich –</l>
+            <p>Mit tausend Freuden! Was wollt ich nicht mit dir wagen? Ich erwarte dich –</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Also, liebes Blondchen, paß ja hübsch auf, hörst du's?</l>
+            <p>Also, liebes Blondchen, paß ja hübsch auf, hörst du's?</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <l> Sorge für mich nicht. Das wär das erste Abentheuer, das ein Mädchen verschlafen
-              hätte.</l>
+            <p>Sorge für mich nicht. Das wär das erste Abentheuer, das ein Mädchen verschlafen
+              hätte.</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Du wirst's schon merken, wenn du so was Gesungenes hörst, wie's so meine Art des
+            <p>Du wirst's schon merken, wenn du so was Gesungenes hörst, wie's so meine Art des
               Abends immer ist; dann paß auf, und dann mit einem Sprung ins Schiff! – Nur hübsch
               Muth gefaßt, und nicht verzagt: Wer alles zu verlieren hat, muß alles wagen!</p>
             <lg>
@@ -1733,7 +1612,7 @@
               <l>Wär' schon ein süßer Lohn.</l>
             </lg>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
             <lg>
               <l>Was acht ich die Gefahren!</l>
@@ -1742,7 +1621,7 @@
               <l>Wär' für mich süßer Lohn.</l>
             </lg>
           </sp>
-          <sp who="#alle_zugleich">
+          <sp who="#pedrillo #belmonte #constanze #blonde">
             <speaker>ALLE ZUGLEICH.</speaker>
             <lg>
               <l>Wie bebt das Herz vor Freuden!</l>
@@ -1755,112 +1634,96 @@
         </div>
       </div>
       <div type="act">
-        <head>3. Akt</head>
+        <head>Dritter Akt.</head>
+        <stage>Platz vor dem Palaste des Bassa Selim; auf einer Seite der Palast des Bassa; gegen
+          über die Wohnung des Osmin; hinten Aussicht aufs Meer.</stage>
+        <stage>Es ist Mitternacht.</stage>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Pedrillo. Klaas, der eine Leiter bringt.</hi>
-          </stage>
+          <stage>Pedrillo. Klaas, der eine Leiter bringt.</stage>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Hier lieber Klaas, hier leg sie indeß nur nieder, und hole die zwote vom Schiff.
-              Aber nur hübsch leise, daß nicht viel Lerm gemacht wird: es geht hier auf Tod und
+            <p>Hier lieber Klaas, hier leg sie indeß nur nieder, und hole die zwote vom Schiff. Aber
+              nur hübsch leise, daß nicht viel Lerm gemacht wird: es geht hier auf Tod und
               Leben.</p>
           </sp>
           <sp who="#klaas">
             <speaker>KLAAS.</speaker>
-            <l> Laht mik man mahken 'k versteh hen Snack ohk en Bätken, wenn wir se man erst am
-              Bohrd hebben.</l>
+            <p>Laht mik man mahken 'k versteh hen Snack ohk en Bätken, wenn wir se man erst am Bohrd
+              hebben.</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Ach lieber Klaas! wenn wir mit unsrer Beute glücklich nach Spanien kommen: ich
+            <p>Ach lieber Klaas! wenn wir mit unsrer Beute glücklich nach Spanien kommen: ich
               glaube, Don Belmonte läßt dich in Golde einfassen.</p>
             <pb n="44"/>
           </sp>
           <sp who="#klaas">
             <speaker>KLAAS.</speaker>
-            <p> Dat müßt' woll ehn Bätken toh wahrm op het Fell gahn, mahkt nischt uht, wörd sik
-              woll geben. Ick hole de Ledder. <hi>Geht ab.</hi>
+            <p>Dat müßt' woll ehn Bätken toh wahrm op het Fell gahn, mahkt nischt uht, wörd sik woll
+              geben. Ick hole de Ledder. <stage>Geht ab.</stage>
             </p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Ach! wenn ich sagen sollte, daß mirs Herz nicht klopfte, so sagt' ich eine
+            <p>Ach! wenn ich sagen sollte, daß mirs Herz nicht klopfte, so sagt' ich eine
               schreckliche Lügen. Die verzweifelten Türken verstehn nicht den mindesten Spaß; und ob
               der Bassa gleich ein Renegat ist, so ist er, wenns aufs Kopf ab ankommt, doch ein
-              völliger Türke. <hi>Klaas bringt die zwote Leiter.</hi> So, guter Klaas, und nun
+              völliger Türke. <stage>Klaas bringt die zwote Leiter.</stage> So, guter Klaas, und nun
               lichte die Anker, und spann alle Segel auf: denn eh eine halbe Stunde vergeht, hast du
               deine völlige Ladung.</p>
           </sp>
           <sp who="#klaas">
             <speaker>KLAAS.</speaker>
-            <lg>
-              <l> Bring sie nohr hastig, und dann lahr mick sorgen.</l>
-            </lg>
-            <stage>
-              <hi>Geht ab.</hi>
-            </stage>
+            <p>Bring sie nohr hastig, und dann lahr mick sorgen.</p>
+            <stage>Geht ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweyter Auftritt.</head>
-          <stage>
-            <hi>Belmonte. Pedrillo.</hi>
-          </stage>
+          <stage>Belmonte. Pedrillo.</stage>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Ach! – ich muß Athem holen – Es zieht mir's Herz so eng zusammen, als wenn ichs
+            <p>Ach! – ich muß Athem holen – Es zieht mir's Herz so eng zusammen, als wenn ichs
               größte Schelmstück vorhätte – – Ach wo mein Herr auch bleibt! –</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE</speaker>
-            <stage>
-              <hi>ruft leise.</hi>
-            </stage>
-            <l> Pedrillo! Pedrillo!</l>
+            <stage>ruft leise.</stage>
+            <p>Pedrillo! Pedrillo!</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Wie gerufen!</l>
+            <p>Wie gerufen!</p>
             <pb n="45"/>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Ist alles fertig gemacht?</l>
+            <p>Ist alles fertig gemacht?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <p> Alles! Jetzt will ich ein wenig um den Palast herum spioniren, wie's aussieht.
-              Nehmen Sie indessen hier die Mandoline, und spielen Sie eins. Ich hab das so alle
-              Abende gethan; und wenn Sie da auch jemand gewahr wird, oder begegnet: denn alle
-              Stunden macht hier eine Janitscharenwache die Runde; so hats nichts zu bedeuten, sie
-              sind das von mir schon gewohnt; es ist fast besser, als wenn man Sie so stille hier
-              fände.</p>
+            <p>Alles! Jetzt will ich ein wenig um den Palast herum spioniren, wie's aussieht. Nehmen
+              Sie indessen hier die Mandoline, und spielen Sie eins. Ich hab das so alle Abende
+              gethan; und wenn Sie da auch jemand gewahr wird, oder begegnet: denn alle Stunden
+              macht hier eine Janitscharenwache die Runde; so hats nichts zu bedeuten, sie sind das
+              von mir schon gewohnt; es ist fast besser, als wenn man Sie so stille hier fände.</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <lg>
-              <l> Laß mich nur machen, und komm bald wieder.</l>
-            </lg>
-            <stage>
-              <hi>Pedrillo geht ab.</hi>
-            </stage>
+            <p>Laß mich nur machen, und komm bald wieder.</p>
+            <stage>Pedrillo geht ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
           <sp who="#belmonte">
             <speaker>BELMONTE</speaker>
-            <stage>
-              <hi>allein.</hi>
-            </stage>
-            <p> O Konstanze, Konstanze! wie schlägt mir das Herz! Je näher der Augenblick kommt,
+            <stage>allein.</stage>
+            <p>O Konstanze, Konstanze! wie schlägt mir das Herz! Je näher der Augenblick kommt,
               desto ängstlicher zagt meine Seele; ich fürchte und wünsche, lebe und hoffe. O Liebe,
               sey du meine Leiterin!</p>
-            <stage>
-              <hi>Er singt und accompagnirt die Mandoline dazu.</hi>
-            </stage>
+            <stage>Er singt und accompagnirt die Mandoline dazu.</stage>
             <lg>
               <l>Welch ängstliches Beben,</l>
               <l>Welch sehnliches Streben,</l>
@@ -1879,9 +1742,7 @@
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <stage>
-            <hi>Pedrillo. Belmonte.</hi>
-          </stage>
+          <stage>Pedrillo. Belmonte.</stage>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
             <lg>
@@ -1950,18 +1811,14 @@
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
             <l>Lieber Herr, das kann nicht seyn.</l>
-            <stage>
-              <hi>Sieht nach der Uhr.</hi>
-            </stage>
+            <stage>Sieht nach der Uhr.</stage>
             <lg>
               <l>Ha! just ist es Mitternacht,</l>
               <l>Stellen Sie sich auf die Wacht</l>
               <l>Dort im Rosmaringesträuche,</l>
               <l>Damit Niemand uns beschleiche.</l>
             </lg>
-            <stage>
-              <hi>Belmonte entfernt sich.</hi>
-            </stage>
+            <stage>Belmonte entfernt sich.</stage>
             <lg>
               <l>Nun, du liebe Mutter Nacht!</l>
               <l>Nimm mich unter deinen Mantel,</l>
@@ -1971,16 +1828,12 @@
               <l>Gieng es an ein Stranguliren,</l>
               <l>Hälf gar kein Kapituliren.</l>
             </lg>
-            <stage>
-              <hi>Er lauscht.</hi>
-            </stage>
+            <stage>Er lauscht.</stage>
             <lg>
               <l>O weh! o weh!</l>
               <l>Was rührt sich da?</l>
             </lg>
-            <stage>
-              <hi>Belmonte nähert sich.</hi>
-            </stage>
+            <stage>Belmonte nähert sich.</stage>
             <l>O mach geschwind!</l>
           </sp>
           <sp who="#pedrillo">
@@ -2016,15 +1869,9 @@
             <lg>
               <l>Vorsicht ist nöthig: nun hör ich nichts mehr.</l>
             </lg>
-            <stage>
-              <hi>Romanze.</hi>
-            </stage>
-            <stage>
-              <hi>Er accompagnirt sich zugleich auf der Mandoline.</hi>
-            </stage>
-            <stage>
-              <hi>1.</hi>
-            </stage>
+            <stage>Romanze.</stage>
+            <stage>Er accompagnirt sich zugleich auf der Mandoline.</stage>
+            <stage>1.</stage>
             <lg>
               <l>In Mohrenland gefangen war,</l>
               <l>Ein Mädel hübsch und fein;</l>
@@ -2032,9 +1879,7 @@
               <l>Seufzt Tag und Nacht und weinte gar;</l>
               <l>Wollt' gern erlöset seyn.</l>
             </lg>
-            <stage>
-              <hi>2.</hi>
-            </stage>
+            <stage>2.</stage>
             <lg>
               <l>Da kam aus fernem Land daher,</l>
               <l>Ein junger Rittersmann;</l>
@@ -2053,15 +1898,11 @@
             <lg>
               <l>Nur auf der Hut!</l>
             </lg>
-            <stage>
-              <hi>Belmonte entfernt sich wieder.</hi>
-            </stage>
+            <stage>Belmonte entfernt sich wieder.</stage>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <stage>
-              <hi>3.</hi>
-            </stage>
+            <stage>3.</stage>
             <lg>
               <l>Ich komm zu dir in finstrer Nacht,</l>
               <l>Laß, Liebchen, husch mich ein!</l>
@@ -2069,9 +1910,7 @@
               <l>Holla! horch auf! um Mitternacht,</l>
               <l>Sollst du erlöset seyn.</l>
             </lg>
-            <stage>
-              <hi>4.</hi>
-            </stage>
+            <stage>4.</stage>
             <lg>
               <l>Gesagt, gethan; Glock zwölfe stand</l>
               <l>Der tapfre Ritter da;</l>
@@ -2079,27 +1918,21 @@
               <l>Fruh man die leere Zelle fand;</l>
               <l>Fort war sie, hopsasa!</l>
             </lg>
-            <stage>
-              <hi>Pedrillo hustet einigemal, Konstanze öfnet das Fenster.</hi>
-            </stage>
+            <stage>Pedrillo hustet einigemal, Konstanze öfnet das Fenster.</stage>
             <pb n="51"/>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
             <l>Sie öfnet, sie öfnet!</l>
-            <stage>
-              <hi>Winkt Belmonte.</hi>
-            </stage>
+            <stage>Winkt Belmonte.</stage>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
             <l>Ich komme, ich komme!</l>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE</speaker>
-            <stage>
-              <hi>am Fenster.</hi>
-            </stage>
+            <stage>am Fenster.</stage>
             <l>Belmonte, Belmonte!</l>
           </sp>
           <sp who="#belmonte">
@@ -2107,10 +1940,8 @@
             <lg>
               <l>Konstanze, Konstanze!</l>
             </lg>
-            <stage>
-              <hi>Pedrillo stellt die Leiter an Konstanzens Fenster, Belmonte steigt hinein;
-                Pedrillo hält die Leiter.</hi>
-            </stage>
+            <stage>Pedrillo stellt die Leiter an Konstanzens Fenster, Belmonte steigt hinein;
+              Pedrillo hält die Leiter.</stage>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
@@ -2121,9 +1952,7 @@
               <l>Wie dem Stehler,</l>
               <l>Wär das bischen Kopf dahin.</l>
             </lg>
-            <stage>
-              <hi>Belmonte kommt mit Konstanzen unten zur Thüre heraus.</hi>
-            </stage>
+            <stage>Belmonte kommt mit Konstanzen unten zur Thüre heraus.</stage>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
@@ -2133,7 +1962,7 @@
               <pb n="52"/>
             </lg>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
             <lg>
               <l>Zagend und ängstlich</l>
@@ -2146,34 +1975,26 @@
               <l>Frisch nach dem Strande!</l>
               <l>Ich folge gleich.</l>
             </lg>
-            <stage>
-              <hi>Belmonte und Konstanze ab.</hi>
-            </stage>
+            <stage>Belmonte und Konstanze ab.</stage>
             <lg>
               <l>Lieber Kupido,</l>
               <l>Halt mir die Leiter!</l>
             </lg>
-            <stage>
-              <hi>Er steigt an Blondens Fenster.</hi>
-            </stage>
+            <stage>Er steigt an Blondens Fenster.</stage>
             <lg>
               <l>Blondgen, ach Blondgen!</l>
               <l>Oeffne das Fenster,</l>
               <l>Hurtig mach auf!</l>
             </lg>
-            <stage>
-              <hi>Das Fenster wird geöfnet, er steigt hinein.</hi>
-            </stage>
+            <stage>Das Fenster wird geöfnet, er steigt hinein.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
-          <stage>
-            <hi>Osmin und ein schwarzer Stummer öfnen die Thüre von Osmins Hause, wo Pedrillo
-              hineingestiegen ist. Osmin noch halb schlaftrunken hat eine Laterne. Der Stumme giebt
-              Osmin durch Zeichen zu verstehen, daß es nicht richtig sey; daß er Leute gehört habe,
-              u. s. w.</hi>
-          </stage>
+          <stage>Osmin und ein schwarzer Stummer öfnen die Thüre von Osmins Hause, wo Pedrillo
+            hineingestiegen ist. Osmin noch halb schlaftrunken hat eine Laterne. Der Stumme giebt
+            Osmin durch Zeichen zu verstehen, daß es nicht richtig sey; daß er Leute gehört habe, u.
+            s. w.</stage>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
             <lg>
@@ -2184,11 +2005,9 @@
               <l>Spionire</l>
               <l>Hurtig, hurtig sie mir aus!</l>
             </lg>
-            <stage>
-              <hi>Der Stumme lauscht ein wenig herum; endlich wird er die Leiter an Osmins Fenster
-                gewahr, erschrickt und zeigt sie Osmin, der wie im Taumel mit der Laterne in der
-                Hand an seine Hausthüre gelehnt, steht und nickt.</hi>
-            </stage>
+            <stage>Der Stumme lauscht ein wenig herum; endlich wird er die Leiter an Osmins Fenster
+              gewahr, erschrickt und zeigt sie Osmin, der wie im Taumel mit der Laterne in der Hand
+              an seine Hausthüre gelehnt, steht und nickt.</stage>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
@@ -2197,10 +2016,8 @@
               <l>O man hat mir Tod geschworen:</l>
               <l>Ach, man steigt mir gar ins Haus!</l>
             </lg>
-            <stage>
-              <hi>Er tummelt sich herum: weil er aber noch halb schlaftrunken ist, stößt er sich
-                hier und da etc.</hi>
-            </stage>
+            <stage>Er tummelt sich herum: weil er aber noch halb schlaftrunken ist, stößt er sich
+              hier und da etc.</stage>
             <lg>
               <l>O weh! o weh!</l>
               <l>Hurtig die Wache!</l>
@@ -2210,15 +2027,11 @@
               <l>Komm dann bald wieder,</l>
               <l>Schlag alles todt!</l>
             </lg>
-            <stage>
-              <hi>Der Stumme ab.</hi>
-            </stage>
-            <stage>
-              <hi><pb n="54"/> Osmin setzt sich auf die Leiter mit der Laterne in der Hand und nickt
-                ein. Pedrillo kommt rückwärts wieder zum Fenster herausgestiegen, und will die
-                Leiter wieder herunter. Blonde oben am Fenster wird Osmin gewahr und ruft Pedrillo
-                zu:</hi>
-            </stage>
+            <stage>Der Stumme ab.</stage>
+            <stage><pb n="54"/> Osmin setzt sich auf die Leiter mit der Laterne in der Hand und
+              nickt ein. Pedrillo kommt rückwärts wieder zum Fenster herausgestiegen, und will die
+              Leiter wieder herunter. Blonde oben am Fenster wird Osmin gewahr und ruft Pedrillo
+              zu:</stage>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
@@ -2226,26 +2039,24 @@
               <l>Himmel, Pedrillo!</l>
               <l>Wir sind verloren.</l>
             </lg>
-            <stage>
-              <hi>Pedrillo sieht sich um, und so wie er Osmin gewahr wird, stutzt er, besieht ihn
-                und steigt wieder zum Fenster hinein.</hi>
-            </stage>
+            <stage>Pedrillo sieht sich um, und so wie er Osmin gewahr wird, stutzt er, besieht ihn
+              und steigt wieder zum Fenster hinein.</stage>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
             <lg>
               <l>Ah! welcher Teufel</l>
               <l>Hat sich verschworen.</l>
-              <l>OSMIN <hi>auf der Leiter dem Pedrillo nach; ruft:</hi>
-              </l>
-              <l>Blonde! Blonde!</l>
             </lg>
+          </sp>
+          <sp who="#osmin">
+            <speaker>OSMIN</speaker>
+            <stage>auf der Leiter dem Pedrillo nach; ruft:</stage>
+            <l>Blonde! Blonde!</l>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO</speaker>
-            <stage>
-              <hi>im Hineinsteigen zu Blonden.</hi>
-            </stage>
+            <stage>im Hineinsteigen zu Blonden.</stage>
             <l>Zurück, nur zurück!</l>
           </sp>
           <sp who="#osmin">
@@ -2259,9 +2070,7 @@
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN</speaker>
-            <stage>
-              <hi>steigt wieder zurück.</hi>
-            </stage>
+            <stage>steigt wieder zurück.</stage>
             <lg>
               <l>Welch ein Getöse! –</l>
               <l>Welch ein Geräusche! –</l>
@@ -2270,16 +2079,12 @@
               <l>Hurtig, Soldaten,</l>
               <l>Kommt eilig herbey;</l>
             </lg>
-            <stage>
-              <hi>Pedrillo kommt mit Blonden unten zur Hausthüre heraus, sieht schüchtern nach der
-                Leiter, und schleicht sich dann mit Blonden darunter weg.</hi>
-            </stage>
+            <stage>Pedrillo kommt mit Blonden unten zur Hausthüre heraus, sieht schüchtern nach der
+              Leiter, und schleicht sich dann mit Blonden darunter weg.</stage>
           </sp>
           <sp who="#pedrillo #blonde">
             <speaker>PEDRILLO UND BLONDE</speaker>
-            <stage>
-              <hi>im Abgehen.</hi>
-            </stage>
+            <stage>im Abgehen.</stage>
             <lg>
               <l>Himmel, o Himmel,</l>
               <l>Wären wir frey!</l>
@@ -2287,22 +2092,16 @@
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN</speaker>
-            <stage>
-              <hi>der sie bemerkt.</hi>
-            </stage>
+            <stage>der sie bemerkt.</stage>
             <lg>
               <l>Zu Hülfe! zu Hülfe!</l>
               <l>Gewalt! Gewalt!</l>
             </lg>
-            <stage>
-              <hi>Er will nach.</hi>
-            </stage>
+            <stage>Er will nach.</stage>
           </sp>
           <sp who="#wache">
             <speaker>WACHE</speaker>
-            <stage>
-              <hi>mit Fackeln halten Osmin an.</hi>
-            </stage>
+            <stage>mit Fackeln halten Osmin an.</stage>
             <l>Halt, halt!</l>
           </sp>
           <sp who="#osmin">
@@ -2323,9 +2122,7 @@
             <lg>
               <l>Du sollst nicht davon.</l>
             </lg>
-            <stage>
-              <hi>Sie wollen ihn fortführen.</hi>
-            </stage>
+            <stage>Sie wollen ihn fortführen.</stage>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
@@ -2341,12 +2138,12 @@
           </sp>
           <sp who="#wache">
             <speaker>WACHE.</speaker>
-            <lg>
-              <l>Ey seht doch!</l>
-              <l>OSMIN, <hi>der sich immer loszumachen sucht.</hi>
-              </l>
-              <l>Dorthin, ihr Herren!</l>
-            </lg>
+            <l>Ey seht doch!</l>
+          </sp>
+          <sp who="#osmin">
+            <speaker>OSMIN</speaker>
+            <stage>der sich immer loszumachen sucht.</stage>
+            <l>Dorthin, ihr Herren!</l>
           </sp>
           <sp who="#wache">
             <speaker>WACHE.</speaker>
@@ -2361,9 +2158,7 @@
             <lg>
               <l>Du sollst nicht davon!</l>
             </lg>
-            <stage>
-              <hi>Sie wollen wieder fort mit ihm.</hi>
-            </stage>
+            <stage>Sie wollen wieder fort mit ihm.</stage>
             <pb n="57"/>
           </sp>
           <sp who="#osmin">
@@ -2375,23 +2170,17 @@
             <lg>
               <l>Halt! Halt!</l>
             </lg>
-            <stage>
-              <hi>Der Stumme kommt zurück.</hi>
-            </stage>
+            <stage>Der Stumme kommt zurück.</stage>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN</speaker>
-            <stage>
-              <hi>zum Stummen.</hi>
-            </stage>
+            <stage>zum Stummen.</stage>
             <lg>
               <l>Ali komm doch und bedeute,</l>
               <l>Diese unverschämten Leute</l>
               <l>Schleppen sonst mich selbst davon.</l>
             </lg>
-            <stage>
-              <hi>Der Stumme sucht sie zu bedeuten.</hi>
-            </stage>
+            <stage>Der Stumme sucht sie zu bedeuten.</stage>
           </sp>
           <sp who="#einer_von_der_wache">
             <speaker>EINER VON DER WACHE.</speaker>
@@ -2400,9 +2189,7 @@
               <l>Nachts kann Irrthum leicht geschehen:</l>
               <l>Sieh, da bringen sie sie schon.</l>
             </lg>
-            <stage>
-              <hi>Ein Theil der Wache bringen Pedrillo und Blonde.</hi>
-            </stage>
+            <stage>Ein Theil der Wache bringen Pedrillo und Blonde.</stage>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
@@ -2432,10 +2219,8 @@
             <lg>
               <l>Ich armer Tropf!</l>
             </lg>
-            <stage>
-              <hi>Ein andrer Theil der Wache, auch mit Fackeln, bringen Belmonte und Konstanze;
-                Belmonte widersetzt sich noch.</hi>
-            </stage>
+            <stage>Ein andrer Theil der Wache, auch mit Fackeln, bringen Belmonte und Konstanze;
+              Belmonte widersetzt sich noch.</stage>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
@@ -2478,40 +2263,40 @@
             <speaker>OSMIN.</speaker>
             <l>Haltet ihn fest!</l>
           </sp>
-          <sp who="#belmonte #konstanze">
+          <sp who="#belmonte #constanze">
             <speaker>BELMONTE UND KONSTANZE.</speaker>
             <l>Seht den Beutel voll Zechinen.</l>
           </sp>
           <sp who="#osmin #wache">
             <speaker>OSMIN UND WACHE.</speaker>
-            <lg>
-              <l>Wie? Ihr wolltet euch erkühnen?</l>
-              <l>BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</l>
-              <l>Ey, so laßt mich / ihn doch nur reden!</l>
-            </lg>
+            <l>Wie? Ihr wolltet euch erkühnen?</l>
+          </sp>
+          <sp who="#belmonte #constanze #pedrillo #blonde">
+            <speaker>BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</speaker>
+            <l>Ey, so laßt mich / ihn doch nur reden!</l>
           </sp>
           <sp who="#osmin #wache">
             <speaker>OSMIN UND WACHE.</speaker>
-            <lg>
-              <l>Nicht ein Wort! nicht ein Wort!</l>
-              <l>BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</l>
-              <l>Kann euch unser Unglück dienen?</l>
-            </lg>
+            <l>Nicht ein Wort! nicht ein Wort!</l>
+          </sp>
+          <sp who="#belmonte #constanze #pedrillo #blonde">
+            <speaker>BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</speaker>
+            <l>Kann euch unser Unglück dienen?</l>
           </sp>
           <sp who="#osmin #wache">
             <speaker>OSMIN UND WACHE.</speaker>
             <l>Wie? Ihr wolltet euch erkühnen?</l>
-            <pb n="60"/>
-            <lg>
-              <l>BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</l>
-              <l>Rehmt den Beutel voll Zechinen.</l>
-            </lg>
+          </sp>
+          <pb n="60"/>
+          <sp who="#belmonte #constanze #pedrillo #blonde">
+            <speaker>BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</speaker>
+            <l>Rehmt den Beutel voll Zechinen.</l>
           </sp>
           <sp who="#osmin #wache">
             <speaker>OSMIN UND WACHE.</speaker>
             <l>Schleppt sie fort! schleppt sie fort!</l>
           </sp>
-          <sp who="#belmonte #konstanze">
+          <sp who="#belmonte #constanze">
             <speaker>BELMONTE UND KONSTANZE.</speaker>
             <l>Habet Mitleid!</l>
           </sp>
@@ -2527,40 +2312,42 @@
             <speaker>OSMIN UND WACHE.</speaker>
             <lg>
               <l>Schleppt sie fort!</l>
-              <l>BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</l>
-              <l>Kann euch unser Unglück dienen?</l>
             </lg>
+          </sp>
+          <sp who="#belmonte #constanze #pedrillo #blonde">
+            <speaker>BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</speaker>
+            <l>Kann euch unser Unglück dienen?</l>
           </sp>
           <sp who="#osmin #wache">
             <speaker>OSMIN UND WACHE.</speaker>
-            <lg>
-              <l>Ah, Berräther! so verwegen,</l>
-              <l>BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</l>
-              <l>Nehmt den Beutel voll Zechinen.</l>
-              <pb n="61"/>
-            </lg>
+            <l>Ah, Berräther! so verwegen,</l>
+          </sp>
+          <sp who="#belmonte #constanze #pedrillo #blonde">
+            <speaker>BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</speaker>
+            <l>Nehmt den Beutel voll Zechinen.</l>
+            <pb n="61"/>
           </sp>
           <sp who="#osmin #wache">
             <speaker>OSMIN UND WACHE.</speaker>
-            <lg>
-              <l>Uns zu drohen mit dem Degen!</l>
-              <l>BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</l>
-              <l>Habt Erbarmen!</l>
-            </lg>
+            <l>Uns zu drohen mit dem Degen!</l>
+          </sp>
+          <sp who="#belmonte #constanze #pedrillo #blonde">
+            <speaker>BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</speaker>
+            <l>Habt Erbarmen!</l>
           </sp>
           <sp who="#osmin #wache">
             <speaker>OSMIN UND WACHE.</speaker>
-            <lg>
-              <l>Marsch zum Bassa!</l>
-              <l>BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</l>
-              <l>Halt, Barbaren! nur ein Wort!</l>
-            </lg>
+            <l>Marsch zum Bassa!</l>
+          </sp>
+          <sp who="#belmonte #constanze #pedrillo #blonde">
+            <speaker>BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</speaker>
+            <l>Halt, Barbaren! nur ein Wort!</l>
           </sp>
           <sp who="#osmin #wache">
             <speaker>OSMIN UND WACHE.</speaker>
             <l>Kein Erbarmen; schleppt sie fort!</l>
           </sp>
-          <sp who="#konstanze #belmonte">
+          <sp who="#constanze #belmonte">
             <speaker>KONSTANZE UND BELMONTE.</speaker>
             <l>Laßt so vielen Schmerz euch rühren!</l>
           </sp>
@@ -2589,20 +2376,22 @@
           </sp>
           <sp who="#wache">
             <speaker>WACHE.</speaker>
+            <l>Marsch! marsch! marsch!</l>
+          </sp>
+          <sp who="#belmonte #constanze #pedrillo #blonde">
+            <speaker>BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</speaker>
             <lg>
-              <l>Marsch! marsch! marsch!</l>
-              <l>BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</l>
               <l>Halt! halt! halt!</l>
               <l>Laßt euch erweichen!</l>
             </lg>
           </sp>
           <sp who="#osmin #wache">
             <speaker>OSMIN UND WACHE.</speaker>
-            <lg>
-              <l>Marsch! fort zum Bassa!</l>
-              <l> BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</l>
-              <l>O haltet ein!</l>
-            </lg>
+            <l>Marsch! fort zum Bassa!</l>
+          </sp>
+          <sp who="#belmonte #constanze #pedrillo #blonde">
+            <speaker>BELMONTE, KONSTANZE, PEDRILLO UND BLONDE.</speaker>
+            <l>O haltet ein!</l>
           </sp>
           <sp who="#osmin #wache">
             <speaker>OSMIN UND WACHE.</speaker>
@@ -2612,112 +2401,100 @@
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <stage>
-            <hi>Zimmer des Bassa.</hi>
-          </stage>
-          <stage>
-            <hi>Selim mit Gefolge, hernach Osmin, Belmonte, Konstanze, Pedrillo, Blonde, und
-              Wache.</hi>
-          </stage>
+          <stage>Zimmer des Bassa.</stage>
+          <stage>Selim mit Gefolge, hernach Osmin, Belmonte, Konstanze, Pedrillo, Blonde, und
+            Wache.</stage>
           <sp who="#selim">
             <speaker>SELIM</speaker>
-            <stage>
-              <hi>zu einem seiner Officiere.</hi>
-            </stage>
-            <p> Geht, unterrichtet Euch, was der Lärm im Palast bedeutet; er hat uns im Schlaf
+            <stage>zu einem seiner Officiere.</stage>
+            <p>Geht, unterrichtet Euch, was der Lärm im Palast bedeutet; er hat uns im Schlaf
               aufgeschreckt, und laßt mir Osmin kommen.</p>
-            <stage>
-              <hi>Der Officier will abgehen, indem kommt Osmin zwar hastig, doch noch ein wenig
-                schläfrig.</hi>
-            </stage>
+            <stage>Der Officier will abgehen, indem kommt Osmin zwar hastig, doch noch ein wenig
+              schläfrig.</stage>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Herr! – Verzeih, daß ich es so früh wage – deine Ruhe zu stören.</l>
+            <p>Herr! – Verzeih, daß ich es so früh wage – deine Ruhe zu stören.</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Was giebts, Osmin, was giebts? Was bedeutet der Aufruhr?</l>
+            <p>Was giebts, Osmin, was giebts? Was bedeutet der Aufruhr?</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Herr, es ist die schändlichste Verrätherey in deinem Palast –</l>
+            <p>Herr, es ist die schändlichste Verrätherey in deinem Palast –</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Verrätherey?</l>
+            <p>Verrätherey?</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <p> Die niederträchtigen Christensklaven entführen uns – die Weiber. Der große
+            <p>Die niederträchtigen Christensklaven entführen uns – die Weiber. Der große
               Baumeister, den du gestern auf Zureden des Verrathers <pb n="64"/> Pedrillo aufnahmst,
               hat deine – schöne Konstanze entführt.</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Konstanze? entführt? Ah, setzt ihnen nach!</l>
+            <p>Konstanze? entführt? Ah, setzt ihnen nach!</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <p> O 's ist schon dafür gesorgt! Meiner Wachsamkeit – hast du es zu danken, daß ich sie
+            <p>O 's ist schon dafür gesorgt! Meiner Wachsamkeit – hast du es zu danken, daß ich sie
               wieder beym Schopfe gekriegt habe. Auch mir selbst hatte der – spitzbübische Pedrillo
               eine gleiche Ehre zugedacht, und er hatte mein Blondgen schon beym Kopfe, um mit ihr –
               in alle Welt zu reisen – Aber Gift und Dolch! er soll mirs entgelten! – Sieh, da
               bringen sie sie!</p>
-            <stage>
-              <hi>Belmonte und Constanze werden von der Wache hereingeführt.</hi>
-            </stage>
+            <stage>Belmonte und Constanze werden von der Wache hereingeführt.</stage>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <p> Ah, Verräther! Wagt ihr's, vor meine Augen zu kommen? – Ha, du heuchlerische Sirene?
+            <p>Ah, Verräther! Wagt ihr's, vor meine Augen zu kommen? – Ha, du heuchlerische Sirene?
               War das der Aufschub, den du begehrtest? Mißbrauchtest du so die Nachsicht, die ich
               dir gab, um mich zu hintergehen?</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <p> Ich bin strafbar in deinen Augen, Herr, es ist wahr: aber er ist mein Geliebter,
-              mein einziger Geliebter, dem lang schon dieses Herz gehört. O nur für ihn, nur um
+            <p>Ich bin strafbar in deinen Augen, Herr, es ist wahr: aber er ist mein Geliebter, mein
+              einziger Geliebter, dem lang schon dieses Herz gehört. O nur für ihn, nur um
               seinetwillen fleht' ich Aufschub. – O laß mich sterben! Gern, gern will ich den Tod
               erdulden: aber schone nur sein Leben –</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Und du wagst's, Unverschämte, für ihn zu bitten?</l>
+            <p>Und du wagst's, Unverschämte, für ihn zu bitten?</p>
             <pb n="65"/>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <l> Noch mehr: für ihn zu sterben!</l>
+            <p>Noch mehr: für ihn zu sterben!</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <p> Ha, Bassa! Noch nie erniedrigte ich mich zum Bitten, noch nie hat dieses Knie sich
+            <p>Ha, Bassa! Noch nie erniedrigte ich mich zum Bitten, noch nie hat dieses Knie sich
               vor einem Menschen gebeugt: aber sieh, hier lieg ich zu deinen Füßen; und gerne will
               ich sterben, nur schone Konstanzen!</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <p> Nein, hör ihn nicht, Bassa, hör ihn nicht: die Liebe macht ihn blind; er weiß nicht,
+            <p>Nein, hör ihn nicht, Bassa, hör ihn nicht: die Liebe macht ihn blind; er weiß nicht,
               was er spricht. Mich allein laß deinen Zorn empfinden, mich allein sterben.</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Nein, Konstanze, nein! Nur ich habe den Tod verdient; nur ich sterbe –</l>
+            <p>Nein, Konstanze, nein! Nur ich habe den Tod verdient; nur ich sterbe –</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Schweigt, Unglückliche, schweigt! ihr sollt beyde sterben.</l>
+            <p>Schweigt, Unglückliche, schweigt! ihr sollt beyde sterben.</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <p> O wie glücklich! – O mein Geliebter! man will uns nicht trennen. Ach, in deinen
-              Armen zu sterben, welche Wonne!</p>
-            <stage>
-              <hi>Duett.</hi>
-            </stage>
+            <p>O wie glücklich! – O mein Geliebter! man will uns nicht trennen. Ach, in deinen Armen
+              zu sterben, welche Wonne!</p>
+            <stage>Duett.</stage>
           </sp>
-          <sp who="#konstanze #belmonte">
+          <sp who="#constanze #belmonte">
             <speaker>KONSTANZE UND BELMONTE.</speaker>
             <lg>
               <l>Ach, von deinem Arm umschlungen,</l>
@@ -2725,7 +2502,7 @@
               <l>Lächelnd sink' ich in das Grab.</l>
             </lg>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
             <l>O wie selig!</l>
           </sp>
@@ -2734,7 +2511,7 @@
             <l>O wie glücklich!</l>
             <pb n="66"/>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
             <l>Am elysischen Gestade,</l>
           </sp>
@@ -2742,11 +2519,11 @@
             <speaker>BELMONTE.</speaker>
             <l>Auf dem nie betretnen Pfade</l>
           </sp>
-          <sp who="#beide">
+          <sp who="#constanze #belmonte">
             <speaker>BEIDE.</speaker>
             <l>Mich mit dir vereint zu sehn!</l>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
             <l>Welche Freude!</l>
           </sp>
@@ -2754,7 +2531,7 @@
             <speaker>BELMONTE.</speaker>
             <l>Welche Wonne!</l>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
             <l>An dem ruhevollen Strande,</l>
           </sp>
@@ -2762,19 +2539,19 @@
             <speaker>BELMONTE.</speaker>
             <l>In dem unbekannten Lande,</l>
           </sp>
-          <sp who="#beide">
+          <sp who="#constanze #belmonte">
             <speaker>BEIDE.</speaker>
             <l>Mich an deiner Hand zu sehn!</l>
           </sp>
-          <sp who="#_konstanze">
-            <speaker> KONSTANZE.</speaker>
+          <sp who="#constanze">
+            <speaker>KONSTANZE.</speaker>
             <l>O wie selig!</l>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
             <l>O wie glücklich!</l>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
             <l>Mein Geliebter!</l>
           </sp>
@@ -2782,34 +2559,28 @@
             <speaker>BELMONTE.</speaker>
             <l>Ach, Geliebte!</l>
           </sp>
-          <sp who="#beide">
+          <sp who="#constanze #belmonte">
             <speaker>BEIDE.</speaker>
             <l>Lächelnd sink' ich in das Grab!</l>
             <pb n="67"/>
           </sp>
           <sp who="#selim">
             <speaker>SELIM</speaker>
-            <stage>
-              <hi>bey Seite.</hi>
-            </stage>
-            <l> Fast rührt mich so viel Liebe, so viel Bestandigkeit.</l>
+            <stage>bey Seite.</stage>
+            <p>Fast rührt mich so viel Liebe, so viel Bestandigkeit.</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <p> Ach, Herr! kannst du das sehen? zugeben, daß sie da vor deinen Augen – Ha, Gift und
+            <p>Ach, Herr! kannst du das sehen? zugeben, daß sie da vor deinen Augen – Ha, Gift und
               Dolch! Die Wuth läßt mich nicht reden. – Ah! da kommt auch das zärtliche Pärchen, das
               auch mir so einen Streich gespielt hat. – Ach, könnt' ich dich mit den Augen tödten,
               heimtückscher Verrather!</p>
-            <stage>
-              <hi>Die Wache bringt Pedrillo und Blonden ebenfalls gefesselt.</hi>
-            </stage>
+            <stage>Die Wache bringt Pedrillo und Blonden ebenfalls gefesselt.</stage>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO</speaker>
-            <stage>
-              <hi>dem Bassa zu Füßen.</hi>
-            </stage>
-            <p> Großer Bassa! Vergieb, wenns möglich ist, daß wirs wagten, ohne Abschied davon zu
+            <stage>dem Bassa zu Füßen.</stage>
+            <p>Großer Bassa! Vergieb, wenns möglich ist, daß wirs wagten, ohne Abschied davon zu
               gehen. Die Liebe ist an der ganzen Affaire schuld. Das liebe Mädchen hier ist eine
               alte Bekanntschaft aus Spanien: unsere Ehe war so gut als richtig; und wenn wir
               glücklich dazumal nach Cadix gekommen wären, wir wären, längst Mann und Frau. Das
@@ -2817,120 +2588,106 @@
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Schweig, Verräther, und reize meinen Zorn nicht noch mehr! – Osmin! Man erdroßle sie
-              zugleich!</l>
+            <p>Schweig, Verräther, und reize meinen Zorn nicht noch mehr! – Osmin! Man erdroßle sie
+              zugleich!</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <lg>
-              <l> O mit tausend Freuden!</l>
-            </lg>
-            <stage>
-              <hi>Einige Türken mit seidenen Stricken nähern sich ihnen.</hi>
-            </stage>
+            <p>O mit tausend Freuden!</p>
+            <stage>Einige Türken mit seidenen Stricken nähern sich ihnen.</stage>
             <pb n="68"/>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Ach liebes Mädchen! wer hätte das gedacht!</l>
+            <p>Ach liebes Mädchen! wer hätte das gedacht!</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <lg>
-              <l> Unglücklicher Tag! unglückliches Mädchen!</l>
-            </lg>
-            <stage>
-              <hi>Einander im Arm.</hi>
-            </stage>
+            <p>Unglücklicher Tag! unglückliches Mädchen!</p>
+            <stage>Einander im Arm.</stage>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Ach, meine Konstanze!</l>
+            <p>Ach, meine Konstanze!</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <l> O mein Belmonte!</l>
+            <p>O mein Belmonte!</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Belmonte sagst du? – Ist das dein Name?</l>
+            <p>Belmonte sagst du? – Ist das dein Name?</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> O daß ers nicht wäre!</l>
+            <p>O daß ers nicht wäre!</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Belmonte! Belmonte?</l>
+            <p>Belmonte! Belmonte?</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Der unglückliche Belmonte! Ein Ball des Unglücks von Jugend auf. – Ohne Vater, ohne
-              Freund –</l>
+            <p>Der unglückliche Belmonte! Ein Ball des Unglücks von Jugend auf. – Ohne Vater, ohne
+              Freund –</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
-            <l> Gott! wär es möglich? <hi>Laut.</hi> Sag, sag junger Mann, wie heißt deine
-              Vaterstadt?</l>
+            <stage>für sich.</stage>
+            <p>Gott! wär es möglich? <stage>Laut.</stage> Sag, sag junger Mann, wie heißt deine
+              Vaterstadt?</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Toledo.</l>
+            <p>Toledo.</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Und wer war dein Vater?</l>
+            <p>Und wer war dein Vater?</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <p> Don Carlos Belmonte; der mich als ein Kind von vier Jahren in das Kloster St.
+            <p>Don Carlos Belmonte; der mich als ein Kind von vier Jahren in das Kloster St.
               Sebastian überbrachte –</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Ach Gott, er ists! Mein Sohn, mein Sohn! Du bist mein Sohn; ich bin dein Vater.</l>
+            <p>Ach Gott, er ists! Mein Sohn, mein Sohn! Du bist mein Sohn; ich bin dein Vater.</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Mein Vater? mein Vater?</l>
+            <p>Mein Vater? mein Vater?</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <p> Dein unglücklicher Vater! Komm in meine Arme! Wie viele vergebliche Nachforschungen
+            <p>Dein unglücklicher Vater! Komm in meine Arme! Wie viele vergebliche Nachforschungen
               hab' ich deinetwegen angestellt; wie viele Thränen <pb n="69"/> um dich vergossen! – O
               daß mich ein unbesonnener Augenblick zu dem Schritte verleitete – Doch jetzt nichts
               hiervon; jetzt bin ich blos der glückliche Vater.</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <p> O mein Vater, mein Vater! Wie soll ichs der Vorsehung danken – In dem
-              schrecklichsten Augenblick meines Lebens, am Rande des Todes – und nun so glücklich! O
-              Konstanze, Konstanze! laß uns seine Knie umfassen –</p>
-            <stage>
-              <hi>Sie werfen sich beide nieder.</hi>
-            </stage>
+            <p>O mein Vater, mein Vater! Wie soll ichs der Vorsehung danken – In dem schrecklichsten
+              Augenblick meines Lebens, am Rande des Todes – und nun so glücklich! O Konstanze,
+              Konstanze! laß uns seine Knie umfassen –</p>
+            <stage>Sie werfen sich beide nieder.</stage>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <l> Darf ichs wagen? wollen Sie auch mein Vater seyn?</l>
+            <p>Darf ichs wagen? wollen Sie auch mein Vater seyn?</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Steh auf! sich auf, gutes Mädchen, er ist dein! Seyd meine Kinder!</l>
+            <p>Steh auf! sich auf, gutes Mädchen, er ist dein! Seyd meine Kinder!</p>
           </sp>
-          <sp who="#konstanze #belmonte">
+          <sp who="#constanze #belmonte">
             <speaker>KONSTANZE UND BELMONTE</speaker>
-            <stage>
-              <hi>ihm die Hände küssend.</hi>
-            </stage>
-            <l> O wie glücklich!</l>
+            <stage>ihm die Hände küssend.</stage>
+            <p>O wie glücklich!</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <p> Ich kann mich kaum fassen! Ist's ein Traum, oder ists Wahrheit? – – O das Herz wallt
+            <p>Ich kann mich kaum fassen! Ist's ein Traum, oder ists Wahrheit? – – O das Herz wallt
               mir vor Freude, vor Entzücken!</p>
             <lg>
               <l>Ah, mit freudigem Entzücken</l>
@@ -2946,97 +2703,87 @@
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO</speaker>
-            <stage>
-              <hi>mit Blonden dem Bassa zu Füßen.</hi>
-            </stage>
-            <p> Herr, dürfen wir beyde Unglückliche es auch wagen, um Gnade zu flehen? – Ein alter
+            <stage>mit Blonden dem Bassa zu Füßen.</stage>
+            <p>Herr, dürfen wir beyde Unglückliche es auch wagen, um Gnade zu flehen? – Ein alter
               getreuer Diener deines Sohnes –</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Auch ich bitte für ihn! Ohne ihn wär' ich nicht hier –</l>
+            <p>Auch ich bitte für ihn! Ohne ihn wär' ich nicht hier –</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <p> Ah, Herr, laß dich ja nicht von dem verwünschten Schmarozer hintergehen! Keine
-              Gnade! keine Gnade! er hat den Tod hundertmal verdient.</p>
+            <p>Ah, Herr, laß dich ja nicht von dem verwünschten Schmarozer hintergehen! Keine Gnade!
+              keine Gnade! er hat den Tod hundertmal verdient.</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <p> Schweig! – Steht auf und seyd frey! Wer könnte an so einem glücklichen Tage
+            <p>Schweig! – Steht auf und seyd frey! Wer könnte an so einem glücklichen Tage
               Unglückliche um sich sehen?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> O tausend Dank, großer Bassa! Juchhe! Nun spring' ich mit gleichen Füßen wieder ins
-              Leben hinein!</l>
+            <p>O tausend Dank, großer Bassa! Juchhe! Nun spring' ich mit gleichen Füßen wieder ins
+              Leben hinein!</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Gift und Dolch! Ich möchte bersten! – Aber, Herr! meine Sklavinn Blonde muß er
-              wieder herausgeben?</l>
+            <p>Gift und Dolch! Ich möchte bersten! – Aber, Herr! meine Sklavinn Blonde muß er wieder
+              herausgeben?</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO</speaker>
-            <stage>
-              <hi>bittend.</hi>
-            </stage>
-            <l> Meine alte verlobte Braut, mein liebes Blondchen! –</l>
+            <stage>bittend.</stage>
+            <p>Meine alte verlobte Braut, mein liebes Blondchen! –</p>
           </sp>
           <sp who="#selim">
             <speaker>SELIM.</speaker>
-            <l> Ist dein, und ist frey!</l>
+            <p>Ist dein, und ist frey!</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <l> Wie glücklich!</l>
+            <p>Wie glücklich!</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Es lebe der große Bassa Selim!</l>
+            <p>Es lebe der große Bassa Selim!</p>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <l> Ha! das ist zum rasend werden!</l>
+            <p>Ha! das ist zum rasend werden!</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Komm, guter Alter, laß uns Freunde seyn. Hier biet' ich dir die Hand. –</l>
+            <p>Komm, guter Alter, laß uns Freunde seyn. Hier biet' ich dir die Hand. –</p>
             <pb n="71"/>
           </sp>
           <sp who="#osmin">
             <speaker>OSMIN.</speaker>
-            <lg>
-              <l> Freund mit dir? – Ah! mit dem Teufel lieber Freundschaft, als mit dir
-                Verräther.</l>
-            </lg>
-            <stage>
-              <hi>Geht drohend ab.</hi>
-            </stage>
+            <p>Freund mit dir? – Ah! mit dem Teufel lieber Freundschaft, als mit dir Verräther.</p>
+            <stage>Geht drohend ab.</stage>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <p> Laß ihn laufen, Pedrillo, laß ihn laufen. Dem Himmel sey Dank, daß ich aus seinen
+            <p>Laß ihn laufen, Pedrillo, laß ihn laufen. Dem Himmel sey Dank, daß ich aus seinen
               Klauen erlöset bin!</p>
           </sp>
           <sp who="#pedrillo">
             <speaker>PEDRILLO.</speaker>
-            <l> Ja wohl, liebes Blondchen; jetzt mag er schlafen oder wachen, ich lache dazu.</l>
+            <p>Ja wohl, liebes Blondchen; jetzt mag er schlafen oder wachen, ich lache dazu.</p>
           </sp>
           <sp who="#belmonte">
             <speaker>BELMONTE.</speaker>
-            <l> Ach, meine Konstanze! Endlich sind wir vereint.</l>
+            <p>Ach, meine Konstanze! Endlich sind wir vereint.</p>
           </sp>
-          <sp who="#konstanze">
+          <sp who="#constanze">
             <speaker>KONSTANZE.</speaker>
-            <l> Mein Einziger, mein verlorner Geliebter!</l>
+            <p>Mein Einziger, mein verlorner Geliebter!</p>
           </sp>
           <sp who="#blonde">
             <speaker>BLONDE.</speaker>
-            <l> Nun, mein Fräulein? Sagt' ich nicht immer: Hofnung läßt nicht zu Schanden
-              werden?</l>
+            <p>Nun, mein Fräulein? Sagt' ich nicht immer: Hofnung läßt nicht zu Schanden werden?</p>
           </sp>
-          <sp who="#chor">
+          <sp who="#belmonte #constanze #pedrillo #blonde">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Oft wölkt stürmisch sich der Himmel;</l>
@@ -3046,9 +2793,7 @@
               <l>Kehrt den Jammer schnell in Wonne,</l>
               <l>Bringt die Freuden bald zurück.</l>
             </lg>
-            <stage>
-              <hi>Ende.</hi>
-            </stage>
+            <stage>Ende.</stage>
             <pb n="72"/>
           </sp>
         </div>
