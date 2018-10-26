@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Der neue Doktor Faust</title>
+        <title type="main">Der neue Doktor Faust</title>
+        <title type="sub">Eine Plaisanterie mit Gesang, in zwei Aufzügen</title>
         <author key="pnd:118607774">Schink, Johann Friedrich</author>
       </titleStmt>
       <publicationStmt>
@@ -44,20 +45,19 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="friz">
-            <persName>FRIZ</persName>
+          <person xml:id="friz" sex="MALE">
+            <persName>Friz</persName>
           </person>
-          <person xml:id="rosalinde">
-            <persName>ROSALINDE</persName>
+          <person xml:id="rosalinde" sex="FEMALE">
+            <persName>Rosalinde</persName>
           </person>
-          <person xml:id="doktor_faust">
-            <persName>DOKTOR FAUST</persName>
-            <persName xml:id="faust">FAUST</persName>
+          <person xml:id="faust" sex="MALE">
+            <persName>Doktor Faust</persName>
           </person>
-          <person xml:id="unsichtbarer_chor">
-            <persName>UNSICHTBARER CHOR</persName>
-            <persName xml:id="unsichtbares_chor">UNSICHTBARES CHOR</persName>
-          </person>
+          <personGrp xml:id="unsichtbarer_chor" sex="UNKNOWN">
+            <name>Unsichtbarer Chor</name>
+            <name type="variant">Unsichtbares Chor</name>
+          </personGrp>
         </listPerson>
       </particDesc>
       <textClass>
@@ -70,6 +70,7 @@
       <listChange>
         <change when="2017-01-06">(dlina) file conversion from source</change>
         <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2018-10-26">(ff) formalities, IDs</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -80,8 +81,6 @@
         <head>Der neue Doktor Faust</head>
         <head>Eine Plaisanterie mit Gesang, in zwei Aufzügen</head>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head>Personen:</head>
@@ -90,19 +89,20 @@
           <castItem>Friz, ihr Bruder, Doktor Fausts Hauspursche.</castItem>
         </castList>
       </div>
+      <set>
+        <p>Die Szene ist auf einer Universität.</p>
+      </set>
+    </front>
+    <body>
       <div type="act">
-        <head>1. Akt</head>
+        <head>Erster Aufzug.</head>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Frizzens Zimmer in Doktor Fausts Hause.</hi>
-          </stage>
+          <stage>Frizzens Zimmer in Doktor Fausts Hause.</stage>
           <sp who="#friz">
             <speaker>FRIZ</speaker>
-            <stage>
-              <hi>auf- und abgehend.</hi>
-            </stage>
-            <p> Ein närrischer Kauz, der Doktor! will der Mensch mit aller Gewalt, weil er Faust
+            <stage>auf- und abgehend.</stage>
+            <p>Ein närrischer Kauz, der Doktor! will der Mensch mit aller Gewalt, weil er Faust
               heist, und sein berümter Anherr Teufel zitirt, und mit Geistern in Korrespondenz
               gestanden hat, auch Teufel zitiren, auch mit Geistern korrespondtren! Es tut mir
               warhaftig leid um den Menschen, er hat sonst Kopf, und es müst' einen ganzen Poeten
@@ -112,201 +112,190 @@
               und bang dabei wird. Mag's nun mit dem Swedenborg sein, wie's will; mag's immer so
               eine Wissenschaft geben: du, mein guter Doktor, bist mir warhaftig nicht dazu geboren:
               du schikst dich warhaftig schlecht zum Geistersehen. Ja, wenn du nicht so gern nach
-              Mädchenbusen gaftest, nicht so gern Mädchenhände drültest – <hi>Es wird gepocht.</hi>
-              Herein!</p>
+              Mädchenbusen gaftest, nicht so gern Mädchenhände drültest – <stage>Es wird
+                gepocht.</stage> Herein!</p>
             <pb n="303"/>
           </sp>
         </div>
         <div type="scene">
           <head>Zweiter Auftritt.</head>
-          <stage>
-            <hi>Rosalinde in Mannokleidern Friz.</hi>
-          </stage>
+          <stage>Rosalinde in Mannokleidern Friz.</stage>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Um Vergebung, mein Herr –</l>
+            <p>Um Vergebung, mein Herr –</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <l> Nur näher, was steht zu Befel? <hi>Für sich.</hi> Ein hübscher Pursch!</l>
+            <p>Nur näher, was steht zu Befel? <stage>Für sich.</stage> Ein hübscher Pursch!</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Ob Sie mir wol sagen können, mein Herr, in weichem Zimmer der Herr Doktor?</l>
+            <p>Ob Sie mir wol sagen können, mein Herr, in weichem Zimmer der Herr Doktor?</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <l> Der Herr Doktor – <hi>Sie erkennend.</hi> so wahr ich lebe, Rosalinde –</l>
+            <p>Der Herr Doktor – <stage>Sie erkennend.</stage> so wahr ich lebe, Rosalinde –</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Zu Befel, Herr Bruder –</l>
+            <p>Zu Befel, Herr Bruder –</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <p> Aber in aller Welt, Schwester, wie komm' ich zu der Ehre? und deine Maskerade, was
+            <p>Aber in aller Welt, Schwester, wie komm' ich zu der Ehre? und deine Maskerade, was
               soll die? der Fasching ist ja vorbei.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Zum Doktor will ich, du hast's ja gehört.</l>
+            <p>Zum Doktor will ich, du hast's ja gehört.</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <l> Zum Doktor? was Teufel hast du bei dem Geisterbeschwörer zu suchen?</l>
+            <p>Zum Doktor? was Teufel hast du bei dem Geisterbeschwörer zu suchen?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Ich will ihm zitiren helfen.</l>
+            <p>Ich will ihm zitiren helfen.</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <l> Zitiren? nun ich gratulire, Herr Doktor, der Fang ist gut!</l>
+            <p>Zitiren? nun ich gratulire, Herr Doktor, der Fang ist gut!</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Faunenseele! Man merkt's, daß du Student bist! Ihr Leute seid so durch und durch
+            <p>Faunenseele! Man merkt's, daß du Student bist! Ihr Leute seid so durch und durch
               Sottise, daß ihr nichts als Sottisen seht, und nichts als Sottisen sagt.</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <p> Nun, nur gemach, Frau Schwester. Was Teufel kann ich wissen, was du bei dem <pb
+            <p>Nun, nur gemach, Frau Schwester. Was Teufel kann ich wissen, was du bei dem <pb
                 n="304"/> Geisterseher willst. Und – nimm mir's nicht übel, Schwester – Du hast eine
               so spizbübische Fisiognomie in der Mummerei. –</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Nun, etwas ist an der Sache. Ich hab' in ganzem Ernst so eine Art von einem
+            <p>Nun, etwas ist an der Sache. Ich hab' in ganzem Ernst so eine Art von einem
               Schelmstük, daß ich mit dem guten Doktor vorhabe. Kannst du raten?</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <l> Rat' der Teufel, ich nicht.</l>
+            <p>Rat' der Teufel, ich nicht.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Verliebt bin ich, Herr Bruder, in den Geisterseher vorliebt; aus Liebe möcht' ich
-              ihn gern klug machen, ihm seinen Geniesporn aus dem Kopf bringen; das ist es alles.
+            <p>Verliebt bin ich, Herr Bruder, in den Geisterseher vorliebt; aus Liebe möcht' ich ihn
+              gern klug machen, ihm seinen Geniesporn aus dem Kopf bringen; das ist es alles.
               Verstehst du nun?</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <l> Nicht ein Wort!</l>
+            <p>Nicht ein Wort!</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Und ich sag' dir's doch so deutlich, einfältiger Mensch. Von seinem Stekkenpferd
-              will ich ihn herunter haben. Sich', ich hab den Plan zu einer Komödie im Kopf, – du
-              wirst auch dabei zu tun haben – dich und dein Zimmer brauch' ich. Ich will in die
-              Schule zu ihm, will mich in seine Geistermisteria einweihen lassen, und dann – doch
-              ich halt's nicht mit den Poeten, die gleich in der ersten Szene der Komödie die
-              Entwikkelung verraten. Der Zuschauer mus überrascht werden.</p>
+            <p>Und ich sag' dir's doch so deutlich, einfältiger Mensch. Von seinem Stekkenpferd will
+              ich ihn herunter haben. Sich', ich hab den Plan zu einer Komödie im Kopf, – du wirst
+              auch dabei zu tun haben – dich und dein Zimmer brauch' ich. Ich will in die Schule zu
+              ihm, will mich in seine Geistermisteria einweihen lassen, und dann – doch ich halt's
+              nicht mit den Poeten, die gleich in der ersten Szene der Komödie die Entwikkelung
+              verraten. Der Zuschauer mus überrascht werden.</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <p> Nun, warhaftig, Schwester, mich machst du ganz konfus; wenn's dir mit dem Doktor
-              auch so glükt: so hast du gewonnen Spiel.</p>
+            <p>Nun, warhaftig, Schwester, mich machst du ganz konfus; wenn's dir mit dem Doktor auch
+              so glükt: so hast du gewonnen Spiel.</p>
             <pb n="305"/>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Dafür las mich sorgen. Der Doktor ist ein Genie, und was ist so abgeschmakt, und
+            <p>Dafür las mich sorgen. Der Doktor ist ein Genie, und was ist so abgeschmakt, und
               unwarscheinlich, das man einem Genie nicht weis machen könnte? besonders, wenn's sein
               Stekenpferd betrift! Aber wie ist's mit dem Doktor? wenn kann ich ihn sprechen?</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <l> So bald du willst – Für eine Dame, die sich einweihen lassen will, ist er immer zu
-              Haus.</l>
+            <p>So bald du willst – Für eine Dame, die sich einweihen lassen will, ist er immer zu
+              Haus.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE</speaker>
-            <stage>
-              <hi>verächtlich.</hi>
-            </stage>
-            <l> Student, hebe dich weg von mir!</l>
+            <stage>verächtlich.</stage>
+            <p>Student, hebe dich weg von mir!</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <l> Den Augenblik, ich mus über dem in's Kollegium.</l>
+            <p>Den Augenblik, ich mus über dem in's Kollegium.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Du kömmst doch bald wieder? wie schon gesagt, ich brauche dich und dein Zimmer.</l>
+            <p>Du kömmst doch bald wieder? wie schon gesagt, ich brauche dich und dein Zimmer.</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ</speaker>
-            <l> So bleib hier.</l>
+            <p>So bleib hier.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Das könnte Verdacht erwekken. Nein, ich will unten im Hörsaal lauschen, bis es Zeit
-              ist. Adieu! –</l>
+            <p>Das könnte Verdacht erwekken. Nein, ich will unten im Hörsaal lauschen, bis es Zeit
+              ist. Adieu! –</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <l> Wie du willst! <hi>Beide ab.</hi>
-            </l>
+            <p>Wie du willst! <stage>Beide ab.</stage></p>
             <pb n="306"/>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <stage>
-            <hi>Doktor Fausts Zimmer.</hi>
-          </stage>
-          <sp who="#doktor_faust">
+          <stage>Doktor Fausts Zimmer.</stage>
+          <sp who="#faust">
             <speaker>DOKTOR FAUST</speaker>
-            <stage>
-              <hi>nachdenkend, in einem Stul, eine lange Pause, sich aufhebend – die Hand zum Himmel
-                gehoben.</hi>
-            </stage>
-            <p> Weisheit! Weisheit! wenn du kein Fantom, wenn du wirklich bist, Warheit, Geist! So
+            <stage>nachdenkend, in einem Stul, eine lange Pause, sich aufhebend – die Hand zum
+              Himmel gehoben.</stage>
+            <p>Weisheit! Weisheit! wenn du kein Fantom, wenn du wirklich bist, Warheit, Geist! So
               komm herab Weisheit!? Sieh', ich sehne nach dir, wie ein Kranker auf der Lagerstatt
-              nach Erquikkung! – <hi>Versinkt wieder in Nachdenken, gerät nach und nach in eine Art
-                von Begeisterung.</hi> Wie wird mir! welch Drängen und Stürmen in meiner Seele!
-              Gedanke drängt an Gedanken, Gedanken mit Geisterstügeln, sich in Sonnenstral tauchend!
-                <hi>Nach einer Pause.</hi> Und jezt auf einmal wieder nur Dämmerung, grauender Tag!
-              O wenn wirst du anbrechen, Morgenröte der Erkenntnis? – <hi>Die Hände faltend.</hi>
-            </p>
+              nach Erquikkung! – <stage>Versinkt wieder in Nachdenken, gerät nach und nach in eine
+                Art von Begeisterung.</stage> Wie wird mir! welch Drängen und Stürmen in meiner
+              Seele! Gedanke drängt an Gedanken, Gedanken mit Geisterstügeln, sich in Sonnenstral
+              tauchend! <stage>Nach einer Pause.</stage> Und jezt auf einmal wieder nur Dämmerung,
+              grauender Tag! O wenn wirst du anbrechen, Morgenröte der Erkenntnis? – <stage>Die
+                Hände faltend.</stage></p>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <stage>
-            <hi>Doktor Faust, Rosalinde.</hi>
-          </stage>
+          <stage>Doktor Faust, Rosalinde.</stage>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Verzeih', großer Mann, wenn ich dich im Forschen nach Warheit störe, wenn ich deinen
+            <p>Verzeih', großer Mann, wenn ich dich im Forschen nach Warheit störe, wenn ich deinen
               Flug nach Weisheit unterbreche.</p>
             <pb n="307"/>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Wer bist du, Fremdling? was willst du? –</l>
+            <p>Wer bist du, Fremdling? was willst du? –</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Der Ruf von deinem großen Geiste scholl auch zu mir. Du bist die Bewunderung von
+            <p>Der Ruf von deinem großen Geiste scholl auch zu mir. Du bist die Bewunderung von
               Europens ersten Gelerten; alle Welt spricht von dir mit Erstaunen. Ich komme, zu
               deinen Füssen zu sizzen, und Weisheit zu lernen.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Willkommen, Jüngling: wenn du ein Geweihter bist, will ich mit dir teilen, was ich
+            <p>Willkommen, Jüngling: wenn du ein Geweihter bist, will ich mit dir teilen, was ich
               weis. Ich liebe den Durst nach Weisheit, und Gier nach Warheit ist meinem Herzen
               lieblicher als Gold. Sezze dich, Freund, und entdekko mir deinen Stand.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Ich danke dir, großer Mann, daß du mich würdig hältst, dein Zögling zu werden. Ich
+            <p>Ich danke dir, großer Mann, daß du mich würdig hältst, dein Zögling zu werden. Ich
               habe mich den Wissenschaften geweiht, gern gelernt im Tempel der Musen, suchte Warheit
               –</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Und fandest sie nicht! – Ich glaube dir – auch ich forschte umsonst. Ich bin alles
+            <p>Und fandest sie nicht! – Ich glaube dir – auch ich forschte umsonst. Ich bin alles
               gewesen, hab' allen ihren Schlendrian mitgemacht; ward Theolog, Jurist, Arzt, Filosof:
               alles Tanz, nichts, das Gottheit witterte! Umsonst sucht' ich göttliche Weisheit in
               ihrer ursprünglichen Natheit; allenthalben fand ich sie mit Menschensazzungen vertöl
@@ -320,67 +309,66 @@
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Vortreflich! wie in meine Seele geredet! Gerade so hab' ich's auch gefunden. Alle
+            <p>Vortreflich! wie in meine Seele geredet! Gerade so hab' ich's auch gefunden. Alle
               menschliche Weisheit scheint mir Torheit, und all ihr Wissen Marktschreierei. Die
               Gelerten kommen mir vor, wie die hölzernen Komödianten im Puppenspiel. Als Dratpuppen,
               Kopf und Hand nach dem Faden bewegend, weder selbst denkend, noch selbst redend, immer
               aus einem fremden Hals tonirend. Und das alles mit einer solchen Barrokken Steifheit,
               daß man sich über die hölzernen Herrgötter aus dem Atem lachen mus; steif, wie ihre
               Manschetten, kraus, wie ihre Parrükken, und voll Falten, wie ihre Kragen. Ich hab's in
-              Reime gebracht, und kann's singen. <hi>Sie singt.</hi>
-            </p>
-            <p>All ihr Wesen Püppelspiel!</p>
-            <p>Was sie denken, was sie handeln,</p>
-            <p><pb n="309"/> Liegen, sizzen, stehen, wandeln,</p>
-            <p>Wie der liebe Faden will.</p>
-            <p>Hand bewegen, Köpfgen nikken,</p>
-            <p>Körper drehen, Füsgen rükken,</p>
-            <p>Wie im lieben Puppenspiel –</p>
-            <p>One Zwekk und one Ziel!</p>
+              Reime gebracht, und kann's singen. <stage>Sie singt.</stage></p>
+            <lg>
+              <l>All ihr Wesen Püppelspiel!</l>
+              <l>Was sie denken, was sie handeln,</l>
+              <l><pb n="309"/> Liegen, sizzen, stehen, wandeln,</l>
+              <l>Wie der liebe Faden will.</l>
+              <l>Hand bewegen, Köpfgen nikken,</l>
+              <l>Körper drehen, Füsgen rükken,</l>
+              <l>Wie im lieben Puppenspiel –</l>
+              <l>One Zwekk und one Ziel!</l>
+            </lg>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Du hast Kopf, junger Mann, sei mir willkommen! Du hast Recht, jenseits steht der
+            <p>Du hast Kopf, junger Mann, sei mir willkommen! Du hast Recht, jenseits steht der
               Tempel der Weisheit, schwebt über die Lüfte, auf Erden findest du seine Spur
               nicht.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Ueber die Lüfte? Schlimm, Herr Doktor, sehr schlimm! Wie werden wir da hinauf
-              kommen? Flügel haben wir nicht, und dann möcht' uns auch die Luft da oben nicht
-              allzuwol bekommen. Warscheinlicher Weise möchten wir uns einen gewaltigen Schnupfen
-              holen, und hätten denn doch wol nicht einmal an den Drükker der Thür des Tempels der
-              Warheit gefast.</p>
+            <p>Ueber die Lüfte? Schlimm, Herr Doktor, sehr schlimm! Wie werden wir da hinauf kommen?
+              Flügel haben wir nicht, und dann möcht' uns auch die Luft da oben nicht allzuwol
+              bekommen. Warscheinlicher Weise möchten wir uns einen gewaltigen Schnupfen holen, und
+              hätten denn doch wol nicht einmal an den Drükker der Thür des Tempels der Warheit
+              gefast.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ernsthaft, Jüngling, Warheit läst sich nur von dem Denker, nicht von dem Lacher
-              finden.</l>
+            <p>Ernsthaft, Jüngling, Warheit läst sich nur von dem Denker, nicht von dem Lacher
+              finden.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Und ich, Herr Doktor, meine, das wäre gerade der beste Weg, Weisheit zu finden, wenn
+            <p>Und ich, Herr Doktor, meine, das wäre gerade der beste Weg, Weisheit zu finden, wenn
               man sie lachend sucht.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ein gutes Bonmot; sonst nichts. Die Weisheit –</l>
+            <p>Ein gutes Bonmot; sonst nichts. Die Weisheit –</p>
             <pb n="310"/>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Schlendert gemeiniglich mit der Torheit zusammen. –</l>
+            <p>Schlendert gemeiniglich mit der Torheit zusammen. –</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST</speaker>
-            <stage>
-              <hi>ernst.</hi>
-            </stage>
-            <l> Jüngling!</l>
+            <stage>ernst.</stage>
+            <p>Jüngling!</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Warhaftig, Herr Doktor, noch hatten alle große Geister, die ich kannte, eine große
+            <p>Warhaftig, Herr Doktor, noch hatten alle große Geister, die ich kannte, eine große
               Porzion Narrheit mehr, als andere gemeine Erdmenschen. Aber sie hingen ihr den
               Doktormantel um, stekten ihr den Kopf in eine Knotenparükke, und den Hals in einen
               Kragen. Leute, die den Affenschwanz hinten nicht sahen, machten denn freilich dem
@@ -389,16 +377,16 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ich erstaune über dich: dein Mund fliest über von Warheit und Irrtum, von Geist und
-              von Wansinn.</l>
+            <p>Ich erstaune über dich: dein Mund fliest über von Warheit und Irrtum, von Geist und
+              von Wansinn.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Warhaftig? nun da bin ich ein ausgemachter grosser Geist.</l>
+            <p>Warhaftig? nun da bin ich ein ausgemachter grosser Geist.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Junger Mensch, du wizzelst zu viel, haschest zu mühsam nach Einfällen. Wiz läst sich
+            <p>Junger Mensch, du wizzelst zu viel, haschest zu mühsam nach Einfällen. Wiz läst sich
               nur überraschen, man mus ihn nicht suchen. Ueberhaupt ist Wiz nur ein Paradekleid, nur
               für schön Wetter gemacht. Aber Warheit schüzt immer ihren Mann, sei's Sturm, oder
               Sonnenschein! Ein wizziger Einfall ist Geld wert; aber es geht mit den wizzigen
@@ -409,37 +397,34 @@
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Aber warum, Herr Doktor? mus denn Weisheit just den Doktormantel umhaben? Sind ihre
+            <p>Aber warum, Herr Doktor? mus denn Weisheit just den Doktormantel umhaben? Sind ihre
               Pflichten nicht Blumenfesseln? ist nicht ihr Joch leicht, wie Rosen? Wozu also die
               groteske Aussenseite? Doch Sie könnten leicht schlimmer von mir denken, als ich's
               verdiene, also – da lesen Sie, Herr Doktor!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST</speaker>
-            <stage>
-              <hi>liest.</hi>
-            </stage>
-            <p> Eleusinia, oder erste Urkunde des Geistergeschlechts! – Ist's möglich? –
-                <hi>Blättert.</hi> Siebentes Kapitel, von der nähern Erkenntnis der Geister;
+            <stage>liest.</stage>
+            <p>Eleusinia, oder erste Urkunde des Geistergeschlechts! – Ist's möglich? –
+                <stage>Blättert.</stage> Siebentes Kapitel, von der nähern Erkenntnis der Geister;
               zwölftes Kapitel, von dem Umgang mit Geistern; dreizehntes Kapitel, vom Dienste der
-              Geister – <hi>Wie in einer Ekstase.</hi> O du seligster Tag meines Lebens, bist du
-              gekomen? hat das segnende Schiksal dich endlich meiner dürstenden Seele zugefürt?
-                <hi>Auf die Knie sinkend.</hi> Dank! Dank! Hier ist mehr, als meinem Anherrn je
-              träumte, mehr, als je Swedenborgs Augen in der herzlichsten seiner Erscheinungen
+              Geister – <stage>Wie in einer Ekstase.</stage> O du seligster Tag meines Lebens, bist
+              du gekomen? hat das segnende Schiksal dich endlich meiner dürstenden Seele zugefürt?
+                <stage>Auf die Knie sinkend.</stage> Dank! Dank! Hier ist mehr, als meinem Anherrn
+              je träumte, mehr, als je Swedenborgs Augen in der herzlichsten seiner Erscheinungen
               sahen. Habe Dank, Jüngling! Verweile hier, bis ich mich im Rebenzimmer gesammelt habe,
               dann komm ich zurük, und du sollst Teil nemen an jenen Wonnevollen Seligkeiten, die
               mein unaufhörliches Forschen nach Warheit, mir <pb n="312"/> endlich darbietet.
-              Verweile, bald komm ich zurük. <hi>Faust ab.</hi>
-            </p>
+              Verweile, bald komm ich zurük. <stage>Faust ab.</stage></p>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Ha, ha, ha! Das ist zum totlachen! Armer Doktor, dir wird ein Näschen gedreht, das
+            <p>Ha, ha, ha! Das ist zum totlachen! Armer Doktor, dir wird ein Näschen gedreht, das
               Alt und Jung zu lachen geben soll. Komm mir nun einer wieder, und behaupte: daß
-              Schwachheit nur<hi> generis seminini</hi> sei. Mein Doktor giebt einen Beweis, daß
+              Schwachheit nur <emph>generis seminini</emph> sei. Mein Doktor giebt einen Beweis, daß
               keine Albernheit zu gros ist, deren nicht ein Mann fähig wäre! Wenn ich so bedenke:
               ein Doktor aller Fakultäten, der alle Weisheit mit Löffeln gefressen, von mir, von
               einem Weibe am Narrenseil herumgefürt, und so plump herumgefürt – wenn das nicht
@@ -454,12 +439,10 @@
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <stage>
-            <hi>Rosalinde, Faust.</hi>
-          </stage>
+          <stage>Rosalinde, Faust.</stage>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Da bin ich wieder, Jüngling. Du hast mir einen grossen Schaz in die Hände gegeben –
+            <p>Da bin ich wieder, Jüngling. Du hast mir einen grossen Schaz in die Hände gegeben –
               Ich brenne vor Begierde, einzudringen in jene heiligen Tiefen der Warheit; näher zu
               treten jenen überirrdischen Wesen, die den Aeter durchwallen, von Sonnenstralen leben,
               und aus Morgenwolken geboren werden. Schon ist die grosse Stunde der ersten
@@ -477,30 +460,27 @@
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
-            <p> Wasser auf meine Müle; jezt kann ich meine Komödie vollenden! <hi>Zum Doktor.</hi>
-              Grosser Mann, ich gehorche. <hi>Ab.</hi>
-            </p>
+            <stage>für sich.</stage>
+            <p>Wasser auf meine Müle; jezt kann ich meine Komödie vollenden! <stage>Zum
+                Doktor.</stage> Grosser Mann, ich gehorche. <stage>Ab.</stage></p>
           </sp>
         </div>
         <div type="scene">
           <head>Siebenter Auftritt.</head>
-          <sp who="#doktor_faust">
+          <sp who="#faust">
             <speaker>DOKTOR FAUST.</speaker>
-            <p> Nemt meinen Dank, mächtige Geister, die ihr den Forscher nach Warheit mit heiligem
+            <p>Nemt meinen Dank, mächtige Geister, die ihr den Forscher nach Warheit mit heiligem
               Fittig umschwebt! Ihr habt euren Genius gesendet, nemt meinen Dank! Bald werd' ich
               euch sehen, Einwoner des Aeters, bald wink' ich euch! fasse Morgenröte bey'm Zipfel
               und halte Sonne am Saum ihres Kleides; schlinge mich in Geisterarmen, und sehe dich,
-              Warheit, im Gewandlosen Glanz! <hi>Auf die Knie mit ausgebreiteten Armen.</hi> So hört
-              mich dann, wo ihr auch schwebt, wo ihr auch euren segnenden Einfluß über die Natur
-              verbreitet, über die Tiefen, über die Höhen, hoch an den Wolken, oder in tiefen
+              Warheit, im Gewandlosen Glanz! <stage>Auf die Knie mit ausgebreiteten Armen.</stage>
+              So hört mich dann, wo ihr auch schwebt, wo ihr auch euren segnenden Einfluß über die
+              Natur verbreitet, über die Tiefen, über die Höhen, hoch an den Wolken, oder in tiefen
               mitternächtlichen Hölen, schwebt nieder auf Sonnenstralen, schwebt herauf auf wehenden
-              Flammen! <hi>Feierliche Musik.</hi> Ich bin erhört, schon tönen ihre Harmonieen! Sie
-              kommen, sie kommen! –</p>
+              Flammen! <stage>Feierliche Musik.</stage> Ich bin erhört, schon tönen ihre Harmonieen!
+              Sie kommen, sie kommen! –</p>
           </sp>
-          <sp who="#unsichtbares_chor">
+          <sp who="#unsichtbarer_chor">
             <speaker>UNSICHTBARES CHOR.</speaker>
             <lg>
               <l>Wer tief uns? wer rief uns aus mitternächtlichen Gründen?</l>
@@ -519,7 +499,7 @@
               <l>Geister der Tiefe, aus euren Schlünden herauf!</l>
             </lg>
           </sp>
-          <sp who="#unsichtbares_chor">
+          <sp who="#unsichtbarer_chor">
             <speaker>UNSICHTBARES CHOR.</speaker>
             <lg>
               <l>Wir kommen, wir kommen im Mondenlichtschimmer.</l>
@@ -530,50 +510,48 @@
         </div>
         <div type="scene">
           <head>Achter Auftritt.</head>
-          <stage>
-            <hi>Faust, Rosalinde. in einer Geistermaske</hi>
-          </stage>
+          <stage>Faust, Rosalinde. in einer Geistermaske</stage>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Aber wo seid ihr? Ich höre eure Stimme, aber ich seh' euch nicht.</l>
+            <p>Aber wo seid ihr? Ich höre eure Stimme, aber ich seh' euch nicht.</p>
             <pb n="316"/>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Du hast gerufen? was willst du?</l>
+            <p>Du hast gerufen? was willst du?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Wer bist du? –</l>
+            <p>Wer bist du? –</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Rufst du die Geister, und erkennst sie nicht?</l>
+            <p>Rufst du die Geister, und erkennst sie nicht?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Aber warum du allein? ich hörte der Stimmen viel.</l>
+            <p>Aber warum du allein? ich hörte der Stimmen viel.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Auch sind sie alle hier – nur unsichtbar.</l>
+            <p>Auch sind sie alle hier – nur unsichtbar.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Warum nicht sichtbar?</l>
+            <p>Warum nicht sichtbar?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Weil du an mir genug hast. Doch wenn du mich nicht brauchen kannst, so wird einer
+            <p>Weil du an mir genug hast. Doch wenn du mich nicht brauchen kannst, so wird einer
               nach dem andern in sichtbarer Gestalt deine Befele erwarten.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Nun, woher namst du deinen Flug?</l>
+            <p>Nun, woher namst du deinen Flug?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Neunmal so viel Stunden tief, als die Welt steht, won' ich unter der Erde – da hört
+            <p>Neunmal so viel Stunden tief, als die Welt steht, won' ich unter der Erde – da hört
               ich deinen Ruf, schlug mit meinem Flügel ein paar Sonnen aus einander, dekte mit einem
               Süden, mit dem andern Osten; ris ein paar Miriaden Fixsterne aus ihrer Axe, und
               schmetterte eine ganze Nachwelt ins Nichts. Wärend meines Flugs dacht ich, daß ich dir
@@ -586,21 +564,21 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ha, du bist ein Teufel: ich kenne dich an deinem Pralen.</l>
+            <p>Ha, du bist ein Teufel: ich kenne dich an deinem Pralen.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Pralen? Soll ich im Wirbelwind über dich faren? Zerstreuen dein Gebein hinauf zum
+            <p>Pralen? Soll ich im Wirbelwind über dich faren? Zerstreuen dein Gebein hinauf zum
               Jupiter, bis hinab zum Orkus? soll ich? Ohnmächtiger, sprich mit mehr Ehrfurcht, wenn
               du zu Geistern redest.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Du bist kein schlechter Teufel, du drohst auch.</l>
+            <p>Du bist kein schlechter Teufel, du drohst auch.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Drohen? Im Nu mach ich wahr, was ich sagte. Nicht ein Stäubchen deines Leibes, nicht
+            <p>Drohen? Im Nu mach ich wahr, was ich sagte. Nicht ein Stäubchen deines Leibes, nicht
               ein Quentchen deines Bluts sollst du übrig behalten. Will die Erde zusammenwikkeln,
               wie Leinwand, brüllen, daß der Donner Westwindssäuseln dagegen sein soll, und der
               Sturm leises Rauschen eines seidenen Gewandes. Rede mit Ehrfurcht Sklav, oder
@@ -608,62 +586,62 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Nun der Teufel verläugnet sich doch nie: Worte, wie Meereswogen, und Gedanken, wie
+            <p>Nun der Teufel verläugnet sich doch nie: Worte, wie Meereswogen, und Gedanken, wie
               Sandkörner. Aber las doch einmal sehen, was du kannst, zaubre einmal ein Elisium
               her.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Sachte, Herr Doktor, der Teufel ist so einfältig nicht, machts nicht, wie ihr
+            <p>Sachte, Herr Doktor, der Teufel ist so einfältig nicht, machts nicht, wie ihr
               Menschen. Ihr kramt neue Künste, neue Spinngewebe von Weisheit gleich aus, ohne einen
               andern Grund, als euch sehn zu lassen. Wir nicht.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Was willst du denn, daß ich tun soll?</l>
+            <p>Was willst du denn, daß ich tun soll?</p>
             <pb n="318"/>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Schwöre, daß du mein sein willst, mein sein willst nach zwölf Jahren. Schreib das,
+            <p>Schwöre, daß du mein sein willst, mein sein willst nach zwölf Jahren. Schreib das,
               mit deinem Blut zeichn' es hin – dann bin ich zu deinen Diensten.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Teufel, was willst du? dir schwören, dein zu sein! meinst du, ich rase?</l>
+            <p>Teufel, was willst du? dir schwören, dein zu sein! meinst du, ich rase?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Gerast hast du lange, gerast, als du mich riefst: das Geschöpf fodert Schöpfung vom
+            <p>Gerast hast du lange, gerast, als du mich riefst: das Geschöpf fodert Schöpfung vom
               Geschöpf; der Sterbliche will Unsterblichen befelen, ist das nicht Raserei?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ich glaube gar, du predigst.</l>
+            <p>Ich glaube gar, du predigst.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Ja, und Besserung; und lernst du sie vom Teufel nicht, so lernst du sie nimmer. Aber
+            <p>Ja, und Besserung; und lernst du sie vom Teufel nicht, so lernst du sie nimmer. Aber
               der Kontrakt – –</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Ist will nicht.</l>
+            <p>Ist will nicht.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Nun so bleib, was du bist: las dich auslachen. Denn, ausposaunen will ichs im
+            <p>Nun so bleib, was du bist: las dich auslachen. Denn, ausposaunen will ichs im
               Nordsturm, daß du ein Narr bist, ein feiger, elender Narr; der nicht einmal das Herz
               hat, eine Narrheit, die er angefangen, zu vollenden. Niedrige, unmännliche Seele!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Spotte, so viel du willst, ich unterschreibe nicht. Geh, ich verlange deine Dienste
+            <p>Spotte, so viel du willst, ich unterschreibe nicht. Geh, ich verlange deine Dienste
               nicht; meine Seele ist frei, und soll frei bleiben.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Ist sie? armer Mensch, und habe dich doch schon so gewis. Einen Atemzug gieb dem
+            <p>Ist sie? armer Mensch, und habe dich doch schon so gewis. Einen Atemzug gieb dem
               Teufel, und du entkommst ihm nicht mehr; er fast dich, und sollts beim lezten Röcheln
               sein. <pb n="319"/> Schon lange hatt' ich deine Seele beim Schopf, ich gab dir deine
               Rasereien ein, spielte dir das Manuskript in die Hände – ich. Elender, kannst du mir
@@ -671,11 +649,11 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Aber wenn ich nun nicht will, nicht unterschreiben will, was für Recht hast du?</l>
+            <p>Aber wenn ich nun nicht will, nicht unterschreiben will, was für Recht hast du?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Was für Recht? Also, daß du mich für nichts, und wider nichts von meinem Felsentron
+            <p>Was für Recht? Also, daß du mich für nichts, und wider nichts von meinem Felsentron
               herauf riefst, mich entrissest dem Jubelklang der Donner da unten, dem Brüllen der
               erschlagenen Geister, das rechnest du für nichts? Meinst, könntest mich wieder mit
               einer langen Nase heimschikken? Glaub, Satan steht um keine so arme Menschenseele auf,
@@ -688,35 +666,32 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST</speaker>
-            <stage>
-              <hi>betäubt.</hi>
-            </stage>
-            <l> Ich wäle! Gieb her. <hi>Unterzeichnet.</hi> Und was nun?</l>
+            <stage>betäubt.</stage>
+            <p>Ich wäle! Gieb her. <stage>Unterzeichnet.</stage> Und was nun?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Nichts!</l>
+            <p>Nichts!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Nichts?</l>
+            <p>Nichts?</p>
             <pb n="320"/>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Geduld – Ein König über die Welt ist nicht so gleich gemacht. Bist du Doktor aller
+            <p>Geduld – Ein König über die Welt ist nicht so gleich gemacht. Bist du Doktor aller
               Fakultäten, und weist das nicht?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Teufel, ich begreife dich nicht.</l>
+            <p>Teufel, ich begreife dich nicht.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Das glaube ich, Teufel und Weiber sind ein Studium, das den grösten Weisen zum
-              Narren machen kann. – Merk dirs. Vor izt leb wol. Mitternacht komm ich wieder. Fort
-              ihr Geister! <hi>Rosalinde ab.</hi>
-            </p>
+            <p>Das glaube ich, Teufel und Weiber sind ein Studium, das den grösten Weisen zum Narren
+              machen kann. – Merk dirs. Vor izt leb wol. Mitternacht komm ich wieder. Fort ihr
+              Geister! <stage>Rosalinde ab.</stage></p>
           </sp>
           <sp who="#unsichtbarer_chor">
             <speaker>UNSICHTBARER CHOR.</speaker>
@@ -768,26 +743,20 @@
               <l>Ihr lüftgen Gesellen,</l>
               <l>Zum rasselnden Schlund!</l>
             </lg>
-            <stage>
-              <hi>Der Chor schweigt, Faust steht wie im tiefen Erstaunen, nimmt sein Manuskript und
-                versinkt in Nachdenken. Der Vorhang fällt.</hi>
-            </stage>
+            <stage>Der Chor schweigt, Faust steht wie im tiefen Erstaunen, nimmt sein Manuskript und
+              versinkt in Nachdenken. Der Vorhang fällt.</stage>
             <pb n="322"/>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>2. Akt</head>
+        <head>Zweiter Aufzug.</head>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Frizzens Zimmer in Doktor Fausts Haus – es ist tief in der Nacht.</hi>
-          </stage>
+          <stage>Frizzens Zimmer in Doktor Fausts Haus – es ist tief in der Nacht.</stage>
           <sp who="#rosalinde">
             <speaker>ROSALINDE</speaker>
-            <stage>
-              <hi>sizt am Klavier, spielt und singt.</hi>
-            </stage>
+            <stage>sizt am Klavier, spielt und singt.</stage>
             <lg>
               <l>Luna malt mit ihrem Scheine</l>
               <l>Nun die Erde überall;</l>
@@ -802,306 +771,283 @@
         </div>
         <div type="scene">
           <head>Zweiter Auftritt.</head>
-          <stage>
-            <hi>Friz. Rosalinde.</hi>
-          </stage>
+          <stage>Friz. Rosalinde.</stage>
           <sp who="#friz">
             <speaker>FRIZ</speaker>
-            <stage>
-              <hi>stürzt mit einem lauten Gelächter ins Zimmer.</hi>
-            </stage>
-            <l> O du verdammter Doktor!</l>
+            <stage>stürzt mit einem lauten Gelächter ins Zimmer.</stage>
+            <p>O du verdammter Doktor!</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Behüte der Himmel, schlägt der Mensch nicht ein Gelächter auf, als ob er bei einem
+            <p>Behüte der Himmel, schlägt der Mensch nicht ein Gelächter auf, als ob er bei einem
               Faunengelage unter seinen Brüdern sässe.</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <l> Lach du anders, wenn du einen Narren siehst.</l>
+            <p>Lach du anders, wenn du einen Narren siehst.</p>
             <pb n="323"/>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Pflegst du da zu lachen? – Ich nicht.</l>
+            <p>Pflegst du da zu lachen? – Ich nicht.</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <l> Nicht? –</l>
+            <p>Nicht? –</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Wie du siehst!</l>
+            <p>Wie du siehst!</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <l> Ich will nicht hoffen, Schwester –</l>
+            <p>Ich will nicht hoffen, Schwester –</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Daß ich dich meine? Bravo, du bist noch nicht verloren. Du fülst dich doch.</l>
+            <p>Daß ich dich meine? Bravo, du bist noch nicht verloren. Du fülst dich doch.</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ</speaker>
-            <stage>
-              <hi>den Hut ins Gesicht drukkend, und drohend.</hi>
-            </stage>
-            <l> Schwester!</l>
+            <stage>den Hut ins Gesicht drukkend, und drohend.</stage>
+            <p>Schwester!</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE</speaker>
-            <stage>
-              <hi>mit kaltem Spott.</hi>
-            </stage>
-            <l> Student!</l>
+            <stage>mit kaltem Spott.</stage>
+            <p>Student!</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <p> Ja so, du bist nur ein Weib! Aber mach mich nicht böse, Schwester, oder ich verrat
+            <p>Ja so, du bist nur ein Weib! Aber mach mich nicht böse, Schwester, oder ich verrat
               deine ganze Posse dem Doktor –</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> So? – da mus ich denn freilich wol gelindere Saiten aufziehn! Also, Herr Bruder
-                <hi>Ihm die Hand reichend.</hi>
-              <hi>bonne amitie</hi>!</p>
+            <p>So? – da mus ich denn freilich wol gelindere Saiten aufziehn! Also, Herr Bruder
+                <stage>Ihm die Hand reichend.</stage>
+              <emph>bonne amitie</emph>!</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ</speaker>
-            <stage>
-              <hi>giebt ihr die Hand.</hi>
-            </stage>
-            <lg>
-              <l> Es gilt! Und nun ein. Wort von deinem närrischen Doktor –</l>
-              <l>ROSALINDE Hast du ihn gesprochen?</l>
-            </lg>
-          </sp>
-          <sp who="#friz">
-            <speaker>FRIZ.</speaker>
-            <p> So eben! Ich habe nie etwas tollers gesehn, als den Menschen. Glaubt der Mensch
-              steif und fest, daß er mit dem Teufel gesprochen hat, und kanns nicht erwarten bis es
-              zwölfe schlägt.</p>
+            <stage>giebt ihr die Hand.</stage>
+            <p>Es gilt! Und nun ein. Wort von deinem närrischen Doktor –</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Bravo! Es ist alles schon in Bereitschaft: meine ganze Maskerade liegt im
-              Nebenzimmer.</l>
+            <p>Hast du ihn gesprochen?</p>
+          </sp>
+          <sp who="#friz">
+            <speaker>FRIZ.</speaker>
+            <p>So eben! Ich habe nie etwas tollers gesehn, als den Menschen. Glaubt der Mensch steif
+              und fest, daß er mit dem Teufel gesprochen hat, und kanns nicht erwarten bis es zwölfe
+              schlägt.</p>
+          </sp>
+          <sp who="#rosalinde">
+            <speaker>ROSALINDE.</speaker>
+            <p>Bravo! Es ist alles schon in Bereitschaft: meine ganze Maskerade liegt im
+              Nebenzimmer.</p>
             <pb n="324"/>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <l> Und wie lange wird die Posse noch dauern?</l>
+            <p>Und wie lange wird die Posse noch dauern?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Nur bis heute.</l>
+            <p>Nur bis heute.</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <l> Und das Ende vom Liede?</l>
+            <p>Und das Ende vom Liede?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Ist – Kannst du auch schweigen, Herr Bruder?</l>
+            <p>Ist – Kannst du auch schweigen, Herr Bruder?</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <l> Wie einer.</l>
+            <p>Wie einer.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Ich kanns auch, Herr Bruder!</l>
+            <p>Ich kanns auch, Herr Bruder!</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <l> Sieh, wie schnippisch! Und doch weis ich so gut, wo's hinaus soll, als du.</l>
+            <p>Sieh, wie schnippisch! Und doch weis ich so gut, wo's hinaus soll, als du.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Das wäre! wo hinaus denn?</l>
+            <p>Das wäre! wo hinaus denn?</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <l> Nun, auf eine Kleinigkeit, nur auf eine Szene – unter vier Augen.</l>
+            <p>Nun, auf eine Kleinigkeit, nur auf eine Szene – unter vier Augen.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE</speaker>
-            <stage>
-              <hi>verächtlich.</hi>
-            </stage>
-            <l> Student!</l>
+            <stage>verächtlich.</stage>
+            <p>Student!</p>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ</speaker>
-            <stage>
-              <hi>beleidigt.</hi>
-            </stage>
-            <l> Schon wieder der Student da?</l>
+            <stage>beleidigt.</stage>
+            <p>Schon wieder der Student da?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Zeigst du ihn etwa nicht immer?</l>
-            <stage>
-              <hi>Ab ins Kabinet.</hi>
-            </stage>
+            <p>Zeigst du ihn etwa nicht immer?</p>
+            <stage>Ab ins Kabinet.</stage>
           </sp>
           <sp who="#friz">
             <speaker>FRIZ.</speaker>
-            <p> Verdammt Naseweis! Aber, daß ich ein Narr wäre, und mich ärgerte. Machen wir den
+            <p>Verdammt Naseweis! Aber, daß ich ein Narr wäre, und mich ärgerte. Machen wir den
               Landesvater und trinken ein Glas Punsch.</p>
-            <stage>
-              <hi>Nimmt Hut und Stok, und geht.</hi>
-            </stage>
+            <stage>Nimmt Hut und Stok, und geht.</stage>
             <pb n="325"/>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <stage>
-            <hi>Doktor Fausts Zimmer.</hi>
-          </stage>
+          <stage>Doktor Fausts Zimmer.</stage>
           <sp who="#faust">
             <speaker>FAUST</speaker>
-            <stage>
-              <hi>tiefsinnig auf- und niedergehend.</hi>
-            </stage>
-            <p> Wars Traum? wars Fantasie, was ich sah, was ich hörte? Sprach ich wirklich mit
+            <stage>tiefsinnig auf- und niedergehend.</stage>
+            <p>Wars Traum? wars Fantasie, was ich sah, was ich hörte? Sprach ich wirklich mit
               Geistern, hört ich wirklich einen Bewoner des Abgrunds? oder träumt ich? dekte Nacht
-              mein Auge? – <hi>Nach einer Pause.</hi> Nein, nein, es war kein Traum; ich sah, ich
-              hörte; werde noch sehen, noch hören – O die Stunde der Entscheidung – warum zaudert
-              sie? – Herr der Welt – Herscher der Geister, König der Natur, das alles soll ich
-              werden, werd ich werden – Und noch nicht zwölfe! – <hi>Es schlägt zwölf Uhr.</hi> Ha
-              jezt – – –</p>
+              mein Auge? – <stage>Nach einer Pause.</stage> Nein, nein, es war kein Traum; ich sah,
+              ich hörte; werde noch sehen, noch hören – O die Stunde der Entscheidung – warum
+              zaudert sie? – Herr der Welt – Herscher der Geister, König der Natur, das alles soll
+              ich werden, werd ich werden – Und noch nicht zwölfe! – <stage>Es schlägt zwölf
+                Uhr.</stage> Ha jezt – – –</p>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <stage>
-            <hi>Faust. Rosalinde, als Teufel</hi>
-          </stage>
+          <stage>Faust. Rosalinde, als Teufel</stage>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Faust.</l>
+            <p>Faust.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Ha du! Willkommen! Jezt verrichte deine Dienste, und zur Probe: verwandle dies Haus
+            <p>Ha du! Willkommen! Jezt verrichte deine Dienste, und zur Probe: verwandle dies Haus
               in einen Pallast.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Das kann ich nicht.</l>
+            <p>Das kann ich nicht.</p>
             <pb n="326"/>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Was? den Augenblik las Rosenhekken hier hervorgehn, düftende Jasminlanden. Schaffe
+            <p>Was? den Augenblik las Rosenhekken hier hervorgehn, düftende Jasminlanden. Schaffe
               rieselnde Quellen hieher. Mach diesen Saal zu Elisium.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Wenn ich das könnte.</l>
+            <p>Wenn ich das könnte.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Bringe mir das blühendste Mädchen des Landes, daß ich ihre Knie umfasse, küsse die
+            <p>Bringe mir das blühendste Mädchen des Landes, daß ich ihre Knie umfasse, küsse die
               Spizzen ihrer seidnen Finger.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Auch das kann ich nicht.</l>
+            <p>Auch das kann ich nicht.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Narre mich nicht länger, und gehorche! Türme Arabiens Schäzze vor mir auf, schaf
-              Indiens Gold her.</l>
+            <p>Narre mich nicht länger, und gehorche! Türme Arabiens Schäzze vor mir auf, schaf
+              Indiens Gold her.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Das kann ich noch weniger.</l>
+            <p>Das kann ich noch weniger.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Windiger Praler, was kannst du denn?</l>
+            <p>Windiger Praler, was kannst du denn?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Null mit Null geht auf – Nichts!</l>
+            <p>Null mit Null geht auf – Nichts!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Machtloser Teufel, wenn du nichts kannst, was willst du denn hier?</l>
+            <p>Machtloser Teufel, wenn du nichts kannst, was willst du denn hier?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Dich fragen: ob du fertig bist?</l>
+            <p>Dich fragen: ob du fertig bist?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Fertig? wozu?</l>
+            <p>Fertig? wozu?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Zum Abmarsch.</l>
+            <p>Zum Abmarsch.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Zum Abmarsch?</l>
+            <p>Zum Abmarsch?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Nun ja! was starrst du? weist du nicht mehr, was du versprachst?</l>
+            <p>Nun ja! was starrst du? weist du nicht mehr, was du versprachst?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Teufel! – Sind das die zwölf Jahre? kaum ein Punkt der bestimmten Zeit.</l>
+            <p>Teufel! – Sind das die zwölf Jahre? kaum ein Punkt der bestimmten Zeit.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Ganz recht. Der Weise läst nicht den Punkt eines Augenbliks ungenüzt vorbei. Wir
+            <p>Ganz recht. Der Weise läst nicht den Punkt eines Augenbliks ungenüzt vorbei. Wir
               Teufel auch nicht. Jeder mus uns eine <pb n="327"/> Seele bringen. Wer hielte sonst
               die Langeweile der Ewigkeit aus?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> So seid ihr auch Sofisten, ihr Teufel?</l>
+            <p>So seid ihr auch Sofisten, ihr Teufel?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> O die ausgemachtesten: wir haben die Sekte gestiftet.</l>
+            <p>O die ausgemachtesten: wir haben die Sekte gestiftet.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Und du willst nicht erfüllen, was du versprachst?</l>
+            <p>Und du willst nicht erfüllen, was du versprachst?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Ha ha ha!</l>
+            <p>Ha ha ha!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Du lachst?</l>
+            <p>Du lachst?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Mus ich nicht, armer Doktor?</l>
+            <p>Mus ich nicht, armer Doktor?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Geist der Finsternis, wirst du Wort halten?</l>
+            <p>Geist der Finsternis, wirst du Wort halten?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Wort halten? ein Teufel? ha ha ha!</l>
+            <p>Wort halten? ein Teufel? ha ha ha!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Sklavischer, ohnmächtiger Geist, du vermagst nicht.</l>
+            <p>Sklavischer, ohnmächtiger Geist, du vermagst nicht.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Freilich nicht! O daß Weisheit so zum Kinde werden kann! So was überlegt der grosse
+            <p>Freilich nicht! O daß Weisheit so zum Kinde werden kann! So was überlegt der grosse
               Mann erst nachher, was er mit Händen hätte greifen können, was ein Kind mit Händen
               greifen kann. Aber nun kömmt dir die Weisheit zu spät. Wenn die Gefar von ferne droht:
               dann flich; nicht, wenn sie dir schon auf der Ferse sizt, oder wenn du bis über die
@@ -1110,118 +1056,114 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Der Teufel ein Sittenlerer! – unbegreiflich!</l>
+            <p>Der Teufel ein Sittenlerer! – unbegreiflich!</p>
             <pb n="328"/>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Armer Tor, der du Teufel für Schöpfer hältst, die selbst Geschöpfe sind, hingeworfen
+            <p>Armer Tor, der du Teufel für Schöpfer hältst, die selbst Geschöpfe sind, hingeworfen
               im Abgrund, an ewigen Ketten geschlossen, niedergebeugt zum Sklavenstand; und sollen
               Schöpferkraft haben, Allmacht?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> O du hämischer Betrüger, elender Teufel!</l>
+            <p>O du hämischer Betrüger, elender Teufel!</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Der wär ich, wenn ich Wort hielte. Kennst du den Teufel nicht besser? Mus dirs ja
+            <p>Der wär ich, wenn ich Wort hielte. Kennst du den Teufel nicht besser? Mus dirs ja
               schon deine Amme gesagt haben, daß der Teufel der Vater der Lüge ist. Ha, ha, ha!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Und du lachst noch?</l>
+            <p>Und du lachst noch?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Aus vollem Halse. Ueber eure Torheiten zu lachen, das ist ein Fest für uns
-              Teufel.</l>
+            <p>Aus vollem Halse. Ueber eure Torheiten zu lachen, das ist ein Fest für uns
+              Teufel.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> O des schreklichen Erwachens vom Traum, des schreklichen Erwachens zum Elend!</l>
+            <p>O des schreklichen Erwachens vom Traum, des schreklichen Erwachens zum Elend!</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Spas du nicht mit Teufeln, die lonen nicht anders.</l>
+            <p>Spas du nicht mit Teufeln, die lonen nicht anders.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> O hab Erbarmen!</l>
+            <p>O hab Erbarmen!</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Erbarmen? das kennt kein Teufel. Die Menschen kennens nicht, und wir solltens!</l>
+            <p>Erbarmen? das kennt kein Teufel. Die Menschen kennens nicht, und wir solltens!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Was hab ich getan! Verderben gefunden, und suchte Warheit.</l>
+            <p>Was hab ich getan! Verderben gefunden, und suchte Warheit.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Torheit sage. Wer mehr wissen will, als er darf, wird ein Narr. Und wer höher
-              klimmt, als es seine Kräfte zulassen, bricht den Hals, das ist natürlich.</p>
+            <p>Torheit sage. Wer mehr wissen will, als er darf, wird ein Narr. Und wer höher klimmt,
+              als es seine Kräfte zulassen, bricht den Hals, das ist natürlich.</p>
             <pb n="329"/>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Sagst du das, Teufel? und bist selbst so tief gefallen.</l>
+            <p>Sagst du das, Teufel? und bist selbst so tief gefallen.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Eben deswegen. Der moralisirt immer am besten, der selber in die Grube stürzte. Ruch
+            <p>Eben deswegen. Der moralisirt immer am besten, der selber in die Grube stürzte. Ruch
               der Teufel fiel, weil er zu viel wissen wollte. Und nun fort.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Unmöglich!</l>
+            <p>Unmöglich!</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Du must!</l>
+            <p>Du must!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Nur noch einen kurzen Raum.</l>
+            <p>Nur noch einen kurzen Raum.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Keine Minute!</l>
+            <p>Keine Minute!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> So bin ich unwiederruflich verloren? Weh! weh!</l>
+            <p>So bin ich unwiederruflich verloren? Weh! weh!</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Nun, Faust, du sollst sehen, daß ich ein honorabler Teufel bin. Hör, ich will dir
-              ein Weib über den Hals schikken, ein schönes Weib. Wenn du vermagst ihrer Schönheit zu
+            <p>Nun, Faust, du sollst sehen, daß ich ein honorabler Teufel bin. Hör, ich will dir ein
+              Weib über den Hals schikken, ein schönes Weib. Wenn du vermagst ihrer Schönheit zu
               widerstehen: so bist du frank und frei vom Kontrakt, so will ich ihn zerreissen.
               Widerstehst du nicht, so bleibts beim Alten.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> O sende sie, und wenns die Göttin der Liebe selbst wäre, ich widersteh ihr
-              gewis.</l>
+            <p>O sende sie, und wenns die Göttin der Liebe selbst wäre, ich widersteh ihr gewis.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Nicht das Ding so auf die leichte Achsel genommen. Glaub mir: wenn der Teufel am
+            <p>Nicht das Ding so auf die leichte Achsel genommen. Glaub mir: wenn der Teufel am
               sichersten verfüren will, so kriecht er in ein Weib. Daß deine Stammmutter Eva sich
               vom Satan verfüren lies, wundert mich nicht; aber daß Eva den Satan nicht verfürt hat,
-              das wundert mich. Nimm dich in Acht! .... <hi>Ab.</hi>
-            </p>
+              das wundert mich. Nimm dich in Acht! .... <stage>Ab.</stage></p>
             <pb n="330"/>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
-          <sp who="#doktor_faust">
+          <sp who="#faust">
             <speaker>DOKTOR FAUST</speaker>
-            <stage>
-              <hi>auf- und niedergehend, lange Pause, dann im Ton der Verzweiflung.</hi>
-            </stage>
-            <p> O ich Tor, ich unbesonnener, gemeiner Tor! mit Teufeln in Bündnis zu treten, von
+            <stage>auf- und niedergehend, lange Pause, dann im Ton der Verzweiflung.</stage>
+            <p>O ich Tor, ich unbesonnener, gemeiner Tor! mit Teufeln in Bündnis zu treten, von
               Teufeln Treu und Glauben zu erwarten! – Menschliche Weisheit, was bist du, wenn du so
               tief bis zur Torheit sinken kannst? Wie soll ich mich retten? Ein Weib! ein schönes
               Weib! Faust, Faust, was wird aus dir werden? was aus dir werden mit dieser deiner
@@ -1229,22 +1171,16 @@
               ich widerstehe, widerstehe gewis. Aber wenn ich auch widerstehe, bin ich gerettet?
               kann ich erwarten, daß ein Geist der Hölle Wort hält? hat ers gehalten? hat er nicht
               selbst meiner Leichtgläubigkeit laut gelacht? – O ich bin verloren! – verloren! –</p>
-            <stage>
-              <hi>Verhülle sich das Gesicht, und sinkt verzweifelnd in einen Stul.</hi>
-            </stage>
+            <stage>Verhülle sich das Gesicht, und sinkt verzweifelnd in einen Stul.</stage>
             <pb n="331"/>
           </sp>
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <stage>
-            <hi>Faust. Rosalinde. in einer sehr verfürerischen, reizenden Kleidung.</hi>
-          </stage>
+          <stage>Faust. Rosalinde. in einer sehr verfürerischen, reizenden Kleidung.</stage>
           <sp who="#rosalinde">
             <speaker>ROSALINDE</speaker>
-            <stage>
-              <hi>sie bleibt in der Ferne stehen, tritt zu des Doktors Klavier, und singt.</hi>
-            </stage>
+            <stage>sie bleibt in der Ferne stehen, tritt zu des Doktors Klavier, und singt.</stage>
             <lg>
               <l>Rosen blühen, Nelken düsten,</l>
               <l>Balsamhauch schwimmt in den Lüften,</l>
@@ -1258,197 +1194,172 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST</speaker>
-            <stage>
-              <hi>aus seiner Verzweiflung erwachend.</hi>
-            </stage>
-            <p> Was ist das? welche zauberische Töne! <hi>Erblikt Rosalinden und färt zusammen.</hi>
-              Ha das ist sie! <hi>Mit trunkenem Auge an ihr hangend.</hi> Himmel, welche Schönheit!
-              Das Lüchein der Liebe schwimmt in ihren Augen, auf ihren Wangen glüht Morgenrot, und
-              auf ihren Lippen Florens Kinder. <hi>Plözlich sich abwendend.</hi> O ich darf sie
-              nicht länger ausehn, oder ich bin verloren.</p>
+            <stage>aus seiner Verzweiflung erwachend.</stage>
+            <p>Was ist das? welche zauberische Töne! <stage>Erblikt Rosalinden und färt
+                zusammen.</stage> Ha das ist sie! <stage>Mit trunkenem Auge an ihr hangend.</stage>
+              Himmel, welche Schönheit! Das Lüchein der Liebe schwimmt in ihren Augen, auf ihren
+              Wangen glüht Morgenrot, und auf ihren Lippen Florens Kinder. <stage>Plözlich sich
+                abwendend.</stage> O ich darf sie nicht länger ausehn, oder ich bin verloren.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE</speaker>
-            <stage>
-              <hi>näher tretend.</hi>
-            </stage>
-            <l> Sieh mich an, liebenswürdiger Sterblicher; las dich mein Auge zur Liebe laden.</l>
+            <stage>näher tretend.</stage>
+            <p>Sieh mich an, liebenswürdiger Sterblicher; las dich mein Auge zur Liebe laden.</p>
             <pb n="332"/>
           </sp>
           <sp who="#faust">
             <speaker>FAUST</speaker>
-            <stage>
-              <hi>mit abgewanten Gesicht, mit einer Bewegung des Entfernens.</hi>
-            </stage>
-            <l> Weg, Weib des Verderbens, weg!</l>
+            <stage>mit abgewanten Gesicht, mit einer Bewegung des Entfernens.</stage>
+            <p>Weg, Weib des Verderbens, weg!</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE</speaker>
-            <stage>
-              <hi>seine Hand ergreifend.</hi>
-            </stage>
-            <l> Ich dich verderben? womit sollt ich das? Mit diesem Blik voll Liede? Sich mich doch
-              an!</l>
+            <stage>seine Hand ergreifend.</stage>
+            <p>Ich dich verderben? womit sollt ich das? Mit diesem Blik voll Liede? Sich mich doch
+              an!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST</speaker>
-            <stage>
-              <hi>wie oben.</hi>
-            </stage>
-            <l> Weg!</l>
+            <stage>wie oben.</stage>
+            <p>Weg!</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Nur einen Blik! <hi>Faust hat den Blik zur Erde gesenkt, sie fast ihn an dem Kinn,
-                und hebt ihm das Gesicht in die Höh.</hi> Nur einen! sieh mich an.</p>
+            <p>Nur einen Blik! <stage>Faust hat den Blik zur Erde gesenkt, sie fast ihn an dem Kinn,
+                und hebt ihm das Gesicht in die Höh.</stage> Nur einen! sieh mich an.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST</speaker>
-            <stage>
-              <hi>mit der Leidenschaft kämpfend, aber noch immer den Blik abgewant.</hi>
-            </stage>
-            <p> Weh mir! mit dem Berüren ihrer Finger schlagen elektrische Funken in meine Seele. O
-              was wirds erst werden, wenn ihre Augen den meinigen begegnen? <hi>Mit beiden Händen
-                ihre Hand fassend, den Blik immer auf die Erde.</hi> Weib, las mich! willst du mich
-              nicht ins Elend stürzen?</p>
+            <stage>mit der Leidenschaft kämpfend, aber noch immer den Blik abgewant.</stage>
+            <p>Weh mir! mit dem Berüren ihrer Finger schlagen elektrische Funken in meine Seele. O
+              was wirds erst werden, wenn ihre Augen den meinigen begegnen? <stage>Mit beiden Händen
+                ihre Hand fassend, den Blik immer auf die Erde.</stage> Weib, las mich! willst du
+              mich nicht ins Elend stürzen?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Dich ins Elend stürzen? <hi>Ihm abermal das Gesicht in die Höhe hebend.</hi>
-              Närrchen, sieh doch her.</l>
+            <p>Dich ins Elend stürzen? <stage>Ihm abermal das Gesicht in die Höhe hebend.</stage>
+              Närrchen, sieh doch her.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST</speaker>
-            <stage>
-              <hi>mit einem Blik auf sie, wie versteinert.</hi>
-            </stage>
-            <l> Himmel und Seligkeit, was für ein Glanz!</l>
+            <stage>mit einem Blik auf sie, wie versteinert.</stage>
+            <p>Himmel und Seligkeit, was für ein Glanz!</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Nun, war das ein Blik voll Verderben?</l>
+            <p>Nun, war das ein Blik voll Verderben?</p>
             <pb n="333"/>
           </sp>
           <sp who="#faust">
             <speaker>FAUST</speaker>
-            <stage>
-              <hi>halb in Entzükkung, halb in Verzweiflung.</hi>
-            </stage>
-            <p> Ja, ja! mit all dem Elisium, das aus ihm stralt – Weib, als der Schöpfer dich
+            <stage>halb in Entzükkung, halb in Verzweiflung.</stage>
+            <p>Ja, ja! mit all dem Elisium, das aus ihm stralt – Weib, als der Schöpfer dich
               bildete, schlug er einen Funken aus der Sonne, und schuf dein Auge. Aber las mich, du
               bringst mich um Ruh und Glükseligkeit, giessest Verzweiflung in meine Seele.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Glaubst du, daß ich das könnte – mag dirs dieser Händedruk sagen.</l>
+            <p>Glaubst du, daß ich das könnte – mag dirs dieser Händedruk sagen.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Las mich, las mich! Ich füle durch alle meine Adern verderbendes Feuer.</l>
+            <p>Las mich, las mich! Ich füle durch alle meine Adern verderbendes Feuer.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Wart, ich wills löschen. <hi>Küst ihn.</hi> Widersteh mir nun länger, wenn du
-              kannst! – <hi>Seine Hand fassend.</hi> Deine Hand bebt – du zitterst – O las gut sein,
-              bald soll dein Zittern schwinden. Höre: <hi>Sie tritt ans Klavier, spielt und singt
-                mit der verfürerischsten Melodie.</hi>
-            </p>
-            <p>Hörst du nicht in Rosenbüschen</p>
-            <p>Nachtigallen Liebe singen?</p>
-            <p>Hörst du nicht aus Liliennischen</p>
-            <p>Leise Weste Liehe zischen?</p>
-            <p>Hörst du nicht auf Rasensizzen</p>
-            <p>Stille Grillen Liebe schwirren?</p>
-            <p>Nicht auf grüner Bäume Spizzen</p>
-            <p>Stille Täubchen Liebe girren?</p>
-            <p>Warum sollten Rosen glühen,</p>
-            <p>Warum Nelk und Lilien blühen?</p>
-            <p><pb n="334"/> Sollst sie brechen, ihren Dust</p>
-            <p>Liebeatmend in dich ziehen!</p>
-            <p>Warum wär auf meinen Wangen</p>
-            <p>Sonst der Früling aufgegangen?</p>
-            <p>Sollst sie küssen, sollst in Küssen</p>
-            <p>Ganz in Seligkeit zerfliessen;</p>
-            <p>Darum winkt dir Liebe hier,</p>
-            <p>Und du widerständest ihr!</p>
+            <p>Wart, ich wills löschen. <stage>Küst ihn.</stage> Widersteh mir nun länger, wenn du
+              kannst! – <stage>Seine Hand fassend.</stage> Deine Hand bebt – du zitterst – O las gut
+              sein, bald soll dein Zittern schwinden. Höre: <stage>Sie tritt ans Klavier, spielt und
+                singt mit der verfürerischsten Melodie.</stage></p>
+            <lg>
+              <l>Hörst du nicht in Rosenbüschen</l>
+              <l>Nachtigallen Liebe singen?</l>
+              <l>Hörst du nicht aus Liliennischen</l>
+              <l>Leise Weste Liehe zischen?</l>
+              <l>Hörst du nicht auf Rasensizzen</l>
+              <l>Stille Grillen Liebe schwirren?</l>
+              <l>Nicht auf grüner Bäume Spizzen</l>
+              <l>Stille Täubchen Liebe girren?</l>
+              <l>Warum sollten Rosen glühen,</l>
+              <l>Warum Nelk und Lilien blühen?</l>
+              <l><pb n="334"/> Sollst sie brechen, ihren Dust</l>
+              <l>Liebeatmend in dich ziehen!</l>
+              <l>Warum wär auf meinen Wangen</l>
+              <l>Sonst der Früling aufgegangen?</l>
+              <l>Sollst sie küssen, sollst in Küssen</l>
+              <l>Ganz in Seligkeit zerfliessen;</l>
+              <l>Darum winkt dir Liebe hier,</l>
+              <l>Und du widerständest ihr!</l>
+            </lg>
           </sp>
           <sp who="#faust">
             <speaker>FAUST</speaker>
-            <stage>
-              <hi>vom Zauber ihrer Stimme auser sich, ganz in trunkner Ekstase versunken, stürzt zu
-                ihren Füssen, fast ihre Hände, drükt sie an seine Lippen, und ruft.</hi>
-            </stage>
-            <p> Nein! ich widersteh nicht länger, Zauberin, ich widersteh nicht länger, vermag
-              nicht! Ich bin dein, auf ewig dein. O las mich nun hangen an deinen Lippen, vergehn im
+            <stage>vom Zauber ihrer Stimme auser sich, ganz in trunkner Ekstase versunken, stürzt zu
+              ihren Füssen, fast ihre Hände, drükt sie an seine Lippen, und ruft.</stage>
+            <p>Nein! ich widersteh nicht länger, Zauberin, ich widersteh nicht länger, vermag nicht!
+              Ich bin dein, auf ewig dein. O las mich nun hangen an deinen Lippen, vergehn im
               Wonnegenus! las mich!</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE</speaker>
-            <stage>
-              <hi>auf einen Augenblik von seiner Schwärmerei angestekt, drükt ihm die Hand, neigt
-                sich zu ihm herab, zieht sich aber plözlich zurük, und schlägt ein Gelächter
-                auf.</hi>
-            </stage>
-            <p> Hab ich dich? Armer Faust – der Teufel und das vermeinte schöne Weib, dem du die
+            <stage>auf einen Augenblik von seiner Schwärmerei angestekt, drükt ihm die Hand, neigt
+              sich zu ihm herab, zieht sich aber plözlich zurük, und schlägt ein Gelächter
+              auf.</stage>
+            <p>Hab ich dich? Armer Faust – der Teufel und das vermeinte schöne Weib, dem du die
               Hände drükst, sind eins!</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST</speaker>
-            <stage>
-              <hi>mit Entsezzen ausspringend.</hi>
-            </stage>
-            <l> Eins? –</l>
+            <stage>mit Entsezzen ausspringend.</stage>
+            <p>Eins? –</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Eins! Nun bist du mein, und ich lasse dich nicht, lasse nicht ein Fäserchen von dir.
+            <p>Eins! Nun bist du mein, und ich lasse dich nicht, lasse nicht ein Fäserchen von dir.
               Da ist dein Kontrakt, mit deinem Blut unterzeichnet, du bist mein!</p>
             <pb n="335"/>
           </sp>
           <sp who="#faust">
             <speaker>FAUST</speaker>
-            <stage>
-              <hi>wild, verzweifelnd die Hände ringend.</hi>
-            </stage>
-            <p> Wehe! Wehe! Elend ohne Ende! Jammer und Qualen ohne Namen! <hi>Bitter und
-                heftig.</hi> O du hämischer, Schadenfroher Teufel.</p>
+            <stage>wild, verzweifelnd die Hände ringend.</stage>
+            <p>Wehe! Wehe! Elend ohne Ende! Jammer und Qualen ohne Namen! <stage>Bitter und
+                heftig.</stage> O du hämischer, Schadenfroher Teufel.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE</speaker>
-            <stage>
-              <hi>in ihrem wahren Ton.</hi>
-            </stage>
-            <p> Nein Doktor, kein Schadenfroher, ein rechter Spashafter Teufel, ein rechter guter
+            <stage>in ihrem wahren Ton.</stage>
+            <p>Nein Doktor, kein Schadenfroher, ein rechter Spashafter Teufel, ein rechter guter
               Teufel. Hören Sie mich nur, Doktor: kennen Sie nicht in ihrer Nachbarschaft eine junge
               Frau, Namens Rosalinde, eine Oberstenwitwe?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Deren Bruder bei mir im Hause wont?</l>
+            <p>Deren Bruder bei mir im Hause wont?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Die nemliche! Kennen Sie sie?</l>
+            <p>Die nemliche! Kennen Sie sie?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <p> Dem Namen nach, ja. Man hat mir viel von ihrer Schönheit gesagt, und ihr Bruder viel
+            <p>Dem Namen nach, ja. Man hat mir viel von ihrer Schönheit gesagt, und ihr Bruder viel
               von ihrem Geiste.</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Nun, Herr Doktor, der Student, der heut bei Ihnen hören wollte, der Teufel, den Sie
+            <p>Nun, Herr Doktor, der Student, der heut bei Ihnen hören wollte, der Teufel, den Sie
               zitirten, das schöne Weib, das er Ihnen über den Hals schikte, und diese Rosalinde
-                <hi>Mit einem tiefen Kniks.</hi> machen Ihnen ihr Kompliment, denn alle sind
+                <stage>Mit einem tiefen Kniks.</stage> machen Ihnen ihr Kompliment, denn alle sind
               eins.</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Was? –</l>
+            <p>Was? –</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Ja, Herr Doktor, ganz richtig. Ich hatte mich in Sie verliebt. Ihre Narrheit mit den
+            <p>Ja, Herr Doktor, ganz richtig. Ich hatte mich in Sie verliebt. Ihre Narrheit mit den
               Geisterzitazionen ging mir zu Herzen; ich entschlos mich, Sie zu kuriren, und da
               spielt ich Ihnen denn die Komödie. Wenn Sie sich nun einem Teufel, wie ich, mit Leib
               und Seel <pb n="336"/> ergeben, und zum Rekompens ein Vermögen von 50000 Thaler dafür
@@ -1457,26 +1368,22 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST</speaker>
-            <stage>
-              <hi>voll Entzükken ihre Hand ergreifend.</hi>
-            </stage>
-            <l> Weib! Engel! o wie schön hast du mich von meiner Torheit geheilt – Und du könntest
-              mich lieben?</l>
+            <stage>voll Entzükken ihre Hand ergreifend.</stage>
+            <p>Weib! Engel! o wie schön hast du mich von meiner Torheit geheilt – Und du könntest
+              mich lieben?</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <l> Ueber die Frage! Wozu denn alle meine Maskeraden, wenn Liebe nicht im Spiel war?</l>
+            <p>Ueber die Frage! Wozu denn alle meine Maskeraden, wenn Liebe nicht im Spiel war?</p>
           </sp>
           <sp who="#faust">
             <speaker>FAUST</speaker>
-            <stage>
-              <hi>sie in seine Arme fassend.</hi>
-            </stage>
-            <l> O so darf ich? gütiges, himmlisches Weib! daß ich nicht sterbe für Freude!</l>
+            <stage>sie in seine Arme fassend.</stage>
+            <p>O so darf ich? gütiges, himmlisches Weib! daß ich nicht sterbe für Freude!</p>
           </sp>
           <sp who="#rosalinde">
             <speaker>ROSALINDE.</speaker>
-            <p> Sachte! mit der Freude wäre mir nicht gedient. Ueberlassen Sie das unsern Poeten,
+            <p>Sachte! mit der Freude wäre mir nicht gedient. Ueberlassen Sie das unsern Poeten,
               lieber Doktor, die sterben so gern für Ihre Damen. Auch bin ich keine grausame
               Prinzes. – Und nun kommen Sie mit zu meinem Bruder – auch der war einer von den
               Teufeln. Er mus doch wissen, daß der Teufel den Doktor Faust wirklich geholt hat.
@@ -1484,10 +1391,8 @@
           </sp>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
-            <l> Tor, der ich war – und bin nun so glüklich! Verdien ichs? –</l>
-            <stage>
-              <hi>Sie gehen ab.</hi>
-            </stage>
+            <p>Tor, der ich war – und bin nun so glüklich! Verdien ichs? –</p>
+            <stage>Sie gehen ab.</stage>
             <pb n="337"/>
           </sp>
         </div>
