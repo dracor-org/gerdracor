@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Gyges und sein Ring</title>
+        <title type="main">Gyges und sein Ring</title>
+        <title type="sub">Eine Tragödie in fünf Akten</title>
         <author key="pnd:118547445">Hebbel, Friedrich</author>
       </titleStmt>
       <publicationStmt>
@@ -43,32 +44,32 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="kandaules">
-            <persName>KANDAULES</persName>
+          <person xml:id="kandaules" sex="MALE">
+            <persName>Kandaules</persName>
           </person>
-          <person xml:id="thoas">
-            <persName>THOAS</persName>
+          <person xml:id="thoas" sex="MALE">
+            <persName>Thoas</persName>
           </person>
-          <person xml:id="gyges">
-            <persName>GYGES</persName>
+          <person xml:id="gyges" sex="MALE">
+            <persName>Gyges</persName>
           </person>
-          <person xml:id="rhodope">
-            <persName>RHODOPE</persName>
+          <person xml:id="rhodope" sex="FEMALE">
+            <persName>Rhodope</persName>
           </person>
-          <person xml:id="hero">
-            <persName>HERO</persName>
+          <person xml:id="hero" sex="FEMALE">
+            <persName>Hero</persName>
           </person>
-          <person xml:id="lesbia">
-            <persName>LESBIA</persName>
+          <person xml:id="lesbia" sex="FEMALE">
+            <persName>Lesbia</persName>
           </person>
-          <person xml:id="volk">
-            <persName>VOLK</persName>
+          <personGrp xml:id="volk" sex="UNKNOWN">
+            <name>Volk</name>
+          </personGrp>
+          <person xml:id="ein_diener" sex="MALE">
+            <persName>Ein Diener</persName>
           </person>
-          <person xml:id="ein_diener">
-            <persName>EIN DIENER</persName>
-          </person>
-          <person xml:id="karna">
-            <persName>KARNA</persName>
+          <person xml:id="karna" sex="MALE">
+            <persName>Karna</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -82,6 +83,7 @@
       <listChange>
         <change when="2017-01-06">(dlina) file conversion from source</change>
         <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2018-11-03">(ff) formalities</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -92,8 +94,6 @@
         <head>Gyges und sein Ring</head>
         <head>Eine Tragödie in fünf Akten</head>
       </div>
-    </front>
-    <body>
       <div type="epigraph">
         <head>[Motto]</head>
         <lg>
@@ -110,22 +110,30 @@
           <castItem>Kandaules, König von Lydien.</castItem>
           <castItem>Rhodope, seine Gemahlin.</castItem>
           <castItem>Gyges, ein Grieche.</castItem>
-          <castItem>Lesbia,</castItem>
-          <castItem>Hero, Sklavinnen.</castItem>
-          <castItem>Thoas,</castItem>
-          <castItem>Karna, Sklaven.</castItem>
+          <castGroup>
+            <castItem>Lesbia,</castItem>
+            <castItem>Hero,</castItem>
+            <roleDesc>Sklavinnen.</roleDesc>
+          </castGroup>
+          <castGroup>
+            <castItem>Thoas,</castItem>
+            <castItem>Karna,</castItem>
+            <roleDesc>Sklaven.</roleDesc>
+          </castGroup>
           <castItem>Volk.</castItem>
         </castList>
       </div>
+      <set>
+        <p>Die Handlung ist vorgeschichtlich und mythisch; sie ereignet sich innerhalb eines
+          Zeitraums von zwei Mal vierundzwanzig Stunden.</p>
+      </set>
+    </front>
+    <body>
       <div type="act">
         <head>Erster Akt</head>
-        <stage>
-          <hi>Halle.</hi>
-        </stage>
-        <stage>
-          <hi>Kandaules und Gyges treten auf. Kandaules schnallt sich das Schwert um, Thoas folgt
-            mit dem Diadem.</hi>
-        </stage>
+        <stage>Halle.</stage>
+        <stage>Kandaules und Gyges treten auf. Kandaules schnallt sich das Schwert um, Thoas folgt
+          mit dem Diadem.</stage>
         <sp who="#kandaules">
           <speaker>KANDAULES.</speaker>
           <lg>
@@ -141,9 +149,7 @@
         </sp>
         <sp who="#thoas">
           <speaker>THOAS</speaker>
-          <stage>
-            <hi>reicht ihm das Diadem.</hi>
-          </stage>
+          <stage>reicht ihm das Diadem.</stage>
         </sp>
         <sp who="#kandaules">
           <speaker>KANDAULES.</speaker>
@@ -238,9 +244,7 @@
         </sp>
         <sp who="#thoas">
           <speaker>THOAS</speaker>
-          <stage>
-            <hi>mit dem alten Schmuck ab.</hi>
-          </stage>
+          <stage>mit dem alten Schmuck ab.</stage>
         </sp>
         <sp who="#gyges">
           <speaker>GYGES.</speaker>
@@ -267,16 +271,12 @@
         </sp>
         <sp who="#thoas">
           <speaker>THOAS</speaker>
-          <stage>
-            <hi>kommt mit dem neuen Schmuck.</hi>
-          </stage>
+          <stage>kommt mit dem neuen Schmuck.</stage>
         </sp>
         <sp who="#kandaules">
           <speaker>KANDAULES.</speaker>
           <l>So ist es recht!</l>
-          <stage>
-            <hi>Er setzt das Diadem auf.</hi>
-          </stage>
+          <stage>Er setzt das Diadem auf.</stage>
           <lg>
             <l>Das sitzt! Und alles, was mein Königreich</l>
             <l>Im Schacht der Berge und im Grund des Meeres</l>
@@ -288,9 +288,7 @@
             <l>Den man in hundert Jahren erst entdeckt. –</l>
             <l>Begreifst du nun?</l>
           </lg>
-          <stage>
-            <hi>Zu Gyges.</hi>
-          </stage>
+          <stage>Zu Gyges.</stage>
           <lg>
             <l>Das andre eignet sich</l>
             <l>Für einen Riesenkopf, wie eure Bildner</l>
@@ -299,18 +297,14 @@
             <l>Von eines Brunnens moosgem Rand herab</l>
             <l>Die Kinder euch erschrecken helfen soll.</l>
           </lg>
-          <stage>
-            <hi>Er gürtet sich das Schwert um.</hi>
-          </stage>
+          <stage>Er gürtet sich das Schwert um.</stage>
           <lg>
             <l>Dies Schwert ist etwas leichter, wie das alte,</l>
             <l>Doch dafür kann mans schwingen, wenn man muß,</l>
             <l>Und nicht bloß draußen, unterm freien Himmel,</l>
             <l>Wo die Giganten sich mit Felsen werfen,</l>
           </lg>
-          <stage>
-            <hi>Er ziehts und schwingts.</hi>
-          </stage>
+          <stage>Er ziehts und schwingts.</stage>
           <lg>
             <l>Nein, auch in menschlich engem Raum, wie hier!</l>
             <l>Drum Thoas, spar dir ja die dritte Rede,</l>
@@ -325,9 +319,7 @@
             <l>In denen sich ein Wittrungswechsel meldet,</l>
             <l>Die alten Knochen spüren ihn zuerst!</l>
           </lg>
-          <stage>
-            <hi>Ab.</hi>
-          </stage>
+          <stage>Ab.</stage>
         </sp>
         <sp who="#gyges">
           <speaker>GYGES.</speaker>
@@ -432,9 +424,7 @@
             <l>Herr, ich kam nicht bloß,</l>
             <l>Zu bitten!</l>
           </lg>
-          <stage>
-            <hi>Er zieht einen Ring hervor.</hi>
-          </stage>
+          <stage>Er zieht einen Ring hervor.</stage>
           <lg>
             <l>Nimm! Es ist ein Königsring!</l>
             <l>Du siehst ihn an, du findest nichts an ihm,</l>
@@ -449,9 +439,7 @@
             <l>Wenn er ihn dir nicht willig reichen will.</l>
             <l>Trägst du ihn so,</l>
           </lg>
-          <stage>
-            <hi>Mit Zeichen und Gebärden.</hi>
-          </stage>
+          <stage>Mit Zeichen und Gebärden.</stage>
           <lg>
             <l>daß das Metall nach vorn</l>
             <l>Zu sitzen kommt, so ist er bloß ein Schmuck,</l>
@@ -668,15 +656,9 @@
         <sp who="#gyges">
           <speaker>GYGES.</speaker>
           <l>Und ich wappne mich!</l>
-          <stage>
-            <hi>Beide ab.</hi>
-          </stage>
-          <stage>
-            <hi>Gemach der Königin.</hi>
-          </stage>
-          <stage>
-            <hi>Rhodope nebst ihren Dienerinnen, Lesbia und Hero darunter tritt auf.</hi>
-          </stage>
+          <stage>Beide ab.</stage>
+          <stage>Gemach der Königin.</stage>
+          <stage>Rhodope nebst ihren Dienerinnen, Lesbia und Hero darunter tritt auf.</stage>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE.</speaker>
@@ -884,9 +866,7 @@
         </sp>
         <sp who="#kandaules">
           <speaker>KANDAULES</speaker>
-          <stage>
-            <hi>tritt rasch ein.</hi>
-          </stage>
+          <stage>tritt rasch ein.</stage>
           <lg>
             <l>Rhodope, sei gegrüßt! –</l>
             <l>Doch – Weißt du, wer ich bin? Ein Hermenwächter,</l>
@@ -1032,9 +1012,7 @@
             <l>Nein doch, nein!</l>
             <l>Für jeden Guten noch viel mehr!</l>
           </lg>
-          <stage>
-            <hi>Zu Lesbia.</hi>
-          </stage>
+          <stage>Zu Lesbia.</stage>
           <lg>
             <l>Kannst du</l>
             <l>Noch ruhig atmen, wirst du nicht in Scham</l>
@@ -1091,9 +1069,7 @@
             <l>Bläst auch der frische Wind an allen Orten</l>
             <l>Die Schleier weg: du hältst den deinen fest.</l>
           </lg>
-          <stage>
-            <hi>Musik.</hi>
-          </stage>
+          <stage>Musik.</stage>
           <l>Der Zug! Da darf der König ja nicht fehlen.</l>
         </sp>
         <sp who="#rhodope">
@@ -1123,9 +1099,7 @@
             <l>Sich drin den Tod auch nur verdienen könnte,</l>
             <l>Darum verhinge ich ihn heut nicht gern!</l>
           </lg>
-          <stage>
-            <hi>Ab.</hi>
-          </stage>
+          <stage>Ab.</stage>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE.</speaker>
@@ -1141,26 +1115,18 @@
             <l>Ei nein! Dir sangs die Amme nimmer vor,</l>
             <l>Daß Mannes Angesicht der Tod für dich!</l>
           </lg>
-          <stage>
-            <hi>Lesbia, Hero und die übrigen ab.</hi>
-          </stage>
+          <stage>Lesbia, Hero und die übrigen ab.</stage>
           <lg>
             <l>Das Träumen kennt hier keine! Auch der Besten</l>
             <l>Ist Opfer, was mir einzge Freude ist!</l>
           </lg>
-          <stage>
-            <hi>Ab.</hi>
-          </stage>
-          <stage>
-            <hi><pb n="22"/> Freier Platz.</hi>
-          </stage>
-          <stage>
-            <hi>Viel Volk. Der König auf einem Thron. Lesbia, Hero usw. an der Seite auf einem
-              Balkon. Die Spiele sind eben beendigt. Allgemeine Bewegung und Sonderung in Gruppen.
-              Ringer, Faustkämpfer, Wagenlenker usw. werden nach und nach sichtbar, alle mit Zweigen
-              von der Silberpappel bekränzt. Wein wird gereicht, Musik ertönt, das Fest
-              beginnt.</hi>
-          </stage>
+          <stage>Ab.</stage>
+          <stage><pb n="22"/> Freier Platz.</stage>
+          <stage>Viel Volk. Der König auf einem Thron. Lesbia, Hero usw. an der Seite auf einem
+            Balkon. Die Spiele sind eben beendigt. Allgemeine Bewegung und Sonderung in Gruppen.
+            Ringer, Faustkämpfer, Wagenlenker usw. werden nach und nach sichtbar, alle mit Zweigen
+            von der Silberpappel bekränzt. Wein wird gereicht, Musik ertönt, das Fest
+            beginnt.</stage>
         </sp>
         <sp who="#volk">
           <speaker>VOLK.</speaker>
@@ -1168,18 +1134,14 @@
         </sp>
         <sp who="#kandaules">
           <speaker>KANDAULES</speaker>
-          <stage>
-            <hi>in den Hintergrund schauend.</hi>
-          </stage>
+          <stage>in den Hintergrund schauend.</stage>
           <lg>
             <l>Im Diskuswerfen auch?</l>
             <l>Zum dritten Mal? Das sollt ich übelnehmen!</l>
             <l>Da kommt ja gar nichts auf die Meinigen.</l>
           </lg>
-          <stage>
-            <hi>Heruntersteigend und dem aus dem Hintergrunde kommenden Gyges, dem das Volk noch
-              immer zujubelt und Platz macht, entgegenschreitend.</hi>
-          </stage>
+          <stage>Heruntersteigend und dem aus dem Hintergrunde kommenden Gyges, dem das Volk noch
+            immer zujubelt und Platz macht, entgegenschreitend.</stage>
           <lg>
             <l>Bescheiden bist du, das ist wahr! Du nimmst</l>
             <l>Nicht mehr, als da ist.</l>
@@ -1236,27 +1198,19 @@
             <l>Und, wenn auch ohne Recht, ich trinke mit!</l>
             <l>Nun kommt der Teil des Festes, den ich liebe!</l>
           </lg>
-          <stage>
-            <hi>Winkt einem Diener.</hi>
-          </stage>
+          <stage>Winkt einem Diener.</stage>
           <l>Heran!</l>
         </sp>
         <sp who="#ein_diener">
           <speaker>EIN DIENER</speaker>
-          <stage>
-            <hi>bringt einen Pokal mit Wein.</hi>
-          </stage>
+          <stage>bringt einen Pokal mit Wein.</stage>
         </sp>
         <sp who="#kandaules">
           <speaker>KANDAULES</speaker>
-          <stage>
-            <hi>gießt einige Tropfen auf die Erde.</hi>
-          </stage>
+          <stage>gießt einige Tropfen auf die Erde.</stage>
           <l>Die Wurzel erst! Und dann der Zweig!</l>
-          <stage>
-            <hi>Er trinkt und will Gyges den Pokal reichen. Dieser sieht wieder zu dem Balkon
-              hinüber.</hi>
-          </stage>
+          <stage>Er trinkt und will Gyges den Pokal reichen. Dieser sieht wieder zu dem Balkon
+            hinüber.</stage>
           <lg>
             <l>Komm! – Ha! – Schwarz oder braun, das ist die Frage,</l>
             <l>Nicht wahr?</l>
@@ -1285,17 +1239,13 @@
         </sp>
         <sp who="#gyges">
           <speaker>GYGES</speaker>
-          <stage>
-            <hi>trinkt.</hi>
-          </stage>
+          <stage>trinkt.</stage>
           <l>Das kühlt!</l>
         </sp>
         <sp who="#kandaules">
           <speaker>KANDAULES.</speaker>
           <l>O weh! hinunter geht dein Stern!</l>
-          <stage>
-            <hi>Die Mädchen entfernen sich, aber man sieht sie noch.</hi>
-          </stage>
+          <stage>Die Mädchen entfernen sich, aber man sieht sie noch.</stage>
           <lg>
             <l>Nun, es war Zeit. Sieh dich nur um! Die drehen</l>
             <l>Sich schon, als wärs um einen Thyrsosstab,</l>
@@ -1436,35 +1386,25 @@
             <l>Und Bettler unter Bettlern lieg ich da.</l>
             <l>Drum widerstrebe nicht und nimm den Ring!</l>
           </lg>
-          <stage>
-            <hi>Er reicht ihn Gyges, dieser nimmt ihn nicht.</hi>
-          </stage>
+          <stage>Er reicht ihn Gyges, dieser nimmt ihn nicht.</stage>
           <lg>
             <l>Die Nacht bricht ein, ich zeig dir das Gemach,</l>
             <l>Und wenn du siehst, daß ichs mit ihr betrete,</l>
             <l>So folgst du uns!</l>
           </lg>
-          <stage>
-            <hi>Er faßt Gyges bei der Hand und zieht ihn mit sich fort.</hi>
-          </stage>
+          <stage>Er faßt Gyges bei der Hand und zieht ihn mit sich fort.</stage>
           <lg>
             <l>Ich fordre es von dir!</l>
             <l>Und bist dus deiner Lesbia nicht schuldig?</l>
             <l>Vielleicht ist sie die Siegerin!</l>
           </lg>
-          <stage>
-            <hi>Beide ab.</hi>
-          </stage>
+          <stage>Beide ab.</stage>
         </sp>
       </div>
       <div type="act">
         <head>Zweiter Akt</head>
-        <stage>
-          <hi>Halle.</hi>
-        </stage>
-        <stage>
-          <hi>Früher Morgen. Thoas tritt auf.</hi>
-        </stage>
+        <stage>Halle.</stage>
+        <stage>Früher Morgen. Thoas tritt auf.</stage>
         <sp who="#thoas">
           <speaker>THOAS.</speaker>
           <lg>
@@ -1482,15 +1422,11 @@
             <l>Der junge Gyges! Ei, wenn du das wüßtest,</l>
             <l>Was ich jetzt weiß, du gingest nicht gebückt.</l>
           </lg>
-          <stage>
-            <hi>Er zieht sich zurück.</hi>
-          </stage>
+          <stage>Er zieht sich zurück.</stage>
         </sp>
         <sp who="#gyges">
           <speaker>GYGES</speaker>
-          <stage>
-            <hi>tritt auf.</hi>
-          </stage>
+          <stage>tritt auf.</stage>
           <lg>
             <l>Schon wieder bin ich hier! Was will ich hier?</l>
             <l>Es duldet mich im Freien nicht, ein Duft</l>
@@ -1502,9 +1438,7 @@
         </sp>
         <sp who="#thoas">
           <speaker>THOAS</speaker>
-          <stage>
-            <hi>tritt hervor.</hi>
-          </stage>
+          <stage>tritt hervor.</stage>
           <lg>
             <l>Schon munter, Karna? Herr, vergib, ich hielt dich</l>
             <l>Für einen andern! Du noch nicht zu Bett?</l>
@@ -1560,9 +1494,7 @@
             <l>Das wüßt ich eben gern! Denn, wenn er hörte,</l>
             <l>Was ich gehört – Nun, nun, er wird wohl nicht!</l>
           </lg>
-          <stage>
-            <hi>Langsam ab.</hi>
-          </stage>
+          <stage>Langsam ab.</stage>
         </sp>
         <sp who="#gyges">
           <speaker>GYGES.</speaker>
@@ -1575,9 +1507,7 @@
         </sp>
         <sp who="#kandaules">
           <speaker>KANDAULES</speaker>
-          <stage>
-            <hi>tritt auf.</hi>
-          </stage>
+          <stage>tritt auf.</stage>
           <lg>
             <l>Sie wacht und stellt sich doch, als ob sie schliefe! –</l>
             <l>Du, Gyges? Schon? – Wie, oder sag ich: Noch?</l>
@@ -1857,13 +1787,9 @@
             <l>Das ist ein Rausch, wie der vom Duft der Reben,</l>
             <l>Ein kühler Hauch des Morgens bläst ihn fort.</l>
           </lg>
-          <stage>
-            <hi>Indem er geht.</hi>
-          </stage>
+          <stage>Indem er geht.</stage>
           <l>Ich hoffs zum mindesten und werd es sehn!</l>
-          <stage>
-            <hi>Ab.</hi>
-          </stage>
+          <stage>Ab.</stage>
         </sp>
         <sp who="#gyges">
           <speaker>GYGES.</speaker>
@@ -1893,9 +1819,7 @@
             <l>Aus ihren Blicken durstig in mich saugend,</l>
             <l><pb n="31"/> Verhaucht ich meines Odems letzten Rest!</l>
           </lg>
-          <stage>
-            <hi>Thoas kommt mit der verschleierten Lesbia.</hi>
-          </stage>
+          <stage>Thoas kommt mit der verschleierten Lesbia.</stage>
         </sp>
         <sp who="#thoas">
           <speaker>THOAS.</speaker>
@@ -2058,16 +1982,12 @@
             <l>Das träumtest du! Ich seh ganz anders aus!</l>
             <l>Erschrick!</l>
           </lg>
-          <stage>
-            <hi>Sie will sich entschleiern.</hi>
-          </stage>
+          <stage>Sie will sich entschleiern.</stage>
         </sp>
         <sp who="#gyges">
           <speaker>GYGES.</speaker>
           <l>Nein, nein!</l>
-          <stage>
-            <hi>Hält sie ab.</hi>
-          </stage>
+          <stage>Hält sie ab.</stage>
         </sp>
         <sp who="#lesbia">
           <speaker>LESBIA.</speaker>
@@ -2128,9 +2048,7 @@
         </sp>
         <sp who="#lesbia">
           <speaker>LESBIA</speaker>
-          <stage>
-            <hi>zu Thoas.</hi>
-          </stage>
+          <stage>zu Thoas.</stage>
           <l>So geh allein!</l>
         </sp>
         <sp who="#gyges">
@@ -2144,9 +2062,7 @@
         <sp who="#thoas">
           <speaker>THOAS.</speaker>
           <l>Wohl!</l>
-          <stage>
-            <hi>Ab.</hi>
-          </stage>
+          <stage>Ab.</stage>
         </sp>
         <sp who="#lesbia">
           <speaker>LESBIA.</speaker>
@@ -2194,9 +2110,7 @@
         </sp>
         <sp who="#lesbia">
           <speaker>LESBIA</speaker>
-          <stage>
-            <hi>macht eine unwillkürliche Bewegung.</hi>
-          </stage>
+          <stage>macht eine unwillkürliche Bewegung.</stage>
         </sp>
         <sp who="#gyges">
           <speaker>GYGES.</speaker>
@@ -2226,9 +2140,7 @@
         </sp>
         <sp who="#lesbia">
           <speaker>LESBIA</speaker>
-          <stage>
-            <hi>lacht krampfhaft.</hi>
-          </stage>
+          <stage>lacht krampfhaft.</stage>
           <lg>
             <l>Vielleicht</l>
             <l>In dieser Stunde!</l>
@@ -2254,9 +2166,7 @@
         </sp>
         <sp who="#kandaules">
           <speaker>KANDAULES</speaker>
-          <stage>
-            <hi>tritt auf.</hi>
-          </stage>
+          <stage>tritt auf.</stage>
           <l>Nun?</l>
         </sp>
         <sp who="#gyges">
@@ -2270,9 +2180,7 @@
         <sp who="#gyges">
           <speaker>GYGES.</speaker>
           <l>Noch nicht, doch gleich!</l>
-          <stage>
-            <hi>Zu Lesbia.</hi>
-          </stage>
+          <stage>Zu Lesbia.</stage>
           <lg>
             <l>Gib Deine Hand einmal!</l>
             <l>Wie zart ist sie! Wie hart die meinige,</l>
@@ -2290,9 +2198,7 @@
             <l>Er will, daß ich das Glück bei dir vertrete:</l>
             <l>Ich tu es</l>
           </lg>
-          <stage>
-            <hi>Läßt sie los.</hi>
-          </stage>
+          <stage>Läßt sie los.</stage>
           <l>Und erkläre dich für frei!</l>
         </sp>
         <sp who="#lesbia">
@@ -2323,9 +2229,7 @@
         </sp>
         <sp who="#lesbia">
           <speaker>LESBIA</speaker>
-          <stage>
-            <hi>ab.</hi>
-          </stage>
+          <stage>ab.</stage>
         </sp>
         <sp who="#kandaules">
           <speaker>KANDAULES.</speaker>
@@ -2423,16 +2327,12 @@
         <sp who="#kandaules">
           <speaker>KANDAULES.</speaker>
           <l>Ich danke dir, daß du so edel bist!</l>
-          <stage>
-            <hi>Will ab.</hi>
-          </stage>
+          <stage>Will ab.</stage>
         </sp>
         <sp who="#gyges">
           <speaker>GYGES.</speaker>
           <l>Noch etwas!</l>
-          <stage>
-            <hi>Er zieht von seiner Brust einen Stein hervor.</hi>
-          </stage>
+          <stage>Er zieht von seiner Brust einen Stein hervor.</stage>
           <l>Nimm!</l>
         </sp>
         <sp who="#kandaules">
@@ -2472,9 +2372,7 @@
             <l>Nein! Nicht dir! Leb wohl, leb wohl!</l>
             <l>Doch niemals dürfen wir uns wiedersehn!</l>
           </lg>
-          <stage>
-            <hi>Ab.</hi>
-          </stage>
+          <stage>Ab.</stage>
         </sp>
         <sp who="#gyges">
           <speaker>GYGES.</speaker>
@@ -2488,25 +2386,17 @@
             <l>Nun, meine Straße setz ich fort und löse</l>
             <l>Dort unten einen ab, der müde ist!</l>
           </lg>
-          <stage>
-            <hi>Ab.</hi>
-          </stage>
+          <stage>Ab.</stage>
           <pb n="37"/>
         </sp>
       </div>
       <div type="act">
         <head>Dritter Akt</head>
-        <stage>
-          <hi>Rhodopens Gemach.</hi>
-        </stage>
-        <stage>
-          <hi>Hero und andere Dienerinnen sind mit Ordnen beschäftigt.</hi>
-        </stage>
+        <stage>Rhodopens Gemach.</stage>
+        <stage>Hero und andere Dienerinnen sind mit Ordnen beschäftigt.</stage>
         <sp who="#rhodope">
           <speaker>RHODOPE</speaker>
-          <stage>
-            <hi>tritt herein.</hi>
-          </stage>
+          <stage>tritt herein.</stage>
           <l>Warum sind diese Spiegel nicht verhüllt?</l>
         </sp>
         <sp who="#hero">
@@ -2537,9 +2427,7 @@
         </sp>
         <sp who="#hero">
           <speaker>HERO</speaker>
-          <stage>
-            <hi>schließt die Türen und wendet die Spiegel um.</hi>
-          </stage>
+          <stage>schließt die Türen und wendet die Spiegel um.</stage>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE.</speaker>
@@ -2564,9 +2452,7 @@
         </sp>
         <sp who="#hero">
           <speaker>HERO</speaker>
-          <stage>
-            <hi>indem sie sich mit ihren Begleiterinnen entfernt.</hi>
-          </stage>
+          <stage>indem sie sich mit ihren Begleiterinnen entfernt.</stage>
           <l>Ich heiße Hero und nicht Lesbia!</l>
         </sp>
         <sp who="#rhodope">
@@ -2611,9 +2497,7 @@
         </sp>
         <sp who="#hero">
           <speaker>HERO</speaker>
-          <stage>
-            <hi>tritt ein.</hi>
-          </stage>
+          <stage>tritt ein.</stage>
           <l>Der König!</l>
         </sp>
         <sp who="#rhodope">
@@ -2767,9 +2651,7 @@
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE</speaker>
-          <stage>
-            <hi>lacht.</hi>
-          </stage>
+          <stage>lacht.</stage>
         </sp>
         <sp who="#kandaules">
           <speaker>KANDAULES.</speaker>
@@ -2845,9 +2727,7 @@
             <l>Beschenkten, draußen, wie ein Bettler, klopft.</l>
             <l>Rasch auf mit ihr, und gleich bist du geheilt!</l>
           </lg>
-          <stage>
-            <hi>Er will öffnen.</hi>
-          </stage>
+          <stage>Er will öffnen.</stage>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE.</speaker>
@@ -3207,9 +3087,7 @@
         </sp>
         <sp who="#kandaules">
           <speaker>KANDAULES</speaker>
-          <stage>
-            <hi>will reden.</hi>
-          </stage>
+          <stage>will reden.</stage>
           <pb n="45"/>
         </sp>
         <sp who="#rhodope">
@@ -3218,9 +3096,7 @@
         </sp>
         <sp who="#kandaules">
           <speaker>KANDAULES</speaker>
-          <stage>
-            <hi>ab.</hi>
-          </stage>
+          <stage>ab.</stage>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE.</speaker>
@@ -3257,9 +3133,7 @@
         </sp>
         <sp who="#lesbia">
           <speaker>LESBIA</speaker>
-          <stage>
-            <hi>tritt herein.</hi>
-          </stage>
+          <stage>tritt herein.</stage>
           <l>Vergibst du, Königin?</l>
         </sp>
         <sp who="#rhodope">
@@ -3372,9 +3246,7 @@
         <sp who="#lesbia">
           <speaker>LESBIA.</speaker>
           <l>Mich graust! Es ist das erste Mal!</l>
-          <stage>
-            <hi>Ab.</hi>
-          </stage>
+          <stage>Ab.</stage>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE.</speaker>
@@ -3385,9 +3257,7 @@
         </sp>
         <sp who="#lesbia">
           <speaker>LESBIA</speaker>
-          <stage>
-            <hi>tritt mit Karna ein.</hi>
-          </stage>
+          <stage>tritt mit Karna ein.</stage>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE.</speaker>
@@ -3428,9 +3298,7 @@
         <sp who="#karna">
           <speaker>KARNA.</speaker>
           <l>Ich liefre ihn, lebendig oder tot.</l>
-          <stage>
-            <hi>Ab.</hi>
-          </stage>
+          <stage>Ab.</stage>
         </sp>
         <sp who="#lesbia">
           <speaker>LESBIA.</speaker>
@@ -3511,9 +3379,7 @@
         </sp>
         <sp who="#lesbia">
           <speaker>LESBIA</speaker>
-          <stage>
-            <hi>legt sich die Hand vor die Augen.</hi>
-          </stage>
+          <stage>legt sich die Hand vor die Augen.</stage>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE.</speaker>
@@ -3522,9 +3388,7 @@
       </div>
       <div type="act">
         <head>Vierter Akt</head>
-        <stage>
-          <hi>Gemach der Königin.</hi>
-        </stage>
+        <stage>Gemach der Königin.</stage>
         <sp who="#rhodope">
           <speaker>RHODOPE.</speaker>
           <lg>
@@ -3571,9 +3435,7 @@
         </sp>
         <sp who="#lesbia">
           <speaker>LESBIA</speaker>
-          <stage>
-            <hi>tritt ein.</hi>
-          </stage>
+          <stage>tritt ein.</stage>
           <l>O, Königin, er kommt!</l>
         </sp>
         <sp who="#rhodope">
@@ -3615,9 +3477,7 @@
         </sp>
         <sp who="#lesbia">
           <speaker>LESBIA</speaker>
-          <stage>
-            <hi>ab.</hi>
-          </stage>
+          <stage>ab.</stage>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE.</speaker>
@@ -3630,9 +3490,7 @@
         </sp>
         <sp who="#gyges">
           <speaker>GYGES</speaker>
-          <stage>
-            <hi>der während dem eingetreten ist.</hi>
-          </stage>
+          <stage>der während dem eingetreten ist.</stage>
           <l>Du hast mich rufen lassen, Königin!</l>
           <pb n="50"/>
         </sp>
@@ -3684,9 +3542,7 @@
             <l>Sie wollten einen edlern Dienst verrichten,</l>
             <l>Und eh dus ahntest, lag er so vor dir!</l>
           </lg>
-          <stage>
-            <hi>Er kniet während dem nieder.</hi>
-          </stage>
+          <stage>Er kniet während dem nieder.</stage>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE.</speaker>
@@ -3710,9 +3566,7 @@
         </sp>
         <sp who="#gyges">
           <speaker>GYGES</speaker>
-          <stage>
-            <hi>sich wieder erhebend.</hi>
-          </stage>
+          <stage>sich wieder erhebend.</stage>
           <lg>
             <l>Ihn aber traf es, wie ein Wetterschlag.</l>
             <l>Ihm war zumut, als hätt er sich bisher,</l>
@@ -3847,7 +3701,7 @@
             <l>Gleichviel! Die seltne Regung, die ihn faßte,</l>
             <l>Hat mich um das Verdienst des freien Todes,</l>
             <l><pb n="53"/> Dich aber um dein Opfer nicht gebracht.</l>
-            <l>Leb wohl! – Und <hi>deine</hi> Schwerter bleiben rein!</l>
+            <l>Leb wohl! – Und <emph>deine</emph> Schwerter bleiben rein!</l>
           </lg>
         </sp>
         <sp who="#rhodope">
@@ -3869,9 +3723,7 @@
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE</speaker>
-          <stage>
-            <hi>macht eine abwehrende Bewegung.</hi>
-          </stage>
+          <stage>macht eine abwehrende Bewegung.</stage>
         </sp>
         <sp who="#gyges">
           <speaker>GYGES.</speaker>
@@ -3882,15 +3734,11 @@
         </sp>
         <sp who="#kandaules">
           <speaker>KANDAULES</speaker>
-          <stage>
-            <hi>tritt ein.</hi>
-          </stage>
+          <stage>tritt ein.</stage>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE</speaker>
-          <stage>
-            <hi>ihm entgegen.</hi>
-          </stage>
+          <stage>ihm entgegen.</stage>
           <lg>
             <l>Ich irrte nicht! Es war im Schlafgemach</l>
             <l>Ein Mensch versteckt!</l>
@@ -4022,9 +3870,7 @@
         <sp who="#kandaules">
           <speaker>KANDAULES.</speaker>
           <l>Sprich, Gyges!</l>
-          <stage>
-            <hi>Ab.</hi>
-          </stage>
+          <stage>Ab.</stage>
         </sp>
         <sp who="#gyges">
           <speaker>GYGES.</speaker>
@@ -4058,9 +3904,7 @@
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE</speaker>
-          <stage>
-            <hi>macht mit der Hand eine abwehrende Bewegung.</hi>
-          </stage>
+          <stage>macht mit der Hand eine abwehrende Bewegung.</stage>
           <l>Er hat sein Gattenrecht dir abgetreten?</l>
         </sp>
         <sp who="#gyges">
@@ -4142,9 +3986,7 @@
             <l>Wir wissen auch,</l>
             <l>Was noch geschehen muß! Vergib mir nur!</l>
           </lg>
-          <stage>
-            <hi>Er will gehen.</hi>
-          </stage>
+          <stage>Er will gehen.</stage>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE.</speaker>
@@ -4389,9 +4231,7 @@
             <l>Und doch beglückt es mich, daß du dies meinst,</l>
             <l>Und ist genug für mich, mehr als genug!</l>
           </lg>
-          <stage>
-            <hi>Ab.</hi>
-          </stage>
+          <stage>Ab.</stage>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE.</speaker>
@@ -4399,16 +4239,12 @@
         </sp>
         <sp who="#lesbia">
           <speaker>LESBIA</speaker>
-          <stage>
-            <hi>stürzt herein und wirft sich Rhodopen zu Füßen.</hi>
-          </stage>
+          <stage>stürzt herein und wirft sich Rhodopen zu Füßen.</stage>
           <l>Du Gnädige! – Vergib! – Ich danke dir!</l>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE</speaker>
-          <stage>
-            <hi>sie aufhebend.</hi>
-          </stage>
+          <stage>sie aufhebend.</stage>
           <lg>
             <l>Du wirst mir wohl nicht danken, armes Kind!</l>
             <l>Und doch! Zuletzt! Ja, Lesbia, zuletzt!</l>
@@ -4417,12 +4253,8 @@
       </div>
       <div type="act">
         <head>Fünfter Akt</head>
-        <stage>
-          <hi>Freier Platz.</hi>
-        </stage>
-        <stage>
-          <hi>Der König tritt auf. Ihm folgt Thoas.</hi>
-        </stage>
+        <stage>Freier Platz.</stage>
+        <stage>Der König tritt auf. Ihm folgt Thoas.</stage>
         <sp who="#kandaules">
           <speaker>KANDAULES.</speaker>
           <lg>
@@ -4584,9 +4416,7 @@
         </sp>
         <sp who="#kandaules">
           <speaker>KANDAULES</speaker>
-          <stage>
-            <hi>lacht.</hi>
-          </stage>
+          <stage>lacht.</stage>
         </sp>
         <sp who="#thoas">
           <speaker>THOAS.</speaker>
@@ -4651,9 +4481,7 @@
         </sp>
         <sp who="#gyges">
           <speaker>GYGES</speaker>
-          <stage>
-            <hi>tritt auf.</hi>
-          </stage>
+          <stage>tritt auf.</stage>
         </sp>
         <sp who="#thoas">
           <speaker>THOAS.</speaker>
@@ -4662,9 +4490,7 @@
             <l>Selbst an der Mauer schießt Salpeter an,</l>
             <l>Warum denn nicht das Salz der Zeit an mir?</l>
           </lg>
-          <stage>
-            <hi>Er zieht sich in den Hintergrund zurück.</hi>
-          </stage>
+          <stage>Er zieht sich in den Hintergrund zurück.</stage>
         </sp>
         <sp who="#kandaules">
           <speaker>KANDAULES.</speaker>
@@ -4847,9 +4673,7 @@
         </sp>
         <sp who="#gyges">
           <speaker>GYGES</speaker>
-          <stage>
-            <hi>macht eine abwehrende Bewegung.</hi>
-          </stage>
+          <stage>macht eine abwehrende Bewegung.</stage>
         </sp>
         <sp who="#kandaules">
           <speaker>KANDAULES.</speaker>
@@ -5009,9 +4833,7 @@
         <sp who="#kandaules">
           <speaker>KANDAULES.</speaker>
           <l>Thoas!</l>
-          <stage>
-            <hi>Er nimmt sich die Krone ab.</hi>
-          </stage>
+          <stage>Er nimmt sich die Krone ab.</stage>
         </sp>
         <sp who="#thoas">
           <speaker>THOAS.</speaker>
@@ -5025,9 +4847,7 @@
             <l>Doch dafür hebst du diese Krone auf</l>
             <l>Und reichst sie dem, der übrig bleibt von uns!</l>
           </lg>
-          <stage>
-            <hi>Zu Gyges.</hi>
-          </stage>
+          <stage>Zu Gyges.</stage>
           <lg>
             <l>Wenn du das bist, so gönn ichs dir, und gern</l>
             <l>Wird man auf deinem Haupt sie sehn! – Ei was,</l>
@@ -5064,9 +4884,7 @@
             <l>Ein Tiger, ich für dich ein Leu und dies</l>
             <l>Der wilde Wald, in dem wir oft gejagt.</l>
           </lg>
-          <stage>
-            <hi><pb n="68"/> Sie ziehen.</hi>
-          </stage>
+          <stage><pb n="68"/> Sie ziehen.</stage>
         </sp>
         <sp who="#gyges">
           <speaker>GYGES.</speaker>
@@ -5082,23 +4900,15 @@
         <sp who="#gyges">
           <speaker>GYGES.</speaker>
           <l>So wehre dich!</l>
-          <stage>
-            <hi>Gefecht, währenddessen sie sich links verlieren.</hi>
-          </stage>
+          <stage>Gefecht, währenddessen sie sich links verlieren.</stage>
         </sp>
         <sp who="#thoas">
           <speaker>THOAS.</speaker>
           <l>Er fällt! – Der letzte Heraklide fiel!</l>
-          <stage>
-            <hi>Ab, ihnen nach.</hi>
-          </stage>
-          <stage>
-            <hi>Der Tempel der Hestia.</hi>
-          </stage>
-          <stage>
-            <hi>Man erblickt in der Mitte die Bildsäule der Göttin. Rhodope kommt rechts in
-              feierlichem Zug, mit ihr Lesbia, Hero und Karna. Es ist Abend. Fackeln.</hi>
-          </stage>
+          <stage>Ab, ihnen nach.</stage>
+          <stage>Der Tempel der Hestia.</stage>
+          <stage>Man erblickt in der Mitte die Bildsäule der Göttin. Rhodope kommt rechts in
+            feierlichem Zug, mit ihr Lesbia, Hero und Karna. Es ist Abend. Fackeln.</stage>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE.</speaker>
@@ -5110,9 +4920,7 @@
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE</speaker>
-          <stage>
-            <hi>schreitet in den Tempel und kniet vor der Bildsäule der Göttin nieder.</hi>
-          </stage>
+          <stage>schreitet in den Tempel und kniet vor der Bildsäule der Göttin nieder.</stage>
         </sp>
         <sp who="#hero">
           <speaker>HERO.</speaker>
@@ -5241,9 +5049,7 @@
         </sp>
         <sp who="#gyges">
           <speaker>GYGES</speaker>
-          <stage>
-            <hi>tritt auf.</hi>
-          </stage>
+          <stage>tritt auf.</stage>
         </sp>
         <sp who="#hero">
           <speaker>HERO.</speaker>
@@ -5275,9 +5081,7 @@
         </sp>
         <sp who="#thoas">
           <speaker>THOAS</speaker>
-          <stage>
-            <hi>tritt auf.</hi>
-          </stage>
+          <stage>tritt auf.</stage>
           <l><pb n="70"/> Ich bringe dir die Krone dar!</l>
         </sp>
         <sp who="#gyges">
@@ -5293,22 +5097,16 @@
         </sp>
         <sp who="#volk">
           <speaker>VOLK</speaker>
-          <stage>
-            <hi>von draußen.</hi>
-          </stage>
+          <stage>von draußen.</stage>
           <l>Heil, Gyges, Heil!</l>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE</speaker>
-          <stage>
-            <hi>erhebt sich und wendet sich.</hi>
-          </stage>
+          <stage>erhebt sich und wendet sich.</stage>
         </sp>
         <sp who="#volk">
           <speaker>VOLK</speaker>
-          <stage>
-            <hi>herein dringend.</hi>
-          </stage>
+          <stage>herein dringend.</stage>
           <l>Dem König Gyges Heil!</l>
         </sp>
         <sp who="#thoas">
@@ -5333,16 +5131,12 @@
         </sp>
         <sp who="#gyges">
           <speaker>GYGES</speaker>
-          <stage>
-            <hi>setzt die Krone auf.</hi>
-          </stage>
+          <stage>setzt die Krone auf.</stage>
           <l>Ich zahle seine Schuld.</l>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE</speaker>
-          <stage>
-            <hi>die sich dem Gyges langsam genähert hat.</hi>
-          </stage>
+          <stage>die sich dem Gyges langsam genähert hat.</stage>
           <l>Erst deine eigne, Gyges!</l>
         </sp>
         <sp who="#gyges">
@@ -5410,9 +5204,7 @@
         <sp who="#rhodope">
           <speaker>RHODOPE.</speaker>
           <l>Still, still, du bist an einem heilgen Ort.</l>
-          <stage>
-            <hi>Sie schreiten zum Altar.</hi>
-          </stage>
+          <stage>Sie schreiten zum Altar.</stage>
         </sp>
         <sp who="#rhodope">
           <speaker>RHODOPE.</speaker>
@@ -5424,9 +5216,7 @@
             <l>Und, wie das Volk zum König, so erhebe</l>
             <l>Ich ihn, sei du mir Zeugin, zum Gemahl.</l>
           </lg>
-          <stage>
-            <hi>Sie reicht Gyges die Hand.</hi>
-          </stage>
+          <stage>Sie reicht Gyges die Hand.</stage>
           <lg>
             <l>Als Morgengabe sieh die Krone an,</l>
             <l>Die schon gebietend dir vom Haupte funkelt,</l>
@@ -5440,18 +5230,14 @@
         <sp who="#rhodope">
           <speaker>RHODOPE.</speaker>
           <l>Dann hat er schon den Platz, der ihm gebührt.</l>
-          <stage>
-            <hi>Sie läßt Gyges' Hand los.</hi>
-          </stage>
+          <stage>Sie läßt Gyges' Hand los.</stage>
           <lg>
             <l>Nun tritt zurück, und halte dein Gelübde,</l>
             <l>Wie ich das meinige! Ich bin entsühnt,</l>
             <l>Denn keiner sah mich mehr, als dem es ziemte,</l>
             <l>Jetzt aber scheide ich mich</l>
           </lg>
-          <stage>
-            <hi>Sie durchsticht sich.</hi>
-          </stage>
+          <stage>Sie durchsticht sich.</stage>
           <l>so von dir!</l>
         </sp>
       </div>
