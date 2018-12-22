@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Sappho</title>
+        <title type="main">Sappho</title>
+        <title type="sub">Trauerspiel in fünf Aufzügen</title>
         <author key="pnd:118542192">Grillparzer, Franz</author>
       </titleStmt>
       <publicationStmt>
@@ -44,38 +45,38 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="rhamnes">
-            <persName>RHAMNES</persName>
+          <person xml:id="rhamnes" sex="MALE">
+            <persName>Rhamnes</persName>
           </person>
-          <person xml:id="melitta">
-            <persName>MELITTA</persName>
+          <person xml:id="melitta" sex="FEMALE">
+            <persName>Melitta</persName>
           </person>
-          <person xml:id="volk">
-            <persName>VOLK</persName>
-            <persName xml:id="geschrei">GESCHREI</persName>
+          <person xml:id="geschrei-volk" sex="UNKNOWN">
+            <persName>Geschrei/Volk</persName>
           </person>
-          <person xml:id="sappho">
-            <persName>SAPPHO</persName>
+          <person xml:id="sappho" sex="FEMALE">
+            <persName>Sappho</persName>
           </person>
-          <person xml:id="einer_aus_dem_volke">
-            <persName>EINER AUS DEM VOLKE</persName>
+          <person xml:id="einer_aus_dem_volke" sex="MALE">
+            <persName>Einer aus dem Volke</persName>
           </person>
-          <person xml:id="phaon">
-            <persName>PHAON</persName>
+          <person xml:id="phaon" sex="MALE">
+            <persName>Phaon</persName>
           </person>
-          <person xml:id="eucharis">
-            <persName>EUCHARIS</persName>
+          <person xml:id="eucharis" sex="FEMALE">
+            <persName>Eucharis</persName>
           </person>
-          <person xml:id="mädchen">
-            <persName>MÄDCHEN</persName>
+          <person xml:id="maedchen" sex="FEMALE">
+            <persName>Mädchen</persName>
           </person>
-          <person xml:id="man_ruft_von_innen">
-            <persName>MAN RUFT VON INNEN</persName>
-            <persName xml:id="man_ruft_drinnen">MAN RUFT DRINNEN</persName>
+          <person xml:id="ruf_von_drinnen" sex="UNKNOWN">
+            <persName>Ruf von drinnen</persName>
+            <persName type="variant">Man ruft von innen</persName>
+            <persName type="variant">Man ruft drinnen</persName>
           </person>
-          <person xml:id="ein_landmann">
-            <persName>EIN LANDMANN</persName>
-            <persName xml:id="landmann">LANDMANN</persName>
+          <person xml:id="ein_landmann" sex="MALE">
+            <persName>Ein Landmann</persName>
+            <persName xml:id="landmann">Landmann</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -89,6 +90,7 @@
       <listChange>
         <change when="2017-01-06">(dlina) file conversion from source</change>
         <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2018-12-22">(ff) formalities</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -100,8 +102,6 @@
         <head>Trauerspiel in fünf Aufzügen</head>
         <pb n="715"/>
       </div>
-    </front>
-    <body>
       <div type="dedication">
         <head>[Widmung]</head>
         <p>Dem Herrn Carl August West</p>
@@ -117,34 +117,40 @@
           <head>Personen.</head>
           <castItem>Sappho</castItem>
           <castItem>Phaon</castItem>
-          <castItem>Eucharis,</castItem>
-          <castItem>Melitta, Dienerinnen Sapphos</castItem>
+          <castGroup>
+            <castItem>Eucharis,</castItem>
+            <castItem>Melitta,</castItem>
+            <roleDesc>Dienerinnen Sapphos</roleDesc>
+          </castGroup>
           <castItem>Rhamnes, Sklave</castItem>
           <castItem>Ein Landmann</castItem>
           <castItem>Dienerinnen, Knechte und Landleute</castItem>
           <pb n="716"/>
         </castList>
       </div>
+    </front>
+    <body>
       <div type="act">
-        <head>1. Akt</head>
+        <head>Erster Aufzug</head>
+        <stage>Freie Gegend. Im Hintergrunde das Meer, dessen flaches Ufer sich gegen die linke
+          Seite in felsichten Abstufungen emporhebt. Hart am Ufer ein Altar der Aphrodite. Rechts im
+          Vorgrunde der Eingang einer Grotte mit Gesträuch und Eppich umwachsen; weiter zurück das
+          Ende eines Säulenganges mit Stufen, zu Sapphos Wohnung führend. Auf der linken Seite des
+          Vorgrundes ein hohes Rosengebüsch mit einer Rasenbank davor.</stage>
         <div type="scene">
           <head>Erster Auftritt</head>
-          <stage>
-            <hi>Zimbeln und Flöten und verworrener Volkszuruf in der Ferne Rhamnes stürzt
-              herein.</hi>
-          </stage>
+          <stage>Zimbeln und Flöten und verworrener Volkszuruf in der Ferne Rhamnes stürzt
+            herein.</stage>
           <sp who="#rhamnes">
             <speaker>RHAMNES.</speaker>
             <lg>
               <l>Auf, auf vom weichen Schlaf! Sie kommt, sie naht!</l>
-              <l>O daß doch nur die <hi>Wünsche</hi> Flügel haben,</l>
+              <l>O daß doch nur die <emph>Wünsche</emph> Flügel haben,</l>
               <l>Und träg der Fuß, indes das Herz lebendig.</l>
               <l>Heraus ihr faulen Mädchen! Zögert ihr?</l>
               <l>Der trifft euch nicht, der Jugend vorschnell nennt.</l>
             </lg>
-            <stage>
-              <hi>Eucharis, Melitta und Dienerinnen aus dem Säulengange.</hi>
-            </stage>
+            <stage>Eucharis, Melitta und Dienerinnen aus dem Säulengange.</stage>
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA.</speaker>
@@ -162,11 +168,9 @@
             <speaker>RHAMNES.</speaker>
             <l>Sappho naht!</l>
           </sp>
-          <sp who="#geschrei">
+          <sp who="#geschrei-volk">
             <speaker>GESCHREI</speaker>
-            <stage>
-              <hi>hinter der Bühne.</hi>
-            </stage>
+            <stage>hinter der Bühne.</stage>
             <l>Heil, Sappho, Heil!</l>
           </sp>
           <sp who="#rhamnes">
@@ -190,25 +194,21 @@
               <l>Drum eilt das Volk ihr jauchzend nun entgegen,</l>
               <l>Schickt auf des Jubels breiten Fittigen</l>
               <l>Den Namen der Beglückten zu den Wolken.</l>
-              <l>Und <hi>diese</hi> Hand wars, ach, und <hi>dieser</hi> Mund,</l>
+              <l>Und <emph>diese</emph> Hand wars, ach, und <emph>dieser</emph> Mund,</l>
               <l>Der sie zuerst der Leier Sprach entlocken</l>
               <l>Und des Gesanges regellose Freiheit</l>
               <l>Mit süßem Band des Wohllauts binden lehrte.</l>
               <pb n="717"/>
             </lg>
           </sp>
-          <sp who="#volk">
+          <sp who="#geschrei-volk">
             <speaker>VOLK</speaker>
-            <stage>
-              <hi>hinter der Bühne.</hi>
-            </stage>
+            <stage>hinter der Bühne.</stage>
             <l>Heil Sappho, Sappho Heil!</l>
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES</speaker>
-            <stage>
-              <hi>zu den Mädchen.</hi>
-            </stage>
+            <stage>zu den Mädchen.</stage>
             <lg>
               <l>So freut euch doch!</l>
               <l>Seht ihr den Kranz?</l>
@@ -263,9 +263,8 @@
               <l>Ihr solltet wissen, daß die Herrin naht,</l>
               <l>Ihr solltet wissen, daß euch Freude Pflicht,</l>
               <l>Doch freuen mögt ihr euch nur drin im Haus.</l>
-              <l>Der <hi>Mann</hi> mag das Geliebte laut begrüßen,</l>
-              <l>Geschäftig für sein Wohl liebt still das <hi>Weib.</hi>
-              </l>
+              <l>Der <emph>Mann</emph> mag das Geliebte laut begrüßen,</l>
+              <l>Geschäftig für sein Wohl liebt still das <emph>Weib</emph>.</l>
             </lg>
           </sp>
           <sp who="#melitta">
@@ -275,9 +274,7 @@
           <sp who="#rhamnes">
             <speaker>RHAMNES.</speaker>
             <l>Nicht doch! Nur fort, nur fort!</l>
-            <stage>
-              <hi>Er treibt die Mädchen fort.</hi>
-            </stage>
+            <stage>Er treibt die Mädchen fort.</stage>
             <lg>
               <l>Nun mag sie kommen, nun wird Albernheit</l>
               <l>Ihr vorlaut nicht die schöne Feier stören.</l>
@@ -286,23 +283,17 @@
         </div>
         <div type="scene">
           <head>Zweiter Auftritt</head>
-          <stage>
-            <hi>Sappho, köstlich gekleidet, auf einem mit weißen Pferden bespannten Wagen, eine
-              goldne Leier in der Hand, auf dem Haupte den Siegeskranz. Ihr zur Seite steht Phaon in
-              einfacher Kleidung. Volk umgibt laut jubelnd den Zug.</hi>
-          </stage>
-          <sp who="#volk">
+          <stage>Sappho, köstlich gekleidet, auf einem mit weißen Pferden bespannten Wagen, eine
+            goldne Leier in der Hand, auf dem Haupte den Siegeskranz. Ihr zur Seite steht Phaon in
+            einfacher Kleidung. Volk umgibt laut jubelnd den Zug.</stage>
+          <sp who="#geschrei-volk">
             <speaker>VOLK</speaker>
-            <stage>
-              <hi>auftretend.</hi>
-            </stage>
+            <stage>auftretend.</stage>
             <l>Heil Sappho, Heil!</l>
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES</speaker>
-            <stage>
-              <hi>sich unter sie mischend.</hi>
-            </stage>
+            <stage>sich unter sie mischend.</stage>
             <l>Heil Sappho, teure Frau!</l>
             <pb n="718"/>
           </sp>
@@ -311,7 +302,7 @@
             <lg>
               <l>Dank Freunde, Landsgenossen Dank.</l>
               <l>Um euretwillen freut mich dieser Kranz,</l>
-              <l>Der nur den <hi>Bürger</hi> ziert, den <hi>Dichter</hi> drückt,</l>
+              <l>Der nur den <emph>Bürger</emph> ziert, den <emph>Dichter</emph> drückt,</l>
               <l>In eurer Mitte nenn ich ihn erst mein.</l>
               <l>Hier, wo der Jugend träumende Entwürfe,</l>
               <l>Wo des Beginnens schwankendes Bestreben,</l>
@@ -336,16 +327,12 @@
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES</speaker>
-            <stage>
-              <hi>sich hinzudrängend.</hi>
-            </stage>
+            <stage>sich hinzudrängend.</stage>
             <l>Sei mir gegrüßt, gegrüßt, du Herrliche!</l>
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>vom Wagen herabsteigend und die Umstehenden freundlich begrüßend.</hi>
-            </stage>
+            <stage>vom Wagen herabsteigend und die Umstehenden freundlich begrüßend.</stage>
             <lg>
               <l>Mein treuer Rhamnes sei gegrüßt! – Artander,</l>
               <l>Du auch hier, trotzend deines Alters Schwäche?</l>
@@ -409,10 +396,10 @@
               <l>Zum Preise nur von häuslich stillen Freuden</l>
               <l>Die Töne wecken dieses Saitenspiels.</l>
               <l>Die ihr bisher bewundert und verehrt,</l>
-              <l>Ihr sollt sie lieben lernen, <hi>lieben,</hi> Freunde.</l>
+              <l>Ihr sollt sie lieben lernen, <emph>lieben</emph>, Freunde.</l>
             </lg>
           </sp>
-          <sp who="#volk">
+          <sp who="#geschrei-volk">
             <speaker>VOLK.</speaker>
             <l>Preis dir, du Herrliche! Heil, Sappho, Heil!</l>
           </sp>
@@ -425,20 +412,14 @@
               <l>Die Feier unsers Wiedersehns vollendet,</l>
               <l>Der Wiederkehr der Schwester zu den Ihren!</l>
             </lg>
-            <stage>
-              <hi>Zu den Landleuten, die sie begrüßen.</hi>
-            </stage>
+            <stage>Zu den Landleuten, die sie begrüßen.</stage>
             <l>Lebt wohl – auch du – und du – ihr alle – alle!</l>
-            <stage>
-              <hi>Rhamnes mit den Landleuten ab.</hi>
-            </stage>
+            <stage>Rhamnes mit den Landleuten ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt</head>
-          <stage>
-            <hi>Sappho. Phaon.</hi>
-          </stage>
+          <stage>Sappho. Phaon.</stage>
           <sp who="#sappho">
             <speaker>SAPPHO.</speaker>
             <lg>
@@ -492,7 +473,7 @@
               <l>Die Wälder und die Ufer seh ich fliehn,</l>
               <l>Die blauen Höhn, die niedern Hütten schwinden,</l>
               <l>Und kaum vermag ichs, mich zu überzeugen,</l>
-              <l>Daß alles fest steht und nur <hi>ich</hi> es bin,</l>
+              <l>Daß alles fest steht und nur <emph>ich</emph> es bin,</l>
               <l>Der auf des Glückes Wogen taumelnd wird getragen.</l>
             </lg>
           </sp>
@@ -518,7 +499,7 @@
               <l>Wie fiel dein Auge denn auf einen Jüngling,</l>
               <l>Der dunkel, ohne Namen, ohne Ruf,</l>
               <l>Sich höhern Werts nicht rühmt als – diese Leier,</l>
-              <l>Die man verehrt, weil <hi>du</hi> sie hast berührt.</l>
+              <l>Die man verehrt, weil <emph>du</emph> sie hast berührt.</l>
             </lg>
           </sp>
           <sp who="#sappho">
@@ -664,10 +645,10 @@
               <l>Des Leibes Schönheit ist ein schönes Gut</l>
               <l>Und Lebenslust ein köstlicher Gewinn,</l>
               <l>Der kühne Mut, der Weltgebieter Stärke,</l>
-              <l>Entschlossenheit und Lust an dem was <hi>ist</hi>,</l>
+              <l>Entschlossenheit und Lust an dem was <emph>ist</emph>,</l>
               <l>Und Phantasie, hold dienend, wie sie soll,</l>
               <l>Sie schmücken dieses Lebens rauhe Pfade,</l>
-              <l>Und <hi>leben</hi> ist ja doch des Lebens höchstes Ziel!</l>
+              <l>Und <emph>leben</emph> ist ja doch des Lebens höchstes Ziel!</l>
               <l>Umsonst nicht hat zum Schmuck der Musen Chor</l>
               <l>Den unfruchtbaren Lorbeer sich erwählt,</l>
               <l>Kalt, frucht- und duftlos drücket er das Haupt,</l>
@@ -675,9 +656,7 @@
               <l>Gar ängstlich steht sichs auf der Menschheit Höhn</l>
               <l>Und ewig ist die arme Kunst gezwungen,</l>
             </lg>
-            <stage>
-              <hi>Mit ausgebreiteten Armen gegen Phaon.</hi>
-            </stage>
+            <stage>Mit ausgebreiteten Armen gegen Phaon.</stage>
             <l>Zu betteln von des Lebens Überfluß.</l>
           </sp>
           <sp who="#phaon">
@@ -691,7 +670,7 @@
             <speaker>SAPPHO.</speaker>
             <lg>
               <l>Laß uns denn trachten, mein geliebter Freund,</l>
-              <l>Uns <hi>beider</hi> Kränze um die Stirn zu flechten,</l>
+              <l>Uns <emph>beider</emph> Kränze um die Stirn zu flechten,</l>
               <l>Das Leben aus der Künste Taumelkelch,</l>
               <l>Die Kunst zu schlürfen aus der Hand des Lebens.</l>
               <l>Sieh diese Gegend, die der Erde halb</l>
@@ -722,9 +701,7 @@
         </div>
         <div type="scene">
           <head>Vierter Auftritt</head>
-          <stage>
-            <hi>Eucharis. Melitta. Rhamnes. Diener und Dienerinnen. Vorige.</hi>
-          </stage>
+          <stage>Eucharis. Melitta. Rhamnes. Diener und Dienerinnen. Vorige.</stage>
           <sp who="#rhamnes">
             <speaker>RHAMNES.</speaker>
             <l>Du riefst, Gebieterin!</l>
@@ -738,24 +715,18 @@
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES</speaker>
-            <stage>
-              <hi>verwundert, halblaut.</hi>
-            </stage>
+            <stage>verwundert, halblaut.</stage>
             <l>Herrn?</l>
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO.</speaker>
             <l>Wer spricht hier?</l>
-            <stage>
-              <hi>Gespannt.</hi>
-            </stage>
+            <stage>Gespannt.</stage>
             <l>Was willst du sagen?</l>
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES</speaker>
-            <stage>
-              <hi>zurücktretend.</hi>
-            </stage>
+            <stage>zurücktretend.</stage>
             <l>Nichts.</l>
           </sp>
           <sp who="#sappho">
@@ -767,8 +738,8 @@
               <l>Weh dem, der ungehorsam sich erzeigt,</l>
               <l>Den eine Wolke nur auf dieser Stirn</l>
               <l>Als Übertreter des Gebots verklagt!</l>
-              <l>Vergehen gegen <hi>mich</hi> kann ich vergessen,</l>
-              <l>Wer <hi>ihn</hi> beleidigt, wecket meinen Zorn! –</l>
+              <l>Vergehen gegen <emph>mich</emph> kann ich vergessen,</l>
+              <l>Wer <emph>ihn</emph> beleidigt, wecket meinen Zorn! –</l>
               <l>Und nun, mein Freund, vertrau dich ihrer Sorgfalt,</l>
               <l>Schwer liegt, ich sehs, der Reise Last auf dir.</l>
               <l>Laß sie des Gastrechts heilig Amt versehen,</l>
@@ -780,7 +751,7 @@
             <lg>
               <l>O, könnt ich doch mein ganzes frühres Leben</l>
               <l>Umtauschend, wie die Kleider, von mir werfen,</l>
-              <l><hi>Besinnung</hi> mir und Klarheit mir gewinnen,</l>
+              <l><emph>Besinnung</emph> mir und Klarheit mir gewinnen,</l>
               <l>Um ganz zu sein, was ich zu sein begehre!</l>
               <l>So lebe wohl! Auf lange, denk ich, nicht!</l>
             </lg>
@@ -788,22 +759,16 @@
           <sp who="#sappho">
             <speaker>SAPPHO.</speaker>
             <l>Ich harre dein. Leb wohl. – Du bleib, Melitta!</l>
-            <stage>
-              <hi>Phaon und Diener ab.</hi>
-            </stage>
+            <stage>Phaon und Diener ab.</stage>
             <pb n="726"/>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt</head>
-          <stage>
-            <hi>Sappho. Melitta</hi>
-          </stage>
+          <stage>Sappho. Melitta</stage>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>nachdem sie ihm lange nachgesehen.</hi>
-            </stage>
+            <stage>nachdem sie ihm lange nachgesehen.</stage>
             <l>Melitta, nun?</l>
           </sp>
           <sp who="#melitta">
@@ -813,7 +778,7 @@
           <sp who="#sappho">
             <speaker>SAPPHO.</speaker>
             <lg>
-              <l>So wallt denn nur in <hi>diesen</hi> Adern Blut,</l>
+              <l>So wallt denn nur in <emph>diesen</emph> Adern Blut,</l>
               <l>Und rinnend Eis stockt in der andern Herzen?</l>
               <l>Sie sahen ihn, sie hörten seine Stimme,</l>
               <l>Dieselbe Luft, die seine Stirn gefächelt,</l>
@@ -822,15 +787,11 @@
               <l>Der erste Laut, der ihnen sich entpreßt.</l>
               <l>Fürwahr, dich hassen könnt ich! – Geh!</l>
             </lg>
-            <stage>
-              <hi>Melitta geht schweigend.</hi>
-            </stage>
+            <stage>Melitta geht schweigend.</stage>
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>die sich unterdessen auf die Rasenbank geworfen.</hi>
-            </stage>
+            <stage>die sich unterdessen auf die Rasenbank geworfen.</stage>
             <lg>
               <l>Melitta!</l>
               <l>Und weißt du mir so gar nichts denn zu sagen,</l>
@@ -839,9 +800,7 @@
               <l>Was wert gesehn, erzählt zu werden wäre?</l>
               <l>Wo waren deine Augen, Mädchen?</l>
             </lg>
-            <stage>
-              <hi>Sie bei der Hand ergreifend und an ihre Kniee ziehend.</hi>
-            </stage>
+            <stage>Sie bei der Hand ergreifend und an ihre Kniee ziehend.</stage>
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA.</speaker>
@@ -854,32 +813,24 @@
           <sp who="#sappho">
             <speaker>SAPPHO.</speaker>
             <l>Und armes Ding, du schlugst die Augen nieder?</l>
-            <stage>
-              <hi>Küßt sie.</hi>
-            </stage>
+            <stage>Küßt sie.</stage>
             <lg>
               <l>Das also wars? Mein Kind, die Lehre galt</l>
               <l>Nicht dir, den Ältern nur, den minder Stillen!</l>
               <l>Dem Mädchen ziemt noch, was der Jungfrau nicht.</l>
             </lg>
-            <stage>
-              <hi>Sie mit den Augen messend.</hi>
-            </stage>
+            <stage>Sie mit den Augen messend.</stage>
             <lg>
               <l>Doch sieh einmal; wie hast du dich verändert,</l>
               <l>Seit ich dich hier verließ. Ich kenne dich nicht mehr.</l>
               <l>Um so viel größer und –</l>
             </lg>
-            <stage>
-              <hi>Küßt sie wieder.</hi>
-            </stage>
+            <stage>Küßt sie wieder.</stage>
             <lg>
               <l>Du süßes Wesen!</l>
               <l><pb n="727"/> Du hattest recht, die Lehre galt auch dir!</l>
             </lg>
-            <stage>
-              <hi>Aufstehend.</hi>
-            </stage>
+            <stage>Aufstehend.</stage>
             <lg>
               <l>Warum so stumm noch immer und so schüchtern?</l>
               <l>Du warst doch sonst nicht so. Was macht dich zagen?</l>
@@ -945,9 +896,7 @@
               <l>Da noch ein Zauberland mir Liebe war,</l>
               <l>Ein unbekanntes, fremdes Zauberland!</l>
             </lg>
-            <stage>
-              <hi>Sich an Melittens Busen lehnend.</hi>
-            </stage>
+            <stage>Sich an Melittens Busen lehnend.</stage>
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA.</speaker>
@@ -975,9 +924,7 @@
               <l>Und sucht der Heimat leichtverlaßne Fluren,</l>
               <l>Da ist kein Lenz mehr, ach, und keine Blume,</l>
             </lg>
-            <stage>
-              <hi>Den Kranz abnehmend und wehmütig betrachtend.</hi>
-            </stage>
+            <stage>Den Kranz abnehmend und wehmütig betrachtend.</stage>
             <l>Nur dürre Blätter rauschen um ihn her!</l>
           </sp>
           <sp who="#melitta">
@@ -992,11 +939,9 @@
             <lg>
               <l>Von Tausenden gesucht und nicht errungen!</l>
               <l>Nicht wahr, Melitta? Nicht wahr, liebes Mädchen?</l>
-              <l>Von Tausenden gesucht und <hi>nicht</hi> errungen!</l>
+              <l>Von Tausenden gesucht und <emph>nicht</emph> errungen!</l>
             </lg>
-            <stage>
-              <hi>Den Kranz wieder aufsetzend.</hi>
-            </stage>
+            <stage>Den Kranz wieder aufsetzend.</stage>
             <lg>
               <l><pb n="729"/> Es schmähe nicht den Ruhm, wer ihn besitzt,</l>
               <l>Er ist kein leer-bedeutungsloser Schall,</l>
@@ -1020,23 +965,17 @@
               <l>Geh zu den andern jetzt und sag mirs an,</l>
               <l>Wenn dein Gebieter wünscht, mich zu empfangen.</l>
             </lg>
-            <stage>
-              <hi>Melitta ab.</hi>
-            </stage>
+            <stage>Melitta ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Sechster Auftritt</head>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>allein.</hi>
-            </stage>
-            <stage>
-              <hi>Sie legt, in Gedanken versunken, die Stirn in die Hand, dann setzt sie sich auf
-                die Rasenbank und nimmt die Leier in den Arm, das Folgende mit einzelnen Akkorden
-                begleitend.</hi>
-            </stage>
+            <stage>allein.</stage>
+            <stage>Sie legt, in Gedanken versunken, die Stirn in die Hand, dann setzt sie sich auf
+              die Rasenbank und nimmt die Leier in den Arm, das Folgende mit einzelnen Akkorden
+              begleitend.</stage>
             <lg>
               <l>Golden thronende Aphrodite,</l>
               <l>Listenersinnende Tochter des Zeus,</l>
@@ -1080,24 +1019,19 @@
               <l>Hilf mir erringen, nach was ich ringe,</l>
               <l>Sei mir Gefährtin im lieblichen Streit.</l>
             </lg>
-            <stage>
-              <hi>Sie lehnt matt das Haupt zurück.</hi>
-            </stage>
-            <stage>
-              <hi>Der Vorhang fällt.</hi>
-            </stage>
+            <stage>Sie lehnt matt das Haupt zurück.</stage>
+            <stage>Der Vorhang fällt.</stage>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>2. Akt</head>
+        <head>Zweiter Aufzug</head>
+        <stage>Freie Gegend wie im vorigen Aufzuge.</stage>
         <div type="scene">
           <head>Erster Auftritt</head>
           <sp who="#phaon">
             <speaker>PHAON</speaker>
-            <stage>
-              <hi>kommt.</hi>
-            </stage>
+            <stage>kommt.</stage>
             <lg>
               <l>Wohl mir, hier ist es still. Des Gastmahls Jubel,</l>
               <l>Der Zimbelspieler Lärm, der Flöten Töne,</l>
@@ -1126,7 +1060,7 @@
               <l>Ich frage mich: warst dus denn wirklich selber,</l>
               <l>Der in Olympia stand an ihrer Seite,</l>
               <l>An ihrer Seite in des Siegs Triumph?</l>
-              <l>War es <hi>dein</hi> Name, den des Volkes Jubel</l>
+              <l>War es <emph>dein</emph> Name, den des Volkes Jubel</l>
               <l>Vermischt mit ihrem in die Lüfte rief?</l>
               <l>Ja sagt mir alles und doch glaub ichs kaum.</l>
               <l>Was für ein ärmlich Wesen ist der Mensch,</l>
@@ -1162,28 +1096,20 @@
               <l>Das frecher Zitherspielerinnen Anblick</l>
               <l>Mit frommer Scheu ihm in die Brust geprägt.</l>
             </lg>
-            <stage>
-              <hi>In Gedanken versinkend.</hi>
-            </stage>
+            <stage>In Gedanken versinkend.</stage>
             <lg>
               <l>Wer naht? – der laute Haufen dringt hierher.</l>
               <l>Wie widerlich! – Schnell fort! – Wohin? – Ah hier!</l>
             </lg>
-            <stage>
-              <hi>Geht in die Grotte.</hi>
-            </stage>
+            <stage>Geht in die Grotte.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweiter Auftritt</head>
-          <stage>
-            <hi>Eucharis. Melitta. Sklavinnen mit Blumen und Kränzen.</hi>
-          </stage>
+          <stage>Eucharis. Melitta. Sklavinnen mit Blumen und Kränzen.</stage>
           <sp who="#eucharis">
             <speaker>EUCHARIS</speaker>
-            <stage>
-              <hi>lärmend.</hi>
-            </stage>
+            <stage>lärmend.</stage>
             <lg>
               <l>Ihr Mädchen auf! Mehr Blumen bringt herbei!</l>
               <l>Zu ganzen Haufen Blumen. Schmückt das Haus</l>
@@ -1193,16 +1119,12 @@
               <l>Das Fest der Liebe die Gebieterin.</l>
             </lg>
           </sp>
-          <sp who="#mädchen">
+          <sp who="#maedchen">
             <speaker>MÄDCHEN</speaker>
-            <stage>
-              <hi>ihre Blumen vorweisend.</hi>
-            </stage>
+            <stage>ihre Blumen vorweisend.</stage>
             <l>Hier sieh!</l>
-            <stage>
-              <hi>Sie fangen an, die Säulen und Bäume umher mit Kränzen und Blumenketten zu
-                behängen.</hi>
-            </stage>
+            <stage>Sie fangen an, die Säulen und Bäume umher mit Kränzen und Blumenketten zu
+              behängen.</stage>
           </sp>
           <sp who="#eucharis">
             <speaker>EUCHARIS.</speaker>
@@ -1213,9 +1135,7 @@
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>ihre leeren Hände betrachtend.</hi>
-            </stage>
+            <stage>ihre leeren Hände betrachtend.</stage>
             <l>Ich? –</l>
           </sp>
           <sp who="#eucharis">
@@ -1269,23 +1189,17 @@
               <l>Hier sind noch Rosen, hilf uns Kränze winden.</l>
               <l>Sei fleißig, Kind! Doch hörst du? Weine nicht!</l>
             </lg>
-            <stage>
-              <hi>Mit den Mädchen ab.</hi>
-            </stage>
+            <stage>Mit den Mädchen ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt</head>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>allein.</hi>
-            </stage>
-            <stage>
-              <hi>Sie setzt sich auf die Rasenbank und beginnt einen Kranz zu flechten. Nach einer
-                Weile schüttelt sie schmerzlich das Haupt und legt das Angefangene neben sich
-                hin.</hi>
-            </stage>
+            <stage>allein.</stage>
+            <stage>Sie setzt sich auf die Rasenbank und beginnt einen Kranz zu flechten. Nach einer
+              Weile schüttelt sie schmerzlich das Haupt und legt das Angefangene neben sich
+              hin.</stage>
             <lg>
               <l>Es geht nicht! – Weh, der Kopf will mir zerspringen,</l>
               <l>Und stürmisch pocht das Herz in meiner Brust!</l>
@@ -1303,7 +1217,7 @@
               <l>Und meine Freunde wohnen weit von hier.</l>
               <l>Ich sehe Kinder um den Vater hüpfen,</l>
               <l>Die fromme Stirn, die heilgen Locken küssen,</l>
-              <l><hi>Mein</hi> Vater lebt getrennt durch ferne Meere,</l>
+              <l><emph>Mein</emph> Vater lebt getrennt durch ferne Meere,</l>
               <l>Wo ihn nicht Gruß und Kuß des Kinds erreicht!</l>
               <l>Sie tun wohl hier so, als ob sie mich liebten,</l>
               <l>Und auch an sanften Worten fehlt es nicht,</l>
@@ -1336,24 +1250,18 @@
         </div>
         <div type="scene">
           <head>Vierter Auftritt</head>
-          <stage>
-            <hi>Phaon. Melitta</hi>
-          </stage>
+          <stage>Phaon. Melitta</stage>
           <sp who="#phaon">
             <speaker>PHAON</speaker>
-            <stage>
-              <hi>der während des vorigen Selbstgespräches am Eingange der Grotte erschienen ist,
-                sich aber lauschend zurückgezogen hat, tritt jetzt vor und legt Melitten von hinten
-                die Hand auf die Schulter.</hi>
-            </stage>
+            <stage>der während des vorigen Selbstgespräches am Eingange der Grotte erschienen ist,
+              sich aber lauschend zurückgezogen hat, tritt jetzt vor und legt Melitten von hinten
+              die Hand auf die Schulter.</stage>
             <l>So jung noch und so traurig, Mädchen?</l>
             <pb n="735"/>
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>zusammenschreckend.</hi>
-            </stage>
+            <stage>zusammenschreckend.</stage>
             <l>Ah!</l>
           </sp>
           <sp who="#phaon">
@@ -1370,22 +1278,18 @@
               <l>Du schweigst – Woher dies Mißtraun, gutes Mädchen?</l>
               <l>Blick auf zu mir! Nicht schlimm bin ich gesinnt.</l>
             </lg>
-            <stage>
-              <hi>Er hebt ihr das Haupt am Kinne empor.</hi>
-            </stage>
+            <stage>Er hebt ihr das Haupt am Kinne empor.</stage>
             <lg>
               <l>Ei sieh! Du bist wohl gar der kleine Mundschenk,</l>
               <l>Der statt des Gasts den blanken Estrich tränkte.</l>
-              <l><hi>Darum</hi> so bang? Nicht doch! Es hat der Unfall</l>
+              <l><emph>Darum</emph> so bang? Nicht doch! Es hat der Unfall</l>
               <l>So mich als die Gebieterin belustigt.</l>
             </lg>
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>die bei dem letzten Worte etwas zusammengefahren, schlägt nun die Augen empor und
-                blickt ihn an, dann steht sie auf und will gehen.</hi>
-            </stage>
+            <stage>die bei dem letzten Worte etwas zusammengefahren, schlägt nun die Augen empor und
+              blickt ihn an, dann steht sie auf und will gehen.</stage>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
@@ -1399,21 +1303,17 @@
               <l>Wer bist du und was hält dich hier zurück.</l>
               <l>Du warst nicht mit zu Tisch, ich sah dich dienen,</l>
               <l>Es schien der Sklavinnen Vertraulichkeit</l>
-              <l><hi>Gefährtin</hi> dich zu nennen und –</l>
+              <l><emph>Gefährtin</emph> dich zu nennen und –</l>
             </lg>
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA.</speaker>
             <l>Ich bins.</l>
-            <stage>
-              <hi>Wendet sich ab und will gehen.</hi>
-            </stage>
+            <stage>Wendet sich ab und will gehen.</stage>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON</speaker>
-            <stage>
-              <hi>sie zurückhaltend.</hi>
-            </stage>
+            <stage>sie zurückhaltend.</stage>
             <l>Nicht doch!</l>
           </sp>
           <sp who="#melitta">
@@ -1422,20 +1322,15 @@
               <l>Was willst du von der Sklavin, Herr?</l>
               <l>Laß einer Sklavin Brust sie suchen und –</l>
             </lg>
-            <stage>
-              <hi>Tränen ersticken ihre Stimme.</hi>
-            </stage>
+            <stage>Tränen ersticken ihre Stimme.</stage>
             <l>Nehmt mich hinauf zu euch, zu euch, ihr Götter!</l>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON</speaker>
-            <stage>
-              <hi>sie anfassend.</hi>
-            </stage>
+            <stage>sie anfassend.</stage>
             <lg>
               <l>Du bist bewegt, du zitterst, fasse dich!</l>
-              <l><pb n="736"/> Es binden Sklavenfesseln nur die <hi>Hände,</hi>
-              </l>
+              <l><pb n="736"/> Es binden Sklavenfesseln nur die <emph>Hände</emph>,</l>
               <l>Der Sinn, er macht den Freien und den Knecht.</l>
               <l>Sei ruhig, Sappho ist ja gut und milde,</l>
               <l>Ein Wort von mir, und ohne Lösegeld</l>
@@ -1444,9 +1339,7 @@
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>schüttelt schweigend das Haupt.</hi>
-            </stage>
+            <stage>schüttelt schweigend das Haupt.</stage>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
@@ -1458,7 +1351,7 @@
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA.</speaker>
-            <l>Ach sag mir erst, <hi>wo</hi> ist mein Vaterland?</l>
+            <l>Ach sag mir erst, <emph>wo</emph> ist mein Vaterland?</l>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
@@ -1508,15 +1401,11 @@
               <l>Liebkoste dir,</l>
               <l>Nicht so?</l>
             </lg>
-            <stage>
-              <hi>Sie bei der Hand ergreifend.</hi>
-            </stage>
+            <stage>Sie bei der Hand ergreifend.</stage>
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>leise.</hi>
-            </stage>
+            <stage>leise.</stage>
             <l>Ich war ein Kind!</l>
           </sp>
           <sp who="#phaon">
@@ -1525,9 +1414,7 @@
               <l>Ich weiß es wohl!</l>
               <l>Ein süßes, liebes, unbefangnes Kind!</l>
             </lg>
-            <stage>
-              <hi>Ihre Hand loslassend.</hi>
-            </stage>
+            <stage>Ihre Hand loslassend.</stage>
             <l>Nur weiter!</l>
             <pb n="737"/>
           </sp>
@@ -1591,7 +1478,7 @@
               <pb n="738"/>
             </lg>
           </sp>
-          <sp who="#man_ruft_drinnen">
+          <sp who="#ruf_von_drinnen">
             <speaker>MAN RUFT DRINNEN.</speaker>
             <l>Melitta!</l>
           </sp>
@@ -1602,9 +1489,7 @@
           <sp who="#melitta">
             <speaker>MELITTA.</speaker>
             <l>Man ruft? – Ich gehe.</l>
-            <stage>
-              <hi>Sie liest den angefangenen Kranz und die Blumen auf.</hi>
-            </stage>
+            <stage>Sie liest den angefangenen Kranz und die Blumen auf.</stage>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
@@ -1643,25 +1528,19 @@
           </sp>
           <sp who="#phaon">
             <speaker>PHAON</speaker>
-            <stage>
-              <hi>eine Rose herausnehmend.</hi>
-            </stage>
+            <stage>eine Rose herausnehmend.</stage>
             <l>Nimm diese Rose!</l>
-            <stage>
-              <hi>Er steckt sie ihr an den Busen.</hi>
-            </stage>
+            <stage>Er steckt sie ihr an den Busen.</stage>
             <lg>
               <l>Sie sei Erinnrung dir an diese Stunde,</l>
               <l>Erinnerung, daß nicht bloß in der Heimat,</l>
               <l>Daß auch in fernem Land es – Freunde gibt.</l>
             </lg>
-            <stage>
-              <hi>Melitta, die bei seiner Berührung zusammengefahren, steht jetzt mit hoch
-                klopfender Brust, beide Arme hinabhängend, mit gesenktem Haupt und Aug unbeweglich
-                da. Phaon hat sich einige Schritte entfernt und betrachtet sie von weitem.</hi>
-            </stage>
+            <stage>Melitta, die bei seiner Berührung zusammengefahren, steht jetzt mit hoch
+              klopfender Brust, beide Arme hinabhängend, mit gesenktem Haupt und Aug unbeweglich da.
+              Phaon hat sich einige Schritte entfernt und betrachtet sie von weitem.</stage>
           </sp>
-          <sp who="#man_ruft_von_innen">
+          <sp who="#ruf_von_drinnen">
             <speaker>MAN RUFT VON INNEN.</speaker>
             <l>Melitta!</l>
           </sp>
@@ -1675,9 +1554,7 @@
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>die Kränze, die ihr entfallen sind, zusammenraffend.</hi>
-            </stage>
+            <stage>die Kränze, die ihr entfallen sind, zusammenraffend.</stage>
             <l>Ich komme schon!</l>
           </sp>
           <sp who="#phaon">
@@ -1701,9 +1578,7 @@
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>die Blumen von sich werfend.</hi>
-            </stage>
+            <stage>die Blumen von sich werfend.</stage>
             <lg>
               <l>Wie? diese hier,</l>
               <l>Die jene wilden Mädchen dort gepflückt,</l>
@@ -1721,9 +1596,7 @@
               <l>Daß sie doch diese Sträuche so geplündert!</l>
               <l>Da ist auch nirgends einer Blume Spur,</l>
             </lg>
-            <stage>
-              <hi>Am Rosenstrauche emporblickend.</hi>
-            </stage>
+            <stage>Am Rosenstrauche emporblickend.</stage>
             <lg>
               <l>An jenem Zweige hängt wohl eine Rose,</l>
               <l>Doch ist sie allzuhoch, ich reiche nicht!</l>
@@ -1746,9 +1619,7 @@
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>auf die Rasenbank steigend.</hi>
-            </stage>
+            <stage>auf die Rasenbank steigend.</stage>
             <l>So komm; ich beuge dir den Zweig!</l>
           </sp>
           <sp who="#phaon">
@@ -1757,17 +1628,13 @@
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>auf die Zehen emporgehoben, den Zweig, an dessen äußerstem Ende die Rose hängt,
-                herabbeugend.</hi>
-            </stage>
+            <stage>auf die Zehen emporgehoben, den Zweig, an dessen äußerstem Ende die Rose hängt,
+              herabbeugend.</stage>
             <l>Reichst du?</l>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON</speaker>
-            <stage>
-              <hi>der, ohne auf die Rose zu achten, nur Melitten betrachtet hat.</hi>
-            </stage>
+            <stage>der, ohne auf die Rose zu achten, nur Melitten betrachtet hat.</stage>
             <l>Noch nicht!</l>
           </sp>
           <sp who="#melitta">
@@ -1780,10 +1647,8 @@
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
             <l>Nein, ich halte dich!</l>
-            <stage>
-              <hi>Der Zweig ist ihren Händen emporschnellend entschlüpft, sie taumelt und sinkt in
-                Phaons Arme, die er ihr geöffnet entgegenhält.</hi>
-            </stage>
+            <stage>Der Zweig ist ihren Händen emporschnellend entschlüpft, sie taumelt und sinkt in
+              Phaons Arme, die er ihr geöffnet entgegenhält.</stage>
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA.</speaker>
@@ -1791,9 +1656,7 @@
           </sp>
           <sp who="#phaon">
             <speaker>PHAON</speaker>
-            <stage>
-              <hi>sie an sich haltend.</hi>
-            </stage>
+            <stage>sie an sich haltend.</stage>
             <l>Melitta!</l>
           </sp>
           <sp who="#melitta">
@@ -1803,21 +1666,15 @@
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
             <l>Melitta!</l>
-            <stage>
-              <hi>Er drückt rasch einen Kuß auf ihre Lippen.</hi>
-            </stage>
+            <stage>Er drückt rasch einen Kuß auf ihre Lippen.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt</head>
-          <stage>
-            <hi>Sappho, einfach gekleidet, ohne Kranz und Leier. Vorige.</hi>
-          </stage>
+          <stage>Sappho, einfach gekleidet, ohne Kranz und Leier. Vorige.</stage>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>eintretend.</hi>
-            </stage>
+            <stage>eintretend.</stage>
             <l>Du läßt dich suchen, Freund! – Doch ha, was seh ich?</l>
           </sp>
           <sp who="#melitta">
@@ -1827,12 +1684,8 @@
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
             <l>Wie, Sappho hier?</l>
-            <stage>
-              <hi>Er läßt sie los.</hi>
-            </stage>
-            <stage>
-              <hi>Pause.</hi>
-            </stage>
+            <stage>Er läßt sie los.</stage>
+            <stage>Pause.</stage>
             <pb n="740"/>
           </sp>
           <sp who="#sappho">
@@ -1881,21 +1734,15 @@
           <sp who="#sappho">
             <speaker>SAPPHO.</speaker>
             <l>Geh nur immer, geh!</l>
-            <stage>
-              <hi>Melitta ab.</hi>
-            </stage>
+            <stage>Melitta ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Sechster Auftritt</head>
-          <stage>
-            <hi>Sappho. Phaon.</hi>
-          </stage>
+          <stage>Sappho. Phaon.</stage>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>nach einer Pause.</hi>
-            </stage>
+            <stage>nach einer Pause.</stage>
             <l>Phaon!</l>
           </sp>
           <sp who="#phaon">
@@ -1915,7 +1762,7 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO.</speaker>
-            <l>Nicht <hi>laute.</hi> Das scheint fast ein Vorwurf</l>
+            <l>Nicht <emph>laute</emph>. Das scheint fast ein Vorwurf</l>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
@@ -1936,7 +1783,7 @@
             <speaker>SAPPHO.</speaker>
             <lg>
               <l>Das volle Herz,</l>
-              <l><hi>Es sucht</hi> oft lauter Freude vollen Jubel,</l>
+              <l><emph>Es sucht</emph> oft lauter Freude vollen Jubel,</l>
               <l>Um in der allgemeinen Lust Gewühl</l>
               <l>Recht unbemerkt, recht stille sich zu freun.</l>
             </lg>
@@ -1978,9 +1825,7 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>bewegt.</hi>
-            </stage>
+            <stage>bewegt.</stage>
             <l>Phaon!</l>
           </sp>
           <sp who="#phaon">
@@ -1993,9 +1838,7 @@
               <l>Nichts. –</l>
               <l>Doch eins!</l>
             </lg>
-            <stage>
-              <hi>Mit Überwindung.</hi>
-            </stage>
+            <stage>Mit Überwindung.</stage>
             <l>Ich sah dich mit Melitten scherzen –</l>
           </sp>
           <sp who="#phaon">
@@ -2120,13 +1963,9 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>sich rasch umwendend.</hi>
-            </stage>
+            <stage>sich rasch umwendend.</stage>
             <l>Leb wohl!</l>
-            <stage>
-              <hi>Ab in die Höhle.</hi>
-            </stage>
+            <stage>Ab in die Höhle.</stage>
             <pb n="743"/>
           </sp>
         </div>
@@ -2134,43 +1973,31 @@
           <head>Siebenter Auftritt</head>
           <sp who="#phaon">
             <speaker>PHAON</speaker>
-            <stage>
-              <hi>allein, nachdem er eine Weile starr vor sich hingesehen.</hi>
-            </stage>
+            <stage>allein, nachdem er eine Weile starr vor sich hingesehen.</stage>
             <l>Und hast du wirklich? –</l>
-            <stage>
-              <hi>Sich umsehend.</hi>
-            </stage>
+            <stage>Sich umsehend.</stage>
             <lg>
               <l>Sie ist fort! –</l>
               <l>Ich bin verwirrt, mein Kopf ist wüst und schwer!</l>
             </lg>
-            <stage>
-              <hi>Auf die Rasenbank blickend.</hi>
-            </stage>
+            <stage>Auf die Rasenbank blickend.</stage>
             <l>Hier saß sie, hier, das heiter blühnde Kind,</l>
-            <stage>
-              <hi>Setzt sich.</hi>
-            </stage>
+            <stage>Setzt sich.</stage>
             <l>Hierher will ich mein Haupt zur Ruhe legen!</l>
-            <stage>
-              <hi>Legt ermattet den Kopf in die Hand.</hi>
-            </stage>
-            <stage>
-              <hi>Der Vorhang fällt.</hi>
-            </stage>
+            <stage>Legt ermattet den Kopf in die Hand.</stage>
+            <stage>Der Vorhang fällt.</stage>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>3. Akt</head>
+        <head>Dritter Aufzug</head>
+        <stage>Gegend wie in den vorigen Aufzügen. Phaon liegt schlummernd auf der
+          Rasenbank.</stage>
         <div type="scene">
           <head>Erster Auftritt</head>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>kömmt aus der Grotte.</hi>
-            </stage>
+            <stage>kömmt aus der Grotte.</stage>
             <lg>
               <l>Es ist umsonst! Weit schwärmen die Gedanken</l>
               <l>Und kehren ohne Ladung mir zurück!</l>
@@ -2194,8 +2021,8 @@
               <pb n="744"/>
             </lg>
             <lg>
-              <l>Wer heißt den Maßstab denn für <hi>sein</hi> Gefühl</l>
-              <l>In <hi>dieser</hi> tiefbewegten Brust mich suchen?</l>
+              <l>Wer heißt den Maßstab denn für <emph>sein</emph> Gefühl</l>
+              <l>In <emph>dieser</emph> tiefbewegten Brust mich suchen?</l>
             </lg>
             <lg>
               <l>Nach Frauenglut mißt Männerliebe nicht,</l>
@@ -2230,9 +2057,7 @@
               <l>Stets glaubt er sich berechtigt ihn zu nehmen.</l>
               <l>Wohl schlimm, daß es so ist, doch ist es so!</l>
             </lg>
-            <stage>
-              <hi>Sich umwendend und Phaon erblickend.</hi>
-            </stage>
+            <stage>Sich umwendend und Phaon erblickend.</stage>
             <lg>
               <l>Ha sieh, dort in des Rosenbusches Schatten –</l>
               <l>Er ist es, ja, der liebliche Verräter!</l>
@@ -2247,26 +2072,20 @@
               <l>Wenn ich geglaubt, es könnte niedre Falschheit</l>
               <l>Den Eingang finden in so reinen Tempel!</l>
               <l>Er lächelt – seine Lippen öffnen sich –</l>
-              <l>Ein <hi>Name</hi> scheint in ihrem Hauch zu schweben.</l>
+              <l>Ein <emph>Name</emph> scheint in ihrem Hauch zu schweben.</l>
               <l>Wach auf und nenne wachend deine Sappho,</l>
               <l>Die dich umschlingt. Wach auf!</l>
             </lg>
-            <stage>
-              <hi>Sie küßt ihn auf die Stirne.</hi>
-            </stage>
+            <stage>Sie küßt ihn auf die Stirne.</stage>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON</speaker>
-            <stage>
-              <hi>erwacht, öffnet die Arme und spricht mit halbgeschloßnen Augen.</hi>
-            </stage>
+            <stage>erwacht, öffnet die Arme und spricht mit halbgeschloßnen Augen.</stage>
             <l>Melitta!</l>
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>zurückstürzend.</hi>
-            </stage>
+            <stage>zurückstürzend.</stage>
             <l>Ha!</l>
           </sp>
           <sp who="#phaon">
@@ -2295,9 +2114,7 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>vor sich hin.</hi>
-            </stage>
+            <stage>vor sich hin.</stage>
             <l>Melitta!</l>
             <pb n="746"/>
           </sp>
@@ -2319,9 +2136,7 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Fast wills von neuem mir die Brust beschleichen,</l>
               <l>Doch nein! zu tief hab ich sein Herz erkannt!</l>
@@ -2375,9 +2190,7 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>schreiend.</hi>
-            </stage>
+            <stage>schreiend.</stage>
             <l>Melitta!</l>
           </sp>
           <sp who="#phaon">
@@ -2387,9 +2200,7 @@
               <l>Daß sie es war? Ich wußt es selber kaum! – –</l>
               <l>Du bist bewegt, und ich –</l>
             </lg>
-            <stage>
-              <hi>Sappho winkt ihm mit der Hand Entfernung zu.</hi>
-            </stage>
+            <stage>Sappho winkt ihm mit der Hand Entfernung zu.</stage>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
@@ -2397,35 +2208,27 @@
               <l>Wie? gehen soll ich?</l>
               <l>Nur eines laß mich, Sappho, dir noch sagen –</l>
             </lg>
-            <stage>
-              <hi>Sappho winkt noch einmal.</hi>
-            </stage>
+            <stage>Sappho winkt noch einmal.</stage>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
             <l>Du willst nicht hören, ich soll gehen? Ich gehe!</l>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweiter Auftritt</head>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>allein, nach einer Pause.</hi>
-            </stage>
+            <stage>allein, nach einer Pause.</stage>
             <l>Der Bogen klang,</l>
-            <stage>
-              <hi>Die Hände über der Brust zusammenschlagend.</hi>
-            </stage>
+            <stage>Die Hände über der Brust zusammenschlagend.</stage>
             <lg>
               <l>es sitzt der Pfeil! –</l>
               <l>Wer zweifelt länger noch? Klar ist es, klar!</l>
-              <l><hi>Sie</hi> lebt in seinem schwurvergeßnen Herzen,</l>
-              <l><hi>Sie</hi> schwebt vor seiner schamentblößten Stirn,</l>
-              <l>In <hi>ihre</hi> Hülle kleiden sich die Träume,</l>
+              <l><emph>Sie</emph> lebt in seinem schwurvergeßnen Herzen,</l>
+              <l><emph>Sie</emph> schwebt vor seiner schamentblößten Stirn,</l>
+              <l>In <emph>ihre</emph> Hülle kleiden sich die Träume,</l>
               <l>Die schmeichelnd sich des Falschen Lager nahn.</l>
               <l>Sappho verschmäht um ihrer Sklavin willen!</l>
               <l>Verschmähet? wer? Beim Himmel, und von wem?</l>
@@ -2447,7 +2250,7 @@
               <l>Der Menschen und der Überirdschen Los,</l>
               <l>Es mischt sich nimmer in demselben Becher,</l>
               <l>Von beiden Welten eine mußt du wählen,</l>
-              <l><hi>Hast</hi> du gewählt, dann ist kein Rücktritt mehr!</l>
+              <l><emph>Hast</emph> du gewählt, dann ist kein Rücktritt mehr!</l>
               <l>Ein Biß nur in des Ruhmes goldne Frucht,</l>
               <l>Proserpinens Granatenkernen gleich,</l>
               <l>Reiht dich auf ewig zu den stillen Schatten,</l>
@@ -2478,9 +2281,7 @@
         </div>
         <div type="scene">
           <head>Dritter Auftritt</head>
-          <stage>
-            <hi>Eucharis. Sappho</hi>
-          </stage>
+          <stage>Eucharis. Sappho</stage>
           <sp who="#eucharis">
             <speaker>EUCHARIS.</speaker>
             <l>Befiehlst du, hohe Frau?</l>
@@ -2574,7 +2375,7 @@
           <sp who="#sappho">
             <speaker>SAPPHO.</speaker>
             <lg>
-              <l>Sie <hi>singt</hi> und Sappho – nein, ich weine nicht!</l>
+              <l>Sie <emph>singt</emph> und Sappho – nein, ich weine nicht!</l>
               <l>Bring sie zu mir!</l>
             </lg>
           </sp>
@@ -2590,57 +2391,37 @@
               <l>Ein ohrbezaubernd, liebevoller Name!</l>
               <l>Melitta – Sappho! – Geh, bring sie zu mir!</l>
             </lg>
-            <stage>
-              <hi>Eucharis ab.</hi>
-            </stage>
+            <stage>Eucharis ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt</head>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>allein, sie setzt sich auf die Rasenbank und stützt das Haupt in die Hand.</hi>
-            </stage>
-            <stage>
-              <hi>Pause.</hi>
-            </stage>
+            <stage>allein, sie setzt sich auf die Rasenbank und stützt das Haupt in die
+              Hand.</stage>
+            <stage>Pause.</stage>
             <lg>
               <l>Ich kann nicht! Weh! – Umsonst ruf ich den Stolz,</l>
               <l>An seiner Statt antwortet mir die Liebe.</l>
             </lg>
-            <stage>
-              <hi>Sinkt in die vorige Stellung zurück.</hi>
-            </stage>
+            <stage>Sinkt in die vorige Stellung zurück.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt</head>
-          <stage>
-            <hi>Melitta. Sappho</hi>
-          </stage>
+          <stage>Melitta. Sappho</stage>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>kommt, einfach aber mit Sorgfalt gekleidet, Rosen am Busen und in den Haaren.</hi>
-            </stage>
-            <lg>
-              <l>
-                <hi> Sie bleibt am Eingange stehen, tritt aber, da Sappho sich nicht regt, näher
-                  hinzu.</hi>
-              </l>
-              <l>Hier bin ich.</l>
-            </lg>
+            <stage>kommt, einfach aber mit Sorgfalt gekleidet, Rosen am Busen und in den Haaren. Sie
+              bleibt am Eingange stehen, tritt aber, da Sappho sich nicht regt, näher hinzu.</stage>
+            <l>Hier bin ich.</l>
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>sich schnell umkehrend und zurückfahrend.</hi>
-            </stage>
+            <stage>sich schnell umkehrend und zurückfahrend.</stage>
             <l>Ah! – – Beim Himmel, sie ist schön!</l>
-            <stage>
-              <hi>Wirft das Gesicht, in beide Hände verhüllt, auf die Rasenbank. Pause.</hi>
-            </stage>
+            <stage>Wirft das Gesicht, in beide Hände verhüllt, auf die Rasenbank. Pause.</stage>
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA.</speaker>
@@ -2696,9 +2477,7 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>sich fassend.</hi>
-            </stage>
+            <stage>sich fassend.</stage>
             <lg>
               <l>Melitta, komm,</l>
               <l>Wir wollen ruhig miteinander sprechen. –</l>
@@ -2866,9 +2645,7 @@
               <l>Die schlechtversteckte Schlange zu verbergen!</l>
               <l>Herab die Rosen!</l>
             </lg>
-            <stage>
-              <hi>Melitta nimmt schweigend den Kranz ab.</hi>
-            </stage>
+            <stage>Melitta nimmt schweigend den Kranz ab.</stage>
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO.</speaker>
@@ -2880,9 +2657,7 @@
               <l><pb n="754"/> Was schonest du die Rose an der Brust?</l>
               <l>Leg sie von dir!</l>
             </lg>
-            <stage>
-              <hi>Melitta tritt zurück.</hi>
-            </stage>
+            <stage>Melitta tritt zurück.</stage>
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO.</speaker>
@@ -2893,9 +2668,7 @@
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>beide Arme über die Brust schlagend und dadurch die Rose verhüllend.</hi>
-            </stage>
+            <stage>beide Arme über die Brust schlagend und dadurch die Rose verhüllend.</stage>
             <l>Nimmermehr!</l>
           </sp>
           <sp who="#sappho">
@@ -2907,9 +2680,7 @@
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>die Hände fest auf die Brust gedrückt, vor ihr fliehend.</hi>
-            </stage>
+            <stage>die Hände fest auf die Brust gedrückt, vor ihr fliehend.</stage>
             <l>Nimm mein Leben!</l>
           </sp>
           <sp who="#sappho">
@@ -2918,9 +2689,7 @@
               <l>Falsche Schlange!</l>
               <l>Auch ich kann stechen!</l>
             </lg>
-            <stage>
-              <hi>Einen Dolch ziehend.</hi>
-            </stage>
+            <stage>Einen Dolch ziehend.</stage>
             <l>Mir die Rose!</l>
           </sp>
           <sp who="#melitta">
@@ -2933,15 +2702,11 @@
         </div>
         <div type="scene">
           <head>Sechster Auftritt</head>
-          <stage>
-            <hi>Phaon. Vorige</hi>
-          </stage>
+          <stage>Phaon. Vorige</stage>
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
             <l>Wer ruft hier? – du Melitta, fort den Dolch!</l>
-            <stage>
-              <hi>Pause.</hi>
-            </stage>
+            <stage>Pause.</stage>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
@@ -2969,9 +2734,7 @@
               <l>Zu drückend liegt die wahre schon auf dir.</l>
               <l>Weh mir, bedürft ich jemals deiner Großmut!</l>
             </lg>
-            <stage>
-              <hi>Mit starkem Ton.</hi>
-            </stage>
+            <stage>Mit starkem Ton.</stage>
             <lg>
               <l>Die Rose von der Brust hab ich begehrt,</l>
               <l>Und sie verschmähte zu gehorchen! –</l>
@@ -3005,9 +2768,7 @@
               <l>Und noch zwei andre liegen tiefversteckt</l>
               <l>Dort unter den gesenkten Augenlidern?</l>
             </lg>
-            <stage>
-              <hi>Den Dolch aufraffend, der Sapphon entglitten ist.</hi>
-            </stage>
+            <stage>Den Dolch aufraffend, der Sapphon entglitten ist.</stage>
             <lg>
               <l>Mir diesen Stahl! Ich will ihn tragen</l>
               <l>Hier auf der warmen, der betrognen Brust,</l>
@@ -3018,9 +2779,7 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>ihn starr anblickend.</hi>
-            </stage>
+            <stage>ihn starr anblickend.</stage>
             <l>Phaon!</l>
           </sp>
           <sp who="#phaon">
@@ -3037,7 +2796,7 @@
               <l>Als ich sie sah, da faßte wilder Taumel</l>
               <l><pb n="756"/> Den aufgeregten Sinn, und willenlos</l>
               <l>Stürzt ich gebunden zu der Stolzen Füßen.</l>
-              <l><hi>Dein</hi> Anblick erst gab mich mir selber wieder,</l>
+              <l><emph>Dein</emph> Anblick erst gab mich mir selber wieder,</l>
               <l>Erbebend sah ich mich in Circes Hause</l>
               <l>Und fühlte meinen Nacken schon gekrümmt!</l>
               <l>Doch war ich nicht gelöst, sie selber mußte,</l>
@@ -3046,9 +2805,7 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>noch immer starr nach ihm blickend.</hi>
-            </stage>
+            <stage>noch immer starr nach ihm blickend.</stage>
             <l>Phaon!</l>
           </sp>
           <sp who="#phaon">
@@ -3076,9 +2833,7 @@
               <l>Auch mich ergreift sie, darum eilig fort!</l>
               <l>Eh sie noch ihre Schlingen um dich wirft.</l>
             </lg>
-            <stage>
-              <hi>Er führt sie fort.</hi>
-            </stage>
+            <stage>Er führt sie fort.</stage>
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA.</speaker>
@@ -3086,16 +2841,12 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>mit aufgelöster Stimme.</hi>
-            </stage>
+            <stage>mit aufgelöster Stimme.</stage>
             <l>Melitta, rufst du mir?</l>
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>umkehrend und ihre Kniee umfassend.</hi>
-            </stage>
+            <stage>umkehrend und ihre Kniee umfassend.</stage>
             <lg>
               <l>Ich bin es, Sappho! Hier, die Rose, nimm!</l>
               <l>Nimm ihn! Mein Leben nimm! Wo ist dein Dolch?</l>
@@ -3103,45 +2854,33 @@
           </sp>
           <sp who="#phaon">
             <speaker>PHAON</speaker>
-            <stage>
-              <hi>herzu eilend, die Rose, die beide halten, wegreißend und Melitten aufhebend.</hi>
-            </stage>
+            <stage>herzu eilend, die Rose, die beide halten, wegreißend und Melitten
+              aufhebend.</stage>
             <l>Dein ist sie, dein, kein Gott soll dir sie rauben!</l>
-            <stage>
-              <hi>Melitten fortziehend.</hi>
-            </stage>
+            <stage>Melitten fortziehend.</stage>
             <l>Komm! Schnell aus ihrer Nähe! Fort!</l>
-            <stage>
-              <hi>Führt sie ab.</hi>
-            </stage>
+            <stage>Führt sie ab.</stage>
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>mit ausgestreckten Armen, verhallend.</hi>
-            </stage>
+            <stage>mit ausgestreckten Armen, verhallend.</stage>
             <l>Phaon!</l>
-            <stage>
-              <hi>Der Vorhang fällt.</hi>
-            </stage>
+            <stage>Der Vorhang fällt.</stage>
             <pb n="757"/>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>4. Akt</head>
+        <head>Vierter Aufzug</head>
+        <stage>Freie Gegend wie in den vorigen Aufzügen. Mondnacht</stage>
         <div type="scene">
           <head>Erster Auftritt</head>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>kommt, in tiefe Gedanken versenkt.</hi>
-            </stage>
+            <stage>kommt, in tiefe Gedanken versenkt. – Sie bleibt stehen. – Nach einer
+              Pause.</stage>
             <lg>
-              <l>
-                <hi> – Sie bleibt stehen. – Nach einer Pause.</hi>
-              </l>
-              <l><hi>Bin</hi> ich denn noch, und ist denn <hi>etwas</hi> noch?</l>
+              <l><emph>Bin</emph> ich denn noch, und ist denn <emph>etwas</emph> noch?</l>
               <l>Dies weite All, es stürzte nicht zusammen</l>
               <l>In jenem fürchterlichen Augenblick?</l>
               <l>Die Dunkelheit, die brütend mich umfängt,</l>
@@ -3164,9 +2903,7 @@
               <l>Kein Morgenstrahl zu neuen Qualen weckt,</l>
               <l>Kein Undankbarer – Halt! – Tritt nicht die Schlange!</l>
             </lg>
-            <stage>
-              <hi>Mit gedämpfter Stimme.</hi>
-            </stage>
+            <stage>Mit gedämpfter Stimme.</stage>
             <lg>
               <l>Der Mord ist wohl ein gräßliches Verbrechen,</l>
               <l>Und Raub und Trug, und wie sie alle heißen,</l>
@@ -3176,7 +2913,7 @@
               <l>Wohl gräßlich, schändlich, giftige Verbrechen!</l>
               <l>Doch kenn ich eins, vor dessen dunkelm Abstich</l>
               <l>Die andern alle lilienweiß erscheinen,</l>
-              <l>Und <hi>Undank</hi> ist sein Nam! Er übt allein,</l>
+              <l>Und <emph>Undank</emph> ist sein Nam! Er übt allein,</l>
               <l>Was alle andern einzeln nur verüben,</l>
               <l>Er lügt, er raubt, betrügt, schwört falsche Eide,</l>
               <l>Verrät und tötet! Undank! Undank! Undank!</l>
@@ -3197,9 +2934,7 @@
               <l>Ein mildes Wort statt allen Lohns begehrend,</l>
               <l>Und er – lebt ihr denn noch, gerechte Götter? –</l>
             </lg>
-            <stage>
-              <hi>Wie von einem plötzlichen Gedanken durchzuckt.</hi>
-            </stage>
+            <stage>Wie von einem plötzlichen Gedanken durchzuckt.</stage>
             <lg>
               <l>Ihr lebet, ja! – Von euch kam der Gedanke,</l>
               <l>Der leuchtend sich vor meine Seele drängt.</l>
@@ -3217,9 +2952,7 @@
         </div>
         <div type="scene">
           <head>Zweiter Auftritt</head>
-          <stage>
-            <hi>Rhamnes. Sappho</hi>
-          </stage>
+          <stage>Rhamnes. Sappho</stage>
           <sp who="#rhamnes">
             <speaker>RHAMNES.</speaker>
             <l>Was gebeutst du, Herrin?</l>
@@ -3237,7 +2970,7 @@
               <l>Als ich im goldnen, liebeleeren Haus?</l>
               <l>Für das Geliebte leiden ist so süß,</l>
               <l>Und Hoffnung und Erinnrung sind ja Rosen</l>
-              <l>Von <hi>einem</hi> Stamme mit der Wirklichkeit,</l>
+              <l>Von <emph>einem</emph> Stamme mit der Wirklichkeit,</l>
               <l>Nur ohne Dornen! O, verbannet mich</l>
               <l>Weit in des Meeres unbekannte Fernen</l>
               <l>Auf einen Fels, der, schroff und unfruchtbar,</l>
@@ -3347,7 +3080,7 @@
             <speaker>SAPPHO.</speaker>
             <lg>
               <l>Er harret meiner? Lieber, sagt er es,</l>
-              <l>Er harre <hi>meiner?</hi> Sapphos?</l>
+              <l>Er harre <emph>meiner</emph>? Sapphos?</l>
             </lg>
           </sp>
           <sp who="#rhamnes">
@@ -3396,9 +3129,7 @@
           <sp who="#sappho">
             <speaker>SAPPHO.</speaker>
             <l>Nein!</l>
-            <stage>
-              <hi>Pause.</hi>
-            </stage>
+            <stage>Pause.</stage>
             <pb n="761"/>
           </sp>
           <sp who="#rhamnes">
@@ -3415,9 +3146,7 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>ihn auf die andre Seite des Theaters führend.</hi>
-            </stage>
+            <stage>ihn auf die andre Seite des Theaters führend.</stage>
             <lg>
               <l>Komm!</l>
               <l>Vorsichtig sei und leise, hörst du mich?</l>
@@ -3433,9 +3162,7 @@
           <sp who="#sappho">
             <speaker>SAPPHO.</speaker>
             <l>Wer? – Phaon! – Folgt sie dir –</l>
-            <stage>
-              <hi>Einhaltend.</hi>
-            </stage>
+            <stage>Einhaltend.</stage>
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES.</speaker>
@@ -3458,7 +3185,7 @@
             <speaker>SAPPHO.</speaker>
             <lg>
               <l>Dort übergibst du sie dem Gastfreund,</l>
-              <l>Er soll sie <hi>hüten,</hi> bis ich sie verlange;</l>
+              <l>Er soll sie <emph>hüten</emph>, bis ich sie verlange;</l>
               <l>Und streng – Nicht strenge mög er sie mir halten,</l>
               <l>Sie ist ja doch gestraft genug! Hörst du?</l>
             </lg>
@@ -3478,25 +3205,19 @@
               <l>Der Morgen findet uns schon fern von hier.</l>
               <l>Zufrieden sollst du sein mit deinem Diener!</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt</head>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>allein.</hi>
-            </stage>
+            <stage>allein.</stage>
             <lg>
               <l>Er geht! – Noch – Nein! Ach, die Gewohnheit ist</l>
               <l>Ein lästig Ding, selbst an Verhaßtes fesselt sie!</l>
             </lg>
-            <stage>
-              <hi>In Gedanken vertieft.</hi>
-            </stage>
+            <stage>In Gedanken vertieft.</stage>
             <lg>
               <l>Horch – Tritte – Nein es war der Wind! – Wie bange</l>
               <l>Pocht mir das Herz in sturmbewegter Brust! –</l>
@@ -3504,17 +3225,13 @@
               <l>Sie ahnet nicht, daß sie zum letzten Male –</l>
               <l>Fort! Ich will sie nicht sehn! – Ich will, ich kann nicht!</l>
             </lg>
-            <stage>
-              <hi>Schnell ab.</hi>
-            </stage>
+            <stage>Schnell ab.</stage>
             <pb n="762"/>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt</head>
-          <stage>
-            <hi>Melitta. Rhamnes</hi>
-          </stage>
+          <stage>Melitta. Rhamnes</stage>
           <sp who="#melitta">
             <speaker>MELITTA.</speaker>
             <lg>
@@ -3524,9 +3241,7 @@
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES</speaker>
-            <stage>
-              <hi>verlegen umherblickend.</hi>
-            </stage>
+            <stage>verlegen umherblickend.</stage>
             <lg>
               <l>Nicht? Nein, fürwahr – nicht da.</l>
               <l>Noch erst vor kurzem war sie hier! – So komm!</l>
@@ -3700,18 +3415,14 @@
         </div>
         <div type="scene">
           <head>Fünfter Auftritt</head>
-          <stage>
-            <hi>Phaon. Vorige</hi>
-          </stage>
+          <stage>Phaon. Vorige</stage>
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
             <lg>
               <l>Das ist Melittens Stimme! Ha, Verwegner,</l>
               <l>Wagst dus, die Hand zu heben gegen sie?</l>
             </lg>
-            <stage>
-              <hi>Rhamnes läßt Melitten los.</hi>
-            </stage>
+            <stage>Rhamnes läßt Melitten los.</stage>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
@@ -3720,7 +3431,7 @@
               <l>Als ich dich sah mit leisespähnden Blicken,</l>
               <l>Dem Wolfe gleich, in ihre Nähe schleichen.</l>
               <l>Doch hast du dich verrechnet, grimmer Wolf,</l>
-              <l>Es wacht der Hirt, und <hi>dir</hi> naht das Verderben!</l>
+              <l>Es wacht der Hirt, und <emph>dir</emph> naht das Verderben!</l>
             </lg>
           </sp>
           <sp who="#rhamnes">
@@ -3730,7 +3441,7 @@
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
             <lg>
-              <l>Wie, Sapphos Auftrag? <hi>Sie</hi> befahl es dir?</l>
+              <l>Wie, Sapphos Auftrag? <emph>Sie</emph> befahl es dir?</l>
               <l>O Sappho, Sappho! Ich erkenne dich!</l>
               <l>Doch leider nur zu spät! Warum zu spät?</l>
               <l>Noch ist es Zeit, die Bande abzuschütteln</l>
@@ -3774,9 +3485,7 @@
           </sp>
           <sp who="#phaon">
             <speaker>PHAON</speaker>
-            <stage>
-              <hi>Melitten loslassend.</hi>
-            </stage>
+            <stage>Melitten loslassend.</stage>
             <lg>
               <l>Bei allen Göttern, nein!</l>
               <l>Mich lüstets, eurer Bosheit Ziel zu kennen!</l>
@@ -3812,9 +3521,7 @@
               <l>So öffne denn dies Eisen! Dank dir, Sappho!</l>
               <l>Du gabst mir selber Waffen gegen dich!</l>
             </lg>
-            <stage>
-              <hi>Den Dolch ziehend.</hi>
-            </stage>
+            <stage>Den Dolch ziehend.</stage>
             <lg>
               <l>Verhehle länger nichts, du siehst mich fertig,</l>
               <l>Die strengverschloßne Lade zu erbrechen!</l>
@@ -3865,9 +3572,7 @@
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>zu Rhamnes.</hi>
-            </stage>
+            <stage>zu Rhamnes.</stage>
             <lg>
               <l>Was tat ich denn, daß du mich schiltst?</l>
               <l>Er fragte ja!</l>
@@ -3879,7 +3584,7 @@
               <l>Ein Kahn? – So seis! – das Zeichen,</l>
               <l>Ich nehm es an! Von euch kömmts, gute Götter!</l>
               <l>Zu spät versteh ich eure treue Mahnung!</l>
-              <l><hi>Sie</hi> ist es oder keine dieser Erde,</l>
+              <l><emph>Sie</emph> ist es oder keine dieser Erde,</l>
               <l>Die in der Brust die zweite Hälfte trägt</l>
               <l>Von dem, was hier im Busen sehnend klopfte!</l>
               <l>Ihr zeigt mir selbst den Weg. Ich will ihn gehn!</l>
@@ -3901,15 +3606,11 @@
               <l>Komm! Dort der Kahn, hier Mut und Kraft und Stärke,</l>
               <l>Zu schützen dich, wärs gegen eine Welt!</l>
             </lg>
-            <stage>
-              <hi>Faßt sie an.</hi>
-            </stage>
+            <stage>Faßt sie an.</stage>
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>ängstlich zu Rhamnes.</hi>
-            </stage>
+            <stage>ängstlich zu Rhamnes.</stage>
             <l>Rhamnes!</l>
           </sp>
           <sp who="#rhamnes">
@@ -3930,9 +3631,7 @@
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
             <l>Lügner! Sie ist mein!</l>
-            <stage>
-              <hi>Zu Melitten.</hi>
-            </stage>
+            <stage>Zu Melitten.</stage>
             <l>Komm folge!</l>
           </sp>
           <sp who="#rhamnes">
@@ -3980,16 +3679,12 @@
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES</speaker>
-            <stage>
-              <hi>sich dem Hause nähernd.</hi>
-            </stage>
+            <stage>sich dem Hause nähernd.</stage>
             <l>Gewalt!</l>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON</speaker>
-            <stage>
-              <hi>vertritt ihm den Weg und geht mit dem Dolche auf ihn zu.</hi>
-            </stage>
+            <stage>vertritt ihm den Weg und geht mit dem Dolche auf ihn zu.</stage>
             <lg>
               <l>So fahre hin denn, wie du selber willst!</l>
               <l>Geringer Preis für dieser Reinen Rettung</l>
@@ -4006,9 +3701,7 @@
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES</speaker>
-            <stage>
-              <hi>der sich auf die entgegengesetzte Seite zurückgezogen hat.</hi>
-            </stage>
+            <stage>der sich auf die entgegengesetzte Seite zurückgezogen hat.</stage>
             <lg>
               <l>O wehe, weh dem Alter,</l>
               <l>Daß nicht mehr eins der Wille und die Kraft!</l>
@@ -4028,9 +3721,7 @@
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>von ihm weg in den Vorgrund eilend.</hi>
-            </stage>
+            <stage>von ihm weg in den Vorgrund eilend.</stage>
             <l>Ihr Götter! Soll ich?</l>
           </sp>
           <sp who="#phaon">
@@ -4044,9 +3735,7 @@
               <l>Das still der Eltern stilles Haus beschattet,</l>
               <l>Wölbt, Teure, sich der Tempel unsers Glücks.</l>
             </lg>
-            <stage>
-              <hi>Sie ergreifend.</hi>
-            </stage>
+            <stage>Sie ergreifend.</stage>
             <lg>
               <l>Erzitterst du? Erzittre, holde Braut,</l>
               <l>Die Hand des Bräutigams hält dich umschlungen!</l>
@@ -4067,9 +3756,7 @@
               <l>Die See rauscht auf, die lauen Lüfte wehen</l>
               <l>Und Amphitrite ist der Liebe hold.</l>
             </lg>
-            <stage>
-              <hi>Zu Rhamnes.</hi>
-            </stage>
+            <stage>Zu Rhamnes.</stage>
             <l>Voraus du!</l>
           </sp>
           <sp who="#rhamnes">
@@ -4079,22 +3766,16 @@
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
             <l>Es gilt dein Leben, sag ich dir!</l>
-            <stage>
-              <hi>Alle ab.</hi>
-            </stage>
+            <stage>Alle ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Sechster Auftritt</head>
-          <stage>
-            <hi>Eine Pause. – Dann erscheint Eucharis auf den Stufen.</hi>
-          </stage>
+          <stage>Eine Pause. – Dann erscheint Eucharis auf den Stufen.</stage>
           <sp who="#eucharis">
             <speaker>EUCHARIS.</speaker>
             <l>Rhamnes! –</l>
-            <stage>
-              <hi>Sie steigt herab.</hi>
-            </stage>
+            <stage>Sie steigt herab.</stage>
             <lg>
               <l>Mir war, als hört ich seine Stimme!</l>
               <l>Nein, es ist niemand hier! Ich täuschte mich.</l>
@@ -4110,9 +3791,7 @@
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES</speaker>
-            <stage>
-              <hi>von weitem.</hi>
-            </stage>
+            <stage>von weitem.</stage>
             <l>Zu Hilfe!</l>
           </sp>
           <sp who="#eucharis">
@@ -4121,9 +3800,7 @@
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES</speaker>
-            <stage>
-              <hi>näher.</hi>
-            </stage>
+            <stage>näher.</stage>
             <l>Herbei!</l>
           </sp>
           <sp who="#eucharis">
@@ -4132,9 +3809,7 @@
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES</speaker>
-            <stage>
-              <hi>nahe.</hi>
-            </stage>
+            <stage>nahe.</stage>
             <l>Sklaven Sapphos!</l>
           </sp>
           <sp who="#eucharis">
@@ -4144,9 +3819,7 @@
         </div>
         <div type="scene">
           <head>Siebenter Auftritt</head>
-          <stage>
-            <hi>Rhamnes eilig. Eucharis</hi>
-          </stage>
+          <stage>Rhamnes eilig. Eucharis</stage>
           <sp who="#rhamnes">
             <speaker>RHAMNES.</speaker>
             <lg>
@@ -4177,9 +3850,7 @@
           <sp who="#eucharis">
             <speaker>EUCHARIS.</speaker>
             <l>Was mag das sein?</l>
-            <stage>
-              <hi>Die Stufen hinauf.</hi>
-            </stage>
+            <stage>Die Stufen hinauf.</stage>
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES.</speaker>
@@ -4188,24 +3859,18 @@
               <l>Frohlocket nicht! des Meeres fromme Götter,</l>
               <l>Sie rächen gern so abscheuwürdge Tat.</l>
             </lg>
-            <stage>
-              <hi>Es kommen nach und nach mehrere Diener.</hi>
-            </stage>
+            <stage>Es kommen nach und nach mehrere Diener.</stage>
             <lg>
               <l>Eilt schnell hinab ins Tal, weckt die Bewohner,</l>
               <l>Gebt laut der Not, des Hilfeflehens Zeichen,</l>
               <l>O fragt nicht, fort! Und laßt den Notruf tönen!</l>
             </lg>
-            <stage>
-              <hi>Diener ab.</hi>
-            </stage>
+            <stage>Diener ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Achter Auftritt</head>
-          <stage>
-            <hi>Sappho. Vorige.</hi>
-          </stage>
+          <stage>Sappho. Vorige.</stage>
           <sp who="#sappho">
             <speaker>SAPPHO.</speaker>
             <lg>
@@ -4279,7 +3944,7 @@
             <speaker>SAPPHO.</speaker>
             <lg>
               <l>Und wo blieb euer Donner, ewge Götter!</l>
-              <l>Habt ihr denn Qualen nur für <hi>Sapphos</hi> Herz?</l>
+              <l>Habt ihr denn Qualen nur für <emph>Sapphos</emph> Herz?</l>
               <l>Ist taub das Ohr und lahm der Arm der Rache!</l>
               <l>Hernieder euern rächerischen Strahl,</l>
               <l>Hernieder auf den Scheitel der Verräter,</l>
@@ -4290,19 +3955,15 @@
               <l>Den Kahn der Liebe schaukelnd vom Gestade!</l>
               <l>Da ist nicht Hilfe! Sappho, hilf dir selbst!</l>
             </lg>
-            <stage>
-              <hi>Die Bühne hat sich nach und nach mit Fackeln tragenden Sklaven und Landleuten
-                angefüllt.</hi>
-            </stage>
+            <stage>Die Bühne hat sich nach und nach mit Fackeln tragenden Sklaven und Landleuten
+              angefüllt.</stage>
             <lg>
               <l>Ha, diese hier! Habt Dank, ihr Treuen, Dank!</l>
               <l>Gebt, Menschen! was die Götter mir verweigern!</l>
               <l>Auf, meine Freunde, rächet eure Sappho!</l>
               <l>Wenn ich euch jemals wert, jetzt zeigt es, jetzt!</l>
             </lg>
-            <stage>
-              <hi>Unter ihnen herumgehend.</hi>
-            </stage>
+            <stage>Unter ihnen herumgehend.</stage>
             <lg>
               <l>Du, Myron, schwurst mir oft und du, Terpander –</l>
               <l>Gedenkst du, Lychas, noch des Liedes – Pheres –</l>
@@ -4316,9 +3977,7 @@
               <l>Daß ich die Augen bohren kann in seine,</l>
               <l>Ihn fragen kann: Was hab ich dir getan,</l>
             </lg>
-            <stage>
-              <hi>In Tränen ausbrechend.</hi>
-            </stage>
+            <stage>In Tränen ausbrechend.</stage>
             <lg>
               <l>Daß du mich tötest? – Nein, nur Wut und Rache!</l>
               <l>Wer mir sie bringt, er nehme all mein Gold,</l>
@@ -4332,24 +3991,18 @@
           <sp who="#sappho">
             <speaker>SAPPHO.</speaker>
             <l>Ich dank euch,</l>
-            <stage>
-              <hi>Zu den Abgehenden.</hi>
-            </stage>
+            <stage>Zu den Abgehenden.</stage>
             <lg>
               <l>Mein Leben ist gelegt in eure Hand!</l>
               <l><pb n="770"/> Laßt meine Wünsche euern Fuß beflügeln,</l>
               <l>Und meine Rache stärke euren Arm –</l>
               <l>Nur schnell, nur schnell! Bei allen Göttern, schnell!</l>
             </lg>
-            <stage>
-              <hi>Diener und Landleute ab.</hi>
-            </stage>
+            <stage>Diener und Landleute ab.</stage>
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>die Hände über die Brust gelegt.</hi>
-            </stage>
+            <stage>die Hände über die Brust gelegt.</stage>
             <l>Sie gehn! Nun ist mir wohl! – Nun will ich ruhn!</l>
           </sp>
           <sp who="#eucharis">
@@ -4362,39 +4015,29 @@
           </sp>
           <sp who="#eucharis">
             <speaker>EUCHARIS</speaker>
-            <stage>
-              <hi>die Wankende in ihre Arme fassend.</hi>
-            </stage>
+            <stage>die Wankende in ihre Arme fassend.</stage>
             <l>Götter!</l>
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>in Eucharis Armen.</hi>
-            </stage>
+            <stage>in Eucharis Armen.</stage>
             <l>O, laß mich sinken! Warum hältst du mich?</l>
-            <stage>
-              <hi>Der Vorhang fällt.</hi>
-            </stage>
+            <stage>Der Vorhang fällt.</stage>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>5. Akt</head>
+        <head>Fünfter Aufzug</head>
+        <stage>Gegend wie in den vorigen Aufzügen. Tagesanbruch</stage>
         <div type="scene">
           <head>Erster Auftritt</head>
-          <stage>
-            <hi>Sappho sitzt halbliegend auf der Rasenbank, unbeweglich vor sich hinstarrend.</hi>
-          </stage>
-          <stage>
-            <hi>In einiger Entfernung steht Eucharis; weiter zurück mehrere Sklavinnen. Rhamnes
-              kömmt</hi>
-          </stage>
+          <stage>Sappho sitzt halbliegend auf der Rasenbank, unbeweglich vor sich
+            hinstarrend.</stage>
+          <stage>In einiger Entfernung steht Eucharis; weiter zurück mehrere Sklavinnen. Rhamnes
+            kömmt</stage>
           <sp who="#eucharis">
             <speaker>EUCHARIS</speaker>
-            <stage>
-              <hi>den Finger auf dem Munde.</hi>
-            </stage>
+            <stage>den Finger auf dem Munde.</stage>
             <l>Still! still!</l>
           </sp>
           <sp who="#rhamnes">
@@ -4430,9 +4073,7 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>emporfahrend.</hi>
-            </stage>
+            <stage>emporfahrend.</stage>
             <l>Schiff? Wo?</l>
           </sp>
           <sp who="#rhamnes">
@@ -4441,9 +4082,7 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>zurücksinkend.</hi>
-            </stage>
+            <stage>zurücksinkend.</stage>
             <l>Noch nicht! – Noch nicht! –</l>
             <pb n="771"/>
           </sp>
@@ -4453,22 +4092,16 @@
               <l>Die Morgenluft weht kühl,</l>
               <l>Erlaube, daß wir dich in dein Gemach –</l>
             </lg>
-            <stage>
-              <hi>Sappho schüttelt verneinend den Kopf.</hi>
-            </stage>
+            <stage>Sappho schüttelt verneinend den Kopf.</stage>
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES.</speaker>
             <l>Laß dich erbitten, folge mir ins Haus!</l>
-            <stage>
-              <hi>Sappho schüttelt noch einmal.</hi>
-            </stage>
+            <stage>Sappho schüttelt noch einmal.</stage>
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES</speaker>
-            <stage>
-              <hi>zurückweichend.</hi>
-            </stage>
+            <stage>zurückweichend.</stage>
             <l>Du willsts – Ihr Anblick schneidet mir ins Herz!</l>
           </sp>
           <sp who="#eucharis">
@@ -4485,14 +4118,10 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>aufspringend.</hi>
-            </stage>
+            <stage>aufspringend.</stage>
             <l>Ha!</l>
-            <stage>
-              <hi>Während des Folgenden steht sie in ängstlich horchender Stellung
-                zurückgebeugt.</hi>
-            </stage>
+            <stage>Während des Folgenden steht sie in ängstlich horchender Stellung
+              zurückgebeugt.</stage>
           </sp>
           <sp who="#eucharis">
             <speaker>EUCHARIS.</speaker>
@@ -4504,9 +4133,7 @@
           <sp who="#rhamnes">
             <speaker>RHAMNES.</speaker>
             <l>Wohl, ich will sehn!</l>
-            <stage>
-              <hi>Steigt auf eine Erhöhung des Ufers.</hi>
-            </stage>
+            <stage>Steigt auf eine Erhöhung des Ufers.</stage>
           </sp>
           <sp who="#eucharis">
             <speaker>EUCHARIS.</speaker>
@@ -4547,9 +4174,7 @@
               <l>Er schwenkt den Stab! – Gewiß, sie sind gefangen!</l>
               <l>Hierher, mein Freund, hierher! – Er kommt heran!</l>
             </lg>
-            <stage>
-              <hi>Herabsteigend.</hi>
-            </stage>
+            <stage>Herabsteigend.</stage>
           </sp>
           <sp who="#eucharis">
             <speaker>EUCHARIS.</speaker>
@@ -4559,10 +4184,8 @@
         </div>
         <div type="scene">
           <head>Zweiter Auftritt</head>
-          <stage>
-            <hi>Ein Landmann. Vorige.</hi>
-          </stage>
-          <sp who="#landmann">
+          <stage>Ein Landmann. Vorige.</stage>
+          <sp who="#ein_landmann">
             <speaker>LANDMANN.</speaker>
             <l>Heil, Sappho, dir!</l>
           </sp>
@@ -4570,7 +4193,7 @@
             <speaker>EUCHARIS.</speaker>
             <l>Ist er gefangen?</l>
           </sp>
-          <sp who="#landmann">
+          <sp who="#ein_landmann">
             <speaker>LANDMANN.</speaker>
             <l>Ja!</l>
           </sp>
@@ -4582,7 +4205,7 @@
             <speaker>EUCHARIS.</speaker>
             <l>Und wie?</l>
           </sp>
-          <sp who="#landmann">
+          <sp who="#ein_landmann">
             <speaker>LANDMANN.</speaker>
             <lg>
               <l>Sie hatten tüchtgen Vorsprung,</l>
@@ -4596,11 +4219,9 @@
               <l>Das blanke Eisen in der Rechten schwingend. –</l>
               <l>Begehrt ihr was, erhabne Frau?</l>
             </lg>
-            <stage>
-              <hi>Sappho winkt ihm fortzufahren.</hi>
-            </stage>
+            <stage>Sappho winkt ihm fortzufahren.</stage>
           </sp>
-          <sp who="#landmann">
+          <sp who="#ein_landmann">
             <speaker>LANDMANN.</speaker>
             <lg>
               <l>Nun denn!</l>
@@ -4608,11 +4229,9 @@
               <l>Bis nun ein Ruderschlag, der ihm gegolten,</l>
               <l>Das kleine Mädchen an der Stirne trifft.</l>
             </lg>
-            <stage>
-              <hi>Sappho verhüllt sich die Augen mit der Hand.</hi>
-            </stage>
+            <stage>Sappho verhüllt sich die Augen mit der Hand.</stage>
           </sp>
-          <sp who="#landmann">
+          <sp who="#ein_landmann">
             <speaker>LANDMANN.</speaker>
             <lg>
               <l>Sie sinkt, er faßt sie in die Arme, wir,</l>
@@ -4639,19 +4258,15 @@
               <l>Wer rettet mich vor seinem Anblick? – Mädchen! –</l>
               <l>Du, Aphrodite, schütze deine Magd!</l>
             </lg>
-            <stage>
-              <hi>Sie eilt dem Hintergrunde zu und umklammert den Altar, ihre Dienerinnen stehen
-                rings um sie her.</hi>
-            </stage>
+            <stage>Sie eilt dem Hintergrunde zu und umklammert den Altar, ihre Dienerinnen stehen
+              rings um sie her.</stage>
             <pb n="773"/>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt</head>
-          <stage>
-            <hi>Phaon, Melitten führend. Landleute. Sappho mit ihren Dienerinnen im
-              Hintergrunde.</hi>
-          </stage>
+          <stage>Phaon, Melitten führend. Landleute. Sappho mit ihren Dienerinnen im
+            Hintergrunde.</stage>
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
             <lg>
@@ -4716,7 +4331,7 @@
             <speaker>PHAON.</speaker>
             <l>Wer hält mich? Wer?</l>
           </sp>
-          <sp who="#landmann">
+          <sp who="#ein_landmann">
             <speaker>LANDMANN.</speaker>
             <l>Wir alle hier!</l>
           </sp>
@@ -4724,7 +4339,7 @@
             <speaker>PHAON.</speaker>
             <l>Ich bin ein freier Mann!</l>
           </sp>
-          <sp who="#landmann">
+          <sp who="#ein_landmann">
             <speaker>LANDMANN.</speaker>
             <l>Du warsts, jetzt bist der Strafe du verfallen!</l>
           </sp>
@@ -4732,7 +4347,7 @@
             <speaker>PHAON.</speaker>
             <l>Der Strafe! und warum?</l>
           </sp>
-          <sp who="#landmann">
+          <sp who="#ein_landmann">
             <speaker>LANDMANN.</speaker>
             <lg>
               <l>Der Sklavin Raub</l>
@@ -4746,7 +4361,7 @@
               <l>Und zahlen will ichs, wärens Krösus Schätze!</l>
             </lg>
           </sp>
-          <sp who="#landmann">
+          <sp who="#ein_landmann">
             <speaker>LANDMANN.</speaker>
             <l>Ihr ziemts zu fordern, und nicht dir zu bieten!</l>
           </sp>
@@ -4756,10 +4371,10 @@
               <l>Seid ihr so zahm, daß eines Weibes Rache</l>
               <l>Geduldig ihr die Männerhände leiht,</l>
               <l>Und dienstbar seid der Liebe Wechsellaunen?</l>
-              <l><hi>Mir</hi> stehet bei, denn Unrecht widerfährt mir!</l>
+              <l><emph>Mir</emph> stehet bei, denn Unrecht widerfährt mir!</l>
             </lg>
           </sp>
-          <sp who="#landmann">
+          <sp who="#ein_landmann">
             <speaker>LANDMANN.</speaker>
             <l>Ob Recht, ob Unrecht? Sappho wirds entscheiden!</l>
           </sp>
@@ -4772,7 +4387,7 @@
               <l>Ist sie Gebietrin hier im Land?</l>
             </lg>
           </sp>
-          <sp who="#landmann">
+          <sp who="#ein_landmann">
             <speaker>LANDMANN.</speaker>
             <lg>
               <l>Sie ist es,</l>
@@ -4785,12 +4400,10 @@
               <l>So hat sie denn euch alle auch umsponnen,</l>
               <l>Ich will doch sehn, wie weit ihr Zauber reicht!</l>
             </lg>
-            <stage>
-              <hi>Gegen das Haus zugehend.</hi>
-            </stage>
+            <stage>Gegen das Haus zugehend.</stage>
             <l>Zu ihr!</l>
           </sp>
-          <sp who="#landmann">
+          <sp who="#ein_landmann">
             <speaker>LANDMANN.</speaker>
             <l>Zurück!</l>
           </sp>
@@ -4803,12 +4416,10 @@
               <l>Ha, dort am Altar ihrer Diener Reihen,</l>
               <l>Sie ist es, du entgehst mir nicht! – Zu mir!</l>
             </lg>
-            <stage>
-              <hi>Durchbricht die Menge. Auch der Kreis der Sklavinnen öffnet sich. Sappho liegt
-                hingegossen an den Stufen des Altars.</hi>
-            </stage>
+            <stage>Durchbricht die Menge. Auch der Kreis der Sklavinnen öffnet sich. Sappho liegt
+              hingegossen an den Stufen des Altars.</stage>
           </sp>
-          <sp who="#landmann">
+          <sp who="#ein_landmann">
             <speaker>LANDMANN.</speaker>
             <l>Du wagst es, unbesonnen frecher Knabe?</l>
             <pb n="775"/>
@@ -4819,16 +4430,12 @@
               <l>Was willst du an den Stufen hier der Götter?</l>
               <l>Sie hören nicht der Bosheit Flehn. – Steh auf!</l>
             </lg>
-            <stage>
-              <hi>Er faßt sie an. Bei seiner Berührung fährt Sappho empor und eilt mit fliegenden
-                Schritten, ohne ihn anzusehen, dem Vorgrunde zu.</hi>
-            </stage>
+            <stage>Er faßt sie an. Bei seiner Berührung fährt Sappho empor und eilt mit fliegenden
+              Schritten, ohne ihn anzusehen, dem Vorgrunde zu.</stage>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON</speaker>
-            <stage>
-              <hi>ihr folgend.</hi>
-            </stage>
+            <stage>ihr folgend.</stage>
             <lg>
               <l>Entweichst du mir? du mußt mir Rede stehn!</l>
               <l>Ha, bebe nur! Es ist jetzt Zeit zu beben!</l>
@@ -4864,9 +4471,7 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>zu Rhamnes.</hi>
-            </stage>
+            <stage>zu Rhamnes.</stage>
             <lg>
               <l>Geh hin und hol die Sklavin mir zurück,</l>
               <l>Nur sie und niemand anders ließ ich suchen!</l>
@@ -4883,9 +4488,7 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>noch immer abgewandt.</hi>
-            </stage>
+            <stage>noch immer abgewandt.</stage>
             <l>Nicht Geld verlang ich, nur was mein! Sie bleibt!</l>
           </sp>
           <sp who="#phaon">
@@ -4901,9 +4504,7 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>zu Rhamnes.</hi>
-            </stage>
+            <stage>zu Rhamnes.</stage>
             <l>Erfülle, was ich dir befahl!</l>
             <pb n="776"/>
           </sp>
@@ -4939,16 +4540,12 @@
               <l>Ob dies das Auge, das so mild gelächelt,</l>
               <l>Ob, Sappho, du es bist, du Sappho?</l>
             </lg>
-            <stage>
-              <hi>Er faßt ihren Arm und wendet sie gegen sich. Sie blickt empor, ihr Auge trifft das
-                seinige.</hi>
-            </stage>
+            <stage>Er faßt ihren Arm und wendet sie gegen sich. Sie blickt empor, ihr Auge trifft
+              das seinige.</stage>
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>schmerzvoll zusammenfahrend.</hi>
-            </stage>
+            <stage>schmerzvoll zusammenfahrend.</stage>
             <l>Weh mir!</l>
           </sp>
           <sp who="#phaon">
@@ -4989,9 +4586,7 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>abgewendet vor sich hin.</hi>
-            </stage>
+            <stage>abgewendet vor sich hin.</stage>
             <lg>
               <l>Hinab in Meeresgrund die goldne Leier,</l>
               <l>Wird ihr Besitz um solchen Preis erkauft!</l>
@@ -5007,10 +4602,10 @@
               <l>Du standst vor mir, ein unbegreiflich Bild,</l>
               <l>Zu dems mich hin, von dems mich fort,</l>
               <l>Mit unsichtbaren Banden mächtig zog;</l>
-              <l>Du warst – zu <hi>niedrig</hi> glaubte dich mein Zorn,</l>
-              <l>Zu <hi>hoch</hi> nennt die Besinnung dich – für meine Liebe.</l>
-              <l>Und nur das <hi>Gleiche</hi> fügt sich leicht und wohl!</l>
-              <l>Da sah ich <hi>sie,</hi> und hoch gen Himmel sprangen</l>
+              <l>Du warst – zu <emph>niedrig</emph> glaubte dich mein Zorn,</l>
+              <l>Zu <emph>hoch</emph> nennt die Besinnung dich – für meine Liebe.</l>
+              <l>Und nur das <emph>Gleiche</emph> fügt sich leicht und wohl!</l>
+              <l>Da sah ich <emph>sie</emph>, und hoch gen Himmel sprangen</l>
               <l>Die tiefen Quellen alle meines Innern,</l>
               <l>Die stockend vorher weigerten den Strahl.</l>
               <l>Komm her, Melittion, komm her zu ihr,</l>
@@ -5022,17 +4617,13 @@
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA</speaker>
-            <stage>
-              <hi>schüchtern nahend.</hi>
-            </stage>
+            <stage>schüchtern nahend.</stage>
             <l>Gebieterin!</l>
             <pb n="778"/>
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>sie von sich haltend.</hi>
-            </stage>
+            <stage>sie von sich haltend.</stage>
             <l>Fort von mir!</l>
           </sp>
           <sp who="#melitta">
@@ -5073,8 +4664,7 @@
           <sp who="#melitta">
             <speaker>MELITTA.</speaker>
             <lg>
-              <l>O, wär es auch, mich freut nur ihre <hi>Gabe,</hi>
-              </l>
+              <l>O, wär es auch, mich freut nur ihre <emph>Gabe</emph>,</l>
               <l>Erzwungen wäre mir das höchste Glück zur Last!</l>
               <l>Hier will ich knien, bis mir ein milder Blick,</l>
               <l>Ein gütig Wort, Verzeihung angekündigt.</l>
@@ -5086,9 +4676,7 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>steht, das Gesicht auf Eucharis Schulter gelehnt.</hi>
-            </stage>
+            <stage>steht, das Gesicht auf Eucharis Schulter gelehnt.</stage>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
@@ -5107,9 +4695,7 @@
           </sp>
           <sp who="#phaon">
             <speaker>PHAON</speaker>
-            <stage>
-              <hi>Melitten umschlingend und ebenfalls hinknieend.</hi>
-            </stage>
+            <stage>Melitten umschlingend und ebenfalls hinknieend.</stage>
             <lg>
               <l>Den Menschen Liebe und den Göttern Ehrfurcht,</l>
               <l>Gib uns, was unser, und nimm hin, was dein!</l>
@@ -5119,24 +4705,18 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>fährt bei den letzten Worten empor und blickt die Knieenden mit einem starren
-                Blicke an, wendet sich dann schnell um und geht.</hi>
-            </stage>
+            <stage>fährt bei den letzten Worten empor und blickt die Knieenden mit einem starren
+              Blicke an, wendet sich dann schnell um und geht.</stage>
           </sp>
           <sp who="#melitta">
             <speaker>MELITTA.</speaker>
             <l>Weh mir, sie flieht, sie hat ihr Kind verstoßen!</l>
-            <stage>
-              <hi>Sappho ab. Eucharis und Dienerinnen folgen.</hi>
-            </stage>
+            <stage>Sappho ab. Eucharis und Dienerinnen folgen.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt</head>
-          <stage>
-            <hi>Vorige ohne Sappho und Eucharis.</hi>
-          </stage>
+          <stage>Vorige ohne Sappho und Eucharis.</stage>
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
             <lg>
@@ -5207,8 +4787,7 @@
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES.</speaker>
-            <l>Du? Und wer schützet <hi>dich?</hi>
-            </l>
+            <l>Du? Und wer schützet <emph>dich</emph>?</l>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
@@ -5355,9 +4934,7 @@
         </div>
         <div type="scene">
           <head>Fünfter Auftritt</head>
-          <stage>
-            <hi>Eucharis. Vorige</hi>
-          </stage>
+          <stage>Eucharis. Vorige</stage>
           <sp who="#eucharis">
             <speaker>EUCHARIS.</speaker>
             <l>Bist du hier, Rhamnes? Eilig komm!</l>
@@ -5447,24 +5024,18 @@
         </div>
         <div type="scene">
           <head>Sechster Auftritt</head>
-          <stage>
-            <hi>Sappho, reich gekleidet wie im ersten Aufzuge; den Purpurmantel um die Schultern,
-              den Lorbeer auf dem Haupte, die goldne Leier in der Hand, erscheint, von ihren
-              Dienerinnen umgeben, auf den Stufen des Säulenganges und schreitet ernst und feierlich
-              herunter.</hi>
-          </stage>
-          <stage>
-            <hi>Lange Pause.</hi>
-          </stage>
+          <stage>Sappho, reich gekleidet wie im ersten Aufzuge; den Purpurmantel um die Schultern,
+            den Lorbeer auf dem Haupte, die goldne Leier in der Hand, erscheint, von ihren
+            Dienerinnen umgeben, auf den Stufen des Säulenganges und schreitet ernst und feierlich
+            herunter.</stage>
+          <stage>Lange Pause.</stage>
           <sp who="#melitta">
             <speaker>MELITTA.</speaker>
             <l>O Sappho, o Gebieterin!</l>
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>ernst und ruhig.</hi>
-            </stage>
+            <stage>ernst und ruhig.</stage>
             <l>Was willst du?</l>
           </sp>
           <sp who="#melitta">
@@ -5505,7 +5076,7 @@
             <speaker>SAPPHO.</speaker>
             <lg>
               <l>Du sprichst von Dingen, die vergangen sind!</l>
-              <l>Ich suchte <hi>dich</hi> und habe <hi>mich</hi> gefunden!</l>
+              <l>Ich suchte <emph>dich</emph> und habe <emph>mich</emph> gefunden!</l>
               <l>Du faßtest nicht mein Herz, so fahre hin!</l>
               <l>Auf festern Grund muß meine Hoffnung fußen!</l>
             </lg>
@@ -5527,38 +5098,28 @@
               <l>Nur manchmal aus der fremden weiten Ferne</l>
               <l>Des freundlichen Gefährten sich – erinnernd</l>
             </lg>
-            <stage>
-              <hi>Die Stimme versagt ihr.</hi>
-            </stage>
+            <stage>Die Stimme versagt ihr.</stage>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON</speaker>
-            <stage>
-              <hi>bewegt.</hi>
-            </stage>
+            <stage>bewegt.</stage>
             <l>O Sappho!</l>
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO.</speaker>
             <l>Still! Laß uns in Ruhe scheiden!</l>
-            <stage>
-              <hi>Zu den übrigen.</hi>
-            </stage>
+            <stage>Zu den übrigen.</stage>
             <lg>
               <l><pb n="785"/> Ihr, die ihr Sapphon schwach gesehn, verzeiht!</l>
               <l>Ich will mit Sapphos Schwäche euch versöhnen,</l>
               <l>Gebeugt erst zeigt der Bogen seine Kraft!</l>
             </lg>
-            <stage>
-              <hi>Auf den Altar im Hintergrunde zeigend.</hi>
-            </stage>
+            <stage>Auf den Altar im Hintergrunde zeigend.</stage>
             <lg>
               <l>Die Flamme zündet Aphroditens an,</l>
               <l>Daß hell sie strahle in das Morgenrot!</l>
             </lg>
-            <stage>
-              <hi>Es geschieht.</hi>
-            </stage>
+            <stage>Es geschieht.</stage>
             <lg>
               <l>Und nun entfernt euch, lasset mich allein,</l>
               <l>Alleine mit den Meinen mich beraten!</l>
@@ -5567,15 +5128,11 @@
           <sp who="#rhamnes">
             <speaker>RHAMNES.</speaker>
             <l>Sie wills, laßt uns gehorchen. Kommt ihr alle!</l>
-            <stage>
-              <hi>Ziehen sich zurück.</hi>
-            </stage>
+            <stage>Ziehen sich zurück.</stage>
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>vortretend.</hi>
-            </stage>
+            <stage>vortretend.</stage>
             <lg>
               <l>Erhabne, heilge Götter!</l>
               <l>Ihr habt mit reichem Segen mich geschmückt!</l>
@@ -5621,29 +5178,21 @@
               <l>Zu schwach fühl ich mich, länger noch zu kämpfen,</l>
               <l>Gebt mir den Sieg, erlasset mir den Kampf!</l>
             </lg>
-            <stage>
-              <hi>Begeistert.</hi>
-            </stage>
+            <stage>Begeistert.</stage>
             <lg>
               <l>Die Flamme lodert und die Sonne steigt,</l>
               <l>Ich fühls, ich bin erhört! Habt Dank, ihr Götter! –</l>
               <l>Du Phaon! Du Melitta! Kommt heran!</l>
             </lg>
-            <stage>
-              <hi>Phaon auf die Stirne küssend.</hi>
-            </stage>
+            <stage>Phaon auf die Stirne küssend.</stage>
             <l>Es küsset dich ein Freund aus fernen Welten</l>
-            <stage>
-              <hi>Melitten umarmend.</hi>
-            </stage>
+            <stage>Melitten umarmend.</stage>
             <l>Die tote Mutter schickt dir diesen Kuß!</l>
             <lg>
               <l>Nun hin, dort an der Liebesgöttin Altar</l>
               <l>Erfülle sich der Liebe dunkles Los!</l>
             </lg>
-            <stage>
-              <hi>Eilt dem Altare zu.</hi>
-            </stage>
+            <stage>Eilt dem Altare zu.</stage>
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES.</speaker>
@@ -5654,19 +5203,15 @@
           </sp>
           <sp who="#sappho">
             <speaker>SAPPHO</speaker>
-            <stage>
-              <hi>auf eine Erhöhung des Ufers hintretend und die Hände über die beiden
-                ausstreckend.</hi>
-            </stage>
+            <stage>auf eine Erhöhung des Ufers hintretend und die Hände über die beiden
+              ausstreckend.</stage>
             <lg>
               <l>Den Menschen Liebe und den Göttern Ehrfurcht!</l>
               <l>Genießet, was euch blüht, und denket mein!</l>
               <l>So zahle ich die letzte Schuld des Lebens!</l>
               <l>Ihr Götter, segnet sie und nehmt mich auf!</l>
             </lg>
-            <stage>
-              <hi>Stürzt sich vom Felsen ins Meer.</hi>
-            </stage>
+            <stage>Stürzt sich vom Felsen ins Meer.</stage>
           </sp>
           <sp who="#phaon">
             <speaker>PHAON.</speaker>
@@ -5678,20 +5223,14 @@
           </sp>
           <sp who="#phaon">
             <speaker>PHAON</speaker>
-            <stage>
-              <hi>mit Melitten beschäftigt.</hi>
-            </stage>
+            <stage>mit Melitten beschäftigt.</stage>
             <l>Schnell Hilfe, fort ans Ufer! Rettung, Hilfe!</l>
-            <stage>
-              <hi>Einige ab.</hi>
-            </stage>
+            <stage>Einige ab.</stage>
             <pb n="787"/>
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES</speaker>
-            <stage>
-              <hi>der aufs Ufer gestiegen.</hi>
-            </stage>
+            <stage>der aufs Ufer gestiegen.</stage>
             <lg>
               <l>Ihr Götter, wendet ab! dort jene Klippe,</l>
               <l>Berührt sie die, ist sie zerschellt, zerschmettert! –</l>
@@ -5704,9 +5243,7 @@
           </sp>
           <sp who="#rhamnes">
             <speaker>RHAMNES</speaker>
-            <stage>
-              <hi>herabsteigend.</hi>
-            </stage>
+            <stage>herabsteigend.</stage>
             <lg>
               <l>Halt ein! Es ist zu spät! Gönnt ihr das Grab,</l>
               <l>Das sie, verschmähend diese falsche Erde,</l>
@@ -5732,14 +5269,10 @@
               <l>Verwelkt der Lorbeer und das Saitenspiel verklungen!</l>
               <l>Es war auf Erden ihre Heimat nicht –</l>
             </lg>
-            <stage>
-              <hi>Mit erhobenen Händen.</hi>
-            </stage>
+            <stage>Mit erhobenen Händen.</stage>
             <l>Sie ist zurückgekehret zu den Ihren!</l>
-            <stage>
-              <hi>Der Vorhang fällt.</hi>
-            </stage>
-            <p>Ende</p>
+            <stage>Der Vorhang fällt.</stage>
+            <stage>Ende</stage>
           </sp>
         </div>
       </div>
