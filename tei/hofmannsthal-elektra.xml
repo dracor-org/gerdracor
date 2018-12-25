@@ -35,7 +35,7 @@
               Dramen, Band 2–5: Dramen, Herausgegeben von Bernd Schoeller in Beratung mit Rudolf
               Hirsch, Frankfurt a.M.: S. Fischer, 1979.</title>
             <date type="print" when="1904">1904</date>
-            <date type="premiere" when="1903">1903</date>
+            <date type="premiere" when="1903">1909</date>
             <date type="written" when="1903">1903</date>
           </bibl>
         </bibl>
@@ -44,70 +44,66 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="erste">
-            <persName>ERSTE</persName>
-            <persName xml:id="die_eine">DIE EINE</persName>
-            <persName xml:id="eine">EINE</persName>
+          <person xml:id="erste_dienerin" sex="FEMALE">
+            <persName>Erste Dienerin</persName>
+            <persName type="variant">Eine</persName>
           </person>
-          <person xml:id="zweite">
-            <persName>ZWEITE</persName>
+          <person xml:id="zweite_dienerin" sex="FEMALE">
+            <persName>Zweite Dienerin</persName>
           </person>
-          <person xml:id="dritte">
-            <persName>DRITTE</persName>
+          <person xml:id="dritte_dienerin" sex="FEMALE">
+            <persName>Dritte Dienerin</persName>
           </person>
-          <person xml:id="vierte">
-            <persName>VIERTE</persName>
+          <person xml:id="vierte_dienerin" sex="FEMALE">
+            <persName>Vierte Dienerin</persName>
           </person>
-          <person xml:id="fünfte">
-            <persName>FÜNFTE</persName>
+          <person xml:id="fuenfte_dienerin" sex="FEMALE">
+            <persName>Fünfte Dienerin</persName>
+            <persName type="variant">Die Eine</persName>
           </person>
-          <person xml:id="aufseherin">
-            <persName>AUFSEHERIN</persName>
+          <person xml:id="aufseherin" sex="FEMALE">
+            <persName>Aufseherin</persName>
           </person>
-          <person xml:id="die_dienerinnen">
-            <persName>DIE DIENERINNEN</persName>
-            <persName xml:id="alle">ALLE</persName>
-            <persName xml:id="mehrere">MEHRERE</persName>
+          <personGrp xml:id="die_dienerinnen" sex="FEMALE">
+            <name>Die Dienerinnen</name>
+            <name type="variant">Alle</name>
+            <name type="variant">Mehrere</name>
+          </personGrp>
+          <person xml:id="elektra" sex="FEMALE">
+            <persName>Elektra</persName>
           </person>
-          <person xml:id="elektra">
-            <persName>ELEKTRA</persName>
+          <person xml:id="chrysothemis" sex="FEMALE">
+            <persName>Chrysothemis</persName>
           </person>
-          <person xml:id="chrysothemis">
-            <persName>CHRYSOTHEMIS</persName>
+          <person xml:id="klytaemnestra" sex="FEMALE">
+            <persName>Klytämnestra</persName>
           </person>
-          <person xml:id="klytämnestra">
-            <persName>KLYTÄMNESTRA</persName>
-            <persName xml:id="klytemnästra">KLYTEMNÄSTRA</persName>
+          <person xml:id="die_vertraute" sex="FEMALE">
+            <persName>Die Vertraute</persName>
           </person>
-          <person xml:id="die_vertraute">
-            <persName>DIE VERTRAUTE</persName>
+          <person xml:id="die_schlepptraegerin" sex="FEMALE">
+            <persName>Die Schleppträgerin</persName>
           </person>
-          <person xml:id="die_schleppträgerin">
-            <persName>DIE SCHLEPPTRÄGERIN</persName>
+          <person xml:id="ein_junger_diener" sex="MALE">
+            <persName>Ein junger Diener</persName>
+            <persName type="variant">Der Diener</persName>
+            <persName type="variant">Der Junge</persName>
           </person>
-          <person xml:id="chkysothemis">
-            <persName>CHKYSOTHEMIS</persName>
+          <person xml:id="der_koch" sex="MALE">
+            <persName>Der Koch</persName>
           </person>
-          <person xml:id="ein_junger_diener">
-            <persName>EIN JUNGER DIENER</persName>
-            <persName xml:id="der_junge">DER JUNGE</persName>
-            <persName xml:id="der_diener">DER DIENER</persName>
+          <person xml:id="ein_alter_diener" sex="MALE">
+            <persName>Ein alter Diener</persName>
+            <persName type="variant">Der Alte</persName>
           </person>
-          <person xml:id="der_koch">
-            <persName>DER KOCH</persName>
+          <person xml:id="orest" sex="MALE">
+            <persName>Orest</persName>
           </person>
-          <person xml:id="ein_alter_diener">
-            <persName>EIN ALTER DIENER</persName>
-            <persName xml:id="der_alte">DER ALTE</persName>
+          <person xml:id="der_pfleger" sex="MALE">
+            <persName>Der Pfleger des Orest</persName>
           </person>
-          <person xml:id="orest">
-            <persName>OREST</persName>
-          </person>
-          <person xml:id="der_pfleger">
-            <persName>DER PFLEGER</persName>
-          </person>
-          <person xml:id="ägisth">
-            <persName>ÄGISTH</persName>
+          <person xml:id="aegisth" sex="MALE">
+            <persName>Ägisth</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -121,6 +117,7 @@
       <listChange>
         <change when="2017-01-06">(dlina) file conversion from source</change>
         <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2018-12-25">(ff) formalities</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -137,8 +134,11 @@
         <castList>
           <head>Dramatis Personae.</head>
           <castItem>Klytämnestra.</castItem>
-          <castItem>Elektra,</castItem>
-          <castItem>Chrysothemis, Töchter.</castItem>
+          <castGroup>
+            <castItem>Elektra,</castItem>
+            <castItem>Chrysothemis,</castItem>
+            <roleDesc>Töchter.</roleDesc>
+          </castGroup>
           <castItem>Ägisth.</castItem>
           <castItem>Orest.</castItem>
           <castItem>Der Pfleger des Orest.</castItem>
@@ -153,71 +153,65 @@
       </div>
       <div type="act">
         <head>[Stücktext]</head>
-        <stage>
-          <hi>Der innere Hof, begrenzt von der Rückseite des Palastes und niedrigen Gebäuden, in
-            denen die Diener wohnen. Dienerinnen am Ziehbrunnen, links vorne. Aufseherinnen unter
-            ihnen.</hi>
-        </stage>
-        <sp who="#erste">
+        <stage>Der innere Hof, begrenzt von der Rückseite des Palastes und niedrigen Gebäuden, in
+          denen die Diener wohnen. Dienerinnen am Ziehbrunnen, links vorne. Aufseherinnen unter
+          ihnen.</stage>
+        <sp who="#erste_dienerin">
           <speaker>ERSTE</speaker>
-          <stage>
-            <hi>ihr Wassergefäß aufhebend.</hi>
-          </stage>
+          <stage>ihr Wassergefäß aufhebend.</stage>
           <l>Wo bleibt Elektra?</l>
         </sp>
-        <sp who="#zweite">
+        <sp who="#zweite_dienerin">
           <speaker>ZWEITE.</speaker>
           <lg>
             <l>Ist doch ihre Stunde,</l>
             <l>die Stunde wo sie um den Vater heult,</l>
             <l>daß alle Wände schallen.</l>
           </lg>
-          <stage>
-            <hi>Elektra kommt aus der schon dunkelnden Hausflur gelaufen. Alle drehen sich nach ihr
-              um. Elektra springt zurück wie ein Tier in seinen Schlupfwinkel, den einen Arm vor dem
-              Gesicht.</hi>
-          </stage>
+          <stage>Elektra kommt aus der schon dunkelnden Hausflur gelaufen. Alle drehen sich nach ihr
+            um. Elektra springt zurück wie ein Tier in seinen Schlupfwinkel, den einen Arm vor dem
+            Gesicht.</stage>
         </sp>
-        <sp who="#erste">
+        <sp who="#erste_dienerin">
           <speaker>ERSTE.</speaker>
           <l>Habt ihr gesehn, wie sie uns ansah?</l>
         </sp>
-        <sp who="#zweite">
+        <sp who="#zweite_dienerin">
           <speaker>ZWEITE.</speaker>
           <lg>
             <l>Giftig</l>
             <l>wie eine wilde Katze.</l>
           </lg>
         </sp>
-        <sp who="#dritte">
+        <sp who="#dritte_dienerin">
           <speaker>DRITTE.</speaker>
           <lg>
             <l>Neulich lag sie</l>
             <l>und stöhnte –</l>
           </lg>
         </sp>
-        <sp who="#erste">
+        <sp who="#erste_dienerin">
           <speaker>ERSTE.</speaker>
           <lg>
             <l>Immer, wenn die Sonne tief steht,</l>
             <l>liegt sie und stöhnt.</l>
           </lg>
         </sp>
-        <sp who="#dritte">
+        <sp who="#dritte_dienerin">
           <speaker>DRITTE.</speaker>
           <lg>
             <l>Da gingen wir zuzweit</l>
             <l>und kamen ihr zu nah –</l>
           </lg>
         </sp>
-        <sp who="#erste">
+        <sp who="#erste_dienerin">
           <speaker>ERSTE.</speaker>
           <lg>
             <l>Sie hälts nicht aus,</l>
             <l>wenn man sie ansieht.</l>
           </lg>
         </sp>
-        <sp who="#dritte">
+        <sp who="#dritte_dienerin">
           <speaker>DRITTE.</speaker>
           <lg>
             <l>Ja, wir kamen ihr</l>
@@ -225,25 +219,25 @@
             <l>uns an. »Fort, Fliegen!« schrie sie, »fort!«</l>
           </lg>
         </sp>
-        <sp who="#vierte">
+        <sp who="#vierte_dienerin">
           <speaker>VIERTE.</speaker>
           <l>»Schmeißfliegen, fort!«</l>
         </sp>
-        <sp who="#dritte">
+        <sp who="#dritte_dienerin">
           <speaker>DRITTE.</speaker>
           <lg>
             <l>»Sitzt nicht auf meinen Wunden!«</l>
             <l>und schlug nach uns mit einem Strohwisch.</l>
           </lg>
         </sp>
-        <sp who="#vierte">
+        <sp who="#vierte_dienerin">
           <speaker>VIERTE.</speaker>
           <lg>
             <l>»Fort,</l>
             <l>Schmeißfliegen, fort!«</l>
           </lg>
         </sp>
-        <sp who="#dritte">
+        <sp who="#dritte_dienerin">
           <speaker>DRITTE.</speaker>
           <lg>
             <l>»Ihr sollt das Süße nicht</l>
@@ -251,7 +245,7 @@
             <l>nach meiner Krämpfe Schaum.«</l>
           </lg>
         </sp>
-        <sp who="#vierte">
+        <sp who="#vierte_dienerin">
           <speaker>VIERTE.</speaker>
           <lg>
             <l>»Geht ab, verkriecht euch«,</l>
@@ -260,15 +254,15 @@
             <l>und die –</l>
           </lg>
         </sp>
-        <sp who="#dritte">
+        <sp who="#dritte_dienerin">
           <speaker>DRITTE.</speaker>
           <l>Ich war nicht faul –</l>
         </sp>
-        <sp who="#vierte">
+        <sp who="#vierte_dienerin">
           <speaker>VIERTE.</speaker>
           <l>Die gab ihr Antwort!</l>
         </sp>
-        <sp who="#dritte">
+        <sp who="#dritte_dienerin">
           <speaker>DRITTE.</speaker>
           <lg>
             <l>Ja: »Wenn du hungrig bist«, gab ich zur Antwort,</l>
@@ -278,11 +272,11 @@
             <l>schrie sie, »mir einen Geier auf im Leib.«</l>
           </lg>
         </sp>
-        <sp who="#zweite">
+        <sp who="#zweite_dienerin">
           <speaker>ZWEITE.</speaker>
           <l>Und du?</l>
         </sp>
-        <sp who="#dritte">
+        <sp who="#dritte_dienerin">
           <speaker>DRITTE.</speaker>
           <lg>
             <l>»Drum hockst du immerfort«, gab ich</l>
@@ -290,24 +284,22 @@
             <l>nach einer alten Leiche!«</l>
           </lg>
         </sp>
-        <sp who="#zweite">
+        <sp who="#zweite_dienerin">
           <speaker>ZWEITE.</speaker>
           <lg>
             <l>Und was sagte</l>
             <l>sie da?</l>
           </lg>
         </sp>
-        <sp who="#dritte">
+        <sp who="#dritte_dienerin">
           <speaker>DRITTE.</speaker>
           <lg>
             <l>Sie heulte nur und warf sich</l>
             <l>in ihren Winkel.</l>
           </lg>
-          <stage>
-            <hi>Sie sind mit dem Schöpfen fertig.</hi>
-          </stage>
+          <stage>Sie sind mit dem Schöpfen fertig.</stage>
         </sp>
-        <sp who="#erste">
+        <sp who="#erste_dienerin">
           <speaker>ERSTE.</speaker>
           <lg>
             <l>Daß die Königin</l>
@@ -315,37 +307,33 @@
             <l>sein Wesen treiben läßt.</l>
           </lg>
         </sp>
-        <sp who="#zweite">
+        <sp who="#zweite_dienerin">
           <speaker>ZWEITE.</speaker>
           <l>Das eigne Kind!</l>
         </sp>
-        <sp who="#erste">
+        <sp who="#erste_dienerin">
           <speaker>ERSTE.</speaker>
           <lg>
             <l>Wär sie mein Kind, ich hielte, ich – bei Gott! –</l>
             <l>sie unter Schloß und Riegel.</l>
           </lg>
         </sp>
-        <sp who="#vierte">
+        <sp who="#vierte_dienerin">
           <speaker>VIERTE.</speaker>
           <lg>
             <l>Sind sie dir</l>
-            <l>nicht hart genug mit ihr? Setzt man ihr nich</l>
+            <l>nicht hart genug mit ihr? Setzt man ihr nicht</l>
             <l>den Napf mit Essen zu den Hunden?</l>
           </lg>
-          <stage>
-            <hi>Leise.</hi>
-          </stage>
+          <stage>Leise.</stage>
           <lg>
             <l>Hast du</l>
             <l>den Herren sie nie schlagen sehn?</l>
           </lg>
         </sp>
-        <sp who="#fünfte">
+        <sp who="#fuenfte_dienerin">
           <speaker>FÜNFTE</speaker>
-          <stage>
-            <hi>eine ganz junge, mit zitternder erregter Stimme.</hi>
-          </stage>
+          <stage>eine ganz junge, mit zitternder erregter Stimme.</stage>
           <lg>
             <l>Ich will</l>
             <l>mich vor ihr niederwerfen und die Füße</l>
@@ -357,20 +345,16 @@
         <sp who="#aufseherin">
           <speaker>AUFSEHERIN.</speaker>
           <l>Hinein mit dir!</l>
-          <stage>
-            <hi>Stößt sie.</hi>
-          </stage>
+          <stage>Stößt sie.</stage>
         </sp>
-        <sp who="#fünfte">
+        <sp who="#fuenfte_dienerin">
           <speaker>FÜNFTE.</speaker>
           <lg>
             <l>Es gibt nichts auf der Welt,</l>
             <l>das königlicher ist als sie. Sie liegt</l>
             <l>in Lumpen auf der Schwelle, aber niemand,</l>
           </lg>
-          <stage>
-            <hi>Schreiend.</hi>
-          </stage>
+          <stage>Schreiend.</stage>
           <lg>
             <l>niemand ist hier im Haus, der ihren Blick</l>
             <l>aushält!</l>
@@ -379,15 +363,11 @@
         <sp who="#aufseherin">
           <speaker>AUFSEHERIN.</speaker>
           <l>Hinein!</l>
-          <stage>
-            <hi>Stößt sie in die offene niedrige Tür links vorne.</hi>
-          </stage>
+          <stage>Stößt sie in die offene niedrige Tür links vorne.</stage>
         </sp>
-        <sp who="#fünfte">
+        <sp who="#fuenfte_dienerin">
           <speaker>FÜNFTE</speaker>
-          <stage>
-            <hi>in die Tür geklemmt.</hi>
-          </stage>
+          <stage>in die Tür geklemmt.</stage>
           <lg>
             <l>Ihr alle seid nicht wert,</l>
             <l>Die Luft zu atmen, die sie atmet! O</l>
@@ -399,9 +379,7 @@
         </sp>
         <sp who="#aufseherin">
           <speaker>AUFSEHERIN</speaker>
-          <stage>
-            <hi>schlägt die Tür zu, stellt sich dann mit dem Rücken dagegen.</hi>
-          </stage>
+          <stage>schlägt die Tür zu, stellt sich dann mit dem Rücken dagegen.</stage>
           <lg>
             <l>Hört ihr das? wir, an Elektra!</l>
             <l>die ihren Napf von unserm Tische stieß,</l>
@@ -409,18 +387,18 @@
             <l>vor uns und Hündinnen uns nannte.</l>
           </lg>
         </sp>
-        <sp who="#erste">
+        <sp who="#erste_dienerin">
           <speaker>ERSTE.</speaker>
           <lg>
             <l>Was?</l>
-            <l>Sie sagte: <hi>keinen</hi> Hund kann man erniedern,</l>
+            <l>Sie sagte: <emph>keinen</emph> Hund kann man erniedern,</l>
             <l>wozu man uns hat abgerichtet: daß wir</l>
             <l>mit Wasser und mit immer frischem Wasser</l>
             <l>das ewige Blut des Mordes von der Diele</l>
             <l>abspülen –</l>
           </lg>
         </sp>
-        <sp who="#dritte">
+        <sp who="#dritte_dienerin">
           <speaker>DRITTE.</speaker>
           <lg>
             <l>Und die Schmach, so sagte sie,</l>
@@ -428,21 +406,17 @@
             <l>in Winkel fegen...</l>
           </lg>
         </sp>
-        <sp who="#erste">
+        <sp who="#erste_dienerin">
           <speaker>ERSTE.</speaker>
           <lg>
             <l>Unser Leib, so schreit sie,</l>
             <l>starrt von dem Unrat, dem wir dienstbar sind!</l>
           </lg>
-          <stage>
-            <hi>Sie tragen ihre Gefäße ins Haus links.</hi>
-          </stage>
+          <stage>Sie tragen ihre Gefäße ins Haus links.</stage>
         </sp>
         <sp who="#aufseherin">
           <speaker>AUFSEHERIN</speaker>
-          <stage>
-            <hi>die ihnen die Tür aufgemacht hat.</hi>
-          </stage>
+          <stage>die ihnen die Tür aufgemacht hat.</stage>
           <lg>
             <l>Und wenn sie uns mit unsern Kindern sieht,</l>
             <l>so schreit sie: nichts kann so verflucht sein, nichts,</l>
@@ -454,27 +428,17 @@
         </sp>
         <sp who="#die_dienerinnen">
           <speaker>DIE DIENERINNEN</speaker>
-          <stage>
-            <hi>schon von drinnen.</hi>
-          </stage>
+          <stage>schon von drinnen.</stage>
           <l>Ja! ja!</l>
         </sp>
-        <sp who="#die_eine">
+        <sp who="#fuenfte_dienerin">
           <speaker>DIE EINE</speaker>
-          <stage>
-            <hi>von drinnen.</hi>
-          </stage>
+          <stage>von drinnen.</stage>
           <l>Sie schlagen mich!</l>
-          <stage>
-            <hi>Die Aufseherin geht hinein. Die Tür fällt zu.</hi>
-          </stage>
-          <stage>
-            <hi>Aus dem Hause tritt Elektra. Sie ist allein mit den Flecken roten Lichtes, die aus
-              den Zweigen des </hi>
-          </stage>
-          <stage>
-            <hi>Feigenbaumes schräg über den Boden und auf die Mauern fallen, wie Blutflecke.</hi>
-          </stage>
+          <stage>Die Aufseherin geht hinein. Die Tür fällt zu.</stage>
+          <stage>Aus dem Hause tritt Elektra. Sie ist allein mit den Flecken roten Lichtes, die aus
+            den Zweigen des Feigenbaumes schräg über den Boden und auf die Mauern fallen, wie
+            Blutflecke.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA.</speaker>
@@ -482,9 +446,7 @@
             <l>Allein! Weh, ganz allein. Der Vater fort,</l>
             <l>hinabgescheucht in seine kalten Klüfte.</l>
           </lg>
-          <stage>
-            <hi>Gegen den Boden.</hi>
-          </stage>
+          <stage>Gegen den Boden.</stage>
           <lg>
             <l>Wo bist du, Vater? hast du nicht die Kraft,</l>
             <l>dein Angesicht herauf zu mir zu schleppen?</l>
@@ -545,21 +507,13 @@
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS</speaker>
-          <stage>
-            <hi>die jüngere Schwester, steht in der Haustür.</hi>
-          </stage>
-          <lg>
-            <l>
-              <hi> Sie sieht angstvoll auf Elektra, ruft leise.</hi>
-            </l>
-            <l>Elektra!</l>
-          </lg>
-          <stage>
-            <hi>Elektra fährt zusammen, wie der Nachtwandler, der seinen Namen rufen hört. Sie
-              taumelt. Ihre Augen sehen um sich, als fänden sie sich nicht gleich zurecht. Ihr
-              Gesicht verzerrt sich, wie sie die ängstliche Miene der Schwester ansieht.
-              Chrysothemis steht an die Türe gedrückt.</hi>
-          </stage>
+          <stage>die jüngere Schwester, steht in der Haustür. Sie sieht angstvoll auf Elektra, ruft
+            leise.</stage>
+          <l>Elektra!</l>
+          <stage>Elektra fährt zusammen, wie der Nachtwandler, der seinen Namen rufen hört. Sie
+            taumelt. Ihre Augen sehen um sich, als fänden sie sich nicht gleich zurecht. Ihr Gesicht
+            verzerrt sich, wie sie die ängstliche Miene der Schwester ansieht. Chrysothemis steht an
+            die Türe gedrückt.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA.</speaker>
@@ -578,9 +532,7 @@
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS</speaker>
-          <stage>
-            <hi>hebt wie abwehrend die Hände.</hi>
-          </stage>
+          <stage>hebt wie abwehrend die Hände.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA.</speaker>
@@ -623,9 +575,7 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>lacht.</hi>
-          </stage>
+          <stage>lacht.</stage>
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS.</speaker>
@@ -637,7 +587,7 @@
         <sp who="#elektra">
           <speaker>ELEKTRA.</speaker>
           <lg>
-            <l>Mir ist, <hi>ich</hi> hätts gehört.</l>
+            <l>Mir ist, <emph>ich</emph> hätts gehört.</l>
             <l>Wars nicht bei Tisch, so bei der letzten Schüssel?</l>
             <l>Da hebt er gern die Stimm und prahlt, ich wette,</l>
             <l>es nützt seiner Verdauung.</l>
@@ -802,10 +752,8 @@
             <l>und fängt zu käuen an, indes der Tod</l>
             <l>schon würgend auf ihm sitzt, das Vieh vergißt,</l>
             <l>was aus dem Leib ihm kroch, und stillt den Hunger</l>
-            <l>am eignen Kind – ich bin kein Vieh, <hi>ich kann </hi>
-              <hi>nicht</hi>
-            </l>
-            <l><hi>vergessen</hi>!</l>
+            <l>am eignen Kind – ich bin kein Vieh, <emph>ich kann nicht</emph></l>
+            <l><emph>vergessen</emph>!</l>
           </lg>
         </sp>
         <sp who="#chrysothemis">
@@ -837,9 +785,7 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>höhnisch.</hi>
-          </stage>
+          <stage>höhnisch.</stage>
           <lg>
             <l>Wenn sie der Mutter in die Augen schaun!</l>
             <l>Und wie schaust du dem Vater in die Augen?</l>
@@ -858,9 +804,7 @@
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS</speaker>
-          <stage>
-            <hi>weint auf.</hi>
-          </stage>
+          <stage>weint auf.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA.</speaker>
@@ -909,9 +853,7 @@
             <l>Stell dich ihr heut nicht in den Weg: sie schickt</l>
             <l>den Tod aus jedem Blick. Sie hat geträumt.</l>
           </lg>
-          <stage>
-            <hi>Der Lärm von vielen Kommenden drinnen, näher.</hi>
-          </stage>
+          <stage>Der Lärm von vielen Kommenden drinnen, näher.</stage>
           <lg>
             <l>Geh fort von hier. Sie kommen durch die Gänge.</l>
             <l>Sie kommen hier vorbei. Sie hat geträumt:</l>
@@ -949,9 +891,7 @@
             <l>vor seinen Füßen drücken wir sie hin,</l>
             <l>da fällt das Beil!</l>
           </lg>
-          <stage>
-            <hi>Fackeln und Gestalten erfüllen den Gang links von der Tür.</hi>
-          </stage>
+          <stage>Fackeln und Gestalten erfüllen den Gang links von der Tür.</stage>
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS.</speaker>
@@ -969,44 +909,30 @@
             <l>Ich habe eine Lust, mit meiner Mutter</l>
             <l>zu reden wie noch nie!</l>
           </lg>
-          <stage>
-            <hi>An den grell erleuchteten Fenstern klirrt und schlürft ein hastiger Zug vorüber: es
-              ist ein Zerren, ein Schleppen von Tieren, ein gedämpfes Keifen, ein schnell ersticktes
-              Aufschreien, das Niedersausen einer Peitsche, ein Aufraffen, ein Weitertaumeln.</hi>
-          </stage>
+          <stage>An den grell erleuchteten Fenstern klirrt und schlürft ein hastiger Zug vorüber: es
+            ist ein Zerren, ein Schleppen von Tieren, ein gedämpfes Keifen, ein schnell ersticktes
+            Aufschreien, das Niedersausen einer Peitsche, ein Aufraffen, ein Weitertaumeln.</stage>
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS.</speaker>
           <l>Ich wills nicht hören.</l>
-          <stage>
-            <hi>Stürzt ab durch die Hoftür.</hi>
-          </stage>
-          <stage>
-            <hi>In dem breiten Fenster erscheint die Gestalt der Klytämnestra. Ihr fahles,
-              gedunsenes Gesicht, in dem grellen Licht der Fackeln, erscheint noch bleicher über dem
-              scharlachroten Gewand. Sie stützt sich auf eine Vertraute, die dunkelviolett </hi>
-          </stage>
-          <stage>
-            <hi>gekleidet ist, und auf einen elfenbeinernen, mit Edelsteinen geschmückten Stab. Eine
-              gelbe Gestalt, mit zurückgekämmtem schwarzem Haar, einer Ägypterin ähnlich, mit
-              glattem Gesicht, einer aufgerichteten Schlange gleichend, trägt ihr die Schleppe. Die
-              Königin ist über und über bedeckt mit Edelsteinen und Talismanen. Ihre Arme sind voll
-              Reifen, ihre Finger starren von Ringen. Die Lider ihrer Augen scheinen übermäßig groß,
-              und es scheint ihr eine furchtbare Anstrengung zu kosten, sie offen zu halten.</hi>
-          </stage>
-          <stage>
-            <hi>Elektra steht starr aufgerichtet, das Gesicht diesem Fenster zugewandt.</hi>
-          </stage>
-          <stage>
-            <hi>Klytämnestra öffnet jäh die Augen, zitternd vor Zorn tritt sie ans Fenster und zeigt
-              mit dem Stock auf Elektra.</hi>
-          </stage>
+          <stage>Stürzt ab durch die Hoftür.</stage>
+          <stage>In dem breiten Fenster erscheint die Gestalt der Klytämnestra. Ihr fahles,
+            gedunsenes Gesicht, in dem grellen Licht der Fackeln, erscheint noch bleicher über dem
+            scharlachroten Gewand. Sie stützt sich auf eine Vertraute, die dunkelviolett gekleidet
+            ist, und auf einen elfenbeinernen, mit Edelsteinen geschmückten Stab. Eine gelbe
+            Gestalt, mit zurückgekämmtem schwarzem Haar, einer Ägypterin ähnlich, mit glattem
+            Gesicht, einer aufgerichteten Schlange gleichend, trägt ihr die Schleppe. Die Königin
+            ist über und über bedeckt mit Edelsteinen und Talismanen. Ihre Arme sind voll Reifen,
+            ihre Finger starren von Ringen. Die Lider ihrer Augen scheinen übermäßig groß, und es
+            scheint ihr eine furchtbare Anstrengung zu kosten, sie offen zu halten.</stage>
+          <stage>Elektra steht starr aufgerichtet, das Gesicht diesem Fenster zugewandt.</stage>
+          <stage>Klytämnestra öffnet jäh die Augen, zitternd vor Zorn tritt sie ans Fenster und
+            zeigt mit dem Stock auf Elektra.</stage>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA</speaker>
-          <stage>
-            <hi>am Fenster.</hi>
-          </stage>
+          <stage>am Fenster.</stage>
           <lg>
             <l>Was willst du? Seht doch, dort! so seht doch das!</l>
             <l>Wie es sich aufbäumt mit geblähtem Hals</l>
@@ -1029,7 +955,7 @@
             <l>bist, was sie sind.</l>
           </lg>
         </sp>
-        <sp who="#klytemnästra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTEMNÄSTRA.</speaker>
           <lg>
             <l>Habt ihr gehört? habt ihr</l>
@@ -1043,26 +969,20 @@
             <l>vom Blut der Götter bist.</l>
           </lg>
         </sp>
-        <sp who="#die_schleppträgerin">
+        <sp who="#die_schlepptraegerin">
           <speaker>DIE SCHLEPPTRÄGERIN</speaker>
-          <stage>
-            <hi>zischend.</hi>
-          </stage>
+          <stage>zischend.</stage>
           <l>Sie meint es tückisch.</l>
         </sp>
-        <sp who="#klytemnästra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTEMNÄSTRA</speaker>
-          <stage>
-            <hi>indem ihre schweren Lider zufallen.</hi>
-          </stage>
+          <stage>indem ihre schweren Lider zufallen.</stage>
           <lg>
             <l>Mir klingt das so bekannt. Und nur als hätt ichs</l>
             <l>vergessen, lang und lang. Sie kennt mich gut.</l>
             <l>Doch weiß man nie, was sie im Schilde führt.</l>
           </lg>
-          <stage>
-            <hi>Die Vertraute und die Schleppträgerin flüstern miteinander.</hi>
-          </stage>
+          <stage>Die Vertraute und die Schleppträgerin flüstern miteinander.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA.</speaker>
@@ -1074,7 +994,7 @@
             <l>bist du als wie im Traum.</l>
           </lg>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>Ich will hinunter.</l>
@@ -1084,16 +1004,12 @@
             <l>Ein jedes Ding kann ein erträgliches</l>
             <l>Gesicht uns zeigen nach dem gräßlichen.</l>
           </lg>
-          <stage>
-            <hi>Sie geht vom Fenster weg und erscheint in der Tür, die Vertraute an ihrer Seite, die
-              Schleppträgerin hinter ihr, Fackeln hinter ihnen.</hi>
-          </stage>
+          <stage>Sie geht vom Fenster weg und erscheint in der Tür, die Vertraute an ihrer Seite,
+            die Schleppträgerin hinter ihr, Fackeln hinter ihnen.</stage>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA</speaker>
-          <stage>
-            <hi>von der Türschwelle aus.</hi>
-          </stage>
+          <stage>von der Türschwelle aus.</stage>
           <lg>
             <l>Warum nennst du mich eine Göttin? Sprichst du</l>
             <l>aus Bosheit so? Nimm dich in acht. Es könnte</l>
@@ -1125,7 +1041,7 @@
             <l>als daran, daß du stürbest.</l>
           </lg>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>So ehrst du mich? Ist etwas noch von Scheu</l>
@@ -1151,15 +1067,13 @@
             <l>nicht, wie sies meint.</l>
           </lg>
         </sp>
-        <sp who="#die_schleppträgerin">
+        <sp who="#die_schlepptraegerin">
           <speaker>DIE SCHLEPPTRÄGERIN.</speaker>
           <l>Ein jedes Wort ist Falschheit.</l>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA</speaker>
-          <stage>
-            <hi>zornig.</hi>
-          </stage>
+          <stage>zornig.</stage>
           <lg>
             <l>Ich will nichts hören. Was aus euch herauskommt,</l>
             <l>ist nur der Atem des Ägisth. Ich will nicht</l>
@@ -1197,18 +1111,14 @@
             <l>einmal anfangen, selbst für mich zu sorgen.</l>
             <l>Laßt mich allein mit ihr.</l>
           </lg>
-          <stage>
-            <hi>Ungeduldig weist sie mit dem Stock die Vertraute und die Schleppträgerin ins Haus.
-              Diese verschwinden zögernd in der Tür. Auch die Fackeln verschwinden, und nur aus dem
-              Innern des Hauses fällt ein schwacher Schein durch den Flur auf den Hof und streift
-              hie und da die Gestalten der beiden Frauen.</hi>
-          </stage>
+          <stage>Ungeduldig weist sie mit dem Stock die Vertraute und die Schleppträgerin ins Haus.
+            Diese verschwinden zögernd in der Tür. Auch die Fackeln verschwinden, und nur aus dem
+            Innern des Hauses fällt ein schwacher Schein durch den Flur auf den Hof und streift hie
+            und da die Gestalten der beiden Frauen.</stage>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA</speaker>
-          <stage>
-            <hi>nach einer Pause.</hi>
-          </stage>
+          <stage>nach einer Pause.</stage>
           <lg>
             <l>Ich habe keine guten Nächte. Weißt du</l>
             <l>kein Mittel gegen Träume?</l>
@@ -1216,12 +1126,10 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>näher rückend.</hi>
-          </stage>
+          <stage>näher rückend.</stage>
           <l>Träumst du, Mutter?</l>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>Hast du nicht andre Worte, mich zu trösten?</l>
@@ -1245,7 +1153,7 @@
             <l>an meinen Vater?</l>
           </lg>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>Darum bin ich so</l>
@@ -1259,7 +1167,7 @@
           <speaker>ELEKTRA.</speaker>
           <l>Ich, Mutter, ich?</l>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>Ja, du! denn du bist klug.</l>
@@ -1312,7 +1220,7 @@
             <l>und meinen Schlaf belauert.</l>
             <l>Ich weiß nicht, wer die sind, die mir das antun,</l>
             <l>und ob sie droben oder drunten wo</l>
-            <l>zu Hause sind – wenn ich <hi>dich</hi> stehen sehe,</l>
+            <l>zu Hause sind – wenn ich <emph>dich</emph> stehen sehe,</l>
             <l>wie jetzt, so mein ich, du mußt mit im Spiel sein.</l>
             <l>Allein wer bist denn du? Du weißt nicht einmal</l>
             <l>ein Wort zu reden, wenn man auf dich hört.</l>
@@ -1329,7 +1237,7 @@
           <speaker>ELEKTRA.</speaker>
           <l>Ein jeder!</l>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>Und müßt ich jedes Tier, das kriecht und fliegt,</l>
@@ -1347,11 +1255,9 @@
             <l>nicht länger.</l>
           </lg>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA</speaker>
-          <stage>
-            <hi>näher zu ihr tretend.</hi>
-          </stage>
+          <stage>näher zu ihr tretend.</stage>
           <lg>
             <l>Also wüßtest du, mit welchem</l>
             <l>geweihten Tier –</l>
@@ -1361,7 +1267,7 @@
           <speaker>ELEKTRA.</speaker>
           <l>Mit einem ungeweihten!</l>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <l>Das drin gebunden liegt?</l>
         </sp>
@@ -1369,11 +1275,9 @@
           <speaker>ELEKTRA.</speaker>
           <l>Nein! es läuft frei.</l>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA</speaker>
-          <stage>
-            <hi>begierig.</hi>
-          </stage>
+          <stage>begierig.</stage>
           <l>Und was für Bräuche?</l>
         </sp>
         <sp who="#elektra">
@@ -1383,7 +1287,7 @@
             <l>und sehr genau zu üben.</l>
           </lg>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <l>Rede doch!</l>
         </sp>
@@ -1391,7 +1295,7 @@
           <speaker>ELEKTRA.</speaker>
           <l>Kannst du mich nicht erraten?</l>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>Nein, darum frag ich.</l>
@@ -1402,11 +1306,9 @@
           <speaker>ELEKTRA.</speaker>
           <l>Ein Weib.</l>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA</speaker>
-          <stage>
-            <hi>gierig.</hi>
-          </stage>
+          <stage>gierig.</stage>
           <lg>
             <l>Von meinen Dienerinnen eine, sag!</l>
             <l>ein Kind? ein jungfräuliches Weib? ein Weib,</l>
@@ -1420,7 +1322,7 @@
             <l>das ists!</l>
           </lg>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>Und wie das Opfer? welche Stunde?</l>
@@ -1434,7 +1336,7 @@
             <l>des Tages und der Nacht.</l>
           </lg>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>Die Bräuche sag!</l>
@@ -1448,7 +1350,7 @@
             <l>gehst du nicht auf die Jagd mit Netz und Beil.</l>
           </lg>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <l>Wer denn? wer bringt es dar?</l>
         </sp>
@@ -1456,18 +1358,16 @@
           <speaker>ELEKTRA.</speaker>
           <l>Ein Mann.</l>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <l>Ägisth?</l>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>lacht.</hi>
-          </stage>
+          <stage>lacht.</stage>
           <l>Ich sagte doch: ein Mann!</l>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>Wer? gib mir Antwort.</l>
@@ -1477,15 +1377,13 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>zu Boden stierend, wie abwesend.</hi>
-          </stage>
+          <stage>zu Boden stierend, wie abwesend.</stage>
           <lg>
             <l>Ja, ja, ein Fremder. Aber freilich</l>
             <l>ist er vom Haus.</l>
           </lg>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>Gib mir nicht Rätsel auf.</l>
@@ -1500,21 +1398,19 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>vor sich.</hi>
-          </stage>
+          <stage>vor sich.</stage>
           <lg>
             <l>Da gehts dem Kinde umgekehrt: das dächte</l>
             <l>die Mutter lieber tot als in dem Bette.</l>
           </lg>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>Was murmelst du? Ich sage, daß kein Ding</l>
             <l>unwiderruflich ist. Geht denn nicht alles</l>
             <l>vor unsern Augen über und verwandelt</l>
-            <l>sich wie ein Nebel? Und wir selber, <hi>wir</hi>!</l>
+            <l>sich wie ein Nebel? Und wir selber, <emph>wir</emph>!</l>
             <l>und unsre Taten! Taten! Wir und Taten!</l>
             <l>Was das für Worte sind. Bin ich denn noch,</l>
             <l>die es getan? Und wenn! getan, getan!</l>
@@ -1539,7 +1435,7 @@
             <l>die tat das Beil allein.</l>
           </lg>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>Wie du die Worte</l>
@@ -1553,7 +1449,7 @@
             <l>wie du Axthieb auf Axthieb.</l>
           </lg>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>Davon will ich</l>
@@ -1567,15 +1463,13 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>vor sich.</hi>
-          </stage>
+          <stage>vor sich.</stage>
           <lg>
             <l>Gräßlich, sie redet von dem Mord als wärs</l>
             <l>ein Zank vorm Nachtmahl.</l>
           </lg>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>Sag du deiner Schwester,</l>
@@ -1594,7 +1488,7 @@
             <l>Läßt du den Bruder nicht nach Hause, Mutter?</l>
           </lg>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <l>Von ihm zu reden hab ich dir verboten.</l>
         </sp>
@@ -1602,7 +1496,7 @@
           <speaker>ELEKTRA.</speaker>
           <l>So hast du Furcht vor ihm?</l>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <l>Wer sagt das?</l>
         </sp>
@@ -1613,7 +1507,7 @@
             <l>du zitterst ja!</l>
           </lg>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <l>Wer fürchtet sich vor einem Schwachsinnigen.</l>
         </sp>
@@ -1621,7 +1515,7 @@
           <speaker>ELEKTRA.</speaker>
           <l>Wie?</l>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>Es heißt,</l>
@@ -1633,7 +1527,7 @@
           <speaker>ELEKTRA.</speaker>
           <l>Das Kind war ganz gesund.</l>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>Es heißt, sie gaben</l>
@@ -1645,11 +1539,9 @@
           <speaker>ELEKTRA.</speaker>
           <l>Ah!</l>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA</speaker>
-          <stage>
-            <hi>mit gesenkten Augenlidern.</hi>
-          </stage>
+          <stage>mit gesenkten Augenlidern.</stage>
           <lg>
             <l>Ich schickte</l>
             <l>viel Gold und wieder Gold, sie sollten ihn</l>
@@ -1663,7 +1555,7 @@
             <l>Du schicktest Gold, damit sie ihn erwürgen.</l>
           </lg>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <l>Wer sagt dir das?</l>
         </sp>
@@ -1677,7 +1569,7 @@
             <l>verdorrt vor Grauen, weil du weißt: er kommt.</l>
           </lg>
         </sp>
-        <sp who="#klytämnestra">
+        <sp who="#klytaemnestra">
           <speaker>KLYTÄMNESTRA.</speaker>
           <lg>
             <l>Lüg nicht. Was kümmert mich, wer außer Haus ist.</l>
@@ -1700,9 +1592,7 @@
             <l>von ihrem Übel, das ist alles. Aber</l>
             <l>ich will nicht länger krank sein. Und aus dir</l>
           </lg>
-          <stage>
-            <hi>Sie hebt den Stock drohend gegen Elektra.</hi>
-          </stage>
+          <stage>Sie hebt den Stock drohend gegen Elektra.</stage>
           <lg>
             <l>bring ich so oder so das rechte Wort</l>
             <l>schon an den Tag. Du hast dich schon verraten,</l>
@@ -1718,10 +1608,8 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>mit einem Sprung aus dem Dunkel auf sie zu, immer näher an ihr, immer furchtbarer
-              wachsend.</hi>
-          </stage>
+          <stage>mit einem Sprung aus dem Dunkel auf sie zu, immer näher an ihr, immer furchtbarer
+            wachsend.</stage>
           <lg>
             <l>Was bluten muß? Dein eigenes Genick,</l>
             <l>wenn dich der Jäger abgefangen hat!</l>
@@ -1732,11 +1620,9 @@
             <l>wie Blut! das Dunkel und die Fackeln werfen</l>
             <l>schwarzrote Todesnetze über dich –</l>
           </lg>
-          <stage>
-            <hi>Klytämnestra, von sprachlosem Grauen geschüttelt, will ins Haus. Elektra zerrt sie
-              am Gewand nach vorn. Klytämnestra weicht gegen die Mauer zurück. Ihre Augen sind weit
-              aufgerissen, der Stock entfällt ihren zitternden Händen.</hi>
-          </stage>
+          <stage>Klytämnestra, von sprachlosem Grauen geschüttelt, will ins Haus. Elektra zerrt sie
+            am Gewand nach vorn. Klytämnestra weicht gegen die Mauer zurück. Ihre Augen sind weit
+            aufgerissen, der Stock entfällt ihren zitternden Händen.</stage>
           <lg>
             <l>Du möchtest schreien, doch die Luft erwürgt</l>
             <l>den ungebornen Schrei und läßt ihn lautlos</l>
@@ -1792,39 +1678,30 @@
             <l>nicht mehr zu träumen, und wer dann noch lebt,</l>
             <l>der jauchzt und kann sich seines Lebens freuen!</l>
           </lg>
-          <stage>
-            <hi>Sie stehen einander, Elektra in wildester Trunkenheit, Klytämnestra gräßlich atmend
-              vor Angst, Aug in Aug. In diesem Augenblick erhellt sich der Hausflur und die
-              Vertraute kommt herausgelaufen. Sie flüstert Klytämnestra etwas ins Ohr. Diese scheint
-              erst nicht recht zu verstehen. Allmählich kommt sie zu sich. Sie winkt: Lichter! Es
-              treten Dienerinnen mit Fackeln heraus, stellen sich hinter Klytämnestra. Sie winkt:
-              Mehr Lichter! Es kommen mehr heraus, stellen sich hinter sie, so daß der Hof voll von
-              Licht wird und rotgelber Schein an den Mauern flutet. Nun verändern sich die Züge der
-              Klytämnestra allmählich, und die Spannung des Grauens weicht einem bösen Triumph. Sie
-              läßt sich die Botschaft abermals zuflüstern und verliert dabei Elektra keinen
-              Augenblick aus dem Auge. Ganz bis </hi>
-          </stage>
-          <stage>
-            <hi>an den Hals sich sättigend mit einer wilden Freude, streckt sie die beiden Hände
-              drohend gegen Elektra. Dann hebt ihr die Vertraute den Stock auf und, auf beide sich
-              stützend, eilig, gierig, an den Stufen ihr Gewand aufraffend, läuft sie ins Haus. Die
-              Dienerinnen mit den Lichtern, wie gejagt, hinter ihr drein.</hi>
-          </stage>
+          <stage>Sie stehen einander, Elektra in wildester Trunkenheit, Klytämnestra gräßlich atmend
+            vor Angst, Aug in Aug. In diesem Augenblick erhellt sich der Hausflur und die Vertraute
+            kommt herausgelaufen. Sie flüstert Klytämnestra etwas ins Ohr. Diese scheint erst nicht
+            recht zu verstehen. Allmählich kommt sie zu sich. Sie winkt: Lichter! Es treten
+            Dienerinnen mit Fackeln heraus, stellen sich hinter Klytämnestra. Sie winkt: Mehr
+            Lichter! Es kommen mehr heraus, stellen sich hinter sie, so daß der Hof voll von Licht
+            wird und rotgelber Schein an den Mauern flutet. Nun verändern sich die Züge der
+            Klytämnestra allmählich, und die Spannung des Grauens weicht einem bösen Triumph. Sie
+            läßt sich die Botschaft abermals zuflüstern und verliert dabei Elektra keinen Augenblick
+            aus dem Auge. Ganz bis an den Hals sich sättigend mit einer wilden Freude, streckt sie
+            die beiden Hände drohend gegen Elektra. Dann hebt ihr die Vertraute den Stock auf und,
+            auf beide sich stützend, eilig, gierig, an den Stufen ihr Gewand aufraffend, läuft sie
+            ins Haus. Die Dienerinnen mit den Lichtern, wie gejagt, hinter ihr drein.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>währenddessen.</hi>
-          </stage>
+          <stage>währenddessen.</stage>
           <lg>
             <l>Was sagen sie ihr denn? sie freut sich ja!</l>
             <l>Mein Kopf! Mir fällt nichts ein. Worüber freut sich</l>
             <l>das Weib?</l>
           </lg>
-          <stage>
-            <hi>Chrysothemis kommt, laufend, zur Hoftür herein, laut heulend wie ein verwundetes
-              Tier.</hi>
-          </stage>
+          <stage>Chrysothemis kommt, laufend, zur Hoftür herein, laut heulend wie ein verwundetes
+            Tier.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA.</speaker>
@@ -1836,9 +1713,7 @@
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS</speaker>
-          <stage>
-            <hi>schreiend.</hi>
-          </stage>
+          <stage>schreiend.</stage>
           <lg>
             <l>Orest!</l>
             <l>Orest ist tot!</l>
@@ -1846,23 +1721,17 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>winkt ihr ab, wie von Sinnen.</hi>
-          </stage>
+          <stage>winkt ihr ab, wie von Sinnen.</stage>
           <l>Sei still!</l>
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS</speaker>
-          <stage>
-            <hi>dicht bei ihr.</hi>
-          </stage>
+          <stage>dicht bei ihr.</stage>
           <l>Orest ist tot!</l>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>bewegt die Lippen.</hi>
-          </stage>
+          <stage>bewegt die Lippen.</stage>
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS.</speaker>
@@ -1886,22 +1755,18 @@
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS</speaker>
-          <stage>
-            <hi>wirft sich auf den Boden.</hi>
-          </stage>
+          <stage>wirft sich auf den Boden.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>reißt sie empor.</hi>
-          </stage>
+          <stage>reißt sie empor.</stage>
           <lg>
             <l>Es ist nicht wahr! ich sag dir doch! ich sag dir,</l>
             <l>es ist nicht wahr!</l>
           </lg>
         </sp>
-        <sp who="#chkysothemis">
-          <speaker>CHKYSOTHEMIS.</speaker>
+        <sp who="#chrysothemis">
+          <speaker>CHRYSOTHEMIS.</speaker>
           <lg>
             <l>Die Fremden standen an der Wand, die Fremden,</l>
             <l>die hergeschickt sind, es zu melden: zwei,</l>
@@ -1923,9 +1788,8 @@
         </sp>
         <sp who="#ein_junger_diener">
           <speaker>EIN JUNGER DIENER</speaker>
-          <stage>
-            <hi>kommt eilig aus dem Haus, stolpert über die vor der Schwelle Liegende hinweg.</hi>
-          </stage>
+          <stage>kommt eilig aus dem Haus, stolpert über die vor der Schwelle Liegende
+            hinweg.</stage>
           <lg>
             <l>Platz da! wer lungert so vor einer Tür?</l>
             <l>Ah, konnt mirs denken! Heda, Stallung! he!</l>
@@ -1933,12 +1797,10 @@
         </sp>
         <sp who="#der_koch">
           <speaker>DER KOCH</speaker>
-          <stage>
-            <hi>kommt rechts aus der Tür.</hi>
-          </stage>
+          <stage>kommt rechts aus der Tür.</stage>
           <l>Was gibts?</l>
         </sp>
-        <sp who="#der_diener">
+        <sp who="#ein_junger_diener">
           <speaker>DER DIENER.</speaker>
           <lg>
             <l>Nach einem Stallknecht schrei ich mir</l>
@@ -1948,12 +1810,10 @@
         </sp>
         <sp who="#ein_alter_diener">
           <speaker>EIN ALTER DIENER</speaker>
-          <stage>
-            <hi>finsteren Gesichts, zeigt sich an der Hoftür.</hi>
-          </stage>
+          <stage>finsteren Gesichts, zeigt sich an der Hoftür.</stage>
           <l>Was solls im Stall?</l>
         </sp>
-        <sp who="#der_junge">
+        <sp who="#ein_junger_diener">
           <speaker>DER JUNGE.</speaker>
           <lg>
             <l>Gesattelt</l>
@@ -1962,11 +1822,11 @@
             <l>auch eine Kuh, nur rasch!</l>
           </lg>
         </sp>
-        <sp who="#der_alte">
+        <sp who="#ein_alter_diener">
           <speaker>DER ALTE.</speaker>
           <l>Für wen?</l>
         </sp>
-        <sp who="#der_junge">
+        <sp who="#ein_junger_diener">
           <speaker>DER JUNGE.</speaker>
           <lg>
             <l>Für den,</l>
@@ -1977,9 +1837,7 @@
             <l>wichtig genug, um eine eurer Mähren</l>
             <l>zutod zu reiten.</l>
           </lg>
-          <stage>
-            <hi>Der Alte verschwindet.</hi>
-          </stage>
+          <stage>Der Alte verschwindet.</stage>
         </sp>
         <sp who="#der_koch">
           <speaker>DER KOCH.</speaker>
@@ -1988,7 +1846,7 @@
             <l>ein Wort!</l>
           </lg>
         </sp>
-        <sp who="#der_junge">
+        <sp who="#ein_junger_diener">
           <speaker>DER JUNGE.</speaker>
           <lg>
             <l>Mit einem Wort, mein guter Koch,</l>
@@ -2005,17 +1863,13 @@
             <l>sie kennst, ob nicht, ganz gleich, sie hat dich zu</l>
             <l>erfreuen.</l>
           </lg>
-          <stage>
-            <hi>In den Hof brüllend.</hi>
-          </stage>
+          <stage>In den Hof brüllend.</stage>
           <lg>
             <l>Eine Peitsche, Schuft! was, meinst du,</l>
             <l>ich werd ihn ohne Peitsche reiten? Du,</l>
             <l>du läßt mich warten und nicht ich den Gaul!</l>
           </lg>
-          <stage>
-            <hi>Zum Koch, schon auf dem Sprunge abzugehen.</hi>
-          </stage>
+          <stage>Zum Koch, schon auf dem Sprunge abzugehen.</stage>
           <lg>
             <l>Und kurz und gut: der junge Bursch Orest,</l>
             <l>der Sohn vom Haus, der immer außer Haus war</l>
@@ -2023,17 +1877,13 @@
             <l>schon eh und immer sozusagen tot war,</l>
             <l>der ist nun sozusagen wirklich tot!</l>
           </lg>
-          <stage>
-            <hi>Springt ab.</hi>
-          </stage>
+          <stage>Springt ab.</stage>
         </sp>
         <sp who="#der_koch">
           <speaker>DER KOCH</speaker>
-          <stage>
-            <hi>gegen Elektra und Chrysothemis hin, die aneinandergedrückt daliegen, wie ein Leib,
-              den das Schluchzen der Chrysothemis schüttelt und über den sich das totenbleiche
-              schweigende Gesicht der Elektra hebt.</hi>
-          </stage>
+          <stage>gegen Elektra und Chrysothemis hin, die aneinandergedrückt daliegen, wie ein Leib,
+            den das Schluchzen der Chrysothemis schüttelt und über den sich das totenbleiche
+            schweigende Gesicht der Elektra hebt.</stage>
           <lg>
             <l>Eh! jetzt hab ichs heraus! Die Hunde heulen</l>
             <l>beim Vollmond, und ihr heult, weil jetzt für euch</l>
@@ -2041,15 +1891,11 @@
             <l>wenn sie die Hausruh stören. Gebt ihr acht,</l>
             <l>sonst gehts euch ebenso.</l>
           </lg>
-          <stage>
-            <hi>Geht wieder hinein.</hi>
-          </stage>
+          <stage>Geht wieder hinein.</stage>
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS</speaker>
-          <stage>
-            <hi>halbaufgerichtet.</hi>
-          </stage>
+          <stage>halbaufgerichtet.</stage>
           <lg>
             <l>Gestorben in der Fremde! tot! begraben</l>
             <l>dort in dem fremden Land. Von seinen Pferden</l>
@@ -2065,9 +1911,7 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>vor sich.</hi>
-          </stage>
+          <stage>vor sich.</stage>
           <l>Nun muß es hier von uns geschehn.</l>
         </sp>
         <sp who="#chrysothemis">
@@ -2159,9 +2003,7 @@
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS</speaker>
-          <stage>
-            <hi>sprachlos.</hi>
-          </stage>
+          <stage>sprachlos.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA.</speaker>
@@ -2204,9 +2046,7 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>verächtlich.</hi>
-          </stage>
+          <stage>verächtlich.</stage>
           <l>Ein Messer!</l>
         </sp>
         <sp who="#chrysothemis">
@@ -2272,9 +2112,7 @@
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS</speaker>
-          <stage>
-            <hi>abwehrend.</hi>
-          </stage>
+          <stage>abwehrend.</stage>
           <l>Elektra!</l>
         </sp>
         <sp who="#elektra">
@@ -2283,9 +2121,7 @@
             <l>Du!</l>
             <l>denn du bist stark!</l>
           </lg>
-          <stage>
-            <hi>Dicht an ihr.</hi>
-          </stage>
+          <stage>Dicht an ihr.</stage>
           <lg>
             <l>Wie stark du bist! dich haben</l>
             <l>die jungfräulichen Nächte stark gemacht.</l>
@@ -2323,15 +2159,11 @@
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS.</speaker>
           <l>Laß mich!</l>
-          <stage>
-            <hi>Flüchtet ein paar Schritte.</hi>
-          </stage>
+          <stage>Flüchtet ein paar Schritte.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>wild ihr nach, faßt sie am Gewand.</hi>
-          </stage>
+          <stage>wild ihr nach, faßt sie am Gewand.</stage>
           <l>Nein!</l>
         </sp>
         <sp who="#chrysothemis">
@@ -2361,9 +2193,7 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>ohne sie zu hören.</hi>
-          </stage>
+          <stage>ohne sie zu hören.</stage>
           <lg>
             <l>Du bist voller Kraft,</l>
             <l>die Sehnen hast du wie ein Füllen, schlank</l>
@@ -2387,9 +2217,7 @@
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS</speaker>
-          <stage>
-            <hi>schließt die Augen.</hi>
-          </stage>
+          <stage>schließt die Augen.</stage>
           <lg>
             <l>Nicht, Schwester, nicht.</l>
             <l>Sprich nicht ein solches Wort in diesem Haus.</l>
@@ -2422,9 +2250,7 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>an ihren Knieen.</hi>
-          </stage>
+          <stage>an ihren Knieen.</stage>
           <lg>
             <l>Dein Mund ist schön,</l>
             <l>wenn er sich einmal auftut um zu zürnen!</l>
@@ -2446,9 +2272,7 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>aufstehend.</hi>
-          </stage>
+          <stage>aufstehend.</stage>
           <lg>
             <l>Denn eh du diesem Haus</l>
             <l>und mir entkommst, mußt du es tun!</l>
@@ -2456,15 +2280,11 @@
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS</speaker>
-          <stage>
-            <hi>will reden.</hi>
-          </stage>
+          <stage>will reden.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>hält ihr den Mund zu.</hi>
-          </stage>
+          <stage>hält ihr den Mund zu.</stage>
           <lg>
             <l>Dir führt</l>
             <l>kein Weg hinaus als der. Ich laß dich nicht,</l>
@@ -2474,16 +2294,12 @@
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS</speaker>
-          <stage>
-            <hi>windet sich los.</hi>
-          </stage>
+          <stage>windet sich los.</stage>
           <l>Laß mich!</l>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>faßt sie wieder.</hi>
-          </stage>
+          <stage>faßt sie wieder.</stage>
           <lg>
             <l>Schwör, du kommst</l>
             <l>heut nacht, wenn alles still ist, an den Fuß</l>
@@ -2496,9 +2312,7 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>hält sie am Gewand.</hi>
-          </stage>
+          <stage>hält sie am Gewand.</stage>
           <lg>
             <l>Mädchen, sträub dich nicht!</l>
             <l>es bleibt kein Tropfen Blut am Leibe haften:</l>
@@ -2539,30 +2353,20 @@
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS</speaker>
-          <stage>
-            <hi>ins Haustor entspringend.</hi>
-          </stage>
+          <stage>ins Haustor entspringend.</stage>
           <l>Ich kann nicht!</l>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>ihr nach.</hi>
-          </stage>
+          <stage>ihr nach.</stage>
           <l>Sei verflucht!</l>
-          <stage>
-            <hi>Vor sich, mit wilder Entschlossenheit.</hi>
-          </stage>
+          <stage>Vor sich, mit wilder Entschlossenheit.</stage>
           <l>Nun denn allein!</l>
-          <stage>
-            <hi>Sie fängt an der Wand des Hauses, seitwärts der Türschwelle, eifrig zu graben an,
-              lautlos, wie ein Tier. Hält inne, sieht sich um, gräbt wieder.</hi>
-          </stage>
-          <stage>
-            <hi>Orest steht in der Hoftür, von der letzten Helle sich schwarz abhebend. Er tritt
-              herein. Elektra blickt auf ihn. Er dreht sich langsam um, so daß sein Blick auf sie
-              fällt. Elektra fährt heftig auf, zittert.</hi>
-          </stage>
+          <stage>Sie fängt an der Wand des Hauses, seitwärts der Türschwelle, eifrig zu graben an,
+            lautlos, wie ein Tier. Hält inne, sieht sich um, gräbt wieder.</stage>
+          <stage>Orest steht in der Hoftür, von der letzten Helle sich schwarz abhebend. Er tritt
+            herein. Elektra blickt auf ihn. Er dreht sich langsam um, so daß sein Blick auf sie
+            fällt. Elektra fährt heftig auf, zittert.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA.</speaker>
@@ -2616,9 +2420,7 @@
         <sp who="#elektra">
           <speaker>ELEKTRA.</speaker>
           <l>Warten?</l>
-          <stage>
-            <hi>Eine Pause.</hi>
-          </stage>
+          <stage>Eine Pause.</stage>
         </sp>
         <sp who="#orest">
           <speaker>OREST.</speaker>
@@ -2661,9 +2463,7 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>schweigt.</hi>
-          </stage>
+          <stage>schweigt.</stage>
         </sp>
         <sp who="#orest">
           <speaker>OREST.</speaker>
@@ -2788,25 +2588,19 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>klatscht in die Hände.</hi>
-          </stage>
+          <stage>klatscht in die Hände.</stage>
           <lg>
             <l>Recht! recht!</l>
             <l>Erzähl mir noch was Schönes von Elektra.</l>
             <l>Ich werd ihrs wiedersagen, wenn ich sie</l>
           </lg>
-          <stage>
-            <hi>Mit erstickter Stimme.</hi>
-          </stage>
+          <stage>Mit erstickter Stimme.</stage>
           <l>sehe.</l>
         </sp>
         <sp who="#orest">
           <speaker>OREST.</speaker>
           <l>So seh ich sie? ich seh sie wirklich? du?</l>
-          <stage>
-            <hi>Schnell.</hi>
-          </stage>
+          <stage>Schnell.</stage>
           <lg>
             <l>So haben sie dich darben lassen oder –</l>
             <l>sie haben dich geschlagen?</l>
@@ -2848,9 +2642,7 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>verbissen.</hi>
-          </stage>
+          <stage>verbissen.</stage>
           <lg>
             <l>Geh ins Haus,</l>
             <l>drin hab ich eine Schwester, die bewahrt sich</l>
@@ -2867,9 +2659,7 @@
             <l>Ich will nicht wissen, wer du bist, du sollst mir</l>
             <l>nicht näher kommen. Ich will niemand sehen!</l>
           </lg>
-          <stage>
-            <hi>Kauert sich, das Gesicht gegen die Wand.</hi>
-          </stage>
+          <stage>Kauert sich, das Gesicht gegen die Wand.</stage>
         </sp>
         <sp who="#orest">
           <speaker>OREST.</speaker>
@@ -2880,9 +2670,7 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>wirft sich herum.</hi>
-          </stage>
+          <stage>wirft sich herum.</stage>
         </sp>
         <sp who="#orest">
           <speaker>OREST.</speaker>
@@ -2933,31 +2721,23 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>von seinem Ton getroffen.</hi>
-          </stage>
+          <stage>von seinem Ton getroffen.</stage>
           <lg>
             <l>Wer</l>
             <l>bist du?</l>
           </lg>
-          <stage>
-            <hi>Der alte finstre Diener stürzt aus dem Hof lautlos herein, wirft sich vor Orest
-              nieder, küßt seine Füße, rafft sich auf, angstvoll um sich schauend, und stürzt
-              lautlos wieder ab.</hi>
-          </stage>
+          <stage>Der alte finstre Diener stürzt aus dem Hof lautlos herein, wirft sich vor Orest
+            nieder, küßt seine Füße, rafft sich auf, angstvoll um sich schauend, und stürzt lautlos
+            wieder ab.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>kaum ihrer mächtig.</hi>
-          </stage>
+          <stage>kaum ihrer mächtig.</stage>
           <l>Wer bist du denn? Ich fürchte mich.</l>
         </sp>
         <sp who="#orest">
           <speaker>OREST</speaker>
-          <stage>
-            <hi>sanft.</hi>
-          </stage>
+          <stage>sanft.</stage>
           <lg>
             <l>Die Hunde auf dem Hof erkennen mich,</l>
             <l>und meine Schwester nicht?</l>
@@ -2965,16 +2745,12 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>schreit auf.</hi>
-          </stage>
+          <stage>schreit auf.</stage>
           <l>Orest!</l>
         </sp>
         <sp who="#orest">
           <speaker>OREST</speaker>
-          <stage>
-            <hi>fieberhaft.</hi>
-          </stage>
+          <stage>fieberhaft.</stage>
           <lg>
             <l>Wenn einer dich im Haus gehört hat, der</l>
             <l>hat jetzt mein Leben in der Hand.</l>
@@ -2982,9 +2758,7 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>ganz leise, bebend.</hi>
-          </stage>
+          <stage>ganz leise, bebend.</stage>
           <lg>
             <l>Orest!</l>
             <l>Es rührt sich niemand. O laß deine Augen</l>
@@ -3080,9 +2854,7 @@
         </sp>
         <sp who="#orest">
           <speaker>OREST</speaker>
-          <stage>
-            <hi>sieht sie traurig an.</hi>
-          </stage>
+          <stage>sieht sie traurig an.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA.</speaker>
@@ -3094,9 +2866,7 @@
         </sp>
         <sp who="#orest">
           <speaker>OREST</speaker>
-          <stage>
-            <hi>leise.</hi>
-          </stage>
+          <stage>leise.</stage>
           <l>Gib acht!</l>
         </sp>
         <sp who="#elektra">
@@ -3150,9 +2920,7 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>wild.</hi>
-          </stage>
+          <stage>wild.</stage>
           <lg>
             <l>Mir ähnlich? Nein. Ich will nicht,</l>
             <l>daß du ihr ins Gesicht siehst. Wenn sie tot ist,</l>
@@ -3195,9 +2963,8 @@
             <l>die eine Wunde ist, ein Brand, ein Eiter</l>
             <l>und eine Flamme!</l>
           </lg>
-          <stage>
-            <hi>Der Pfleger Orests steht in der Hoftür, ein starker Greis mit blitzenden Augen.</hi>
-          </stage>
+          <stage>Der Pfleger Orests steht in der Hoftür, ein starker Greis mit blitzenden
+            Augen.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA.</speaker>
@@ -3205,9 +2972,7 @@
         </sp>
         <sp who="#der_pfleger">
           <speaker>DER PFLEGER</speaker>
-          <stage>
-            <hi>hastig auf sie zu.</hi>
-          </stage>
+          <stage>hastig auf sie zu.</stage>
           <lg>
             <l>Seid ihr von Sinnen, daß ihr euren Mund</l>
             <l>nicht bändigt, wo ein Hauch, ein Laut, ein Nichts</l>
@@ -3260,111 +3025,87 @@
         </sp>
         <sp who="#der_pfleger">
           <speaker>DER PFLEGER</speaker>
-          <stage>
-            <hi>faßt sie rauh und drückt seine Hand gegen ihren Mund.</hi>
-          </stage>
+          <stage>faßt sie rauh und drückt seine Hand gegen ihren Mund.</stage>
           <l>Schweig still!</l>
-          <stage>
-            <hi>Zu Orest in fliegender Eile.</hi>
-          </stage>
+          <stage>Zu Orest in fliegender Eile.</stage>
           <lg>
             <l>Sie wartet drinnen. Ihre Mägde suchen</l>
             <l>nach dir. Es ist kein Mann im Haus. Orest!</l>
           </lg>
-          <stage>
-            <hi>Orest reckt sich auf, seinen Schauder bezwingend.</hi>
-          </stage>
-          <stage>
-            <hi>Die Tür des Hauses erhellt sich, und es erscheint eine Dienerin mit einer Fackel,
-              hinter ihr die Vertraute. Elektra ist zurückgesprungen, steht im </hi>
-          </stage>
-          <stage>
-            <hi>Dunkel. Die Vertraute verneigt sich gegen die beiden Fremden, winkt, ihr hinein zu
-              folgen. Die Dienerin befestigt die Fackel an einem eisernen Ring im Türpfosten. Orest
-              und der Pfleger gehen hinein. Orest schließt einen Augenblick, schwindelnd, die Augen,
-              der Pfleger ist dicht hinter ihm, sie tauschen einen schnellen Blick. Die Tür schließt
-              sich hinter ihnen.</hi>
-          </stage>
+          <stage>Orest reckt sich auf, seinen Schauder bezwingend.</stage>
+          <stage>Die Tür des Hauses erhellt sich, und es erscheint eine Dienerin mit einer Fackel,
+            hinter ihr die Vertraute. Elektra ist zurückgesprungen, steht im Dunkel. Die Vertraute
+            verneigt sich gegen die beiden Fremden, winkt, ihr hinein zu folgen. Die Dienerin
+            befestigt die Fackel an einem eisernen Ring im Türpfosten. Orest und der Pfleger gehen
+            hinein. Orest schließt einen Augenblick, schwindelnd, die Augen, der Pfleger ist dicht
+            hinter ihm, sie tauschen einen schnellen Blick. Die Tür schließt sich hinter
+            ihnen.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>allein, in entsetzlicher Spannung.</hi>
-          </stage>
-          <p>
-            <hi> Sie läuft auf einem Strich vor der Tür hin und her, mit gesenktem Kopf, wie das
-              gefangene Tier im Käfig. Plötzlich steht sie still und sagt.</hi>
-          </p>
-          <p>Ich habe ihm das Beil nicht geben können!</p>
-          <p>Sie sind gegangen, und ich habe ihm</p>
-          <p>das Beil nicht geben können. Es sind keine</p>
-          <p>Götter im Himmel!</p>
-          <stage>
-            <hi>Abermals ein furchtbares Warten. Da tönt von drinnen, gellend, der Schrei der
-              Klytämnestra.</hi>
-          </stage>
+          <stage>allein, in entsetzlicher Spannung. Sie läuft auf einem Strich vor der Tür hin und
+            her, mit gesenktem Kopf, wie das gefangene Tier im Käfig. Plötzlich steht sie still und
+            sagt.</stage>
+          <lg>
+            <l>Ich habe ihm das Beil nicht geben können!</l>
+            <l>Sie sind gegangen, und ich habe ihm</l>
+            <l>das Beil nicht geben können. Es sind keine</l>
+            <l>Götter im Himmel!</l>
+          </lg>
+          <stage>Abermals ein furchtbares Warten. Da tönt von drinnen, gellend, der Schrei der
+            Klytämnestra.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>schreit auf wie ein Dämon.</hi>
-          </stage>
+          <stage>schreit auf wie ein Dämon.</stage>
           <l>Triff noch einmal!</l>
-          <stage>
-            <hi>Von drinnen ein zweiter Schrei.</hi>
-          </stage>
-          <stage>
-            <hi>Aus dem Wohngebäude links kommen Chrysothemis und eine Schar Dienerinnen
-              heraus.</hi>
-          </stage>
-          <stage>
-            <hi>Elektra steht in der Tür, mit dem Rücken an die Tür gepreßt.</hi>
-          </stage>
+          <stage>Von drinnen ein zweiter Schrei.</stage>
+          <stage>Aus dem Wohngebäude links kommen Chrysothemis und eine Schar Dienerinnen
+            heraus.</stage>
+          <stage>Elektra steht in der Tür, mit dem Rücken an die Tür gepreßt.</stage>
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS.</speaker>
           <l>Es muß etwas geschehen sein.</l>
         </sp>
-        <sp who="#eine">
+        <sp who="#erste_dienerin">
           <speaker>EINE.</speaker>
           <lg>
             <l>Sie schreit</l>
             <l>so aus dem Schlaf.</l>
           </lg>
         </sp>
-        <sp who="#zweite">
+        <sp who="#zweite_dienerin">
           <speaker>ZWEITE.</speaker>
           <lg>
             <l>Es müssen Männer drin sein.</l>
             <l>Ich habe Männer gehen hören.</l>
           </lg>
         </sp>
-        <sp who="#dritte">
+        <sp who="#dritte_dienerin">
           <speaker>DRITTE.</speaker>
           <lg>
             <l>Alle</l>
             <l>die Türen sind verriegelt.</l>
           </lg>
         </sp>
-        <sp who="#vierte">
+        <sp who="#vierte_dienerin">
           <speaker>VIERTE.</speaker>
           <lg>
             <l>Es sind Mörder!</l>
             <l>Es sind Mörder im Haus!</l>
           </lg>
         </sp>
-        <sp who="#erste">
+        <sp who="#erste_dienerin">
           <speaker>ERSTE</speaker>
-          <stage>
-            <hi>schreit auf.</hi>
-          </stage>
+          <stage>schreit auf.</stage>
           <l>Oh!</l>
         </sp>
-        <sp who="#alle">
+        <sp who="#die_dienerinnen">
           <speaker>ALLE.</speaker>
           <l>Was ist?</l>
         </sp>
-        <sp who="#erste">
+        <sp who="#erste_dienerin">
           <speaker>ERSTE.</speaker>
           <l>Seht ihr denn nicht, dort an der Tür steht einer!</l>
         </sp>
@@ -3372,9 +3113,9 @@
           <speaker>CHRYSOTHEMIS.</speaker>
           <l>Das ist Elektra! das ist ja Elektra!</l>
         </sp>
-        <sp who="#zweite">
+        <sp who="#zweite_dienerin">
           <speaker>ZWEITE.</speaker>
-          <l>warum spricht sie denn nicht?</l>
+          <l>Warum spricht sie denn nicht?</l>
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS.</speaker>
@@ -3383,15 +3124,13 @@
             <l>warum sprichst du denn nicht?</l>
           </lg>
         </sp>
-        <sp who="#erste">
+        <sp who="#erste_dienerin">
           <speaker>ERSTE.</speaker>
           <lg>
             <l>Ich will hinaus</l>
             <l>und Männer holen.</l>
           </lg>
-          <stage>
-            <hi>Läuft rechts hinaus.</hi>
-          </stage>
+          <stage>Läuft rechts hinaus.</stage>
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS.</speaker>
@@ -3400,21 +3139,17 @@
             <l>Elektra!</l>
           </lg>
         </sp>
-        <sp who="#mehrere">
+        <sp who="#die_dienerinnen">
           <speaker>MEHRERE.</speaker>
           <l>Elektra, laß uns in das Haus!</l>
         </sp>
-        <sp who="#erste">
+        <sp who="#erste_dienerin">
           <speaker>ERSTE</speaker>
-          <stage>
-            <hi>durch die Hoftür zurückkommend, schreit.</hi>
-          </stage>
+          <stage>durch die Hoftür zurückkommend, schreit.</stage>
           <l>Zurück!</l>
-          <stage>
-            <hi>Alle erschrecken.</hi>
-          </stage>
+          <stage>Alle erschrecken.</stage>
         </sp>
-        <sp who="#erste">
+        <sp who="#erste_dienerin">
           <speaker>ERSTE.</speaker>
           <lg>
             <l>Ägisth! Zurück in unsre Kammern! schnell!</l>
@@ -3423,18 +3158,14 @@
             <l>läßt er uns töten.</l>
           </lg>
         </sp>
-        <sp who="#alle">
+        <sp who="#die_dienerinnen">
           <speaker>ALLE.</speaker>
           <l>Schnell, zurück! zurück!</l>
-          <stage>
-            <hi>Sie verschwinden im Hause links.</hi>
-          </stage>
+          <stage>Sie verschwinden im Hause links.</stage>
         </sp>
-        <sp who="#ägisth">
+        <sp who="#aegisth">
           <speaker>ÄGISTH</speaker>
-          <stage>
-            <hi>am Eingang rechts.</hi>
-          </stage>
+          <stage>am Eingang rechts.</stage>
           <lg>
             <l>Ist niemand da, zu leuchten? Rührt sich keiner</l>
             <l>von allen diesen Schuften? Kann das Volk</l>
@@ -3443,24 +3174,18 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>nimmt die Fackel aus dem Ring, läuft hinunter, ihm entgegen, neigt sich vor
-              ihm.</hi>
-          </stage>
+          <stage>nimmt die Fackel aus dem Ring, läuft hinunter, ihm entgegen, neigt sich vor
+            ihm.</stage>
         </sp>
-        <sp who="#ägisth">
+        <sp who="#aegisth">
           <speaker>ÄGISTH</speaker>
-          <stage>
-            <hi>erschrickt vor der wirren Gestalt im zuckenden Licht, weicht zurück.</hi>
-          </stage>
+          <stage>erschrickt vor der wirren Gestalt im zuckenden Licht, weicht zurück.</stage>
           <lg>
             <l>Was ist das für ein unheimliches Weib?</l>
             <l>Ich hab verboten, daß ein unbekanntes</l>
             <l>Gesicht mir in die Nähe kommt!</l>
           </lg>
-          <stage>
-            <hi>Erkennt sie, zornig.</hi>
-          </stage>
+          <stage>Erkennt sie, zornig.</stage>
           <lg>
             <l>Was, du?</l>
             <l>Wer heißt dich, mir entgegengehen?</l>
@@ -3473,7 +3198,7 @@
             <l>nicht leuchten?</l>
           </lg>
         </sp>
-        <sp who="#ägisth">
+        <sp who="#aegisth">
           <speaker>ÄGISTH.</speaker>
           <lg>
             <l>Nun, dich geht die Neuigkeit</l>
@@ -3490,7 +3215,7 @@
             <l>mit ihr.</l>
           </lg>
         </sp>
-        <sp who="#ägisth">
+        <sp who="#aegisth">
           <speaker>ÄGISTH.</speaker>
           <lg>
             <l>Und melden also wirklich, daß er</l>
@@ -3506,7 +3231,7 @@
             <l>an denen auch kein Zweifel möglich ist.</l>
           </lg>
         </sp>
-        <sp who="#ägisth">
+        <sp who="#aegisth">
           <speaker>ÄGISTH.</speaker>
           <lg>
             <l>Was hast du in der Stimme? Und was ist</l>
@@ -3524,7 +3249,7 @@
             <l>daß ich voran dir leuchte?</l>
           </lg>
         </sp>
-        <sp who="#ägisth">
+        <sp who="#aegisth">
           <speaker>ÄGISTH.</speaker>
           <lg>
             <l>Bis zur Tür.</l>
@@ -3533,20 +3258,16 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>indem sie ihn, wie in einem unheimlichen Tanz, umkreist, sich plötzlich tief
-              bückend.</hi>
-          </stage>
+          <stage>indem sie ihn, wie in einem unheimlichen Tanz, umkreist, sich plötzlich tief
+            bückend.</stage>
           <lg>
             <l>Hier! die Stufen,</l>
             <l>daß du nicht fällst.</l>
           </lg>
         </sp>
-        <sp who="#ägisth">
+        <sp who="#aegisth">
           <speaker>ÄGISTH</speaker>
-          <stage>
-            <hi>an der Haustür.</hi>
-          </stage>
+          <stage>an der Haustür.</stage>
           <lg>
             <l>Warum ist hier kein Licht?</l>
             <l>Wer sind die dort?</l>
@@ -3562,48 +3283,33 @@
             <l>im rechten Augenblick zurückzuziehen.</l>
           </lg>
         </sp>
-        <sp who="#ägisth">
+        <sp who="#aegisth">
           <speaker>ÄGISTH</speaker>
-          <stage>
-            <hi>geht ins Haus.</hi>
-          </stage>
-          <p>
-            <hi> Eine kleine Stille. Dann Lärm drinnen. Sogleich erscheint Ägisth an einem kleinen
-              Fenster rechts, reißt den Vorhang weg, schreit.</hi>
-          </p>
-          <p>Helft! Mörder! helft dem Herren! Mörder, Mörder!</p>
-          <p>Sie morden mich!</p>
-          <stage>
-            <hi>Er wird weggezerrt.</hi>
-          </stage>
+          <stage>geht ins Haus. Eine kleine Stille. Dann Lärm drinnen. Sogleich erscheint Ägisth an
+            einem kleinen Fenster rechts, reißt den Vorhang weg, schreit.</stage>
+          <lg>
+            <l>Helft! Mörder! helft dem Herren! Mörder, Mörder!</l>
+            <l>Sie morden mich!</l>
+          </lg>
+          <stage>Er wird weggezerrt.</stage>
           <lg>
             <l>Hört mich denn niemand? hört</l>
             <l>denn niemand?</l>
           </lg>
-          <stage>
-            <hi>Noch einmal erscheint sein Gesicht am Fenster.</hi>
-          </stage>
+          <stage>Noch einmal erscheint sein Gesicht am Fenster.</stage>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>reckt sich auf.</hi>
-          </stage>
+          <stage>reckt sich auf.</stage>
           <l>Agamemnon hört dich!</l>
         </sp>
-        <sp who="#ägisth">
+        <sp who="#aegisth">
           <speaker>ÄGISTH</speaker>
-          <stage>
-            <hi>wird fortgerissen.</hi>
-          </stage>
+          <stage>wird fortgerissen.</stage>
           <l>Weh mir!</l>
-          <stage>
-            <hi>Elektra steht, furchtbar atmend, gegen das Haus gekehrt.</hi>
-          </stage>
-          <stage>
-            <hi>Die Frauen kommen wild herausgelaufen, Chrysothemis unter ihnen. Wie besinnungslos
-              laufen sie gegen die Hoftür. Dort machen sie plötzlich halt, wenden sich.</hi>
-          </stage>
+          <stage>Elektra steht, furchtbar atmend, gegen das Haus gekehrt.</stage>
+          <stage>Die Frauen kommen wild herausgelaufen, Chrysothemis unter ihnen. Wie besinnungslos
+            laufen sie gegen die Hoftür. Dort machen sie plötzlich halt, wenden sich.</stage>
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS.</speaker>
@@ -3612,9 +3318,7 @@
             <l>mit uns! es ist der Bruder drin im Haus!</l>
             <l>es ist Orest, der es getan hat!</l>
           </lg>
-          <stage>
-            <hi>Stimmengewirr, Getümmel draußen.</hi>
-          </stage>
+          <stage>Stimmengewirr, Getümmel draußen.</stage>
           <lg>
             <l>Komm!</l>
             <l>Er steht im Vorsaal, alle sind um ihn,</l>
@@ -3626,10 +3330,8 @@
             <l>selbst Wunden, und doch strahlen alle, alle</l>
             <l>umarmen sich –</l>
           </lg>
-          <stage>
-            <hi>Draußen wachsender Lärm, die Frauen sind hinausgelaufen, Chrysothemis allein, von
-              draußen fällt Licht herein.</hi>
-          </stage>
+          <stage>Draußen wachsender Lärm, die Frauen sind hinausgelaufen, Chrysothemis allein, von
+            draußen fällt Licht herein.</stage>
           <lg>
             <l>und jauchzen, tausend Fackeln</l>
             <l>sind angezündet. Hörst du nicht, so hörst du</l>
@@ -3638,9 +3340,7 @@
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>auf der Schwelle kauernd.</hi>
-          </stage>
+          <stage>auf der Schwelle kauernd.</stage>
           <lg>
             <l>Ob ich nicht höre? ob ich die</l>
             <l>Musik nicht höre? sie kommt doch aus mir</l>
@@ -3658,9 +3358,7 @@
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS</speaker>
-          <stage>
-            <hi>fast schreiend vor Erregung.</hi>
-          </stage>
+          <stage>fast schreiend vor Erregung.</stage>
           <lg>
             <l>Hörst du nicht, sie tragen ihn,</l>
             <l>sie tragen ihn auf ihren Händen, allen</l>
@@ -3669,30 +3367,20 @@
             <l>von Tränen! Alle weinen, hörst dus nicht?</l>
             <l>Ah!</l>
           </lg>
-          <stage>
-            <hi>Sie läuft hinaus.</hi>
-          </stage>
-          <stage>
-            <hi>Elektra hat sich erhoben. Sie schreitet von der Schwelle herunter.</hi>
-          </stage>
-          <stage>
-            <hi>Sie hat den Kopf zurückgeworfen wie eine Mänade. Sie wirft die Kniee, sie reckt die
-              Arme aus, es ist ein namenloser Tanz, in welchem sie nach vorwärts schreitet.</hi>
-          </stage>
+          <stage>Sie läuft hinaus.</stage>
+          <stage>Elektra hat sich erhoben. Sie schreitet von der Schwelle herunter.</stage>
+          <stage>Sie hat den Kopf zurückgeworfen wie eine Mänade. Sie wirft die Kniee, sie reckt die
+            Arme aus, es ist ein namenloser Tanz, in welchem sie nach vorwärts schreitet.</stage>
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS</speaker>
-          <stage>
-            <hi>erscheint wieder an der Tür, hinter ihr Fackeln, Gedräng, Gesichter von Männern und
-              Frauen.</hi>
-          </stage>
+          <stage>erscheint wieder an der Tür, hinter ihr Fackeln, Gedräng, Gesichter von Männern und
+            Frauen.</stage>
           <l>Elektra!</l>
         </sp>
         <sp who="#elektra">
           <speaker>ELEKTRA</speaker>
-          <stage>
-            <hi>bleibt stehen, sieht starr auf sie hin.</hi>
-          </stage>
+          <stage>bleibt stehen, sieht starr auf sie hin.</stage>
           <lg>
             <l>Schweig und tanze. Alle müssen</l>
             <l>herbei! hier schließt euch an! Ich trag die Last</l>
@@ -3700,28 +3388,16 @@
             <l>Wer glücklich ist wie wir, dem ziemt nur eins:</l>
             <l>schweigen und tanzen!</l>
           </lg>
-          <stage>
-            <hi>Sie tut noch einige Schritte des angespanntesten Triumphes und stürzt zusammen.</hi>
-          </stage>
+          <stage>Sie tut noch einige Schritte des angespanntesten Triumphes und stürzt
+            zusammen.</stage>
         </sp>
         <sp who="#chrysothemis">
           <speaker>CHRYSOTHEMIS</speaker>
-          <stage>
-            <hi>zu ihr.</hi>
-          </stage>
-          <lg>
-            <l>
-              <hi> Elektra liegt starr. Chrysothemis läuft an die Tür des Hauses, schlägt
-                daran.</hi>
-            </l>
-            <l>Orest! Orest!</l>
-          </lg>
-          <stage>
-            <hi>Stille.</hi>
-          </stage>
-          <stage>
-            <hi>Vorhang.</hi>
-          </stage>
+          <stage>zu ihr. Elektra liegt starr. Chrysothemis läuft an die Tür des Hauses, schlägt
+            daran.</stage>
+          <l>Orest! Orest!</l>
+          <stage>Stille.</stage>
+          <stage>Vorhang.</stage>
         </sp>
       </div>
     </body>
