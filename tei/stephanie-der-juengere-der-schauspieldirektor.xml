@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Der Schauspieldirektor</title>
+        <title type="main">Der Schauspieldirektor</title>
+        <title type="sub">Ein Gelegenheitsstück in einem Aufzuge</title>
         <author key="pnd:119545799">Stephanie, Johann Gottlieb (der Jüngere)</author>
       </titleStmt>
       <publicationStmt>
@@ -43,36 +44,35 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="puf">
-            <persName>PUF</persName>
+          <person xml:id="puf" sex="MALE">
+            <persName>Puf</persName>
           </person>
-          <person xml:id="frank">
-            <persName>FRANK</persName>
+          <person xml:id="frank" sex="MALE">
+            <persName>Frank</persName>
           </person>
-          <person xml:id="eiler">
-            <persName>EILER</persName>
+          <person xml:id="eiler" sex="MALE">
+            <persName>Eiler</persName>
           </person>
-          <person xml:id="madame_pfeil">
-            <persName>MADAME PFEIL</persName>
-            <persName xml:id="mad_pfeil">MAD PFEIL</persName>
+          <person xml:id="madame_pfeil" sex="FEMALE">
+            <persName>Madame Pfeil</persName>
           </person>
-          <person xml:id="madame_krone">
-            <persName>MADAME KRONE</persName>
+          <person xml:id="madame_krone" sex="FEMALE">
+            <persName>Madame Krone</persName>
           </person>
-          <person xml:id="herz">
-            <persName>HERZ</persName>
+          <person xml:id="herz" sex="MALE">
+            <persName>Herz</persName>
           </person>
-          <person xml:id="madame_vogelsang">
-            <persName>MADAME VOGELSANG</persName>
+          <person xml:id="madame_vogelsang" sex="FEMALE">
+            <persName>Madame Vogelsang</persName>
           </person>
-          <person xml:id="madame_herz">
-            <persName>MADAME HERZ</persName>
+          <person xml:id="madame_herz" sex="FEMALE">
+            <persName>Madame Herz</persName>
           </person>
-          <person xml:id="mademoiselle_silberklang">
-            <persName>MADEMOISELLE SILBERKLANG</persName>
+          <person xml:id="mademoiselle_silberklang" sex="FEMALE">
+            <persName>Mademoiselle Silberklang</persName>
           </person>
-          <person xml:id="monsieur_vogelsang">
-            <persName>MONSIEUR VOGELSANG</persName>
+          <person xml:id="monsieur_vogelsang" sex="MALE">
+            <persName>Monsieur Vogelsang</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -86,6 +86,7 @@
       <listChange>
         <change when="2017-01-06">(dlina) file conversion from source</change>
         <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2018-12-29">(ff) formalities</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -96,64 +97,69 @@
         <head>Der Schauspieldirektor</head>
         <head>Ein Gelegenheitsstück in einem Aufzuge</head>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head><pb n="2"/> Personen</head>
           <castItem>Frank, Schauspieldirektor</castItem>
           <castItem>Eiler, ein Banquier</castItem>
-          <castItem>Puf</castItem>
-          <castItem>Herz, Schauspieler</castItem>
-          <castItem>Madame Pfeil</castItem>
-          <castItem>Madame Krone</castItem>
-          <castItem>Madame Vogelsang, Schauspielerinnen</castItem>
+          <castGroup>
+            <castItem>Puf</castItem>
+            <castItem>Herz</castItem>
+            <roleDesc>Schauspieler</roleDesc>
+          </castGroup>
+          <castGroup>
+            <castItem>Madame Pfeil</castItem>
+            <castItem>Madame Krone</castItem>
+            <castItem>Madame Vogelsang</castItem>
+            <roleDesc>Schauspielerinnen</roleDesc>
+          </castGroup>
           <castItem>Hr. Vogelsang, ein Sänger</castItem>
-          <castItem>Madame Herz</castItem>
-          <castItem>Mademoiselle Silberklang, Sängerinnen</castItem>
+          <castGroup>
+            <castItem>Madame Herz</castItem>
+            <castItem>Mademoiselle Silberklang</castItem>
+            <roleDesc>Sängerinnen</roleDesc>
+          </castGroup>
           <pb n="2"/>
         </castList>
       </div>
+    </front>
+    <body>
       <div type="scene">
         <head>Erster Auftritt.</head>
-        <p>Frank, gleich darauf Puf.</p>
+        <stage>Frank, gleich darauf Puf.</stage>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> Lustig, Herr Direkteur, wir haben Permißion.</l>
+          <p>Lustig, Herr Direkteur, wir haben Permißion.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK</speaker>
-          <stage>
-            <hi>munter.</hi>
-          </stage>
-          <l> Wo lieber Puf?</l>
+          <stage>munter.</stage>
+          <p>Wo lieber Puf?</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> In Salzburg.</l>
+          <p>In Salzburg.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK</speaker>
-          <stage>
-            <hi>seufzend.</hi>
-          </stage>
-          <l> In Salzburg! dem Vaterlande des Hannswursts!</l>
+          <stage>seufzend.</stage>
+          <p>In Salzburg! dem Vaterlande des Hannswursts!</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> O nur keine Grillen! Seyn Sie froh, daß wir irgendwo unterkommen. Wenn die Kunst nach
+          <p>O nur keine Grillen! Seyn Sie froh, daß wir irgendwo unterkommen. Wenn die Kunst nach
             Brod geht, muß es ihr gleich viel seyn, welche Thüre ihr offen steht. Es sind überdieß
             noch Bedingungen dabey. Lauter lustige Stücke, Ballette und Opern müssen Sie geben.</p>
           <pb n="3"/>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <p> Und vom besten Gepräge nicht wahr? Was kostet nicht schon eine gute Gesellschaft! dann
+          <p>Und vom besten Gepräge nicht wahr? Was kostet nicht schon eine gute Gesellschaft! dann
             erst Ballette! Opern! und dafür am Ende eine geringe Einnahme?</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> Ja, da müssen Sie sich zu helfen wissen. Sehn Sie mehr auf die Zahl als auf die Güte
+          <p>Ja, da müssen Sie sich zu helfen wissen. Sehn Sie mehr auf die Zahl als auf die Güte
             der Leute, die wohlfeilsten die besten. Ihr erster Akteur muß Ihnen nicht mehr als
             wochentlich 4 Thaler, und die erste Aktrice 2 Thaler kosten. Hernach schicken Sie eine
             Ankündigung voraus, und sagen drainn: Sie brächten die stärkste und ausgesuchteste
@@ -161,35 +167,35 @@
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> Was kann ich aber mit solchen Leuten aufführen?</l>
+          <p>Was kann ich aber mit solchen Leuten aufführen?</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> Die besten Stücke; 30, 40 Personen stark. Worinn ein Akteur den andern vom Theater
+          <p>Die besten Stücke; 30, 40 Personen stark. Worinn ein Akteur den andern vom Theater
             verjagt, und der Zuschauer nicht Zeit hat, über irgend eine Scene nachzudenken.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> Das nennen Sie die besten Stücke?</l>
+          <p>Das nennen Sie die besten Stücke?</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> Und mit Recht, weil Sie's meiste Geld eintragen. Ich weis wohl was Sie sagen können. –
+          <p>Und mit Recht, weil Sie's meiste Geld eintragen. Ich weis wohl was Sie sagen können. –
             Aber – legen Sie die Hand auf's Herz, und reden Sie die Wahrheit: Haben wir nicht gerade
             mit den Stücken, worüber am meisten geschimpft wurde, das meiste Geld eingenommen? und
             bey jenen, die alle Welt für <pb n="4"/> Meisterstücke hält, leere Bänke gehabt? Mit
             Nathan dem Weisen werden Sie das zweytemal nicht so viel einnehmen als die Lichter
             betragen; den Graf Waltron aber können Sie 20mal geben, und werden immer das Haus voll
-            haben. <hi>Ergo</hi>? Ein Direkteur muß auf die Kassa sehen – <hi>ergo</hi>: die
+            haben. <emph>Ergo</emph>? Ein Direkteur muß auf die Kassa sehen – <emph>ergo</emph>: die
             schlechtesten Stücke die Besten.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> Aber lieber Puf, der gute Geschmack geht ja auf die Art vollends zu Grunde</l>
+          <p>Aber lieber Puf, der gute Geschmack geht ja auf die Art vollends zu Grunde</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> Ich bitt' Sie, bleiben Sie mit ihrem guten Geschmack zu Haus, er hat Sie beynahe an
+          <p>Ich bitt' Sie, bleiben Sie mit ihrem guten Geschmack zu Haus, er hat Sie beynahe an
             Bettelstab gebracht. Es ist ein Hirngespinnst, das den Kopf aber nicht den Beutel füllt.
             Die Leute führen ihn deßhalb so häufig auf der Zunge um ihn bey jeder Gelegenheit von
             sich zu geben, weil sie ihn nicht verdauen können. Den zu gründen gehört für grosse
@@ -197,35 +203,33 @@
         </sp>
         <sp who="#frank">
           <speaker>FRANK</speaker>
-          <stage>
-            <hi>seufzend.</hi>
-          </stage>
-          <l> Das hab ich leider erfahren!</l>
+          <stage>seufzend.</stage>
+          <p>Das hab ich leider erfahren!</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> Und damit Sie's nicht wieder erfahren, so machen Sie's wie andre: hängen Sie ein
+          <p>Und damit Sie's nicht wieder erfahren, so machen Sie's wie andre: hängen Sie ein
             prächtig Schild aus, mit Torten und Pasteten bemahlt, und setzen Sie Speckknödel und
             Sauerkraut auf.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> Das heißt: betrügen Sie die Leute.</l>
+          <p>Das heißt: betrügen Sie die Leute.</p>
           <pb n="5"/>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l><hi>Mundus vult decipi, ergo decipiatur</hi>.</l>
+          <p><emph>Mundus vult decipi, ergo decipiatur.</emph></p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <p> Nun gut. Aber wenn ich Ihnen auch in Ansehung der Stücke Recht lassen muß, so ist's
+          <p>Nun gut. Aber wenn ich Ihnen auch in Ansehung der Stücke Recht lassen muß, so ist's
             doch ganz was anders mit den Schauspielern. Die Gattung Leute wie Sie mir rathen
             anzunehmen – – –</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> Müßen überall für die Vortreflichsten gelten, wenn Sie's nur anzustellen wissen. Ist
+          <p>Müßen überall für die Vortreflichsten gelten, wenn Sie's nur anzustellen wissen. Ist
             ein Schauspieler den die Leute nicht verstehen können und Ihnen deßhalb Vorwürfe machen,
             so sagen Sie mit einer Weisheitsmine: es ist ein größerer Denker als Redner, es' steckt
             viel hinter dem Manne, daher gehört auch viel dazu um ihn gehörig zu beurtheilen. Von
@@ -237,74 +241,75 @@
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> Das ist wohl leicht gerathen, aber nicht so leicht auszuführen.</l>
+          <p>Das ist wohl leicht gerathen, aber nicht so leicht auszuführen.</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> Eben so leicht. Ey! ey! Herr Frank, Sie sind so lange beym Theater, und wissen noch
+          <p>Eben so leicht. Ey! ey! Herr Frank, Sie sind so lange beym Theater, und wissen noch
             nicht, daß der größte Theil der Zuschauer <pb n="6"/> nicht selbst urtheilt, sondern nur
             einigen Aristarchen ängstlich aufs Maul sieht um ihnen nachzubeten! Sobald wir
             hinkommen, so geben Sie 4 - 5 Skriblern frey Entre'e, alle Tage ein gut Souppee, und bey
             der ersten Aktrice Dejeunee; die werden Ihnen aus dem elendesten Schneidergesellen einen
             Roscius, aus dem unartigsten Limmel einen Garrik, und aus dem ersten Kuchelmenschen eine
-              <hi>Clairon</hi> machen. Der Haufe beth das nach, und so haben Sie gewonnen Spiel.</p>
+              <emph>Clairon</emph> machen. Der Haufe beth das nach, und so haben Sie gewonnen
+            Spiel.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> Lieber Herr Puf, was rathen Sie mir! das heißt sich ja feinen Beifall erkanfen.</l>
+          <p>Lieber Herr Puf, was rathen Sie mir! das heißt sich ja feinen Beifall erkanfen.</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> Klimpern gehört zum Handwerk. Auf diese Art ist schon mancher elende
-              <hi>Charlatan</hi> zum Kapitalisten geworden, und Sie sind nach allen Regeln der Kunst
-            und Rechtschaffenheit –</p>
+          <p>Klimpern gehört zum Handwerk. Auf diese Art ist schon mancher elende
+              <emph>Charlatan</emph> zum Kapitalisten geworden, und Sie sind nach allen Regeln der
+            Kunst und Rechtschaffenheit –</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <p> Auf den Sand gekommen. Es sey, ich will den guten Geschmack, die <hi>Chimaire</hi> wie
-            Sie es nennen, an Nagel hängen – –</p>
+          <p>Auf den Sand gekommen. Es sey, ich will den guten Geschmack, die <emph>Chimaire</emph>
+            wie Sie es nennen, an Nagel hängen – –</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> Und die Rechtschaffenheit dazu.</l>
+          <p>Und die Rechtschaffenheit dazu.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> Aber wo bekomm' ich Geld her um anzufangen?</l>
+          <p>Aber wo bekomm' ich Geld her um anzufangen?</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> Hier haben Sie einmal die Permißion. <hi>Giebt ihm einen großen Brief.</hi> Darauf
-            nehmen <pb n="7"/> Sie Geld auf, und verschreiben die Einnahme.</p>
+          <p>Hier haben Sie einmal die Permißion. <stage>Giebt ihm einen großen Brief.</stage>
+            Darauf nehmen <pb n="7"/> Sie Geld auf, und verschreiben die Einnahme.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <p> Aber wenn ich nun mit allen Kunstgriffen nichts einnähme? Es ist doch möglich, daß ich
+          <p>Aber wenn ich nun mit allen Kunstgriffen nichts einnähme? Es ist doch möglich, daß ich
             ein klüger Publikum fände als ich vermuthe.</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> Ah – Sie müssen aufs Glück mehr als auf die Möglichkeit rechnen. Das Glück ist eine
+          <p>Ah – Sie müssen aufs Glück mehr als auf die Möglichkeit rechnen. Das Glück ist eine
             Vormünderinn der Dummheit, und wenn Sie meinem Rath folgen, opfern Sie der Dummheit
             mehr, als dem Verstande, mithin haben Sie nichts zu fürchten.</p>
         </sp>
       </div>
       <div type="scene">
         <head>Zweyter Auftritt.</head>
-        <p>Vorige, Eiler.</p>
+        <stage>Vorige, Eiler.</stage>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <p> Ihr Diener lieber Frank. Sie wundern sich mich hier zu sehen? Ja das glaub' ich gern.
+          <p>Ihr Diener lieber Frank. Sie wundern sich mich hier zu sehen? Ja das glaub' ich gern.
             Werden sich aber noch mehr wundern, wenn Sie hören werden warum ich hier bin, und Sie
             aufgesucht habe?</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> Ich muß gestehn Ihre Gegenwart macht mir so viel Neugierde als Freude.</l>
+          <p>Ich muß gestehn Ihre Gegenwart macht mir so viel Neugierde als Freude.</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <p> Sollen befriedigt werden. Sie wissen doch von meinem Engagement mit Madame <pb n="8"/>
+          <p>Sollen befriedigt werden. Sie wissen doch von meinem Engagement mit Madame <pb n="8"/>
             Pfeil? – Ich weis was Sie sagen wollen, weis auch, daß ich ein Narr bin; aber Herr, wie
             ich klug werden soll, weis ich nicht. Die Liebe kann man nicht so abwerfen wie ein Paar
             übertragene Schuh; – und eine Theaterliebe hat vollends viel ähnliches mit dem
@@ -323,207 +328,181 @@
         </sp>
         <sp who="#puf">
           <speaker>PUF</speaker>
-          <stage>
-            <hi>heimlich zu Frank.</hi>
-          </stage>
-          <l> Eine trefliche Gelegenheit! greifen Sie zu.</l>
+          <stage>heimlich zu Frank.</stage>
+          <p>Eine trefliche Gelegenheit! greifen Sie zu.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <p> Lieber Herr Eiler, ich errichte nur eine kleine Gesellschaft und dabei würde mir Madam
+          <p>Lieber Herr Eiler, ich errichte nur eine kleine Gesellschaft und dabei würde mir Madam
             Pfeil zu theuer seyn.</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <p> Ich will ihnen die Gage für sie zahlen, und oben drein tausend Dukaten auf 3 - 4 Jahre
+          <p>Ich will ihnen die Gage für sie zahlen, und oben drein tausend Dukaten auf 3 - 4 Jahre
             ohne Intressen leihen, nehmen Sie sie nur an, damit ich nicht mehr auswendig lernen
             darf, und andre statt mir die Theaterscenen mit ihr spielen.</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF</speaker>
-          <stage>
-            <hi>wie oben.</hi>
-          </stage>
-          <l> Itzt besinnen Sie sich keinen Augenblick.</l>
+          <stage>wie oben.</stage>
+          <p>Itzt besinnen Sie sich keinen Augenblick.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> Aber lieber Puf; es bleibt mir ja keine Actrice neben ihr.</l>
+          <p>Aber lieber Puf; es bleibt mir ja keine Actrice neben ihr.</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> Unsre 2 Thaler Aktricen werden schon neben ihr bleiben.</l>
+          <p>Unsre 2 Thaler Aktricen werden schon neben ihr bleiben.</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> Nun Herr Frank, Sie stehn noch an? Geschwind entschlüssen Sie sich, ich höre sie schon
-            kommen.</l>
+          <p>Nun Herr Frank, Sie stehn noch an? Geschwind entschlüssen Sie sich, ich höre sie schon
+            kommen.</p>
         </sp>
       </div>
       <div type="scene">
         <head>Dritter Auftritt.</head>
-        <p>Die Vorigen, Madame Pfeil.</p>
+        <stage>Die Vorigen, Madame Pfeil.</stage>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <p> Wie Herr Frank? Sie hören daß die grosse Madame Pfeil hier ist und kommen nicht zu
-            mir? suchen mich nicht auf?</p>
+          <p>Wie Herr Frank? Sie hören daß die grosse Madame Pfeil hier ist und kommen nicht zu mir?
+            suchen mich nicht auf?</p>
           <pb n="10"/>
         </sp>
         <sp who="#eiler">
           <speaker>EILER</speaker>
-          <stage>
-            <hi>verlegen.</hi>
-          </stage>
-          <l> Eben war er im Begrif zu Ihnen zu gehen.</l>
+          <stage>verlegen.</stage>
+          <p>Eben war er im Begrif zu Ihnen zu gehen.</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
-          <l> Die steckt uns alle in Pantoffel.</l>
+          <stage>für sich.</stage>
+          <p>Die steckt uns alle in Pantoffel.</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL</speaker>
-          <stage>
-            <hi>zu Eiler.</hi>
-          </stage>
-          <p> Nun haben Sie's ihm schon gesagt? – – <hi>Zu Frank.</hi> Sie sind in mißlichen
+          <stage>zu Eiler.</stage>
+          <p>Nun haben Sie's ihm schon gesagt? – – <stage>Zu Frank.</stage> Sie sind in mißlichen
             Umständen, Herr Frank? ich will Sie herausreißen, will mich bei Ihnen engagiren. Aber
             alle erste Rollen, von der Subrette bis zur Königinn muß ich bekommen. Was geben Sie mir
             Gage?</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> Madame. – – –</l>
+          <p>Madame. – – –</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> Zehn Thaler die Woche.</l>
+          <p>Zehn Thaler die Woche.</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <p> Was! der großen Pfeil nur zehn Thaler! Herr, man sieht's, daß Sie ihren Vortheil nicht
+          <p>Was! der großen Pfeil nur zehn Thaler! Herr, man sieht's, daß Sie ihren Vortheil nicht
             verstehn, darum sind Sie auch zu Grunde gegangen. Für meinen Namen allein sollten Sie 10
             Thaler geben.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <p> Madame! ich habe alle Achtung für Ihre Bedienste, aber meine Umstände erlauben mir
+          <p>Madame! ich habe alle Achtung für Ihre Bedienste, aber meine Umstände erlauben mir
             überhaupt nicht, Sie –</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER</speaker>
-          <stage>
-            <hi>heimlich zu Frank.</hi>
-          </stage>
-          <l> Ich bitt' Sie um alles in der Welt nehmen Sie sie an!</l>
+          <stage>heimlich zu Frank.</stage>
+          <p>Ich bitt' Sie um alles in der Welt nehmen Sie sie an!</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> Mehr als 12 Thaler kann er Ihnen wahrhaftig nicht geben.</l>
+          <p>Mehr als 12 Thaler kann er Ihnen wahrhaftig nicht geben.</p>
           <pb n="11"/>
         </sp>
         <sp who="#frank">
           <speaker>FRANK</speaker>
-          <stage>
-            <hi>heimlich zu Puf.</hi>
-          </stage>
-          <l> Ich mag sie gar nicht.</l>
+          <stage>heimlich zu Puf.</stage>
+          <p>Ich mag sie gar nicht.</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> Sie müssen die Ehre, daß Sie die ganze Gesellschaft in Leben und Thätigkeit erhalten,
+          <p>Sie müssen die Ehre, daß Sie die ganze Gesellschaft in Leben und Thätigkeit erhalten,
             und berühmt machen werden, auch in Anschlag bringen.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
-          <l> Ja wohl berühmt!</l>
+          <stage>für sich.</stage>
+          <p>Ja wohl berühmt!</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <p> Nun gut, aus Barmherzigkeit sollen Sie mich für 12 Thaler haben. Von meinen Talenten
+          <p>Nun gut, aus Barmherzigkeit sollen Sie mich für 12 Thaler haben. Von meinen Talenten
             werden Sie keinen Beweis fordern, das bin ich überzeugt; aber Sie sollen sehen wie weit
             ich's im Unterrichten gebracht habe. Sie werden erstaunen, was Herr Eiler unter meinen
-            Händen für ein Akteur geworden. <hi>Zu Eiler.</hi> Kommen Sie, wir wollen die Scene aus
-            dem aufgehetzten Ehemann spielen. <hi>Geht etwas zurück.</hi>
-          </p>
+            Händen für ein Akteur geworden. <stage>Zu Eiler.</stage> Kommen Sie, wir wollen die
+            Scene aus dem aufgehetzten Ehemann spielen. <stage>Geht etwas zurück.</stage></p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER</speaker>
-          <stage>
-            <hi>heimlich zu Frank.</hi>
-          </stage>
-          <l> Sehn Sie wohl, da muß ich schon wieder spielen.</l>
+          <stage>heimlich zu Frank.</stage>
+          <p>Sehn Sie wohl, da muß ich schon wieder spielen.</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> Ich will souflieren.</l>
+          <p>Ich will souflieren.</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> O ich hab sie so oft spielen müssen, daß ich keinen Soufleur brauche.</l>
+          <p>O ich hab sie so oft spielen müssen, daß ich keinen Soufleur brauche.</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> Nun, wird's bald?</l>
+          <p>Nun, wird's bald?</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <p> Gleich! gleich! <hi>Geht etwas auf und ab, und setzt sich in den Charakter.</hi> »Nun
-            will ich meines Freundes Lehren in Ausübung bringen. Wenn ich nur den Ton recht treffe –
-            – – Ich will anfangs <pb n="12"/> gar nicht thun, als ob ich sie sähe – Wenn sie aber
-            itzt käme – wahrhaftig, das verrückte mir mein ganzes Konzept. – So wahr ich lebe, da
-            ist sie.«</p>
+          <p>Gleich! gleich! <stage>Geht etwas auf und ab, und setzt sich in den Charakter.</stage>
+            »Nun will ich meines Freundes Lehren in Ausübung bringen. Wenn ich nur den Ton recht
+            treffe – – – Ich will anfangs <pb n="12"/> gar nicht thun, als ob ich sie sähe – Wenn
+            sie aber itzt käme – wahrhaftig, das verrückte mir mein ganzes Konzept. – So wahr ich
+            lebe, da ist sie.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Nun? Wozu brauchen Sie mich Sir Harry?«</l>
+          <p>»Nun? Wozu brauchen Sie mich Sir Harry?«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Ich Sie brauchen? Ich wüßte nicht wozu Sie in Ihrem Leben nutz gewesen wären?«</l>
+          <p>»Ich Sie brauchen? Ich wüßte nicht wozu Sie in Ihrem Leben nutz gewesen wären?«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <p> »Sie ließen mir ja den Augenblick sagen, Sie hätten was nothwendiges mit mir zu
+          <p>»Sie ließen mir ja den Augenblick sagen, Sie hätten was nothwendiges mit mir zu
             sprechen? sonst wär' ich wahrhaftig nicht so bald gekommen.«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER</speaker>
-          <stage>
-            <hi>bei Seite.</hi>
-          </stage>
-          <p> »Ich glaube mein Seel, ich fange das Ding unrecht an. Es hätte alles wie von ungefehr
-            kommen sollen. Was Henker soll ich ihr nun sagen?« <hi>Laut.</hi> »Wie gefällt dir mein
-            neues Kleid Schatz? Macht's nicht rechten Staat?«</p>
+          <stage>bei Seite.</stage>
+          <p>»Ich glaube mein Seel, ich fange das Ding unrecht an. Es hätte alles wie von ungefehr
+            kommen sollen. Was Henker soll ich ihr nun sagen?« <stage>Laut.</stage> »Wie gefällt dir
+            mein neues Kleid Schatz? Macht's nicht rechten Staat?«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Weiter hast du mir nichts zu sagen?« <hi>Will fort.</hi>
-          </l>
+          <p>»Weiter hast du mir nichts zu sagen?« <stage>Will fort.</stage></p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER</speaker>
-          <stage>
-            <hi>vertritt ihr den Weg.</hi>
-          </stage>
-          <p> »Nicht von der Stelle bis Sie meine Frage beantwortet haben. Höflich oder unhöflich,
+          <stage>vertritt ihr den Weg.</stage>
+          <p>»Nicht von der Stelle bis Sie meine Frage beantwortet haben. Höflich oder unhöflich,
             wie's Ihnen beliebt, ich bin auf beides gefaßt.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Wollen Sie etwann mit diesen<pb n="13"/> Grimaßen Ihr Betragen von heute früh wieder
-            gut machen?«</l>
+          <p>»Wollen Sie etwann mit diesen<pb n="13"/> Grimaßen Ihr Betragen von heute früh wieder
+            gut machen?«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER</speaker>
-          <stage>
-            <hi>auf und abgehend.</hi>
-          </stage>
+          <stage>auf und abgehend.</stage>
           <lg>
             <l>Ihr Götter schenktet mir ein Weib,</l>
             <l>aus großer Gunst zum Zeitvertreib.</l>
@@ -531,36 +510,30 @@
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <p> »Wissen Sie wohl, daß ich nicht Lust habe eine solche Begegnung länger zu ertragen,
-            und mich wie einen Handschuh aus- und anziehen zu laßen?«</p>
+          <p>»Wissen Sie wohl, daß ich nicht Lust habe eine solche Begegnung länger zu ertragen, und
+            mich wie einen Handschuh aus- und anziehen zu laßen?«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Reden Sie mit mir Madame?«</l>
+          <p>»Reden Sie mit mir Madame?«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Mit wem sonst?«</l>
+          <p>»Mit wem sonst?«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Wahrhaftig Kind, ich wußte nicht, daß du im Zimmer wärst.«</l>
+          <p>»Wahrhaftig Kind, ich wußte nicht, daß du im Zimmer wärst.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Wahrhaftig Kind, das ist eine lächerliche Affektation.«</l>
+          <p>»Wahrhaftig Kind, das ist eine lächerliche Affektation.«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER</speaker>
-          <stage>
-            <hi>bey Seite.</hi>
-          </stage>
-          <lg>
-            <l> »Nun fängt's an zu operiren, wenn ich nur kalt bleiben kann.«</l>
-          </lg>
-          <stage>
-            <hi>Laut.</hi>
-          </stage>
+          <stage>bey Seite.</stage>
+          <p>»Nun fängt's an zu operiren, wenn ich nur kalt bleiben kann.«</p>
+          <stage>Laut.</stage>
           <lg>
             <l>»Doch wenn zu einem grössern Glück</l>
             <l>Sie eure Gnade will erheben,</l>
@@ -570,424 +543,392 @@
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Abgeschmackt!«</l>
+          <p>»Abgeschmackt!«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER</speaker>
-          <stage>
-            <hi>hart an ihr vorbeygehend.</hi>
-          </stage>
-          <l> »Ohne sie zu leben! ohne sie zu leben!«</l>
+          <stage>hart an ihr vorbeygehend.</stage>
+          <p>»Ohne sie zu leben! ohne sie zu leben!«</p>
           <pb n="14"/>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL</speaker>
-          <stage>
-            <hi>stößt ihn von sich.</hi>
-          </stage>
-          <l> »Einfältig!«</l>
+          <stage>stößt ihn von sich.</stage>
+          <p>»Einfältig!«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Ja Madame!«</l>
+          <p>»Ja Madame!«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Ja mein Herr, ja!«</l>
+          <p>»Ja mein Herr, ja!«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <p> »In Ihr Zimmer! Sogleich! den Augenblick! Und lassen Sie sich das ein für allemal
+          <p>»In Ihr Zimmer! Sogleich! den Augenblick! Und lassen Sie sich das ein für allemal
             gesagt seyn, nicht wieder in das Zimmer zu kommen, wo ich mich anziehe. Eines Mannes
             ernsthafte Stunden müssen nicht durch weibliche Unverschämtheiten gestöhrt werden.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Eines Mannes? ha ha ha!«</l>
+          <p>»Eines Mannes? ha ha ha!«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <p> »Solche freche Mienen schicken sich gar nicht für Sie Madame! – – Aber so ein albernes
+          <p>»Solche freche Mienen schicken sich gar nicht für Sie Madame! – – Aber so ein albernes
             Ding ist meines männlichen Zorns unwerth! – Gehn Sie mit Ihrem Spielwerk, ich will
             allein seyn.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Itzt bleib ich ihnen zum Trotz da.«</l>
+          <p>»Itzt bleib ich ihnen zum Trotz da.«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Soll ich Sie den Gehorsam lehren, den eine Frau den Befehlen Ihres Mannes schuldig
-            ist?«</l>
+          <p>»Soll ich Sie den Gehorsam lehren, den eine Frau den Befehlen Ihres Mannes schuldig
+            ist?«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <p> »Mannes? Der Himmel behüte jede Frau für so einem Manne! – – Ein Federball schickt
-            sich besser für Sie als eine Frau.«</p>
+          <p>»Mannes? Der Himmel behüte jede Frau für so einem Manne! – – Ein Federball schickt sich
+            besser für Sie als eine Frau.«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <p> »Und – Erlauben mir Ew. Naseweisheit Ihnen zu sagen: Eine Puppe schickt sich <pb
-              n="15"/> besser für Sie als ein Mann. – Da haben Sie's wieder.«</p>
+          <p>»Und – Erlauben mir Ew. Naseweisheit Ihnen zu sagen: Eine Puppe schickt sich <pb n="15"
+            /> besser für Sie als ein Mann. – Da haben Sie's wieder.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Sie bleiben doch zeitlebens ein Fratz!«</l>
+          <p>»Sie bleiben doch zeitlebens ein Fratz!«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Und Sie zeitlebens eine Närrinn Frau Schnipps.«</l>
+          <p>»Und Sie zeitlebens eine Närrinn Frau Schnipps.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »So bin ich gerade die rechte Gesellschaft für Sie.«</l>
+          <p>»So bin ich gerade die rechte Gesellschaft für Sie.«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Tschu! Tschu! Tschu!«</l>
+          <p>»Tschu! Tschu! Tschu!«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Auserordentlich artig! wo haben Sie gesehn, daß ein Mann seiner Frau so
-            begegnet?«</l>
+          <p>»Auserordentlich artig! wo haben Sie gesehn, daß ein Mann seiner Frau so begegnet?«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <p> »Wo haben Sie gesehen, daß eine Frau Ihrem Manne so begegnet? Der Henker hohle mich,
+          <p>»Wo haben Sie gesehen, daß eine Frau Ihrem Manne so begegnet? Der Henker hohle mich,
             man thäte besser, man würde ein Galerensclave, als daß man sich so ein einfältig Ding an
             Hals hängt, das zu nichts nütze ist als ein Schnupftuch zu säumen.«</p>
         </sp>
-        <sp who="#mad_pfeil">
+        <sp who="#madame_pfeil">
           <speaker>MAD PFEIL.</speaker>
-          <p> »Und wahrhaftig eine Frau thäte besser, sie würde eine Bänkelsängerinn, als daß sie
+          <p>»Und wahrhaftig eine Frau thäte besser, sie würde eine Bänkelsängerinn, als daß sie
             sich einen solchen Laffen auf den Hals ladet, der Zeitlebens das Schulbuch auf dem
             Rücken tragen sollte.«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Es geschieht mir ganz recht.«</l>
+          <p>»Es geschieht mir ganz recht.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <p> »Mir auch! Ich hätte bedenken sollen, daß man einen Mann so wenig nach dem Augenmaaß
+          <p>»Mir auch! Ich hätte bedenken sollen, daß man einen Mann so wenig nach dem Augenmaaß
             beurtheilen kann als einen <pb n="16"/> Schuh; diesen muß man erst anprobiren, jenen
             kennen lernen.«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <p> »Und ich hätte nicht so einen schlechten Geschmack haben, und meine Frau in der Maske
+          <p>»Und ich hätte nicht so einen schlechten Geschmack haben, und meine Frau in der Maske
             wählen sollen.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Wie? Sie haben mich in der Maske gewählt?«</l>
+          <p>»Wie? Sie haben mich in der Maske gewählt?«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Ja, und noch dazu in der gefährlichsten von der Welt.«</l>
+          <p>»Ja, und noch dazu in der gefährlichsten von der Welt.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Die ist?«</l>
+          <p>»Die ist?«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Das bloße Gesicht.«</l>
+          <p>»Das bloße Gesicht.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <p> »Mein Gesicht wär' eine Maske? Nein, so laß ich mich nicht schimpfen – Ich will's
-            meinem Papa sagen« – <hi>Bey Seite.</hi> So hat er noch nie mit mir gesprochen! Er muß
-            von jemand aufgehetzt seyn.</p>
+          <p>»Mein Gesicht wär' eine Maske? Nein, so laß ich mich nicht schimpfen – Ich will's
+            meinem Papa sagen« – <stage>Bey Seite.</stage> So hat er noch nie mit mir gesprochen! Er
+            muß von jemand aufgehetzt seyn.</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <p> »So recht. Weinen Sie sich hübsch die Augen roth, damit's ihnen Jederman ansieht, daß
+          <p>»So recht. Weinen Sie sich hübsch die Augen roth, damit's ihnen Jederman ansieht, daß
             Sie vor Ihrem Mann im Gericht gestanden, und Sie hübsch über ihn klagen können, wie ein
             kleines Kind.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL</speaker>
-          <stage>
-            <hi>weinend.</hi>
-          </stage>
-          <l> »Unartiger Mann! hab ich solch eine Begegnung verdient?«</l>
+          <stage>weinend.</stage>
+          <p>»Unartiger Mann! hab ich solch eine Begegnung verdient?«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER</speaker>
-          <stage>
-            <hi>bey Seite.</hi>
-          </stage>
-          <p> »Itzt weiß ich mir nicht zu rathen. Wenn doch itzt Lord Medway da wäre! Für Thränen
-            hat er mir keine Lection gegeben.«</p>
+          <stage>bey Seite.</stage>
+          <p>»Itzt weiß ich mir nicht zu rathen. Wenn doch itzt Lord Medway da wäre! Für Thränen hat
+            er mir keine Lection gegeben.«</p>
           <pb n="17"/>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Ich opferte ihm alle Männer auf, und noch! das ist mein Dank!«</l>
+          <p>»Ich opferte ihm alle Männer auf, und noch! das ist mein Dank!«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER</speaker>
-          <stage>
-            <hi>bey Seite.</hi>
-          </stage>
-          <p> »Ein verdammter Pfeil! der greift ein! das fällt mir so verteufelt angenehm aufs Herz,
+          <stage>bey Seite.</stage>
+          <p>»Ein verdammter Pfeil! der greift ein! das fällt mir so verteufelt angenehm aufs Herz,
             daß ich meine ganze Lection vergesse.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Ich will ihn nun aber auch herausreißen aus meinem Herzen.«</l>
+          <p>»Ich will ihn nun aber auch herausreißen aus meinem Herzen.«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <p> »Nein, nein, das will ich nicht. Das will auch Lord Medway nicht. Ich muß einlenken.
-            Wenn ich nur wüßte wie?« <hi>Geht in komischer Unentschlossenheit auf sie zu.</hi> »Hilf
-            Himmel, wie barbarisch ist dein Kopf aufgesetzt?«</p>
+          <p>»Nein, nein, das will ich nicht. Das will auch Lord Medway nicht. Ich muß einlenken.
+            Wenn ich nur wüßte wie?« <stage>Geht in komischer Unentschlossenheit auf sie zu.</stage>
+            »Hilf Himmel, wie barbarisch ist dein Kopf aufgesetzt?«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
-          <l> »Ich will nachgeben, vielleicht komm ich dahinter, wer ihn gegen mich verhetzt
-            hat.«</l>
+          <stage>für sich.</stage>
+          <p>»Ich will nachgeben, vielleicht komm ich dahinter, wer ihn gegen mich verhetzt
+            hat.«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Du siehst wie zehn Furien aus, auf Ehre eine wahre Meduse!«</l>
+          <p>»Du siehst wie zehn Furien aus, auf Ehre eine wahre Meduse!«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL</speaker>
-          <stage>
-            <hi>ganz sanft.</hi>
-          </stage>
-          <l> »Die Frisur gefällt dir also nicht? so will ich morgen meinen Frieseur abdanken.«</l>
+          <stage>ganz sanft.</stage>
+          <p>»Die Frisur gefällt dir also nicht? so will ich morgen meinen Frieseur abdanken.«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <p> »So steht er dir gewiß selber nicht mehr an. Denn mein Urtheil hat sonst eben nicht
-            das Glück dir sehr zu gefallen.«</p>
+          <p>»So steht er dir gewiß selber nicht mehr an. Denn mein Urtheil hat sonst eben nicht das
+            Glück dir sehr zu gefallen.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <p> »Ich versichere dich, ich glaube die Frisur steht sehr gut, wenn ich also den <pb
+          <p>»Ich versichere dich, ich glaube die Frisur steht sehr gut, wenn ich also den <pb
               n="18"/> Frieseur abschaffe, thu' ich's blos dir zu Gefallen.«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
-          <p> »Ich glaube, ich werfe mit meinem Projekt um! – Standthaft!« <hi>Laut. Spöttisch.</hi>
-            »Ich kann mirs einbilden! Das ist dein einziges Dichten und Trachten.«</p>
+          <stage>für sich.</stage>
+          <p>»Ich glaube, ich werfe mit meinem Projekt um! – Standthaft!« <stage>Laut.
+              Spöttisch.</stage> »Ich kann mirs einbilden! Das ist dein einziges Dichten und
+            Trachten.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Wahrhaftig mein Schatz, das würd' es seyn, wenn du mir's nur erlauben wolltest.«</l>
+          <p>»Wahrhaftig mein Schatz, das würd' es seyn, wenn du mir's nur erlauben wolltest.«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Liebstes Weib! Sag das noch einmal, es klingt gar zu gut, wenns auch nicht wahr
-            ist.«</l>
+          <p>»Liebstes Weib! Sag das noch einmal, es klingt gar zu gut, wenns auch nicht wahr
+            ist.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Auf Ehre, mein Schatz! Ich wünsche mit meinem Putz niemand lieber zu gefallen als
-            dir.«</l>
+          <p>»Auf Ehre, mein Schatz! Ich wünsche mit meinem Putz niemand lieber zu gefallen als
+            dir.«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Was für ein verhenkert angenehmes Gefchöpf wären Sie, wenn Sie immer bey der Laune
-            blieben.«</l>
+          <p>»Was für ein verhenkert angenehmes Gefchöpf wären Sie, wenn Sie immer bey der Laune
+            blieben.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Das wird nur auf Sie ankommen. Mein unartiger Engel!«</l>
+          <p>»Das wird nur auf Sie ankommen. Mein unartiger Engel!«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <p> »Nun ich will wahrhaftig diese Freude so lange zu erhalten suchen, als Sie sich nur
+          <p>»Nun ich will wahrhaftig diese Freude so lange zu erhalten suchen, als Sie sich nur
             will halten lassen.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <lg>
-            <l> »Ich will wenigstens nie wieder mit dir zanken.«</l>
-            <l>EILER »Gewiß?«</l>
-          </lg>
+          <p>»Ich will wenigstens nie wieder mit dir zanken.«</p>
+        </sp>
+        <sp who="#eiler">
+          <speaker>EILER.</speaker>
+          <p>»Gewiß?«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Auf Ehre!«</l>
+          <p>»Auf Ehre!«</p>
           <pb n="19"/>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Auch ich nicht mit dir, so war ich lebe! Wollen wir uns auch lieben?«</l>
+          <p>»Auch ich nicht mit dir, so war ich lebe! Wollen wir uns auch lieben?«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Unaussprechlich!«</l>
+          <p>»Unaussprechlich!«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Topp! Ich will an allem was du thust, nichts aussetzen.«</l>
+          <p>»Topp! Ich will an allem was du thust, nichts aussetzen.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Und ich nichts an allem, was du sagst.«</l>
+          <p>»Und ich nichts an allem, was du sagst.«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Ich will dir in nichts widersprechen.«</l>
+          <p>»Ich will dir in nichts widersprechen.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Und ich dir in allem Recht geben.«</l>
+          <p>»Und ich dir in allem Recht geben.«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »O du allerliebstes kleines Herz du!« <hi>Er küst ihr die Hand.</hi>
-          </l>
+          <p>»O du allerliebstes kleines Herz du!« <stage>Er küst ihr die Hand.</stage></p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »O du allerliebster kleiner Schelm du!« <hi>Sie klopft ihn auf die Backen.</hi>
-          </l>
+          <p>»O du allerliebster kleiner Schelm du!« <stage>Sie klopft ihn auf die
+            Backen.</stage></p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Warum haben wir uns denn gezankt mein Engel?«</l>
+          <p>»Warum haben wir uns denn gezankt mein Engel?«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Das mußt du wissen, mein Schatz!«</l>
+          <p>»Das mußt du wissen, mein Schatz!«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Ja ich weis wohl; Lord Medway bedauerte mich immer so – –«</l>
+          <p>»Ja ich weis wohl; Lord Medway bedauerte mich immer so – –«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Weswegen?«</l>
+          <p>»Weswegen?«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Daß ich dich geheurathet hätte.«</l>
+          <p>»Daß ich dich geheurathet hätte.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Im Ernst?«</l>
+          <p>»Im Ernst?«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Auf mein Wort!«</l>
+          <p>»Auf mein Wort!«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Der Verräther! Mir machte ers eben so, und sagte: du warst mich nicht werth.«</l>
+          <p>»Der Verräther! Mir machte ers eben so, und sagte: du warst mich nicht werth.«</p>
           <pb n="20"/>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Der Bösewicht!«</l>
+          <p>»Der Bösewicht!«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Und trug mir seine Liebe an.«</l>
+          <p>»Und trug mir seine Liebe an.«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER.</speaker>
-          <l> »Der Treulose!«</l>
+          <p>»Der Treulose!«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> »Hör mein Kind, komm in mein Kabinet, wir wollen uns rächen, und ihm ein Billet
-            schreiben.«</l>
+          <p>»Hör mein Kind, komm in mein Kabinet, wir wollen uns rächen, und ihm ein Billet
+            schreiben.«</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER</speaker>
-          <stage>
-            <hi>nimmt sie um den Leib und führt sie zurück.</hi>
-          </stage>
-          <l> »Ja das wollen wir.«</l>
+          <stage>nimmt sie um den Leib und führt sie zurück.</stage>
+          <p>»Ja das wollen wir.«</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL</speaker>
-          <stage>
-            <hi>zu Frank.</hi>
-          </stage>
-          <l> Nun, was sagen Sie?</l>
+          <stage>zu Frank.</stage>
+          <p>Nun, was sagen Sie?</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK</speaker>
-          <l> Ihr Schüler macht Ihnen Ehre.</l>
+          <p>Ihr Schüler macht Ihnen Ehre.</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> Gezankt haben Sie ganz unvergleichlich Madame!</l>
+          <p>Gezankt haben Sie ganz unvergleichlich Madame!</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL</speaker>
-          <stage>
-            <hi>mit einem zornigen Blick.</hi>
-          </stage>
-          <l> Und die Liebhaberinn?</l>
+          <stage>mit einem zornigen Blick.</stage>
+          <p>Und die Liebhaberinn?</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK</speaker>
-          <stage>
-            <hi>ironisch auf Eilern zeigend.</hi>
-          </stage>
-          <l> Davon haben wir hier den besten Beweiß.</l>
+          <stage>ironisch auf Eilern zeigend.</stage>
+          <p>Davon haben wir hier den besten Beweiß.</p>
         </sp>
       </div>
       <div type="scene">
         <head>Vierter Auftritt.</head>
-        <p>Vorige, Madame Krone.</p>
+        <stage>Vorige, Madame Krone.</stage>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL</speaker>
-          <stage>
-            <hi>mit einem verächtlichen Blick auf Madame Krone.</hi>
-          </stage>
-          <l> Kommt die Prinzeßinn auch?</l>
+          <stage>mit einem verächtlichen Blick auf Madame Krone.</stage>
+          <p>Kommt die Prinzeßinn auch?</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER</speaker>
-          <stage>
-            <hi>ängstlich.</hi>
-          </stage>
-          <p> Wir wollen gehen. Auf Wiedersehen, Herr Frank. <hi>Heimlich zu Frank.</hi> Oefnen Sie
-            nur Ihr Theater bald, damit ich <pb n="21"/> ja nicht mehr die Liebhaber Rolle spielen
-            darf.</p>
-          <stage>
-            <hi>Eiler und Madame Pfeil Ab.</hi>
-          </stage>
+          <stage>ängstlich.</stage>
+          <p>Wir wollen gehen. Auf Wiedersehen, Herr Frank. <stage>Heimlich zu Frank.</stage> Oefnen
+            Sie nur Ihr Theater bald, damit ich <pb n="21"/> ja nicht mehr die Liebhaber Rolle
+            spielen darf.</p>
+          <stage>Eiler und Madame Pfeil Ab.</stage>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> Beste Madame Krone, was führt Sie zu mir?</l>
+          <p>Beste Madame Krone, was führt Sie zu mir?</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> Der Ruf, daß Sie eine neue Gesellschaft errichten wollen. Ich hoffe, Sie werden mir
+          <p>Der Ruf, daß Sie eine neue Gesellschaft errichten wollen. Ich hoffe, Sie werden mir
             doch Engagement geben? Sie wissen, daß ich in der hohen Tragödie meines Gleichen
             suche.</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF</speaker>
-          <stage>
-            <hi>heimlich zu Frank.</hi>
-          </stage>
-          <l> Die ist nichts für uns.</l>
+          <stage>heimlich zu Frank.</stage>
+          <p>Die ist nichts für uns.</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <l> Zayre, Alzire, Kleopatra, Rodogüne und dergleichen sind Eigenthums-Rollen von mir.</l>
+          <p>Zayre, Alzire, Kleopatra, Rodogüne und dergleichen sind Eigenthums-Rollen von mir.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <p> O beste Madame Krone, damit ist's vorbey. Korneille, Racine, Voltäre, diese Väter der
+          <p>O beste Madame Krone, damit ist's vorbey. Korneille, Racine, Voltäre, diese Väter der
             ächten Tragödie sind hinter den Ofen geworfen, und ihre Stücke, die wahren Probiersteine
             tragischer Schauspieler, für unbrauchbar erklärt. Der Shakesparismus hat uns ergriffen,
             und Helden – und Staatsaktionen sind die Produkte, womit wir jetzt paradiren. Ein
@@ -996,191 +937,167 @@
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> Ja, ja, das haben wir alles erfahren. Ich als lustiger Bedienter, habe eine
+          <p>Ja, ja, das haben wir alles erfahren. Ich als lustiger Bedienter, habe eine
             Schellenkappe aufsetzen, mich als Pickelhäring kleiden, und die Tragödie aufrecht halten
-            müssen. <hi>Heimlich <pb n="22"/> zu Frank.</hi> Schicken Sie die tragische Prinzeßinn
-            fort.</p>
+            müssen. <stage>Heimlich <pb n="22"/> zu Frank.</stage> Schicken Sie die tragische
+            Prinzeßinn fort.</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> Das weiß ich leider alles! Aber, Sie hoffte ich nicht so sprechen zu hören, Herr
-            Frank. Ich glaube es kommt immer auf den Direkteur an, sein Publikum zu haben wie er
-            will. Gewöhnt er es an gute Sachen, wird es nichts schlechtes verlangen. Nur muß er ihm
-            nichts auftragen, woran es sich den Geschmack verderben kann; Lieber eine Zeitlang
-            laviren –</p>
+          <p>Das weiß ich leider alles! Aber, Sie hoffte ich nicht so sprechen zu hören, Herr Frank.
+            Ich glaube es kommt immer auf den Direkteur an, sein Publikum zu haben wie er will.
+            Gewöhnt er es an gute Sachen, wird es nichts schlechtes verlangen. Nur muß er ihm nichts
+            auftragen, woran es sich den Geschmack verderben kann; Lieber eine Zeitlang laviren
+            –</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> Und nichts geben was ihm Geld bringt? so muß er desto geschwinder aufhören.</l>
+          <p>Und nichts geben was ihm Geld bringt? so muß er desto geschwinder aufhören.</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> Wie die Sache liegt, haben Sie dem Schein nach Recht; aber wer ist Schuld daran? eben
+          <p>Wie die Sache liegt, haben Sie dem Schein nach Recht; aber wer ist Schuld daran? eben
             Sie und ihre Kollegen. Denn, wären die lustigen Bedienten aus dem Trauerspiel geblieben,
             so wäre es noch in seinem alten Werth. Doch ich will mich mit Ihnen in keinen
             Wortwechsel einlassen. Herr Frank, ich habe einen der besten tragischen Schauspieler bey
             mir, es ist Herr Herz. Wir wollen Ihnen eine Scene aus Bianka Tapello spielen. Urtheilen
             Sie dann, ob es nicht möglich wäre die reine Empfindung auf dem Theater wieder geltend
             zu machen.</p>
-          <stage>
-            <hi>Sie geht an die Scene und führt Herren Herz heraus.</hi>
-          </stage>
+          <stage>Sie geht an die Scene und führt Herren Herz heraus.</stage>
           <pb n="23"/>
         </sp>
       </div>
       <div type="scene">
         <head>Fünfter Auftritt.</head>
-        <p>Vorige, Herz.</p>
+        <stage>Vorige, Herz.</stage>
         <sp who="#frank">
           <speaker>FRANK</speaker>
-          <stage>
-            <hi>zu Herz.</hi>
-          </stage>
-          <l> Mich freut es recht sehr Sie kennen zu lernen, ich habe viel rühmliches von Ihnen
-            gehört.</l>
+          <stage>zu Herz.</stage>
+          <p>Mich freut es recht sehr Sie kennen zu lernen, ich habe viel rühmliches von Ihnen
+            gehört.</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <l> Ich wünsche nur, daß Sie es auch finden.</l>
+          <p>Ich wünsche nur, daß Sie es auch finden.</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> Wir wollens versuchen. Ich bin Bianka Capello, Sie Bonaventuri! <hi>Sie stellt oder
-              sezt sich in eine schwermüthige Lage.</hi>
-          </p>
+          <p>Wir wollens versuchen. Ich bin Bianka Capello, Sie Bonaventuri! <stage>Sie stellt oder
+              sezt sich in eine schwermüthige Lage.</stage></p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <l> »Warum so äußerst ernsthaft – wohl gar traurig, liebe Bianka?«</l>
+          <p>»Warum so äußerst ernsthaft – wohl gar traurig, liebe Bianka?«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <l> »Ich denke diesem Abend nach.«</l>
+          <p>»Ich denke diesem Abend nach.«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ</speaker>
-          <stage>
-            <hi>aufmerksam werdend.</hi>
-          </stage>
-          <l> »Diesem Abend?«</l>
+          <stage>aufmerksam werdend.</stage>
+          <p>»Diesem Abend?«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE</speaker>
-          <stage>
-            <hi>mit einem ernsthaften Kopfschütteln.</hi>
-          </stage>
-          <p> »O es ist eine feyerliche Nacht Bonaventuri, diese heutige Nacht! – Nicht sowohl ihrer
+          <stage>mit einem ernsthaften Kopfschütteln.</stage>
+          <p>»O es ist eine feyerliche Nacht Bonaventuri, diese heutige Nacht! – Nicht sowohl ihrer
             selbst willen – Sie müst'es denn noch werden – als vielmehr ihres Andenkens halber.«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <l> »Ich verstehe dich nicht liebstes Weibchen.«</l>
+          <p>»Ich verstehe dich nicht liebstes Weibchen.«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> »Was mir wehe genug thut! Man vergißt seinen oder eines Freundes Geburtstag <pb n="24"
+          <p>»Was mir wehe genug thut! Man vergißt seinen oder eines Freundes Geburtstag <pb n="24"
             /> nicht leicht, und sie war einst die Geburtsnacht unser ehelichen Verbindung.«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <l> »So?«</l>
+          <p>»So?«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> »Zwey Jahre nun, daß ich mit einem Schauder, der alle Gebeine durchbebte, bey der
+          <p>»Zwey Jahre nun, daß ich mit einem Schauder, der alle Gebeine durchbebte, bey der
             Rückkehr unsrer zärtlichen Unterredung, die väterliche Hausthüre verschlossen fand –
             umkehrte – und, du weißt's ja in wessen Arme flog!«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ</speaker>
-          <stage>
-            <hi>seinen Arm lächelnd um ihre Schultern schlingend.</hi>
-          </stage>
-          <l> »Was dich doch hoffentlich jetzt nicht reut?«</l>
+          <stage>seinen Arm lächelnd um ihre Schultern schlingend.</stage>
+          <p>»Was dich doch hoffentlich jetzt nicht reut?«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE</speaker>
-          <stage>
-            <hi>mit einem starren Blick in sein Auge, den er kaum aushält.</hi>
-          </stage>
-          <p> »Und auch wohl nicht reuen darf! Nicht wahr Bonaventuri, du liebst mich noch?«
-              <hi>Indem sie seine Hand ergreift.</hi>
-          </p>
+          <stage>mit einem starren Blick in sein Auge, den er kaum aushält.</stage>
+          <p>»Und auch wohl nicht reuen darf! Nicht wahr Bonaventuri, du liebst mich noch?«
+              <stage>Indem sie seine Hand ergreift.</stage></p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <l> »Wie das Bianka fragen kann!«</l>
+          <p>»Wie das Bianka fragen kann!«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE</speaker>
-          <stage>
-            <hi>immer seine Hand haltend, mit noch ernsterm liebevollen Blick.</hi>
-          </stage>
-          <l> »Wenigstens kann sie fragen: ob noch so rein, so heiß wie damals?«</l>
+          <stage>immer seine Hand haltend, mit noch ernsterm liebevollen Blick.</stage>
+          <p>»Wenigstens kann sie fragen: ob noch so rein, so heiß wie damals?«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ</speaker>
-          <stage>
-            <hi>mit dem Tone des sich mühsam zwingenden Gewißens.</hi>
-          </stage>
-          <l> »So rein und heiß!«</l>
+          <stage>mit dem Tone des sich mühsam zwingenden Gewißens.</stage>
+          <p>»So rein und heiß!«</p>
         </sp>
         <sp
           who="#madame_krone_»und_so_einzig?_nein_bonaventuri_verbirg_deine_verlegenheit_nicht_länger!_ein_fehlender_ist_mehr_noch_als_ein_heuchler_werth">
           <speaker>MADAME KRONE »Und so einzig? Nein Bonaventuri, verbirg deine Verlegenheit nicht
             länger! Ein Fehlender ist mehr noch als ein <pb n="25"/> Heuchler werth.</speaker>
-          <l> – Einzig! Dies Wort also vermagst du nicht zu widerholen; jene vorigen erzwangst du
-            noch.«</l>
+          <p>– Einzig! Dies Wort also vermagst du nicht zu widerholen; jene vorigen erzwangst du
+            noch.«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ</speaker>
-          <stage>
-            <hi>der seine Betretung unter beleidigt seyn verbergen will.</hi>
-          </stage>
-          <l> »Erzwang? Fehler? Gewiß Bianka, ich weiß nicht, wie ich zu diesem Vorwurf komme.«</l>
+          <stage>der seine Betretung unter beleidigt seyn verbergen will.</stage>
+          <p>»Erzwang? Fehler? Gewiß Bianka, ich weiß nicht, wie ich zu diesem Vorwurf komme.«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <l> »Bonaventuri! unsere Liebe ist nicht mehr ganz wie sie ehemals war, nicht mehr so
-            wechselseitig.«</l>
+          <p>»Bonaventuri! unsere Liebe ist nicht mehr ganz wie sie ehemals war, nicht mehr so
+            wechselseitig.«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <l> »Wenigstens auf meiner Seite.«</l>
+          <p>»Wenigstens auf meiner Seite.«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> »Lieber, sprich diese Unwahrheit nicht aus! ich haße jeden Mund, welcher lügt, und den
+          <p>»Lieber, sprich diese Unwahrheit nicht aus! ich haße jeden Mund, welcher lügt, und den
             deinigen möcht ich gern ewig lieben und achten zugleich. Sieh, schon wirst du bald roth,
             bald bleich, schon stammelst du und stockst, und doch hab ich das Wort noch nicht einmal
             ausgesprochen, was weit mehr deine Farbe wechseln, und dich stammeln machen könnte.«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ</speaker>
-          <stage>
-            <hi>immer verlegner.</hi>
-          </stage>
-          <l> »Welches Wort?«</l>
+          <stage>immer verlegner.</stage>
+          <p>»Welches Wort?«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <l> »Kassandra Bongiani.«</l>
+          <p>»Kassandra Bongiani.«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <l> »Kassandra? Was soll das? was meinst du mit ihr?«</l>
+          <p>»Kassandra? Was soll das? was meinst du mit ihr?«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <l> »Du wolltest es, und meine Vorherverkündigung ist eingetroffen.«</l>
+          <p>»Du wolltest es, und meine Vorherverkündigung ist eingetroffen.«</p>
           <pb n="26"/>
         </sp>
         <sp who="#herz">
           <speaker>HERZ</speaker>
-          <stage>
-            <hi>sich fassend.</hi>
-          </stage>
-          <p> »Nein Bianka, die Röthe, die du mir vorwirfst, und die ich selbst gar wohl fühle, ist
+          <stage>sich fassend.</stage>
+          <p>»Nein Bianka, die Röthe, die du mir vorwirfst, und die ich selbst gar wohl fühle, ist
             nicht von Scham, sondern von dem Erstaunen erzeugt, daß meine sonst so billig denkende
             Gattinn endlich auch ein Mährchen glauben kann, das blos müßige Pagen und Jagdjunker
             sich an irgend einem Regentage ausgedacht haben; Leute welche glauben, man sey verliebt
@@ -1189,36 +1106,29 @@
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> »Und du beharrst auf deinem Läugnen? Warnung auf Warnung erschüttert dich nicht? Damit
+          <p>»Und du beharrst auf deinem Läugnen? Warnung auf Warnung erschüttert dich nicht? Damit
             bey längern Umschweifen nicht stärkere Schuld des Trugs über dein Haupt komme, so schau
-            her! Wessen ist dies Siegel?« <hi>Zeigt ihm einen Brief.</hi>
-          </p>
+            her! Wessen ist dies Siegel?« <stage>Zeigt ihm einen Brief.</stage></p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ</speaker>
-          <stage>
-            <hi>erschrocken.</hi>
-          </stage>
-          <l> »Das meinige.«</l>
+          <stage>erschrocken.</stage>
+          <p>»Das meinige.«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE</speaker>
-          <stage>
-            <hi>ihn unwendend.</hi>
-          </stage>
-          <l> »Und die Hand dieser Aufschrift?«</l>
+          <stage>ihn unwendend.</stage>
+          <p>»Und die Hand dieser Aufschrift?«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
-          <p> »Gott! wenn es der verloren gegangene Brief, die Ursache von schon mancher meiner
-            Sorgen wäre?« <hi>Laut und zitternd.</hi> »Es scheint meine Hand zu seyn.«</p>
+          <stage>für sich.</stage>
+          <p>»Gott! wenn es der verloren gegangene Brief, die Ursache von schon mancher meiner
+            Sorgen wäre?« <stage>Laut und zitternd.</stage> »Es scheint meine Hand zu seyn.«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> »Und ist es. Ist dein Brief an ein Weib mit dem nur müssige Pagen und <pb n="27"/>
+          <p>»Und ist es. Ist dein Brief an ein Weib mit dem nur müssige Pagen und <pb n="27"/>
             Jagdjunker dich ins Gerede bringen. Bonaventuri! bey dem Allwissenden! nicht meine Mühe,
             nicht List der Eifersucht verschaffte mir diesen Brief! Bloß der Haß deiner Feinde
             bracht' ihn in meine Hände, und ich geb ihn dir wieder, wie ich ihn empfieng. Ich dürfte
@@ -1227,121 +1137,109 @@
         </sp>
         <sp who="#herz">
           <speaker>HERZ</speaker>
-          <stage>
-            <hi>der gleichsam wie aus einem Traum auffährt und aufmerksam den Brief betrachtet.</hi>
-          </stage>
-          <l> »Wie! – Götter! – Bianka! – ists möglich! – dies Siegel?«</l>
+          <stage>der gleichsam wie aus einem Traum auffährt und aufmerksam den Brief
+            betrachtet.</stage>
+          <p>»Wie! – Götter! – Bianka! – ists möglich! – dies Siegel?«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE</speaker>
-          <stage>
-            <hi>mit schmerzhaftem Lächeln.</hi>
-          </stage>
-          <l> »Nun ja, ist ganz.«</l>
+          <stage>mit schmerzhaftem Lächeln.</stage>
+          <p>»Nun ja, ist ganz.«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ</speaker>
-          <stage>
-            <hi>mit Feuer ihre Hand ergreifend und küßend.</hi>
-          </stage>
-          <p> »Bianka, Weib ohne Gleichen! Engel der durch Scham mich niederwirft! O wüßtest du was
-            dieser Brief enthält!« <hi>Mit dem Ton der Reue.</hi> »Welche Vorschläge? welche
+          <stage>mit Feuer ihre Hand ergreifend und küßend.</stage>
+          <p>»Bianka, Weib ohne Gleichen! Engel der durch Scham mich niederwirft! O wüßtest du was
+            dieser Brief enthält!« <stage>Mit dem Ton der Reue.</stage> »Welche Vorschläge? welche
             Hirngespinnste?«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> »Mag ich sie doch nicht wissen! Besser freylich, dies Schreiben wäre nie geschrieben,
-            aber da es dies einmal ist, so vergeh' es so«<hi> Zerreißt den Brief.</hi>
-          </p>
+          <p>»Mag ich sie doch nicht wissen! Besser freylich, dies Schreiben wäre nie geschrieben,
+            aber da es dies einmal ist, so vergeh' es so« <stage>Zerreißt den Brief.</stage></p>
           <pb n="28"/>
         </sp>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <p> »Edelstes Weib auf Gottes weiter Erde?«<hi> Indem er Sie umarmen will, bebt er
-              zurück.</hi> »Nein ich bin es nicht werth dich zu berühren!« <hi>Er fällt aufs
-              Knie.</hi> »nicht werth, ach nicht werth einmal den tiefsten Saum dieser Gewänder –
+          <p>»Edelstes Weib auf Gottes weiter Erde?« <stage>Indem er Sie umarmen will, bebt er
+              zurück.</stage> »Nein ich bin es nicht werth dich zu berühren!« <stage>Er fällt aufs
+              Knie.</stage> »nicht werth, ach nicht werth einmal den tiefsten Saum dieser Gewänder –
             –«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> »Bonaventuri! Mann! steh auf!« <hi>Sie hebt ihn auf.</hi> »Fliegst du nur anders mit
-            inniger Reue, mit verjüngter Zartlichkeit in meine Arme; O so haben diese Arme nie dich
-            zärtlicher umschlungen.« <hi>Sieht ihn mit liebvollem Drohen an.</hi> »Böser, lieber
-            böser Mann! wie viel opfert' ich dir nicht auf?«</p>
+          <p>»Bonaventuri! Mann! steh auf!« <stage>Sie hebt ihn auf.</stage> »Fliegst du nur anders
+            mit inniger Reue, mit verjüngter Zartlichkeit in meine Arme; O so haben diese Arme nie
+            dich zärtlicher umschlungen.« <stage>Sieht ihn mit liebvollem Drohen an.</stage> »Böser,
+            lieber böser Mann! wie viel opfert' ich dir nicht auf?«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <p> »Ja wohl viel! Vaterland, Eltern, Wohlstand, Rang und Sicherheit gabst du hin, um
+          <p>»Ja wohl viel! Vaterland, Eltern, Wohlstand, Rang und Sicherheit gabst du hin, um
             Verbannung, Elend und Niedrigkeit mit mir zu theilen. Und ich – ich –«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> »Guter Bonaventuri! alles was du so eben nanntest, klingt freylich rauh; ertrug sich
+          <p>»Guter Bonaventuri! alles was du so eben nanntest, klingt freylich rauh; ertrug sich
             freylich ehemals hart, aber doch war es mir nicht so schwer, als mein jetziges
             Loos.«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ</speaker>
-          <stage>
-            <hi>der sie falsch versteht.</hi>
-          </stage>
-          <l> »Was von nun an dir keinen weitern Stof zu Klag' und Kummer geben soll.«</l>
+          <stage>der sie falsch versteht.</stage>
+          <p>»Was von nun an dir keinen weitern Stof zu Klag' und Kummer geben soll.«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <l> »Nicht? weißt du das so gewiß? kennst du meine ganze Lage?«</l>
+          <p>»Nicht? weißt du das so gewiß? kennst du meine ganze Lage?«</p>
           <pb n="29"/>
         </sp>
         <sp who="#herz">
           <speaker>HERZ</speaker>
-          <stage>
-            <hi>dem dieß etwas auffällt.</hi>
-          </stage>
-          <l> »Wie? sollt ich sie nicht kennen? Welch ein Geheimniß verschlüßt Bianka noch vor
-            mir?«</l>
+          <stage>dem dieß etwas auffällt.</stage>
+          <p>»Wie? sollt ich sie nicht kennen? Welch ein Geheimniß verschlüßt Bianka noch vor
+            mir?«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> »Das peinlichste, was sie jemals hatte. Ja, Bonaventuri! es ist unumgänglich nöthig,
+          <p>»Das peinlichste, was sie jemals hatte. Ja, Bonaventuri! es ist unumgänglich nöthig,
             daß ich endlich einen Schleyer dir vom Auge reiße; bey dem ichs kaum begreiffe, wie er
-            nicht schon längst dir von selbst entsank.« <hi>Mit schnell starrwerdendem Blick.</hi>
-            »Oder wär es vielleicht schon geschehen? und du hättest nur aus Kaltsinn oder
-            Staatsklugheit geschwiegen? Schande! unauslöschliche Schande über dir, wenn dem so
-            wäre!«</p>
+            nicht schon längst dir von selbst entsank.« <stage>Mit schnell starrwerdendem
+              Blick.</stage> »Oder wär es vielleicht schon geschehen? und du hättest nur aus
+            Kaltsinn oder Staatsklugheit geschwiegen? Schande! unauslöschliche Schande über dir,
+            wenn dem so wäre!«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <l> »Bey Gott ich verstehe dich nicht!«</l>
+          <p>»Bey Gott ich verstehe dich nicht!«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> »Das erste, das einzigemal daß eine Blindheit von dir mir lieb ist, wenigstens lieber
+          <p>»Das erste, das einzigemal daß eine Blindheit von dir mir lieb ist, wenigstens lieber
             als ein vorsetzliches Uebersehen. – So wiße dann: eben die geringfügigen Reize, die
             einst das Glück dich zu besiegen hatten, haben auch schon seit geraumer Zeit das Unglück
             gehabt, die Begierden unsers Herzogs zu reizen.«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ</speaker>
-          <stage>
-            <hi>erstaunt.</hi>
-          </stage>
-          <l> »Wie? der Herzog liebt dich?«</l>
+          <stage>erstaunt.</stage>
+          <p>»Wie? der Herzog liebt dich?«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <l> »Wenigstens spricht er so.«</l>
+          <p>»Wenigstens spricht er so.«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <p> »Zwar wer müßte dich nicht lieben, Engel in Weibsgestalt.« <hi>Sein Haupt auf seine
-              Hand stützend.</hi> »Er dich lieben! dich? Wie so natürlich, und doch wie so
-            schrecklich für mich!« <hi><pb n="30"/> Sich vor die Stirne schlagend.</hi> »Ha! nun
-            bebegrief ich alles! nur das nicht, daß ichs nicht eher greif! Aber woher weißt du es?
-            vonhim selbst?«</p>
+          <p>»Zwar wer müßte dich nicht lieben, Engel in Weibsgestalt.« <stage>Sein Haupt auf seine
+              Hand stützend.</stage> »Er dich lieben! dich? Wie so natürlich, und doch wie so
+            schrecklich für mich!« <stage><pb n="30"/> Sich vor die Stirne schlagend.</stage> »Ha!
+            nun bebegrief ich alles! nur das nicht, daß ichs nicht eher greif! Aber woher weißt du
+            es? vonhim selbst?«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> »Von ihm selbst! Ließ diesen Brief. In ihm, wie du siehst, beut er alles auf, was er
+          <p>»Von ihm selbst! Ließ diesen Brief. In ihm, wie du siehst, beut er alles auf, was er
             für fähig hält, meine Tugend zu erschüttern; läßt mir von allem die Wahl sobald ich ihn
             zu wählen mich entschlüße; Wahl, ob ich verstohlener Liebe fröhnen, oder als erklärte
             Günstlinginn mit meiner Schande prahlen wolle. Der Arme, er ahndet nicht das Blut einer
@@ -1355,14 +1253,14 @@
         </sp>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <p> »Ach ich begreife nur allzuviel, gleiche ganz dem Unglücklichen, den unbekannte Räuber
+          <p>»Ach ich begreife nur allzuviel, gleiche ganz dem Unglücklichen, den unbekannte Räuber
             mit verbundenen Augen in ihre Mörderhöhle geschleppt haben; und dem itzt eine mitleidige
               <pb n="31"/> Hand den Verband wegnimmt. Er steht zwar nun wieder, aber was er sieht,
             sind Bilder des Schreckens.«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> »So will ich dir von einer andern Seite her die reizenden Aussichten einer sichern,
+          <p>»So will ich dir von einer andern Seite her die reizenden Aussichten einer sichern,
             sich gnügsamen Liebe zeigen. Bonaventuri! Mann meines Herzens, gedenk an jene Zeiten
             unsrer Armuth. Waren sie, trotz unsrer Armuth, nicht die Zeiten unsers Glücks? Spendete
             nicht eben damals das Schicksal gegen uns seine größten Schätze, da es mit uns zu kargen
@@ -1372,231 +1270,215 @@
         </sp>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <l> »Und wie dieß anfangen?«</l>
+          <p>»Und wie dieß anfangen?«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> »Kurzsichtiger! fragst du noch? Wir flohen aus Venedig über hohe Gebürge, ohne Geld
-            und Schutz, als wir Verfolgung besorgten, müßen wir denn Nun hier bleiben, wo sie
-            wirklich schon da ist?«</p>
+          <p>»Kurzsichtiger! fragst du noch? Wir flohen aus Venedig über hohe Gebürge, ohne Geld und
+            Schutz, als wir Verfolgung besorgten, müßen wir denn Nun hier bleiben, wo sie wirklich
+            schon da ist?«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ</speaker>
-          <stage>
-            <hi>nach einer Pause.</hi>
-          </stage>
-          <p> »Meine Theure! weder die Furcht der Armuth noch selbst des Todes soll mich von einer
+          <stage>nach einer Pause.</stage>
+          <p>»Meine Theure! weder die Furcht der Armuth noch selbst des Todes soll mich von einer
             Flucht an deiner Seite abhalten. Aber nur eine Furcht, die Furcht der Schande wünscht'
             ich nicht mitzunehmen, <pb n="32"/> und eben ihrentwegen glaub' ich, daß wir nicht ganz
             so eilen können, wie wir wünschen.«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <l> »Welcher Schande?«</l>
+          <p>»Welcher Schande?«</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <p> »Du weißt, daß des Herzogs anscheinende Großmuth mir eine Menge Geschäfte von größter
+          <p>»Du weißt, daß des Herzogs anscheinende Großmuth mir eine Menge Geschäfte von größter
             Wichtigkeit anvertrauet hat; itzt fliehn, eh sie vollendet worden, schiene treulos
             gehandelt; gäbe unsern Feinden ein zweyschneidiges Schwert in die Hand.«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE</speaker>
-          <stage>
-            <hi>den Kopf schüttelnd.</hi>
-          </stage>
-          <p> »Schiene treulos gehandelt! und warten bis sie geendet, scheint sehr unklug oder
+          <stage>den Kopf schüttelnd.</stage>
+          <p>»Schiene treulos gehandelt! und warten bis sie geendet, scheint sehr unklug oder
             vielleicht sehr unmöglich. Ich bürge für meine Standhaftigkeit. Aber Mann mit der
-            wachsweichen Seele, wer bürgt dir für dich selbst?« <hi>Will fort.</hi>
-          </p>
+            wachsweichen Seele, wer bürgt dir für dich selbst?« <stage>Will fort.</stage></p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ</speaker>
-          <stage>
-            <hi>sie haltend.</hi>
-          </stage>
-          <l> »Liebstes, theurestes Weibchen, wohin?«</l>
+          <stage>sie haltend.</stage>
+          <p>»Liebstes, theurestes Weibchen, wohin?«</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <p> »Laß mich auf einige Minuten allein; du kennst die Art meines Grams. Auch habe ich dir
-            ja wohl Stof genug zur Unterhaltung mit dir selbst gegeben.« <hi>Zeigt das die Scene
-              vorbey sey.</hi>
-          </p>
+          <p>»Laß mich auf einige Minuten allein; du kennst die Art meines Grams. Auch habe ich dir
+            ja wohl Stof genug zur Unterhaltung mit dir selbst gegeben.« <stage>Zeigt das die Scene
+              vorbey sey.</stage></p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <p> Vortreflich! Ja wohl Madame sind solche Schauspieler fähig die reine Empfindung auf
-            dem Theater wieder geltend zu machen. Wollen Sie bey mir bleiben? <hi>Zu Herz.</hi> Auch
-            Sie? so schätz ich mich glücklich. Aber mehr <pb n="33"/> als vierzehn Thaler die Woche
-            kann ich jedem von nen nicht geben.</p>
+          <p>Vortreflich! Ja wohl Madame sind solche Schauspieler fähig die reine Empfindung auf dem
+            Theater wieder geltend zu machen. Wollen Sie bey mir bleiben? <stage>Zu Herz.</stage>
+            Auch Sie? so schätz ich mich glücklich. Aber mehr <pb n="33"/> als vierzehn Thaler die
+            Woche kann ich jedem von nen nicht geben.</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <l> Vollkommen zufrieden. Die Art, mit der Sie solche anbiechen, ist hinlänglicher
-            Ersatz.</l>
+          <p>Vollkommen zufrieden. Die Art, mit der Sie solche anbiechen, ist hinlänglicher
+            Ersatz.</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF</speaker>
-          <stage>
-            <hi>heimlich.</hi>
-          </stage>
-          <l> Herr Frank, da haben Sie einen dummen Streich gemacht, die Leute wollen lachen nicht
-            ächtzen.</l>
+          <stage>heimlich.</stage>
+          <p>Herr Frank, da haben Sie einen dummen Streich gemacht, die Leute wollen lachen nicht
+            ächtzen.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> Es gibt auch welche, die noch Herzen haben.</l>
+          <p>Es gibt auch welche, die noch Herzen haben.</p>
         </sp>
       </div>
       <div type="scene">
         <head>Sechster Auftritt.</head>
-        <p>Die Vorigen, Madame Vogelsang.</p>
+        <stage>Die Vorigen, Madame Vogelsang.</stage>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> Ah! Madame Vogelsang! Willkommen, willkommen. Eben recht! wollen Sie Engagement
-            haben?</l>
+          <p>Ah! Madame Vogelsang! Willkommen, willkommen. Eben recht! wollen Sie Engagement
+            haben?</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <l> Deswegen komm ich her. Ich höre – –</l>
+          <p>Deswegen komm ich her. Ich höre – –</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> Herr Frank, da machen Sie eine <hi>acquisition</hi>.<hi> Etwas heimlich auf Madame
-              Krone deudent.</hi> Wenn Madame das Publikum mit lauter Empfindung eingewiegt hat,
-            wekt die es wieder auf. Ich will Ihnen gleich eine Probe machen. <hi>Zu Madame
-              Vogelsang.</hi> Madame! wißen Sie <pb n="34"/> noch die Scene aus der galanten
-            Bäurinn, die wir so oft zusammen gespielt haben?</p>
+          <p>Herr Frank, da machen Sie eine <emph>acquisition</emph>. <stage>Etwas heimlich auf
+              Madame Krone deudent.</stage> Wenn Madame das Publikum mit lauter Empfindung
+            eingewiegt hat, wekt die es wieder auf. Ich will Ihnen gleich eine Probe machen.
+              <stage>Zu Madame Vogelsang.</stage> Madame! wißen Sie <pb n="34"/> noch die Scene aus
+            der galanten Bäurinn, die wir so oft zusammen gespielt haben?</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> Was sollt' ich nicht! Es ist ja eine meiner Lieblingsscenen, meine Hauptscene; ist ja
+          <p>Was sollt' ich nicht! Es ist ja eine meiner Lieblingsscenen, meine Hauptscene; ist ja
             auf mich geschrieben worden.</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> Nun so bitten wir um Platz. <hi>Madame Krone, Frank und Herz treten zurück.</hi>
+          <p>Nun so bitten wir um Platz. <stage>Madame Krone, Frank und Herz treten zurück.</stage>
             »Guten Morgen Röschen! Wohin so früh?«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <l> »In die Stadt.«</l>
+          <p>»In die Stadt.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Und so geputzt?«</l>
+          <p>»Und so geputzt?«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <l> »Es hat seine Ursachen.«</l>
+          <p>»Es hat seine Ursachen.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Ey! was denn für welche?«</l>
+          <p>»Ey! was denn für welche?«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <l> »Must du's denn wißen?«</l>
+          <p>»Must du's denn wißen?«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Das versteht sich, als dein zukünftiger Mann.«</l>
+          <p>»Das versteht sich, als dein zukünftiger Mann.«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG</speaker>
-          <stage>
-            <hi>seufzend.</hi>
-          </stage>
-          <l> »Ja, da ist noch eine gute Weile hin.«</l>
+          <stage>seufzend.</stage>
+          <p>»Ja, da ist noch eine gute Weile hin.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Hm! So gar lange ist's doch eben nicht bis auf den Herbst.«</l>
+          <p>»Hm! So gar lange ist's doch eben nicht bis auf den Herbst.«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <l> »Mein guter Michel deine heurige Fechsung wirst du wohl noch ohne mich verzehren.«</l>
+          <p>»Mein guter Michel deine heurige Fechsung wirst du wohl noch ohne mich verzehren.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF</speaker>
-          <stage>
-            <hi>seufzend.</hi>
-          </stage>
-          <l> »So? Ey! wie käm' denn das?«</l>
+          <stage>seufzend.</stage>
+          <p>»So? Ey! wie käm' denn das?«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> »Ja schau mein lieber Michel, man muß weiter hinaus denken, als auf heute und morgen.
+          <p>»Ja schau mein lieber Michel, man muß weiter hinaus denken, als auf heute und morgen.
             Ich habe nichts und <pb n="35"/> du hast nicht viel, was kommt da heraus? Siebzehn Jahr
             bin ich auch erst alt, und wenn man gar so jung heurathet, wird man gar geschwind alt,
             hab ich gehört.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »So! so!«</l>
+          <p>»So! so!«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <l> »Es ist also besser, wir lassens noch stehn.«</l>
+          <p>»Es ist also besser, wir lassens noch stehn.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Kurios! Wie kommt dir denn das auf einmal in Kopf?«</l>
+          <p>»Kurios! Wie kommt dir denn das auf einmal in Kopf?«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> »Ganz natürlich! Wenn man ein wenig weiter gegukt hat als in seine Schüßel, so sieht
+          <p>»Ganz natürlich! Wenn man ein wenig weiter gegukt hat als in seine Schüßel, so sieht
             man ja, daß das Geld heut zu Tage das nothwendigste Hausgeräthe ist, und wenn man das
             nun nicht hat, so muß man sich doch erst darum umsehn.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Meinst du? Gehst etwan deswegen in die Stadt?«</l>
+          <p>»Meinst du? Gehst etwan deswegen in die Stadt?«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <l> »Grade deswegen. Ich will mein Glück probiren.«</l>
+          <p>»Grade deswegen. Ich will mein Glück probiren.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> »Nun, und wie willst du denn das anstellen? Sag einem doch auch ein bischen was,
+          <p>»Nun, und wie willst du denn das anstellen? Sag einem doch auch ein bischen was,
             vielleicht lernt man noch ein und anders.«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> »Du darfst weiter nicht spitzig thun, es hat alles seine gute Richtigkeit. Schau, da
+          <p>»Du darfst weiter nicht spitzig thun, es hat alles seine gute Richtigkeit. Schau, da
             hab ich einen Korb Aepfel?«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Das seh ich. Nun?«</l>
+          <p>»Das seh ich. Nun?«</p>
           <pb n="36"/>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <l> »Der muß machen, daß ich noch einmal mit Kutsch und Pferden fahre.«</l>
+          <p>»Der muß machen, daß ich noch einmal mit Kutsch und Pferden fahre.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF</speaker>
-          <stage>
-            <hi>greift ihr an die Stirne.</hi>
-          </stage>
-          <l> Bist gestern gewiß zu viel in der Sonne gestanden?«</l>
+          <stage>greift ihr an die Stirne.</stage>
+          <p>Bist gestern gewiß zu viel in der Sonne gestanden?«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> »Gar nicht Herr Michel. Nu – die Aepfel trag ich zu der alten Anne Bruder, der ist
+          <p>»Gar nicht Herr Michel. Nu – die Aepfel trag ich zu der alten Anne Bruder, der ist
             fürstlicher Gärtner – –«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Und der wird dir so viel dafür geben, daß du – –?«</l>
+          <p>»Und der wird dir so viel dafür geben, daß du – –?«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> »Plump mir nur nicht drein. Da hab ich auch ein Briefchen an ihn, wo sie mich ihm
-              <hi>recommandirt</hi>, damit er mich bey sich behält. Der hat nun das ganze Jahr
+          <p>»Plump mir nur nicht drein. Da hab ich auch ein Briefchen an ihn, wo sie mich ihm
+              <emph>recommandirt</emph>, damit er mich bey sich behält. Der hat nun das ganze Jahr
             hindurch eine Menge Pomeranzen und Pfirschen. Er giebt mir also alle Tage ein Körbel
             voll zu verkaufen. Die trag ich in der Früh aus, in die Kanzeleyen, auf die Reitschule,
             und was mir noch übrig bleibt, gegen Mittag zu den vornehmen Herren, wenn sie Ballen
@@ -1606,173 +1488,164 @@
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Manchmal auch mehr, nachdem du eine Kundschaft trifst. hm! hm!«</l>
+          <p>»Manchmal auch mehr, nachdem du eine Kundschaft trifst. hm! hm!«</p>
           <pb n="37"/>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> »Rümpf du nur die Nase, ich weiß schon, was ich zu thun habe. Wenn mir einer sagt, ich
+          <p>»Rümpf du nur die Nase, ich weiß schon, was ich zu thun habe. Wenn mir einer sagt, ich
             soll ihm Pomeranzen ins Haus bringen, so versprech ich ihms wohl, weil er mir desto mehr
             zahlt, aber ich finds Haus nicht, und so behalt' ich lange eine gute Kundschafft an
             ihm.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Schau, schau! Freylich, bey Handel und Wandel kommt viel auf die Kundschaften an. Nu,
-            weiter?«</l>
+          <p>»Schau, schau! Freylich, bey Handel und Wandel kommt viel auf die Kundschaften an. Nu,
+            weiter?«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> »Das geschieht nun alles Vormittag. Nachmittag lern ich Näh'n, Putzmachen und
+          <p>»Das geschieht nun alles Vormittag. Nachmittag lern ich Näh'n, Putzmachen und
             Friesieren. In einem Jahr bin ich fertig, da leg ich denn mein Bauerngewandel ab, kleid
             mich nach der Mode, und komm zu einer Gräfinn als Kammerjungfer.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Potztausend, wie geschwind!«</l>
+          <p>»Potztausend, wie geschwind!«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <l> »Du darfst gar nicht zweifeln, ein hübsch Gesicht wird überall
-            <hi>recommandirt</hi>.«</l>
+          <p>»Du darfst gar nicht zweifeln, ein hübsch Gesicht wird überall
+              <emph>recommandirt</emph>.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> »Und da fährst du also mit Kutsch und Pferden? Richtig, mit der Bagage, wenn die
+          <p>»Und da fährst du also mit Kutsch und Pferden? Richtig, mit der Bagage, wenn die
             Herrschaft auf die Güter fährt.«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> »Nein Herr Michel, ich sitz bey der Gräfinn in der Kutsche. Das ist aber alles noch
+          <p>»Nein Herr Michel, ich sitz bey der Gräfinn in der Kutsche. Das ist aber alles noch
             nicht, was ich meyne.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Nicht? Hören wir also weiter!«</l>
+          <p>»Nicht? Hören wir also weiter!«</p>
           <pb n="38"/>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> »Nun hat mich gleich alles im Hauß zum freßen lieb. Der junge Graf streicht mir
+          <p>»Nun hat mich gleich alles im Hauß zum freßen lieb. Der junge Graf streicht mir
             erschrecklich nach; aber den laß ich ablaufen, damit ichs mit der alten Gräfinn nicht
             verderbe.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Eine gute Ursache.«</l>
+          <p>»Eine gute Ursache.«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> »Aber mit dem Hofmeister von der jungen Herrschaft geb ichs ein bischen gelinder. Der
+          <p>»Aber mit dem Hofmeister von der jungen Herrschaft geb ichs ein bischen gelinder. Der
             kann Musik und lernt mich singen, damit ich also seine Kundschaft nicht verliere, laß
             ich ihn hoffen, daß ich ihn heurathen werde.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Wieder nur wegen der Kundschaft.«</l>
+          <p>»Wieder nur wegen der Kundschaft.«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> »In zwey Jahren kann ich singen wie eine Nachtigall, da komm ich auf die Komödie als
+          <p>»In zwey Jahren kann ich singen wie eine Nachtigall, da komm ich auf die Komödie als
             Sängerinn, und krieg's Jahr tausend Dukaten.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> »Auf die Komödie! O liebes Röschen, was fängst du an? Weist du nicht, daß die Leute
+          <p>»Auf die Komödie! O liebes Röschen, was fängst du an? Weist du nicht, daß die Leute
             nicht seelig werden?«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <l> »Vor Alters wohl; aber nach der neuen Einrichtung kommen sie so gut in Himmel als der
-            Schulmeister.«</l>
+          <p>»Vor Alters wohl; aber nach der neuen Einrichtung kommen sie so gut in Himmel als der
+            Schulmeister.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Ich hab noch keinen dort gesehen.«</l>
+          <p>»Ich hab noch keinen dort gesehen.«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> »Das glaub ich, du bist auch noch nicht dort gewesen. Nun ists gar aus; itzt verliebt
+          <p>»Das glaub ich, du bist auch noch nicht dort gewesen. Nun ists gar aus; itzt verliebt
             sich die ganze Welt in mich; <pb n="39"/> ich schick' aber alle spatzieren, ich weiß
             schon auf wen ich warte.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Auf wen denn?«</l>
+          <p>»Auf wen denn?«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> »Auf einen alten Kavalier. Den laß ich mir an die linke Hand antrauen; in einem Monath
+          <p>»Auf einen alten Kavalier. Den laß ich mir an die linke Hand antrauen; in einem Monath
             stirbt er, und vermacht mir eine Herrschaft, die mir des Jahrs hundert tausend Gulden
             einträgt.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Ach Röschen! Herzens-Röschen! mach mich doch hernach zum Verwalter!«</l>
+          <p>»Ach Röschen! Herzens-Röschen! mach mich doch hernach zum Verwalter!«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG</speaker>
-          <stage>
-            <hi>eine hohe Miene annehmend.</hi>
-          </stage>
-          <l> »Ihr könnt ja nicht schreiben guter Freund.«</l>
+          <stage>eine hohe Miene annehmend.</stage>
+          <p>»Ihr könnt ja nicht schreiben guter Freund.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> »Ach liebe gnädige Frau, ich werds schon lernen, wenn ich nur einmal Verwalter bin.
-            Und mit ihrem Mann werden Sie's ja auch nicht so genau nehmen.« <hi>Will sie
-              umarmen.</hi>
-          </p>
+          <p>»Ach liebe gnädige Frau, ich werds schon lernen, wenn ich nur einmal Verwalter bin. Und
+            mit ihrem Mann werden Sie's ja auch nicht so genau nehmen.« <stage>Will sie
+              umarmen.</stage></p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG</speaker>
-          <stage>
-            <hi>stößt ihn von sich.</hi>
-          </stage>
-          <l> »Grober Knopf! Wißt ihr wen ihr vor euch habt?«</l>
+          <stage>stößt ihn von sich.</stage>
+          <p>»Grober Knopf! Wißt ihr wen ihr vor euch habt?«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF</speaker>
-          <stage>
-            <hi>zu sich kommend.</hi>
-          </stage>
-          <l> »Potz tausend Sapperment! thust du doch als ob du schon eine Dame wärst.«</l>
+          <stage>zu sich kommend.</stage>
+          <p>»Potz tausend Sapperment! thust du doch als ob du schon eine Dame wärst.«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG</speaker>
-          <stage>
-            <hi>sich ebenfalls erholend.</hi>
-          </stage>
-          <l> »Ha, ha, ha! Gelt ich weiß mich drein zu schicken?«</l>
+          <stage>sich ebenfalls erholend.</stage>
+          <p>»Ha, ha, ha! Gelt ich weiß mich drein zu schicken?«</p>
           <pb n="40"/>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Ja, ja. Wenn nur der Kavalier schon gestorben wäre!«</l>
+          <p>»Ja, ja. Wenn nur der Kavalier schon gestorben wäre!«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <l> »Das geht alles wie ich gesagt habe. Nun was sagst du? Ist das nicht klug
-            ausgedacht?«</l>
+          <p>»Das geht alles wie ich gesagt habe. Nun was sagst du? Ist das nicht klug
+            ausgedacht?«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> »Ja ja, wenns nur alles so gienge! Aber sag mir nur Röschen (denn jetzt bist doch noch
+          <p>»Ja ja, wenns nur alles so gienge! Aber sag mir nur Röschen (denn jetzt bist doch noch
             keine Dame) woher hast du denn das Zeug alles?«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> »Von der alten Anne. Du weist, die hat viel gesehn, da hat sie mir denn immer so
+          <p>»Von der alten Anne. Du weist, die hat viel gesehn, da hat sie mir denn immer so
             erzählt; und ich hab mir das so zusammen buchstabirt.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> »Schau Röse, ich hätte nichts dagegen. Aber, wenn nun alles so gienge, wie du sagst,
+          <p>»Schau Röse, ich hätte nichts dagegen. Aber, wenn nun alles so gienge, wie du sagst,
             wie käm' denn ich hernach an dich?«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> »Das will ich dir gleich sagen: du gehst itzt mit mir in die Stadt. Annens Bruder muß
+          <p>»Das will ich dir gleich sagen: du gehst itzt mit mir in die Stadt. Annens Bruder muß
             dich in ein groß Haus als Kucheltrager bringen; tragen kannst du, das weiß ich; nun da
             lernst du daneben schreiben und lesen. In ein paar Jahren wirst du Kuchelinspektor. Nun
             legst du dir was auf die Seite; hernach wirsst du irgend einem Hofrath was ins Maul, der
@@ -1787,125 +1660,117 @@
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> »Ah! Rubenfikerment! Ich ein Herr Von! Nun Röse, du sollst sehn, wie ich mich patzen
+          <p>»Ah! Rubenfikerment! Ich ein Herr Von! Nun Röse, du sollst sehn, wie ich mich patzen
             will. Ich will dir gewiß meinen Herrn Von vorstellen trotz einem. Da hast meine Hand
             drauf, ich geh mit dir, verkauf meine Wirthschaft, und werd ein Kucheltrager.«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> »Aber Michel, daß du nur gescheit bist. Das erste Jahr können wir noch zusammen
-            kommen, aber hernach müssen wir thun als ob wir uns nicht kennten.«</p>
+          <p>»Aber Michel, daß du nur gescheit bist. Das erste Jahr können wir noch zusammen kommen,
+            aber hernach müssen wir thun als ob wir uns nicht kennten.«</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> »Was? ich sollt' dich nicht sehen?«</l>
+          <p>»Was? ich sollt' dich nicht sehen?«</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <p> »Nur heimlich; das werden wir schon ausmachen, bis du Herr Von bist und ich Wittwe;
+          <p>»Nur heimlich; das werden wir schon ausmachen, bis du Herr Von bist und ich Wittwe;
             hernach gehts schon.«</p>
           <pb n="42"/>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> »Und was unterdessen vorfällt? – – Nun, geht eins mit dem andern auf.« <hi>Er nimmt
-              sie in Arm und kehrt sich gegen die Anwesenden.</hi> Nun Herr Frank?</p>
+          <p>»Und was unterdessen vorfällt? – – Nun, geht eins mit dem andern auf.« <stage>Er nimmt
+              sie in Arm und kehrt sich gegen die Anwesenden.</stage> Nun Herr Frank?</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> Mit auserordentlich viel Natur.</l>
+          <p>Mit auserordentlich viel Natur.</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <l> Also werden Sie mir doch Engagement geben?</l>
+          <p>Also werden Sie mir doch Engagement geben?</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> Können Sie noch fragen?</l>
+          <p>Können Sie noch fragen?</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <l> Nun, ich will billig seyn, achzehn Thaler die Woche.</l>
+          <p>Nun, ich will billig seyn, achzehn Thaler die Woche.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK</speaker>
-          <stage>
-            <hi>verlegen.</hi>
-          </stage>
-          <lg>
-            <l> Madame – rechtgern –</l>
-            <l>MADAME KRONE Was! und ich soll mit Vierzehn Thalern zufrieden seyn?</l>
-          </lg>
+          <stage>verlegen.</stage>
+          <p>Madame – rechtgern –</p>
+        </sp>
+        <sp who="#madame_krone">
+          <speaker>MADAME KRONE.</speaker>
+          <p>Was! und ich soll mit Vierzehn Thalern zufrieden seyn?</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF</speaker>
-          <stage>
-            <hi>zu Madame Krone.</hi>
-          </stage>
-          <p> Madame, Sie werden erlauben – es ist immer schwerer das Publikum mit Anstand lachen zu
+          <stage>zu Madame Krone.</stage>
+          <p>Madame, Sie werden erlauben – es ist immer schwerer das Publikum mit Anstand lachen zu
             machen als Thränen zu erregen. Ueber das ist auch eine komische Aktrice immer
             brauchbarer als eine bloß tragische.</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <l> Ich habe noch einen Vorzug. Ich habe einen Mann der singen kann.</l>
+          <p>Ich habe noch einen Vorzug. Ich habe einen Mann der singen kann.</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <l> Und ich eine Frau die singt.</l>
+          <p>Und ich eine Frau die singt.</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <l> Ich will meinen Mann gleich holen. <hi>Ab.</hi>
-          </l>
+          <p>Ich will meinen Mann gleich holen. <stage>Ab.</stage></p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <l> Und ich meine Frau. <hi>Ab.</hi>
-          </l>
+          <p>Und ich meine Frau. <stage>Ab.</stage></p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <l> Nein, das heißt die Kunst zu weit herabsetzen. <hi>Ab.</hi>
-          </l>
+          <p>Nein, das heißt die Kunst zu weit herabsetzen. <stage>Ab.</stage></p>
           <pb n="43"/>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> Warten Sie doch Madame!</l>
+          <p>Warten Sie doch Madame!</p>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <l> Nicht einen Augenblick.</l>
+          <p>Nicht einen Augenblick.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <p> Da haben wirs, die Gesellschaft ist noch nicht beysammen, und die Uneinigkeit herrscht
+          <p>Da haben wirs, die Gesellschaft ist noch nicht beysammen, und die Uneinigkeit herrscht
             schon in vollem Maaß.</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> Warum sind Sie mit der Gage gestiegen. Sie treiben Sie noch auf zwanzig Thaler hinauf,
+          <p>Warum sind Sie mit der Gage gestiegen. Sie treiben Sie noch auf zwanzig Thaler hinauf,
             wenn Sie nicht fest halten.</p>
         </sp>
       </div>
       <div type="scene">
         <head>Siebenter Auftritt.</head>
-        <p>Frank, Puf, Herr und Madame Herz.</p>
+        <stage>Frank, Puf, Herr und Madame Herz.</stage>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <p> Hier hab ich das Vergnügen Ihnen meine Frau vorzustellen. Sie ist bereit Ihnen mit
+          <p>Hier hab ich das Vergnügen Ihnen meine Frau vorzustellen. Sie ist bereit Ihnen mit
             einer kleinen Arie eine Probe von Ihrer Stimme zu geben.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> Sie werden mir ein auserordentliches Vergnügen machen.</l>
+          <p>Sie werden mir ein auserordentliches Vergnügen machen.</p>
         </sp>
         <sp who="#madame_herz">
           <speaker>MADAME HERZ</speaker>
-          <stage>
-            <hi>singt.</hi>
-          </stage>
+          <stage>singt.</stage>
           <lg>
             <l>Da schlägt des Abschieds Stunde</l>
             <l>Um grausam uns zu trennen;</l>
@@ -1926,46 +1791,43 @@
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <p> Göttlich! unvergleichlich! ich bin Ihnen für das Vergnügen unendlich verbunden,
-            Madame! <hi>Er küßt Madame Herz die Hand.</hi>
-          </p>
+          <p>Göttlich! unvergleichlich! ich bin Ihnen für das Vergnügen unendlich verbunden, Madame!
+              <stage>Er küßt Madame Herz die Hand.</stage></p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ</speaker>
-          <stage>
-            <hi>der ihm seiner Frauen Hand wegnimmt.</hi>
-          </stage>
-          <p> Um Vergebung Herr Frank, Sie bewundern zu lebhaft! Ich mag das nicht gern leiden. Sie
+          <stage>der ihm seiner Frauen Hand wegnimmt.</stage>
+          <p>Um Vergebung Herr Frank, Sie bewundern zu lebhaft! Ich mag das nicht gern leiden. Sie
             sind also mit dem Talent meiner Frau zufrieden?</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> Wer würde das nicht seyn?</l>
+          <p>Wer würde das nicht seyn?</p>
         </sp>
         <sp who="#herz">
           <speaker>HERZ.</speaker>
-          <p> Nun denn, so werden Sie auch unsre Foderung nicht zu hoch finden. Sie geben meiner
-            Frau sechzehn Thaler die Woche, und mir, weil ichs schon eingegangen bin, vierzehn.</p>
+          <p>Nun denn, so werden Sie auch unsre Foderung nicht zu hoch finden. Sie geben meiner Frau
+            sechzehn Thaler die Woche, und mir, weil ichs schon eingegangen bin, vierzehn.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> Recht gerne.</l>
+          <p>Recht gerne.</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> Wir steigen.</l>
+          <p>Wir steigen.</p>
         </sp>
       </div>
       <div type="scene">
         <head>Achter Auftritt.</head>
-        <p>Die Vorigen, Mademoiselle Silberklang.</p>
+        <stage>Die Vorigen, Mademoiselle Silberklang.</stage>
         <sp who="#mademoiselle_silberklang">
           <speaker>MADEMOISELLE SILBERKLANG.</speaker>
-          <p> Ihre Dienerinn Herr Frank. Sie errichten, wie ich höre, eine deutsche Oper? Ich will
+          <p>Ihre Dienerinn Herr Frank. Sie errichten, wie ich höre, eine deutsche Oper? Ich will
               <pb n="45"/> mich also bey Ihnen als Sängerinn melden. Ich bin Mademoiselle
-            Silberklang, Sie müssen mich ohne Zweifel <hi>per ronommée</hi> kennen – Weil der Ruf
-            aber oft betrüglich ist, so will ich Ihnen ein kleines Rondeau singen, damit Sie selbst
-            urtheilen können.</p>
+            Silberklang, Sie müssen mich ohne Zweifel <emph>per ronommée</emph> kennen – Weil der
+            Ruf aber oft betrüglich ist, so will ich Ihnen ein kleines Rondeau singen, damit Sie
+            selbst urtheilen können.</p>
           <lg>
             <l>Bester Jüngling! mit Entzücken</l>
             <l>Nehm' ich deine Liebe an;</l>
@@ -1983,74 +1845,71 @@
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <p> Bravo! Bravo! Zwey so vortrefliche Sängerinnen müssen meiner Gesellschaft einen
+          <p>Bravo! Bravo! Zwey so vortrefliche Sängerinnen müssen meiner Gesellschaft einen
             besondern Werth geben. Wenn Sie um Sechzehn Thaler bey mir bleiben wollen – –</p>
         </sp>
         <sp who="#mademoiselle_silberklang">
           <speaker>MADEMOISELLE SILBERKLANG.</speaker>
-          <l> Da haben sie meine Hand – Ich mache nicht viel Umstände.</l>
+          <p>Da haben sie meine Hand – Ich mache nicht viel Umstände.</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF</speaker>
-          <stage>
-            <hi>heimlich zu Frank.</hi>
-          </stage>
-          <l> Accordiren Sie zugleich, wie oft sie in einer Woche den Karthar haben will.</l>
+          <stage>heimlich zu Frank.</stage>
+          <p>Accordiren Sie zugleich, wie oft sie in einer Woche den Karthar haben will.</p>
           <pb n="46"/>
         </sp>
       </div>
       <div type="scene">
         <head>Neunter Auftritt.</head>
-        <p>Vorige, Madame und Herr Vogelsang.</p>
+        <stage>Vorige, Madame und Herr Vogelsang.</stage>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <l> Hier Herr Frank hab ich die Ehre Ihnen meinen Mann aufzuführen.</l>
+          <p>Hier Herr Frank hab ich die Ehre Ihnen meinen Mann aufzuführen.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <p> Willkommen, willkommen. O nun hab' ich ja schon eine Oper beysammen. Nur Einigkeit
-            bitt ich, meine Kinder.</p>
+          <p>Willkommen, willkommen. O nun hab' ich ja schon eine Oper beysammen. Nur Einigkeit bitt
+            ich, meine Kinder.</p>
         </sp>
         <sp who="#mademoiselle_silberklang">
           <speaker>MADEMOISELLE SILBERKLANG.</speaker>
-          <p> Ueber mich werden Sie deshalb nicht klagen können, ich bin das beste Mädchen, ich thue
-            alles, was man will. Sagen Sie mir, wie viel hat Madame <hi>Auf Madame Herz
-              zeigend.</hi> Gage?</p>
+          <p>Ueber mich werden Sie deshalb nicht klagen können, ich bin das beste Mädchen, ich thue
+            alles, was man will. Sagen Sie mir, wie viel hat Madame <stage>Auf Madame Herz
+              zeigend.</stage> Gage?</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <l> So viel wie Sie.</l>
+          <p>So viel wie Sie.</p>
         </sp>
         <sp who="#mademoiselle_silberklang">
           <speaker>MADEMOISELLE SILBERKLANG.</speaker>
-          <l> Das hätt' ich wissen sollen.</l>
+          <p>Das hätt' ich wissen sollen.</p>
         </sp>
         <sp who="#madame_herz">
           <speaker>MADAME HERZ.</speaker>
-          <l> Sie glauben doch wohl nicht mehr zu verdienen als ich?</l>
+          <p>Sie glauben doch wohl nicht mehr zu verdienen als ich?</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <l> O Einigkeit!</l>
+          <p>O Einigkeit!</p>
         </sp>
         <sp who="#mademoiselle_silberklang">
           <speaker>MADEMOISELLE SILBERKLANG</speaker>
-          <stage>
-            <hi>zu Frank.</hi>
-          </stage>
-          <lg>
-            <l> So müssen Sie wenigstens mich als erste Sängerinn annehmen.</l>
-            <l>M. HERZ. Dagegen protestir' ich.</l>
-          </lg>
+          <stage>zu Frank.</stage>
+          <p>So müssen Sie wenigstens mich als erste Sängerinn annehmen.</p>
+        </sp>
+        <sp who="#madame_herz">
+          <speaker>M. HERZ.</speaker>
+          <p>Dagegen protestir' ich.</p>
         </sp>
         <sp who="#mademoiselle_silberklang">
           <speaker>MADEMOISELLE SILBERKLANG.</speaker>
-          <lg>
-            <l>Ich bin die erste Sängerin.</l>
-            <l>M. HERZ <hi>spöttisch.</hi>
-            </l>
-            <l>Das glaub ich, ja nach Ihrem Sinn.</l>
-          </lg>
+          <l>Ich bin die erste Sängerin.</l>
+        </sp>
+        <sp who="#madame_herz">
+          <speaker>M. HERZ.</speaker>
+          <stage>spöttisch.</stage>
+          <l>Das glaub ich, ja nach Ihrem Sinn.</l>
         </sp>
         <sp who="#mademoiselle_silberklang">
           <speaker>MADEMOISELLE SILBERKLANG.</speaker>
@@ -2059,9 +1918,7 @@
         </sp>
         <sp who="#madame_herz">
           <speaker>MADAME HERZ</speaker>
-          <stage>
-            <hi>spöttisch.</hi>
-          </stage>
+          <stage>spöttisch.</stage>
           <l>Ich will es ihnen nicht bestreiten.</l>
         </sp>
         <sp who="#monsieur_vogelsang">
@@ -2077,9 +1934,7 @@
         </sp>
         <sp who="#madame_herz">
           <speaker>MADAME HERZ</speaker>
-          <stage>
-            <hi>spöttisch.</hi>
-          </stage>
+          <stage>spöttisch.</stage>
           <lg>
             <l>Gewiß ich habe ihres gleichen</l>
             <l>Noch nie gehört und nie gesehn.</l>
@@ -2093,26 +1948,29 @@
             <l>Ein jedes hat besondern Werth</l>
           </lg>
         </sp>
-        <sp who="#mademoiselle_silberklang">
-          <speaker>MADEMOISELLE SILBERKLANG.</speaker>
-          <lg>
-            <l> MADAME HERZ.</l>
-            <l>Mich lobt ein jeder der mich hört.</l>
-            <l>MADAME HERZ</l>
-            <l><hi>Adagio! adagio</hi>!</l>
-          </lg>
+        <sp who="#mademoiselle_silberklang #madame_herz">
+          <speaker>MADEMOISELLE SILBERKLANG. MADAME HERZ.</speaker>
+          <l>Mich lobt ein jeder der mich hört.</l>
+        </sp>
+        <sp who="#madame_herz">
+          <speaker>MADAME HERZ</speaker>
+          <l><emph>Adagio! adagio!</emph></l>
         </sp>
         <sp who="#mademoiselle_silberklang">
           <speaker>MADEMOISELLE SILBERKLANG.</speaker>
-          <l><hi>Allegro! allegrissimo</hi>;</l>
+          <l><emph>Allegro! allegrissimo!</emph></l>
         </sp>
         <sp who="#monsieur_vogelsang">
           <speaker>MONSIEUR VOGELSANG.</speaker>
           <lg>
-            <l><hi>Piano! Pianissimo</hi>!</l>
+            <l><emph>Piano! Pianissimo!</emph></l>
             <l>Kein Künstler muß den andern tadeln</l>
             <l>Es setzt die Kunst zu sehr her ab.</l>
-            <l>MADAME HERZ</l>
+          </lg>
+        </sp>
+        <sp who="#madame_herz">
+          <speaker>MADAME HERZ</speaker>
+          <lg>
             <l>Wohlan! nichts kann die Kunst mehr adeln</l>
             <l>Ich steh von meiner Fodrung ab.</l>
           </lg>
@@ -2126,83 +1984,71 @@
         </sp>
         <sp who="#puf">
           <speaker>PUF</speaker>
-          <stage>
-            <hi>ironisch.</hi>
-          </stage>
+          <stage>ironisch.</stage>
           <l>Es lebe die Einigkeit!</l>
           <pb n="48"/>
         </sp>
       </div>
       <div type="scene">
         <head>Letzter Auftritt.</head>
-        <p>Die Vorigen, Eiler, Madame Pfeil und Madame Krone.</p>
+        <stage>Die Vorigen, Eiler, Madame Pfeil und Madame Krone.</stage>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <p> Was hab ich gehört, Herr Frank, Sie geben andern sechzehn Thaler, und mir nur zwölfe?
+          <p>Was hab ich gehört, Herr Frank, Sie geben andern sechzehn Thaler, und mir nur zwölfe?
             da wird nichts draus. Ich muß die höchste Gagehaben; denn ich bin in allen Fächern zu
             brauchen.</p>
         </sp>
         <sp who="#eiler">
           <speaker>EILER</speaker>
-          <stage>
-            <hi>heimlich zu Frank.</hi>
-          </stage>
-          <l> Gestehn Sie ihrs nur ein. Ich zahle ja so alles.</l>
+          <stage>heimlich zu Frank.</stage>
+          <p>Gestehn Sie ihrs nur ein. Ich zahle ja so alles.</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK</speaker>
-          <stage>
-            <hi>heimlich zu Madame Pfeil.</hi>
-          </stage>
-          <l> Beruhigen Sie sich nur; Sie sollen einen Separat-Kontrakt haben.</l>
+          <stage>heimlich zu Madame Pfeil.</stage>
+          <p>Beruhigen Sie sich nur; Sie sollen einen Separat-Kontrakt haben.</p>
         </sp>
         <sp who="#madame_pfeil">
           <speaker>MADAME PFEIL.</speaker>
-          <l> So laß ichs gelten.</l>
+          <p>So laß ichs gelten.</p>
         </sp>
         <sp who="#madame_krone #madame_vogelsang">
           <speaker>MADAME KRONE UND MADAME VOGELSANG.</speaker>
-          <l> Was ist das?</l>
+          <p>Was ist das?</p>
         </sp>
         <sp who="#madame_herz #mademoiselle_silberklang">
           <speaker>MADAME HERZ UND MADEMOISELLE SILBERKLANG.</speaker>
-          <l> Was ist das?</l>
+          <p>Was ist das?</p>
         </sp>
         <sp who="#frank">
           <speaker>FRANK.</speaker>
-          <lg>
-            <l> Daß ich gar keine Gesellschaft errichten will; wenn ich gleich anfangs so viel
-              Hinderdernisse finde.</l>
-          </lg>
-          <stage>
-            <hi>Nach einer kleinen Pause.</hi>
-          </stage>
+          <p>Daß ich gar keine Gesellschaft errichten will; wenn ich gleich anfangs so viel
+            Hinderdernisse finde.</p>
+          <stage>Nach einer kleinen Pause.</stage>
         </sp>
         <sp who="#madame_krone">
           <speaker>MADAME KRONE.</speaker>
-          <l> Herr Frank, ich will der Kunst mein Intresse aufopfern.</l>
+          <p>Herr Frank, ich will der Kunst mein Intresse aufopfern.</p>
         </sp>
         <sp who="#madame_vogelsang">
           <speaker>MADAME VOGELSANG.</speaker>
-          <l> Ich will mich am Beyfall schadlos halten.</l>
+          <p>Ich will mich am Beyfall schadlos halten.</p>
         </sp>
         <sp who="#madame_herz">
           <speaker>MADAME HERZ.</speaker>
-          <l> Ich auch.</l>
+          <p>Ich auch.</p>
           <pb n="49"/>
         </sp>
         <sp who="#mademoiselle_silberklang">
           <speaker>MADEMOISELLE SILBERKLANG.</speaker>
-          <l> Daran wird mirs auch nicht fehlen.</l>
+          <p>Daran wird mirs auch nicht fehlen.</p>
         </sp>
         <sp who="#puf">
           <speaker>PUF.</speaker>
-          <p> Nun so wäre alles wieder in Ruhe. <hi>Bey Seite.</hi> Bis es wieder ausbricht. Herr
-            Frank, ich wünsche Ihnen Glück zu ihrer Gesellschaft. Ich fürchte nichts – als daß sie
-            lauter erste Aktrisen und erste Sängerinnen haben.</p>
-          <stage>
-            <hi>Schlußgesang.</hi>
-          </stage>
+          <p>Nun so wäre alles wieder in Ruhe. <stage>Bey Seite.</stage> Bis es wieder ausbricht.
+            Herr Frank, ich wünsche Ihnen Glück zu ihrer Gesellschaft. Ich fürchte nichts – als daß
+            sie lauter erste Aktrisen und erste Sängerinnen haben.</p>
+          <stage>Schlußgesang.</stage>
         </sp>
         <sp who="#mademoiselle_silberklang">
           <speaker>MADEMOISELLE SILBERKLANG.</speaker>
@@ -2213,7 +2059,8 @@
             <l>Bliebe jede Kunst nur klein.</l>
           </lg>
         </sp>
-        <sp who="#alle">
+        <sp
+          who="#frank #puf #herz #madame_herz #mademoiselle_silberklang #madame_vogelsang #monsieur_vogelsang #eiler #madame_pfeil #madame_krone">
           <speaker>ALLE.</speaker>
           <lg>
             <l>Künstler müssen freylich streben</l>
@@ -2232,7 +2079,8 @@
             <l>Und nicht bloß ein einzler Mann.</l>
           </lg>
         </sp>
-        <sp who="#alle">
+        <sp
+          who="#frank #puf #herz #madame_herz #mademoiselle_silberklang #madame_vogelsang #monsieur_vogelsang #eiler #madame_pfeil #madame_krone">
           <speaker>ALLE.</speaker>
           <l>Künstler müssen freylich streben etc.</l>
           <pb n="50"/>
@@ -2246,7 +2094,8 @@
             <l>Wem das größte Lob gehört.</l>
           </lg>
         </sp>
-        <sp who="#alle">
+        <sp
+          who="#frank #puf #herz #madame_herz #mademoiselle_silberklang #madame_vogelsang #monsieur_vogelsang #eiler #madame_pfeil #madame_krone">
           <speaker>ALLE.</speaker>
           <l>Künstler müssen freylich streben etc.</l>
         </sp>
@@ -2262,7 +2111,8 @@
             <l>Sieht man den Herren doch wohl an?</l>
           </lg>
         </sp>
-        <sp who="#alle">
+        <sp
+          who="#frank #puf #herz #madame_herz #mademoiselle_silberklang #madame_vogelsang #monsieur_vogelsang #eiler #madame_pfeil #madame_krone">
           <speaker>ALLE.</speaker>
           <l>Künstler müssen freylich streben. etc.</l>
         </sp>
