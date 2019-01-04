@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Uriel Acosta</title>
+        <title type="main">Uriel Acosta</title>
+        <title type="sub">Trauerspiel in fünf Aufzügen</title>
         <author key="pnd:118543830">Gutzkow, Karl</author>
       </titleStmt>
       <publicationStmt>
@@ -43,48 +44,56 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="de_silva">
-            <persName>DE SILVA</persName>
-            <persName xml:id="silva">SILVA</persName>
+          <person xml:id="silva" sex="MALE">
+            <persName>De Silva</persName>
           </person>
-          <person xml:id="jochai">
-            <persName>JOCHAI</persName>
+          <person xml:id="jochai" sex="MALE">
+            <persName>Jochai</persName>
           </person>
-          <person xml:id="diener">
-            <persName>DIENER</persName>
+          <person xml:id="diener_1-2" sex="MALE">
+            <persName>Diener (I/2)</persName>
           </person>
-          <person xml:id="uriel">
-            <persName>URIEL</persName>
+          <person xml:id="uriel" sex="MALE">
+            <persName>Uriel</persName>
           </person>
-          <person xml:id="santos">
-            <persName>SANTOS</persName>
+          <person xml:id="santos" sex="MALE">
+            <persName>Santos</persName>
           </person>
-          <person xml:id="manasse">
-            <persName>MANASSE</persName>
+          <person xml:id="manasse" sex="MALE">
+            <persName>Manasse</persName>
           </person>
-          <person xml:id="simon">
-            <persName>SIMON</persName>
+          <person xml:id="simon" sex="MALE">
+            <persName>Simon</persName>
           </person>
-          <person xml:id="judith">
-            <persName>JUDITH</persName>
+          <person xml:id="judith" sex="FEMALE">
+            <persName>Judith</persName>
           </person>
-          <person xml:id="ruben">
-            <persName>RUBEN</persName>
+          <personGrp xml:id="alle_2-7" sex="UNKNOWN">
+            <name>Alle (II/7)</name>
+          </personGrp>
+          <person xml:id="ruben" sex="MALE">
+            <persName>Ruben</persName>
           </person>
-          <person xml:id="esther">
-            <persName>ESTHER</persName>
+          <person xml:id="esther" sex="FEMALE">
+            <persName>Esther</persName>
           </person>
-          <person xml:id="joel">
-            <persName>JOEL</persName>
+          <person xml:id="joel" sex="MALE">
+            <persName>Joel</persName>
           </person>
-          <person xml:id="akiba">
-            <persName>AKIBA</persName>
+          <person xml:id="diener_4-1" sex="MALE">
+            <persName>Diener (IV/1)</persName>
           </person>
-          <person xml:id="embden">
-            <persName>EMBDEN</persName>
+          <person xml:id="akiba" sex="MALE">
+            <persName>Akiba</persName>
           </person>
-          <person xml:id="baruch">
-            <persName>BARUCH</persName>
+          <person xml:id="embden" sex="MALE">
+            <persName>Embden</persName>
+          </person>
+          <personGrp xml:id="alle_4-6" sex="UNKNOWN">
+            <name>Alle (IV/6)</name>
+          </personGrp>
+          <person xml:id="baruch" sex="MALE">
+            <persName>Baruch</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -98,6 +107,7 @@
       <listChange>
         <change when="2017-01-06">(dlina) file conversion from source</change>
         <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-01-04">(ff) formalities</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -108,8 +118,6 @@
         <head>Uriel Acosta</head>
         <head>Trauerspiel in fünf Aufzügen</head>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head><pb n="6"/> Personen.</head>
@@ -120,17 +128,26 @@
           <castItem>Rabbi Ben Akiba.</castItem>
           <castItem>Uriel Acosta.</castItem>
           <castItem>Esther, seine Mutter.</castItem>
-          <castItem>Ruben,</castItem>
-          <castItem>Joel, seine Brüder.</castItem>
+          <castGroup>
+            <castItem>Ruben,</castItem>
+            <castItem>Joel,</castItem>
+            <roleDesc>seine Brüder.</roleDesc>
+          </castGroup>
           <castItem>Baruch Spinoza, ein Knabe.</castItem>
-          <castItem>De Santos,</castItem>
-          <castItem>Van der Embden, Rabbinen.</castItem>
+          <castGroup>
+            <castItem>De Santos,</castItem>
+            <castItem>Van der Embden,</castItem>
+            <roleDesc>Rabbinen.</roleDesc>
+          </castGroup>
           <castItem>Ein Tempeldiener.</castItem>
           <castItem>Simon, Diener Manasses.</castItem>
           <castItem>Silvas Diener.</castItem>
           <castItem>Tempeldiener. Gäste. Volk.</castItem>
         </castList>
       </div>
+      <set>
+        <p>Ort der Handlung: In und bei Amsterdam. Zeit: 1640.</p>
+      </set>
       <div type="preface">
         <head>Vorwort.</head>
         <p>Nach einer im Herbst 1833 geschriebenen Erzählung des Verfassers: »Der Sadduzäer von
@@ -159,71 +176,71 @@
           herabsetzte, was zu meinem Namen in Beziehung stand, und mit der Zeit auch durch den
           Effekt, welchen absprechende Sicherheit immer findet, mancherlei Literaturgeschichten- und
           Feuilleton-Weisheit für sich gewonnen hat, entschuldige folgende Selbstrechtfertigung.</p>
-        <p>Uriel Acosta ist <hi>kein</hi> schwankender und charakterloser Held, wie gewöhnlich
+        <p>Uriel Acosta ist <emph>kein</emph> schwankender und charakterloser Held, wie gewöhnlich
           behauptet wird, sondern das absolute Gegenteil. Denn würde sich Acosta das Leben nehmen,
           wenn er nicht, trotz scheinbarer Irritation der Konsequenz, die Konsequenz selbst wäre?
           Ein sich überwindendes, starres Gemüt will sich hier gleich anfangs aus den Armen der
           Lieberei ßen und bleibt auf dem Schauplatz der vorauszusehenden Konflikte nur deshalb
           zurück, weil ihm seine Gemeinde den Prozeß macht. Jude nennt sich Acosta, während ihm
           freistünde, sich als Christ den Verfolgungen seiner Glaubensgenossen zu entziehen. Nur die
-          tiefste, die sittlich <hi>berechtigte</hi> Mitleidenschaft des Gemüts für die gemeinsame
-          Sache der Ahasverussöhne irritiert seine Konsequenz, und dieser <hi>Gegendruck</hi> seiner
-          Überzeugungen wiegt denn doch, dächten wir, in seiner geschichtlichen Bedeutung
-          zentnerschwer, zentnerschwer in einem Gemüt, dessen Organisation noch <hi>keinem Juden
-            unverständlich geblieben</hi> ist, soweit sich ihm das Wort erprobte: »Das Wesen unsers
-          Volks ist die <hi>Familie!</hi>« Es ist Verleumdung und nur ein Verfolgen des Scheins,
-          wenn man die Motive zu Acostas Widerruf in seiner »Charakterschwäche« findet. Keine unedle
-          ist die Schuld, die Acosta auf sich ladet. Die Wehklagen eines geknechteten Volks binden
-          seine Kraft; die blinden Augen seiner Mutter, der geschäftliche Ruin seiner Brüder, die
-          Hingebung, der Schmerz einer Liebe wie Judiths, die edle Duldung des ihn schützenden
-          Manasse – wahrlich, alles das sind nicht vereinzelte Motive der Zufälligkeit, sondern es
-          steht im Zusammenhang mit einem Ganzen, das den Helden – erstens durch seinen Widerruf auf
-          die Höhe einer objektiven, historisch bindenden Sittlichkeit und – zweitens auf die Höhe
-          jener allgemeinen menschlichen Gesetze hebt, die in der Geschichte aller Meinungskämpfe
-          und Überzeugungen die Kundgebungen titanisch ansetzenden Mutes oft genug, leider
-          bemitleidenswert und die Teilnahme herausfordernd, irritierten. Sind nur in der
-          Darstellung die Repräsentanten Silvas, Manasses, Judiths, der blinden Esther und der
-          Brüder Uriels keine Marionetten, sondern beseelte, begeisterte, von ersichtlicher
-          Überzeugung getragene Israeliten, so könnte Uriel im Widerruf zugestanden haben: 2×2=5,
-          und der Anblick eines unter dem <pb n="8"/> Gesetz der Sitte und des Vorurteils mit
-          schwersten Seufzern atmenden Genius müßte diejenige Wirkung hervorbringen, die durch die
-          tragische Muse erstrebt wird. Daß zuletzt die angespannte Kette, nachdem sich die
-          Verhältnisse ändern, die Mutter tot ist und Judith, nach demselben Gesetz der Unterordnung
-          auch <hi>ihres</hi> Willens unter ein gemeinsames großes Volksgesetz und Volksschicksal,
-          das sie gegen Uriel geltend gemacht hatte, ebenso auch ihrerseits ihrem Vater zu gefallen
-          verfährt, in stürmischer Eile <hi>abrollt</hi> und Uriel seinen Widerruf wieder
-          zurücknimmt und zuletzt über den Bruch mit sich selbst sich tötet, macht ihn gerade zum
-            <hi>Helden</hi> der Konsequenz. Sein Tod kann und soll nur <hi>diese</hi> Wirkung
-          hinterlassen: das Märtyrertum einer idealen Anschauung des Lebens enthält mehr Leiden und
-          Prüfungen, als derjenige ahnt, der auf seinem Sofa von Konsequenz spricht! Wollt doch nur
-          einmal etwas Großes in der Welt! Ihr werdet bald finden, daß Überzeugungstreue im großen
-          Stil Phasen hat, die nicht die Phasen einer Stadtverordneten-Konsequenz sind. Die
-          tragische Versöhnung über den Märtyrer des Judentums, über den Blutzeugen für das Prinzip
-          der Familie, über den Blutzeugen für die Urberechtigung des Herzens und der <hi>Liebe</hi>
-          auch in den Fragen des Geistes oder – des Hasses wird in dem Schlußgedanken de Silvas
-          ausgesprochen: Das große Gesetz Gottes in der Geschichte scheine nicht zu sein,
-            <hi>was</hi> wir an Wahrheit auffänden, sondern <hi>wie</hi> wir es auffänden. In diesem
-            <hi>Wie</hi> seines Überzeugtseins hat Acosta trotz seines Unterliegens gesiegt.
-          Ungroßmütig ist es, wenn eine einzige der Anklagen, die Acosta <hi>selbst</hi> gegen sich
-          und gegen seine<hi> scheinbare</hi> Inkonsequenz (z.B. Akt 5) ausstößt, vom Zuschauer
-          anerkannt, aufgenommen und unterschrieben werden wollte! Unsere jüngeren Schauspieler
-          geben leider die Titelrolle meist zu weich, zu gelassen, zu leidend-reflektiv. Schon das
-          erste Auftreten bei de Silva muß zeigen, daß die Gelassenheit der Haltung Uriels nur eine
+          tiefste, die sittlich <emph>berechtigte</emph> Mitleidenschaft des Gemüts für die
+          gemeinsame Sache der Ahasverussöhne irritiert seine Konsequenz, und dieser
+            <emph>Gegendruck</emph> seiner Überzeugungen wiegt denn doch, dächten wir, in seiner
+          geschichtlichen Bedeutung zentnerschwer, zentnerschwer in einem Gemüt, dessen Organisation
+          noch <emph>keinem Juden unverständlich geblieben</emph> ist, soweit sich ihm das Wort
+          erprobte: »Das Wesen unsers Volks ist die <emph>Familie</emph>!« Es ist Verleumdung und
+          nur ein Verfolgen des Scheins, wenn man die Motive zu Acostas Widerruf in seiner
+          »Charakterschwäche« findet. Keine unedle ist die Schuld, die Acosta auf sich ladet. Die
+          Wehklagen eines geknechteten Volks binden seine Kraft; die blinden Augen seiner Mutter,
+          der geschäftliche Ruin seiner Brüder, die Hingebung, der Schmerz einer Liebe wie Judiths,
+          die edle Duldung des ihn schützenden Manasse – wahrlich, alles das sind nicht vereinzelte
+          Motive der Zufälligkeit, sondern es steht im Zusammenhang mit einem Ganzen, das den Helden
+          – erstens durch seinen Widerruf auf die Höhe einer objektiven, historisch bindenden
+          Sittlichkeit und – zweitens auf die Höhe jener allgemeinen menschlichen Gesetze hebt, die
+          in der Geschichte aller Meinungskämpfe und Überzeugungen die Kundgebungen titanisch
+          ansetzenden Mutes oft genug, leider bemitleidenswert und die Teilnahme herausfordernd,
+          irritierten. Sind nur in der Darstellung die Repräsentanten Silvas, Manasses, Judiths, der
+          blinden Esther und der Brüder Uriels keine Marionetten, sondern beseelte, begeisterte, von
+          ersichtlicher Überzeugung getragene Israeliten, so könnte Uriel im Widerruf zugestanden
+          haben: 2×2=5, und der Anblick eines unter dem <pb n="8"/> Gesetz der Sitte und des
+          Vorurteils mit schwersten Seufzern atmenden Genius müßte diejenige Wirkung hervorbringen,
+          die durch die tragische Muse erstrebt wird. Daß zuletzt die angespannte Kette, nachdem
+          sich die Verhältnisse ändern, die Mutter tot ist und Judith, nach demselben Gesetz der
+          Unterordnung auch <emph>ihres</emph> Willens unter ein gemeinsames großes Volksgesetz und
+          Volksschicksal, das sie gegen Uriel geltend gemacht hatte, ebenso auch ihrerseits ihrem
+          Vater zu gefallen verfährt, in stürmischer Eile <emph>abrollt</emph> und Uriel seinen
+          Widerruf wieder zurücknimmt und zuletzt über den Bruch mit sich selbst sich tötet, macht
+          ihn gerade zum <emph>Helden</emph> der Konsequenz. Sein Tod kann und soll nur
+            <emph>diese</emph> Wirkung hinterlassen: das Märtyrertum einer idealen Anschauung des
+          Lebens enthält mehr Leiden und Prüfungen, als derjenige ahnt, der auf seinem Sofa von
+          Konsequenz spricht! Wollt doch nur einmal etwas Großes in der Welt! Ihr werdet bald
+          finden, daß Überzeugungstreue im großen Stil Phasen hat, die nicht die Phasen einer
+          Stadtverordneten-Konsequenz sind. Die tragische Versöhnung über den Märtyrer des
+          Judentums, über den Blutzeugen für das Prinzip der Familie, über den Blutzeugen für die
+          Urberechtigung des Herzens und der <emph>Liebe</emph> auch in den Fragen des Geistes oder
+          – des Hasses wird in dem Schlußgedanken de Silvas ausgesprochen: Das große Gesetz Gottes
+          in der Geschichte scheine nicht zu sein, <emph>was</emph> wir an Wahrheit auffänden,
+          sondern <emph>wie</emph> wir es auffänden. In diesem <emph>Wie</emph> seines
+          Überzeugtseins hat Acosta trotz seines Unterliegens gesiegt. Ungroßmütig ist es, wenn eine
+          einzige der Anklagen, die Acosta <emph>selbst</emph> gegen sich und gegen seine
+            <emph>scheinbare</emph> Inkonsequenz (z.B. Akt 5) ausstößt, vom Zuschauer anerkannt,
+          aufgenommen und unterschrieben werden wollte! Unsere jüngeren Schauspieler geben leider
+          die Titelrolle meist zu weich, zu gelassen, zu leidend-reflektiv. Schon das erste
+          Auftreten bei de Silva muß zeigen, daß die Gelassenheit der Haltung Uriels nur eine
           scheinbare, seine Ergebung nur die momentane Beherrschung eines an sich leidenschaftlichen
           Temperamentes ist.</p>
       </div>
+    </front>
+    <body>
       <div type="act">
-        <head>1. Akt</head>
+        <head>Erster Aufzug.</head>
+        <stage>Das Bibliothekzimmer bei de Silva. Dämmerung.</stage>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>De Silva. Ben Jochai.</hi>
-          </stage>
-          <sp who="#de_silva">
+          <stage>De Silva. Ben Jochai.</stage>
+          <sp who="#silva">
             <speaker>DE SILVA</speaker>
-            <stage>
-              <hi>die hintere Tür öffnend und Jochai vor sich einlassend.</hi>
-            </stage>
+            <stage>die hintere Tür öffnend und Jochai vor sich einlassend.</stage>
             <lg>
               <l>Ihr denkt, Ihr kämt mir wieder so davon?</l>
               <l>Nein, nein! Die Schwelle ist einmal betreten –</l>
@@ -231,10 +248,8 @@
               <l>Daheim! Ein Arzt – o vielgeplagter Stand!</l>
               <l>Entschuldigt mich, wenn Ihr habt warten müssen!</l>
             </lg>
-            <stage>
-              <hi>Nachdem er während dieser Worte seinen Hut abgelegt hat, reicht er Jochai die
-                Hand.</hi>
-            </stage>
+            <stage>Nachdem er während dieser Worte seinen Hut abgelegt hat, reicht er Jochai die
+              Hand.</stage>
             <l>Willkommen denn in Amsterdam!</l>
           </sp>
           <sp who="#jochai">
@@ -287,9 +302,7 @@
           </sp>
           <sp who="#jochai">
             <speaker>JOCHAI</speaker>
-            <stage>
-              <hi>indem er de Silva gezwungen lächelnd die Hand reicht.</hi>
-            </stage>
+            <stage>indem er de Silva gezwungen lächelnd die Hand reicht.</stage>
             <lg>
               <l>Auch darin find' ich nichts verändert. Silva,</l>
               <l>Der Arzt, der Kenner der Natur, die Zierde</l>
@@ -363,9 +376,7 @@
           <sp who="#jochai">
             <speaker>JOCHAI.</speaker>
             <l>Erlaubt, daß ich mich ruhe.</l>
-            <stage>
-              <hi>Er setzt sich.</hi>
-            </stage>
+            <stage>Er setzt sich.</stage>
           </sp>
           <sp who="#silva">
             <speaker>SILVA.</speaker>
@@ -421,9 +432,7 @@
           </sp>
           <sp who="#silva">
             <speaker>SILVA</speaker>
-            <stage>
-              <hi>beiseite.</hi>
-            </stage>
+            <stage>beiseite.</stage>
             <l>Statt Gold läuft manchmal wohl auch Kupfer unter.</l>
           </sp>
           <sp who="#jochai">
@@ -453,9 +462,7 @@
               <l>Und in dem Drang nach fast zweijähr'ger Trennung</l>
               <l>Traf ich sie endlich – nicht allein.</l>
             </lg>
-            <stage>
-              <hi>Steht auf.</hi>
-            </stage>
+            <stage>Steht auf.</stage>
             <lg>
               <l>Ein Fremdling</l>
               <l>Sitzt neben ihr in einer Muschelgrotte,</l>
@@ -561,7 +568,7 @@
           </sp>
           <sp who="#jochai">
             <speaker>JOCHAI.</speaker>
-            <l>Von <hi>Euerm</hi> Feind!</l>
+            <l>Von <emph>Euerm</emph> Feind!</l>
           </sp>
           <sp who="#silva">
             <speaker>SILVA.</speaker>
@@ -600,57 +607,43 @@
               <l>Ihr geht – nach dieser Kunde? Nein, Ihr solltet</l>
               <l>Mir weitre Proben des Verdachtes nennen –</l>
             </lg>
-            <stage>
-              <hi>Er sieht den Diener eintreten.</hi>
-            </stage>
+            <stage>Er sieht den Diener eintreten.</stage>
             <l>Was ist? – Nur einen Augenblick –</l>
-            <stage>
-              <hi>Zum Diener.</hi>
-            </stage>
+            <stage>Zum Diener.</stage>
             <l>Was soll's?</l>
           </sp>
         </div>
         <div type="scene">
           <head>Zweiter Auftritt.</head>
-          <stage>
-            <hi>Diener. Die Vorigen. Dann Uriel.</hi>
-          </stage>
-          <sp who="#diener">
+          <stage>Diener. Die Vorigen. Dann Uriel.</stage>
+          <sp who="#diener_1-2">
             <speaker>DIENER.</speaker>
             <lg>
               <l>Ein Schüler, des ich mich aus alter Zeit</l>
               <l>Entsinne, wünscht zwei Worte nur – ich weiß,</l>
               <l>Ihr habt ihn lieb gehabt, ich ließ ihn kommen.</l>
             </lg>
-            <stage>
-              <hi>Er tritt zurück, läßt Uriel herein und geht. Uriel tritt ein.</hi>
-            </stage>
+            <stage>Er tritt zurück, läßt Uriel herein und geht. Uriel tritt ein.</stage>
           </sp>
           <sp who="#jochai">
             <speaker>JOCHAI</speaker>
-            <stage>
-              <hi>beiseite.</hi>
-            </stage>
+            <stage>beiseite.</stage>
             <l>Er selbst!</l>
           </sp>
           <sp who="#silva">
             <speaker>SILVA</speaker>
-            <stage>
-              <hi>beiseite.</hi>
-            </stage>
+            <stage>beiseite.</stage>
             <l>Acosta?</l>
           </sp>
           <sp who="#uriel">
             <speaker>URIEL.</speaker>
             <l>Stör' ich Euch, de Silva?</l>
-            <stage>
-              <hi>Drückende Pause.</hi>
-            </stage>
+            <stage>Drückende Pause.</stage>
           </sp>
           <sp who="#silva">
             <speaker>SILVA.</speaker>
             <lg>
-              <l>Kommt Ihr zum <hi>Arzt</hi> de Silva? – seid willkommen!</l>
+              <l>Kommt Ihr zum <emph>Arzt</emph> de Silva? – seid willkommen!</l>
               <l>Ein Arzt darf auch dem Feind sich nicht entziehn.</l>
             </lg>
           </sp>
@@ -663,16 +656,12 @@
           </sp>
           <sp who="#jochai">
             <speaker>JOCHAI</speaker>
-            <stage>
-              <hi>beiseite.</hi>
-            </stage>
+            <stage>beiseite.</stage>
             <l>Zum Abschied?</l>
           </sp>
           <sp who="#silva">
             <speaker>SILVA</speaker>
-            <stage>
-              <hi>will Jochai vorstellen.</hi>
-            </stage>
+            <stage>will Jochai vorstellen.</stage>
             <l>Ben Jochai! Kennt Ihr ihn?</l>
           </sp>
           <sp who="#uriel">
@@ -700,9 +689,7 @@
           </sp>
           <sp who="#silva">
             <speaker>SILVA</speaker>
-            <stage>
-              <hi>weist sie zurück.</hi>
-            </stage>
+            <stage>weist sie zurück.</stage>
             <lg>
               <l>Die Hand, die eben noch,</l>
               <l>Was ich mit eifrigstem Bemühn erforscht,</l>
@@ -733,7 +720,7 @@
           <sp who="#uriel">
             <speaker>URIEL.</speaker>
             <lg>
-              <l>Ich staune – kann man denken <hi>lernen,</hi> Silva?</l>
+              <l>Ich staune – kann man denken <emph>lernen</emph>, Silva?</l>
               <l>Gibt's Schüler denn und Lehrer im Bereich</l>
               <l>Der höchsten Wissenschaft, wo jeder Satz,</l>
               <l>Wie einst aus Ajax' Blut die Blume, also</l>
@@ -841,9 +828,7 @@
           </sp>
           <sp who="#jochai">
             <speaker>JOCHAI</speaker>
-            <stage>
-              <hi>beiseite.</hi>
-            </stage>
+            <stage>beiseite.</stage>
             <l>Ich atme auf.</l>
           </sp>
           <sp who="#silva">
@@ -887,9 +872,7 @@
               <l>Hat sie gelernt die Freuden des Entbehrens.</l>
               <l>Sich selbst genügen – lehrte meine Weisheit!</l>
             </lg>
-            <stage>
-              <hi>Sich vergessend.</hi>
-            </stage>
+            <stage>Sich vergessend.</stage>
             <lg>
               <l>Und wenn Ihr doch sie überraschen wollt,</l>
               <l>Mit einem goldnen Dache sie umwölben,</l>
@@ -906,37 +889,27 @@
               <l>Der Blick auf das, was Euch zurückbleibt, kann</l>
               <l>Den Abschied nicht erleichtern. So mit Gott –!</l>
             </lg>
-            <stage>
-              <hi>Will rasch ab.</hi>
-            </stage>
+            <stage>Will rasch ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt</head>
-          <stage>
-            <hi>Die hintere Tür öffnet sich. Zwei Tempeldiener, jeder mit einer großen brennenden
-              Kerze, treten ein. Rabbi Santos mit einem Buch in der Hand. Die Vorigen.</hi>
-          </stage>
+          <stage>Die hintere Tür öffnet sich. Zwei Tempeldiener, jeder mit einer großen brennenden
+            Kerze, treten ein. Rabbi Santos mit einem Buch in der Hand. Die Vorigen.</stage>
           <sp who="#santos">
             <speaker>SANTOS</speaker>
-            <stage>
-              <hi>beiseite.</hi>
-            </stage>
+            <stage>beiseite.</stage>
             <l>Acosta?</l>
           </sp>
           <sp who="#silva">
             <speaker>SILVA</speaker>
-            <stage>
-              <hi>beiseite.</hi>
-            </stage>
+            <stage>beiseite.</stage>
             <l>Rabbi Santos?</l>
             <pb n="19"/>
           </sp>
           <sp who="#jochai">
             <speaker>JOCHAI</speaker>
-            <stage>
-              <hi>beiseite.</hi>
-            </stage>
+            <stage>beiseite.</stage>
             <l>Welcher Aufzug!</l>
           </sp>
           <sp who="#santos">
@@ -991,9 +964,7 @@
           <sp who="#santos">
             <speaker>SANTOS.</speaker>
             <l>Bedeutet dieses Licht</l>
-            <stage>
-              <hi>Auf die Kerzen deutend.</hi>
-            </stage>
+            <stage>Auf die Kerzen deutend.</stage>
             <lg>
               <l>des Autors Seele,</l>
               <l>So will die Synagoge und der Vorstand</l>
@@ -1004,10 +975,8 @@
               <l>Und so Ihr sie gedenkt zu geben, dann</l>
               <l>Bestätigt mir's mit zwei geschriebnen Worten!</l>
             </lg>
-            <stage>
-              <hi>Silva nimmt das Buch, schlägt es auf und erschrickt, da er sieht, daß es Uriels
-                Schrift ist.</hi>
-            </stage>
+            <stage>Silva nimmt das Buch, schlägt es auf und erschrickt, da er sieht, daß es Uriels
+              Schrift ist.</stage>
           </sp>
           <sp who="#uriel">
             <speaker>URIEL.</speaker>
@@ -1030,29 +999,25 @@
           </sp>
           <sp who="#silva">
             <speaker>SILVA</speaker>
-            <stage>
-              <hi>zu Santos.</hi>
-            </stage>
+            <stage>zu Santos.</stage>
             <lg>
               <l>Hier tretet ein. Zwei Zeilen bürgen Ench</l>
               <l>Für den Empfang des schmerzlich-ernsten Auftrags. –</l>
               <l>Acosta! – Zitternd fühlt der Mensch die Zügel</l>
-              <l>Des <hi>eignen</hi> Schicksals, die ihm unsichtbar,</l>
+              <l>Des <emph>eignen</emph> Schicksals, die ihm unsichtbar,</l>
               <l><pb n="20"/> Sich selbst zu nützen oder schaden, oft</l>
               <l>Ein guter Gott in seine Hände gibt.</l>
               <l>Doch wieviel schwerer ist es, sich zu wissen</l>
-              <l>Als eines <hi>fremden</hi> Loses Vorsehung</l>
+              <l>Als eines <emph>fremden</emph> Loses Vorsehung</l>
               <l>Und Stellvertreter des allweisen Richters</l>
-              <l>Für einen andern, dem <hi>wir</hi> Schicksal werden!</l>
+              <l>Für einen andern, dem <emph>wir</emph> Schicksal werden!</l>
               <l>Es tut mir leid, Acosta, daß ich glaube</l>
               <l>An Rufe aus der Höhe, daß ich Gottes Finger</l>
               <l>In menschlichem Befehle oft erblicke.</l>
               <l>Dies Buch schickt mir mein Volk, schickt Israel,</l>
               <l>Ich prüf' es nach dem Talmud und der Thora.</l>
             </lg>
-            <stage>
-              <hi>Geht nach innen. Santos und die Diener folgen.</hi>
-            </stage>
+            <stage>Geht nach innen. Santos und die Diener folgen.</stage>
           </sp>
           <sp who="#jochai">
             <speaker>JOCHAI.</speaker>
@@ -1067,15 +1032,13 @@
               <l>Wie eine Fabel klingen, die Euch nicht berührt.</l>
               <l>Lebt wohl! Nehmt guten Mut auf Eure Reise!</l>
             </lg>
-            <stage>
-              <hi>Ab nach außen.</hi>
-            </stage>
+            <stage>Ab nach außen.</stage>
           </sp>
           <sp who="#uriel">
             <speaker>URIEL.</speaker>
             <lg>
               <l>Du glaubst, daß ich noch jetzt in ferne Täler</l>
-              <l>Mich selbst verbannen würde <hi>dir</hi> zuliebe?</l>
+              <l>Mich selbst verbannen würde <emph>dir</emph> zuliebe?</l>
               <l>Weil ich schon einmal zagend mich und Judith</l>
               <l>Vor einem Kampf des Herzens retten wollte,</l>
               <l>Soll ich auch jetzt den Kampf des Geistes fliehn?</l>
@@ -1085,22 +1048,18 @@
               <l>Was kann in mir von Flucht noch weiter sprechen?</l>
               <l>Jetzt muß ich bleiben, wenn auch Herzen brechen.</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
-            <stage>
-              <hi>Der Vorhang fällt.</hi>
-            </stage>
+            <stage>Ab.</stage>
+            <stage>Der Vorhang fällt.</stage>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>2. Akt</head>
+        <head>Zweiter Aufzug.</head>
+        <stage>Manasses Garten auf seiner Villa. Im Hintergrunde erhebt sich eine mit Teppichen
+          belegte Estrade, zu welcher einige Stufen hinaufführen.</stage>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Manasse mit einem Streifen Papier in der Hand und lesend. Simon.</hi>
-          </stage>
+          <stage>Manasse mit einem Streifen Papier in der Hand und lesend. Simon.</stage>
           <sp who="#manasse">
             <speaker>MANASSE.</speaker>
             <lg>
@@ -1121,16 +1080,12 @@
           <sp who="#simon">
             <speaker>SIMON.</speaker>
             <l>Da kommt sie selbst; laßt sie Euch Rede stehn.</l>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweiter Auftritt.</head>
-          <stage>
-            <hi>Judith. Manasse.</hi>
-          </stage>
+          <stage>Judith. Manasse.</stage>
           <sp who="#judith">
             <speaker>JUDITH.</speaker>
             <lg>
@@ -1190,9 +1145,7 @@
               <l>Seit wann ist Vanderstraten denn so fromm?</l>
               <l>Der Freund van Dycks, des Rubens nur so gläubig?</l>
             </lg>
-            <stage>
-              <hi>Auf die Statuen zeigend.</hi>
-            </stage>
+            <stage>Auf die Statuen zeigend.</stage>
             <lg>
               <l>Elias und die sämtlichen Propheten</l>
               <l>Zertrümmern dir die Götterbilder hier,</l>
@@ -1282,7 +1235,7 @@
           <sp who="#judith">
             <speaker>JUDITH.</speaker>
             <lg>
-              <l>Und diese Rechnung schließt sich <hi>leicht,</hi> denkt Ihr –</l>
+              <l>Und diese Rechnung schließt sich <emph>leicht</emph>, denkt Ihr –</l>
               <l>Wie wenn Ihr Euer Soll und Haben prüft?</l>
             </lg>
           </sp>
@@ -1294,16 +1247,12 @@
               <l>Schütz' mich vor Leidenschaft! Du weißt, ich sehe,</l>
               <l>Was allzu ernst, nicht gern auf meinem Wege.</l>
             </lg>
-            <stage>
-              <hi>Er besteigt die Estrade.</hi>
-            </stage>
+            <stage>Er besteigt die Estrade.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <stage>
-            <hi>Judith allein.</hi>
-          </stage>
+          <stage>Judith allein.</stage>
           <sp who="#judith">
             <speaker>JUDITH.</speaker>
             <lg>
@@ -1329,9 +1278,7 @@
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <stage>
-            <hi>Uriel. Judith.</hi>
-          </stage>
+          <stage>Uriel. Judith.</stage>
           <sp who="#uriel">
             <speaker>URIEL.</speaker>
             <lg>
@@ -1458,13 +1405,9 @@
               <l>Und dennoch wird's geschehn – zum letzten Male,</l>
               <l>Judith!</l>
             </lg>
-            <stage>
-              <hi>Er ergreift ihre Hand.</hi>
-            </stage>
+            <stage>Er ergreift ihre Hand.</stage>
             <l>... Leb' wohl!</l>
-            <stage>
-              <hi>Erblickt Jochai.</hi>
-            </stage>
+            <stage>Erblickt Jochai.</stage>
             <lg>
               <l>Ha, Ben Jochai hier!</l>
               <l>Und Gäste ringsum? Sind wir nicht allein?</l>
@@ -1475,10 +1418,8 @@
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
-          <stage>
-            <hi>Ben Jochai tritt schon vorher glänzend und festlich gekleidet von der Terrasse. Die
-              Vorigen. Später Gäste. Zuletzt Manasse und de Silva.</hi>
-          </stage>
+          <stage>Ben Jochai tritt schon vorher glänzend und festlich gekleidet von der Terrasse. Die
+            Vorigen. Später Gäste. Zuletzt Manasse und de Silva.</stage>
           <sp who="#jochai">
             <speaker>JOCHAI.</speaker>
             <lg>
@@ -1491,45 +1432,31 @@
           <sp who="#judith">
             <speaker>JUDITH.</speaker>
             <l>Das eilt sich nicht! Denn hier in Amsterdam</l>
-            <stage>
-              <hi>Auf eine Feder am Hute Jochais zeigend.</hi>
-            </stage>
-            <l>Ist manchem <hi>Pfau</hi> die Weisheit nötiger!</l>
-            <stage>
-              <hi>Sie nimmt Uriels Arm und führt den Widerstrebenden die Stufen nach hinten hinauf.
-                Eine ferne Musik beginnt.</hi>
-            </stage>
+            <stage>Auf eine Feder am Hute Jochais zeigend.</stage>
+            <l>Ist manchem <emph>Pfau</emph> die Weisheit nötiger!</l>
+            <stage>Sie nimmt Uriels Arm und führt den Widerstrebenden die Stufen nach hinten hinauf.
+              Eine ferne Musik beginnt.</stage>
           </sp>
           <sp who="#jochai">
             <speaker>JOCHAI</speaker>
-            <stage>
-              <hi>allein.</hi>
-            </stage>
+            <stage>allein.</stage>
             <lg>
               <l>Zum letzten Male bietest du mir das!</l>
               <l>Wie süß ist Rache, die vom Schicksal kommt</l>
               <l>Und die man selber nicht zu schüren braucht!</l>
               <l>Sie führt ihn unerschrocken in den Saal –</l>
             </lg>
-            <stage>
-              <hi>Silva und Manasse erscheinen oben auf der </hi>
-            </stage>
-            <stage>
-              <hi>Terrasse.</hi>
-            </stage>
+            <stage>Silva und Manasse erscheinen oben auf der </stage>
+            <stage>Terrasse.</stage>
           </sp>
           <sp who="#manasse">
             <speaker>MANASSE</speaker>
-            <stage>
-              <hi>oben.</hi>
-            </stage>
+            <stage>oben.</stage>
             <l>Es darf nicht sein.</l>
           </sp>
           <sp who="#silva">
             <speaker>SILVA</speaker>
-            <stage>
-              <hi>oben.</hi>
-            </stage>
+            <stage>oben.</stage>
             <l>Geduld! Geduld!</l>
           </sp>
           <sp who="#manasse">
@@ -1553,9 +1480,7 @@
               <l>Die Sitte aber, sollt' er wissen, folgt</l>
               <l>Dem Urteil nicht, sie folgt dem Vorurteil.</l>
             </lg>
-            <stage>
-              <hi>Er geht nach innen. Silva steigt herunter.</hi>
-            </stage>
+            <stage>Er geht nach innen. Silva steigt herunter.</stage>
           </sp>
           <sp who="#jochai">
             <speaker>JOCHAI.</speaker>
@@ -1620,9 +1545,7 @@
           </sp>
           <sp who="#jochai">
             <speaker>JOCHAI</speaker>
-            <stage>
-              <hi>beiseite.</hi>
-            </stage>
+            <stage>beiseite.</stage>
             <l>Was werd' ich hören?</l>
           </sp>
           <sp who="#silva">
@@ -1685,7 +1608,7 @@
               <l>Das Jesuitenkloster in Cuença.</l>
               <l>Als sie vom Tajo sich hierher geflüchtet,</l>
               <l>Sind sie zum Judentum zurückgekehrt –</l>
-              <l>Ob Uriel <hi>auch?</hi> Es steht in seiner Macht,</l>
+              <l>Ob Uriel <emph>auch</emph>? Es steht in seiner Macht,</l>
               <l>Wenn er es will, sich Christ zu nennen.</l>
             </lg>
           </sp>
@@ -1715,26 +1638,20 @@
               <l>Ich Achtung vor dem Denker fühle, mir</l>
               <l>Erspart es doch – vor Plato zu erröten.</l>
             </lg>
-            <stage>
-              <hi>Er geht. Jochai folgt in freudiger Spannung.</hi>
-            </stage>
+            <stage>Er geht. Jochai folgt in freudiger Spannung.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <stage>
-            <hi>Manasse und andere Gäste. Herren und Damen kommen die Stufen der Estrade
-              herunter.</hi>
-          </stage>
+          <stage>Manasse und andere Gäste. Herren und Damen kommen die Stufen der Estrade
+            herunter.</stage>
           <sp who="#manasse">
             <speaker>MANASSE.</speaker>
             <lg>
               <l>Was sagst du, Simon – Priester an der Pforte?</l>
               <l>Rabbi de Santos? Eine seltne Ehre!</l>
             </lg>
-            <stage>
-              <hi>Uriel und Judith folgen.</hi>
-            </stage>
+            <stage>Uriel und Judith folgen.</stage>
           </sp>
           <sp who="#uriel">
             <speaker>URIEL.</speaker>
@@ -1746,9 +1663,7 @@
               <l>Was habt Ihr – blickt doch frei und offen!</l>
               <l>Wo ist de Silva?</l>
             </lg>
-            <stage>
-              <hi>Die Musik hört auf.</hi>
-            </stage>
+            <stage>Die Musik hört auf.</stage>
             <lg>
               <l>Ei, die Musiker!</l>
               <l><pb n="28"/> Was hört ihr auf, Vermittler spröder Seelen?</l>
@@ -1762,24 +1677,18 @@
               <l>Blickt dorthin, Judith;</l>
               <l>Die Priester sind es mit den Widderhörnern!</l>
             </lg>
-            <stage>
-              <hi>Alle blicken mit dem Ausdruck des Schreckens auf die Estrade.</hi>
-            </stage>
+            <stage>Alle blicken mit dem Ausdruck des Schreckens auf die Estrade.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Siebenter Auftritt.</head>
-          <stage>
-            <hi>Rabbi Santos, begleitet von vier Rabbinen, die langsam und feierlich kleine
-              gewundene Widderhörner an den Mund setzen und einen tiefen und lang ausgehaltenen Ton
-              blasen. Sie treten oben auf und verweilen auf der Estrade. Die Vorigen. Später Jochai
-              und Silva.</hi>
-          </stage>
+          <stage>Rabbi Santos, begleitet von vier Rabbinen, die langsam und feierlich kleine
+            gewundene Widderhörner an den Mund setzen und einen tiefen und lang ausgehaltenen Ton
+            blasen. Sie treten oben auf und verweilen auf der Estrade. Die Vorigen. Später Jochai
+            und Silva.</stage>
           <sp who="#manasse">
             <speaker>MANASSE</speaker>
-            <stage>
-              <hi>nachdem die Rabbinen jenen einen feierlichen Ton geblasen.</hi>
-            </stage>
+            <stage>nachdem die Rabbinen jenen einen feierlichen Ton geblasen.</stage>
             <lg>
               <l>Das Zeichen der Verfluchung! Und das hier</l>
               <l>In meinem stillen Frieden –</l>
@@ -1787,9 +1696,7 @@
           </sp>
           <sp who="#santos">
             <speaker>SANTOS</speaker>
-            <stage>
-              <hi>von oben mit feierlicher Stimme.</hi>
-            </stage>
+            <stage>von oben mit feierlicher Stimme.</stage>
             <lg>
               <l>Widderhörner</l>
               <l>Begrüßen euch! Gedenket Abrahams,</l>
@@ -1805,9 +1712,7 @@
               <l>Der Söhne Abrahams – Acosta, du!</l>
               <l>Du sei allein –!</l>
             </lg>
-            <stage>
-              <hi>Alle gehen von Uriel auf die andere Seite. Judith zaudert.</hi>
-            </stage>
+            <stage>Alle gehen von Uriel auf die andere Seite. Judith zaudert.</stage>
           </sp>
           <sp who="#santos">
             <speaker>SANTOS.</speaker>
@@ -1815,20 +1720,14 @@
               <l>Und Vanderstratens Tochter?</l>
               <l>Bekennst du dich nicht auch auf Adonai?</l>
             </lg>
-            <stage>
-              <hi>Judith geht langsam und zögernd zu den übrigen. Jochai und de Silva treten
-                auf.</hi>
-            </stage>
+            <stage>Judith geht langsam und zögernd zu den übrigen. Jochai und de Silva treten
+              auf.</stage>
           </sp>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <l>Auch sie! – O der Magnet des Wahns zieht mächtig!</l>
-            <stage>
-              <hi>Zu Santos.</hi>
-            </stage>
+            <stage>Zu Santos.</stage>
             <lg>
               <l>Glaubst du dort auf dem Sinai zu stehen?</l>
               <l>Hat Moses dich zu seinem Mund erwählt?</l>
@@ -1842,9 +1741,7 @@
           </sp>
           <sp who="#jochai">
             <speaker>JOCHAI</speaker>
-            <stage>
-              <hi>dazwischentretend.</hi>
-            </stage>
+            <stage>dazwischentretend.</stage>
             <lg>
               <l>Ihr Herren, was geschieht hier? Wie, de Santos,</l>
               <l>Wollt Unglück Ihr auf unsre Häupter laden?</l>
@@ -1855,7 +1752,7 @@
               <l>Ein Christ.</l>
             </lg>
           </sp>
-          <sp who="#alle">
+          <sp who="#alle_2-7">
             <speaker>ALLE.</speaker>
             <l>Ein Christ?</l>
           </sp>
@@ -1872,9 +1769,7 @@
           </sp>
           <sp who="#judith">
             <speaker>JUDITH</speaker>
-            <stage>
-              <hi>beiseite.</hi>
-            </stage>
+            <stage>beiseite.</stage>
             <l>Was ihn errettet, ist für mich der Tod.</l>
           </sp>
           <sp who="#santos">
@@ -1883,9 +1778,7 @@
               <l>Wenn Uriel Acosta Christ – verstummt</l>
               <l>Mein Mund.</l>
             </lg>
-            <stage>
-              <hi>Legt segnend die Hand auf die übrigen.</hi>
-            </stage>
+            <stage>Legt segnend die Hand auf die übrigen.</stage>
             <l>Gott segne Abrahams Geschlecht!</l>
           </sp>
           <sp who="#uriel">
@@ -1907,16 +1800,14 @@
           <sp who="#manasse">
             <speaker>MANASSE.</speaker>
             <lg>
-              <l>Gehn wir zu unserm Fest! Der <hi>Christ</hi> Acosta</l>
+              <l>Gehn wir zu unserm Fest! Der <emph>Christ</emph> Acosta</l>
               <l>Verzeiht, daß wir dabei in Speis' und Trank</l>
               <l>Den Sitten unsers Volks uns fügen müssen.</l>
             </lg>
           </sp>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>außer sich.</hi>
-            </stage>
+            <stage>außer sich.</stage>
             <lg>
               <l>Ich wäre Christ? Soll mir ein frecher Spott</l>
               <l>Die Hintertür des falschen Mitleids öffnen?</l>
@@ -1959,7 +1850,7 @@
               <l>Von meiner Mutter – alle sind sie wieder Juden.</l>
               <l>Ob auch von mir, der ich ein Jüngling schon</l>
               <l>Nach Amsterdam gekommen, ob auch ich</l>
-              <l>Den milden <hi>Gabriel,</hi> wie ich getauft,</l>
+              <l>Den milden <emph>Gabriel</emph>, wie ich getauft,</l>
               <l>Mir in den finstern Uriel wandeln will –</l>
               <l>Das steht mir frei und – offen sag' ich euch,</l>
               <l>Ins Allgemeine möcht' ich gerne tauchen</l>
@@ -2007,18 +1898,14 @@
               <l>So stirb am Weg, das Haupt gen West gerichtet!</l>
             </lg>
           </sp>
-          <sp who="#alle">
+          <sp who="#alle_2-7">
             <speaker>ALLE</speaker>
-            <stage>
-              <hi>mit gesenktem Haupte.</hi>
-            </stage>
+            <stage>mit gesenktem Haupte.</stage>
             <l>Wehe!</l>
           </sp>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Mich schaudert! Nicht für mich, nein, für den Wahn,</l>
               <l>Der so sich täuscht, dem Himmel zu gefallen.</l>
@@ -2033,11 +1920,9 @@
               <l>Verschlingend dich, wie Datan und Abiron –</l>
             </lg>
           </sp>
-          <sp who="#alle">
+          <sp who="#alle_2-7">
             <speaker>ALLE</speaker>
-            <stage>
-              <hi>mit gesenktem Haupte.</hi>
-            </stage>
+            <stage>mit gesenktem Haupte.</stage>
             <l>Wehe!</l>
           </sp>
           <sp who="#santos">
@@ -2064,9 +1949,7 @@
           </sp>
           <sp who="#judith">
             <speaker>JUDITH</speaker>
-            <stage>
-              <hi>tritt mutvoll hervor.</hi>
-            </stage>
+            <stage>tritt mutvoll hervor.</stage>
             <l>Das lügst du, Rabbi!</l>
           </sp>
           <sp who="#manasse">
@@ -2090,38 +1973,30 @@
               <l>Daß Fluch aus solchem Munde Segen bringt?</l>
               <l>Verdammt die Götter, die wir beide glauben!</l>
               <l>Es sind die wahren, ihnen lernet beten!</l>
-              <l>Er <hi>wird</hi> geliebt! Glaubt besseren Propheten!</l>
+              <l>Er <emph>wird</emph> geliebt! Glaubt besseren Propheten!</l>
             </lg>
-            <stage>
-              <hi>Sie stürzt an Uriels Brust.</hi>
-            </stage>
+            <stage>Sie stürzt an Uriels Brust.</stage>
           </sp>
           <sp who="#santos">
             <speaker>SANTOS.</speaker>
             <lg>
-              <l>Die Kirche sieht statt <hi>eines</hi> Opfers zwei –</l>
+              <l>Die Kirche sieht statt <emph>eines</emph> Opfers zwei –</l>
               <l>An diesem Ort kann kein Gerechter weilen.</l>
             </lg>
-            <stage>
-              <hi>Entfernt sich mit seinen Begleitern, indem er die Terrasse heruntersteigt und zur
-                Seite abgeht. Alle folgen in Bestürzung. Währenddessen</hi>
-            </stage>
+            <stage>Entfernt sich mit seinen Begleitern, indem er die Terrasse heruntersteigt und zur
+              Seite abgeht. Alle folgen in Bestürzung. Währenddessen</stage>
           </sp>
           <sp who="#jochai">
             <speaker>JOCHAI</speaker>
-            <stage>
-              <hi>zu Manasse und Judith.</hi>
-            </stage>
+            <stage>zu Manasse und Judith.</stage>
             <lg>
               <l>Die Himmelsfrage ist mir wenig wert –</l>
               <l>Ich sehe nur, was menschlich, den Verrat!</l>
               <l>Und dennoch glaub' auch ich den alten Göttern,</l>
               <l>Sie lehren uns das Süßeste: die Rache!</l>
             </lg>
-            <stage>
-              <hi>Er geht mit dem übrigen Teile der Gäste. Alle sind abgegangen bis auf Manasse,
-                Uriel und Judith.</hi>
-            </stage>
+            <stage>Er geht mit dem übrigen Teile der Gäste. Alle sind abgegangen bis auf Manasse,
+              Uriel und Judith.</stage>
           </sp>
           <sp who="#manasse">
             <speaker>MANASSE.</speaker>
@@ -2139,9 +2014,7 @@
               <l>Du wirst mir folgen, – Judith – in die Sitte!</l>
               <l>Was dann zu tun, das sei mit Schmerz erwogen!</l>
             </lg>
-            <stage>
-              <hi>Er geht.</hi>
-            </stage>
+            <stage>Er geht.</stage>
           </sp>
           <sp who="#judith">
             <speaker>JUDITH.</speaker>
@@ -2155,22 +2028,19 @@
               <l>O laß uns hoffen! Folge mir, mein Freund!</l>
               <l>Wer mutig will, der hat die Welt gewonnen.</l>
             </lg>
-            <stage>
-              <hi>Folgt dem Vater mit Uriel.</hi>
-            </stage>
-            <stage>
-              <hi>Der Vorhang fällt.</hi>
-            </stage>
+            <stage>Folgt dem Vater mit Uriel.</stage>
+            <stage>Der Vorhang fällt.</stage>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>3. Akt</head>
+        <head>Dritter Aufzug.</head>
+        <stage>Zimmer im Hause Vanderstratens zu Amsterdam. Es ist nach Vanderstratens Geschmack mit
+          Bildern und Statuetten geziert; diese letzten können auch auf dem Rande eines Kamins
+          stehen.</stage>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Manasse sitzt allein an einem Arbeitstisch und rechnet.</hi>
-          </stage>
+          <stage>Manasse sitzt allein an einem Arbeitstisch und rechnet.</stage>
           <sp who="#manasse">
             <speaker>MANASSE.</speaker>
             <lg>
@@ -2180,10 +2050,8 @@
               <l>Die schönsten Zahlen spült die Welle fort;</l>
               <l>Im Hafen nur, im Hafen kann man rechnen.</l>
             </lg>
-            <stage>
-              <hi>Er steht auf, macht einen Gang durchs Zimmer und nimmt dann ein anderes Buch vom
-                Tisch.</hi>
-            </stage>
+            <stage>Er steht auf, macht einen Gang durchs Zimmer und nimmt dann ein anderes Buch vom
+              Tisch.</stage>
             <lg>
               <l>Viel lieber les' ich hier dies kleine Buch!</l>
               <l>Die Bilder, Statuen, das neckende</l>
@@ -2202,10 +2070,8 @@
               <l>Was man bezahlt, ist der Besitz des Bildes!</l>
               <l>Dies heimlich stille, trauliche Gefühl,</l>
             </lg>
-            <stage>
-              <hi>Er nähert sich einem Bilde zur Seite und betrachtet es, indem er die Arme über dem
-                Rücken verschränkt.</hi>
-            </stage>
+            <stage>Er nähert sich einem Bilde zur Seite und betrachtet es, indem er die Arme über
+              dem Rücken verschränkt.</stage>
             <lg>
               <l>Das Schöne für sich selber zu genießen!</l>
               <l>Für sich allein, gestört von keinem Auge,</l>
@@ -2216,31 +2082,23 @@
               <l>Ein schönes Etwas einmal nur vorhanden!</l>
               <l>Und dieses Eine, Echte, Allbekannte,</l>
               <l>Wie die Geliebte heilig, unentweiht,</l>
-              <l><pb n="34"/> Nur <hi>uns</hi> gehörend, <hi>uns</hi> nur hingegeben –</l>
+              <l><pb n="34"/> Nur <emph>uns</emph> gehörend, <emph>uns</emph> nur hingegeben –</l>
               <l>Da sprechen diese Menschen noch von Zahlen!</l>
             </lg>
-            <stage>
-              <hi>Er kehrt zu dem großen Buche zurück.</hi>
-            </stage>
+            <stage>Er kehrt zu dem großen Buche zurück.</stage>
             <lg>
               <l>Und dennoch mahnen sie, wenn sie nicht stimmen! ...</l>
               <l>O schwere, schwere Sorge! ... Wenn ich wieder –?!</l>
             </lg>
-            <stage>
-              <hi>Er verfällt in trübes Sinnen.</hi>
-            </stage>
+            <stage>Er verfällt in trübes Sinnen.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweiter Auftritt.</head>
-          <stage>
-            <hi>Judith. Manasse. Später Simon.</hi>
-          </stage>
+          <stage>Judith. Manasse. Später Simon.</stage>
           <sp who="#judith">
             <speaker>JUDITH</speaker>
-            <stage>
-              <hi>nachdem sie ihn beobachtet.</hi>
-            </stage>
+            <stage>nachdem sie ihn beobachtet.</stage>
             <lg>
               <l>Ich such' Euch, Vater, und ich find' Euch nicht.</l>
               <l>In Euerm Abschluß scheint Ihr wie verloren.</l>
@@ -2295,9 +2153,7 @@
           </sp>
           <sp who="#judith">
             <speaker>JUDITH</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <l>Und ich lebe nur in ihr.</l>
           </sp>
           <sp who="#manasse">
@@ -2361,16 +2217,12 @@
           </sp>
           <sp who="#simon">
             <speaker>SIMON</speaker>
-            <stage>
-              <hi>meldet.</hi>
-            </stage>
+            <stage>meldet.</stage>
             <lg>
               <l>De Silva schickt und meldet, daß er käme –</l>
               <l>Im Augenblick schon dürft Ihr ihn erwarten.</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
           <sp who="#judith">
             <speaker>JUDITH.</speaker>
@@ -2419,15 +2271,11 @@
               <l>Du liebst den schönen Schein der Kunst; warum</l>
               <l>Den schöneren des besten Herzens nicht?</l>
             </lg>
-            <stage>
-              <hi>Sie eilt nach innen.</hi>
-            </stage>
+            <stage>Sie eilt nach innen.</stage>
           </sp>
           <sp who="#manasse">
             <speaker>MANASSE</speaker>
-            <stage>
-              <hi>ihr nachblickend und sein Hauptbuch nehmend.</hi>
-            </stage>
+            <stage>ihr nachblickend und sein Hauptbuch nehmend.</stage>
             <lg>
               <l>»O wüßt' ich irgendeine große Tat!«</l>
               <l>Die aber, die sie schmerzen würde, nimmt sie</l>
@@ -2437,9 +2285,7 @@
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <stage>
-            <hi>De Silva. Manasse.</hi>
-          </stage>
+          <stage>De Silva. Manasse.</stage>
           <sp who="#manasse">
             <speaker>MANASSE.</speaker>
             <lg>
@@ -2527,14 +2373,12 @@
               <l>Im Glauben wäre zweimal zwei gleich fünf;</l>
               <l>Doch geht mit der Philosophie, wenn sie</l>
               <l>Im Kinderglauben ein Geheimnis findet</l>
-              <l>Und, zwei mal zwei sei fünf, <hi>beweisen</hi> will!</l>
+              <l>Und, zwei mal zwei sei fünf, <emph>beweisen</emph> will!</l>
               <l>Verzeiht, ich muß mit meinen Schreibern rechnen;</l>
               <l>Da kommt das Einmaleins mir der Vernunft</l>
               <l>Beiläufig so in die gesunden Sinne.</l>
             </lg>
-            <stage>
-              <hi>Ab nach außen.</hi>
-            </stage>
+            <stage>Ab nach außen.</stage>
           </sp>
           <sp who="#silva">
             <speaker>SILVA.</speaker>
@@ -2543,14 +2387,10 @@
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <stage>
-            <hi>Uriel von innen. De Silva.</hi>
-          </stage>
+          <stage>Uriel von innen. De Silva.</stage>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>bleibt an der Tür stehen.</hi>
-            </stage>
+            <stage>bleibt an der Tür stehen.</stage>
             <lg>
               <l>Ich bin's, de Silva! Darf sich der Verfluchte</l>
               <l>Dem Anwalt der gerechten Seelen nahn?</l>
@@ -2589,7 +2429,7 @@
             <speaker>URIEL.</speaker>
             <lg>
               <l>Wo seh' ich eine Möglichkeit, de Silva?</l>
-              <l>Beglückt bin ich von eines <hi>Engels</hi> Liebe –</l>
+              <l>Beglückt bin ich von eines <emph>Engels</emph> Liebe –</l>
               <l>Doch darf ich nehmen, was ich zu behaupten</l>
               <l>Kein einziges erlaubtes Mittel kenne?</l>
             </lg>
@@ -2649,7 +2489,7 @@
               <l>Acosta! Sammelt, bitt' Euch, Eure Sinne!</l>
               <l>Soll Euer Wahnwitz für Charakter gelten?</l>
               <l>Dem Ausgestoßnen seine Tochter geben,</l>
-              <l>Heißt <hi>selbst</hi> sich um den Namen Jude bringen,</l>
+              <l>Heißt <emph>selbst</emph> sich um den Namen Jude bringen,</l>
               <l>Auch seid Ihr, wenn Ihr länger hier verweilt,</l>
               <l>Kaum ferner sicher mehr in Amsterdam –</l>
               <l>Die Christen schützen uns, nicht Euch.</l>
@@ -2738,7 +2578,7 @@
               <l>Im Glauben unsrer Väter schon bestand,</l>
               <l>Was tausend Jahre fest bestand, den Witz</l>
               <l>Der eigenen Vernunft so sehr verachten,</l>
-              <l>Daß ich nicht sagte: Es <hi>kann</hi> Irrtum sein.</l>
+              <l>Daß ich nicht sagte: Es <emph>kann</emph> Irrtum sein.</l>
               <l>Doch tausend Jahre dauert dieser Irrtum,</l>
               <l>Hat zehnmal Tausend über Lebensschmerzen</l>
               <l>Und Millionen übers Grab geleitet –</l>
@@ -2767,7 +2607,7 @@
               <l>Des Stabes tausendjährige Gewöhnung,</l>
               <l>Die dunkel ihre dunkle Welt begriff.</l>
               <l>Doch darum, weil die Wahrheit nicht das Glück,</l>
-              <l>Das volle Glück des Lebens <hi>gleich</hi> gewährt,</l>
+              <l>Das volle Glück des Lebens <emph>gleich</emph> gewährt,</l>
               <l>Weil der erlöste Blinde strauchelt, fällt;</l>
               <l>Darum soll er das ungewohnte Schauen</l>
               <l>Ins grüne, neue, junge Leben Irrtum,</l>
@@ -2786,16 +2626,12 @@
               <l>Sie wird dem Vater nicht die Grube graben</l>
               <l>Und mit Euch in die Wälder ziehn! Lebt wohl!</l>
             </lg>
-            <stage>
-              <hi>Zögernd.</hi>
-            </stage>
+            <stage>Zögernd.</stage>
             <lg>
               <l>Bei Euerm Gleichnis von der Blindheit hab' ich</l>
               <l>An Eure blinde Mutter denken müssen –</l>
             </lg>
-            <stage>
-              <hi>Will gehen und kehrt noch einmal zurück.</hi>
-            </stage>
+            <stage>Will gehen und kehrt noch einmal zurück.</stage>
             <lg>
               <l>Acosta! Tief in unserm Volke wurzelt</l>
               <l>Der Zauber der Familie! Sonst, o ja,</l>
@@ -2805,7 +2641,7 @@
               <l>Da wir verfolgt, da nichts uns blieb im Elend,</l>
               <l>Als dieser Trost, daß uns doch – Kinder lieben,</l>
               <l>Daß uns ein – Vater doch beschützt in Not,</l>
-              <l>Ein <hi>Bruder</hi> uns doch – seinen Bruder nennt,</l>
+              <l>Ein <emph>Bruder</emph> uns doch – seinen Bruder nennt,</l>
               <l>Da schlang sich inniger um uns dies Band</l>
               <l>Der Ehrfurcht vor dem heil'gen Herd des Hauses.</l>
               <l><pb n="41"/> Wir brachten Opfer unsrer Freiheit, mieden</l>
@@ -2823,16 +2659,12 @@
               <l>Ihr müßt Euch prüfen in dem Grund der Seele,</l>
               <l>Und was Euch edler dünkt, das tut. Lebt wohl!</l>
             </lg>
-            <stage>
-              <hi>Er geht nach außen.</hi>
-            </stage>
+            <stage>Er geht nach außen.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
-          <stage>
-            <hi>Uriel allein. Später Simon.</hi>
-          </stage>
+          <stage>Uriel allein. Später Simon.</stage>
           <sp who="#uriel">
             <speaker>URIEL.</speaker>
             <lg>
@@ -2867,16 +2699,12 @@
               <l>Hab' ich geirrt, so irrt' ich nur der Wahrheit;</l>
               <l>Den Priestern widerruf' ich nicht.</l>
             </lg>
-            <stage>
-              <hi>Er will nach außen gehen.</hi>
-            </stage>
+            <stage>Er will nach außen gehen.</stage>
           </sp>
           <sp who="#simon">
             <speaker>SIMON.</speaker>
             <l>Hier tretet ein!</l>
-            <stage>
-              <hi>Draußen.</hi>
-            </stage>
+            <stage>Draußen.</stage>
             <l>Dem Fräulein will ich's melden.</l>
           </sp>
           <sp who="#uriel">
@@ -2888,37 +2716,25 @@
           </sp>
           <sp who="#simon">
             <speaker>SIMON</speaker>
-            <stage>
-              <hi>draußen.</hi>
-            </stage>
+            <stage>draußen.</stage>
             <l>Hier! Hier! In diesem Saale wartet nur!</l>
-            <stage>
-              <hi>Die Tür öffnet sich.</hi>
-            </stage>
+            <stage>Die Tür öffnet sich.</stage>
           </sp>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>die Eintretenden erblickend.</hi>
-            </stage>
+            <stage>die Eintretenden erblickend.</stage>
             <l>O ew'ger Gott – was seh' ich – meine Mutter!</l>
-            <stage>
-              <hi>Tritt beiseite.</hi>
-            </stage>
+            <stage>Tritt beiseite.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <stage>
-            <hi>Esther Acosta. Ruben. Joel. Uriel. Esther ist blind und wird von Uriels beiden
-              Brüdern geführt.</hi>
-          </stage>
+          <stage>Esther Acosta. Ruben. Joel. Uriel. Esther ist blind und wird von Uriels beiden
+            Brüdern geführt.</stage>
           <sp who="#ruben">
             <speaker>RUBEN.</speaker>
             <l>Hier ruht Euch! Mutter!</l>
-            <stage>
-              <hi>Führt sie zum Sessel.</hi>
-            </stage>
+            <stage>Führt sie zum Sessel.</stage>
           </sp>
           <sp who="#esther">
             <speaker>ESTHER.</speaker>
@@ -2934,9 +2750,7 @@
           </sp>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>läßt sich ihr zu Füßen nieder.</hi>
-            </stage>
+            <stage>läßt sich ihr zu Füßen nieder.</stage>
             <l>Mutter!</l>
           </sp>
           <sp who="#esther">
@@ -2960,9 +2774,7 @@
           </sp>
           <sp who="#ruben">
             <speaker>RUBEN</speaker>
-            <stage>
-              <hi>trübe.</hi>
-            </stage>
+            <stage>trübe.</stage>
             <lg>
               <l>Wir sind um Judith hergekommen, Bruder!</l>
               <l>Die Mutter möcht' ein Wesen, das dich liebt</l>
@@ -2972,9 +2784,7 @@
           </sp>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>aufstehend.</hi>
-            </stage>
+            <stage>aufstehend.</stage>
             <lg>
               <l>Sehen? Ruben,</l>
               <l>O sage sehen! Sähst du sie mit Augen!</l>
@@ -3097,9 +2907,7 @@
           </sp>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <l>O Ahasveros!</l>
           </sp>
           <sp who="#esther">
@@ -3111,14 +2919,12 @@
               <l>Wo Juden wohnen, keine Freistatt finden.</l>
               <l><pb n="44"/> Und wenn ich sterbe, immer hab' ich doch</l>
               <l>Gedacht, wenn die, die sehen können, sterben,</l>
-              <l>So <hi>bricht</hi> ihr Auge – meines, hofft' ich, würde</l>
+              <l>So <emph>bricht</emph> ihr Auge – meines, hofft' ich, würde</l>
               <l>Dann einmal noch in alter Helle glänzen,</l>
               <l>Noch meine Kinder sehn – dich aber werd' ich</l>
               <l>Mit sehndem Aug' im Tod vergebens suchen</l>
             </lg>
-            <stage>
-              <hi>Uriel wendet sich gerührt ab.</hi>
-            </stage>
+            <stage>Uriel wendet sich gerührt ab.</stage>
             <l>Manasses schönes Kind bleibt lange aus.</l>
           </sp>
           <sp who="#joel">
@@ -3132,22 +2938,16 @@
         </div>
         <div type="scene">
           <head>Siebenter Auftritt.</head>
-          <stage>
-            <hi>Judith. Die Vorigen.</hi>
-          </stage>
+          <stage>Judith. Die Vorigen.</stage>
           <sp who="#judith">
             <speaker>JUDITH.</speaker>
             <lg>
               <l>Ihr habt nach mir verlangt, ihr werten Herren?</l>
               <l>Und jene greise, würd'ge blinde Frau? –</l>
             </lg>
-            <stage>
-              <hi>Steht eine Weile sinnend.</hi>
-            </stage>
+            <stage>Steht eine Weile sinnend.</stage>
             <l>Acosta – das ist? – Unsre Mutter!</l>
-            <stage>
-              <hi>Küßt ihr die Hände.</hi>
-            </stage>
+            <stage>Küßt ihr die Hände.</stage>
           </sp>
           <sp who="#esther">
             <speaker>ESTHER.</speaker>
@@ -3182,7 +2982,7 @@
             <speaker>ESTHER.</speaker>
             <lg>
               <l>O klingt das süß!</l>
-              <l>Ein <hi>Schimmer</hi> nur von dir ins dunkle Auge!</l>
+              <l>Ein <emph>Schimmer</emph> nur von dir ins dunkle Auge!</l>
               <l>Und nun, wenn mich der Tod ereilen wird,</l>
               <l>Darf ich ihn nicht einmal an dich vererben!</l>
             </lg>
@@ -3203,33 +3003,22 @@
           <sp who="#judith">
             <speaker>JUDITH.</speaker>
             <l>Versteh' ich? Uriel? Du wolltest – nicht –?</l>
-            <stage>
-              <hi>Sie blickt ihn lange mit zitternder Verzweiflung an.</hi>
-            </stage>
+            <stage>Sie blickt ihn lange mit zitternder Verzweiflung an.</stage>
             <lg>
               <l>Verzeihe, Himmel!</l>
               <l>Daß ich geglaubt, es würde diese Erde</l>
               <l>Für soviel Liebe schon beglücken können!</l>
             </lg>
-            <stage>
-              <hi>Sie sinkt zu den Füßen Esthers nieder.</hi>
-            </stage>
+            <stage>Sie sinkt zu den Füßen Esthers nieder.</stage>
             <pb n="45"/>
           </sp>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>kämpft mit sich.</hi>
-            </stage>
-            <p>
-              <hi> Er blickt die Gruppe der Mutter, der Geliebten, seiner Brüder, die trauernd
-                hinter dem Sessel der Mutter stehen, mit Rührung an. Für sich.</hi>
-            </p>
-            <p>O sprachst du wahr, de Silva! Ja es wurzelt</p>
-            <p>In unserm Volk tief die Familie!</p>
-            <stage>
-              <hi>Wild auffahrend.</hi>
-            </stage>
+            <stage>kämpft mit sich. Er blickt die Gruppe der Mutter, der Geliebten, seiner Brüder,
+              die trauernd hinter dem Sessel der Mutter stehen, mit Rührung an. Für sich.</stage>
+            <l>O sprachst du wahr, de Silva! Ja es wurzelt</l>
+            <l>In unserm Volk tief die Familie!</l>
+            <stage>Wild auffahrend.</stage>
             <l>Was schweigt ihr? Redet! Foltert mich nicht so!</l>
           </sp>
           <sp who="#judith">
@@ -3253,20 +3042,14 @@
               <l>Sei Wurm! Mensch, Tier, duck' unter – unter – unter!</l>
               <l>Gebt Rettung vor dem stummen Blick der Liebe!</l>
             </lg>
-            <stage>
-              <hi>Geht rückwärtsschreitend.</hi>
-            </stage>
+            <stage>Geht rückwärtsschreitend.</stage>
             <lg>
               <l>Wer schützt mich vor den stummen Augen? Schließt</l>
               <l>Die Augen! Blinde Mutter, schließ die Augen –</l>
             </lg>
-            <stage>
-              <hi>Er reißt sich mit gewaltigem Entschlusse los.</hi>
-            </stage>
+            <stage>Er reißt sich mit gewaltigem Entschlusse los.</stage>
             <l>Die Augen –! Ich tu's – ich tu's – ich tu's –</l>
-            <stage>
-              <hi>Rückwärts schwankt er an die Tür nach außen. Die Seinigen mächtig erregt.</hi>
-            </stage>
+            <stage>Rückwärts schwankt er an die Tür nach außen. Die Seinigen mächtig erregt.</stage>
           </sp>
           <sp who="#judith">
             <speaker>JUDITH.</speaker>
@@ -3297,15 +3080,11 @@
               <l>Wir wollen rufen auf der lauten Gasse:</l>
               <l>Das ist ein Sohn, der feine Mutter liebt!</l>
             </lg>
-            <stage>
-              <hi>Folgt Uriel rasch. Joel und Ruben führen sie.</hi>
-            </stage>
+            <stage>Folgt Uriel rasch. Joel und Ruben führen sie.</stage>
           </sp>
           <sp who="#judith">
             <speaker>JUDITH</speaker>
-            <stage>
-              <hi>allein am Fenster.</hi>
-            </stage>
+            <stage>allein am Fenster.</stage>
             <lg>
               <l>Er ist im Hof – im Mantel kaum verhüllt,</l>
               <l>Mit bloßem Haupte stürmt er wild dahin –</l>
@@ -3313,9 +3092,7 @@
               <l>Er zögert – diese Straße dort – links oder – rechts?</l>
               <l><pb n="46"/> Er geht – er geht den Weg zur Synagoge!</l>
             </lg>
-            <stage>
-              <hi>Sie entfernt, sich vom Fenster.</hi>
-            </stage>
+            <stage>Sie entfernt, sich vom Fenster.</stage>
             <lg>
               <l>So plötzlich das? Und doch vielleicht – um mich?</l>
               <l>So plötzlich und vielleicht zu rasch – O Himmel,</l>
@@ -3325,29 +3102,25 @@
               <l>Sein Blick war matt wie eines Sterbenden –</l>
               <l>Kalt seine Hand, die Knie zitterten –</l>
             </lg>
-            <stage>
-              <hi>Stürzt ans Fenster und ruft hinaus.</hi>
-            </stage>
+            <stage>Stürzt ans Fenster und ruft hinaus.</stage>
             <lg>
               <l>Laß ab! Laß ab, Acosta – tu es nicht! – – Zu spät!</l>
               <l>Verhängnis, strafe gnädig unsre Schuld!</l>
             </lg>
-            <stage>
-              <hi>Sie sinkt in einen Sessel.</hi>
-            </stage>
-            <stage>
-              <hi>Der Vorhang fällt.</hi>
-            </stage>
+            <stage>Sie sinkt in einen Sessel.</stage>
+            <stage>Der Vorhang fällt.</stage>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>4. Akt</head>
+        <head>Vierter Aufzug.</head>
+        <stage>Im Tempel.</stage>
+        <stage>Ein niedriges Gemach, rechts und links mit offenen Eingängen. An den Wänden sind die
+          Gesetzestafeln mit hebräischen Buchstaben gemalt. Im Hintergrunde trennt ein großer
+          Vorhang dies Gemach vom Innern der Synagoge, das erst später sichtbar wird.</stage>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Santos. De Silva treten auf. Später Diener.</hi>
-          </stage>
+          <stage>Santos. De Silva treten auf. Später Diener.</stage>
           <sp who="#silva">
             <speaker>SILVA.</speaker>
             <l>Und niemand ward inzwischen eingelassen?</l>
@@ -3394,9 +3167,7 @@
           </sp>
           <sp who="#silva">
             <speaker>SILVA</speaker>
-            <stage>
-              <hi>beiseite.</hi>
-            </stage>
+            <stage>beiseite.</stage>
             <l>Großmüt'ge fromme Vorsicht das!</l>
           </sp>
           <sp who="#santos">
@@ -3448,11 +3219,9 @@
               <l>Die Prüfungszeit verbietet mit der Welt</l>
               <l>Jedweden, selbst den schriftlichen Verkehr.</l>
             </lg>
-            <stage>
-              <hi>Ein Diener bringt einen Brief.</hi>
-            </stage>
+            <stage>Ein Diener bringt einen Brief.</stage>
           </sp>
-          <sp who="#diener">
+          <sp who="#diener_4-1">
             <speaker>DIENER.</speaker>
             <l>An Uriel Acosta dieser Brief.</l>
           </sp>
@@ -3460,7 +3229,7 @@
             <speaker>SANTOS.</speaker>
             <l>Ihr wißt, daß er nicht angenommen wird.</l>
           </sp>
-          <sp who="#diener">
+          <sp who="#diener_4-1">
             <speaker>DIENER.</speaker>
             <lg>
               <l>Sein Bruder war es, der ihn brachte, Ruben;</l>
@@ -3475,9 +3244,7 @@
               <l>Daß eine Botschaft in die Zelle dringe,</l>
               <l>Wo Reue sich zur Buße vorbereitet.</l>
             </lg>
-            <stage>
-              <hi>Der Diener geht mit dem Briefe ab.</hi>
-            </stage>
+            <stage>Der Diener geht mit dem Briefe ab.</stage>
           </sp>
           <sp who="#silva">
             <speaker>SILVA.</speaker>
@@ -3514,24 +3281,18 @@
               <l>Daß eines solchen Mannes Unterwerfung</l>
               <l>Den Zauber Eures Priestertums vermehrt!</l>
               <l>Ich wünsche, daß sich dieser Tag zum Guten wende</l>
-              <l>Und daß <hi>Ihr seine</hi> Reue nicht bereut.</l>
+              <l>Und daß <emph>Ihr seine</emph> Reue nicht bereut.</l>
             </lg>
-            <stage>
-              <hi>Ab nach außen.</hi>
-            </stage>
+            <stage>Ab nach außen.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweiter Auftritt.</head>
-          <stage>
-            <hi>Rabbi Akiba, ein hochbetagter Greis, geführt von zwei jüngeren Rabbinen. Rabbi van
-              der Embden mit einer Pergamentrolle. Santos. Später Uriel.</hi>
-          </stage>
+          <stage>Rabbi Akiba, ein hochbetagter Greis, geführt von zwei jüngeren Rabbinen. Rabbi van
+            der Embden mit einer Pergamentrolle. Santos. Später Uriel.</stage>
           <sp who="#akiba">
             <speaker>AKIBA</speaker>
-            <stage>
-              <hi>den man zu dem Ehrensessel an den Tisch geführt hat.</hi>
-            </stage>
+            <stage>den man zu dem Ehrensessel an den Tisch geführt hat.</stage>
             <l>Bringt Ihr den Widerruf, van Embden?</l>
           </sp>
           <sp who="#embden">
@@ -3569,9 +3330,7 @@
               <l>In unserm Talmud kann man jedes lesen,</l>
               <l>Und alles ist schon einmal dagewesen.</l>
             </lg>
-            <stage>
-              <hi>Uriel tritt blaß und verfallen auf.</hi>
-            </stage>
+            <stage>Uriel tritt blaß und verfallen auf.</stage>
             <lg>
               <l>Setzt Euch, Acosta! Drüben steht – nicht wahr,</l>
               <l>Dort drüben steht ein Stuhl, Rabbinen? Wie?</l>
@@ -3579,9 +3338,7 @@
               <l>Und neunzig Jahre sieht man wohl</l>
               <l>Die müden Füße – nach – die müden Füße!</l>
             </lg>
-            <stage>
-              <hi>Er setzt sich.</hi>
-            </stage>
+            <stage>Er setzt sich.</stage>
           </sp>
           <sp who="#santos">
             <speaker>SANTOS.</speaker>
@@ -3590,7 +3347,7 @@
           <sp who="#silva">
             <speaker>SILVA.</speaker>
             <lg>
-              <l>Laßt <hi>mich,</hi> de Santos – Ben Akiba hat</l>
+              <l>Laßt <emph>mich</emph>, de Santos – Ben Akiba hat</l>
               <l>Mit Uriel zu reden – alles dagewesen!</l>
               <l>Seht denn, mein junger Uriel Acosta –</l>
               <l>Zwei Wege gab es immer für die Zweifler,</l>
@@ -3603,7 +3360,7 @@
             <speaker>URIEL.</speaker>
             <lg>
               <l>Ich will den kurzen! Tötet mich! Nur rasch –</l>
-              <l>Ich will mich nicht besinnen, <hi>wie</hi> ich sterbe.</l>
+              <l>Ich will mich nicht besinnen, <emph>wie</emph> ich sterbe.</l>
             </lg>
           </sp>
           <sp who="#akiba">
@@ -3667,13 +3424,9 @@
               <l>Bewiesen ist die Offenbarung Gottes,</l>
               <l>Weil sie in unserm Bund geschrieben steht,</l>
             </lg>
-            <stage>
-              <hi>Zu Santos.</hi>
-            </stage>
+            <stage>Zu Santos.</stage>
             <l>Von Euch nicht –</l>
-            <stage>
-              <hi>Zu Acosta.</hi>
-            </stage>
+            <stage>Zu Acosta.</stage>
             <l>nicht von Euch will ich's bewiesen.</l>
           </sp>
           <sp who="#embden">
@@ -3718,9 +3471,7 @@
               <l>Die irre wurden durch zuvieles Wissen,</l>
               <l>Da war</l>
             </lg>
-            <stage>
-              <hi>Halb zu den übrigen Rabbinen gewendet.</hi>
-            </stage>
+            <stage>Halb zu den übrigen Rabbinen gewendet.</stage>
             <lg>
               <l>ein großer Zweifler schon, mit Namen</l>
               <l><pb n="51"/> Elisa Ben Abuja, Schüler selbst</l>
@@ -3728,15 +3479,12 @@
               <l>Und Rabbi Mehir wieder war sein Schüler.</l>
               <l>Und weil er zweifelte,</l>
             </lg>
-            <stage>
-              <hi>Steht auf.</hi>
-            </stage>
+            <stage>Steht auf.</stage>
             <lg>
               <l>ward er verflucht.</l>
               <l>Elisa Ben Abuja war wie du,</l>
               <l>Man scheute sich, den Namen auszusprechen,</l>
-              <l>Und hieß ihn Acher – Acher heißt der <hi>andre,</hi>
-              </l>
+              <l>Und hieß ihn Acher – Acher heißt der <emph>andre</emph>,</l>
               <l>Der andre nur, so schreibt von ihm der Talmud – –</l>
               <l>Der andre hieß Elisa, und es stieg,</l>
               <l>Als er gestorben, dunkel aus dem Grabe</l>
@@ -3747,9 +3495,7 @@
               <l>Und aus dem Grabe rauchte es nicht mehr.</l>
               <l>Ein solcher Acher bist du – Es war alles da.</l>
             </lg>
-            <stage>
-              <hi>Setzt sich.</hi>
-            </stage>
+            <stage>Setzt sich.</stage>
           </sp>
           <sp who="#uriel">
             <speaker>URIEL.</speaker>
@@ -3758,18 +3504,17 @@
               <l>Der Rauch des Acher ist die Feuerseele,</l>
               <l>Der Flammengeist, den ihr mit ihm begrubt!</l>
               <l>Ein Acher bin ich selbst, ich bin der andre,</l>
-              <l>Der <hi>ewig</hi> andre; denn im Anderssein</l>
+              <l>Der <emph>ewig</emph> andre; denn im Anderssein</l>
               <l>Liegt die Gewähr des ewigen Entstehens.</l>
               <l>Und wie der Talmud doch zu deuten ist,</l>
-              <l>So hört! Ein Acher, dünkt mich, lebte <hi>nie!</hi>
-              </l>
+              <l>So hört! Ein Acher, dünkt mich, lebte <emph>nie</emph>!</l>
               <l>Der Acher ist das Bild des reinen Denkens,</l>
               <l>Denn nur im andern seh' ich, wie ich bin,</l>
               <l>Im andern fühl' ich meine eigne Wahrheit,</l>
               <l>Im andern lern' ich meine Unterscheidung,</l>
               <l>Das andre ist des Zweifels heiligstes</l>
               <l>Symbol. Der Zweifel ist des Glaubens Nahrung –</l>
-              <l>Und jeder Denker muß <hi>sich</hi> Acher sein.</l>
+              <l>Und jeder Denker muß <emph>sich</emph> Acher sein.</l>
               <l>Ja, wie der Talmud klüger ist denn ihr,</l>
               <l>So gibt er Achern, der ein Bild nur ist,</l>
               <l>Der nie gelebt hat, einen großen Lehrer</l>
@@ -3795,17 +3540,13 @@
           </sp>
           <sp who="#santos">
             <speaker>SANTOS</speaker>
-            <stage>
-              <hi>gibt Uriel das Papier.</hi>
-            </stage>
+            <stage>gibt Uriel das Papier.</stage>
             <lg>
               <l>Euch beugt das Schicksal nur, die Demut nicht.</l>
               <l>Von dem, was Eure Lippen hier bekennen,</l>
               <l>Weiß Euer Geist nichts, der im Argen bleibt.</l>
             </lg>
-            <stage>
-              <hi>Zeigt nach hinten.</hi>
-            </stage>
+            <stage>Zeigt nach hinten.</stage>
             <lg>
               <l>Dort auf dem Tabernakel lest die Sünden,</l>
               <l>Der Ihr Euch zeiht mit künstlicher Verstellung</l>
@@ -3844,29 +3585,19 @@
               <l>Das Neue nur ist droben! Hier war alles</l>
               <l>Schon einmal da – schon alles dagewesen –</l>
             </lg>
-            <stage>
-              <hi>Während er nach rechts abgeführt wird.</hi>
-            </stage>
+            <stage>Während er nach rechts abgeführt wird.</stage>
             <l>Und fleißig Talmud lesen – junger Acher!</l>
-            <stage>
-              <hi>Im Abgehen.</hi>
-            </stage>
+            <stage>Im Abgehen.</stage>
             <l>Schon dagewesen – alles dagewesen.</l>
-            <stage>
-              <hi>Santos und Embden folgen.</hi>
-            </stage>
+            <stage>Santos und Embden folgen.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <stage>
-            <hi>Uriel allein. Dann Ruben.</hi>
-          </stage>
+          <stage>Uriel allein. Dann Ruben.</stage>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>das Pergament betrachtend.</hi>
-            </stage>
+            <stage>das Pergament betrachtend.</stage>
             <lg>
               <l>Entehrendes Geständnis, du stehst treuer</l>
               <l>Auf diesem Pergamente nicht gemalt</l>
@@ -3893,23 +3624,19 @@
               <l>Klingt mir's im Ohre: Sie bewegt sich doch –</l>
               <l>Und sie bewegt sich doch –</l>
             </lg>
-            <stage>
-              <hi>Hinter der Szene beginnt ein Psalm, von Kindern gesungen.</hi>
-            </stage>
+            <stage>Hinter der Szene beginnt ein Psalm, von Kindern gesungen.</stage>
             <lg>
               <l>Ha, diese Stimmen!</l>
               <l>Akkorde unschuldsvoller Kinderseelen!</l>
               <l>Nicht wissend singen Kinder Rachepsalmen –</l>
               <l>Muß es denn sein? Allmächtiger dort oben,</l>
-              <l>Wie ist das <hi>dir,</hi> wenn ich mich krümme – kann</l>
+              <l>Wie ist das <emph>dir</emph>, wenn ich mich krümme – kann</l>
               <l>Kein Arm herniederlangen aus dem Nichts?</l>
             </lg>
           </sp>
           <sp who="#ruben">
             <speaker>RUBEN</speaker>
-            <stage>
-              <hi>hinter der Szene.</hi>
-            </stage>
+            <stage>hinter der Szene.</stage>
             <l>Ich muß – laßt mich zu ihm – ich muß!</l>
           </sp>
           <sp who="#uriel">
@@ -3921,16 +3648,15 @@
           </sp>
           <sp who="#ruben">
             <speaker>RUBEN</speaker>
-            <stage>
-              <hi>auftretend.</hi>
-            </stage>
+            <stage>auftretend.</stage>
             <l>Uriel!</l>
           </sp>
           <sp who="#uriel">
             <speaker>URIEL.</speaker>
             <lg>
               <l>Bruder,</l>
-              <l>Nicht <hi>vor</hi> der Schmach, nein <hi>nach ihr</hi> brauch' ich Liebe!</l>
+              <l>Nicht <emph>vor</emph> der Schmach, nein <emph>nach ihr</emph> brauch' ich
+                Liebe!</l>
             </lg>
           </sp>
           <sp who="#ruben">
@@ -3996,15 +3722,11 @@
               <l>Die Mutter gab die eine mir zurück –</l>
               <l>Die andre –</l>
             </lg>
-            <stage>
-              <hi>Es erschallt der Widderhörnerton.</hi>
-            </stage>
+            <stage>Es erschallt der Widderhörnerton.</stage>
           </sp>
           <sp who="#ruben">
             <speaker>RUBEN</speaker>
-            <stage>
-              <hi>will ihn zurückhalten.</hi>
-            </stage>
+            <stage>will ihn zurückhalten.</stage>
             <l>Judith?</l>
           </sp>
           <sp who="#uriel">
@@ -4013,19 +3735,15 @@
               <l>Laß mich, Bruder! Sieh,</l>
               <l>Der stumme Blick der Liebe Judiths winkt – –!</l>
             </lg>
-            <stage>
-              <hi>Er stürzt nach hinten. Der Choral hört auf.</hi>
-            </stage>
+            <stage>Er stürzt nach hinten. Der Choral hört auf.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt</head>
-          <stage>
-            <hi>Hinten wurde der Vorhang aufgezogen. Man sieht die Synagoge. Eine Erhöhung von wenig
-              Stufen führt auf das Tabernakel, von wo herab man in den durch Kron- und Wandleuchter
-              erhellten Raum sieht. Auf dem Tabernakel sitzen: Santos, Embden und zwei Rabbinen mit
-              Taleds (Gebetschleiern) auf dem Haupte. Die Vorigen</hi>
-          </stage>
+          <stage>Hinten wurde der Vorhang aufgezogen. Man sieht die Synagoge. Eine Erhöhung von
+            wenig Stufen führt auf das Tabernakel, von wo herab man in den durch Kron- und
+            Wandleuchter erhellten Raum sieht. Auf dem Tabernakel sitzen: Santos, Embden und zwei
+            Rabbinen mit Taleds (Gebetschleiern) auf dem Haupte. Die Vorigen</stage>
           <sp who="#santos">
             <speaker>SANTOS.</speaker>
             <lg>
@@ -4035,9 +3753,7 @@
           </sp>
           <sp who="#ruben">
             <speaker>RUBEN</speaker>
-            <stage>
-              <hi>kämpft mit sich, die Wahrheit zu sagen.</hi>
-            </stage>
+            <stage>kämpft mit sich, die Wahrheit zu sagen.</stage>
             <lg>
               <l>Nein, Bruder!</l>
               <l>Judith – wird –</l>
@@ -4053,9 +3769,7 @@
               <l>Nach Hussens Feuertod nicht neidisch schielend,</l>
               <l>Empor zum dreimal blut'gern Tod der Schande!</l>
             </lg>
-            <stage>
-              <hi>Er geht entschlossen die Stufen hinan.</hi>
-            </stage>
+            <stage>Er geht entschlossen die Stufen hinan.</stage>
           </sp>
           <sp who="#ruben">
             <speaker>RUBEN.</speaker>
@@ -4070,16 +3784,12 @@
           </sp>
           <sp who="#santos">
             <speaker>SANTOS</speaker>
-            <stage>
-              <hi>hinaussprechend.</hi>
-            </stage>
+            <stage>hinaussprechend.</stage>
             <l>Hör' Israel, und jauchzet alle Lande!</l>
           </sp>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>liest aus dem Pergament, unter ferner Begleitung einer Musik.</hi>
-            </stage>
+            <stage>liest aus dem Pergament, unter ferner Begleitung einer Musik.</stage>
             <lg>
               <l>»Ich Uriel Acosta, von Geburt</l>
               <l>Ein Portugiese, Jude meines Glaubens,</l>
@@ -4103,9 +3813,7 @@
           </sp>
           <sp who="#ruben">
             <speaker>RUBEN</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <l>Die Lüge trifft dich nicht.</l>
           </sp>
           <sp who="#uriel">
@@ -4125,10 +3833,8 @@
               <l>Gefälscht hab' ich die Worte der Propheten</l>
               <l>Mit schadenfroher Lust an meiner Lüge –</l>
             </lg>
-            <stage>
-              <hi>Er kann kaum noch weiter und sinkt schon ohnmächtig. Die beiden Rabbinen halten
-                ihn.</hi>
-            </stage>
+            <stage>Er kann kaum noch weiter und sinkt schon ohnmächtig. Die beiden Rabbinen halten
+              ihn.</stage>
             <lg>
               <l>Und nunmehr – fühl' ich mich – so tief verworfen</l>
               <l>In dieser Eitelkeit auf meine Meinung,</l>
@@ -4142,15 +3848,11 @@
               <l>Erhebe seinen Fuß, – um – über – mich</l>
               <l>Hinweg – –«</l>
             </lg>
-            <stage>
-              <hi>Er sinkt nieder.</hi>
-            </stage>
+            <stage>Er sinkt nieder.</stage>
           </sp>
           <sp who="#ruben">
             <speaker>RUBEN</speaker>
-            <stage>
-              <hi>nimmt die Rolle und liest.</hi>
-            </stage>
+            <stage>nimmt die Rolle und liest.</stage>
             <l>Was hör' ich?</l>
           </sp>
           <sp who="#santos">
@@ -4165,24 +3867,16 @@
           </sp>
           <sp who="#ruben">
             <speaker>RUBEN</speaker>
-            <stage>
-              <hi>außer sich.</hi>
-            </stage>
+            <stage>außer sich.</stage>
             <l>Ihr schändet keinen oder mich mit ihm!</l>
-            <stage>
-              <hi>Er stürzt davon. Uriel wurde inzwischen bewußtlos vom Tabernakel nach hinten
-                hinuntergetragen. Die Priester folgen.</hi>
-            </stage>
-            <stage>
-              <hi>Statt der Musik hört man fortdauerndes Gebetmurmeln.</hi>
-            </stage>
+            <stage>Er stürzt davon. Uriel wurde inzwischen bewußtlos vom Tabernakel nach hinten
+              hinuntergetragen. Die Priester folgen.</stage>
+            <stage>Statt der Musik hört man fortdauerndes Gebetmurmeln.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
-          <stage>
-            <hi>Jochai, De Silva kommen eilends von vorn.</hi>
-          </stage>
+          <stage>Jochai, De Silva kommen eilends von vorn.</stage>
           <sp who="#silva">
             <speaker>SILVA.</speaker>
             <lg>
@@ -4192,9 +3886,7 @@
           </sp>
           <sp who="#jochai">
             <speaker>JOCHAI</speaker>
-            <stage>
-              <hi>hinausblickend.</hi>
-            </stage>
+            <stage>hinausblickend.</stage>
             <lg>
               <l>Sieh da! Du Stolzer! Krümmst du dich im Staube!</l>
               <l>Er soll es hören, ja im Staube hören,</l>
@@ -4203,26 +3895,20 @@
               <l>Judith ist mein, und keine Siegespalme</l>
               <l>Wird dir aus ihrer Hand entgegenblühn!</l>
             </lg>
-            <stage>
-              <hi>Er eilt über das Tabernakel hinweg.</hi>
-            </stage>
+            <stage>Er eilt über das Tabernakel hinweg.</stage>
           </sp>
           <sp who="#silva">
             <speaker>SILVA</speaker>
-            <stage>
-              <hi>an den Stufen.</hi>
-            </stage>
+            <stage>an den Stufen.</stage>
             <lg>
               <l>Ihr Schicksalsmächte, seid ihr denn dieselben</l>
-              <l>Die an dem Tor des <hi>Himmels</hi> Wache halten?</l>
+              <l>Die an dem Tor des <emph>Himmels</emph> Wache halten?</l>
               <l>Sind Cherubim mit Flammenschwertern Engel,</l>
               <l>Sind es Dämonen aus der Unterwelt –?</l>
               <l>Wie konnte das geschehn? Ich sinn' und klage,</l>
               <l>Indessen Übermut dort triumphiert.</l>
             </lg>
-            <stage>
-              <hi>Er steigt höher und sieht hinaus.</hi>
-            </stage>
+            <stage>Er steigt höher und sieht hinaus.</stage>
             <lg>
               <l>Jochai will der erste über ihn</l>
               <l>Hinweg mit seinem Fuße schreiten. Ha,</l>
@@ -4238,10 +3924,8 @@
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <stage>
-            <hi>Santos, Embden, Rabbinen treten unten in Bestürzung auf. Die Gemeinde. Darauf
-              Uriel.</hi>
-          </stage>
+          <stage>Santos, Embden, Rabbinen treten unten in Bestürzung auf. Die Gemeinde. Darauf
+            Uriel.</stage>
           <sp who="#santos">
             <speaker>SANTOS.</speaker>
             <l>Die Türen auf!</l>
@@ -4250,15 +3934,13 @@
             <speaker>EMBDEN.</speaker>
             <l>Entlaßt das Volk. Er frevelt –!</l>
           </sp>
-          <sp who="#alle">
+          <sp who="#alle_4-6">
             <speaker>ALLE.</speaker>
             <l>Er lästert!</l>
           </sp>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>erscheint in wildem Aufzuge, entstellt, auf dem Tabernakel.</hi>
-            </stage>
+            <stage>erscheint in wildem Aufzuge, entstellt, auf dem Tabernakel.</stage>
             <lg>
               <l>Schweigt! Ihr alle schweigt – ich kenn' euch alle –!</l>
               <l>Der reiche Ben Jochai – war's Jochai,</l>
@@ -4301,14 +3983,9 @@
           </sp>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>kämpft, sich an diese Nachricht zu gewöhnen.</hi>
-            </stage>
+            <stage>kämpft, sich an diese Nachricht zu gewöhnen. Seine Brust hebt sich, seine Augen
+              rollen. Endlich stürzt er verzweifelnd an Silvas Brust.</stage>
             <lg>
-              <l>
-                <hi> Seine Brust hebt sich, seine Augen rollen. Endlich stürzt er verzweifelnd an
-                  Silvas Brust.</hi>
-              </l>
               <l>Ich gab den Tod mir um zwei Leichen, Silva!</l>
               <l>O allzu sterblich sind die Sterblichen!</l>
             </lg>
@@ -4322,15 +3999,11 @@
           </sp>
           <sp who="#uriel">
             <speaker>URIEL.</speaker>
-            <l>Noch Sühnung? <hi>Hört! Und sie bewegt </hi>
-              <hi>sich doch.</hi>
-            </l>
+            <l>Noch Sühnung? <emph>Hört! Und sie bewegt sich doch.</emph></l>
           </sp>
           <sp who="#silva">
             <speaker>SILVA</speaker>
-            <stage>
-              <hi>beiseite.</hi>
-            </stage>
+            <stage>beiseite.</stage>
             <l>Das Wort des Galilei?</l>
           </sp>
           <sp who="#uriel">
@@ -4349,7 +4022,7 @@
               <l>Und rufe: Was ich las – es ist nicht wahr!</l>
             </lg>
           </sp>
-          <sp who="#santos #alle">
+          <sp who="#santos #alle_4-6">
             <speaker>SANTOS UND ALLE.</speaker>
             <l>Hinweg, hinweg mit ihm!</l>
           </sp>
@@ -4390,9 +4063,7 @@
               <l>Ich bin ein Mensch wie dieser Gott des Zorns,</l>
               <l>Und will ihm dienen, euerm Gott der Rache!</l>
             </lg>
-            <stage>
-              <hi>Er stürzt fort.</hi>
-            </stage>
+            <stage>Er stürzt fort.</stage>
           </sp>
           <sp who="#silva">
             <speaker>SILVA.</speaker>
@@ -4406,28 +4077,23 @@
           </sp>
           <sp who="#santos">
             <speaker>SANTOS</speaker>
-            <stage>
-              <hi>zu den Rabbinen.</hi>
-            </stage>
+            <stage>zu den Rabbinen.</stage>
             <lg>
               <l>Was zu beschließen, wird Akiba sagen.</l>
               <l>Wir sehn uns morgen auf Jochais Hochzeit.</l>
             </lg>
-            <stage>
-              <hi>Der Vorhang fällt.</hi>
-            </stage>
+            <stage>Der Vorhang fällt.</stage>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>5. Akt</head>
+        <head>Fünfter Aufzug.</head>
+        <stage>Im Garten der Villa Manasses.</stage>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Männer und Frauen gehen nach hinten auf die Estrade. Dann treten Diener auf, die auf
-              silbernen Schalen goldene Weinkannen über die Bühne tragen. Zuletzt treten von rechts
-              Jochai reich als Bräutigam gekleidet, Silva und Gäste auf.</hi>
-          </stage>
+          <stage>Männer und Frauen gehen nach hinten auf die Estrade. Dann treten Diener auf, die
+            auf silbernen Schalen goldene Weinkannen über die Bühne tragen. Zuletzt treten von
+            rechts Jochai reich als Bräutigam gekleidet, Silva und Gäste auf.</stage>
           <sp who="#jochai">
             <speaker>JOCHAI.</speaker>
             <lg>
@@ -4476,10 +4142,8 @@
         </div>
         <div type="scene">
           <head>Zweiter Auftritt.</head>
-          <stage>
-            <hi>Es treten wieder mehrere Paare von Männern und Frauen auf. Dann folgt Judith, im
-              weißen Brautgewand, geführt von Manasse. Die Vorigen. Zuletzt ein Diener.</hi>
-          </stage>
+          <stage>Es treten wieder mehrere Paare von Männern und Frauen auf. Dann folgt Judith, im
+            weißen Brautgewand, geführt von Manasse. Die Vorigen. Zuletzt ein Diener.</stage>
           <sp who="#jochai">
             <speaker>JOCHAI.</speaker>
             <lg>
@@ -4495,9 +4159,7 @@
           <sp who="#judith">
             <speaker>JUDITH.</speaker>
             <l>Willkommen, werte Freunde!</l>
-            <stage>
-              <hi>Zu Jochai.</hi>
-            </stage>
+            <stage>Zu Jochai.</stage>
             <lg>
               <l>Ausgestellt</l>
               <l>Sind doch die Schriften, die versprochenen?</l>
@@ -4540,9 +4202,7 @@
           <sp who="#judith">
             <speaker>JUDITH.</speaker>
             <l>Wohlan! Wir – gehn –</l>
-            <stage>
-              <hi>Sie will nach hinten schreiten und kann sich nicht aufrecht halten.</hi>
-            </stage>
+            <stage>Sie will nach hinten schreiten und kann sich nicht aufrecht halten.</stage>
           </sp>
           <sp who="#manasse">
             <speaker>MANASSE.</speaker>
@@ -4558,9 +4218,7 @@
               <l>Nur einen Augenblick der Ruhe gönnt ihr!</l>
               <l>Laßt sie allein – Ich führe sie zum Altar! –</l>
             </lg>
-            <stage>
-              <hi>Jochai ab. Alle folgen bis auf Judith und de Silva.</hi>
-            </stage>
+            <stage>Jochai ab. Alle folgen bis auf Judith und de Silva.</stage>
             <l>Ruht eine Weile noch auf diesem Rasen! –</l>
           </sp>
           <sp who="#judith">
@@ -4646,9 +4304,7 @@
           </sp>
           <sp who="#judith">
             <speaker>JUDITH</speaker>
-            <stage>
-              <hi>mit brütenden Gedanken.</hi>
-            </stage>
+            <stage>mit brütenden Gedanken.</stage>
             <lg>
               <l>Als meine Mutter starb, sagt mir de Silva,</l>
               <l>Wie stand – mein Vater an dem Grabe?</l>
@@ -4689,9 +4345,7 @@
               <l>Was kommst du auf die alte Zeit zurück?</l>
               <l>Was er dem Vater war, das liest du dort</l>
             </lg>
-            <stage>
-              <hi>Zeigt hinaus.</hi>
-            </stage>
+            <stage>Zeigt hinaus.</stage>
             <l>Auf jener schlanken Säule eingegraben!</l>
           </sp>
           <sp who="#judith">
@@ -4705,9 +4359,7 @@
               <l>Das Angesicht verfärbt sich und ein Krampf</l>
               <l>Hebt deine Brust –</l>
             </lg>
-            <stage>
-              <hi>Nach außen rufend.</hi>
-            </stage>
+            <stage>Nach außen rufend.</stage>
             <lg>
               <l>Bringt Wasser! Hört ihr? Wasser!</l>
               <l>Allmächt'ger Gott! Was war das, Judith?</l>
@@ -4726,31 +4378,22 @@
               <l>Schiebt die Trauung auf!</l>
               <l>Die Kräfte werden Euch verlassen.</l>
             </lg>
-            <stage>
-              <hi>Ein Diener bringt auf einem silbernen Brett einen Pokal mit Wasser.</hi>
-            </stage>
+            <stage>Ein Diener bringt auf einem silbernen Brett einen Pokal mit Wasser.</stage>
           </sp>
           <sp who="#judith">
             <speaker>JUDITH</speaker>
-            <stage>
-              <hi>bedeutet dem Diener.</hi>
-            </stage>
+            <stage>bedeutet dem Diener.</stage>
             <l>Dorthin.</l>
-            <stage>
-              <hi>Sie beobachtet lange, wie der Diener das Wasser hinstellt und dann abgeht.</hi>
-            </stage>
+            <stage>Sie beobachtet lange, wie der Diener das Wasser hinstellt und dann
+              abgeht.</stage>
             <l>Den Arm, de Silva! Führt mich zum Altar!</l>
-            <stage>
-              <hi>Beide nach hinten ab.</hi>
-            </stage>
+            <stage>Beide nach hinten ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head><pb n="62"/> Dritter Auftritt.</head>
-          <stage>
-            <hi>Uriel tritt auf, begleitet von Baruch Spinoza, der einige Blumen in der Hand
-              trägt.</hi>
-          </stage>
+          <stage>Uriel tritt auf, begleitet von Baruch Spinoza, der einige Blumen in der Hand
+            trägt.</stage>
           <sp who="#baruch">
             <speaker>BARUCH.</speaker>
             <lg>
@@ -4758,15 +4401,11 @@
               <l>In diesem schönen Park mit Euch gewesen!</l>
               <l>Ein Fest scheint man zu feiern und ein hohes!</l>
             </lg>
-            <stage>
-              <hi>Er läßt Uriel für sich allein.</hi>
-            </stage>
+            <stage>Er läßt Uriel für sich allein.</stage>
           </sp>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Sie war's! Im Brautgewand! Von jenen Priestern,</l>
               <l>Die mir geflucht, wird sie sich segnen lassen! –</l>
@@ -4781,9 +4420,7 @@
           </sp>
           <sp who="#baruch">
             <speaker>BARUCH</speaker>
-            <stage>
-              <hi>brach sich hier und da Blumen ab.</hi>
-            </stage>
+            <stage>brach sich hier und da Blumen ab.</stage>
             <lg>
               <l>Die Mutter sagte, daß von allen Orten,</l>
               <l>Die Ihr zu meiden Euch entschlossen habt,</l>
@@ -4793,9 +4430,7 @@
           </sp>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>immer im Selbstgespräch.</hi>
-            </stage>
+            <stage>immer im Selbstgespräch.</stage>
             <lg>
               <l>Wir sind nicht portugiesische Hidalgos!</l>
               <l>Nein! Feige Schurken sind wir! Seelenkäufer!</l>
@@ -4805,13 +4440,11 @@
           <sp who="#baruch">
             <speaker>BARUCH.</speaker>
             <lg>
-              <l>Wenn Ihr so mit Euch selber redet, <hi>denkt</hi> Ihr?</l>
+              <l>Wenn Ihr so mit Euch selber redet, <emph>denkt</emph> Ihr?</l>
               <l>Kommt, Oheim, laßt uns Schlüsse machen! Fragt,</l>
               <l>Antworten, glaub' ich,</l>
             </lg>
-            <stage>
-              <hi>Lächelnd.</hi>
-            </stage>
+            <stage>Lächelnd.</stage>
             <lg>
               <l>hab' ich prächtige,</l>
               <l>Nur fehlen mir die Fragen noch dazu.</l>
@@ -4876,7 +4509,7 @@
               <l>Die Blumen lass' ich hier. Sie sind verwelkt.</l>
               <l>Und wißt Ihr, wie ich beide unterscheide,</l>
               <l>Die Blumen da am Stiel und hier die welken?</l>
-              <l><hi>Die</hi> sind Gedanken dort und <hi>die</hi> Begriffe!</l>
+              <l><emph>Die</emph> sind Gedanken dort und <emph>die</emph> Begriffe!</l>
               <l>Dort denkt der Schöpfer! Hier begreift der Mensch.</l>
               <l>Und da der Unterschied der Duft nur ist,</l>
               <l>Die frische Farbe, das lebend'ge Sein,</l>
@@ -4886,49 +4519,36 @@
               <l>Nur der Begriff noch hat an ihnen Wert,</l>
               <l>Sonst sind sie nichts und mögen ruhig sterben.</l>
             </lg>
-            <stage>
-              <hi>Er läßt sie seiner Hand entgleiten.</hi>
-            </stage>
+            <stage>Er läßt sie seiner Hand entgleiten.</stage>
             <lg>
               <l>So lacht doch, Oheim! Wenn ich spekuliere,</l>
               <l>Verzieht Ihr lächelnd immer sonst die Miene!</l>
               <l>Heut seid Ihr ernst? Kommt zeitig heim zur Mutter!</l>
               <l>Wir können wohl noch etwas Griechisch lesen.</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>allein, die Blumen betrachtend und dem Knaben nachblickend.</hi>
-            </stage>
+            <stage>allein, die Blumen betrachtend und dem Knaben nachblickend.</stage>
             <lg>
               <l>Sonst sind sie nichts und können ruhig sterben!</l>
               <l>Nein, kluges Kind, steht dir auch schon der Stempel</l>
               <l>Des Geistes und der Leiden an der Stirn,</l>
-              <l>Aus solchen Blumen zog ich oft noch <hi>Gift,</hi>
-              </l>
+              <l>Aus solchen Blumen zog ich oft noch <emph>Gift</emph>,</l>
               <l>Den Tod, den Abschluß aller Rechnungen,</l>
               <l>Den Tod, das letzte Fazit aller Zahlen!</l>
               <l>Jochai! Herzenschachernder Hidalgo!</l>
             </lg>
-            <stage>
-              <hi>Er zieht ein Pistol hervor.</hi>
-            </stage>
+            <stage>Er zieht ein Pistol hervor.</stage>
             <l>Zeig' deine Wechsel vor! Verfalltag ist!</l>
-            <stage>
-              <hi>Er zielt nach hinten.</hi>
-            </stage>
+            <stage>Er zielt nach hinten.</stage>
             <lg>
               <l>Halt still wie ich, als du mich tratst im Staube!</l>
               <l>Zuck' nicht mit deinen Augenwimpern, Krösus!</l>
               <l><pb n="64"/> Noch einen Atemzug – noch einen, Mensch! Ha!</l>
             </lg>
-            <stage>
-              <hi>Läßt das Pistol sinken.</hi>
-            </stage>
+            <stage>Läßt das Pistol sinken.</stage>
             <lg>
               <l>Sie wechselten die Ringe – – Widerrufen</l>
               <l>Ist hier vergebens und um nichts die Rache! – –</l>
@@ -4938,17 +4558,13 @@
               <l>Und der Begriff nur hat noch Wert an mir!</l>
               <l>So bin ich nichts und mag entsagend sterben.</l>
             </lg>
-            <stage>
-              <hi>Geht dahin ab, von wo er kam.</hi>
-            </stage>
+            <stage>Geht dahin ab, von wo er kam.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <stage>
-            <hi>Manasse. Silva. Gäste. Dann Judith, Jochai, Santos und die Übrigen kehren zurück.
-              Später Uriel.</hi>
-          </stage>
+          <stage>Manasse. Silva. Gäste. Dann Judith, Jochai, Santos und die Übrigen kehren zurück.
+            Später Uriel.</stage>
           <sp who="#judith">
             <speaker>JUDITH.</speaker>
             <lg>
@@ -4963,41 +4579,28 @@
               <l>Es ist der erste Wunsch in unsrer Ehe!</l>
               <l>Ich muß ihn wohl erfüllen, wenn auch ungern.</l>
             </lg>
-            <stage>
-              <hi>Zu den Übrigen.</hi>
-            </stage>
+            <stage>Zu den Übrigen.</stage>
             <lg>
               <l>Ihr werten Gäste folgt! Die Einsamkeit,</l>
               <l>Die meine junge Gattin immer liebte,</l>
               <l>Hat auch das Recht, zuerst ihr Glück zu wünschen.</l>
             </lg>
-            <stage>
-              <hi>Ab mit den andern vorn nach rechts.</hi>
-            </stage>
+            <stage>Ab mit den andern vorn nach rechts.</stage>
           </sp>
           <sp who="#judith">
             <speaker>JUDITH</speaker>
-            <stage>
-              <hi>ist jetzt allein.</hi>
-            </stage>
+            <stage>ist jetzt allein. Sie sieht sich um und schüttet ein Pulver, das sie aus der
+              Brust zieht, in den Pokal im Wasser.</stage>
             <lg>
-              <l>
-                <hi> Sie sieht sich um und schüttet ein Pulver, das sie aus der Brust zieht, in den
-                  Pokal im Wasser.</hi>
-              </l>
               <l>Du hast es ja gesagt, de Silva, daß</l>
               <l>Mein Vater Trost sich finden wird! Wohlan!</l>
             </lg>
-            <stage>
-              <hi>Sie trinkt.</hi>
-            </stage>
+            <stage>Sie trinkt.</stage>
             <l>Ein Denkstein tut denselben Dienst wie ich.</l>
           </sp>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>tritt auf.</hi>
-            </stage>
+            <stage>tritt auf.</stage>
             <lg>
               <l>Ihr seid es, Judith? – – Einmal noch hab' ich</l>
               <l>Das Weib Jochais sehen müssen.</l>
@@ -5005,9 +4608,7 @@
           </sp>
           <sp who="#judith">
             <speaker>JUDITH</speaker>
-            <stage>
-              <hi>neigt sich zur Bank.</hi>
-            </stage>
+            <stage>neigt sich zur Bank.</stage>
             <lg>
               <l>Wohl,</l>
               <l>Hier ist es!</l>
@@ -5074,7 +4675,7 @@
               <l>Wer nicht von Anfang blieb auf grader Straße,</l>
               <l>Der könnte Steine wandeln selbst in Brot,</l>
               <l>Man glaubt' ihm nicht – die Meinung hat verloren,</l>
-              <l>Wer seine Meinung <hi>einmal</hi> abgeschworen.</l>
+              <l>Wer seine Meinung <emph>einmal</emph> abgeschworen.</l>
             </lg>
           </sp>
           <sp who="#judith">
@@ -5116,10 +4717,8 @@
         </div>
         <div type="scene">
           <head>Letzter Auftritt.</head>
-          <stage>
-            <hi>Manasse, Silva und ein Teil der Gäste kehren zurück. Zuletzt Jochai, Santos und der
-              andere Teil. Die Vorigen.</hi>
-          </stage>
+          <stage>Manasse, Silva und ein Teil der Gäste kehren zurück. Zuletzt Jochai, Santos und der
+            andere Teil. Die Vorigen.</stage>
           <sp who="#manasse">
             <speaker>MANASSE.</speaker>
             <l>Wo bleibt mein Kind?</l>
@@ -5168,13 +4767,9 @@
           </sp>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <l>Es ist das Gift aus meinen welken Blumen!</l>
-            <stage>
-              <hi>Jochai und Santos treten mit den andern Gästen sorglos auf.</hi>
-            </stage>
+            <stage>Jochai und Santos treten mit den andern Gästen sorglos auf.</stage>
           </sp>
           <sp who="#jochai">
             <speaker>JOCHAI.</speaker>
@@ -5192,15 +4787,11 @@
               <l>Komm, komm und schände mich mit deinem Fuß</l>
               <l>Zum zweiten Male hier vor diesem Altar!</l>
             </lg>
-            <stage>
-              <hi>Zu Judiths Füßen.</hi>
-            </stage>
+            <stage>Zu Judiths Füßen.</stage>
           </sp>
           <sp who="#jochai">
             <speaker>JOCHAI</speaker>
-            <stage>
-              <hi>vernichtet, für sich.</hi>
-            </stage>
+            <stage>vernichtet, für sich.</stage>
             <l>Vermählt – mit einer Leiche!</l>
           </sp>
           <sp who="#manasse">
@@ -5219,9 +4810,7 @@
               <l>Nicht wüßte, was sie schuldig war – der Liebe?</l>
               <l>Mein Vater ist gerettet – doch nur so!</l>
             </lg>
-            <stage>
-              <hi>Sie nimmt den Myrtenkranz sich ab.</hi>
-            </stage>
+            <stage>Sie nimmt den Myrtenkranz sich ab.</stage>
             <lg>
               <l>O, eine andre Welt hab' ich geträumt</l>
               <l>Und süßre Hoffnungen von diesem Leben;</l>
@@ -5231,20 +4820,14 @@
               <l>Noch selig übertäubt –! Leb' wohl, mein Vater,</l>
               <l>Vergib das Opfer einer höhern Liebe!</l>
             </lg>
-            <stage>
-              <hi>Sie reicht Acosta den Kranz.</hi>
-            </stage>
+            <stage>Sie reicht Acosta den Kranz.</stage>
             <l>Nimm hin, du Einz'ger, dieser Kranz ist dein.</l>
-            <stage>
-              <hi>Sie lehnt sich und stirbt.</hi>
-            </stage>
+            <stage>Sie lehnt sich und stirbt.</stage>
           </sp>
           <sp who="#uriel">
             <speaker>URIEL</speaker>
-            <stage>
-              <hi>preßt den Kranz weinend an seine Lippen, legt ihn dann in Judiths Hand und steht
-                auf.</hi>
-            </stage>
+            <stage>preßt den Kranz weinend an seine Lippen, legt ihn dann in Judiths Hand und steht
+              auf.</stage>
             <lg>
               <l>Manasse! Säulen liebt Ihr, Sarkophage,</l>
               <l>Und leid'gen Trost gibt Euch des Künstlers Hand.</l>
@@ -5261,9 +4844,7 @@
               <l>Sich rosenrot vor ein ersterbend Auge –</l>
               <l>Es war die Liebe.</l>
             </lg>
-            <stage>
-              <hi>Zeigt auf Judith.</hi>
-            </stage>
+            <stage>Zeigt auf Judith.</stage>
             <lg>
               <l>Seht, was Liebe tat! –</l>
               <l>Und nun lass' ich Euch diese Welt des Irrtums,</l>
@@ -5285,51 +4866,37 @@
               <l>Manasse, jene Trauerweiden mein' ich –</l>
               <l>Mein Genius! Du folgst! Nicht Ihr – bleibt dort!</l>
               <l>Von ferne will ich Euch die Stelle zeigen,</l>
-              <l>Wo <hi>Ihr</hi> den Sieg gewinnt und ich – den Frieden.</l>
+              <l>Wo <emph>Ihr</emph> den Sieg gewinnt und ich – den Frieden.</l>
             </lg>
-            <stage>
-              <hi>Er schreitet an den Staunenden, die ihm mit ihren Blicken folgen, vorüber. Wie er
-                fort ist, fällt ein Schuß.</hi>
-            </stage>
-            <stage>
-              <hi>Allgemeine Bewegung.</hi>
-            </stage>
+            <stage>Er schreitet an den Staunenden, die ihm mit ihren Blicken folgen, vorüber. Wie er
+              fort ist, fällt ein Schuß.</stage>
+            <stage>Allgemeine Bewegung.</stage>
           </sp>
           <sp who="#santos">
             <speaker>SANTOS</speaker>
-            <stage>
-              <hi>hervortretend nach der Seite, wo Uriel ging.</hi>
-            </stage>
+            <stage>hervortretend nach der Seite, wo Uriel ging.</stage>
             <l>Der Glaube siegt, zwei Opfer sind gefallen.</l>
           </sp>
           <sp who="#silva">
             <speaker>SILVA</speaker>
-            <stage>
-              <hi>hält ihn zurück, blickt abwechselnd nach außen und auf Judith, die von Manasse
-                gehalten bleibt.</hi>
-            </stage>
+            <stage>hält ihn zurück, blickt abwechselnd nach außen und auf Judith, die von Manasse
+              gehalten bleibt.</stage>
             <lg>
               <l>O stört die Schauer dieser Stunde nicht!</l>
               <l>Zwei Zeugen eines Glaubens, der die Welt</l>
               <l>Verachtet! Richtet nicht, denn wie wir hier</l>
               <l>Erstarrt vor Schrecken stehn, die wahren Mörder</l>
-              <l>Des stummen Paars sind <hi>wir!</hi> O geht hinaus</l>
+              <l>Des stummen Paars sind <emph>wir</emph>! O geht hinaus</l>
               <l>Und predigt: Schonung, Duldung, Liebe!</l>
               <l>Und was der wahre Glaube? Ach! Der Glanz</l>
               <l><pb n="68"/> Der alten Heiligtümer, seh' ich, schwindet.</l>
               <l>Glaubt, was Ihr glaubt! Nur überzeugungsrein!</l>
-              <l>Nicht <hi>was</hi> wir meinen siegt, de Santos! Nein!</l>
+              <l>Nicht <emph>was</emph> wir meinen siegt, de Santos! Nein!</l>
             </lg>
-            <stage>
-              <hi>Er schlägt ans Herz.</hi>
-            </stage>
-            <l><hi>Wie</hi> wir es meinen, das nur überwindet.</l>
-            <stage>
-              <hi>Die Gruppe bleibt.</hi>
-            </stage>
-            <stage>
-              <hi>Der Vorhang fällt.</hi>
-            </stage>
+            <stage>Er schlägt ans Herz.</stage>
+            <l><emph>Wie</emph> wir es meinen, das nur überwindet.</l>
+            <stage>Die Gruppe bleibt.</stage>
+            <stage>Der Vorhang fällt.</stage>
           </sp>
         </div>
       </div>
