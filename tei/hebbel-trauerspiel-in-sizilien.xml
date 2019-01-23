@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Trauerspiel in Sizilien</title>
+        <title type="main">Ein Trauerspiel in Sizilien</title>
+        <title type="sub">Tragikomödie in einem Akt</title>
         <author key="pnd:118547445">Hebbel, Friedrich</author>
       </titleStmt>
       <publicationStmt>
@@ -35,7 +36,7 @@
               Pörnbacher, Band 1–5, München: Hanser, 1963.</title>
             <date type="print" when="1847"/>
             <date type="premiere" when="1907"/>
-            <date type="written" when="1846"/>
+            <date type="written" when="1847"/>
           </bibl>
         </bibl>
       </sourceDesc>
@@ -43,33 +44,32 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="ambrosio">
-            <persName>AMBROSIO</persName>
+          <person xml:id="ambrosio" sex="MALE">
+            <persName>Ambrosio</persName>
           </person>
-          <person xml:id="bartolino">
-            <persName>BARTOLINO</persName>
+          <person xml:id="bartolino" sex="MALE">
+            <persName>Bartolino</persName>
           </person>
-          <person xml:id="angiolina">
-            <persName>ANGIOLINA</persName>
+          <person xml:id="angiolina" sex="FEMALE">
+            <persName>Angiolina</persName>
           </person>
-          <person xml:id="eine_stimme_von_draussen">
-            <persName>EINE STIMME VON DRAUSSEN</persName>
+          <person xml:id="eine_stimme_von_draussen" sex="MALE">
+            <persName>Eine Stimme von draußen</persName>
           </person>
-          <person xml:id="sebastiano">
-            <persName>SEBASTIANO</persName>
+          <person xml:id="sebastiano" sex="MALE">
+            <persName>Sebastiano</persName>
           </person>
-          <person xml:id="herr_gregorio">
-            <persName>HERR GREGORIO</persName>
+          <person xml:id="herr_gregorio" sex="MALE">
+            <persName>Herr Gregorio</persName>
           </person>
-          <person xml:id="anselmo">
-            <persName>ANSELMO</persName>
+          <person xml:id="anselmo" sex="MALE">
+            <persName>Anselmo</persName>
           </person>
-          <person xml:id="ein_soldat">
-            <persName>EIN SOLDAT</persName>
+          <person xml:id="ein_soldat" sex="MALE">
+            <persName>Ein Soldat</persName>
           </person>
-          <person xml:id="ein_bauer">
-            <persName>EIN BAUER</persName>
-            <persName xml:id="der_bauer">DER BAUER</persName>
+          <person xml:id="der_bauer" sex="MALE">
+            <persName>Der Bauer</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -83,6 +83,7 @@
       <listChange>
         <change when="2017-01-06">(dlina) file conversion from source</change>
         <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-01-23">(ff) formalities</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -93,8 +94,6 @@
         <head>Ein Trauerspiel in Sizilien</head>
         <head>Tragikomödie in einem Akt</head>
       </div>
-    </front>
-    <body>
       <div type="dedication">
         <head><pb n="387"/> An Heinrich Theodor Rötscher</head>
         <p>Ich saß zu Neapel im Herbst des Jahres 1845 eines Abends in dem Café di Europa. Dieses
@@ -160,9 +159,7 @@
           fast überall für eine Tragödie genommen, obgleich jeder Vers, vom ersten bis zum letzten,
           in Ton und Färbung widersprach, und nun höchst seltsam beurteilt. Das beweist, daß es hier
           für den Kunstphilosophen etwas zu tun gibt.</p>
-        <p>
-          <hi>Friedrich Hebbel</hi>
-        </p>
+        <p><emph>Friedrich Hebbel</emph></p>
         <pb n="389"/>
       </div>
       <div type="Dramatis_Personae">
@@ -171,21 +168,25 @@
           <castItem>Anselmo.</castItem>
           <castItem>Angiolona, seine Tochter.</castItem>
           <castItem>Sebastiano.</castItem>
-          <castItem>Ambrosio,</castItem>
-          <castItem>Bartolino, zwei Landsoldaten.</castItem>
+          <castGroup>
+            <castItem>Ambrosio,</castItem>
+            <castItem>Bartolino,</castItem>
+            <roleDesc>zwei Landsoldaten.</roleDesc>
+          </castGroup>
           <castItem>Herr Gregorio, Podesta.</castItem>
           <castItem>Ein Bauer.</castItem>
         </castList>
       </div>
-      <div type="set">
-        <p><hi>Die Handlung ereignet sich bei Palermo.</hi></p>
+      <set>
+        <p>Die Handlung ereignet sich bei Palermo.</p>
         <pb n="390"/>
-      </div>
+        <p>Eingang eines Waldes.</p>
+      </set>
+    </front>
+    <body>
       <div type="scene">
         <head>Erste Szene</head>
-        <stage>
-          <hi>Ambrosio und Bartolino halten Wache.</hi>
-        </stage>
+        <stage>Ambrosio und Bartolino halten Wache.</stage>
         <sp who="#ambrosio">
           <speaker>AMBROSIO.</speaker>
           <lg>
@@ -281,13 +282,9 @@
         </sp>
         <sp who="#ambrosio">
           <speaker>AMBROSIO</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <l>Auf Kinderköpfe hätt er Jagd gemacht!</l>
-          <stage>
-            <hi>Laut.</hi>
-          </stage>
+          <stage>Laut.</stage>
           <lg>
             <l>Die waren eine Art von Scheidemünze:</l>
             <l>Sie galten halb so viel, wie die der Alten,</l>
@@ -300,16 +297,12 @@
         </sp>
         <sp who="#ambrosio">
           <speaker>AMBROSIO</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <lg>
             <l>Ich muß doch sehn,</l>
             <l>Wie weit mans treiben darf bei dem!</l>
           </lg>
-          <stage>
-            <hi>Laut.</hi>
-          </stage>
+          <stage>Laut.</stage>
           <lg>
             <l>Ich wills dir</l>
             <l>Vertraun! Die Sprache, die die Türken reden,</l>
@@ -390,16 +383,12 @@
         </sp>
         <sp who="#ambrosio">
           <speaker>AMBROSIO</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <lg>
             <l>Das ist ein Kerl! Der glaubt mir, wenn ich sage:</l>
             <l><pb n="393"/> Der Mensch ist dazu da, daß er sich schneuzt!</l>
           </lg>
-          <stage>
-            <hi>Laut.</hi>
-          </stage>
+          <stage>Laut.</stage>
           <lg>
             <l>Wie? Nun, ich ließ michs allerdings was kosten.</l>
             <l>Ich wußte mich in jeder Compagnie</l>
@@ -696,18 +685,14 @@
             <l>Den Christus will ich sehn, der sagen kann,</l>
             <l>Ich hätt ihn nicht, selbst auf dem Marsch, gegrüßt!</l>
           </lg>
-          <stage>
-            <hi>Sie gehen beiseite.</hi>
-          </stage>
+          <stage>Sie gehen beiseite.</stage>
         </sp>
       </div>
       <div type="scene">
         <head>Zweite Szene</head>
         <sp who="#angiolina">
           <speaker>ANGIOLINA</speaker>
-          <stage>
-            <hi>tritt auf.</hi>
-          </stage>
+          <stage>tritt auf.</stage>
           <lg>
             <l>O Gott, wenn allen so zumute ist,</l>
             <l>Die aus dem Hause ihrer Eltern fliehn,</l>
@@ -741,9 +726,7 @@
             <l>Und hab mein armes Leben nie geliebt,</l>
             <l>Wenn ich den Tod auch fürchtete, wie alle.</l>
           </lg>
-          <stage>
-            <hi>Sie sieht sich um.</hi>
-          </stage>
+          <stage>Sie sieht sich um.</stage>
           <lg>
             <l>Ich kam zu früh, wie's scheint, Sebastian</l>
             <l>Ist noch nicht da. Ich will noch einmal tun,</l>
@@ -752,25 +735,19 @@
             <l>Den ich zuerst erblicke, ob er schwarz,</l>
             <l>Ob bunt ist, soll auf meine Zukunft gehn.</l>
           </lg>
-          <stage>
-            <hi>Sie tuts.</hi>
-          </stage>
+          <stage>Sie tuts.</stage>
           <lg>
             <l>Soldaten! Betende! Was die bedeuten,</l>
             <l>Steht nicht im Traumbuch. Nun, es gilt mir gleich!</l>
             <l>Die Nacht wird immer dunkler. Gott sei Dank!</l>
             <l>Wenn man nicht sieht, wird man auch nicht gesehn!</l>
           </lg>
-          <stage>
-            <hi>Sie tritt beiseite.</hi>
-          </stage>
+          <stage>Sie tritt beiseite.</stage>
         </sp>
       </div>
       <div type="scene">
         <head><pb n="398"/> Dritte Szene</head>
-        <stage>
-          <hi>Ambrosio und Bartolino kommen zurück.</hi>
-        </stage>
+        <stage>Ambrosio und Bartolino kommen zurück.</stage>
         <sp who="#ambrosio">
           <speaker>AMBROSIO.</speaker>
           <lg>
@@ -831,9 +808,7 @@
         </sp>
         <sp who="#ambrosio">
           <speaker>AMBROSIO</speaker>
-          <stage>
-            <hi>bemerkt Angiolina.</hi>
-          </stage>
+          <stage>bemerkt Angiolina.</stage>
           <lg>
             <l>Wer ist da?</l>
             <l>Was horcht man? Was verkriecht man sich?</l>
@@ -898,9 +873,7 @@
         <sp who="#ambrosio">
           <speaker>AMBROSIO.</speaker>
           <l>Her das goldne Kreuz!</l>
-          <stage>
-            <hi>Reißt ihr das Halskreuz ab.</hi>
-          </stage>
+          <stage>Reißt ihr das Halskreuz ab.</stage>
         </sp>
         <sp who="#angiolina">
           <speaker>ANGIOLINA.</speaker>
@@ -916,9 +889,7 @@
         <sp who="#ambrosio">
           <speaker>AMBROSIO.</speaker>
           <l>Und den Ring!</l>
-          <stage>
-            <hi>Zieht ihr den Ring ab.</hi>
-          </stage>
+          <stage>Zieht ihr den Ring ab.</stage>
           <l>Den Finger ausgestreckt! Sonst tuts ja weh!</l>
         </sp>
         <sp who="#angiolina">
@@ -932,28 +903,18 @@
         </sp>
         <sp who="#ambrosio">
           <speaker>AMBROSIO</speaker>
-          <stage>
-            <hi>reißt ihr ein Kästchen aus der Hand.</hi>
-          </stage>
+          <stage>reißt ihr ein Kästchen aus der Hand.</stage>
           <l>Was steckt in diesem Kästchen?</l>
-          <stage>
-            <hi>Zu Bartolino.</hi>
-          </stage>
+          <stage>Zu Bartolino.</stage>
           <lg>
             <l>Sieh dich um,</l>
             <l>Ob niemand kommt!</l>
           </lg>
-          <stage>
-            <hi>Zu Angiolina.</hi>
-          </stage>
+          <stage>Zu Angiolina.</stage>
           <l>Ei, ei, die Silberspangen!</l>
-          <stage>
-            <hi>Zu Bartolino.</hi>
-          </stage>
+          <stage>Zu Bartolino.</stage>
           <l>Kein Mensch?</l>
-          <stage>
-            <hi>Zu Angiolina.</hi>
-          </stage>
+          <stage>Zu Angiolina.</stage>
           <lg>
             <l>Sie stehen mit auf unsrer Liste!</l>
             <l>Wo ist das bare Geld?</l>
@@ -983,30 +944,22 @@
         </sp>
         <sp who="#ambrosio">
           <speaker>AMBROSIO</speaker>
-          <stage>
-            <hi>zu Bartolino.</hi>
-          </stage>
+          <stage>zu Bartolino.</stage>
           <l>Tybaldo, nimms ihr ab!</l>
-          <stage>
-            <hi>Heimlich.</hi>
-          </stage>
+          <stage>Heimlich.</stage>
           <l><pb n="400"/> Sprich: Ja, Antonio!</l>
         </sp>
         <sp who="#bartolino">
           <speaker>BARTOLINO.</speaker>
           <l>Ja, Antonio!</l>
-          <stage>
-            <hi>Für sich.</hi>
-          </stage>
+          <stage>Für sich.</stage>
           <lg>
             <l>Das ist ein – Ja, ob der in Algier war!</l>
             <l>Der könnte auf dem Mond gewesen sein</l>
             <l>Und einen Stein herabgeworfen haben,</l>
             <l>Dem größten Potentaten auf das Haupt!</l>
           </lg>
-          <stage>
-            <hi>Zu Angiolina.</hi>
-          </stage>
+          <stage>Zu Angiolina.</stage>
           <l>Die Börse her!</l>
         </sp>
         <sp who="#angiolina">
@@ -1051,17 +1004,13 @@
         </sp>
         <sp who="#ambrosio">
           <speaker>AMBROSIO</speaker>
-          <stage>
-            <hi>zu Bartolino.</hi>
-          </stage>
+          <stage>zu Bartolino.</stage>
           <lg>
             <l>Wenn dirs am Strick fehlt, einen aufzuknüpfen,</l>
             <l><pb n="401"/> So zupf ihm aus dem eignen Mund den Hanf.</l>
             <l>Gibt acht, wie man das macht!</l>
           </lg>
-          <stage>
-            <hi>Zu Angiolina.</hi>
-          </stage>
+          <stage>Zu Angiolina.</stage>
           <lg>
             <l>Ich hab als Mensch</l>
             <l>Zwei Ohren, links und rechts, das zeigt mir an,</l>
@@ -1082,9 +1031,7 @@
         </sp>
         <sp who="#ambrosio">
           <speaker>AMBROSIO</speaker>
-          <stage>
-            <hi>zu Angiolina.</hi>
-          </stage>
+          <stage>zu Angiolina.</stage>
           <l>Nun? Ohne Furcht!</l>
         </sp>
         <sp who="#angiolina">
@@ -1104,25 +1051,19 @@
             <l>Die Väter sind zuweilen etwas seltsam,</l>
             <l>Wie gings mir mit dem meinigen!</l>
           </lg>
-          <stage>
-            <hi>Zu Bartolino.</hi>
-          </stage>
+          <stage>Zu Bartolino.</stage>
           <lg>
             <l>Er sprach:</l>
             <l>Kauf mir den Segen ab, verdammter Bube,</l>
             <l>Damit ich mich einmal betrinken kann,</l>
             <l>Sonst gebe ich dir meinen Fluch umsonst!</l>
           </lg>
-          <stage>
-            <hi>Zu Angiolina.</hi>
-          </stage>
+          <stage>Zu Angiolina.</stage>
           <l>Nun, der Sebastian –</l>
         </sp>
         <sp who="#angiolina">
           <speaker>ANGIOLINA</speaker>
-          <stage>
-            <hi>heftig.</hi>
-          </stage>
+          <stage>heftig.</stage>
           <lg>
             <l>Wenn ihr ihn kennt,</l>
             <l>So werdet ihr nichts Schlimmes von ihm sagen,</l>
@@ -1155,9 +1096,7 @@
         <sp who="#ambrosio">
           <speaker>AMBROSIO.</speaker>
           <l>Ein frommer Bursch!</l>
-          <stage>
-            <hi>Zu Bartolino.</hi>
-          </stage>
+          <stage>Zu Bartolino.</stage>
           <lg>
             <l>Den untern Tisch zu saufen</l>
             <l>Und dann vor eine Kirchentür zu legen,</l>
@@ -1165,9 +1104,7 @@
             <l>Ich mögte ihn im Katzenjammer sehn,</l>
             <l>Besonders, wenn es just Karfreitag wäre!</l>
           </lg>
-          <stage>
-            <hi>Zu Angiolina.</hi>
-          </stage>
+          <stage>Zu Angiolina.</stage>
           <l>Und dieser Vorschlag, rührte er den Vater?</l>
         </sp>
         <sp who="#angiolina">
@@ -1241,9 +1178,7 @@
         </sp>
         <sp who="#ambrosio">
           <speaker>AMBROSIO</speaker>
-          <stage>
-            <hi>zu Bartolino.</hi>
-          </stage>
+          <stage>zu Bartolino.</stage>
           <l>Hörst du das?</l>
         </sp>
         <sp who="#bartolino">
@@ -1252,9 +1187,7 @@
         </sp>
         <sp who="#ambrosio">
           <speaker>AMBROSIO</speaker>
-          <stage>
-            <hi>zu Angiolina.</hi>
-          </stage>
+          <stage>zu Angiolina.</stage>
           <l>Sind Ring und Spangen und die Kette echt?</l>
         </sp>
         <sp who="#angiolina">
@@ -1263,9 +1196,7 @@
         </sp>
         <sp who="#ambrosio">
           <speaker>AMBROSIO</speaker>
-          <stage>
-            <hi>zu Bartolino.</hi>
-          </stage>
+          <stage>zu Bartolino.</stage>
           <l>Was meinst du, geben wirs zurück?</l>
         </sp>
         <sp who="#bartolino">
@@ -1296,9 +1227,7 @@
             <l>Und wir, wir sind zu kennen!</l>
             <l>Die Schmarre hier –</l>
           </lg>
-          <stage>
-            <hi>Zeigt auf sein Gesicht.</hi>
-          </stage>
+          <stage>Zeigt auf sein Gesicht.</stage>
           <pb n="404"/>
         </sp>
         <sp who="#bartolino">
@@ -1353,9 +1282,7 @@
         <sp who="#bartolino">
           <speaker>BARTOLINO.</speaker>
           <l>Hei! Kinderköpfe und Algier!</l>
-          <stage>
-            <hi>Sie durchstechen Angiolina.</hi>
-          </stage>
+          <stage>Sie durchstechen Angiolina.</stage>
         </sp>
         <sp who="#eine_stimme_von_draussen">
           <speaker>EINE STIMME VON DRAUSSEN.</speaker>
@@ -1363,13 +1290,9 @@
         </sp>
         <sp who="#angiolina">
           <speaker>ANGIOLINA</speaker>
-          <stage>
-            <hi>sterbend.</hi>
-          </stage>
+          <stage>sterbend.</stage>
           <l>Das – ist – ja schrecklich für Sebastian!</l>
-          <stage>
-            <hi>Stirbt.</hi>
-          </stage>
+          <stage>Stirbt.</stage>
         </sp>
         <sp who="#bartolino">
           <speaker>BARTOLINO.</speaker>
@@ -1431,18 +1354,14 @@
         <sp who="#bartolino">
           <speaker>BARTOLINO.</speaker>
           <l>Steht die nicht wieder auf?</l>
-          <stage>
-            <hi>Beide ab.</hi>
-          </stage>
+          <stage>Beide ab.</stage>
         </sp>
       </div>
       <div type="scene">
         <head>Vierte Szene</head>
         <sp who="#sebastiano">
           <speaker>SEBASTIANO</speaker>
-          <stage>
-            <hi>kommt.</hi>
-          </stage>
+          <stage>kommt.</stage>
           <lg>
             <l>Das war ein Tag, wie zwei. So gehts mir stets,</l>
             <l>Wenn ich mir meine Freude merken lasse.</l>
@@ -1465,13 +1384,9 @@
             <l>Erinnert, daß sie Mensch ist, wie er selbst,</l>
             <l>Und ihm –</l>
           </lg>
-          <stage>
-            <hi>Er erblickt die Tote.</hi>
-          </stage>
+          <stage>Er erblickt die Tote.</stage>
           <l>Unmöglich! Blutend! Tot!</l>
-          <stage>
-            <hi>Er sinkt an ihr nieder.</hi>
-          </stage>
+          <stage>Er sinkt an ihr nieder.</stage>
           <lg>
             <l>Ja, tot!</l>
             <l>Kann das denn wirklich auf der Welt geschehn?</l>
@@ -1479,32 +1394,24 @@
             <l>Warum kamst du so spät! Der Dienst! Was Dienst!</l>
             <l>Gabs keinen andern mehr?</l>
           </lg>
-          <stage>
-            <hi>Wütet gegen sich.</hi>
-          </stage>
+          <stage>Wütet gegen sich.</stage>
         </sp>
       </div>
       <div type="scene">
         <head><pb n="406"/> Fünfte Szene</head>
-        <stage>
-          <hi>Ambrosio und Bartolino kommen wieder.</hi>
-        </stage>
+        <stage>Ambrosio und Bartolino kommen wieder.</stage>
         <sp who="#ambrosio">
           <speaker>AMBROSIO.</speaker>
           <l>Pack ihn, den Mordhund!</l>
         </sp>
         <sp who="#sebastiano">
           <speaker>SEBASTIANO</speaker>
-          <stage>
-            <hi>springt auf.</hi>
-          </stage>
+          <stage>springt auf.</stage>
           <l>Mit Zähnen, ja. Wo ist er? Wo? Sag an!</l>
         </sp>
         <sp who="#ambrosio">
           <speaker>AMBROSIO</speaker>
-          <stage>
-            <hi>faßt ihn an.</hi>
-          </stage>
+          <stage>faßt ihn an.</stage>
           <l>Man hat ihn schon!</l>
         </sp>
         <sp who="#sebastiano">
@@ -1517,9 +1424,7 @@
         </sp>
         <sp who="#sebastiano">
           <speaker>SEBASTIANO</speaker>
-          <stage>
-            <hi>lacht.</hi>
-          </stage>
+          <stage>lacht.</stage>
           <l>Ich?</l>
         </sp>
         <sp who="#ambrosio">
@@ -1547,9 +1452,7 @@
             <l>Was kümmerts mich, warum!</l>
             <l>Das hat man in Palermo zu ermitteln!</l>
           </lg>
-          <stage>
-            <hi>Zu Bartolino.</hi>
-          </stage>
+          <stage>Zu Bartolino.</stage>
           <l>Du, such den Dolch, er warf ihn ins Gebüsch!</l>
         </sp>
         <sp who="#sebastiano">
@@ -1576,9 +1479,7 @@
         <sp who="#sebastiano">
           <speaker>SEBASTIANO.</speaker>
           <l>Ich aber kann es nicht!</l>
-          <stage>
-            <hi>Fällt wieder an ihr nieder.</hi>
-          </stage>
+          <stage>Fällt wieder an ihr nieder.</stage>
           <lg>
             <l>O Angiolina, das ist unsre Hochzeit?</l>
             <l>Du tot! Ich leb! Warum kam ich so spät!</l>
@@ -1601,30 +1502,22 @@
             <l>Die Arbeit eines Jahrs mir an den Füßen,</l>
             <l><pb n="407"/> O, daß ich mich</l>
           </lg>
-          <stage>
-            <hi>Ballt die Faust gegen sich selbst.</hi>
-          </stage>
+          <stage>Ballt die Faust gegen sich selbst.</stage>
           <lg>
             <l>– denn ich bin schuld daran,</l>
             <l>Wer konnt es tun, wenn ich zur Stelle war!</l>
           </lg>
-          <stage>
-            <hi>Zu Ambrosio.</hi>
-          </stage>
+          <stage>Zu Ambrosio.</stage>
           <l>Leih mir dein Schwert!</l>
         </sp>
         <sp who="#ambrosio">
           <speaker>AMBROSIO</speaker>
-          <stage>
-            <hi>zu Bartolino.</hi>
-          </stage>
+          <stage>zu Bartolino.</stage>
           <lg>
             <l>Du hörst doch, was er sagt?</l>
             <l>Er bettelt um den Tod!</l>
           </lg>
-          <stage>
-            <hi>Zu Sebastiano.</hi>
-          </stage>
+          <stage>Zu Sebastiano.</stage>
           <lg>
             <l>So geht es nicht,</l>
             <l>Doch in Palermo gibt es einen Mann,</l>
@@ -1638,9 +1531,7 @@
         <sp who="#ambrosio">
           <speaker>AMBROSIO.</speaker>
           <l>Gewissensbisse, he?</l>
-          <stage>
-            <hi>Für sich.</hi>
-          </stage>
+          <stage>Für sich.</stage>
           <lg>
             <l>Der Wicht</l>
             <l>Stach in die Luft und fühlt doch Mörderangst.</l>
@@ -1651,10 +1542,8 @@
       </div>
       <div type="scene">
         <head>Sechste Szene</head>
-        <stage>
-          <hi>Der Podesta, Herr Gregorio, und Anselmo treten auf, von einigen Soldaten, mit Fackeln
-            zum Teil, gefolgt.</hi>
-        </stage>
+        <stage>Der Podesta, Herr Gregorio, und Anselmo treten auf, von einigen Soldaten, mit Fackeln
+          zum Teil, gefolgt.</stage>
         <sp who="#herr_gregorio">
           <speaker>HERR GREGORIO.</speaker>
           <lg>
@@ -1889,9 +1778,7 @@
         </sp>
         <sp who="#anselmo">
           <speaker>ANSELMO</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <lg>
             <l>Wär das nun eine Missetat gewesen,</l>
             <l>Die Welt von diesem Teufel zu befrein?</l>
@@ -1922,20 +1809,14 @@
             <l>Der abends mit das Haus mir Milch versorgt,</l>
             <l>So hat sie sicher sich zum Kreuz gewandt.</l>
           </lg>
-          <stage>
-            <hi>Sie wenden sich, in demselben Augenblick treten ihnen Ambrosio und Bartolino, die
-              sie längst bemerkt und sich ihnen genähert haben, entgegen.</hi>
-          </stage>
+          <stage>Sie wenden sich, in demselben Augenblick treten ihnen Ambrosio und Bartolino, die
+            sie längst bemerkt und sich ihnen genähert haben, entgegen.</stage>
         </sp>
         <sp who="#ambrosio">
           <speaker>AMBROSIO</speaker>
-          <stage>
-            <hi>zu Bartolino.</hi>
-          </stage>
+          <stage>zu Bartolino.</stage>
           <l>Nun sei Soldat!</l>
-          <stage>
-            <hi>Laut.</hi>
-          </stage>
+          <stage>Laut.</stage>
           <l>Wer da?</l>
         </sp>
         <sp who="#herr_gregorio">
@@ -1971,9 +1852,7 @@
         </sp>
         <sp who="#bartolino">
           <speaker>BARTOLINO</speaker>
-          <stage>
-            <hi>zu Ambrosio.</hi>
-          </stage>
+          <stage>zu Ambrosio.</stage>
           <l>Da hast dus schon!</l>
         </sp>
         <sp who="#ambrosio">
@@ -1985,9 +1864,7 @@
         </sp>
         <sp who="#anselmo">
           <speaker>ANSELMO</speaker>
-          <stage>
-            <hi>sieht den Leichnam im Licht einer Fackel.</hi>
-          </stage>
+          <stage>sieht den Leichnam im Licht einer Fackel.</stage>
           <l>Angiolina! Gott im Himmel!</l>
         </sp>
         <sp who="#herr_gregorio">
@@ -1997,9 +1874,7 @@
         <sp who="#anselmo">
           <speaker>ANSELMO.</speaker>
           <l>Mein Kind!</l>
-          <stage>
-            <hi>Schaudernd.</hi>
-          </stage>
+          <stage>Schaudernd.</stage>
           <l>Ich sehe meine Frau!</l>
         </sp>
         <sp who="#ambrosio">
@@ -2021,17 +1896,13 @@
         </sp>
         <sp who="#anselmo">
           <speaker>ANSELMO</speaker>
-          <stage>
-            <hi>zu dem daliegenden Sebastiano.</hi>
-          </stage>
+          <stage>zu dem daliegenden Sebastiano.</stage>
           <l>Auf, Schurke, auf mit dir!</l>
         </sp>
         <sp who="#sebastiano">
           <speaker>SEBASTIANO.</speaker>
           <l>Was gibt es denn?</l>
-          <stage>
-            <hi>Steht auf.</hi>
-          </stage>
+          <stage>Steht auf.</stage>
           <l>Ja so!</l>
         </sp>
         <sp who="#anselmo">
@@ -2049,9 +1920,7 @@
             <l>O Bösewicht!</l>
             <l>Als ich dir antrug,</l>
           </lg>
-          <stage>
-            <hi>Er deutet auf Herrn Gregorio.</hi>
-          </stage>
+          <stage>Er deutet auf Herrn Gregorio.</stage>
           <lg>
             <l>diesen Hund zu töten,</l>
             <l>Da hattst du deine reine Hand zu lieb,</l>
@@ -2101,9 +1970,7 @@
         </sp>
         <sp who="#herr_gregorio">
           <speaker>HERR GREGORIO</speaker>
-          <stage>
-            <hi>wendet Anselmo den Rücken; zu Sebastiano.</hi>
-          </stage>
+          <stage>wendet Anselmo den Rücken; zu Sebastiano.</stage>
           <l>Bist du der Mörder?</l>
         </sp>
         <sp who="#sebastiano">
@@ -2160,16 +2027,12 @@
         </sp>
         <sp who="#herr_gregorio">
           <speaker>HERR GREGORIO</speaker>
-          <stage>
-            <hi>wird auf den heimlichen Zwiesprach der beiden aufmerksam.</hi>
-          </stage>
+          <stage>wird auf den heimlichen Zwiesprach der beiden aufmerksam.</stage>
           <l>Die zanken sich wohl gar! – Was haben sie?</l>
         </sp>
         <sp who="#bartolino">
           <speaker>BARTOLINO</speaker>
-          <stage>
-            <hi>sehr laut.</hi>
-          </stage>
+          <stage>sehr laut.</stage>
           <l>Der war es nicht!</l>
         </sp>
         <sp who="#ambrosio">
@@ -2187,9 +2050,7 @@
         <sp who="#ambrosio">
           <speaker>AMBROSIO.</speaker>
           <l>Zum Teufel!</l>
-          <stage>
-            <hi>Dringt mit dem Schwert auf Bartolino ein.</hi>
-          </stage>
+          <stage>Dringt mit dem Schwert auf Bartolino ein.</stage>
         </sp>
         <sp who="#bartolino">
           <speaker>BARTOLINO.</speaker>
@@ -2223,39 +2084,29 @@
             <l>Was willst du?</l>
             <l>Ich schwöre alles wieder ab!</l>
           </lg>
-          <stage>
-            <hi>Laut.</hi>
-          </stage>
+          <stage>Laut.</stage>
           <lg>
             <l>Er wars,</l>
             <l>Mich überkam das Mitleid, weil – –</l>
           </lg>
-          <stage>
-            <hi>Zu Ambrosio.</hi>
-          </stage>
+          <stage>Zu Ambrosio.</stage>
           <l>Sprich du!</l>
         </sp>
         <sp who="#ambrosio">
           <speaker>AMBROSIO.</speaker>
           <l>Ich tats!</l>
-          <stage>
-            <hi>Für sich.</hi>
-          </stage>
+          <stage>Für sich.</stage>
           <l>Wär ich nur Ring und Kette los!</l>
         </sp>
         <sp who="#herr_gregorio">
           <speaker>HERR GREGORIO.</speaker>
           <l>Soldaten! Seht, ob dieser</l>
-          <stage>
-            <hi>Deutet auf Sebastiano.</hi>
-          </stage>
+          <stage>Deutet auf Sebastiano.</stage>
           <l>blutig ist!</l>
         </sp>
         <sp who="#ein_soldat">
           <speaker>EIN SOLDAT</speaker>
-          <stage>
-            <hi>ihn beleuchtend.</hi>
-          </stage>
+          <stage>ihn beleuchtend.</stage>
           <l>Er ist es, auf dem Rücken!</l>
         </sp>
         <sp who="#anselmo">
@@ -2267,9 +2118,7 @@
         </sp>
         <sp who="#ambrosio">
           <speaker>AMBROSIO</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <lg>
             <l>Verdammt!</l>
             <l>Ich wischte meine Klinge an ihm ab,</l>
@@ -2279,9 +2128,7 @@
         </sp>
         <sp who="#anselmo">
           <speaker>ANSELMO</speaker>
-          <stage>
-            <hi>zu Sebastiano.</hi>
-          </stage>
+          <stage>zu Sebastiano.</stage>
           <l>Mensch, tu den Mund auf! Sprich! Es geht dich an!</l>
         </sp>
         <sp who="#sebastiano">
@@ -2314,11 +2161,9 @@
       </div>
       <div type="scene">
         <head>Siebente Szene</head>
-        <sp who="#ein_bauer">
+        <sp who="#der_bauer">
           <speaker>EIN BAUER</speaker>
-          <stage>
-            <hi>tritt auf mit einem Korbe.</hi>
-          </stage>
+          <stage>tritt auf mit einem Korbe.</stage>
           <l>Holla! Beweis genug!</l>
         </sp>
         <sp who="#herr_gregorio">
@@ -2342,9 +2187,7 @@
         </sp>
         <sp who="#herr_gregorio">
           <speaker>HERR GREGORIO</speaker>
-          <stage>
-            <hi>zum Bauer.</hi>
-          </stage>
+          <stage>zum Bauer.</stage>
           <l>Nun?</l>
         </sp>
         <sp who="#der_bauer">
@@ -2404,9 +2247,7 @@
         </sp>
         <sp who="#bartolino">
           <speaker>BARTOLINO</speaker>
-          <stage>
-            <hi>zu Ambrosio.</hi>
-          </stage>
+          <stage>zu Ambrosio.</stage>
           <l>Du siehst, wenn ich es nicht verraten hätte –</l>
         </sp>
         <sp who="#ambrosio">
@@ -2418,9 +2259,7 @@
             <l>Nun, der hat auch daran gemußt, wie ich,</l>
             <l>Und mehrmals ist es mir, wie ihm, geglückt!</l>
           </lg>
-          <stage>
-            <hi>Zu Herrn Gregorio und Anselmo.</hi>
-          </stage>
+          <stage>Zu Herrn Gregorio und Anselmo.</stage>
           <lg>
             <l>Ich tats, der Lump hat keinen Teil daran,</l>
             <l>Ich meine diesen, der hier bei mir steht,</l>
@@ -2429,16 +2268,12 @@
             <l>Ich bin Soldat, mir wird ein Tod durchs Schwert,</l>
             <l>Wie schnell der kommt, das sah ich ja</l>
           </lg>
-          <stage>
-            <hi>Deutet auf die Tote.</hi>
-          </stage>
+          <stage>Deutet auf die Tote.</stage>
           <l>an der!</l>
         </sp>
         <sp who="#sebastiano">
           <speaker>SEBASTIANO</speaker>
-          <stage>
-            <hi>will Ambrosio das Schwert entreißen.</hi>
-          </stage>
+          <stage>will Ambrosio das Schwert entreißen.</stage>
           <l>Hund!</l>
         </sp>
         <sp who="#ambrosio">
@@ -2450,9 +2285,7 @@
         </sp>
         <sp who="#anselmo">
           <speaker>ANSELMO</speaker>
-          <stage>
-            <hi>zu Sebastiano.</hi>
-          </stage>
+          <stage>zu Sebastiano.</stage>
           <l>Wie konntest du nur –</l>
         </sp>
         <sp who="#sebastiano">
@@ -2522,16 +2355,12 @@
         </sp>
         <sp who="#herr_gregorio">
           <speaker>HERR GREGORIO</speaker>
-          <stage>
-            <hi>zu den Soldaten.</hi>
-          </stage>
+          <stage>zu den Soldaten.</stage>
           <lg>
             <l>Auf nun nach Palermo! –</l>
             <l>Wie gählings kommt der Tod!</l>
           </lg>
-          <stage>
-            <hi>Schüttelt sich.</hi>
-          </stage>
+          <stage>Schüttelt sich.</stage>
         </sp>
       </div>
     </body>
