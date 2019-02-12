@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Die Jüdin von Toledo</title>
+        <title type="main">Die Jüdin von Toledo</title>
+        <title type="sub">Historisches Trauerspiel in fünf Aufzügen</title>
         <author key="pnd:118542192">Grillparzer, Franz</author>
       </titleStmt>
       <publicationStmt>
@@ -44,52 +45,55 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="isaak">
-            <persName>ISAAK</persName>
+          <person xml:id="isaak" sex="MALE">
+            <persName>Isaak</persName>
           </person>
-          <person xml:id="rahel">
-            <persName>RAHEL</persName>
+          <person xml:id="rahel" sex="FEMALE">
+            <persName>Rahel</persName>
           </person>
-          <person xml:id="esther">
-            <persName>ESTHER</persName>
+          <person xml:id="esther" sex="FEMALE">
+            <persName>Esther</persName>
           </person>
-          <person xml:id="könig">
-            <persName>KÖNIG</persName>
-            <persName xml:id="der_könig">DER KÖNIG</persName>
+          <person xml:id="koenig" sex="MALE">
+            <persName>König</persName>
+            <persName type="variant">Der König</persName>
           </person>
-          <person xml:id="manrique">
-            <persName>MANRIQUE</persName>
+          <person xml:id="manrique" sex="MALE">
+            <persName>Manrique</persName>
           </person>
-          <person xml:id="königin">
-            <persName>KÖNIGIN</persName>
+          <person xml:id="koenigin" sex="FEMALE">
+            <persName>Königin</persName>
           </person>
-          <person xml:id="garceran">
-            <persName>GARCERAN</persName>
+          <person xml:id="garceran" sex="MALE">
+            <persName>Garceran</persName>
           </person>
-          <person xml:id="eine_weiberstimme">
-            <persName>EINE WEIBERSTIMME</persName>
+          <person xml:id="eine_weiberstimme" sex="FEMALE">
+            <persName>Eine Weiberstimme</persName>
           </person>
-          <person xml:id="knappe">
-            <persName>KNAPPE</persName>
+          <person xml:id="knappe" sex="MALE">
+            <persName>Knappe</persName>
           </person>
-          <person xml:id="diener">
-            <persName>DIENER</persName>
+          <person xml:id="diener_3" sex="MALE">
+            <persName>Diener (III)</persName>
           </person>
-          <person xml:id="bittsteller">
-            <persName>BITTSTELLER</persName>
+          <person xml:id="bittsteller" sex="MALE">
+            <persName>Bittsteller</persName>
           </person>
-          <person xml:id="zweiter_bittsteller">
-            <persName>ZWEITER BITTSTELLER</persName>
+          <person xml:id="zweiter_bittsteller" sex="MALE">
+            <persName>Zweiter Bittsteller</persName>
           </person>
-          <person xml:id="dritter_bittsteller">
-            <persName>DRITTER BITTSTELLER</persName>
+          <person xml:id="dritter_bittsteller" sex="MALE">
+            <persName>Dritter Bittsteller</persName>
           </person>
-          <person xml:id="kammerfrau">
-            <persName>KAMMERFRAU</persName>
+          <person xml:id="diener_4" sex="MALE">
+            <persName>Diener (IV)</persName>
           </person>
-          <person xml:id="von_aussen">
-            <persName>VON AUSSEN</persName>
+          <person xml:id="kammerfrau" sex="FEMALE">
+            <persName>Kammerfrau</persName>
           </person>
+          <personGrp xml:id="von_aussen" sex="UNKNOWN">
+            <name>Stimmen von außen</name>
+          </personGrp>
         </listPerson>
       </particDesc>
       <textClass>
@@ -102,6 +106,7 @@
       <listChange>
         <change when="2017-01-06">(dlina) file conversion from source</change>
         <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-12">(ff) formalities</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -112,8 +117,6 @@
         <head>Die Jüdin von Toledo</head>
         <head>Historisches Trauerspiel in fünf Aufzügen</head>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head><pb n="450"/> Personen.</head>
@@ -125,8 +128,11 @@
           <castItem>Doña Klara, Ehrendame der Königin.</castItem>
           <castItem>Die Kammerfrau der Königin.</castItem>
           <castItem>Isaak, der Jude.</castItem>
-          <castItem>Esther,</castItem>
-          <castItem>Rahel, dessen Töchter.</castItem>
+          <castGroup>
+            <castItem>Esther,</castItem>
+            <castItem>Rahel,</castItem>
+            <roleDesc>dessen Töchter.</roleDesc>
+          </castGroup>
           <castItem>Reinero, des Königs Knappe.</castItem>
           <castItem>Standesherren.</castItem>
           <castItem>Hofdamen.</castItem>
@@ -134,14 +140,16 @@
           <castItem>Diener und Leute aus dem Volk.</castItem>
         </castList>
       </div>
+      <set>
+        <p>Ort der Handlung: Toledo und Umgebung.</p>
+        <p>Zeit: Um das Jahr 1195.</p>
+      </set>
+    </front>
+    <body>
       <div type="act">
         <head>Erster Aufzug</head>
-        <stage>
-          <hi>Im königlichen Garten zu Toledo.</hi>
-        </stage>
-        <stage>
-          <hi>Isaak, Rahel und Esther kommen.</hi>
-        </stage>
+        <stage>Im königlichen Garten zu Toledo.</stage>
+        <stage>Isaak, Rahel und Esther kommen.</stage>
         <sp who="#isaak">
           <speaker>ISAAK.</speaker>
           <lg>
@@ -154,9 +162,7 @@
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>singt.</hi>
-          </stage>
+          <stage>singt.</stage>
           <l>La la la la.</l>
         </sp>
         <sp who="#isaak">
@@ -187,9 +193,7 @@
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>zu Esther.</hi>
-          </stage>
+          <stage>zu Esther.</stage>
           <lg>
             <l>Ei, was zerrst du mich am Arme?</l>
             <l>Und ich bleib und gehe doch nicht.</l>
@@ -220,9 +224,7 @@
             <l>Sei ein Erbteil schnöder Christen.</l>
             <l>Da lob ich mein erstes Weib,</l>
           </lg>
-          <stage>
-            <hi>Zu Esther.</hi>
-          </stage>
+          <stage>Zu Esther.</stage>
           <lg>
             <l>Deine Mutter, brav wie du,</l>
             <l><pb n="451"/> Wenn auch arm. Was nützte mir</l>
@@ -238,9 +240,7 @@
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>singend.</hi>
-          </stage>
+          <stage>singend.</stage>
           <lg>
             <l>Bin ich nicht schön,</l>
             <l>Bin ich nicht reich?</l>
@@ -261,35 +261,25 @@
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>ein Ohrgehänge abnehmend.</hi>
-          </stage>
+          <stage>ein Ohrgehänge abnehmend.</stage>
           <lg>
             <l>Sieh, so schraub ichs los und halt es.</l>
             <l>Wie das blitzt und wie das flimmert!</l>
             <l>Und doch acht ichs so geringe,</l>
             <l>Wenn mirs einfällt, schenk ichs dir,</l>
           </lg>
-          <stage>
-            <hi>Zu Esther.</hi>
-          </stage>
+          <stage>Zu Esther.</stage>
           <l>Oder werf es von mir. Sieh!</l>
-          <stage>
-            <hi>Sie macht mit der Hand eine fortschleudernde Bewegung.</hi>
-          </stage>
+          <stage>Sie macht mit der Hand eine fortschleudernde Bewegung.</stage>
         </sp>
         <sp who="#isaak">
           <speaker>ISAAK</speaker>
-          <stage>
-            <hi>nach der Richtung des Wurfes laufend.</hi>
-          </stage>
+          <stage>nach der Richtung des Wurfes laufend.</stage>
           <lg>
             <l>Weh, o weh! Wo flog es hin?</l>
             <l>Weh, o weh! Wie find ichs wieder?</l>
           </lg>
-          <stage>
-            <hi>Er sucht im Gesträuche.</hi>
-          </stage>
+          <stage>Er sucht im Gesträuche.</stage>
         </sp>
         <sp who="#esther">
           <speaker>ESTHER.</speaker>
@@ -307,9 +297,7 @@
         </sp>
         <sp who="#isaak">
           <speaker>ISAAK</speaker>
-          <stage>
-            <hi>suchend.</hi>
-          </stage>
+          <stage>suchend.</stage>
           <l>Weh! Verloren!</l>
           <pb n="452"/>
         </sp>
@@ -386,9 +374,7 @@
         <sp who="#isaak">
           <speaker>ISAAK.</speaker>
           <l>Immer zu! Komm, Esther, komm!</l>
-          <stage>
-            <hi>Er geht.</hi>
-          </stage>
+          <stage>Er geht.</stage>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL.</speaker>
@@ -398,28 +384,20 @@
             <l>Ich will nicht allein sein! Hört ihr?</l>
             <l>Ach, sie kommen. – Schwester! Vater!</l>
           </lg>
-          <stage>
-            <hi>Eilt ihnen nach.</hi>
-          </stage>
-          <stage>
-            <hi>Der König, die Königin, Manrique de Lara und Gefolge kommen.</hi>
-          </stage>
+          <stage>Eilt ihnen nach.</stage>
+          <stage>Der König, die Königin, Manrique de Lara und Gefolge kommen.</stage>
           <pb n="453"/>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>im Auftreten.</hi>
-          </stage>
+          <stage>im Auftreten.</stage>
           <lg>
             <l>Laßt näher nur das Volk! es stört mich nicht.</l>
             <l>Denn wer mich einen König nennt, bezeichnet</l>
             <l>Als Höchsten unter vielen mich, und Menschen</l>
             <l>Sind so ein Teil von meinem eignen Selbst.</l>
           </lg>
-          <stage>
-            <hi>Zur Königin gewendet.</hi>
-          </stage>
+          <stage>Zur Königin gewendet.</stage>
           <lg>
             <l>Und du, kein mindrer Teil von meinem Wesen,</l>
             <l>Willkommen mir in dieser treuen Stadt,</l>
@@ -477,9 +455,7 @@
             <l>In so viel Ruhm, in so viel Taten spiegeln,</l>
             <l>Dann ist der Dank so ein als andre Pflicht.</l>
           </lg>
-          <stage>
-            <hi>Zur Königin.</hi>
-          </stage>
+          <stage>Zur Königin.</stage>
           <lg>
             <l>Seht ihn nur an mit euerm holden Blick.</l>
             <l>Denn so viel Könge noch in Spanien waren,</l>
@@ -495,7 +471,7 @@
             <l>Mir blieb der Neid, und er war fleckenlos.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Ei, ei! der Lehrer auch ein Schmeichler, Lara?</l>
@@ -526,9 +502,7 @@
             <l>Und die ich, grad heraus, noch wärmer liebte,</l>
             <l>Wär manchmal, statt des Lobs, auch etwas zu verzeihn.</l>
           </lg>
-          <stage>
-            <hi>Zur Königin.</hi>
-          </stage>
+          <stage>Zur Königin.</stage>
           <lg>
             <l>Nu, nu, erschrick nur nicht, wars doch nur Scherz!</l>
             <l>Doch soll den Tag man nicht vor Abend loben</l>
@@ -549,12 +523,12 @@
             <l>Und schaust, was wir geschaffen, dir zur Lust?</l>
           </lg>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Was soll ich sehn?</l>
           <pb n="456"/>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>O weh doch, Almirante,</l>
@@ -573,11 +547,11 @@
             <l>Die sich für uns, weiß Gott wie lang, bemüht.</l>
           </lg>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Ich dank euch, edle Herrn!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Nun zu was anderm!</l>
@@ -598,7 +572,7 @@
           <speaker>MANRIQUE.</speaker>
           <l>Herr –</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Was ist? Wie nur?</l>
         </sp>
@@ -606,18 +580,16 @@
           <speaker>MANRIQUE.</speaker>
           <l>Ein Bote kam.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Nun denn!</l>
         </sp>
         <sp who="#manrique">
           <speaker>MANRIQUE</speaker>
-          <stage>
-            <hi>auf die Königin zeigend.</hi>
-          </stage>
+          <stage>auf die Königin zeigend.</stage>
           <l>Ein wenig später.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Mein Weib, sie ist gewohnt an Rat und Krieg.</l>
@@ -631,7 +603,7 @@
             <l>Der Bote selber –</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Und wer ists?</l>
         </sp>
@@ -640,12 +612,10 @@
           <l>Mein Sohn.</l>
           <pb n="457"/>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Ah, Garceran! Laß ihn nur kommen!</l>
-          <stage>
-            <hi>Zur Königin.</hi>
-          </stage>
+          <stage>Zur Königin.</stage>
           <lg>
             <l>Bleib!</l>
             <l>Der junge Mann hat höchlich wohl gefehlt,</l>
@@ -659,18 +629,14 @@
             <l>Auch, denk ich, hat er reichlich abgebüßt,</l>
             <l>Seit Monden schon verbannt zur fernen Grenze.</l>
           </lg>
-          <stage>
-            <hi>Auf einen Wink der Königin entfernt sich ein Fraülein ihres Gefolges.</hi>
-          </stage>
+          <stage>Auf einen Wink der Königin entfernt sich ein Fraülein ihres Gefolges.</stage>
           <lg>
             <l>Nun geht sie doch! O Sittsamkeit,</l>
             <l>Noch sittlicher als Sitte.</l>
           </lg>
-          <stage>
-            <hi>Garceran kommt.</hi>
-          </stage>
+          <stage>Garceran kommt.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Ah, mein Freund!</l>
@@ -686,7 +652,7 @@
             <l>Doch schwer drückt edler Fraun gerechter Zorn.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Gerechter Zorn, ja wohl! und glaube nicht,</l>
@@ -707,7 +673,7 @@
             <l>Seit kurzer Zeit jedoch hält Ruh der Gegner.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Ei das ist schlimm!</l>
         </sp>
@@ -724,7 +690,7 @@
             <l>Dann käme wohl der Schlag, der uns bedroht.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Nun, schlagen sie, so schlagen wir denn wieder.</l>
@@ -752,7 +718,7 @@
             <l>Schon ward ein Jude hier und da mißhandelt.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Und ihr, ihr duldets? Nun, beim großen Gott,</l>
@@ -764,7 +730,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Man nennt sie Späher in der Mauren Sold.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Niemand verrät zuletzt, was er nicht weiß.</l>
@@ -776,12 +742,10 @@
         </sp>
         <sp who="#eine_weiberstimme">
           <speaker>EINE WEIBERSTIMME</speaker>
-          <stage>
-            <hi>von außen.</hi>
-          </stage>
+          <stage>von außen.</stage>
           <l>Weh uns!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Was ist?</l>
         </sp>
@@ -794,19 +758,15 @@
             <l>Sie flieht hierher.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Ganz recht, denn hier ist Schutz,</l>
             <l>Und Gottes Donner, wer ein Haar ihr krümmt.</l>
           </lg>
-          <stage>
-            <hi>In die Szene rufend.</hi>
-          </stage>
+          <stage>In die Szene rufend.</stage>
           <l>Hierher, nur hier!</l>
-          <stage>
-            <hi>Rahel kommt fliehend.</hi>
-          </stage>
+          <stage>Rahel kommt fliehend.</stage>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL.</speaker>
@@ -814,23 +774,17 @@
             <l>O weh, sie töten mich,</l>
             <l>Wie dort den Vater! Ist denn nirgends Hilfe?</l>
           </lg>
-          <stage>
-            <hi>Sie erblickt die Königin und kniet vor ihr.</hi>
-          </stage>
+          <stage>Sie erblickt die Königin und kniet vor ihr.</stage>
           <lg>
             <l>O hohes Frauenbild, beschirme mich.</l>
             <l>Streck aus die Hand und schütze deine Magd.</l>
             <l>Ich will dir dienen auch, nicht Jüdin, Sklavin.</l>
           </lg>
-          <stage>
-            <hi>Sie greift nach den Händen der Königin, die sich von ihr abwendet.</hi>
-          </stage>
+          <stage>Sie greift nach den Händen der Königin, die sich von ihr abwendet.</stage>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>aufstehend.</hi>
-          </stage>
+          <stage>aufstehend.</stage>
           <lg>
             <l>Auch hier nicht Rettung, übrall Angst und Tod.</l>
             <l>Wohin nur flieh ich?</l>
@@ -840,16 +794,12 @@
             <l>Du kannst mich schützen, Herr, ach, und du wirsts.</l>
             <l>Ich will nicht sterben, will nicht! Nein, nein, nein!</l>
           </lg>
-          <stage>
-            <hi>Sie wirft sich vor dem Könige nieder, seinen rechten Fuß umklammernd, das Haupt zu
-              Boden gesenkt.</hi>
-          </stage>
+          <stage>Sie wirft sich vor dem Könige nieder, seinen rechten Fuß umklammernd, das Haupt zu
+            Boden gesenkt.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>zu einigen, die sich nähern.</hi>
-          </stage>
+          <stage>zu einigen, die sich nähern.</stage>
           <lg>
             <l>Laßt sie! Der Schreck beraubt sie fast der Sinne,</l>
             <l>Und wie sie schaudert, schütternd mich mit sich.</l>
@@ -857,48 +807,36 @@
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>emporgerichtet.</hi>
-          </stage>
+          <stage>emporgerichtet.</stage>
           <l>Und alles, was ich habe,</l>
-          <stage>
-            <hi>Ihr Armband ablösend.</hi>
-          </stage>
+          <stage>Ihr Armband ablösend.</stage>
           <lg>
             <l>Diese Spangen,</l>
             <l>Das Halsgeschmeid und dann dies teure Tuch,</l>
           </lg>
-          <stage>
-            <hi>Ein Tuch ablösend, das sie schalartig um den Hals geschlungen trägt.</hi>
-          </stage>
+          <stage>Ein Tuch ablösend, das sie schalartig um den Hals geschlungen trägt.</stage>
           <lg>
             <l>Der Vater hats gekauft um vierzig Pfund,</l>
             <l>Echt indisches Geweb, ich geb es hin.</l>
             <l>Nur laßt mein Leben mir, ich will nicht sterben!</l>
           </lg>
-          <stage>
-            <hi>Sinkt in ihre vorige Stellung zurück.</hi>
-          </stage>
-          <stage>
-            <hi><pb n="460"/> Man hat Isaak und Esther gebracht.</hi>
-          </stage>
+          <stage>Sinkt in ihre vorige Stellung zurück.</stage>
+          <stage><pb n="460"/> Man hat Isaak und Esther gebracht.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Was hat der Mann verbrochen?</l>
         </sp>
         <sp who="#manrique">
           <speaker>MANRIQUE</speaker>
-          <stage>
-            <hi>da alle schweigen.</hi>
-          </stage>
+          <stage>da alle schweigen.</stage>
           <lg>
             <l>Herr, du weißt,</l>
             <l>Verboten ist der Eintritt diesem Volk</l>
             <l>In Königs Garten, wenn der Hof zur Stelle.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Nun, wenns verboten, so erlaub ichs denn.</l>
         </sp>
@@ -910,68 +848,56 @@
             <l>Und nicht arabisch, nicht in Maurensprache.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Ich glaubs, ich glaubs!</l>
-          <stage>
-            <hi>Auf Rahel zeigend.</hi>
-          </stage>
+          <stage>Auf Rahel zeigend.</stage>
           <l>Und diese?</l>
         </sp>
         <sp who="#esther">
           <speaker>ESTHER.</speaker>
           <l>Meine Schwester!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>So nimm sie denn und bring sie fort.</l>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>da Esther sich ihr nähert.</hi>
-          </stage>
+          <stage>da Esther sich ihr nähert.</stage>
           <lg>
             <l>Nein, nein!</l>
             <l>Sie fassen mich, sie führen mich hinaus</l>
             <l>Und töten mich!</l>
           </lg>
-          <stage>
-            <hi>Auf den abgelegten Schmuck zeigend.</hi>
-          </stage>
+          <stage>Auf den abgelegten Schmuck zeigend.</stage>
           <lg>
             <l>Hier ist mein Lösegeld!</l>
             <l>Hier will ich bleiben und will leichter atmen.</l>
           </lg>
-          <stage>
-            <hi>Die Wange an des Königs Knie gelegt.</hi>
-          </stage>
+          <stage>Die Wange an des Königs Knie gelegt.</stage>
           <l>Hier ist die Sicherheit, hier ruht sichs gut.</l>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Wollt ihr nicht gehn?</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Ihr seht, ich bin gefangen!</l>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Seid ihr gefangen, bin ich frei. Ich gehe.</l>
-          <stage>
-            <hi>Mit ihren Frauen ab.</hi>
-          </stage>
+          <stage>Mit ihren Frauen ab.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Nun noch auch das! Mit ihrem Züchtigtun</l>
             <l>Erschaffen sie, was sie entfernen möchten.</l>
           </lg>
-          <stage>
-            <hi>Zu Rahel, streng.</hi>
-          </stage>
+          <stage>Zu Rahel, streng.</stage>
           <lg>
             <l>Ich sage dir, steh auf! – Gib ihr ihr Tuch</l>
             <l>Und laß sie gehn.</l>
@@ -983,15 +909,11 @@
             <l>O Herr, nur noch ein Weilchen-</l>
             <l>Die Glieder sind gelähmt – ich kann nicht schreiten.</l>
           </lg>
-          <stage>
-            <hi>Den Ellbogen aufs Knie und den Kopf in die Hand gestützt.</hi>
-          </stage>
+          <stage>Den Ellbogen aufs Knie und den Kopf in die Hand gestützt.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>zurücktretend.</hi>
-          </stage>
+          <stage>zurücktretend.</stage>
           <l>Und ist sie immer denn so schreckhaft?</l>
         </sp>
         <sp who="#esther">
@@ -1002,7 +924,7 @@
             <l>Und trotzte, wollte, Herr, dich sehen.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Mich?</l>
@@ -1017,7 +939,7 @@
             <l>Und macht uns lachen, wenn wir noch so ernst.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>So wollt ich denn, sie wäre eine Christin</l>
@@ -1032,17 +954,13 @@
         </sp>
         <sp who="#esther">
           <speaker>ESTHER</speaker>
-          <stage>
-            <hi>mit Rahel beschäftigt.</hi>
-          </stage>
+          <stage>mit Rahel beschäftigt.</stage>
           <l>Steh auf! steh auf!</l>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>sich emporhebend und Esther den Halsschmuck abnehmend, den sie zu dem übrigen
-              legt.</hi>
-          </stage>
+          <stage>sich emporhebend und Esther den Halsschmuck abnehmend, den sie zu dem übrigen
+            legt.</stage>
           <lg>
             <l>Und gib nur, was du hast.</l>
             <l>Es ist mein Lösegeld.</l>
@@ -1052,7 +970,7 @@
           <speaker>ESTHER.</speaker>
           <l>Es sei denn also.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Was dünkt dir von dem allen?</l>
         </sp>
@@ -1060,7 +978,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Mir, o Herr?</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Verstell dich nicht! du bist ein feiner Kenner.</l>
@@ -1072,23 +990,21 @@
           <speaker>GARCERAN.</speaker>
           <l>Sie ists, o Herr!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>So sei denn stark, denn du sollst sie geleiten.</l>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>die in der Mitte der Bühne mit gebrochenen Knieen und gesenktem Haupte steht, den
-              Ärmel aufstreifend.</hi>
-          </stage>
+          <stage>die in der Mitte der Bühne mit gebrochenen Knieen und gesenktem Haupte steht, den
+            Ärmel aufstreifend.</stage>
           <lg>
             <l>Leg mir das Armband an. – O weh, du drückst mich.</l>
             <l>Den Halsschmuck auch – Zwar der hängt ja noch hier.</l>
             <l>Das Tuch behalt, mir ist so schwer und schwül.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Bring sie nach Haus!</l>
         </sp>
@@ -1096,7 +1012,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Doch, Herr, ich fürchte.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Was?</l>
         </sp>
@@ -1104,7 +1020,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Das Volk ist aufgeregt –</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Du hast nicht unrecht.</l>
@@ -1114,13 +1030,11 @@
         </sp>
         <sp who="#esther">
           <speaker>ESTHER</speaker>
-          <stage>
-            <hi>Rahel das Kleid am Halse zurechtrichtend.</hi>
-          </stage>
+          <stage>Rahel das Kleid am Halse zurechtrichtend.</stage>
           <l>Und wie das Kleid verschoben und zerstört.</l>
           <pb n="462"/>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Bring sie vorerst nach einem der Kioske,</l>
@@ -1131,7 +1045,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Ich höre, hoher Herr!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Wir nur? Ja so!</l>
@@ -1142,7 +1056,7 @@
           <speaker>ESTHER.</speaker>
           <l>Wir sinds, o Herr.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Und ist es Abend und das Volk verlaufen,</l>
@@ -1153,44 +1067,36 @@
           <speaker>GARCERAN.</speaker>
           <l>Komm, schöne Heidin!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Heidin! welche Possen!</l>
         </sp>
         <sp who="#esther">
           <speaker>ESTHER</speaker>
-          <stage>
-            <hi>zu Rahel, die sich zum Fortgehen anschickt.</hi>
-          </stage>
+          <stage>zu Rahel, die sich zum Fortgehen anschickt.</stage>
           <l>Und dankst du nicht dem Herrn für so viel Huld?</l>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>noch immer erschöpft, sich gegen den König wendend.</hi>
-          </stage>
+          <stage>noch immer erschöpft, sich gegen den König wendend.</stage>
           <lg>
             <l>Hab Dank, o Herr, für deinen mächtgen Schutz!</l>
             <l>O, daß ich nicht ein ärmlich Wesen wäre,</l>
           </lg>
-          <stage>
-            <hi>Mit einer Bewegung der Hand über den Hals.</hi>
-          </stage>
+          <stage>Mit einer Bewegung der Hand über den Hals.</stage>
           <lg>
             <l>Daß dieser Hals, gekürzt von Henkershand,</l>
             <l>Daß diese Brust ein Schild gen deinen Feind –</l>
             <l>Zwar das begehrst du nicht.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Ein hübscher Schild!</l>
             <l>Somit denn geht mit Gott. Und – Garceran</l>
           </lg>
-          <stage>
-            <hi>Leiser.</hi>
-          </stage>
+          <stage>Leiser.</stage>
           <lg>
             <l>Ich wünschte nicht, daß diese hier mein Schützling</l>
             <l>Durch irgendwie zudringlich kühne Possen</l>
@@ -1199,37 +1105,27 @@
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>die Hand an die Stirne gelegt.</hi>
-          </stage>
+          <stage>die Hand an die Stirne gelegt.</stage>
           <l>Ich kann nicht gehn.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>da ihr Garceran den Arm bieten will.</hi>
-          </stage>
+          <stage>da ihr Garceran den Arm bieten will.</stage>
           <lg>
             <l>Wozu den Arm? Laß sie die Schwester führen.</l>
             <l>Du, alter Mann, bewahre deine Tochter.</l>
             <l>Die Welt ist arg, so hüte deinen Schatz.</l>
           </lg>
-          <stage>
-            <hi>Rahel und die Ihrigen, von Garceran begleitet, ab.</hi>
-          </stage>
+          <stage>Rahel und die Ihrigen, von Garceran begleitet, ab.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>ihnen nachsehend.</hi>
-          </stage>
+          <stage>ihnen nachsehend.</stage>
           <lg>
             <l>Sie wankt noch immer. All ihr ganzes Wesen</l>
             <l>Ein Meer von Angst in stets erneuten Wellen.</l>
           </lg>
-          <stage>
-            <hi>Mit dem Fuß auftretend.</hi>
-          </stage>
+          <stage>Mit dem Fuß auftretend.</stage>
           <lg>
             <l>Hielt sie den Fuß mir doch so eng umklammert,</l>
             <l>Daß er fast schmerzt. – Im Grunde wunderlich.</l>
@@ -1245,7 +1141,7 @@
             <l>Ihr eben jetzt so fein als streng bestraft.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Bestraft?</l>
         </sp>
@@ -1253,15 +1149,13 @@
           <speaker>MANRIQUE.</speaker>
           <l>Als Hüter ihn bestellend diesem Pöbel.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Die Strafe, Freund, ist, denk ich, nicht so hart.</l>
             <l>Ich selbst hab nie nach Weibern viel gefragt,</l>
           </lg>
-          <stage>
-            <hi>Auf das Gefolge zeigend.</hi>
-          </stage>
+          <stage>Auf das Gefolge zeigend.</stage>
           <lg>
             <l>Doch diese Herrn sind etwa andrer Meinung.</l>
             <l>Nun aber fort mit diesen wirren Bildern!</l>
@@ -1270,21 +1164,15 @@
             <l>Gedenk ein jeder des – woran er denken mag.</l>
           </lg>
           <l>Hier ist kein Rang! Nur zu! Voraus! Voran!</l>
-          <stage>
-            <hi>Indem die Hofleute sich zu beiden Seiten ordnen und der König mitten durch sie
-              abgeht, fällt der Vorhang.</hi>
-          </stage>
+          <stage>Indem die Hofleute sich zu beiden Seiten ordnen und der König mitten durch sie
+            abgeht, fällt der Vorhang.</stage>
         </sp>
       </div>
       <div type="act">
         <head><pb n="464"/> Zweiter Aufzug</head>
-        <stage>
-          <hi>Ein Teil des Gartens. Kurzes Theater. Rechts ein Gartenhaus mit einem Balkon und einer
-            Tür, zu der mehrere Stufen emporführen.</hi>
-        </stage>
-        <stage>
-          <hi>Garceran zur Türe herauskommend.</hi>
-        </stage>
+        <stage>Ein Teil des Gartens. Kurzes Theater. Rechts ein Gartenhaus mit einem Balkon und
+          einer Tür, zu der mehrere Stufen emporführen.</stage>
+        <stage>Garceran zur Türe herauskommend.</stage>
         <sp who="#garceran">
           <speaker>GARCERAN.</speaker>
           <lg>
@@ -1300,9 +1188,7 @@
             <l>Ich neu zu Ehren bringe, da 's noch Zeit.</l>
             <l>Entfliehen der Gefahr nennt Sieg der Kluge.</l>
           </lg>
-          <stage>
-            <hi>Ein Knappe des Königs kommt.</hi>
-          </stage>
+          <stage>Ein Knappe des Königs kommt.</stage>
         </sp>
         <sp who="#knappe">
           <speaker>KNAPPE.</speaker>
@@ -1335,11 +1221,9 @@
         <sp who="#garceran">
           <speaker>GARCERAN.</speaker>
           <l>Ah Majestät!</l>
-          <stage>
-            <hi>Der König kommt im Mantel gehüllt, der Knappe geht.</hi>
-          </stage>
+          <stage>Der König kommt im Mantel gehüllt, der Knappe geht.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Nun, Freund,</l>
@@ -1353,7 +1237,7 @@
             <l>Daß erst beim Anbruch von des Abends Dunkel –</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Ja wohl, ja wohl! Doch reifer Überlegung</l>
@@ -1365,7 +1249,7 @@
           <speaker>GARCERAN.</speaker>
           <l>So glaubt ihr, hoher Herr –</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Ich glaube, daß du ehrst des Königs Wort,</l>
@@ -1388,7 +1272,7 @@
             <l>Man hat sich eingerichtet und ist ruhig.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Und scheint sie sich zu sehnen nach der Heimat?</l>
         </sp>
@@ -1399,7 +1283,7 @@
             <l>Doch leichter Sinn grämt sich nicht gern voraus.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Du hast doch nicht versäumt, der Worte Köder</l>
@@ -1411,7 +1295,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Nu, Herr, nicht eben schlimm.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Du lügst! – Im Grunde bist du glücklich, Mensch!</l>
@@ -1431,7 +1315,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Pfui, Herr, das wär veraltet!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Nun denn, geblickt? Und Junker Gänsrich schaut,</l>
@@ -1468,7 +1352,7 @@
             <l>Zu Recht verwiesen, doch die Jüdin, Herr –</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Spiel etwa du den Kostverächter doch!</l>
@@ -1494,7 +1378,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Herr, ich weiß nicht.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Ei!</l>
@@ -1513,9 +1397,7 @@
             <l>Vielleicht einmal, wenn müde Sorgen drücken,</l>
             <l>Besuch ich sie und freu mich ihres Danks.</l>
           </lg>
-          <stage>
-            <hi>Im Begriffe zu gehen, hört er Geräusch im Hause und bleibt stehen.</hi>
-          </stage>
+          <stage>Im Begriffe zu gehen, hört er Geräusch im Hause und bleibt stehen.</stage>
           <l>Was ist?</l>
         </sp>
         <sp who="#garceran">
@@ -1526,27 +1408,21 @@
             <l>Und streiten unter sich.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>auf das Haus zugehend.</hi>
-          </stage>
+          <stage>auf das Haus zugehend.</stage>
           <l>Was gibts zu streiten?</l>
-          <stage>
-            <hi>Isaak kommt aus dem Gartenhause.</hi>
-          </stage>
+          <stage>Isaak kommt aus dem Gartenhause.</stage>
         </sp>
         <sp who="#isaak">
           <speaker>ISAAK</speaker>
-          <stage>
-            <hi>zurücksprechend.</hi>
-          </stage>
+          <stage>zurücksprechend.</stage>
           <lg>
             <l>Nun denn, so bleibt und spielt um euer Haupt!</l>
             <l>Schon einmal gings euch nah. Ich rette mich.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Frag, was es gibt!</l>
         </sp>
@@ -1556,16 +1432,14 @@
         </sp>
         <sp who="#isaak">
           <speaker>ISAAK</speaker>
-          <stage>
-            <hi>zu Garceran.</hi>
-          </stage>
+          <stage>zu Garceran.</stage>
           <lg>
             <l>Ah, ihr seids, hoher Herr, der uns beschirmt.</l>
             <l>Mein Rahelchen, sie spricht gar viel von euch.</l>
             <l>Sie hat euch lieb.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Zur Sache! Was Geschwätz –</l>
         </sp>
@@ -1582,13 +1456,9 @@
         </sp>
         <sp who="#isaak">
           <speaker>ISAAK</speaker>
-          <stage>
-            <hi>zum Fenster hinaufsprechend.</hi>
-          </stage>
+          <stage>zum Fenster hinaufsprechend.</stage>
           <l>Nun ja, es wird euch kommen. Wartet nur.</l>
-          <stage>
-            <hi>Zu Garceran.</hi>
-          </stage>
+          <stage>Zu Garceran.</stage>
           <lg>
             <l>Ihr selber habt gesehn mein Rahelchen,</l>
             <l>Wie sie geweint, gestöhnt, die Brüste schlug,</l>
@@ -1606,11 +1476,9 @@
             <l>In bunter Reih.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>halblaut zu Garceran.</hi>
-          </stage>
+          <stage>halblaut zu Garceran.</stage>
           <l>Vom letzten Fastnachtspiel.</l>
         </sp>
         <sp who="#isaak">
@@ -1622,9 +1490,7 @@
             <l>Legt sich ein schleppend Kleid um ihre Schultern</l>
             <l>Und sagt, sie sei die Königin.</l>
           </lg>
-          <stage>
-            <hi>Zurücksprechend.</hi>
-          </stage>
+          <stage>Zurücksprechend.</stage>
           <lg>
             <l>Ja, Törin!</l>
             <l>Zuletzt – Im Nebenzimmer hängt ein Bild</l>
@@ -1633,9 +1499,7 @@
             <l>Nennt es Gemahl, sprichts an mit süßen Worten</l>
             <l>Und drückts an ihre Brust.</l>
           </lg>
-          <stage>
-            <hi>Der König geht mit starken Schritten auf das Gartenhaus zu.</hi>
-          </stage>
+          <stage>Der König geht mit starken Schritten auf das Gartenhaus zu.</stage>
         </sp>
         <sp who="#garceran">
           <speaker>GARCERAN.</speaker>
@@ -1643,16 +1507,12 @@
         </sp>
         <sp who="#isaak">
           <speaker>ISAAK</speaker>
-          <stage>
-            <hi>zurückweichend.</hi>
-          </stage>
+          <stage>zurückweichend.</stage>
           <l>Weh mir!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>auf den Stufen stehend, mit ruhiger Stimme.</hi>
-          </stage>
+          <stage>auf den Stufen stehend, mit ruhiger Stimme.</stage>
           <lg>
             <l>Den Scherz säh gern ich in der Nähe.</l>
             <l>Zudem rückt eurer Heimkehr Zeit heran.</l>
@@ -1660,9 +1520,7 @@
             <l>Du, Alter, aber komm! Denn nicht allein,</l>
             <l>Nicht unbewacht will nahn ich deinen Kindern.</l>
           </lg>
-          <stage>
-            <hi>Er geht ins Haus.</hi>
-          </stage>
+          <stage>Er geht ins Haus.</stage>
         </sp>
         <sp who="#isaak">
           <speaker>ISAAK.</speaker>
@@ -1683,15 +1541,11 @@
             <l>Geh immer nur! Und was die Furcht betrifft,</l>
             <l>Nicht deine Tochter ists, noch du, für die ich fürchte.</l>
           </lg>
-          <stage>
-            <hi>Er stößt den Zögernden zur Tür hinein und folgt. Beide ab.</hi>
-          </stage>
-          <stage>
-            <hi>Saal in dem Gartenhause. Im Hintergrunde nach links eine Türe, im Vordergrunde
-              rechts eine zweite Rahel, eine Federkrone auf dem Kopfe und einen goldgestickten
-              Mantel um die Schultern, ist bemüht, einen Lehnstuhl aus dem Seitengemache rechts
-              herauszuschleppen. Esther ist durch den Haupteingang eingetreten.</hi>
-          </stage>
+          <stage>Er stößt den Zögernden zur Tür hinein und folgt. Beide ab.</stage>
+          <stage>Saal in dem Gartenhause. Im Hintergrunde nach links eine Türe, im Vordergrunde
+            rechts eine zweite Rahel, eine Federkrone auf dem Kopfe und einen goldgestickten Mantel
+            um die Schultern, ist bemüht, einen Lehnstuhl aus dem Seitengemache rechts
+            herauszuschleppen. Esther ist durch den Haupteingang eingetreten.</stage>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL.</speaker>
@@ -1710,23 +1564,17 @@
             <l>Der König hat das Haus uns eingeräumt,</l>
             <l>Solange wir es bewohnen, ist das unrsre.</l>
           </lg>
-          <stage>
-            <hi>Sie haben den Stuhl in die Mitte gerückt.</hi>
-          </stage>
+          <stage>Sie haben den Stuhl in die Mitte gerückt.</stage>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>sich besehend.</hi>
-          </stage>
+          <stage>sich besehend.</stage>
           <lg>
             <l>Und meine Schleppe, nicht wahr? steht mir gut,</l>
             <l>Und diese Federn nicken, wenn ich nicke.</l>
             <l>Nun fehlt noch eins und, warte nur, ich hol es.</l>
           </lg>
-          <stage>
-            <hi>Sie geht in die Seitentüre zurück.</hi>
-          </stage>
+          <stage>Sie geht in die Seitentüre zurück.</stage>
         </sp>
         <sp who="#esther">
           <speaker>ESTHER.</speaker>
@@ -1737,9 +1585,7 @@
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>kommt zurück mit einem Bild ohne Rahmen.</hi>
-          </stage>
+          <stage>kommt zurück mit einem Bild ohne Rahmen.</stage>
           <lg>
             <l>Hier ist des Königs Bild, gelöst vom Rahmen.</l>
             <l>Das nehm ich mit.</l>
@@ -1783,9 +1629,8 @@
             <l>Und jeder Stich dringt bis zum Herzen ein</l>
             <l>Und hemmt und fördert wahrgeschaffnes Leben.</l>
           </lg>
-          <stage>
-            <hi>Sie befestigt das Bild an den vier Ecken mit Nadeln an die Lehne des Stuhls.</hi>
-          </stage>
+          <stage>Sie befestigt das Bild an den vier Ecken mit Nadeln an die Lehne des
+            Stuhls.</stage>
           <lg>
             <l>O, gäbe jeder dieser Stiche Blut,</l>
             <l>Ich wollt es trinken mit den durstgen Lippen</l>
@@ -1794,9 +1639,7 @@
             <l>Ich aber red ihn an als Königin</l>
             <l>Mit Mantel und mit Krone, die mich kleiden.</l>
           </lg>
-          <stage>
-            <hi>Sie hat sich auf den Schemel gesetzt und sitzt vor dem Bilde.</hi>
-          </stage>
+          <stage>Sie hat sich auf den Schemel gesetzt und sitzt vor dem Bilde.</stage>
           <lg>
             <l>Ihr ehrvergeßner Mann, stellt euch nur fromm,</l>
             <l>Ich kenne dennoch jeden eurer Schliche.</l>
@@ -1804,19 +1647,12 @@
             <l>Und sie ist schön, bei meinem hohen Wort,</l>
             <l>Nur mit mir selber etwa zu vergleichen.</l>
           </lg>
-          <stage>
-            <hi>Der König, von Garceran und Isaak gefolgt, ist gekommen und hat sich hinter den
-              Stuhl gestellt, die </hi>
-          </stage>
-          <stage>
-            <hi>Arme auf die Rücklehne gelegt, sie betrachtend.</hi>
-          </stage>
+          <stage>Der König, von Garceran und Isaak gefolgt, ist gekommen und hat sich hinter den
+            Stuhl gestellt, die Arme auf die Rücklehne gelegt, sie betrachtend.</stage>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>fortfahrend.</hi>
-          </stage>
+          <stage>fortfahrend.</stage>
           <lg>
             <l>Ich, eure Königin, nun duld es nicht,</l>
             <l>Denn eifersüchtig bin ich wie ein Wiesel.</l>
@@ -1824,29 +1660,23 @@
             <l>Gesteht! Gefiel sie euch? Sagt ja?</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Nun ja!</l>
-          <stage>
-            <hi>Rahel fährt zusammen, blickt nach dem Bilde, dann aufwärts, erkennt den König und
-              bleibt regungslos auf dem Schemel.</hi>
-          </stage>
+          <stage>Rahel fährt zusammen, blickt nach dem Bilde, dann aufwärts, erkennt den König und
+            bleibt regungslos auf dem Schemel.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>vortretend.</hi>
-          </stage>
+          <stage>vortretend.</stage>
           <lg>
             <l>Erschreckt dich das? Du wolltests und ich sags.</l>
             <l>Ermanne dich, du bist in Freundes Händen.</l>
           </lg>
-          <stage>
-            <hi>Er streckt die Hand nach ihr aus, sie fährt vom Schemel empor und flieht nach der
-              Türe rechts, wo sie tiefatmend und mit gesenktem Haupte stehenbleibt.</hi>
-          </stage>
+          <stage>Er streckt die Hand nach ihr aus, sie fährt vom Schemel empor und flieht nach der
+            Türe rechts, wo sie tiefatmend und mit gesenktem Haupte stehenbleibt.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Ist sie so scheu?</l>
           <pb n="471"/>
@@ -1858,17 +1688,13 @@
             <l>Und scheu nicht, schreckhaft nur.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Bin ich so greulich?</l>
-          <stage>
-            <hi>Sich ihr nähernd.</hi>
-          </stage>
-          <stage>
-            <hi>Rahel schüttelt heftig mit dem Kopfe.</hi>
-          </stage>
+          <stage>Sich ihr nähernd.</stage>
+          <stage>Rahel schüttelt heftig mit dem Kopfe.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Nun denn, so fasse dich, mein gutes Kind!</l>
@@ -1881,9 +1707,7 @@
         </sp>
         <sp who="#isaak">
           <speaker>ISAAK</speaker>
-          <stage>
-            <hi>schnell.</hi>
-          </stage>
+          <stage>schnell.</stage>
           <lg>
             <l>Herr, in der Jüdenstraße</l>
             <l>Ben Mathaes Haus.</l>
@@ -1896,7 +1720,7 @@
             <l>Uns etwa schon vertrieb.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Dafür mein Wort!</l>
@@ -1912,12 +1736,10 @@
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>auf den Stuhl losstürzend.</hi>
-          </stage>
+          <stage>auf den Stuhl losstürzend.</stage>
           <l>Das Bild ist mein.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Was kommt dir bei?</l>
@@ -1926,19 +1748,15 @@
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>zu Garceran.</hi>
-          </stage>
+          <stage>zu Garceran.</stage>
           <lg>
             <l>Berühr die Nadeln nicht, noch dieses Bild,</l>
             <l>Sonst festig es mit einem tiefern Stich</l>
           </lg>
-          <stage>
-            <hi>Mit einer Nadel nach dem Bild fahrend.</hi>
-          </stage>
+          <stage>Mit einer Nadel nach dem Bild fahrend.</stage>
           <l>Siehst du? gerad ins Herz.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Halt ein! Beim Himmel!</l>
@@ -1958,41 +1776,35 @@
             <l>Es kam ihr ein, und also tat sies eben.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Man aber soll mit derlei keck nicht spielen.</l>
             <l>Es trieb bis zu den Augen mir das Blut,</l>
             <l>Und wie im wirren Licht seh ich die Dinge.</l>
           </lg>
-          <stage>
-            <hi>Zu Garceran.</hi>
-          </stage>
+          <stage>Zu Garceran.</stage>
           <l>Ist sie nicht schön?</l>
         </sp>
         <sp who="#garceran">
           <speaker>GARCERAN.</speaker>
           <l>Sie ists, mein Herr und König.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Und wie das wogt und wallt und glüht und prangt.</l>
-          <stage>
-            <hi>Rahel hat unterdessen das Bild abgenommen und zusammengerollt.</hi>
-          </stage>
+          <stage>Rahel hat unterdessen das Bild abgenommen und zusammengerollt.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Du willst das Bild denn durchaus nicht entbehren?</l>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>zu Esther.</hi>
-          </stage>
+          <stage>zu Esther.</stage>
           <l>Ich nehm es mit.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Nun denn, in Gottes Namen.</l>
@@ -2005,15 +1817,13 @@
         </sp>
         <sp who="#garceran">
           <speaker>GARCERAN</speaker>
-          <stage>
-            <hi>am Fenster.</hi>
-          </stage>
+          <stage>am Fenster.</stage>
           <lg>
             <l>Doch seht, o Herr, es naht der ganze Hof,</l>
             <l>Die Königin an des Geleites Spitze.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Hierher? Verwünscht! Ist hier kein andrer Ausgang?</l>
@@ -2022,12 +1832,10 @@
         </sp>
         <sp who="#garceran">
           <speaker>GARCERAN</speaker>
-          <stage>
-            <hi>auf die Seitentüre zeigend.</hi>
-          </stage>
+          <stage>auf die Seitentüre zeigend.</stage>
           <l>Vielleicht in dies Gemach.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Was fällt dir ein!</l>
@@ -2037,18 +1845,14 @@
             <l>Ich rette denn die wirre Majestät,</l>
             <l>Sieh zu, daß du baldmöglich sie entfernest.</l>
           </lg>
-          <stage>
-            <hi>Er geht in das Seitengemach.</hi>
-          </stage>
+          <stage>Er geht in das Seitengemach.</stage>
         </sp>
         <sp who="#esther">
           <speaker>ESTHER.</speaker>
           <l>Ich sagt es ja! Es ist der Weg des Unglücks.</l>
-          <stage>
-            <hi>Die Königin, von Manrique de Lara und mehreren begleitet, tritt ein.</hi>
-          </stage>
+          <stage>Die Königin, von Manrique de Lara und mehreren begleitet, tritt ein.</stage>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Es ward gesagt, der König sei hier oben.</l>
         </sp>
@@ -2057,7 +1861,7 @@
           <l>Er war, doch ging er fort.</l>
           <pb n="473"/>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Und hier die Jüdin.</l>
         </sp>
@@ -2069,9 +1873,7 @@
             <l>Leg ab die Krone, die dir nicht geziemt,</l>
             <l>Selbst nicht im Scherz; den Mantel von der Schulter!</l>
           </lg>
-          <stage>
-            <hi>Esther hat ihr beides abgenommen.</hi>
-          </stage>
+          <stage>Esther hat ihr beides abgenommen.</stage>
         </sp>
         <sp who="#manrique">
           <speaker>MANRIQUE.</speaker>
@@ -2094,9 +1896,7 @@
         </sp>
         <sp who="#manrique">
           <speaker>MANRIQUE</speaker>
-          <stage>
-            <hi>auf die Seitentüre zugehend.</hi>
-          </stage>
+          <stage>auf die Seitentüre zugehend.</stage>
           <lg>
             <l>Auch dort in jenem Zimmer forscht man erst,</l>
             <l>Ob nichts abhanden, ob die Habsucht nicht</l>
@@ -2105,9 +1905,7 @@
         </sp>
         <sp who="#garceran">
           <speaker>GARCERAN</speaker>
-          <stage>
-            <hi>ihm in den Weg tretend.</hi>
-          </stage>
+          <stage>ihm in den Weg tretend.</stage>
           <l>Hier, Vater, ruf ich: halt!</l>
         </sp>
         <sp who="#manrique">
@@ -2127,20 +1925,16 @@
             <l>Sieh mir ins Aug! Er kann es nicht ertragen.</l>
             <l>So raubt mir denn zwei Söhne dieser Tag.</l>
           </lg>
-          <stage>
-            <hi>Zur Königin.</hi>
-          </stage>
+          <stage>Zur Königin.</stage>
           <l>Wollt ihr nicht gehn?</l>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <lg>
             <l>Ich möchte, doch ich kann nicht.</l>
             <l>Vielmehr ich kann, beim Himmel, denn ich muß.</l>
           </lg>
-          <stage>
-            <hi>Zu Garceran.</hi>
-          </stage>
+          <stage>Zu Garceran.</stage>
           <lg>
             <l>Ziemt euer Amt gleich einem Ritter nicht,</l>
             <l>Doch dank ich euch, daß ihr es treulich übt.</l>
@@ -2148,9 +1942,7 @@
             <l>Und trefft ihr euern Herrn vor Abend noch,</l>
             <l>Sagt ihm, daß rück ich nach Toledo ging – allein!</l>
           </lg>
-          <stage>
-            <hi>Die Königin und ihr Gefolge ab.</hi>
-          </stage>
+          <stage>Die Königin und ihr Gefolge ab.</stage>
         </sp>
         <sp who="#garceran">
           <speaker>GARCERAN.</speaker>
@@ -2161,35 +1953,27 @@
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>zu Esther, die sich mit ihr beschäftigt.</hi>
-          </stage>
+          <stage>zu Esther, die sich mit ihr beschäftigt.</stage>
           <l>Ich wäre nicht gewichen, galts den Tod.</l>
           <pb n="474"/>
         </sp>
         <sp who="#esther">
           <speaker>ESTHER</speaker>
-          <stage>
-            <hi>zu Garceran.</hi>
-          </stage>
+          <stage>zu Garceran.</stage>
           <l>Nun aber bringt uns fort, wir bitten euch.</l>
         </sp>
         <sp who="#garceran">
           <speaker>GARCERAN.</speaker>
           <l>Erst frag ich noch den König, was sein Wille.</l>
-          <stage>
-            <hi>An die Seitentüre pochend.</hi>
-          </stage>
+          <stage>An die Seitentüre pochend.</stage>
           <lg>
             <l>Mein hoher Herr! – Wie nur? kein Zeichen! – Sollte</l>
             <l>Ein Unfall? – Wie denn immer auch, ich öffne.</l>
           </lg>
-          <stage>
-            <hi>Der König tritt heraus und bleibt im Vorgrunde stehen, indes die andern sich
-              zurückziehen.</hi>
-          </stage>
+          <stage>Der König tritt heraus und bleibt im Vorgrunde stehen, indes die andern sich
+            zurückziehen.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>So ist die Ehre und der Ruf der Welt</l>
@@ -2203,16 +1987,14 @@
             <l>Dann fort mit dir, du Buhlen um die Gunst.</l>
             <l>Bestimmen wir uns selber unsre Pfade.</l>
           </lg>
-          <stage>
-            <hi>Sich umwendend.</hi>
-          </stage>
+          <stage>Sich umwendend.</stage>
           <l>Wie, ihr noch hier?</l>
         </sp>
         <sp who="#garceran">
           <speaker>GARCERAN.</speaker>
           <l>Wir harren des Befehls.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Hättst du doch immer des Befehls geharrt</l>
@@ -2228,7 +2010,7 @@
             <l>Trifft andre gern das Zürnen ihrer Brust.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Ich bin kein solcher, Garceran. Sei ruhig!</l>
@@ -2236,9 +2018,7 @@
             <l>Doch nun bring diese fort, und zwar auf immer.</l>
             <l>Was andern Laune, ist beim Fürsten Schuld.</l>
           </lg>
-          <stage>
-            <hi>Da Rahel sich ihm nähert.</hi>
-          </stage>
+          <stage>Da Rahel sich ihm nähert.</stage>
           <lg>
             <l>Laß nur! Doch dieses Bild leg erst noch ab,</l>
             <l>Stell es zurück, von wo es ward genommen.</l>
@@ -2247,13 +2027,9 @@
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>zu Esther.</hi>
-          </stage>
+          <stage>zu Esther.</stage>
           <l>So komm du mit.</l>
-          <stage>
-            <hi>Indem sich beide der Seitentüre nähern.</hi>
-          </stage>
+          <stage>Indem sich beide der Seitentüre nähern.</stage>
           <l>Trägst du mein eigen Bild wie sonst am Halse?</l>
           <pb n="475"/>
         </sp>
@@ -2264,11 +2040,9 @@
         <sp who="#rahel">
           <speaker>RAHEL.</speaker>
           <l>Meinen Willen. Gälts das Schlimmste.</l>
-          <stage>
-            <hi>Sie gehen in die Seitentüre.</hi>
-          </stage>
+          <stage>Sie gehen in die Seitentüre.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Dann kehr zur Grenze, wohin nächst ich folge.</l>
@@ -2276,15 +2050,13 @@
             <l>Die gleichgeteilte, dieses Tages waschen,</l>
             <l>Daß wieder wir ertragen Menschenblick.</l>
           </lg>
-          <stage>
-            <hi>Die Mädchen kommen zurück.</hi>
-          </stage>
+          <stage>Die Mädchen kommen zurück.</stage>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL.</speaker>
           <l>Es ist geschehn.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Und fort nun ohne Abschied.</l>
         </sp>
@@ -2296,7 +2068,7 @@
           <speaker>RAHEL.</speaker>
           <l>Den meinen nicht.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Nun so denn: ohne Dank.</l>
         </sp>
@@ -2304,22 +2076,18 @@
           <speaker>RAHEL.</speaker>
           <l>Ich spar ihn auf.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Das heißt: auf nie.</l>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL.</speaker>
           <l>Ich weiß das besser.</l>
-          <stage>
-            <hi>Zu Esther.</hi>
-          </stage>
+          <stage>Zu Esther.</stage>
           <l>Komm!</l>
-          <stage>
-            <hi>Sie gehn, von Garceran begleitet, wobei der Alte tiefe Verneigungen macht.</hi>
-          </stage>
+          <stage>Sie gehn, von Garceran begleitet, wobei der Alte tiefe Verneigungen macht.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Die höchste Zeit wars, daß sie ging, denn wahrlich,</l>
@@ -2330,23 +2098,21 @@
             <l>Da sieht sich denn ein Kluger billig vor.</l>
             <l>Alonso!</l>
           </lg>
-          <stage>
-            <hi>Ein Diener tritt ein.</hi>
-          </stage>
+          <stage>Ein Diener tritt ein.</stage>
         </sp>
-        <sp who="#diener">
+        <sp who="#diener_3">
           <speaker>DIENER.</speaker>
           <l>Hoher Herr.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Bereit die Pferde.</l>
         </sp>
-        <sp who="#diener">
+        <sp who="#diener_3">
           <speaker>DIENER.</speaker>
           <l>Herr, nach Toledo?</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Nach Alarcos, Freund.</l>
@@ -2368,24 +2134,18 @@
             <l>Sei alles, so wie früher, unverrückt,</l>
             <l>Und dieses Vorgangs letzte Spur verschwunden.</l>
           </lg>
-          <stage>
-            <hi>Er geht ins Seitengemach. Pause, während welcher der Diener die von Rahel abgelegten
-              Kleider vom Stuhle aufnimmt und über den Arm hängt, die Krone aber in der Hand
-              hält.</hi>
-          </stage>
-          <stage>
-            <hi>Der König kommt zurück, Rahels Bild haltend.</hi>
-          </stage>
+          <stage>Er geht ins Seitengemach. Pause, während welcher der Diener die von Rahel
+            abgelegten Kleider vom Stuhle aufnimmt und über den Arm hängt, die Krone aber in der
+            Hand hält.</stage>
+          <stage>Der König kommt zurück, Rahels Bild haltend.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Mein Bildnis fort und dies an seiner Stelle.</l>
             <l>Ihr eignes ists. Es brennt in meiner Hand.</l>
           </lg>
-          <stage>
-            <hi>Das Bild auf den Boden schleudernd.</hi>
-          </stage>
+          <stage>Das Bild auf den Boden schleudernd.</stage>
           <lg>
             <l>Fort mit dir, fort! Geht so weit denn die Frechheit?</l>
             <l>Das darf nicht sein! Indes ich ihrer selbst</l>
@@ -2396,19 +2156,17 @@
             <l>Die dieses Volk mit derlei Zeichen übt,</l>
             <l>Und etwas, wie von Zauber, kommt mich an.</l>
           </lg>
-          <stage>
-            <hi>Zum Diener.</hi>
-          </stage>
+          <stage>Zum Diener.</stage>
           <lg>
             <l>Nimm dies vom Boden auf und eile spornstreichs</l>
             <l>Bis du sie einholst.</l>
           </lg>
         </sp>
-        <sp who="#diener">
+        <sp who="#diener_3">
           <speaker>DIENER.</speaker>
           <l>Wen, Gebieter?</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Wen?</l>
@@ -2416,11 +2174,11 @@
             <l>Stell dies zurück dem Mädchen und begehre –</l>
           </lg>
         </sp>
-        <sp who="#diener">
+        <sp who="#diener_3">
           <speaker>DIENER.</speaker>
           <l>Was, hoher Herr?</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Soll ich die eignen Diener</l>
@@ -2428,11 +2186,9 @@
             <l>Ich will nur selbst den Tausch, wärs not, erzwingen.</l>
             <l>Nimm auf das Bild! – Ich selbst berühr es nicht.</l>
           </lg>
-          <stage>
-            <hi>Der Diener hat das Bild aufgehoben.</hi>
-          </stage>
+          <stage>Der Diener hat das Bild aufgehoben.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Wie ungeschickt! Birgs nur in deiner Brust!</l>
@@ -2445,20 +2201,18 @@
             <l>Da schützt zumeist mein eigenes Geleit.</l>
             <l>Du aber folge mir!</l>
           </lg>
-          <stage>
-            <hi>Er hat das Bild angeblickt und dann in den Busen gesteckt.</hi>
-          </stage>
+          <stage>Er hat das Bild angeblickt und dann in den Busen gesteckt.</stage>
           <lg>
             <l>Ist dort nicht seitwärts</l>
             <l>Das Schloß Retiro, wo mein Ahn, Don Sancho,</l>
             <l>Mit einer Maurin, aller Welt verborgen –</l>
           </lg>
         </sp>
-        <sp who="#diener">
+        <sp who="#diener_3">
           <speaker>DIENER.</speaker>
           <l>So ists, erlauchter Herr.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Wir wollen unsre Ahnen</l>
@@ -2470,36 +2224,26 @@
             <l>Ja so, nur fort! Und sei verschwiegen! Zwar</l>
             <l>Du weißt ja nicht. Um so viel besser. Komm!</l>
           </lg>
-          <stage>
-            <hi>Mit dem Diener ab.</hi>
-          </stage>
-          <stage>
-            <hi>Der Vorhang fällt.</hi>
-          </stage>
+          <stage>Mit dem Diener ab.</stage>
+          <stage>Der Vorhang fällt.</stage>
         </sp>
       </div>
       <div type="act">
         <head><pb n="478"/> Dritter Aufzug</head>
-        <stage>
-          <hi>Garten im königlichen Lustschlosse. Im Hintergrunde fließt der Tajo. Nach vorn auf der
-            rechten Seite eine geräumige Laube.</hi>
-        </stage>
-        <stage>
-          <hi>Links in einer Reihe mehrere Bittsteller, Gesuche in der Hand. Isaak steht bei
-            ihnen.</hi>
-        </stage>
+        <stage>Garten im königlichen Lustschlosse. Im Hintergrunde fließt der Tajo. Nach vorn auf
+          der rechten Seite eine geräumige Laube.</stage>
+        <stage>Links in einer Reihe mehrere Bittsteller, Gesuche in der Hand. Isaak steht bei
+          ihnen.</stage>
         <sp who="#isaak">
           <speaker>ISAAK.</speaker>
           <lg>
             <l>Es ward euch schon gesagt, hier weilt man nicht.</l>
             <l>Hier geht demnächst lustwandeln meine Tochter</l>
-            <l>Und <hi>er</hi> mit ihr; er selbst, ich sag nicht, <hi>wer</hi>.</l>
+            <l>Und <emph>er</emph> mit ihr; er selbst, ich sag nicht, <emph>wer</emph>.</l>
             <l>Erzittert denn und geht! Und eure Schriften</l>
             <l>Tragt zu des Königs Räten nach Toledo.</l>
           </lg>
-          <stage>
-            <hi>Er nimmt dem einen seine Schrift ab.</hi>
-          </stage>
+          <stage>Er nimmt dem einen seine Schrift ab.</stage>
           <l>Laß sehn! – Unstatthaft. Fort!</l>
         </sp>
         <sp who="#bittsteller">
@@ -2554,28 +2298,20 @@
             <l>Bestellen wollen wirs an seinem Ort,</l>
             <l>Daß ruchbar dein Geruch von Ehrlichkeit.</l>
           </lg>
-          <stage>
-            <hi>Die Bittsteller halten ihre Gesuche hin, er ergreift mit jeder Hand eine Schrift und
-              wirft sie zu Boden.</hi>
-          </stage>
+          <stage>Die Bittsteller halten ihre Gesuche hin, er ergreift mit jeder Hand eine Schrift
+            und wirft sie zu Boden.</stage>
           <l>Was es auch immer sei. Hier eure Antwort.</l>
-          <stage>
-            <hi>Zu einem dritten.</hi>
-          </stage>
+          <stage>Zu einem dritten.</stage>
           <lg>
             <l><pb n="479"/> Du trägst hier einen Ring an deiner Hand.</l>
             <l>Der Stein ist gut. Laß sehn!</l>
           </lg>
-          <stage>
-            <hi>Der Bittsteller gibt ihm den Ring.</hi>
-          </stage>
+          <stage>Der Bittsteller gibt ihm den Ring.</stage>
           <lg>
             <l>Ein Faden zwar</l>
             <l>Entstellt den reinen Glanz, da nimm ihn wieder.</l>
           </lg>
-          <stage>
-            <hi>Er steckt ihn an den Finger.</hi>
-          </stage>
+          <stage>Er steckt ihn an den Finger.</stage>
         </sp>
         <sp who="#dritter_bittsteller">
           <speaker>DRITTER BITTSTELLER.</speaker>
@@ -2596,9 +2332,7 @@
         <sp who="#isaak">
           <speaker>ISAAK.</speaker>
           <l>Ich nehme beides denn dir zum Gedächtnis.</l>
-          <stage>
-            <hi>Sich mit dem Ringe beschäftigend.</hi>
-          </stage>
+          <stage>Sich mit dem Ringe beschäftigend.</stage>
           <lg>
             <l>Der König soll den Ring, vielmehr: die Schrift</l>
             <l>Erwägen, trotz dem Faden im Gesuch,</l>
@@ -2606,9 +2340,7 @@
             <l>Nun aber alle fort! – Ist hier kein Stock?</l>
             <l>Muß ich mich mit dem Christenpöbel plagen?</l>
           </lg>
-          <stage>
-            <hi>Garceran ist während dem eingetreten.</hi>
-          </stage>
+          <stage>Garceran ist während dem eingetreten.</stage>
         </sp>
         <sp who="#garceran">
           <speaker>GARCERAN.</speaker>
@@ -2722,9 +2454,7 @@
             <l>So seid ihr gegen uns. Ihr brecht den Hals,</l>
             <l>Wenn ihr den weiten Abgrund überspringt.</l>
           </lg>
-          <stage>
-            <hi>Musik von Flöten ertönt.</hi>
-          </stage>
+          <stage>Musik von Flöten ertönt.</stage>
           <lg>
             <l><pb n="481"/> Hört ihr? da kommen sie mit Zimbeln und Posaunen,</l>
             <l>Wie Ahasverus mit dem Weibe Esther,</l>
@@ -2738,21 +2468,17 @@
             <l>Mein eignes Bild aus frührer Zeit erspähn</l>
             <l>Und mich in ihm, in mir mich seiner schämen?</l>
           </lg>
-          <stage>
-            <hi>Ein Schiff auf dem der König mit Rahel und Gefolge, erscheint auf dem Flusse und
-              legt an.</hi>
-          </stage>
+          <stage>Ein Schiff auf dem der König mit Rahel und Gefolge, erscheint auf dem Flusse und
+            legt an.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Legt an! Hier ist der Platz und hier die Laube.</l>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL.</speaker>
           <l>Der Nachen schüttert. Haltet ein, ich falle.</l>
-          <stage>
-            <hi>Der König ans Land gesprungen.</hi>
-          </stage>
+          <stage>Der König ans Land gesprungen.</stage>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL.</speaker>
@@ -2761,7 +2487,7 @@
             <l>Soll ich ans Ufer?</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Hier nimm meine Hand.</l>
         </sp>
@@ -2771,30 +2497,24 @@
         </sp>
         <sp who="#garceran">
           <speaker>GARCERAN</speaker>
-          <stage>
-            <hi>vor sich.</hi>
-          </stage>
+          <stage>vor sich.</stage>
           <l>Schwindelts dich? fürwahr.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>der sie ans Land geleitet.</hi>
-          </stage>
+          <stage>der sie ans Land geleitet.</stage>
           <l>Nun ists geschehn, das übergroße Werk.</l>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL.</speaker>
           <l>Nein, nie betret ich, nimmermehr ein Schiff.</l>
-          <stage>
-            <hi>Des Königs Arm ergreifend.</hi>
-          </stage>
+          <stage>Des Königs Arm ergreifend.</stage>
           <lg>
             <l>Erlaubt, mein hoher Herr! Ich bin so schwach,</l>
             <l>Und fühlt, mein Herz es schlägt, als wärs im Fieber.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Die Furcht ist Weiberrecht, doch ihr mißbrauchts.</l>
         </sp>
@@ -2807,7 +2527,7 @@
             <l>Für Männertritt und nicht für Frauenschritte.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Legt einen Teppich ihr und macht ein Ende.</l>
         </sp>
@@ -2819,20 +2539,14 @@
             <l>Denn ich bin krank und sterbens-todes-matt.</l>
             <l>Nur diese Kissen hier?</l>
           </lg>
-          <stage>
-            <hi>Die Kissen in der Laube heftig untereinander werfen.</hi>
-          </stage>
+          <stage>Die Kissen in der Laube heftig untereinander werfen.</stage>
           <l>Nein, nein, nein, nein!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>lachend.</hi>
-          </stage>
+          <stage>lachend.</stage>
           <l>Die Mattigkeit, zum Glück, läßt etwas nach.</l>
-          <stage>
-            <hi>Garceran erblickend.</hi>
-          </stage>
+          <stage>Garceran erblickend.</stage>
           <l>Ah, Garceran! Sieh nur, sie ist ein Kind.</l>
         </sp>
         <sp who="#garceran">
@@ -2840,7 +2554,7 @@
           <l>Ein sehr verwöhntes, scheints.</l>
           <pb n="482"/>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>So sind sie alle.</l>
@@ -2851,7 +2565,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Nachdem nun der Geschmack.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Sieh, Garceran, ich fühle ganz mein Unrecht,</l>
@@ -2870,7 +2584,7 @@
             <l>Die Feinde rüsten sich.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Wir wollens auch.</l>
@@ -2883,7 +2597,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Der Rat vielleicht, allein die Zeit entflieht.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Wir holen sie mit Taten wohl noch ein.</l>
         </sp>
@@ -2909,9 +2623,7 @@
             <l>Nicht einsam sein in all dem lauten Schwarm.</l>
             <l>Allein ihr kommt nicht. Wohl, man hält euch ab.</l>
           </lg>
-          <stage>
-            <hi>Weinend.</hi>
-          </stage>
+          <stage>Weinend.</stage>
           <lg>
             <l>Man gönnt mir keine Freude, keinen Trost,</l>
             <l>Hält mich in abgeschiedener Sklaverei.</l>
@@ -2920,7 +2632,7 @@
             <l>Indes ich hier ein Wegwurf der Verachtung.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Geh hin zu ihr!</l>
         </sp>
@@ -2928,7 +2640,7 @@
           <speaker>GARCERAN.</speaker>
           <l>So soll ich?</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Geh nur, geh!</l>
         </sp>
@@ -2971,20 +2683,16 @@
             <l>Wie man in fremden Tempeln etwa kniet.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>der während des vorigen von vorn nach rückwärts auf und nieder gegangen ist, jetzt
-              links im Vorgrunde zu einem der Diener gewendet, halblaut.</hi>
-          </stage>
+          <stage>der während des vorigen von vorn nach rückwärts auf und nieder gegangen ist, jetzt
+            links im Vorgrunde zu einem der Diener gewendet, halblaut.</stage>
           <lg>
             <l>Bring meine Waffen, eine volle Rüstung,</l>
             <l>Abseits zum Gartenhaus und harre mein,</l>
             <l>Ich will ins Lager, wo man mein bedarf</l>
           </lg>
-          <stage>
-            <hi>Diener ab.</hi>
-          </stage>
+          <stage>Diener ab.</stage>
           <pb n="484"/>
         </sp>
         <sp who="#rahel">
@@ -3005,22 +2713,17 @@
             <l>Ich will indes nur schlafen, bis sie kommt,</l>
             <l>Bin ich doch selbst ein Traum nur einer Nacht.</l>
           </lg>
-          <stage>
-            <hi>Sie legt den Kopf auf den Arm und diesen auf die Kissen.</hi>
-          </stage>
+          <stage>Sie legt den Kopf auf den Arm und diesen auf die Kissen.</stage>
         </sp>
         <sp who="#garceran">
           <speaker>GARCERAN</speaker>
-          <stage>
-            <hi>zu dem Könige tretend, der stehengeblieben ist und auf die Ruhende hinschaut.</hi>
-          </stage>
+          <stage>zu dem Könige tretend, der stehengeblieben ist und auf die Ruhende
+            hinschaut.</stage>
           <l>Erlauchter Herr!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>noch immer hinblickend.</hi>
-          </stage>
+          <stage>noch immer hinblickend.</stage>
           <l>Wie meinst du?</l>
         </sp>
         <sp who="#garceran">
@@ -3030,18 +2733,16 @@
             <l>Kehr ich zurück ins Lager, zu dem Heer.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>wie oben.</hi>
-          </stage>
+          <stage>wie oben.</stage>
           <l>Das Heer verließ das Lager? und warum?</l>
         </sp>
         <sp who="#garceran">
           <speaker>GARCERAN.</speaker>
           <l>Ihr hört mich nicht. Ich selber will dahin.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Und wirst erzählen dort und meinen, schwatzen.</l>
         </sp>
@@ -3049,7 +2750,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Wovon?</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Von mir. Von dem, was hier geschah.</l>
         </sp>
@@ -3057,7 +2758,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Dazu müßt ich vor allem es verstehn.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Ja so! – Glaubst du an Wunder, Freund?</l>
         </sp>
@@ -3068,7 +2769,7 @@
             <l>Seit kurzem, Herr!</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Und weshalb nur seit kurzem?</l>
         </sp>
@@ -3079,7 +2780,7 @@
             <l>Doch Liebe und Verachtung, hoher Herr –</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Verachtung wär ein viel zu hartes Wort!</l>
@@ -3095,7 +2796,7 @@
             <pb n="485"/>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Doch schloß er auch die Brust, nachdems geschehn,</l>
@@ -3105,28 +2806,20 @@
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>sich emporrichtend.</hi>
-          </stage>
+          <stage>sich emporrichtend.</stage>
           <lg>
             <l>Die Sonne schleicht sich ein in mein Versteck,</l>
             <l>Wer stützt den Umhang mir nach jener Seite.</l>
           </lg>
-          <stage>
-            <hi>Rechts in die Szene blickend.</hi>
-          </stage>
+          <stage>Rechts in die Szene blickend.</stage>
           <lg>
             <l>Dort gehn zwei Männer, schwere Waffen tragend,</l>
             <l>Die Lanze paßte gut für meinen Zweck.</l>
           </lg>
-          <stage>
-            <hi>In die Szene rufend.</hi>
-          </stage>
+          <stage>In die Szene rufend.</stage>
           <l>Hierher! Nach hier! Hört ihr denn nicht? und schnell!</l>
-          <stage>
-            <hi>Der abgesendete Diener und ein zweiter, von denen jener Helm und Lanze, der andere
-              Schild und Brustharnisch des Königs tragen, kommen.</hi>
-          </stage>
+          <stage>Der abgesendete Diener und ein zweiter, von denen jener Helm und Lanze, der andere
+            Schild und Brustharnisch des Königs tragen, kommen.</stage>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL.</speaker>
@@ -3141,9 +2834,7 @@
             <l>– Weis her den Schild! – Ein Spiegel in der Tat!</l>
             <l>Zwar derb, wie alles hier, doch dients zur Not.</l>
           </lg>
-          <stage>
-            <hi>Der Schild wird ihr vorgehalten.</hi>
-          </stage>
+          <stage>Der Schild wird ihr vorgehalten.</stage>
           <lg>
             <l>Man bringt das Haar in Ordnung, weist zurück,</l>
             <l>Was sorglos sich zu weit hervorgewagt,</l>
@@ -3158,28 +2849,22 @@
             <l>Empört sich der Geliebte und wird stolz,</l>
             <l>Den Helmsturz nieder!</l>
           </lg>
-          <stage>
-            <hi>Das Visier herablassend.</hi>
-          </stage>
+          <stage>Das Visier herablassend.</stage>
           <lg>
             <l>und er steht in Nacht.</l>
             <l>Doch wollt er etwa gar sich uns entziehn,</l>
             <l>Schickt' nach dem Heer-Gerät, uns zu verlassen,</l>
             <l><pb n="486"/> Hinauf mit dem Visier.</l>
           </lg>
-          <stage>
-            <hi>Sie tut es.</hi>
-          </stage>
+          <stage>Sie tut es.</stage>
           <lg>
             <l>Es werde Licht!</l>
             <l>Die Sonne siegt, verscheuchend alle Nebel.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>auf sie zugehend.</hi>
-          </stage>
+          <stage>auf sie zugehend.</stage>
           <l>Du albern spielend, töricht-weises Kind.</l>
         </sp>
         <sp who="#rahel">
@@ -3189,12 +2874,10 @@
             <l>Man naht mir mit Gewalt. Ich schütze mich.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Streck deine Waffen nur! dir naht kein Arg.</l>
-          <stage>
-            <hi>Ihre beiden Hände fassend Esther kommt von rückwärts, links.</hi>
-          </stage>
+          <stage>Ihre beiden Hände fassend Esther kommt von rückwärts, links.</stage>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL.</speaker>
@@ -3203,9 +2886,7 @@
             <l>Fort mit der Mummerei! Nur schnell, nur schnell!</l>
             <l>Ihr reißt den Kopf mir mit! Seid ihr nicht tölpisch!</l>
           </lg>
-          <stage>
-            <hi>Ihr entgegeneilend.</hi>
-          </stage>
+          <stage>Ihr entgegeneilend.</stage>
           <lg>
             <l>Willkommen noch einmal, o Schwester mein.</l>
             <l>Wie hab ich mich gesehnt nach deiner Nähe!</l>
@@ -3226,9 +2907,7 @@
             <l>Nach jenem Lustschloß, wo zum erstenmal</l>
             <l>Zu unserm Unheil, Herr, wir euch gesehn.</l>
           </lg>
-          <stage>
-            <hi>Zu Garceran.</hi>
-          </stage>
+          <stage>Zu Garceran.</stage>
           <lg>
             <l>Zugleich mit ihr ging euer edler Vater,</l>
             <l>Manrique Lara, rings mit offnen Briefen</l>
@@ -3238,7 +2917,7 @@
             <l>Und ihr gestorben, der ihr Herr und König.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Ich denke wohl, du träumst.</l>
         </sp>
@@ -3262,11 +2941,9 @@
             <l>Ich sammle sie. – Doch ich vermag es nicht.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>zu Esther.</hi>
-          </stage>
+          <stage>zu Esther.</stage>
           <lg>
             <l>Sorg du für jene Törin, die sich zehnmal</l>
             <l>In jedem Atemzuge widerspricht.</l>
@@ -3292,7 +2969,7 @@
           <speaker>RAHEL.</speaker>
           <l>O bleibt doch, bleibt!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Das Schloß ist fest, der Kastellan bewährt,</l>
@@ -3314,12 +2991,10 @@
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL</speaker>
-          <stage>
-            <hi>sich ihm nähernd.</hi>
-          </stage>
+          <stage>sich ihm nähernd.</stage>
           <l>Erlauchter Herr!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Laß jetzt! Ich brauche Kraft und festen Willen</l>
@@ -3330,9 +3005,7 @@
             <l>Setz ich mein Wort an euern Schirm und Schutz.</l>
             <l>Komm, Garceran. Mit Gott! er sei mit euch.</l>
           </lg>
-          <stage>
-            <hi>Der König und Garceran nach der linken Seite ab.</hi>
-          </stage>
+          <stage>Der König und Garceran nach der linken Seite ab.</stage>
         </sp>
         <sp who="#rahel">
           <speaker>RAHEL.</speaker>
@@ -3376,13 +3049,9 @@
             <l>Nein, tot sein unverwarnt und unverhofft.</l>
             <l>Der Augenblick des Sterbens nur erschüttert.</l>
           </lg>
-          <stage>
-            <hi>An Esthers Halse.</hi>
-          </stage>
+          <stage>An Esthers Halse.</stage>
           <l>Unglücklich bin ich, Schwester, rettungslos!</l>
-          <stage>
-            <hi>Nach einer Pause mit von Schluchzen unterbrochener Stimme.</hi>
-          </stage>
+          <stage>Nach einer Pause mit von Schluchzen unterbrochener Stimme.</stage>
           <lg>
             <l>Und ist das Halsband auch mit Amethysten,</l>
             <l>Das du gebracht?</l>
@@ -3405,10 +3074,8 @@
             <l>Doch sieh, wer naht? – Ha, ha, ha, ha! Fürwahr,</l>
             <l>Ists unser Vater nicht? und zwar in Harnisch.</l>
           </lg>
-          <stage>
-            <hi>Isaak, eine Sturmhaube auf dem Kopfe und einen Brustharnisch unter seinem langen
-              Rocke, kommt von links.</hi>
-          </stage>
+          <stage>Isaak, eine Sturmhaube auf dem Kopfe und einen Brustharnisch unter seinem langen
+            Rocke, kommt von links.</stage>
         </sp>
         <sp who="#isaak">
           <speaker>ISAAK.</speaker>
@@ -3445,22 +3112,16 @@
             <l>So eilt er fort! Wird er auch wiederkehren?</l>
             <l>Ich fürchte: nein! Das Äußerste befürcht ich.</l>
           </lg>
-          <stage>
-            <hi>An Esthers Brust sinkend.</hi>
-          </stage>
+          <stage>An Esthers Brust sinkend.</stage>
           <l>Und hab ihn, Schwester, wahrhaft doch geliebt.</l>
-          <stage>
-            <hi>Der Vorhang fällt.</hi>
-          </stage>
+          <stage>Der Vorhang fällt.</stage>
         </sp>
       </div>
       <div type="act">
         <head><pb n="490"/> Vierter Aufzug</head>
-        <stage>
-          <hi>Saal mit einem Thronsitze rechts im Vorgrunde. Daneben in gleicher Reihe nach links
-            laufend mehrere Stühle, auf denen acht oder zehn kastilische Standesherren sitzen. Dem
-            Throne zunächst Manrique de Lara, der aufgestanden ist.</hi>
-        </stage>
+        <stage>Saal mit einem Thronsitze rechts im Vorgrunde. Daneben in gleicher Reihe nach links
+          laufend mehrere Stühle, auf denen acht oder zehn kastilische Standesherren sitzen. Dem
+          Throne zunächst Manrique de Lara, der aufgestanden ist.</stage>
         <sp who="#manrique">
           <speaker>MANRIQUE.</speaker>
           <lg>
@@ -3499,21 +3160,17 @@
             <l>Was uns zu richten keineswegs geziemt. –</l>
             <l>– Die Königin!</l>
           </lg>
-          <stage>
-            <hi><pb n="491"/> Die Königin, von einigen Damen begleitet, tritt von der rechten Seite
-              auf, und nachdem sie den Standesherrn, die sich erhoben haben, durch eine Handbewegung
-              bedeutet, wieder ihre Plätze zu nehmen, setzt sie sich auf den Thronsessel.</hi>
-          </stage>
+          <stage><pb n="491"/> Die Königin, von einigen Damen begleitet, tritt von der rechten Seite
+            auf, und nachdem sie den Standesherrn, die sich erhoben haben, durch eine Handbewegung
+            bedeutet, wieder ihre Plätze zu nehmen, setzt sie sich auf den Thronsessel.</stage>
         </sp>
         <sp who="#manrique">
           <speaker>MANRIQUE.</speaker>
           <l>Erlaubt ihr, hohe Frau?</l>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN</speaker>
-          <stage>
-            <hi>leise.</hi>
-          </stage>
+          <stage>leise.</stage>
           <l>Fahrt fort!</l>
         </sp>
         <sp who="#manrique">
@@ -3534,9 +3191,7 @@
             <l>Und wir sind eben, nach wie vor, verwaist.</l>
             <l>Beliebt?</l>
           </lg>
-          <stage>
-            <hi>Die Königin bedeutet ihn fortzufahren.</hi>
-          </stage>
+          <stage>Die Königin bedeutet ihn fortzufahren.</stage>
           <lg>
             <l>Da muß vor allem denn die Dirne fort.</l>
             <l>Da liegt denn manch ein Vorschlag etwa vor.</l>
@@ -3547,9 +3202,7 @@
             <l>Die Macht weiß wohl zu finden, was sie sucht.</l>
             <l>Ein dritter Vorschlag –</l>
           </lg>
-          <stage>
-            <hi>Da die Königin aufgestanden ist.</hi>
-          </stage>
+          <stage>Da die Königin aufgestanden ist.</stage>
           <lg>
             <l>Edle Frau, mit Gunst,</l>
             <l>Ihr seid zu mild für unser hart Geschäft,</l>
@@ -3563,22 +3216,18 @@
             <l>Glaubt ihr dem Fehl der Buhlerin gemäß?</l>
           </lg>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN</speaker>
-          <stage>
-            <hi>leise.</hi>
-          </stage>
+          <stage>leise.</stage>
           <l>Den Tod.</l>
         </sp>
         <sp who="#manrique">
           <speaker>MANRIQUE.</speaker>
           <l>Fürwahr?</l>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN</speaker>
-          <stage>
-            <hi>bestimmter.</hi>
-          </stage>
+          <stage>bestimmter.</stage>
           <l>Den Tod.</l>
         </sp>
         <sp who="#manrique">
@@ -3589,7 +3238,7 @@
             <l>Obgleich ein Mann, nicht auszusprechen wagte.</l>
           </lg>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <lg>
             <l>Ich schäme mich, daß ich vor Männern spreche,</l>
@@ -3621,16 +3270,14 @@
           <speaker>MANRIQUE.</speaker>
           <l>Doch wird der König es, und wie, ertragene?</l>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <lg>
             <l>Er wird wohl, weil er soll und darum muß.</l>
             <l>Auch bleibt ihm ja die Rache an den Mördern.</l>
             <l>Vor allen treff er mich und diese Brust.</l>
           </lg>
-          <stage>
-            <hi>Sie setzt sich.</hi>
-          </stage>
+          <stage>Sie setzt sich.</stage>
         </sp>
         <sp who="#manrique">
           <speaker>MANRIQUE.</speaker>
@@ -3653,11 +3300,9 @@
             <l>Bis wieder eins der Fürst und das Gesetz,</l>
             <l>Und wir den beiden in dem einen dienen.</l>
           </lg>
-          <stage>
-            <hi>Ein Diener kommt.</hi>
-          </stage>
+          <stage>Ein Diener kommt.</stage>
         </sp>
-        <sp who="#diener">
+        <sp who="#diener_4">
           <speaker>DIENER.</speaker>
           <l>Don Garceran.</l>
         </sp>
@@ -3668,7 +3313,7 @@
             <l>Sagt ihm –</l>
           </lg>
         </sp>
-        <sp who="#diener">
+        <sp who="#diener_4">
           <speaker>DIENER.</speaker>
           <l>Im Auftrag seiner Majestät.</l>
         </sp>
@@ -3678,9 +3323,7 @@
             <l>Das ist ein anderes. Und wärs mein Todfeind,</l>
             <l>Er hat mein Ohr, spricht er des Königs Worte.</l>
           </lg>
-          <stage>
-            <hi>Garceran tritt ein.</hi>
-          </stage>
+          <stage>Garceran tritt ein.</stage>
         </sp>
         <sp who="#manrique">
           <speaker>MANRIQUE.</speaker>
@@ -3735,9 +3378,7 @@
             <l>Bis klar, ob Don Alfonso unser Amt,</l>
             <l>Ob uns es obliegt, seines zu vertreten.</l>
           </lg>
-          <stage>
-            <hi>Zu Garceran.</hi>
-          </stage>
+          <stage>Zu Garceran.</stage>
           <lg>
             <l>Ihr aber, so gewandt im Fürstendienst,</l>
             <l>Seid etwa ihr zum Späher auch berufen,</l>
@@ -3788,33 +3429,25 @@
             <l>Ihr habt die Wahl! Folgt jetzt nur diesen andern,</l>
             <l>Vielleicht kommt alles besser, als man glaubt.</l>
           </lg>
-          <stage>
-            <hi>Diener von links eintretend.</hi>
-          </stage>
+          <stage>Diener von links eintretend.</stage>
         </sp>
-        <sp who="#diener">
+        <sp who="#diener_4">
           <speaker>DIENER.</speaker>
           <l>Des Königs Majestät.</l>
         </sp>
         <sp who="#manrique">
           <speaker>MANRIQUE</speaker>
-          <stage>
-            <hi>zu den Ständen auf die Mitteltüre zeigend.</hi>
-          </stage>
+          <stage>zu den Ständen auf die Mitteltüre zeigend.</stage>
           <l>Nur hier hinaus!</l>
-          <stage>
-            <hi>Zu den Dienern.</hi>
-          </stage>
+          <stage>Zu den Dienern.</stage>
           <lg>
             <l>Und ihr setzt diese Stühle an die Wand.</l>
             <l>Nichts soll ihn mahnen, daß man hier getagt.</l>
           </lg>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN</speaker>
-          <stage>
-            <hi>die vom Throne gestiegen.</hi>
-          </stage>
+          <stage>die vom Throne gestiegen.</stage>
           <l>Es wankt mein Knie, und mir steht niemand bei!</l>
         </sp>
         <sp who="#manrique">
@@ -3827,15 +3460,11 @@
             <l>Nehmt meinen Arm. Wie schwankend auch die Schritte:</l>
             <l>Die Kraft entfloh, doch treulich hielt die Sitte.</l>
           </lg>
-          <stage>
-            <hi>Er führt die Königin nach rechts ab. Die Stände mit Garceran haben sich durch die
-              Mitteltüre entfernt.</hi>
-          </stage>
-          <stage>
-            <hi>Der König kommt von der linken Seite. Hinter ihm sein Knappe.</hi>
-          </stage>
+          <stage>Er führt die Königin nach rechts ab. Die Stände mit Garceran haben sich durch die
+            Mitteltüre entfernt.</stage>
+          <stage>Der König kommt von der linken Seite. Hinter ihm sein Knappe.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Der Braune, sagst du, hinkt? Nun, es ging scharf.</l>
@@ -3847,11 +3476,9 @@
             <l>Auf daß es glaubt, was es mit Augen sieht,</l>
             <l>Daß abgetan der Zwist und die Zerwürfnis.</l>
           </lg>
-          <stage>
-            <hi>Der Knappe geht.</hi>
-          </stage>
+          <stage>Der Knappe geht.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Ich bin allein. Kommt niemand mir entgegen?</l>
@@ -3864,90 +3491,74 @@
             <l>Hier gehts hinein zu meiner Fraun Gemächern,</l>
             <l>Betret ich denn den unwillkommnen Weg.</l>
           </lg>
-          <stage>
-            <hi>Er nähert sich der Seitentüre rechts.</hi>
-          </stage>
+          <stage>Er nähert sich der Seitentüre rechts.</stage>
           <lg>
             <l>Allein die Tür versperrt? – Holla, da drinnen,</l>
             <l>Der König ists, der Herr in diesem Haus,</l>
             <l>Für mich gibts hier kein Schloß und keine Tür.</l>
           </lg>
-          <stage>
-            <hi>Eine Kammerfrau tritt aus der Türe.</hi>
-          </stage>
+          <stage>Eine Kammerfrau tritt aus der Türe.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Versperrt ihr euch?</l>
         </sp>
         <sp who="#kammerfrau">
           <speaker>KAMMERFRAU.</speaker>
           <l>Die Köngin, Majestät –</l>
-          <stage>
-            <hi>Da der König mit starkem Schritte hineingehen will.</hi>
-          </stage>
+          <stage>Da der König mit starkem Schritte hineingehen will.</stage>
         </sp>
         <sp who="#kammerfrau">
           <speaker>KAMMERFRAU.</speaker>
           <l>Die innre Tür auch hat sie selbst verschlossen.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Eindringen will ich nicht. Sagt ihr denn an,</l>
             <l>Ich sei zurück und lasse sie entbieten –</l>
             <l>Vielmehr sagt: bitten, wie ichs jetzt gesagt.</l>
           </lg>
-          <stage>
-            <hi>Die Kammerfrau geht.</hi>
-          </stage>
+          <stage>Die Kammerfrau geht.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>dem Throne gegenüberstehend.</hi>
-          </stage>
+          <stage>dem Throne gegenüberstehend.</stage>
           <lg>
             <l>Du hoher Sitz, die andern überragend,</l>
             <l>Gib, daß wir niedriger nicht sei'n als du,</l>
             <l>Auch ohne jene Stufen, die du leihst,</l>
             <l>Das Maß einhalten des, was groß und gut.</l>
           </lg>
-          <stage>
-            <hi>Die Königin kommt.</hi>
-          </stage>
+          <stage>Die Königin kommt.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>ihr mit ausgestreckter Hand entgegengehend.</hi>
-          </stage>
+          <stage>ihr mit ausgestreckter Hand entgegengehend.</stage>
           <l>Lenore, sei gegrüßt.</l>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Seid uns willkommen.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Und nicht die Hand.</l>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Ich freu mich, euch zu sehn.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Und nicht die Hand?</l>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN</speaker>
-          <stage>
-            <hi>in Tränen ausbrechend.</hi>
-          </stage>
+          <stage>in Tränen ausbrechend.</stage>
           <l>O Gott und Vater!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Lenore, diese Hand ist nicht verpestet.</l>
@@ -3968,14 +3579,12 @@
             <l>So nimms, wie ich es gebe, wahr und ganz.</l>
           </lg>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN</speaker>
-          <stage>
-            <hi>beide Hände hinhaltend.</hi>
-          </stage>
+          <stage>beide Hände hinhaltend.</stage>
           <l>O Gott, wie gern!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Nicht beide Hände!</l>
@@ -3989,19 +3598,15 @@
             <l>Was man erwogen, bleibt in seiner Kraft.</l>
           </lg>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN</speaker>
-          <stage>
-            <hi>die Rechte bietend.</hi>
-          </stage>
+          <stage>die Rechte bietend.</stage>
           <l>Auch das! Mein ganzes Selbst.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Die Hand, sie zittert.</l>
-          <stage>
-            <hi>Sie loslassend.</hi>
-          </stage>
+          <stage>Sie loslassend.</stage>
           <lg>
             <l>Ich will dich nicht mißhandeln, gutes Weib.</l>
             <l>Und glaube nicht, weil minder weich ich spreche,</l>
@@ -4009,14 +3614,14 @@
             <l>Und minder ich verehre deine Güte.</l>
           </lg>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <lg>
             <l>Verzeihn ist leicht, begreifen ist viel schwerer.</l>
             <l>Wie es nur möglich war. Ich faß es nicht.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Wir haben bis vor kurz gelebt als Kinder.</l>
@@ -4045,11 +3650,11 @@
             <l>Nun doppelt süß durch zeitliches Entbehren.</l>
           </lg>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Wenn dus begehrst, ich selbst vermiß es nicht.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Du wirsts vermissen dann in der Erinnrung,</l>
@@ -4062,7 +3667,7 @@
             <l>Du selbst bedarfst es nicht in deiner Reinheit.</l>
           </lg>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <lg>
             <l>Nicht so! nicht so! O, wüßtest du, mein Gatte,</l>
@@ -4070,7 +3675,7 @@
             <l>Den Weg gefunden in mein banges Herz.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Wohl etwa Rachsucht gar? Nun, um so besser.</l>
@@ -4083,7 +3688,7 @@
             <l>Ich selber trage, ich, die ganze Schuld.</l>
           </lg>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <lg>
             <l>O, laß mich glauben, was mich hält und tröstet.</l>
@@ -4094,7 +3699,7 @@
             <l>Und seinen Willen machen untertan.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Umgeben sind wir rings von Zaubereien,</l>
@@ -4105,11 +3710,11 @@
             <l>Sind wir das größte aller Wunder selbst.</l>
           </lg>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Sie hat dein Bild.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Sie soll es wieder geben,</l>
@@ -4120,26 +3725,22 @@
             <l>Gott sei gedankt, daß er sich wiederfand.</l>
           </lg>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Allein du selber trägst an deinem Hals –</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Ja so! ihr Bild? Ward dir das auch schon kund?</l>
-          <stage>
-            <hi>Er nimmt das Bild mit der Kette vom Halse und legt es auf den Tisch rechts im
-              Vorgrunde.</hi>
-          </stage>
+          <stage>Er nimmt das Bild mit der Kette vom Halse und legt es auf den Tisch rechts im
+            Vorgrunde.</stage>
           <lg>
             <l>So leg ich es denn hin und mög es liegen,</l>
             <l>Ein Blitz, der nicht mehr schädlich nach dem Donner.</l>
             <l>Das Mädchen aber selbst, sie sei entfernt!</l>
             <l>Mag dann mit einem Mann sie ihres Volks –</l>
           </lg>
-          <stage>
-            <hi>Von vorn nach rückwärts auf und nieder gehend, in Absätzen stehenbleibend.</hi>
-          </stage>
+          <stage>Von vorn nach rückwärts auf und nieder gehend, in Absätzen stehenbleibend.</stage>
           <lg>
             <l>Ob das zwar nicht. – Die Weiber dieses Stamms</l>
             <l>Sind leidlich, gut sogar. – Allein die Männer</l>
@@ -4150,15 +3751,13 @@
             <l>Wie nah, wie fern! – Sie mögen selber sorgen.</l>
           </lg>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Doch wirst du stark auch bleiben, Don Alfonso?</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>stehenbleibend.</hi>
-          </stage>
+          <stage>stehenbleibend.</stage>
           <lg>
             <l>Sieh nur, du hast das Mädchen nicht gekannt.</l>
             <l>Nimm alle Fehler dieser weiten Erde,</l>
@@ -4169,19 +3768,15 @@
             <l>Daß jemals sie gefiel, so stimm ich ein</l>
             <l>Und schämte mich, wärs nicht natürlich wieder.</l>
           </lg>
-          <stage>
-            <hi>Er geht auf und nieder.</hi>
-          </stage>
+          <stage>Er geht auf und nieder.</stage>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>O, nicht natürlich, glaube mir, mein Gatte.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>stehenbleibend.</hi>
-          </stage>
+          <stage>stehenbleibend.</stage>
           <lg>
             <l>Ein Zauber endlich ist. Er heißt Gewohnheit,</l>
             <l>Der anfangs nicht bestimmt, doch später festhält,</l>
@@ -4193,9 +3788,7 @@
             <l>Auf immer abgetan – So Hals als Brust,</l>
             <l>Sie haben an den Eindruck sich gewöhnt,</l>
           </lg>
-          <stage>
-            <hi>Sich schüttelnd.</hi>
-          </stage>
+          <stage>Sich schüttelnd.</stage>
           <lg>
             <l>Und fröstelnd gehts mir durch die leeren Räume.</l>
             <l>Ich will mir eine andre Kette wählen,</l>
@@ -4205,9 +3798,7 @@
             <l>Euch rächen wolltet an der armen Törin,</l>
             <l>Das war nicht gut.</l>
           </lg>
-          <stage>
-            <hi>Zum Tische tretend.</hi>
-          </stage>
+          <stage>Zum Tische tretend.</stage>
           <lg>
             <l>Denn sieh nur diese Augen –</l>
             <l>Nun ja, die Augen! – Körper, Hals und Wuchs,</l>
@@ -4217,26 +3808,22 @@
             <l>Und nicht zerstören, was er weise schuf</l>
           </lg>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Berühr es nicht!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Schon wieder denn der Unsinn!</l>
             <l>Und wenn ichs nehme wirklich in die Hand</l>
           </lg>
-          <stage>
-            <hi>Er hat das Bild auf die Hand gelegt.</hi>
-          </stage>
+          <stage>Er hat das Bild auf die Hand gelegt.</stage>
           <lg>
             <l>Bin ich ein andrer drum? Schling ich die Kette</l>
             <l>Aus Scherz, um dein zu spotten, um den Hals,</l>
           </lg>
-          <stage>
-            <hi>Er tuts.</hi>
-          </stage>
+          <stage>Er tuts.</stage>
           <l>Das Bild, das dich erschreckt, im Busen bergend,</l>
           <pb n="501"/>
           <lg>
@@ -4244,35 +3831,29 @@
             <l>Daß er gefehlt, und der den Fehl verdammt?</l>
             <l>Drum seis des Unsinns endlich doch genug.</l>
           </lg>
-          <stage>
-            <hi>Er entfernt sich vom Tische.</hi>
-          </stage>
+          <stage>Er entfernt sich vom Tische.</stage>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Allein –</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>wild nach ihr hinblickend.</hi>
-          </stage>
+          <stage>wild nach ihr hinblickend.</stage>
           <l>Was ist?</l>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>O Gott im Himmel!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Erschrick nicht, gutes Weib. Doch sei vernünftig</l>
             <l>Und wiederhole mir nicht stets dasselbe.</l>
             <l>Es mahnt zuletzt mich an den Unterschied.</l>
           </lg>
-          <stage>
-            <hi>Auf den Tisch, dann auf seine Brust zeigend.</hi>
-          </stage>
+          <stage>Auf den Tisch, dann auf seine Brust zeigend.</stage>
           <lg>
             <l>Dort jenes Mädchen – zwar jetzt ist sie hier</l>
             <l>War töricht sie, so gab sie sich als solche</l>
@@ -4306,29 +3887,23 @@
             <l>Nur um zu zeigen, daß nicht ihrem Urteil,</l>
             <l>Nicht ihrer Billigung ich untertan.</l>
           </lg>
-          <stage>
-            <hi>Nach vorn tretend und mit dem Fuße auf den Boden stampfend.</hi>
-          </stage>
+          <stage>Nach vorn tretend und mit dem Fuße auf den Boden stampfend.</stage>
           <lg>
             <l>Und endlich dieser Alte, Don Manrique,</l>
             <l>Wenn er mir Vormund war, ist er es noch?</l>
           </lg>
-          <stage>
-            <hi>Don Manrique erscheint in der Mitteltüre. Die Königin zeigt mit gerungenen Händen
-              nach ihrem Gatten. Manrique zieht sich mit einer beruhigenden Bewegung beider Hände
-              zurück.</hi>
-          </stage>
+          <stage>Don Manrique erscheint in der Mitteltüre. Die Königin zeigt mit gerungenen Händen
+            nach ihrem Gatten. Manrique zieht sich mit einer beruhigenden Bewegung beider Hände
+            zurück.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Erkühnt er sich, dem König vorzuschreiben</l>
             <l>Die hausgebacknen Lehren seiner Weisheit?</l>
             <l>Wohl gar zu heimlicher, verwegner Tat –?</l>
           </lg>
-          <stage>
-            <hi>In der Quere der Bühne auf und nieder gehend.</hi>
-          </stage>
+          <stage>In der Quere der Bühne auf und nieder gehend.</stage>
           <lg>
             <l>Ich will das untersuchen, ich, als Richter,</l>
             <l>Und zeigt sich eine Spur nur von Vergehn,</l>
@@ -4337,32 +3912,22 @@
             <l>Nur um so härter büß er sein Erkühnen.</l>
           </lg>
           <l>Nicht du, Lenore, nein, du bist entschuldigt.</l>
-          <stage>
-            <hi>Die Königin hat sich während des letzten leise durch die Seitentüre rechts
-              entfernt.</hi>
-          </stage>
+          <stage>Die Königin hat sich während des letzten leise durch die Seitentüre rechts
+            entfernt.</stage>
           <lg>
             <l>Wo ging sie hin? So läßt man mich allein?</l>
             <l>Bin ich der Tor in meinem eignen Haus?</l>
           </lg>
-          <stage>
-            <hi>Er nähert sich der Seitentüre rechts.</hi>
-          </stage>
+          <stage>Er nähert sich der Seitentüre rechts.</stage>
           <l>Ich will zu ihr! – Die Tür verschlossen?</l>
-          <stage>
-            <hi>Die Türe mit einem Fußtritt sprengend.</hi>
-          </stage>
+          <stage>Die Türe mit einem Fußtritt sprengend.</stage>
           <lg>
             <l>Auf!</l>
             <l>So nehm ich mir im Sturm mein häuslich Glück.</l>
           </lg>
-          <stage>
-            <hi>Er geht hinein.</hi>
-          </stage>
-          <stage>
-            <hi>Don Manrique und Garceran erscheinen in der Mitteltüre. Letzterer macht einen
-              Schritt über die Schwelle.</hi>
-          </stage>
+          <stage>Er geht hinein.</stage>
+          <stage>Don Manrique und Garceran erscheinen in der Mitteltüre. Letzterer macht einen
+            Schritt über die Schwelle.</stage>
         </sp>
         <sp who="#manrique">
           <speaker>MANRIQUE.</speaker>
@@ -4382,14 +3947,11 @@
         <sp who="#garceran">
           <speaker>GARCERAN.</speaker>
           <l>Ich folge.</l>
-          <stage>
-            <hi>Sie ziehen sich zurück. Die Türe geht zu.</hi>
-          </stage>
-          <stage>
-            <hi><pb n="503"/> Pause. Der König kommt zurück. In der Stellung eines Horchenden.</hi>
-          </stage>
+          <stage>Sie ziehen sich zurück. Die Türe geht zu.</stage>
+          <stage><pb n="503"/> Pause. Der König kommt zurück. In der Stellung eines
+            Horchenden.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Horch, wieder! – Es ist nichts, und alles stille.-</l>
@@ -4399,11 +3961,9 @@
             <l>In reißendem Galopp das Weite suchend.</l>
             <l>Bin ich allein? – He, Garceran! Reinero!</l>
           </lg>
-          <stage>
-            <hi>Der Knappe kommt aus der Seitentüre links.</hi>
-          </stage>
+          <stage>Der Knappe kommt aus der Seitentüre links.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Was ist? Was geht hier vor?</l>
         </sp>
@@ -4415,7 +3975,7 @@
             <l>Zur Zeit die einzig lebenden Bewohner.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Die Königin?</l>
         </sp>
@@ -4423,7 +3983,7 @@
           <speaker>KNAPPE.</speaker>
           <l>Verließ das Schloß zu Wagen.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Schon nach Toledo denn zurück?</l>
         </sp>
@@ -4434,7 +3994,7 @@
             <l>Allein die Herren –</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Welche Herrn?</l>
         </sp>
@@ -4447,7 +4007,7 @@
             <l>Vielmehr den Weg, auf dem ihr selber kamt.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Ha, nach Retiro? Fällts wie Schuppen doch</l>
@@ -4463,7 +4023,7 @@
             <l>Ward als gelähmt, wie selber ihr befahlt –</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Nun denn ein andres, Garcerans, das deine.</l>
         </sp>
@@ -4475,7 +4035,7 @@
             <l>Die Ställe sind geleert, so wie das Schloß.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Sie denken mich zu überholen. Fort,</l>
@@ -4487,28 +4047,20 @@
             <l>Schaff mir ein Pferd! Sonst bist du einverstanden</l>
             <l>Und zahlst mit deinem Kopf wie alle,</l>
           </lg>
-          <stage>
-            <hi>An der Türe stehenbleibend, mit einer heftigen Bewegung.</hi>
-          </stage>
+          <stage>An der Türe stehenbleibend, mit einer heftigen Bewegung.</stage>
           <l>alle!</l>
-          <stage>
-            <hi>Er eilt fort.</hi>
-          </stage>
-          <stage>
-            <hi>Der Vorhang fällt.</hi>
-          </stage>
+          <stage>Er eilt fort.</stage>
+          <stage>Der Vorhang fällt.</stage>
         </sp>
       </div>
       <div type="act">
         <head><pb n="505"/> Fünfter Aufzug</head>
-        <stage>
-          <hi>Saal im Schlosse zu Retiro, mit einer Mittel- und zwei Seitentüren. Überall Zeichen
-            der Zerstörung. Links im Vorgrunde ein umgestürzter Putztisch mit zerstreutem Geräte.
-            Rechts im Hintergrunde ein gleichfalls umgeworfener Tisch, darüber ein Gemälde, halb aus
-            dem Rahmen herarausgerissen. In der Mitte des Gemaches ein Stuhl. Es ist dunkel. Von
-            außen, hinter der Mittelwand, Geräusch von Stimmen, Fußtritte und Waffengeklirr,
-            endlich.</hi>
-        </stage>
+        <stage>Saal im Schlosse zu Retiro, mit einer Mittel- und zwei Seitentüren. Überall Zeichen
+          der Zerstörung. Links im Vorgrunde ein umgestürzter Putztisch mit zerstreutem Geräte.
+          Rechts im Hintergrunde ein gleichfalls umgeworfener Tisch, darüber ein Gemälde, halb aus
+          dem Rahmen herarausgerissen. In der Mitte des Gemaches ein Stuhl. Es ist dunkel. Von
+          außen, hinter der Mittelwand, Geräusch von Stimmen, Fußtritte und Waffengeklirr,
+          endlich.</stage>
         <sp who="#von_aussen">
           <speaker>VON AUSSEN.</speaker>
           <lg>
@@ -4516,20 +4068,14 @@
             <l>Das Zeichen tönt!</l>
             <l>Zu Pferde!</l>
           </lg>
-          <stage>
-            <hi>Die Stimmen und die Fußtritte entfernen sich. – Pause. –</hi>
-          </stage>
-          <stage>
-            <hi>Dann kommt der alte Isaak aus der Seitentüre rechts, einen nachschleifenden Teppich
-              über den Kopf gestülpt, den er später fallen läßt.</hi>
-          </stage>
+          <stage>Die Stimmen und die Fußtritte entfernen sich. – Pause. –</stage>
+          <stage>Dann kommt der alte Isaak aus der Seitentüre rechts, einen nachschleifenden Teppich
+            über den Kopf gestülpt, den er später fallen läßt.</stage>
         </sp>
         <sp who="#isaak">
           <speaker>ISAAK.</speaker>
           <l>So sind sie fort? – Ich höre nichts.</l>
-          <stage>
-            <hi>Zurücktretend.</hi>
-          </stage>
+          <stage>Zurücktretend.</stage>
           <lg>
             <l>Doch ja. –</l>
             <l>Nein, wieder nichts. Ich habe mich versteckt,</l>
@@ -4541,9 +4087,7 @@
             <l>Das hol ich später, wenn der Lärm vorüber. –</l>
             <l>Wo ist die Tür? Wie rett ich meine Seele?</l>
           </lg>
-          <stage>
-            <hi>Esther tritt aus der Türe links.</hi>
-          </stage>
+          <stage>Esther tritt aus der Türe links.</stage>
         </sp>
         <sp who="#isaak">
           <speaker>ISAAK.</speaker>
@@ -4587,9 +4131,8 @@
             <l>Und sprichst zu mir aus meiner Kinder Munde?</l>
             <l>Ich aber glaub es nicht. Es ist nicht. Nein!</l>
           </lg>
-          <stage>
-            <hi>Er sinkt am Stuhle in der Mitte der Bühne nieder, sein Haupt dagegenlehnend.</hi>
-          </stage>
+          <stage>Er sinkt am Stuhle in der Mitte der Bühne nieder, sein Haupt
+            dagegenlehnend.</stage>
         </sp>
         <sp who="#esther">
           <speaker>ESTHER.</speaker>
@@ -4617,16 +4160,12 @@
         <sp who="#esther">
           <speaker>ESTHER.</speaker>
           <l>Leih deinen Stuhl zu sitzen, alter Mann!</l>
-          <stage>
-            <hi>Sie rückt den Stuhl nach vorn.</hi>
-          </stage>
+          <stage>Sie rückt den Stuhl nach vorn.</stage>
           <lg>
             <l>Die Glieder werden schwach mir unterm Leib.</l>
             <l>Hier will ich bleiben und will Wache halten.</l>
           </lg>
-          <stage>
-            <hi>Sie sitzt.</hi>
-          </stage>
+          <stage>Sie sitzt.</stage>
           <lg>
             <l>Vielleicht, daß einem dünkt der Mühe wert,</l>
             <l>Die Stoppeln zu verbrennen nach der Ernte,</l>
@@ -4635,16 +4174,12 @@
         </sp>
         <sp who="#isaak">
           <speaker>ISAAK</speaker>
-          <stage>
-            <hi>am Boden.</hi>
-          </stage>
+          <stage>am Boden.</stage>
           <lg>
             <l>Mich nicht! mich nicht! – Hier kommt schon einer. Horch!</l>
             <l>Nein, viele! – Schütze mich, ich flieh zu dir.</l>
           </lg>
-          <stage>
-            <hi>Er flieht zu ihrem Stuhle, wo er sich am Boden niederkauert.</hi>
-          </stage>
+          <stage>Er flieht zu ihrem Stuhle, wo er sich am Boden niederkauert.</stage>
         </sp>
         <sp who="#esther">
           <speaker>ESTHER.</speaker>
@@ -4654,12 +4189,10 @@
             <l>Und kommt der Tod, so sterbt ihr kinderlos,</l>
             <l>Ich geh voran und folge meiner Schwester.</l>
           </lg>
-          <stage>
-            <hi>In der Mitteltüre erscheint der König mit seinem Knappen, der eine Fackel
-              trägt.</hi>
-          </stage>
+          <stage>In der Mitteltüre erscheint der König mit seinem Knappen, der eine Fackel
+            trägt.</stage>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Dring ich noch weiter vor? Begnüg ich mich</l>
           <pb n="507"/>
@@ -4696,15 +4229,12 @@
             <l>Laß hier dein Licht und geh! Ich bleib allein</l>
             <l>Und brüte die Geburten meiner Rache.</l>
           </lg>
-          <stage>
-            <hi>Der Diener steckt seine Fackel in einen Ring neben der Türe und entfernt sich.</hi>
-          </stage>
+          <stage>Der Diener steckt seine Fackel in einen Ring neben der Türe und entfernt
+            sich.</stage>
         </sp>
-        <sp who="#der_könig">
+        <sp who="#koenig">
           <speaker>DER KÖNIG</speaker>
-          <stage>
-            <hi>einen Schritt nach vorn machend.</hi>
-          </stage>
+          <stage>einen Schritt nach vorn machend.</stage>
           <lg>
             <l>Was regt sich dort? Ist hier noch Leben übrig?</l>
             <l>Gebt Antwort!</l>
@@ -4717,7 +4247,7 @@
             <l>Verschont uns, edler Mörder!</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Du bists, Alter.</l>
@@ -4731,7 +4261,7 @@
           <speaker>ESTHER.</speaker>
           <l>Ich bin es, Herr.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Und ists geschehn?</l>
         </sp>
@@ -4739,7 +4269,7 @@
           <speaker>ESTHER.</speaker>
           <l>Es ist.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Ich wußt es wohl,</l>
@@ -4773,7 +4303,7 @@
             <l>Sag ich euch doch: ihr schlagt zu hoch sie an.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Meinst du? Ich sage dir, wir sind nur Schatten,</l>
@@ -4823,7 +4353,7 @@
             <l>Du trenne dich nicht, Herr, von deinem Volk.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Meinst du? Ich bin der König, weißt du wohl?</l>
@@ -4851,9 +4381,7 @@
             <l>Mit ihrem Abbild hier auf meiner Brust</l>
             <l>Und lernen Unmensch sein genüber gleichen.</l>
           </lg>
-          <stage>
-            <hi>Da Esther aufgestanden ist.</hi>
-          </stage>
+          <stage>Da Esther aufgestanden ist.</stage>
           <lg>
             <l>Sprich mir kein Wort! Ich will! Und diese Fackel</l>
             <l>Soll mich begleiten, flammend wie ich selbst,</l>
@@ -4866,18 +4394,14 @@
           <speaker>ESTHER.</speaker>
           <l>Sie ist. Sie war. Sie bleibt.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>hat die Fackel ergriffen.</hi>
-          </stage>
+          <stage>hat die Fackel ergriffen.</stage>
           <lg>
             <l>Mir deucht, ich sehe Blut auf meinem Weg.</l>
             <l>Es ist der Weg zum Blut. – O Nacht der Greuel.</l>
           </lg>
-          <stage>
-            <hi>Er geht in die Seitentüre links.</hi>
-          </stage>
+          <stage>Er geht in die Seitentüre links.</stage>
         </sp>
         <sp who="#isaak">
           <speaker>ISAAK.</speaker>
@@ -4891,17 +4415,13 @@
             <l>Allein der Tag bricht an. Laß mich versuchen,</l>
             <l>Ob ich die Glieder trage bis dahin.</l>
           </lg>
-          <stage>
-            <hi>Sie tritt zum Fenster und zieht den Vorhang.</hi>
-          </stage>
+          <stage>Sie tritt zum Fenster und zieht den Vorhang.</stage>
           <lg>
             <l>Der Morgen dämmert schon, sein bleicher Schein</l>
             <l>Schaut, wie entsetzt, die Greuel der Zerstörung,</l>
             <l>Den Unterschied von gestern und von heut.</l>
           </lg>
-          <stage>
-            <hi>Auf die am Boden zerstreuten Schmucksachen.</hi>
-          </stage>
+          <stage>Auf die am Boden zerstreuten Schmucksachen.</stage>
           <lg>
             <l>Da liegen sie, die Trümmer unsers Glücks,</l>
             <l>Der bunte Tand, um dessentwillen wir,</l>
@@ -4913,17 +4433,13 @@
         </sp>
         <sp who="#isaak">
           <speaker>ISAAK</speaker>
-          <stage>
-            <hi>der sich in den Stuhl gesetzt hat.</hi>
-          </stage>
+          <stage>der sich in den Stuhl gesetzt hat.</stage>
           <lg>
             <l>Hier will ich sitzen. Seit der König da,</l>
             <l><pb n="511"/> Fürcht ich sie nicht und alle, die noch kommen.</l>
           </lg>
-          <stage>
-            <hi>Die Mitteltüre öffnet sich. Manrique und Garceran, hinter ihnen die Königin, ihr
-              Kind an der Hand führend, und mehrere Große treten ein.</hi>
-          </stage>
+          <stage>Die Mitteltüre öffnet sich. Manrique und Garceran, hinter ihnen die Königin, ihr
+            Kind an der Hand führend, und mehrere Große treten ein.</stage>
         </sp>
         <sp who="#manrique">
           <speaker>MANRIQUE.</speaker>
@@ -4936,15 +4452,13 @@
         </sp>
         <sp who="#esther">
           <speaker>ESTHER</speaker>
-          <stage>
-            <hi>auf der andern Seite, eines Ruckes den umgestürzten Tisch emporhebend.</hi>
-          </stage>
+          <stage>auf der andern Seite, eines Ruckes den umgestürzten Tisch emporhebend.</stage>
           <lg>
             <l>Verwüstung, ordne dich! Laß sie nicht glauben,</l>
             <l>Daß wir erschrocken oder daß wir feig.</l>
           </lg>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Hier sind sie, jene andern!</l>
         </sp>
@@ -4956,7 +4470,7 @@
             <l>Stellt euch in Reih und Ordnung, wenns beliebt.</l>
           </lg>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Mich laßt voran, ich bin die Schuldigste.</l>
         </sp>
@@ -4990,9 +4504,7 @@
         </sp>
         <sp who="#esther">
           <speaker>ESTHER</speaker>
-          <stage>
-            <hi>herüberrufend.</hi>
-          </stage>
+          <stage>herüberrufend.</stage>
           <lg>
             <l>Ihr dort, obgleich ihr Mörder seid gesamt</l>
             <l>Und würdig jeden Tods und jeder Strafe,</l>
@@ -5028,9 +4540,7 @@
             <l>Schon unsre Anzahl streitet mit der Demut,</l>
             <l>Sie teilt die Schuld, die doch in jedem ganz.</l>
           </lg>
-          <stage>
-            <hi>Alle haben die Schwerter vor Manrique auf den Boden gelegt.</hi>
-          </stage>
+          <stage>Alle haben die Schwerter vor Manrique auf den Boden gelegt.</stage>
           <lg>
             <l>So harren wir. Vielmehr geh einer hin</l>
             <l>Und trete fördersamst den König an.</l>
@@ -5042,101 +4552,78 @@
         </sp>
         <sp who="#garceran">
           <speaker>GARCERAN</speaker>
-          <stage>
-            <hi>der einige Schritte gemacht, umkehrend.</hi>
-          </stage>
+          <stage>der einige Schritte gemacht, umkehrend.</stage>
           <l>Seht, hier der König selbst.</l>
-          <stage>
-            <hi>Der König stürzt aus dem Seitengemache. Nach ein paar Schritten wendet er sich um
-              und sieht starr nach der Türe.</hi>
-          </stage>
+          <stage>Der König stürzt aus dem Seitengemache. Nach ein paar Schritten wendet er sich um
+            und sieht starr nach der Türe.</stage>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>O Gott im Himmel!</l>
         </sp>
         <sp who="#manrique">
           <speaker>MANRIQUE.</speaker>
           <l>Ruhig, gnädge Frau.</l>
-          <stage>
-            <hi>Der König geht nach vorn. Er bleibt mit untergeschlagenen Armen vor dem alten Isaak
-              stehen, der wie schlummernd im Sessel liegt. Drauf geht er nach dem Vorgrunde.</hi>
-          </stage>
+          <stage>Der König geht nach vorn. Er bleibt mit untergeschlagenen Armen vor dem alten Isaak
+            stehen, der wie schlummernd im Sessel liegt. Drauf geht er nach dem Vorgrunde.</stage>
         </sp>
         <sp who="#esther">
           <speaker>ESTHER</speaker>
-          <stage>
-            <hi>zu dem Alten.</hi>
-          </stage>
+          <stage>zu dem Alten.</stage>
           <lg>
             <l>Schau, deine Feinde zittern. Freust du dich?</l>
             <l>Ich nicht. Die Tote wacht doch nimmer auf.</l>
           </lg>
-          <stage>
-            <hi>Der König, im Vorgrunde, betrachtet seine beiden Hände und streift daran, wie
-              reinigend, mit der </hi>
-          </stage>
-          <stage>
-            <hi>einen über die andre. Hierauf dieselbe Bewegung über den Oberleib. Zuletzt fährt er
-              nach dem Halse, die Hände und den Umkreis desselben bewegend. In dieser letzten
-              Stellung, die Hände noch immer am Halse, bleibt er stehen und sieht starr vor sich
-              hin.</hi>
-          </stage>
+          <stage>Der König, im Vorgrunde, betrachtet seine beiden Hände und streift daran, wie
+            reinigend, mit der einen über die andre. Hierauf dieselbe Bewegung über den Oberleib.
+            Zuletzt fährt er nach dem Halse, die Hände und den Umkreis desselben bewegend. In dieser
+            letzten Stellung, die Hände noch immer am Halse, bleibt er stehen und sieht starr vor
+            sich hin.</stage>
         </sp>
         <sp who="#manrique">
           <speaker>MANRIQUE.</speaker>
           <l>Erlauchter Fürst und König! Gnädger Herr!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>emporfahrend.</hi>
-          </stage>
+          <stage>emporfahrend.</stage>
           <lg>
             <l>Ihr seids? Ihr kommt zurecht. Euch sucht ich eben.</l>
             <l><pb n="513"/> Und alle. Ihr erspart mir manche Müh.</l>
           </lg>
-          <stage>
-            <hi>Er tritt vor sie hin, sie mit zornigen Blicken messend.</hi>
-          </stage>
+          <stage>Er tritt vor sie hin, sie mit zornigen Blicken messend.</stage>
         </sp>
         <sp who="#manrique">
           <speaker>MANRIQUE</speaker>
-          <stage>
-            <hi>auf die am Boden liegenden Waffen zeigend.</hi>
-          </stage>
+          <stage>auf die am Boden liegenden Waffen zeigend.</stage>
           <l>Wir haben unsre Wehr von uns gelegt –</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Ich sehe Schwerter. Kommt ihr, mich zu töten?</l>
             <l>Vollendet euer Werk. Hier meine Brust.</l>
           </lg>
-          <stage>
-            <hi>Er öffnet sein Kleid.</hi>
-          </stage>
+          <stage>Er öffnet sein Kleid.</stage>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Er hats nicht mehr!</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Wie meint ihr, schöne Frau?</l>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Das böse Bild ist fort von seinem Halse.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Ich gehe, es zu holen.</l>
-          <stage>
-            <hi>Er macht ein paar Schritte gegen die Seitentüre und bleibt dann stehen.</hi>
-          </stage>
+          <stage>Er macht ein paar Schritte gegen die Seitentüre und bleibt dann stehen.</stage>
         </sp>
-        <sp who="#königin">
+        <sp who="#koenigin">
           <speaker>KÖNIGIN.</speaker>
           <l>Gott, noch immer!</l>
         </sp>
@@ -5151,7 +4638,7 @@
             <l>Er fordert auf zu Wehr und Widerstand.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Und Feinde muß man strafen, oder nicht?</l>
@@ -5163,7 +4650,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Meint ihr mich, hoher Herr?</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Ich meine dich. Du hast mich zwar verraten,</l>
@@ -5177,7 +4664,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Herr, sie war schön.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>So! Und was weiter noch?</l>
         </sp>
@@ -5185,7 +4672,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Doch auch verbuhlt und leicht, voll arger Tücken.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <l>Und das verschwiegst du mir, als es noch Zeit?</l>
         </sp>
@@ -5193,7 +4680,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Ich sagt es euch.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Und ich habs nicht geglaubt?</l>
@@ -5207,7 +4694,7 @@
             <l>Sie rät auf Zauberei.</l>
           </lg>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Das ist der Aberglaube ,</l>
@@ -5218,7 +4705,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Zum Teil wars freilich wieder auch natürlich.</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Natürlich ist zuletzt nur, was erlaubt.</l>
@@ -5232,7 +4719,7 @@
           <speaker>GARCERAN.</speaker>
           <l>Wie meint ihr?</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG.</speaker>
           <lg>
             <l>Ein böser Zug um Wange, Kinn und Mund,</l>
@@ -5256,16 +4743,12 @@
         </sp>
         <sp who="#manrique">
           <speaker>MANRIQUE</speaker>
-          <stage>
-            <hi>mit starker Stimme.</hi>
-          </stage>
+          <stage>mit starker Stimme.</stage>
           <l>Und ihr nicht auch?</l>
         </sp>
-        <sp who="#könig">
+        <sp who="#koenig">
           <speaker>KÖNIG</speaker>
-          <stage>
-            <hi>nach einer Pause.</hi>
-          </stage>
+          <stage>nach einer Pause.</stage>
           <lg>
             <l>Der Mann hat recht; ich auch.</l>
             <l>Allein was ist die Welt, mein armes Land,</l>
@@ -5281,9 +4764,7 @@
             <l><pb n="515"/> Doch halt! Hier ist die Mutter. Was sie tat,</l>
             <l>Sie tat es für ihr Kind. Ihr ist verziehn.</l>
           </lg>
-          <stage>
-            <hi>Da die Königin vortritt und ein Knie beugt.</hi>
-          </stage>
+          <stage>Da die Königin vortritt und ein Knie beugt.</stage>
           <lg>
             <l>Madoña, straft ihr mich? Wollt ihr mir zeigen</l>
             <l>Die Stellung, die mir ziemte gegen euch.</l>
@@ -5308,15 +4789,13 @@
             <l>Denn er ist heut der König dieses Landes,</l>
             <l>Und so geschart, laßt gehn uns vor das Volk.</l>
           </lg>
-          <stage>
-            <hi>Man hat einen Schild gebracht.</hi>
-          </stage>
+          <stage>Man hat einen Schild gebracht.</stage>
           <lg>
             <l>Ihr Frauen beide, reicht dem Kind die Hand,</l>
             <l>Sein erster Thron ist schlüpfrig – wie der zweite.</l>
             <l>Du, Garceran, du bleibst an meiner Seite,</l>
             <l>Wir haben gleichen Leichtsinn zu vertreten.</l>
-            <l>Wir wollen kämpfen wie mit <hi>einer</hi> Kraft.</l>
+            <l>Wir wollen kämpfen wie mit <emph>einer</emph> Kraft.</l>
             <l>Und hast du dich gereinigt, so wie ich,</l>
             <l>Vielleicht hält jene Stille, Sittigreine</l>
             <l>Dich ihrer Huld und ihres Auges wert.</l>
@@ -5324,9 +4803,7 @@
             <l>Macht ihm die Tugend nicht nur achtungswert,</l>
             <l>Nein, liebenswürdig auch. Das schützt vor vielem.</l>
           </lg>
-          <stage>
-            <hi>Trompeten aus der Ferne.</hi>
-          </stage>
+          <stage>Trompeten aus der Ferne.</stage>
           <lg>
             <l><pb n="516"/> Hört ihr? sie rufen uns. Die ich beschieden</l>
             <l>Als Beistand gegen euch, sie sind bereit</l>
@@ -5338,17 +4815,13 @@
             <l>Nach innen und nach außen wohl bewahrt.</l>
             <l>Voraus! Voran! Geliebt es Gott: zum Sieg.</l>
           </lg>
-          <stage>
-            <hi>Der Zug hat sich schon früher geordnet. Voraus einige Vasallen, dann das Kind auf
-              dem Schilde, das die Frauen zu beiden Seiten an den Händen halten. Dann der Rest der
-              Männer. Zuletzt der König, sich vertraulich auf Garceran stützend.</hi>
-          </stage>
+          <stage>Der Zug hat sich schon früher geordnet. Voraus einige Vasallen, dann das Kind auf
+            dem Schilde, das die Frauen zu beiden Seiten an den Händen halten. Dann der Rest der
+            Männer. Zuletzt der König, sich vertraulich auf Garceran stützend.</stage>
         </sp>
         <sp who="#esther">
           <speaker>ESTHER</speaker>
-          <stage>
-            <hi>zu ihrem Vater gewandt.</hi>
-          </stage>
+          <stage>zu ihrem Vater gewandt.</stage>
           <lg>
             <l>Siehst du, sie sind schon heiter und vergnügt</l>
             <l>Und stiften Ehen für die Zukunft schon.</l>
@@ -5356,9 +4829,7 @@
             <l>Ein Opfer sich geschlachtet aus den Kleinen</l>
             <l>Und reichen sich die annoch blutge Hand.</l>
           </lg>
-          <stage>
-            <hi>In die Mitte des Theaters tretend.</hi>
-          </stage>
+          <stage>In die Mitte des Theaters tretend.</stage>
           <lg>
             <l>Ich aber sage dir, du stolzer König:</l>
             <l>Geh hin, geh hin in prunkendem Vergessen.</l>
@@ -5377,20 +4848,14 @@
             <l>Dann schlägst du wohl auch reuig an die Brust,</l>
             <l>Dann denkst du an die Jüdin von Toledo.</l>
           </lg>
-          <stage>
-            <hi>Den Alten an der Schulter fassend.</hi>
-          </stage>
+          <stage>Den Alten an der Schulter fassend.</stage>
           <l>Kommt, Vater, kommt! Wir haben dort zu tun.</l>
-          <stage>
-            <hi>Auf die Seitentüre zeigend.</hi>
-          </stage>
+          <stage>Auf die Seitentüre zeigend.</stage>
           <pb n="517"/>
         </sp>
         <sp who="#isaak">
           <speaker>ISAAK</speaker>
-          <stage>
-            <hi>wie aus dem Schlafe erwachend.</hi>
-          </stage>
+          <stage>wie aus dem Schlafe erwachend.</stage>
           <l>Doch such ich erst mein Gold.</l>
         </sp>
         <sp who="#esther">
@@ -5403,12 +4868,8 @@
             <l>Wir stehen gleich jenen in der Sünder Reihe.</l>
             <l>Verzeihn wir denn, damit uns Gott verzeihe.</l>
           </lg>
-          <stage>
-            <hi>Die Arme gegen die Seitentüre ausgestreckt.</hi>
-          </stage>
-          <stage>
-            <hi>Der Vorhang fällt.</hi>
-          </stage>
+          <stage>Die Arme gegen die Seitentüre ausgestreckt.</stage>
+          <stage>Der Vorhang fällt.</stage>
         </sp>
       </div>
     </body>
