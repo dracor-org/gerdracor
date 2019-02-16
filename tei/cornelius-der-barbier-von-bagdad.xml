@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Der Barbier von Bagdad</title>
+        <title type="main">Der Barbier von Bagdad</title>
+        <title type="sub">Komische Oper in zwei Aufzügen</title>
         <author key="pnd:118522213">Cornelius, Peter</author>
       </titleStmt>
       <publicationStmt>
@@ -43,61 +44,68 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="diener_nureddins">
-            <persName>DIENER NUREDDINS</persName>
-            <persName xml:id="chor_der_diener">CHOR DER DIENER</persName>
-            <persName xml:id="die_diener">DIE DIENER</persName>
+          <personGrp xml:id="diener_nureddins" sex="MALE">
+            <name>Diener Nureddins/Chor der Diener</name>
+            <name type="variant">Die Diener</name>
+            <name type="variant">Nureddins Diener</name>
+            <name type="variant">Chor</name>
+          </personGrp>
+          <person xml:id="nureddin" sex="MALE">
+            <persName>Nureddin</persName>
           </person>
-          <person xml:id="nureddin">
-            <persName>NUREDDIN</persName>
+          <person xml:id="bostana" sex="FEMALE">
+            <persName>Bostana</persName>
           </person>
-          <person xml:id="chor">
-            <persName>CHOR</persName>
+          <person xml:id="abul" sex="MALE">
+            <persName>Abul</persName>
           </person>
-          <person xml:id="bostana">
-            <persName>BOSTANA</persName>
+          <person xml:id="margiana" sex="FEMALE">
+            <persName>Margiana</persName>
           </person>
-          <person xml:id="abul">
-            <persName>ABUL</persName>
+          <person xml:id="kadi" sex="MALE">
+            <persName>Kadi</persName>
+            <persName type="variant">Der Kadi</persName>
           </person>
-          <person xml:id="margiana">
-            <persName>MARGIANA</persName>
+          <person xml:id="erster_muezzin" sex="MALE">
+            <persName>Erster Muezzin</persName>
           </person>
-          <person xml:id="kadi">
-            <persName>KADI</persName>
+          <person xml:id="zweiter_muezzin" sex="MALE">
+            <persName>Zweiter Muezzin</persName>
           </person>
-          <person xml:id="muezzin">
-            <persName>MUEZZIN</persName>
+          <person xml:id="dritter_muezzin" sex="MALE">
+            <persName>Dritter Muezzin</persName>
           </person>
-          <person xml:id="der_kadi">
-            <persName>DER KADI</persName>
+          <person xml:id="stimme_eines_sklaven" sex="MALE">
+            <persName>Stimme eines Sklaven</persName>
+            <persName type="variant">Stimme des Sklaven</persName>
           </person>
-          <person xml:id="dritter_muezzin">
-            <persName>DRITTER MUEZZIN</persName>
-            <persName xml:id="stimme_des_sklaven">STIMME DES SKLAVEN</persName>
+          <personGrp xml:id="stimmen" sex="UNKNOWN">
+            <name>Stimmen</name>
+          </personGrp>
+          <personGrp xml:id="freunde_des_kadi" sex="MALE">
+            <name>Freunde des Kadi</name>
+            <name type="variant">Seine Freunde</name>
+          </personGrp>
+          <personGrp xml:id="klagefrauen" sex="FEMALE">
+            <name>Klagefrauen</name>
+            <name type="variant">Frauen</name>
+          </personGrp>
+          <personGrp xml:id="bewohner_bagdads" sex="UNKNOWN">
+            <name>Bewohner Bagdads</name>
+          </personGrp>
+          <personGrp xml:id="vier_bewaffnete" sex="MALE">
+            <name>Vier Bewaffnete</name>
+          </personGrp>
+          <person xml:id="kalif" sex="MALE">
+            <persName>Der Kalif</persName>
           </person>
-          <person xml:id="stimme_eines_sklaven">
-            <persName>STIMME EINES SKLAVEN</persName>
-          </person>
-          <person xml:id="stimmen">
-            <persName>STIMMEN</persName>
-          </person>
-          <person xml:id="freunde_des_kadi">
-            <persName>FREUNDE DES KADI</persName>
-          </person>
-          <person xml:id="klagefrauen">
-            <persName>KLAGEFRAUEN</persName>
-          </person>
-          <person xml:id="bewohner_bagdads">
-            <persName>BEWOHNER BAGDADS</persName>
-          </person>
-          <person xml:id="vier_bewaffnete">
-            <persName>VIER BEWAFFNETE</persName>
-          </person>
-          <person xml:id="der_kalif">
-            <persName>DER KALIF</persName>
-            <persName xml:id="kalif">KALIF</persName>
-          </person>
+          <personGrp xml:id="chor_alle" sex="UNKNOWN">
+            <name>Chor/Alle</name>
+            <name type="variant">Soli und Chor</name>
+          </personGrp>
+          <personGrp xml:id="maenner" sex="MALE">
+            <name>Männer</name>
+          </personGrp>
         </listPerson>
       </particDesc>
       <textClass>
@@ -110,6 +118,7 @@
       <listChange>
         <change when="2017-01-06">(dlina) file conversion from source</change>
         <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-16">(ff) formalities</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -120,8 +129,6 @@
         <head>Der Barbier von Bagdad</head>
         <head>Komische Oper in zwei Aufzügen</head>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head><pb n="10"/> Personen</head>
@@ -138,13 +145,22 @@
             des Kalifen</castItem>
         </castList>
       </div>
+      <set>
+        <p>Ort der Handlung: Bagdad, der erste Aufzug im Hause Nureddins, der zweite Aufzug im Hause
+          des Kadi.</p>
+      </set>
+    </front>
+    <body>
       <div type="act">
-        <head>1. Akt</head>
+        <head>Erster Aufzug</head>
+        <stage>Ein Zimmer in Nureddins Hause</stage>
+        <stage>Rechts und links Seitentüren. Rechts ein Ruhebett, zu dessen Seiten ein Tisch mit
+          Medizinflaschen. Links ein zweiter Tisch nebst Stuhl. Es ist Morgendämmerung und wird
+          während der ersten Szene allmählich Tag. Nureddin ruht auf dem Bett, seine Diener umgeben
+          ihn mit Mienen voll Niedergeschlagenheit als einen Sterbenden.</stage>
         <div type="scene">
           <head>Erster Auftritt</head>
-          <stage>
-            <hi>Nureddin. Diener Nureddins.</hi>
-          </stage>
+          <stage>Nureddin. Diener Nureddins.</stage>
           <sp who="#diener_nureddins">
             <speaker>DIENER NUREDDINS.</speaker>
             <lg>
@@ -163,23 +179,19 @@
           </sp>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>träumend.</hi>
-            </stage>
+            <stage>träumend.</stage>
             <l>Margiana!</l>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER.</speaker>
             <l>Horch, er spricht!</l>
           </sp>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>zart gesteigert.</hi>
-            </stage>
+            <stage>zart gesteigert.</stage>
             <l>Margiana!</l>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER.</speaker>
             <l>Weckt ihn nicht!</l>
           </sp>
@@ -187,7 +199,7 @@
             <speaker>NUREDDIN.</speaker>
             <l>Margiana!</l>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER.</speaker>
             <l>Ihn umschwebt ein Traumgesicht.</l>
           </sp>
@@ -200,7 +212,7 @@
               <l>Will sich dein Herz nur mir erschließen, o Margiana!</l>
             </lg>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER.</speaker>
             <lg>
               <l>O hört ihn reden</l>
@@ -234,7 +246,7 @@
               <l>Margiana! Margiana! Margiana!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#diener_nureddins">
             <speaker>CHOR.</speaker>
             <lg>
               <l>In Strahlen ew'gen Lichts,</l>
@@ -253,21 +265,15 @@
               <l><pb n="12"/> Weckt ihn nicht!</l>
               <l>Bald verglimmt sein Lebenslicht.</l>
             </lg>
-            <stage>
-              <hi>Der Chor zieht sich während der letzten Worte leise zurück.</hi>
-            </stage>
+            <stage>Der Chor zieht sich während der letzten Worte leise zurück.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweiter Auftritt</head>
-          <stage>
-            <hi>Nureddin allein.</hi>
-          </stage>
+          <stage>Nureddin allein.</stage>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>fährt vom Lager empor, erhebt sich und tritt in den Vordergrund.</hi>
-            </stage>
+            <stage>fährt vom Lager empor, erhebt sich und tritt in den Vordergrund.</stage>
             <lg>
               <l>So leb' ich noch?</l>
               <l>So hat noch nicht</l>
@@ -317,26 +323,18 @@
               <l>O laß es nicht sinken und sterben,</l>
               <l>O mache mein Herz gesund!</l>
             </lg>
-            <stage>
-              <hi>Er geht zum Tisch, setzt sich nieder und stützt den Kopf in die Hand, bis Bostana
-                ihn anredet.</hi>
-            </stage>
-            <stage>
-              <hi>Bostana tritt durch die Seitentür links ein, alt aussehend und in etwas groteskem
-                Kostüm.</hi>
-            </stage>
+            <stage>Er geht zum Tisch, setzt sich nieder und stützt den Kopf in die Hand, bis Bostana
+              ihn anredet.</stage>
+            <stage>Bostana tritt durch die Seitentür links ein, alt aussehend und in etwas groteskem
+              Kostüm.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt</head>
-          <stage>
-            <hi>Bostana. Nureddin.</hi>
-          </stage>
+          <stage>Bostana. Nureddin.</stage>
           <sp who="#bostana">
             <speaker>BOSTANA</speaker>
-            <stage>
-              <hi>im Ausdruck bald salbungsvoll, bald geschwätzig.</hi>
-            </stage>
+            <stage>im Ausdruck bald salbungsvoll, bald geschwätzig.</stage>
             <lg>
               <l>Sei Allahs Frieden über dir, mein Sohn.</l>
               <l>Sei Allahs Frieden, Allahs Frieden</l>
@@ -396,9 +394,7 @@
           </sp>
           <sp who="#bostana #nureddin">
             <speaker>BOSTANA UND NUREDDIN</speaker>
-            <stage>
-              <hi>letzterer Bostanas Worte wiederholend.</hi>
-            </stage>
+            <stage>letzterer Bostanas Worte wiederholend.</stage>
             <lg>
               <l>Wenn zum Gebet</l>
               <l>Vom Minaret</l>
@@ -480,9 +476,7 @@
           </sp>
           <sp who="#nureddin #bostana">
             <speaker>NUREDDIN UND BOSTANA</speaker>
-            <stage>
-              <hi>die jetzt wiederholt.</hi>
-            </stage>
+            <stage>die jetzt wiederholt.</stage>
             <lg>
               <l>Wenn zum Gebet</l>
               <l>Vom Minaret</l>
@@ -507,8 +501,8 @@
               <l>Du leitest mich.</l>
             </lg>
           </sp>
-          <sp who="#_bostana">
-            <speaker> BOSTANA.</speaker>
+          <sp who="#bostana">
+            <speaker>BOSTANA.</speaker>
             <lg>
               <l>Tönet Muezzinruf, halte dich nah,</l>
               <l>Denn die Stunde der Wonn' ist da.</l>
@@ -520,38 +514,29 @@
               <l>Tönet Muezzinruf, bin ich schon da,</l>
               <l>Wenn die Stunde der Wonne nah!</l>
             </lg>
-            <stage>
-              <hi>Begleitet Bostana bis zur Tür und verabschiedet sie; lebhaftes Gebärdenspiel von
-                beiden Seiten.</hi>
-            </stage>
+            <stage>Begleitet Bostana bis zur Tür und verabschiedet sie; lebhaftes Gebärdenspiel von
+              beiden Seiten.</stage>
           </sp>
           <sp who="#bostana">
             <speaker>BOSTANA</speaker>
-            <stage>
-              <hi>steckt den Kopf nochmals zur Tür herein.</hi>
-            </stage>
+            <stage>steckt den Kopf nochmals zur Tür herein.</stage>
             <l>Und denk' auch an ein gut Geschenk für mich!</l>
           </sp>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>macht mit enthusiastisch abfertigender Bewegung der Tür hinter ihr wieder zu,
-                reißt sie aber sogleich wieder auf und ruft ihr nach.</hi>
-            </stage>
+            <stage>macht mit enthusiastisch abfertigender Bewegung der Tür hinter ihr wieder zu,
+              reißt sie aber sogleich wieder auf und ruft ihr nach.</stage>
             <l>Vergiß den Barbier nicht!</l>
             <pb n="16"/>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt</head>
-          <stage>
-            <hi>Nureddin allein.</hi>
-          </stage>
+          <stage>Nureddin allein.</stage>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>in leidenschaftlicher Bewegung mit entzückten Gebärden auf und ab schreitend.</hi>
-            </stage>
+            <stage>in leidenschaftlicher Bewegung mit entzückten Gebärden auf und ab
+              schreitend.</stage>
             <lg>
               <l>Ach, das Leid hab' ich getragen,</l>
               <l>Wie ertrag' ich nun sein Glück?</l>
@@ -572,59 +557,39 @@
               <l>Leuchtet hell ihr Glückessonnen,</l>
               <l>Überwältigt mir das Herz!</l>
             </lg>
-            <stage>
-              <hi>Er bleibt zu Ende des Gesanges in verzückter Stellung im Vordergrunde stehen.</hi>
-            </stage>
-            <stage>
-              <hi>Abul tritt ein; in orientalischer Barbiertracht, ein </hi>
-            </stage>
-            <stage>
-              <hi>buntes Damasttuch hängt ihm vom Gürtel hernieder, auf der ändern Seite ein
-                metallnes Becken und ein kleiner Handspiegel, sowie ein Astrolabium. Er trägt einen
-                kleinen Kasten mit Utensilien unter dem Arm. Aussehen: steinalt, sehr bleich, fast
-                gelb, langer, weißer Bart.</hi>
-            </stage>
+            <stage>Er bleibt zu Ende des Gesanges in verzückter Stellung im Vordergrunde
+              stehen.</stage>
+            <stage>Abul tritt ein; in orientalischer Barbiertracht, ein buntes Damasttuch hängt ihm
+              vom Gürtel hernieder, auf der ändern Seite ein metallnes Becken und ein kleiner
+              Handspiegel, sowie ein Astrolabium. Er trägt einen kleinen Kasten mit Utensilien unter
+              dem Arm. Aussehen: steinalt, sehr bleich, fast gelb, langer, weißer Bart.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt</head>
-          <stage>
-            <hi>Nureddin. Abul Hassan Ali Ebn Bekar.</hi>
-          </stage>
+          <stage>Nureddin. Abul Hassan Ali Ebn Bekar.</stage>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>verbeugt sich.</hi>
-            </stage>
+            <stage>verbeugt sich.</stage>
           </sp>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>kehrt ihm noch den Rücken.</hi>
-            </stage>
+            <stage>kehrt ihm noch den Rücken.</stage>
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>verbeugt sich wieder und räuspert sich laut.</hi>
-            </stage>
+            <stage>verbeugt sich wieder und räuspert sich laut.</stage>
           </sp>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>bemerkt ihn immer noch nicht.</hi>
-            </stage>
+            <stage>bemerkt ihn immer noch nicht.</stage>
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>nähert sich Nureddin und klopft ihn auf die<pb n="17"/> Schulter; als dieser sich
-                umwendet und ihn bemerkt, macht Abul nochmals eine tiefe Verbeugung.</hi>
-            </stage>
-            <stage>
-              <hi>Nureddin erwidert mit Kopfnicken seinen Gruß und gibt ihm einen Wink, sein Werk zu
-                beginnen.</hi>
-            </stage>
+            <stage>nähert sich Nureddin und klopft ihn auf die<pb n="17"/> Schulter; als dieser sich
+              umwendet und ihn bemerkt, macht Abul nochmals eine tiefe Verbeugung.</stage>
+            <stage>Nureddin erwidert mit Kopfnicken seinen Gruß und gibt ihm einen Wink, sein Werk
+              zu beginnen.</stage>
           </sp>
           <sp who="#abul">
             <speaker>ABUL.</speaker>
@@ -642,9 +607,7 @@
               <l>Schwer unter Haarlast Ächzender,</l>
               <l>Nach meinem Messer Lechzender!</l>
             </lg>
-            <stage>
-              <hi>Setzt sich nieder.</hi>
-            </stage>
+            <stage>Setzt sich nieder.</stage>
             <lg>
               <l>Ich komm' in aller Eiligkeit</l>
               <l>Und wünsche dir Gedeihlichkeit,</l>
@@ -668,27 +631,15 @@
               <l>Du hast gewählt die beste Zeit auf Erden,</l>
               <l>Die man nur wählen kann, rasiert zu werden.</l>
             </lg>
-            <stage>
-              <hi>Er zeigt Nureddin das Horoskop.</hi>
-            </stage>
-            <stage>
-              <hi>Nureddin macht eine abwehrende Handbewegung.</hi>
-            </stage>
-            <stage>
-              <hi>Dies Spiel wiederholt sich noch zweimal.</hi>
-            </stage>
-            <stage>
-              <hi>Abul verfolgt Nureddin damit.</hi>
-            </stage>
-            <stage>
-              <hi>Nureddin wird ungeduldig und weist ihn gebieterisch ab.</hi>
-            </stage>
+            <stage>Er zeigt Nureddin das Horoskop.</stage>
+            <stage>Nureddin macht eine abwehrende Handbewegung.</stage>
+            <stage>Dies Spiel wiederholt sich noch zweimal.</stage>
+            <stage>Abul verfolgt Nureddin damit.</stage>
+            <stage>Nureddin wird ungeduldig und weist ihn gebieterisch ab.</stage>
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>zuckt die Achseln.</hi>
-            </stage>
+            <stage>zuckt die Achseln.</stage>
             <lg>
               <l>Mars und Merkur</l>
               <l>Schauen auf dich,</l>
@@ -737,9 +688,7 @@
               <l>Dein Werk vollende schnell und weiter nichts.</l>
               <l>Drum kein Geschwätz – sonst ruf' ich einen andern.</l>
             </lg>
-            <stage>
-              <hi>Für sich.</hi>
-            </stage>
+            <stage>Für sich.</stage>
             <l>Margiana, o Margiana, du mein Alles!</l>
           </sp>
           <sp who="#abul">
@@ -804,9 +753,7 @@
           </sp>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>mit Humor.</hi>
-            </stage>
+            <stage>mit Humor.</stage>
             <lg>
               <l>Nun sag' einmal, du unverschämter Schwätzer,</l>
               <l>Wann endest du? Und wann beginnest du?</l>
@@ -832,10 +779,8 @@
           </sp>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>geht außer sich vor Ungeduld erst einige Schritte durch das Zimmer, dann faßt er
-                einen Entschluß, geht zur Tür, reißt sie auf und ruft seinen Dienern.</hi>
-            </stage>
+            <stage>geht außer sich vor Ungeduld erst einige Schritte durch das Zimmer, dann faßt er
+              einen Entschluß, geht zur Tür, reißt sie auf und ruft seinen Dienern.</stage>
             <lg>
               <l>He! Ali, Sadi, Abbas, Achmet,</l>
               <l>Zofar, Omar, Dschafar, Jezid,</l>
@@ -843,22 +788,18 @@
               <l>Riza, Jusuff, Motawackel!</l>
               <l>Werft ihn hinaus!</l>
             </lg>
-            <stage>
-              <hi>Die Diener treten schon auf den ersten Ruf einzeln nacheinander ein, sind also bei
-                den Worten »Werft ihn hinaus« schon alle auf der Szene. Es ist wünschenswert, daß
-                der zuletzt erscheinende Motawackel eine besonders auffällige Figur sei. Entweder
-                sehr kolossal und dick, einen guten halben Kopf höher als die übrigen, oder, im Fall
-                eine solche Persönlichkeit fehlt, ein sehr kleiner Knabe, der als Zwerg ausstaffiert
-                wird, eine Art Ausläufer, Lakai.</hi>
-            </stage>
+            <stage>Die Diener treten schon auf den ersten Ruf einzeln nacheinander ein, sind also
+              bei den Worten »Werft ihn hinaus« schon alle auf der Szene. Es ist wünschenswert, daß
+              der zuletzt erscheinende Motawackel eine besonders auffällige Figur sei. Entweder sehr
+              kolossal und dick, einen guten halben Kopf höher als die übrigen, oder, im Fall eine
+              solche Persönlichkeit fehlt, ein sehr kleiner Knabe, der als Zwerg ausstaffiert wird,
+              eine Art Ausläufer, Lakai.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Sechster Auftritt</head>
-          <stage>
-            <hi>Nureddin. Abul. Nureddins Diener.</hi>
-          </stage>
-          <sp who="#chor_der_diener">
+          <stage>Nureddin. Abul. Nureddins Diener.</stage>
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER.</speaker>
             <lg>
               <l>Hinaus! Hinaus! Hinaus!</l>
@@ -900,11 +841,9 @@
               <l>Aus Hof und Haus!</l>
               <l>Hinaus! Hinaus!</l>
             </lg>
-            <stage>
-              <hi>Während des Nachspiels drängen die Diener den Barbier in den Hintergrund bis an
-                die Tür, dort macht er sich aber los, eilt in den Vordergrund, zieht ein
-                Barbiermesser hervor und schwingt es drohend.</hi>
-            </stage>
+            <stage>Während des Nachspiels drängen die Diener den Barbier in den Hintergrund bis an
+              die Tür, dort macht er sich aber los, eilt in den Vordergrund, zieht ein Barbiermesser
+              hervor und schwingt es drohend.</stage>
           </sp>
           <sp who="#abul">
             <speaker>ABUL.</speaker>
@@ -915,7 +854,7 @@
               <l>Beschimpft unerhört!</l>
             </lg>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER.</speaker>
             <l>Hast du nicht gehört?!</l>
           </sp>
@@ -927,7 +866,7 @@
               <l>Hab' ich dich gesucht?</l>
             </lg>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER.</speaker>
             <l>Ergreife die Flucht!</l>
             <pb n="22"/>
@@ -940,7 +879,7 @@
               <l>So bin ich nun hier!</l>
             </lg>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER.</speaker>
             <l>Was willst du noch hier?</l>
           </sp>
@@ -953,7 +892,7 @@
               <l>Des Abul Hassan Ali Ebn Bekar!</l>
             </lg>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER.</speaker>
             <l>Nun geht es dir schlimm!</l>
           </sp>
@@ -965,7 +904,7 @@
               <l>Die Elenden dort!</l>
             </lg>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER.</speaker>
             <l>Nun packe dich fort!</l>
           </sp>
@@ -977,7 +916,7 @@
               <l>Und bricht und zerschellt –</l>
             </lg>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER.</speaker>
             <l>Nun räume das Feld!</l>
           </sp>
@@ -989,7 +928,7 @@
               <l>Den Kopf dir kahl!</l>
             </lg>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER.</speaker>
             <l>Hinaus aus dem Saal!</l>
           </sp>
@@ -1002,30 +941,22 @@
               <l>Riza, Jusuff, Motawackel!</l>
               <l>Packt euch hinaus!</l>
             </lg>
-            <stage>
-              <hi>Nureddin gibt den Dienern einen Wink, sich zu entfernen Sobald Abul sieht, daß er
-                gewonnenes Spiel hat, behandelt er die Diener als Sieger und trägt mehreres zu ihrer
-                Hinausbeförderung bei. Besonders läßt er Motawackel seinen Zorn fühlen.</hi>
-            </stage>
+            <stage>Nureddin gibt den Dienern einen Wink, sich zu entfernen Sobald Abul sieht, daß er
+              gewonnenes Spiel hat, behandelt er die Diener als Sieger und trägt mehreres zu ihrer
+              Hinausbeförderung bei. Besonders läßt er Motawackel seinen Zorn fühlen.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Siebenter Auftritt</head>
-          <stage>
-            <hi>Nureddin. Abul.</hi>
-          </stage>
+          <stage>Nureddin. Abul.</stage>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>beiseite.</hi>
-            </stage>
+            <stage>beiseite.</stage>
             <lg>
               <l>Ich seh', durch Strenge werd' ich ihn nicht los,</l>
               <l>Versuch' ich denn, durch Schmeicheln ihn zu kirren.</l>
             </lg>
-            <stage>
-              <hi>Zu Abul.</hi>
-            </stage>
+            <stage>Zu Abul.</stage>
             <lg>
               <l>Erhabner Freund, du Krone der Barbiere,</l>
               <l><pb n="23"/> Du Bruder Bakbaks, Bukbuks, Bakbarahs</l>
@@ -1043,17 +974,13 @@
               <l>Nun sitze nieder; sanft wie Zephirhauch</l>
               <l>Soll meine Klinge übers Haupt dir streifen.</l>
             </lg>
-            <stage>
-              <hi>Er wendet sich schon während der letzten Worte zum Tisch, breitet seine Utensilien
-                aus, nimmt sein Becken vom Gürtel und schlägt Schaum.</hi>
-            </stage>
+            <stage>Er wendet sich schon während der letzten Worte zum Tisch, breitet seine
+              Utensilien aus, nimmt sein Becken vom Gürtel und schlägt Schaum.</stage>
           </sp>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>setzt sich während der folgenden Worte auf einen Stuhl in die Mitte der
-                Bühne.</hi>
-            </stage>
+            <stage>setzt sich während der folgenden Worte auf einen Stuhl in die Mitte der
+              Bühne.</stage>
             <lg>
               <l>Heil mir, so wird er endlich nun beginnen;</l>
               <l>Das wird ein Stelldichein mit Abenteuern!</l>
@@ -1062,10 +989,8 @@
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>nimmt das Damasttuch von seinem Gürtel, hängt es Nureddin um und singt dabei
-                halblaut in den Bart brummend.</hi>
-            </stage>
+            <stage>nimmt das Damasttuch von seinem Gürtel, hängt es Nureddin um und singt dabei
+              halblaut in den Bart brummend.</stage>
             <lg>
               <l>Margiana, o Margiana, du mein Alles?</l>
               <l>Haha! Ich merk', er ist verliebt. Nun wart'!</l>
@@ -1075,9 +1000,7 @@
           </sp>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>emporspringend.</hi>
-            </stage>
+            <stage>emporspringend.</stage>
             <l>Margiana!?</l>
           </sp>
           <sp who="#abul">
@@ -1090,30 +1013,22 @@
           </sp>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>setzt sich wieder.</hi>
-            </stage>
+            <stage>setzt sich wieder.</stage>
             <l>So singe nur, doch mache, daß du endest!</l>
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>Nureddins Kopf einseifend.</hi>
-            </stage>
+            <stage>Nureddins Kopf einseifend.</stage>
             <l>»Laß dir zu Füßen wonnesam mich liegen, O Margiana!«</l>
           </sp>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>jedesmal wiederholend.</hi>
-            </stage>
+            <stage>jedesmal wiederholend.</stage>
             <l>O Margiana!</l>
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>im Rasieren.</hi>
-            </stage>
+            <stage>im Rasieren.</stage>
             <lg>
               <l>»An deine Hand die Lippe trunken schmiegen,</l>
               <l>O Margiana!</l>
@@ -1130,29 +1045,23 @@
           </sp>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>einstimmend.</hi>
-            </stage>
+            <stage>einstimmend.</stage>
             <lg>
               <l>O Margiana!</l>
               <l>Wonnen der Liebe – o Margiana!</l>
               <l>Die Welt versinkt – o Margiana!</l>
             </lg>
-            <stage>
-              <hi>Abul vertieft sich in die Kadenz des Liedes; er hat bis darin Nureddins Kopf halb
-                rasiert, während der Kadenz aber vergißt er das Geschäft vollständig. Er tritt mit
-                Messer und Becken in den Vordergrund und vertieft sich ganz in die Erfindung der
-                Rouladen, freut sich mit sichtbarem Wohlgefallen seiner Stimme. Zuletzt als Nureddin
-                ihn beim Arm packt, ist er ganz wie aus den Wolken gefallen, schrickt sichtbar
-                zusammen.</hi>
-            </stage>
+            <stage>Abul vertieft sich in die Kadenz des Liedes; er hat bis darin Nureddins Kopf halb
+              rasiert, während der Kadenz aber vergißt er das Geschäft vollständig. Er tritt mit
+              Messer und Becken in den Vordergrund und vertieft sich ganz in die Erfindung der
+              Rouladen, freut sich mit sichtbarem Wohlgefallen seiner Stimme. Zuletzt als Nureddin
+              ihn beim Arm packt, ist er ganz wie aus den Wolken gefallen, schrickt sichtbar
+              zusammen.</stage>
           </sp>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>begleitet die Kadenz mit den Gebärden der bittersten Verzweiflung; ihn
-                unterbrechend, in der höchsten fieberhaften Aufregung.</hi>
-            </stage>
+            <stage>begleitet die Kadenz mit den Gebärden der bittersten Verzweiflung; ihn
+              unterbrechend, in der höchsten fieberhaften Aufregung.</stage>
             <lg>
               <l>Mein teurer Abul! Deiner Stimme Klang,</l>
               <l>Voll bebenden Gedenkens einst'ger Zeit,</l>
@@ -1166,31 +1075,23 @@
               <l>Wenn je ein Hauch von Liebe dich durchdrungen,</l>
               <l>Auf meinen Knieen hier beschwör' ich dich: Rasiere mich!!</l>
             </lg>
-            <stage>
-              <hi>Er sagt diese Worte in flehender ergebenster Stellung, als mache er Anstalten,
-                wirklich niederzuknien. Bei den Worten »Rasiere mich« verliert er die Besinnung und
-                fällt in Abuls Arme.</hi>
-            </stage>
+            <stage>Er sagt diese Worte in flehender ergebenster Stellung, als mache er Anstalten,
+              wirklich niederzuknien. Bei den Worten »Rasiere mich« verliert er die Besinnung und
+              fällt in Abuls Arme.</stage>
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>feierlich, gerührt, väterlich zärtlich.</hi>
-            </stage>
+            <stage>feierlich, gerührt, väterlich zärtlich.</stage>
             <lg>
               <l>Du liebst?! Du liebst!? O fühl' an diesem Herzen,</l>
               <l><pb n="25"/> Dem neunzigjähr'gen, ob auch ich geliebt!?</l>
             </lg>
-            <stage>
-              <hi>Bei diesen Worten zieht Abul Nureddin ans Herz. Kurze Pause einer enthusiastischen
-                Umarmung.</hi>
-            </stage>
+            <stage>Bei diesen Worten zieht Abul Nureddin ans Herz. Kurze Pause einer
+              enthusiastischen Umarmung.</stage>
           </sp>
           <sp who="#nureddin #abul">
             <speaker>NUREDDIN UND ABUL</speaker>
-            <stage>
-              <hi>mit jubelnder Begeisterung.</hi>
-            </stage>
+            <stage>mit jubelnder Begeisterung.</stage>
             <lg>
               <l>O Liebe! Liebe! Seligstes Gefühl!</l>
               <l>»Laß dir zu Füßen wonnesam mich liegen,</l>
@@ -1207,15 +1108,11 @@
               <l>Wir sind empor zum Eden schon gestiegen,</l>
               <l>O Margiana!«</l>
             </lg>
-            <stage>
-              <hi>Während des Nachspiels eilt Nureddin wieder zum Stuhl.</hi>
-            </stage>
+            <stage>Während des Nachspiels eilt Nureddin wieder zum Stuhl.</stage>
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>während er eifrig rasiert.</hi>
-            </stage>
+            <stage>während er eifrig rasiert.</stage>
             <l>Und sprich, wo wohnet sie? Wer ist ihr Vater?</l>
           </sp>
           <sp who="#nureddin">
@@ -1291,10 +1188,8 @@
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>ist fertig; er verbeugt sich, nimmt den Spiegel von seinem Gürtel und hält ihn
-                Nureddin vor.</hi>
-            </stage>
+            <stage>ist fertig; er verbeugt sich, nimmt den Spiegel von seinem Gürtel und hält ihn
+              Nureddin vor.</stage>
             <lg>
               <l>Nun bist du fertig. Schone dieses Haupts,</l>
               <l>Das neu verherrlicht ist durch meine Kunst.</l>
@@ -1308,16 +1203,12 @@
               <l>Wenn ihrer viele auf dich warten,</l>
               <l>Wird auch der Tage längster, fürcht' ich, dir zu kurz.</l>
             </lg>
-            <stage>
-              <hi>Er eilt in das Nebengemach.</hi>
-            </stage>
+            <stage>Er eilt in das Nebengemach.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Achter Auftritt</head>
-          <stage>
-            <hi>Abul allein.</hi>
-          </stage>
+          <stage>Abul allein.</stage>
           <sp who="#abul">
             <speaker>ABUL.</speaker>
             <lg>
@@ -1344,19 +1235,15 @@
               <l>Was quält auch mich, den jüngsten von den Sieben?</l>
               <l>Lieben! – O!</l>
             </lg>
-            <stage>
-              <hi>Nureddin tritt in prächtigem Anzuge auf, geht mit raschen Schritten quer über die
-                Szene in den Vordergrund, dann erst wendet er sich nach rechts und erblickt
-                Abul.</hi>
-            </stage>
+            <stage>Nureddin tritt in prächtigem Anzuge auf, geht mit raschen Schritten quer über die
+              Szene in den Vordergrund, dann erst wendet er sich nach rechts und erblickt
+              Abul.</stage>
             <pb n="27"/>
           </sp>
         </div>
         <div type="scene">
           <head>Neunter Auftritt</head>
-          <stage>
-            <hi>Nureddin. Abul.</hi>
-          </stage>
+          <stage>Nureddin. Abul.</stage>
           <sp who="#nureddin">
             <speaker>NUREDDIN.</speaker>
             <l>So hat der Satan dich noch immer hier?</l>
@@ -1442,15 +1329,11 @@
               <l>Fällt mir ein Mittel ein:</l>
               <l>Diener, herbei, herein!</l>
             </lg>
-            <stage>
-              <hi>Er hat die letzten Worte zur Mitteltür hinausgerufen.</hi>
-            </stage>
+            <stage>Er hat die letzten Worte zur Mitteltür hinausgerufen.</stage>
           </sp>
-          <sp who="#die_diener">
+          <sp who="#diener_nureddins">
             <speaker>DIE DIENER</speaker>
-            <stage>
-              <hi>erscheinen, Motawackel beschließt den Zug.</hi>
-            </stage>
+            <stage>erscheinen, Motawackel beschließt den Zug.</stage>
           </sp>
           <sp who="#abul">
             <speaker>ABUL.</speaker>
@@ -1464,14 +1347,10 @@
         </div>
         <div type="scene">
           <head>Zehnter Auftritt</head>
-          <stage>
-            <hi>Nureddin. Abul. Nureddins Diener.</hi>
-          </stage>
+          <stage>Nureddin. Abul. Nureddins Diener.</stage>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>zu den Dienern, auf Abul deutend.</hi>
-            </stage>
+            <stage>zu den Dienern, auf Abul deutend.</stage>
             <lg>
               <l>O sehet den Armen,</l>
               <l>Wie bleich zum Erbarmen!</l>
@@ -1488,10 +1367,8 @@
               <l>O eilt, ihn zu retten,</l>
               <l>Ihn wohlig zu betten,</l>
             </lg>
-            <stage>
-              <hi>Die Diener umringen den Barbier, der während des Folgenden vergebliche
-                Anstrengungen macht, sich von ihnen loszumachen.</hi>
-            </stage>
+            <stage>Die Diener umringen den Barbier, der während des Folgenden vergebliche
+              Anstrengungen macht, sich von ihnen loszumachen.</stage>
             <lg>
               <l>Ihn nieder zu strecken,</l>
               <l>Mit Kissen zu decken.</l>
@@ -1522,29 +1399,21 @@
               <l>Ertränkt den Patienten</l>
               <l>In Medikamenten!</l>
             </lg>
-            <stage>
-              <hi>Er eilt ab.</hi>
-            </stage>
-            <stage>
-              <hi>Abul reißt sich los, will ihm nach.</hi>
-            </stage>
+            <stage>Er eilt ab.</stage>
+            <stage>Abul reißt sich los, will ihm nach.</stage>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER</speaker>
-            <stage>
-              <hi>Abul zurückhaltend und umringend.</hi>
-            </stage>
+            <stage>Abul zurückhaltend und umringend.</stage>
             <lg>
               <l>So lasset uns eilen,</l>
               <l>Den Kranken zu heilen,</l>
               <l>Die starrenden Glieder,</l>
               <l>O strecket sie nieder!</l>
             </lg>
-            <stage>
-              <hi>Abul will entfliehen, eine entgegenstehende Gruppe fängt ihn auf.</hi>
-            </stage>
+            <stage>Abul will entfliehen, eine entgegenstehende Gruppe fängt ihn auf.</stage>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER.</speaker>
             <lg>
               <l>Wir brauen die besten</l>
@@ -1561,11 +1430,9 @@
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>sucht aufs neue zu entfliehen, wird aufgehalten.</hi>
-            </stage>
+            <stage>sucht aufs neue zu entfliehen, wird aufgehalten.</stage>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER.</speaker>
             <lg>
               <l>Wir wehen dir Kühle,</l>
@@ -1573,11 +1440,9 @@
               <l><pb n="30"/> Doch Frost wir vertreiben</l>
               <l>Durch heftiges Reiben.</l>
             </lg>
-            <stage>
-              <hi>Abul sucht wieder nach einer andern Seite zu entrinnen, wird aufgehalten.</hi>
-            </stage>
+            <stage>Abul sucht wieder nach einer andern Seite zu entrinnen, wird aufgehalten.</stage>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER.</speaker>
             <lg>
               <l>Laßt spanische Fliegen</l>
@@ -1585,14 +1450,10 @@
               <l>Und Pflaster ihm prangen</l>
               <l>Auf Stirne und Wangen.</l>
             </lg>
-            <stage>
-              <hi>Neuer Fluchtversuch.</hi>
-            </stage>
-            <stage>
-              <hi>Abul wird festgehalten und in den Vordergrund gezogen.</hi>
-            </stage>
+            <stage>Neuer Fluchtversuch.</stage>
+            <stage>Abul wird festgehalten und in den Vordergrund gezogen.</stage>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER.</speaker>
             <lg>
               <l>Bringt Wasser in Menge,</l>
@@ -1604,9 +1465,7 @@
               <l>Dein Bart ist im Wege,</l>
               <l>Wir holen die Säge.</l>
             </lg>
-            <stage>
-              <hi>Motawackel eilt ab.</hi>
-            </stage>
+            <stage>Motawackel eilt ab.</stage>
             <lg>
               <l>Hier deine Lanzetten,</l>
               <l>Sie müssen dich retten.</l>
@@ -1615,25 +1474,20 @@
               <l>Wir lassen, o Bader,</l>
               <l>Dir selber zu Ader!</l>
             </lg>
-            <stage>
-              <hi>Eine Gruppe von Dienern hat Abul zum Ruhebett hingezogen. Er wird ausgestreckt und
-                so in Kissen gehüllt, daß man nur noch Mütze und Bart sieht. Einige Diener halten
-                Abul fest, andere bewaffnen sich mit Lanzetten und Rasiermessern; einer bürstet ihm
-                die Füße mit einer großen Bürste; einer weht Kühle mit einem großen Tuche; einer
-                schüttet den Rest der Medizinflaschen in ein großes Glas und macht Miene, ihm einen
-                Löffel voll einzuzwängen. Bei den Worten »Zofar, Dschafar« bekommt er ein </hi>
-            </stage>
-            <stage>
-              <hi>großes schwarzes Pflaster auf Stirn und Nase gesetzt, und bei dem Rufe
-                »Motawackel« ist dieser schon mit einer Handsäge wiedergekehrt, faßt den Bart beim
-                Ende an und will ihn in der Nähe des Kinnes durchsägen.</hi>
-            </stage>
+            <stage>Eine Gruppe von Dienern hat Abul zum Ruhebett hingezogen. Er wird ausgestreckt
+              und so in Kissen gehüllt, daß man nur noch Mütze und Bart sieht. Einige Diener halten
+              Abul fest, andere bewaffnen sich mit Lanzetten und Rasiermessern; einer bürstet ihm
+              die Füße mit einer großen Bürste; einer weht Kühle mit einem großen Tuche; einer
+              schüttet den Rest der Medizinflaschen in ein großes Glas und macht Miene, ihm einen
+              Löffel voll einzuzwängen. Bei den Worten »Zofar, Dschafar« bekommt er ein großes
+              schwarzes Pflaster auf Stirn und Nase gesetzt, und bei dem Rufe »Motawackel« ist
+              dieser schon mit einer Handsäge wiedergekehrt, faßt den Bart beim Ende an und will ihn
+              in der Nähe des Kinnes durchsägen.</stage>
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>spricht dumpf stöhnend aus der dichten Hülle von Kissen und Decken hervor.</hi>
-            </stage>
+            <stage>spricht dumpf stöhnend aus der dichten Hülle von Kissen und Decken
+              hervor.</stage>
             <lg>
               <l>Ali, Sadi, habt Erbarmen!</l>
               <l>Abbas, Achmet, laßt mich Armen!</l>
@@ -1644,32 +1498,31 @@
               <l>Ihr tötet mich!</l>
             </lg>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#diener_nureddins">
             <speaker>CHOR DER DIENER.</speaker>
             <lg>
               <l>Abul Hassan Ali Ebn Bekar,</l>
               <l>Wir retten dich!</l>
             </lg>
-            <stage>
-              <hi>Während sich alle an ihre verschiedenen Funktionen begeben, fällt der
-                Vorhang.</hi>
-            </stage>
+            <stage>Während sich alle an ihre verschiedenen Funktionen begeben, fällt der
+              Vorhang.</stage>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>2. Akt</head>
+        <head>Zweiter Aufzug</head>
+        <stage>Ein reiches, geräumiges Frauengemach im Hause des Kadi Baba Mustapha</stage>
+        <stage>Im Hintergrunde eine große Mitteltür. Rechts eine Tapetentür, links eine mit Gardinen
+          verhängte Nische. Rechts Ottomane und Kniebank neben einem mit prächtigen Blumen
+          verzierten Tisch. Links in der ersten Kulisse ein Fenster. Dem Fenster schräg gegenüber,
+          in der zweiten Kulisse rechts, eine Seitentür.</stage>
         <div type="scene">
           <head>Erster Auftritt</head>
-          <stage>
-            <hi>Margiana. Dann Bostana. Dann der Kadi. Dann vier Diener. Zuletzt drei Muezzin hinter
-              der Szene.</hi>
-          </stage>
+          <stage>Margiana. Dann Bostana. Dann der Kadi. Dann vier Diener. Zuletzt drei Muezzin
+            hinter der Szene.</stage>
           <sp who="#margiana">
             <speaker>MARGIANA</speaker>
-            <stage>
-              <hi>aus der Tür rechts auftretend.</hi>
-            </stage>
+            <stage>aus der Tür rechts auftretend.</stage>
             <lg>
               <l>Er kommt! Er kommt! O Wonne meiner Brust!</l>
               <l>Wie werd' ich jubeln, ihn zu sehen!</l>
@@ -1684,9 +1537,7 @@
           </sp>
           <sp who="#bostana">
             <speaker>BOSTANA</speaker>
-            <stage>
-              <hi>durch die Mitteltür eintretend, zu Margiana.</hi>
-            </stage>
+            <stage>durch die Mitteltür eintretend, zu Margiana.</stage>
             <lg>
               <l>Er kommt! Er kommt! O wonnigliche Lust!</l>
               <l>Wie wird er staunen, dich zu sehen;</l>
@@ -1701,10 +1552,8 @@
           </sp>
           <sp who="#kadi">
             <speaker>KADI</speaker>
-            <stage>
-              <hi>durch die Mitteltür hereineilend, einen Brief und einen Schlüssel in der
-                Hand.</hi>
-            </stage>
+            <stage>durch die Mitteltür hereineilend, einen Brief und einen Schlüssel in der
+              Hand.</stage>
             <lg>
               <l>Er kommt! Er kommt! O wonnigliche Lust!</l>
               <l>Wie wirst du staunen, ihn zu sehen!</l>
@@ -1716,11 +1565,9 @@
               <l>Freund Selim schenkt ihn seiner Braut.</l>
               <l>Er kommt! Er kommt! O Wonnelaut!</l>
             </lg>
-            <stage>
-              <hi>Vier Diener des Kadi tragen eine große, stattliche Kiste herein, setzen sie auf
-                die Seite des Fensters dem Blumentisch gegenüber, nieder und entfernen sich
-                wieder.</hi>
-            </stage>
+            <stage>Vier Diener des Kadi tragen eine große, stattliche Kiste herein, setzen sie auf
+              die Seite des Fensters dem Blumentisch gegenüber, nieder und entfernen sich
+              wieder.</stage>
           </sp>
           <sp who="#kadi">
             <speaker>KADI.</speaker>
@@ -1735,16 +1582,12 @@
           </sp>
           <sp who="#margiana">
             <speaker>MARGIANA</speaker>
-            <stage>
-              <hi>zum Kadi.</hi>
-            </stage>
+            <stage>zum Kadi.</stage>
             <lg>
               <l>Dein Wille, Herr und Vater, ist der meine;</l>
               <l>Gehorsam danket deine Tochter dir.</l>
             </lg>
-            <stage>
-              <hi>Zu Bostana.</hi>
-            </stage>
+            <stage>Zu Bostana.</stage>
             <lg>
               <l>So hast du meinen Willen ihm verkündet,</l>
               <l>Daß nach der Liebe Leid ihm Wonne winkt?</l>
@@ -1760,10 +1603,8 @@
           </sp>
           <sp who="#kadi">
             <speaker>KADI</speaker>
-            <stage>
-              <hi>hat indessen die Kiste aufgeschlossen und mehrere Stoffe herausgenommen und
-                entfaltet, die er dann über den Rand der Kiste herniederhängen läßt.</hi>
-            </stage>
+            <stage>hat indessen die Kiste aufgeschlossen und mehrere Stoffe herausgenommen und
+              entfaltet, die er dann über den Rand der Kiste herniederhängen läßt.</stage>
             <lg>
               <l>Sieh, diese Stoffe – Seide, Sammet, Atlas –</l>
               <l>Den Purpurschal mit Goldbrokat verbrämt!</l>
@@ -1771,13 +1612,9 @@
           </sp>
           <sp who="#margiana">
             <speaker>MARGIANA</speaker>
-            <stage>
-              <hi>zum Kadi.</hi>
-            </stage>
+            <stage>zum Kadi.</stage>
             <l>Welch eine Pracht, mein Vater, ich erstaune!</l>
-            <stage>
-              <hi>Zu Bostana.</hi>
-            </stage>
+            <stage>Zu Bostana.</stage>
             <l>Und wird die rechte Zeit er nicht versäumen?</l>
           </sp>
           <sp who="#bostana">
@@ -1796,13 +1633,9 @@
           </sp>
           <sp who="#margiana">
             <speaker>MARGIANA</speaker>
-            <stage>
-              <hi>zum Kadi.</hi>
-            </stage>
+            <stage>zum Kadi.</stage>
             <l>Wie wird mich die Agraffe herrlich kleiden.</l>
-            <stage>
-              <hi>Zu Bostana.</hi>
-            </stage>
+            <stage>Zu Bostana.</stage>
             <l>Sag' an, er ist wohl bleich von Liebessehnen?</l>
           </sp>
           <sp who="#bostana">
@@ -1821,13 +1654,9 @@
           </sp>
           <sp who="#margiana">
             <speaker>MARGIANA</speaker>
-            <stage>
-              <hi>zum Kadi.</hi>
-            </stage>
+            <stage>zum Kadi.</stage>
             <l>Und die Rubinen! ach! rot wie die Liebe!</l>
-            <stage>
-              <hi>Für sich.</hi>
-            </stage>
+            <stage>Für sich.</stage>
             <l>Bald ist er hier und heilen soll ihn Liebe!</l>
           </sp>
           <sp who="#bostana">
@@ -1839,9 +1668,7 @@
           </sp>
           <sp who="#margiana">
             <speaker>MARGIANA</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Für alle Leiden spendet</l>
               <l>Die süße Lieb' Ersatz.</l>
@@ -1851,9 +1678,7 @@
           </sp>
           <sp who="#bostana">
             <speaker>BOSTANA</speaker>
-            <stage>
-              <hi>zu Margiana.</hi>
-            </stage>
+            <stage>zu Margiana.</stage>
             <lg>
               <l>Schon lauschet er und wendet</l>
               <l>Nicht einen Fluß vom Platz,</l>
@@ -1870,25 +1695,21 @@
               <l>O welch ein Schatz!</l>
             </lg>
           </sp>
-          <sp who="#muezzin">
+          <sp who="#erster_muezzin #zweiter_muezzin #dritter_muezzin">
             <speaker>MUEZZIN</speaker>
-            <stage>
-              <hi>hinter der Szene von verschiedenen Türmen.</hi>
-            </stage>
-            <p>
-              <hi><pb n="34"/> Der erste (Baß) in der Nähe der Rückwand, also wie einer dem Hause
-                nahegelegenen Moschee; der zweite (Tenor) entfernter; der dritte (Tenor) in großer
-                Ferne, so weit wie möglich im Hintergrund.</hi>
-            </p>
-            <p>Allah ist groß, und Mahomet sein Prophet.</p>
-            <p>Versammelt euch, ihr Gläub'gen, zum Gebet.</p>
+            <stage>hinter der Szene von verschiedenen Türmen.<pb n="34"/> Der erste (Baß) in der
+              Nähe der Rückwand, also wie einer dem Hause nahegelegenen Moschee; der zweite (Tenor)
+              entfernter; der dritte (Tenor) in großer Ferne, so weit wie möglich im
+              Hintergrund.</stage>
+            <lg>
+              <l>Allah ist groß, und Mahomet sein Prophet.</l>
+              <l>Versammelt euch, ihr Gläub'gen, zum Gebet.</l>
+            </lg>
           </sp>
-          <sp who="#der_kadi_margiana #bostana">
+          <sp who="#kadi #margiana #bostana">
             <speaker>DER KADI, MARGIANA UND BOSTANA</speaker>
-            <stage>
-              <hi>geben das ausfüllende Spiel, das sie noch während des Muezzinrufs eingehalten, auf
-                und nehmen eine andächtige Stellung an.</hi>
-            </stage>
+            <stage>geben das ausfüllende Spiel, das sie noch während des Muezzinrufs eingehalten,
+              auf und nehmen eine andächtige Stellung an.</stage>
             <lg>
               <l>Allah ist groß, und Mahomet sein Prophet.</l>
               <l>Die Gläubigen all, sie eilen zum Gebet.</l>
@@ -1902,34 +1723,24 @@
             <speaker>BOSTANA.</speaker>
             <l>Ich hol' den Schatz – der fromme Kadi geht.</l>
           </sp>
-          <sp who="#der_kadi">
+          <sp who="#kadi">
             <speaker>DER KADI.</speaker>
             <l>Du schöner Schatz! – Ich eile zum Gebet!</l>
           </sp>
           <sp who="#dritter_muezzin">
             <speaker>DRITTER MUEZZIN.</speaker>
             <l>Versammelt euch, ihr Gläubigen!</l>
-            <stage>
-              <hi>Der Kadi wirft noch einen entzückten Blick auf die Kiste, winkt seiner sich
-                ehrfürchtig verneigenden Tochter einen Gruß zu und geht ab.</hi>
-            </stage>
-            <stage>
-              <hi>Bostana verschwindet, sobald er fort ist, durch die Tapetentür.</hi>
-            </stage>
-            <stage>
-              <hi>Margiana bleibt allein auf der Bühne, sieht einen Augenblick durch das Fenster,
-                wendet sich dann zu der Seite des Blumentisches.</hi>
-            </stage>
-            <stage>
-              <hi>Bostana führt Nureddin herein und zieht sich zurück.</hi>
-            </stage>
+            <stage>Der Kadi wirft noch einen entzückten Blick auf die Kiste, winkt seiner sich
+              ehrfürchtig verneigenden Tochter einen Gruß zu und geht ab.</stage>
+            <stage>Bostana verschwindet, sobald er fort ist, durch die Tapetentür.</stage>
+            <stage>Margiana bleibt allein auf der Bühne, sieht einen Augenblick durch das Fenster,
+              wendet sich dann zu der Seite des Blumentisches.</stage>
+            <stage>Bostana führt Nureddin herein und zieht sich zurück.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweiter Auftritt</head>
-          <stage>
-            <hi>Margiana. Nureddin. Abul vor dem Fenster.</hi>
-          </stage>
+          <stage>Margiana. Nureddin. Abul vor dem Fenster.</stage>
           <sp who="#nureddin">
             <speaker>NUREDDIN.</speaker>
             <lg>
@@ -1955,18 +1766,14 @@
               <l>Doch du erscheinst, und ach, es neigen</l>
               <l>Die Blumen demutvoll und zagend sich.</l>
             </lg>
-            <stage>
-              <hi>Sie nimmt eine blühende Rose vom Zweig.</hi>
-            </stage>
+            <stage>Sie nimmt eine blühende Rose vom Zweig.</stage>
             <lg>
               <l>Kühn nimmt die Rose nur das Wort für mich,</l>
               <l>Den hohen Sinn zu künden, der ihr eigen;</l>
               <l>Ob auch die Schwestern alle schweigen,</l>
               <l>Die Rose sagt: »Ich liebe dich!«</l>
             </lg>
-            <stage>
-              <hi>Sie gibt ihm die Rose.</hi>
-            </stage>
+            <stage>Sie gibt ihm die Rose.</stage>
           </sp>
           <sp who="#nureddin #margiana">
             <speaker>NUREDDIN UND MARGIANA.</speaker>
@@ -1985,9 +1792,7 @@
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>vor dem Fenster.</hi>
-            </stage>
+            <stage>vor dem Fenster.</stage>
             <lg>
               <l>O Nureddin, genieße froh dein Glück!</l>
               <l>Sei ohne Furcht, es wacht vor diesem Fenster</l>
@@ -1996,25 +1801,19 @@
           </sp>
           <sp who="#bostana">
             <speaker>BOSTANA</speaker>
-            <stage>
-              <hi>eilt herein.</hi>
-            </stage>
+            <stage>eilt herein.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt</head>
-          <stage>
-            <hi>Die Vorigen. Bostana.</hi>
-          </stage>
+          <stage>Die Vorigen. Bostana.</stage>
           <sp who="#bostana">
             <speaker>BOSTANA.</speaker>
             <l>Der Abul Hassan Ali Ebn Bekar.</l>
           </sp>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>schreckt auf, noch halb weltentrückt.</hi>
-            </stage>
+            <stage>schreckt auf, noch halb weltentrückt.</stage>
             <l>Wie? Abul Hassan Ali Ebn Bekar?</l>
             <pb n="36"/>
           </sp>
@@ -2035,21 +1834,15 @@
               <l>Ich geh, zu lauschen, ob der Kadi kommt.</l>
               <l>Seid unbesorgt; noch kehrt er nicht zurück.</l>
             </lg>
-            <stage>
-              <hi>Sie zieht sich wieder zurück.</hi>
-            </stage>
+            <stage>Sie zieht sich wieder zurück.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt</head>
-          <stage>
-            <hi>Nureddin. Margiana. Abul vor dem Fenster.</hi>
-          </stage>
-          <stage>
-            <hi>Nureddin und Margiana lauschen noch einige Zeit, ob kein neuer Lärm entsteht. Es
-              bleibt alles still, Nureddin geleitet Margiana zu dem Sitze am Blumentisch und kniet
-              auf den Schemel zu ihren Füßen.</hi>
-          </stage>
+          <stage>Nureddin. Margiana. Abul vor dem Fenster.</stage>
+          <stage>Nureddin und Margiana lauschen noch einige Zeit, ob kein neuer Lärm entsteht. Es
+            bleibt alles still, Nureddin geleitet Margiana zu dem Sitze am Blumentisch und kniet auf
+            den Schemel zu ihren Füßen.</stage>
           <sp who="#nureddin">
             <speaker>NUREDDIN.</speaker>
             <lg>
@@ -2059,9 +1852,7 @@
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>vor dem Fenster.</hi>
-            </stage>
+            <stage>vor dem Fenster.</stage>
             <lg>
               <l>Laß dir zu Füßen wonnesam mich liegen,</l>
               <l>O Margiana!</l>
@@ -2121,9 +1912,7 @@
               <l>Zum Himmel mich empor zu tragen,</l>
               <l>Sag' es ein Kuß.</l>
             </lg>
-            <stage>
-              <hi>Sie umarmen sich.</hi>
-            </stage>
+            <stage>Sie umarmen sich.</stage>
           </sp>
           <sp who="#abul">
             <speaker>ABUL.</speaker>
@@ -2132,20 +1921,14 @@
           </sp>
           <sp who="#stimme_eines_sklaven">
             <speaker>STIMME EINES SKLAVEN</speaker>
-            <stage>
-              <hi>hinter der Szene, im Innern des Hauses.</hi>
-            </stage>
+            <stage>hinter der Szene, im Innern des Hauses.</stage>
             <l>Weh! Weh! Weh! Weh! Weh! Weh!</l>
-            <stage>
-              <hi>Bostana tritt eilig auf.</hi>
-            </stage>
+            <stage>Bostana tritt eilig auf.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt</head>
-          <stage>
-            <hi>Die Vorigen. Bostana.</hi>
-          </stage>
+          <stage>Die Vorigen. Bostana.</stage>
           <sp who="#bostana">
             <speaker>BOSTANA.</speaker>
             <lg>
@@ -2155,15 +1938,13 @@
               <l>Gibt er mit eigner Hans die Bastonade.</l>
             </lg>
           </sp>
-          <sp who="#stimme_des_sklaven">
+          <sp who="#stimme_eines_sklaven">
             <speaker>STIMME DES SKLAVEN.</speaker>
             <l>Weh! Weh! Weh! Weh!</l>
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>vor dem Fenster.</hi>
-            </stage>
+            <stage>vor dem Fenster.</stage>
             <lg>
               <l>Weh mir, o weh, man mordet meinen Freund!</l>
               <l>Kadi, verruchter Mörder!</l>
@@ -2184,16 +1965,14 @@
           </sp>
           <sp who="#stimmen">
             <speaker>STIMMEN</speaker>
-            <stage>
-              <hi>vor dem Fenster.</hi>
-            </stage>
+            <stage>vor dem Fenster.</stage>
             <l>Kadi, verruchter Mörder! Weh dir! Wehe!</l>
           </sp>
           <sp who="#abul">
             <speaker>ABUL.</speaker>
             <l>Wehe!</l>
           </sp>
-          <sp who="#stimme_des_sklaven">
+          <sp who="#stimme_eines_sklaven">
             <speaker>STIMME DES SKLAVEN.</speaker>
             <l>Weh!</l>
           </sp>
@@ -2215,38 +1994,24 @@
               <l>Hier an der Kiste steckt der Schlüssel noch!</l>
               <l>Margiana! Eilig! Fort mit all den Schätzen,</l>
             </lg>
-            <stage>
-              <hi>Sie beginnt sogleich die Kiste auszuräumen.</hi>
-            </stage>
+            <stage>Sie beginnt sogleich die Kiste auszuräumen.</stage>
             <l>Die Kiste birgt ihn, bis der Sturm vorüber!</l>
-            <stage>
-              <hi>Sie zerren eilig den Inhalt der Kiste heraus und schleifen die Stoffe in die
-                verdeckte Nische des Hintergrundes. Während des Folgenden wird Nureddin von den
-                beiden Frauen in die Kiste versteckt.</hi>
-            </stage>
-            <stage>
-              <hi><pb n="38"/> Bostana zieht den Schlüssel ab, steckt ihn zu sich und schiebt
-                Margiana in die Seitentür.</hi>
-            </stage>
-            <stage>
-              <hi>Verworrener, anwachsender Lärm hinter der Szene.</hi>
-            </stage>
-            <stage>
-              <hi>Abul von vier Dienern Nureddins begleitet, die mit Stöcken bewaffnet sind, stürzt
-                herein.</hi>
-            </stage>
+            <stage>Sie zerren eilig den Inhalt der Kiste heraus und schleifen die Stoffe in die
+              verdeckte Nische des Hintergrundes. Während des Folgenden wird Nureddin von den beiden
+              Frauen in die Kiste versteckt.</stage>
+            <stage><pb n="38"/> Bostana zieht den Schlüssel ab, steckt ihn zu sich und schiebt
+              Margiana in die Seitentür.</stage>
+            <stage>Verworrener, anwachsender Lärm hinter der Szene.</stage>
+            <stage>Abul von vier Dienern Nureddins begleitet, die mit Stöcken bewaffnet sind, stürzt
+              herein.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Sechster Auftritt</head>
-          <stage>
-            <hi>Bostana. Abul und vier Diener Nureddins.</hi>
-          </stage>
+          <stage>Bostana. Abul und vier Diener Nureddins.</stage>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>auf Bostana losstürzend.</hi>
-            </stage>
+            <stage>auf Bostana losstürzend.</stage>
             <lg>
               <l>Wo ist er hin? Unsel'ge, sprich, wo habt ihr</l>
               <l>Den Leichnam des Ermordeten verborgen?</l>
@@ -2260,40 +2025,28 @@
               <l>Hier in der Kiste hab' ich ihn versteckt;</l>
               <l>Schnell, schafft sie fort, eh' es der Kadi merkt!</l>
             </lg>
-            <stage>
-              <hi>Sie geht eilig ins Nebengemach rechts.</hi>
-            </stage>
+            <stage>Sie geht eilig ins Nebengemach rechts.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Siebenter Auftritt</head>
-          <stage>
-            <hi>Abul. Diener Nureddins. Später der Kadi.</hi>
-          </stage>
+          <stage>Abul. Diener Nureddins. Später der Kadi.</stage>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>stürzt sich wehklagend über die Kiste.</hi>
-            </stage>
+            <stage>stürzt sich wehklagend über die Kiste.</stage>
             <lg>
               <l>Unsel'ger Freund! Und mußtest so du enden,</l>
               <l>Eh' dich des Retters Hand befreien konnte?</l>
               <l>Dreifach verwünscht, du Mars und du Merkur!</l>
               <l>Sternschnuppen mögt ihr werden und verderben!</l>
             </lg>
-            <stage>
-              <hi>Sich erhebend, zu den Dienern.</hi>
-            </stage>
+            <stage>Sich erhebend, zu den Dienern.</stage>
             <l>Legt eilig Hand an, traget fort die Kiste!</l>
-            <stage>
-              <hi>Die vier Diener wollen die Kiste aufnehmen.</hi>
-            </stage>
+            <stage>Die vier Diener wollen die Kiste aufnehmen.</stage>
           </sp>
           <sp who="#kadi">
             <speaker>KADI</speaker>
-            <stage>
-              <hi>hereineilend.</hi>
-            </stage>
+            <stage>hereineilend.</stage>
             <lg>
               <l>Wo wollt ihr mit der Kiste hin, ihr Frechen?</l>
               <l>So ist mein Haus den Dieben preisgegeben?</l>
@@ -2352,18 +2105,15 @@
           <sp who="#abul">
             <speaker>ABUL.</speaker>
             <l>Ja, wenn du gespießt!</l>
-            <stage>
-              <hi>Freunde des Kadi, Klagefrauen und Bewohner Bagdads treten nacheinander ein.</hi>
-            </stage>
+            <stage>Freunde des Kadi, Klagefrauen und Bewohner Bagdads treten nacheinander
+              ein.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Achter Auftritt</head>
-          <stage>
-            <hi>Die Vorigen. Freunde des Kadi. Klagefrauen. Bewohner Bagdads.</hi>
-          </stage>
-          <sp who="#_kadi">
-            <speaker> KADI.</speaker>
+          <stage>Die Vorigen. Freunde des Kadi. Klagefrauen. Bewohner Bagdads.</stage>
+          <sp who="#kadi">
+            <speaker>KADI.</speaker>
             <lg>
               <l>Verruchte Diebe, die ihr offen</l>
               <l>Am hellen Tag beraubt mein Haus,</l>
@@ -2371,7 +2121,7 @@
               <l>Mit euch ist's aus!</l>
             </lg>
           </sp>
-          <sp who="#abul #nureddins_diener">
+          <sp who="#abul #diener_nureddins">
             <speaker>ABUL UND NUREDDINS DIENER.</speaker>
             <lg>
               <l>Verruchter Kadi, der du offen</l>
@@ -2382,9 +2132,7 @@
           </sp>
           <sp who="#freunde_des_kadi">
             <speaker>FREUNDE DES KADI</speaker>
-            <stage>
-              <hi>herbeieilend, zum Kadi.</hi>
-            </stage>
+            <stage>herbeieilend, zum Kadi.</stage>
             <lg>
               <l>Welch arges Unheil hat betroffen,</l>
               <l>Freund Mustapha, dein armes Haus?</l>
@@ -2394,25 +2142,19 @@
           </sp>
           <sp who="#klagefrauen">
             <speaker>KLAGEFRAUEN</speaker>
-            <stage>
-              <hi>hereinstürzend, in langen weißen Kleidern mit fliegenden schwarzen
-                Trauerschals.</hi>
-            </stage>
+            <stage>hereinstürzend, in langen weißen Kleidern mit fliegenden schwarzen
+              Trauerschals.</stage>
             <lg>
               <l>Bekleidet euch mit Trauerstoffen,</l>
               <l>Ein Mord geschah in diesem Haus.</l>
               <l>Der Tränen Schleusen stehen offen:</l>
-            </lg>
-            <lg>
               <l>Sie brechen aus!</l>
             </lg>
             <l>Weh, o weh, o weh, o weh.</l>
           </sp>
           <sp who="#bewohner_bagdads">
             <speaker>BEWOHNER BAGDADS</speaker>
-            <stage>
-              <hi>hereineilend.</hi>
-            </stage>
+            <stage>hereineilend.</stage>
             <lg>
               <l>Wo ist er, den der Stahl getroffen?</l>
               <l>Nicht Gnade darf der Mörder hoffen!</l>
@@ -2426,8 +2168,8 @@
               <l>So sprecht, ist denn ein Tollhaus offen,</l>
               <l>Und schleudert seine Narren aus?</l>
               <l>Des Himmels Blitz hat mich getroffen,</l>
+              <l>Mit mir ist's aus!</l>
             </lg>
-            <l>Mit mir ist's aus!</l>
           </sp>
           <sp who="#abul">
             <speaker>ABUL.</speaker>
@@ -2435,69 +2177,61 @@
               <l>Bringt Eisen, brecht die Kiste offen,</l>
               <l>Und zieht den Toten nur heraus!</l>
               <l>Des Kadis Stahl hat ihn getroffen,</l>
+              <l>Mit ihm ist's aus!</l>
             </lg>
-            <l>Mit ihm ist's aus!</l>
           </sp>
-          <sp who="#kadi #seine_freunde">
+          <sp who="#kadi #freunde_des_kadi">
             <speaker>KADI UND SEINE FREUNDE.</speaker>
             <lg>
               <l>Verruchte Diebe, die ihr offen</l>
               <l>Am hellen Tag bestehlt dies Haus,</l>
               <l>Nicht Gnade darf ein einz'ger hoffen.</l>
-            </lg>
-            <lg>
               <l>Mit euch ist's aus!</l>
-              <l>ABUL, NUREDDINS DIENER UND ALLE ÜBRIGEN.</l>
+            </lg>
+          </sp>
+          <sp who="#abul #diener_nureddins #klagefrauen #bewohner_bagdads">
+            <speaker>ABUL, NUREDDINS DIENER UND ALLE ÜBRIGEN.</speaker>
+            <lg>
               <l>Verruchter Kadi, der du offen</l>
               <l>Den Gast erschlägst in deinem Haus,</l>
               <l>Nicht Gnade darfst du hoffen,</l>
+              <l>Mit dir ist's aus.</l>
             </lg>
-            <l>Mit dir ist's aus.</l>
           </sp>
           <sp who="#klagefrauen">
             <speaker>KLAGEFRAUEN.</speaker>
             <l>Weh, o weh, o weh, o weh!</l>
-            <stage>
-              <hi>Während des Nachspiels entsteht ein allgemeiner Tumult um die Kiste. Nureddins
-                Diener wollen sie aufladen, werden aber wiederholt daran gehindert und werfen sie
-                um. Der Kadi und seine Freunde wollen sie in den Hintergrund schleppen und stellen
-                sie wieder um, so daß sie nun, den Deckel nach unten gekehrt, während des nächsten
-                Chors stehen bleibt.</hi>
-            </stage>
-            <stage>
-              <hi>Vier glänzend uniformierte Bewaffnete machen sich Platz durch das Gedränge und
-                schieben die Streitenden nach rechts aus dem Mittelpunkt der Bühne von der Kiste
-                fort. Die übrigen Anwesenden sind zu beiden Seiten der Bühne zurückgewichen.</hi>
-            </stage>
+            <stage>Während des Nachspiels entsteht ein allgemeiner Tumult um die Kiste. Nureddins
+              Diener wollen sie aufladen, werden aber wiederholt daran gehindert und werfen sie um.
+              Der Kadi und seine Freunde wollen sie in den Hintergrund schleppen und stellen sie
+              wieder um, so daß sie nun, den Deckel nach unten gekehrt, während des nächsten Chors
+              stehen bleibt.</stage>
+            <stage>Vier glänzend uniformierte Bewaffnete machen sich Platz durch das Gedränge und
+              schieben die Streitenden nach rechts aus dem Mittelpunkt der Bühne von der Kiste fort.
+              Die übrigen Anwesenden sind zu beiden Seiten der Bühne zurückgewichen.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Neunter Auftritt</head>
-          <stage>
-            <hi>Die Vorigen. Der Kalif mit Gefolge.</hi>
-          </stage>
+          <stage>Die Vorigen. Der Kalif mit Gefolge.</stage>
           <sp who="#vier_bewaffnete">
             <speaker>VIER BEWAFFNETE</speaker>
-            <stage>
-              <hi>nehmen einen Augenblick die Mitte ein und singen.</hi>
-            </stage>
+            <stage>nehmen einen Augenblick die Mitte ein und singen.</stage>
             <l>Platz dem Kalifen!</l>
           </sp>
-          <sp who="#der_kalif">
+          <sp who="#kalif">
             <speaker>DER KALIF</speaker>
-            <stage>
-              <hi>tritt ein, von Gefolge umgeben.</hi>
-            </stage>
-            <p>
-              <hi> Er sieht <pb n="41"/> jugendlich aus und tritt in die Mitte des Vordergrunds.
-                Sein Gefolge und die vier Bewaffneten füllen den Hintergrund. Auf der Fensterseite
-                steht Abul mit Nureddins Dienern, auf der Seite des Blumentisches der Kadi und seine
-                Freunde. Die Klagefrauen und Männer von Bagdad zu beiden Seiten verteilt.</hi>
-            </p>
-            <p>Sprich, Kadi, du bist Herr in deinem Hause.</p>
-            <p>Ich kenne dich als ehrenwerten Mann:</p>
-            <p>Wie brach der Sturm an, der so laut getobt,</p>
-            <p>Daß bis zu meinem Ohr der Lärm gedrungen?</p>
+            <stage>tritt ein, von Gefolge umgeben. Er sieht <pb n="41"/> jugendlich aus und tritt in
+              die Mitte des Vordergrunds. Sein Gefolge und die vier Bewaffneten füllen den
+              Hintergrund. Auf der Fensterseite steht Abul mit Nureddins Dienern, auf der Seite des
+              Blumentisches der Kadi und seine Freunde. Die Klagefrauen und Männer von Bagdad zu
+              beiden Seiten verteilt.</stage>
+            <lg>
+              <l>Sprich, Kadi, du bist Herr in deinem Hause.</l>
+              <l>Ich kenne dich als ehrenwerten Mann:</l>
+              <l>Wie brach der Sturm an, der so laut getobt,</l>
+              <l>Daß bis zu meinem Ohr der Lärm gedrungen?</l>
+            </lg>
           </sp>
           <sp who="#kadi">
             <speaker>KADI.</speaker>
@@ -2512,9 +2246,7 @@
           </sp>
           <sp who="#kalif">
             <speaker>KALIF</speaker>
-            <stage>
-              <hi>zu Abul.</hi>
-            </stage>
+            <stage>zu Abul.</stage>
             <l>Ergreister Böswicht! Sprich! Verteid'ge dich!</l>
           </sp>
           <sp who="#abul">
@@ -2560,7 +2292,7 @@
               <pb n="42"/>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_alle">
             <speaker>CHOR.</speaker>
             <l>Weh! Mustapha!</l>
           </sp>
@@ -2573,29 +2305,21 @@
           </sp>
           <sp who="#kadi">
             <speaker>KADI</speaker>
-            <stage>
-              <hi>wendet sich zum Nebengemach und ruft hinein.</hi>
-            </stage>
+            <stage>wendet sich zum Nebengemach und ruft hinein.</stage>
             <lg>
               <l>Wo hab' ich doch den Schlüssel? He! Margiana!</l>
               <l>Bostana! Eilig, schließet auf die Kiste! Eilig!</l>
             </lg>
-            <stage>
-              <hi>Margiana und Bostana kommen aus dem Nebengemach. Auf Abuls Wink bringen die Diener
-                Nureddins die Kiste auf ihren Platz zurück.</hi>
-            </stage>
+            <stage>Margiana und Bostana kommen aus dem Nebengemach. Auf Abuls Wink bringen die
+              Diener Nureddins die Kiste auf ihren Platz zurück.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zehnter Auftritt</head>
-          <stage>
-            <hi>Die Vorigen. Margiana. Bostana.</hi>
-          </stage>
+          <stage>Die Vorigen. Margiana. Bostana.</stage>
           <sp who="#kadi">
             <speaker>KADI</speaker>
-            <stage>
-              <hi>zu Margiana.</hi>
-            </stage>
+            <stage>zu Margiana.</stage>
             <lg>
               <l>Zeig' deinen Schatz, mein Kind, daß glänzend er</l>
               <l>Die Wahrheit allen Augen offenbare.</l>
@@ -2603,23 +2327,18 @@
           </sp>
           <sp who="#margiana">
             <speaker>MARGIANA</speaker>
-            <stage>
-              <hi>zögernd.</hi>
-            </stage>
+            <stage>zögernd.</stage>
             <l>Mein Herr und Vater –</l>
           </sp>
           <sp who="#kadi">
             <speaker>KADI.</speaker>
             <l>Augenblicks gehorche!</l>
-            <stage>
-              <hi>Margiana gibt Bostana einen Wink; diese geht zur Kiste, um aufzuschließen.</hi>
-            </stage>
+            <stage>Margiana gibt Bostana einen Wink; diese geht zur Kiste, um
+              aufzuschließen.</stage>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_alle">
             <speaker>CHOR</speaker>
-            <stage>
-              <hi>leise.</hi>
-            </stage>
+            <stage>leise.</stage>
             <l>Wie wird sich's wenden? Wer hat recht von beiden?</l>
           </sp>
           <sp who="#kadi">
@@ -2628,34 +2347,29 @@
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>zieht den ohnmächtig gewordenen Nureddin aus der Kiste in die Höhe und lehnt ihn
-                an den Rand so daß er sichtbar bleibt.</hi>
-            </stage>
+            <stage>zieht den ohnmächtig gewordenen Nureddin aus der Kiste in die Höhe und lehnt ihn
+              an den Rand so daß er sichtbar bleibt.</stage>
             <lg>
               <l>Ja, sieh der Tochter Schatz,</l>
               <l>Den ihr dein Stahl stahl!</l>
             </lg>
           </sp>
-          <sp who="#alle">
+          <sp who="#chor_alle">
             <speaker>ALLE.</speaker>
             <l>Ha!!</l>
           </sp>
           <sp who="#kadi">
             <speaker>KADI</speaker>
-            <stage>
-              <hi>bleibt in der Stellung, die er eingenommen, als er Nureddin erblickte, wie vor
-                Schrecken versteinert stehen.</hi>
-            </stage>
-            <p>
-              <hi> Er spielt die ganze nächste Szene wie ein Träumender, der sich von einem Alpdruck
-                zu befreien sucht; für sich, Nureddin anstarrend.</hi>
-            </p>
-            <p>He, Mustapha! Freund Mustapha, wach auf!</p>
-            <p>Was schläfst du auch, was machst du auch für Streiche?</p>
-            <p>Hoch schön am Himmel geht der Sonne Lauf.</p>
-            <p>Aus Träumen raffe dich, der Alpdruck weiche!</p>
-            <p>O Mustapha! Freund Mustapha, wach auf!</p>
+            <stage>bleibt in der Stellung, die er eingenommen, als er Nureddin erblickte, wie vor
+              Schrecken versteinert stehen. Er spielt die ganze nächste Szene wie ein Träumender,
+              der sich von einem Alpdruck zu befreien sucht; für sich, Nureddin anstarrend.</stage>
+            <lg>
+              <l>He, Mustapha! Freund Mustapha, wach auf!</l>
+              <l>Was schläfst du auch, was machst du auch für Streiche?</l>
+              <l>Hoch schön am Himmel geht der Sonne Lauf.</l>
+              <l>Aus Träumen raffe dich, der Alpdruck weiche!</l>
+              <l>O Mustapha! Freund Mustapha, wach auf!</l>
+            </lg>
             <pb n="43"/>
           </sp>
           <sp who="#kalif">
@@ -2680,9 +2394,7 @@
           </sp>
           <sp who="#margiana #bostana">
             <speaker>MARGIANA UND BOSTANA</speaker>
-            <stage>
-              <hi>eilen zur Kiste und singen zu beiden Seiten derselben zu Nureddin.</hi>
-            </stage>
+            <stage>eilen zur Kiste und singen zu beiden Seiten derselben zu Nureddin.</stage>
             <lg>
               <l>O Nureddin, geliebter / verliebter Nureddin wach auf!</l>
               <l>Daß von dem Vater der Verdacht entweiche;</l>
@@ -2691,7 +2403,7 @@
               <l>O Nureddin, geliebter / verliebter Freund wach auf!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_alle">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Weh Mustapha!</l>
@@ -2704,10 +2416,8 @@
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>der klagend über Nureddin gebeugt lag, erhebt sich plötzlich; zum Kalifen
-                gewendet.</hi>
-            </stage>
+            <stage>der klagend über Nureddin gebeugt lag, erhebt sich plötzlich; zum Kalifen
+              gewendet.</stage>
             <lg>
               <l>Er lebt, er lebt! Beherrscher aller Gläub'gen!</l>
               <l>Noch glimmt ein Funke Lebens hier, ich fühl' es.</l>
@@ -2720,11 +2430,11 @@
               <l>Ob du, ein Arzt, ihm Leben wiedergibst.</l>
             </lg>
           </sp>
-          <sp who="#frauen">
+          <sp who="#klagefrauen">
             <speaker>FRAUEN.</speaker>
             <l>Ach, kein Barbier weckt Tote wieder auf!</l>
           </sp>
-          <sp who="#männer">
+          <sp who="#maenner">
             <speaker>MÄNNER.</speaker>
             <l>Weh Mustapha, die Rache steigt herauf!</l>
           </sp>
@@ -2734,10 +2444,8 @@
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>entfernt alle Umstehenden von der Kiste, umschreitet dieselbe feierlich und beugt
-                sich über Nureddin, ihm ins Ohr singend, indem er ihm auf die Schulter klopft.</hi>
-            </stage>
+            <stage>entfernt alle Umstehenden von der Kiste, umschreitet dieselbe feierlich und beugt
+              sich über Nureddin, ihm ins Ohr singend, indem er ihm auf die Schulter klopft.</stage>
             <lg>
               <l>»Laß dir zu Füßen wonnesam mich liegen,</l>
               <l>O Margiana!«</l>
@@ -2746,27 +2454,19 @@
           </sp>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>bleibt regungslos.</hi>
-            </stage>
+            <stage>bleibt regungslos.</stage>
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>zupft ihn an Nase und Ohr.</hi>
-            </stage>
+            <stage>zupft ihn an Nase und Ohr.</stage>
             <lg>
               <l>»An deine Hand die Lippe trunken schmiegen,</l>
               <l>O Margiana!</l>
             </lg>
-            <stage>
-              <hi>Er nimmt ein Riechfläschchen und hält es ihm unter die Nase.</hi>
-            </stage>
+            <stage>Er nimmt ein Riechfläschchen und hält es ihm unter die Nase.</stage>
             <l>Auf deinem Munde lachet holde Fülle süßer Labe.</l>
-            <stage>
-              <hi>Er nimmt die Rose, die Nureddin von Margiana bekommen und noch immer fest in
-                Händen hält, und läßt ihn daran riechen.</hi>
-            </stage>
+            <stage>Er nimmt die Rose, die Nureddin von Margiana bekommen und noch immer fest in
+              Händen hält, und läßt ihn daran riechen.</stage>
             <lg>
               <l>Laß seinen Hauch mich atmen still verschwiegen,</l>
               <l>O Margiana!«</l>
@@ -2774,13 +2474,9 @@
           </sp>
           <sp who="#nureddin">
             <speaker>NUREDDIN</speaker>
-            <stage>
-              <hi>regt sich und erwacht.</hi>
-            </stage>
+            <stage>regt sich und erwacht.</stage>
             <l>Wonnen der Liebe –</l>
-            <stage>
-              <hi>Er wird von Abul emporgerichtet, sein erster Blick fällt auf Margiana.</hi>
-            </stage>
+            <stage>Er wird von Abul emporgerichtet, sein erster Blick fällt auf Margiana.</stage>
           </sp>
           <sp who="#abul">
             <speaker>ABUL.</speaker>
@@ -2793,21 +2489,19 @@
             <speaker>NUREDDIN.</speaker>
             <l>O Margiana!</l>
           </sp>
-          <sp who="#frauen">
+          <sp who="#klagefrauen">
             <speaker>FRAUEN.</speaker>
             <l>Habt ihr gehört, er sprach!</l>
           </sp>
-          <sp who="#männer">
+          <sp who="#maenner">
             <speaker>MÄNNER.</speaker>
             <l>Ja, er sprach!</l>
           </sp>
-          <sp who="#alle">
+          <sp who="#chor_alle">
             <speaker>ALLE.</speaker>
             <l>Seht, er erhebt sich. Er lebt!</l>
-            <stage>
-              <hi>Während der folgenden Worte führt Abul Nureddin zu Margiana, zu deren Füßen er
-                niederkniet.</hi>
-            </stage>
+            <stage>Während der folgenden Worte führt Abul Nureddin zu Margiana, zu deren Füßen er
+              niederkniet.</stage>
           </sp>
           <sp who="#abul #nureddin">
             <speaker>ABUL UND NUREDDIN.</speaker>
@@ -2819,16 +2513,12 @@
           </sp>
           <sp who="#kadi">
             <speaker>KADI</speaker>
-            <stage>
-              <hi>mit wachsendem Erstaunen die Liebenden erblickend.</hi>
-            </stage>
+            <stage>mit wachsendem Erstaunen die Liebenden erblickend.</stage>
             <l>He, Mustapha! He, Mustapha, wach auf!</l>
           </sp>
           <sp who="#kalif">
             <speaker>KALIF</speaker>
-            <stage>
-              <hi>zum Kadi, auf die Liebenden zeigend.</hi>
-            </stage>
+            <stage>zum Kadi, auf die Liebenden zeigend.</stage>
             <lg>
               <l>Du sagtest es ja selbst und schwurst darauf:</l>
               <l>Es ist ihr Schatz! Laß ihn ihr eigen sein!</l>
@@ -2836,12 +2526,10 @@
           </sp>
           <sp who="#kadi">
             <speaker>KADI</speaker>
-            <stage>
-              <hi>die Hände der Liebenden zusammenfügend.</hi>
-            </stage>
+            <stage>die Hände der Liebenden zusammenfügend.</stage>
             <l>So nimm ihn hin – er sei auf ewig dein!</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_alle">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Heil sei der Schönen,</l>
@@ -2855,9 +2543,7 @@
           </sp>
           <sp who="#kalif">
             <speaker>KALIF</speaker>
-            <stage>
-              <hi>zu den Bewaffneten, auf Abul deutend.</hi>
-            </stage>
+            <stage>zu den Bewaffneten, auf Abul deutend.</stage>
             <l>Ergreift den Alten – und verwahrt ihn wohl!</l>
           </sp>
           <sp who="#abul">
@@ -2871,9 +2557,7 @@
               <l>Daß deine Künste du vor mir erprobest</l>
               <l>Und deines Lebens Märchen mir erzählest.</l>
             </lg>
-            <stage>
-              <hi>Zu den übrigen.</hi>
-            </stage>
+            <stage>Zu den übrigen.</stage>
             <lg>
               <l>Ihr aber, friedlich geht nun eures Wegs,</l>
               <l>Bis ich zur Hochzeit dieses Paars euch lade,</l>
@@ -2883,21 +2567,15 @@
           </sp>
           <sp who="#abul">
             <speaker>ABUL</speaker>
-            <stage>
-              <hi>zu dem Kalifen gewendet.</hi>
-            </stage>
+            <stage>zu dem Kalifen gewendet.</stage>
             <l>Heil diesem Hause, denn du tratst ein:</l>
-            <stage>
-              <hi>Sich verneigend.</hi>
-            </stage>
+            <stage>Sich verneigend.</stage>
             <l>Salamaleikum!</l>
           </sp>
-          <sp who="#soli #chor">
+          <sp who="#chor_alle">
             <speaker>SOLI UND CHOR</speaker>
-            <stage>
-              <hi>wiederholen jedesmal, und jedesmal wird der Gruß mit tiefer Verbeugung
-                begleitet.</hi>
-            </stage>
+            <stage>wiederholen jedesmal, und jedesmal wird der Gruß mit tiefer Verbeugung
+              begleitet.</stage>
             <l>Salamaleikum!</l>
           </sp>
           <sp who="#abul">
@@ -2919,14 +2597,12 @@
               <l>Salamaleikum!</l>
             </lg>
           </sp>
-          <sp who="#alle">
+          <sp who="#chor_alle">
             <speaker>ALLE.</speaker>
             <lg>
               <l>Salamaleikum!</l>
             </lg>
-            <stage>
-              <hi>Während der Kalif sich zum Abgehen wendet, fällt der Vorhang.</hi>
-            </stage>
+            <stage>Während der Kalif sich zum Abgehen wendet, fällt der Vorhang.</stage>
             <pb n="46"/>
           </sp>
         </div>
