@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Siegfrieds Tod</title>
+        <title type="main">Siegfrieds Tod</title>
+        <title type="sub">Ein Trauerspiel in fünf Akten</title>
         <author key="pnd:118547445">Hebbel, Friedrich</author>
       </titleStmt>
       <publicationStmt>
@@ -43,58 +44,60 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="brunhild">
-            <persName>BRUNHILD</persName>
+          <person xml:id="brunhild" sex="FEMALE">
+            <persName>Brunhild</persName>
           </person>
-          <person xml:id="frigga">
-            <persName>FRIGGA</persName>
+          <person xml:id="frigga" sex="FEMALE">
+            <persName>Frigga</persName>
           </person>
-          <person xml:id="siegfried">
-            <persName>SIEGFRIED</persName>
+          <person xml:id="siegfried" sex="MALE">
+            <persName>Siegfried</persName>
           </person>
-          <person xml:id="gunther">
-            <persName>GUNTHER</persName>
+          <person xml:id="gunther" sex="MALE">
+            <persName>Gunther</persName>
           </person>
-          <person xml:id="hagen">
-            <persName>HAGEN</persName>
+          <person xml:id="hagen" sex="MALE">
+            <persName>Hagen</persName>
           </person>
-          <person xml:id="volker">
-            <persName>VOLKER</persName>
+          <person xml:id="volker" sex="MALE">
+            <persName>Volker</persName>
           </person>
-          <person xml:id="giselher">
-            <persName>GISELHER</persName>
+          <person xml:id="giselher" sex="MALE">
+            <persName>Giselher</persName>
           </person>
-          <person xml:id="rumolt">
-            <persName>RUMOLT</persName>
+          <person xml:id="rumolt" sex="MALE">
+            <persName>Rumolt</persName>
           </person>
-          <person xml:id="gerenot">
-            <persName>GERENOT</persName>
+          <person xml:id="gerenot" sex="MALE">
+            <persName>Gerenot</persName>
           </person>
-          <person xml:id="ute">
-            <persName>UTE</persName>
+          <person xml:id="ute" sex="FEMALE">
+            <persName>Ute</persName>
           </person>
-          <person xml:id="kriemhild">
-            <persName>KRIEMHILD</persName>
+          <person xml:id="kriemhild" sex="FEMALE">
+            <persName>Kriemhild</persName>
           </person>
-          <person xml:id="der_kaplan">
-            <persName>DER KAPLAN</persName>
-            <persName xml:id="kaplan">KAPLAN</persName>
+          <person xml:id="kaplan" sex="MALE">
+            <persName>Der Kaplan</persName>
           </person>
-          <person xml:id="truchs">
-            <persName>TRUCHS</persName>
+          <person xml:id="truchs" sex="MALE">
+            <persName>Truchs</persName>
           </person>
-          <person xml:id="wulf">
-            <persName>WULF</persName>
+          <person xml:id="wulf" sex="MALE">
+            <persName>Wulf</persName>
           </person>
-          <person xml:id="dankwart">
-            <persName>DANKWART</persName>
+          <person xml:id="dankwart" sex="MALE">
+            <persName>Dankwart</persName>
           </person>
-          <person xml:id="kämmerer">
-            <persName>KÄMMERER</persName>
+          <person xml:id="kaemmerer" sex="MALE">
+            <persName>Kämmerer</persName>
           </person>
-          <person xml:id="antwort_von_draussen">
-            <persName>ANTWORT VON DRAUSSEN</persName>
+          <person xml:id="antwort_von_draussen" sex="UNKNOWN">
+            <persName>Antwort von draußen</persName>
           </person>
+          <personGrp xml:id="alle_sippen_bis_auf_giselher" sex="UNKNOWN">
+            <name>Alle Sippen bis auf Giselher</name>
+          </personGrp>
         </listPerson>
       </particDesc>
       <textClass>
@@ -107,6 +110,7 @@
       <listChange>
         <change when="2017-01-06">(dlina) file conversion from source</change>
         <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-27">(ff) formalities</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -118,8 +122,6 @@
         <head>Ein Trauerspiel in fünf Akten</head>
         <pb n="137"/>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head>Personen.</head>
@@ -129,8 +131,11 @@
           <castItem>Volker.</castItem>
           <castItem>Giselher.</castItem>
           <castItem>Gerenot.</castItem>
-          <castItem>Wulf,</castItem>
-          <castItem>Truchs, Recken.</castItem>
+          <castGroup>
+            <castItem>Wulf,</castItem>
+            <castItem>Truchs,</castItem>
+            <roleDesc>Recken.</roleDesc>
+          </castGroup>
           <castItem>Siegfried.</castItem>
           <castItem>Ute.</castItem>
           <castItem>Kriemhild.</castItem>
@@ -141,13 +146,14 @@
           <castItem>Recken, Volk, Mägde, Zwerge.</castItem>
         </castList>
       </div>
+    </front>
+    <body>
       <div type="act">
-        <head>1. Akt</head>
+        <head>Erster Akt</head>
+        <stage>Isenland, Brunhilds Burg. Früher Morgen.</stage>
         <div type="scene">
           <head>Erste Szene</head>
-          <stage>
-            <hi>Brunhild und Frigga kommen von entgegengesetzten Seiten.</hi>
-          </stage>
+          <stage>Brunhild und Frigga kommen von entgegengesetzten Seiten.</stage>
           <sp who="#brunhild">
             <speaker>BRUNHILD.</speaker>
             <lg>
@@ -477,9 +483,7 @@
           <sp who="#brunhild">
             <speaker>BRUNHILD.</speaker>
             <l>Ich fürchte nichts.</l>
-            <stage>
-              <hi>Man hört Trompeten.</hi>
-            </stage>
+            <stage>Man hört Trompeten.</stage>
           </sp>
           <sp who="#frigga">
             <speaker>FRIGGA.</speaker>
@@ -511,9 +515,7 @@
               <l>Vor mir und teilte sich nach links und rechts:</l>
               <l>Jetzt ist die Straße frei, doch nicht der Gruß.</l>
             </lg>
-            <stage>
-              <hi>Sie besteigt währenddem ihren Thron.</hi>
-            </stage>
+            <stage>Sie besteigt währenddem ihren Thron.</stage>
             <lg>
               <l>Nun stoßt die Pforten auf und laßt sie ein!</l>
               <l>Wer auch erscheinen mag: sein Kopf ist mein!</l>
@@ -522,15 +524,11 @@
         </div>
         <div type="scene">
           <head>Zweite Szene</head>
-          <stage>
-            <hi>Es geschieht; Siegfried, Gunther, Hagen und Volker treten ein.</hi>
-          </stage>
+          <stage>Es geschieht; Siegfried, Gunther, Hagen und Volker treten ein.</stage>
           <sp who="#brunhild">
             <speaker>BRUNHILD.</speaker>
             <l>Wer ists, der heute sterben will?</l>
-            <stage>
-              <hi>Zu Siegfried.</hi>
-            </stage>
+            <stage>Zu Siegfried.</stage>
             <l>Bist dus?</l>
           </sp>
           <sp who="#siegfried">
@@ -544,9 +542,7 @@
           </sp>
           <sp who="#brunhild">
             <speaker>BRUNHILD</speaker>
-            <stage>
-              <hi>wendet sich gegen Gunther.</hi>
-            </stage>
+            <stage>wendet sich gegen Gunther.</stage>
             <lg>
               <l>Also du?</l>
               <l>Und weißt du, was es gilt?</l>
@@ -577,9 +573,7 @@
               <l>Und mich dabei betrachten, wie ein Bild:</l>
               <l>Ich schwöre dirs, du fällst so gut, wie er.</l>
             </lg>
-            <stage>
-              <hi>Zu Gunther.</hi>
-            </stage>
+            <stage>Zu Gunther.</stage>
             <lg>
               <l>Dir aber rat ich, wenn du hören kannst:</l>
               <l>Laß dir von meinen Mägden doch die Recken</l>
@@ -694,9 +688,7 @@
           </sp>
           <sp who="#brunhild">
             <speaker>BRUNHILD</speaker>
-            <stage>
-              <hi>hoch aufgerichtet mit starren Augen.</hi>
-            </stage>
+            <stage>hoch aufgerichtet mit starren Augen.</stage>
             <lg>
               <l>Einst kommt der Morgen, wo ich, statt den Bären</l>
               <l>Zu jagen, oder auch die eingefrorne</l>
@@ -758,9 +750,7 @@
               <l>Und ungebleicht geblieben, und ich rufe:</l>
               <l>Dies ist das dritte, daß der Tod nicht kommt!</l>
             </lg>
-            <stage>
-              <hi>Sie sinkt zurück, die Mägde fangen sie auf.</hi>
-            </stage>
+            <stage>Sie sinkt zurück, die Mägde fangen sie auf.</stage>
           </sp>
           <sp who="#frigga">
             <speaker>FRIGGA.</speaker>
@@ -773,9 +763,7 @@
           </sp>
           <sp who="#brunhild">
             <speaker>BRUNHILD</speaker>
-            <stage>
-              <hi>richtet sich hoch wieder auf.</hi>
-            </stage>
+            <stage>richtet sich hoch wieder auf.</stage>
             <l>Ich sprach! Was wars?</l>
           </sp>
           <sp who="#frigga">
@@ -788,16 +776,12 @@
           </sp>
           <sp who="#brunhild">
             <speaker>BRUNHILD</speaker>
-            <stage>
-              <hi>zu den Recken.</hi>
-            </stage>
+            <stage>zu den Recken.</stage>
             <l>So kommt!</l>
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>zu Brunhild.</hi>
-            </stage>
+            <stage>zu Brunhild.</stage>
             <lg>
               <l>Du schwörst,</l>
               <l>Uns gleich zu folgen, wenn du unterliegst?</l>
@@ -805,9 +789,7 @@
           </sp>
           <sp who="#brunhild">
             <speaker>BRUNHILD</speaker>
-            <stage>
-              <hi>lacht.</hi>
-            </stage>
+            <stage>lacht.</stage>
             <l>Ich schwörs!</l>
           </sp>
           <sp who="#siegfried">
@@ -816,31 +798,24 @@
           </sp>
           <sp who="#brunhild">
             <speaker>BRUNHILD</speaker>
-            <stage>
-              <hi>zu Frigga im Abgehen.</hi>
-            </stage>
+            <stage>zu Frigga im Abgehen.</stage>
             <lg>
               <l>Du gehst in den Trophäensaal und schlägst</l>
               <l>Dort einen neuen Nagel ein!</l>
             </lg>
-            <stage>
-              <hi>Zu den Recken.</hi>
-            </stage>
+            <stage>Zu den Recken.</stage>
             <l>Wohlan!</l>
-            <stage>
-              <hi>Alle ab.</hi>
-            </stage>
+            <stage>Alle ab.</stage>
             <pb n="147"/>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>2. Akt</head>
+        <head>Zweiter Akt</head>
+        <stage>Worms. Schloßhof.</stage>
         <div type="scene">
           <head>Erste Szene</head>
-          <stage>
-            <hi>Rumolt und Giselher einander begegnend.</hi>
-          </stage>
+          <stage>Rumolt und Giselher einander begegnend.</stage>
           <sp who="#giselher">
             <speaker>GISELHER.</speaker>
             <lg>
@@ -883,9 +858,7 @@
               <l>Die nicht einmal des Hüters mehr bedurften:</l>
               <l>Koch zu, Gesell, an Gästen fehlts dir nicht!</l>
             </lg>
-            <stage>
-              <hi>Gerenot kommt.</hi>
-            </stage>
+            <stage>Gerenot kommt.</stage>
             <l>Da ist der Jäger!</l>
           </sp>
           <sp who="#gerenot">
@@ -905,9 +878,7 @@
               <l>Damit sies in der Ferne schon vernimmt,</l>
               <l>Wie sie empfangen werden soll!</l>
             </lg>
-            <stage>
-              <hi>Es wird geblasen.</hi>
-            </stage>
+            <stage>Es wird geblasen.</stage>
           </sp>
           <sp who="#gerenot">
             <speaker>GERENOT.</speaker>
@@ -919,9 +890,7 @@
           <head>Zweite Szene</head>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>tritt mit Gefolge auf.</hi>
-            </stage>
+            <stage>tritt mit Gefolge auf.</stage>
             <l>Da bin ich wieder!</l>
           </sp>
           <sp who="#giselher">
@@ -932,7 +901,7 @@
             <speaker>SIEGFRIED.</speaker>
             <lg>
               <l>Sei ruhig! Als sein Bote steh ich hier! –</l>
-              <l>Doch nicht, um <hi>dir</hi> die Meldung auszurichten!</l>
+              <l>Doch nicht, um <emph>dir</emph> die Meldung auszurichten!</l>
               <l>Sie geht an deine Mutter, und ich hoffe,</l>
               <l>Daß ich auch deine Schwester sehen darf.</l>
             </lg>
@@ -988,9 +957,7 @@
         </div>
         <div type="scene">
           <head>Dritte Szene</head>
-          <stage>
-            <hi>Ute und Kriemhild treten auf.</hi>
-          </stage>
+          <stage>Ute und Kriemhild treten auf.</stage>
           <sp who="#siegfried">
             <speaker>SIEGFRIED.</speaker>
             <l>Ich bitte dich!</l>
@@ -1015,9 +982,7 @@
               <l>Man nennt mich hier das Kind. So mag man sehen,</l>
               <l>Wie dieses Kind den Löwen führt!</l>
             </lg>
-            <stage>
-              <hi>Er führt Siegfried den Frauen zu.</hi>
-            </stage>
+            <stage>Er führt Siegfried den Frauen zu.</stage>
             <lg>
               <l>Der Held</l>
               <l>Aus Niederland!</l>
@@ -1152,9 +1117,7 @@
               <l>Dem hat dein Kommen schon genug gesagt!</l>
               <l>Doch helf ich ihm!</l>
             </lg>
-            <stage>
-              <hi>Er geht zu Rumolt.</hi>
-            </stage>
+            <stage>Er geht zu Rumolt.</stage>
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
@@ -1169,16 +1132,12 @@
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>nestelt an einer Spange und läßt dabei ihr Tuch fallen.</hi>
-            </stage>
+            <stage>nestelt an einer Spange und läßt dabei ihr Tuch fallen.</stage>
             <pb n="151"/>
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>hascht nach dem Tuch.</hi>
-            </stage>
+            <stage>hascht nach dem Tuch.</stage>
             <l>Und diese seis!</l>
           </sp>
           <sp who="#kriemhild">
@@ -1211,9 +1170,7 @@
           <sp who="#ute">
             <speaker>UTE.</speaker>
             <l>Doch nun erlaubt – es wird auch Zeit für uns!</l>
-            <stage>
-              <hi>Ab mit Kriemhild.</hi>
-            </stage>
+            <stage>Ab mit Kriemhild.</stage>
           </sp>
         </div>
         <div type="scene">
@@ -1229,11 +1186,9 @@
         </div>
         <div type="scene">
           <head>Fünfte Szene</head>
-          <sp who="#der_kaplan">
+          <sp who="#kaplan">
             <speaker>DER KAPLAN</speaker>
-            <stage>
-              <hi>tritt heran.</hi>
-            </stage>
+            <stage>tritt heran.</stage>
             <lg>
               <l>Verzeiht mir, edler Recke,</l>
               <l>Ist Brunhild denn getauft?</l>
@@ -1253,9 +1208,7 @@
           </sp>
           <sp who="#kaplan">
             <speaker>KAPLAN</speaker>
-            <stage>
-              <hi>tritt wieder zurück.</hi>
-            </stage>
+            <stage>tritt wieder zurück.</stage>
             <lg>
               <l>Man ehrts wohl so, wie hier,</l>
               <l>Wo man sichs neben einer Wodans-Eiche</l>
@@ -1271,10 +1224,8 @@
         </div>
         <div type="scene">
           <head>Sechste Szene</head>
-          <stage>
-            <hi>Fanfaren, Brunhild, Frigga, Gunther, Hagen, Volker. Gefolge. Kriemhild und Ute aus
-              der Burg ihnen entgegen.</hi>
-          </stage>
+          <stage>Fanfaren, Brunhild, Frigga, Gunther, Hagen, Volker. Gefolge. Kriemhild und Ute aus
+            der Burg ihnen entgegen.</stage>
           <sp who="#gunther">
             <speaker>GUNTHER.</speaker>
             <lg>
@@ -1285,9 +1236,7 @@
           </sp>
           <sp who="#volker">
             <speaker>VOLKER</speaker>
-            <stage>
-              <hi>zu Brunhild, während die Frauen sich entgegen schreiten.</hi>
-            </stage>
+            <stage>zu Brunhild, während die Frauen sich entgegen schreiten.</stage>
             <l>Sind die kein Gewinn?</l>
           </sp>
           <sp who="#hagen">
@@ -1363,9 +1312,7 @@
           </sp>
           <sp who="#ute">
             <speaker>UTE</speaker>
-            <stage>
-              <hi>zu Kriemhild und Brunhild.</hi>
-            </stage>
+            <stage>zu Kriemhild und Brunhild.</stage>
             <l>So liebt euch denn</l>
             <pb n="153"/>
             <lg>
@@ -1460,9 +1407,7 @@
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
             <l>So weißt du nichts vom Duft!</l>
-            <stage>
-              <hi>Sie pflückt ihr ein Veilchen.</hi>
-            </stage>
+            <stage>Sie pflückt ihr ein Veilchen.</stage>
           </sp>
           <sp who="#brunhild">
             <speaker>BRUNHILD.</speaker>
@@ -1501,9 +1446,7 @@
               <l>Zu fühlen, immer mutiger, und endlich,</l>
               <l>Wenn du des Siegs gewisser bist, als je –</l>
             </lg>
-            <stage>
-              <hi>In plötzlicher Wendung.</hi>
-            </stage>
+            <stage>In plötzlicher Wendung.</stage>
             <lg>
               <l>Frigga, ich frag dich noch einmal! Was wars,</l>
               <l>Was sah und sprach ich vor dem letzten Kampf?</l>
@@ -1590,9 +1533,7 @@
           </sp>
           <sp who="#frigga">
             <speaker>FRIGGA</speaker>
-            <stage>
-              <hi>zu Hagen.</hi>
-            </stage>
+            <stage>zu Hagen.</stage>
             <l>Nicht wahr?</l>
           </sp>
           <sp who="#hagen">
@@ -1606,9 +1547,7 @@
               <l>Ich werde schneller wachsen, wie ein andres,</l>
               <l>Doch bin ich jetzt nicht mehr.</l>
             </lg>
-            <stage>
-              <hi>Zu Frigga.</hi>
-            </stage>
+            <stage>Zu Frigga.</stage>
             <l>Das also wars?</l>
           </sp>
           <sp who="#frigga">
@@ -1621,9 +1560,7 @@
           </sp>
           <sp who="#ute">
             <speaker>UTE</speaker>
-            <stage>
-              <hi>zu dem heran getretenen Gunther.</hi>
-            </stage>
+            <stage>zu dem heran getretenen Gunther.</stage>
             <lg>
               <l>Mein Sohn, wenn sie zu herb ist gegen dich,</l>
               <l>Laß ihr nur Zeit! Bei dem Geschrei der Krähen</l>
@@ -1642,13 +1579,9 @@
               <l><pb n="156"/> Sie ist die deine durch das Recht der Waffen,</l>
               <l>So greife zu!</l>
             </lg>
-            <stage>
-              <hi>Ruft.</hi>
-            </stage>
+            <stage>Ruft.</stage>
             <l>Kaplan!</l>
-            <stage>
-              <hi>Schreitet voran.</hi>
-            </stage>
+            <stage>Schreitet voran.</stage>
           </sp>
           <sp who="#gunther">
             <speaker>GUNTHER.</speaker>
@@ -1668,9 +1601,7 @@
           </sp>
           <sp who="#gunther">
             <speaker>GUNTHER</speaker>
-            <stage>
-              <hi>zu Ute.</hi>
-            </stage>
+            <stage>zu Ute.</stage>
             <l>Ich habe keinen Widerspruch zu fürchten?</l>
           </sp>
           <sp who="#ute">
@@ -1722,9 +1653,7 @@
           </sp>
           <sp who="#brunhild">
             <speaker>BRUNHILD</speaker>
-            <stage>
-              <hi>tritt zwischen Kriemhild und Siegfried.</hi>
-            </stage>
+            <stage>tritt zwischen Kriemhild und Siegfried.</stage>
             <l>Kriemhild!</l>
           </sp>
           <sp who="#kriemhild">
@@ -1744,9 +1673,7 @@
           </sp>
           <sp who="#brunhild">
             <speaker>BRUNHILD</speaker>
-            <stage>
-              <hi>zu Siegfried.</hi>
-            </stage>
+            <stage>zu Siegfried.</stage>
             <lg>
               <l>Wie darfst dus wagen,</l>
               <l>Die Hand nach ihr, nach einer Königstochter,</l>
@@ -1764,9 +1691,7 @@
               <l>Kamst du nicht als Führer</l>
               <l>Und gingst als Bote?</l>
             </lg>
-            <stage>
-              <hi>Zu Gunther.</hi>
-            </stage>
+            <stage>Zu Gunther.</stage>
             <lg>
               <l>Und wie kannst dus dulden</l>
               <l>Und unterstützen, daß ers tut?</l>
@@ -1842,9 +1767,7 @@
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN</speaker>
-            <stage>
-              <hi>zu Frigga.</hi>
-            </stage>
+            <stage>zu Frigga.</stage>
             <l>Beschwichtge sie!</l>
           </sp>
           <sp who="#frigga">
@@ -1858,17 +1781,13 @@
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>Kriemhild bei der Hand fassend.</hi>
-            </stage>
+            <stage>Kriemhild bei der Hand fassend.</stage>
             <lg>
               <l>Daß ich mich gleich als König hier erweise,</l>
               <l>So schenk ich dir den Nibelungenhort.</l>
               <l>Und nun zu meinem Recht und deiner Pflicht.</l>
             </lg>
-            <stage>
-              <hi>Er küßt sie.</hi>
-            </stage>
+            <stage>Er küßt sie.</stage>
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN.</speaker>
@@ -1889,16 +1808,12 @@
           <sp who="#hagen">
             <speaker>HAGEN.</speaker>
             <l>Warum nicht? Holla, blast die Hochzeit ein!</l>
-            <stage>
-              <hi>Rauschende Musik. Alle ab.</hi>
-            </stage>
+            <stage>Rauschende Musik. Alle ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Siebente Szene</head>
-          <stage>
-            <hi>Halle. Truchs und Wulf treten auf. Zwerge tragen Schätze über die Bühne.</hi>
-          </stage>
+          <stage>Halle. Truchs und Wulf treten auf. Zwerge tragen Schätze über die Bühne.</stage>
           <sp who="#truchs">
             <speaker>TRUCHS.</speaker>
             <l>Ich steh zu Kriemhild.</l>
@@ -1941,9 +1856,7 @@
           <sp who="#wulf">
             <speaker>WULF.</speaker>
             <l>Wer leugnet das? Doch mancher liebt die Nacht!</l>
-            <stage>
-              <hi>Zeigt auf die Zwerge.</hi>
-            </stage>
+            <stage>Zeigt auf die Zwerge.</stage>
             <l>Was schleppen die?</l>
             <pb n="159"/>
           </sp>
@@ -1985,9 +1898,7 @@
           </sp>
           <sp who="#wulf">
             <speaker>WULF</speaker>
-            <stage>
-              <hi>zeigt auf die Schätze.</hi>
-            </stage>
+            <stage>zeigt auf die Schätze.</stage>
             <l>Wer das besitzt, braucht alle beide nicht.</l>
           </sp>
           <sp who="#truchs">
@@ -2025,9 +1936,7 @@
               <l>Das will was heißen! Denn er ist im Grunde</l>
               <l>So sanft, als tapfer.</l>
             </lg>
-            <stage>
-              <hi>Es wird geblasen.</hi>
-            </stage>
+            <stage>Es wird geblasen.</stage>
             <lg>
               <l>Horch, das gilt auch uns!</l>
               <l>Sie sammeln sich. Hie Brunhild!</l>
@@ -2036,18 +1945,14 @@
           <sp who="#truchs">
             <speaker>TRUCHS.</speaker>
             <l>Kriemhild hie!</l>
-            <stage>
-              <hi>Ab. Andere Recken, die sich inzwischen gesammelt haben, schließen sich an und
-                wiederholen den Ruf. Es wird nach und nach dunkel.</hi>
-            </stage>
+            <stage>Ab. Andere Recken, die sich inzwischen gesammelt haben, schließen sich an und
+              wiederholen den Ruf. Es wird nach und nach dunkel.</stage>
             <pb n="160"/>
           </sp>
         </div>
         <div type="scene">
           <head>Achte Szene</head>
-          <stage>
-            <hi>Hagen und Siegfried treten auf.</hi>
-          </stage>
+          <stage>Hagen und Siegfried treten auf.</stage>
           <sp who="#siegfried">
             <speaker>SIEGFRIED.</speaker>
             <lg>
@@ -2101,9 +2006,7 @@
           <sp who="#hagen">
             <speaker>HAGEN.</speaker>
             <l>Daß du sie bändgen mußt!</l>
-            <stage>
-              <hi>Gunther tritt herzu.</hi>
-            </stage>
+            <stage>Gunther tritt herzu.</stage>
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED.</speaker>
@@ -2165,9 +2068,7 @@
               <l>So gibt es einen langen Abschied, Freund!</l>
               <l>Die Zeit reicht hin für dich und also – Topp!</l>
             </lg>
-            <stage>
-              <hi>Da Siegfried die Hand weigert.</hi>
-            </stage>
+            <stage>Da Siegfried die Hand weigert.</stage>
             <lg>
               <l>Brunhild ist jetzt ein angeschoßnes Wild,</l>
               <l>Wer wird es mit dem Pfeil so laufen lassen,</l>
@@ -2239,19 +2140,16 @@
               <l>Und haben, hoff ich, keine einzge Zunge,</l>
               <l>Der vierte in unsrem Bunde sei der Tod!</l>
             </lg>
-            <stage>
-              <hi>Alle ab.</hi>
-            </stage>
+            <stage>Alle ab.</stage>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>3. Akt</head>
+        <head>Dritter Akt</head>
+        <stage>Morgen. Schloßhof. An der einen Seite der Dom.</stage>
         <div type="scene">
           <head>Erste Szene</head>
-          <stage>
-            <hi>Rumolt und Dankwart treten gerüstet auf.</hi>
-          </stage>
+          <stage>Rumolt und Dankwart treten gerüstet auf.</stage>
           <sp who="#rumolt">
             <speaker>RUMOLT.</speaker>
             <l>Drei Tote!</l>
@@ -2289,14 +2187,10 @@
         </div>
         <div type="scene">
           <head>Zweite Szene</head>
-          <stage>
-            <hi>Musik. Großer Zug. Wulf und Truchs unter den Recken.</hi>
-          </stage>
+          <stage>Musik. Großer Zug. Wulf und Truchs unter den Recken.</stage>
           <sp who="#rumolt">
             <speaker>RUMOLT</speaker>
-            <stage>
-              <hi>indem er sich mit Dankwart anschließt.</hi>
-            </stage>
+            <stage>indem er sich mit Dankwart anschließt.</stage>
             <l>Wird Hagen jetzt zufrieden sein?</l>
           </sp>
           <sp who="#dankwart">
@@ -2308,21 +2202,15 @@
               <l>Braucht andre Morgenlieder, als die Lerche</l>
               <l>Sie hören läßt, die in der Linde pfeift!</l>
             </lg>
-            <stage>
-              <hi>Gehen vorüber.</hi>
-            </stage>
+            <stage>Gehen vorüber.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritte Szene</head>
-          <stage>
-            <hi>Siegfried erscheint mit Kriemhild.</hi>
-          </stage>
+          <stage>Siegfried erscheint mit Kriemhild.</stage>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>auf ihr Gewand deutend.</hi>
-            </stage>
+            <stage>auf ihr Gewand deutend.</stage>
             <l>Nun? Dankst dus mir?</l>
           </sp>
           <sp who="#siegfried">
@@ -2396,16 +2284,12 @@
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>will sie umarmen.</hi>
-            </stage>
+            <stage>will sie umarmen.</stage>
             <l>Darf ich so?</l>
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>weicht zurück.</hi>
-            </stage>
+            <stage>weicht zurück.</stage>
             <l>Glaubst du, ich fordre auf?</l>
           </sp>
           <sp who="#siegfried">
@@ -2431,7 +2315,7 @@
               <l>Mir wiederholst? Mein Blut ist gar zu dumm,</l>
               <l>Es steigt und fällt zu rasch, und meine Mutter</l>
               <l>Vergleicht mich oft mit einem Rosenstock,</l>
-              <l><pb n="165"/> Der Rot und Weiß auf <hi>einem</hi> Stengel trägt.</l>
+              <l><pb n="165"/> Der Rot und Weiß auf <emph>einem</emph> Stengel trägt.</l>
               <l>Sonst hättst du nichts von alledem erfahren,</l>
               <l>Doch fühlt ichs wohl, wie meine Wangen brannten,</l>
               <l>Als mich mein Bruder gestern morgen neckte,</l>
@@ -2531,9 +2415,7 @@
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>nimmt den Gürtel ab.</hi>
-            </stage>
+            <stage>nimmt den Gürtel ab.</stage>
             <lg>
               <l><pb n="166"/> Dann mach der goldnen Borte wieder Platz,</l>
               <l>Die du bedeckst! Ich war schon ganz geschmückt</l>
@@ -2564,9 +2446,7 @@
               <l>Gelang dir, wie der erste, und ich habe</l>
               <l>Zwiefache Müh!</l>
             </lg>
-            <stage>
-              <hi>Sie will den Gürtel wieder umschnallen.</hi>
-            </stage>
+            <stage>Sie will den Gürtel wieder umschnallen.</stage>
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED.</speaker>
@@ -2578,9 +2458,7 @@
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Sie suchte mir die Hände</l>
               <l>Zu binden.</l>
@@ -2592,9 +2470,7 @@
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Da ward ich wütend</l>
               <l>Und brauchte meine Kraft.</l>
@@ -2606,9 +2482,7 @@
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <l>Ich riß ihr etwas weg!</l>
           </sp>
           <sp who="#kriemhild">
@@ -2617,9 +2491,7 @@
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Das pfropft ich, weil sie wieder darnach griff,</l>
               <l>Mir in den Busen, und – – Gib her, gib her,</l>
@@ -2669,16 +2541,12 @@
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <l>Verflucht! Ich eilte mich zu sehr!</l>
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>bedeckt sich das Gesicht.</hi>
-            </stage>
+            <stage>bedeckt sich das Gesicht.</stage>
             <lg>
               <l>Du schwurst mir etwas! Warum tatst du das?</l>
               <l>Ich hatt es nicht verlangt.</l>
@@ -2693,9 +2561,7 @@
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>hält den Gürtel in die Höhe.</hi>
-            </stage>
+            <stage>hält den Gürtel in die Höhe.</stage>
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED.</speaker>
@@ -2723,9 +2589,7 @@
               <l>Nicht doch noch besser kleidet, als die Lüge,</l>
               <l>Womit er ihn bedecken will!</l>
             </lg>
-            <stage>
-              <hi>Gunther und Brunhild treten auf.</hi>
-            </stage>
+            <stage>Gunther und Brunhild treten auf.</stage>
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED.</speaker>
@@ -2752,17 +2616,13 @@
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>indem sie den Gürtel verbirgt.</hi>
-            </stage>
+            <stage>indem sie den Gürtel verbirgt.</stage>
             <l>Sie kennt ihn also wirklich?</l>
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED.</speaker>
             <l>Hör mich an!</l>
-            <stage>
-              <hi>Beide folgen dem Zuge.</hi>
-            </stage>
+            <stage>Beide folgen dem Zuge.</stage>
           </sp>
         </div>
         <div type="scene">
@@ -2975,16 +2835,12 @@
               <l>Heraus, damit er nackt und bloß erscheint,</l>
               <l>Dann leb er hundert Jahre oder mehr.</l>
             </lg>
-            <stage>
-              <hi>Beide ab.</hi>
-            </stage>
+            <stage>Beide ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfte Szene</head>
-          <stage>
-            <hi>Frigga und Ute kommen.</hi>
-          </stage>
+          <stage>Frigga und Ute kommen.</stage>
           <sp who="#ute">
             <speaker>UTE.</speaker>
             <lg>
@@ -3026,9 +2882,7 @@
           </sp>
           <sp who="#ute">
             <speaker>UTE</speaker>
-            <stage>
-              <hi>indem sie wieder in die Burg geht.</hi>
-            </stage>
+            <stage>indem sie wieder in die Burg geht.</stage>
             <l>Tu nur das deinige!</l>
           </sp>
           <sp who="#frigga">
@@ -3044,10 +2898,8 @@
         </div>
         <div type="scene">
           <head>Sechste Szene</head>
-          <stage>
-            <hi>Kriemhild und Brunhild kommen Hand in Hand, es sammeln sich viele Recken und
-              Volk.</hi>
-          </stage>
+          <stage>Kriemhild und Brunhild kommen Hand in Hand, es sammeln sich viele Recken und
+            Volk.</stage>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
             <lg>
@@ -3163,7 +3015,7 @@
             <lg>
               <l>Nein, denn er selbst ist das Gewicht der Welt,</l>
               <l>Und wie das Gold der Dinge Preis bestimmt,</l>
-              <l>So <hi>er</hi> den Wert der Recken und der Helden!</l>
+              <l>So <emph>er</emph> den Wert der Recken und der Helden!</l>
               <l>Du mußt nicht widersprechen, liebes Kind,</l>
               <l>Ich will dafür geduldig auf dich hören,</l>
               <l>Wenn du mir zeigst, wie man die Nadel braucht.</l>
@@ -3191,9 +3043,7 @@
               <l>So fangen wir beim Sticken an, ich habe</l>
               <l>Ein Muster bei mir!</l>
             </lg>
-            <stage>
-              <hi>Sie will den Gürtel hervorziehen.</hi>
-            </stage>
+            <stage>Sie will den Gürtel hervorziehen.</stage>
             <l>Nein, ich irre mich!</l>
           </sp>
           <sp who="#brunhild">
@@ -3241,9 +3091,7 @@
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>lacht.</hi>
-            </stage>
+            <stage>lacht.</stage>
           </sp>
           <sp who="#brunhild">
             <speaker>BRUNHILD.</speaker>
@@ -3352,9 +3200,7 @@
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>zieht den Gürtel hervor.</hi>
-            </stage>
+            <stage>zieht den Gürtel hervor.</stage>
             <l>Kennst du den Gürtel?</l>
           </sp>
           <sp who="#brunhild">
@@ -3404,13 +3250,9 @@
               <l>Nun setz ihn noch herab! Gestattest du</l>
               <l>Mir jetzt, daß ich den Dom vor dir betrete?</l>
             </lg>
-            <stage>
-              <hi>Zu ihren Frauen.</hi>
-            </stage>
+            <stage>Zu ihren Frauen.</stage>
             <l>Folgt mir! Ich muß ihr zeigen, was ich darf!</l>
-            <stage>
-              <hi>Ab in den Dom.</hi>
-            </stage>
+            <stage>Ab in den Dom.</stage>
             <pb n="175"/>
           </sp>
         </div>
@@ -3467,9 +3309,7 @@
           </sp>
           <sp who="#brunhild">
             <speaker>BRUNHILD</speaker>
-            <stage>
-              <hi>ohne auf sie zu hören.</hi>
-            </stage>
+            <stage>ohne auf sie zu hören.</stage>
             <lg>
               <l>Daher die stolze Ruhe,</l>
               <l>Womit er mich betrachtete.</l>
@@ -3506,26 +3346,20 @@
               <l>So sollst du viele Jahre dafür weinen,</l>
               <l>Ich will – – Was red ich! Ich bin schwach, wie sie.</l>
             </lg>
-            <stage>
-              <hi>Stürzt Frigga an die Brust.</hi>
-            </stage>
+            <stage>Stürzt Frigga an die Brust.</stage>
             <pb n="176"/>
           </sp>
         </div>
         <div type="scene">
           <head>Achte Szene</head>
-          <stage>
-            <hi>Gunther, Hagen, Dankwart, Rumolt, Gerenot, Giselher und Siegfried kommen.</hi>
-          </stage>
+          <stage>Gunther, Hagen, Dankwart, Rumolt, Gerenot, Giselher und Siegfried kommen.</stage>
           <sp who="#hagen">
             <speaker>HAGEN.</speaker>
             <l>Was gibt es hier?</l>
           </sp>
           <sp who="#brunhild">
             <speaker>BRUNHILD</speaker>
-            <stage>
-              <hi>richtet sich hoch auf.</hi>
-            </stage>
+            <stage>richtet sich hoch auf.</stage>
             <l>Bin ich ein Kebsweib, König?</l>
           </sp>
           <sp who="#gunther">
@@ -3538,9 +3372,7 @@
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN</speaker>
-            <stage>
-              <hi>zu Frigga.</hi>
-            </stage>
+            <stage>zu Frigga.</stage>
             <l>Was ging hier vor?</l>
           </sp>
           <sp who="#frigga">
@@ -3553,22 +3385,16 @@
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN</speaker>
-            <stage>
-              <hi>zu Gunther.</hi>
-            </stage>
+            <stage>zu Gunther.</stage>
             <l>Er hat geschwatzt!</l>
-            <stage>
-              <hi>Er redet heimlich mit ihm.</hi>
-            </stage>
+            <stage>Er redet heimlich mit ihm.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Neunte Szene</head>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>die währenddem aus dem Dom getreten ist.</hi>
-            </stage>
+            <stage>die währenddem aus dem Dom getreten ist.</stage>
             <lg>
               <l>Vergib mir, mein Gemahl! Ich tat nicht recht,</l>
               <l>Doch wenn du wüßtest, wie sie dich geschmäht –</l>
@@ -3576,16 +3402,12 @@
           </sp>
           <sp who="#gunther">
             <speaker>GUNTHER</speaker>
-            <stage>
-              <hi>zu Siegfried.</hi>
-            </stage>
+            <stage>zu Siegfried.</stage>
             <l>Hast du dich je gerühmt?</l>
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>legt die Hand auf Kriemhilds Haupt.</hi>
-            </stage>
+            <stage>legt die Hand auf Kriemhilds Haupt.</stage>
             <lg>
               <l>Bei ihrem Leben,</l>
               <l>Ich tat es nicht.</l>
@@ -3621,9 +3443,7 @@
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>zu Brunhild.</hi>
-            </stage>
+            <stage>zu Brunhild.</stage>
             <lg>
               <l>Wenn du bedenkst, wie schwer du mich gereizt,</l>
               <l>So wirst auch du –</l>
@@ -3632,9 +3452,7 @@
           </sp>
           <sp who="#brunhild">
             <speaker>BRUNHILD</speaker>
-            <stage>
-              <hi>wendet sich.</hi>
-            </stage>
+            <stage>wendet sich.</stage>
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
@@ -3654,13 +3472,9 @@
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>indem er Kriemhild abführt.</hi>
-            </stage>
+            <stage>indem er Kriemhild abführt.</stage>
             <l>Hier wurde nicht geschwatzt, ihr werdet sehn!</l>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
         <div type="scene">
@@ -3683,9 +3497,7 @@
               <l>Und weint die heißen Tränen, welche ihr</l>
               <l>Der Schimpf entpreßt!</l>
             </lg>
-            <stage>
-              <hi>Zu Brunhild.</hi>
-            </stage>
+            <stage>Zu Brunhild.</stage>
             <lg>
               <l>Du edles Heldenbild,</l>
               <l>Du einzges, dem auch ich mich willig beuge:</l>
@@ -3698,9 +3510,7 @@
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN</speaker>
-            <stage>
-              <hi>zu Brunhild.</hi>
-            </stage>
+            <stage>zu Brunhild.</stage>
             <lg>
               <l>Der Mann muß sterben, wenn du selbst</l>
               <l>Nicht zwischen ihn und deinen Rächer trittst.</l>
@@ -3744,17 +3554,13 @@
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN</speaker>
-            <stage>
-              <hi>zu Gunther.</hi>
-            </stage>
+            <stage>zu Gunther.</stage>
             <l>Du schweigst! Wohlan! Das übrige ist mein!</l>
           </sp>
           <sp who="#giselher">
             <speaker>GISELHER.</speaker>
             <l>Ich scheide mich von eurem Blutrat ab!</l>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
         <div type="scene">
@@ -3795,19 +3601,16 @@
               <l>Das ist noch mehr, als Mord,</l>
               <l>Und dafür will ich Rache! Rache, Rache!</l>
             </lg>
-            <stage>
-              <hi>Alle ab.</hi>
-            </stage>
+            <stage>Alle ab.</stage>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>4. Akt</head>
+        <head>Vierter Akt</head>
+        <stage>Worms.</stage>
         <div type="scene">
           <head>Erste Szene</head>
-          <stage>
-            <hi>Halle. Gunther mit seinen Recken. Hagen trägt einen Wurfspieß.</hi>
-          </stage>
+          <stage>Halle. Gunther mit seinen Recken. Hagen trägt einen Wurfspieß.</stage>
           <sp who="#hagen">
             <speaker>HAGEN.</speaker>
             <lg>
@@ -3837,9 +3640,7 @@
           <head>Zweite Szene</head>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>tritt auf.</hi>
-            </stage>
+            <stage>tritt auf.</stage>
             <lg>
               <l>Ihr Recken, hört ihr nicht</l>
               <l>Die Bracken heulen und den jüngsten Jäger</l>
@@ -4026,9 +3827,7 @@
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>zu Hagen.</hi>
-            </stage>
+            <stage>zu Hagen.</stage>
             <lg>
               <l>Kennst du den Treubruch? Den Verrat?</l>
               <l>Schau ihm ins Angesicht und lächle noch.</l>
@@ -4049,16 +3848,12 @@
           </sp>
           <sp who="#gunther">
             <speaker>GUNTHER</speaker>
-            <stage>
-              <hi>zu Hagen.</hi>
-            </stage>
+            <stage>zu Hagen.</stage>
             <l>Was sagst du dazu?</l>
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN</speaker>
-            <stage>
-              <hi>zu Gunther.</hi>
-            </stage>
+            <stage>zu Gunther.</stage>
             <lg>
               <l>Dieser edle Zorn</l>
               <l>Macht mich so mutig, unsern Freund zu fragen,</l>
@@ -4082,9 +3877,7 @@
               <l>Und bellen, wenn ich komme oder geh,</l>
               <l>Da sie nun einmal Hundeseelen sind!</l>
             </lg>
-            <stage>
-              <hi>Eilt ab.</hi>
-            </stage>
+            <stage>Eilt ab.</stage>
           </sp>
         </div>
         <div type="scene">
@@ -4198,18 +3991,14 @@
               <l>Die Stelle decken, wo er sterblich ist,</l>
               <l>Doch immer müßt ihr wissen, wo sie sitzt.</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Vierte Szene</head>
           <sp who="#giselher">
             <speaker>GISELHER</speaker>
-            <stage>
-              <hi>zu Gunther.</hi>
-            </stage>
+            <stage>zu Gunther.</stage>
             <lg>
               <l>Du bist von selbst zu Edelmut und Treue</l>
               <l>Zurück gekehrt, sonst sagt ich: dieses Spiel</l>
@@ -4298,9 +4087,7 @@
           <sp who="#gunther">
             <speaker>GUNTHER.</speaker>
             <l>Ich geh einmal zu ihr.</l>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
         <div type="scene">
@@ -4311,16 +4098,12 @@
               <l>Dort kommt Kriemhild mit Hagen. Ganz verstört,</l>
               <l>Wie er sichs dachte. Gehn wir auch!</l>
             </lg>
-            <stage>
-              <hi>Alle ab.</hi>
-            </stage>
+            <stage>Alle ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Sechste Szene</head>
-          <stage>
-            <hi>Hagen und Kriemhild treten auf.</hi>
-          </stage>
+          <stage>Hagen und Kriemhild treten auf.</stage>
           <sp who="#hagen">
             <speaker>HAGEN.</speaker>
             <lg>
@@ -4577,16 +4360,12 @@
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>will ihn umarmen.</hi>
-            </stage>
+            <stage>will ihn umarmen.</stage>
             <l>Dich muß ich –</l>
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN</speaker>
-            <stage>
-              <hi>wehrt ab.</hi>
-            </stage>
+            <stage>wehrt ab.</stage>
             <lg>
               <l>Laß. Doch schwör ichs, daß ichs täte.</l>
               <l>Nur setze ich hinzu: seit kurzem erst!</l>
@@ -4713,18 +4492,14 @@
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
             <l>Ich werd es tun!</l>
-            <stage>
-              <hi>Schreitet Ute und dem Kaplan entgegen.</hi>
-            </stage>
+            <stage>Schreitet Ute und dem Kaplan entgegen.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Siebente Szene</head>
           <sp who="#hagen">
             <speaker>HAGEN</speaker>
-            <stage>
-              <hi>ihr nach.</hi>
-            </stage>
+            <stage>ihr nach.</stage>
             <lg>
               <l>Nun ist dein Held nur noch ein Wild für mich!</l>
               <l>Ja, hätt er Strich gehalten, wär er sicher,</l>
@@ -4734,16 +4509,12 @@
               <l>So muß man sich vor Heimlichkeiten hüten,</l>
               <l>Denn schon das Eingeweide schwatzt sie aus!</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Achte Szene</head>
-          <stage>
-            <hi>Ute und der Kaplan treten auf.</hi>
-          </stage>
+          <stage>Ute und der Kaplan treten auf.</stage>
           <sp who="#kaplan">
             <speaker>KAPLAN.</speaker>
             <lg>
@@ -4776,9 +4547,7 @@
           </sp>
           <sp who="#ute">
             <speaker>UTE</speaker>
-            <stage>
-              <hi>zu Kriemhild, die sich hinzugesellt hat.</hi>
-            </stage>
+            <stage>zu Kriemhild, die sich hinzugesellt hat.</stage>
             <l>Merk auf, Kriemhild!</l>
           </sp>
           <sp who="#kriemhild">
@@ -4828,9 +4597,7 @@
               <l>Das mir beschieden wird an seiner Seite,</l>
               <l>Erbau ich einem Heilgen den Altar.</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
           <sp who="#kaplan">
             <speaker>KAPLAN.</speaker>
@@ -4862,16 +4629,12 @@
               <l>Den Frieden, welcher ganz von hier entwich,</l>
               <l>Zurück zu führen!</l>
             </lg>
-            <stage>
-              <hi>Beide ab.</hi>
-            </stage>
+            <stage>Beide ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Neunte Szene</head>
-          <stage>
-            <hi>Gunther tritt mit Hagen und den andern auf.</hi>
-          </stage>
+          <stage>Gunther tritt mit Hagen und den andern auf.</stage>
           <sp who="#gunther">
             <speaker>GUNTHER.</speaker>
             <lg>
@@ -4950,9 +4713,7 @@
               <l>War dazu da, den Lindwurm zu erschlagen</l>
               <l>Und dann den Weg zu gehn, den dieser ging.</l>
             </lg>
-            <stage>
-              <hi>Man hört Tumult.</hi>
-            </stage>
+            <stage>Man hört Tumult.</stage>
           </sp>
           <sp who="#gunther">
             <speaker>GUNTHER.</speaker>
@@ -4969,9 +4730,7 @@
         </div>
         <div type="scene">
           <head>Zehnte Szene</head>
-          <stage>
-            <hi>Siegfried kommt; als Hagen ihn bemerkt.</hi>
-          </stage>
+          <stage>Siegfried kommt; als Hagen ihn bemerkt.</stage>
           <sp who="#hagen">
             <speaker>HAGEN.</speaker>
             <lg>
@@ -4980,20 +4739,14 @@
               <l>Gewiß, wie ich. Da kommt er eben her.</l>
               <l>Nun sprich, du magst entscheiden!</l>
             </lg>
-            <stage>
-              <hi>Als Dankwart auftritt.</hi>
-            </stage>
+            <stage>Als Dankwart auftritt.</stage>
             <lg>
               <l>Freilich ändert</l>
               <l>Dein Wort nicht mehr, die Antwort ist gegeben,</l>
             </lg>
-            <stage>
-              <hi>Zu Dankwart.</hi>
-            </stage>
+            <stage>Zu Dankwart.</stage>
             <l>Du hast die Peitsche sicher nicht geschont?</l>
-            <stage>
-              <hi>Zu Siegfried.</hi>
-            </stage>
+            <stage>Zu Siegfried.</stage>
             <l>Doch setze immerhin dein Siegel bei!</l>
           </sp>
           <sp who="#siegfried">
@@ -5108,9 +4861,7 @@
         </div>
         <div type="scene">
           <head>Eilfte Szene</head>
-          <stage>
-            <hi>Kriemhild kommt.</hi>
-          </stage>
+          <stage>Kriemhild kommt.</stage>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
             <l>Ihr geht zur Jagd?</l>
@@ -5198,9 +4949,7 @@
           <sp who="#siegfried">
             <speaker>SIEGFRIED.</speaker>
             <l>Ja wohl. Nur noch den Abschiedskuß.</l>
-            <stage>
-              <hi>Er umarmt Kriemhild.</hi>
-            </stage>
+            <stage>Er umarmt Kriemhild.</stage>
             <lg>
               <l>Du sträubst dich nicht? Du sagst nicht: morgen abend!</l>
               <l>Wie ich? Das nenn ich edel.</l>
@@ -5229,13 +4978,9 @@
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>umschließt ihn nochmals.</hi>
-            </stage>
+            <stage>umschließt ihn nochmals.</stage>
             <l>Kehr nur zurück!</l>
-            <stage>
-              <hi>Die Recken ab.</hi>
-            </stage>
+            <stage>Die Recken ab.</stage>
             <pb n="195"/>
           </sp>
         </div>
@@ -5247,9 +4992,7 @@
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>wird noch einmal sichtbar.</hi>
-            </stage>
+            <stage>wird noch einmal sichtbar.</stage>
             <l>Was ist?</l>
           </sp>
           <sp who="#kriemhild">
@@ -5258,16 +5001,12 @@
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN</speaker>
-            <stage>
-              <hi>folgt Siegfried rasch.</hi>
-            </stage>
+            <stage>folgt Siegfried rasch.</stage>
             <l>Nun, hast du deine Spindel schon?</l>
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>zu Kriemhild.</hi>
-            </stage>
+            <stage>zu Kriemhild.</stage>
             <lg>
               <l>Du hörst,</l>
               <l>Daß sich die Hunde nicht mehr halten lassen,</l>
@@ -5287,9 +5026,7 @@
           </sp>
           <sp who="#hagen #siegfried">
             <speaker>HAGEN UND SIEGFRIED</speaker>
-            <stage>
-              <hi>ab.</hi>
-            </stage>
+            <stage>ab.</stage>
           </sp>
         </div>
         <div type="scene">
@@ -5305,9 +5042,7 @@
         </div>
         <div type="scene">
           <head>Vierzehnte Szene</head>
-          <stage>
-            <hi>Gerenot und Giselher treten auf.</hi>
-          </stage>
+          <stage>Gerenot und Giselher treten auf.</stage>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
             <lg>
@@ -5360,9 +5095,7 @@
               <l>Wir müssen Waffen mustern,</l>
               <l>Du wirst es sehn.</l>
             </lg>
-            <stage>
-              <hi>Will gehen.</hi>
-            </stage>
+            <stage>Will gehen.</stage>
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
@@ -5386,9 +5119,7 @@
               <l>Wenn er nicht tadelt, und ich hörte nie,</l>
               <l>Daß er ihn tadelte.</l>
             </lg>
-            <stage>
-              <hi>Beide ab.</hi>
-            </stage>
+            <stage>Beide ab.</stage>
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
@@ -5400,9 +5131,7 @@
         </div>
         <div type="scene">
           <head>Funfzehnte Szene</head>
-          <stage>
-            <hi>Frigga tritt auf.</hi>
-          </stage>
+          <stage>Frigga tritt auf.</stage>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
             <l>Du, Alte? Suchst du mich?</l>
@@ -5442,9 +5171,7 @@
           <sp who="#frigga">
             <speaker>FRIGGA.</speaker>
             <l>Ich! – Nein!</l>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
             <pb n="197"/>
           </sp>
         </div>
@@ -5466,19 +5193,16 @@
               <l>Ihr weißen Tauben, die ihr mich begleitet,</l>
               <l>Erbarmt euch meiner, warnt ihn, eilt ihm nach!</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>5. Akt</head>
+        <head>Fünfter Akt</head>
+        <stage>Oden-Wald.</stage>
         <div type="scene">
           <head>Erste Szene</head>
-          <stage>
-            <hi>Hagen, Gunther, Volker, Dankwart und Knechte treten auf.</hi>
-          </stage>
+          <stage>Hagen, Gunther, Volker, Dankwart und Knechte treten auf.</stage>
           <sp who="#hagen">
             <speaker>HAGEN.</speaker>
             <lg>
@@ -5500,16 +5224,12 @@
               <l>Kein zweiter Tag, wie dieser. Darum sprich,</l>
               <l>Und wenn du lieber willst, so schweig!</l>
             </lg>
-            <stage>
-              <hi>Zu den Knechten.</hi>
-            </stage>
+            <stage>Zu den Knechten.</stage>
             <lg>
               <l>Holla!</l>
               <l>Hier ist die Rast!</l>
             </lg>
-            <stage>
-              <hi>Die Knechte ordnen ein Mahl.</hi>
-            </stage>
+            <stage>Die Knechte ordnen ein Mahl.</stage>
           </sp>
           <sp who="#gunther">
             <speaker>GUNTHER.</speaker>
@@ -5553,17 +5273,13 @@
               <l>Er hat den Tod ja abgekauft</l>
               <l>Und so den Mord geadelt.</l>
             </lg>
-            <stage>
-              <hi>Zu den Knechten.</hi>
-            </stage>
+            <stage>Zu den Knechten.</stage>
             <lg>
               <l>Stoßt ins Horn,</l>
               <l>Daß man sich sammelt, denn wir müssen ja</l>
               <l>Erst essen.</l>
             </lg>
-            <stage>
-              <hi>Es wird geblasen.</hi>
-            </stage>
+            <stage>Es wird geblasen.</stage>
             <lg>
               <l>Nimm die Dinge, wie sie stehn,</l>
               <l>Und laß mich machen. Fühlst du selbst dich nicht</l>
@@ -5588,9 +5304,7 @@
         </div>
         <div type="scene">
           <head>Zweite Szene</head>
-          <stage>
-            <hi>Siegfried tritt auf mit Rumolt und mit Knechten.</hi>
-          </stage>
+          <stage>Siegfried tritt auf mit Rumolt und mit Knechten.</stage>
           <sp who="#siegfried">
             <speaker>SIEGFRIED.</speaker>
             <lg>
@@ -5715,9 +5429,7 @@
               <l>Obwohl mir seine Nase leider mangelt,</l>
               <l>Es sei darum, ich störe keinen Spaß.</l>
             </lg>
-            <stage>
-              <hi>Er sucht.</hi>
-            </stage>
+            <stage>Er sucht.</stage>
             <lg>
               <l>Hier nicht! Auch dort nicht! Nun, wo steckt das Faß?</l>
               <l>Ich bitt dich, Spielmann, rette mich, sonst werd ich</l>
@@ -5762,9 +5474,7 @@
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>horcht.</hi>
-            </stage>
+            <stage>horcht.</stage>
             <lg>
               <l>Ja, es rauscht!</l>
               <l>Willkommen, Strahl! Ich liebe dich zwar mehr,</l>
@@ -5775,9 +5485,7 @@
               <l>Was uns den Kopf mit muntrer Torheit füllt,</l>
               <l>Doch sei auch so gepriesen.</l>
             </lg>
-            <stage>
-              <hi>Er geht auf den Brunnen zu.</hi>
-            </stage>
+            <stage>Er geht auf den Brunnen zu.</stage>
             <lg>
               <l>Aber nein,</l>
               <l>Erst will ich büßen, und ihr sollts bezeugen,</l>
@@ -5789,15 +5497,11 @@
           <sp who="#hagen">
             <speaker>HAGEN.</speaker>
             <l>So fang ich an.</l>
-            <stage>
-              <hi>Er geht zum Brunnen.</hi>
-            </stage>
+            <stage>Er geht zum Brunnen.</stage>
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>zu Gunther.</hi>
-            </stage>
+            <stage>zu Gunther.</stage>
             <lg>
               <l>Erheitre dein Gesicht,</l>
               <l>Ich hab ein Mittel, Brunhild zu versöhnen,</l>
@@ -5807,13 +5511,9 @@
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN</speaker>
-            <stage>
-              <hi>kommt wieder und entwaffnet sich.</hi>
-            </stage>
+            <stage>kommt wieder und entwaffnet sich.</stage>
             <l>Man muß sich bücken, und das geht nicht so.</l>
-            <stage>
-              <hi>Wieder ab.</hi>
-            </stage>
+            <stage>Wieder ab.</stage>
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED.</speaker>
@@ -5826,9 +5526,7 @@
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN</speaker>
-            <stage>
-              <hi>kommt wieder.</hi>
-            </stage>
+            <stage>kommt wieder.</stage>
             <l>So kalt, wie Eis.</l>
           </sp>
           <sp who="#siegfried">
@@ -5842,57 +5540,39 @@
           <sp who="#siegfried">
             <speaker>SIEGFRIED.</speaker>
             <l>Wohlan!</l>
-            <stage>
-              <hi>Er geht auf den Brunnen zu, kehrt aber wieder um.</hi>
-            </stage>
+            <stage>Er geht auf den Brunnen zu, kehrt aber wieder um.</stage>
             <l>Ja so!</l>
-            <stage>
-              <hi>Er entwaffnet sich und geht.</hi>
-            </stage>
+            <stage>Er entwaffnet sich und geht.</stage>
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN</speaker>
-            <stage>
-              <hi>auf die Waffen deutend.</hi>
-            </stage>
+            <stage>auf die Waffen deutend.</stage>
             <l>Hinweg damit.</l>
           </sp>
           <sp who="#dankwart">
             <speaker>DANKWART</speaker>
-            <stage>
-              <hi>trägt die Waffen fort.</hi>
-            </stage>
+            <stage>trägt die Waffen fort.</stage>
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN</speaker>
-            <stage>
-              <hi>der seine Waffen wieder aufgenommen und Gunther fortwährend den Rücken zugewendet
-                hat, nimmt einen Anlauf und wirft seinen Speer.</hi>
-            </stage>
+            <stage>der seine Waffen wieder aufgenommen und Gunther fortwährend den Rücken zugewendet
+              hat, nimmt einen Anlauf und wirft seinen Speer.</stage>
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>schreit auf.</hi>
-            </stage>
+            <stage>schreit auf.</stage>
             <l>Ihr Freunde!</l>
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN</speaker>
-            <stage>
-              <hi>ruft.</hi>
-            </stage>
+            <stage>ruft.</stage>
             <l>Noch nicht still?</l>
-            <stage>
-              <hi>Zu den andern.</hi>
-            </stage>
+            <stage>Zu den andern.</stage>
             <l>Kein Wort mit ihm, was er auch sagen mag!</l>
           </sp>
           <sp who="#siegfried">
             <speaker>SIEGFRIED</speaker>
-            <stage>
-              <hi>kriecht herein.</hi>
-            </stage>
+            <stage>kriecht herein.</stage>
             <lg>
               <l>Mord! Mord! – Ihr selbst? Beim Trinken! Gunther, Gunther,</l>
               <l>Verdient ich das um dich? Ich stand dir bei</l>
@@ -5913,9 +5593,7 @@
               <l>Ich bin hin,</l>
               <l>Doch noch nicht ganz!</l>
             </lg>
-            <stage>
-              <hi>Er springt auf.</hi>
-            </stage>
+            <stage>Er springt auf.</stage>
             <lg>
               <l>Wo ist mein Schwert geblieben?</l>
               <l>Sie trugens fort. Bei deiner Mannheit, Hagen,</l>
@@ -5940,17 +5618,13 @@
               <l>Pfui, pfui, wie feig! Er fürchtet meinen Daumen,</l>
               <l>Denn ich bin nur mein Daumen noch.</l>
             </lg>
-            <stage>
-              <hi>Er strauchelt über seinen Schild.</hi>
-            </stage>
+            <stage>Er strauchelt über seinen Schild.</stage>
             <lg>
               <l>Mein Schild!</l>
               <l>Mein treuer Schild, ich werf den Hund mit dir!</l>
             </lg>
-            <stage>
-              <hi>Er bückt sich nach dem Schilde, kann ihn aber nicht mehr heben und richtet sich
-                taumelnd wieder auf.</hi>
-            </stage>
+            <stage>Er bückt sich nach dem Schilde, kann ihn aber nicht mehr heben und richtet sich
+              taumelnd wieder auf.</stage>
             <lg>
               <l>Wie angenagelt! Auch für diese Rache</l>
               <l>Ists schon zu spät!</l>
@@ -5987,9 +5661,7 @@
               <l>Mich gleich bespein, wie einen Haufen Staub,</l>
               <l>Da lieg ich schon –</l>
             </lg>
-            <stage>
-              <hi>Er stürzt zu Boden.</hi>
-            </stage>
+            <stage>Er stürzt zu Boden.</stage>
             <lg>
               <l>Den Siegfried seid ihr los!</l>
               <l>Doch wißt, ihr habt in ihm euch selbst erschlagen,</l>
@@ -6024,9 +5696,7 @@
               <l>So üb er sie an dir! – Doch besser gehst du</l>
               <l>Zu meinem Vater! – Hörst du mich, Kriemhild?</l>
             </lg>
-            <stage>
-              <hi>Er stirbt.</hi>
-            </stage>
+            <stage>Er stirbt.</stage>
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN.</speaker>
@@ -6051,16 +5721,12 @@
               <l>Hast nichts befohlen, des erinnre dich,</l>
               <l>Ich hafte ganz allein. Nun fort mit ihm!</l>
             </lg>
-            <stage>
-              <hi>Alle ab mit der Leiche.</hi>
-            </stage>
+            <stage>Alle ab mit der Leiche.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritte Szene</head>
-          <stage>
-            <hi>Kriemhilds Gemach. Tiefe Nacht.</hi>
-          </stage>
+          <stage>Kriemhilds Gemach. Tiefe Nacht.</stage>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
             <lg>
@@ -6068,9 +5734,7 @@
               <l>Geweckt und nicht der Hahn, den ich so deutlich</l>
               <l>Zu hören glaubte.</l>
             </lg>
-            <stage>
-              <hi>Sie tritt zum Fenster und öffnet einen Laden.</hi>
-            </stage>
+            <stage>Sie tritt zum Fenster und öffnet einen Laden.</stage>
             <lg>
               <l>Noch erlosch kein Stern,</l>
               <l>Zur Messe ists gewiß noch eine Stunde!</l>
@@ -6081,9 +5745,7 @@
         </div>
         <div type="scene">
           <head>Vierte Szene</head>
-          <stage>
-            <hi>Ute tritt leise ein.</hi>
-          </stage>
+          <stage>Ute tritt leise ein.</stage>
           <sp who="#ute">
             <speaker>UTE.</speaker>
             <l>Schon auf, Kriemhild?</l>
@@ -6215,29 +5877,25 @@
         </div>
         <div type="scene">
           <head>Fünfte Szene</head>
-          <sp who="#kämmerer">
+          <sp who="#kaemmerer">
             <speaker>KÄMMERER</speaker>
-            <stage>
-              <hi>vor der Tür schreit.</hi>
-            </stage>
+            <stage>vor der Tür schreit.</stage>
             <l>Heilger Gott!</l>
           </sp>
           <sp who="#ute">
             <speaker>UTE.</speaker>
             <l>Was ists? Was gibts?</l>
           </sp>
-          <sp who="#kämmerer">
+          <sp who="#kaemmerer">
             <speaker>KÄMMERER</speaker>
-            <stage>
-              <hi>tritt ein.</hi>
-            </stage>
+            <stage>tritt ein.</stage>
             <l>Ich wäre fast gefallen.</l>
           </sp>
           <sp who="#ute">
             <speaker>UTE.</speaker>
             <l>Und darum dies Geschrei?</l>
           </sp>
-          <sp who="#kämmerer">
+          <sp who="#kaemmerer">
             <speaker>KÄMMERER.</speaker>
             <l>Ein toter Mann!</l>
           </sp>
@@ -6245,7 +5903,7 @@
             <speaker>UTE.</speaker>
             <l>Wie? Was?</l>
           </sp>
-          <sp who="#kämmerer">
+          <sp who="#kaemmerer">
             <speaker>KÄMMERER.</speaker>
             <l>Ein toter Mann liegt vor der Tür.</l>
           </sp>
@@ -6255,27 +5913,19 @@
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>fällt um.</hi>
-            </stage>
+            <stage>fällt um.</stage>
             <l>So ists auch mein Gemahl!</l>
           </sp>
           <sp who="#ute">
             <speaker>UTE</speaker>
-            <stage>
-              <hi>sie auffangend.</hi>
-            </stage>
+            <stage>sie auffangend.</stage>
             <l>Unmöglich!</l>
-            <stage>
-              <hi>Zum Kämmerer.</hi>
-            </stage>
+            <stage>Zum Kämmerer.</stage>
             <l>Leuchte!</l>
           </sp>
-          <sp who="#kämmerer">
+          <sp who="#kaemmerer">
             <speaker>KÄMMERER</speaker>
-            <stage>
-              <hi>tut es und nickt dann.</hi>
-            </stage>
+            <stage>tut es und nickt dann.</stage>
           </sp>
           <sp who="#ute">
             <speaker>UTE.</speaker>
@@ -6284,12 +5934,10 @@
               <l>Auf, auf, was schläft!</l>
             </lg>
           </sp>
-          <sp who="#kämmerer">
+          <sp who="#kaemmerer">
             <speaker>KÄMMERER.</speaker>
             <l>Zu Hülfe!</l>
-            <stage>
-              <hi>Die Mägde stürzen herein.</hi>
-            </stage>
+            <stage>Die Mägde stürzen herein.</stage>
           </sp>
           <sp who="#ute">
             <speaker>UTE.</speaker>
@@ -6297,9 +5945,7 @@
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>sich erhebend.</hi>
-            </stage>
+            <stage>sich erhebend.</stage>
             <lg>
               <l>Das riet Brunhild, und Hagen hats getan! –</l>
               <l>Ein Licht!</l>
@@ -6312,9 +5958,7 @@
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>ergreift eine Kerze.</hi>
-            </stage>
+            <stage>ergreift eine Kerze.</stage>
             <lg>
               <l>Ists! Ich weiß, ich weiß!</l>
               <l>Nur, daß man ihn nicht tritt. Du hörtest ja,</l>
@@ -6329,9 +5973,7 @@
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
             <l>Ich setz es selber hin.</l>
-            <stage>
-              <hi>Sie stößt die Tür auf und fällt zu Boden.</hi>
-            </stage>
+            <stage>Sie stößt die Tür auf und fällt zu Boden.</stage>
             <lg>
               <l>O Mutter, Mutter,</l>
               <l>Warum gebarst du mich! – Du teures Haupt,</l>
@@ -6341,7 +5983,7 @@
               <l>Es tut zu weh.</l>
             </lg>
           </sp>
-          <sp who="#kämmerer">
+          <sp who="#kaemmerer">
             <speaker>KÄMMERER.</speaker>
             <l>Sie stirbt.</l>
           </sp>
@@ -6355,14 +5997,10 @@
         </div>
         <div type="scene">
           <head>Sechste Szene</head>
-          <stage>
-            <hi>Gunther kommt mit Dankwart, Rumolt, Giselher und Gerenot.</hi>
-          </stage>
+          <stage>Gunther kommt mit Dankwart, Rumolt, Giselher und Gerenot.</stage>
           <sp who="#ute">
             <speaker>UTE</speaker>
-            <stage>
-              <hi>Gunther entgegen.</hi>
-            </stage>
+            <stage>Gunther entgegen.</stage>
             <l>Mein Sohn, was ist geschehn?</l>
           </sp>
           <sp who="#gunther">
@@ -6376,9 +6014,7 @@
           </sp>
           <sp who="#ute">
             <speaker>UTE</speaker>
-            <stage>
-              <hi>mit einer Handbewegung.</hi>
-            </stage>
+            <stage>mit einer Handbewegung.</stage>
             <lg>
               <l>Du siehst,</l>
               <l>Der arme Tote meldete sich selbst!</l>
@@ -6386,9 +6022,7 @@
           </sp>
           <sp who="#gunther">
             <speaker>GUNTHER</speaker>
-            <stage>
-              <hi>heimlich zu Dankwart.</hi>
-            </stage>
+            <stage>heimlich zu Dankwart.</stage>
             <l>Wie ging das zu?</l>
           </sp>
           <sp who="#dankwart">
@@ -6413,15 +6047,11 @@
           <head>Siebente Szene</head>
           <sp who="#kaplan">
             <speaker>KAPLAN</speaker>
-            <stage>
-              <hi>tritt ein.</hi>
-            </stage>
+            <stage>tritt ein.</stage>
           </sp>
           <sp who="#gunther">
             <speaker>GUNTHER</speaker>
-            <stage>
-              <hi>ihm entgegen.</hi>
-            </stage>
+            <stage>ihm entgegen.</stage>
             <l>Zu spät!</l>
           </sp>
           <sp who="#kaplan">
@@ -6438,9 +6068,7 @@
           </sp>
           <sp who="#ute">
             <speaker>UTE</speaker>
-            <stage>
-              <hi>fortwährend mit den Mägden um Kriemhild beschäftigt.</hi>
-            </stage>
+            <stage>fortwährend mit den Mägden um Kriemhild beschäftigt.</stage>
             <l>Steh nun auf, Kriemhild!</l>
           </sp>
           <sp who="#kriemhild">
@@ -6468,13 +6096,9 @@
               <l>O, das ist wahr! Was reich und köstlich ist,</l>
               <l>Muß heute wohlfeil werden.</l>
             </lg>
-            <stage>
-              <hi>Sie steht auf.</hi>
-            </stage>
+            <stage>Sie steht auf.</stage>
             <l>Hier die Schlüssel!</l>
-            <stage>
-              <hi>Sie wirft Schlüssel von sich.</hi>
-            </stage>
+            <stage>Sie wirft Schlüssel von sich.</stage>
             <lg>
               <l>Es gibt ja keinen Festtag mehr! Die Seide,</l>
               <l>Die goldnen Prachtgewänder und das Linnen,</l>
@@ -6485,16 +6109,12 @@
               <l>In seinen Sarg, mein Brautkleid ganz zu oben,</l>
               <l>Und legt ihn sanft darauf, dann mach ich so</l>
             </lg>
-            <stage>
-              <hi>Sie breitet die Arme aus.</hi>
-            </stage>
+            <stage>Sie breitet die Arme aus.</stage>
             <l>Und deck ihn mit mir selber zu!</l>
           </sp>
           <sp who="#gunther">
             <speaker>GUNTHER</speaker>
-            <stage>
-              <hi>zu den Seinigen.</hi>
-            </stage>
+            <stage>zu den Seinigen.</stage>
             <lg>
               <l>Ein Eid!</l>
               <l>Ihr tut kein Mensch mehr weh.</l>
@@ -6502,21 +6122,15 @@
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>wendet sich.</hi>
-            </stage>
+            <stage>wendet sich.</stage>
             <lg>
               <l>Die Mörder da?</l>
               <l><pb n="209"/> Hinweg! Damit er nicht aufs neue blute!</l>
               <l>Nein! Nein! Heran!</l>
             </lg>
-            <stage>
-              <hi>Sie faßt Dankwart.</hi>
-            </stage>
+            <stage>Sie faßt Dankwart.</stage>
             <l>Damit er für sich zeuge!</l>
-            <stage>
-              <hi>Sie wischt sich die Hand am Kleide ab.</hi>
-            </stage>
+            <stage>Sie wischt sich die Hand am Kleide ab.</stage>
             <lg>
               <l>O pfui, nun darf ich ihn mit meiner Rechten</l>
               <l>Nicht mehr berühren! Kommt das arme Blut?</l>
@@ -6544,9 +6158,7 @@
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
             <l>Ich kenne sie.</l>
-            <stage>
-              <hi>Sie faßt Giselher und Gerenot bei der Hand.</hi>
-            </stage>
+            <stage>Sie faßt Giselher und Gerenot bei der Hand.</stage>
             <lg>
               <l>Du warst nicht mit dabei! –</l>
               <l>Du auch nicht!</l>
@@ -6575,9 +6187,7 @@
               <l>Denn leichter wächst dir aus dem Mund die Rose,</l>
               <l>Als dus ersinnst, wenn du es nicht gehört.</l>
             </lg>
-            <stage>
-              <hi>Da Rumolt stockt.</hi>
-            </stage>
+            <stage>Da Rumolt stockt.</stage>
             <l>Du logst!</l>
           </sp>
           <sp who="#kaplan">
@@ -6606,19 +6216,14 @@
               <l>Doch blind zugleich und ungerecht. Dir zeugen</l>
               <l>Die ehrenwertsten Recken –</l>
             </lg>
-            <stage>
-              <hi>Inzwischen ist die Tür zugemacht worden und die Leiche nicht mehr sichtbar.</hi>
-            </stage>
+            <stage>Inzwischen ist die Tür zugemacht worden und die Leiche nicht mehr
+              sichtbar.</stage>
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD</speaker>
-            <stage>
-              <hi>als sie dies bemerkt.</hi>
-            </stage>
+            <stage>als sie dies bemerkt.</stage>
             <l>Halt? Wer wagts –</l>
-            <stage>
-              <hi>Eilt zur Türe.</hi>
-            </stage>
+            <stage>Eilt zur Türe.</stage>
           </sp>
           <sp who="#ute">
             <speaker>UTE.</speaker>
@@ -6641,9 +6246,7 @@
               <l>In den Dom!</l>
               <l>Ich folge nach, denn jetzt gehört er Gott.</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
         <div type="scene">
@@ -6651,9 +6254,7 @@
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
             <l>Wohl! In den Dom!</l>
-            <stage>
-              <hi>Zu Gunther.</hi>
-            </stage>
+            <stage>Zu Gunther.</stage>
             <lg>
               <l>Es waren also Schächer?</l>
               <l>So stell dich dort mit allen deinen Sippen</l>
@@ -6670,28 +6271,16 @@
               <l>Mit allen, sag ich. Aber alle sind</l>
               <l>Hier nicht versammelt. Ruft auch den, der fehlt!</l>
             </lg>
-            <stage>
-              <hi>Alle ab, aber Männer und Frauen aus verschiedenen Türen.</hi>
-            </stage>
+            <stage>Alle ab, aber Männer und Frauen aus verschiedenen Türen.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Neunte Szene</head>
-          <stage>
-            <hi>Dom.</hi>
-          </stage>
-          <stage>
-            <hi>Fackeln. Der Kaplan mit anderen Priestern seitwärts vor einer eisernen Tür.</hi>
-          </stage>
-          <stage>
-            <hi>Im Portal sammeln sich Hagens Sippen bis zu sechzig.</hi>
-          </stage>
-          <stage>
-            <hi>Zuletzt Hagen, Gunther und die übrigen.</hi>
-          </stage>
-          <stage>
-            <hi>Es klopft.</hi>
-          </stage>
+          <stage>Dom.</stage>
+          <stage>Fackeln. Der Kaplan mit anderen Priestern seitwärts vor einer eisernen Tür.</stage>
+          <stage>Im Portal sammeln sich Hagens Sippen bis zu sechzig.</stage>
+          <stage>Zuletzt Hagen, Gunther und die übrigen.</stage>
+          <stage>Es klopft.</stage>
           <sp who="#kaplan">
             <speaker>KAPLAN.</speaker>
             <l>Wer klopft?</l>
@@ -6706,9 +6295,7 @@
           <sp who="#kaplan">
             <speaker>KAPLAN.</speaker>
             <l>Den kenn ich nicht.</l>
-            <stage>
-              <hi>Es klopft wieder.</hi>
-            </stage>
+            <stage>Es klopft wieder.</stage>
           </sp>
           <sp who="#kaplan">
             <speaker>KAPLAN.</speaker>
@@ -6724,9 +6311,7 @@
           <sp who="#kaplan">
             <speaker>KAPLAN.</speaker>
             <l>Den kenn ich nicht.</l>
-            <stage>
-              <hi>Es klopf wieder.</hi>
-            </stage>
+            <stage>Es klopf wieder.</stage>
           </sp>
           <sp who="#kaplan">
             <speaker>KAPLAN.</speaker>
@@ -6742,33 +6327,24 @@
           <sp who="#kaplan">
             <speaker>KAPLAN.</speaker>
             <l>Tut auf!</l>
-            <stage>
-              <hi>Die Türe wird geöffnet und Siegfrieds Leichnam auf der Bahre hereingetragen.</hi>
-            </stage>
-            <stage>
-              <hi>Ihm folgen Kriemhild und Ute mit den Mägden.</hi>
-            </stage>
+            <stage>Die Türe wird geöffnet und Siegfrieds Leichnam auf der Bahre
+              hereingetragen.</stage>
+            <stage>Ihm folgen Kriemhild und Ute mit den Mägden.</stage>
           </sp>
           <sp who="#kaplan">
             <speaker>KAPLAN</speaker>
-            <stage>
-              <hi>gegen den Sarg.</hi>
-            </stage>
+            <stage>gegen den Sarg.</stage>
             <lg>
               <l>Du bist willkommen, toter Bruder,</l>
               <l>Du suchst den Frieden hier!</l>
             </lg>
-            <stage>
-              <hi>Zu den Frauen, die er vom Sarge abschneidet, indem er, während dieser
-                niedergesetzt wird, zwischen sie und ihn tritt.</hi>
-            </stage>
+            <stage>Zu den Frauen, die er vom Sarge abschneidet, indem er, während dieser
+              niedergesetzt wird, zwischen sie und ihn tritt.</stage>
             <lg>
               <l>Auch ihr willkommen,</l>
               <l>Wenn ihr den Frieden sucht, wie er ihn sucht.</l>
             </lg>
-            <stage>
-              <hi>Er hält Kriemhild das Kreuz vor.</hi>
-            </stage>
+            <stage>Er hält Kriemhild das Kreuz vor.</stage>
             <l>Du kehrst dich ab von diesem heilgen Zeichen?</l>
           </sp>
           <sp who="#kriemhild">
@@ -6830,25 +6406,16 @@
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
             <l>Du hast dein Werk getan, nun ich das meine!</l>
-            <stage>
-              <hi>Sie geht zum Sarg und stellt sich zu Häupten.</hi>
-            </stage>
+            <stage>Sie geht zum Sarg und stellt sich zu Häupten.</stage>
             <l>Tritt jetzt heran, wie ich, und zeuge mir!</l>
           </sp>
           <sp who="#kaplan">
             <speaker>KAPLAN</speaker>
-            <stage>
-              <hi>geht gleichfalls zum Sarg und stellt sich zu Füßen.</hi>
-            </stage>
-            <l>
-              <hi> Drei Posaunenstöße.</hi>
-            </l>
+            <stage>geht gleichfalls zum Sarg und stellt sich zu Füßen. Drei Posaunenstöße.</stage>
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN</speaker>
-            <stage>
-              <hi>zu Gunther.</hi>
-            </stage>
+            <stage>zu Gunther.</stage>
             <l>Was ist geschehn?</l>
           </sp>
           <sp who="#gunther">
@@ -6885,25 +6452,19 @@
           </sp>
           <sp who="#giselher">
             <speaker>GISELHER</speaker>
-            <stage>
-              <hi>die Hand erhebend.</hi>
-            </stage>
+            <stage>die Hand erhebend.</stage>
             <l>Ich bin bereit.</l>
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN.</speaker>
             <l>Den Eid erlaß ich euch.</l>
-            <stage>
-              <hi>Er tritt in den Dom, zu Kriemhild.</hi>
-            </stage>
+            <stage>Er tritt in den Dom, zu Kriemhild.</stage>
             <lg>
               <l>Du siehst, ich bin gereinigt, wann ich will,</l>
               <l>Und brauche mich am Sarg nicht mehr zu stellen,</l>
               <l>Allein ich tus, und will der erste sein!</l>
             </lg>
-            <stage>
-              <hi>Er schreitet langsam hinauf zum Sarg.</hi>
-            </stage>
+            <stage>Er schreitet langsam hinauf zum Sarg.</stage>
           </sp>
           <sp who="#ute">
             <speaker>UTE.</speaker>
@@ -6936,9 +6497,7 @@
           </sp>
           <sp who="#hagen">
             <speaker>HAGEN</speaker>
-            <stage>
-              <hi>neigt sich über den Sarg.</hi>
-            </stage>
+            <stage>neigt sich über den Sarg.</stage>
             <lg>
               <l>Das rote Blut! Ich hätt es nie geglaubt!</l>
               <l>Nun seh ich es mit meinen eignen Augen.</l>
@@ -6947,9 +6506,7 @@
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
             <l>Und fällst nicht um?</l>
-            <stage>
-              <hi>Sie springt auf ihn zu.</hi>
-            </stage>
+            <stage>Sie springt auf ihn zu.</stage>
             <lg>
               <l>Jetzt fort mit dir, du Teufel.</l>
               <l>Wer weiß, ob ihn nicht jeder Tropfen schmerzt,</l>
@@ -7046,20 +6603,14 @@
           <sp who="#hagen">
             <speaker>HAGEN.</speaker>
             <l>Es sei darum!</l>
-            <stage>
-              <hi>Er nimmt dem Leichnam den Balmung von der Seite.</hi>
-            </stage>
+            <stage>Er nimmt dem Leichnam den Balmung von der Seite.</stage>
             <l>Nun hörts gewiß nicht auf!</l>
-            <stage>
-              <hi>Er umgürtet sich mit dem Schwert und geht langsam zu den Seinigen zurück.</hi>
-            </stage>
+            <stage>Er umgürtet sich mit dem Schwert und geht langsam zu den Seinigen zurück.</stage>
           </sp>
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
             <l>Zum Mord den Raub!</l>
-            <stage>
-              <hi>Gegen Gunther.</hi>
-            </stage>
+            <stage>Gegen Gunther.</stage>
             <l>Ich bitte um Gericht.</l>
           </sp>
           <sp who="#kaplan">
@@ -7080,9 +6631,7 @@
           <sp who="#kriemhild">
             <speaker>KRIEMHILD.</speaker>
             <l>Es mag geschehn! Denn hier ists überzahlt!</l>
-            <stage>
-              <hi>Sie wendet sich gegen den Leichnam und stürzt an der Bahre nieder.</hi>
-            </stage>
+            <stage>Sie wendet sich gegen den Leichnam und stürzt an der Bahre nieder.</stage>
             <pb n="215"/>
             <pb n="217"/>
           </sp>
