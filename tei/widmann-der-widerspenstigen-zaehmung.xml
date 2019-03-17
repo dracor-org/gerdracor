@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Der Widerspenstigen Zähmung</title>
+        <title type="main">Der Widerspenstigen Zähmung</title>
+        <title type="sub">Komische Oper in vier Akten</title>
         <author key="pnd:118632302">Widmann, Joseph Viktor</author>
       </titleStmt>
       <publicationStmt>
@@ -44,46 +45,64 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="lucentio">
-            <persName>LUCENTIO</persName>
+          <person xml:id="lucentio" sex="MALE">
+            <persName>Lucentio</persName>
           </person>
-          <person xml:id="chor">
-            <persName>CHOR</persName>
+          <personGrp xml:id="chor_1-1" sex="UNKNOWN">
+            <name>Chor (I/1)</name>
+          </personGrp>
+          <person xml:id="baptista" sex="MALE">
+            <persName>Baptista</persName>
           </person>
-          <person xml:id="baptista">
-            <persName>BAPTISTA</persName>
+          <person xml:id="katharine" sex="FEMALE">
+            <persName>Katharine</persName>
           </person>
-          <person xml:id="katharine">
-            <persName>KATHARINE</persName>
+          <personGrp xml:id="nachbarinnen" sex="FEMALE">
+            <name>Nachbarinnen</name>
+          </personGrp>
+          <person xml:id="bianca" sex="FEMALE">
+            <persName>Bianca</persName>
           </person>
-          <person xml:id="nachbarinnen">
-            <persName>NACHBARINNEN</persName>
+          <person xml:id="hortensio" sex="MALE">
+            <persName>Hortensio</persName>
           </person>
-          <person xml:id="bianca">
-            <persName>BIANCA</persName>
+          <person xml:id="petruchio" sex="MALE">
+            <persName>Petruchio</persName>
           </person>
-          <person xml:id="hortensio">
-            <persName>HORTENSIO</persName>
+          <person xml:id="grumio" sex="MALE">
+            <persName>Grumio</persName>
           </person>
-          <person xml:id="petruchio">
-            <persName>PETRUCHIO</persName>
+          <personGrp xml:id="chor_hinter_der_szene_2-3" sex="UNKNOWN">
+            <name>Chor hinter der Szene (II/3)</name>
+          </personGrp>
+          <personGrp xml:id="chor_3-1" sex="UNKNOWN">
+            <name>Chor (III/1)</name>
+          </personGrp>
+          <personGrp xml:id="chor_3-5" sex="UNKNOWN">
+            <name>Chor (III/5)</name>
+          </personGrp>
+          <person xml:id="haushofmeister" sex="MALE">
+            <persName>Haushofmeister</persName>
           </person>
-          <person xml:id="grumio">
-            <persName>GRUMIO</persName>
+          <person xml:id="haushaelterin" sex="FEMALE">
+            <persName>Haushälterin</persName>
           </person>
-          <person xml:id="haushofmeister">
-            <persName>HAUSHOFMEISTER</persName>
+          <personGrp xml:id="chor_alle_3-6" sex="UNKNOWN">
+            <name>Chor/Alle (III/6)</name>
+          </personGrp>
+          <personGrp xml:id="chor_der_diener_4-1" sex="MALE">
+            <name>Chor der Diener (IV/1)</name>
+            <name type="variant">Diener</name>
+          </personGrp>
+          <person xml:id="schneider" sex="MALE">
+            <persName>Schneider</persName>
           </person>
-          <person xml:id="haushälterin">
-            <persName>HAUSHÄLTERIN</persName>
+          <person xml:id="hortensios_frau" sex="FEMALE">
+            <persName>Hortensios Frau</persName>
           </person>
-          <person xml:id="diener">
-            <persName>DIENER</persName>
-            <persName xml:id="chor_der_diener">CHOR DER DIENER</persName>
-          </person>
-          <person xml:id="schneider">
-            <persName>SCHNEIDER</persName>
-          </person>
+          <personGrp xml:id="chor_4-6" sex="UNKNOWN">
+            <name>Chor (IV/6)</name>
+          </personGrp>
         </listPerson>
       </particDesc>
       <textClass>
@@ -96,6 +115,7 @@
       <listChange>
         <change when="2017-12-02">(dlina) file conversion from source</change>
         <change when="2017-12-02">(ff) delete unneeded div wraps</change>
+        <change when="2019-03-17">(ff) formalities</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -120,19 +140,19 @@
           <castItem>Haushofmeister</castItem>
           <castItem>Haushälterin</castItem>
           <castItem>Hortensios Frau</castItem>
+          <castItem>Bedienstete in Baptistas Hause; Diener Petruchios sowie Gäste, Musikanten,
+            Nachbarn und Nachbarinnen</castItem>
         </castGroup>
       </castList>
     </front>
     <body>
       <div type="act">
-        <head>1. Akt</head>
+        <head>Erster Akt</head>
         <div type="scene">
           <head>Erste Szene</head>
-          <stage>
-            <hi>Straße in Padua, rechts Baptistas Haus mit Balkon. Später Abend, alles dunkel, nur
-              in Baptistas Haus bewegen sich Lichter hin und her. Lucentio tritt auf mit einer
-              Gitarre.</hi>
-          </stage>
+          <stage>Straße in Padua, rechts Baptistas Haus mit Balkon. Später Abend, alles dunkel, nur
+            in Baptistas Haus bewegen sich Lichter hin und her. Lucentio tritt auf mit einer
+            Gitarre.</stage>
           <sp who="#lucentio">
             <speaker>LUCENTIO.</speaker>
             <lg>
@@ -142,12 +162,10 @@
               <l>Lockt das Liebchen mir heraus!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_1-1">
             <speaker>CHOR.</speaker>
             <l>Nun ist es aus, nun ist es aus!</l>
-            <stage>
-              <hi>Die Unruhe in Baptistas Haus wird von hier an bemerkbar.</hi>
-            </stage>
+            <stage>Die Unruhe in Baptistas Haus wird von hier an bemerkbar.</stage>
           </sp>
           <sp who="#lucentio">
             <speaker>LUCENTIO.</speaker>
@@ -157,12 +175,10 @@
               <l>Lasset sie im Schlummer wissen,</l>
               <l>Wie ihr Bild mein Herz entzückt!</l>
             </lg>
-            <stage>
-              <hi>Lucentio sieht ungeduldig nach Baptistas Haus, fährt aber fort, nachdem es ruhiger
-                geworden.</hi>
-            </stage>
+            <stage>Lucentio sieht ungeduldig nach Baptistas Haus, fährt aber fort, nachdem es
+              ruhiger geworden.</stage>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_1-1">
             <speaker>CHOR.</speaker>
             <l>Nun ist es aus, nun ist es aus!</l>
           </sp>
@@ -172,11 +188,9 @@
               <l>Unbewußt, so wie die Sonne ungeahnte Glut enthaucht,</l>
               <l>Hast in goldne Liebeswonne den Entzückten du getaucht!</l>
             </lg>
-            <stage>
-              <hi>Hier geht die Tür auf und Baptistas Gesinde stürzt auf die Straße.</hi>
-            </stage>
+            <stage>Hier geht die Tür auf und Baptistas Gesinde stürzt auf die Straße.</stage>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_1-1">
             <speaker>CHOR.</speaker>
             <l>Nein, nun ist es aus! Der Teufel bleib in diesem Haus!</l>
           </sp>
@@ -187,7 +201,7 @@
               <l>Was ist's so spät mit diesen Leuten?</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_1-1">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Nun ist es aus, der Teufel bleib in diesem Haus!</l>
@@ -212,15 +226,13 @@
           </sp>
           <sp who="#baptista">
             <speaker>BAPTISTA</speaker>
-            <stage>
-              <hi>erscheint in der Haustüre.</hi>
-            </stage>
+            <stage>erscheint in der Haustüre.</stage>
             <lg>
               <l>Ihr guten Leute, nur ein Wort,</l>
               <l>Lauft mir doch nicht so plötzlich fort!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_1-1">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Wir hören nichts, spart euer Wort.</l>
@@ -232,7 +244,7 @@
             <speaker>BAPTISTA.</speaker>
             <l>Ihr guten Leute!</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_1-1">
             <speaker>CHOR.</speaker>
             <l>Nein, 's ist aus, der Teufel bleib in diesem Haus!</l>
           </sp>
@@ -243,7 +255,7 @@
               <l>Vielleicht wird bald sie Hochzeit machen.</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_1-1">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Bis sie auch euch hinaus wird treiben.</l>
@@ -253,9 +265,7 @@
           </sp>
           <sp who="#katharine">
             <speaker>KATHARINE</speaker>
-            <stage>
-              <hi>erscheint auf dem Balkon.</hi>
-            </stage>
+            <stage>erscheint auf dem Balkon.</stage>
             <lg>
               <l>Genug, mein Vater, nimmer ziemt es sich,</l>
               <l>So schlechten Leuten wieder deine Langmut zu zeigen,</l>
@@ -269,19 +279,17 @@
             <speaker>BAPTISTA.</speaker>
             <l>Ich bitte, Käthchen, misch dich nicht hinein.</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_1-1">
             <speaker>CHOR.</speaker>
             <l>Sei nur getrost, wir gehen schon, wir gehn!</l>
-            <stage>
-              <hi>In den Fenstern der Nachbarhäuser zeigen sich erzürnte Gesichter.</hi>
-            </stage>
+            <stage>In den Fenstern der Nachbarhäuser zeigen sich erzürnte Gesichter.</stage>
           </sp>
           <sp who="#nachbarinnen">
             <speaker>NACHBARINNEN.</speaker>
             <l>Wird denn der Lärm nicht bald aufhören?</l>
           </sp>
-          <sp who="#_baptista">
-            <speaker> BAPTISTA.</speaker>
+          <sp who="#baptista">
+            <speaker>BAPTISTA.</speaker>
             <l>Könnt ich zum Bleiben euch beschwören!</l>
           </sp>
           <sp who="#katharine">
@@ -293,9 +301,7 @@
           </sp>
           <sp who="#lucentio">
             <speaker>LUCENTIO</speaker>
-            <stage>
-              <hi>ist wieder zurückgekehrt.</hi>
-            </stage>
+            <stage>ist wieder zurückgekehrt.</stage>
             <lg>
               <l>Verwünschtes Volk, mich so zu stören!</l>
               <l>Was für ein Lärm, ich mag nichts hören!</l>
@@ -313,7 +319,7 @@
               <l>Wirkt das nicht, nun so macht euch fort!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_1-1">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Umsonst, ihr sollt uns nicht betören.</l>
@@ -327,7 +333,7 @@
             <speaker>BAPTISTA.</speaker>
             <l>So hört doch nur.</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_1-1">
             <speaker>CHOR.</speaker>
             <l>Wir hören nichts.</l>
           </sp>
@@ -335,7 +341,7 @@
             <speaker>BAPTISTA.</speaker>
             <l>Mein letztes Wort!</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_1-1">
             <speaker>CHOR.</speaker>
             <l>Wir gehn jetzt fort!</l>
           </sp>
@@ -343,7 +349,7 @@
             <speaker>BAPTISTA.</speaker>
             <l>Ich will fortan mehr Lohn euch geben.</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_1-1">
             <speaker>CHOR.</speaker>
             <l>Hört!</l>
           </sp>
@@ -351,7 +357,7 @@
             <speaker>BAPTISTA.</speaker>
             <l>Hört nur auf mich, Geld will ich geben!</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_1-1">
             <speaker>CHOR.</speaker>
             <l>Geld will er geben.</l>
           </sp>
@@ -359,12 +365,12 @@
             <speaker>BAPTISTA.</speaker>
             <l>Geld will ich euch und Wein auch geben.</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_1-1">
             <speaker>CHOR.</speaker>
             <l>Er soll leben!</l>
           </sp>
-          <sp who="#_nachbarinnen">
-            <speaker> NACHBARINNEN.</speaker>
+          <sp who="#nachbarinnen">
+            <speaker>NACHBARINNEN.</speaker>
             <l>Nun wird es endlich Ruhe geben.</l>
           </sp>
           <sp who="#baptista">
@@ -383,7 +389,7 @@
             <speaker>LUCENTIO.</speaker>
             <l>Gepriesen sei der Saft der Reben!</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_1-1">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Versöhnung bringt der Saft der Reben.</l>
@@ -400,12 +406,10 @@
             <speaker>BAPTISTA.</speaker>
             <l>Folgt mir ins Haus ohn Widerstreben.</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_1-1">
             <speaker>CHOR.</speaker>
             <l>Wir folgen dir, der Wein soll leben.</l>
-            <stage>
-              <hi>Ab ins Haus.</hi>
-            </stage>
+            <stage>Ab ins Haus.</stage>
           </sp>
           <sp who="#lucentio">
             <speaker>LUCENTIO.</speaker>
@@ -414,11 +418,9 @@
               <l>Der Liebe Hoffnung daher aufleben.</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_1-1">
             <speaker>CHOR</speaker>
-            <stage>
-              <hi>hinter der Szene.</hi>
-            </stage>
+            <stage>hinter der Szene.</stage>
             <lg>
               <l>Da sitzen wir im Haberstroh! Juche!</l>
               <l>Und sind ganz unvernünftig froh! Juche!</l>
@@ -427,17 +429,13 @@
               <l>Gott segne dich, du altes Haus!</l>
               <l>Juche! Juche! Juche!</l>
             </lg>
-            <stage>
-              <hi>Die Lichter verlöschen in Baptistas Haus, es wird ganz still und dunkel. Lucentio
-                hat seine Gitarre wieder geholt.</hi>
-            </stage>
+            <stage>Die Lichter verlöschen in Baptistas Haus, es wird ganz still und dunkel. Lucentio
+              hat seine Gitarre wieder geholt.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweite Szene</head>
-          <stage>
-            <hi>Lucentio allein, später Bianca.</hi>
-          </stage>
+          <stage>Lucentio allein, später Bianca.</stage>
           <sp who="#lucentio">
             <speaker>LUCENTIO.</speaker>
             <lg>
@@ -449,15 +447,11 @@
               <l>Daß sie deiner sich vermähle,</l>
               <l>Neig, o Holde, dich zu mir!</l>
             </lg>
-            <stage>
-              <hi>Lucentio blickt erwartungsvoll hinauf.</hi>
-            </stage>
+            <stage>Lucentio blickt erwartungsvoll hinauf.</stage>
           </sp>
           <sp who="#bianca">
             <speaker>BIANCA</speaker>
-            <stage>
-              <hi>erscheint auf dem Balkon, zuerst halb versteckt.</hi>
-            </stage>
+            <stage>erscheint auf dem Balkon, zuerst halb versteckt.</stage>
             <lg>
               <l>Wie klang so süß mein Name durch die Stille!</l>
               <l>Schon oft vernahm ich diesen holden Sang.</l>
@@ -527,9 +521,7 @@
           </sp>
           <sp who="#bianca">
             <speaker>BIANCA</speaker>
-            <stage>
-              <hi>plötzlich traurig und leise.</hi>
-            </stage>
+            <stage>plötzlich traurig und leise.</stage>
             <l>Ein neues Leben! Ach wie gern, wie gerne!</l>
           </sp>
           <sp who="#lucentio">
@@ -540,8 +532,8 @@
               <l>Vertrau mir, Liebste! Und alles, alles ist wieder gut.</l>
             </lg>
           </sp>
-          <sp who="#_bianca">
-            <speaker> BIANCA.</speaker>
+          <sp who="#bianca">
+            <speaker>BIANCA.</speaker>
             <l>Zu neuem Leben, ach', wie gern, wie gerne,</l>
           </sp>
           <sp who="#lucentio">
@@ -565,9 +557,7 @@
         </div>
         <div type="scene">
           <head>Dritte Szene</head>
-          <stage>
-            <hi>Die Vorigen, Hortensio, Musikanten, später Baptista.</hi>
-          </stage>
+          <stage>Die Vorigen, Hortensio, Musikanten, später Baptista.</stage>
           <sp who="#bianca">
             <speaker>BIANCA.</speaker>
             <lg>
@@ -586,16 +576,12 @@
           </sp>
           <sp who="#lucentio">
             <speaker>LUCENTIO</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Verwünschte Störung!</l>
               <l>Er, ja er soll mir's entgelten!</l>
             </lg>
-            <stage>
-              <hi>Laut.</hi>
-            </stage>
+            <stage>Laut.</stage>
             <lg>
               <l>So hört doch endlich auf mit eurem Lärm,</l>
               <l>Kaum zu ertragen ist das Flötengewinsel,</l>
@@ -604,16 +590,12 @@
           </sp>
           <sp who="#hortensio">
             <speaker>HORTENSIO</speaker>
-            <stage>
-              <hi>wütend.</hi>
-            </stage>
+            <stage>wütend.</stage>
             <lg>
               <l>Gewinsel! Was? Getute! Was? Gebrumme!</l>
               <l>Da bitt ich doch, sich feiner auszudrücken.</l>
             </lg>
-            <stage>
-              <hi>Gibt den Musikanten Zeichen zum Anfang.</hi>
-            </stage>
+            <stage>Gibt den Musikanten Zeichen zum Anfang.</stage>
             <lg>
               <l>Denn diese feine Serenade, ohne jeden Eigenruhm,</l>
               <l>Ist durch aller Musengnade, mein erfundnes Eigentum.</l>
@@ -641,10 +623,8 @@
               <l>Gute Antwort gibt mein Degen.</l>
               <l>Macht zum Kampfe euch bereit!</l>
             </lg>
-            <stage>
-              <hi>Während beide ziehn, erscheint Baptista im Schlafrock mit einem Licht in der
-                Haustüre.</hi>
-            </stage>
+            <stage>Während beide ziehn, erscheint Baptista im Schlafrock mit einem Licht in der
+              Haustüre.</stage>
           </sp>
           <sp who="#baptista">
             <speaker>BAPTISTA.</speaker>
@@ -669,9 +649,7 @@
               <l>Und auch mein Haus euch streng verboten?</l>
               <l>Doch scheint es, diesmal habt ihr euch die Pfoten verbrannt!</l>
             </lg>
-            <stage>
-              <hi>Hortensio schickt hier die Musikanten weg.</hi>
-            </stage>
+            <stage>Hortensio schickt hier die Musikanten weg.</stage>
           </sp>
           <sp who="#lucentio">
             <speaker>LUCENTIO.</speaker>
@@ -679,9 +657,7 @@
           </sp>
           <sp who="#baptista">
             <speaker>BAPTISTA</speaker>
-            <stage>
-              <hi>barsch.</hi>
-            </stage>
+            <stage>barsch.</stage>
             <l>Erlaube nichts!</l>
           </sp>
           <sp who="#lucentio">
@@ -788,21 +764,15 @@
               <l>Euch aber rat ich, dieses Haus zu meiden.</l>
               <l>Das merkt euch! Euer Diener, meine Herren!</l>
             </lg>
-            <stage>
-              <hi>Ab ins Haus.</hi>
-            </stage>
+            <stage>Ab ins Haus.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Vierte Szene</head>
-          <stage>
-            <hi>Lucentio, Hortensio</hi>
-          </stage>
+          <stage>Lucentio, Hortensio</stage>
           <sp who="#hortensio">
             <speaker>HORTENSIO</speaker>
-            <stage>
-              <hi>mit ironischem Bückling.</hi>
-            </stage>
+            <stage>mit ironischem Bückling.</stage>
             <lg>
               <l>Wahrlich! Sehr zu gratulieren</l>
               <l>Ist euch wohl mein Herr Studio!</l>
@@ -810,9 +780,7 @@
           </sp>
           <sp who="#lucentio">
             <speaker>LUCENTIO</speaker>
-            <stage>
-              <hi>ebenso.</hi>
-            </stage>
+            <stage>ebenso.</stage>
             <lg>
               <l>Euer schnelles Reüssieren</l>
               <l>Macht euch wohl unmäßig froh?</l>
@@ -840,9 +808,7 @@
               <l>Wollt ihr musikalisch schwärmen,</l>
               <l>Schlägt sie euch den Takt dazu.</l>
             </lg>
-            <stage>
-              <hi>Zu sich.</hi>
-            </stage>
+            <stage>Zu sich.</stage>
             <lg>
               <l>Alter Geck! Ha warte! Warte!</l>
               <l>Du wirst ganz gewiß, wirst ganz gewiß besiegt.</l>
@@ -865,9 +831,7 @@
           </sp>
           <sp who="#hortensio">
             <speaker>HORTENSIO</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Biß'ger Schurke! Warte! Warte!</l>
               <l>Laß uns sehn, wer höher fliegt!</l>
@@ -887,8 +851,8 @@
               <l>Guter Einfall. Prachtsgedanke!</l>
             </lg>
           </sp>
-          <sp who="#_lucentio">
-            <speaker> LUCENTIO.</speaker>
+          <sp who="#lucentio">
+            <speaker>LUCENTIO.</speaker>
             <lg>
               <l>Mag es euch denn wohlergehen!</l>
               <l>Lebet wohl für diese Nacht!</l>
@@ -930,9 +894,7 @@
           </sp>
           <sp who="#lucentio">
             <speaker>LUCENTIO</speaker>
-            <stage>
-              <hi>höhnisch.</hi>
-            </stage>
+            <stage>höhnisch.</stage>
             <l>Strahlend in der Jugend Lenz.</l>
           </sp>
           <sp who="#hortensio">
@@ -942,9 +904,7 @@
           <sp who="#lucentio">
             <speaker>LUCENTIO.</speaker>
             <l>Spiel ich euch die Schlußkadenz.</l>
-            <stage>
-              <hi>Mit der Gebärde des Prügelns, ab.</hi>
-            </stage>
+            <stage>Mit der Gebärde des Prügelns, ab.</stage>
           </sp>
           <sp who="#hortensio">
             <speaker>HORTENSIO.</speaker>
@@ -954,21 +914,15 @@
               <l>Doch jetzt will ich mich entfernen,</l>
               <l>Leg ein Stündchen mich aufs Ohr.</l>
             </lg>
-            <stage>
-              <hi>Will ab, stößt auf Petruccio, der mit Grumio, seinem Diener kommt.</hi>
-            </stage>
+            <stage>Will ab, stößt auf Petruccio, der mit Grumio, seinem Diener kommt.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfte Szene</head>
-          <stage>
-            <hi>Hortensio, Petruchio, Grumio.</hi>
-          </stage>
+          <stage>Hortensio, Petruchio, Grumio.</stage>
           <sp who="#petruchio">
             <speaker>PETRUCHIO</speaker>
-            <stage>
-              <hi>den auf ihn zutaumelnden Hortensio wegschleudernd.</hi>
-            </stage>
+            <stage>den auf ihn zutaumelnden Hortensio wegschleudernd.</stage>
             <lg>
               <l>Verwünschter Esel! Tritt auf deine Füße!</l>
               <l>Sonst schlag ich deinen Schädel dir entzwei!</l>
@@ -983,9 +937,7 @@
           </sp>
           <sp who="#petruchio">
             <speaker>PETRUCHIO</speaker>
-            <stage>
-              <hi>Hortensio die Hand schüttelnd.</hi>
-            </stage>
+            <stage>Hortensio die Hand schüttelnd.</stage>
             <lg>
               <l>Bist du's, Hortensio? Ei, das nimmt mich wunder;</l>
               <l>Siehst immer jung noch aus,</l>
@@ -994,9 +946,7 @@
           </sp>
           <sp who="#grumio">
             <speaker>GRUMIO</speaker>
-            <stage>
-              <hi>sein Reisebündel abwerfend.</hi>
-            </stage>
+            <stage>sein Reisebündel abwerfend.</stage>
             <l>Nieder mit dem Plunder!</l>
           </sp>
           <sp who="#hortensio">
@@ -1067,9 +1017,7 @@
               <l>Lebt solch ein Mädchen, Lehre sie mich kennen,</l>
               <l>Die allen unbesiegbar, sie sei mein!</l>
             </lg>
-            <stage>
-              <hi>Mit steigender Wärme.</hi>
-            </stage>
+            <stage>Mit steigender Wärme.</stage>
             <lg>
               <l>Das könnte mit dem Leben mich versöhnen,</l>
               <l>Das einzig diese feile Welt verschönen,</l>
@@ -1140,9 +1088,7 @@
               <l>Mich kümmert's nicht, schürt nur der Sehnsucht Brand,</l>
               <l>Sie zu besiegen und mir zu gewinnen.</l>
             </lg>
-            <stage>
-              <hi>Mit steigender Ekstase.</hi>
-            </stage>
+            <stage>Mit steigender Ekstase.</stage>
             <lg>
               <l>Sie ist ein Weib für solchen Mann geschaffen,</l>
               <l>Wie ich zu sein mich rühmen kann.</l>
@@ -1185,9 +1131,7 @@
               <l>Ich liebe dich, doch darf ich dich nicht schonen,</l>
               <l>Gebändigt mußt du werden, sanft wie Zephirwind,</l>
             </lg>
-            <stage>
-              <hi>Sehr sanft.</hi>
-            </stage>
+            <stage>Sehr sanft.</stage>
             <lg>
               <l>Doch heute Nacht mag noch der Friede wohnen</l>
               <l>An deiner Brust, schlaf wohl du wildes Kind!</l>
@@ -1201,14 +1145,9 @@
               <l>Mit dem Sermon, kannst du uns jetzt verschonen;</l>
               <l>Komm erst nach Haus und dann ins Bett geschwind</l>
             </lg>
-            <stage>
-              <hi>Hortensio und Grumio nehmen Petruchio von beiden Seiten unter den Arm und ziehen
-                ihn fort. Da </hi>
-            </stage>
-            <stage>
-              <hi>sie abgegangen sind, steckt Baptista in der Schlafmütze den Kopf aus einem
-                Fenster.</hi>
-            </stage>
+            <stage>Hortensio und Grumio nehmen Petruchio von beiden Seiten unter den Arm und ziehen
+              ihn fort. Da sie abgegangen sind, steckt Baptista in der Schlafmütze den Kopf aus
+              einem Fenster.</stage>
           </sp>
           <sp who="#baptista">
             <speaker>BAPTISTA.</speaker>
@@ -1217,27 +1156,21 @@
         </div>
       </div>
       <div type="act">
-        <head>2. Akt</head>
+        <head>Zweiter Akt</head>
         <div type="scene">
           <head>Erste Szene</head>
-          <stage>
-            <hi>Zimmer in Baptistas Hause. Katharine und Bianca mit der Morgentoilette beschäftigt.
-              Eine Zofe.</hi>
-          </stage>
+          <stage>Zimmer in Baptistas Hause. Katharine und Bianca mit der Morgentoilette beschäftigt.
+            Eine Zofe.</stage>
           <sp who="#katharine">
             <speaker>KATHARINE</speaker>
-            <stage>
-              <hi>zur Zofe.</hi>
-            </stage>
+            <stage>zur Zofe.</stage>
             <lg>
               <l>Aus meinen Augen, ungeschicktes Ding!</l>
               <l>Du raufst mich nur, statt mich zu kämmen,</l>
               <l>Setzt mir die Schleife schief!</l>
               <l>Hinaus! Ich wills!</l>
             </lg>
-            <stage>
-              <hi>Die Zofe ab.</hi>
-            </stage>
+            <stage>Die Zofe ab.</stage>
           </sp>
           <sp who="#bianca">
             <speaker>BIANCA.</speaker>
@@ -1257,9 +1190,7 @@
               <l>Den frechen Herrn aus Pisa und den andern,</l>
               <l>Den lächerlichen alten Geck.</l>
             </lg>
-            <stage>
-              <hi>Spöttisch.</hi>
-            </stage>
+            <stage>Spöttisch.</stage>
             <lg>
               <l>Das singt und seufzt des Nachts um unser Haus,</l>
               <l>Wie Kater, die im Mondschein promenieren.</l>
@@ -1302,9 +1233,7 @@
               <l>Glaub mir's! Wir sind der Männer Puppe nur, wir!</l>
               <l>Nein, nicht ich! Ich will mich wehren!</l>
             </lg>
-            <stage>
-              <hi>Mit Aufregung das Zimmer durchschreitend.</hi>
-            </stage>
+            <stage>Mit Aufregung das Zimmer durchschreitend.</stage>
             <lg>
               <l>Die Laute nimm</l>
               <l>Laß frisch die Saiten erklingen!</l>
@@ -1312,9 +1241,7 @@
               <l>Das hör ich nicht auf, zu singen.</l>
             </lg>
             <p>Lied der Katharine</p>
-            <stage>
-              <hi>Bianca hat eine Gitarre genommen und spielt.</hi>
-            </stage>
+            <stage>Bianca hat eine Gitarre genommen und spielt.</stage>
             <lg>
               <l>Ich will mich keinem geben,</l>
               <l>Es bringt nur schlechten Dank,</l>
@@ -1351,18 +1278,14 @@
               <l>Du zögerst? Möchtest wohl die Fremden hier erwarten!</l>
               <l>Fort! Sag ich dir! Hinab mit mir in den Garten!</l>
             </lg>
-            <stage>
-              <hi>Beide ab.</hi>
-            </stage>
+            <stage>Beide ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweite Szene</head>
-          <stage>
-            <hi>Es treten auf Baptista, Petruchio mit dem vermummten Hortensio, der eine Laute
-              trägt, und Lucentio, gleichfalls vermummt, welcher einige Bücher unter dem Arm
-              schleppt.</hi>
-          </stage>
+          <stage>Es treten auf Baptista, Petruchio mit dem vermummten Hortensio, der eine Laute
+            trägt, und Lucentio, gleichfalls vermummt, welcher einige Bücher unter dem Arm
+            schleppt.</stage>
           <sp who="#baptista">
             <speaker>BAPTISTA.</speaker>
             <lg>
@@ -1376,9 +1299,7 @@
           </sp>
           <sp who="#petruchio">
             <speaker>PETRUCHIO</speaker>
-            <stage>
-              <hi>rauh zu Baptista, der erschrocken zurückweicht.</hi>
-            </stage>
+            <stage>rauh zu Baptista, der erschrocken zurückweicht.</stage>
             <lg>
               <l>Schwach ward wohl eur Gedächtniß!</l>
               <l>Tut ihm Zwang, schickts auf die Jagd nach mir</l>
@@ -1405,9 +1326,7 @@
           </sp>
           <sp who="#baptista">
             <speaker>BAPTISTA</speaker>
-            <stage>
-              <hi>sich tief verneigend.</hi>
-            </stage>
+            <stage>sich tief verneigend.</stage>
             <lg>
               <l>Wie geistreich und wie witzig!</l>
               <l>Seid willkommen, seid willkommen!</l>
@@ -1458,16 +1377,12 @@
               <l>Geht in den Garten promenieren!</l>
               <l>Die Mädchen denk ich sind nicht weit.</l>
             </lg>
-            <stage>
-              <hi>Hortensio und Lucentio ab.</hi>
-            </stage>
+            <stage>Hortensio und Lucentio ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritte Szene</head>
-          <stage>
-            <hi>Baptista und Petruchio, später Katharine, Chor und Hortensio.</hi>
-          </stage>
+          <stage>Baptista und Petruchio, später Katharine, Chor und Hortensio.</stage>
           <sp who="#baptista">
             <speaker>BAPTISTA.</speaker>
             <lg>
@@ -1519,35 +1434,25 @@
           </sp>
           <sp who="#hortensio">
             <speaker>HORTENSIO</speaker>
-            <stage>
-              <hi>hinter der Szene.</hi>
-            </stage>
+            <stage>hinter der Szene.</stage>
             <l>Hilfe! Hilfe! Rettet mich vor ihr!</l>
           </sp>
           <sp who="#katharine">
             <speaker>KATHARINE</speaker>
-            <stage>
-              <hi>hinter der Szene.</hi>
-            </stage>
+            <stage>hinter der Szene.</stage>
             <l>Warte nur! Ich helfe dir!</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_hinter_der_szene_2-3">
             <speaker>CHOR</speaker>
-            <stage>
-              <hi>hinter der Szene.</hi>
-            </stage>
+            <stage>hinter der Szene.</stage>
             <l>Ha ha ha! Das gleichet ihr!</l>
-            <stage>
-              <hi>Die Flügeltüren im Hintergrund öffnen sich, Hortensio läuft atemlos herein, die
-                zerschlagene Laute wie einen Halskragen um den Hals. Hinter ihm erblickt man
-                Katharine in drohender Haltung, welche sogleich wieder verschwindert.</hi>
-            </stage>
+            <stage>Die Flügeltüren im Hintergrund öffnen sich, Hortensio läuft atemlos herein, die
+              zerschlagene Laute wie einen Halskragen um den Hals. Hinter ihm erblickt man Katharine
+              in drohender Haltung, welche sogleich wieder verschwindert.</stage>
           </sp>
           <sp who="#baptista">
             <speaker>BAPTISTA</speaker>
-            <stage>
-              <hi>ironisch zu Petruchio, während Hortensio auf einen Sessel gesunken ist.</hi>
-            </stage>
+            <stage>ironisch zu Petruchio, während Hortensio auf einen Sessel gesunken ist.</stage>
             <lg>
               <l>Zahm soll sie werden wie Zephirwind?</l>
               <l>Ein treugehorsam liebe ...</l>
@@ -1594,9 +1499,7 @@
           </sp>
           <sp who="#hortensio">
             <speaker>HORTENSIO</speaker>
-            <stage>
-              <hi>heimlich zu Petruchio.</hi>
-            </stage>
+            <stage>heimlich zu Petruchio.</stage>
             <lg>
               <l>Du wirst noch fühlen,</l>
               <l>Mit wem du's hier zu tun hast, kühner Freund!</l>
@@ -1605,9 +1508,7 @@
         </div>
         <div type="scene">
           <head>Vierte Szene</head>
-          <stage>
-            <hi>Petruchio allein, nachher Katharine.</hi>
-          </stage>
+          <stage>Petruchio allein, nachher Katharine.</stage>
           <sp who="#petruchio">
             <speaker>PETRUCHIO.</speaker>
             <lg>
@@ -1622,9 +1523,7 @@
               <l>So kühn, so stolz, so trotzig und so schön.</l>
               <l>Ja, sie ist's wert, den Kampf um sie zu wagen.</l>
             </lg>
-            <stage>
-              <hi>Katharine tritt auf.</hi>
-            </stage>
+            <stage>Katharine tritt auf.</stage>
             <lg>
               <l>Willkommen Käthchen!</l>
               <l>Hast du mich vermißt seit meinem letzten Kuß?</l>
@@ -1776,9 +1675,7 @@
               <l>Er wag es nur und geb sich überwunden,</l>
               <l>Denn so gewiß dich meine Arm umschlingen,</l>
             </lg>
-            <stage>
-              <hi>Umschließt sie.</hi>
-            </stage>
+            <stage>Umschließt sie.</stage>
           </sp>
           <sp who="#katharine">
             <speaker>KATHARINE.</speaker>
@@ -1787,9 +1684,7 @@
           <sp who="#petruchio">
             <speaker>PETRUCHIO.</speaker>
             <l>Und dir raube diesen Kuß</l>
-            <stage>
-              <hi>Küßt sie.</hi>
-            </stage>
+            <stage>Küßt sie.</stage>
           </sp>
           <sp who="#katharine">
             <speaker>KATHARINE.</speaker>
@@ -1801,9 +1696,7 @@
           </sp>
           <sp who="#katharine">
             <speaker>KATHARINE</speaker>
-            <stage>
-              <hi>reißt sich mit aller Kraft los.</hi>
-            </stage>
+            <stage>reißt sich mit aller Kraft los.</stage>
             <l>Seid ihr von Sinnen?</l>
           </sp>
           <sp who="#petruchio">
@@ -1813,10 +1706,9 @@
               <l>Kannst mir nie entrinnen!</l>
             </lg>
           </sp>
-          <sp who="#_katharine_für_sich_">
-            <speaker>
-              <pb n="18"/> KATHARINE <hi>für sich.</hi>
-            </speaker>
+          <sp who="#katharine">
+            <speaker><pb n="18"/> KATHARINE</speaker>
+            <stage>für sich.</stage>
             <lg>
               <l>Ich möcht ihn fassen, ich möcht ihn zerreißen</l>
               <l>Und möcht ihn doch mein Eigen heißen.</l>
@@ -1828,9 +1720,7 @@
           </sp>
           <sp who="#petruchio">
             <speaker>PETRUCHIO</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Sie ist schwer gekränkt; doch es kommt die Stunde,</l>
               <l>Die heilen wird auch die tiefste Wunde.</l>
@@ -1853,10 +1743,8 @@
         </div>
         <div type="scene">
           <head>Fünfte Szene</head>
-          <stage>
-            <hi>Baptista hat schon mehrmals verstohlen durch die Türe gesehn, endlich tritt er
-              näher. Hinter ihm Lucentio und Hortensio.</hi>
-          </stage>
+          <stage>Baptista hat schon mehrmals verstohlen durch die Türe gesehn, endlich tritt er
+            näher. Hinter ihm Lucentio und Hortensio.</stage>
           <sp who="#baptista">
             <speaker>BAPTISTA.</speaker>
             <lg>
@@ -1868,9 +1756,7 @@
           </sp>
           <sp who="#hortensio">
             <speaker>HORTENSIO</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Wie mag's nur stehn? Fürwahr, ich bin gespannt.</l>
               <l>Ist wohl besiegt ihr Widerstand?</l>
@@ -1878,9 +1764,7 @@
           </sp>
           <sp who="#lucentio">
             <speaker>LUCENTIO</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Wenn er bei guter Laune sie getroffen,</l>
               <l>So darf auch ich auf Bianca hoffen.</l>
@@ -1936,7 +1820,11 @@
             <lg>
               <l>Alles falsch und alles nichtig!</l>
               <l>Niemals, niemals werd ich sein.</l>
-              <l> LUCENTIO, HORTENSIO UND BAPTISTA.</l>
+            </lg>
+          </sp>
+          <sp who="#lucentio #hortensio #baptista">
+            <speaker>LUCENTIO, HORTENSIO UND BAPTISTA.</speaker>
+            <lg>
               <l>Weh, o weh noch ist's nicht richtig.</l>
               <l>Höret nur, sie sagt ja nein.</l>
               <pb n="19"/>
@@ -1962,8 +1850,8 @@
             <speaker>PETRUCHIO.</speaker>
             <l>Glaubt im Stillen ist sie mein.</l>
           </sp>
-          <sp who="#_katharine">
-            <speaker> KATHARINE.</speaker>
+          <sp who="#katharine">
+            <speaker>KATHARINE.</speaker>
             <lg>
               <l>Nie die eure will ich sein.</l>
               <l>Hört nun auf mit euren Lügen!</l>
@@ -1985,13 +1873,8 @@
           </sp>
           <sp who="#petruchio">
             <speaker>PETRUCHIO</speaker>
-            <stage>
-              <hi>nähert sich Katharine, sie zu umarmen.</hi>
-            </stage>
+            <stage>nähert sich Katharine, sie zu umarmen. Sie weist ihn trotzig zurück.</stage>
             <lg>
-              <l>
-                <hi> Sie weist ihn trotzig zurück.</hi>
-              </l>
               <l>Ei! Käthchen! Was ist das? So ganz verändert?</l>
               <l>Sag's offen, Käthchen! Hast du Angst</l>
               <l>Hast du Furcht vor mir?</l>
@@ -2013,10 +1896,8 @@
           </sp>
           <sp who="#petruchio">
             <speaker>PETRUCHIO</speaker>
-            <stage>
-              <hi>mit großer Befriedigung ihre Hand ergreifend, die er trotz ihres Widerstrebens
-                nicht los läßt.</hi>
-            </stage>
+            <stage>mit großer Befriedigung ihre Hand ergreifend, die er trotz ihres Widerstrebens
+              nicht los läßt.</stage>
             <l>Recht brav! Mein Kind! Jetzt Vater euren Segen!</l>
           </sp>
           <sp who="#baptista">
@@ -2072,23 +1953,23 @@
         </div>
       </div>
       <div type="act">
-        <head>3. Akt</head>
+        <head>Dritter Akt</head>
         <div type="scene">
           <head>Erste Szene</head>
-          <stage>
-            <hi>Baptista, Bianca, Lucentio und Hortensio, beide in ihrer Lehrerverkleidung, gehen
-              ungeduldig auf und ab. Katharine in vollem Brautschmuck sitzt abseits.</hi>
-          </stage>
-          <p>BIANCA, LUCENTIO, HORTENSIO, BAPTISTA.</p>
-          <p>Wie es scheint, so warten wir vergebens.</p>
-          <p>Unsre Hoffnung, unsre Hoffnung ist zerstört.</p>
-          <p>Glauben kann man's kaum!</p>
-          <p>Tag meines Lebens hab ich so was nicht gehört.</p>
+          <stage>Baptista, Bianca, Lucentio und Hortensio, beide in ihrer Lehrerverkleidung, gehen
+            ungeduldig auf und ab. Katharine in vollem Brautschmuck sitzt abseits.</stage>
+          <sp who="#bianca #lucentio #hortensio #baptista">
+            <speaker>BIANCA, LUCENTIO, HORTENSIO, BAPTISTA.</speaker>
+            <lg>
+              <l>Wie es scheint, so warten wir vergebens.</l>
+              <l>Unsre Hoffnung, unsre Hoffnung ist zerstört.</l>
+              <l>Glauben kann man's kaum!</l>
+              <l>Tag meines Lebens hab ich so was nicht gehört.</l>
+            </lg>
+          </sp>
           <sp who="#katharine">
             <speaker>KATHARINE</speaker>
-            <stage>
-              <hi>aufspringend.</hi>
-            </stage>
+            <stage>aufspringend.</stage>
             <lg>
               <l>Wo mag der freche Tollkopf weilen?</l>
               <l>Er vergaß gewiß das Fest!</l>
@@ -2122,7 +2003,11 @@
             <lg>
               <l>Solche herbe Kränkung zu erfahren,</l>
               <l>Brächte Engel selbst in Wut.</l>
-              <l>BIANCA, LUCENTIO, HORTENSIO, BAPTISTA.</l>
+            </lg>
+          </sp>
+          <sp who="#bianca #lucentio #hortensio #baptista">
+            <speaker>BIANCA, LUCENTIO, HORTENSIO, BAPTISTA.</speaker>
+            <lg>
               <l>Wie es scheint, so warten wir vergebens.</l>
               <l>Unsre Hoffnung, unsre Hoffnung ist zerstört.</l>
               <l>Glauben kann man's kaum!</l>
@@ -2142,12 +2027,8 @@
               <l>Schnell forteilen will ich, 's ist das beste,</l>
               <l>Mein Schmach, meine Schmach, sucht Einsamkeit.</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
-            <stage>
-              <hi>Gäste, Herren und Damen treten auf als Chor.</hi>
-            </stage>
+            <stage>Ab.</stage>
+            <stage>Gäste, Herren und Damen treten auf als Chor.</stage>
           </sp>
           <sp who="#baptista">
             <speaker>BAPTISTA.</speaker>
@@ -2158,7 +2039,7 @@
               <l>Eine große Kleinigkeit!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_3-1">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Ei! Was es auch immer wäre,</l>
@@ -2181,7 +2062,7 @@
               <pb n="21"/>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_3-1">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Ist es möglich? Ei! Das wäre!</l>
@@ -2199,7 +2080,7 @@
               <l>Sich der Bräutgam nirgends zeigt!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_3-1">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Ohne Bräutigam Hochzeit machen,</l>
@@ -2217,7 +2098,7 @@
               <l>Diese Hochzeit ist vertagt.</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_3-1">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Ohne Bräut'gam Hochzeit machen</l>
@@ -2243,16 +2124,12 @@
               <l>Ich gehe Käthchens Zorn mit Trost zu stillen,</l>
               <l>Denn zürnt sie heut, ist's nicht aus Eigenwillen.</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
+            <stage>Ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweite Szene</head>
-          <stage>
-            <hi>Bianca, Lucentio, Hortensio</hi>
-          </stage>
+          <stage>Bianca, Lucentio, Hortensio</stage>
           <sp who="#lucentio">
             <speaker>LUCENTIO.</speaker>
             <lg>
@@ -2278,17 +2155,13 @@
               <l>Ihr Herren! Ihr Herren! Verliert ihr den Verstand?</l>
               <l>Ich denke die Entscheidung liegt in meiner Hand.</l>
             </lg>
-            <stage>
-              <hi>Zu Hortensio.</hi>
-            </stage>
+            <stage>Zu Hortensio.</stage>
             <lg>
               <l>Stimmt erst die Laute,</l>
               <l>Seht, wie viele Saiten gesprungen sind.</l>
               <l>Ihr habt genug zu tun.</l>
             </lg>
-            <stage>
-              <hi>Zu Lucentio.</hi>
-            </stage>
+            <stage>Zu Lucentio.</stage>
             <lg>
               <l>Setzt euch zu mir!</l>
               <l>Und alles weitere Streiten soll künftighin,</l>
@@ -2323,16 +2196,12 @@
           </sp>
           <sp who="#hortensio">
             <speaker>HORTENSIO</speaker>
-            <stage>
-              <hi>kommt mit der Laute.</hi>
-            </stage>
+            <stage>kommt mit der Laute.</stage>
             <l>Fräulein! Nun stimmt die Laute.</l>
           </sp>
           <sp who="#bianca">
             <speaker>BIANCA</speaker>
-            <stage>
-              <hi>hat die Laute versucht.</hi>
-            </stage>
+            <stage>hat die Laute versucht.</stage>
             <l>O pfui! Das E ist falsch, das G ist recht.</l>
           </sp>
           <sp who="#lucentio">
@@ -2379,9 +2248,7 @@
           </sp>
           <sp who="#hortensio">
             <speaker>HORTENSIO</speaker>
-            <stage>
-              <hi>zu Lucentio.</hi>
-            </stage>
+            <stage>zu Lucentio.</stage>
             <lg>
               <l>Ihr könnt allein uns lassen!</l>
               <l>Dreistimmige Musik kommt heut nicht vor.</l>
@@ -2398,8 +2265,8 @@
               <l>Wart! Musikus! Dich steche ich noch aus.</l>
             </lg>
           </sp>
-          <sp who="#_bianca">
-            <speaker> BIANCA.</speaker>
+          <sp who="#bianca">
+            <speaker>BIANCA.</speaker>
             <lg>
               <l>Ich glaub, auch dieser will den Hof mir machen,</l>
               <l>Ne lustge Lehrerschaft in diesem Haus!</l>
@@ -2411,9 +2278,7 @@
               <l>Ich glaube gar, er will uns hier bewachen;</l>
               <l>Tu's Bücherheld, ich mache mir nichts draus.</l>
             </lg>
-            <stage>
-              <hi>Zu Bianca.</hi>
-            </stage>
+            <stage>Zu Bianca.</stage>
             <lg>
               <l>Mein Fräulein! Seht auf diesen kleinen Zettel</l>
               <l>Die Scala sinni exemplifizirt.</l>
@@ -2430,9 +2295,7 @@
           <sp who="#hortensio">
             <speaker>HORTENSIO.</speaker>
             <l>Doch hört, wie Cembalon euch dazu führt!</l>
-            <stage>
-              <hi>Singt zur Gitarre.</hi>
-            </stage>
+            <stage>Singt zur Gitarre.</stage>
             <lg>
               <l>C. Cembaloni, so nenne ich mich laut.</l>
               <l>D. Doch Hortensio bin ich.</l>
@@ -2454,9 +2317,7 @@
           </sp>
           <sp who="#hortensio">
             <speaker>HORTENSIO</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <lg>
               <l>Mein herrlich Lied, es hat sie nicht bekehrt!</l>
               <l>Hortensio! Hortensio! Sie ist dein nicht wert.</l>
@@ -2488,14 +2349,10 @@
         </div>
         <div type="scene">
           <head>Dritte Szene</head>
-          <stage>
-            <hi>Baptista zu den Vorigen, später Katharine.</hi>
-          </stage>
+          <stage>Baptista zu den Vorigen, später Katharine.</stage>
           <sp who="#baptista">
             <speaker>BAPTISTA</speaker>
-            <stage>
-              <hi>in stürmischem Jubel herein und durchs Zimmer hüpfend.</hi>
-            </stage>
+            <stage>in stürmischem Jubel herein und durchs Zimmer hüpfend.</stage>
             <lg>
               <l>Er kommt, er kommt! Juheirassa!</l>
               <l>Schon biegt er um die Ecke.</l>
@@ -2505,9 +2362,7 @@
           </sp>
           <sp who="#lucentio">
             <speaker>LUCENTIO</speaker>
-            <stage>
-              <hi>in der Freude Bianca umarmend.</hi>
-            </stage>
+            <stage>in der Freude Bianca umarmend.</stage>
             <lg>
               <l>Er kommt, er kommt! Juhe, juhe!</l>
               <l>Welch ein wonniges Entzücken.</l>
@@ -2522,15 +2377,17 @@
           </sp>
           <sp who="#baptista">
             <speaker>BAPTISTA</speaker>
-            <stage>
-              <hi>Hortensio packend und mit ihm walzend.</hi>
-            </stage>
+            <stage>Hortensio packend und mit ihm walzend.</stage>
             <lg>
               <l>O freut euch mit mir inniglich!</l>
               <l>Ihr habt's ja auch vernommen.</l>
               <l>Wie tröstet, wie erleichtert's mich,</l>
               <l>Der Bräutigam ist gekommen!</l>
-              <l>BIANCA, LUCENTIO.</l>
+            </lg>
+          </sp>
+          <sp who="#bianca #lucentio">
+            <speaker>BIANCA, LUCENTIO.</speaker>
+            <lg>
               <l>Zu allgemeinem Jubeldrang ist alles jetzt verschwommen.</l>
               <l>Es schallet laut der frohe Klang,</l>
               <l>Der Bräutigam ist gekommen!</l>
@@ -2547,9 +2404,7 @@
           </sp>
           <sp who="#katharine">
             <speaker>KATHARINE</speaker>
-            <stage>
-              <hi>zu den Vorigen.</hi>
-            </stage>
+            <stage>zu den Vorigen.</stage>
             <lg>
               <l>Sagt, ist es wahr?</l>
               <l>Ist wirklich er gekommen?</l>
@@ -2588,16 +2443,12 @@
         </div>
         <div type="scene">
           <head>Vierte Szene</head>
-          <stage>
-            <hi>Petruchio und Grumio, beide auffallend nachlässig gekleidet, in zerrissenen und
-              geflickten Röcken, Reitstiefel von verschiedener Größe und Farbe, mit langen
-              Schleppsäbeln usw., treten stürmisch auf. Die Vorigen.</hi>
-          </stage>
+          <stage>Petruchio und Grumio, beide auffallend nachlässig gekleidet, in zerrissenen und
+            geflickten Röcken, Reitstiefel von verschiedener Größe und Farbe, mit langen
+            Schleppsäbeln usw., treten stürmisch auf. Die Vorigen.</stage>
           <sp who="#petruchio">
             <speaker>PETRUCHIO</speaker>
-            <stage>
-              <hi>lärmend.</hi>
-            </stage>
+            <stage>lärmend.</stage>
             <lg>
               <l>Ha, ha! Da sind wir! Ja! Wir sind geritten.</l>
               <l>Ha, ha, ha, da sind wir nun, und werden köstlich jetzt</l>
@@ -2607,10 +2458,8 @@
           </sp>
           <sp who="#katharine">
             <speaker>KATHARINE</speaker>
-            <stage>
-              <hi>mit wankenden Knien sich an Baptista lehnend, während die andern noch wie
-                versteinert stehn.</hi>
-            </stage>
+            <stage>mit wankenden Knien sich an Baptista lehnend, während die andern noch wie
+              versteinert stehn.</stage>
             <l>Das ist zu viel!</l>
           </sp>
           <sp who="#petruchio">
@@ -2626,9 +2475,7 @@
           </sp>
           <sp who="#baptista">
             <speaker>BAPTISTA</speaker>
-            <stage>
-              <hi>zuerst zitternd und verlegen.</hi>
-            </stage>
+            <stage>zuerst zitternd und verlegen.</stage>
             <lg>
               <l>Ei nun! Ihr wißt! Heut ist eur Hochzeitstag.</l>
               <l>Erst sorgten wir, ihr möchtet gar nicht kommen.</l>
@@ -2641,9 +2488,7 @@
           </sp>
           <sp who="#baptista">
             <speaker>BAPTISTA</speaker>
-            <stage>
-              <hi>auf einmal heftig.</hi>
-            </stage>
+            <stage>auf einmal heftig.</stage>
             <l>Wie ein Dragoner!</l>
           </sp>
           <sp who="#lucentio">
@@ -2660,17 +2505,13 @@
           </sp>
           <sp who="#petruchio">
             <speaker>PETRUCHIO</speaker>
-            <stage>
-              <hi>zu Katharine.</hi>
-            </stage>
+            <stage>zu Katharine.</stage>
             <l>Sie schimpfen alle. Du allein bist sanft.</l>
             <pb n="25"/>
           </sp>
           <sp who="#katharine">
             <speaker>KATHARINE</speaker>
-            <stage>
-              <hi>mit unterdrückter Wut.</hi>
-            </stage>
+            <stage>mit unterdrückter Wut.</stage>
             <l>Weil mich die Scham, der Aerger sprachlos machen.</l>
           </sp>
           <sp who="#petruchio">
@@ -2703,9 +2544,7 @@
           </sp>
           <sp who="#petruchio">
             <speaker>PETRUCHIO</speaker>
-            <stage>
-              <hi>zu Katharine.</hi>
-            </stage>
+            <stage>zu Katharine.</stage>
             <lg>
               <l>Mein lieber Engel, habe nur Geduld!</l>
               <l>Es kommt ja wohl in einigen Wochen.</l>
@@ -2731,9 +2570,7 @@
               <l>So schaut ihr, denk ich, nicht aufs Kleid.</l>
               <l>Stellt euch zum Zug! Heda! Musik!</l>
             </lg>
-            <stage>
-              <hi>Musikanten kommen auf Petruchios Ruf, beginnen aber noch nicht so gleich.</hi>
-            </stage>
+            <stage>Musikanten kommen auf Petruchios Ruf, beginnen aber noch nicht so gleich.</stage>
             <l>Los jetzt! Los jetzt! Ein recht fideles Stück!</l>
           </sp>
           <sp who="#katharine">
@@ -2758,21 +2595,17 @@
               <l>Ja, kommt! Und zum erwünschten frohen Ende</l>
               <l>Verhelf uns Gott, ich wasche meine Hände.</l>
             </lg>
-            <stage>
-              <hi>Petruchio nimmt Katharine am Arm. Lucentio ergreift Biancas Hand; Baptista,
-                Hortensio und die Musikanten beschließen den Zug. Alle ab.</hi>
-            </stage>
+            <stage>Petruchio nimmt Katharine am Arm. Lucentio ergreift Biancas Hand; Baptista,
+              Hortensio und die Musikanten beschließen den Zug. Alle ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfte Szene</head>
-          <stage>
-            <hi>Ein Chor von männlichen und weiblichen Dienstboten tritt auf, unter ihnen der
-              Haushofmeister und die Haushälterin. Sie schaffen eine reichbesetzte Tafel mit vielen
-              Gedecken, die bisher im Hintergrund gestanden, in die Mitte der Szene und machen sich
-              mit Ordnen und Schmücken derselben zu schaffen.</hi>
-          </stage>
-          <sp who="#chor">
+          <stage>Ein Chor von männlichen und weiblichen Dienstboten tritt auf, unter ihnen der
+            Haushofmeister und die Haushälterin. Sie schaffen eine reichbesetzte Tafel mit vielen
+            Gedecken, die bisher im Hintergrund gestanden, in die Mitte der Szene und machen sich
+            mit Ordnen und Schmücken derselben zu schaffen.</stage>
+          <sp who="#chor_3-5">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Heute gilt es, sich zu rühren,</l>
@@ -2791,21 +2624,19 @@
               <pb n="26"/>
             </lg>
           </sp>
-          <sp who="#haushälterin">
+          <sp who="#haushaelterin">
             <speaker>HAUSHÄLTERIN.</speaker>
             <lg>
               <l>Auch die gelbkristallnen Schalen,</l>
               <l>reich verziert, ein wahrer Schatz,</l>
             </lg>
-            <stage>
-              <hi>Läßt sich die Schale reichen.</hi>
-            </stage>
+            <stage>Läßt sich die Schale reichen.</stage>
             <lg>
               <l>Stehe neben dem Pokale,</l>
               <l>An Kathrinens Ehrenplatz!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_3-5">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Heute gilt es, sich zu rühren,</l>
@@ -2821,14 +2652,14 @@
               <l>Vierzig Gläser schnell herbei!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_3-5">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Heute spürt es wohl der Keller,</l>
               <l>Wir auch trinken frank und frei.</l>
             </lg>
           </sp>
-          <sp who="#haushälterin">
+          <sp who="#haushaelterin">
             <speaker>HAUSHÄLTERIN.</speaker>
             <l>Rührt die Arme!</l>
           </sp>
@@ -2836,7 +2667,7 @@
             <speaker>HAUSHOFMEISTER.</speaker>
             <l>Rührt die Beine!</l>
           </sp>
-          <sp who="#haushälterin">
+          <sp who="#haushaelterin">
             <speaker>HAUSHÄLTERIN.</speaker>
             <l>Stühle schleppet schnell herzu!</l>
           </sp>
@@ -2844,11 +2675,11 @@
             <speaker>HAUSHOFMEISTER.</speaker>
             <l>Rote Weine, weiße Weine.</l>
           </sp>
-          <sp who="#haushofmeister #haushälterin">
+          <sp who="#haushofmeister #haushaelterin">
             <speaker>HAUSHOFMEISTER UND HAUSHÄLTERIN.</speaker>
             <l>Alles muß jetzt gehn im Nu!</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_3-5">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Gerne mögen wir uns regen,</l>
@@ -2859,7 +2690,7 @@
               <l>Wenn sie erst zum Haus hinaus.</l>
             </lg>
           </sp>
-          <sp who="#haushälterin">
+          <sp who="#haushaelterin">
             <speaker>HAUSHÄLTERIN.</speaker>
             <l>Aber sie,</l>
           </sp>
@@ -2867,11 +2698,11 @@
             <speaker>HAUSHOFMEISTER.</speaker>
             <l>Aber sie,</l>
           </sp>
-          <sp who="#haushofmeister #haushälterin">
+          <sp who="#haushofmeister #haushaelterin">
             <speaker>HAUSHOFMEISTER UND HAUSHÄLTERIN.</speaker>
             <l>Aber sie hat ihren Meister.</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_3-5">
             <speaker>CHOR.</speaker>
             <l>Horch! Horch! Horch! Schon ist die Hochzeit aus.</l>
           </sp>
@@ -2879,7 +2710,7 @@
             <speaker>HAUSHOFMEISTER.</speaker>
             <l>Dort kommt der Musikus, scheint ganz verstört,</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_3-5">
             <speaker>CHOR.</speaker>
             <l>Herr Cembaloni! Sagt, wie ist's gegangen?</l>
           </sp>
@@ -2898,7 +2729,7 @@
               <pb n="27"/>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_3-5">
             <speaker>CHOR.</speaker>
             <l>Nein, das ist zu arg!</l>
           </sp>
@@ -2912,11 +2743,9 @@
         </div>
         <div type="scene">
           <head>Sechste Szene</head>
-          <stage>
-            <hi>Zu den Vorigen treten auf: Musikanten, Petruchio, Katharine, Bianca, Lucentio,
-              Baptista, Grumio; die Hochzeitsgäste der ersten Szene.</hi>
-          </stage>
-          <sp who="#chor">
+          <stage>Zu den Vorigen treten auf: Musikanten, Petruchio, Katharine, Bianca, Lucentio,
+            Baptista, Grumio; die Hochzeitsgäste der ersten Szene.</stage>
+          <sp who="#chor_alle_3-6">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Wir haben zeitlich uns noch eingefunden,</l>
@@ -2961,7 +2790,7 @@
               <l>Doch muß es sein und Gott sei mit euch allen!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_alle_3-6">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Laßt uns euch bitten: bleibt, o bleibt beim Feste,</l>
@@ -3002,11 +2831,11 @@
           </sp>
           <sp who="#petruchio">
             <speaker>PETRUCHIO.</speaker>
-            <lg>
-              <l>Mich treibt mein Stern, mich treibt mein Stern.</l>
-              <l>BIANCA, LUCENTIO.</l>
-              <l>Wir bitten: bleibt noch da!</l>
-            </lg>
+            <l>Mich treibt mein Stern, mich treibt mein Stern.</l>
+          </sp>
+          <sp who="#bianca #lucentio">
+            <speaker>BIANCA, LUCENTIO.</speaker>
+            <l>Wir bitten: bleibt noch da!</l>
           </sp>
           <sp who="#katharine">
             <speaker>KATHARINE.</speaker>
@@ -3042,16 +2871,14 @@
               <l>Laß sie nur heute nicht vergebens flehn!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_alle_3-6">
             <speaker>CHOR.</speaker>
             <l>Soll das nicht erweichen?</l>
             <pb n="28"/>
           </sp>
           <sp who="#petruchio">
             <speaker>PETRUCHIO</speaker>
-            <stage>
-              <hi>der gewaltsam seine Rührung bekämpft hat.</hi>
-            </stage>
+            <stage>der gewaltsam seine Rührung bekämpft hat.</stage>
             <l>Es kann nicht sein, sag Lebewohl den deinen!</l>
           </sp>
           <sp who="#katharine">
@@ -3076,15 +2903,13 @@
             <speaker>PETRUCHIO.</speaker>
             <l>Zwing mich zum Aeußersten nicht, mein sanftes Täubchen!</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_alle_3-6">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Seht nur, die Neuvermählten streiten sich.</l>
               <l>Gebt nach und bleibt bei uns einmütiglich!</l>
             </lg>
-            <stage>
-              <hi>Die Herren scharen sich um Petruchio und Katharine.</hi>
-            </stage>
+            <stage>Die Herren scharen sich um Petruchio und Katharine.</stage>
           </sp>
           <sp who="#katharine">
             <speaker>KATHARINE.</speaker>
@@ -3093,7 +2918,7 @@
               <l>Die Bitte schlugst du ab, wohl, ich befehl es dir.</l>
             </lg>
           </sp>
-          <sp who="#lucentio #chor">
+          <sp who="#lucentio #chor_alle_3-6">
             <speaker>LUCENTIO UND CHOR.</speaker>
             <lg>
               <l>Ja, ihr bleibt hier, wir nehmen euch gefangen.</l>
@@ -3102,21 +2927,17 @@
           </sp>
           <sp who="#petruchio">
             <speaker>PETRUCHIO</speaker>
-            <stage>
-              <hi>die Hand an den Degen legend.</hi>
-            </stage>
+            <stage>die Hand an den Degen legend.</stage>
             <lg>
               <l>Ihr Herrn macht's noch in Güte, und laßt den Ausgang frei!</l>
               <l>Erregt nicht mein Gemüte.</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_alle_3-6">
             <speaker>CHOR.</speaker>
             <l>Nein, nein, du wirst nicht frei!</l>
-            <stage>
-              <hi>Die Herren bewaffnen sich auf komische Art mit Suppenlöffeln, Tranchiermessern,
-                Ofengabeln, Regenschirmen usw.</hi>
-            </stage>
+            <stage>Die Herren bewaffnen sich auf komische Art mit Suppenlöffeln, Tranchiermessern,
+              Ofengabeln, Regenschirmen usw.</stage>
           </sp>
           <sp who="#petruchio">
             <speaker>PETRUCHIO.</speaker>
@@ -3136,7 +2957,7 @@
               <l>Wir fechten nicht zum Schein.</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_alle_3-6">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Jetzt wollen wir uns regen, wo mögen Waffen sein?</l>
@@ -3147,7 +2968,7 @@
             <speaker>PETRUCHIO.</speaker>
             <l>Hier, dieser gute Degen soll unsre Rettung sein!</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_alle_3-6">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Laß deinen Zorn sich legen, schau hier die Waffe mein!</l>
@@ -3172,7 +2993,7 @@
             <speaker>PETRUCHIO.</speaker>
             <l>Ganz recht, wir wollen eilen, gebt Raum ihr Herren!</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_alle_3-6">
             <speaker>CHOR.</speaker>
             <l>Laß ja sie nicht heraus!</l>
           </sp>
@@ -3181,13 +3002,17 @@
             <lg>
               <l>So weit laß ich's nicht kommen,</l>
               <l>Das kann ich nicht ansehn.</l>
-              <l>BIANCA, LUCENTIO.</l>
+            </lg>
+          </sp>
+          <sp who="#bianca #lucentio">
+            <speaker>BIANCA, LUCENTIO.</speaker>
+            <lg>
               <l>O wollet ihrer schonen!</l>
               <l>Laßt endlich sie hinaus!</l>
               <pb n="29"/>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_alle_3-6">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Wir werden euch noch lohnen,</l>
@@ -3207,43 +3032,39 @@
             <lg>
               <l>Willst du mich hier nicht schonen,</l>
               <l>Wie wird es erst zu Haus?</l>
-              <l>BIANCA, LUCENTIO.</l>
-              <l>Laßt endlich sie hinaus!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#bianca #lucentio">
+            <speaker>BIANCA, LUCENTIO.</speaker>
+            <l>Laßt endlich sie hinaus!</l>
+          </sp>
+          <sp who="#chor_alle_3-6">
             <speaker>CHOR.</speaker>
             <l>Laßt ja sie nicht hinaus!</l>
           </sp>
           <sp who="#petruchio">
             <speaker>PETRUCHIO</speaker>
-            <stage>
-              <hi>läßt sich darauf zum Schein in eine Ecke drängen, dann mit gezücktem Degen
-                vortretend.</hi>
-            </stage>
+            <stage>läßt sich darauf zum Schein in eine Ecke drängen, dann mit gezücktem Degen
+              vortretend.</stage>
             <l>Und wären's Millionen, ich haue dich heraus!</l>
-            <stage>
-              <hi>Nach einem kühnen Satze steht Petruchio plötzlich mitten auf der Tafel und reißt
-                Katharine zu sich hinauf. In demselben Augenblick sprengt Grumio mit zwei Pferden in
-                den Saal und an die Tafel. Petruchio springt in den Sattel, setzt Katharine vor sich
-                und alle drei ab.</hi>
-            </stage>
+            <stage>Nach einem kühnen Satze steht Petruchio plötzlich mitten auf der Tafel und reißt
+              Katharine zu sich hinauf. In demselben Augenblick sprengt Grumio mit zwei Pferden in
+              den Saal und an die Tafel. Petruchio springt in den Sattel, setzt Katharine vor sich
+              und alle drei ab.</stage>
           </sp>
-          <sp who="#alle">
+          <sp who="#chor_alle_3-6">
             <speaker>ALLE.</speaker>
             <l>Nun sind sie doch hinaus! Ha, ha, ha, ha, ha!</l>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>4. Akt</head>
+        <head>Vierter Akt</head>
         <div type="scene">
           <head>Erste Szene</head>
-          <stage>
-            <hi>Saal in Petruchios Landhaus, im Vordergrund ein Tisch mit zwei Gedecken. Wartende
-              Diener, unter ihnen Grumio.</hi>
-          </stage>
-          <sp who="#chor_der_diener">
+          <stage>Saal in Petruchios Landhaus, im Vordergrund ein Tisch mit zwei Gedecken. Wartende
+            Diener, unter ihnen Grumio.</stage>
+          <sp who="#chor_der_diener_4-1">
             <speaker>CHOR DER DIENER.</speaker>
             <lg>
               <l>Jetzt können wir's nicht mehr ertragen,</l>
@@ -3262,7 +3083,7 @@
               <l>So werdet ihr's kapieren.</l>
             </lg>
           </sp>
-          <sp who="#chor_der_diener">
+          <sp who="#chor_der_diener_4-1">
             <speaker>CHOR DER DIENER.</speaker>
             <lg>
               <l>Ja, wer das auch noch leisten soll!</l>
@@ -3281,7 +3102,7 @@
               <l>Die sich nicht wollen fügen.</l>
             </lg>
           </sp>
-          <sp who="#diener">
+          <sp who="#chor_der_diener_4-1">
             <speaker>DIENER.</speaker>
             <lg>
               <l>So werd es allen Fraun zuteil,</l>
@@ -3295,7 +3116,7 @@
               <l>Und fliegt, wenn nur sein Auge spricht!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_der_diener_4-1">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Potz, Sapperment! Jetzt mukset nicht</l>
@@ -3306,10 +3127,8 @@
         </div>
         <div type="scene">
           <head>Zweite Szene</head>
-          <stage>
-            <hi>Petruchio und Katharine, beide im Hauskleide, zu den Vorigen. Katharine sieht blaß
-              und leidend aus, Petruchio mit einer Reitpeitsche fuchtelnd.</hi>
-          </stage>
+          <stage>Petruchio und Katharine, beide im Hauskleide, zu den Vorigen. Katharine sieht blaß
+            und leidend aus, Petruchio mit einer Reitpeitsche fuchtelnd.</stage>
           <sp who="#petruchio">
             <speaker>PETRUCHIO.</speaker>
             <lg>
@@ -3320,10 +3139,8 @@
               <l>Was staunt ihr? Wollt ihr gar nicht mehr erwachen?</l>
               <l>Ha wartet nur, ich will euch Beine machen.</l>
             </lg>
-            <stage>
-              <hi>Er wirft einem die Reitpeitsche an den Kopf; der Wein wird gebracht; sich zu
-                Katharine setzend.</hi>
-            </stage>
+            <stage>Er wirft einem die Reitpeitsche an den Kopf; der Wein wird gebracht; sich zu
+              Katharine setzend.</stage>
             <lg>
               <l>Die faulen Schlingel!</l>
               <l>Ha, mir wird zu Galle.</l>
@@ -3407,9 +3224,7 @@
           </sp>
           <sp who="#petruchio">
             <speaker>PETRUCHIO</speaker>
-            <stage>
-              <hi>holt gegen Grumio zum Schlage aus.</hi>
-            </stage>
+            <stage>holt gegen Grumio zum Schlage aus.</stage>
             <l>Ha, widersprichst du mir?</l>
           </sp>
           <sp who="#katharine">
@@ -3423,9 +3238,7 @@
               <l>Das ist zu arg, 's ist wahr, solch schlechtes Zeug,</l>
               <l>Solch schlechtes Zeug auf meinem Tisch zu sehn!</l>
             </lg>
-            <stage>
-              <hi>Mit einem Schlage alles vom Tische wegwerfend.</hi>
-            </stage>
+            <stage>Mit einem Schlage alles vom Tische wegwerfend.</stage>
             <l>Fort mit dem Bettel! Messer, Flaschen, Teller!</l>
           </sp>
           <sp who="#katharine">
@@ -3442,20 +3255,14 @@
               <l>Gebt ihn den Hunden, er sei ihre Beute!</l>
               <l>Und jetzt Adieu für einmal, liebes Kind!</l>
             </lg>
-            <stage>
-              <hi>Ab.</hi>
-            </stage>
-            <stage>
-              <hi>Die Diener entfernen sich, nachdem sie die Ueberreste der Tafel beiseite
-                geschafft.</hi>
-            </stage>
+            <stage>Ab.</stage>
+            <stage>Die Diener entfernen sich, nachdem sie die Ueberreste der Tafel beiseite
+              geschafft.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritte Szene</head>
-          <stage>
-            <hi>Katharine allein.</hi>
-          </stage>
+          <stage>Katharine allein.</stage>
           <sp who="#katharine">
             <speaker>KATHARINE.</speaker>
             <lg>
@@ -3484,15 +3291,11 @@
         </div>
         <div type="scene">
           <head>Vierte Szene</head>
-          <stage>
-            <hi>Katharine, Grumio, später ein Schneider, Kleider-und Putzhändler, zuletzt
-              Petruchio.</hi>
-          </stage>
+          <stage>Katharine, Grumio, später ein Schneider, Kleider-und Putzhändler, zuletzt
+            Petruchio.</stage>
           <sp who="#grumio">
             <speaker>GRUMIO</speaker>
-            <stage>
-              <hi>eintretend.</hi>
-            </stage>
+            <stage>eintretend.</stage>
             <lg>
               <l>Draußen, Herrin, steht ein Schneider,</l>
               <l>Bittet, ob ihr ihn wollt sehn,</l>
@@ -3520,10 +3323,8 @@
           </sp>
           <sp who="#schneider">
             <speaker>SCHNEIDER</speaker>
-            <stage>
-              <hi>tritt auf mit vielen Verbeugungen, Diener bringen mehrere Kisten mit Kleidern und
-                Putzgegenständen, die von ihm ausgepackt werden.</hi>
-            </stage>
+            <stage>tritt auf mit vielen Verbeugungen, Diener bringen mehrere Kisten mit Kleidern und
+              Putzgegenständen, die von ihm ausgepackt werden.</stage>
             <lg>
               <l>Ick sein Schneider aus Paris, abe kute ssöne Waare,</l>
               <l>Atlaskleider, feine Chemis, Hüteken kanz wonderbare.</l>
@@ -3564,9 +3365,7 @@
           </sp>
           <sp who="#petruchio">
             <speaker>PETRUCHIO</speaker>
-            <stage>
-              <hi>zu den Vorigen.</hi>
-            </stage>
+            <stage>zu den Vorigen.</stage>
             <lg>
               <l>Schön, recht schön, mein liebes Weibchen</l>
               <l>Kauft sich Kleider, das ist recht.</l>
@@ -3650,9 +3449,7 @@
           </sp>
           <sp who="#grumio">
             <speaker>GRUMIO</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <l>Ein Gewitter gibt's, schon seh ich's blitzen.</l>
           </sp>
           <sp who="#katharine">
@@ -3668,9 +3465,7 @@
               <l>Hälts du mich für geizig? Heda, Schneider!</l>
               <l>Komm mal her, du Nadelheld!</l>
             </lg>
-            <stage>
-              <hi>Kleider, Hauben, Spitzen usw., alles auf den Boden werfend.</hi>
-            </stage>
+            <stage>Kleider, Hauben, Spitzen usw., alles auf den Boden werfend.</stage>
             <lg>
               <l>Da, du mißgeschaffene Haube,</l>
               <l>Samt den Kleidern lieg im Staube!</l>
@@ -3706,9 +3501,7 @@
           </sp>
           <sp who="#petruchio">
             <speaker>PETRUCHIO</speaker>
-            <stage>
-              <hi>schlägt ihn.</hi>
-            </stage>
+            <stage>schlägt ihn.</stage>
             <lg>
               <l>Du verdammter lumpger Schneider;</l>
               <l>Hältst mich nicht für ehrenwert?</l>
@@ -3727,21 +3520,15 @@
           <sp who="#grumio">
             <speaker>GRUMIO.</speaker>
             <l>Ha, der Beutel voll Zechinen tröstet ihn für diesen Streich.</l>
-            <stage>
-              <hi>Ab. Auch die Kleider werden schnell beiseite geschafft.</hi>
-            </stage>
+            <stage>Ab. Auch die Kleider werden schnell beiseite geschafft.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfte Szene</head>
-          <stage>
-            <hi>Katharine, Petruchio.</hi>
-          </stage>
+          <stage>Katharine, Petruchio.</stage>
           <sp who="#petruchio">
             <speaker>PETRUCHIO</speaker>
-            <stage>
-              <hi>in scherzendem Tone.</hi>
-            </stage>
+            <stage>in scherzendem Tone.</stage>
             <lg>
               <l>Komm, liebes Käthchen, 's ist so schwül im Haus,</l>
               <l>Der helle Mond lockt freundlich uns hinaus.</l>
@@ -3749,9 +3536,7 @@
           </sp>
           <sp who="#katharine">
             <speaker>KATHARINE</speaker>
-            <stage>
-              <hi>wehmütig.</hi>
-            </stage>
+            <stage>wehmütig.</stage>
             <lg>
               <l>Die Sonne brennt in Mittagsglut,</l>
               <l>Jedoch, du willst es ja; dort seh den Mond ich prangen!</l>
@@ -3776,10 +3561,8 @@
               <l>Tu, was du willst mit mir, ich bin dein Weib,</l>
               <l>Ich liebe dich, bin dein mit Seel und Leib!</l>
             </lg>
-            <stage>
-              <hi>Sie sinkt im Uebermaß der Empfindungen vor Petruchio zu Boden, der sie liebevoll
-                aufhebt und an seine Brust drückt.</hi>
-            </stage>
+            <stage>Sie sinkt im Uebermaß der Empfindungen vor Petruchio zu Boden, der sie liebevoll
+              aufhebt und an seine Brust drückt.</stage>
             <pb n="34"/>
           </sp>
           <sp who="#petruchio">
@@ -3828,10 +3611,8 @@
         </div>
         <div type="scene">
           <head>Sechste Szene</head>
-          <stage>
-            <hi>Die Vorigen, Grumio; später Baptista, Lucentio, Bianca, Hortensio und dessen
-              neuvermählte Frau; zum Schluß Chor von Gästen, Petruchio.</hi>
-          </stage>
+          <stage>Die Vorigen, Grumio; später Baptista, Lucentio, Bianca, Hortensio und dessen
+            neuvermählte Frau; zum Schluß Chor von Gästen, Petruchio.</stage>
           <sp who="#grumio">
             <speaker>GRUMIO.</speaker>
             <lg>
@@ -3845,10 +3626,8 @@
               <l>Empfangt sie gut und führt sie hier herein,</l>
               <l>Dann rüstet ein Bankett! Da sind sie schon.</l>
             </lg>
-            <stage>
-              <hi>Grumio ab. Baptista, Bianca, Lucentio, Hortensio und dessen neuvermählte Frau
-                treten auf.</hi>
-            </stage>
+            <stage>Grumio ab. Baptista, Bianca, Lucentio, Hortensio und dessen neuvermählte Frau
+              treten auf.</stage>
           </sp>
           <sp who="#baptista">
             <speaker>BAPTISTA.</speaker>
@@ -3869,9 +3648,7 @@
               <l>Geschah ja manches noch indessen,</l>
               <l>Denn, Käthchen, höre nur die Neuigkeit!</l>
             </lg>
-            <stage>
-              <hi>Lucentio und Bianca vorführend.</hi>
-            </stage>
+            <stage>Lucentio und Bianca vorführend.</stage>
             <lg>
               <l>Hier, diese beiden sind ein Paar geworden!</l>
               <l>Er ist kein Philolog, doch log er viel,</l>
@@ -3880,9 +3657,7 @@
               <l>Doch schickt ich endlich mich in alles;</l>
               <l>Und Hochzeit war das Ende dieses Falles.</l>
             </lg>
-            <stage>
-              <hi>Hortensio und dessen Frau vorführend.</hi>
-            </stage>
+            <stage>Hortensio und dessen Frau vorführend.</stage>
             <lg>
               <l>Auch dieser Mann ist gänzlich jetzt zufrieden,</l>
               <l>Da ihm das Glück solch schönes Weib beschieden.</l>
@@ -3915,9 +3690,7 @@
           </sp>
           <sp who="#bianca">
             <speaker>BIANCA</speaker>
-            <stage>
-              <hi>erstaunt und lauter, so daß die andern aufmerksam werden.</hi>
-            </stage>
+            <stage>erstaunt und lauter, so daß die andern aufmerksam werden.</stage>
             <lg>
               <l>Ich bin verwundert, sag mir, ist es wahr?</l>
               <l>Wo ist dein Trotz, dein Hochmut nur geblieben?</l>
@@ -3925,13 +3698,15 @@
           </sp>
           <sp who="#katharine">
             <speaker>KATHARINE</speaker>
-            <stage>
-              <hi>mit Wärme, während sie von allen beobachtet wird.</hi>
-            </stage>
+            <stage>mit Wärme, während sie von allen beobachtet wird.</stage>
             <lg>
               <l>Noch mehr als das brächt ich zum Opfer dar,</l>
               <l>Ihm, den ich muß von ganzem Herzen lieben, von ganzem Herzen!</l>
-              <l>BIANCA, HORTENSIOS FRAU, LUCENTIO, HORTENSIO, BAPTISTA.</l>
+            </lg>
+          </sp>
+          <sp who="#bianca #hortensios_frau #lucentio #hortensio #baptista">
+            <speaker>BIANCA, HORTENSIOS FRAU, LUCENTIO, HORTENSIO, BAPTISTA.</speaker>
+            <lg>
               <l>Ich muß nur staunen, kann sie kaum erkennen,</l>
               <l>Die einst so trotzig, jetzt wie Engel weich.</l>
             </lg>
@@ -3952,18 +3727,14 @@
           </sp>
           <sp who="#grumio">
             <speaker>GRUMIO</speaker>
-            <stage>
-              <hi>tritt ein.</hi>
-            </stage>
+            <stage>tritt ein.</stage>
             <l>Herr, eure Gäste nahn!</l>
           </sp>
           <sp who="#petruchio">
             <speaker>PETRUCHIO.</speaker>
             <l>Sie sind willkommen, ein heitrer Abend kröne unser Glück!</l>
-            <stage>
-              <hi>Gäste, Herren und Damen treten auf als Chor. Diener verteilen gefüllte Weingläser.
-                Alle gruppieren sich um Katharine und Petruchio.</hi>
-            </stage>
+            <stage>Gäste, Herren und Damen treten auf als Chor. Diener verteilen gefüllte
+              Weingläser. Alle gruppieren sich um Katharine und Petruchio.</stage>
           </sp>
           <sp who="#petruchio">
             <speaker>PETRUCHIO.</speaker>
@@ -3972,7 +3743,7 @@
               <l>Schalle laut die frohe Weise, unsres Glückes, unsrer Lust!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_4-6">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Stimmet an die frohe Weise mit der Freude Jubel laut</l>
@@ -3988,7 +3759,7 @@
               <l>Meines Glückes Unterpfand!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_4-6">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Katharine sie soll leben,</l>
@@ -4004,7 +3775,7 @@
               <l>Dir nur muß ich dankbar sein!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_4-6">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Schenket ein vom Saft der Reben,</l>
@@ -4012,9 +3783,7 @@
               <l>Jedes edle Weib soll leben,</l>
               <l>Selig, wer solch Kleinod fand!</l>
             </lg>
-            <stage>
-              <hi>Ende</hi>
-            </stage>
+            <stage>Ende</stage>
             <pb n="36"/>
           </sp>
         </div>
