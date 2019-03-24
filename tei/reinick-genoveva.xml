@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Genoveva</title>
+        <title type="main">Genoveva</title>
+        <title type="sub">Oper in vier Akten</title>
         <author key="pnd:116427620">Reinick, Robert</author>
         <author key="pnd:118611666">Schumann, Robert</author>
       </titleStmt>
@@ -44,60 +45,63 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="chor">
-            <persName>CHOR</persName>
+          <personGrp xml:id="chor_1" sex="UNKNOWN">
+            <name>Chor (I. Akt)</name>
+          </personGrp>
+          <person xml:id="hidulfus" sex="MALE">
+            <persName>Hidulfus</persName>
           </person>
-          <person xml:id="hidulfus">
-            <persName>HIDULFUS</persName>
+          <person xml:id="golo" sex="MALE">
+            <persName>Golo</persName>
           </person>
-          <person xml:id="golo">
-            <persName>GOLO</persName>
+          <person xml:id="siegfried" sex="MALE">
+            <persName>Siegfried</persName>
           </person>
-          <person xml:id="siegfried">
-            <persName>SIEGFRIED</persName>
+          <person xml:id="genoveva" sex="FEMALE">
+            <persName>Genoveva</persName>
           </person>
-          <person xml:id="genoveva">
-            <persName>GENOVEVA</persName>
+          <person xml:id="drago" sex="MALE">
+            <persName>Drago</persName>
           </person>
-          <person xml:id="drago">
-            <persName>DRAGO</persName>
+          <person xml:id="margaretha" sex="FEMALE">
+            <persName>Margaretha</persName>
           </person>
-          <person xml:id="margaretha">
-            <persName>MARGARETHA</persName>
+          <personGrp xml:id="knechte" sex="MALE">
+            <name>Knechte/Gesang der Knechte</name>
+          </personGrp>
+          <personGrp xml:id="maegde" sex="FEMALE">
+            <name>Mägde</name>
+          </personGrp>
+          <person xml:id="balthasar" sex="MALE">
+            <persName>Balthasar</persName>
           </person>
-          <person xml:id="knechte">
-            <persName>GESANG DER KNECHTE</persName>
+          <personGrp xml:id="chor_2" sex="UNKNOWN">
+            <name>Chor (II. Akt)</name>
+          </personGrp>
+          <personGrp xml:id="stimmen_hinter_der_scene" sex="UNKNOWN">
+            <name>Stimmen hinter der Scene</name>
+          </personGrp>
+          <person xml:id="dragos_geist" sex="MALE">
+            <persName>Drago's Geist</persName>
           </person>
-          <person xml:id="mägde">
-            <persName>MÄGDE</persName>
+          <person xml:id="caspar" sex="MALE">
+            <persName>Caspar</persName>
           </person>
-          <person xml:id="balthasar">
-            <persName>BALTHASAR</persName>
-          </person>
-          <person xml:id="stimmen_hinter_der_scene">
-            <persName>STIMMEN HINTER DER SCENE</persName>
-          </person>
-          <person xml:id="geist">
-            <persName>GEIST</persName>
-          </person>
-          <person xml:id="caspar">
-            <persName>CASPAR</persName>
-          </person>
-          <person xml:id="jäger">
-            <persName>JÄGER</persName>
-          </person>
-          <person xml:id="chor_der_frauen">
-            <persName>CHOR DER FRAUEN</persName>
-          </person>
-          <person xml:id="chor_der_männer">
-            <persName>CHOR DER MÄNNER</persName>
-          </person>
-          <person xml:id="mädchen">
-            <persName>MÄDCHEN</persName>
-          </person>
-          <person xml:id="jünglinge">
-            <persName>JÜNGLINGE</persName>
-          </person>
+          <personGrp xml:id="chor_gesang_schlusschor_alle_4" sex="UNKNOWN">
+            <name>Chor/Gesang/Schlußchor/Alle (IV. Akt)</name>
+          </personGrp>
+          <personGrp xml:id="chor_der_frauen" sex="FEMALE">
+            <name>Chor der Frauen</name>
+          </personGrp>
+          <personGrp xml:id="chor_der_maenner" sex="MALE">
+            <name>Chor der Männer</name>
+          </personGrp>
+          <personGrp xml:id="maedchen" sex="FEMALE">
+            <name>Mädchen</name>
+          </personGrp>
+          <personGrp xml:id="juenglinge" sex="MALE">
+            <name>Jünglinge</name>
+          </personGrp>
         </listPerson>
       </particDesc>
       <textClass>
@@ -110,6 +114,7 @@
       <listChange>
         <change when="2017-12-02">(dlina) file conversion from source</change>
         <change when="2017-12-02">(ff) delete unneeded div wraps</change>
+        <change when="2019-03-24">(ff) formalities</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -141,8 +146,8 @@
     <body>
       <div type="act">
         <head>Erster Akt.</head>
-        <p>Großer Schloßhof in Siegfrieds Burg.</p>
-        <sp who="#chor">
+        <stage>Großer Schloßhof in Siegfrieds Burg.</stage>
+        <sp who="#chor_1">
           <speaker>CHOR.</speaker>
           <lg>
             <l>Erhebet Herz und Hände</l>
@@ -165,12 +170,11 @@
             <l>Zu einem gottgefäll'gen Kampfe</l>
             <l>Rüstet Ihr Euch!</l>
             <l>Es gilt dem Erzfeind unsers Glaubens,</l>
-            <l>
-              <hi>Abdorrhaman</hi>, der aus Spanien in</l>
+            <l><emph>Abdorrhaman</emph>, der aus Spanien in</l>
             <l>Das Frankreich hereingebrochen!</l>
           </lg>
         </sp>
-        <sp who="#chor">
+        <sp who="#chor_1">
           <speaker>CHOR.</speaker>
           <l>Verderben ihm!</l>
         </sp>
@@ -183,7 +187,7 @@
             <l>Den Frechen mit dem Schwert zu strafen –</l>
           </lg>
         </sp>
-        <sp who="#chor">
+        <sp who="#chor_1">
           <speaker>CHOR.</speaker>
           <l>Heil Karl Martell!</l>
           <pb n="3"/>
@@ -200,11 +204,11 @@
             <l>Zu schützen Christi Kreuz!</l>
           </lg>
         </sp>
-        <sp who="#_chor">
-          <speaker> CHOR.</speaker>
+        <sp who="#chor_1">
+          <speaker>CHOR.</speaker>
           <l>Wir sind bereit!</l>
         </sp>
-        <sp who="#hidulfus #chor">
+        <sp who="#hidulfus #chor_1">
           <speaker>HIDULFUS UND CHOR.</speaker>
           <lg>
             <l>So streite denn, du tapfre Schaar,</l>
@@ -245,8 +249,7 @@
             <l>Frieden, zieh' in meine Brust!</l>
           </lg>
           <lg>
-            <l>
-              <pb n="4"/> Trüb' will Alles mir erscheinen,</l>
+            <l><pb n="4"/> Trüb' will Alles mir erscheinen,</l>
             <l>Wie die Sonn' auch golden scheint –</l>
             <l>Könnt' ich klagen, könnt' ich weinen,</l>
             <l>Thränen, wie ich sonst geweint!</l>
@@ -286,13 +289,10 @@
             <l>Du mich bestellt! –</l>
             <l>Und ich, ein Mensch,</l>
             <l>Soll diesen Himmel wahren! –</l>
-            <l>
-              <pb n="5"/> Ich seh' sie nahen, – könnt' ich flüchten,</l>
+            <l><pb n="5"/> Ich seh' sie nahen, – könnt' ich flüchten,</l>
             <l>Verbergen mich, wohin kein Strahl der Sonne dringt!</l>
           </lg>
-          <stage>
-            <hi>Siegfried, Genoveva, Drago, Balthasar, Caspar, Dienerschaft.</hi>
-          </stage>
+          <stage>Siegfried, Genoveva, Drago, Balthasar, Caspar, Dienerschaft.</stage>
         </sp>
         <sp who="#siegfried">
           <speaker>SIEGFRIED.</speaker>
@@ -352,7 +352,7 @@
           <speaker>GENOVEVA.</speaker>
           <l>Geliebter Mann –</l>
         </sp>
-        <sp who="#beide">
+        <sp who="#siegfried #genoveva">
           <speaker>BEIDE.</speaker>
           <l>Beglückt' wem solch' ein Held / Weib gegeben!</l>
         </sp>
@@ -360,8 +360,7 @@
           <speaker>SIEGFRIED.</speaker>
           <lg>
             <l>Dies gilt uns! –</l>
-            <l>
-              <pb n="6"/> Zu Euch noch</l>
+            <l><pb n="6"/> Zu Euch noch</l>
             <l>Wen'ge Worte! Drago,</l>
             <l>Treu hast du dich stets bewährt,</l>
             <l>Deiner Pflege sei vertraut</l>
@@ -409,7 +408,7 @@
         <sp who="#siegfried">
           <speaker>SIEGFRIED.</speaker>
           <lg>
-            <l>Besser dienst Du <hi>hier</hi> mir. – Sieh,</l>
+            <l>Besser dienst Du <emph>hier</emph> mir. – Sieh,</l>
             <l>Nur dem Besten möcht' ich meiner</l>
             <l>Güter Bestes anvertrau'n –</l>
             <l>Der bist Du! –</l>
@@ -451,11 +450,9 @@
             <l>Auf! führt mein Schlachtroß vor!</l>
           </lg>
         </sp>
-        <sp who="#_chor">
-          <speaker> CHOR.</speaker>
-          <stage>
-            <hi>1.</hi>
-          </stage>
+        <sp who="#chor_1">
+          <speaker>CHOR.</speaker>
+          <stage>1.</stage>
           <lg>
             <l>Auf, auf in das Feld!</l>
             <l>Graf Siegfried der Held,</l>
@@ -468,9 +465,7 @@
             <l>Mit uns ist das Glück,</l>
             <l>Bald kehren wir zurück!</l>
           </lg>
-          <stage>
-            <hi>2.</hi>
-          </stage>
+          <stage>2.</stage>
           <lg>
             <l>Karl Martell, Karl Martell, tapferer Hammer,</l>
             <l>Allem Heidenvolk zum Jammer!</l>
@@ -497,8 +492,8 @@
           <speaker>SIEGFRIED.</speaker>
           <l>Auf Wiederseh'n!</l>
         </sp>
-        <sp who="#_golo">
-          <speaker> GOLO.</speaker>
+        <sp who="#golo">
+          <speaker>GOLO.</speaker>
           <lg>
             <l>O wie sie küßt!</l>
             <l>Herr, das Roß sieht bereit!</l>
@@ -795,8 +790,8 @@
           <speaker>MARGARETHA.</speaker>
           <l>Ich schwör's! –</l>
         </sp>
-        <sp who="#_golo">
-          <speaker> GOLO.</speaker>
+        <sp who="#golo">
+          <speaker>GOLO.</speaker>
           <lg>
             <l>Mit neuem Leben</l>
             <l>Erfüllst Du mich wieder,</l>
@@ -812,18 +807,14 @@
         </sp>
         <sp who="#margaretha">
           <speaker>MARGARETHA</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <lg>
             <l>Was ich gewollt,</l>
             <l>Mir ist's geglückt –</l>
             <l>Ich hab' ihn umgarnt,</l>
             <l>Ich halt' ihn umstrickt –</l>
           </lg>
-          <stage>
-            <hi>Laut.</hi>
-          </stage>
+          <stage>Laut.</stage>
           <lg>
             <l>Dein soll sie werden,</l>
             <l>Dein muß sie werden,</l>
@@ -834,7 +825,7 @@
       </div>
       <div type="act">
         <head>Zweiter Akt.</head>
-        <p>Halle.</p>
+        <stage>Halle.</stage>
         <sp who="#genoveva">
           <speaker>GENOVEVA.</speaker>
           <lg>
@@ -850,11 +841,9 @@
             <l>Getrost, getrost, mein Herze –</l>
           </lg>
         </sp>
-        <sp who="#gesang_der_knechte">
+        <sp who="#knechte">
           <speaker>GESANG DER KNECHTE.</speaker>
-          <stage>
-            <hi>1.</hi>
-          </stage>
+          <stage>1.</stage>
           <lg>
             <l>Füllet die Becher bis zum Rande,</l>
             <l>Stoßet an und trinket aus!</l>
@@ -862,9 +851,7 @@
             <l>Ist der Knappe Herr im Haus!</l>
             <l>Stoßt an und trinket aus!</l>
           </lg>
-          <stage>
-            <hi>2.</hi>
-          </stage>
+          <stage>2.</stage>
           <lg>
             <l>Ei – wer sitzt dort in der Ecke. –</l>
             <l>Alter Drago, was ist das!</l>
@@ -881,8 +868,7 @@
             <l>Die Knechte sind's, Margaretha unter ihnen,</l>
             <l>Dies Schreckbild meinem Auge! –</l>
             <l>Und dort der gute Drago,</l>
-            <l>
-              <pb n="14"/> Er will nicht würfeln mit und singen! –</l>
+            <l><pb n="14"/> Er will nicht würfeln mit und singen! –</l>
             <l>Wie wild sie lärmen! – Siegfried, Siegfried,</l>
             <l>Kehr' bald zurück, brich ihren Uebermuth,</l>
             <l>Sie stürzen Haus und Hof dir um!</l>
@@ -1005,9 +991,7 @@
           <lg>
             <l>O anmuthvollste Zauberin!</l>
           </lg>
-          <stage>
-            <hi>Duett.</hi>
-          </stage>
+          <stage>Duett.</stage>
           <lg>
             <l>Wenn ich ein Vöglein wär',</l>
             <l>Und auch zwei Flüglein hätt',</l>
@@ -1023,8 +1007,7 @@
             <l>Bin ich allein!</l>
           </lg>
           <lg>
-            <l>
-              <pb n="16"/> Es vergeht kein' Stund' in der Nacht,</l>
+            <l><pb n="16"/> Es vergeht kein' Stund' in der Nacht,</l>
             <l>Da mein Herze nicht erwacht</l>
             <l>Und an dich gedenkt,</l>
             <l>Daß du mir viel tausendmal</l>
@@ -1100,8 +1083,7 @@
           <speaker>GENOVEVA.</speaker>
           <lg>
             <l>Was sprecht Ihr da? –</l>
-            <l>
-              <pb n="17"/> Erwacht, denn Ihr verkennet mich!</l>
+            <l><pb n="17"/> Erwacht, denn Ihr verkennet mich!</l>
             <l>Ich bin es, Genoveva, die jetzt spricht,</l>
             <l>Gemahlin Eures Herrn, des Grafen Siegfried!</l>
           </lg>
@@ -1114,8 +1096,8 @@
             <l>Worte finden, Töne –</l>
           </lg>
         </sp>
-        <sp who="#_genoveva">
-          <speaker> GENOVEVA.</speaker>
+        <sp who="#genoveva">
+          <speaker>GENOVEVA.</speaker>
           <lg>
             <l>Es fällt ihn Wahnsinn an – wer steht mir bei! –</l>
             <l>Wo flieh' ich hin! Drago! Angelo! hört Niemand mich?</l>
@@ -1163,7 +1145,7 @@
         </sp>
         <sp who="#genoveva">
           <speaker>GENOVEVA.</speaker>
-          <l>Zurück, <hi>ehrloser Bastard</hi>!</l>
+          <l>Zurück, <emph>ehrloser Bastard</emph>!</l>
         </sp>
         <sp who="#golo">
           <speaker>GOLO.</speaker>
@@ -1247,7 +1229,7 @@
           <speaker>GOLO.</speaker>
           <lg>
             <l>Drago,</l>
-            <l>Die Schurken – – sprachen <hi>wahr</hi>!</l>
+            <l>Die Schurken – – sprachen <emph>wahr</emph>!</l>
           </lg>
         </sp>
         <sp who="#drago">
@@ -1276,7 +1258,7 @@
         <sp who="#drago">
           <speaker>DRAGO.</speaker>
           <lg>
-            <l> – mit ihm zu beten</l>
+            <l>– mit ihm zu beten</l>
             <l>Vielleicht –</l>
           </lg>
         </sp>
@@ -1388,7 +1370,7 @@
         <sp who="#margaretha">
           <speaker>MARGARETHA.</speaker>
           <lg>
-            <l> – Ich sing ein Schreiben an die Gräfin auf</l>
+            <l>– Ich sing ein Schreiben an die Gräfin auf</l>
             <l>Manch' Tränklein weiß ich zu bereiten, auch</l>
             <l>Für ihn, das soll von seinen Leiden ihn befrei'n,</l>
             <l>Und Dich von ihm –</l>
@@ -1434,7 +1416,7 @@
             <l>An seinem Herzen auszuruh'n.</l>
           </lg>
         </sp>
-        <sp who="#knechte #mägde">
+        <sp who="#knechte #maegde">
           <speaker>KNECHTE UND MÄGDE.</speaker>
           <lg>
             <l>Sacht, sacht</l>
@@ -1450,7 +1432,7 @@
             <l>Umstellt die Thür!</l>
           </lg>
         </sp>
-        <sp who="#chor">
+        <sp who="#chor_2">
           <speaker>CHOR.</speaker>
           <lg>
             <l>Er entschlüpft uns nicht,</l>
@@ -1462,7 +1444,7 @@
           <speaker>BALTHASAR.</speaker>
           <l>Das Licht verlischt –</l>
         </sp>
-        <sp who="#chor">
+        <sp who="#chor_2">
           <speaker>CHOR.</speaker>
           <l>Nur stille, still –</l>
         </sp>
@@ -1473,7 +1455,7 @@
             <l>Wie von Zwei'n –</l>
           </lg>
         </sp>
-        <sp who="#chor">
+        <sp who="#chor_2">
           <speaker>CHOR.</speaker>
           <l>Dringt ein, dringt ein!</l>
         </sp>
@@ -1484,7 +1466,7 @@
             <l>Wer es auch sei, zurück!</l>
           </lg>
         </sp>
-        <sp who="#chor">
+        <sp who="#chor_2">
           <speaker>CHOR.</speaker>
           <l>Still, still! sie sind gefangen!</l>
         </sp>
@@ -1530,7 +1512,7 @@
             <l>Geht fort, ich bitt' Euch! –</l>
           </lg>
         </sp>
-        <sp who="#chor">
+        <sp who="#chor_2">
           <speaker>CHOR.</speaker>
           <lg>
             <l>Die brüstet sich,</l>
@@ -1546,7 +1528,7 @@
             <l>Geht, geht! Weicht zurück!</l>
           </lg>
         </sp>
-        <sp who="#chor">
+        <sp who="#chor_2">
           <speaker>CHOR.</speaker>
           <l>Dringt hinein, dringt hinein!</l>
         </sp>
@@ -1568,14 +1550,13 @@
         </sp>
         <sp who="#golo">
           <speaker>GOLO.</speaker>
-          <l>
-            <hi>Mich</hi> suchten sie?</l>
+          <l><emph>Mich</emph> suchten sie?</l>
         </sp>
         <sp who="#genoveva">
           <speaker>GENOVEVA.</speaker>
           <l>Ja Euch!</l>
         </sp>
-        <sp who="#chor">
+        <sp who="#chor_2">
           <speaker>CHOR.</speaker>
           <lg>
             <l>Nein, nein</l>
@@ -1601,12 +1582,12 @@
           <speaker>DRAGO.</speaker>
           <l>Erbarmen, Erbarmen!</l>
         </sp>
-        <sp who="#chor">
+        <sp who="#chor_2">
           <speaker>CHOR.</speaker>
           <l>Drago!</l>
         </sp>
-        <sp who="#_genoveva">
-          <speaker> GENOVEVA.</speaker>
+        <sp who="#genoveva">
+          <speaker>GENOVEVA.</speaker>
           <l>Gott steh mir bei!</l>
         </sp>
         <sp who="#balthasar">
@@ -1614,11 +1595,11 @@
           <l>Frau Gräfin, mit Erlaubniß, das ist schlecht –</l>
           <pb n="24"/>
         </sp>
-        <sp who="#_golo">
-          <speaker> GOLO.</speaker>
+        <sp who="#golo">
+          <speaker>GOLO.</speaker>
           <l>Freund, du bist rasch!</l>
         </sp>
-        <sp who="#chor">
+        <sp who="#chor_2">
           <speaker>CHOR.</speaker>
           <l>Seht, sie erbleicht, die Schuld ist klar!</l>
         </sp>
@@ -1680,7 +1661,7 @@
             <l>Sie müßte gleich hinunter!</l>
           </lg>
         </sp>
-        <sp who="#chor">
+        <sp who="#chor_2">
           <speaker>CHOR.</speaker>
           <lg>
             <l>Zum Thurm mit ihr, zum Thurm mit ihr,</l>
@@ -1695,12 +1676,12 @@
             <l>Wo ich das Blut nicht seh'! –</l>
           </lg>
         </sp>
-        <sp who="#balthasar #chor">
+        <sp who="#balthasar #chor_2">
           <speaker>BALTHASAR UND CHOR.</speaker>
           <l>Zum Thurm mit ihr!</l>
         </sp>
-        <sp who="#_genoveva">
-          <speaker> GENOVEVA.</speaker>
+        <sp who="#genoveva">
+          <speaker>GENOVEVA.</speaker>
           <lg>
             <l>O Herr im Himmel, schütz' Dein Kind!</l>
             <l>Was hab' ich gethan,</l>
@@ -1719,7 +1700,7 @@
           <speaker>BALTHASAR.</speaker>
           <l>Führt sie hinunter, bindet sie!</l>
         </sp>
-        <sp who="#chor">
+        <sp who="#chor_2">
           <speaker>CHOR.</speaker>
           <lg>
             <l>Führt sie hinunter, bindet sie!</l>
@@ -1729,7 +1710,7 @@
       </div>
       <div type="act">
         <head>Dritter Akt.</head>
-        <p>Zimmer in einer Herberge zu Straßburg.</p>
+        <stage>Zimmer in einer Herberge zu Straßburg.</stage>
         <sp who="#siegfried">
           <speaker>SIEGFRIED.</speaker>
           <lg>
@@ -1864,17 +1845,14 @@
             <l>Spring', Junge freu' Dich, laß</l>
             <l>Die Rosse satteln, heute noch</l>
             <l>Geht's fort nach Haus! Die Wunde zwar</l>
-            <l>Noch brennt sie – aber <hi>hier</hi>
-            </l>
+            <l>Noch brennt sie – aber <emph>hier</emph></l>
             <l>Brennt's heißer noch, nicht länger</l>
             <l>Ertrag' ich's fern vom Haus –</l>
             <l>Die Nacht ist schön –</l>
             <l>O wonn'ger Strom der Luft! –</l>
             <l>Mach' alles fertig, – fort, fort!</l>
           </lg>
-        </sp>
-        <sp who="#lied">
-          <speaker>LIED.</speaker>
+          <stage>Lied.</stage>
           <lg>
             <l>Bald blick' ich dich wieder mein Heimathschloß,</l>
             <l>Der Thurmwart bläst, es jauchzt der Troß,</l>
@@ -1884,8 +1862,7 @@
             <l>Und Aug' an Aug' und Brust an Brust!</l>
             <l>O Liebestreu', wie reich an Segen!</l>
             <l>O Wiederseh'n so reich an Luft!</l>
-            <l>
-              <pb n="28"/> Besiegt ist der Feind, das Kreuz erhöht,</l>
+            <l><pb n="28"/> Besiegt ist der Feind, das Kreuz erhöht,</l>
             <l>Des Glaubens Panier das Land durchweht!</l>
             <l>Wie grimm die Wuth des Heiden war,</l>
             <l>Mit uns stritt Gott und seine Schaar!</l>
@@ -1933,7 +1910,7 @@
         </sp>
         <sp who="#siegfried">
           <speaker>SIEGFRIED.</speaker>
-          <l> – Von wein Hauscaplan –</l>
+          <l>– Von wein Hauscaplan –</l>
         </sp>
         <sp who="#golo">
           <speaker>GOLO.</speaker>
@@ -1962,8 +1939,7 @@
             <l>Verhöhn' mich nicht mit Deinem Trost! –</l>
             <l>Niemand auf der Welt</l>
             <l>Soll mehr mich seh'n – Niemand wissen,</l>
-            <l>Wo ich geblieben! doch – auch <hi>sie</hi>
-            </l>
+            <l>Wo ich geblieben! doch – auch <emph>sie</emph></l>
             <l>Soll sterben!</l>
             <l>Hier nimm mein Schwert und hier den Ring,</l>
             <l>Zeig' beides ihr, damit sie weiß,</l>
@@ -1976,12 +1952,8 @@
             <l>Die meiner pflegte, wohnt! führ' hin uns!</l>
             <l>Komm, guter Golo! –</l>
           </lg>
-          <stage>
-            <hi>Verwandlung.</hi>
-          </stage>
-          <stage>
-            <hi>Margarethens Zimmer.</hi>
-          </stage>
+          <stage>Verwandlung.</stage>
+          <stage>Margarethens Zimmer.</stage>
         </sp>
         <sp who="#margaretha">
           <speaker>MARGARETHA.</speaker>
@@ -2051,7 +2023,7 @@
           <speaker>MARGARETHA.</speaker>
           <lg>
             <l>Das heißt: sang' an?</l>
-            <l>Doch die Bedingung, denkt jetzt nicht an <hi>Ihn</hi>,</l>
+            <l>Doch die Bedingung, denkt jetzt nicht an <emph>Ihn</emph>,</l>
             <l>Der einst die Welt erschuf und sie erhält!</l>
           </lg>
         </sp>
@@ -2073,9 +2045,8 @@
             <l>Wir beid' sind rein!</l>
           </lg>
         </sp>
-        <sp who="#_margaretha">
-          <speaker>
-            <pb n="31"/> MARGARETHA.</speaker>
+        <sp who="#margaretha">
+          <speaker><pb n="31"/> MARGARETHA.</speaker>
           <lg>
             <l>Was bebst Du, Feiger, denke d'ran,</l>
             <l>Wie Dich die Gräfin höhnte?</l>
@@ -2114,8 +2085,8 @@
           <speaker>SIEGFRIED.</speaker>
           <l>Was zaudert Ihr, – laßt sehn den Spiegel!</l>
         </sp>
-        <sp who="#_margaretha">
-          <speaker> MARGARETHA.</speaker>
+        <sp who="#margaretha">
+          <speaker>MARGARETHA.</speaker>
           <l>Ein schönes Weib – fürwahr des Küssens werth!</l>
         </sp>
         <sp who="#golo">
@@ -2132,19 +2103,16 @@
             <l>Euch zu dienen!</l>
             <l>»Erscheint!«</l>
           </lg>
-          <stage>
-            <hi>Erstes Bild.</hi>
-          </stage>
+          <stage>Erstes Bild.</stage>
         </sp>
-        <sp who="#_stimmen_hinter_der_scene">
-          <speaker> STIMMEN HINTER DER SCENE.</speaker>
+        <sp who="#stimmen_hinter_der_scene">
+          <speaker>STIMMEN HINTER DER SCENE.</speaker>
           <lg>
             <l>Abendlüste kühlend weh'n,</l>
             <l>Liebe singt in Wald und Feld!</l>
             <l>Kann ein Herz allein besteh'n,</l>
             <l>Wo so selig rings die Welt!</l>
-            <l>
-              <pb n="32"/> Saaten wogen um dich her,</l>
+            <l><pb n="32"/> Saaten wogen um dich her,</l>
             <l>Schlägt dein Herz nicht Liebeswogen</l>
             <l>Den du suchst, er tritt daher,</l>
             <l>Erde wird zum Blüthenmeer:</l>
@@ -2208,13 +2176,10 @@
           <lg>
             <l>Erscheint, erscheint!</l>
           </lg>
-          <stage>
-            <hi>
-              <pb n="33"/> Zweites Bild.</hi>
-          </stage>
+          <stage><pb n="33"/> Zweites Bild.</stage>
         </sp>
-        <sp who="#_stimmen_hinter_der_scene">
-          <speaker> STIMMEN HINTER DER SCENE.</speaker>
+        <sp who="#stimmen_hinter_der_scene">
+          <speaker>STIMMEN HINTER DER SCENE.</speaker>
           <lg>
             <l>Wann die Lichter der Erde verglüh'n,</l>
             <l>Wann der Blüthen Kelche geschlossen,</l>
@@ -2268,8 +2233,7 @@
         <sp who="#margaretha">
           <speaker>MARGARETHA.</speaker>
           <lg>
-            <l>
-              <hi>Drei</hi> Bilder steh'n in meiner Macht</l>
+            <l><emph>Drei</emph> Bilder steh'n in meiner Macht</l>
             <l>Mehr nicht! Wollt noch das Ihr?</l>
           </lg>
         </sp>
@@ -2283,9 +2247,7 @@
           <lg>
             <l>Erscheint, erscheint, erscheint!</l>
           </lg>
-          <stage>
-            <hi>Drittes Bild.</hi>
-          </stage>
+          <stage>Drittes Bild.</stage>
         </sp>
         <sp who="#stimmen_hinter_der_scene">
           <speaker>STIMMEN HINTER DER SCENE.</speaker>
@@ -2314,15 +2276,17 @@
           <lg>
             <l>O Gott!</l>
             <l>Furchtbar Gesicht, verschwind!</l>
-            <l>DRAGO'S GEIST.</l>
-            <l>Umsonst versuchst Du Deine Macht an mir!</l>
           </lg>
+        </sp>
+        <sp who="#dragos_geist">
+          <speaker>DRAGO'S GEIST.</speaker>
+          <l>Umsonst versuchst Du Deine Macht an mir!</l>
         </sp>
         <sp who="#margaretha">
           <speaker>MARGARETHA.</speaker>
           <l>Wer sandte Dich!</l>
         </sp>
-        <sp who="#geist">
+        <sp who="#dragos_geist">
           <speaker>GEIST.</speaker>
           <l>Der Herr!</l>
         </sp>
@@ -2330,7 +2294,7 @@
           <speaker>MARGARETHA.</speaker>
           <l>Ich kenn' ihn nicht!</l>
         </sp>
-        <sp who="#geist">
+        <sp who="#dragos_geist">
           <speaker>GEIST.</speaker>
           <lg>
             <l>Du riefst ihn an, –</l>
@@ -2344,7 +2308,7 @@
           <l>Und thu' ich's nicht?</l>
           <pb n="35"/>
         </sp>
-        <sp who="#geist">
+        <sp who="#dragos_geist">
           <speaker>GEIST.</speaker>
           <lg>
             <l>So wird</l>
@@ -2356,7 +2320,7 @@
           <speaker>MARGARETHA.</speaker>
           <l>So tödt' ich mich vorher!</l>
         </sp>
-        <sp who="#geist">
+        <sp who="#dragos_geist">
           <speaker>GEIST.</speaker>
           <lg>
             <l>Versuch' es nicht! In Flammen wirst</l>
@@ -2364,19 +2328,19 @@
             <l>Und gegen Stahl und Eisen wie von Stein!</l>
           </lg>
         </sp>
-        <sp who="#_margaretha">
-          <speaker> MARGARETHA.</speaker>
+        <sp who="#margaretha">
+          <speaker>MARGARETHA.</speaker>
           <l>Entsetzen packt mich –</l>
         </sp>
-        <sp who="#geist">
+        <sp who="#dragos_geist">
           <speaker>GEIST.</speaker>
           <lg>
             <l>Ja,</l>
             <l>So ist's bestimmt, so wird's erfüllt!</l>
           </lg>
         </sp>
-        <sp who="#_margaretha">
-          <speaker> MARGARETHA.</speaker>
+        <sp who="#margaretha">
+          <speaker>MARGARETHA.</speaker>
           <lg>
             <l>Schon lecken die Flammen am Holz –</l>
             <l>Sie faßen mich blutigroth!</l>
@@ -2394,7 +2358,7 @@
       </div>
       <div type="act">
         <head>Vierter Akt.</head>
-        <p>Wilde Felsengegend.</p>
+        <stage>Wilde Felsengegend.</stage>
         <sp who="#genoveva">
           <speaker>GENOVEVA.</speaker>
           <lg>
@@ -2448,9 +2412,7 @@
         </sp>
         <sp who="#caspar #balthasar">
           <speaker>CASPAR UND BALTHASAR.</speaker>
-          <stage>
-            <hi>Gaunerlied.</hi>
-          </stage>
+          <stage>Gaunerlied.</stage>
           <lg>
             <l>Sie hatten beid' sich herzlich lieb,</l>
             <l>Spitzbübin war sie, er ein Dieb.</l>
@@ -2474,8 +2436,7 @@
             <l>Sterben müssen, so jung,</l>
             <l>Sterben von Mörderhand, –</l>
             <l>Preisgegeben der Schande!</l>
-            <l>
-              <pb n="37"/> Zeigt kein Ausweg sich? erscheint kein Retter?</l>
+            <l><pb n="37"/> Zeigt kein Ausweg sich? erscheint kein Retter?</l>
             <l>Siegfried, Siegfried, hörst du die Stimme nicht</l>
             <l>Deines Weibes, das dich treu geliebt?</l>
             <l>Und die Schuld wird einst zu Tage kommen.</l>
@@ -2489,7 +2450,7 @@
             <l>Ein Kreuz, ein Muttergottesbild!</l>
           </lg>
           <lg>
-            <l> – Dies sah'n sie nicht, sie hätten</l>
+            <l>– Dies sah'n sie nicht, sie hätten</l>
             <l>Den letzten Trost mir geraubt! –</l>
             <l>O heil'ge Jungfrau, blick' auf mich,</l>
             <l>Gieb' Kraft, das Bitterste zu tragen!</l>
@@ -2666,7 +2627,7 @@
             <l>Mit diesem Schwerte thun!</l>
           </lg>
         </sp>
-        <sp who="#die_beiden">
+        <sp who="#balthasar #caspar">
           <speaker>DIE BEIDEN.</speaker>
           <l>Wie Ihr befehlt, so wird's gescheh'n! –</l>
         </sp>
@@ -2700,8 +2661,8 @@
           <speaker>BALTHASAR.</speaker>
           <l>Nun ist's genug!</l>
         </sp>
-        <sp who="#_genoveva">
-          <speaker> GENOVEVA.</speaker>
+        <sp who="#genoveva">
+          <speaker>GENOVEVA.</speaker>
           <lg>
             <l>Umsonst versucht mein Mund,</l>
             <l>Die rohen Herzen zu erweichen!</l>
@@ -2765,7 +2726,7 @@
           <speaker>BALTHASAR.</speaker>
           <l>Hinweg!</l>
         </sp>
-        <sp who="#jäger">
+        <sp who="#caspar #balthasar">
           <speaker>JÄGER.</speaker>
           <lg>
             <l>Sie ist's, am Kreuze dort!</l>
@@ -2783,7 +2744,7 @@
           <speaker>SIEGFRIED.</speaker>
           <l>O Genoveva!</l>
         </sp>
-        <sp who="#chor">
+        <sp who="#chor_gesang_schlusschor_alle_4">
           <speaker>CHOR.</speaker>
           <l>Weh', sie erkennt ihn nicht!</l>
           <pb n="42"/>
@@ -2792,7 +2753,7 @@
           <speaker>SIEGFRIED.</speaker>
           <l>Mein theures Weib! –</l>
         </sp>
-        <sp who="#chor">
+        <sp who="#chor_gesang_schlusschor_alle_4">
           <speaker>CHOR.</speaker>
           <l>Der Schreck raubt' ihr die Sinne!</l>
         </sp>
@@ -2812,7 +2773,7 @@
             <l>Siegfried, Du bist's! –</l>
           </lg>
         </sp>
-        <sp who="#chor">
+        <sp who="#chor_gesang_schlusschor_alle_4">
           <speaker>CHOR.</speaker>
           <l>Welch' Wiederseh'n!</l>
         </sp>
@@ -2854,7 +2815,7 @@
             <l>Gelingen wird es meiner Lieb' und Treu'!</l>
           </lg>
         </sp>
-        <sp who="#beide">
+        <sp who="#siegfried #genoveva">
           <speaker>BEIDE.</speaker>
           <l>Gelingen wird es unsrer Lieb' und Treu'!</l>
           <pb n="43"/>
@@ -2878,15 +2839,15 @@
           <speaker>SIEGFRIED.</speaker>
           <l>Versagen Dir die Füße nicht die Kraft?</l>
         </sp>
-        <sp who="#_chor_der_frauen">
-          <speaker> CHOR DER FRAUEN.</speaker>
+        <sp who="#chor_der_frauen">
+          <speaker>CHOR DER FRAUEN.</speaker>
           <lg>
             <l>Auf unsern Händen</l>
             <l>Tragen wir Euch!</l>
           </lg>
         </sp>
-        <sp who="#_chor_der_männer">
-          <speaker> CHOR DER MÄNNER.</speaker>
+        <sp who="#chor_der_maenner">
+          <speaker>CHOR DER MÄNNER.</speaker>
           <lg>
             <l>Von Zweigen flechten wir</l>
             <l>Die Sänfte Euch!</l>
@@ -2910,7 +2871,7 @@
             <l>Dem Hocherhabnen unsern Dank zu bringen!</l>
           </lg>
         </sp>
-        <sp who="#chor">
+        <sp who="#chor_gesang_schlusschor_alle_4">
           <speaker>CHOR.</speaker>
           <lg>
             <l>Bestreut den Weg mit grünen Mai'n,</l>
@@ -2919,10 +2880,11 @@
             <l>Die edle Herrin,</l>
             <l>Sie kehrt zurück!</l>
           </lg>
-          <stage>
-            <hi>
-              <pb n="44"/> Gesang hinter der Scene.</hi>
-          </stage>
+        </sp>
+        <pb n="44"/>
+        <sp who="#chor_gesang_schlusschor_alle_4">
+          <speaker>GESANG</speaker>
+          <stage>hinter der Scene.</stage>
           <lg>
             <l>Nun hebet Herz und Hände,</l>
             <l>Voll Freude himmelan,</l>
@@ -2940,7 +2902,11 @@
             <l>Da er ja mit uns war!</l>
             <l>Er ist der Quell der Gnaden,</l>
             <l>Der ew'ge, licht und klar!</l>
-            <l>SCHLUßCHOR.</l>
+          </lg>
+        </sp>
+        <sp who="#chor_gesang_schlusschor_alle_4">
+          <speaker>SCHLUßCHOR.</speaker>
+          <lg>
             <l>Erschalle, festlicher Sang,</l>
             <l>Ertönet, jubelnde Lieder!</l>
             <l>Siegfried Heil</l>
@@ -2953,10 +2919,10 @@
             <l>Es kehrt uns zurück!</l>
           </lg>
         </sp>
-        <sp who="#mädchen">
+        <sp who="#maedchen">
           <speaker>MÄDCHEN.</speaker>
           <lg>
-            <l>Nehmet zu freundlich –</l>
+            <l>Nehmet zu freundlich-</l>
             <l>Holdem Empfang</l>
             <l>Blühende Rosen!</l>
           </lg>
@@ -2966,7 +2932,7 @@
           <l>Habt Dank, habt Dank!</l>
           <pb n="45"/>
         </sp>
-        <sp who="#jünglinge">
+        <sp who="#juenglinge">
           <speaker>JÜNGLINGE.</speaker>
           <lg>
             <l>Mögen des Lebens</l>
@@ -2978,11 +2944,11 @@
           <speaker>SIEGFRIED UND GENOVEVA.</speaker>
           <l>O namenloses Glück!</l>
         </sp>
-        <sp who="#mädchen">
+        <sp who="#maedchen">
           <speaker>MÄDCHEN.</speaker>
           <l>Lebet in Freude!</l>
         </sp>
-        <sp who="#jünglinge">
+        <sp who="#juenglinge">
           <speaker>JÜNGLINGE.</speaker>
           <l>Lebet in Frieden!</l>
         </sp>
@@ -2993,7 +2959,7 @@
             <l>Nicht glauben, mein Siegfried!</l>
           </lg>
         </sp>
-        <sp who="#alle">
+        <sp who="#chor_gesang_schlusschor_alle_4">
           <speaker>ALLE.</speaker>
           <lg>
             <l>Siegfried Heil, dem tapferen Helden,</l>
