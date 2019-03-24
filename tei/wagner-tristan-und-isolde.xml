@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Tristan und Isolde</title>
+        <title type="main">Tristan und Isolde</title>
+        <title type="sub">–</title>
         <author key="pnd:118594117">Wagner, Richard</author>
       </titleStmt>
       <publicationStmt>
@@ -43,39 +44,39 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="isolde">
-            <persName>ISOLDE</persName>
+          <person xml:id="stimme_eines_jungen_seemannes" sex="MALE">
+            <persName>Stimme eines jungen Seemannes</persName>
+            <persName type="variant">Der junge Seemann</persName>
           </person>
-          <person xml:id="brangäne">
-            <persName>BRANGÄNE</persName>
-            <persName xml:id="brangänes_stimme">BRANGÄNES STIMME</persName>
+          <person xml:id="isolde" sex="FEMALE">
+            <persName>Isolde</persName>
           </person>
-          <person xml:id="der_junge_seemann">
-            <persName>DER JUNGE SEEMANN</persName>
-            <persName xml:id="stimme_eines_jungen_seemannes">STIMME EINES JUNGEN
-              SEEMANNES</persName>
+          <person xml:id="brangaene" sex="FEMALE">
+            <persName>Brangäne</persName>
+            <persName type="variant">Brangänes Stimme</persName>
           </person>
-          <person xml:id="kurwenal">
-            <persName>KURWENAL</persName>
+          <person xml:id="kurwenal" sex="MALE">
+            <persName>Kurwenal</persName>
           </person>
-          <person xml:id="tristan">
-            <persName>TRISTAN</persName>
+          <person xml:id="tristan" sex="MALE">
+            <persName>Tristan</persName>
           </person>
-          <person xml:id="schiffsvolk">
-            <persName>SCHIFFSVOLK</persName>
-            <persName xml:id="stimmen_des_schiffsvolkes">STIMMEN DES SCHIFFSVOLKES</persName>
+          <personGrp xml:id="alle_maenner_schiffsvolk" sex="MALE">
+            <name>Alle Männer/Schiffsvolk</name>
+            <name type="variant">Stimmen des Schiffsvolkes</name>
+            <name type="variant">Ruf der Männer</name>
+          </personGrp>
+          <person xml:id="melot" sex="MALE">
+            <persName>Melot</persName>
           </person>
-          <person xml:id="melot">
-            <persName>MELOT</persName>
+          <person xml:id="marke" sex="MALE">
+            <persName>Marke</persName>
           </person>
-          <person xml:id="marke">
-            <persName>MARKE</persName>
+          <person xml:id="hirt" sex="MALE">
+            <persName>Hirt</persName>
           </person>
-          <person xml:id="hirt">
-            <persName>HIRT</persName>
-          </person>
-          <person xml:id="der_steuermann">
-            <persName>DER STEUERMANN</persName>
+          <person xml:id="der_steuermann" sex="MALE">
+            <persName>Der Steuermann</persName>
           </person>
         </listPerson>
       </particDesc>
@@ -89,6 +90,7 @@
       <listChange>
         <change when="2017-01-06">(dlina) file conversion from source</change>
         <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-03-24">(ff) formalities</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -98,8 +100,6 @@
         <head>Richard Wagner</head>
         <head>Tristan und Isolde</head>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head><pb n="320"/> Personen</head>
@@ -115,15 +115,30 @@
           <castItem>Schiffsvolk, Ritter und Knappen</castItem>
         </castList>
       </div>
+      <set>
+        <head>Schauplätze</head>
+        <p>Erster Aufzug</p>
+        <p>Zur See auf dem Verdeck von Tristans Schiff während der Überfahrt von Irland nach
+          Kornwall</p>
+        <p>Zweiter Aufzug</p>
+        <p>In der Königlichen Burg Markes in Kornwall</p>
+        <p>Dritter Aufzug</p>
+        <p>Tristans Burg in der Bretagne</p>
+      </set>
+    </front>
+    <body>
       <div type="act">
-        <head>1. Akt</head>
+        <head>Erster Aufzug</head>
+        <stage>Zeltartiges Gemach auf dem Vorderdeck eines Seeschiffes reich mit Teppichen behangen,
+          beim Beginn nach dem Hintergrunde zu gänzlich geschlossen; zur Seite führt eine schmale
+          Treppe in den Schiffsraum hinab.</stage>
+        <stage>Isolde auf einem Ruhebett, das Gesicht in die Kissen gedrückt. – Brangäne, einen
+          Teppich zurückgeschlagen haltend, blickt zur Seite über Bord –.</stage>
         <div type="scene">
           <head>Erste Szene</head>
           <sp who="#stimme_eines_jungen_seemannes">
             <speaker>STIMME EINES JUNGEN SEEMANNES</speaker>
-            <stage>
-              <hi>aus der Höhe, wie vom Mast her, vernehmbar.</hi>
-            </stage>
+            <stage>aus der Höhe, wie vom Mast her, vernehmbar.</stage>
             <lg>
               <l>Westwärts</l>
               <l>schweift der Blick;</l>
@@ -143,23 +158,17 @@
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>jäh auffahrend.</hi>
-            </stage>
+            <stage>jäh auffahrend.</stage>
             <l>Wer wagt mich zu höhnen?</l>
-            <stage>
-              <hi>Sie blickt verstört um sich.</hi>
-            </stage>
+            <stage>Sie blickt verstört um sich.</stage>
             <lg>
               <l>Brangäne, du?</l>
               <l>Sag – wo sind wir?</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE</speaker>
-            <stage>
-              <hi>an der Öffnung.</hi>
-            </stage>
+            <stage>an der Öffnung.</stage>
             <lg>
               <l>Blaue Streifen</l>
               <l>stiegen im Westen auf;</l>
@@ -174,7 +183,7 @@
             <speaker>ISOLDE.</speaker>
             <l>Welches Land?</l>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <l>Kornwalls grünen Strand.</l>
           </sp>
@@ -185,18 +194,14 @@
               <l>Nicht heut noch morgen!</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE</speaker>
-            <stage>
-              <hi>läßt den Vorhang zufallen und eilt bestürzt zu Isolde.</hi>
-            </stage>
+            <stage>läßt den Vorhang zufallen und eilt bestürzt zu Isolde.</stage>
             <l>Was hör ich! Herrin! Ha!</l>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>wild vor sich hin.</hi>
-            </stage>
+            <stage>wild vor sich hin.</stage>
             <lg>
               <l>Entartet Geschlecht!</l>
               <l>Unwert der Ahnen!</l>
@@ -229,11 +234,9 @@
               <l>den laß ich euch Winden zum Lohn!</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE</speaker>
-            <stage>
-              <hi>im äußersten Schreck um Isolde sich bemühend.</hi>
-            </stage>
+            <stage>im äußersten Schreck um Isolde sich bemühend.</stage>
             <lg>
               <l>O weh!</l>
               <l>Ach! Ach</l>
@@ -274,26 +277,20 @@
               <l>Mir erstickt das Herz!</l>
               <l>Öffne! Öffne dort weit!</l>
             </lg>
-            <stage>
-              <hi>Brangäne zieht eilig die Vorhänge in der Mitte auseinander.</hi>
-            </stage>
+            <stage>Brangäne zieht eilig die Vorhänge in der Mitte auseinander.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweite Szene</head>
-          <stage>
-            <hi>Man blickt dem Schiff entlang bis zum Steuerbord, über den Bord hinaus auf das Meer
-              und den Horizont. Um den Hauptmast in der Mitte ist Seevolk, mit Tauen beschäftigt,
-              gelagert; über sie hinaus gewahrt man am Steuerbord Ritter und Knappen, ebenfalls
-              gelagert, von ihnen etwas entfernt Tristan, mit verschränkten Armen stehend und
-              sinnend in das Meer blickend; zu Füßen ihm, nachlässig gelagert, Kurwenal. Vom Maste
-              her, aus der Höhe, vernimmt man wieder die Stimme des jungen Seemanns.</hi>
-          </stage>
-          <sp who="#der_junge_seemann">
+          <stage>Man blickt dem Schiff entlang bis zum Steuerbord, über den Bord hinaus auf das Meer
+            und den Horizont. Um den Hauptmast in der Mitte ist Seevolk, mit Tauen beschäftigt,
+            gelagert; über sie hinaus gewahrt man am Steuerbord Ritter und Knappen, ebenfalls
+            gelagert, von ihnen etwas entfernt Tristan, mit verschränkten Armen stehend und sinnend
+            in das Meer blickend; zu Füßen ihm, nachlässig gelagert, Kurwenal. Vom Maste her, aus
+            der Höhe, vernimmt man wieder die Stimme des jungen Seemanns.</stage>
+          <sp who="#stimme_eines_jungen_seemannes">
             <speaker>DER JUNGE SEEMANN</speaker>
-            <stage>
-              <hi>auf dem Maste, unsichtbar.</hi>
-            </stage>
+            <stage>auf dem Maste, unsichtbar.</stage>
             <lg>
               <l>Frisch weht der Wind</l>
               <l><pb n="323"/> der Heimat zu: –</l>
@@ -307,10 +304,8 @@
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>deren Blick sogleich Tristan fand und starr auf ihn geheftet blieb, dumpf für
-                sich.</hi>
-            </stage>
+            <stage>deren Blick sogleich Tristan fand und starr auf ihn geheftet blieb, dumpf für
+              sich.</stage>
             <lg>
               <l>Mir erkoren, –</l>
               <l>mir verloren, –</l>
@@ -319,16 +314,12 @@
               <l>Tod geweihtes Haupt!</l>
               <l>Tod geweihtes Herz! –</l>
             </lg>
-            <stage>
-              <hi>Zu Brangäne, unheimlich lachend.</hi>
-            </stage>
+            <stage>Zu Brangäne, unheimlich lachend.</stage>
             <l>Was hältst du von dem Knechte?</l>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE</speaker>
-            <stage>
-              <hi>ihrem Blicke folgend.</hi>
-            </stage>
+            <stage>ihrem Blicke folgend.</stage>
             <l>Wen meinst du?</l>
           </sp>
           <sp who="#isolde">
@@ -342,7 +333,7 @@
               <l>Sag, wie dünkt er dich?</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Frägst du nach Tristan,</l>
@@ -355,9 +346,7 @@
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>sie verhöhnend.</hi>
-            </stage>
+            <stage>sie verhöhnend.</stage>
             <lg>
               <l>Der zagend vor dem Streiche</l>
               <l>sich flüchtet, wo er kann,</l>
@@ -382,7 +371,7 @@
               <l>schleunig soll er mir nah'n.</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Soll ich ihn bitten,</l>
@@ -397,19 +386,16 @@
               <l>Furcht der Herrin</l>
               <l>ich, Isolde!</l>
             </lg>
-            <stage>
-              <hi>Auf Isoldes gebieterischen Wink entfernt sich Brangäne und schreitet verschämt dem
-                Deck entlang dem Steuerbord zu, an den arbeitenden Seeleuten vorbei. Isolde, mit
-                starrem Blicke ihr folgend, zieht sich rücklings nach dem Ruhebett zurück, wo sie
-                sitzend während des Folgenden bleibt, das Auge unabgewandt nach dem Steuerbord
-                gerichtet.</hi>
-            </stage>
+            <stage>Auf Isoldes gebieterischen Wink entfernt sich Brangäne und schreitet verschämt
+              dem Deck entlang dem Steuerbord zu, an den arbeitenden Seeleuten vorbei. Isolde, mit
+              starrem Blicke ihr folgend, zieht sich rücklings nach dem Ruhebett zurück, wo sie
+              sitzend während des Folgenden bleibt, das Auge unabgewandt nach dem Steuerbord
+              gerichtet.</stage>
           </sp>
           <sp who="#kurwenal">
             <speaker>KURWENAL</speaker>
-            <stage>
-              <hi>der Brangäne kommen sieht, zupft, ohne sich zu erheben, Tristan am Gewande.</hi>
-            </stage>
+            <stage>der Brangäne kommen sieht, zupft, ohne sich zu erheben, Tristan am
+              Gewande.</stage>
             <lg>
               <l>Hab acht, Tristan!</l>
               <l>Botschaft von Isolde.</l>
@@ -417,13 +403,9 @@
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>auffahrend.</hi>
-            </stage>
+            <stage>auffahrend.</stage>
             <l>Was ist? – Isolde? –</l>
-            <stage>
-              <hi>Er faßt sich schnell, als Brangäne vor ihm anlangt und sich verneigt.</hi>
-            </stage>
+            <stage>Er faßt sich schnell, als Brangäne vor ihm anlangt und sich verneigt.</stage>
             <lg>
               <l>Von meiner Herrin? –</l>
               <l>Ihr gehorsam</l>
@@ -432,7 +414,7 @@
               <l>mir die traute Magd?</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Mein Herre Tristan,</l>
@@ -452,7 +434,7 @@
               <l>treulich sei's erfüllt.</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>So mög' Herr Tristan</l>
@@ -473,7 +455,7 @@
               <l>diese Gunst.</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Mein Herre Tristan,</l>
@@ -497,7 +479,7 @@
               <l>zu König Markes Land?</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Tristan, mein Herre!</l>
@@ -514,16 +496,12 @@
           </sp>
           <sp who="#kurwenal">
             <speaker>KURWENAL</speaker>
-            <stage>
-              <hi>aufspringend.</hi>
-            </stage>
+            <stage>aufspringend.</stage>
             <l>Darf ich die Antwort sagen?</l>
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>ruhig.</hi>
-            </stage>
+            <stage>ruhig.</stage>
             <l>Was wohl erwidertest du?</l>
           </sp>
           <sp who="#kurwenal">
@@ -542,11 +520,9 @@
               <l>Ich ruf's: du sag's, und grollten</l>
               <l>mir tausend Frau Isolden!</l>
             </lg>
-            <stage>
-              <hi>Da Tristan durch Gebärden ihm zu wehren sucht und Brangäne entrüstet sich zum
-                Weggehen wendet, singt Kurwenal der zögernd sich Entfernenden mit höchster Stärke
-                nach:</hi>
-            </stage>
+            <stage>Da Tristan durch Gebärden ihm zu wehren sucht und Brangäne entrüstet sich zum
+              Weggehen wendet, singt Kurwenal der zögernd sich Entfernenden mit höchster Stärke
+              nach:</stage>
             <lg>
               <l>»Herr Morold zog</l>
               <l>zu Meere her,</l>
@@ -561,13 +537,11 @@
               <l>hei! unser Held Tristan,</l>
               <l>wie der Zins zahlen kann!«</l>
             </lg>
-            <stage>
-              <hi>Kurwenal, von Tristan fortgescholten, ist in den Schiffsraum hinabgestiegen;
-                Brangäne, in Bestürzung zu Isolde zurückgekehrt, schließt hinter sich die Vorhänge,
-                während die ganze Mannschaft außen sich hören läßt.</hi>
-            </stage>
+            <stage>Kurwenal, von Tristan fortgescholten, ist in den Schiffsraum hinabgestiegen;
+              Brangäne, in Bestürzung zu Isolde zurückgekehrt, schließt hinter sich die Vorhänge,
+              während die ganze Mannschaft außen sich hören läßt.</stage>
           </sp>
-          <sp who="#alle_männer">
+          <sp who="#alle_maenner_schiffsvolk">
             <speaker>ALLE MÄNNER.</speaker>
             <lg>
               <l>Sein Haupt doch hängt</l>
@@ -581,11 +555,9 @@
         </div>
         <div type="scene">
           <head>Dritte Szene</head>
-          <stage>
-            <hi>Isolde und Brangäne allein, bei vollkommen wieder geschlossenen Vorhängen. – Isolde
-              erhebt sich mit verzweiflungsvoller Wutgebärde, Brangäne stürzt ihr zu Füßen.</hi>
-          </stage>
-          <sp who="#brangäne">
+          <stage>Isolde und Brangäne allein, bei vollkommen wieder geschlossenen Vorhängen. – Isolde
+            erhebt sich mit verzweiflungsvoller Wutgebärde, Brangäne stürzt ihr zu Füßen.</stage>
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Weh, ach wehe!</l>
@@ -594,15 +566,13 @@
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>dem furchtbarsten Ausbruche nahe, schnell sich zusammenraffend.</hi>
-            </stage>
+            <stage>dem furchtbarsten Ausbruche nahe, schnell sich zusammenraffend.</stage>
             <lg>
               <l><pb n="327"/> Doch nun von Tristan!</l>
               <l>Genau will ich's vernehmen.</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <l>Ach, frage nicht!</l>
           </sp>
@@ -610,7 +580,7 @@
             <speaker>ISOLDE.</speaker>
             <l>Frei sag's ohne Furcht!</l>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Mit höf'schen Worten</l>
@@ -621,7 +591,7 @@
             <speaker>ISOLDE.</speaker>
             <l>Doch als du deutlich mahntest?</l>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Da ich zur Stell</l>
@@ -638,22 +608,18 @@
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>schmerzlich bitter.</hi>
-            </stage>
+            <stage>schmerzlich bitter.</stage>
             <lg>
               <l>»Wie lenkt'er sicher den Kiel</l>
               <l>zu König Markes Land« –</l>
             </lg>
-            <stage>
-              <hi>Grell und heftig.</hi>
-            </stage>
+            <stage>Grell und heftig.</stage>
             <lg>
               <l>Den Zins ihm auszuzahlen,</l>
               <l>den er aus Irland zog!</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Auf deine eig'nen Worte,</l>
@@ -715,7 +681,7 @@
               <l>mit dem Blick mich nicht mehr beschwere!</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>O Wunder! Wo hatt ich die Augen?</l>
@@ -759,7 +725,7 @@
               <l>Nun dien ich dem Vasallen!</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Da Friede, Sühn und Freundschaft</l>
@@ -807,20 +773,16 @@
               <l>Tod uns Beiden!</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE</speaker>
-            <stage>
-              <hi>mit ungestümer Zärtlichkeit sich auf Isolde stürzend.</hi>
-            </stage>
+            <stage>mit ungestümer Zärtlichkeit sich auf Isolde stürzend.</stage>
             <lg>
               <l>O Süße! Traute!</l>
               <l>Teure! Holde!</l>
               <l>Gold'ne Herrin!</l>
               <l>Lieb' Isolde!</l>
             </lg>
-            <stage>
-              <hi>Sie zieht Isolde allmählich nach dem Ruhebett.</hi>
-            </stage>
+            <stage>Sie zieht Isolde allmählich nach dem Ruhebett.</stage>
             <lg>
               <l>Hör mich! Komme!</l>
               <l>Setz dich her!</l>
@@ -841,9 +803,7 @@
               <l>entsagt er zu deinen Füßen,</l>
               <l>als Königin dich zu grüßen!</l>
             </lg>
-            <stage>
-              <hi>Isolde wendet sich ab.</hi>
-            </stage>
+            <stage>Isolde wendet sich ab.</stage>
             <lg>
               <l><pb n="331"/> Und warb er Marke</l>
               <l>dir zum Gemahl,</l>
@@ -861,9 +821,7 @@
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>starr vor sich hinblickend.</hi>
-            </stage>
+            <stage>starr vor sich hinblickend.</stage>
             <lg>
               <l>Ungeminnt</l>
               <l>den hehrsten Mann</l>
@@ -871,15 +829,13 @@
               <l>wie könnt' ich die Qual bestehen?</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Was meinst du, Arge?</l>
               <l>Ungeminnt? –</l>
             </lg>
-            <stage>
-              <hi>Sie nähert sich schmeichelnd und kosend Isolden.</hi>
-            </stage>
+            <stage>Sie nähert sich schmeichelnd und kosend Isolden.</stage>
             <lg>
               <l>Wo lebte der Mann,</l>
               <l>der dich nicht liebte?</l>
@@ -894,9 +850,7 @@
               <l>bald zu binden,</l>
               <l>ihn bannte der Minne Macht.</l>
             </lg>
-            <stage>
-              <hi>Mit geheimnisvoller Zutraulichkeit ganz nah zu Isolden.</hi>
-            </stage>
+            <stage>Mit geheimnisvoller Zutraulichkeit ganz nah zu Isolden.</stage>
             <lg>
               <l>Kennst du der Mutter</l>
               <l>Künste nicht?</l>
@@ -908,9 +862,7 @@
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>düster.</hi>
-            </stage>
+            <stage>düster.</stage>
             <lg>
               <l>Der Mutter Rat</l>
               <l>gemahnt mich recht;</l>
@@ -921,13 +873,11 @@
               <l>Den Schrein dort bring mir her!</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <l>Er birgt, was Heil dir frommt.</l>
-            <stage>
-              <hi>Sie holt eine kleine gold'ne Truhe herbei, öffnet sie und deutet auf ihren
-                Inhalt.</hi>
-            </stage>
+            <stage>Sie holt eine kleine gold'ne Truhe herbei, öffnet sie und deutet auf ihren
+              Inhalt.</stage>
             <lg>
               <l>So reihte sie die Mutter,</l>
               <l>die mächt'gen Zaubertränke.</l>
@@ -936,9 +886,7 @@
               <l>für böse Gifte</l>
               <l>Gegen-Gift.</l>
             </lg>
-            <stage>
-              <hi>Sie zieht ein Fläschchen hervor.</hi>
-            </stage>
+            <stage>Sie zieht ein Fläschchen hervor.</stage>
             <lg>
               <l>Den hehrsten Trank,</l>
               <l>ich halt ihn hier.</l>
@@ -951,27 +899,19 @@
               <l>ein starkes Zeichen</l>
               <l>schnitt ich ihm ein.</l>
             </lg>
-            <stage>
-              <hi>Sie ergreift ein Fläschchen und zeigt es.</hi>
-            </stage>
+            <stage>Sie ergreift ein Fläschchen und zeigt es.</stage>
             <l>Der Trank ist's, der mir frommt.</l>
-            <stage>
-              <hi>Sie hat sich vom Ruhebett erhoben und vernimmt mit wachsendem Schrecken den Ruf
-                des Schiffsvolkes.</hi>
-            </stage>
+            <stage>Sie hat sich vom Ruhebett erhoben und vernimmt mit wachsendem Schrecken den Ruf
+              des Schiffsvolkes.</stage>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <l>Der Todestrank!</l>
-            <stage>
-              <hi>Sie weicht entsetzt zurück.</hi>
-            </stage>
+            <stage>Sie weicht entsetzt zurück.</stage>
           </sp>
-          <sp who="#schiffsvolk">
+          <sp who="#alle_maenner_schiffsvolk">
             <speaker>SCHIFFSVOLK</speaker>
-            <stage>
-              <hi>außen.</hi>
-            </stage>
+            <stage>außen.</stage>
             <lg>
               <l>Ho! he! ha! he!</l>
               <l>Am Untermast</l>
@@ -989,9 +929,7 @@
         </div>
         <div type="scene">
           <head>Vierte Szene</head>
-          <stage>
-            <hi>Durch die Vorhänge tritt mit Ungestüm Kurwenal herein.</hi>
-          </stage>
+          <stage>Durch die Vorhänge tritt mit Ungestüm Kurwenal herein.</stage>
           <sp who="#kurwenal">
             <speaker>KURWENAL.</speaker>
             <lg>
@@ -1000,9 +938,7 @@
               <l>Rasch gerüstet!</l>
               <l>Fertig nun, hurtig und flink!</l>
             </lg>
-            <stage>
-              <hi>Gemessener.</hi>
-            </stage>
+            <stage>Gemessener.</stage>
             <lg>
               <l>Und Frau Isolden</l>
               <l>sollt ich sagen</l>
@@ -1020,10 +956,8 @@
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>nachdem sie zuerst bei der Meldung in Schauer zusammengefahren, gefaßt und mit
-                Würde.</hi>
-            </stage>
+            <stage>nachdem sie zuerst bei der Meldung in Schauer zusammengefahren, gefaßt und mit
+              Würde.</stage>
             <lg>
               <l>Herrn Tristan bringe</l>
               <l>meinen Gruß,</l>
@@ -1037,12 +971,8 @@
               <l>für ungesühnte Schuld: –</l>
               <l>drum such er meine Huld.</l>
             </lg>
-            <stage>
-              <hi>Kurwenal macht eine trotzige Gebärde.</hi>
-            </stage>
-            <stage>
-              <hi>Mit Steigerung.</hi>
-            </stage>
+            <stage>Kurwenal macht eine trotzige Gebärde.</stage>
+            <stage>Mit Steigerung.</stage>
             <lg>
               <l>Du merke wohl,</l>
               <l>und meld es gut!</l>
@@ -1065,9 +995,8 @@
               <l>das sag ich ihm;</l>
               <l>nun harrt, wie er mich hört!</l>
             </lg>
-            <stage>
-              <hi>Er geht schnell zurück. Isolde eilt auf Brangäne zu und umarmt sie heftig.</hi>
-            </stage>
+            <stage>Er geht schnell zurück. Isolde eilt auf Brangäne zu und umarmt sie
+              heftig.</stage>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE.</speaker>
@@ -1077,7 +1006,7 @@
               <l>grüße mir Vater und Mutter!</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Was ist? Was sinnst du?</l>
@@ -1087,9 +1016,7 @@
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>faßt sich schnell.</hi>
-            </stage>
+            <stage>faßt sich schnell.</stage>
             <lg>
               <l>Hörtest du nicht?</l>
               <l>Hier bleib ich,</l>
@@ -1100,11 +1027,9 @@
               <l>rüste schnell;</l>
               <l>du weißt, den ich dich wies?</l>
             </lg>
-            <stage>
-              <hi>Sie entnimmt dem Schrein das Fläschchen.</hi>
-            </stage>
+            <stage>Sie entnimmt dem Schrein das Fläschchen.</stage>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <l>Und welchen Trank?</l>
           </sp>
@@ -1117,18 +1042,16 @@
               <l>gefüllt faßt sie ihn ganz.</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE</speaker>
-            <stage>
-              <hi>voll Grausen das Fläschchen empfangend.</hi>
-            </stage>
+            <stage>voll Grausen das Fläschchen empfangend.</stage>
             <l>Trau ich dem Sinn?</l>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE.</speaker>
             <l>Sei du mir treu!</l>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <l>Der Trank – für wen?</l>
           </sp>
@@ -1136,7 +1059,7 @@
             <speaker>ISOLDE.</speaker>
             <l>Wer mich betrog.</l>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <l>Tristan?</l>
           </sp>
@@ -1144,18 +1067,14 @@
             <speaker>ISOLDE.</speaker>
             <l>Trinke mir Sühne!</l>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE</speaker>
-            <stage>
-              <hi>zu Isoldes Füßen stürzend.</hi>
-            </stage>
+            <stage>zu Isoldes Füßen stürzend.</stage>
             <l>Entsetzen! Schone mich Arme!</l>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>sehr heftig.</hi>
-            </stage>
+            <stage>sehr heftig.</stage>
             <lg>
               <l>Schone du mich,</l>
               <l>untreue Magd!</l>
@@ -1175,18 +1094,16 @@
               <l>Der Tod nun sag ihr Dank!</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE</speaker>
-            <stage>
-              <hi>kaum ihrer mächtig.</hi>
-            </stage>
+            <stage>kaum ihrer mächtig.</stage>
             <l>O tiefstes Weh!</l>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE.</speaker>
             <l>Gehorchst du mir nun?</l>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <l>O höchstes Leid!</l>
           </sp>
@@ -1194,39 +1111,30 @@
             <speaker>ISOLDE.</speaker>
             <l>Bist du mir treu?</l>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <l>Der Trank? –</l>
           </sp>
           <sp who="#kurwenal">
             <speaker>KURWENAL</speaker>
-            <stage>
-              <hi>eintretend.</hi>
-            </stage>
+            <stage>eintretend.</stage>
             <l>Herr Tristan!</l>
-            <stage>
-              <hi>Brangäne erhebt sich erschrocken und verwirrt. Isolde sucht mit furchtbarer
-                Anstrengung sich zu fassen.</hi>
-            </stage>
+            <stage>Brangäne erhebt sich erschrocken und verwirrt. Isolde sucht mit furchtbarer
+              Anstrengung sich zu fassen.</stage>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>zu Kurwenal.</hi>
-            </stage>
+            <stage>zu Kurwenal.</stage>
             <l>Herr Tristan trete nah.</l>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfte Szene</head>
-          <stage>
-            <hi>Kurwenal geht wieder zurück. Brangäne, kaum ihrer mächtig, wendet sich in den
-              Hintergrund. Isolde, ihr ganzes Gefühl zur Entscheidung zusammenfassend, schreitet
-              langsam, mit großer Haltung, dem Ruhebett zu, auf dessen Kopfende sich stützend, sie
-              den Blick fest dem Eingange zuwendet. – Tristan tritt ein und bleibt ehrerbietig am
-              Eingang stehen. – Isolde ist mit furchtbarer Aufregung in seinen Anblick
-              versunken.</hi>
-          </stage>
+          <stage>Kurwenal geht wieder zurück. Brangäne, kaum ihrer mächtig, wendet sich in den
+            Hintergrund. Isolde, ihr ganzes Gefühl zur Entscheidung zusammenfassend, schreitet
+            langsam, mit großer Haltung, dem Ruhebett zu, auf dessen Kopfende sich stützend, sie den
+            Blick fest dem Eingange zuwendet. – Tristan tritt ein und bleibt ehrerbietig am Eingang
+            stehen. – Isolde ist mit furchtbarer Aufregung in seinen Anblick versunken.</stage>
           <sp who="#tristan">
             <speaker>TRISTAN.</speaker>
             <lg>
@@ -1401,18 +1309,14 @@
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>bleich und düster.</hi>
-            </stage>
+            <stage>bleich und düster.</stage>
             <lg>
               <l>War Morold dir so wert,</l>
               <l>nun wieder nimm das Schwert,</l>
               <l>und führ es sicher und fest, –</l>
               <l>daß du nicht dir's entfallen läßt!</l>
             </lg>
-            <stage>
-              <hi>Er reicht ihr sein Schwert dar.</hi>
-            </stage>
+            <stage>Er reicht ihr sein Schwert dar.</stage>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE.</speaker>
@@ -1444,17 +1348,13 @@
               <l>das Schwert – da ließ ich's sinken.</l>
               <l>Nun laß uns Sühne trinken!</l>
             </lg>
-            <stage>
-              <hi>Sie winkt Brangänen. Diese schaudert zusammen, schwankt und zögert in ihrer
-                Bewegung. Isolde treibt sie mit gesteigerter Gebärde an. Brangäne läßt sich zur
-                Bereitung des Trankes an.</hi>
-            </stage>
+            <stage>Sie winkt Brangänen. Diese schaudert zusammen, schwankt und zögert in ihrer
+              Bewegung. Isolde treibt sie mit gesteigerter Gebärde an. Brangäne läßt sich zur
+              Bereitung des Trankes an.</stage>
           </sp>
-          <sp who="#stimmen_des_schiffsvolkes">
+          <sp who="#alle_maenner_schiffsvolk">
             <speaker>STIMMEN DES SCHIFFSVOLKES</speaker>
-            <stage>
-              <hi>außen.</hi>
-            </stage>
+            <stage>außen.</stage>
             <lg>
               <l>Ho – he – ha – he!</l>
               <l>Am Obermast</l>
@@ -1464,9 +1364,7 @@
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>aus düstrem Brüten auffahrend.</hi>
-            </stage>
+            <stage>aus düstrem Brüten auffahrend.</stage>
             <l>Wo sind wir?</l>
           </sp>
           <sp who="#isolde">
@@ -1479,9 +1377,7 @@
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>finster.</hi>
-            </stage>
+            <stage>finster.</stage>
             <lg>
               <l>Des Schweigens Herrin</l>
               <l>heißt mich schweigen: –</l>
@@ -1497,29 +1393,22 @@
               <l>Weigerst du die Sühne mir?</l>
             </lg>
           </sp>
-          <sp who="#schiffsvolk">
+          <sp who="#alle_maenner_schiffsvolk">
             <speaker>SCHIFFSVOLK</speaker>
-            <stage>
-              <hi>außen.</hi>
-            </stage>
+            <stage>außen.</stage>
             <l>Ho – he – ha – he!</l>
-            <stage>
-              <hi>Auf Isoldes ungeduldigen Wink reicht Brangäne ihr die gefüllte Trinkschale.</hi>
-            </stage>
+            <stage>Auf Isoldes ungeduldigen Wink reicht Brangäne ihr die gefüllte
+              Trinkschale.</stage>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>mit dem Becher zu Tristan tretend, der ihr starr in die Augen blickt.</hi>
-            </stage>
+            <stage>mit dem Becher zu Tristan tretend, der ihr starr in die Augen blickt.</stage>
             <lg>
               <l>Du hörst den Ruf?</l>
               <l>Wir sind am Ziel: –</l>
               <l>in kurzer Frist</l>
             </lg>
-            <stage>
-              <hi>Mit leisem Hohne.</hi>
-            </stage>
+            <stage>Mit leisem Hohne.</stage>
             <lg>
               <l>stehn wir – vor König Marke.</l>
               <l>Geleitest du mich,</l>
@@ -1551,11 +1440,9 @@
               <l>zu sühnen alle Schuld.«</l>
             </lg>
           </sp>
-          <sp who="#schiffsvolk">
+          <sp who="#alle_maenner_schiffsvolk">
             <speaker>SCHIFFSVOLK</speaker>
-            <stage>
-              <hi>außen.</hi>
-            </stage>
+            <stage>außen.</stage>
             <lg>
               <l>Auf das Tau!</l>
               <l>Anker los!</l>
@@ -1563,17 +1450,13 @@
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>wild auffahrend.</hi>
-            </stage>
+            <stage>wild auffahrend.</stage>
             <lg>
               <l>Los den Anker!</l>
               <l>Das Steuer dem Strom!</l>
               <l>Den Winden Segel und Mast! –</l>
             </lg>
-            <stage>
-              <hi>Er entreißt ihr die Trinkschale.</hi>
-            </stage>
+            <stage>Er entreißt ihr die Trinkschale.</stage>
             <lg>
               <l>Wohl kenn ich Irlands</l>
               <l>Königin</l>
@@ -1597,9 +1480,7 @@
               <l>Vergessens güt'ger Trank, –</l>
               <l>dich trink ich sonder Wank!</l>
             </lg>
-            <stage>
-              <hi>Er setzt an und trinkt.</hi>
-            </stage>
+            <stage>Er setzt an und trinkt.</stage>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE.</speaker>
@@ -1607,67 +1488,47 @@
               <l>Betrug auch hier?</l>
               <l>Mein die Hälfte!</l>
             </lg>
-            <stage>
-              <hi>Sie entwindet ihm den Becher.</hi>
-            </stage>
+            <stage>Sie entwindet ihm den Becher.</stage>
             <l>Verräter! Ich trink sie dir!</l>
-            <stage>
-              <hi>Sie trinkt. Dann wirft sie die Schale fort. – Beide, von Schauer erfaßt, blicken
-                sich mit höchster Aufregung, doch mit starrer Haltung unverwandt in die Augen, in
-                deren Ausdruck der Todestrotz bald der Liebesglut weicht. – Zittern ergreift sie.
-                Sie fassen sich krampfhaft an das Herz – und führen die Hand wieder an die Stirn. –
-                Dann suchen sie sich wieder mit dem Blick, senken ihn verwirrt und heften ihn wieder
-                mit steigender Sehnsucht aufeinander.</hi>
-            </stage>
+            <stage>Sie trinkt. Dann wirft sie die Schale fort. – Beide, von Schauer erfaßt, blicken
+              sich mit höchster Aufregung, doch mit starrer Haltung unverwandt in die Augen, in
+              deren Ausdruck der Todestrotz bald der Liebesglut weicht. – Zittern ergreift sie. Sie
+              fassen sich krampfhaft an das Herz – und führen die Hand wieder an die Stirn. – Dann
+              suchen sie sich wieder mit dem Blick, senken ihn verwirrt und heften ihn wieder mit
+              steigender Sehnsucht aufeinander.</stage>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>mit bebender Stimme.</hi>
-            </stage>
+            <stage>mit bebender Stimme.</stage>
             <l>Tristan!</l>
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>überströmend.</hi>
-            </stage>
+            <stage>überströmend.</stage>
             <l>Isolde!</l>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>an seine Brust sinkend.</hi>
-            </stage>
+            <stage>an seine Brust sinkend.</stage>
             <l>Treuloser Holder!</l>
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>er umfaßt sie mit Glut.</hi>
-            </stage>
+            <stage>er umfaßt sie mit Glut.</stage>
             <l>Seligste Frau!</l>
-            <stage>
-              <hi>Sie verbleiben in stummer Umarmung.</hi>
-            </stage>
-            <stage>
-              <hi>Aus der Ferne vernimmt man Trompeten.</hi>
-            </stage>
+            <stage>Sie verbleiben in stummer Umarmung.</stage>
+            <stage>Aus der Ferne vernimmt man Trompeten.</stage>
           </sp>
-          <sp who="#ruf_der_männer">
+          <sp who="#alle_maenner_schiffsvolk">
             <speaker>RUF DER MÄNNER</speaker>
-            <stage>
-              <hi>von außen auf dem Schiffe.</hi>
-            </stage>
+            <stage>von außen auf dem Schiffe.</stage>
             <l>Heil! König Marke Heil!</l>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE</speaker>
-            <stage>
-              <hi>die, mit abgewandtem Gesicht, voll Verwirrung und Schauder sich über den Bord
-                gelehnt hatte, wendet sich jetzt dem Anblick des in Liebesumarmung versunkenen
-                Paares zu und stürzt händeringend voll Verzweiflung in den Vordergrund.</hi>
-            </stage>
+            <stage>die, mit abgewandtem Gesicht, voll Verwirrung und Schauder sich über den Bord
+              gelehnt hatte, wendet sich jetzt dem Anblick des in Liebesumarmung versunkenen Paares
+              zu und stürzt händeringend voll Verzweiflung in den Vordergrund.</stage>
             <lg>
               <l>Wehe! Weh!</l>
               <l>Unabwendbar</l>
@@ -1677,9 +1538,7 @@
               <l>trugvolles Werk</l>
               <l>blüht nun jammernd empor!</l>
             </lg>
-            <stage>
-              <hi>Beide fahren verwirrt aus der Umarmung auf.</hi>
-            </stage>
+            <stage>Beide fahren verwirrt aus der Umarmung auf.</stage>
             <pb n="341"/>
           </sp>
           <sp who="#tristan">
@@ -1734,7 +1593,7 @@
             <speaker>ISOLDE.</speaker>
             <l>Trautester Mann!</l>
           </sp>
-          <sp who="#beide">
+          <sp who="#tristan #isolde">
             <speaker>BEIDE.</speaker>
             <lg>
               <l>Wie sich die Herzen</l>
@@ -1753,38 +1612,28 @@
               <l>Du mir einzig bewußt,</l>
               <l>höchste Liebeslust!</l>
             </lg>
-            <stage>
-              <hi>Die Vorhänge werden weit auseinander gerissen; das ganze Schiff ist mit Rittern
-                und Schiffsvolk bedeckt, die jubelnd über Bord winken, dem Ufer zu, das man, mit
-                einer hohen Felsenburg gekrönt, nahe erblickt. – Tristan und Isolde bleiben, in
-                ihren gegenseitigen Anblick verloren, ohne Wahrnehmung des um sie Vorgehenden.</hi>
-            </stage>
+            <stage>Die Vorhänge werden weit auseinander gerissen; das ganze Schiff ist mit Rittern
+              und Schiffsvolk bedeckt, die jubelnd über Bord winken, dem Ufer zu, das man, mit einer
+              hohen Felsenburg gekrönt, nahe erblickt. – Tristan und Isolde bleiben, in ihren
+              gegenseitigen Anblick verloren, ohne Wahrnehmung des um sie Vorgehenden.</stage>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE</speaker>
-            <stage>
-              <hi>zu den Frauen, die auf ihren Wink aus dem Schiffsraum heraufsteigen.</hi>
-            </stage>
+            <stage>zu den Frauen, die auf ihren Wink aus dem Schiffsraum heraufsteigen.</stage>
             <lg>
               <l>Schnell, den Mantel,</l>
               <l>den Königsschmuck!</l>
             </lg>
-            <stage>
-              <hi>Zwischen Tristan und Isolde stürzend.</hi>
-            </stage>
+            <stage>Zwischen Tristan und Isolde stürzend.</stage>
             <lg>
               <l>Unsel'ge! Auf!</l>
               <l>Hört, wo wir sind!</l>
             </lg>
-            <stage>
-              <hi>Sie legt Isolden, die es nicht gewahrt, den Königsmantel an.</hi>
-            </stage>
+            <stage>Sie legt Isolden, die es nicht gewahrt, den Königsmantel an.</stage>
           </sp>
-          <sp who="#alle_männer">
+          <sp who="#alle_maenner_schiffsvolk">
             <speaker>ALLE MÄNNER</speaker>
-            <stage>
-              <hi>auf dem Schiff.</hi>
-            </stage>
+            <stage>auf dem Schiff.</stage>
             <lg>
               <l>Heil! Heil! Heil!</l>
               <l><pb n="342"/> König Marke Heil!</l>
@@ -1793,9 +1642,7 @@
           </sp>
           <sp who="#kurwenal">
             <speaker>KURWENAL</speaker>
-            <stage>
-              <hi>lebhaft herantretend.</hi>
-            </stage>
+            <stage>lebhaft herantretend.</stage>
             <lg>
               <l>Heil Tristan!</l>
               <l>Glücklicher Held!</l>
@@ -1808,9 +1655,7 @@
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>in Verwirrung aufblickend.</hi>
-            </stage>
+            <stage>in Verwirrung aufblickend.</stage>
             <l>Wer naht?</l>
           </sp>
           <sp who="#kurwenal">
@@ -1820,34 +1665,26 @@
           <sp who="#tristan">
             <speaker>TRISTAN.</speaker>
             <l>Welcher König?</l>
-            <stage>
-              <hi>Kurwenal deutet über Bord.</hi>
-            </stage>
+            <stage>Kurwenal deutet über Bord.</stage>
           </sp>
-          <sp who="#alle_männer">
+          <sp who="#alle_maenner_schiffsvolk">
             <speaker>ALLE MÄNNER</speaker>
-            <stage>
-              <hi>die Hüte schwenkend.</hi>
-            </stage>
+            <stage>die Hüte schwenkend.</stage>
             <lg>
               <l>Heil! König Marke</l>
               <l>Heil!</l>
             </lg>
-            <stage>
-              <hi>Tristan starrt wie sinnlos nach dem Lande.</hi>
-            </stage>
+            <stage>Tristan starrt wie sinnlos nach dem Lande.</stage>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>in Verwirrung.</hi>
-            </stage>
+            <stage>in Verwirrung.</stage>
             <lg>
               <l>Was ist, Brangäne?</l>
               <l>Welcher Ruf?</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Isolde! Herrin!</l>
@@ -1861,18 +1698,14 @@
               <l>Ha! welcher Trank?</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE</speaker>
-            <stage>
-              <hi>verzweiflungsvoll.</hi>
-            </stage>
+            <stage>verzweiflungsvoll.</stage>
             <l>Der Liebestrank!</l>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>starrt entsetzt auf Tristan.</hi>
-            </stage>
+            <stage>starrt entsetzt auf Tristan.</stage>
             <l>Tristan!</l>
           </sp>
           <sp who="#tristan">
@@ -1882,15 +1715,11 @@
           <sp who="#isolde">
             <speaker>ISOLDE.</speaker>
             <l>Muß ich leben?</l>
-            <stage>
-              <hi>Sie stürzt ohnmächtig an seine Brust.</hi>
-            </stage>
+            <stage>Sie stürzt ohnmächtig an seine Brust.</stage>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE</speaker>
-            <stage>
-              <hi>zu den Frauen.</hi>
-            </stage>
+            <stage>zu den Frauen.</stage>
             <l>Helft der Herrin!</l>
           </sp>
           <sp who="#tristan">
@@ -1900,36 +1729,28 @@
               <l>O Trug – geweihtes Glücke!</l>
             </lg>
           </sp>
-          <sp who="#alle_männer">
+          <sp who="#alle_maenner_schiffsvolk">
             <speaker>ALLE MÄNNER</speaker>
-            <stage>
-              <hi>Ausbruch allgemeinen Jauchzens.</hi>
-            </stage>
+            <stage>Ausbruch allgemeinen Jauchzens.</stage>
             <l>Kornwall Heil!</l>
-            <stage>
-              <hi>Trompeten vom Lande her.</hi>
-            </stage>
-            <stage>
-              <hi>Leute sind über Bord gestiegen, andere haben eine Brücke ausgelegt, und die
-                Haltung Aller deutet auf die soeben bevorstehende Ankunft der Erwarteten. Der
-                Vorhang fällt schnell.</hi>
-            </stage>
+            <stage>Trompeten vom Lande her.</stage>
+            <stage>Leute sind über Bord gestiegen, andere haben eine Brücke ausgelegt, und die
+              Haltung Aller deutet auf die soeben bevorstehende Ankunft der Erwarteten. Der Vorhang
+              fällt schnell.</stage>
             <pb n="343"/>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>2. Akt</head>
+        <head>Zweiter Aufzug</head>
         <div type="scene">
           <head>Erste Szene</head>
-          <stage>
-            <hi>Garten mit hohen Bäumen vor dem Gemach Isoldes, zu welchem, seitwärts gelegen,
-              Stufen hinaufführen. Helle, anmutige Sommernacht. An der geöffneten Türe ist eine
-              brennende Fackel aufgesteckt. – Jagdgetön. Brangäne, auf den Stufen am Gemach, späht
-              dem immer entfernter vernehmbaren Jagdtrosse nach. – Brangäne blickt ängstlich in das
-              Gemach zurück, darin sie Isolde nahen sieht. – Isolde tritt feurig bewegt aus dem
-              Gemach zu Brangäne.</hi>
-          </stage>
+          <stage>Garten mit hohen Bäumen vor dem Gemach Isoldes, zu welchem, seitwärts gelegen,
+            Stufen hinaufführen. Helle, anmutige Sommernacht. An der geöffneten Türe ist eine
+            brennende Fackel aufgesteckt. – Jagdgetön. Brangäne, auf den Stufen am Gemach, späht dem
+            immer entfernter vernehmbaren Jagdtrosse nach. – Brangäne blickt ängstlich in das Gemach
+            zurück, darin sie Isolde nahen sieht. – Isolde tritt feurig bewegt aus dem Gemach zu
+            Brangäne.</stage>
           <sp who="#isolde">
             <speaker>ISOLDE.</speaker>
             <lg>
@@ -1937,11 +1758,9 @@
               <l>Mir schwand schon fern der Klang.</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE</speaker>
-            <stage>
-              <hi>lauschend.</hi>
-            </stage>
+            <stage>lauschend.</stage>
             <lg>
               <l>Noch sind sie nah; –</l>
               <l>deutlich tönt's da her.</l>
@@ -1949,9 +1768,7 @@
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>lauschend.</hi>
-            </stage>
+            <stage>lauschend.</stage>
             <lg>
               <l>Sorgende Furcht</l>
               <l>beirrt dein Ohr.</l>
@@ -1960,23 +1777,19 @@
               <l>das lachend schüttelt der Wind.</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Dich täuscht des Wunsches</l>
               <l>Ungestüm,</l>
               <l>zu vernehmen, was du wähnst.</l>
             </lg>
-            <stage>
-              <hi>Sie lauscht.</hi>
-            </stage>
+            <stage>Sie lauscht.</stage>
             <l>Ich höre der Hörner Schall.</l>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>wieder lauschend.</hi>
-            </stage>
+            <stage>wieder lauschend.</stage>
             <lg>
               <l>Nicht Hörnerschall</l>
               <l>tönt so hold,</l>
@@ -1993,7 +1806,7 @@
               <l>willst du ihn fern mir halten?</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Der deiner harrt, –</l>
@@ -2037,7 +1850,7 @@
               <l>dann weilt er bei Melot allein.</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Was mir ihn verdächtig,</l>
@@ -2082,7 +1895,7 @@
               <l>Laß meinen Liebsten ein!</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>O laß die warnende Zünde,</l>
@@ -2133,7 +1946,7 @@
               <l>Nun laß mich Gehorsam zeigen.</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Und mußte der Minne</l>
@@ -2161,13 +1974,9 @@
               <l>es werde Nacht,</l>
               <l>daß hell sie dorten leuchte,</l>
             </lg>
-            <stage>
-              <hi>Während sie auf die Fackel zueilt.</hi>
-            </stage>
+            <stage>Während sie auf die Fackel zueilt.</stage>
             <l>wo sie dein Licht verscheuchte.</l>
-            <stage>
-              <hi>Sie nimmt die Fackel von der Tür.</hi>
-            </stage>
+            <stage>Sie nimmt die Fackel von der Tür.</stage>
             <lg>
               <l><pb n="347"/> Zur Warte du:</l>
               <l>dort wache treu!</l>
@@ -2176,37 +1985,30 @@
               <l>lachend</l>
               <l>sie zu löschen zag ich nicht!</l>
             </lg>
-            <stage>
-              <hi>Sie wirft die Fackel zur Erde, wo sie allmählich verlischt Brangäne wendet sich
-                bestürzt ab, um auf einer äußeren Treppe die Zinne zu ersteigen, wo sie langsam
-                verschwindet. – Isolde lauscht und späht, zunächst schüchtern, in einen Baumgang.
-                Von wachsendem Verlangen bewegt, schreitet sie dem Baumgang näher und späht
-                zuversichtlicher. Sie winkt mit dem Tuche, erst seltener, dann häufiger, und
-                endlich, in leidenschaftlicher Ungeduld, immer schneller. Eine Gebärde des
-                plötzlichen Entzückens sagt, daß sie den Freund in der Ferne gewahr geworden. Sie
-                streckt sich höher und, um besser den Raum zu übersehen, eilt sie zur Treppe zurück,
-                von deren oberster Stufe aus sie dem Herannahenden zuwinkt.</hi>
-            </stage>
+            <stage>Sie wirft die Fackel zur Erde, wo sie allmählich verlischt Brangäne wendet sich
+              bestürzt ab, um auf einer äußeren Treppe die Zinne zu ersteigen, wo sie langsam
+              verschwindet. – Isolde lauscht und späht, zunächst schüchtern, in einen Baumgang. Von
+              wachsendem Verlangen bewegt, schreitet sie dem Baumgang näher und späht
+              zuversichtlicher. Sie winkt mit dem Tuche, erst seltener, dann häufiger, und endlich,
+              in leidenschaftlicher Ungeduld, immer schneller. Eine Gebärde des plötzlichen
+              Entzückens sagt, daß sie den Freund in der Ferne gewahr geworden. Sie streckt sich
+              höher und, um besser den Raum zu übersehen, eilt sie zur Treppe zurück, von deren
+              oberster Stufe aus sie dem Herannahenden zuwinkt.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweite Szene</head>
-          <stage>
-            <hi>Jetzt springt sie ihm entgegen.</hi>
-          </stage>
+          <stage>Jetzt springt sie ihm entgegen.</stage>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>stürzt herein.</hi>
-            </stage>
+            <stage>stürzt herein.</stage>
             <l>Isolde! Geliebte!</l>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE.</speaker>
             <l>Tristan! Geliebter!</l>
-            <stage>
-              <hi>Stürmische Umarmungen Beider, unter denen sie in den Vordergrund gelangen.</hi>
-            </stage>
+            <stage>Stürmische Umarmungen Beider, unter denen sie in den Vordergrund
+              gelangen.</stage>
             <l>Bist du mein?</l>
           </sp>
           <sp who="#tristan">
@@ -2268,7 +2070,7 @@
               <l>Ist es kein Trug?</l>
             </lg>
           </sp>
-          <sp who="#beide">
+          <sp who="#tristan #isolde">
             <speaker>BEIDE.</speaker>
             <lg>
               <l>Ist es kein Traum?</l>
@@ -2320,7 +2122,7 @@
             <speaker>TRISTAN.</speaker>
             <l>Lustentzücken!</l>
           </sp>
-          <sp who="#beide">
+          <sp who="#tristan #isolde">
             <speaker>BEIDE.</speaker>
             <lg>
               <l>Himmelhöchstes</l>
@@ -2336,7 +2138,7 @@
             <speaker>TRISTAN.</speaker>
             <l>Isolde mein!</l>
           </sp>
-          <sp who="#beide">
+          <sp who="#tristan #isolde">
             <speaker>BEIDE.</speaker>
             <l>Mein und dein!</l>
           </sp>
@@ -2351,7 +2153,7 @@
             <speaker>TRISTAN.</speaker>
             <l>Ewig, Isolde mein</l>
           </sp>
-          <sp who="#beide">
+          <sp who="#tristan #isolde">
             <speaker>BEIDE.</speaker>
             <l>Ewig, ewig ein!</l>
           </sp>
@@ -2680,12 +2482,10 @@
               <l>einzig wahr,</l>
               <l>Liebeswonne ihm lacht!</l>
             </lg>
-            <stage>
-              <hi>Tristan zieht Isolde sanft zur Seite auf eine Blumenbank nieder, senkt sich vor
-                ihr auf die Knie und schmiegt sein Haupt in ihren Arm.</hi>
-            </stage>
+            <stage>Tristan zieht Isolde sanft zur Seite auf eine Blumenbank nieder, senkt sich vor
+              ihr auf die Knie und schmiegt sein Haupt in ihren Arm.</stage>
           </sp>
-          <sp who="#beide">
+          <sp who="#tristan #isolde">
             <speaker>BEIDE.</speaker>
             <lg>
               <l>O sink hernieder,</l>
@@ -2720,7 +2520,7 @@
             <speaker>ISOLDE.</speaker>
             <l>all Gemahnen –</l>
           </sp>
-          <sp who="#beide">
+          <sp who="#tristan #isolde">
             <speaker>BEIDE.</speaker>
             <lg>
               <l>heil'ger Dämm'rung</l>
@@ -2761,7 +2561,7 @@
               <l>ein'ger Bund;</l>
             </lg>
           </sp>
-          <sp who="#beide">
+          <sp who="#tristan #isolde">
             <speaker>BEIDE.</speaker>
             <lg>
               <l>bricht mein Blick sich</l>
@@ -2785,7 +2585,7 @@
               <l>entgegen gestellt,</l>
             </lg>
           </sp>
-          <sp who="#beide">
+          <sp who="#tristan #isolde">
             <speaker>BEIDE.</speaker>
             <lg>
               <l>selbst dann</l>
@@ -2796,16 +2596,12 @@
               <l>wahnlos</l>
               <l>hold bewußter Wunsch.</l>
             </lg>
-            <stage>
-              <hi>Tristan und Isolde versinken wie in gänzlicher Entrücktheit, in der sie, Haupt an
-                Haupt auf die Blumenbank zurückgelehnt, verweilen.</hi>
-            </stage>
+            <stage>Tristan und Isolde versinken wie in gänzlicher Entrücktheit, in der sie, Haupt an
+              Haupt auf die Blumenbank zurückgelehnt, verweilen.</stage>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE</speaker>
-            <stage>
-              <hi>von der Zinne her unsichtbar.</hi>
-            </stage>
+            <stage>von der Zinne her unsichtbar.</stage>
             <lg>
               <l>Einsam wachend</l>
               <l>in der Nacht,</l>
@@ -2832,16 +2628,12 @@
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>allmählich sich ein wenig erhebend.</hi>
-            </stage>
+            <stage>allmählich sich ein wenig erhebend.</stage>
             <l>Neid'sche Wache!</l>
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>zurückgelehnt bleibend.</hi>
-            </stage>
+            <stage>zurückgelehnt bleibend.</stage>
             <l>Nie erwachen!</l>
           </sp>
           <sp who="#isolde">
@@ -2853,9 +2645,7 @@
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>ein wenig das Haupt erhebend.</hi>
-            </stage>
+            <stage>ein wenig das Haupt erhebend.</stage>
             <lg>
               <l>Laß den Tag</l>
               <l>dem Tode weichen!</l>
@@ -2872,9 +2662,7 @@
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>sich mehr aufrichtend.</hi>
-            </stage>
+            <stage>sich mehr aufrichtend.</stage>
             <lg>
               <l>Unsre Liebe?</l>
               <l>Tristans Liebe?</l>
@@ -2891,9 +2679,7 @@
               <l>wie wäre seinen Streichen</l>
               <l>die Liebe selbst zu erreichen?</l>
             </lg>
-            <stage>
-              <hi>Immer inniger mit dem Haupt sich an Isolde schmiegend.</hi>
-            </stage>
+            <stage>Immer inniger mit dem Haupt sich an Isolde schmiegend.</stage>
             <lg>
               <l>Stürb ich nun ihr,</l>
               <l>der so gern ich sterbe,</l>
@@ -2938,9 +2724,7 @@
               <l>mit Isoldes eig'nem Leben</l>
               <l>wär Tristan der Tod gegeben?</l>
             </lg>
-            <stage>
-              <hi>Tristan zieht, mit bedeutungsvoller Gebärde, Isolde sanft an sich.</hi>
-            </stage>
+            <stage>Tristan zieht, mit bedeutungsvoller Gebärde, Isolde sanft an sich.</stage>
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN.</speaker>
@@ -2959,9 +2743,7 @@
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>wie in sinnender Entrücktheit zu ihm aufblickend.</hi>
-            </stage>
+            <stage>wie in sinnender Entrücktheit zu ihm aufblickend.</stage>
             <lg>
               <l>So stürben wir,</l>
               <l>um ungetrennt –</l>
@@ -2982,7 +2764,7 @@
             <speaker>TRISTAN.</speaker>
             <l>ohn Erbangen –,</l>
           </sp>
-          <sp who="#beide">
+          <sp who="#tristan #isolde">
             <speaker>BEIDE.</speaker>
             <lg>
               <l>namenlos</l>
@@ -2990,15 +2772,11 @@
               <l>ganz uns selbst gegeben,</l>
               <l>der Liebe nur zu leben!</l>
             </lg>
-            <stage>
-              <hi>Isolde neigt wie überwältigt das Haupt an seine Brust.</hi>
-            </stage>
+            <stage>Isolde neigt wie überwältigt das Haupt an seine Brust.</stage>
           </sp>
-          <sp who="#brangänes_stimme">
+          <sp who="#brangaene">
             <speaker>BRANGÄNES STIMME</speaker>
-            <stage>
-              <hi>wie vorher.</hi>
-            </stage>
+            <stage>wie vorher.</stage>
             <lg>
               <l>Habet Acht!</l>
               <l>Habet Acht!</l>
@@ -3007,37 +2785,27 @@
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>lächelnd zu ihr geneigt.</hi>
-            </stage>
+            <stage>lächelnd zu ihr geneigt.</stage>
             <l>Soll ich lauschen?</l>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>schwärmerisch zu ihm aufblickend.</hi>
-            </stage>
+            <stage>schwärmerisch zu ihm aufblickend.</stage>
             <l>Laß mich sterben!</l>
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>ernster.</hi>
-            </stage>
+            <stage>ernster.</stage>
             <l>Muß ich wachen?</l>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>bewegter.</hi>
-            </stage>
+            <stage>bewegter.</stage>
             <l>Nie erwachen!</l>
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>drängender.</hi>
-            </stage>
+            <stage>drängender.</stage>
             <lg>
               <l>Soll der Tag</l>
               <l>noch Tristan wecken?</l>
@@ -3045,9 +2813,7 @@
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>begeistert.</hi>
-            </stage>
+            <stage>begeistert.</stage>
             <lg>
               <l>Laß den Tag</l>
               <l>dem Tode weichen!</l>
@@ -3086,9 +2852,7 @@
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>mit wachsender Begeisterung.</hi>
-            </stage>
+            <stage>mit wachsender Begeisterung.</stage>
             <l>Seinem Trug ewig zu fliehn.</l>
           </sp>
           <sp who="#tristan">
@@ -3100,12 +2864,10 @@
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>mit großer Gebärde ganz sich erhebend.</hi>
-            </stage>
+            <stage>mit großer Gebärde ganz sich erhebend.</stage>
             <l>Ewig wär uns die Nacht!</l>
           </sp>
-          <sp who="#beide">
+          <sp who="#tristan #isolde">
             <speaker>BEIDE.</speaker>
             <lg>
               <l>O ew'ge Nacht,</l>
@@ -3162,7 +2924,7 @@
               <l>nicht mehr Tristan!</l>
             </lg>
           </sp>
-          <sp who="#beide">
+          <sp who="#tristan #isolde">
             <speaker>BEIDE.</speaker>
             <lg>
               <l>Ohne Nennen,</l>
@@ -3174,31 +2936,25 @@
               <l>heiß erglühter Brust,</l>
               <l>höchste Liebeslust!</l>
             </lg>
-            <stage>
-              <hi>Sie verbleiben in verzückter Stellung.</hi>
-            </stage>
+            <stage>Sie verbleiben in verzückter Stellung.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritte Szene</head>
-          <stage>
-            <hi>Brangäne stößt einen grellen Schrei aus. – Kurwenal stürzt mit entblößtem Schwerte
-              herein.</hi>
-          </stage>
+          <stage>Brangäne stößt einen grellen Schrei aus. – Kurwenal stürzt mit entblößtem Schwerte
+            herein.</stage>
           <sp who="#kurwenal">
             <speaker>KURWENAL.</speaker>
             <l>Rette dich, Tristan!</l>
-            <stage>
-              <hi>Er blickt mit Entsetzen hinter sich in die Szene zurück Marke, Melot und Hofleute
-                (in Jägertracht) kommen aus dem Baumgange lebhaft nach dem Vordergrunde und halten
-                entsetzt der Gruppe der Liebenden gegenüber an. Brangäne kommt zugleich von der
-                Zinne herab und stürzt auf Isolde zu. Diese, von unwillkürlicher Scham ergriffen,
-                lehnt sich, mit abgewandtem Gesicht, auf die Blumenbank. Tristan, in ebenfalls
-                unwillkürlicher Bewegung, streckt mit dem einen Arme den Mantel breit aus, so daß er
-                Isolde vor den Blicken der Ankommenden verdeckt. In dieser Stellung verbleibt er
-                längere Zeit, unbeweglich den starren Blick auf die Männer gerichtet, die in
-                verschiedener Bewegung die Augen auf ihn heften. – Morgendämmerung.</hi>
-            </stage>
+            <stage>Er blickt mit Entsetzen hinter sich in die Szene zurück Marke, Melot und Hofleute
+              (in Jägertracht) kommen aus dem Baumgange lebhaft nach dem Vordergrunde und halten
+              entsetzt der Gruppe der Liebenden gegenüber an. Brangäne kommt zugleich von der Zinne
+              herab und stürzt auf Isolde zu. Diese, von unwillkürlicher Scham ergriffen, lehnt
+              sich, mit abgewandtem Gesicht, auf die Blumenbank. Tristan, in ebenfalls
+              unwillkürlicher Bewegung, streckt mit dem einen Arme den Mantel breit aus, so daß er
+              Isolde vor den Blicken der Ankommenden verdeckt. In dieser Stellung verbleibt er
+              längere Zeit, unbeweglich den starren Blick auf die Männer gerichtet, die in
+              verschiedener Bewegung die Augen auf ihn heften. – Morgendämmerung.</stage>
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN.</speaker>
@@ -3209,9 +2965,7 @@
           </sp>
           <sp who="#melot">
             <speaker>MELOT</speaker>
-            <stage>
-              <hi>zu Marke.</hi>
-            </stage>
+            <stage>zu Marke.</stage>
             <lg>
               <l>Das sollst du, Herr, mir sagen,</l>
               <l>ob ich ihn recht verklagt;</l>
@@ -3226,9 +2980,7 @@
           </sp>
           <sp who="#marke">
             <speaker>MARKE</speaker>
-            <stage>
-              <hi>nach tiefer Erschütterung, mit bebender Stimme.</hi>
-            </stage>
+            <stage>nach tiefer Erschütterung, mit bebender Stimme.</stage>
             <lg>
               <l>Tatest du's wirklich?</l>
               <l>Wähnst du das?</l>
@@ -3250,9 +3002,7 @@
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>krampfhaft heftig.</hi>
-            </stage>
+            <stage>krampfhaft heftig.</stage>
             <lg>
               <l>Tagsgespenster!</l>
               <l>Morgenträume! –</l>
@@ -3262,9 +3012,7 @@
           </sp>
           <sp who="#marke">
             <speaker>MARKE</speaker>
-            <stage>
-              <hi>mit tiefer Ergriffenheit.</hi>
-            </stage>
+            <stage>mit tiefer Ergriffenheit.</stage>
             <lg>
               <l>Mir dies?</l>
               <l>Dies, Tristan, mir?</l>
@@ -3281,10 +3029,8 @@
               <l>da meinen Freund sie flieht,</l>
               <l>da Tristan mich verriet?</l>
             </lg>
-            <stage>
-              <hi><pb n="361"/> Tristan senkt langsam den Blick zu Boden; in seinen Mienen ist,
-                während Marke fortfährt, zunehmende Trauer zu lesen.</hi>
-            </stage>
+            <stage><pb n="361"/> Tristan senkt langsam den Blick zu Boden; in seinen Mienen ist,
+              während Marke fortfährt, zunehmende Trauer zu lesen.</stage>
             <lg>
               <l>Wozu die Dienste</l>
               <l>ohne Zahl,</l>
@@ -3384,18 +3130,14 @@
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>mitleidig das Auge zu Marke erhebend.</hi>
-            </stage>
+            <stage>mitleidig das Auge zu Marke erhebend.</stage>
             <lg>
               <l>O König, das</l>
               <l>kann ich dir nicht sagen;</l>
               <l>und was du frägst,</l>
               <l>das kannst du nie erfahren.</l>
             </lg>
-            <stage>
-              <hi>Er wendet sich zu Isolde, die sehnsüchtig zu ihm aufblickt.</hi>
-            </stage>
+            <stage>Er wendet sich zu Isolde, die sehnsüchtig zu ihm aufblickt.</stage>
             <lg>
               <l>Wohin nun Tristan scheidet,</l>
               <l>willst du, Isold', ihm folgen?</l>
@@ -3438,31 +3180,23 @@
               <l>treu und hold,</l>
               <l>den Weg nun zeig Isold'!</l>
             </lg>
-            <stage>
-              <hi>Tristan neigt sich langsam über sie und küßt sie sanft auf die Stirn. – Melot
-                fährt wütend auf.</hi>
-            </stage>
+            <stage>Tristan neigt sich langsam über sie und küßt sie sanft auf die Stirn. – Melot
+              fährt wütend auf.</stage>
           </sp>
           <sp who="#melot">
             <speaker>MELOT</speaker>
-            <stage>
-              <hi>das Schwert ziehend.</hi>
-            </stage>
+            <stage>das Schwert ziehend.</stage>
             <lg>
               <l>Verräter! ha!</l>
               <l>Zur Rache, König!</l>
               <l>Duldest du diese Schmach?</l>
             </lg>
-            <stage>
-              <hi>Tristan zieht sein Schwert und wendet sich schnell um.</hi>
-            </stage>
+            <stage>Tristan zieht sein Schwert und wendet sich schnell um.</stage>
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN.</speaker>
             <l>Wer wagt sein Leben an das meine?</l>
-            <stage>
-              <hi>Er heftet den Blick auf Melot.</hi>
-            </stage>
+            <stage>Er heftet den Blick auf Melot.</stage>
             <lg>
               <l>Mein Freund war der,</l>
               <l>er minnte mich hoch und teuer;</l>
@@ -3480,57 +3214,43 @@
               <l>mich der Freund –</l>
               <l>dem König, den ich verriet!</l>
             </lg>
-            <stage>
-              <hi>Er dringt auf Melot ein.</hi>
-            </stage>
+            <stage>Er dringt auf Melot ein.</stage>
             <l>Wehr dich, Melot!</l>
-            <stage>
-              <hi>Als Melot ihm das Schwert entgegenstreckt, läßt Tristan das seinige fallen und
-                sinkt verwundet in Kurwenals Arme. Isolde stürzt sich an seine Brust. Marke hält
-                Melot zurück. – Der Vorhang fällt schnell.</hi>
-            </stage>
+            <stage>Als Melot ihm das Schwert entgegenstreckt, läßt Tristan das seinige fallen und
+              sinkt verwundet in Kurwenals Arme. Isolde stürzt sich an seine Brust. Marke hält Melot
+              zurück. – Der Vorhang fällt schnell.</stage>
             <pb n="365"/>
           </sp>
         </div>
       </div>
       <div type="act">
-        <head>3. Akt</head>
+        <head>Dritter Aufzug</head>
         <div type="scene">
           <head>Erste Szene</head>
-          <stage>
-            <hi>Burggarten.</hi>
-          </stage>
-          <stage>
-            <hi>Zur einen Seite hohe Burggebäude, zur andern eine niedrige Mauerbrüstung, von einer
-              Warte unterbrochen; im Hintergrunde das Burgtor. Die Lage ist auf felsiger Höhe
-              anzunehmen; durch Öffnungen blickt man auf einen weiten Meereshorizont. Das Ganze
-              macht den Eindruck der Herrenlosigkeit, übel gepflegt, hie und da schadhaft und
-              bewachsen. Im Vordergrunde, an der inneren Seite, liegt Tristan, unter dem Schatten
-              einer großen Linde, auf einem Ruhebett schlafend, wie leblos ausgestreckt. Zu Häupten
-              ihm sitzt Kurwenal, in Schmerz über ihn hingebeugt und sorgsam seinem Atem lauschend.
-              – Von der Außenseite hört man einen Hirtenreigen geblasen. Der Hirt erscheint mit dem
-              Oberleibe über der Mauerbrüstung und blickt teilnehmend herein.</hi>
-          </stage>
+          <stage>Burggarten.</stage>
+          <stage>Zur einen Seite hohe Burggebäude, zur andern eine niedrige Mauerbrüstung, von einer
+            Warte unterbrochen; im Hintergrunde das Burgtor. Die Lage ist auf felsiger Höhe
+            anzunehmen; durch Öffnungen blickt man auf einen weiten Meereshorizont. Das Ganze macht
+            den Eindruck der Herrenlosigkeit, übel gepflegt, hie und da schadhaft und bewachsen. Im
+            Vordergrunde, an der inneren Seite, liegt Tristan, unter dem Schatten einer großen
+            Linde, auf einem Ruhebett schlafend, wie leblos ausgestreckt. Zu Häupten ihm sitzt
+            Kurwenal, in Schmerz über ihn hingebeugt und sorgsam seinem Atem lauschend. – Von der
+            Außenseite hört man einen Hirtenreigen geblasen. Der Hirt erscheint mit dem Oberleibe
+            über der Mauerbrüstung und blickt teilnehmend herein.</stage>
           <sp who="#hirt">
             <speaker>HIRT</speaker>
-            <stage>
-              <hi>leise.</hi>
-            </stage>
+            <stage>leise.</stage>
             <lg>
               <l>Kurwenal! He!</l>
               <l>Sag, Kurwenal!</l>
               <l>Hör doch, Freund! –</l>
             </lg>
-            <stage>
-              <hi>Kurwenal wendet ein wenig das Haupt nach ihm.</hi>
-            </stage>
+            <stage>Kurwenal wendet ein wenig das Haupt nach ihm.</stage>
             <l>Wacht er noch nicht?</l>
           </sp>
           <sp who="#kurwenal">
             <speaker>KURWENAL</speaker>
-            <stage>
-              <hi>schüttelt traurig mit dem Kopf.</hi>
-            </stage>
+            <stage>schüttelt traurig mit dem Kopf.</stage>
             <lg>
               <l>Erwachte er,</l>
               <l>wär's doch nur</l>
@@ -3562,35 +3282,26 @@
               <l><pb n="366"/> und siehst du ein Schiff,</l>
               <l>so spiele lustig und hell!</l>
             </lg>
-            <stage>
-              <hi>Der Hirt wendet sich und späht, mit der Hand überm Aug', nach dem Meer aus.</hi>
-            </stage>
+            <stage>Der Hirt wendet sich und späht, mit der Hand überm Aug', nach dem Meer
+              aus.</stage>
           </sp>
           <sp who="#hirt">
             <speaker>HIRT.</speaker>
             <l>Öd und leer das Meer!</l>
-            <stage>
-              <hi>Er setzt die Schalmei an und entfernt sich blasend.</hi>
-            </stage>
+            <stage>Er setzt die Schalmei an und entfernt sich blasend.</stage>
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>bewegungslos, dumpf.</hi>
-            </stage>
+            <stage>bewegungslos, dumpf.</stage>
             <lg>
               <l>Die alte Weise –;</l>
               <l>was weckt sie mich?</l>
             </lg>
-            <stage>
-              <hi>Er schlägt die Augen auf und wendet das Haupt ein wenig.</hi>
-            </stage>
+            <stage>Er schlägt die Augen auf und wendet das Haupt ein wenig.</stage>
           </sp>
           <sp who="#kurwenal">
             <speaker>KURWENAL</speaker>
-            <stage>
-              <hi>fährt erschrocken auf.</hi>
-            </stage>
+            <stage>fährt erschrocken auf.</stage>
             <l>Ha!</l>
           </sp>
           <sp who="#tristan">
@@ -3608,9 +3319,7 @@
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>mit Anstrengung.</hi>
-            </stage>
+            <stage>mit Anstrengung.</stage>
             <l>Wer ruft mich?</l>
           </sp>
           <sp who="#kurwenal">
@@ -3726,9 +3435,7 @@
               <l>darin von Tod und Wunden</l>
               <l>du selig sollst gesunden.</l>
             </lg>
-            <stage>
-              <hi>Er schmiegt sich an Tristans Brust.</hi>
-            </stage>
+            <stage>Er schmiegt sich an Tristans Brust.</stage>
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN.</speaker>
@@ -3807,9 +3514,7 @@
               <l>Brennt sie ewig,</l>
               <l>diese Leuchte,</l>
             </lg>
-            <stage>
-              <hi>Allmählich abnehmend.</hi>
-            </stage>
+            <stage>Allmählich abnehmend.</stage>
             <lg>
               <l>die selbst nachts</l>
               <l>von ihr mich scheuchte?</l>
@@ -3819,23 +3524,17 @@
               <l>wann, ach wann?</l>
               <l>löschest du die Zünde, –</l>
             </lg>
-            <stage>
-              <hi>Immer mehr ermattend.</hi>
-            </stage>
+            <stage>Immer mehr ermattend.</stage>
             <lg>
               <l>daß sie mein Glück mir künde?</l>
               <l>Das Licht – wann löscht es aus?</l>
             </lg>
-            <stage>
-              <hi>Er sinkt erschöpft leise zurück.</hi>
-            </stage>
+            <stage>Er sinkt erschöpft leise zurück.</stage>
             <l>Wann wird es Ruh im Haus?</l>
           </sp>
           <sp who="#kurwenal">
             <speaker>KURWENAL</speaker>
-            <stage>
-              <hi>nach großer Erschütterung aus der Niedergeschlagenheit sich aufraffend.</hi>
-            </stage>
+            <stage>nach großer Erschütterung aus der Niedergeschlagenheit sich aufraffend.</stage>
             <lg>
               <l>Der einst ich trotzt,</l>
               <l>aus Treu' zu dir,</l>
@@ -3850,9 +3549,7 @@
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>sehr matt.</hi>
-            </stage>
+            <stage>sehr matt.</stage>
             <lg>
               <l>Noch losch das Licht nicht aus, –</l>
               <l>noch ward's nicht Nacht im Haus:</l>
@@ -3890,23 +3587,17 @@
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>außer sich.</hi>
-            </stage>
+            <stage>außer sich.</stage>
             <lg>
               <l>Isolde kommt!</l>
               <l>Isolde naht!</l>
             </lg>
-            <stage>
-              <hi>Er ringt gleichsam nach Sprache.</hi>
-            </stage>
+            <stage>Er ringt gleichsam nach Sprache.</stage>
             <lg>
               <l>O Treue! Hehre,</l>
               <l>holde Treue!</l>
             </lg>
-            <stage>
-              <hi>Er zieht Kurwenal an sich und umarmt ihn.</hi>
-            </stage>
+            <stage>Er zieht Kurwenal an sich und umarmt ihn.</stage>
             <lg>
               <l>Mein Kurwenal,</l>
               <l>du trauter Freund!</l>
@@ -3956,28 +3647,20 @@
               <l>Dort streicht es am Riff!</l>
               <l>Siehst du es nicht?</l>
             </lg>
-            <stage>
-              <hi>Heftig.</hi>
-            </stage>
+            <stage>Heftig.</stage>
             <l>Kurwenal! Siehst du es nicht?</l>
-            <stage>
-              <hi>Als Kurwenal, um Tristan nicht zu verlassen, zögert und dieser in schweigender
-                Spannung auf ihn blickt, ertönt, wie zu Anfang, die klagende Weise des Hirten.</hi>
-            </stage>
+            <stage>Als Kurwenal, um Tristan nicht zu verlassen, zögert und dieser in schweigender
+              Spannung auf ihn blickt, ertönt, wie zu Anfang, die klagende Weise des Hirten.</stage>
           </sp>
           <sp who="#kurwenal">
             <speaker>KURWENAL</speaker>
-            <stage>
-              <hi>niedergeschlagen.</hi>
-            </stage>
+            <stage>niedergeschlagen.</stage>
             <l>Noch ist kein Schiff zu sehn!</l>
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>hat mit abnehmender Aufregung gelauscht und beginnt nun mit wachsender
-                Schwermut.</hi>
-            </stage>
+            <stage>hat mit abnehmender Aufregung gelauscht und beginnt nun mit wachsender
+              Schwermut.</stage>
             <lg>
               <l>Muß ich dich so verstehn,</l>
               <l>du alte ernste Weise,</l>
@@ -4080,15 +3763,11 @@
               <l>verflucht sei, furchtbarer Trank!</l>
               <l>Verflucht, wer dich gebraut!</l>
             </lg>
-            <stage>
-              <hi>Er sinkt ohnmächtig zurück.</hi>
-            </stage>
+            <stage>Er sinkt ohnmächtig zurück.</stage>
           </sp>
           <sp who="#kurwenal">
             <speaker>KURWENAL</speaker>
-            <stage>
-              <hi>der vergebens Tristan zu mäßigen suchte, schreit entsetzt auf.</hi>
-            </stage>
+            <stage>der vergebens Tristan zu mäßigen suchte, schreit entsetzt auf.</stage>
             <lg>
               <l>Mein Herre! Tristan!</l>
               <l>Schrecklicher Zauber!</l>
@@ -4103,17 +3782,13 @@
               <l>sie Dankes gewann,</l>
               <l>was je Minne je gewinnt!</l>
             </lg>
-            <stage>
-              <hi>Mit schluchzender Stimme.</hi>
-            </stage>
+            <stage>Mit schluchzender Stimme.</stage>
             <lg>
               <l>Bist du nun tot?</l>
               <l>Lebst du noch?</l>
               <l>Hat dich der Fluch entführt?</l>
             </lg>
-            <stage>
-              <hi>Er lauscht seinem Atem.</hi>
-            </stage>
+            <stage>Er lauscht seinem Atem.</stage>
             <lg>
               <l>O Wonne! Nein!</l>
               <l>Er regt sich, er lebt! –</l>
@@ -4171,20 +3846,13 @@
               <l>Mußt es sehen!</l>
               <l>Das Schiff? Sähst du's noch nicht?</l>
             </lg>
-            <stage>
-              <hi>Während Kurwenal noch zögernd mit Tristan ringt, läßt der Hirt von außen die
-                Schalmei ertönen. </hi>
-            </stage>
-            <stage>
-              <hi>Kurwenal springt freudig auf.</hi>
-            </stage>
+            <stage>Während Kurwenal noch zögernd mit Tristan ringt, läßt der Hirt von außen die
+              Schalmei ertönen. Kurwenal springt freudig auf.</stage>
           </sp>
           <sp who="#kurwenal">
             <speaker>KURWENAL.</speaker>
             <l>O Wonne! Freude!</l>
-            <stage>
-              <hi>Er stürzt auf die Warte und späht aus.</hi>
-            </stage>
+            <stage>Er stürzt auf die Warte und späht aus.</stage>
             <lg>
               <l>Ha! Das Schiff!</l>
               <l>Von Norden seh ich's nahen.</l>
@@ -4205,9 +3873,7 @@
           </sp>
           <sp who="#kurwenal">
             <speaker>KURWENAL</speaker>
-            <stage>
-              <hi>jauchzend.</hi>
-            </stage>
+            <stage>jauchzend.</stage>
             <lg>
               <l>Hahei! Heiha!</l>
               <l>Wie es mutig steuert!</l>
@@ -4228,9 +3894,7 @@
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>auf dem Lager hoch sich aufrichtend.</hi>
-            </stage>
+            <stage>auf dem Lager hoch sich aufrichtend.</stage>
             <lg>
               <l>Hahei der Freude!</l>
               <l>Hell am Tage</l>
@@ -4289,9 +3953,7 @@
           </sp>
           <sp who="#kurwenal">
             <speaker>KURWENAL</speaker>
-            <stage>
-              <hi>jauchzend.</hi>
-            </stage>
+            <stage>jauchzend.</stage>
             <lg>
               <l>Heiha! Heihahaha!</l>
               <l>Vorbei! Vorbei!</l>
@@ -4300,9 +3962,7 @@
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>jauchzend.</hi>
-            </stage>
+            <stage>jauchzend.</stage>
             <lg>
               <l>Heihahaha! Kurwenal,</l>
               <l>treuester Freund!</l>
@@ -4357,18 +4017,14 @@
               <l>Doch du, Tristan,</l>
               <l>bleib mir treulich am Bett!</l>
             </lg>
-            <stage>
-              <hi>Kurwenal eilt fort.</hi>
-            </stage>
+            <stage>Kurwenal eilt fort.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweite Szene</head>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>in höchster Aufregung auf dem Lager sich mühend.</hi>
-            </stage>
+            <stage>in höchster Aufregung auf dem Lager sich mühend.</stage>
             <lg>
               <l>O diese Sonne!</l>
               <l>Ha! dieser Tag!</l>
@@ -4387,25 +4043,19 @@
               <l>hat sich vom Tod</l>
               <l>emporgerafft.</l>
             </lg>
-            <stage>
-              <hi>Er richtet sich hoch auf.</hi>
-            </stage>
+            <stage>Er richtet sich hoch auf.</stage>
             <lg>
               <l>Mit blutender Wunde</l>
               <l>bekämpft ich einst Morolden:</l>
               <l>mit blutender Wunde</l>
               <l>erjag ich mir heut Isolden!</l>
             </lg>
-            <stage>
-              <hi>Er reißt sich den Verband der Wunde auf.</hi>
-            </stage>
+            <stage>Er reißt sich den Verband der Wunde auf.</stage>
             <lg>
               <l>Heia, mein Blut!</l>
               <l>Lustig nun fließe!</l>
             </lg>
-            <stage>
-              <hi><pb n="378"/> Er springt vom Lager herab und schwankt vorwärts.</hi>
-            </stage>
+            <stage><pb n="378"/> Er springt vom Lager herab und schwankt vorwärts.</stage>
             <lg>
               <l>Die mir die Wunde</l>
               <l>ewig schließe, –</l>
@@ -4414,33 +4064,25 @@
               <l>Vergeh die Welt</l>
               <l>meiner jauchzenden Eil!</l>
             </lg>
-            <stage>
-              <hi>Er taumelt nach der Mitte der Bühne.</hi>
-            </stage>
+            <stage>Er taumelt nach der Mitte der Bühne.</stage>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE</speaker>
-            <stage>
-              <hi>von außen rufend.</hi>
-            </stage>
+            <stage>von außen rufend.</stage>
             <l>Tristan! Geliebter!</l>
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>in der furchtbarsten Aufregung.</hi>
-            </stage>
+            <stage>in der furchtbarsten Aufregung.</stage>
             <lg>
               <l>Wie, hör ich das Licht?</l>
               <l>Die Leuchte, ha!</l>
               <l>Die Leuchte verlischt.</l>
               <l>Zu ihr! Zu ihr!</l>
             </lg>
-            <stage>
-              <hi>Isolde eilt atemlos herein. Tristan, seiner nicht mächtig, stürzt sich ihr
-                schwankend entgegen. In der Mitte der Bühne begegnen sie sich; sie empfängt ihn in
-                ihren Armen. – Tristan sinkt langsam in ihren Armen zu Boden.</hi>
-            </stage>
+            <stage>Isolde eilt atemlos herein. Tristan, seiner nicht mächtig, stürzt sich ihr
+              schwankend entgegen. In der Mitte der Bühne begegnen sie sich; sie empfängt ihn in
+              ihren Armen. – Tristan sinkt langsam in ihren Armen zu Boden.</stage>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE.</speaker>
@@ -4448,13 +4090,9 @@
           </sp>
           <sp who="#tristan">
             <speaker>TRISTAN</speaker>
-            <stage>
-              <hi>sterbend zu ihr aufblickend.</hi>
-            </stage>
+            <stage>sterbend zu ihr aufblickend.</stage>
             <l>Isolde!</l>
-            <stage>
-              <hi>Er stirbt.</hi>
-            </stage>
+            <stage>Er stirbt.</stage>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE.</speaker>
@@ -4509,41 +4147,31 @@
               <l>horch –! Er wacht!</l>
               <l>Geliebter!</l>
             </lg>
-            <stage>
-              <hi>Sie sinkt bewußtlos über der Leiche zusammen.</hi>
-            </stage>
+            <stage>Sie sinkt bewußtlos über der Leiche zusammen.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritte Szene</head>
-          <stage>
-            <hi>Kurwenal war sogleich hinter Isolde zurückgekommen; sprachlos in furchtbarer
-              Erschütterung hat er dem Auftritte beigewohnt und bewegungslos auf Tristan
-              hingestarrt. – Aus der Tiefe hört man jetzt dumpfes Gemurmel und Waffengeklirr. – Der
-              Hirt kommt über die Mauer gestiegen.</hi>
-          </stage>
+          <stage>Kurwenal war sogleich hinter Isolde zurückgekommen; sprachlos in furchtbarer
+            Erschütterung hat er dem Auftritte beigewohnt und bewegungslos auf Tristan hingestarrt.
+            – Aus der Tiefe hört man jetzt dumpfes Gemurmel und Waffengeklirr. – Der Hirt kommt über
+            die Mauer gestiegen.</stage>
           <sp who="#hirt">
             <speaker>HIRT</speaker>
-            <stage>
-              <hi>hastig und leise sich zu Kurwenal wendend.</hi>
-            </stage>
+            <stage>hastig und leise sich zu Kurwenal wendend.</stage>
             <lg>
               <l>Kurwenal!</l>
               <l>Hör!</l>
               <l>Ein zweites Schiff.</l>
             </lg>
-            <stage>
-              <hi>Kurwenal fährt heftig auf und blickt über die Brüstung, während der Hirt aus der
-                Ferne erschüttert auf Tristan und Isolde sieht.</hi>
-            </stage>
+            <stage>Kurwenal fährt heftig auf und blickt über die Brüstung, während der Hirt aus der
+              Ferne erschüttert auf Tristan und Isolde sieht.</stage>
             <pb n="380"/>
           </sp>
           <sp who="#kurwenal">
             <speaker>KURWENAL.</speaker>
             <l>Tod und Hölle!</l>
-            <stage>
-              <hi>In Wut ausbrechend.</hi>
-            </stage>
+            <stage>In Wut ausbrechend.</stage>
             <lg>
               <l>Alles zur Hand!</l>
               <l>Marke und Melot</l>
@@ -4551,15 +4179,12 @@
               <l>Waffen, und Steine!</l>
               <l>Hilf mir! Ans Tor!</l>
             </lg>
-            <stage>
-              <hi>Er eilt mit dem Hirten an das Tor, das sie in der Hast zu verrammeln suchen.</hi>
-            </stage>
+            <stage>Er eilt mit dem Hirten an das Tor, das sie in der Hast zu verrammeln
+              suchen.</stage>
           </sp>
           <sp who="#der_steuermann">
             <speaker>DER STEUERMANN</speaker>
-            <stage>
-              <hi>stürzt herein.</hi>
-            </stage>
+            <stage>stürzt herein.</stage>
             <lg>
               <l>Marke mir nach</l>
               <l>mit Mann und Volk:</l>
@@ -4574,11 +4199,9 @@
               <l>So lang ich lebe,</l>
               <l>lugt mir keiner herein!</l>
             </lg>
-            <stage>
-              <hi>Man hört Brangänens Stimme, außen, von unten her.</hi>
-            </stage>
+            <stage>Man hört Brangänens Stimme, außen, von unten her.</stage>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <l>Isolde! Herrin!</l>
           </sp>
@@ -4589,7 +4212,7 @@
               <l>Was suchst du hier?</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Schließ nicht, Kurwenal!</l>
@@ -4605,9 +4228,7 @@
           </sp>
           <sp who="#melot">
             <speaker>MELOT</speaker>
-            <stage>
-              <hi>außerhalb.</hi>
-            </stage>
+            <stage>außerhalb.</stage>
             <lg>
               <l>Zurück, du Tor!</l>
               <l>Stemm dich nicht dort!</l>
@@ -4615,31 +4236,23 @@
           </sp>
           <sp who="#kurwenal">
             <speaker>KURWENAL</speaker>
-            <stage>
-              <hi>wütend auflachend.</hi>
-            </stage>
+            <stage>wütend auflachend.</stage>
             <lg>
               <l>Heiahaha! Dem Tag,</l>
               <l>an dem ich dich treffe!</l>
             </lg>
-            <stage>
-              <hi>Melot, mit gewaffneten Männern, erscheint unter dem Tor, Kurwenal stürzt sich auf
-                ihn und streckt ihn zu Boden.</hi>
-            </stage>
+            <stage>Melot, mit gewaffneten Männern, erscheint unter dem Tor, Kurwenal stürzt sich auf
+              ihn und streckt ihn zu Boden.</stage>
             <l>Stirb, schändlicher Wicht!</l>
           </sp>
           <sp who="#melot">
             <speaker>MELOT.</speaker>
             <l>Weh mir! Tristan!</l>
-            <stage>
-              <hi>Er stirbt.</hi>
-            </stage>
+            <stage>Er stirbt.</stage>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE</speaker>
-            <stage>
-              <hi>noch außerhalb.</hi>
-            </stage>
+            <stage>noch außerhalb.</stage>
             <lg>
               <l>Kurwenal! Wütender!</l>
               <l>Hör, du betrügst dich!</l>
@@ -4648,22 +4261,16 @@
           <sp who="#kurwenal">
             <speaker>KURWENAL.</speaker>
             <l>Treulose Magd!</l>
-            <stage>
-              <hi>Zu den Seinen.</hi>
-            </stage>
+            <stage>Zu den Seinen.</stage>
             <lg>
               <l>Drauf! Mir nach!</l>
               <l>Werft sie zurück!</l>
             </lg>
-            <stage>
-              <hi>Sie greifen von neuem an.</hi>
-            </stage>
+            <stage>Sie greifen von neuem an.</stage>
           </sp>
           <sp who="#marke">
             <speaker>MARKE</speaker>
-            <stage>
-              <hi>außerhalb.</hi>
-            </stage>
+            <stage>außerhalb.</stage>
             <lg>
               <l>Halte, Rasender!</l>
               <l>Bist du von Sinnen?</l>
@@ -4677,32 +4284,25 @@
               <l>ist hier zu holen:</l>
               <l>willst du ihn kiesen, so komm!</l>
             </lg>
-            <stage>
-              <hi>Er dringt auf Marke und dessen Gefolge ein.</hi>
-            </stage>
+            <stage>Er dringt auf Marke und dessen Gefolge ein.</stage>
           </sp>
           <sp who="#marke">
             <speaker>MARKE</speaker>
-            <stage>
-              <hi>unter dem Tore mit Gefolge erscheinend.</hi>
-            </stage>
+            <stage>unter dem Tore mit Gefolge erscheinend.</stage>
             <l>Zurück! Wahnsinniger!</l>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE</speaker>
-            <stage>
-              <hi>hat sich seitwärts über die Mauer geschwungen und eilt in den Vordergrund.</hi>
-            </stage>
+            <stage>hat sich seitwärts über die Mauer geschwungen und eilt in den
+              Vordergrund.</stage>
             <lg>
               <l>Isolde! Herrin!</l>
               <l>Glück und Heil!</l>
               <l>Was seh ich! Ha!</l>
               <l>Lebst du? Isolde!</l>
             </lg>
-            <stage>
-              <hi>Sie müht sich um Isolde. – Marke mit seinem Gefolge hat Kurwenal mit dessen
-                Helfern vom Tore zurückgetrieben und dringt herein.</hi>
-            </stage>
+            <stage>Sie müht sich um Isolde. – Marke mit seinem Gefolge hat Kurwenal mit dessen
+              Helfern vom Tore zurückgetrieben und dringt herein.</stage>
           </sp>
           <sp who="#marke">
             <speaker>MARKE.</speaker>
@@ -4713,16 +4313,12 @@
           </sp>
           <sp who="#kurwenal">
             <speaker>KURWENAL</speaker>
-            <stage>
-              <hi>schwer verwundet, schwankt vor Marke her nach dem Vordergrund.</hi>
-            </stage>
+            <stage>schwer verwundet, schwankt vor Marke her nach dem Vordergrund.</stage>
             <lg>
               <l>Da liegt er –</l>
               <l>hier –, wo ich – liege.</l>
             </lg>
-            <stage>
-              <hi>Er sinkt bei Tristans Füßen zusammen.</hi>
-            </stage>
+            <stage>Er sinkt bei Tristans Füßen zusammen.</stage>
           </sp>
           <sp who="#marke">
             <speaker>MARKE.</speaker>
@@ -4733,17 +4329,13 @@
           </sp>
           <sp who="#kurwenal">
             <speaker>KURWENAL</speaker>
-            <stage>
-              <hi>nach Tristans Hand fassend.</hi>
-            </stage>
+            <stage>nach Tristans Hand fassend.</stage>
             <lg>
               <l>Tristan! Trauter!</l>
               <l>Schilt mich nicht –,</l>
               <l>daß der Treue auch mitkommt!</l>
             </lg>
-            <stage>
-              <hi>Er stirbt.</hi>
-            </stage>
+            <stage>Er stirbt.</stage>
           </sp>
           <sp who="#marke">
             <speaker>MARKE.</speaker>
@@ -4758,16 +4350,12 @@
               <l>die höchste Treue zu bewähren?</l>
               <l>Erwache meinem Jammer!</l>
             </lg>
-            <stage>
-              <hi>Schluchzend über die Leiche sich herabbeugend.</hi>
-            </stage>
+            <stage>Schluchzend über die Leiche sich herabbeugend.</stage>
             <l>Du treulos treu'ster Freund!</l>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE</speaker>
-            <stage>
-              <hi>die in ihren Armen Isolde wieder zu sich gebracht.</hi>
-            </stage>
+            <stage>die in ihren Armen Isolde wieder zu sich gebracht.</stage>
             <lg>
               <l>Sie wacht, sie lebt!</l>
               <l>Isolde! hör mich,</l>
@@ -4801,17 +4389,15 @@
               <l>der Wahn häufte die Not.</l>
             </lg>
           </sp>
-          <sp who="#brangäne">
+          <sp who="#brangaene">
             <speaker>BRANGÄNE.</speaker>
             <lg>
               <l>Hörst du uns nicht?</l>
               <l>Isolde! Traute!</l>
               <l>Vernimmst du die Treue nicht?</l>
             </lg>
-            <stage>
-              <hi>Isolde, die nichts um sie her vernommen, heftet das Auge mit wachsender
-                Begeisterung auf Tristans Leiche.</hi>
-            </stage>
+            <stage>Isolde, die nichts um sie her vernommen, heftet das Auge mit wachsender
+              Begeisterung auf Tristans Leiche.</stage>
           </sp>
           <sp who="#isolde">
             <speaker>ISOLDE.</speaker>
@@ -4872,11 +4458,9 @@
               <l>unbewußt –,</l>
               <l>höchste Lust!</l>
             </lg>
-            <stage>
-              <hi>Isolde sinkt, wie verklärt, in Brangänes Armen, sanft auf Tristans Leiche. – Große
-                Rührung und Entrücktheit unter den Umstehenden. – Der Vorhang fällt während der
-                letzten Fermate.</hi>
-            </stage>
+            <stage>Isolde sinkt, wie verklärt, in Brangänes Armen, sanft auf Tristans Leiche. –
+              Große Rührung und Entrücktheit unter den Umstehenden. – Der Vorhang fällt während der
+              letzten Fermate.</stage>
           </sp>
         </div>
       </div>
