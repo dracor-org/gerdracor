@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Der Sohn der Wildnis</title>
+        <title type="main">Der Sohn der Wildnis</title>
+        <title type="sub">Dramatisches Gedicht in fünf Akten</title>
         <author key="pnd:118720074">Halm, Friedrich</author>
       </titleStmt>
       <publicationStmt>
@@ -44,63 +45,62 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="actäa">
-            <persName>ACTÄA</persName>
+          <person xml:id="actaea" sex="FEMALE">
+            <persName>Actäa</persName>
           </person>
-          <person xml:id="parthenia">
-            <persName>PARTHENIA</persName>
+          <person xml:id="parthenia" sex="FEMALE">
+            <persName>Parthenia</persName>
           </person>
-          <person xml:id="polydor">
-            <persName>POLYDOR</persName>
+          <person xml:id="polydor" sex="MALE">
+            <persName>Polydor</persName>
           </person>
-          <person xml:id="lykon">
-            <persName>LYKON</persName>
+          <person xml:id="lykon" sex="MALE">
+            <persName>Lykon</persName>
           </person>
-          <person xml:id="theano">
-            <persName>THEANO</persName>
+          <person xml:id="theano" sex="FEMALE">
+            <persName>Theano</persName>
           </person>
-          <person xml:id="adrast">
-            <persName>ADRAST</persName>
+          <person xml:id="adrast" sex="MALE">
+            <persName>Adrast</persName>
           </person>
-          <person xml:id="elpenor">
-            <persName>ELPENOR</persName>
+          <person xml:id="elpenor" sex="MALE">
+            <persName>Elpenor</persName>
           </person>
-          <person xml:id="amyntas">
-            <persName>AMYNTAS</persName>
+          <person xml:id="amyntas" sex="MALE">
+            <persName>Amyntas</persName>
           </person>
-          <person xml:id="herold">
-            <persName>HEROLD</persName>
-            <persName xml:id="stimme_des_herolds">STIMME DES HEROLDS</persName>
+          <person xml:id="herold" sex="MALE">
+            <persName>Herold</persName>
+            <persName type="variant">Stimme des Herolds</persName>
           </person>
-          <person xml:id="timarch">
-            <persName>TIMARCH</persName>
-            <persName xml:id="der_timarch">DER TIMARCH</persName>
+          <person xml:id="timarch" sex="MALE">
+            <persName>Timarch</persName>
+            <persName type="variant">Der Timarch</persName>
           </person>
-          <person xml:id="ambivar">
-            <persName>AMBIVAR</persName>
+          <person xml:id="ambivar" sex="MALE">
+            <persName>Ambivar</persName>
           </person>
-          <person xml:id="trinobant">
-            <persName>TRINOBANT</persName>
+          <person xml:id="trinobant" sex="MALE">
+            <persName>Trinobant</persName>
           </person>
-          <person xml:id="novio">
-            <persName>NOVIO</persName>
+          <person xml:id="novio" sex="MALE">
+            <persName>Novio</persName>
           </person>
-          <person xml:id="myron">
-            <persName>MYRON</persName>
+          <person xml:id="myron" sex="MALE">
+            <persName>Myron</persName>
           </person>
-          <person xml:id="ingomar">
-            <persName>INGOMAR</persName>
+          <person xml:id="ingomar" sex="MALE">
+            <persName>Ingomar</persName>
           </person>
-          <person xml:id="samo">
-            <persName>SAMO</persName>
+          <person xml:id="samo" sex="MALE">
+            <persName>Samo</persName>
           </person>
-          <person xml:id="alastor">
-            <persName>ALASTOR</persName>
+          <person xml:id="alastor" sex="MALE">
+            <persName>Alastor</persName>
           </person>
-          <person xml:id="einige_tectosagen">
-            <persName>EINIGE TECTOSAGEN</persName>
-            <persName xml:id="andere">ANDERE</persName>
-          </person>
+          <personGrp xml:id="einige_tectosagen_andere" sex="MALE">
+            <name>Einige Tectosagen/Andere</name>
+          </personGrp>
         </listPerson>
       </particDesc>
       <textClass>
@@ -113,6 +113,7 @@
       <listChange>
         <change when="2017-01-06">(dlina) file conversion from source</change>
         <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-04-04">(ff) formalities</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -123,46 +124,54 @@
         <head>Der Sohn der Wildnis</head>
         <head>Dramatisches Gedicht in fünf Akten</head>
       </div>
-    </front>
-    <body>
       <div type="epigraph">
         <head>[Motto]</head>
-        <p><hi> es hommes sont méchants, cependant l'homme est naturellement bon! – – Qu'on admire
+        <p><emph>Les hommes sont méchants, cependant l'homme est naturellement bon! – – Qu'on admire
             tant qu'on voudra la société humaine, il n'en sera pas moins vrai, qu'elle porte
             nécessairement les hommes à s'entrehaïr à proportion, que leurs intérêts se
-            croisent.</hi></p>
-        <p><hi>J. J. Rousseau.</hi></p>
+            croisent.</emph></p>
+        <p><emph>J. J. Rousseau.</emph></p>
       </div>
       <div type="Dramatis_Personae">
         <castList>
           <head><pb n="74"/> Personen.</head>
           <castItem>Der Timarch von Massalia.</castItem>
-          <castItem>Polydor, ein Kaufmann.</castItem>
-          <castItem>Myron, ein Waffenschmied</castItem>
-          <castItem>Adrast</castItem>
-          <castItem>Amyntas</castItem>
-          <castItem>Elpenor, Bürger von Massalia.</castItem>
+          <castGroup>
+            <castItem>Polydor, ein Kaufmann.</castItem>
+            <castItem>Myron, ein Waffenschmied</castItem>
+            <castItem>Adrast</castItem>
+            <castItem>Amyntas</castItem>
+            <castItem>Elpenor</castItem>
+            <roleDesc>Bürger von Massalia.</roleDesc>
+          </castGroup>
           <castItem>Lykon, ein Fischer.</castItem>
           <castItem>Ingomar, Anführer einer Horde Tectosagen.</castItem>
-          <castItem>Alastor</castItem>
-          <castItem>Trinobant</castItem>
-          <castItem>Ambivar</castItem>
-          <castItem>Novio</castItem>
-          <castItem>Samo, Tectosagen.</castItem>
+          <castGroup>
+            <castItem>Alastor</castItem>
+            <castItem>Trinobant</castItem>
+            <castItem>Ambivar</castItem>
+            <castItem>Novio</castItem>
+            <castItem>Samo</castItem>
+            <roleDesc>Tectosagen.</roleDesc>
+          </castGroup>
           <castItem>Actäa, Myrons Hausfrau.</castItem>
           <castItem>Parthenia, Myrons und Actäas Tochter.</castItem>
           <castItem>Theano, eine Nachbarin Myrons.</castItem>
           <castItem>Ein Herold, Ratsherren Massalias, Griechen und Griechinnen.</castItem>
         </castList>
       </div>
+      <set>
+        <p>Das Stück spielt in Gallien, hundert Jahre nach der Gründung Massaliens durch
+          Phokäer.</p>
+      </set>
+    </front>
+    <body>
       <div type="act">
         <head>Erster Akt.</head>
-        <p>Massalia; Marktplatz, im Vordergrunde rechts Myrons Haus.</p>
-        <stage>
-          <hi>Actäa auf der Schwelle des Hauses sitzend, eine Stufe niedriger zu ihren Füßen.
-            Parthenia, am Rocken spinnend, neben ihr ein Körbchen mit Flachs.</hi>
-        </stage>
-        <sp who="#actäa">
+        <stage>Massalia; Marktplatz, im Vordergrunde rechts Myrons Haus.</stage>
+        <stage>Actäa auf der Schwelle des Hauses sitzend, eine Stufe niedriger zu ihren Füßen.
+          Parthenia, am Rocken spinnend, neben ihr ein Körbchen mit Flachs.</stage>
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Bedenk' nur, Kind, der Polydor ist reich,</l>
@@ -173,9 +182,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>aufstehend.</hi>
-          </stage>
+          <stage>aufstehend.</stage>
           <lg>
             <l>Die Sonne sinkt;</l>
             <l>Für heute hätt' ich mir genug gesponnen,</l>
@@ -183,7 +190,7 @@
             <l>Da will ich denn hinüber –</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Nein, du bleibst,</l>
@@ -196,12 +203,10 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>die sich wieder gesetzt hat.</hi>
-          </stage>
+          <stage>die sich wieder gesetzt hat.</stage>
           <l>Ich hör' ja, Mutter!</l>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Ja, so sagst du immer,</l>
@@ -227,7 +232,7 @@
             <l>Und trippelte und keifte –</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <l>Den Evander –</l>
         </sp>
@@ -238,11 +243,9 @@
             <l>Und seine Nähe war mir wie Arznei!</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA</speaker>
-          <stage>
-            <hi>entrüstet aufspringend, während Parthenia fortfährt zu spinnen.</hi>
-          </stage>
+          <stage>entrüstet aufspringend, während Parthenia fortfährt zu spinnen.</stage>
           <lg>
             <l>Recht! Fahr nur fort so! Tritt dein Glück mit Füßen,</l>
             <l>Blieb Reue doch noch keiner Torheit aus! –</l>
@@ -254,16 +257,12 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>aufspringend.</hi>
-          </stage>
+          <stage>aufspringend.</stage>
           <l>Jung bin ich, froh und heiter,</l>
-          <stage>
-            <hi>Die Mutter umschlingend.</hi>
-          </stage>
+          <stage>Die Mutter umschlingend.</stage>
           <l>Und ihr, ihr liebt mich ja, was brauch' ich weiter?</l>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Dich lieben! – Ja, so wenig du's verdienst,</l>
@@ -278,9 +277,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>nach einer Pause.</hi>
-          </stage>
+          <stage>nach einer Pause.</stage>
           <lg>
             <l>Worauf</l>
             <l>Ich warte? Mütterchen, ich will dir's sagen!</l>
@@ -301,20 +298,16 @@
             <l>Und sieh, so wart' ich, bis es sprechen will!</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <l>Was sagst du da, ich hätte –</l>
-          <stage>
-            <hi>Für sich.</hi>
-          </stage>
+          <stage>Für sich.</stage>
           <lg>
             <l>Gute Götter!</l>
             <l><pb n="76"/> So läuft uns allen mit dem jungen Herzen</l>
             <l>Die alte Zunge fort!</l>
           </lg>
-          <stage>
-            <hi>Laut.</hi>
-          </stage>
+          <stage>Laut.</stage>
           <lg>
             <l>Du töricht Kind!</l>
             <l>Das also ist es, darauf wartest du?</l>
@@ -336,7 +329,7 @@
             <l>Und spart und knickert –</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Das verstehst du nicht;</l>
@@ -358,7 +351,7 @@
             <l>Den werd' ich niemals nehmen!</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <l>Nicht?</l>
         </sp>
@@ -369,7 +362,7 @@
             <l>Doch ist es so, so muß ich dir's doch sagen.</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Und ich, ich sage dir, wir, deine Eltern,</l>
@@ -387,7 +380,7 @@
           <speaker>PARTHENIA.</speaker>
           <l>Der arme Vater!</l>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Arm! Ich bin noch ärmer!</l>
@@ -409,15 +402,11 @@
             <l>Und tust es nicht, du undankbares Kind!</l>
             <l>Das bist du! Ja! So muß ich dir's doch sagen!</l>
           </lg>
-          <stage>
-            <hi>Sie geht ins Haus ab.</hi>
-          </stage>
+          <stage>Sie geht ins Haus ab.</stage>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>nach einer Pause.</hi>
-          </stage>
+          <stage>nach einer Pause.</stage>
           <lg>
             <l>Undankbar! Nein, die Götter wissen's! Nein,</l>
             <l>Das bin ich nicht, undankbar nicht! Für mich</l>
@@ -444,9 +433,7 @@
             <l>Der Vater soll nicht mehr für mich sich mühen,</l>
             <l>Soll nicht – Wer kommt da – Polydor –</l>
           </lg>
-          <stage>
-            <hi>Sie macht eine Bewegung, sich zu entfernen.</hi>
-          </stage>
+          <stage>Sie macht eine Bewegung, sich zu entfernen.</stage>
           <lg>
             <l><pb n="78"/> Doch nein:</l>
             <l>Ich bleibe – Soll mein Glück verhandelt sein,</l>
@@ -456,16 +443,12 @@
             <l>Sein Blick, sein Schritt ist Hochmut ganz und gar;</l>
             <l>Und ich sein Weib – mir macht's das Herz erkalten.</l>
           </lg>
-          <stage>
-            <hi>Sie tritt zu ihrem Rocken, an dem sie sich zu schaffen macht, während Polydor im
-              Hintergrund der Bühne links auftritt.</hi>
-          </stage>
+          <stage>Sie tritt zu ihrem Rocken, an dem sie sich zu schaffen macht, während Polydor im
+            Hintergrund der Bühne links auftritt.</stage>
         </sp>
         <sp who="#polydor">
           <speaker>POLYDOR</speaker>
-          <stage>
-            <hi>ohne Parthenia zu bemerken.</hi>
-          </stage>
+          <stage>ohne Parthenia zu bemerken.</stage>
           <lg>
             <l>Es geht nicht, dieser Sklave zehrt mich arm,</l>
             <l>Und bräch' ich auch dafür den Kindern ab,</l>
@@ -475,9 +458,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <lg>
             <l>Tut er nicht,</l>
             <l>Als läg' das Heil der Welt auf seinen Schultern,</l>
@@ -509,13 +490,9 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <l>Nun stellt er gar sich an, als wollt' er lächeln! –</l>
-          <stage>
-            <hi>Laut.</hi>
-          </stage>
+          <stage>Laut.</stage>
           <lg>
             <l>Ich bitt' dich, laß die schönen Worte weg,</l>
             <l>Damit wir ernst ein ernstes Ding besprechen!</l>
@@ -524,16 +501,12 @@
         </sp>
         <sp who="#polydor">
           <speaker>POLYDOR</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <lg>
             <l>Das rennt ja mit der Tür ins Haus – Nun ja,</l>
             <l>Die liebe Ungeduld kann's nicht erwarten? –</l>
           </lg>
-          <stage>
-            <hi>Laut.</hi>
-          </stage>
+          <stage>Laut.</stage>
           <l>Ganz recht, ich denke dran –</l>
         </sp>
         <sp who="#parthenia">
@@ -573,9 +546,7 @@
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
           <l>Sanft sagst du? –</l>
-          <stage>
-            <hi>Sich abwendend für sich.</hi>
-          </stage>
+          <stage>Sich abwendend für sich.</stage>
           <lg>
             <l>Ja,</l>
             <l>Sanft wie ein Lamm, das man zur Schlachtbank führt –</l>
@@ -602,9 +573,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <l>Mir sinkt der Mut, ihr Götter!</l>
         </sp>
         <sp who="#polydor">
@@ -696,9 +665,7 @@
             <l>Bei allen Göttern, ja,</l>
             <l>Es ist zu viel! – Und so hab' guten Abend.</l>
           </lg>
-          <stage>
-            <hi>Sie will gehen.</hi>
-          </stage>
+          <stage>Sie will gehen.</stage>
         </sp>
         <sp who="#polydor">
           <speaker>POLYDOR.</speaker>
@@ -718,15 +685,11 @@
             <l>Auf Erden als dein Anblick! Merk' es wohl;</l>
             <l>Dies meine Antwort, laß sie dir genügen.</l>
           </lg>
-          <stage>
-            <hi>Sie geht ins Haus ab.</hi>
-          </stage>
+          <stage>Sie geht ins Haus ab.</stage>
         </sp>
         <sp who="#polydor">
           <speaker>POLYDOR</speaker>
-          <stage>
-            <hi>ihr eine Weile erstaunt nachblickend.</hi>
-          </stage>
+          <stage>ihr eine Weile erstaunt nachblickend.</stage>
           <lg>
             <l>Was war das? Hört' ich recht? Sie schlägt mich aus?</l>
             <l>Mich aus, den reichen Polydor? Das Kind</l>
@@ -746,10 +709,8 @@
             <l>Und sollt' es mich die letzte Drachme kosten;</l>
             <l>Nicht rasten will ich, bis sein Los erfüllt.</l>
           </lg>
-          <stage>
-            <hi>Während er heftig bewegt auf und nieder geht, erscheint im Hintergrunde der Bühne
-              links Lykon, der Fischer.</hi>
-          </stage>
+          <stage>Während er heftig bewegt auf und nieder geht, erscheint im Hintergrunde der Bühne
+            links Lykon, der Fischer.</stage>
         </sp>
         <sp who="#lykon">
           <speaker>LYKON.</speaker>
@@ -758,10 +719,8 @@
             <l>Dann um die Ecke, und vom Brunnen rechts</l>
             <l>Das nächste Haus! – So muß es dieses sein!</l>
           </lg>
-          <stage>
-            <hi>Er geht auf das zunächst an dem Hause Myrons gelegene Haus zu und pocht an der
-              Türe.</hi>
-          </stage>
+          <stage>Er geht auf das zunächst an dem Hause Myrons gelegene Haus zu und pocht an der
+            Türe.</stage>
           <lg>
             <l>Heda! Macht auf, ihr drinnen! Aufgemacht!</l>
             <l>Ja, schließt die Ohren nur und stellt euch taub,</l>
@@ -771,16 +730,12 @@
         </sp>
         <sp who="#polydor">
           <speaker>POLYDOR</speaker>
-          <stage>
-            <hi>links im Vordergrunde der Bühne, für sich.</hi>
-          </stage>
+          <stage>links im Vordergrunde der Bühne, für sich.</stage>
           <l>Ei, was will der Mann?</l>
         </sp>
         <sp who="#theano">
           <speaker>THEANO</speaker>
-          <stage>
-            <hi>die Tür des Hauses öffnend.</hi>
-          </stage>
+          <stage>die Tür des Hauses öffnend.</stage>
           <l>Wer lärmt, wer pocht da?</l>
         </sp>
         <sp who="#lykon">
@@ -819,9 +774,7 @@
         </sp>
         <sp who="#polydor">
           <speaker>POLYDOR</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <l>Gefangen! Ei, das kömmt ja ganz gelegen.</l>
         </sp>
         <sp who="#theano">
@@ -841,9 +794,7 @@
             <l>Ew'ge Götter!</l>
             <l>Der Myron – sieh, da gehen seine Freunde –</l>
           </lg>
-          <stage>
-            <hi>Zu Adrast und Elpenor, die im Hintergrunde über die Bühne gehen.</hi>
-          </stage>
+          <stage>Zu Adrast und Elpenor, die im Hintergrunde über die Bühne gehen.</stage>
           <lg>
             <l>Herbei, Adrast, Elpenor! Hier der Mann</l>
             <l>Bringt Kunde, Myron sei gefangen,</l>
@@ -874,17 +825,13 @@
         </sp>
         <sp who="#polydor">
           <speaker>POLYDOR</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <l>Das habt ihr gut gemacht, ihr Rachegötter!</l>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA</speaker>
-          <stage>
-            <hi>mit einer Magd auf der Schwelle ihres Hauses erscheinend und die Stufen
-              hinabsteigend.</hi>
-          </stage>
+          <stage>mit einer Magd auf der Schwelle ihres Hauses erscheinend und die Stufen
+            hinabsteigend.</stage>
           <lg>
             <l>Da ließ sie wieder sorglos, wie sie pflegt,</l>
             <l>Den Rocken stehen! Schaff' ihn du ins Haus!</l>
@@ -892,23 +839,17 @@
         </sp>
         <sp who="#lykon">
           <speaker>LYKON</speaker>
-          <stage>
-            <hi>zu Theano, Adrast und Elpenor.</hi>
-          </stage>
+          <stage>zu Theano, Adrast und Elpenor.</stage>
           <lg>
             <l>Mich barg der Busch, doch jener mußte dran,</l>
             <l>Und ansgeplündert ward des Alten Habe! –</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA</speaker>
-          <stage>
-            <hi>zur Magd, die indes den Rocken ergriffen.</hi>
-          </stage>
+          <stage>zur Magd, die indes den Rocken ergriffen.</stage>
           <l>Auch hier das Körbchen nimm –</l>
-          <stage>
-            <hi>Die Magd geht mit Rocken und Körbchen ins Haus.</hi>
-          </stage>
+          <stage>Die Magd geht mit Rocken und Körbchen ins Haus.</stage>
         </sp>
         <sp who="#lykon">
           <speaker>LYKON.</speaker>
@@ -922,20 +863,16 @@
             <l>Des Weges –</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA</speaker>
-          <stage>
-            <hi>die indes, der Magd folgend, die Stufen zum Hause hinangeschritten, auf der Schwelle
-              plötzlich innehaltend.</hi>
-          </stage>
+          <stage>die indes, der Magd folgend, die Stufen zum Hause hinangeschritten, auf der
+            Schwelle plötzlich innehaltend.</stage>
           <lg>
             <l>Graue Haare?</l>
             <l>Ein Waffenschmied – gebunden – fortgetrieben –</l>
             <l>Wer war der Waffenschmied? –</l>
           </lg>
-          <stage>
-            <hi>Von der Stufe herabsteigend.</hi>
-          </stage>
+          <stage>Von der Stufe herabsteigend.</stage>
           <lg>
             <l>Sprecht – sag' ich, redet,</l>
             <l>Wer war der Mann?</l>
@@ -943,21 +880,17 @@
         </sp>
         <sp who="#lykon">
           <speaker>LYKON</speaker>
-          <stage>
-            <hi>nach einer Pause zu den übrigen, die gesenkten Blickes dastehen.</hi>
-          </stage>
+          <stage>nach einer Pause zu den übrigen, die gesenkten Blickes dastehen.</stage>
           <l>Ist das des Myrons Weib?</l>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Des Myrons Weib, ihr Götter! Myron wäre –</l>
             <l>Nein, nein – Was steht ihr stumm? Sagt: Nein, es ist</l>
             <l>Nicht Myron – Redet, sag' ich –</l>
           </lg>
-          <stage>
-            <hi>Nach einer Pause aufschreiend.</hi>
-          </stage>
+          <stage>Nach einer Pause aufschreiend.</stage>
           <l>Wehe mir!</l>
         </sp>
         <sp who="#adrast">
@@ -971,23 +904,17 @@
         </sp>
         <sp who="#theano">
           <speaker>THEANO</speaker>
-          <stage>
-            <hi>die Sinkende unterstützend.</hi>
-          </stage>
+          <stage>die Sinkende unterstützend.</stage>
           <l>Rettet, helft!</l>
         </sp>
         <sp who="#polydor">
           <speaker>POLYDOR</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <l>Die hat ihr Teil! Nun bleibt das Mädchen noch!</l>
         </sp>
         <sp who="#amyntas">
           <speaker>AMYNTAS</speaker>
-          <stage>
-            <hi>der mit andern Männern und Frauen auf Theanos Ruf herbeigeeilt.</hi>
-          </stage>
+          <stage>der mit andern Männern und Frauen auf Theanos Ruf herbeigeeilt.</stage>
           <l>Gefangen, sagt ihr – Myron –</l>
         </sp>
         <sp who="#theano">
@@ -996,9 +923,7 @@
             <l>Kommt doch, helft</l>
             <l>Die Unglückselige ins Haus mir bringen! –</l>
           </lg>
-          <stage>
-            <hi>Theano und mehrere Frauen bringen die halbohnmächtige Actäa ins Haus.</hi>
-          </stage>
+          <stage>Theano und mehrere Frauen bringen die halbohnmächtige Actäa ins Haus.</stage>
         </sp>
         <sp who="#amyntas">
           <speaker>AMYNTAS.</speaker>
@@ -1017,9 +942,8 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>aus dem Hause stürzend und rasch auf die um Lykon versammelte Gruppe zueilend.</hi>
-          </stage>
+          <stage>aus dem Hause stürzend und rasch auf die um Lykon versammelte Gruppe
+            zueilend.</stage>
           <lg>
             <l>Wo ist der Mann, der diese Kunde brachte?</l>
             <l>Du bist es – sprich – ist's Wahrheit? Sahst du selbst –</l>
@@ -1066,9 +990,7 @@
         </sp>
         <sp who="#polydor">
           <speaker>POLYDOR</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <l>Bar Geld wär' besser –</l>
         </sp>
         <sp who="#parthenia">
@@ -1099,9 +1021,7 @@
         </sp>
         <sp who="#polydor">
           <speaker>POLYDOR</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <l>Ja, die guten Freunde!</l>
         </sp>
         <sp who="#parthenia">
@@ -1136,11 +1056,9 @@
           <speaker>PARTHENIA.</speaker>
           <l>O Kindermärchen Freundschaft!</l>
         </sp>
-        <sp who="#stimme_des_herolds">
+        <sp who="#herold">
           <speaker>STIMME DES HEROLDS</speaker>
-          <stage>
-            <hi>außer der Bühne.</hi>
-          </stage>
+          <stage>außer der Bühne.</stage>
           <lg>
             <l>Platz,</l>
             <l>Ihr Bürger, dem Timarchen!</l>
@@ -1156,24 +1074,18 @@
         </sp>
         <sp who="#herold">
           <speaker>HEROLD</speaker>
-          <stage>
-            <hi>mit einem weißen Stabe, links im Hintergrunde der Bühne auftretend.</hi>
-          </stage>
+          <stage>mit einem weißen Stabe, links im Hintergrunde der Bühne auftretend.</stage>
           <l>Platz, sag' ich, dem Timarchen!</l>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>zu den Füßen des Timarchen sinkend, der dem Herold in Begleitung einiger Ratsherren
-              folgt.</hi>
-          </stage>
+          <stage>zu den Füßen des Timarchen sinkend, der dem Herold in Begleitung einiger Ratsherren
+            folgt.</stage>
           <l>Rettung, Hilfe!</l>
         </sp>
         <sp who="#herold">
           <speaker>HEROLD</speaker>
-          <stage>
-            <hi>den Stab schwingend.</hi>
-          </stage>
+          <stage>den Stab schwingend.</stage>
           <l>Zurück!</l>
         </sp>
         <sp who="#timarch">
@@ -1232,9 +1144,7 @@
             <l>Gnade,</l>
             <l>Laß Gnade walten –</l>
           </lg>
-          <stage>
-            <hi>Aufspringend.</hi>
-          </stage>
+          <stage>Aufspringend.</stage>
           <lg>
             <l>Nein, nicht Gnade, Recht,</l>
             <l>Mein Recht gewähr' mir! Steht Massalia</l>
@@ -1252,15 +1162,11 @@
             <l>Am Bau des Rechtes, wirft das Haus zusammen;</l>
             <l>Siel selber zu, ich kann helfen!</l>
           </lg>
-          <stage>
-            <hi>Er wendet sich abzugehen.</hi>
-          </stage>
+          <stage>Er wendet sich abzugehen.</stage>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>zu seinen Füßen sinkend.</hi>
-          </stage>
+          <stage>zu seinen Füßen sinkend.</stage>
           <lg>
             <l>Bleib!</l>
             <l>Erbarmen!</l>
@@ -1277,28 +1183,20 @@
         <sp who="#herold">
           <speaker>HEROLD.</speaker>
           <l>Platz, sag' ich, dem Timarchen!</l>
-          <stage>
-            <hi>Der Timarch mit seinem Gefolge geht im Hintergrunde der Bühne rechts ab.</hi>
-          </stage>
+          <stage>Der Timarch mit seinem Gefolge geht im Hintergrunde der Bühne rechts ab.</stage>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>nachrufend.</hi>
-          </stage>
+          <stage>nachrufend.</stage>
           <lg>
             <l>Gnade!</l>
             <l>Weh mir! Kein Ohr, das meinen Jammer hört!</l>
           </lg>
-          <stage>
-            <hi>Sie verbirgt kniend das Gesicht in beide Hände.</hi>
-          </stage>
+          <stage>Sie verbirgt kniend das Gesicht in beide Hände.</stage>
         </sp>
         <sp who="#polydor">
           <speaker>POLYDOR</speaker>
-          <stage>
-            <hi>die Hände reibend, für sich.</hi>
-          </stage>
+          <stage>die Hände reibend, für sich.</stage>
           <lg>
             <l>Ich kann nicht helfen! Einen Kuß dafür,</l>
             <l>Du Goldmann, daß du sprachst: Ich kann nicht helfen!</l>
@@ -1310,10 +1208,8 @@
             <l>Ich stehl' mich weg! Ihr nützen kann ich nicht,</l>
             <l>Und ihre Tränen zehren mir am Herzen!</l>
           </lg>
-          <stage>
-            <hi>Er geht im Gespräch mit mehreren der Umstehenden ab, von denen schon früher ein
-              großer Teil dem Timarchen nachströmte.</hi>
-          </stage>
+          <stage>Er geht im Gespräch mit mehreren der Umstehenden ab, von denen schon früher ein
+            großer Teil dem Timarchen nachströmte.</stage>
           <pb n="86"/>
         </sp>
         <sp who="#adrast">
@@ -1324,18 +1220,14 @@
             <l>In meinem Hause ruhig zu erwägen,</l>
             <l>Was frommen mag im Drange solcher Nöten!</l>
           </lg>
-          <stage>
-            <hi>Er geht mit Amyntas, Lykon und den übrigen Anwesenden rechts im Hintergrunde der
-              Bühne ab, so daß Parthenia, in der Mitte der Bühne mit verhülltem Antlitz kniend,
-              allein mit Polydor zurückbleibt.</hi>
-          </stage>
+          <stage>Er geht mit Amyntas, Lykon und den übrigen Anwesenden rechts im Hintergrunde der
+            Bühne ab, so daß Parthenia, in der Mitte der Bühne mit verhülltem Antlitz kniend, allein
+            mit Polydor zurückbleibt.</stage>
         </sp>
         <sp who="#polydor">
           <speaker>POLYDOR</speaker>
-          <stage>
-            <hi>der sich dem Hause des Myron gegenüber auf den zu einem Hause hinaufführenden Stufen
-              mit übereinandergeschlagenen Beinen hingesetzt hat.</hi>
-          </stage>
+          <stage>der sich dem Hause des Myron gegenüber auf den zu einem Hause hinaufführenden
+            Stufen mit übereinandergeschlagenen Beinen hingesetzt hat.</stage>
           <lg>
             <l>Recht, geht nur, geht! Jetzt kommt die Reih' an uns,</l>
             <l>Und treffen will ich sie, daß sie's gedenke!</l>
@@ -1343,17 +1235,13 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>das Antlitz emporrichtend und umherblickend.</hi>
-          </stage>
+          <stage>das Antlitz emporrichtend und umherblickend.</stage>
           <lg>
             <l>Fort, alle fort! – Sie fliehen meine Nähe;</l>
             <l>Kein Arm, der Beistand, der mir Hilfe böte! –</l>
             <l>Unglück geht, ahn' ich, seinen Weg allein! –</l>
           </lg>
-          <stage>
-            <hi>Aufspringend.</hi>
-          </stage>
+          <stage>Aufspringend.</stage>
           <lg>
             <l>Und dennoch find' ich Hilfe, muß sie finden!</l>
             <l>Ich will zu Polydor –</l>
@@ -1369,16 +1257,12 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <lg>
             <l>Nun helft, ihr Götter,</l>
             <l>Und schmelzt in Demut mir der Seele Stolz!</l>
           </lg>
-          <stage>
-            <hi>Laut.</hi>
-          </stage>
+          <stage>Laut.</stage>
           <l>Im Staube sieh mich hier zu deinen Füßen –</l>
         </sp>
         <sp who="#polydor">
@@ -1421,9 +1305,7 @@
         </sp>
         <sp who="#polydor">
           <speaker>POLYDOR</speaker>
-          <stage>
-            <hi>aufstehend.</hi>
-          </stage>
+          <stage>aufstehend.</stage>
           <lg>
             <l>Ei!</l>
             <l>Und dreißig Unzen, denk' ich, fordern jene;</l>
@@ -1440,19 +1322,14 @@
             <l>Mach', was du willst, nur eines bitt' ich dich,</l>
             <l>Mein Stachelröschen, mich laß aus dem Spiel!</l>
           </lg>
-          <stage>
-            <hi>Für sich.</hi>
-          </stage>
+          <stage>Für sich.</stage>
           <l>Jetzt hat sie's hin, und mag sie dran gedenken!</l>
-          <stage>
-            <hi>Er geht rechts im Vordergrund der Bühne ab.</hi>
-          </stage>
+          <stage>Er geht rechts im Vordergrund der Bühne ab.</stage>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>die während der letzten Rede Polydors aufgestanden und von ihm weggetreten ist.</hi>
-          </stage>
+          <stage>die während der letzten Rede Polydors aufgestanden und von ihm weggetreten
+            ist.</stage>
           <lg>
             <l>Geh hin und freu' dich nur und denke, daß</l>
             <l>Verzweiflung mich erfaßt, und daß dein Hohn</l>
@@ -1475,9 +1352,7 @@
         </sp>
         <sp who="#theano">
           <speaker>THEANO</speaker>
-          <stage>
-            <hi>die während der letzten Worte Parthenias aus dem Hause getreten.</hi>
-          </stage>
+          <stage>die während der letzten Worte Parthenias aus dem Hause getreten.</stage>
           <lg>
             <l>Nun, es ist vorüber;</l>
             <l>Sie liegt jetzt ruhig hin, und labend senkt</l>
@@ -1505,9 +1380,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>die Hand auf dem Herzen.</hi>
-          </stage>
+          <stage>die Hand auf dem Herzen.</stage>
           <l>Klar und hell ist's hier!</l>
         </sp>
         <sp who="#theano">
@@ -1539,24 +1412,20 @@
         <sp who="#theano">
           <speaker>THEANO.</speaker>
           <l>Wohin – Was soll das – Bleib – Parthenia!</l>
-          <stage>
-            <hi>Indem sie Parthenien nacheilt, fällt der Vorhang.</hi>
-          </stage>
+          <stage>Indem sie Parthenien nacheilt, fällt der Vorhang.</stage>
         </sp>
       </div>
       <div type="act">
         <head>Zweiter Akt.</head>
-        <p>In den Cevennen. Wald, dichtes Laubgewölbe; wo das Gebüsch sich lichtet, Aussicht auf
+        <stage>In den Cevennen. Wald, dichtes Laubgewölbe; wo das Gebüsch sich lichtet, Aussicht auf
           wilde Felsenpartien. Im Hintergrunde links ein halberloschenes Feuer, über demselben ein
           Kessel; mehrere Tectosagen in Tierfelle gekleidet; schlafend im Kreise herumgelagert;
           daneben Speere, Helme, Schilde, umgestürzte Becher und Krüge unordentlich auf einen Haufen
-          zusammengeworfen; im Hintergrunde rechts einige Zelte aus Tierhäuten.</p>
-        <stage>
-          <hi>Im Vordergrunde rechts liegen Ambivar, Novio und Trinobant um einen Felsblock herum
-            und würfeln. Links in der Mitte der Bühne schläft Ingomar unter einem Baume, an dessen
-            Stamm sein Schwert und sein Schild lehnen; in einiger Entfernung von ihm sitzt Myron auf
-            der Erde.</hi>
-        </stage>
+          zusammengeworfen; im Hintergrunde rechts einige Zelte aus Tierhäuten.</stage>
+        <stage>Im Vordergrunde rechts liegen Ambivar, Novio und Trinobant um einen Felsblock herum
+          und würfeln. Links in der Mitte der Bühne schläft Ingomar unter einem Baume, an dessen
+          Stamm sein Schwert und sein Schild lehnen; in einiger Entfernung von ihm sitzt Myron auf
+          der Erde.</stage>
         <sp who="#ambivar">
           <speaker>AMBIVAR.</speaker>
           <l>Ein Auge mehr; mein ist der Einsatz!</l>
@@ -1589,9 +1458,7 @@
             <l>Topp,</l>
             <l>Ich setz' zwei fette Hammel dir dagegen.</l>
           </lg>
-          <stage>
-            <hi>Sie würfeln.</hi>
-          </stage>
+          <stage>Sie würfeln.</stage>
         </sp>
         <sp who="#myron">
           <speaker>MYRON.</speaker>
@@ -1609,9 +1476,7 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>in unruhiger Bewegung im Schlafe sprechend.</hi>
-          </stage>
+          <stage>in unruhiger Bewegung im Schlafe sprechend.</stage>
           <l>Nach! Setzt nach!</l>
         </sp>
         <sp who="#novio">
@@ -1621,9 +1486,7 @@
         </sp>
         <sp who="#ambivar">
           <speaker>AMBIVAR</speaker>
-          <stage>
-            <hi>würfelnd.</hi>
-          </stage>
+          <stage>würfelnd.</stage>
           <l>Da liegt's! Mein ist das Füllen!</l>
         </sp>
         <sp who="#trinobant">
@@ -1636,9 +1499,7 @@
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <lg>
             <l>All meine Habe</l>
             <l>Genügte nicht, vom Joch mich loszukaufen;</l>
@@ -1649,9 +1510,7 @@
         </sp>
         <sp who="#novio">
           <speaker>NOVIO</speaker>
-          <stage>
-            <hi>zu Myron, mit der Faust drohend.</hi>
-          </stage>
+          <stage>zu Myron, mit der Faust drohend.</stage>
           <lg>
             <l>Met!</l>
             <l>Ich säg' die tauben Ohren dir vom Schädel;</l>
@@ -1660,9 +1519,7 @@
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>hastig einen Krug ergreifend und Novio hinreichend.</hi>
-          </stage>
+          <stage>hastig einen Krug ergreifend und Novio hinreichend.</stage>
           <l>Hier, hier ist Met.</l>
         </sp>
         <sp who="#ambivar">
@@ -1686,9 +1543,7 @@
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>mit dem Kruge sich entfernend.</hi>
-          </stage>
+          <stage>mit dem Kruge sich entfernend.</stage>
           <lg>
             <l>O wär' dies Gift, wie gerne tränkt' ich euch! –</l>
             <l>Kein Ausweg, keiner! – Zwar der Polydor,</l>
@@ -1701,13 +1556,9 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>im Schlafe sprechend.</hi>
-          </stage>
+          <stage>im Schlafe sprechend.</stage>
           <l>Nach! Nach! Schlagt tot, schlagt tot!</l>
-          <stage>
-            <hi>Er erwacht.</hi>
-          </stage>
+          <stage>Er erwacht.</stage>
           <lg>
             <l>Wie, träumt' ich? Schade,</l>
             <l>Entschieden war der Kampf, der Tag war unser!</l>
@@ -1727,9 +1578,7 @@
         <sp who="#trinobant">
           <speaker>TRINOBANT.</speaker>
           <l>Ein andermal.</l>
-          <stage>
-            <hi>Er steht langsam auf und nähert sich Ingomar.</hi>
-          </stage>
+          <stage>Er steht langsam auf und nähert sich Ingomar.</stage>
         </sp>
         <sp who="#ambivar">
           <speaker>AMBIVAR.</speaker>
@@ -1756,9 +1605,7 @@
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <lg>
             <l>Mein Schwert, sie würfeln um mein blankes Schwert!</l>
             <l>So wohlfeil dacht' ich nicht es loszuschlagen;</l>
@@ -1767,27 +1614,19 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>der indes aufgestanden und sich Samo genähert hat.</hi>
-          </stage>
+          <stage>der indes aufgestanden und sich Samo genähert hat.</stage>
           <l>Auf, sag' ich, Samo, auf!</l>
         </sp>
         <sp who="#trinobant">
           <speaker>TRINOBANT</speaker>
-          <stage>
-            <hi>hinzutretend.</hi>
-          </stage>
+          <stage>hinzutretend.</stage>
           <l>So schlafen Tote!</l>
-          <stage>
-            <hi>Samo aufrüttelnd.</hi>
-          </stage>
+          <stage>Samo aufrüttelnd.</stage>
           <l>He, Samo, auf!</l>
         </sp>
         <sp who="#samo">
           <speaker>SAMO</speaker>
-          <stage>
-            <hi>sich schlaftrunken aufrichtend.</hi>
-          </stage>
+          <stage>sich schlaftrunken aufrichtend.</stage>
           <l>Ist's Zeit zum Nachtmahl?</l>
         </sp>
         <sp who="#ingomar">
@@ -1802,17 +1641,13 @@
         </sp>
         <sp who="#ambivar">
           <speaker>AMBIVAR</speaker>
-          <stage>
-            <hi>während Samo, Trinobant und die übrigen allmählich erwachten Tectosagen sich im
-              Hintergrunde der Bühne entfernen.</hi>
-          </stage>
+          <stage>während Samo, Trinobant und die übrigen allmählich erwachten Tectosagen sich im
+            Hintergrunde der Bühne entfernen.</stage>
           <l>Mein Wurf war besser!</l>
         </sp>
         <sp who="#novio">
           <speaker>NOVIO</speaker>
-          <stage>
-            <hi>sich ebenfalls erhebend.</hi>
-          </stage>
+          <stage>sich ebenfalls erhebend.</stage>
           <lg>
             <l>Nein,</l>
             <l>Der meine war's.</l>
@@ -1824,44 +1659,32 @@
         </sp>
         <sp who="#novio">
           <speaker>NOVIO</speaker>
-          <stage>
-            <hi>ihn bei der Brust packend.</hi>
-          </stage>
+          <stage>ihn bei der Brust packend.</stage>
           <l>Hund, spielst du falsch?</l>
         </sp>
         <sp who="#ambivar">
           <speaker>AMBIVAR</speaker>
-          <stage>
-            <hi>sein Handbeil schwingend.</hi>
-          </stage>
+          <stage>sein Handbeil schwingend.</stage>
           <l>Hund – Hunde beißen!</l>
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <l>Schlagt zu, erwürgt euch, freßt euch auf wie Spinnen!</l>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>der indes in den Vordergrund der Bühne getreten.</hi>
-          </stage>
+          <stage>der indes in den Vordergrund der Bühne getreten.</stage>
           <l>Was soll das?</l>
         </sp>
         <sp who="#novio">
           <speaker>NOVIO</speaker>
-          <stage>
-            <hi>mit Ambivar ringend.</hi>
-          </stage>
+          <stage>mit Ambivar ringend.</stage>
           <l>Meuchlerischer Schuft!</l>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>sie gewaltsam auseinanderdrängend.</hi>
-          </stage>
+          <stage>sie gewaltsam auseinanderdrängend.</stage>
           <l>Laßt ab!</l>
         </sp>
         <sp who="#novio">
@@ -1881,23 +1704,17 @@
         </sp>
         <sp who="#ambivar">
           <speaker>AMBIVAR</speaker>
-          <stage>
-            <hi>das Beil schwingend.</hi>
-          </stage>
+          <stage>das Beil schwingend.</stage>
           <l>Sein Herzblut oder deins!</l>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>drohend.</hi>
-          </stage>
+          <stage>drohend.</stage>
           <lg>
             <l>Zurück!</l>
             <l>Ein Schritt noch, und ich send' euch zu den Schatten!</l>
           </lg>
-          <stage>
-            <hi>Novio weicht zurück, Ambivar läßt das gehobene Beil sinken.</hi>
-          </stage>
+          <stage>Novio weicht zurück, Ambivar läßt das gehobene Beil sinken.</stage>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR.</speaker>
@@ -1911,19 +1728,13 @@
         </sp>
         <sp who="#ambivar">
           <speaker>AMBIVAR</speaker>
-          <stage>
-            <hi>für sich hinmurmelnd.</hi>
-          </stage>
+          <stage>für sich hinmurmelnd.</stage>
           <l>Gut, die Zeit wird kommen! – Gut!</l>
-          <stage>
-            <hi>Novio und Ambivar gehen zu verschiedenen Seiten ab.</hi>
-          </stage>
+          <stage>Novio und Ambivar gehen zu verschiedenen Seiten ab.</stage>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>ihnen nachblickend.</hi>
-          </stage>
+          <stage>ihnen nachblickend.</stage>
           <lg>
             <l>Trotz bieten mir? Beim Blitz des Himmels! – Doch</l>
             <l>Fahrt hin! Euch Prahler treib' ich noch zu Paaren,</l>
@@ -1933,13 +1744,9 @@
             <l>Was wollt' ich nur? Ja, trinken wollt' ich! Sklave,</l>
             <l>Den Metkrug her!</l>
           </lg>
-          <stage>
-            <hi>Nachdem er getrunken, Myron den Krug zurückstellend.</hi>
-          </stage>
+          <stage>Nachdem er getrunken, Myron den Krug zurückstellend.</stage>
           <l>Das war ein Trunk, das labte!</l>
-          <stage>
-            <hi>Sich auf den Felsblock hinstreckend, auf dem früher gewürfelt wurde.</hi>
-          </stage>
+          <stage>Sich auf den Felsblock hinstreckend, auf dem früher gewürfelt wurde.</stage>
           <lg>
             <l>Und nun erzähl' mir, Sklave, was es sei,</l>
             <l>Und kürze mir die Zeit.</l>
@@ -1962,9 +1769,7 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>ihm nachspottend.</hi>
-          </stage>
+          <stage>ihm nachspottend.</stage>
           <lg>
             <l>»Ich, Myron, Herr!« das zirpt wie Hänflingsbrut</l>
             <l>Im Nest und sieht so sauer drein, als wär's</l>
@@ -1975,9 +1780,7 @@
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>erschrocken.</hi>
-          </stage>
+          <stage>erschrocken.</stage>
           <l>Wie, Geißelhiebe?</l>
         </sp>
         <sp who="#ingomar">
@@ -2107,16 +1910,12 @@
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>zurückweichend.</hi>
-          </stage>
+          <stage>zurückweichend.</stage>
           <l>Ich – ganz recht – ich schweige!</l>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <lg>
             <l>Es mögen Männer sein in seinem Volke,</l>
             <l>Doch der ist keiner! – Sklave!</l>
@@ -2199,16 +1998,12 @@
         <sp who="#ingomar">
           <speaker>INGOMAR.</speaker>
           <l>Ich – ich wär' kein Sklave!</l>
-          <stage>
-            <hi>In der Ferne wird ins Horn gestoßen.</hi>
-          </stage>
+          <stage>In der Ferne wird ins Horn gestoßen.</stage>
           <lg>
             <l>Still, horch'! – Das ist Alastors Horn! Sie sind's,</l>
             <l>Sie kommen!</l>
           </lg>
-          <stage>
-            <hi><pb n="94"/> Zu Novio, der im Hintergrunde der Bühne auftritt.</hi>
-          </stage>
+          <stage><pb n="94"/> Zu Novio, der im Hintergrunde der Bühne auftritt.</stage>
           <l>Sind sie's? Rede!</l>
         </sp>
         <sp who="#novio">
@@ -2219,11 +2014,9 @@
             <l>Vorausgeeilt den andern, klimmt behende</l>
             <l>Den Abhang schon heran. Da ist er!</l>
           </lg>
-          <stage>
-            <hi>Alastor tritt rasch im Hintergrunde der Bühne auf; nach und nach erscheinen auch
-              Samo, Trinobant, Ambivar und andere Tectosagen und treten allmählich in den
-              Vordergrund.</hi>
-          </stage>
+          <stage>Alastor tritt rasch im Hintergrunde der Bühne auf; nach und nach erscheinen auch
+            Samo, Trinobant, Ambivar und andere Tectosagen und treten allmählich in den
+            Vordergrund.</stage>
         </sp>
         <sp who="#alastor">
           <speaker>ALASTOR.</speaker>
@@ -2315,9 +2108,7 @@
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <lg>
             <l>Lösegeld</l>
             <l>Für ihren Sklaven!</l>
@@ -2357,8 +2148,7 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR.</speaker>
-          <l>Für <hi>den!</hi>
-          </l>
+          <l>Für <emph>den</emph>!</l>
         </sp>
         <sp who="#myron">
           <speaker>MYRON.</speaker>
@@ -2385,10 +2175,8 @@
         <sp who="#alastor">
           <speaker>ALASTOR.</speaker>
           <l>Da sieh es selbst!</l>
-          <stage>
-            <hi>Parthenia tritt im Hintergrunde der Bühne, umgeben von mehreren Tectosagen,
-              auf.</hi>
-          </stage>
+          <stage>Parthenia tritt im Hintergrunde der Bühne, umgeben von mehreren Tectosagen,
+            auf.</stage>
         </sp>
         <sp who="#myron">
           <speaker>MYRON.</speaker>
@@ -2421,9 +2209,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>vor Ingomar kniend.</hi>
-          </stage>
+          <stage>vor Ingomar kniend.</stage>
           <lg>
             <l>Laß denn ein Kind zu deinen Füßen, Herr,</l>
             <l>Um seines greisen Vaters Freiheit flehen!</l>
@@ -2457,9 +2243,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>rasch sich erhebend.</hi>
-          </stage>
+          <stage>rasch sich erhebend.</stage>
           <lg>
             <l>Genug, spar' deinen Atem!</l>
             <l>Die Götter wollen's! Nehmt denn Lösegeld!</l>
@@ -2536,16 +2320,12 @@
             <l>Du dorten, schweig!</l>
             <l>Und ihr, was meint ihr? Sprecht!</l>
           </lg>
-          <stage>
-            <hi>Er tritt mit den übrigen Tectosagen links in den Vordergrund der Bühne, so daß Myron
-              und Parthenia rechts im Vordergrund allein bleiben.</hi>
-          </stage>
+          <stage>Er tritt mit den übrigen Tectosagen links in den Vordergrund der Bühne, so daß
+            Myron und Parthenia rechts im Vordergrund allein bleiben.</stage>
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>während sich Ingomar mit den Tectosagen leise bespricht, zu Parthenia.</hi>
-          </stage>
+          <stage>während sich Ingomar mit den Tectosagen leise bespricht, zu Parthenia.</stage>
           <lg>
             <l>Unselige,</l>
             <l><pb n="97"/> Was tatest du? So willst du mich befreien?</l>
@@ -2593,9 +2373,7 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>während Myron und Parthenia leise zu sprechen fortfahren.</hi>
-          </stage>
+          <stage>während Myron und Parthenia leise zu sprechen fortfahren.</stage>
           <lg>
             <l>Laßt sie ziehen!</l>
             <l>Wir haben Weiber nur zu viel daheim;</l>
@@ -2637,9 +2415,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>während die Tectosagen leise unter sich zu sprechen fortfahren.</hi>
-          </stage>
+          <stage>während die Tectosagen leise unter sich zu sprechen fortfahren.</stage>
           <lg>
             <l>Es ist geschehen, und so gib dich drein!</l>
             <l>Die Mutter härmt sich, trockne ihre Tränen!</l>
@@ -2661,9 +2437,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>Myron in den Arm fallend und ihm den Dolch entwindend.</hi>
-          </stage>
+          <stage>Myron in den Arm fallend und ihm den Dolch entwindend.</stage>
           <lg>
             <l>Mir gib den Dolch! Und nun zieh ruhig hin;</l>
             <l>Denn deiner würdig leb' ich, oder sterbe! –</l>
@@ -2682,13 +2456,9 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>zu den Tectosagen.</hi>
-          </stage>
+          <stage>zu den Tectosagen.</stage>
           <l>Ihr wollt es so, und eure Wahl entscheidet!</l>
-          <stage>
-            <hi>Zu Parthenia.</hi>
-          </stage>
+          <stage>Zu Parthenia.</stage>
           <lg>
             <l>Vernimm denn, Weib, erfüllt ist dein Begehren;</l>
             <l>Wir nehmen dich als Lösegeld für jenen;</l>
@@ -2732,9 +2502,7 @@
         <sp who="#novio">
           <speaker>NOVIO.</speaker>
           <l>Macht fort!</l>
-          <stage>
-            <hi>Novio und Trinobant nähern sich Myron.</hi>
-          </stage>
+          <stage>Novio und Trinobant nähern sich Myron.</stage>
         </sp>
         <sp who="#myron">
           <speaker>MYRON.</speaker>
@@ -2742,9 +2510,7 @@
         </sp>
         <sp who="#trinobant">
           <speaker>TRINOBANT</speaker>
-          <stage>
-            <hi>ihn packend.</hi>
-          </stage>
+          <stage>ihn packend.</stage>
           <l>Komm; troll' dich, Alter!</l>
         </sp>
         <sp who="#parthenia">
@@ -2785,36 +2551,30 @@
             <l>Und laßt den Prahler laufen!</l>
           </lg>
         </sp>
-        <sp who="#einige_tectosagen">
+        <sp who="#einige_tectosagen_andere">
           <speaker>EINIGE TECTOSAGEN.</speaker>
           <l>Fort mit ihm!</l>
         </sp>
-        <sp who="#andere">
+        <sp who="#einige_tectosagen_andere">
           <speaker>ANDERE.</speaker>
           <l>Hinweg, hinweg!</l>
           <pb n="99"/>
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>von den Tectosagen im stürmischen Gedränge fortgerissen.</hi>
-          </stage>
+          <stage>von den Tectosagen im stürmischen Gedränge fortgerissen.</stage>
           <l>Parthenia, mein Kind, leb' wohl!</l>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
           <l>Leb' wohl! Er geht! – Ich seh' ihn niemals wieder!</l>
-          <stage>
-            <hi>Sie schlägt die Hände vor das Gesicht und bleibt heftig schluchzend im Vordergrund
-              der Bühne stehen.</hi>
-          </stage>
+          <stage>Sie schlägt die Hände vor das Gesicht und bleibt heftig schluchzend im Vordergrund
+            der Bühne stehen.</stage>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>der im Hintergrund der Bühne auf eine Anhöhe getreten, den Abgehenden
-              nachblickend.</hi>
-          </stage>
+          <stage>der im Hintergrund der Bühne auf eine Anhöhe getreten, den Abgehenden
+            nachblickend.</stage>
           <lg>
             <l>Der schreitet aus, der läuft! Bei allen Göttern!</l>
             <l>Der Prahler, weiß ich, ruht nicht, bis daheim</l>
@@ -2829,9 +2589,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>halb für sich.</hi>
-          </stage>
+          <stage>halb für sich.</stage>
           <l>Ich seh' ihn niemals wieder!</l>
         </sp>
         <sp who="#ingomar">
@@ -2851,21 +2609,15 @@
             <l>Ich will nicht weinen mehr! Bei allen Göttern,</l>
             <l>Und wär' es bloß, um Lügen dich zu strafen,</l>
           </lg>
-          <stage>
-            <hi>Mit dem Fuße stampfend.</hi>
-          </stage>
+          <stage>Mit dem Fuße stampfend.</stage>
           <l>Ich will nicht, sag' ich, will nicht weinen mehr!</l>
-          <stage>
-            <hi>Sie trocknet sich rasch die Augen ab und tritt in den Hintergrund der Bühne, wo
-              später einige Tectosagen erscheinen, die während der nächsten Szene ab und zu gehen,
-              sich beim Feuer zu schaffen machen, die Glut schüren, Holz zutragen usw.</hi>
-          </stage>
+          <stage>Sie trocknet sich rasch die Augen ab und tritt in den Hintergrund der Bühne, wo
+            später einige Tectosagen erscheinen, die während der nächsten Szene ab und zu gehen,
+            sich beim Feuer zu schaffen machen, die Glut schüren, Holz zutragen usw.</stage>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>Parthenia nachblickend.</hi>
-          </stage>
+          <stage>Parthenia nachblickend.</stage>
           <lg>
             <l>Das lass' ich gelten! – Der zum mindesten</l>
             <l>Hilft Unmut doch, den Jammer abzuschütteln;</l>
@@ -2873,10 +2625,8 @@
             <l>Ich will nicht weinen mehr, das ist ein Wort,</l>
             <l>Und hält sie's mannhaft, wie sie's ausgesprochen –</l>
           </lg>
-          <stage>
-            <hi>Zu Parthenia, die indes zwei Krüge ergriffen und mit denselben im Vordergrunde
-              rechts abgehen will.</hi>
-          </stage>
+          <stage>Zu Parthenia, die indes zwei Krüge ergriffen und mit denselben im Vordergrunde
+            rechts abgehen will.</stage>
           <l>Halt, Mädchen, halt! Wohin? –</l>
         </sp>
         <sp who="#parthenia">
@@ -2885,9 +2635,7 @@
             <l>Wo sollt' ich hin,</l>
             <l>Als dort zum Bach, die Krüge auszuschwenken!</l>
           </lg>
-          <stage>
-            <hi>Sie geht ab.</hi>
-          </stage>
+          <stage>Sie geht ab.</stage>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR.</speaker>
@@ -2904,19 +2652,15 @@
             <l>Dann geht's zum Nachtmahl, und der Tag ist um,</l>
             <l>Und morgen komme, was die Götter geben!</l>
           </lg>
-          <stage>
-            <hi>Er geht auf den Baum zu, an dessen Stamm seine Waffen hängen, Parthenia kehrt mit
-              den Krügen und einem großen Strauß von Feldblumen zurück; sie setzt sich auf den
-              Felsblock rechts im Vordergrund, stellt die Krüge neben sich und fängt an Kränze zu
-              winden.</hi>
-          </stage>
+          <stage>Er geht auf den Baum zu, an dessen Stamm seine Waffen hängen, Parthenia kehrt mit
+            den Krügen und einem großen Strauß von Feldblumen zurück; sie setzt sich auf den
+            Felsblock rechts im Vordergrund, stellt die Krüge neben sich und fängt an Kränze zu
+            winden.</stage>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>plötzlich innehaltend und, ohne Parthenia zu bemerken, langsam in den Vordergrund
-              zurückkehrend.</hi>
-          </stage>
+          <stage>plötzlich innehaltend und, ohne Parthenia zu bemerken, langsam in den Vordergrund
+            zurückkehrend.</stage>
           <lg>
             <l>»Mich nehmt als Lösegeld!« Und wirft das Haupt</l>
             <l>Zurück, als böte sie uns Tonnen Goldes;</l>
@@ -2931,10 +2675,8 @@
             <l>Und Leben atmet nur der Kampf der Kräfte.</l>
             <l>Doch sieh, da ist sie!</l>
           </lg>
-          <stage>
-            <hi>Er nähert sich Parthenia und beugt sich dann, an den Fels gelehnt, zu ihr
-              hinab.</hi>
-          </stage>
+          <stage>Er nähert sich Parthenia und beugt sich dann, an den Fels gelehnt, zu ihr
+            hinab.</stage>
           <l>Ei, was schaffst du da?</l>
         </sp>
         <sp who="#parthenia">
@@ -2993,10 +2735,8 @@
             <l>Das Aug', ihr Duft erfrischt die Seele! Da,</l>
             <l>Sieh her! –</l>
           </lg>
-          <stage>
-            <hi>Aufspringend und den halbfertigen Kranz um einen der Krüge schlingend, den sie ihm
-              dann hinhält.</hi>
-          </stage>
+          <stage>Aufspringend und den halbfertigen Kranz um einen der Krüge schlingend, den sie ihm
+            dann hinhält.</stage>
           <l>Läßt das nicht schön?</l>
         </sp>
         <sp who="#ingomar">
@@ -3025,9 +2765,7 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>auf sein Schwert schlagend.</hi>
-          </stage>
+          <stage>auf sein Schwert schlagend.</stage>
           <lg>
             <l>Das ist mein Weib;</l>
             <l>Mein gutes Schild, mein Speer ist's! Mag, wer will,</l>
@@ -3131,9 +2869,7 @@
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
           <l>Nein, gewiß nicht!</l>
-          <stage>
-            <hi>Den Kranz, an dem sie windet, wohlgefällig betrachtend.</hi>
-          </stage>
+          <stage>Den Kranz, an dem sie windet, wohlgefällig betrachtend.</stage>
           <lg>
             <l>Doch</l>
             <l>Sieh her! Wie schön! – Hier, hätt' ich sie, hier sollten</l>
@@ -3157,9 +2893,7 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>macht eine rasche Bewegung abzugehen, hält aber plötzlich inne.</hi>
-          </stage>
+          <stage>macht eine rasche Bewegung abzugehen, hält aber plötzlich inne.</stage>
           <l>Ich dir?</l>
         </sp>
         <sp who="#parthenia">
@@ -3171,9 +2905,7 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <lg>
             <l>Der Herr der Sklavin dienen? –</l>
             <l>Und warum nicht? Das arme Kind ist müde!</l>
@@ -3189,15 +2921,11 @@
             <l>Nein, gleich sollst du Blüten haben,</l>
             <l>So frisch und tauig, als der Busch sie beut!</l>
           </lg>
-          <stage>
-            <hi>Er geht rasch links im Vordergrunde der Bühne ab.</hi>
-          </stage>
+          <stage>Er geht rasch links im Vordergrunde der Bühne ab.</stage>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>den Kranz vor sich hinhaltend und betrachtend.</hi>
-          </stage>
+          <stage>den Kranz vor sich hinhaltend und betrachtend.</stage>
           <lg>
             <l>So gut gelang mir's nie! – Der Kranz, fürwahr,</l>
             <l><pb n="103"/> Soll reizend werden! – Reizend, und für wen?</l>
@@ -3211,10 +2939,8 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>mit einigen Blütenzweigen auftretend und langsam über die Bühne hinschreitend, für
-              sich.</hi>
-          </stage>
+          <stage>mit einigen Blütenzweigen auftretend und langsam über die Bühne hinschreitend, für
+            sich.</stage>
           <lg>
             <l>Der kleine Folko, wenn nach Obst, nach Blumen,</l>
             <l>Wenn irgend sonst in Spielzeug er begehrte</l>
@@ -3231,9 +2957,7 @@
             <l>Die taugen nicht! Du hast zu knapp am Stiel</l>
             <l>Die Blumen weggebrochen –</l>
           </lg>
-          <stage>
-            <hi>Sie wirft einige von den Blüten auf die Erde.</hi>
-          </stage>
+          <stage>Sie wirft einige von den Blüten auf die Erde.</stage>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR.</speaker>
@@ -3260,9 +2984,7 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>sich zu ihren Füßen hinsetzend.</hi>
-          </stage>
+          <stage>sich zu ihren Füßen hinsetzend.</stage>
           <l>Wohlan, ich sitze hier, und nun erzähle!</l>
         </sp>
         <sp who="#parthenia">
@@ -3298,9 +3020,7 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>der den Blick nicht von Parthenia verwandt hat, nach einer Pause.</hi>
-          </stage>
+          <stage>der den Blick nicht von Parthenia verwandt hat, nach einer Pause.</stage>
           <l>Ich fass' es nicht!</l>
         </sp>
         <sp who="#parthenia">
@@ -3311,9 +3031,7 @@
             <l>Ein altes Lied; das sagt es deutlicher,</l>
             <l>Mir mindestens! Wie hieß es nur? Ganz recht!</l>
           </lg>
-          <stage>
-            <hi>Sie spricht langsam, als wenn sie sich auf das Lied besänne.</hi>
-          </stage>
+          <stage>Sie spricht langsam, als wenn sie sich auf das Lied besänne.</stage>
           <lg>
             <l>Mein Herz, ich will dich fragen:</l>
             <l>Was ist denn Liebe? Sag'! –</l>
@@ -3341,9 +3059,7 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>leidenschaftlich.</hi>
-          </stage>
+          <stage>leidenschaftlich.</stage>
           <l>Sinn nach!</l>
         </sp>
         <sp who="#parthenia">
@@ -3355,38 +3071,28 @@
             <l>Ein Strauch, und welche Rosen! – Ich will hin;</l>
             <l>Hier hüte mir indessen Kranz und Blumen!</l>
           </lg>
-          <stage>
-            <hi>Sie springt auf, schüttet Blumen und Kranz in Ingomars Schloß und läuft links im
-              Vordergrunde ab.</hi>
-          </stage>
+          <stage>Sie springt auf, schüttet Blumen und Kranz in Ingomars Schloß und läuft links im
+            Vordergrunde ab.</stage>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>nach einer Pause, ohne seine Stellung zu verändern, in tiefen Gedanken vor sich
-              hinsprechend.</hi>
-          </stage>
+          <stage>nach einer Pause, ohne seine Stellung zu verändern, in tiefen Gedanken vor sich
+            hinsprechend.</stage>
           <lg>
             <l>Zwei Seelen und ein Gedanke,</l>
             <l>Zwei Herzen und ein Schlag.</l>
           </lg>
-          <stage>
-            <hi>Der Vorhang fällt.</hi>
-          </stage>
+          <stage>Der Vorhang fällt.</stage>
         </sp>
       </div>
       <div type="act">
         <head><pb n="105"/> Dritter Akt.</head>
-        <p>Schauplatz wie im vorigen Akte; Ingomars Speer und Schild, wie früher, an den Baum
-          gelehnt; das Feuer unter dem Kessel erloschen.</p>
-        <stage>
-          <hi>Ingomar, in Gedanken versunken, tritt mit Alastor links im Vordergrunde auf.</hi>
-        </stage>
+        <stage>Schauplatz wie im vorigen Akte; Ingomars Speer und Schild, wie früher, an den Baum
+          gelehnt; das Feuer unter dem Kessel erloschen.</stage>
+        <stage>Ingomar, in Gedanken versunken, tritt mit Alastor links im Vordergrunde auf.</stage>
         <sp who="#alastor">
           <speaker>ALASTOR</speaker>
-          <stage>
-            <hi>die angefangene Rede beschließend.</hi>
-          </stage>
+          <stage>die angefangene Rede beschließend.</stage>
           <lg>
             <l>Und darum senden mich die andern nun,</l>
             <l>Bei dir, als unserm Führer, anzufragen,</l>
@@ -3395,9 +3101,7 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>halblaut vor sich hinsprechend.</hi>
-          </stage>
+          <stage>halblaut vor sich hinsprechend.</stage>
           <lg>
             <l>Ich will ihr sagen – Nein, das nicht! Beim Himmel,</l>
             <l>Es könnte scheinen – Nein, ich will ihr sagen,</l>
@@ -3465,9 +3169,7 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>halblaut vor sich hinsprechend.</hi>
-          </stage>
+          <stage>halblaut vor sich hinsprechend.</stage>
           <lg>
             <l>Aufbrechen soll ich – heimwärts ziehen – heimwärts?</l>
             <l>In ihre Heimat, in die meine nicht! –</l>
@@ -3476,9 +3178,7 @@
             <l>Zuerst zum Licht die Augen aufgeschlagen,</l>
             <l>Als wär' ich nie gewesen, als erst hier! –</l>
           </lg>
-          <stage>
-            <hi>Laut.</hi>
-          </stage>
+          <stage>Laut.</stage>
           <l>Wo sind die andern?</l>
           <pb n="106"/>
         </sp>
@@ -3523,9 +3223,7 @@
             <l>Und kehre mit des Morgens lichtem Strahl</l>
             <l>Besonnenheit und Einsicht dir zurück.</l>
           </lg>
-          <stage>
-            <hi>Er geht links im Hintergrund ab.</hi>
-          </stage>
+          <stage>Er geht links im Hintergrund ab.</stage>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR.</speaker>
@@ -3536,9 +3234,7 @@
             <l>In Fieberträumen spinnt mein Geist sich ein,</l>
             <l>Und irrend da und dorthin schweift die Seele!</l>
           </lg>
-          <stage>
-            <hi>Er wirft sich auf den Felsblock rechts im Vordergrunde; nach einer Pause.</hi>
-          </stage>
+          <stage>Er wirft sich auf den Felsblock rechts im Vordergrunde; nach einer Pause.</stage>
           <lg>
             <l>Ich traf einmal ein Reh mit meinem Pfeile,</l>
             <l>Und neben meinem Opfer, das ringsum</l>
@@ -3556,18 +3252,14 @@
             <l>Läßt sorglos es den Grund der Seele schauen –</l>
             <l>Der Kinderseele –</l>
           </lg>
-          <stage>
-            <hi>Aufspringend.</hi>
-          </stage>
+          <stage>Aufspringend.</stage>
           <lg>
-            <l>Sie und wieder <hi>sie</hi> –</l>
-            <l>Und immer <hi>sie</hi> – Bei allen Göttern – Wie,</l>
+            <l>Sie und wieder <emph>sie</emph> –</l>
+            <l>Und immer <emph>sie</emph> – Bei allen Göttern – Wie,</l>
             <l>Hat Ingomar an Beßres nicht zu denken</l>
             <l>Als an ein Weib, an einer Sklavin Augen? –</l>
           </lg>
-          <stage>
-            <hi>Becherschall und wüstes Trinkgelärm außer der Bühne.</hi>
-          </stage>
+          <stage>Becherschall und wüstes Trinkgelärm außer der Bühne.</stage>
           <lg>
             <l>Die jauchzen dort, und wie der Kriegsruf kündet,</l>
             <l>Der freudig in der Becher Klang sich mischt,</l>
@@ -3580,7 +3272,7 @@
             <l>Und öffnen will ich sie und will genesen!</l>
             <l>Mir Waffenklang und Kampf und Siegeslust;</l>
             <l>Was sind mir Weiber –</l>
-            <l>Freilich <hi>sie – sie</hi> scheint</l>
+            <l>Freilich <emph>sie</emph> – <emph>sie</emph> scheint</l>
             <l>Aus anderm Stoff genommen als die andern,</l>
             <l>Und denk' ich jener dort daheim, gehüllt</l>
             <l>In zottig rauhe Felle, sonngebräunt,</l>
@@ -3589,20 +3281,16 @@
             <l>Demütig werbend um des Herren Gunst,</l>
             <l>So faßt mich Ekel an – und sie, die Griechin –</l>
           </lg>
-          <stage>
-            <hi>Becherschall und Zuruf außer der Bühne.</hi>
-          </stage>
+          <stage>Becherschall und Zuruf außer der Bühne.</stage>
           <lg>
             <l>Kampf, ruft ihr – Kampf – Umsonst, kein Widerhall</l>
             <l>Antwortet euch in meines Herzens Schlägen! –</l>
             <l>Krank bin ich, krank, was immer auch mir fehle,</l>
             <l>Ich fühl' es, krank im tiefsten Mark der Seele!</l>
           </lg>
-          <stage>
-            <hi>Er wirft sich wieder auf den Felsblock, während Parthenia rechts im Vordergrunde mit
-              einem Körbchen am Arme auftritt und langsam, ohne Ingomar zu bemerken, dem
-              Vordergrunde links sich zuwendet.</hi>
-          </stage>
+          <stage>Er wirft sich wieder auf den Felsblock, während Parthenia rechts im Vordergrunde
+            mit einem Körbchen am Arme auftritt und langsam, ohne Ingomar zu bemerken, dem
+            Vordergrunde links sich zuwendet.</stage>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
@@ -3621,9 +3309,7 @@
             <l>Den fürcht' ich nicht, der läßt sich wohl bereden,</l>
             <l>Der ist der Beste aus der ganzen Schar! –</l>
           </lg>
-          <stage>
-            <hi>Auf den Felsblock zugehend und Ingomar bemerkend.</hi>
-          </stage>
+          <stage>Auf den Felsblock zugehend und Ingomar bemerkend.</stage>
           <l>Sieh da –</l>
         </sp>
         <sp who="#ingomar">
@@ -3661,15 +3347,11 @@
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
           <l>Das mag geschehen!</l>
-          <stage>
-            <hi>Sie geht.</hi>
-          </stage>
+          <stage>Sie geht.</stage>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>aufspringend.</hi>
-          </stage>
+          <stage>aufspringend.</stage>
           <lg>
             <l>Du gehst, Parthenia! Nein, bleib bei mir! –</l>
             <l>Mein Kopf ist wüst, und meine Pulse fliegen.</l>
@@ -3677,9 +3359,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>rasch umkehrend.</hi>
-          </stage>
+          <stage>rasch umkehrend.</stage>
           <lg>
             <l>So bist du krank! Und sprich, was fehlt dir? Rede!</l>
             <l>Ich hab' der Mutter manches abgelauscht</l>
@@ -3734,9 +3414,7 @@
             <l>Das Eigenste, Geheimste selbst der Seele,</l>
             <l><pb n="109"/> Des Herzens Schlag, die Keime der Gedanken –</l>
           </lg>
-          <stage>
-            <hi>Plötzlich innehaltend.</hi>
-          </stage>
+          <stage>Plötzlich innehaltend.</stage>
           <l>Ihr Himmlischen –</l>
         </sp>
         <sp who="#parthenia">
@@ -3748,9 +3426,7 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>langsam vor sich hinsprechend.</hi>
-          </stage>
+          <stage>langsam vor sich hinsprechend.</stage>
           <lg>
             <l>»Zwei Seelen und ein Gedanke,</l>
             <l>Zwei Herzen und ein Schlag!« –</l>
@@ -3762,9 +3438,7 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>halb für sich.</hi>
-          </stage>
+          <stage>halb für sich.</stage>
           <lg>
             <l>Das ist das Lied, das mir den Sinn verkehrte,</l>
             <l>Das war der Blitz, der das Gewölk zerriß!</l>
@@ -3829,9 +3503,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>ängstlich zurückweichend.</hi>
-          </stage>
+          <stage>ängstlich zurückweichend.</stage>
           <l>Wo berg' ich mich? Zurück!</l>
         </sp>
         <sp who="#ingomar">
@@ -3840,9 +3512,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>den Dolch rasch gegen die eigene Brust zückend.</hi>
-          </stage>
+          <stage>den Dolch rasch gegen die eigene Brust zückend.</stage>
           <l>Steh! Es gilt mein Leben.</l>
         </sp>
         <sp who="#ingomar">
@@ -3851,9 +3521,7 @@
             <l>Halt!</l>
             <l>Halt ein! Das Eisen weg! –</l>
           </lg>
-          <stage>
-            <hi>Sie halb bestürzt, halb unwillig von der Seite ansehend.</hi>
-          </stage>
+          <stage>Sie halb bestürzt, halb unwillig von der Seite ansehend.</stage>
           <lg>
             <l>Wie ist mir nur –</l>
             <l><pb n="110"/> Was hält mich – Bin ich nicht ihr Herr? Ist sie</l>
@@ -3891,15 +3559,11 @@
             <l>Es müßt' mich schützen wollen, leiten, tragen –</l>
             <l>Doch was verschwend' ich Worte nur an dich!</l>
           </lg>
-          <stage>
-            <hi>Sie will gehen.</hi>
-          </stage>
+          <stage>Sie will gehen.</stage>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>ihr in den Weg tretend.</hi>
-          </stage>
+          <stage>ihr in den Weg tretend.</stage>
           <lg>
             <l>Bleib, sag' ich, bleib! Unwürdig achtest du</l>
             <l>Mich deiner Worte? Weißt du, wer ich bin?</l>
@@ -3981,28 +3645,20 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>der mit gezücktem Schwerte auf Parthenia zugestürzt, plötzlich innehaltend.</hi>
-          </stage>
-          <l>Nein! Eh' <hi>mein</hi> Leben!</l>
-          <stage>
-            <hi>Das Schwert entsinkt ihm.</hi>
-          </stage>
+          <stage>der mit gezücktem Schwerte auf Parthenia zugestürzt, plötzlich innehaltend.</stage>
+          <l>Nein! Eh' <emph>mein</emph> Leben!</l>
+          <stage>Das Schwert entsinkt ihm.</stage>
           <lg>
             <l>Wehe mir!</l>
             <l>Ich will und kann nicht! Zorn entflammt mein Blut;</l>
             <l>Die Welt und mich möcht' ich in Stücke reißen;</l>
-            <l>Ich bin nicht <hi>ich</hi> mehr – Meine Kraft ist hin!</l>
+            <l>Ich bin nicht <emph>ich</emph> mehr – Meine Kraft ist hin!</l>
           </lg>
-          <stage>
-            <hi>Er wirft sich in der heftigsten Bewegung zu Boden.</hi>
-          </stage>
+          <stage>Er wirft sich in der heftigsten Bewegung zu Boden.</stage>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>nach einer Pause.</hi>
-          </stage>
+          <stage>nach einer Pause.</stage>
           <lg>
             <l>Was war das? Hier sein Schwert zu meinen Füßen,</l>
             <l>Das blitzend erst noch meinem Haupt gedroht!</l>
@@ -4016,18 +3672,14 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>aufspringend.</hi>
-          </stage>
+          <stage>aufspringend.</stage>
           <lg>
             <l>Ich weinen!</l>
             <l>Ein Weib mag weinen! Ich – ich weine nicht! –</l>
             <l>Krank bin ich, krank! Nichts weiter. Mich verachten!</l>
             <l>Der Heimat Ruhm und Stolz, der Feinde Schrecken –</l>
           </lg>
-          <stage>
-            <hi>Nach einer Pause, sie ein paar Augenblicke zornig anschauend.</hi>
-          </stage>
+          <stage>Nach einer Pause, sie ein paar Augenblicke zornig anschauend.</stage>
           <lg>
             <l>Zieh hin! Ich kann dich missen! Meintest du,</l>
             <l>Ich könnt' es nicht? – Ich kann es – Ziehe hin!</l>
@@ -4036,9 +3688,7 @@
             <l>Dein Atem weht mich an mit Fieberträumen,</l>
             <l>Dein Blick vergiftet! Fort, zur Stelle fort!</l>
           </lg>
-          <stage>
-            <hi>Er stürzt im Vordergrund der Bühne ab.</hi>
-          </stage>
+          <stage>Er stürzt im Vordergrund der Bühne ab.</stage>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
@@ -4053,9 +3703,7 @@
             <l>Die Mutter winkt, der Vater öffnet mir</l>
             <l>Die Arme –</l>
           </lg>
-          <stage>
-            <hi>Innehaltend.</hi>
-          </stage>
+          <stage>Innehaltend.</stage>
           <lg>
             <l>Wie? Und soll in Groll und Hader</l>
             <l>Von ihm ich scheiden, der der Knechtschaft Joch</l>
@@ -4067,11 +3715,9 @@
             <l>Mir auf die Lippen, und sein Groll wird fliehen,</l>
             <l>Und leichtern Herzens werd' ich heimwärts ziehen! –</l>
           </lg>
-          <stage>
-            <hi>Während sie sich auf den Felsblock setzt, auf den sie früher das Körbchen
-              hinstellte, treten Ambivar, Samo und Trinobant, die während der letzten Rede
-              Parthenias im Hintergrunde rechts erschienen sind, allmählich in den Vordergrund.</hi>
-          </stage>
+          <stage>Während sie sich auf den Felsblock setzt, auf den sie früher das Körbchen
+            hinstellte, treten Ambivar, Samo und Trinobant, die während der letzten Rede Parthenias
+            im Hintergrunde rechts erschienen sind, allmählich in den Vordergrund.</stage>
         </sp>
         <sp who="#samo">
           <speaker>SAMO.</speaker>
@@ -4128,9 +3774,7 @@
         <sp who="#samo">
           <speaker>SAMO.</speaker>
           <l>Ja, das Weib hat ihn verhext!</l>
-          <stage>
-            <hi>Sie sprechen leise fort.</hi>
-          </stage>
+          <stage>Sie sprechen leise fort.</stage>
           <pb n="113"/>
         </sp>
         <sp who="#parthenia">
@@ -4143,9 +3787,7 @@
             <l>Mir schlägt das Herz – dort in des Busches Schatten</l>
             <l>Verborgen späh' ich seinen Spuren nach! –</l>
           </lg>
-          <stage>
-            <hi>Sie geht rasch über die Bühne und verschwindet links im Vordergrunde.</hi>
-          </stage>
+          <stage>Sie geht rasch über die Bühne und verschwindet links im Vordergrunde.</stage>
         </sp>
         <sp who="#ambivar">
           <speaker>AMBIVAR.</speaker>
@@ -4201,9 +3843,7 @@
         <sp who="#ambivar">
           <speaker>AMBIVAR.</speaker>
           <l>Das mag er, wenn's getan!</l>
-          <stage>
-            <hi>Für sich.</hi>
-          </stage>
+          <stage>Für sich.</stage>
           <lg>
             <l>Schuft hat er mich genannt, und ich will's sein,</l>
             <l>Zahl' heut ich nicht noch meine Schuld ihm heim.</l>
@@ -4216,10 +3856,8 @@
         <sp who="#ambivar">
           <speaker>AMBIVAR.</speaker>
           <l>Still! Hierher! Kommt hier herüber!</l>
-          <stage>
-            <hi>Sie ziehen sich in den Hintergrund der Bühne rechts zurück, während Parthenia links
-              im Vordergrunde aus dem Gebüsche tritt.</hi>
-          </stage>
+          <stage>Sie ziehen sich in den Hintergrund der Bühne rechts zurück, während Parthenia links
+            im Vordergrunde aus dem Gebüsche tritt.</stage>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
@@ -4234,14 +3872,10 @@
         </sp>
         <sp who="#ambivar">
           <speaker>AMBIVAR</speaker>
-          <stage>
-            <hi>der indes mit seinen Gefährten Parthenien, die, in Gedanken versunken, dasteht,
-              unbemerkt näher geschlichen.</hi>
-          </stage>
+          <stage>der indes mit seinen Gefährten Parthenien, die, in Gedanken versunken, dasteht,
+            unbemerkt näher geschlichen.</stage>
           <l>Nun angefaßt, Gesellen!</l>
-          <stage>
-            <hi>Die Tectosagen fassen sie bei den Armen und halten sie fest.</hi>
-          </stage>
+          <stage>Die Tectosagen fassen sie bei den Armen und halten sie fest.</stage>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
@@ -4276,43 +3910,31 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>während sie von den Tectosagen rechts im Vordergrunde der Bühne ins Gebüsch gezogen
-              wird.</hi>
-          </stage>
+          <stage>während sie von den Tectosagen rechts im Vordergrunde der Bühne ins Gebüsch gezogen
+            wird.</stage>
           <lg>
             <l>So rettet ihr, ihr Rächer in den Wolken!</l>
             <l>Helft – rettet –</l>
           </lg>
-          <stage>
-            <hi>Schon außer der Bühne.</hi>
-          </stage>
+          <stage>Schon außer der Bühne.</stage>
           <l>Ingomar! –</l>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>rasch links im Vordergrunde der Bühne auftretend.</hi>
-          </stage>
+          <stage>rasch links im Vordergrunde der Bühne auftretend.</stage>
           <lg>
             <l>Wer rief da? War's</l>
             <l>Nicht ihre Stimme?</l>
           </lg>
-          <stage>
-            <hi>In die Szene blickend.</hi>
-          </stage>
+          <stage>In die Szene blickend.</stage>
           <lg>
             <l>Ambivar – Ein Schwert –</l>
             <l>Ein Schwert!</l>
           </lg>
-          <stage>
-            <hi>Er rafft das Schwert, das er früher fallen ließ, vom Boden auf.</hi>
-          </stage>
+          <stage>Er rafft das Schwert, das er früher fallen ließ, vom Boden auf.</stage>
           <l>Ha hier, und Blut soll's trinken! –</l>
-          <stage>
-            <hi>Rasch im Vordergrunde der Bühne rechts ab; nach einer kurzen Pause stürzt Parthenia
-              aus dem Gebüsche hervor.</hi>
-          </stage>
+          <stage>Rasch im Vordergrunde der Bühne rechts ab; nach einer kurzen Pause stürzt Parthenia
+            aus dem Gebüsche hervor.</stage>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
@@ -4320,9 +3942,7 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>das Schwert in der Hand, ihr auf dem Fuße folgend.</hi>
-          </stage>
+          <stage>das Schwert in der Hand, ihr auf dem Fuße folgend.</stage>
           <lg>
             <l>Bleib, was fliehst du? Bleib,</l>
             <l>Ich bin's ja! Ich! – Wie blaß du siehst! – Du wankst,</l>
@@ -4369,24 +3989,18 @@
             <l><pb n="115"/> Und streckt mich nicht ein Blitz vom Himmel nieder,</l>
             <l>All dem, was Menschen können, biet' ich Trotz!</l>
           </lg>
-          <stage>
-            <hi>Während der letzten Worte Ingomars sind nach und nach Alastor, Trinobant, Samo,
-              Novio und andere Tectosagen mit Speeren, Schwertern und Keulen bewaffnet, im
-              Vordergrunde rechts in drohender Haltung aufgetreten.</hi>
-          </stage>
+          <stage>Während der letzten Worte Ingomars sind nach und nach Alastor, Trinobant, Samo,
+            Novio und andere Tectosagen mit Speeren, Schwertern und Keulen bewaffnet, im
+            Vordergrunde rechts in drohender Haltung aufgetreten.</stage>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>auf sie zuschreitend.</hi>
-          </stage>
+          <stage>auf sie zuschreitend.</stage>
           <l>Ihr dort, sagt an, was soll's? Was bringt ihr? Redet!</l>
         </sp>
         <sp who="#alastor">
           <speaker>ALASTOR</speaker>
-          <stage>
-            <hi>nach einer Pause.</hi>
-          </stage>
+          <stage>nach einer Pause.</stage>
           <lg>
             <l>Blut ward vergossen, und es schreit um Rache;</l>
             <l>Du trafst den Ambivar mit deinem Schwert –</l>
@@ -4421,9 +4035,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>sich Ingomar in die Arme werfend.</hi>
-          </stage>
+          <stage>sich Ingomar in die Arme werfend.</stage>
           <lg>
             <l>Halt!</l>
             <l>Zu viel sind ihrer! Halt! Sie töten dich –</l>
@@ -4435,9 +4047,7 @@
         </sp>
         <sp who="#alastor">
           <speaker>ALASTOR</speaker>
-          <stage>
-            <hi>zwischen Ingomar und die Tectosagen tretend.</hi>
-          </stage>
+          <stage>zwischen Ingomar und die Tectosagen tretend.</stage>
           <lg>
             <l>Halt, sag' auch ich, und hört mich an, Gefährten!</l>
             <l>Wir wählten dich zum Führer, Ingomar,</l>
@@ -4490,9 +4100,7 @@
         </sp>
         <sp who="#alastor">
           <speaker>ALASTOR</speaker>
-          <stage>
-            <hi>nach einer kurzen Pause des Flüsterns mit den übrigen.</hi>
-          </stage>
+          <stage>nach einer kurzen Pause des Flüsterns mit den übrigen.</stage>
           <lg>
             <l>Ich denke, wir sind einig! Ingomar,</l>
             <l>Du forderst keinen Anteil an der Beute?</l>
@@ -4543,10 +4151,8 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>während Alastor und die übrigen Tectosagen sich allmählich langsam entfernen, zu
-              Parthenia.</hi>
-          </stage>
+          <stage>während Alastor und die übrigen Tectosagen sich allmählich langsam entfernen, zu
+            Parthenia.</stage>
           <lg>
             <l>Nun, Mädchen, sei getrost! – Sie ziehen ab,</l>
             <l>Und wär' dein Zittern, dein Erbleichen nicht,</l>
@@ -4666,9 +4272,7 @@
             <l>Das hieß' dem Wolf des Lammes Hut vertrauen!</l>
             <l>Nun denn –</l>
           </lg>
-          <stage>
-            <hi>Rasch herausbrechend.</hi>
-          </stage>
+          <stage>Rasch herausbrechend.</stage>
           <l>Ich will dich selbst geleiten –</l>
         </sp>
         <sp who="#parthenia">
@@ -4707,15 +4311,11 @@
             <l>Und geht's bergan, so soll mein Arm dich stützen –</l>
             <l>Nein, nein – nicht stützen – tragen soll er dich –</l>
           </lg>
-          <stage>
-            <hi>Er will sie umschlingen.</hi>
-          </stage>
+          <stage>Er will sie umschlingen.</stage>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>zurückweichend.</hi>
-          </stage>
+          <stage>zurückweichend.</stage>
           <lg>
             <l>Bin ich ein Kind, daß du mich tragen willst?</l>
             <l>Ich bin geübt im Wandern, Steigen, Klettern,</l>
@@ -4768,9 +4368,7 @@
         <sp who="#ingomar">
           <speaker>INGOMAR.</speaker>
           <l>Ich will, gewiß, ich will –</l>
-          <stage>
-            <hi>Er nimmt das Körbchen.</hi>
-          </stage>
+          <stage>Er nimmt das Körbchen.</stage>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
@@ -4785,9 +4383,8 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>die indessen den am Baume lehnenden Speer erfaßt und den Schild aufgenommen.</hi>
-          </stage>
+          <stage>die indessen den am Baume lehnenden Speer erfaßt und den Schild
+            aufgenommen.</stage>
           <lg>
             <l>Nein, laß – mir macht's Behagen!</l>
             <l>Von jeher war ich blanken Waffen gut;</l>
@@ -4808,20 +4405,16 @@
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
           <l>Voran denn, Führer, und ich folg' dir nach!</l>
-          <stage>
-            <hi>Ingomar, das Körbchen tragend, geht rechts im Vordergrunde ab; Parthenia, den Schild
-              am Arm, den Speer in der Rechten, folgt ihm; der Vorhang fällt.</hi>
-          </stage>
+          <stage>Ingomar, das Körbchen tragend, geht rechts im Vordergrunde ab; Parthenia, den
+            Schild am Arm, den Speer in der Rechten, folgt ihm; der Vorhang fällt.</stage>
         </sp>
       </div>
       <div type="act">
         <head>Vierter Akt.</head>
-        <p>Waldgegend; im Hintergrunde Aussicht auf das ferne Massalia und einen Teil des Meeres;
-          links im Vordergrunde eine felsige, dicht mit Gebüschen bewachsene Anhöhe, von der ein
-          schmaler Steig gegen die Mitte der Bühne zu herabführt.</p>
-        <stage>
-          <hi>Myron, Adrast und Elpenor treten im Hintergrunde der Bühne rechts auf.</hi>
-        </stage>
+        <stage>Waldgegend; im Hintergrunde Aussicht auf das ferne Massalia und einen Teil des
+          Meeres; links im Vordergrunde eine felsige, dicht mit Gebüschen bewachsene Anhöhe, von der
+          ein schmaler Steig gegen die Mitte der Bühne zu herabführt.</stage>
+        <stage>Myron, Adrast und Elpenor treten im Hintergrunde der Bühne rechts auf.</stage>
         <sp who="#myron">
           <speaker>MYRON.</speaker>
           <lg>
@@ -4957,13 +4550,10 @@
             <l>Als kühn zu mir sie durch die Wildnis drang!</l>
             <l>Fort, sag' ich, fort!</l>
           </lg>
-          <stage>
-            <hi>Elpenor geht links im Hintergrunde ab, Myron und Adrast im Vordergrunde rechts.</hi>
-          </stage>
-          <stage>
-            <hi><pb n="121"/> Nach einer Pause erscheint zuerst Ingomar, dann Parthenia links im
-              Vordergrunde auf der Felsenhöhe.</hi>
-          </stage>
+          <stage>Elpenor geht links im Hintergrunde ab, Myron und Adrast im Vordergrunde
+            rechts.</stage>
+          <stage><pb n="121"/> Nach einer Pause erscheint zuerst Ingomar, dann Parthenia links im
+            Vordergrunde auf der Felsenhöhe.</stage>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR.</speaker>
@@ -4994,10 +4584,8 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>indem er sie bei der Hand faßt und sie während der nächsten Reden, langsam vor ihr
-              hergehend, von der Höhe hinabführt.</hi>
-          </stage>
+          <stage>indem er sie bei der Hand faßt und sie während der nächsten Reden, langsam vor ihr
+            hergehend, von der Höhe hinabführt.</stage>
           <lg>
             <l>Nein, tu's nicht! Gedenk',</l>
             <l>Wie gestern noch im Moor – ich riet vergebens –</l>
@@ -5074,17 +4662,13 @@
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
           <l>Nein hier, hier war's!</l>
-          <stage>
-            <hi>Sich gegen den Hintergrund wendend.</hi>
-          </stage>
+          <stage>Sich gegen den Hintergrund wendend.</stage>
           <lg>
             <l>Und sieh, dort wogt das Meer, dort ragt verklärt</l>
             <l>Im Purpurlicht der Tempel Artemis',</l>
             <l>Massalias Burg, des Vaterhauses Dach!</l>
           </lg>
-          <stage>
-            <hi>Kniend.</hi>
-          </stage>
+          <stage>Kniend.</stage>
           <lg>
             <l>Und wieder werf' ich hier im Staub mich nieder;</l>
             <l>Ihr Himmlischen, die meinen Pfad bewacht,</l>
@@ -5094,16 +4678,12 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <l>Ich wollt', ich läg' im Moor bei meinem Schilde –</l>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>aufspringend.</hi>
-          </stage>
+          <stage>aufspringend.</stage>
           <lg>
             <l>Die lieben Eltern werd' ich wiedersehen,</l>
             <l>In ihre Arme freudeweinend sinken,</l>
@@ -5153,7 +4733,7 @@
             <l>Wir sind am Ziel, und soll ich des mich freuen?</l>
             <l>Allein mit dir, der Himmel über uns,</l>
             <l>Und ringsum Wald und Moor und tiefes Schweigen,</l>
-            <l>Da freut' ich mich; da war <hi>ich</hi> deine Welt,</l>
+            <l>Da freut' ich mich; da war <emph>ich</emph> deine Welt,</l>
             <l><pb n="123"/> Ich, ich allein; die Stille war so dumpf,</l>
             <l>So weit die Wildnis, und Gefahr so nah,</l>
             <l>Da rückten wir zusammen, Seel' an Seele;</l>
@@ -5219,9 +4799,7 @@
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
           <l>Mir dunkelt's vor den Augen!</l>
-          <stage>
-            <hi>Ingomar die Hand reichend.</hi>
-          </stage>
+          <stage>Ingomar die Hand reichend.</stage>
           <lg>
             <l><pb n="124"/> Ja, du warst</l>
             <l>Ein treuer Führer!</l>
@@ -5250,9 +4828,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>abgewendet, für sich.</hi>
-          </stage>
+          <stage>abgewendet, für sich.</stage>
           <lg>
             <l>Weh mir! Wie Honig saugt mein trunknes Ohr</l>
             <l>Die süßen Worte!</l>
@@ -5280,9 +4856,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>in heftiger Bewegung.</hi>
-          </stage>
+          <stage>in heftiger Bewegung.</stage>
           <l>Nein, nein! Hinweg! Verstummt, Sirenenlieder!</l>
         </sp>
         <sp who="#ingomar">
@@ -5291,9 +4865,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>sich fassend.</hi>
-          </stage>
+          <stage>sich fassend.</stage>
           <l>Hör' mich an!</l>
         </sp>
         <sp who="#ingomar">
@@ -5425,9 +4997,7 @@
             <l>Dies merk' und denke meiner – und – Genug –</l>
             <l>Leb' wohl –</l>
           </lg>
-          <stage>
-            <hi>Er wendet sich zu gehen.</hi>
-          </stage>
+          <stage>Er wendet sich zu gehen.</stage>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
@@ -5443,16 +5013,12 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>ihm ihren Dolch reichend.</hi>
-          </stage>
+          <stage>ihm ihren Dolch reichend.</stage>
           <l>Nimm!</l>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>den Dolch erfassend.</hi>
-          </stage>
+          <stage>den Dolch erfassend.</stage>
           <lg>
             <l>Den Dolch – Ha, Spott und Hohn!</l>
             <l>Gedenken soll ich, daß mein Rasen dir</l>
@@ -5471,14 +5037,10 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>schreitet rasch auf Parthenia zu, dann, plötzlich innehaltend, nach einer
-              Pause.</hi>
-          </stage>
+          <stage>schreitet rasch auf Parthenia zu, dann, plötzlich innehaltend, nach einer
+            Pause.</stage>
           <l>Leb' wohl!</l>
-          <stage>
-            <hi>Er geht rasch links im Vordergrunde ab.</hi>
-          </stage>
+          <stage>Er geht rasch links im Vordergrunde ab.</stage>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
@@ -5514,16 +5076,12 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>links im Vordergrunde der Bühne zögernd und langsam wieder auftretend.</hi>
-          </stage>
+          <stage>links im Vordergrunde der Bühne zögernd und langsam wieder auftretend.</stage>
           <l>Parthenia!</l>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>aufschreiend.</hi>
-          </stage>
+          <stage>aufschreiend.</stage>
           <l>Du bist es – Du zurück –</l>
         </sp>
         <sp who="#ingomar">
@@ -5577,9 +5135,7 @@
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
           <l>Was sagst du – Wie –</l>
-          <stage>
-            <hi>Für sich.</hi>
-          </stage>
+          <stage>Für sich.</stage>
           <l>Mir will das Herz zerspringen!</l>
         </sp>
         <sp who="#ingomar">
@@ -5596,9 +5152,7 @@
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
           <l>Du mir folgen! –</l>
-          <stage>
-            <hi>Für sich.</hi>
-          </stage>
+          <stage>Für sich.</stage>
           <l>So reich die Wonne, und so eng die Brust!</l>
         </sp>
         <sp who="#ingomar">
@@ -5615,13 +5169,9 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <l>Und wer denn, Himmel, müßte ihn nicht lieben?</l>
-          <stage>
-            <hi>Laut.</hi>
-          </stage>
+          <stage>Laut.</stage>
           <lg>
             <l>Mir folgen, sagst du, nach Massalia –</l>
             <l>Und lebt ein Gastfreund dort, dich aufzunehmen?</l>
@@ -5645,9 +5195,7 @@
             <l>Was bleibt noch übrig für des Lebens Rest?</l>
             <l>Er ist's, er ist's!</l>
           </lg>
-          <stage>
-            <hi>Dem in Begleitung Elpenors auftretenden Myron in die Arme sinkend.</hi>
-          </stage>
+          <stage>Dem in Begleitung Elpenors auftretenden Myron in die Arme sinkend.</stage>
           <l>Mein Vater!</l>
         </sp>
         <sp who="#myron">
@@ -5659,9 +5207,7 @@
             <l>Was ließt ihr mich nicht ihren Retter sein?</l>
             <l>Ich hätt' die Räuber alle, ich allein –</l>
           </lg>
-          <stage>
-            <hi>Ingomar erblickend und ängstlich zurückweichend.</hi>
-          </stage>
+          <stage>Ingomar erblickend und ängstlich zurückweichend.</stage>
           <lg>
             <l>Wie, was? Adrast – Elpenor – Rettet, helft!</l>
             <l>Herbei, die Tectosagen –</l>
@@ -5695,9 +5241,7 @@
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>der sich mittlerweile, von Parthenia geführt, Ingomar genähert, für sich.</hi>
-          </stage>
+          <stage>der sich mittlerweile, von Parthenia geführt, Ingomar genähert, für sich.</stage>
           <lg>
             <l>Er kam allein, das ist ein andres! Ei,</l>
             <l>Willkommen auf Massalias Gebiet!</l>
@@ -5749,9 +5293,7 @@
             <l>Gedenkest du zu lernen, und von mir? –</l>
             <l>Mir wird ganz schwül.</l>
           </lg>
-          <stage>
-            <hi>Für sich.</hi>
-          </stage>
+          <stage>Für sich.</stage>
           <lg>
             <l>Der Bursche zwar ist stark</l>
             <l>Und wär' ein tücht'ger Helfer –</l>
@@ -5806,16 +5348,12 @@
         <sp who="#myron">
           <speaker>MYRON.</speaker>
           <l>Das läßt sich hören.</l>
-          <stage>
-            <hi>Für sich.</hi>
-          </stage>
+          <stage>Für sich.</stage>
           <lg>
             <l>Der ist zahm geworden,</l>
             <l>Und war doch wilder als ein scheues Roß! –</l>
           </lg>
-          <stage>
-            <hi>Laut.</hi>
-          </stage>
+          <stage>Laut.</stage>
           <lg>
             <l>Das wär' die Tracht, nun aber höre weiter!</l>
             <l>Ich habe Felder, Wiesen, dort am Hügel</l>
@@ -5923,9 +5461,7 @@
             <l>Ich, mein Schwert dir geben!</l>
             <l>Mein Schwert, des Vaters Erbe –</l>
           </lg>
-          <stage>
-            <hi>Das Schwert vom Wehrgehänge reißend und Myron hinhaltend, heftig.</hi>
-          </stage>
+          <stage>Das Schwert vom Wehrgehänge reißend und Myron hinhaltend, heftig.</stage>
           <lg>
             <l>dieses Schwert,</l>
             <l>Das Schutz und Sieg und Beute mir gewährt!</l>
@@ -5934,9 +5470,7 @@
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>ängstlich vor Ingomar zurückweichend.</hi>
-          </stage>
+          <stage>ängstlich vor Ingomar zurückweichend.</stage>
           <l>Parthenia –</l>
           <pb n="132"/>
         </sp>
@@ -5951,9 +5485,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>die bisher abseits mit Elpenor gesprochen, hinzutretend.</hi>
-          </stage>
+          <stage>die bisher abseits mit Elpenor gesprochen, hinzutretend.</stage>
           <l>Was streitet ihr? –</l>
         </sp>
         <sp who="#myron">
@@ -5967,10 +5499,8 @@
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
           <l>Ei, wer das End' will, muß den Anfang wollen!</l>
-          <stage>
-            <hi>Sie geht auf Ingomar zu und nimmt ihm das Schwert aus der Hand, es Myron
-              hinreichend.</hi>
-          </stage>
+          <stage>Sie geht auf Ingomar zu und nimmt ihm das Schwert aus der Hand, es Myron
+            hinreichend.</stage>
           <lg>
             <l>Da ist das Schwert, und jetzt – die Sonne sinkt,</l>
             <l>Ich sehn' mich nach der Mutter, laß uns gehen –</l>
@@ -5986,56 +5516,42 @@
             <l>Doch ihrer Hilfe braucht es nun nicht mehr;</l>
             <l>Und kommt nun, kommt!</l>
           </lg>
-          <stage>
-            <hi>Er geht mit Elpenor und Parthenia rechts im Hintergrunde der Bühne ab.</hi>
-          </stage>
+          <stage>Er geht mit Elpenor und Parthenia rechts im Hintergrunde der Bühne ab.</stage>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>im Begriffe abzugehen, sich umwendend.</hi>
-          </stage>
+          <stage>im Begriffe abzugehen, sich umwendend.</stage>
           <l>Was säumst du, Ingomar?</l>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>wie aus einem Traume auffahrend.</hi>
-          </stage>
+          <stage>wie aus einem Traume auffahrend.</stage>
           <lg>
             <l>Wie, Ingomar! Und galt das mir? Bin ich</l>
             <l>Denn Ingomar? Mir wirbeln die Gedanken,</l>
             <l>Den Boden unterm Fuße fühl' ich wanken,</l>
             <l>Und kaum mehr weiß ich, ob ich's jemals war!</l>
           </lg>
-          <stage>
-            <hi>Während er langsam den Abgehenden folgt, fällt der Vorhang.</hi>
-          </stage>
+          <stage>Während er langsam den Abgehenden folgt, fällt der Vorhang.</stage>
         </sp>
       </div>
       <div type="act">
         <head>Fünfter Akt.</head>
-        <p>Schauplatz wie im ersten Akt.</p>
+        <stage>Schauplatz wie im ersten Akt.</stage>
         <sp who="#elpenor">
           <speaker>ELPENOR</speaker>
-          <stage>
-            <hi>aus dem Hause Myrons tretend und zurück sprechend.</hi>
-          </stage>
+          <stage>aus dem Hause Myrons tretend und zurück sprechend.</stage>
           <l>Was säumst du, Myron? Komm, sie warten dein'!</l>
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>auf der Stufe des Hauses erscheinend.</hi>
-          </stage>
+          <stage>auf der Stufe des Hauses erscheinend.</stage>
           <lg>
             <l>Da bin ich schon und gleich, gleich folg' ich dir;</l>
             <l>Mein rußig Werktagkleid nur legt' ich ab,</l>
             <l>Geziemend vor dem Rate zu erscheinen.</l>
           </lg>
-          <stage>
-            <hi>Ins Haus rufend.</hi>
-          </stage>
+          <stage>Ins Haus rufend.</stage>
           <l>Den Gürtel her, Actäa, und den Mantel.</l>
           <pb n="133"/>
         </sp>
@@ -6058,12 +5574,10 @@
             <l>Es ist so, wie ich sagte!</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA</speaker>
-          <stage>
-            <hi>die indes mit Parthenia, Myrons Gürtel und Mantel tragend, aus dem Haufe
-              getreten.</hi>
-          </stage>
+          <stage>die indes mit Parthenia, Myrons Gürtel und Mantel tragend, aus dem Haufe
+            getreten.</stage>
           <lg>
             <l>Große Götter,</l>
             <l>Was sagt ihr? – Wie –</l>
@@ -6076,7 +5590,7 @@
             <l>Den Mantel her, Parthenia!</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Myron, sprich!</l>
@@ -6090,7 +5604,7 @@
             <l>Und wenn Verrat nicht Schloß und Riegel öffnet –</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Er wird sie öffnen! Allerorten wohnt</l>
@@ -6106,7 +5620,7 @@
             <l>Verräter sagst du –?</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Nicht umsonst begann's</l>
@@ -6155,9 +5669,7 @@
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>halb von Elpenor fortgezogen.</hi>
-          </stage>
+          <stage>halb von Elpenor fortgezogen.</stage>
           <lg>
             <l>Sei ruhig! Laß nicht Angst</l>
             <l>Mit Schrecken, die nicht sind, den Sinn dir trüben!</l>
@@ -6172,15 +5684,11 @@
         </sp>
         <sp who="#elpenor">
           <speaker>ELPENOR</speaker>
-          <stage>
-            <hi>ihn fortziehend.</hi>
-          </stage>
+          <stage>ihn fortziehend.</stage>
           <l>Komm doch, sag' ich, komm!</l>
-          <stage>
-            <hi>Beide links im Hintergrunde ab.</hi>
-          </stage>
+          <stage>Beide links im Hintergrunde ab.</stage>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Da geht er hin, und mich verzehrt die Angst!</l>
@@ -6198,7 +5706,7 @@
             <l>Und billigten, daß er ihn aufgenommen.</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>O, daß er's tat, daß er ihn aufgenommen,</l>
@@ -6209,7 +5717,7 @@
           <speaker>PARTHENIA.</speaker>
           <l>Er brachte, denk' ich, dir dein Kind zurück.</l>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>So tat er, aber zückt' er einst nicht auch</l>
@@ -6227,7 +5735,7 @@
             <l>Gekürzt nach Griechenbrauch –</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Die Kinder riefen</l>
@@ -6239,7 +5747,7 @@
           <speaker>PARTHENIA.</speaker>
           <l>Du weißt, er geht wie andre jetzt gekleidet.</l>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Ja, griechisch ist sein Leibrock und sein Mantel;</l>
@@ -6257,7 +5765,7 @@
             <l>Wie seine Wälder, atmet seine Seele.</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Des Bären rohe Kraft! Erwürgte nicht</l>
@@ -6277,7 +5785,7 @@
             <l>Am Pflug, den greisen Vater seiner Mühen?</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Das tut er, ja! Ich weiß das, und er auch</l>
@@ -6288,9 +5796,7 @@
             <l>Und ihm ins Antlitz will ich es behaupten!</l>
             <l>Wo steckt er –</l>
           </lg>
-          <stage>
-            <hi>Gegen das Haus hinrufend.</hi>
-          </stage>
+          <stage>Gegen das Haus hinrufend.</stage>
           <l>Ingomar!</l>
         </sp>
         <sp who="#parthenia">
@@ -6301,12 +5807,10 @@
             <l>Sein Herz weiß nichts von Arglist und Verrat!</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <l>Nein, sag' ich –</l>
-          <stage>
-            <hi>Rufend.</hi>
-          </stage>
+          <stage>Rufend.</stage>
           <lg>
             <l>Ingomar! Du sollst es sehen,</l>
             <l>Wie er erschrickt, zusammenfährt, errötet;</l>
@@ -6322,12 +5826,10 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>aus dem Hause tretend und die Stufen hinabsteigend.</hi>
-          </stage>
+          <stage>aus dem Hause tretend und die Stufen hinabsteigend.</stage>
           <l>Da bin ich! Riefst du mich?</l>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <l>Jetzt endlich kommst du! Dreimal mußt' ich rufen.</l>
         </sp>
@@ -6338,7 +5840,7 @@
             <l>Und so mag's sein –</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Ein Lied – Nun ja, ganz recht,</l>
@@ -6356,7 +5858,7 @@
             <l>Ein Fehdezug beschlossen –</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>In der Tat!</l>
@@ -6373,7 +5875,7 @@
             <l>Ich geh' den meinen.</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>So! Doch gibt es Leute,</l>
@@ -6388,7 +5890,7 @@
             <l>Mein Weg und ihrer –</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Ja, man sagt sogar,</l>
@@ -6403,7 +5905,7 @@
             <l>Wer sagt das?</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Ich, ich sag' dir's in den Bart,</l>
@@ -6413,19 +5915,15 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>rasch auf Actäa zuschreitend.</hi>
-          </stage>
+          <stage>rasch auf Actäa zuschreitend.</stage>
           <lg>
             <l>Weib, ich aber sag' dir –</l>
             <l>Nein!</l>
             <l>Dir sag' ich nichts!</l>
           </lg>
-          <stage>
-            <hi>Er geht ins Haus ab.</hi>
-          </stage>
+          <stage>Er geht ins Haus ab.</stage>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Er geht – Er schweigt und geht,</l>
@@ -6438,12 +5936,10 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>gegen das Haus zuschreitend und hinein rufend.</hi>
-          </stage>
+          <stage>gegen das Haus zuschreitend und hinein rufend.</stage>
           <l>Ingomar!</l>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Du rufst ihn – Soll</l>
@@ -6457,7 +5953,7 @@
             <l>Er dir –</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Jetzt will ich keine Antwort mehr,</l>
@@ -6468,24 +5964,18 @@
             <l>Und mögen es zum Heil die Götter wenden!</l>
             <l>Ich kenn' ihn, mich, mich soll er nicht verblenden!</l>
           </lg>
-          <stage>
-            <hi>Sie geht links im Hintergrunde ab.</hi>
-          </stage>
+          <stage>Sie geht links im Hintergrunde ab.</stage>
           <pb n="137"/>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>unmutig einige Schritte auf und nieder gehend.</hi>
-          </stage>
+          <stage>unmutig einige Schritte auf und nieder gehend.</stage>
           <lg>
             <l>Sie geht und zürnt, und er trägt Schuld daran,</l>
             <l>Er ganz allein, denn hat sie unrecht auch –</l>
           </lg>
-          <stage>
-            <hi>Ingomar tritt aus dem Hause und steigt langsam, gesenkten Hauptes die Stufen
-              herab.</hi>
-          </stage>
+          <stage>Ingomar tritt aus dem Hause und steigt langsam, gesenkten Hauptes die Stufen
+            herab.</stage>
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
@@ -6602,9 +6092,7 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>sich Parthenien nähernd.</hi>
-          </stage>
+          <stage>sich Parthenien nähernd.</stage>
           <lg>
             <l>Und wenn ich's lernte, wenn auch das gelänge,</l>
             <l>Parthenia, wenn ich dann –</l>
@@ -6612,9 +6100,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>einen Schritt zurücktretend.</hi>
-          </stage>
+          <stage>einen Schritt zurücktretend.</stage>
           <lg>
             <l>Noch hast du's nicht</l>
             <l>Gelernt, wirst nicht so schnell es lernen –</l>
@@ -6652,9 +6138,7 @@
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>außer der Bühne.</hi>
-          </stage>
+          <stage>außer der Bühne.</stage>
           <l>Parthenia, Parthenia!</l>
         </sp>
         <sp who="#parthenia">
@@ -6663,10 +6147,8 @@
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>anfangs außer der Bühne, dann hastig mit der ängstlich nacheilenden Actäa
-              auftretend.</hi>
-          </stage>
+          <stage>anfangs außer der Bühne, dann hastig mit der ängstlich nacheilenden Actäa
+            auftretend.</stage>
           <l>Herbei! Parthenia!</l>
         </sp>
         <sp who="#parthenia">
@@ -6677,7 +6159,7 @@
           <speaker>MYRON.</speaker>
           <l>Recht so! Und Ingomar? Auch hier! Nun wohl –</l>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Was hast du? Sprich! Was treibt wie sinnverwirrt</l>
@@ -6691,7 +6173,7 @@
             <l>Er wird gleich hier sein –</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <l>Wer? der Feind?</l>
         </sp>
@@ -6703,7 +6185,7 @@
             <l>Kommt wegen Ingomar –</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Da seht nun selbst;</l>
@@ -6719,19 +6201,17 @@
             <l>Begrüßend ihm entgegen –</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Ansehn! Ehre!</l>
             <l>Mir pocht das Herz, als wär's ein Schmiedehammer!</l>
           </lg>
         </sp>
-        <sp who="#der_timarch">
+        <sp who="#timarch">
           <speaker>DER TIMARCH</speaker>
-          <stage>
-            <hi>der indes in Begleitung einiger Diener aufgetreten, zu Myron, der ihn mit tiefen
-              Bücklingen empfangen hat.</hi>
-          </stage>
+          <stage>der indes in Begleitung einiger Diener aufgetreten, zu Myron, der ihn mit tiefen
+            Bücklingen empfangen hat.</stage>
           <lg>
             <l>Genug! Laß, Myron, uns zur Sache kommen!</l>
             <l>Wo ist dein Lehrling?</l>
@@ -6746,9 +6226,7 @@
         </sp>
         <sp who="#timarch">
           <speaker>TIMARCH</speaker>
-          <stage>
-            <hi>indem er seinem Gefolge einen Wink gibt, zurückzutreten.</hi>
-          </stage>
+          <stage>indem er seinem Gefolge einen Wink gibt, zurückzutreten.</stage>
           <lg>
             <l>Wozu?</l>
             <l>Dies sind die Deinen, und wir sind allein!</l>
@@ -6761,16 +6239,12 @@
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>halblaut zu Ingomar.</hi>
-          </stage>
+          <stage>halblaut zu Ingomar.</stage>
           <l>Sag' doch: Herr! – Verstehst du: Herr!</l>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA</speaker>
-          <stage>
-            <hi>halblaut zu Myron.</hi>
-          </stage>
+          <stage>halblaut zu Myron.</stage>
           <l>Ja, lehr' du den, was Sitte heischt und Brauch!</l>
         </sp>
         <sp who="#timarch">
@@ -6801,16 +6275,12 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>für sich.</hi>
-          </stage>
+          <stage>für sich.</stage>
           <l>Ihr guten Götter!</l>
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>zu Actäa.</hi>
-          </stage>
+          <stage>zu Actäa.</stage>
           <l>Siehst du, Frau!</l>
         </sp>
         <sp who="#timarch">
@@ -6868,9 +6338,7 @@
             <l>So schlimme Nachbarn ferne sich zu halten,</l>
             <l>Und so vernimm denn, was dein Auftrag ist:</l>
           </lg>
-          <stage>
-            <hi>Ingomar einige Schritte beiseite führend.</hi>
-          </stage>
+          <stage>Ingomar einige Schritte beiseite führend.</stage>
           <lg>
             <l>Du sollst hinaus ins Tectosagenlager,</l>
             <l>Als kämst du, deine Freunde heimzusuchen</l>
@@ -6966,16 +6434,12 @@
             <l>Wir fänden zu gering vielleicht ihr Maß</l>
             <l>Und machten's voll mit deinem Blut und Leben! –</l>
           </lg>
-          <stage>
-            <hi>Er geht mit seinem Gefolge ab.</hi>
-          </stage>
+          <stage>Er geht mit seinem Gefolge ab.</stage>
           <pb n="142"/>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA</speaker>
-          <stage>
-            <hi>nach einer Pause.</hi>
-          </stage>
+          <stage>nach einer Pause.</stage>
           <lg>
             <l>Wer hat nun recht? Wo ist das Ansehn nun,</l>
             <l>Die Ehre, die dein Ingomar uns brachte?</l>
@@ -6993,9 +6457,7 @@
             <l>Ich sei Massalias treuer Sohn und Bürger!</l>
             <l>Hinein mit dir ins Haus, Parthenia!</l>
           </lg>
-          <stage>
-            <hi>Zu Ingomar.</hi>
-          </stage>
+          <stage>Zu Ingomar.</stage>
           <l>Fort, sag' ich –</l>
         </sp>
         <sp who="#ingomar">
@@ -7004,27 +6466,21 @@
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>während Actäa und Parthenia ins Haus treten.</hi>
-          </stage>
+          <stage>während Actäa und Parthenia ins Haus treten.</stage>
           <lg>
             <l>Nichts! Kein Wort mehr, schweig! –</l>
             <l>Wir sind allein zwar, und so sag' ich dir,</l>
             <l>Wie sehr du in die Klemme mich gebracht,</l>
             <l>Der Himmel weiß es, hätte ich zwei Köpfe,</l>
             <l>Den einen wollt' ich gern für dich verlieren;</l>
-            <l>Ich aber hab' nur <hi>einen!</hi> Drum hinweg!</l>
+            <l>Ich aber hab' nur <emph>einen</emph>! Drum hinweg!</l>
           </lg>
-          <stage>
-            <hi>Mit erhöhter Stimme.</hi>
-          </stage>
+          <stage>Mit erhöhter Stimme.</stage>
           <lg>
             <l>Ich bin ein treuer Mann und guter Bürger,</l>
             <l>Und so fahr hin, ich sag' mich los von dir!</l>
           </lg>
-          <stage>
-            <hi>Er tritt ebenfalls ins Haus und schließt hinter sich die Tür.</hi>
-          </stage>
+          <stage>Er tritt ebenfalls ins Haus und schließt hinter sich die Tür.</stage>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR.</speaker>
@@ -7057,10 +6513,8 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>die während der letzten Worte Ingomars aus dem Hause getreten ist und sich ihm
-              unbemerkt genähert hat.</hi>
-          </stage>
+          <stage>die während der letzten Worte Ingomars aus dem Hause getreten ist und sich ihm
+            unbemerkt genähert hat.</stage>
           <l>Fort willst du, Ingomar?</l>
         </sp>
         <sp who="#ingomar">
@@ -7159,9 +6613,7 @@
             <l>Nein, du sollst dein Schwert nicht missen;</l>
             <l>Du gabst es mir, ich geb' es dir zurück!</l>
           </lg>
-          <stage>
-            <hi>Sie geht rasch ins Haus ab.</hi>
-          </stage>
+          <stage>Sie geht rasch ins Haus ab.</stage>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR.</speaker>
@@ -7177,9 +6629,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>mit dem Schwerte zurückkehrend.</hi>
-          </stage>
+          <stage>mit dem Schwerte zurückkehrend.</stage>
           <lg>
             <l>Hier ist dein Schwert, und blank, wie du's gegeben,</l>
             <l>Bewahrt' ich dir's! –</l>
@@ -7187,9 +6637,7 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>nach dem Schwerte langend.</hi>
-          </stage>
+          <stage>nach dem Schwerte langend.</stage>
           <l>Hab' Dank!</l>
         </sp>
         <sp who="#parthenia">
@@ -7244,9 +6692,7 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>das Schwert fallen lassend und Ingomar umschlingend.</hi>
-          </stage>
+          <stage>das Schwert fallen lassend und Ingomar umschlingend.</stage>
           <lg>
             <l>Dir folgen, folgen,</l>
             <l>Wohin du gehst; dein Weg soll meiner sein,</l>
@@ -7322,21 +6768,17 @@
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>sie rasch aufhebend.</hi>
-          </stage>
+          <stage>sie rasch aufhebend.</stage>
           <lg>
             <l>Zu meinen Füßen, meine Sklavin! Nein;</l>
             <l>Zwei Stämme einer Wurzel laß uns sein,</l>
             <l>Empor in eines Himmels Wölbung dringend,</l>
             <l>Unlösbar fest in eins die Zweige schlingend.</l>
           </lg>
-          <stage>
-            <hi>Während Ingomar und Parthenia sich eng umschlungen halten, treten Myron und Actäa
-              aus dem Hause.</hi>
-          </stage>
+          <stage>Während Ingomar und Parthenia sich eng umschlungen halten, treten Myron und Actäa
+            aus dem Hause.</stage>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <l>Da sieh nun selbst!</l>
         </sp>
@@ -7350,20 +6792,16 @@
         </sp>
         <sp who="#parthenia">
           <speaker>PARTHENIA</speaker>
-          <stage>
-            <hi>Ingomar umschlungen haltend.</hi>
-          </stage>
+          <stage>Ingomar umschlungen haltend.</stage>
           <l>Nicht ohne ihn!</l>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <l>Mir lähmt's die Glieder!</l>
         </sp>
         <sp who="#myron">
           <speaker>MYRON</speaker>
-          <stage>
-            <hi>zu Ingomar.</hi>
-          </stage>
+          <stage>zu Ingomar.</stage>
           <lg>
             <l>Wie,</l>
             <l>Hab' nicht das Gastrecht ich dir aufgekündet,</l>
@@ -7383,7 +6821,7 @@
           <speaker>MYRON.</speaker>
           <l>Wie, rast ihr, seid ihr toll?</l>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Und sieh nur, dorten</l>
@@ -7397,7 +6835,7 @@
             <l>Das fehlte noch –</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <lg>
             <l>Und sieh nur, sieh, Barbaren</l>
@@ -7412,17 +6850,15 @@
             <l>Gesandte, denk' ich, sind's der Tectosagen!</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <l>Was wird nun werden –</l>
         </sp>
         <sp who="#myron">
           <speaker>MYRON.</speaker>
           <l>Still, da kommen sie!</l>
-          <stage>
-            <hi>Der Timarch mit seinem Gefolge tritt auf in Begleitung Alastors und Novios, die
-              grüne Zweige in den Händen tragen.</hi>
-          </stage>
+          <stage>Der Timarch mit seinem Gefolge tritt auf in Begleitung Alastors und Novios, die
+            grüne Zweige in den Händen tragen.</stage>
         </sp>
         <sp who="#timarch">
           <speaker>TIMARCH.</speaker>
@@ -7438,9 +6874,7 @@
         <sp who="#alastor">
           <speaker>ALASTOR.</speaker>
           <l>Fürwahr, er ist es!</l>
-          <stage>
-            <hi>Auf Ingomar zugehend.</hi>
-          </stage>
+          <stage>Auf Ingomar zugehend.</stage>
           <l>Ingomar!</l>
         </sp>
         <sp who="#ingomar">
@@ -7553,9 +6987,7 @@
         </sp>
         <sp who="#timarch">
           <speaker>TIMARCH</speaker>
-          <stage>
-            <hi>geschmeidig.</hi>
-          </stage>
+          <stage>geschmeidig.</stage>
           <lg>
             <l>Laßt, Freunde,</l>
             <l>Hier auch mein Zeugnis gelten –</l>
@@ -7563,20 +6995,16 @@
         </sp>
         <sp who="#alastor">
           <speaker>ALASTOR.</speaker>
-          <l>Laß <hi>ihn</hi> reden!</l>
+          <l>Laß <emph>ihn</emph> reden!</l>
         </sp>
         <sp who="#timarch">
           <speaker>TIMARCH</speaker>
-          <stage>
-            <hi>ängstlich.</hi>
-          </stage>
+          <stage>ängstlich.</stage>
           <l>Ihr müßt mich hören –</l>
         </sp>
         <sp who="#ingomar">
           <speaker>INGOMAR</speaker>
-          <stage>
-            <hi>zum Timarchen.</hi>
-          </stage>
+          <stage>zum Timarchen.</stage>
           <lg>
             <l>Sei doch ruhig nur;</l>
             <l>Ich brauch' den beiden ja nicht mehr zu sagen,</l>
@@ -7626,10 +7054,8 @@
             <l><pb n="149"/> Dem Werk Gedeihen! Komm denn – doch zuvor</l>
             <l>Ein Wort zu dir noch, wackrer Ingomar!</l>
           </lg>
-          <stage>
-            <hi>Er tritt mit Ingomar einige Schritte in den Vordergrund, während Alastor und Novio
-              sich dem Hintergrund der Bühne zuwenden.</hi>
-          </stage>
+          <stage>Er tritt mit Ingomar einige Schritte in den Vordergrund, während Alastor und Novio
+            sich dem Hintergrund der Bühne zuwenden.</stage>
           <lg>
             <l>Wenn erst zur Tat du deine Hand verweigert,</l>
             <l>Uns beßres Spiel, als wir gehofft, bereitend,</l>
@@ -7639,23 +7065,19 @@
             <l>Und dreißig Unzen Silber, und gewähren</l>
             <l>Die jedes Vorrecht, andern Bürgern gleich!</l>
           </lg>
-          <stage>
-            <hi>Zu Myron.</hi>
-          </stage>
+          <stage>Zu Myron.</stage>
           <l>Hier steht dein Eidam! Alles Glück mit euch!</l>
-          <stage>
-            <hi>Er geht mit den Tectosagen und seinem Gefolge im Hintergrunde der Bühne ab.</hi>
-          </stage>
+          <stage>Er geht mit den Tectosagen und seinem Gefolge im Hintergrunde der Bühne ab.</stage>
         </sp>
         <sp who="#myron">
           <speaker>MYRON.</speaker>
           <lg>
             <l>Nun, Alte, sieh, wer hat nun recht gehabt?</l>
-            <l><hi>Das</hi> ist ein Eidam! Haus und Hof, dazu</l>
+            <l><emph>Das</emph> ist ein Eidam! Haus und Hof, dazu</l>
             <l>Das Bürgerrecht und dreißig Unzen Silber!</l>
           </lg>
         </sp>
-        <sp who="#actäa">
+        <sp who="#actaea">
           <speaker>ACTÄA.</speaker>
           <l>Ein Tectosage bleibt er aber doch!</l>
         </sp>
@@ -7672,10 +7094,8 @@
         <sp who="#parthenia">
           <speaker>PARTHENIA.</speaker>
           <l>So führt die Liebe!</l>
-          <stage>
-            <hi>Während sich die Liebenden umschlingen, und Myron und Actäa hinzutreten, fällt der
-              Vorhang.</hi>
-          </stage>
+          <stage>Während sich die Liebenden umschlingen, und Myron und Actäa hinzutreten, fällt der
+            Vorhang.</stage>
           <pb n="150"/>
         </sp>
       </div>
