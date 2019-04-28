@@ -4,7 +4,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Das goldene Kreuz</title>
+        <title type="main">Das goldene Kreuz</title>
+        <title type="sub">Oper in zwei Aufzügen</title>
         <author key="pnd:101363184">Mosenthal, Salomon Hermann von</author>
       </titleStmt>
       <publicationStmt>
@@ -43,38 +44,37 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="allgemeiner_chor">
-            <persName>ALLGEMEINER CHOR</persName>
-            <persName xml:id="chor">CHOR</persName>
-            <persName xml:id="der_chor">DER CHOR</persName>
+          <personGrp xml:id="chor_der_maedchen" sex="FEMALE">
+            <name>Chor der Mädchen</name>
+          </personGrp>
+          <person xml:id="therese" sex="FEMALE">
+            <persName>Therese</persName>
           </person>
-          <person xml:id="therese">
-            <persName>THERESE</persName>
+          <person xml:id="christine" sex="FEMALE">
+            <persName>Christine</persName>
           </person>
-          <person xml:id="christine">
-            <persName>CHRISTINE</persName>
+          <person xml:id="bombardon" sex="MALE">
+            <persName>Bombardon</persName>
           </person>
-          <person xml:id="bombardon">
-            <persName>BOMBARDON</persName>
+          <person xml:id="gontran" sex="MALE">
+            <persName>Gontran</persName>
           </person>
-          <person xml:id="gontran">
-            <persName>GONTRAN</persName>
+          <person xml:id="colas" sex="MALE">
+            <persName>Colas</persName>
           </person>
-          <person xml:id="colas">
-            <persName>COLAS</persName>
-          </person>
-          <person xml:id="chor_der_männer">
-            <persName>CHOR DER MÄNNER</persName>
-          </person>
-          <person xml:id="chor_der_frauen">
-            <persName>CHOR DER FRAUEN</persName>
-          </person>
-          <person xml:id="chor_der_mädchen">
-            <persName>CHOR DER MÄDCHEN</persName>
-          </person>
-          <person xml:id="chor_der_soldaten">
-            <persName>CHOR DER SOLDATEN</persName>
-          </person>
+          <personGrp xml:id="chor_der_maenner" sex="MALE">
+            <name>Chor der Männer</name>
+          </personGrp>
+          <personGrp xml:id="chor_der_frauen" sex="FEMALE">
+            <name>Chor der Frauen</name>
+          </personGrp>
+          <personGrp xml:id="chor_allgemeiner_chor_alle" sex="UNKNOWN">
+            <name>Chor/Allgemeiner Chor/Alle</name>
+            <name type="variant">Der Chor</name>
+          </personGrp>
+          <personGrp xml:id="chor_der_soldaten" sex="MALE">
+            <name>Chor der Soldaten</name>
+          </personGrp>
         </listPerson>
       </particDesc>
       <textClass>
@@ -87,6 +87,7 @@
       <listChange>
         <change when="2017-01-06">(dlina) file conversion from source</change>
         <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-04-28">(ff) formalities</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -97,8 +98,6 @@
         <head>Das goldene Kreuz</head>
         <head>Oper in zwei Aufzügen</head>
       </div>
-    </front>
-    <body>
       <div type="Dramatis_Personae">
         <castList>
           <head><pb n="34"/> Personen</head>
@@ -111,31 +110,33 @@
           <castItem>Bauern und Bäuerinnen</castItem>
         </castList>
       </div>
-      <div type="corrected_div_castList">
-        <head>Ouvertüre.</head>
-      </div>
+      <set>
+        <p>Ort der Handlung: Dorf bei Melun.</p>
+        <p>Zeit: 1812 und 1815.</p>
+        <p>Uraufführung den 22. Dezember 1875 am Kgl. Opernhause in Berlin.</p>
+      </set>
+    </front>
+    <body>
+      <stage>Ouvertüre.</stage>
       <div type="act">
-        <head>1. Akt</head>
+        <head>Erster Aufzug.</head>
+        <stage>Platz vor Nicolas' Haus.</stage>
+        <stage>Links das Wirtshaus mit Holz-Veranda, dahinter die Mühle. Rechts eine hölzerne
+          Eremitage; davor schattige Baumgänge, unter welchen Tisch und Bänke. Hintergrund hügeliges
+          Terrain, die Giebel einiger Häuser sichtbar, und der Kirchturm.</stage>
+        <stage>Rechts und links vom Zuschauer aus angenommen.</stage>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Therese festlich gekleidet, Christine ernster und einfacher. Chor von Mädchen
-              umgeben sie, zwei Sträuße mit fliegenden Bändern tragend. Introduktion, 16 Takte, dann
-              4 Takte 3/2 damit geht der Vorhang auf.</hi>
-          </stage>
-          <stage>
-            <hi>Chor der jungen Mädchen, wovon zwei je einen Rosmarinstrauß mit bunten Bändern
-              geschmückt tragen und später überreichen. Christine ernst und einfach gekleidet, trägt
-              um den Hals am Samtband ein goldenes Kreuz, in dessen Mitte eine weiße Perle. Therese,
-              im Brautkleid, nimmt mit den Worten </hi>
-          </stage>
-          <stage>
-            <hi>»Dank, ihr Lieben« den ersten Strauß in Empfang.</hi>
-          </stage>
-          <stage>
-            <hi>Nr. 1. Chor der Mädchen.</hi>
-          </stage>
-          <sp who="#chor">
+          <stage>Therese festlich gekleidet, Christine ernster und einfacher. Chor von Mädchen
+            umgeben sie, zwei Sträuße mit fliegenden Bändern tragend. Introduktion, 16 Takte, dann 4
+            Takte 3/2 damit geht der Vorhang auf.</stage>
+          <stage>Chor der jungen Mädchen, wovon zwei je einen Rosmarinstrauß mit bunten Bändern
+            geschmückt tragen und später überreichen. Christine ernst und einfach gekleidet, trägt
+            um den Hals am Samtband ein goldenes Kreuz, in dessen Mitte eine weiße Perle. Therese,
+            im Brautkleid, nimmt mit den Worten »Dank, ihr Lieben« den ersten Strauß in
+            Empfang.</stage>
+          <stage>Nr. 1. Chor der Mädchen.</stage>
+          <sp who="#chor_der_maedchen">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Rosmarin mit bunten Bändern</l>
@@ -163,16 +164,12 @@
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE</speaker>
-            <stage>
-              <hi>unruhig.</hi>
-            </stage>
+            <stage>unruhig.</stage>
             <l>Colas nirgends zu erblicken!</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_der_maedchen">
             <speaker>CHOR</speaker>
-            <stage>
-              <hi>neugierig fragend.</hi>
-            </stage>
+            <stage>neugierig fragend.</stage>
             <lg>
               <l>Colas, Colas nicht zu Haus?</l>
               <l>Sagt, wem geben wir den Strauß?</l>
@@ -184,16 +181,14 @@
               <l>Für den Bruder nimm, Christine,</l>
               <l>Du die Hochzeitsgabe hin.</l>
             </lg>
-            <stage>
-              <hi>Sie gibt ihr den zweiten Strauß.</hi>
-            </stage>
+            <stage>Sie gibt ihr den zweiten Strauß.</stage>
             <lg>
               <l>Doch warum die trübe Miene?</l>
             </lg>
             <l>Lächle, liebe Träumerin!</l>
           </sp>
-          <sp who="#_chor">
-            <speaker> CHOR.</speaker>
+          <sp who="#chor_der_maedchen">
+            <speaker>CHOR.</speaker>
             <lg>
               <l>:|: Nimm den Strauß, bald bringen wir</l>
               <l>Rosmarin zur Hochzeit dir. :|:</l>
@@ -212,9 +207,7 @@
           </sp>
           <sp who="#therese">
             <speaker>THERESE</speaker>
-            <stage>
-              <hi>scherzhaft schmollend.</hi>
-            </stage>
+            <stage>scherzhaft schmollend.</stage>
             <lg>
               <l>Ei, ich bin dir wohl im Wege,</l>
               <l>Nun, das nenn' ich höflich sein.</l>
@@ -228,12 +221,8 @@
               <l>Teure Schwester! Mit euch beiden</l>
               <l>Lebt Christine treu vereint.</l>
             </lg>
-            <stage>
-              <hi>Umarmung.</hi>
-            </stage>
-            <stage>
-              <hi><pb n="36"/> Romanze.</hi>
-            </stage>
+            <stage>Umarmung.</stage>
+            <stage><pb n="36"/> Romanze.</stage>
             <lg>
               <l>Die Eltern starben frühe,</l>
               <l>Und ließen mich und Colas hier allein;</l>
@@ -274,11 +263,11 @@
               <l>Dann bringt man dir den Hochzeitsstrauß,</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_der_maedchen">
             <speaker>CHOR.</speaker>
             <l>Dann bringt man dir den Hochzeitsstrauß.</l>
           </sp>
-          <sp who="#therese #chor">
+          <sp who="#therese #chor_der_maedchen">
             <speaker>THERESE UND CHOR.</speaker>
             <lg>
               <l>Kommt erst der Rechte dir ins Haus,</l>
@@ -288,9 +277,7 @@
           </sp>
           <sp who="#therese">
             <speaker>THERESE</speaker>
-            <stage>
-              <hi>heiter.</hi>
-            </stage>
+            <stage>heiter.</stage>
             <lg>
               <l>Man soll's nicht verschwören,</l>
               <l>Mein herziges Kind!</l>
@@ -319,7 +306,7 @@
               <l>Wenn ich euch glücklich seh'!</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_der_maedchen">
             <speaker>CHOR.</speaker>
             <lg>
               <l>So ging es, so geht es</l>
@@ -327,39 +314,35 @@
               <l>:|: Gott Amor versteht es,</l>
               <l>Er kommt auch zu dir! :|:</l>
             </lg>
-            <stage>
-              <hi>Die Mädchen tanzen ab.</hi>
-            </stage>
+            <stage>Die Mädchen tanzen ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweiter Auftritt.</head>
-          <stage>
-            <hi>Therese. Christine.</hi>
-          </stage>
+          <stage>Therese. Christine.</stage>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <l> Wo nur Colas bleibt; ich fange in der Tat an ängstlich zu werden.</l>
+            <p>Wo nur Colas bleibt; ich fange in der Tat an ängstlich zu werden.</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <p> Aber Närrchen, was soll ihm denn geschehen sein? Auf dem Wege ins Dorf hinüber, bei
+            <p>Aber Närrchen, was soll ihm denn geschehen sein? Auf dem Wege ins Dorf hinüber, bei
               hellem lichten Tage werden ihn keine Räuber anfallen.</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <p> Wer spricht von Räubern? Aber ärger als das! Suzon hat mir erzählt, als sie mit dem
+            <p>Wer spricht von Räubern? Aber ärger als das! Suzon hat mir erzählt, als sie mit dem
               Brot heut früh aus <pb n="38"/> dem Dorfe kamen, daß an der Mairie ein großer Zettel
               angeschlagen sei, und daß Männer und Weiber in größter Aufregung davor ständen.</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <p> Aha, deshalb ist unser neugieriger Colas so schnell hinübergelaufen. Nun, was wird's
+            <p>Aha, deshalb ist unser neugieriger Colas so schnell hinübergelaufen. Nun, was wird's
               sein, eine neue Verordnung des Kaisers, die man proklamiert.</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <p> Und das sagst du so ruhig? Weißt du nicht, was die kaiserlichen Verordnungen seit
+            <p>Und das sagst du so ruhig? Weißt du nicht, was die kaiserlichen Verordnungen seit
               zehn Jahren enthalten? Krieg und Rekrutenaushebung; man greift zu Familienvätern und
               Kindern, um die Lücken der Armee auszufüllen, wenn der Kaiser sie wieder in die
               afrikanischen Wüsten führt, und wenn sie mir unsern Colas in die Rekrutenjacke
@@ -367,49 +350,39 @@
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Was fällt dir ein? Ein einziger Sohn, ein Familienoberhaupt, ein Bräutigam –</l>
+            <p>Was fällt dir ein? Ein einziger Sohn, ein Familienoberhaupt, ein Bräutigam –</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <p> O, das Martialgesetz kümmert sich nicht um Bräute und Familien. Wenn sie mir meinen
+            <p>O, das Martialgesetz kümmert sich nicht um Bräute und Familien. Wenn sie mir meinen
               Colas wegführten –</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <p> Nun, ein bißchen von deinem Colas gehört auch mir. Und zumal heute am Hochzeitstag!
+            <p>Nun, ein bißchen von deinem Colas gehört auch mir. Und zumal heute am Hochzeitstag!
               Du machst mich ängstlich mit deiner kindischen Furcht.</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <l> Kindisch? Wir wollen sehen! ich gehe zur Mairie und muß Gewißheit haben.</l>
+            <p>Kindisch? Wir wollen sehen! ich gehe zur Mairie und muß Gewißheit haben.</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <p> Ja, gehen wir hinunter zur Mairie – aber, das Gasthaus, wenn ein Gast käme –
+            <p>Ja, gehen wir hinunter zur Mairie – aber, das Gasthaus, wenn ein Gast käme –
               meinetwegen – ich muß wissen, was aus meinem Colas wird!</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <lg>
-              <l> Gehen wir! Gehen wir!</l>
-            </lg>
-            <stage>
-              <hi>Beide gehen ab nach rechts.</hi>
-            </stage>
+            <p>Gehen wir! Gehen wir!</p>
+            <stage>Beide gehen ab nach rechts.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <stage>
-            <hi>Militärisches Ritornell.</hi>
-          </stage>
-          <stage>
-            <hi>Vom Hügel links herab kommen Gontran und Bombardon, letzterer in Uniform, mit dem
-              Gewehr, ersterer im Zivilanzug der Zeit, mit Wanderstab und Ränzel.</hi>
-          </stage>
-          <stage>
-            <hi>Nr. 2. Duett.</hi>
-          </stage>
+          <stage>Militärisches Ritornell.</stage>
+          <stage>Vom Hügel links herab kommen Gontran und Bombardon, letzterer in Uniform, mit dem
+            Gewehr, ersterer im Zivilanzug der Zeit, mit Wanderstab und Ränzel.</stage>
+          <stage>Nr. 2. Duett.</stage>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
             <lg>
@@ -430,9 +403,7 @@
               <l>Herr Kamerad, ich bin bereit,</l>
               <l>Wie's Euch beliebt, ich habe Zeit.</l>
             </lg>
-            <stage>
-              <hi>Er setzt sich unter die Bäume.</hi>
-            </stage>
+            <stage>Er setzt sich unter die Bäume.</stage>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
@@ -446,15 +417,11 @@
               <l>Und was erschließt am meisten das Vertrauen?</l>
               <l>Ein Gläschen Wein, ein gutes Gläschen Wein.</l>
               <l>Schon Cicero behauptet das,</l>
-              <l>Er sagt: <hi>In vino veritas</hi>!</l>
+              <l>Er sagt: <emph>In vino veritas</emph>!</l>
             </lg>
-            <stage>
-              <hi>Ruft.</hi>
-            </stage>
+            <stage>Ruft.</stage>
             <l>He! Wirtschaft!</l>
-            <stage>
-              <hi>Er schlägt auf den Tisch.</hi>
-            </stage>
+            <stage>Er schlägt auf den Tisch.</stage>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
@@ -466,14 +433,12 @@
               <l>Nichts mehr davon – beim kühlen Wein</l>
               <l>Soll Glut und Zorn vergessen sein!</l>
               <l>Die Lieb' ist Trug, ich kenne das,</l>
-              <l>Allein: <hi>In vino veritas</hi>!</l>
+              <l>Allein: <emph>In vino veritas</emph>!</l>
             </lg>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON</speaker>
-            <stage>
-              <hi>ihm auf die Schulter schlagend.</hi>
-            </stage>
+            <stage>ihm auf die Schulter schlagend.</stage>
             <lg>
               <l>So hör' ich's gern, Ihr sprecht wie ein Soldat,</l>
               <l>Wer wollte lang' um Weiber klagen!</l>
@@ -509,223 +474,197 @@
               <l>:|: Brav, Kamerad! Schlagt ein, schlagt ein!</l>
               <l>Wir trinken Brüderschaft beim vollen Becher Wein! :|:</l>
             </lg>
-            <stage>
-              <hi>Therese aus dem Dorfe zurückkommend.</hi>
-            </stage>
+            <stage>Therese aus dem Dorfe zurückkommend.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <stage>
-            <hi>Die Vorigen. Therese.</hi>
-          </stage>
+          <stage>Die Vorigen. Therese.</stage>
           <sp who="#therese">
             <speaker>THERESE</speaker>
-            <stage>
-              <hi>ohne die am Tische Sitzenden gleich zu bemerken.</hi>
-            </stage>
-            <p> Ich habe mir's doch überlegt, wie kindisch Christinens Besorgnis ist – sie ließ sich
+            <stage>ohne die am Tische Sitzenden gleich zu bemerken.</stage>
+            <p>Ich habe mir's doch überlegt, wie kindisch Christinens Besorgnis ist – sie ließ sich
               nicht zurückhalten, aber ich dachte, wenn doch vielleicht – Gäste –</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON</speaker>
-            <stage>
-              <hi>auf den Tisch schlagend.</hi>
-            </stage>
-            <l> He! Wirtschaft! Ist denn da alles ausgestorben?</l>
+            <stage>auf den Tisch schlagend.</stage>
+            <p>He! Wirtschaft! Ist denn da alles ausgestorben?</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE</speaker>
-            <stage>
-              <hi>eilig vorkommend und knicksend.</hi>
-            </stage>
-            <l> Da bin ich schon, meine Herren, Ihnen zu dienen!</l>
+            <stage>eilig vorkommend und knicksend.</stage>
+            <p>Da bin ich schon, meine Herren, Ihnen zu dienen!</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON</speaker>
-            <stage>
-              <hi>aufstehend.</hi>
-            </stage>
-            <p> Schau, schau, eine solche Dienerin ist wohl wert, daß man dreimal klopft!
-                <hi>Sappristi</hi>! Sie sind die Wirtin, Madame?</p>
+            <stage>aufstehend.</stage>
+            <p>Schau, schau, eine solche Dienerin ist wohl wert, daß man dreimal klopft!
+                <emph>Sappristi!</emph> Sie sind die Wirtin, Madame?</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Noch nicht Wirtin, noch nicht Madame, aber heute –</l>
+            <p>Noch nicht Wirtin, noch nicht Madame, aber heute –</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Heut? <hi>Sacrebleu</hi>! Und wer ist der glückliche Eroberer?</l>
+            <p>Heut? <emph>Sacrebleu!</emph> Und wer ist der glückliche Eroberer?</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Colas, der Herr des Gasthauses und der Mühle, Ihnen zu dienen, Herr Sergeant.</l>
+            <p>Colas, der Herr des Gasthauses und der Mühle, Ihnen zu dienen, Herr Sergeant.</p>
             <pb n="41"/>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Nun, damit dient er mir eben nicht – Mademoiselle – <hi>für sich</hi> sie ist
-              wirklich – Bombenelement!</l>
+            <p>Nun, damit dient er mir eben nicht – Mademoiselle – <stage>für sich</stage> sie ist
+              wirklich – Bombenelement!</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Sie befehlen – Herr Sergeant?</l>
+            <p>Sie befehlen – Herr Sergeant?</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Wein und zwei Becher, aber der Wein muß so lieblich sein wie – <hi>Er will sie
-                umfassen.</hi>
-            </l>
+            <p>Wein und zwei Becher, aber der Wein muß so lieblich sein wie – <stage>Er will sie
+                umfassen.</stage></p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE</speaker>
-            <stage>
-              <hi>windet sich los und läuft ab ins Gasthaus.</hi>
-            </stage>
-            <l> Ihnen zu dienen!</l>
+            <stage>windet sich los und läuft ab ins Gasthaus.</stage>
+            <p>Ihnen zu dienen!</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <p> Kamerad – aber – <hi>sacrénom</hi> – da sitzt er und schaut in den Tisch statt auf
-              das bildsaubere Mädel – da muß ich sagen, ich bin doch trotz meiner Vierzig ein
+            <p>Kamerad – aber – <emph>sacrénom</emph> – da sitzt er und schaut in den Tisch statt
+              auf das bildsaubere Mädel – da muß ich sagen, ich bin doch trotz meiner Vierzig ein
               anderer Kerl und hab' auch immer Glück bei den Frauen gehabt. Im Regiment nannte man
               mich den »Stürmer«, Schanzen und Mädchen – einerlei – da ist sie – rechts geschaut,
               Kamerad!</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE</speaker>
-            <stage>
-              <hi>ist mit Wein aufgetreten, bedient.</hi>
-            </stage>
-            <l> Ihnen zu dienen, meine Herren – sagen Sie, Herr Sergeant –</l>
+            <stage>ist mit Wein aufgetreten, bedient.</stage>
+            <p>Ihnen zu dienen, meine Herren – sagen Sie, Herr Sergeant –</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON</speaker>
-            <stage>
-              <hi>sitzend.</hi>
-            </stage>
-            <l> Was, mein kleiner Engel?</l>
+            <stage>sitzend.</stage>
+            <p>Was, mein kleiner Engel?</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Was führt Sie – wenn ich fragen darf –</l>
+            <p>Was führt Sie – wenn ich fragen darf –</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <p> Hierher? Der Ruf des Kaisers! In Melun wird ein Bataillon rekrutiert, es geht gegen
+            <p>Hierher? Der Ruf des Kaisers! In Melun wird ein Bataillon rekrutiert, es geht gegen
               Rußland, und trotz meiner doppelten Kapitulation habe ich mich enrollieren lassen.</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Großer Gott! Also doch – und gegen Rußland?</l>
+            <p>Großer Gott! Also doch – und gegen Rußland?</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <p> Ja, Mademoiselle, und um das Eis besser zu passieren, erwärmt man sich mit einem
-              Glase Wein und an dem Feuer solcher funkelnden Augen – <hi>Er will sie umarmen.</hi>
-            </p>
+            <p>Ja, Mademoiselle, und um das Eis besser zu passieren, erwärmt man sich mit einem
+              Glase Wein und an dem Feuer solcher funkelnden Augen – <stage>Er will sie
+                umarmen.</stage></p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE</speaker>
-            <stage>
-              <hi>sich loswindend.</hi>
-            </stage>
-            <p> Herr Sergeant, hier wird nicht im Feuer exerziert. – <hi>Sie geht hinüber.</hi> Und
-              Sie, junger Herr, Sie müssen auch mit nach Rußland?</p>
+            <stage>sich loswindend.</stage>
+            <p>Herr Sergeant, hier wird nicht im Feuer exerziert. – <stage>Sie geht hinüber.</stage>
+              Und Sie, junger Herr, Sie müssen auch mit nach Rußland?</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Gleichviel wohin! Ich erwarte hier die Post nach dem Rhein.</l>
+            <p>Gleichviel wohin! Ich erwarte hier die Post nach dem Rhein.</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Die geht um acht Uhr frühe ab –</l>
+            <p>Die geht um acht Uhr frühe ab –</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> So warte ich bis morgen.</l>
+            <p>So warte ich bis morgen.</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Hier bei uns?</l>
+            <p>Hier bei uns?</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Haben Sie kein Plätzchen für mich?</l>
+            <p>Haben Sie kein Plätzchen für mich?</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Im Hause ist heute Hochzeit – wenn sie mir nicht meinen Colas –</l>
+            <p>Im Hause ist heute Hochzeit – wenn sie mir nicht meinen Colas –</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> So gehe ich weiter –</l>
+            <p>So gehe ich weiter –</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <p> Außer wenn Sie sich mit der Eremitage begnügen <pb n="42"/> wollten, und wer weiß,
-              ob mit der Hochzeit – <hi>Sie weint.</hi>
-            </p>
+            <p>Außer wenn Sie sich mit der Eremitage begnügen <pb n="42"/> wollten, und wer weiß, ob
+              mit der Hochzeit – <stage>Sie weint.</stage></p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Was bewegt Sie so sehr?</l>
+            <p>Was bewegt Sie so sehr?</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <p> Nichts – fragen Sie nicht – o mein Colas, und nach Rußland – Herr Sergeant, muß denn
+            <p>Nichts – fragen Sie nicht – o mein Colas, und nach Rußland – Herr Sergeant, muß denn
               alles nach Rußland gehen?</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Alles, was zwanzig Jahre alt ist und keine Schürze trägt (mit Ausnahme der
-              Mädchen.)</l>
+            <p>Alles, was zwanzig Jahre alt ist und keine Schürze trägt (mit Ausnahme der
+              Mädchen.)</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Und sonst wird keine Ausnahme gemacht?</l>
+            <p>Und sonst wird keine Ausnahme gemacht?</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <p> Wer einen Ersatzmann stellt – freilich – aber wo findet man jetzt einen solchen? Ich
+            <p>Wer einen Ersatzmann stellt – freilich – aber wo findet man jetzt einen solchen? Ich
               möchte gleich bei Ihnen als Ersatzmann einstehen, Mademoiselle.</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <p> O pfui, Sie scherzen, wo zwei armen Mädchen das Herz zerbrochen wird. <hi>Sie geht
-                weinend links ab, ins Gasthaus.</hi>
-            </p>
+            <p>O pfui, Sie scherzen, wo zwei armen Mädchen das Herz zerbrochen wird. <stage>Sie geht
+                weinend links ab, ins Gasthaus.</stage></p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON</speaker>
-            <stage>
-              <hi>geht wieder zum Tisch, setzt sich, schenkt ein und will mit Gontran anstoßen.</hi>
-            </stage>
-            <p> Zweien? <hi>Sacrebleu</hi>! hat der Wirt zwei Bräute? Aber unser Wein wird warm!
+            <stage>geht wieder zum Tisch, setzt sich, schenkt ein und will mit Gontran
+              anstoßen.</stage>
+            <p>Zweien? <emph>Sacrebleu!</emph> hat der Wirt zwei Bräute? Aber unser Wein wird warm!
               Eingeschenkt, Kamerad! Ein scharmantes Demoisellchen! Angestoßen! Hoch! Es leben die
               schönen Frauen!</p>
-            <stage>
-              <hi>Gontran stößt nicht an, wendet sich.</hi>
-            </stage>
+            <stage>Gontran stößt nicht an, wendet sich.</stage>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Wie? Ihr stoßt nicht an – Mordelement! Ihr haßt die schönen Frauen?</l>
+            <p>Wie? Ihr stoßt nicht an – Mordelement! Ihr haßt die schönen Frauen?</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <p> Hassen? Ich verachte sie, alle, alle; geht, laßt mich; warum in der Wunde wühlen,
-              die Euer guter Humor eben notdürftig geheilt.</p>
+            <p>Hassen? Ich verachte sie, alle, alle; geht, laßt mich; warum in der Wunde wühlen, die
+              Euer guter Humor eben notdürftig geheilt.</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <p> Nun, ruhig Blut, Kamerad; warum habt Ihr mir nicht gesagt, was Euch quält – kommt,
+            <p>Nun, ruhig Blut, Kamerad; warum habt Ihr mir nicht gesagt, was Euch quält – kommt,
               angestoßen, Freundschaft und Vertrauen! Nun, heraus damit, Ihr habt bittre Erfahrungen
               gemacht?</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <p> Erfahrungen? Eine, aber die genügt, das ganze Geschlecht verachten zu lernen. Ein
+            <p>Erfahrungen? Eine, aber die genügt, das ganze Geschlecht verachten zu lernen. Ein
               Mädchen, das ich für einen Engel hielt, das ich von Kindheit an liebte, für dessen
               Treue ich meine Seligkeit verschworen hätte – ich Tor – ein Jahr rief mich fort nach
               dem Süden wo meine einzige teure Schwester erkrankt war, und als ich zurückkehrte nach
@@ -733,36 +672,32 @@
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Desertiert – pfui – aber noch besser vor als nach der Hochzeit.</l>
+            <p>Desertiert – pfui – aber noch besser vor als nach der Hochzeit.</p>
             <pb n="43"/>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Ich wollte mir eine Kugel vor den Kopf –</l>
+            <p>Ich wollte mir eine Kugel vor den Kopf –</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Unsinn, die spart man für andere auf.</l>
+            <p>Unsinn, die spart man für andere auf.</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <p> Oder ihm, dem Rivalen, aber was konnte er dafür. Ich sah sie beide, sie waren
+            <p>Oder ihm, dem Rivalen, aber was konnte er dafür. Ich sah sie beide, sie waren
               glücklich, unglücklich ich allein. Da beschloß ich, Paris, Frankreich zu fliehen und
               in der Ferne Zerstreuung und Vergessenheit zu suchen!</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Und ein andres, treueres Herz!</l>
+            <p>Und ein andres, treueres Herz!</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <lg>
-              <l> Es gibt kein treues Frauenherz auf Erden, diese Überzeugung ist's, die mich
-                unglücklich macht.</l>
-            </lg>
-            <stage>
-              <hi>Nr. 3. Romanze.</hi>
-            </stage>
+            <p>Es gibt kein treues Frauenherz auf Erden, diese Überzeugung ist's, die mich
+              unglücklich macht.</p>
+            <stage>Nr. 3. Romanze.</stage>
             <lg>
               <l>Was ist Leben ohne Liebe,</l>
               <l>Ohne Treue und Vertraun?</l>
@@ -791,33 +726,25 @@
               <l>:|: Grab meiner Freuden, :|:</l>
               <l>:|: Fahr wohl, fahr wohl! :|:</l>
             </lg>
-            <stage>
-              <hi>Er geht ab in die Eremitage.</hi>
-            </stage>
+            <stage>Er geht ab in die Eremitage.</stage>
             <pb n="44"/>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <p> Jetzt steh' ich, wie einst der große Sergeant Herkules, am Scheidewege. Soll ich den
+            <p>Jetzt steh' ich, wie einst der große Sergeant Herkules, am Scheidewege. Soll ich den
               Bräutigam über die verlorene Braut trösten, oder den Schnurrbart drehend die schöne
               Braut über den Verlust des Bräutigams zu trösten versuchen? – Pfui! – Bombardon! Wie
-              kannst du dich besinnen? Der Kamerad hat den Vorrang! <hi>Er geht ab in die Eremitage,
-                nimmt aber sein Gewehr sowie Stock und Ränzel des Gontran mit.</hi>
-            </p>
+              kannst du dich besinnen? Der Kamerad hat den Vorrang! <stage>Er geht ab in die
+                Eremitage, nimmt aber sein Gewehr sowie Stock und Ränzel des Gontran
+              mit.</stage></p>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
-          <stage>
-            <hi>Rührendes Ritornell.</hi>
-          </stage>
-          <stage>
-            <hi>Vom Hügel herab Colas, eine Soldatenmütze auf dem Kopf, Christine hält ihn fest
-              umklammert. Später Gontran. Bombardon. Therese.</hi>
-          </stage>
-          <stage>
-            <hi>Nr. 4. Duo, Trio, Quintett.</hi>
-          </stage>
+          <stage>Rührendes Ritornell.</stage>
+          <stage>Vom Hügel herab Colas, eine Soldatenmütze auf dem Kopf, Christine hält ihn fest
+            umklammert. Später Gontran. Bombardon. Therese.</stage>
+          <stage>Nr. 4. Duo, Trio, Quintett.</stage>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
             <l>Courage! Kind, such dich zu fassen.</l>
@@ -854,13 +781,9 @@
           <sp who="#colas">
             <speaker>COLAS.</speaker>
             <l>Man faßt ihn leicht</l>
-            <stage>
-              <hi>Beiseite.</hi>
-            </stage>
+            <stage>Beiseite.</stage>
             <l>ach, wenn man muß!</l>
-            <stage>
-              <hi>Zu Christine.</hi>
-            </stage>
+            <stage>Zu Christine.</stage>
             <lg>
               <l>Ganz Rußland gilt es zu gewinnen,</l>
               <l>Und da – begreifst du – braucht man mich!</l>
@@ -900,7 +823,7 @@
               <l>Lieg' ich vielleicht in Rußland tot!</l>
             </lg>
           </sp>
-          <sp who="#_christine">
+          <sp who="#christine">
             <speaker><pb n="45"/> CHRISTINE.</speaker>
             <l>Ha, welch ein Wort!</l>
           </sp>
@@ -921,9 +844,7 @@
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN</speaker>
-            <stage>
-              <hi>am Fenster.</hi>
-            </stage>
+            <stage>am Fenster.</stage>
             <lg>
               <l>Wie rührend klingen diese Töne,</l>
               <l>Welch Antlitz, klar wie Sonnenschein!</l>
@@ -931,9 +852,7 @@
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON</speaker>
-            <stage>
-              <hi>hinter ihm.</hi>
-            </stage>
+            <stage>hinter ihm.</stage>
             <lg>
               <l>Seht, Kamerad, die zweite Schöne,</l>
               <l>Das wird gewiß die Schwester sein!</l>
@@ -941,9 +860,7 @@
           </sp>
           <sp who="#therese">
             <speaker>THERESE</speaker>
-            <stage>
-              <hi>tritt auf.</hi>
-            </stage>
+            <stage>tritt auf.</stage>
             <l>Colas! Was seh' ich – weh und ach!</l>
           </sp>
           <sp who="#colas">
@@ -959,9 +876,7 @@
           </sp>
           <sp who="#colas">
             <speaker>COLAS</speaker>
-            <stage>
-              <hi>kleinlaut.</hi>
-            </stage>
+            <stage>kleinlaut.</stage>
             <l>Heute noch!</l>
           </sp>
           <sp who="#therese">
@@ -983,9 +898,9 @@
             <speaker>CHRISTINE.</speaker>
             <l>Und mir!</l>
           </sp>
-          <sp who="#_therese #christine_ihn_umklammernd_">
-            <speaker> THERESE UND CHRISTINE <hi>ihn umklammernd.</hi>
-            </speaker>
+          <sp who="#therese #christine">
+            <speaker>THERESE UND CHRISTINE</speaker>
+            <stage>ihn umklammernd.</stage>
             <lg>
               <l>:|: Wir lassen dich nicht fortmarschieren,</l>
               <l>Nur die Gewalt bringt dich von hier! :|:</l>
@@ -993,9 +908,7 @@
           </sp>
           <sp who="#colas">
             <speaker>COLAS</speaker>
-            <stage>
-              <hi>kläglich.</hi>
-            </stage>
+            <stage>kläglich.</stage>
             <lg>
               <l>:|: Da nützt nicht mehr das Lamentieren,</l>
               <l>Ich bin nun einmal Grenadier. :|:</l>
@@ -1017,9 +930,9 @@
             <speaker>THERESE.</speaker>
             <l>Er soll nicht meinen Jammer sehen.</l>
           </sp>
-          <sp who="#_gontran_am_fenster_ohne_von_christine_gesehen_zu_sein_">
-            <speaker> GONTRAN <hi>am Fenster, ohne von Christine gesehen zu sein.</hi>
-            </speaker>
+          <sp who="#gontran">
+            <speaker>GONTRAN</speaker>
+            <stage>am Fenster, ohne von Christine gesehen zu sein.</stage>
             <lg>
               <l>:|: Dies Auge mild und tränenschwer,</l>
               <l>Wer könnt' es ohne Rührung sehn? :|:</l>
@@ -1049,9 +962,7 @@
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE</speaker>
-            <stage>
-              <hi>gegen die Eremitage gewandt, mit gefalteten Händen.</hi>
-            </stage>
+            <stage>gegen die Eremitage gewandt, mit gefalteten Händen.</stage>
             <lg>
               <l>Du, der du Waisen Schutz und Wehr,</l>
               <l>:|: Allmächtiger! Erhöre du mein Flehen,</l>
@@ -1089,68 +1000,60 @@
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <p> Also Kinder, Courage, die große Armee verlangt nach mir; jeder Soldat trägt einen
-              Marschallstab in der Tasche, und wenn ich zurückkehre, mache ich dich <hi>Zu
-                Therese.</hi> zur Marschallin, und dich <hi>Zu Christine.</hi> zu meiner
+            <p>Also Kinder, Courage, die große Armee verlangt nach mir; jeder Soldat trägt einen
+              Marschallstab in der Tasche, und wenn ich zurückkehre, mache ich dich <stage>Zu
+                Therese.</stage> zur Marschallin, und dich <stage>Zu Christine.</stage> zu meiner
               Generaladjutantin.</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON</speaker>
-            <stage>
-              <hi>tritt bei den letzten Worten aus der Eremitage, Gewehr im Arm.</hi>
-            </stage>
-            <p> So ist's recht, wackrer Rekrut, so muß ein braver Soldat denken, und ihr schönen
+            <stage>tritt bei den letzten Worten aus der Eremitage, Gewehr im Arm.</stage>
+            <p>So ist's recht, wackrer Rekrut, so muß ein braver Soldat denken, und ihr schönen
               Kinder bewährt euch jetzt als wackere Töchter des Vaterlands.</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Sie haben gut reden, Herr Sergeant, Sie stehen nicht am Vorabend der Hochzeit.</l>
+            <p>Sie haben gut reden, Herr Sergeant, Sie stehen nicht am Vorabend der Hochzeit.</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <p> Weiß man das, Mademoiselle? Ich möchte auch lieber als Gefangener in solchen Banden
-              liegen. Aber wenn die Trommel ruft! <hi>Ferner Trommelschlag.</hi> Horch, man bildet
-              schon die Kompagnie.</p>
+            <p>Weiß man das, Mademoiselle? Ich möchte auch lieber als Gefangener in solchen Banden
+              liegen. Aber wenn die Trommel ruft! <stage>Ferner Trommelschlag.</stage> Horch, man
+              bildet schon die Kompagnie.</p>
             <pb n="47"/>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Und wenn sich ein Stellvertreter für meinen Colas –</l>
+            <p>Und wenn sich ein Stellvertreter für meinen Colas –</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Stellvertreter! – ja freilich, aber –</l>
+            <p>Stellvertreter! – ja freilich, aber –</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE</speaker>
-            <stage>
-              <hi>aufschreiend.</hi>
-            </stage>
-            <l> Stellvertreter? Wenn sich einer fände?</l>
+            <stage>aufschreiend.</stage>
+            <p>Stellvertreter? Wenn sich einer fände?</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Ja freilich, dann wäre er frei, aber wo finden Sie den, wenn Sie ihn nicht vom
-              Himmel herunterholen?</l>
+            <p>Ja freilich, dann wäre er frei, aber wo finden Sie den, wenn Sie ihn nicht vom Himmel
+              herunterholen?</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <l> O Gott!</l>
+            <p>O Gott!</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <p> Drum vorwärts, junger Held, die Trommel ruft. Kurzen Abschied, frohen Humor, frische
-              Courage; das Soldatenleben, <hi>sappristi</hi>, wird dir schon gefallen.</p>
-            <stage>
-              <hi>Nr. 5. Arie.</hi>
-            </stage>
+            <p>Drum vorwärts, junger Held, die Trommel ruft. Kurzen Abschied, frohen Humor, frische
+              Courage; das Soldatenleben, <emph>sappristi</emph>, wird dir schon gefallen.</p>
+            <stage>Nr. 5. Arie.</stage>
             <lg>
               <l>:|: Bombombom; trarara,</l>
               <l>In Reih' und Glied gestanden, :|:</l>
             </lg>
-            <stage>
-              <hi>Zu Colas.</hi>
-            </stage>
+            <stage>Zu Colas.</stage>
             <lg>
               <l>Gewehr im Arm, Kopf in die Höh',</l>
               <l>:|: So marschiert die große Armee</l>
@@ -1160,13 +1063,9 @@
               <l>Sie kennt nicht Rückzug, nicht Pardon,</l>
               <l>Steht lust'gen Muts im Feuer.</l>
             </lg>
-            <stage>
-              <hi>Mit Colas exerzierend.</hi>
-            </stage>
+            <stage>Mit Colas exerzierend.</stage>
             <l>Bombombom usw.</l>
-            <stage>
-              <hi>Zu Therese gewendet.</hi>
-            </stage>
+            <stage>Zu Therese gewendet.</stage>
             <lg>
               <l>Und kehrt man heim mit Sieg gekrönt,</l>
               <l>Von Pulver schwarz und schartig,</l>
@@ -1180,71 +1079,54 @@
               <l>:|: So ergibt sich die große Armee</l>
               <l>Allein zu ew'gen Banden! :|:</l>
             </lg>
-            <stage>
-              <hi>Er geht nach hinten.</hi>
-            </stage>
+            <stage>Er geht nach hinten.</stage>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON</speaker>
-            <stage>
-              <hi>umkehrend.</hi>
-            </stage>
-            <p> Beim zweiten Trommelzeichen rangiert sich die Kompagnie; beim dritten wird
-              abmarschiert. <pb n="48"/> Vorwärts, junger Held, ich erwarte dich. <hi>Er geht ab
-                nach rechts.</hi>
-            </p>
+            <stage>umkehrend.</stage>
+            <p>Beim zweiten Trommelzeichen rangiert sich die Kompagnie; beim dritten wird
+              abmarschiert. <pb n="48"/> Vorwärts, junger Held, ich erwarte dich. <stage>Er geht ab
+                nach rechts.</stage></p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Also, schnürt mir mein Bündelchen, und dann in Gottes Namen. <hi>Er will ins
-                Haus.</hi>
-            </l>
+            <p>Also, schnürt mir mein Bündelchen, und dann in Gottes Namen. <stage>Er will ins
+                Haus.</stage></p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE</speaker>
-            <stage>
-              <hi>die in Nachdenken versunken stand, plötzlich.</hi>
-            </stage>
-            <l> Halt, Colas, <hi>sie hält ihn zurück</hi> Gott gibt mir einen Gedanken, der dich uns
-              erhält!</l>
+            <stage>die in Nachdenken versunken stand, plötzlich.</stage>
+            <p>Halt, Colas, <stage>sie hält ihn zurück</stage> Gott gibt mir einen Gedanken, der
+              dich uns erhält!</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN</speaker>
-            <stage>
-              <hi>aus der Eremitage tretend, ungesehen.</hi>
-            </stage>
-            <lg>
-              <l> Es ist Zeit, daß ich das Feld räume, wenn nicht aufs neue diese Augen mich
-                berücken sollen!</l>
-            </lg>
-            <stage>
-              <hi>Bauern und Bäuerinnen treten im Hintergrunde auf, die jungen Männer voran.</hi>
-            </stage>
+            <stage>aus der Eremitage tretend, ungesehen.</stage>
+            <p>Es ist Zeit, daß ich das Feld räume, wenn nicht aufs neue diese Augen mich berücken
+              sollen!</p>
+            <stage>Bauern und Bäuerinnen treten im Hintergrunde auf, die jungen Männer
+              voran.</stage>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <p> Hört mich! Unter den Glücklichen unseres Dorfes, die das Los nicht getroffen, sind
+            <p>Hört mich! Unter den Glücklichen unseres Dorfes, die das Los nicht getroffen, sind
               viele, die mich seit Jahren umworben und mir Liebe zugeschworen haben, ich will –</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Du wolltest –</l>
+            <p>Du wolltest –</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <p> Ah, da kommen sie zur rechten Zeit! Freunde, Mathieu, Joseph, Seraphin, Claude Marie
+            <p>Ah, da kommen sie zur rechten Zeit! Freunde, Mathieu, Joseph, Seraphin, Claude Marie
               – um Gottes willen! Hört mich an!</p>
           </sp>
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <stage>
-            <hi>Die Vorigen ohne Bombardon. Chor von Bauern und Bäuerinnen.</hi>
-          </stage>
-          <stage>
-            <hi>Nr. 6. Chor und Ensemble.</hi>
-          </stage>
-          <sp who="#chor_der_männer #frauen">
+          <stage>Die Vorigen ohne Bombardon. Chor von Bauern und Bäuerinnen.</stage>
+          <stage>Nr. 6. Chor und Ensemble.</stage>
+          <sp who="#chor_der_maenner #chor_der_frauen">
             <speaker>CHOR DER MÄNNER UND FRAUEN.</speaker>
             <lg>
               <l>:|: O seht die kummervolle Miene,</l>
@@ -1253,11 +1135,9 @@
               <l>Man raubt den Bruder dir, den Freund. :|:</l>
             </lg>
           </sp>
-          <sp who="#chor_der_männer">
+          <sp who="#chor_der_maenner">
             <speaker>CHOR DER MÄNNER</speaker>
-            <stage>
-              <hi>galant.</hi>
-            </stage>
+            <stage>galant.</stage>
             <lg>
               <l>Was wünschen Sie, Mamsell Christine?</l>
               <l><pb n="49"/> Sie wissen ja, wie gern ich diene,</l>
@@ -1276,8 +1156,10 @@
               <l>Ihr habt stets Freundlichkeit geübt –</l>
               <l>Nun endlich ist die Zeit gekommen,</l>
               <l>Beweise denn mir, wer mich liebt!</l>
-              <l> THERESE, COLAS, CHOR.</l>
             </lg>
+          </sp>
+          <sp who="#therese #colas #chor_allgemeiner_chor_alle">
+            <speaker>THERESE, COLAS, CHOR.</speaker>
             <lg>
               <l>Was hat sie vor? – was sie da spricht –</l>
               <l>Beweisen? – Ich begreif' es nicht! –</l>
@@ -1285,15 +1167,13 @@
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN</speaker>
-            <stage>
-              <hi>ungesehen.</hi>
-            </stage>
+            <stage>ungesehen.</stage>
             <lg>
               <l>Fort will ich und vermag es nicht,</l>
               <l>Du holdes Engelsangesicht.</l>
             </lg>
           </sp>
-          <sp who="#chor_der_männer">
+          <sp who="#chor_der_maenner">
             <speaker>CHOR DER MÄNNER.</speaker>
             <l>Was wünschen Sie, Mamsell Christine usw.</l>
           </sp>
@@ -1306,31 +1186,27 @@
               <l>Daß ich als Gattin dem gehöre,</l>
               <l>Der als Ersatz für ihn sich stellt!</l>
             </lg>
-            <stage>
-              <hi>Glockenläuten.</hi>
-            </stage>
+            <stage>Glockenläuten.</stage>
           </sp>
-          <sp who="#_colas">
-            <speaker> COLAS.</speaker>
+          <sp who="#colas">
+            <speaker>COLAS.</speaker>
             <lg>
               <l>Halt ein! Dich trifft zu spät die Reue!</l>
               <l>Ich duld' es nicht – nein, nein, nein, nein.</l>
             </lg>
           </sp>
-          <sp who="#_gontran">
-            <speaker> GONTRAN.</speaker>
+          <sp who="#gontran">
+            <speaker>GONTRAN.</speaker>
             <l>O Bild der Zärtlichkeit und Treue!</l>
           </sp>
-          <sp who="#_therese">
-            <speaker> THERESE.</speaker>
+          <sp who="#therese">
+            <speaker>THERESE.</speaker>
             <l>Du opferst dich – was fällt dir ein!</l>
           </sp>
-          <sp who="#_christine">
-            <speaker> CHRISTINE.</speaker>
+          <sp who="#christine">
+            <speaker>CHRISTINE.</speaker>
             <l>Das Ave soll mein Zeuge sein!</l>
-            <stage>
-              <hi>Sie nimmt das Kreuz vom Halse.</hi>
-            </stage>
+            <stage>Sie nimmt das Kreuz vom Halse.</stage>
             <lg>
               <l>Dies goldne Kreuz, der Mutter teures Pfand,</l>
               <l>Mög er als Zeichen meines Schwurs bewahren,</l>
@@ -1338,14 +1214,12 @@
               <l>:|: Dem reich' ich am Altare Herz und Hand! :|:</l>
             </lg>
           </sp>
-          <sp who="#_gontran">
+          <sp who="#gontran">
             <speaker><pb n="50"/> GONTRAN.</speaker>
             <l>Des Himmels Ruf hör' ich erklingen!</l>
-            <stage>
-              <hi>Er verschwindet.</hi>
-            </stage>
+            <stage>Er verschwindet.</stage>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_allgemeiner_chor_alle">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Hört, hört!</l>
@@ -1356,12 +1230,10 @@
             <speaker>COLAS.</speaker>
             <l>Du darfst mir nicht solch Opfer bringen!</l>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_allgemeiner_chor_alle">
             <speaker>CHOR.</speaker>
             <l>:|: Ist keiner, der das Pfand begehrt? :|:</l>
-            <stage>
-              <hi>Sich gegenseitig fragend.</hi>
-            </stage>
+            <stage>Sich gegenseitig fragend.</stage>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
@@ -1372,15 +1244,11 @@
               <l>Auch würdig dieses Preises sei!</l>
               <l>Dies goldne Kreuz usw.</l>
             </lg>
-            <stage>
-              <hi>Die Glocke schweigt. Pause.</hi>
-            </stage>
+            <stage>Die Glocke schweigt. Pause.</stage>
           </sp>
           <sp who="#chor_der_frauen">
             <speaker>CHOR DER FRAUEN</speaker>
-            <stage>
-              <hi>unter sich.</hi>
-            </stage>
+            <stage>unter sich.</stage>
             <lg>
               <l>:|: Nein, nein, nein, nein,</l>
               <l>Das darf nicht sein! :|:</l>
@@ -1389,9 +1257,7 @@
               <l>:|: Nein, nein, nein, nein, :|:</l>
               <l>Das darf nicht sein!</l>
             </lg>
-            <stage>
-              <hi>Sie eilen zu den Männern.</hi>
-            </stage>
+            <stage>Sie eilen zu den Männern.</stage>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
@@ -1400,7 +1266,7 @@
               <l>Soll denn mein Flehn vergebens sein?</l>
             </lg>
           </sp>
-          <sp who="#allgemeiner_chor">
+          <sp who="#chor_allgemeiner_chor_alle">
             <speaker>ALLGEMEINER CHOR.</speaker>
             <lg>
               <l>Solche Probe – meiner Treu –</l>
@@ -1414,71 +1280,55 @@
               <l>:|: Möchte sehen, :|:</l>
               <l>:|: Wer das goldne Kreuz gewinne. :|:</l>
             </lg>
-            <stage>
-              <hi>Mit ironischer Freundlichkeit unter Verbeugungen.</hi>
-            </stage>
+            <stage>Mit ironischer Freundlichkeit unter Verbeugungen.</stage>
             <lg>
               <l>:|: Gute Nacht, :|: Mamsell Christine!</l>
             </lg>
-            <stage>
-              <hi>Chor geht ab nach rechts.</hi>
-            </stage>
+            <stage>Chor geht ab nach rechts.</stage>
             <pb n="51"/>
           </sp>
         </div>
         <div type="scene">
           <head>Siebenter Auftritt.</head>
-          <stage>
-            <hi>Die Vorigen ohne Chor, dann Bombardon und Chor.</hi>
-          </stage>
+          <stage>Die Vorigen ohne Chor, dann Bombardon und Chor.</stage>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <p> Da hast du's! Sapperment! Stellt meine Courage nicht noch länger auf die Probe! Es
+            <p>Da hast du's! Sapperment! Stellt meine Courage nicht noch länger auf die Probe! Es
               ist auch eine kuriose Zumutung, sich für einen andern totschießen zu lassen, um dann
-              zu heiraten! <hi>Ferner Trommelschlag.</hi> Basta! Das zweite Trommelzeichen! Die
-              Kompagnie rangiert sich. Mein Reisebündel, meinen Abschiedskuß – noch einen
-              Abschiedskuß! <hi>Küßt erst Therese, dann Christine.</hi> Christine, Schwester, auch
-              einen Abschiedskuß – ach, da kommt der Sergeant, mich zu holen. – Vorwärts, Sergeant,
-              die große Armee ist bereit.</p>
-            <stage>
-              <hi>Chor der jungen Mädchen mit Bombardon über den Hügel; sie bleiben im Hintergrunde
-                stehen.</hi>
-            </stage>
+              zu heiraten! <stage>Ferner Trommelschlag.</stage> Basta! Das zweite Trommelzeichen!
+              Die Kompagnie rangiert sich. Mein Reisebündel, meinen Abschiedskuß – noch einen
+              Abschiedskuß! <stage>Küßt erst Therese, dann Christine.</stage> Christine, Schwester,
+              auch einen Abschiedskuß – ach, da kommt der Sergeant, mich zu holen. – Vorwärts,
+              Sergeant, die große Armee ist bereit.</p>
+            <stage>Chor der jungen Mädchen mit Bombardon über den Hügel; sie bleiben im Hintergrunde
+              stehen.</stage>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON</speaker>
-            <stage>
-              <hi>auf dem Hügel.</hi>
-            </stage>
-            <l> Halt!</l>
+            <stage>auf dem Hügel.</stage>
+            <p>Halt!</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Was halt – wenn die Kompagnie marschiert?</l>
+            <p>Was halt – wenn die Kompagnie marschiert?</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON</speaker>
-            <stage>
-              <hi>vorkommend.</hi>
-            </stage>
-            <l> Die Kompagnie wird ohne ihn marschieren.</l>
+            <stage>vorkommend.</stage>
+            <p>Die Kompagnie wird ohne ihn marschieren.</p>
           </sp>
-          <sp who="#alle_drei">
+          <sp who="#colas #therese #christine">
             <speaker>ALLE DREI.</speaker>
-            <l> Was soll das bedeuten?</l>
+            <p>Was soll das bedeuten?</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <p> Einen Auftrag an Sie, schöne Demoiselle, liebevolle Schwester. Lassen Sie mich aus
+            <p>Einen Auftrag an Sie, schöne Demoiselle, liebevolle Schwester. Lassen Sie mich aus
               Ihren Händen das goldene Kreuz empfangen, das Sie jenem zusagt, der sich für Ihren
               Bruder als Ersatz bietet! Der Ersatzmann hat sich gestellt!</p>
-            <stage>
-              <hi>Allgemeine Bewegung.</hi>
-            </stage>
-            <stage>
-              <hi>Nr. 7. Finale.</hi>
-            </stage>
           </sp>
+          <stage>Allgemeine Bewegung.</stage>
+          <stage>Nr. 7. Finale.</stage>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
             <lg>
@@ -1545,9 +1395,7 @@
               <l>Kann er für mich sein Leben wagen,</l>
               <l>Sei auch das meine ihm geweiht.</l>
             </lg>
-            <stage>
-              <hi>Zu Bombardon, mit Begeisterung.</hi>
-            </stage>
+            <stage>Zu Bombardon, mit Begeisterung.</stage>
             <lg>
               <l>Nehmt hin das Kreuz, in seine Hand</l>
               <l>Legt es als meines Schwures Pfand;</l>
@@ -1563,11 +1411,9 @@
               <l>Und nun seid lustig, liebe Leute,</l>
               <l>Und feiert eure Hochzeit heute!</l>
             </lg>
-            <stage>
-              <hi>Die Mädchen kommen nach vorn. Einige winken, worauf der ganze Bauernchor auftritt.
-                Während des Chorgesanges der Mädchen wird der Braut der Kranz aufgesetzt und das
-                Bukett überreicht.</hi>
-            </stage>
+            <stage>Die Mädchen kommen nach vorn. Einige winken, worauf der ganze Bauernchor
+              auftritt. Während des Chorgesanges der Mädchen wird der Braut der Kranz aufgesetzt und
+              das Bukett überreicht.</stage>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
@@ -1579,7 +1425,7 @@
               <pb n="53"/>
             </lg>
           </sp>
-          <sp who="#chor_der_mädchen">
+          <sp who="#chor_der_maedchen">
             <speaker>CHOR DER MÄDCHEN.</speaker>
             <lg>
               <l>Herbei, ihr Leutchen, all' herbei,</l>
@@ -1587,9 +1433,7 @@
               <l>Geschwind den Strauß, den Hochzeitskranz,</l>
               <l>Und fliegt zum lust'gen Hochzeitstanz! :|:</l>
             </lg>
-            <stage>
-              <hi>Tanzmusik. Dann Trommelwirbel.</hi>
-            </stage>
+            <stage>Tanzmusik. Dann Trommelwirbel.</stage>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
@@ -1600,9 +1444,7 @@
               <l>Pardon!</l>
               <l>Den Abschiedskuß für Bombardon.</l>
             </lg>
-            <stage>
-              <hi>Er küßt Therese. Dann zu Christine, salutierend.</hi>
-            </stage>
+            <stage>Er küßt Therese. Dann zu Christine, salutierend.</stage>
             <l>Mademoiselle – ich grüße Sie.</l>
           </sp>
           <sp who="#christine">
@@ -1615,9 +1457,7 @@
           </sp>
           <sp who="#chor_der_soldaten">
             <speaker>CHOR DER SOLDATEN</speaker>
-            <stage>
-              <hi>hinter der Szene.</hi>
-            </stage>
+            <stage>hinter der Szene.</stage>
             <l>Plan, plan, rataplan.</l>
           </sp>
           <sp who="#bombardon">
@@ -1626,12 +1466,10 @@
               <l>Horch, schon marschiert die Kompagnie!</l>
               <l>Marsch! Kehrt! Lebt wohl, auf Wiedersehn!</l>
             </lg>
-            <stage>
-              <hi>Die Rekruten, in Blusen mit Soldatenmützen, Ränzel auf dem Rücken, Stöcke in der
-                Hand, treten im Marschtempo auf, ein Tambour voran, zwei Soldaten in der Uniform
-                Bombardons mit den Gewehren auf der Schulter als Eskorte. Rekruten und Soldaten
-                stellen sich im Hintergrunde auf.</hi>
-            </stage>
+            <stage>Die Rekruten, in Blusen mit Soldatenmützen, Ränzel auf dem Rücken, Stöcke in der
+              Hand, treten im Marschtempo auf, ein Tambour voran, zwei Soldaten in der Uniform
+              Bombardons mit den Gewehren auf der Schulter als Eskorte. Rekruten und Soldaten
+              stellen sich im Hintergrunde auf.</stage>
           </sp>
           <sp who="#chor_der_soldaten">
             <speaker>CHOR DER SOLDATEN.</speaker>
@@ -1646,9 +1484,7 @@
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON</speaker>
-            <stage>
-              <hi>auf dem Hügel.</hi>
-            </stage>
+            <stage>auf dem Hügel.</stage>
             <lg>
               <l>Lebt wohl, ihr Mädchen hold und fein,</l>
               <l>Leb wohl, du Braut im Hochzeitskranze,</l>
@@ -1659,7 +1495,7 @@
               <l>Plan, plan, plan, rataplan!</l>
             </lg>
           </sp>
-          <sp who="#_christine">
+          <sp who="#christine">
             <speaker><pb n="54"/> CHRISTINE.</speaker>
             <lg>
               <l>Könnt' ich ihn sehen,</l>
@@ -1668,8 +1504,8 @@
             </lg>
             <l>Folgt ihm zum Streit. :|:</l>
           </sp>
-          <sp who="#_therese">
-            <speaker> THERESE.</speaker>
+          <sp who="#therese">
+            <speaker>THERESE.</speaker>
             <lg>
               <l>Rasch, liebe Gäste,</l>
               <l>Zum Hochzeitsfeste,</l>
@@ -1677,8 +1513,8 @@
               <l>'s ist höchste Zeit. :|:</l>
             </lg>
           </sp>
-          <sp who="#_colas">
-            <speaker> COLAS.</speaker>
+          <sp who="#colas">
+            <speaker>COLAS.</speaker>
             <lg>
               <l>Rasch, liebe Gäste,</l>
               <l>Zum Hochzeitsfeste,</l>
@@ -1686,30 +1522,28 @@
               <l>Hast mich befreit.</l>
             </lg>
           </sp>
-          <sp who="#_therese">
-            <speaker> THERESE.</speaker>
+          <sp who="#therese">
+            <speaker>THERESE.</speaker>
             <lg>
               <l>Dir danken wir den Festesglanz,</l>
               <l>Auf, schmücke dich zum Hochzeitstanz.</l>
             </lg>
-            <stage>
-              <hi>Bombardon stellt sich an die Spitze des Zuges und marschiert mit ihm ab. – Gleich
-                darauf treten die Dorfmusikanten – ein Geiger, ein Bassist, ein Flötist, ein
-                Klarinettist usw., hinter ihnen ein Zug Tänzer und Tänzerinnen auf. Die Musikanten
-                stellen sich rechts auf Tischen und Stühlen auf. Allgemeiner Tanz; Christine lehnt
-                jede Teilnahme daran ab. Es ist inzwischen dunkel geworden, mit Abendrotbeleuchtung.
-                Sobald die Walzermelodie zum letztenmal ertönt, geht alles ab, zuerst die
-                Musikanten, dann die Hälfte der Brautjungfern, das Brautpaar, die andere Hälfte der
-                Brautjungfern, Ballett und Chor. Christine bleibt allein zurück.</hi>
-            </stage>
+            <stage>Bombardon stellt sich an die Spitze des Zuges und marschiert mit ihm ab. – Gleich
+              darauf treten die Dorfmusikanten – ein Geiger, ein Bassist, ein Flötist, ein
+              Klarinettist usw., hinter ihnen ein Zug Tänzer und Tänzerinnen auf. Die Musikanten
+              stellen sich rechts auf Tischen und Stühlen auf. Allgemeiner Tanz; Christine lehnt
+              jede Teilnahme daran ab. Es ist inzwischen dunkel geworden, mit Abendrotbeleuchtung.
+              Sobald die Walzermelodie zum letztenmal ertönt, geht alles ab, zuerst die Musikanten,
+              dann die Hälfte der Brautjungfern, das Brautpaar, die andere Hälfte der Brautjungfern,
+              Ballett und Chor. Christine bleibt allein zurück.</stage>
           </sp>
-          <sp who="#_chor_der_soldaten_in_der_ferne_verklingend_">
-            <speaker> CHOR DER SOLDATEN <hi>in der Ferne verklingend.</hi>
-            </speaker>
+          <sp who="#chor_der_soldaten">
+            <speaker>CHOR DER SOLDATEN</speaker>
+            <stage>in der Ferne verklingend.</stage>
             <l>Plan, :|: plan, plan, :|: rataplan.</l>
           </sp>
-          <sp who="#_chor">
-            <speaker> CHOR.</speaker>
+          <sp who="#chor_allgemeiner_chor_alle">
+            <speaker>CHOR.</speaker>
             <lg>
               <l>Auf zum Tanz!</l>
               <l>:|: Die Flöte tönt, der Brummbaß klingt,</l>
@@ -1720,16 +1554,12 @@
           </sp>
           <sp who="#chor_der_soldaten">
             <speaker>CHOR DER SOLDATEN</speaker>
-            <stage>
-              <hi>hinter der Szene.</hi>
-            </stage>
+            <stage>hinter der Szene.</stage>
             <l>Plan, plan, rataplan.</l>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN</speaker>
-            <stage>
-              <hi>hinter der Szene.</hi>
-            </stage>
+            <stage>hinter der Szene.</stage>
             <l>Vaterland, Heimatland –</l>
           </sp>
           <sp who="#christine">
@@ -1748,31 +1578,26 @@
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE</speaker>
-            <stage>
-              <hi>niederkniend.</hi>
-            </stage>
+            <stage>niederkniend.</stage>
             <lg>
               <l>Leb wohl! leb wohl!</l>
             </lg>
-            <stage>
-              <hi>Der Vorhang fällt langsam.</hi>
-            </stage>
           </sp>
+          <stage>Der Vorhang fällt langsam.</stage>
         </div>
       </div>
       <div type="act">
-        <head>2. Akt</head>
+        <head>Zweiter Aufzug.</head>
+        <stage>Drei Jahre später.</stage>
+        <stage>Dieselbe Dekoration, das Haus restauriert. Herbst, gegen Abend.</stage>
+        <stage>Nr. 8. Entreakt.</stage>
         <div type="scene">
           <head>Erster Auftritt.</head>
-          <stage>
-            <hi>Auf der Bank unter den Bäumen Colas, eine lange Pfeife rauchend, den linken Arm in
-              der Schlinge, eine Soldatenmütze auf dem Kopf. Aus dem Keller kommt Therese, einen
-              Korb mit einer Flasche Wein und vier Kuverts tragend; sie setzt den Korb auf den Stuhl
-              neben dem Tisch. Später Gontran.</hi>
-          </stage>
-          <stage>
-            <hi>Nr. 9. Duett.</hi>
-          </stage>
+          <stage>Auf der Bank unter den Bäumen Colas, eine lange Pfeife rauchend, den linken Arm in
+            der Schlinge, eine Soldatenmütze auf dem Kopf. Aus dem Keller kommt Therese, einen Korb
+            mit einer Flasche Wein und vier Kuverts tragend; sie setzt den Korb auf den Stuhl neben
+            dem Tisch. Später Gontran.</stage>
+          <stage>Nr. 9. Duett.</stage>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
             <lg>
@@ -1788,9 +1613,7 @@
           </sp>
           <sp who="#colas">
             <speaker>COLAS</speaker>
-            <stage>
-              <hi>steht auf und steckt die Pfeife ein.</hi>
-            </stage>
+            <stage>steht auf und steckt die Pfeife ein.</stage>
             <lg>
               <l>Mein liebes Weibchen, hab Geduld</l>
               <l><pb n="56"/> Und laß mich auskurieren!</l>
@@ -1850,9 +1673,7 @@
               <l>Ich kann noch scherzen, kann noch küssen</l>
               <l>Und dich mit diesem Arm umschließen.</l>
             </lg>
-            <stage>
-              <hi>Er küßt sie.</hi>
-            </stage>
+            <stage>Er küßt sie.</stage>
           </sp>
           <sp who="#therese #colas">
             <speaker>THERESE UND COLAS.</speaker>
@@ -1892,12 +1713,8 @@
               <l>:|: Schau, Männchen / Weibchen, das ist gute Eh'! :|:</l>
               <l>:|: So prosperiert :|: die :|: kleine :|: Armee!</l>
             </lg>
-            <stage>
-              <hi>Während des folgenden Dialogs deckt Therese den Tisch.</hi>
-            </stage>
-            <stage>
-              <hi>Einlage ad libitum.</hi>
-            </stage>
+            <stage>Während des folgenden Dialogs deckt Therese den Tisch.</stage>
+            <stage>Einlage ad libitum.</stage>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
@@ -1929,9 +1746,7 @@
           </sp>
           <sp who="#therese">
             <speaker>THERESE</speaker>
-            <stage>
-              <hi>gebieterisch.</hi>
-            </stage>
+            <stage>gebieterisch.</stage>
             <l>Du bleibst also!</l>
           </sp>
           <sp who="#colas">
@@ -1940,33 +1755,23 @@
           </sp>
           <sp who="#therese">
             <speaker>THERESE</speaker>
-            <stage>
-              <hi>ihn streichelnd.</hi>
-            </stage>
+            <stage>ihn streichelnd.</stage>
             <l>Du bleibst nicht?</l>
           </sp>
           <sp who="#colas">
             <speaker>COLAS</speaker>
-            <stage>
-              <hi>soldatisch.</hi>
-            </stage>
+            <stage>soldatisch.</stage>
             <l>Nein!</l>
-            <stage>
-              <hi>Sie küssend.</hi>
-            </stage>
+            <stage>Sie küssend.</stage>
             <l>Aber ich komme im Augenblick wieder!</l>
-            <stage>
-              <hi>Er geht ab.</hi>
-            </stage>
+            <stage>Er geht ab.</stage>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
             <lg>
               <l>Hahaha!</l>
             </lg>
-            <stage>
-              <hi>Nr. 9a. Arie nachkomponiert.</hi>
-            </stage>
+            <stage>Nr. 9a. Arie nachkomponiert.</stage>
             <lg>
               <l>Die Männer muß man sich dressier'n</l>
               <l>Und wie Rekruten exerzier'n,</l>
@@ -1998,205 +1803,184 @@
               <l>Ja, ja,</l>
               <l>Die Männer usw.</l>
             </lg>
-            <stage>
-              <hi>Colas kommt zurück.</hi>
-            </stage>
+            <stage>Colas kommt zurück.</stage>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <p> Mein armer Kapitän! Ich weiß nicht, was er hat! Genesen ist er Gott sei Dank durch
+            <p>Mein armer Kapitän! Ich weiß nicht, was er hat! Genesen ist er Gott sei Dank durch
               unsere und Christinens sorgsame Pflege – aber seine Schwermut –</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE</speaker>
-            <stage>
-              <hi>den Tisch deckend.</hi>
-            </stage>
-            <p> Schwermut nennst du das, Männchen? Ich weiß einen andern Namen dafür! Er ist
-              verliebt – in unsere Christine.</p>
+            <stage>den Tisch deckend.</stage>
+            <p>Schwermut nennst du das, Männchen? Ich weiß einen andern Namen dafür! Er ist verliebt
+              – in unsere Christine.</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <p> In meine Schwester? Meiner Seel'! Ich hab' mir's auch schon gedacht. Wenn ich das
+            <p>In meine Schwester? Meiner Seel'! Ich hab' mir's auch schon gedacht. Wenn ich das
               Glück erlebte, meinen Kapitän, meinen Lebensretter, Schwager nennen zu dürfen! Und sie
               – Christine – was glaubst du, mein pfiffiges Weibchen?</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <p> Ja, wer kennt sich da aus! Ihre Augen, ihre Wangen, die bald rot und bald blaß
+            <p>Ja, wer kennt sich da aus! Ihre Augen, ihre Wangen, die bald rot und bald blaß
               werden, wenn sie ihn <pb n="59"/> anschaut, lassen mich vermuten, daß er ihr nicht
               gleichgültig ist. Aber ihre Worte, ihr Benehmen bleiben fremd und kalt. Sie betrachtet
               sich nun einmal als die Braut eines andern.</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <p> Der vielleicht längst tot und begraben ist. Die zwei Jahre sind vorbei, und keiner
+            <p>Der vielleicht längst tot und begraben ist. Die zwei Jahre sind vorbei, und keiner
               hat sich mit dem goldnen Kreuze gemeldet; aber wie ich sie kenne, sie wird warten und
               warten – bis ihr das Herz bricht.</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Ah pah! Sie wird sich schon besinnen, zumal wenn ein so braver, liebenswürdiger
-              Kapitän –</l>
+            <p>Ah pah! Sie wird sich schon besinnen, zumal wenn ein so braver, liebenswürdiger
+              Kapitän –</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Therese, soll ich eifersüchtig werden?</l>
+            <p>Therese, soll ich eifersüchtig werden?</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <p> Ei, du hitziger Held der großen Armee! Aber das sag' ich dir geradeheraus, wenn ich
+            <p>Ei, du hitziger Held der großen Armee! Aber das sag' ich dir geradeheraus, wenn ich
               meine zwei Jahre endlich abgewartet hätte, und ein so reizender Kavalier – ach, da ist
               er!</p>
-            <stage>
-              <hi>Gontran in Kommodeuniform, das Ehrenkreuz auf der Brust, tritt auf.</hi>
-            </stage>
+            <stage>Gontran in Kommodeuniform, das Ehrenkreuz auf der Brust, tritt auf.</stage>
           </sp>
           <sp who="#colas">
             <speaker>COLAS</speaker>
-            <stage>
-              <hi>salutierend.</hi>
-            </stage>
-            <l> Mein Kapitän!</l>
+            <stage>salutierend.</stage>
+            <p>Mein Kapitän!</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <p> Ach, das ist schön, daß Sie aus Ihrer Einsamkeit herauskommen, den schönen Abend im
+            <p>Ach, das ist schön, daß Sie aus Ihrer Einsamkeit herauskommen, den schönen Abend im
               Freien zu genießen. Ich richte das Abendessen hier unter den Bäumen.</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Herzlichen Dank, meine freundliche Wirtin!</l>
+            <p>Herzlichen Dank, meine freundliche Wirtin!</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Aber ich denke, mein Kapitän, wir warten, bis meine Schwester zurückkommt.</l>
+            <p>Aber ich denke, mein Kapitän, wir warten, bis meine Schwester zurückkommt.</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Mademoiselle Christine ist ausgegangen?</l>
+            <p>Mademoiselle Christine ist ausgegangen?</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <p> Sie ist nur ins Dorf hinab, weil heute, wie es heißt, die letzten Truppen aus unserm
+            <p>Sie ist nur ins Dorf hinab, weil heute, wie es heißt, die letzten Truppen aus unserm
               Bezirk heimkehren sollen. Aber jeden Augenblick kann sie zurückkehren. Ich richte
-              indessen das Abendessen! Auf Wiedersehen, Herr Kapitän! <hi>Sie geht ab ins Haus.</hi>
-            </p>
+              indessen das Abendessen! Auf Wiedersehen, Herr Kapitän! <stage>Sie geht ab ins
+                Haus.</stage></p>
           </sp>
         </div>
         <div type="scene">
           <head>Zweiter Auftritt.</head>
-          <stage>
-            <hi>Gontran und Colas.</hi>
-          </stage>
+          <stage>Gontran und Colas.</stage>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <p> Pardon, mein Kapitän – wenn ich unser Abendessen noch auf kurze Zeit hinausgeschoben
+            <p>Pardon, mein Kapitän – wenn ich unser Abendessen noch auf kurze Zeit hinausgeschoben
               – aber ich weiß, daß meine Schwester Christine –</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN</speaker>
-            <stage>
-              <hi>zieht ihn heran.</hi>
-            </stage>
-            <l> Was weißt du, Colas?</l>
+            <stage>zieht ihn heran.</stage>
+            <p>Was weißt du, Colas?</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Daß Christine Sie verehrt –</l>
+            <p>Daß Christine Sie verehrt –</p>
             <pb n="60"/>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Verehrt?</l>
+            <p>Verehrt?</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Wie wir alle!</l>
+            <p>Wie wir alle!</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Wie ihr alle! Ihr seid treue, edle Herzen, ich danke euch!</l>
+            <p>Wie ihr alle! Ihr seid treue, edle Herzen, ich danke euch!</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Danken! Sappristi, Kapitän, danken wir Euch nicht, daß ich überhaupt noch lebe?</l>
+            <p>Danken! Sappristi, Kapitän, danken wir Euch nicht, daß ich überhaupt noch lebe?</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Dasselbe kann ich dir sagen!</l>
+            <p>Dasselbe kann ich dir sagen!</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <p> O, es war ein sichtbares Zeichen der Vorsehung, daß ich Sie, mein Kapitän, in meine
+            <p>O, es war ein sichtbares Zeichen der Vorsehung, daß ich Sie, mein Kapitän, in meine
               Heimat führen durfte.</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN</speaker>
-            <stage>
-              <hi>bedeutungsvoll.</hi>
-            </stage>
-            <l> Ja gewiß, es war die Hand der Vorsehung!</l>
+            <stage>bedeutungsvoll.</stage>
+            <p>Ja gewiß, es war die Hand der Vorsehung!</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <p> Und wir sind so glücklich mit Ihnen, Sie dürfen uns nicht mehr desertieren. Gefangen
+            <p>Und wir sind so glücklich mit Ihnen, Sie dürfen uns nicht mehr desertieren. Gefangen
               und festgehalten!</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <p> Mein braver Junge! Du vergißt, daß euer freundliches Haus ein Plätzchen braucht für
+            <p>Mein braver Junge! Du vergißt, daß euer freundliches Haus ein Plätzchen braucht für
               den Gatten deiner Schwester!</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Das meine ich ja eben!</l>
+            <p>Das meine ich ja eben!</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Wie–?</l>
+            <p>Wie–?</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <p> Seht, Kapitän, wenn ein Herr wie Ihr wirklich für ein einfaches Landmädchen wie
+            <p>Seht, Kapitän, wenn ein Herr wie Ihr wirklich für ein einfaches Landmädchen wie
               Christine, eine – wie Therese sagt –</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Was sagt Therese?</l>
+            <p>Was sagt Therese?</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> O, sie ist gescheiter als sie aussieht und hat längst bemerkt, daß auch Christine
-              –</l>
+            <p>O, sie ist gescheiter als sie aussieht und hat längst bemerkt, daß auch Christine
+              –</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Auch Christine?</l>
+            <p>Auch Christine?</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS</speaker>
-            <stage>
-              <hi>schlägt sich auf den Mund.</hi>
-            </stage>
-            <p> Aber ich schwatze da, und Sie sind bewegt, Kapitän – pardon, Therese hat's
-              eingebrockt, sie soll's auch austrinken. <hi>Er geht ab ins Haus.</hi>
-            </p>
+            <stage>schlägt sich auf den Mund.</stage>
+            <p>Aber ich schwatze da, und Sie sind bewegt, Kapitän – pardon, Therese hat's
+              eingebrockt, sie soll's auch austrinken. <stage>Er geht ab ins Haus.</stage></p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN</speaker>
-            <stage>
-              <hi>allein.</hi>
-            </stage>
-            <p> Wär' es möglich, was mein Herz noch nicht zu hoffen gewagt? Christine liebt mich!
+            <stage>allein.</stage>
+            <p>Wär' es möglich, was mein Herz noch nicht zu hoffen gewagt? Christine liebt mich!
               Nein! Noch hat sie selbst mit keinem Wort es verraten, was mich so selig, so
               überglücklich machen würde. Nie hätte ich sie sonst an ihr Versprechen gemahnt, nie an
               die Erfüllung ihres Schwures sie erinnert, wenn ich nicht die Gewißheit erlangt, daß
               ihre Liebe allein entscheide.</p>
-            <stage>
-              <hi>Nr. 10. Romanze.</hi>
-            </stage>
           </sp>
+          <stage>Nr. 10. Romanze.</stage>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
             <lg>
@@ -2225,60 +2009,46 @@
               <l>Entflieh' ich dieses Zaubers Schlingen,</l>
               <l>:|: Ob auch mein Herz darüber bricht! :|:</l>
             </lg>
-            <p>Noch heute will ich mir Gewißheit verschaffen und mit Christinen – <hi>Er wendet sich
-                zum Hause.</hi> Ha – da ist sie!</p>
-            <stage>
-              <hi>Christine kommt, ohne ihn zu sehen, von rechts aus dem Hintergrund.</hi>
-            </stage>
+            <p>Noch heute will ich mir Gewißheit verschaffen und mit Christinen – <stage>Er wendet
+                sich zum Hause.</stage> Ha – da ist sie!</p>
+            <stage>Christine kommt, ohne ihn zu sehen, von rechts aus dem Hintergrund.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Dritter Auftritt.</head>
-          <stage>
-            <hi>Christine. Gontran. Später Therese, Colas und eine Dienerin.</hi>
-          </stage>
+          <stage>Christine. Gontran. Später Therese, Colas und eine Dienerin.</stage>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <p> Ich habe vergebens gewartet, der Zug der Heimkehrenden trifft erst spät abends ein.
-                <hi>Sie will ins Haus.</hi> Ha, Gontran!</p>
+            <p>Ich habe vergebens gewartet, der Zug der Heimkehrenden trifft erst spät abends ein.
+                <stage>Sie will ins Haus.</stage> Ha, Gontran!</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Sie erschrecken vor mir, Christine?</l>
+            <p>Sie erschrecken vor mir, Christine?</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <p> Weil ich überrascht bin, Sie im Freien zu sehen? Mein Pflegling hat ohne meine
-              Einwilligung das Zimmer verlassen, <hi>Drohend.</hi> ist das erlaubt?</p>
+            <p>Weil ich überrascht bin, Sie im Freien zu sehen? Mein Pflegling hat ohne meine
+              Einwilligung das Zimmer verlassen, <stage>Drohend.</stage> ist das erlaubt?</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <p> Ich bin genesen, geheilt durch Ihre liebevolle Fürsorge, geheilt auch von den Wunden
+            <p>Ich bin genesen, geheilt durch Ihre liebevolle Fürsorge, geheilt auch von den Wunden
               und Zweifeln, die ich, ohne daß Sie es ahnten, im Herzen trug!</p>
             <pb n="62"/>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE</speaker>
-            <stage>
-              <hi>zurückweichend.</hi>
-            </stage>
-            <l> Was wollen Sie mit. sagen, Herr Kapitän?</l>
+            <stage>zurückweichend.</stage>
+            <p>Was wollen Sie mit. sagen, Herr Kapitän?</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <lg>
-              <l> O, hören Sie mich, teure Christine –</l>
-            </lg>
-            <stage>
-              <hi>Therese und Colas aus dem Hause mit Speisen und Wein.</hi>
-            </stage>
-            <stage>
-              <hi>Eine Dienerin deckt schnell auf und entfernt sich wieder.</hi>
-            </stage>
-            <stage>
-              <hi>Nr. 11. Quartett.</hi>
-            </stage>
+            <p>O, hören Sie mich, teure Christine –</p>
           </sp>
+          <stage>Therese und Colas aus dem Hause mit Speisen und Wein.</stage>
+          <stage>Eine Dienerin deckt schnell auf und entfernt sich wieder.</stage>
+          <stage>Nr. 11. Quartett.</stage>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
             <l>Da ist sie! Zu Tische! Das Mahl ist bereit!</l>
@@ -2289,9 +2059,7 @@
           </sp>
           <sp who="#therese">
             <speaker>THERESE</speaker>
-            <stage>
-              <hi>zu Colas.</hi>
-            </stage>
+            <stage>zu Colas.</stage>
             <lg>
               <l>Verwirrt sind sie beide, sie waren allein –</l>
               <l>Wir stören, wahrhaftig, das war nicht gescheit!</l>
@@ -2303,9 +2071,7 @@
               <l>Zu Tische, Herr Hauptmann – es wartet das Mahl!</l>
               <l>Auf Eure Genesung füll' ich den Pokal!</l>
             </lg>
-            <stage>
-              <hi>Sie setzen sich.</hi>
-            </stage>
+            <stage>Sie setzen sich.</stage>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
@@ -2316,28 +2082,24 @@
               <l>Der goldne Saft der Rebe glänzt.</l>
             </lg>
           </sp>
-          <sp who="#die_drei_andern">
+          <sp who="#christine #therese #colas">
             <speaker>DIE DREI ANDERN.</speaker>
             <lg>
               <l>Stoßt an, das klingt so helle,</l>
               <l>Wie Glöcklein der Kapelle,</l>
             </lg>
           </sp>
-          <sp who="#alle_vier">
+          <sp who="#christine #gontran #therese #colas">
             <speaker>ALLE VIER.</speaker>
             <lg>
               <l>:|: Kling, klang, kling, klang,</l>
               <l>Das, was wir lieben, lebe lang'! :|:</l>
             </lg>
-            <stage>
-              <hi>Sie stoßen bei dem »Kling, klang« wechselweise an.</hi>
-            </stage>
+            <stage>Sie stoßen bei dem »Kling, klang« wechselweise an.</stage>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN</speaker>
-            <stage>
-              <hi>zu Christine.</hi>
-            </stage>
+            <stage>zu Christine.</stage>
             <lg>
               <l>Darf diesem Trinkspruch ich vertrauen,</l>
               <l>Kredenz' ich Ihnen den Pokal!</l>
@@ -2351,16 +2113,12 @@
           </sp>
           <sp who="#colas">
             <speaker>COLAS</speaker>
-            <stage>
-              <hi>für sich.</hi>
-            </stage>
+            <stage>für sich.</stage>
             <l>Wie ein Soldat, grad' aufs Ziel!</l>
           </sp>
           <sp who="#therese">
             <speaker>THERESE</speaker>
-            <stage>
-              <hi>stößt ihn.</hi>
-            </stage>
+            <stage>stößt ihn.</stage>
             <l>Hör', was sie sagt! Still, schweige still!</l>
           </sp>
           <sp who="#christine">
@@ -2375,9 +2133,7 @@
               <l>Und die zum Gatten Sie erwählet,</l>
               <l>Sie soll mir eine Schwester sein.</l>
             </lg>
-            <stage>
-              <hi>Gontran steht auf, Colas ebenso.</hi>
-            </stage>
+            <stage>Gontran steht auf, Colas ebenso.</stage>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
@@ -2388,9 +2144,7 @@
           </sp>
           <sp who="#therese">
             <speaker>THERESE</speaker>
-            <stage>
-              <hi>steht auf.</hi>
-            </stage>
+            <stage>steht auf.</stage>
             <lg>
               <l>Sei still, du Schwätzer, sprich kein Wort –</l>
               <l>Du siehst – er geht vom Tische fort!</l>
@@ -2398,9 +2152,7 @@
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE</speaker>
-            <stage>
-              <hi>vom Platze aus zu Gontran.</hi>
-            </stage>
+            <stage>vom Platze aus zu Gontran.</stage>
             <l>Ihr zürnt!</l>
           </sp>
           <sp who="#gontran">
@@ -2414,7 +2166,7 @@
               <l>Der goldne Saft der Rebe glänzt.</l>
             </lg>
           </sp>
-          <sp who="#die_drei_andern">
+          <sp who="#christine #therese #colas">
             <speaker>DIE DREI ANDERN.</speaker>
             <lg>
               <l>Stoßt an, das klingt so helle,</l>
@@ -2422,21 +2174,17 @@
               <pb n="64"/>
             </lg>
           </sp>
-          <sp who="#alle_vier">
+          <sp who="#christine #gontran #therese #colas">
             <speaker>ALLE VIER.</speaker>
             <lg>
               <l>:|: Kling, klang, kling, klang,</l>
               <l>Das, was wir lieben, lebe lang'! :|:</l>
             </lg>
-            <stage>
-              <hi>Sie stoßen bei dem »Kling, klang« wechselweise an.</hi>
-            </stage>
+            <stage>Sie stoßen bei dem »Kling, klang« wechselweise an.</stage>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN</speaker>
-            <stage>
-              <hi>das Glas emporhaltend.</hi>
-            </stage>
+            <stage>das Glas emporhaltend.</stage>
             <lg>
               <l>Das letzte Glas – ich bring' es aus</l>
               <l>Als Abschiedsgruß dem lieben Haus,</l>
@@ -2456,9 +2204,7 @@
               <l>Den Abschiedstrunk – auf Euer Glück,</l>
               <l>Therese!</l>
             </lg>
-            <stage>
-              <hi>Er stößt mit Therese an.</hi>
-            </stage>
+            <stage>Er stößt mit Therese an.</stage>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
@@ -2474,16 +2220,12 @@
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN</speaker>
-            <stage>
-              <hi>steht auf und will mit Christine anstoßen.</hi>
-            </stage>
+            <stage>steht auf und will mit Christine anstoßen.</stage>
             <lg>
               <l>Ich muß nun wohl von hinnen gehen!</l>
               <l>Christine!</l>
             </lg>
-            <stage>
-              <hi>Er reicht ihr das Glas.</hi>
-            </stage>
+            <stage>Er reicht ihr das Glas.</stage>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
@@ -2494,13 +2236,11 @@
             <lg>
               <l>Auf Wiedersehen!</l>
             </lg>
-            <stage>
-              <hi>Christine will anstoßen, das Glas entfällt ihrer Hand; sie hält sich wankend am
-                Sessel.</hi>
-            </stage>
+            <stage>Christine will anstoßen, das Glas entfällt ihrer Hand; sie hält sich wankend am
+              Sessel.</stage>
           </sp>
-          <sp who="#_therese">
-            <speaker> THERESE.</speaker>
+          <sp who="#therese">
+            <speaker>THERESE.</speaker>
             <lg>
               <l>Sie wankt, sie bebt, ihr Schweigen spricht,</l>
               <l>Gottlob, nun ist das Eis gebrochen.</l>
@@ -2523,7 +2263,7 @@
               <l>Gott stärke dich – ach, es darf nicht sein! :|:</l>
             </lg>
           </sp>
-          <sp who="#_gontran">
+          <sp who="#gontran">
             <speaker><pb n="65"/> GONTRAN.</speaker>
             <lg>
               <l>:|: Wie schlägt mein Herz! Wie Sonnenlicht,</l>
@@ -2544,20 +2284,14 @@
               <l>Mir scheint, am besten wird es sein,</l>
               <l>Wir lassen jetzt die zwei allein.</l>
             </lg>
-            <stage>
-              <hi>Therese und Colas schieben den Tisch zur Seite und schleichen ab.</hi>
-            </stage>
+            <stage>Therese und Colas schieben den Tisch zur Seite und schleichen ab.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Vierter Auftritt.</head>
-          <stage>
-            <hi>Kurzes Zwischenspiel, währenddessen Gontran entzückt die zweifelnde Christine
-              betrachtet.</hi>
-          </stage>
-          <stage>
-            <hi>Nr. 12. Szene und Duett.</hi>
-          </stage>
+          <stage>Kurzes Zwischenspiel, währenddessen Gontran entzückt die zweifelnde Christine
+            betrachtet.</stage>
+          <stage>Nr. 12. Szene und Duett.</stage>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
             <lg>
@@ -2617,8 +2351,8 @@
               <l>Seit dem Tag, da ich dich sah!</l>
             </lg>
           </sp>
-          <sp who="#_gontran">
-            <speaker> GONTRAN.</speaker>
+          <sp who="#gontran">
+            <speaker>GONTRAN.</speaker>
             <l>Welche Wonne, welch Entzücken!</l>
           </sp>
           <sp who="#christine">
@@ -2637,9 +2371,7 @@
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE</speaker>
-            <stage>
-              <hi>bebend, sich von ihm losmachend.</hi>
-            </stage>
+            <stage>bebend, sich von ihm losmachend.</stage>
             <l>O Herr der Welt!</l>
           </sp>
           <sp who="#gontran">
@@ -2721,9 +2453,11 @@
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
+            <l>Dein auf ewig! ewig dein!</l>
+          </sp>
+          <sp who="#gontran #christine">
+            <speaker>GONTRAN, DANN CHRISTINE.</speaker>
             <lg>
-              <l>Dein auf ewig! ewig dein!</l>
-              <l>GONTRAN, DANN CHRISTINE.</l>
               <l>Welche Wonne, welch Entzücken,</l>
               <l>Frei, erlöst von jeder Pflicht,</l>
               <l>Darf ich dich ans Herz nun drücken,</l>
@@ -2732,64 +2466,60 @@
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <p> Ich kann es noch nicht fassen! Welches Wunder der Vorsehung, Ihr, den sich mein Herz
+            <p>Ich kann es noch nicht fassen! Welches Wunder der Vorsehung, Ihr, den sich mein Herz
               erkoren, Ihr seid es, der mir der Mutter teures Vermächtnis, mein goldenes Kreuz
               zurückbringt.</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Das goldene Kreuz?</l>
+            <p>Das goldene Kreuz?</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <l> O gebt es mir, ich schwöre, daß es mein Brautschmuck sein soll!</l>
+            <p>O gebt es mir, ich schwöre, daß es mein Brautschmuck sein soll!</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Das goldene Kreuz – ich habe es nicht –</l>
+            <p>Das goldene Kreuz – ich habe es nicht –</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE</speaker>
-            <stage>
-              <hi>zurückfahrend.</hi>
-            </stage>
-            <l> Wie, Ihr habt es nicht?</l>
+            <stage>zurückfahrend.</stage>
+            <p>Wie, Ihr habt es nicht?</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <p> Es liegt unter dem Schnee von Wilna, wo ich vor zwei Jahren im ersten Treffen
+            <p>Es liegt unter dem Schnee von Wilna, wo ich vor zwei Jahren im ersten Treffen
               verwundet niedersank. Ich hielt es in der Hand, um es einem Kameraden zu geben, der es
               dir mit deiner Freiheit zurückbringen sollte.</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <l> Mir? Und Sie wissen doch, daß ich bis heute darauf warte!</l>
+            <p>Mir? Und Sie wissen doch, daß ich bis heute darauf warte!</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Vielleicht fiel er selbst der nächsten Kugel zum Opfer –</l>
+            <p>Vielleicht fiel er selbst der nächsten Kugel zum Opfer –</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE</speaker>
-            <stage>
-              <hi>heftig.</hi>
-            </stage>
-            <p> Sie wissen doch, daß ich dem Unbekannten, der mir das Kreuz bringt, durch meinen
+            <stage>heftig.</stage>
+            <p>Sie wissen doch, daß ich dem Unbekannten, der mir das Kreuz bringt, durch meinen
               Schwur verpfändet bin, daß vielleicht heute schon unter den Heimkehrenden der
               berechtigte Bewerber –</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Christine, wie, Zweifel an meinem Wort?</l>
+            <p>Christine, wie, Zweifel an meinem Wort?</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <l> Das meine muß mir heilig sein!</l>
+            <p>Das meine muß mir heilig sein!</p>
             <pb n="68"/>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <p> Bürgt Ihnen das Ehrenkreuz auf meiner Brust nicht, das ich an der Stelle Ihres
+            <p>Bürgt Ihnen das Ehrenkreuz auf meiner Brust nicht, das ich an der Stelle Ihres
               goldenen Kreuzes trage? Nun wohl, Sie verletzen mich, aber ich liebe Sie, und will
               meinen Stolz meiner Liebe zum Opfer bringen. – Es war vor zwei Jahren, am fünften Mai,
               als ich das Kreuz empfing, ein goldenes, schlichtes Kreuz, in dessen Mitte eine Perle
@@ -2797,157 +2527,138 @@
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <l> Hat Ihnen Colas oder Therese dies berichtet? Ich weiß, wie sie mich bestürmen.</l>
+            <p>Hat Ihnen Colas oder Therese dies berichtet? Ich weiß, wie sie mich bestürmen.</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <p> Mein Fräulein! Es ist genug! Gott verzeihe Ihnen dieses Mißtrauen, diese Beleidigung
+            <p>Mein Fräulein! Es ist genug! Gott verzeihe Ihnen dieses Mißtrauen, diese Beleidigung
               eines ehrlichen Soldaten, – ich verzeihe Ihnen – aber – dieses Wort hat uns auf ewig
               getrennt! Leben Sie wohl und vergessen Sie mich, wie ich mir Mühe geben will, Sie zu
-              vergessen! <hi>Er stürzt ab.</hi>
-            </p>
+              vergessen! <stage>Er stürzt ab.</stage></p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <p> Großer Gott! Was tat ich? Und doch – ich kann, ich darf nicht anders! Das heilige
+            <p>Großer Gott! Was tat ich? Und doch – ich kann, ich darf nicht anders! Das heilige
               Andenken meiner Mutter habe ich mit diesem Pfande eingesetzt, ich harre aus, bis es
               mir zurückgegeben wird. Gott, du weißt, was mich dies Opfer kostet.</p>
           </sp>
         </div>
         <div type="scene">
           <head>Fünfter Auftritt.</head>
-          <stage>
-            <hi>Die Vorigen. Therese. Colas.</hi>
-          </stage>
+          <stage>Die Vorigen. Therese. Colas.</stage>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Bomben und Granaten! Was ist hier vorgefallen?</l>
+            <p>Bomben und Granaten! Was ist hier vorgefallen?</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Der Hauptmann ist außer sich – er packt seinen Mantelsack.</l>
+            <p>Der Hauptmann ist außer sich – er packt seinen Mantelsack.</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Schwester Christine, was hast du getan?</l>
+            <p>Schwester Christine, was hast du getan?</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <l> Meine Pflicht. Er behauptet derselbe zu sein, der sich vor zwei Jahren als
-              Stellvertreter –</l>
+            <p>Meine Pflicht. Er behauptet derselbe zu sein, der sich vor zwei Jahren als
+              Stellvertreter –</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <p> Meiner Treu', den Gedanken hab' ich selbst schon gehabt; wenn auch verändert, hat er
+            <p>Meiner Treu', den Gedanken hab' ich selbst schon gehabt; wenn auch verändert, hat er
               mich doch an den jungen Mann erinnert, dem ich damals die Eremitage anwies!</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <p> Schade, daß du ihm das nicht auch erzählt! O, ich sehe, ich bin von einem Komplott
+            <p>Schade, daß du ihm das nicht auch erzählt! O, ich sehe, ich bin von einem Komplott
               umgeben, das meine Standhaftigkeit Grille und Laune nennt. – Aber hier vor euch
               erneuere ich den Schwur. Wer mir das goldene Kreuz zurückbringt, nur der löst mein
               Versprechen, <pb n="69"/> und kommt er nicht, so will ich im Kloster mein gequältes
               Herz auf ewig verschließen.</p>
-            <stage>
-              <hi>Trommelschlag, Marsch hinter der Szene.</hi>
-            </stage>
+            <stage>Trommelschlag, Marsch hinter der Szene.</stage>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <p> Ha, unsere Braven kehren heim, vielleicht kommt mir Kunde von ihm. Ich eile ihnen
-              entgegen. <hi>Sie geht ab ins Dorf, nach rechts.</hi>
-            </p>
+            <p>Ha, unsere Braven kehren heim, vielleicht kommt mir Kunde von ihm. Ich eile ihnen
+              entgegen. <stage>Sie geht ab ins Dorf, nach rechts.</stage></p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Sie ist von Sinnen! Mein Hauptmann ein Betrüger!</l>
+            <p>Sie ist von Sinnen! Mein Hauptmann ein Betrüger!</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <p> Und wenn auch! Ich an ihrer Stelle hätte dem schönen Hauptmann ohne weiteres
-              geglaubt und mein Gewissen beruhigt.</p>
+            <p>Und wenn auch! Ich an ihrer Stelle hätte dem schönen Hauptmann ohne weiteres geglaubt
+              und mein Gewissen beruhigt.</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Und ich schwöre auf ihn! Und meine brüderliche Autorität soll dem Querkopf die Augen
-              öffnen.</l>
+            <p>Und ich schwöre auf ihn! Und meine brüderliche Autorität soll dem Querkopf die Augen
+              öffnen.</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <p> Nur gemach, Männchen, laß sie nur bei den Heimkehrenden nachfragen, der eine oder
-              der andere wird ihr schon – aber – wer kommt denn dort den Hügel herab?</p>
-            <stage>
-              <hi>Bombardon auf dem Hügel, mit Stelzfuß, in abgetragener Montur, das Ehrenkreuz auf
-                der Brust.</hi>
-            </stage>
+            <p>Nur gemach, Männchen, laß sie nur bei den Heimkehrenden nachfragen, der eine oder der
+              andere wird ihr schon – aber – wer kommt denn dort den Hügel herab?</p>
+            <stage>Bombardon auf dem Hügel, mit Stelzfuß, in abgetragener Montur, das Ehrenkreuz auf
+              der Brust.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Sechster Auftritt.</head>
-          <stage>
-            <hi>Die Vorigen. Bombardon. Später Christine.</hi>
-          </stage>
+          <stage>Die Vorigen. Bombardon. Später Christine.</stage>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <p> Das Dorf ist schon das rechte – und die Mühle steht auch da – aber das Haus? Man hat
-              es nur ein wenig neu adjustiert, ich bin schon an der rechten Stelle. <hi>Er kommt
-                herab.</hi>
-            </p>
+            <p>Das Dorf ist schon das rechte – und die Mühle steht auch da – aber das Haus? Man hat
+              es nur ein wenig neu adjustiert, ich bin schon an der rechten Stelle. <stage>Er kommt
+                herab.</stage></p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Willkommen, braver Kamerad!</l>
+            <p>Willkommen, braver Kamerad!</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <p><hi>Mort de ma vie</hi> – das ist ja der arme Junge, den sie am Hochzeitstage auf
+            <p><emph>Mort de ma vie</emph> – das ist ja der arme Junge, den sie am Hochzeitstage auf
               einen andern Posten kommandiert hatten, und wie ich sehe – den Arm in der Schlinge,
-              die Kommodemütze auf dem Kopf, laß dich umarmen, Kamerad – Freiwilliger?<hi>
-                Umarmung.</hi>
-            </p>
+              die Kommodemütze auf dem Kopf, laß dich umarmen, Kamerad – Freiwilliger?
+                <stage>Umarmung.</stage></p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Ja, Sergeant, als Not am Mann war, und es galt, seine Frau zu beschützen –</l>
+            <p>Ja, Sergeant, als Not am Mann war, und es galt, seine Frau zu beschützen –</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Eine Frau, die ich auch mit Passion beschützt hätte – lassen Sie sich auch umarmen,
-              Madame –</l>
+            <p>Eine Frau, die ich auch mit Passion beschützt hätte – lassen Sie sich auch umarmen,
+              Madame –</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE</speaker>
-            <stage>
-              <hi>zurückweichend.</hi>
-            </stage>
-            <l> Bitte – bitte!</l>
+            <stage>zurückweichend.</stage>
+            <p>Bitte – bitte!</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <p> Sie werfen einen Blick auf diesen hölzernen Fuß, auf diese schäbige Montur, auf
+            <p>Sie werfen einen Blick auf diesen hölzernen Fuß, auf diese schäbige Montur, auf
               dieses vernarbte, sonnenverbrannte, <pb n="70"/> schneeverstöberte Gesicht! Ja,
-              Kinder, so kehrt die große Armee nach Frankreich zurück. – <hi>Er wischt sich eine
-                Träne aus dem Gesicht.</hi>
-            </p>
+              Kinder, so kehrt die große Armee nach Frankreich zurück. – <stage>Er wischt sich eine
+                Träne aus dem Gesicht.</stage></p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <p> O, reden Sie nicht davon! Wir alle haben uns gelobt, von dem Unabänderlichen nicht
+            <p>O, reden Sie nicht davon! Wir alle haben uns gelobt, von dem Unabänderlichen nicht
               viel zu sprechen, und uns in Gottes Namen des schwerersehnten Friedens zu freuen!</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Das dürft auch Ihr, braver Kamerad, denn ehrenvoll und dekoriert kehrt Ihr in die
-              Heimat zurück!</l>
+            <p>Das dürft auch Ihr, braver Kamerad, denn ehrenvoll und dekoriert kehrt Ihr in die
+              Heimat zurück!</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <lg>
-              <l> Ja! Aber wie?</l>
-            </lg>
-            <stage>
-              <hi>Nr. 13. Lied.</hi>
-            </stage>
+            <p>Ja! Aber wie?</p>
+            <stage>Nr. 13. Lied.</stage>
             <lg>
               <l>Wie anders war es, als vor wenig Jahren</l>
               <l>Die stolze Truppe auszog aus Paris,</l>
@@ -2976,176 +2687,164 @@
               <l>Auch jetzt hat sich mein Herz noch nicht beschieden,</l>
               <l>Allein die Weiber wollen einen Mann,</l>
               <l>Mitleidig schaun sie auf den Invaliden.</l>
-              <l>:|: Je nun, man trägt, was man nicht ändern kann. :|: </l>
+              <l>:|: Je nun, man trägt, was man nicht ändern kann. :|:</l>
               <pb n="71"/>
             </lg>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <p> Nein, nein, mein wackrer Sergeant, Ihr seid trotzdem immer noch ein ganz
-              respektabler Mann, und wenn Ihr Euch ein wenig von den Strapazen erholt habt
-              –BOMBARDON. Glauben Sie, Madame? Nun, das beruhigt mich einigermaßen.</p>
+            <p>Nein, nein, mein wackrer Sergeant, Ihr seid trotzdem immer noch ein ganz respektabler
+              Mann, und wenn Ihr Euch ein wenig von den Strapazen erholt habt –BOMBARDON. Glauben
+              Sie, Madame? Nun, das beruhigt mich einigermaßen.</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS</speaker>
-            <stage>
-              <hi>hilft den Tornister ablegen.</hi>
-            </stage>
-            <p> Gebt den Tornister, Kamerad, Ihr bleibt bei uns; da, die Eremitage und das Gärtchen
+            <stage>hilft den Tornister ablegen.</stage>
+            <p>Gebt den Tornister, Kamerad, Ihr bleibt bei uns; da, die Eremitage und das Gärtchen
               dabei soll Euch eingeräumt werden –</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Angenommen, Kamerad. Also Sie glauben, Madame Therese –</l>
+            <p>Angenommen, Kamerad. Also Sie glauben, Madame Therese –</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Sie kennen meinen Namen?</l>
+            <p>Sie kennen meinen Namen?</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Allerdings – aber, da war ja noch eine Schwester, Madelaine glaub' ich – oder –</l>
+            <p>Allerdings – aber, da war ja noch eine Schwester, Madelaine glaub' ich – oder –</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Christine.</l>
+            <p>Christine.</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <p> Richtig, Christine, ein wohl adjustiertes Frauenzimmer. Rufen Sie sie hierher, ich
+            <p>Richtig, Christine, ein wohl adjustiertes Frauenzimmer. Rufen Sie sie hierher, ich
               habe mit ihr zu reden.</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Mit Christinen? Da kommt sie eben zurück.</l>
+            <p>Mit Christinen? Da kommt sie eben zurück.</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON</speaker>
-            <stage>
-              <hi>zu Therese.</hi>
-            </stage>
-            <l> Glauben Sie wirklich, daß ich noch schönen Damen gegenüber eine akzeptable Figur
-              spiele?</l>
+            <stage>zu Therese.</stage>
+            <p>Glauben Sie wirklich, daß ich noch schönen Damen gegenüber eine akzeptable Figur
+              spiele?</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <p> Großer Gott, diese Frage – <hi>Sie dreht sich um und erblickt Christine, die von
-                rechts auftritt.</hi> und er hat mit Christinen – wenn er – ich mag's nicht glauben
-              –</p>
+            <p>Großer Gott, diese Frage – <stage>Sie dreht sich um und erblickt Christine, die von
+                rechts auftritt.</stage> und er hat mit Christinen – wenn er – ich mag's nicht
+              glauben –</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Richtig, da ist sie, die schöne Christine –</l>
+            <p>Richtig, da ist sie, die schöne Christine –</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Sie kennen auch sie?</l>
+            <p>Sie kennen auch sie?</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l><hi>Sappristi</hi>! Habe ich euch beide doch vor drei Jahren hier gesehen –</l>
+            <p><emph>Sappristi!</emph> Habe ich euch beide doch vor drei Jahren hier gesehen –</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Arme Christine! <hi>Zu ihr eilend.</hi> Nun, Schwester, – hast du nichts
-              erfahren?</l>
+            <p>Arme Christine! <stage>Zu ihr eilend.</stage> Nun, Schwester, – hast du nichts
+              erfahren?</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <p> In der Freude des Wiedersehens wollte mir keiner Rede stehen, aber sie kommen alle
+            <p>In der Freude des Wiedersehens wollte mir keiner Rede stehen, aber sie kommen alle
               hierher, alle und dann –</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Der wackere Sergeant, Schwester, fragt nach dir –</l>
+            <p>Der wackere Sergeant, Schwester, fragt nach dir –</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <l> Sie – mein Herr – o Gott, warum klopft mir das Herz plötzlich so stürmisch?</l>
+            <p>Sie – mein Herr – o Gott, warum klopft mir das Herz plötzlich so stürmisch?</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Mademoiselle – oder am Ende gar Madame Christine?</l>
+            <p>Mademoiselle – oder am Ende gar Madame Christine?</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <l> Ich bin unverheiratet –</l>
+            <p>Ich bin unverheiratet –</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Das hoffte ich, das erwartete ich von Ihnen.</l>
+            <p>Das hoffte ich, das erwartete ich von Ihnen.</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE</speaker>
-            <stage>
-              <hi>zitternd.</hi>
-            </stage>
-            <l> Von mir!</l>
+            <stage>zitternd.</stage>
+            <p>Von mir!</p>
             <pb n="72"/>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <p> Freilich wären Sie berechtigt gewesen, zu heiraten, denn die zwei Jahre Ihres
+            <p>Freilich wären Sie berechtigt gewesen, zu heiraten, denn die zwei Jahre Ihres
               Gelöbnisses sind längst vorüber –</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE</speaker>
-            <stage>
-              <hi>zitternd.</hi>
-            </stage>
-            <l> Schwester Therese –</l>
+            <stage>zitternd.</stage>
+            <p>Schwester Therese –</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Arme Christine, das sind die Folgen deines Edelmutes!</l>
+            <p>Arme Christine, das sind die Folgen deines Edelmutes!</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Ihr wißt also, Kamerad –</l>
+            <p>Ihr wißt also, Kamerad –</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <p> Bombenelement, hat denn die defekte Montur mein ganzes Signalement so verunstaltet,
+            <p>Bombenelement, hat denn die defekte Montur mein ganzes Signalement so verunstaltet,
               daß ihr alle den Sergeanten nicht mehr erkennt, der hier herkam, eine dritte
               freiwillige Kapitulation anzunehmen, an dem Tage, als man dich vom Traualtar
               wegtrommelte?</p>
           </sp>
           <sp who="#colas">
             <speaker>COLAS.</speaker>
-            <l> Ihr seid's – Bombardon!</l>
+            <p>Ihr seid's – Bombardon!</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <p> Ja, ich bin's, und ich hörte, wie dieses mutige, hochherzige Mädchen, um dein
+            <p>Ja, ich bin's, und ich hörte, wie dieses mutige, hochherzige Mädchen, um dein
               eheliches Glück nicht zu stören, die Worte sprach: »Wer als Ersatz für meinen Bruder
               einsteht, dem gebe ich dieses goldene Kreuz, und wer es mir zurückbringt, dem gehört
               mein Herz und meine Hand!«</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <l> So sprach ich – ja –</l>
+            <p>So sprach ich – ja –</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Und Ihr legtet das Kreuz in meine Hand –</l>
+            <p>Und Ihr legtet das Kreuz in meine Hand –</p>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <l> Allmächt'ger Gott!</l>
+            <p>Allmächt'ger Gott!</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <l> Und dieses Kreuz –?</l>
+            <p>Und dieses Kreuz –?</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <lg>
-              <l> Hier, Mademoiselle, hier bringe ich es Ihnen zurück.</l>
-            </lg>
-            <stage>
-              <hi>Nr. 14. Finale.</hi>
-            </stage>
+            <p>Hier, Mademoiselle, hier bringe ich es Ihnen zurück.</p>
           </sp>
+          <stage>Nr. 14. Finale.</stage>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
             <lg>
@@ -3181,9 +2880,7 @@
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON</speaker>
-            <stage>
-              <hi>zu Christine.</hi>
-            </stage>
+            <stage>zu Christine.</stage>
             <lg>
               <l>Wie, Ihr zaudert? Ja, ich dächte,</l>
               <l>Lieber dürft' es Euch schon sein,</l>
@@ -3194,9 +2891,7 @@
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
             <l>Zaudern – ich? nein, nein, nein, nein.</l>
-            <stage>
-              <hi>Sie nimmt das Kreuz.</hi>
-            </stage>
+            <stage>Sie nimmt das Kreuz.</stage>
             <lg>
               <l>Auf mein Flehen, auf mein Bitten</l>
               <l>Hat ein Braver sich entschlossen</l>
@@ -3208,9 +2903,7 @@
           </sp>
           <sp who="#colas #therese">
             <speaker>COLAS UND THERESE</speaker>
-            <stage>
-              <hi>rasch.</hi>
-            </stage>
+            <stage>rasch.</stage>
             <l>Sagt' ich's nicht! Was fällt dir ein?</l>
           </sp>
           <sp who="#christine">
@@ -3257,7 +2950,7 @@
               <pb n="74"/>
             </lg>
           </sp>
-          <sp who="#alle_drei">
+          <sp who="#colas #therese #christine">
             <speaker>ALLE DREI.</speaker>
             <l>Tot?</l>
           </sp>
@@ -3307,8 +3000,8 @@
               <l>Der für mich den Tod erlitt.</l>
             </lg>
           </sp>
-          <sp who="#_colas">
-            <speaker> COLAS.</speaker>
+          <sp who="#colas">
+            <speaker>COLAS.</speaker>
             <lg>
               <l>Wahnsinn! Element! ich spüre,</l>
               <l>Wie sich mir das Herz empört.</l>
@@ -3350,9 +3043,7 @@
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN</speaker>
-            <stage>
-              <hi>hinter der Szene.</hi>
-            </stage>
+            <stage>hinter der Szene.</stage>
             <lg>
               <l>Liebesglück, Liebestraum,</l>
               <l>Träume voller Wonnen,</l>
@@ -3363,75 +3054,57 @@
         </div>
         <div type="scene">
           <head>Siebenter Auftritt.</head>
-          <stage>
-            <hi>Die Vorigen. Gontran im Reisemantel, später die heimgekehrten Soldaten mit ihren
-              Lieben. Männer, Frauen, Kinder mit Kränzen. Abendsonne.</hi>
-          </stage>
+          <stage>Die Vorigen. Gontran im Reisemantel, später die heimgekehrten Soldaten mit ihren
+            Lieben. Männer, Frauen, Kinder mit Kränzen. Abendsonne.</stage>
           <sp who="#bombardon">
             <speaker>BOMBARDON</speaker>
-            <stage>
-              <hi>nach dem Liede.</hi>
-            </stage>
-            <l> Ha – welche Stimme – ha, welcher Ton!</l>
+            <stage>nach dem Liede.</stage>
+            <p>Ha – welche Stimme – ha, welcher Ton!</p>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <l> Dies Lied – wie ist mir? vernahm ich schon! An jenem Tage –</l>
+            <p>Dies Lied – wie ist mir? vernahm ich schon! An jenem Tage –</p>
           </sp>
           <sp who="#therese #colas">
             <speaker>THERESE UND COLAS.</speaker>
-            <l> Der Kapitän!</l>
+            <p>Der Kapitän!</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <lg>
-              <l> Wes ist die Stimme? Ich muß ihn sehn!</l>
-            </lg>
-            <stage>
-              <hi>Gontran erscheint.</hi>
-            </stage>
+            <p>Wes ist die Stimme? Ich muß ihn sehn!</p>
+            <stage>Gontran erscheint.</stage>
           </sp>
           <sp who="#therese">
             <speaker>THERESE.</speaker>
-            <lg>
-              <l> O, was ich ahnte, jetzt wird's mir klar!</l>
-            </lg>
-            <stage>
-              <hi>Bombardon starrend.</hi>
-            </stage>
+            <p>O, was ich ahnte, jetzt wird's mir klar!</p>
+            <stage>Bombardon starrend.</stage>
             <l>Ist's eine Täuschung – wie – ist es wahr?</l>
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE.</speaker>
-            <l> Mein Herz erbebt!</l>
+            <p>Mein Herz erbebt!</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON.</speaker>
-            <l> Steh! Die Parole!</l>
+            <p>Steh! Die Parole!</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN</speaker>
-            <stage>
-              <hi>sprechend.</hi>
-            </stage>
-            <l> Bombardon!</l>
+            <stage>sprechend.</stage>
+            <p>Bombardon!</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON</speaker>
-            <stage>
-              <hi>sprechend.</hi>
-            </stage>
-            <l> Gontran!</l>
+            <stage>sprechend.</stage>
+            <p>Gontran!</p>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
-            <l> Mein Kamerad!</l>
+            <p>Mein Kamerad!</p>
           </sp>
           <sp who="#bombardon">
             <speaker>BOMBARDON</speaker>
-            <stage>
-              <hi>singt.</hi>
-            </stage>
+            <stage>singt.</stage>
             <lg>
               <l>Er lebt, er lebt!</l>
               <l>In meine Arme! Ihr seid's,</l>
@@ -3465,16 +3138,12 @@
           </sp>
           <sp who="#christine">
             <speaker>CHRISTINE</speaker>
-            <stage>
-              <hi>niedersinkend.</hi>
-            </stage>
+            <stage>niedersinkend.</stage>
             <l>Kannst du verzeihen?</l>
           </sp>
-          <sp who="#der_chor">
+          <sp who="#chor_allgemeiner_chor_alle">
             <speaker>DER CHOR</speaker>
-            <stage>
-              <hi>erscheint im Hintergrunde.</hi>
-            </stage>
+            <stage>erscheint im Hintergrunde.</stage>
           </sp>
           <sp who="#gontran">
             <speaker>GONTRAN.</speaker>
@@ -3486,8 +3155,8 @@
               <l>Ich preise Gott usw.</l>
             </lg>
           </sp>
-          <sp who="#_bombardon">
-            <speaker> BOMBARDON.</speaker>
+          <sp who="#bombardon">
+            <speaker>BOMBARDON.</speaker>
             <lg>
               <l>Er lebt, er lebt, ich hab' ihn neu gefunden,</l>
               <l>Das treuste Herz nennt er auf ewig sein,</l>
@@ -3495,8 +3164,8 @@
               <l>Und tanzen will ich selbst auf einem Bein.</l>
             </lg>
           </sp>
-          <sp who="#_christine">
-            <speaker> CHRISTINE.</speaker>
+          <sp who="#christine">
+            <speaker>CHRISTINE.</speaker>
             <lg>
               <l>Ich preise Gott, daß ich dich neu gefunden,</l>
               <l>Mein Herz, du weißt es, schlug für dich allein!</l>
@@ -3513,7 +3182,7 @@
               <l>Sollt ihr in unsrer Mitte glücklich sein.</l>
             </lg>
           </sp>
-          <sp who="#chor">
+          <sp who="#chor_allgemeiner_chor_alle">
             <speaker>CHOR.</speaker>
             <lg>
               <l>Wir preisen Gott! Nach bangen, schweren Stunden</l>
@@ -3540,8 +3209,8 @@
               <l>In treuer Liebe Banden! :|:</l>
             </lg>
           </sp>
-          <sp who="#_alle">
-            <speaker> ALLE.</speaker>
+          <sp who="#chor_allgemeiner_chor_alle">
+            <speaker>ALLE.</speaker>
             <lg>
               <l>:|: Bombombom, trarara,</l>
               <l>Das Leid ist überstanden! :|:</l>
@@ -3549,20 +3218,12 @@
               <l>:|: Kapituliert die große Armee</l>
               <l>In treuer Liebe Banden! :|:</l>
             </lg>
-            <stage>
-              <hi>Bombardon hat das Paar marschierend gefaßt.</hi>
-            </stage>
-            <stage>
-              <hi>Die Andern folgen in gleichem Schritt.</hi>
-            </stage>
-            <stage>
-              <hi>Die Mädchen tanzend, bieten Blumen und Kränze.</hi>
-            </stage>
-            <stage>
-              <hi>Ende.</hi>
-            </stage>
-            <pb n="78"/>
+            <stage>Bombardon hat das Paar marschierend gefaßt.</stage>
+            <stage>Die Andern folgen in gleichem Schritt.</stage>
+            <stage>Die Mädchen tanzend, bieten Blumen und Kränze.</stage>
           </sp>
+          <trailer>Ende.</trailer>
+          <pb n="78"/>
         </div>
       </div>
     </body>
