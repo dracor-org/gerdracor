@@ -66,10 +66,10 @@
           <person xml:id="franz" sex="MALE">
             <persName>Franz</persName>
           </person>
-          <person xml:id="chor" sex="UNKNOWN">
-            <persName>Chor</persName>
-            <persName type="variant">Ganzer Chor</persName>
-          </person>
+          <personGrp xml:id="chor" sex="UNKNOWN">
+            <name>Chor</name>
+            <name type="variant">Ganzer Chor</name>
+          </personGrp>
           <person xml:id="kunigunde" sex="FEMALE">
             <persName>Kunigunde</persName>
           </person>
@@ -85,32 +85,33 @@
           <person xml:id="kunigundens_dienerin" sex="FEMALE">
             <persName>Kunigundens Dienerin</persName>
           </person>
-          <person xml:id="hugos_begleiter" sex="MALE">
-            <persName>Begleiter von Hugo</persName>
-            <persName type="variant">Chor der Begleiter Hugo's</persName>
-          </person>
-          <person xml:id="chor_der_geister" sex="UNKNOWN">
-            <persName>Chor der Geister</persName>
-            <persName type="variant">Geister</persName>
-          </person>
+          <personGrp xml:id="hugos_begleiter" sex="MALE">
+            <name>Begleiter von Hugo</name>
+            <name type="variant">Chor der Begleiter Hugo's</name>
+            <name type="variant">Hugo's Begleiter</name>
+          </personGrp>
+          <personGrp xml:id="chor_der_geister" sex="UNKNOWN">
+            <name>Chor der Geister</name>
+            <name type="variant">Geister</name>
+          </personGrp>
           <person xml:id="eine_hexe" sex="FEMALE">
             <persName>Eine Hexe</persName>
           </person>
           <person xml:id="sycorax" sex="FEMALE">
             <persName>Sycorax</persName>
           </person>
-          <person xml:id="hexen" sex="FEMALE">
-            <persName>Hexen</persName>
-          </person>
-          <person xml:id="drei_hexen" sex="FEMALE">
-            <persName>Drei Hexen</persName>
-          </person>
-          <person xml:id="hochzeitsgaeste" sex="UNKNOWN">
-            <persName>Hochzeitsgäste</persName>
-          </person>
-          <person xml:id="chor_der_maenner" sex="MALE">
-            <persName>Chor der Männer</persName>
-          </person>
+          <personGrp xml:id="hexen" sex="FEMALE">
+            <name>Hexen</name>
+          </personGrp>
+          <personGrp xml:id="drei_hexen" sex="FEMALE">
+            <name>Drei Hexen</name>
+          </personGrp>
+          <personGrp xml:id="hochzeitsgaeste" sex="UNKNOWN">
+            <name>Hochzeitsgäste</name>
+          </personGrp>
+          <personGrp xml:id="chor_der_maenner" sex="MALE">
+            <name>Chor der Männer</name>
+          </personGrp>
           <person xml:id="wohlhaldt" sex="MALE">
             <persName>Wohlhaldt</persName>
           </person>
@@ -127,6 +128,7 @@
         <change when="2017-01-06">(dlina) file conversion from source</change>
         <change when="2017-08-04">(ff) structural cleanup</change>
         <change when="2018-04-21">(ff) formalities; add gender info</change>
+        <change when="2019-05-05">(ff) trim markup of stage directions; personGrp</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -175,9 +177,9 @@
           <head>Erste Scene.</head>
           <stage>Bediente mit Fackeln oder Laternen gehen über die Bühne nach dem erleuchteten
             Hause, ihre Herrschaften abzuholen. Reichgekleidete Herren und Damen treten in Gruppen
-            aus demselben und verlieren sich in den Straßen. <hi>Faust</hi> kommt ebenfalls aus dem
-            Hause, in welchem <hi>Mephistopheles</hi> ihn zurückzuhalten sucht. Er reißt sich jedoch
-            los und tritt in den Vordergrund.</stage>
+            aus demselben und verlieren sich in den Straßen. <emph>Faust</emph> kommt ebenfalls aus
+            dem Hause, in welchem <emph>Mephistopheles</emph> ihn zurückzuhalten sucht. Er reißt
+            sich jedoch los und tritt in den Vordergrund.</stage>
           <stage>Nr. 1. Introduction.</stage>
           <stage>Menuetto (C dur). (Musik hinter dem Theater.)</stage>
           <stage>Recitativ.</stage>
@@ -323,8 +325,8 @@
               <l>Das <emph>Böseste</emph> hängt oft daran.</l>
               <l>Du strafst dich selbst durch deinen Wahn!)</l>
             </lg>
-            <stage>Nr. 2. Recitativ.</stage>
           </sp>
+          <stage>Nr. 2. Recitativ.</stage>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
             <l>Wohlan! Hinweg aus diesem Sinnentaumel!</l>
@@ -457,8 +459,8 @@
         </div>
         <div type="scene">
           <head>Dritte Scene.</head>
-          <stage><hi>Wohlhaldt, Wagner, Kaylinger</hi> und <hi>Moor</hi> sitzen zechend am
-            Tisch.</stage>
+          <stage><emph>Wohlhaldt</emph>, <emph>Wagner</emph>, <emph>Kaylinger</emph> und
+              <emph>Moor</emph> sitzen zechend am Tisch.</stage>
           <stage>Nr. 4. Trinklied mit Chor.</stage>
           <sp who="#wohlhaldt">
             <speaker>WOHLHALDT.</speaker>
@@ -652,7 +654,7 @@
         </div>
         <div type="scene">
           <head>Vierte Scene.</head>
-          <stage><hi>Wagner</hi> schlafend, <hi>Faust</hi> und <hi>Röschen</hi>.</stage>
+          <stage><emph>Wagner</emph> schlafend, <emph>Faust</emph> und <emph>Röschen</emph>.</stage>
           <stage>Nr. 5. Recitativ.</stage>
           <sp who="#faust">
             <speaker>FAUST.</speaker>
@@ -927,7 +929,8 @@
         </div>
         <div type="scene">
           <head>Siebente Scene.</head>
-          <stage><hi>Faust, Wohlhaldt, Wagner, Moor, Kaylinger</hi>.</stage>
+          <stage><emph>Faust</emph>, <emph>Wohlhaldt</emph>, <emph>Wagner</emph>, <emph>Moor</emph>,
+              <emph>Kaylinger</emph>.</stage>
           <sp who="#wohlhaldt #wagner #moor #kaylinger">
             <speaker>FAUST'S FREUNDE</speaker>
             <stage>rasch eintretend.</stage>
@@ -940,8 +943,8 @@
         </div>
         <div type="scene">
           <head>Achte Scene.</head>
-          <stage>Vorige. <hi>Franz</hi> und Chor des Volkes und der Gerichtsdiener treten stürmisch
-            durch die Mitte auf.</stage>
+          <stage>Vorige. <emph>Franz</emph> und Chor des Volkes und der Gerichtsdiener treten
+            stürmisch durch die Mitte auf.</stage>
           <sp who="#franz">
             <speaker>FRANZ</speaker>
             <stage>zu den Gerichtsdienern und dem Volke.</stage>
@@ -1221,7 +1224,7 @@
         </div>
         <div type="scene">
           <head>Zehnte Scene.</head>
-          <stage><hi>Kunigunde. Gulf</hi>.</stage>
+          <stage><emph>Kunigunde</emph>. <emph>Gulf</emph>.</stage>
           <stage>Nr. 8. Recitativ.</stage>
           <sp who="#gulf">
             <speaker>GULF.</speaker>
@@ -1298,7 +1301,7 @@
         </div>
         <div type="scene">
           <head>Elfte Scene.</head>
-          <stage>Graf <hi>Hugo</hi> mit Gefolge.</stage>
+          <stage>Graf <emph>Hugo</emph> mit Gefolge.</stage>
           <stage>Nr. 9. Recitativ.</stage>
           <sp who="#hugo">
             <speaker>HUGO.</speaker>
@@ -1388,7 +1391,7 @@
         </div>
         <div type="scene">
           <head>Dreizehnte Scene.</head>
-          <stage><hi>Franz</hi> und <hi>Röschen</hi> treten von links auf.</stage>
+          <stage><emph>Franz</emph> und <emph>Röschen</emph> treten von links auf.</stage>
           <sp who="#franz">
             <speaker>FRANZ.</speaker>
             <lg>
@@ -1526,7 +1529,7 @@
         </div>
         <div type="scene">
           <head>Vierzehnte Scene.</head>
-          <stage>Vorige. <hi>Mephistopheles</hi> aus der Versenkung.</stage>
+          <stage>Vorige. <emph>Mephistopheles</emph> aus der Versenkung.</stage>
           <sp who="#mephistopheles">
             <speaker>MEPHISTOPHELES</speaker>
             <stage>rückwärts.</stage>
@@ -1535,8 +1538,11 @@
               <l>Schweiget, Raben! Sturm, sei fern!</l>
               <pb n="24"/>
             </lg>
+          </sp>
+          <sp who="#franz">
+            <speaker>FRANZ</speaker>
+            <l>schläfrig.</l>
             <lg>
-              <l>FRANZ (SCHLÄFRIG)</l>
               <l>Sie schlummert ein! Sie schläft! O Glück!</l>
               <l>Nun bringt sie leicht mein Arm zurück!</l>
             </lg>
@@ -1564,8 +1570,8 @@
         </div>
         <div type="scene">
           <head>Fünfzehnte Scene.</head>
-          <stage><hi>Faust, Mephistopheles, Hugo</hi>, Ritter und Gefolge treten behutsam
-            auf.</stage>
+          <stage><emph>Faust</emph>, <emph>Mephistopheles</emph>, <emph>Hugo</emph>, Ritter und
+            Gefolge treten behutsam auf.</stage>
           <stage>Nr. 11. Recitativ.</stage>
           <sp who="#hugo">
             <speaker>HUGO.</speaker>
@@ -1635,7 +1641,7 @@
         </div>
         <div type="scene">
           <head>Sechzehnte Scene.</head>
-          <stage>Vorige. <hi>Gulf</hi> erscheint auf dem Söller.</stage>
+          <stage>Vorige. <emph>Gulf</emph> erscheint auf dem Söller.</stage>
           <sp who="#hugo">
             <speaker>HUGO.</speaker>
             <l>(Was giebt ihm solche Zuversicht?)</l>
@@ -1695,8 +1701,8 @@
         </div>
         <div type="scene">
           <head>Achtzehnte Scene.</head>
-          <stage>Vorige. <hi>Gulf, Kunigunde</hi>, von einer Dienerin gefolgt, treten auf den
-            Söller.</stage>
+          <stage>Vorige. <emph>Gulf</emph>, <emph>Kunigunde</emph>, von einer Dienerin gefolgt,
+            treten auf den Söller.</stage>
           <sp who="#kunigunde">
             <speaker>KUNIGUNDE</speaker>
             <stage>die Arme nach Hugo breitend.</stage>
@@ -1822,11 +1828,11 @@
               <l>Stürz' mit Krachen dann zusammen, –</l>
               <l>Ihm zur heißen Todespein!)</l>
             </lg>
-            <stage>Blitz und Donner.</stage>
-            <lg>
-              <l>HUGO'S BEGLEITER.</l>
-              <l>Auf, zur Rache! auf!</l>
-            </lg>
+          </sp>
+          <stage>Blitz und Donner.</stage>
+          <sp who="#hugos_begleiter">
+            <speaker>HUGO'S BEGLEITER.</speaker>
+            <l>Auf, zur Rache! auf!</l>
             <stage>Stärkerer Donner.</stage>
           </sp>
           <sp who="#hugo #hugos_begleiter">
@@ -1848,9 +1854,11 @@
           <sp who="#chor">
             <speaker>CHOR</speaker>
             <stage>im Innern des Schlosses.</stage>
+            <l>Weh, wir sind verloren!</l>
+          </sp>
+          <sp who="#hugos_begleiter">
+            <speaker>HUGO'S BEGLEITER.</speaker>
             <lg>
-              <l>Weh, wir sind verloren!</l>
-              <l>HUGO'S BEGLEITER.</l>
               <l>Will des Himmels Zorn</l>
               <l>Selbst den Frevel rächen?</l>
             </lg>
@@ -1871,9 +1879,10 @@
         </div>
         <div type="scene">
           <head>Zwanzigste Scene.</head>
-          <stage>Vorige. <hi>Kunigunde, Gulf</hi> und Bewohner des Schlosses. Dienerinnen.</stage>
-          <stage><hi>Kunigunde</hi> eilt dem Grafen <hi>Hugo</hi> entgegen. <hi>Gulf</hi> verfolgt
-            sie mit gezogenem Schwert.</stage>
+          <stage>Vorige. <emph>Kunigunde</emph>, <emph>Gulf</emph> und Bewohner des Schlosses.
+            Dienerinnen.</stage>
+          <stage><emph>Kunigunde</emph> eilt dem Grafen <emph>Hugo</emph> entgegen.
+              <emph>Gulf</emph> verfolgt sie mit gezogenem Schwert.</stage>
           <sp who="#kunigunde">
             <speaker>KUNIGUNDE.</speaker>
             <lg>
@@ -1919,8 +1928,8 @@
         </div>
         <div type="scene">
           <head>Einundzwanzigste Scene.</head>
-          <stage>Vorige, Chor der Geister [aus Versenkungen] treiben <hi>Gulf</hi>, ihn umtanzend,
-            in die Flammen.</stage>
+          <stage>Vorige, Chor der Geister [aus Versenkungen] treiben <emph>Gulf</emph>, ihn
+            umtanzend, in die Flammen.</stage>
           <sp who="#chor_der_geister">
             <speaker>GEISTER.</speaker>
             <lg>
@@ -2074,7 +2083,7 @@
         </div>
         <div type="scene">
           <head>Zweite Scene.</head>
-          <stage>Vorige. <hi>Faust</hi> und <hi>Mephistopheles</hi>.</stage>
+          <stage>Vorige. <emph>Faust</emph> und <emph>Mephistopheles</emph>.</stage>
           <sp who="#chor">
             <speaker>CHOR.</speaker>
             <stage>Die Hexen umtanzen die Kommenden.</stage>
@@ -2173,7 +2182,7 @@
         </div>
         <div type="scene">
           <head>Dritte Scene.</head>
-          <stage>Vorige. <hi>Sycorax</hi> mit einem Becher oder einer Schale, steigt aus dem
+          <stage>Vorige. <emph>Sycorax</emph> mit einem Becher oder einer Schale, steigt aus dem
             Boden.</stage>
           <sp who="#sycorax">
             <speaker>SYCORAX.</speaker>
@@ -2361,7 +2370,7 @@
         </div>
         <div type="scene">
           <head>Vierte Scene.</head>
-          <stage><hi>Franz</hi> und <hi>Röschen</hi>.</stage>
+          <stage><emph>Franz</emph> und <emph>Röschen</emph>.</stage>
           <stage>Nr. 13. Recitativ.</stage>
           <sp who="#franz">
             <speaker>FRANZ.</speaker>
@@ -2465,7 +2474,7 @@
         </div>
         <div type="scene">
           <head>Siebente Scene.</head>
-          <stage><hi>Röschen; Franz</hi>, aus dem Dom.</stage>
+          <stage><emph>Röschen</emph>; <emph>Franz</emph>, aus dem Dom.</stage>
           <stage>Nr. 14. Recitativ.</stage>
           <sp who="#franz">
             <speaker>FRANZ</speaker>
@@ -2516,9 +2525,11 @@
             <lg>
               <l>Ah, siehe da! die schöne Nachbarin!</l>
               <l>Willkommen hier!</l>
-              <l>WAGNER, KAYLINGER, MOOR.</l>
-              <l>Willkommen hier!</l>
             </lg>
+          </sp>
+          <sp who="#wagner #kaylinger #moor">
+            <speaker>WAGNER, KAYLINGER, MOOR.</speaker>
+            <l>Willkommen hier!</l>
             <stage>Alle begrüßen Röschen. Wohlhaldt spricht während des Folgenden eifrig mit ihr,
               sie sucht sich von ihm loszumachen.</stage>
           </sp>
@@ -2631,9 +2642,9 @@
         <div type="scene">
           <head>Neunte Scene.</head>
           <stage>Vorige. Trauungszug aus der Kirche. Die Hochzeitsgäste gehen paarweise voran.
-            Zuletzt <hi>Faust, Hugo</hi> und <hi>Kunigunde</hi>, letztere von Faust geführt, der
-            sich angelegentlich mit ihr beschäftigt. – <hi>Röschen</hi> will zu Faust eilen,
-              <hi>Franz</hi> hält sie zurück.</stage>
+            Zuletzt <emph>Faust</emph>, <emph>Hugo</emph> und <emph>Kunigunde</emph>, letztere von
+            Faust geführt, der sich angelegentlich mit ihr beschäftigt. – <emph>Röschen</emph> will
+            zu Faust eilen, <emph>Franz</emph> hält sie zurück.</stage>
           <sp who="#franz">
             <speaker>FRANZ.</speaker>
             <lg>
@@ -2882,10 +2893,10 @@
         </div>
         <div type="scene">
           <head>Zwölfte Scene.</head>
-          <stage><hi>Kunigunde; Hugo</hi> tritt zu Ende des Gesanges ein, geht liebevoll auf
-            Kunigunden zu, ihr die Hand reichend. Kunigunde sucht ihre Aufregung zu bekämpfen und
-            geht ihm entgegen. Die ankommenden Hochzeitsgäste werden von Hugo und Kunigunden
-            begrüßt.</stage>
+          <stage><emph>Kunigunde</emph>; <emph>Hugo</emph> tritt zu Ende des Gesanges ein, geht
+            liebevoll auf Kunigunden zu, ihr die Hand reichend. Kunigunde sucht ihre Aufregung zu
+            bekämpfen und geht ihm entgegen. Die ankommenden Hochzeitsgäste werden von Hugo und
+            Kunigunden begrüßt.</stage>
           <stage>Nr. 17. Finale.</stage>
           <sp who="#hochzeitsgaeste">
             <speaker>HOCHZEITSGÄSTE.</speaker>
@@ -3000,7 +3011,8 @@
         </div>
         <div type="scene">
           <head>Dreizehnte Scene.</head>
-          <stage>Vorige. <hi>Faust. Mephistopheles</hi> und Faust's Gefährten.</stage>
+          <stage>Vorige. <emph>Faust</emph>. <emph>Mephistopheles</emph> und Faust's
+            Gefährten.</stage>
           <sp who="#hugo">
             <speaker>HUGO</speaker>
             <stage>sie bewillkommnend.</stage>
@@ -3049,10 +3061,11 @@
         </div>
         <div type="scene">
           <head>Vierzehnte Scene.</head>
-          <stage>Vorige. <hi>Röschen</hi> in Männerkleidung und <hi>Franz. Hugo</hi> übergiebt
-              <hi>Kunigunden</hi> an <hi>Faust</hi>, die sich mit ihm in den Vordergrund
-            niedersetzt. <hi>Hugo</hi> und <hi>Mephistopheles</hi> setzen sich ihnen gegenüber. Die
-            vier Gefährten Faust's nehmen ebenfalls Platz.</stage>
+          <stage>Vorige. <emph>Röschen</emph> in Männerkleidung und <emph>Franz</emph>.
+              <emph>Hugo</emph> übergiebt <emph>Kunigunden</emph> an <emph>Faust</emph>, die sich
+            mit ihm in den Vordergrund niedersetzt. <emph>Hugo</emph> und
+              <emph>Mephistopheles</emph> setzen sich ihnen gegenüber. Die vier Gefährten Faust's
+            nehmen ebenfalls Platz.</stage>
           <sp who="#roeschen">
             <speaker>RÖSCHEN</speaker>
             <stage>hinter der Stuhlreihe, Faust gegenüber.</stage>
@@ -3457,7 +3470,7 @@
         </div>
         <div type="scene">
           <head>Zweite Scene.</head>
-          <stage><hi>Mephistopheles, Sycorax</hi> und Chor der Hexen.</stage>
+          <stage><emph>Mephistopheles</emph>, <emph>Sycorax</emph> und Chor der Hexen.</stage>
           <sp who="#chor">
             <speaker>CHOR</speaker>
             <stage>hinter der Scene.</stage>
@@ -3564,7 +3577,7 @@
         </div>
         <div type="scene">
           <head>Vierte Scene.</head>
-          <stage><hi>Faust. Wagner</hi> kommt eilig.</stage>
+          <stage><emph>Faust</emph>. <emph>Wagner</emph> kommt eilig.</stage>
           <sp who="#wagner">
             <speaker>WAGNER.</speaker>
             <l>Da find' ich endlich Euch!</l>
@@ -3647,7 +3660,8 @@
         </div>
         <div type="scene">
           <head>Sechste Scene.</head>
-          <stage><hi>Kunigunde, Röschen, Mephistopheles, Franz</hi> und <hi>Wohlhaldt</hi>.</stage>
+          <stage><emph>Kunigunde</emph>, <emph>Röschen</emph>, <emph>Mephistopheles</emph>,
+              <emph>Franz</emph> und <emph>Wohlhaldt</emph>.</stage>
           <sp who="#roeschen">
             <speaker>RÖSCHEN.</speaker>
             <lg>
@@ -3784,7 +3798,7 @@
         </div>
         <div type="scene">
           <head>Siebente Scene.</head>
-          <stage>Vorige. <hi>Faust</hi> und <hi>Wagner</hi>.</stage>
+          <stage>Vorige. <emph>Faust</emph> und <emph>Wagner</emph>.</stage>
           <sp who="#kunigunde">
             <speaker>KUNIGUNDE.</speaker>
             <l>(Er naht! Bald ist erreicht mein Ziel!)</l>
@@ -3910,7 +3924,7 @@
         </div>
         <div type="scene">
           <head>Achte Scene.</head>
-          <stage>Vorige. <hi>Wohlhaldt</hi>.</stage>
+          <stage>Vorige. <emph>Wohlhaldt</emph>.</stage>
           <sp who="#wohlhaldt">
             <speaker>WOHLHALDT</speaker>
             <stage>in Eile, sich furchtsam umsehend.</stage>
@@ -3956,7 +3970,7 @@
         </div>
         <div type="scene">
           <head>Neunte Scene.</head>
-          <stage>Vorige. <hi>Kaylinger</hi>.</stage>
+          <stage>Vorige. <emph>Kaylinger</emph>.</stage>
           <sp who="#kaylinger">
             <speaker>KAYLINGER</speaker>
             <stage>eben so eilig und erschrocken.</stage>
@@ -4043,7 +4057,7 @@
         </div>
         <div type="scene">
           <head>Zehnte Scene.</head>
-          <stage>Vorige. <hi>Wagner</hi>.</stage>
+          <stage>Vorige. <emph>Wagner</emph>.</stage>
           <sp who="#wagner">
             <speaker>WAGNER</speaker>
             <stage>in Eile und Schrecken.</stage>
@@ -4184,7 +4198,7 @@
         </div>
         <div type="scene">
           <head>Elfte Scene.</head>
-          <stage><hi>Faust. Mephistopheles</hi>.</stage>
+          <stage><emph>Faust</emph>. <emph>Mephistopheles</emph>.</stage>
           <sp who="#faust">
             <speaker>FAUST</speaker>
             <stage>vernichtet zurückprallend.</stage>
