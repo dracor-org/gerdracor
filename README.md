@@ -18,7 +18,7 @@ If you just want to download the corpus in its current state in XML-TEI, do this
 An easy way to download the network data (instead of the actual TEI files) is to use our API ([documentation here](https://dracor.org/documentation/api/)). If you have [jq](http://blog.librato.com/posts/jq-json) installed, it would work like this:
 
 ```
-for play in `curl 'https://dracor.org/api/corpora/ger' | jq -r ".dramas[] .id"`; do
+for play in `curl 'https://dracor.org/api/corpora/ger' | jq -r ".dramas[] .name"`; do
     wget -O "$play".csv https://dracor.org/api/corpora/ger/play/"$play"/networkdata/csv
 done
 ```
