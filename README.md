@@ -32,7 +32,7 @@ To take a first look at the distribution of the number of speakers per play over
 library(data.table)
 library(ggplot2)
 gerdracor <- fread("https://dracor.org/api/corpora/ger/metadata.csv")
-ggplot(gerdracor[], aes(x = year, y = numOfSpeakers)) + geom_point()
+ggplot(gerdracor[], aes(x = yearNormalized, y = numOfSpeakers)) + geom_point()
 ```
 
 Result:
