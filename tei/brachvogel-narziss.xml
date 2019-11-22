@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
   <teiHeader>
     <fileDesc>
@@ -48,7 +49,7 @@
             <persName>Barjac</persName>
           </person>
           <person xml:id="epinay" sex="FEMALE">
-            <persName>Epinay</persName>
+            <persName>Marquise d'Epinay</persName>
           </person>
           <person xml:id="grimm" sex="MALE">
             <persName>Grimm</persName>
@@ -65,39 +66,90 @@
           <person xml:id="boufflers" sex="FEMALE">
             <persName>Marquise de Boufflers</persName>
           </person>
+          <personGrp xml:id="gesellschaft_alle_die_anderen" sex="UNKNOWN">
+            <name>Gesellschaft/Alle/Alle Übrigen/Alles/Die Anderen (I/7–11)</name>
+          </personGrp>
+          <personGrp xml:id="diener_1-7" sex="MALE">
+            <name>Diener (I/7)</name>
+          </personGrp>
           <person xml:id="diderot" sex="MALE">
             <persName>Diderot</persName>
           </person>
           <person xml:id="narziss" sex="MALE">
-            <persName>Narziß</persName>
+            <persName>Narziß Rameau</persName>
           </person>
           <person xml:id="dubarry" sex="MALE">
-            <persName>Dubarry</persName>
+            <persName>Graf Dubarry</persName>
           </person>
           <person xml:id="choiseul" sex="MALE">
-            <persName>Choiseul</persName>
+            <persName>Herzog von Choiseul-d'Amboise</persName>
+          </person>
+          <person xml:id="lakai" sex="MALE">
+            <persName>Lakai</persName>
           </person>
           <person xml:id="colette" sex="FEMALE">
             <persName>Colette</persName>
           </person>
           <person xml:id="terray" sex="MALE">
-            <persName>Terray</persName>
+            <persName>Abbé Terray</persName>
           </person>
           <person xml:id="silhouette" sex="MALE">
-            <persName>Silhouette</persName>
+            <persName>Marquis Silhouette</persName>
           </person>
           <person xml:id="maupeou" sex="MALE">
             <persName>Maupeou</persName>
           </person>
+          <person xml:id="erster_kavalier" sex="MALE">
+            <persName>Erster Kavalier</persName>
+          </person>
+          <person xml:id="zweiter_kavalier" sex="MALE">
+            <persName>Zweiter Kavalier</persName>
+          </person>
           <person xml:id="pompadour" sex="FEMALE">
             <persName>Marquise de Pompadour</persName>
           </person>
+          <person xml:id="erster_page" sex="MALE">
+            <persName>Erster Page</persName>
+          </person>
+          <person xml:id="zweiter_page" sex="MALE">
+            <persName>Zweiter Page</persName>
+          </person>
+          <personGrp xml:id="sechs_hofdamen" sex="FEMALE">
+            <name>Sechs Hofdamen</name>
+          </personGrp>
+          <personGrp xml:id="zwei_kammerdiener" sex="MALE">
+            <name>Zwei Kammerdiener</name>
+          </personGrp>
           <person xml:id="conti" sex="MALE">
             <persName>Conti</persName>
+          </person>
+          <person xml:id="wache" sex="MALE">
+            <persName>Wache</persName>
+          </person>
+          <person xml:id="eine_dame" sex="FEMALE">
+            <persName>Eine Dame</persName>
           </person>
           <person xml:id="koenigin" sex="FEMALE">
             <persName>Königin</persName>
           </person>
+          <person xml:id="diener_4-1_und_4-2" sex="MALE">
+            <persName>Diener (IV/1–2)</persName>
+          </person>
+          <person xml:id="stimme_gardist" sex="MALE">
+            <persName>Stimme (Gardist)</persName>
+          </person>
+          <person xml:id="stimme_posten" sex="MALE">
+            <persName>Stimme (Posten)</persName>
+          </person>
+          <personGrp xml:id="drei_hofdamen" sex="FEMALE">
+            <name>Drei Hofdamen</name>
+          </personGrp>
+          <person xml:id="ein_kavalier" sex="MALE">
+            <persName>Ein Kavalier</persName>
+          </person>
+          <personGrp xml:id="zwei_gardisten" sex="MALE">
+            <name>Zwei Gardisten</name>
+          </personGrp>
           <listRelation type="personal">
             <relation name="associated_with" active="#pompadour" passive="#koenigin" />
             <relation name="associated_with" active="#epinay" passive="#pompadour" />
@@ -116,6 +168,7 @@
     <revisionDesc>
       <listChange>
         <change when="2019-06-29">(ff) convert from source; person groups not resolved yet</change>
+        <change when="2019-07-20">(ff) revise IDs; correct some typos</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -133,7 +186,7 @@
           Gönner erworben hat, halte ich es für Pflicht, denselben nun auf buchhändlerischem Wege
           allen denen zugänglich zu machen, die ihn nicht nur eben gut genug zu flüchtiger
           Unterhaltung, sondern der Ehre eines längeren Umgangs wert erachten mögen.</p>
-        <p>Den Stoff und äußeren Anlaß zu diesem Trauerspiele gab mir Diderots Dialog »Nameaus
+        <p>Den Stoff und äußeren Anlaß zu diesem Trauerspiele gab mir Diderots Dialog »Rameaus
           Neffe«, den Altmeister Goethe zuerst verdeutscht hat; ferner Merciers <emph>Tableaux de
             Paris</emph>.</p>
         <p>Fabel, Charakter und Anschauung sind mein eigen, so daß ich die Arbeit wohl ohne zu
@@ -290,8 +343,8 @@
           zu öffnen, sind als Narziß der verstorbene Joseph Wagner, nunmehr Sonnenthal – als
           Pompadour in nahezu höchster Vollendung aber Frau Therese Gabillon zu nennen. Zu Dresden
           spielten Davison und Emil Devrient die Titelrolle, Fräulein Pauline Ulrich hat noch die
-          Pompadour inne. Zu München sich noch heute Possart und Klara Ziegler in den Hauptrollen
-          rühmlichst aus.</p>
+          Pompadour inne. Zu München zeichnen sich noch heute Possart und Klara Ziegler in den
+          Hauptrollen rühmlichst aus.</p>
         <p>Auch das Ausland machte sich »Narziß« gehörig zunutze. In Italien brachte ihn Madame
           Ristori als <emph>»il Daniele«</emph>, in Amerika und England Mister D. Bandmann durch
           zahlreiche Darstellungen zu großem Rufe, ohne daß ich indes je einen reelleren Lohn meiner
@@ -358,7 +411,7 @@
     <body>
       <div type="act">
         <head>Erster Aufzug.</head>
-        <stage>Paris 1764. – Salon des Baron von Holbach Nachmittag.</stage>
+        <stage>Paris 1764. – Salon des Baron von Holbach (Nachmittag).</stage>
         <stage>Eleganter Gesellschaftssaal im Stil des Zeitalters. In der Mitte und rechts nach dem
           Hintergrunde zu eine Tür. Links nach dem Beschauer ein prächtiger Kamin. Rechts nach dem
           Vordergrunde ein Fenster. Vor dem Kamin, um eine Tafel, welche mit Globen, Landkarten und
@@ -743,8 +796,7 @@
           </sp>
         </div>
         <div type="scene">
-          <head>
-            <pb n="21"/> Siebenter Auftritt.</head>
+          <head><pb n="21"/> Siebenter Auftritt.</head>
           <stage>Die Vorigen. Marquise Epinay.</stage>
           <sp who="#epinay">
             <speaker>EPINAY.</speaker>
@@ -756,11 +808,11 @@
               sind vollzählig bis auf Diderot. Die Götter mögen wissen, wo er bleibt. Er wird uns
               die versprochene Vorlesung, wie es scheint, schuldig bleiben.</p>
           </sp>
-          <sp who="#grimm #boufflers #gesellschaft">
+          <sp who="#grimm #boufflers #gesellschaft_alle_die_anderen">
             <speaker>GRIMM, MARQUISE DE BOUFFLERS UND GESELLSCHAFT</speaker>
             <stage>von rechts.</stage>
           </sp>
-          <sp who="#barjac #diener">
+          <sp who="#barjac #diener_1-7">
             <speaker>BARJAC UND DIENER</speaker>
             <stage>welche Tee bringen, durch die Mitte.</stage>
           </sp>
@@ -768,7 +820,7 @@
             <speaker>HOLBACH, SAINT-LAMBERT UND QUINAULT</speaker>
             <stage>treten nach links und unterhalten sich.</stage>
           </sp>
-          <sp who="#boufflers #einige_aus_der_gesellschaft">
+          <sp who="#boufflers #gesellschaft_alle_die_anderen">
             <speaker>DE BOUFFLERS UND EINIGE AUS DER GESELLSCHAFT</speaker>
             <stage>bilden eine Gruppe im Hintergrunde.</stage>
           </sp>
@@ -826,9 +878,8 @@
           </sp>
         </div>
         <div type="scene">
-          <head>
-            <pb n="22"/> Neunter Auftritt.</head>
-          <stage>Die vorigen. Diderot.</stage>
+          <head><pb n="22"/> Neunter Auftritt.</head>
+          <stage>Die Vorigen. Diderot.</stage>
           <sp who="#holbach">
             <speaker>HOLBACH</speaker>
             <stage>deutet auf Diderot.</stage>
@@ -851,7 +902,7 @@
             <p>Ich muß mein Zuspätkommen entschuldigen. Ich wurde aufgehalten im Café Prokop und
               habe zu viel gehört, um nicht von Ihnen Verzeihung zu erhalten, wenn ich beichte.</p>
           </sp>
-          <sp who="#alle">
+          <sp who="#gesellschaft_alle_die_anderen">
             <speaker>ALLE</speaker>
             <stage>durcheinander.</stage>
             <p>Was sagt er? – Laßt hören! – Ei, erzählt doch! <stage>Sie umgeben ihn.</stage></p>
@@ -1043,7 +1094,7 @@
             <stage>lachend.</stage>
             <p>Nun, mein Gott, wir lassen ihn heraufkommen!</p>
           </sp>
-          <sp who="#alle">
+          <sp who="#gesellschaft_alle_die_anderen">
             <speaker>ALLE</speaker>
             <stage>lachend, durcheinander.</stage>
             <p>Ach ja!</p>
@@ -1097,7 +1148,7 @@
               der Papagei der Pariser Gesellschaft, ja der Papagei unseres tollen Jahrhunderts. – Da
               kommt er schon!</p>
           </sp>
-          <sp who="#alle">
+          <sp who="#gesellschaft_alle_die_anderen">
             <speaker>ALLE</speaker>
             <stage>wenden sich nach der Tür, so daß die Mitte frei bleibt.</stage>
           </sp>
@@ -1193,7 +1244,7 @@
           </sp>
           <sp who="#narziss">
             <speaker>NARZIß.</speaker>
-            <p>Deinen, der einer ist, natürlich!</p>
+            <p>Kaeinen, der einer ist, natürlich!</p>
           </sp>
           <sp who="#holbach">
             <speaker>HOLBACH.</speaker>
@@ -1221,11 +1272,11 @@
               Menschen, die nichts schreiben wollen – Träumer, Verrückte, verkommene Menschen mit
               erquetschten Herzen, die als Schaum auf dem stagnierenden Sumpfe der Pariser
               Gesellschaft schwimmen, wie ich; – Leute, die von wer weiß was leben, nur nicht von
-              Schriftstellerei. – Da kommt aus einmal ein sonderbares Ding über sie, das niemand so
+              Schriftstellerei. – Da kommt auf einmal ein sonderbares Ding über sie, das niemand so
               eigentlich kennt. Es hängt in der Luft, es ist da, aber man kann's nicht fassen; es
               kommt über einen allmächtig wie ein neuer Glaube, der die Tore der Zukunft aufreißt,
               durch die unsre Sehnsucht in die Perspektive aller Ewigkeiten schreitet; – es regiert
-              einen dann ganz und gar, setzt sich eifern in Herz und Hirn, und will man's los
+              einen dann ganz und gar, setzt sich eisern in Herz und Hirn, und will man's los
               werden, so wird – ein Buch daraus.</p>
           </sp>
           <sp who="#quinault">
@@ -1249,7 +1300,7 @@
             <speaker>DIDEROT.</speaker>
             <p>Bravo, das ist köstlich!</p>
           </sp>
-          <sp who="#alle">
+          <sp who="#gesellschaft_alle_die_anderen">
             <speaker>ALLE</speaker>
             <stage>geben außer Grimm und d'Epinay ihren Beifall zu erkennen.</stage>
           </sp>
@@ -1307,7 +1358,7 @@
               ich habe mich doch so lieb, mein Gott! – so lieb! – <stage>Er versinkt in stiere
                 Apathie.</stage></p>
           </sp>
-          <sp who="#alle">
+          <sp who="#gesellschaft_alle_die_anderen">
             <speaker>ALLE</speaker>
             <stage>sind erschrocken um ihn getreten.</stage>
           </sp>
@@ -1424,7 +1475,7 @@
             <p>Das einzig wahre Glück des Lebens besteht in – der regelmäßigen Verdauung; der Konsum
               ist die <emph>causa movens</emph> des Weltbaus!</p>
           </sp>
-          <sp who="#alle">
+          <sp who="#gesellschaft_alle_die_anderen">
             <speaker>ALLE</speaker>
             <stage>empört aufstehend, durcheinander.</stage>
             <p>Pfui!!</p>
@@ -1506,7 +1557,7 @@
               Eins aber ist immer an mir zu rühmen – daß ich über meine Handlungen ohne Schimpf,
               ohne Scham lachen kann – und wenn mich ganz Paris verachtet, solange ich mich nicht
               verachte, lache ich euch allen in die Zähne! – Ho, wenn ich ein ausgelernter Spitzbube
-              wäre, ich wäre jetzt ein berührter Mann – etwa wie Grimm, der weiße Tyrann, der seine
+              wäre, ich wäre jetzt ein berühmter Mann – etwa wie Grimm, der weiße Tyrann, der seine
               Qualität der Materie, seinen Geist, erst zur Geltung bringen konnte, als er seinem
               Freunde Jean-Jacques einen Fußtritt verabreichte, <pb n="32"/> und doch hatte ihn
               Rousseau in anständige Gesellschaft gebracht, wie Ihr mich, Diderot. Hahahaha, laßt
@@ -1595,7 +1646,7 @@
             <stage>starr.</stage>
             <p>Er ist's!!</p>
           </sp>
-          <sp who="#alle_uebrigen">
+          <sp who="#gesellschaft_alle_die_anderen">
             <speaker>ALLE ÜBRIGEN</speaker>
             <stage>sind erstaunt näher getreten.</stage>
           </sp>
@@ -1649,7 +1700,7 @@
             <stage>gehen rasch durch die Mitte ab.</stage>
             <stage>Kurze Pause.</stage>
           </sp>
-          <sp who="#alles">
+          <sp who="#gesellschaft_alle_die_anderen">
             <speaker>ALLES</speaker>
             <stage>starr.</stage>
           </sp>
@@ -1697,7 +1748,7 @@
             <p>Die Pompadour will <emph>gekrönt</emph> ins Grab steigen! Der <emph>Dispens</emph>
               aus <emph>Rom</emph> ist da!</p>
           </sp>
-          <sp who="#alle">
+          <sp who="#gesellschaft_alle_die_anderen">
             <speaker>ALLE</speaker>
             <stage>aufschreiend.</stage>
             <p>Die Pompadour? –</p>
@@ -1723,7 +1774,7 @@
             <speaker>LAMBERT.</speaker>
             <p>Ich begleite Sie! <stage>Er geht ihr nach.</stage></p>
           </sp>
-          <sp who="#die_anderen">
+          <sp who="#gesellschaft_alle_die_anderen">
             <speaker>DIE ANDEREN</speaker>
             <stage>starren ihnen sprachlos nach.</stage>
             <stage>Der Vorhang fällt rasch.</stage>
@@ -1944,8 +1995,7 @@
           </sp>
         </div>
         <div type="scene">
-          <head>
-            <pb n="39"/> Zweiter Auftritt.</head>
+          <head><pb n="39"/> Zweiter Auftritt.</head>
           <stage>Choiseul allein.</stage>
           <sp who="#choiseul">
             <speaker>CHOISEUL.</speaker>
@@ -2168,13 +2218,13 @@
           <sp who="#choiseul">
             <speaker>CHOISEUL</speaker>
             <stage>geht rechts ab.</stage>
-            <p>
-              <pb n="43"/> Verwandlung.</p>
+            <pb n="43"/>
+            <stage>Verwandlung.</stage>
             <stage>Wohnung der Mademoiselle Quinault.</stage>
             <stage>Kleiner eleganter Salon. Links eine und in der Mitte zwei Türen. Links Sofa,
               davor ein Tisch mit Papieren, Putzartikeln usw. Zwischen beiden Türen des
               Hintergrundes ein Ripptisch, auf dessen Sims Karitäten und Rippes, u.a. ein
-              porzellanener Chinese mit beweglichem Kopf Pagode, ferner eine Pendule steht. Rechts
+              porzellanener Chinese mit beweglichem Kopf (Pagode), ferner eine Pendule steht. Rechts
               ein Fenster, in dessen Nähe ein Sessel, aber gegen das Sofa gewendet.</stage>
           </sp>
         </div>
@@ -2316,7 +2366,7 @@
               Vaterland ist die Schaubühne der Jugenderinnerungen. – Man hat mich wie einen Hund
               geprügelt, mir oft nichts zu essen gegeben und mich wie einen Mönch erzogen, damit ich
               auch ja ein Lump werde! – Das sind <emph>meine</emph> Jugenderinnerungen! – Und
-              Freunde? – Hat man denn jemals freunde im Leben? Gibt's denn eine Treue bis übers
+              Freunde? – Hat man denn jemals Freunde im Leben? Gibt's denn eine Treue bis übers
               Grab? Haha, geht doch!</p>
           </sp>
           <sp who="#quinault">
@@ -2504,7 +2554,7 @@
             <stage>aufspringend.</stage>
             <p>Aber ich weiß ja, daß sie lebt! – – Eines Tages begegnete ich meinem Onkel, dem
               Musiker. – »Narziß,« sagte er, »deine ehemalige Frau ist eine vornehme Dame. Wenn du
-              Frankreich verlassen willst, will sie dir zehntausend Frank gebend.« – »Das mag Euch
+              Frankreich verlassen willst, will sie dir zehntausend Frank geben.« – »Das mag Euch
               der Teufel segnen,« brüllte ich und lief davon; – ich lief ins Gehölz von Boulogne,
               wo's recht einsam ist, und <stage>schluchzend.</stage> da hab' ich mein bißchen
               Menschenwürde begraben! <stage>Er wendet sich weinend fort.</stage></p>
@@ -2575,7 +2625,7 @@
           <stage>Die Vorigen. Colette.</stage>
           <sp who="#colette">
             <speaker>COLETTE</speaker>
-            <stage>bleibt an der Tür stehen, indem sie einen Brief emporhält wichtigtuend zu
+            <stage>bleibt an der Tür stehen, indem sie einen Brief emporhält, wichtigtuend zu
               Quinault.</stage>
             <p>Vom Prinzen Conti!</p>
             <stage>Der Vorhang fällt rasch.</stage>
@@ -2584,7 +2634,7 @@
       </div>
       <div type="act">
         <head>Dritter Aufzug.</head>
-        <stage>Versailles nächster Tag Mittag.</stage>
+        <stage>Versailles (nächster Tag Mittag).</stage>
         <stage>Salon der Marquise de Pompadour.</stage>
         <stage>Im überladenen Geschmack des Zeitalters mit vielen Vergoldungen. Durch die offenen
           Arkaden des Hintergrundes, welche von Säulen gebildet werden und mit Vorhängen geziert
@@ -2594,8 +2644,7 @@
           groß, mit schwellenden Damastkissen ausgefüttert ist. An der Tür links und rechts hält je
           ein galonierter Lakai Wache.</stage>
         <div type="scene">
-          <head>
-            <pb n="53"/> Erster Auftritt.</head>
+          <head><pb n="53"/> Erster Auftritt.</head>
           <stage>Marquise Epinay und Choiseul im eifrigsten Gespräch.</stage>
           <sp who="#choiseul">
             <speaker>CHOISEUL.</speaker>
@@ -2663,8 +2712,7 @@
           </sp>
         </div>
         <div type="scene">
-          <head>
-            <pb n="54"/> Zweiter Auftritt.</head>
+          <head><pb n="54"/> Zweiter Auftritt.</head>
           <stage>Choiseul allein.</stage>
           <sp who="#choiseul">
             <speaker>CHOISEUL.</speaker>
@@ -2770,7 +2818,7 @@
             <p>Haha! Dergleichen Bilder heißt der Pöbel nun Silhouetten, weil sie schwarz sind, wie
               die Seele des Marquis und leer wie sein Staatsschatz, haha!</p>
           </sp>
-          <sp who="#alle">
+          <sp who="#dubarry #terray #maupeou">
             <speaker>ALLE</speaker>
             <stage>außer Choiseul und Silhouette lachen.</stage>
           </sp>
@@ -2799,7 +2847,7 @@
             <p>Die Frau Marquise de Pompadour! <stage>Er tritt an die Seite.</stage></p>
             <pb n="56"/>
           </sp>
-          <sp who="#alle">
+          <sp who="#choiseul #dubarry #terray #silhouette #maupeou">
             <speaker>ALLE</speaker>
             <stage>stellen sich rechts in einer Reihe dem Sessel gegenüber auf, so daß dieselbe mit
               Dubarry beginnt, auf den Choiseul, Terray, Silhouette und Maupeou folgen.</stage>
@@ -2813,7 +2861,7 @@
             <stage>erscheint, auf den Arm der Marquise d'Epinay gestützt; sie ist sehr blaß und
               schwach, und in eine prachtvolle Negligérobe gekleidet.</stage>
           </sp>
-          <sp who="#ein_page">
+          <sp who="#erster_page">
             <speaker>EIN PAGE</speaker>
             <stage>folgt ihr mit einem silbernen Tablett, auf dem Arzneien stehen.</stage>
           </sp>
@@ -2825,7 +2873,7 @@
             <speaker>SECHS HOFDAMEN UND ZWEI KAMMERDIENER</speaker>
             <stage>folgen zum Schluß.</stage>
           </sp>
-          <sp who="#die_minister">
+          <sp who="#choiseul #terray #silhouette">
             <speaker>DIE MINISTER</speaker>
             <stage>verbeugen sich.</stage>
           </sp>
@@ -2871,7 +2919,7 @@
             <stage>einfallend.</stage>
             <p>Doch wir hoffen – <stage>Er verbeugt sich.</stage></p>
           </sp>
-          <sp who="#die_minister">
+          <sp who="#choiseul #terray #silhouette">
             <speaker>DIE MINISTER</speaker>
             <stage>geben durch stumme Bewegungen ihr Bedauern zu erkennen.</stage>
           </sp>
@@ -2881,7 +2929,7 @@
             <p>Keine Kondolenzen, meine Herren, das klingt wie ein Totengeläut! Ha! <stage>Sie faßt
                 sich an die Stirn.</stage> Marcel, meine Arznei!</p>
           </sp>
-          <sp who="#page">
+          <sp who="#erster_page">
             <speaker>PAGE</speaker>
             <stage>präsentiert Madame Epinay die Medizin.</stage>
           </sp>
@@ -2918,7 +2966,8 @@
                 sie sich krampfhaft zurück in den Sessel, ein Nervenschauer durchzuckt
               sie.</stage></p>
           </sp>
-          <sp who="#alle">
+          <sp
+            who="#choiseul #epinay #dubarry #terray #silhouette #maupeou #erster_kavalier #zweiter_kavalier #erster_page #zweiter_page #sechs_hofdamen #zwei_kammerdiener">
             <speaker>ALLE</speaker>
             <stage>treten ängstlich einen Schritt näher. Kurze Pause.</stage>
           </sp>
@@ -3037,7 +3086,7 @@
           </sp>
           <sp who="#pompadour">
             <speaker>POMPADOUR.</speaker>
-            <p>Das läßt sieh hören. Ich wünschte aber wohl, daß ein pikantes Ballett eingeflochten
+            <p>Das läßt sich hören. Ich wünschte aber wohl, daß ein pikantes Ballett eingeflochten
               würde. Das ist etwas für den König. – Herr Kanzler, Sie übernehmen das äußere
               Arrangement, der Herr Kammerherr wird das Ballett mit gewohnter Finesse ersinnen, und
               Silhouette hat die Ausgaben zu bestreiten.</p>
@@ -3111,22 +3160,21 @@
             <p>Treten Sie nun ein wenig in die Vorzimmer, meine Chevaliers und Damen, ich habe mit
               dem Herrn Herzog von Choiseul zu sprechen.</p>
           </sp>
-          <sp who="#die_minister">
+          <sp who="#choiseul #terray #silhouette">
             <speaker>DIE MINISTER</speaker>
             <stage>gehen rechts ab.</stage>
           </sp>
-          <sp who="#die_damen #chevaliers #pagen">
+          <sp who="#sechs_hofdamen #erster_kavalier #zweiter_kavalier #erster_page #zweiter_page">
             <speaker>DIE DAMEN, CHEVALIERS UND PAGEN</speaker>
             <stage>gehen links ab.</stage>
           </sp>
-          <sp who="#die_kammerdiener">
+          <sp who="#zwei_kammerdiener">
             <speaker>DIE KAMMERDIENER</speaker>
             <stage>gehen durch den Hintergrund ab.</stage>
           </sp>
         </div>
         <div type="scene">
-          <head>
-            <pb n="60"/> Siebenter Auftritt.</head>
+          <head><pb n="60"/> Siebenter Auftritt.</head>
           <stage>Marquise de Pompadour. Choiseul.</stage>
           <sp who="#pompadour">
             <speaker>POMPADOUR</speaker>
@@ -3352,11 +3400,12 @@
             <stage>öffnet links, dann rechts die Tür.</stage>
             <pb n="64"/>
           </sp>
-          <sp who="#saemtliche_personen_des_sechsten_auftrittes">
+          <sp
+            who="#choiseul #epinay #dubarry #terray #silhouette #maupeou #erster_kavalier #zweiter_kavalier #sechs_hofdamen #zwei_kammerdiener">
             <speaker>SÄMTLICHE PERSONEN DES SECHSTEN AUFTRITTES</speaker>
             <stage>treten auf und beobachten dieselbe Ordnung.</stage>
           </sp>
-          <sp who="#die_pagen">
+          <sp who="#erster_page #zweiter_page">
             <speaker>DIE PAGEN</speaker>
             <stage>stehen im Hintergrunde.</stage>
           </sp>
@@ -3392,8 +3441,8 @@
           </sp>
           <sp who="#epinay">
             <speaker>EPINAY</speaker>
-            <stage>überwältigt von Wut und Schrecken, geht wankend am des zweiten Kavaliers durch
-              die Mitte ab.</stage>
+            <stage>überwältigt von Wut und Schrecken, geht wankend am Arm des zweiten Kavaliers
+              durch die Mitte ab.</stage>
           </sp>
           <sp who="#pompadour">
             <speaker>POMPADOUR.</speaker>
@@ -3413,7 +3462,7 @@
                 Handbewegung macht und sich alle verbeugen, geht sie, von Terray geführt, nebst
                 Damen, Chevaliers und Pagen links ab.</stage></p>
           </sp>
-          <sp who="#alle_uebrigen">
+          <sp who="#silhouette #maupeou">
             <speaker>ALLE ÜBRIGEN</speaker>
             <stage>außer Dubarry und Choiseul, gehen rechts ab.</stage>
           </sp>
@@ -3427,8 +3476,7 @@
           </sp>
         </div>
         <div type="scene">
-          <head>
-            <pb n="65"/> Zehnter Auftritt.</head>
+          <head><pb n="65"/> Zehnter Auftritt.</head>
           <stage>Choiseul. Dubarry.</stage>
           <sp who="#choiseul">
             <speaker>CHOISEUL</speaker>
@@ -3543,7 +3591,7 @@
             <stage>erbleichend.</stage>
             <p>Majestät!!</p>
           </sp>
-          <sp who="#alle">
+          <sp who="#quinault #boufflers #conti #lambert">
             <speaker>ALLE</speaker>
             <stage>fahren erschrocken auf.</stage>
           </sp>
@@ -3574,7 +3622,7 @@
           <sp who="#quinault">
             <speaker>QUINAULT</speaker>
             <stage>einfallend.</stage>
-            <p>Und auch Ew. Majestät arme. Dienerin –</p>
+            <p>Und auch Ew. Majestät arme Dienerin –</p>
           </sp>
           <sp who="#koenigin">
             <speaker>KÖNIGIN.</speaker>
@@ -3624,7 +3672,7 @@
             <speaker>QUINAULT</speaker>
             <stage>erhebt sich.</stage>
           </sp>
-          <sp who="#die_uebrigen">
+          <sp who="#boufflers #conti #lambert">
             <speaker>DIE ÜBRIGEN</speaker>
             <stage>treten zurück.</stage>
           </sp>
@@ -3637,20 +3685,20 @@
             <speaker>CONTI, SAINT-LAMBERT UND QUINAULT</speaker>
             <stage>verbeugen sich.</stage>
           </sp>
-          <sp who="#diener">
+          <sp who="#diener_4-1_und_4-2">
             <speaker>DIENER</speaker>
             <stage>durch die Mitte, bringt auf einem silbernen Teller einen Brief.</stage>
           </sp>
         </div>
         <div type="scene">
           <head>Zweiter Auftritt.</head>
-          <stage>Die vorigen. Diener.</stage>
+          <stage>Die Vorigen. Diener.</stage>
           <sp who="#koenigin">
             <speaker>KÖNIGIN</speaker>
             <stage>innehaltend.</stage>
             <p>Was bringen Sie, mein Freund?</p>
           </sp>
-          <sp who="#diener">
+          <sp who="#diener_4-1_und_4-2">
             <speaker>DIENER.</speaker>
             <p>Majestät, ein Fremder hat diesen Brief an den Herrn Chevalier von Saint-Lambert
               übergeben, er wartet im Vorzimmer.</p>
@@ -3663,7 +3711,7 @@
             <speaker>CONTI.</speaker>
             <p>Wißt Ihr, wer es ist?</p>
           </sp>
-          <sp who="#diener">
+          <sp who="#diener_4-1_und_4-2">
             <speaker>DIENER.</speaker>
             <p>Nein, königliche Hoheit. Der Mantel bedeckt sein Gesicht. <stage>Er präsentiert
                 Lambert den Brief.</stage></p>
@@ -3686,9 +3734,9 @@
           </sp>
           <sp who="#koenigin">
             <speaker>KÖNIGIN.</speaker>
-            <p>Ich bin ruhig. <stage>Zum Diener.</stage> Lassen Sie den fremden ein.</p>
+            <p>Ich bin ruhig. <stage>Zum Diener.</stage> Lassen Sie den Fremden ein.</p>
           </sp>
-          <sp who="#diener">
+          <sp who="#diener_4-1_und_4-2">
             <speaker>DIENER</speaker>
             <stage>geht durch die Mitte ab.</stage>
           </sp>
@@ -3752,7 +3800,7 @@
             <stage>entzückt.</stage>
             <p>Vetter! Meine Kinder! – Das ist zu viel des Glücks, zu viel!</p>
           </sp>
-          <sp who="#alle">
+          <sp who="#quinault #boufflers #lambert #choiseul">
             <speaker>ALLE</speaker>
             <stage>außer Conti sind in freudigem Erstaunen zu ihr getreten.</stage>
           </sp>
@@ -3876,7 +3924,7 @@
               alles wohl, Chevaliers, damit kein neuer Schritt neues Unheil über Frankreich bringe.
                 <stage>Sie erhebt sich und geht grüßend mit Boufflers links ab.</stage></p>
           </sp>
-          <sp who="#die_uebrigen">
+          <sp who="#quinault #conti #lambert #choiseul">
             <speaker>DIE ÜBRIGEN</speaker>
             <stage>verbeugen sich.</stage>
           </sp>
@@ -4009,8 +4057,7 @@
           </sp>
         </div>
         <div type="scene">
-          <head>
-            <pb n="76"/> Fünfter Auftritt.</head>
+          <head><pb n="76"/> Fünfter Auftritt.</head>
           <stage>Narziß. Doris Quinault. Colette.</stage>
           <stage>Volle Beleuchtung.</stage>
           <sp who="#quinault">
@@ -4176,7 +4223,7 @@
               geneckt, wie den Affen hinter <pb n="79"/> dem Gatter. Da hast du nicht gedacht, armer
               verkommener Kerl, daß einst Frankreichs Los von deinem Ja und Nein abhängen werde! –
               Ja, ich werd' es tun, Doris! – Und hier an dieser Stelle will ich beten, beten zum
-              erstenmal zu dem unerklärlichen großen Etwas, das die Gelten zusammenhält – denn ich
+              erstenmal zu dem unerklärlichen großen Etwas, das die Welten zusammenhält – denn ich
               erkenne: es gibt eine Gerechtigkeit über den Sternen, die auch den erbärmlichsten Wurm
               zu Ehren bringt! – <stage>Er kniet am offenen Fenster nieder und betet. Kurze
                 Pause.</stage></p>
@@ -4323,14 +4370,14 @@
               <l>Die Schmach und Schande schwatzhaft mir erzählen,</l>
               <l>Die sie durch mich im Leben einst erduldet! –</l>
               <l>Weh! Und noch einer kommt heran so bleich!</l>
-              <l>Weh mir! Mein erster Gatte! – – –«</l>
+              <l part="I">Weh mir! Mein erster Gatte! – – –«</l>
             </lg>
           </sp>
           <sp who="#narziss">
             <speaker>NARZIß</speaker>
             <stage>hervortretend, rezitiert aus der Rolle.</stage>
             <lg>
-              <l>»Ja, sieh her!</l>
+              <l part="F">»Ja, sieh her!</l>
               <l>Ich bin's, den du verachtet und verstoßen!</l>
               <l>Ich reiße dir dein gleißend Diadem,</l>
               <l>Das du aus meinen Tränen dir gewoben,</l>
@@ -4346,7 +4393,7 @@
           </sp>
           <sp who="#choiseul">
             <speaker>CHOISEUL</speaker>
-            <stage>aufspringend, mit Beifallklatschen ein fallend.</stage>
+            <stage>aufspringend, mit Beifallklatschen einfallend.</stage>
             <p>Bravo, vortrefflich, Narziß! – Zerfalle, vergehe, du Staub zum Staube! Hahahaha!!</p>
             <stage>Der Vorhang fällt rasch.</stage>
           </sp>
@@ -4354,7 +4401,7 @@
       </div>
       <div type="act">
         <head>Fünfter Aufzug.</head>
-        <stage>Versailles zwei Tage später. Abend.</stage>
+        <stage>Versailles (zwei Tage später. Abend).</stage>
         <stage>Salon der Marquise de Pompadour.</stage>
         <stage>Szeneneinrichtung und Dekoration wie im dritten Aufzug. Die Arkaden sind aber nun
           durch Vorhänge geschlossen, und die Szene durch Girandolen und Kandelabers brillant
@@ -4458,7 +4505,7 @@
           </sp>
           <sp who="#choiseul">
             <speaker>CHOISEUL.</speaker>
-            <p>Ja, ich bin sicher meines Sieges, denn Jeanette Poisson wird ihre Schande gesehen
+            <p>Ja, ich bin sicher meines Sieges, denn Jeanette Poisson wird ihre Schande gestehen
               müssen beim jähen Anblick ihres ersten Gatten!</p>
           </sp>
           <sp who="#quinault">
@@ -4496,7 +4543,7 @@
             <stage>nach der Tür links eilend, öffnet sie und spricht hinauf.</stage>
             <p>Gardist, war jemand in dieser Galerie?</p>
           </sp>
-          <sp who="#stimme">
+          <sp who="#stimme_gardist">
             <speaker>STIMME</speaker>
             <stage>von draußen.</stage>
             <p>Niemand!</p>
@@ -4506,10 +4553,10 @@
             <p>Zieh dich zurück in den Seitengang! <stage>Er schließt die Tür und eilt zum Eingang
                 rechts, den er öffnet.</stage> Kam niemand zu dir, Posten?</p>
           </sp>
-          <sp who="#stimme">
+          <sp who="#stimme_posten">
             <speaker>STIMME</speaker>
             <stage>von draußen.</stage>
-            <p>eine Seele!</p>
+            <p>Keine Seele!</p>
           </sp>
           <sp who="#choiseul">
             <speaker>CHOISEUL.</speaker>
@@ -4529,8 +4576,7 @@
           </sp>
         </div>
         <div type="scene">
-          <head>
-            <pb n="85"/> Vierter Auftritt.</head>
+          <head><pb n="85"/> Vierter Auftritt.</head>
           <stage>Die Vorigen. Pompadour. Hofdamen.</stage>
           <sp who="#pompadour">
             <speaker>POMPADOUR</speaker>
@@ -4571,7 +4617,7 @@
                 Choiseul heran, sieht ihn fragend an und winkt den Hofdamen, da er ihr etwas
                 verwirrt ausweicht, sich zu entfernen.</stage></p>
           </sp>
-          <sp who="#hofdamen">
+          <sp who="#drei_hofdamen">
             <speaker>HOFDAMEN</speaker>
             <stage>gehen links ab.</stage>
           </sp>
@@ -4599,7 +4645,7 @@
               lächelnd von unerklimmbarer Höh' auf das neidische Gerücht um mich herabzusehen, hat
               meinen Geist, meinen Körper so dithyrambisch aufgeregt, daß ich in Wahrheit glaube,
               ich lebe nun noch lange. Ich werde den Ehering am Finger tragen und aller Schmerz,
-              alle Schande wird verloscht sein. <stage>Ihm näher tretend, leiser, entzückt.</stage>
+              alle Schande wird verlöscht sein. <stage>Ihm näher tretend, leiser, entzückt.</stage>
               Und habe ich sie getilgt, bin ich rein geworden vor mir selber und der Welt, dann will
               ich den teuren Verlassenen sehen – wiedersehen, und alle Tränen trocknen, die er um
               mich geweint! – Staunen Sie nur, wie verändert ich bin, Choiseul! Ich habe heut morgen
@@ -4662,7 +4708,7 @@
             <speaker>CHOISEUL</speaker>
             <stage>verbeugt sich, geht entschlossen nach der Tür links und öffnet sie.</stage>
           </sp>
-          <sp who="#hofdamen #pagen #erster_kavalier #zweiter_kavalier">
+          <sp who="#drei_hofdamen #erster_page #zweiter_page #erster_kavalier #zweiter_kavalier">
             <speaker>HOFDAMEN, PAGEN UND DIE BEIDEN KAVALIERE</speaker>
             <stage>treten links ein.</stage>
           </sp>
@@ -4674,7 +4720,8 @@
             <speaker>TERRAY, MAUPEOU, SILHOUETTE UND DUBARRY</speaker>
             <stage>treten rechts ein.</stage>
           </sp>
-          <sp who="#alle">
+          <sp
+            who="#drei_hofdamen #erster_page #zweiter_page #erster_kavalier #zweiter_kavalier #terray #maupeou #silhouette #dubarry">
             <speaker>ALLE</speaker>
             <stage>verbeugen sich.</stage>
           </sp>
@@ -4750,12 +4797,12 @@
               <l>Die, – mit gebrochnen – Herzen, starren Auges –</l>
               <l>Die Schmach und Schande – schwatzhaft mir erzählen, –</l>
               <l>Die sie – durch mich im Leben einst erduldet!« –</l>
-              <l>Barmherziger Gott, ich kann nicht mehr!</l>
             </lg>
+            <p>Barmherziger Gott, ich kann nicht mehr!</p>
             <stage>Die Versammlung wird unruhig.</stage>
-            <l>Weh, und noch einer kommt!«</l>
-            <stage>Sie sieht sich entsetzt um.</stage>
             <lg>
+              <l>»Weh, und noch einer kommt!«</l>
+              <stage>Sie sieht sich entsetzt um.</stage>
               <l>Ja, noch einer ist's – »heran – so bleich!«</l>
               <l>O Jesus! – »Weh mir! – Mein erster Gatte!«</l>
             </lg>
@@ -4795,7 +4842,7 @@
           <sp who="#pompadour">
             <speaker>POMPADOUR</speaker>
             <stage>entsetzt.</stage>
-            <p>Bin ich von Sinnen? – Das ist</p>
+            <p>Bin ich von Sinnen? – Das ist –</p>
           </sp>
           <sp who="#narziss">
             <speaker>NARZIß.</speaker>
@@ -4982,7 +5029,8 @@
             <p>Nun denn, nach mir die Sündflut!! – <stage>Sie bricht zusammen und
               stirbt.</stage></p>
           </sp>
-          <sp who="#alle">
+          <sp
+            who="#drei_hofdamen #erster_page #zweiter_page #erster_kavalier #zweiter_kavalier #terray #maupeou #silhouette #dubarry #choiseul #quinault #lambert">
             <speaker>ALLE</speaker>
             <stage>nähertreten, dumpf.</stage>
             <p>Sie ist tot!</p>
