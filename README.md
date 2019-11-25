@@ -14,6 +14,33 @@ If you just want to download the corpus in its current state in XML-TEI, do this
 
 `svn export https://github.com/dracor-org/gerdracor/trunk/tei`
 
+### Character Relations
+
+Character relations encode the information given in the *Dramatis Personae* and make it machine-readable. This is mainly about family and power relations.
+
+The following relations have been annotated:
+
+| Relation label | Directed/Undirected | Description |
+| ----- | ----- | ------ |
+| `parent_of` | directed | One character is a parent of the other | 
+| `lover_of` | directed | For lovers | 
+| `related_with` | directed | Other **family** relations (e.g. uncles) | 
+| `associated_with` | directed | For clearly associated characters (e.g., butlers) | 
+| `siblings` | undirected | Characters that have at least one parent in common |
+| `spouses` | undirected | Characters in marriage (or engaged) |
+| `friends` | undirected | Characters marked as being friends |
+
+All relations are marked in XML in a `<listRelation>` element in the `<listPerson>` element. Directed relations are encoded with an `active` and `passive` attribute, where the active part is always the one in front of the relation, if expressed as a sentence. E.g., *Odoardo is parent of Emilia* translates to a relation
+	
+	<relation name="parent_of" active="#odoardo_galotti" passive="#emilia" />
+
+Undirected relations use the `mutual` attribute to list all ids in the relationship:
+	
+	<relation type="personal" name="spouses" mutual="#bärbel #adam"/>
+
+The label from the table above is given as a `name`. 
+
+
 ## API
 An easy way to download the network data (instead of the actual TEI files) is to use our API ([documentation here](https://dracor.org/documentation/api/)). If you have [jq](http://blog.librato.com/posts/jq-json) installed, it would work like this:
 
