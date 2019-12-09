@@ -36,7 +36,7 @@ All relations are marked in XML in a `<listRelation>` element in the `<listPerso
 
 Undirected relations use the `mutual` attribute to list all ids in the relationship:
 	
-	<relation type="personal" name="spouses" mutual="#bärbel #adam"/>
+	<relation name="spouses" mutual="#bärbel #adam"/>
 
 The label from the table above is given as a `name`. 
 
