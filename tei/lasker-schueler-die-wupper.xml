@@ -218,7 +218,7 @@
           <listRelation type="personal">
             <relation name="parent_of" active="#frau_sonntag" passive="#heinrich"/>
             <relation name="parent_of" active="#frau_sonntag" passive="#eduard"/>
-            <relation name="parent_of" active="#großvater_wallbrecker" passive="#amanda"/>
+            <relation name="parent_of" active="#grossvatter_wallbrecker" passive="#amanda"/>
             <relation name="related_with" active="#grossvatter_wallbrecker" passive="#carl"/>
             <relation name="related_with" active="#mutter_pius" passive="#carl"/>
             <relation name="siblings" mutual="#lieschen #august"/>
@@ -237,6 +237,7 @@
     <revisionDesc>
       <listChange>
         <change when="2018-05-20">(ff) convert from source</change>
+        <change when="2019-12-23">(ff) correct some markup</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -246,8 +247,8 @@
         <head>Else Lasker-Schüler</head>
         <head>Die Wupper</head>
         <head>Schauspiel in fünf Aufzügen</head>
-        <pb n="97"/>
       </div>
+      <pb n="5"/>
       <div type="Dramatis_Personae">
         <castList>
           <head>Personen</head>
@@ -1957,9 +1958,9 @@
           <speaker>Carl</speaker>
           <stage>(neidvoll):</stage>
           <p>Das empfinden Sie wohl am schmerzlichsten?</p>
+          <stage>Pause.</stage>
+          <p>Aber Sie erzählten mir doch, die Ärzte sagen, es käme nicht dazu.</p>
         </sp>
-        <stage>Pause.</stage>
-        <p>Aber Sie erzählten mir doch, die Ärzte sagen, es käme nicht dazu.</p>
         <sp who="#marta">
           <speaker>Marta:</speaker>
           <p>Denen kann man ja nicht glauben – und Mama haben sie es verschwiegen, sie würde sterben
@@ -3084,11 +3085,14 @@
           <speaker>Heinrich:</speaker>
           <p>Stillgestanden!!! Den Feind hau ich allein kurz und klein.</p>
         </sp>
-        <p>Willem <stage>(schleift ihn herbei, seine Hände mit der Lorgnettenkette fesselnd, wie vor
-            seinen Feldherrn. Von Simon stöhnt vor Angst. Die Herren mit den grauen Zylindern kommen
-            ihm nicht zu Hilfe, sie amüsieren sich, neugierig den Vorgang betrachtend):</stage>
-          Lassen Se sich nicht totschlagen mit seinen Säbel, Herr Leutnant! <stage>(Er zeigt tobend
-            vor Lachen von Simons dünnes Spazierstöckchen.)</stage></p>
+        <sp who="#willem">
+          <speaker>Willem</speaker>
+          <stage>(schleift ihn herbei, seine Hände mit der Lorgnettenkette fesselnd, wie vor seinen
+            Feldherrn. Von Simon stöhnt vor Angst. Die Herren mit den grauen Zylindern kommen ihm
+            nicht zu Hilfe, sie amüsieren sich, neugierig den Vorgang betrachtend):</stage>
+          <p>Lassen Se sich nicht totschlagen mit seinen Säbel, Herr Leutnant! <stage>(Er zeigt
+              tobend vor Lachen von Simons dünnes Spazierstöckchen.)</stage></p>
+        </sp>
         <sp who="#august">
           <speaker>August:</speaker>
           <p>Nu kann es losgehen, Kinder.</p>
@@ -3439,10 +3443,9 @@
           stellen.</stage>
         <sp who="#amanda">
           <speaker>Frau Amanda Pius:</speaker>
-          <p>So 'ne Ehre, geehrter Herr Eduard!</p>
+          <p>So 'ne Ehre, geehrter Herr Eduard! <stage>(Stellt den Tisch vor die Bank und reicht ihm
+              die Hand. Zu Wallbrecker)</stage> Wo is de Carl?</p>
         </sp>
-        <stage>(Stellt den Tisch vor die Bank und reicht ihm die Hand. Zu Wallbrecker)</stage>
-        <p>Wo is de Carl?</p>
         <sp who="#grossvatter_wallbrecker">
           <speaker>Großvatter:</speaker>
           <p>Er schläft noch. Ruf du ihm.</p>
@@ -4999,10 +5002,9 @@
           </sp>
           <sp who="#auguste">
             <speaker>Auguste:</speaker>
-            <p>Ich kann de Mama Sonntag nicht heulen sehen.</p>
+            <p>Ich kann de Mama Sonntag nicht heulen sehen. <stage>(Tritt gutherzig näher zu ihr
+                hin.)</stage> Ma'mm Sonntag – – –</p>
           </sp>
-          <stage>(Tritt gutherzig näher zu ihr hin.)</stage>
-          <p>Ma'mm Sonntag – – –</p>
           <stage>Eduard kämpft mit sich. Marta kommt temperamentvoll ins Zimmer, von Simon verharrt
             unsicher, als er Eduard erblickt, vor der halb offenen Zimmertür.</stage>
           <sp who="#frau_sonntag">
@@ -5302,8 +5304,11 @@
             <stage>(neidisch; er schwankt ebenfalls):</stage>
             <p>Laß doch den Hungerleider stehn, Carl, er soll sich das Haar schneiden lassen.</p>
           </sp>
-          <p>Amadeus <stage>(zu August):</stage> Zeig meine beiden Kollegen molz de heilige Eva aus
-            deine Brieftäsch, Aujust.</p>
+          <sp who="#amadeus">
+            <speaker>Amadeus</speaker>
+            <stage>(zu August):</stage>
+            <p>Zeig meine beiden Kollegen molz de heilige Eva aus deine Brieftäsch, Aujust.</p>
+          </sp>
           <stage>Die Brieftasche hängt August aus der Hosentasche.</stage>
           <sp who="#eduard">
             <speaker>Eduard:</speaker>
