@@ -1,0 +1,3051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Miltiades</title>
+        <title type="sub">Ein Trauerspiel in fünf Aufzügen</title>
+        <author key="pnd:118613480">Seume, Johann Gottfried</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000479</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q79509676</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Projekt Gutenberg-DE</name>
+          <idno type="URL">https://gutenberg.spiegel.de/buch/4715/1</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <title>Johann Gottfried Seume: Prosaische und poetische Werke. Sechster Theil. Hempel
+              [1879].</title>
+            <date type="print" when="1808"/>
+            <date type="premiere" when="1868"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="kleon" sex="MALE">
+            <persName>Kleon</persName>
+          </person>
+          <person xml:id="lysikrates" sex="MALE">
+            <persName>Lysikrates</persName>
+          </person>
+          <person xml:id="epizelus" sex="MALE">
+            <persName>Epizelus</persName>
+          </person>
+          <person xml:id="xanthippus" sex="MALE">
+            <persName>Xanthippus</persName>
+          </person>
+          <person xml:id="miltiades" sex="MALE">
+            <persName>Miltiades</persName>
+          </person>
+          <person xml:id="ein_krieger" sex="MALE">
+            <persName>Ein Krieger</persName>
+          </person>
+          <person xml:id="elpinice" sex="FEMALE">
+            <persName>Elpinice</persName>
+          </person>
+          <person xml:id="cimon" sex="MALE">
+            <persName>Cimon</persName>
+          </person>
+          <person xml:id="aristides" sex="MALE">
+            <persName>Aristides</persName>
+          </person>
+          <person xml:id="themistokles" sex="MALE">
+            <persName>Themistokles</persName>
+          </person>
+          <person xml:id="demosthenes" sex="MALE">
+            <persName>Demosthenes</persName>
+          </person>
+          <person xml:id="aeschylus" sex="MALE">
+            <persName>Aeschylus</persName>
+          </person>
+          <personGrp xml:id="chor_hemichor" sex="UNKNOWN">
+            <name>Chor/Hemichor</name>
+          </personGrp>
+          <person xml:id="philippus" sex="MALE">
+            <persName>Philippus</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="parent_of" active="#miltiades" passive="#cimon"/>
+            <relation name="friends" mutual="#miltiades #themistokles"/>
+            <relation name="parent_of" active="#miltiades" passive="#elpinice"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Ein Trauerspiel in fünf Aufzügen</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2019-12-23">(ff) file conversion from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Johann Gottfried Seume</head>
+        <head>Miltiades</head>
+        <head>Ein Trauerspiel in fünf Aufzügen</head>
+      </div>
+      <pb n="99"/>
+      <div type="preface">
+        <p>Lieber Leser!</p>
+        <p>Ich habe in dieser Arbeit versucht, ob wol etwas von dem bessern Geiste der Griechen in
+          meine Seele übergegangen sei. Die Wahl des Gegenstandes, der ganz geschichtlich ist, rührt
+          vielleicht von meiner Vorliebe für diese Periode und vorzüglich für die Katastrophe von
+          Marathon her. Ich wage kein Urtheil, inwieweit mir die Unternehmung gelungen ist. Sie war
+          mir seit einiger Zeit in meinen Mußestunden zum Bedürfniß geworden, und die Befriedigung
+          desselben ist schon Belohnung genug. Wenn nun die Mittheilung Einigen einiges Vergnügen
+          gewährt, so ist das meinige dadurch erhöhet. Ueber Anlage und Ausführung will ich mich
+          weder rechtfertigen noch einlassen, da gewöhnlich Jeder seine eigenen Ansichten hat, die
+          er nicht selten auch Andern aufzudringen sucht.</p>
+        <p>Denjenigen, denen die Geschichte dieser Zeit nicht sogleich gegenwärtig ist, bin ich zur
+          Einleitung wol einige Bemerkungen schuldig. Es ist zu bedauern, daß der Tag von Marathon
+          bei Diodor von Sicilien und bei Dionys von Halikarnaß verloren gegangen ist. Ein
+          sonderbarer Zufall, wie bei Livius der Verlust der Geschichte der römischen Triumvirate,
+          über den vielleicht psychologisch und politisch Manches vermuthet werden könnte. Die beste
+          und fast einzige Quelle ist also Herodotus. Plutarch hat hier und da auch Manches, das
+          gebraucht werden kann. Cornelius Nepos ist hier mehr als gewöhnlich ein sehr magerer,
+          unordentlicher Compilator; ein Urtheil, das er sich, gegen den Patriarchen Herodotus
+          gehalten, wol gefallen lassen muß.</p>
+        <p>In dem unglücklichen Zuge des Darius nach Thracien, wo alle ionischen kleinen Tyrannen
+          und Republiken dem großen Könige Folge leisten mußten, war auch Miltiades, der damals in
+          dem thracischen Chersones eine Art von Dynastie besaß, gezwungen, mit dem Strome zu gehen.
+          Er wurde mit den übrigen <pb n="100"/> kleinasiatischen Griechen zur Besetzung der Brücke
+          über den Ister zurückgelassen und zeichnete sich schon damals durch seinen entschlossenen,
+          republikanischen Muth aus, indem er den Vorschlag that, die Brücke zu zerstören und
+          dadurch wahrscheinlich das ganze persische Heer zu vernichten. Die ionischen Dynasten,
+          besonders Histiäus von Milet, verhinderten es, indem sie sehr offenherzig bemerkten, daß
+          ihre kleinen Tyrannenschaften von der großen zu Susa abhingen und nur durch sie gesichert
+          wären. Miltiades mußte nun vor den Persern flüchten und suchte mit seinen Landsleuten sein
+          altes Vaterland Athen, wo seine Familie zu den ansehnlichen gehörte. Herodotus erzählt
+          nach seiner Art weitläufig und nicht unangenehm, wie sie nach dem Chersones gekommen sei.
+          Cornelius Nepos aber vermischt einigemal den ältern Miltiades mit unserm berühmteren. Auf
+          seiner Fahrt nach Athen fiel ein Schiff seines Geschwaders, dessen Führer sein eigener
+          Sohn Metiochus war, den Persern in die Hände, und Darius behandelte, theils aus
+          natürlicher Güte, theils aus Staatsklugheit, den jungen Griechen mit ungewöhnlicher
+          Freundlichkeit. Doch hatte Miltiades auch auf diesem Zuge das Glück, durch eine schnelle
+          Kriegslist die Insel Lemnos für die Athener einzunehmen; ein Verdienst, das nachher seine
+          Freunde bei dem Volke kräftig zu seiner Rettung benutzten.</p>
+        <p>Darius, der sich mit großem Verlust nach Asien zurückgezogen hatte, schickte das folgende
+          Jahr einen der besten Feldherrn, Datis, mit einem ausgesuchten Heere gegen Griechenland,
+          um Alles zu unterjochen, was ihm widerstehen würde. Gegen die Athener war er vorzüglich
+          aufgebracht wegen ihres Zuges mit den Ioniern nach Sardes, wo theils durch Zufall, theils
+          durch Unordnung und Rohheit der griechischen Soldaten der größte Theil der Stadt in Asche
+          gelegt worden war. Die daher entstandene Anekdote: »Gedenke der Athener!« ist bekannt
+          genug; Worte, die sich der König täglich von einem vornehmen Hausbeamten zur Erinnerung an
+          Rache zurufen ließ. Datis landete bei Marathon, ungefähr drei Meilen von Athen, der besten
+          Ebene der Gegend zur Unternehmung für ein so zahlreiches Heer, wie er führte. Die
+          Bundesgenossen der Athener hatten nicht Zeit, ihnen zu Hilfe zu eilen; nur 1000 Mann der
+          kleinen Republik Platäa, einer der bravsten und wackersten in der ganzen griechischen
+          Geschichte, stießen zu den Athenern. Das griechische Heer machte ungefähr zehentausend
+          Mann, die Perser werden gewöhnlich auf hundertundzwanzigtausend angegeben. Die Athener
+          hatten nach ihrer Gewohnheit an ihrer Spitze zehen Anführer, deren einer Miltiades <pb
+            n="101"/> war. Hier entstanden nun, wie leicht zu errathen, Streitigkeiten, ob man
+          vertheidigungsweise oder angriffsweise verfahren solle. Miltiades erklärte sich mit vielen
+          Gründen stark für den Angriff, und der Polemarch Kallimachus, als der Elfte, entschied
+          durch seinen Beitritt für denselben. Alle ohne Ausnahme hatten so viel Zutrauen in die
+          Kriegswissenschaft des Miltiades, der allein den Feind schon kannte, daß sie ihm, da der
+          Befehl nach der Reihe ging, einstimmig ihre Tage übertrugen. Er hatte die Bescheidenheit,
+          den seinigen abzuwarten, griff sodann mit furchtbarem Nachdruck an und erfocht den Sieg,
+          unstreitig den schönsten, den die Geschichte aufzuweisen hat. Nie haben so Wenige so Viele
+          geschlagen, sagt Herodotus, und das gilt noch jetzt; man müßte denn die Völkerausrottungen
+          der Spanier in Mexico und Peru, die Schande der Menschheit und des Christenthums, mit
+          unter die Kriege setzen. Die Athener stritten merkwürdig – αξίως λόγου εμάχοντο –, sagt
+          der alte Herodot in seiner einfachen Würde. Der Polemarch und einer der Anführer blieben
+          und ungefähr 200 Athener; von den Persern sollen gegen 6300 gefallen sein. Die Anekdote
+          von dem Athenischen Krieger, der gleich aus der Schlacht bewaffnet mit der Siegesnachricht
+          zur Stadt eilte, mit den Worten: Χαίρετε, χαίρομεν! hereinstürzte und todt zu Boden fiel,
+          erzählt Plutarch in seinem Aufsatze über den Ruhm der Athener. Aristides und Themistokles
+          zeichneten sich bekanntlich nachher bei Salamis aus; aber Herodotus nennt sie auch hier in
+          diesem Treffen als vorzüglich wackere Männer. Aristides gehörte hier schon unter die zehen
+          Anführer. Der Pisistratide Hipparch war in dem Auflauf des Harmodius und Aristogiton
+          umgekommen; der andere, Hippias, hatte sich nach vielem vergeblichen Herumirren den
+          Persern in die Arme geworfen, war jetzt bei ihrer Armee, sollte unter persischer Hoheit
+          wieder eingesetzt werden und kam bei Marathon um. Von dem Dichter Aeschylus erzählt sein
+          Lebensbeschreiber, daß er in allen drei Schlachten, bei Marathon, Salamis und Platäa,
+          mitgefochten habe. Bei Marathon zeichnete sich sein Bruder Kynägirus und bei Salamis der
+          jüngere Amenias aus. Die Perser schifften sich nach dem Verlust der Schlacht bei Marathon
+          schnell ein und segelten um das Vorgebirge Sunium nach Athen, um die wehrlose Stadt zu
+          überfallen; aber Miltiades war mit dem Heere sogleich dahin geeilt, und sie fanden auch
+          hier wieder ihren Mann. Sie zogen also zurück, ohne etwas zu wagen.</p>
+        <p>Bald darauf unternahm Miltiades den unglücklichen Zug nach den Inseln, wo er bei Paros
+          gänzlich scheiterte. Schwer in <pb n="102"/> den Schenkel verwundet, kehrte er, ohne
+          weiter etwas gethan zu haben, nach Athen zurück. Vorher hatte der Neid sich nicht laut an
+          ihn gewagt; aber nun wurde er von einer großen Partei des Hochverraths angeklagt und
+          wirklich verdammt. Es waren allerdings Umstände da, die seinen Feinden Gelegenheit gaben,
+          ihn höchst verdächtig zu machen; und dieses war den eifersüchtigen, unruhigen
+          Republikanern genug, zumal nach der Katastrophe mit den Pisistratiden. Das Todesurtheil
+          wurde zwar aufgehoben, und er sollte nur die fünfzig Talente bezahlen, die der Zug
+          gekostet hatte; aber er starb im Gefängnisse an der Wunde, da er nicht bezahlen konnte.
+          Sein Sohn Cimon blieb nach dem Gesetz für seinen Vater Gefangener und bezahlte nachher mit
+          Unterstützung seiner Freunde. Geschichtlich strenge genommen, ist mir allerdings die
+          Unschuld des Miltiades etwas problematisch; aber seine Strafbarkeit ist noch weniger
+          erwiesen, und das Verfahren gegen ihn gehört unstreitig zu den republikanischen Härten,
+          die nach ihm nur zu sehr in Unbesonnenheit ausarteten und nicht wenig zum Verderben des
+          Staats beitrugen.</p>
+        <p>Daß der Ankläger Xanthippus ein Alkmäonide war, wird im Herodot nicht bestimmt gesagt; es
+          geht aber, däucht mich, ziemlich deutlich aus dem Zusammenhange der Erzählung hervor.
+          Diese Aristokraten waren schon bei Vertreibung der Pisistratiden vorzüglich thätig
+          gewesen, standen aber auch im Verdacht, gern ihre Nachfolger werden zu wollen, wie das bei
+          Factionen gewöhnlich zu geschehen pflegt. Daß Aristides in dem Jahre, wo man Miltiades den
+          Criminalproceß machte, Archon Eponymus war, hat Corsini ausgerechnet, und in einem Gedicht
+          durfte ich ihm unbedingt folgen. Aristides und Themistokles darf ich füglich als Freunde
+          des alten Heerführers annehmen; denn Herodotus würde nicht vergessen haben, zwei schon so
+          wichtige Männer anzuführen, wenn sie zur Gegenpartei gehört hätten. Cimon war damals zwar
+          im Staate noch unbedeutend, ist es aber in der Handlung nicht als der Sohn des Helden, und
+          wenn man sich ihn als den nachherigen Sieger am Eurymedon denkt. Nepos übergiebt die
+          Vertheidigung des Miltiades dessen Bruder Tisagoras; da wir aber von diesem übrigens sehr
+          wenig wissen, habe ich sie, ich glaube nicht gegen den Charakter, Themistokles übertragen.
+          Herodotus nennt im Allgemeine nur dessen Freunde. Die Geschichte mit dem blinden Epizelus
+          erzählt auch Herodotus. Im Streite bei Marathon, sagt die Anekdote, schoß vor ihm wie der
+          Blitz eine glänzende Göttergestalt vorbei, die den Athenern kämpfen half. <pb n="103"/>
+          Epizelus ward davon blind und blieb es. Die Erscheinung ist natürlich genug. Ein warmer,
+          vollblütiger, patriotischer Enthusiast in der Gluth des Gefechts sieht leicht Gestalten.
+          Daß ihm der heiße Tag, der Staub, die furchtbar heftige Anstrengung das Gesicht raubte,
+          ist wol kein Wunder bei Kaltblütigen; aber man war damals noch weniger kaltblütig als
+          jetzt.</p>
+        <p>Demosthenes war ein ziemlich gewöhnlicher Name in Athen; und es wird nicht leicht Jemand
+          in Gefahr kommen, meinen Demosthenes mit dem nachherigen General in Sicilien oder gar mit
+          dem Redner zu verwechseln. Mein Kleon kann ganz leicht der Großvater des Aristophanischen
+          Gerbers gewesen sein. Dieser hier ist ein gedichteter Charakter und untergeordneter
+          Parteigänger. Daß ich den Gerber Kleon in Athen Bier trinken lasse, ist keine so ganz
+          willkürliche Licenz. Herodotus sagt irgendwo, daß die Aegypter ein Getränk dieser Art
+          gehabt haben. Aeschylus in seinen »Hiketides« läßt den Griechen in dieser Rücksicht
+          sagen:</p>
+        <l>’Αλλ' άρσενας καὶ τη̃σδε γη̃ς οικήτορας</l>
+        <l>Ευρήσετ', ου πίνοντας εκ κριθω̃ν μέθυ.</l>
+        <p>Nun kamen bekanntlich oft ägyptische Kaufleute nach Athen, und die Schiffer lebten dort
+          am Hafen nach ihrer Landessitte und zogen wahrscheinlich die geringere Volksclasse der
+          Gegend nicht selten zu ihren Partien, wie jetzt die englischen Matrosen zu ihren
+          Rumgelagen. Miltiades starb an der Entzündung seiner Wunde. Dies würde im Stück langweilig
+          und fast ekelhaft sein, und es ist wol nicht gegen die Begriffe der Zeit, wenn ich ihn
+          Schierling nehmen lasse. Themistokles traf nach der Erzählung nachher eine fast ähnliche
+          Wahl. Die übrigen Abweichungen von der Geschichte sind, glaube ich, unbedeutend; und mich
+          däucht, ich wollte meistens meine Belege aus den Alten für meine Darstellung aufbringen.
+          Den Markt habe ich deswegen nicht zum Ort des Processes genommen, weil es doch wol
+          vielleicht irgend einer Gesellschaft einfallen könnte, meine Arbeit auf die Bühne zu
+          bringen; und dann würde sich eine ganze Volksversammlung, auch bei dem reichsten
+          Personale, dürftig und ärmlich ausnehmen.</p>
+        <p>Noch etwas sei mir zu erinnern erlaubt. Der Uebersetzer des Mitford behauptet mit Bayle,
+          Miltiades sei nach Herodotus nicht ins Gefängniß gebracht worden. Herodotus sagt
+          allerdings nichts vom Gefängniß, er sagt aber auch nichts vom Gegentheil; daß man aber
+          einen solchen Mann in so einer Krise dahin wird gebracht haben, geht aus der ganzen
+          Einrichtung der Athener hervor. <pb n="104"/> Alle übrigen Schriftsteller erzählen es auch
+          mit deutlichen Worten. Aus Herodotus läßt sich weder das Eine noch das Andere beweisen;
+          aber consequent ist, was die Uebrigen sagen. Die Stelle aus Plato's »Gorgias« beweist
+          nicht, was sie dem Uebersetzer beweisen soll. Βάραθρον so viel ich weiß, nie das
+          Gefängniß, sondern immer das Barathron oder irgend ein anderes Surrogat für Todesstrafe.
+          Plato scheint mir also zu sagen: Miltiades würde umgekommen sein, wenn ihn der Archon
+          nicht gerettet hätte. Daß er an der Wunde starb, gehört nicht mehr zum Proceß. Die
+          angeführte Stelle aus dem Aristophanes beweiset es auch nicht. Es verweiset daselbst eine
+          komische Person die Penia in das Barathron, welches nichts weiter ist als εις κόρακας,
+            <emph>abeas in malam rem</emph>. Die Anmerkung des Scholiasten dazu finde ich bis jetzt
+          nur halb wahr. Die eigentlichen Bedeutungen der Wörter kann man wol selten rein aus
+          komischen Dichtern nehmen, die schon ihres Zwecks wegen oft Verwirrung und Doppelsinn
+          lieben. Für das Gefängniß findet man überall die Worte δεσμοί, ειρκτή, δεσμωτήριον, φυλακή
+          und vielleicht noch andere; βάραθρον ist mir in diesem Sinne, so viel ich mich erinnere,
+          nicht vorgekommen. Wo es steht, drückt es immer nur die Todesstrafe aus. Auch Barthélemy
+          in seinem »Anacharsis« folgt Bayle nicht. Da ich übrigens nur Dilettant in der
+          griechischen Literatur bin, will ich mich gern bescheiden, wenn man mir bessere Beweise
+          giebt, als diese sind. Daß aber die Angeklagten, wenn die Sache capital ward, ins
+          Gefängniß gebracht wurden, geht aus der Natur hervor, und wir sehen es factisch an
+          Sokrates, der doch für den Staat bei Weitem kein so wichtiger Gefangener war als ein
+          Heerführer, der des Hochverraths beschuldigt, und der wirklich verdammt war. Von Miltiades
+          bis Sokrates ist der Zeitraum nicht sehr groß, und wir wissen in demselben von keiner
+          Veränderung in den öffentlichen Gesetzen der Republik. – Die Elfmänner – οι ένδεκα – waren
+            <emph>magistratus minores</emph>, die auch mit die Aufsicht über die Gefängnisse
+          hatten.</p>
+        <p>Alles Uebrige in dem Stück wird hoffentlich jedem Mann von liberaler Erziehung nicht
+          fremd sein und meistens an dem Faden der Erzählung selbst deutlich werden.</p>
+        <p>Ich habe gethan nach Vermögen und wünsche, der Versuch sei mir nicht mißlungen. Wenn nur
+          Einige der Besseren dabei eine Stunde nicht unangenehmer, nützlicher Beschäftigung finden,
+          ist die Hauptabsicht schon erreicht. Leipzig, 1808.</p>
+      </div>
+      <pb n="105"/>
+      <pb n="106"/>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen</head>
+          <castItem><role>Miltiades,</role>
+            <roleDesc>Heerführer der Athener.</roleDesc></castItem>
+          <castItem><role>Cimon,</role>
+            <roleDesc>dessen Sohn.</roleDesc></castItem>
+          <castItem><role>Themistokles,</role>
+            <roleDesc>dessen Freund.</roleDesc></castItem>
+          <castItem><role>Aristides,</role>
+            <roleDesc>Archon.</roleDesc></castItem>
+          <castItem><role>Xanthippus,</role>
+            <roleDesc>Ankläger des Heerführers.</roleDesc></castItem>
+          <castItem><role>Kleon,</role>
+            <roleDesc>Bürger und Volksrädler.</roleDesc></castItem>
+          <castGroup>
+            <castItem>Demosthenes</castItem>
+            <castItem>Aeschylus</castItem>
+            <castItem>Lysikrates</castItem>
+            <roleDesc>Bürger.</roleDesc>
+          </castGroup>
+          <castItem><role>Philippus,</role>
+            <roleDesc>Arzt.</roleDesc></castItem>
+          <castItem><role>Epizelus,</role>
+            <roleDesc>ein Blinder.</roleDesc></castItem>
+          <castItem><role>Elpinice,</role>
+            <roleDesc>Tochter des Miltiades.</roleDesc></castItem>
+          <castItem><role>Mehrere Bürger.</role></castItem>
+          <castItem><role>Der Chor.</role></castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Die Scene ist in Athen, abwechselnd an verschiedenen Orten.</p>
+      </set>
+    </front>
+    <pb n="106"/>
+    <body>
+      <div type="act">
+        <head>Erster Aufzug</head>
+        <stage>Ein offener Platz nicht weit vom Hafen</stage>
+        <div type="scene">
+          <head>Erster Auftritt</head>
+          <stage>Kleon mit einigen Bürgern geht wartend umher. Epizelus, der Blinde sitzt auf einem
+            Steine. Lysikrates kommt.</stage>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Ist der Verräther da, der Bösewicht,</l>
+            <l>Der den Barbaren uns verkaufen will?</l>
+            <l>Ich bin in Angst, ich sehe schon den Feind</l>
+            <l>Dort auf der Burg, so lange dieser Mann</l>
+            <l>Noch nicht den Elfen übergeben ist.</l>
+            <l>Sprich, ist er da?</l>
+          </sp>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>So eben lief er ein.</l>
+            <l>Wie die geschlagne Hoffnung zog das Schiff</l>
+            <l>Sich scheu ans Land, kein Päan wird gehört.</l>
+            <l>Man schweigt am Ufer, schweigt auf dem Verdeck,</l>
+            <l>Die Segler thun die Arbeit und sind stumm.</l>
+            <l>Nur ein Gemurmel in der Ferne läuft</l>
+            <l>Von Haus zu Haus, ein trauriges Gemisch</l>
+            <l>Von Fluch und Mitleid.</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Mitleid ist Gefahr.</l>
+            <l>Des Fluches Wirkung ist hier Sicherheit.</l>
+            <l>Den Weibern Mitleid, Männern strenges Recht.</l>
+            <l>Wo ging er hin?</l>
+          </sp>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Es standen Aristid</l>
+            <l>Und Einige, des Hauses Freunde, dort</l>
+            <l>Am Ufer, die begleiteten ihn still</l>
+            <l>Nach seines Wohnung.</l>
+          </sp>
+          <pb n="108"/>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Ins Gefängniß nicht?</l>
+          </sp>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Er kann nicht gehen; seine Wunde macht,</l>
+            <l>Daß man den Kranken in der Sänfte trägt.</l>
+          </sp>
+          <sp who="#epizelus">
+            <speaker>Epizelus</speaker>
+            <stage>(der sich genähert hat).</stage>
+            <l>Ihr Götter, ist das noch mein Vaterland?</l>
+            <l>Athener sprechen von Miltiades</l>
+            <l>In diesem Ton; von ihm, dem sie allein</l>
+            <l>Verdanken, daß sie noch Athener sind,</l>
+            <l>Daß noch ihr Name bei den Griechen steht!</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Wer bist Du, Mensch?</l>
+          </sp>
+          <sp who="#epizelus">
+            <speaker>Epizelus.</speaker>
+            <l>Das weißt Du nicht? Ich bin</l>
+            <l>Ein Mann von Marathon; der bist Du nicht.</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Wie weißt Du das?</l>
+          </sp>
+          <sp who="#epizelus">
+            <speaker>Epizelus.</speaker>
+            <l>Es spricht in diesem Ton</l>
+            <l>Kein Ehrenmann, der dort im Kampfe stand.</l>
+          </sp>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates</speaker>
+            <stage>(zu Kleon).</stage>
+            <l>Es ist der Blinde, Epizelus, der,</l>
+            <l>Du hast ja wol gehört – –</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Nun kenn' ich Dich.</l>
+            <l>Du bist der Fasler, der durch ein Gesicht</l>
+            <l>Dort sein Gesicht verlor und nun umher</l>
+            <l>Am Markt, am Kynosarg und auf dem Pnyx</l>
+            <l>Den Knaben lieblich die Geschicht' erzählt.</l>
+          </sp>
+          <sp who="#epizelus">
+            <speaker>Epizelus.</speaker>
+            <l>Du, Du erzählst den Knaben freilich nichts,</l>
+            <l>Und Dein Ruhm stört gewiß sie nie im Schlaf;</l>
+            <l>Durch Dich wird kein Athener, was er soll.</l>
+            <l>Damit Du gerben könntest, schlugen wir;</l>
+            <l>Und frevelnd lästerst Du das Heiligthum,</l>
+            <l>Das Deiner Seele fremd ist.</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Guter Mann,</l>
+            <l>Ereifere Dich nicht! Das Heiligthum</l>
+            <l>Ist mir so lieb als Dir. Du thatest brav</l>
+            <l>An jenem Tage Deine Pflicht; dafür</l>
+            <l>Hast Du den Tisch im Prytaneum; den</l>
+            <l>Sollst Du behalten, bis die Moere Dich</l>
+            <l>Ins Elyseum ruft. Wir rechten nicht</l>
+            <l>Mit dem Miltiades von Marathon.</l>
+            <l>Dort war er gut; bei Paros war er schlecht,</l>
+            <l>Hat dort vielleicht das Vaterland verkauft</l>
+            <l>Wie Histiäus, Aristagoras</l>
+            <l>Und Strattis und der andre feile Troß.</l>
+          </sp>
+          <sp who="#epizelus">
+            <speaker>Epizelus.</speaker>
+            <l>Und wäre hier? Und Aristides gab</l>
+            <pb n="109"/>
+            <l>Ihm seine Hand, als er ans Ufer stieg?</l>
+            <l>Wem Aristides seine Rechte reicht,</l>
+            <l>Ist losgesprochen vom Areopag.</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Mein blinder Freund, Du siehst nicht die Gefahr.</l>
+          </sp>
+          <sp who="#epizelus">
+            <speaker>Epizelus.</speaker>
+            <l>Doch, doch; ich sehe sie: ich seh', wie Ihr</l>
+            <l>Das Vaterland, das kaum gerettete,</l>
+            <l>Mit Euerm Wahnsinn ins Verderben stürzt.</l>
+            <l>Ich traure laut, daß ihn mein Auge nicht,</l>
+            <l>Den Mann, an dessen Seite mir die Schlacht</l>
+            <l>Ein Opferfest, der letzte Tag des Lichts,</l>
+            <l>Ein Tag der Flamme war, ihn nicht mehr sieht!</l>
+            <l>Ich freue mich, daß Ihr, Verworfene,</l>
+            <l>In tiefer Nacht unsichtbar vor mir steht,</l>
+            <l>Ihr Undankbaren! Euer Anblick ist</l>
+            <l>Dem Ehrlichen der Amphisbäne Gift.</l>
+          </sp>
+          <stage>(Er geht fort.)</stage>
+        </div>
+        <div type="scene">
+          <head>Zweiter Auftritt</head>
+          <stage>Kleon, Lysikrates sehen ihm nach.</stage>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Der ist ein heißer Mann. Der Sturm der Schlacht,</l>
+            <l>Die Gluth des Ehrentags der Rettung hat</l>
+            <l>Ihn um das Licht gebracht. Sein frommer Wahn</l>
+            <l>Ist unserm Volke heilig, daß ein Strahl</l>
+            <l>Von einem Gott, der den Athenern half,</l>
+            <l>Ihn weihend in dem Kampfe blendete. –</l>
+            <l>Mir banget wirklich um Miltiades.</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Und mir um uns.</l>
+          </sp>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Sollt' er denn in der That</l>
+            <l>Der Feile sein, zu dem der Pnyx ihn macht?</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Feil oder nicht, Tyrann ist er gewiß.</l>
+            <l>Erwäge nur, hat Alles, was er that,</l>
+            <l>Seit langer Zeit nicht dahin abgezweckt?</l>
+            <l>Wär's mit den Inseln ihm gelungen, wir,</l>
+            <l>Wir lägen schändlicher in seinem Netz</l>
+            <l>Als in der Perser Joch.</l>
+          </sp>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Ist der Beweis</l>
+            <l>Denn so vollendet überzeugend, daß</l>
+            <l>Man gegen ihn mit Recht verfahren kann?</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Wer sich so furchtbar in Gefahr gesetzt,</l>
+            <pb n="110"/>
+            <l>Wer so viel Schritte hier zum Ziel gethan,</l>
+            <l>Das er in Thracien einst schon erreicht,</l>
+            <l>Ist Der Republikaner? Jeder Mann,</l>
+            <l>Der unbedingt den Staat in Händen hat,</l>
+            <l>Vor dem mit Ohnmacht das Gesetz verstummt,</l>
+            <l>Ist schon Despot, führt er auch nicht das Wort.</l>
+          </sp>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Doch war er immer milde, sanft und gut.</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Der Tiger auch blickt milde, bis der Raub</l>
+            <l>Ihm in den Klauen liegt. Freund, ein Despot</l>
+            <l>Ist nur gerecht, um ungerecht zu sein,</l>
+            <l>Und wirft Obolen nach Talenten aus.</l>
+            <l>Geh, frage nur, was war Pisistratus?</l>
+            <l>Wie lange täuschte sich nicht Solon selbst?</l>
+            <l>Despoten auszuspähn, ist nie zu früh,</l>
+            <l>Fast immer nur zu spät. Geh die Geschichte durch!</l>
+            <l>Willst Du denn warten, bis der Satellit</l>
+            <l>Den Lanzenkreis um ihn gezogen hält?</l>
+            <l>Bis seine Kataphrakten Dir den Weg</l>
+            <l>Am Markt vertreten? Bis mit dem Gesetz</l>
+            <l>Der Bürger schweigen muß? Bis Cekrops' Volk</l>
+            <l>Um seinen Wagen sclavenähnlich steht?</l>
+          </sp>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Du malest Dir ein fürchterliches Bild.</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Ob's wahr sei, frage die Akropolis!</l>
+            <l>Kaum hat uns Marathon davon befreit,</l>
+            <l>Ein zweites Marathon brächt' es zurück.</l>
+            <l>Des Volkes öffentlicher Dank schweift oft</l>
+            <l>Im Rausch vergessend bis zum Wahnsinn aus.</l>
+          </sp>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Sowie sein Undank.</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Dieser Undank ist</l>
+            <l>Nie so gefährlich als der Thoren Dank.</l>
+            <l>Die Dummheit giebt das köstlichste Juwel</l>
+            <l>Unwiederbringlich hin. Das Ungeheuer,</l>
+            <l>Das tausendarmig uns sodann ergreift,</l>
+            <l>Umgiftet uns mit Pesthauch, daß der Geist,</l>
+            <l>Der bessere, bis in das tiefste Mark</l>
+            <l>In schrecklicher Unendlichkeit verdirbt.</l>
+            <l>Blick über See, sieh nur nach Susa hin,</l>
+            <l>Wie dort sich hündisch ohne Menschenwerth</l>
+            <l>Das Sclavenantlitz auf die Erde drückt!</l>
+          </sp>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Zum Glück erschreckt Dich der Empusenblick</l>
+            <l>Umsonst; denn so tief sinken Griechen nicht.</l>
+          </sp>
+          <pb n="111"/>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Wer bürgt dafür? Hat nicht das Vaterland</l>
+            <l>Der niedrigsten Verworfenheit genug?</l>
+            <l>Du brauchst nicht erst nach Samos hinzugehn.</l>
+            <l>Kaum ist die Burg vom Satellitentroß</l>
+            <l>Der blutigen Pisistratiden frei.</l>
+            <l>Was unser Mann im Chersones verlor,</l>
+            <l>Das sucht er hier in der Akropolis</l>
+            <l>Des alten Mutterlandes. Hat er nicht</l>
+            <l>Mit stolzer Willkür seinen Inselzug,</l>
+            <l>Als trüg' er schon das Strahlendiadem,</l>
+            <l>Umher gemacht? Den Pariern sei Dank,</l>
+            <l>Trotz ihrem Sclavensinn nach Osten, daß</l>
+            <l>Sie nicht den neuen Dreizack fürchteten!</l>
+          </sp>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Du bist also gesonnen? –</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Freund, ich will</l>
+            <l>Noch mit dem letzten Tropfen meines Bluts,</l>
+            <l>Mit meinem letzten Hauch die Tyrannei,</l>
+            <l>Die uns bedroht, verfolgen; folge, was</l>
+            <l>Dann will, für mich! Athener will ich sein!</l>
+            <l>Und Freiheit ist Athen's Palladium.</l>
+          </sp>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Hier kommt Xanthippus.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt</head>
+          <stage>Vorige. Xanthippus.</stage>
+          <sp who="#xanthippus">
+            <speaker>Xanthippus.</speaker>
+            <l>Habt Ihr ihn gesehn?</l>
+            <l>Mit welchem Trotz im Blick er um sich schaut,</l>
+            <l>Als folgt' ihm jetzt schon ein Trabantenheer!</l>
+            <l>Nein, bei des Vaterlandes Göttern, nein,</l>
+            <l>So wahr ich ein Alkmäonide bin,</l>
+            <l>Und war' er zehnmal noch der erste Mann</l>
+            <l>Von Marathon, Despot soll er nicht sein!</l>
+            <l>Er soll zertrümmert werden, eh er's wird!</l>
+            <l>Und daß er's will, das ist nur allzu wahr.</l>
+            <l>Was kümmert ihn das alte Vaterland?</l>
+            <l>Er schlug die Schlacht bei Marathon für sich.</l>
+            <l>Er denkt vielleicht, er ist in Thracien;</l>
+            <l>Er soll erfahren, er ist in Athen,</l>
+            <l>Wo man nicht ungestraft Verräther ist!</l>
+            <l>Will er nicht Bürger sein, so sei er nichts!</l>
+          </sp>
+          <pb n="112"/>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Der Mann wird stark, wenn ihn das Unglück schlägt.</l>
+            <l>Ist's ein Verbrechen, muthig in den Sturm</l>
+            <l>Zu blicken, der ihm hoch entgegenbraust?</l>
+            <l>Der Trotz, der Dich beleidigt, ist vielleicht</l>
+            <l>Der sich bewußten Unschuld Hochgefühl.</l>
+            <l>Ein großer Mann, der mit dem Schicksal kämpft,</l>
+            <l>Wenn Alles rund um ihn zusammenstürzt,</l>
+            <l>Ist in der vollen Sammlung seiner Kraft</l>
+            <l>Der Götter Lieblingssohn.</l>
+          </sp>
+          <sp who="#xanthippus">
+            <speaker>Xanthippus.</speaker>
+            <l>Pisistratus</l>
+            <l>War ehmals ebenso. Ich zweifle nicht</l>
+            <l>An seinem Muth und seiner Klugheit, Freund;</l>
+            <l>Die ist uns Allen längst bewährt genug.</l>
+            <l>Und desto schlimmer nur! – Ich will den Gang</l>
+            <l>Für unsre Freiheit mit ihm wagen, will</l>
+            <l>Dem Volk den Vorhang lüften, der ihn deckt,</l>
+            <l>Und noch vor der Geburt mit aller Kraft</l>
+            <l>Die Hyderköpfe tödten. Wenn mich nicht</l>
+            <l>Die Stimmung täuscht, so ist es eben Zeit.</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Ich folge Dir, und mir der ganze Pnyx.</l>
+            <l>Die mehrsten unsrer Viertelsmeister sind</l>
+            <l>In meiner Hand. Man murrete schon laut,</l>
+            <l>Als herrisch er mit dem Geschwader fuhr,</l>
+            <l>Als wär' er unbedingt der Mann des Tags.</l>
+            <l>Es läuft von Markt zu Markte das Gerücht:</l>
+            <l>Seit Hippias dort in dem Treffen fiel,</l>
+            <l>Sei der Pisistratiden Herrschsucht ganz</l>
+            <l>In ihn gefahren. Jeder weiß etwas</l>
+            <l>Zu sagen, das etwas zur Sache thut;</l>
+            <l>Und sein Charakter bei den Bürgern gilt</l>
+            <l>Jetzt als Gemisch von Löwen, Wolf und Fuchs.</l>
+          </sp>
+          <sp who="#xanthippus">
+            <speaker>Xanthippus.</speaker>
+            <l>Gilt, was er ist. Es sei! Ich klag' ihn an.</l>
+            <l>Der Chersonesus macht ihn schon verhaßt,</l>
+            <l>Und was er jetzt theils that, theils unterließ,</l>
+            <l>Erweckt von allen Seiten Furcht. Die Furcht</l>
+            <l>Giebt hier zu der Verdammung schon das Recht.</l>
+            <l>Erwartung endlichen Beweises führt</l>
+            <l>Zu dem Verderben. Bei Athenern braucht</l>
+            <l>Es nur Verdacht, und ihre Scherben sind</l>
+            <l>Zu dem Gericht bereit: und hier ist mehr.</l>
+          </sp>
+          <pb n="113"/>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Thut, was gerecht ist! Möge nie der Staat</l>
+            <l>Bereuen, was Ihr jetzt, mit Leidenschaft</l>
+            <l>Vielleicht, dem ersten Mann der Republik</l>
+            <l>Zu thun bereit seid!</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Sprich nicht Unsinn, Freund!</l>
+            <l>Der Archon ist der erste Mann des Staats;</l>
+            <l>Und nach ihm kommt die nächste Obrigkeit.</l>
+            <l>Sonst ist ein Bürger Bürger, Keiner mehr,</l>
+            <l>Und Keiner weniger, wie das Gesetz</l>
+            <l>Dort in den Tafeln auf der Burg bestimmt,</l>
+            <l>Und wie es die Natur der Sache heischt.</l>
+            <l>Der erste Mann der Republik! Dies Wort</l>
+            <l>Allein macht zu Verbrechern ihn und Dich!</l>
+            <l>Gleichheit des Rechts und Ehrengleichheit sind</l>
+            <l>Der Freiheit Grund und der Gerechtigkeit;</l>
+            <l>Und ohne diese Göttergaben ist</l>
+            <l>Es eins, ob er hier, ob Darius herrscht.</l>
+          </sp>
+          <stage>(Geht mit Xanthippus ab.)</stage>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt</head>
+          <stage>Lysikrates (allein).</stage>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Wer taucht empor aus diesem Zweifelmeer,</l>
+            <l>Das uns umfluthet? Sieht der Demagog,</l>
+            <l>Was wirklich ist? Spielt seine Leidenschaft</l>
+            <l>Nur frevelnd mit des Volkes Heiligthum?</l>
+            <l>Nur Ihr Olympier dort oben wißt,</l>
+            <l>Was in der Seele tief verschlossen liegt;</l>
+            <l>Wir greifen blind nur in die Finsterniß.</l>
+            <l>Miltiades, vielleicht ist er der Mann,</l>
+            <l>Der göttlich rein in seiner Würde steht;</l>
+            <l>Vielleicht nur übertünchter Herrschergeist,</l>
+            <l>Wie von Sesostris bis Pisistratus</l>
+            <l>Wir Viele sahn. Ihr Götter, schützt Athen!</l>
+          </sp>
+        </div>
+      </div>
+      <div type="act">
+        <head>Zweiter Aufzug.</head>
+        <stage>Wohnung des Miltiades.</stage>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>Miltiades wird von Kriegern auf einem Sessel gebracht, schwer in den Schenkel
+            verwundet. Elpinice.</stage>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Hier setzt mich her an meines Vaters Herd!</l>
+            <l>Hier vor den kleinen, stillen Hausaltar,</l>
+            <l>Hier, wo der ältere Miltiades</l>
+            <l>Die Thracier mit dem Orakelspruch</l>
+            <l>In kaum bewußter Tugend zu sich lud!</l>
+            <l>Das Glück und Unglück unsers Hauses kam</l>
+            <l>Von dieser Stunde –</l>
+            <l><stage>(Zu den Kriegern.)</stage> Freunde, Eure Hand!</l>
+            <l>Das ist jetzt Alles, was Miltiades</l>
+            <l>Euch geben kann; verschmäht die Gabe nicht!</l>
+            <l>Ihr wart bei Marathon?</l>
+          </sp>
+          <sp who="#ein_krieger">
+            <speaker>Ein Krieger.</speaker>
+            <l>Wir waren, wir</l>
+            <l>Sind Bürger von Athen.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Für jenen Tag</l>
+            <l>Dankt Euch das Vaterland und Euer Herz.</l>
+            <l>Für diesen, ach, ich bin nun fast zu arm,</l>
+            <l>Euch nur zu danken; dennoch dank' ich Euch.</l>
+            <l>Lebt wohl, Ihr Bürger!</l>
+            <stage>(Die Krieger gehen ab.)</stage>
+            <l><stage>(Zu Elpinice.)</stage> Meine Tochter, komm;</l>
+            <l>Komm an mein Herz, mein liebes, liebes Kind!</l>
+            <l>Du weinst? Gieb diese Thränen der Natur</l>
+            <l>Und dann sei Tochter des Miltiades!</l>
+            <l>Sei eine Griechin!</l>
+          </sp>
+          <sp who="#elpinice">
+            <speaker>Elpinice.</speaker>
+            <l>Wärst Du nie mit Sieg</l>
+            <l>Von Marathon gekommen, hätte nie</l>
+            <l>Das Volk mit Jubel hoch Dir zugejauchzt!</l>
+            <l>Das wird Dich tödten, Vater; Gott, das wird!</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Sei ruhig, Mädchen! sammle Deinen Muth</l>
+            <l>Und sieh die Dinge, wie die Dinge sind!</l>
+            <l>Wärst Du so klein gesinnt, daß Du den Tag</l>
+            <l>Von Marathon dahin fürs Leben gäbst?</l>
+            <pb n="115"/>
+            <l>Das bist Du nicht: Dich wiegt der Augenblick</l>
+            <l>Nur etwas nieder. Ohne Marathon,</l>
+            <l>Was wären wir? und was das Vaterland?</l>
+            <l>Ich war Athener in dem Chersones;</l>
+            <l>Es ist mein Stolz, daß ich Athener bin.</l>
+            <l>Bei aller Narrheit unsers leichten Volks</l>
+            <l>Ist es vielleicht doch noch das menschlichste,</l>
+            <l>Das freundlichste von Hellas. Tapfer ist's,</l>
+            <l>Wie es die Ebne dort bewiesen hat.</l>
+          </sp>
+          <sp who="#elpinice">
+            <speaker>Elpinice.</speaker>
+            <l>Der Neid, die Mißgunst und der Undank wird</l>
+            <l>Dich der Parteisucht opfern. Ach, mein Herz</l>
+            <l>Bebt vor dem Markte, wo die Frechheit sich</l>
+            <l>In Gruppen stellt und über Tugenden,</l>
+            <l>Die ihren Seelen unerreichbar sind,</l>
+            <l>Mit Scheelsucht urtheilt und die Eifersucht</l>
+            <l>Für das, was ihre Horde Freiheit nennt –</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Mein Kind, Du urtheilst eben jetzt wie sie.</l>
+            <l>Nicht unwahrscheinlich, daß Ihr Beide irrt.</l>
+            <l>Doch welcher Irrthum wol verzeihlicher,</l>
+            <l>Der Menschenwürde minder schädlich sei,</l>
+            <l>Das, liebes Kind, enträthselt nur ein Gott.</l>
+            <l>Nur gleiches Recht, nur gleiche Freiheit trägt</l>
+            <l>Das Vaterland an des Verderbens Rand</l>
+            <l>Durch Klippen hin, wo jeder Bürger sich</l>
+            <l>Mit edlem Stolze zu dem Ganzen reiht</l>
+            <l>Und Keinem Antwort giebt als dem Gesetz.</l>
+            <l>Nur dieser Geist hebt unser Griechenland</l>
+            <l>So hoch empor, daß es vor einer Welt</l>
+            <l>Von Söldnern, die der reiche Orient</l>
+            <l>Herübersendet, nicht erzittern darf;</l>
+            <l>Nur dieser Geist schuf Marathon und schafft</l>
+            <l>Der Flammentage mehr, wie dieser war.</l>
+            <l>Dein Vater müßte ohne diesen Geist</l>
+            <l>Vor dem Despoten, der in Susa thront,</l>
+            <l>Den Fußtritt mit der Stirn berühren; Du,</l>
+            <l>Du, liebes Kind, wärst ohne diesen Geist</l>
+            <l>Ein Sclavenmädchen einer Perserin,</l>
+            <l>Die, selbst halb Sclavin, nur in Pomp gehüllt,</l>
+            <l>Den Werth der freien Seele nie begreift.</l>
+          </sp>
+          <sp who="#elpinice">
+            <speaker>Elpinice.</speaker>
+            <l>Mein Vater, ach, wird nicht auch dieser Geist,</l>
+            <l>Der Dich und Deine Freunde so durchglüht,</l>
+            <pb n="116"/>
+            <l>Dich mit den Freunden ins Verderben ziehn?</l>
+            <l>Der Sturm braust hoch, und Glück und Unglück wird</l>
+            <l>Hier gleich Verbrechen; lauschender Verdacht</l>
+            <l>Und Leidenschaft der Demagogen ist</l>
+            <l>Genug zum Hingang in das Barathron.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Wol möglich, gutes Kind! ich fürcht' es selbst.</l>
+            <l>In Susa dort kennt man kein Menschenrecht;</l>
+            <l>Hier in Athen bewachet Angst und Furcht</l>
+            <l>Das Heiligthum, zum höchsten Mißbrauch oft</l>
+            <l>Des Heiligthums. Soll keine Rose sein,</l>
+            <l>Weil ihre Dornen stechen? Soll kein Kraut</l>
+            <l>Der Heilung wachsen, weil es in der Hand</l>
+            <l>Der Thorheit und der Bosheit Gift gebiert?</l>
+            <l>Der Strom, der einem Tempe Fruchtbarkeit</l>
+            <l>Und Nahrung giebt, durchbricht oft seinen Damm</l>
+            <l>Und wälzet sich verheerend durch die Au';</l>
+            <l>Doch ohne seinen Segen wären auch</l>
+            <l>Die Tempefluren nicht.</l>
+          </sp>
+          <sp who="#elpinice">
+            <speaker>Elpinice.</speaker>
+            <l>O, könnten die</l>
+            <l>Athener alle, die mit Mißtraun jetzt</l>
+            <l>Vom Kynosarge bis zum Hafen hin</l>
+            <l>Verderben raunend, ängstlich brütend stehn,</l>
+            <l>Die große Seele schauen, wie sie ist,</l>
+            <l>Dir und dem Vaterlande wäre wohl!</l>
+            <stage>(Cimon erscheint.)</stage>
+            <l>Hier kommt mein Bruder. Ach, mir wird die Last</l>
+            <l>Mehr als zur Hälfte leichter, wenn er kommt.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweiter Auftritt.</head>
+          <stage>Vorige. Cimon.</stage>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Wie steht es draußen, Cimon?</l>
+          </sp>
+          <sp who="#cimon">
+            <speaker>Cimon.</speaker>
+            <l>Vater, schlecht.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Von innen steht es gut, bis auf den Fuß,</l>
+            <l>Der mich entsetzlich brennt.</l>
+          </sp>
+          <sp who="#cimon">
+            <speaker>Cimon.</speaker>
+            <l>So kamst Du nicht</l>
+            <l>Vom Herakleum dort bei Marathon</l>
+            <l>Zum Herakleum nah hier vor dem Thor,</l>
+            <l>Wo von dem Kynosarge noch Dein Blick</l>
+            <l>Die Perser schreckte, daß die Flotte schnell</l>
+            <l>Die Höhe suchte –</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Recht, so kam ich nicht.</l>
+            <pb n="117"/>
+            <l>Bin ich Dir jetzo minder werth, mein Sohn,</l>
+            <l>Weil nicht der Lorbeer meine Schläfe schmückt,</l>
+            <l>Weil nicht die Menge schwindelnd mich umjauchzt?</l>
+          </sp>
+          <sp who="#cimon">
+            <speaker>Cimon.</speaker>
+            <l>Kann in der fürchterlichen Stunde noch</l>
+            <l>Mein Vater unsanft sein? Gewiß, so kennt</l>
+            <l>Er seinen Cimon nicht. Ich bin so stolz</l>
+            <l>Auf Dich noch jetzt, wie ich es damals war.</l>
+            <l>Das Unglück erst bewährt den großen Mann.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Stolz ist Gefühl des Werths. Ein Jeder sei</l>
+            <l>Nur stolz auf sich und übertreibe nie</l>
+            <l>Den wahren Werth, der wirklich in ihm ist!</l>
+            <l>Dann ist der Staat auf seine Bürger stolz.</l>
+            <l>Was Einer thut, giebt keinem Andern Werth,</l>
+            <l>Und wäre dieser Andere der Sohn.</l>
+          </sp>
+          <sp who="#cimon">
+            <speaker>Cimon.</speaker>
+            <l>Mein Vater, zürne nicht! Du weißt es selbst,</l>
+            <l>Das wollt' ich nicht. Dein Heldenantlitz weckt</l>
+            <l>In mir das allgewaltige Gefühl,</l>
+            <l>Den tiefen Feuerdrang, Dir gleich zu sein,</l>
+            <l>Zu thun wie Du, und sei es auf Gefahr</l>
+            <l>Des Lohns sogar, wie Du ihn jetzt erfährst.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Ich glaube Dir. Mit solchen Bürgern steht</l>
+            <l>Athen gewiß. Thu Deine Pflicht, mein Sohn,</l>
+            <l>Mit allem Feuereifer Deiner Brust,</l>
+            <l>Und was Du thust, sei Lohn, der Dir genügt!</l>
+            <l>Die Tugend ohne Lohn ist doppelt schön.</l>
+            <l>In Allem übertriff mich, wenn Du kannst,</l>
+            <l>Und sei, wenn's sein muß, mir im Unglück gleich!</l>
+            <l>Wie steht's im Volk? Mein Sohn, verbirg mir nichts!</l>
+            <l>Ich war der Letzte nicht bei Marathon</l>
+            <l>Und kann es hören, Cimon. Damals galt's</l>
+            <l>Dem Vaterlande, jetzo gilt's nur mir.</l>
+          </sp>
+          <sp who="#cimon">
+            <speaker>Cimon.</speaker>
+            <l>Du weißt, Dein Aufenthalt im Chersones</l>
+            <l>Giebt unsern Rädlern vielen reichen Stoff,</l>
+            <l>Ihr Gift zu kochen, und die Mischung wirkt.</l>
+            <l>Dein Ansehn in dem Staat, der Vorzug, den</l>
+            <l>Dir alle Feldherrn gaben, dann Dein Sieg</l>
+            <l>Und nun Dein Unglück, Alles, Alles wird</l>
+            <l>Dir zum Verbrechen. Braucht das Volk noch mehr?</l>
+            <l>Der Demagog ruft laut und hoch Verrath,</l>
+            <l>Und aus dem Munde jedes Miethlings hallt's,</l>
+            <l>Der sich für drei Obolen ihm verkauft.</l>
+            <pb n="118"/>
+            <l>Von seiner feilen Seele schließt er stracks</l>
+            <l>Auf Andere.</l>
+          </sp>
+          <sp who="#elpinice">
+            <speaker>Elpinice.</speaker>
+            <l>Die Götter wissen das,</l>
+            <l>Wie unaussprechlich thöricht und verkehrt</l>
+            <l>Die Menge handelt. Bruder, sammle Dich,</l>
+            <l>Gieb etwas von der strengen Tugend nach!</l>
+            <l>Sieh, welche Angst mir fast das Herz zerreißt,</l>
+            <l>Und welcher Schmerz mir von dem Auge glüht!</l>
+            <l>Rett uns den Vater, thue, was Du kannst;</l>
+            <l>Sprich, bitte, flehe, schmeichle; nimm den Schmuck,</l>
+            <l>Den Du zuletzt mir gabst; mein letztes Gold</l>
+            <l>Nimm, nimm, bestich! Was sich Miltiades</l>
+            <l>Nie, nie erlauben wird, nie darf, das darf</l>
+            <l>Sein Sohn für ihn, wo es den Vater gilt.</l>
+            <l>Den Thoren fasse kühn nach seiner Art</l>
+            <l>Und seinen Freund, den Schlechten: einst noch dankt</l>
+            <l>Der Staat Dir für den freundlichen Betrug,</l>
+            <l>Daß Du die große Tugend ihm erkauft!</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Du rührst mich, Tochter; Deine Zärtlichkeit</l>
+            <l>Thut meinem väterlichen Herzen wohl.</l>
+            <l>Ich danke Dir. Allein Du irrst, mein Kind,</l>
+            <l>Das kann und soll nichts helfen; unser Haus</l>
+            <l>Steht in der Götter und der Tugend Schutz.</l>
+            <l>Kann es nicht sicher stehn auf diesem Grund,</l>
+            <l>So fall' es gut und ehrlich. Liebes Kind,</l>
+            <l>Wenn auch das Volk mein Unglück mir verzeiht</l>
+            <l>Und meine Freunde siegen, fürcht' ich doch,</l>
+            <l>Ich trag' unheilbar schon den Tod in mir.</l>
+            <l>Die Wunde war bedenklich, und die See</l>
+            <l>Hat sie verschlimmert; und die Unruh' hier</l>
+            <l>Wird sie nicht bessern. Zweifelnd blickt der Arzt,</l>
+            <l>Bekennet stumm die Ohnmacht seiner Kunst</l>
+            <l>Und scheint den Ausgang mir zu prophezeih'n.</l>
+            <l>Mich däucht, der Archon kommt. – Geh, geh, mein Kind,</l>
+            <l>Sei ruhig, wie Du Deinen Vater siehst!</l>
+          </sp>
+          <sp who="#elpinice">
+            <speaker>Elpinice.</speaker>
+            <l>Wär' ich ein Weib und Deine Tochter, wenn</l>
+            <l>Ich ruhig könnte sein, in dem Moment,</l>
+            <l>Wo meines Vaters Leben in Gefahr</l>
+            <l>So fürchterlich von allen Seiten ist?</l>
+            <l>Ich will versuchen, was die Kraft vermag;</l>
+            <l>Nur, Cimon, sage mir –</l>
+          </sp>
+          <pb n="119"/>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Entferne Dich!</l>
+            <l>Er soll Dir Nachricht bringen. Männer nur,</l>
+            <l>Und in dem engsten Sinne, brauchen wir</l>
+            <l>Zu dem Geschäft, das jetzt hier vor uns liegt.</l>
+          </sp>
+          <stage>(Elpinice geht ab.)</stage>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt</head>
+          <stage>Miltiades. Cimon. Aristides und Themistokles kommen.</stage>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Das ehrt mein Haus, daß selbst der Archon kommt</l>
+            <l>Und es besucht, jetzt, da das Wetter sich</l>
+            <l>Rund um dasselbe thürmt; das thut mir wohl.</l>
+            <l>Und Aristides selber ist der Mann,</l>
+            <l>Der dieses thut; das ist noch mehr.</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Mein Freund,</l>
+            <l>Das wogende Getümmel unsers Volks</l>
+            <l>Drängt sich von allen Straßen nach dem Markt</l>
+            <l>Und ist voll Unmuths gegen Dich. Ich will</l>
+            <l>Versuchen, was ich kann, Gerechtigkeit</l>
+            <l>Dir zu verschaffen.</l>
+          </sp>
+          <sp who="#themistokles">
+            <speaker>Themistokles.</speaker>
+            <l>Ha, Gerechtigkeit,</l>
+            <l>Die schöne Göttin, Aristides, suchst</l>
+            <l>Du bei Athenern, die für ein Gericht</l>
+            <l>Aphyen sich zu Lanzenträgern bei</l>
+            <l>Pisistratus verdingen? Suche nur!</l>
+            <l>Wen die Gerechtigkeit hier retten soll,</l>
+            <l>Der ist verloren.</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Anders wollte sich</l>
+            <l>Doch wol Themistokles nicht retten?</l>
+          </sp>
+          <sp who="#themistokles">
+            <speaker>Themistokles.</speaker>
+            <l>Wenn</l>
+            <l>Gerechtigkeit beschützen kann, so sei's;</l>
+            <l>So bin ich froh, dann ist es, wie es soll.</l>
+            <l>Doch selten wird es sein. Das Gute wird</l>
+            <l>Nur selten rein gethan, und das Gewühl</l>
+            <l>Der Leidenschaften ist der Hebel, den</l>
+            <l>Der Kluge braucht.</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Ich weiß es schon,</l>
+            <l>In welchem Werth bei Dir die Tugend steht,</l>
+            <l>Und welche Mittel Du zum Zwecke wählst.</l>
+          </sp>
+          <pb n="120"/>
+          <sp who="#themistokles">
+            <speaker>Themistokles.</speaker>
+            <l>Ich nehme meine Leute, wie sie sind.</l>
+            <l>Der Mensch ist hier ein Gott und dort ein Vieh,</l>
+            <l>Durchkreist die Schranke jeder Wirklichkeit.</l>
+            <l>Die Meisten sind, was die Umgebung will:</l>
+            <l>Das Instrument in einer klügern Hand.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Nur zu wahr oft, und traurig, daß es ist!</l>
+            <l>Wie steht es aber? Hoffentlich werd' ich</l>
+            <l>Doch wol nicht unverhört verdammt? Ich bin</l>
+            <l>Doch wol noch in Athen? Athener noch,</l>
+            <l>Und habe mit dem Gerber gleiches Recht?</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Xanthippus klaget Dich des Hochverrats</l>
+            <l>Bei der Versammlung an, und Kleon hat</l>
+            <l>Mit seinem Anhang alle Viertel schon</l>
+            <l>Zu hoher, schlimmer Gährung aufgerührt.</l>
+          </sp>
+          <sp who="#themistokles">
+            <speaker>Themistokles.</speaker>
+            <l>Die Schuster und die Stockfischhändler ziehn</l>
+            <l>Von Platz zu Platz, als ob sie Griechenland</l>
+            <l>Befreien müßten, blicken mächtig dumm</l>
+            <l>Und werfen Apophthegmen wider Dich.</l>
+            <l>In Dir steckt hundertmal Pisistratus,</l>
+            <l>Wenn man den Gerber Kleon rasen hört.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Das fürchtet' ich. Der Kataraktensturz</l>
+            <l>Wird, muß mich niederwerfen, und kein Freund,</l>
+            <l>Kein Aristid als Archon rettet mich.</l>
+            <l>Ich bin in der Alkmäoniden Hand.</l>
+            <l>Sie prahlen stolz mit dem Verdienst, das sie</l>
+            <l>Durch der Pisistratiden Sturz im Staat</l>
+            <l>Sich einst erwarben, ob der böse Ruf</l>
+            <l>Gleich ihrer nicht geschont, als nach der Schlacht</l>
+            <l>Der Perser Flotten über Sunium</l>
+            <l>Herüberflogen. Um nun den Verdacht</l>
+            <l>Von sich zu wälzen, wälzen sie ihn kühn</l>
+            <l>Auf mich zurück. Ihr Einfluß ist zu groß,</l>
+            <l>Die listige Beschönigung zu schön:</l>
+            <l>Mein Unglück macht mich ganz zu ihrem Raub.</l>
+          </sp>
+          <sp who="#themistokles">
+            <speaker>Themistokles.</speaker>
+            <l>Was willst Du thun?</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Was kann ich thun? Ich muß,</l>
+            <l>So wie ich lebte, sterben.</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Götter, soll</l>
+            <l>Mit uns es dahin kommen? Soll Athen</l>
+            <l>Die Schande tragen, seinen Retter selbst</l>
+            <l>Zu morden? Nein, so wahr ich Archon bin,</l>
+            <pb n="121"/>
+            <l>So wahr noch kein Athener es gewagt,</l>
+            <l>Mich einer Ungerechtigkeit zu zeihn,</l>
+            <l>Ich will Dich retten, lieber, alter Freund!</l>
+            <l>Ich bin von Deiner Unschuld überzeugt</l>
+            <l>Und überzeuge das verführte Volk.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Hier übernimmst Du mehr, als Du vermagst;</l>
+            <l>Doch dank' ich Dir. Wenn Aristides nur</l>
+            <l>Mich losspricht, ob mich jetzt die Welt verdammt,</l>
+            <l>So leb' ich bei der Nachwelt ohne Schuld.</l>
+            <l>Themistokles, ich denke so wie Du,</l>
+            <l>Doch fürcht' ich weiter nichts; der Tod ist uns</l>
+            <l>Ja wohl bekannt. Wer unter uns hat nicht</l>
+            <l>Ihm oft schon in das Angesicht geschaut?</l>
+            <l>Du kennst das Volk, und, Freund, Du kennest mich;</l>
+            <l>Du sollst mein Anwalt vor den Schranken sein.</l>
+            <l>Ich lege gern mein Loos in Deine Hand;</l>
+            <l>Ich weiß, daß Du der Würde nichts vergiebst,</l>
+            <l>Die mir und Euch gebührt. Mir mangelt Kraft,</l>
+            <l>Für mich zu sprechen, und vielleicht geziemt</l>
+            <l>Es mir auch nicht. Es würde Stolz und Trotz</l>
+            <l>Mich übereilen vor dem Blutgericht.</l>
+          </sp>
+          <sp who="#themistokles">
+            <speaker>Themistokles.</speaker>
+            <l>Du ehrst mich damit mehr, Miltiades,</l>
+            <l>Als würde mir im Feld der schönste Sieg.</l>
+            <l>Ich will versuchen, was die Seele kann,</l>
+            <l>Wenn sie nach ihrem besten Wunsche ringt.</l>
+            <l>Mein Lehrer, Freund und Vater warest Du</l>
+            <l>Und sollst mir's doppelt sein, erkämpf' ich Dich.</l>
+            <l>Der Archon wird mich unterstützen.</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Ja,</l>
+            <l>Hier kann ich das mit meiner ganzen Kraft,</l>
+            <l>Themistokles; oft kann ich's leider nicht.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades</speaker>
+            <stage>(zu Themistokles).</stage>
+            <l>Du Feuereiferer fürs Vaterland,</l>
+            <l>Wir ehren Deinen Sinn; nur ehre Du</l>
+            <l>Die Art, wie Aristides ihn bestimmt!</l>
+            <l>So werdet Ihr in brüderlichem Bund</l>
+            <l>Des Vaterlandes Dioskuren sein.</l>
+            <l>Jetzt laßt mich ruhen!</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Deine Gegenwart</l>
+            <l>Vor der Versammlung wünscht' ich aber doch.</l>
+            <l>Wenn Du erscheinen kannst –</l>
+          </sp>
+          <pb n="122"/>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Ich werde, Freund.</l>
+            <l>Die Götter geben mir noch so viel Kraft.</l>
+            <l>Nur vor dem Lärm des Marktes banget mir.</l>
+            <l>Ich bin nicht mehr an Körper und an Geist,</l>
+            <l>Was ich noch war, als Datis vor uns stand</l>
+            <l>Und Ihr mir Eure Tage übergabt.</l>
+            <l>Kämpft Ihr mich los, wahrscheinlich ist es nur</l>
+            <l>Für mich noch wenig Frist, was Ihr erringt.</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Der Brandfleck wäre desto schwärzer, wenn</l>
+            <l>Nur eine kleine Stunde früher wir</l>
+            <l>Den Mann zum Hades sendeten, der uns</l>
+            <l>Davon befreit. Wenn ich etwas vermag,</l>
+            <l>Soll Deiner Krankheit wegen nicht der Markt,</l>
+            <l>Das Prytaneum soll Gerichtsort sein.</l>
+            <l>Wir gehen jetzt; ermanne Dich durch Ruh',</l>
+            <l>Die fürchterliche Stunde zu bestehn,</l>
+            <l>Auch jetzt vorzüglich für das Vaterland!</l>
+            <l>Denn was gewonnen wird, gewinnt Athen,</l>
+            <l>Die treue Freundschaft führet nur das Wort.</l>
+          </sp>
+          <sp who="#themistokles">
+            <speaker>Themistokles.</speaker>
+            <l>Miltiades, mir banget zwar um Dich,</l>
+            <l>Doch neid' ich Dir nicht minder diesen Tag</l>
+            <l>Als den bei Marathon.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Ich kenne das;</l>
+            <l>Du bist Dir immer gleich. Ein andermal</l>
+          </sp>
+          <stage>(Aristides und Themistokles gehen ab.)</stage>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt</head>
+          <stage>Miltiades. Cimon.</stage>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Mein Sohn, Du sprichst kein Wort?</l>
+          </sp>
+          <sp who="#cimon">
+            <speaker>Cimon.</speaker>
+            <l>Ich geh' und handle mit. Es tröstete</l>
+            <l>Mich mächtig dieser Anblick, Vater, jetzt</l>
+            <l>Von diesen Männern so verschiedner Art</l>
+            <l>So innig einig Dich geliebt zu sehn.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Das ist es, was die Tugend sich erwirbt,</l>
+            <l>Daß, wenn Gefahr ihr furchtbar näher rückt,</l>
+            <l>Die gleiche Tugend sich zu ihr gesellt.</l>
+            <l>Bleib jetzt bei mir, mein Sohn! ich brauche Dich.</l>
+            <pb n="123"/>
+            <l>Du siehst, ich bin ein armer, kranker Mann</l>
+            <l>Und fühle jetzt den Trost, daß so ein Sohn</l>
+            <l>Und solche Freunde mein sind. In der Stadt</l>
+            <l>Ist meine Sache, glaub' ich, gut bestellt;</l>
+            <l>Bestelle Du nunmehr mein Haus! es ist</l>
+            <l>Das Deinige nun bald.</l>
+          </sp>
+          <sp who="#cimon">
+            <speaker>Cimon.</speaker>
+            <l>Mein Vater, ach,</l>
+            <l>Mein Vater, kennte Dich das Volk wie wir,</l>
+            <l>Es würde dankbar um Dein Lager stehn</l>
+            <l>Und zu den Göttern beten.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Sohn, das Volk</l>
+            <l>Thut wie das Volk, zu wenig und zu viel.</l>
+            <l>Es sieht mit Leidenschaft und handelt so;</l>
+            <l>Du thust ihm Unrecht, wenn Du mehr verlangst.</l>
+            <l>Die Demagogen und die Könige</l>
+            <l>Sind oft auch um kein Haar gemäßigter.</l>
+            <l>Die Rede hat mich sehr entkräftet, und</l>
+            <l>Der Schmerz brennt heftiger. Geh, lieber Sohn,</l>
+            <l>Und sende mir den Arzt! sonst tödtet mich</l>
+            <l>Vielleicht die Wunde, eh man mich verdammt.</l>
+          </sp>
+          <sp who="#cimon">
+            <speaker>Cimon.</speaker>
+            <l>Wirf doch noch nicht, nicht alle Hoffnung weg!</l>
+            <l>Geduld und Muth und Kraft! Vielleicht wird noch</l>
+            <l>Das Ende besser.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Junger Mensch, Du sprichst</l>
+            <l>Mit Deinem Vater, mit Miltiades.</l>
+            <l>Gut wird es enden, end' es, wie es will.</l>
+            <l>Zum Leben hab' ich freilich wenig Kraft,</l>
+            <l>Zum Tode Kraft und Muth genug. – Mein Sohn,</l>
+            <l>Geh, schicke mir den Arzt! ich brauche Ruh'.</l>
+            <l>Und geh und tröste Deine Schwester dann!</l>
+            <l>Vor Allen braucht wol sie am Meisten Trost.</l>
+            <l>Geh, lieber Cimon!</l>
+          </sp>
+          <stage>(Cimon geht ab.)</stage>
+        </div>
+        <div type="scene">
+          <head>Fünfter Auftritt</head>
+          <stage>Miltiades (allein).</stage>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Ach, Metiochus,</l>
+            <l>Mein Sohn, mein Sohn, der hinter Susa jetzt</l>
+            <l>Der Perser Ketten trägt! Wärst Du bei mir!</l>
+            <pb n="124"/>
+            <l>Könnt' ich nur einmal noch Dich an mein Herz</l>
+            <l>Mit Vaterliebe drücken! Cimon, Du,</l>
+            <l>Themistokles und Aristides, was</l>
+            <l>Was würdet Ihr dem Vaterlande sein!</l>
+            <l>Ich Glücklicher im Tode, wärst Du hier!</l>
+            <l>Nun wirst Du mir zum Vorwurf. Vaterland,</l>
+            <l>Es wird mir schwer, nicht bitter gegen Dich</l>
+            <l>Zu werden; Deinen Undank fühl' ich tief,</l>
+            <l>Und fast setzt sich Verachtung mir ins Herz.</l>
+            <l>Doch nein, das Göttliche, das in mir glüht</l>
+            <l>Hält fest sich an das Göttliche in Dir.</l>
+            <l>Die Sclaven nur sind ohne Vaterland,</l>
+            <l>Die Aermsten aller Sterblichen, wär' auch</l>
+            <l>Die Kette, die sie tragen, Seid' und Gold.</l>
+            <l>Des Vaterlandes schönes Heiligthum,</l>
+            <l>Ich war so glücklich – – ach, Metiochus</l>
+            <l>Dort in der Knechtschaft, diese Wunde schmerzt</l>
+            <l>Mich brennender als die von Paros. Du</l>
+            <l>Hast jetzt vielleicht im Taumel süßes Wahns</l>
+            <l>Vergessen, daß Du je ein Grieche warst.</l>
+            <l>Mein Cimon tröste mich für den Verlust! –</l>
+            <l>Noch kommt der Arzt nicht. – Nur ein Wenig Schlaf,</l>
+            <l>Nur etwas Stärkung, gütige Natur,</l>
+            <l>Daß mich ein heller Sinn begleite, wenn</l>
+            <l>Man mich zu dem Gericht des Todes trägt!</l>
+          </sp>
+          <stage>(Er schlummert ein.)</stage>
+        </div>
+      </div>
+      <div type="act">
+        <head>Dritter Aufzug</head>
+        <div type="scene">
+          <head>Erster Auftritt</head>
+          <stage>Gruppen von Bürgern, nach ihrer politischen Stimmung. Xanthippus. Kleon. Ihr
+            Anhang. Demosthenes, Aeschylus, Bürger und Freunde des Miltiades. Lysikrates,
+            gemäßigt.</stage>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Die Klage soll im Prytaneum sein,</l>
+            <l>Sagst Du, Xanthippus? Wieder Neuerung.</l>
+            <l>Seit Theseus' Zeiten war der Markt der Platz,</l>
+            <pb n="125"/>
+            <l>Wo man die öffentliche Sach' entschied.</l>
+            <l>Hier soll Gericht sein! Was hat er voraus?</l>
+            <l>Die Halle dort ist klein. Er hat am Volk</l>
+            <l>Gesündiget: er soll sich vor dem Volk</l>
+            <l>Vertheidigen, wenn er es kann! Denkt er</l>
+            <l>Der freien Untersuchung zu entgehn?</l>
+            <l>Das soll er nicht!</l>
+          </sp>
+          <sp who="#demosthenes">
+            <speaker>Demosthenes</speaker>
+            <stage>(zu Aeschylus).</stage>
+            <l>Wenn man den Menschen hört,</l>
+            <l>Man kommt doch fast zu glauben in Gefahr,</l>
+            <l>Er sei der Mann, der die Unsterblichen</l>
+            <l>Des Perserheers allein geschlagen hat,</l>
+            <l>So hoch spricht er; und dennoch ist er nur</l>
+            <l>Der Gerber Kleon unten an dem Pnyx,</l>
+            <l>Der mit Aegyptern sich zuweilen laut</l>
+            <l>In Gerstenwein berauscht, nicht weiter kam</l>
+            <l>Als bis zum Kynosarge, wo er sieht,</l>
+            <l>Wie seine Lederarbeit uns den Fluß verderbt.</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Demosthenes, ich kenne Dich.</l>
+          </sp>
+          <sp who="#demosthenes">
+            <speaker>Demosthenes.</speaker>
+            <l>Da kennst</l>
+            <l>Du einen Mann, den kein Athener noch</l>
+            <l>Mit einer Klage hier verfolgte, der</l>
+            <l>Dort in dem Feld und auf dem Markte hier</l>
+            <l>Stets seine Pflichten that.</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Wir wissen, Du</l>
+            <l>Bist des Tyrannen Freund.</l>
+          </sp>
+          <sp who="#demosthenes">
+            <speaker>Demosthenes.</speaker>
+            <l>Wär' er Tyrann,</l>
+            <l>Das glaube mir, Du sprächest längst nicht mehr</l>
+            <l>Und hieltest nicht Gericht jetzt über ihn.</l>
+            <l>Denn wäre ja Miltiades so schlecht,</l>
+            <l>Als Du ihn lügst, denkst Du, er wäre hier,</l>
+            <l>Wo man Aristogiton Hymnen singt?</l>
+            <l>Er will dem Volke wohl; das wollt Ihr nicht.</l>
+            <l>Die Eupatriden und die Wucherer</l>
+            <l>Säh'n gar zu gern den Laurischen Gewinn</l>
+            <l>Ohn' allen Abzug in die Säcke gehn,</l>
+            <l>Die sie besitzen. Daß er Unglück hat,</l>
+            <l>Daß Paros so nicht war wie Marathon,</l>
+            <l>Ist das Verbrechen? Perser fochten hier,</l>
+            <l>Dort fochten Griechen.</l>
+          </sp>
+          <sp who="#xanthippus">
+            <speaker>Xanthippus.</speaker>
+            <l>Freund Demosthenes,</l>
+            <l>Das wird sich zeigen, wenn's zur Sache kommt.</l>
+          </sp>
+          <pb n="126"/>
+          <sp who="#demosthenes">
+            <speaker>Demosthenes.</speaker>
+            <l>Ich hoff', es wird. Denn bei Minervens Schild,</l>
+            <l>Nie soll der Oelbaum unsrer Polias</l>
+            <l>Mich mehr beschatten, wenn ein Mann wie er</l>
+            <l>Nicht sicher an des Vaters Herde sitzt!</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Du kannst ja mit ihm gehen.</l>
+          </sp>
+          <sp who="#demosthenes">
+            <speaker>Demosthenes.</speaker>
+            <l>Allerdings.</l>
+            <l>Viel lieber in dem Barathron mit ihm,</l>
+            <l>Als dort in der Akropolis mit Dir!</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Wir wissen, daß ein Mann von Marathon</l>
+            <l>Nicht sehr bescheiden redet, wenn er spricht.</l>
+          </sp>
+          <sp who="#aeschylus">
+            <speaker>Aeschylus.</speaker>
+            <l>Wir dürften schweigen, Marathon spricht selbst;</l>
+            <l>Wenn nur die schlimmeren Athener nicht</l>
+            <l>Das Werk zerstörten, das wir dort gebaut!</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Auch Du warst dort, ich weiß es; überdies</l>
+            <l>Schriebst Du noch Verse, die ich nicht verstand.</l>
+          </sp>
+          <sp who="#aeschylus">
+            <speaker>Aeschylus.</speaker>
+            <l>Ich glaub' es wohl.</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Und das zusammen macht</l>
+            <l>Dich nicht erträglicher.</l>
+          </sp>
+          <sp who="#aeschylus">
+            <speaker>Aeschylus.</speaker>
+            <l>Das ist mir lieb.</l>
+            <l>Den Thoren zu gefallen, wünscht der Thor.</l>
+          </sp>
+          <sp who="#xanthippus">
+            <speaker>Xanthippus.</speaker>
+            <l>Erbittert Euch doch nicht! Was recht ist, wird,</l>
+            <l>Muß Jedem werden in Athen. Du wirst</l>
+            <l>Es doch nicht tadeln, daß wir einen Mann,</l>
+            <l>Der so viel Bürger in den Tod geführt,</l>
+            <l>In einem so geheimnißvollen Gang,</l>
+            <l>Wovon noch jetzt das Volk nur wenig weiß,</l>
+            <l>Der so viel Schätze stolz verschwendet hat,</l>
+            <l>Als wären's Feigen, nun zur Rechenschaft</l>
+            <l>Nach dem Gesetz in Untersuchung ziehn!</l>
+            <l>Hier ist der Eupatrid', der Idiot</l>
+            <l>Und Jeder gleich: die Frag' ist nur das Recht;</l>
+            <l>Und es ist der Gerechtigkeit Natur,</l>
+            <l>Daß sie für Alle gleich sei.</l>
+          </sp>
+          <sp who="#demosthenes">
+            <speaker>Demosthenes.</speaker>
+            <l>Alles dies</l>
+            <l>Klingt schön und gut, und Alles ist sehr wahr.</l>
+            <l>Wenn nur des Unmuths Gährung nicht voraus,</l>
+            <l>Durch Euch emporgerüttelt, überall</l>
+            <l>Das Volk mit blindem Undank angefüllt,</l>
+            <l>Zur Wuth entflammet hätte. Wird Vernunft</l>
+            <l>Wol je gehört im Sturm der Leidenschaft?</l>
+          </sp>
+          <pb n="127"/>
+          <sp who="#xanthippus">
+            <speaker>Xanthippus.</speaker>
+            <l>Auch er ist Eupatrid', und die Partei,</l>
+            <l>Die ihn beschützt, hat ihrer noch genug.</l>
+            <l>Auch sitzen keine Lästrygonier</l>
+            <l>Hier zu Gericht; es sind Athener, die</l>
+            <l>Mit ihm gelebt, und die von Solon her,</l>
+            <l>Von Kodrus und von Theseus Menschlichkeit</l>
+            <l>Mit Freiheit und Gerechtigkeit vereint.</l>
+          </sp>
+          <sp who="#demosthenes">
+            <speaker>Demosthenes.</speaker>
+            <l>Ich fürchte Deine Klage nicht so sehr –</l>
+            <l>Ob Du gleich fein genug sie drehen wirst –</l>
+            <l>Als Deine Schleicher hier und dort am Pnyx</l>
+            <l>Und an dem Hafen unten, mit dem Gold</l>
+            <l>Von den Alkmäoniden in der Hand.</l>
+          </sp>
+          <sp who="#xanthippus">
+            <speaker>Xanthippus.</speaker>
+            <l>Du, Lästerer, beschimpfst das ganze Volk</l>
+            <l>Und seine Edelsten. Ich werde die</l>
+            <l>Verleumdung ahnden, wenn die Stunde kommt.</l>
+          </sp>
+          <sp who="#demosthenes">
+            <speaker>Demosthenes.</speaker>
+            <l>Ich glaub' es freilich wohl. Was werden dann</l>
+            <l>Nicht Alles die Alkmäoniden thun</l>
+            <l>Durch Dich und Kleon und die Sippschaft, die</l>
+            <l>Ihr um Euch zieht! Allein noch hoffe nicht</l>
+            <l>Zu zuversichtlich! Wenn's Euch auch gelingt,</l>
+            <l>Das Volk im Taumel zu des Mannes Mord</l>
+            <l>Frech zu empören – noch sind Männer da</l>
+            <l>Von Marathon, die dort den Feinden und</l>
+            <l>Den Schwindelgeistern hier gleich furchtbar sind:</l>
+            <l>Und das sind die Alkmäoniden nicht!</l>
+          </sp>
+          <sp who="#xanthippus">
+            <speaker>Xanthippus.</speaker>
+            <l>Du drohst wie Einer, der des Hinterhalts</l>
+            <l>Bewußt sich ist; das Volk wird aber frei</l>
+            <l>Und kühn, was recht ist, thun. Zwar sind nun die</l>
+            <l>Pisistratiden fort, doch wuchert der</l>
+            <l>Pisistratiden Geist noch in Athen.</l>
+            <l>Und diesen endlich auszurotten, sei</l>
+            <l>Die Arbeit jedes Redlichen im Staat!</l>
+          </sp>
+          <sp who="#demosthenes">
+            <speaker>Demosthenes.</speaker>
+            <l>Hier kommt der Archon; macht dem Archon Platz!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweiter Auftritt</head>
+          <stage>Vorige. Aristides und Themistokles erscheinen mit einigem Gefolge.</stage>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Ihr Bürger, höret mich! Xanthippus klagt</l>
+            <l>Miltiades des Hochverrats beim Volk</l>
+            <l>Gesetzlich an. Es hat nun der Senat</l>
+            <l>Das Prytaneum zum Verhör bestimmt.</l>
+          </sp>
+          <pb n="128"/>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Der Markt und nicht das Prytaneum ist</l>
+            <l>Der Ort, wo nach dem ältesten Gebrauch</l>
+            <l>Man dieser Art Gerichte hält. Es soll</l>
+            <l>Hier keine Neuerung gestattet sein.</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Der Angeklagte ist ein kranker Mann,</l>
+            <l>Ist schwer verwundet in dem Dienst des Staats,</l>
+            <l>Ist alt und schwach; die Witterung ist rauh.</l>
+            <l>Der Saal ist groß; das Prytaneum ist</l>
+            <l>Zu dem Verhör bestimmt.</l>
+          </sp>
+          <sp who="#xanthippus">
+            <speaker>Xanthippus.</speaker>
+            <l>Mir gilt es gleich.</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Die Neuerung kann nur gefährlich sein!</l>
+            <l>Der alte Brauch gilt hier wie ein Gesetz.</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Hier auf dem Markte kann der kranke Mann</l>
+            <l>Unmöglich jetzt erscheinen, wenn Ihr ihn</l>
+            <l>Nicht vor den Schranken wollet sterben sehn.</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>So sei es denn! Allein der Volksbeschluß,</l>
+            <l>Der ihn verurtheilt oder losspricht, wird</l>
+            <l>Dann hier gefaßt; das kann nur hier geschehn,</l>
+            <l>Nach Vierteln, wie die alte Ordnung heischt.</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Das wird sich finden, Kleon. Glaube mir,</l>
+            <l>Wol kein Athener kann in ganz Athen</l>
+            <l>Für Ordnung und Gesetz und Recht und Pflicht</l>
+            <l>Besorgter sein, als Aristides ist.</l>
+            <l>Jetzt gehe Jeder, dessen Gegenwart</l>
+            <l>Dort nöthig ist! Der Thesmothet besorgt</l>
+            <l>Die Anstalt schon, und die Versammlung wächst.</l>
+            <l>Ich gehe selbst, den fürchterlichen Tag</l>
+            <l>Für unser Vaterland zu ordnen, der</l>
+            <l>In aller Griechen Augen uns vielleicht</l>
+            <l>Mit Schande zeichnen wird.</l>
+          </sp>
+          <stage>(Er geht mit seinem Gefolge ab.)</stage>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt</head>
+          <stage>Vorige, ohne Aristides und Themistokles.</stage>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Der Archon giebt</l>
+            <l>Sich heute viele Müh' um das Gericht,</l>
+            <l>Als wär' es eben jetzt das erste Mal,</l>
+            <l>Daß so ein Mann in Untersuchung kommt.</l>
+          </sp>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Daß so ein Mann in Untersuchung kommt,</l>
+            <l>Ist allerdings das erste Mal, mein Freund.</l>
+            <pb n="129"/>
+            <l>Von Cekrops bis zu Solon war kein Tag</l>
+            <l>Wie Marathon.</l>
+          </sp>
+          <sp who="#demosthenes">
+            <speaker>Demosthenes.</speaker>
+            <l>Kein Mann, wie dieser ist.</l>
+            <l>Selbst die gigantische Heroenwelt</l>
+            <l>Hat ihrer wenige.</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Wir zweifeln nicht</l>
+            <l>An seinem großen Geist. Er reißt mit sich</l>
+            <l>Wie ein Koloß die kleinen Seelen fort.</l>
+            <l>Um desto fürchterlicher ist, was er</l>
+            <l>In seines Geistes Tiefe kühn beginnt.</l>
+            <l>Das Schicksal nur hat seinen Lauf gehemmt,</l>
+            <l>Sonst, fürcht' ich, war er zehnfach in Athen,</l>
+            <l>Was er vorher im Chersonesus war.</l>
+          </sp>
+          <sp who="#xanthippus">
+            <speaker>Xanthippus.</speaker>
+            <l>Ihr Bürger, kommt! Wir müssen diesmal wol</l>
+            <l>Dem Archon folgen, der das Hochgericht</l>
+            <l>Vom Markt ins Prytaneum trägt. Es soll</l>
+            <l>Dem Angeklagten wenig helfen, daß</l>
+            <l>Man alle Mittel sucht, ihn vor dem Zorn</l>
+            <l>Des aufgebrachten Volks zu decken. Nichts</l>
+            <l>Als der Beweis von seiner Unschuld kann</l>
+            <l>Ihn retten, und ich glaube, der ist schwer.</l>
+            <l>Er wird das Opfer seines Frevelsinns.</l>
+          </sp>
+          <stage>(Er geht mit seinem Anhang ab.)</stage>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt</head>
+          <stage>Demosthenes. Aeschylus. Lysikrates.</stage>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Dergleichen Tage sah Athen noch nie.</l>
+          </sp>
+          <sp who="#demosthenes">
+            <speaker>Demosthenes.</speaker>
+            <l>Ich fürcht', es ist der Anfang mehrerer.</l>
+            <l>Gelinget dieser, dann wird das Verdienst</l>
+            <l>Die Loosung zu des Pöbels Allgewalt.</l>
+            <l>Die Scherben werden schon das Vaterland</l>
+            <l>Von Männern säubern, deren Werth etwas</l>
+            <l>Emporsteigt aus den Hefen an dem Pnyx.</l>
+            <l>Des Gerber Kleon's Enkel werden dann</l>
+            <l>Noch stärker reden, als ihr Ahnherr spricht,</l>
+            <l>Der doch an Unverschämtheit Keinem weicht.</l>
+          </sp>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Doch kommt mir vor, man thut Miltiades</l>
+            <l>Auch nicht so Unrecht, wie Ihr, Freunde, meint,</l>
+            <l>Ist er gleich nicht das Ungeheu'r, zu dem</l>
+            <l>Ihn seine Gegner machen. Das Gericht</l>
+            <pb n="130"/>
+            <l>Des ganzen Volks muß, wird den Ausspruch thun,</l>
+            <l>Was von dem Mann, der unser Retter war,</l>
+            <l>Das Vaterland jetzt auch zu fürchten hat.</l>
+            <l>Des Bürgers Pflicht war, was er ehmals that,</l>
+            <l>Tilgt aber kein Verbrechen.</l>
+          </sp>
+          <sp who="#aeschylus">
+            <speaker>Aeschylus.</speaker>
+            <l>Ständen nur</l>
+            <l>Hier um den Löwen die Hyänen nicht</l>
+            <l>Von allen Seiten her! Wohin er blickt,</l>
+            <l>Blickt er auf Haufen Undankbarer, die</l>
+            <l>Durch ihn allein nur sind, was sie noch sind.</l>
+          </sp>
+          <sp who="#lysikrates">
+            <speaker>Lysikrates.</speaker>
+            <l>Ob dies ganz Wahrheit sei, beweise Du!</l>
+            <l>Wir wollen gehn. Der große Kampf beginnt.</l>
+            <l>Ich wünsche heiß des Vaterlandes Heil</l>
+            <l>Und will mich freun, wenn er durch Unschuld siegt.</l>
+            <l>Mein ganzes Haus sei dann ein Opferfest</l>
+            <l>Für jeden Bürger, welcher kommen will.</l>
+            <l>Doch muß er fallen – der Gedanke greift</l>
+            <l>Mir durch das Mark –, so sei mein nasser Blick</l>
+            <l>Ein Zoll dem großen, wunderbaren Mann!</l>
+          </sp>
+          <sp who="#demosthenes">
+            <speaker>Demosthenes.</speaker>
+            <l>Verleiht mir Fassung, Götter, daß der Zorn</l>
+            <l>Mir nicht das Herzblut durch die Schläfe jagt!</l>
+            <l>Die nächste Stunde sagt bestimmt, ob wir</l>
+            <l>Athener oder Lästrygonier,</l>
+            <l>Ob Hellas' Ehre oder Schandfleck sind.</l>
+            <l>Von unsern Richtern fürcht' ich Alles; kommt!</l>
+          </sp>
+          <stage>(Sie gehen zusammen ab.)</stage>
+        </div>
+      </div>
+      <div type="act">
+        <head>Vierter Aufzug</head>
+        <stage>Das Prytaneum</stage>
+        <div type="scene">
+          <head>Erster Auftritt</head>
+          <stage>Archonten, der Eponymus Aristides an der Spitze. Andere obrigkeitliche Personen.
+            Xanthippus, Ankläger. Bürger beider Parteien.</stage>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Hier ist der Platz des Angeklagten, hier</l>
+            <l>Der Deinige, Xanthippus! Bürger, hört</l>
+            <pb n="131"/>
+            <l>Mit Ruhe jedes Wort; laßt Leidenschaft</l>
+            <l>Und Vorurtheil in Euern Seelen nicht</l>
+            <l>Den Ausschlag geben! Nur Gerechtigkeit,</l>
+            <l>Durch welche nur allein die Staaten stehn,</l>
+            <l>Sei Eurer Stimmen feste Leiterin!</l>
+            <l>Bedenkt, der Tag, den Ihr jetzt halten wollt,</l>
+            <l>Bleibt frei und offen vor ganz Griechenland.</l>
+            <l>Olympiaden werden untergehn:</l>
+            <l>Er kehrt zurück mit seinem großen Schluß,</l>
+            <l>Liegt ewig in der Weltgeschichte da.</l>
+            <l>Man wird die Richter richten ohne Furcht,</l>
+            <l>Mit unbestochnen Gründen; nicht allein</l>
+            <l>An dem Ilissus; bei den Indiern</l>
+            <l>Und hinter des Herakles Säulen wird</l>
+            <l>Von Volk zu Volk mit strenger Wage man</l>
+            <l>Das Urtheil wieder wägen. Wohl dann Euch,</l>
+            <l>Wenn jeder Bessre für Euch unterschreibt!</l>
+            <l>Die Völker scheiden von dem Erdball weg</l>
+            <l>Wie Einzelne; nur was sie waren, bleibt:</l>
+            <l>Der Geist, der sie in ihrer Zeit gebar</l>
+            <l>Und ihre Ehr' und ihre Schande hält.</l>
+            <l>Und seid Ihr Griechen, wie ich glaub', Ihr seid's,</l>
+            <l>So faßt in dem Moment der Gegenwart</l>
+            <l>Zugleich Vergangenheit und Zukunft auf!</l>
+            <l>Des Jünglings Preis ist Schönheit, Kraft und Muth,</l>
+            <l>Der Männer Würde, Licht, Vernunft und Recht.</l>
+            <l>Hier kommt der Mann, dem jüngst Ihr mit Vertraun</l>
+            <l>Für Eure Freiheit in den Arm Euch warft,</l>
+            <l>Als Hippias hoch mit Tyrannenzorn</l>
+            <l>Vom Tigris her Verwüstung, Sclaverei</l>
+            <l>Und Untergang auf Eure Fluren trug!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweiter Auftritt</head>
+          <stage>Einige Krieger tragen Miltiades auf einem Sessel und setzen ihn auf die angewiesene
+            Stelle. Themistokles und Cimon folgen ihm. Der Chor.</stage>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Hier bin ich; klagt, Athener! Richtet mich,</l>
+            <l>Eh Euch der Tod die Beute raubt! Seid kurz!</l>
+            <l>Ich bin nicht sehr geduldiger Natur,</l>
+            <l>Das wißt Ihr noch von Marathon. Nicht mehr,</l>
+            <pb n="132"/>
+            <l>Als recht und nöthig ist! Und jetzt ist nicht</l>
+            <l>Viel Zeit; das sehet Ihr. Xanthippus, sprich!</l>
+            <l>Ich habe kaum noch Kraft zu hören, kaum</l>
+            <l>Noch Hauch genug, den Freund zu bitten, mir</l>
+            <l>Mit seiner Rede freundlich beizustehn.</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Xanthippus, rede, sprich nach dem Gesetz!</l>
+            <l>Du klagst ihn an; was willst Du gegen ihn?</l>
+          </sp>
+          <sp who="#xanthippus">
+            <speaker>Xanthippus</speaker>
+            <stage>(nach einer feierlichen Pause).</stage>
+            <l>Athener, hört! Den Göttern dank' ich erst</l>
+            <l>Mit heißem Danke und der Göttin, die</l>
+            <l>Die Burg bewacht, daß so ein Tag noch ist,</l>
+            <l>Daß unsre Stimme frei noch reden darf,</l>
+            <l>Daß kein Pisistratus, kein Hippias</l>
+            <l>Und kein Miltiades bis jetzt es wagt,</l>
+            <l>Den Gang zu hemmen, der das Vaterland</l>
+            <l>Mit gleichem Rechte schützt!</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Den Göttern Dank!</l>
+            <l>Sprich weiter, was zur Sache nöthig ist!</l>
+          </sp>
+          <sp who="#xanthippus">
+            <speaker>Xanthippus.</speaker>
+            <l>Ich klage rechtlich hier Miltiades,</l>
+            <l>Den Sohn des Cimon, an des Hochverrats</l>
+            <l>An seinem Volk, an seinem Vaterland.</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Sprich und beweise!</l>
+          </sp>
+          <sp who="#xanthippus">
+            <speaker>Xanthippus.</speaker>
+            <l>Geht sein Leben durch!</l>
+            <l>Sein Leben ist ein redender Beweis,</l>
+            <l>Daß Ehrgeiz, Willkür, Herrschsucht, Tyrannei</l>
+            <l>In seiner Seele liegt. Sein ganzes Haus</l>
+            <l>Ist ähnlich den Pisistratiden und</l>
+            <l>Wird endigen wie diese, wenn Ihr nicht</l>
+            <l>Noch, weil es Zeit ist, es zu hindern sucht.</l>
+            <l>Der ältere Miltiades war sonst,</l>
+            <l>So sagt man, dem Pisistratus verhaßt.</l>
+            <l>Ich glaub' es wohl; denn wie kann ein Tyrann</l>
+            <l>Den andern lieben? Einer nur hat Statt</l>
+            <l>Im Staate. Was die Machtvollkommenheit</l>
+            <l>Des Einen sichtet, ist verbrecherisch.</l>
+            <l>Wie künstlich weise, daß Apollo kam</l>
+            <l>Und diesen Männern aus einander half!</l>
+            <l>Miltiades, der Alte, war schon stark</l>
+            <l>Genug hier in Athen, daß der Tyrann,</l>
+            <l>Der wirklich herrschte, ihn mit Furcht nur sah.</l>
+            <l>Bei solchen Spielern ist ein Götterspruch</l>
+            <pb n="133"/>
+            <l>Der Würfel, welcher immer herrlich trifft.</l>
+            <l>Was sagt der Pythier nicht Alles, wenn</l>
+            <l>Man ihn nur sprechen läßt! – Miltiades</l>
+            <l>Fuhr mit dem Anhang in den Chersones.</l>
+            <l>Die Halbbarbaren wollten einen Mann</l>
+            <l>Zum Schutz im Felde gegen ihren Feind,</l>
+            <l>Voll Kraft und Wissenschaft, wie sie Athen</l>
+            <l>Nicht selten zeugt. Der Mann kam an und ward –</l>
+            <l>Der Stempel seines Geistes trat hervor –,</l>
+            <l>Ward schnell, was hier bei uns Pisistratus.</l>
+            <l>Nachdem nun er und dann Stesagoras,</l>
+            <l>Der Neffe, klug das Werk getrieben, ging</l>
+            <l>Nach ihrem Tode dieser unser Mann,</l>
+            <l>Von den Pisistratiden abgeschickt,</l>
+            <l>Und übernahm dort die Tyrannenschaft.</l>
+            <l>Sprecht, sag' ich nicht die Wahrheit? Alles ist</l>
+            <l>Selbst den Aphyenhändlern wohl bekannt.</l>
+          </sp>
+          <sp who="#chor_hemichor">
+            <speaker>Hemichor.</speaker>
+            <l>Es ist, wie Du sagest; ich glaube fast</l>
+            <l>Die Sache steht schlimmer, als ich gedacht.</l>
+          </sp>
+          <sp who="#xanthippus">
+            <speaker>Xanthippus.</speaker>
+            <l>So waren die Pisistratiden seiner los</l>
+            <l>Hier in Athen; dort in dem Chersones</l>
+            <l>Könnt' er den Herrschern hier behilflich sein.</l>
+            <l>Geht hin und fragt, ob er es nicht versteht,</l>
+            <l>Das Volk nach seinem Zweck zu leiten! Er</l>
+            <l>Ist, trotz Pisistratus, Ihr saht es schon,</l>
+            <l>Als er von Marathon nach Paros zog,</l>
+            <l>Der Mann, der klug und kühn durch Wogen bricht.</l>
+            <l>Als hier wir unsre Rettung feierten,</l>
+            <l>War er in seinem Thracien Hipparch,</l>
+            <l>Der unsern Namen dort zur Schande trug.</l>
+            <l>Gewiß, er hätte seinen Chersones</l>
+            <l>So bald nicht aufgegeben, hätt' er nur</l>
+            <l>Dort vor Darius freie Hand gehabt.</l>
+            <l>Ein Mann wie er kann nie der Zweite sein.</l>
+            <l>Durchs Meer getrennt, sich seiner Kraft bewußt,</l>
+            <l>Voll kühnen Muthes, wie er immer war,</l>
+            <l>That er den Vorschlag an dem Ister dort,</l>
+            <l>Die Brücke zu zertrümmern, um das Heer</l>
+            <l>Der Morgenländer der Verzweiflung preis-</l>
+            <l>Zugeben. Er allein, er konnt' ihn thun.</l>
+            <l>Doch die Ionier, sie wagten's nicht,</l>
+            <pb n="134"/>
+            <l>Ihm beizutreten, weil die Rache nah</l>
+            <l>Um ihre Häupter war. Miltiades,</l>
+            <l>Was er gewesen in Milet, was er</l>
+            <l>Im Chersonesus war, er hätte klug,</l>
+            <l>Was Histiäus that, gethan. – Er floh zu uns,</l>
+            <l>Als alle Aussicht dort verloren war.</l>
+            <l>Ein Bürger von Athen nahm sich ein Weib</l>
+            <l>Aus den Tyrannentöchtern Thraciens.</l>
+            <l>Auch diese neue Sippschaft half ihm nichts;</l>
+            <l>Selbst die Barbaren fühlten, was er war.</l>
+            <l>Die Feinde nahmen auf der Fahrt ein Schiff</l>
+            <l>Von seinem Zug; der Führer war sein Sohn</l>
+            <l>Metiochus: nicht unwahrscheinlich war</l>
+            <l>Es weiser Vorbedacht. Darius nahm</l>
+            <l>Den Jüngling auf, so freundlich, wie man nur</l>
+            <l>Den Freund bewillkommt; und dort lebt er noch,</l>
+            <l>Geliebt, in Weichlichkeit und Pomp und Pracht.</l>
+            <l>Nun war er Bürger hier; wer aber bürgt</l>
+            <l>Uns ganz für ihn? selbst als bei Marathon</l>
+            <l>Er uns die Feinde schlagen half? Er war</l>
+            <l>Darius schon vorher bekannt genug;</l>
+            <l>Und trotz der Herrschsucht war Darius stets</l>
+            <l>Ein Feind voll Großmuth und ein Freund, wie ihn</l>
+            <l>Selbst Hellas selten zeigt. Miltiades</l>
+            <l>War endlich doch gewiß, in Susa noch</l>
+            <l>Gewürdiget zu werden, was er hier</l>
+            <l>Bei den Athenern galt. Sein Geist ist kühn,</l>
+            <l>Und kühner ging er nun mit Riesenschritt</l>
+            <l>Gemessner weiter vorwärts. So ein Mann</l>
+            <l>Sucht erst Charakter und mit diesem Macht.</l>
+            <l>Als der Pisistratide Hippias</l>
+            <l>Noch bei dem Heere war und der Monarch</l>
+            <l>Sein Ehrenwort verpfändet hatte, ihn</l>
+            <l>Mit seiner Macht zurückzuführen, war</l>
+            <l>Für unsern Mann noch keine Hoffnung hier</l>
+            <l>Zur Herrschaft. Dieser fiel bei Marathon,</l>
+            <l>Und aus dem Oriente stieg nunmehr</l>
+            <l>Ein neuer Strahl. Wer mit dem Diadem</l>
+            <l>Des Mederkönigs nur Athen beherrscht,</l>
+            <l>Wie wäre der nicht Herr von Griechenland</l>
+            <pb n="135"/>
+            <l>In kurzer Zeit? Die Aussicht ist zu schön,</l>
+            <l>Ist zu verführerisch für einen Geist,</l>
+            <l>Wie wir den seinen kennen. Daß der Druck</l>
+            <l>Den Unterkönig nicht zu sehr beschränkt,</l>
+            <l>Zu schwer nicht wird, dafür hat die Natur</l>
+            <l>Durchs Meer gesorgt; und die Erfindungskraft</l>
+            <l>Des neuen Meisters wird das Werk für sich</l>
+            <l>Bald zu vollenden wissen. So geschah</l>
+            <l>Auf seinen Rath der schöne Inselzug.</l>
+            <l>Wer wird es glauben, daß ein Mann, der jüngst</l>
+            <l>Der besten Krieger zehn mit <emph>einem</emph> schlug,</l>
+            <l>Der Mann des Tags, den man in Griechenland</l>
+            <l>Mehr als Herakles' Kraft zu ehren schien,</l>
+            <l>Mit einer großen, selbstgebauten Macht</l>
+            <l>An einem Inselstädtchen scheiterte?</l>
+            <l>Wenn ihn nicht Säcke mit Dariken schon</l>
+            <l>Voraus bezahlt, wie ich kaum glauben kann,</l>
+            <l>So sind wir für die Zukunft hier verkauft</l>
+            <l>Dem großen Mäkler in dem Orient.</l>
+            <l>Was hat der Mann mit seinem Zug gethan,</l>
+            <l>Der gegen eine Welt in Waffen stand?</l>
+            <l>Nun braucht Darius nicht der Saker Speer;</l>
+            <l>Habt nur Geduld, es wirkt Metiochus!</l>
+            <l>Der Unterhändler schickt versteckt sein Gold,</l>
+            <l>Kauft Satelliten sich in unserm Volk,</l>
+            <l>Hebt unsre Knaben zu Eunuchen aus,</l>
+            <l>Und unsre schönsten Töchter sendet er</l>
+            <l>Den Lieblingsköniginnen oder weiht</l>
+            <l>Der morgenländischen Astarte sie.</l>
+          </sp>
+          <sp who="#chor_hemichor">
+            <speaker>Hemichor.</speaker>
+            <l>Weh, wehe dem Manne, der dieses wagt!</l>
+            <l>Fort, fort den Verräther ins Barathron!</l>
+          </sp>
+          <sp who="#xanthippus">
+            <speaker>Xanthippus.</speaker>
+            <l>Mir ist von ihm die Bosheit ganz gewiß,</l>
+            <l>Die That sei Heil, die That sei Hochverrath.</l>
+            <l>Ein Mann wie er thut niemals etwas halb.</l>
+            <l>Auch die geheimnißvolle Wunde schon</l>
+            <l>Macht ihn verdächtig. Fragt, woher sie kam!</l>
+            <l>Kein Krieger weiß es, wie er sie erhielt,</l>
+            <l>Weiß nicht, wohin er in der Mitternacht</l>
+            <l>Allein oft ging; was fordert Ihr nun noch?</l>
+            <l>Verlangt Ihr den Beweis vollendeter,</l>
+            <l>So wartet, bis er die Akropolis</l>
+            <pb n="136"/>
+            <l>Mit Persersöldnern eingenommen hat,</l>
+            <l>Wo kein Aristogiton retten kann!</l>
+          </sp>
+          <sp who="#chor_hemichor">
+            <speaker>Hemichor.</speaker>
+            <l>Weh, wehe dem Manne, der dieses wagt!</l>
+            <l>Fort, fort den Verräther ins Barathron!</l>
+          </sp>
+          <sp who="#xanthippus">
+            <speaker>Xanthippus.</speaker>
+            <l>Ins Barathron mit ihm, eh er sich dort</l>
+            <l>Mit seinen neuen Satelliten setzt</l>
+            <l>Und stolz herab auf unsre Ohnmacht schaut!</l>
+            <l>Eh er es wagt, mit ihm ins Barathron!</l>
+            <l>Nun sprich, vertheidige Dich, wenn Du kannst,</l>
+            <l>Und hebe die Beschuldigungen weg,</l>
+            <l>Die man sonst murmelnd nur, jetzt aber laut</l>
+            <l>Mit Ueberzeugung durch die ganze Stadt</l>
+            <l>In unverhaltener Verwünschung sagt!</l>
+            <l>So spricht Athen; ich bin nur das Organ.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades</speaker>
+            <stage>(nach einer Pause).</stage>
+            <l>Wie Du vorher sprachst, spricht Athen, nun sprichst</l>
+            <l>Du wieder nach. Xanthippus, ich gesteh',</l>
+            <l>Du bringst mich in Erstaunen über mich.</l>
+            <l>Die schlechten Menschen kennest Du sehr gut;</l>
+            <l>Doch nimmst Du hier mich falsch nur aus Dir selbst.</l>
+            <l>Wär' ich noch Der an Körper und an Geist,</l>
+            <l>Der ich noch kürzlich war vor Marathon,</l>
+            <l>Ich würde sprechen hier, wie ich dort schlug,</l>
+            <l>Und Deine Seele würde Scham und Angst</l>
+            <l>Ergreifen über meiner Rede Sinn.</l>
+            <l>Jetzt bin ich schon halb todt und brauche noch</l>
+            <l>Zu bessern Worten meinen Rest von Kraft.</l>
+            <l>Miltiades soll hier sich in Athen</l>
+            <l>Vertheidigen; wird man in Susa wol</l>
+            <l>Den Unsinn glauben? – Doch ich bin zu schwach.</l>
+            <l>Ist Jemand ein Tyrannenhasser, so</l>
+            <l>Ist es Themistokles; ich lege mich</l>
+            <l>In seine Hand. Er sage, was er kann,</l>
+            <l>Und was er will! Mir ist nunmehr der Tod</l>
+            <l>Mehr Ehre als das Leben, das Ihr gebt.</l>
+            <l>Doch wird mir's schwer, mit Eurer Schande schwer,</l>
+            <l>Zu Hades' Thor hinabzusteigen. Du</l>
+            <l>Hast nun gesehen, wie ich Dich gehört,</l>
+            <l>Xanthippus; was von mir ein Besserer</l>
+            <l>Nun sagen wird, und auch vielleicht zu viel,</l>
+            <l>Das kann, das will ich nicht mehr hören. Bringt</l>
+            <pb n="137"/>
+            <l>Mich fort nach Hause, daß ich wenigstens</l>
+            <l>An meines Vaters Herde sterben kann!</l>
+            <l>Mir bleibt mein Selbstgefühl. Thut, was Ihr wollt!</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Nach Hause will der Mann, hier auf den Tod</l>
+            <l>Des schrecklichsten Verbrechens angeklagt</l>
+            <l>Und nicht vermögend, die Vertheidung</l>
+            <l>Zu führen? Das Gesetz verweiset ihn</l>
+            <l>In das Gefängniß, uns zur Sicherheit.</l>
+            <l>Soll er die Burg besetzen, während wir</l>
+            <l>Hier richten, was mit ihm geschehen soll?</l>
+            <l>Ist's denn unmöglich? Wißt Ihr denn gewiß,</l>
+            <l>Was er für Anhang hat, was noch für Kraft?</l>
+            <l>Den Elfen übergiebt ihn das Gesetz,</l>
+            <l>Und das Gesetz sei heilig in dem Staat!</l>
+          </sp>
+          <sp who="#demosthenes">
+            <speaker>Demosthenes.</speaker>
+            <l>Der Kerker dem Erretter? In Athen?</l>
+          </sp>
+          <sp who="#kleon">
+            <speaker>Kleon.</speaker>
+            <l>Nicht dem Erretter, dem Verderber nur;</l>
+            <l>So will es das Gesetz. Ist das Gesetz</l>
+            <l>Schon stumm vor ihm? Dann war es schon zu spät.</l>
+          </sp>
+          <sp who="#chor_hemichor">
+            <speaker>Hemichor.</speaker>
+            <l>So lange das Vaterland unser ist,</l>
+            <l>Ehrt, ehrt die Gesetze mit Heiligkeit!</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Bringt mich, wohin es das Gesetz befiehlt;</l>
+            <l>Wohin Ihr wollt: nur bitt' ich, bringt mich fort!</l>
+            <l>Ich bin ein Mensch; sonst zwinget mich der Schmerz</l>
+            <l>Vielleicht zu mehr, als meiner Würde ziemt.</l>
+            <l>Verurtheilt bald! sonst thut es die Natur,</l>
+            <l>Wenn ich dem Spruch des Arztes glauben darf.</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides</speaker>
+            <stage>(zu einigen geringeren Magistratspersonen).</stage>
+            <l>Begleitet</l>
+            <l>ihn dahin und sorget für</l>
+            <l>Gerechtigkeit und Menschlichkeit zugleich!</l>
+          </sp>
+          <stage>(Miltiades wird weggetragen. Cimon und Einige folgen ihm.)</stage>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Vorige, ohne den Angeklagten.</stage>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Themistokles, der Angeklagte trug</l>
+            <l>Dir die Vertheidigung mit Worten auf,</l>
+            <l>Die seiner und die Deiner würdig sind.</l>
+            <l>Das Vaterland denkt, hoff' ich, gleich mit ihm</l>
+            <l>Von Deinem Werth. Erhältst Du uns den Mann,</l>
+            <l>Thust Du den Bürgern seine Unschuld dar,</l>
+            <l>So hast Du heute einen höhern Preis</l>
+            <pb n="138"/>
+            <l>Gewonnen als im Feld bei Marathon,</l>
+            <l>Wo Du an Tapferkeit der Erste warst.</l>
+            <l>Verdammen ist ein schreckliches Geschäft;</l>
+            <l>Erspar' es den Athenern, wenn Du kannst!</l>
+          </sp>
+          <sp who="#themistokles">
+            <speaker>Themistokles</speaker>
+            <l>(nach einer kleinen Pause). Ihr Männer von Athen, besinnet Euch!</l>
+            <l>Habt Ihr gehört, daß je Themistokles</l>
+            <l>Den freien Nacken bog, wo es den Werth</l>
+            <l>Des Bürgers galt? Es soll Miltiades</l>
+            <l>Hier keine Stimme haben. Ganz Athen,</l>
+            <l>Ganz Griechenland, wo man von Marathon,</l>
+            <l>Wie es der Tag verdiente, spricht, bezeugt</l>
+            <l>Euch, wer ich war. Noch bin ich, wer ich war,</l>
+            <l>Und werd' es sein, so lange dieses Blut</l>
+            <l>Vom Herzen mir zum Herzen wieder strömt.</l>
+            <l>Der Mann, den Ihr verklagt, verdammen wollt,</l>
+            <l>Er ist der erste Mann von Marathon;</l>
+            <l>Und als der erste Mann von Marathon</l>
+            <l>Ist er zugleich der erste Mann der Welt:</l>
+            <l>Das fühlt der Stolz des Griechen ganz gewiß,</l>
+            <l>Und doppelt des Atheners. Wär' er, was</l>
+            <l>Der böse Geist der Lästerzunge sagt,</l>
+            <l>So wahr auch ich ein Mann von Marathon</l>
+            <l>Und Grieche bin, ich würde nicht ein Wort</l>
+            <l>Für ihn verlieren; wie ein Krebsgeschwür</l>
+            <l>Würd' ich ihn hassen und der Erste sein,</l>
+            <l>Gerechten öffentlichen Rächern ihn</l>
+            <l>Zu überliefern! – War Themistokles</l>
+            <l>Als Knabe nicht hinlänglich schon bekannt,</l>
+            <l>Daß seine Seele keinen Herrn ertrug?</l>
+            <l>Und an der Burg Athen's sollt' er als Mann</l>
+            <l>Die Proskynese dulden? Glaubt Ihr das?</l>
+            <l>Wen Aristides, wen Themistokles</l>
+            <l>Der Herrschaft nicht beschuldigen, dem könnt</l>
+            <l>Ihr sicher folgen; es ist nicht Gefahr.</l>
+            <l>Er bleibet Bürger, und Ihr bleibet frei.</l>
+            <l>Sein Haus war dem Pisistratus verhaßt. –</l>
+            <l>Und das mit Recht, sag' ich. Haßt der Tyrann</l>
+            <l>Denn nur Tyrannen? Ist der Bürger nicht,</l>
+            <l>Der des Tyrannen Unfug untersucht</l>
+            <l>Und zu beschränken wagt, ihm gleich verhaßt?</l>
+            <pb n="139"/>
+            <l>Es wären also alle Die, die wir</l>
+            <l>Vom Beile der Tyrannen sterben sahn,</l>
+            <l>Mit gleichem Schluß der Freiheit Feinde nur.</l>
+            <l>Er ging nach Thracien. – Was konnt' er sonst?</l>
+            <l>Er war dort selbst Tyrann. – Er erbte nur</l>
+            <l>Die Macht, vor den Barbaren Euch</l>
+            <l>Von dort zu sichern. Gehet hin und fragt,</l>
+            <l>Wie er sie brauchte: ob ein Grieche dort</l>
+            <l>Von seinem Werth verlor, ob Menschenrecht</l>
+            <l>Durch ihn gelitten hat, ob nicht sein Haus,</l>
+            <l>Heroen gleich, noch dort verehret wird!</l>
+            <l>Als Der von Susa stolz mit einer Welt</l>
+            <l>Von Söldnern über See herüberkam</l>
+            <l>Und einen Troß von Griechen mit sich zog,</l>
+            <l>Halb Griechen nur, was that Miltiades?</l>
+            <l>Er mußte folgen; wie er folgte, that</l>
+            <l>Sein kühner Muth bald an dem Ister kund.</l>
+            <l>Die Sicherheit gebot ihm, still zu sein,</l>
+            <l>Wie den Ioniern; er aber war</l>
+            <l>Der Einzige, der wie ein Grieche sprach.</l>
+            <l>Und hätte man dort seinen Rath befolgt</l>
+            <l>Und kühn die Isterbrücke nur zerstört,</l>
+            <l>Die Perser kamen nie nach Marathon.</l>
+            <l>Das Schicksal aber wollte seinen Ruhm</l>
+            <l>Und unsre Schande nun vielleicht. Er floh</l>
+            <l>Zu uns, zu seinem väterlichen Herd.</l>
+            <l>Daß er auf seiner Fahrt den Sohn verlor –</l>
+            <l>Den Vater schmerzt noch täglich der Verlust –,</l>
+            <l>Legt nur die Bosheit als Verbrechen aus.</l>
+            <l>Er brachte Lemnus mit von seinem Zug,</l>
+            <l>Dem Vaterland ein wichtiges Geschenk,</l>
+            <l>Das er durch Klugheit, durch Entschlossenheit</l>
+            <l>Und schnellen Muth den Feinden abgewann.</l>
+            <l>Ist dies Verrath, was wäre Bürgersinn?</l>
+            <l>Ob er uns Bürger war, das frag' ich Euch!</l>
+            <l>Wo war das Gold, womit Tyrannen sich</l>
+            <l>Und ihren Troß zu decken pflegen? wo</l>
+            <l>Der Zug von Söldnern vor und hinter ihm?</l>
+            <l>Wo war die Herrlichkeit, die ein Satrap</l>
+            <l>Pon Susa zeigt? Sein Haus ist alt und klein,</l>
+            <pb n="140"/>
+            <l>Noch, wie es ehmals unter Solon war,</l>
+            <l>Bescheiden bürgerlich; und Bürger nur</l>
+            <l>Besuchten es in alter Traulichkeit</l>
+            <l>Und saßen mit dem Hausherrn gleich und gleich</l>
+            <l>Am freundlichen Kaminstrahl oder dort</l>
+            <l>Am Oelbaum der Athene Polias</l>
+            <l>Und dachten auf des Vaterlandes Wohl.</l>
+            <l>Hat er nach Macht gegeizt, um Gunst gebuhlt?</l>
+            <l>War er nicht Jedes brüderlicher Freund?</l>
+            <l>Und ernst dabei und strenge? Half er nicht</l>
+            <l>Ohn' alle kleinliche Hetärenkunst?</l>
+            <l>Hat mancher Bürger nicht durch seinen Rath</l>
+            <l>Sein Glück im Sinken wieder aufgebaut?</l>
+          </sp>
+          <sp who="#chor_hemichor">
+            <speaker>Hemichor.</speaker>
+            <l>Sein Haus war den Guten ein Zufluchtsort;</l>
+            <l>Er war uns ein Vater, er war uns Freund.</l>
+          </sp>
+          <sp who="#themistokles">
+            <speaker>Themistokles.</speaker>
+            <l>Ihr wißt, was Ihr bei Sardes thatet, wißt,</l>
+            <l>Daß täglich ein vergoldeter Trabant</l>
+            <l>Den großen König in Ekbatana</l>
+            <l>Erinnern mußte, wenn er bei dem Mahl</l>
+            <l>Den letzten feierlichen Becher hob:</l>
+            <l>»Gedenke der Athener!« und er that's.</l>
+            <l>Was Ihr den Boten thatet, die von Euch</l>
+            <l>Für ihn hier Erd' und Wasser forderten,</l>
+            <l>Wer weiß das nicht? Ihr fühltet nur den Schimpf,</l>
+            <l>Das Ungeheure des Tyrannenrechts,</l>
+            <l>Daß Ihr darüber selbst das Recht vergaßt.</l>
+            <l>Als nun aufs Neue sich verstärkt der Strom</l>
+            <l>Herüberwälzte von dem Orient</l>
+            <l>Und des beleidigten Monarchen Stolz</l>
+            <l>Die Griechen alle schon in Ketten sah:</l>
+            <l>Athener, denkt Ihr noch daran, es ist</l>
+            <l>Die Zeit so lange nicht vorbei, wie Ihr,</l>
+            <l>Halb Angst, halb Heldenmuth, entgegen ihm</l>
+            <l>Euch stürztet mit dem heiligen Entschluß,</l>
+            <l>Zu sterben in des Vaterlands Ruin,</l>
+            <l>Nicht knechtisch zu ertragen fremdes Joch?</l>
+            <l>Es ruhte damals auf Miltiades</l>
+            <l>Mit kindlichem Vertrauen jeder Blick.</l>
+            <l>Er forderte den Kampf mit Jugendgluth</l>
+            <l>Und männlicher Vernunft; der Polemarch</l>
+            <l>Trat seiner hohen Feuerrede bei.</l>
+            <pb n="141"/>
+            <l>Man gab die Schlacht, und so errangen wir</l>
+            <l>Vielleicht der Weltgeschichte Flammentag.</l>
+            <l>Es waren keine Lydier, die dort</l>
+            <l>Mit Knechtschaft uns bedroheten, es war</l>
+            <l>Das Heer, das stolz das Morgenland bezwang,</l>
+            <l>Vom Nil hinauf bis an den Kaukasus,</l>
+            <l>Vom Strom des Indus bis nach Ilion.</l>
+            <l>Wir schlugen die Unsterblichen, die sich</l>
+            <l>Zu Weltbezwingern Cyrus selber schuf.</l>
+            <l>Miltiades hat Euch zum ersten Volk</l>
+            <l>Der Völker, die die Sonne sehn, gemacht:</l>
+            <l>Er war der Geist, Ihr waret nur der Arm;</l>
+            <l>Ihr wäret ohne ihn vielleicht vertilgt.</l>
+            <l>Glaubt Ihr die Führer Eurer Heere denn</l>
+            <l>So feige, feile Seelen, daß sie Euch</l>
+            <l>Und sich der Willkür eines Einzigen</l>
+            <l>Blind anvertrauten, wenn der Einzige</l>
+            <l>Nicht auch ein Mann von Bürgertugend war?</l>
+            <l>Könnt Ihr Themistokles und Satellit</l>
+            <l>In <emph>einem</emph> Mann zusammen denken? Nein,</l>
+            <l>Bei der Aegide unsrer Göttin, nein,</l>
+            <l>Das könnt Ihr nicht! So bin ich nicht bekannt.</l>
+            <l>Er unternahm den Seezug. Dieser war,</l>
+            <l>Ich weiß, das Gegentheil von Marathon.</l>
+            <l>Athener sind der Wogen nicht gewohnt;</l>
+            <l>Sie werden's werden, wenn das Schicksal will;</l>
+            <l>Jetzt schwingen sie nur mächtig Schild und Speer</l>
+            <l>Auf festem Boden. Wenn Miltiades</l>
+            <l>Sich hierin irrte, war es Menschlichkeit.</l>
+            <l>Er rechnete für Euch als Patriot;</l>
+            <l>Hat Jemand mehr Verlust dabei als er?</l>
+            <l>Er war kein Gott, die Zukunft durchzuschaun.</l>
+            <l>Die Absicht sprach für ihn, und der Entwurf,</l>
+            <l>Die Inselvölker für das Vaterland</l>
+            <l>Zurückzubringen, war der Griechen werth,</l>
+            <l>War Euer werth und seiner. Daß er nicht</l>
+            <l>Wie ehemals mit Sieg nach Hause kam,</l>
+            <l>Nimmt seinem Werthe nichts. Es zeiget nur,</l>
+            <l>Mit Stolze sprech' ich's, noch den Unterschied,</l>
+            <l>Der zwischen Griechen und Barbaren ist,</l>
+            <pb n="142"/>
+            <l>Noch zwischen Paros und Ekbatana.</l>
+            <l>Wo wäre denn das Gold, das er bekam?</l>
+            <l>Von wem erhielt er's? Und sodann, wozu?</l>
+            <l>Kann er wol mehr sein als der erste Mann</l>
+            <l>Von Marathon, vor welchem Susa bebt?</l>
+            <l>Glaubt Ihr, daß Zeus mit Plutus tauschen wird?</l>
+            <l>Der Stahl beherrscht das Gold, der Muth den Stahl,</l>
+            <l>Und die Vernunft den Muth; ist dieses nicht,</l>
+            <l>So taumeln Mann und Staat zu ihrem Sturz.</l>
+            <l>Ich bitt' Euch, fleh' Euch, Männer von Athen –</l>
+            <l>Bedenkt, es ist Themistokles, der spricht –,</l>
+            <l>Bei den Erschlagenen in Marathon,</l>
+            <l>Bei Eurer großen Thaten Ewigkeit</l>
+            <l>Beschwör' ich Euch, beschließet nichts im Sturm</l>
+            <l>Der Leidenschaft, die Euch gewiß verführt!</l>
+            <l>Der alte Mann hat nur noch einen Hauch</l>
+            <l>Zu leben; bringt die Schande nicht auf uns!</l>
+            <l>Verdammt Ihr ihn, Beweise habt Ihr nicht,</l>
+            <l>So gebt Ihr dadurch ihm des Ruhmes mehr,</l>
+            <l>Als er sich dort bei Marathon erwarb.</l>
+          </sp>
+          <stage>(Er schweigt. Pause).</stage>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Du hast gesprochen wie für Deinen Freund,</l>
+            <l>Wie Deinem bessern Geist es ziemt, als Mann,</l>
+            <l>Der mit dem Vaterland es redlich meint.</l>
+            <l>Die Götter schauen jetzt auf Euch herab,</l>
+            <l>Athener, vom Olymp, und zeichnen ernst</l>
+            <l>Des Tages Ausspruch zur Berechnung auf.</l>
+            <l>Athener, denkt, die Nachwelt richtet Euch!</l>
+            <l>Und dem Athener ist die Nachwelt mehr</l>
+            <l>Als in dem Flug die Gegenwart.</l>
+          </sp>
+          <sp who="#xanthippus">
+            <speaker>Xanthippus.</speaker>
+            <l>Hinaus!</l>
+            <l>Fort auf den Markt, daß man die Stimmen dort</l>
+            <l>Gehörig sammle! Jetzt hab' ich gethan,</l>
+            <l>Was Ihr gewollt; nun sollt auch Ihr, was ich</l>
+            <l>Und das Gesetz will. Draußen sag' ich kurz,</l>
+            <l>Was ich gesagt, dann spreche, wer noch will.</l>
+            <l>So geh' es in der Ordnung vor dem Volk;</l>
+            <l>Das Volk ist Richter, und das Volk allein</l>
+            <l>In öffentlicher Sache. Das Gesetz</l>
+            <l>Bestimmt es so, und weise, wie mich dünkt,</l>
+            <pb n="143"/>
+            <l>Wie Solon und die Alten wohl gewußt.</l>
+            <l>Herrscht hier Pisistratus? Ich frage nur</l>
+            <l>Das Volk und sage weiter dann kein Wort.</l>
+          </sp>
+          <stage>(Er geht ab. Sein Anhang folgt ihm.)</stage>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Der Strom reißt furchtbar, Freunde, folget ihm</l>
+            <l>Und suchet dort den Sturm zu bändigen,</l>
+            <l>Den er erregt! ich thue, was ich kann.</l>
+          </sp>
+          <stage>(Alle verlassen den Saal bis auf Demosthenes.)</stage>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt</head>
+          <stage>Demosthenes (allein).</stage>
+          <sp who="#demosthenes">
+            <speaker>Demosthenes.</speaker>
+            <l>Mein Bruder Eukles focht bei Marathon</l>
+            <l>Merkwürdig mit, das sagt die ganze Zunft;</l>
+            <l>Und als die Perser flohen, floh er schnell</l>
+            <l>Im Waffenkleide heiß den Weg zur Stadt</l>
+            <l>Mit voller Brust, der frohen Botschaft voll,</l>
+            <l>Der erste Freudenbringer hier zu sein.</l>
+            <l>Die Götter halfen ihm; er kam ans Thor</l>
+            <l>Und stürzte schweres Athemzugs herein</l>
+            <l>Und rufte: »Freuet Euch, ich bringe Sieg!«</l>
+            <l>Dann fiel er hin und starb. – Ein solches Wort</l>
+            <l>Dem Vaterlande zuzurufen, wer</l>
+            <l>Erwählte sich nicht einen solchen Tod?</l>
+            <l>Hätt' ich den Sieg vom Herakleum dort</l>
+            <l>Bis an das Herakleum vor der Stadt</l>
+            <l>Zuerst hierher gebracht und wäre dann</l>
+            <l>Mit dieser Freudenbotschaft hingestürzt</l>
+            <l>In Hades' Thor, wie glücklich wär' ich jetzt!</l>
+            <l>Miltiades verliert am Leben nichts,</l>
+            <l>Sein Ruhm ist ewig in der Welten Buch.</l>
+            <l>Doch wer nimmt uns den Schandfleck wieder ab,</l>
+            <l>Den sich Athen jetzt einzubrennen eilt?</l>
+            <l>Erhabene Beherrscherin der Burg,</l>
+            <l>Der Cekropiden große Göttin, gieb</l>
+            <l>Dem Volke Weisheit, daß es sehe, was</l>
+            <l>Dem Vaterlande frommt, und was sich ziemt!</l>
+          </sp>
+        </div>
+      </div>
+      <pb n="144"/>
+      <div type="act">
+        <head>Fünfter Aufzug</head>
+        <stage>Das Gefängniß</stage>
+        <div type="scene">
+          <head>Erster Auftritt</head>
+          <stage>Miltiades (allein).</stage>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Jüngst bebte Susa noch vor diesem Mann,</l>
+            <l>Nun trägt er Ketten in Athen, das ihm</l>
+            <l>Noch für die Rettung dankt; und bald vielleicht</l>
+            <l>Bringt man das Urtheil auch, er sei verdammt.</l>
+            <l>Das ist der stolze Mensch! die Handlung sei</l>
+            <l>Mit jedem Grund, der sie ans Licht gebar,</l>
+            <l>Die nämliche: hier lohnet ihr ein Kranz</l>
+            <l>Der Jauchzenden und dort das Barathron.</l>
+            <l>Nicht was man ist, nur was man scheint, bestimmt</l>
+            <l>Der Menge Meinung, die man dann sofort</l>
+            <l>Verfälschter in die Weltgeschichte trägt.</l>
+            <l>Wer hier nichts hat, der ist ein armer Mann.</l>
+            <stage>(Die Hand aufs Herz legend.)</stage>
+            <l>Die Volksgunst, von des Indus Fabelwelt</l>
+            <l>Bis zu Herakles' Säulen, ist ein Dunst,</l>
+            <l>Vom Hauch geweckt und von dem Hauch verweht.</l>
+            <l>Wer in sich nichts ist, wird durch Opferduft,</l>
+            <l>Den man für ihn den Göttern raubet, nichts.</l>
+            <l>Der Ruf ist noch kein Ruhm, und Ruf und Ruhm</l>
+            <l>Sind lange noch nicht Ehre. Ehre nur,</l>
+            <l>Wie sie Vernunft und Recht und Freiheit prägt,</l>
+            <l>Ist eines Mannes Stempel, welcher oft,</l>
+            <l>Sehr oft die Schuld hat, daß kein Ruhm gedeiht.</l>
+            <l>Mein Vaterland! Des Herzens letzter Puls</l>
+            <l>Schlägt bei dem theuern Namen hoch und heiß.</l>
+            <l>Mit tiefer Wehmuth denk' ich nur an Dich,</l>
+            <l>An Dich, an Dich allein, mein Vaterland.</l>
+            <l>Des Vaters Schmerz ist vor des Bürgers Angst</l>
+            <l>Ein Tropfen nur in einem Wogenstrom.</l>
+            <pb n="145"/>
+            <l>Der Gott des Lichts, der unsern Geist durchschaut,</l>
+            <l>Sah, was ich dachte, als ich meine Kraft</l>
+            <l>Erhöht und ganz und rein dem Staate gab.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweiter Auftritt</head>
+          <stage>Voriger. Aristides, Cimon und Demosthenes kommen traurig schweigend herein.</stage>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Ich sehe, was Ihr bringt, in Euerm Blick.</l>
+            <l>Es fromme nur dem Vaterlande! Mir</l>
+            <l>Soll es Erlösung sein; ich bin gefaßt.</l>
+            <l>Am Ister war ich's und bei Marathon</l>
+            <l>Und unter Paros' Wall. Der schöne Tag</l>
+            <l>Lag in der Mitte; und das Schönste war,</l>
+            <l>Das Ihr ihn mit mir theiltet. Dieser ist</l>
+            <l>Für mich nicht minder schön, nur nicht für Euch.</l>
+            <l>Doch keinen Vorwurf! Meiner Freunde sind</l>
+            <l>Sehr viele von den Besten. Aristid,</l>
+            <l>Sprich Du das Wort des Todes! Zwar ein Wort,</l>
+            <l>Wie dieses ist, ist nicht für Deinen Mund;</l>
+            <l>Doch sprich es aus!</l>
+          </sp>
+          <stage>(Aristides schweigt.)</stage>
+          <sp who="#cimon">
+            <speaker>Cimon.</speaker>
+            <l>Mein Vater, ach, man hat</l>
+            <l>Den Wahnsinn und die Grausamkeit –</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Es ist</l>
+            <l>Das Volk, mein Sohn; ein Sturm der Felsenkluft,</l>
+            <l>In dem Gewitter schwarz herangewälzt.</l>
+            <l>Ich bin verdammt. Das fürchtet' ich sogleich,</l>
+            <l>Als ich den Namen hörte und den Bund,</l>
+            <l>Der wider mich geschlossen war.</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Mein Freund!</l>
+            <l>Was wird das Vaterland, wenn so ein Mann,</l>
+            <l>Wie Du uns warest, solchen Lohn erhält?</l>
+            <l>Das schlägt mich nieder, meine Kraft ist fort.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Das muß sie nicht. Ließ denn der Pädagog</l>
+            <l>Erst heute meinen Aristides los?</l>
+            <l>Sei Du gerecht, wie Du es bist, und greif,</l>
+            <l>So viel Du kannst, ins Rad des Schicksals ein!</l>
+            <l>Du hemmst es freilich nicht; doch Deine Kraft</l>
+            <l>Ist eingerechnet in den großen Lauf.</l>
+            <l>Im Buch der Welt ist nichts als nur ein Kampf</l>
+            <pb n="146"/>
+            <l>Der Leidenschaften und des bessern Sinns,</l>
+            <l>Des blinden Irrthums und des Strahlenlichts,</l>
+            <l>Das in uns leuchtet. Nur ein Funke fährt</l>
+            <l>Oft in die Höhe, sonst ist Alles Nacht.</l>
+            <l>Die Ungerechtigkeit ist überall,</l>
+            <l>Der nämlichen Natur, verübe sie</l>
+            <l>Kambyses dort und hier der Demagog;</l>
+            <l>Der Letzte macht der Schuldigen nur mehr.</l>
+            <l>Tyrannensprüche oder Volksgericht</l>
+            <l>Sind beide Ungeheuer gleicher Art,</l>
+            <l>Wenn Unvernunft und wilde Selbstsucht stürmt.</l>
+          </sp>
+          <sp who="#demosthenes">
+            <speaker>Demosthenes.</speaker>
+            <l>Das that sie ganz. Noch eh Xanthippus sprach,</l>
+            <l>War schon sein böser Geist in jedem Blick</l>
+            <l>Der Menge rund umher. Man rufte laut</l>
+            <l>Von allen Seiten: »Fort, ins Barathron!</l>
+            <l>Stürzt alle Säulen um, wo obenan</l>
+            <l>Vor bessern Bürgern noch sein Name steht!</l>
+            <l>Auf dem Gemälde streicht sein Bildniß aus!</l>
+            <l>Straft Polygnotus, seinen Schmeichler, daß</l>
+            <l>Er als Despoten dort ihn schon gemalt!</l>
+            <l>Er ist Tyrann; gebt ihm dem Schierlingskelch!«</l>
+            <l>So tönt' es tief und dumpf wie Wogensturz</l>
+            <l>Durch hohle Felsen rund umher im Volk.</l>
+            <l>Die Freunde standen stumm vor dem Orkan,</l>
+            <l>Der jeden andern bessern Laut verschlang.</l>
+          </sp>
+          <sp who="#cimon">
+            <speaker>Cimon.</speaker>
+            <l>Themistokles, mein Vater, sprach für Dich</l>
+            <l>Mit allem Feuer, wie bei Marathon</l>
+            <l>Er in des Vaterlandes Feinde drang.</l>
+            <l>Der Gluthstrom seiner Rede goß mit Macht</l>
+            <l>Durch die Versammlung sich; schon ward umher</l>
+            <l>Die Rührung sichtbar, als der Troß vom Pnyx</l>
+            <l>Und von dem Hafen wie ein Donnersturm</l>
+            <l>Auf Deine Freunde brach. Man drohte hoch</l>
+            <l>Dem Redner und dem Archon, sie mit Dir</l>
+            <l>Zugleich zu opfern, und der ganze Markt</l>
+            <l>War wilder Aufruhr, wie wenn dumpf und hohl</l>
+            <l>Um eine Bergschlucht tief die Erde bebt;</l>
+            <l>Und was ich im Getümmel hörte, war,</l>
+            <l>Mein Vater, ach –</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>War Tod und Barathron.</l>
+            <l>Mein Sohn, ist denn der Ton so fürchterlich</l>
+            <pb n="147"/>
+            <l>Für einen Mann, der oft dem Dinge selbst</l>
+            <l>Ins Auge sahe? Nicht die Todesart</l>
+            <l>Bringt Ehr' und Schande: wie man sie verdient,</l>
+            <l>Prägt einst den Stempel bei den Bessern aus.</l>
+            <l>Nicht selten fällt mit Wuth des Henkers Beil,</l>
+            <l>Wo die Gerechtigkeit den Lorbeerkranz</l>
+            <l>Zu fordern hatte, Freund, und umgekehrt.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt</head>
+          <stage>Vorige. Elpinice.</stage>
+          <sp who="#elpinice">
+            <speaker>Elpinice.</speaker>
+            <l>Mein Vater, ach, ich unglückseligste</l>
+            <l>Der Töchter Griechenlands! Sie tödten Dich!</l>
+            <l>Miltiades, die Ungeheuer ziehn</l>
+            <l>Mit Blutdurst durch die Stadt und jauchzen hoch,</l>
+            <l>Als hätten sie die Heldenthat gethan,</l>
+            <l>Die sie vergöttert. – Cimon, konnte nichts,</l>
+            <l>Nichts unsern Vater retten? Mich ergreift</l>
+            <l>Entsetzen und Vernichtung. Ach, ich will,</l>
+            <l>Will mit Dir sterben, Vater; ganz Athen</l>
+            <l>Ist Barathron für mich. O, wehe mir,</l>
+            <l>Mein Vater, wehe mir, sie tödten Dich!</l>
+          </sp>
+          <stage>(Sie sinkt neben ihm nieder.)</stage>
+          <sp who="#miltiades">
+            <speaker>Miltiades</speaker>
+            <stage>(zieht sie zu sich).</stage>
+            <l>Ich bitte, fasse Dich, mein liebes Kind;</l>
+            <l>Sei meine Tochter! meine Tochter muß</l>
+            <l>Ein Heldenmädchen sein. Es ist für uns</l>
+            <l>Ein Ehrentag; Geliebte, habe Muth!</l>
+          </sp>
+          <sp who="#elpinice">
+            <speaker>Elpinice.</speaker>
+            <l>Du Schützerin, Athene Polias,</l>
+            <l>Der Mann, durch dessen Arm noch Deine Burg</l>
+            <l>Dort auf dem Felsen steht, der große Mann</l>
+            <l>Wird hingewürgt von einer wilden Schaar.</l>
+            <l>Ihr Allbarmherzigen dort im Olymp,</l>
+            <l>Sie tödten meinen Vater –</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Gutes Kind!</l>
+            <stage>(Zu seinen Freunden.)</stage>
+            <l>Das macht die Trennung auch für Männer schwer.</l>
+            <l>Komm, fasse Muth! Du bist in meinem Arm.</l>
+            <l>Als Deine Mutter Dich mir zum Geschenk,</l>
+            <l>Die liebe, kleine Neugeborne gab,</l>
+            <l>Ich weiß, ich zog so eben in den Krieg,</l>
+            <l>Da sah ich Dir ins liebliche Gesicht,</l>
+            <pb n="148"/>
+            <l>Wie Du dem Vater freundlich blicktest, und</l>
+            <l>Ich nannte Dich die Siegeshoffnung. Kind,</l>
+            <l>Dein schöner Name hat mich nicht getäuscht;</l>
+            <l>Oft bracht' ich Dir den Kranz, den ich erwarb.</l>
+            <l>Erquickung war mir Deine Kindlichkeit,</l>
+            <l>Wenn ich ermüdet aus den Schlachten kam.</l>
+            <l>Auch bracht' ich Dir den Kranz von Marathon,</l>
+            <l>Eh ich den Göttern ihn zur Weihe gab.</l>
+          </sp>
+          <sp who="#elpinice">
+            <speaker>Elpinice.</speaker>
+            <l>Die Wehmuth und der Jammer – Vater, ach,</l>
+            <l>Ich werde das verlassenste Geschöpf,</l>
+            <l>Das ärmste, traurigste von Griechenland!</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Das, meine Tochter, nein, das sollst Du nicht.</l>
+            <l>Noch bin ich nicht so freundlos in Athen,</l>
+            <l>Nicht so verlassen, daß mein Kind so ganz</l>
+            <l>Verwaiset sollte sein. Der Archon selbst,</l>
+            <l>Der Guten viele, liebes, liebes Kind,</l>
+            <l>Dein Bruder Cimon, der Dich zärtlich liebt –</l>
+          </sp>
+          <sp who="#elpinice">
+            <speaker>Elpinice.</speaker>
+            <l>Die Mutter starb mir, eh ich den Verlust</l>
+            <l>Empfinden konnte; meine ganze Welt</l>
+            <l>War nur des Vaters Liebe. Dieses Herz</l>
+            <l>Sah nur den Vater, nie den großen Mann,</l>
+            <l>Nie den Gepriesenen von Griechenland.</l>
+            <l>Ich war so unaussprechlich selig, war</l>
+            <l>Wie Göttertöchter; und ich sinke nun</l>
+            <l>Hinab, hinab in undenkbares Graun. –</l>
+            <l>Sind das die Griechen, die der Weisheit sich,</l>
+            <l>Der hohen Bildung rühmen und der Kunst?</l>
+            <l>So blutig ist man bei Barbaren nicht;</l>
+            <l>Das hätten meiner Mutter Freunde nie gethan.</l>
+            <stage>(Sie spricht gebrochener.)</stage>
+            <l>Bei dem Gedanken wird es Mitternacht;</l>
+            <l>Das Auge dunkelt mir, mein Geist vergeht.</l>
+            <l>Ihr unterirdischen Erbarmer, nehmt,</l>
+            <l>Nehmt mich hinab, eh ihn, eh –</l>
+          </sp>
+          <stage>(Sie verliert die Besinnung.)</stage>
+          <sp who="#miltiades">
+            <speaker>Miltiades</speaker>
+            <stage>(sucht sich zu sammeln).</stage>
+            <l>Bringt sie fort!</l>
+            <stage>(Man führt sie ab.)</stage>
+            <l>Vergebt mir alten Mann! Das Mädchen war</l>
+            <l>Der Erdenfreuden beste für mein Herz,</l>
+            <l>War, wenn der Bürger seine Pflicht gethan,</l>
+            <l>Des Hauses Charis für den Vater. – Komm,</l>
+            <pb n="149"/>
+            <l>Mein Sohn, mein Cimon! Du bist Mann und ehrst,</l>
+            <l>Es täuscht mich nicht, mich einst in Griechenland;</l>
+            <l>Ich gebe Deiner Bruderliebe ganz</l>
+            <l>Das Mädchen hin; sei ihr, was ich nicht kann!</l>
+          </sp>
+          <sp who="#cimon">
+            <speaker>Cimon.</speaker>
+            <l>Mein Vater, unaussprechlich fürchterlich</l>
+            <l>Ist der Gedanke mir; allein ich will,</l>
+            <l>Will mich ermannen, Deiner werth zu sein,</l>
+            <l>So lange noch ein Athem in mir ist!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt</head>
+          <stage>Vorige. Themistokles.</stage>
+          <sp who="#themistokles">
+            <speaker>Themistokles.</speaker>
+            <l>Die Fassung reißt. Die Kechenäer sind</l>
+            <l>Gesindel, unwerth, daß ein Fuß sich nur</l>
+            <l>Für ihre Narrheit hebt. Gigantensturm</l>
+            <l>Ist in dem Zwerggeschlecht, das kocht und braust,</l>
+            <l>Als ob die Hefen den Cyklopenberg</l>
+            <l>Zersprengen wollten, und dann gehn sie hin</l>
+            <l>Und bitten sich die drei Obolen aus.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Dir bleibt mein Dank, mein Freund, als hättest Du</l>
+            <l>Mich im Triumph hinauf zur Burg geführt.</l>
+            <l>Du thatest, was Du konntest, und ich sah</l>
+            <l>Voraus, Du würdest gegen diesen Sturm</l>
+            <l>Der wild empörten Fluthen nicht bestehn.</l>
+            <l>Gieb nach wie ich! sie haben nur sich selbst</l>
+            <l>Gericht gesprochen.</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Eben dieses ist</l>
+            <l>Das Tödtendste für uns. Die Hoffnung stirbt,</l>
+            <l>Wenn Alles, Alles in dem Vaterland</l>
+            <l>Mit solchem Unsinn sich am Abgrund dreht.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Der Wahnsinn wird verfliegen, wie er kam.</l>
+            <l>Er ist nur Täuschung um das Heiligthum.</l>
+            <l>Geh auf den Grund! es ist noch Göttliches</l>
+            <l>In der Verirrung selbst. Nicht Alle sind</l>
+            <l>Obolensöldner; Viele treibt die Furcht</l>
+            <l>Vor Tyrannei zur Ungerechtigkeit.</l>
+          </sp>
+          <sp who="#themistokles">
+            <speaker>Themistokles.</speaker>
+            <l>Das sagest Du? Um desto größer ist</l>
+            <l>Die Schande, die uns trifft, daß so ein Mann</l>
+            <l>Durch des Gesindels Wuth zu Grunde geht.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Sehr schlimm für sie, wohl wahr; allein Du willst</l>
+            <pb n="150"/>
+            <l>Deswegen doch nicht, ich soll schuldig sein? –</l>
+            <l>Der Ausspruch ist gethan. Ich glaube, nun</l>
+            <l>Wird es auch zur Vollendung Zeit. Man stürzt</l>
+            <l>Buchstäblich doch mich nicht ins Barathron?</l>
+            <l>Ich bin bereit; die Hüfte mahnt mich heiß,</l>
+            <l>Euch um Erlösung anzuflehn. Den Schmerz</l>
+            <l>Hab' ich bestanden wie ein Mann; nun gebt</l>
+            <l>Mir schnell den Tod! mein Geist sehnt sich hinaus.</l>
+            <l>Der Kerker ist dem freien Mann der Tod</l>
+            <l>Und mehr als Tod. Wie soll ich sterben? Sprecht!</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Du hast die Wahl; doch die Gewohnheit ist –</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Ich kenne sie und folg' ihr.</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Du hast Zeit;</l>
+            <l>Man übereilt Dich nicht.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Ich aber bin</l>
+            <l>Des Zauderns müde, sehne mich nach Ruh'.</l>
+            <l>Die Augenblicke, die die Freunde noch</l>
+            <l>Mir schenken, sollen mir noch Wohlthat sein;</l>
+            <l>Dann geh' ich, mit dem Ziele meines Laufs</l>
+            <l>Zufrieden, zu dem Erebus hinab.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfter Auftritt</head>
+          <stage>Vorige. Aeschylus, Epizelus und mehrere Bürger kommen.</stage>
+          <sp who="#aeschylus">
+            <speaker>Aeschylus</speaker>
+            <stage>(froh).</stage>
+            <l>Der Sturm hat sich gelegt, die Woge sinkt,</l>
+            <l>Und das Getümmel ordnet nach und nach</l>
+            <l>Sich zur Besinnung. Hoffnung bring' ich, mehr</l>
+            <l>Als Hoffnung schon, gewisse Rettung Dir.</l>
+            <l>Es kamen Männer noch von Marathon</l>
+            <l>In großer Zahl, mit mächtigem Gewicht,</l>
+            <l>Die sprachen, wie sie schlugen, Jeder ein</l>
+            <l>Themistokles; die Ueberlegung kam;</l>
+            <l>Sie wirkten allgewaltig. Der Beschluß</l>
+            <l>Ist aufgehoben, und das Volk verlangt</l>
+            <l>Nur fünfzig attische Talente zum Ersatz,</l>
+            <l>So viel der Seezug sie gekostet hat.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>So gönnen sie mir die Erlösung nicht!</l>
+            <l>Ich soll im Kerker kümmerlich vergehn.</l>
+            <l>Talente! Fünfzig! Freunde, könnt ich die</l>
+            <l>Bezahlen, gäb' ich fast dem Volke Recht.</l>
+            <l>Beseht mein Haus, fragt, was mir sonst gehört,</l>
+            <pb n="151"/>
+            <l>Und kommen zehn Talente nur heraus,</l>
+            <l>So unterschreib' ich jeden Klagepunkt</l>
+            <l>Der Feinde wider mich!</l>
+          </sp>
+          <sp who="#themistokles">
+            <speaker>Themistokles.</speaker>
+            <l>Bei Marathon</l>
+            <l>Erfochten wir der reichen Beute viel;</l>
+            <l>Dort nehmt Ersatz, und Glück und Unglück kommt</l>
+            <l>Ins Gleiche wieder! Sage das dem Volk!</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Jetzt, wie es ist, hofft keine Aenderung!</l>
+            <l>Es giebt sich Alles, habet nur Geduld!</l>
+            <l>Der Irrthum schwindet, und die Wahrheit siegt,</l>
+            <l>Und Dankbarkeit behauptet noch ihr Recht.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Das glaub' ich selbst; nur daß ich dieses nicht</l>
+            <l>Erwarten kann. Mich ruft das Schicksal ab</l>
+            <l>Und hätt' es jetzt auch ohne Volk gethan.</l>
+            <l>Ich fühle, wie der Tod schon in mir sitzt</l>
+            <l>Und immer weiter greift; ruft mir den Arzt!</l>
+            <l>Ich sterbe, Freunde, sterbe ganz gewiß;</l>
+            <l>Die Rechnung ist geschlossen. Dieser Tag</l>
+            <l>Ist mir nur traurig für Athen und Euch;</l>
+            <l>Ich kann nicht besser enden.</l>
+          </sp>
+          <sp who="#themistokles">
+            <speaker>Themistokles.</speaker>
+            <l>Habe Muth!</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Sprach das Themistokles? Ich habe Muth,</l>
+            <l>Auch wo die Kraft mich schon verlassen hat.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Sechster Auftritt</head>
+          <stage>Vorige. Philippus, Arzt.</stage>
+          <stage>(Pause, während sich der Arzt naht.)</stage>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Arzt, bei dem Heiligsten in Dir und uns,</l>
+            <l>Kann ich genesen? Sprich!</l>
+          </sp>
+          <sp who="#philippus">
+            <speaker>Philippus.</speaker>
+            <l>Das kannst Du nicht.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades</speaker>
+            <stage>(sieht seine Freunde an).</stage>
+            <l>Sprich bei den Göttern laut und feierlich</l>
+            <l>Für Diese hier! ich brauche keinen Spruch.</l>
+          </sp>
+          <sp who="#philippus">
+            <speaker>Philippus.</speaker>
+            <l>Dich rettet selbst nicht Podalirius.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Schon gut. Es ist genug, wenn Du nicht kannst,</l>
+            <l>Du bist hier Podalirius für uns.</l>
+            <l>Und sterb' ich bald?</l>
+          </sp>
+          <sp who="#philippus">
+            <speaker>Philippus.</speaker>
+            <l>Sehr bald.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Sehr bald also,</l>
+            <l>So bald als möglich.</l>
+          </sp>
+          <pb n="152"/>
+          <sp who="#philippus">
+            <speaker>Philippus.</speaker>
+            <l>Die Zerstörung hat</l>
+            <l>Für uns schon ohne Rettung Dich gefaßt.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Genug! nicht weiter! Reiche mir den Trank!</l>
+          </sp>
+          <stage>(Alle sind betroffen.)</stage>
+          <sp who="#themistokles">
+            <speaker>Themistokles.</speaker>
+            <l>Miltiades, ist dies Dein letztes Wort?</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Für mich; für Euch noch nicht. Das erste ist</l>
+            <l>Bei mir das letzte, wenn der Mann beschließt;</l>
+            <l>Doch hier vollstreck' ich nur den Volksbeschluß.</l>
+          </sp>
+          <sp who="#cimon">
+            <speaker>Cimon.</speaker>
+            <l>Mein Vater, wehe mir, mein Muth verläßt</l>
+            <l>Mich in dem fürchterlichsten Augenblick!</l>
+            <l>Kannst Du so grausam sein?</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Du hast gehört.</l>
+            <l>Mein Sohn, komm, sammle Deinen Muth! Du wirst</l>
+            <l>Ihn nöthig haben in dem Leben.</l>
+          </sp>
+          <sp who="#cimon">
+            <speaker>Cimon.</speaker>
+            <l>Nie,</l>
+            <l>Nie mehr als jetzt.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>So hab ihn also jetzt!</l>
+          </sp>
+          <sp who="#cimon">
+            <speaker>Cimon.</speaker>
+            <l>Du selbst, mein Vater, willst mit eigner Hand –</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Wie lange greif' ich vor? Zwei Tage kaum.</l>
+            <l>Geduldet hab' ich furchtbar schon; Ihr habt</l>
+            <l>Es nicht gesehn; der Mann erstickt den Schmerz;</l>
+            <l>Nun kocht die Gluth mir zu dem Herzen auf.</l>
+            <l>Soll ich denn meinen Leichnam vor mir sehn,</l>
+            <l>Wie er verwest? und wie der Ekel Euch</l>
+            <l>Bei meinem Anblick faßt? Ich leide, wie</l>
+            <l>Herakles auf dem Oeta litt.</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Ich seh',</l>
+            <l>Mit Schrecken seh' ich die Notwendigkeit</l>
+            <l>Und wag' es nicht, die kalte, eiserne</l>
+            <l>Mit der Vernunft zu zwingen.</l>
+          </sp>
+          <sp who="#themistokles">
+            <speaker>Themistokles.</speaker>
+            <l>Dunkel wird's</l>
+            <l>Um meinen Blick, als ob zum Erebus</l>
+            <l>Ich so auch gehen müßte.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Freunde, schließt</l>
+            <l>Euch dichter an! Ich sammle meine Kraft,</l>
+            <l>Die letzte, noch für Euch. Die Stunde sei</l>
+            <l>Euch feierlich; vergessen könnt Ihr nicht!</l>
+            <l>Ich sterbe, meiner Ewigkeit gewiß;</l>
+            <l>Das bürg' ich mir. Hört einen alten Mann,</l>
+            <l>Der immer Euer Freund und Vater war!</l>
+            <l>Mein Aristides, mein Themistokles,</l>
+            <pb n="153"/>
+            <l>Das Göttlichste für einen freien Mann,</l>
+            <l>Der Erde Himmel, ist das Vaterland;</l>
+            <l>Den Sclavenseelen nur ist das Gefühl,</l>
+            <l>Das heiligste der bessern Seelen, fremd.</l>
+            <stage>(Zu Cimon.)</stage>
+            <l>Mein Sohn, sei ruhig! lebe so wie ich,</l>
+            <l>Und Alle leben wir zusammen einst</l>
+            <l>Im Strahlenkranz des unbestochnen Ruhms!</l>
+            <l>Seid Männer, wie Ihr waret! die Gefahr</l>
+            <l>Wächst fürchterlich; prophetisch seh' ich das.</l>
+            <l>Der Tage kommen mehr wie Marathon.</l>
+            <l>Seid einig, bei den Göttern Griechenlands</l>
+            <l>Beschwör' ich Euch, bei Eurer Väter Herd,</l>
+            <l>Bei Euerm Namen in dem Buch der Zeit,</l>
+            <l>Seid einig in dem Kampf fürs Vaterland!</l>
+            <l>Vereinigt trotzen Griechen einer Welt,</l>
+            <l>Woher sie auch die Sonne schickt. Nur Zwist</l>
+            <l>Und blinde Selbstsucht gräbt der Freiheit Grab,</l>
+            <l>Des Ruhms, der Ehre und des bessern Sinns.</l>
+            <l>Ein Volk, das fällt, fällt immer nur durch sich.</l>
+            <l>Gerechtigkeit und Freiheit sind der Grund,</l>
+            <l>Nur sie allein, zu festem, steten Wohl;</l>
+            <l>Doch sichtet ernst! es ist nicht Alles ächt,</l>
+            <l>Was man Gerechtigkeit und Freiheit nennt.</l>
+            <l>Die Sclaverei ist durchaus kein Begriff,</l>
+            <l>Was auch Sophistendünkel sagen mag.</l>
+            <l>Es dämmert dunkel in der Seele mir;</l>
+            <l>Vielleicht hellt nach Jahrtausenden die Nacht</l>
+            <l>Sich Andern besser auf. – Ich werde schwach;</l>
+            <l>Hier glühet es und tobt.</l>
+            <stage>(Auf die Wunde zeigend.)</stage>
+            <l>Gebt mir den Trank!</l>
+            <stage>(Man zaudert. Er wiederholt stark.)</stage>
+            <l>Gebt mir den Trank! Wollt Ihr mich foltern? Gebt!</l>
+            <stage>(Ein Sclave bringt den Becher, den er nimmt. Zu dem Sclaven)</stage>
+            <l>Du armer Mann! Ich danke Dir. Ich bin</l>
+            <l>Nicht Zeus, sonst sollten keine Sclaven sein.</l>
+            <l>Geh, geh hinaus! ich brauche weiter nichts.</l>
+            <stage>(Der Sclave geht furchtsam ab. Alle stehen stumm um ihn her. Eine Pause. Er gießt
+              einige Tropfen zur Libation.)</stage>
+            <l>Den Unterirdischen, zu denen ich</l>
+            <l>Hinuntergehe!</l>
+            <pb n="154"/>
+            <stage>(Er trinkt den Trank. Cimon verhüllt sich schmerzlich das Gesicht. Aristides und
+              Themistokles sehen traurig standhaft zu. Die Uebrigen nach ihrer verschiedenen
+              Stimmung.)</stage>
+            <l>Nun ist der Zug gethan.</l>
+            <l>Was hier war, weiß ich; was dort drüben ist,</l>
+            <l>Werd' ich sogleich erfahren.</l>
+          </sp>
+          <sp who="#epizelus">
+            <speaker>Epizelus.</speaker>
+            <l>Könnt' ich's auch!</l>
+            <l>Was ich von hier weiß, nimmt mir den Verstand.</l>
+            <l>Warum verlor ich statt des Lichts nicht ganz</l>
+            <l>Bei Marathon, was zu verlieren war,</l>
+            <l>Und der Verlust war herrlicher Gewinn!</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Ha, Epizelus! Alter, alter Freund,</l>
+            <l>Ich danke herzlich Dir für den Besuch.</l>
+            <l>Nein, Du mußt leben, mußt die Knaben noch</l>
+            <l>Zu Männern bilden durch der Rede Gluth.</l>
+            <l>Athen wird besser werden, als es ist,</l>
+            <l>Und schöner auch.</l>
+          </sp>
+          <sp who="#epizelus">
+            <speaker>Epizelus.</speaker>
+            <l>Es scheint, verderbter nur;</l>
+            <l>Von Besserung hör' ich vom Hafen bis</l>
+            <l>Zum Kynosarge nichts. Dein Hiersein war</l>
+            <l>Doch wol der Anfang nicht. Miltiades,</l>
+            <l>Das Prytaneum ekelt nun mich an;</l>
+            <l>Ich mag nicht essen, wo man Dich verdammt.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Du Feuerkopf, Du bist der Alte noch!</l>
+            <l>Geduld, und lebe wohl! – Mein Aristid!</l>
+          </sp>
+          <sp who="#aristides">
+            <speaker>Aristides.</speaker>
+            <l>Besorge, was Du noch zu ordnen hast!</l>
+            <l>Gewissenhaft soll, was Du sagst, geschehn.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Ich danke; das erwart' ich von dem Freund. –</l>
+            <l>Mein Sohn, mein Cimon, Cimon, sei ein Mann!</l>
+          </sp>
+          <sp who="#cimon">
+            <speaker>Cimon.</speaker>
+            <l>An meiner Stelle, wer vermag es hier?</l>
+            <l>Mein Vater, ach, mein Vater!</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Aristid,</l>
+            <l>Sei Du sein Freund! ich weiß gewiß, er hat</l>
+            <l>Einst großen Werth noch für sein Vaterland.</l>
+            <l>Ich weiß, ich sollte wandeln auf den Trank;</l>
+            <l>Das kann ich nicht. Ich fühle, daß sich Eis</l>
+            <l>In meinen Adern setzt; daß Hand und Fuß</l>
+            <l>Mir von dem Schierling stockt. – Entfernet Euch</l>
+            <l>Ein Wenig! schon der Hades haucht um mich.</l>
+            <l>Begrabt mich draußen an dem Hohlweg, wo</l>
+            <l>Mein Vater Cimon liegt! Ihr wisset, die</l>
+            <pb n="155"/>
+            <l>Pisistratiden haben ihn erwürgt;</l>
+            <l>Und mich erwürgte – Nein, das Vaterland</l>
+            <l>Soll keinen Vorwurf hören – –</l>
+            <l>Freunde, wir leben in Ruhm vereint</l>
+            <l>Zusammen im Glanze der Zeiten fort.</l>
+            <l>Muster ist unsere That für den Mann,</l>
+            <l>Welchen einst besserer Geist glühend beseelt.</l>
+          </sp>
+          <stage>(Er sinkt ermattet zurück.)</stage>
+          <sp who="#themistokles">
+            <speaker>Themistokles.</speaker>
+            <l>Sein Tod ist, wie sein ganzes Leben war.</l>
+            <l>Athen, Athen, und Diesen opferst Du!</l>
+            <l>Die Reue kommt zu spät.</l>
+          </sp>
+          <sp who="#miltiades">
+            <speaker>Miltiades.</speaker>
+            <l>Das Schicksal that's,</l>
+            <l>Der Stahl des Pariers gab mir den Tod.</l>
+            <l>Metiochus! – Ihr Götter, rettet ihn!</l>
+            <l>Der Schierling und der Stahl des Pariers</l>
+            <l>Sind gegen diese Bilder Linderung.</l>
+            <l>Mein Sohn, mein Sohn! Er ist in Susa Knecht!</l>
+            <stage>(Er ermattet und spricht dann schwächer und langsamer.)</stage>
+            <l>Ich dank' Euch, Freunde; grüßt von mir das Volk!</l>
+            <stage>(Eine Trauermusik von Flöten wird in der Vorhalle gehört.)</stage>
+            <l>Sagt, daß ich keinen Groll zum Hades trug!</l>
+            <l>Grüßt die Platäer von dem Waffenfreund,</l>
+            <l>Und lebet wohl, und liebt das Vaterland,</l>
+            <l>Und lebt und sterbt ihm! Götter, schützt Athen!</l>
+            <l>Mein Cimon, Deine Schwester – Erebus,</l>
+            <l>Ich komme schon. – Mein Sohn, das Vaterland!</l>
+            <l>Das Vaterland, Athener –</l>
+          </sp>
+          <stage>(Er bedeckt sich mit dem Mantel.)</stage>
+          <sp who="#chor_hemichor">
+            <speaker>Chor.</speaker>
+            <l>Gehe zu Kodrus und Solon hin!</l>
+            <l>Die Seligen nehmen Dich freundlich auf.</l>
+            <l>Götter, gebt Männer wie er Griechenland,</l>
+            <l>Und es steht gegen den Sturm Asiens fest!</l>
+          </sp>
+          <stage>(Die Musik schweigt.)</stage>
+          <sp who="#cimon">
+            <speaker>Cimon</speaker>
+            <stage>(kniet neben dem Leichnam nieder).</stage>
+            <l>Jetzt darf ich Mensch sein; seht es, wenn Ihr wollt,</l>
+            <l>Und hört mich weinen! Hat wol je ein Sohn</l>
+            <l>So einen Vater so verloren? – Nun</l>
+            <l>Bin ich gesetzlich Erbe seiner Schuld</l>
+            <l>Und bin an meinem Ort und bleibe hier!</l>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
