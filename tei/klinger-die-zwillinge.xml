@@ -66,9 +66,14 @@
           <person xml:id="camilla" sex="FEMALE">
             <persName>Camilla</persName>
           </person>
-          <person xml:id="bediente" sex="UNKNOWN">
-            <persName>Bediente</persName>
-          </person>
+          <personGrp xml:id="bediente" sex="UNKNOWN">
+            <name>Bediente</name>
+          </personGrp>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#alter_guelfo #amalia"/>
+            <relation name="parent_of" active="#alter_guelfo #amalia" passive="#ferdinando #guelfo"/>
+            <relation name="friends" mutual="#guelfo #grimaldi"/>
+          </listRelation>
         </listPerson>
       </particDesc>
       <textClass>
@@ -98,9 +103,12 @@
           <head>Personen.</head>
           <castItem>Guelfo, Vater.</castItem>
           <castItem>Amalia, Mutter.</castItem>
-          <castItem>Ferdinando.</castItem>
-          <castItem>Guelfo.</castItem>
-          <castItem>Grimaldi Söhne.</castItem>
+          <castGroup>
+            <castItem>Ferdinando,</castItem>
+            <castItem>Guelfo,</castItem>
+            <roleDesc>Söhne.</roleDesc>
+          </castGroup>
+          <castItem>Grimaldi.</castItem>
           <castItem>Gräfin Camilla.</castItem>
           <castItem>Doktor Galbo.</castItem>
           <castItem>Bediente.</castItem>
