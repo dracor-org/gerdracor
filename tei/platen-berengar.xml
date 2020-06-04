@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Berengar</title>
+        <title type="sub">Comödie in einem Akt</title>
+        <author key="pnd:118594869">Platen, August von</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000500</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q93269748</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Google Books</name>
+          <idno type="URL">https://books.google.com/books?id=ofE6AAAAcAAJ&amp;pg=PA125</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <title>August von Platen: Berengar. Comödie in einem Akt. In: Gesammelte Werke des
+              Grafen August von Platen. In fünf Bänden. Dritter Band. Stuttgart und Tübingen: Cotta
+              1843. S. 125–154.</title>
+            <date type="print" when="1824"/>
+            <date type="premiere"/>
+            <date type="written" when="1824"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="loredano" sex="MALE">
+            <persName>Loredano</persName>
+          </person>
+          <person xml:id="flordelis" sex="FEMALE">
+            <persName>Flordelis</persName>
+          </person>
+          <person xml:id="dorine" sex="FEMALE">
+            <persName>Dorine</persName>
+          </person>
+          <person xml:id="pandolf" sex="MALE">
+            <persName>Pandolf</persName>
+          </person>
+          <person xml:id="birbante" sex="MALE">
+            <persName>Birbante</persName>
+          </person>
+          <person xml:id="guido" sex="MALE">
+            <persName>Guido</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="parent_of" active="#pandolf" passive="#birbante"/>
+            <relation name="associated_with" active="#guido" passive="#loredano"/>
+            <relation name="parent_of" active="#loredano" passive="#flordelis"/>
+            <relation name="associated_with" active="#dorine" passive="#flordelis"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comödie</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2020-06-04">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <pb n="125"/>
+      <div type="front">
+        <head>Berengar.</head>
+        <head>Comödie in einem Akt.</head>
+        <dateline>1824.</dateline>
+      </div>
+      <pb n="126"/>
+      <castList>
+        <head>Personen.</head>
+        <castItem>Loredano, ein lombardischer Ritter.</castItem>
+        <castItem>Pandolf, ein Wucherer.</castItem>
+        <castItem>Birbante, dessen Sohn.</castItem>
+        <castItem>Guido, Edelknabe im Hause Loredano's.</castItem>
+        <castItem>Flordelis, Loredano's Tochter.</castItem>
+        <castItem>Dorine, ihre Zofe.</castItem>
+      </castList>
+    </front>
+    <pb n="127"/>
+    <body>
+      <div type="location">
+        <head>Im Schlosse des Loredanos.</head>
+        <stage>Loredano. Flordelis. Dorine.</stage>
+        <sp who="#loredano">
+          <speaker>Loredano.</speaker>
+          <l>Erwäge, was erwägbar ist! Es fehlt</l>
+          <l>Mir nicht am Sinn für meiner Väter Adel,</l>
+          <l>Noch am Gefühle, das von niedrigen</l>
+          <l>Gesinnungen uns rein zu halten pflegt!</l>
+          <l>Doch Unvermeidliches bedenk' ich nicht.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Mir scheint's vermeidlich, und ich hab's bedacht.</l>
+        </sp>
+        <sp who="#loredano">
+          <speaker>Loredano.</speaker>
+          <l>Kennst du ein Mittel, mir und dir zu helfen?</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Wenn Gold nur helfen kann, so kenn' ich keins.</l>
+        </sp>
+        <sp who="#loredano">
+          <speaker>Loredano.</speaker>
+          <l>Was frommt es, daß auf diesem Worte Gold</l>
+          <l>Dein Ton so frostig und verächtlich ruht?</l>
+          <l>Mein Töchterchen! Verschmähe nicht zu sehr,</l>
+          <l>Was aller Häuslichkeit zu Grunde liegt.</l>
+        </sp>
+        <pb n="128"/>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Verhungern, betteln ist ein süßres Loos,</l>
+          <l>Als sich verkaufen einem feigen Gecken.</l>
+        </sp>
+        <sp who="#loredano">
+          <speaker>Loredano.</speaker>
+          <l>So wahr die Welt ich kenne, läugn' ich dieß.</l>
+          <l>Das Leben ist ein schmeichelhaftes Gut:</l>
+          <l>Wohl Jedem, dem es unter glänzenden</l>
+          <l>Bedingungen verliehen das Geschick!</l>
+          <l>Doch nehme Jeder es, so gut er kann:</l>
+          <l>Ein Ungemach ist leichter, als ein Schwall</l>
+          <l>Von nie zu hebenden Beschwerlichkeiten.</l>
+          <l>Auch bin ich nicht gelaunt, am Bettelstab</l>
+          <l>Mit dir auf Straßen oder Markt ein Ave</l>
+          <l>Vor dem Vorübergehenden zu beten,</l>
+          <l>Der schon von fern auf Weigerungen sinnt.</l>
+          <l>Ich bin, du weißt es, ohne Schuld verarmt.</l>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine</speaker>
+          <stage>(bei Seite).</stage>
+          <l>Zwar ohne Schuld, doch ohne Schulden kaum.</l>
+        </sp>
+        <sp who="#loredano">
+          <speaker>Loredano.</speaker>
+          <l>Begehrst du, daß in meinem Alter ich</l>
+          <l>Den läßlichsten Gewöhnungen entsage?</l>
+          <l>Was ich schon jetzt entbehre, sei genug!</l>
+          <l>Vergessen hab' ich, welchen Hof ich sonst</l>
+          <l>Von Lehensleuten hier versammelte,</l>
+          <l>An Frühlings- oder Winterfeiertagen:</l>
+          <l>Mein Haus war offen allen Pilgrimen,</l>
+          <l>Kein Gaukler oder Lautenschläger ging</l>
+          <l>Aus meinem Saal, der seine Blöße nicht</l>
+          <pb n="129"/>
+          <l>Mit einem Scharlachmantel decken konnte.</l>
+          <l>O wer gewohnt war, Flehenden zu geben,</l>
+          <l>Entschließt sich nicht, bei Gebenden zu flehn.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Du gabst so viel, gieb nicht auch mich zuletzt.</l>
+        </sp>
+        <sp who="#loredano">
+          <speaker>Loredano.</speaker>
+          <l>Mir scheint Pandolf kein harter Gläubiger:</l>
+          <l>Er will mich gern entheben jeder Schuld,</l>
+          <l>Wenn du die Hand dem Sohne reichst, durch den</l>
+          <l>Uns steter Ueberfluß geboten wird.</l>
+          <l>Es ist kein freier Schritt, doch sei gedenk,</l>
+          <l>Daß du mich stürzest, wenn du ihn verweigerst.</l>
+          <l>Glaubst du die Einzige zu sein, die Dem</l>
+          <l>Entsagen muß, um Jenes zu besitzen?</l>
+          <l>Das Leben gleichet einem Bröckchen Zucker,</l>
+          <l>Auf das auch wohl ein bittrer Tropfen fällt.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Arznei bedarf ich nicht, und dieser Tropfen</l>
+          <l>Ist weniger ein Tropfen als ein Tropf.</l>
+        </sp>
+        <sp who="#loredano">
+          <speaker>Loredano.</speaker>
+          <l>Ich seh' ihn nicht mit deinen Augen an.</l>
+          <l>Den Ritterschlag hab' ich ihm selbst ertheilt,</l>
+          <l>Und seiner Herkunft Deficit gedeckt.</l>
+          <l>Er scheint mir tapfer, jugendlich, gewandt,</l>
+          <l>Bereit, sich Abenteuer auszuspähn,</l>
+          <l>Und seine jungen Waffen abzuschleifen.</l>
+          <l>Noch diesen Morgen kehrt er von Milano</l>
+          <l>Von einem dortigen Turnier zurück.</l>
+        </sp>
+        <pb n="130"/>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Wenn er als Sieger kommt, so bin ich sein.</l>
+        </sp>
+        <sp who="#loredano">
+          <speaker>Loredano.</speaker>
+          <l>Auch wenn er nicht als Sieger kommt. Ich setzte</l>
+          <l>Den heut'gen Abend zur Verlobung fest,</l>
+          <l>Um jede Widerrede null zu machen.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>O hätte Gott ihn nicht zur Null gemacht!</l>
+        </sp>
+        <sp who="#loredano">
+          <speaker>Loredano.</speaker>
+          <l>Die Null verzehnfacht jede Zahl an Wert.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Zur Rechten, ja! Doch rechts von mir zu stehn,</l>
+          <l>Scheint mir Birbante zu galant; er ist</l>
+          <l>Nur eine Null auf meiner linken Seite.</l>
+        </sp>
+        <sp who="#loredano">
+          <speaker>Loredano.</speaker>
+          <l>Der Scherz geziemt sich für Behagliche.</l>
+          <l>Um Rechenpfennige zu spielen, scheint</l>
+          <l>Mir ungereimt, wenn man Zechinen braucht.</l>
+          <l>Ich ahne fast, warum Birbante dir</l>
+          <l>So sehr ein Dorn im Auge, Flordelis!</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Er sticht mir wenig in die Augen, Vater!</l>
+        </sp>
+        <sp who="#loredano">
+          <speaker>Loredano.</speaker>
+          <l>Weil du zu viel in Guido's Augen siehst.</l>
+          <l>Errötest du? Warum errötest du?</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Weil uns Beschuld'gung mehr als Schuld verwirrt.</l>
+        </sp>
+        <pb n="131"/>
+        <sp who="#loredano">
+          <speaker>Loredano.</speaker>
+          <l>Ich liebe diesen Guido, Flordelis:</l>
+          <l>Es ist ein braver Junge, hat am treusten</l>
+          <l>Von Allen bei mir ausgehalten, dient</l>
+          <l>Mir ohne Sold; allein er ist und bleibt</l>
+          <l>Ein armer Edelknabe, laß mich nie</l>
+          <l>Dein Bild im Spiegel seines Blicks gewahren!</l>
+          <l>Empfange freundlich deinen Bräutigam,</l>
+          <l>Und füge dich in's Unabänderliche.</l>
+          <stage>(Ab.)</stage>
+        </sp>
+        <stage>Flordelis. Dorine.</stage>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <l>So still auf einmal? so betreten? Ei!</l>
+          <l>Hat euer Vater wirklich gut geraten?</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Verschone mich mit Fragen dieser Art!</l>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <l>Ich dränge mich in kein Geheimniß ein,</l>
+          <l>Doch wir erfahren Manches, ohne daß</l>
+          <l>Wir dem Verschweigenden es abgelockt.</l>
+          <l>Was ein bejahrter Herr erlauschte, kann</l>
+          <l>Es einem Mädchen wohl verborgen bleiben?</l>
+          <l>Verliebte sehen in der Welt nur sich,</l>
+          <l>Doch sie vergessen, daß die Welt sie sieht.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Wenn mein Vertraun du wünschest, darfst du nicht</l>
+          <l>In feinen, spitzigen Sentenzen reden!</l>
+        </sp>
+        <pb n="132"/>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <l>So gehn wir über in's Persönliche!</l>
+          <l>Daß eure Lage sehr bedenklich ist,</l>
+          <l>Gesteht ihr selbst durch euer Schweigen ein.</l>
+          <l>Nur Eine Tröstung halt' ich euch bevor,</l>
+          <l>Da, neben euch, ich auch auf ihn geachtet:</l>
+          <l part="I">Ihr seid geliebt.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l part="F">Du redest zuversichtlich!</l>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <l>So fehlt euch selbst noch diese Zuversicht?</l>
+          <l part="I">Ihr habt euch nie entdeckt?</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l part="M">Entdeckt?</l>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <l part="F">Je nun,</l>
+          <l>Verliebte nähern sich einander leicht,</l>
+          <l>Und selten ist's, daß sich ein junges Herz,</l>
+          <l>Wie eine Knospe, nur in sich verwickelt.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Bedarf's der Aeußerung? Geheim durchkämpft</l>
+          <l>Ein still Gemüt den ganzen Krieg der Liebe.</l>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <l>Doch was beschließt ihr, wie die Sachen stehn?</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Ich denke nichts, beschließe nichts, ich will</l>
+          <l>Des kurzen Augenblicks mich noch versichern</l>
+          <l>In glückerträumender Melancholie.</l>
+          <pb n="133"/>
+          <l>Komm, setze hier an's Fenster dich, Dorine,</l>
+          <l>Nimm deine Laute, singe mir das Lied,</l>
+          <l>Das gestern Abends, vom Balkon herab,</l>
+          <l>Wir einem Gärtnermädchen abgelauscht:</l>
+          <l>Einförmig ist die Weise, doch sie flößt</l>
+          <l>Der Wehmut Wohlbehagen zärtlich ein.</l>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine</speaker>
+          <stage>(singt und spielt).</stage>
+          <lg>
+            <l>Lieblich tönt und ohne Zwang</l>
+            <l>Einer Glücklichen Gesang</l>
+            <l>All ihr schönes, schönes ach!</l>
+            <l>All ihr schönes Leben lang.</l>
+          </lg>
+          <lg>
+            <l>Aber weh' ihr, die verzagt</l>
+            <l>Kaum den Wunsch zu stammeln wagt,</l>
+            <l>Der an ihrem, ihrem ach!</l>
+            <l>Der an ihrem Busen nagt.</l>
+          </lg>
+          <lg>
+            <l>O daß stets die Lieb' uns lügt,</l>
+            <l>Daß das Glück so selten fügt,</l>
+            <l>Was der vollen, vollen ach!</l>
+            <l>Was der vollen Brust genügt!</l>
+          </lg>
+          <lg>
+            <l>Liebe, laß mit meinen Wehn</l>
+            <l>In der Erde mich vergehn,</l>
+            <l>Und als Veilchen, Veilchen ach!</l>
+            <l>Als ein Veilchen auferstehn!</l>
+          </lg>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Ich höre kommen – still. Es ist Pandolf.</l>
+          <l>Begrüße du den Widerwärtigen!</l>
+        </sp>
+        <pb n="134"/>
+        <stage>Die Vorigen. Pandolf.</stage>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <p>Guten Morgen, schöne Damen! Ich komme, meinen Sohn zu melden, der unverzüglich
+            erscheinen wird. Er ist vom Turnier zurückgekehrt, mit Beulen am Helm, mit zerschlagenem
+            Schild, mit Scharten am Schwert. Er sieht aus wie ein Held.</p>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <p>Dieß stellt ihn der Gefahr bloß, verkannt zu werden.</p>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <p>Verkannt? Der Sohn Pandolfs wird nie verkannt werden. Ich bin der reichste Mann in der
+            Lombardei. Mein Speisesaal ist mit Zechinen gepflastert, und mein Corridor mit deutschen
+            Thalern.</p>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <p>Es ist nicht das Erstemal, daß man den Deutschen auf die Köpfe tritt.</p>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <p>Ich habe ein Kloster dotirt und ein Hospital erbaut. Ich beschütze die Künste, ich
+            belohne die Wissenschaften, mein Haus ist –</p>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <p>Ein Pfandhaus.</p>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <p>Ein Tempel der Musen. Meine Gesellschaft wird gesucht.</p>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <p>Pandolf <emph>et Compagnie</emph>!</p>
+        </sp>
+        <pb n="135"/>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <p>Ich stehe mit den ersten Familien von Milano in Verbindung.</p>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <p>Wie die Kloake mit dem Ocean.</p>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <p>Ich gehe sogar mit dem Herzoge um.</p>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <p>Der Herzog ist das Haubt der Gesetze, ihr umgeht die Gesetze, und so geht ihr mit dem
+            Herzog um.</p>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <p>Dennoch fühl' ich mich geschmeichelt, der Schwiegervater einer Loredano zu werden. Ich
+            lege ihr das Herz meines Sohnes zu Füßen, und erwarte von ihr –</p>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <p>Einen Korb.</p>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <p>Ein Vorlegeschloß für den Mund ihres Kammermädchens.</p>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <p>Ich bin keiner von euern Geldkoffern.</p>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <p>Ihr seid höchstens ein Klingelbeutel, der frommen Seelen ihren Pfennig ablockt.</p>
+          <stage>(Er will ihr ein Goldstück geben.)</stage>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine</speaker>
+          <stage>(die Hand zurückziehend).</stage>
+          <p>Halt! Erst löst mir ein Rätsel auf. Was ist ein Klingelbeutel, wenn ich ihn
+            umkehre?</p>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <p>Ein umgekehrter Klingelbeutel.</p>
+        </sp>
+        <pb n="136"/>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <p>Eine Schellenkappe, mein Freund, eine Schellenkappe! Hier kommt euer Sohn, und der soll
+            sie aufsetzen.</p>
+        </sp>
+        <stage>Die Vorigen. Birbante, bewaffnet.</stage>
+        <sp who="#birbante">
+          <speaker>Birbante</speaker>
+          <stage>(vor Flordelis auf den Knien).</stage>
+          <l>Empfang', o Königin, von deinem Ritter</l>
+          <l>Die Ehrenzeichen seiner Siegesthaten:</l>
+          <l>Des Schildes Beulen und der Lanze Splitter,</l>
+          <l>Sie lassen dich, was er gethan, erraten:</l>
+          <l>Und schein' ich anders dir im Kampfgewitter</l>
+          <l>Ein Ausbund aller Helden und Soldaten,</l>
+          <l>So wird mein Haubt zum Sammelplatz der Sterne!</l>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine</speaker>
+          <stage>(bei Seite).</stage>
+          <l>Wo nicht, zum Kürbiß, dienend als Laterne.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Ich zaudre nicht, euch nach Verdienst zu preisen,</l>
+          <l>Allein verzeiht, wenn ich ein wenig stutze,</l>
+          <l>Da noch so blank ist eures Panzers Eisen,</l>
+          <l>Als kämt ihr, statt vom Kampfe her, vom Putze;</l>
+          <l>Des Schilds, der Lanze Trümmer zwar beweisen,</l>
+          <l>Daß ihr gewehrt euch habt zu Schutz und Trutze,</l>
+          <l>Doch nicht, daß ihr den Sieg davon getragen.</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Ich habe manchen Kopf herabgeschlagen.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Ich werd' euch künftig stets den Bügel halten,</l>
+          <l>Wenn vom Gefecht ihr kehrt in freud'ger Eile,</l>
+          <l>Ja, sollt' ein Gegner euch den Schädel spalten,</l>
+          <pb n="137"/>
+          <l>So seid gewiß, daß ich ihn wieder heile;</l>
+          <l>Denn, wenn mein Herz vor euch sich soll entfalten,</l>
+          <l>So macht mir's dießmal wirklich Langeweile,</l>
+          <l>Daß ihr davongekommen ohne Wunden.</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Der Herr war mit mir in den bösen Stunden.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Nun bleibt ihr lange wohl zu Haus in Frieden?</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Mit nichten! Hört, was ich auf's Neue wage:</l>
+          <l>Ich ließ bereits mir frische Waffen schmieden,</l>
+          <l>Und heute noch, an diesem Nachmittage,</l>
+          <l>Hab' einen Feind ich in den Wald beschieden,</l>
+          <l>Mit dem ich mich auf Tod und Leben schlage.</l>
+          <l>Da ich mit euch mich diese Nacht verlobe,</l>
+          <l>So gelte Dieses mir als Ahnenprobe.</l>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf</speaker>
+          <stage>(zu Flordelis).</stage>
+          <l>Ihr seht, wie tapfer nun mein Sohn geworden.</l>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <l>Das Kauffarteischiff wird ein wilder Brander.</l>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <l>Wer, mehr als er, verdient den Ritterorden?</l>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <l>Wie herrlich passen Beide für einander!</l>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <l>Er wird für euch die ganze Welt ermorden!</l>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <l>Er ist ein Goliath, ein Alexander!</l>
+        </sp>
+        <pb n="138"/>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <l>Ihr seht, daß jede Klinge sich ihm neiget.</l>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <l>Sie sieht, sie sieht; allein sie schweigt, sie schweiget.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Mit nichten! Nehmet diese güldne Spange,</l>
+          <l>Birbante! welche meinen Arm umfasset,</l>
+          <l>Bewahrt, beschützt, vertheidigt sie so lange,</l>
+          <l>Bis ihr euch Abends wieder blicken lasset:</l>
+          <l>Sie sei ein Liebeszeichen euch, sie prange</l>
+          <l>Auf eurem Helm, zu dessen Schmuck sie passet.</l>
+          <l>Ihr werdet, hoff' ich, nicht im Kampfe weichen,</l>
+          <l>Noch wiederkehren ohne dieses Zeichen.</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Es soll mir Stralen um die Stirn verbreiten,</l>
+          <l>Wie sie ein Heil'genhaubt zu schmücken pflegen:</l>
+          <l>Nun aber laßt dahin mich ziehn und streiten,</l>
+          <l>Im Berggehölz, auf ungebahnten Wegen.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Soll nicht der Knappen einer euch begleiten?</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Ich bin mir selbst genug mit meinem Degen.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>So lebet wohl, und Segen euren Waffen!</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Doch eher nicht, bis meine Wunden klaffen.</l>
+          <stage>(Ab mit Pandolf.)</stage>
+        </sp>
+        <pb n="139"/>
+        <stage>Flordelis. Dorine.</stage>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <p>Eine schöne Comödie! Was habt ihr mit ihm vor?</p>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <p>Davon hernach. Wir haben keinen Augenblick zu verlieren. Beauftrage sogleich einen von
+            der Dienerschaft, daß er Birbanten nachschleiche, und mir Nachricht gebe, wohin ihn
+            seine Straße führt.</p>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <p>Wohl!</p>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <p>Sodann verschaffe mir ein leichtes Panzerhemd und einen Helm und Alles, was zu einer
+            vollständigen Rüstung nothwendig ist.</p>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <p>Das kann geschehen, aber wozu?</p>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <p>Ich habe mir etwas Eigenes ausgedacht. Die Zeit wird's lehren. Geh und bringe die
+            Waffen in mein Gemach, wohin ich dir folge.</p>
+          <stage>(Dorine ab.)</stage>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Ein Scherz hat oft gefruchtet, wo der Ernst</l>
+          <l>Nur Widerstand hervorzurufen pflegte.</l>
+          <l>Entlarv' ich ihn, so bin ich frei von allen</l>
+          <l>Verpflichtungen, und dann – und dann –</l>
+        </sp>
+        <stage>Guido. Flordelis.</stage>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l>Verzeiht,</l>
+          <l>Wenn mich mein Weg durch diese Zimmer führt,</l>
+          <pb n="140"/>
+          <l>Da ich, allein euch hier zu finden, nicht</l>
+          <l part="I">Erwarten durfte.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l part="F">Euer Weg ist frei.</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l>Ich kam um euretwillen her, ich soll</l>
+          <l>Die vordern Säle decoriren helfen</l>
+          <l>Für die Verlobungsfeier diese Nacht.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Dieß scheint ein angenehm Geschäft für euch.</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l>Wie das Geschäft der Mönche von La Trappe,</l>
+          <l>Die ihre Totenkiste zimmern müssen.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>So seid ihr nicht geneigt, mir Glück zu wünschen?</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l>Ich würd' es thun, wofern ich hoffen könnte,</l>
+          <l>Daß man auf Glück euch wirklich Hoffnung macht.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Ihr glaubt, so viel vermöge kein Birbante?</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l>Daß er Vermögen hat, bezweifl' ich nicht.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Nicht mehr, als eine Million Zechinen.</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l>Nicht mehr? O Bettler auf dem Weg der Gunst!</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Er scheint an Mut nicht Einem nachzustehn.</l>
+        </sp>
+        <pb n="141"/>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l>Nicht Einem, aber Allen, wie sie sind.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Mein Vater selbst verordnet diese Wahl.</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l>Ihr solltet selbst euch selbst Arznei verordnen.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Das scheint gefährlich ohne Rat des Arztes.</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l>Zuweilen ziemt uns wohl ein Wagestück.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Zu oft mißlingt, was ungewöhnlich scheint.</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l>Dazu bedarf's nur einer raschen That,</l>
+          <l>Dann wird das Seltene zum Wirklichen.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Darf ich hierin, da schon der Augenblick</l>
+          <l>Sich drohend naht, auf eure Hülfe bauen?</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l>Wem sonst, als dir, gehör' ich, Frau der Frauen?</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Wohlan! Erwartet mich in einer Stunde</l>
+          <l>Im nahen Holz, dann wird euch weitre Kunde.</l>
+          <stage>(Ab.)</stage>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido</speaker>
+          <stage>(allein).</stage>
+          <l>O schlage, Herz, du bist bewegt genug!</l>
+          <l>Den Lohn der Treue hast du halb errungen,</l>
+          <l>Nun wirf auch weg Verstellung und Betrug,</l>
+          <pb n="142"/>
+          <l>Und zeige dich, nachdem so viel gelungen,</l>
+          <l>Als ebenbürtig deiner Huldigungen!</l>
+          <l>Sie wird dem Mächt'gen zugestehn sofort,</l>
+          <l>Was sie gestanden dem verwaisten Jungen:</l>
+          <l>Im Ohre klingt mir noch ihr süßes Wort,</l>
+          <l>Nun ankre, holdes Glück, du bist so nah dem Port!</l>
+          <stage>(Ab.)</stage>
+        </sp>
+      </div>
+      <div type="location">
+        <head>Einsames Gehölz.</head>
+        <stage>Birbante tritt auf, in Waffen.</stage>
+        <sp who="#birbante">
+          <p>Diese adelige Tapferkeit liegt wie ein Alp auf meinen Schultern. Was läßt sich
+            Ungereimteres denken, als sich mit einem Zentner Eisen zu schleppen, um spazieren zu
+            gehn? Tret' ich nur einmal in die Brautkammer meiner Flordelis, so leg' ich den Harnisch
+            ab, um ihn nie wieder anzuschnallen. Mein Heldenmut kommt mir ohnedem vor, wie ein
+            aufwartender Pudel, der immer wieder auf die Vorderbeine zurückfällt. Warum soll ich nur
+            gerade meiner Geliebten durch Heldenmut imponiren? Heute darf ich vollends nicht ohne
+            Wunden zurückkehren. Wo nehm' ich sie nur her, ohne mir weh zu thun? Ritz' ich mich an
+            den Dornen, so wird es ihr zu unbedeutend vorkommen; schneid' ich mich mit meinem
+            Taschenmesser in den Arm, so kann ich mir eine Ader verletzen und mich verbluten. Am
+            besten ist, ich behaubte, es sey mir eine Fee begegnet, die meine Waffen gefeit hat,
+            wodurch ich zugleich als der Unverwundbare meines Geschlechts erscheine. Aber meinen
+            Schild will ich wenigstens so weich <pb n="143"/> klopfen, als ob ich, wie der Erzvater,
+            mit einem Dämon zu thun gehabt hätte.</p>
+          <stage>(Er befestigt seinen Schild an einen Baum, und fängt an, darauf
+            loszuschlagen.)</stage>
+        </sp>
+        <stage>Birbante. Flordelis im Hintergrunde, geharnischt, mit geschlossenem Visier.</stage>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Ich glaube gar, da steht er. Seiner Spur</l>
+          <l>Ist leicht zu folgen, denn er lärmt gewaltig.</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <p>Ob wohl Rolands Schild bei Ronceval so durchlöchert war, wie der meine?</p>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Was seh' ich? Ha, die Memme! Seinen Schild</l>
+          <l>Zerhaut er selbst, und macht die Klinge schartig –</l>
+          <l>Was ziemt sich hier? Gelächter oder Zorn?</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <p>Das ist eine Drescherarbeit! Mir thun alle Gelenke weh. Nun soll mir Einer behaubten,
+            daß ich keine Strapazen ertragen kann!</p>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Jetzt hat ihn Gott in meine Hand gegeben!</l>
+          <stage>(Laut.)</stage>
+          <l>Was schaffst du, pflichtvergessener Vasall?</l>
+          <l>Baumfrevler! Wilddieb! Räuber! Ungeheuer!</l>
+          <l>Du wagst es, hier in meinem Waldrevier</l>
+          <l>Zu kreuzen, meine Stämme zu verletzen,</l>
+          <l>Durch dein Getöse meine Hasen mir</l>
+          <l>Weit über mein Gebiet hinauszujagen,</l>
+          <l>Ja, bis an's Ende der bekannten Welt?</l>
+        </sp>
+        <pb n="144"/>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <p>Gestrenger Herr Ritter, ihr beleidigt einen Unschuldigen.</p>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Beleidigen? Unschuldig? Störst du nicht</l>
+          <l>Tumultuarisch meinen stillen Wandel,</l>
+          <l>Und machst rebellisch unsre Lombardie?</l>
+          <l>Von nun an bist du mein Gefangener.</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <p>Nehmt hundert Zechinen zum Lösegeld, und laßt mich laufen!</p>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Mit nichten. Folge mir, Entsetzlicher!</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <p>Ich gebe tausend Zechinen und ein Trinkgeld an Dero Knappen.</p>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Bestechen willst du mich wie einen Sbirren,</l>
+          <l>Nichtswürdiger? Ich bin ein Bannerherr,</l>
+          <l>Was kümmr' ich mich um lumpige Zechinen!</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <p>So zahl' ich euch mit Fersengeld!</p>
+          <stage>(Er will entspringen.)</stage>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis</speaker>
+          <stage>(hält ihn).</stage>
+          <l>Du gehst von hier nur in mein Burgverließ,</l>
+          <l>Wo Fledermäuse dir im Haare nisten,</l>
+          <l>Und Uhus brüten über deinem Schooß.</l>
+          <l>Wo nicht, so rüste dich zum Kampf mit mir!</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <p>Zum Kampf?</p>
+        </sp>
+        <pb n="145"/>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Zum äußersten, auf Leben oder Tod.</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <p>Auf Leben wäre mir lieber!</p>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Unhöflicher! So hast du darum nur</l>
+          <l>Entzwei geschlagen deinen Schild, damit</l>
+          <l>Du mir Genugthuung versagen könntest?</l>
+          <l>Gleichviel, ich werfe meinen Schild von mir,</l>
+          <l>So fechten wir mit ausgeglichnen Waffen.</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <p>Verzeiht, ich habe ein Gelübde an die heilige Crescentia gethan, binnen Jahresfrist in
+            kein Gefecht mich einzulassen. Ihr seht selbst, daß ich euch keine Genugthuung geben
+            kann.</p>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>So stirb von meiner Faust! Und wisse nur,</l>
+          <l>Daß ich in Fechterkünsten Meister bin:</l>
+          <l>Schlag' ich dein Haubt dir ab, so schleudr' ich es</l>
+          <l>Bis an die Sterne des Zodiacus,</l>
+          <l>Daß es im Schaff des Wassermanns ersaufe!</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <p>Wißt ihr denn gar nichts, wodurch ich euch mein armseliges Leben abhandeln könnte?</p>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Was hast du Glänzendes auf deinem Helm?</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <p>Es ist das Armband meiner Braut, das Einzige, was ich euch nicht abtreten könnte.</p>
+        </sp>
+        <pb n="146"/>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Das Einz'ge? Was? Du trittst es nicht mir ab?</l>
+          <l>Soll ich den Leib dir in zwei Theile spalten,</l>
+          <l>Wovon der eine nach Aegypten fliegt,</l>
+          <l>Den Bauch zu mästen eines Krokodils,</l>
+          <l>Der andere zu Nova Zembla sich</l>
+          <l>In eines Bären Rachen wieder findet?</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <p>Hier ist das Armband!</p>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Wir sind im Reinen, nun entlass' ich dich.</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <p>Ist mir vergönnt, ehe wir uns trennen, nach dem Namen meines Siegers zu forschen?</p>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Ich heiße Berengar. Gedenke mein!</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante</speaker>
+          <stage>(im Abgehen, für sich).</stage>
+          <p>Berengar? Dieser Name ist gänzlich unbekannt in der Lombardei. Gott weiß, was für ein
+            Vagabund das ist! Von einem Helden besiegt zu werden, ginge noch an, aber von einem
+            solchen Bramarbas davon laufen zu müssen, ist nicht Jedem gegeben.</p>
+          <stage>(Ab.)</stage>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>O Memme sonder Gleichen! Konnt' ich je</l>
+          <l>Dich mir zur Seite dulden? Also dieß</l>
+          <l>Ist ein Gemal, wie ihn der Vater wünscht!</l>
+          <l>Er scheint ihm tapfer, jugendlich, gewandt,</l>
+          <l>Und wird mit Ueberfluß uns stets versorgen!</l>
+          <pb n="147"/>
+          <l>Nicht länger dräng' ich mein Gefühl zurück,</l>
+          <l>Beschämen will ich öffentlich den Gecken,</l>
+          <l>Und Guido's Hand ergreifen ohne Scheu.</l>
+        </sp>
+        <stage>Flordelis. Guido.</stage>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l>Ich kann sie nirgend finden und erspähn!</l>
+          <l>An jedem schönen Platz erwart' ich sie;</l>
+          <l>Wo nur ein reich belaubter Buchenast</l>
+          <l>Den grüntapetnen Pavillon erbaut,</l>
+          <l>Wo nur ein Quell die moos'ge Folie</l>
+          <l>Krystall'nem Wasserspiegel unterlegt.</l>
+          <stage>(Näher kommend.)</stage>
+          <l>Ein Ritter! Sieh! Vielleicht vermag er mich</l>
+          <l>Am besten aufzuklären. Edler Herr!</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l part="I">Was wünscht ihr? Was beliebt euch?</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l part="F">Habt ihr nicht</l>
+          <l part="I">Ein Fräulein hier im Wald gesehn?</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l part="F">So eben</l>
+          <l>Verließ sie mich, die mich hierher bestellt.</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l>Euch herbestellt? Dann ist's die Rechte nicht.</l>
+          <l part="I">Wie heißt sie denn?</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l part="F">Sie nennt sich Flordelis.</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l part="I">Das ist erlogen!</l>
+        </sp>
+        <pb n="148"/>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l part="F">Junger Freund, bedenkt,</l>
+          <l>Daß ich gewaffnet bin, und ihr es nicht!</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l part="I">Es soll mir nicht an Waffen fehlen!</l>
+          <stage>(Er entwindet ihr den Degen.)</stage>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis</speaker>
+          <stage>(ihr Visier öffnend).</stage>
+          <l part="F">Halt,</l>
+          <l part="I">Und sieh!</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l part="M">O Himmel! Flordelis!</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l part="F">Sie selbst.</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido</speaker>
+          <stage>(den Degen wegschleudernd):</stage>
+          <l>Vor diesen Blicken, diesen Rosenwangen</l>
+          <l>Bekenn' ich mich als einen Waffenlosen,</l>
+          <l>Nun mag dein Schwert sich wider mich erbosen,</l>
+          <l>Ich werde vor ihm zittern und erbangen.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Nun sei des Schweigens stilles Thor entriegelt,</l>
+          <l>Und ausgesprochen, was ich redlich meine:</l>
+          <l>Arm will ich sein und niedrig, doch die Deine!</l>
+          <l>Was ist der Glanz, worin das Glück sich spiegelt?</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l>Bald brech' auch ich ein langgenährtes Schweigen,</l>
+          <l>Bald künd' auch ich, was ich um dich verdiene:</l>
+          <l>Des eiteln Vorzugs soll mit stolzer Miene</l>
+          <l>Sich nicht berühmen das Gemüt des Feigen!</l>
+        </sp>
+        <pb n="149"/>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Schon hat die Sonne sich vertraut den Fluten,</l>
+          <l>Mit Purpur krönend des Gebirges Spitze,</l>
+          <l>Laß uns zurück zum väterlichen Sitze,</l>
+          <l>Dort wird geschehn, was Viele nicht vermuten.</l>
+          <stage>(Beide ab.)</stage>
+        </sp>
+      </div>
+      <div type="location">
+        <head>Loredano's Schloß.</head>
+        <stage>Ein ausgeschmückter, mit Gästen angefüllter Saal. Im Vordergrunde Pandolf, Birbante,
+          Dorine.</stage>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <p>Die schöne Flordelis scheint noch mit ihrem Putz beschäftigt?</p>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <p>Sie wird sogleich an der Hand ihres Vaters erscheinen.</p>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <p>So läßt sie endlich den Verdiensten meines Sohnes Gerechtigkeit widerfahren?</p>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <p>Seit heute gewiß.</p>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <p>Ist ihr schon bekannt geworden, daß ihm sein Gegner im Zweikampfe unterlegen ist?</p>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <p>Allerdings. Nur weiß sie noch nicht, was er mit dem Leichname angefangen?</p>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <p>Ich ließ ihn auf dem Felde liegen.</p>
+        </sp>
+        <pb n="150"/>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <p>Das ist unbarmherzig. Ich will einen Totengräber dingen, damit er ihn einscharre.</p>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <p>Die Raben haben ihn bereits verzehrt.</p>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <p>Wohl bekomm's ihnen!</p>
+        </sp>
+        <stage>Die Vorigen. Loredano. Flordelis.</stage>
+        <sp who="#loredano">
+          <speaker>Loredano.</speaker>
+          <l>Birbante komm! Die schöne Stunde graut,</l>
+          <l>Nun hebst du bald den Schleier deiner Braut,</l>
+          <l>Die dir als Gattin sich ergeben beugt,</l>
+          <l>Von deiner Thaten Adel überzeugt.</l>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <l>Mein reichster Segen kröne dieses Paar!</l>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine</speaker>
+          <stage>(bei Seite).</stage>
+          <l>Ja wohl sein reichster, denn er zahlt ihn baar!</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis</speaker>
+          <stage>(zu Birbante).</stage>
+          <l>Da ihr auch heut zurückgekehrt vom Streit,</l>
+          <l>So zweifl' ich nicht an eurer Tapferkeit.</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Mein morscher Schild, mein schartenreiches Schwert</l>
+          <l>Bezeugen, daß ich deiner Liebe wert!</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Ihr strecktet euren Gegner in den Sand?</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Wer hielte mir, sobald ich kämpfe, Stand?</l>
+        </sp>
+        <pb n="151"/>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Stets kehrt ihr wieder unversehrt und keck!</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Nicht unversehrt, mich ziert ein blauer Fleck!</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Wo ist die Spange, die ich euch geborgt?</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Darüber sei nur gänzlich unbesorgt!</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Wo ist die Spange, frag' ich, zeigt sie her!</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Sie dir zu zeigen, fiele mir nicht schwer.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Nun wohl, wo ist sie? Händigt sie mir ein!</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Das kann wohl nicht dein ernster Wille sein.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Mein fester Ernst, ich gab sie euch als Pfand.</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Gern geb' ich sie zurück in deine Hand.</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Auf eurem Helm, Birbante, steckt sie nicht.</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Was siehst du mir so zornig in's Gesicht?</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Zum letztenmal, wo ist die Spange? sagt!</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Ein Windstoß hat sie mir davon gejagt.</l>
+        </sp>
+        <pb n="152"/>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Nun hab' ich dich, verräterischer Wicht!</l>
+          <l>So ehrst du mich? So kennst du deine Pflicht?</l>
+          <l>Hab' ich umsonst dieß Zeichen dir vertraut?</l>
+          <l>Bewahrst du so die Gaben deiner Braut?</l>
+          <l>Für immer fühl' ich mich von dir befreit!</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Du grollst zu sehr um eine Kleinigkeit.</l>
+        </sp>
+        <sp who="#loredano">
+          <speaker>Loredano.</speaker>
+          <l part="I">Du bist zu rasch!</l>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <l part="F">Ihr richtet allzuhart!</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Befreie mich von deiner Gegenwart!</l>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine</speaker>
+          <stage>(leise).</stage>
+          <l>Nur zu! Ihr seyd im Zuge. Nur geschwind!</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Soll ich entgelten, was gethan der Wind?</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis</speaker>
+          <stage>(ihm das Armband vor die Füße werfend).</stage>
+          <l>Elender! Siehst du deine Schande klar?</l>
+        </sp>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l part="I">Ha Flordelis!</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l part="F">Ich heiße Berengar!</l>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <l part="I">Was soll das heißen?</l>
+        </sp>
+        <sp who="#loredano">
+          <speaker>Loredano.</speaker>
+          <l part="F">Euer Sohn wird blaß.</l>
+        </sp>
+        <pb n="153"/>
+        <sp who="#birbante">
+          <speaker>Birbante.</speaker>
+          <l>Das schlägt den Boden vollends aus dem Faß!</l>
+          <stage>(Er entflieht.)</stage>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <l part="I">Wo geht er hin?</l>
+        </sp>
+        <sp who="#loredano">
+          <speaker>Loredano.</speaker>
+          <l part="F">Was hat ihn so verscheucht?</l>
+        </sp>
+        <sp who="#flordelis">
+          <speaker>Flordelis.</speaker>
+          <l>Laßt ihn! Es ist genug, daß er entfleucht!</l>
+          <l>Aus dieser Einen feigen That erseht,</l>
+          <l>Wie meine Zeichen ihm der Wind verweht!</l>
+          <l>Doch daß ihr, Vater, nicht vergebens hier</l>
+          <l>Versammelt habt so vieler Gäste Zier,</l>
+          <l>So thut ein andrer Freier sich hervor:</l>
+          <l>Empfangt ihn gut, verleiht ihm gern ein Ohr!</l>
+        </sp>
+        <sp who="#loredano">
+          <speaker>Loredano.</speaker>
+          <l part="I">Ein andrer Freier?</l>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <l part="F">Und hier ist er schon!</l>
+        </sp>
+        <stage>Guido erscheint in prächtigen Kleidern, und läßt sich vor Loredano auf ein Knie
+          nieder.</stage>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l>Ich bin des Herzogs von Piacenza Sohn.</l>
+          <l>Vergebt, wenn ich betrogen euch bis jetzt!</l>
+          <l>Die Liebe hat mich in dieß Haus versetzt,</l>
+          <l>Die Liebe, die den Vater oft umgeht,</l>
+          <l>Wenn sie sich selbst auf ihren Wert versteht.</l>
+          <l>Der Schönen Herz, befragt sie selbst, ist mein,</l>
+          <l part="I">Versagt ihr sie?</l>
+        </sp>
+        <pb n="154"/>
+        <sp who="#loredano">
+          <speaker>Loredano</speaker>
+          <stage>ihn aufhebend).</stage>
+          <l part="F">Mein lieber Guido, nein!</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l>Aufleben soll von Neuem euer Haus,</l>
+          <l>Es wandle Pracht und Frohsinn ein und aus:</l>
+          <l>Der Ritter, der nach Abenteuern schweift,</l>
+          <l>Der Troubadour, der in die Saiten greift,</l>
+          <l>Der Pilgersmann, der nach Loretto wallt,</l>
+          <l>Er finde hier gastfreien Aufenthalt!</l>
+          <l>Den Saal des Schlosses und des Gartens Flur</l>
+          <l>Belebe Kunst, verschöne Liebe nur!</l>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <l>Doch wer verhilft mir nun zu meinem Recht?</l>
+        </sp>
+        <sp who="#guido">
+          <speaker>Guido.</speaker>
+          <l>Befried'gen werd' ich diesen feilen Knecht.</l>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine.</speaker>
+          <l>Mein Herr Pandolf, es thut uns Vieren leid,</l>
+          <l>Daß ihr das fünfte Rad am Wagen seid!</l>
+        </sp>
+        <sp who="#pandolf">
+          <speaker>Pandolf.</speaker>
+          <l>Verschwender ihr, hochmütig und erlaucht,</l>
+          <l>Ich seh's voraus, daß ihr mich wieder braucht.</l>
+          <stage>(Er geht ab.)</stage>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine</speaker>
+          <stage>(gegen das Publikum).</stage>
+          <l>Dieß unser Spiel. Genüg' es euch für heut,</l>
+          <l>Bis Schön'res euch und Ernsteres erfreut.</l>
+        </sp>
+      </div>
+    </body>
+  </text>
+</TEI>
