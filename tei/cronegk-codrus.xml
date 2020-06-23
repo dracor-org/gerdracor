@@ -1,0 +1,3250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Codrus</title>
+        <title type="sub">Ein Trauerspiel in fünf Aufzügen</title>
+        <author key="pnd:11852285X">Cronegk, Johann Friedrich von</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000501</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q96406217</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Google Books</name>
+          <idno type="URL">https://books.google.com/books?id=MaRKAAAAcAAJ&amp;pg=RA1-PP1</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <title>Johann Friedrich von Cronegk: Codrus. Ein Trauerspiel in fünf Aufzügen. In:
+              Anhang zu dem ersten und zweyten Bande der Bibliothek der schönen Wissenschaften und
+              freyen Künste. Leipzig: Dyk 1758. S. XXV–XXVI und S. 1–96.</title>
+            <date type="print" when="1758">1758</date>
+            <date type="premiere" when="1760">1760</date>
+            <date type="written" when="1754">1754</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="elisinde" sex="FEMALE">
+            <persName>Elisinde</persName>
+          </person>
+          <person xml:id="philaide" sex="FEMALE">
+            <persName>Philaide</persName>
+          </person>
+          <person xml:id="codrus" sex="MALE">
+            <persName>Codrus</persName>
+          </person>
+          <person xml:id="nileus" sex="MALE">
+            <persName>Nileus</persName>
+          </person>
+          <person xml:id="ein_soldat" sex="MALE">
+            <persName>Ein Soldat</persName>
+          </person>
+          <person xml:id="medon" sex="MALE">
+            <persName>Medon</persName>
+          </person>
+          <person xml:id="eine_wache" sex="MALE">
+            <persName>Eine Wache</persName>
+          </person>
+          <person xml:id="artander" sex="MALE">
+            <persName>Artander</persName>
+          </person>
+          <person xml:id="cleanth" sex="MALE">
+            <persName>Cleanth</persName>
+          </person>
+          <person xml:id="licas" sex="MALE">
+            <persName>Licas</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="parent_of" active="#elisinde" passive="#medon"/>
+            <relation name="associated_with" active="#nileus" passive="#codrus"/>
+            <relation name="associated_with" active="#cleanth #licas" passive="#artander"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2020-06-22">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <pb n="XXV"/>
+      <div type="front">
+        <head>Codrus</head>
+        <head>ein Trauerspiel in fünf Aufzügen</head>
+        <p>von Hrn. Joh. Fr. Freyh. v. Cronegk,</p>
+        <p>weil. Hochfürstl. Anspachischen Kammerjunker,</p>
+        <p>Hof- und Regierungsrath,</p>
+        <p>welches</p>
+        <p>den für das Jahr 1757 ausgesetzten Preis</p>
+        <p>erhalten hat.</p>
+        <epigraph xml:lang="la">
+          <cit>
+            <quote>
+              <l>Codrus pro patria non timidus mori.</l>
+            </quote>
+            <bibl>HORAT.</bibl>
+          </cit>
+        </epigraph>
+      </div>
+      <pb n="XXVI"/>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen:</head>
+          <castItem><role>Codrus</role>
+            <roleDesc>König von Athen.</roleDesc></castItem>
+          <castItem><role>Artander</role>
+            <roleDesc>König der Dorier.</roleDesc></castItem>
+          <castItem><role>Elisinde</role>
+            <roleDesc>Prinzessinn vom Geblüte des Theseus.</roleDesc></castItem>
+          <castItem><role>Medon</role>
+            <roleDesc>ihr Sohn.</roleDesc></castItem>
+          <castItem><role>Philaide</role>
+            <roleDesc>Prinzessinn vom Geblüte des Theseus.</roleDesc></castItem>
+          <castItem><role>Nileus</role>
+            <roleDesc>Vertrauter des Codrus.</roleDesc></castItem>
+          <castGroup>
+            <castItem>Cleanth</castItem>
+            <castItem>Lycas</castItem>
+            <roleDesc>Vertraute Artanders.</roleDesc>
+          </castGroup>
+          <castItem>Gefolge von Atheniensern und Doriern.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Der Schauplatz ist in Athen im Pallaste des Codrus.</p>
+      </set>
+    </front>
+    <pb n="1"/>
+    <body>
+      <div type="act">
+        <head>Erster Aufzug,</head>
+        <div type="scene">
+          <head>erster Auftritt.</head>
+          <stage>Elisinde, Philaide.</stage>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>So wird dein zärtlich Herz der Thränen niemals müde?</l>
+            <l>Quält dich ein ew'ger Gram, betrübte Philaide!</l>
+            <l>Ich ehre deinen Schmerz; doch folg ihm nicht zu sehr:</l>
+            <l>Die Klagen sind umsonst und Medon ist nicht mehr.</l>
+            <l>Die Götter wollen nicht der Schwermuth Wunsch verstatten;</l>
+            <l>Kein Geist entreißet sich dem blassen Reich der Schatten.</l>
+            <l>Dein Herz ist allzugroß, zu zärtlich, zu getreu!</l>
+            <l>Der Tugend Uebermaß ist nie von Fehlern frey.</l>
+            <l>Du bist es nicht allein, die Glück und Ruh verlohren;</l>
+            <l>Zum Schmerz und zur Geduld sind Sterbliche gebohren.</l>
+            <l>Für uns ist alles Nacht, für sie dort alles Licht;</l>
+            <l>Und standhaft leiden ist der Menschheit größte Pflicht.</l>
+            <pb n="2"/>
+            <l>Doch itzt, itzt ist es Zeit, den Göttern bloß zu danken.</l>
+            <l>Das Leben hat sein Ziel, der Schmerz hat seine Schranken.</l>
+            <l>Ja, Götter! ob ihr gleich mir Ruh und Glück entwandt,</l>
+            <l>Euch dank ich; eure Macht erhält mein Vaterland:</l>
+            <l>Und du, du traurest noch, die Braut des Codrus weinet!</l>
+            <l>Der Tag ist dir betrübt, der allen frölich scheinet!</l>
+            <l>Du seufzest, da man uns den Frieden wieder giebt!</l>
+            <l>Dein Vaterland ist froh, und du bist noch betrübt!</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>Grausame, tadelst du den Schmerz, den ich empfinde!</l>
+            <l>Du kannst mich trösten, du? Bedenkt wohl Elisinde,</l>
+            <l>Wen ich beklagen muß? Dein Eifer geht zu weit,</l>
+            <l>Und deine Tugend ist nur Unempfindlichkeit.</l>
+            <l>Zu welcher Freude soll der Friede mich verbinden?</l>
+            <l>Der Friede – – Nein! – – Mein Herz kann keinen Frieden finden.</l>
+            <l>Das Grab, in dem dein Sohn nunmehr versenket ist,</l>
+            <l>Dieß ists, was meinen Wunsch und Frieden in sich schließt.</l>
+            <l>O Medon, du zuerst hast dieses Herz besessen!</l>
+            <l>Dich, liebster Medon, dich sollt ich nunmehr vergessen?</l>
+            <l>Stöhrt kein gerechter Zorn dich in der Gräber Ruh?</l>
+            <l>Ach, deine Mutter selbst ermahnet mich hierzu!</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Erneure nicht in mir die kaum gedämpften Triebe,</l>
+            <l>O Freundinn! Die Natur ist stärker als die Liebe.</l>
+            <l>Ich ruffe nur umsonst Muth und Vernunft zurück:</l>
+            <l>Mein Geist ist ungebeugt; mein Herz weicht dem Geschick.</l>
+            <l>Ich will von der Vernunft Geduld und Trost entlehnen;</l>
+            <l>Doch Gram und Zärtlichkeit siegt noch in meinen Thränen.</l>
+            <l>Da die gequälte Brust von Schmerzen überfließt:</l>
+            <l>Glaubst du noch, daß mein Herz des Medons Tod vergißt?</l>
+            <pb n="3"/>
+            <l>O Sohn, wenn wird es mir der Götter Macht vergönnen,</l>
+            <l>Dich an des Lethe Strand einst wieder sehn zu können?</l>
+            <l>O Sohn, wenn ich bey dir der ersten Jugend Zeit</l>
+            <l>Dem Theseus gleichen sah mit früher Tapferkeit,</l>
+            <l>O wie verlohr mein Geist sich in erträumten Bildern,</l>
+            <l>Und wußte sich vergnügt die Zukunft abzuschildern!</l>
+            <l>Ich glaubte dich zu sehn, von Wuth und Kampf erhitzt,</l>
+            <l>Mit edlem Staub bestreut, mit Heldenblut besprützt;</l>
+            <l>Mit Waffen, die dein Arm den Feinden abgenommen,</l>
+            <l>Aus einer blut'gen Schlacht mit Sieg zurücke kommen.</l>
+            <l>Dir jauchzte das von dir geschützte Vaterland;</l>
+            <l>Dich sang der Jungfraun Chor, das Kränze für dich wand;</l>
+            <l>Entgegen flog ich dir und nahm mit frohen Händen</l>
+            <l>Den Helm von deinem Haupt, das Schwerdt von deinen Lenden;</l>
+            <l>Ich sah mit stillem Stolz die andern Mütter an,</l>
+            <l>Weil sonst kein Jüngling war, der that, was du gethan.</l>
+            <l>Doch ach! mein Traum entfloh, du starbst, nichts blieb zurücke;</l>
+            <l>Auf einmal fiel der Bau von meinem künft'gen Glücke.</l>
+            <l>Ist dieß des Alters Trost? Ist dieß der Sorgen Lohn,</l>
+            <l>Auf den ich sonst gehoft? O Medon, o mein Sohn!</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>Du weinst! ich finde nun in dir die Mutter wieder,</l>
+            <l>Gram und Empfindung schlägt die wilde Großmuth nieder.</l>
+            <l>Komm, laß uns dem Gepräng der stolzen Welt entgehn,</l>
+            <l>Der Welt, in welcher wir den Medon nicht mehr sehn,</l>
+            <l>Komm, laß uns unsern Schmerz und unser Glück vereinen,</l>
+            <l>In eine Wüste ziehn und mit einander weinen;</l>
+            <pb n="4"/>
+            <l>Wo die Natur mit uns um unsern Medon klagt,</l>
+            <l>Wohin kein kühner Schritt sich uns zu stöhren wagt.</l>
+            <l>Dort wollen wir uns ganz in unsern Schmerz versenken,</l>
+            <l>Nichts sprechen, als von ihm, von ihm alleine denken;</l>
+            <l>Bis wir im stillen Ernst des Lebens Rest durchweint,</l>
+            <l>Und ein erwünschtes Grab uns alle drey vereint.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>So bist du stark genug, nach deinem Tod zu streben,</l>
+            <l>Von Gram und Schmerz besiegt? Sey stark genug, zu leben!</l>
+            <l>Die Kleinmuth wünscht den Tod; er endet ihre Pein:</l>
+            <l>Im Unglück leben, kann die Tugend nur allein.</l>
+            <l>Du siehst, ich bin noch stets die Mutter voller Liebe,</l>
+            <l>Mein Schmerz ist ohne Ziel; doch folgen alle Triebe</l>
+            <l>Der Tugend größern Macht, die alles überwand:</l>
+            <l>Wir leben nicht für uns, nein, für das Vaterland.</l>
+            <l>Du bist des Theseus Blut, du mußt den Thron besteigen,</l>
+            <l>Und, liebst du meinen Sohn, dich seiner würdig zeigen.</l>
+            <l>Du liebtest ihn, er dich, ich willigte darein;</l>
+            <l>Nur Codrus oder er konnt deiner würdig seyn:</l>
+            <l>Mein Sohn, weil er gleich dir den Stamm des Theseus zieret;</l>
+            <l>Und Codrus, weil sein Muth das Vaterland regieret.</l>
+            <l>Doch, als der Rath Athens, noch eh der Krieg entbrandt,</l>
+            <l>Den jungen Medon schon nach Theben hingesandt:</l>
+            <l>So fiel er, Götter ach! ihr habt es so beschlossen –</l>
+            <l>Er fiel; von Mördern ward sein edles Blut vergossen.</l>
+            <l>Das Schicksal, das uns stets zu klagen Anlaß gab,</l>
+            <l>Bestimmte dir den Thron, und ihm das frühe Grab.</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>O warum hat das Glück, das über uns ergrimmet,</l>
+            <l>Nicht mir das frühe Grab und ihm den Thron bestimmet?</l>
+          </sp>
+          <pb n="5"/>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>So war der Götter Schluß! du kennst mein zärtlich Herz,</l>
+            <l>Du sahest meinen Gram, du fühltest meinen Schmerz.</l>
+            <l>Ach! er war stark genug, das Leben mir zu rauben,</l>
+            <l>Doch überlebt ich ihn. Kaum kann ichs selber glauben.</l>
+            <l>Es liebt dich Codrus itzt, er fordert deine Hand.</l>
+            <l>Dein Vater, als er starb, befahl uns dieses Band.</l>
+            <l>Und heute, da sich nun der blut'ge Krieg gestillet,</l>
+            <l>In dem die Dorier Athen mit Sorg erfüllet,</l>
+            <l>Heut soll dieß heil'ge Fest von dir vollzogen seyn.</l>
+            <l>Gehorche deiner Pflicht, verbirg ihm deine Pein.</l>
+            <l>Glaubst du, daß wenn mein Sohn, wenn Medon auch noch lebte,</l>
+            <l>Daß seine Zärtlichkeit der Tugend widerstrebte?</l>
+            <l>Sein König liebet dich; er ist ein Unterthan,</l>
+            <l>Obgleich von Theseus Stamm. Wer nicht gehorchen kann,</l>
+            <l>Ist nicht zu herrschen werth. Er würde willig fliehen,</l>
+            <l>Und dich dem Codrus nicht, dir keinen Thron entziehen.</l>
+            <l>Des Codrus hoher Geist, der Volk und Staat erhält,</l>
+            <l>Zu groß für seinen Stand, zu groß für unsre Welt,</l>
+            <l>Macht ihn der Liebe werth. Wie kannst du dich betrüben?</l>
+            <l>Wer nicht die Tugend haßt, muß unsern König lieben.</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>Er ist der Ehrfurcht werth, mehr als der Zärtlichkeit;</l>
+            <l>Für ihn zu sterben, sind Athen und ich bereit.</l>
+            <l>Doch ach! verzeih es mir, ich kann für ihn nicht leben;</l>
+            <l>Und wär ich auch bereit, ihm meine Hand zu geben,</l>
+            <l>Was hilft ihm meine Hand, wenn stets mein Herz betrübt</l>
+            <l>Nur nach dem Tode seufzt, und nur den Medon liebt?</l>
+          </sp>
+          <pb n="6"/>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Wenn nicht mit diesem Leib der Geist im Rauch verschwindet,</l>
+            <l>Wenn Medons Ueberrest im Grabe noch empfindet,</l>
+            <l>So glaub, du stöhrest ihn durch Klagen in der Ruh.</l>
+            <l>Er seufzet, hör ihn an; sein Schatten ruft dir zu,</l>
+            <l>Die Pflicht des Unterthans und deines Vaters Willen</l>
+            <l>Und aller Götter Schluß itzt standhaft zu erfüllen.</l>
+            <l>Laß mich des Theseus Stamm auf unserm Throne sehn;</l>
+            <l>O Freundinn! nur durch dich, durch dich nur kann's geschehn:</l>
+            <l>Da ferne Grüfte itzt mit öden Finsternissen,</l>
+            <l>Dich, Hoffnung von Athen, dich, liebster Sohn, umschliessen,</l>
+            <l>Dich, Medon! letzter Rest von Theseus edlem Blut.</l>
+            <l>Der Himmel gönnte nicht der Erde deinen Muth</l>
+            <l>Und nahm dich freudig auf. Sieh vom Olympus nieder,</l>
+            <l>Und tröste dieses Herz, das du geliebet, wieder,</l>
+            <l>Sie sey des Codrus Glück, du billigst dieses Band;</l>
+            <l>Ich weiß, auch nach dem Tod liebst du dein Vaterland.</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>Du heischst es, harter Schluß! – – Mein Herz mag sich empören;</l>
+            <l>Ich will zum Codrus gehn und ihm die Treue schwören.</l>
+            <l>Die Pflicht, das Vaterland, du heischst es; ich bin sein:</l>
+            <l>Ich geb ihm meine Hand, – – das Herz ist nicht mehr mein.</l>
+            <l>Ach Medon! – – Doch wer kömmt? – – der König – Laß mich fliehen,</l>
+            <l>Und seinem Blicke noch die letzte Thrän entziehen.</l>
+          </sp>
+        </div>
+        <pb n="7"/>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Codrus, Nileus, Elisinde.</stage>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Du scheinest mir bestürzt, und Philaide flieht,</l>
+            <l>Sie weicht erschrocken aus, da sie mich kommen sieht.</l>
+            <l>Sprich, warum flieht sie mich? Kann sie mein Anblick schrecken?</l>
+            <l>Sprich, welches Unglück soll mir ihre Flucht entdecken?</l>
+            <l>Wie grausam ist mein Stand, wie schwehr der Krone Pracht!</l>
+            <l>Wenn sie Vertraulichkeit und Freundschaft schüchtern macht,</l>
+            <l>Wenn Philaide sich aus Zwang mit mir verbindet,</l>
+            <l>Und nicht ihr Glück zugleich in meinem Glücke findet.</l>
+            <l>Prinzeßinn! sahst du nicht ihr Auge voller Zähren,</l>
+            <l>Als sie von hinnen floh, mir ihren Kummer lehren?</l>
+            <l>Sollt meine Zärtlichkeit der Ursprung ihrer Pein,</l>
+            <l>Und unser künft'ges Band der Schmerzen Ursach seyn?</l>
+            <l>Prinzeßinn, eil ihr nach und laß dir offenbaren,</l>
+            <l>Was ihre Seele quält, dann laß es mich erfahren:</l>
+            <l>Vielleicht entreiß ich sie dem Kummer, der sie quält.</l>
+            <l>Ich liebe sie, doch wenn die Gegenliebe fehlt,</l>
+            <l>So ist mein Herz zu groß, sie länger zu betrüben,</l>
+            <l>Und sie zu meiner Quaal und ihrer Pein zu lieben.</l>
+            <l>Ich liebe sie, doch wenn, vom fremden Trieb gestöhrt,</l>
+            <l>Ihr Herz gefesselt ist und andre Flammen nährt;</l>
+            <l>So werd ich zwar mit Schmerz, doch standhaft sie verlieren,</l>
+            <l>Und sie mit heitrer Stirn zu dem Geliebten führen.</l>
+            <l>Die Liebe zwinget mich zu keiner Tyranney;</l>
+            <l>Und da, wo Codrus herrscht, sind alle Herzen frey.</l>
+          </sp>
+          <pb n="8"/>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Und wer kann ungerührt von deiner Großmuth hören?</l>
+            <l>Wer kann dich sehn, o Herr! und muß dich nicht verehren?</l>
+            <l>Wie schön, wie selten ist die Tugend auf dem Thron!</l>
+            <l>Der Philaide Herz sey deiner Großmuth Lohn!</l>
+            <l>Ich eil ihr nachzugehn; sie wird mit heitern Wangen,</l>
+            <l>Von Schmerz und Thränen frey, dich bald als Braut empfangen.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Codrus, Nileus.</stage>
+          <sp who="#nileus">
+            <speaker>Nileus.</speaker>
+            <l>Nur der verschämte Trieb, der sanfte Jugend ziert,</l>
+            <l>Heißt Philaiden fliehn, die doch dein Werth gerührt.</l>
+            <l>Herr! laß von deiner Stirn den Kummer sich zerstreuen,</l>
+            <l>Um diesen heitern Tag den Freuden ganz zu weihen.</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Ich liebe sie, du weists; wer liebt, ist allzeit schwach,</l>
+            <l>Und mein gerührtes Herz flieht Philaiden nach.</l>
+            <l>Doch glücklich wär ich noch, entstünden meine Schmerzen</l>
+            <l>Von Zärtlichkeit allein; – – jedoch in diesem Herzen</l>
+            <l>Tobt noch ein anderer mir unbekannter Gram,</l>
+            <l>Der mit verborgner Furcht mir Ruh und Hoffnung nahm.</l>
+            <l>Sinds Ahndungen? Ists Wahn? Verschwiegne Zähren fliessen,</l>
+            <l>Ich such umsonst mein Herz den Kummer zu verschliessen,</l>
+            <l>Die Schwermuth lispelt mir nur Schrecken in das Ohr.</l>
+            <l>Nein, etwas Großes steht Athen und mir bevor:</l>
+            <l>Ich fürcht es und mit Recht. – O laßt doch euren Willen,</l>
+            <l>Beherrscher unsrer Welt! sich deutlicher enthüllen.</l>
+            <pb n="9"/>
+            <l>Soll dieser große Tag der Ahndung Ausgang sehn,</l>
+            <l>Ihr Götter, wenn ihr zürnt, straft mich und schützt Athen!</l>
+          </sp>
+          <sp who="#nileus">
+            <speaker>Nileus.</speaker>
+            <l>Wie, Herr! Du, den Athen sich immer gleich erblickte,</l>
+            <l>Den keiner Schwermuth Macht tiefsinnig unterdrückte,</l>
+            <l>Bist du wohl Codrus noch? Kein Unfall scheint uns nah,</l>
+            <l>Und der erzittert nun, den ich nie zittern sah!</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Nileus! glaube nicht, daß eitle Furcht mich rühre,</l>
+            <l>Und daß mich nur ein Bild der Phantasey verführe.</l>
+            <l>Ich weiß, ein kleiner Geist ist allzeit unruhvoll,</l>
+            <l>Voll Hitz und Ungeduld; stolz, wenn er zittern soll,</l>
+            <l>Und furchtsam ohne Noth. Ein weiser bleibt gelassen,</l>
+            <l>Erträgt sein günstigs Glück, kann sich in Unglück fassen,</l>
+            <l>Zu sicher ist er nie; doch niemals hoffnungslos,</l>
+            <l>Er bleibt sich selber gleich, und durch sich selber groß.</l>
+            <l>Ich weiß es, und du sahst mich nie schwermüthig zittern;</l>
+            <l>Doch itzt will sich in mir die ganze Welt erschüttern.</l>
+            <l>Die Menschen sind ein Spiel von unbekannter Macht!</l>
+            <l>Noch immer schrecket mich das Bild der letzten Nacht.</l>
+            <l>Es schlief Athen, es schlief der Menschen müder Kummer,</l>
+            <l>Ich selber lag versenkt in ruhig leichtem Schlummer,</l>
+            <l>Als mich ein Traum erschreckt. Ich sah, ich sah Athen,</l>
+            <l>Von Barbarn ganz erfüllt in wilden Flammen stehn.</l>
+            <l>Ich sah die Jünglinge verirrt auf öden Straßen</l>
+            <l>Vor Furcht zerstreut entfliehn, hinsinken und erblassen.</l>
+            <l>Der Pallas Tempel war erzürnter Flammen Raub,</l>
+            <l>Ich sah hier den Pallast bedeckt von Schutt und Staub.</l>
+            <l>Den Säugling sah ich hier, erwürgt von wilden Händen,</l>
+            <l>Den unschuldsvollen Blick zum Himmel sterbend wenden.</l>
+            <pb n="10"/>
+            <l>Der Jungfraun heilig Volk, der Priesterinnen Schaar</l>
+            <l>Lief mit entblöster Brust und mit zerstreutem Haar;</l>
+            <l>Sie suchten sich umsonst der Mordsucht zu verhehlen,</l>
+            <l>Und seufzend und erzürnt entflohn die reinen Seelen.</l>
+            <l>Die Greise sah ich dort von Wehr und Kraft beraubt,</l>
+            <l>Und hin im blut'gen Staub sank ihr ehrwürd'ges Haupt.</l>
+            <l>Erstaunend sah ich es, ich sah die Mauern sinken,</l>
+            <l>Ich sah die Pallas selbst mir aus den Flammen winken,</l>
+            <l>Ich stürzte mich beherzt in ihres Tempels Brand,</l>
+            <l>Die Göttinn zog mich hin, und nahm mich bey der Hand.</l>
+            <l>Der Flammen Glanz vergieng, da schnell vor meinem Blicke</l>
+            <l>Mein Traum entfloh; nur blieb sein Schrecken mir zurücke.</l>
+          </sp>
+          <sp who="#nileus">
+            <speaker>Nileus.</speaker>
+            <l>O Pallas, wende du des Schreckens Ahndung ab!</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Ist Arbas noch nicht hier, dem ich Befehle gab,</l>
+            <l>Den Götter Spruch Apolls in Delphos zu befragen:</l>
+            <l part="I">Schon lang erwart ich ihn.</l>
+          </sp>
+          <sp who="#nileus">
+            <speaker>Nileus.</speaker>
+            <l part="F">Artander ist geschlagen.</l>
+            <l>Und Doris, das nunmehr den Frieden selbst verlangt,</l>
+            <l>Läßt alle Wege frey. Doch daß er angelangt,</l>
+            <l part="I">Ist keinem noch bewußt.</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l part="F">Wo muß er doch verziehen?</l>
+            <l>Es kann vielleicht die Nacht der Ungewißheit fliehen,</l>
+            <l>Die meine Seele quält. Es wird Athen vielleicht</l>
+            <l>Durch diesen Götterspruch sein Schicksal angezeigt.</l>
+          </sp>
+          <pb n="11"/>
+          <sp who="#nileus">
+            <speaker>Nileus.</speaker>
+            <l>Athen hat nicht mehr Recht die Dorier zu scheuen,</l>
+            <l>Und unser letzter Sieg sollt alle Furcht zerstreuen.</l>
+            <l>Artander selber wünscht hier friedlich dich zu sehn,</l>
+            <l>Und alles scheint bereit das Bündniß einzugehn.</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Ja, heute soll ich noch an diesem Ort ihn sprechen!</l>
+            <l>Ein König ist zu groß, um seine Treu zu brechen.</l>
+            <l>Ich fürchte nichts von ihm, und strafe den Verdacht,</l>
+            <l>Der ohne, daß ichs will, mich öfters zweifelnd macht.</l>
+            <l>Verdacht ist für die Furcht, und Argwohn für Tyrannen:</l>
+            <l>Ich suche dieses Bild aus meiner Brust zu bannen.</l>
+            <l>Doch, hat sich dir der Held noch nicht bekannt gemacht,</l>
+            <l>Vor dessen Tapferkeit erst in der letzten Schlacht</l>
+            <l part="I">Der Dorier entfloh?</l>
+          </sp>
+          <sp who="#nileus">
+            <speaker>Nileus.</speaker>
+            <l part="F">Drey Tage sind vergangen;</l>
+            <l>Noch hört man nichts von ihm. Artander war gefangen;</l>
+            <l>Der Lohn war schon bereit für seine Tyranney.</l>
+            <l>Doch, wie man mir gesagt, ließ dieser Held ihn frey.</l>
+            <l part="I">Mehr weiß ich nicht.</l>
+          </sp>
+          <sp who="#ein_soldat">
+            <speaker>Ein Soldat.</speaker>
+            <l part="F">Verzeih, wenn meine Pflicht dich stöhret;</l>
+            <l>Es ist ein Fremder hier, der dich zu sehn begehret.</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>O, wär er es doch selbst! Er komme! Welchen Lohn</l>
+            <l part="I">Bestimmt ihm wohl Athen?</l>
+          </sp>
+        </div>
+        <pb n="12"/>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <stage>Codrus, Nileus, Medon.</stage>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l part="F">Ists Elisindens Sohn?</l>
+            <l>Verführet mich kein Traum? Hat dir ein Gott das Leben,</l>
+            <l>Zum Schutz des Vaterlands, vielleicht zurück gegeben?</l>
+            <l>Bist du es, Medon, du? Trügt mich mein Auge nicht?</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Nein, es ist Medon selbst, er selbst, der mit dir spricht,</l>
+            <l>Der Elisinde Sohn, der seinen König ehret,</l>
+            <l>Den edle Freude nun, erhabne Thränen lehret.</l>
+            <l>Ich war bisher ein Spiel, von wandelbaren Glück,</l>
+            <l>Mich bringt der Götter Macht, nun allzu spät zurück.</l>
+            <l>Warum konnt Medon dich, nicht in die Schlacht begleiten,</l>
+            <l>Und für sein Vaterland, und seinen König streiten?</l>
+            <l>Warum war ich entfernt, und kam nicht früher an,</l>
+            <l>Wo ich nichts als den Rest von Lorbeern erndten kann.</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Den Göttern sey gedankt, die dich uns wieder geben!</l>
+            <l>Sie selber sind besorgt für wahrer Helden Leben;</l>
+            <l>Sie sinds, die dich dem Tod mit mächtger Hand entführt,</l>
+            <l>Die deinen Arm gestärkt, und deinen Muth regiert.</l>
+            <l>Die Proben, die du gabst von deinem edlen Muthe,</l>
+            <l>Verkündigten den Rest von Theseus Heldenblute.</l>
+            <l>Umarme mich, du warsts, du bist derselbe Held,</l>
+            <l>Der in der lezten Schlacht Artanders Stolz gefällt!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Was ich gethan, ist nichts für Vaterland und König,</l>
+            <l>Für meinen Arm genug, und für mein Herz zu wenig.</l>
+          </sp>
+          <pb n="13"/>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Doch welcher Gottheit Macht giebt dich der Welt zurück?</l>
+            <l part="I">Wir weinten längst um dich:</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">Ein unverhoftes Glück</l>
+            <l>Entriß mich der Gefahr, und ließ mir dieses Leben,</l>
+            <l>Es für mein Vaterland einst edler aufzugeben.</l>
+            <l>Du weists, daß mich Athen, noch eh' der Krieg entbrandt,</l>
+            <l>Mit wenigem Gefolg nach Theben hingesandt.</l>
+            <l>Wir eilten muthig fort, und sorgloß für Gefahren;</l>
+            <l>Schnell wurden wir umringt von feindlich stärkern Schaaren.</l>
+            <l>Mich liesen sie verwundt; die Meinen todt zurück.</l>
+            <l>Ich lag empfindungslos. Ein ungefähres Glück</l>
+            <l>Trieb Hirten in den Wald, wo mich der Feind gefunden.</l>
+            <l>Mit mitleidsvoller Hand verbanden sie die Wunden.</l>
+            <l>Ihr menschlich treuer Fleiß verlängerte den Lauf</l>
+            <l>Des matten Lebens noch; ich schloß die Augen auf.</l>
+            <l>Da wandt ich meinen Blick zu den gestirnten Höhen,</l>
+            <l>Um einen edlern Tod die Götter anzuflehen.</l>
+            <l>Sie hörten mein Gebet; ich wurde fort gebracht,</l>
+            <l>Und kam in Theben an in unbekannter Tracht.</l>
+            <l>Dort fühlt ich, daß die Macht der Götter mich regierte.</l>
+            <l>Ich merkte, daß mein Flehn das Volk von Theben rührte.</l>
+            <l>Es zog ein muthges Heer Beotier mit mir.</l>
+            <l>Sie folgen mir; sie sind in wenig Tagen hier.</l>
+            <l>Ich kam dem Heer zuvor, begierig diese Mauern</l>
+            <l>Bald wiederum, zu sehn, die Medons Tod bedauern.</l>
+            <l>Ich weiß nicht, welche Macht uns an dem Ort entzückt,</l>
+            <l>Wo wir das Licht der Welt zum erstenmal erblickt?</l>
+            <pb n="14"/>
+            <l>Die Luft muß süsser seyn, die Sonne heitrer scheinen,</l>
+            <l>Es lacht ein heller Grün aus den bekannten Haynen.</l>
+            <l>Der den Athen gebahr, stirbt freudig für Athen.</l>
+            <l>Voll Freude muß ich heut das Fest des Friedens sehn,</l>
+            <l>Ich fey'r es mit der Stadt, obschon bereit zum Kriege.</l>
+            <l>Mehr ist ein Friede werth als unzählbare Siege.</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>So denkt ein wahrer Held der Durst nach Ruhm und Blut</l>
+            <l>Erhitzt manch niedres Herz, ist Wildheit und nicht Muth.</l>
+            <l>Die rauhe Tapferkeit, die nichts verehrt, als Waffen,</l>
+            <l>Erlaubt der Himmel bloß, die Sterblichen zu strafen.</l>
+            <l>Der ist ein wahrer Held, der Völkern Ruhe schaft</l>
+            <l>Er ist mehr, als ein Fürst; denn er ist tugendhaft.</l>
+            <l>Doch große Herzen sind die zärtlichsten – – Die Triebe</l>
+            <l>Von Elisindens Herz, die mütterliche Liebe</l>
+            <l>Erwarten dich, ich geh, – – Jedoch hier kommt sie schon.</l>
+            <l>Prinzessinn, nahe dich, empfange deinen Sohn,</l>
+            <l>Den Stolz Athens, er lebt, ergebt euch eurer Freude!</l>
+            <l>Ich las euch, seyd vergnügt und dankt dem Himmel beyde.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <stage>Elisinde, Medon.</stage>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Wo bin ich? Leb ich noch? O Medon! seh ich dich!</l>
+            <l>Er ist es! Götter! Ja! – Er ists – umarme mich! –</l>
+            <l part="I">O Medon! O mein Sohn!</l>
+          </sp>
+          <pb n="15"/>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">Ihr Götter! Elisinde!</l>
+            <l>Sie sinkt! – Entreißt sie nicht, da ich sie wieder finde!</l>
+            <l>Prinzessinn! Bin ich wohl so großer Liebe werth?</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Du bists, du lebst! mein Sohn, mehr hab ich nicht begehrt!</l>
+            <l>Nun nehmt mein Leben hin, ihr Götter! Meine Freude,</l>
+            <l>Ist für mein Herz zu groß, zu schnell nach meinem Leide.</l>
+            <l>Ihr Götter! Die ihr mich und meinen Schmerz gesehn,</l>
+            <l>Kaum hätt' ich es gewagt, euch darum anzuflehn.</l>
+            <l part="I">Du lebest noch, mein Sohn!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">Des Todes Finsternissen,</l>
+            <l>Die sich schon näherten, hat mich das Glück entrissen,</l>
+            <l>Vielleicht dazu bestimmt, daß künftig meine Hand</l>
+            <l>Den Göttern dienen soll und unserm Vaterland.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Allein durch welchen Weg bist du dem Tod entgangen?</l>
+            <l>Von welchem mächt'gen Gott hat Medon Schutz empfangen?</l>
+            <l>Schon glaubte dich Athen ein Opfer fremder Wuth.</l>
+            <l>Die Deinen fand man todt. – du bist von Theseus Blut;</l>
+            <l>Durch Niederträchtigkeit erhieltst du nicht dein Leben!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Nein, Elisinde! Nein, bereit es hin zu geben,</l>
+            <l>Entweihete dein Sohn den Ruhm der Ahnen nicht.</l>
+            <l>Nein! – doch verzeih, daß dich die Sehnsucht unterbricht.</l>
+            <l>Verzeih dem heftigsten und tugendhaftsten Triebe!</l>
+            <l>Lebt Philaide noch? Denkt sie an meine Liebe?</l>
+            <pb n="16"/>
+            <l>Wo ist sie? – Ist sie todt? Ist sie mir ungetreu?</l>
+            <l>Ich zittre! dein Gesicht entfärbet sich hierbey.</l>
+            <l>Du schweigst – Entdecke mir, was ich zu fürchten habe!</l>
+            <l>Riß mich der Götter Macht nur darum aus dem Grabe,</l>
+            <l>Damit ein ärgrer Tod mich hier erwarten soll?</l>
+            <l>Entdecke mein Geschick! Mein Herz ist schreckensvoll.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Sie lebt. – Doch welcher Ort hielt dich bisher verborgen?</l>
+            <l>Bedachtest du getreu die dir befohlnen Sorgen?</l>
+            <l>Kamst du nach Theben hin, und kommst allein zurück?</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Ich kam nach Theben, ja – Warum schloß das Geschick</l>
+            <l>Nicht eher dieses Aug mit ew'gen Finsternissen?</l>
+            <l>Ach Elisinde! sprich, laß mich mein Schicksal wissen!</l>
+            <l>Es rühre dich mein Schmerz, es rühre dich dein Sohn!</l>
+            <l>Sie lebt, und liebt mich nicht! Ist dieß der treue Lohn?</l>
+            <l>Sie liebet mich nicht mehr; dieß saget mir dein Schweigen.</l>
+            <l>Aus Mitleid säumst du dich, mein Unglück anzuzeigen.</l>
+            <l part="I">Wem opfert sie mich auf? Sprich!</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="F">Medon! hast du Muth?</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Gott! welche Frage! – Sprich, wo mein vergoßnes Blut</l>
+            <l>Es dir bezeugen soll, daß ich es nicht entweihe?</l>
+            <l>Daß ich dein Sohn noch bin? Daß ich den Tod nicht scheue?</l>
+            <l>Wer ists, der meinem Ruhm verläumdrisch schaden kann?</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Ein großer Krieger ist nicht stets ein großer Mann.</l>
+            <pb n="17"/>
+            <l>Aus Ruhmsucht oder Stolz kann man sein Leben wagen;</l>
+            <l>Mehr Muth gehört dazu, sein Unglück zu ertragen.</l>
+            <l>Der wahre Muth bleibt oft am meisten unbekannt;</l>
+            <l>Im Hertzen ist sein Sitz und nicht in unsrer Hand.</l>
+            <l>Sprich, hast du Muth genug, mich ruhig anzuhören?</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="I">Ich bin dazu bereit.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="F">Wer naht sich uns zu stören?</l>
+            <l part="I">Komm – –</l>
+          </sp>
+          <sp who="#eine_wache">
+            <speaker>Eine Wache.</speaker>
+            <l part="M">Philaide kömmt, Prinzessinn!</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde</speaker>
+            <stage>zu Medon.</stage>
+            <l part="F">Bleibe hier!</l>
+            <l part="I">Ich eile!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="M">Wie? Sie kömmt? Sie selbst?</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="F">Du folgest mir?</l>
+            <l part="I">Erwart mich!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">Himmel wie? So soll ich sie nicht sehen!</l>
+            <l part="I">Ihr Götter! Welch Geschick! – –</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="F">Jetzt kann es nicht geschehen,</l>
+            <l part="I">Bleib hier!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="M">So kann mein Schmerz – –</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="F">Ist dieses Medons Muth?</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Verzeihe, Grausame, betrogner Liebe Wuth;</l>
+            <pb n="18"/>
+            <l>Ich kenne mich nicht mehr. Der Schmerz den ich empfinde – –</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Bist du wohl Medon noch? Bin ich noch Elisinde?</l>
+            <l>Gilt mein Befehl bey dir? Hast du dein vor'ges Herz?</l>
+            <l>Gehorche! bleib zurück! – Wie rührt mich nicht sein Schmerz!</l>
+            <stage>(Sie geht ab)</stage>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon</speaker>
+            <stage>alleine.</stage>
+            <l>So kann der Menschen Glück nur Augenblicke dauern!</l>
+            <l>Ihr Götter dieses Orts! ihr väterliche Mauern!</l>
+            <l>Wie freudig war ich nicht, als ich euch wieder sah!</l>
+            <l>Und meiner Freude war der stärkste Schmerz so nah!</l>
+            <l>Warum erhielt das Glück mein unglückseligs Leben?</l>
+            <l>Ich hätt es in der Schlacht vergnügter aufgegeben.</l>
+            <l>Der Ungewißheit Stand ist allzu schreckensvoll!</l>
+            <l>Entdeckt mir wenigstens, was ich beklagen soll!</l>
+            <l>Ihr Götter! rührt euch nicht der zärtlichste der Triebe?</l>
+            <l>Nehmt Ruhm und Glücke hin, verschont nur meine Liebe.</l>
+          </sp>
+        </div>
+      </div>
+      <div type="act">
+        <head>Zweyter Aufzug</head>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>Elisinde, Medon.</stage>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Nun kennst du dein Geschick! Du dauerst mich! Allein</l>
+            <l>Bewundert will ein Held und nicht bedauert seyn,</l>
+            <l>Wenn ihn ein Unglück trifft. Nie kann er unterliegen</l>
+            <l>Er fühlet seinen Schmerz; doch kann er ihn besiegen.</l>
+            <pb n="19"/>
+            <l>Gehorche deiner Pflicht. Es freut sich ganz Athen,</l>
+            <l>Des Theseus würd'ges Blut auf unserm Thron zu sehn.</l>
+            <l>Du weist, ich liebe dich, ich liebe Philaiden.</l>
+            <l>Sie war für dich bestimmt; das Glück hat euch geschieden,</l>
+            <l>Gehorche dem Geschick. Es rührt mich deine Pein:</l>
+            <l>Kein Sieg kann ohne Streit und ohne Schmerzen seyn,</l>
+            <l>Der Tugend Bahn ist voll von Arbeit und Beschwerden:</l>
+            <l>Du bist ein Unterthan; sey werth, ein Fürst zu werden.</l>
+            <l part="I">Lern dich beherrschen!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">O! wie schwer ist diese Pflicht!</l>
+            <l>Zwar kämpfen kann mein Herz, doch siegen kann es nicht.</l>
+            <l>Nur bey den Göttern steht der Menschen Glück und Leben!</l>
+            <l>Sie haben ihre Macht den Königen gegeben,</l>
+            <l>Die herrschen über uns. Der Menschen Lust und Schmerz</l>
+            <l>Steht oft in ihrer Macht; doch niemals unser Herz.</l>
+            <l>Nur dieß wird stets regiert von unbekanntem Triebe.</l>
+            <l>Kein König und kein Gott herrscht über unsre Liebe.</l>
+            <l>Mein Leben geb ich gern für meinen König hin;</l>
+            <l>Du weist, ob ich bisher ihm treu gewesen bin!</l>
+            <l>Doch meine Liebe werd ich nie besiegen können;</l>
+            <l>Es kann mich kein Geschick von Philaiden trennen.</l>
+            <l>Verzeih, bedaure selbst den unglücksvollen Sohn!</l>
+            <l>Liebt Philaide mich, so schätzt sie keinen Thron,</l>
+            <l>Und wird vergnügt mit mir, um mir getreu zu bleiben.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Auch niederträchtig seyn, und sich durch Wahn betäuben;</l>
+            <l>Der Tugend Zuruf fliehn, der Tugend, die uns lehrt,</l>
+            <l>Der Liebe widerstehn, wenn sie die Pflichten stört?</l>
+            <l>Will Medon, will ein Held, den hundert Siege zieren,</l>
+            <l>Die Herrschaft über sich, den schönsten Sieg verlieren?</l>
+            <pb n="20"/>
+            <l>Durch Philaidens Pflicht wird dir ihr Herz entwandt.</l>
+            <l>Ihr Vater als er starb, befahl ihr dieses Band.</l>
+            <l>Du willst, sie soll gleich dir der Tugend widerstreben,</l>
+            <l>Und suchst dein Unglück noch dem Himmel Schuld zu geben.</l>
+            <l>Vielleicht ist sie so schwach, daß sie sich dir ergiebt,</l>
+            <l>Und mit dir fliehen will! Sie ist ein Weib, und liebt.</l>
+            <l>Du solltest stärker seyn und durch dein Beyspiel zeigen,</l>
+            <l>Kein Unglück könn ein Herz, das edel denket, beugen.</l>
+            <l>Du solltest standhaft seyn. Die Liebe tad'l ich nicht;</l>
+            <l>Sie herrsche, wo sie will, doch weiche sie der Pflicht!</l>
+            <l>Ermuntre dich, mein Sohn! Schlag nicht die Hoffnung nieder,</l>
+            <l>Die wir von dir gefaßt: sey endlich Medon wieder.</l>
+            <l>Vernunft und Weisheit stillt der Leidenschaften Krieg,</l>
+            <l>Und selbst der Tugend Schmerz verschönert ihren Sieg.</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Mein Herz ist allzu schwach für deine strengen Lehren.</l>
+            <l>Mein Unrecht fühl ich zwar; doch nur die Pein zu mehren.</l>
+            <l>Ihr Götter! lenket mich, mein Unglück kömmt von euch,</l>
+            <l>Mein ungewisses Herz verzagt bey diesem Streich!</l>
+            <l>Ihr könnt mir zwar den Muth, sie zu verlieren, geben</l>
+            <l>Jedoch nicht Muth genug, nach dem Verlust zu leben.</l>
+            <l>Mein allzu zärtlich Herz hat hiezu keine Kraft,</l>
+            <l part="I">Mein Tod wird mich befreyn!</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="F">Stirb! und sey tugendhaft!</l>
+            <l>Dieß ist des Lebens Zweck. Erkenne meine Liebe,</l>
+            <l>Und meine Zärtlichkeit aus eben diesem Triebe,</l>
+            <pb n="21"/>
+            <l>Der dir nun grausam scheint. Mein mütterliches Herz</l>
+            <l>Seufzt heimlich, wenn du weinst, und fühlet deinen Schmerz.</l>
+            <l>Ich leide mehr, als du! Wie gern wollt ich mein Leben,</l>
+            <l>Dich glücklicher zu sehn, dem Himmel wieder geben!</l>
+            <l>Doch, wenn die Tugend spricht, so schweigt mein Kummer still;</l>
+            <l>Ich kann dich sterben sehn, wenn es die Tugend will.</l>
+            <l>Ein edler Tod ist mehr als ein entweyhtes Leben;</l>
+            <l>Doch wahre Tugend muß der Schwermuth widerstreben,</l>
+            <l>Sey muthig! Kleinmuth nur verzaget bey der Pein.</l>
+            <l part="I">Zu was entschließst du dich? Sprich!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">Deiner werth zu seyn,</l>
+            <l>Ich weiß nicht, welcher Geist, der jedes Wort belebet,</l>
+            <l>Mein Herz mit neuem Stolz bey deiner Red erhebet!</l>
+            <l>Der Gottheit Stimme gleich, dringt nun dein mächtges Wort</l>
+            <l>Durch mein bestürztes Herz und weckt die Tugend dort.</l>
+            <l>Ich fühl ein edles Feur in meinem Busen glühen,</l>
+            <l>Ich will Athen, mich selbst und Philaiden fliehen.</l>
+            <l>Sie lieben werd ich stets, doch traurig und allein,</l>
+            <l>Fern von Athen und ihr. Sie soll des Codrus seyn.</l>
+            <l>Ich willige darein; ich flieh! Für meinen König</l>
+            <l>Und für mein Vaterland ist noch mein Leben wenig,</l>
+            <l part="I">Ich geb es willig hin.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="F">Sieh, Theseus, seinen Muth!</l>
+            <l>Er ist der Ruhm Athens, mein Stolz, dein würdges Blut!</l>
+            <l>Umarme mich mein Sohn! Mich schmerzt, dich zu entfernen!</l>
+            <l>Jedoch du sollst von mir dem Glück entsagen lernen,</l>
+            <pb n="22"/>
+            <l>Das man am höchsten schäzt. Sey glücklich, fern von mir!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Ein letztes einz'ges Glück erbitt ich noch von dir!</l>
+            <l>Noch einmal führe mich zur traur'gen Philaide,</l>
+            <l>Und wenn dereinst mein Geist, beständ'ger Schmerzen müde,</l>
+            <l>Vielleicht in kurzer Zeit befreyt den Leib verläßt,</l>
+            <l>Dann bring ihr mitleidsvoll des Medons traur'gen Rest,</l>
+            <l>Die Asche weinend hin, und wehre nicht den Thränen,</l>
+            <l>Die sie vielleicht vergießt, den Schatten zu versöhnen.</l>
+            <l>Noch eh der Tag verstreicht, will ich von hier schon geh'n.</l>
+            <l>Laß mich zum letztenmal noch Philaiden seh'n,</l>
+            <l>Das letzte Lebewohl aus ihrem Munde hören.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Wird deine Schwachheit nicht den edlen Vorsatz stören?</l>
+            <l>Bist du wohl stark genug, den Abschied auszusteh'n?</l>
+            <l>Vorhin verbot ich dir, sie noch einmal zu seh'n;</l>
+            <l>Ich scheute deinen Schmerz. Sie weiß von deinem Leben,</l>
+            <l>Sie weint, doch sie kann nicht der Schickung widerstreben.</l>
+            <l>Nun ist sie Codrus Braut. Allhier erwart ich sie!</l>
+            <l>Du weinest! Sey mein Sohn! Schon naht sie sich. Entflieh,</l>
+            <l>Wenn dir die Stärke fehlt! Jetzt mußt du standhaft scheinen.</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Mein Schmerz ist allzu groß, um jetzo noch zu weinen.</l>
+            <l>O Tugend, mach mein Herz bey diesem Anblick fest!</l>
+            <l>Verzeih' o Vaterland! der Schwachheit letzten Rest;</l>
+            <l>Verzeihe, wenn dieß Herz nun doppelt schneller schläget</l>
+            <l>Wenn sich ein eitler Wunsch in stillen Seufzern reget.</l>
+            <pb n="23"/>
+            <l>Verhüte wenigstens, daß wenn mein Herz sich zwingt</l>
+            <l>Der Schwachheit Zähre nicht aus meinen Augen dringt.</l>
+            <l>Ich würde sie ja selbst durch meinen Schmerz betrüben.</l>
+            <l>Ich bin nicht schwach genug, mein Glück in ihr zu lieben!</l>
+            <l>Ihr eignes Glück allein war meiner Wünsche Ziel.</l>
+            <l>Mein Leben acht ich nicht, und ihres ist mir viel.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Mich rührt dein edler Muth. Ich fühle selbst dein Leiden;</l>
+            <l>Ich weine itzt zugleich aus Schmerzen und aus Freuden.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Philaide, Elisinde, Medon.</stage>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>O Medon seh ich dich! Bist du es? Bringt das Glück</l>
+            <l>Den Helden, den mein Herz beständig liebt, zurück?</l>
+            <l>Beglückter Augenblick! obschon vermengt mit Schmerzen!</l>
+            <l>Dein Angedenken riß kein Zufall aus dem Herzen.</l>
+            <l>Die Welt schien mir betrübt, weil meine Furcht geglaubt,</l>
+            <l>Daß dich der Götter Zorn ihr schon so schnell geraubt.</l>
+            <l>Du lebst! Ein Irrthum nur ließ dich als todt beweinen!</l>
+            <l>Von nun an seh' ich erst die Sonne wieder scheinen</l>
+            <l>Von nun an seh ich erst den Frühling wieder blüh'n.</l>
+            <l>Mein Medon nur allein schmückt und verschönert ihn.</l>
+            <l>Wie viel – du weist es wohl – <stage>(zu Elisinden)</stage> wie viel hab ich
+              gelitten?</l>
+            <l><stage>(zu Medon)</stage> Selbst Elsinde hat den Schmerz umsonst bestritten!</l>
+            <l><stage>(zu Elisinde)</stage> Hast du es ihn gesagt? – Jedoch du redest nicht.</l>
+            <l>Du weinst. Ein finstrer Gram entstellet dein Gesicht.</l>
+            <pb n="24"/>
+            <l>Ihr Götter! Ach! Er staunt! Er scheut mich zu empfangen,</l>
+            <l>Und langsam rollen ihm die Thränen von den Wangen.</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Wie glücklich bin ich nicht dich noch einmal zu sehn!</l>
+            <l>Du liebst mich! dieß ist gnug, vergnügt zum Tod zu gehn.</l>
+            <l>Des Himmels Schluß befiehlt, daß wir uns wieder scheiden,</l>
+            <l>Doch große Herzen sind bestimmt um hier zu leiden.</l>
+            <l>Der Menschheit gröstes Glück ist tugendhaft zu seyn,</l>
+            <l>Und eben dieses Glück wird oft zu unsrer Pein.</l>
+            <l>Alcid und Philoctet, und selbsten Theseus waren</l>
+            <l>Stets irrend, unbeglückt, verwickelt in Gefahren:</l>
+            <l>Doch statt des niedern Glücks erwartete der Lohn,</l>
+            <l>Der wahrer Tugend folgt, auf dem Olymp sie schon.</l>
+            <l>Auch wir, wir sind bestimmt auf dieser Bahn zu gehen,</l>
+            <l>Durch unsrer Liebe Schmerz die Tugend zu erhöhen.</l>
+            <l>In einer bessern Welt will ich dich wieder sehn.</l>
+            <l>Die Tugend helfe dir den Abschied überstehn,</l>
+            <l>Ich folge meiner Pflicht: nie wirst du mich erblicken.</l>
+            <l>Ein fremdes Erdreich wird des Medons Asche drücken.</l>
+            <l>Du bist des Codrus nun, und er ist deiner werth.</l>
+            <l>Doch, wenn dich das Geschick zu seiner Braut erklärt,</l>
+            <l>Wenn goldner Kronen Pracht die schöne Stirne zieret,</l>
+            <l>Wenn dich der Glanz umstrahlt, der Fürsten oft verführet,</l>
+            <l>Wenn prächt'ger Unruh voll, die Freude dich umgiebt,</l>
+            <l>Vergiß, vergiß nicht ganz, daß Medon dich geliebt.</l>
+            <l>Sprich! Medon liebte mich mehr, als sein eignes Leben.</l>
+            <l>Für Vaterland und Pflicht hat er mich hingegeben.</l>
+            <pb n="25"/>
+            <l>Kein Jüngling lebt, der ihm an Lieb und Schmerzen gleicht.</l>
+            <l>Ruh sanft, Unglücklicher! Die Erde sey dir leicht!</l>
+            <l>Ruh sanft, Unglücklicher! Zum Lohn für deine Treue</l>
+            <l>Nimm diese Thräne hin, die ich der Schwermuth weyhe.</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>Was sagst du? Bist auch du so grausam, als das Glück?</l>
+            <l>Du willst, du kannst mich fliehn? Grausamer denk zurück!</l>
+            <l>An unser vor'ges Glück, an das, was du geschworen.</l>
+            <l>So lebst du Medon, ach! und bist für mich verlohren!</l>
+            <l>So bist du nicht mehr mein, und ich, ich lebe noch?</l>
+            <l>Du liebst mich, wie du sagst, und du verläßst mich doch?</l>
+            <l>Liebst du mich in der That, so kann uns nichts mehr trennen.</l>
+            <l>Die, die für dich gelebt, wird mit dir sterben können.</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Ich bleiben? Sollt ich dich in fremden Armen sehn,</l>
+            <l>Könnt ich der Eifersucht noch länger widerstehn?</l>
+            <l>Kein Mittel bleibet mir, als dieß mich zu entfernen.</l>
+            <l>Da uns der Himmel trennt, sollst du mich kennen lernen.</l>
+            <l>Nicht höher schätz ich dich, als Tugend, Ehr und Pflicht;</l>
+            <l>Jedoch so hoch als dich, schätz ich mein Leben nicht.</l>
+            <l part="I">Die Tugend heißt mich fliehn.</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l part="F">Und mich, mich heißt sie sterben.</l>
+            <l>Ich kann der Götter Hülf und Mitleid nicht erwerben.</l>
+            <l>Du fliehst mich, Medon, du! Nichts bleibt mir mehr zurück.</l>
+            <l>Ist nun dein Zorn erschöpft, tyrannisches Geschick!</l>
+            <pb n="26"/>
+            <l>Entreisse diesen Geist, der längst zu seufzen müde,</l>
+            <l part="I">Bald der verhaßten Welt! du siegest – –</l>
+            <stage>(sie sinkt Elisinden in die Arme)</stage>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <stage>(der sich ihr zu Füssen wirft.)</stage>
+            <l part="F">Philaide.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Betrübte Zärtlichkeit! was kostest du für Pein!</l>
+            <l part="I">Sey standhaft, Sohn!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">Sie weint, und ich soll standhaft seyn!</l>
+            <l>Ich kann, ich kann dem Schmerz nicht länger widerstehen!</l>
+            <l><stage>(zu Phil.)</stage> Zu deinen Füssen hier sollst du mich sterben sehen.</l>
+            <l>Nur weine nicht; dein Schmerz besieget meinen Muth,</l>
+            <l>Die Thränen die du weinst, erkauf ich gern mit Blut.</l>
+            <l part="I">O Schmerz! O Zärtlichkeit! – –</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l part="F">So soll ich dich verliehren?</l>
+            <l>So läßt der Himmel sich durch unsre Quaal nicht rühren?</l>
+            <stage>(richtet den Medon auf)</stage>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Unglücklichs Paar! das nun die Schickung ausersehn,</l>
+            <l>Der Liebe größten Schmerz beherzt zu überstehn,</l>
+            <l>Laßt eure Herzen nicht dem Unglück unterliegen!</l>
+            <l>Besiegt euch, um den Zorn der Götter zu besiegen!</l>
+            <l>Steh auf mein Sohn, dein Schmerz und deiner Liebe Pein</l>
+            <l>Wird bey der Nachwelt noch der Großmuth Beyspiel seyn!</l>
+            <l>Und du, die das Geschick zum Herrschen ausersehen,</l>
+            <l>Leb, wenn du herrschen wirst, der Tugend beyzustehen:</l>
+            <pb n="27"/>
+            <l>Dieß sey dein bester Trost, du warst dazu bestimmt.</l>
+            <l>Ersticket diesen Trieb, der euch den Muth benimmt.</l>
+            <l>Flieht, und verlängert nicht des Abschieds traur'ge Stunden!</l>
+            <l>Dieß Zaudern mehret nur den Schmerz, den ihr empfunden.</l>
+            <l>Ich seh euch standhaft zu; doch leid ich mehr, als ihr.</l>
+            <l>Zu weinen ist ein Trost, und ich versag ihn mir.</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>So war mein Herz bestimmt so viele Quaal zu leiden!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>So mußte das Geschick zwey solche Herzen scheiden!</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l part="I">Ich soll dich nicht mehr sehn?</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">Ich soll dich ewig fliehn!</l>
+            <l>Doch wird ein früher Tod mich bald der Quaal entziehn.</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>Und ich – kann mir mein Schmerz den Tod nicht eher geben,</l>
+            <l>Und ich verspreche dir, dich nicht zu überleben.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Es ist zum Scheiden Zeit: bald wird sich Codrus nah'n.</l>
+            <l>Itzt kündigt Phorbas ihm den Spruch der Götter an.</l>
+            <l>Ich sah ihn, als er kam. Der Kummer eurer Herzen</l>
+            <l>Wächst durch die Thränen nur, und Klagen mehrt die Schmerzen.</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>Grausame! kürze doch die schnellen Stunden nicht!</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Ich heiß ihn nicht entfliehn! Geschick und Tugend spricht;</l>
+            <pb n="28"/>
+            <l part="I">Es ist zum Abschied Zeit.</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">Ich folge dem Geschicke!</l>
+            <l>Ich zittre! welche Nacht benebelt meine Blicke!</l>
+            <l>Es hemmt ein tödtlich Eis mein Blut in seinem Lauf.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>O Götter! richtet ihn in seinen Schmerzen auf!</l>
+            <l>Mein Muth entweicht, mein Herz ist seiner Stärke müde.</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>O mein verlohrnes Glück! o liebste Philaide!</l>
+            <stage>(Er küßt ihr die Hand.)</stage>
+            <l part="I">Leb wohl, leb ewig wohl!</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l part="F">O Medon! o Geschick!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>O warum überlebt dein Medon diesen Blick!</l>
+            <stage>(Elisinde umarmet ihn.)</stage>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Sohn! lebe wohl, und nimm die letzten Wehmuthszeichen</l>
+            <l>Der mütterlichen Treu. Willst du den Helden gleichen,</l>
+            <l>Vom Theseus lerne nur, wie man Tyrannen dämpft:</l>
+            <l>Von mir hast du gelernt, wie man sich selbst bekämpft!</l>
+            <l>Denk an mich, fahre fort, und laß dein würdig Leben</l>
+            <l>Von wahrer Tapferkeit der Welt ein Beyspiel geben.</l>
+            <l>Besiege dich zuerst und jede Leidenschaft.</l>
+            <l>Dann siege, sey ein Held! Sey mehr, sey tugendhaft!</l>
+            <l>Ihr Götter! steht ihm bey und leitet seine Jugend,</l>
+            <l>Vermindert seinen Schmerz! Er leidet ihn aus Tugend;</l>
+            <l>Und wenn ihr ihm auch nicht des Nachruhms Lob gewährt,</l>
+            <l>Nur darum bitt ich euch, macht ihn des Nachruhms werth.</l>
+            <l>Die stille Tugend sey der stärkste seiner Triebe!</l>
+            <l>Sohn denk entfernt von mir, an Elisindens Liebe – –</l>
+            <pb n="29"/>
+            <l>Leb wohl, nichts hält dich mehr; die Zeit ist schon entflohn.</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="I">Prinzeßinn, lebe wohl.</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l part="M">Ich sterbe.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="F">Flieh mein Sohn!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Ich fliehe, doch du mußt die letzte Bitte hören,</l>
+            <l>Steh Philaiden bey, such ihrem Schmerz zu wehren!</l>
+            <l>Ich flieh, es ist geschehn, der trotzet jeder Noth,</l>
+            <l>Der nichts mehr wünschen kann, als einen edlen Tod.</l>
+            <stage>(geht ab)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Elisinde, Philaide.</stage>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Es ist geschehn! – – Er flieht! – O könnt ich einsam weinen –</l>
+            <l>Wie schwer! – – Wie bitter ists, den andern standhaft scheinen,</l>
+            <l>Wenn unser Herz der Macht des Schmerzens unterliegt!</l>
+            <l><stage>(zu Philaiden)</stage> Sey standhaft! Medon floh, die Tugend hat gesiegt.</l>
+            <l>Noch einen schönern Sieg muß sie bey dir erwerben</l>
+            <l part="I">Im Tempel –</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide,</speaker>
+            <stage>die sich auf einmal ermuntert, und der Scene zuläuft, wo Medon
+              abgegangen.</stage>
+            <l part="F">Ist er fort? – – o Medon, sieh mich sterben.</l>
+            <pb n="30"/>
+            <l>Grausamer komm zurück! <stage>(zu Elisinden, die sie zurück hält.)</stage> Laß mich –
+              – er ist entflohn!</l>
+            <l>Du hältst mich noch zurück, du weinst nicht um den Sohn,</l>
+            <l>Grausames hartes Herz! – Ich will zum Tempel gehen;</l>
+            <l>Ja dorten sollst du mich an Codrus Seiten sehen.</l>
+            <l>Doch soll zugleich ein Dolch mich von der Lebens Pein</l>
+            <l>Von meiner Liebe Schmerz – von deinem Blick befreyn.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Wie rührst du mich! dein Schmerz verdoppelt nur den meinen – –</l>
+            <l>Durch Tugend wird das Glück besiegt und nicht durch Weinen.</l>
+            <l part="I">Ich weine nicht.</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l part="F">Dein Herz, dein Auge widerspricht,</l>
+            <l>Und weinend sagst du mir umsonst: ich weine nicht.</l>
+            <l>Warum, da dich der Schmerz so heftig eingenommen –</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>O Himmel, fasse dich! Ich seh den König kommen.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <stage>Codrus, Nileus, Elisinde, Philaide.</stage>
+          <sp who="#codrus">
+            <speaker>Codrus</speaker>
+            <stage>zu Philaide.</stage>
+            <l>Prinzeßinn! diesen Tag wollt' ich zwar glücklich seyn,</l>
+            <l>Er war dazu bestimmt. Des Hymens Fackeln Schein</l>
+            <l>Erhellt den Tempel schon; schon tönen frohe Lieder.</l>
+            <l>Doch darf ichs sagen? Ach! der Himmel scheint zuwider.</l>
+            <l>Ahndungen, die mir drohn, erfüllen dieses Herz</l>
+            <l>Mit Sorge für Athen und unbekanntem Schmerz.</l>
+            <pb n="31"/>
+            <l>Selbst deine Traurigkeit hilft meinen Kummer stärken.</l>
+            <l>Ich muß auf deiner Stirn noch Schmerz und Gram bemerken.</l>
+            <l>Vielleicht enthüllet sich der Zukunft Dunkelheit</l>
+            <l>In wenig Tagen schon, vielleicht geschieht es heut.</l>
+            <l>Doch denke, welcher Schmerz ists nicht für meine Liebe,</l>
+            <l>Wenn ich für diesen Tag des Hymens Fest verschiebe?</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>Von Ahndungen bestürzt, fühlt lange schon mein Herz</l>
+            <l>Auch keine Leidenschaft, als Schrecken oder Schmerz.</l>
+            <l>Ich sehe, daß auch dich versteckte Sorgen kränken:</l>
+            <l>Ich geh, in Einsamkeit den meinen nachzudenken.</l>
+            <stage>(geht nebst Elisinden ab.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <stage>Codrus, Nileus.</stage>
+          <sp who="#nileus">
+            <speaker>Nileus.</speaker>
+            <l>Wie, Herr! du selbst verschiebst des Hymens festes Band!</l>
+            <l>Welch Unglück drohet dir und unserm Vaterland?</l>
+            <l>Bestürzt die Nachricht dich, die Phorbas dir entdecket?</l>
+            <l>Ist es der Götter Spruch, der deinen Kummer wecket?</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Nileus! fürchte nichts, Athen soll siegreich seyn!</l>
+            <l>Der Götter Rath versprichts, und ihr habt nichts zu scheun.</l>
+            <l>Was sonst ihr Wille sey, dieß muß ich itzt verschweigen.</l>
+            <l>Vielleicht wird heute noch sich die Erfüllung zeigen.</l>
+            <l>Ich kann nun meinen Traum schon deutlicher verstehn:</l>
+            <l>Doch kann ich durch die Nacht der Schickung noch nicht sehn</l>
+            <pb n="32"/>
+            <l>Ich weiß noch nicht, wodurch – Jedoch ich bin zufrieden,</l>
+            <l>Ich weiß genug, mein Herz hat alles schon entschieden.</l>
+            <l>Die Wohlfahrt von Athen, Nileus, steht bey mir:</l>
+            <l part="I">Dieß ist der Götter Spruch.</l>
+          </sp>
+          <sp who="#nileus">
+            <speaker>Nileus.</speaker>
+            <l part="F">Steht unser Glück bey dir,</l>
+            <l>So fürchten wir nichts mehr: doch statt der heitern Freude,</l>
+            <l>Scheint mir dein Herz erfüllt von Gram und stillem Leide.</l>
+            <l>Warum verschiebt dein Schluß den schönsten Augenblick?</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Ich leide nicht, o Freund, ich danke dem Geschick.</l>
+            <l>Schein ich gleich schwach zu seyn, schein ich dir gleich zu leiden;</l>
+            <l>Ist doch mein Geist noch frey und fühlt die stillen Freuden,</l>
+            <l>Wodurch die Tugenden ein großes Herz erhöh'n. – –</l>
+            <l>Jedoch, warum ist nicht Artander in Athen?</l>
+            <l>Ich soll ihn heute noch an diesem Orte sehen.</l>
+            <l>Laß unser Volk bereit ihn zu empfangen stehen.</l>
+            <l>Ich eil indessen selbst der Pallas Tempel zu,</l>
+            <l>An ihres Altars Fuß find ich vielleicht die Ruh.</l>
+            <l>Der Götter Vorsicht hat die Bahn von unserm Leben</l>
+            <l>Mit tiefer Dunkelheit und heil'ger Nacht umgeben.</l>
+            <l>Wir irren, Blinden gleich, mit ungewissem Tritt,</l>
+            <l>Und unbekannte Macht regieret jeden Schritt.</l>
+            <l>Zuletzt bringt uns die Zeit nach durchgeträumten Jahren</l>
+            <l>Zu unsern Ahnen hin; wir sind nun, was sie waren,</l>
+            <l>Und werden, was sie sind. Der Ruhm nur bleibt zurück.</l>
+            <l>Der Weise wird für ihn zum Meister vom Geschick.</l>
+            <l>Die Tugend nur allein kann durch die Dunkelheiten</l>
+            <l>Uns zur Unsterblichkeit auf sichern Wegen leiten.</l>
+          </sp>
+        </div>
+      </div>
+      <pb n="33"/>
+      <div type="act">
+        <head>Dritter Aufzug.</head>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>Codrus, Nileus.</stage>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Wie? Medon reißte schnell und heimlich aus Athen?</l>
+            <l>Er floh' bestürzt von hier. Du hast ihn selbst gesehn?</l>
+          </sp>
+          <sp who="#nileus">
+            <speaker>Nileus.</speaker>
+            <l>Ja, Herr, ich sah ihn hier aus dem Pallaste gehen</l>
+            <l>Man konnt' auf seiner Stirn die tiefste Schwermuth sehen.</l>
+            <l>Er gieng durchs nahe Thor und sah mit trübem Blick</l>
+            <l>Noch oft nach dem Pallast und nach Athen zurück.</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Er floh und wollte mir nicht seinen Schmerz entdecken!</l>
+            <l>Warum will Medon sich vor meinem Blick verstecken?</l>
+            <l>Warum flieht mich mein Freund? Da jeder Unterthan</l>
+            <l>Auf Beystand, oder doch auf Mitleid, hoffen kann.</l>
+          </sp>
+          <sp who="#nileus">
+            <speaker>Nileus.</speaker>
+            <l>Von ferne seh ich, Herr, dort Philaiden kommen!</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Sie kömmt gedankenvoll! von Schwermuth eingenommen.</l>
+            <l>Mir scheint es, daß sie weint und daß sie leise spricht,</l>
+            <l>Tiefsinnig nah't sie sich und sieht uns itzt noch nicht.</l>
+          </sp>
+        </div>
+        <pb n="34"/>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Codrus, Nileus, Philaide.</stage>
+          <sp who="#philaide">
+            <speaker>Philaide</speaker>
+            <stage>in tiefen Gedanken.</stage>
+            <l>Hier wars! hier hab ich ihn das letztemal gesehen!</l>
+            <l part="I">O Medon... Herr verzeih!</l>
+            <stage>(Sie erblickt den Codrus, erschrickt und will abgehen.)</stage>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l part="F">Du eilst, hinweg zu gehen,</l>
+            <l>So bald du mich erblickt! Was quält dich für ein Schmerz?</l>
+            <l>Warum versteckt ihn mir dein allzufurchtsam Herz?</l>
+            <l>Prinzeßinn! kann ich dann nie dein Vertraun erreichen?</l>
+            <l>Und warum suchst du stets den Fragen auszuweichen?</l>
+            <l>Es ist dein bester Freund, der itzo mit dir spricht;</l>
+            <l>Was man dem Codrus sagt, erfährt der König nicht.</l>
+            <l>Ich rede nicht mit dir, wie die Verliebten pflegen;</l>
+            <l>Kein zärtlich Klagen soll zum Mitleid dich bewegen:</l>
+            <l>Doch traue deinem Freund. Wenn du mich auch nicht liebst,</l>
+            <l>Verlang ich, daß du mir dieß Freundschaftszeichen giebst.</l>
+            <l>Dich quält ein stiller Schmerz; mich deucht auch Elisinde</l>
+            <l>Fühlt einen innern Schmerz, den ich noch nicht ergründe.</l>
+            <l>Du kannst mir, was euch quält, ohn alle Furcht gestehn. – –</l>
+            <l>Und Medon, Medon flieht schwermüthig aus Athen?</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>Herr! Medon floh – – Verzeih – ach, darf ich es entdecken!</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Du weinst, du suchst umsonst die Thränen zu verstecken!</l>
+            <pb n="35"/>
+            <l part="I">Fahr fort!</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l part="F">Verzeihe, Herr! wenn dich mein Wort betrübt.</l>
+            <l>Verzeih, du willst es so! Er floh – weil er mich liebt.</l>
+            <stage>(Sie wirft sich Codrus zu Füssen.)</stage>
+            <l>Verzeih und gieb die Schuld dem herrschenden Geschicke!</l>
+            <l>Schon lang hätt ichs entdeckt; die Furcht hielt mich zurücke:</l>
+            <l>Die Liebe hatte, schon seit unsrer jüngsten Zeit,</l>
+            <l>Durch Unschuld uns vereint, durch Glück und Zärtlichkeit.</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Du liebst ihn? Er liebt dich! Warum warst du verschwiegen,</l>
+            <l>Und liessest mir oft zu, mich selbsten zu betrügen?</l>
+            <l>Steh auf, Prinzeßinn; glaub, es rühret mich dein Schmerz:</l>
+            <l>Ich will dich glücklich sehn, und Codrus zwingt kein Herz.</l>
+            <l>Doch fahre fort: was hieß, den jungen Medon fliehen?</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>Er floh, mir keinen Thron, mich dir nicht zu entziehen.</l>
+            <l>Aus Großmuth stürzt er sich freywillig in die Noth,</l>
+            <l>Verzweiffelnd eilt er fort, und suchet seinen Tod.</l>
+            <l>Verzeihe, Herr – – ich kann nicht meinen Thränen wehren;</l>
+            <l>Er ist entfernt; sein Trieb kann deine Ruh nicht stöhren.</l>
+            <l>Ich werd ihn nicht mehr sehn – Mein Herz verehret dich!</l>
+            <l>Fehlt Gegenliebe noch, Herr, so bedaure mich.</l>
+            <l>Mein Unglück hat die Schuld – Kein Herz wählt seine Triebe,</l>
+            <l>Und unbekannte Macht zwingt alle zu der Liebe.</l>
+            <pb n="36"/>
+            <l>Die Weisheit dämpft sie zwar; doch völlig siegt sie nicht.</l>
+            <l>Ihr Trieb besiegt den Tod, – jedoch nicht Ruhm und Pflicht.</l>
+            <l>Der treue Medon floh dem Könige zu weichen;</l>
+            <l part="I">Auf Elisindens Rath</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus</speaker>
+            <stage>zu Nileus.</stage>
+            <l part="F">Geh, such ihn zu erreichen!</l>
+            <l>Schick ihm Trabanten nach; man bring ihn mir zurück!</l>
+            <stage>(Nileus geht ab.)</stage>
+            <l>Ich kann ihn glücklich sehn; ich danke dem Geschick,</l>
+            <l>Das mir die Macht noch giebt, die Tugend zu belohnen.</l>
+            <l>Selbst Elisinde will nicht Medons Liebe schonen!</l>
+            <l>Der treue Jüngling flieht, und läßt mir, was er liebt!</l>
+            <l>O wann ein Unterthan mir dieses Beyspiel giebt,</l>
+            <l>Was kann ein König thun? Der Lohn ist stets zu wenig;</l>
+            <l>Ein tugendhafter Mann ist größer als ein König.</l>
+            <l>Ich fühl es, und mich nimmt ein edler Eifer ein,</l>
+            <l>Dem Medon wenigstens an Großmuth gleich zu seyn.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Philaide, Codrus, Elisinde.</stage>
+          <sp who="#codrus">
+            <speaker>Codrus</speaker>
+            <stage>zu Elisinden.</stage>
+            <l>Prinzeßinn nahe dich; ich habe Recht zu klagen:</l>
+            <l>Du heißt den Medon fliehn, und ohn es mir zu sagen?</l>
+            <l>Bey großen Herzen geht die Tugend oft zu weit,</l>
+            <l>Sie will erhaben seyn, und wird zur Strengigkeit.</l>
+            <l>Nichts konnte dieses Herz empfindlicher verletzen.</l>
+            <l>Ein Glück, das andre quält, wird niemals mich ergötzen.</l>
+            <l>Es soll kein Unterthan durch mich unglücklich seyn.</l>
+            <l>Und welcher Unterthan? Dein Sohn! Hat seine Pein</l>
+            <pb n="37"/>
+            <l>Dein Herze nicht gerührt? Mich hätt er rühren müssen!</l>
+            <l>Allein zu rechter Zeit läßt mirs der Himmel wissen.</l>
+            <l>Ich dank ihm, und dein Sohn kömmt heute noch zurück.</l>
+            <stage>(zu Philaide.)</stage>
+            <l>Sey seiner Tugend Lohn! die Liebe sey dein Glück!</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Kann wohl bey Sterblichen die Großmuth höher steigen?</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>Erstaunen – Dankbarkeit – zwingt meinen Mund zu schweigen.</l>
+            <stage>(Sie will ihm zu Füssen fallen, er giebt es nicht zu.)</stage>
+            <l>Ists möglich? König, Herr, der Götter wahres Bild!</l>
+            <l>Mein Herz ist allzuschwach zum Trieb, der es erfüllt –</l>
+            <l>Ich kann nicht reden – nein – Warum kann ich mein Leben</l>
+            <l>Nicht so, wie Medon kann, für meinen König geben?</l>
+            <l>Warum ist meine Hand zu schwach ihm beyzustehn?</l>
+            <l>Beherzt wollt ich zum Tod, um ihn zu retten, gehn.</l>
+            <l>Der Freuden Uebermaas, Erstaunen schlägt mich nieder</l>
+            <l>Herr, du giebst mir und ihm zugleich das Leben wieder.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Und ich erstaune nicht, bey dem was ich gehört.</l>
+            <l>Die größte Heldenthat ist meines Königs werth,</l>
+            <l>Und Codrus war allein werth, sie begehn zu können.</l>
+            <l>Das Glück der Sterblichen ihr eignes Glück zu nennen,</l>
+            <l>Dieß ist der Götter Lust. Sie gönnen es allein</l>
+            <l>Den seltnen Königen, die, Göttern gleich zu seyn,</l>
+            <l>Der Unterthanen Glück durch Menschenliebe machen,</l>
+            <l>Und durch sich selber groß der Krone Stolz verlachen.</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Seyd glücklich, seyd vergnügt und dankt nur dem Geschick!</l>
+            <l>Dieß sey mein ein'ger Lohn, und wird mein eignes Glück!</l>
+          </sp>
+        </div>
+        <pb n="38"/>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <stage>Elisinde, Philaide, Codrus, Nileus.</stage>
+          <sp who="#nileus">
+            <speaker>Nileus.</speaker>
+            <l>Verschiedne Boten sind dem Medon nachgeschicket!</l>
+            <l>Herr! ich hab in Athen Artandern schon erblicket,</l>
+            <l>Der, weil er dich zu sehn, beym Bündniß sich entschloß,</l>
+            <l>Sich dem Pallaste naht und sein Gefolg ist groß.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Komm, Philaide, komm, den Himmel anzuflehen,</l>
+            <l>Itzt der Befestigung des Friedens beyzustehen.</l>
+            <stage>(Elisinde und Philaide gehen ab.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <stage>Codrus, Nileus.</stage>
+          <sp who="#nileus">
+            <speaker>Nileus.</speaker>
+            <l>Wie groß ist nicht der Muth von dem du Proben giebst</l>
+            <l>Wie, Herr! aus eignem Trieb verlierst du, was du liebst?</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Vernunft besieget oft die Triebe großer Herzen:</l>
+            <l>Doch selbst ihr Lohn, das Lob, erneuert nur die Schmerzen.</l>
+            <l>Erinnre mich nicht mehr an Schmerzen und Verlust,</l>
+            <l>Und stöhre nicht durch Lob, die Stille meiner Brust.</l>
+            <l>Den Göttern dank ich nur, die bey dem Ziel vom Leben</l>
+            <l>Mir die Gelegenheit, noch wohl zu thun, gegeben.</l>
+            <l>Allein Artander kömmt! Nileus folge mir,</l>
+            <l part="I">Laß uns entgegen gehn.</l>
+          </sp>
+          <sp who="#nileus">
+            <speaker>Nileus.</speaker>
+            <l part="F">Verzieh! Er ist schon hier.</l>
+          </sp>
+        </div>
+        <pb n="39"/>
+        <div type="scene">
+          <head>Sechster Auftritt.</head>
+          <stage>Codrus, Nileus, Artander, Licas, Gefolge von Doriern.</stage>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Ich danke meinem Glück; es stillet mein Verlangen,</l>
+            <l>Den Codrus in Athen freundschaftlich zu empfangen.</l>
+            <l>Wir hofften sonst auf nichts seit deinem letzten Sieg,</l>
+            <l>Und dieser große Tag beschließt gewiß den Krieg.</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Wenn uns Artanders Muth von langer Feindschaft müde,</l>
+            <l>Der Freundschaft Zeugniß giebt, so blüht ein ew'ger Friede.</l>
+            <l>Als Freunde kann nunmehr der Bürger von Athen,</l>
+            <l>Die Dorier vergnügt in seinen Mauern sehn.</l>
+            <l>Es kann nunmehr der Hirt im Felde sicher weiden,</l>
+            <l>Kein krieg'risches Geräusch stört seine stillen Freuden.</l>
+            <l>Der Hayn erschallt nicht mehr von öden Klaggeschrey,</l>
+            <l>Und der Ilissus fließt nicht blutig mehr vorbey.</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Vom Frieden wünscht ich noch allein mit dir zu sprechen.</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l part="I">Nileus, laß uns hier!</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander</speaker>
+            <stage>leise zu Licas.</stage>
+            <l part="F">Eilt Freunde! los zu brechen!</l>
+            <l>Der Anschlag glückt bisher! nimm alles wohl in Acht!</l>
+            <l part="I"><stage>(laut)</stage> Entweich!</l>
+            <stage>(Nileus, Licas und das Gefolge gehen ab.)</stage>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l part="M">Wir sind allein.</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l part="F">Wie dank ich nicht der Macht</l>
+            <pb n="40"/>
+            <l>Der Götter, die mir nun nach meinem Wunsch vergönnen,</l>
+            <l>Freundschaftlich und allein den Codrus sehn zu können!</l>
+            <l>Du weist, das Glück des Kriegs ist allzeit ungewiß:</l>
+            <l>Das Glück war für Athen, das neulich uns verließ.</l>
+            <l>Jedoch bey längerm Krieg, kann sich dieß Glück noch wenden;</l>
+            <l>Des Krieges Ausgang steht in blinder Schickung Händen.</l>
+            <l>Und nun, da zwischen uns der Friede sicher ist,</l>
+            <l>Gewinnt Athen dabey, wenn es ihn bald beschließt.</l>
+            <l>Nur eine Kleinigkeit, die noch mein Volk begehret</l>
+            <l>Und dir beym nahen Bund durch meinen Mund erkläret,</l>
+            <l>Verlang ich noch von dir. Du kannst sie zugestehn,</l>
+            <l>Dem Dorier ists viel und wenig für Athen;</l>
+            <l>Und das verlangte Blut ist leichter zu vergießen,</l>
+            <l>Als sich zu Krieg und Tod vom neuen zu entschließen.</l>
+            <l>Ich weiß, daß Codrus uns dieß nicht versagen kann:</l>
+            <l>Denn bey gemeinem Heil, was ist ein Unterthan?</l>
+            <l>Was ist ein schwaches Weib, wenn sie das feige Leben,</l>
+            <l>Nach dem der Staat nicht fragt, für ihren König geben?</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Was sagst du? – Welches Blut? Dein Bitten ist gewährt,</l>
+            <l>Wofern der Dorier das Meinige begehrt.</l>
+            <l>Ich geb es gern, Athen den Frieden zu erwerben,</l>
+            <l>Allein kein Unterthan soll meinetwegen sterben.</l>
+            <l>Des Himmels hoher Rath vertraute sie mir an.</l>
+            <l>Nicht daß ich ungestraft ihr Blut vergießen kann;</l>
+            <l>Nicht, daß sie meinem Stolz aus Zwang und Knechtschaft dienen,</l>
+            <l>Nein, um ihr Schutz zu seyn, gab mich der Himmel ihnen.</l>
+            <l>Glaub nicht, daß allezeit des Himmels Rache ruht.</l>
+            <l>Von Fürsten fordert er der Unterthanen Blut.</l>
+            <pb n="41"/>
+            <l>Es ist kein Sterblicher in seinen Augen wenig:</l>
+            <l>Ihm ist der Unterthan so viel als wie der König.</l>
+            <l>Artander! sein Gericht giebt allen ihren Lohn,</l>
+            <l>Tyrannen fühlen es, und zittern auf dem Thron.</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Mein Volk verlangt ihr Blut, Athen muß sich entschließen.</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Doch sage, welches Blut will ihre Wuth vergießen?</l>
+            <l>Ist es ein schuldiges, so solls vergossen seyn!</l>
+            <l>Mit Schmerzen thu ich es; ich wünschte zu verzeihn.</l>
+            <l>Doch, wenn Natur und Pflicht verbeut, ihn loszusprechen,</l>
+            <l>Alsdenn mitleidig seyn, ist selbsten ein Verbrechen,</l>
+            <l>Und wenn Gerechtigkeit des Frevlers Tod begehrt,</l>
+            <l>Wird der, der ihn nicht straft, selbst seiner Strafe werth.</l>
+            <l>So strafet Zeus uns nie aus Grausamkeit und Hitze,</l>
+            <l>Erst spät ergreiffet er die langverdienten Blitze.</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Du weist, daß Theseus Blut, als noch Thimoet gelebt,</l>
+            <l>Dem Volk der Dorier zu schaden sich bestrebt:</l>
+            <l>Der Rest von diesem Blut lebt in Athen noch heute;</l>
+            <l>Und dieß verlangt mein Volk. Soll ungewissem Streite</l>
+            <l>Die Wohlfahrt von Athen noch unterworfen seyn?</l>
+            <l>Da du dieß Mittel siehst, es schleunig zu befreyn.</l>
+            <l>Gieb mir und meinem Volk, das Blut das ich verlange;</l>
+            <l>Der Friede bleibet fest, sobald ich es empfange.</l>
+            <l>Scheut deine Frömmigkeit sich vor vergoßnem Blut:</l>
+            <l>So überlaß es mir, ich habe größern Muth;</l>
+            <l>So überheb ich dich der Müh, es zu verspritzen,</l>
+            <l>Und Zeus wird drum nicht gleich vom Himmel auf mich blitzen.</l>
+            <pb n="42"/>
+            <l>Er ruht auf dem Olymp und ist uns nicht so nah:</l>
+            <l>Geringe Menschen sind um meinetwillen da;</l>
+            <l>Bey denen bin ich Zeus. Du kannst dich itzt entschließen.</l>
+            <l>Wenn du sie retten willst, so sey der Bund zerrissen.</l>
+            <l>O traue nicht zu viel auf deinen letzten Sieg:</l>
+            <l part="I">Folg meinem Rath! du schweigst! Was wählest du?</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l part="F">Den Krieg.</l>
+            <l>Durch Schimpf und Grausamkeit kauft Codrus nicht den Frieden!</l>
+            <l>Nein, unser beyder Heil sey durch den Kampf entschieden!</l>
+            <l>Bey so gerechtem Krieg vergieß ich gern mein Blut:</l>
+            <l>Zu Mord und Tyranney hat Codrus keinen Muth.</l>
+            <l>Er will sich keinen Ruhm durch Grausamkeit erwerben;</l>
+            <l>Doch er hat Muth genug, fürs Vaterland zu sterben.</l>
+            <l>Wer nicht die Götter ehrt, liebt nie sein Vaterland.</l>
+            <l>Nie steht des Krieges Glück in blinder Schickung Hand,</l>
+            <l>Die Götter leiten es von des Olympus Höhen,</l>
+            <l>Und diese sind gewohnt der Tugend beyzustehen.</l>
+            <l>Artander fürchte sie! – Du hast mich angehört.</l>
+            <l>Du kennst nun meinen Schluß; der Friede sey gestöhrt!</l>
+            <l>Geh zeige deinen Muth! Such Ehre zu erwerben,</l>
+            <l>Stirb für dein Vaterland! Ich will für meines sterben.</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Den Krieg erwählest du! Ohnmächt'ge Wuth! Halt ein!</l>
+            <l>Hör auf mit deinem Stolz! So will ich dir verzeihn.</l>
+            <l>Nichts als Gehorsam wird dein Leben retten können.</l>
+            <l>Vergebens wirst du schmäh'n, und Klugheit Untreu nennen.</l>
+            <l>Doch sage, was du willst; der Schwachheit ists erlaubt:</l>
+            <l>Ich kann, sobald ich will, des stolzen Codrus Haupt</l>
+            <pb n="43"/>
+            <l>Zu meinen Füssen sehn. Ein Wort darf ich nur sprechen.</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Du willst ein König sein und drohst, die Treu zu brechen? – –</l>
+            <l>Was hör ich für Geräusch! Welch wütendes Geschrey!</l>
+            <stage>(Man höret das Getümmel der Waffen.)</stage>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander</speaker>
+            <stage>zieht den Degen.</stage>
+            <l part="I">Ich siege! Wache!</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus</speaker>
+            <stage>zieht den Degen.</stage>
+            <l part="M">Wie! Halt ein!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Siebenter Auftritt.</head>
+          <stage>Artander, Codrus, Nileus, Licas, Cleanth, Gefolg von Doriern, alle mit blossen
+            Degen.</stage>
+          <sp who="#nileus">
+            <speaker>Nileus,</speaker>
+            <stage>der sich gegen Licas und die Wache wehret.</stage>
+            <l part="F">Verrätherey!</l>
+            <l part="I">Mein König rette dich!</l>
+            <stage>(Er wird entwaffnet.)</stage>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l part="M">Tyrann!</l>
+            <stage>(Cleanth fällt ihm in die Arme, er wird entwaffnet.)</stage>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l part="F">Es ist vergebens,</l>
+            <l>Erwarte, stolzer Feind, das Ende deines Lebens!</l>
+            <l>Cleanth, ist es geschehn? Und ist Athen besiegt?</l>
+          </sp>
+          <sp who="#cleanth">
+            <speaker>Cleanth.</speaker>
+            <l>Verschiedne streiten noch, fast alles unterliegt.</l>
+            <pb n="44"/>
+            <l>Die Schaar, die schon mit dir beym Anfang angekommen,</l>
+            <l>Hat von den Thoren schnell beherzt Besitz genommen,</l>
+            <l>Und bahnte drauf den Weg dem übrig fert'gen Heer.</l>
+            <l>Der überfallne Feind thut schwache Gegenwehr.</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander</speaker>
+            <stage>zu Codrus.</stage>
+            <l>Wo bleibt nunmehr dein Stolz? Was zaudern deine Götter?</l>
+            <l>Und kommt zum Schutz Athens nicht bald ein Donnerwetter?</l>
+            <l>Legt ihnen Fesseln an. Es siegt Artanders List.</l>
+            <l>Vergiß nun, wer du warst, und denke, was du bist.</l>
+            <stage>(Codrus und Nileus werden gefesselt)</stage>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Ich bin ein König noch, obschon versenkt in Bande</l>
+            <l>Ich bin durch List besiegt, doch nur zu deiner Schande.</l>
+            <l>Ich bleibe, wer ich war, auch ohne Reich und Kron,</l>
+            <l>Und du bist nur ein Knecht auf dem entweyhten Thron.</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Verwägner! fürchtest du nicht das, was du verdienest?</l>
+            <l>Bedenkst du, was du sagst, und was du dich erkühnest!</l>
+            <l>Kennst du dein Schicksal nicht? Athen trägt schon mein Joch,</l>
+            <l part="I">Du bist nicht König mehr!</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l part="F">Doch ich bin Codrus noch.</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Man muß unnützen Trotz der Schwachheit nur erlauben!</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Mein Leben kannst du mir, doch nicht die Tugend rauben.</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l><stage>(zur Wache)</stage> Bewahrt ihn! <stage>(zu Cleanth und Licas)</stage>
+              Freunde, kommt und zeiget euren Muth;</l>
+            <l>Vergießt beherzt mit mir der widerspenst'gen Blut.</l>
+            <pb n="45"/>
+            <l>Wir siegen! Also muß man Törichte verführen;</l>
+            <l>Die Kinder durch das Spiel, und Männer mit den Schwüren.</l>
+            <l>Kommt und laßt euren Zorn an meiner Seite sehn,</l>
+            <l>Nichts, was sich widersetzt, sey lebend in Athen!</l>
+            <l>Das Blut soll den Ilyß zur Ueberschwemmung zwingen,</l>
+            <l>Und mag von unserm Sieg der See die Nachricht bringen.</l>
+            <stage>(Er gehet mit Cleanth und Licas ab)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Achter Auftritt.</head>
+          <stage>Codrus, Nileus, Wache.</stage>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Nileus, das Geschick, das mich in Fesseln schlägt,</l>
+            <l>Hat noch dieß ruhge Herz zur Wehmuth nicht bewegt.</l>
+            <l>Doch, wenn ich mein Athen, unfähig es zu retten,</l>
+            <l>Soll überwunden sehn; erblick ich dich in Ketten,</l>
+            <l>So läßt mein fühlend Herz der Wehmuth freyen Lauf,</l>
+            <l>Und keine Großmuth hält der Menschheit Zähren auf.</l>
+            <l>Der Unterthanen Schmerz, der Freude Quaal zu sehen,</l>
+            <l>Zu sehn, nicht frey zu seyn, um ihnen beyzustehen,</l>
+            <l>Dieß schrecker meinen Muth, dieß ist ein wahrer Schmerz:</l>
+            <l>Bey diesem standhaft seyn, verräth ein hartes Hertz.</l>
+            <l>Den König strafe Zeus, der seiner Bürger Flehen</l>
+            <l>Und Schmerzen, ungerührt kann hören oder sehen.</l>
+            <l>Jedoch verzweifle nicht, Nileus, fasse Muth!</l>
+            <l>Es wird Athen befreyt durch eines einzgen Blut.</l>
+            <pb n="46"/>
+            <l>Der Himmel selbst versprichts! Das Schicksal wird sich wenden;</l>
+            <l>Wenn alle Hoffnung fehlt, wird er Errettung senden.</l>
+            <l>Nileus fasse dich und fleh den Himmel an!</l>
+            <l>Verzeihe deinem Freund, der dich nicht schützen kann.</l>
+            <l>Leb wohl! Umarme mich! Kann nichts dein Heil erwerben,</l>
+            <l>So stirb als Codrus Freund, und lerne von mir sterben.</l>
+          </sp>
+          <sp who="#nileus">
+            <speaker>Nileus.</speaker>
+            <l>Mein König, lebe wohl. Mich schrecket keine Noth,</l>
+            <l>Du stärkst mein schwaches Herz, ich geh beherzt zum Tod.</l>
+            <l>Wenn es der Himmel will, so kann er uns noch retten;</l>
+            <l>Kein Schicksal beuget mich. Doch seh ich deine Ketten,</l>
+            <l>So fühl ich, daß mein Herz geschwächt durch Wehmuth bricht!</l>
+            <l part="I">Dann ist mein Muth zu schwach. – –</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l part="F">Die Ketten fühl ich nicht,</l>
+            <l>Genug mein Herz bleibt frey, – – ich bin nicht überwunden.</l>
+            <l>Gefesselt ist der Arm, der Geist ist ungebunden.</l>
+            <l>Leb wohl! Ich sah das Ziel von aller meiner Pein,</l>
+            <l>Es wird Athen und ich bald wieder ruhig seyn.</l>
+            <l>Der Himmel ist gerecht, die Tugend zu belohnen</l>
+            <l>Sie liegt zwar oft im Staub; oft trägt das Laster Kronen.</l>
+            <l>Doch endlich zeiget sich sein rächendes Gericht;</l>
+            <l>Es zaudert oft, es ruht, doch ewig schläft es nicht.</l>
+            <l>Artander siegt zwar itzt. Doch du hast ihn gesehen?</l>
+            <l>Du sahst ihn unruhvoll, bestürzt und schamroth stehen.</l>
+            <pb n="47"/>
+            <l>Glaubst du, daß er, beglückt und ich unglücklich sey?</l>
+            <l>Er zittert auf dem Thron, ich bin in Banden frey.</l>
+            <l>Sein Herz ist unruhvoll, in meinem wohnt der Friede.</l>
+            <l>Euch Götter, fleh ich an, beschützt die Philaide!</l>
+            <l>Laßt euren ganzen Zorn nur über mich ergehn!</l>
+            <l>Straft des Tyrannen Wuth! Rächt mich! Und rächt Athen.</l>
+          </sp>
+        </div>
+      </div>
+      <div type="act">
+        <head>Vierter Aufzug.</head>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>Elisinde, Philaide.</stage>
+          <sp who="#elisinde">
+            <l>Komm, nun ists nicht mehr Zeit, den Himmel anzusehen!</l>
+            <l>Komm, laß uns unserm Tod beherzt entgegen gehen!</l>
+            <l>Standhaftigkeit flößt oft Barbaren Ehrfurcht ein:</l>
+            <l>Wenn alle Rettung fehlt, soll uns der Tod befreyn.</l>
+            <l>Wir sind umringt, ich sah der Krieger blut'ge Haufen,</l>
+            <l>Erhitzten Tygern gleich, durch alle Straßen laufen.</l>
+            <l>Kein Gott beschützt uns mehr, wohin sind wir gebracht?</l>
+            <l>Selbst hier in dem Pallast ist alles schon bewacht.</l>
+            <l>Ich sah das Volk Athens – wird es die Nachwelt glauben? –</l>
+            <l>Vor den Barbaren knien, die uns die Freyheit rauben.</l>
+            <l>Kein Führer treibt es an, das Schwerd sinkt aus der Hand,</l>
+            <l>Und nur der mindste Theil ist noch ein Widerstand.</l>
+            <l>Athen! Athen vergeht – – – Soll ich es überleben?</l>
+            <l>Soll ich die freye Hand in knecht'sche Fesseln geben?</l>
+            <l>Nein, sterben will ich frey – Betrachte diesen Stahl!</l>
+            <l>Er schützer unsern Ruhm, er endigt unsre Quaal.</l>
+            <stage>(Sie ziehet einen Dolch heraus)</stage>
+            <pb n="48"/>
+            <l>Wird ein verwägner Feind der Götter Zorn nicht scheuen;</l>
+            <l>So soll ein kühner Streich dich, und dann mich befreyen.</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>Ja! führe diesen Streich, laß uns der Wuth entfliehn,</l>
+            <l>Eh man die Macht uns raubt, ihn künftig zu vollziehn.</l>
+            <l>O Medon, lebe wohl! – – Die letzten Augenblicke</l>
+            <l>Des Lebens sind noch dein, – – O bringt ihn nicht zurücke,</l>
+            <l>Ihr Götter! unser Schmerz ist ihm noch unbekannt.</l>
+            <l>Er leb und räche mich und unser Vaterland!</l>
+            <l>Ich scheu nicht meinen Tod; doch fürcht ich Medons Schmerzen.</l>
+            <l>Er lebe! nach dem Tod leb ich in seinem Herzen!</l>
+            <l>Und geht er einst umringt mit frohem Siegs Geschrey,</l>
+            <l>Bey Philaidens Grab mit Ruhm bekrönt vorbey;</l>
+            <l>Dann steht er still, ihn rührt ein zärtlich Angedenken,</l>
+            <l>Dann wird er meinem Tod noch eine Thräne schenken.</l>
+            <l>Mehr wünsch ich nicht – – Und du Gefährtinn meiner Noth</l>
+            <l>Leb wohl, umarme mich, und gieb mir itzt den Tod.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Noch ists zum Tod nicht Zeit – – Erwarte dein Geschicke.</l>
+            <l>Dieß letzte Mittel bleibt der Tugend stets zurücke.</l>
+            <l>In einem Augenblick thut oft der Himmel viel.</l>
+            <l>Die Götter setzten uns ein unverrücktes Ziel,</l>
+            <l>Sie zürnen, wenn wir kühn Gesetz und Ordnung brechen.</l>
+            <l>Glaub nicht, ich suche dir die Feigheit einzusprechen.</l>
+            <l>So lang sie kann, erträgt die Tugend ihre Noth</l>
+            <l>Oft ist ihr größter Lohn ein früh und edler Tod.</l>
+            <l>Doch Uebereilung nur geht ihm zu schnell entgegen;</l>
+            <l>Nicht Hitz und Vorurtheil muß uns zum Tod bewegen.</l>
+            <pb n="49"/>
+            <l>Sey standhaft! Fürchte nichts und traue meinem Muth!</l>
+            <l>Noch leb ich! Keine Schmach entehret Theseus Blut!</l>
+            <l>Vielleicht wird der Tyrann den Tod uns geben wollen,</l>
+            <l>Und wir, wir fürchten nichts, wenn wir nur sterben sollen.</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>Man kömmt! Ein wild Geräusch, das hier sich hören läßt –</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Artander, Cleanth, Elisinde, Philaide, Gefolge von Doriern.</stage>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>So ist von Theseus Stamm dieß nun der einzige Rest!</l>
+            <l>Eilt, bringt den Codrus her, ihr Unglück zu beklagen.</l>
+            <l part="I"><stage>(zur Wache)</stage> Legt ihnen Fesseln an!</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde</speaker>
+            <stage>zur Wache.</stage>
+            <l part="F">Zurück! Ich! Fesseln tragen?</l>
+            <l>Gieb uns den Tod, Tyrann, und nicht die Sclaverey!</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Dein Wunsch ist dir gewährt! Laßt sie voritzt nur frey.</l>
+            <l>Die schwachen Hände hat ein Krieger nicht zu scheuen.</l>
+            <l>Es soll sie bald der Tod noch schleuniger befreyen.</l>
+            <l>Der Stolz verachtet ihn, wenn er von ferne droht;</l>
+            <l>Nah kennt man seine Quaal, und zittert für den Tod.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Dein drohen schreckt mich nicht, du selbst, du selbst sollst zittern!</l>
+            <l>Der Himmel ist bereit mit drohenden Gewittern!</l>
+            <pb n="50"/>
+            <l>Es kann der Rache Blitz nicht mehr entfernet seyn.</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Ich kann dir deinen Tod gewisser prophezeyhn.</l>
+            <l>Der Himmel, wenn er kann, mag dich zu retten trachten,</l>
+            <l part="I">Du trotzest, schwaches Weib! Was kannst du?</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="F">Dich verachten.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Artander, Elisinde, Codrus, Philaide, Cleanth, Gefolge von Doriern.</stage>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Komm näher, was du liebst, zum Letztenmal zu sehn!</l>
+            <l>Bist du noch nicht bereit mein Mitleid anzuflehn?</l>
+            <l>Sieh deine Freunde hier! Den Frieden zu erwerben,</l>
+            <l>War dir ihr Tod zu viel: Du sollst mit ihnen sterben.</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Hör auf mit eitlem Drohn, du schreckst mich nicht, Tyrann!</l>
+            <l>Der fürchtet keine Noth, der muthig sterben kann.</l>
+            <l>Ich bin bereit, den Tod gelassen auszustehen;</l>
+            <l><stage>(zu Philaide)</stage> Doch deine Thränen kann ich nicht gelassen sehen.</l>
+            <l>Das Unglück, das dich trifft, dieß, das Athen noch droht,</l>
+            <l>Prinzessinn! Dieß allein verbittert mir den Tod.</l>
+            <l>Ich liebte dich! Es wich die unglückselge Liebe;</l>
+            <l>Sie wich nicht, ohne Schmerz, noch einem edlern Triebe.</l>
+            <l>Dich zu beglücken war mein Wunsch und mein Bemühn:</l>
+            <l>Auch diese Freude will das Schicksal mir entziehn.</l>
+            <pb n="51"/>
+            <l>Ich sehe deinen Schmerz, ich muß in Banden liegen;</l>
+            <l>Doch das Verhängniß, kann mich noch nicht ganz besiegen.</l>
+            <l>Ich hoffe noch! mein Tod soll dich vielleicht befreyn.</l>
+            <l part="I">Ich bin dazu bereit;</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander</speaker>
+            <stage>zu Cleanth.</stage>
+            <l part="F">Bereitet seine Pein!</l>
+            <l>Ich wünschte sehr, zu sehn, ob seinen Muth nichts schrecke,</l>
+            <l>Und ob der nahe Tod ihm keine Furcht erwecke.</l>
+            <l part="I">Doch Licas nahet sich!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <stage>Artander, Codrus, Elisinde, Philaide, Cleanth, Licas, Medon in Ketten, Gefolge von
+            Doriern.</stage>
+          <sp who="#licas">
+            <speaker>Licas.</speaker>
+            <l part="F">Herr, deine Wache hat</l>
+            <l>Den Jüngling, den du siehst, nah bey dem Thor der Stadt,</l>
+            <l>Für einen Feind erkannt und in Verhaft genommen.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <stage>(vor sich)</stage>
+            <l>O Sohn, zu welcher Zeit bist du zurück gekommen!</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l part="I">O Himmel!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">Welch Geschick! Bin ich wohl in Athen?</l>
+            <l>Und muß Artandern hier, und Codrus Fesseln sehn?</l>
+            <l part="I">Betrüget mich kein Traum?</l>
+          </sp>
+          <pb n="52"/>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l part="F">Du bists! Laß dich umarmen!</l>
+            <l><stage>(zur Wache)</stage> Nehmt ihm die Fessel ab! Er wars, der aus Erbarmen,</l>
+            <l>Mir jüngst das Leben ließ, als in der letzten Schlacht,</l>
+            <l>Das Unglück mich dem Tod bereits so nah gebracht!</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>O Medon! Welche Hand verschont dein edles Leben!</l>
+            <l>Ist dann die Dankbarkeit Tyrannen auch gegeben?</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>O Medon, du wirst frey! Nun sterb ich ohne Schmerz.</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon</speaker>
+            <stage>(dem man die Fesseln abgenommen)</stage>
+            <l>Erstaunen macht mich stumm, und Schrecken füllt mein Herz.</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Befürchte nichts von mir, du schenktest mir das Leben:</l>
+            <l>Mit Freuden will ich dir das Deine wieder geben.</l>
+            <l>Erwarte nur noch mehr von meiner Dankbarkeit!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Erwarte keinen Dank, ob du mich gleich befreyt!</l>
+            <l>Artander, ich bin frey, doch Codrus ist in Ketten:</l>
+            <l>Du quälst mein Vaterland, und willst mein Leben retten.</l>
+            <stage>(Man giebt ihm den Degen wieder)</stage>
+            <l>Es weiß mein Herz noch nicht erstaunt und Wehmuthsvoll,</l>
+            <l>Zu was ich dieses Schwerdt anizzt gebrauchen soll?</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l part="I">Führt diese drey zum Tod!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">Was sagst du? – – Philaiden?</l>
+            <l part="I">Den König! <stage>(zur Wache)</stage> haltet ein!</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus</speaker>
+            <stage>zu Medon.</stage>
+            <l part="F">Ich sterbe nun zufrieden.</l>
+            <pb n="53"/>
+            <l>Ich geh zum Tod! Leb wohl, und sorge für Athen!</l>
+            <stage>(Er will mit der Wache abgehen.)</stage>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde</speaker>
+            <stage>umarmet den Medon.</stage>
+            <l part="I">Leb wohl und räche mich!</l>
+            <stage>(Sie will mit dem Codrus gehn.)</stage>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">Nein ich will mit dir gehn!</l>
+            <l><stage>(zu Artander.)</stage> Tyrann! Was zauderst du? Entreiß auch mir das
+              Leben.</l>
+            <l>Nimm dieses Schwerdt zurück, das du mir erst gegeben,</l>
+            <stage>(Er wirfft ihm den Degen vor die Füsse.)</stage>
+            <l>Eh mein gerechter Zorn die Grausamkeit belohnt.</l>
+            <l>Ich bin des Todes werth, weil ich dich jüngst verschont.</l>
+            <l>Ich will mit ihnen gehn, ich will zugleich erblassen</l>
+            <l><stage>(zu Phil.)</stage> Ich kann die Welt beherzt, dich kann ich nicht
+              verlassen,</l>
+            <l>Da wir uns wiedersehn. Prinzessinn! Das Geschick</l>
+            <l>Bringt mich zu rechter Zeit an diesen Ort zurück.</l>
+            <l>Du lebtest nicht für mich, ich kann doch mit dir sterben!</l>
+            <l part="I"><stage>(zu Art.)</stage> Tyrann vollzieh den Streich!</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander</speaker>
+            <stage>nach einigem Stillschweigen.</stage>
+            <l part="F">Du eilest zum Verderben,</l>
+            <l>Du trotzest meiner Macht und ich bedaure dich.</l>
+            <l>Die Lieb ist Schuld daran. Bleib hier und höre mich!</l>
+            <l>Ich denke noch daran, du schenktest mir das Leben:</l>
+            <l>Zu deinem will ich dir nun noch ein anders geben.</l>
+            <l>Du liebst, du bist voll Muth, und ehrest alle drey:</l>
+            <l>Such dir ein Leben aus, und was du wählst, ist frey.</l>
+            <l>Durch diese Gütigkeit lern meine Großmuth kennen!</l>
+            <l>Ich will dir zu der Wahl noch eine Stunde gönnen.</l>
+            <l>Ich geh, entschließe dich, du aber geh, Cleanth,</l>
+            <l>Mach diese große That der ganzen Stadt bekannt.</l>
+            <pb n="54"/>
+            <l>Laß auch die Nachricht gleich den Mißvergnügten geben,</l>
+            <l>Bey seinem Unterthan stünd itzt des Codrus Leben.</l>
+            <l><stage>(zu Medon.)</stage> Du stehst erstaunend da und dankst mir nicht einmal!</l>
+            <l part="I">Bleib hier und wähle bald!</l>
+            <stage>(Artander und Cleanth gehen ab: Licas bleibt mit der Wache im Grunde des Theaters
+              stehen.)</stage>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">O Himmel, welche Wahl!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <stage>Codrus, Medon, Elisinde, Philaide, Licas, Wache.</stage>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Durch was für Wege führt der Himmel unser Leben!</l>
+            <l>O Medon laß den Schmerz nur deinen Muth erheben!</l>
+            <l>Ich nenne dich nicht Sohn, du bist itzt nicht mehr mein.</l>
+            <l>In diesem Augenblick darfst du nichts weiter seyn,</l>
+            <l>Als Bürger von Athen. Laß alles andre schweigen.</l>
+            <l>Nur dem gemeinem Heil ist unser Leben eigen.</l>
+            <l>Ich sterbe noch vergnügt, wenn Medon nicht vergißt,</l>
+            <l>Daß er von Theseus Stamm, dem Stamm der Helden ist,</l>
+            <l>Die sonst Athen beschützt. – – Errett es vom Verderben;</l>
+            <l part="I">Du kannst. – – Du schweigst? Du weinst? Was wählest du?</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">Zu sterben.</l>
+            <l>Der Menschheit letzter Wunsch, der Hoffnung letzte Ruh, – –</l>
+            <l>Der Tod ist meine Wahl; – – ich eil ihm muthig zu.</l>
+            <pb n="55"/>
+            <l>Durch was hab ichs verdient? Ihr Götter! welch Verbrechen</l>
+            <l>Hat euren Zorn entflammt? Habt ihr, um euch zu rächen,</l>
+            <l>Denn keine Blitze mehr? Schickt sie nach mir herab!</l>
+            <l>Der Erden offner Schooß sey mein erwünschtes Grab!</l>
+            <l>Blitzt! stürmt! Was red' ich? Ach, mein Muth ist überwunden,</l>
+            <l>So grossen Schmerz hat noch kein Sterblicher empfunden.</l>
+            <l>Ich wählen? jede Wahl muß ein Verbrechen seyn.</l>
+            <l>Ich habe nur die Wahl der Laster und der Pein.</l>
+            <l>Es wird Natur und Pflicht bey jeder Wahl beleidigt.</l>
+            <l>Ihr Götter! wird von euch die Tugend so vertheidigt?</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Halt ein, o Medon, thu, was Zärtlichkeit und Pflicht</l>
+            <l>Und was dein Herz befiehlt, und schmäh den Himmel nicht!</l>
+            <l>Der Vorsicht weise Macht verhüllet das Geschicke</l>
+            <l>Der Helden und der Welt, vor unserm blöden Blicke.</l>
+            <l>Geringer Sterblicher! Du Werkzeug seiner Macht!</l>
+            <l>Verehre den, der dich in diese Welt gebracht.</l>
+            <l>Er wird, wanns ihm gefällt, dich wieder aus ihr nehmen.</l>
+            <l>Gehorch und murre nicht. Er sieht der Tugend Grämen;</l>
+            <l>Er sieht des Frevlers Stolz, still und gelassen an,</l>
+            <l>Weil er durch einen Wink dieß alles ändern kann.</l>
+            <l>Wer bist du, das Geschick um Rechenschaft zu fragen?</l>
+            <l>Verzweiflung schimpft so sehr, als niedriges Verzagen.</l>
+            <l>Sey standhaft! Glaube mir, und du wirst bald Athen,</l>
+            <l>Von Furcht und Krieg befreyt, der Vorsicht danken sehn.</l>
+            <pb n="56"/>
+            <l>Ich weiß, es wird mein Blut des Himmels Zorn versöhnen,</l>
+            <l>Und Fried und ew'ger Ruhm wird Codrus Asche krönen.</l>
+            <l>Der Mutter Großmuth irrt: ihr Eifer geht zu weit;</l>
+            <l>Gehorche nur der Pflicht und deiner Zärtlichkeit.</l>
+            <l part="I">Ich bin zum Tod bestimmt!</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l part="F">Laß deinen Muth nichts schwächen!</l>
+            <l>Die Liebe leite nicht den Medon zum Verbrechen!</l>
+            <l>Gehorche deiner Pflicht, sieh meinen Schmerz nicht an.</l>
+            <l>Glaubst du, daß ich nicht auch gelassen sterben kann?</l>
+            <l>Das Laster nur verzagt, und weiß sich nicht zu fassen:</l>
+            <l>Wer ohne Schuld gelebt, kann ohne Furcht erblassen.</l>
+            <l>Durch keine Schwachheit wuchs der Liebe Leidenschaft:</l>
+            <l>Ich habe dich geliebt. – – Denn du warst Tugendhaft.</l>
+            <l>Sey noch der Liebe werth! Laß mich zum Tode gehen.</l>
+            <l>Du sollst mich sterbend auch, noch deiner würdig sehen.</l>
+            <l>Leb wohl, bedaure mich, vergiß die Treue nicht,</l>
+            <l>Mit der ich dich geliebt – – Doch folge deiner Pflicht,</l>
+            <l>Weyh ihr und unserm Volk des Herzens stärkste Triebe,</l>
+            <l>Und eine Thräne nur der unglückselgen Liebe.</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>O Tugend, die mein Herz noch unentschlossner macht,</l>
+            <l>Was soll ich thun? Geschick! das mich hieher gebracht!</l>
+            <l>Ach! jeder edler Trieb muß nur den andern stören;</l>
+            <l>Pflicht, Tugend und Natur dient meine Quaal zu mehren.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Eh sich zur ewgen Nacht mein mattes Auge schließt;</l>
+            <l>Eh des Tyrannen Wuth mein freyes Blut vergießt:</l>
+            <pb n="57"/>
+            <l>Wünscht ich in Einsamkeit mit meinem Sohn zu sprechen</l>
+            <l part="I"><stage>(zu Codrus.)</stage> Verzeih! <stage>(zu Licas.)</stage> kann es
+              geschehn?</l>
+          </sp>
+          <sp who="#licas">
+            <speaker>Licas.</speaker>
+            <l part="F">Nichts soll dich unterbrechen.</l>
+            <l part="I"><stage>(zur Wache.)</stage> Führt diese zwey hinweg.</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus</speaker>
+            <stage>zu Elisinden.</stage>
+            <l part="F">So hängt Athens Geschick</l>
+            <l>An diesem einzigen betrübten Augenblick!</l>
+            <l>Vielleicht wirkt aus Versehn dein Rath Athens Verderben:</l>
+            <l>Ich bin allein bestimmt fürs Vaterland zu sterben.</l>
+            <stage>Er sieht den Licas an</stage>
+            <l>Wie gern sagt ich euch mehr! doch es ist noch nicht Zeit.</l>
+            <l part="I">Leb wohl!</l>
+            <stage>(Er geht mit einem Theil der Wache ab.)</stage>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide</speaker>
+            <stage>zum Medon.</stage>
+            <l part="F">Prinz! siege noch in diesem letzten Streit;</l>
+            <l>Wähl als ein Held! ich flieh, doch komm ich bald zurücke,</l>
+            <l>Und bringe noch bey dir die letzten Augenblicke</l>
+            <l>Von meinem Leben zu. So grausam sie auch ist,</l>
+            <l>Dank ich der Schickung noch, die mir den Tod versüßt.</l>
+            <l>Ich war, ich sterbe dein: Was könnte längers Leben geben?</l>
+            <l>Was könnte Ruhm und Glück mir mehr als dieses geben?</l>
+            <stage>(sie geht ab.)</stage>
+          </sp>
+        </div>
+        <pb n="58"/>
+        <div type="scene">
+          <head>Sechster Auftritt.</head>
+          <stage>Elisinde, Medon.</stage>
+          <stage>Licas und ein Theil der Wache hinten im Theater.</stage>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Sie geht und läßt mich hier, verwirrt, verzweiflungsvoll,</l>
+            <l>Sie will, daß sie mein Muth noch sterben lassen soll.</l>
+            <l>Soll dieses edle Herz das Leben schon verlieren?</l>
+            <l>Soll, Götter, euer Bild die Welt nicht länger zieren?</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Sohn, fasse deinen Muth und höre ruhig zu!</l>
+            <l>Nichts hält auf dieser Welt mich noch zurück, als du.</l>
+            <l>Ich habe gnug gelebt, vergnügt kann ich erblassen.</l>
+            <l>Und was ist wohl der Tod? Ist diese Welt verlassen</l>
+            <l>Dann etwas schreckliches? Was hält uns hier zurück?</l>
+            <l>Wann fand die Tugend wohl in dieser Welt ihr Glück?</l>
+            <l>Der Tod kann durch sich selbst uns keine Furcht erwecken,</l>
+            <l>Und unsre Zagheit nur erfindet seine Schrecken.</l>
+            <l>Des Alters Sorg und Pein ist furchtbarer als er;</l>
+            <l>Die Zubereitung schreckt; er selber ist nicht schwer.</l>
+            <l>Laß mich, geliebter Sohn, den letzten Trost erwerben</l>
+            <l>Und wenn du mich noch liebst, so sieh mich muthig sterben.</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Dich sterben sehen? Ich? Welch grausames Gebot:</l>
+            <l>Nein! es soll nicht geschehn. Viel eher soll mein Tod</l>
+            <l>Das Glück befriedigen und die bestürzte Seele</l>
+            <l>Von dieser Quaal befreyn; das ists, was ich erwähle.</l>
+            <l>Das ist das einzige, was ich erwählen kann.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Die Zeit ist kostbar, Sohn, hör mich nun ruhger an.</l>
+            <pb n="59"/>
+            <l>Mein Leben kann nicht mehr dem Vaterlande nützen.</l>
+            <l>Ich geb es willig hin, den Codrus zu beschützen.</l>
+            <l>O Medon! er allein befreyt vielleicht Athen.</l>
+            <l>Mit seinem Tode wird die Hoffnung untergehn.</l>
+            <l>Liebst du dein Vaterland, kann dich die Großmuth rühren,</l>
+            <l>Gehorchest du der Pflicht, so laß den Muth regieren,</l>
+            <l>Durch den die Tugend nur die Sterblichen erhebt;</l>
+            <l>So wird Athen befreyt, ich sterb und Codrus lebt.</l>
+            <l>Gehorche nicht dem Zug der trügerischen Liebe:</l>
+            <l>Dein Herz ist allzu groß; du ziehst nicht eitle Triebe</l>
+            <l>Dem Vaterlande vor. Verlierst du gleich dein Glück,</l>
+            <l>Es tröste dich der Ruhm: die Tugend bleibt zurück.</l>
+            <l>Für das gemeine Heil ihr eigen Glück zu geben,</l>
+            <l>Ist aller Helden Pflicht. Kannst du noch wiederstreben?</l>
+            <l>Kämpft deine Schwachheit noch? So wisse daß die Pflicht,</l>
+            <l>Die Pflicht der Dankbarkeit für deinen König spricht.</l>
+            <l>Des Königes Gebot ließ dich zurücke kommen,</l>
+            <l>Als er die Nachricht kaum von deiner Flucht vernommen.</l>
+            <l>Dein Herr! Dein König! trat dir Philaiden ab;</l>
+            <l>Und überwand sich selbst, indem er dir sie gab.</l>
+            <l>Nun lern von ihm, mein Sohn, sich selber überwinden:</l>
+            <l>Laß dich an Großmuth nicht von ihm besieget finden.</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="I">Was sagst du? Codrus gab mir Philaiden?</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="F">Ja!</l>
+            <l>Nunmehr entschliesse dich. Die Zeit der Wahl ist nah!</l>
+            <l>Dieß ist genug gesagt – – erkenne deine Pflichten!</l>
+            <l>Such dein geschwächtes Herz von neuem aufzurichten.</l>
+            <l>Sey wieder, der du warst, als dich erhabner Muth</l>
+            <l>Von Philaiden riß. Du bist noch Theseus Blut.</l>
+            <pb n="60"/>
+            <l>Leb wohl! entschliesse dich! Kannst du den Sieg erwerben:</l>
+            <l>So geh ich froh zum Tod, so kann ich ruhig sterben.</l>
+            <l>Ich lasse dich allein. Nie hast du mich betrübt;</l>
+            <l>Im letzten Augenblick, den mir die Schickung giebt,</l>
+            <l>Zwing deine Mutter nicht, noch Thränen zu vergiessen.</l>
+            <l>Laß sie mit ruhgem Blick nach Lethens Fünsternissen,</l>
+            <l>Durch deinen Muth gestärkt, mit muntern Schritten gehn,</l>
+            <l>Und stolz auf ihrem Sohn des Theseus Schatten sehn.</l>
+            <stage>(geht ab.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Siebenter Auftritt.</head>
+          <stage>Licas und die Wache stehen im Grunde der Bühne.</stage>
+          <sp who="#medon">
+            <speaker>Medon</speaker>
+            <stage>alleine.</stage>
+            <l>Grausame Pflichten! hört nur einmal auf zu kämpfen!</l>
+            <l>Mein Herz ist allzu schwach den innern Streit zu dämpfen:</l>
+            <l>Der Himmel der mich quält, kann es alleine thun.</l>
+            <l>Laßt einen Augenblick die müde Seele ruhn!</l>
+            <l>O warum kann sie nicht den Körper ganz verlassen!</l>
+            <l>O warum kann ich nicht noch vor der Wahl erblassen!</l>
+            <l>Die Mutter zu befreyn, befiehlt Natur und Pflicht,</l>
+            <l>Da Lieb und Zärtlichkeit für Philaiden spricht.</l>
+            <l>Mein König hat für mich das, was er liebt, gegeben! – –</l>
+            <l>Der Pflichten sind zu viel! Ich habe nur ein Leben!</l>
+            <l>Für jedes eilt ich gern in den gewissen Tod!</l>
+            <l>Für jedes litt ich gern, was ihm Artander droht!</l>
+            <pb n="61"/>
+            <l>Doch nein! Zum Leben ist mein Herz verdammt geworden,</l>
+            <l>Um einen zu befreyn; zwey davon zu ermorden.</l>
+            <l>Grausame! die ihr mir des Lebens Odem gabt,</l>
+            <l>O sprecht, wozu ihr wohl mich noch versehen habt?</l>
+            <l>Gabt ihr uns darum nur erhabne freye Seelen,</l>
+            <l>Um das erweichte Herz empfindlicher zu quälen?</l>
+            <l>Doch nein ihr seyd zu groß, euch hierbey zu erfreun,</l>
+            <l>Und ihr erschuft uns nur, um glücklich hier zu seyn.</l>
+            <l>Warum, wann dieses ist, sucht man sich selbst zu quälen?</l>
+            <l>Könnt ich nicht glücklich seyn und Philaiden wählen?</l>
+            <l>Fern von Athen und Welt, in einem stillen Hayn;</l>
+            <l>Der Nachwelt unbekannt, nicht groß, doch glücklich seyn?</l>
+            <l>Das Leben flöh uns hin in einer ewigen Jugend – –</l>
+            <l>Was sag ich? Glücklich seyn und glücklich ohne Tugend?</l>
+            <l>Gedanke, der mich schreckt! Wann Rach und Strafen ruhn</l>
+            <l>Wann nichts dir Vorwurf macht, wird es dein Herz nicht thun?</l>
+            <l>Verbrecher! Wird dir nicht in eben diesen Haynen,</l>
+            <l>Der Mutter blasses Bild, des Codrus Geist erscheinen?</l>
+            <l>Wirst du dem Blitz entfliehn in zornger Götter Hand?</l>
+            <l>Der Fluch, der Abscheu seyn von deinem Vaterland?</l>
+            <l>Entflieh aus meiner Brust, entsetzlicher Gedanke!</l>
+            <l>Es ist schon lang genug, daß ich im Zweifel wanke.</l>
+            <l>Ein muthiger Entschluß verlösche mein Versehn!</l>
+            <l>Wie könnte dieser Wunsch in Medons Brust entstehn?</l>
+            <l>Zwing nicht dein schwaches Herz, sich selbsten noch zu hassen!</l>
+            <l>O Medon! Wenigstens lern tugendhaft erblassen! –</l>
+            <l><stage>(nach einigem Nachdenken.)</stage> Was für ein himmlisch Licht erfüllet meine
+              Brust!</l>
+            <l>Ja, Medon, ja, du weißt was du nun wählen mußt!</l>
+            <pb n="62"/>
+            <l>Eil nun des Lebens Rest dem Vaterland zu weyhen.</l>
+            <l>Die Mutter und zugleich den Codrus zu befreyen.</l>
+            <l>Ich will so bald ich kann, zu dem Tyrannen gehn.</l>
+            <l part="I">Doch wen erblick ich hier!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Achter Auftritt.</head>
+          <stage>Philaide, Medon.</stage>
+          <stage>(Licas und ein Theil der Wache im Grunde des Theaters.)</stage>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l part="F">Ich komm dir beyzustehn!</l>
+            <l>Der Kampf in dem du bist, muß alle Herzen rühren!</l>
+            <l>Wenn du mich würklich liebst, so lerne mich verlieren.</l>
+            <l>Thu was die Pflicht befiehlt! Du warst dazu bereit!</l>
+            <l>Du flohst Athen und mich ja selbst vor kurzer Zeit.</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Und was für ein Geschick hat dir den Muth gegeben,</l>
+            <l part="I">Der dir vorhin gefehlt!</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l part="F">Ich sollte damals leben,</l>
+            <l>Und leben ohne dich; nun kann ich ruhger seyn,</l>
+            <l>Ich weiß ein edler Tod schließt alle meine Pein.</l>
+            <l>Glaub nicht, daß wenn dein Herz aus Schwachheit mich befreyte,</l>
+            <l>Daß ich dem Tod entgieng: Ich stürbe doch noch heute.</l>
+            <l>Und zürnend über dich, mit meiner eignen Hand</l>
+            <l>Rächt ich dann deine Pflicht und unser Vaterland!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>O Tugend! Die mein Herz, mit neuem Muth belebet,</l>
+            <l>O Zorn! Der deinen Reiz mit neuen Glanz erhebet!</l>
+            <pb n="63"/>
+            <l>Wenn aus so schönem Mund Vernunft und Tugend spricht:</l>
+            <l>Wie reizend, wie geliebt, wird dann die Tugend nicht!</l>
+            <l>O könnte jedes Herz, was ich empfinde spühren!</l>
+            <l>Die Liebe würde selbst die Welt zur Tugend führen.</l>
+            <l>Nein zürne nur nicht mehr, und halt mit klagen ein;</l>
+            <l>Dein Medon, den du liebst, soll deiner würdig seyn!</l>
+            <l>Dem Codrus soll die Wahl die Freyheit wieder geben,</l>
+            <l>Mein eigner Tod erhält der Elisinde Leben:</l>
+            <l>Und mich umschließt mit dir zugleich ein stilles Grab.</l>
+            <l>Verzeih daß ich der Pflicht schon Glück und Leben gab:</l>
+            <l>Nichts bleibet mir zurück, der Zärtlichkeit zu weyhen:</l>
+            <l>Ich sterbe nur mit dir, anstatt dich zu befreyen.</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>Du sterben! – – Medon, du? Dich sollt ich sterben sehn?</l>
+            <l>Nein, lebe für die Welt – – Nein, lebe für Athen,</l>
+            <l>Und mein Gedächtniß noch beständig zu verehren.</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>O widerrufe nicht die großmuthsvollen Lehren,</l>
+            <l>Die du vorhin mir gabst: Ich sterbe noch vergnügt,</l>
+            <l>Ich sterbe ja mit dir, und unsre Tugend siegt.</l>
+            <l>Im Leben war ich dein, der Tod soll uns nicht trennen:</l>
+            <l>Noch in der Unterwelt soll unser Feuer brennen.</l>
+            <l>Die Nachwelt ehret einst noch unsrer Asche Rest – –</l>
+            <l>Der Schmerz der itzo dir die Thränen noch erpreßt,</l>
+            <l>Erpreßt der Nachwelt auch vielleicht mitleidge Zähren,</l>
+            <l>Es soll kein zärtlich Herz von unsern Schicksal hören,</l>
+            <l>Das edle Wehmuth nicht zu stillen Seufzen zwingt,</l>
+            <l>Wenn künftger Dichter Mund von unsrer Liebe singt.</l>
+            <pb n="64"/>
+            <l part="I">Du scheinst noch Wehmuthsvoll. Du weinest!</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l part="F">Ja: – – Ich weine,</l>
+            <l>Es schmerzt mein Tod mich nicht, es rührt mich nur der deine.</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Es hat der Tod für mich nun keine Bitterkeit;</l>
+            <l>Mein Leben war nur dir und dann Athen geweiht.</l>
+            <l>Der Himmel wird vielleicht sich noch Athens erbarmen.</l>
+            <l>Laß dich zum erstenmal, zum letztenmal umarmen!</l>
+            <l>So wollen wir vereint dem Tod entgegen gehn,</l>
+            <l>So wird mein letzter Blick den deinigen noch sehn.</l>
+            <stage>(Sie umarmen sich)</stage>
+            <l>Also durchirren wir die nächtlich ruhgen Wälder</l>
+            <l>Der stillen Unterwelt, der Eliseischen Felder.</l>
+            <l>Um uns versammlen sich die Helden vorger Zeit,</l>
+            <l>Und unser Tod erweckt ihr Lob und ihren Neid.</l>
+            <l>Dort, trennt uns kein Geschick, kein Tod stört unsre Triebe</l>
+            <l>Der Tod wird selbst besiegt durch deine Macht, o Liebe!</l>
+          </sp>
+        </div>
+      </div>
+      <div type="act">
+        <head>Fünfter Aufzug</head>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>Artander, Cleanth.</stage>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Nun ist die Zeit vorbey! Nun muß er sich entschließen;</l>
+            <l>Doch konnt ich seinen Schluß nicht zum voraus schon wissen?</l>
+            <pb n="65"/>
+            <l>Er liebt! Wo Liebe herrscht, schweigt jede Leidenschaft:</l>
+            <l>Pflicht, Tugend und Vernunft verlieren ihre Kraft.</l>
+            <l>Dieß sah ich zum voraus; drum ließ ich ihn auch wählen.</l>
+            <l>Glaubst du, daß Dankbarkeit, die Tugend schwacher Seelen,</l>
+            <l>Die Schuld war, daß ich ihm zu wählen frey gestellt?</l>
+            <l>Vom äußern Schein hängt ab, der Wütrich und der Held.</l>
+            <l>Den heißt man tugendhaft, der die Verstellung kennet.</l>
+            <l>Der, dem Verstellung fehlt, wird lasterhaft genennet.</l>
+            <l>Es will das blöde Volk allzeit betrogen seyn;</l>
+            <l>Wie leicht nimmt man Athen durch falsche Großmuth ein!</l>
+            <l>Es scheint, obgleich besiegt, das Volk noch nicht gelassen;</l>
+            <l>Den Codrus liebt es noch, und muß mich heimlich hassen.</l>
+            <l>Der Trieb zur Dankbarkeit, den ich vorhin gezeigt,</l>
+            <l>Macht nach und nach ihr Herz vielleicht noch mir geneigt.</l>
+            <l>Das Volk, das mich gehaßt, soll mich zuletzt verehren.</l>
+            <l>Ein einzger Argwohn noch kann meine Ruhe stöhren:</l>
+            <l>Warum man den, der mir das Leben wieder gab,</l>
+            <l>Den Namen Medon giebt? Umschließt denn nicht das Grab,</l>
+            <l>Längst Elisindens Sohn? Ich hab ihn tödten lassen.</l>
+            <l>Man ließ ihn todt zurück auf den Thebaner Strassen.</l>
+            <l>Er war der ärgste Feind, der meiner Macht gedroht.</l>
+            <l>Jedoch durch was für List such ich des Jünglings Tod,</l>
+            <l>Dem ich die Wahl erlaubt? Ich fang ihn an zu scheuen.</l>
+            <l>Und selbst der Tugend Schein muß dieses Herz bereuen.</l>
+            <l>Ich fürcht ihn, alles wird den Königen zur Quaal;</l>
+            <l part="I">Hier kömmt er – –</l>
+          </sp>
+        </div>
+        <pb n="66"/>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Medon, Artander, Cleanth, Licas, Wache.</stage>
+          <sp who="#artander">
+            <speaker>Artander</speaker>
+            <stage>setzt sich.</stage>
+            <l part="F">Bist du hier? Entdecke deine Wahl.</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Ja mein Entschluß ist fest, doch eh ich ihn noch sage,</l>
+            <l>Erlaube meinem Muth noch diese letzte Frage:</l>
+            <l>Dein Eifer, stolzer Fürst! verfolgt des Theseus Blut,</l>
+            <l>Und an den Weibern nur begnügt sich deine Wuth?</l>
+            <l>Es lebt ein Prinz davon, den hast du mehr zu scheuen:</l>
+            <l>Sein Muth ist groß genug, Athen noch zu befreyen.</l>
+            <l>Ihn deinen ärgsten Feind, geb ich noch vor der Nacht,</l>
+            <l>Gehst du mein Bitten ein, gewiß in deine Macht,</l>
+            <l>Wenn du mir heilig schwörst, der Elisinde Leben</l>
+            <l>Mir, als den Preiß des Bluts des Medons, frey zu geben!</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Des Medons? – – Lebt er noch? – – Ich schwöre dir es; sprich,</l>
+            <l part="I">Wo hält sich Medon auf?</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="M">Hier ist er.</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l part="M">Du bists?</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">Ich.</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Verwägner! Welcher Muth erfüllet dein Gemüthe?</l>
+            <l>Du selbsten suchst den Tod und trotzest meiner Güte.</l>
+            <pb n="67"/>
+            <l>Du lebst? Durch welche List bist du dem Tod entflohn?</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Erfülle nur dein Wort! Hör auf mit eitlem Drohn.</l>
+            <l>Wer selbst den Tod erwählt, muß alle Furcht verbannen:</l>
+            <l>Wer muthig sterben kann, verlachet die Tyrannen.</l>
+            <l>Laß meinen König frey; dieß ists was ich gewählt:</l>
+            <l>Auch Elisinde wird nunmehro losgezählt.</l>
+            <l>Ich geb an ihrer statt mich willig in die Ketten.</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Du willst es, Rasender! Und nichts soll dich erretten.</l>
+            <l>Schließt ihn in Fesseln ein! – – Doch sprich durch welche Wuth</l>
+            <l>Vergießt die kühne Wahl der Philaide Blut?</l>
+            <l>Du liebst sie: Doch du läßt sie selbst freywillig sterben.</l>
+            <l>Um deinen Könige die Freyheit zu erwerben.</l>
+            <l>Ist nicht dein Muth, nur Stolz, und deine Tugend Wahn?</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon,</speaker>
+            <stage>da man ihn fesseln will.</stage>
+            <l>Wär ich ein Dorier, so hätt ichs nicht gethan.</l>
+            <l>Den Fesseln will ich gern die freyen Hände reichen.</l>
+            <l>Jedoch erfüll dein Wort! Laß keine Zeit verstreichen,</l>
+            <l part="I">Laß diese Beyde frey!</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander</speaker>
+            <stage>zur Wache.</stage>
+            <l part="F">Schließt ihn in Fesseln ein,</l>
+            <l>Bald wird sein kühnes Herz die große That bereun.</l>
+            <l>Bald wird sein schwacher Stolz, von Martern überwunden,</l>
+            <l>Bereun, daß er den Tod, den er gesucht, gefunden.</l>
+            <pb n="68"/>
+            <l>Den Codrus laßt indeß nebst Elisinden frey!</l>
+            <l part="I">Bringt sie hieher!</l>
+            <stage>(Cleanth geht ab)</stage>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">Genug, sey deinen Worten treu.</l>
+            <l>Vergnügt geh ich zum Tod, und kann dir ihn verzeyhen:</l>
+            <l>Der Liebe Flamme wird des Kerkers Nacht zerstreuen.</l>
+            <l>Was schadets, daß man mir den Arm in Fesseln schließt,</l>
+            <l>Da meine Seele noch stets ungebunden ist?</l>
+            <l>Ich kann, bereit den Tod mit Freuden auszustehen;</l>
+            <l>Mitleidend deinen Stolz und deine Sorgen sehen</l>
+            <stage>(wird von der Wache abgeführet)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Artander, Licas.</stage>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Es soll die Sonne noch vor ihrem Niedergehn,</l>
+            <l>Des stolzen Frevlers Tod und meine Rache sehn.</l>
+            <l>Den Codrus geb ich frey! Doch kann ich noch mich rächen;</l>
+            <l>Ein Vorwand ist genug, um Wort und Treu zu brechen</l>
+            <l>Ich scheue noch das Volk, das, wenn es schwierig wird</l>
+            <l>Oft Recht aus Boßheit thut und oft aus Tugend irrt.</l>
+            <l>Bereite Medons Tod; – – er soll den Tod empfinden!</l>
+            <l>Geh, Codrus nähert sich zugleich mit Elisinden.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <stage>Artander, Codrus, Elisinde.</stage>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Tyrann! Ists durch dein Wort, daß man mir Freyheit läßt?</l>
+            <l>Warum ist deine Treu dieß einz'ge mal so fest,</l>
+            <pb n="69"/>
+            <l>Da Medon mich gewählt? Was hältst du dein Versprechen?</l>
+            <l>Ich bin noch fürchterlich, ich kann Athen noch rächen:</l>
+            <l>Es mache dich mein Tod von diesem Argwohn frey!</l>
+            <l>Ich trotze deinem Zorn und deiner Tyranney;</l>
+            <l>Nichts als mein Tod reicht zu, dir Sicherheit zu geben;</l>
+            <l>Mein Leben ist dein Tod, mein Tod erhält dein Leben.</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>So weicht dein Kaltsinn nun? Du rasest. Meine Macht</l>
+            <l>Hat endlich Codrus Herz aus seiner Ruh gebracht!</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Und ich! – – Ists möglich? Ich? – Ich weiche dem Geschicke,</l>
+            <l>Mein ganzer Muth entflieht bey diesem Augenblicke.</l>
+            <l>Ich weine nun! – – Natur, wie stark ist deine Macht?</l>
+            <l>Mein Sohn! mein Sohn! Wozu hast du mich itzt gebracht?</l>
+            <l><stage>(zu Artander)</stage> Ich weiß, daß ich dich nur durch meinen Schmerz
+              vergnüge.</l>
+            <l>Sieh meine Thränen an! Sieh mich erniedrigt! – – – Siege!</l>
+            <l>Tyrann! Ich komme, dich um Mitleid anzuflehn,</l>
+            <l>Verschone meinen Sohn, laß mich zum Tode gehn!</l>
+            <l>Er hat aus blinder Wahl sich für mich hingegeben</l>
+            <l>Du willst ihn tödten? Du? Schenkt er dir nicht das Leben?</l>
+            <l>Ists möglich daß dein Herz den Trieb der Menschheit spürt,</l>
+            <l>Und daß die Dankbarkeit die stolze Seele rührt,</l>
+            <pb n="70"/>
+            <l>So schone meinen Sohn! – – Du scheinest unbeweget,</l>
+            <l>Mein Schmerz hat noch bey dir die Menschheit nicht erreget:</l>
+            <l>Sprich, willst du mich vielleicht noch mehr erniedrigt sehn?</l>
+            <l>(Verzeih o Theseus!) Ja, Tyrann es soll geschehn.</l>
+            <l>Sieh meine ganze Wuth! Sieh meine Thränen fließen!</l>
+            <l>Sieh mich – – ich sterbe fast – – Sieh mich zu deinen Füssen.</l>
+            <stage>(Sie wirft sich nieder)</stage>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Steh auf und geh von hier! Du sollst ihn sterben sehn.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde</speaker>
+            <stage>steht auf.</stage>
+            <l>Itzt fürchte meinen Zorn nach dem verschmähten Flehn!</l>
+            <l>Ein Herz wie meines ist, wird es so weit getrieben,</l>
+            <l>Bis zur Erniedrigung, kann jede That verüben.</l>
+            <l>Vergebens ließ ich mich zum Flehen nicht herab!</l>
+            <l>Verschone meinen Sohn, der dir das Leben gab,</l>
+            <l>Wenn du dein Leben liebst! Ich scheue kein Verbrechen.</l>
+            <l>Ich will nichts als den Tod; doch will ich erst mich rächen!</l>
+            <l>Tyrann! erzittre nur. Verlangst du nichts als Blut,</l>
+            <l>So nimm das Meinige zum Opfer deiner Wuth:</l>
+            <l>Doch weiter wage nichts! – – Ihr eilt nicht, ihn zu strafen,</l>
+            <l>Ihr Götter, könnt ihn sehn, und eure Blitze schlafen!</l>
+            <l>Was sag ich! – – Ach mein Sohn! – – Verzeihe mein Vergehn!</l>
+            <l>Willst du zum zweytenmal mich vor dir knien sehn?</l>
+            <pb n="71"/>
+            <l part="I">Errette meinen Sohn!</l>
+            <stage>(Sie wirft sich auf die Knie nieder)</stage>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l part="F">Du sollst nun mit ihm sterben!</l>
+            <l>Dein Trotzen und dein Flehn kann nichts als dieß erwerben.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="I">Es ist umsonst! – – Mein Sohn!</l>
+            <stage>(Sie springt rasend auf und setzt ihm einen Dolch auf die Brust.)</stage>
+            <l part="F">Sag, willst du ihn befreyn?</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l part="I">Wie?</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde</speaker>
+            <stage>die ihm den Dolch auf die Brust hält:</stage>
+            <l part="M">Schweige! – – Schwöre mir! – – Verräther stirb – –</l>
+            <stage>(Artander will aufstehn und sich von ihr losmachen. Sie zuckt den Dolch und ist
+              im Begriff zu stoßen.)</stage>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus,</speaker>
+            <stage>der ihr den Arm hält und sie entwaffnet.</stage>
+            <l part="F">Halt ein!</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="I">Was thust du? – – Codrus selbst! – O Himmel?</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l part="F">Licas, Wache!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <stage>Codrus, Elisinde, Artander, Licas, Wache.</stage>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Verrätherinn! Du sollst an meiner blutgen Rache,</l>
+            <l>Wen du beleidigt, sehn. <stage>(zu Cleanth)</stage> Bring die Gefangnen her!</l>
+            <l>Es ist oft sterben selbst Verzweifelnden nicht schwer.</l>
+            <pb n="72"/>
+            <l>Doch deines Sohnes Tod soll erst mich an dir rächen;</l>
+            <l>Vor deinen Augen soll ein Dolch sein Herz durchstechen:</l>
+            <l>Von seinem Blut besprützt sollst du mich siegen sehn,</l>
+            <l>Und da du rasend stirbst, die Götter sterbend schmähn.</l>
+            <l>Dir, Codrus, dank ich nun. Dein Muth erhielt mein Leben:</l>
+            <l>Ich will aus Dankbarkeit dir deine Freyheit geben.</l>
+            <l>Geh, lebe künftig frey, doch ferne von Athen,</l>
+            <l>Und laß in Attica dich niemals wieder sehn.</l>
+            <l>Es sollen dir, noch mehr die Dankbarkeit zu zeigen,</l>
+            <l part="I">Geschenke – –</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l part="F">Niedrigkeit ist stets Tyrannen eigen.</l>
+            <l>Erspare deinen Dank! <stage>(zu Elisinde)</stage> Du, stille deine Pein!</l>
+            <l>Ich weiß in kurzer Zeit wirst du mir gern verzeihn.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Sechster Auftritt.</head>
+          <stage>Codrus, Artander, Elisinde, Medon, Philaide, Licas, Wache.</stage>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Erwartet man mich hier, um mir den Tod zu geben?</l>
+            <l>Nur der, der ihn verdient mag vor dem Tode beben!</l>
+            <l>Ich bin beherzt genug, ihm ins Gesicht zu sehn;</l>
+            <l>Es macht ein edler Tod das ganze Leben schön.</l>
+            <l>Nun ruht mein Herz einmal von seinem vorigen Streite,</l>
+            <l>Ich sterbe freudenvoll an Philaidens Seite.</l>
+            <l>Nichts stöhret meine Ruh, mein Geist eilt freudig fort.</l>
+            <l>Die Hoffnung jener Welt zeigt mir der Tugend Port,</l>
+            <pb n="73"/>
+            <l>In einem Aufenthalt, wo kein Artander wohnet,</l>
+            <l>Wo selbsten Schmerz und Pein die Tugendhaften schonet,</l>
+            <l>Wo Theseus mit uns lebt. Was Lastern schrecklich scheint,</l>
+            <l>Ist wahrer Tugend Lohn – – Doch Elisinde weint!</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Wirst du mir auch verzeihn? Daß ich dich zu befreyen,</l>
+            <l>Erst Mittel angewandt, die mich nun selbst gereuen?</l>
+            <l>Kannst du es glauben? Ich, ich ließ mich bittend sehn –</l>
+            <l>Doch du warst in Gefahr, – ihn für dich anzuflehn,</l>
+            <l>Warf ich mich vor ihn hin. Der Himmel zürnt deswegen,</l>
+            <l>Ich sehs – – Verzweiflung macht ein jedes Herz verwegen!</l>
+            <l>Er schlug es trotzig ab. Es hätte meine Hand</l>
+            <l>Den Wütrich schon gestrafft, von edlen Zorn entbrandt,</l>
+            <l>Doch Codrus hielt mich ab, itzt will ich dich begleiten.</l>
+            <l>Ich will mit festem Muth des Todes Schmerz bestreiten.</l>
+            <l>So furchtbar hat ihm nur die Feigheit vorgestellt,</l>
+            <l>Wer als ein Held gelebt, der stirbt auch als ein Held.</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Du, Licas, gehe nun den Codrus zu begleiten;</l>
+            <l>Führ ihn bald aus der Stadt, geh nicht von seiner Seiten.</l>
+            <l>Du Codrus flieh nunmehr und überlaß Athen</l>
+            <l part="I">Dem Sieger, der itzt herrscht.</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l part="F">Ich bin bereit zu gehn.</l>
+            <stage>Er wirft seinen Hauptschmuck zu Artanders Füssen.</stage>
+            <l>Ich werfe diesen Schmuck zu deinen Füssen nieder.</l>
+            <l>Der Ort, den ich beherrscht, sieht mich nie künftig wieder.</l>
+            <l>Euch Götter, fleh ich an, die ihr Athen beschützt,</l>
+            <l>Erhitzet meinen Muth, stärkt euren Codrus itzt!</l>
+            <pb n="74"/>
+            <l>Ich fühl euch in der Brust, ich fühle neue Stärke,</l>
+            <l>Ihr leitet meinen Schritt, zu diesem großen Werke.</l>
+            <l>Erfüllet dieses mal, was euer Wort versprach;</l>
+            <l>Schon folg ich meiner Pflicht und eurer Antwort nach.</l>
+            <l><stage>(zu Medon.)</stage> Leb wohl, o junger Held, bereit dein edles Leben,</l>
+            <l>Von Theseus Muth erhitzt, für meines hinzugeben.</l>
+            <l>Die That ist allzugroß; nie wird ein Unterthan</l>
+            <l>Für seinen König thun, was du für mich gethan.</l>
+            <l>Ich eile itzt hinweg, du wirst vielleicht noch hören,</l>
+            <l>Die Pflicht der Könige der Nachwelt noch zu lehren.</l>
+            <l>Leb wohl, <stage>(er umarmt ihn)</stage> und muß es seyn, so stirb, wie du
+              gelebt.</l>
+            <l>Geh zur Unsterblichkeit, nach der dein Muth gestrebt.</l>
+            <l>Vergiß nicht, wenn du schon auf des Olympus Höhen</l>
+            <l>Nah beym Alcides bist, Athen noch beyzustehen.</l>
+            <l><stage>(zu Elisinde.)</stage> Prinzessinn! sey noch nicht von Hoffnung ganz
+              beraubt</l>
+            <l>Oft ändert sich das Glück, wenn mans am mindsten glaubt.</l>
+            <l><stage>(zu Philaide.)</stage> Und du behalt den Muth, durch den du dich erhebest,</l>
+            <l>Leb wohl, und denk an mich, wenn du mich überlebest –</l>
+            <l>Ich werde diesen Ort wohl nicht mehr wieder sehn –</l>
+            <l>Es ist gnug, folget mir, und führt mich aus Athen.</l>
+            <stage>(er geht ab und Licas folgt ihm.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Siebenter Auftritt.</head>
+          <stage>Artander, Elisinde, Philaide, Medon, Wache.</stage>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Führt diesen Jüngling ab! Laß ihn auf freyer Strassen,</l>
+            <l>Von knecht'scher Hand entseelt, Athen und Welt verlassen,</l>
+            <pb n="75"/>
+            <l part="I">Dann bringet mir sein Haupt.</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l part="F">Du sagest nichts von mir;</l>
+            <l part="I">Ich geh mit ihm!</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="M">Mein Sohn!</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <stage>Zur Wache auf Elisinde und Philaide zeigend.</stage>
+            <l part="F">Laß diese beyde hier,</l>
+            <l>Sie möchten nur das Volk durch ihr Geschrey erregen.</l>
+            <l>Zum Mitleid läßt sich leicht des Pöbels Herz bewegen.</l>
+            <l>Bleibt hier, ihr sollt sein Haupt mir überliefern sehn.</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>Nein! nichts hält mich zurück, nein, ich will mit ihm gehn.</l>
+            <l>O Medon! Will man uns so gar im Tode trennen?</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>Dein Medon wird vielleicht alleine sterben können.</l>
+            <l>Vielleicht wird durch mein Blut der Götter Zorn gestillt.</l>
+            <l>Der Tod wird mir versüßt durch dein geliebtes Bild:</l>
+            <l>Mein letztes schwaches Ach soll deinen Namen nennen.</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>Artander! Laß uns nicht in unserm Tode trennen,</l>
+            <l>Sey dießmal noch ein Mensch! Es tödt ein einziger Streich,</l>
+            <l>Von deiner Wuth geführt, uns alle zwey zugleich!</l>
+            <l>Trenn uns nicht! tödt uns selbst! Sey grausam aus Erbarmen!</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Sohn! Wahrer Schmerz ist stumm! Sohn laß dich noch umarmen!</l>
+            <pb n="76"/>
+            <l>Ich hemm die Thränen noch, halb Wuth, halb Zärtlichkeit;</l>
+            <l>Sie rührten dich, und itzt ists nicht zum Weinen Zeit</l>
+            <l>Zeit ists zum Tode. Stirb! der Muth standhafter Seelen</l>
+            <l>Zwingt Götter zu bereun, daß sie die Tugend quälen.</l>
+            <l part="I">Ich folge dir im Tod!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">Soll ich noch muthig seyn,</l>
+            <l part="I">So weint nicht! – Bleibt zurück!</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l part="F">Nein du stirbst nicht allein – –</l>
+            <l part="I">O Medon!</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="M">Liebster Sohn!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">Prinzessinn! – – Elisinde! –</l>
+            <stage>(zur Philaide.)</stage>
+            <l>Dieß ist des Todes Schmerz, was ich anitzt empfinde.</l>
+            <l>Was sonst noch übrig bleibt, ist nichts für meinen Muth,</l>
+            <l>Euch Götter von Athen, weyh ich mein treues Blut:</l>
+            <l>Stärkt mich, wenns möglich ist, schützt diese zwo Betrübte,</l>
+            <l>Den besten Theil von mir, die Mutter, die Geliebte.</l>
+            <l>Mein Geist wird in mir frey, der Leib der ihn noch hält,</l>
+            <l>Wird bald nur Asche seyn. Es schwindet Quaal und Welt</l>
+            <l>Vor meinen Augen schon. <stage>(zur Wache)</stage> Kommt, ihr sollt sterben
+              lernen!</l>
+            <l>Nie stirbt ein wahrer Held, er eilt nur zu den Sternen,</l>
+            <l>Nehmt dieses Leben hin, seht meinen Tod so still</l>
+            <l>Und so gelassen an, als ich ihn leiden will.</l>
+            <pb n="77"/>
+            <l>Wenn ihr in meinem Tod mir gleich zu werden strebet,</l>
+            <l>So wißt! nur der stirbt frey, der tugendhaft gelebet.</l>
+            <l part="I">Folget mir –</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide,</speaker>
+            <stage>die sich halb ohnmächtig auf Elisinden lehnt.</stage>
+            <l part="M">O Medon!</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon</speaker>
+            <stage>der im Begriff ist abzugehen, wendet sich um und gehet auf sie zu.</stage>
+            <l part="F">Ach! <stage>(vor sich)</stage> Sey standhaft armes Herz! –</l>
+            <l>Helft ihr – Lebwohl – Dieß war des Lebens letzter Schmerz.</l>
+            <stage>(Medon geht mit einem Theil der Wache.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Achter Auftritt.</head>
+          <stage>Artander, Elisinde, Philaide, einige Wache, hernach Licas.</stage>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Ja, stirb! Das letzte Glück das Helden sich erwerben</l>
+            <l>Ist, für das Vaterland und für die Tugend sterben,</l>
+            <l>Für diese Welt zu groß, ja, gehe hin mein Sohn!</l>
+            <l>In einer besseren erwartet dich dein Lohn.</l>
+            <l>Laß, laß mich wenigstens ihn nicht lang überleben,</l>
+            <l>Tyrann, und eile mir nun selbst den Tod zu geben.</l>
+          </sp>
+          <sp who="#licas">
+            <speaker>Licas</speaker>
+            <stage>eilend.</stage>
+            <l>Herr! Codrus stirbt! Er will vor seinem Tod dich sehn;</l>
+            <l part="I">Man bringt ihn her!</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="F">Er auch? Er stirbt! Es war Athen – –</l>
+          </sp>
+          <pb n="78"/>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Er stirbt! Von welcher Hand hat er den Tod empfangen?</l>
+          </sp>
+          <sp who="#licas">
+            <speaker>Licas.</speaker>
+            <l>Du weißt, daß ich mit ihm aus dem Pallast gegangen:</l>
+            <l>Ein Eifer voller Muth verdoppelt seinen Schritt,</l>
+            <l>Ich eil ihm nach, zu spät, mit ungleich schwächern Tritt.</l>
+            <l>So bald, als er beym Thor sich ohne mich erblickte,</l>
+            <l>Griff er die Wache an. Ich sah, daß es ihm glückte,</l>
+            <l>Daß er zween Dorier noch mit dem Dolch durchstieß,</l>
+            <l>Den seine Hand geführt, als er dich hier verließ.</l>
+            <l>Die Wache kannt ihn nicht; ich rufte, doch vergebens.</l>
+            <l>Ihr Arm, von Zorn gereizt, beraubt ihn bald des Lebens.</l>
+            <l>Er fällt! ich kam dazu: er bittet, dich zu sehn.</l>
+            <l>Die Wache, die ihn trägt, beklagt ihr Versehn.</l>
+            <l>Ich suchte nur umsonst dieß Unglück zu verhüten;</l>
+            <l>Er scheint mit ruhgem Blick dem Tode Trotz zu bieten.</l>
+            <l>Das Volk sieht es erstaunt, und steht, und weint um ihn.</l>
+            <l>Man sieht von trüber Nacht den Pol sich überziehn.</l>
+            <l>Es blitzt, die Erde bebt, und scheinet aufzubrechen;</l>
+            <l>Es scheint der Himmel will den Tod des Codrus rächen.</l>
+            <l part="I">Hier wird er selbst gebracht!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Neunter Auftritt.</head>
+          <stage>Der sterbende Codrus, der sich auf die Wache lehnt.</stage>
+          <stage>Artander, Elisinde, Philaide, Licas.</stage>
+          <sp who="#elisinde">
+            <speaker>Elisinde,</speaker>
+            <stage>die ihm entgegen geht.</stage>
+            <l part="M">Mein König!</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l part="F">Weine nicht!</l>
+            <l>Es ist geschehn – – Mein Herz erfüllte seine Pflicht.</l>
+          </sp>
+          <pb n="79"/>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l>Vor deiner eignen Wuth kann niemand dich bewahren:</l>
+            <l part="I">Durch welche Raserey – –</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l part="F">Lies, und du wirsts erfahren!</l>
+            <l>Dieß hat der Götter Spruch zu Delphos ausgesagt.</l>
+            <l part="I">Lies! – – Zittre!</l>
+            <stage>(Er giebt Artandern ein Blatt und wird auf einen Lehn-Stuhl gesetzt.)</stage>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l part="F">Schwaches Drohn macht mich noch nicht verzagt!</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander</speaker>
+            <stage>liest:</stage>
+            <lg>
+              <l>Wird eines Königs Blut vergossen</l>
+              <l>Von seiner Feinde zorngen Hand:</l>
+              <l>So wird der Krieg beschlossen:</l>
+              <l>So siegt sein Vaterland.</l>
+            </lg>
+            <l>Und dieses trieb dich an, nach deinem Tod zu streben;</l>
+            <l>Darum erhieltest du vor kurzer Zeit mein Leben?</l>
+            <l>Als ihre Wuth auf mich den zorngen Dolch gezückt?</l>
+            <stage>(er weißt auf Elisinden.)</stage>
+            <l>Du stirbst, und dünkest dich in deinem Wahn beglückt:</l>
+            <l>Du glaubst dein Vaterland soll itzt den Sieg erwerben?</l>
+            <l>Dein Neid verwehret mir den Ruhm, zuerst zu sterben.</l>
+            <l>Ich danke dir. Vielleicht hält nicht Apoll sein Wort! –</l>
+            <stage>(Man hört den Donner von ferne.)</stage>
+            <l>Doch was für eine Nacht verfinstert diesen Ort?</l>
+            <l>Zeus dann, daß ihn auch die Fürsten fürchten sollen?</l>
+            <l>Hör ich den Donner nicht von fernen drohend rollen?</l>
+            <l>Es blitzt! Die Erde bebt, ein schrecklich Klaggeschrey</l>
+            <l>Erfüllt die dunckle Luft! Man kommt? Wer eilt herbey?</l>
+            <l>Es tönt ein wild Geräusch mir furchtbar in den Ohren,</l>
+            <l part="I">Ich zittre! – – Freunde helft!</l>
+          </sp>
+        </div>
+        <pb n="80"/>
+        <div type="scene">
+          <head>Zehenter Auftritt.</head>
+          <stage>Artander, Elisinde, Philaide, der sterbende Codrus, Cleanth, Licas, Wache.</stage>
+          <sp who="#cleanth">
+            <speaker>Cleanth</speaker>
+            <stage>eilig mit blossem Schwerdt.</stage>
+            <l part="F">Herr, alles ist verlohren!</l>
+            <l>Ein unbekanntes Volk dringt siegreich durch die Stadt,</l>
+            <l>Durchs Thor, da Codrus Tod das Volk bestürzet hat.</l>
+            <l>Komm, hilf uns, such den Muth der Dorier zu wecken!</l>
+            <l>Es herrscht in ihrer Brust ein ungewohntes Schrecken,</l>
+            <l>Die Götter streiten selbst für unsre Feinde mit:</l>
+            <l>Sie nahn sich dem Pallast und nichts hemmt ihren Schritt.</l>
+            <l>Die Dorier entfliehn, und sterben im entfliehen;</l>
+            <l>Die fallen durch den Blitz, die sich dem Schwerdt entziehen.</l>
+            <l>Der Sturm erfüllt ihr Herz mit banger Furchtsamkeit,</l>
+            <l>Die meisten sind entseelt, noch viele sind zerstreut.</l>
+            <l>Man kämpft, man würgt, man stirbt, und will sich sterbend rächen.</l>
+            <l>Es herrschen Nacht und Tod! Ach! alles auszusprechen,</l>
+            <l>Macht mich die Furcht zu schwach. So vieler Schrecken Bild,</l>
+            <l>Hat auch mein Herz mit Angst und Schauer angefüllt.</l>
+            <l>Die Feinde nahen sich, es weichet schon die Wache,</l>
+            <l>Und auf des Medons Tod folgt eine schnelle Rache!</l>
+            <stage>(Artander steht bestürzt.)</stage>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l part="I">Auf Medons Tod?</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="F"><stage>(mit Schmerz.)</stage> Mein Sohn! – <stage>(muthig)</stage> Der
+              Himmel schützt Athen!</l>
+          </sp>
+          <pb n="81"/>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Ich soll der Götter Spruch, noch selbst erfüllet sehn!</l>
+            <l part="I">Ich danke dem Geschick!</l>
+          </sp>
+          <sp who="#artander">
+            <speaker>Artander.</speaker>
+            <l part="F">Erzürnter Himmel, siege!</l>
+            <l>Doch glaube nicht, daß schon Artander unterliege.</l>
+            <l>Kommt Freunde, sterbt mit mir! Verzweiflung sieget oft,</l>
+            <stage>(er zieht das Schwerdt.)</stage>
+            <l>Wenn alle Rettung fehlt und wenn man nichts mehr hofft.</l>
+            <l>Kommt, Freunde, sterbt mit mir, doch laßt uns tödtend sterben!</l>
+            <l>Die Götter stürzen mich, sie wollen mein Verderben;</l>
+            <l>Sie fordern nun von mir der Unterthanen Blut,</l>
+            <l>Das meinetwegen floß. Durch meine größre Wuth</l>
+            <l>Trotz ich noch ihrem Grimm. Lebt ich nur, um von ihnen</l>
+            <l>Durch grössern Frevel noch die Rache zu verdienen!</l>
+            <stage>Artander, Licas, Cleanth, die Wache gehen mit blosen Schwerdtern ab.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Eilfter Auftritt.</head>
+          <stage>Der sterbende Codrus, Elisinde, Philaide.</stage>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Dank ich nun dem Geschick? Beklag ich meine Noth?</l>
+            <l>Mein Vaterlaud ist frey! Doch, ach, mein Sohn ist todt.</l>
+            <l>Ich bin bestürzt, betäubt: es kämpft in meinem Herzen</l>
+            <l>Ein trauriges Gemisch von Freuden und von Schmerzen.</l>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l>In meinem siegt der Schmerz. O Medon welch Geschick</l>
+            <l>Trieb dich so schnell zum Tod? In einem Augenblick</l>
+            <l>Wärst du vielleicht befreyt. Was nützet dir dein Siegen,</l>
+            <l>Unglückliches Athen! Wenn du bey künftgen Kriegen</l>
+            <pb n="82"/>
+            <l>Von ihm verlassen bist? Wann er, und Codrus fällt,</l>
+            <l>Was herrscht dann für ein Fürst? Was kämpft dann für ein Held?</l>
+            <l>Es soll das Siegsgeschrey nicht meine Klagen stöhren;</l>
+            <l>Ich will nichts mehr von Sieg, nichts mehr von Freude hören.</l>
+            <l>Mein Herz, das Vaterland, Natur und Sieg vergißt,</l>
+            <l>Fragt nichts nach einer Welt, wo Medon nicht mehr ist.</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Hemmt eure Thränen, hofft, und unterwerfft den Willen,</l>
+            <l>Dem Himmel: er allein kann eure Schmerzen stillen.</l>
+            <l>Was uns unmöglich scheint, verrichtet seine Macht.</l>
+            <l>Ich folgte seinem Spruch, sein Rathschluß ist vollbracht.</l>
+            <l>Ich bin dem Tode nah! – – Ich weiß nicht, welches Leben</l>
+            <l>Noch meine Kräfte stärkt, um mir die Zeit zu geben,</l>
+            <l>Der Götterspruch erfüllt und euch beglückt zu sehn.</l>
+            <l>Ich kann die schwache Hand zum Himmel noch erhöhn,</l>
+            <l>Die schon beynah erstarrt. Ihn bitten, meine Thränen,</l>
+            <l>Mein Vaterland noch stets mit Sieg und Heil zu krönen.</l>
+            <l>Es müsse jeder Fürst dem Codrus ähnlich seyn!</l>
+            <l>Das Laster müsse nie der Bürger Herz entweyhn!</l>
+            <l>Das Alter schmücke Muth und Mäßigkeit die Jugend!</l>
+            <l>Durch Siege werd es groß; noch größer durch die Tugend!</l>
+            <l>Ich werde matt; den Geist, der schon die Welt verläßt,</l>
+            <l>Hält unbekannte Macht kaum noch im Körper fest.</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l>Hört seine Bitten an, ihr, die ihr uns beschützet,</l>
+            <l>Ihr Götter! deren Macht, Athen zu rächen, blitzet!</l>
+            <pb n="83"/>
+            <l>Es sieg, es sieg Athen! Und du, beklemmtes Herz,</l>
+            <l>Erstick auf einge Zeit den zu gerechten Schmerz</l>
+            <l>O Sohn du kannst nunmehr von den gestirnten Höhen</l>
+            <l>Den Sieg des Vaterlands und meine Thränen sehen.</l>
+            <l>Es ist nichts menschliches, nichts schwaches mehr an dir,</l>
+            <l>Und frey vom Schmerz und Pein siehst du herab nach mir.</l>
+            <l>Flöß mir die Großmuth ein, mein Unglück zu ertragen,</l>
+            <l>Bey dem gemeinen Glück nicht weibisch zu verzagen!</l>
+            <l>Es soll dir meine Treu ein ewigs Dankmaal baun.</l>
+            <l>Kein Bürger in Athen solls ohne Thränen schaun!</l>
+            <l>Die Jungfraun sollen es mit frischen Rosen krönen,</l>
+            <l>Man soll dir Lieder weyhn, doch oft gestöhrt von Thränen!</l>
+            <l>Es soll dein Vaterland dir jährlich Weihrauch streun;</l>
+            <l>Beschütz dein Vaterland, du sollst sein Schutzgeist seyn!</l>
+            <l>Dein Geist zieh vor dem Heer in allen seinen Kriegen</l>
+            <l part="I">Und schrecke jeden Feind – –</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Letzter Auftritt.</head>
+          <stage>Codrus, Elisinde, Philaide, Medon, Nileus, Gefolge mit bloßen Schwerdtern.</stage>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l part="F">Wir sind nun frey, wir siegen!</l>
+            <stage>Sie laufen ihm beyde entgegen, und führen ihn gegen den Rand der Bühne, wo Codrus
+              sitzt.</stage>
+          </sp>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l part="I">Er ists! Er lebt!</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="M">Mein Sohn!</l>
+          </sp>
+          <pb n="84"/>
+          <sp who="#philaide">
+            <speaker>Philaide.</speaker>
+            <l part="F">O Medon! Welches Glück!</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Tritt näher! – – Welcher Gott gab dich Athen zurück?</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon.</speaker>
+            <l>In welchem Zustand muß mein Auge dich erblicken?</l>
+            <l>Es kann nun unser Sieg Athen nur halb entzücken,</l>
+            <l>Wenn unser König fällt! Herr! Der Thebaner Schaar,</l>
+            <l>Die, wie ich dir gesagt, der Stadt schon nahe war,</l>
+            <l>Kam unversehens an, von ew'ger Macht bewogen.</l>
+            <l>Die Nacht mit welcher sich der Himmel überzogen,</l>
+            <l>Das schreckliche Geräusch, von nahen Sturm erweckt,</l>
+            <l>Die Götter, die mit Furcht der Feinde Herz geschreckt,</l>
+            <l>Ließ ihnen zu, mit Muth in unsre Stadt zu dringen,</l>
+            <l>Als die bestimmte Schaar mich zu dem Tod zu bringen,</l>
+            <l>Mich auf den Markt geführt. Das Schwerdt war schon gezückt,</l>
+            <l>Alß unversehns ein Pfeil von fernen abgedrückt,</l>
+            <l>Den, der mich tödten sollt, todt auf den Boden strecket.</l>
+            <l>Nileus wars, der sich von edlem Muth erwecket,</l>
+            <l>Von Banden los gemacht, als mir das Schwerdt gedroht.</l>
+            <l>Man lauft Verwirrungsvoll, erschrickt, und glaubt mich todt.</l>
+            <l>Nunmehr fieng Thebens Volk an, muthig loszubrechen,</l>
+            <l>Sie wollten meinen Tod an allen Feinden rächen.</l>
+            <l>Ich zeige mich zuletzt, wir siegen; alles fällt.</l>
+            <l>Artander, den man noch bisher gefesselt hält,</l>
+            <l>Erwartet seinen Tod und zittert in den Banden.</l>
+            <l>Der Sturm der uns bisher im Siegen beygestanden,</l>
+            <pb n="85"/>
+            <l>Macht sanfter stille Plaz: Die Nacht ist schon zerstreut;</l>
+            <l>Der gütge Himmel glänzt mit neuer Heiterkeit.</l>
+            <stage>(Es blitzt und linker Hand hört man Donnern)</stage>
+            <l>Der Donner läßt sich noch, der Götter Macht zu lehren,</l>
+            <l>Zum Zeichen ihrer Gunst, von linker Seiten hören.</l>
+            <l>Der Krieg und unsre Quaal ist auf einmal vorbey;</l>
+            <l>Die Götter sind gerecht, Athen ist wieder frey!</l>
+          </sp>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Es ist geschehn! – – Ich sehs aus diesen Donnerstreichen, – –</l>
+            <l>Ihr Götter! Dieser Blitz, itzt eurer Gnaden Zeichen,</l>
+            <l>Treff jedes Königs Herz, der sich im Glück vergißt;</l>
+            <l>Und der nicht für sein Volk bereit zu sterben ist!</l>
+            <l>O Medon, nähre dich! Du nur bist, zu regieren</l>
+            <l>An meiner Stelle, werth. Laß nicht dein Herz verführen.</l>
+            <l>Ein hoher Stand droht oft der Tugend mit Gefahr!</l>
+            <l>Beschütze dieses Volk, von dem ich Vater war.</l>
+          </sp>
+          <sp who="#medon">
+            <speaker>Medon,</speaker>
+            <stage>der vor ihm auf die Knie fällt:</stage>
+            <l>Nein! Niemand ist es werth, daß er nach dir regieret.</l>
+            <l>Die Götter deren Macht dieß alles ausgeführet,</l>
+            <l>Sind es alleine werth. Die mögen nun allein</l>
+            <l>Mit ungetheilter Macht Athens Beherrscher seyn!</l>
+            <l>Die freygewordne Stadt soll keinen Herrn erkennen,</l>
+            <l>Und welchen Namen kann man wohl nach Codrus nennen?</l>
+            <l>Als Bürger von Athen bring ich mein Leben zu,</l>
+            <stage>(Er steht auf und giebt Philaiden die Hand.)</stage>
+            <l>Beglückt durch deine Hand in ungestöhrter Ruh.</l>
+            <l>Der Kronen prächtge Last mag sich, wer will, erwerben;</l>
+            <l>Ich wünsche mir nichts mehr, – – als einst, wie du zu sterben.</l>
+          </sp>
+          <pb n="86"/>
+          <sp who="#codrus">
+            <speaker>Codrus.</speaker>
+            <l>Genug – – – Athen ist frey – – – Und ich that meine Pflicht.</l>
+            <l>Lebt wohl! – – Umarmet mich! Lebt wohl, vergeßt mich nicht!</l>
+            <stage>(Medon und Elisinde umarmen ihn)</stage>
+            <l>Baut mir kein Denkmaal auf, als nur in eurem Herzen.</l>
+            <l>Wie glücklich sterb ich nicht! Ich fühle keine Schmerzen.</l>
+            <l><stage>(zu Philaiden)</stage> Princessinn lebe wohl, du weinst, du scheinst
+              gerührt!</l>
+            <l>Ihr Götter, deren Macht die Sterblichen regiert,</l>
+            <l>Laßt nun die Seele frey! – – O letzte süße Stunden!</l>
+            <l>Im Leben hab ich noch kein solches Glück empfunden.</l>
+            <l>Wie schön ist nicht der Tod, der Tod fürs Vaterland!</l>
+            <l>Leb wohl – – Ich werde schwach, – – Drück itzt mit sanfter Hand</l>
+            <l part="I">Die Augen zu – – – Der Tod – –</l>
+          </sp>
+          <sp who="#elisinde">
+            <speaker>Elisinde.</speaker>
+            <l part="F">Er stirbt – – – Empfangt ihn Götter!</l>
+            <l>Die freye Seele steigt in einem Donnerwetter</l>
+            <l>Zu dem Olymp empor! Ihr Klagen haltet ein!</l>
+            <l>Sein Tod will nicht beweint, er will bewundert seyn.</l>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
