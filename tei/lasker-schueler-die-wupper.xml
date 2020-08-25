@@ -59,7 +59,7 @@
           <person xml:id="mutter_pius" sex="FEMALE">
             <persName>Mutter Pius</persName>
           </person>
-          <person xml:id="lange_anna" sex="FEMALE">
+          <person xml:id="lange_anna" sex="MALE">
             <persName>Lange Anna</persName>
           </person>
           <person xml:id="amadeus" sex="MALE">
@@ -68,17 +68,17 @@
           <person xml:id="pendelfrederech" sex="MALE">
             <persName>Pendelfrederech</persName>
           </person>
-          <person xml:id="kroatenjungen" sex="MALE">
-            <persName>Kroatenjungen</persName>
-          </person>
+          <personGrp xml:id="kroatenjungen" sex="MALE">
+            <name>Kroatenjungen</name>
+          </personGrp>
           <person xml:id="erster_helfershelfer" sex="MALE">
             <persName>Erster Helfershelfer</persName>
           </person>
           <person xml:id="zweiter_helfershelfer" sex="MALE">
             <persName>Zweiter Helfershelfer</persName>
           </person>
-          <person xml:id="die_drei_helfershelfer" sex="MALE">
-            <persName>Die drei Helfershelfer</persName>
+          <person xml:id="dritter_helfershelfer" sex="MALE">
+            <persName>Dritter Helfershelfer</persName>
           </person>
           <person xml:id="berta" sex="FEMALE">
             <persName>Berta</persName>
@@ -113,9 +113,9 @@
           <person xml:id="weibsbild_1" sex="FEMALE">
             <persName>Weibsbild</persName>
           </person>
-          <person xml:id="gassenkinder" sex="MALE">
-            <persName>Gassenkinder</persName>
-          </person>
+          <personGrp xml:id="gassenkinder" sex="UNKNOWN">
+            <name>Gassenkinder</name>
+          </personGrp>
           <person xml:id="gassenkind_2" sex="MALE">
             <persName>Gassenkind</persName>
           </person>
@@ -143,9 +143,9 @@
           <person xml:id="ein_zweiter_von_den_herren" sex="MALE">
             <persName>Ein Zweiter von den Herren</persName>
           </person>
-          <person xml:id="die_herren" sex="MALE">
-            <persName>Die Herren</persName>
-          </person>
+          <personGrp xml:id="die_herren" sex="MALE">
+            <name>Die Herren</name>
+          </personGrp>
           <person xml:id="ein_arbeiter_3" sex="MALE">
             <persName>Ein Arbeiter</persName>
           </person>
@@ -155,9 +155,9 @@
           <person xml:id="ein_dritter_arbeiter_3" sex="MALE">
             <persName>Ein dritter Arbeiter</persName>
           </person>
-          <person xml:id="die_ganze_schar" sex="MALE">
-            <persName>Die ganze Schar</persName>
-          </person>
+          <personGrp xml:id="die_ganze_schar" sex="MALE">
+            <name>Die ganze Schar</name>
+          </personGrp>
           <person xml:id="die_riesendame" sex="FEMALE">
             <persName>Die Riesendame</persName>
           </person>
@@ -167,9 +167,9 @@
           <person xml:id="zweites_kind" sex="UNKNOWN">
             <persName>Zweites Kind</persName>
           </person>
-          <person xml:id="kinder" sex="UNKNOWN">
-            <persName>Kinder</persName>
-          </person>
+          <personGrp xml:id="kinder" sex="UNKNOWN">
+            <name>Kinder</name>
+          </personGrp>
           <person xml:id="gretchen_stomms" sex="FEMALE">
             <persName>Gretchen Stomms</persName>
           </person>
@@ -182,9 +182,9 @@
           <person xml:id="der_herumtreiber" sex="MALE">
             <persName>Der Herumtreiber</persName>
           </person>
-          <person xml:id="die_arbeiter_4" sex="MALE">
-            <persName>Die Arbeiter</persName>
-          </person>
+          <personGrp xml:id="die_arbeiter_4" sex="MALE">
+            <name>Die Arbeiter</name>
+          </personGrp>
           <person xml:id="arbeiter_4b" sex="MALE">
             <persName>Einer der Arbeiter</persName>
           </person>
@@ -212,19 +212,17 @@
           <person xml:id="arbeiter_4j" sex="MALE">
             <persName>Ein anderer Arbeiter</persName>
           </person>
-          <person xml:id="die_jungens" sex="MALE">
-            <persName>Die Jungens</persName>
-          </person>
+          <personGrp xml:id="die_jungens" sex="MALE">
+            <name>Die Jungens</name>
+          </personGrp>
           <listRelation type="personal">
-            <relation name="parent_of" active="#frau_sonntag" passive="#heinrich"/>
-            <relation name="parent_of" active="#frau_sonntag" passive="#eduard"/>
+            <relation name="parent_of" active="#frau_sonntag" passive="#heinrich #eduard"/>
             <relation name="parent_of" active="#grossvatter_wallbrecker" passive="#amanda"/>
             <relation name="related_with" active="#grossvatter_wallbrecker" passive="#carl"/>
             <relation name="related_with" active="#mutter_pius" passive="#carl"/>
             <relation name="siblings" mutual="#lieschen #august"/>
             <relation name="friends" mutual="#lieschen #gretchen_stomms"/>
-            <relation name="associated_with" active="#auguste" passive="#frau_sonntag"/>
-            <relation name="associated_with" active="#berta" passive="#frau_sonntag"/>
+            <relation name="associated_with" active="#auguste #berta" passive="#frau_sonntag"/>
           </listRelation>
         </listPerson>
       </particDesc>
@@ -971,7 +969,7 @@
           <speaker>Großvatter Wallbrecker:</speaker>
           <p>Macht euch zum Teufel, ihr versoffene Nachteulen!</p>
         </sp>
-        <sp who="#die_drei_helfershelfer">
+        <sp who="#erster_helfershelfer #zweiter_helfershelfer #dritter_helfershelfer">
           <speaker>Die drei Helfershelfer:</speaker>
           <p>Johannes' Sohn is ein Mörder, soll sich noch mal sehen lassen.</p>
         </sp>
