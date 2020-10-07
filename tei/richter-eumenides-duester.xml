@@ -1,0 +1,1596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Eumenides Düster</title>
+        <title type="sub">Trauerspiel nach Adolph Müllner's Weise</title>
+        <author key="pnd:121050955">Richter, Anton</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000507</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q100145770</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Google Books</name>
+          <idno type="URL">https://books.google.com/books?id=UuRHAAAAMAAJ&amp;pg=RA1-PA1</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <title>Eumenides Düster. Trauerspiel nach Adolph Müllner's Weise von Ludwig Stahlpanzer.
+              Braunschweig: Vieweg 1828.</title>
+            <date type="print" when="1819"/>
+            <date type="premiere"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="eumenides" sex="MALE">
+            <persName>Eumenides Düster</persName>
+          </person>
+          <person xml:id="ullo" sex="MALE">
+            <persName>Ullo</persName>
+          </person>
+          <person xml:id="manona" sex="FEMALE">
+            <persName>Manona</persName>
+          </person>
+          <person xml:id="hold" sex="MALE">
+            <persName>Hold</persName>
+          </person>
+          <person xml:id="thorwald" sex="MALE">
+            <persName>Thorwald</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="associated_with" active="#ullo" passive="#eumenides"/>
+            <relation name="spouses" mutual="#eumenides #manona"/>
+            <relation name="parent_of" active="#eumenides #manona" passive="#hold"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2020-10-07">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <pb n="3"/>
+      <div type="front">
+        <head>Eumenides Düster.</head>
+        <head>Trauerspiel nach Adolph Müllner's Weise von Ludwig Stahlpanzer.</head>
+        <epigraph>
+          <p>Si pugnare non vultis, licet fugere.</p>
+          <bibl>Seneca.</bibl>
+        </epigraph>
+        <p>Braunschweig,</p>
+        <p>Druck und Verlag von Friedrich Vieweg.</p>
+        <dateline>1828.</dateline>
+      </div>
+      <pb n="4"/>
+      <pb n="5"/>
+      <div type="preface">
+        <head>Vorwort des Verlegers.</head>
+        <p>Herr Hofrath Müllner äußert in der Vorrede zu dem ersten Theile seiner dramatischen
+          Werke, <emph>pag. XXXI</emph>, daß er nachfolgende Parodie mit Vergnügen gelesen, und sie
+          mit dem Apotheker-Zettel »als niederschlagendes Pulver zu gebrauchen,« seinem Drama
+          beigefügt haben würde wenn es ihm rechtlich erlaubt gewesen wäre.</p>
+        <p>Diese Erlaubniß und Berechtigung habe ich von dem, zu meinem und gewiß zum Bedauern
+          Vieler, zu früh verstorbenen Verfasser, unter andern Bedingungen auch gegen
+            <emph>die</emph> erlangt, ihn nicht zu nennen.</p>
+        <p>Später wollte zwar der Herr Hofrath Müllner, in einer Anmerkung zu seiner Vorrede,
+          erklären: daß ihm von der Mutter des Verstorbenen dessen poetischer Nachlaß mitgetheilt
+          worden, und dieser ihm würdig schiene, als Sammlung öffentlich zu erscheinen; dahin, nicht
+          unter <pb n="6"/> seine Dramen, möchte dann auch der Eumenides Düster gehören.</p>
+        <p>Aber ich hatte das Verlagsrecht, durch die obengedachte Aeußerung des Herrn Hofr. Müllner
+          dazu veranlaßt, schon, und noch von dem Verfasser selbst erlangt; auch war die
+          typographische Einrichtung der dramatischen Werke mir (Vorerinnerung <emph>pag.
+          IV.</emph>) überlassen und bereits getroffen. So mag denn nun Eumenides Düster von
+            <emph>den</emph> Besitzern derselben, welche den 1sten and 2ten Theil nicht wollen
+          zusammen binden lassen, und dem ersten eine gleiche Stärke mit den übrigen Theilen
+          wünschen, als Supplement beigebunden werden. Von mir wird er den Käufern dieser von mir
+          verlegten Gesammt-Ausgabe der Müllnerschen dramatischen Werke, als mein wohlerworbenes
+          Eigenthum und als unentgeltliche Anlage geliefert.</p>
+        <dateline>Braunschweig, im März 1828.</dateline>
+        <signed>Friedrich Vieweg.</signed>
+      </div>
+    </front>
+    <pb n="9"/>
+    <body>
+      <div type="prologue">
+        <head>Ullo's Tod oder das Verbrechen.</head>
+        <head>Vorspiel.</head>
+        <pb n="10"/>
+        <castList>
+          <head>Personen.</head>
+          <castItem>Eumenides Düster, Dichter.</castItem>
+          <castItem>Ullo, dessen Diener.</castItem>
+        </castList>
+        <pb n="11"/>
+        <div type="scene">
+          <head>Erste Scene.</head>
+          <stage>Zimmer in einem Gasthofe; auf einer Seite ein Paar Pauken. Eumenides sitzt am
+            Schreibetische, vor ihm die alabasterne Büste Shakespeare's, und einige Bücher. Er wirft
+            ein Blatt zurück und steht auf.</stage>
+          <sp who="#eumenides">
+            <lg>
+              <l>Nein! noch sind der Schreckgestalten,</l>
+              <l>Noch der Gräuel nicht genug.</l>
+              <l>Gräßlicher muß sich's entfalten</l>
+              <l>Durch des Schicksals herben Spruch;</l>
+              <l>Toller müssen die Gewalten</l>
+              <l>Fesselloser Teufel schalten!</l>
+            </lg>
+            <lg>
+              <l>Ha! wer deine Flügel hätte,</l>
+              <l>Sturmgewalt'ger Aeschylos!</l>
+              <l>Um sich zieh'nd in langer Kette</l>
+              <l>Schwarzer Eumeniden Troß.</l>
+              <l>Und den Hörer, bange harrend,</l>
+              <l>Faßt des Grauses Geisterhand;</l>
+              <l>Zitternd steht er, dann erstarrend,</l>
+              <l>Fest vor sich den Blick gebannt.</l>
+              <l>Kalt und blutbaar jede Wange,</l>
+              <pb n="12"/>
+              <l>Jedes Haar emporgesträubt;</l>
+              <l>Und im Sitz vom ersten Range,</l>
+              <l>Von der Reise noch bestäubt,</l>
+              <l>Schaut der selige Poete</l>
+              <l>Nieder in die Schreckensöde.</l>
+            </lg>
+            <lg>
+              <l>Wenn der Sturm nun auf der Bühne</l>
+              <l>Ausgetobt und ausgekracht,</l>
+              <l>Und der Held, dem Herrn zur Sühne,</l>
+              <l>Sich hat selber todtgemacht,</l>
+              <l>Und der Vorhang ist gefallen;</l>
+              <l>Dann mit lautem Donnershall,</l>
+              <l>Tausendstimmig, überall</l>
+              <l>Hört man bravo! bravo! schallen,</l>
+              <l>Bravissimo, bravissimo!</l>
+              <l>Und der Dichter, innig froh,</l>
+              <l>Beugt den hochberühmten Rücken</l>
+              <l>Und entschwindet ihren Blicken.</l>
+            </lg>
+            <lg>
+              <l>O, geschwind zum Schreibetische,</l>
+              <l>Daß mich solches Glück erfrische!</l>
+              <stage>(Er sitzt einige Minuten nachdenkend, den Kopf in die Hand gestützt, dann
+                springt er auf und schlägt sich vor die Stirne.)</stage>
+              <pb n="13"/>
+              <l>Leere Kugel, schlechtes Feld!</l>
+              <l>Wit dir kein Gedank' entkeimen,</l>
+              <l>Der, zum Schauerspiel geschwellt,</l>
+              <l>Sich entfalt' in düstern Reimen?</l>
+              <l>Wehe, wie ein Karrngaul träge</l>
+              <l>Immer schleicht die alten Wege,</l>
+              <l>Und vor den gewohnten Schenken</l>
+              <l>Nicht vorüber ist zu lenken,</l>
+              <l>Also ziehn mir die Gedanken,</l>
+              <l>Wie gebannt in feste Schranken,</l>
+              <l>Immer nur die alte Bahn.</l>
+              <l>Ach, kein Mühen hilft, kein Sinnen!</l>
+              <l>Fruchtlos nur streng' ich mich an,</l>
+              <l>Etwas Neues zu gewinnen.</l>
+              <l><stage>(Er schellt.)</stage> Glocke schrei' mit hellem Klingen,</l>
+              <l>Mir den Ullo herzubringen!</l>
+              <stage>(Er nimmt einen Kalender.)</stage>
+              <l>Juli – 's ist Eliastag –</l>
+              <l>Sind etwa des Abgrunds Geister</l>
+              <l>Dieses Tages finstre Meister,</l>
+              <l>Daß mir nichts gelingen mag?</l>
+            </lg>
+          </sp>
+        </div>
+        <pb n="14"/>
+        <div type="scene">
+          <head>Zweite Scene.</head>
+          <stage>Ullo. Eumenides.</stage>
+          <sp who="#ullo">
+            <speaker>Ullo.</speaker>
+            <lg>
+              <l>Lieber Herr, ich bin erschrocken –</l>
+              <l>Oh! wie finster ist dein Blick,</l>
+              <l>Und wie dunkel deine Locken!</l>
+            </lg>
+          </sp>
+          <sp who="#eumenides">
+            <speaker>Eumenides.</speaker>
+            <lg>
+              <l>Finster, ganz wie mein Geschick.</l>
+              <l>Sieh, ein frommer Dichtersmann</l>
+              <l>Denkt viel Ehre zu erjagen,</l>
+              <l>Setzt sich, fängt ein Schauspiel an,</l>
+              <l>Und vergißt, ein Kreuz zu schlagen.</l>
+              <l>Bei der Lampe trübem Schimmer,</l>
+              <l>Bei des Regentages Licht</l>
+              <l>Sitzt der gute Dichter immer,</l>
+              <l>Stündlich mehrt sich sein Gedicht;</l>
+              <l>Bunte Reime schreibt er viel,</l>
+              <l>Lustig schwirrt der Gänsekiel.</l>
+              <l>Endlich, da's zu Stand gekommen</l>
+              <l>Und er nun sein Werk besieht,</l>
+              <l>Weh', da ist's das alte Lied,</l>
+              <pb n="15"/>
+              <l>Das man lange schon vernommen.</l>
+              <l>Also zieht des Teufels Tücke</l>
+              <l>Listig ein durch jede Lücke!</l>
+              <stage>(Da Ullo reden will.)</stage>
+              <l>Schweig, und schließ den kecken Mund,</l>
+              <l>Denn mein Jähzorn lodert heftig.</l>
+              <l>Nimm der Pauken tönend Rund,</l>
+              <l>Rühr' sie mit den Fäusten kräftig,</l>
+              <l>Daß der Töne Sturmeswellen</l>
+              <l>Tief mir in die Seele schwellen.</l>
+              <l>Dann, mit leichtem Fingerschlag,</l>
+              <l>Töne lind' und leise nach;</l>
+              <stage>(Ullo stürmt <emph>crescendo</emph>.)</stage>
+              <l>Denn die Seele zu durchdringen,</l>
+              <l>Ist das Ohr der breitste Weg.</l>
+            </lg>
+            <lg>
+              <l>Wie sie in dem Waldgeheg'</l>
+              <l>Sich in tolle Reigen schlingen!</l>
+              <l>Denn die Schellentrommeln klingen,</l>
+              <l>Und der Sturmeshall im Hain,</l>
+              <l>Und der Gießbach rauschet drein!</l>
+              <l>Sohl' und Thyrsus hochgeschwenkt!</l>
+              <l>Rock und Haare Sturmgeflatter!</l>
+              <pb n="16"/>
+              <l>Laub im Haar und Ros' und Natter!</l>
+              <l>Tiger an dem Schwanz gelenkt!</l>
+              <l>Hurrah! Tannen, Waldespflanzen!</l>
+              <l>Möchtet gern ein Stückchen tanzen!</l>
+              <l>Wie die Well'n, die silberhellen,</l>
+              <l>Hüpfen aus den Felsenquellen!</l>
+              <l>Hei! wie süße, Bacchuslust,</l>
+              <l>Bacchusfreud' in kühner Brust!</l>
+              <stage>(Ullo paukt <emph>piano</emph>.)</stage>
+              <l>Milder wird das strenge Tönen,</l>
+              <l>Und die sturmgeschwung'nen Schönen,</l>
+              <l>Nymphen, lockige Dryaden,</l>
+              <l>Mit der Bacchusdiener Schwarme,</l>
+              <l>Hingestreckt an Stroms Gestaden,</l>
+              <l>Die an Panthers grimmen Haupt,</l>
+              <l>Die von Rosen überlaubt,</l>
+              <l>Ruhn in Schlummers weichem Arme</l>
+            </lg>
+          </sp>
+          <stage>(Ullo stürmt, Eumenides läuft umher, dann ergreift er die Büste.)</stage>
+          <sp who="#eumenides">
+            <speaker>Eumenides.</speaker>
+            <lg>
+              <l>Neu Gebrülle, neues Schmettern</l>
+              <l>Von des Blocksbergs kahlem Haupt,</l>
+              <pb n="17"/>
+              <l>Rings von Sturmeswuth umschnaubt,</l>
+              <l>Und umtanzt von Donnerwettern!</l>
+              <l>Ist dir's auch zu Ohr gedrungen?</l>
+              <l>Komm, vom Tisch herabgeschwungen,</l>
+              <l>Shakespeare, steinerner Genoß!</l>
+              <l>Schüttle weg des Tod's Geschoß!</l>
+              <l>Frisch zum Reigen, grimm und bunt!</l>
+              <l>Jauchze mit dem blassen Mund,</l>
+              <l>Daß der Ruf, das Ringeltoben</l>
+              <l>Anschlag' an die Wolken oben</l>
+              <l>An des Himmels ehern Rund!</l>
+              <l>Daß der Fersen Lustgestampfe</l>
+              <l>Nieder, wo im Glutendampfe</l>
+              <l>Die Verlorenen verzweifeln,</l>
+              <l>Niederhalle zu den Teufeln,</l>
+              <l>Nieder in der Hölle Schlund.</l>
+              <l>Wie die Brust schwillt! Wie die Augen</l>
+              <l>Rollen in der engen Höhle!</l>
+              <l>Schwarze, blut'ge Musen hauchen</l>
+              <l>Mir Begeist'rung in die Seele!</l>
+              <stage>(Stammelnd, in Absätzen.)</stage>
+              <l>Blutschuld – Fluch – des Teufels Macht! –</l>
+              <pb n="18"/>
+              <l>Ahnung – Träume! – Donner kracht –</l>
+              <l>Heulen, Heulen – Klaggetön –</l>
+            </lg>
+          </sp>
+          <sp who="#ullo">
+            <speaker>Ullo</speaker>
+            <stage>(aufhörend).</stage>
+            <lg>
+              <l>Länger kann ich's nicht ersehn.</l>
+              <l>Lieber Herr, ist dir nicht wohl?</l>
+            </lg>
+          </sp>
+          <sp who="#eumenides">
+            <speaker>Eumenides</speaker>
+            <stage>(schleudert ihm die Büste an den Kopf, so daß er wankt).</stage>
+            <lg>
+              <l>Ha! daß dich der Teufel hol'! –</l>
+              <l>Kaum, daß der Begeist'rung Blüthe</l>
+              <l>Mir entsprossen im Gemüthe,</l>
+              <l>Muß des Tölpels thöricht Sprechen</l>
+              <l>Alles ab- und niederbrechen!</l>
+            </lg>
+          </sp>
+          <stage>(Ullo, wie krampfig die Faust geballt, schlägt auf eine Pauke, daß das Fell
+            zerspringt und sinkt um.)</stage>
+          <sp who="#eumenides">
+            <speaker>Eumenides</speaker>
+            <stage>(erschrocken).</stage>
+            <lg>
+              <l>Weh! ist's Wahrheit, ist's kein Wahn?</l>
+              <l>Wilder Schauder packt mich an!</l>
+              <stage>(Vor ihm niedergeworfen.)</stage>
+              <l>Blutig bleiche Schreckgestalt!</l>
+              <l>Ullo, Ullo! steig empor!</l>
+              <pb n="19"/>
+              <l>Spreng' des Todes eisern Thor!</l>
+              <l>Weh'! sei nicht so starr und kalt!</l>
+              <l>Hör' den weinenden Poeten,</l>
+              <l>Reiß mich aus den Todesnöthen!</l>
+              <stage>(Er richtet sich bleich auf den Knieen auf.)</stage>
+              <l>Nein! 's ist aus! Weit auf, weit auf</l>
+              <l>Klafft der Hölle rother Rachen!</l>
+              <l>Aus des Blutes warmen Borne,</l>
+              <l>Mit der Klaue, mit dem Horne</l>
+              <l>Grimmig steigt der Teufel auf!</l>
+              <l>Tiefher tönet wildes Lachen!</l>
+            </lg>
+            <lg>
+              <l>Wie der Pauke Eselsfell,</l>
+              <l>Ist nun ganz mein Glück zerrissen,</l>
+              <l>Und ich irr' in Finsternissen,</l>
+              <l>Ach! von keiner Sonne hell.</l>
+              <l>Fort zum ruhelosen Fliehen</l>
+              <l>Treibt mich nächtliche Gewalt</l>
+              <l>Durch der Wiese lieblich Blühen,</l>
+              <l>Durch den sangesfrohen Wald.</l>
+              <l>Ach! den Athemlosen, Matten</l>
+              <l>Labt kein Quell, kein kühler Schatten!</l>
+            </lg>
+          </sp>
+          <stage>(Er stürzt hinaus.)</stage>
+          <pb n="20"/>
+          <sp who="#ullo">
+            <speaker>Ullo</speaker>
+            <stage>(hebt sich langsam und vorsichtig empor).</stage>
+            <lg>
+              <l>Ist es fort, mein Dichterlein?</l>
+              <l>Hei! der kommt mir wohl nicht wieder,</l>
+              <l>Und was hier ist, nenn' ich mein!</l>
+              <l>Sel'ger Ullo, stimme Lieder,</l>
+              <l>Stimme Siegeslieder an!</l>
+              <l>Heimlich dort im stillen Schrein</l>
+              <l>Lockt mich blanker Silberschein;</l>
+              <l>Alles, alles ist nun mein!</l>
+              <l>Singe Lieder, frohe Lieder,</l>
+              <l>Ullo, hochbeglückter Mann!</l>
+            </lg>
+          </sp>
+        </div>
+      </div>
+      <pb n="21"/>
+      <div type="act">
+        <head>Der Eliastag, in Einem Aufzug.</head>
+        <epigraph>
+          <p>Wenn der unreine Geist von einem Menschen ausfährt, zieht er durch dürres Land, sucht
+            Ruhe und findet keine. Da spricht er: Ich will wieder in mein Haus zurück, von wannen
+            ich gekommen bin. Und er kommt, und findet's <emph>müßig, gekehrt und geschmückt</emph>.
+            Da geht er und nimmt mit sich sieben andere Teufel, die grimmiger sind, als er, und sie
+            ziehn ein und wohnen allda, und es wird zuletzt schlimmer mit jenem Menschen, als es
+            zuvor war.</p>
+          <bibl>Matthäus.</bibl>
+        </epigraph>
+        <pb n="22"/>
+        <castList>
+          <head>Personen.</head>
+          <castItem>Eumenides Düster, Dichter.</castItem>
+          <castItem>Manona, dessen Weib.</castItem>
+          <castItem>Hold, ihr Kind, eilf Jahr.</castItem>
+          <castItem>Thorwald, Mann aus der Ferne.</castItem>
+          <castItem>Packan, ein Hund.</castItem>
+        </castList>
+        <p><emph>Anmerk.</emph> Die Deutlichkeit schien zu verlangen, daß das hie und da einfallende
+          Gewitter näher bestimmt würde, welches so geschehen ist: <lb/>1) Ordinäres Gewitter.
+          <lb/>2) Mittelblitz und Mitteldonner. <lb/>3) Hauptdonner und Hauptblitz.</p>
+        <pb n="23"/>
+        <div type="scene">
+          <head>Erste Scene.</head>
+          <sp who="#manona">
+            <speaker>Manona</speaker>
+            <stage>(kommt).</stage>
+            <lg>
+              <l>Kaum, daß auf dem Sammetpfühle</l>
+              <l>Vor des Mittags heißem Strahl</l>
+              <l>Ich das Auge zugeschlossen,</l>
+              <l>Und in farbigem Gewühle</l>
+              <l>Nun das Inn're war zerflossen;</l>
+              <l>Da, zur Lust mir und zur Qual,</l>
+              <l>Schön und grausend, streng und mild,</l>
+              <l>Stieg empor das alte Bild,</l>
+              <l>Das im mitternächt'gen Schlummer</l>
+              <l>Mich durchzuckt mit Freud' und Kummer;</l>
+              <l>Gleich als könnt' ich es erfassen,</l>
+              <l>Steht es da vor meinem Blick;</l>
+              <l>Immer kommt es mir zurück,</l>
+              <l>Und ich kann davon nicht lassen.</l>
+              <stage>(Sie versinkt in Nachdenken; dann mit einem Blick an das Fenster.)</stage>
+              <pb n="24"/>
+              <l>Wie am Himmel sich zusammen</l>
+              <l>Schwarz und schwer die Wolken ziehen,</l>
+              <l>Und die schnellen, blassen Flammen</l>
+              <l>An den fernen Bergeshöhn</l>
+              <l>Grauliche Gewitter sprühen,</l>
+              <l>Und der Winde banges Wehn,</l>
+              <l>Bote glüh'nder Wetterschläge,</l>
+              <l>Staub emporjagt aus dem Wege!</l>
+              <stage>(Am Fenster die Wolken anschauend.)</stage>
+              <l>Wie ein schwarzes Wolkenbild,</l>
+              <l>Niederdroh'nd vom Himmelsplan,</l>
+              <l>Tief in Dunkel eingehüllt,</l>
+              <l>Sah Eumenides mich an,</l>
+              <l>Seine Augen trübe Sterne,</l>
+              <l>Sein Gelock war Wetternacht.</l>
+              <l>Also schaut' er aus den blauen,</l>
+              <l>Todesstillen Wolkenauen,</l>
+              <l>Bis des Sturms feindsel'ge Macht</l>
+              <l>Ihn verweht' in nächt'ge Ferne.</l>
+              <l>Jetzt noch fühl' ich's trüb' und bang,</l>
+              <l>Was den Busen mir durchdrang.</l>
+              <l>'S war nicht Schmerz, nicht tiefes Leiden,</l>
+              <pb n="25"/>
+              <l>Da die kranke Seele nicht</l>
+              <l><emph>Mag</emph> vom theuren Grame scheiden,</l>
+              <l>Ob das Herz auch drüber bricht.</l>
+              <l>Nein, ein nie gefühltes Grauen</l>
+              <l>Wühlte in des Busens Gründen,</l>
+              <l>Dem das Herz sich wollt' entwinden,</l>
+              <l>Wie das Lamm aus Geiers Klauen.</l>
+              <l>Ach, ich fühl's, ein herbes Loos</l>
+              <l>Droht uns aus des Schicksals Schooß!</l>
+            </lg>
+            <lg>
+              <l>Wehe! wo des <emph>Riesen</emph> Stirne</l>
+              <l>Finstre Wolken hoch umnachten,</l>
+              <l>Und der <emph>Aara</emph> Fluthgezürne</l>
+              <l>Stürzet aus den Felsenschachten,</l>
+              <l>Und der wild empörte Himmel</l>
+              <l>Niedersendet sein Geschoß;</l>
+              <l>Durch den Regen, durch die Wogen,</l>
+              <l>Kommt Eumenides gezogen;</l>
+              <l>Hoch auf bäumt das scheue Roß,</l>
+              <l>Starrend vor dem Schreckgetümmel.</l>
+              <l>Soll er an dem Fels zerschellen?</l>
+              <l>Soll er sinken in den Wellen?</l>
+              <l>Helft! O helft! ihr sel'gen Mächte!</l>
+              <pb n="26"/>
+              <l>Seinen Klageruf erhört,</l>
+              <l>Daß er glücklich wiederkehrt</l>
+              <l>Durch des Weges tiefe Nächte!</l>
+            </lg>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweite Scene.</head>
+          <stage>Manona. Hold kommt lebhaft herein.</stage>
+          <sp who="#hold">
+            <speaker>Hold.</speaker>
+            <lg>
+              <l>Heisa! Mütterchen! Juchhe!</l>
+              <l>Das ist eine wahre Freude!</l>
+              <l>Alle Straßen, nah' und weite,</l>
+              <l>Selbst der Markt ist wie ein See!</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona</speaker>
+            <stage>(sein Haupt streichelnd).</stage>
+            <l>Wildes Kind, wie trieft dein Haar!</l>
+          </sp>
+          <sp who="#hold">
+            <speaker>Hold.</speaker>
+            <lg>
+              <l>Nachbar sagte, nur zwei Ellen</l>
+              <l>Brauche noch der Fluß zu schwellen,</l>
+              <l>Bis zu uns her ganz und gar.</l>
+              <l>Alle Kinder haben Fässer,</l>
+              <l>Alle Stangen in der Hand;</l>
+              <pb n="27"/>
+              <l>Schiffen fröhlich durchs Gewässer,</l>
+              <l>In die Mitte, an den Rand.</l>
+              <l>'S ist dir herrlich anzusehn!</l>
+              <l>Zwar das Feu'r ist noch viel besser,</l>
+              <l>Doch das Wasser auch ist schön!</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona.</speaker>
+            <lg>
+              <l>Hat dich auch die Lust ergriffen,</l>
+              <l>Unten mit herumzuschiffen?</l>
+            </lg>
+          </sp>
+          <sp who="#hold">
+            <speaker>Hold.</speaker>
+            <lg>
+              <l>Nun, dir kann ich's wohl erzählen;</l>
+              <l>Wirst nicht gleich auf Holden schmählen.</l>
+              <l>Drunten, in der Ysopgasse,</l>
+              <l>Schiffte Karl in einem Fasse,</l>
+              <l>Der mich immer ausgelacht,</l>
+              <l>Und mir lauter Aerger macht.</l>
+              <l>Wie er mich nun kaum gesehen,</l>
+              <l>Fing er wieder an zu schmähen;</l>
+              <l>Dacht', weil ich am Ufer stände,</l>
+              <l>Daß ich gar nicht 'nüber könnte.</l>
+              <l>Dod, da hatte Ferdinand</l>
+              <l>Eine Wanne an dem Strand;</l>
+              <l>Traute sich nicht in die Mitten,</l>
+              <pb n="28"/>
+              <l>Ließ sich auch nicht lange bitten,</l>
+              <l>Gab mir Ruderstock und Kahn;</l>
+              <l>Und nun ging's die Gasse 'nan.</l>
+              <l>Karlen wurde doch nicht bange;</l>
+              <l>Ohne sich zur Flucht zu wenden,</l>
+              <l>Hielt er seine Ruderstange</l>
+              <l>Hoch empor in beiden Händen,</l>
+              <l>Ritterhaft mich zu empfahn,</l>
+              <l>Wenn ich's wagte, mich zu nahn.</l>
+              <l>Doch, so wie er in der Hitze</l>
+              <l>Führte den gewalt'gen Streich;</l>
+              <l>Lenkt' ich meinen Nachen gleich,</l>
+              <l>Und der Stange schwere Spitze</l>
+              <l>Schlug vorbei an meiner Seite,</l>
+              <l>Daß hoch auf in weißen Bogen</l>
+              <l>Sprützten die getheilten Wogen,</l>
+              <l>Und die Nachen schwankten beide.</l>
+              <l>Eh' er nun mit neuer Kraft</l>
+              <l>Seine Stang' emporgerafft,</l>
+              <l>Eilends – wie die Rittersleute</l>
+              <l>Thaten in Turnier und Streite –</l>
+              <l>Eilends faßt' ich meinen Speer,</l>
+              <pb n="29"/>
+              <l>Und vom mächt'gen Stoß getroffen,</l>
+              <l>Stürzt' er rückwärts in das Meer.</l>
+              <l>Und am Ufer überall,</l>
+              <l>Weit den Mund, die Augen offen,</l>
+              <l>Jauchzte der Kam'raden Zahl.</l>
+              <l>Jetzo nahm ich seine Lanze,</l>
+              <l>Gab ihm wieder seinen Kahn,</l>
+              <l>Und in frohem Siegesglanze</l>
+              <l>Landet' ich am Ufer an.</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona</speaker>
+            <stage>(mit Bekümmerniß halb vor sich).</stage>
+            <lg>
+              <l>Ach, umsonst ist's, euer Denken</l>
+              <l>Von Gefahren abzulenken.</l>
+              <l>Soch auf fährt der kecke Sinn,</l>
+              <l>Reißt mit Sturmesmacht euch hin,</l>
+              <l>Ach, zu immer neuem Wagen.</l>
+              <l>Daran denkt ihr freilich nicht,</l>
+              <l>Daß wir still daheim verzagen.</l>
+            </lg>
+          </sp>
+          <sp who="#hold">
+            <speaker>Hold.</speaker>
+            <lg>
+              <l>Sieh, das ist des Mannes Pflicht,</l>
+              <l>Herr zu seyn der Elemente,</l>
+              <l>Ob auch bergeshohe Flut</l>
+              <l>Rings sich thürmte, Glut entbrennte,</l>
+              <pb n="30"/>
+              <l>Nimmer sänk' der edle Muth.</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona</speaker>
+            <stage>(liebkoset ihn, dann).</stage>
+            <lg>
+              <l>Höre, Kind, tritt doch hinaus,</l>
+              <l>Zu dem Fenster auf dem Gange;</l>
+              <l>Denn unmöglich dauert's lange,</l>
+              <l>Bis der Vater kommt nach Haus.</l>
+              <l>Wenn er naht, sag's gleich herein.</l>
+            </lg>
+          </sp>
+          <sp who="#hold">
+            <speaker>Hold</speaker>
+            <stage>(abgehend).</stage>
+            <l>Gerne, liebes Mütterlein.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritte Scene.</head>
+          <sp who="#manona">
+            <speaker>Manona</speaker>
+            <stage>(allein).</stage>
+            <lg>
+              <l>Dich auch, mein geliebtes Leben,</l>
+              <l>Zeigte mir der bange Traum.</l>
+              <l>Graus erweckte Vaters Bild;</l>
+              <l>Doch dein Auge, friedlich mild,</l>
+              <l>Winkte nieder, nachzuschweben</l>
+              <l>In des Himmels klaren Raum.</l>
+              <l>Ach, in seiner vollen Schöne,</l>
+              <pb n="31"/>
+              <l>Mit den dunkeln braunen Locken,</l>
+              <l>Und der Augen sanften Strahl</l>
+              <l>Senkend in das Erdenthal,</l>
+              <l>Um sich her des Himmels Söhne,</l>
+              <l>Wie lichtklare Silberflocken</l>
+              <l>Auf der braunen Wolkennacht,</l>
+              <l>Schwebt' er oben, und die Seele</l>
+              <l>Faßte tiefes Schmerzes Macht.</l>
+              <l>Aufwärts aus der finstern Höhle –</l>
+              <l>– Er ja war entrückt von hinnen,</l>
+              <l>Ach, der Engel meines Glücks –</l>
+              <l>Aufwärts rangen alle Sinnen,</l>
+              <l>Zu versinken, zu zerrinnen</l>
+              <l>In der Wonne seines Blicks.</l>
+              <l>Ewig möcht' ich voll Verlangen</l>
+              <l>So an seinem Auge hangen.</l>
+              <stage>(Windsgeheul, ordinäres Wetter.)</stage>
+              <l>Schnaubend nieder zu der Erde</l>
+              <l>Jagt der Sturm die Wolkenheerde,</l>
+              <l>An die Scheiben schlägt der Regen,</l>
+              <l>Und mit immer lautern Schlägen</l>
+              <l>Lodert her der Wetterbrand,</l>
+              <pb n="32"/>
+              <l>Wie von rächenden Gewalten</l>
+              <l>Auf des Sünders Haupt gesandt,</l>
+              <l>Ihn zu treffen, zu zerspalten!</l>
+            </lg>
+          </sp>
+          <sp who="#hold">
+            <speaker>Hold</speaker>
+            <stage>(eintretend).</stage>
+            <l>Mütterchen, ich seh' ihn kommen!</l>
+          </sp>
+          <stage>(ab.)</stage>
+          <stage>(Hauptblitz und Hauptdonner.)</stage>
+          <sp who="#manona">
+            <speaker>Manona.</speaker>
+            <lg>
+              <l>Welch entsetzlich grauser Schlag!</l>
+              <l>Alle Wolken glutentglommen,</l>
+              <l>Alle Berge hallen nach.</l>
+              <l>Doch <emph>mich</emph> kann's ja nicht erschrecken,</l>
+              <l>Mag nun Nacht den Tag bedecken,</l>
+              <l>Und der Blitze heißes Glühen</l>
+              <l>Neuen blut'gen Tag versprühen,</l>
+              <l>Träume drohn, Orkane wüthen;</l>
+              <l><emph>Er</emph> ist da! Ich bin zufrieden.</l>
+            </lg>
+          </sp>
+        </div>
+        <pb n="33"/>
+        <div type="scene">
+          <head>Vierte Scene.</head>
+          <stage>Eumenides, mit ihm Hold, der seine Kleider wegträgt. Packan etwas durchnäßt.
+            Während der folgenden Auftritte Mittelblitz und Mitteldonner. Manona fliegt dem
+            Eumenides entgegen.</stage>
+          <sp who="#eumenides">
+            <speaker>Eumenides</speaker>
+            <stage>(ihre Hand ergreifend).</stage>
+            <lg>
+              <l>Theures Weib, vielholde Blume,</l>
+              <l>Sei gegrüßt, Manona, mir.</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona.</speaker>
+            <lg>
+              <l>O wie gut, daß du nur hier</l>
+              <l>Weilst im sichern Eigenthume!</l>
+              <l>Nun ist Sorg' und Gram vorbei!</l>
+            </lg>
+          </sp>
+          <sp who="#eumenides">
+            <speaker>Eumenides.</speaker>
+            <lg>
+              <l>Meinst du, daß dies arme Dach,</l>
+              <l>Ein genügend Bollwerk sei</l>
+              <l>Für des Lebens Ungemach?</l>
+              <l>Aber was auch möge kommen,</l>
+              <l>Nichts kann uns're Sorge frommen.</l>
+            </lg>
+          </sp>
+          <stage>(Manona ab, Hold mit einem Buche beschäftigt.)</stage>
+          <sp who="#eumenides">
+            <speaker>Eumenides</speaker>
+            <stage>(für sich).</stage>
+            <lg>
+              <l>Unaufhaltsam, ohne Weilen,</l>
+              <pb n="34"/>
+              <l>Den Verbrecher zu ereilen,</l>
+              <l>Rout daher des Schicksals Rad;</l>
+              <l>Keine Reue tilgt die That;</l>
+              <l>Magst dich freuen, magst verzagen,</l>
+              <l>Jählings wird's dich niederschlagen.</l>
+              <l>Wer das Beste will erstreben,</l>
+              <l>Lebe für den Augenblick,</l>
+              <l>Schau' nicht vorwärts, nicht zurück,</l>
+              <l>Wie die weisen Thiere leben.</l>
+              <stage>(Zu Hold.)</stage>
+              <l>Junge, mit der Brust voll Träume,</l>
+              <l>Mit dem Auge, still und helle,</l>
+              <l>Wünsche nicht, du Sohn der Erde,</l>
+              <l>Daß dir Kraft die Sehnen schwelle,</l>
+              <l>Daß am Kinn der Bart dir keime</l>
+              <l>Und zum Mann der Knabe werde.</l>
+              <stage>(Er legt seine Hand auf dessen Haupt.)</stage>
+              <l>Sieh, das ist mein bester Segen:</l>
+              <l>Eh' dir noch die Kinderlocke</l>
+              <l>Von dem braunen Scheitel fällt;</l>
+              <l>Bei dem Hall der Grabesglocke,</l>
+              <l>Unbekannt mit Satans Wegen,</l>
+              <pb n="35"/>
+              <l>Scheide von der finstern Welt;</l>
+              <l>Daß man dich ins Bettlein trage,</l>
+              <l>Wo kein Sturm den Busen hebt,</l>
+              <l>Eh von ungestümen Schlage</l>
+              <l>Dieses reine Herz erbebt. –</l>
+              <l>'S ist nicht Freude, Mann zu seyn,</l>
+              <l>'S ist kein Gang durch Blumenmatten;</l>
+              <l>Heißer Mittag ohne Schatten,</l>
+              <l>Wilde Flut von Kampf und Pein. –</l>
+              <l>O, die Kindheit ist so süß!</l>
+              <l>Denn der Fried' ist ihr Gefährte;</l>
+              <l>Mit dem Bau, dem Steckenpferde</l>
+              <l>Lassen wir das Paradies.</l>
+            </lg>
+          </sp>
+          <sp who="#hold">
+            <speaker>Hold</speaker>
+            <stage>(im Lehrton).</stage>
+            <lg>
+              <l>Freilich, denn des Kindes Brust</l>
+              <l>Ist ja frei von wilden Flammen;</l>
+              <l>Unberührt von böser Lust,</l>
+              <l>Der die Qualen all' entstammen.</l>
+            </lg>
+            <lg>
+              <l>Doch der Mann ist abgeschieden</l>
+              <l>Von der Kindheit stillem Frieden.</l>
+              <l>Mit Gewalt in's wilde Leben</l>
+              <l>Reißt ihn zürnendes Geschick,</l>
+              <pb n="36"/>
+              <l>Wo mit gift'gem Späherblick</l>
+              <l>Böse Geister ihn umschweben,</l>
+              <l>Zu belauern seine Schwäche,</l>
+              <l>Hundertfach ihn zu umfahn,</l>
+              <l>Daß das Herz vor Jammer breche,</l>
+              <l>Ist die böse That gethan.</l>
+              <l><emph>Leichtsinn</emph> nur ist's bei dem Kinde;</l>
+              <l>Bei dem Manne ist es <emph>Sünde</emph>.</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona</speaker>
+            <stage>(kommt mit Wein, den sie auf ein Tischchen setzt. Dem Eumenides die Haare aus der
+              Stirne streichend).</stage>
+            <lg>
+              <l>Immer noch die Stirn so trübe,</l>
+              <l>Und so finster diese Brauen?</l>
+              <l>Willst du der besorgten Liebe</l>
+              <l>Deinen Kummer nicht vertrauen?</l>
+            </lg>
+          </sp>
+          <sp who="#eumenides">
+            <speaker>Eumenides.</speaker>
+            <lg>
+              <l>Weißt du auch, was du begehrst?</l>
+              <l>Ob dein Herz es wird ertragen,</l>
+              <l>Wenn du solchen Graus erfährst,</l>
+              <l>Daß wohl Männer drob verzagen?</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona.</speaker>
+            <lg>
+              <l>Dody, die Hälfte deiner Schmerzen</l>
+              <pb n="37"/>
+              <l>Gönne diesem treuen Herzen;</l>
+              <l>Ob vielleicht, was dich beschwerte,</l>
+              <l>Durch die Theilung leichter werde.</l>
+            </lg>
+          </sp>
+          <sp who="#eumenides">
+            <speaker>Eumenides</speaker>
+            <stage>(heftig).</stage>
+            <lg>
+              <l>Nein, laß ab mich zu bedrängen!</l>
+              <l>Eh soll der erzürnte Geist</l>
+              <l>Dieses Kerkers Riegel sprengen,</l>
+              <l>Eh du mir dieß Wort entreißt!</l>
+            </lg>
+          </sp>
+          <stage>(Manona tritt weg, an ein Fenster, Eumenides wirft sich aufs Sopha, Hold kommt mit
+            einem Bilderbuche zur Manona.)</stage>
+          <sp who="#hold">
+            <speaker>Hold.</speaker>
+            <l>Sieh nur, Mütterchen, wie schön.</l>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona.</speaker>
+            <l>Aber ob's auch Hold versteht?</l>
+          </sp>
+          <sp who="#hold">
+            <speaker>Hold.</speaker>
+            <lg>
+              <l>Freilich werd' ich das verstehn.</l>
+              <l>'S ist Elias, der Prophet,</l>
+              <l>Der in einem Feuerwagen</l>
+              <l>In den Himmel wird getragen.</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona.</speaker>
+            <lg>
+              <l>Weil's ein frommer Mann gewesen,</l>
+              <pb n="38"/>
+              <l>Hat der Herr ihn auserlesen,</l>
+              <l>Und in solcher Flammenpracht</l>
+              <l>In den Himmel ihn gebracht.</l>
+            </lg>
+          </sp>
+          <sp who="#hold">
+            <speaker>Hold.</speaker>
+            <lg>
+              <l>Ach, wer so in Glanz gehüllt</l>
+              <l>Ein zum Himmel könnte gehn!</l>
+              <l>Sieh, ganz wie auf diesem Bild</l>
+              <l>Hab' ich mich im Traum gesehn.</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona.</speaker>
+            <l part="I">Wann denn, Kind!</l>
+          </sp>
+          <sp who="#hold">
+            <speaker>Hold.</speaker>
+            <lg>
+              <l part="F">Nun, diese Nacht.</l>
+              <l>'S war ein schöner, schöner Traum!</l>
+              <l>Ach, ich zwang das Weinen kaum,</l>
+              <l>Daß ich wieder war erwacht.</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona.</speaker>
+            <lg>
+              <l>Wenn's so schön war, laß doch hören,</l>
+              <l>Liebes Kind, was dich erfreut.</l>
+            </lg>
+          </sp>
+          <sp who="#hold">
+            <speaker>Hold.</speaker>
+            <lg>
+              <l>Sieh, wer's säh', der sollte schwören,</l>
+              <l>Das ist Himmels Herrlichkeit. –</l>
+              <l>Einsam lehnt' ich an der Linde</l>
+              <pb n="39"/>
+              <l>Neben uns'rer Gartenthüre –</l>
+              <l>– 'S war ganz still, nur Windeswehn</l>
+              <l>Hört' ich in den Zweigen gehn, –</l>
+              <l>Sieh, da war's, als ob geschwinde</l>
+              <l>Hell ein Engel niederführe.</l>
+              <l>Und in lieblich bunten Tänzen</l>
+              <l>Hüpften grün' und rothe Flammen,</l>
+              <l>Bis sie um mich her zusammen</l>
+              <l>Flossen in ein herrlich Glänzen.</l>
+              <l>Ach, und silberhelle Knaben,</l>
+              <l>Klare Blumen in den Händen,</l>
+              <l>Wie sie wohl im Himmel haben,</l>
+              <l>Sah ich gern sich zu mir wenden.</l>
+              <l>Freundlich sahen sie mich an,</l>
+              <l>Lächeln auf der Rosenwange;</l>
+              <l>'S war als kennt' ich sie schon lange,</l>
+              <l>Von uralten Zeiten an.</l>
+              <l>Was mir damals zugeklungen,</l>
+              <l>Hohe selige Gesänge,</l>
+              <l>Wie vermöchten's Menschenzungen,</l>
+              <l>Nachzutönen solche Klänge?</l>
+              <l>Was sie sangen, mir versprachen,</l>
+              <pb n="40"/>
+              <l>Wenig nur kann ich dir sagen.</l>
+              <l>»Da du wie ein Rosenblättchen,</l>
+              <l>Hingeweht auf weiches Moos,</l>
+              <l>Träumend lagst im Schaukelbettchen,</l>
+              <l>Träumend in der Mutter Schooß,</l>
+              <l>Sahst du helles Lichts Erglühen?</l>
+              <l>Hörtest sanfter Melodien</l>
+              <l>Leisen, wonnevollen Gruß?</l>
+              <l>Fühltest langen Engelkuß</l>
+              <l>Bei der Harfe süßem Klange?</l>
+            </lg>
+            <lg>
+              <l>Sieh, nun dauert's nicht mehr lange,</l>
+              <l>Daß dein Stündlein ausgeklungen,</l>
+              <l>Daß wir kommen, dich zu rufen</l>
+              <l>An des ew'gen Thrones Stufen</l>
+              <l>Aus der Erde Dämmerungen.«</l>
+              <stage>(Nach einer Weile.)</stage>
+              <l>Daß sie doch schon heute kämen!</l>
+              <l>Nicht so lang' mich ließen warten!</l>
+              <l>Nur von meinem lieben Garten</l>
+              <l>Möcht' ich erst noch Abschied nehmen.</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona</speaker>
+            <stage>(ihn umfassend, schmerzlich).</stage>
+            <lg>
+              <l>Hold, verlassen willst du mich?</l>
+              <pb n="41"/>
+              <l>Einsam lassen auf der Erde?</l>
+            </lg>
+          </sp>
+          <sp who="#hold">
+            <speaker>Hold</speaker>
+            <stage>(befremdet).</stage>
+            <lg>
+              <l>Ob ich dich verlassen werde?</l>
+              <l>Und so deutlich sah ich dich,</l>
+              <l>Ach so schön, so glanzumgeben</l>
+              <l>In den offnen Himmel schweben!</l>
+              <l>Um dich breite Feuerwogen,</l>
+              <l>Und das Auge seligklar.</l>
+              <l>Von so prächt'gem Glanze war</l>
+              <l>Selbst Elias nicht umzogen!</l>
+              <stage>(Manona nachdenkend, Hold nach einer Pause.)</stage>
+              <l>Heute <emph>ist</emph> Eliastag.</l>
+            </lg>
+          </sp>
+          <stage>(Hauptblitz, Hauptdonner.)</stage>
+          <sp who="#eumenides">
+            <speaker>Eumenides</speaker>
+            <stage>(der stumm dagesessen, fährt zornig auf).</stage>
+            <lg>
+              <l part="I">Schweig, du Unart!</l>
+              <stage>(Hold entfernt sich bestürzt, Manona bückt sich auf ihre Arbeit.)</stage>
+              <l part="F">Teufels Hohn</l>
+              <l>Spottet durch des Kindes Zunge!</l>
+              <stage>(Auf- und niedergehend.)</stage>
+              <l>Freilich, 's ist Eliastag!</l>
+              <pb n="42"/>
+              <l>Mir gehorchen muß der Junge;</l>
+              <l>Ist das Wetter auch mein Sohn?</l>
+              <l>Hört der Sturm auf meine Stimme,</l>
+              <l>Der's herheult mit taubem Grimme:</l>
+              <l>Heute ist Eliastag!</l>
+              <l>Wird der Blitz auch mir sich fügen,</l>
+              <l>Der's hinflammt mit Feuerzügen:</l>
+              <l>Heute ist Eliastag!</l>
+              <l>Hab' ich ob dem Donner Nacht,</l>
+              <l>Ob dem Sturm tief in der Seele,</l>
+              <l>Ob des Wetters wilder Nacht? –</l>
+              <l>Wie's rothflammend niederdroht!</l>
+              <l>O, umsonst, daß ich's verhehle!</l>
+              <l>Wär' ich stumm auch, wie der Tod,</l>
+              <l>Könnte der da unten schweigen,</l>
+              <l>In der Hölle wüsten Reichen?</l>
+              <stage>(Packan bellt, Eumenides entsetzt.)</stage>
+              <l>Schafft den Pudel mir von dannen!</l>
+              <l>Habt ihr's nicht im <emph>Faust</emph> gelesen,</l>
+              <l>Wer der Pudel ist gewesen?</l>
+              <l>Ich <emph>vermag's</emph> nicht, ihn zu bannen.</l>
+            </lg>
+          </sp>
+          <pb n="43"/>
+          <sp who="#hold">
+            <speaker>Hold.</speaker>
+            <l>Packan, he! Komm hier! Komm hier!</l>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona.</speaker>
+            <lg>
+              <l>Liebes Kind, mach zu die Thür.</l>
+              <stage>(Hold ab.)</stage>
+              <l>Ist's dieß dräuende Gewitter,</l>
+              <l>Dem dein starker Muth erlag?</l>
+            </lg>
+          </sp>
+          <sp who="#eumenides">
+            <speaker>Eumenides.</speaker>
+            <lg>
+              <l>Das entsetzliche Gewitter,</l>
+              <l>O, das heißt Eliastag!</l>
+              <l>Dräuend steht's am Himmelsplane,</l>
+              <l>Wie die Sonn' auch lieblich schaue</l>
+              <l>Ob der freudehellen Aue,</l>
+              <l>Zürnend schwingt's die finstre Fahne.</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona.</speaker>
+            <lg>
+              <l>Dieses Tag's Erscheinen nur?</l>
+              <l>Und es stieg nicht jede Sonne</l>
+              <l>Nur zum Segen und zur Wonne</l>
+              <l>Aus dem Schooße der Natur?</l>
+            </lg>
+          </sp>
+          <sp who="#eumenides">
+            <speaker>Eumenides.</speaker>
+            <lg>
+              <l>Wohl denn, was du nun sollst hören,</l>
+              <l>Kann den Zweifel selbst bekehren. –</l>
+            </lg>
+            <pb n="44"/>
+            <lg>
+              <l>Unstät irrend, zu entfliehn</l>
+              <l>Dieses Tages bösem Sterne,</l>
+              <l>Kam ich her aus weiter Ferne;</l>
+              <l>Eilends wollt' ich fürder ziehn:</l>
+              <l>Sieh, da klangen fromme Lieder</l>
+              <l>Feierlich vom Berge nieder,</l>
+              <l>Und mit freundlich hellem Blinken</l>
+              <l>Schien das Kirchlein mir zu winken.</l>
+              <l>Dort, umwogt vom Meer der Töne,</l>
+              <l>Trunken, sah ich deine Schöne,</l>
+              <l>Deiner Augen sel'gen Schein.</l>
+              <l>Ach! von <emph>deinem</emph> Arm umfangen,</l>
+              <l>Gänzlich wähnt' ich mich entgangen</l>
+              <l>Meines Dämons finstrem Dräun.</l>
+              <stage>(Manona lehnt sich weinend an ihn.)</stage>
+              <l>'S war nicht so! Das fühlt' ich bald.</l>
+              <l>Heute just vor dreizehn Jahren</l>
+              <l>Irrt' ich Nachts umher im Wald;</l>
+              <l>Denn es zog mich an den Haaren.</l>
+              <l>Schreckgeschüttelt, schlummerlos</l>
+              <l>Lag ich auf dem feuchten Moos.</l>
+              <l>Da, hinauf an dürrem Stamme,</l>
+              <pb n="45"/>
+              <l>Wie ein Irrlicht auf dem Moor,</l>
+              <l>Bläulich flackert' eine Flamme.</l>
+              <l>Ahnend raff' ich mich empor,</l>
+              <l>Denn ein tiefes Grausen spricht:</l>
+              <l>»Sieh, das ist dein Lebenslicht;«</l>
+              <l>Als ein Hund, wenn's einer war,</l>
+              <l>Seines Kinn's gewalt'ge Lade</l>
+              <l>Grimmig hieb in meine Wade.</l>
+              <l>Da, entspringend der Gefahr,</l>
+              <stage>(Mit brechender Stimme.)</stage>
+              <l>Stürz' ich, lösche mit der Hand</l>
+              <l>Des geliebten Flämmchens Brand! –</l>
+            </lg>
+            <lg>
+              <l>Als ein rasches Jahr verflossen,</l>
+              <l>Fuhren wir hinaus, aufs Land.</l>
+              <l>Lustig bei des Waldes Rand</l>
+              <l>Flogen wir mit schnellen Rossen.</l>
+              <l>Plötzlich faßt mich wilder Graus,</l>
+              <l>Und aus dorrendem Gestrippe,</l>
+              <l>Schleppt sich wankend ein Gerippe</l>
+              <l>Ein Zigeunerweib heraus.</l>
+              <l>In die Zügel fällt's den Pferden,</l>
+              <l>Daß sie stehn, wie festgebannt;</l>
+              <pb n="46"/>
+              <l>Und mit dräuenden Gebärden</l>
+              <l>Schwingt's die gelbe Knochenhand:</l>
+              <l>»Wenn die Steine könnten reden,</l>
+              <l>Mit dem scharlachrothen Mantel,</l>
+              <l>Und die Eich' aus <emph>Hochburgs</emph> Oeden,</l>
+              <l>Die, zur Diel' entzweigespellt,</l>
+              <l>Knarrend schrie bei deinem Wandel,</l>
+              <l>Anders wär's, mein bester Held!«</l>
+            </lg>
+            <lg>
+              <l>Dann mit scharfem Tannenreise</l>
+              <l>Schlug sie auf der Rosse Fell,</l>
+              <l>Daß sie schnaubend, windesschnell,</l>
+              <l>Fürder flohn im alten Gleise.</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona.</speaker>
+            <lg>
+              <l>Des Zigeunerweibes Necken</l>
+              <l part="I">Aengstet dich?</l>
+            </lg>
+          </sp>
+          <sp who="#eumenides">
+            <speaker>Eumenides.</speaker>
+            <lg>
+              <l part="F">O Liebe, sag,</l>
+              <l>Warum drohen solche Schrecken</l>
+              <l>Stets nur am Eliastag?</l>
+              <l>Weiter denn! – Im Jahre drauf</l>
+              <l>– Kürzlich war uns Hold geboren –</l>
+              <l>Ging ich, ganz in mich verloren,</l>
+              <pb n="47"/>
+              <l>In dem Garten ab und auf.</l>
+              <l>Der Begeisterung Erguß</l>
+              <l>Fühlt' ich bebend mich durchdringen,</l>
+              <l>Höher hob die mächt'gen Schwingen</l>
+              <l>In der Brust der Genius.</l>
+              <l>Und ein Trauerspiel zu zeugen,</l>
+              <l>Mahnte mich das kühne Herz;</l>
+              <l>Aufgewirbelt himmelwärts,</l>
+              <l>Schwebt' ich in der Dichtung Reichen.</l>
+            </lg>
+            <lg>
+              <l>Bürgersmänner, ja Barone</l>
+              <l>Stürzt' ich schon mit vielen Glück:</l>
+              <l>Höher, kühn empor zum Throne</l>
+              <l>Hob ich dießmal meinen Blick.</l>
+              <l>Viel originelle Bilder,</l>
+              <l>Wie's noch niemals mir geschehn,</l>
+              <l>Sah ich, größer stets und wilder,</l>
+              <l>Gaukelnd um mich her sich drehn.</l>
+              <l>Sinnverwirrend, herzbethörend</l>
+              <l>Schwebte Satan um mein Haupt.</l>
+              <l>Und so kam's, daß ich geglaubt,</l>
+              <l>All der Bilder helle Pracht</l>
+              <l>Sei mir eigends zugehörend,</l>
+              <pb n="48"/>
+              <l>Hab' ich selber ausgedacht.</l>
+              <l>O weh!</l>
+              <l>So, von Taumelwahn befangen,</l>
+              <l>Web' ich's ein in mein Gedicht.</l>
+              <l>Und nicht eh'r ist mir ein Licht,</l>
+              <l>Höllenlicht, mir aufgegangen,</l>
+              <l part="I">Bis – o weh!</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona.</speaker>
+            <lg>
+              <l part="F">O, zage nicht!</l>
+              <l>Blüht dir nicht zum ew'gen Ruhme</l>
+              <l>Mancher Dichtung schöne Blume?</l>
+            </lg>
+          </sp>
+          <stage>(Mitteldonner, Mittelblitz.)</stage>
+          <sp who="#eumenides">
+            <speaker>Eumenides.</speaker>
+            <lg>
+              <l>Hörst du wohl? – Onein! ich fühl's,</l>
+              <l>Abwärts neigt sich meine Bahn.</l>
+              <l>Mit gewalt'gem Schritt heran</l>
+              <l>Naht der Schluß des Trauerspiels.</l>
+              <l>Höre selbst! – Heut ist's ein Jahr,</l>
+              <l>Daß von schlummerlosem Kissen</l>
+              <l>Frühes Zagen mich gerissen,</l>
+              <l>Mich zu senden in Gefahr.</l>
+              <l>In das Zimmer schreit' ich, höre</l>
+              <pb n="49"/>
+              <l>Lust'gen Feuers hellen Laut,</l>
+              <l>Finde Kaffee in der Röhre,</l>
+              <l>Nächtlich von der Magd gebraut.</l>
+              <l>Eben wollt' ich ihn entfüllen,</l>
+              <l>Als mit ungeheurem Brüllen</l>
+              <l>Schnell der Kachelofen sprang,</l>
+              <l>Und das glüh'nde Eingeweide</l>
+              <l>Rings umher auf Tisch und Bank,</l>
+              <l>Wie des <stage>Aetna</stage> Rachen, streute –</l>
+              <l>Als die Katze Feuer fing,</l>
+              <l>Und so wie die heiße Hölle</l>
+              <l>Wuchernd mit gewalt'ger Schnelle</l>
+              <l>In dem schwarzen Pelze hing;</l>
+              <l>Wie sie glühte, wie sie brannte,</l>
+              <l>Starken Muthes, hoffnungslos</l>
+              <l>In des Ofens Glutenschooß</l>
+              <l>Mit den letzten Kräften rannte.</l>
+              <l>Ruß im Antlitz, Lob im Herzen,</l>
+              <l>Stand ich da mit offnem Mund,</l>
+              <l>Wie sie starb den Tod der Schmerzen</l>
+              <l>In des Ofens Flammenschlund.</l>
+              <l>Eh' sie mit der hellen Glut</l>
+              <pb n="50"/>
+              <l>Zündend lief durch Hof und Haus,</l>
+              <l>Löschte sie mit edlem Muth</l>
+              <l>Ihr gefährlich Daseyn aus!</l>
+              <stage>(Mit Nachdruck.)</stage>
+              <l>Mir ein Beispiel ist's gegeben! –</l>
+              <l>Wer einmal des Unheils Saat</l>
+              <l>In sich trägt, <stage>(abgewandt)</stage> mit rascher That</l>
+              <l>Ende sein gefährlich Leben. –</l>
+              <l>Eher schüttelt solchen Funken</l>
+              <l>Eine Katz' aus ihrem Felle,</l>
+              <l>Als der Mensch, einmal gesunken,</l>
+              <l>Aus der Brust die wilde Hölle.</l>
+              <l>Denn der Teufel hält sich feste</l>
+              <l>In dem einmal eignen Neste!</l>
+              <stage>(Zur Manona.)</stage>
+              <l>Wohl denn! Selbst für sich zu wählen,</l>
+              <l>Ward dem Menschengeiste Macht;</l>
+              <l>Grauses hörtest du erzählen,</l>
+              <l>Graus'res mußt' ich dir verhehlen;</l>
+              <l>Weislich nimm dein Wohl in Acht!</l>
+              <l>Soll mein Unstern dich nicht fassen,</l>
+              <l>Dich umfahn mit gleicher Noth;</l>
+              <pb n="51"/>
+              <l>Mußt du eilends mich verlassen.</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona.</speaker>
+            <l>Nimmermehr! Und wär's mein Tod!</l>
+          </sp>
+          <sp who="#eumenides">
+            <speaker>Eumenides.</speaker>
+            <lg>
+              <l>Frevle nicht! noch bist du frei!</l>
+              <l>Satan horcht mit scharfen Krallen,</l>
+              <l>Ob Ein Opfer, oder drei</l>
+              <l>Seinem Grimme werden fallen!</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona</speaker>
+            <stage>(weinend).</stage>
+            <lg>
+              <l>Kind und Mutter theilen gern</l>
+              <l>Deines Glücks und Unglücks Stern.</l>
+            </lg>
+          </sp>
+          <sp who="#eumenides">
+            <speaker>Eumenides.</speaker>
+            <lg>
+              <l>Wohl! <emph>du</emph> hast die Wahl gethan.</l>
+              <l>Keins von allen sieht den Morgen,</l>
+              <l>Und das Ende naht heran.</l>
+              <l>Daß es stark sei, laß uns sorgen.</l>
+              <stage>(Hauptdonner, Hauptblitz; Manona erbebt heftig.)</stage>
+              <l>Hattest du auch das bedacht?</l>
+              <l>Doch umsonst nun ist das Zagen;</l>
+              <l>Denn die Brücke ist zerschlagen,</l>
+              <l>Rückwärts führt uns keine Macht.</l>
+              <l>Mag's denn flammend sich entdecken!</l>
+              <pb n="52"/>
+              <stage>(Tritt auf sie zu und küßt ihre Stirn.)</stage>
+              <l>Du mein Weib, mit diesem Kusse</l>
+              <l>Weih' ich dich in alle Schrecken,</l>
+              <l>Zu des Lebens ernstem Schlusse.</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona.</speaker>
+            <lg>
+              <l>Weh! schau nicht so tödtlich drein!</l>
+              <stage>(Jammernd.)</stage>
+              <l>Meine Träume treffen ein!</l>
+              <l part="I">Weh' mir! –</l>
+            </lg>
+          </sp>
+          <sp who="#eumenides">
+            <speaker>Eumenides.</speaker>
+            <lg>
+              <l part="F">Träume? Nichts, als das?</l>
+              <l>Vor der wachen Blicke Schauen</l>
+              <l>Stellte sich das geist'ge Grauen,</l>
+              <l>Wie es fieberisch und graß</l>
+              <l><emph>Mich</emph> in dieser Nacht umflogen!</l>
+              <l>Mag es uns die Zeit verkürzen,</l>
+              <l>Bis herein des Jammers Wogen</l>
+              <l>Zu dem off'nen Thore stürzen.</l>
+            </lg>
+            <lg>
+              <l>Fern aus <emph>Teutoburga's</emph> Aue</l>
+              <l>Zog ich diese Nacht daher;</l>
+              <l>Das Gewölk, das wettergraue,</l>
+              <l>Hing am Himmel trüb und schwer.</l>
+              <pb n="53"/>
+              <l>Schaurig durch die dürren Halme</l>
+              <l>Pfiff der Nachtwind Geisterweisen.</l>
+              <l>Sieh, und einen weißen Stein,</l>
+              <l>Eiskalt aus gespenst'gem Qualme,</l>
+              <l>Sah ich mir entgegengleißen.</l>
+              <l>Zittern faßte mein Gebein;</l>
+              <l>Rückwärts weit von dannen reißen</l>
+              <l>Will mich des Entsetzens Wahn.</l>
+              <l>Doch des Leibes Mächte stocken,</l>
+              <l>Und es faßt mich bei den Locken,</l>
+              <l>Zieht mich an den Stein hinan.</l>
+              <l>Und die Stunde zog heran,</l>
+              <l>Da sich heute trennt von gestern,</l>
+              <l>Und empor aus ihren Nestern,</l>
+              <l>Aus der Grüfte dumpfem Schweigen,</l>
+              <l>Heulende Gespenster steigen.</l>
+              <l>Da, auf Wolken roth und golden,</l>
+              <l>Schon verklärt in's sel'ge Leben,</l>
+              <l>Sah ich ferne dich und Holden</l>
+              <l>Langsam zu den Sternen schweben.</l>
+              <l>An des Himmels Lichte hangend,</l>
+              <l>Saht ihr nimmer meine Pein;</l>
+              <pb n="54"/>
+              <l>Doch so wie ich, heißverlangend,</l>
+              <l>Ueberschreiten will den Stein,</l>
+              <l>Plötzlich – – Stand'st du schon, du Taube,</l>
+              <l>Wo in stahlbedeckten Horden</l>
+              <l>Sich die Menschenkinder morden,</l>
+              <l>Wo der Teufel und der Tod</l>
+              <l>Von dem unermeßnen Raube</l>
+              <l>Grimmig halten Gastgebot? –</l>
+              <l>Männer in den Todeswehn</l>
+              <l>Knirschen rücklings auf der Erde.</l>
+              <l>Stampfend über ihr Gestöhn</l>
+              <l>Jagt der Sporn die flücht'gen Pferde.</l>
+              <l>Ueber dem gebrochnen Auge,</l>
+              <l>Dumpfen Trittes, waffenschwer,</l>
+              <l>Heiß von Feu'r und Schwefelrauche,</l>
+              <l>Wogt des Krieges dunkles Meer.</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona</speaker>
+            <stage>(mit gefalteten Händen, schwärmend).</stage>
+            <lg>
+              <l>Und herunter sinkt die Nacht,</l>
+              <l>Die Ermatteten zu laben,</l>
+              <l>Zu beenden ihre Schlacht.</l>
+              <l>Den Gefallenen im Streite</l>
+              <pb n="55"/>
+              <l>Drücken sanfte Engelknaben</l>
+              <l>Ihre Augenlieder zu,</l>
+              <l>Und sie todesmüden Leute</l>
+              <l>Ruft des Hornes Klang zur Ruh'.</l>
+              <l>Denn der Herr hat ausgerichtet,</l>
+              <l>Und das Kampfmeer ist verlaufen –</l>
+            </lg>
+          </sp>
+          <sp who="#eumenides">
+            <speaker>Eumenides.</speaker>
+            <lg>
+              <l>Blutig nackend aufgeschichtet,</l>
+              <l>Stehn die Leichen, hoch zu Haufen,</l>
+              <l>Draus des Blutes Bäche laufen.</l>
+              <l>Solch ein Bächlein kroch vom Steine</l>
+              <l>– Fürchterlich war's mir bekannt –</l>
+              <l>Ueber weiße Todtenbeine</l>
+              <l>Träge durch den dürren Sand.</l>
+              <l>Langsam warf es gelbe Blasen</l>
+              <l>Wie von Sterbeseufzerwehn.</l>
+              <l>Dennoch wild hinein zu sehn,</l>
+              <l>Zwang mich der Verzweiflung Rasen. –</l>
+              <l>Aufstieg aus dem blut'gen Schlamme,</l>
+              <l>Schwarz, in heller Schwefelflamme,</l>
+              <l>Satans gräuliche Gestalt.</l>
+              <l>Nacht umwogte meine Sinnen,</l>
+              <pb n="56"/>
+              <l>Und mit tödtlicher Gewalt</l>
+              <l>Wühlend, fleischend drang's nach innen.</l>
+              <l>Machtlos auf den kalten Stein</l>
+              <l>Sank das schlotternde Gebein.</l>
+              <l>So am Boden lag ich lange,</l>
+              <l>Auf der kalten Stirn und Wange</l>
+              <l>Todesschweiß und nächt'gen Thau,</l>
+              <l>Bis aus glüh'nder Morgenhelle</l>
+              <l>Wogend quoll die Lebensquelle,</l>
+              <l>Sieghaft ob der Dämm'rung Grau. –</l>
+              <stage>(Er reißt wüthend das Fenster auf.)</stage>
+              <l>Nur herein, ihr schwarzen Gäste!</l>
+              <l>Schaart euch zum Eliasfeste!</l>
+              <l>Opfer hier und Wuthgelag!</l>
+              <l>Hurrah! 'S ist Eliastag!</l>
+              <l>Horch, der Sturm mit seinen Jungen</l>
+              <l>Tummelt schwarze Wolkenpferde!</l>
+              <l>Vater, mächtig vorgeschwungen,</l>
+              <l>Hintennach auf seiner Fährte</l>
+              <l>Jauchzend fliegt die wilde Brut.</l>
+              <l>»Jungens ihr! laßt euch nicht schwindeln</l>
+              <l>Halt dich feste, wilde Brut!</l>
+              <pb n="57"/>
+              <l>Schmetternd fährt aus seinen Windeln</l>
+              <l>Dort der wilde Wolkensohn!</l>
+              <l>Hei! Wohin du Wolkensohn?« –</l>
+              <l>»Will mich wirbeln, sausen, drehn,</l>
+              <l>Bis die Sinne mir vergehn!</l>
+              <l>Will zerschmettern, stürzen, schlagen,</l>
+              <l>Daß die Menschen drob verzagen!</l>
+              <l>Fauler Donner, sollst nicht weilen!</l>
+              <l>Nach, du irres Windesheulen!«</l>
+            </lg>
+          </sp>
+          <stage>(Er geht mit den Gebärden eines Wahnsinnigen umher, dann setzt er sich ruhig.
+            Manona will die Fenster schließen.)</stage>
+          <sp who="#eumenides">
+            <speaker>Eumenides.</speaker>
+            <lg>
+              <l>Horch, das Leichhuhn schwirrt heran.</l>
+              <l>Könnt' ich fliehen, könnt' entrinnen!</l>
+              <l>O Manona, fleuch von hinnen!</l>
+              <l part="I">Hörst mich nicht? –</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona.</speaker>
+            <lg>
+              <l part="F">Ein alter Mann</l>
+              <l>Triefend naht sich uns'rer Thür.</l>
+            </lg>
+          </sp>
+          <stage>(Man hört die Thür klingeln, Tritte auf der Treppe. Eumenides, entsetzt
+            aufgesprungen, starrt nach <pb n="58"/> der Thür, Manona, angesteckt vom Grausen, sieht
+            hinaus.)</stage>
+          <sp who="#manona">
+            <speaker>Manona</speaker>
+            <stage>(vor sich).</stage>
+            <l>So sehn keine Leichenhühner.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Die Vorigen. Thorwald tritt ein.</head>
+          <sp who="#eumenides">
+            <speaker>Eumenides</speaker>
+            <stage>(schreiend).</stage>
+            <l part="I">'S ist sein Geist! <stage>(sinkt auf's Sopha.)</stage></l>
+          </sp>
+          <sp who="#thorwald">
+            <speaker>Thorwald.</speaker>
+            <lg>
+              <l part="F">Ergeb'ner Diener,</l>
+              <l>Find' ich wohl Herrn <emph>Düster</emph> hier?</l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona.</speaker>
+            <lg>
+              <l>Ja; doch ein gewöhnlich Fieber</l>
+              <l>Faßt ihn. Bis es wird verschwinden,</l>
+              <l>Weilt ein wenig hier, mein Lieber.</l>
+            </lg>
+          </sp>
+          <sp who="#thorwald">
+            <speaker>Thorwald</speaker>
+            <stage>(sich setzend, während sich Manona nach Eumenides umsieht, mit einigem
+              Nachdruck).</stage>
+            <lg>
+              <l>Von Herrn Ullo, meinem Vetter,</l>
+              <pb n="59"/>
+              <l>Hofft' ich Nachricht hier zu finden. <stage>(Pause.)</stage></l>
+            </lg>
+          </sp>
+          <sp who="#manona">
+            <speaker>Manona.</speaker>
+            <l>'S ist ein unerhörtes Wetter.</l>
+          </sp>
+          <sp who="#thorwald">
+            <speaker>Thorwald.</speaker>
+            <lg>
+              <l>Ja fürwahr, und manche Noth</l>
+              <l>Mag das angerichtet haben!</l>
+              <l>Eben sah ich einen Knaben,</l>
+              <l>Lieblich, wie das Morgenroth,</l>
+              <l>Dunkellockig, ach! so bleich,</l>
+              <l>Einer weißen Rose gleich,</l>
+              <l>Den ein Blitzstrahl hatt' erschlagen,</l>
+              <l>Aus dem nächsten Garten tragen.</l>
+            </lg>
+          </sp>
+          <stage>(Während er noch die letzten Worte spricht, tragen zwei Männer schweigend den
+            todten Hold herein, und setzen ihn auf einen Stuhl an der Wand. Manona stürzt mit einem
+            Schrei todt auf das Sopha neben Eumenides. Die Träger ab.)</stage>
+          <sp who="#eumenides">
+            <speaker>Eumenides</speaker>
+            <stage>(umherrennend).</stage>
+            <lg>
+              <l>Teufel! Teufel! Mordgelichter!</l>
+              <l>Also lohnst du deinem Dichter,</l>
+              <l>Der sich einzig dich erwählt?</l>
+              <l>Fall'n nicht alle meine Stücke,</l>
+              <pb n="60"/>
+              <l>Wie ein Lahmer ohne Krücke,</l>
+              <l>Wo dein scheußlich Antlitz fehlt?</l>
+              <l>Ja, das ist dein teuflisch Leben:</l>
+              <l>Wer sich einmal dir ergeben,</l>
+              <l>Den erpackst, umwirrst, verführst du!</l>
+              <l>Den umschlingst du! den umschnürst du!</l>
+              <l>Daß, wenn alle Himmelswichte</l>
+              <l>Dran sich hingen, wie Gewichte,</l>
+              <l>Dennoch blieb' in deinen Krallen,</l>
+              <l>Wer dir einmal zugefallen!</l>
+              <l>SolL's nicht immer toller werden,</l>
+              <l>Flieh' er eilends von der Erden;</l>
+              <l part="I">Wohl! <stage>(da er Thorwalden bemerkt.)</stage></l>
+              <l part="F">Was hat <emph>er</emph> dazustehn?</l>
+              <l>Soll ich etwa ihn umarmen,</l>
+              <l>Daß ihn grimmig, ohn' Erbarmen,</l>
+              <l>Teufelswirbel niederdrehn?</l>
+              <l>Was dich auch herbeigerufen,</l>
+              <l>Abwärts fleuch der Treppe Stufen!</l>
+              <stage>(Thorwald ab.)</stage>
+              <l>Auf nun, vor des Rechtes Thron,</l>
+              <l>Zu empfangen meinen Lohn! –</l>
+              <pb n="61"/>
+              <l>Halt! Welch übelwoll'ndes Wesen</l>
+              <l>Hält die Sinne mir umzogen?</l>
+              <l>Sollen's alle Völker lesen</l>
+              <l>In gelehrten Nekrologen,</l>
+              <l>Enden die Biographie,</l>
+              <l>Die ich selbst verfasset, – wie? –</l>
+              <l>Daß ich starb von Henkers Händen?</l>
+              <l>Nein! So <emph>darf's</emph> mit mir nicht enden!</l>
+              <l>Durch ein eigenmächt'ges Walten</l>
+              <l>Will ich fall'n wie meine Helden!</l>
+              <l>Uebergehn in jene Welten,</l>
+              <l>Ein Poete, zu den Skalden!</l>
+              <l>Weh' an Weh' entkeimt der Schuld,</l>
+              <l>Bis die Sühnungströme fließen.</l>
+              <l>Komm, o Dolch, aus meinem Pult.</l>
+              <stage>(Er nimmt eine große Papierscheere.)</stage>
+              <l>Wildes Blut muß blutig büßen.</l>
+              <stage>(Er geht, die Scheere in der Hand, einigemal auf und nieder.)</stage>
+              <l>Angeweht vom Schmerz und Graus,</l>
+              <l>Sammelt der Bewund'rer Menge</l>
+              <l>Die verhallenden Gesänge;</l>
+              <pb n="62"/>
+              <l><emph>Düster's Werke</emph> giebt man 'raus! –</l>
+            </lg>
+            <lg>
+              <l>Wohl denn, allgemein zu rühren,</l>
+              <l>Zieht heran des Lebens Ende.</l>
+              <l>Beifall klatschen alle Hände!</l>
+              <l>Möchte selbst mit applaudiren!</l>
+              <stage>(Er stellt sich in den Vorgrund und hält, zwischen beiden Leichen stehend, die
+                Papierscheere empor, in jeder Faust einen Arm derselben.)</stage>
+              <l>Auf, in jene Regionen,</l>
+              <l>Wo uns ew'ge Lust durchzuckt!</l>
+              <stage>(Er durchstößt sich die Brust, und fällt mit Gepolter, so, daß man die Griffe
+                der Scheere aus der Brust ragen sieht. Sich noch einmal aufrichtend.)</stage>
+              <l>Lobende Recensionen</l>
+              <l>Werden hinten angedruckt! <stage>(stirbt.)</stage></l>
+            </lg>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Sechste Scene.</head>
+          <sp who="#thorwald">
+            <speaker>Thorwald.</speaker>
+            <lg>
+              <l>Thor, betrogner! dessen Hand</l>
+              <l>Ruchlos griff ins heil'ge Leben,</l>
+              <pb n="63"/>
+              <l>Also wird es nicht gebannt,</l>
+              <l>Dieses Herzens wildes Streben.</l>
+              <l>Denn ein Dolch ist nicht die Brücke</l>
+              <l>In des Friedens lichtes Reich.</l>
+              <l>Nicht der freche Mörderstreich,</l>
+              <l>Scheucht der Seele Dual zurücke.</l>
+              <l>Wähnst mit Schuld die Schuld zu büßen?</l>
+              <l>Reinzuwaschen Blut mit Blut?</l>
+              <l>Aus der ew'gen Nacht entsprießen</l>
+              <l>Soll des Tages heil'ge Glut?</l>
+            </lg>
+            <lg>
+              <l>Nicht durch Qual und Blutesbäche</l>
+              <l>Wird der Ewige versöhnt.</l>
+              <l>Aus der staubgebückten Sdwäche</l>
+              <l>Reiß dich, Sünder, die ihn höhnt! –</l>
+              <l><stage>(Mit Ruhe.)</stage> Glücklich, wer ihn ausgerungen,</l>
+              <l>Solchen seligschweren Streit,</l>
+              <l>Glorreich sich emporgeschwungen</l>
+              <l>Aus der Erde bangem Leid!</l>
+              <l>Rasch enteilt die Flucht der Zeiten;</l>
+              <l>Treulich laßt uns stehn und streiten. <stage>(ab.)</stage></l>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
