@@ -1,0 +1,1876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Gelehrte</title>
+        <title type="sub">Trauerspiel in einem Act</title>
+        <author key="pnd:118535455">Freytag, Gustav</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000508</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q101018064</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Google Books</name>
+          <idno type="URL">https://books.google.com/books?id=gREpl62Am2UC&amp;pg=PA113</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gustav Freytag: Der Gelehrte. Trauerspiel in einem Act. In: Dramatische Werke von
+              Gustav Freytag. Leipzig: Hirzel 1858, S. 113–158.</title>
+            <date type="print" when="1848"/>
+            <date type="premiere"/>
+            <date type="written" when="1844"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="klaus" sex="MALE">
+            <persName>Klaus</persName>
+          </person>
+          <person xml:id="romberg" sex="MALE">
+            <persName>Romberg</persName>
+          </person>
+          <person xml:id="walter" sex="MALE">
+            <persName>Walter</persName>
+          </person>
+          <person xml:id="leontine" sex="FEMALE">
+            <persName>Leontine</persName>
+          </person>
+          <person xml:id="reginald" sex="MALE">
+            <persName>Reginald</persName>
+          </person>
+          <person xml:id="diener" sex="MALE">
+            <persName>Diener</persName>
+          </person>
+          <person xml:id="minister" sex="MALE">
+            <persName>Minister</persName>
+          </person>
+          <personGrp xml:id="stimmen" sex="UNKNOWN">
+            <name>Stimmen</name>
+          </personGrp>
+          <listRelation type="personal">
+            <relation name="friends" mutual="#walter #romberg"/>
+            <relation name="associated_with" active="#klaus" passive="#leontine"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2020-10-31">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <pb n="113"/>
+      <div type="front">
+        <head>Der Gelehrte.</head>
+        <head>Trauerspiel in einem Act.</head>
+        <head>(1844.)</head>
+      </div>
+      <pb n="114"/>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Leontine.</castItem>
+          <castItem>Reginald.</castItem>
+          <castItem>Der Minister.</castItem>
+          <castItem>Walter, Archivar.</castItem>
+          <castItem>Romberg, Journalist.</castItem>
+          <castItem>Klaus, Parkwärter.</castItem>
+          <castItem>Diener. Gäste.</castItem>
+        </castList>
+      </div>
+      <pb n="115"/>
+      <set>
+        <p>Scene: Park eines Landsitzes in der Nähe der Residenz.</p>
+        <p>Links die Wohnung des Parkaufsehers, Haus mit Weinlaub umzogen; im Vordergrunde derselben
+          Seite ein kleiner Tisch mit Büchern und Gartenstuhl, Holzblöcke und Gartengeräth. Die
+          rechte Hälfte des Hintergrundes ist eine breite Terrassentreppe, über welcher in der
+          Entfernung das – später erleuchtete – Schloß zu sehen ist.</p>
+      </set>
+    </front>
+    <body>
+      <div type="configuration">
+        <stage>Walter sitzt auf der Seite links am Tische und schreibt; Klaus, Romberg aus den
+          Bäumen der rechten Seite.</stage>
+        <sp who="#klaus">
+          <speaker>Klaus</speaker>
+          <stage>(auf Walter zeigend).</stage>
+          <l>Dort sitzt er, recht in seinem Studium</l>
+          <l>In Büchern und Scripturen, wie ein Fink</l>
+          <l part="I">Im grünen Laube.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l part="F">Dank euch, guter Mann.</l>
+        </sp>
+        <sp who="#klaus">
+          <speaker>Klaus.</speaker>
+          <l>Er hört uns nicht, 's ist ein gar ems'ger Herr;</l>
+          <l>Oft macht mir's Freude, still ihn anzusehn.</l>
+          <stage>(Ab, die Treppe hinauf.)</stage>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l part="I">Freund Walter, stör' ich?</l>
+        </sp>
+        <pb n="116"/>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Romberg, sei willkommen.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l>So find' ich hier dich in der Einsamkeit?</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Ich bin der Herrin dieses Guts befreundet,</l>
+          <l>Und floh auf ein'ge Wochen aus der Stadt</l>
+          <l>In jener Reben frohes Laubgeflecht.</l>
+          <l>Doch heut geht meine Sommerlust zu Ende,</l>
+          <l>Heut kehrt die Freundin aus den Bädern heim,</l>
+          <l>Und ich zurück zu meinen Pergamenten.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l>Als gutes Omen nehm' ich diesen Ort,</l>
+          <l>Den freien Himmel, hier das frische Grün,</l>
+          <l>Denn frei und zwanglos möcht' ich mit dir reden.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(lächelnd).</stage>
+          <l>Reden? du willst <emph>be</emph>reden, und wohl auch</l>
+          <l>Verführen! Hans, du bist ein Journalist,</l>
+          <l>Vorn Diplomat und hinten Sansculotte,</l>
+          <l>Was du auch treibst, du sorgst für dein Journal.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l>Und du hegst Mißtrau'n nach Gelehrten-Art.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="I">Gesteh' nur, etwas suchst du!</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l part="F">Ja, dich selbst.</l>
+          <l>Als Teufel komm' ich, deine Seele will ich,</l>
+          <l>Dein ganzes Wissen, Feder, Kopf und Herz.</l>
+        </sp>
+        <pb n="117"/>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Ah, das wird ernsthaft, rede, Freund, ich höre.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l>Du kennst der neuen Zeitung Plan und Zweck,</l>
+          <l>Die längst ersehnt, sich endlich jetzt gestaltet.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Ich kenne sie; es ist ein großes Werk,</l>
+          <l>Und Namen stehn davor von gutem Klange.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l>Vom besten. Nie trat noch ein Unternehmen</l>
+          <l>So glänzend, sicher, hoffnungsvoll an's Licht.</l>
+          <l>Die Edelsten sind im Verein, das Volk</l>
+          <l>Für freie Lebensformen zu erziehen.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="I">So hör' ich.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l part="F">Und einstimmig suchen wir</l>
+          <l>Als Haupt und Leiter dieses Unternehmens</l>
+          <l part="I">Dich.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="M">Mich? du scherzest.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l part="F">Alles finden wir</l>
+          <l>An dir vereinigt, scharfen Blick und Muth,</l>
+          <l>Gesinnung, Tact und Haltung, weitgerühmt</l>
+          <l>Ist deine Tüchtigkeit, und du gehörst,</l>
+          <l>Wie fern du dich auch hieltest, doch zu uns.</l>
+          <l>Du hast's bewiesen, denn geschickt und kühn</l>
+          <l>Hat deine Feder unser Recht vertreten.</l>
+        </sp>
+        <pb n="118"/>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Romberg, ich tauge nicht zum Publicisten.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l>Du taugst wie Keiner und du wirst's beweisen.</l>
+          <l>Auch darin, wo du anders urtheilst, wird</l>
+          <l>Zeit und Erfahrung schnell dich uns befreunden.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Du irrst, sehr Vieles trennt uns, eine Welt!</l>
+          <l>Ihr nennt euch Streiter für des Volkes Freiheit,</l>
+          <l>Und wollt, Baumeistern gleich, die Riesenfluth</l>
+          <l>Der Gegenwart in neue Dämme leiten,</l>
+          <l>Weil euch das alte Flußbett enge däucht;</l>
+          <l>Das nennt ihr Freiheit und ihr habt erkannt,</l>
+          <l>Durch welche Lehre, welche Thaten sie</l>
+          <l>Für uns zu kaufen sei. Das Alles wißt ihr.</l>
+          <l>Deshalb beschränkt ihr klug euch als Partei,</l>
+          <l>Und nach verständ'gem, wohlstudirtem Plan,</l>
+          <l>Bald schonend, bald bekämpfend wißt ihr schlau</l>
+          <l>Das übermächtig Feindliche zu meiden,</l>
+          <l>Die Gegner gut zu treffen, viel zu nützen,</l>
+          <l>Für eure Lehren Anhang und Erfolg</l>
+          <l part="I">Im ganzen Land zu finden.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l part="F">So? – und du?</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Ich bin ein Grübler, der das Leben ehrt,</l>
+          <l>In welchen Formen, wie und wo es waltet.</l>
+          <l>Ich lieb' es, Gegensätze zu verbinden,</l>
+          <l>Den Punkt zu suchen, wo verschiednes Licht</l>
+          <pb n="119"/>
+          <l>Zum einig reinen Strahle sich vereint.</l>
+          <l>Soll ich mich bannen aus der klaren Luft,</l>
+          <l>Mich niedersetzen an der Erdenstelle,</l>
+          <l>Wo trüb' und schwer die Elemente ringen,</l>
+          <l>Wo ich aufgehen muß in der Partei?</l>
+          <l>Kann ich Partei für eure Meinung nehmen,</l>
+          <l>Wenn ich erkenne, daß die feindlich And're</l>
+          <l>Ein gleiches Recht auf Sein und Geltung hat,</l>
+          <l>Daß beide Unrecht sind im höhern Sinn,</l>
+          <l>Ja, daß sie nur bestehen durch einander,</l>
+          <l>Wie Licht und Schatten und wie Schwarz und Weiß? –</l>
+          <l>Verzeih', daß ich mit einem Gleichniß ende,</l>
+          <l>Das von der Schulbank stammt. Ein Diamant</l>
+          <l>Ist eure Freiheit, die ihr unsrem Volk</l>
+          <l>Verehren wollt, ein schöner Edelstein,</l>
+          <l>Und freudig tragt ihr ihn an euren Mützen.</l>
+          <l>Und weil die Kohle rußig, schwarz, gemein,</l>
+          <l>Haßt und verfolgt ihr sie. Ich aber bin</l>
+          <l>Gewöhnt zu denken, daß der Diamant</l>
+          <l>Und euer Feind, die Kohlen, nach Natur,</l>
+          <l>Art und Bestandtheil sehr genau verwandt,</l>
+          <l>Fast eines und dasselbe sind. Und sieh,</l>
+          <l>Weil ich so denke, pass' ich nicht zu euch.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l>Fluch der Historie, sie verdirbt die Besten!</l>
+          <l>Fluch aller Weisheit, die gleichgültig macht!</l>
+          <l>Euch hat nur Geltung, was gestorben ist,</l>
+          <l>Was fertig ist, und eurem Messer handlich.</l>
+          <l>Was neu sich bildet in dem Drang der Zeit,</l>
+          <pb n="120"/>
+          <l>Verachtet ihr, weil ihr's nicht fassen könnt,</l>
+          <l>Nicht präpariren auf der Todtenbank.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Das Werden ist ein ewiges Geheimniß.</l>
+          <l>Nur die Gedanken sind dein Eigenthum,</l>
+          <l>Und frei gehört dir nur, was du gewollt,</l>
+          <l>Was That wird, folgt dem Zwang von tausend Leben,</l>
+          <l>Was du geschaffen, ist, was du gesollt.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l part="I">Das führt zur Trägheit.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Nur zur Vorsicht, Freund!</l>
+          <l>Ihr ruft zum Streit, ihr wollt in Kirch' und Staat</l>
+          <l>Die allzuenge alte Wölbung sprengen,</l>
+          <l>Die todten Bilder aus den Nischen drängen</l>
+          <l>Durch weise Sprüche, die in guten Stunden</l>
+          <l>Ihr in des Wissens tiefstem Grund gefunden.</l>
+          <l>Ihr ruft das Volk, die Hände dran zu legen;</l>
+          <l>Es hängt an euch, lauscht euren Worten gern,</l>
+          <l>Und dennoch! dennoch! seh' ich kein Gedeih'n,</l>
+          <l>Denn eins fehlt uns, die <emph>Kraft</emph> fehlt zu gestalten,</l>
+          <l>Und die erzwingen könnt ihr alle nicht. –</l>
+          <l>Und deshalb mein' ich, eure Arbeit ist</l>
+          <l>Doch wohl die rechte nicht. Denn immer half</l>
+          <l><emph>Ein</emph> gutes Beispiel mehr als tausend Lehren.</l>
+          <l>Drum eh' du Andre lehrest, tauche selbst</l>
+          <l>Zuvor in's Volk und lerne, was uns stärkt.</l>
+          <l>Beschränke dich im Kreis des kleinsten Mannes,</l>
+          <l>Erweitre sein Bedürfniß, sein Vermögen,</l>
+          <pb n="121"/>
+          <l>Die Werkstatt adle, weih' ihm Hof und Feld,</l>
+          <l>Schwinge den Hammer, nimm des Spatens Griff,</l>
+          <l>Laß jeden Einzelnen zum Mann erst werden</l>
+          <l>In seinem Kreise, wo er sicher schafft, –</l>
+          <l>Dann reift das Volk von selbst für Mannesthat!</l>
+          <l part="I">Das ist mein Glaube.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l part="F">Meinst du so? Nun denn!</l>
+          <l>Aus all' der Weisheit, all' dem hohen Ton,</l>
+          <l>In dem du singst, hör' ich nur einen Mißlaut,</l>
+          <l>Den schlechtesten, »Gesinnungslosigkeit.«</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Du thust mir weh' und willst mich mißverstehn.</l>
+          <l>Bei meinem Gott! mein Herz schlägt just so warm</l>
+          <l>Als deines für die Menschheit und ihr Loos,</l>
+          <l>Mit Schmerz und Rührung seh' ich jeden Kampf</l>
+          <l>Der schwachen Menge, seh' ihr ernstes Ringen</l>
+          <l>Nach Luft und Licht, das gläubige Vertrauen</l>
+          <l>Zu schlechten Führern, schnelles Selbstgefühl</l>
+          <l>Beim kleinsten Siege. Rührend ist und schmerzlich</l>
+          <l>Der Zeiten Antlitz und ich leide oft,</l>
+          <l>Daß ich nicht stolz sein kann da, wo ich liebe.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l>Der Schwächling leidet; wer ein Mann ist, zürnt</l>
+          <l part="I">Und schlägt darunter.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Ja! das thut ihr gern,</l>
+          <l>Denn euch beweget wen'ger Lieb' als Haß,</l>
+          <l>Ihr liebt das Volk, weil ihr's zu leiten hofft,</l>
+          <pb n="122"/>
+          <l>Doch mehr noch haßt ihr, was euch widersteht</l>
+          <l>Und eurem Richtmaß sich nicht fügen will.</l>
+          <l>Und hättet ihr die Herrschaft, die ihr sucht,</l>
+          <l>Ihr wär't Tyrannen, ärger, peinlicher,</l>
+          <l part="I">Als Drako und Lykurg –</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l part="F">So fahr' dahin!</l>
+          <l>Denn alle Worte sind an dem verschwendet,</l>
+          <l>Der da verhöhnet, wo er ehren soll.</l>
+          <l>Drum lebe wohl und dies noch sag' ich dir:</l>
+          <l>Mißtraue der aristokrat'schen Ruhe,</l>
+          <l>Einst kommt der Tag, wo deine luft'ge Halle,</l>
+          <l>Der Pfeiler deines Stolzes dir zerfällt;</l>
+          <l>Dann wird dein Leben selbst der Krieg verheeren,</l>
+          <l>Den du mit uns zu kämpfen jetzt versagst,</l>
+          <l>Dann wirst du selbst erklingen und zerbrechen</l>
+          <l>Als ein Gefäß, bestimmt, den Wein der Zeit</l>
+          <l>Zu klären, du verläugnest ihm den Dienst,</l>
+          <l>Der Gott der Gegenwart wird dich verläugnen.</l>
+          <l part="I">Leb' wohl!</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Reich' mir die Hand und höre du auch mich!</l>
+          <l>Für wahre Freiheit kämpft mit Recht nur der,</l>
+          <l>Der stets im Einzelnen die Freiheit ehrt.</l>
+          <l>Und käme je der Tag, der nimmer kommt,</l>
+          <l>Wo ich aus meinen Tempeln flüchtig eile,</l>
+          <l>Ich bleibe unverändert, was ich bin,</l>
+          <l>Ein Sohn der Freiheit, der die Mutter sucht.</l>
+          <l>Du aber hüte dich!</l>
+          <pb n="123"/>
+          <l>Du meinst das Banner deines Volks zu tragen,</l>
+          <l>Du träumst so selig Schlacht und Siegesruhm,</l>
+          <l>In Kurzem liegt dein Fahnenstock zerschlagen,</l>
+          <l>Dir selbst beginnt ein langes Martyrthum,</l>
+          <l>Mißtrau'n, Verfolgung und Verbitterung;</l>
+          <l part="I">Behüte Gott dein warmes Herz!</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l part="F">Leb' wohl!</l>
+          <stage>(Ab, links.)</stage>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(allein).</stage>
+          <l>Er geht!</l>
+          <l>Priester und Opferthier der kranken Zeit,</l>
+          <l>Einer von vielen Wüstenpredigern,</l>
+          <l>Die Licht verkünden und in Nacht vergehn. –</l>
+          <l>Und ich bin ärmer jetzt um einen Freund! –</l>
+        </sp>
+      </div>
+      <div type="configuration">
+        <stage>Walter. Klaus.</stage>
+        <sp who="#klaus">
+          <speaker>Klaus</speaker>
+          <stage>(eilig die Treppe herab).</stage>
+          <l>Die Herrschaft kommt! Die Frau Baronin kommt!</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="I">Dank für die Nachricht, Alter!</l>
+        </sp>
+        <sp who="#klaus">
+          <speaker>Klaus.</speaker>
+          <l part="F">Sausend fuhr</l>
+          <l>Ihr Wagen durch die Pappeln vor das Schloß,</l>
+          <l>Die Diener sind in Galla, und das Thor</l>
+          <l>Mit Blumen und Guirlanden aufgeputzt.</l>
+          <l>Ich stand am Eingang und sie grüßte mich,</l>
+          <l>So gütig, wie sie pflegt. Ein halbes Jahr</l>
+          <l>Entfernt! Dort auswärts in Italien,</l>
+          <l>Nicht wahr? Juchhei, das wird ein froher Tag!</l>
+        </sp>
+        <pb n="124"/>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Ja, treuer Mann! für dich und für uns alle.</l>
+        </sp>
+        <sp who="#klaus">
+          <speaker>Klaus.</speaker>
+          <l>Heut' Abend kommt die vornehme Verwandtschaft,</l>
+          <l>Auch eine Excellenz, es giebt ein Fest</l>
+          <l>Mit Feuerkugeln und bengal'scher Flamme,</l>
+          <l>Und großes Essen; in der Küche brennt</l>
+          <l>Ein Feuer riesengroß, und das Gesicht</l>
+          <l>Des Koches leuchtet roth wie eine Tonne.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Du bist ganz außer dir vor Herzensfreude.</l>
+        </sp>
+        <sp who="#klaus">
+          <speaker>Klaus.</speaker>
+          <l>Sie auch, gewiß. Wir alle wissen ja,</l>
+          <l>Welch' großes Stück die Gnäd'ge auf Sie hält.</l>
+          <l>Sie kommen mit zum Schloß, Herr Archivar!</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Noch nicht. Die erste Stunde nach der Ankunft</l>
+          <l>Gehört ihr selbst allein; das soll man ehren.</l>
+          <l part="I">Ich komme später.</l>
+        </sp>
+        <sp who="#klaus">
+          <speaker>Klaus</speaker>
+          <stage>(stehen bleibend).</stage>
+          <l part="F">Ob die Herrschaft weiß,</l>
+          <l>Daß Sie seit einigen Wochen hier gewohnt,</l>
+          <l>Und hier bei uns an Ihren Büchern schrieben?</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="I">Gewiß! sie hat es selbst gewollt.</l>
+        </sp>
+        <sp who="#klaus">
+          <speaker>Klaus.</speaker>
+          <l part="F">Mein Gott!</l>
+          <l>Dann kommt sie her, bevor wir's uns versehn, –</l>
+          <l>Das Scheitholz liegt umher und nichts ist sauber –</l>
+        </sp>
+        <pb n="125"/>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(lachend).</stage>
+          <l>Sei ohne Sorge. Du bleibst ungestört.</l>
+          <stage>(Klaus ab.)</stage>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(allein).</stage>
+          <l>Ein Wiedersehn! <emph>Ein</emph> flücht'ger Augenblick</l>
+          <l>Unruhiger Spannung, freudiger Beklemmung!</l>
+          <l><emph>Ein</emph> kurzer Wirbel und die Seele fluthet</l>
+          <l>Im alten Strombett wieder ruhig hin.</l>
+          <l>Und dennoch, dennoch!</l>
+          <l>Den Schmerz der Trennung wiegt die bange Freude</l>
+          <l>Des Wiedersehens nie uns Armen auf. –</l>
+          <l>Man sollte nie sich trennen, als – auf ewig.</l>
+          <stage>(Walter ab.)</stage>
+        </sp>
+      </div>
+      <div type="configuration">
+        <stage>Leontine. Reginald.</stage>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Hier sehen Sie mein kleines Reich, Cousin!</l>
+          <l>Im goldnen Kleid des Herbstes steht es da,</l>
+          <l>Die Hausfrau bei der Heimkehr zu begrüßen!</l>
+        </sp>
+        <sp who="#reginald">
+          <speaker>Reginald.</speaker>
+          <l>Ich seh' nicht nur das schöne Kleid des Herbstes,</l>
+          <l>Das die Natur in Ihren Grenzen schuf,</l>
+          <l>Ein kräftig Regiment auch seh' ich walten.</l>
+          <l>Im Hause Selbstgefühl, Ordnung im Haushalt,</l>
+          <l>Im Wald und Felde weise Wirthlichkeit,</l>
+          <l>Das Nöthige dem Schmucke nie geopfert,</l>
+          <l>Und dennoch Zierendes an jedem Ort.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Wie schmeichelnd tönt dem Weibe solches Lob!</l>
+          <l>Und hohen Werth hat mir's aus Ihrem Mund,</l>
+          <pb n="126"/>
+          <l>Denn herzlich wünsch' ich Ihnen zu gefallen</l>
+          <l>Hier, wo am liebsten sich mein Geist bewegt,</l>
+          <l>Im Kreise meiner stillen Thätigkeit.</l>
+        </sp>
+        <sp who="#reginald">
+          <speaker>Reginald.</speaker>
+          <l>Vertrau'n Sie meinem Lobe nicht zu viel.</l>
+          <l>Zu lange hing ich mit Bewunderung</l>
+          <l>An Ihrem Geist, mein Urtheil ist bestochen.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Sein Sie mir immer ehrlich, Reginald,</l>
+          <l>Auch wenn Sie tadeln müssen, wie ich bin.</l>
+          <l>Denn vieles noch an mir ist Ihnen fremd.</l>
+          <l>Sie boten mir, der Reisenden, die Hand;</l>
+          <l>Im Wanderkleide war ich, wo die Frau</l>
+          <l>Dem Sinn des Mannes schnell bezaubernd scheint,</l>
+          <l>Die ihm gewöhnlich wird am eignen Herd. –</l>
+          <l>Und wenn ich mich, die liebgewordne Herrschaft,</l>
+          <l>In Ihre Hände leg', o schonen Sie</l>
+          <l>Mit milder Nachsicht, was ich hier gebaut,</l>
+          <l>Die kleinen Pläne, selbst verfehltes Schaffen;</l>
+          <l>Was mühsam ich in diesen Boden schrieb,</l>
+          <l part="I">Es war mein bestes Leben.</l>
+        </sp>
+        <sp who="#reginald">
+          <speaker>Reginald.</speaker>
+          <l part="F">Leontine,</l>
+          <l>In Seide hüllen wir das leichte Blatt,</l>
+          <l>Worauf die Handschrift der Geliebten glänzt;</l>
+          <l>Kann ich dem Schönen, was Sie hier gepflanzt,</l>
+          <l>Gering're Ehrfurcht, als den Blättern weih'n?</l>
+        </sp>
+      </div>
+      <pb n="127"/>
+      <div type="configuration">
+        <stage>Vorige. Diener, dann Walter (von links).</stage>
+        <sp who="#diener">
+          <speaker>Diener</speaker>
+          <stage>(schnell auftretend).</stage>
+          <l part="I">Herr Walter!</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l part="M">Hier herein!</l>
+        </sp>
+        <sp who="#reginald">
+          <speaker>Reginald.</speaker>
+          <l part="F">Der frohe Ruf</l>
+          <l>Des Boten meldet, daß ein Liebling naht.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Ich weiß, er wird auch Ihnen theuer werden.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(freudig).</stage>
+          <l>Willkommen aus der grünen Meeresfluth,</l>
+          <l>Nach langem Säumen, vielersehnt uns allen!</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine</speaker>
+          <stage>(vorstellend).</stage>
+          <l part="I">Von Waldeck, mein Cousin.</l>
+        </sp>
+        <sp who="#reginald">
+          <speaker>Reginald</speaker>
+          <stage>(artig).</stage>
+          <l part="F">Mir ward Ihr Bild</l>
+          <l>So treffend von geschickter Hand gezeichnet,</l>
+          <l>Daß ich in dieser Stunde der Begegnung</l>
+          <l>Nicht mehr als Fremdling Sie begrüßen darf.</l>
+          <l>Und freundlich hoff' ich unter holdem Schutz</l>
+          <l>Ein menschlich Finden in willkommner Stunde.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Eng hat das Leben mir den Kreis gezogen,</l>
+          <l>Wo ich begehrlich meine Fäden zieh',</l>
+          <l>Und was herantritt, lieb' ich festzuhalten.</l>
+        </sp>
+        <sp who="#reginald">
+          <speaker>Reginald.</speaker>
+          <l>So will ich sorgen, daß das mir geschehe. <stage>(Ab.)</stage></l>
+        </sp>
+        <pb n="128"/>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Und jetzt noch einmal herzlich mir willkommen!</l>
+          <l>Italiens Himmel hat mit ros'gem Licht</l>
+          <l>Geschmückt die deutsche Wange, freudig seh'</l>
+          <l>Ich Sie genesen, glücklich vor mir stehn.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Dank Ihrer Lehre, daß das fremde Land</l>
+          <l>Mich grüßend, wie ein alter Freund, empfing.</l>
+          <l>Es war mir leicht, das Fremde schön zu finden,</l>
+          <l>Weil ich es liebte, längst, bevor ich's sah.</l>
+          <l>Und dennoch zaudr' ich, meine Römerfahrt</l>
+          <l>Zu segnen. Leicht verlockte mich das Neue.</l>
+          <l>Gelüftet schien der Reisenden die Fessel,</l>
+          <l>Die in der Heimath drückend mich gehemmt,</l>
+          <l>Doch auch die Schranke war dem Aug' entschwunden,</l>
+          <l>Die meinem Dasein Schutz und Grenze war.</l>
+          <l>Leicht folgte mir das Herz dem Reiz des Neuen</l>
+          <l>Und prüfte nicht, wie sich's zum Alten fügt.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(lächelnd).</stage>
+          <l>Und fügt sich's nicht, wohlan! so giebt es Streit,</l>
+          <l>Und aus dem Kampfe holen wir den Sieg. –</l>
+          <l>Doch schon befürcht' ich, daß ein solcher Krieg</l>
+          <l>In Ihrem Haupt die grauen Flügel regt,</l>
+          <l>So ernst das Antlitz und ein dunkler Flor</l>
+          <l>Liegt auf den Augen, die dem Freunde sonst</l>
+          <l>Offen und fröhlich ihr Willkommen glänzten.</l>
+          <l>Ich ahne Regen und ein Wetter zieht</l>
+          <l>Herauf am blauen Himmel unsrer Freundschaft.</l>
+        </sp>
+        <pb n="129"/>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Ich tadle mich, daß mir die Worte fehlen,</l>
+          <l>Das zu vertrauen, was mich längst bewegt;</l>
+          <l>Ich habe diesen Augenblick ersehnt,</l>
+          <l>Und bin verlegen, da er vor mir steht.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(scherzend).</stage>
+          <l>Gewaltig muß es sein, was so sich kündet.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Sie kennen den unsel'gen Güterzwist,</l>
+          <l>Der mir gehässig an der Seele nagte. –</l>
+          <l>Waldeck war Gegner, die Familie rieth</l>
+          <l>Vermittelnd beiden Theilen zum Vergleich.</l>
+          <l>Als Kind hatt' ich den Vetter einst geliebt;</l>
+          <l>Er bat um mündlichen Verkehr. Wir trafen</l>
+          <l>Nach langer Trennung uns auf dieser Reise.</l>
+          <l>Im Bad von Nizza, an Italiens Höfen</l>
+          <l>Ward er mein Führer. Wohl war ich verwöhnt,</l>
+          <l>Verwöhnt durch Sie, an eines Freundes Hand</l>
+          <l>Zu schreiten, fremdem Urtheil zu vertraun.</l>
+          <l>Er wurde mir, was Sie mir waren, doch</l>
+          <l>Nicht ruhig, so uneigennützig nicht.</l>
+          <l>Mit Leidenschaft und mit verständ'gen Gründen</l>
+          <l>Drang er auf unsere Vereinigung.</l>
+          <l>Ich widerstrebte lange, doch es wob</l>
+          <l>Sich aus Reminiscenzen, aus dem Dienst,</l>
+          <l>Den er mir ritterlich im Bade weihte,</l>
+          <l>Dort ein Gewebe, das mir haltbar schien,</l>
+          <l>Die Tage meiner Zukunft drein zu hüllen.</l>
+          <l>Die Freunde drängten. – Auf der Rückkehr ward</l>
+          <pb n="130"/>
+          <l>Bei meinem Oheim der Vertrag geschlossen. –</l>
+          <l part="I">Seit kurzem bin ich ihm verlobt.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Verlobt!</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Es ist gesprochen und ich athme frei!</l>
+          <l>Walter! Sie sind wahrhaft mir stets gewesen</l>
+          <l>Uneigennützig, fest, ein warmer Freund,</l>
+          <l>Vielleicht das Höchste, was dem Weib auf Erden</l>
+          <l>Sein Glück verstattet. Ich bin nicht gewöhnt,</l>
+          <l>Zu handeln ohne Ihre Beistimmung.</l>
+          <l>Jetzt droht mir Vieles, Trennung von dem Alten,</l>
+          <l>Ein andres Fühlen, längst entwöhnte Pflicht. –</l>
+          <l>Ein neues Leben rollt in Gaukelbildern</l>
+          <l>Vor mir sich auf, ich bin erschreckt und bange</l>
+          <l>Und suche ängstlich, was mir unverrückt</l>
+          <l>Beharrt von meiner Habe. Reginald</l>
+          <l>Ist edel, doch in Vielem noch mir fremd;</l>
+          <l>Sein scharfes Auge wird, so fürcht' ich, oft</l>
+          <l>An mir vermissen. Jetzt, mein lieber Freund,</l>
+          <l>Bedarf ich Kraft, die meinen Willen stählt,</l>
+          <l>Männliches Fühlen, das mein Urtheil leitet.</l>
+          <l>Zu Ihnen fleh' ich, stehen Sie mir fest!</l>
+          <stage>(weich.)</stage>
+          <l part="I">Walter, mein Freund, Sie bleiben mir!</l>
+          <stage>(reicht ihm die Hand.)</stage>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(ihr die Hand reichend).</stage>
+          <l part="F">Ich bleibe.</l>
+        </sp>
+        <stage>Leontine (bleibt auf der Treppe stehen und betrachtet stumm Waltern, der sie nicht
+          bemerkt, dann wendet sie sich und geht die Treppe hinauf, ab.)</stage>
+      </div>
+      <pb n="131"/>
+      <div type="configuration">
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(allein, starr).</stage>
+          <l>Verlobt? – das summte mir so fremd und kalt</l>
+          <l>Durch's Ohr zur Seele. Kein Befremden fühlt' ich,</l>
+          <l>Kaum Sorge für die Theure. Keinen hab' ich,</l>
+          <l>Den ich im Herzen tiefer trag', als sie;</l>
+          <l>Verhängnißvoll für sie erscheint die Kunde,</l>
+          <l>Und ich war kaltes Eis, fühlloser Stein,</l>
+          <l>Ja, und ich selbst erschrak ob meiner Kälte. –</l>
+          <l>Wo fehlt's mir? sind die Nerven losgesprungen,</l>
+          <l>An denen das Gefühl den Leib durchzittert? –</l>
+          <l>Nein!</l>
+          <l>Die Fliege fühl' ich saugen an der Hand,</l>
+          <l>Mein Blut läuft ruhig und der Geist ist frei.</l>
+          <l>Und nicht erschrocken, nicht einmal befremdet?</l>
+          <l>Bewegt und forschend sah die Freundin mir</l>
+          <l>In's Antlitz; meine Antwort war ein Lächeln. –</l>
+          <l>O ich bin ein verruchter Egoist!</l>
+          <l>Unwerth der Freundschaft, ohne Herz für Liebe,</l>
+          <l>Gleichgültig gegen Schicksal, Leben, Tod!</l>
+          <l>Und wieder scheint mir, solche Starrheit sei</l>
+          <l>Nichts Gutes. Der Matrose trotzt dem Sturm,</l>
+          <l>Doch in der Meeresstille schaut er düster</l>
+          <l>Auf Schiff und Segel und ihm schwant etwas. –</l>
+          <stage>(heftig.)</stage>
+          <l>Verlobt! – warum nicht? Weshalb sticht das Wort</l>
+          <l>Mich wie mit Nadeln in das Hirn? – 's ist Thorheit!</l>
+          <stage>(langsam ab, links.)</stage>
+        </sp>
+      </div>
+      <pb n="132"/>
+      <div type="configuration">
+        <stage>Minister; Reginald (die Treppe heraufkommend).</stage>
+        <sp who="#minister">
+          <speaker>Minister.</speaker>
+          <l>Du stehst als Hausherr halb, und halb als Gast</l>
+          <l>Mir gegenüber. Welchen darf ich grüßen?</l>
+        </sp>
+        <sp who="#reginald">
+          <speaker>Reginald.</speaker>
+          <l>Es soll dem Freunde sein Geheimniß sein,</l>
+          <l>Was Leontin' aus Frauenrücksicht noch</l>
+          <l>Für ein'ge Wochen klug verschweigen will.</l>
+          <l>Wir sind verlobt durch Ring und Ehvertrag,</l>
+          <l>Durch große Siegel bin ich festgeschlossen.</l>
+        </sp>
+        <sp who="#minister">
+          <speaker>Minister.</speaker>
+          <l>Noch kenn' ich nicht die Gattin deiner Wahl,</l>
+          <l>Doch Frohes hör' ich durch Gerücht und Freunde.</l>
+          <l>Man rühmt die edle Bildung der Baronin,</l>
+          <l>Anmuth'ge Ruh' und stille Häuslichkeit.</l>
+        </sp>
+        <sp who="#reginald">
+          <speaker>Reginald.</speaker>
+          <l>So ist sie. In der Stille aufgeblüht,</l>
+          <l>Als Kind schon Witwe, blieb sie ungestört</l>
+          <l>Durch Vieles, was die Frauen uns verwirrt;</l>
+          <l>So frisch und doch so fertig, kindlich froh</l>
+          <l>Bewegt beim Kleinsten und doch stark und fest.</l>
+          <l>Sie ist ein Kleinod und ich will sie ehren.</l>
+        </sp>
+        <sp who="#minister">
+          <speaker>Minister.</speaker>
+          <l>Mit Freuden seh' ich deine Seele warm.</l>
+          <l>Ich hoffte niemals, dich vermählt zu sehn;</l>
+          <l>Denn schon als Knabe standest du allein,</l>
+          <l>Und wenn ich kindisch mich im Spiel vertiefte,</l>
+          <l>Und bunte Pferde von geschnitztem Holz</l>
+          <l>In meinem Marstall an die Krippe band,</l>
+          <pb n="133"/>
+          <l>Du schnittst die Farbe mit dem Messer ab,</l>
+          <l>Und warfst gleichgültig dann das Holz zur Erde.</l>
+          <l>Du liebtest nicht, in Andrem aufzugehn,</l>
+          <l>Und ruhtest stets verständig in dir selbst.</l>
+          <l>So bist du noch und deshalb hast du viel</l>
+          <l>Von dir zu opfern als vermählter Mann;</l>
+          <l>Denn jede Frau hat Recht auf große Schonung,</l>
+          <l part="I">Und du schonst ungern.</l>
+        </sp>
+        <sp who="#reginald">
+          <speaker>Reginald.</speaker>
+          <l part="F">Wohl, du sollst mich loben. –</l>
+          <l>Auch Leontine wünsch' ich manchmal anders.</l>
+          <l>Sie ist gewöhnt, in ihrem Kreis behaglich</l>
+          <l>Jedes Empfinden durchzukosten und</l>
+          <l>Erinn'rung dran sich zärtlich zu erneu'n.</l>
+          <l>Sehr liebenswürdig thut sie's, doch es ist</l>
+          <l>Oft kleinlich. All' das wird sich ändern, und</l>
+          <l>Demüthig will ich hier der Zeit vertrau'n.</l>
+          <l>Bei Einzelnem, was ich entfernen muß,</l>
+          <l>Erbitt' ich deinen Beistand, eh' wir scheiden.</l>
+        </sp>
+        <sp who="#minister">
+          <speaker>Minister.</speaker>
+          <l>So sei es. Aber jetzt geleite mich</l>
+          <l>Zu der Verlobten, daß ich deiner Wahl</l>
+          <l>Mich sicher freue, und ihr holdes Wort</l>
+          <l>Den Freund des Gatten hier willkommen heiße.</l>
+          <stage>(Ab rechts.)</stage>
+        </sp>
+      </div>
+      <div type="configuration">
+        <stage>Klaus (der von rechts kommend die Abgehenden grüßt, allein).</stage>
+        <sp who="#klaus">
+          <speaker>Klaus.</speaker>
+          <l>'s sind Gäste, suchen die Baronin; die</l>
+          <l>Hat jetzt Gesellschaft, die ihr lieber ist.</l>
+          <pb n="134"/>
+          <l>Sie ist bei unsern Rehen. Sieh', es kam</l>
+          <l>Die ganze Heerde lustig angetrabt</l>
+          <l>Und warf die Mäuler durch den Lattenzaun.</l>
+          <l>Es freut mich, daß die unsre Herrschaft nicht</l>
+          <l>Vergessen haben, nicht die kleine Hand,</l>
+          <l part="I">Die ihnen Futter reichte.</l>
+          <stage>(Tisch und Stuhl aufräumend.)</stage>
+          <l part="F">Jetzo kehrt</l>
+          <l>Die alte Ordnung langsam uns zurück,</l>
+          <l>Die Frau Baronin schreibt und sorgt im Haus,</l>
+          <l>Ich aber schaufle hier die Gänge rein</l>
+          <l>Vom Gras, und hacke Holz zum Küchenherd,</l>
+          <l>Und füttre unser Wild mit ihr zusammen.</l>
+          <l>Und deshalb hurtig noch das Holz geräumt,</l>
+          <l part="I">Schon naht der Abend.</l>
+          <stage>(Nimmt eine Axt und hackt Holz.)</stage>
+          <l part="F">Ich bin sehr vergnügt,</l>
+          <l>Daß ich nicht reisen durfte <stage>(schlägt).</stage> – Wer denn sonst</l>
+          <l>Hätt' unser Wild gefüttert? <stage>(schlägt.)</stage> – Jeder kann das! –</l>
+          <l><stage>(ärgerlich.)</stage> So? Jeder? – Keiner kann's so gut als ich.</l>
+          <stage>(schlägt.)</stage>
+          <l>Ich mußte bleiben, ich war unentbehrlich. –</l>
+          <l>Da kommt Herr Walter. Ei, wie sieht der aus!</l>
+          <l>So grau wie Regen, hart und sorgenvoll,</l>
+          <l part="I">Gewiß, dem fehlt was.</l>
+        </sp>
+      </div>
+      <div type="configuration">
+        <stage>Walter. Der Vorige.</stage>
+        <sp who="#klaus">
+          <speaker>Klaus</speaker>
+          <stage>(Walter betrachtend).</stage>
+          <l part="F">Hm! – Er kennt mich nicht,</l>
+          <l part="I">O, der ist sehr vertieft.</l>
+        </sp>
+        <pb n="135"/>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(düster).</stage>
+          <l part="F">Was thust du, Klaus?</l>
+        </sp>
+        <sp who="#klaus">
+          <speaker>Klaus.</speaker>
+          <l>Was mir zu festem Schlaf verhelfen soll,</l>
+          <l part="I">'s macht tüchtig müde.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">So? – Gieb her die Axt.</l>
+          <stage>(greift darnach.)</stage>
+        </sp>
+        <sp who="#klaus">
+          <speaker>Klaus</speaker>
+          <stage>(zurückhaltend).</stage>
+          <l part="I">Was wollen Sie?</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Gieb her und sei kein Thor,</l>
+          <l>Ich bin nicht wohl, ich will dein Amt versehn,</l>
+          <l>Vielleicht hilft mir die Müdigkeit zur Ruh'.</l>
+        </sp>
+        <sp who="#klaus">
+          <speaker>Klaus.</speaker>
+          <l part="I">Doch wenn Sie Jemand sähe?</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Freund, was thut's!</l>
+          <l>Schon Adam hackte Klötze, als die Hand</l>
+          <l>Des Herrn ihm feindlich war. Reich' zu das Holz!</l>
+        </sp>
+        <sp who="#klaus">
+          <speaker>Klaus</speaker>
+          <stage>(einen Klotz rollend).</stage>
+          <l>Hier schlagt die Oeffnung für den Eisenkeil.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(schlägt).</stage>
+          <l>Ein mächt'ger Stamm! Als du die Krone trugst,</l>
+          <l>Dein knorrig Astgeflecht mit Blätterschmuck</l>
+          <l>Dem Sonnenstrahle froh entgegen kehrtest,</l>
+          <l>Da hielt der müde Vogel auf dir Rast,</l>
+          <l>In deinem Schatten lag der Wandersmann,</l>
+          <l>Und gastfrei heiltest du die müden Glieder,</l>
+          <pb n="136"/>
+          <l>Ihm Ruhe spendend <stage>(schlägt).</stage> Merk', jetzt aber sucht</l>
+          <l>Ruhlos ein Wandrer Mattigkeit an dir <stage>(schlägt).</stage></l>
+        </sp>
+        <sp who="#klaus">
+          <speaker>Klaus.</speaker>
+          <l>Ihr schlagt zu heftig, seht, Ihr fehlt den Keil.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(innehaltend).</stage>
+          <l>Sprich, Alter! Denkst du oft an deinen Gott?</l>
+        </sp>
+        <sp who="#klaus">
+          <speaker>Klaus.</speaker>
+          <l>An Gott? – Ja, aber nur irregulär.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="I">Was heißt das?</l>
+        </sp>
+        <sp who="#klaus">
+          <speaker>Klaus.</speaker>
+          <l part="F">So zum Beispiel wenn die Sonne</l>
+          <l>In unserm Walde durch die Blätter scheint</l>
+          <l>Und 's Moos vergoldet, das im Grunde blüht,</l>
+          <l part="I">Dann thu' ich's manchmal.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Recht so, alter Kuckuk!</l>
+          <l>Ein jedes Leben führt zuletzt zum Frieden. –</l>
+          <l part="I">Laß mich allein!</l>
+        </sp>
+        <sp who="#klaus">
+          <speaker>Klaus</speaker>
+          <stage>(zögernd).</stage>
+          <l part="M">Ich möchte bleiben.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Geh!</l>
+          <l>Ich bitte. Mir wird besser, sorge nicht. <stage>(Klaus ab.)</stage></l>
+          <l>Die Arbeit, auch die schlechteste des Mannes,</l>
+          <l>Verlangt ein helles Auge, sich're Kraft,</l>
+          <l>Die fehlen mir. Ein Keil sitzt mir im Mark</l>
+          <l>Und spaltet mich entzwei <stage>(schlägt).</stage> Hinab mit dir!</l>
+          <l part="I">Spannt euch, ihr Sehnen!</l>
+        </sp>
+      </div>
+      <pb n="137"/>
+      <div type="configuration">
+        <stage>(Leontine von rechts auftretend.)</stage>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l part="M">Walter!</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(schlagend).</stage>
+          <l part="F">Fort zur Hölle!</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l part="I">Walter, was treiben Sie?</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">In Trümmer schlag' ich,</l>
+          <l>Was allzu schwach ist, seinen Kern zu wahren.</l>
+          <stage>(Die Axt wegwerfend.)</stage>
+          <l>Ich lieb' es,</l>
+          <l>Die ungeübten Glieder so zu härten.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Doch seltsam ist das Thun und Ihre Art.</l>
+          <l>Das Auge düster und Ihr Antlitz bleich.</l>
+          <l>Ihr Wesen quält mich. Freund, Sie sind erkrankt!</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Ja, krank im tiefsten, tiefsten Grund der Seele.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Und darf ich's hören, fordr' ich als mein Recht</l>
+          <l>Vom Freund zu wissen, was Sie so erregt!</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Es ist ein altes Leiden, heimlich trug</l>
+          <l>Ich's lang' in mir herum, und oft besiegt,</l>
+          <l>Befiel mich's wieder. Doch so heftig nicht,</l>
+          <l>Nicht so wie jetzt. Es ist dasselbe Weh',</l>
+          <l>An dem die Menschheit krankt in unsrer Zeit,</l>
+          <l part="I">Und kurz, es heißt: Thatlosigkeit.</l>
+        </sp>
+        <pb n="138"/>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l part="F">Und ist</l>
+          <l>Den Born der Weisheit hüten, keine That?</l>
+          <l>Rastlos die Eimer in den Quell zu tauchen</l>
+          <l>Und Tausenden, die dürstend Sie umstehn,</l>
+          <l>Die heil'ge Fluth zu spenden, keine That?</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Die Karawanen stärken sich am Quell,</l>
+          <l>Und ziehen abwärts, auf dem Markt zu handeln,</l>
+          <l>Wir aber klirren rastlos an dem Eimer,</l>
+          <l>Die Fluth, die unergründliche, zu schöpfen,</l>
+          <l>Die Müh' unsäglich, ohne Ziel die Arbeit,</l>
+          <l>Bis endlich</l>
+          <l>Das eigne Sein zerrinnt im Quell der Wüste!</l>
+          <l>Wir denken Alles, wissen nichts zu thun,</l>
+          <l>Wir lehren Andre, was sie sollen, und</l>
+          <l>Wir üben nicht die Götterkraft, zu wollen.</l>
+          <l>Oft wenn die Sonne sinkt, die Abendglocke</l>
+          <l>Arbeiter von dem Werke heimwärts ruft,</l>
+          <l>Der Schmied, mein Nachbar, nach dem Thurme blickt,</l>
+          <l>Und freundlich grüßend sich die Werkstatt schließt,</l>
+          <l>Dann faßt es mich wie Neid, sein Hämmern neid' ich,</l>
+          <l>Den Abendfrieden und die starke Hand.</l>
+          <l>Klein ist sein Schaffen, aber kräft'ge That,</l>
+          <l>Dann leg' ich an die Scheiben meine Schläfe</l>
+          <l>Und murre.</l>
+          <l>Und an die Drehbank tret' ich, die der Arzt</l>
+          <l>Mir bauen ließ, und drechsle – Kinderkegel.</l>
+        </sp>
+        <pb n="139"/>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Erbangend hör' ich, wie das Wissen all,</l>
+          <l>Der Menschheit tausendjähr'ge, beste Habe,</l>
+          <l>Nicht ausreicht, Einem, auch dem Stärksten nicht,</l>
+          <l>Das Leben zu befest'gen und zu weih'n.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Ja, es ist jammervoll, wie schwach wir sind.</l>
+          <l>'s ist eine Stunde kaum, da trieb ich höhnend</l>
+          <l>Den Freund vom Herzen, der mein Selbstgefühl,</l>
+          <l>Die sichre Ruh' des Denkers, warnend strafte.</l>
+          <l>Kaum eine Stunde, und ich bin zerbrochen,</l>
+          <l>Und alle Wunden, die mich je geschmerzt,</l>
+          <l>Und aller Mißmuth melanchol'scher Zeit</l>
+          <l>Zerrt grinsend mir am Herzen, ruft mir zu:</l>
+          <l>O kläglich, kläglich du und all dein Thun,</l>
+          <l>Elend und freudlos deine ganze Welt.</l>
+          <l>Sie wenden still sich ab. – Verletzte Sie</l>
+          <l>Das feige Klagen? – Wohl, es wird vergehn.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Ich klag' um mich und was ich selbst empfinde,</l>
+          <l>Sie fühlen nur den wilden Drang der Kraft,</l>
+          <l>Die eine Welt sich fordert und erringt.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Ich bin kein Faust, und was ich fühl', ist Schwäche,</l>
+          <l>Vielleicht ein Nervenreiz, der im Gehirn</l>
+          <l>Des Träumers wurzelt, den das Grübeln nährt;</l>
+          <l>Er muß hinweg aus meines Lebens Bau,</l>
+          <l>Oder das Leben selbst in Trümmer gehn.</l>
+        </sp>
+        <pb n="140"/>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l part="I">O Gott!</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Sie weinen? Thau um meinetwillen?</l>
+          <l>Nein, nicht so, das zumeist ertrag' ich nicht.</l>
+          <l>Mein sind die Wunden, mein allein der Kampf.</l>
+          <l>Sie sollen Theil nur haben an dem Sieg.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Die Wunden theile, wer beim Siegesmahl</l>
+          <l>Sich niedersetzt an seines Freundes Tisch. –</l>
+          <l>Was hat in dieser Stunde Sie getroffen?</l>
+          <l>Ich will es wissen, sei's auch Gift für mich.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Noch zittr' ich selbst, mein Elend zu verstehn.</l>
+          <l>Ich fühle nur, was Sie bis jetzt mir waren,</l>
+          <l>Und ahne, was ich jetzt entbehren soll.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l part="I">Walter!</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Gedenken Sie, was Sie mir waren.</l>
+          <l>Ich war Ihr Lehrer; ohne Leidenschaft,</l>
+          <l>Ruhig, vertrauend saßen wir zusammen,</l>
+          <l>Klar war mir Ihre Seele, wie Krystall,</l>
+          <l>Und offen jedem Eindruck. – Alles, was</l>
+          <l>Ich je gefühlt, erdacht, gefunden, trug</l>
+          <l>Ich, wie die Bien' den Honig, Ihnen zu.</l>
+          <l>Und wenn ich zusah, wie Sie größer wurden,</l>
+          <l>Ihr Urtheil freier, kräftiger Ihr Sinn,</l>
+          <l>Da, Leontine, war mein stilles Leben</l>
+          <pb n="141"/>
+          <l>Nicht müßig thatlos, meine That warst du.</l>
+          <l>Lebendig wuchs und grünte, was ich schuf;</l>
+          <l>Und weil ich Leben schuf, da, wo ich liebte,</l>
+          <l>So war ich stolz und glücklich.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Theurer Freund!</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Und kam mir Groll und trübe Laune, wie</l>
+          <l>Sie Jeden heimsucht, der in Büchern lebt,</l>
+          <l>Ich sah auf Sie und wurde stark und ruhig.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Ja, ja, so war's, so muß es ewig bleiben.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Es ist vorbei – für immer, durch das Wort:</l>
+          <l>Verlobt, das scheucht mich auf aus meinem Lager</l>
+          <l>Und jagt mich schmerzbeladen in die Wüste.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Ich weiß nicht, ob es also kommen kann,</l>
+          <l>Denn wär' es so und müßt' ich Sie verlieren,</l>
+          <l>Ich würde ärmer, als mein heft'ger Freund.</l>
+          <l>Doch anders, hold und freundlich hab' ich mir</l>
+          <l>Die Tage unsrer Zukunft ausgeschmückt,</l>
+          <l>Denn als ich ohne Gluth, in sich'rer Neigung</l>
+          <l>Nach langem Zaubern dieses Band geknüpft,</l>
+          <l>Das mich aus Streit, Gefahr und Bitterkeit</l>
+          <l>Verständig lös'te, dacht' ich auch an Sie,</l>
+          <l>Und reicher schien und schöner mir die Zukunft,</l>
+          <l>Ich sah mit dem Verlobten Sie befreundet,</l>
+          <l part="I">Zu dreien uns verbunden.</l>
+        </sp>
+        <pb n="142"/>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Täuschung war's!</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>War's Täuschung, so werd' ich sie bitter büßen.</l>
+          <l>Und Walter! Walter!</l>
+          <l>Unschicklich will ich lieber sein, als unwahr,</l>
+          <l>Sie sollen Alles wissen, was ich fühle.</l>
+          <l>Als ich das Dach der Heimath wiedersah,</l>
+          <l>Durch meine Zimmer schnell und prüfend schritt,</l>
+          <l>Da kam ich selbst, was ich geworden bin,</l>
+          <l>Mir grauenhaft, als eine Fremde vor.</l>
+          <l>Und doppelt sah ich mich, getheilt mein Leben,</l>
+          <l>Das alte Selbst, so wie ich hier gewesen,</l>
+          <l>Schien mir das echte, was ich aber bin,</l>
+          <l>Nur ein Gespenst aus bangem Morgentraum.</l>
+          <l>Und ich verhüllte mir das Haupt in Kissen</l>
+          <l>Und weinte.</l>
+          <l>Und als ich weinte, dacht' ich nur an Sie.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Leontine!</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Still, lieber Mann! Daß ich dem Freund vertraue,</l>
+          <l>Was sonst ein Weib dem eignen Geist verbirgt,</l>
+          <l>Das soll uns zwingen, hoch uns beide selbst</l>
+          <l>Zu ehren und das Schwierigste zu thun.</l>
+          <l>Und so fordr' ich von Ihnen, stützen Sie</l>
+          <l>Mich gegen meine Wallung und die Ihre.</l>
+          <l>Ich weiß, Sie können das. Denn immer fand</l>
+          <l>Ich Sie mit meinem bessern Sein verbunden,</l>
+          <pb n="143"/>
+          <l>So oft ich wankte. – Freund, ich wanke jetzt,</l>
+          <l>Ich fühle mich getheilt, uneinig, schwach.</l>
+          <l>Mit leichtem Sinn, wie ihn die Fremde nährt,</l>
+          <l>Hab' ich auf mich geladen eine Pflicht,</l>
+          <l>Die größte, würdigste, unwiderruflich.</l>
+          <l>Wohl ahn' ich, daß ich auch die stille Macht,</l>
+          <l>Die in den Gründen unsrer Seele lauert,</l>
+          <l>Heraufgefordert habe gegen mich;</l>
+          <l>Doch vorwärts schreiten auf gewähltem Pfad</l>
+          <l>Ist meine Pflicht, und Ihre <stage>(bittend),</stage> mich zu stützen!</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>So muß es sein.</l>
+          <l>Mit finstrer Sorge seh' ich, daß ein Sturm</l>
+          <l>Ihr reines Dasein zu bewölken droht,</l>
+          <l>Den ich durch schwache Klage noch verstärkt,</l>
+          <l>Und so verberge sich mein Leid in Nacht.</l>
+          <l>Sie haben mich gerufen, und ich will</l>
+          <l>Ein Wächter sein für Sie und gegen mich,</l>
+          <l>So weit's ein Mann vermag, der mehr nicht ist</l>
+          <l part="I">Als nur ein Mensch.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l part="F">O Segen über Sie! –</l>
+          <l>Wie auch das Schicksal unsre Hütten baut,</l>
+          <l>Rein sei der Weg von Einem zu dem Andern. –</l>
+          <l>Und jetzt dem Augenblick sein ew'ges Recht;</l>
+          <l>Zum Hause ruft gebieterisch mein Amt,</l>
+          <l>Sie dürfen mir nicht fehlen, wenn ich heut</l>
+          <l>Beim Kerzenlichte manches Antlitz sehe,</l>
+          <pb n="144"/>
+          <l>Das nicht erfreut. Bis dahin Lebewohl!</l>
+          <stage>(weich)</stage>
+          <l part="I">Und gute Freundschaft, Walter!</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(ruhig).</stage>
+          <l part="F">Bis zum Tod!</l>
+        </sp>
+        <stage>(Leontine links ab, Walter in das Haus des Parkaufsehers.)</stage>
+      </div>
+      <div type="configuration">
+        <stage>Reginald, dann ein Diener.</stage>
+        <sp who="#reginald">
+          <speaker>Reginald</speaker>
+          <stage>(der von der Höhe der Treppe den Abgang der Vorigen beobachtet hat, langsam
+            heruntersteigend).</stage>
+          <l>Ein schönes Paar, Idealisten beide.</l>
+          <l>Tollkühn betreten sie den schmalen Pfad,</l>
+          <l>Der sie verrätherisch zum Abgrund führt,</l>
+          <l part="I">Ein Schritt, und beide sind verloren.</l>
+          <stage>(In die Scene rufend.)</stage>
+          <l part="F">Hört! <stage>(Diener tritt auf.)</stage></l>
+          <l>Dort finden Sie Herrn Walter; Excellenz</l>
+          <l>Wünscht ihn zu sprechen vor dem Fest. Er mag</l>
+          <l part="I">Ihn hier erwarten.</l>
+          <stage>(Diener ab.)</stage>
+          <l part="F">Kräftig scheint der Mann</l>
+          <l>Und wohl gefährlich für ein Frauenherz.</l>
+          <l>Sein Schicksal sei Beförderung, Entfernung.</l>
+          <l>So löst allmählich sich für ihn und sie</l>
+          <l>Der schwere Uebergang in Harmonie.</l>
+          <stage>(Ab nach rechts.)</stage>
+        </sp>
+      </div>
+      <div type="configuration">
+        <stage>Walter (umgekleidet), der Diener.</stage>
+        <sp who="#diener">
+          <speaker>Diener.</speaker>
+          <l>Erwarten Sie hier Se. Excellenz. <stage>(Ab.)</stage></l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(allein).</stage>
+          <l>Wozu? Was will der mächt'ge Mann von mir?</l>
+        </sp>
+      </div>
+      <pb n="145"/>
+      <div type="configuration">
+        <stage>Walter. Minister (von rechts).</stage>
+        <sp who="#minister">
+          <speaker>Minister.</speaker>
+          <l part="I">Herr Archivar?</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Der bin ich, Excellenz.</l>
+        </sp>
+        <sp who="#minister">
+          <speaker>Minister.</speaker>
+          <l>Ich wünschte Sie zu sprechen, Ihr Talent</l>
+          <l>Ward dringend mir durch Freundesmund empfohlen,</l>
+          <l>Doch des bedurft' es nicht; wir danken Ihrem</l>
+          <l>Scharfsinn'gen Forschen Hülf' und nöth'ge Auskunft,</l>
+          <l part="I">Das hab' ich nicht vergessen.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Excellenz</l>
+          <l>Versteh'n das Große zu vollbringen, weil</l>
+          <l>Sie, Kleines fordernd, selbst das Schwerste thun.</l>
+        </sp>
+        <sp who="#minister">
+          <speaker>Minister.</speaker>
+          <l>Ich achte Sie, mir wird Gelegenheit,</l>
+          <l>Es zu beweisen. Ihre Kraft ist groß,</l>
+          <l>Und Ihre Stellung, die als leichtes Band</l>
+          <l>In unserm Dienst Sie festhält, fast nur Titel.</l>
+          <l>Das muß sich ändern, und so wünsch' ich Sie</l>
+          <l>Als Mitarbeiter im Getrieb des Staates</l>
+          <l part="I">In meinen Kreis zu ziehen.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(respektvoll nach einer Pause).</stage>
+          <l part="F">Excellenz,</l>
+          <l>Als Gnad' erbitt' ich, was ich bin, zu bleiben.</l>
+        </sp>
+        <sp who="#minister">
+          <speaker>Minister.</speaker>
+          <l>Das überrascht mich. – Fürchten Sie mein Amt</l>
+          <l>Als Freund gelehrter Ruh' und stillen Denkens?</l>
+          <pb n="146"/>
+          <l>Erwägen Sie, wer Kraft zu Vielem hat,</l>
+          <l part="I">Dem ist auch Vieles Pflicht.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Wohl denk' ich so,</l>
+          <l>Und sehnend such' ich Leben und die That.</l>
+        </sp>
+        <sp who="#minister">
+          <speaker>Minister.</speaker>
+          <l part="I">Sind Sie begütert?</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Mein Gehalt ernährt mich.</l>
+        </sp>
+        <sp who="#minister">
+          <speaker>Minister.</speaker>
+          <l>Wohlan, Sie sind ein Mann der Theorie,</l>
+          <l>Sind unzufrieden mit besteh'nder Form,</l>
+          <l>Mißbilligen die Richtung, der man folgt;</l>
+          <l>Sie sehen Mängel in dem großen Bau</l>
+          <l>Und wenden achselzuckend ihm den Rücken.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Als Mann bekenn' ich, daß mein Fühlen oft</l>
+          <l>Dem Richtmaß der Verwaltung widerstrebt.</l>
+        </sp>
+        <sp who="#minister">
+          <speaker>Minister.</speaker>
+          <l>Den Geist verlang' ich und nicht die Maschine.</l>
+          <l>Versuchen Sie, an meiner Hand zu gehen,</l>
+          <l>Und kommt die Stunde, wo mein eigner Will'</l>
+          <l>Und Ihr Erkennen feindlich sich entzwei'n,</l>
+          <l>Dann retten Sie als Mann die Ueberzeugung,</l>
+          <l>Und willig lös' ich Sie von Ihrer Pflicht.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Der erste Tag in meinem neuen Amt,</l>
+          <l>Er wär' Vergehen gegen eine Pflicht.</l>
+        </sp>
+        <pb n="147"/>
+        <sp who="#minister">
+          <speaker>Minister.</speaker>
+          <l>Ich liebe nicht auf Räthselwort zu hören,</l>
+          <l>Den Sinn der Worte fordr' ich, sprechen Sie.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Nun denn, ich kann nicht helfen zu regieren. –</l>
+          <l>Ich acht' es Unrecht, meine Kraft, so klein</l>
+          <l>Sie ist, der einen Richtung beizulegen,</l>
+          <l>Worin, zum Nachtheil für das Ganze, schon</l>
+          <l part="I">Die stärk're Kraft des Staates strömt. –</l>
+        </sp>
+        <sp who="#minister">
+          <speaker>Minister.</speaker>
+          <l part="F">Das ist</l>
+          <l part="I">Mir neu! doch weiter!</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Zwei Gewalten seh' ich</l>
+          <l>Im Staate nur, Regenten und Regierte,</l>
+          <l>Beamte seh' ich mächtig, reich an Zahl,</l>
+          <l>Im Weg, dem vorgeschrieb'nen, würdig schreiten,</l>
+          <l>Doch die Regierten schwach, begehrlich, krank,</l>
+          <l>Sich neue Thätigkeit und Bahnen suchen;</l>
+          <l>Die Herrschenden bemüht, mit Lieb' und Klugheit</l>
+          <l>Den Gang des Volks zu richten und zu fördern,</l>
+          <l>Und doch den Fortschritt furchtsam, zögernd, klein;</l>
+          <l>Regierung überall, Gemeinsinn selten,</l>
+          <l>Gehorsam überall, nicht sich're Kraft;</l>
+          <l part="I">Mißtrauen beiderseits.</l>
+        </sp>
+        <sp who="#minister">
+          <speaker>Minister.</speaker>
+          <l part="F">Das hegen Sie,</l>
+          <l part="I">Nicht wir. – Nun? und der Schluß?</l>
+        </sp>
+        <pb n="148"/>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Das Regiment,</l>
+          <l>Sei's noch so weise, reicht doch nimmer aus,</l>
+          <l>Ein Volk zu echter Größe zu erziehen,</l>
+          <l>Der beste Vater schafft nur gute Söhne,</l>
+          <l>Den freien Mann erzieht die eigne That;</l>
+          <l>Und Männer, Männer heischt die Gegenwart.</l>
+          <l>So denk' ich. – Sollt ich jetzt gelehrte Ruh'</l>
+          <l>Vertauschen mit Geschäften neuer Wahl,</l>
+          <l>Ich blieb' ein Mann auf meine eigne Hand,</l>
+          <l>Und säße nieder an dem Herd des Volkes,</l>
+          <l>Zu schaffen und zu fühlen wie das Volk,</l>
+          <l>In kleinem Kreise tüchtig stark zu sein,</l>
+          <l>Damit ich stark sei für das große Ganze.</l>
+          <l>Das ist der Dienst, zu dem die Zeit beruft,</l>
+          <l>Hier liegt der Weg, die Spannung zu vernichten,</l>
+          <l>An der wir kranken, uns heraufzuziehen</l>
+          <l>Den Tag, wo sich Regierung und das Volk,</l>
+          <l>Der Gegensatz zu schöner Einheit bindet.</l>
+        </sp>
+        <sp who="#minister">
+          <speaker>Minister.</speaker>
+          <l>Und kommt der Tag, den schwärmend Sie erschau'n,</l>
+          <l>Wer soll das Scepter königlich dann führen?</l>
+          <l>Wer soll der Hoheit heil'ges Priesterkleid,</l>
+          <l part="I">Den Purpur tragen Ihres Staats?</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Das Volk.</l>
+        </sp>
+        <sp who="#minister">
+          <speaker>Minister.</speaker>
+          <l>Es ist genug, wir scheiden. Nehmen Sie</l>
+          <l>Die Ueberzeugung, daß ich an dem Mann</l>
+          <pb n="149"/>
+          <l>Gesinnung achte. Was ich als Minister,</l>
+          <l>Als Diener Sr. Majestät zu thun</l>
+          <l>Veranlaßt bin, das mögen Sie erwarten.</l>
+          <stage>(Ab, rechts.)</stage>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(allein).</stage>
+          <l>Du folgst der Strömung, die dich vorwärts treibt,</l>
+          <l>Und ich der meinen, Welle gegen Welle!</l>
+          <l>Auseinander</l>
+          <l>Geht unser Lauf, du aufwärts, ich zu Thale!</l>
+          <stage>(Schnell ab zur Linken.)</stage>
+        </sp>
+      </div>
+      <div type="configuration">
+        <stage>Es ist Abend geworden, das Schloß ist erleuchtet, Mondlicht im Vordergrund.</stage>
+        <sp who="#leontine">
+          <speaker>Leontine</speaker>
+          <stage>(die Treppe herab).</stage>
+          <l>O stiller Abend, aus dem Festgewühl</l>
+          <l>Zieht mich die Sehnsucht her zu deinem Frieden!</l>
+          <l>Im Laub der Bäume hör' ich leise dich</l>
+          <l>Die Flügel regen, und der Mondenstrahl</l>
+          <l>Durchgleitet schimmernd dein verhülltes Reich.</l>
+          <l>Den Kelch der Blumen hat dein Hauch geschlossen,</l>
+          <l>Ich aber öffne dir ein Menschenherz;</l>
+          <l>Erfrischend senke holde Ruh' hinein,</l>
+          <l>Laß deine Knaben, mohnbekränzte Träume,</l>
+          <l>Mit dichtem Schleier mir das Haupt umziehn.</l>
+          <l>Im Saale lebt für Alle Reginald, –</l>
+          <l>Doch Einen, den ich suchte, fand ich nicht.</l>
+          <l>Wie freudig wäre mir sein stiller Gruß</l>
+          <l>Im Kreis der Fremden in das Herz gedrungen!</l>
+          <l>Ich fühlte Zorn, daß er so sehr mir fehlte,</l>
+          <pb n="150"/>
+          <l>Und zürnend sucht' ich wieder seinen Blick.</l>
+          <stage>(Ferne Musik, leise.)</stage>
+          <l part="I">Dort tönt Musik!</l>
+        </sp>
+      </div>
+      <div type="configuration">
+        <stage>Leontine. Walter.</stage>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(auf der Treppe).</stage>
+          <l part="F">Ein Gruß von guten Geistern.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine</speaker>
+          <stage>(ihm entgegen, die Hand reichend).</stage>
+          <l>Endlich, mein lieber Freund. Die Melodie</l>
+          <l>Trug Sie auf ihren Wellen zu mir her!</l>
+          <l>Sie weilten lang', ich habe Sie vermißt</l>
+          <l part="I">Und sorgte.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Der Minister hielt mich auf.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l part="I">Was wollt' er Ihnen?</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Werben wollt' er mich;</l>
+          <l>Doch mußt' ich danken, denn in schön'rem Dienst</l>
+          <l>Steh' ich als Schirmvogt schon mit Speer und Schild.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Ihr Auge glänzt, ich seh's beim Sternenlicht,</l>
+          <l>Und wie ein Sieger stehen Sie vor mir.</l>
+          <l part="I">Ich bin recht stolz auf Sie.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Mit bess'rem Recht</l>
+          <l>Geb' ich der Freundin dieses Lob zurück.</l>
+          <l>Sie seh' ich vor mir in des Lebens Pracht,</l>
+          <l>Mit allen Reizen edler Form geschmückt,</l>
+          <l>Und lockend rauscht die Seide des Gewandes.</l>
+          <pb n="151"/>
+          <l>Ich habe nie gewußt, wie schön Sie sind,</l>
+          <l>Von heute weiß ich's, und es wird dies Bild</l>
+          <l part="I">Mir nicht vergehn.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l part="F">Gefall' ich Ihnen so?</l>
+          <l>Ich will mich malen lassen, und das Bild</l>
+          <l>Verschenk' ich Ihnen, daß Sie so mich sehn,</l>
+          <l part="I">Auch wenn ich nicht mehr lebe.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Nichts vom Tod!</l>
+          <l>Noch glänzt das Leben lockend um uns her,</l>
+          <l>In dunklen Tüchern birgt die Dämmerung</l>
+          <l>Dienstfertig jedes liebliche Geheimniß. –</l>
+          <l>Die Lichter nur in ihrem fernen Glanz</l>
+          <l>Erinnern uns, daß dort noch Andre leben,</l>
+          <l part="I">Die uns erwarten.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l part="F">Nein, o nein, noch nicht!</l>
+          <l>Bleiben Sie bei mir, wenige Secunden! –</l>
+          <l>Mir ist so märchenhaft beklommen, wie</l>
+          <l>Dem Kinde, das zum Schooß der Mutter flieht.</l>
+          <l>Des Mondlichts Schatten und die leisen Klänge,</l>
+          <l>Das Flüstern in dem Laub, es ängstigt mich! –</l>
+          <l>Die Wolke dort, wie eine schwarze Hand</l>
+          <l>Reckt sie sich über mich und will mich fassen,</l>
+          <l part="I">Ich fürchte mich, mich dauert <stage>(hält sich an ihn).</stage></l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Süße Träumerin!</l>
+        </sp>
+        <pb n="152"/>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l>Jetzt möcht' ich sterben wie ein kranker Vogel,</l>
+          <l>Verborgen an des Freundes treuer Brust.</l>
+          <l>Mir ist so bange vor der Zukunft und</l>
+          <l>Sehr müde fühl' ich mich und heimathlos, –</l>
+          <l>In diesem Herzen hab' ich eine Heimath.</l>
+          <stage>(Schlingt die Arme um ihn.)</stage>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Ich ahnte nie, daß mich ein Augenblick</l>
+          <l>So selig machen kann, und so die Locken</l>
+          <l>Dir küssend, dank' ich dir für diese Stunde.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l part="I">Du guter Freund!</l>
+        </sp>
+      </div>
+      <div type="configuration">
+        <stage>Vorige. Reginald.</stage>
+        <sp who="#reginald">
+          <speaker>Reginald</speaker>
+          <stage>(auf der Treppe).</stage>
+          <l part="M">Leontine!</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l part="F">Das ist <emph>er</emph>!</l>
+          <l>Hinweg, hinweg, er darf uns hier nicht finden.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="I">Und weshalb fliehen?</l>
+        </sp>
+        <sp who="#reginald">
+          <speaker>Reginald</speaker>
+          <stage>(herabsteigend).</stage>
+          <l part="F">Leontine, so</l>
+          <l>Allein und träumend? Und der Nachtthau fällt,</l>
+          <l part="I">Der schädliche, Sie sehen bleich!</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l part="F">Ich bin</l>
+          <l part="I">Nicht wohl.</l>
+        </sp>
+        <pb n="153"/>
+        <sp who="#reginald">
+          <speaker>Reginald.</speaker>
+          <l part="F">Gewiß, noch sind Sie nicht genesen,</l>
+          <l>Und sehr gefährlich ist die Abendluft. –</l>
+          <l>Sie hier, Herr Archivar? Es thut mir leid,</l>
+          <l>Daß Ihr Gespräch mit Sr. Excellenz</l>
+          <l>Den Herrn verletzt hat; gern verzeih' ich auch,</l>
+          <l>Daß Sie, weil ich zu Ihrem Lobe sprach,</l>
+          <l>Mich bloß gestellt. Nur Eins bemerk' ich: heut</l>
+          <l>Ist der Minister Gast in diesem Raum,</l>
+          <l>Wird Ihre Gegenwart der Hausfrau nicht,</l>
+          <l>Nicht eignem Zartgefühle peinlich sein?</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine.</speaker>
+          <l part="I">O! – Walter, bleiben Sie!</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="M">Ich bleibe.</l>
+        </sp>
+        <sp who="#reginald">
+          <speaker>Reginald.</speaker>
+          <l part="F">Wohl,</l>
+          <l>So bleiben Sie als Zeuge meines Glücks.</l>
+          <stage>(Schnell zu Leontine.)</stage>
+          <l>Verzeihung, wenn ich jetzt mit rascher Hand</l>
+          <l>Den Grund der Krankheit tilge, die Sie faßt.</l>
+        </sp>
+        <stage>Er macht eine Bewegung nach der Seite. Die Bühne erleuchtet sich plötzlich
+          [Feuerbecken auf der Terrasse], Gäste füllen die Terrasse und die Bühne. Langer
+          Tusch.</stage>
+        <sp who="#reginald">
+          <speaker>Reginald</speaker>
+          <stage>(mit Repräsentation).</stage>
+          <l>Im Namen unsrer Herrin dank' ich Jedem,</l>
+          <l>Der ihre Heimkehr zu begrüßen kam.</l>
+          <l>Ich üb' in diesem Dank ein holdes Recht</l>
+          <l>Zum erstenmale. Laut verkünde heut</l>
+          <pb n="154"/>
+          <l>Trompetenklang ein neues Erdenglück.</l>
+          <l>Vorstellend meld' ich Freunden und Getreuen:</l>
+          <l>Des Festes Königin ist meine Braut.</l>
+        </sp>
+        <sp who="#leontine">
+          <speaker>Leontine</speaker>
+          <stage>(sich an das Geländer haltend, erstarrt).</stage>
+          <l>Ha! –</l>
+          <l>Sie wissen meisterhaft zu überraschen!</l>
+        </sp>
+        <sp who="#reginald">
+          <speaker>Reginald</speaker>
+          <stage>(leise, nachdrücklich).</stage>
+          <l>Es galt mein Glück und Ihres Hauses Ehre.</l>
+        </sp>
+        <stage>Langer Tusch, er reicht Leontinen die Hand und führt sie die Treppe hinauf, auf der
+          letzten Stufe stößt sie einen Schrei aus und sinkt zusammen. Alles um sie bemüht.</stage>
+        <sp who="#stimmen">
+          <speaker>Stimmen.</speaker>
+          <l part="I">Zu Hülfe! die Baronin sinkt.</l>
+        </sp>
+        <sp who="#reginald">
+          <speaker>Reginald.</speaker>
+          <l part="F">Wir danken,</l>
+          <l part="I">Es ist Erschöpfung, geht vorüber.</l>
+        </sp>
+        <stage>Führt die Baronin nach dem Schloß, die Gäste folgen, die Erleuchtung verlöscht, nur
+          in dem Vordergrund rechts steckt am Baumstamm eine Fackel, welche einer der Diener beim
+          Aufglühen der Illumination befestigt hat.</stage>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(der während der letzten Scene zur Seite stehend nur auf Leontine gesehen
+            hat).</stage>
+          <l part="F">Dort</l>
+          <l>Riß eine Saite – der letzte Ton verklingt –</l>
+          <l>Ade, Musik! die Harfe liegt zerschlagen. –</l>
+          <l>Alles ist still, die Feuer sind verlöscht –</l>
+          <l>Sie hat nicht nein gesagt, als über ihr</l>
+          <l>Verkauftes Leben laut die Hölle jauchzte:</l>
+          <l>Sie war gerettet, wenn sie sagte nein –</l>
+          <pb n="155"/>
+          <l>Vielleicht noch thut sie's. – Wenn sie's thut, verstieben</l>
+          <l>Die dunklen Schatten an des Schlosses Fenstern –</l>
+          <l>Vielleicht noch sagt sie nein, noch ist es Zeit. –</l>
+          <l>Dort rollt ein Wagen, und noch einer. – Nein,</l>
+          <l>Es war das Brausen nur im Laub der Bäume!</l>
+          <l>Horch, wieder summt es. <stage>(Ferne Musik.)</stage> – Gott, mein Gott, sie hat</l>
+          <l>Nicht nein gesagt, sie durfte nicht, man spielt</l>
+          <l part="I">Ihr lust'ge Tänze!</l>
+          <l part="F">'s ist sehr finster hier –</l>
+          <l>Nur mir zum Hohne wirft die letzte Fackel</l>
+          <l>Ihr ruß'ges Licht auf diesen Leichenhof. –</l>
+          <stage>(Sie herabreißend.)</stage>
+          <l>Was hindert mich, daß ich den Pechbrand schleudre</l>
+          <l>Zum Schlosse, wo ein Vampyr jetzt das Blut</l>
+          <l>Des Weibes saugt, das er gestohlen hat! –</l>
+          <l>Wozu? Du Narr! – Dir ist sie doch gestorben,</l>
+          <l>Ihr letzter Hauch ein Ach! dort an der Treppe,</l>
+          <l>Dort starb sie. Was von ihr noch übrig ist,</l>
+          <l>Das wird bald steinern, eine bleiche Maske,</l>
+          <l>Die lächelt, wenn sie soll, am liebsten schweigt,</l>
+          <l>Und jeden Abend Bußgebete lies't.</l>
+          <l>Die kenn' ich nicht, die hab' ich nie besessen.</l>
+          <l>O Gott!</l>
+          <l>Geliebte, liebe, liebe Leontine,</l>
+          <l part="I">O lebe wohl, leb' wohl auf ewig!</l>
+        </sp>
+      </div>
+      <div type="configuration">
+        <stage>Walter. Romberg.</stage>
+        <sp who="#romberg">
+          <speaker>Romberg</speaker>
+          <stage>(eilig auftretend).</stage>
+          <l part="F">Walter!</l>
+          <pb n="156"/>
+          <l part="I">Walter! wo bist du, Freund?</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Ein Ueberrest</l>
+          <l part="I">Von ihm liegt hier.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l part="F">Mann, was hast du gethan?</l>
+          <l>Der Sekretär des Staatsministers sucht</l>
+          <l>Dich auf, du bist verloren; morgen schon</l>
+          <l>Wirst du von deinem Amte suspendirt.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Wozu? – – Doch nein, willkommne Botschaft!</l>
+          <l>Ich danke dir, beinah' macht das gesund;</l>
+          <l>Die letzten Stränge reißen, die das Thier</l>
+          <l>Im Joche hielten. Jetzt fühl' ich mich frei.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l>Das bist du. Jetzt benutz' es als ein Mann. –</l>
+          <l>Und so noch einmal tret' ich vor dich hin;</l>
+          <l>Jetzt komme zu uns, was vor wenig Stunden</l>
+          <l>Der Eifer sprach, es soll vergessen sein.</l>
+          <l>Ein großes Wirken, glänzend freie Stellung,</l>
+          <l>Treue Genossen, Ruhm und Dank des Volks,</l>
+          <l>Das Alles rollt sich deiner Zukunft auf.</l>
+          <l>Komm mit mir, Walter, hier die Hand, schlag' ein!</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Nein, nimmer! Aus dem tiefen, tiefen Schmerz,</l>
+          <l>Der mich verwüstet, schreit es dennoch: nein!</l>
+          <l>Zu euch kann ich nicht schwören. – Wissenschaft,</l>
+          <l>Ruhm und Genossen, damit ist's vorbei;</l>
+          <l>Die Feder, die mir diente, werf' ich fluchend</l>
+          <pb n="157"/>
+          <l>Zum tiefsten Abgrund! – O, es ist Vernunft,</l>
+          <l>Sehr göttliche Vernunft in meinen Leiden!</l>
+          <l>Mein Frevel war, daß ich den vollen Schatz</l>
+          <l>Von Lieb' und Eifer, meines Lebens Glut,</l>
+          <l>Für den ich meinem Volk verschuldet war,</l>
+          <l>Auf eine einz'ge Seele hab' gesetzt.</l>
+          <l>Die eine ist dahin, ich steh' allein</l>
+          <l>Als falscher Spieler in der dunkeln Halle.</l>
+          <l>Das will gesühnt sein, und die Sühne zahl' ich;</l>
+          <l>Nicht mit der Feder, mit dem Leben zahl' ich. –</l>
+          <l>Frei bin ich, bin beurlaubt, war's nicht so?</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l>So war's.</l>
+          <l>Großmüthig wird man den Gehalt dir lassen.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Ich danke, danke!</l>
+          <l>Ich kann ihn nicht gebrauchen. Freund, leb' wohl.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l>Du bist in Wahnsinn und ich lass' dich nicht!</l>
+          <l>Dies starre Antlitz, dein verstörter Blick –</l>
+          <l>O rede, rede, sonst das Aergste fürcht' ich.</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l>Kind, sei nicht thöricht. Fürchtest du, daß ich</l>
+          <l>Mir Kugeln gieße, wie ein blöder Schelm?</l>
+          <l>O nein, schon allzuviel ist hier zerstört,</l>
+          <l>Ein Menschenleben ist dem Tod verfallen,</l>
+          <l>Für das ich tausendmal gestorben wär'.</l>
+          <l>Sie ist verloren mir und meiner Liebe,</l>
+          <l>Verloren vor sich selbst und ihrem Gott.</l>
+          <pb n="158"/>
+          <l>Das hat von meiner Larve mir das Roth</l>
+          <l>Gewischt und strömet heiß aus meinen Augen.</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l part="I">Du armer Mann!</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Das war das rechte Wort.</l>
+          <l>Arm bin ich, wie ein neugebornes Kind,</l>
+          <l>Das im Entstehn die eigne Mutter tödtet.</l>
+          <l>Arm bin ich, doch ich lebe. – Und ich höre,</l>
+          <l>Im Nachtwind hör' ich, der das Laub durchfährt,</l>
+          <l>Die Stimme meines Gottes aus der Welt,</l>
+          <l>Sie ruft mich unaufhörlich mahnend, laut.</l>
+          <l>Mein Gott, ich komme; –</l>
+          <l>Und so, damit ich lebe, laß uns hier</l>
+          <l>An diesem Kreuzweg scheiden. Lebe wohl!</l>
+          <l part="I">Wir sehn uns nimmer!</l>
+        </sp>
+        <sp who="#romberg">
+          <speaker>Romberg.</speaker>
+          <l part="F">Walter, Walter, sprich,</l>
+          <l part="I">Wo gehst du hin?</l>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <l part="F">Ich gehe in das Volk.</l>
+        </sp>
+      </div>
+    </body>
+  </text>
+</TEI>
