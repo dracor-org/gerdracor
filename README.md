@@ -4,7 +4,7 @@ This is the German Drama Corpus (GerDraCor), a collection of [TEI P5](https://te
 
 If you want to cite the corpus, please use this publication:
 
-- **Frank Fischer, Ingo Börner, Mathias Göbel, Angelika Hechtl, Christopher Kittel, Carsten Milling and Peer Trilcke (2019)**: Programmable Corpora. Die digitale Literaturwissenschaft zwischen Forschung und Infrastruktur am Beispiel von DraCor. *DHd 2019. Digital Humanities: multimedial & multimodal. Konferenzabstracts*, pp. 194–197. DOI: [10.5281/zenodo.2596094](https://doi.org/10.5281/zenodo.2596094).
+- **Fischer, Frank, et al. (2019)**. Programmable Corpora: Introducing DraCor, an Infrastructure for the Research on European Drama. In *Proceedings of DH2019: "Complexities"*, Utrecht University, [doi:10.5281/zenodo.4284002](https://doi.org/10.5281/zenodo.4284002).
 
 We started to build the corpus by extracting all plays from TextGrid Repository (TGRep). The source for the versions in TGRep was [zeno.org's](http://www.zeno.org/) text collection. However, TGRep's conversion from zeno.org's proprietary XML to TEI caused some bugs and inconsistencies which we fixed for GerDraCor in a longer process between 2017 and 2019. [All our fixes including enhancements are documented on GerDraCor's Wiki.](https://github.com/dracor-org/gerdracor/wiki/Documentation-for-Correcting-Plays-from-TextGrid-Repository) After this clean-up process, GerDraCor is now in a position to grow by taking on new plays from sources such as Deutsches Textarchiv, Project Gutenberg, Projekt Gutenberg-DE, Wikisource, or Google Books.
 
@@ -72,4 +72,4 @@ Here is a barplot showing the number of plays per decade:
 ## A Bit of History
 Until we rebuilt our working corpus under its new name GerDraCor, we've been working with an [intermediary format](https://github.com/dlina/project/tree/master/data/zwischenformat) to conduct [our research](https://dlina.github.io/talks/). This format only held structural information, not the texts themselves. Back then, our research group called itself DLINA (digitally-enabled literary network analysis). Since our focus broadened, we stopped using this name. Our future endeavours will sail under the **Programmable Corpora** flag.
 
-(README last updated on September 27, 2020.)
+(README last updated on November 24, 2020.)
