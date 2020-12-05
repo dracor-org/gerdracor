@@ -19,7 +19,7 @@
             <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
           </licence>
         </availability>
-        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1964966</idno>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q1964966</idno>
       </publicationStmt>
       <sourceDesc>
         <bibl type="digitalSource">
@@ -38,7 +38,7 @@
               bearb. von Alfred Bergmann, Emsdetten (Westf.): Lechte, 1960–1970.</title>
             <date type="print" when="1831">1831</date>
             <date type="premiere" when="1895">1895</date>
-            <date type="written" when="1831">1829–1831</date>
+            <date type="written" notBefore="1829" notAfter="1831">1829–1831</date>
           </bibl>
         </bibl>
       </sourceDesc>
@@ -828,14 +828,16 @@
             <persName>Die Granitkolonne</persName>
           </person>
           <listRelation type="personal">
-            <relation name="parent_of" active="#napoleon" passive="#hortense" />
-            <relation name="siblings" mutual="#koenig_ludwig #monsieur" />
-            <relation name="associated_with" active="#graefin_von_choisy" passive="#herzogin_von_angouleme" />
-            <relation name="related_with" active="#die_nichte" passive="#der_alte_gaertner" />
-            <relation name="spouses" mutual="#die_nichte #pierre" />
-            <relation name="spouses" mutual="#frau_des_schneidermeisters #schneidermeister" />
-            <relation name="spouses" mutual="#ein_kraemer #frau_des_kraemers" />
-            <relation name="associated_with" active="#schwarzer_becker" passive="#herzog_von_braunschweig" />
+            <relation name="parent_of" active="#napoleon" passive="#hortense"/>
+            <relation name="siblings" mutual="#koenig_ludwig #monsieur"/>
+            <relation name="associated_with" active="#graefin_von_choisy"
+              passive="#herzogin_von_angouleme"/>
+            <relation name="related_with" active="#die_nichte" passive="#der_alte_gaertner"/>
+            <relation name="spouses" mutual="#die_nichte #pierre"/>
+            <relation name="spouses" mutual="#frau_des_schneidermeisters #schneidermeister"/>
+            <relation name="spouses" mutual="#ein_kraemer #frau_des_kraemers"/>
+            <relation name="associated_with" active="#schwarzer_becker"
+              passive="#herzog_von_braunschweig"/>
           </listRelation>
         </listPerson>
       </particDesc>
@@ -4724,7 +4726,9 @@
           </sp>
           <sp who="#fouche">
             <speaker>FOUCHÉ.</speaker>
-            <p><emph>War!</emph></p>
+            <p>
+              <emph>War!</emph>
+            </p>
           </sp>
           <sp who="#carnot">
             <speaker>CARNOT.</speaker>
