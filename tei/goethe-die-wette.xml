@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die Wette</title>
+        <title type="sub">Ein Lustspiel in einem Akt</title>
+        <author key="pnd:118540238">Goethe, Johann Wolfgang</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000511</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q41744079</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Google Books</name>
+          <idno type="URL">https://books.google.com/books?id=Y2jfAAAAMAAJ&amp;pg=PA119</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <title>Goethes poetische Werke. Vollständige Ausgabe. Dritter Band. Stuttgart: Cotta
+              1953, S. 119–134.</title>
+            <date type="print" when="1837"/>
+            <date type="premiere"/>
+            <date type="written" when="1812"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="dorn" sex="MALE">
+            <persName>Dorn</persName>
+          </person>
+          <person xml:id="foerster" sex="MALE">
+            <persName>Förster</persName>
+          </person>
+          <person xml:id="johann" sex="MALE">
+            <persName>Johann</persName>
+          </person>
+          <person xml:id="friederike" sex="FEMALE">
+            <persName>Friederike</persName>
+          </person>
+          <person xml:id="eduard" sex="MALE">
+            <persName>Eduard</persName>
+          </person>
+          <person xml:id="leonore" sex="FEMALE">
+            <persName>Leonore</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="friends" mutual="#dorn #foerster"/>
+            <relation name="lover_of" active="#eduard" passive="#leonore"/>
+            <relation name="lover_of" active="#leonore" passive="#eduard"/>
+            <relation name="parent_of" active="#dorn" passive="#leonore"/>
+            <relation name="associated_with" active="#johann" passive="#eduard"/>
+            <relation name="associated_with" active="#friederike" passive="#leonore"/>
+            <relation name="lover_of" active="#johann" passive="#friederike"/>
+            <relation name="lover_of" active="#friederike" passive="#johann"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2020-12-14">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <pb n="119"/>
+    <front>
+      <div type="front">
+        <head>Die Wette</head>
+        <head>Lustspiel in einem Akt</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen</head>
+          <castItem>Dorn</castItem>
+          <castItem>Förster</castItem>
+          <castItem>Eduard</castItem>
+          <castItem>Leonore</castItem>
+          <castItem>Johann</castItem>
+          <castItem>Friederike</castItem>
+        </castList>
+      </div>
+    </front>
+    <pb n="120"/>
+    <body>
+      <div type="scene">
+        <head>Erster Auftritt</head>
+        <stage>Dorn, nachher Förster</stage>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Habe ich es doch so oft gesagt, und wem ist es nicht bekannt, daß man etwas leicht
+            unternimmt und nachher mit großer Unbequemlichkeit ausführt. Was hilft es, wenn man noch
+            so verständig denkt und spricht! Nun laß ich mich wieder in einen Handel ein, der mich
+            ganz aus dem Geschicke bringt. Zur schönsten Jahrszeit verlasse ich meinen Landsitz; ich
+            eile in die Stadt, dort wird mir die Zeit lang, und die Ungeduld treibt mich wieder
+            hierher. Nun sehe ich aus den Fenstern dieses schlechten Wirtshauses mein Schloß, meine
+            Gärten und darf nicht hin. Wenns nur hier nicht gar zu unbequem wäre. Jeder Stuhl
+            wackelt, auf den ich mich setzen will, ich finde für meinen Hut keinen Haken und
+            wahrhaftig kaum eine Ecke für meinen Stock. Doch alles mag hingehen! wenn ich nur meine
+            Absicht erreiche, wenn das junge Paar glücklich wird.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <stage>außen</stage>
+          <p>Kann man hier unterkommen? Ist niemand vom Hause da?</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Hör ich recht? Förster! Da finde ich doch wenigstens einen Gefährten in meiner
+            seltsamen Lage.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <stage>eintretend</stage>
+          <p>Dorn! Ists möglich, bist dus? warum nicht auf dem Schlosse? warum hier im Wirtshause?
+            Man sagte mir, du seist in der Stadt. In deinem Schlosse fand ich alles einsam und
+            öde.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Nicht so öde, als du glaubst. Die Liebenden sind drinnen.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Wer!</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Leonore und Eduard, festgebannt.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Die zwei jungen Leute? zusammen?</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Zusammen oder getrennt, wie du willst.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Erkläre mir das Rätsel.</p>
+        </sp>
+        <pb n="121"/>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>So höre denn. Es gilt eine Wette, sie müssen eine Probe bestehn, die ihr künftiges
+            Glück befestigen soll.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Du machst mich immer neugieriger.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Eduard und Leonore lieben sich, und ich nährte gern diese keimenden Gefühle, da eine
+            engere Verbindung mir sehr willkommen wäre.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Ich gab hierzu von jeher meinen Beifall.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Eduard ist ein edler Junge, voll Geist und Fähigkeiten, sehr gebildet, vom besten
+            Herzen, vom lebhaftesten Gefühl, doch etwas rasch und eigendünklig.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Gestehs nur, diese Zusammensetzung macht einen ganz liebenswürdigen jungen Mann.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Nun, wir hatten auch etwas davon. Leonore ist sanft und gefühlvoll, dabei tätig,
+            häuslich, doch nicht ohne Eitelkeit; sie liebt ihn wahrhaft, doch überläßt sie sich
+            manchmal einem Hang zur üblen Laune; sie zeigt ein mürrisches Wesen, das mit der
+            Hastigkeit Eduards nicht vereinbarlich ist, und so entstand in der angenehmen Liebes-
+            und Brautzeit öfters Zwietracht, Widerwärtigkeit und gegenseitige Unzufriedenheiten.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Das wird sich nach der Trauung schon geben.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Ich wollte, es gäbe sich vorher, und das ist gerade die Absicht dieser wunderlichen
+            Anstalt. Oft machte ich die jungen Leute auf ihre Fehler aufmerksam und verlangte, daß
+            jeder Teil den seinigen anerkennen, daß sie sich nachgeben, sich wechselseitig
+            ausgleichen sollten. Ich predigte in die Luft. Und doch konnte ichs nicht lassen, meine
+            Ermahnungen zu wiederholen, und vor acht Tagen, da ich sie hartnäckiger fand als sonst,
+            erklärte ich ihnen ernstlich die Unart und Unschicklichkeit ihres Betragens, da sie doch
+            ein für allemal ohne einander nicht sein und leben könnten. Dies nahmen sie etwas hoch
+            auf und versicherten, es dürfte doch wohl möglich sein, auch ohne einander zu existieren
+            und auch abgesondert für sich zu leben.</p>
+        </sp>
+        <pb n="122"/>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Dergleichen Reden kommen wohl vor; so trotzt man aber nicht lange.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>So nahm ichs auch, scherzte darüber, drohte, ihre Neigung auf die Probe zu setzen, um
+            zu sehen, wer das andere am ersten aufsuchen, sich dem andern am ersten wieder nähern
+            würde? Nun kam die Eitelkeit ins Spiel, und jedes versicherte in einem solchen Fall die
+            stärkste Beharrlichkeit.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Worte, nichts als Worte.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Um nun zu erfahren, ob es etwas mehr wäre, tat ich folgenden Vorschlag: ihr kennt,
+            sagte ich, die beiden aneinander stoßenden Zimmer, die ich mit meiner selgen Frau
+            bewohnte; eine Türe, die beide verbindet, hat ein Gitter, welches durch einen Vorhang
+            bedeckt ist, der sowohl hüben als drüben aufgezogen werden kann; wenn wir Eheleute uns
+            sprechen wollten, so zog bald das eine, bald das andere diesen Vorhang. Nun sollt ihr
+            Brautleute diese beiden Zimmer bewohnen, und es gilt eine Wette, welcher von beiden
+            Teilen die Entbehrung schmerzlicher fühlt, das andere mehr vermißt und den ersten
+            Schritt zum Wiedersehn tut. Nun wurde mit gegenseitiger Einwilligung zur Probe
+            geschritten, sie zogen ein, ich zog den Vorhang zu. So steht die Sache.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Und wie lange?</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Seit acht Tagen.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Und noch nichts vorgefallen?</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Ich glaube nicht. Denn Johann und Friederike, welche ihre Herrschaften aufmerksam
+            bewachen, hatten Befehl, mir es gleich in die Stadt melden zu lassen. Ich hörte nichts,
+            und nun komm ich aus Ungeduld zurück, um in der Nähe das Weitere zu vernehmen.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Und ich komme grade recht zu diesem wunderlichen Abenteuer und lasse mir wegen der
+            Sonderbarkeit <pb n="123"/> gern gefallen, mit dir in einem schlechten Wirtshause
+            anstatt in einem wohleingerichteten Schlosse zu verweilen.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Ich hoffe, die Unbequemlichkeit soll nicht lange dauern; richte dich ein, so gut du
+            kannst. Indessen werden wohl auch unsere Aufpasser herankommen.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Ich bin selbst neugierig auf den Ausgang; denn im ganzen will mir der Spaß nicht recht
+            gefallen. Es lassen sich ja wohl bedenkliche Folgen erwarten.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Keineswegs! ich bin überzeugt, daß alles zum Vorteil beider Liebenden enden muß.
+            Welcher Teil sich auch als der schwächste zeigt, verliert nichts, denn er beweist
+            zugleich die Stärke seiner Liebe. Bildet sich der stärkere etwas ein, so wird er sich
+            bei einigem Nachdenken durch den schwächern beschämt halten. Sie werden fühlen, wie
+            liebenswürdig es sei, nachzugeben und sich ineinander zu finden; sie werden sich tief
+            überzeugen, wie sehr man eines gegenseitigen Umgangs, einer wahren Seelenvertraulichkeit
+            bedarf, und wie töricht es ist, zu glauben, daß Beschäftigungen, Unterhaltungen ein
+            liebevolles Herz entschädigen könnten. Man wird ihnen eindringlicher vorstellen dürfen,
+            wie sehr üble Laune das häusliche Glück stört, allzu große Raschheit trübe Stunden nach
+            sich zieht. Sind diese Fehler beseitigt, so wird jedes den Wert des andern rein erkennen
+            und schätzen und gewiß jede Gelegenheit zu ernsteren Trennungen vermeiden.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Wir wollen das Beste hoffen. Indessen bleibt das Mittel immer sonderbar, doch
+            vielleicht lernen wir alten Welterfahrnen auch etwas dabei. Wir wollen sehen, welcher
+            Teil den Druck der Langenweile und des unbefriedigten Gefühls am längsten aushält.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Da poltern sie mit deinen Sachen die Treppe herauf; komm, ich muß dich einrichten
+            helfen. <stage>Beide ab.</stage></p>
+        </sp>
+      </div>
+      <pb n="124"/>
+      <div type="scene">
+        <head>Zweiter Auftritt</head>
+        <stage>Johann. Friederike</stage>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>Auch hier ist der gnädge Herr nicht. Nicht im Garten, und wo denn? Ich habe ihm manches
+            Drollige zu erzählen.</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>Vom jungen Paar? Nun gut, wenn du gesprochen hast, kommt die Reihe an mich. Das
+            Fräulein macht mir viel Kummer.</p>
+        </sp>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>Wieso?</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>Ja, sieh einmal. Die ersten Tage ihres neuen Lebenswandels, da ging es still und ruhig
+            zu; sie schien vergnügt, beschäftigte sich, frohlockte, des jungen Herrn nicht zu
+            bedürfen, um fröhlich zu sein, glaubte sich gegen Liebesanfälle wohl gerüstet; auch hätt
+            ich nie merken können, welches Gefühl sie für ihn hegt, wenn sie nicht auf künstliche
+            Weise das Gespräch auf dich gelenkt hätte.</p>
+        </sp>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>Nun, was braucht es da viel Kunst? ich find es vielmehr ganz natürlich, daß man an mich
+            denkt und gelegentlich von mir spricht.</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>Sei nur ruhig, diesmal gehst du leer aus, diesmal zielte sie nur dahin, um unbemerkt zu
+            erfahren, ob du viel um deinen Herrn seist, und wie es ihm gehe? Wenn ich nicht darauf
+            zu achten schien, so wurde sie anfangs anhaltender im Fragen; schien ich Liebe zu
+            vermuten, einen Wunsch nach Wiedersehn zu ahnden, so schwieg sie rasch, ward mürrisch
+            und sprach kein Wort.</p>
+        </sp>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>Die schöne Unterhaltung!</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>So vergingen die ersten Tage. Jetzt spricht sie gar nichts, ist und schläft
+            ebensowenig, verläßt eine Beschäftigung um die andere und sieht so krank aus, daß sie
+            einen ängstet.</p>
+        </sp>
+        <pb n="125"/>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>Geh, was wird es nun wieder sein? Launen! nichts als Launen! Da scheinen die Weiber
+            immer krank. Sie sind alle so.</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>Meinst du mich auch, Johann? Ich will nicht hoffen!</p>
+        </sp>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>Sei nicht böse, ich spreche nur von den vornehmen Frauen, die haben alle solche
+            Grillen, wenn man ihren Eitelkeiten nicht recht schmeichelt.</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>Nein! mein Fräulein ist nicht unter dieser Zahl; es ist nur zu wahrscheinlich, daß die
+            Liebe an ihr zehrt.</p>
+        </sp>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>Die Liebe! warum verbirgt sie selbe?</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>Ja! es gilt aber eine Wette.</p>
+        </sp>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>Was Wette! wenn man sich einmal liebt.</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>Aber die Eitelkeit!</p>
+        </sp>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>Die taugt bei der Liebe nichts. Da sind wir gemeinen Leute weit glücklicher, wir kennen
+            jenes Raffinement nicht. Ich sage: Friederike, liebst du mich? Du sagst: Ja! und nun bin
+            ich dein –</p>
+        </sp>
+        <stage>Er umarmt sie.</stage>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>Wenn das Schicksal unsrer jungen Herrschaft entschieden ist, wenn das Heiratsgut
+            ausgezahlt ist, das wir durch die Aufmerksamkeit auf unsere jungen Liebenden verdienen
+            sollen.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Dritter Auftritt</head>
+        <stage>Dorn. Förster. Die Vorigen</stage>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Willkommen, ihr Leute! Sprecht, was ist vorgefallen?</p>
+        </sp>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>Nichts Besonderes, gnädger Herr! Nur ist mein Gefangener bald bewegt und aufbrausend,
+            bald nachdenkend und in sich gekehrt. Jetzt bleibt er still, sinnt, <pb n="126"/>
+            scheint sich zu entschließen, eilt gegen die verschlossene Türe; jetzt kehrt er wieder
+            zurück und verschmäht den Gedanken.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Förster, hörst du?</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Nur weiter!</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Erzählt uns, Johann, wies ging, seit ich abreiste!</p>
+        </sp>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>Ach Gott, wie sollt ich mir das alles merken, die hundertfältigen Sachen, die ich
+            gesehen, gehört – ich weiß nicht, wo mir der Kopf steht! Wenn das lieben heißt! wenn das
+            bei vornehmen Leuten Gebrauch ist, so gelobe ich, der arme Johann immer und ewig zu
+            bleiben und meiner Friederike ganz einfach zu beteuern, daß ich sie lieb habe.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Nun, was gabs denn für Wunderdinge?</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Erkläre dich.</p>
+        </sp>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>Ich will erzählen, so gut ichs vermag. Als Sie abreisten, versperrte sich der junge
+            Herr, las und schrieb und beschäftigte sich. Nur fand ich ihn sehr gespannt; er ging in
+            der Gegend spazieren, kam spät nach Hause, war fröhlich, und so zog sichs einige Tage.
+            Nun ging er auf die Jagd und wechselte mit Beschäftigungen. Da konnt ich leicht
+            bemerken, daß er bei keiner verblieb. Er schritt im Zimmer auf und ab, warf ein Buch weg
+            und holte das andere, und wenn er schmälte, so mochte es wohl manchmal mit Grund
+            geschehen. Aber gewiß und wahrhaftig, oft ohne Grund; er wollte nur den heftigen
+            Empfindungen Raum schaffen, die in ihm vorgingen.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Schon gut.</p>
+        </sp>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>So verstrichen die Tage. Vom Spaziergang sehnt er sich nach dem Schlosse, er kürzte die
+            Jagd ab und kam nach Hause, aber auch da zauderte er auf dem Wege, ward immer
+            unbestimmter und sprach mit sich allein; er machte Gesichter, die mich erschreckten; nun
+            stand er starr, <pb n="127"/> nun schien er im Zweifel; nähert sich dem gefährlichen
+            Vorhang, schnell kehrt er wieder zurück, über sich selbst erzürnt; Ungeduld und
+            Ungewißheit foltern ihn, er wird kleinmütig, und ich besorge Wahnsinn.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Genug, genug!</p>
+        </sp>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>Was! soll ich nicht mehr erzählen?</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Für diesmal bedarfs nicht mehr. Gehe und besorge den Jüngling und melde ferner, was
+            vorgeht.</p>
+        </sp>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>Ich hätte noch gar viel zu sagen.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Ein andermal, gehe!</p>
+        </sp>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>Wenns nicht anders ist. Ich kam soeben recht in Zug und glaube, daß, wenn ich solche
+            Dinge oft sehe und oft erzähle, so könnte ich selbst so wunderlich werden. Was meinst
+            du, Friederike?</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>Wir wollens beim alten belassen.</p>
+        </sp>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>Topp! <stage>Er reicht ihr die Hand und zieht sie, indem er abgeht, in den Hintergrund,
+              wo sie stehen bleibt.</stage></p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Nun, Förster, was sagen Sie zu diesem Anfang?</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Nicht viel. Es läßt sich nichts Bestimmtes sagen.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Verzeihen Sie, mein Freund, wir sind dem Ziele näher, als Sie glauben. Eduard scheint
+            seinen Stolz gemäßigt zu haben, das Gefühl bemeistert sich seiner, es wird bald die
+            Oberhand behalten.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Woraus schließen Sie das?</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Aus allem, was Johann erzählt, aus dem Einzelnen wie dem Ganzen.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Er wird gewiß derjenige nicht sein, der den ersten Schritt tut; ich kenne ihn zu gut,
+            er ist zu eitel dazu. Er hat einen zu hohen Begriff von seinem Wert und gibt nicht
+            nach.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Das wäre mir leid; er müßte meine Tochter wenig lieben, wenig Seele und lebhaftes
+            Gefühl, keine Energie haben, um länger in diesem peinlichen Zustande zu verharren.</p>
+        </sp>
+        <pb n="128"/>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Und Leonore, könnte sie nicht gleichfalls? –</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Nein, mein Bester! Die Frauen haben eine gewisse Zurückhaltung aus Bescheidenheit, die
+            ihre größte Zierde ist; sie hindert sie, ihre Gefühle frei zu äußern, und diese werden
+            sie am wenigsten zutage legen, wenn Eitelkeit im Spiel ist, wie bei dieser Wette. Sie
+            können das Äußerste dulden, ehe sie diesen Stolz beseitigen; sie finden es unter ihrer
+            Würde, einem Manne zu zeigen, wie sehr sie an ihm hängen, ihn zärtlich lieben; sie
+            fühlen im verborgenen ebenso lebhaft wie wir, vielleicht anhaltender, aber sie sind
+            ihrer Neigung mehr Meister.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Du kannst recht haben; aber laß uns erst erfahren, was Leonore macht, dann können wir
+            in unsern Vermutungen schon sicherer fortschreiten.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Sprich also, Friederike.</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>Gnädige Herren, ich fürchte sehr für die Gesundheit der Fräulein.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <stage>rasch</stage>
+          <p>Ist sie krank?</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>Das nicht gerade, aber sie kann weder essen noch schlafen, sie schleicht herum wie ein
+            Halbgespenst, verschmäht ihre Lieblingsbeschäftigungen, rührt die Gitarre nicht an, auf
+            der sie Eduard sonst akkompagnierte, singt auch nicht wie sonst ein freies Liedchen vor
+            sich hin.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Spricht sie was?</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>Nur wenig Worte.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Was sagt sie denn?</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>Fast gar nichts. Manchmal fragt sie nach Johann, dabei denkt sie aber immer an
+            Eduarden, merk ich wohl.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>War das die ganzen acht Tage so?</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>O nein! Anfangs war sie fröhlich, mehr als sonst, beschäftigte sich mit häuslichen
+            Arbeiten, mit Musik <pb n="129"/> und dergleichen; sie entbehrte den Geliebten nicht,
+            sie freute sich, ihm beweisen zu können, wie stark sie sei.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Siehst du, Förster, was ich sagte? Hier bestimmte sie der weibliche Stolz.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Aber wie kommts, daß sie anfangs die Beschäftigung liebte und sie jetzt
+            vernachlässigt?</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Auch dies ist mir erklärbar. Frauen sind zur Arbeitsamkeit gewöhnt. Mit dem Bewußtsein,
+            geliebt zu werden, scheuen sie die Einsamkeit nicht, ein einziger froher Augenblick der
+            Gegenwart gewährt ihnen reichlichen Trost; nur der gänzliche Abgang eines Mitgefühls
+            wird ihnen schwer und zehrt an ihnen; dann versinken sie in einen grämlichen leidenden
+            Zustand, der, je mehr sie ihn zu verbergen trachten, desto mehr an ihrer Existenz nagt.
+            Sie verblühen.</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>Richtig, so wird es auch bei Fräulein Leonoren sein. Denn daß sie Eduarden liebt, davon
+            habe ich viele Beweise. Oft tritt sie wie zufällig an die Türe und zaudert schamhaft,
+            sich wieder zu entfernen. Ihre Augen sind voll Tränen, sie scheint ihn zu behorchen,
+            seine Schritte, seine Gedanken erraten zu wollen; sie kämpft zwischen Liebe und
+            Festigkeit.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Aber warum fragt sie dich nicht um ihn? Sagte nicht Johann, Eduard spreche sehr oft mit
+            Heftigkeit von Leonoren? Er liebt sie folglich mehr als sie ihn.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Da sieht man, daß du die Frauen wenig kennst. Wann nehmen sie Vertraute zu ihren
+            Gefühlen? Sie wachen sorgfältig darüber und suchen dieselben vor allen Augen zu
+            verbergen; über alles fürchten sie den eiteln Triumph der anmaßlichen männlichen
+            Herrschkraft. Allem wollen sie lieber entsagen, als sich verraten. Im stillen können sie
+            für sich allein lieben, und um so heftiger sind ihre Gefühle und um so dauerhafter. Die
+            Männer hingegen sind <pb n="130"/> rascher, keine Bescheidenheit verwehrt ihnen, laut zu
+            denken; darum verbarg auch Eduard sich vor Johann nicht.</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>Wollen Sie noch einen Beweis, daß sie ihn liebt? Sie kennen das hübsche
+            Gartenplätzchen, das Eduard zu Eleonorens Namenstag ausschmückte. Dieses besucht sie
+            täglich. Stillschweigend, die Augen an den Boden geheftet, bleibt sie stundenlang dort,
+            und jede Kleinigkeit, die er ihr schenkte, liegt immer auf ihrem Tisch. Oft scheint sie
+            in einiger Unruhe, die sich in Seufzern äußert. Ja! sie ist aus Liebe krank, ich
+            verharre dabei, und wird sie nicht aus dieser Lage befreit –</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Laß es gut sein, Friederike! Es wird sich alles zur rechten Zeit auflösen.</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>Wär ich an der Stelle, es wäre schon lange aufgelöst. <stage>Ab.</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Vierter Auftritt</head>
+        <stage>Dorn. Förster</stage>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Ich bin zufrieden, alles geht nach Wunsch.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Aber wenn die Tochter erkrankt?</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Glaub es nicht, es wird nicht lange mehr währen.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Das meinst du?</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Sie werden nachgeben, sich sehen, sich lieben und geprüfter lieben.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Ich möchte doch wissen, was dich so heiter stimmt!</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Daß ich mein Werk vollendet sehe. Sie sind beide, wo ich sie wollte, wie ich sie
+            wollte. Ihre wenigen Reden, alle ihre Handlungen sind ihrer Lage, ihren Gefühlen
+            angemessen.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Wie das?</p>
+        </sp>
+        <pb n="131"/>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Eduard, ein feuriger junger Mensch, zeigt sich noch unmutig, er kämpft zwischen
+            Eitelkeit und Liebe, allein die Liebe wird siegen. Er fühlt die Pein des Alleinseins.
+            Die Gestalt, die Reize Eleonorens stellen sich lebhaft ihm vor die Augen, er duldet es
+            nicht länger. Keiner Zerstreuung mehr fähig, wird er die Pforte öffnen, er wird als
+            überwunden sich erklären.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <stage>vor sich</stage>
+          <p>Dies scheint mir noch nicht ganz gewiß.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Leonore, ein edles bescheidenes Mädchen, nur etwas launig, dachte anfangs, durch
+            Beschäftigung seiner zu vergessen, standhaft die Probezeit auszuharren; allein es
+            verstrich ein Tag um den andern: von seiten ihres Geliebten mußte sie Kälte besorgen,
+            fragen wollte sie nicht, sie blieb also in sich gekehrt, der bangen Ungewißheit
+            überlassen. Die Leere, den Abgang zärtlichen Mitgefühls empfand sie lebhaft; bei ihr ist
+            kein Mittel vorhanden, wie sie den ersten Schritt beginne, Zurückhaltung verwehrt es
+            ihr, und sie wählt zu leiden; daher entstehen Seufzer, Tränen, Mangel an Schlaf und
+            Eßlust; sie denkt, sich durch Betrachtung lebloser Sachen zu entschädigen, die den
+            einzigen Gegenstand ihrer Sehnsucht zurückrufen. Leonore liebt Eduarden vielleicht noch
+            zärtlicher als vorher, sie erwartet nur den Augenblick, um in ihre vorigen Rechte
+            zurückzutreten.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Das wird sich zeigen!</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Nun, so laßt uns beide behorchen. An der Decke jener Zimmer ist eine geheime Öffnung,
+            laßt uns dahin gehen und uns selbst überzeugen. <stage>Gehen ab.</stage></p>
+        </sp>
+      </div>
+      <pb n="132"/>
+      <div type="scene">
+        <head>Fünfter Auftritt</head>
+        <stage>Geteilte Zimmer, wohlmöbliert, mit allerlei Gegenständen zur Unterhaltung versehen,
+          als: Pulte, Bücher, Instrumente und dergleichen. Tür, Gitter und Vorhang wie oben
+          beschrieben.</stage>
+        <stage>Eleonore an der rechten Seite, Eduard an der linken. Dorn und Förster in der Höhe.
+          Zuletzt Johann und Friederike.</stage>
+        <stage>Eduard geht schnell auf und ab, spricht heftig mit sich selbst, sieht bald verwirrt,
+          bald unentschlossen aus. Leonore traurig, eine Arbeit in der Hand, blickt halb seufzend
+          nach der Tür, dann besieht sie eine Brieftasche mit Eduards Chiffre und benetzt sie mit
+          heißen Tränen.</stage>
+        <sp who="#eduard">
+          <speaker>Eduard</speaker>
+          <p>Nein, ich gehe nicht aus! Wo soll ich hin, was anfangen? Nichts freut mich, alles ist
+            mir zuwider, sie mangelt mir! Leonore, du, das edelste, wärmste, liebevollste Geschöpf!
+            Wo sind die frohen Augenblicke, die ich bei ihr zubrachte? wo sie mich durch ihre
+            herrliche Gestalt, durch ihr sanftes Wesen ankettete? Sie war mein erster und letzter
+            Gedanke, ihre Teilnahme, ihre Zärtlichkeit erhöheten mir jedes Vergnügen, bei ihr fand
+            ich Erholung nach der Arbeit; jetzt bin ich unmutig! Wie oft erheiterte sie trübe
+            Stunden durch lieblichen Gesang, und jedes Wort, das nach Liebe lautete, vereinigte sich
+            wohltätig mit meinem Herzen. Welcher Wonne war ich fähig! Selbst ihre augenblicklichen
+            Launen sind nicht so arg, als ich ungeduldig mir einbildete. Warum war ich so rasch, wie
+            konnte ich aus Eitelkeit in die Probe willigen! – Nun, wer wird nachgeben? Sie nicht! –
+            Ich? – Ja! <stage>mit Heiterkeit</stage> und warum zögre ich? Die Türe geöffnet, zu ihr,
+            der Göttlichen, an ihren Füßen ewige Liebe beschworen, gestehend, daß ich ohne sie nicht
+            leben kann! – Doch was wird man sagen? Dich für feig und schwach halten? Deine Freunde
+            werden sich über dich lustig machen – was tuts! – Aber Leonore, du selbst könntest
+            frohlocken, mich für überwunden halten, herrschen wollen, <pb n="133"/> und dann wehe
+            mir, wenn ich will Mann sein! Ich kann es wohl, warum bleib ich müßig? hier ist noch
+            Arbeit genug!</p>
+        </sp>
+        <stage>Er setzt sich an den Schreibtisch, nimmt die Feder, doch statt zu schreiben, vertieft
+          er sich in Gedanken.</stage>
+        <sp who="#leonore">
+          <speaker>Leonore</speaker>
+          <p>Schon wieder ein Tag verflossen, und Eduard erscheint nicht. O welche Pein! Er hat mich
+            vergessen, und er kann mich nicht so zärtlich lieben, als ich glaubte; fühlte er nur die
+            Hälfte meiner Qualen, er würde eilen, die Wette zu verlieren, ich wäre ihm reiche
+            Entschädigung für die gekränkte Eitelkeit; und was ist dieses Gefühl im Vergleich mit
+            warmer Liebe, mit Glückseligkeit, die man nur in der Gegenliebe findet? Da vergehen die
+            Tage, die Stunden wie süße Träume; da fühlt ich mich glücklich, als nach geendigten
+            häuslichen Geschäften ich durch sein Gespräch erheitert wurde. Grausamer Vater, wie
+            konntest du mich durch eine Probe so unglücklich machen! Wollt ich nicht lieber Eduards
+            Anmaßungen dulden? Jetzt kann ich den ersten Schritt nicht tun. Mein Herz stimmt dafür,
+            aber die Bescheidenheit, der Mädchen Zierde, lehrt es, und ich muß gehorchen, dulden –
+            und wie lange noch!</p>
+        </sp>
+        <stage>Sie läßt die Arbeit fallen und seufzt.</stage>
+        <sp who="#eduard">
+          <speaker>Eduard</speaker>
+          <stage>vom Pulte hastig aufstehend</stage>
+          <p>Schreiben kann ich nicht! Wo Sinn und Mut holen! Wenn nur Johann käme, daß ich von
+            Leonoren sprechen könnte. Freilich versteht er wenig von meinem Gefühl, aber er meint es
+            doch gut, und Leonoren verehrt er wie eine Gottheit, wie jeder, der sie kennt. Mir
+            scheint, ich höre ihn!</p>
+        </sp>
+        <sp who="#leonore">
+          <speaker>Leonore</speaker>
+          <stage>indem sie das Portefeuille mit Anmut ansieht und an ihr Herz drückt</stage>
+          <p>Ja, hier ist das Pfand deiner Liebe, hier dein Name, und du konntest mich vergessen,
+            Eduard? – – Was soll ich machen, wie ihn zurückführen? – Ach, herrlich! vielleicht wirkt
+            es.</p>
+        </sp>
+        <stage>Sie eilt, ihre Gitarre zu nehmen, setzt sich ganz nahe an die Wand, neben die Türe,
+          so daß man sie aus dem Gitter nicht sehen <pb n="134"/> kann. – Eduard, tiefsinnig
+          sitzend, belebt sich bei diesen Tönen, erkennt die Stimme, die ihn so oft bezaubert, läßt
+          sich zum Denken keine Zeit, zieht den Vorhang, sucht sie zu erblicken, aber vergebens.
+          Leonore geht zur Tür, um zu horchen; sie sieht den Vorhang weggezogen, erblickt den
+          Geliebten; Schrecken, Entzücken spricht sich aus. Die Türe öffnet sich; sie ist in seinen
+          Armen, ehe sie sichs versieht.</stage>
+        <sp who="#eduard #leonore">
+          <speaker>Beide</speaker>
+          <p>Ich habe dich wieder, ich bleibe dein!</p>
+        </sp>
+        <sp who="#dorn #foerster">
+          <speaker>Dorn und Förster</speaker>
+          <stage>hereintretend</stage>
+          <p>Bravo! bravo!</p>
+        </sp>
+        <stage>Leonore und Eduard stehen verzagt.</stage>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Kinder, was hab ich gesagt!</p>
+        </sp>
+        <sp who="#leonore">
+          <speaker>Leonore</speaker>
+          <p>Eduard wars, der zu mir kam.</p>
+        </sp>
+        <sp who="#eduard">
+          <speaker>Eduard</speaker>
+          <p>Nein, sie war es, die sehen wollte, ob ich horchte.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Ihr habt beide recht. Keines hat im Grund die Wette verloren. Gleiches Gefühl hat euch
+            beseelt, eure Handlungen waren einem Jüngling, einem Mädchen angemessen. Leonore suchte
+            dich durch Feinheit dahin zu bewegen, daß du den Vorhang zogst; lebhafter hast du dem
+            Gefühl angehört, Leonore wollte bloß im verborgenen dich prüfen. Ihr habt bewiesen, daß
+            bei edlen gefühlvollen Herzen gleiche Bewegungen vorgehn, nur äußern sich dieselben
+            verschieden und angemessen. Ihr seid euch wert! Liebt euch! und verzeiht euch kleine
+            Schwachheiten und trachtet, daß euch die gegenseitige Liebe alles ersetzt.</p>
+        </sp>
+        <sp who="#leonore">
+          <speaker>Leonore</speaker>
+          <p>Dieser Tag soll uns heilig sein!</p>
+        </sp>
+        <sp who="#eduard">
+          <speaker>Eduard</speaker>
+          <p>Du hast uns wirklich lieben gelehrt.</p>
+        </sp>
+        <sp who="#foerster">
+          <speaker>Förster</speaker>
+          <p>Und ich habe heute mehr erfahren als durch mein ganzes Leben.</p>
+        </sp>
+        <sp who="#friederike">
+          <speaker>Friederike</speaker>
+          <p>Und ich auch.</p>
+        </sp>
+        <sp who="#johann">
+          <speaker>Johann</speaker>
+          <p>Du! und was hast du denn erfahren? Geh! das ist alles zu erhaben und zu studiert für
+            uns. Laß uns einfach lieben und glücklich; und dazu ist nichts Einfacheres in der Welt,
+            gnädiger Herr, als ein hübsches Heiratsgut.</p>
+        </sp>
+        <sp who="#dorn">
+          <speaker>Dorn</speaker>
+          <p>Das sollt ihr haben!</p>
+        </sp>
+      </div>
+    </body>
+  </text>
+</TEI>
