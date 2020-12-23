@@ -1,0 +1,1656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Gastfreund</title>
+        <title type="sub">Trauerspiel in einem Aufzuge</title>
+        <author key="pnd:118542192">Grillparzer, Franz</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000513</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q104443343</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:np6j.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode"
+                >Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Franz Grillparzer: Sämtliche Werke. Ausgewählte Briefe, Gespräche, Berichte.
+              Herausgegeben von Peter Frank und Karl Pörnbacher, München: Hanser,
+              [1960–1965].</title>
+            <date type="print" when="1822">Erstdruck: Wien (Wallishauser) 1822.</date>
+            <date type="premiere" when="1821">Uraufführung am 26./27.3.1821 in Wien.</date>
+            <date type="written" notBefore="1818" notAfter="1820">Entstanden 1818/20.</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <personGrp xml:id="jungfrauen_chor" sex="FEMALE">
+            <name>Jungfrauen/Chor</name>
+          </personGrp>
+          <person xml:id="medea" sex="FEMALE" ana="http://www.wikidata.org/entity/Q174278">
+            <persName>Medea</persName>
+          </person>
+          <person xml:id="eine_der_jungfrauen" sex="FEMALE">
+            <persName>Eine der Jungfrauen</persName>
+          </person>
+          <person xml:id="gora" sex="FEMALE">
+            <persName>Gora</persName>
+          </person>
+          <person xml:id="peritta" sex="FEMALE">
+            <persName>Peritta</persName>
+          </person>
+          <person xml:id="kolcher_bote" sex="MALE">
+            <persName>Kolcher/Bote</persName>
+          </person>
+          <person xml:id="aietes" sex="MALE" ana="http://www.wikidata.org/entity/Q241971">
+            <persName>Aietes</persName>
+          </person>
+          <person xml:id="phryxus" sex="MALE" ana="http://www.wikidata.org/entity/Q743482">
+            <persName>Phryxus</persName>
+          </person>
+          <person xml:id="hauptmann" sex="MALE">
+            <persName>Hauptmann</persName>
+          </person>
+          <person xml:id="ein_kolcher_aus_dem_hause" sex="MALE">
+            <persName>Ein Kolcher (aus dem Hause)</persName>
+          </person>
+          <person xml:id="kolcher" sex="MALE">
+            <persName>Kolcher</persName>
+          </person>
+          <personGrp xml:id="gewaffnete" sex="MALE">
+            <name>Gewaffnete</name>
+          </personGrp>
+          <listRelation type="personal">
+            <relation name="parent_of" active="#aietes" passive="#medea"/>
+            <relation name="associated_with" active="#gora #peritta" passive="#medea"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Tragedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q80930</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2020-12-23">(dlina) file conversion from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Franz Grillparzer</head>
+        <head>Der Gastfreund</head>
+        <head>Trauerspiel in einem Aufzuge</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castGroup>
+            <castItem>Aietes, König von Kolchis</castItem>
+            <castItem>Medea, seine Tochter</castItem>
+            <castItem>Gora, Medeens Amme</castItem>
+            <castItem>Peritta, eine ihrer Jungfrauen</castItem>
+            <castItem>Phryxus</castItem>
+            <castItem>Jungfrauen Medeens</castItem>
+            <castItem>Griechen in Phryxus Gefolge</castItem>
+            <castItem>Kolcher</castItem>
+            <pb n="796"/>
+          </castGroup>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <stage>Kolchis. Wilde Gegend mit Felsen und Bäumen, im Hintergrunde das Meer.</stage>
+        <stage>Am Gestade desselben ein Altar, von unbehauenen Steinen zusammengefügt, auf dem die
+          kolossale Bildsäule eines nackten, bärtigen Mannes steht, der in seiner Rechten eine
+          Keule, um die Schultern ein Widderfell trägt. Links an den Szenen des Mittelgrundes der
+          Eingang eines Hauses mit Stufen und rohen Säulen. Tagesanbruch</stage>
+        <stage>Medea, Gora, Peritta, Gefolge von Jungfrauen.</stage>
+        <stage>Beim Aufziehen des Vorhanges steht Medea im Vorgrunde mit dem Bogen in der Hand in
+          der Stellung einer, die eben den Pfeil abgeschossen. An den Stufen des Altars liegt ein
+          von einem Pfeile durchbohrtes Reh.</stage>
+        <sp who="#jungfrauen_chor">
+          <speaker>JUNGFRAUEN</speaker>
+          <stage>die entfernt gestanden, zum Altare hineilend.</stage>
+          <l>Das Opfer blutet!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA</speaker>
+          <stage>in ihrer vorigen Stellung.</stage>
+          <l>Trafs?</l>
+        </sp>
+        <sp who="#eine_der_jungfrauen">
+          <speaker>EINE DER JUNGFRAUEN.</speaker>
+          <l>Gerad ins Herz!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA</speaker>
+          <stage>indem sie den Bogen abgibt.</stage>
+          <lg>
+            <l>Das deutet Gutes. Laß uns eilen denn!</l>
+            <l>Geh eine hin und spreche das Gebet.</l>
+          </lg>
+        </sp>
+        <sp who="#gora">
+          <speaker>GORA</speaker>
+          <stage>zum Altare tretend.</stage>
+          <lg>
+            <l>Darimba, mächtige Göttin,</l>
+            <l>Menschenerhalterin, Menschentöterin,</l>
+            <l>Die den Wein du gibst und des Halmes Frucht,</l>
+            <l>Gibst des Weidwerks herzerfreuende Spende</l>
+            <l>Und des Todfeinds Blut:</l>
+            <l>Darimba, reine, magdliche</l>
+            <l>Tochter des Himmels,</l>
+            <l>Höre mich!</l>
+          </lg>
+        </sp>
+        <sp who="#jungfrauen_chor">
+          <speaker>CHOR.</speaker>
+          <lg>
+            <l>Darimba, mächtige Göttin,</l>
+            <l>Darimba! Darimba!</l>
+          </lg>
+        </sp>
+        <sp who="#gora">
+          <speaker>GORA.</speaker>
+          <lg>
+            <l>Sieh, ein Reh hab ich dir getötet,</l>
+            <l>Den Pfeil schnellend vom starken Bogen,</l>
+            <l>Dein ists! Laß dir gefallen sein Blut!</l>
+            <l>Segne das Feld und den beutereichen Wald,</l>
+            <l>Gib, daß wir recht tun und siegen in der Schlacht,</l>
+            <l>Gib, daß wir lieben den Wohlwollenden</l>
+            <l>Und hassen <emph>den</emph>, der uns haßt.</l>
+            <l>Mach uns stark und reich, Darimba,</l>
+            <l>Mächtige Göttin!</l>
+          </lg>
+        </sp>
+        <sp who="#jungfrauen_chor">
+          <speaker>CHOR.</speaker>
+          <l>Darimba, Darimba!</l>
+          <pb n="797"/>
+        </sp>
+        <sp who="#gora">
+          <speaker>GORA.</speaker>
+          <lg>
+            <l>Das Opfer am Altar zuckt und endet,</l>
+            <l>So mögen deine Feinde enden, Darimba!</l>
+            <l>Deine Feinde und die unsern!</l>
+            <l>Es ist Medea, Aietes Tochter,</l>
+            <l>Des Herrschers von Kolchis fürstliches Kind,</l>
+            <l>Die empor in deine Wohnungen ruft,</l>
+            <l>Höre mich, höre mich,</l>
+            <l>Und erfülle, was ich bat!</l>
+          </lg>
+        </sp>
+        <sp who="#jungfrauen_chor">
+          <speaker>CHOR</speaker>
+          <stage>mit Zimbeln und Handpauken zusammenschlagend.</stage>
+          <lg>
+            <l>Darimba, Darimba!</l>
+            <l>Mächtige Göttin!</l>
+            <l>Eriho! Jehu!</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <lg>
+            <l>Und somit genug! Das Opfer ist gebracht,</l>
+            <l>Vollendet das zögernde Geschäft.</l>
+            <l>Nun Pfeil und Bogen her, die Hunde vor,</l>
+            <l>Daß von des Jagdlärms hallendem Getos</l>
+            <l>Der grüne Wald ertöne nah und fern!</l>
+            <l>Die Sonne steigt. Hinaus! hinaus!</l>
+            <l>Und die am schnellsten rennt und die am leichtsten springt,</l>
+            <l>Sei Königin des Tages. –</l>
+            <l>Du hier, Peritta? Sagt ich dir nicht,</l>
+            <l>Daß du mich meiden sollst und gehn? So geh!</l>
+          </lg>
+        </sp>
+        <sp who="#peritta">
+          <speaker>PERITTA</speaker>
+          <stage>knieend.</stage>
+          <l>Medea!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <lg>
+            <l>Kniee nicht! Du sollst nicht knien!</l>
+            <l>Hörst du? In deine Seele schäm ich mich.</l>
+            <l>So feig, so zahm! Mich schmerzt nicht dein Verlust,</l>
+            <l>Mich schmerzt, daß ich dich jetzt verachten muß</l>
+            <l>Und hab dich einst geliebt!</l>
+          </lg>
+        </sp>
+        <sp who="#peritta">
+          <speaker>PERITTA.</speaker>
+          <l>O wüßtest du! –</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <lg>
+            <l>Was denn? – Stahlst du dich neulich von der Jagd</l>
+            <l>Und gingst zum Hirten ins Tergener Tal?</l>
+            <l>Tatst dus? Sprich nein! Du Falsche, Undankbare!</l>
+            <l>Versprachst du nicht, du wolltest mein sein, mein</l>
+            <l>Und keines Manns? Sag an, versprachst dus?</l>
+          </lg>
+        </sp>
+        <sp who="#peritta">
+          <speaker>PERITTA.</speaker>
+          <l>Als ichs gelobte, wußt ich damals –</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <lg>
+            <l>Schweig!</l>
+            <l>Was brauchts zu wissen, als daß dus versprachst.</l>
+            <l><pb n="798"/> Ich bin Aietes königliches Kind</l>
+            <l>Und was ich tu ist recht, weil ichs getan.</l>
+            <l>Und doch, du Falsche, hätt ich dir versprochen</l>
+            <l>Die Hand hier abzuhaun von meinem Arm,</l>
+            <l>Ich täts; fürwahr ich täts, weil ichs versprach.</l>
+          </lg>
+        </sp>
+        <sp who="#peritta">
+          <speaker>PERITTA.</speaker>
+          <lg>
+            <l>Es riß mich hin, ich war besinnungslos,</l>
+            <l>Und nicht mit meinem Willen, nein –</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <lg>
+            <l>Ei hört!</l>
+            <l>Sie wollte nicht und tats! Geh, du sprichst Unsinn.</l>
+            <l>Wie konnt es denn geschehn,</l>
+            <l>Wenn du nicht <emph>wolltest</emph>. Was ich tu, das will ich,</l>
+            <l>Und was ich will – je nu, das tu ich manchmal <emph>nicht</emph>.</l>
+            <l>Geh hin in deines Hirten dumpfe Hütte,</l>
+            <l>Dort kaure dich in Rauch und schmutzgen Qualm</l>
+            <l>Und baue Kohl auf einer Spanne Grund.</l>
+            <l>Mein Garten ist die ungemeßne Erde,</l>
+            <l>Des Himmels blaue Säulen sind mein Haus,</l>
+            <l>Da will ich stehn, des Berges freien Lüften</l>
+            <l>Entgegentragend eine freie Brust</l>
+            <l>Und auf dich niedersehn und dich verachten.</l>
+            <l>Hallo! in Wald! Ihr Mädchen in den Wald!</l>
+          </lg>
+          <stage>Indem sie abgehen will, kömmt von der andern Seite ein Kolcher.</stage>
+        </sp>
+        <sp who="#kolcher_bote">
+          <speaker>KOLCHER.</speaker>
+          <l>Du Königstochter, höre!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Was? Wer ruft,</l>
+        </sp>
+        <sp who="#kolcher_bote">
+          <speaker>KOLCHER.</speaker>
+          <l>Ein Schiff mit Fremden angelangt zur Stund!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Dem Vater sag es an. Was kümmerts mich!</l>
+        </sp>
+        <sp who="#kolcher_bote">
+          <speaker>KOLCHER.</speaker>
+          <l>Wo weilt er?</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Drin im Haus!</l>
+        </sp>
+        <sp who="#kolcher_bote">
+          <speaker>KOLCHER.</speaker>
+          <l>Ich eile!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Tus!</l>
+          <stage>Der Bote ab ins Haus.</stage>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <lg>
+            <l>Daß diese Fremden uns die Jagdlust stören!</l>
+            <l>Ihr Schiff, es ankert wohl in jener Bucht,</l>
+            <l>Die sonst zum Sammelplatz uns dient der Jagd.</l>
+            <l>Allein, was tuts! Bringt lange Speere her,</l>
+            <l>Und naht ein Kühner, zahl er es mit Blut!</l>
+            <l>Nur Speere her, doch leise, leise, hört!</l>
+            <l>Denn sähs der Vater, wehren möcht er es.</l>
+            <l><pb n="799"/> Kommt! – Dort das Mal, von Steinen aufgehäuft,</l>
+            <l>Seht ihrs dort oben? Wer erreichts zuerst?</l>
+            <l>Stellt euch! – Nichts da! Nicht vorgetreten! Weg!</l>
+            <l>Wer siegt, hat auf der Jagd den ersten Schuß:</l>
+            <l>So, stellt euch und wenn ich das Zeichen gebe,</l>
+            <l>Dann wie der Pfeil vom Bogen fort! Gebt acht!</l>
+            <l>Acht! – Jetzt! –</l>
+          </lg>
+          <stage>Aietes ist unterdessen aus dem Hause getreten, mit ihm der Bote, der gleich
+            abgeht.</stage>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Medea!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA</speaker>
+          <stage>sich umwendend, aber ohne ihren Platz zu verändern.</stage>
+          <l>Vater!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Du wohin?</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>In Wald!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Bleib jetzt!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Warum?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Ich wills, du sollst!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>So fürchtest du, daß jene Fremden –</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Weißt du also? –</l>
+          <stage>Näher tretend, mit gedämpfter Stimme.</stage>
+          <lg>
+            <l>Angekommen Männer</l>
+            <l>Aus fernem Land,</l>
+            <l>Bringen Gold, bringen Schätze,</l>
+            <l>Reiche Beute.</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Wem?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Uns, wenn wir wollen.</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Uns?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>'s sind Fremde, sind Feinde,</l>
+            <l>Kommen zu verwüsten unser Land.</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>So geh hin und töte sie!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Zahlreich sind sie und stark bewehrt,</l>
+            <l>Reich an List die fremden Männer,</l>
+            <l>Leicht töten sie <emph>uns</emph>.</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>So laß sie ziehn!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Nimmermehr.</l>
+            <l>Sie sollen mir –</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <lg>
+            <l>Tu was du willst,</l>
+            <l>Mich aber laß zur Jagd!</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Bleib, sag ich, bleib!</l>
+          <pb n="800"/>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Was soll ich?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Helfen! Raten!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Ich?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Du bist klug, du bist stark.</l>
+            <l>Dich hat die Mutter gelehrt</l>
+            <l>Aus Kräutern, aus Steinen</l>
+            <l>Tränke bereiten,</l>
+            <l>Die den Willen binden</l>
+            <l>Und fesseln die Kraft.</l>
+            <l>Du rufst Geister</l>
+            <l>Und besprichst den Mond,</l>
+            <l>Hilf mir, mein gutes Kind!</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <lg>
+            <l>Bin ich dein gutes Kind!</l>
+            <l>Sonst achtest du meiner wenig.</l>
+            <l>Wenn ich will, willst du <emph>nicht</emph></l>
+            <l>Und schiltst mich und schlägst nach mir;</l>
+            <l>Aber wenn du mein bedarfst,</l>
+            <l>Lockst du mich mit Schmeichelworten</l>
+            <l>Und nennst mich Medea, dein liebes Kind.</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Vergiß, Medea, was sonst geschehn.</l>
+            <l>Bist doch auch nicht immer wie du solltest.</l>
+            <l>Jetzt steh mir bei und hilf mir.</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Wozu?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>So höre denn, mein gutes Mädchen!</l>
+            <l>Das Gold der Fremden all und ihre Schätze –</l>
+            <l>Gelt lächelst?</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Ich?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Ei ja, das viele Gold,</l>
+            <l>Die bunten Steine und die reichen Kleider,</l>
+            <l>Wie sollen die mein Mädchen zieren!</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Ei, immerhin!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Du schlaue Bübin, sieh,</l>
+            <l>Ich weiß, dir lacht das Herz nach all der Zier!</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Kommt nur zur Sache, Vater!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Ich –</l>
+            <l>Heiß dort die Mädchen gehn!</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Warum?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Ich wills!</l>
+          <pb n="801"/>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Sie sollen ja mit mir zur Jagd.</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Heut keine Jagd!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Nicht?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Nein sag ich und nein! und nein!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Erst lobst du mich und –</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Nun, sei gut, mein Kind!</l>
+            <l>Komm hierher! Weiter! hierher, so!</l>
+            <l>Du bist ein kluges Mädchen, dir kann ich trauen.</l>
+            <l>Ich – –</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Nun!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Was siehst du mir so starr ins Antlitz?</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Ich höre, Vater!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>O, ich kenne dich!</l>
+            <l>Willst du den Vater meistern, Ungeratne?</l>
+            <l><emph>Ich</emph> entscheide was gut, was nicht.</l>
+            <l>Du <emph>gehorchst</emph>. Aus meinen Augen, Verhaßte!</l>
+          </lg>
+          <stage>Medea geht.</stage>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Bleib! – Wenn du wolltest, begreifen wolltest –</l>
+            <l>Ich weiß, du kannst, allein du willst es nicht.</l>
+            <l>So seis denn, bleib aus deines Vaters Rat</l>
+            <l>Und diene, weil du dienen willst.</l>
+          </lg>
+          <stage>Man hört in der Ferne kriegerische Musik.</stage>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Was ist das? Weh, sie kommen uns zuvor!</l>
+            <l>Siehst du, Törin? Die du schonen wolltest, sie töten uns!</l>
+            <l>In vollem Zug hierher die fremden Männer!</l>
+            <l>Weh uns! Waffen! Waffen!</l>
+          </lg>
+          <stage>Der Bote kommt wieder.</stage>
+        </sp>
+        <sp who="#kolcher_bote">
+          <speaker>BOTE.</speaker>
+          <l>Der Führer, Herr, der fremden Männer! –!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Was will er? Meine Krone, mein Leben?</l>
+            <l>Noch hab ich Mut, noch hab ich Kraft,</l>
+            <l>Noch wallt Blut in meinen Adern,</l>
+            <l>Zu tauschen Tod um Tod!</l>
+          </lg>
+        </sp>
+        <sp who="#kolcher_bote">
+          <speaker>BOTE.</speaker>
+          <l>Er bittet um Gehör.</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Bittet?</l>
+        </sp>
+        <sp who="#kolcher_bote">
+          <speaker>BOTE.</speaker>
+          <lg>
+            <l>Freundlich sich mit dir zu besprechen,</l>
+            <l>Zu stiften friedlichen Vergleich.</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Bittet? und hat die Macht in Händen,</l>
+            <l><pb n="802"/> Findet uns unbewehrt, er in Waffen,</l>
+            <l>Und bittet, der Tor!</l>
+          </lg>
+        </sp>
+        <sp who="#kolcher_bote">
+          <speaker>BOTE.</speaker>
+          <lg>
+            <l>In dein Haus will er treten,</l>
+            <l>Sitzen an deinem Tische,</l>
+            <l>Essen von deinem Brot</l>
+            <l>Und dir vertrauen,</l>
+            <l>Was ihn hierher geführt.</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Er komme, er komme.</l>
+            <l>Hält er Friede nur zwei Stunden,</l>
+            <l>Später fürcht ich ihn nicht mehr.</l>
+            <l>Sag ihm, daß er nahe,</l>
+            <l>Aber ohne Schild, ohne Speer,</l>
+            <l>Nur das Schwert an der Seite,</l>
+            <l>Er und seine Gesellen.</l>
+            <l>Dann aber geh und biet auf die Getreuen</l>
+            <l>Rings herum im ganzen Lande,</l>
+            <l>Heiß sie sich stellen, gewappnet, bewehrt</l>
+            <l>Mit Schild und Panzer, mit Lanz und Schwert</l>
+            <l>Und sich verbergen im nahen Gehölz,</l>
+            <l>Bis ich winke, bis ich rufe. – Geh!</l>
+          </lg>
+          <stage>Bote ab.</stage>
+          <lg>
+            <l>Ich will dein lachen, du schwacher Tor!</l>
+            <l>Du aber, Medea, sei mir gewärtig!</l>
+            <l>Einen Trank, ich weiß es, bereitest du,</l>
+            <l>Der mit sanfter, schmeichelnder Betäubung</l>
+            <l>Die Sinn entbindet ihres Dieneramts</l>
+            <l>Und ihren Herrn zum Sklaven macht des Schlafs.</l>
+            <l>Geh hin und hole mir von jenem Trank!</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Wozu?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Geh, sag ich, hin und hol ihn mir!</l>
+            <l>Dann komm zurück. Ich will sie zähmen, diese Stolzen!</l>
+          </lg>
+          <stage>Medea ab.</stage>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES</speaker>
+          <stage>gegen den Altar im Hintergrunde gewendet.</stage>
+          <lg>
+            <l>Peronto, meiner Väter Gott!</l>
+            <l>Laß gelingen, was ich sinne,</l>
+            <l>Und teilen will ich, treu und redlich,</l>
+            <l>Was wir gewinnen von unsern Feinden.</l>
+          </lg>
+        </sp>
+        <pb n="803"/>
+        <stage>Kriegerische Musik. Bewaffnete Griechen ziehen auf, mit grünen Zweigen in der Hand.
+          Der letzte geht Phryxus, in der linken Hand gleichfalls einen grünen Zweig, in der Rechten
+          ein goldenes Widderfell, in Gestalt eines Panieres auf der Lanze tragend. Bewaffnete
+          Kolcher treten von der andern Seite ein. Die Musik schweigt.</stage>
+        <stage>Indem Phryxus an dem im Hintergrunde befindlichen Altar und der darauf stehenden
+          Bildsäule vorbeigeht, bleibt er, wie von Erstaunen gefesselt, stehn, dann spricht
+          er.</stage>
+        <sp who="#phryxus">
+          <lg>
+            <l>Kann ich den Augen traun? – Er ists, er ists!</l>
+            <l>Sei mir gegrüßt, du freundliche Gestalt,</l>
+            <l>Die mich durch Wogensturm und Unglücksnacht</l>
+            <l>Hierher geführt an diese ferne Küste,</l>
+            <l>Wo Sicherheit und einfach stille Ruh</l>
+            <l>Mit Kindesblicken mir entgegenlächeln.</l>
+            <l>Dies Zeichen, das du mir als Pfand der Rettung</l>
+            <l>In jener unheilvollen Stunde gabst</l>
+            <l>Und das, wie der Polarstern vor mir leuchtend,</l>
+            <l>Mich in den Hafen eingeführt des Glücks,</l>
+            <l>Ich pflanz es dankbar auf vor deinem Altar</l>
+            <l>Und beuge betend dir ein frommes Knie,</l>
+            <l>Der du ein Gott mir warest in der Tat,</l>
+            <l>Wenn gleich dem Namen nach, mir Fremden, nicht!</l>
+          </lg>
+          <stage>Er kniet.</stage>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES</speaker>
+          <stage>im Vorgrunde.</stage>
+          <lg>
+            <l>Was ist das?</l>
+            <l>Er beugt sein Knie dem Gott meiner Väter!</l>
+            <l>Denk der Opfer, die ich dir gebracht,</l>
+            <l>Hör ihn nicht, Peronto,</l>
+            <l>Höre den Fremden nicht!</l>
+          </lg>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS</speaker>
+          <stage>aufstehend.</stage>
+          <lg>
+            <l>Erfüllet ist des Dankens süße Pflicht.</l>
+            <l>Nun führt zu eurem König mich! Wo weilt er?</l>
+          </lg>
+          <stage>Die Kolcher weichen schweigend und scheu zu beiden Seiten aus dem Wege.</stage>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS</speaker>
+          <stage>erblickt den König, auf ihn zugehend.</stage>
+          <l>In dir grüß ich den Herrn wohl dieses Landes?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Ich bin der Kolcher Fürst!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <lg>
+            <l>Sei mir gegrüßt!</l>
+            <l>Es führte Göttermacht mich in dein Reich,</l>
+            <l><pb n="804"/> So ehr in mir den Gott, der mich beschützt.</l>
+            <l>Der Mann, der dort auf jenem Altar thront,</l>
+            <l>Ist er das Bildnis eines, der da lebte?</l>
+            <l>Wie, oder ehrt ihr ihn als einen Himmlischen?</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Es ist Peronto, der Kolcher Gott.</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <lg>
+            <l>Peronto! Rauher Laut dem Ohr des Fremden.</l>
+            <l>Wohltönend aber dem Geretteten.</l>
+            <l>Verehrst du jenen dort als deinen Schützer,</l>
+            <l>So liegt ein Bruder jetzt in deinem Arm,</l>
+            <l>Denn <emph>Brüder</emph> sind ja <emph>eines</emph> Vaters Söhne.</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES</speaker>
+          <stage>der Umarmung ausweichend.</stage>
+          <l>Schützer er dir?</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <lg>
+            <l>Ja, du sollst noch hören.</l>
+            <l>Doch laß mich bringen erst mein Weihgeschenk.</l>
+          </lg>
+          <stage>Er geht zum Altar und stößt vor demselben sein Panier in den Boden</stage>
+        </sp>
+        <stage>Medea kommt mit einem Becher.</stage>
+        <sp who="#medea">
+          <speaker>MEDEA</speaker>
+          <stage>laut.</stage>
+          <l>Hier, Vater, ist der Trank!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES</speaker>
+          <stage>sie gewaltsam auf die Seite ziehend, leise.</stage>
+          <lg>
+            <l>Schweig, Törichte!</l>
+            <l>Siehst du denn nicht?</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Was?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Den Becher gib der Sklavin</l>
+            <l>Und schweig!</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Wer ist der Mann?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Der Fremden Führer, schweig!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS</speaker>
+          <stage>vom Altare zurückkommend.</stage>
+          <lg>
+            <l>Jetzt tret ich leicht erst in dein gastlich Haus!</l>
+            <l>Doch wer ist dieses blühend holde Wesen,</l>
+            <l>Das wie der goldne Saum der Wetterwolke</l>
+            <l>Sich schmiegt an deine kriegrische Gestalt?</l>
+            <l>Die roten Lippen und der Wange Licht,</l>
+            <l>Sie scheinen Huld und Liebe zu verheißen,</l>
+            <l>Streng widersprochen von dem finstern Aug</l>
+            <l>Das blitzend wie ein drohender Komet</l>
+            <l>Hervorstrahlt aus der Locken schwarzem Dunkel.</l>
+            <l>Halb Charis steht sie da und halb Mänade,</l>
+            <l>Entflammt von ihres Gottes heilger Glut.</l>
+            <l>Wer bist du, holdes Mädchen?</l>
+            <pb n="805"/>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Sprich, Medea!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA</speaker>
+          <stage>trocken.</stage>
+          <l>Medea bin ich, dieses Königs Kind!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <lg>
+            <l>Fürwahr ein Kind und eine Königin!</l>
+            <l>Ich nehm dich an als gute Vorbedeutung</l>
+            <l>Für eine Zukunft, die uns noch verhüllt.</l>
+            <l>O lächle, Mädchenbild, auf meinen Eintritt!</l>
+            <l>Vielleicht, wer weiß, ob nicht dein Vater,</l>
+            <l>Von dem ich Zuflucht nur und Schutz verlangt,</l>
+            <l>Mir einst noch mehr gibt, mehr noch, o Medea!</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Was also, Fremdling, ist dein Begehr?</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <lg>
+            <l>So höre denn, was mich hierher geführt,</l>
+            <l>Was ich verloren, Herr, und was ich suche.</l>
+            <l>Geboren bin ich in dem schönen Hellas,</l>
+            <l>Von Griechen, ich ein Grieche, reinen Bluts.</l>
+            <l>Es lebet niemand, der sich höhrer Abkunft,</l>
+            <l>Sich edlern Stammes rühmen kann als ich,</l>
+            <l>Denn Hellas Götter nenn ich meine Väter,</l>
+            <l>Und meines Hauses Ahn regiert die Welt.</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA</speaker>
+          <stage>sich abwendend.</stage>
+          <l>Ich gehe, Vater, um –</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Bleib hier und schweig!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <lg>
+            <l>Von Göttern also zieh ich mein Geschlecht!</l>
+            <l>Allein mein Vater, alten Ruhms vergessend</l>
+            <l>Und jung-erzeugter Kinder Recht und Glück,</l>
+            <l>Erkor zur zweiten Eh ein niedrig Weib,</l>
+            <l>Das, neidisch auf des ersten Bettes Sprossen</l>
+            <l>Und übrall Vorwurf sehend, weil sie selbst</l>
+            <l>Sich Vorwurf zu <emph>verdienen</emph> war bewußt,</l>
+            <l>Den Zorn des Vaters reizte gegen mich.</l>
+            <l>Die Zwietracht wuchs und Häscher sandt er aus,</l>
+            <l>Den Sohn zu fahn, vielleicht zu töten ihn.</l>
+            <l>Da ging ich aus der Väter Haus und floh,</l>
+            <l>In fremdem Land zu suchen heimisch Glück.</l>
+            <l>Umirrend kam ich in die Delpherstadt</l>
+            <l>Und trat, beim Gotte Rat und Hilfe suchend,</l>
+            <l>In Phöbos reiches, weitberühmtes Haus.</l>
+            <l>Da stand ich in des Tempels weiten Hallen,</l>
+            <l>Mit Bildern rings umstellt und Opfergaben,</l>
+            <l><pb n="806"/> Erglühend in der Abendsonne Strahl.</l>
+            <l>Vom Schauen matt und von des Weges Last</l>
+            <l>Schloß sich mein Aug und meine Glieder sanken;</l>
+            <l>Dem Zug erliegend schlummerte ich ein.</l>
+            <l>Da fand ich mich im Traum im selben Tempel,</l>
+            <l>In dem ich schlief, doch wachend und allein</l>
+            <l>Und betend zu dem Gott um Rat. Urplötzlich</l>
+            <l>Umflammt mich heller Glanz, und einen Mann</l>
+            <l>In nackter Kraft, die Keule in der Rechten,</l>
+            <l>Mit langem Bart und Haar, ein Widderfell</l>
+            <l>Um seine mächtgen Schultern, stand vor mir</l>
+            <l>Und lächelte mit milder Huld mich an.</l>
+            <l>»<emph>Nimm Sieg und Rache hin!</emph>« sprach er und löste</l>
+            <l>Das reiche Vließ von seinen Schultern ab</l>
+            <l>Und reichte mirs; da, schütternd, wacht ich auf.</l>
+            <l>Und siehe! von dem Morgenstrahl beleuchtet</l>
+            <l>Stand eine Blende schimmernd vor mir da</l>
+            <l>Und drin, aus Marmor künstlich ausgehaun,</l>
+            <l>Derselbe Mann, der eben mir erschienen,</l>
+            <l>Mit Haar und Bart und Fell, wie ichs gesehn.</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES</speaker>
+          <stage>auf die Bildsäule im Hintergrunde zeigend.</stage>
+          <l>Der dort?</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <lg>
+            <l>Ihm glich er wie ich mir.</l>
+            <l>So stand er da in Götterkraft und Würde,</l>
+            <l>Vergleichbar dem Herakles, doch nicht er.</l>
+            <l>Und an dem Fußgestell des Bildes war</l>
+            <l>Der Name <emph>Kolchis</emph> golden eingegraben.</l>
+            <l>Ich aber deutete des Gottes Rat;</l>
+            <l>Und nehmend, was er rätselhaft mir bot,</l>
+            <l>Löst ich, ich war allein, den goldnen Schmuck</l>
+            <l>Vom Hals des Bildes, und in Eile fort.</l>
+            <l>Des Vaters Häscher fand ich vor den Toren,</l>
+            <l>Sie wichen scheu des Gottes Goldpanier,</l>
+            <l>Die Priester neigten sich, das Volk lag auf den Knieen</l>
+            <l>Und vor mir her es auf der Lanze tragend,</l>
+            <l>Kam ich durch tausend Feinde bis ans Meer.</l>
+            <l>Ein schifft ich mich, und hoch als goldne Wimpel</l>
+            <l>Flog mir das Vließ am sturmumtobten Mast,</l>
+            <l><pb n="807"/> Und wie die Wogen schäumten, Donner brüllten</l>
+            <l>Und Meer und Wind und Hölle sich verschworen,</l>
+            <l>Mich zu versenken in das nasse Grab,</l>
+            <l>Versehrt ward mir kein Haar, und unverletzt</l>
+            <l>Kam ich hierher an diese Rettungsküste,</l>
+            <l>Die vor mir noch kein griechscher Fuß betrat.</l>
+            <l>Und jetzo geht an dich mein bittend Flehn,</l>
+            <l>Nimm auf mich und die Meinen in dein Land.</l>
+            <l>Wo nicht, so faß ich selber Sitz und Stätte,</l>
+            <l>Vertrauend auf der Götter Beistand, die</l>
+            <l>Mir <emph>Sieg und Rache</emph> durch dies Pfand verliehn!</l>
+            <l>– Du schweigst?</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Was willst du, daß ich sage?</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <l>Gewährst du mir ein Dach, ein gastlich Haus?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Tritt ein, wenn dirs gutdünkt, Vorrat ist</l>
+            <l>Von Speis und Trank genug. Dort nimm und iß!</l>
+          </lg>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <l>So rauh übst du des Wirtes gastlich Amt?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Wie du dich gibst, so nehm ich dich.</l>
+            <l>Wer in des Krieges Kleidung Gabe heischt,</l>
+            <l>Erwarte nicht sie aus des Friedens Hand.</l>
+          </lg>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <l>Den Schild hab ich, die Lanze abgelegt.</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Das Schwert ist, denkst du, gegen uns genug?</l>
+            <l>Doch halt es, wie du willst.</l>
+          </lg>
+          <stage>Leise zu Medea.</stage>
+          <l>Begehr sein Schwert!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <lg>
+            <l>Noch eins! An reichem Schmuck und köstlichen Gefäßen</l>
+            <l>Bring ich so manches, was ich sichern möchte.</l>
+            <l>Du nimmst es doch in deines Hauses Hut?</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Tu, wie du willst!</l>
+          <stage>Zu Medea.</stage>
+          <l>Sein Schwert, sag ich, begehr!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <lg>
+            <l>Nun denn, Gefährten, was wir hergebracht,</l>
+            <l>Gerettet aus des Glückes grausem Schiffbruch,</l>
+            <l>Bringt es hierher in dieser Mauern Umfang</l>
+            <l>Als Grundstein eines neuen, festern Glücks.</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES</speaker>
+          <stage>zu Medea.</stage>
+          <l>Des Fremden Schwert!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Wozu?</l>
+          <pb n="808"/>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Sein Schwert, sag ich!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA</speaker>
+          <stage>zu Phryxus.</stage>
+          <l>Gib mir dein Schwert!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <l>Was sagst du, holdes Kind?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Fremd ist dem Mädchen eurer Waffen Anblick</l>
+            <l>Bei uns geht nicht der Friedliche bewehrt.</l>
+            <l>Auch ists euch lästig.</l>
+          </lg>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS</speaker>
+          <stage>zu Medeen.</stage>
+          <l>Sorgest du um mich?</l>
+          <stage>Medea wendet sich ab.</stage>
+          <l>Sei mir nicht bös! Ich weigr es dir ja nicht!</l>
+          <stage>Er gibt ihr das Schwert.</stage>
+          <lg>
+            <l>Den Himmlischen vertrau ich mich und dir!</l>
+            <l>Wo du bist, da ist Frieden. Hier mein Schwert!</l>
+            <l>Und jetzo in dein Haus, mein edler Wirt!</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Gehe nur, ich folg euch bald!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <lg>
+            <l>Und du, Medea?</l>
+            <l>Laß mich auch dich am frohen Tische sehn!</l>
+            <l>Kommt, Freunde, teilt die Lust, wie ehmals die Gefahr!</l>
+          </lg>
+          <stage>Ab mit seinen Gefährten.</stage>
+        </sp>
+        <stage>Medea setzt sich auf eine Felsenbank im Vorgrunde und beschäftigt sich mit ihrem
+          Bogen, den sie von der Erde aufgehoben hat. Aietes steht auf der andern Seite des
+          Vorgrundes und verfolgt mit den Augen die Diener des Phryxus, die Gold und reiche Gefäße
+          ins Haus tragen. – Lange Pause.</stage>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Medea!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Vater!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Was denkst du?</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Ich? nichst!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Vom Fremden mein ich.</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <lg>
+            <l>Er spricht und spricht;</l>
+            <l>Mir widerts!</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES</speaker>
+          <stage>rasch auf sie zugehend.</stage>
+          <lg>
+            <l>Nicht wahr? Spricht und gleist</l>
+            <l>Und ist ein Bösewicht,</l>
+            <l>Ein Gottverächter, ein Tempelräuber!</l>
+            <l>Ich töt ihn!</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Vater!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Ich tus!</l>
+            <l>Soll er davontragen all den Reichtum,</l>
+            <l><pb n="809"/> Den er geraubt, dem Himmel geraubt?</l>
+            <l>Erzählt' er nicht selbst, wie er im Tempel</l>
+            <l>Das Vließ gelöst von der Schulter des Gottes,</l>
+            <l>Des Donnerers, Perontos,</l>
+            <l>Der Kolchis beschützt.</l>
+            <l>Ich will dir ihn schlachten, Peronto!</l>
+            <l>Rache sei dir, Rache!</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Töten willst du, den Fremden, den Gast?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Gast?</l>
+            <l>Hab ich ihn geladen in mein Haus?</l>
+            <l>Ihm beim Eintritt Brot und Salz gereicht</l>
+            <l>Und geheißen sitzen auf meinem Stuhl?</l>
+            <l>Ich hab ihm nicht Gastrecht geboten,</l>
+            <l>Er <emph>nahm</emph> sichs, büß ers, der Tor!</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Vater! Peronto rächet den Mord!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Peronto <emph>gebeut</emph> ihn.</l>
+            <l>Hat der Freche nicht an ihm gefrevelt?</l>
+            <l>Sein Bild beraubt in der Delpherstadt?</l>
+            <l>Führt der Erzürnte ihn nicht selbst her,</l>
+            <l>Daß ich ihn strafe, daß ich räche</l>
+            <l>Des Gottes Schmach und meine?</l>
+            <l>Das Vließ dort am glänzenden Speer,</l>
+            <l>Des Gottes Kleid, der Kolcher Heiligtum,</l>
+            <l>Solls ein Fremder, ein Frevler entweihn?</l>
+            <l>Mein ists, mein! Mir sendets der Gott</l>
+            <l>Und <emph>Sieg und Rache</emph>, geknüpft an dies Pfand,</l>
+            <l>Den Unsern werd es zuteil!</l>
+            <l>Tragt nur zu des kostbaren Guts!</l>
+            <l>Ihr führet die Ernte mir ein!</l>
+            <l>Sprich nicht und komm! daß er uns nicht vermißt,</l>
+            <l>Gefahrlos sei die Rach und ganz!</l>
+            <l>Komm, sag ich, komm!</l>
+          </lg>
+          <stage>Beide ab ins Haus.</stage>
+          <stage>Ein kolchischer Hauptmann mit Bewaffneten tritt auf.</stage>
+        </sp>
+        <sp who="#hauptmann">
+          <speaker>HAUPTMANN.</speaker>
+          <l>Hierher beschied man uns. Was sollen wir?</l>
+        </sp>
+        <sp who="#ein_kolcher_aus_dem_hause">
+          <speaker>EIN KOLCHER</speaker>
+          <stage>aus dem Hause.</stage>
+          <l>Heda!</l>
+          <pb n="810"/>
+        </sp>
+        <sp who="#hauptmann">
+          <speaker>HAUPTMANN.</speaker>
+          <l>Hier sind wir!</l>
+        </sp>
+        <sp who="#ein_kolcher_aus_dem_hause">
+          <speaker>KOLCHER.</speaker>
+          <l>Leise!</l>
+        </sp>
+        <sp who="#hauptmann">
+          <speaker>HAUPTMANN.</speaker>
+          <l>Sprich! Was solls?</l>
+        </sp>
+        <sp who="#ein_kolcher_aus_dem_hause">
+          <speaker>KOLCHER.</speaker>
+          <lg>
+            <l>Verteilt euch rechts und links und wenn ein Fremder –</l>
+            <l>Doch still jetzt! Einer naht! – Kommt! hört das weitre!</l>
+          </lg>
+          <stage>Alle ab.</stage>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS</speaker>
+          <stage>mit ängstlichen Schritten aus dem Hause.</stage>
+          <lg>
+            <l>Ihr Götter! Was ist das? Ich ahne Schreckliches.</l>
+            <l>Es murmeln die Barbaren unter sich</l>
+            <l>Und schaun mit höhnschem Lächeln hin auf uns.</l>
+            <l>Man geht, man kommt, man winkt, man lauert.</l>
+            <l>Und die Gefährten, einer nach dem andern</l>
+            <l>Sinkt hin in dumpfen Schlaf; ob Müdigkeit,</l>
+            <l>Ob irgend ein verruchter Schlummertrank</l>
+            <l>Sie einlullt, weiß ich nicht. Gerechte Götter!</l>
+            <l>Habt ihr mich hergeführt, mich zu verderben?</l>
+            <l>Nur eines bleibt mir noch: Flacht auf mein Schiff.</l>
+            <l>Dort samml ich die Zurückgebliebenen,</l>
+            <l>Und dann zur Rettung her, zur Hilfe- Horch!</l>
+          </lg>
+          <stage>Schwertgeklirr und dumpfe Stimmen im Hause.</stage>
+          <lg>
+            <l>Man ficht! – Man tötet! – Weh mir, weh! – Zu spät!</l>
+            <l>Nun bleibt nur Flacht. Schnell, eh die Mörder nahn!</l>
+          </lg>
+          <stage>Er will gehn. Krieger mit gefällten Spießen treten ihm entgegen.</stage>
+        </sp>
+        <sp who="#kolcher">
+          <speaker>KOLCHER.</speaker>
+          <l>Zurück!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <l>Ich bin verraten! – Hier!</l>
+          <stage>Von allen Seiten treten Bewaffnete mit gesenkten Speeren ihm entgegen.</stage>
+        </sp>
+        <sp who="#gewaffnete">
+          <speaker>GEWAFFNETE.</speaker>
+          <l>Zurück!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <l>Umsonst. Es ist vorbei! – Ich folg euch, Freunde!</l>
+          <stage>An den Altar hineilend.</stage>
+          <lg>
+            <l>Nun denn, du Hoher, der mich hergeführt,</l>
+            <l>Bist du ein Gott, so schirme deinen Schützling!</l>
+          </lg>
+          <stage>Aietes mit bloßem Schwert aus dem Hause. Medea hinter ihm. Gefolge.</stage>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Wo ist er?</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Vater, höre!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Wo, der Fremdling?</l>
+            <l>Dort am Altar. Was suchst du dort?</l>
+            <pb n="811"/>
+          </lg>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <l>Schutz such ich!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Gegen wen? Komm mit ins Haus!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <lg>
+            <l>Hier steh ich und umklammre diesen Altar;</l>
+            <l>Den Göttern trau ich; o, daß ich es dir!</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>O Vater, höre mich!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <lg>
+            <l>Du auch hier, Schlange?</l>
+            <l>Warst du so schön und locktest du so lieblich,</l>
+            <l>Mich zu verderben hier im Todesnetz?</l>
+            <l>Mein Herz schlug dir vertrauensvoll entgegen,</l>
+            <l>Mein Schwert, den letzten Schutz, gab ich in deine Hand</l>
+            <l>Und du verrätst mich?</l>
+          </lg>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <lg>
+            <l>Nicht verriet ich dich!</l>
+            <l>Gabst du dein Schwert mir, nimm ein andres hier</l>
+            <l>Und wehre dich des Lebens.</l>
+          </lg>
+          <stage>Sie hat einem der Umstehenden das Schwert entrissen und reicht es ihm.</stage>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES</speaker>
+          <stage>ihr das Schwert entreißend.</stage>
+          <lg>
+            <l>Törichte!</l>
+            <l>Vom Altar fort!</l>
+          </lg>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <l>Ich bleibe!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Reißt ihn weg!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS</speaker>
+          <stage>da einige auf ihn losgehen.</stage>
+          <lg>
+            <l>Nun denn, so muß ich sterben? – Ha, es sei!</l>
+            <l>Doch ungerochen, klaglos fall ich nicht.</l>
+          </lg>
+          <stage>Er reißt das Panier mit dem goldenen Vließ aus der Erde und tritt damit in den
+            Vorgrund.</stage>
+          <lg>
+            <l>Du unbekannte Macht, die her mich führend,</l>
+            <l>Dies Pfand der Rettung huldvoll einst mir gab</l>
+            <l>Und <emph>Sieg und Rache</emph> mir dabei verhieß;</l>
+            <l>Zu dir ruf ich empor nun! Höre mich!</l>
+            <l>Hab ich den <emph>Sieg</emph> durch eigne Schuld verwirkt,</l>
+            <l>Das Haupt darbietend dem Verräternetz</l>
+            <l>Und blind dem Schicksal trauend statt mir selber,</l>
+            <l>So laß doch <emph>Rache</emph> wenigstens ergehn</l>
+            <l>Und halte deines Wortes zweite Hälfte!</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Was zauderst du?</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <l>Aietes!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Nun, was noch?</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <l>Ich bin dein Gast, und du verrätst mich?</l>
+          <pb n="812"/>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <lg>
+            <l>Mein Gast? Mein Feind.</l>
+            <l>Was suchtest du, Fremder, in meinem Land? Tempelräuber!</l>
+            <l>Hab ich dir Gastrecht gelobt? dich geladen in mein Haus?</l>
+            <l>Nichts versprach ich, Törichter! Verderbt durch eigne Schuld!</l>
+          </lg>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <lg>
+            <l>Damit beschönst du deine Freveltat?</l>
+            <l>O, triumphiere nicht! Tritt her zu mir!</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Was solls?</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <lg>
+            <l>Sieh dieses Banner hier, mein letztes Gut,</l>
+            <l>Die Schätze alle hast du mir geraubt,</l>
+            <l>Dies eine fehlt noch.</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES</speaker>
+          <stage>darnach greifend.</stage>
+          <l>Fehlt? Wie lange noch?</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <lg>
+            <l>Zurück! Betrachts, es ist mein letztes Gut</l>
+            <l>Und von ihm scheidend, scheid ich von dem Leben.</l>
+            <l>Begehrst dus?</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Ja!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <l>Begehrst dus?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES</speaker>
+          <stage>die Hand ausstreckend.</stage>
+          <l>Gib mir es!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <lg>
+            <l>Nimms hin, des Gastes Gut, du edler Wirt,</l>
+            <l>Sieh, ich vertrau dirs an, bewahre mirs</l>
+          </lg>
+          <stage>Mit erhöhter Stimme.</stage>
+          <lg>
+            <l>Und gibst dus nicht zurücke, unbeschädigt</l>
+            <l>Nicht mir, dem Unbeschädigten, zurück,</l>
+            <l>So treffe dich der Götter Donnerfluch,</l>
+            <l>Der über dem rollt, der die Treue bricht.</l>
+            <l>Nun ist mir leicht! Nun Rache, Rache, Rache!</l>
+            <l>Er hat mein Gut. Verwahre mirs getreu!</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Nimm es zurück!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <lg>
+            <l>Nein! Nicht um deine Krone</l>
+            <l>Du hast mein Gut, dir hab ichs anvertraut,</l>
+            <l>Bewahre treu das anvertraute Gut!</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES</speaker>
+          <stage>ihm das Vließ aufdringend.</stage>
+          <l>Nimm es zurück!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS</speaker>
+          <stage>ihm ausweichend.</stage>
+          <lg>
+            <l>Du hast mein Gut, verwahr es treu!</l>
+            <l>Sonst Rache, Rache, Rache!</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES</speaker>
+          <stage>ihn über die Bühne verfolgend und ihm das Banner aufdringend.</stage>
+          <l>Nimm es, sag ich!</l>
+          <pb n="813"/>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS</speaker>
+          <stage>ausweichend.</stage>
+          <l>Ich nehm es nicht. Verwahre mirs getreu!</l>
+          <stage>Zur Bildsäule des Gottes empor.</stage>
+          <lg>
+            <l>Siehst du? er hats, ihm hab ichs anvertraut,</l>
+            <l>Und gibt ers nicht zurück, treff ihn dein Zorn!</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Nimm es zurück!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS</speaker>
+          <stage>am Altar.</stage>
+          <l>Nein, nein!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Nimms!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <l>Du verwahrsts!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Nimms!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS.</speaker>
+          <l>Nein!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Nun, so nimm dies!</l>
+          <stage>Er stößt ihm das Schwert in die Brust.</stage>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Halt, Vater, halt!</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS</speaker>
+          <stage>niedersinkend.</stage>
+          <l>Es ist zu spät!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Was tatst du,</l>
+        </sp>
+        <sp who="#phryxus">
+          <speaker>PHRYXUS</speaker>
+          <stage>zur Bildsäule empor.</stage>
+          <lg>
+            <l>Siehst dus, siehst dus!</l>
+            <l>Den Gastfreund tötet er und hat sein Gut!</l>
+            <l>Der du des Gastfreunds heilig Haupt beschützest,</l>
+            <l>O räche mich! Flach dem treulosen Mann!</l>
+            <l>Ihm muß kein Freund sein und kein Kind, kein Bruder,</l>
+            <l>Kein frohes Mahl- kein Labetrunk –</l>
+            <l>Was er am liebsten liebt – verderb ihn! –</l>
+            <l>Und dieses Vließ, das jetzt in seiner Hand,</l>
+            <l>Soll niederschaun auf seiner Kinder Tod! –</l>
+            <l>Er hat den Mann erschlagen, der sein Gast –</l>
+            <l>Und vorenthält- das anvertraute Gut –</l>
+            <l>Rache! – Rache! –</l>
+          </lg>
+          <stage>Stirbt. Lange Pause.</stage>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Vater!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES</speaker>
+          <stage>zusammenschreckend.</stage>
+          <l>Was?</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Was hast du getan?</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES</speaker>
+          <stage>dem Toten das Vließ aufdringen wollend.</stage>
+          <l>Nimm es zurück!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Er nimmts nicht mehr. Er ist tot!</l>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Tot! –</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <lg>
+            <l>Vater! Was hast du getan!</l>
+            <l><pb n="814"/> Den Gastfreund erschlagen,</l>
+            <l>Weh dir! Weh uns allen! – Ha! –</l>
+            <l>Aufsteigts aus den Nebeln der Unterwelt,</l>
+            <l>Drei Häupter, blutge Häupter,</l>
+            <l>Schlangen die Haare,</l>
+            <l>Flammen die Blicke,</l>
+            <l>Die hohnlachenden Blicke!</l>
+            <l>Höher! höher! – Empor steigen sie!</l>
+            <l>Entfleischte Arme, Fackeln in Händen,</l>
+            <l>Fackeln! – Dolche! Horch!</l>
+            <l>Sie öffnen die welken Lippen,</l>
+            <l>Sie murren, sie singen</l>
+            <l>Heischern Gesangs:</l>
+            <l>Wir hüten den Eid,</l>
+            <l>Wir vollstrecken den Fluch!</l>
+            <l>Fluch dem, der den Gastfreund schlug!</l>
+            <l>Fluch ihm, tausendfachen Fluch!</l>
+            <l>Sie kommen, sie nahen,</l>
+            <l>Sie umschlingen mich,</l>
+            <l>Mich, dich, uns alle!</l>
+            <l>Weh über dich!</l>
+          </lg>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES.</speaker>
+          <l>Medea!</l>
+        </sp>
+        <sp who="#medea">
+          <speaker>MEDEA.</speaker>
+          <l>Über dich, über uns! Weh, weh!</l>
+          <stage>Sie entflieht.</stage>
+        </sp>
+        <sp who="#aietes">
+          <speaker>AIETES</speaker>
+          <stage>ihr die Arme nachstreckend.</stage>
+          <l>Medea! Medea!</l>
+        </sp>
+        <stage>Ende.</stage>
+        <pb n="815"/>
+      </div>
+    </body>
+  </text>
+</TEI>
