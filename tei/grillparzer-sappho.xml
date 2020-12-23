@@ -52,24 +52,24 @@
           <person xml:id="melitta" sex="FEMALE">
             <persName>Melitta</persName>
           </person>
-          <person xml:id="geschrei-volk" sex="UNKNOWN">
-            <persName>Geschrei/Volk</persName>
-          </person>
-          <person xml:id="sappho" sex="FEMALE">
+          <personGrp xml:id="geschrei-volk" sex="UNKNOWN">
+            <name>Geschrei/Volk</name>
+          </personGrp>
+          <person xml:id="sappho" sex="FEMALE" ana="http://www.wikidata.org/entity/Q17892">
             <persName>Sappho</persName>
           </person>
           <person xml:id="einer_aus_dem_volke" sex="MALE">
             <persName>Einer aus dem Volke</persName>
           </person>
-          <person xml:id="phaon" sex="MALE">
+          <person xml:id="phaon" sex="MALE" ana="http://www.wikidata.org/entity/Q595876">
             <persName>Phaon</persName>
           </person>
           <person xml:id="eucharis" sex="FEMALE">
             <persName>Eucharis</persName>
           </person>
-          <person xml:id="maedchen" sex="FEMALE">
-            <persName>Mädchen</persName>
-          </person>
+          <personGrp xml:id="maedchen" sex="FEMALE">
+            <name>Mädchen</name>
+          </personGrp>
           <person xml:id="ruf_von_drinnen" sex="UNKNOWN">
             <persName>Ruf von drinnen</persName>
             <persName type="variant">Man ruft von innen</persName>
@@ -80,8 +80,7 @@
             <persName xml:id="landmann">Landmann</persName>
           </person>
           <listRelation type="personal">
-            <relation name="associated_with" active="#eucharis" passive="#sappho"/>
-            <relation name="associated_with" active="#melitta" passive="#sappho"/>
+            <relation name="associated_with" active="#eucharis #melitta" passive="#sappho"/>
           </listRelation>
         </listPerson>
       </particDesc>
