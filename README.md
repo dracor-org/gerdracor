@@ -41,7 +41,7 @@ Undirected relations use the `mutual` attribute to collect all IDs that are part
 The label from the table above is contained in the `name` attribute.
 
 ## API
-An easy way to download the network data (instead of the actual TEI files) is to use our API ([documentation here](https://dracor.org/documentation/api/)). If you have [jq](http://blog.librato.com/posts/jq-json) installed, it would work like this:
+An easy way to download the network data (instead of the actual TEI files) is to use our API ([documentation here](https://dracor.org/doc/api)). If you have [jq](https://blog.appoptics.com/jq-json/) installed, it would work like this:
 
 ```
 for play in `curl 'https://dracor.org/api/corpora/ger' | jq -r ".dramas[] .name"`; do
@@ -72,4 +72,4 @@ Here is a barplot showing the number of plays per decade:
 ## A Bit of History
 Until we rebuilt our working corpus under its new name GerDraCor, we've been working with an [intermediary format](https://github.com/dlina/project/tree/master/data/zwischenformat) to conduct [our research](https://dlina.github.io/talks/). This format only held structural information, not the texts themselves. Back then, our research group called itself DLINA (digitally-enabled literary network analysis). Since our focus broadened, we stopped using this name. Our future endeavours will sail under the **Programmable Corpora** flag.
 
-(README last updated on November 24, 2020.)
+(README last updated on January 5, 2021.)
