@@ -1,0 +1,4123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Schicksalsstrumpf</title>
+        <title type="sub">Tragödie in zwei Akten</title>
+        <author>
+          <persName>
+            <forename>Ignaz</forename>
+            <forename>Franz</forename>
+            <surname>Castelli</surname>
+          </persName>
+          <idno type="wikidata">Q78813</idno>
+          <idno type="pnd">118667424</idno>
+        </author>
+        <author>
+          <persName>
+            <forename>Alois</forename>
+            <surname>Jeitteles</surname>
+          </persName>
+          <idno type="wikidata">Q1345715</idno>
+          <idno type="pnd">113667213</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000523</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q104904334</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Google Books</name>
+          <idno type="URL"
+            >https://books.google.com/books?id=X8HI-fCDRkIC&amp;printsec=frontcover</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <title>Der Schicksalsstrumpf. Tragödie in zwei Akten von den Brüdern Fatalis. Leipzig:
+              Brockhaus 1818.</title>
+            <date type="print" when="1818"/>
+            <date type="premiere"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="kunigunde" sex="FEMALE">
+            <persName>Kunigunde</persName>
+          </person>
+          <person xml:id="veit" sex="MALE">
+            <persName>Veit</persName>
+          </person>
+          <person xml:id="das_schicksal_dolch" sex="UNKNOWN">
+            <persName>Das Schicksal/Dolch</persName>
+          </person>
+          <person xml:id="roderich_ii" sex="MALE">
+            <persName>Roderich II.</persName>
+          </person>
+          <person xml:id="roderich_i" sex="MALE">
+            <persName>Roderich I.</persName>
+          </person>
+          <person xml:id="moralino" sex="MALE">
+            <persName>Moralino</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#roderich_i #kunigunde"/>
+            <relation name="parent_of" active="#roderich_i #kunigunde" passive="#roderich_ii"/>
+            <relation name="associated_with" active="#veit" passive="#roderich_i #kunigunde"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2021-01-27">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <pb n="3"/>
+      <div type="front">
+        <head>Der Schicksalsstrumpf.</head>
+        <head>Tragödie in zwei Akten</head>
+        <head>von den Brüdern Fatalis.</head>
+        <p>Leipzig: F. A. Brockhaus.</p>
+        <dateline>1818.</dateline>
+      </div>
+      <pb n="4"/>
+      <pb n="5"/>
+      <div type="dedication">
+        <p>Zueignung an die Fatalen.</p>
+      </div>
+      <pb n="6"/>
+      <pb n="7"/>
+      <div type="prologue">
+        <l>Das Lied von <emph>Roderich</emph> und <emph>Kunigunden</emph>,</l>
+        <l>Das uns aus finstern Nächten ist erklungen,</l>
+        <l>Ist hier vor Euch in Thränenlust entwunden.</l>
+        <l>Dem Finstern ward das Finstere entrungen,</l>
+        <l>Dieweil es finstre Mächte still gesponnen,</l>
+        <l>Darob wir traurig schaurig es gesungen.</l>
+        <pb n="8"/>
+        <l>Und weil geschöpft es ist aus Nachtesbronnen,</l>
+        <l>So leb' es auch ein sinnig nächtlich Leben,</l>
+        <l>Der Nacht allein entblühen Tagessonnen.</l>
+        <l>Und was sich im Gemüth uns kund gegeben,</l>
+        <l>So uns entblühten diese Wehmuthsblüthen,</l>
+        <l>Das mög' auch, Brüder! düstrig Euch umweben;</l>
+        <l>Daß Ihr erkennet tiefes Schicksalswüthen,</l>
+        <l>Und bebet vor den unteren Gewalten,</l>
+        <l>Die Sterblichen verderbend Schrecken brüten;</l>
+        <pb n="9"/>
+        <l>Auf daß in Euch sich möge still entfalten</l>
+        <l>Des heißen Liebeglühens ächzend Stöhnen, –</l>
+        <l>– In Gluth ja nur kann Liebe sich gestalten. –</l>
+        <l>In <emph>Roderichs</emph> und <emph>Kunigundens</emph> Thränen,</l>
+        <l>Der Liebeswuth gar sinniges Bedeuten,</l>
+        <l>Der Urquell drinnen glühet alles Schönen.</l>
+        <l>Und wie entsäuselt Sängers goldnen Saiten</l>
+        <l>Der Lieder rosigduftend Nebelwehen,</l>
+        <l>Draus Bilder sich gar wunderbar bereiten,</l>
+        <pb n="10"/>
+        <l>Drin Alles will, und gar doch nichts bestehen,</l>
+        <l>Bald strebend nordenwärts und bald nach oben,</l>
+        <l>Drin Himmel, so wie Hölle ist zu sehen;</l>
+        <l>So ist auch dieser <emph>Schickalsstrumpf</emph> gewoben,</l>
+        <l>Aus tiefbedeutsam sinniglichen Fäden,</l>
+        <l>Ein klares Bild von Eures Innern Toben.</l>
+        <l>Er will zu Euch mit Geisterworten reden,</l>
+        <l>Wie Kunigunde selbst sich thät umstricken,</l>
+        <l>Sich Hölle schaffend für ein freudig Eden;</l>
+        <pb n="11"/>
+        <l>In Traum und Ahnung thät er sie berücken,</l>
+        <l>Als Dolch und Hund (dem selbst die Dichter weichen)</l>
+        <l>Verdirbt er Alle, statt sie zu beglücken.</l>
+        <l>Und nur nach solchen tiefgedrungnen Streichen</l>
+        <l>Durft' das Getrennte wieder sich vereinen,</l>
+        <l>Wie Leben folgt auf blassen Tods Erbleichen. –</l>
+        <l>Ihr aber, die Ihr lachet, statt zu weinen,</l>
+        <l>Ihr werdet freilich dieses drin nicht finden,</l>
+        <l>Drum wirb Euch nie der Orion erscheinen!</l>
+        <pb n="12"/>
+        <l>Ihr seyd versunken in den finstern Schlünden</l>
+        <l>Gemeinen Schauens, niedrigen Verstandes,</l>
+        <l>Ihr werdet nie, wie wir, das Seyn ergründen,</l>
+        <l>Den Regenbogen seines Wolkenlandes!!! –</l>
+        <dateline>Am verhängnißvollen 24sten Februar.</dateline>
+      </div>
+      <pb n="13"/>
+      <castList>
+        <head>Personen:</head>
+        <castItem>Roderich von Taubenklee, № I., ein Ritter, ein Herr, und vielleicht auch ein
+          Graf.</castItem>
+        <castItem>Roderich von Taubenklee, № II., ebenfalls ein Ritter, und ein Fremder ohne
+          Namen.</castItem>
+        <castItem>Kunigunde, eigentlich nicht die Kunigunde, welche man meint, aber deßwegen doch
+          eine Kunigunde; Roderichs des ersten Gemahlinn.</castItem>
+        <castItem>Moralino, das gute Prinzip, als Eremit.</castItem>
+        <castItem>Veit, ein erzählender Knappe.</castItem>
+        <castItem>Keine Bauern und Bäuerinnen.</castItem>
+        <castItem>Kein Volk.</castItem>
+        <castItem>Keine tanzenden Personen.</castItem>
+        <pb n="14"/>
+        <castGroup>
+          <roleDesc>Das Schicksal, als:</roleDesc>
+          <castItem>Strumpf</castItem>
+          <castItem>Bedienter</castItem>
+          <castItem>Ahnung</castItem>
+          <castItem>Dolch</castItem>
+          <castItem>Herr Fad – Dumm</castItem>
+          <castItem>ein türkischer Handelsmann</castItem>
+          <castItem>Hund</castItem>
+          <castItem>Schicksal.</castItem>
+        </castGroup>
+      </castList>
+      <set>
+        <p>Die Scene spielt in, um, bei, auf und neben Roderichs I. Burg.</p>
+      </set>
+    </front>
+    <pb n="15"/>
+    <body>
+      <div type="act">
+        <head>Erster Akt.</head>
+        <div type="scene">
+          <stage>Gothisches etwas düstres Zimmer in Roderichs I. Burg. Es ist Nachts 9 Uhr. Ein
+            Armleuchter mit Kerzen steht auf dem Tische. – Rechts an einem offenen Fenster sitzt
+            Kunigunde und strickt an einem außerordentlich langen Strumpfe.</stage>
+          <sp who="#kunigunde">
+            <stage>(Traurig.)</stage>
+            <lg>
+              <l>Ach! neun Jahre sind verflossen,</l>
+              <l>Seit ich Rodrichs Gattinn bin,</l>
+              <l>Und kein Thränchen ist geflossen,</l>
+              <l>Heiter stets die Sonn' uns schien;</l>
+              <l>Keine Plagen, keine Sorgen,</l>
+              <l>Und wie's heute war, ist's morgen.</l>
+              <l>Man steht auf, und legt sich nieder,</l>
+              <pb n="16"/>
+              <l>Ißt und trinket, trinkt und ißt,</l>
+              <l>Wäscht und biegelt, gähnt und nies't,</l>
+              <l>Schläft auf's neu' und wachet wieder; –</l>
+              <l>Nicht einmahl die kleinste Mahnung,</l>
+              <l>Die was hätte zu bedeuten,</l>
+              <l>Keine abgesprung'ne Saiten,</l>
+              <l>Gar kein Grauen, keine Ahnung!</l>
+              <l>Ist das nicht ein traurig Leben,</l>
+              <l>Wenn man nie, gar nie kann weinen?</l>
+              <l>Soll es denn für unser Einen</l>
+              <l>Etwa gar kein Schicksal geben?</l>
+              <stage>(betrachtet ihren Strumpf)</stage>
+              <l>Kunstwerk meiner schönen Hände,</l>
+              <l>Strumpf für Rodrichs große Füße,</l>
+              <l>Gehst ohn' alle Hindernisse</l>
+              <l>Denn auch du noch heut zu Ende?</l>
+              <l>Will denn von den Maschen allen –</l>
+              <l>Bin doch sonst nicht sehr geschickt, –</l>
+              <l>Auch nicht eine, – eine fallen? –</l>
+              <l>Schrecklich ist's, daß Alles glückt! –</l>
+            </lg>
+            <lg>
+              <l>Will ein kleines Liedel singen,</l>
+              <l>Weil ich eben so allein,</l>
+              <pb n="17"/>
+              <l>So was soll nicht übel seyn,</l>
+              <l>Und durch alle Nerven dringen;</l>
+              <l>Hab's in <emph>Werners Februar</emph>,</l>
+              <l>Oder wo es sonst noch war,</l>
+              <l>Selbst gelesen oft mit Grau'n; –</l>
+              <l>Wollen denn zum Singen schau'n!!</l>
+            </lg>
+            <lg>
+              <head>Lied.</head>
+              <stage>(in <foreign>minore</foreign> gehalten)</stage>
+              <l>Strümpfelein!</l>
+              <l>Strümpfelein!</l>
+              <l>Weiß und rein,</l>
+              <l>Schön und fein! –</l>
+              <l>Wirst bald umwehen</l>
+              <l>Die zarten Glieder,</l>
+              <l>Mit ihnen gehen</l>
+              <l>Dann auf und nieder,</l>
+              <l>O du mein</l>
+              <l>Strümpfelein!</l>
+              <l>Das wird dein</l>
+              <l>Antheil seyn.</l>
+            </lg>
+            <stage>(Eine Nadel bricht, und der Strumpf entfällt ihrer Hand, sie schreit laut
+              auf.)</stage>
+            <pb n="18"/>
+            <l>Ach! – die Nadel ist gebrochen! –</l>
+            <l>Ja, ein Zeichen sicherlich,</l>
+            <l>Daß vielleicht mein Roderich</l>
+            <l>Auf der Jagd den Fuß gebrochen.</l>
+            <stage>(freudig)</stage>
+            <l>Endlich gibt's etwas zu weinen,</l>
+            <l>Endlich doch ein klein Getümmel,</l>
+            <l>Dank dir Vater dort im Himmel!</l>
+            <l>Läß'st <emph>ein</emph> Unglück doch erscheinen,</l>
+            <l>Das zertrennet, was sich liebet,</l>
+            <l>Und die heitern Stunden trübet!</l>
+            <stage>(Man hört von außen Jagdgetöse und Hörnerton)</stage>
+            <l>Horch! Sie kommen von der Jagd,</l>
+            <l>Und mein theurer Gatte</l>
+            <l>Wird vermuthlich auf der Matte</l>
+            <l>Schon halbtodt dahergebracht!</l>
+            <stage>(Sie läuft freudig ans Fenster, blickt hinaus, und macht es dann traurig wieder
+              zu. Das Folgende sprechend)</stage>
+            <l>Nein, – o nein! es fehlt ihm nichts,</l>
+            <l>Und beim Schein des Mondenlichts</l>
+            <l>Seh' ich ihn auf seinem Schimmel</l>
+            <l>Fröhlich unter dem Gewimmel</l>
+            <pb n="19"/>
+            <l>Einziehn in den Burghof. – Ach!</l>
+            <l>Wieder kömmt kein Ungemach!!!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweite Scene.</head>
+          <stage>Kunigunde. Veit.</stage>
+          <sp who="#veit">
+            <speaker>Veit</speaker>
+            <stage>(tritt ein und verneigt sich vor Kunigunden).</stage>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="I">Rod'rich kömmt?</l>
+          </sp>
+          <sp who="#veit">
+            <speaker>Veit.</speaker>
+            <l part="F">Ja, Herrinn, eben.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="I">Schoßt ihr viel?</l>
+          </sp>
+          <sp who="#veit">
+            <speaker>Veit.</speaker>
+            <l part="F">In Ueberfluß</l>
+            <l>Reh' und Füchse; – doch <emph>ein</emph> Schuß</l>
+            <l>Ging uns selber bald ans Leben.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="I">Ei, potz Blitz!</l>
+          </sp>
+          <pb n="20"/>
+          <sp who="#veit">
+            <speaker>Veit.</speaker>
+            <l part="F">Frau Kunigunde!</l>
+            <l>Bald wär' Euer Roderich</l>
+            <l>Umgekommen jämmerlich;</l>
+            <l>Denn es war'ne heiße Stunde!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="I">Ei, erzähle!</l>
+          </sp>
+          <sp who="#veit">
+            <speaker>Veit.</speaker>
+            <l part="F">Ja sogleich!</l>
+            <l>Darum bin ich eben da,</l>
+            <l>Zu erzählen was geschah,</l>
+            <l>Habt Geduld, ich bitte Euch;</l>
+            <l>Die Erzählung ist hübsch lange,</l>
+            <l>Ob's gleich kurze Verse sind,</l>
+            <l>Sprechen sich doch nicht geschwind,</l>
+            <l>Schon bei'm Anfang wird mir bange;</l>
+            <l>Denn ich sag' es Euch <foreign>sub rosa</foreign>,</l>
+            <l>Lieber wäre mir die Prosa;</l>
+            <l>Doch in Versen hat der Herr</l>
+            <l>Mir das Ganze ausstudirt,</l>
+            <l>Und er schickt mich damit her,</l>
+            <pb n="21"/>
+            <l>Daß ich werde applaudirt:</l>
+            <l>Also hört, ich fange an,</l>
+            <l>Weiß, daß ich's wie Wasser kann.</l>
+            <stage>(Kunigunde setzt sich auf einen Stuhl, Veit stellt sich ganz vorn am
+              Souffleur-Kasten gegen das Publikum in Positur, zieht das Wamms aus, streift sich die
+              Hemdärmel auf, räuspert, schnaubt sich, und fängt dann im Predigertone an)</stage>
+            <l>Als der Morgen dämmernd graute,</l>
+            <l>Zogen wir hinaus zum Wald,</l>
+            <l>Wind pfiff uns entgegen kalt,</l>
+            <l>Und das Gras, das frisch bethaute,</l>
+            <l>Perlete im düstern Grün. –</l>
+            <l>Unser Graf ritt fort und schaute</l>
+            <l>Schweigend auf den Boden hin.</l>
+            <l>Weiß nicht, ob er etwas dachte,</l>
+            <l>Doch mir schien,</l>
+            <l>Daß sein Sinn</l>
+            <l>Ihn auf düstre Träume brachte,</l>
+            <l>Weil er mit dem Falben brummte,</l>
+            <l>Und manchmal recht schauerlich</l>
+            <l>In der Fistel so für sich</l>
+            <l>In den Wind das Liedel summte:</l>
+            <pb n="22"/>
+            <l>»Soll ich leben, soll ich sterben,</l>
+            <l>Soll mein Blut die Erde färben?« –</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>O, ich kenne dieses Lied,</l>
+            <l>Hör' ich's, wird die Brust mir enger,</l>
+            <l>'s hat's ein blinder Minnesänger</l>
+            <l part="I">Ihn gelehret.</l>
+          </sp>
+          <sp who="#veit">
+            <speaker>Veit.</speaker>
+            <l part="F">Nun so ritt</l>
+            <l>Er stets vorwärts, und nun dehnte</l>
+            <l>Sich vor uns der Wald ohn' Ende</l>
+            <l>Schauerlich und düster aus; –</l>
+            <l>Und es rauschte durch die Föhren</l>
+            <l>Mit so schrecklichem Gebraus,</l>
+            <l>Daß man kaum sein Wort konnt' hören.</l>
+            <l>Jetzo schlich ein Fuchs hervor,</l>
+            <l part="I">Und der Herr –</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(hastig einfallend).</stage>
+            <l part="F">Schoß ihn auf's Ohr?</l>
+          </sp>
+          <sp who="#veit">
+            <speaker>Veit</speaker>
+            <stage>(phlegmatisch).</stage>
+            <l>Nein, er fehlt' ihn. – Aus der Au'</l>
+            <pb n="23"/>
+            <l>Sprang dann eine wilde Sau,</l>
+            <l>Und der Herr – er fehlt sie wieder;</l>
+            <l>Sieh, da sprach voll Traurigkeit</l>
+            <l part="I">Er:</l>
+            <stage>(mit grauenvollem Tone)</stage>
+            <l part="F">Streck <emph>ich</emph> kein Thierchen heut</l>
+            <l>In den Sand,</l>
+            <l>Streckt die Hand</l>
+            <l>Meines Schicksals <emph>mich</emph> wohl nieder! –</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Ha! welch' Ahnung hatte er?</l>
+          </sp>
+          <sp who="#veit">
+            <speaker>Veit.</speaker>
+            <l>Ah was Ahnung? – Solcher Sachen</l>
+            <l>Muß ein kluger Mensch nur lachen,</l>
+            <l>Und das thaten wir auch sehr.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="I">Dumme Klötze!</l>
+          </sp>
+          <sp who="#veit">
+            <speaker>Veit.</speaker>
+            <l part="F">Seit zum Schmause</l>
+            <l>Ich in unsers Jägers Hause</l>
+            <l>Einst geladen war, und mir</l>
+            <pb n="24"/>
+            <l>Ahnte, daß mich sicher hier</l>
+            <l>Guter Wein und Fraß erwarte,</l>
+            <l>Und ich dennoch nichts bekam,</l>
+            <l>Als 'nen Krätzer, ganz infam,</l>
+            <l>Und 'ne Semmel, eine harte,</l>
+            <l>Trau' ich keiner Ahnung mehr.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="I">Nun, nur weiter!</l>
+          </sp>
+          <sp who="#veit">
+            <speaker>Veit.</speaker>
+            <l part="F">Langsam, Frau!</l>
+            <l>Die Erwartung recht zu spannen,</l>
+            <l>Geht es nicht so hau, hau, hau!</l>
+            <l>Fährt man langsam nur von dannen.</l>
+            <l>Also, daß ich weiter sag':</l>
+            <l>Jetzo sprang – mich faßt ein Schauer –</l>
+            <l>Ganz kohlschwarz, wie in der Trauer,</l>
+            <l>Aus dem Busch ein großer Bock;</l>
+            <l>Seine Flammenaugen glüh'n,</l>
+            <l>Dicht war ganz der Kerl behaart,</l>
+            <l>Und sein Bart</l>
+            <l>Reichte bis zur Erde hin. –</l>
+            <pb n="25"/>
+            <l>Und Herr Rod'rich sah ihn stehn,</l>
+            <l>Und das tödtliche Geschoß</l>
+            <l>Legt er an, – es blitzt vom Schloß,</l>
+            <l>Und das Blei flog aus dem Rohr,</l>
+            <l>Und ein – Mäh!! schlug an sein Ohr.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Also schoß er einen Bock?</l>
+          </sp>
+          <sp who="#veit">
+            <speaker>Veit.</speaker>
+            <l>Nein, nicht ganz,</l>
+            <l>Traf ein Schrot ihn nur in'n Schwanz. –</l>
+            <l>Aber nun erst ward das Thier</l>
+            <l>Wüthend, mit den Vorderfüßen</l>
+            <l>Sah ich es den Herrn umschließen,</l>
+            <l>Kalt lief's über'n Rücken mir;</l>
+            <l>Denn es war, als ob der Herr</l>
+            <l>Und der Bock <emph>ein</emph> Mensch nur wär',</l>
+            <l>So fest waren sie umschlungen. –</l>
+            <l>Wir sahn zu dem Kampf von fern,</l>
+            <l>Keiner half aus Schreck dem Herrn,</l>
+            <l>Doch wir schrie'n aus vollen Lungen.</l>
+          </sp>
+          <pb n="26"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>O ihr treuen Diener ihr!</l>
+          </sp>
+          <sp who="#veit">
+            <speaker>Veit.</speaker>
+            <l>Jetzo war</l>
+            <l>Auf dem Gipfel die Gefahr,</l>
+            <l>Oberhand gewann das Thier,</l>
+            <l>Brauchte seiner Hörner Kraft,</l>
+            <l>Stieß Herrn Roderich zur Erde.</l>
+            <l><emph>Der</emph>, mit flehender Gebehrde,</l>
+            <l>Rief in höchster Leidenschaft:</l>
+            <lg>
+              <l>»Ach, warum hat Kunigunde</l>
+              <l>Nie mir Hörner aufgesetzt?</l>
+              <l>Brauchen könnt' ich gut sie jetzt,</l>
+              <l>In der bangen Schreckensstunde.«</l>
+            </lg>
+            <l>Kaum war dieses Wörtchen: <emph>Hörner</emph>!</l>
+            <l>Seinem Munde jetzt entklungen,</l>
+            <l>Da kam durch Gestripp und Dörner</l>
+            <l>Schnell ein Ritter vorgesprungen,</l>
+            <l>Und ein Diener hinter ihm,</l>
+            <l>Der ihn auf den Bock hinwies,</l>
+            <l>Und der Fremde voller Grimm</l>
+            <l part="I">Stürzt auf's Unthier hin.</l>
+          </sp>
+          <pb n="27"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="F">O Himmel!</l>
+            <l>Schütz' den Fremden im Getümmel.</l>
+          </sp>
+          <sp who="#veit">
+            <speaker>Veit.</speaker>
+            <l>Er riß</l>
+            <l>Aus einander sie, erlegte</l>
+            <l>Nun den Bock mit seinem Spieß,</l>
+            <l>Daß er zuckend nur sich regte,</l>
+            <l>Und nur noch den Bart bewegte.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(Athem schöpfend).</stage>
+            <l part="I">Ah!</l>
+          </sp>
+          <sp who="#veit">
+            <speaker>Veit.</speaker>
+            <l part="F">Was weiter noch geschah,</l>
+            <l>Das versteht sich schon. – Voll Lust,</l>
+            <l>Flog der Herr nun an die Brust</l>
+            <l>Seines Retters. – Ein Hurrah</l>
+            <l>Rief der Troß,</l>
+            <l>Und ins Schloß</l>
+            <l>Zogen Alle wir voll Freude,</l>
+            <l>Und jetzt steh'n sie unten Beide. – –</l>
+            <pb n="28"/>
+            <l>Die Erzählung ist jetzt aus,</l>
+            <l>Sie war lang und schauerlich;</l>
+            <stage>(ans Parterre)</stage>
+            <l>Drum, Verehrte! bitte ich</l>
+            <l>Jetzt am Schlusse um Applaus.</l>
+            <stage>(Er zieht sein Wamms wieder an.)</stage>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(heftig).</stage>
+            <l>Eil' hinab in schnellem Lauf,</l>
+            <l>Bring den Fremden mir herauf,</l>
+            <l>Will ihm fallen um den Hals</l>
+            <l>Und ihn küssen, <stage>(gezogen)</stage> allenfalls</l>
+            <l>Kann auch Rodrich mit ihm kommen.</l>
+            <stage>(Veit geht ab.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritte Scene.</head>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(allein).</stage>
+            <l>Ach! wie bin ich so beklommen!</l>
+            <l>Dieser Fremd' ist sicherlich</l>
+            <l>Schöner als mein Roderich,</l>
+            <l>Und – – Ha, welche Ahnung kriecht</l>
+            <l>Mir um's Herz? und welch Gefühl</l>
+            <pb n="29"/>
+            <l>Preßt mich? – Wird mir doch so schwül!</l>
+            <l>Die Empfindung reim' ich nicht.</l>
+            <stage>(nachdenkend)</stage>
+            <l>Daß der Mann den Bock erstach,</l>
+            <l>Als mein Mann von Hörnern sprach,</l>
+            <l>Daß er jetzt in's Schloß ihn bringt,</l>
+            <l>Eben heute,</l>
+            <l>Wo mir jede Saite</l>
+            <l>Meines Herzens froh erklingt, –</l>
+            <l>Dies Verlangen, das ich fühle,</l>
+            <l>Und der Fremde – und der Strumpf, –</l>
+            <l>Ja, es ahnet mir schon dumpf:</l>
+            <l>Heute winkt der schönste Trumpf</l>
+            <l>In des Schicksals Zauberspiele.</l>
+            <stage>(Lärmen von außen)</stage>
+            <l>Still! man kömmt! In welcher Lage</l>
+            <l>Trifft er mich? – Im Nachtgewand,</l>
+            <l>Welche Schand'!</l>
+          </sp>
+        </div>
+        <pb n="30"/>
+        <div type="scene">
+          <head>Vierte Scene.</head>
+          <stage>Das Schicksal (als Bedienter), gleich darauf Roderich I., Roderich II. und
+            Veit.</stage>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Das Schicksal</speaker>
+            <stage>(reißt zuerst die Thür auf, und spricht im Geistertone zu Kunigunden)</stage>
+            <l><emph>Nacht</emph>gewand führt dich zum <emph>Tage</emph>!</l>
+            <stage>(dann beugt es sich demüthig vor den Eintretenden.)</stage>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <stage>(tritt zuerst ein und will Kunigunden grüßen, erblickt sie aber kaum, so bleibt
+              er schon starr und in ihrem Anblick versunken stehen, mit dem Ausruf:)</stage>
+            <l part="I">Das ist <emph>sie</emph>!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(eben so).</stage>
+            <l part="M"><emph>Er</emph> ist's!</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Das Schicksal.</speaker>
+            <stage>(indem es mit den Händen ein Zeichen in der Luft macht)</stage>
+            <l part="F">Du Blitz!</l>
+            <l>Der bei unsern neuen Dichtern</l>
+            <l>Hin und herfährt aus Gesichtern,</l>
+            <l>Der die Herzen jäh entzündet,</l>
+            <pb n="31"/>
+            <l>Doch anstatt sie zu verbrennen,</l>
+            <l>Sie verblindet,</l>
+            <l>Fahr' herab, und thue heut</l>
+            <l>Deine Schuldigkeit!</l>
+            <stage>(Zwei Blitze fahren von oben herab, der eine auf Kunigunden, der andere auf
+              Roderich II.)</stage>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <stage>(auf sein Herz fühlend, in tiefem Tone)</stage>
+            <l part="I">Ha!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <stage>(eben so und in hohem Tone)</stage>
+            <l part="M">Ha!</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <stage>(beleidigt, daß sein Weib ihn noch nicht bewillkommt hat)</stage>
+            <l part="F"><foreign>Servus</foreign>, Kunigunde!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(für sich).</stage>
+            <l>'s wird ganz bitter mir im Munde.</l>
+            <stage>(zu Roderich I. naiv)</stage>
+            <l>Du warst heut ein schlechter Schütz',</l>
+            <l part="I">Wie ich höre?</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l part="F">'s ging nicht gut,</l>
+            <pb n="32"/>
+            <l>Wär' der Fremde nicht gewesen,</l>
+            <l>Wär' dein Roderich verloren,</l>
+            <l>Läge da in seinem Blut.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(zu Roderich II.)</stage>
+            <l>Ach, wie soll ich Euch wohl danken,</l>
+            <l>Junger schöner Rittersmann?</l>
+            <l>Alles was ich geben kann –</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <stage>(leise zu ihr)</stage>
+            <l>Weib! tritt doch nicht aus den Schranken</l>
+            <l part="I">Guter Sitten! –</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="F">Sei doch still,</l>
+            <l>Wenn das Schicksal es so will,</l>
+            <l>Daß ich Arme schlecht soll handeln,</l>
+            <l>Auf dem Weg des Lasters wandeln,</l>
+            <l>Darf ich wohl mich sträuben – wanken?</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal</speaker>
+            <stage>(bei Seite).</stage>
+            <l>Das ist doch noch eine Frau,</l>
+            <l>Die sich hingiebt mit Geduld,</l>
+            <l>Diese scheuet nicht die Schuld,</l>
+            <l>Geht mit Mördern auch zur Trau.</l>
+          </sp>
+          <pb n="33"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(zum Fremden).</stage>
+            <l>Sprecht! Ihr seyd gewiß aus Norden?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l part="I">Nein.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="F">O, das ist Jammerschade,</l>
+            <l>Denn dann wär' ohn' alle Gnade</l>
+            <l>Hier so etwas los geworden. –</l>
+            <l>Ihr seht mich verwundert an,</l>
+            <l>Könnt der Rede Sinn nicht fassen? –</l>
+            <l>Ja, – zwei Pole, die sich hassen</l>
+            <l>Sollen, und sich dennoch nahn,</l>
+            <l>Das ist ganz was Prächt'ges das! –</l>
+            <l>Da wird immer abgestoßen,</l>
+            <l>Angezogen wieder dann,</l>
+            <l>Und das Alles führt zum Großen. –</l>
+            <l part="I">Sprecht, welch Land gebahr Euch?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l part="F">Osten,</l>
+            <l>'s ist von hier wohl hundert Posten.</l>
+          </sp>
+          <pb n="34"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Also auch nicht aus dem Süd? –</l>
+            <l>Lieber Freund, das heißt nicht viel,</l>
+            <l>Wer nicht friert und auch nicht glüht,</l>
+            <l>Paßt nicht recht in's Trauerspiel. –</l>
+            <l>In dem West- und Osterlande</l>
+            <l>Geht ja die Natur</l>
+            <l>Stets die Mittelstraße nur; –</l>
+            <l>Willst du fallen, steh' am Rande,</l>
+            <l>Nicht so in der Mitte drin. –</l>
+            <l>Sagt mir, wenn Ihr's seyd im Stande,</l>
+            <l part="I">Sagt, wer seyd Ihr?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l part="F">Wer ich bin?</l>
+            <l>So ein Mann, Frau Kunigunde,</l>
+            <l part="I">Der sich –</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Das Schicksal.</speaker>
+            <stage>(ihm die Hand auf den Mund legend)</stage>
+            <l part="F">Halt! noch ist die Stunde</l>
+            <l>Nicht gekommen, die am Munde</l>
+            <l>Sprengt das Schloß und ihn befreit,</l>
+            <pb n="35"/>
+            <l>Darum Rodrich sey gescheidt,</l>
+            <l>Willst du alles jetzt erklären,</l>
+            <l>Und dadurch dem schönen Unglück,</l>
+            <l>Das recht bald hereinbricht, wehren</l>
+            <l>Und mir meinen Plan verkehren?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Nein, o nein, das will ich nicht.</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Das Schicksal.</speaker>
+            <l part="I">Nun so schweig!</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l part="F">Es sey mir Pflicht.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Was du bist, und welches Land</l>
+            <l>Dich gebar, das kann hier eben</l>
+            <l>Wahrlich keinen Ausschlag geben,</l>
+            <l>Du erhieltest mir das Leben,</l>
+            <l>Darum reich' ich dir die Hand,</l>
+            <l>Und wenn du auch alle Freuden</l>
+            <l>Künft'ger Tage mir vergiftest,</l>
+            <l>Eine böse Ehe stiftest,</l>
+            <pb n="36"/>
+            <l>Folterst mich mit allen Leiden,</l>
+            <l>Zu, nur zu! wer kann es hindern?</l>
+            <l>Wer kann mit dem Schicksal streiten,</l>
+            <l>Das uns macht zu braven Leuten,</l>
+            <l>Oder zu den ärgsten Sündern?</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal</speaker>
+            <stage>(bei Seite).</stage>
+            <l>Das ist auch ein starker Geist,</l>
+            <l>Gut zum Galgen und zum Rade; –</l>
+            <l>Schade ist es, Jammerschade,</l>
+            <l>Daß der Mann nicht anders heißt.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Was ist weiter noch zu thun?</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>'s Beste ist, wir gehen ruhn,</l>
+            <l>Führt den Fremden in das Zimmer,</l>
+            <l part="I">Wo die Bilder hängen.</l>
+            <stage>(sich besinnend)</stage>
+            <l part="F">Nein,</l>
+            <l>Könnte wohl zu früh noch seyn,</l>
+            <l>Dazu ist es Zeit noch immer!</l>
+            <l>Gebet ihm die grüne Kammer.</l>
+          </sp>
+          <pb n="37"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(für sich).</stage>
+            <l part="I">Grün ist Hoffnung!</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l part="F">Schlafet wohl!</l>
+            <l>Dieser Tag ist freudenvoll,</l>
+            <l>Morgen kommt vielleicht der Jammer.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Wer denkt an die nächste Stunde?</l>
+            <l>Lebet wohl, Herr Rittersmann;</l>
+            <l>Zünde doch die Kerze an,</l>
+            <l>Leucht' dem Fremden, Kunigunde!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Ach wie gern, <stage>(für sich)</stage> o sel'ge Stunde!</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <stage>(nimmt ihr den Leuchter aus der Hand, und stellt ihn wieder auf den
+              Tisch)</stage>
+            <l>Wozu soll die Kerze taugen?</l>
+            <l>Leuchten werden Eure Augen.</l>
+          </sp>
+          <pb n="38"/>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal</speaker>
+            <stage>(für sich).</stage>
+            <l>Geht nur fort, so geht es gut,</l>
+            <l>Strömen seh' ich schon das Blut.</l>
+            <stage>(Roderich II. und Kunigunde durch die Mittel-, Roderich I. durch die Seitenthür
+              ab.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfte Scene.</head>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Das Schicksal</speaker>
+            <stage>(allein).</stage>
+            <stage>(reibt sich fröhlich die Hände)</stage>
+            <l>'s geht Alles so herrlich,</l>
+            <l>So trefflich zusammen,</l>
+            <l>Dem heutigen Tage</l>
+            <l>Wird Elend entstammen,</l>
+            <l>Und Klagen und Sehnen</l>
+            <l>Und Seufzer und Thränen</l>
+            <l>Sie rücken schon an.</l>
+            <l>Der Eine wird sicher</l>
+            <l>Den Andern erstechen,</l>
+            <l>Der Dritte wird rächen</l>
+            <l>Die Mordthat nach Pflicht,</l>
+            <l>Und liefert sich selber</l>
+            <pb n="39"/>
+            <l>Auf's Hochgericht.</l>
+            <l>Kurz all diese Leute,</l>
+            <l>Die durch meine Macht</l>
+            <l>Ich zusammengebracht,</l>
+            <l>Sind Galgengeweihte. –</l>
+            <l>Drum freut Euch ihr Alle,</l>
+            <l>Es gibt hier viel Schauer,</l>
+            <l>Und all diese Trauer</l>
+            <l>Schließt sich mit dem Falle</l>
+            <l>Des Stamms Taubenklee,</l>
+            <l>Das versteht sich <foreign>per se</foreign>;</l>
+            <l>Und am Ende sind alle doch unschuldig dran,</l>
+            <l>Denn ich, das Schicksal, allein hab's gethan.</l>
+            <stage>(ernsthaft)</stage>
+            <l>Wer kann das Schicksal wohl genugsam loben,</l>
+            <l>Das schreitet durch das hohe Trauerspiel?</l>
+            <l>Es gab in neuster Zeit die schönsten Proben,</l>
+            <l>Daß jede That, die es vollbracht, gefiel.</l>
+            <l>Man läßt es durch fünf Acte wüthen, toben,</l>
+            <l>Sein Hebel ist der Mord, Schaffot sein Ziel,</l>
+            <l>Banditen, Räuber, die mit Dolchen drohen,</l>
+            <l>Sind seine höchsten, glänzendsten Heroen.</l>
+            <pb n="40"/>
+            <l>Drum geb' ich meinen Stand nicht hin für Kronen,</l>
+            <l>Und bin recht froh, daß ich ein Schicksal bin;</l>
+            <l>Wohin ich trete, darf ich nichts verschonen,</l>
+            <l>Wer fodert, wo ich handle, einen Sinn?</l>
+            <l>Befehl' ich, nahen sich die fernsten Zonen,</l>
+            <l>Die Einen frieren, und die Andern glühn.</l>
+            <l>Kurz, liebe Herrn und Fraun, sie werden sehen,</l>
+            <l>Es wird den Leuten heut noch schlecht ergehen.</l>
+            <stage>(stolzirt ab.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Sechste Scene.</head>
+          <stage>Garten, vom Monde düster beleuchtet. Roderich II. und Kunigunde treten ein im
+            Gespräche; letztere strickt an dem großen Strumpf ununterbrochen fort, was auch immer
+            gesprochen wird.</stage>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Immer dunkler wird der Garten,</l>
+            <l>Immer finstrer wird die Nacht,</l>
+            <l>Und die Sterne sehn herunter</l>
+            <l>Wie mit vielen tausend Augen</l>
+            <l>Auf die Waller durch das Grün.</l>
+            <pb n="41"/>
+            <l>Ihr allein nur, schöne Gräfinn,</l>
+            <l>Senkt die beiden schönsten Sterne</l>
+            <l>Auf den Strumpf in Eurer Hand.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Nicht, mein edler Fremdling, schmähet,</l>
+            <l>Wenn Ihr mich verlegen sehet,</l>
+            <l>Gerne gäb' ich jetzo schon</l>
+            <l>Eurer schönen That den Lohn;</l>
+            <l>Gerne gäb' ich Euch mein Herz,</l>
+            <l>Gäb' Euch meine glüh'ndste Liebe,</l>
+            <l>Klopfte nicht in mir die Furcht,</l>
+            <l>Daß, so früh sich zu ergeben,</l>
+            <l>Doch nicht ganz sich dürfte schicken.</l>
+            <l>Darum seht Ihr mich so fleißig</l>
+            <l>An dem großen Strumpfe stricken,</l>
+            <l>Darum darf ich es nicht wagen,</l>
+            <l>Meine Augen aufzuschlagen,</l>
+            <l>Auf zu dir, zu dem's mich zieht,</l>
+            <l>Und von dem's mich wieder stoßet.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Nun wohlan, so will ich warten, –</l>
+            <pb n="42"/>
+            <l>Will noch harren und mich sehnen,</l>
+            <l>Will mit Augen voller Thränen</l>
+            <l>Noch vor Euch, der Wunderschönen,</l>
+            <l>Meine Tage hier vergähnen; –</l>
+            <l>Doch soll ich geneigt Euch wähnen</l>
+            <l>Meinen Wünschen, meinem Sehnen,</l>
+            <l>Laßt mich an ein Zeichen lehnen,</l>
+            <l>Daß Ihr niemals, gleich Hyänen,</l>
+            <l>Meine Liebe werdet höhnen,</l>
+            <l>Daß ihr, wenn mit wilden Mähnen</l>
+            <l>Kömmt der Tod mich wegzudröhnen,</l>
+            <l>Und ich muß im Grab mich dehnen,</l>
+            <l>Ihr Euch niemals wollt gewöhnen,</l>
+            <l>Noch den andern Erdensöhnen</l>
+            <l>Eure Seufzer hinzustöhnen.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Wie der Segler auf dem Meere</l>
+            <l>Sieht vor Wasser nicht das Meer,</l>
+            <l>Wie der Schiffer in den Lüften</l>
+            <l>Sieht vor Winden nicht die Luft,</l>
+            <l>Wie der Wandler in dem Walde</l>
+            <pb n="43"/>
+            <l>Sieht vor Bäumen nicht den Wald,</l>
+            <l>Also ich vor lauter Worten</l>
+            <l>Deine Rede nicht versteh.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Nun so höre klar und deutlich,</l>
+            <l>Die du leider nicht verstehest,</l>
+            <l>Die poetische Bedeutung,</l>
+            <l>Die aus Unsinn lieblich klingt,</l>
+            <l>Höre klar, wie Prosa, mich:</l>
+            <l>Gebe mir ein Liebeszeichen,</l>
+            <l>Als ein Zeichen deiner Liebe,</l>
+            <l>Als ein Zeichen deiner Treue,</l>
+            <l>Daß du ewig treu mir bleibst.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Was ich habe will ich geben,</l>
+            <l>Aber leider hab' ich nichts.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Wie, du hättest nichts, du Falsche,</l>
+            <l>Ist denn gar nichts dieser Strumpf?</l>
+          </sp>
+          <pb n="44"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Fodre Alles, mehr als Alles,</l>
+            <l>Diesen Strumpf nur fodre nicht.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich</speaker>
+            <stage>(in Wuth ausbrechend).</stage>
+            <l>Nicht den Strumpf? warum den Strumpf nicht?</l>
+            <l>Jetzo hab' ich dich erkannt,</l>
+            <l>Klar stehst du vor meinen Augen,</l>
+            <l>Klar wie Sonnenlicht am Himmel,</l>
+            <l>Wenn es glänzt um Mitternacht –</l>
+            <stage>(sich verbessernd)</stage>
+            <l>Wenn es glänzt zur Mittagszeit. –</l>
+            <l>Einem Andern willst du geben,</l>
+            <l>Was du mit der Hand berühret,</l>
+            <l>Willst vergeben</l>
+            <l>Ihm mein Leben,</l>
+            <l>Willst ihm schenken meinen Tod?</l>
+            <stage>(tritt auf die andere Seite des Prosceniums und spricht vor sich hin, mit voller
+              Wehmuth)</stage>
+            <l>Nun, so ist auch das verschwunden,</l>
+            <l>Auch das Letzte will nicht gehn,</l>
+            <l>Wenig hatt' ich frohe Stunden,</l>
+            <l>Ach, sie waren gar so schön,</l>
+            <pb n="45"/>
+            <l>Heilen wollten meine Wunden,</l>
+            <l>Doch es sollte nicht geschehn;</l>
+            <l>Soll mein Herz sich nicht empören,</l>
+            <l>Mir nicht soll der Strumpf gehören?</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(nähert sich ihm voll Wehmuth).</stage>
+            <l>Seh' ich deine Thränen fleußen,</l>
+            <l>Will's das Herze mir zerreißen,</l>
+            <l>Warum kann ich's nicht gewähren?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Das ist's, was wir Beide fragen.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Und was keines weiß zu sagen.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Darum gib, o gib Geliebte!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Nimmermehr! ha, nimmermehr!</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Sieh, ein Strumpf, wenn noch so groß,</l>
+            <l>Ist doch weiter nichts, als Strumpf,</l>
+            <pb n="46"/>
+            <l>Mir nur ist er darum theuer,</l>
+            <l>Weil ihn deine Hand gekettet.</l>
+            <l>Seh' ich so den weißen Faden</l>
+            <l>Schlingen sich um deine Finger,</l>
+            <l>Seh' ich wie die blanke Nadel</l>
+            <l>Masche still an Masche reiht,</l>
+            <l>Seh' ich wie du die gefall'nen</l>
+            <l>Fleißig freundlich auf dann hebest,</l>
+            <l>Daß sie tiefer nicht und tiefer</l>
+            <l>Sinken <emph>zum</emph> und <emph>ins</emph> Verderben,</l>
+            <l>Denke ich an mich, Geliebte,</l>
+            <l>Und ich seh' ein klares Gleichniß</l>
+            <l>Meiner selbst in diesem Strumpf,</l>
+            <l>Meine Wünsche seh' ich drinnen,</l>
+            <l>Meine Freuden und mein Glück.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Sag' wie? was? warum? weßwegen?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Horch! jetzt kömmt ein schönes Gleichniß: –</l>
+            <l>Ganz wie diesen Faden kannst du</l>
+            <l>Wickeln mich um deinen Finger;</l>
+            <pb n="47"/>
+            <l>Wie sich still nach deinem Willen</l>
+            <l>All die tausend Maschen reihen,</l>
+            <l>Reihen sich nach deinem Wunsche</l>
+            <l>Die Gedanken auch in mir;</l>
+            <l>Und wie du gefall'ne Maschen</l>
+            <l>Wieder auf zu dir erhebest,</l>
+            <l>Also, wenn auf Augenblicke</l>
+            <l>Ab von dir mein Sinn sich kehret,</l>
+            <l>Kehrt er, wenn an dich ich denke,</l>
+            <l>Wieder schnell zu dir zurück.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Gerne würd' ich dir ihn geben,</l>
+            <l>Wenn nur etwas draus erfolgte,</l>
+            <l>Wenn er uns ins Unglück brächte,</l>
+            <l>Wenn das Schicksal ihn erkoren</l>
+            <l>Als ein Werkzeug seiner Macht,</l>
+            <l>Unser Haus dadurch zu stürzen,</l>
+            <l>Wenn ich dir ihn schenken thu! –</l>
+            <l>Wenn ein' Ahnung, wenn ein Traum</l>
+            <l>Hätt' Intresse ihm verschafft!</l>
+            <l>Aber so ein simples Ding,</l>
+            <pb n="48"/>
+            <l>Das aus Wolle und aus Prosa</l>
+            <l>Einzig ist zusammgewoben,</l>
+            <l>Was hat dieses für Bedeutung?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Hast du gar nichts denn geträumt,</l>
+            <l>Was etwa hieher sich reimt?</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Von der Wirthschaft träum' ich nur,</l>
+            <l>Von den Hühnern, von den Gänsen,</l>
+            <l>Von den Knechten, von den Mägden,</l>
+            <l>Neuen Kleidern, neuen Hüten,</l>
+            <l>Von den Strümpfen träumt mir nichts.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Halt! ich hab' schon einen Traum.</l>
+            <l>Heute sind es <emph>sieben</emph> Wochen –</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l><emph>Sieben</emph> Wochen! o vortrefflich!</l>
+            <l>Diese Zahl ist voll Bedeuten</l>
+            <l>Seit der Griechen alten Zeiten,</l>
+            <pb n="49"/>
+            <l>Und grad' heute sieben Wochen</l>
+            <l>Fing auch ich den Strumpf zu stricken</l>
+            <l part="I">An.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l part="F">Da warst du nicht sehr fleißig! –</l>
+            <l>Doch horch auf und schweige still. –</l>
+            <stage>(pathetisch)</stage>
+            <l>Heute sind es sieben Wochen,</l>
+            <l>Als ich schlafend lag im Bette;</l>
+            <l>Meine frohen Kinderjahre</l>
+            <l>Stiegen mir im Traume auf.</l>
+            <l>Einen Garten sah ich blühen,</l>
+            <l>Wie gekeimt im milden Süden,</l>
+            <l>Wie gereift im Orient;</l>
+            <l>Goldne Bäume hoben sich</l>
+            <l>Hoch und schlank mit Silberästen</l>
+            <l>In die blaue Himmelsluft,</l>
+            <l>Und am fernen Himmelsbogen</l>
+            <l>Brannten tausend goldne Monde,</l>
+            <l>Millionen Sternenheere</l>
+            <l>In die schwarze Nacht hinein.</l>
+            <pb n="50"/>
+            <l>Und von Mond zu Mond geschäftig</l>
+            <l>Sah ich eine <emph>Spinne</emph> kriechen,</l>
+            <l>Webend Gold- und Silberfäden</l>
+            <l>Durch die breite Himmelskuppel; –</l>
+            <l>Und noch eh' ich mir's versah,</l>
+            <l>War ein groß Gewebe fertig,</l>
+            <l>Drin die Spinne – ha! ihr Götter!</l>
+            <l>Nein, o nein, ich irre nicht,</l>
+            <l>Es war dein, ja dein Gesicht,</l>
+            <l>Das die Spinne angenommen,</l>
+            <l>Das ich damals schon ersah.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Ach wie schön! – Erzähle fort,</l>
+            <l>O nicht fürchte ich die Spinnen,</l>
+            <l>Wenn von ihnen man erzählt.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>In dem Neste saß die Spinne</l>
+            <l>Lauernd auf 'nen guten Fang,</l>
+            <l>Und sie wartete nicht lang.</l>
+            <l>Denn es kam hervorgeflogen</l>
+            <l>Lustiglich ein Maienkäfer.</l>
+            <pb n="51"/>
+            <l>Kaum hatt' ihn die Spinn' erblickt,</l>
+            <l>Schoß sie schnell auf ihn hinzu,</l>
+            <l>Fing ihn listig in ihr Netz.</l>
+            <l>So einander hingegeben,</l>
+            <l>Lebten sie ein selig Leben; –</l>
+            <l>Doch da hob sich Sturmeswetter,</l>
+            <l>Daß die Erde wollte beben</l>
+            <l>Und der Himmel stürzen ein,</l>
+            <l>Streifend durch die Silberblätter</l>
+            <l>Zog der Sturm mit ehrnem Brillen,</l>
+            <l>Mond und Sterne löschten aus,</l>
+            <l>Und in diesem tollen Graus</l>
+            <l>Schwirrte wild die Fledermaus,</l>
+            <l>Schrieen Raben, krächzten Eulen,</l>
+            <l>Donnerstosen, Windesheulen,</l>
+            <l>Blitzeszucken hin und her,</l>
+            <l>Nachtgespenster wimmerten,</l>
+            <l>Meer und Wolken sprühten Flammen,</l>
+            <l>Bis der Garten stürzt zusammen,</l>
+            <l>Und zusammen war geschmolzen,</l>
+            <l>Was die Liebe hat gewoben,</l>
+            <l>Und die Liebe hat bewahrt.</l>
+            <pb n="52"/>
+            <l>Spinngewebe war das Ganze,</l>
+            <l>War vergänglich wie ein solches,</l>
+            <l>Auch die Liebe zog es mit,</l>
+            <l>Drob so laut die Hölle lachte,</l>
+            <l>Daß ich drüber schnell erwachte.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Schaurig ist der Traum und lieblich,</l>
+            <l>Schrecklich ist er, darum schön,</l>
+            <l>Deutlich ist er auszulegen,</l>
+            <l>Und er geht auch sicher aus,</l>
+            <l>Setzen könnt' ich drauf fünf Nummern.</l>
+            <l>Freue dich mit mir, Geliebter!</l>
+            <l>Denn wir werden untergehn.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich</speaker>
+            <stage>(zuthunlich).</stage>
+            <l>Wär' es aber denn nicht besser,</l>
+            <l>Lebten froh wir unsrer Liebe?</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Nein, o nein, wir müssen sterben,</l>
+            <l>Unser ganzes Haus verderben,</l>
+            <l>Ich, ein Stoff zum Trauerspiel,</l>
+            <l>O glückselig, herrlich Ziel!</l>
+            <pb n="53"/>
+            <stage>(Sie hat bis jetzt ununterbrochen fortgestrickt, nun schließt sie den
+              Strumpf)</stage>
+            <l>Sieh, jetzt ist der Strumpf geschlossen,</l>
+            <l>Und vollendet ist das Werk.</l>
+            <stage>(starrt auf den Strumpf mit tiefem Nachsinnen)</stage>
+            <l>Heute sind es sieben Wochen,</l>
+            <l>Seit ihm jener Traum geworden,</l>
+            <l>Auch sind's heute sieben Wochen,</l>
+            <l>Seit den Strumpf ich angefangen,</l>
+            <l>Und in diesem Augenblicke,</l>
+            <l>Wo den Traum er mir erzählt,</l>
+            <l>Ist vollendet auch der Strumpf! –</l>
+            <l>Alles, alles trifft zusammen,</l>
+            <l>Jene dunkeln Mächte winken,</l>
+            <l>Und im Innern tönt's mir dumpf:</l>
+            <l><emph>Dieser</emph> ist ein Schicksalsstrumpf!</l>
+            <stage>(entschlossen zu Roderich)</stage>
+            <l>Darum, Theurer, nimm ihn hin,</l>
+            <l>Mog' er uns viel Unheil bringen,</l>
+            <l>Beid' uns ins Verderben stürzen!</l>
+            <stage>(Roderich empfängt knieend und feierlich den Strumpf)</stage>
+          </sp>
+          <pb n="54"/>
+          <sp who="#roderich_ii">
+            <speaker>Roderich</speaker>
+            <stage>(den Strumpf mit stürmischem Entzücken an sich drückend)</stage>
+            <l>Glühende Blumen und blühende Sterne!</l>
+            <l>Hauchet mich an mit dem duftigen Thau,</l>
+            <l>Sendet Zephyre aus kühliger Ferne,</l>
+            <l>Labenden Athem aus rosiger Au,</l>
+            <l>Daß sie die inneren Gluthen mir kühlen,</l>
+            <l>Daß ich mich seliger selig darf fühlen,</l>
+            <l>Selig in seliger Liebe Triumph,</l>
+            <l><emph>Sie</emph> gab ihr Herze mir, gab mir den Strumpf!!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Kaum ist sie gethan die That,</l>
+            <l>Nagt mich auch schon bittre Reue,</l>
+            <l>Doch es seye, wie es seye!</l>
+            <l>Was geschehn ist, ist geschehn.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Nun geht mir das Leben auf,</l>
+            <l>Drum setz' ich das Leben ein,</l>
+            <l>Du sollst mir gewonnen seyn!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Aber Rodrich ist mein Gatte,</l>
+            <pb n="55"/>
+            <l>Angetraut seit Jahren schon.</l>
+            <l>Von dem Gatten zweier Frau'n</l>
+            <l>Sprechen zwar der Sagen viel;</l>
+            <l>Doch vom Weibe zweier Männer</l>
+            <l>Hörte ich bis jetzt noch nie.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Auch nicht zweien sollst du seyn,</l>
+            <l>Mir gehörst du, mir allein!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="I">Doch mein Gatte –</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l part="F">Diesen tödt' ich.</l>
+            <l>Wem das Leben ich erhalten,</l>
+            <l>Dem kann ich es wieder nehmen,</l>
+            <l>Wenn mir seine Frau gefällt.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Doch die Strafe der Gesetze –</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Diese fürchtet Rodrich nicht,</l>
+            <l>Der sich selber kann erstechen,</l>
+            <pb n="56"/>
+            <l>Wenn es auf das Aergste ankömmt.</l>
+            <l>Aber höre still mich an:</l>
+            <l>Einen Diener hab' ich bei mir,</l>
+            <l>Klug gewandt zu allen Dingen,</l>
+            <l>Dieser soll die That vollbringen;</l>
+            <l>Vieles lastet auf ihm schwer,</l>
+            <l>Einen wen'ger oder mehr</l>
+            <l>Wird dem <emph>Schicksal</emph> nichts verschlagen.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="I">Wie? das <emph>Schicksal</emph>?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l part="F">Ja, erstaune,</l>
+            <l>Dieser Diener ist das <emph>Schicksal</emph>,</l>
+            <l>Was man will, kann er vollführen,</l>
+            <l>Ist zu allem zu gebrauchen,</l>
+            <l>Ladet auf sich selbst die <emph>Schuld</emph>,</l>
+            <l>Und das ist ein starkes Stück!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Doch, wie kam er denn zu dir?</l>
+          </sp>
+          <pb n="57"/>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Glaub' er hat so was gerochen:</l>
+            <l>Heute sind es sieben Wochen,</l>
+            <l>Grade an demselben Abend,</l>
+            <l>Als du anfingst diesen Strumpf</l>
+            <l>Und den Traum ich hab' geträumt,</l>
+            <l>Ging ich ruhig durch die Straßen,</l>
+            <l>Süßem Nichtsthun überlassen,</l>
+            <l>Sieh, da kam ein Bettelmann, –</l>
+            <l>Das ist so ein Mann, der bettelt, –</l>
+            <l>Gradezu auf mich heran,</l>
+            <l>Eine Gabe von mir heischend;</l>
+            <l>Aber sparsam, wie ich bin,</l>
+            <l>Schlug ich ihm die Gabe ab.</l>
+            <l>Nun fing er zu kreischen an,</l>
+            <l>Daß darob die Glocken dröhnten,</l>
+            <l>Meine Ohren aus sich dehnten</l>
+            <l>Bis zur fürchterlichen Länge –:</l>
+            <l>Gibst du mir nicht gleich zu essen,</l>
+            <l>Sollst du meiner nicht vergessen,</l>
+            <l>Denn ich bin das Schicksal selbst.</l>
+          </sp>
+          <pb n="58"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Selbst? – Das ist ein wichtig Wort.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Ei, da dacht' ich, mit dem Schicksal</l>
+            <l>Ist nicht gutes <emph>Kirschen</emph>essen,</l>
+            <l>Nahm den Bettler bei der Hand,</l>
+            <l>Führt' ihn mit mir in mein Haus,</l>
+            <l>Wo zusamm' wir <emph>Mispeln</emph> aßen.</l>
+            <l>Und bei Tisch erzählt' er mir:</l>
+            <l>Daß er schon seit vielen Jahren</l>
+            <l>In den deutschen Tragödien</l>
+            <l>Habe manchmal mitgespielt;</l>
+            <l>Doch sey in den letzten Zeiten</l>
+            <l>Er zu vorlaut dort geworden,</l>
+            <l>Hab' sich zu den ersten Rollen</l>
+            <l>Ungestüm herangedrängt;</l>
+            <l>Drob die Kritiker ergrimmten,</l>
+            <l>Und ihn gräßlich hergenommen,</l>
+            <l>Auch das Publikum hab' endlich</l>
+            <l>Seine Nichtigkeit erkannt,</l>
+            <l>Und mit Frost ihn aufgenommen.</l>
+            <pb n="59"/>
+            <l>Nun wurd' er von allen Bühnen</l>
+            <l>Mit Verachtung abgewiesen,</l>
+            <l>Und ihm auch als Gast nur selten</l>
+            <l>In dem griech'schen Trauerspiele,</l>
+            <l>Wo er wirklich hin gehört,</l>
+            <l>Eine Rolle dort gewährt.</l>
+            <l>So ist er herabgekommen,</l>
+            <l>Daß er jetzt muß Betteln gehn.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Armer Narr von einem Schicksal!</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Da mir grad' ein Diener fehlte,</l>
+            <l>Und der Bursch gewandt mir schien,</l>
+            <l>Nahm ich ihn in meine Dienste,</l>
+            <l>Was mich später erst wird reuen;</l>
+            <l>Und noch an demselben Abend</l>
+            <l>Hat er mir den Traum gesendet,</l>
+            <l>Wo ich dich darin erblickte,</l>
+            <l>Führt' auch jetzt zu dir mich her.</l>
+            <stage>(Man hört 11 Uhr schlagen, in sehr hohem Tone.)</stage>
+          </sp>
+          <pb n="60"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Horch! den dumpfen Schlag der Glocke,</l>
+            <l>Nahen will die Mitternacht,</l>
+            <l><emph>Still</emph> sich nahen, weil sie <emph>muß</emph>.</l>
+            <l>Laß uns scheiden, und bis Morgen</l>
+            <l>Sey das große Werk vollbracht.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l part="I">Welches?</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="F">Wird schon kommen, Freund!</l>
+            <l>Wenn wir nicht von hinnen gehen,</l>
+            <l>Kann mein Gatte nicht erscheinen</l>
+            <l>Und erzählen was die Ahnung</l>
+            <l>Ihm schon sicher kund gethan; –</l>
+            <l part="I">Gute Nacht!</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l part="F">Nun gute Nacht,</l>
+            <l>Träum' von mir und diesem Strumpf!</l>
+            <stage>(Beide zu verschiedenen Seiten im Hintergrunde ab.)</stage>
+          </sp>
+        </div>
+        <pb n="61"/>
+        <div type="scene">
+          <head>Siebente Scene.</head>
+          <stage>Das Theater bleibt einige Augenblicke leer, während welcher es eine
+            undurchdringliche Finsterniß umzieht. Das Schicksal erscheint als Ahnung, in eine große
+            Wolke gehüllt, aus dem Vordergrunde rechts, und schreitet langsam bis in die Mitte des
+            Theaters vor, wo es stille steht, und mit starker klangloser Stimme zurückruft:</stage>
+          <sp who="#das_schicksal_dolch">
+            <l>Schicksal bin ich, und als Ahnung</l>
+            <l>Schreit' ich Roderich dir vor,</l>
+            <l>Folgen darfst du meiner Mahnung,</l>
+            <l>Nur die Ahnungen sind wahr.</l>
+          </sp>
+          <stage>Das Schicksal schreitet nun eben so langsam fort, und verschwindet links im
+            Hintergrunde.</stage>
+          <stage>In demselben Augenblicke stürzt Roderich I. herein, athemlos, leichenblaß, im
+            Nachtwamse, mit wild aufsträubenden Haaren, und ruft der Wolke nach mit schwach
+            kreischender Stimme:</stage>
+          <sp who="#roderich_i">
+            <lg>
+              <l>Halt! du dunkles Nachtgespenst,</l>
+              <l>Steh mir Rede – wenn du willst –</l>
+              <l>Ha! es will nicht, – nein, es will nicht –</l>
+              <l>War es Wahrheit, war es Traum?</l>
+              <l>Daß mir etwas ahnen werde,</l>
+              <pb n="62"/>
+              <l>Hat die Ahnung mir gesagt,</l>
+              <l>Kaum gesagt verschwindet sie</l>
+              <l>Und ich stehe nun allein! –</l>
+            </lg>
+            <lg>
+              <l>Still und ruhig saß ich oben,</l>
+              <l>Leerte noch den letzten Becher</l>
+              <l>Von dem besten Guldenwein,</l>
+              <l>Dachte just an gar nichts eben,</l>
+              <l>An den Bock, den ich geschossen,</l>
+              <l>An den Fremden und mein Weib.</l>
+              <l>Sieh, da wurd' es plötzlich Nacht,</l>
+              <l>Und die Ahnung stand vor mir,</l>
+              <l>Die ich gar nicht sehen konnte,</l>
+              <l>Glotzte mich mit weit geöffnet</l>
+              <l>Großen dummen Augen an.</l>
+              <l>Flüsternd bald und grinsend bald</l>
+              <l>Ruft sie leise schreiend in mein Ohr</l>
+              <l>Dinge, drob mein Haar sich jetzt noch sträubet,</l>
+              <l>Und die ich schon hab' vergessen.</l>
+              <l>Und als sie dahin geschwunden, –</l>
+              <l>Fühlt' ich mich mit tausend Ketten,</l>
+              <l>Wie mit tausend Angelhaken,</l>
+              <l>Nach der Ahnung hingerissen;</l>
+              <pb n="63"/>
+              <l>Muß ihr nach und muß ihr folgen,</l>
+              <l>Doch ich weiß noch nicht warum.</l>
+              <l>Das ist sicher, das ist klar,</l>
+              <l>Daß mir bald was ahnen wird,</l>
+              <l>Was mein ganzes Haus zerstört,</l>
+              <l>Denke Rodrich, wenn du kannst,</l>
+              <l>Denke nur den Dingen nach,</l>
+              <l>Daß du als der Herr des Hauses</l>
+              <l>Förderst seinen Untergang!</l>
+              <stage>(sinnt nach, und fährt plötzlich auf)</stage>
+              <l>Ha! mein Weib! ja, ja, mein Weib! –</l>
+              <l>Aber wie? – und was? – warum? –</l>
+              <l>Ja was soll's mit meinem Weib? – –</l>
+              <l>Schuldig, schuldig muß sie seyn,</l>
+              <l>Weiß ich auch nicht wie so;</l>
+              <l>Doch das Schicksal sorget schon,</l>
+              <l>Daß man schuldig wird befunden,</l>
+              <l>Soll man schuldig untergehn.</l>
+              <stage>(wehmüthig)</stage>
+              <l>Zwar ist sie so brav, so fleißig,</l>
+              <l>Strickt mir schon seit sieben Wochen</l>
+              <l>Unermüdet einen Strumpf,</l>
+              <pb n="64"/>
+              <l>Rechnet täglich mit der Köchinn,</l>
+              <l>Gibt den Armen keinen Heller,</l>
+              <l>Schmalz und Eier sperrt sie ein</l>
+              <l>Selber in den Küchenschrein,</l>
+              <l>Kocht für mich wie für 'nen König,</l>
+              <l>Und ißt selber doch so wenig;</l>
+              <l>Ließ noch gar nichts mir verderben,</l>
+              <l>Und soll dennoch, dennoch sterben? –</l>
+              <stage>(entschlossen)</stage>
+              <l>Ja sie muß es! finstre Mächte</l>
+              <l>Heulen mir ihr grinsend »Ja!«</l>
+              <l>Aus der Höllenkluft herauf,</l>
+              <l>Und du, Schicksal, willst es so.</l>
+              <l>Darum sende mir den Bothen,</l>
+              <l>Der mir tödtet Kunigunden,</l>
+              <l>Wird sie schuld<emph>los</emph> auch befunden.</l>
+            </lg>
+          </sp>
+        </div>
+        <pb n="65"/>
+        <div type="scene">
+          <head>Achte Scene.</head>
+          <stage>Donner und Blitz, die Erde öffnet sich, und das Schicksal als blankgeschliffener,
+            aber unten abgestumpfter Dolch steigt herauf.</stage>
+          <stage>Dolch und Roderich I.</stage>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Dolch.</speaker>
+            <l>Schicksal! riefst du, ich erscheine,</l>
+            <l>Bin sein Bote und sein Diener,</l>
+            <l>Und vollbringe was du willst.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Ist ein Dolch das, was ich sehe,</l>
+            <l>Mit dem Griff mir zugewandt?</l>
+            <l>Ich verstehe, ich verstehe,</l>
+            <l>Denn ich habe viel Verstand.</l>
+            <l>Und entschlossen bin ich auch,</l>
+            <l>Und vollbringen will ich lassen</l>
+            <l>Diese fluchbeladne That. – –</l>
+            <l>Höre, Dolch! ich hab' ein Weib,</l>
+            <l>Das mir gar nichts hat gethan,</l>
+            <l>Doch die Ahnung flog mich an,</l>
+            <pb n="66"/>
+            <l>Daß ich sie ermorden soll.</l>
+            <l>Aber ich, zu weich geschaffen,</l>
+            <l>Könnte bei der That erschlaffen,</l>
+            <l>Du bist stärkerer Natur,</l>
+            <l>Bist von Eisen oder Stahl,</l>
+            <l>Ich bin nur von Fleisch und Blut,</l>
+            <l>Darum treffe du sie gut,</l>
+            <l>Treffe mir ihr tiefstes Leben,</l>
+            <l>Und ich will dich fürstlich lohnen,</l>
+            <l>Will dich nackten Dolch bekleiden,</l>
+            <l>Und ein Futteral dir geben!</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Dolch.</speaker>
+            <l>Offen geh' ich durch die Welt</l>
+            <l>Und will Andres von Euch heischen.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Laß mich hören, was du willst?</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Dolch.</speaker>
+            <l>Seht, ich bin ein alter Dolch,</l>
+            <l>Bin schon matt und grau geworden,</l>
+            <l>Bald in Süden, bald in Norden</l>
+            <pb n="67"/>
+            <l>Mußt' ich da und dorten morden,</l>
+            <l>Und war hier und dort nicht heim;</l>
+            <l>Fremdling diesem kalten Boden,</l>
+            <l>Fremdling jener heißen Luft,</l>
+            <l>Tief im Norden eingefroren</l>
+            <l>Und im Süden aufgethaut,</l>
+            <l>Eint' ich in mir Eis und Schweiß,</l>
+            <l>Frost und Hitze! Alle Teufel!</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l part="I">Armer Dolch!</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Dolch.</speaker>
+            <l part="F">Nun bin ich's müde,</l>
+            <l>Sehne mich nach Ruhe schon,</l>
+            <l>Wünsche mir ein kleines Plätzchen,</l>
+            <l>Wo im Schooße stillen Glückes</l>
+            <l>Ich recht friedlich wüthen kann.</l>
+            <l>Darum nimm als Hausdolch mich</l>
+            <l>Auf in den erlauchten Stamm</l>
+            <l>Der geehrten Taubenklee,</l>
+            <l>Daß ich ruhig kann verrosten</l>
+            <l>An des Schlosses alten Pfosten.</l>
+          </sp>
+          <pb n="68"/>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Gerne will ich dir's gewähren,</l>
+            <l>Wenn du deine Pflicht erfüllst.</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Dolch.</speaker>
+            <l>Tausend-, tausendfachen Dank!</l>
+            <l>Wär' es einem Dolche ziemlich,</l>
+            <l>Freudenthränen zu vergießen,</l>
+            <l>Würden meine sicher fließen,</l>
+            <l>Stürzte gerne Euch zu Füßen,</l>
+            <l>Wenn ich selbst nur Füße hätt'.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Doch nicht unbekannte Diener</l>
+            <l>Kann ich nehmen in mein Haus,</l>
+            <l>Drum bekunde, wer du bist,</l>
+            <l>Und was du bis jetzt gewesen.</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Dolch.</speaker>
+            <l>Nun es ist kein Grund vorhanden,</l>
+            <l>Daß ich Euch, Herr Graf, verschweige,</l>
+            <l>Wer ich war und wer ich bin; –</l>
+            <l part="I">Höret mich:</l>
+          </sp>
+          <pb n="69"/>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l part="F">Ich bin ganz Ohr!</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Dolch.</speaker>
+            <lg>
+              <l>Edmund, Graf von Pompadour,</l>
+              <l>Mein erlauchter Vater, war</l>
+              <l>Seines Stammes würd'ger Sprosse,</l>
+              <l>All sein Hab' und Gut war gar,</l>
+              <l>Ward verthan durch Spiel und Rosse,</l>
+              <l>Und die zögernde Natur</l>
+              <l>Schien den Erben zu versagen,</l>
+              <l>Selbst den Rest davon zu tragen.</l>
+            </lg>
+            <lg>
+              <l>Endlich beut sich Hoffnung dar,</l>
+              <l>Denn des alten Grafen Schwäche</l>
+              <l>Tilget bald der Erben Furcht,</l>
+              <l>Daß der morsche Baum nicht breche.</l>
+              <l>Aerzte werden früh ersucht,</l>
+              <l>Nachzuhelfen mit der Feder,</l>
+              <l>Und die Pirenäenbäder</l>
+              <l>Rühmten sie nach gutem Lohne.</l>
+            </lg>
+            <lg>
+              <l>Eine Dame, unbekannt</l>
+              <l>So dem Vater, wie dem Sohne,</l>
+              <pb n="70"/>
+              <l>(Der ich nie mich von ihm wandt':)</l>
+              <l>Hatte in denselben Tagen</l>
+              <l>In dem Haus, das neben stand,</l>
+              <l>Ihre Wohnung aufgeschlagen.</l>
+              <l>In dem gastlich offnen Haus</l>
+              <l>Ging der Vater ein und aus,</l>
+              <l>Darum ward der <emph>deutsche</emph> Name</l>
+              <l><emph>Kunigunde</emph> auch gegeben</l>
+              <l>Ihrem dort gebornen Kinde.</l>
+            </lg>
+            <lg>
+              <l>Das mir unwillkomm'ne Leben,</l>
+              <l>So des Kindes wie des Vaters,</l>
+              <l>Schickt' ich gern der Hölle zu;</l>
+              <l>Edmund aber blieb in Ruh',</l>
+              <l>In behaglich süßem Frieden</l>
+              <l>Bei der Dame aus dem Osten.</l>
+              <l>Und so ging's ins dritte Jahr,</l>
+              <l>Bis kein Geld mehr übrig war,</l>
+              <l>Viel thät ihm ihr Aufwand kosten.</l>
+            </lg>
+            <lg>
+              <l>Flammen nun die Dame sprühte,</l>
+              <l>Ließ das Kind, das freundlich blühte,</l>
+              <l>Vor des Vaters Thüre legen,</l>
+              <pb n="71"/>
+              <l>Doch es stand in seinem Buch,</l>
+              <l>Daß es aus sey mit dem Segen; –</l>
+              <l>Ließ das Kind, wo es gelegen,</l>
+              <l>Liegen in dem Wickeltuch.</l>
+            </lg>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l part="I">Schlechter Vater!</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Dolch.</speaker>
+            <l part="F">Und ein schlecht'rer</l>
+            <l>Bruder nahm sich dessen an,</l>
+            <l>Daß nur nicht die Kleine weine,</l>
+            <l>Ward ein schrecklich Werk gethan,</l>
+            <l>Einer Freundinn dort erworben</l>
+            <l>Aus Zigeuner'schem Geschlecht</l>
+            <l>(Würd' ich Euch den Namen nennen,</l>
+            <l>Sträubten hoch sich Eure Ohren)</l>
+            <l>Gab der Bruder seine Schwester –</l>
+            <l>'ner Zigeunerinn! – zu eigen.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Ist das möglich wohl? – Ein Bruder?</l>
+          </sp>
+          <pb n="72"/>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Dolch</speaker>
+            <stage>(dumpf).</stage>
+            <l>Ja, ein Bruder hat's gethan!</l>
+            <l><emph>Ich</emph> verschenkte dieses Mädchen,</l>
+            <l>Meine Schwester Kunigunde,</l>
+            <l>Die seitdem ich nimmer sah!</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich</speaker>
+            <stage>(mit Abscheu).</stage>
+            <l>Die ich nimmer sehen <emph>möchte</emph>,</l>
+            <l>Weil sie bei Zigeunern war!</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Dolch.</speaker>
+            <l>Lange täuscht' ich meinen Vater,</l>
+            <l>Täuschte mich auch, seinen Sohn,</l>
+            <l>(Den ihm einstens hat geboren</l>
+            <l>Meine Mutter, als sie lebte)</l>
+            <l>Doch mein Name wurde bald</l>
+            <l>In der Hölle angegeben,</l>
+            <l>Die man nicht kann hintergehn,</l>
+            <l>Und als ich war heimgegangen,</l>
+            <l>Zeigte man's dem Pluto an.</l>
+            <l>Dieser gab mir ein Diplom,</l>
+            <l>Eigenhändig und geheim</l>
+            <l>Ausgefertigt, diese Inhalts:</l>
+            <pb n="73"/>
+            <lg>
+              <l>»Sacripandos Pompadour,</l>
+              <l>Unsrer Hölle feste Säule,</l>
+              <l>Nach der guten Schwester Spur</l>
+              <l>Jetzt als Dolch herum du eile,</l>
+              <l>Macht hast du durch diesen Brief,</l>
+              <l>Sie zu tödten, die entlief.</l>
+              <l>Wirst du habhaft dieses Weibes</l>
+              <l>Und willst Ruhe dir bereiten,</l>
+              <l>Tödte sie sammt ihren Leuten</l>
+              <l>Und den Erben ihres Leibes!« –</l>
+            </lg>
+            <l>Mit dem Brief, den nun im Grab</l>
+            <l>Mir der Teufel übergab,</l>
+            <l>Tauscht' er mir die Ruhe ab.</l>
+            <l>Weg von ihm, der mir verwandt,</l>
+            <l>Zieh' ich durch das Land,</l>
+            <l>Durch Thal und Flur,</l>
+            <l>Such' ihre Spur,</l>
+            <l>Die bis jetzt ich noch nicht fand;</l>
+            <l>Tödte <emph>alle</emph> Kunigunden,</l>
+            <l>Die ich noch gefunden,</l>
+            <l>Und nur Wen'gen ist's gelungen,</l>
+            <l>Daß sie glücklich mir entsprungen.</l>
+            <pb n="74"/>
+            <l>Also suchte ich schon lang,</l>
+            <l>Und noch nicht es mir gelang,</l>
+            <l>Jene rechte aufzuspüren,</l>
+            <l>Die ich muß zur Hölle führen;</l>
+            <l>Hatte nun so viel zu morden,</l>
+            <l>Daß ich drob bin stumpf geworden,</l>
+            <l>Und so mußte ich ermüden,</l>
+            <l>Fühlen endlich diesen Drang</l>
+            <l>Nach der Hölle schönem Frieden!</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Kunigunde heißt mein Weib,</l>
+            <l>Und gewiß ist sie dieselbe,</l>
+            <l>Die du schon so lange suchst;</l>
+            <l>Denn auch <emph>ich</emph> hätt' gern sie unten.</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Dolch.</speaker>
+            <l>Ja, sie ist's, ich zucke schon! –</l>
+            <l>Und als Euer Hausdolch hoff' ich</l>
+            <l>Noch manch schöne That zu thun.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Nun so sey es denn gethan!</l>
+            <l>Höre, du bist aufgenommen</l>
+            <pb n="75"/>
+            <l>Und erdolchest mir mein Weib.</l>
+            <l>Liegt sie todt dann auf der Bahre,</l>
+            <l>Bleich, das wunderschöne Bild,</l>
+            <l>Reiß' ich aus mir selbst die Haare,</l>
+            <l>Tobe, schreie, kreische wild,</l>
+            <l>Bis die Wege sichtbar werden,</l>
+            <l>Wie man teufeln muß auf Erden;</l>
+            <l>Bis ich gleiche</l>
+            <l>Einer Leiche;</l>
+            <l>In der Gruft</l>
+            <l>Athm' ich dann den Moderduft,</l>
+            <l>Und an dieser faulen Luft</l>
+            <l>Will ich herrlicher mich freuen,</l>
+            <l>Als an allen Spezereien. –</l>
+            <l>Weinen will ich Tag und Nacht,</l>
+            <l>Klügeln über meine That,</l>
+            <l>Wenn ich sie nur nicht vergesse;</l>
+            <l>Denn vergessen kann der Mensch</l>
+            <l>Alles, wie er heißt, wo er geboren,</l>
+            <l>Seinen eignen Namenstag;</l>
+            <l>Aber auswendig was lernen,</l>
+            <l>Wär's auch <emph>eine</emph> Zeile nur,</l>
+            <pb n="76"/>
+            <l>Das ist schwer, sehr schwer!</l>
+            <l>Und kein Arzt hat für's Gedächtniß</l>
+            <l>Je ein Mittel ausgedacht.</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Dolch.</speaker>
+            <l>Lieber Herr, es ist schon spät,</l>
+            <l>Geht zu Bett und legt Euch schlafen.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Schlafen? – Schlafen? – Du hast Recht,</l>
+            <l>Heute kann ich's noch, doch morgen,</l>
+            <l>Und dann all die künft'gen Morgen</l>
+            <l>Sinkt kein Schlaf mehr auf mein Aug',</l>
+            <l>Doch, es komme was da will,</l>
+            <l><emph>Ich</emph> nicht meinen Willen lenke,</l>
+            <l>Und der Mensch lebt von Beschwerden,</l>
+            <l>Und das Unglück haus't auf Erden.</l>
+            <stage>(stürzt wüthend ab.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Neunte Scene.</head>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Dolch</speaker>
+            <stage>(allein).</stage>
+            <l>Mir leuchtet die Hoffnung,</l>
+            <l>Sie täuschet mich nicht,</l>
+            <pb n="77"/>
+            <l>Bald enden die Qualen</l>
+            <l>Das strenge Gericht;</l>
+            <l>Denn Kunigunden</l>
+            <l>Hab' ich gefunden,</l>
+            <l>Und habe geführt</l>
+            <l>Zu ihr ihren Sohn.</l>
+            <l>Sich unbekannt</l>
+            <l>Sind beide entbrannt</l>
+            <l>In einander. –</l>
+            <l>Selbander</l>
+            <l>Wollen sie tödten</l>
+            <l>Den Gatten und Vater;</l>
+            <l>Der Vater und Gatte</l>
+            <l>Läßt morden zum Lohn</l>
+            <l>Dann Gattinn und Sohn.</l>
+            <l>Jetzt laß ich aus</l>
+            <l>Den Mord und Graus,</l>
+            <l>Darob das Haus</l>
+            <l>Muß stürzen ein,</l>
+            <l>Und in dem Schein</l>
+            <l>Der Flamme glüht</l>
+            <l>Sich rein</l>
+            <pb n="78"/>
+            <l>Mein schlecht Gemüth;</l>
+            <l>Denn wenn ich zur Hölle</l>
+            <l>Drei Sünder dann stelle,</l>
+            <l>So sühnt sich die schlechte Saat</l>
+            <l>Durch schlechtere That!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zehnte Scene.</head>
+          <stage>Drei starke Donnerschläge und Blitze, von drei langgehaltenen Posaunentönen und dem
+            dumpfen Geläute vieler Glocken begleitet.</stage>
+          <stage>Das ganze Theater umzieht sich mit Wolken, und aus dem Hintergrunde tritt Moralino,
+            das gute Prinzip, als Eremit gekleidet, einen Stab in der Hand, mit fröhlicher Miene und
+            freudig glühenden Wangen vor. Wie er nahe genug an dem Dolche ist, schwingt er den Stab,
+            und diesem entfällt sein Dolchgewand, er steht idealisch als Schicksal gekleidet
+            da.</stage>
+          <sp who="#moralino">
+            <speaker>Moralino.</speaker>
+            <lg>
+              <l>Ich bin der Ahnherr dieses alten Hauses,</l>
+              <l>Ich bin der alte lust'ge Pompadour,</l>
+              <l>Ich bin ein Feind des Mordes und des Grauses,</l>
+              <l>Und Scherz und Lust und Freude freut mich nur,</l>
+              <pb n="79"/>
+              <l>Beschützer bin ich jedes guten Schmauses,</l>
+              <l>Kurz, bin ein Geist von lustiger Natur,</l>
+              <l>Die Weisen mich <emph>den guten Grund</emph> benannten,</l>
+              <l>Mir ist es recht, hab' ich's auch nicht verstanden.</l>
+            </lg>
+            <lg>
+              <l>Mein ungerathnes Söhnchen aus der Hölle</l>
+              <l>Will meine guten Kinder mir verderben,</l>
+              <l>Ich hab' es aus der allerbesten Quelle,</l>
+              <l>Er will, wie mich, auch diese noch beerben,</l>
+              <l>Da packte ich zusammen in der Schnelle,</l>
+              <l>Und kam hieher, das Leder ihm zu gerben;</l>
+              <l>Ich bin ein guter alter Geist, nicht leiden</l>
+              <l>Kann ich's, stört man der guten Kinder Freuden.</l>
+            </lg>
+            <lg>
+              <l>Drum was auch <emph>der</emph> für Lazzi denkt zu machen,</l>
+              <l>Ich halte ihm die Stange sicherlich,</l>
+              <l>Ich will die braven Leute schon bewachen,</l>
+              <l>Und nehme Alles, Alles über mich.</l>
+              <l>Darum vor diesem bösen Höllendrachen</l>
+              <l>Braucht keiner etwa je zu fürchten sich.</l>
+              <pb n="80"/>
+              <l>Ein guter Geist hat auch Verstand im Leibe</l>
+              <l>Und kömmt dem Bösen bei und seinem Weibe.</l>
+            </lg>
+            <lg>
+              <l>Doch darum soll der Graus nicht gleich sich enden,</l>
+              <l>Bis neun Uhr laß ich alles noch geschehn,</l>
+              <l>Drum mögen sie vergnügt hieher sich wenden,</l>
+              <l>Es wird noch drunter und auch drüber gehn,</l>
+              <l>Das Blut fließt noch herab von allen Wänden,</l>
+              <l>Der Strumpf wirkt noch viel Böses – werden's sehn. –</l>
+              <l>Doch wie im Schloß die neunte Stund' wird schlagen,</l>
+              <l>Dann darf das Schicksal weiter nichts mehr wagen.</l>
+            </lg>
+            <stage>(Ein starker Donner, Blitz und Posaunenton, Moralino ballt die Faust gegen das
+              Schicksal, die Gardine fällt schnell.)</stage>
+          </sp>
+          <trailer>Ende des ersten Aufzuges.</trailer>
+          <stage>(Donner und Blitz währen ununterbrochen bis zu Anfang des künftigen Aufzuges
+            fort.)</stage>
+        </div>
+      </div>
+      <pb n="81"/>
+      <div type="act">
+        <head>Zweiter Akt.</head>
+        <stage>Die Bühne stellt ein Zimmer mit Bildern behängt vor.</stage>
+        <div type="scene">
+          <head>Erste Scene.</head>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal</speaker>
+            <stage>(als Bedienter).</stage>
+            <stage>(tritt zornig auf).</stage>
+            <lg>
+              <l>Das ist doch zum Teufel holen!</l>
+              <l>Diesmal hat mir's fehlgeschlagen,</l>
+              <l>Und mit langer Nase mußt' ich</l>
+              <l>Abziehn diese Nacht als Dolch. –</l>
+              <l>Hab' so sehr mich drauf gefreut,</l>
+              <l>Kunigunden zu durchstechen,</l>
+              <l>Dacht', es könne gar nicht fehlen,</l>
+              <l>Sieh, da tritt der alte Kerl</l>
+              <pb n="82"/>
+              <l>Unerwartet mir entgegen,</l>
+              <l>Und vereitelt meine Hoffnung! –</l>
+              <l><foreign>Bizam erdöck satrazeni!</foreign><note>Ein ungarischer Fluch. – Warum
+                  sollte ein Schicksal nicht alle Sprachen verstehn? –</note></l>
+              <l>Warum bin ich denn ein Schicksal,</l>
+              <l>Wenn ich nicht vollführen kann,</l>
+              <l>Was ich will? –</l>
+              <l>Doch nur still,</l>
+              <l>So ein dummer Eremit,</l>
+              <l>Der sich nennet <emph>guten Grund</emph>,</l>
+              <l>Soll nicht schmälern den Credit,</l>
+              <l>Den ich einmal mir erworben,</l>
+              <l>Und</l>
+              <l>Wenn mit allen guten Gründen,</l>
+              <l>Die noch sparsam sind zu finden,</l>
+              <l>Ich beginnen muß den Krieg,</l>
+              <l><emph>Mein</emph> bleibt doch zuletzt der Sieg. –</l>
+            </lg>
+            <lg>
+              <l>Er hat doch auf seiner Seite</l>
+              <l>Wen'ge nur, ohnmächt'ge Leute, –</l>
+              <l>Höchstens einige Gescheidte,</l>
+              <pb n="83"/>
+              <l>Die durch Schein</l>
+              <l>Leider nicht sind zu bethören,</l>
+              <l>Nicht auf schöne Worte hören,</l>
+              <l>Und den Untergang mir schwören; –</l>
+              <l>Aber ich</l>
+              <l>Freue vieler Gönner mich: –</l>
+              <l>Alle Schauspieldirectoren</l>
+              <l>Können wohl mich nimmer hassen,</l>
+              <l>Weil ich fülle ihre Kassen,</l>
+              <l>Und die Schauspielkünstler machen</l>
+              <l>Auch mit mir gemeine Sache,</l>
+              <l>Weil ich sie hübsch schreien mache,</l>
+              <l>Und dadurch gefallen sie; –</l>
+              <l>Die empfindungsvollen Frauen,</l>
+              <l>Welche, ich darf nur erscheinen,</l>
+              <l>Ordentlich sich mager weinen,</l>
+              <l>Sind doch auch auf meiner Seite; –</l>
+              <l>Also darf ich keck es wagen,</l>
+              <l>Rüste mich ohn' alles Zagen</l>
+              <l>Mit so Mächtigen im Bund</l>
+              <l>Gegen <emph>jeden guten Grund</emph></l>
+              <l>Muthig zu dem Streite.</l>
+            </lg>
+          </sp>
+        </div>
+        <pb n="84"/>
+        <div type="scene">
+          <head>Zweite Scene.</head>
+          <stage>Das Schicksal. Roderich II.</stage>
+          <stage>(Letzterer, im Morgennegligée, tritt die Arme in einander geschlungen aus der
+            Seitenthür und gähnt.)</stage>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <l>Guten Morgen, lieber Herr,</l>
+            <l>Wie ich sehe, gähnt ihr noch,</l>
+            <l>Neun Uhr ist's, ich dächte doch,</l>
+            <l>Daß ihr ausgeschlafen hättet.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Lieber Michel! 's ging ganz schwer.</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <l>War das Lager schlecht gebettet?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Nein, o nein!</l>
+            <l>Besser konnt' es gar nicht seyn,</l>
+            <l>Zwei Matratzen waren hier,</l>
+            <l>Polster vier,</l>
+            <pb n="85"/>
+            <l>Und ein Ueberbett, ganz weiß,</l>
+            <l>Leicht gefüllt mit Eiderdunen; –</l>
+            <l>Doch ich weiß</l>
+            <l>Nicht, es war mir gar so heiß.</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <l>Ach, sie haben gestern Abends</l>
+            <l part="I">Wohl zu viel gegessen?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l part="F">Ach!</l>
+            <l><emph>Eine</emph> Speise drückt auf's Herz mich,</l>
+            <l>Immer kau' ich noch daran,</l>
+            <l>Habe mit zwei rothen Löffeln</l>
+            <l>Gestern sie zu mir genommen,</l>
+            <l>Dieser Speise Hochgenuß</l>
+            <l>Hat mein ganzes Ich entzunden.</l>
+            <l>Du erräthst sie doch? – Ein Kuß</l>
+            <l>War's, – ein Kuß von Kunigunden.</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <l>Ja, so was pflegt gut zu munden.</l>
+          </sp>
+          <pb n="86"/>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Ach, den süßen Lippenbiß</l>
+            <l>Bracht' ich nicht aus dem Gedächtniß,</l>
+            <l>Und wenn ich die Augen schloß,</l>
+            <l>Sah ich jene Purpurpolster,</l>
+            <l>Drauf ich ewig möchte ruhen,</l>
+            <l>Schon sich mir entgegenblähen,</l>
+            <l>Und wenn mich der Schlummer faßte,</l>
+            <l>Horch! da schnalzt' es neben mir,</l>
+            <l>So wie's gestern Abend schnalzte,</l>
+            <l>Wie ich's auch, so lang' ich lebe,</l>
+            <l>Immer werde schnalzen hören,</l>
+            <l>Und der Schlaf entfloh auf's Neue.</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <l>Herr, ein guter Fuhrmann muß</l>
+            <l>Nicht nur schnalzen, – weiter fahren.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Ja, das will ich auch, doch wie? –</l>
+            <stage>(denkt nach)</stage>
+            <l>Ich entführe Kunigunden.</l>
+          </sp>
+          <pb n="87"/>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <l>Nein, das wäre ja prosaisch,</l>
+            <l>Und kein Mensch ging' da zu Grunde.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Gut, – ich will den Mann erschießen,</l>
+            <l>Wenn er auf die Jagd hinausgeht.</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <l>Das wär' etwas, und wer weiß es,</l>
+            <l>Ob er nicht vielleicht, o Herr,</l>
+            <l>Euer Bruder, Euer Vater,</l>
+            <l>Oder was dergleichen ist.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich</speaker>
+            <stage>(freudig).</stage>
+            <l>Gott! wenn es sich so verhielte,</l>
+            <l>Dann wär's freilich werth der Mühe,</l>
+            <l>Und effektvoll wär' der Schuß,</l>
+            <l>Dann könnt' ich doch auch was schwatzen</l>
+            <l>Von den Sternenbildern, welche</l>
+            <l>Grimmig auf mich nieder blicken,</l>
+            <l>Von der Jungfrau, von dem Schützen,</l>
+            <pb n="88"/>
+            <l>Scorpione, und den Brüdern,</l>
+            <l>Die dort strahlen an dem Dom.</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <l>Laßt mich schalten, werd's schon machen,</l>
+            <l>Denn ich bin bewandert sehr</l>
+            <l>In dergleichen grausen Sachen,</l>
+            <l>Zieh' Euch eine Blutsverwandtschaft</l>
+            <l>Sicher bei den Haaren her. – –</l>
+            <l>Ihr kennt doch nicht Eure Eltern?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Nein, dem Himmel sey's gedankt.</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <l>Sagt, wie kamt Ihr in der Jugend</l>
+            <l>Aus dem väterlichen Hause?</l>
+            <l>Ich, das Schicksal, soll's zwar wissen,</l>
+            <l>Doch, sagt's nur, es schadet nichts.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Räuber hatten mich gestohlen.</l>
+          </sp>
+          <pb n="89"/>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal</speaker>
+            <stage>(erstaunt).</stage>
+            <l>Wie? – So glücklich waret Ihr?</l>
+            <l>Und verstandet dennoch nicht</l>
+            <l>Dieses große Glück zu nützen? –</l>
+            <l>Kamet in der Räuber Mitte,</l>
+            <l>Wo Ihr jede schlechte Sitte</l>
+            <l>Lernen konntet und auch üben,</l>
+            <l>Ohne daß auch irgend Jemand</l>
+            <l>Euch 'nen Vorwurf machen konnte,</l>
+            <l>Und seyd dennoch brav geblieben? –</l>
+            <l>Nein, das ist zu viel, zu viel!</l>
+            <l>Euch hat doch das schönste Ziel</l>
+            <l>Eines Sterblichen gewunken,</l>
+            <l>Vor Euch fiel der Boden ein,</l>
+            <l>Dennoch sankt Ihr nicht hinein,</l>
+            <l>Alle Mittel stäter Pein</l>
+            <l>Waren Euch zur Hand gegeben –</l>
+            <l>Schämt Euch! – Unter Räubern leben,</l>
+            <l>Und doch selbst kein Räuber seyn!</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Ja 's war dumm, jetzt seh' ich's ein.</l>
+          </sp>
+          <pb n="90"/>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <l>Aber ich will doch wol hoffen,</l>
+            <l>Daß Ihr irgendwo ein Zeichen</l>
+            <l>An dem Leibe habt, woraus man</l>
+            <l>Euch zur rechten Zeit erkennen</l>
+            <l>Und die Zweifel heben kann.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Ja, das hab' ich, einen Fleck</l>
+            <l>Trag' ich hier am linken Arme,</l>
+            <l>Welcher aussieht wie ein <emph>Strumpf</emph>.</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <l>Diese Form ist doppelt lieb mir,</l>
+            <l>Denn heut' ist der Tag der Strümpfe! –</l>
+            <l>Seyd getrost jetzt, lieber Herr,</l>
+            <l>Ich werd's schon zu Ende führen,</l>
+            <l>Werde über alles walten:</l>
+            <l>Ihr sollt Rodrichs Frau erhalten,</l>
+            <l>Um sie wieder zu verlieren. –</l>
+            <l>Lebet wohl, ich gehe nun,</l>
+            <l>Um, was meines Amts, zu thun,</l>
+            <pb n="91"/>
+            <l>Will herum fatalisiren,</l>
+            <l>Will bereiten Gram und Qual,</l>
+            <l>Bis ich alles werd' empören,</l>
+            <l>Euch und Jenen, die mich hören,</l>
+            <l>Werd' am Ende selbst fatal.</l>
+            <stage>(geht ab.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritte Scene.</head>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <stage>(allein, spricht phlegmatisch).</stage>
+            <l>Es ist doch, beim Himmel! prächtig,</l>
+            <l>Sich dem Schicksal in die Arme</l>
+            <l>Recht gemächlich so zu werfen,</l>
+            <l>Und es blindlings schalten lassen;</l>
+            <l>Man ist selbst dabei im Trocknen,</l>
+            <l>Und was Dummes auch gescheh'n mag,</l>
+            <l><emph>Ihm</emph> wird Alles zugerechnet,</l>
+            <l>Und man steht für gar nichts Rede.</l>
+            <l>Freilich heißt es, daß der Weise</l>
+            <l>Sein Geschick zu leiten wisse,</l>
+            <l>Alle Folgen jeder Handlung</l>
+            <pb n="92"/>
+            <l>Klüglich zu berechnen suche,</l>
+            <l>Und so selbst sein Schicksal sey. –</l>
+            <l>Das ist möglich, doch bequemer</l>
+            <l>Find' ich es, in süßer Faulheit</l>
+            <l>Glauben, daß der Mensch nicht ändern</l>
+            <l>Könne, was ihm ist bestimmt,</l>
+            <l>Daß am Kopfe eine Beule</l>
+            <l>Ihn zum Dieb, zum Mörder mache. –</l>
+            <l>Fruchtlos ist's, zu widerstehen</l>
+            <l>Jenem, was geschrieben steht,</l>
+            <l>Drum in Gottes Namen gehen</l>
+            <l>Laß ich alles, wie es geht.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierte Scene.</head>
+          <stage>Kunigunde und Roderich II.</stage>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>im Morgennegligée, aber verstört und mit fliegenden Haaren, kömmt aus der
+              Seitenthür; als sie Roderich erblickt, stürzt sie auf ihn zu und schließt ihn
+              stürmisch in ihre Arme.</stage>
+            <l>Bist du da, mein theurer Freund!</l>
+            <l>Ach, das war' ne Schreckensnacht,</l>
+            <pb n="93"/>
+            <l>Wirklich hab' ich schon gedacht,</l>
+            <l>Nicht mehr lebend werd' ich aufstehn.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Schrecken fährt mir durch die Glieder,</l>
+            <l>Sprich, was war's denn wieder?</l>
+            <l>Wenn <emph>du</emph> todt wärst <emph>aufgestanden</emph>,</l>
+            <l>Legt' ich mich auf ewig <emph>nieder</emph>.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Als ich gestern von dir ging,</l>
+            <l>War so froh ich in der Seele,</l>
+            <l>Daß ich dann in meiner Kammer</l>
+            <l>Freudig mit den Stühlen walzte,</l>
+            <l>Und in meines Frohsinns Drang, –</l>
+            <l>– Lächle nicht! – den Gassenhauer</l>
+            <l>Von dem <emph>Augustin</emph> dann sang.</l>
+            <l>Alles glänzte in dem Zimmer</l>
+            <l>Mir im neuen Rosenschimmer,</l>
+            <l>Fühlte nicht mehr meinen Schnuppen,</l>
+            <l>Den ich seit acht Tagen habe,</l>
+            <l>Und mir war's als roch' es um mich</l>
+            <l>Ueberall von Zuckerrauchen.</l>
+            <pb n="94"/>
+            <l>Endlich legt' ich mich zu Bette,</l>
+            <l>Nahm die Karten noch zur Hand,</l>
+            <l>Spielte der Verliebten Spiel,</l>
+            <l>Weißt? – <emph>Er liebet mich vom Herzen,</emph></l>
+            <l><emph>Liebt mit Schmerzen,</emph></l>
+            <l><emph>Liebt ein wenig, oder gar nicht.</emph></l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Mein naifes süßes Wesen!</l>
+            <l>Sag, was sprach die Karte dann?</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Alle dreimal fiel der König</l>
+            <l>Auf das Wort: <emph>Er liebt mit Schmerzen.</emph></l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l part="I">Ach, das thu' ich auch.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="F">Hör' weiter:</l>
+            <l>Endlich fielen meine Gucken</l>
+            <l>Müde zu,</l>
+            <l>Und die Ruh'</l>
+            <pb n="95"/>
+            <l>Senkte sich auf meine matten Glieder</l>
+            <l>Sanft hernieder. –</l>
+            <l>Aber kaum 'ne halbe Stunde</l>
+            <l>Mocht' ich so geschlafen haben,</l>
+            <l>Als das Knarren meiner Thüre –</l>
+            <l>(Dreimal hatt' ich's schon befohlen,</l>
+            <l>Daß die Magd mit Oel sie schmiere)</l>
+            <l>Mich erweckte, und – o Himmel! –</l>
+            <l>Schrecklich war's, was ich gesehn,</l>
+            <l>Einen ungeheuren Dolch</l>
+            <l>Sah ich in das Zimmer gehn,</l>
+            <l>Hohl schrie er und dumpf:</l>
+            <l>Kunigunde, du mußt sterben!</l>
+            <l>Er war freilich stumpf,</l>
+            <l>Doch ich war gewiß verloren;</l>
+            <l>Denn es ist ein leichtes Spiel,</l>
+            <l>Und dazu gehört nicht viel,</l>
+            <l>Schwache Weiber zu durchbohren:</l>
+            <l>Ach! halt' ein, schrie ich voll Schrecken;</l>
+            <l>Unter meine <emph>sieben</emph> Decken</l>
+            <l>Wollt' ich schnelle mich verstecken,</l>
+            <l>Doch umsonst, schon kam er nah,</l>
+            <pb n="96"/>
+            <l>Schon sah ich im Blut mich baden,</l>
+            <l>Da –</l>
+            <l>Sprang mein kleiner Bologneser</l>
+            <l>Knurrend aus dem Bett heraus,</l>
+            <l>Biß den Dolch in seine Waden,</l>
+            <l>Und in diesem Augenblick</l>
+            <l>Stieg der alte Pompadour,</l>
+            <l>Der im Bild am Bette hing,</l>
+            <l>Aus dem Rahmen jetzt heraus:</l>
+            <l>Spitzbub'! – schrie er, – schlechter Kerl!</l>
+            <l>Fort von meines Hauses Perl',</l>
+            <l>Sollst sie nimmer mir berühren,</l>
+            <l>Und mit eigner Hand</l>
+            <l>Warf den Dolch, der sprachlos stand,</l>
+            <l>Er hinaus jetzt zu der Thüre,</l>
+            <l>Warf mir dann ein Busserl<note>Lokal-österreichischer Ausdruck für:
+                  <emph>Küßchen</emph>.</note> zu,</l>
+            <l>Und stieg in der besten Ruh</l>
+            <l>Wieder in sein Bild hinein; –</l>
+            <l>Und ich – schlief ermattet ein.</l>
+          </sp>
+          <pb n="97"/>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Das ist wol, besehn beim Lichte,</l>
+            <l>Eine schreckliche Geschichte. –</l>
+            <l>Wer ist wol der gift'ge Molch,</l>
+            <l>Der dir sandte diesen Dolch?</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Weiß ich's? – Seit ich denken kann,</l>
+            <l>Hab' ich niemand Leid's gethan.</l>
+            <l>Unsern groben</l>
+            <l>Bauern, die im Dorfe sind,</l>
+            <l>Habe ich so manches Kind</l>
+            <l>Liebreich aus der Tauf' gehoben,</l>
+            <l>Wöchnerinnen steh' ich bei,</l>
+            <l>Pilgern, die vorüber wallen,</l>
+            <l>Nicht den <emph>jungen</emph> nur, – auch <emph>alten</emph>,</l>
+            <l>Oeffn' ich dieses Schlosses Hallen,</l>
+            <l>Einen Labetrunk erhalten</l>
+            <l>Immer sie in meinen Mauern,</l>
+            <l>Andre füttr' ich mit Bedauern. –</l>
+            <l>Nein! in meines Herzens Falten</l>
+            <pb n="98"/>
+            <l>Wohnt das Mitleid gegen alle</l>
+            <l>Männer auf dem Erdenballe.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Doch <emph>dein</emph> Mann, wie ist's mit ihm?</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Gegen diesen nur allein</l>
+            <l>Bin ich öfters ungestüm,</l>
+            <l>Das gesteh' ich offen ein.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Wie? wenn sich sein Herz gewendet,</l>
+            <l>Wenn er selbst den Dolch gesendet?</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Ha! – betrachtet in der Näh',</l>
+            <l>Ist's wohl möglich, er ist gäh,</l>
+            <l>Wenn das Mind'ste ihm geschah,</l>
+            <l>War er mit dem Säbel da.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l part="I">Siehst du?</l>
+          </sp>
+          <pb n="99"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="F">Ja, die Ahnung sagt</l>
+            <l>Mir, daß <emph>Er</emph> den Streich gewagt.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Jetzt ist's aus, sein Stündlein schlägt,</l>
+            <l>Fort, du Mitleid, das sich regt,</l>
+            <l>Er, der deinen Tod beschlossen,</l>
+            <l>Werde selber nun durchstoßen.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="I">Still mein Freund!</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l part="F">Ja heute noch</l>
+            <l>Soll sein Blut in Strömen fließen.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Meinetwegen thu' es, – doch</l>
+            <l>Schweig! – ich darf davon nichts wissen.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Sicher werd' ich dich befrein</l>
+            <l>Vom verhaßten Gatten dein!</l>
+          </sp>
+          <pb n="100"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Recht ist's, soll recht lieb mir seyn,</l>
+            <l>Doch nur still, sonst muß ich wohl</l>
+            <l>Meine Ohren mir verhalten.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l><emph>Wie?</emph> ist nur die einz'ge Frage.</l>
+            <l>Wenn ich selber ihn erschlage,</l>
+            <l>Wär' ich freilich so ein Held,</l>
+            <l>Wie er überall gefällt,</l>
+            <l>Aber <emph>neu</emph> ist das nicht mehr.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Schweig, ich bitte dich recht sehr,</l>
+            <l>Meiner Seel'! ich laufe fort.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Halt! – ich hab's, – das ist ganz neu,</l>
+            <l>Schauerlich wohl auch dabei,</l>
+            <l>Schicksal kann ja alle Künste,</l>
+            <l>Und es ist in meinem Dienste. –</l>
+            <l>Ja, das Schicksal soll zum Hund</l>
+            <l>Heute mir noch werden, und</l>
+            <pb n="101"/>
+            <l>Dann im Anfall einer Wuth</l>
+            <l>Mir den alten Rodrich beißen.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(schnell und fröhlich).</stage>
+            <l>Das ist herrlich, das ist gut.</l>
+            <stage>(sich besinnend, daher ihr Gesicht schmerzvoll verziehend und weinerlich)</stage>
+            <l>Schweig, mir will's das Herz zerreißen.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>So wird Rodrich selbst dann wüthend</l>
+            <l>Und kann schreien und kann toben,</l>
+            <l>Wie es an Tragödienhelden</l>
+            <l>Nicht genugsam ist zu loben. –</l>
+            <stage>(zu Kunigunden)</stage>
+            <l>Stimmst du ein?</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(schwankend).</stage>
+            <l>Ja – nein – ja – nein –</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l part="I">Schnell entschlossen!</l>
+          </sp>
+          <pb n="102"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <stage>(als ob sie gar nichts von dem Vorhergesprochenen gehört hätte)</stage>
+            <l part="F">Sprich, wovon</l>
+            <l>Ist die Rede denn, mein Freund?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Von des schlechten Gatten Tod.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Wüßt' ich's, ach, wie würd' ich roth. –</l>
+            <l>Doch, es mag was will geschehen,</l>
+            <l>Zwar werd' ich nicht widerstehen,</l>
+            <l>Aber wissen darf ich's nicht. –</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich</speaker>
+            <stage>(will reden).</stage>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <stage>(ihm den Mund mit einer, sich das Ohr mit der andern Hand verhaltend)</stage>
+            <l>Still! ich kenne meine Pflicht.</l>
+            <stage>(sie läuft ab. Roderich bleibt einige Augenblicke lang stehen, schüttelt dann den
+              Kopf und geht auch ab.)</stage>
+          </sp>
+        </div>
+        <pb n="103"/>
+        <div type="scene">
+          <head>Fünfte Scene.</head>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <stage>(tritt auf).</stage>
+            <lg>
+              <l>Großer Gott! Was mußt' ich sehen?</l>
+              <l>Welch ein Graus!</l>
+              <l>Schöne Ordnung ist im Haus!</l>
+              <l>Wollte zu dem Kasten gehen,</l>
+              <l>Frische Wäsche mir zu nehmen,</l>
+              <l>Ach, wie schrecklich sah's da aus,</l>
+              <l>Meine Gattin soll sich schämen!</l>
+            </lg>
+            <lg>
+              <l>Es waren die Nachtleibchen</l>
+              <l>Gar nicht zugegen,</l>
+              <l>Es lagen die Halstücher</l>
+              <l>Unter den Krägen,</l>
+              <l>Und die Schlafhauben, –</l>
+              <l>Kaum ist's zu glauben! –</l>
+              <l>Lagen – wen soll's nicht befremden,</l>
+              <l>Mitten unter den Hemden!</l>
+              <l>Als ich die Westen besah,</l>
+              <l>Fehlte ein Knöpfchen bald hier und bald da,</l>
+              <l>Und mit den Strümpfen, ach Gott! – mit den Strümpfen,</l>
+              <pb n="104"/>
+              <l>Die sahen aus, als kämen's vom Tanz,</l>
+              <l>Wer sollte da nicht lärmen und schimpfen?</l>
+              <l>Auch nicht einer, – nicht einer war ganz.</l>
+            </lg>
+            <stage>(ernsthaft)</stage>
+            <lg>
+              <l>Wie man klügelt und die Sache drehet,</l>
+              <l>Das Pedal bleibt stets der Menschen Grund,</l>
+              <l>Wenn er auf dem Strumpf nicht fest mehr stehet,</l>
+              <l>Steht er fest nicht auf dem Erdenrund,</l>
+              <l>Drum sey jedes Loch sogleich genähet,</l>
+              <l>Daß er nicht den Fuß sich drücke wund,</l>
+              <l>Schlimm ist's, wenn die Fersen oder Zehen</l>
+              <l>So hinaus in's kalte Leben sehen!</l>
+            </lg>
+            <lg>
+              <l>Strümpfe! – seltsam freundliche Gestalten!</l>
+              <l>Ihr seyd von der Eh' ein redend Bild,</l>
+              <l>Wenn nicht Zweie fest zusammenhalten,</l>
+              <l>Fehlt's! – mit Einem ist ja nichts erzielt;</l>
+              <l>Ach, mein Herz fängt an mir zu erkalten,</l>
+              <l>Und die Ahnung flüstert zu mir wild:</l>
+              <l>Alles mit der Zeit zerreißt auf Erden,</l>
+              <l>Auch der Ehe Band wird locker werden.</l>
+            </lg>
+            <stage>(er steht im dumpfen Nachdenken)</stage>
+          </sp>
+        </div>
+        <pb n="105"/>
+        <div type="scene">
+          <head>Sechste Scene.</head>
+          <stage>Veit. Roderich I.</stage>
+          <sp who="#veit">
+            <speaker>Veit.</speaker>
+            <l>Herr! ein Mann steht draußen, der</l>
+            <l>Euch sogleich zu sprechen wünscht.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l part="I">Sprich, wer ist er denn?</l>
+          </sp>
+          <sp who="#veit">
+            <speaker>Veit.</speaker>
+            <l part="F">Ein Kaufmann.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l part="I">Und sein Name?</l>
+          </sp>
+          <sp who="#veit">
+            <speaker>Veit.</speaker>
+            <l part="F">Herr von Faddumm.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich</speaker>
+            <stage>(sich besinnend).</stage>
+            <l>Fad – dumm – ha! ein seltner Name!</l>
+            <l>Und wie sieht er aus, der Fremde?</l>
+          </sp>
+          <pb n="106"/>
+          <sp who="#veit">
+            <speaker>Veit.</speaker>
+            <l>Wie ein Griech'. – Er hat 'nen Turban</l>
+            <l>Auf dem Kopf, nach Türkenart,</l>
+            <l>Einen pelzverbrämten Schlafrock,</l>
+            <l>Und 'nen langen, langen Bart.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich</speaker>
+            <stage>(für sich).</stage>
+            <l>Was soll's mit dem Griechen seyn? –</l>
+            <l part="I">Ha! was fürcht' ich?</l>
+            <stage>(laut)</stage>
+            <l part="F">Laß ihn ein!</l>
+          </sp>
+          <sp who="#veit">
+            <speaker>Veit</speaker>
+            <stage>(ab).</stage>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Was will dieser Türk' bei mir? –</l>
+            <l>Sieh da! graut es mir doch schier.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Siebente Scene.</head>
+          <stage>Roderich I. Das Schicksal. (als türkischer Kaufmann mit einem Pack unter dem
+            Arme)</stage>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <stage>(legt die rechte Hand auf die Brust)</stage>
+            <l><foreign>Spalla walla Orient</foreign></l>
+            <l><foreign>Fatum Kakla Kompliment.</foreign></l>
+          </sp>
+          <pb n="107"/>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Ich versteh' nicht türkisch, Freund,</l>
+            <l>Sey so gut, red' deutsch mit mir.</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <l>O, ich kenn' auch deutsche Werke,</l>
+            <l>Die fast so wie türkisch klingen,</l>
+            <l>Manche neuere Gedichte</l>
+            <l>Liefern den Beweis dazu.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Komm zur Sach', was wünschest du?</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <l>Lösen möcht' ich von Euch Geld,</l>
+            <l>Habe viel, was Euch gefällt.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Zeig mir deine sieben Zwetschken!</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal</speaker>
+            <stage>(indem es seinen Pack auf den Tisch legt, denselben aufmacht, und Roderichen
+              alles das vorzeigt, was es in der folgenden Rede benennt).</stage>
+            <lg>
+              <l>Werde gleich Euch alles zeigen,</l>
+              <l>Sagt dann, was Ihr wünscht zu eigen:</l>
+            </lg>
+            <pb n="108"/>
+            <lg>
+              <l>Hier sind <emph>Messer</emph> mancherlei;</l>
+              <l>Eines ist dabei,</l>
+              <l>Das ist ganz besonders scharf,</l>
+              <l>Einst ein Sohn es nach dem Vater warf. –</l>
+            </lg>
+            <lg>
+              <l>Seht Ihr die <emph>Kalender</emph> hier,</l>
+              <l>Die sind trefflich, glaubet mir,</l>
+              <l>Alle die verfluchten Tage</l>
+              <l>Seht Ihr drin ganz blutig roth. –</l>
+              <l>Und besonders groß gedruckt</l>
+              <l>Sind darin im Februar</l>
+              <l>Hier der <emph>vier und zwanzigste</emph></l>
+              <l>Und der <emph>neun und zwanzigste</emph>.</l>
+            </lg>
+            <lg>
+              <l>Hier seht Ihr die eine Hälfte</l>
+              <l>Von der reichen <emph>Räuberschärpe</emph>,</l>
+              <l>Die sogleich unsichtbar wird,</l>
+              <l>Wenn darauf ein Schnupftuch liegt.</l>
+            </lg>
+            <lg>
+              <l>Da ist weiter winzig klein</l>
+              <l>Eine <emph>Harf'</emph> von Elfenbein,</l>
+              <l>Diese zeigt das Wetter an,</l>
+              <l>Wenn es regnet oder schneit,</l>
+              <l>Springet dran vorher 'ne Sait'.</l>
+            </lg>
+            <pb n="109"/>
+            <lg>
+              <l>Hier sind <emph>Bücher</emph> vielerlei,</l>
+              <l>Die enthalten viel</l>
+              <l>Von dem neu'sten Styl,</l>
+              <l>Gleichnisse sind drin zu finden,</l>
+              <l>Dran kein Teufel denken würde,</l>
+              <l>Und Erzählungen in Menge,</l>
+              <l>Worte, schwerlich zu verstehen,</l>
+              <l>Und langweilige Trophäen.</l>
+            </lg>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Ach! das sind scharmante Sachen!</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <lg>
+              <l>Hier sind Fläschchen voll mit <emph>Gift</emph> –</l>
+              <l>Da ein <emph>Dolch</emph>, der's Herz gleich trifft, –</l>
+              <l>Hier gemahlte <emph>Hyazinthen</emph>,</l>
+              <l>Prächt'ger nirgend wohl zu finden. –</l>
+            </lg>
+            <lg>
+              <l>Seht, Herr Graf, hier die <emph>Zigeuner</emph>,</l>
+              <l>Die die guten Kinder stehlen</l>
+              <l>Und die Zukunft uns erzählen,</l>
+              <l>Aus Lebkuchen schön geformt.</l>
+            </lg>
+            <pb n="110"/>
+            <lg>
+              <l>Ferner ist ein <emph>Traumbuch</emph> hier,</l>
+              <l>Das auch die verworr'nsten Träume</l>
+              <l>Deutet, wie man eben will. –</l>
+            </lg>
+            <lg>
+              <l>Hier die besten <emph>Blitzmaschinen</emph>,</l>
+              <l>Andre auch zu Wind und Donner, –</l>
+              <l>Eine <emph>Glocke</emph>, schlagend dumpf.</l>
+              <stage>(einen Strumpf, der eben so aussieht, wie der von Kunigunden gestrickte,
+                emporhaltend)</stage>
+              <l>Endlich hier ein großer <emph>Strumpf</emph>!</l>
+            </lg>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich</speaker>
+            <stage>(schnell einfallend)</stage>
+            <l>Strumpf! – ha! das ist's, was ich brauche,</l>
+            <l>Sag, was du dafür verlangst?</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <l>Herr! nicht mehr als <emph>sieben</emph> Groschen,</l>
+            <l>Denn ich hab' ihn <emph>sieben</emph> Jahre,</l>
+            <l><emph>Sieben</emph> Mädchen haben dran,</l>
+            <l>Jede <emph>sieben</emph> Tag' gestricket,</l>
+            <l>Das macht grade <emph>sieben</emph> Wochen,</l>
+            <l><emph>Sieben tausend</emph> Maschen hat er,</l>
+            <l><emph>Sieben</emph> Fäuste ist er lang.</l>
+          </sp>
+          <pb n="111"/>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Ja, – vortrefflich paßt der Strumpf –</l>
+            <l>Zu dem andern, den mein Weib</l>
+            <l>Schon seit <emph>sieben</emph> Wochen strickt. –</l>
+            <l>Hier, mein lieber Kaufmann, sind</l>
+            <l>Sieben neue blanke Groschen,</l>
+            <l>Diesen Strumpf behalte ich.</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <stage>(nimmt das Geld und freudig für sich)</stage>
+            <l>Wohl nun mir! und wehe Euch!</l>
+            <l>Was ich wünsche, ist erzielt,</l>
+            <l>Denn in seine Hand gespielt</l>
+            <l>Hab' ich jetzt den Zwietrachts-Strumpf.</l>
+            <stage>(er packt zusammen.)</stage>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Geh nun, geh, ich brauch' nichts weiter.</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal</speaker>
+            <stage>(die Hand auf die Brust legend)</stage>
+            <l><foreign>Strumpfa mixel Wuthikasi</foreign></l>
+            <l><foreign>Zornos flenem giftika</foreign></l>
+            <pb n="112"/>
+            <l><foreign>Kunigundscha narrischasi</foreign></l>
+            <l><foreign>Adioxos millika.</foreign></l>
+            <stage>(er geht ab.)</stage>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Ha! ich hab' den zweiten Strumpf. –</l>
+            <l>Fort, zu Kunigunden fort,</l>
+            <l>Denn den ersten find' ich dort.</l>
+            <stage>(er will ab.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Achte Scene.</head>
+          <stage>Roderich I. und Kunigunde.</stage>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Wie gerufen, theure Gattinn,</l>
+            <l>Nahest du, mir Rath zu schaffen</l>
+            <l>In dem Zweifel, der mich drängt.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Dem zu helfen, der beengt,</l>
+            <l>Ist ja zarter Frauen Sitte,</l>
+            <l>Leicht bewegt von Männerbitte.</l>
+          </sp>
+          <pb n="113"/>
+          <sp who="#roderich_i">
+            <speaker>Roderich</speaker>
+            <stage>(für sich).</stage>
+            <l>Schön sind ihre Redensarten,</l>
+            <l>Aber häßlich ist sie selbst.</l>
+            <stage>(laut)</stage>
+            <l>Aus dem fernen Morgenlande,</l>
+            <l>Wo die schlechten Türken wohnen,</l>
+            <l>Und man Frau'n zu Millionen</l>
+            <l>Auf dem Markte kaufen kann,</l>
+            <l>Kam zu mir ein Handelsmann,</l>
+            <l>Diesen Strumpf bot er mir an,</l>
+            <l>Und nachdem ich's wohl bedacht,</l>
+            <l>Hab' ich ihn an mich gebracht,</l>
+            <l>Weil er mir nicht theuer schien.</l>
+            <l>Sieben Groschen gab ich hin.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(erschrocken für sich).</stage>
+            <l part="I"><emph>Sieben?</emph></l>
+            <stage>(laut und verlegen)</stage>
+            <l part="F">Strümpfe aus dem Osten</l>
+            <l>Dieses Geld von jeher kosten.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Doch nur <emph>Einen</emph> hatte er,</l>
+            <pb n="114"/>
+            <l>Darum gieb den Andern her,</l>
+            <l>Den du mir seit Wochen strickst.</l>
+            <l>Wenn sich dieser mit dem Deinen</l>
+            <l>Wird zu einem Paar vereinen, –</l>
+            <l>Sind sie von den superfeinen.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(für sich).</stage>
+            <l>Eher einen</l>
+            <l>Nord und Süden</l>
+            <l>Sich in Frieden,</l>
+            <l>Eh' an <emph>eines</emph> Herren Beinen</l>
+            <l>Beide Strümpfe je erscheinen.</l>
+            <stage>(laut)</stage>
+            <l>Ach, verzeihe, deines Wunsches</l>
+            <l>War ich nicht so früh gewärtig,</l>
+            <l>Darum ist er noch nicht fertig,</l>
+            <l>Aber bald will ich ihn schließen.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Nun, das sollst du schrecklich büßen!</l>
+            <l>Ist das meiner Liebe Lohn?</l>
+            <l>Sieben Wochen strickst du schon,</l>
+            <pb n="115"/>
+            <l>Strickst mit <emph>beiden</emph>, beiden Händen,</l>
+            <l>Kannst nicht <emph>einen</emph> Strumpf vollenden?</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>O, der Undank drückt mich nieder,</l>
+            <l>Hab' ich denn sonst nichts zu thun?</l>
+            <l>Können meine zarten Glieder</l>
+            <l>Eine Stunde aus sich ruhn?</l>
+            <l>Wenn der Morgen graut,</l>
+            <l>Und die Sonne, wie 'ne Braut,</l>
+            <l>Wie mit hold verschämten Wangen,</l>
+            <l>Kommt in gold'gem Gluthenprangen,</l>
+            <l>Mach' ich schnell mich auf,</l>
+            <l>Und in raschem Lauf</l>
+            <l>Geh' ich selber auf den Markt,</l>
+            <l>Denn nur leichtgesinnte Frauen</l>
+            <l>Schnödem Wort der Köchinn trauen;</l>
+            <l>Kauf Gemüse ein und Butter,</l>
+            <l>Kauf Geflügel sammt dem Futter,</l>
+            <l>Denn gestopft im Haus,</l>
+            <l>Gibt es dreifach aus;</l>
+            <l>Kauf' bei Bauern mir die Eier,</l>
+            <pb n="116"/>
+            <l>Handle auf den letzten Dreier,</l>
+            <l>Und trag selbst mir heim den Korb,</l>
+            <l>Schließ' es in die Speiseschranken,</l>
+            <l>Muß hier schreien, dorten zanken;</l>
+            <l>Denn der Dienstboth' heut zu Tage</l>
+            <l>Macht der Frau gar viele Plage. –</l>
+            <l>Also geht's vom frühen Morgen</l>
+            <l>Fort bis in die späte Nacht,</l>
+            <l>So mit Kummer und mit Sorgen</l>
+            <l>Wird der Tag dahin gebracht,</l>
+            <l>Bricht der Abend dann herein,</l>
+            <l>Wo sich bei der Lampen Schein</l>
+            <l>Andre Frauen</l>
+            <l>Lassen im Theater schauen,</l>
+            <l>Sitz' ich still daheim,</l>
+            <l>Neue Strümpfe für dich strickend,</l>
+            <l>Oder die zerrißnen flickend.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Die zerrißnen flickst du nicht,</l>
+            <l>Wie es heischt der Frauen Pflicht;</l>
+            <l>Sieh hinein</l>
+            <pb n="117"/>
+            <l>In den Schrein,</l>
+            <l>Ueberzeug dich ganz und gar,</l>
+            <l>Ganz nicht ist ein einzigs Paar!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Und soll <emph>ich</emph> nachlässig heißen,</l>
+            <l>Weil die Strümpfe schnell zerreißen?</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Ohne Zaudern, sag' ich dir,</l>
+            <l>Auf der Stelle gib ihn mir!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Sagt' es schon, ich hab' ihn nicht.</l>
+            <stage>(stampft mit dem Fuß.)</stage>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Nicht? – Nicht? Kunigunde!</l>
+            <l>Hochgewichtig ist die Stunde</l>
+            <l>Uns Beiden;</l>
+            <l>Denn entscheiden</l>
+            <l>Soll sie zwischen mir und dir.</l>
+          </sp>
+          <pb n="118"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Weh, es rollen deine Augen,</l>
+            <l>Und sie gleichen</l>
+            <l>Einem droh'nden Feuerzeichen,</l>
+            <l>Dem die Nachtgespenster weichen.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich</speaker>
+            <stage>(vor sich hinstarrend).</stage>
+            <l>Soll Entsetzliches geschehen,</l>
+            <l>Lassen stets sich Zeichen sehen,</l>
+            <l>Tag muß sich in Nacht verkehren,</l>
+            <l>Wölfe muß das Lamm gebähren,</l>
+            <l>Müssen Hunde heulend wachen,</l>
+            <l>Bei der Nacht muß etwas krachen,</l>
+            <l>Und am wolk'gen Himmelsbogen</l>
+            <l>Soll im blutig <emph>rothen</emph> Schein</l>
+            <l>Minder <emph>roth</emph> zu lesen seyn,</l>
+            <l>Was die Zukunft hegt und trägt,</l>
+            <l>Legt, bewegt und regt und pflegt.</l>
+            <l>Warum gibt denn die Natur</l>
+            <l>Uns nicht eine einz'ge Spur,</l>
+            <l>Wenn ein Weib die Treu verletzt</l>
+            <l>Und dem Manne Hörner setzt?</l>
+          </sp>
+          <pb n="119"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Nahe muß das Unglück seyn,</l>
+            <l>Denn die Angst zieht bei mir ein.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Mir bis jetzt noch theures Weib!</l>
+            <l>Eh noch dieser Tag verrinnet,</l>
+            <l>(Der heut Morgen angefangen,</l>
+            <l>Und heut Abend enden wird),</l>
+            <l>Trennt uns schreckliches Geschick,</l>
+            <l>Drum, du später schlechtes Weib,</l>
+            <l>Komm jetzt noch in meine Arme!</l>
+            <stage>(er umarmt sie)</stage>
+            <l>Und bekenne,</l>
+            <l>Eh ich dich noch treulos nenne,</l>
+            <l>Wo ist der verfluchte Strumpf?</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Wenn der Sänger schlägt die Saiten</l>
+            <l>Und die süßen Lieder gleiten</l>
+            <l>Aus der froh bewegten Brust,</l>
+            <l>In die stille Nacht hinaus,</l>
+            <pb n="120"/>
+            <l>Darfst du fragen,</l>
+            <l>Kann man's sagen,</l>
+            <l>Wo die Kinder stiller Lust</l>
+            <l>Hergekommen, hingegangen?</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich</speaker>
+            <stage>(stark).</stage>
+            <l>Ja, das kann ich, – hergekommen? –</l>
+            <l>Aus des Sängers leerem Magen, –</l>
+            <l>Und gegangen? ganz zerstückelt,</l>
+            <l>Daß man drein Rosinen wickelt.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Können Sterbliche dir künden,</l>
+            <l>Wie die Blume Farb' und Duft</l>
+            <l>Saugt und sendet in die Luft?</l>
+            <l>Wie sie sich zusammen finden?</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich</speaker>
+            <stage>(phlegmatisch).</stage>
+            <l>Wenn man sie in'n Straus thut binden.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Und wenn du, – du starker Geist, –</l>
+            <l>Alles, mehr als Alles weißt,</l>
+            <pb n="121"/>
+            <l>Darfst du fragen allzu kühn,</l>
+            <l>Wo der Strumpf gekommen hin?</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Männer dürfen alles fragen,</l>
+            <l>Weiber müssen alles sagen,</l>
+            <l>Nun zum allerletztenmal,</l>
+            <l>Wo ist die <foreign>causa</foreign> unsrer Qual?</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Schone mich, ich hab' sie nicht.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich</speaker>
+            <stage>(dringend).</stage>
+            <l>Wenn ihn gar der Fremde hätte!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Roderich! ich bin ein Weib,</l>
+            <l>Und den Krämpfen sehr ergeben.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l>Hast du ihm den Strumpf gegeben?</l>
+            <l>Rede, oder gib dein Leben.</l>
+          </sp>
+          <pb n="122"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="I">Wehe mir!</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l part="F">Und wehe ihm!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="I">Wehe uns!</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l part="F">Und wehe euch!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="I">Wehe, wehe!</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich.</speaker>
+            <l part="F">Wehe, wehe!</l>
+          </sp>
+        </div>
+        <pb n="123"/>
+        <div type="scene">
+          <head>Neunte Scene.</head>
+          <stage>Die Vorigen. Roderich II.</stage>
+          <stage>Der Letzte hat den von Kunigunden erhaltenen, am Schienbeine mit einem großen
+            blutrothen <emph>R.</emph> und <emph>T.</emph> und <foreign>№</foreign> 7. gezeichneten
+            Strumpf am rechten Fuße an, am linken trägt er einen Stiefel. Wie ihn Roderich I. und
+            Kunigunde erblicken, fahren sie mit einem Schrei des Entsetzens zurück.</stage>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Wehe, weh! – bin ich verflucht,</l>
+            <l>Daß mir Angst und Schreck und Graus</l>
+            <l>Folgen muß von Haus zu Haus?</l>
+            <l>Wie vor tausend Höllenschaaren</l>
+            <l><emph>Die</emph> vor mir zurückefahren!</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Schrecklich fängt es an zu tagen,</l>
+            <l>Und der Hölle Flammen schlagen</l>
+            <l>Leuchtend auf, daß man ihn sehe</l>
+            <pb n="124"/>
+            <l>Ihren schrecklichen Triumph,</l>
+            <l>Dieser träget meinen Strumpf!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(zu Roderich II.)</stage>
+            <l>Unglücksel'ger Dummrian!</l>
+            <l>Was hast du mir angethan?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Dir nicht, mir that ich ihn an.</l>
+            <l>Die zwei Mächte, die in mir</l>
+            <l>Wild und feindlich sich bestreiten,</l>
+            <l>Soll hier dieses Bild bedeuten,</l>
+            <l>Dieser <emph>Stiefel</emph> und der <emph>Strumpf</emph>.</l>
+            <l>Wie mit wildem Windestosen</l>
+            <l>Reißt der Stiefel mich von hier,</l>
+            <l>Heißet fliehen mich von dir</l>
+            <l>In die weite kalte Welt,</l>
+            <l>Ueber Weichsel, Sau und Belt;</l>
+            <l>Sagt mit seinem Knarren an:</l>
+            <l>Du bist nicht ihr rechter Mann,</l>
+            <l>Mach dich auf, ich trag' dich fort,</l>
+            <l>Stehst hier nicht am rechten Ort.</l>
+            <pb n="125"/>
+            <l>Doch mit seinen tausend Maschen</l>
+            <l>Eine süße Liebeskette</l>
+            <l>Fesselt mich der Strumpf an dich,</l>
+            <l>Und an dich will er mich ziehn,</l>
+            <l>Daß ich nie dir soll entfliehn.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(wirft sich in seine Arme).</stage>
+            <l>Zart empfindsames Gemüth!</l>
+            <l>Wie's nur in Romanen blüht,</l>
+            <l>Nichts trenn' uns bis in den Tod,</l>
+            <l>Esse mit von unserm Brot,</l>
+            <l>Alles steh dir zu Gebot.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Ha, die Frechheit geht zu weit,</l>
+            <l>Bleibe wer es kann gescheit,</l>
+            <l>Mord und Hölle! Tod und Teufel!</l>
+            <l>Thut ein Weib vor ihrem Manne</l>
+            <l>So entsetzlich schlechte That,</l>
+            <l>Dieser Strumpf und der Verrath,</l>
+            <l>Den er glücklich aufgedeckt,</l>
+            <l>Wie das Schicksal ihm befahl;</l>
+            <pb n="126"/>
+            <l>Daß es dich und mich erschreckt,</l>
+            <l>Soll dir ohne Zahl</l>
+            <l>Namenlose Qual</l>
+            <l>Von dem Augenblick bereiten.</l>
+            <l>In das unterste Verließ</l>
+            <l>Meines ohnedieß</l>
+            <l>Tief geleg'nen Schlosses,</l>
+            <l>Wo die Kröten sich befinden,</l>
+            <l>Sollst dein Leben du vertrauern,</l>
+            <l>Und bedauern,</l>
+            <l>Daß du also schlecht gethan</l>
+            <l>An mir so kreuzbravem Mann. –</l>
+            <l>Aber nein! noch Schrecklichers</l>
+            <l>Will ich dir zur Straf' ersinnen,</l>
+            <l>Unter Flachs- und Wollespinnen</l>
+            <l>Soll die Jugend dir entfliehn,</l>
+            <l>Will dir den Kaffee entziehn,</l>
+            <l part="I">Will dir –</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="F">Schweige, Wüthrich!</l>
+            <l>Und ermorde mich.</l>
+          </sp>
+          <pb n="127"/>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Ha, das soll dir nicht gelingen!</l>
+            <l>Bin ich auch nicht von Natur</l>
+            <l>Just der Allerstärkeste,</l>
+            <l>Kunigunde, trau' auf mich,</l>
+            <l>Und dem Schicksal auch vertrau!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Soll ich schrecklich untergehn,</l>
+            <l>Mag es denn geschehn,</l>
+            <l>Wenn das Schicksal, welches droht,</l>
+            <l>Nicht <emph>auf mich allein</emph> nur blitzt,</l>
+            <l>Sondern uns zugleich der Tod</l>
+            <l>Beiden auf der Zunge sitzt.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Nein, das war zu hart, zu schwer,</l>
+            <l>Stirb <emph>allein</emph>, geliebtes Weib!</l>
+            <l>Daß ich ewig dich beweine</l>
+            <l>In dem stillen Mondenscheine.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Nein, stirb <emph>du</emph>!</l>
+            <pb n="128"/>
+            <l>Gerne gönn' ich <emph>dir</emph> die Ruh</l>
+            <l>In dem stillen Friedensthal,</l>
+            <l><emph>Mir</emph> die Qual!</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l part="I">Ha, welch edler Wettstreit!</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l part="F">Halt! –</l>
+            <l>Steht's denn nicht in unsrer Macht,</l>
+            <l>Ab von uns die Noth zu wehren,</l>
+            <stage>(auf Roderich I. deutend)</stage>
+            <l>Und auf <emph>diesen</emph> sie zu kehren?</l>
+            <l>Stimm' nur ein, daß er erscheine</l>
+            <l>Jener grimme Schicksalshund,</l>
+            <l>Und ihm beiße seine Beine</l>
+            <l>Wund.</l>
+            <l>Dann erfaßt ihn wilde Wuth,</l>
+            <l>Und statt unsers fließt sein Blut.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Nie soll diese That geschehen,</l>
+            <l>Denn ich kann das Blut nicht sehen,</l>
+            <pb n="129"/>
+            <l>Ward ein Hühnchen abgestochen,</l>
+            <l>Hab' ich immer mich verkrochen,</l>
+            <l>Selber dann wird mir nicht gut,</l>
+            <l>Seh' ich <emph>weißes</emph> Schneckenblut,</l>
+            <l>Denn weiß oder roth,</l>
+            <l>Todt ist todt! –</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Wähle, sag' ich, auf der Stelle</l>
+            <l>Zwischen Kerker oder Sterben!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Wählen kann ich keins von beiden.</l>
+            <stage>(zutraulich)</stage>
+            <l>Könnten wir uns denn nicht scheiden?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <stage>(dringend)</stage>
+            <l>Laß ihn los den Schicksalshund!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Nein, und nein, und sieb'nmahl nein!</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Wenn dich also nichts bezwingt,</l>
+            <pb n="130"/>
+            <l>Sey verhängt die höchste Qual: –</l>
+            <l>Ich – verkaufe – deinen Schawl!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(sinkt in Ohnmacht)</stage>
+            <l>Ha! das kann kein Weib ertragen.</l>
+            <stage>(rafft sich auf in Wuth)</stage>
+            <l>Nun ist das Erbarmen aus,</l>
+            <l>Katze ist das Schaaf geworden,</l>
+            <l>Und mit meinen Tatzen</l>
+            <l>Möcht' ich ihn zerkratzen. –</l>
+            <l>Wüthend Schicksal! grimmer Hund!</l>
+            <l>Allons, Sultan! jetzt pack an!</l>
+            <stage>(sinkt erschöpft in Roderichs II. Arme.)</stage>
+          </sp>
+          <stage>Das Schicksal als weißer Pudel mit einem blutrothen Schweif und Kopf springt durch
+            das Fenster zur Linken auf die Bühne, und auf Roderich I. los. Dieser entspringt durch
+            das entgegengesetzte Fenster, der Schickssalpudel ihm nach.</stage>
+        </div>
+        <div type="scene">
+          <head>Zehnte Scene.</head>
+          <stage>Kunigunde. Roderich II.</stage>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <stage>(ist beschäftigt Kunigunden aus ihrer Ohnmacht zu wecken)</stage>
+            <l part="I">Ach, erwache!</l>
+          </sp>
+          <pb n="131"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="F">Nein, ich kann nicht.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l part="I">Blick mich an.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="F">Was ist zu schaun?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich</speaker>
+            <stage>(einen Flacon ihr vor die Nase haltend).</stage>
+            <l part="I">Hier ist Hirschhorngeist.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="F">Der hilft nicht.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich</speaker>
+            <stage>(einen andern nehmend).</stage>
+            <l part="I">Köllnerwasser.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l part="F">Ist kein ächtes.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Kann auch Liebe dich nicht wecken?</l>
+          </sp>
+          <pb n="132"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Noch zu wenig für den Schrecken.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich</speaker>
+            <stage>(beugt sich über sie hin und sagt zärtlich)</stage>
+            <l>Noch das Letzte sey versucht,</l>
+            <l>Dich dem Leben zu gewinnen,</l>
+            <l>Will er dir den Schawl entreißen,</l>
+            <l>Kauf' ich zweie dir dafür,</l>
+            <l>Einen rothen, einen weißen.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(richtet sich schnell auf).</stage>
+            <l>Neues Leben</l>
+            <l>Hast du, Theurer, mir gegeben,</l>
+            <l>Wo kam jener Wüthrich hin?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich.</speaker>
+            <l>Von dem Schicksal wuthentbrannt</l>
+            <l>Angebissen,</l>
+            <l>Kommt er schon daher gerannt.</l>
+          </sp>
+        </div>
+        <pb n="133"/>
+        <div type="scene">
+          <head>Elfte Scene.</head>
+          <stage>Roderich I. Die Vorigen.</stage>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <stage>(welcher wüthend und verstört hereinstürzt).</stage>
+            <l>Sonne, warum leuchtest du?</l>
+            <l>Säulen, warum wankt ihr nicht?</l>
+            <l>Erde, warum bebst du nicht?</l>
+            <l>Wasser, warum braus'st du nicht?</l>
+            <l>Lüfte, warum heult ihr nicht?</l>
+            <l>Feuer, warum sengst du nicht?</l>
+            <l>Ach, warum? warum? warum?</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Wehe, weh! was muß ich schauen?</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Unglückseligste der Frauen,</l>
+            <l>Und der Weiber nebenbei!</l>
+            <l>Reiß dir aus dein Lockenhaar,</l>
+            <l>Was doch immer zausig war,</l>
+            <pb n="134"/>
+            <l>Laß zur häßlichsten der Fratzen</l>
+            <l>Dir dein Angesicht zerkratzen,</l>
+            <l>Daß kein Unglück kann geschehen,</l>
+            <l>Wenn dich wieder Fremde sehen.</l>
+            <stage>(Pause)</stage>
+            <l>Ha! was starrst du so mich an?</l>
+            <l>Bin ich Rodrich nicht, dein Mann?</l>
+            <l>Willst du mich nicht mehr erkennen,</l>
+            <l>Weil ich wüthend bin geworden?</l>
+            <l>Willst du mich vielleicht ermorden</l>
+            <l>Und dir deinen Buhlen nehmen?</l>
+            <l>Thu's, wenn du zu todt dich grämen</l>
+            <l>Nach dem Hochzeitfeste willst. –</l>
+            <l>Ha! ha! ha! die Hölle wartet</l>
+            <l>Auf den Hochzeitbraten schon,</l>
+            <l>Wenn die <emph>Mutter</emph> nimmt den <emph>Sohn</emph>,</l>
+            <l>Gibt der Teufel einen Schmaus.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Weh! was spricht sein Wahnsinn aus</l>
+            <l>Von der Mutter und dem Sohn?</l>
+          </sp>
+          <pb n="135"/>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Welche Ahnung fliegt mich an?</l>
+            <l>Heiß' ich Rodrich nicht, wie er?</l>
+            <l>Warum fällt's mir jetzt erst ein?</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Wenn er jener Rodrich wär',</l>
+            <l>Den ich meinen Sohn genannt,</l>
+            <l>Der mir ist abhand gekommen,</l>
+            <l>Den ich nie dann wieder fand! –</l>
+            <l>Warum wird mir so beklommen?</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Klügelt, klügelt nur gewandt,</l>
+            <l>Mit Verstand</l>
+            <l>Richtet man jetzt nichts mehr aus,</l>
+            <l>Und der <emph>Wahnsinn</emph> bringt heraus,</l>
+            <l>Was kein <emph>Leibnitz</emph> und kein <emph>Kant</emph></l>
+            <l>Durch Philosophie erfand.</l>
+            <l>Zeichen müssen sich begeben,</l>
+            <l>Soll sich uns das Leben</l>
+            <l>Klar und deutlich offenbaren,</l>
+            <pb n="136"/>
+            <l>Traum und Ahnung läßt erfahren</l>
+            <l>Der Natur geheimes Band; –</l>
+            <l>Will man, wer man ist, erfahren,</l>
+            <l>Stürzen Bilder von der Wand. –</l>
+            <stage>(Das Bild im Hintergrunde fällt von der Wand herab, es stellt Roderich II. als
+              Kind vor, mit einem Pudel mit rothem Kopf und Schwanze spielend.)</stage>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <stage>(rafft es auf und hält es Kunigunden vor).</stage>
+            <l>Und die Mutter sieht den Sohn,</l>
+            <l>Der als Knabe schon</l>
+            <l>Abgerichtet hat den Hund,</l>
+            <l>Welcher beißt den Vater wund,</l>
+            <l>Weil er in ein Weib entbrennet,</l>
+            <l>Das sich seine Mutter nennet.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Wehe mir, es ist mein Sohn!</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Kann's nicht glauben, liebe Mutter!</l>
+          </sp>
+          <pb n="137"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Trägst du nicht auf deinem Leibe</l>
+            <l>Eingebrannt ein seltsam Zeichen?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <stage>(sich den linken Aermel aufstreifend)</stage>
+            <l>Hier 'nen blutig rothen Strumpf.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(besieht ihn)</stage>
+            <l>Ha! der Strumpf! – Er ist mein Sohn!</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Kann es noch nicht fassen, – nein!</l>
+            <l>Alles kann nur Zufall seyn.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Zufall? kann der Zufall herrschen,</l>
+            <l>Wenn das Schicksal uns beherrscht?</l>
+            <l>Doch wir wollen's eruiren,</l>
+            <l part="I">Nenn' dich mir.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l part="F">Nun wohl, ich heiße</l>
+            <l><emph>Roderich von Taubenklee</emph>.</l>
+          </sp>
+          <pb n="138"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Wehe, wehe, weh mir! weh!</l>
+            <l>Ja, du bist, du bist mein Sohn,</l>
+            <l>Und vielleicht der Sohn des Mannes,</l>
+            <l>Der in Wuth hier vor uns steht,</l>
+            <l><emph>Roderich von Taubenklee</emph>,</l>
+            <l part="I">So wie du genannt.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <stage>(gegen diese Idee sich mit Macht wehrend)</stage>
+            <l part="F">O nein!</l>
+            <l>Nimmer kann er also heißen.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Willst du meinen Namen mir</l>
+            <l>Eben wie mein Weib entreißen?</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Sieh, der Strumpf hier, den du trägst,</l>
+            <l>Ist für ihn gestrickt, gemerket</l>
+            <l>Auch mit seinem Namenszeichen,</l>
+            <l><emph>R</emph> und <emph>T</emph> steht deutlich hier.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <stage>(zitternd)</stage>
+            <l>Was bedeutet <emph>R.</emph> und <emph>T.</emph>?</l>
+          </sp>
+          <pb n="139"/>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l><emph>Roderich von Taubenklee!</emph></l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <stage>(sich an die Stirn schlagend, dumpf)</stage>
+            <l><emph>Reite, Teufel!</emph> heißt es auch.</l>
+            <l>Ja, ich bin dein schlechter Sohn –</l>
+            <l>All dieß Unglück nicht entstand,</l>
+            <l>Hätt' ich früher mich genannt.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Jetzo ist der Augenblick,</l>
+            <l>Daß ich komm' um den Verstand.</l>
+            <stage>(sie bleibt im stillen Wahnsinn stehen.)</stage>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l><emph>Wuth</emph> hat es an's Licht gebracht,</l>
+            <l>Was verdunkelt lag in Nacht.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <stage>(stürzt zu seinen Füßen.)</stage>
+            <l>Vater, kannst du mir verzeihen?</l>
+          </sp>
+          <pb n="140"/>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Können thu' ich's, wenn ich's will,</l>
+            <l>Doch ich will nicht, schlechter Bube! –</l>
+            <l>Stracks hol' – einen blanken Degen,</l>
+            <l>Rächen muß ich meine Schmach,</l>
+            <l>Und das alles Weh und Ach</l>
+            <l>Mög' im Haus sich hier bewegen,</l>
+            <l>Will ich meinen Sohn erlegen,</l>
+            <l>Daß die Höll' soll triumphiren</l>
+            <l>Und der Schmerz die Frauen rühren,</l>
+            <l>Will ich eine That vollführen,</l>
+            <l>Die in Wuth ist ausgegohren</l>
+            <l>Und der Wahnsinn hat geboren,</l>
+            <l>Meinen Sohn will ich durchbohren.</l>
+            <stage>(ab.)</stage>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Mit dem Vater soll ich fechten?</l>
+            <l>Ja, da traf er auf den Rechten,</l>
+            <l>Ach, ich armer Rittersmann,</l>
+            <l>Der ich solches Zeug nicht kann,</l>
+            <l>Wie fang' ich zu fechten an?</l>
+            <stage>(ab.)</stage>
+          </sp>
+        </div>
+        <pb n="141"/>
+        <div type="scene">
+          <head>Zwölfte Scene.</head>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(allein – wahnsinnig).</stage>
+            <l>'s ist gut,</l>
+            <l>Recht gut,</l>
+            <l>Das Taubenblut,</l>
+            <l>Sehr, sehr mir's schmecken thut!</l>
+            <stage>(lächelnd)</stage>
+            <l>In Hainfeld drauß'</l>
+            <l>Ist ein kleines Haus,</l>
+            <l>Da –</l>
+            <l>Ja –</l>
+            <stage>(sich besinnend)</stage>
+            <l>Was? –</l>
+            <stage>(schauerlich)</stage>
+            <l>Ein großes Faß –</l>
+            <stage>(sie spielt mit ihren Locken, welche sie auflös't)</stage>
+            <l>Wenn sie tanzen beim Bock</l>
+            <l>Im dritten Stock,</l>
+            <stage>(sich besinnend)</stage>
+            <l>Nein, – zu ebener Erd',</l>
+            <pb n="142"/>
+            <l>Weißt ja eh:</l>
+            <l>Man nennt es <foreign>rez-de-chaussée</foreign>.</l>
+            <stage>(sie singt)</stage>
+            <l>Grüner Klee,</l>
+            <l>Warum so roth?</l>
+            <l>Bäuerinn, sollst heim gehn,</l>
+            <l>Dein Mann ist todt!</l>
+            <stage>(sie geht singend ab.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dreizehnte Scene.</head>
+          <stage>Freier Platz vor Roderichs I. Burg. Das Schloß im Hintergrunde ist
+            praktikabel.</stage>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <stage>(tritt mit einer Rosoglioflasche in der Hand auf).</stage>
+            <l>Alles Unglück dieser Erde</l>
+            <l>Hat nur mich allein erkohren</l>
+            <l>Sich zum Ziele und Bestand,</l>
+            <l>Andre Trauerspielshelden</l>
+            <l>Fühlen selten</l>
+            <l>Eine Scheue</l>
+            <pb n="143"/>
+            <l>Vor dem <emph>Wasser</emph> und der Weihe,</l>
+            <l>Die dem Dichter draus erfloß,</l>
+            <l>Mir allein graut vor dem Wasser,</l>
+            <l>Seit das Schicksal mich gebissen,</l>
+            <l>Und die Flasche mit Rosoglio</l>
+            <l>Will mir nimmer aus der Hand.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierzehnte Scene.</head>
+          <stage>Roderich I. und Roderich II.</stage>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Vater, daß ich tapfer war,</l>
+            <l>Hab' ich gestern kund gegeben,</l>
+            <l>Als mit eigener Gefahr</l>
+            <l>Ich gerettet Euer Leben;</l>
+            <l>Doch das Unglück, das herein</l>
+            <l>Ueber uns gebrochen ist,</l>
+            <l>Hat die Kräfte mir gelähmt,</l>
+            <l>Und beschämt</l>
+            <l>Muß ich frei heraus es sagen:</l>
+            <pb n="144"/>
+            <l>Nicht kann ich es wagen,</l>
+            <l>Mich mit Euch zu schlagen.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Hast du keine Ehr' im Leibe,</l>
+            <l>Bist du auch von meinem Weibe</l>
+            <l>Sicherlich der rechte Sohn;</l>
+            <l>Aber hier gilt kein Pardon,</l>
+            <l>Einer muß davon</l>
+            <l>Tragen seinen Lohn! –</l>
+            <l>Willst mir's Trauerspiel verderben,</l>
+            <l>Und soll kein Verwandter sterben?</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Fechten kann ich nicht, und schießen</l>
+            <l>Können wir uns desto minder,</l>
+            <l>Denn das Trauerspiel von heut</l>
+            <l>Spielet in der frühsten Zeit,</l>
+            <l>Und das Pulver wird doch nicht</l>
+            <l>Einer von uns Zwei'n erfinden,</l>
+            <l>Da's noch nicht erfunden <emph>ist</emph>? –</l>
+            <l>Doch wie wär' es, wenn wir etwa –</l>
+          </sp>
+          <pb n="145"/>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Laß doch hören, theurer Sohn!</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Sagt, wie wär' es, wenn wir nähmen</l>
+            <l>Diese Flasche mit Rosoglio,</l>
+            <l>Und ein Fläschchen voll mit Gift,</l>
+            <l>Gäben beide dann zusammen</l>
+            <l>In den großen Schicksalsstrumpf,</l>
+            <stage>(zieht den Strumpf heraus)</stage>
+            <l>Zögen so aus der Lott'rie</l>
+            <l>Unser Leben, unsern Tod?</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <stage>(für sich)</stage>
+            <l>Wie gescheidt der Junge spricht,</l>
+            <l>O, ich bin sein Vater nicht!</l>
+            <stage>(laut)</stage>
+            <l>Gut! der Vorschlag läßt sich hören,</l>
+            <l>Doch thät dieses ihn erschweren,</l>
+            <l>Daß kein Weinhaus in der Nähe,</l>
+            <l>Wo man Gift sich könnte kaufen.</l>
+          </sp>
+          <pb n="146"/>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Schicksalsmächte! steht uns bei,</l>
+            <l>Daß das Große wir vollbringen</l>
+            <l>Und das Werk uns mög' gelingen!</l>
+            <stage>(Der Schicksalspudel läuft herein und trägt ein Fläschchen Wein im Munde, welches
+              er dem Roderich II. apportirt, dann läuft er wieder davon.)</stage>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Ha! seht in die Flasch' hinein,</l>
+            <l>Dieses ist ein Guldenwein,</l>
+            <l>Der muß schrecklich giftig seyn.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Nun wohlan, gieb her den Strumpf,</l>
+            <l>Und die Flaschen gieb hinein.</l>
+            <stage>(das Theater verfinstert sich, Donner, Blitz und Wind)</stage>
+            <l>Wie die Stürme heulen</l>
+            <l>Und die Blitz' durcheilen</l>
+            <l>Rabenschwarze Nacht,</l>
+            <l>Weil Verfluchtes wird vollbracht!</l>
+            <stage>(sie haben die Flaschen in den Strumpf gebracht)</stage>
+            <l>Wer der Dümmste ist, der zieht!</l>
+          </sp>
+          <pb n="147"/>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Darum mir der Zug gebührt.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Nein, wer solchen Sohn erzieht,</l>
+            <l>Ist der Dümmste, drum bin <emph>ich's</emph>.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Dümmer</l>
+            <l>Immer</l>
+            <l>Ist der Sohn.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>So spricht nur Bescheidenheit.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Der Beweis steht Euch bereit.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Ha, der Sohn mir widerspricht.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>So es heischt die Sohnespflicht.</l>
+          </sp>
+          <pb n="148"/>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Schicksal wieder soll entscheiden,</l>
+            <l>Wem der Wein gehört von Beiden.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Gut, denn dieß hat nie betrogen,</l>
+            <l>Kaum fünf – sechsmal hat's gelogen.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfzehnte Scene.</head>
+          <stage>Kunigunde (tritt wahnsinnig aus dem Schloß) und die beiden Roderiche.</stage>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(singend)</stage>
+            <l>Jetzt auf die Wies' ich geh,</l>
+            <l>Will suchen rothen Klee; –</l>
+            <l>Taubenblut</l>
+            <l>Dünget gut.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Deutlich sprichst du, Schicksal, aus</l>
+            <l>Deinen Willen, daß dieß Haus</l>
+            <pb n="149"/>
+            <l>Durch sich selber soll verderben.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <l>Vater! sieh die Mutter an,</l>
+            <l>Scheint sie nicht uns hergesandt,</l>
+            <l>Daß von uns durch ihre Hand</l>
+            <l>Einer soll den Tod empfah'n?</l>
+            <l><emph>Sie</emph> kann nicht partheiisch seyn,</l>
+            <l>Wie die süßen Waisenkinder</l>
+            <l>In den weißen Sterbekitteln,</l>
+            <l>Die aus den Lott'rien</l>
+            <l>Nummern ziehen,</l>
+            <l>Sie soll ziehen unser Loos.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Wohl gesprochen, braver Sohn!</l>
+            <l>Kunigunde trete näher.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde.</speaker>
+            <l>Sie sagen mir,</l>
+            <l>Du seyst mein Schwäher,</l>
+            <l>Und weil <emph>dir</emph> ich angetraut,</l>
+            <l>Soll ich werden <emph>seine</emph> Braut.</l>
+          </sp>
+          <pb n="150"/>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Greif in diesen Strumpf hinein,</l>
+            <l>Tod und Leben birgt sich drein;</l>
+            <l>Wähle wer von uns soll sterben</l>
+            <l>Und den Andern soll beerben!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(greift in den Strumpf)</stage>
+            <l>Wem gehört das Pfand,</l>
+            <l>Das ich hab' in meiner Hand?</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <stage>(schreit)</stage>
+            <l>Mir!</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(sucht lange im Strumpf herum, zieht endlich das Weinfläschchen heraus, das sie
+              ihrem Gatten gibt.)</stage>
+            <l>Hier!</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <stage>(sieht starr auf die Flasche)</stage>
+            <l>Tod! und also wirklich sterben?</l>
+            <l>Was ist das wohl für ein Laut,</l>
+            <pb n="151"/>
+            <l>Der so schrecklich trifft mein Ohr?</l>
+            <l>Sterben? muß das nicht ein Jeder,</l>
+            <l>Dieser früher, Jener später?</l>
+            <l>Sind nicht alle die Millionen,</l>
+            <l>Die jetzt in der Grube wohnen,</l>
+            <l>Und die alle einstens lebten,</l>
+            <l>Sind denn die nicht auch gestorben?</l>
+            <l>Sieht man nicht im Todtenzettel</l>
+            <l>Täglich welche, die gegangen?</l>
+            <l><emph>Warum</emph> fühle ich just Bangen,</l>
+            <l>Weil mein Kukuk hat geschrien?</l>
+            <l>Ruhig, bald, bald bist du hin,</l>
+            <l>Opfre dich, es ist doch besser,</l>
+            <l>Wenn ein also starker Esser</l>
+            <l>Räumt die Erde, dreimal größer</l>
+            <l>Werden Semmeln dann und Brot,</l>
+            <l>Wird es kundig, daß ich todt; –</l>
+            <l>Denn wenn Alles leben bliebe</l>
+            <l>Und des Sensemannes Hiebe</l>
+            <l>Streiften fruchtlos durch die Luft,</l>
+            <l>Jeder Tölpel, jeder Schuft</l>
+            <l>Ruhig seine Zeit genösse,</l>
+            <pb n="152"/>
+            <l>Immer tränke, immer fräße,</l>
+            <l>Würde wohl die Erd' ernähren</l>
+            <l>All die Leute, die da stündlich</l>
+            <l>Speis' und Trank begehren?</l>
+            <l>Wenn kein Galgen und kein Rad</l>
+            <l>Drohete der bösen That,</l>
+            <l>Wer wär' sicher, daß die Mütze</l>
+            <l>Man ihm nicht vom Haupt stibitze?</l>
+            <l>Wenn durch feindliche Gewalten</l>
+            <l>Angetrieben, die Verwandten,</l>
+            <l>Eltern, Kinder, Vettern, Tanten,</l>
+            <l>Nicht einander tödten thäten,</l>
+            <l>Wie entstünden Trauerspiele</l>
+            <l>Und am Schmerz die süße Lust?</l>
+            <l>Drum getrost, bald ist's geschehn,</l>
+            <l>Und kein Hahn wird um mich krähn.</l>
+            <stage>(setzt die Flasche an und hält wieder ein)</stage>
+            <l>Nicht der Tod ist's, nein, die Art</l>
+            <l>Wie ich sterbe, – die ist hart.</l>
+            <l>Wenn durch Gift ich, wenn durch Dolch,</l>
+            <l>Wenn durch einen bösen Molch,</l>
+            <l>Wenn ich stürbe durch mein Schwerdt,</l>
+            <pb n="153"/>
+            <l>Wär's wohl des Verderbens werth,</l>
+            <l>Aber so durch Schwefelwein</l>
+            <l>Hinzusterben, ist 'ne Pein;</l>
+            <l>Doch getrost, es muß ja seyn,</l>
+            <l>Daß der alte Rodrich sterbe.</l>
+            <stage>(er trinkt und schaudert zurück.)</stage>
+            <l>Pfui! wie sauer und wie herbe.</l>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(singt)</stage>
+            <l>Vöglein ist gestorben,</l>
+            <l>Vöglein ist verdorben,</l>
+            <l>Vöglein war so hübsch.</l>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Ach, wie brennt's in den Gedärmen,</l>
+            <l>Wie die Guten da sich härmen.</l>
+          </sp>
+          <sp who="#roderich_ii">
+            <speaker>Roderich II.</speaker>
+            <stage>(der bis jetzt sinnend da gestanden, fährt plötzlich auf.)</stage>
+            <l>Schrecklich, schrecklich hat das Schicksal</l>
+            <l>Alle, die wir hier, betrogen,</l>
+            <l>Und die Ahnung hat gelogen,</l>
+            <l>Die mich Armen hergezogen,</l>
+            <pb n="154"/>
+            <l>Doch soll's unsern Schmerz nicht sehen,</l>
+            <l>Und vereinigt wollen wir</l>
+            <l>Alle vier – <stage>(besinnt sich)</stage></l>
+            <l>Alle dreie untergehen.</l>
+            <stage>(nimmt Roderich I. die Flasche aus der Hand, und trinkt, indem er ihn umarmt
+              hält.)</stage>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(singt)</stage>
+            <l>Wenn der Klee verdirbt,</l>
+            <l>Das Täublein stirbt.</l>
+            <stage>(sie stellt sich zwischen beide und trinkt ebenfalls. Die drei halten sich und
+              bleiben fest umfangen.)</stage>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>Jetzo wär's die beste Zeit</l>
+            <l>Zum vereinten Untergang.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Sechszehnte Scene.</head>
+          <stage>Die Vorigen, das Schicksal (als Schicksal).</stage>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal</speaker>
+            <stage>(hohnlachend)</stage>
+            <l>Meinen Zweck hab' ich erreicht,</l>
+            <pb n="155"/>
+            <l>Durch Euch selber geht ihr unter. –</l>
+            <l>Zur Hölle</l>
+            <l>Drei Sünder ich stelle,</l>
+            <l>Wohlan, wohlan,</l>
+            <l>Zur Hölle <emph>hinan</emph>!</l>
+            <l>Doch nicht ihr allein,</l>
+            <l>Eurer ganzes Haus</l>
+            <l>Muß verdorben seyn!</l>
+            <stage>(es nimmt Kunigunden den Strumpf aus der Hand und schwingt ihn in die
+              Luft.)</stage>
+            <l>Stürze ein, stürze ein,</l>
+            <l>Alter Sündenschrein!</l>
+            <stage>(das Schloß stürzt mit fürchterlichem Gekrache zusammen.)</stage>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <l>s' ist recht Schade um den Bau,</l>
+            <l>Nicht wahr, liebe Frau?</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <l>Still! kein Wort wird mehr gesprochen,</l>
+            <l>Jetzo heißt es untergehen!</l>
+            <stage>(Das Schicksal schließt sich an sie an, stampft auf den Boden, der sich öffnet
+              und sie aufnimmt. Wie sie zur <pb n="156"/> Hälfte versunken sind, erschallen drei
+              starke Donnerschläge, es blitzt und man hört ein Posthorn blasen, das Theater umzieht
+              sich mit Wolken und Moralino steigt aus einer andern Versenkung mit einem Actenstücke
+              in der Hand hervor.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Siebenzehnte Scene.</head>
+          <stage>Die Vorigen. Moralino.</stage>
+          <sp who="#moralino">
+            <speaker>Moralino</speaker>
+            <stage>(wackelt herzu)</stage>
+            <l>Halt, o halt, ins Teufelsnamen!</l>
+            <l>Großer Irrthum waltet ob,</l>
+            <l>Hier ist die Urkunde,</l>
+            <l><emph>Die</emph> Kunigunde</l>
+            <l>Ist nicht jene, die du suchst,</l>
+            <l>Wegen welcher du verflucht; –</l>
+            <l>Diese birgt schon längst die Erde,</l>
+            <l>Machtest dir umsonst Beschwerde.</l>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <l>Ueber den verdammten Alten,</l>
+            <l>Immer muß er mich aufhalten.</l>
+            <pb n="157"/>
+            <stage>(steigt aus der Versenkung herauf, die drei andern wollen ihm nach)</stage>
+            <l>Bitte schönstens zu verweilen,</l>
+            <l>Muß erst lesen jene Zeilen,</l>
+            <l>Wie die Sache sich verhält.</l>
+            <stage>(nimmt dem Moralino die Urkunde aus der Hand und lieset)</stage>
+            <p>»Kund und zu wissen thun wir hiermit Jedermänniglich und Jedweiblich, und Jedwedem,
+              dem's vonnöthen und nicht vonnöthen, absonderlich aber unserm vielgeliebten getreuen
+              Mosje Michel Faddumm, priviligirtem Trauerspiels-Schicksal, wienach die auf Erden
+              verweilende Kunigunde von Taubenklee, nichtehrsame Hausfrau ihres Mannes, nicht jene
+              von unserm oberwähnten lieben Mosje Faddumm so lang gesuchte und uns zu überliefern
+              kommende Schwester seye, als welche Letztere schon längst bei uns als wohlbestellte
+              Spitzbubenseelenbratenwenderinn zu unserer völligen Zufriedenheit den Bratspieß dreht,
+              und habe sich Mosje Faddumm ohne weiters zu Uns zurück zu begeben, besagte von
+              Taubenkleeische Familie unangefochten zu lassen, und ist ab-, zur Ruhe <pb n="158"/>
+              und Erstattung der gerichtlichen und ungerichtlichen Kosten und aller Schaden ohne
+              weitere Mäßigung oberrichterlichst verwiesen.</p>
+            <p>Welche in bester Form Rechtens ausgefertigte Urkunde mit Unserm allerschwärzesten
+              Brandzeichen versehen ist.</p>
+            <p>Gegeben auf unserm Lustschloffe <emph>Tartarus</emph> am Stix, am 7. Februar
+              77,777.</p>
+            <p>Unterzeichnet:</p>
+            <p><emph>Pluto der Letzte.</emph></p>
+            <p>Contrasignirt:</p>
+            <p><emph>Belzebub</emph>, Sekretär.«</p>
+            <stage>(Während er liest, hört man sehr entfernt und sehr leise folgenden
+              Grabgesang.)</stage>
+            <l>Wird das Schicksal einmal toll,</l>
+            <l>Weiß es seinen Mann zu finden,</l>
+            <l>Wen es einmal schinden soll,</l>
+            <l>Lasse sich geduldig schinden.</l>
+            <stage>(von hier an wird alles sehr pflegmatisch gesprochen)</stage>
+          </sp>
+          <sp who="#moralino">
+            <speaker>Moralino.</speaker>
+            <p>Euer Grabgesang, liebe Kinder, ist da hinten <pb n="159"/> gesungen worden, aber das
+              hat nichts zu bedeuten, kommt nur herauf, ihr lebt alle drei noch sehr lange.</p>
+            <stage>(Die drei steigen aus der Versenkung, welche offen bleibt.)</stage>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal</speaker>
+            <stage>(ganz verdutzt und in größter Verlegenheit)</stage>
+            <p>Meine Lieben, ich muß Ihnen sagen, ich bin ganz verwirrt. Ich bitte Sie tausendmal um
+              Vergebung, daß ich Sie so inkommodirt habe! Es ist ein Verstoß, ich weiß nicht wo die
+              Ursache liegt, aber es ist geschehn; – und meine einzige Vertheidigung sey, ich bin
+              gewiß nicht das erste Schicksal, das sich <emph>geirrt</emph> hat.</p>
+          </sp>
+          <sp who="#roderich_i">
+            <speaker>Roderich I.</speaker>
+            <p>Sie haben's ein wenig arg gemacht.</p>
+          </sp>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal.</speaker>
+            <p>Seyn Sie ein guter Herr und ergeben Sie sich, damit Sie aber sehen, daß ich ein
+              honettes Schicksal bin, so will ich Ihnen Ihr Haus gleich wieder aufbauen.</p>
+            <stage>(es winkt, das Schloß erhebt sich zwischen den Wolken, welche sich zertheilen,
+              wieder in seiner vorigen Gestalt.)</stage>
+          </sp>
+          <pb n="160"/>
+          <sp who="#das_schicksal_dolch">
+            <speaker>Schicksal</speaker>
+            <stage>(steigt in die Versenkung)</stage>
+            <p>Behüt' Sie Gott allerseits.</p>
+          </sp>
+          <sp who="#moralino">
+            <speaker>Moralino.</speaker>
+            <p>Sie! – Ihren Strumpf haben Sie vergessen, nehmen Sie ihn mit.</p>
+            <stage>(Schicksal bedankt sich und versinkt.)</stage>
+          </sp>
+          <sp who="#kunigunde">
+            <speaker>Kunigunde</speaker>
+            <stage>(zu Moralino)</stage>
+            <p>Jetzt bitt' ich Sie, warum ist das Alles geschehen?</p>
+          </sp>
+          <sp who="#moralino">
+            <speaker>Moralino</speaker>
+            <stage>(mit Salbung)</stage>
+            <l>Warum?</l>
+            <l>Weil das Schicksal war so dumm.</l>
+            <l><emph>Wär' kein Schicksal dumm auf Erden,</emph></l>
+            <l><emph>Könnten Trauerspiele werden????</emph></l>
+            <stage>(Alle küssen ihm die Hand.)</stage>
+            <l>Es ist schon gut.</l>
+            <stage>(Er verschwindet in die Wolken. Der Vorhang fällt.)</stage>
+          </sp>
+          <trailer>Ende.</trailer>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
