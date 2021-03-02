@@ -1,0 +1,1283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Blunt oder der Gast</title>
+        <title type="sub">Ein Schauspiel in einem Aufzuge</title>
+        <author>
+          <persName>
+            <forename>Karl</forename>
+            <forename>Philipp</forename>
+            <surname>Moritz</surname>
+          </persName>
+          <idno type="wikidata">Q215781</idno>
+          <idno type="pnd">118584162</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000528</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q105729385</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Google Books</name>
+          <idno type="URL"
+            >https://books.google.com/books?id=jBZaAAAAcAAJ&amp;printsec=frontcover</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <title>Blunt oder der Gast. Ein Schauspiel in einem Aufzuge. Berlin: Wever 1781.</title>
+            <date type="print" when="1781"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="gertrude" sex="FEMALE">
+            <persName>Gertrude</persName>
+          </person>
+          <person xml:id="blunt" sex="MALE">
+            <persName>Blunt</persName>
+          </person>
+          <person xml:id="adelheid" sex="FEMALE">
+            <persName>Adelheid</persName>
+          </person>
+          <person xml:id="der_fremde" sex="MALE">
+            <persName>Der Fremde</persName>
+          </person>
+          <person xml:id="der_buergermeister" sex="MALE">
+            <persName>Der Bürgermeister</persName>
+          </person>
+          <person xml:id="mariane" sex="FEMALE">
+            <persName>Mariane</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#blunt #gertrude"/>
+            <relation name="parent_of" active="#blunt #gertrude" passive="#adelheid #der_fremde"/>
+            <relation name="parent_of" active="#der_buergermeister" passive="#mariane"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2021-03-02">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <pb n="1"/>
+      <div type="front">
+        <head>Blunt oder der Gast.</head>
+        <head>Ein Schauspiel in einem Aufzuge</head>
+        <head>von Carl Philipp Moritz.</head>
+        <dateline>Berlin, bey Arnold Wever, 1781.</dateline>
+      </div>
+      <pb n="2"/>
+      <pb n="3"/>
+      <div type="preface">
+        <head>Vorrede.</head>
+        <p>Ohne zu wissen, daß Lillo den Stoff zu diesem Stück schon be­arbeitet hat, und ohne
+          einmal die Ballade zu kennen, woraus derselbe genommen ist, veranlaßte mich eine dunkle
+          Erinnerung aus den Jahren meiner Kindheit, wo ich diese Geschichte hatte erzählen hören,
+          sie dramatisch zu bearbeiten. Ich entwarf einzelne Scenen davon, welche ich im 25sten,
+          29sten und 33sten Stück der Berliner Litteratur- und Theaterzeitung vom Jahr 1780 drucken
+          ließ, wo sie, so viel ich aus mündlichen Urtheilen von Kennern schließen konnte, nicht
+          ohne Beifall aufgenommen wurden. Wie mir nun die Zusammensetzung und Verbindung des Ganzen
+          gelungen ist, darüber muß ich das Urtheil der Kunstrichter erwarten, wenn anders dieser
+          Versuch ihre Aufmerksamkeit verdienen sollte.</p>
+      </div>
+      <pb n="4"/>
+      <castList>
+        <head>Personen:</head>
+        <castItem>Blunt.</castItem>
+        <castItem>Sein Weib Gertrude.</castItem>
+        <castItem>Adelheid ihre Tochter, ein Kind von acht Jahren.</castItem>
+        <castItem>Der Bürgermeister Blunt.</castItem>
+        <castItem>Mariane seine Tochter.</castItem>
+        <castItem>Ein Fremder.</castItem>
+      </castList>
+    </front>
+    <pb n="5"/>
+    <body>
+      <div type="location">
+        <head>(Mitternacht. Eine düstre Lampe brennt auf einem Tische. Blunt und sein Weib Gertrude,
+          in alte Decken gehüllt, sitzen am Tische; Adelheid, ihre Tochter, ein Kind von acht
+          Jahren, schläft auf einem Stuhle.)</head>
+        <sp who="#gertrude">
+          <speaker>Gertrude.</speaker>
+          <p>Was sitzest du da, Mann, und siehst aus, als ob du mit Mord umgiengest?</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Stille, liebes Weib, stille! – wecke mich nicht auf – ich habe dir eben einen
+            herrlichen Traum gehabt, aber – hin ist er!</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Gott, steh mir bei, seine böse Stunde kömmt!</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Hin ist er – und, Fluch dir, daß du es mir entrissen hast, das süße Blendwerk, das
+            meiner Seelen ein Labsal reichte, das sie in zehn Jahren nicht geschmeckt hat!</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Er schläft und träumt mit ofnen Augen – und meine Augen haben keine Thränen mehr –
+            Gott, mach unserm Leiden ein Ende!</p>
+        </sp>
+        <pb n="6"/>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>So recht! – Bete, Weib, immer bete! Ich will nachbeten: Gott, mach unserm Leiden ein
+            Ende!</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Erweiche sein hartes Herz, und gieb ihm Thränen!</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Erweiche mein hartes Herz – nicht! und gieb mir – keine Thränen! – – Höre auf zu beten,
+            Weib! Ich will keine Thränen, ich will Blut! Blut!</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Morde mich, Mörder, und stille deinen Blutdurst!</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Dich nicht, liebes Weib, dich nicht – du sollst noch an meiner Glückseeligkeit Theil
+            nehmen – und überdem sollte es ja auch ein Mann seyn, den ich ihm opferte, – laß das gut
+            seyn! – Sieh wie der Mond durch unsre alten zerbrochnen Fenster scheint. – So schien er
+            auch einst, als ich noch der feurige Jüngling war, mein edles Roß bestieg, und zu dir
+            flog in die Arme der Liebe, – und alle deine Anverwandten wünschten dir Glück, daß Blunt
+            dich zum Weibe nahm – aber dein alter Vater sah dich an, und sagte –</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Es wird ein Schwerdt durch deine Seele gehn – –</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Recht, so wars! Was es doch für eine herrliche Sache ums Gedächtniß ist, daß einem die
+            Sachen, und sogar die Worte wieder beifallen. – Und als du mir einen Sohn gebahrst –</p>
+        </sp>
+        <pb n="7"/>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Ach zum Elende hab' ich ihn geboren!</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Noch kann ich mir ihn vorstellen, wie er in seinem Husarenhabit vor mir stand, und
+            blühte wie eine Rose. – Wo liegt er begraben, Weib?</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>In den Wellen des Meeres, Bösewicht! du verstießest ihn, weil du arm wurdest – Armuth
+            und Noth hätte er gerne mit uns getragen, und du hast ihn verstossen! –</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Gott hat mich ja verstossen, Weib, und er ist doch auch mein Vater. –</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>O fliehe zu. –</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Störe mich nicht! – Jetzt halte ich mich wieder an einer süßen Erinnerung – weißt du
+            noch wohl, wie wir einmal ein herrliches Gastmahl gaben, wo alle unsre reichen Nachbarn
+            versammlet waren, die sich nicht gnug über unsre Tapeten und Schildereien verwundern
+            konnten, und sagten, daß sie im churfürstlichen Schloß nicht schöner wären. – Stopfe
+            doch einen Lumpen in die Fensterscheibe, daß die Luft nicht so hereingeht! – Und wie da
+            mein hochtrabender Bruder, der kriechende Bürgermeister herein trat, und ich konnte zu
+            ihm sagen: setz dich, iß und trink, und sei guter Dinge! aber das soll er nicht zu mir
+            sagen, so wahr ich lebe, das soll er nicht!</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Warum nicht, stolzer, barbarischer Mann? – Weißt du nicht, daß wir gestern <pb n="8"/>
+            unsern letzten Bissen verzehrt haben, und morgen verschmachten müssen, wenn er sich
+            unsrer Noth nicht annimmt?</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Er soll sich unsrer Noth nicht annehmen! – Fluchen will ich ihm, so lange meine Zunge
+            noch stammeln kann, dem niederträchtigen, hohnlächelnden Verräther, der meiner im
+            Unglück spotten, und sagen konnte: Blunt, du bist tief gesunken! – Aber höre Weib,
+            Gefährtin meines kummervollen Lebens, ich will dir ein Geheimniß entdecken – wenn du
+            schweigen und gehorchen kannst. – Mein Demon, wie du weißt, der mich oft des Nachts aus
+            dem Schlafe schüttelt, und mir zuruft: Blunt! Blunt! du sollst noch einmal reich werden,
+            reicher wie zuvor! – der führte mich eben itzt, da ich hier sitze, und träume, auf eine
+            steile Anhöhe, und zeigte mir unsägliche Schätze, und einen Pallast, der von Golde
+            flimmerte, daß mir die Augen dunkel wurden, – und dies alles soll dein seyn, sagte er,
+            wenn du mir das Blut eines Mannes opferst, den ich dir senden will! – Und ich schwur,
+            die Haut schauderte mir, aber ich schwur: Sende mir den Mann, und ich will ihn opfern!
+            Bei allen Teufeln, ich will ihn opfern! <stage>(die Lampe verlischt.)</stage></p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Ich bitte dich, Mann, höre auf – mir wird der Kopf schwer. – Gönne mir doch eine
+            Viertelstunde Schlaf!</p>
+        </sp>
+        <pb n="9"/>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Ja! – leg du dich mit dem Kopf auf den Tisch, und ich will mich hier auf diese beiden
+            Stühle legen, und meine müden Glieder erquicken. Hätten wir den Fremden nicht
+            beherbergt, so könnte wir im Bette schlafen; doch ists auch recht gut, daß wir den
+            Fremden beherbergt haben. – Wie mir das im Kopf herumgeht – halb bin ich schon im
+            Schlafe, und immer gehts mir noch im Kopf herum. – Gute Nacht, Gertrude!</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Gieb ihm Schlaf, gütiger Gott, daß seine zerrütteten Sinne sich wieder sammlen, und
+            bewahre ihn vor gottlosen Gedanken, und lästerlichen Träumen! Ich will doch versuchen,
+            ob ich einschlafen kann – wenn auch nicht, – der Fremde wird uns sein Nachtlager wohl
+            gut bezahlen! <stage>(legt sich mit dem Kopf auf den Tisch.)</stage></p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelheid.</speaker>
+          <stage>(springt vom Stuhl auf, und läuft ihrer Mutter in die Arme)</stage>
+          <p>Mutter! Mutter!</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Was ist dir, Kind?</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Ach siehst du ihn nicht, siehst du ihn nicht?</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Wen?</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Den Mann mit dem blanken Schwerdt und mit den glühenden Augen – wie er auf mich
+            zukömmt! – O nimm mich in deine Decke!</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Das ist ein Leiden mit dir, daß du immer Gesichte siehest! – Komm hieher ans Fenster,
+            und reibe dir die Augen aus!</p>
+        </sp>
+        <pb n="10"/>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Das ist ja auf einmal so helle, Mutter, und ist doch kein Licht in der Stube.</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Siehst du nicht, daß der Mond scheint?</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Ach ja! wie er so hell und klar am Himmel steht! Aber ganz klar ist er doch nicht. Das
+            Schwarze ist ja wohl der Mann im Monde, nicht wahr, Mutter?</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>O schweig, Mädchen, und setze dich wieder auf den Stuhl hin! Oben auf dem Boden liegt
+            noch ein Bund Heu, da hättest du dich gleich hinlegen sollen, so hättest du ruhig
+            geschlafen. – Setz dich hin! –</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Aber liebe Mutter, schläft denn der fremde Herr noch in unserm Bette?</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Freilich.</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>O ich bin ihm recht gut! Es ist auch ein hübscher Herr – er sagte so freundlich gute
+            Nacht zu mir. – Wenn er nur gut in unserm Bette schläft, so will ich gern auf den
+            Stühlen liegen! – Da hängt noch sein Ueberrock auf meinem Stuhle. Was das für goldne
+            Treßen sind, und die Knöpfe, ach die blitzen! Ich muß ihn nur da wegnehmen, daß er nicht
+            herunterfällt – weiß ich doch nicht, was unten oder oben ist. – Ach, was fällt da aus
+            der Tasche heraus? wenn es nur nicht entzwei geht! – Ich wills geschwinde wieder
+            aufheben. – Hab' ich doch in meinem Leben so eine schöne Dose noch nicht gesehen – da
+            oben steht gar <pb n="11"/> ein Bild – ich kann es nur nicht recht erkennen. –</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Was hast du vor, Mädchen, kannst du nicht ruhig seyn, und schlafen?</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Ach Mutter, sieh einmal! <stage>(zeigt ihr die Dose.)</stage></p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <stage>(die sie nimmt, und aufmerksam betrachtet)</stage>
+          <p>Das muß ein reicher Gast seyn, den wir beherbergen. – Wo hast du die Dose her?</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Als ich den Ueberrock weghängen wollte, fiel sie aus der Tasche. Nun? – wenn wir sie
+            besehen haben, so wollen wir sie gleich wieder hineinstecken!</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <stage>(Betrachtet noch immer die Dose. Adelheid steht neben ihr. Eine Pause)</stage>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <stage>(erwacht)</stage>
+          <p>Bei allen Teufeln, ich will ihn opfern!</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <stage>(fährt zusammen)</stage>
+          <p>Wen?</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Unsern Gast!</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Was sagst du?</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Nichts! – Zeig, was hast du in der Hand, das mir so in die Augen blitzt?</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <stage>(giebt ihm die Dose)</stage>
+          <p>Sieh!</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Ei sieh! – Eine goldne Dose mit Brillianten besetzt? Was meinst du wohl, wie viel die
+            werth wäre? – Höre, du Mädchen, auf dem Boden liegt noch ein Bund Heu – da <pb n="12"/>
+            leg dich hin und schlaf! – Du magst ja sonst gern im Heu schlafen.</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Ach Vater, laßt mich doch unten bleiben! Auf dem Boden steht die Luke offen, da können
+            ja Eulen und Fledermäuse hereinkommen.</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Du kannst die Luke zumachen. – Geh hinauf, sag' ich! – <stage>(Adelheid geht.)</stage>
+            Komm, Gertrude! – Nimm die eiserne Schaufel und den Spaden, die da hinterm Ofen stehn,
+            und folge mir!</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Was willst du machen?</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Folge mir!</p>
+        </sp>
+      </div>
+      <div type="location">
+        <head>Eine Kammer.</head>
+        <sp who="#der_fremde">
+          <speaker>Der Fremde.</speaker>
+          <stage>(halb angezogen, sitzt auf dem Bette.)</stage>
+          <p>Schon ein Uhr! – Müde bin ich, daß mir die Augen zufallen möchten, und doch kann ich
+            nicht einschlafen. – Wie mir das Herz schlägt! – ist es Freude, ist es Furcht, die mich
+            nicht schlafen läßt? – Es ist so todtenstill, so eng' um mich her. – Aber was fürcht'
+            ich denn? bin ich nicht in dem Hause meiner Eltern, und so nahe bei ihnen? – Schlaft
+            wohl, gute Eltern, noch diese Nacht, auf euren harten Betten, und in eurer schlechten
+            Wohnung! Bald sollt ihr beßer schlafen, und beßer wohnen. – Sind nun nicht alle, alle
+            die Wünsche meines Herzens erfüllt? – Mariane! du willst die Gefährtinn meines Lebens
+            werden, und <pb n="13"/> meine Eltern leben beide noch, das war ja alles, was ich
+            während meiner langen Wanderschaft wünschte und hoffte. – O es giebt doch noch frohe
+            Tag' im Leben, und nun fängt es erst an, mir wieder lieb zu werden. – Wie manchen
+            Kummer, wie manche ängstliche Besorgniß wird mir der morgende Tag belohnen? – Wenn er
+            doch schon anbräche! – – Aber horch! was war das für ein dumpfes Geräusch, als ob einer
+            mit einer eisernen Schaufel in ein steinigtes Erdreich grübe – das ist mir doch von
+            Jugend auf ein widriger Ton gewesen. – Noch immer währt es fort, krusch, krusch! – wie
+            mir's durch Mark und Bein fuhr! – Nun ists vorbei. – Nun will ich doch versuchen, ob ich
+            einschlafen kann. – Vorher aber muß ich noch Marianens Bild betrachten – aber ich finde
+            die Dose nicht? – Sollt' ich sie vielleicht im Ueberrock gelaßen haben? – o wie
+            unangenehm ist wir das, kostbares Geschenk, auch nur auf eine kurze Zeit, dich zu
+            entbehren. – – Doch ich will einschlafen, damit ich desto heitrer wieder erwachen kann!
+            – Aber warum hab' ich mich meinen Eltern nicht entdeckt? – wunderbar! was schadet's
+            denn? Wie kann ich mir darüber Vorwürfe machen? – Als ob es nicht Morgen – Morgen eben
+            so gut geschehen könnte, wenn diese ängstliche Nacht vorüber ist – und warum wäre sie
+            denn ängstlich? – – Krusch, krusch – schon wieder hebt das fatale Geräusch an. – Ich muß
+              <pb n="14"/> doch sehn, was da für ein Nachtgeist ist, der so spät vielleicht noch
+            einen Schatz graben will – <stage>(tritt ans Fenster)</stage> hier seh' ich nichts, als
+            eine Mauer, die so dicht am Fenster ist, daß der Mond kaum dazwischen scheinen kann. –
+            Wie enge wird es hier um mich her, Gott! wie enge! wie enge! Welch eine Angst, welch ein
+            Toben in meiner Brust! – O ich kann nicht hier bleiben, ich will meine Eltern aus dem
+            Schlafe wecken, und ihnen zurufen: Ich bin eur Sohn, ich bin eur Sohn! – Aber würde ich
+            nicht dadurch ihre erste Freude in Schrecken verwandeln? Und soll ich den Eingebungen
+            einer thörichten Furcht gehorchen, die ganz gewiß blos ein Werk meiner erhitzten
+            Einbildungskraft ist? Nun hat ja das Graben aufgehört. – Aber hört' ich nicht jemand
+            gehen? – es kömmt immer näher – gerade auf meine Kammer zu – ob ich die Thüre verrammle?
+            – –</p>
+        </sp>
+        <stage>(Adelheid stürzt wild herein.)</stage>
+        <sp who="#der_fremde">
+          <speaker>Der Fremde.</speaker>
+          <stage>(betroffen)</stage>
+          <p>Was ich doch für Thor war! – Was willst du, liebes Kind?</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Ach, laßen Sie mich doch hier bei Ihnen in der Kammer bleiben. Ich will mich neben
+            Ihrem Bette auf die Erde legen, und will ganz stille liegen!</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>Was fehlt dir? Du siehst so wild, so verstöhrt aus, warum bist du denn
+            aufgestanden?</p>
+        </sp>
+        <pb n="15"/>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Ach, ich lag auf dem Heuboden, und wollte schlafen, aber ich konnte nicht; – da war es
+            immer, als ob einer grübe, und dann kam ein gräßlicher Vogel in die Luke herein, und
+            gerade auf mich zu geflogen. Da fürchtete ich mich, und lief herunter.</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>Warum hast du denn aber nicht im Bette geschlafen?</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Ja wir haben keins mehr, wie dies eine. Die andern sind uns weggeholt worden, weil sie
+            Vater verkauft hat.</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>Wo schlafen denn itzt deine Eltern?</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Auf den Stühlen.</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <stage>(für sich)</stage>
+          <p>Entsetzlich! So gar weit konntet ihr herabsinken von eurer vorigen Größe, wovon mir
+            noch ein dunkles Bild aus den Jahren meiner Kindheit vor den Augen dämmert! Und ich
+            machte euch eine schlaflose Nacht? – Aber ich wollte auch von einem der frohesten Tage
+            in eurem Leben gern von seinem Anfang an ein Zeuge seyn. – Wollte eure ganze Noth selbst
+            kennen lernen, weil ihr zu stolz dachtet, sie jemanden zu entdecken. – Wollte – ja was
+            wollt' ich? – und wenn es auch Grille wäre – warum sollte ich denn gerade diese
+            unschuldige Grille unterdrücken, eine Nacht unerkannt in dem Hause meiner Eltern
+            zuzubringen? – Wem schadet sie? – Zwar Mariane rieth es mir ab – aber doch wollte sie
+            mir auch nicht mein Vergnügen <pb n="16"/> rauben, wie sie sahe, daß ich darauf bestand.
+            – <stage>(zu Adelheid)</stage> Hör' einmal, sähest du es wohl gerne, wenn ich hier bei
+            deinen Eltern bliebe? –</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>O, wenn Sie doch bei uns blieben, – Ich wollte Sie so lieb haben, als ob sie mein
+            Bruder wären.</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>Hast du denn einen Bruder, daß du weißt, wie lieb man einen Bruder hat?</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Ach nein! – Ich habe einen gehabt – den hab' ich aber gar nicht gekannt, und der soll
+            auch schon lange todt seyn, sagen meine Eltern – er soll im Wasser ertrunken seyn – ich
+            habe oft geweint, wenn ich's gehört habe – denn da ist unsers Nachbars Tochter, die hat
+            einen Bruder, den hat sie so lieb – ich aber bin ganz allein, und habe weder Bruder noch
+            Schwester.</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>Gehst du denn nicht zuweilen zu deinem Onkel, der am andern Ende der Stadt wohnt?</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>O ja, da geh ich wohl zuweilen hin. Der Onkel spricht auch eben so freundlich mit mir,
+            wie Sie, und manchmal schenkt er mir auch was. Das darf aber mein Vater nicht wissen,
+            sonst wär' ich ein unglückliches Kind.</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>Warum darf das dein Vater nicht wissen?</p>
+        </sp>
+        <pb n="17"/>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Ja der mag den Onkel gar nicht leiden, und sagt immer, wenn ich zu ihm ginge, so wollte
+            er mich todtschlagen.</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>Kennst du denn auch des Onkels seine Tochter wohl?</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Marianen? – o ja! kennen Sie die auch? – o der bin ich recht gut, und sie ist mir auch
+            gut – sie nimmt mich immer auf den Schooß, und erzählt mir allerlei schöne Geschichten,
+            und sagt, ich soll meinen Eltern hübsch gehorsam seyn.</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>Bist du denn das auch?</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Ach nicht immer – denn ich gehe ja doch zuweilen zum Onkel hin, ob es Vater gleich
+            verboten hat. – Ach der Onkel ist immer so gut – aber mein Vater sieht manchmal den
+            ganzen Tag über so böse aus, und spricht kein Wort mit mir, und dann ist er oft sehr
+            zornig, und schlägt mich. – – Aber sagen Sie mir doch einmal, warum wohnt denn der Onkel
+            in so einem großen schönen Hause, und in einer Straße, wo lauter schöne Häuser stehn,
+            und wir müßen hier draußen wohnen, in so einem kleinen Hause, das halb in die Erde
+            gebauet ist.</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>Das macht, weil dein Onkel reich ist, und dein Vater nicht.</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Warum ist denn aber mein Vater nicht reich?</p>
+        </sp>
+        <pb n="18"/>
+        <stage>(Blunt mit einem Licht tritt herein.)</stage>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Was machst du hier, Mädchen, und störst den Herrn in seiner Ruhe?</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>Laßen Sie's immer gut seyn! Wir plaudern ein wenig zusammen, und ich konnte ohnedem
+            nicht einschlafen.</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Wenn Sie noch nicht geschlafen haben, so werden Sie nun gewiß müde seyn. Komm Mädchen –
+            sag dem Herrn Gutenacht!</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>O schlafen Sie recht wohl! <stage>(giebt ihm die Hand.)</stage></p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <stage>(drückt sie fest an seine Brust und küßt sie)</stage>
+          <p>Schlaf auch du wohl, liebes Mädchen, schlaf sanft und wohl, bis ich dich morgen wieder
+            sehe! – dann wollen wir noch mehr miteinander sprechen.</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Komm, Adelheid! – Schlafen Sie wohl, mein Herr! – Wir sind arme Leute – Sie müßen schon
+            einmal eine Nacht so mit uns vorlieb nehmen! <stage>(geht ab)</stage></p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>Mein Vater! – wie mir das Wort auf der Zunge erstarb, als ich es aussprechen wollte –
+            Mein Vater! Welche Güte! welche Besorgniß für einen Fremden! – o sein Herz ist gut, wenn
+            gleich das Alter ihn mürrisch gemacht, und der Kummer seine Stirn in düstre Falten
+            gezogen hat. – Itzt hätte ich mich ihm entdecken sollen – aber warum denn itzt? – – Ich
+            will nun mit den frölichen Gedanken <pb n="19"/> einschlafen, wie ich mich morgen meinen
+            Eltern nach und nach zu erkennen geben werde – erstlich will ich ihnen den Irrthum zu
+            benehmen suchen, als ob ihr Sohn todt wäre; dann will ich sie allmälig auf seine Ankunft
+            vorbereiten, und ihnen zuletzt zu verstehn geben, daß er in der Nähe sey, – bis sie
+            endlich fragen, wo ist unser Sohn, wo ist unser Wilhelm? und ich ihnen dann um den Hals
+            falle, und sage: ich bins! ich bins! – – Wie ruhig ist nun meine Seele! – alle
+            Schreckenbilder meiner Einbildungskraft sind verschwunden – und stiller Friede kehrt
+            wieder in meine Brust zurück. – In die Arme deiner Liebe will ich mich werfen,
+            Allgütiger! – wie sanft werde ich da ruhen – wie sanft – <stage>(legt sich
+              nieder.)</stage></p>
+        </sp>
+      </div>
+      <div type="location">
+        <head>Des Bürgermeister Blunts Wohnung.</head>
+        <stage>Der Bürgermeister. Mariane.</stage>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <stage>(im Schlafrock vor dem Schreibtisch)</stage>
+          <p>Wenn ich doch einmal mit der verdrießlichen Arbeit fertig wäre! – Daß auch das gerade
+            zusammentreffen muß – morgen soll einer der frohesten Tage in meinem Leben seyn, und ich
+            muß nun gerade die Nacht arbeiten – und morgen wird' ich schläfrig und träge seyn, und
+            mein Vergnügen nur halb empfinden – <stage>(Mariane tritt herein)</stage> Woher, meine
+            Tochter? – ich dachte, du schliefest noch so fest, da du <pb n="20"/> erst vor ein paar
+            Stunden zu Bette gegangen bist. –</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mar.</speaker>
+          <p>Ach, mein Vater, ich habe kein Auge zugethan – wenn doch Wilhelm bei uns geblieben
+            wäre! –</p>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Aber so laß doch die thörichten Grillen fahren! – Was kann ihm denn für ein Unglück
+            begegnen, da er in seiner Eltern Hause ist – und die Straße von hier bis dahin ist nicht
+            unsicher, wie du weißt – also ist deine Besorgniß sehr ungegründet.</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mar.</speaker>
+          <p>Warum folgte er aber meinem Bitten nicht, und blieb die Nacht über bei uns zu Hause,
+            und gieng lieber bei Tage zu seinen Eltern?</p>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Warum wolltest du aber dem guten Jungen nicht das Vergnügen gönnen, seinen Eltern eine
+            ganz unerwartete Freude zu machen? – Horch! es schlägt erst zwei Uhr – immer leg dich
+            wieder zu Bette – du verdirbst dir ja sonst muthwilliger Weise den morgenden Tag, wie
+            ich es leider thun muß.</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mar.</speaker>
+          <p>O ich kann unmöglich wieder einschlafen, mein Vater – und doch wollt' ich Sie auch
+            nicht gerne stören – aber allein zu seyn, das ist mir gar zu peinlich. – Laßen Sie mich
+            hier für mich in einem Buche lesen – das stört Sie doch nicht?</p>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Wie du willst. – Da liegt ja noch dein Buch von gestern aufgeschlagen <pb n="21"/> –
+            aber nein – mach lieber's Buch zu – ich muß mich ohnedem ein wenig von meiner Arbeit
+            erholen – und so lange will ich mit dir plaudern. – Höre, vor acht Tagen hätten wir doch
+            das beide noch nicht gedacht, was wir nun wissen – und wer es uns hätte sagen wollen,
+            dem hätten wir's nicht geglaubt. –</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mar.</speaker>
+          <p>O ja, ich hätte es doch geglaubt, mein Vater, weil ich es immer so herzlich wünschte,
+            daß doch die Nachricht von Wilhelms Tode, sein Schiffbruch, alles, erdichtet seyn
+            möchte. –</p>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Das heißt zwar sonst wohl: aus den Augen, aus dem Sinn – aber wir haben ihn doch die
+            ganzen zehn Jahr über nicht vergessen – auch nicht einmal, da wir schon gewiß glaubten,
+            daß er todt wäre. –</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mar.</speaker>
+          <p>Das freuet mich nun eben am meisten – und daß ich den Entschluß faßte, gar nicht zu
+            heirathen, wenn er nicht wiederkäme – das ist mir nun so lieb, und Ihnen wird's gewiß
+            auch lieb seyn. –</p>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Ja, das ist es nun – ob ich gleich damals gar nicht damit zufrieden war – denn wer
+            konnte so etwas in aller Welt voraussehen? –</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mar.</speaker>
+          <p>Und doch ist es geschehen – an weiter will ich nichts denken. – Sehen Sie, wie hell der
+            Mond scheint – ich möchte beinahe ein wenig im Garten spatzieren gehen – es ist so eine
+            schöne Nacht. –</p>
+        </sp>
+        <pb n="22"/>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Bleib oben, meine Tochter, es ist noch zu kühl draußen – warte lieber den schönen Tag
+            ab, der gewiß auf diese Nacht folgen wird. –</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mar.</speaker>
+          <p>O kommen Sie wenigstens einmal mit ans Fenster, lieber Vater – sehen Sie wohl das grüne
+            Plätzchen zwischen den Bäumen, das gerade jetzt der Mond bescheint? –</p>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>O ja, ich habe dich auch schon oft da gefunden.</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mar.</speaker>
+          <p>Das ist eben das Plätzchen, wo ich mit Wilhelmen zu spielen pflegte, als wir beide noch
+            Kinder waren – da spielten wir auch einmal Verstecken's – er war auf die große Linde
+            geklettert, die Sie da sehen, und hatte sich in den Zweigen versteckt, – wir suchten ihn
+            allenthalben, – auf einmal hörten wir einen Ast auf dem Baume brechen, und in dem
+            Augenblick fiel auch Wilhelm von oben herunter – mir geht noch ein Schauder über, wenn
+            ich daran denke, – er aber hatte nicht den geringsten Schaden genommen, stand geschwind
+            wieder auf, und sagte: wenn ich nur nicht herunter gefallen wäre, ihr hättet mich lange
+            suchen sollen!</p>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Ja, so vielen Gefahren ist man doch von seiner Kindheit an ausgesetzt – und was noch
+            das sonderbarste ist, so wird einer oft aus den größten Gefahren glücklich errettet, und
+            in der kleinsten kömmt er um. – Da erhielt ich gestern noch eine traurige Nachricht, <pb
+              n="23"/> von einem würdigen Officier, meinem sehr guten Freunde, der sechs Bataillen
+            mitgemacht hat, und nun an einem Stückchen Glase gestorben ist, das er sich in den
+            Finger gestoßen hat. –</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mar.</speaker>
+          <p>O das ist schrecklich! – Wilhelm hat auch so manche große Gefahren glücklich
+            überstanden – wenn nun der kleinste Zufall –</p>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Aber das sind ja auch nur äußerst seltne Fälle, meine Tochter – dadurch muß man sich
+            nicht zu einer ungegründeten Furcht verleiten laßen – sonst hätte man ja keine vergnügte
+            Stunde auf der Welt. – Es giebt wieder tausend Menschen, die nach vielen überstandnen
+            Gefahren ein hohes Alter erreicht haben, und eines ruhigen Todes gestorben sind; – aber
+            wie kommen wir denn auch auf eine so ernsthafte Materie? – Laß uns davon abbrechen.
+            –</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mar.</speaker>
+          <p>Ja, laßen Sie uns davon abbrechen – mir wird das Herz so schwer – o laßen Sie uns
+            morgen ja recht früh hingehen, um ihn in aller Frühe zu überraschen! –</p>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Was ist dir? – du siehst so blas aus, Kind?</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mar.</speaker>
+          <p>Mein Herz ist so beklemmt – o kommen Sie, und laßen Sie uns ein wenig in die freie Luft
+            gehen.</p>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Herzlich gerne Mariane – erhole dich nur wieder! – und sey mir nicht so ängstlich mehr!
+            – <stage>(Gehen ab.)</stage></p>
+        </sp>
+      </div>
+      <pb n="24"/>
+      <div type="location">
+        <head>Blunts Wohnung.</head>
+        <stage>Gertrude. Blunt.</stage>
+        <sp who="#gertrude">
+          <speaker>Gertr.</speaker>
+          <p>Ach höre mich, Blunt! – Warum stehst du nun schon seit einer Stunde da, und redest kein
+            Wort, und siehst starr aus den Augen? – Du hast mich blutrünstig geschlagen, daß ich dir
+            helfen mußte, die Grube graben, – ich will der Schläge nicht achten – aber höre mich nur
+            an, und antworte mir – Blunt, was willst du thun? – wozu soll die Grube?</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Laß mich zufrieden Gertrude! – Nichts will ich thun – hernach will ich dir's sagen – du
+            weißt ja wohl, an dem Orte, wo wir gruben, liegt der Schatz verborgen, wovon ich schon
+            so lange geträumt, und wovon ich dir schon so lange gesagt habe. –</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Ach, Blunt, baue doch nicht auf eitle Träume, ich bitte dich, und schlage dir doch
+            einmal die Gedanken an irrdische Reichthümer aus dem Sinn – was man wünscht; davon
+            träumt man auch. – Glaube mir, du bist auf dem unrechten Wege. – Vorige Woche nahmst du
+            dir fest vor, ein andrer Mensch zu werden – gestern Abend fiengst du an, mit mir zu
+            beten, und dein Gebet verwandelte sich in Gotteslästerung. – Sieh ich bin dein Weib –
+            habe bis hieher Gutes und Böses mit dir ertragen. – Höre mich noch einmal an! – Ach
+            Blunt, deine Verzweiflung nimmt zu. – Jetzt <pb n="25"/> ist die Stunde der Versuchung –
+            Was du auch im Sinne hast – ach, ich bitte dich um Gotteswillen – kämpfe! – kämpfe!</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Siehst du denn nicht, daß ich kämpfe, Weib? – So lang' ich hier stehe kämpf' ich schon.
+            –</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Du kämpfest? – Nun so unterstütze dich Gott in dieser schrecklichen Stunde, und gebe
+            mir Kraft dir beizustehn! – Ach dein Herz war sonst so gut – jetzt ist es voller Haß,
+            Groll und Feindschaft – o laß es doch noch einmal zu Thränen erweicht werden! – Bedenke
+            die kurze Zeit, die wir noch zu leben haben – Laß uns morgen anfangen, Blunt, ein
+            anderes Leben zu führen! – Laß uns unser Kind zur Frömmigkeit erziehen – ach, es hat
+            viel Böses von uns gehört und gesehen – mit Unzufriedenheit und Murren gegen Gott haben
+            wir oft den Tag angefangen, und mit sündlichen Undank haben wir ihn geendigt; – noch ist
+            es Zeit, um Vergebung zu flehen – ach komm, Blunt, und laß uns niederknien vor Gott, und
+            ihm mit Thränen der Reue Beßrung angeloben. –</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Noch kann ich nicht, Gertrude!</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Nein, noch kannst du nicht – du mußt dich erst loßreißen von deiner sündlichen Begierde
+            nach Reichthum – und mußt dich erst im Herzen mit deinem Bruder versöhnen. – <pb n="26"
+            /> Höre mich, Blunt – wir sind reich gewesen, und sind arm geworden – laß doch alles
+            dahin fahren! – es ist ja doch nur Tand und Blendwerk, was man so bald verlaßen muß. –
+            Versöhne dich mit deinen Bruder! Laß uns beten und arbeiten. – Laß uns die paar Tage,
+            die wir noch zu leben haben, so gut anwenden, wie wir können – und wenn wir denn ein
+            ruhiges und zufriednes Herz haben – was fragen wir nach allen Schätzen der Erde. –
+            Glaube mir nur, Blunt, wir wollen gewiß noch glücklich seyn! –</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Höre, Gertrude – kannst du wohl angezündetes Pulver löschen? – <stage>(will
+              gehen)</stage></p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Ich verstehe dich nicht – wo willst du hin?</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Ich will hin, und Bretter und Steine über die Grube legen, damit sie bei Tage niemand
+            sieht – und morgen Nacht wollen wir tiefer graben – sey du nur ganz ruhig und
+            unbekümmert! – ich hoffe nun soll alles noch ein gutes Ende nehmen. <stage>(Geht
+              ab.)</stage></p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Diese Sprache hör' ich jetzt von ihm zum erstenmale – Gott, was mag er im Sinne haben?
+            – Erst sprach er noch von Blut und Tod – und auf einmal scheint er nun so ruhig zu seyn,
+            und doch war seine Miene so fürchterlich – das bedeutet nichts Gutes. – Seine Sinne sind
+            zerrüttet – welche Angst! – als ob mir das Herz zerspringen wollte – sollt' er <pb
+              n="27"/> wohl gar? – schrecklicher Gedanke! – o ich muß ihm nach! ich muß ihm nach!
+            wenn's nur nicht schon zu spät ist – <stage>(im Abgehn)</stage> Ach Gott, sende deinen
+            Engel, der ihn abhält, bis ich komme!</p>
+        </sp>
+      </div>
+      <div type="location">
+        <head>Die Kammer des Fremden.</head>
+        <stage>(Welcher halb entkleidet auf dem Bette liegt, und eingeschlafen ist.)</stage>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <stage>(In der einen Hand ein Licht, und in der andern ein langes Messer, tritt herein,
+            und schließt die Thüre hinter sich zu. Er setzt das Licht auf den Tisch, stellt sich
+            über das Bette, und zuckt das Messer.)</stage>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <stage>(draußen, klopft stark an die Thüre)</stage>
+          <p>Blunt! Blunt! was willst du thun? – o mach auf! ich bitte dich um Gotteswillen, mach
+            auf!</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <stage>(Läßt das Meßer sinken – er zuckt es zum zweitenmale.)</stage>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <stage>(klopft noch stärker)</stage>
+          <p>Ach Blunt, Blunt mach auf! –</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <stage>(Läßt noch einmal das Messer sinken – schnell aber zuckt er es zum drittenmale –
+            seine Hand zittert noch –)</stage>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <stage>(Thut noch einen starken Schlag an die Thüre.)</stage>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fremde.</speaker>
+          <stage>(erwacht, und indem er seine Augen aufschlägt, sagt er mit zitternder
+            Stimme:)</stage>
+          <p>Mein Vater!</p>
+        </sp>
+        <pb n="28"/>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Was? – Dein Vater? – Nicht dein Vater! <stage>(er kämpft noch mit sich selber – seine
+              Hand bewegt sich konvulsivisch hin und her – er will dem Fremden das Messer an die
+              Gurgel setzen. –)</stage></p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <stage>(ergreift seine Hand, und sagt mit freundlichbittender, bebender Stimme:)</stage>
+          <p>O mein Vater! –</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <stage>(draußen)</stage>
+          <p>Ach, Blunt, um Gotteswillen! –</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <stage>(nach einem kurzen Kampf)</stage>
+          <p>Hinweg, verfluchtes Messer! ich hab' überwunden! <stage>(wirft das Messer weit
+              weg)</stage> Dank! Dank! Dank! dir, Gertrude, ich hab' überwunden! Komm herein und
+            sieh <stage>(er macht auf)</stage> sieh, ich hab' überwunden! – Da liegt das verfluchte
+            Messer. –</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <stage>(springt auf und fällt Blunt mit Schluchzen um den Hals.)</stage>
+          <p>O mein Vater! mein Vater!</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>O junger Mann – du kannst mich Vater nennen, da ich im Begriff war, dein Mörder zu
+            werden. – Aber tausend Dank! tausend Dank! daß Sie erwacht sind! – Ach, Gertrude, wie
+            leicht ist mir auf einmal mein Herz! – Ich bin aus einem schweren Traume aufgewacht, aus
+            einem schweren Traume. – Wo ist Adelheid? – ruf sie doch! – o wäre jetzt mein Bruder
+            hier, sieh, Gertrude, alles wollt' ich ihm vergeben – ich wollte – in diesem Augenblick
+            wollt' ich mich mit ihm versöhnen!</p>
+        </sp>
+        <pb n="29"/>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <stage>(ruft Adelheiden.)</stage>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <stage>(umarmt, nach der Reihe, Blunt, Gertruden und Adelheid.)</stage>
+          <p>Mein Vater! – meine Mutter! – meine Schwester! – Betrachtet mich inskünftige als euren
+            Sohn! Betrachte du mich als deinen Bruder! –</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Sieh, Gertrude, welche himmlische Güte! – er war unser Gast, und ich wollt' ihn im
+            Schlaf ermorden – mein Blut und meine Thränen hätten die Sünde nicht wegwaschen können,
+            wenn ich's gethan hätte. –</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Sind Sie denn schon so früh aufgestanden? Sie haben die Nacht wohl wenig
+            geschlafen?</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>Ich habe genug geschlafen. –</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Er hat genug geschlafen, Adelheid – es war gut, daß er aufwachte – Komm, Adelheid, komm
+            auf meinen Schooß, und küsse mich!</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Ach lieber Vater, sind Sie mir denn nun wieder recht gut?</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Ja, meine Tochter, ja!</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Aber wollen Sie auch dem Onkel und Marianen gut seyn?</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Auch das will ich, Adelheid, Gertruden, dir, meinem Bruder, meinen Feinden, allen
+            Menschen will ich gut seyn! <stage>(man klopft an die Thüre)</stage></p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <stage>(macht auf.)</stage>
+        </sp>
+        <pb n="30"/>
+        <stage>Der Bürgermeister und Mariane.</stage>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Willkommen, Bruder! <stage>(giebt ihm die Hand.)</stage> Sieh, Gertrude, wie mich der
+            Himmel beim Worte hält – nun ists recht gut so – o ich bin so froh! so vergnügt!</p>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Also weißt du's doch schon, daß der Fremde da dein Sohn ist? –</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Der Fremde da, mein Sohn? – nein das weiß ich nicht – das kann ich auch nicht glauben –
+            wie wäre das möglich? – Du hast ja selber die Nachricht von dem Tode meines Sohnes mit
+            angehört. –</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <stage>(Will sich seinem Vater in die Arme werfen.)</stage>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <stage>(winkt ihm mit den Augen)</stage>
+          <p>Diese Nachricht war falsch – er war der einzige, der aus dem Schiffbruch gerettet wurde
+            – wunderbare Schicksale hat dein Sohn erlebt, wunderbare Schicksale – aber davon ein
+            andermal – jetzt bin ich mit meiner Tochter zu dir gekommen, um an deiner Freude über
+            seine Wiederkunft Theil zu nehmen – und nun gieb mir die Hand, Bruder, und laß uns
+            unsern alten Zwist beilegen, und von nun an wieder Freunde seyn! – Dein Elend hat ein
+            Ende, du bist nun wieder reicher, wie ich bin – du brauchst also von mir nichts
+            anzunehmen, und darfst nicht fürchten, daß dein Stolz beleidiget werde; denn was dein
+            Sohn besitzt, das gehört auch dir – <pb n="31"/> also – gieb mir die Hand, und laß uns
+            von nun an wieder Freunde seyn!</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Die Hand will ich dir geben – und von ganzem Herzen will ich mich mit dir versöhnen, –
+            aber – daß der Fremde da mein Sohn seyn soll – das Glück wäre für mich zu groß – das
+            wäre ja, als ob Gott die entsetzlichsten Verbrechen auf frischer That belohnen wollte –
+            nicht wahr Gertrude? –</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>O zweifle nicht länger, Blunt! – mir sagt es mein Herz, daß er mein Sohn ist – und dein
+            Bruder wird dich nicht hintergehen. –</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <stage>(fällt ihr um den Hals)</stage>
+          <p>O meine Mutter! –</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Also ists doch wahr? – So hab' ich dich wieder in meinen Armen? – dich, den ich unter
+            meinem Herzen trug? – O laß mich – laß mich ausweinen – mein Entzücken – meine Freude –
+            tödtet mich. – Mein einziger – wiedergefundner Sohn! –</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Also ist dieser mein Bruder, Mutter?</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Ja, das ist er!</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <stage>(läuft auf ihn zu, er schließt sie in seine Arme, und küßt sie).</stage>
+          <p>O nun weiß ich, warum ich Sie so lieb habe, und warum Sie mir diese Nacht versprachen,
+            daß Sie bei uns bleiben wollten. –</p>
+        </sp>
+        <pb n="32"/>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>Weißt du das? – liebes, gutes Mädchen!</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Aber Mutter, warum weinest du denn, da du deinen Sohn wiedergefunden hast?</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>O laß mich weinen, Kind, ich weine vor Freuden. –</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <p>Nun so will ich auch vor Freuden weinen, daß ich einen Bruder wiedergefunden habe! – –
+            Marianchen! kennst du denn meinen Bruder schon, daß du immer so freundlich mit ihm
+            sprichst?</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <stage>(der die Zeit über wie betäubt gestanden hat)</stage>
+          <p>Also wäre denn der Fremde wirklich mein Sohn?</p>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Warum zitterst du so? – warum verwandelt sich deine Farbe? – Zweifelst du noch, daß er
+            dein Sohn ist – nun so lies diesen Brief, den er an mich schrieb, ehe er kam! – Heimlich
+            wollt' er seine Eltern überraschen – die erste Nacht wollt er sich ihnen nicht
+            entdecken, um sich, auf den folgenden Morgen, das größte Vergnügen aufzusparen. – Lies
+            diesen Brief, sag' ich, und dann zweifle noch, ob der Fremde dein Sohn ist!</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <stage>(liest den Brief – er läßt ihn fallen – eine Pause)</stage>
+          <p>Ja – er ists – er ists. – – Und ich grauer Bösewicht wollte meinen eignen Sohn
+            ermorden? –</p>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Was sagst du? –</p>
+        </sp>
+        <pb n="33"/>
+        <sp who="#mariane">
+          <speaker>Mar.</speaker>
+          <p>Gott, was sagen Sie?</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Laßt mich jetzt! – laßt mich jetzt! – ihr sollt alles erfahren! – <stage>(er kniet
+              nieder und betet)</stage> Gott! – ich danke dir – daß du meinen Sohn erwachen ließest
+            – ich danke dir, daß du meinen Arm zurückhieltest, und meine Hand erstarren ließest, da
+            ich die schreckliche That vollbringen wollte – mein ganzes Leben – o Gott! – ich bin
+            nicht werth der Barmherzigkeit, die du an mir thust – <stage>(steht auf)</stage> Nein,
+            mein Bruder, nein Mariane – ich bin nicht werth der Barmherzigkeit, die Gott an mir
+            gethan hat – Fluch und Strafe hätt' ich verdient, gerade da mir Gott die größte Freude
+            in meinem Leben aufgespart hatte. – Denn seht – vor wenig Augenblicken. –</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <stage>(will ihn umarmen)</stage>
+          <p>O mein Vater! – schweigen Sie doch davon! –</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Laß mich erst reden, mein Sohn, laß mich erst meine Schuld gestehen – dann komm' in
+            meine Arme. – – Vor wenig Augenblicken stand ich noch mit dem Messer über seinem Haupte
+            – wollt' ihn im Schlaf ermorden – und hätte mein Weib nicht geklopft – und wäre mein
+            Sohn nicht erwacht – so rauft' ich jetzt mein graues Haar aus meinem Haupte, und
+            verwünschte und verfluchte den Tag meiner Geburt. –</p>
+        </sp>
+        <pb n="34"/>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Wie kamst du auf diesen schrecklichen Gedanken?</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Aus Stolz und Verzweiflung – arbeiten mocht' ich nicht, und doch schämt' ich mich zu
+            betteln. –</p>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Warum wolltest du aber von mir keine Hülfe annehmen?</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Das weißt du! – Als ich gestern Abend den Fremden sahe, und sein Gold erblickte, da
+            wurde der Gedanke in meiner Seel' erzeugt: gottlose, verführerische Träume nährten ihn,
+            wie ich schlief, und die Mitternacht brütete ihn aus, daß er zum gräßlichsten Vorsatze
+            reifte. – Meinem Weibe sagt' ich nichts, sie mußte mir aber helfen eine Grube graben,
+            ohne daß sie um mein Vorhaben wußte, – als ich den Mord vollbringen wollte, schloß ich
+            die Thüre hinter mir zu – sie aber klopfte mit immer stärkern Schlägen an, bis mein Sohn
+            erwachte; – und nun mein Sohn – kannst du es deinem alten Vater vergeben, daß er dich,
+            als seinen Gast, im Schlaf ermorden wollte? –</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>O quälen Sie mich doch nicht dadurch, daß Sie sich selber Vorwürfe machen. – Lag nicht
+            die Schuld an mir? – warum entdeckt' ich mich Ihnen nicht gleich, da ich sahe, daß Ihr
+            entsetzlicher Zustand fähig war, Sie bis zur Verzweiflung zu bringen? –</p>
+        </sp>
+        <pb n="35"/>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Nun so komm' in meine Arme! – Freilich verdien' ichs nicht! – deine Entschuldigung
+            rechtfertigt mich nicht. – Aber verzeihet doch sonst der Vater wohl dem Sohne, warum
+            soll denn nicht auch der Sohn einmal seinem Vater verzeihen?</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>O mein Vater! um eins bitt' ich, um eins beschwör' ich Sie!</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Alles, mein Sohn, alles!</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>Daß Sie von dieser Sache inskünftige kein Wort weiter reden, – daß Sie dies alles, mit
+            mir, wie einen Traum ansehen, der nun verschwunden ist – gewähren Sie mir noch diese
+            Bitte, – dann wird meine Freude ganz seyn!</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Es wird mir schwer werden, mein Sohn, meine Zunge zu binden, daß sie nicht von meinem
+            schrecklichen Falle und von meiner wunderbaren Errettung reden sollte – aber du willst
+            es – und ich will schweigen –</p>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Nun noch ein Anliegen, Bruder, in deines Sohnes Namen, da du doch einmal versprochen
+            hast, ihm alles zu gewähren – Hast du was darwider, daß er mit meiner Tochter verlobt
+            ist? –</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Mein Sohn mit deiner Tochter verlobt – was könnt' ich darwider haben – o laß immer das
+            festeste Freundschaftsband <pb n="36"/> unter uns geknüpft werden – aber das ist zuviel
+            auf einmal – ich kann mir alle diese plötzlichen Veränderungen noch nicht recht denken –
+            es ist mir immer noch, wie im Traume. – <stage>(zu Marianen)</stage> Also bist du nun
+            auch meine Tochter?</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <stage>(umarmt ihn)</stage>
+          <p>Ja, mein Vater, sobald Sie es wollen!</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>O ich will, ich will alles! – mit tausend tausend Freuden! –</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <stage>(umarmt Marianen)</stage>
+          <p>Also bist du nun ganz die Meinige?</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <p>Die Deinige – auf ewig –</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>Sieh, nun sind unsre Wünsche erfüllt. –</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <p>O Dank der Vorsehung, daß sie es sind!</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Gott! – und diese innige Liebe – dieses zärtliche Band hätt' ich bald –</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <stage>(hält ihm den Mund zu)</stage>
+          <p>Mein Vater!</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Ich schweige, mein Sohn – aber Gertrude, warum bist du so stumm? Hilf mir doch, mich
+            freuen! – Die Freude wird mir allein zu schwer – ich kann sie nicht so ertragen, weil
+            ich sie nicht verdient <pb n="37"/> habe – deine Freude ist gerechter als die meinige –
+            ich darf mich noch nicht recht freuen –</p>
+        </sp>
+        <sp who="#gertrude">
+          <speaker>Gert.</speaker>
+          <p>Immer freue dich mit mir – denn das Vergangene ist vergangen – Sieh, ich habe Gott im
+            Stillen gedankt, und seiner wunderbaren Fügung nachgedacht – o meine Kinder, was ich
+            wünschte, wenn ich euch oft zusammen spielen sahe, da ihr beide noch klein waret, was
+            mir ahndete, wenn ich schon damals eure unschuldige Zuneigung bemerkte, das sehe ich nun
+            so plötzlich, so wider alles Vermuthen erfüllt, daß es mir schwer wird, mir dies alles
+            auf einmal recht vorzustellen.</p>
+        </sp>
+        <sp who="#adelheid">
+          <speaker>Adelh.</speaker>
+          <stage>(zum Bürgermeister)</stage>
+          <p>O sehn Sie, wie sich mein Bruder und Mariane gut sind!</p>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Freuet dich das, Kind? – mich freuet's auch – aber höre, Bruder, wir werden jetzt alle
+            einige Erquickung nöthig haben. – Gerne hätt' ich heute ein Gastmahl veranstaltet, aber
+            dein Sohn wollte sich das nicht nehmen laßen – auch wollt' er es nicht in meinem,
+            sondern in deinem Hause geben – es wird schon alles dazu eingerichtet werden, daß dieser
+            Tag ein froher Tag für uns seyn soll, aber du mußt auch ganz vergnügt seyn. –</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>O ich wäre der ärgste Bösewicht, wenn ich es seyn könnte. – Immer laßt mir diese
+            Schaam, diese Reue – denn das ist mir <pb n="38"/> ein Zeichen, daß ich noch nicht ganz
+            von Gott verworfen bin. –</p>
+        </sp>
+        <sp who="#der_fremde">
+          <speaker>Der Fr.</speaker>
+          <p>O mein Vater – Ihr Versprechen –</p>
+        </sp>
+        <sp who="#blunt">
+          <speaker>Blunt.</speaker>
+          <p>Gott! was hast du mir für einen Sohn gegeben! – Ja, ich will schweigen, mein Sohn –
+            aber alle Morgen und alle Abend will ich Gott auf meinen Knien danken, daß er mir mehr
+            Gnade erzeigt hat, als ich Strafe verdient habe.</p>
+        </sp>
+        <sp who="#der_buergermeister">
+          <speaker>Der Bürgerm.</speaker>
+          <p>Komm Bruder! – Kommt meine Kinder!</p>
+        </sp>
+      </div>
+    </body>
+  </text>
+</TEI>
