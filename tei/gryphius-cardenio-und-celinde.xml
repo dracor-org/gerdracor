@@ -1,0 +1,3763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Cardenio und Celinde oder Unglücklich Verliebete</title>
+        <title type="sub">Trauerspiel</title>
+        <author>
+          <persName>
+            <forename>Andreas</forename>
+            <surname>Gryphius</surname>
+          </persName>
+          <idno type="wikidata">Q77214</idno>
+          <idno type="pnd">118543032</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000538</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q42187675</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:p7m9.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode"
+                >Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Andreas Gryphius: Cardenio und Celinde Oder Unglücklich Verliebete. Herausgegeben
+              von Ralf Tarot, Stuttgart: Philipp Reclam jun., 1968 [Universal- Bibliothek Nr.
+              8532]</title>
+            <date type="print" when="1657">1657</date>
+            <date type="premiere" when="1661">1661</date>
+            <date type="written" when="1650">1650</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="pamphilius" sex="MALE">
+            <persName>Pamphilius</persName>
+          </person>
+          <person xml:id="cardenio" sex="MALE">
+            <persName>Cardenio</persName>
+          </person>
+          <person xml:id="diener" sex="MALE">
+            <persName>Diener</persName>
+          </person>
+          <personGrp xml:id="reyen" sex="UNKNOWN">
+            <name>Reyen</name>
+          </personGrp>
+          <person xml:id="celinde" sex="FEMALE">
+            <persName>Celinde</persName>
+          </person>
+          <person xml:id="tyche" sex="MALE">
+            <persName>Tyche</persName>
+          </person>
+          <person xml:id="sylvia" sex="FEMALE">
+            <persName>Sylvia</persName>
+          </person>
+          <person xml:id="olympia" sex="FEMALE">
+            <persName>Olympia</persName>
+          </person>
+          <person xml:id="vireno" sex="MALE">
+            <persName>Vireno</persName>
+          </person>
+          <person xml:id="die_zeit" sex="UNKNOWN">
+            <persName>Die Zeit</persName>
+          </person>
+          <person xml:id="der_mensch" sex="UNKNOWN">
+            <persName>Der Mensch</persName>
+          </person>
+          <person xml:id="storax" sex="MALE">
+            <persName>Storax</persName>
+          </person>
+          <person xml:id="lysander" sex="MALE">
+            <persName>Lysander</persName>
+          </person>
+          <person xml:id="knecht" sex="MALE">
+            <persName>Knecht</persName>
+          </person>
+          <person xml:id="dorus" sex="MALE">
+            <persName>Dorus</persName>
+          </person>
+          <person xml:id="cleon" sex="MALE">
+            <persName>Cleon</persName>
+          </person>
+          <person xml:id="das_gespenst_dess_ritters" sex="MALE">
+            <persName>Das Gespenst deß Ritters</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="friends" mutual="#cardenio #pamphilius"/>
+            <relation name="spouses" mutual="#lysander #olympia"/>
+            <relation name="siblings" mutual="#vireno #olympia"/>
+            <relation name="associated_with" active="#sylvia" passive="#celinde"/>
+            <relation name="associated_with" active="#diener" passive="#cardenio"/>
+            <relation name="associated_with" active="#storax #dorus" passive="#lysander"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Tragedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q80930</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2021-07-07">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Andreas Gryphius</head>
+        <head>Cerdenio und Celinde oder Unglücklich Verliebete</head>
+        <head>Trauerspiel</head>
+      </div>
+      <pb n="4"/>
+      <div type="preface">
+        <head>Großgünstiger vnd Hochgeehrter Leser.</head>
+        <p>Als ich von Straßburg zurück in Niederland gelanget /vnd zu Ambsterdam bequemer Winde
+          nacher Deutschland erwartet / hat eine sehr werthe Gesellschafft etlicher auch hohen
+          Standes Freunde / mit welchen ich theils vor wenig Jahren zu Leiden / theils auff
+          vnterschiedenen Reisen in Kundschafft gerathen /mich zu einem Panquet / welches sie mir zu
+          Ehren angestellet / gebeten. Als bey selbtem nach allerhand zugelassener Kurtzweilen / man
+          endlich auff Erzehlung unterschiedener Zufälle gerathen / vnd damit einen zimlichen Theil
+          der Nacht verzehret / hab ich mich entschlossen Abschied zu nehmen / vnd in mein damaliges
+          Wirthshaus zu eilen. Wolgedachte meine Liebesten wolten / was ich auch bitten oder
+          einwenden möchte nicht unterlassen mich biß nach Hause / durch die so weite Stadt zu
+          begleiten / vnd geriethen so bald sie auff die Gassen kommen wieder auff ihr voriges
+          Geschicht-Gespräch / dabey mir auff jhr anhalten Anlaß gegeben / den Verlauff dieser zwey
+          vnglücklich Verliebeten zu erzehlen. Die Einsamkeit der Nacht /die langen Wege / der Gang
+          über den einen Kirch-Hof vnd andere Umbstände machten sie so begierig auffzumercken: Als
+          frembde ihnen diese deß Cardenio Begebnüß / welche man mir in Italien vor eine wahrhaffte
+          Geschicht mitgetheilet / vorkommen / daß sie auch nach dem ich mein Reden geendet / von
+          mir begehren wollen jhnen den gantzen Verlauff schrifftlich mitzutheilen. Ich der nach
+          vielem abschlagen / mich überreden lassen / Freunden zu gefallen eine Thorheit zu thun /
+          hab endlich versprochen jhnen wie in andern Begnügungen also auch mit dieser nicht zu
+          entfallen /bin aber doch bald anderer Meynung worden / vnd habe stat einer begehrten
+          Geschicht-Beschreibung <pb n="5"/> gegenwärtiges Trauer-Spiel auffgesetzet bey welchem ich
+          weil es durch vieler Hände gehen vnd manch scharffes Urtheil außstehen wird / eines vnd
+          andere nothwendig erinnern muß. Zu förderst aber wisse der Leser / daß es Freunden zu
+          gefallen geschrieben / welche die Geschicht sonder Poetische Erfindungen begehret. Die
+          Personen so eingeführet sind fast zu niedrig vor ein Traur-Spiel doch hätte ich diesem
+          Mangel leicht abhelffen kennen wenn ich der Historien die ich sonderlich zu behalten
+          gesonnen / etwas zu nahe treten wollen / die Art zu reden ist gleichfalls nicht viel über
+          die gemeine / ohn daß hin vnd wieder etliche hitzige vnd stechende Wort mit vnter lauffen
+          / welche aber den Personen / so hier entweder nicht klug / oder doch verliebet / zu gut zu
+          halten. Was nun in oberzehlten Stücken abgehet / wird wie ich verhoffe der schreckliche
+          Traur-Spiegel welcher bey den Verliebeten vorgestellet / wie auch deß Cardenio verwirretes
+          Leben / genungsam ersetzen. Mein Vorsatz ist zweyerley Liebe: Eine keusche / sitsame vnd
+          doch inbrünstige in Olympien: Eine rasende / tolle vnd verzweifflende in Celinden,
+          abzubilden. Wo ich diesen Zweck erreichet / hab ich was ich begehret / wo nicht / so wird
+          doch der Vorsatz dem Leser zu dienen Entschuldigung vnd Genade finden. Mit einem Wort /
+          man wird hierinnen als in einem kurtzen Begrieff / alle diese Eitelkeiten in welche die
+          verirrete Jugend gerathen mag / erblicken. Cardenio suchet was er nicht finden kan vnd
+          nicht suchen solte. Lysander bauet seine Liebe auff einen so vnredlichen als gefährlichen
+          Grund / welches gar übel ausschlägt; biß seine Fehler von Vernunfft / Tugend vnd Verstand
+          ersetzet werden. Olympe schwebet in steten Schmertzen; biß sie bloß nach der Ehre als dem
+          einigen Zweck zielet. Tyche gibet Anschläge zu einer verfluchten Zauberey / vnd wil Liebe
+          erwecken durch den Stiffter deß Hasses vnd Geist der Zweytracht. Ihr Mittel das sie
+          vorschlägt ist so abscheulich als boßhafft / gleichwol <pb n="6"/> weiß ich daß eine
+          Person hohen Standes in Italien ein weit thörichter Werck versuchet. Und welches Land ist
+          von solchen Händeln reine? Leo Allatius hat nicht sonder Verwunderung gelehrter Sinnen
+          Opinationes Graecanicas geschrieben. Wenn jemand die Zeit auff solche Sachen wenden / vnd
+          alle Künste verlorne Sachen zu finden / Schätze zu graben / Liebe zu stifften / Eheleute
+          zu verknüpffen / Todte zu beschweren /Kranckheiten zu vertreiben / auff welche viel in
+          Deutschland halten / auffsetzen wolte / er würde ein ungeheures Buch Opinationum
+          Germanicarum zusammen bringen. Auch diese welche mit höchsten Wissenschafften begabet /
+          sind zuweilen mit einem vnd anderm Geschwüre von dieser Räudigkeit angestecket: Wo jemand
+          zweiffelt / der bedencke (daß ich vieler anderer nicht erwehne.) was Hieronymus Cardanus
+          von sich selbst / vnd Petrus Gassendus von Tychone geschrieben / welcher letzte nicht
+          wenig auff die Reden eines seiner Vernunfft beraubeten Menschen gehalten. Wie ich nun
+          gerne gestehe daß solche Feiler so hoher Seelen / höchst schädlich vnd verwerfflich; also
+          wolte ich wüntschen daß von allen derogleichen nichtigen vnd verdammten Wissenschafften
+          auch nicht das Gedächtnüß auff Erden mehr vorhanden. Indessen muß allhier Celinde bewahren
+          / daß der Vorschlag solcher Mittel Gottlos / der Gebrauch gefährlich / die Würckung
+          vnglücklich. Ob jemand seltsam vorkommen dürffte / daß wir nicht mit den Alten einen Gott
+          auß <pb n="7"/> dem Gerüste / sondern einen Geist auß dem Grabe herfür bringen / der
+          bedencke was hin vnd wieder von den Gespensten geschrieben. Ich wil den Leser mit den
+          bekanten Geschichten nicht auffhalten /sondern nur zwey Beyspiel schier eines Schlags mit
+          vnserm auß dem Moscho hieher versetzen / vmb so viel mehr weil dessen Buch nicht sonders
+          bekand /vnd die Begebungen nie von denen angezogen oder berühret / welche sich die
+          Eigenschafften der Geister zu erforschen bemühet / so schreibet gedachter Grich in seinem
+          Buch / dem er den Nahmen einer geistlichen Wiesen zueignet. Cap. 77. Ich vnd mein Herr
+          Sophronius giengen zu dem Hause deß Sophisten Stephani, vmb von jhm gelehrter zu werden /
+          es war gleich Mittag / er hielt sich auff bey der Kirchen der heiligen Gottes-Gebärerin /
+          welche der selige Vater Eulogius gegen Osten bey dem grossen Tetraphylo gebauet / als wir
+          nun an seine Thüre klopften: Sihet vns ein Mägdlein an / vnd antwortet; er schlafe / man
+          müsse noch ein wenig verziehen. Ich hub an zu meinem Herren Sophronio; last vns in das
+          Tetraphylum gehen vnd alldort verharren. Es pflegen aber die Bürger von Alexandria diesen
+          Ort in hohen Ehren zu halten / denn sie sagen es habe Alexander der die Stadt gebauet /
+          die Gebeine deß Propheten Hieremiae auß Egypten erhoben / vnd alldar beygesetzet. Als wir
+          nun dahin kommen / finden wir niemand als drey Blinde /denn es war Mittag. Wir giengen
+          derowegen gantz stille vnd ruhig zu diesen Blinden / vnd nahmen vnsere Bücher vor vns /
+          sie aber die Blinden redeten von unterschiedenen Sachen / vnd einer forschere von dem
+          andern wie er vmb sein Gesichte kommen. Dieser gab zur Antwort daß er einen Schipper in
+          seiner Jugend abgegeben / vnd wäre nach dem <pb n="8"/> sie von Africa abgereiset in dem
+          Meer vnversehens erblindet / hätte nicht fortgehen können / vnd den Staar bekommen. Dieser
+          nun fraget hinwiederumb den ersten wie er blind worden / welcher antwortet / er wäre ein
+          Glasbläser gewesen / vnd seiner Augen verlustig worden /durch das Feuer welches jhn
+          berühret. Endlich wenden sich die ersten beyde zu dem dritten vnd sprechen / melde du vns
+          gleichsfalls auff was Weise du erblindet. Welcher anhub: Ich wil euch die Warheit sagen:
+          Als ich noch jung / war ich der Arbeit hefftig gram / schlug dieselbige auß vnd gerieth
+          ins Luder /vnd weil es mir an nöthigen Lebens-Mitteln fehlte /begont ich zu stelen. Als
+          ich eines Tages / nach viel begangenen Bubenstücken in einem Orte stund / vnd einen Todten
+          austragen sahe / welcher wol bekleidet /folgete ich der Leichen / zu schauen wo sie
+          hingeleget würde: Man gieng hinter die Kirchen deß heiligen Johannis, legte sie in ein
+          Grab / vnd begab sich nach verrichtetem Ambt zurück. So bald ich vernommen daß sie (die
+          Trauer-Leute.) hinweg / machte ich mich in die Grufft / zog den Todten auß vnd ließ jhm
+          nichts als ein Leinen Tuch. In dem ich nun auß dem Grabe mit vielen Kleidern beladen
+          steigen wil / geben mir meine böse Gedancken ein / nim auch das Leilach /denn es ist
+          köstlich. Ich Unglückseliger kehre wieder vmb / daß ich jhm das Leilach hinweg nehmen vnd
+          jhn also nackend liegen liesse; der Todte aber erhub sich; strecket seine Hände über mich
+          vnd rieß mir mit den Fingern die Augen auß. Und ich elender bin nach dem ich alles
+          verloren mit grosser Angst vnd Gefahr auß dem Grabe kommen / etc. In folgendem Capitel
+          erzehlet ein ander Jüngling Johanni dem Abt deß also genanten Riesen-Klosters seine
+          Missethat mit folgenden Worten: Ich / mein Vater / der voll aller Laster /vnd weder deß
+          Himmels noch der Erden würdig / vnd vor zweyen Tagen <pb n="9"/> gehöret / daß eines
+          reichen Mannes auß den vornemsten dieser Stadt / Tochter / so noch Jungfraw gestorben /
+          vnd mit vielen vnd köstlichen Kleidern in eine Grufft vor der Stadt begraben; bin auß
+          Gewonheit dieses schändlichen Wercks deß Nachts zu dem Grabe kommen / hinein gestiegen vnd
+          habe sie entkleidet. Nachdem ich aber alles hinweg genommen wormit sie angezogen / auch
+          nicht deß Hembdes verschonet / sondern dasselbige abgezogen /sie so nackend als sie
+          geboren verlassen / vnd numehr auß der Grufft hinauß wolte: Setzte sie sich auff vor mir /
+          streckte die lincke Hand auß / ergrieff damit meine Rechte vnd sprach zu mir; du
+          leichtfertigster Mensch geziemet dir mich also zu entblösen? Fürchtest du GOTT nicht! oder
+          entsetzest du dich nicht vor der Verdammung deß letzten Lohnes? Hättest du nicht zum
+          wenigsten dich über mich Todte erbarmen sollen? Bist du ein Christ? vnd hast vor ehrlich
+          gehalten daß ich so nackend vor Christum treten solle? Hast du das Weibliche Geschlecht
+          also entehren dörffen? Hat dich dieses Geschlecht nicht geboren? Hast du nicht deine
+          Mutter selbst durch dieses Unrecht das du mir angethan / geschändet? Wie wilst du
+          vnglückseliger Mensch Christo vor seinem erschrecklichen Richterstul Rechenschafft geben
+          wegen dieses Lasters; das du wider mich begangen? In dem bey meinem Leben kein frembder je
+          mein Angesicht beschauet; vnd du hast nach meinem Begräbnüß mich entblösset / vnd meinen
+          Leib nackend gesehen. Weh über der Menschen Elend; in was Unglück ist es gefallen! Mit was
+          Hertzen O Mensch! Mit was Händen empfängst du den Heiligen vnd werthen Leib vnsers HErren
+          JEsu Christi? Ich / als ich dieses gesehen vnd gehöret / ward voll Entsetzung vnd
+          Schreckens / vnd konte in Zittern vnd Furcht kaum zu jhr sagen; laß mich gehen / ich wil
+          dieses nicht mehr thun. Sie aber sprach: Warhafftig! es wird nicht so seyn. Denn du bist
+          herein kommen wie du gewolt: Du sollst aber nicht herauß gehen <pb n="10"/> wie du wilst.
+          Denn dieses soll vnser beyder gemeines Grab bleiben / vnd bilde dir nicht ein / daß du
+          bald sterben werdest; sondern du wirst die Gottlose Seele übel verlieren / nachdem du
+          zuvor sehr viel Tage wirst allhier gequälet worden seyn. Ich aber bat sie mit viel Thränen
+          / daß sie mich erlassen wolte / beschwor sie hefftig durch den allgewaltigen GOtt /
+          versprach vnd schwur / daß ich dieses ungerechte vnd böse Werck nicht mehr begehen wolte.
+          Endlich gab sie mir nach vielem meinem bitten / Thränen / vnd hefftigem Schlucken zur
+          Antwort: Wo du leben vnd auß dieser Noth errettet werden wilst: So versprich mir / daß wo
+          ich dich erlasse / du nicht nur von diesen schändlichen vnd vnheiligen Thaten abzustehen /
+          sondern auch stracks der Welt abzusagen / ins Kloster dich zu begeben / vnd in dem Dienst
+          Christi Busse vor deine Verbrechen zu thun dich entschliessen wollest. Ich aber schwur vnd
+          sprach: Bey GOtt welcher meine Seele auffnehmen wird / ich wil nicht nur thun was du
+          gesaget / sondern wil auch von dem heutigen Tag an / nicht in mein Hauß gehen / vnd mich
+          von hier / vnd in die Einöde begeben. Da sprach die Jungfraw: Bekleide mich /wie du mich
+          vorhin gefunden; als ich sie aber angezogen legete sie sich wieder nieder vnd entschlief.
+          Kan nun jemand diesen Erzehlungen Glauben zustellen: So wird Celinden vnd Cardenio
+          Gesichte jhm nicht so vngereimet vorkommen. Deren Meynung aber / die alle Gespenster vnd
+          Erscheinungen als Tand vnd Mährlin oder traurige Einbildungen verlachen: Sind wir in
+          kurtzem vernünfftig an seinem besondern Ort /zu erwegen entschlossen / vnd geben jhnen
+          indessen vnseren Cardenio vor ein Traur-Spiel / das ist vor ein Getichte.</p>
+      </div>
+      <pb n="11"/>
+      <div type="preface">
+        <head>Inhalt deß Trauer-Spiels.</head>
+        <p>Cardenio welcher in Olympien verliebet / entschleust sich Lysandern jhren Ehe-Gemahl /
+          der durch eine vnbilliche List / jhre Heurath erlanget / zu ermorden /Bononien zu
+          verlassen / vnd sich nach Toleto in sein Vaterland zu begeben. Celinde von Cardenio
+          verlassen / vnd von seinem Abschied verwitziget / suchet allerhand / auch endlich
+          zauberische Mittel ihn in jhrer Liebe fest zu halten. Beyde aber werden durch ein
+          abscheuliches Gesicht von jhrem Vorsatz abgeschrecket / vnd durch Betrachtung deß Todes
+          von jhrer Liebe entbunden. Wie nun Catharine den Sieg der heiligen Liebe über dem Tod
+          vorhin gewiesen; so zeigen diese den Triumph / oder das Sieges-Gepränge deß Todes über die
+          jrrdische Liebe.</p>
+        <p>Das Trauer-Spiel beginnet wenig Stunden vor Abends / wehret durch die Nacht / vnd endet
+          sich mit dem Anfang deß folgenden Tages.</p>
+        <p>Der Schaw-Platz ist Bononien die Mutter der Wissenschafften vnd freyen Künste.</p>
+      </div>
+      <pb n="12"/>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen deß Trauer-Spiels.</head>
+          <castItem>Cardenio. Verliebet in Olympien.</castItem>
+          <castItem>Pamphilius. Sein geheimer Freund.</castItem>
+          <castItem>Olympia. Lysanders Gemahl.</castItem>
+          <castItem>Lysander. Vor diesem Cardenio Seiten-Buhl / nun Olympiens Ehe-Gemahl.</castItem>
+          <castItem>Vireno. Olympiens Bruder.</castItem>
+          <castItem>Celinde. Ein Fräulein in Cardenio verliebet.</castItem>
+          <castItem>Silvia. Ihre Stadt-Jungfraw.</castItem>
+          <castItem>Tyche. Eine Zauberin.</castItem>
+          <castItem>Cleon. Sacristain oder Kirchen-Bewahrer.</castItem>
+          <castItem>Diener deß Cardenio.</castItem>
+          <castGroup>
+            <castItem>Storax.</castItem>
+            <castItem>Dorus.</castItem>
+            <roleDesc>Lysanders Diener.</roleDesc>
+          </castGroup>
+          <castItem>Ein Geist in Gestalt Marcellens.</castItem>
+          <castItem>Ein Geist in Gestalt Olympiens.</castItem>
+          <castItem>Die Reyen sind der Bononiensischen Jugend / wie auch der Jahr-Zeiten der Zeit
+            vnd deß Menschen.</castItem>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Die Erste Abhandelung.</head>
+        <stage>Cardenio. Pamphilius.</stage>
+        <stage>Der Schaw-Platz bildet Cardenii Gemach ab.</stage>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <l>So ist der Vorsatz denn durch keine Macht zu wenden?</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Man halte mich nicht mehr in den verfluchten Enden:</l>
+            <l>Da ich in schnöder Lust / in toller Eitelkeit /</l>
+            <l>Und grimmer Angst verthan die beste Lebens-Zeit.</l>
+            <l>Wol dem / der nicht wie ich den Fuß hieher gesetzet;</l>
+            <l>Dem kein verfälschter Wahn den blinden Geist verletzet</l>
+            <l>Dem vor die Weißheit nie ein thöricht Weib beliebt.</l>
+            <l>Der nie den hohen Sinn durch herbe Lust betrübt</l>
+            <l>Wer war ich als an mir / sich mein Geschlecht erquickte:</l>
+            <l>Als mich ein Feind voll Neid nicht ohne Furcht anblickte:</l>
+            <l>Als die gelehrte Stadt mich mit Entsetzung hört!</l>
+            <l>Und meine Feder gleich der blossen Klingen ehrt.</l>
+            <l>Wer bin ich! leider nun! ein Schimpff der alten Ahnen!</l>
+            <l>Ein Spott deß nechsten Bluts: Was sind die Sieges-Fahnen</l>
+            <pb n="15"/>
+            <l>Die ich allhier erjagt: Als jmmer neue Schmach:</l>
+            <l>Ein niemal friedlich Hertz vnd täglich wachsend ach!</l>
+            <l>Viel besser wenn ich mich in glantzen Stahl beschlossen</l>
+            <l>Und vor das Vaterland das frische Blut vergossen;</l>
+            <l>Viel besser wenn ich mich durch Thetis Schaum gewagt /</l>
+            <l>Und auff der wüsten See ein wüster Land erjagt.</l>
+            <l>Ich hatte mit mehr Ruhm die Faust an Pflug geschlagen:</l>
+            <l>Und dieses Feld gebaut das mich vmbsonst getragen</l>
+            <l>Ja vor der frembden Thür ein schimmlend Brot begehrt</l>
+            <l>Als hier mit Zeit vnd Gut die einig' Ehr verzehrt.</l>
+            <l>Ade den Stadt die ich mir zum Verterb geschauet:</l>
+            <l>Und du dem ich mich selbst bey manchem Fall vertrauet /</l>
+            <l>Nihm noch mein letztes an: Die Rechnung ist gemacht!</l>
+            <l>Die Segel sind gespannt: Ich scheide / gute Nacht!</l>
+          </lg>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <lg>
+            <l>Du scheidest zwar von hier doch nicht auß meinem Hertzen!</l>
+            <l>Dem nichts dich rauben wird / doch laß mir deiner Schmertzen</l>
+            <l>Nicht falsches Denckmal zu! vnd gönne mir zu letzt /</l>
+            <l>Die Nachricht / wie du hier die Jugend auffgesetzt.</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Die Nachricht wie ich hier in Wahnwitz mich verwirret:</l>
+            <l>Wie fern ich von dem Pfad der Tugend außgeirret?</l>
+            <l>Wol! wol! geschieht es zwar nicht sonder meine Pein!</l>
+            <l>So müß es dennoch dir ein Warnungs-Spiegel seyn!</l>
+            <l>Ich zehlte (wo mir recht) die zweymal eilfften ähren!</l>
+            <l>Als mich der Eltern Rath nach embsigem begehren /</l>
+            <l>An diesen Ort verschickt: Durch vnerschöpfften Fleiß</l>
+            <l>Zu kauffen Wissenschafft vnd nicht geschminckten Preiß</l>
+            <l>Durch auß gegründter Lehr! Ach freylich wol gemeynet!</l>
+            <l>Doch / wie wenn vns zu Nacht ein falsches Irrlicht scheinet:</l>
+            <l>Man offt den Weg verläst vnd in die Täuffen fällt /</l>
+            <l>In welchen man versinckt. So ists mit mir bestellt.</l>
+            <pb n="16"/>
+            <l>Zwar erstlich! wust ich nichts als von berühmten Sachen</l>
+            <l>Die Menschen / trotz der Grufft / vnsterblich können machen;</l>
+            <l>Dafern Diane kam; gieng Phoebus über mir /</l>
+            <l>Sie funden bey mir nichts denn köstliche Papier!</l>
+            <l>Ich lehrt vnd ward gelehrt; vnd klüger vor den Jahren /</l>
+            <l>Manch greisser Bart erstarrt ob meinen gelben Haren /</l>
+            <l>Auch muntert ich den Leib zu allen Künsten auff /</l>
+            <l>Sprang auff ein hurtig Pferd / begab mich in den Lauff.</l>
+            <l>Begrieff das Lauten-Spiel / gewohnte frisch zu singen:</l>
+            <l>Bewegte mich im Tantz / verstand die Art zu ringen!</l>
+            <l>Und wo ich von mir selbst die Warheit melden kan /</l>
+            <l>Der Degen stand mir gleich der leichten Feder an.</l>
+          </lg>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <l>Ich hab es mehr denn offt gesehn vnd rühmen hören!</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Ach leider! diesen Ruhm den ließ ich mich bethören.</l>
+            <l>Du triffst den rechten Zweck! der Dünckel nam mich ein!</l>
+            <l>Ich glaubt es könte mir kaum einer gleiche seyn /</l>
+            <l>Diß war die erste Bahn die mich von gutem führte:</l>
+            <l>Das war die erste Gifft die meine Sinnen rührte.</l>
+            <l>Kam jemand mir die quer vnd gab sich etwa bloß /</l>
+            <l>So war die Faust bereit / so gieng die Klinge loß.</l>
+            <l>Hiedurch ward allgemach mein jrrend Ehre kräncker /</l>
+            <l>Man hieß mich hier vnd dar den vnverzagten Zäncker:</l>
+            <l>Ich selbst nam in der Brunst mein Laster nicht in acht</l>
+            <l>Biß mich mein eigen Sinn auff neue Sprünge bracht /</l>
+            <l>Biß hieher war ich frey vnd hatte nichts geliebet:</l>
+            <l>Doch daß mir diese Pein die Sinnen nie betrübet /</l>
+            <l>Kam nicht von Tugend her: Weil mich der Wahn verkehrt</l>
+            <l>Ich schätzt auß Ubermut / nicht eine / meiner werth</l>
+            <l>Biß ich das Wunder-Bild Olympien beschauet:</l>
+            <l>Die mich vor dem ergetzt / ob der mir jetzund grauet:</l>
+            <l>Die als ein Wirbelwind mich hin vnd her gerückt /</l>
+            <l>Und mein zerscheitert Schiff in langem Sturm zustückt.</l>
+            <l>Ich sah sie vnd entbrand! sie fühlte neue Flammen!</l>
+            <pb n="17"/>
+            <l>Kurtz: Ihr vnd mein Gemüt die stimmten wol zusammen:</l>
+            <l>Mein Wahn / mein eigen Sinn / verlor sich allgemach.</l>
+            <l>Und meine Wilder-Art gab jhren Sitten nach.</l>
+          </lg>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <lg>
+            <l>Die Liebe wenn sie wil verrichtet Wunder-Sachen:</l>
+            <l>Und kan die wilden zahm /die feigen kühne machen /</l>
+            <l>Sie meistert vnsern Geist / vnd mustert den Verstand</l>
+            <l>Sie schärfft den blöden Sinn / vnd stärckt die schwache Hand.</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l>Wir waren gleich am Stand / wir waren eins von Sinnen:</l>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <l>Kein ander Heurath-Gut hab ich je schätzen können.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Ihr tapfferes Geschlecht gab meinem nichts bevor /</l>
+            <l>So daß ich sie zur Braut / nach jhrem Wuntsch / erkor.</l>
+            <l>Ich ließ / als sie es stimmt / der schönsten Vater grüssen:</l>
+            <l>Und jhn von dieser Lieb' vnd treuem Anschlag wissen.</l>
+            <l>Er / wie mir kurtz hernach durch einen Freund entdeckt /</l>
+            <l>Ward von der Heurath durch mein Rasen abgeschreckt.</l>
+            <l>Ich sprach er / kenn' jhn wol: Sein Stamm ist sonder Tadel.</l>
+            <l>Die hohe Wissenschafft vergrössert seinen Adel.</l>
+            <l>Die Tugend / der Verstand steht seiner Jugend an!</l>
+            <l>Er ist ein solcher Mensch als jemand wüntschen kan:</l>
+            <l>Doch die zu freye Faust vertunckelt alle Sachen:</l>
+            <l>Die jhn in jeder Aug vnd Ohren herrlich machen /</l>
+            <l>Verzagten bin ich feind / vnd weiß der Ehre Ziel.</l>
+            <l>Jedoch Cardenio thut leider was zu viel!</l>
+            <l>Wolt' ich Olympien jhm gleich von Hertzen geben!</l>
+            <l>Bald wagt er sich zu frech vnd bringt sich vmb sein Leben!</l>
+            <l>So ist sie sonder Eh: Vielleicht auch sonder Ehr:</l>
+            <l>Rennt er den ander tod; so schmertzt es noch vielmehr.</l>
+            <l>Fast jhn der Richter nicht: So muß er flüchtig bleiben /</l>
+            <l>Und wir die Zeit in Angst vnd Bitterkeit vertreiben!</l>
+            <pb n="18"/>
+            <l>Drumb besser was zu früh als gar zu spät beklagt</l>
+            <l>Man meld' jhm daß ich schon Olympien versagt.</l>
+          </lg>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <l part="I">O mehr den herber Schluß.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l part="F">Schluß der mit tausend Threnen</l>
+            <l>Schluß der mit tausend Angst vnd vnerschöpfftem sehnen</l>
+            <l>Und beiderseits betraurt: Ward ich hierdurch verführt:</l>
+            <l>So ward Olympie wol lebendig gerührt!</l>
+            <l>Wie (schry sie) bin ich denn / auch eh' ichs weiß versprochen!</l>
+            <l>Kan diß ein Vater-Hertz! ist alle Trew gebrochen /</l>
+            <l>Gilt keine Liebe mehr! schlägt er sein werthes Kind /</l>
+            <l>Und dessen Wolfahrt denn so unbedacht in Wind?</l>
+            <l>Wer ists denn der mich kriegt: Werd ich auch lieben können:</l>
+            <l>Den der vmb meine Gunst kein Wort mir dörffen gönnen!</l>
+            <l>Bin ich so vnversehns vnd als im Traum versagt:</l>
+            <l>Nicht als ein freyes Kind / als ein erkauffte Magd?</l>
+            <l>Diß sprach sie vnd noch mehr; sie bat voll heisser Schmertzen:</l>
+            <l>Setzt mich Cardenio, setzt mich nicht auß dem Hertzen:</l>
+            <l>Wer weiß wo Zeit vnd Freund vnd Gott ein Mittel findt</l>
+            <l>Das mich mir wieder gibt vnd gantz mit euch verbindt</l>
+            <l>Wir schwuren denn auffs new' einander keusche Treue:</l>
+            <l>In äusserster geheim! ich gieng mit etwas scheue</l>
+            <l>Vor jhrem Fenster vmb / vnd nicht als wenn die Nacht</l>
+            <l>Der Himmel-Fackeln Heer in ihre Reyen bracht!</l>
+            <l>Ein unbefleckt Gespräch war diß was vns ergetzte:</l>
+            <l>Schaw aber wie auch hier mein Unglück mich verletzte:</l>
+            <l>Der Jungfraw Bruder gab auff mein besuchen acht</l>
+            <l>Und zog die reine Lieb' in schändlichen Verdacht.</l>
+            <l>Diane sah' herab mit gantzem Angesichte /</l>
+            <l>Als er mich überfiel; die Nacht ist was zu lichte /</l>
+            <l>Rieff er / Cardenio zu deiner Missethat.</l>
+            <l>Ist mir der Weg nicht frey? Dir steht die weite Stadt</l>
+            <l>Gantz offen: Meyde nur die meiner Eltern Gassen:</l>
+            <pb n="19"/>
+            <l>Und solt ich mir von dir die Bahn verbitten lassen?</l>
+            <l>Er auff das Wort gefecht griff mich mit Eisen an!</l>
+            <l>Ich wich gleich einem der den Arm nicht regen kan /</l>
+            <l>Der Schwester Liebe stieß mich jeden Trit zurücke:</l>
+            <l>Er schriebs der Zagheit zu / vnd schertzte mit dem Glücke /</l>
+            <l>Wol! fleucht der alle trotzt! diß Wort war mir zu schwer /</l>
+            <l>Ich trat jhm auff den Leib vnd stieß die leichte Wehr /</l>
+            <l>Recht vnter seine Brust. Er sanck' / ich must entweichen</l>
+            <l>In dem sein weinend Hauß jhn / gleich entseelten Leichen /</l>
+            <l>Auß seinem Blut auffhub / vnd Artzt vnd Balsam sucht</l>
+            <l>In dem Olympie dem rauen Unfall flucht /</l>
+          </lg>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <l>Diß Schwerdt hat wie ich meyn' der Liebe Band zerhauen.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Wir Menschen jrren stets. Wo wir vns sicher trauen /</l>
+            <l>Sinckt vnser Schiff in Grund. Wenn mans verloren hält /</l>
+            <l>Hat das Verhängnüß offt das beste Glück bestellt.</l>
+            <l>Denn als Viren ermahnt: Den Stoß an mir zu rechen</l>
+            <l>Begunt er; er wolt ehr selbst seiner Zeit abbrechen;</l>
+            <l>Als dem zu wider seyn / der / was er frech begehrt</l>
+            <l>Ihm langsam / vnd getrotzt / hätt' ohne List gewehrt.</l>
+            <l>Was sag ich! er war kaum zu ersten Kräfften kommen</l>
+            <l>Die Feindschafft / wie mans nennt ward freundlich vnternommen /</l>
+            <l>Er ändert allen Haß in vnverfälschte Gunst</l>
+            <l>Und wüntscht Olympien werth meiner keuschen Brunst.</l>
+          </lg>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <lg>
+            <l>So bricht die Sonn hervor nach rauen Donnerschlägen</l>
+            <l>Und dem mit Himmel-Feur vnd Schloß-vermischten Regen.</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Sie brach vns freylich vor / doch wie sie schöner steht</l>
+            <pb n="20"/>
+            <l>Im fall der Tag verkürtzt vnd sie zu rasten geht</l>
+            <l>Und schwartzen Nächten rufft. So lieff die schönste Wonne</l>
+            <l>In höchste Trübsal auß. Sie meine Seelen Sonne</l>
+            <l>Hatt' ander Hertzen auch in heissen Brand gesetzt /</l>
+            <l>Die sich unwissend' jhr an jhrem Glantz verletzt /</l>
+            <l>Doch keiner war so kühn sein Angst jhr zu entdecken:</l>
+            <l>Und jeder fand vor sich was mächtig jhn zu schrecken:</l>
+            <l>Lysander nam allein ein seltsam Mittel vor /</l>
+            <l>Und kauffte durch viel Gold der Kammer-Jungfer Ohr /</l>
+            <l>Die (O Verräther Stück) jhn in das Ruhe-Zimmer</l>
+            <l>Der keuschen Seele führt: Und (was vnendlich schlimmer)</l>
+            <l>Sich gantz vnwissend hilt. Wie nun die Nacht anbrach</l>
+            <l>Und mein' Olympie besucht jhr Schlaf-Gemach</l>
+            <l>Und der versteckte sich sie anzusprechen wittert</l>
+            <l>Und jhr zu Fusse fällt; erstarrt sie vnd erzittert</l>
+            <l>Und als das Schrecken jhr den Athem wieder gibt /</l>
+            <l>Rennt sie hell schreiend fort; Lysander laufft betrübt</l>
+            <l>Ob diesem Mißschlag durch: Wird heimlich ausgelassen</l>
+            <l>Durch die mit schuldig war. Er hatte schon die Gassen /</l>
+            <l>Als das entweckte Hauß sich ob der That bewegt</l>
+            <l>Und mit Gericht vnd Licht durch alle Kammern regt.</l>
+            <l>Olympe die nicht recht bey Nacht den Feind erkennet:</l>
+            <l>Hat als sie ward befragt auß Argwohn mich genennet /</l>
+            <l>Die Meynung ward verstärckt / weil man mich zimlich nah</l>
+            <l>Und bey noch offner Thür die Straß abwandeln sah.</l>
+            <l>Man hilt mich eilend fest / mir ward die That verwiesen.</l>
+            <l>Viren der anderwerts so trefflich mich gepriesen;</l>
+            <l>Zog diesen Schimpff zu Mut / vnd eiferte behertzt</l>
+            <l>Das ich sein Hauß vnd Stamm vnd Schwester so geschertzt /</l>
+            <l>Ich wand mein Unschuld vor / die man nicht hören wolte.</l>
+            <l>Weil der Beweiß zu viel nach jhrer Meynung golte.</l>
+            <l>Biß daß nach hartem Sturm die Sorgen-volle Nacht /</l>
+            <l>In Kummer / Unlust / Angst vnd Schwermut durchgebracht.</l>
+            <pb n="21"/>
+            <l>Und der betrübte Tag vns all' auffs neue quälte /</l>
+            <l>Mich der Olympens Ehr vor gantz verloren zehlte:</l>
+            <l>Die Eltern die im Zorn sich über mich erhitzt:</l>
+            <l>Und den Verräther selbst den sein Gewissen ritzt</l>
+            <l>Olympiens Geschlecht trat bey dem Fall zusammen:</l>
+            <l>Die meisten suchten mich auß Eifer zu verdammen:</l>
+            <l>Die minder Anzahl doch gestützt durch mehr Verstand</l>
+            <l>Schlug besser Mittel vor vnd schloß daß meine Schand</l>
+            <l>Dem Ruhm Olympiens zu nahe lauffen könte:</l>
+            <l>Nichts besser denn: Als daß man mir die Jungfraw gönte</l>
+            <l>Und dämpffte den zu weit auß brechenden Verdacht.</l>
+            <l>Der Meynung fiel man bey: Es ward an mich gebracht.</l>
+          </lg>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <l part="I">Diß gieng nach deinem Wuntsch.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l part="F">Es gieng hier gantz verkehret</l>
+            <l>Auß Eifer hasst ich jetzt / was Lieb vnd Trew begehret</l>
+            <l>Ich sagt es klar herauß: Ich hätte sie geehrt</l>
+            <l>Als ihre Keuschheit nicht durch solchen Fall versehrt</l>
+            <l>Ich hätte sie geliebt: Als ich jhr nur behaget</l>
+            <l>Jetzt nun sie frembde selbst ins Schlaf-Gemach vertaget</l>
+            <l>Acht' ich mich was zu hoch vor eines andern Rest</l>
+            <l>Ich stellte Zeugen auff / die Sonnen-klar bevest;</l>
+            <l>Daß ich vmb selbte Stund' als mir Viren begegnet /</l>
+            <l>Geschieden vom Panquet vnd nüchtern sie gesegnet:</l>
+            <l>Daß weil bey ihnen Tag vnd Abend ich verzehrt;</l>
+            <l>Nicht möglich / daß durch List ich heimlich eingekehrt /</l>
+            <l>In ein verwahrtes Hauß das allerseits beschlossen:</l>
+            <l>Wenn schon bey später Nacht die Riegel vorgeschossen!</l>
+            <l>Sie zeugten! ich verfuhr. Der Vater ward bestürtzt</l>
+            <l>Und hätt auß Hertzeleid schier seine Zeit verkürtzt;</l>
+            <l>Als auch Olympie die er auff schärff'st ausfragte</l>
+            <l>Ihm vmb die Füsse fiel vnd naß von Threnen klagte:</l>
+            <l>Sie hätt in Furcht vnd Eil sich nicht recht vmbgeschaut</l>
+            <l>Und auß Vermuttung nur die That mir zugetraut.</l>
+          </lg>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <lg>
+            <l>O wahres Ebenbild durch auß vermischter Dinge!</l>
+            <pb n="22"/>
+            <l>Wie ein erhitztes Roß durch vngewohnte Sprünge /</l>
+            <l>Den Ritter mit sich reist: Und führt nicht wie er wil;</l>
+            <l>So zeucht der Himmel vns von dem auff jenes Ziel.</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Als nun durch diesen Sturm das Wasser recht getrübet:</l>
+            <l>Gibt sich Lysander an; streicht auß wie er geliebet</l>
+            <l>Entdeckt auch seine Schuld vnd bittet die zur Eh /</l>
+            <l>Die durch sein freveln ist gestürtzt in höchstes Weh.</l>
+            <l>Nichts daß mehr vnwerth sey / als Jungfern die die Zungen</l>
+            <l>Deß vnbedachten Volcks begeyvert vnd beschwungen:</l>
+            <l>Der Vater schlägt sie zu: Sie die in Haß entbrand</l>
+            <l>Gibt bloß / nur mir zu Trotz / Lysandern jhre Hand /</l>
+            <l>Lysandern auff den sie auß heisser Rach erzittert;</l>
+            <l>Und mir zu Trotz! weil sie mein Abschlag höchst erbittert.</l>
+          </lg>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <l>Und so vertäufft sie sich in ungeheure Noth.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Und mich noch zehnfach mehr in den gewissen Tod.</l>
+            <l>Gedencke wie die Seel' in Reu' vnd Angst gebrennet /</l>
+            <l>Als ich jhr Unschuld vnd Lysanders Trug erkennet:</l>
+            <l>Wie ich den Eifer-Sinn / wie ich den Tag verflucht /</l>
+            <l>Da ich so frech verschmäht was ich so steiff gesucht.</l>
+            <l>Ich fand Gelegenheit / doch nur zu meinen Schmertzen:</l>
+            <l>Da ich Olympien auß hochbetrübtem Hertzen</l>
+            <l>Tieff vmb Verzeihung bat / vnd / ob sie vnbewegt</l>
+            <l>Mir lange wider-stund; in neue Bande legt.</l>
+            <l>Wir trugen beyderseits Mitleiden mit einander:</l>
+            <l>Und liebten mehr als vor. Wir schrieben dem Lysander</l>
+            <l>Und dem Verhängnüß zu was sie vnd mich getrennt:</l>
+            <l>Und wuntschten seiner Lieb ein so erschrecklich End</l>
+            <l>Als falsch der Anfang war! schaw wie das Glücke spiele</l>
+            <l>In dem ich in dem Wahn gantz new Erquickung fühle</l>
+            <l>Und lesch' in höchster Gunst Lysanders Hoffnung auß:</l>
+            <l>Schreibt mir mein Vater zu vnd fordert mich nach Hauß /</l>
+            <l>Theils weil sein alter Leib durch Seuchen hart beschweret</l>
+            <pb n="23"/>
+            <l>Theils weil sein Beystand jhn ans Königs Hof begehret:</l>
+            <l>Wie rett' ich beyde nun! Er wil getröstet seyn:</l>
+            <l>Hier wüntscht Olympe sich entbrochen jhrer Pein.</l>
+            <l>Er bittet: Sie noch mehr! doch auff sein fünfftes Schreiben:</l>
+            <l>Schwer ich Olympien unendlich trew zu bleiben /</l>
+            <l>Und eh der zweytte Mond im Himmel kan vergehn /</l>
+            <l>Schwer ich vor jhrem Aug' ohn alles falsch zu stehn.</l>
+            <l>Ich schwere durch Papier sie wöchentlich zu ehren:</l>
+            <l>Und sie von meiner Reiß vnd Wiederkunfft zu lehren.</l>
+            <l>Und mache mich von hier! ach! was ein Mensch gedacht;</l>
+            <l>Steht; was er jmmer thut doch nicht in seiner Macht!</l>
+            <l>Ich komme glücklich fort / deß Vatern Seuche schwindet</l>
+            <l>In dem er mich gesund in seinen Armen findet:</l>
+            <l>Der Hof steht seiner Bitt auff mein ersuchen zu:</l>
+            <l>Ich setz in kurtzer Zeit mein gantzes Hauß in Ruh</l>
+            <l>Hier kehr ich alles vmb. Ich schick vnzehlich Schreiben;</l>
+            <l>Die leider auff der Post gehemmt vnd liegen bleiben</l>
+            <l>Olympie die gantz nichts von mir wissen kan /</l>
+            <l>Klagt meinen Wanckelmut vnd duppelt Untrew an.</l>
+            <l>Mich / der kein Antwort könt' auff alle Brief empfangen /</l>
+            <l>Legt Kummer / vnd Verdacht vnd Feber-Hitz gefangen.</l>
+            <l>Doch richt ich mich zuletzt von meinem Siechbett' auff</l>
+            <l>Und mache / noch nicht recht erquickt / mich auff den Lauff.</l>
+            <l>Ach leider! viel zu spät. Alsbald ich an war kommen</l>
+            <l>Und nach Olympien vnd meinem Heil vernommen:</l>
+            <l>Erfahr ich! daß nunmehr Lysander sie ersetzt:</l>
+            <l>Ja daß jhr Heuraths-Tag bestimmt vnd angesetzt.</l>
+            <l>Ich hilts vor Phantasey. Biß mir ein Freund erzehlet:</l>
+            <l>Es hab Olympie sich lange Zeit gequälet /</l>
+            <l>Ob meinem aussen seyn / daß keinerley Bericht /</l>
+            <l>Kein Schreiben je ersetzt: Lysanders Angesicht</l>
+            <l>Wär jhr zwar wie vorhin unangenehm gewesen /</l>
+            <l>Lysander hätte selbst auß jhrer Stirn gelesen</l>
+            <l>Sein Ungunst / jhren Haß: Auch hätt er sich betrübt</l>
+            <l>Daß er auß Unvernunfft so freventlich geliebt /</l>
+            <pb n="24"/>
+            <l>Und vnbedacht gesucht was er erbitten sollen:</l>
+            <l>Doch hab er sich selbselbst auffs höchste zwingen wollen</l>
+            <l>Zu der verlobten Dienst: Die letzlich jhn beklagt /</l>
+            <l>Daß er sein Glück vmb sie / die jhm doch feind / gewagt</l>
+            <l>Sie hätte die Geduld Lysanders müssen loben</l>
+            <l>Und allgemach mich gantz auß jhrem Sinn verschoben:</l>
+            <l>Lysander hätte diß genommen stracks in acht</l>
+            <l>Und jhr mitleidend seyn zu höchster Liebe bracht /</l>
+            <l>Sie wären denn nun zwey / doch zwey mit einem Hertzen:</l>
+            <l>Und feilte wenig Zeit zu jhren Hochzeit-Kertzen:</l>
+            <l>Ich nam die raue Post mit solchem Schrecken an /</l>
+            <l>Als kein verdampter Mensch sein Urtheil hören kan.</l>
+            <l>Noch unterließ ich nichts (wie kurtz die Zeit!) zu wagen</l>
+            <l>Ich sucht jhr meine Trew durch Schrifften vorzutragen.</l>
+            <l>Sie nam kein Schreiben mehr / vnd schickt auff letzte mir /</l>
+            <l>Stat Antwort / ein verwahrt doch ledig Blat Papir.</l>
+            <l>Ich ließ mich / als ein Weib / durch meine Freund anlegen:</l>
+            <l>Und trat jhr ins Gesicht auff offentlichen Wegen /</l>
+            <l>Und zog mein Unschuld an / sie wegerte Gehör</l>
+            <l>Und nams als stünd ich ihr nach jhrer reinen Ehr.</l>
+            <l>Der Himmel / sprach sie / hat mir eine Seel gegeben!</l>
+            <l>Ich bin Lysanders Braut / Cardenio mag leben!</l>
+            <l>Der Himmel hat von ihm mich gäntzlich abgeschreckt:</l>
+            <l>Der mir sein falsches Hertz zum zweytenmal entdeckt -</l>
+            <l>Mit diesem ging sie durch: Und ließ mich sonder Sinnen:</l>
+            <l>Wie wenn in Sterbens-Angst die Geister vns zerrinnen.</l>
+            <l>Mein Feber grieff mich an vnd hilt mich im Gemach</l>
+            <l>Biß daß jhr Heurath-Fest (O trüber Tag) anbrach!</l>
+            <l>Da hab ich mich erkühnt mit dreymal drey Gesellen /</l>
+            <l>Bey jhrem Lust-Panquet ein tantzen anzustellen</l>
+            <l>Wir traten in den Saal in schwartzer Trauer-Pracht</l>
+            <l>Verhüllt vnd gantz vermummt: Ich sprang in solcher Tracht</l>
+            <pb n="25"/>
+            <l>Wie der verliebte Printz: Der den Verstand verloren /</l>
+            <l>Als seine Lust vor jhn den Medor auserkoren.</l>
+            <l>Lysander der vns nicht in dieser Wolck erkant /</l>
+            <l>Danckt vns mit höchster Ehr. Olympie entbrant'</l>
+            <l>Vor Ungeduld vnd Scham: Und ließ sich doch nicht mercken /</l>
+            <l>Umb meine Hoffnung nicht durch jhr Gesicht zu stärcken /</l>
+            <l>Celinde hat allein ich weiß nicht was erblickt</l>
+            <l>Dadurch sie mich entdeckt / sie schaute mich entzückt</l>
+            <l>Mit heissen Seuffzen an / die fruchtlos abgegangen /</l>
+            <l>Weil mich Olympie noch gar zu fest gefangen.</l>
+          </lg>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <l>Olympie die schon Lysanders eigen war?</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Die Liebe wächst in Noth vnd stärckt sich durch Gefahr.</l>
+            <l>Und wüntscht / durch was nicht ist / vnd vnerhörte Sachen</l>
+            <l>Und nie gebahnte Weg' jhr Anschläg auszumachen.</l>
+            <l>Lysanders Hochzeit-Feur war schon in Asch verkehrt /</l>
+            <l>Doch meine Flamme nicht die heimlich mich verzehrt</l>
+            <l>Ich dacht auff neue Stück: Und als er einst verreiset;</l>
+            <l>Hatt ein erkauffte Magd mich in sein Hauß geweiset /</l>
+            <l>Ich kam denn als ein Weib die Frücht vnd äpffel trägt</l>
+            <l>Als sich Olympie zur Mittags-Ruh gelegt /</l>
+            <l>Es war gleich eins bey jhr / erblicken vnd erkennen:</l>
+            <l>Ich sah' jhr Angesicht vor Zorn vnd zittern brennen.</l>
+            <l>Und eh' ich reden könt' ach! sprach sie! ach zu viel!</l>
+            <l>Zu viel Cardenio! ein Ende mit dem Spiel!</l>
+            <l>Ich bin von Edlem Stamm; bin unbefleckt geboren:</l>
+            <l>Und wie du weist / zur Eh' vnd keuschen Ehr erkoren.</l>
+            <l>Die drey verbitten mir dich ferner anzusehn!</l>
+            <l>Cardenio von hier! ist nicht zu viel geschehn /</l>
+            <l>Daß du mein Hochzeit-Fest mit dem verstellten rasen</l>
+            <l>Ohn alle Schew entweyht: Und Funcken auffgeblasen /</l>
+            <l>Die / wenn mein sitsam seyn / mit schweigen nicht bedeckt /</l>
+            <pb n="26"/>
+            <l>Ein vnaußleschlich Feur in Hauß vnd Hauß entsteckt.</l>
+            <l>Cardenio von hier: Wo nicht so magst du wissen:</l>
+            <l>Daß man dir auff mein Wort wird beyde Lichter schlissen /</l>
+            <l>Von hier vnd glaube diß / daß die dich ehrlich libt /</l>
+            <l>Die jetzt dich tödten kan / vnd dir das Leben gibt /</l>
+            <l>Wie? Sprach ich / laß ich mir mein rasen hier verweisen</l>
+            <l>Da man vmb Langmut mich / wo noch Vernunfft / soll preisen!</l>
+            <l>Laß ich Olympien in dieses Raubers Hand /</l>
+            <l>Der sie durch List erhält / der nie was Lieb' erkant.</l>
+            <l>Hat meine lange Trew so rau' ade verdienet:</l>
+            <l>Ich raß Olympie! Ich habe mich erkühnet</l>
+            <l>Zu einem Trauer-Spiel! ich komm in dein Gesicht /</l>
+            <l>(Ade Olympie) von dieser Stund' an nicht /</l>
+            <l>Als mit Lysanders Blut vnd meinem Blut gezihret;</l>
+            <l>So sprach ich vnd lieff stracks wo mich mein Grimm hin führet /</l>
+            <l>Schloß auch denselben Tag zu enden meine Noth.</l>
+            <l>Zu dämpffen meine Lieb' ins Feindes Blut vnd Tod.</l>
+          </lg>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <l>Doch ward der raue Schluß nicht schleunig fortgesetzet.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Weil das Verhängnüß mich mit neuer Glut verletzet /</l>
+            <l>Ich hatt auß jener Hof kaum heimwärts mich gekehrt</l>
+            <l>Als von Celinden mir ein Schreiben ward gewehrt.</l>
+            <l>Die bat / daß ich bey jhr wolt eine Nymfe schauen /</l>
+            <l>Die mir ein wichtig Stück gesonnen zu vertrauen.</l>
+            <l>Ich / als ich jhrem Brief in etwas nachgedacht</l>
+            <l>Begab mich bey jhr Hauß nicht viel vor Mitternacht /</l>
+            <l>Ich hört vmb jhre Thür Viol' vnd Lauten klingen</l>
+            <l>Doch mehr zu Schimpff' als Ehr' ich hört ein Liedlein singen</l>
+            <l>Von ihrem Wanckelmut / das ging mir bitter ein /</l>
+            <l>Ich fiel den Hauffen an / schlug mit dem Eisen drein.</l>
+            <l>Sie setzten sich zu Wehr: Und musten doch erliegen:</l>
+            <pb n="27"/>
+            <l>Man sah Pandor vnd Hut / vnd Kling' vnd Harffe fliegen</l>
+            <l>Biß ich / vnd unverletzt / die Thür allein einnam</l>
+            <l>Da mir Celinde selbst erschreckt entgegen kam.</l>
+            <l>Sie danckte / daß ich sie bey dieser Zeit ersuchte:</l>
+            <l>Daß ich die Schaar verjagt: Die jhrer Tugend fluchte</l>
+            <l>Und jhren Ruhm verletzt (wo diß ein Schmach-Lied kan:)</l>
+            <l>Und bot zur Danckbarkeit sich mir zu eigen an.</l>
+            <l>Wir traten ins Gemach / da keine sonst zu finden:</l>
+            <l>Celind' vmbfing mich vnd vertraute mir Celinden:</l>
+            <l>Entdeckt jhr heisse Lieb' vnd wüntscht sie möchte mein:</l>
+            <l>Vor viel Olympien vnd strenge Buhlen seyn.</l>
+            <l>Ich schied' eh Titan kam die Sternen zu verschlissen:</l>
+            <l>Als ich den Tag hernach sie wolt' auffs new begrüssen;</l>
+            <l>Kam sie mir schöner vor vnd freyer denn vorhin:</l>
+            <l>Und fing halb seuffzend an. Cardenio ich bin /</l>
+            <l>Ich bin / Cardenio, die nur durch ihn kan leben:</l>
+            <l>Und die sich selbst vor jhn wolt' in die Flammen geben:</l>
+            <l>Doch wil er meiner Lieb ohn Leiden theilhafft seyn:</l>
+            <l>So lern' er wer ich sey / vnd geh den Rathschlag ein.</l>
+            <l>Ich / die von altem Stamm' vnd edlen Blut geboren:</l>
+            <l>Hab Eltern in dem Glantz der ersten Zeit verloren</l>
+            <l>Bin durch nicht treue Freund' vmb meiner Mutter Pracht;</l>
+            <l>Und vmb deß Vatern Gut durch Anverwandte bracht.</l>
+            <l>Krieg / Mangel / Haß vnd Noth hat mich so weit gerissen:</l>
+            <l>Daß ich der Keuschheit Blum zu letzt auffsetzen müssen /</l>
+            <l>Zwar einem / der durch Gold vnd Ansehn mich besprang</l>
+            <l>Doch durch nicht minder Lieb in dieses Hertze drang!</l>
+            <l>Und einig mich berührt: Auch wär' ich jhm vermählet</l>
+            <l>Wenn er nicht zimlich jung den Ritter-Stand erwehlet</l>
+            <l>Der ihm die Eh verbeut. Er hält mich noch allhier</l>
+            <l>Mit höchsten Kosten auff / vnd schicket für vnd für /</l>
+            <pb n="28"/>
+            <l>Was zu ersinnen ist. Sein übergroß Vermögen</l>
+            <l>Kehrt in die Zimmer ein! wo nun jhm nicht entgegen</l>
+            <l>Cardenio daß ich dem zu Gebote steh /</l>
+            <l>Der vns so prächtig nährt / so leb ich sonder Weh</l>
+            <l>Zwar von Marcellus Gut / doch lieb ich jhn alleine</l>
+            <l>Cardenio mein Licht: Den ich auff ewig meyne!</l>
+            <l>Sie schloß mit einem Kuß! vnd ich gab alles nach</l>
+            <l>So schwimmt der Ulmen-Baum wenn jhn die strenge Bach</l>
+            <l>Auß seinem Grunde reist. So fiel ich mit Celinden</l>
+            <l>Durch reitzen schnöder Lust in vor verhaste Sünden</l>
+            <l>Ich der ein keusches Bild so Eifer voll geliebt</l>
+            <l>Ward durch befleckte Gunst in heisser Brunst betrübt /</l>
+          </lg>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <l>Ich zitter! ists Marcell der vnlängst vmb ist kommen:</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Ja freylich; hör jetzt an wie jhm der Geist benommen;</l>
+            <l>Hör jetzt den frembden Fall / den ausser mir kein Man /</l>
+            <l>Umbständlich (wer er auch /) vor Augen stellen kan.</l>
+            <l>Wir zwey / Celind vnd ich / entbrant in gleichen Flammen:</l>
+            <l>Verfügten vns zwar offt doch sehr verdeckt zusammen</l>
+            <l>Und wären Zweiffels ohn noch lange nicht erwischt /</l>
+            <l>Wenn nicht mein Unverstand Marcellus Geist erfrischt /</l>
+            <l>Mich daucht es nicht genung daß mich Celind' erwehlet</l>
+            <l>Wenn ich nicht dieses Glück den Wäldern hätt' erzehlet /</l>
+            <l>Und in Gedichte bracht die sie mit Anmut sang</l>
+            <l>Wenn die geschickte Faust auff jhrer Laut' vmbsprang /</l>
+            <l>Hier rührt sein Unfall her / denn als er einmal kommen</l>
+            <l>Und in Celindens Hand ein lang Papier vernommen /</l>
+            <l>Beschwärtzt durch meine Brunst / erstarrt er vnd begehrt /</l>
+            <l>Zu wissen / welcher ihr so heissen Brief gewehrt /</l>
+            <l>Sie gibt zwar lachend vor doch zitternd im Gewissen:</l>
+            <l>Sie hätt' es Sylvien nechst auß der Faust gerissen /</l>
+            <l>Er zweiffelt vnd verbarg den Eifer der jhn nagt /</l>
+            <pb n="29"/>
+            <l>Und noch dieselbte Stund auß jhrer Wohnung jagt.</l>
+            <l>Kaum war Marcellus fort als ich bey jhr erschienen:</l>
+            <l>Er wolte sich der Zeit zu seiner Spur bedienen</l>
+            <l>Vnd wie ich noch nicht recht beschritten jhr Gemach /</l>
+            <l>Kommt er von Zorn erhitzt mir auff der Ferschen nach.</l>
+            <l>Hilff Gott! wie haben wir vns alle drey befunden /</l>
+            <l>Die Zungen waren vns vor Grimm vnd Furcht gebunden.</l>
+            <l>Er fiel Celinden an / die Alabaster bleich /</l>
+            <l>Vnd plötzlich ward gefärbt durch seinen Backenstreich.</l>
+            <l>Eh' jhr noch warmes Blut vom Antlitz abgeflossen:</l>
+            <l>Kam seines durch mein Schwerdt auß seiner Brust geschossen /</l>
+            <l>Er taumelt vnd verging ich rieff Celind' auff / auff.</l>
+            <l>Hier ist nicht lange Frist: Wer leben wil der lauff:</l>
+            <l>Er / als wir in der Eil den besten Schmuck einpackten:</l>
+            <l>Vnd Gold / Geschmeid / vnd Stein in seidne Tücher stackten:</l>
+            <l>Erhub / wie schwach er war / sein sterbend Angesicht.</l>
+            <l>Vnd rieff mit schwacher Stimm: Ich bitt entweichet nicht</l>
+            <l>Cardenio ich wil dir meinen Tod verzeihen:</l>
+            <l>Wo du mir wilt dein Ohr vnd Faust vnd Beystand leihen /</l>
+            <l>Ich red ohn alle List: Komm fahre mich von hier</l>
+            <l>Ich schwere bey dem Thron deß Richters über mir</l>
+            <l>Daß ich auffs minste nicht durch Rache dich wil kräncken.</l>
+            <l>Ich suche nur mein End vnd Elend zu bedencken /</l>
+            <l>Ich bitte: Daß ich mich versöhnen kan mit Gott</l>
+            <l>Daß ich mein Hauß befrey von dem so herben Spott:</l>
+            <l>Als ob ich meinen Stand so schlecht in acht genommen</l>
+            <l>Daß ich sey durch ein Weib in diesem Ort vmbkommen:</l>
+            <l>Auch werdet jhr dadurch erlöst von Furcht vnd Flucht /</l>
+            <l>Wenn niemand meinen Tod von euren Händen sucht.</l>
+            <l>Siht jemand meine Wund' im Weg' vnd Hause bluten</l>
+            <l>Dem wil ich weil ich kan einpflantzen diß vermuten</l>
+            <pb n="30"/>
+            <l>Ich sey durch frembde Feind vmbringet bey der Nacht /</l>
+            <l>Vnd durch dich auß der Noth zu meiner Wohnung bracht.</l>
+            <l>Ich bitte schlag nicht ab mein äusserstes begehren /</l>
+            <l>Komm führe mich von hier vnd von Celindes Zehren /</l>
+            <l>Vnd ließ auß meinem Blut wie groß jhr Vndanck sey:</l>
+            <l>Wie leicht jhr Wanckelmut! wie: Aber ich verzeih!</l>
+            <l>So viel / vnd lehnte sich an meine rechte Seiten.</l>
+          </lg>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <l>Vnd hast du dich erkühnt nach Hauß jhn zu begleiten.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Ich thats / als der mir selbst vnd meinem Leben gram!</l>
+            <l>Doch hilt er redlich Wort; als er ins Zimmer kam:</l>
+            <l>Vnd durch der Diener Fleiß entkleidet vnd geleget;</l>
+            <l>Hat sein der Artzt vmbsonst / wie weiß er auch / gepfleget:</l>
+            <l>Er schlug die Mittel auß: Vnd sucht in heisser Rew</l>
+            <l>Deß höchsten Königs Gunst vnd vnerschöpffte Trew.</l>
+            <l>Vnd gab den zweyten Tag den Geist in meinen Armen!</l>
+            <l>Nachdem er kurtz zuvor gerühmet mein erbarmen /</l>
+            <l>In aller Gegenwart; vnd so das Werck beschönt /</l>
+            <l>Daß anderwerts mich / jhn vnd sein Geschlecht verhönt.</l>
+          </lg>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <lg>
+            <l>Ist diß Marcellus Fall! O heisser Durst der Ehren!</l>
+            <l>Den nicht die Rach-Lust kan vnd nicht der Tod versehren!</l>
+            <l>Der vor deß Feindes Angst / deß Himmels Ruh begehrt!</l>
+            <l>O Seele beßren Glücks vnd andren Abschieds werth.</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Man glaub': Ich hab jhn offt geehrt mit meinen Threnen</l>
+            <l>Mit innerlicher Rew' vnd Kummer-vollem Sehnen!</l>
+            <l>Sein sterbendes Geberd' ermuntert mich die Nacht /</l>
+            <l>Vnd nimmt Celinden mir vnd alles auß der acht.</l>
+            <l>Ach wo verfiel ich hin: Wer bin ich vor gewesen!</l>
+            <l>Wer jetzt! wo werd' ich doch! wenn werd ich doch genesen!</l>
+            <l>Was stehst Olympie! was stehst du strenge mich!</l>
+            <pb n="31"/>
+            <l>Was hab ich auff gesetzt? Doch hat ein ander dich!</l>
+            <l>Auff! last vns denn von hier; du über-trew Gemüte!</l>
+            <l>Verzeihe daß ich noch mißbrauche deiner Güte</l>
+            <l>Verrichte was ich bat' vnd sey nach Mitternacht /</l>
+            <l>Wo meine Wohnung ist zu suchen mich bedacht.</l>
+          </lg>
+          <stage>Cardenio, Diener.</stage>
+          <lg>
+            <l>Geh werther Freund / geh hin / was ich dir noch verborgen;</l>
+            <l>Mein letztes Abscheid'-Stück entdecke dir der Morgen.</l>
+            <l>Die Reiß ist zwar bestimmt. Doch eh' ich komm ins Feld</l>
+            <l>Muß durch gerechten Zorn Lysander auß der Welt /</l>
+            <l>Ist diß mein Diener? Recht! wie? Hast du was vernommen?</l>
+          </lg>
+        </sp>
+        <sp who="#diener">
+          <speaker>DIENER.</speaker>
+          <lg>
+            <l>Lysander wird gewiß noch diese Nacht ankommen:</l>
+            <l>Er ist nicht fern von hier / ich hab jhn selbst gesehn</l>
+            <l part="I">Vnd rennt alsbald voran!</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l part="F">So ists vmb ihn geschehn.</l>
+            <l>Ich wil das falsche Blut vor morgen noch vergissen /</l>
+            <l>Vnd durch gewüntschte Rach ein langes Leid beschlissen</l>
+            <l>Der ist Olympie nicht deiner Liebe werth:</l>
+            <l>Der dich dem Rauber läst / dem du durch List beschert.</l>
+          </lg>
+        </sp>
+        <sp who="#reyen">
+          <speaker>Reyen.</speaker>
+          <lg>
+            <l>Der hohe Geist der in der Sterbligkeit /</l>
+            <l>Vnsterblich herrscht: Der seines Fleisches Kleid</l>
+            <l>Als eine Last / (so bald die Stunde schlägt</l>
+            <l>Die scheiden heist) gantz vnversehrt ablegt;</l>
+          </lg>
+          <lg>
+            <l>Der hohe Geist würd' alles was die Welt /</l>
+            <l>Was Lufft vnd See in jhren Schrancken hält /</l>
+            <l>Was künfftig noch / vnd was vorlängst geschehn;</l>
+            <l>Mit lachen nur vnd Miß-Preiß übersehn /</l>
+          </lg>
+          <pb n="32"/>
+          <lg>
+            <l>Dem Vogel Trotz! der in die Lufft sich schwingt</l>
+            <l>Ob schon der Schall der harten Donner klingt /</l>
+            <l>Vnd ob der Sonn' auff die er einig harrt /</l>
+            <l>Mit steiffem Aug sich wundert vnd erstarrt.</l>
+          </lg>
+          <lg>
+            <l>Der hohe Geist würd über alles gehn /</l>
+            <l>Vnd bey dem Thron der höchsten Weißheit stehn;</l>
+            <l>Wenn beyde Flügel jhm nicht fest gehemmt /</l>
+            <l>Vnd Füß vnd Leib mit schwerer Last beklemmt.</l>
+          </lg>
+          <lg>
+            <l>Alsbald er auff den Kreiß der Dinge trat</l>
+            <l>Erschrack der Fürst der zu gebitten hat</l>
+            <l>Der Vntern-Welt / der wenn er vmb sich blickt /</l>
+            <l>Neid / Haß vnd Grimm in vnser Licht außschickt.</l>
+          </lg>
+          <lg>
+            <l>Er schüttelte dreymal sein Schlangen-Har</l>
+            <l>Die Höll erbeb't; was vmb vnd vmb jhn war</l>
+            <l>Versanck in Furcht / die Glut schloß einen Ring</l>
+            <l>Als er entsteckt von heissem Zorn anfing;</l>
+          </lg>
+          <lg>
+            <l>Auff! Götter auff! die mit mir von dem Thron</l>
+            <l>Hieher gebannt: Es steht nach jener Kron</l>
+            <l>Die ich besaß / ein hoch-glückselig Bild</l>
+            <l>Das leider mehr bey seinem Schöpffer gilt!</l>
+          </lg>
+          <lg>
+            <l>Man ging zu Rath: Es ward ein Schluß erkist</l>
+            <l>Zu dämpffen was deß Menschen himmlisch ist /</l>
+            <l>Mit Macht vnd Trug! bald drungen auß der Nacht</l>
+            <l>Geitz / Hochmut / Angst / Einbildung / Wahn vnd Pracht.</l>
+          </lg>
+          <lg>
+            <l>Doch allen flog erhitzte Brunst zuvor</l>
+            <l>Die voll von List den Nahmen jhr erkor</l>
+            <l>Von steter Lieb' vnd vnter jhrem Schein</l>
+            <l>Die Hertzen nam mit Gifft vnd Gallen ein.</l>
+          </lg>
+          <pb n="33"/>
+          <lg>
+            <l>Ihr bot alsbald die Rach-Lust treue Hand</l>
+            <l>Die / leider! jetzt der allgemeine Tand</l>
+            <l>Auff dem Altar der tapffern Ehren ehrt /</l>
+            <l>Indem die Burg der Ehren wird zustört.</l>
+          </lg>
+          <lg>
+            <l>Die Rasereyen pochen was man schätzt /</l>
+            <l>Vnd heilges Recht auff festen Grund gesetzt;</l>
+            <l>Sie stecken Reich vnd Land mit Flammen an</l>
+            <l>Die auch kein Blut der Völcker dämpffen kan.</l>
+          </lg>
+          <lg>
+            <l>Sie färben See vnd Wellen Purpur-roth</l>
+            <l>Sie stürtzen Stül vnd Kronen in den Koth /</l>
+            <l>Vnd treten was auff Erden sterbens-frey</l>
+            <l>Vnd ewig / mit entweyhtem Fuß entzwey.</l>
+          </lg>
+          <lg>
+            <l>Sie reissen (ach!) deß Menschen reine Seel</l>
+            <l>Von jhrem Zweck in deß Verterbens Höl</l>
+            <l>Vnd ziehn / die den Gott gab den Himmel ein</l>
+            <l>Auß stiller Ruh / in jmmer-strenge Pein.</l>
+          </lg>
+        </sp>
+      </div>
+      <div type="act">
+        <head>Die Andere Abhandelung.</head>
+        <stage>Der Schaw-Platz bildet einen Lust-Garten ab.</stage>
+        <stage>Celinde singend vnd spielend auff der Laute.</stage>
+        <sp who="#celinde">
+          <lg>
+            <l>Fleuch bestürtzter Fürst der Sternen</l>
+            <l>Meiner Seelen Lust vnd Ruh!</l>
+            <l>Eilt von mir sich zu entfernen.</l>
+            <l>Himmel steht jhr dieses zu!</l>
+            <l>Vberfällt mich diese Pein!</l>
+            <l>So verkehrt sich mein entseelter Leib in Stein.</l>
+          </lg>
+          <pb n="34"/>
+          <lg>
+            <l>Falscher! hat mein feurig lieben</l>
+            <l>Nie dein frostig Eiß erweicht</l>
+            <l>Hab ich diese Klipp erreicht</l>
+            <l>Auff der mein Hertz gantz zutrieben</l>
+            <l>Vnd durch dein verkehrt Gesicht</l>
+            <l>In verzweiffelns-Sturm auff tausend Stücken bricht.</l>
+          </lg>
+          <lg>
+            <l>Fleuch mein Geist! fleuch vnd verschwinde</l>
+            <l>Eh die raue Stund ankommt</l>
+            <l>Die mir Zeit vnd Leben nimmt</l>
+            <l>Daß ich mich nicht in mir finde!</l>
+            <l>Macht daß meine Seel entreist!</l>
+            <l>Was verzeuchst du mehr durch auß verwäister Geist.</l>
+          </lg>
+          <lg>
+            <l>Flisst jhr herben Threnen-Bäche /</l>
+            <l>Lescht der Augen Fackeln auß /</l>
+            <l>Deß gekränckten Leibes Hauß</l>
+            <l>Sinckt vnd stürtzt. Ich selbst zubreche /</l>
+            <l>Weil der Donner vmb mich kracht /</l>
+            <l>Vnd mich in dem nun / zur Handvoll Aschen macht /</l>
+          </lg>
+          <stage>Sie reist die Seiten von der Lauten / vnd wirfft sie von sich.</stage>
+          <lg>
+            <l>Fleuch Geist / fleuch. Kont ich mich der Vntrew je vermutten!</l>
+            <l>So hätt ich mir gewüntscht / durch schwitzen / tod zu blutten /</l>
+            <l>Durch Flammen zu vergehn! auff Felsen auß der Höh</l>
+            <l>Zusplittern Brust vnd Bein / in nie erdachtem Weh</l>
+            <l>Zu suchen meinen Tod: Es hätte mich der Degen</l>
+            <l>Der dich Marcell erstieß auch müssen niederlegen:</l>
+            <l>Marcell ach! der du mich nur gar zu trew geliebt /</l>
+            <l>Den mehr Celindens Angst / denn eigner Tod betrübt!</l>
+            <l>Komm blasser Geist komm vor / auß deiner Ruhe-Kammer /</l>
+            <l>Vnd schaw auff deine Rach' vnd meiner Seelen Jammer.</l>
+            <pb n="35"/>
+            <l>In den ohn eine Schuld mich der Verräther setzt;</l>
+            <l>Der vmb Celinden dich voll Eifers hat verletzt.</l>
+            <l>Ha grimmer-grauser Mensch! zu meinem Ach geboren!</l>
+            <l>Durch den ich Freyheit / Lust / Trost / Ruh vnd mich verloren /</l>
+            <l>Vnd nur zu meiner Pein in diesem Leibe schmacht'</l>
+            <l>Denn / wenn ein Tod vor mich / ich Augenblicks bedacht</l>
+            <l>Zu reissen auß der Zeit! ich die bey frischen Jahren</l>
+            <l>Vnd Blüte der Gestalt / so hart beschimpfft erfahren;</l>
+            <l>Daß Liebe Drachen-Gifft vor Honig vns gewehr'</l>
+            <l>Vnd falschen Wanckelmut vor treue Gunst bescher'</l>
+            <l>Die Erden stinckt mich an! wie kan ich sonder Grauen</l>
+            <l>Das Auge dieser Welt / die lichte Sonn anschauen</l>
+            <l>Die vorhin meine Freud / jetzt meine Schmach bestralt</l>
+            <l>Vnd mein bestürtzt Gesicht mit scheuer Röthe mahlt.</l>
+            <l>Die bleiche Cynthia, vor Zeugin meiner Lüste:</l>
+            <l>Verweist mir jene Zeit in der man mich begrüste</l>
+            <l>In der Cardenio mir in die Armen fiel</l>
+            <l>Vnd diesen Geist erquickt durch süsse Seitenspiel /</l>
+            <l>Was Anmut gaben vor / die Sorgen-freyen Nächte /</l>
+            <l>Was schreck' vnd grauen jetzt? Bald klingt mir das gefechte</l>
+            <l>(Indem Marcell erblast) durch mein verletztes Ohr:</l>
+            <l>Bald kommt er mir durchnetzt von Blut vnd Threnen vor.</l>
+            <l>Rufft heischer vnd verweist daß ich nun selbst verlassen</l>
+            <l>Die ich vorhin verließ: Bald hör ich durch die Gassen</l>
+            <l>Ein kläglich Abend-Lied vnd wein' vmb daß man singt:</l>
+            <l>Vnd mein recht lebend Leid auff frembde Seiten bringt /</l>
+            <l>Biß ein Verstarren schleust die nassen Augenlieder:</l>
+            <l>Denn fällt mich Morpheus an: Vnd reist mich hin vnd wieder</l>
+            <l>Durch Hecken-volle Berg' / in ein Cypressen Thal:</l>
+            <l>Vnd vnbewohntes Feld / vnd mahlt die raue Qual</l>
+            <l>Verliebter Seelen ab! Medèen seh' ich rasen:</l>
+            <pb n="36"/>
+            <l>Ich seh auff Didus Brust von Blut geschwellte Blasen</l>
+            <l>Die bleiche Phyllis hangt von jhrem Mandelbaum /</l>
+            <l>Alcione sucht Ruh auff toller Wellen Schaum.</l>
+            <l>Doch wenn ich dich mein Hertz / Cardenio, erblicket</l>
+            <l>Schiß ich noch schlummernd auff / bald wirst du mir entrücket</l>
+            <l>Vnd gehest fern von mir durch eine raue Bahn;</l>
+            <l>Ich folge! doch vmbsonst: Es ist vmb mich gethan.</l>
+            <l>Du schlägst mein Winseln auß: Doch / kanst du mehr nicht lieben;</l>
+            <l>Warumb denn muß dein Bild auch traumend mich betrüben!</l>
+            <l>Was red' ich vnd mit wem! wie wenn die heisse Macht</l>
+            <l>Der Seuchen vns besiegt / ein zagend Hertze schmacht /</l>
+            <l>In hart entbrandter Glut; vnd die geschwächten Sinnen</l>
+            <l>Empfinden nach vnd nach wie Krafft vnd Geist zerrinnen /</l>
+            <l>Indem die inn're Flamm nunmehr den Sitz anfällt</l>
+            <l>In welchem sich Vernunfft gleich als beschlossen hält /</l>
+            <l>Denn taumelt der Verstand / denn jrren die Gedancken /</l>
+            <l>Denn zehlt die schwartze Zung deß abgelebten Krancken</l>
+            <l>Viel vngestalte Wort in stetem schwermen her /</l>
+            <l>Die Augen blind von Harm / von stetem wachen schwer</l>
+            <l>Sehn was sie doch nicht sehn! die Ohren taub von sausen!</l>
+            <l>Die hören hier Trompet; hier Schwerdt vnd Drommel brausen /</l>
+            <l>So handelt mich die Noth! was Rath! komm Gifft vnd Stahl;</l>
+            <l>Vnd end' / (ich bin mein selbst nicht mehr) die lange Qual.</l>
+            <l>Cardenio ist taub! mich soll der Tod erhören</l>
+            <l part="I">Den ich in meiner Faust</l>
+          </lg>
+          <pb n="37"/>
+          <stage>Sie erwischt ein Messer.</stage>
+        </sp>
+        <stage>Celinde. Sylvia. Tyche.</stage>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <lg>
+            <l part="F">Wolt jhr mein Elend mehren</l>
+            <l>Mit trösten sonder Trost vnd rathes-losem Rath.</l>
+          </lg>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Holdseligste den Rath bewahrt vollbrachte That.</l>
+        </sp>
+        <sp who="#sylvia">
+          <speaker>SYLVIA.</speaker>
+          <l>Wer vntersincken wil sucht Mittel sich zu retten!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Wir suchten / wenn wir hier nur einig Mittel hätten.</l>
+        </sp>
+        <sp who="#sylvia">
+          <speaker>SYLVIA.</speaker>
+          <l>Wo noch ein Mittel ist so schlägt es Tyche vor.</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Ihr Mittel klingt zu raw in meinem zarten Ohr.</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Sie wil denn daß ich sie von Liebe soll entbinden!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Nein / in Cardenio soll sie die Lieb entzünden.</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Sie richtet jhren Wuntsch stets nach dem alten Ziel:</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Doch so daß sein Verstand den minsten Schaden fühl.</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Gemütter sind so leicht nicht vnverletzt zu zwingen!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Man soll Cardenio mir vnverletzt zubringen.</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Diß thut kein Liebes-Tranck / er greifft die Sinnen an!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Der liebt nicht / der mich nur auß rasen lieben kan!</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Genung vor mich / wenn ich der Liebe nur geniesse:</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Mir nicht! daß mich der Mund vnd nicht das Hertze grüsse.</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Ein solches Lieben rührt auß höherm Vrsprung her.</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Ein solch' ists die ich von Cardenio begehr.</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Hat er denn sie vorhin so inniglich geliebet.</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>So / daß sein Abschied mich biß auff den Tod betrübet:</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Wie wenn als menschlich ist der Tod hätt' euch getrennt /</l>
+        </sp>
+        <pb n="38"/>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Denn wer auff seiner Asch mein glüend Hertz verbrennt.</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Sie bild jhr ein er sey auff ewig jhr gestorben!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Wenn nicht ein ander jhn durch neue Gunst erworben!</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Sie schlage diesen Wahn gantz mit jhm auß der Acht!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Mein liebend Eifer ists der ewig in mir wacht.</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Vmbsonst! wenn sie auff ihn kein Vortheil kan erlangen.</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>O warumb bin ich nicht mit erster Zeit vergangen!</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Viel andre wüntschen nach dem lieblichen Gesicht.</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Dein ists Cardenio, vnd keines andern nicht.</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Die grosse Schönheit wird leicht andre Freund' erwerben!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Cardenio mein Freund ich wil die deine sterben!</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Sein Vndanck hat ja nie so treue Gunst verdient.</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Ade! ich habe mich zu jedem Tod' erkühnt.</l>
+        </sp>
+        <sp who="#sylvia">
+          <speaker>SYLVIA.</speaker>
+          <l part="I">O Himmel! sie vergeht!</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <lg>
+            <l part="F">Ey noch nicht Mut verloren.</l>
+            <l part="I">Celind!</l>
+          </lg>
+        </sp>
+        <sp who="#sylvia">
+          <speaker>SYLVIA.</speaker>
+          <l part="F">Es ist vmbsonst sie hört mit tauben Ohren.</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l part="I">Celind!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l part="F">Wer hält mich hier / ey gönnt mir meine Ruh!</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l part="I">Nein Schönst: Es ist noch Rath.</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l part="F">Komm Tod! du Tröster / du!</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Mitleiden prest mir auß recht vnverfälschte Zehren.</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Ach leider! wil man mir den süssen Tod erwehren!</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Nur Mutt! mir fällt gleich jetzt ein sicher Mittel ein.</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>O möcht auff dieser Welt es zu erlangen seyn.</l>
+        </sp>
+        <pb n="39"/>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Zwar scheints ein wenig schwer: Doch möcht es seyn zu finden!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Man wird auff ewig mich durch diesen Dienst verbinden.</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <lg>
+            <l>Wo jemand der sie trew' vnd ohne Falsch geliebt</l>
+            <l part="I">Vor kurtzer Zeit entseelt.</l>
+          </lg>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <lg>
+            <l part="F">Ich werd' auffs new betrübt /</l>
+            <l part="I">Marcell durch deinen Tod.</l>
+          </lg>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <lg>
+            <l part="F">Vnd jrgends hie vergraben!</l>
+            <l>So must ich dessen Hertz zu diesem Vorsatz haben /</l>
+            <l>Daß ich zu rechter Zeit vorhin mit jhrem Blut /</l>
+            <l>Vmb etwas angefrischt wolt auff geweyhter Glut /</l>
+            <l part="I">Verbrennen gantz zu Asch:</l>
+          </lg>
+        </sp>
+        <sp who="#sylvia">
+          <speaker>SYLVIA.</speaker>
+          <l part="F">Ich zitter es zu hören!</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <lg>
+            <l>Der Aschen Krafft muß ich mit heil'gen Worten mehren.</l>
+            <l>So bald Cardenio darvon was beygebracht /</l>
+            <l>Es sey in frischem Wein / es sey in Taffel Tracht /</l>
+            <l>Es sey in Zuckerwerck vnd was nur zu erdencken /</l>
+            <l>Auff Blümlein die man pflegt zum riechen zu verschencken:</l>
+            <l>Wird er durch neue Flamm' entsteckt mehr denn vorhin</l>
+            <l>Die suchen die er fleucht: So wahr ich Tyche bin.</l>
+          </lg>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <lg>
+            <l>Wenn nun der Artzt vmbsonst hat Fleiß vnd Zeit verschwendet:</l>
+            <l>Vnd was nicht helffen kan bey Krancken auffgewendet /</l>
+            <l>Schlägt er / damit kein Schimpff sein altes Lob verzehr:</l>
+            <l>So frembde Kräuter vor / die niemals über Meer</l>
+            <l>In diesen Port gebracht! hätt ich die Specereyen:</l>
+            <l>(So spricht er) wolt ich stracks der Schmertzen euch befreyen</l>
+            <l>Ja schafft den Siechen auch zuweilen etwas an</l>
+            <l>Das keinem möglich ist vnd niemand leisten kan.</l>
+            <l>So eben handelt ihr vnd rühmt von solchen Dingen</l>
+            <l>Die mir vnd keinem nicht sind möglich auffzubringen!</l>
+            <pb n="40"/>
+            <l>Vnd dardurch gebt jhr mir nichts anders zu verstehn</l>
+            <l>Als daß ich sonder Rath müß in der Qual vergehn.</l>
+          </lg>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <lg>
+            <l>Warumb doch: Wenn Marcell so viel auff sie gehalten?</l>
+            <l>Muß nicht sein Cörper sonst in einer Grufft veralten!</l>
+            <l>Wie leicht ist Sarg vnd Brust eröffnet bey der Nacht!</l>
+            <l>Wie leicht ist / was so schwer vns denkt / zu wegen bracht.</l>
+          </lg>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <lg>
+            <l>Die Augen starren mir: Ich schreck'! ich beb'! ich zitter!</l>
+            <l>Soll der bißher vmb mich so wol-verdiente Ritter:</l>
+            <l>Vmb dich Cardenio (wie vorhin Seel vnd Geist /)</l>
+            <l>Jetzt auch sein todtes Hertz hingeben! Parcen reist /</l>
+            <l part="I">Reist meine Faden ab!</l>
+          </lg>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l part="F">Wen hat sie mehr geliebet?</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Den freylich / der mich jetzt so schändlich übergibet.</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Vnd wagt sich selbst vor jhn? Warumb nicht eine Leich?</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Diß Stück ist vnerhört / vnd keinem Zufall gleich.</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Es ist vorhin gethan vnd hochbewehrt befunden.</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Ists möglich: Daß ein Mensch so viel sich vnterwunden?</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <lg>
+            <l>Die Eisen-harte Noth die vnser Leben quält</l>
+            <l>Zwang Seelen / Himmel an: Wo man die Sternen zehlt;</l>
+            <l>Zwang Seelen in der Lufft: In Wäldern Rath zu suchen:</l>
+            <l>Der Abgrund ward durchforscht: mit Segnen vnd mit Fluchen</l>
+            <l>Riß man das ehrne Thor der tiefsten Höllen auff:</l>
+            <l>Durch frembder Worte Macht begab sich in den Lauff /</l>
+            <l>Ein fest gewurtzelt Stamm: Die Geister in den Lüfften</l>
+            <l>Entdeckten was vns noth. Die Leichen auß den Grüfften</l>
+            <l>Verkündigten den Schluß den die Verhängnüß schrieb</l>
+            <l>Nichts war / das durch die Kunst vnüberwunden blieb</l>
+            <l>Die manch' ein grosses stund: Kein Fleisch / kein Eingeweide</l>
+            <pb n="41"/>
+            <l>Der Kälber war genung / kein Hirsch in wilder Heide</l>
+            <l>Von Hunden auff gejagt! kein vnberührter Stier:</l>
+            <l>Kein auffgewachsen Hengst! kein vnvernünfftig Thier.</l>
+            <l>Die Geister / die die Welt die noth Geheimnüß lehren;</l>
+            <l>Muß man mit reinem Blut erkiester Menschen ehren:</l>
+            <l>Die forderten von dem ein vngeboren Kind /</l>
+            <l>Von dem die Mutter selbst. Der müst als taub vnd blind</l>
+            <l>Auff einer Wegscheid ihm die keusche Tochter schlachten /</l>
+            <l>Die Jenen rühr' ich nicht die jhre Feind' vmbbrachten /</l>
+            <l>Vnd brauchten von dem Blut befleckt vnd law vnd naß</l>
+            <l>Den abgestreifften Kopff zu einem Weyrauch-Faß /</l>
+            <l>Bekleidet mit der Haut / mit einem Darm vmbwunden.</l>
+            <l>Man hat ein zartes Kind noch lebendig geschunden /</l>
+            <l>Vnd auff das weiche Fell mit Blut die Schrifft gesetzt:</l>
+            <l>Die den vnd jenen Geist bald zwinget bald ergetzt.</l>
+            <l>Man hat deß Knaben Haupt vmbdrehend abgerissen</l>
+            <l>Auß welchem nachmals sich die Geister hören lissen:</l>
+            <l>Man hieb mit Ertz von dem / von jenem Cörper ab /</l>
+            <l>Was zu dem Opffer dient / man stanckert in dem Grab</l>
+            <l>Nach einer schwangern Faust / man zog den dürren Leichen</l>
+            <l>Die feuchte Leinwand auß; wenn etwa zu erreichen</l>
+            <l>Ein dörrendes Geripp / ein halb-verbrandtes Aas;</l>
+            <l>Ein Leib von welchem schon die Schaar der Raben fraß:</l>
+            <l>Feirt vnser Hauffe nicht: Man liß sich nicht erschrecken</l>
+            <l>Deß Nachts von einem Pfal auff dem Gespiste stecken</l>
+            <l>Zu rauben Daum vnd Haar / biß Mut vnd Fleiß vollbracht</l>
+            <l>Wornach der scharffe Sinn der Sterblichen getracht.</l>
+            <l>Warumb? Vmb die Natur durch neue Macht zu binden!</l>
+            <l>Cometen in der Höh vnd blitzen zu entzünden:</l>
+            <l>Zu stopffen frische Quäll / vnd Wellen zu erhöhn /</l>
+            <l>Wenn schon die Winde nicht (die an dem Joch vns gehn)</l>
+            <l>Sich regen in der See! es muß auff vnser fragen</l>
+            <pb n="42"/>
+            <l>Ein Vieh'/ ein Baum / ein Bild / ein Marmor Antwort sagen!</l>
+            <l>Es kommt auff vnser Wort ein Fürst auß seiner Ruh</l>
+            <l>Der Proserpinen zog vor tausend Jahren zu /</l>
+            <l>Noch jetzt: wil sie der Frucht / Holdseligste genissen</l>
+            <l>So muß sie / daß der Kärn / was harte / nicht verdrissen /</l>
+            <l>Sie wag' es: Wer verzagt! hat nichts zu wegen bracht:</l>
+            <l>Sie schaff jhr stete Lust durch Arbeit einer Nacht.</l>
+          </lg>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Wenn man in solcher That mich vnversehns ergriffe?</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <lg>
+            <l>Sie ist die erste nicht/ die fuhr in solchem Schiffe.</l>
+            <l>Der Hof / die grosse Stadt / das gantze Land ist voll</l>
+            <l>Von Seelen / denen nur bey diesen Künsten wol.</l>
+            <l>Viel wären eh' ins Grab als Hochzeit-Bette kommen</l>
+            <l>Wenn sie bewahrten Rath nicht bald in acht genommen:</l>
+            <l>Viel wären sonder Freund / vnd (was viel werther /) Gold:</l>
+            <l>Viel pflügten sonder Nutz vnd dienten sonder Sold.</l>
+            <l>Viel wären diese nicht / vor die man sie muß ehren:</l>
+            <l>Halt inn! was schwerm ich viel? Man darff nicht alles hören</l>
+            <l part="I">Was sich verrichten läst.</l>
+          </lg>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <lg>
+            <l part="F">Gesetzt ich stünd es zu!</l>
+            <l>Mich hindert Thor vnd Schloß / Marcell hat seine Ruh /</l>
+            <l part="I">In der verwahrten Kirch!</l>
+          </lg>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <lg>
+            <l part="F">Ist die nicht zu entschlissen?</l>
+            <l>Hat der / der sie verwahrt / nun ein so zart Gewissen?</l>
+            <l>Nein warlich! Cleon ließ mich offt vmb Mitternacht /</l>
+            <l>Offt eh die Sonne fiel / offt eh Dian erwacht</l>
+            <l>Bald mit Geferten ein / bald einig / wenn von nöthen:</l>
+            <l>Durch ein getaufftes Bild deß Feindes Kind zu tödten /</l>
+            <l>Wenn wo in einer Grufft / wenn auff dem Fron-Altar</l>
+            <l>Von Wachs / Papier vnd Schrifft was zu verbergen war.</l>
+            <l>Vertraut sie auff mein Wort / ich weiß jhn zu bewegen?</l>
+          </lg>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <lg>
+            <l>Ich könte Tychens Rath vnd gründlich widerlegen!</l>
+            <l>Doch leider meine Noth hat mich so weit gebracht!</l>
+            <pb n="43"/>
+            <l>Daß ich / was ich nicht wil / doch zu versuchen tracht!</l>
+            <l>Die Seele zittert mir! vnd findet sich bestritten:</l>
+            <l>Von Schrecken / Lieb / vnd Furcht! was hab ich nicht erlidten!</l>
+            <l>Ich wüntsche ja den Tod! kan was mehr schädlich seyn!</l>
+            <l>Als von Cardenio auff stets geschieden seyn.</l>
+            <l>So wenn der Arm entbrannt vnd die erhitzten schweren</l>
+            <l>Das lebend-faule Fleisch als rinnend Wachs auffzehren!</l>
+            <l>Vnd greiffen mehr vnd mehr die nahen Mausen an /</l>
+            <l>Daß ohn die Sege nichts den Cörper retten kan /</l>
+            <l>Denn halt man bey sich Rath ob besser zu verscheiden /</l>
+            <l>Ob leichter außzustehn das vngeheure schneiden</l>
+            <l>Vnd weil man in der Angst noch zweiffelt ob dem Schluß</l>
+            <l>Streckt man den Arm dahin! ich leider Tyche muß</l>
+            <l>Hinfolgen wo du gehst! versuch (ich wil es reichen)</l>
+            <l>Durch auffgezehltes Gold / den Cleon zu erweichen.</l>
+            <l part="I">Durchforsche sein Gemüt!</l>
+          </lg>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <lg>
+            <l part="F">Sein Hertz ist mir bekand</l>
+            <l>Er setzt jhr Gut vnd Gott vor baares Gold zu Pfand.</l>
+          </lg>
+        </sp>
+        <sp who="#reyen">
+          <speaker>Reyen.</speaker>
+          <lg>
+            <l>Es ist nicht ohn / wer auff Morast sich wagt /</l>
+            <l>(Wie schön er überdeckt mit jmmer frischem Grase</l>
+            <l>Das vnter jhm doch reist gleich einem schwachen Glase)</l>
+            <l>Hat (doch zu spät) die kühne Lust beklagt.</l>
+          </lg>
+          <lg>
+            <l>Er sinckt / wenn ihn nicht Rettung stracks erhält</l>
+            <l>Bald über Knie vnd Brust / in die verklemmten Pfützen /</l>
+            <l>Die Stimme schleust der Koth / der Stirnen kaltes schwitzen</l>
+            <l>Verwischt der Schilff darunter er verfällt.</l>
+          </lg>
+          <lg>
+            <l>So eben gehts / wenn man die Sünd anlacht /</l>
+            <l>Vnd wil ohn eine Schew mit jhren Nattern spielen;</l>
+            <pb n="44"/>
+            <l>So fühlt man / eh man recht kan jhre Bisse fühlen</l>
+            <l>Daß sich die Gifft schon durch die Adern macht.</l>
+          </lg>
+          <lg>
+            <l>Celinde, kaum durch geile Brunst erhitzt /</l>
+            <l>Verließ das erste Feur vnd brant in neuen Flammen</l>
+            <l>Indem Marcell den Fall auch sterbend wil verdammen</l>
+            <l>Vnd durch die Brust Blut auff die Glut außsprützt.</l>
+          </lg>
+          <lg>
+            <l>Der Mord ist nicht recht in die Grufft versteckt;</l>
+            <l>Sie raset sonder Zaum vnd wil durch Frevel finden</l>
+            <l>Was jhrer Schönheit macht ohnmächtig ist zu binden.</l>
+            <l>Was fängt sie an? Starrt Seelen vnd erschreckt!</l>
+          </lg>
+          <lg>
+            <l>Der tolle Dunst / das schwartze Zauber-Spiel /</l>
+            <l>Soll hier geschäfftig seyn / man wil das Grab entweyen</l>
+            <l>Man fällt die Glieder an / die Sarg vnd Grab befreyen</l>
+            <l>Was suchst du doch! hier suchst du viel zu viel!</l>
+          </lg>
+          <lg>
+            <l>Halt weil noch Zeit! verführter Geist halt an!</l>
+            <l>Ach nein! du sündigst vmb mehr Sünde zu begehen!</l>
+            <l>Soll denn der Laster Lohn in diesem Lohn bestehen;</l>
+            <l>Daß keines lang' vnfruchtbar bleiben kan.</l>
+          </lg>
+        </sp>
+      </div>
+      <div type="act">
+        <head>Die Dritte Abhandelung.</head>
+        <stage>Der Schaw-Platz stellet Lysanders Hauß vor.</stage>
+        <stage>Olympia. Vireno.</stage>
+        <sp who="#olympia">
+          <lg>
+            <l>Du köntest mir fürwahr nicht besser Zeitung bringen</l>
+            <l>Als daß Lysander nah' / jhr Himmel lasts gelingen</l>
+            <l>Daß ich jhn heute noch in meinen Armen seh:</l>
+          </lg>
+        </sp>
+        <pb n="45"/>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <l>Ich wüntsche daß es bald vnd glücklich auch gescheh.</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>Ich weiß kein grösser Glück in dieser Welt zu hoffen /</l>
+            <l>Als seine Gegenwart. Mein Hertze steht ihm offen</l>
+            <l part="I">Nicht nur sein eigen Hauß.</l>
+          </lg>
+        </sp>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <lg>
+            <l part="F">Es ist mein höchste Lust:</l>
+            <l>Daß die so laue Lieb hab endlich deine Brust</l>
+            <l>Mit wahrer Flamm entsteckt / was hat er nicht gelidten:</l>
+            <l>Als du vor jener Zeit durchauß nicht zu erbitten.</l>
+            <l>Wie ging er dir so steiff / so unverdrossen nach /</l>
+            <l>Vnd duldet allen Hohn; das rauschen stiller Bach</l>
+            <l>Vnd sein liebreiches Wort war eins in deinen Ohren /</l>
+            <l>Du hättest nur vor jhn / holdselig seyn / verloren:</l>
+            <l>Nun hat die Liebe dir / die du bißher bekriegt</l>
+            <l>Doch durch Lysanders Trew zum letzten obgesiegt.</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>Mein Bruder ich gesteh' es hat mir nie behaget /</l>
+            <l>Was er bey stiller Nacht durch meine Magd gewaget /</l>
+            <l>Daß ein beschlossen Hauß er durch sein Geld erbrach</l>
+            <l>Vnd als Verräther drang in keusche Schlafgemach.</l>
+            <l>Was kam es mich zu stehn! was Eltern vnd Verwandten;</l>
+            <l>Ich ward der Zungen Spiel: Vnd die mein Hertz erkanten</l>
+            <l>Die zogen doch mein Ehr' in Argwon vnd Verdacht!</l>
+          </lg>
+        </sp>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <l>Wahr ists! er hats mit vns mehr denn zu grob gemacht!</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>Ach keiner lasse sich so weit den Wahn bethören</l>
+            <l>Vnd such' ein rein Gemüt durch Tücke zu entehren!</l>
+            <l>Wer List / Betrug vnd Macht zu Heuraths-Stifftern braucht;</l>
+            <l>Fängt gar zu übel an. Weil noch die Fackel raucht</l>
+            <l>Die man der Braut ansteckt: Raucht schon Haß / Eifer / Rache /</l>
+            <l>Vnd ewig-heisser Grimm / vnd macht die Sinnen wache</l>
+            <l>Durch rasend' Vngeduld. Die sich verkauffen läst</l>
+            <l>Vnd ruhig sich verspielt / muß warlich nicht zu fest</l>
+            <l>Auff jhrer Ehre stehn. Er dachte mich zu fangen:</l>
+            <l>Vnd hatte leider sich zum ärgsten hintergangen.</l>
+            <pb n="46"/>
+            <l>Ich ward zuletzt auß Noth jhm auff sein Wort versagt:</l>
+            <l>Ich / der Cardenio, nicht sein Betrug behagt.</l>
+            <l>Hilff Gott! wie schlug mein Hertz: Wenn ich jhn must' anschauen</l>
+            <l>Denn wolte mir vor jhm biß auff das brechen grauen!</l>
+            <l>Sein Wort war mir im Ohr ein harter Donnerschlag</l>
+            <l>Ich wüntschte meinen Tod vor seinem Heuraths-Tag.</l>
+            <l>Er sah' (ob wol zu spät.) wie hoch er sich vergessen:</l>
+            <l>Vnd hub sein Vnglück an mit meinem auszumessen /</l>
+            <l>Jedoch entschloß er sich zur Busse seine Schuld;</l>
+            <l>Olympens Vbermut zu lindern durch Geduld.</l>
+            <l>Vnd diese brach mein Hertz; auch fiel ich in Gedancken</l>
+            <l>Cardenio wär hin! so trat ich in die Schrancken</l>
+            <l>Zwar noch nicht grosser Gunst / die täglich stärcker blüht /</l>
+            <l>Indem Lysander mir zu fugen sich bemüht /</l>
+            <l>Vnd wieder Liebe spürt. Wir wurden drauff verbunden</l>
+            <l>Durch Pristerlichen Spruch. Ich habe diß befunden</l>
+            <l>Daß Lieb unendlich sich in keuscher Eh vermehr;</l>
+            <l>Vnd wenn sie richtig / nie nach frembdem ruffen hör.</l>
+          </lg>
+        </sp>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <lg>
+            <l>Doch als Cardenio auffs new' allhier ankommen;</l>
+            <l>Vnd du sein alte Trew vnd Vnschuld recht vernommen /</l>
+            <l part="I">Ward nicht dein Geist bestürtzt.</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l part="F">Bestürtzt; doch nicht bewegt!</l>
+            <l>Ich habe Stand / Geschlecht vnd Zusag überlegt:</l>
+            <l>Ich schloß für Gottes Rath die stoltzen Knie zu neigen:</l>
+            <l>Der mir Lysandern ließ zum Eh'-Geferten zeigen.</l>
+            <l>Vnd ob Cardenio sich vnaußsprechlich müht /</l>
+            <l>Doch war sein Fleiß vmbsonst / wie man vor Augen siht.</l>
+          </lg>
+        </sp>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <l>So ist Cardenio denn gantz auß deinem Hertzen!</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>Lysander hat mein Hertz: Diß red ich / (vnd mit Schmertzen;)</l>
+            <l>Cardenio hat frey was höher mich geschätzt:</l>
+            <pb n="47"/>
+            <l>Ja vor mich Ehr vnd Ruhm vnd Leben auffgesetzt /</l>
+            <l>Sein Geist war meine Seel: Ich wüntscht ohn jhn zu sterben:</l>
+            <l>Ich wüntscht jhn nur allein vor alles Gut zu erben!</l>
+            <l>Was aber! ich verspür es sey deß Himmels Schluß</l>
+            <l>Gar anders auffgesetzt / verzeih es mir / ich muß</l>
+            <l>Entdecken was ich glaub'. Vnendlich hohe Sinnen</l>
+            <l>Begehren offt allhier den Vorsatz zu gewinnen</l>
+            <l>Den jhr Verlangen sucht. Sie wagen Schweiß vnd Fleiß /</l>
+            <l>Es fällt jhn alles zu / doch wenn der letzte Preiß</l>
+            <l>Ihn gleichsam in der Faust; so muß es gleichwol müssen /</l>
+            <l>Vnd als in grosser Hitz ein kaltes Eiß zuflissen.</l>
+            <l>Warumb? Deß Höchsten Aug' in seinem Himmel siht</l>
+            <l>Wie hart ein sterblich Mensch vmb seinen Fall bemüht;</l>
+            <l>Wie theuer es sein' Angst / ja sein Verterben kauffe;</l>
+            <l>Wie blind es in den Pful deß tiefsten Abgrunds lauffe;</l>
+            <l>Vnd hält mitleidend vns in diesem Wahnwitz an /</l>
+            <l>Nimmt was vns schaden mag. Gibt was vns nützen kan.</l>
+            <l>Was hier vnd dar zu sehn; blickt auch in Heuraths-Sachen!</l>
+            <l>Zwey Seelen können ja hier ein Verbündnüß machen;</l>
+            <l>Gott bindet oder trennt! was dem zu wider geht</l>
+            <l>Geht auffs verterben auß / was durch jhn kommt / besteht.</l>
+            <l>Wenn mit Cardenio mir nützlich stets zu leben;</l>
+            <l>Er hatte warlich mir Lysandern nicht gegeben.</l>
+            <l>Ist jener vielleicht mehr mit Gaben außgeziert;</l>
+            <l>Ich bin mit dem vergnügt was einig mir gebührt.</l>
+            <l>Wehlt mich Cardenio? Gott hat vor mich gewehlet:</l>
+            <l>Ich traure daß vmb mich Cardenio sich quälet:</l>
+            <l>Mich wundert daß nunmehr sein scharffer Geist nicht seh'</l>
+            <l>Daß auff deß Herren Welt / nichts ohngefehr gescheh' /</l>
+            <l>Daß der Olympien zur Eh' ihm abgeschlagen;</l>
+            <l>Vielleicht was höhers jhm entschlossen anzutragen.</l>
+            <l>Ich klage daß er sich nicht besser nem' in acht:</l>
+            <pb n="48"/>
+            <l>Vnd daß er seinen Ruhm auß Wehmut durchgebracht.</l>
+            <l>Sein Zagen! (wie ich weiß) bringt jhn auff solche Sachen</l>
+            <l>Die Ehre / Stand / Verstand vnd Lob zu nichte machen!</l>
+            <l>Der kürtzt sein Leben ab vor dem gesetzten Ziel</l>
+            <l>Der schwartze Molchen-Gifft vor Artzney brauchen wil.</l>
+          </lg>
+        </sp>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <l>Man sagt; er rüste sich auß dieser Stadt zu scheiden /</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Er wil Gelegenheit / vielleicht / zum bösen meyden.</l>
+        </sp>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <l>Wer weiß wohin sein Sinn jhn etwa wieder führt.</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Wer weiß ob nicht den Sinn die erste Tugend rührt.</l>
+        </sp>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <l>Lysander wird gewiß den grimm'sten Feind verlieren.</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Mehr ich / die dadurch frey von seinem steten spüren.</l>
+        </sp>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <l>Der Keuschheit wird vmbsonst gespüret vnd gestellt.</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Die leicht doch in den Mund deß blinden Pövels fällt.</l>
+        </sp>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <l>Deß Pövels toller Mund wird nicht was keusch entehren;</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Man soll den Pövel nichts von keuschen Reden hören.</l>
+        </sp>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <l>Sein Hinzug führt mit ihm sein Lieb' vnd Leben hin.</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Ich schätzt es / wenn er schon verreiset / für Gewinn.</l>
+        </sp>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <l>In zwey drey Tagen wirst du deß Gewins genissen;</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Man kan ein grosses offt im Augenblicke missen.</l>
+        </sp>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <l>Was missen? Wenn der Feind das Lager schon verläst?</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>Wenn der Cornet erblast; entsteckt er Gifft vnd Pest.</l>
+            <pb n="49"/>
+            <l>Mein Bruder laß so viel dich meine Furcht bewegen</l>
+            <l>Gib etwas auff jhn acht / sein Haß kan leicht sich regen /</l>
+            <l>Indem Lysander sich gleich jetzt anheim begiebt</l>
+            <l part="I">Vnd er von hinnen wil.</l>
+          </lg>
+        </sp>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <l part="F">Wol! wie es dir beliebt!</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>Olympe.</speaker>
+          <lg>
+            <l>Cardenio von hier?</l>
+            <l>Der mit Lysanders Blut vor mir zu prangen draute?</l>
+            <l>Lysander kommt zu mir?</l>
+            <l>Den wider meinen Wuntsch der Himmel mir vertraute!</l>
+            <l>Cardenio zeuch hin!</l>
+            <l>Vergiß Olympiens, vergiß der heissen Rache!</l>
+            <l>Nim mit dir zum Gewin:</l>
+            <l>Du habest schlimmer Glück / doch wolgerechter Sache.</l>
+            <l>Cardenio zeuch fort;</l>
+            <l>Du mussest anderswo weit angenehmer leben;</l>
+            <l>Nur gönne mir den Port</l>
+            <l>Den nach dem rauen Sturm die Liebe mir gegeben.</l>
+            <l>Dein Hinzug rette mich /</l>
+            <l>Auß der so schweren Furcht in die du mich gestecket!</l>
+            <l>Dein Hinzug saubre dich</l>
+            <l>Von überhäuffter Schuld damit du dich beflecket.</l>
+            <l>Dein könt ich doch nicht seyn!</l>
+            <l>Weil das Verhängnüß mich Lysandern zu erkennet;</l>
+            <l>Dem laß mich nur allein:</l>
+            <l>Vnd glaube daß vns Gott / doch nicht vmbsonst getrennet.</l>
+            <l>Lysander komm. Ich lebe nur in dir!</l>
+            <l>Komm vnd verkürtze mein so schmertzliches Verlangen;</l>
+            <l>Lysander komm vnd lebe stets in mir</l>
+            <l>Die du von Furcht befreyt wirst recht erfreu't vmbfangen.</l>
+          </lg>
+        </sp>
+        <pb n="50"/>
+        <stage>Cardenio.</stage>
+        <stage>Der Schaw-Platz ist Cardenii Gemach.</stage>
+        <stage>Cardenio zündet ein Feuer an / vnd verbrennet etliche Briefe vnd
+          Liebes-Geschencke.</stage>
+        <sp who="#cardenio">
+          <lg>
+            <l>Ich bin nicht ferner dein! die Ketten sind gebrochen!</l>
+            <l>Dein Zorn / mein Eifer hat mich von dir loß gesprochen!</l>
+            <l>Die Flamme zehr es auff was ich je von dir trug /</l>
+            <l>Als ich vor dich mich selbst blind in die Schantze schlug!</l>
+            <l>Brennt hitzige Papir! voll Seelen / Sinnen / Hertzen /</l>
+            <l>Voll Seuffzer / Küsse / Gunst; jhr Zunder meiner Schmertzen!</l>
+            <l>Die offt wir beyderseits mit Threnen gantz durchnetzt</l>
+            <l>Als vns der blinde Wahn zu hoffen hat verletzt!</l>
+            <l>Brenn' eitel Pergament mit falschem Blut beschrieben!</l>
+            <l>Die liebt weit ander jetzt die mich wolt ewig lieben!</l>
+            <l>Weg du beperltes Haar! du Strick der mich gefast</l>
+            <l>Den die geflochten hat die mit gehäuffter Last /</l>
+            <l>Mein dienend Hertz geprest! wie fest jhr Haar gewunden:</l>
+            <l>So fest war ich vorhin / doch nun nicht mehr / gebunden!</l>
+            <l>Weg vor mein höchster Schatz / nun ein zurissen Band</l>
+            <l>Weg du nicht reines Gold! du Ring von meiner Hand!</l>
+            <l>Dein Bildniß ist noch hier! ach soll es denn verbrennen!</l>
+            <l>Wie anders! werd ich dich denn ewig nicht erkennen?</l>
+            <l>Was hilffts? Ach must du denn / du gar zu wahrer Schein</l>
+            <l>Von meiner Seelen Sonn' vergehn vnd Aschen seyn!</l>
+            <l>Nein! daß zum minsten noch mir diß zum Denckmal bleibe!</l>
+            <l>Daß höchste Grausamkeit wohn in dem schönsten Leibe!</l>
+            <l>Was thu' ich? Steht sie mir nicht täglich im Gesicht</l>
+            <l>Weil etwas in mir lebt? Diß Bild erstürbet nicht</l>
+            <l>Das sie mir in die Seel' auff ewig eingedrücket</l>
+            <l>Als meine Freyheit ward schnell durch jhr Garn berücket.</l>
+            <l>Könt jhr Gedächtnüß nur so leicht seyn außgethan</l>
+            <pb n="51"/>
+            <l>Als diß Gemälde brennt: Ich schifft in festem Kahn</l>
+            <l>Weg alles was mich hilt! wie schnell ist es verschwunden!</l>
+            <l>Was hatt mich Thörichten? Was hilt mich doch gebunden?</l>
+            <l>Die leichte Handvoll Asch! der Rauch! der schwartze Dunst!</l>
+            <l>Vnd nur mein eigen Wahn vnd jetzt verfluchte Brunst!</l>
+          </lg>
+        </sp>
+        <stage>Reyen.</stage>
+        <stage>Die Zeit / der Mensch / die Vier Theil deß Jahres / in Gestalt der Vier Zeiten
+          Menschlichen Alters / welche schweigend eingeführet werden.</stage>
+        <sp who="#die_zeit">
+          <speaker>ZEIT.</speaker>
+          <lg>
+            <l>Mensch / diß ist deß Himmels Schluß /</l>
+            <l>Dem was sterblich folgen muß /</l>
+            <l>Daß du sonder Mitgefertin nicht dein Leben sollst vollbringen</l>
+            <l>Viere wird man dir vorstellen: Möchte dir die Wahl gelingen.</l>
+            <l>Wer sich hier nicht nimmt in acht</l>
+            <l>Wer sein Glück einmal versiht</l>
+            <l>Ist vmb das was er verlacht</l>
+            <l>Für vnd für vmbsonst bemüht.</l>
+          </lg>
+          <stage>Der Frühling wird von der Zeit auffgeführet.</stage>
+        </sp>
+        <sp who="#der_mensch">
+          <speaker>MENSCH.</speaker>
+          <lg>
+            <l>Du wunder-schönes Bild / du Himmel-hohe Zir!</l>
+            <l>Kommst du auff Erden mich zu grüssen?</l>
+            <l>Ach! möcht ich stets mich vmb dich wissen!</l>
+            <l>Die Schönheit selbst ist blöd vnd vngestalt vor dir.</l>
+            <l>Was sind die Liljen noth? Worzu der Rosen Pracht?</l>
+            <l>Dein Rosen-frisches Angesichte</l>
+            <l>Macht aller Blumen Schmuck zu nichte /</l>
+            <l>So gläntzt das Morgen-roth / wenn es den Tag anlacht.</l>
+            <pb n="52"/>
+            <l>Ihr zarten Glieder jhr / jhr Gold-geferbten Haar</l>
+            <l>Seyd starck mein Hertze zu bestricken.</l>
+            <l>Das über euch / als im entzücken</l>
+            <l>Nicht fühlt worinn es schweb' in Lust ob in Gefahr</l>
+            <l>Wie hurtig ist der Gang! wie artig steht das Kleid</l>
+            <l>Doch kan der Himmel höher Gaben;</l>
+            <l>Den übrigen verliehen haben.</l>
+            <l>Das erst' ist nicht das best / stracks schlissen schafft offt Leid.</l>
+          </lg>
+        </sp>
+        <sp who="#die_zeit #der_mensch">
+          <speaker>REYEN.</speaker>
+          <l>Wer sich hier nicht nimmt in acht / etc.</l>
+          <stage>Die Zeit führet den Frühling ab / vnd den Sommer ein.</stage>
+        </sp>
+        <sp who="#der_mensch">
+          <speaker>MENSCH.</speaker>
+          <lg>
+            <l>Ich dacht es wol vorhin! die sich jetzt zu mir macht</l>
+            <l>Gibt kaum der ersten nach.</l>
+            <l>Wie schmückt der ihren Krantz der schwartzen Haare Tracht!</l>
+            <l>Die Perlen tausendfach</l>
+            <l>Als Sternen vnsre Nacht entzünden</l>
+            <l>Wenn nun Diane soll verschwinden.</l>
+          </lg>
+          <lg>
+            <l>Ob schon der Sonnen Glantz die lichten Wangen färbt</l>
+            <l>Spielt doch der Glieder Schne</l>
+            <l>Der auß der Mutter Leib / von Schmincke nichts geerbt /</l>
+            <l>Als wenn von Taurus Höh'</l>
+            <l>Die überdeckte Klippen malen</l>
+            <l>Mit Wider-Glantz der Wolcken pralen.</l>
+          </lg>
+          <lg>
+            <l>Die Sichel in der Faust / der Arm schier gantz entblöst /</l>
+            <l>Gibt warlich zu verstehn /</l>
+            <l>Daß sie nicht ruhen kan vnd Faulheit von sich stöst.</l>
+            <l>Zwar / last sie auch hingehn!</l>
+            <l>Schön ist sie. Doch mir was zu strenge</l>
+            <l>Ich leide Mangel bey der Menge.</l>
+          </lg>
+        </sp>
+        <sp who="#die_zeit #der_mensch">
+          <speaker>REYEN.</speaker>
+          <l>Wer sich hier / etc.</l>
+          <pb n="53"/>
+          <stage>Die Zeit führet den Herbst ein.</stage>
+        </sp>
+        <sp who="#der_mensch">
+          <speaker>MENSCH.</speaker>
+          <lg>
+            <l>Noch ist biß hieher nichts verloren /</l>
+            <l>Trit nicht deß Reichthums Göttin auff?</l>
+            <l>So prächtig als zu jhrem Lauff</l>
+            <l>Dafern Matuta new-geboren</l>
+            <l>Die Stralen-volle Sonn erwacht</l>
+            <l>Vnd die erquickte Welt anlacht.</l>
+          </lg>
+          <lg>
+            <l>Hier pralt was Osten je gewehret;</l>
+            <l>Was Peru auß der Klippen Nacht</l>
+            <l>Hat in den lieben Tag gebracht /</l>
+            <l>Vnd Amfitrit' jemals bescheret /</l>
+            <l>Deß Hauptes welcken Blatter-Krantz</l>
+            <l>Ersetzt der Diamante Glantz.</l>
+          </lg>
+          <lg>
+            <l>Mein Aug erstarrt ob diesem Lichte:</l>
+            <l>Wie treffen mit dem Widerschein</l>
+            <l>Der schütternden Rubinen ein</l>
+            <l>Die in dem Schoß gehäuften Früchte?</l>
+            <l>Von jhrem Haupt / biß auff den Fuß /</l>
+            <l>Ist nichts denn Pracht vnd Vberfluß.</l>
+          </lg>
+          <lg>
+            <l>Doch sind die Wangen fast erblichen:</l>
+            <l>Der vorhin weissen Glieder Schne</l>
+            <l>Wird gelblicht / der Corallen Höh'</l>
+            <l>Ist von den Lippen schier gewichen.</l>
+            <l>Sie ists nicht die mein Hertz ergetzt!</l>
+            <l>Das Beste kommt wol auff die letzt.</l>
+          </lg>
+        </sp>
+        <sp who="#die_zeit #der_mensch">
+          <speaker>REYEN.</speaker>
+          <l>Wer sich hier / etc.</l>
+          <pb n="54"/>
+          <stage>Die Zeit führet den Winter ein.</stage>
+        </sp>
+        <sp who="#der_mensch">
+          <speaker>MENSCH.</speaker>
+          <lg>
+            <l>Weh mir! was seh ich hier! ist diß mein gantz verlangen</l>
+            <l>O häßlich Frauen-Bild! was ist die Fackel noth!</l>
+            <l>Bist du mir in mein Grab zu leuchten vorgegangen!</l>
+            <l>O lebend Sichen-Hauß / O Muster von dem Tod.</l>
+            <l>Weh mir! was find ich hier! ist diß mein langes wehlen?</l>
+            <l>Wie schlägt mein hoffen auß! O möcht' ich nun zurück</l>
+            <l>Soll' ich mich für vnd für mit diesem Scheusal quälen</l>
+            <l>O allzu späte Rew' / O höchst-verschertztes Glück.</l>
+          </lg>
+        </sp>
+        <sp who="#die_zeit">
+          <speaker>Zeit.</speaker>
+          <lg>
+            <l>Die ists / die du haben must /</l>
+            <l>Weil der andern dreyen keine</l>
+            <l>Würdig deiner wilden Lust /</l>
+            <l>Zage / schrey / lach / oder weine /</l>
+            <l>Da die frische Jugend nicht /</l>
+            <l>Nicht der vollen Jahre Blum /</l>
+            <l>Nicht ein blödes Angesicht /</l>
+            <l>Tüchtig dir zum Eigenthum</l>
+            <l>So nim / wofern du nicht wilst gantz verloren seyn /</l>
+            <l>Was noch das Alter läst / statt aller Gütter ein.</l>
+          </lg>
+        </sp>
+        <sp who="#die_zeit #der_mensch">
+          <speaker>Reyen.</speaker>
+          <lg>
+            <l>Kein höher Schatz ist in der grossen Welt</l>
+            <l>Als nur die Zeit / wer die nach Würden hält</l>
+            <l>Wer die recht braucht / trotzt Tod vnd Noth / vnd Neid</l>
+            <l>Vnd baut jhm selbst den Thron der Ewigkeit.</l>
+          </lg>
+        </sp>
+      </div>
+      <pb n="55"/>
+      <div type="act">
+        <head>Die Vierdte Abhandelung.</head>
+        <stage>Cardenio. Ein Gespenst in Gestalt Olympiens.</stage>
+        <stage>Der Schaw-Platz ist vmb Lysanders Hauß.</stage>
+        <sp who="#cardenio">
+          <lg>
+            <l>Die vorhin mehr denn angenehme Zeit</l>
+            <l>Der stillen Nacht entsteckt der hellen Lichter Reyen!</l>
+            <l>Vnd meine nimmer todte Traurigkeit</l>
+            <l>Erwacht / vnd reitzt mich an mich endlich zu befreyen.</l>
+            <l>Ihr Fackeln die jhr in den Wolcken brennt!</l>
+            <l>Die jhr vor diesem mir zu meiner Lust geschienen!</l>
+            <l>Als ich in toller Liebe mich verkennt /</l>
+            <l>Seyd nun bereit zur Rache mir zu dienen!</l>
+            <l>Wo jrr ich hin! wie vorhin mich die Lust</l>
+            <l>Durch Finsternüß hieß als zur Wache gehen /</l>
+            <l>So zwingt der Durst der heiß entbrandten Brust /</l>
+            <l>Lysander, mich nach deinem Blutt' zu stehen.</l>
+            <l>Wo bleibt mein Feind so spät? Die Häuser sind geschlossen.</l>
+            <l>Die Gassen sonder Volck / die Sternen fortgeschossen:</l>
+            <l>Diane bringt hervor ihr abgenommen Licht</l>
+            <l>Vnd schielt den Erdkreiß an mit halbem Angesicht.</l>
+            <l>Man hört von weitem nur die wachen-Hunde heulen /</l>
+            <l>Vnd einsames Geschrey der vngeparten Eulen!</l>
+            <l>Die Fenster stehn entseelt von jhrer Kertzen Schein</l>
+            <l>Der Schlaff spricht allen zu vnd wigt die Augen ein /</l>
+            <l>Nur meine Rache nicht! was seh' ich? Ists zu glauben!</l>
+            <l>Wie? Oder mag ein Traum mich der Vernunfft berauben?</l>
+            <l>Daß man Olympens Thür bey hoher Mitternacht /</l>
+            <l>Eh' jemand klopfft so frey vnd sonder Sorg' auffmacht</l>
+            <l>Wie? Ein verschleirtes Bild vnd zwar so gantz alleine</l>
+            <l>Nicht Diener! Fackel! Weib! vnd gleichwol nach dem Scheine</l>
+            <l>Nicht so geringer Art. Ich muß mich vnterstehn</l>
+            <l>Zu forschen wer sie sey vnd auff sie zu zu gehn.</l>
+            <l>Holdseligste / wie ists schaut man so schöne Sonnen</l>
+            <l>Bey trüber Mitternacht? Diane gibts gewonnen</l>
+            <pb n="56"/>
+            <l>Vnd deckt mit einer Wolck jhr schamroth Angesicht /</l>
+            <l>Die Sternen sind erblast ob jhrer Augen Licht.</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Mein Herr verzeih' / ich weiß wie wahr so thanes Schertzen /</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l>Wie? Glaubt sie / daß mein Wort nicht komm' auß wahrem Hertzen!</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Mein Herr siht Sonnen hier vnd gleichwol seh' ich Nacht /</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l>Die Sonne siht sich nicht die alle sehend macht.</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Mein trüber Schein bezeugt wie nah' ich Sonnen gleiche!</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l>Vnd jhr Verstand thut dar daß jhr die Sonne weiche.</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l part="I">Genung mein Herr ich geh!</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l part="F">Wohin so spät? allein?</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Die Tugend mit sich führt wird nicht alleine seyn.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l>Welch Vnfall zwinget sie bey Nacht sich so zu wagen?</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Kein Vnfall / Gunst vielmehr: Solt ich die Warheit sagen.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l>In Warheit grosse Gunst / wol dem / dem sie geschieht /</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Mir vnd Olympien! die mit mir aufgeblüht:</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l>Mich daucht ich sahe sie auß jhrem Hause treten.</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Sie hat den Abend mich zur Malzeit eingebeten.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l>Vnd schlägt jhr Herberg' ab in dem so weiten Hauß?</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Mein Herr / wenn lieber kommt / denn hat wer lieb' war auß:</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l>Wen mag bey tiffer Nacht Olympe noch erbeiten?</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Ihr Eh-Schatz wird gewiß vor Morgen noch einreiten.</l>
+        </sp>
+        <pb n="57"/>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l>Wie daß Olympe sie nicht heim begleiten ließ?</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Mein Herr ich bin bekand vnd meines Wegs gewiß.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l>Vnd gleichwol hab ich nicht die Ehre sie zu kennen!</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Vielleicht doch wol gehört offt meinen Namen nennen.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l>Sie gönne mir / daß ich sie den begleiten mag!</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Gar wol: Doch mir ist Nacht so sicher als der Tag.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Ich wolte diese Nacht dem Tage weit vorziehen</l>
+            <l>Wenn sie O schönstes Licht / nicht wolte von mir fliehen!</l>
+            <l>Wo lencken wir vns hin! nun sich die Gasse theilt</l>
+            <l>Mein Engel! wie so still! hab etwan ich gefeilt</l>
+            <l>Daß sie den süssen Mund durchauß vor mir wil schlissen!</l>
+            <l>Sie melde nur die Schuld ich wil den Frevel büssen</l>
+            <l>Sie sprech' ein Vrtheil auß; was mag der Vrsprung seyn!</l>
+            <l>Ist meine Gegenwart die Vrsach jhrer Pein?</l>
+            <l>Sie melde was sie kränckt / ich wil / wo es zu glauben /</l>
+            <l>Mich dieser süssen Lust nur jhr zur Lust berauben!</l>
+            <l>Holdseligste! kein Wort! sie räche sich an mir</l>
+            <l>Hier ist der scharffe Stahl! die blosse Brust ist hier.</l>
+            <l>Dafern ich was verwirckt das ihr so sehr entgegen!</l>
+            <l>Druckt sie ein ander Schmertz? Kan etwa mein Vermögen</l>
+            <l>Zu jhren Diensten seyn! kein Vnheil ist zu groß:</l>
+            <l>Sie gebe sich / vnd nur mit einem Seuffzer bloß!</l>
+            <l>Begleit ich sie zu fern? Sie wil kein Wort verlieren!</l>
+            <l>Ich kan nur mehr denn wol / O grause Schönste! spüren /</l>
+            <l>Daß ich / in dem ich jhr wil dienen / sie beschwer.</l>
+            <l>Ich geh denn / sie verzeih! mich trägt mein Weg die quer.</l>
+            <l>Auch fordert mich von hier ein nöthiger Geschäffte!</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>Brich Jammer-schwangres Hertz! brecht jhr erstarrten Kräffte.</l>
+            <l>Brich meiner Lippen Schloß! wie? oder ists ein Wahn!</l>
+            <l>Hab ich in solcher Angst die beste Zeit verthan?</l>
+            <pb n="58"/>
+            <l>Ich / die du falscher Mensch nicht wilst / nicht kanst mehr kennen!</l>
+            <l>Soll ich Cardenio dir meinen Nahmen nennen!</l>
+            <l>Erzitter vnd erschrick! Olympen hast du hir!</l>
+            <l>Die bey geheimer Nacht nur winselt über dir /</l>
+            <l>Weil sie den Tag nicht darff! hab ich mich raw gestellet</l>
+            <l>So offt du vnbedacht dich zu mir hast gesellet!</l>
+            <l>Hieß ich dich hitzig gehn; diß fordert Ehr vnd Glimpff</l>
+            <l>Jagt dich ein ernstes Wort vnd ein falsch-zornig Schimpff?</l>
+            <l>Heist diß beständig seyn! auff ewig sich verschweren!</l>
+            <l>Bist du so meiner Gunst / so indenck meiner Zehren?</l>
+            <l>So indenck meiner Glut! daß auch der Namen nicht</l>
+            <l>Dir in die Sinnen kommt: Ob schon dir im Gesicht'</l>
+            <l>Olympe lebend steht! ob die vor süssen Worte!</l>
+            <l>Schon streichen in dein Ohr! ob sie schon auß dem Orte</l>
+            <l>Hervor trit / den du mehr; mehr denn zu viel besucht!</l>
+            <l>Vnd fragst du wer sie sey! vnd machst dich auff die Flucht.</l>
+            <l>Indem sie vmb dich zagt! fragst du wohin ich eile?</l>
+            <l>Bey vngeheurer Nacht! warumb ich nicht verweile</l>
+            <l>In dem verhasten Bett'? Es ist nicht fern von hier</l>
+            <l>Ein Garten: Angenehm nicht wegen seiner Zier</l>
+            <l>Vnd Blumen-reicher Pracht vnd wolgesetzten Heyne.</l>
+            <l>Ach nein / ich liebe mehr alldar die rauen Steine:</l>
+            <l>Die man an dessen Seit auß tieffen Hölen bricht!</l>
+            <l>In welchen Echo sitzt vnd jeder Wort nachspricht /</l>
+            <l>Daß ich vor weinen offt verschluck vnd in mich fresse /</l>
+            <l>Ich / die / Cardenio, dein ewig nicht vergesse /</l>
+            <l>Dein! / dem Olympe Tod! mit welcher in dir starb /</l>
+            <l>Was vnvergleichlich Ehr' vnd Ansehn dir erwarb.</l>
+            <l>Dein / den die tolle Brunst verknüpfft hat mit Celinden:</l>
+            <l>Dem Fräulin sonder Zucht / dem Zunder ärgster Sünden!</l>
+            <l>Dem Vrsprung deiner Noth! der Quälle meiner Pein /</l>
+            <l>Vnd die Cardenio, dein Vntergang wird seyn!</l>
+          </lg>
+        </sp>
+        <pb n="59"/>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>O Schönste! daß sie mich erstarrend vor jhr schauet /</l>
+            <l>Mich / welchem vor sich selbst vnd seiner Vnthat grauet /</l>
+            <l>Daß ich so lang' erstumm't; entsteht auß meiner Rew</l>
+            <l>Die keine Worte findt / Krafft welcher jhre Trew;</l>
+            <l>Die übertreue Trew / von mir recht außzustreichen!</l>
+            <l>Olympe! welche Glut wird jhrer Flamme gleichen!</l>
+            <l>Sie führe mich von hier! die dunckel Einsamkeit</l>
+            <l>Vorhin durch jhr Gewein / bethrenet vnd beschreyt /</l>
+            <l>Soll numehr Zeuge seyn (ich haß! ich flieh Celinden!)</l>
+            <l>Daß sie Olympe nur / nur mächtig mich zu binden!</l>
+            <l>Ich wandel als entzuckt! mir ist ich weiß nicht wie:</l>
+            <l>Sie zeige mir den Ort in dem ich auff dem Knie</l>
+            <l>(Ihr O mein Licht) gesteh / mein überhäufft Verbrechen!</l>
+            <l>Sie selbst / Olympe sie / sie mag ein Vrtheil sprechen</l>
+            <l>Das strengste das sie weiß / sie glaube daß ich frey</l>
+            <l>Vnd hurtig vnd behertzt es auß zu führen sey.</l>
+          </lg>
+          <stage>Lysander, zwey Diener / vnd die wahre Olympia.</stage>
+          <lg>
+            <l>Entzäumt die Ross' vnd helfft sie vnterdessen führen /</l>
+            <l>Für vnsern Hinterhof / biß auff mein Wort die Thüren</l>
+            <l part="I">Entschlossen / Storax folg vnd komm.</l>
+          </lg>
+        </sp>
+        <sp who="#storax">
+          <speaker>STORAX.</speaker>
+          <lg>
+            <l part="F">Mein Herr ein Wort!</l>
+            <l>Wir reisen durch die Nacht! vnd könten an dem Ort /</l>
+            <l>Da wir den Abend spät zum füttern abgestiegen /</l>
+            <l>Wol biß auff morgen früh' ohn Eckel sicher liegen!</l>
+            <l>Was ists drey Stunden eh'r in seiner Wohnung seyn!</l>
+            <l>Was diese Nacht versäumt bracht vns die Früe-Stund ein.</l>
+          </lg>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <lg>
+            <l>Wer in drey Stunden kan sein eigen Hauß erreichen /</l>
+            <l>Vnd lieber anderswo sich auffhalt; gibt ein Zeichen</l>
+            <l>Daß er kein rechter Wirth / kein lieber Ehmann sey.</l>
+          </lg>
+        </sp>
+        <sp who="#storax">
+          <speaker>STORAX.</speaker>
+          <l>Jetzt wandeln wir zu Fuß da vns das reiten frey!</l>
+        </sp>
+        <pb n="60"/>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <lg>
+            <l>Was nützt die Nachbarschafft mit dem Geraß erschrecken</l>
+            <l>Vnd durch ein wiegrend Roß bey stiller Ruh' entdecken</l>
+            <l part="I">Daß ich von Hofe komm'?</l>
+          </lg>
+        </sp>
+        <sp who="#storax">
+          <speaker>STORAX.</speaker>
+          <lg>
+            <l part="F">Es liegt mir dar nicht an /</l>
+            <l>Nur daß ein Vnglück vns so überfallen kan /</l>
+            <l>Das zu vermeiden stund / der Mann hat nicht gelogen:</l>
+            <l>Der vorgab daß die Nacht nicht jeden gleich gewogen.</l>
+          </lg>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <l>Wer kan dir Schaden thun vor deines Herren Thür?</l>
+        </sp>
+        <sp who="#storax">
+          <speaker>STORAX.</speaker>
+          <l>Wie / wenn man schadete dem Herren neben mir?</l>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <l>Erschreckter! fürchst du dich den Degen zu entblössen?</l>
+        </sp>
+        <sp who="#storax">
+          <speaker>STORAX.</speaker>
+          <l>Zwey Klingen thun nicht viel / bey zehn / bey zwantzig Stössen:</l>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <l>Ist die genaue Wach nicht hier / nicht dar bestellt?</l>
+        </sp>
+        <sp who="#storax">
+          <speaker>STORAX.</speaker>
+          <l>Sie wacht dem nur zu träg / der auff den Sand gefällt.</l>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <l>Das Schwerdt der Oberkeit kan diese Schwerdter dämpffen.</l>
+        </sp>
+        <pb n="61"/>
+        <sp who="#storax">
+          <speaker>STORAX.</speaker>
+          <lg>
+            <l>Es wär' jetzt fern von hier / dafern wir solten kämpffen.</l>
+            <l>Mein Herr / die grosse Stadt beherbergt manchen Geist /</l>
+            <l>Der sich auß Vbermut / auß Zanck / auß Argwon schmeist:</l>
+            <l>Der den verdeckten Haß durch Meuchelmord außführet /</l>
+            <l>Denckt ob jhr aller Freund. Was diesen Himmel zieret /</l>
+            <l>Vnd durch das dunckel gläntzt; siht manche Thaten an:</l>
+            <l>Die auch im Mittag nicht die Sonn' entdecken kan!</l>
+          </lg>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <lg>
+            <l>Genung von dem! wir sind / (der Höchste sey gepreiset.)</l>
+            <l part="I">Auff eigner Schwell' ey klopff! klopff an!</l>
+          </lg>
+        </sp>
+        <sp who="#knecht">
+          <speaker>KNECHT.</speaker>
+          <l part="F">Er ist verreiset!</l>
+        </sp>
+        <sp who="#storax">
+          <speaker>STORAX.</speaker>
+          <l part="I">Wer ist verreist?</l>
+        </sp>
+        <sp who="#knecht">
+          <speaker>KNECHT.</speaker>
+          <l part="M">Mein Herr.</l>
+        </sp>
+        <sp who="#storax">
+          <speaker>STORAX.</speaker>
+          <l part="F">Thue auff / er ist schon hier.</l>
+        </sp>
+        <sp who="#knecht">
+          <speaker>KNECHT.</speaker>
+          <l part="I">Wir gingen über Feld.</l>
+        </sp>
+        <sp who="#storax">
+          <speaker>STORAX.</speaker>
+          <l part="F">Wie Dorus? Traumet dir?</l>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <l part="I">Klopfft an / er ist voll Schlafs.</l>
+        </sp>
+        <sp who="#knecht">
+          <speaker>KNECHT.</speaker>
+          <l part="M">Wer da?</l>
+        </sp>
+        <sp who="#storax">
+          <speaker>STORAX.</speaker>
+          <l part="F">Der Herr ist kommen!</l>
+        </sp>
+        <sp who="#dorus">
+          <speaker>DORUS.</speaker>
+          <l>O wol! mein Herr! ich hatt' es vor nicht recht vernommen!</l>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <l>Nun munter! öffne bald! wie ists mit dir bewand.</l>
+        </sp>
+        <sp who="#dorus">
+          <speaker>DORUS.</speaker>
+          <lg>
+            <l>Mein Herr / die Schlüssel sind in vnser Frauen Hand.</l>
+            <l part="I">Ich geh' vnd zeig es an!</l>
+          </lg>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <lg>
+            <l part="F">O angenehm erwecken!</l>
+            <l>Wird jhr ein süsser Traum mein Ankunfft auch entdecken?</l>
+            <l>Mein einig Eigenthum / dein treues Hertze macht /</l>
+            <l>Daß ich der Fürsten Gunst vnd Hofes Zier veracht.</l>
+          </lg>
+          <stage>Olympe durch die Fenster. Lysander. Storax.</stage>
+          <l part="I">Wer dar! mein Hertz!</l>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <l part="M">Mein Licht!</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l part="F">O Tausendmal willkommen!</l>
+            <l part="I">Mein Trost / jetzt schließ ich auff.</l>
+          </lg>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <lg>
+            <l part="F">Ist dir die Furcht benommen!</l>
+            <pb n="62"/>
+            <l part="I">Nun wir versichert sind.</l>
+          </lg>
+        </sp>
+        <sp who="#storax">
+          <speaker>STORAX.</speaker>
+          <lg>
+            <l part="F">Wir stehn noch vor der Thür.</l>
+            <l>Man fällt im Augenblick offt zwischen dar vnd hier /</l>
+          </lg>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <l>Du Blöder! du wirst nicht so leicht dein Leben wagen.</l>
+        </sp>
+        <sp who="#storax">
+          <speaker>STORAX.</speaker>
+          <lg>
+            <l>Leicht wagen / aber Herr euch auch die Warheit sagen /</l>
+            <l>Vnd diß auß treuem Geist / mir ist die Seele feil</l>
+            <l>Mein Herr vor seinen Leib vnd seines Hauses Heil.</l>
+          </lg>
+        </sp>
+        <stage>Olympia. Lysander.</stage>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Willkommen süsses Hertz! O hochgewünschte Stunden!</l>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <lg>
+            <l>O liebreich Angesicht! O höchst gewünscht gefunden.</l>
+            <l>Leid ist mir / daß ich sie gestört in jhrer Ruh.</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>Mir lieb! mir setzte Furcht vnd grauses Schrecken zu /</l>
+            <l>In einem herben Traum! wie wol bin ich erwachet /</l>
+            <l>Sein Ankunfft hat mich Angst- vnd Sorgen-frey gemachet.</l>
+            <l part="I">Mein Hertz folg ins Gemach!</l>
+          </lg>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <lg>
+            <l part="F">Stracks! Wo mag Dorus seyn?</l>
+            <l>Laß durch den Hinterhof die Ross' vnd Diener ein.</l>
+            <l>Du Storax schleuß das Thor! gib acht auff alle Sachen /</l>
+            <l part="I">Die mit von Hofe bracht.</l>
+          </lg>
+        </sp>
+        <sp who="#storax">
+          <speaker>STORAX.</speaker>
+          <lg>
+            <l part="F">Ich werd es richtig machen.</l>
+            <l part="I">Mein Herr sey vnbesorgt.</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l part="F">Last vns nicht länger stehn!</l>
+            <l part="I">Es ist die tieffste Nacht.</l>
+          </lg>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <l part="F">Wolan mein Licht / wir gehn.</l>
+          <pb n="63"/>
+          <stage>Cardenio. Das Gespenst in Gestalt Olympiens.</stage>
+          <stage>Der Schaw-Platz verwandelt sich in einen Lust-Garten.</stage>
+          <lg>
+            <l>Mein Trost! wir gehn so fern! vnd wechseln keine Worte!</l>
+            <l>Treugt mich das Auge nicht / so sind wir an dem Orte</l>
+            <l>Den sie bey stiller Nacht zu trauren jhr erwehlt!</l>
+            <l>Mein Engel! dessen Grimm mein reuend Hertze quält;</l>
+            <l>Ist jhr gerechter Zorn denn nicht zu überbitten!</l>
+            <l>Ich hab / es ist nicht ohn / weit ausser Pflicht geschritten!</l>
+            <l>Mehr auß verzweiffeln / denn aus Abgunst gegen jhr!</l>
+            <l>Sie Göttin! sie verzeih! die Seel' erstirbt in mir!</l>
+            <l>Wofern sie Schönste nicht hier wil den Haß ablegen /</l>
+            <l>Den meine Schuld entsteckt; sie lasse sich bewegen</l>
+            <l>Der heissen Threnen Fluß! der sanffte Westen-Wind /</l>
+            <l>Der durch die Sträucher rauscht beseuffzet vnd empfindt</l>
+            <l>Die vnaußsprechlich' Angst die meine Seele drücket /</l>
+            <l>Diane die bestürtzt vnd tunckel vns anblicket /</l>
+            <l>Bejammert meine Noth vnd bittet / wie es scheint /</l>
+            <l>Vor diesen / der für ihr auff seinen Knien weint:</l>
+            <l>Sie gönne mir doch nur jhr lieblich Angesichte /</l>
+            <l>Das Mond vnd Sternen trotzt! vnd mach in mir zu nichte</l>
+            <l>Durch einen süssen Kuß wo etwas allhier lebt</l>
+            <l>Das nicht Olympen lieb! die Nacht so vmb vns schwebt</l>
+            <l>Sey jhr statt einer Wolck der zart-gewirckten Seiden!</l>
+            <l>Mein Engel! ja sie wird von jhrem Diener leiden!</l>
+            <l>Daß er / dafern jhr Haß beständig zürnen wil /</l>
+            <l>Doch nur die Hüll abzieh' / vnd recht das blitzen fühl</l>
+            <l part="I">So auß den Augen stralt</l>
+          </lg>
+          <pb n="64"/>
+          <stage>Der Schaw-Platz verändert sich plötzlich in eine abscheuliche Einöde / Olympie
+            selbst in ein Todten-Gerippe welches mit Pfeil vnd Bogen auff den Cardenio
+            zielet.</stage>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l part="F">O Himmel ich verschwinde!</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Schaw an so blitzt mein Stral / dein Lohn / die Frucht der Sünde.</l>
+          <stage>Tyche. Celinde. Cleon.</stage>
+          <stage>Der Schaw-Platz stellet einen Kirchhof mit einer Kirchen vor.</stage>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <lg>
+            <l>Der Mond ist zimlich hoch / der kalte Wandel-Stern</l>
+            <l>Läst sich Nord-Ostlich sehn / das Licht ist gleich so fern</l>
+            <l>Als vns der Abend steht; die muntern Geister lehren</l>
+            <l>Ein jhn verknüpffte Seel / in dem sie schnarchen hören</l>
+            <l>Die jrrdisch sind gesinnt; biß sich der Vogel regt /</l>
+            <l>Der vnserm Thun ein Ziel durch seine Stimme legt.</l>
+            <l>Nunmehr ist keine Zeit / O Schönste zu verlieren /</l>
+            <l>Wo wir entschlossen sind das Werck recht außzuführen:</l>
+            <l>Sie suche denn das Pfand der vnerschöpfften Lust</l>
+            <l>Der jmmer-festen Trew in jhres Liebsten Brust /</l>
+            <l>Indem ich seine Seel in jenem Thal erweiche /</l>
+            <l>Daß sie vns willig sey zum darlehn jhrer Leiche!</l>
+            <l>Sie stell' jhr Sorgen ein: Vnd zage ferner nicht.</l>
+            <l>Vor alles Schrecken dien' jhr diß geweyhte Licht.</l>
+          </lg>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Ach soll ich dieser That allein mich vnterfangen.</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Vmb immer-feste Lust vnd Ruhe zu erlangen!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l part="I">Allein / in diesem Ort:</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l part="F">Steht Cleon nicht bey jhr!</l>
+        </sp>
+        <sp who="#cleon">
+          <speaker>CLEON.</speaker>
+          <l>Steht jhr ein Vnglück vor so widerfahr es mir!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Allein den heil'gen Ort die Stunde zu betreten /</l>
+        </sp>
+        <sp who="#cleon">
+          <speaker>CLEON.</speaker>
+          <lg>
+            <l>Diß thu ich für vnd für; es sey daß ich zu beten</l>
+            <l>Gesetzte Zeichen geb' / es sey daß man bedacht</l>
+            <l>Zu fordern diß vnd das / worzu die stille Nacht</l>
+            <l part="I">Viel angenehmer scheint;</l>
+          </lg>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l part="F">Diß Stück ist nie gewaget!</l>
+        </sp>
+        <pb n="65"/>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Von dieser mehr denn offt / die sie vmb Rath gefraget.</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Die leider mehr denn ich auff solchen Fall behertzt.</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <l>Der Anfang fürchtet offt wormit das Ende schertzt.</l>
+        </sp>
+        <sp who="#cleon">
+          <speaker>CLEON.</speaker>
+          <lg>
+            <l>Was fürchten wir vns doch! es ist ein eitel schwätzen;</l>
+            <l>Wormit man Einfalt sucht in Traum vnd Wahn zu setzen /</l>
+            <l>Meynt man daß sich ein Geist vmb Bein vnd Grab beweg /</l>
+            <l>Daß hier sich ein Gespenst / dort ein Gesichte reg /</l>
+            <l>Vnd Eifer vmb sein Asch'? Eröffnet nicht die Grüffte</l>
+            <l>Aegypten sonder Schew vnd bringt in freye Lüffte</l>
+            <l>Sein balsamirtes Fleisch das über See verschickt</l>
+            <l>Ein abgekräncktes Hertz im Sichbett' offt erquickt?</l>
+            <l>Entgliedern nicht die Aertzt' ohn Einred vnd Bedencken</l>
+            <l>Viel Körper die man wolt in jhre Ruh' einsencken /</l>
+            <l>Vmb andern dar zu thun woher die Seuch entsteh'?</l>
+            <l>Wo greifft die Kunst nicht hin! hat man der Menschen Weh /</l>
+            <l>Nicht offt durch Menschen-Blut / Fleisch / Glieder vnd Gebeine</l>
+            <l>Vnd feistes Marck gestillt? Durch todter Nieren Steine</l>
+            <l>Bricht der / der in vns wächst! man gibt nichts neues an!</l>
+            <l>Doch sucht man hier bey Nacht / in dem der Tag nicht kan</l>
+            <l>Bedecken derer Neid / die sich auff vns entzünden /</l>
+            <l>Weil wir zu aller Noth weit schneller Mittel finden</l>
+            <l>Als jhre Kunst vermag / die so manch weites Land</l>
+            <l>Vor mehr denn Menschlich hält / Haß rührt auß Vnverstand.</l>
+          </lg>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Man kan ja jedes Bild mit schöner Farb anstreichen.</l>
+        </sp>
+        <sp who="#tyche">
+          <speaker>TYCHE.</speaker>
+          <lg>
+            <l>Ich geh' / jhr: Fördert euch; last nicht die Zeit hin schleichen /</l>
+            <l part="I">Die keinmal wieder kommt.</l>
+          </lg>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l part="M">Es sey gewagt.</l>
+        </sp>
+        <sp who="#cleon">
+          <speaker>CLEON.</speaker>
+          <lg>
+            <l part="F">Die Thür /</l>
+            <pb n="66"/>
+            <l>Ist offen; was wir thun bleibt zwischen jhr vnd mir!</l>
+            <l>Sie folg' ich wil die Grufft deß Ritters leicht entschlissen!</l>
+          </lg>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Wohin verfällt ein Weib die so viel leiden müssen.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>Cardenio.</speaker>
+          <lg>
+            <l>Ach! tödtlich Anblick! ach! abscheulichstes Gesicht!</l>
+            <l>Ach grausamstes Gespenst! vmbringt mich noch das Licht?</l>
+            <l>Wie! oder ist der Geist bereits der Last entbunden</l>
+            <l>Vnd hat die Frucht der Schuld / der Sünden Sold gefunden?</l>
+            <l>Wo bin ich! faul ich schon in einer finstern Grufft?</l>
+            <l>Trägt mich die Erden noch? Zieh' ich noch frische Lufft</l>
+            <l>In die erschreckte Brust! ich schaw den Himmel zittern;</l>
+            <l>Ich schaw der Sternen Heer Blut-rothe Stralen schittern!</l>
+            <l>Wo bin ich! ists ein Traum / heischt mich der Richter vor?</l>
+            <l>Klingt seine Rechts-Posaun durch mein erschälltes Ohr?</l>
+            <l>Wie! oder geh ich wol durch dunckel grause Wege</l>
+            <l>So einsam / so allein / durch vngebähnte Stege /</l>
+            <l>Wo deß Gewissens Wurm stets die Verbrecher nagt:</l>
+            <l>Wo ein verdammter Geist der von sich selbst verklagt /</l>
+            <l>Vnd durch sich überzeugt in ewig-neuem Schrecken</l>
+            <l>Sucht seine Missethat vergebens zu verstecken?</l>
+            <l>Ach Gott! der Götter Gott! geh ich noch in der Zeit?</l>
+            <l>Beschleust mich schon das Ziel der langen Ewigkeit?</l>
+            <l>Ich fühle ja daß ich mit Gliedern noch vmbgeben!</l>
+            <l>Ists möglich: Daß ich kan nach solchem Anblick leben!</l>
+            <l>Doch ja! du grosser Gott du trägst mit mir Geduld</l>
+            <l>Vnd gönnst mir etwas Frist / die übermaste Schuld</l>
+            <l>In die ich mich verteufft dir weinend abzubitten:</l>
+            <l>Ich HErr / bin von der Bahn der Tugend abgeglitten:</l>
+            <l>Ich bins der in dem Koth der Laster sich gewühlt</l>
+            <l>Mehr viehisch als ein Vieh / der nimmermehr gefühlt</l>
+            <l>(Wie hart du angeklopfft) dein innerlich anschreyen /</l>
+            <pb n="67"/>
+            <l>Der mehr denn lebend tod / (ob schon du wilst befreyen)</l>
+            <l>Doch an der Sünden Joch / die schwere Ketten zeucht!</l>
+            <l>Der vor dir (Heil der Welt) in sein Verterben fleucht /</l>
+            <l>Mein Vater! ich kehr' vmb! ich knie vor diese Thüren</l>
+            <l>Vor dein geweihtes Hauß. Was aber mag sich rühren?</l>
+            <l>Was poltern hör ich an! mir stehn die Haar empor!</l>
+            <l>Verfolgt mich diß Gespenst biß an die heilgen Thor!</l>
+            <l>Hat sich der gantze Styx die Nacht auff mich verbunden!</l>
+            <l>Hat sich Cocytus Heer in diese Stadt gefunden.</l>
+            <l>Mein Gott! ich muß von hier! halt inn! was gibst du an?</l>
+            <l>Halt inn Cardenio! ob auch ein Rauber kan</l>
+            <l>Sich an den sichern Ort bey stillem Dunckel wagen</l>
+            <l>Vnd an geweyhtes Gold die frechen Hände schlagen!</l>
+            <l>Was weiß ich; ob nicht Gott mich an den Tempel führ</l>
+            <l>Zu retten seine Kirch! wie fein: Daß ich verlier /</l>
+            <l>Gelegenheit das Schwerdt einmal vor Gott zu zucken:</l>
+            <l>Vnd Mördern auß der Faust den schweren Raub zu rucken /</l>
+            <l>Ist diß mein grosser Mut! ach nein. Die Kling ist frey</l>
+            <l>Der steh'/ auff den ichs wag / dem guten Vorsatz bey.</l>
+            <l>Die Thüre wie ich fühl gibt nach vnd ist entschlossen!</l>
+            <l>Diß zeigt nichts redlichs an! die Riegel weggeschossen!</l>
+            <l>Gewiß sind Rauber hier! wie komm' ich auff die Spur;</l>
+            <l>Dort hängt von oben ab an Gold gewürckter Schnur</l>
+            <l>Ein köstlich hell-Cristall in dem die Flamme lebet</l>
+            <l>Die durch ein Tacht ernährt auff reinem Oele schwebet /</l>
+            <l>In reiches Silberwerck / vor Anstoß / eingesenckt.</l>
+            <l>Wie daß die Rauber nicht den schönen Schmuck gekränckt /</l>
+            <l>Der sich doch selbst entdeckt? Was kan ich hierauß schlissen!</l>
+            <l>Es geh nun / wie es geh / so muß ichs dennoch wissen!</l>
+            <l>Warumb entzünd ich nicht die Kertze vom Altar</l>
+            <l>Bey dieser Ampel Glantz! vnd suche wo die Schar</l>
+            <l>Sich zu verbergen sucht! hier ist noch nichts entwendet;</l>
+            <l>Doch haben sie vielleicht das Stück nicht recht vollendet.</l>
+            <pb n="68"/>
+            <l>Was aber find ich hier! wie? Ein entseelte Leich</l>
+            <l>Gelehnt an diese Maur! von Fäule blaw vnd bleich!</l>
+            <l>Verstelltes Todten-Bild! weit eingekrämpffte Lippen!</l>
+            <l>Was sind wir arme doch! so bald man an den Klippen</l>
+            <l>Deß Todes scheitern muß / verschwindet die Gestalt</l>
+            <l>Die vorhin frische Haut wird vor dem Alter alt /</l>
+            <l>Vnd Stanck / vnd Staub / vnd nichts! was aber hier zu sagen!</l>
+            <l>Ob nicht der Cörper wol auß seiner Grufft getragen</l>
+            <l>Indem man Särg erbricht! vnd mit erhitztem Mut</l>
+            <l>Durchstanckert Asch vnd Bein' vmb das verfluchte Gut.</l>
+            <l>Wer rennt der Thüren zu / so lang / so schwartz bekleidet?</l>
+            <l>Halt an! er ist dahin! der frembde Fall beneidet</l>
+            <l>Die nie erschreckte Faust! doch einer wird allein</l>
+            <l>Zu diesem Kirchen-Raub nicht außgerüstet seyn.</l>
+            <l>Vnd recht! dort stralt ein Licht auß dem entdeckten Grabe!</l>
+            <l>Wol daß ich in dem Nest das Wild ergriffen habe!</l>
+            <l part="I">Was habt ihr Mörder vor.</l>
+          </lg>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l part="F">Weh! weh! mir! ich bin tod.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l part="I">O Gott was find ich!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l part="F">Ach! ich sterb in höchster Noth.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l>Ist diß Celinde; wil mich ein Gespenst erschrecken!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Wil mich Cardenio auß dieser Grufft erwecken!</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l part="I">Celinde schaw ich sie!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l part="F">Schickt ihn der Himmel mir!</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l part="I">Zu ihr in diese Grufft!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l part="F">Mein Herr ich sterb allhier!</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l>Ists möglich daß ich sie Celind' allhier soll schauen!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Er schau't mich hier verteufft in vnerhörtes Grauen.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l part="I">Wer führt sie in ein Grab.</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l part="F">Verzweiffeln Herr / vnd er!</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l part="I">O grauses Wunderwerck!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <lg>
+            <l part="F">Mir leider viel zu schwer.</l>
+            <pb n="69"/>
+            <l>Wofern sein Haß auff mich noch wie vorhin erbittert;</l>
+            <l>So schaw er auff ein Hertz / das in der Angst erzittert</l>
+            <l>In die es sich gestürtzt / mein Herr / vmb jhn allein!</l>
+            <l>Vnd stosse seinen Stahl zu enden diese Pein</l>
+            <l>Durch die entblöste Brust: Dafern er mit mir armen</l>
+            <l>Mitleiden tragen mag / so woll' er sich erbarmen /</l>
+            <l part="I">Vnd führe mich von hier!</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l part="F">Ists! oder ists ein Schein!</l>
+            <l>Soll sie Celinde denn in lauter Warheit seyn!</l>
+            <l>Nein; das Gespenst / das durch Olympen mich gefället;</l>
+            <l>Hat in Celinden sich den Augenblick verstellet /</l>
+            <l>Vnd läst wofern ich sie mit einer Hand berühr!</l>
+            <l>Ein schändlich Todten-Bild / gleich als vorhin / für mir.</l>
+          </lg>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <lg>
+            <l>Er rette wo er kan! er rette mich Betrübte!</l>
+            <l>Er rette dieses Hertz / das jhn so hertzlich liebte.</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <l part="I">Sie steige zu mir auff.</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <lg>
+            <l part="F">Es hält mich etwas an!</l>
+            <l>Doch schaw ich nichts als jhn. Er reiche (wo er kan)</l>
+            <l>Mir den behertzten Arm! O Gott! last vns von hinnen!</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Celinde möcht ein Mensch so frembden Fall ersinnen!</l>
+            <l>Wie kommt sie an den Ort bey vngeheurer Nacht?</l>
+          </lg>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <lg>
+            <l>Mein Herr / er forsche nicht! wenn ich von hier gebracht</l>
+            <l>Wil ich mein Elend ihm ohn Vmbschweiff glatt außlegen</l>
+            <l part="I">Mein Herr von hier!</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l part="F">Schaw ich den Todten sich bewegen?</l>
+            <l>Er eilt dem Grabe zu; die Glieder zittern mir!</l>
+            <l part="I">Die Schenckel sind erstarrt:</l>
+          </lg>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l part="F">Mein Herr! mein Hertz von hier.</l>
+        </sp>
+        <sp who="#das_gespenst_dess_ritters">
+          <speaker>Das Gespenst deß Ritters.</speaker>
+          <lg>
+            <l>Deß Höchsten vnerforschliches Gerichte</l>
+            <l>Schreckt eure Schuld durch dieses Traur-Gesichte</l>
+            <l>Die jhr mehr tod denn ich! O selig ist der Geist</l>
+            <l>Dem eines Todten Grufft den Weg zum Leben weist.</l>
+          </lg>
+        </sp>
+        <pb n="70"/>
+        <sp who="#reyen">
+          <speaker>Reyen.</speaker>
+          <lg>
+            <l>Dennoch kan die letzte Macht</l>
+            <l>Die vns sterben heisset /</l>
+            <l>Vnd ins Grabes lange Nacht /</l>
+            <l>Von der Erden reisset:</l>
+            <l>Dennoch kan sie über dich</l>
+            <l>Mensch nicht gantz gebitten /</l>
+            <l>Weil der Geist von jhrem Stich</l>
+            <l>Wird vmbsonst bestritten.</l>
+          </lg>
+          <lg>
+            <l>Zwar der Leichnam gehet ein</l>
+            <l>Hertz vnd Augen brechen</l>
+            <l>Wenn sich in der letzten Pein</l>
+            <l>Arm' vnd Glieder schwächen /</l>
+            <l>Das geliebte Fleisch verfällt</l>
+            <l>Wie bey heisser Sonnen</l>
+            <l>Sich ein Bild von Wachs verstellt /</l>
+            <l>Biß es gantz zerronnen.</l>
+          </lg>
+          <lg>
+            <l>Bringt Aspaltens Hartz hervor</l>
+            <l>Balsam / Nard' vnd Myrrhen.</l>
+            <l>Was Socotor' je erkor /</l>
+            <l>Was die / so stets jrren</l>
+            <l>Vmb Sarunbun lasen auff /</l>
+            <l>Bringet Specereyen /</l>
+            <l>Die Molucc je gab zu kauff /</l>
+            <l>Hier wird nichts gedeyen.</l>
+          </lg>
+          <lg>
+            <l>Was du an dir trägst ist Staub /</l>
+            <l>Es kam von der Erden.</l>
+            <pb n="71"/>
+            <l>Vnd muß durch der Jahre Raub</l>
+            <l>Staub vnd Erden werden.</l>
+            <l>Was verwahrt die raue Grufft</l>
+            <l>Vnter jhrem Steine /</l>
+            <l>Der auch stumm / von sterben rufft /</l>
+            <l>Als verdorrt Gebeine?</l>
+          </lg>
+          <lg>
+            <l>Aber vnser bestes Theil</l>
+            <l>Weiß nichts von verwesen /</l>
+            <l>Es bleibt in den Schmertzen Heil /</l>
+            <l>Sterben heist's genesen /</l>
+            <l>Es ergetzt sich ob dem Licht /</l>
+            <l>Das es vor nicht kante</l>
+            <l>Als es in deß Leibes Pflicht</l>
+            <l>Zeit vnd Welt verbante.</l>
+          </lg>
+          <lg>
+            <l>Doch / dafern es nicht verkehrt</l>
+            <l>Mit deß Fleisches Wercken;</l>
+            <l>Die deß höchsten Richters Schwerdt</l>
+            <l>Heist zur Straff auffmercken.</l>
+            <l>O wie selig ist die Seel</l>
+            <l>Die von Leib vnd Sünden</l>
+            <l>Loß / nach jhres Kerckers Höl</l>
+            <l>Kan die Freyheit finden.</l>
+          </lg>
+          <lg>
+            <l>Sie weiß nichts von Ach vnd Leid</l>
+            <l>Das die Menschen quälet /</l>
+            <l>Weil sie in der Ewigkeit</l>
+            <l>Ihre Ruh' erwehlet /</l>
+            <l>Doch wird keine für vnd für</l>
+            <l>Dieser Lust genissen /</l>
+            <l>Die nicht einig lernt in dir</l>
+            <l>HErr den Lauff beschlissen.</l>
+          </lg>
+        </sp>
+      </div>
+      <pb n="72"/>
+      <div type="act">
+        <head>Die Fünffte Abhandelung.</head>
+        <stage>Vireno. Lysander. Olympie.</stage>
+        <sp who="#vireno">
+          <lg>
+            <l>So ists! er ließ mich hoch vnd überhoch belangen /</l>
+            <l>Ich wolte dieser Müh bey euch mich vnterfangen</l>
+            <l>Ja melden / als es mich daucht vnbequem vnd schwer</l>
+            <l>Daß sein vnd euer Heil hieran gelegen wär.</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>Mein Hertz / es steht bey jhm! sein bitten abzuschlagen</l>
+            <l>Es steht jhm gleichsfalls frey ob er den Gang wil wagen /</l>
+            <l>Doch / bitt ich / nicht allein! mich lass' er vnbeschickt</l>
+            <l>Die nichts mit jhm zu thun. Die keusche Tugend blickt</l>
+            <l>Nie in ein frembdes Hauß! vnd mag ichs dürr außsagen:</l>
+            <l>Was hat Cardenio nach mir vnd jhm zu fragen!</l>
+            <l>Man weiß es leider wol / worein er mich geführt /</l>
+            <l>Lysander hat von jhm nie keine Gunst verspürt.</l>
+            <l>Warumb begehrt er denn von vns ersucht zu werden?</l>
+            <l>Ists solche Wichtigkeit! wir stehn auff einer Erden /</l>
+            <l>Der Weg in vnserm Hof ist jedem vnverschrenckt /</l>
+            <l>Er komm vnd find vns selbst / ist etwas das vns kränckt</l>
+            <l>Darvor er Mittel weiß / so wil es vns obliegen /</l>
+            <l>Zu forschen wo er sey / vnd sich vor jhm zu schmiegen /</l>
+            <l>Hier blickt das Gegentheil. Drumb wüntscht ich (möcht es seyn!)</l>
+            <l>Man stellt' auff meinen Rath / nur diß besuchen ein.</l>
+          </lg>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <lg>
+            <l>Wahr ists / Cardenio ist nie mein Freund gewesen!</l>
+            <l>Weil ich durch seine Pein in meiner Angst genesen.</l>
+            <l>Diß aber reitzt mich / daß ich jhm entgegen geh /</l>
+            <l>Vnd jetzt zu Willen sey! denn (wo ich recht versteh)</l>
+            <l>Muß freylich dieses Werck was wichtigs auff sich haben /</l>
+            <l>Daß er / der nie gewohnt / was sänffter her zu traben</l>
+            <l>So embsig nach vns hofft. Er sprech vns selber zu /</l>
+            <l>Diß wend sie ein / mein Hertz / wer weiß warumb ers thu.</l>
+            <pb n="73"/>
+            <l>Daß er vns mehr bey sich / als sich bey vns wil wissen?</l>
+            <l>Vielleicht sucht er das Werck geheimer einzuschlissen /</l>
+            <l>Als vnser Hof verträgt / indem so mancher acht</l>
+            <l>Auff diß was seltsam gibt / ein munter Auge wacht</l>
+            <l>Vmb alle Heimligkeit auffs beste zu verdecken!</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>Wer etwas guts beginnt / sucht nicht sich zu verstecken.</l>
+            <l>Ich kenne sein Gemüt / das Haß vnd Eifer treibt /</l>
+            <l>Wer diese Räth' anhört / vergist sein selbst vnd schreibt /</l>
+            <l>Mit lauter Menschen-Blut sein jmmer-new Verbrechen!</l>
+            <l>Wer weiß an wem er sich gesonnen sey zu rechen!</l>
+            <l>Indem er gleich von hier; wie du mir Zeitung bracht</l>
+            <l>Mein Bruder / reisen wil / vnd noch vor dieser Nacht.</l>
+          </lg>
+        </sp>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <lg>
+            <l>Niemand wird wer er sey / dir Schwester besser sagen /</l>
+            <l>Als der / der seine Wund / auff dieser Brust getragen /</l>
+            <l>Als er mich bey der Nacht genöthigt überfiel /</l>
+            <l>Diß glaube / daß ich jhn nicht viel außstreichen wil /</l>
+            <l>Noch weniger bedacht sein nicht gelobtes Leben /</l>
+            <l>Durch vngegründten Ruhm vor beyden zu erheben!</l>
+            <l>Er sey nun wer er sey; ich traw jhm gar nicht zu</l>
+            <l>Daß er was arges spinn; was weiß ich oder du /</l>
+            <l>Ob dieser Gang nicht kan zu aller Nutz gedeyen;</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>Ob nicht zu aller Angst! es wolle der verleyen /</l>
+            <l>Der in die Seelen siht / daß mein Wahn eitel sey.</l>
+          </lg>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <l>Mein Hertz / sie fürchte nicht / jhr Bruder steht mir bey!</l>
+        </sp>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <lg>
+            <l>Traw Schwester / es ist hier was sonders angelegen /</l>
+            <l>Drumb halt vns nicht mehr auff / vnd laß dich selbst bewegen</l>
+            <l>Zu gehn wohin man dich so embsig hat ersucht!</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>Ich Bruder bin bereit; wiewol es sonder Frucht!</l>
+            <pb n="74"/>
+            <l>Kein Vorwitz führt mich mit! wo hier Gefahr verborgen /</l>
+            <l>Entbrenne sie auff mich; wo wir vergebens sorgen;</l>
+            <l>So zeige meine Pflicht / daß die sich recht bedacht</l>
+            <l>Die weniger sich selbst / den Mann vnd Bruder acht.</l>
+          </lg>
+          <stage>Pamphilius. Virenus. Celinde. Cardenio.</stage>
+          <stage>Olympie. Lysander.</stage>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Mein Freund Viren' ich bleib' auff ewig dir verbunden /</l>
+            <l>Daß du auff diesen Tag Gelegenheit gefunden /</l>
+            <l>Mir diß geliebte Paar zu stellen vor Gesicht;</l>
+            <l>Lysander glaub es fest / daß er auff Erden nicht</l>
+            <l>Könt jemand werther Gunst als mir die Stund erzeigen!</l>
+            <l>Sie / Himmel-werthe Fraw / die Tugend gantz zu eigen /</l>
+            <l>Vnd Zucht zu Willen hat / die ich zum ersten mal</l>
+            <l>Mit reinem Aug' anschaw / nachdem die tolle Qual</l>
+            <l>Die mich so lange Zeit vnsinnig hat gerissen /</l>
+            <l>Wie! leider! vnd wohin! die Nacht sich enden müssen.</l>
+            <l>Sie decke nicht vor mir jhr herrlichs Angesicht!</l>
+            <l>Diß ist mein letzter Wuntsch. Lysander eifre nicht.</l>
+            <l>Ich bin Cardenio! nicht der ich bin gewesen</l>
+            <l>Mehr toll als tolle sind! nein! nein! ich bin genesen!</l>
+            <l>Von Hoffen / Wahn vnd Pein / vnd was man Liebe nennt</l>
+            <l>Der Höllen heisse Glut die in dem Hertzen brennt /</l>
+            <l>Vnd vns ans Rasen bringt. Was hab ich nicht begangen?</l>
+            <l>Als diese Seelen-Gifft den blinden Geist gefangen!</l>
+            <l>Welch' Vnthat hab ich nicht biß auff die letzte Nacht</l>
+            <l>So manches schönes Jahr (ich Thörichter!) verbracht.</l>
+            <l>Ich war! ich wil numehr nur meine Schuld bekennen!</l>
+            <l>Lysander mit dem Stahl sein Hertze zu durchrennen</l>
+            <l>Gewaffnet vnd bereit! die Faust schwur (höchster Gott</l>
+            <l>Verzeih dem frechen Trotz!) Lysander seinen Tod.</l>
+            <l>Olympe dieses Licht ziehlt auff Lysanders Leichen!</l>
+            <pb n="75"/>
+            <l>Vnd siht mich selbst vor jhr voll heisser Rew' erbleichen!</l>
+            <l>Was schafft ich nicht vorhin Olympen Angst vnd Müh'</l>
+            <l>Jetzt fall' ich vor sie beyd auff mein gebeugtes Knie /</l>
+            <l>Lysander zage nicht! hier liegt mein mordlich Eisen!</l>
+            <l>Er stoß es durch mich selbst / ich wil jhm Gänge weisen</l>
+            <l>Durch mein betrübtes Hertz': Ist mein Gewehr zu schlecht;</l>
+            <l>Er zucke seinen Stahl vnd schaff jhm selber Recht.</l>
+            <l>Ich wil den Tod von jhm / mein ein vnd hoch Verlangen /</l>
+            <l>Vor meine Missethat als ein Geschenck empfangen.</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>O Himmel! was ist diß! was Schwermut greifft jhn an!</l>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <lg>
+            <l>Cardenio mein Herr! wofern ich bitten kan</l>
+            <l>Er knie nicht vor vns / ich werd' vnd kan nicht rächen</l>
+            <l part="I">Was niemal mich verletzt!</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l part="F">Lysander mein Verbrechen</l>
+            <l part="I">Heischt diß befleckte Blut.</l>
+          </lg>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <lg>
+            <l part="F">Mein Herr / auff von der Erd</l>
+            <l>Wofern man rechnen soll so bin ich straffens werth</l>
+            <l>Der jhm vor diesem wol mehr als den Geist verletzet.</l>
+            <l>Zog er die Kling auff mich; so hab ich sie gewetzet!</l>
+            <l>Ich bitt jhm meine Faust vnd liefer jhm mein Hertz.</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>Cardenio wofern diß ein benebelt Schertz /</l>
+            <l>So spielt er nur zu viel mit Leuten von Gewissen!</l>
+            <l>Ists denn ein rechter Ernst; warumb vor vnsern Füssen /</l>
+            <l>So Wahnmuts voll gekniet! ich bitte kan es seyn /</l>
+            <l>Er stelle gegen vns sein langes schwermen ein.</l>
+            <l>Vnd poche nicht vmbsonst auff sein verwähntes Eisen!</l>
+            <l>Wird seine Seel' jhm nicht manch schrecklich Beyspiel weisen /</l>
+            <l>Daß Vbermut gestürtzt: So denck' er / daß es früh /</l>
+            <l>Vnd man nicht wissen mag wie auch die Nacht auffzieh.</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Ach über-reine Seel! ach sind denn meine Zehren /</l>
+            <l>Nicht Zeugen ernster Rew; vnd muß ich sie beschweren /</l>
+            <l>Indem mein zagend Geist von jhr Vergebung sucht.</l>
+          </lg>
+        </sp>
+        <pb n="76"/>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>Mein Herr er suche nichts / als vnbefleckte Zucht!</l>
+            <l>Kans aber möglich seyn / daß er sich selbst gefunden!</l>
+            <l>Er / der vorhin vor jhm vnd allem Ruhm verschwunden!</l>
+            <l part="I">Wie gehts doch jmmer zu?</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l part="F">Fürwahr ich weiß nicht wie!</l>
+            <l>Diß fühl ich; daß die Nacht / auß der verfluchten Müh /</l>
+            <l>Deß Allerhöchsten Faust mich kräfftig hat gerissen</l>
+            <l>Durch Mittel / darvor ich vnd alle zittern müssen!</l>
+            <l>Doch mich alleine nicht! Celinde neben mir</l>
+            <l>Entbrant in keuscher Glut voll heiliger Begier /</l>
+            <l part="I">Denckt auff ein höher Werck!</l>
+          </lg>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <lg>
+            <l part="F">Wie / ist er mit Celinden</l>
+            <l>Durch festen Schluß der Eh' gesonnen sich zu binden?</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Ach nein! der Wahn ist falsch! Celinden Lieb' ist tod.</l>
+            <l>Celinde liebt mit mir nichts als den höchsten Gott.</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>Ich hör auß seinem Mund jetzt lauter Wunder-Wercke;</l>
+            <l>Ich bitt' / er zeig' vns doch welch eine frembde Stärcke /</l>
+            <l part="I">So mächtig über jhm?</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l part="F">Wolan / ich bin bereit /</l>
+            <l>Ob zwar der frembde Fall / nicht sonder Bitterkeit /</l>
+            <l>Nicht sonder Grauen kan von der gehöret werden /</l>
+            <l>Der ich / so lang ich leb' auff diesem Kreiß der Erden</l>
+            <l>Hierdurch verpflichtet bin! die dunckel-braune Nacht</l>
+            <l>Hatt' in den Mittel-Punct deß Himmels sich gemacht /</l>
+            <l>Diane stieg hervor mit halb-verwandten Wangen /</l>
+            <l>Als ich entbrand von Haß / gantz einsam / außgegangen</l>
+            <l>Lysander, seinen Tod zu fördern durch diß Schwerdt/</l>
+            <l>Ich wust' es wo er schon vor Abends eingekehrt /</l>
+            <l>Ich wust' es daß er noch würd' (ob wol spät) ankommen.</l>
+            <l>Indem ich mir den Schluß zu fördern fürgenommen /</l>
+            <l>Vnd halt vmb seinen Hof; seh' ich die Thür auffgehn!</l>
+            <l>Ich schaw ein Frauen-Bild vmbschleiret vor mir stehn!</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>Cardenio so ists / schwermütige Gedancken /</l>
+            <l>Benebeln die Vernunfft / die ausser allen Schrancken</l>
+            <l part="I">Auff solche Träume fällt!</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l part="F">Man höre mich recht an!</l>
+            <pb n="77"/>
+            <l>Ich ward Olympie, mehr als sie glauben kan /</l>
+            <l>Verwirret vnd bestürtzt; als der sie gantz nicht kennte</l>
+            <l>Biß auff mein Wort sie sich mit eignem Nahmen nennte.</l>
+            <l>Zwar wand sie erstlich ein; daß sie die halbe Nacht</l>
+            <l>Bey jhr Olympie am Tische zugebracht!</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Bey mir! die gestern / Herr! kein frembdes Weib geschauet!</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Geduld! ich der hierauff ohn Argwohn fest gebauet;</l>
+            <l>Bot mein Geleit jhr an! daß / nun ichs recht betracht;</l>
+            <l>Nicht hoch! (doch nur zum Schein) noch noth von jhr geacht!</l>
+            <l>Drauff küst ich jhre Faust / vnd ging an jhre Seiten;</l>
+            <l>Sie / ob / sie zwar sich ließ die gantze Gaß ableiten;</l>
+            <l>Gab auff mein Reden doch kein einig' Antwort mehr /</l>
+            <l>Wie hefftig ich auch bat: Biß Eifer / Rach / vnd Ehr /</l>
+            <l>Vor jhr / zu Hertzen ging / was? Solt ich diese führen</l>
+            <l>Die mir den Mund nicht gönn't / vnd dort die Zeit verlieren /</l>
+            <l>Die nicht mehr wieder kömmt: Die Stunde rennt zu sehr /</l>
+            <l>Die Nacht so jetzt vergeht / gewinn' ich nimmermehr.</l>
+            <l>So schloß ich; vnd entschloß sie plötzlich zu gesegnen</l>
+            <l>Die aber / mehr bereit als vor mir zu begegnen</l>
+            <l>Fuhr recht entrüstet auß; klagt über meine Trew;</l>
+            <l>Schalt meinen Wanckelmut; vnd sprach ohn eine Schew /</l>
+            <l>Daß sie Olympe selbst / die mich so hertzlich liebte /</l>
+            <l>Die nun von mir veracht / auß Eifer sich betrübte.</l>
+            <l>Warff mir Celinden vor / bestund auff diesem Wort /</l>
+            <l>Daß sie bey stiller Nacht in einem wüsten Ort</l>
+            <l>Gewohnet über mir viel Threnen zu vergissen /</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>Gott / aller Götter Gott! wofern mein rein Gewissen</l>
+            <l>Mich nicht vnschuldig macht / so sey mein gantzes Hauß</l>
+            <l>Mir Zeuge! was noch mehr: Lysander sag es auß /</l>
+            <l>Wenn / wo vnd wie er mich noch diese Nacht gefunden!</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Olympe sie verzeih / wo sie / wie meine Wunden</l>
+            <l>Von Grund auß sind verheilt / vmbständlich wissen wil</l>
+            <l>So muß sie in was Noth mein sicher Geist verfiel</l>
+            <pb n="78"/>
+            <l>Erkennen von mir selbst! ich aber mein verhoffen /</l>
+            <l>Starrt eine lange Zeit / von diesem Blitz getroffen /</l>
+            <l>Biß ich mich vnterwand zu lindern jhren Grimm</l>
+            <l>Doch / wie es schien / vmbsonst. Sie schloß die süsse Stimm /</l>
+            <l>Vnd eilte neben mir durch nicht bekante Stege</l>
+            <l>In ein sehr fest vmbzäunt vnd lustiges Gehege /</l>
+            <l>Voll Blumen / voll Cypreß / vnd was das Aug ergetzt /</l>
+            <l>Da hat die Schönste sich auff einen Fels gesetzt /</l>
+            <l>Vnd ich mich neben sie / doch schwieg sie was ich klagte /</l>
+            <l>Gleich einem Marmel-Bild / mein brennend Hertz verzagte</l>
+            <l>Weil sie die Lippen schloß. Lieb / Einsamkeit vnd Nacht</l>
+            <l>Bestritten mich so fern / biß ich schier sonder Macht</l>
+            <l>Vnd zitternd mich erkühnt jhr Antlitz zu entdecken /</l>
+            <l>Da sah' ich! vnd erstarrt in vngeheurem Schrecken /</l>
+            <l>Da sah' ich! vnd erblast! da sah' ich keine Zier!</l>
+            <l>Da sah' ich! vnd verging / Olympen nicht vor mir!</l>
+            <l>Ich sah' ein Todten-Bild! ohn Aug / ohn Lipp vnd Wangen /</l>
+            <l>Ohn Adern / Haut vnd Fleisch / gehärt mit grünen Schlangen /</l>
+            <l>Daß / eh' ich mich versan die Kleidung von sich riß</l>
+            <l>Vnd Sehn vnd Pfeil ergrieff / als mich der Geist verließ /</l>
+            <l>Vnd grimmig auff mich zielt / als ich in Schwindel stürtzte</l>
+            <l>Vnd Ohnmacht mir zugleich so Furcht als Athem kürtzte /</l>
+            <l>So fällt ein Rittersmann / der vor dem Feinde steht /</l>
+            <l>Wenn jhm das heisse Bley durch Brust vnd Rücken geht /</l>
+          </lg>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <lg>
+            <l>Ich wartet als entzuckt / wie sich das Spiel wolt enden /</l>
+            <l>Nun spür' ich daß Gott selbst den Vnfall wollen wenden /</l>
+            <l>Der mich doch oder jhn durch / wo nicht beyder Tod /</l>
+            <l>Doch eines Vntergang / hätt' in gewisse Noth /</l>
+            <l part="I">Geführt eh' ichs gefürcht.</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l part="F">Was soll mein Hertz vermutten?</l>
+            <l>Ziehlt diß auff meine Schmach / geschicht es mir zum gutten!</l>
+            <l>Soll ich zu eigner Schand' vnd eines andern Pein /</l>
+            <l>Hör an gerechter Gott! der Geister masque sein.</l>
+          </lg>
+        </sp>
+        <pb n="79"/>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Nachdem sich mein Geblüt anfangen zu bewegen;</l>
+            <l>Vnd ich gleich als erweckt die Glieder konte regen /</l>
+            <l>Befand ich mich allein auff einem rauen Feld /</l>
+            <l>Das durch gehäufften Grauß vnd Hecken gantz verstellt.</l>
+            <l>Ich eilte zitternd weg / als einer / der der Drachen</l>
+            <l>Vergifftet Nest entdeckt / vnd der dem heissen Rachen</l>
+            <l>Der Löwen kaum entkömmt / doch find ich für vnd für /</l>
+            <l>Vnd spür / ob ichs nicht seh' das Traur-Gespenst vor mir /</l>
+            <l>Diß zwingt mich; kommt mir ein wie rasend es sich wittert /</l>
+            <l>Wie es den Bogen spannt / wie es den Pfeil erschittert /</l>
+            <l>Zu dencken wer ich sey! auff welcher Bahn ich steh /</l>
+            <l>Wie alle Pracht der Welt in Eitelkeit vergeh!</l>
+            <l>Wie schnell ich dieses Fleisch der Erden soll vertrauen /</l>
+            <l>Vnd den gerechten Thron deß höchsten Richters schauen /</l>
+            <l>Der schon mein Lebens-Buch durchsiht vnd überschlägt /</l>
+            <l>Vnd das geringste Wort auff schnelle Wage legt.</l>
+            <l>Wie werd ich vor jhm stehn / ich der voll toller Lüste /</l>
+            <l>Nach keuscher Ehre steh' / der mich erhitzt entrüste /</l>
+            <l>Auff ein nicht schuldig Blut / mit so viel Blut befleckt</l>
+            <l>Mit Lastern Scheitel ab / biß auff den Fuß bedeckt.</l>
+          </lg>
+        </sp>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <l>Ach ja! der Donner schreckt vnd weckt ein kranck Gewissen.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Noch hab ich auff den Schlag was mehr empfinden müssen;</l>
+            <l>Ich jrr'te sonder Rath / mir war kein Weg bekand /</l>
+            <l>Biß ich mich vnverhofft vor einer Kirchen fand /</l>
+            <l>Da sanck ich auff die Knie / vnd schwur dem wüsten Leben</l>
+            <l>Auff ewig gute Nacht / von diesem nun / zu geben /</l>
+            <l>Es floß auff jeder Wort der Threnen milde Bach</l>
+            <l>Biß ein Gepolter mir die Red' vnd Andacht brach.</l>
+            <l>Erschreckte fürchten leicht. Was kont ich anders dencken</l>
+            <l>Als daß ein new Gespenst erschienen mich zu kräncken /</l>
+            <pb n="80"/>
+            <l>Vnd gab mich auff die Flucht / doch fiel mir endlich ein /</l>
+            <l>Es könten Rauber wol daselbst in Arbeit seyn.</l>
+            <l>Ich glaubte was ich wähnt / vnd schloß mit steiffer Klingen</l>
+            <l>Den Frev'lern auff der That / die Beuten abzudringen!</l>
+            <l>Was mich noch mehr verstärckt war das deß Tempels Thür</l>
+            <l>Gantz Schloß- vnd Riegel-frey / die redliche Begier</l>
+            <l>Zwang mich ins Heiligthum / in welchem keine Zeichen</l>
+            <l>Von einem Kirchen-Raub. Doch fand ich eine Leichen /</l>
+            <l>Am Pfeiler angelehnt halb von der Grufft verzehrt /</l>
+            <l>Mit diesem läufft ein Mensch den ich mit Kertz vnd Schwerdt</l>
+            <l>Wiewol vmbsonst verfolgt / auß den geweihten Schrancken!</l>
+            <l>Diß eben brachte mich auff vorige Gedancken /</l>
+            <l>Daß eine freche Schaar sich dar vmb Raub versteckt /</l>
+            <l>Biß mir ein stralend Licht ein offen Grab entdeckt</l>
+            <l>Als ich nach diesem gieng / in Meinung / sie zu finden!</l>
+            <l>Traff ich in dieser Höl (O frembder Fall!) Celinden,</l>
+            <l>Die mich (den neue Furcht vnd grösser Angst betrat)</l>
+            <l>Mit schier erstarrter Stimm vmb Lebens Rettung bat.</l>
+            <l>Ich starrt vnd zweiffelt / ob der Himmel mein Verbrechen</l>
+            <l>Durch solche Traur-Gespenst entschlossen sey zu rächen /</l>
+            <l>Ja glaubte wenn ich sie mit einer Hand berührt /</l>
+            <l>Das gleich Olympens Bild / das mich zuvor verführt;</l>
+            <l>Sie in ein schrecklich Aaß sich werde stracks verkehren</l>
+            <l>Doch must ich endlich jhr / was sie begehrt gewehren.</l>
+            <l>Ich halff jhr auß der Grufft / in die der Leichnam eilt</l>
+            <l>Der an dem Pfeiler sich / wie schon erwehnt / verweilt.</l>
+            <l>Wir rennten auß der Kirch vnd wie durch gleiche Wunden</l>
+            <l>Vor beyder Hertz verletzt / so sind wir gleich verbunden!</l>
+            <l>Sie lescht mit Threnen auß der tollen Liebe Glut</l>
+            <l>Ich flieh was flüchtig ist / vnd such ein höher Gut.</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>Hat jemand weil der Baw der rundten Welt gegründet /</l>
+            <pb n="81"/>
+            <l>Weil Gott das grosse Licht der Sonnen angezündet</l>
+            <l>Dergleichen Stück erhört! welch vngeheure Macht /</l>
+            <l>Hat in ein Todten-Grab Celinden lebend bracht!</l>
+          </lg>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <lg>
+            <l>Das euch / Cardenio, sein Vnrecht zu bekennen</l>
+            <l>Gantz kein Bedencken trägt; möcht jemand Wahnwitz nennen</l>
+            <l>Ich fühl in mir / daß der noch wol zu retten sey /</l>
+            <l>Der seine Seuch entdeckt. Man wird von Sünden frey</l>
+            <l>Wenn man die Sünden nicht entschuldigt / schmückt vnd färbet /</l>
+            <l>Ich bins Olympie die auff den Tod verterbet /</l>
+            <l>Die / wie sie selber weiß / nie nach dem Schmuck getracht /</l>
+            <l>Der keuscher Frauen Geist vor allen herrlich macht.</l>
+            <l>Zwar hat die erste Zucht gar viel bey mir versehen /</l>
+            <l>Doch meine Jugend ließ selbst jhre Blum abwehen /</l>
+            <l>Als mich der Westen Wind der Geilheit überfiel</l>
+            <l>Bald riß ich weiter auß vnd überschrit das Ziel</l>
+            <l>Der vorhin schweren Schuld / vnd ward durch den gefangen /</l>
+            <l>Der jhr Olympie so hefftig nachgegangen.</l>
+            <l>Cardenio als er an der verzweiffeln must</l>
+            <l>Der Ihre Treu zu werth / ergetzte meine Lust.</l>
+            <l>Doch leider kurtze Zeit: So wenn die Rosen liegen</l>
+            <l>Auff die die Sonne fällt / siht man die Bienen fliegen</l>
+            <l>Die vor der Honig-Thaw' auff jedem Blat erquickt!</l>
+            <l>Ich / die weit mehr durch jhn / als er durch mich verstrickt /</l>
+            <l>Verging durch seine Kält / vnd als er mich verlassen /</l>
+            <l>Begont ich Sonn' vnd Tag vnd Leben selbst zu hassen /</l>
+            <l>Ich sucht / vnd nur vmbsonst / durch alles seine Gunst</l>
+            <l>Biß mir Verschmachtenden / die tolle Zauber-Kunst /</l>
+            <l>Versprach ein Feur in jhm / das ewig / zu entzünden /</l>
+            <l>Wofern ich könt ein Hertz auß einer Leichen finden /</l>
+            <l>Daß ich / weil sie der Zeit auff dieser Welt genaß /</l>
+            <l>Durch vnverfälschte Gunst biß auff den Tod besaß /</l>
+            <l>Was solt ich arme thun? Die Noth hat mich gezwungen /</l>
+            <l>Vnd in Marcellens Grufft bey stiller Nacht gedrungen /</l>
+            <pb n="82"/>
+            <l>Die Cleon den mehr Geitz als mich die Liebe quält</l>
+            <l>Mir mit der Kirch entschloß / als er mein Gold gezehlt.</l>
+            <l>Er halff Marcellens Sarg mir in geheim entdecken</l>
+            <l>Da ich die Leich erblickt: Erzittert ich vor Schrecken.</l>
+            <l>Wo war der Stirnen Glantz / wohin der Augen Paar?</l>
+            <l>Wohin Marcellus selbst? Was läst vns doch die Baar</l>
+            <l>Als ein verstelltes Aaß / das blauer Schimmel decket</l>
+            <l>Das eine braune Fäul ansteckt vnd gantz beflecket /</l>
+            <l>Vnd ob ich zwar bestürtzt; erkühnt ich doch die Händ /</l>
+            <l>Zu öffnen seine Brust / als ich die Leinwand trennt /</l>
+            <l>In die sein Leib verhüllt (O grause grimme Sachen!)</l>
+            <l>Begönt er auß dem Schlaf deß Todes zu erwachen /</l>
+            <l>Er zuckt vnd richte sich von seinem Lager auff /</l>
+            <l>Vnd sprach: (weil Cleon mir entsprang in vollem Lauff)</l>
+            <l>Ha! grausamste / was führt dich her zu mir?</l>
+            <l>Ists nicht genung daß vmb dich vnd vor dir /</l>
+            <l>Ich diese Stich in meine Brust empfangen /</l>
+            <l>Durch die mir Blut vnd Seel ist außgegangen?</l>
+            <l>Erbrichst du noch die stille Todten-Klufft</l>
+            <l>Vnd wilst diß Hertz? Kan denn die heilge Grufft</l>
+            <l>Nicht sicher seyn / vnd ich in der nicht rasten</l>
+            <l>Must du mich hier / auch nun ich hin / antasten.</l>
+            <l>So sprach er: Vnd erhub sich auß dem Staub der Erden;</l>
+            <l>Ich sanck auff seinen Sarg. Was noch erzehlt kan werden</l>
+            <l>Hat schon Cardenio vor mir euch dar gethan.</l>
+            <l>Der seiner Faust entging durch vnbekante Bahn /</l>
+            <l>Ist Cleon Zweiffels ohn / vnd die erblaste Leichen /</l>
+            <l>Die an dem Pfeiler stund war meines Lasters Zeichen /</l>
+            <l>Es war deß Ritters Leib / an den ich mich gewagt /</l>
+            <l>Den meine freche That auß seiner Grufft verjagt.</l>
+            <l>Hab ich nun / was vorhin ich suchte / nicht gefunden;</l>
+            <l>So bin ich doch der Angst vnd aller Band' entbunden.</l>
+            <l>Veracht Cardenio mein vor geliebt Gesicht:</l>
+            <l>Ich / die das Grab erkühlt / fühl auch sein Feuer nicht /</l>
+            <pb n="83"/>
+            <l>Kont ich jhn nicht vorhin zu meiner Liebe zwingen /</l>
+            <l>Jetzt kan die Liebe nicht Celinden mehr bespringen.</l>
+            <l>Zeigt jhre Fackel mir hoch angenehmen Schein;</l>
+            <l>Deß Todes Fackel zeigt das Ende meiner Pein.</l>
+            <l>Marcell dein blasser Mund / dein rauh' vnd heischer Stimme</l>
+            <l>Läst nun vnd ewig nicht / daß hier ein Funck entglimme /</l>
+            <l>Von dem verfluchten Brand / den du in mir ersteckt</l>
+            <l>Als dein entseelter Mund mich Thörichte geschreckt /</l>
+            <l>Ade verfälschte Lust! Ade nicht reine Flammen!</l>
+            <l>Ihr Vorbild höllscher Glut! Celinde wil verdammen /</l>
+            <l>Was jhr Verdammen würckt! Celinde wil allein</l>
+            <l>Von dieser Stund an Gott ein reines Opffer seyn!</l>
+            <l>Weg Perlen! weg Rubin / vnd Indiansche Steine!</l>
+            <l>Die Threnen darmit ich mein Vbelthat beweine;</l>
+            <l>Siht der vor Perlen an / dem ich befleckte Fraw</l>
+            <l>Zu einer Magd mich selbst auff ewig anvertraw.</l>
+            <l>Ade Cardenio, den ich von Gott gezogen!</l>
+            <l>Cardenio, den ich vmb Ehr vnd Ruhm betrogen!</l>
+            <l>Cardenio, den ich vmb alles / was geacht /</l>
+            <l>Vmb Redligkeit vnd Trew vnd rein Gewissen bracht /</l>
+            <l>Ade Cardenio! durch den ich bin entgangen</l>
+            <l>Als meiner Straffen Heer mich diese Nacht vmbfangen!</l>
+            <l>Ade Cardenio! mein Hertze bricht entzwey</l>
+            <l>Vor Wehmut / noch ein Wort; Cardenio verzeih!</l>
+          </lg>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Celind' ich bin durch mich / vnd nicht durch sie verführet!</l>
+            <l>Dafern sie meinen Gang als auff der Jagt verspüret;</l>
+            <l>Rieth mir doch mein Verstand den Netzen zu entgehn /</l>
+            <l>In die ich willig lieff; gläntzt jhr Gesichte schön /</l>
+            <l>Das mich bezaubert hat; so hieß doch mein Gewissen</l>
+            <l>Vor diesen Sonnen mich die blöden Augen schlissen /</l>
+            <l>Strit lieblichste Syren jhr artiger Gesang</l>
+            <l>Mit jhrem Harffen-Spiel / mit jhrer Lauten Klang;</l>
+            <pb n="84"/>
+            <l>Mir stund mit jenem frey die Ohren zu verstopffen /</l>
+            <l>Geliebt jhr an mein Hertz so lieblich anzuklopffen?</l>
+            <l>Ich ließ sie selber ein! der Mensch fällt nur durch sich.</l>
+            <l>Sucht sie Verzeihung hier! ich selbst verklage mich.</l>
+            <l>Ich / der in Lust entbrand jhr' Uppigkeit gepriesen</l>
+            <l>Ich / der sie mehr vnd mehr zu Lastern angewiesen;</l>
+            <l>Ich / der jhr selbst vertrat der keuschen Tugend Bahn!</l>
+            <l>Ach was ich nicht gewehrt / das hab ich selbst gethan!</l>
+            <l>Hat mir Olympie, die ich vmbsonst bekrieget /</l>
+            <l>Nach starcker Gegen-wehr so herrlich obgesieget;</l>
+            <l>Kont ich Celinden denn nicht vnter Augen gehn</l>
+            <l>Vnd vnverletzt dem Pfeil der Liebe widerstehn?</l>
+            <l>O Wunder dieser Zeit / die ich allein erhebe</l>
+            <l>Vnd vorhin stets verfolgt / Olympe sie vergebe /</l>
+            <l>Dem der vor ausser sich / sie / vnd sich selbst verkennt</l>
+            <l>Der als ein toller Löw / jhr keusches Lamb / nachrennt.</l>
+            <l>Ich war jhr grimmster Feind; als mich bedaucht ich liebte /</l>
+            <l>Sie Schönste liebte mich / mich dunckte sie betrübte:</l>
+            <l>Jetzt lob ich jhre Zucht vnd vnvergleichlich Ehr!</l>
+            <l>Vor diesem war ich blind vnd raast je mehr vnd mehr</l>
+            <l>Nach eignem Vntergang. Ich bin durch sie gestiegen /</l>
+            <l>Vnd schaw Cupido dich vor meinen Füssen liegen /</l>
+            <l>Der Köcher ist entleert / der Bogen Sehnen-frey /</l>
+            <l>Deß Todes strenge Faust bricht seine Pfeil entzwey /</l>
+            <l>Die Fackeln leschen auß von meinen steten Zehren /</l>
+            <l>Vor hast du mich verletzt / jetzt kan ich dich entwehren /</l>
+            <l>Vnd mangelt mir noch was zu dämpffen deine Pein;</l>
+            <l>So soll Olympens Sieg deß meinen Richtschnur seyn.</l>
+          </lg>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <lg>
+            <l>An mir Cardenio wird man nichts preisen können /</l>
+            <l>Ich preise mehr / was jhm der Höchste wollen gönnen!</l>
+            <l>Was bißher je von jhm / zu wider mir geschehn /</l>
+            <l>kührt daher / daß er mich nicht selbst hat angesehn /</l>
+            <l>Ihn hat mein nichtig Fleisch / der falsche Schnee der Wangen</l>
+            <pb n="85"/>
+            <l>Vnd deß Gesichtes Larv / vnd dieser Schmuck gefangen</l>
+            <l>Den mir die Zeit abnimmt / nun hat die wahre Nacht</l>
+            <l>Mein Antlitz recht entdeckt. Herr! dieser Liljen Pracht /</l>
+            <l>Deß Halses Elffenbein sind nur geborgte Sachen</l>
+            <l>Wenn das gesteckte Ziel mit mir wird ende machen;</l>
+            <l>Vnd mein beklagter Leib / den er so werth geschätzt</l>
+            <l>Nun zu der langen Ruh' in seine Grufft versetzt /</l>
+            <l>Vnd Cynthie dreymal mit vollem Angesichte</l>
+            <l>Vnd wieder noch dreymal mit new entsterktem Lichte</l>
+            <l>(Nicht länger Bitt ich Frist /) der Hörner Flamm erhöht;</l>
+            <l>(Wie nichts ist! was an vns so kurtze Zeit besteht)</l>
+            <l>Denn such' er meinen Rest! was jhm der Sarg wird zeigen</l>
+            <l>In den man mich verschloß / das schätz er vor mein eigen /</l>
+            <l part="I">Das ander war entlehnt!</l>
+          </lg>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <lg>
+            <l part="F">O wol vnd mehr denn wol!</l>
+            <l>Dem / der so fern sich kennt; weil er noch leben soll /</l>
+            <l part="I">Nicht / wenn der Tod schon rufft.</l>
+          </lg>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <lg>
+            <l part="F">Wol dem der stets geflissen</l>
+            <l>Auff ein nicht flüchtig Gut / vnd vnverletzt Gewissen!</l>
+          </lg>
+        </sp>
+        <sp who="#lysander">
+          <speaker>LYSANDER.</speaker>
+          <l>Wol dem der seiner Zeit / nimmt (Weil noch Zeit) in acht!</l>
+        </sp>
+        <sp who="#vireno">
+          <speaker>VIRENO.</speaker>
+          <l>Wol diesem der die Welt mit jhrer Pracht verlacht.</l>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <l>Wol dem / dem GOttes Hand wil selbst das Hertze rühren!</l>
+        </sp>
+        <sp who="#olympia">
+          <speaker>OLYMPIA.</speaker>
+          <l>Wol dem der sich die Hand deß Höchsten lässet führen!</l>
+        </sp>
+        <sp who="#celinde">
+          <speaker>CELINDE.</speaker>
+          <l>Wol dem der jeden Tag zu seiner Grufft bereit!</l>
+        </sp>
+        <sp who="#pamphilius">
+          <speaker>PAMPHILIUS.</speaker>
+          <l>Wol dem / den ewig krönt die ewig' Ewigkeit.</l>
+        </sp>
+        <sp who="#cardenio">
+          <speaker>CARDENIO.</speaker>
+          <lg>
+            <l>Wer hier recht leben wil vnd jene Kron ererben /</l>
+            <l>Die vns das Leben gibt; <emph>denck jede Stund ans Sterben</emph>.</l>
+          </lg>
+        </sp>
+        <trailer>Ende.</trailer>
+      </div>
+    </body>
+  </text>
+</TEI>
