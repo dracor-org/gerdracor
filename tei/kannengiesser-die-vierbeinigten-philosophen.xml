@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die vierbeinigten Philosophen</title>
+        <title type="sub">Ein Trauerspiel in einem Act</title>
+        <author>
+          <persName>
+            <forename>Hans</forename>
+            <forename>Franz</forename>
+            <surname>Kannengießer</surname>
+          </persName>
+          <idno type="wikidata">Q107753887</idno>
+          <idno type="pnd">1113194588</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000543</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q107822636</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Wikisource</name>
+          <idno type="URL">https://de.wikisource.org/wiki/Die_vierbeinigten_Philosophen</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <title>Hans Franz Kannengießer (Pseudonym): Die vierbeinigten Philosophen. Ein
+              Trauerspiel in einem Act. Heimberg 1802.</title>
+            <date type="print" when="1802">1802</date>
+            <date type="premiere"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="packan" sex="UNKNOWN">
+            <persName>Packan</persName>
+          </person>
+          <person xml:id="jaeger" sex="MALE">
+            <persName>Jäger</persName>
+          </person>
+          <person xml:id="haescher" sex="MALE">
+            <persName>Häscher</persName>
+          </person>
+          <person xml:id="schlachter" sex="MALE">
+            <persName>Schlachter</persName>
+          </person>
+          <person xml:id="herr_von_albern" sex="MALE">
+            <persName>Herr von Albern</persName>
+          </person>
+          <person xml:id="buettel" sex="MALE">
+            <persName>Büttel</persName>
+          </person>
+          <person xml:id="fiffi" sex="UNKNOWN">
+            <persName>Fiffi</persName>
+          </person>
+          <person xml:id="buerger" sex="MALE">
+            <persName>Bürger</persName>
+          </person>
+          <person xml:id="krueger" sex="MALE">
+            <persName>Krüger</persName>
+          </person>
+          <person xml:id="philax" sex="UNKNOWN">
+            <persName>Philax</persName>
+          </person>
+          <person xml:id="itzig" sex="MALE">
+            <persName>Itzig</persName>
+          </person>
+          <person xml:id="wachtel" sex="UNKNOWN">
+            <persName>Wachtel</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="associated_with" active="#packan" passive="#schlachter"/>
+            <relation name="associated_with" active="#fiffi" passive="#buerger"/>
+            <relation name="associated_with" active="#philax" passive="#krueger"/>
+            <relation name="associated_with" active="#wachtel" passive="#itzig"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2021-08-04">(ff) conversion from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <pb n="1"/>
+    <front>
+      <div type="front">
+        <head>Die vierbeinigten Philosophen.</head>
+        <head>Ein Trauerspiel in einem Act</head>
+        <p>von Hans Franz Kannengießer.</p>
+        <p>(Preis 6 Schilling.)</p>
+        <dateline>Heimberg 1800 und 2.</dateline>
+      </div>
+      <pb n="2"/>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen:</head>
+          <castItem>Packan, ein Bullenbeisser.</castItem>
+          <castItem>Fiffi, ein Schooshund.</castItem>
+          <castGroup>
+            <castItem>Philax</castItem>
+            <castItem>Wachtel</castItem>
+            <roleDesc>Privatpersonen.</roleDesc>
+          </castGroup>
+          <castItem>Herr von Albern.</castItem>
+          <castItem>Ein vornehmer Bürger.</castItem>
+          <castItem>Ein Schlachter.</castItem>
+          <castItem>Ein Krüger.</castItem>
+          <castItem>Ein Jude.</castItem>
+          <castItem>Ein Jäger, mit Jägern und Häschern.</castItem>
+          <castItem>Der Schinder Hannes.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Das Stück spielt Anfangs auf der Straße in Halberna und endigt in der Polizey-Stube
+          daselbst.</p>
+      </set>
+    </front>
+    <pb n="3"/>
+    <body>
+
+      <div type="scene">
+        <head>Erster Auftritt.</head>
+        <stage>(Straße.)</stage>
+        <sp who="#packan">
+          <speaker>Packan</speaker>
+          <stage>(am Stricke, wird von einem Häscher über die Bühne geschleppt. In der Mitte
+            derselben setzt er sich zur Wehre gegen seinen Führer. Dieser zieht eine Pfeife hervor
+            und lockt damit seine Cameraden)</stage>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Zweyter Auftritt.</head>
+        <sp who="#jaeger">
+          <speaker>Ein Jäger.</speaker>
+          <p>Was giebts?</p>
+        </sp>
+        <sp who="#haescher">
+          <speaker>Häscher.</speaker>
+          <p>Widersetzlichkeit. Monsieur Packan will nicht auf die Polizey: ich muß mir daher Hülfe
+            ausbitten.</p>
+        </sp>
+        <sp who="#packan">
+          <speaker>Packan.</speaker>
+          <p>Ich gehe nicht von der Stelle, bis ihr mir Rede steht. Seit wann ist es im Halberna
+            Mode, daß man friedliche Hunde mit einem Stricke um den Hals dem öffentlichen Spectakel
+            Preis giebt? Habt ihr nichts Besseres zu thun?</p>
+        </sp>
+        <sp who="#haescher">
+          <speaker>Häscher.</speaker>
+          <p>Seit wann untersteht sich ein Hund so zu raisonniren? Das kostet einem Menschen 3 Mk.
+            14 ß., und dir das Leben!</p>
+        </sp>
+        <sp who="#packan">
+          <speaker>Packan.</speaker>
+          <p>Was hab ich verbrochen? ging ich nicht ruhig meinen Weg, der mich wieder zu meinem
+            Herrn führen sollte, den ich verlohren hatte? Was bewegte euch, mich mit einer Schlinge
+            zu fangen? Doch wol nicht, weil ihr mich für toll hieltet? aber – die Sporteln – die
+            Ranzion.</p>
+        </sp>
+        <pb n="4"/>
+        <sp who="#haescher">
+          <speaker>Häscher.</speaker>
+          <p>Schweig! Mein Herr wird dir schon erklären, weshalb du gefangen bist.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Dritter Auftritt.</head>
+        <sp who="#schlachter">
+          <speaker>Ein Schlachter.</speaker>
+          <p>Heda! Lüde! wo wollt ihr mit dem Hunde hen, der kehört meene!</p>
+        </sp>
+        <sp who="#jaeger">
+          <speaker>Jäger.</speaker>
+          <p>So! nun da kann er gleich mit auf die Polizey kommen. Hier dürfen keine Hunde
+            herumlaufen.</p>
+        </sp>
+        <sp who="#schlachter">
+          <speaker>Schlächter.</speaker>
+          <p>Das dichs Dunnerwetter! Ich hefn verlohrn! He sollt mir die Kalber zu Huß bieten, dee
+            ich uff dem Dorfe kofen wull.</p>
+        </sp>
+        <sp who="#jaeger">
+          <speaker>Jäger.</speaker>
+          <p>Nichts zu raisonniren, oder er kommt in die Wache! <stage>(zu den Häschern)</stage>
+            Vorwärts!</p>
+        </sp>
+        <sp who="#schlachter">
+          <speaker>Schlächter.</speaker>
+          <p>Nicht us der Stelle! Ich will 3 Mk. 14 ß. betolen; man lat my den Hund lofen.</p>
+        </sp>
+        <sp who="#packan">
+          <speaker>Packan.</speaker>
+          <p>Herr, ich will mich todtschiessen lassen, wenn ich nicht besser denke, als diese
+            Menschen! Schonen sie doch ihres Gleichen nicht: arretiren, chikaniren; karzeriren und
+            subtrahiren am Ende 3 Mk. 14 ß. von jeder Summe, sey es auch das letzte Geld, was einer
+            im Vermögen hat, um davon eine Anzahl der menschlichen Gesellschaft lästiger Tagediebe
+            zu besolden, die in den Winkeln der Stadt das Robespierrische Schrekenssystem <foreign
+              xml:lang="lat">in nucem</foreign> nachahmen und den Unbefangensten in Furcht und
+            Schrecken setzen. – Nennt man unter den Menschen Sicherheit, wenn alle sklavisch auf den
+            Straßen wie die Schnecken <pb n="5"/> langsam und stumm kriechen, und Gott danken, wenn
+            sie unbestraft oder willkührlich beraubt, was denn wol so ziemlich einerley ist, in
+            ihren Löchern angekommen sind? Ist etwa Halberna eine Räuberhöhle, wo man jeden
+            ehrlichen Mann für einen Spitzbuben anzusehen und verhaften zu müssen Ursache hat, bis
+            er mit 3 Mk. 14 ß. beweiset, daß er es nicht ist? War man ehedem mehr von Straßenräubern
+            als jetzt von der Polizey geplagt? Wurde ehedem den Bürgern im Durchschnitt mehr durch
+            Hauseinschleicher gestohlen, als sie jetzt an Brüche bezahlen müssen? Fürchtete man sich
+            ehedem mehr vor loses Gesindel, als jetzt vor der Polizey?</p>
+        </sp>
+        <sp who="#jaeger #haescher">
+          <speaker>Jäger u. Häscher.</speaker>
+          <stage>(stehen mit untergeschlagenen Armen und sehen sich staunend an)</stage>
+        </sp>
+        <sp who="#schlachter">
+          <speaker>Schlächter.</speaker>
+          <p>Daß dichs Wetter! Packan, wo hast dus Schnacken gelernt? – Hört ihr Herren, wo myn Hund
+            blift, da blief ich ook. So vernünftig har ich em doch nich angesehn.</p>
+        </sp>
+        <sp who="#jaeger">
+          <speaker>Jäger.</speaker>
+          <p>Das soll ihm übel bekommen. Wir machen weder mit Menschen noch mit Hunden Umstände.
+            Also vorwärts mit euch, auf die Polizey! <stage>(Alle ab)</stage></p>
+        </sp>
+        <stage>(Das Theater verwandelt sich in die Polizeystube. An einem Tische sitzt Herr von
+          Albern, neben ihm stehen einige Häscher. Auf der Erde in den zwey Vorderwinkeln des
+          Zimmers liegen <emph>Wachtel</emph> und <emph>Philax</emph> an <pb n="6"/> Stricken. Etwas
+          vorwärts steht der Büttel mit Fiffi auf dem Arme.)</stage>
+      </div>
+      <div type="scene">
+        <head>Vierter Auftritt.</head>
+        <sp who="#herr_von_albern">
+          <speaker>Herr v. Albern.</speaker>
+          <p>Es kommt niemand von allen dreyen, um seinen Hund zu lösen. Ich denke, wir schlagen sie
+            todt.</p>
+        </sp>
+        <sp who="#jaeger">
+          <speaker>Ein Jäger.</speaker>
+          <p>Es wäre doch Schade um das Lösegeld. Was bekömmt der Büttel groß für das Fell. Der
+            ganze Decher gilt 12 Mark.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Blitz! so viel? Der muß Abgabe davon entrichten!</p>
+        </sp>
+        <sp who="#haescher">
+          <speaker>Ein Häscher.</speaker>
+          <p>Bringt schon etwas ein, für jeden todten Hund 4 ß., hundert sind schon 25 Mark.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Da hat er Recht. Rufe er mir Jägern. <stage>(Häscher ab)</stage> Man muß jetzt
+            Finanzier im strengsten Verstande seyn, sonst schafts nicht. Alles nimmt sich in Acht;
+            man fährt wie im Schlafe, man raucht nicht mehr, man ist stumm – womit soll man jetzt
+            Geld machen? Bald werde ich einige von euch abdanken müssen.</p>
+        </sp>
+        <sp who="#haescher">
+          <speaker>Ein Häscher.</speaker>
+          <stage>(für sich)</stage>
+          <p>Da soll euch ja das Wetter regieren! Abdanken? Prosit die Mahlzeit, mein Herr – Fangen
+            will ich, was mir in den Weg kommt; und bald soll man noch ein halbes Dutzend
+            Wachthäuser bauen müssen, um die Arrestanten zu beherbergen. Nein! lieber mag ganz
+            Halberna ein Gefängniß werden, ehe ich meinen Dienst aufgebe.</p>
+        </sp>
+        <sp who="#buettel">
+          <speaker>Büttel.</speaker>
+          <p>Herr, mit dem Hundefellen ists nichts! liegen alle auf dem Boden; können mit einigen
+            Tausend aufwarten.</p>
+        </sp>
+        <pb n="7"/>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Hilft euch nichts! Müßt Abgabe entrichten!</p>
+        </sp>
+        <sp who="#buettel">
+          <speaker>Büttel.</speaker>
+          <p>Da mag der Herr selbst Schinder seyn. Wir können nichts davon missen.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Was? Selbst Schinder seyn? – Wie heißt er?</p>
+        </sp>
+        <sp who="#buettel">
+          <speaker>Büttel.</speaker>
+          <p>Hannes.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Der Schinder Hannes aus Nagelberg zahlt, wegen ungebührlicher Reden, 3 Mk. 14 ß.</p>
+        </sp>
+        <sp who="#buettel">
+          <speaker>Büttel.</speaker>
+          <p>Ihr Gnaden, ich hab's so böse nicht gemeynt. Es ist nur so ein Sprichwort.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Wollt Ihr zahlen oder soll ich pfeifen? Geld oder ins Loch zu den andern Hunden! Ich
+            will euch Rackers lehren, mit mehr Respect zu reden!</p>
+        </sp>
+        <sp who="#buettel">
+          <speaker>Büttel.</speaker>
+          <stage>(zieht einen ledernen Beutel und zählt)</stage>
+          <p>Herr ich hab nur 3 Mk. 11 ß. Will den Beutel mit hingeben, ist wol noch 3 Schillinge
+            werth.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <stage>(Steckt beydes ein)</stage>
+          <p>Kann ihn wieder kriegen, wenn er den Rest bringt.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Fünfter Auftritt.</head>
+        <sp who="#jaeger">
+          <speaker>Jäger.</speaker>
+          <stage>(tritt auf)</stage>
+          <p>Ihr Gnaden befehlen?</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Der Schinderhannes aus Nagelberg zahlt künftig für jeden Hund 4 ß. Die Kanzelei hat der
+            Hundeliste diese Rubrik hinzuzufügen.</p>
+        </sp>
+        <sp who="#jaeger">
+          <speaker>Jäger.</speaker>
+          <p>Ein vornehmer Bürger ist draußen; <pb n="8"/> seiner Frauen Schooshund soll hier
+            seyn.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Kann warten!</p>
+        </sp>
+        <sp who="#fiffi">
+          <speaker>Fiffi,</speaker>
+          <stage>indem er seinen Herrn wittert, wird unruhig, zappelt, jauchzt und sucht sich von
+            dem Arm des Büttels loszumachen.)</stage>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Was quikt das Vieh! Schlagn ins Gnick!</p>
+        </sp>
+        <sp who="#fiffi">
+          <speaker>Fiffi.</speaker>
+          <p>Warum denn? mir hat niemand als mein Herr zu befehlen. Wenn er nur herein käme.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Ueber die naseweise Kröte! Das will ich dir schon zeigen.</p>
+        </sp>
+        <sp who="#fiffi">
+          <speaker>Fiffi.</speaker>
+          <p>Todtschlagen könnt ihr mich, aber nicht überzeugen, daß ihr Recht habt, zu handeln, wie
+            ihr handelt. Wenn ihr stärker seyd als ich, wenn ihr mehr Gewalt, als eure menschlichen
+            Mitbürger besitzt: so muß euch das nicht zum Tyrannen, zum Despoten machen. Jede Sache
+            hat ihre Gränzen, übertreibt ihr sie: so werdet ihr zwar gefürchtet, aber auch
+            verabscheuet. Ihr seyd dann dem Gespötte der Menschen und selbst der Thiere Preis
+            gegeben, weil ihr keins von beyden schont, sondern lediglich auf ihre Kränkung und
+            Unterdrückung denkt. – Den großen Haufen habt ihr nun auch wieder euch! Glaubt mir, ich
+            bin nur ein Hund, habe aber eine solche Erziehung genossen, daß ich wol von Dingen
+            mitreden kann, die ihr nur allein zu kennen wähnt. Es ist euer Stolz, eure Herrschsucht,
+            die euch abhält, gerecht zu seyn. Eine strenge Regierung ist nichts weniger denn <pb
+              n="9"/> weise; sie gleicht einem Orkan, der nur verwüstet, nichts verschont, was auf
+            seiner Bahn liegt, aber bald verschwindet und gräßliche Folgen seines Wütens hinterläßt.
+            Nicht lange mehr wird der Tagelöhner sein Pfeifchen entbehren; nicht lange mehr wird man
+            die freundschaftlichen Gespräche geselliger Menschen für Hochverrath erklären. Bald wird
+            die letzte Grabesnacht, wo kein Laut, als aus euren Polischinell-Pfeifen, ertönte, über
+            das sonst so glückliche, fröhliche Halberna geschwebt haben; bald wird eures Reiches ein
+            Ende seyn, das mit Wohlthätigkeit fürs Gemeinbeste begann und mit überspannten
+            Alfanzereyen beschließt.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Mir das von einem Hunde! Du solst bluten! Jäger, ruf er den Kerl, den Bürger, herein!
+              <stage>(Jäger ab.)</stage> Die Menschen zittern vor mir und die Hunde nicht? Das will
+            ich doch sehen!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Sechster Auftritt.</head>
+        <sp who="#buerger">
+          <speaker>Bürger.</speaker>
+          <p>Ich höre, mein Hund ist hier. <stage>(wird ihn gewahr)</stage> Bist du da, mein Fiffi?
+            armes Thier, hast wol rechten Hunger? Sollst gleich mitgehen. <stage>(zum
+              Polizeyherrn)</stage> Hier sind die stipulirten 3 Mk. 14 ß. Darf ich jetzt meinen Hund
+            mitnehmen?</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Nein! Der Hund muß sterben. Mir so zu begegnen; solche unerhörte Dinge zu sagen?</p>
+        </sp>
+        <sp who="#buerger">
+          <speaker>Bürger.</speaker>
+          <p>Hat mein Hund Sprache bekommen? Das in ein Wunderwerk!</p>
+        </sp>
+        <pb n="10"/>
+        <sp who="#fiffi">
+          <speaker>Fiffi.</speaker>
+          <p>Ja, Herr! Mir ist wie weiland Byleams Esel, die Gabe verliehen, einem Tyrannen die
+            Wahrheit zu sagen.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Dafür soll er auch todtgeschlagen werden. Er darf sich kein <emph>Mensch</emph>, und
+            wärens Kämmerey-Bürger, unterstehen, mir Vorstellungen zu machen, geschweige denn ein
+            Hund. <stage>(zu dem Büttel)</stage> Abgethan! und daß ich nur die 4 ß. in der Liste
+            aufgeführt finde!</p>
+        </sp>
+        <sp who="#buettel">
+          <speaker>Büttel.</speaker>
+          <stage>(will gehn)</stage>
+        </sp>
+        <sp who="#buerger">
+          <speaker>Bürger.</speaker>
+          <stage>(hält ihn zurück)</stage>
+          <p>Kraft der Verordnung, daß jeder seinen Hund gegen Erlegung der Gebühr, wieder erhalten
+            kann, verlange ich auch den meinigen zurük. Sie können nicht Kläger und Richter zugleich
+            seyn. Hat mein Hund gefehlt: so ziehen Sie ihn vor ein Hundetribunal; es wird ja in
+            Halberna auch daran nicht fehlen; er soll prompt erscheinen und sich vertheidigen; aber
+            morden lassen können Sie ihn nicht.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Die bezahlten 3 Mk. 14 ß. hat er verwirkt, durch sein loses Maul. Der Hund muß sterben.
+            Nun marsch! vorwärts! Oder – –</p>
+        </sp>
+        <sp who="#buerger">
+          <speaker>Bürger.</speaker>
+          <p>Ihr Gewaltigen der Erde, wie wirds euch dort ergehen, wo's noch einen Gewaltigern
+            giebt, als ihr. <stage>(Mit dem Büttel ab.)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Siebenter Auftritt.</head>
+        <sp who="#jaeger">
+          <speaker>Jäger.</speaker>
+          <p>Ein Krüger will aufwarten.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Kann vortreten. <stage>(Jäger ab)</stage> Wird wol einen von euch beyden Hunden <pb
+              n="11"/> ranzioniren wollen – Sollte euch billig alle gleich auf der Straße
+            todtschlagen lassen; brauchte mich nicht so zu ärgern. – Wäre ich nicht zu stolz, ein
+            einmal gegebenes Edikt zu widerrufen, litten nicht die Finanzen darunter – keiner sollte
+            mir am Leben bleiben.</p>
+        </sp>
+        <sp who="#krueger">
+          <speaker>Krüger.</speaker>
+          <p>Verzeihen! <stage>(indem er Phylax gewahr wird und ihn streichelt)</stage> Dacht ichs
+            doch, daß man dich weggefangen hatte.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Was will er?</p>
+        </sp>
+        <sp who="#krueger">
+          <speaker>Krüger.</speaker>
+          <p>Das ist ja mein Hund, den will ich lösen. Hab zwar nicht viel, der Verdienst ist gar
+            schlecht, kommt keine Seele – gehn lieber nach Freiken, wo sie eine Pfeife rauchen
+            können, als zu unser eins. Das Bier wird sauer im Keller und der Brauer will doch
+            bezahlt seyn; hat ja auch nichts zu thun. Gießt mans zuletzt auf die schöne Strasse und
+            sieht zu, wie es in dem wohlgepflasterten Rinnstein schäumend dahin fließt – aber das
+            will nicht sagen; – behilft man sich! – Hier sind 3 Mk. 14 ß. für meinen Philax.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Noch 3 Mk. 14 ß.</p>
+        </sp>
+        <sp who="#krueger">
+          <speaker>Krüger.</speaker>
+          <p>Wofür?</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Weil er raisonirt hat. Fluchs!</p>
+        </sp>
+        <sp who="#krueger">
+          <speaker>Krüger.</speaker>
+          <p>Herr, ich hab nicht so viel! Das ist alles <stage>(auf das Geld deutend)</stage> was
+            ich in der ganzen Woche gelößt habe.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Geht mich nicht an. Ein andermal haltet das Maul! Ihr müßt Respect brauchen.</p>
+        </sp>
+        <pb n="12"/>
+        <sp who="#krueger">
+          <speaker>Krüger.</speaker>
+          <stage>(sucht in seinen Taschen).</stage>
+        </sp>
+        <sp who="#philax">
+          <speaker>Philax.</speaker>
+          <stage>(springt auf)</stage>
+          <p>Nein, das geht zu weit! Lieber schlagt auch mich todt, als daß ihr meinen guten Herrn
+            plündert. Er kann mir ohnehin jetzt nicht satt geben, weil ihr durch euer verdammtes
+            Pfeifenmandat alle Gäste verscheuchtet. Zehn Jahre hab ich reichlich gehabt. Lieber todt
+            als hungern! Entweder, mein Herr zahlt nichts, oder ich bleibe hier.</p>
+        </sp>
+        <sp who="#krueger">
+          <speaker>Krüger.</speaker>
+          <p>Ums Himmelswillen, was ist das? Mein Hund kann reden? Herr ich will gern bezahlen, was
+            sie verlangen, und sollt ichs von zehn Juden aufnehmen; nur geben sie mir den Hund
+            wieder.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Daß er mir das Volk aufwiegelte! Daraus wird nichts! Er kann gehn, aber der Hund muß
+            sterben.</p>
+        </sp>
+        <sp who="#krueger">
+          <speaker>Krüger.</speaker>
+          <p>Und mein Geld?</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Ist richtig gezählt. Hüte er sich künftig für dergleichen ansteckende Redensarten,
+            sonst – kann er ein wenig in die Karre spatziren –</p>
+        </sp>
+        <sp who="#krueger">
+          <speaker>Krüger.</speaker>
+          <p>Sie mögens verantworten! <stage>(Er liebkoset seinen Hund, der ihm die Thränen ableckt,
+              und schleicht langsam ab.)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Achter Auftritt.</head>
+        <sp who="#jaeger">
+          <speaker>Jäger.</speaker>
+          <stage>(hält in der Scene einen Juden zurück, der sich mit Gewalt vordrängt)</stage>
+          <p>So warte doch Jude!</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Herr v. Albern.</speaker>
+          <p>Was hat er da?</p>
+        </sp>
+        <sp who="#jaeger">
+          <speaker>Jäger.</speaker>
+          <p>Der Jude <emph>Itzig</emph> kann nicht warten; <pb n="13"/> sein Schabbes geht an, und
+            ihm gehört der eine Hund.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Nun, nun, er darf dann kein Geld anfassen – Kann kommen. <stage>(Jäger ab.)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Neunter Auftritt.</head>
+        <sp who="#itzig">
+          <speaker>Itzig.</speaker>
+          <p>Harr! Mayn Hunt, mayn Hunt. mayn Wachtel! Ach, dos Kott arbarm, dos orme Thier! Hots
+            denn was su esse bekumme?</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Herr v. Albern.</speaker>
+          <p>Halt den Bart, Jude, und zahl 3 Mk. 14 ß.</p>
+        </sp>
+        <sp who="#itzig">
+          <speaker>Itzig.</speaker>
+          <p>Drai Mork vierzehn Schilling? O, als Kott lebt! dos is doch eppes su viel! Ist nischt
+            su verdiene baym Schacher! Kommt kai Handwerkspursch mear noch Halberna. All’s todt!
+            hobch doch kehandelt mit Zicharches; skaufes kainer, sbrauchts kainer. Wenn nicht wär
+            die Zolenlotterie, gingh derhaim, und mocht mich capores! – Harr! mayn Wachtel ist a
+            gutes Thier. Hundert Tholer solls mir koste. Wulls ach kerrn gebe, hobs laider nicht!
+            Willn zohlen vierzik Schilling – zwa und vierzik – Nu, was sogt der Harr?</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Daß du ein Narr bist. Hier wird nicht gehandelt. Und wenn du krumme Sprünge machst, laß
+            ich dich ins Loch werfen.</p>
+        </sp>
+        <sp who="#wachtel">
+          <speaker>Wachtel.</speaker>
+          <stage>(hebt sich von der Erde und spricht im heroischen Ton)</stage>
+          <p>Nicht ohne mich!</p>
+        </sp>
+        <sp who="#itzig">
+          <speaker>Itzig.</speaker>
+          <p>Gotts Wunder! mayn Wachtel schmuust!!</p>
+        </sp>
+        <sp who="#wachtel">
+          <speaker>Wachtel.</speaker>
+          <p>Zwey meiner Unglücksgefährten büßten ihre Treue mit dem Leben. Ich will nicht weniger
+              <pb n="14"/> seyn als sie. – Schlagt künftig immerhin die Hunde todt, aber schont eure
+            Nebenmenschen, schmiedet sie nicht in Fesseln, deren ungewohnte Last sie nicht zu tragen
+            vermögen. Seyd ordnungsliebende Vorbilder und ihr werdet getreue Nachfolger haben.
+            Vieles, was ihr bisher gethan habt, ist gut; aber ihr übertreibt so sehr, daß man euch
+            des Wahnsinns nicht mit Unrecht beschuldigt! Uns Hunde schlagt ihr todt oder fangt sie
+            ein, weil ihr euch vor unserm Bisse fürchtet, der euch toll macht; aber ihr selbst setzt
+            eurer Tollheit keine Grenzen. Der Große beherrscht despotisch seine Untergebenen und die
+            Untergebenen tyrannisiren sich muthwillig untereinander. Dazu gab euch die Natur, was
+            mir nur auf Augenblicke, um euch die Wahrheit zu sagen, verliehen ist, die beredte
+            Zunge, eure Mitmenschen durch Verläumdung heimtückisch zu schaden – um Ehre, Brodt und
+            Leben zu bringen. – Mein Herr wird fernerhin keinen Hund füttern können, da einer seiner
+            kleinen Erwerbzweige ganz aufgehört hat; kümmerlich wird er selbst leben müssen;
+            folglich soll er keine Strafe für mich zahlen, denn ich werde als treuer Hund zu sterben
+            wissen!</p>
+        </sp>
+        <sp who="#itzig">
+          <speaker>Itzig.</speaker>
+          <p>Gnode, Harr! für mayn Wachtel! Hier ist a Species und auch die zway Schilling. Och, wos
+            ist dos doch für ain capitoler Hunt!</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Das Geld hättest du doch bezahlen müssen, weil du dich mit Reden gegen mich vergangen.
+            Dein Hund muß sterben, so wahr ich <emph>ein ehrlicher Mann</emph> bin!</p>
+        </sp>
+        <sp who="#itzig">
+          <speaker>Itzig.</speaker>
+          <p>Nun, als Kott lebt! Mayn Kelt nimmt <pb n="15"/> der Harr und mayn Wachtel auch? Dos
+            ist krischtlich! O way keschrien! <stage>(ab.)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Zehnter Auftritt.</head>
+        <sp who="#jaeger">
+          <speaker>Jäger.</speaker>
+          <p>Ein Schlachter mit einem Bullenbeisser ist eingefangen. Beyde haben sich grob
+            aufgeführt; machen gewaltigen Lärmen und das Vieh raisonirt so gut als wir Menschen.
+            Bitte unterthänigst, sie uns vom Halse zu schaffen.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Vorgeführt! <stage>(Jäger ab).</stage> Will die Kerls, wie die Hunde, expediren; mir
+            Ruhe und Ansehn verschaffen, oder –</p>
+        </sp>
+        <sp who="#schlachter #packan">
+          <speaker>Schlachter u. Packan</speaker>
+          <stage>(treten auf. Ersterer geht einige Schritte vorwärts; letzterer setzt sich neben
+            seinem Herrn. Ein Häscher hält ihn am Stricke fest).</stage>
+        </sp>
+        <sp who="#schlachter">
+          <speaker>Schlachter.</speaker>
+          <p>Da hebn se my mynen Hund ingefangen, ich wolt em mit ufs Dorf nehmen by den
+            Kalbern.</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Und da ist er impertinent gewesen gegen meine Leute. Das kostet ihm 5 Thaler, und für
+            den Hund zahlt er 3 Mk. 14 ß.</p>
+        </sp>
+        <sp who="#schlachter">
+          <speaker>Schlachter.</speaker>
+          <p>Da mach ich my den Schinder uth; he muß weten, daß ich en Himberger Börger bin, de
+            laten sick so was nicht vertellen. Wy hebben by uns zu Huß ook Gerichtspersonen, die nah
+            Recht seht; aber, by Gott, so plücken sie de Lüde nich! Sine Kerls hebben mir oog de
+            Pipe weggenahmen, die ich in meiner Tasche hatte; ich mach my den Schinder druth, aber
+            es ist doch grob! Sollt my das zu Huß paßiren, ich schniede dem Kerl dee Ohren vom Kopf,
+            so schniede ich!</p>
+        </sp>
+        <pb n="16"/>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Er ist ein grober ungeschliffener Mensch. Weiß er, daß ich ihn ins Hundeloch stecken
+            lassen kann?</p>
+        </sp>
+        <sp who="#schlachter">
+          <speaker>Schlachter.</speaker>
+          <p>Da mach ich my den Schinder uth; aber hohl mich der Deewel, kam ich los, so schlag ich
+            dem Herrn de Knochen lahm. <stage>(indem er in die Tasche greift und 5 Species auf dem
+              Tisch wirft)</stage> Geld hef ich noch! Aber nu laß he mich gliek gahn. Sonst –</p>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <stage>(pfeift).</stage>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Eilfter Auftritt.</head>
+        <sp who="#jaeger">
+          <speaker>Jäger</speaker>
+          <stage>(nebst noch einigen Häschern treten auf).</stage>
+        </sp>
+        <sp who="#herr_von_albern">
+          <speaker>Hr. v. Albern.</speaker>
+          <p>Den Frevler acht Tage bey Wasser und Brodt! Seinen Hund hat Hannes zu expediren.</p>
+        </sp>
+        <sp who="#packan">
+          <speaker>Packan</speaker>
+          <stage>(lacht laut auf und wirft, als man seinen Herrn anfaßt, den Jäger zu Boden, beißt
+            dem einen Häscher die Nase, dem andern ein Ohr ab; beyde laufen in vollem Schreyen
+            davon.)</stage>
+          <p>Lange habt ihr Menschen und Hunde gehudelt, ohne bestraft zu werden; mir war es
+            vorbehalten, euch zu züchtigen. <stage>(nachdem er Herrn von Albern in die Haare
+              gefallen und ihn unter den Tisch geworfen, folgt er seinem Herrn, der zuvor seine 5
+              Species wieder eingestrichen, und ruft noch zur Thüre hinein:</stage></p>
+          <lg>
+            <l>Ihr Bürger von Halberna, seht</l>
+            <l>Unterm Tisch liegt eure Majestät!</l>
+          </lg>
+        </sp>
+        <stage>Der Vorhang fällt.</stage>
+      </div>
+    </body>
+  </text>
+</TEI>
