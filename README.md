@@ -57,7 +57,7 @@ To take a first look at the distribution of the number of speakers per play over
 ```
 library(data.table)
 library(ggplot2)
-gerdracor <- fread("https://dracor.org/api/corpora/ger/metadata.csv")
+gerdracor <- fread("https://dracor.org/api/corpora/ger/metadata/csv")
 ggplot(gerdracor[], aes(x = yearNormalized, y = numOfSpeakers)) + geom_point()
 ```
 
@@ -72,4 +72,4 @@ Here is a barplot showing the number of plays per decade:
 ## A Bit of History
 Until we rebuilt our working corpus under its new name GerDraCor, we've been working with an [intermediary format](https://github.com/dlina/project/tree/master/data/zwischenformat) to conduct [our research](https://dlina.github.io/talks/). This format only held structural information, not the texts themselves. Back then, our research group called itself DLINA (digitally-enabled literary network analysis). Since our focus broadened, we stopped using this name. Our future endeavours will sail under the **Programmable Corpora** flag.
 
-(README last updated on January 5, 2021.)
+(README last updated on December 28, 2021.)
