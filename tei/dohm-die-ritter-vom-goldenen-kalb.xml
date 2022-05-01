@@ -1,0 +1,2214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die Ritter vom Goldenen Kalb</title>
+        <title type="sub">Lustspiel in 1 Akt</title>
+        <author>
+          <persName>
+            <forename>Hedwig</forename>
+            <surname>Dohm</surname>
+          </persName>
+          <idno type="wikidata">Q71491</idno>
+          <idno type="pnd">11852643X</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000567</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q111765604</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Projekt Gutenberg-DE</name>
+          <idno type="URL">https://www.projekt-gutenberg.org/dohm/goldkalb/goldkalb.html</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <title>Eduard Bloch's Theatercorrespondenz Nr. 126. Berlin: Lassar 1879.</title>
+            <date type="print" when="1879"/>
+            <date type="premiere" when="1879"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="herbert" sex="MALE">
+            <persName>Herbert von Buch</persName>
+          </person>
+          <person xml:id="victor" sex="MALE">
+            <persName>Victor Taschenberg</persName>
+          </person>
+          <person xml:id="xaver" sex="MALE">
+            <persName>Graf Xaver Nicolowitsch</persName>
+          </person>
+          <person xml:id="hildegard" sex="FEMALE">
+            <persName>Hildegard von Eichstädt</persName>
+          </person>
+          <person xml:id="werlitz" sex="MALE">
+            <persName>Baron Friedrich von Werlitz</persName>
+          </person>
+          <person xml:id="ilse" sex="FEMALE">
+            <persName>Ilse Müller</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="associated_with" active="#ilse" passive="#hildegard"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2022-05-01">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Hedwig Dohm</head>
+        <head>Die Ritter vom Goldenen Kalb</head>
+        <head>Lustspiel in 1 Akt</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen:</head>
+          <castItem><role>Hildegard von Eichstädt.</role></castItem>
+          <castItem><role>Ilse Müller,</role>
+            <roleDesc>ihre Gesellschafterin.</roleDesc></castItem>
+          <castItem><role>Herbert von Buch,</role>
+            <roleDesc>Gutsbesitzer.</roleDesc></castItem>
+          <castItem><role>Baron Friedrich von Werlitz,</role>
+            <roleDesc>Diplomat.</roleDesc></castItem>
+          <castItem><role>Victor Taschenberg,</role>
+            <roleDesc>Referendar.</roleDesc></castItem>
+          <castItem><role>Graf Xaver Nicolowitsch.</role></castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Ort der Handlung: Wiesbaden</p>
+        <p>Decoration: Eleganter Salon im Kurhause. Eine Thür nach dem Garten zu steht offen. Bücher
+          und Zeitungen liegen auf den Tischen herum. Auf einem der Tische steht ein Vase mit
+          Blumen</p>
+      </set>
+    </front>
+    <body>
+      <div type="scene">
+        <head>1. Auftritt</head>
+        <stage>Herbert von Buch (sitzt rechts auf einem Lehnstuhl und liest Zeitungen. Die Thür
+          eines Nebenzimmers links öffnet sich und Victor Taschenberg mit einem Rosenbouquet in der
+          Hand tritt ein. Er sieht sich nach allen Seiten hin um.)</stage>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Sie suchen die Baronin?</p>
+        </sp>
+        <sp who="#victor">
+          <speaker>Victor</speaker>
+          <p>Ja. Warum geht die Sonne heut so spät auf?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Frühstückspartie nach der Platte, man wird vor dem Diner nicht zurücksein. Stellen Sie
+            nur die Rosen da ins Wasser, dann bleiben sie frisch.</p>
+        </sp>
+        <sp who="#victor">
+          <speaker>Victor</speaker>
+          <p>Meinen Sie? Gut, ich werde sie in's Wasser stellen. Sagt doch schon der Dichter: "So
+            stellt sie in ein Wasserglas." Ich bitte Sie aber, nicht daran zu riechen, nicht die
+            Rosen allein, auch ihr Duft ist meiner Göttin geweiht. <stage>Ab durch die
+              Mitte.</stage></p>
+        </sp>
+        <pb n="6"/>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <stage>nach der Uhr sehend</stage>
+          <p>Eine Verspätung um eine halbe Stunde. <stage>Geht an die Gartentür und sieht
+              hinaus.</stage> Nichts zu sehen. Ich hasse Unpünktlichkeit.</p>
+        </sp>
+        <stage>Graf Xaver erscheint auf der Schwelle des Nebenzimmers rechts, ebenfalls mit einem
+          Bouquet.</stage>
+      </div>
+      <div type="scene">
+        <head>2. Auftritt</head>
+        <stage>Herbert. Xaver.</stage>
+        <sp who="#xaver">
+          <speaker>Xaver</speaker>
+          <stage>(sich umsehend)</stage>
+          <p>Keine Baroneß? Wo ist Baroneß? Wo in Teufel seinen Namen steckt Baroneß?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Nimmt ihr Frühstück heut in der Försterei ein, kaum eine Stunde Wegs von hier.</p>
+        </sp>
+        <sp who="#xaver">
+          <speaker>Xaver</speaker>
+          <p>Kaum? Danke. Diabolisches Einfall. Hitze, Staub – transpiriren gern? ich nicht.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Ist nichts zu machen.</p>
+        </sp>
+        <sp who="#xaver">
+          <speaker>Xaver</speaker>
+          <p>Ist zu machen. Bouquet kosten mich dreißig Frank. Was ist Kennzeichen von die wahre
+            Liebe? – Kostspieligkeit von die Geschenke. Aber Zeiten sind theuer. Werde dreißig Frank
+            bei polnischem Engel, bei Fräulein Wanda anlegen. – Wollen Billard mit mir spielen,
+            Sie?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Ich danke. <stage>Xaver nach rechts ab.</stage> Ein recht reinliches Geschäft treibe
+            ich hier.</p>
+        </sp>
+        <stage>Hildegard tritt durch die Gartenthüre ein, sie hält ein Körbchen mit einer Stickerei
+          in der Hand.</stage>
+      </div>
+      <pb n="7"/>
+      <div type="scene">
+        <head>3. Auftritt</head>
+        <stage>Hildegard. Herbert.</stage>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>kurz und hochfahrend.</stage>
+          <p>Guten Morgen. Niemand hier?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <stage>ihre Begrüßung ebenso erwidernd.</stage>
+          <p>Guten Morgen. Niemand hier.</p>
+        </sp>
+        <stage>Er liest weiter, Hildegard nimmt ihre Stickerei vor. Kurze Pause.</stage>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Graf Xaver nicht nach mir gefragt? <stage>Herbert giebt sich den Anschein, die Frage
+              nicht zu hören, sie wiederholt sie lauter.</stage> Ich frage, ob Graf Xaver hier
+            war?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <stage>kurz</stage>
+          <p>Nein. <stage>Kurze Pause.</stage></p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Ob die Partie heut zu Stande kommen wird?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Zwischen wem?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Nach der Platte meine ich.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Kann sein, kann aber auch nicht sein.</p>
+        </sp>
+        <stage>Hildegard geht an einen anderen Tisch; sie verrät Verdruß und Ungeduld in ihren
+          Bewegungen.</stage>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Unausstehlich.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Was?</p>
+        </sp>
+        <pb n="8"/>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Wer – wollen Sie wohl fragen.</p>
+        </sp>
+        <stage>Xaver tritt wieder von rechts ein, das Bouquet noch in der Hand haltend.</stage>
+      </div>
+      <div type="scene">
+        <head>4. Auftritt</head>
+        <stage>Vorige. Xaver.</stage>
+        <sp who="#xaver">
+          <speaker>Xaver</speaker>
+          <stage>einen Augenblick in der Thür stehenbleibend</stage>
+          <p>Habe mich nicht getäuscht. Eben will Kugel von Billard einen Stoß geben, da fällt mein
+            Blick auf Garten und erblicke wen? Engel von Baroneß. <stage>Zu Herbert.</stage> Warum
+            sagen Sie denn, daß Baroneß Frühstück in der Försterei einnehmen?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Wie, Xaver Nicolowitsch, Sie stehen jetzt schon am hellen Vormittag auf? Es giebt keine
+            Cavaliere mehr. Zu welcher Tageszeit ist man jetzt noch, nach diesen neuen Arrangements,
+            vor Ihnen sicher?</p>
+        </sp>
+        <sp who="#xaver">
+          <speaker>Xaver</speaker>
+          <p>Immer Scherz auf Lippe. Diese Blumen wollen zu Ihren Füßen sterben wie ich – wenn nicht
+            im Herzen Ihriges wohnen kann.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Mein Herz ist kein Asyl für obdachlose Gefühle.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Wenn Sie sibirische Gegenden lieben, hätten Sie es in Rußland bequemer gehabt.</p>
+        </sp>
+        <sp who="#xaver">
+          <speaker>Xaver</speaker>
+          <p>Immer Scherz auf Lippe. Wenn so grausam bleiben, mache Striche unter Leben, puste aus
+            Lebenslicht.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Los weil ich Strich durch Rechnung mache – das wäre zu hart. Apropos, sie sprachen von
+            der Försterei. Ich habe gestern <pb n="9"/> dort köstliche Erdbeeren gegessen. Ich will
+            mehr davon haben. Holen Sie mir, Graf Xaver, ein Körbchen voll dieser Erdbeeren.</p>
+        </sp>
+        <sp who="#xaver">
+          <speaker>Xaver</speaker>
+          <p>Sowie Sonne hinter Horizont ist.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Wie, Sie sind noch hier? und ich habe einen Wunsch ausgesprochen? Was soll das
+            heißen?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Holen Sie das Körbchen mit Erdbeeren oder Sie erhalten einen Korb ohne Erdbeeren.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>zu Herbert.</stage>
+          <p>Mischen Sie sich nicht immer in die interessantesten Unterhaltungen.</p>
+        </sp>
+        <sp who="#xaver">
+          <speaker>Xaver</speaker>
+          <p>Wirklich – ich muß?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Sie müssen. Ich gebe Ihnen drei Stunden Zeit. Vor Ablauf dieser drei Stunden brauche
+            ich die Erdbeeren nicht, will sie nicht. Adieu, Xaver Nicolowitsch,</p>
+        </sp>
+        <stage>Xaver mit verzweifelter Miene ab.</stage>
+      </div>
+      <div type="scene">
+        <head>5. Auftritt</head>
+        <stage>Hildegard. Herbert.</stage>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Was hat Ihnen dieses hirnlose Hampelmännchen gethan, daß Sie es zum Sonnenstich
+            verurteilen?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Es macht mir Spaß.</p>
+        </sp>
+        <pb n="10"/>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Ach so.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Meine Gesellschafterin ist heut auf den unglücklichen Einfall gekommen, eine
+            Frühpromenade zu machen. Es ist zu heiß, um draußen spaziren zu gehen. Unterhalten Sie
+            mich. Die anspruchsloseste Unterhaltung ist immer noch besser als Langeweile, und ich
+            langweile mich hier – zum Sterben. <stage>Sie gähnt.</stage></p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <stage>Gähnt ebenfalls.</stage>
+          <p>Ach so – ich auch.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Wie können Sie sich erlauben, in Gegenwart einer Dame zu gähnen?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Verzeihen Sie. Wenn Sie sich hier langweilen, warum sind Sie nach Wiesbaden
+            gekommen?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Ich habe es Ihnen ja schon gesagt – um mich zu verheirathen.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Und anderswo hatten Sie keine Gelegenheit dazu?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Nein, denn es ist mir nicht gelungen in zehn Jahren – ja – in zehn Jahren – – warum
+            wundern Sie sich nicht?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Kein Grund.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Ich bin 25 Jahre alt. Sie wundern sich noch nicht?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Doch – ein wenig. Ich hörte aus glaubwürdiger Quelle, daß Sie bereits am Rande des
+            siebenundzwanzigsten –</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>ihn unterbrechend</stage>
+          <p>Als ob es überhaupt glaubwürdige Quellen gäbe.</p>
+        </sp>
+        <pb n="11"/>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Also, Sie wollten sagen, in zehn Jahren sei es Ihnen nicht gelungen –</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Nicht gelungen, unter dem männlichen Personal der Schöpfung ein einziges Exemplar
+            aufzutreiben, das sich nicht zu meinem Sklaven geschworen hätte, sobald es in Erfahrung
+            brachte, daß ich ein reiches, unabhängiges, elternloses Mädchen sei. Da faßte ich eines
+            Tages den kühnen Entschluß, allein mit meiner Gesellschafterin in die weite Welt zu
+            wandern, um –</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Um –</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Um einen Gatten zu suchen.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Und was sagte Ihr trefflicher Onkel dazu, den Sie auf Ihr Gut gelockt unter dem
+            Versprechen, ihm Tochter zu sein?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Er sträubte sich anfangs mit Händen und Füßen gegen meine romantische Brautfahrt.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Und dann?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Fügte er sich.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Und dann?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Bestimmte er mich, zunächst in sein Lieblingsbad Wiesbaden zu gehen.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Und dann empfahl er Sie an mich –</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Den er seinen jungen Freund nannte. Er meinte, daß Sie mir durch Ihre
+            gesellschaftlichen Verbindungen jede wünschenswerthe Bekanntschaft verschaffen
+            könnten.</p>
+        </sp>
+        <pb n="12"/>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Und er theilte Ihnen zugleich mit, daß Ihr Herz dabei keine Gefahr laufe, da das
+            meinige bereits in Entreprise gegeben sei.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Der gute alte Onkel. Ich nehme es ihm nicht übel. Er hält alle Männer für gefährlich.
+            Sogar die.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Die –</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Unliebenswürdigen.</p>
+        </sp>
+        <p>HerbertIch danke.</p>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Er pries mir Wiesbaden als einen Ort internationaler Menschenausstellung, wo mir die
+            beiden Hemisphären hinreichendes Material für meine Wahlumtriebe – sein Ausdruck –
+            liefern würde.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Sie sind jetzt seit sechs Wochen hier, warum haben Sie noch nicht gewählt?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Warum nicht? Wen soll ich denn heirathen? Etwa den süddeutschen Diplomaten, der in den
+            Mußestunden dichtet und sich für eine höchst glückliche Vereinigung von Talleyrand und
+            Göthe hält? oder den gräflichen Husaren, der sich jeden Tag von Neuem in seine Uniform
+            verleibt, und den Schnitt seiner Nägel und seiner Haare für universelle Angelegenheiten
+            hält? oder den polnischen Schwärmer, der stets Ränder von Abgründen und die Spitzen der
+            steilsten Berge für die geeignetsten Lokalitäten hält, um seinen Liebesgefühlen freien
+            Lauf zu lassen, damit er bei seinen Selbstmordsdrohungen auch gleich den scenischen
+            Apparat bei der Hand habe? oder den nordischen, an Größenwahn leidenden Dichter, der in
+            der Lage ist, das ganze Universum für eine miserable Einrichtung halten zu müssen, da
+              <pb n="13"/> er nicht der Mittelpunkt dieses Etablissements ist? Sie selbst sind außer
+            Frage. Bleibt höchstens noch der Baron Werlitz, und aufrichtig gesagt, der gefällt
+            mir.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>So?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Er interessiert mich sehr.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>So?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Haben Sie etwas dagegen?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Nicht das Mindeste</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Das ist mir lieb. Indessen ich beherzige das Wort des Dichters: "es prüfe, wer sich
+            ewig bindet." Ich will noch ein wenig prüfen. Was sagt die Badegesellschaft über
+            ihn?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Nur Gutes.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Wie? hat diese Gesellschaft einen Tugendanfall, daß sie gut von ihren Nebenmenschen
+            spricht?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Nicht von allen spricht sie gut.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Sie wollen damit andeuten, daß ich zu letzterer Kategorie gehöre.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Sie haben es errathen.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Was sagt man über mich?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Ich würde, wenn ich spräche, Ihren Zorn auf mich laden.</p>
+        </sp>
+        <pb n="14"/>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Sie sollen sprechen, ich will es.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Gut. Die Badegesellschaft sagt: <stage>etwas schnell.</stage> Sie wären launenhaft,
+            hochfahrend, unduldsam, spottsüchtig, pretentiös, egoistisch, grausam, herzlos,
+            unverständig, faul, herrschsüchtig, theilnamlos, engherzig, lieblos, neidisch, boshaft,
+            schadenfroh und – <stage>hält ein.</stage></p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Und?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Geldstolz – – sagt die Badegesellschaft.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Wie? Geldstolz? Mir dichtet man diese Eigenschaft absurder Parvenüs an? Alles andere
+            möchte hingehen – aber geldstolz – ich geldstolz! die ich das Geld verachte? Ja, ich
+            hasse es. Wie motiviert man diese unverschämte Behauptung?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Lassen sie mich schweigen.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Sie sollen reden.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Ich gehorche. Geldstolz pflegt zu sein, wem bei einer Rundreise in seiner inneren Welt
+            nichts aufstößt, auf das stolz zu sein sich verlohnte –</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>ihn unterbrechend.</stage>
+          <p>Ich habe Sie nicht um Ihre Meinung gefragt, ich will wissen, warum die Anderen mich
+            geldstolz nennen.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Gut. Sie hätten sich einen Thron gebaut, sagt die Badegesellschaft, aus achtkarätigem
+            Golde, und hätten darauf Platz genommen, angethan mit einer souveränen Robe aus Paris,
+            und unter dem Thron stünde in Perlenschrift –die Perlen <pb n="15"/> wären echt – "Ihr
+            sollt keine anderen Götter haben neben mir." Ergo: Sie treiben Selbstvergötterung auf
+            Conto Ihres Geldes – sagt die Badegesellschaft.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>heftig erregt.</stage>
+          <p>Weiter</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Sie haben als Kind viele kostbare Puppen in den Winkel geworfen, zerbrochen,
+            gemißhandelt, und nun, da Sie – lange erwachsen sind, spielen Sie mit lebendigen Puppen
+            und behandeln sie wie Ihre Puppen aus der Kinderzeit. Sind sie zerbrochen, abgenutzt,
+            Sie können sich ja neue kaufen. Mitten in der schönen Civilisation treiben Sie
+            Sklavenhandel. Sie malträtiren Ihre Nebenmenschen – auf Conto ihres Geldes – sagt die
+            Badegesellschaft. Wären Sie arm, Sie würden gerade so höflich, liebenswürdig und
+            geistreich sein wie unsereins. Wären Sie arm, Sie würden selbst einen Russen nicht
+            braten lassen, weil sie frische Erdbeeren essen wollen. Wären Sie arm, Sie hätten sich
+            längst rettungslos in mich verliebt.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>ironisch.</stage>
+          <p>Sagt die Badegesellschaft?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Sage ich diesmal. Auf Conto Ihres Geldes warten Sie auf einen Unsterblichen, einen
+            Menschen über Lebensgröße, einen Napoleon der Liebe. Armes junges Mädchen, in Ihrem
+            Arnheim haben Sie zugleich mit Ihrem Geld Ihr Herz verschlossen. Wer wird das Schloß
+            sprengen? Sicher kein ehrlicher Mann.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Kaum kann ich mich mäßigen, so empörend ist diese Ungerechtigkeit, so unerhört. Von
+            Allem, was sie gesagt haben, ist nur wahr, daß ich ein Dutzend Männer – nein, nicht
+            Männer, sondern Narren, Gecken, und feile Creaturen, schlecht behandle, nein, nicht
+            schlecht, sondern wie sie es verdienen. Der Geldstolz, den Sie mir vorwerfen, ist nichts
+            als ein Schleier, hinter dem ich meine tiefe Erniedrigung verberge.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Von Erniedrigung sprechen Sie, Sie, die man anbetet?</p>
+        </sp>
+        <pb n="16"/>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Anbetet – ja – als goldenes Kalb.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Kalb? Das ist hart, sagen wir Lamm.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Hildegard von Eichstädt ist nichts als ein Aushängeschild, höchstens eine Wünschelrute
+            für das "Sesam öffne dich" dieser Ritter vom goldenen Kalb. Die Röthe der Scham steigt
+            mir in's Gesicht, wenn ich an die schamvolle Rolle denke, die zu spielen ich verdammt
+            bin, die Rolle einer Geld-Loreley, die nicht mit dem Klange ihrer Stimme, sondern ihres
+            Goldes die sehnsuchtsvollen Schiffer lockt. Heut erklärt mir einer, daß er sterben muß,
+            wenn ich ihn nicht erhöre. Ich weise ihn ab, aber unter Gewissensbissen, mein Herz ist
+            krank vor Rührung. Acht Tage später lacht er mir am Arm einer Braut, an die er sich als
+            an die Meistbietende losgeschlagen hat, in's Gesicht. Ich tanze heut Abend einen Galopp
+            mit einem Cavalier, den ich zum ersten Mal sehe. Ich bin in schlechtester Laune, ich
+            mißhandle ihn, ich bin dumm, affectiert, boshaft. Am nächsten Morgen erhalte ich einen
+            Brief von ihm: der Zauber meines Verstandes und meines Wesens habe ihn hinweggerissen,
+            und er könne nicht umhin, mir Herz und Hand anzubieten. Tadeln Sie mich, verhöhnen Sie
+            mich, aber glauben Sie mir, ich habe Stunden, wo ich mit der ärmsten Näherin tauschen
+            möchte, wo eine wilde Sehnsucht mich ergreift nach einem wahren Menschen, einem wahren
+            Gefühl, wo ich dem Ersten, Besten um den Hals fallen möchte und ihm in die Seele rufen:
+            Liebe mich! liebe mich! Es war eine <stage>die Hand auf's Herz legend.</stage> Und noch
+            glühen Flammen hier. Ein Strahl des Glücks, der Liebe und –
+            <stage>einhaltend.</stage></p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Hildegard!</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Wie komme ich nur dazu, Ihnen, gerade Ihnen mein Herz zu öffnen? Sie sind wie die
+            Übrigen, alle Männer sind gleich, und ich habe ein Recht, Allen zu mißtrauen.</p>
+        </sp>
+        <pb n="17"/>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Mißtrauen ist die Weisheit der Thoren. Indessen, Sie haben vielleicht Recht. Es ist
+            wahr, Ihre Anbeter sind alle nicht viel werth. Es ist auch undenkbar, daß ein Mann von
+            Ehre und Gesinnung sich jemals um Ihre Gunst bemühen sollte.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Wie?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Ihnen fehlt der Instinkt des Herzens, Ihnen fehlt die Intelligenz, die Spreu vom Weizen
+            zu sondern. Sie behandeln Alle, die sich Ihnen nahen, wie Beutelschneider. Es ist aber
+            nicht Jedermanns Sache, sich als Beutelschneider behandeln zu lassen, und darum setzt
+            sich Ihr Liebeshof aus Schwindlern, Abenteurern und Spekulanten zusammen. Weil ein paar
+            Dutzend Motten, von dem Glanz Ihres Goldes angezogen, Sie umflattern, wären Sie im
+            Stande, selbst den Adler, der die Sonne umkreist, für eine Motte zu halten.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>nachdenklich.</stage>
+          <p>Und kein Mann von Ehre, sagen Sie, könne mich lieben?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Lieben? vielleicht – um Sie werben, Sie heirathen – nein. Und wenn Sie schön wären wie
+            Venus – <stage>Hildegard hält das Taschentuch vor die Augen</stage> regen Sie sich nicht
+            auf, Sie sind es nicht – und wenn ich Sie liebte – Sie wissen, ich liebe Sie nicht – nie
+            würden meine Lippen zu einem Geständnis sich öffnen, ich würde mein Geheimnis mit in's
+            Grab nehmen. Eine Frau wie Sie, hochmüthig und mißtrauisch, müßte mir zuerst um den Hals
+            fallen und mir sagen, daß sie mich maßlos liebt – – ich würde dann sehen, was sich thun
+            läßt.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Ihr Glück, daß Sie mich nicht lieben. Ah, da kommt ja unser guter Baron Werlitz.</p>
+        </sp>
+        <stage>Man sieht Werlitz durch den Garten kommen.</stage>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Werlitz? richtig. Ein schöner Mann, nicht wahr? Jetzt hoffe ich, bin ich der Pflicht
+            Sie zu unterhalten, ledig.</p>
+        </sp>
+        <pb n="18"/>
+        <stage>Hildegard läßt, wie unabsichtlich, eine Schleife fallen, die an ihrem Kleid befestigt
+          war. Herbert nimmt sie schnell auf und verbirgt sie unter seinem Rock. Als Hildegard sich
+          umsieht, giebt er sich den Anschein der Gleichgültigkeit und geht, seine Zeitung lesend,
+          in den Hintergrund, wo er während der folgenden Scene sitzen bleibt.</stage>
+      </div>
+      <div type="scene">
+        <head>6. Auftritt</head>
+        <stage>Vorige. Werlitz</stage>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Sie kommen heut spät, Herr von Werlitz?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Haben Sie Dank für dieses Wort, meine aller-allergnädigste Baroneß.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Ich bin heut wirklich gnädig. Sie treffen mich in allerbester Laune. Wundern Sie sich
+            nur – ja, ich bin in mich gegangen, ich will auf meine alten Tage noch liebenswürdig
+            werden; und von heut an glaube ich jedes Wort, das man zu mir spricht. Ich glaube, daß
+            alle Männer gut, einfach und redlich sind und Sie, Baron, zumeist. Nun belohnen sie aber
+            auch meine Tugend und erzählen Sie mir etwas Hübsches – Neues.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Ich kann Ihnen heut mit einer Verlobung aufwarten.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Wer mit wem?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Graf Hochstedt mit Fräulein – Wanzke.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Wie, Graf Hochstedt sagen Sie und Fräulein – Fräulein –</p>
+        </sp>
+        <pb n="19"/>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Wanzke – Pardon, ich kann nichts dafür.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Wie ging das zu?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Das ging so zu: Der Graf hatte neuerdings nichts im Besitz als eine kolossale,
+            unbezahlte Hotelrechnung. Seine Lage wurde peinlich. Da entschließt er sich kurz und
+            bittet schriftlich einen Heiratsvermittler in Berlin – unter Beifügung der Kurliste von
+            Wiesbaden – um seinen Rath. Die Antwort des Biedermanns macht ihn discret mit der
+            Thatsache bekannt, daß seit einigen Tagen Fräulein Wanzke mit ihrem Vater, der zugleich
+            Armee-Lieferant ist, in unseren Mauern weilt. Am Abend ist Ball, und während sechs
+            Stunden liegt der Graf – die Schulden drücken ihn zu Boden – zu den Füßen oder vielmehr
+            vor der Nase von Fräulein Wanzke und schwört auf Ehre, daß seine Seele in Brand stehe
+            und bittet sie um den kleinen Feuerwehrdienst der Löschung dieses Seelenbrandes. Statt
+            dessen fängt die Jungfrau sofort selber Feuer und soll noch an demselben Abend ihrem
+            Vater rund heraus erklärt haben: dieser oder keiner. Zur Abschließung des Geschäfts geht
+            der Graf am nächsten Vormittag zum Vater. Hochstedt, Sie wissen, er ist
+            Kavallerie-Offizier, fordert eine jährliche Rente von 50,000 Mark. Der brave
+            Soldatenernährer fällt auf den Rücken vor Schreck. Sein anderer Schwiegersohn – stammelt
+            er am Rande des Schlagflusses – sei auch Offizier und ein Herr von und habe sich mit
+            20,000 Mark abfinden lassen. Wie der edle Graf jetzt aufbrauste und ihm den Unterschied
+            zwischen einem Infantrie- und Kavallerie-Offizier klar machte, das soll großartig
+            gewesen sein. Er bezeichnete es als ein ganz richtiges Verhältnis, daß er 50,000 haben
+            müsse, wenn der Infantrist mit 20,000 auskäme, indem er den alten Herrn auf den
+            Preisunterschied von einem Paar Lackstiefeln und einem Paar Reitpferden aufmerksam
+            machte. Man einigte sich schließlich auf 40,000 Mark jährlich – exclusive die
+            Schuldenzahlung, und Fräulein – (Er Schluckt die erste Silbe herunter.) –zke sinkt an
+            die Kavallerie-Uniform ihres Grafen. Das ist die wahrheitsgetreue Geschichte dieser
+            Verlobung.</p>
+        </sp>
+        <pb n="20"/>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Empörend! abscheulich!</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Ich stimme in Ihren Ruf ein: abscheulich, empörend! Es ist mir unfaßlich, wie ein Mann
+            – er müßte denn bis über die Ohren in Schulden stecken – sich lieblos ins Joch der Ehe
+            schmiegen kann.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Sie würden also niemals ein reiches Mädchen heirathen?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Da sind Sie im Irrthum, gnädigste Baronin. Die reichen Mädchen haben mir nichts zu
+            Leide gethan, warum sollte ich sie vor den Kopf stoßen? Im Gegentheil, ich würde lieber
+            eine reiche, als eine arme Frau heirathen.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Sie sind aufrichtig, mein Herr, fast zu aufrichtig.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Mein Gott, es ist doch keine Tugend, ein armes Mädchen zu heirathen. Das kann jeder.
+            Auch ich, wenn ich mich in ein armes Mädchen verliebte, ich würde mich entschließen,
+            standesamtlich mit ihr vorzugehn. Aber wie gesagt, ich würde mich auch entschließen,
+            einem reichen Mädchen meine Hand zu geben.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Sie gestehen also, daß Sie eigennützig sind?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Keineswegs. Ich für meine Person bin ein halber Diogenes. Etwas Sonnenschein und ein
+            Faß –</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <stage>ihn unterbrechend.</stage>
+          <p>Rüdesheimer</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Einzig und allein um der Frau willen, die ich liebe, in ihrem Interesse thäte es mir
+            leid, wenn sie mittellos wäre. <pb n="21"/> Wen schmerzte es nicht, einer geliebten Frau
+            Entbehrungen zuzumuthen! Denken sie, theuerste Baronin, es könnte ein Tag kommen, wo ich
+            meiner Gattin keine Equipage zur Verfügung stellen könnte, und sie müßte in eine
+            Droschke steigen oder auf einer Badereise in einem Hotel zweiten Ranges logiren, oder
+            wenn sie mit mir ausreiten wollte, einen Miethsgaul besteigen. Denken Sie sich, Baronin,
+            Sie säßen auf einem Mietsgaul.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Oder denken Sie sich, Sie säßen auf gar keinem Gaul.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>zu Herbert.</stage>
+          <p>Müssen Sie immer dreinreden? <stage>zu Hildegard.</stage> Ich weiß im Voraus, für eine
+            Frau, die ich liebte, würde ich mich in Schulden stürzen, ich würde mich total für sie
+            ruiniren, was immerhin unangenehme Folgen für meine Carriere nach sich ziehen dürfte.
+            Darum wünsche ich, daß sie Geld habe – für sich, nicht für mich.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Und wenn man dennoch an Ihrer uneigennützigen Gesinnung zu zweifeln sich erlaubte? Man
+            hat Beispiele von Menschen, bei denen Wort und Gesinnung sich nicht decken.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Gnädigste Baronin, wo denken Sie hin? Ich könnte nur eine Frau lieben, die zugleich
+            schön und klug ist. Und eine kluge Frau sollte nicht wissen, daß sie schön ist, sollte
+            nicht wissen, daß sie mit dem Zauber ihrer Erscheinung, dem Glanz ihres Verstandes ein
+            einfaches Männerherz wie das meine so bestricken kann, bestricken muß, daß er ihr
+            Gefangener ist auf Leben und Tod? Männer, die solche Frauen lieben, Frauen, wie Sie
+            z.B., für die giebt es nur eine Gefahr.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Welche?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Daß diese Frauen kein Herz haben.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Frauen ohne Herz – ein guter Titel für eine Novelle. Im Leben glaube ich nicht an
+            Frauen ohne Herz.</p>
+        </sp>
+        <pb n="22"/>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>tritt näher zu ihr heran und spricht halblaut, um von Herbert nicht gehört zu
+            werden.</stage>
+          <p>So beweisen Sie, daß Sie Herz haben, schönste und klügste der Frauen, und lächeln Sie
+            nicht, wenn ein anderes Herz, das sich nicht mehr bezwingen kann, sein Geheimniß verräth
+            – und lassen Sie den Unglückseligen nicht glauben, daß er sich in eine Statue verleibt
+            hat. <stage>Herbert ist, ohne daß es bemerkt worden ist, in die Nähe der Sprechenden
+              gerückt</stage></p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Man hat Beispiele von Statuen, die lebendig wurden, wenn der Liebende nur das
+            Zauberwort wußte.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Pygmalion und Galathea, Zauberposse in einem Akt. Wann findet die Aufführung statt?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>steht ärgerlich auf.</stage>
+          <p>Ich will meiner Gesellschafterin entgegen gehen. Ich erlaube Ihnen, Baron Werlitz, mich
+            später in meiner Lieblingslaube – die schattige Epheulaube, Sie kennen sie –
+            aufzusuchen. Die Luft ist dumpf hier in diesem Salon und dann – er ist für alle Welt,
+            (ab.)</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>7. Auftritt</head>
+        <stage>Herbert. Werlitz.</stage>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>Hildegard nachsehend.</stage>
+          <p>Sie ist wirklich reizend.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Haben Sie Aussichten?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Die allerbesten, wenn ich mich auf Frauen verstehe.</p>
+        </sp>
+        <pb n="23"/>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Lieben Sie Fräulein von Eichstädt? Verzeihen Sie die indiscrete Frage, ein besonderes
+            Interesse für Sie knüpft sich daran.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Natürlich liebe ich sie.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Ich meine, mit einer – wirklichen Liebe?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Ah, Sie meinen, mit einer sentimentalen Liebe, die langhaarig und altfränkisch, aus
+            tiefliegenden Gefühlen stille Wonnen schöpft und sich von Hintergrund einer
+            Mondscheinlandschaft abhebt? Die über Seufzer, Thränen und schlaflose Nächte verfügt,
+            und im Wappen ein gebrochenes Herz trägt mit der Devise: Dich oder keine. Nein, an
+            dieser Krankheit abnormer Seelenzellen habe ich nie gelitten. Das Zeitalter Darwins hat
+            uns aufgeklärt. Diese perfide Thorheit – um nicht zu sagen Liebe – erscheint mir und
+            allen denen, die ihre Früchte gern vom Baum des Lebens pflücken, höchstens noch zuweilen
+            wie eine Fata Morgana, die einem längst verlassene Herzensgegenden vor die Sinne zaubert
+            – auf einen Moment.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Sie lieben also Fräulein von Eichstädt nicht?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Sie interpretiren falsch. Fräulein von Eichstädt gefällt mir außerordentlich. Sie würde
+            mir ebenso gut gefallen, wenn sie gar kein Vermögen hätte, aber ich würde sie in diesem
+            beklagenswerten Fall nicht heiraten.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <stage>im Spott</stage>
+          <p>Ob Ihre Gesinnung wohl ganz frei von Egoismus ist?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Durchaus. Es giebt nicht allzu viel Menschen, die so uneigennützig denken wie ich. Die
+            meisten jungen Leute in meiner Lage heirathen, was ihnen in den Weg läuft, wenn es <pb
+              n="24"/> seine Schulden bezahlt. Ich würde – wenigstens nach Präcedenzfällen in meinem
+            Gemüthsleben zu schließen – dessen nicht fähig sein. <stage>Herbert zuckt die
+              Achseln</stage> Sie zweifeln? ich will den Beweis der Wahrheit antreten. Ich habe
+            einen vortrefflichen Vater, der mit einem anderen ebenso vortrefflichen als reichen
+            Mann, den eine junge, mir unbekannte Dame Vater nennt, befreundet ist, und diese beiden
+            Väter haben beschlossen, aus ihren beiden Kindern – ein Paar zu machen. Und dieses
+            Mädchen – einzige Tochter – ich habe sie ausgeschlagen, oder vielmehr, ich werde sie
+            ausschlagen.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Sie ist also defekt?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Mein Vater, der Stamm, von dem ich, wenn ich mich mit einem Apfel vergleichen soll weit
+            gefallen bin, lügt niemals, und er sagt, daß sie schön, jung und trefflichen Charakters
+            sei.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Welche Gründe sonst machen Ihnen die Partie unannehmbar? Die Familie etwa?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Die Familie allerdings, die ist von einer schreckenerregenden Correctheit. Ich glaube,
+            die ganze Verwandtschaft würde bis ins vierte Glied in Thränen schwimmen, wenn ich in
+            den Verdacht käme, die Gattentreue, und wäre es auch nur durch ein illegitim verschenkte
+            Bouquet, verletzt zu haben. Erlaubte ich mir gar den Luxus einiger Schulden – mich träfe
+            das vorwurfsvolle Auge einer Schwiegermutter, und, aufrichtig gesagt, ich habe eine
+            heftige Antipathie gegen vorwurfsvolle Augen von Schwiegermüttern. Übrigens kann ich
+            Ihnen noch heut, wenn es Sie interessiert, die Photographie der von mir Refüsierten
+            zeigen. Der Brief, der das Bild enthält, ist schon hier, oder muß jeden Augenblick
+            eintreffen. Es wäre vielleicht etwas für Sie.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Sie wissen ja, ich bin bereits engagiert. Auch werden Sie die Dame nicht refüsiren.</p>
+        </sp>
+        <pb n="25"/>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Ich verstehe Sie nicht.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Bester Baron, wir kennen uns lange, sind immer gut Freund gewesen. Warum soll ich Ihnen
+            ein Geheimniß daraus machen, wovon in wenig Stunden ganz Wiesbaden sprechen wird.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Sie machen mich neugierig.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Fräulein von Eichstädt hat eine Reihe höchst trauriger Erfahrungen gemacht, welche sie
+            völlig im Unklaren ließen, wie viele von den Cavalieren, die ihr Herz und Hand antrugen,
+            es nur mit der Hand ehrlich meinten. Eines Tages beschloß sie, dieser unerfreulichen
+            Situation ein Ende zu machen. Als alleinstehende Dame im jugendlichen Alter hatte sie
+            sich natürlich mit einer Gesellschafterin behaftet, und für diesen Dienst ein
+            unglückliches stolzes Geschöpf ausersehen, dessen Vater durch einen Bankerott von großem
+            Reichthum plötzlich in Dürftigkeit gesunken war. Sie ahnen nun wohl schon, was
+            folgt.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Nicht im Mindesten.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Fräulein von Eichstädt überredete die stolze Gesellschafterin mit ihr zu tauschen.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Wie?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Die Baronin steckt unter der Maske der Gesellschafterin, und das von Ihnen adorierte
+            gnädigste Fräulein ist die Gesellschafterin.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Sie träumen. Sie phantasiren. Undenkbar. Das ginge <pb n="26"/> über die Grenzen eines
+            erlaubten Scherzes. Sie verlangen nicht, daß ich einen solchen Unsinn glaube. Wer sagt
+            es?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Ich weiß es aus einer durchaus zuverlässigen Quelle.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Man kennt diese Quellen. Kurz und gut, ich lasse mich nicht täuschen. Ich glaube nicht
+            an dieses Gerücht.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Das verlange ich auch gar nicht. Ich habe meine Pflicht gethan, heirathen Sie
+            meinethalben die Gesellschafterin.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Hätte sich Fräulein von Eichstädt eines solchen Betrugs schuldig gemacht, es wäre
+            himmelschreiend! Die ganze Aristokratie von Wiesbaden zu täuschen. – Die kleine
+            Begleiterin ist übrigens ganz reizend.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <stage>an der Gartenthür.</stage>
+          <p>Sie kommt eben durch den Park, hierher, wie es scheint. Soll ich Ihnen das Feld
+            räumen?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Bleiben Sie. Ich denke, ich bin Diplomat genug, um mit zwanzig Worten aus einem jungen
+            Mädchen die Wahrheit herauszupressen. Es wird auch Sie interessiren.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>8. Auftritt</head>
+        <stage>Vorige. Ilse Müller</stage>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <stage>sieht sich um.</stage>
+          <p>Guten Morgen! Die Baronin ist nicht mehr hier? Ich bitte um Entschuldigung, wenn ich
+            gestört habe. <stage>Will gehen.</stage></p>
+        </sp>
+        <pb n="27"/>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Eilen Sie nicht so schnell wieder fort, mein Fräulein.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Dann werde ich bleiben.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Fräulein von Eichstädt hat sich nur auf einen Augenblick entfernt und läßt Sie bitten,
+            hier im Salon auf sie zu warten. Auch möchten Sie die Güte haben, hier unter den
+            Garnknäueln, die sich verwickelt haben, etwas Ordnung zu stiften. <stage>Er giebt ihr
+              das Körbchen mit der Stickerei.</stage> Darf ich Ihnen helfen, Fräulein – habe ich
+            doch Ihren Namen vergessen – Fräulein –</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <stage>etwas zögernd</stage>
+          <p>Müller.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>sie scharf fixirend</stage>
+          <p>Sie heißen Müller? wirklich Müller?</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <stage>sehr verlegen</stage>
+          <p>Sie zweifeln? Hat man Ihnen etwa gesagt – was man Ihnen auch sagen mag – glauben Sie
+            nichts. Die Leute reden viel – es ist nicht wahr. <stage>Sich zusammenraffend, mit
+              entschiedenem Ton.</stage> Warum sollte ich übrigens nicht Müller heißen? Es heißen
+            viele Menschen Müller.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Ich dachte mir gleich, daß es nicht wahr sein könne. Sie haben so treue, klare Augen,
+            Sie sind keines Betrugs fähig, wie kämen Sie auch dazu?</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <stage>erschrocken.</stage>
+          <p>Wie, Herr von Werlitz, einen Betrug nennen Sie es, wenn man seinen Namen wechselt? Und
+            es könnten doch die reinsten Motive – es giebt wirklich Fälle – Sie wissen nicht, Herr
+            Baron – ach, ich weiß nicht, was ich rede; Sie wollen mich in Verlegenheit setzen und –
+            ich heiße doch Müller.</p>
+        </sp>
+        <pb n="28"/>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>der mit Herbert Blicke des Einverständnisses gewechselt hat.</stage>
+          <p>Ich habe nur gescherzt, Fräulein Ilse – darf ich Fräulein Ilse sagen? – <stage>zu
+              Herbert, leise.</stage> Sie hatten recht, ich danke Ihnen.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Ich möchte jetzt doch lieber die Baronin aufsuchen.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Gehen Sie nicht, liebes Fräulein Ilse. <stage>Ilse läßt einige Knäule fallen</stage> Da
+            fallen auch schon wieder die Knäule, die müssen wir doch erst zur Raison bringen
+              <stage>Halblaut, um von Herbert nicht verstanden zu werden, nach dem er sich ab und zu
+              scheu umsieht.</stage> Seit Tagen, seit Wochen hoffe ich, ersehne ich den Augenblick,
+            mit Ihnen allein sprechen zu dürfen, aber immer ist diese Eichstädt bei Ihnen.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Sie haben wirklich auf mich geachtet? Ist das wahr? Ich habe es nicht gemerkt.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Seitdem Sie in Wiesbaden sind, habe ich nur Augen für Sie. <stage>zu Herbert,
+              leise.</stage> Liebster Buch, thun Sie mir den Gefallen und verlassen Sie das lokal,
+            oder ziehen Sie sich wenigstens zurück.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Sehr gern. <stage>Er setzt sich in den Garten, hinter die Glastür, so daß er vom
+              Publikum gesehen werden kann. Wenn die Gartendekoration nicht vorhanden ist, so setzt
+              sich Herbert ganz im Hintergrund in einem Winkel und nimmt eine Zeitung zur
+              Hand.</stage></p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Es ist so sonderbar, so ganz seltsam, daß Sie sich für mich interessiren – ich muß
+            lachen – warum? das ist mein Geheimniß, vielleicht erfahren Sie es später einmal. Aber
+            ich freue mich darüber – ich freue mich von Herzen – ach, das hätte ich wohl nicht sagen
+            sollen.</p>
+        </sp>
+        <pb n="29"/>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>für sich.</stage>
+          <p>Eine entzückende Naivetät. <stage>laut.</stage> Sie nehmen Antheil an mir? Hätte ich
+            das ahnen können, ich würde meine Schüchternheit überwunden haben.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Sie sind schüchtern?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Ja.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Ich habe Sie gleich bemerkt. Als ich Sie zum ersten Male sah – es war auf einem
+            Spaziergang – Sie gesellten sich zu uns und plauderten mit Fräulein von Eichstädt. Ich
+            ließ eine Blume fallen, und wie ich mich bücken will, sie aufzuheben, treten Sie mit
+            ihrem Fuß darauf. Es gab mir einen Stich durchs Herz. Ich war Ihnen böse, und Sie
+            konnten doch nichts dafür.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Das konnte ich thun! An welcher Stelle war es, wo liegt die Blume?</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Und als ich Sie zum zweiten Mal sah –</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Es war bei der Kahnfahrt.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Nein, am Tage des großen Gewitters, Sie erinnern sich.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Gewiß, natürlich.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Das Wetter hatte uns auf dem Berge überrascht. Ich war etwas zurückgeblieben und stand
+            da, unter Donner und Blitz und zitterte an allen Gliedern vor Furcht. Da kamen Sie vom
+            Thal herauf und jodelten lustig in den Sturm hinein – und all meine Furcht war fort. Und
+            wie Sie mich da stehen sahen, zitternd und naß, da sagten Sie: Ach, die kleine
+            Gesellschafterin.</p>
+        </sp>
+        <pb n="30"/>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Das sagte ich gewiß nicht, <stage>Für sich.</stage> Sie ist reizend.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Sie sagten es, und nahmen meinen Arm, und ich weiß nicht wie es kam, ich zitterte noch
+            immer und hatte doch gar keine Furcht mehr. Und Sie führten mich hinauf, aber Sie waren
+            recht schweigsam. Ich hätte die Worte zählen können, die Sie mit mir gesprochen haben,
+            es wären kaum ein Dutzend herausgekommen.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>O, ich erinnere mich wohl – aber was ich empfand, raubte mir die Sprache. Es giebt
+            weibliche Wesen, die sind für uns wie Sterne, hoch über uns. Wir denken an sie, wir
+            träumen von ihnen, aber wenn sie vor uns stehen, fürchten wir uns vor ihnen.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Fürchten – vor mir? Vor mir hat sich noch Niemand gefürchtet.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Wir fürchten uns vor ihnen, wenn wir Unrecht gethan haben. Die Reinheit ihrer Seele ist
+            ein Spiegel, in dem wir uns selbst so häßlich erblicken, daß wir erschrecken. <stage>Für
+              sich.</stage> Weiß Gott, ich rede die Wahrheit.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Bitte sprechen Sie nicht so – Vor Fräulein von Eichstädt scheinen Sie sich ja auch
+            nicht gefürchtet zu haben. Ich habe wohl bemerkt, wie auffallend Sie ihr den Hof gemacht
+            haben. Daß ich das sage, ist gewiß nicht indiscret. Vielleicht – das kann man ja nicht
+            wissen – steht sie Ihrem Herzen nahe.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Ich aber kann es wissen, daß Fräulein von Eichstädt und mein Herz nie zusammen kommen.
+            Wollen Sie wissen, warum ich der Baronin den Hof gemacht habe?</p>
+        </sp>
+        <pb n="31"/>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Wenn Sie es mir sagen wollen.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Sehen Sie, Fräulein Ilse, wenn ich an einem fremden Ort ankomme, so erkundige ich mich
+            zuerst, welche Sehens- und Merkwürdigkeiten er aufzuweisen hat. Ich höre dann: Da ist
+            ein Wasserfall, der in Augenschein genommen werden muß, und ich nehme den Wasserfall in
+            Augenschein. Da ist eine Bergspitze, die erklommen werden muß und ich erklimme die
+            Bergspitze. Da ist ein junges Fräulein, der alle Welt den Hof macht und machen muß, und
+            ich mache den jungen Fräulein den Hof. Auf diese Weise erklären sich auf das
+            Unschuldigste und Natürlichste meine Aufmerksamkeiten für Fräulein von Eichstädt.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Das ist ungerecht, sehr ungerecht. Und doch – fast ist es mir lieb, daß es weiter
+            nichts war. Ich freue mich darüber – Ihretwegen. Ich bin so thöricht – wenn Sie wüßten –
+            Sie sind gut, nicht wahr? Sie sprechen immer die Wahrheit?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Mein Fräulein –</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Wissen Sie, was man von Ihnen sagt?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Nun?</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Aber es ist etwas Schreckliches.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Sprechen Sie frei heraus.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Sie wollten die Baronin heirathen, weil – <stage>zögernd</stage> Sie so viel Schulden
+            hätten.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>O Welt! o Verleumdung!</p>
+        </sp>
+        <pb n="32"/>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Ich habe es nicht geglaubt. Solche Menschen wären ja hassenswert, die sich verkaufen –
+            für Geld. Und ich möchte Sie – nicht gerne hassen.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Sie möchten mich nicht hassen, und ich – ich – <stage>Für sich.</stage> hasse mich
+            selber in diesem Augenblick. <stage>Sich ihr nähernd und ihre Hand nehmend.</stage>
+            Liebes Fräulein Ilse –</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Was?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>läßt ihre Hand los und tritt von ihr zurück</stage>
+          <p>Nein, ich bringe es nicht über die Lippen..</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>So sprechen Sie doch.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Möchten Sie – nein, Sie könnten es nicht – es ist unmöglich. Sie könnten niemals einem
+            Menschen von Herzen gut sein – ich müßte Ihnen ja selbst davon abrathen, einem Menschen,
+            der –</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <stage>erwartungsvoll.</stage>
+          <p>Der –</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Seien Sie ruhig, es kommt niemals über meine Lippen</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <stage>unmuthig</stage>
+          <p>Aber warum denn nicht?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Denken Sie zuweilen an mich, gütig, mitleidig. Ich heiße Friedrich. Ich werde immer an
+            Sie denken – in Homburg. Dort werde ich meine Kur fortsetzen</p>
+        </sp>
+        <stage>Hildegard erscheint an der Thür.</stage>
+      </div>
+      <pb n="33"/>
+      <div type="scene">
+        <head>9. Auftritt</head>
+        <stage>Vorige. Hildegard.</stage>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Hier stecken Sie, Ilse? Ich habe Sie durch den ganzen Garten gesucht.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <stage>verwirrt.</stage>
+          <p>Verzeihen Sie, ich stehe zu Befehl.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>etwas kühl.</stage>
+          <p>Lassen Sie das Fräulein noch ein wenig hier. Ich habe so selten das Glück. Ich war eben
+            dabei. Fräulein Ilse in die Geheimnisse der Topographie von Wiesbaden einzuweihen.
+            Ihnen, Fräulein Mül— Fräulein von Eichstädt – wird die Luft hier zu dumpf sein, ich
+            weiß. Sie haben zarte Nerven. Vielleicht erwarten Sie Ihre – Gesellschafterin in der
+            Epheulaube. Für den Fall der Langeweile dürfte ich Ihnen <stage>er sucht unter den
+              Büchern auf dem Tisch</stage> mit einem guten Buch behilflich sein – hier ist eine
+            alte Chronik von Wiesbaden – interessant, höchst interessant.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>gereizt.</stage>
+          <p>Sie gestatten vielleicht, daß ich hier bleibe und von Ihrer Lokalkenntniß
+            profitire.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>verlegen.</stage>
+          <p>Selbstverständlich. Wollen Sie nicht Platz nehmen? Ich dachte nur, Sie wären vielleicht
+            beschäftigt. <stage>zu Ilse.</stage> Wie weit waren wir doch gekommen? ach ja. Nehmen
+            wir an, dieser Tisch sei die Ebene und dieses Buch das Gebirge. Wir steigen nun
+            allmählich empor – jetzt sind wir am Fuß des Berges. Das ist der Berg, wo ich Sie,
+            Fräulein Ilse beim Gewitter überraschte. Ich sehe Sie noch immer, wie Sie vor mir
+            standen, bleich, an allen Gliedern zitternd, reizend sahen Sie aus und rührend zugleich.
+            Finden Sie nicht, Fräulein Mül – Fräulein von Eichstädt; daß Fräulein Ilse ein
+            Madonnenköpfchen auf den Schultern trägt?</p>
+        </sp>
+        <pb n="34"/>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Brauchen Sie einen Vorwand für Ihre Anbetung? <stage>zu Ilse</stage> Liebe Ilse, ich
+            habe in der Laube mein Buch liegen lassen, haben Sie doch die Güte, es mir zu holen.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Ein solcher Auftrag für das gnädige Fräulein – ich bitte, gestatten Sie mir –</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Lassen Sie Fräulein Müller gehen. <stage>Ilse ab.</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>10. Auftritt</head>
+        <stage>Hildegard. Werlitz.</stage>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>geht gereizt auf Werlitz zu.</stage>
+          <p>Leugnen Sie nicht, Herr von Buch hat Ihnen Ihr Benehmen vorgeschrieben, er hat Ihnen
+            geraten, meiner Gesellschafterin den Hof zu machen – mir geringschätzig zu begegnen, um
+            desto sicherer meine Gunst zu gewinnen. Ich dulde ein solches Benehmen nicht.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Ich gebe Ihnen mein Wort, daß Sie sich täuschen. Sollte ich einen Augenblick meine
+            Ritterpflichten Ihnen gegenüber verletzt haben, so bitte ich um Entschuldigung. Niemand
+            trägt die Schuld daran, als der bestrickende Liebreiz der Dame, die Sie Ihre
+            Gesellschafterin nennen, er verwirrte mich einen Augenblick.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Was soll die Komödie? Noch vor wenigen Minuten drängten Sie mir Ihre Huldigungen
+            auf.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>in immer steigender Verlegenheit</stage>
+          <p>Ich möchte es nicht Huldigungen nennen. Was ich für Sie empfand, empfinde ich noch
+            immer: Theilnahme, wahre Freundschaft, inniges Mitgefühl, Sympathie – mit einem Wort:
+            ich achte Sie – wahnsinnig. Ich habe Ihnen noch niemals gesagt – <stage>Er hat sich
+              inzwischen Herbert genähert und ruft</stage> Herr von Buch, kommen Sie doch näher.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Sobald ich mit dem Leitartikel fertig bin.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>ungeduldig</stage>
+          <p>Was haben Sie mir niemals gesagt?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Daß ich für die Erweiterung der Erwerbsfähigkeit des weiblichen Geschlechts ein
+            eminentes Interesse hege. Ich gehöre zum Lette-Verein. Ich finde, sie muß erweitert
+            werden, diese Erwerbsfähigkeit – unter allen Umständen – um jeden Preis – sie muß. Ist
+            z.B. die Profession einer Gesellschafterin einer hochgebildeten Dame würdig? nein – sie
+            ist es nicht. <stage>Er spricht sehr schnell und eifrig.</stage> Warum können Frauen
+            nicht ebenso gut Beamtinnen sein, Professoren, oder in Kliniken Kranke heilen? Es müßte
+            ein Vergnügen sein, sich in einer solchen Klinik heilen zu lassen. Oder wären Sie im
+            Stande, sich für die Telegraphie zu interessiren? Verfügen Sie ganz über mich. Wenn Sie
+            eine Empfehlung brauchen, ich habe reiche und vornehme Verwandte –</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Sind Sie von Sinnen?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>zu Herbert, halblaut.</stage>
+          <p>Herr von Buch, schnell auf einen Augenblick, man bedarf Ihrer.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <stage>näher tretend, halblaut.</stage>
+          <p>Was wollen Sie denn von mir?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>halblaut</stage>
+          <p>Die Unterhaltung stockt. <stage>In den Garten hinausgehend, laut.</stage> Da kommt
+            Fräulein Ilse mit dem Buch, sie hat schon wieder die Garnknäule fallen lassen, ich will
+            ihr beim Aufwickeln behilflich sein. Ich stehe gleich wieder zu Diensten.
+              <stage>Ab</stage></p>
+        </sp>
+      </div>
+      <pb n="36"/>
+      <div type="scene">
+        <head>11. Auftritt</head>
+        <stage>Hildegard. Herbert. Dann Victor.</stage>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Sagen Sie mir, hat der Baron den Verstand verloren?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Durchaus nicht, er hat eben eine eklatante Verstandesprobe vor Ihnen abgelegt.</p>
+        </sp>
+        <stage>Victor tritt schnell und erregt ein.</stage>
+        <sp who="#victor">
+          <speaker>Victor</speaker>
+          <p>Sie verzeihen, ich vergaß hier einen Blumenstrauß. <stage>Er nimmt das Bouquet</stage>
+            Wo ist Fräulein von Eichstädt?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Sehen Sie mich nicht?</p>
+        </sp>
+        <sp who="#victor">
+          <speaker>Victor</speaker>
+          <p>Verzeihen Sie, ich meinte Fräulein Müller.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Nur Muth, junger Freund, legen Sie getrost Ihr Blumenopfer am Altar Ihrer Göttin
+            nieder. Ich stehe dafür, sie lächelt heut gnädig auf Sie herab.</p>
+        </sp>
+        <sp who="#victor">
+          <speaker>Victor</speaker>
+          <p>O, ich bitte tausendmal um Vergebung, bedaure von Herzen, aber das Schicksal dieser
+            Blumen ruht in der Hand der Gräfin Narischkow. Ich werde aber nicht ermangeln – morgen
+            oder übermorgen – <stage>Hildegard schalkhaft drohend.</stage> Kleiner Schelm – haben
+            Badegesellschaft an der Nase herumgeführt. Ich weiß alles. <stage>Ab.</stage></p>
+        </sp>
+      </div>
+      <pb n="37"/>
+      <div type="scene">
+        <head>12. Auftritt</head>
+        <stage>Hildegard. Herbert.</stage>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Träume ich denn? Geschieht das wirklich? Mir ins Angesicht dieser Schimpf! Ich gehe
+            durch den Garten. Man grüßt mich – aber kühl. Was ist vorgefallen? Sprechen Sie, oder –
+            ich weine vor Zorn.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Der Schlüssel zu dem Räthsel ist leicht gefunden. Man hat das Gerücht verbreitet, daß
+            Sie eigentlich Fräulein Müller heißen, Ihre Gesellschafterin dagegen als Fräulein von
+            Eichstädt das Licht der Welt erblickte, augenblicklich aber, in der Absicht, Herz und
+            Nieren der Menschen zu prüfen, mit Ihnen getauscht habe. Darum mußte der arme Werlitz
+            plötzlich Mitglied des Lette-Vereins werden. Darum wandert das Bouquet Ihres ehemaligen
+            Anbeters an eine andere Adresse.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Unglaublich! Welche Keckheit! Wer hat das gewagt? Ich Fräulein Müller? Haben Sie diese
+            Absurdität geglaubt?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Gott bewahre. Es thut mir aber leid, daß Sie durch ein solches Mißverständniß um zwei
+            Anbeter und ein Bouquet gekommen sind. <stage>Hildegard geht, wie über etwas
+              nachdenkend, auf und ab.</stage> Geben Sie mir die Erlaubniß , das Gerücht zu
+            dementiren, und ich gehe jede Wette ein, vor Ablauf einer Stunde ist Ihr Königreich
+            wieder hergestellt. Wieder wird man die Rosengärten für Sie plündern, und alle
+            Abtrünnigen schmachten wieder in den alten Fesseln. Sich zu rächen stehen Ihnen zwei
+            Wege offen. Sie verzeihen großmüthig und verächtlich, oder Sie ecrasiren diese ganze
+            miserable Gesellschaft.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>schwermüthig.</stage>
+          <p>Ich werde Niemand mehr ecrasiren. <stage>Als wenn sie einen plötzlichen Entschluß
+              gefaßt habe.</stage> Gut – so mag das Schicksal seinen <pb n="38"/> Lauf haben. Diese
+            Heuchelei – sie ist mir zuwider – mag Fräulein von Eichstädt mich von ihrer Schwelle
+            jagen, mag wieder bittere Noth an meine Thür klopfen. Sie sollen die Wahrheit wissen.
+            Ja, Herr von Buch, ich bin die Gesellschafterin – ich heiße Müller. <stage>Kurze
+              Pause.</stage> Wie? Sie bleiben ruhig, gelassen? warum sind Sie nicht erstaunt?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Warum soll ich erstaunt sein? Weil Sie Müller heißen? Ich kenne Leute, die heißen
+            Schulze und ich wundere mich auch nicht. Übrigens, wenn ich in die Lage käme, Ihnen
+            Gedichte zu dediciren, ich würde mich vorläufig hüten, sie an die schöne Müllerin zu
+            adressiren.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Ich schwöre Ihnen, daß Fräulein Ilse Müller nicht meine Gesellschafterin ist, ich
+            schwöre Ihnen –</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <stage>sie unterbrechend.</stage>
+          <p>Das genügt. Ich glaube Ihnen. Es ist also wahr. Was man nicht Alles erlebt. Fasching
+            mitten im Sommer. Sie werden übrigens nicht verlangen, Fräulein Hildegard Müller, daß
+            ich Ihnen kondolire. Ich gehöre nun einmal zu den absonderlichen Geschöpfen, bei denen
+            Rang und Reichthum eine höchst untergeordnete Rolle spielen. Ich kann Ihnen dagegen
+            versichern, seitdem ich Ihre wahre Lage kenne, ist meine Theilnahme für Sie um einige
+            Grade gestiegen, und Sie stehen –</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Ihrem Herzen näher – wollten Sie das sagen?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Das wollte ich eigentlich nicht sagen. <stage>Hildegard seufzt tief.</stage> Warum
+            seufzen Sie so schwer?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Ach, wenn unter den Vielen, die zu meinen Füßen lagen, mich einer wirklich liebte – nur
+            ein Einziger – und wenn er mir bis dahin gleichgiltig gewesen wäre, ich glaube, ich
+            würde ihn von Stund' an lieben. Wäre er mir aber nicht gleichgiltig gewesen, und er
+            sagte mir jetzt – jetzt, daß er mich liebt – <stage>sie hält ein, als erwarte sie eine
+              Antwort.</stage></p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Was würden Sie thun?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>An seinem Herzen weinen – weinen vor Glück und Seligkeit. <stage>Sie blickt
+              erwartungsvoll auf Herbert.</stage></p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Und er existirt vielleicht, dieser Liebende; wüßte ich nur wo – ich würde –</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>ihn unterbrechend.</stage>
+          <p>Aber nein – Niemand liebt mich – Niemand! – <stage>Heftig.</stage> Warum liebt mich
+            keiner! – Weil sie nur sich selbst lieben, diese – Männer!</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Was Sie sagen, klingt, als sprächen Sie zu einem imaginären Liebhaber: auf der Stelle,
+            Sklave, falle zu meinen Füßen, ich weiß ja doch, Du stirbst aus Liebe zu mir – gestehe
+            Narr! – Sie sollten sich aber nicht zu elegant kleiden, Fräulein Müller, das muß Ihre
+            Mittel übersteigen. – Des Geldes sind Sie ledig, aber Ihr Stolz ist geblieben, und ich
+            glaube, Sie gehören noch immer zu den Frauen, bei denen die Gefühle nur ein rosiges
+            Colorit über einer Schneelandschaft sind, bei denen die Liebe nur eine neue Form der
+            Herrschsucht ist. Sie sind immer noch zu viel Dorn, zu wenig Rose. <stage>Unter Herberts
+              Rock ist die Schleife sichtbar geworden, die er in der 5. Scene eingesteckt
+              hatte.</stage></p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Was für eine Schleife haben Sie da? Es ist die meinige – ich verlor sie heut. Warum
+            haben Sie die Schleife eingesteckt?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Ich that es mit Bedacht. Das Gerücht von ihrer Müllerschaft war schon zu meinen Ohren
+            gedrungen, und ich dachte mir: Fräulein Müller kann nicht alle Tage neue Bänder kaufen –
+            und steckte sie ein. <stage>Hildegard die Schleife gebend.</stage> Da haben Sie Ihr
+            Band.</p>
+        </sp>
+        <pb n="40"/>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Sie spotten meiner Armuth. Gehen Sie, gehen Sie wie die Andern, verhöhnen Sie mich,
+            schwärmen Sie für das neue Fräulein von Eichstädt. Ich verlasse diesen Ort, ich reise
+            fort, ich gehe nach Italien. Ich will diese ganze herzlose Gesellschaft nicht
+            wiedersehen.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Sie gehen nach Italien? Wo kriegen Sie denn das Geld her, Fräulein Müller?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Es ist wahr, ich bin arm. Ich muß bleiben. Herbert – <stage>kurze Pause.</stage></p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Was?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Sie sind mein Freund?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Ja.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Und wenn ich Ihnen nun sage – <stage>mit sich kämpfend.</stage></p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <stage>sich ihr schnell nähernd.</stage>
+          <p>Was?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>trotzig.</stage>
+          <p>Daß ich Sie hasse – ja hasse.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Das glaube ich Ihnen nicht. Übrigens kommt da Ihre Principalin.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Wer kommt?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Fräulein von Eichstädt. Wenn weibliche Geister aufeinander platzen, räume ich gern das
+            Feld. Sollten Sie mir im <pb n="41"/> Lauf des Vormittags noch etwas zu sagen haben –
+            einen Widerruf etwa Ihrer eben geäußerten Gefühle – ich bleibe im Garten und rauche mit
+            Herrn von Werlitz eine Cigarre.</p>
+        </sp>
+        <stage>An der Gartenthür trifft er mit Ilse, die von Herrn von Werlitz begleitet wird,
+          zusammen; sie grüßen sich und Herbert geht mit Werlitz in den Garten.</stage>
+      </div>
+      <div type="scene">
+        <head>13. Auftritt</head>
+        <stage>Hildegard. Ilse.</stage>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <stage>in Aufregung.</stage>
+          <p>O Hildegard, wie danke ich Ihnen, daß Sie damals meine Bitte erfüllten. Ich bin
+            glücklich. Sie sind auch glücklich, nicht wahr? wer wäre es nicht! <stage>Sie riecht an
+              den Blumen in der Vase.</stage> Ach, wie die Blumen duften und was für eine reizende
+            Toilette Sie gemacht haben. Ich glaube, ich bin ein Sonntagskind. Ich muß Sie umarmen.
+            Ich bin glücklich. Sagen Sie mir – aber aufrichtig –nicht wahr, ich bin heut hübsch,
+            oder ziemlich hübsch wenigstens – ach – ich möchte schön sein.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Armes, armes Kind.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Sie bedauern mich – warum denn? mir wird plötzlich angst. Ist etwas vorgefallen? etwas
+            Trauriges? Sprechen Sie!</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Ich fürchte, Sie haben sich in den Baron Werlitz verliebt.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Sollte ich mich wirklich verliebt haben? – Wenn ich's mir recht überlege – ich glaube
+            fast, ein wenig. Ich kann nicht dafür. Er ist wirklich zum Verlieben. Er ist ein
+            schöner, lieber, edler Mensch, finden Sie das nicht auch?</p>
+        </sp>
+        <pb n="42"/>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Nein, Ilse, ich finde es nicht. Er ist Ihrer nicht werth. Er hat Ihnen den Hof
+            gemacht.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Ist das Unrecht?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Wissen Sie, warum er Ihnen den Hof gemacht hat?</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Warum? Hildegard, glauben Sie wirklich, daß ich Niemandem gefallen kann? Niemandem?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Kleine Heuchlerin, das ist es nicht. Die Badegesellschaft hat sich's in den Kopf
+            gesetzt – um eine Leere darin auszufüllen wahrscheinlich – daß wir miteinander getauscht
+            hätten, daß ich die arme Gesellschafterin, Sie das reiche, unabhängige Fräulein von
+            Eichstädt seien.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <stage>lacht.</stage>
+          <p>Hahaha, das ist zu komisch.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Sie begreifen, daß der schöne, liebe, edle Herr von Werlitz –</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Wie – Sie wollen sagen, seine Aufmerksamkeiten hätten nicht mir, sondern dem reichen
+            Mädchen gegolten? Das glaube ich nicht, ich will es nicht glauben. Ich weiß ja,
+            Hildegard, Sie sind so klug, aber Sie können sich auch einmal täuschen.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Dies nicht, meine liebe, kleine Freundin. Sie entrichten heut an den strengen
+            Lehrmeister Erfahrung Ihr erstes bitteres Lehrgeld.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Es sind ja nicht seine Aufmerksamkeiten, die mein Herz bewegt haben, aber – Hildegard,
+            hat er Sie jemals angeblickt?</p>
+        </sp>
+        <pb n="43"/>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>lächelnd.</stage>
+          <p>Ich dächte doch. Ich verlange nicht, daß Sie mir glauben, Sie sollen sich selbst
+            überzeugen. Rufen Sie Herrn von Werlitz hierher.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <stage>hinausrufend.</stage>
+          <p>Herr von Werlitz! Herr von Werlitz! <stage>Werlitz erscheint mit Herbert an der
+              Thür.</stage></p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <stage>zu Hildegard.</stage>
+          <p>Riefen Sie mich?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Bewahre.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Das ist mir lieb – wegen der Cigarre, die ich zu Ende rauchen möchte. <stage>Geht
+              wieder in den Garten ab.</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>14. Auftritt</head>
+        <stage>Hildegard. Ilse. Werlitz.</stage>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>zu Ilse.</stage>
+          <p>Sie riefen mich, gnädiges Fräulein, und nun wenden Sie sich von mir ab? Was ist Ihnen?
+            Sie sind traurig.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Ich habe das gnädige Fräulein eben von einem lächerlichen Gerücht in Kenntniß gesetzt,
+            mit dem ein Spaßvogel die Gesellschaft hier düpiert hat. Meine Gesellschafterin fürchtet
+            nun zwar keineswegs, daß dieses Gerücht in irgend einer Beziehung zu Ihrem Benehmen
+            neuesten Datums stehe, aber sie ist bestürzt –</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Ich bin wirklich Ilse Müller, Herr von Werlitz. Nicht wahr, Sie haben keinen Augenblick
+            daran gedacht, daß ich Hildegard heißen könnte oder von Eichstädt? Ich bin eine
+            einfache, richtige Ilse. – Was sagen Sie, Herr von Werlitz?</p>
+        </sp>
+        <pb n="44"/>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>nur mühsam seine Bestürzung verbergend.</stage>
+          <p>Sie könnten glauben – ich sollte – Gott bewahre mich – was sagen nicht die Leute alles.
+            – Welcher vernünftige Mann leiht einem Gerücht sein Ohr! Gerüchte – was sind sie anders
+            als wüste Träume einer Gesellschaft, die sich den Magen überladen hat, die an geistiger
+            Unverdaulichkeit leidet. Wer glaubt an Träume? Ich nicht. <stage>Halblaut zu
+              Hildegard.</stage> Ich bitte Sie, ich beschwöre Sie, wie Sie auch heißen mögen, welche
+            von Ihnen ist Fräulein von Eichstädt? Spielen Sie nicht mit mir.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Ich bin's.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Gut. Sie sind's Und dennoch – <stage>für sich.</stage> Welche ist es, welche?
+              <stage>Laut in der Absicht sprechend seiner Verwirrung Herr zu werden.</stage> Es
+            giebt so sonderbare Mißverständnisse, meine Damen. Ich kannte einen Herrn, <stage>zu
+              Hildegard.</stage> Sie müssen ihn ja auch gekannt haben – <stage>für sich.</stage>
+            wäre es doch Ilse.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Wen denn?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Ja, den Namen habe ich vergessen.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Und was passirte diesem Herrn?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Das wollte ich Ihnen ja eben erzählen. Sie unterbrechen mich ja fortwährend, nun habe
+            ich den Faden verloren. <stage>zu sich.</stage> Jammerschade, daß es nicht Ilse ist.
+              <stage>er ist an die Thür getreten und winkt heftig Herbert, den das Publicum nicht
+              sieht, herein zu kommen.</stage></p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Also Fräulein Müller hat sie nur interessirt –</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>Hildegard unterbrechend und sie in den Vordergrund ziehend.</stage>
+          <p>Ein Wort im Vertrauen Fräulein – Fräulein –</p>
+        </sp>
+        <pb n="45"/>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>von Eichstädt</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>von Eichstädt. Ich hatte einen Auftrag von Herrn von Buch, er ist verliebt in die
+            Kleine.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>auffahrend</stage>
+          <p>Einen Auftrag? Er ist verleibt in meine Gesellschafterin?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Ja, so ist es. Ich sollte den Gefühlen des Fräuleins auf den Grund zu kommen suchen, so
+            sagte er. Ich habe mir alle Mühe gegeben – was thut man nicht für einen Freund – und in
+            der That, ich habe gefunden, sie ist ein nettes – <stage>Ilse ist näher gekommen und
+              hört die letzten Worte.</stage> ein sehr nettes Mädchen – empfehlenswerth, durchaus
+            empfehlenswerth.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Wie, Herr von Werlitz, ich bin ein nettes Mädchen – habe ich denn recht gehört?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Gott bewahre – wie können Sie glauben – Sie sind jeder Hochachtung werth.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Es thut mir leid um Sie, Herr von Werlitz. Hätten Sie sich nicht so wankelmüthig und
+            treulos gezeigt, ich hätte Sie geliebt.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>(schnell, angstvoll.)</stage>
+          <p>Noch ist es nicht zu spät.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Und ich –</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Und Sie?</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Ich hätte Ihnen – ewige Freundschaft geweiht.</p>
+        </sp>
+        <stage>Die Damen müssen so weit von einander stehen, daß die eine nicht zu hören braucht,
+          was Werlitz zu der andern spricht. Werlitz steht in der Mitte zwischen den beiden
+          Damen.</stage>
+        <pb n="46"/>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>zu Hildegard</stage>
+          <p>Ich fühle leidenschaftlich für Sie. <stage>Hildegard wendet sich ab. Zu Ilse.</stage>
+            In der Tiefe meiner Brust – <stage>zu Hildegard.</stage> Nur Sie – <stage>zu
+              Ilse.</stage> Nur Sie – <stage>er winkt abermals Herbert sehr energisch
+            zu.</stage></p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>ergreift Ilse's Hand und tritt mit ihr dicht vor Werlitz</stage>
+          <p>So, mein Herr, jetzt sagen Sie uns in's Gesicht, welche Empfindungen für dieses brave
+            Mädchen <stage>auf Ilse zeigend.</stage> nähren Sie in Ihrer Brust?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Ich soll hier – öffentlich –</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Lieben Sie Fräulein Hildegard oder nicht?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>grenzenlos verwirrt.</stage>
+          <p>Wie – ich soll zu einer Dame, die ich verehre, sagen, ich liebe eine andere Dame, die
+            ich nicht verehre – was rede ich da! <stage>Sich energisch zusammenraffend.</stage> Was
+            Sie mir zumuthen, meine Damen, ist in höchstem Grade unmoralisch. Wissen Sie nicht, daß
+            Diskretion die erste und vornehmlichste Eigenschaft eines Cavaliers ist? Fordern Sie von
+            mir, was Sie wollen: mein Blut, mein Leben, meine Ehre – aber keine Indiskretion. Nur
+            über meine Leiche gelangen Sie zu den Geheimnissen meiner Mannesseele. Was ist das Leben
+            ohne Diskretion? ein gelöstes Räthsel, schal, langweilig. Was ist die Gesellschaft ohne
+            Diskretion? ein entfesselter Hexensabbath. Denken Sie sich in meine Lage. Wenn ich Sie
+            fragen wollte, Baronin, lieben Sie mich?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Ja, ich liebe Sie – würde ich antworten.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Und – Sie – Fräulein Ilse?</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <stage>schalkhaft.</stage>
+          <p>Ich – auch –</p>
+        </sp>
+        <pb n="47"/>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Nun wohlan. So will auch ich die zarte Scheu bei Seite setzen und will gestehen, daß
+            ich liebe, ja – ich liebe – Fräulein Hildegard von Eichstädt. <stage>Während dieser
+              Worte vermeidet er die beiden Damen anzusehen.</stage> Hier ist mein Herz – es gehört
+            ihr. Hier ist meine Hand, schlagen Sie ein, <stage>er betont den Namen stark.</stage>
+            Fräulein Hildegard von Eichstädt! <stage>Er streckt die Hand aus nach der Seite, wo Ilse
+              Steht, Hildegard ergreift die andere Hand.</stage></p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Sie? wirklich Sie? <stage>von seiner Empfindung hingerissen, sich vergessend.</stage>
+            So liebe ich also die falsche Hildegard! <stage>Erschreckend.</stage> Verzeihung,
+            Fräulein von Eichstädt, ich bin in diesem Augenblick unzurechnungsfähig. ich rede die
+            Wahrheit, ich beleidige eine Dame, die ich –</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>ihn unterbrechend</stage>
+          <p>Wahnsinnig achte.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <stage>voll innerer freudiger Erregung.</stage>
+          <p>Und Sie lieben mich? mich?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Warum freuen Sie sich denn? Was nutzt Ihnen meine Liebe! Ich kann Sie ja doch nicht
+            heirathen. Wir haben ja Beide nichts, und zwei Arme sind viel ärmer als einer.
+              <stage>Heftig.</stage> Warum sind Sie auch so gänzlich mittellos! <stage>Ilse wendet
+              sich beleidigt ab.</stage> Ich weiß ja, Sie können nichts dafür. Warum habe ich
+            Schulden! ich kann auch nichts dafür.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Das wollen wir nicht so schroff hinstellen.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Gleichviel. Die ich liebe, ist für mich verloren. <stage>Er nimmt seinen Hut.</stage>
+            Ich gehe fort, Fräulein Ilse, für immer. Nur einmal, einmal, Ilse, nennen Sie mich
+            Friedrich, als ein Zeichen, daß ich Ihnen nicht gleichgiltig bin. Sie schweigen – so
+            sagen Sie wenigstens: adieu lieber Friedrich – auch nicht? nun denn: adieu Fritz.</p>
+        </sp>
+        <pb n="48"/>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Adieu – Herrn von Werlitz. <stage>Da er zögert.</stage> So gehen Sie doch.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Ja, ich werde gehen – Wissen Sie wohin Sie mich treiben? in meine Verlobung. Ja, ich
+            Unglücklicher verlobe mich. <stage>Herbert tritt in den Salon.</stage></p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Wirklich? Sie verloben sich?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Ja, mit Fräulein Elisabeth von Schulz. Wenn es Sie interessiren sollte, die
+            Photographie meiner Braut zu sehen – so eben erhielt ich den Brief mit dem theuren
+            Geschenk. Öffnen wir den Brief. <stage>Er öffnet den Brief, blickt auf die Photographie,
+              dann auf Ilse und bleibt wie erstarrt stehen.</stage></p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>blickt über seine Schulter</stage>
+          <p>Aber – Ilse – das ist ja Ihre Photographie!</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Meine Photographie – ja wohl. Geben Sie sie mir zurück, Herr von Werlitz. Sie haben
+            kein Recht mehr darauf. Hildegard, das ist der Cavalier, um dessentwillen ich Sie bat,
+            mich unter dem Titel Ihrer Gesellschafterin mit nach Wiesbaden zu nehmen. Ehe ich den
+            Wunsch meines Vaters, den Baron Werlitz zu heirathen, erfüllte, wollte ich diesen Herrn
+            kennen lernen. Ich habe ihn kennen gelernt, und finde, er ist ein netter, ein sehr
+            netter Mensch, durchaus empfehlenswerth, aber – ich mag ihn nicht.</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Nun, Herr von Werlitz, was ziehen Sie für Ihren Fall vor? Den Vergleich mit dem Langohr
+            zwischen den Heubündeln oder die Fabel mit dem Hunde?</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Fräulein von Eichstädt, Sie sind grausam; Fräulein Ilse, ich wende mich an Sie. Wir
+            sind ja alle Sünder.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Sie aber vorzugsweise.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Vergessen Sie nicht: Verziehen ist seliger als verdammen.</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Ich verzichte auf diese Seligkeit. Sie sind unverbesserlich.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Auch der Entartete ist der Besserung fähig und ich bin nicht entartet. Es ist wahr, ich
+            habe an meiner Seele Schaden gelitten. Die Liebe eines reinen Weibes aber ist wie die
+            Stimme Gottes, die in das Chaos rief: Es werde Licht. Ilse, seien Sie mein Schutzgeist.
+            Ich heiße Friedrich.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Er heißt Friedrich, Fräulein Ilse. Erbarmen Sie sich.</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <p>Retten Sie mich, liebes holdes Mädchen. <stage>Er will Ilse's Hand ergreifen, sie
+              wendet sich von ihm ab, stößt an den Tisch, dabei fallen wieder einige Knäule zu
+              Boden, die er aufhebt.</stage> Wer soll Ihnen künftig Ihre Garnknäule in Ordnung
+            halten? <stage>Indem er ihr die Garnknäule gibt, stoßen sie leicht mit den Köpfen
+              zusammen. Ilse lacht. Er hält ihre Hand fest.</stage></p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <stage>sich sträubend.</stage>
+          <p>Lassen Sie mich los. Adieu –</p>
+        </sp>
+        <sp who="#werlitz">
+          <speaker>Werlitz</speaker>
+          <stage>drängend.</stage>
+          <p>Lieber – –</p>
+        </sp>
+        <sp who="#ilse">
+          <speaker>Ilse</speaker>
+          <p>Fritz! <stage>Werlitz küßt ihr leidenschaftlich die Hand. Ilse sucht sich von ihm
+              loszumachen.</stage> Herr von Buch, Herr von Buch retten Sie mich vor diesem
+            liebenswürdigen Taugenichts.</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Das kann ich nicht. Ich verlasse Wiesbaden. Ich gehe in die Schweiz.</p>
+        </sp>
+        <pb n="50"/>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>zu Herbert.</stage>
+          <p>Wie? Sie reisen? in einigen Tagen?</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>In einer Stunde. Lassen Sie mich Ihnen ein herzliches Lebewohl sagen. <stage>Ilse die
+              Hand reichend.</stage> Leben Sie wohl, Fräulein Ilse! Ihr liebliches Wesen hat mich
+            erfreut und erfrischt, ich werde Sie nicht vergessen. <stage>Zu Hildegard.</stage> Und
+            Ihnen, Fräulein Hildegard, wünsche ich all das Glück, das zu verschmähen Sie stets
+            bereit sind. Leben Sie recht, recht wohl! <stage>Er hält ihre Hand fest und sieht ihr
+              forschend in die Augen, dann läßt er sie mit einiger Heftigkeit los, grüßt kalt, und
+              ist im Begriff, das Zimmer zu verlassen.</stage></p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <stage>steht einen Augenblick unschlüssig, wie mit sich kämpfend, dann ruft sie</stage>
+          <p>Herbert! <stage>Er wendet sich um, und geht lebhaft auf sie zu. Sie wirft sich in seine
+              Arme.</stage> Nimm mich mit!</p>
+        </sp>
+        <sp who="#herbert">
+          <speaker>Herbert</speaker>
+          <p>Und Du glaubst, glaubst daß ich Dich liebe? Dich wahrhaftig und maßlos liebe?</p>
+        </sp>
+        <sp who="#hildegard">
+          <speaker>Hildegard</speaker>
+          <p>Ich weiß es. Ich wußte es längst. Verzeih mir.</p>
+        </sp>
+        <stage>Indem der Vorhang fällt, erscheint Xaver Nicolowitsch mit einem Körbchen Erdbeeren an
+          der Mittelthür, sich den Schweiß trocknend</stage>
+        <stage>Der Vorhang fällt</stage>
+      </div>
+    </body>
+  </text>
+</TEI>
