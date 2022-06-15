@@ -1,0 +1,2205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000575" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Pandora</title>
+        <title type="sub">Ein Festspiel</title>
+        <author>
+          <persName>
+            <forename>Johann</forename>
+            <forename>Wolfgang</forename>
+            <surname>Goethe</surname>
+          </persName>
+          <idno type="wikidata">Q5879</idno>
+          <idno type="pnd">118540238</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:11fg5.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode"
+                >Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Goethes Werke. Hamburger Ausgabe in 14 Bänden. Textkritisch durchgesehen und mit
+              Anmerkungen versehen von Erich Trunz, Hamburg: Christian Wegener, 1948 ff.
+              [Seitenkonkordanz zu einer Mischauflage aus den Jahren 1959 und 1960.]</title>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="epimetheus" sex="MALE">
+            <persName>Epimetheus</persName>
+          </person>
+          <person xml:id="phileros" sex="MALE">
+            <persName>Phileros</persName>
+          </person>
+          <person xml:id="prometheus" sex="MALE">
+            <persName>Prometheus</persName>
+          </person>
+          <personGrp xml:id="schmiede" sex="MALE">
+            <name>Schmiede</name>
+          </personGrp>
+          <personGrp xml:id="hirten" sex="MALE">
+            <name>Hirten</name>
+          </personGrp>
+          <person xml:id="erster_hirt" sex="MALE">
+            <persName>Erster Hirt</persName>
+          </person>
+          <person xml:id="zweiter_hirt" sex="MALE">
+            <persName>Zweiter Hirt</persName>
+          </person>
+          <person xml:id="dritter_hirt" sex="MALE">
+            <persName>Dritter Hirt</persName>
+          </person>
+          <person xml:id="elpore" sex="FEMALE">
+            <persName>Elpore</persName>
+          </person>
+          <person xml:id="epimeleia" sex="FEMALE">
+            <persName>Epimeleia</persName>
+          </person>
+          <personGrp xml:id="krieger" sex="MALE">
+            <name>Krieger</name>
+          </personGrp>
+          <person xml:id="eos" sex="FEMALE">
+            <persName>Eos</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="parent_of" active="#prometheus" passive="#phileros"/>
+            <relation name="parent_of" active="#epimetheus" passive="#elpore #epimeleia"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2022-06-16">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1810">
+        <desc/>
+      </event>
+      <event type="written" notBefore="1807" notAfter="1808">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000575" passive="http://www.wikidata.org/entity/Q2049303"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <front>
+      <div type="front">
+        <head>Johann Wolfgang Goethe</head>
+        <head>Pandora</head>
+        <head>Ein Festspiel</head>
+      </div>
+      <pb n="332"/>
+      <castList>
+        <head> Personen.</head>
+        <castGroup>
+          <castItem><role>Prometheus,</role></castItem>
+          <castItem><role>Epimetheus,</role></castItem>
+          <roleDesc>Japetiden</roleDesc>
+        </castGroup>
+        <castItem><role>Phileros,</role>
+          <roleDesc>Prometheus' Sohn</roleDesc></castItem>
+        <castGroup>
+          <castItem><role>Elpore,</role></castItem>
+          <castItem><role>Epimeleia,</role></castItem>
+          <roleDesc>Epimetheus' Töchter</roleDesc>
+        </castGroup>
+        <castItem><role>Eos</role></castItem>
+        <castItem><role>Pandora,</role>
+          <roleDesc>Epimetheus' Gattin</roleDesc></castItem>
+        <castItem><role>Dämonen</role></castItem>
+        <castItem><role>Helios</role></castItem>
+        <castItem><role>Schmiede</role></castItem>
+        <castItem><role>Hirten</role></castItem>
+        <castItem><role>Feldbauende</role></castItem>
+        <castItem><role>Krieger</role></castItem>
+        <castItem><role>Gewerbsleute</role></castItem>
+        <castItem><role>Winzer</role></castItem>
+        <castItem><role>Fischer</role></castItem>
+      </castList>
+      <set>
+        <p>Der Schauplatz wird im großen Stil nach Poussinischer Weise gedacht.</p>
+      </set>
+      <set>
+        <head>Seite des Prometheus</head>
+        <p>Zu der Linken des Zuschauers Fels und Gebirg, aus dessen mächtigen Bänken und Massen
+          natürliche und künstliche Höhlen neben- und übereinander gebildet sind, mit mannigfaltigen
+          Pfaden und Steigen, welche sie verbinden. Einige dieser Höhlen sind wieder mit Felsstücken
+          zugesetzt, andre mit Toren und Gattern verschlossen, alles roh und derb. Hier und da sieht
+          man etwas regelmäßig Gemauertes, vorzüglich Unterstützung und künstliche Verbindung der
+          Massen bezweckend, auch schon bequemere Wohnungen andeutend, doch ohne alle Symmetrie.
+          Rankengewächse hangen herab; einzelne Büsche zeigen sich auf den Absätzen; höher hinauf
+          verdichtet sich das Gesträuch, bis sich das Ganze in einen waldigen Gipfel endigt.</p>
+      </set>
+      <set>
+        <head>Seite des Epimetheus</head>
+        <p>Gegenüber zur Rechten ein ernstes Holzgebäude nach ältester Art und Konstruktion, mit
+          Säulen von Baumstämmen und kaum gekanteten Gebälken und Gesimsen. In der Vorhalle sieht
+          man eine Ruhestätte mit Fellen und Teppichen. Neben dem Hauptgebäude, gegen den
+          Hintergrund, kleinere ähnliche Wohnungen mit vielfachen Anstalten von trockenen Mauern,
+          Planken und Hecken, welche auf Befriedigung verschiedener Besitztümer deuten; dahinter die
+          Gipfel von Fruchtbäumen, <pb n="332"/> Anzeigen wohlbestellter Gärten. Weiterhin mehrere
+          Gebäude im gleichen Sinne.</p>
+      </set>
+      <set>
+        <p>Im Hintergrunde mannigfaltige Flächen, Hügel, Büsche und Haine; ein Fluß, der mit Fällen
+          und Krümmungen nach einer Seebucht fließt, die zunächst von steilen Felsen begrenzt wird.
+          Der Meereshorizont, über den sich Inseln erheben, schließt das Ganze.</p>
+      </set>
+    </front>
+    <body>
+      <div type="scene">
+        <stage>Nacht.</stage>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS</speaker>
+          <stage>aus der Mitte der Landschaft hervortretend.</stage>
+          <lg>
+            <l>Kindheit und Jugend, allzuglücklich preis' ich sie,</l>
+            <l>Daß, nach durchstürmter durchgenoßner Tageslust,</l>
+            <l>Behender Schlummer allgewaltig sie ergreift</l>
+            <l>Und, jede Spur vertilgend kräft'ger Gegenwart,</l>
+            <l>Vergangnes, Träume bildend, mischt Zukünftigem.</l>
+            <l>Ein solch Behagen, ferne bleibt's dem Alten, mir.</l>
+            <l>Nicht sondert mir entschieden Tag und Nacht sich ab,</l>
+            <l>Und meines Namens altes Unheil trag' ich fort:</l>
+            <l>Denn Epimetheus nannten mich die Zeugenden,</l>
+            <l>Vergangnem nachzusinnen, Raschgeschehenes</l>
+            <l>Zurückzuführen, mühsamen Gedankenspiels,</l>
+            <l>Zum trüben Reich gestaltenmischender Möglichkeit.</l>
+            <l>So bittre Mühe war dem Jüngling auferlegt,</l>
+            <l>Daß, ungeduldig in das Leben hingewandt,</l>
+            <l>Ich unbedachtsam Gegenwärtiges ergriff</l>
+            <l>Und neuer Sorge neubelastende Qual erwarb.</l>
+            <l>So flohst du, kräft'ge Zeit der Jugend, mir dahin,</l>
+            <l>Abwechselnd immer, immer wechselnd mir zum Trost,</l>
+            <l>Von Fülle zum Entbehren, von Entzücken zu Verdruß.</l>
+            <l>Verzweiflung floh vor wonniglichem Gaukelwahn,</l>
+            <l>Ein tiefer Schlaf erquickte mich von Glück und Not;</l>
+            <l>Nun aber, nächtig immer schleichend wach umher,</l>
+            <l>Bedaur' ich meiner Schlafenden zu kurzes Glück,</l>
+            <l>Des Hahnes Krähen fürchtend, wie des Morgensterns</l>
+            <l>Voreilig Blinken. Besser blieb' es immer Nacht!</l>
+            <l>Gewaltsam schüttle Helios die Lockenglut;</l>
+            <l>Doch Menschenpfade, zu erhellen sind sie nicht.</l>
+            <pb n="333"/>
+            <l>Was aber hör' ich? knarrend öffnen sich so früh</l>
+            <l>Des Bruders Tore. Wacht er schon, der Tätige?</l>
+            <l>Voll Ungeduld, zu wirken, zündet er schon die Glut</l>
+            <l>Auf hohlem Herdraum werkaufregend wieder an</l>
+            <l>Und ruft zu mächt'ger Arbeitslust die rußige,</l>
+            <l>Mit Guß und Schlag Erz auszubilden kräft'ge Schar?</l>
+            <l>Nicht so! Ein eilend leiser Tritt bewegt sich her,</l>
+            <l>Mit frohem Tonmaß herzerhebenden Gesangs.</l>
+          </lg>
+        </sp>
+        <sp who="#phileros">
+          <speaker>PHILEROS</speaker>
+          <stage>von der Seite des Prometheus her.</stage>
+          <lg>
+            <l>Zu freieren Lüften hinaus, nur hinaus!</l>
+            <l>Wie drängen mich Mauern! wie ängstet das Haus!</l>
+            <l>Wie sollen mir Felle des Lagers genügen?</l>
+            <l>Geläng' es, ein Feuer in Träume zu wiegen?</l>
+            <l>Nicht Ruhe, nicht Rast</l>
+            <l>Den Liebenden faßt.</l>
+            <l>Was hilft es, und neiget das Haupt auch sich nieder</l>
+            <l>Und sinken ohnmächtig ermüdete Glieder;</l>
+            <l>Das Herz, es ist munter, es regt sich, es wacht,</l>
+            <l>Es lebt den lebendigsten Tag in der Nacht!</l>
+            <l>Alle blinken die Sterne mit zitterndem Schein,</l>
+            <l>Alle laden zu Freuden der Liebe mich ein,</l>
+            <l>Zu suchen, zu wandeln den duftigen Gang,</l>
+            <l>Wo gestern die Liebste mir wandelt' und sang,</l>
+            <l>Wo sie stand, wo sie saß, wo mit blühenden Bogen</l>
+            <l>Beblümete Himmel sich über uns zogen,</l>
+            <l>Und um uns und an uns so drängend und voll</l>
+            <l>Die Erde von nickenden Blumen erquoll.</l>
+            <l>O dort nur, o dort</l>
+            <l>Ist zum Ruhen der Ort!</l>
+          </lg>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Wie tönet mir ein mächt'ger Hymnus durch die Nacht!</l>
+        </sp>
+        <sp who="#phileros">
+          <speaker>PHILEROS.</speaker>
+          <l>Wen treff' ich schon, wen treff' ich noch den Wachenden?</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Phileros, bist du es? Deine Stimme scheint es mir.</l>
+        </sp>
+        <sp who="#phileros">
+          <speaker>PHILEROS.</speaker>
+          <l>Ich bin es, Oheim! aber halte mich nicht auf.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Wo eilst du hin, du morgendlicher Jüngling du?</l>
+        </sp>
+        <pb n="334"/>
+        <sp who="#phileros">
+          <speaker>PHILEROS.</speaker>
+          <l>Wohin mich nicht dem Alten zu begleiten ziemt.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Des Jünglings Pfade, zu erraten sind sie leicht.</l>
+        </sp>
+        <sp who="#phileros">
+          <speaker>PHILEROS.</speaker>
+          <l>So laß mich los und frage mir nicht weiter nach.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Vertraue mir! Der Liebende bedarf des Rats.</l>
+        </sp>
+        <sp who="#phileros">
+          <speaker>PHILEROS.</speaker>
+          <l>Zum Rate bleibt nicht, zum Vertrauen bleibt nicht Raum.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>So nenne mir den Namen deines holden Glücks.</l>
+        </sp>
+        <sp who="#phileros">
+          <speaker>PHILEROS.</speaker>
+          <l>Verborgen ist ihr Name wie der Eltern mir.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Auch Unbekannte zu beschädigen bringet Weh.</l>
+        </sp>
+        <sp who="#phileros">
+          <speaker>PHILEROS.</speaker>
+          <l>Des Ganges heitre Schritte, Guter, trübe nicht.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Daß du ins Unglück rennest, fürcht' ich nur zu sehr.</l>
+        </sp>
+        <sp who="#phileros">
+          <speaker>PHILEROS.</speaker>
+          <lg>
+            <l>Phileros, nur dahin zum bedufteten Garten!</l>
+            <l>Da magst du die Fülle der Liebe dir erwarten,</l>
+            <l>Wenn Eos, die Blöde, mit glühendem Schein</l>
+            <l>Die Teppiche rötet am heiligen Schrein</l>
+            <l>Und hinter dem Teppich das Liebchen hervor,</l>
+            <l>Mit röteren Wangen, nach Helios' Tor,</l>
+            <l>Nach Gärten und Feldern mit Sehnsucht hinaus</l>
+            <l>Die Blicke versendet und spähet mich aus.</l>
+            <l>So wie ich zu dir,</l>
+            <l>So strebst du zu mir!</l>
+          </lg>
+          <stage>Ab, nach der rechten Seite des Zuschauers.</stage>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Fahr hin, Beglückter, Hochgesegneter, dahin!</l>
+            <l>Und wärst du nur den kurzen Weg zu ihr beglückt,</l>
+            <l>Doch zu beneiden! Schlägt dir nicht des Menschenheils</l>
+            <l>Erwünschte Stunde, zöge sie auch schnell vorbei?</l>
+            <l>So war auch mir! so freudig hüpfte mir das Herz,</l>
+            <l>Als mir Pandora nieder vom Olympos kam.</l>
+            <l>Allschönst und allbegabtest regte sie sich hehr</l>
+            <l>Dem Staunenden entgegen, forschend holden Blicks,</l>
+            <l>Ob ich, dem strengen Bruder gleich, wegwiese sie.</l>
+            <l>Doch nur zu mächtig war mir schon das Herz erregt,</l>
+            <l>Die holde Braut empfing ich mit berauschtem Sinn.</l>
+            <l>Sodann geheimnisreicher Mitgift naht' ich mich,</l>
+            <l>Des irdenen Gefäßes hoher Wohlgestalt.</l>
+            <l>Verschlossen stand's. Die Schöne freundlich trat hinzu,</l>
+            <pb n="335"/>
+            <l>Zerbrach das Göttersiegel, hub den Deckel ab.</l>
+            <l>Da schwoll gedrängt ein leichter Dampf aus ihm hervor,</l>
+            <l>Als wollt' ein Weihrauch danken den Uraniern,</l>
+            <l>Und fröhlich fuhr ein Sternblitz aus dem Dampf heraus,</l>
+            <l>Sogleich ein andrer; andre folgten heftig nach.</l>
+            <l>Da blickt' ich auf, und auf der Wolke schwebten schon</l>
+            <l>Im Gaukeln lieblich Götterbilder, buntgedrängt;</l>
+            <l>Pandora zeigt' und nannte mir die Schwebenden:</l>
+            <l>Dort, siehst du, sprach sie, glänzet Liebesglück empor!</l>
+            <l>Wie? rief ich, droben schwebt es? Hab' ich's doch in dir!</l>
+            <l>Daneben zieht, so sprach sie fort, Schmucklustiges</l>
+            <l>Des Vollgewandes wellenhafte Schleppe nach.</l>
+            <l>Doch höher steigt, bedächtig ernsten Herrscherblicks,</l>
+            <l>Ein immer vorwärts dringendes Gewaltgebild.</l>
+            <l>Dagegen, gunsterregend, strebt, mit Freundlichkeit</l>
+            <l>Sich selbst gefallend, süß zudringlich, regen Blicks,</l>
+            <l>Ein artig Bild, dein Auge suchend, emsig her.</l>
+            <l>Noch andre schmelzen kreisend ineinander hin,</l>
+            <l>Dem Rauch gehorchend, wie er hin und wider wogt,</l>
+            <l>Doch alle pflichtig, deiner Tage Lust zu sein.</l>
+            <l>Da rief ich aus: Vergebens glänzt ein Sternenheer,</l>
+            <l>Vergebens rauchgebildet wünschenswerter Trug!</l>
+            <l>Du trügst mich nicht, Pandora, mir die Einzige!</l>
+            <l>Kein andres Glück verlang' ich, weder wirkliches</l>
+            <l>Noch vorgespiegeltes im Luftwahn. Bleibe mein!</l>
+            <l>Indessen hatte sich das frische Menschenchor,</l>
+            <l>Das Chor der Neulinge, versammelt mir zum Fest.</l>
+            <l>Sie starrten froh die muntern Luftgeburten an</l>
+            <l>Und drangen zu und haschten. Aber flüchtiger</l>
+            <l>Und irdisch ausgestreckten Händen unerreichbar</l>
+            <l>Jene, steigend jetzt empor und jetzt gesenkt,</l>
+            <l>Die Menge täuschten stets sie, die verfolgende.</l>
+            <l>Ich aber zuversichtlich trat zur Gattin schnell</l>
+            <l>Und eignete das gottgesandte Wonnebild</l>
+            <l>Mit starken Armen meiner lieberfüllten Brust.</l>
+            <l>Auf ewig schuf da holde Liebesfülle mir</l>
+            <l>Zur süßen Lebensfabel jenen Augenblick.</l>
+          </lg>
+          <stage>Er begibt sich nach dem Lager in der Vorhalle und besteigt es.</stage>
+          <pb n="336"/>
+          <lg>
+            <l>Jener Kranz, Pandorens Locken</l>
+            <l>Eingedrückt von Götterhänden,</l>
+            <l>Wie er ihre Stirn umschattet,</l>
+            <l>Ihrer Augen Glut gedämpfet,</l>
+            <l>Schwebt mir noch vor Seel' und Sinnen,</l>
+            <l>Schwebt, da sie sich längst entzogen</l>
+            <l>Wie ein Sternbild über mir.</l>
+          </lg>
+          <lg>
+            <l>Doch er hält nicht mehr zusammen;</l>
+            <l>Er zerfließt, zerfällt und streuet</l>
+            <l>Über alle frischen Fluren</l>
+            <l>Reichlich seine Gaben aus.</l>
+          </lg>
+          <stage>Schlummernd.</stage>
+          <lg>
+            <l>O wie gerne bänd' ich wieder</l>
+            <l>Diesen Kranz! Wie gern verknüpft' ich,</l>
+            <l>Wär's zum Kranze, wär's zum Strauße,</l>
+            <l>Flora-Cypris, deine Gaben!</l>
+          </lg>
+          <lg>
+            <l>Doch mir bleiben Kranz und Sträuße</l>
+            <l>Nicht beisammen. Alles löst sich.</l>
+            <l>Einzeln schafft sich Blum' und Blume</l>
+            <l>Durch das Grüne Raum und Platz.</l>
+            <l>Pflückend geh' ich und verliere</l>
+            <l>Das Gepflückte. Schnell entschwindet's.</l>
+            <l>Rose, brech' ich deine Schöne,</l>
+            <l>Lilie, du bist schon dahin!</l>
+          </lg>
+          <stage>Er entschläft.</stage>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS</speaker>
+          <stage>eine Fackel in der Hand.</stage>
+          <lg>
+            <l>Der Fackel Flamme, morgendlich dem Stern voran</l>
+            <l>In Vaterhänden aufgeschwungen, kündest du</l>
+            <l>Tag vor dem Tage! Göttlich werde du verehrt</l>
+            <l>Denn aller Fleiß, der männlich schätzenswerteste,</l>
+            <l>Ist morgendlich; nur er gewährt dem ganzen Tag</l>
+            <l>Nahrung, Behagen, müder Stunden Vollgenuß</l>
+            <l>Deswegen ich der Abendasche heil'gen Schatz</l>
+            <l>Entblößend früh zu neuem Gluttrieb aufgefacht</l>
+            <l>Vorleuchtend meinem wackern arbeitstreuen Volk –</l>
+            <l>So ruf' ich laut euch Erzgewält'ger nun hervor:</l>
+            <l>Erhebt die starken Arme leicht, daß taktbewegt</l>
+            <pb n="337"/>
+            <l>Ein kräft'ger Hämmerchortanz, laut erschallend, rasch</l>
+            <l>Uns das Geschmolzne vielfach strecke zum Gebrauch.</l>
+          </lg>
+          <stage>Mehrere Höhlen eröffnen sich, mehrere Feuer fangen an zu brennen.</stage>
+        </sp>
+        <sp who="#schmiede">
+          <speaker>SCHMIEDE.</speaker>
+          <lg>
+            <l>Zündet das Feuer an!</l>
+            <l>Feuer ist obenan.</l>
+            <l>Höchstes, er hat's getan,</l>
+            <l>Der es geraubt.</l>
+            <l>Wer es entzündete,</l>
+            <l>Sich es verbündete,</l>
+            <l>Schmiedete, ründete</l>
+            <l>Kronen dem Haupt.</l>
+          </lg>
+          <lg>
+            <l>Wasser, es fließe nur!</l>
+            <l>Fließet es von Natur</l>
+            <l>Felsenab durch die Flur,</l>
+            <l>Zieht es auf seine Spur</l>
+            <l>Menschen und Vieh.</l>
+            <l>Fische, sie wimmeln da,</l>
+            <l>Vögel, sie himmeln da,</l>
+            <l>Ihr' ist die Flut,</l>
+            <l>Die unbeständige,</l>
+            <l>Stürmisch lebendige,</l>
+            <l>Daß der Verständige</l>
+            <l>Manchmal sie bändige,</l>
+            <l>Finden wir gut.</l>
+          </lg>
+          <lg>
+            <l>Erde, sie steht so fest!</l>
+            <l>Wie sie sich quälen läßt!</l>
+            <l>Wie man sie scharrt und plackt!</l>
+            <l>Wie man sie ritzt und hackt!</l>
+            <l>Da soll's heraus.</l>
+            <l>Furchen und Striemen ziehn</l>
+            <l>Ihr auf den Rücken hin</l>
+            <l>Knechte mit Schweißbemühn;</l>
+            <l>Und wo nicht Blumen blühn,</l>
+            <l>Schilt man sie aus.</l>
+          </lg>
+          <lg>
+            <l>Ströme du, Luft und Licht,</l>
+            <l>Weg mir vom Angesicht!</l>
+            <pb n="338"/>
+            <l>Schürst du das Feuer nicht,</l>
+            <l>Bist du nichts wert.</l>
+            <l>Strömst du zum Herd herein,</l>
+            <l>Sollst du willkommen sein,</l>
+            <l>Wie sich's gehört.</l>
+            <l>Dring nur herein ins Haus;</l>
+            <l>Willst du hernach hinaus,</l>
+            <l>Bist du verzehrt.</l>
+          </lg>
+          <lg>
+            <l>Rasch nur zum Werk getan!</l>
+            <l>Feuer, nun flammt's heran,</l>
+            <l>Feuer schlägt obenan;</l>
+            <l>Sieht's doch der Vater an,</l>
+            <l>Der es geraubt.</l>
+            <l>Der es entzündete,</l>
+            <l>Sich es verbündete,</l>
+            <l>Schmiedete, ründete</l>
+            <l>Kronen dem Haupt.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Des tät'gen Manns Behagen sei Parteilichkeit.</l>
+            <l>Drum freut es mich, daß, andrer Elemente Wert</l>
+            <l>Verkennend, ihr das Feuer über alles preist.</l>
+            <l>Die ihr, hereinwärts auf den Amboß blickend, wirkt</l>
+            <l>Und hartes Erz nach eurem Sinne zwingend formt,</l>
+            <l>Euch rettet' ich, als mein verlorenes Geschlecht</l>
+            <l>Bewegtem Rauchgebilde nach, mit trunknem Blick,</l>
+            <l>Mit offnem Arm, sich stürzte, zu erreichen das,</l>
+            <l>Was unerreichbar ist und, wär's erreichbar auch,</l>
+            <l>Nicht nützt noch frommt; ihr aber seid die Nützenden.</l>
+            <l>Wildstarre Felsen widerstehn euch keineswegs;</l>
+            <l>Dort stürzt von euren Hebeln Erzgebirg herab,</l>
+            <l>Geschmolzen fließt's, zum Werkzeug umgebildet nun,</l>
+            <l>Zur Doppelfaust. Verhundertfältigt ist die Kraft.</l>
+            <l>Geschwungne Hämmer dichten, Zange fasset klug;</l>
+            <l>So eigne Kraft und Bruderkräfte mehret ihr,</l>
+            <l>Werktätig, weisekräftig, ins Unendliche.</l>
+            <l>Was Macht entworfen, Feinheit ausgesonnen, sei's</l>
+            <l>Durch euer Wirken über sich hinausgeführt.</l>
+            <l>Drum bleibt am Tagwerk vollbewußt und freigemut:</l>
+            <pb n="339"/>
+            <l>Denn eurer Nachgebornen Schar, sie nahet schon,</l>
+            <l>Gefertigtes begehrend, Seltnem huldigend.</l>
+          </lg>
+        </sp>
+        <sp who="#hirten">
+          <speaker>HIRTEN.</speaker>
+          <lg>
+            <l>Ziehet den Berg hinauf,</l>
+            <l>Folget der Flüsse Lauf!</l>
+            <l>Wie sich der Fels beblüht,</l>
+            <l>Wie sich die Weide zieht,</l>
+            <l>Treibet gemach!</l>
+          </lg>
+          <lg>
+            <l>Überall findet's was,</l>
+            <l>Kräuter und tauig Naß,</l>
+            <l>Wandelt und sieht sich um,</l>
+            <l>Trippelt, genießet stumm,</l>
+            <l>Was es bedarf.</l>
+          </lg>
+        </sp>
+        <sp who="#erster_hirt">
+          <speaker>ERSTER HIRT</speaker>
+          <stage>zu den Schmieden.</stage>
+          <lg>
+            <l>Mächtige Brüder hier,</l>
+            <l>Stattet uns aus!</l>
+            <l>Reichet der Klingen mir</l>
+            <l>Schärfste heraus.</l>
+            <l>Syrinx muß leiden!</l>
+            <l>Rohr einzuschneiden,</l>
+            <l>Gebt mir die feinsten gleich!</l>
+            <l>Zart sei der Ton.</l>
+            <l>Preisend und lobend euch</l>
+            <l>Ziehn wir davon.</l>
+          </lg>
+        </sp>
+        <sp who="#zweiter_hirt">
+          <speaker>ZWEITER HIRT</speaker>
+          <stage>zum Schmiede.</stage>
+          <lg>
+            <l>Hast du wohl Weichlinge</l>
+            <l>Freundlich versorgt,</l>
+            <l>Haben noch obendrein</l>
+            <l>Sie dir es abgeborgt.</l>
+            <l>Reich' uns des Erzes Kraft,</l>
+            <l>Spitzig, nach hinten breit,</l>
+            <l>Daß wir es schnüren fest</l>
+            <l>An unsrer Stäbe Schaft.</l>
+          </lg>
+          <lg>
+            <l>Dem Wolf begegnen wir,</l>
+            <l>Menschen, mißwilligen;</l>
+            <l>Denn selbst die Billigen</l>
+            <l>Sehn es nicht gern,</l>
+            <l>Wenn man sich was vermißt;</l>
+            <l>Doch nah und fern</l>
+            <l>Läßt man sich ein,</l>
+            <pb n="340"/>
+            <l>Und wer kein Krieger ist,</l>
+            <l>Soll auch kein Hirte sein.</l>
+          </lg>
+        </sp>
+        <sp who="#dritter_hirt">
+          <speaker>DRITTER HIRT</speaker>
+          <stage>zum Schmiede.</stage>
+          <lg>
+            <l>Wer will ein Hirte sein,</l>
+            <l>Lange Zeit er hat;</l>
+            <l>Zähl' er die Stern' im Schein,</l>
+            <l>Blas' er auf dem Blatt.</l>
+            <l>Blätter gibt uns der Baum,</l>
+            <l>Rohre gibt uns das Moor;</l>
+            <l>Künstlicher Schmiedegesell,</l>
+            <l>Reich' uns was anders vor!</l>
+            <l>Reich' uns ein ehern Rohr,</l>
+            <l>Zierlich zum Mund gespitzt,</l>
+            <l>Blätterzart angeschlitzt:</l>
+            <l>Lauter als Menschensang</l>
+            <l>Schallet es weit;</l>
+            <l>Mädchen im Lande breit</l>
+            <l>Hören den Klang.</l>
+          </lg>
+          <stage>Die Hirten verteilen sich unter Musik und Gesang in der Gegend.</stage>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Entwandelt friedlich! Friede findend geht ihr nicht.</l>
+            <l>Denn solches Los dem Menschen wie den Tieren ward,</l>
+            <l>Nach deren Urbild ich mir Beßres bildete,</l>
+            <l>Daß eins dem andern, einzeln oder auch geschart,</l>
+            <l>Sich widersetzt, sich hassend aneinander drängt,</l>
+            <l>Bis eins dem andern Übermacht betätigte.</l>
+            <l>Drum faßt euch wacker, <emph>eines</emph> Vaters Kinder ihr!</l>
+            <l>Wer falle? stehe? kann ihm wenig Sorge sein.</l>
+          </lg>
+          <lg>
+            <l>Ihm ruht zu Hause vielgewaltiger ein Stamm,</l>
+            <l>Der stets fernaus- und weit und breit umhergesinnt;</l>
+            <l>Zu enge wohnt er, aufeinander dicht gedrängt.</l>
+            <l>Nun ziehn sie aus, und alle Welt verdrängen sie.</l>
+            <l>Gesegnet sei des wilden Abschieds Augenblick!</l>
+          </lg>
+          <lg>
+            <l>Drum, Schmiede! Freunde! Nur zu Waffen legt mir's an</l>
+            <l>Das andre lassend, was der sinnig Ackernde,</l>
+            <l>Was sonst der Fischer von euch fordern möchte heut'.</l>
+            <l>Nur Waffen schafft! Geschaffen habt ihr alles dann,</l>
+            <l>Auch derbster Söhne übermäß'gen Vollgenuß.</l>
+            <pb n="341"/>
+            <l>Jetzt erst, ihr mühsam finsterstündig Strebenden,</l>
+            <l>Für euch ein Ruhmahl! Denn wer nachts arbeitete,</l>
+            <l>Genieße, wenn die andern früh zur Mühe gehn.</l>
+          </lg>
+          <stage>Dem schlafenden Epimetheus sich nähernd.</stage>
+          <lg>
+            <l>Du aber, einz'ger Mitgeborner, ruhst du hier?</l>
+            <l>Nachtwandler, Sorgenvoller, Schwerbedenklicher.</l>
+            <l>Du dauerst mich, und doch belob' ich dein Geschick.</l>
+            <l>Zu dulden ist! Sei's tätig oder leidend auch.</l>
+          </lg>
+          <stage>Ab.</stage>
+        </sp>
+        <sp who="#schmiede">
+          <speaker>SCHMIEDE.</speaker>
+          <lg>
+            <l>Der es entzündete,</l>
+            <l>Sich es verbündete,</l>
+            <l>Schmiedete, ründete</l>
+            <l>Kronen dem Haupt.</l>
+          </lg>
+          <stage>Sie verlieren sich in den Gewölben, die sich schließen.</stage>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS</speaker>
+          <stage>in offner Halle schlafend.</stage>
+        </sp>
+        <sp who="#elpore">
+          <speaker>ELPORE</speaker>
+          <stage>den Morgenstern auf dem Haupte, in luftigem Gewand, steigt hinter dem Hügel
+            herauf.</stage>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS</speaker>
+          <stage>träumend.</stage>
+          <lg>
+            <l>Ich seh' Gestirne kommen, dicht gedrängt!</l>
+            <l>Ein Stern für viele, herrlich glänzet er!</l>
+            <l>Was steiget hinter ihm so hold empor?</l>
+            <l>Welch liebes Haupt bekrönt, beleuchtet er?</l>
+            <l>Nicht unbekannt bewegt sie sich herauf,</l>
+            <l>Die schlanke, holde, niedliche Gestalt.</l>
+            <l>Bist du's, Elpore?</l>
+          </lg>
+        </sp>
+        <sp who="#elpore">
+          <speaker>ELPORE</speaker>
+          <stage>von fern.</stage>
+          <lg>
+            <l>Teurer Vater, ja!</l>
+            <l>Die Stirne dir zu kühlen, weh' ich her!</l>
+          </lg>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Tritt näher, komm!</l>
+        </sp>
+        <sp who="#elpore">
+          <speaker>ELPORE.</speaker>
+          <l>Das ist mir nicht erlaubt.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Nur näher!</l>
+        </sp>
+        <sp who="#elpore">
+          <speaker>ELPORE</speaker>
+          <stage>nahend.</stage>
+          <l>So denn?</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>So! noch näher!</l>
+        </sp>
+        <sp who="#elpore">
+          <speaker>ELPORE</speaker>
+          <stage>ganz nah.</stage>
+          <l>So?</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Ich kenne dich nicht mehr.</l>
+        </sp>
+        <sp who="#elpore">
+          <speaker>ELPORE.</speaker>
+          <l>Das dacht' ich wohl.</l>
+          <stage>Wegtretend.</stage>
+          <l>Nun aber?</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Ja, du bist's, geliebtes Mädchen.</l>
+            <l>Das deine Mutter scheidend mir entriß!</l>
+            <l>Wo bliebst du? Komm zu deinem alten Vater.</l>
+          </lg>
+        </sp>
+        <pb n="342"/>
+        <sp who="#elpore">
+          <speaker>ELPORE</speaker>
+          <stage>herzutretend.</stage>
+          <l>Ich komme, Vater; doch es fruchtet nicht.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Welch lieblich Kind besucht mich in der Nähe?</l>
+        </sp>
+        <sp who="#elpore">
+          <speaker>ELPORE.</speaker>
+          <l>Die du verkennst und kennst, die Tochter ist's.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>So komm in meinen Arm!</l>
+        </sp>
+        <sp who="#elpore">
+          <speaker>ELPORE.</speaker>
+          <l>Bin nicht zu fassen.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>So küsse mich!</l>
+        </sp>
+        <sp who="#elpore">
+          <speaker>ELPORE</speaker>
+          <stage>zu seinen Haupten.</stage>
+          <lg>
+            <l>Ich küsse deine Stirn</l>
+            <l>Mit leichter Lippe.</l>
+          </lg>
+          <stage>Sich entfernend.</stage>
+          <l>Fort schon bin ich, fort!</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Wohin? wohin?</l>
+        </sp>
+        <sp who="#elpore">
+          <speaker>ELPORE.</speaker>
+          <l>Nach Liebenden zu blicken.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Warum nach denen? Die bedürfen's nicht.</l>
+        </sp>
+        <sp who="#elpore">
+          <speaker>ELPORE.</speaker>
+          <l>Ach, wohl bedürfen sie's, und niemand mehr.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>So sage mir denn zu!</l>
+        </sp>
+        <sp who="#elpore">
+          <speaker>ELPORE.</speaker>
+          <l>Und was denn? was?</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Der Liebe Glück, Pandorens Wiederkehr.</l>
+        </sp>
+        <sp who="#elpore">
+          <speaker>ELPORE.</speaker>
+          <l>Unmöglichs zu versprechen, ziemt mir wohl.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Und sie wird wiederkommen?</l>
+        </sp>
+        <sp who="#elpore">
+          <speaker>ELPORE.</speaker>
+          <l>Ja doch! Ja!</l>
+          <stage>Zu den Zuschauern.</stage>
+          <lg>
+            <l>Gute Menschen! so ein zartes,</l>
+            <l>Ein mitfühlend Herz, die Götter</l>
+            <l>Legten's in den jungen Busen;</l>
+            <l>Was ihr wollet, was ihr wünschet,</l>
+            <l>Nimmer kann ich's euch versagen,</l>
+            <l>Und von mir, dem guten Mädchen,</l>
+            <l>Hört ihr weiter nichts als Ja.</l>
+          </lg>
+          <lg>
+            <l>Ach! die anderen Dämonen,</l>
+            <l>Ungemütlich, ungefällig,</l>
+            <l>Kreischen immerfort dazwischen</l>
+            <l>Schadenfroh ein hartes Nein.</l>
+          </lg>
+          <lg>
+            <l>Doch der Morgenlüfte Wehen</l>
+            <l>Mit dem Krähn des Hahns vernehm' ich!</l>
+            <l>Eilen muß die Morgendliche,</l>
+            <l>Eilen zu Erwachenden.</l>
+            <l>Doch so kann ich euch nicht lassen.</l>
+            <pb n="343"/>
+            <l>Wer will noch was Liebes hören?</l>
+            <l>Wer von euch bedarf ein Ja?</l>
+          </lg>
+          <lg>
+            <l>Welch ein Tosen! welch ein Wühlen!</l>
+            <l>Ist's der Morgenwelle Brausen?</l>
+            <l>Schnaubst schon hinter goldnen Toren,</l>
+            <l>Roßgespann des Helios?</l>
+            <l>Nein! mir wogt die Menge murmelnd,</l>
+            <l>Wildbewegte Wünsche stürzen</l>
+            <l>Aus den überdrängten Herzen,</l>
+            <l>Wälzen sich zu mir empor.</l>
+          </lg>
+          <lg>
+            <l>Ach! was wollt ihr von der Zarten?</l>
+            <l>Ihr Unruh'gen, Übermüt'gen!</l>
+            <l>Reichtum wollt ihr, Macht und Ehre,</l>
+            <l>Glanz und Herrlichkeit? Das Mädchen</l>
+            <l>Kann euch solches nicht verleihen;</l>
+            <l>Ihre Gabe, ihre Töne,</l>
+            <l>Alle sind sie mädchenhaft.</l>
+          </lg>
+          <lg>
+            <l>Wollt ihr Macht? Der Mächt'ge hat sie.</l>
+            <l>Wollt ihr Reichtum? Zugegriffen!</l>
+            <l>Glanz? Behängt euch! Einfluß? Schleicht nur!</l>
+            <l>Hoffe niemand solche Güter;</l>
+            <l>Wer sie will, ergreife sie.</l>
+          </lg>
+          <lg>
+            <l>Stille wird's! Doch hör' ich deutlich –</l>
+            <l>Leis ist mein Gehör – ein seufzend</l>
+            <l>Lispeln! Still! ein lispelnd Seufzen!</l>
+            <l>O! das ist der Liebe Ton.</l>
+            <l>Wende dich zu mir, Geliebter!</l>
+            <l>Schau' in mir der Süßen, Treuen</l>
+            <l>Wonnevolles Ebenbild.</l>
+            <l>Frage mich, wie du sie fragest,</l>
+            <l>Wenn sie vor dir steht und lächelt</l>
+            <l>Und die sonst geschloßne Lippe</l>
+            <l>Dir bekennen mag und darf.</l>
+          </lg>
+          <lg>
+            <l>›Wird sie lieben?‹ Ja! ›Und mich?‹ Ja!</l>
+            <l>›Mein sein?‹ Ja! ›Und bleiben?‹ Ja doch!</l>
+            <l>›Werden wir uns wiederfinden?‹</l>
+            <pb n="344"/>
+            <l>Ja gewiß! ›Treu wiederfinden?</l>
+            <l>Nimmer scheiden?‹ Ja doch! ja!</l>
+          </lg>
+          <stage>Sie verhüllt sich und verschwindet; als Echo wiederholend.</stage>
+          <l>Ja doch! ja!</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS</speaker>
+          <stage>erwachend.</stage>
+          <l>Wie süß, o Traumwelt, schöne, lösest du dich ab!</l>
+          <stage>Durchdringendes Angstgeschrei eines Weibes vom Garten her.</stage>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS</speaker>
+          <stage>aufspringend.</stage>
+          <l>Entsetzlich stürzt Erwachenden sich Jammer zu!</l>
+          <stage>Wiederholtes Geschrei.</stage>
+          <l>Weiblich Geschrei! Sie flüchtet! Näher! Nahe schon.</l>
+        </sp>
+        <sp who="#epimeleia">
+          <speaker>EPIMELEIA</speaker>
+          <stage>innerhalb des Gartens unmittelbar am Zaun.</stage>
+          <l>Ai! Ai! Weh! Weh mir! Weh! Weh! Weh! Ai! Ai mir! Weh!</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Epimeleias Töne! hart am Gartenrand.</l>
+        </sp>
+        <sp who="#epimeleia">
+          <speaker>EPIMELEIA</speaker>
+          <stage>den Zaun hastig übersteigend.</stage>
+          <l>Weh! Mord und Tod! Weh, Mörder! Ai! ai! Hilfe mir!</l>
+        </sp>
+        <sp who="#phileros">
+          <speaker>PHILEROS</speaker>
+          <stage>nachspringend.</stage>
+          <l>Vergebens! Gleich ergreif' ich dein geflochtnes Haar.</l>
+        </sp>
+        <sp who="#epimeleia">
+          <speaker>EPIMELEIA.</speaker>
+          <l>Im Nacken, weh! den Hauch des Mörders fühl' ich schon.</l>
+        </sp>
+        <sp who="#phileros">
+          <speaker>PHILEROS.</speaker>
+          <l>Verruchte! Fühl' im Nacken gleich das scharfe Beil!</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Her! Schuldig, Tochter, oder schuldlos rett' ich dich.</l>
+        </sp>
+        <sp who="#epimeleia">
+          <speaker>EPIMELEIA</speaker>
+          <stage>an seiner linken Seite niedersinkend.</stage>
+          <l>O Vater du! Ist doch ein Vater stets ein Gott!</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Und wer, verwegen, stürmt aus dem Bezirk dich her?</l>
+        </sp>
+        <sp who="#phileros">
+          <speaker>PHILEROS</speaker>
+          <stage>zu Epimetheus' Rechten.</stage>
+          <l>Beschütze nicht des frechsten Weibs verworfnes Haupt!</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS</speaker>
+          <stage>sie mit dem Mantel bedeckend.</stage>
+          <l>Sie schütz' ich, Mörder, gegen dich und jeglichen.</l>
+        </sp>
+        <sp who="#phileros">
+          <speaker>PHILEROS</speaker>
+          <stage>nach Epimetheus' Linken um ihn herumtretend.</stage>
+          <l>Ich treffe sie auch unter dieses Mantels Nacht.</l>
+        </sp>
+        <sp who="#epimeleia">
+          <speaker>EPIMELEIA</speaker>
+          <stage>sich vor dem Vater her nach der rechten Seite zu werfend.</stage>
+          <l>Verloren, Vater, bin ich! O! Gewalt! Gewalt!</l>
+        </sp>
+        <sp who="#phileros">
+          <speaker>PHILEROS</speaker>
+          <stage>hinter Epimetheus sich zur Rechten wendend.</stage>
+          <l>Irrt auch die Schärfe, irrend aber trifft sie doch!</l>
+          <stage>Er verwundet Epimeleia im Nacken.</stage>
+        </sp>
+        <pb n="345"/>
+        <sp who="#epimeleia">
+          <speaker>EPIMELEIA.</speaker>
+          <l>Ai ai! Weh, weh mir!</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS</speaker>
+          <stage>abwehrend.</stage>
+          <l>Weh uns! Weh! Gewalt!</l>
+        </sp>
+        <sp who="#phileros">
+          <speaker>PHILEROS.</speaker>
+          <l>Geritzt nur! Weitre Seelenpforten öffn' ich gleich!</l>
+        </sp>
+        <sp who="#epimeleia">
+          <speaker>EPIMELEIA.</speaker>
+          <l>O Jammer! Jammer!</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS</speaker>
+          <stage>abwehrend.</stage>
+          <l>Weh uns! Hilfe! Weh uns! Weh!</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS</speaker>
+          <stage>eilig hereintretend.</stage>
+          <l>Welch Mordgeschrei! Im friedlichen Bezirke tönt's?</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Zu Hilfe, Bruder! Armgewalt'ger, eile her!</l>
+        </sp>
+        <sp who="#epimeleia">
+          <speaker>EPIMELEIA.</speaker>
+          <l>Beflügle deine Schritte! Rettender, heran!</l>
+        </sp>
+        <sp who="#phileros">
+          <speaker>PHILEROS.</speaker>
+          <l>Vollende, Faust! und Rettung schmählich hinke nach.</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS</speaker>
+          <stage>dazwischentretend.</stage>
+          <lg>
+            <l>Zurück, Unsel'ger! törig Rasender, zurück!</l>
+            <l>Phileros, bist du's? Unbänd'ger, diesmal halt' ich dich.</l>
+          </lg>
+          <stage>Er faßt ihn an.</stage>
+        </sp>
+        <sp who="#phileros">
+          <speaker>PHILEROS.</speaker>
+          <l>Laß, Vater, los! ich ehre deine Gegenwart.</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Abwesenheit des Vaters ehrt ein guter Sohn.</l>
+            <l>Ich halte dich! – An diesem Griff der starken Faust</l>
+            <l>Empfinde, wie erst Übeltat den Menschen faßt</l>
+            <l>Und Übeltäter weise Macht sogleich ergreift.</l>
+            <l>Hier morden? Unbewehrte? Geh zu Raub und Krieg!</l>
+            <l>Hin, wo Gewalt Gesetz macht! Denn wo sich Gesetz,</l>
+            <l>Wo Vaterwille sich Gewalt schuf, taugst du nicht.</l>
+            <l>Hast jene Ketten nicht gesehn, die ehernen,</l>
+            <l>Geschmiedet für des wilden Stieres Hörnerpaar,</l>
+            <l>Mehr für den Ungebändigten des Männervolks?</l>
+            <l>Sie sollen dir die Glieder lasten, klirrend hin</l>
+            <l>Und wider schlagen, deinem Gang Begleitungstakt.</l>
+            <l>Doch was bedarf's der Ketten? Überwiesener!</l>
+            <l>Gerichteter! Dort ragen Felsen weit hinaus</l>
+            <l>Nach Land und See, dort stürzen billig wir hinab</l>
+            <l>Den Tobenden, der, wie das Tier, das Element,</l>
+            <l>Zum Grenzenlosen übermütig rennend stürzt.</l>
+          </lg>
+          <stage>Er läßt ihn fahren.</stage>
+          <lg>
+            <l>Jetzt lös' ich dich. Hinaus mit dir ins Weite fort!</l>
+            <l>Bereuen magst du oder dich bestrafen selbst.</l>
+          </lg>
+        </sp>
+        <sp who="#phileros">
+          <speaker>PHILEROS.</speaker>
+          <lg>
+            <l>So glaubest du, Vater, nun sei es getan?</l>
+            <l>Mit starrer Gesetzlichkeit stürmst du mich an,</l>
+            <pb n="346"/>
+            <l>Und achtest für nichts die unendliche Macht,</l>
+            <l>Die mich, den Glücksel'gen, ins Elend gebracht.</l>
+          </lg>
+          <lg>
+            <l>Was liegt hier am Boden in blutender Qual?</l>
+            <l>Es ist die Gebieterin, die mir befahl.</l>
+            <l>Die Hände, sie ringen, die Arme, sie bangen,</l>
+            <l>Die Arme, die Hände sind's, die mich umfangen.</l>
+          </lg>
+          <lg>
+            <l>Was zitterst du, Lippe? was dröhnest du, Brust?</l>
+            <l>Verschwiegene Zeugen verrätrischer Lust.</l>
+            <l>Verräterisch, ja! Was sie innig gereicht,</l>
+            <l>Gewährt sie dem Zweiten – dem Dritten vielleicht.</l>
+          </lg>
+          <lg>
+            <l>Nun sage mir, Vater, wer gab der Gestalt</l>
+            <l>Die einzige furchtbar entschiedne Gewalt?</l>
+            <l>Wer führte sie still die verborgene Bahn</l>
+            <l>Herab vom Olymp? aus dem Hades heran?</l>
+            <l>Weit eher entflöhst du dem ehrnen Geschick</l>
+            <l>Als diesem durchbohrend verschlingenden Blick;</l>
+            <l>Weit eher eindringender Keren Gefahr</l>
+            <l>Als diesem geflochtnen geringelten Haar;</l>
+            <l>Weit eher der Wüste beweglichem Sand</l>
+            <l>Als diesem umflatternden regen Gewand.</l>
+          </lg>
+          <stage>Epimetheus hat Epimeleian aufgehoben, führt sie tröstend umher, daß ihre Stellungen
+            zu Phileros' Worten passen.</stage>
+          <lg>
+            <l>Sag', ist es Pandora? Du sahst sie einmal,</l>
+            <l>Den Vätern verderblich, den Söhnen zur Qual.</l>
+            <l>Sie bildet' Hephaistos mit prunkendem Schein,</l>
+            <l>Da webten die Götter Verderben hinein.</l>
+            <l>Wie glänzt das Gefäß! O wie faßt es sich schlank!</l>
+            <l>So bieten die Himmel berauschenden Trank.</l>
+            <l>Was birgt wohl das Zaudern? Verwegene Tat.</l>
+            <l>Das Lächeln, das Neigen, was birgt es? Verrat.</l>
+            <l>Die heiligen Blicke? Vernichtenden Scherz.</l>
+            <l>Der göttliche Busen? Ein hündisches Herz.</l>
+          </lg>
+          <lg>
+            <l>O! sag' mir, ich lüge! O sag', sie ist rein!</l>
+            <l>Willkommner als Sinn soll der Wahnsinn mir sein.</l>
+            <pb n="347"/>
+            <l>Vom Wahnsinn zum Sinne welch glücklicher Schritt!</l>
+            <l>Vom Sinne zum Wahnsinn! Wer litt, was ich litt?</l>
+            <l>Nun ist mir's bequem, dein gestrenges Gebot;</l>
+            <l>Ich eile, zu scheiden, ich suche den Tod.</l>
+            <l>Sie zog mir mein Leben ins ihre hinein;</l>
+            <l>Ich habe nichts mehr, um lebendig zu sein.</l>
+          </lg>
+          <stage>Ab.</stage>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS</speaker>
+          <stage>zu Epimeleia.</stage>
+          <l>Bist du beschämt? Gestehst du, wessen er dich zeiht?</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Bestürzt gewahr' ich seltsam uns Begegnendes.</l>
+        </sp>
+        <sp who="#epimeleia">
+          <speaker>EPIMELEIA</speaker>
+          <stage>zwischen beide tretend.</stage>
+          <lg>
+            <l>Einig, unverrückt, zusammenwandernd,</l>
+            <l>Leuchten ewig sie herab, die Sterne;</l>
+            <l>Mondlicht überglänzet alle Höhen,</l>
+            <l>Und im Laube rauschet Windesfächeln,</l>
+            <l>Und im Fächeln atmet Philomele,</l>
+            <l>Atmet froh mit ihr der junge Busen,</l>
+            <l>Aufgeweckt vom holden Frühlingstraume.</l>
+            <l>Ach! warum, ihr Götter, ist unendlich</l>
+            <l>Alles, alles, endlich unser Glück nur!</l>
+          </lg>
+          <lg>
+            <l>Sternenglanz und Mondes Überschimmer,</l>
+            <l>Schattentiefe, Wassersturz und Rauschen</l>
+            <l>Sind unendlich, endlich unser Glück nur.</l>
+          </lg>
+          <lg>
+            <l>Lieblich, horch! zur feinen Doppellippe</l>
+            <l>Hat der Hirte sich ein Blatt geschaffen</l>
+            <l>Und verbreitet früh schon durch die Auen</l>
+            <l>Heitern Vorgesang mittägiger Heimchen.</l>
+            <l>Doch der saitenreichen Leier Töne,</l>
+            <l>Anders fassen sie das Herz, man horchet,</l>
+            <l>Und wer draußen wandle schon so frühe</l>
+            <l>Und wer draußen singe goldnen Saiten,</l>
+            <l>Mädchen möcht' es wissen, Mädchen öffnet</l>
+            <l>Leis den Schalter, lauscht am Klaff des Schalters.</l>
+            <l>Und der Knabe merkt: da regt sich eines!</l>
+            <l>Wer? das möcht' er wissen, lauert, spähet;</l>
+            <l>So erspähen beide sich einander,</l>
+            <l>Beide sehen sich in halber Helle.</l>
+            <pb n="348"/>
+            <l>Und, was man gesehn, genau zu kennen</l>
+            <l>Und, was man nun kennt, sich zuzueignen,</l>
+            <l>Sehnt sich gleich das Herz, und Arme strecken,</l>
+            <l>Arme schließen sich; ein heil'ger Bund ist,</l>
+            <l>Jubelt nun das Herz, er ist geschlossen.</l>
+          </lg>
+          <lg>
+            <l>Ach! warum, ihr Götter, ist unendlich</l>
+            <l>Alles, alles, endlich unser Glück nur!</l>
+            <l>Sternenglanz, ein liebereich Beteuern,</l>
+            <l>Mondenschimmer, liebevoll Vertrauen,</l>
+            <l>Schattentiefe, Sehnsucht wahrer Liebe</l>
+            <l>Sind unendlich, endlich unser Glück nur.</l>
+          </lg>
+          <lg>
+            <l>Bluten laß den Nacken! laß ihn, Vater!</l>
+            <l>Blut, gerinnend, stillet leicht sich selber,</l>
+            <l>Überlassen sich verharscht die Wunde;</l>
+            <l>Aber Herzensblut, im Busen stockend,</l>
+            <l>Wird es je sich wieder fließend regen?</l>
+            <l>Wirst, erstarrtes Herz, du wieder schlagen?</l>
+          </lg>
+          <lg>
+            <l>Er entfloh! – Ihr Grausamen vertriebt ihn;</l>
+            <l>Ich Verstoßne konnt' ihn, ach, nicht halten,</l>
+            <l>Wie er schalt, mir fluchte, lästernd raste.</l>
+            <l>Doch willkommen sei des Fluches Rasen:</l>
+            <l>Denn so liebt' er mich, wie er mich schmähte,</l>
+            <l>So durchglüht' ich ihn, wie er verwünschte.</l>
+            <l>Ach! warum verkannt' er die Geliebte?</l>
+            <l>Wird er leben, wieder sie zu kennen?</l>
+          </lg>
+          <lg>
+            <l>Angelehnt war ihm die Gartenpforte,</l>
+            <l>Das gesteh' ich, warum sollt' ich's leugnen?</l>
+            <l>Unheil überwältigt Scham. – Ein Hirte</l>
+            <l>Stößt die Tür an, stößt sie auf, und forschend,</l>
+            <l>Still verwegen, tritt er in den Garten,</l>
+            <l>Findet mich, die Harrende, ergreift mich,</l>
+            <l>Und im Augenblick ergreift ihn jener,</l>
+            <l>Auf dem Fuß ihm folgend. Dieser läßt mich,</l>
+            <l>Wehrt sich erst und flüchtet, bald verfolgt nun,</l>
+            <l>Ob getroffen oder nicht? was weiß ich!</l>
+            <l>Dann auf mich gewandt, mit Schäumen, Schelten,</l>
+            <pb n="349"/>
+            <l>Dringt nun Phileros; ich stürze flüchtend</l>
+            <l>Über Blumen und Gesträuch, der Zaun hält</l>
+            <l>Mich zuletzt, doch hebet mich befitticht</l>
+            <l>Angst empor, ich bin im Freien, gleich drauf</l>
+            <l>Stürzt auch er heran; das andre wißt ihr.</l>
+          </lg>
+          <lg>
+            <l>Teurer Vater! hat Epimeleia</l>
+            <l>Sorg' um dich getragen manche Tage,</l>
+            <l>Sorge trägt sie leider um sich selbst nun,</l>
+            <l>Und zur Sorge schleicht sich ein die Reue.</l>
+            <l>Eos wohl wird meine Wange röten,</l>
+            <l>Nicht an seiner; Helios beleuchten</l>
+            <l>Schöne Pfade, die er nicht zurückkehrt.</l>
+            <l>Laßt mich gehn, ihr Väter, mich verbergen,</l>
+            <l>Zürnet nicht der Armen, laßt sie weinen!</l>
+            <l>Ach! wie fühl' ich's! Ach! das schmerzt unendlich,</l>
+            <l>Wohlerworbne Liebe zu vermissen.</l>
+          </lg>
+          <stage>Ab.</stage>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Das Götterkind, die herrliche Gestalt, wer ist's?</l>
+            <l>Pandoren gleicht sie, schmeichelhafter scheint sie nur</l>
+            <l>Und lieblicher; die Schönheit jener schreckte fast.</l>
+          </lg>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Pandorens Tochter, meine Tochter rühm' ich sie.</l>
+            <l>Epimeleia nennen wir die Sinnende.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Dein Vaterglück, warum verbargst du, Bruder, mir's?</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Entfremdet war dir mein Gemüt, o Trefflicher!</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Um jener willen, die ich nicht empfing mit Gunst?</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Die du hinweggewiesen, eignet' ich mir zu.</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>In deinen Hort verbargst du jene Gefährliche?</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Die Himmlische! vermeidend herben Bruderzwist.</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Nicht lange wohl blieb, wankelmütig, sie dir getreu?</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Treu blieb ihr Bild; noch immer steht es gegen mir.</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Und peiniget in der Tochter dich zum zweiten Mal.</l>
+        </sp>
+        <pb n="350"/>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Die Schmerzen selbst um solch ein Kleinod sind Genuß.</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Kleinode schafft dem Manne täglich seine Faust.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Unwürd'ge, schafft er nicht das höchste Gut dafür.</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Das höchste Gut? Mich dünken alle Güter gleich.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Mit nichten! Eines übertrifft. Besaß ich's doch!</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Ich rate fast, auf welchem Weg du irrend gehst.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Ich irre nicht! die Schönheit führt auf rechte Bahn.</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>In Fraungestalt nur allzuleicht verführet sie.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Du formtest Frauen, keineswegs verführerisch.</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Doch formt' ich sie aus zärtrem Ton, die rohen selbst.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Den Mann vorausgedenkend, sie zur Dienerin.</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>So werde Knecht, verschmähest du die treue Magd.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Zu widersprechen meid' ich. Was in Herz und Sinn</l>
+            <l>Sich eingeprägt, ich wiederhol's im stillen gern.</l>
+            <l>O göttliches Vermögen mir, Erinnerung!</l>
+            <l>Du bringst das hehre frische Bild ganz wieder her.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Die Hochgestalt aus altem Dunkel tritt auch mir;</l>
+            <l>Hephaisten selbst gelingt sie nicht zum zweiten Mal.</l>
+          </lg>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Auch du erwähnest solchen Ursprungs Fabelwahn?</l>
+            <l>Aus göttlich altem Kraftgeschlechte stammt sie her:</l>
+            <l>Uranione, Heren gleich und Schwester Zeus'.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Doch schmückt' Hephaistos wohlbedenkend reich sie aus</l>
+            <l>Ein goldnes Hauptnetz flechtend erst mit kluger Hand,</l>
+            <l>Die feinsten Drähte wirkend, strickend mannigfach.</l>
+          </lg>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>– Dies göttliche Gehäge, nicht das Haar bezwang's,</l>
+            <l>Das übervolle, strotzend braune, krause Haar;</l>
+            <l>Ein Büschel flammend warf sich von dem Scheitel auf.</l>
+          </lg>
+        </sp>
+        <pb n="351"/>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Drum schlang er Ketten neben an, gediegene.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>In Flechten glänzend schmiegte sich der Wunderwuchs,</l>
+            <l>Der, freigegeben, schlangengleich die Ferse schlug.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Das Diadem, nur Aphroditen glänzt es so!</l>
+            <l>Pyropisch, unbeschreiblich, seltsam leuchtet' es.</l>
+          </lg>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Mir blickt' es nur gesellig aus dem Kranz hervor</l>
+            <l>Aufblühnder Blumen; Stirn und Braue hüllten sie,</l>
+            <l>Die neidischen! Wie Kriegsgefährte den Schützen deckt</l>
+            <l>Mit dem Schild, so sie der Augen treffende Pfeilgewalt.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Geknüpft mit Kettenbändern schaut' ich jenen Kranz;</l>
+            <l>Der Schulter schmiegten sie zwitzernd, glimmernd gern sich an.</l>
+          </lg>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Des Ohres Perle schwankt mir vor dem Auge noch,</l>
+            <l>Wie sich frei das Haupt anmutiglich bewegete.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Gereihte Gaben Amphitritens trug der Hals.</l>
+            <l>Dann vielgeblümten Kleides Feld, wie es wunderbar</l>
+            <l>Mit frühlingsreichem bunten Schmuck die Brust umgab.</l>
+          </lg>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>An diese Brust mich Glücklichen hat sie gedrückt!</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Des Gürtels Kunst war über alles lobenswert.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Und diesen Gürtel hab' ich liebend aufgelöst!</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Dem Drachen, um den Arm geringelt, lernt' ich ab,</l>
+            <l>Wie starr Metall im Schlangenkreise sich dehnt und schließt.</l>
+          </lg>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Mit diesen Armen liebevoll umfing sie mich!</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Die Ringe schmückend verbreiterten die schlanke Hand.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Die mir so oft sich herzerfreuend hingestreckt!</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Und glich sie wohl Athenens Hand an Kunstgeschick?</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Ich weiß es nicht; nur liebekosend kannt' ich sie.</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Athenens Webstuhl offenbart' ihr Oberkleid.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Wie's wellenschimmernd, wogenhaft ihr wallte nach.</l>
+        </sp>
+        <pb n="352"/>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Der Saum verwirrte fesselnd auch den schärfsten Blick.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Sie zog die Welt auf ihren Pfaden nach sich her.</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Gewundne Riesenblumen, Füllhorn jegliche.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Den reichen Kelchen mutiges Gewild entquoll.</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Das Reh, zu fliehen, es zu verfolgen, sprang der Leu.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Wer säh' den Saum an, zeigte sich der Fuß im Schritt,</l>
+            <l>Beweglich wie die Hand erwidernd Liebesdruck.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Auch hier nicht müde schmückte nur der Künstler mehr;</l>
+            <l>Biegsame Sohlen, goldne, schrittbefördernde.</l>
+          </lg>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Beflügelte! sie rührte kaum den Boden an.</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Gegliedert schnürten goldne Riemen schleifenhaft.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>O! rufe mir nicht jene Hüllepracht hervor!</l>
+            <l>Der Allbegabten wußt' ich nichts zu geben mehr;</l>
+            <l>Die Schönste, die Geschmückteste, die Meine war's!</l>
+            <l>Ich gab mich selbst ihr, gab mich mir zum ersten Mal!</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Und leider so auf ewig dir entriß sie dich!</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Und sie gehört auf ewig mir, die Herrliche!</l>
+          <lg>
+            <l>Der Seligkeit Fülle, die hab' ich empfunden!</l>
+            <l>Die Schönheit besaß ich, sie hat mich gebunden;</l>
+            <l>Im Frühlingsgefolge trat herrlich sie an.</l>
+            <l>Sie erkannt' ich, sie ergriff ich, da war es getan!</l>
+            <l>Wie Nebel zerstiebte trübsinniger Wahn,</l>
+            <l>Sie zog mich zur Erd' ab, zum Himmel hinan.</l>
+          </lg>
+          <lg>
+            <l>Du suchest nach Worten, sie würdig zu loben,</l>
+            <l>Du willst sie erhöhen; sie wandelt schon oben</l>
+            <l>Vergleich ihr das Beste, du hältst es für schlecht.</l>
+            <l>Sie spricht, du besinnst dich, doch hat sie schon recht.</l>
+            <l>Du stemmst dich entgegen; sie gewinnt das Gefecht.</l>
+            <l>Du schwankst, ihr zu dienen, und bist schon ihr Knecht.</l>
+          </lg>
+          <lg>
+            <l>Das Gute, das Liebe, das mag sie erwidern.</l>
+            <l>Was hilft hohes Ansehn? sie wird es erniedern.</l>
+          </lg>
+          <pb n="353"/>
+          <lg>
+            <l>Sie stellt sich ans Ziel hin, beflügelt den Lauf;</l>
+            <l>Vertritt sie den Weg dir, gleich hält sie dich auf.</l>
+            <l>Du willst ein Gebot tun, sie treibt dich hinauf,</l>
+            <l>Gibst Reichtum und Weisheit und alles in den Kauf.</l>
+          </lg>
+          <lg>
+            <l>Sie steiget hernieder in tausend Gebilden,</l>
+            <l>Sie schwebet auf Wassern, sie schreitet auf Gefilden,</l>
+            <l>Nach heiligen Maßen erglänzt sie und schallt,</l>
+            <l>Und einzig veredelt die Form den Gehalt,</l>
+            <l>Verleibt ihm, verleiht sich die höchste Gewalt.</l>
+            <l>Mir erschien sie in Jugend-, in Frauengestalt.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Dem Glück der Jugend heiß' ich Schönheit nah verwandt</l>
+            <l>Auf Gipfeln weilt so eines wie das andre nicht.</l>
+          </lg>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Und auch im Wechsel beide, nun und immer, schön:</l>
+            <l>Denn ewig bleibt Erkornen anerkanntes Glück.</l>
+            <l>So neu verherrlicht leuchtete das Angesicht</l>
+            <l>Pandorens mir aus buntem Schleier, den sie jetzt</l>
+            <l>Sich umgeworfen, hüllend göttlichen Gliederbau.</l>
+            <l>Ihr Antlitz, angeschaut allein, höchst schöner war's,</l>
+            <l>Dem sonst des Körpers Wohlgestalt wetteiferte;</l>
+            <l>Auch ward es rein der Seele klar gespiegelt Bild,</l>
+            <l>Und sie, die Liebste, Holde, leicht-gesprächiger,</l>
+            <l>Zutraulich mehr, geheimnisvoll gefälliger.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Auf neue Freuden deutet solche Verwandelung.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Und neue Freuden, leidenschaffende, gab sie mir.</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Laß hören! Leid aus Freude tritt so leicht hervor.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Am schönsten Tage – blühend regte sich die Welt –</l>
+            <l>Entgegnete sie im Garten mir, verschleiert noch,</l>
+            <l>Nicht mehr allein: auf jedem Arme wiegte sie</l>
+            <l>Ein lieblich Kind, beschattet, Töchterzwillinge.</l>
+            <l>Sie trat heran, daß hoch erstaunt, erfreut ich die</l>
+            <l>Beschauen möchte, herzen auch nach Herzenslust.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Verschieden waren beide, sag' mir, oder gleich?</l>
+        </sp>
+        <pb n="354"/>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <l>Gleich und verschieden; ähnlich nenntest beide wohl.</l>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Dem Vater eins, der Mutter eines, denk' ich doch.</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Das Wahre triffst du, wie es ziemt Erfahrenem.</l>
+            <l>Da sprach sie: Wähle! Das eine sei dir anvertraut,</l>
+            <l>Eins meiner Pflege vorbehalten! Wähle schnell!</l>
+            <l>Epimeleia nennst du dies, Elpore dies.</l>
+            <l>Ich sah sie an. Die eine schalkisch äugelte</l>
+            <l>Vom Schleiersaum her; wie sie meinen Blick gehascht,</l>
+            <l>Zurück sie fuhr und barg sich an der Mutter Brust.</l>
+            <l>Die andre, ruhig gegenteils und schmerzlich fast,</l>
+            <l>Als Jener Blick den meinigen zuerst erwarb,</l>
+            <l>Sah stät herüber, hielt mein Auge fest und fest</l>
+            <l>In ihrem innig, ließ nicht los, gewann mein Herz.</l>
+            <l>Nach mir sich neigend, händereichend, strebte sie</l>
+            <l>Als liebedürftig, hilfsbedürftig, tiefen Blicks.</l>
+            <l>Wie hätt' ich widerstanden! Diese nahm ich auf;</l>
+            <l>Mich Vater fühlend, schloß an meine Brust ich sie,</l>
+            <l>Ihr wegzuscheuchen von der Stirn frühzeit'gen Ernst.</l>
+            <l>Nicht achtend stand ich, daß Pandora weiterschritt,</l>
+            <l>Der Ferngewichnen folgt' ich fröhlich rufend nach;</l>
+            <l>Sie aber, halb gewendet nach dem Eilenden,</l>
+            <l>Warf mit der Hand ein deutlich Lebewohl mir zu.</l>
+            <l>Ich stand versteinert, schaute hin; ich seh' sie noch!</l>
+          </lg>
+          <lg>
+            <l>Vollwüchsig streben drei Zypressen himmelwärts,</l>
+            <l>Wo dort der Weg sich wendet. Sie, gewandt im Gehn,</l>
+            <l>Darzeigte vorgehoben nochmals mir das Kind,</l>
+            <l>Das unerreichbar seine Händchen reichend wies;</l>
+            <l>Und jetzt, hinum die Stämme schreitend, augenblicks</l>
+            <l>Weg war sie! Niemals hab' ich wieder sie gesehn.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Nicht sonderbar soll jedem scheinen, was geschieht,</l>
+            <l>Vereint er sich Dämonen, gottgesendeten.</l>
+            <l>Nicht tadl' ich deiner Schmerzen Glut, Verwitweter!</l>
+            <l>Wer glücklich war, der wiederholt sein Glück im Schmerz.</l>
+          </lg>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Wohl wiederhol' ich's! Immer jenen Zypressen zu,</l>
+            <pb n="355"/>
+            <l>Mein einz'ger Gang blieb's. Blickt' ich doch am liebsten hin,</l>
+            <l>Allwo zuletzt sie schwindend mir im Auge blieb.</l>
+            <l>Sie kommt vielleicht, so dacht' ich, dorther mir zurück,</l>
+            <l>Und weinte quellweis, an mich drückend jenes Kind</l>
+            <l>An Mutterstatt. Es sah mich an und weinte mit,</l>
+            <l>Bewegt von Mitgefühlen, staunend, unbewußt. –</l>
+            <l>So leb' ich fort, entgegen ewig verwaister Zeit,</l>
+            <l>Gestärkt an meiner Tochter zart besorgtem Sinn,</l>
+            <l>Die nun bedürftig meiner Vatersorge wird,</l>
+            <l>Von Liebesjammer unerträglich aufgequält.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Vernahmst du nichts von deiner Zweiten diese Zeit?</l>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Grausam gefällig steigt sie oft als Morgentraum,</l>
+            <l>Geschmückt, mit Phosphoros herüber; schmeichelnd fließt</l>
+            <l>Versprechen ihr vom Munde; kosend naht sie mir</l>
+            <l>Und schwankt und flieht. Mit ewigem Verwandlen täuscht</l>
+            <l>Sie meinen Kummer, täuscht zuletzt auf Ja und Ja</l>
+            <l>Den Flehnden mit Pandorens Wiederkehr sogar.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Elporen kenn' ich, Bruder, darum bin ich mild</l>
+            <l>Zu deinen Schmerzen, dankbar für mein Erdenvolk.</l>
+            <l>Du mit der Göttin zeugtest ihm ein holdes Bild,</l>
+            <l>Zwar auch verwandt mit jenen Rauchgeborenen;</l>
+            <l>Doch stets gefällig täuschet sie unschuldiger,</l>
+            <l>Entbehrlich keinem Erdensohn. Kurzsichtigen</l>
+            <l>Zum zweiten Auge wird sie; jedem sei's gegönnt! –</l>
+            <l>Du stärkend aber deine Tochter stärke dich...</l>
+            <l>Wie! hörst du nicht? versinkest zur Vergangenheit?</l>
+          </lg>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Wer von der Schönen zu scheiden verdammt ist,</l>
+            <l>Fliehe mit abegewendetem Blick!</l>
+            <l>Wie er, sie schauend, im Tiefsten entflammt ist,</l>
+            <l>Zieht sie, ach! reißt sie ihn ewig zurück.</l>
+          </lg>
+          <lg>
+            <l>Frage dich nicht in der Nähe der Süßen:</l>
+            <l>Scheidet sie? scheid' ich? Ein grimmiger Schmerz</l>
+            <l>Fasset im Krampf dich, du liegst ihr zu Füßen,</l>
+            <l>Und die Verzweiflung zerreißt dir das Herz.</l>
+          </lg>
+          <pb n="356"/>
+          <lg>
+            <l>Kannst du dann weinen und siehst sie durch Tränen,</l>
+            <l>Fernende Tränen, als wäre sie fern:</l>
+            <l>Bleib! Noch ist's möglich! Der Liebe, dem Sehnen</l>
+            <l>Neigt sich der Nacht unbeweglichster Stern.</l>
+          </lg>
+          <lg>
+            <l>Fasse sie wieder! Empfindet selbander</l>
+            <l>Euer Besitzen und euren Verlust!</l>
+            <l>Schlägt nicht ein Wetterstrahl euch aus einander,</l>
+            <l>Inniger dränget sich Brust nur an Brust.</l>
+          </lg>
+          <lg>
+            <l>Wer von der Schönen zu scheiden verdammt ist,</l>
+            <l>Fliehe mit abegewendetem Blick!</l>
+            <l>Wie er, sie schauend, im Tiefsten entflammt ist,</l>
+            <l>Zieht sie, ach! reißt sie ihn ewig zurück!</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Ist's wohl ein Glück zu nennen, was in Gegenwart</l>
+            <l>Ausschließend wegweist alles, was ergötzlich lockt,</l>
+            <l>Abwesend aber, jeden Trost verneinend, quält?</l>
+          </lg>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Trostlos zu sein, ist Liebenden der schönste Trost;</l>
+            <l>Verlornem nachzustreben selbst schon mehr Gewinn,</l>
+            <l>Als Neues aufzuhaschen. Weh doch! Eitles Mühn,</l>
+            <l>Sich zu vergegenwärt'gen Ferngeschiedenes,</l>
+            <l>Unwiederherstellbares! hohle, leid'ge Qual!</l>
+          </lg>
+          <lg>
+            <l>Mühend versenkt ängstlich der Sinn</l>
+            <l>Sich in die Nacht, suchet umsonst</l>
+            <l>Nach der Gestalt. Ach! wie so klar</l>
+            <l>Stand sie am Tag sonst vor dem Blick.</l>
+          </lg>
+          <lg>
+            <l>Schwankend erscheint kaum noch das Bild;</l>
+            <l>Etwa nur so schritt sie heran!</l>
+            <l>Naht sie mir denn? Faßt sie mich wohl? –</l>
+            <l>Nebelgestalt schwebt sie vorbei,</l>
+          </lg>
+          <lg>
+            <l>Kehret zurück, herzlich ersehnt;</l>
+            <l>Aber noch schwankt's immer und wogt's,</l>
+            <l>Ähnlich zugleich andern und sich;</l>
+            <l>Schärferem Blick schwindet's zuletzt.</l>
+            <pb n="357"/>
+            <l>Endlich nun doch tritt sie hervor,</l>
+            <l>Steht mir so scharf gegen dem Blick!</l>
+            <l>Herrlich! So schafft Pinsel und Stahl! –</l>
+            <l>Blinzen des Augs scheuchet sie fort!</l>
+          </lg>
+          <lg>
+            <l>Ist ein Bemühn eitler? Gewiß</l>
+            <l>Schmerzlicher keins, ängstlicher keins</l>
+            <l>Wie es auch streng Minos verfügt,</l>
+            <l>Schatten ist nun ewiger Wert.</l>
+          </lg>
+          <lg>
+            <l>Wieder versucht sei's, dich heran,</l>
+            <l>Gattin, zu ziehn! Hasch' ich sie? Bleibt's</l>
+            <l>Wieder, mein Glück? – Bild nur und Schein!</l>
+            <l>Flüchtig entschwebt's, fließt und zerrinnt.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Zerrinne nicht, o Bruder, schmerzlich aufgelöst!</l>
+            <l>Erhabnen Stammes, hoher Jahre sei gedenk!</l>
+            <l>Im Jünglingsauge mag ich wohl die Träne sehn;</l>
+            <l>Des Greisen Aug' entstellt sie. Guter, weine nicht!</l>
+          </lg>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Der Tränen Gabe, sie versöhnt den grimmsten Schmerz</l>
+            <l>Sie fließen glücklich, wenn's im Innern heilend schmilzt.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Blick' auf aus deinem Jammer! Schau' die Röte dort!</l>
+            <l>Verfehlet Eos wohlgewohnten Pfades heut'?</l>
+            <l>Vom Mittag dorther leuchtet rote Glut empor.</l>
+            <l>Ein Brand in deinen Wäldern, deinen Wohnungen</l>
+            <l>Scheint aufzuflammen. Eile! Gegenwart des Herrn</l>
+            <l>Mehrt jedes Gute, steuert möglichem Verlust.</l>
+          </lg>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Was hab' ich zu verlieren, da Pandora floh?</l>
+            <l>Das brenne dort! Viel schöner baut sich's wieder auf.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Gebautes einzureißen, rat' ich, gnügt's nicht mehr;</l>
+            <l>Mit Willen tät' ich's! Zufall aber bleibt verhaßt.</l>
+            <l>Drum eilig sammle, was von Männern im Bezirk</l>
+            <l>Dir tätig reg' ist, widersteh der Flammen Wut!</l>
+            <l>Mich aber hört gleich jene schwarmgedrängte Schar,</l>
+            <l>Die zum Verderben sich bereit hält wie zum Schutz.</l>
+          </lg>
+        </sp>
+        <pb n="358"/>
+        <sp who="#epimeleia">
+          <speaker>EPIMELEIA.</speaker>
+          <lg>
+            <l>Meinen Angstruf,</l>
+            <l>Um mich selbst nicht:</l>
+            <l>Ich bedarf's nicht,</l>
+            <l>Aber hört ihn!</l>
+            <l>Jenen dort helft,</l>
+            <l>Die zugrund gehn:</l>
+            <l>Denn zugrund ging</l>
+            <l>Ich vorlängst schon.</l>
+          </lg>
+          <lg>
+            <l>Als er tot lag,</l>
+            <l>Jener Hirt, stürzt'</l>
+            <l>Auch mein Glück hin;</l>
+            <l>Nun die Rach' rast,</l>
+            <l>Zum Verderb strömt</l>
+            <l>Sein Geschlecht her.</l>
+          </lg>
+          <lg>
+            <l>Das Gehäg' stürzt,</l>
+            <l>Und ein Wald schlägt</l>
+            <l>Mächt'ge Flamm' auf.</l>
+            <l>Durch die Rauchglut</l>
+            <l>Siedet Balsam</l>
+            <l>Aus dem Harzbaum.</l>
+          </lg>
+          <lg>
+            <l>An das Dach greift's,</l>
+            <l>Das entflammt schon.</l>
+            <l>Das Gesparr kracht!</l>
+            <l>Ach! es bricht mir</l>
+            <l>Übers Haupt ein!</l>
+            <l>Es erschlägt mich</l>
+            <l>In der Fern' auch!</l>
+            <l>Jene Schuld ragt!</l>
+            <l>Auge droht mir,</l>
+            <l>Braue winkt mir</l>
+            <l>Ins Gericht hin!</l>
+          </lg>
+          <lg>
+            <l>Nicht dahin trägt</l>
+            <l>Mich der Fuß, wo</l>
+            <l>Phileros wild</l>
+            <l>Sich hinabstürzt</l>
+            <pb n="359"/>
+            <l>In den Meerschwall.</l>
+            <l>Die er liebt, soll</l>
+            <l>Seiner wert sein!</l>
+            <l>Lieb' und Reu' treibt</l>
+            <l>Mich zur Flamm' hin,</l>
+            <l>Die aus Liebsglut</l>
+            <l>Rasend aufquoll.</l>
+          </lg>
+          <stage>Ab.</stage>
+        </sp>
+        <sp who="#epimetheus">
+          <speaker>EPIMETHEUS.</speaker>
+          <lg>
+            <l>Diese rett' ich,</l>
+            <l>Sie die einz'ge!</l>
+            <l>Jenen wehr' ich</l>
+            <l>Mit der Hauskraft,</l>
+            <l>Bis Prometheus</l>
+            <l>Mir das Heer schickt.</l>
+            <l>Dann erneun wir</l>
+            <l>Zorn'gen Wettkampf.</l>
+            <l>Wir befrein uns;</l>
+            <l>Jene fliehn dann,</l>
+            <l>Und die Flamm' lischt.</l>
+          </lg>
+          <stage>Ab.</stage>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Nun heran ihr,</l>
+            <l>Die im Schwarm schon</l>
+            <l>Um die Felskluft,</l>
+            <l>Eure Nachtburg,</l>
+            <l>Aus dem Busch auf,</l>
+            <l>Eurem Schirmdach,</l>
+            <l>Strebend aufsummt!</l>
+          </lg>
+          <lg>
+            <l>Eh' ihr auszieht</l>
+            <l>In das Fernland,</l>
+            <l>Diesem Nachbar</l>
+            <l>Werdet hilfreich</l>
+            <l>Und befreit ihn</l>
+            <l>Vom Gewaltschlag</l>
+            <l>Wilder Rachlust!</l>
+          </lg>
+        </sp>
+        <sp who="#krieger">
+          <speaker>KRIEGER.</speaker>
+          <lg>
+            <l>Der Ruf des Herrn,</l>
+            <l>Des Vaters, tönt;</l>
+            <l>Wir folgen gern,</l>
+            <l>Wir sind's gewöhnt;</l>
+            <l>Geboren sind</l>
+            <l>Wir all' zum Streit,</l>
+            <pb n="360"/>
+            <l>Wie Schall und Wind</l>
+            <l>Zum Weg bereit.</l>
+          </lg>
+          <lg>
+            <l>Wir ziehn, wir ziehn</l>
+            <l>Und sagen's nicht;</l>
+            <l>Wohin? wohin?</l>
+            <l>Wir fragen's nicht;</l>
+            <l>Und Schwert und Spieß,</l>
+            <l>Wir tragen's fern,</l>
+            <l>Und jens und dies,</l>
+            <l>Wir wagen's gern.</l>
+          </lg>
+          <lg>
+            <l>So geht es kühn</l>
+            <l>Zur Welt hinein;</l>
+            <l>Was wir beziehn,</l>
+            <l>Wird unser sein:</l>
+            <l>Will einer das,</l>
+            <l>Verwehren wir's;</l>
+            <l>Hat einer was,</l>
+            <l>Verzehren wir's.</l>
+          </lg>
+          <lg>
+            <l>Hat einer gnug</l>
+            <l>Und will noch mehr,</l>
+            <l>Der wilde Zug</l>
+            <l>Macht alles leer.</l>
+            <l>Da sackt man auf!</l>
+            <l>Und brennt das Haus,</l>
+            <l>Da packt man auf</l>
+            <l>Und rennt heraus.</l>
+          </lg>
+          <lg>
+            <l>So zieht vom Ort,</l>
+            <l>Mit festem Schritt,</l>
+            <l>Der Erste fort</l>
+            <l>Den Zweiten mit;</l>
+            <l>Wenn Wahn und Bahn</l>
+            <l>Der Beste brach,</l>
+            <l>Kommt an und an</l>
+            <l>Der Letzte nach.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Verleihet gleich</l>
+            <l>So Schad' als Nutz!</l>
+            <pb n="361"/>
+            <l>Hier weih' ich euch</l>
+            <l>Zu Schutz und Trutz.</l>
+            <l>Auf! rasch Vergnügte,</l>
+            <l>Schnellen Strichs!</l>
+            <l>Der barsch Besiegte</l>
+            <l>Habe sich's!</l>
+            <l>Hier leistet frisch und weislich dringende Hochgewalt</l>
+            <l>Erwünschten Dienst. Das Feuerzeichen schwindet schon,</l>
+            <l>Und brüderlich bringt würd'ge Hilfe mein Geschlecht. –</l>
+            <l>Nun aber Eos, unaufhaltsam strebt sie an,</l>
+            <l>Sprungweise, mädchenartig, streut aus voller Hand</l>
+            <l>Purpurne Blumen. Wie an jedem Wolkensaum</l>
+            <l>Sich reich entfaltend sie blühen, wechseln, mannigfach!</l>
+            <l>So tritt sie lieblich hervor, erfreulich immerfort,</l>
+            <l>Gewöhnet Erdgeborner schwaches Auge sanft,</l>
+            <l>Daß nicht vor Helios' Pfeil erblinde mein Geschlecht,</l>
+            <l>Bestimmt, Erleuchtetes zu sehen, nicht das Licht!</l>
+          </lg>
+        </sp>
+        <sp who="#eos">
+          <speaker>EOS</speaker>
+          <stage>von dem Meere heraufsteigend.</stage>
+          <lg>
+            <l>Jugendröte, Tagesblüte,</l>
+            <l>Bring' ich schöner heut' als jemals</l>
+            <l>Aus den unerforschten Tiefen</l>
+            <l>Des Okeanos herüber.</l>
+            <l>Hurtiger entschüttelt heute</l>
+            <l>Mir den Schlaf, die ihr des Meeres</l>
+            <l>Felsumsteilte Bucht bewohnet,</l>
+            <l>Ernste Fischer, frisch vom Lager!</l>
+            <l>Euer Werkzeug nehmt zur Hand.</l>
+          </lg>
+          <lg>
+            <l>Schnell entwickelt eure Netze,</l>
+            <l>Die bekannte Flut umzingelnd:</l>
+            <l>Eines schönen Fangs Gewißheit</l>
+            <l>Ruf' ich euch ermunternd zu.</l>
+            <l>Schwimmet, Schwimmer! taucht, ihr Taucher!</l>
+            <l>Spähet, Späher, auf dem Felsen!</l>
+            <l>Ufer wimmle wie die Fluten,</l>
+            <l>Wimmle schnell von Tätigkeit!</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Was hältst du deinen Fuß zurück, du Flüchtige?</l>
+            <l>Was fesselt an dies Buchtgestade deinen Blick?</l>
+            <pb n="362"/>
+            <l>Wen rufst du an, du Stumme sonst, gebietest wem?</l>
+            <l>Die niemand Rede stehet, diesmal sprich zu mir!</l>
+          </lg>
+        </sp>
+        <sp who="#eos">
+          <speaker>EOS.</speaker>
+          <lg>
+            <l>Jenen Jüngling rettet, rettet!</l>
+            <l>Der verzweiflend, liebetrunken,</l>
+            <l>Rachetrunken, schwer gescholten</l>
+            <l>In die nachtumhüllten Fluten</l>
+            <l>Sich vom Felsen stürzete.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Was hör' ich! hat Phileros dem Strafedräun gehorcht?</l>
+            <l>Sich selbst gerichtet, kalten Wellentod gesucht?</l>
+            <l>Auf, eilen wir! dem Leben geb' ich ihn zurück.</l>
+          </lg>
+        </sp>
+        <sp who="#eos">
+          <speaker>EOS.</speaker>
+          <lg>
+            <l>Weile, Vater! hat dein Schelten</l>
+            <l>Ihn dem Tode zugetrieben,</l>
+            <l>Deine Klugheit, dein Bestreben</l>
+            <l>Bringt ihn diesmal nicht zurück.</l>
+            <l>Diesmal bringt der Götter Wille,</l>
+            <l>Bringt des Lebens eignes, reines,</l>
+            <l>Unverwüstliches Bestreben</l>
+            <l>Neugeboren ihn zurück.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <l>Gerettet ist er? sage mir, und schaust du ihn?</l>
+        </sp>
+        <sp who="#eos">
+          <speaker>EOS.</speaker>
+          <lg>
+            <l>Dort! er taucht in Flutenmitte</l>
+            <l>Schon hervor, der starke Schwimmer:</l>
+            <l>Denn ihn läßt die Lust zu leben</l>
+            <l>Nicht, den Jüngling, untergehn.</l>
+          </lg>
+          <lg>
+            <l>Spielen rings um ihn die Wogen,</l>
+            <l>Morgendlich und kurz beweget,</l>
+            <l>Spielt er selbst nur mit den Wogen,</l>
+            <l>Tragend ihn, die schöne Last.</l>
+            <l>Alle Fischer, alle Schwimmer,</l>
+            <l>Sie versammeln sich lebendig</l>
+            <l>Um ihn her, nicht, ihn zu retten:</l>
+            <l>Gaukelnd baden sie mit ihm.</l>
+            <l>Ja Delphine drängen gleitend</l>
+            <l>Zu der Schar sich, der bewegten,</l>
+            <l>Tauchen auf und heben tragend</l>
+            <l>Ihn, den schönen Aufgefrischten.</l>
+            <l>Alles wimmelnde Gedränge</l>
+            <l>Eilet nun dem Lande zu.</l>
+          </lg>
+          <pb n="363"/>
+          <lg>
+            <l>Und an Leben und an Frische</l>
+            <l>Will das Land der Flut nicht weichen;</l>
+            <l>Alle Hügel, alle Klippen</l>
+            <l>Von Lebend'gen ausgeziert!</l>
+          </lg>
+          <lg>
+            <l>Alle Winzer, aus den Keltern,</l>
+            <l>Felsenkellern tretend, reichen</l>
+            <l>Schal' um Schale, Krug um Krüge</l>
+            <l>Den beseelten Wellen zu.</l>
+            <l>Nun entsteigt der Göttergleiche,</l>
+            <l>Von dem ringsumschäumten Rücken</l>
+            <l>Freundlicher Meerwunder schreitend,</l>
+            <l>Reich umblüht von meinen Rosen,</l>
+            <l>Er ein Anadyomen,</l>
+            <l>Auf zum Felsen. – Die geschmückte</l>
+            <l>Schönste Schale reicht ein Alter,</l>
+            <l>Bärtig, lächelnd, wohlbehaglich,</l>
+            <l>Ihm dem Bacchusähnlichen.</l>
+          </lg>
+          <lg>
+            <l>Klirret, Becken! Erz, ertöne!</l>
+            <l>Sie umdrängen ihn, beneidend</l>
+            <l>Mich um seiner schönen</l>
+            <l>Glieder Wonnevollen Überblick.</l>
+            <l>Pantherfelle von den Schultern</l>
+            <l>Schlagen schon um seine Hüften,</l>
+            <l>Und den Thyrsus in den Händen</l>
+            <l>Schreitet er heran ein Gott.</l>
+            <l>Hörst du jubeln? Erz ertönen?</l>
+            <l>Ja, des Tages hohe Feier,</l>
+            <l>Allgemeines Fest beginnt.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Was kündest du für Feste mir? Sie lieb' ich nicht;</l>
+            <l>Erholung reichet Müden jede Nacht genug.</l>
+            <l>Des echten Mannes wahre Feier ist die Tat!</l>
+          </lg>
+        </sp>
+        <sp who="#eos">
+          <speaker>EOS.</speaker>
+          <lg>
+            <l>Manches Gute ward gemein den Stunden;</l>
+            <l>Doch die gottgewählte, festlich werde diese!</l>
+            <l>Eos blicket auf in Himmelsräume,</l>
+            <l>Ihr enthüllt sich das Geschick des Tages.</l>
+            <l>Nieder senkt sich Würdiges und Schönes,</l>
+            <pb n="364"/>
+            <l>Erst verborgen, offenbar zu werden,</l>
+            <l>Offenbar, um wieder sich zu bergen.</l>
+            <l>Aus den Fluten schreitet Phileros her,</l>
+            <l>Aus den Flammen tritt Epimeleia;</l>
+            <l>Sie begegnen sich, und eins im andern</l>
+            <l>Fühlt sich ganz und fühlet ganz das andre.</l>
+            <l>So, vereint in Liebe, doppelt herrlich,</l>
+            <l>Nehmen sie die Welt auf. Gleich vom Himmel</l>
+            <l>Senket Wort und Tat sich segnend nieder,</l>
+            <l>Gabe senkt sich, ungeahnet vormals.</l>
+          </lg>
+        </sp>
+        <sp who="#prometheus">
+          <speaker>PROMETHEUS.</speaker>
+          <lg>
+            <l>Neues freut mich nicht, und ausgestattet</l>
+            <l>Ist genugsam dies Geschlecht zur Erde.</l>
+            <l>Freilich frönt es nur dem heut'gen Tage,</l>
+            <l>Gestrigen Ereignens denkt's nur selten;</l>
+            <l>Was es litt, genoß, ihm ist's verloren.</l>
+            <l>Selbst im Augenblicke greift es roh zu;</l>
+            <l>Faßt, was ihm begegnet, eignet's an sich,</l>
+            <l>Wirft es weg, nicht sinnend, nicht bedenkend,</l>
+            <l>Wie man's bilden möge höhrem Nutzen.</l>
+            <l>Dieses tadl' ich; aber Lehr' und Rede,</l>
+            <l>Selbst ein Beispiel, wenig will es frommen.</l>
+            <l>Also schreiten sie mit Kinderleichtsinn</l>
+            <l>Und mit rohem Tasten in den Tag hin.</l>
+            <l>Möchten sie Vergangnes mehr beherz'gen,</l>
+            <l>Gegenwärt'ges, formend, mehr sich eignen,</l>
+            <l>Wär' es gut für alle; solches wünscht' ich.</l>
+          </lg>
+        </sp>
+        <sp who="#eos">
+          <speaker>EOS.</speaker>
+          <lg>
+            <l>Länger weil' ich nicht, mich treibet fürder</l>
+            <l>Strahlend Helios unwiderstehlich</l>
+            <l>Weg vor seinem Blick zu schwinden, zittert</l>
+            <l>Schon der Tau, der meinen Kranz beperlet.</l>
+            <l>Fahre wohl, du Menschenvater! – Merke:</l>
+            <l>Was zu wünschen ist, ihr unten fühlt es;</l>
+            <l>Was zu geben sei, die wissen's droben.</l>
+            <l>Groß beginnet ihr Titanen; aber leiten</l>
+            <l>Zu dem ewig Guten, ewig Schönen,</l>
+            <l>Ist der Götter Werk; die laßt gewähren.</l>
+          </lg>
+        </sp>
+      </div>
+    </body>
+  </text>
+</TEI>
