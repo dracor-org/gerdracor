@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000587" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Liebe und Wille</title>
+        <title type="sub">Ein ländliches Gespräch in einer Handlung</title>
+        <author>
+          <persName>
+            <forename>August</forename>
+            <forename>Wilhelm</forename>
+            <surname>Iffland</surname>
+          </persName>
+          <idno type="wikidata">Q215115</idno>
+          <idno type="pnd">118555324</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Wikisource</name>
+          <idno type="URL">https://de.wikisource.org/wiki/Liebe_und_Wille</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <title>August Wilhelm Iffland: Liebe und Wille. Ein ländliches Gespräch in Einer
+              Handlung. In: Theater von Aug. Wilh. Iffland. Erste vollständige Ausgabe.
+              Dreiundzwanzigster Band. Wien: Klang 1843, S. 299–314.</title>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="mueller" sex="MALE">
+            <persName>Müller</persName>
+          </person>
+          <person xml:id="muellerin" sex="FEMALE">
+            <persName>Müllerin</persName>
+          </person>
+          <person xml:id="wernau" sex="MALE">
+            <persName>Jakob Wernau</persName>
+          </person>
+          <person xml:id="johanna" sex="FEMALE">
+            <persName>Johanna</persName>
+          </person>
+          <person xml:id="heinrich" sex="MALE">
+            <persName>Heinrich</persName>
+          </person>
+          <person xml:id="sophie" sex="FEMALE">
+            <persName>Sophie</persName>
+          </person>
+          <person xml:id="wilhelm" sex="MALE">
+            <persName>Wilhelm</persName>
+          </person>
+          <person xml:id="berthold" sex="MALE">
+            <persName>Berthold</persName>
+          </person>
+          <person xml:id="walter" sex="MALE">
+            <persName>Walter</persName>
+          </person>
+          <person xml:id="verwalter" sex="MALE">
+            <persName>Verwalter</persName>
+          </person>
+          <person xml:id="alle_junge_leute" sex="UNKNOWN">
+            <persName>Alle junge Leute</persName>
+          </person>
+          <person xml:id="alle" sex="UNKNOWN">
+            <persName>Alle</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#mueller #muellerin"/>
+            <relation name="parent_of" active="#mueller #muellerin" passive="#heinrich #sophie"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2022-07-06">(ss) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1814">
+        <desc/>
+      </event>
+      <event type="premiere" when="1814-01-09">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000587" passive="http://www.wikidata.org/entity/Q112947415"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <pb n="299"/>
+    <front>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">Liebe und Wille.</titlePart>
+          <titlePart type="sub">Ein ländliches Gespräch in einer Handlung.</titlePart>
+          <titlePart type="sub">(Zum Besten der Hinterlassenen derer, welche im Kampfe für das
+            Vaterland geblieben sind.)</titlePart>
+        </docTitle>
+      </titlePage>
+      <pb n="300"/>
+      <castList>
+        <head>Personen.</head>
+        <castItem><role>Gerhard Faber,</role>
+          <roleDesc>Müller.</roleDesc></castItem>
+        <castItem><role>Seine Frau.</role></castItem>
+        <castGroup>
+          <castItem><role>Heinrich,</role></castItem>
+          <castItem><role>Sophie,</role></castItem>
+          <roleDesc>deren Kinder.</roleDesc>
+        </castGroup>
+        <castGroup>
+          <castItem><role>Jakob Wernau,</role></castItem>
+          <castItem><role>Walter,</role></castItem>
+          <castItem><role>Johanna,</role>
+            <roleDesc>seine Frau,</roleDesc></castItem>
+          <castItem><role>Berthold,</role>
+            <roleDesc>Schmied,</roleDesc></castItem>
+          <castItem><role>Wilhelm,</role></castItem>
+          <roleDesc>Landleute.</roleDesc>
+        </castGroup>
+        <castItem><role>Der Verwalter.</role></castItem>
+        <castItem><role>Bauern und Bäuerinnen.</role></castItem>
+      </castList>
+    </front>
+    <pb n="301"/>
+    <body>
+      <div type="scene">
+        <head>Erster Auftritt.</head>
+        <stage>(Freier Platz am Ende des Dorfes, vor der Wohnung des Müllers.)</stage>
+        <stage>Der Müller. Die Müllerin.</stage>
+        <sp who="#mueller">
+          <speaker>Müller</speaker>
+          <stage>(im Heraustreten).</stage>
+          <p>Laß uns heraus gehen, es ist nicht meines Thuns in den vier Mauern!</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Da d'rinnen kann man auch reden, sich einander vernehmen und ansehen, hier aber nehmen
+            Luft und Lärm die Worte vom Munde weg.</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Die Wolken ziehen, wie unsere Gedanken und Wünsche, frisch fort, weiter hinaus! Lärm
+            ist noch zur Zeit nicht da; denn Alle sind heimgegangen und reden sich aus weit und
+            breit, und beschließen, was zu thun ist.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>So sollten wir's auch. – Gethan muß werden. Wem Gutes widerfahren ist, der thue
+            Gutes.</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Hier, unter Gottes freiem Himmel, sei das bedacht. Was recht ist und ehrbar, was
+            wohlgefällig ist und wohlthuend – das erdenkt sich nirgend besser, und gedeiht nirgend
+            besser, als wenn man frisch hinauf blickt in das klare Blau!</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>O ja – und da kommt dort ein Wagen mit Korn, will nach der Mühle zu –</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller</speaker>
+          <stage>(hinaus deutend).</stage>
+          <p>Dort walten die großen Flügel – fahrt zu!</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>D'rinnen schreien die Kinder mit ihren Spielgenossen –</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Sie jauchzen für Freude –</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Springen über Kisten und Kasten –</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Aus freudigem Gemüth –</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Zerbrechen und zerschlagen –</p>
+        </sp>
+        <pb n="302"/>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Was nicht mehr halten will. Laß sie heute meinetwegen in Stücken brechen, was schwächer
+            ist, als sie. Laß ihre Freude stark sein, waren sie doch auch stark in der Noth.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Ich sage so: wer in der Freude –</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Heraus mit der Rede; denn ehe kommen wir nicht zur Sache. Was sagst du?</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Wer in der Freude keine Ordnung zu halten weiß, versteht in der Noth nicht
+            anzugreifen.</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller</speaker>
+          <stage>(mit Muth).</stage>
+          <p>Wer in der Noth an seinem Platze zu bleiben wußte, der darf einen Sprung thun, wenn's
+            Freude gilt.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Nun, so springe denn in Gottes Namen! Aber ich springe nicht mit.</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Und halte du Ordnung in deiner Freude – am Ziele werden wir doch bei einander sein.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin</speaker>
+          <stage>(etwas hastig).</stage>
+          <p>Wovon soll denn nun die Rede sein?</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Von der Freudigkeit.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Ja nun. So wohl! – Freudig bin ich von ganzer Seele, das weiß Gott!</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller</speaker>
+          <stage>(mit Herzlichkeit).</stage>
+          <p>Weiß das und thut mir wohl; aber, was treiben wir nun, daß die Freudigkeit nicht mit
+            der Abendsonne hinunter geht? Wie stellen wir es an, daß wir uns morgen noch an unserer
+            Freudigkeit erfreuen, und die andere Woche noch, und so viele Wochen und Jahre noch, als
+            wir auf der Welt leben! He? Das muß ausgeführt sein, und zur Stelle!</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Ja so? Hm! Ja, das ist denn freilich zu bedenken. – Ei nun – wir – ja, wir thun eben
+            was Gescheites und was Gutes aus Freudigkeit und zum Gedächtniß der Freudigkeit, die uns
+            Gott nun verliehen hat.</p>
+        </sp>
+        <pb n="303"/>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>So ist's recht!</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Und in der Ordnung!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Zweiter Auftritt.</head>
+        <stage>Vorige. Jakob Wernau.</stage>
+        <sp who="#wernau">
+          <speaker>Wernau.</speaker>
+          <p>Guten Tag, Nachbarn! <stage>(Er grüßt, reicht die Hand, will weiter.)</stage></p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Wohinaus? Den guten Tag haben wir schon; nun reden wir von andern Dingen!</p>
+        </sp>
+        <sp who="#wernau">
+          <speaker>Wernau.</speaker>
+          <p>Ein andermal. Es ist mir heute nicht um's Reden, sondern um's Gehen. <stage>(Will
+              fort.)</stage></p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin</speaker>
+          <stage>(hält ihn auf).</stage>
+          <p>Können doch die Männer nichts denken und wollen, sie meinen, sie müßten gleich dabei
+            auch hantiren.</p>
+        </sp>
+        <sp who="#wernau">
+          <speaker>Wernau.</speaker>
+          <p>Frau! Gott läßt es uns wohl werden, denn unsere Kinder sind nun wieder da.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin</speaker>
+          <stage>(ehrerbietig befremdet).</stage>
+          <p><emph>Unsere</emph> Kinder? Ei! Nachbar –</p>
+        </sp>
+        <sp who="#wernau">
+          <speaker>Wernau.</speaker>
+          <p>Ja, so sage ich! Denn wir sind Alle, wie wir sind, des Königs Kinder; und so sind seine
+            Kinder auch unsere Kinder.</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Freilich! Sind wir nicht Alle Ein Herz, Ein Haus und Ein Wille!</p>
+        </sp>
+        <sp who="#wernau">
+          <speaker>Wernau.</speaker>
+          <p>Nun hat mir die Freude die Brust recht weit gemacht, als ich wieder an uns
+            vorüberziehen sah, was unserm guten Vater das Liebe und Theure ist!</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Ging mir eben so, Gevatter! – Und dachte, da fängt der liebe Frieden allmälig wieder an
+            bei uns einzuziehen, wie ich die theuern Kinder sah!</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Ihr Anblick zog mir die Augen zusammen und ich sagte zu meiner Tochter: »Guter Gott,
+            schütze den <pb n="304"/> Vater, den Kronprinzen, die Brüder, und die an seiner Seite
+            gehen!« – mußte aber herzlich dabei weinen; denn – –</p>
+        </sp>
+        <sp who="#wernau">
+          <speaker>Wernau.</speaker>
+          <p>Richtig! Nun wißt ihr wohl: ich stehe allein, habe zu Hause Niemand, mit dem ich von
+            der Sache reden kann.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin</speaker>
+          <stage>(faltet die Hände).</stage>
+          <p>Freilich wohl!</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Ehrlicher Wernau!</p>
+        </sp>
+        <sp who="#wernau">
+          <speaker>Wernau.</speaker>
+          <p>Mein Sohn – er ist voran gegangen – er starb für König und Vaterland! Fließen die Augen
+            über – so fasse ich das eiserne Kreuz, was er erwarb – sehe aufwärts und denke: Bestelle
+            mir Platz neben dir! und schaffe denn so weiter fort, wie es gehen will.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Als Ehrenmann!</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Das weiß Gott!</p>
+        </sp>
+        <sp who="#wernau">
+          <speaker>Wernau.</speaker>
+          <p>Nun – ich helfe mir denn so leidlich durch die Einsamkeit. – Nur heute will's schwer
+            werden. Wie ich die Kinder betrachtete, die lieben Gestalten ansah, die alle des Vaters
+            treuen deutschen Sinn aussprechen, und der Mutter Gottesfurcht und Grüßbarkeit und Milde
+            – da überfiel es mich mit Eins: – Du hast zu Hause Niemand, mit welchem du dich erfreuen
+            kannst! – Das will ich nun erst aus mir heraus gehen – dann will ich wieder daher zu
+            euch kommen! <stage>(Geht ab.)</stage></p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin</speaker>
+          <stage>(holt ihn zurück).</stage>
+          <p>Nachbar! Ihr habt dem Vaterlande Euer Köstlichstes gegeben. – –</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Und habt es mit christlichem Muthe gegeben. –</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Euch gebührt der Ehrenplatz in der Gemeinde.</p>
+        </sp>
+        <sp who="#wernau">
+          <speaker>Wernau.</speaker>
+          <p>Nicht also! – Aber, als mein Fritz – ich freue mich, daß mein Sohn diesen Liebes-Namen
+            getragen – im Krankenhause auf seinem letzten Lager da lag – der König herein trat, den
+            Kranken und Sterbenden Trost zusprach <pb n="305"/> – die Bursche sich auf dem Lager
+            empor richteten, und mein Sohn mit der letzten Kraft unserm Friedrich Wilhelm zurief: –
+            »Es lebe der König!« – wie alle Sterbende mit Glauben und Liebe den Ruf also
+            wiederholten: – »Es lebe der König!« – daß die frommen Thränen dem Herrn vom Angesicht
+            flossen – da dachte ich wohl daran – der Bursche und seine Kameraden sind, Gott sei
+            Dank! auf einem Ehrenplatze verschieden! – Laßt mich nun jetzt d'rauf losgehen, und das
+            noch eine Weile so bedenken – mir wird alsdann wieder frisch zu Muthe, und so bin ich
+            als ein brauchbarer Mann bald wieder hier bei euch zur Stelle! <stage>(Geht
+            ab.)</stage></p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller</speaker>
+          <stage>(sieht ihm nach).</stage>
+          <p>Wie ist mir nun? Ich kann mich nur freuen – ich meine es wohl gut. –</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Du thust auch gut.</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Sind doch nur Worte und leichte, nicht eigentlich Sachen; der aber hat gethan und
+            thut.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Ist denn nicht unser Sohn dabei gewesen; und wenn seine Wunden vollends geheilt sind,
+            wird er nicht zurück kehren?</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Und wenn wir ihn verlieren – werden wir es auch so tragen, wie der Nachbar
+            Jakob&#160;?</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Das weiß ich nicht so vorher zu sagen; aber das weiß ich: wäre es uns beschieden, den
+            Heinrich zu verlieren, so werden wir Freunde finden, wie der Nachbar sie gefunden, denn
+            wir sind Niemand abhold und helfen Freude und Leid ehrlich tragen, wie wir können und
+            vermögen.</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller</speaker>
+          <stage>(ermuthigt).</stage>
+          <p>So wohl! Darum laß uns sinnen und denken, was wir heute Gutes und Nützliches thun
+            können, zum Gedächtniß des Freudentages, wo die königlichen Kinder in das Vaterhaus
+            wieder eingezogen sind.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Ja, es ist ein Freudentag; denn mit tiefen <pb n="306"/> Seufzern sahen wir sie von uns
+            ziehen aus der Mitte derer, die uns Alle bedrängten. Es ist ein Ehrentag; denn wir haben
+            mit der alten Ehre auch das Haus und das Blut unsers Vaters uns wieder erobert und
+            gewonnen. Mit Gott für König und Vaterland! Der Vater an der Spitze, so ging es darauf
+            zu, und alles ist uns reichlich zugefallen.</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Nun – sprich einmal von dergleichen in der Stube! – das geht ja gar nicht! In alle vier
+            Ecken der Welt möchten wir hinaus schreien: – Wir sind wieder das Volk der Ehre, des
+            Ruhms, und die Welt glaubt an uns! – Gelobt sei Gott, der König und sein Volk!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Dritter Auftritt.</head>
+        <stage>Vorige. Johanna.</stage>
+        <sp who="#johanna">
+          <speaker>Johanna.</speaker>
+          <p>Denkt nur, was sich zugetragen hat! Wißt ihr's etwa? Nein, ihr wißt es nicht!</p>
+        </sp>
+        <spGrp>
+          <sp who="#mueller">
+            <speaker>Müller.</speaker>
+            <p>Doch was Gutes?</p>
+          </sp>
+          <sp who="#muellerin">
+            <speaker>Müllerin.</speaker>
+            <p>Ihr seid ja ganz außer Athem!</p>
+          </sp>
+        </spGrp>
+        <sp who="#johanna">
+          <speaker>Johanna.</speaker>
+          <p>Wie sollte ich nicht! Den ganzen Tag auf den Beinen – bewegt – belebt – erfreut – muß
+            mir auch das noch kommen!</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Ei, was denn?</p>
+        </sp>
+        <sp who="#johanna">
+          <speaker>Johanna.</speaker>
+          <p>Bei allen Bekannten war ich schon, und sie haben Alle Freude daran. Nur ihr fehltet mir
+            noch. – Ihr wißt, wie wir uns Alle gefreut haben, als es nun hieß: die königlichen
+            Hoffnungen kommen wieder zu uns her!</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Vor Tage machten wir uns auf den Weg entgegen.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Und drängte immer ein Theil an dem andern vorüber. Jeder wollte der Erste sein, der sie
+            zu Gesichte kriegte.</p>
+        </sp>
+        <sp who="#johanna">
+          <speaker>Johanna.</speaker>
+          <p>Ja, und wie wir die Wagen aus der Ferne <pb n="307"/> sahen – schlug uns das Herz! Wir
+            blieben stehen, falteten die Hände, und da rief Einer: »Sie sind's!« – Ein Anderer:
+            »Unsers guten Königs Kinder!« – Allmälig Eins um's Andere: »Gott erhalte sie! – Die
+            Friedenssonne geht auf! – Der liebe Herr schickt uns den ersten Segen herein – Seine
+            Kinder wohnen wieder unter uns!«</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Wie wir da die Hüte schwenkten, aufschrien: »Gott sei mit dem Könige und seinen
+            Kindern!«</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Uns die Hände reichten, in die Arme fielen und mit Dank und Segensruf den geliebten
+            Kindern entgegen traten!</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Der fand die Züge des Vaters, der das Auge der Mutter – wir fanden Alle, was wir lieben
+            und hoch in Ehren halten.</p>
+        </sp>
+        <sp who="#johanna">
+          <speaker>Johanna.</speaker>
+          <p>Ja, ja – so ist es! Aber, was ist mir dabei begegnet! Ihr wißt ja, wie leider mein Mann
+            und der Nachbar Berthold so bittre Feinde geworden sind, wegen des Streits um die Wiese
+            am hohen Steine.</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Nun, lassen wir das heute liegen!</p>
+        </sp>
+        <sp who="#johanna">
+          <speaker>Johanna</speaker>
+          <stage>(freudig).</stage>
+          <p>Nicht also!</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Es hat mich oft bekümmert, denn Beide sind recht gegen einander ergrimmt.</p>
+        </sp>
+        <sp who="#johanna">
+          <speaker>Johanna.</speaker>
+          <p>So hört doch nur! Indem wir so dem Wagen entgegen gehen, zieht der Berthold an uns
+            hinaus, drückt den Hut in's Gesicht und bietet uns kein Lebenszeichen. Da wir dort zur
+            Stelle sind, die Wagen halten, umgespannt wird, die guten Kinder uns Alle freundlich
+            ansehen und zu uns reden – da kann ich nicht anders – das Herz sagt mir's zu – ich fasse
+            den nächsten Nachbar und spreche: – »Gott, so blickte sie ja auch auf uns her, die gute
+            Mutter, so grüßte Sie, so hielt Sie sich!« – Da drückt mir der Mann die <pb n="308"/>
+            Hand gewaltig. – »Ganz recht, Frau Johanna, so war sie, die uns den Segen da oben
+            erbeten und diesen Segen uns gelassen hat!« – Ich weine laut auf, und da ich mich
+            umsehe, wer war es, der zu mir gesprochen? Nachbar Berthold war's – geht fort, holt
+            meinen Mann her, schlägt ihm die Hand in seine Hand und sagt überlaut: »Guter Eltern
+            Kinder sind Gottes Engel; wo sie durchziehen, darf kein Unfrieden hausen – wir sind
+            verglichen!« – Mein Mann will reden und kann's nicht zuwege bringen. – »Es lebe der
+            König!« – sagen seine Thränen mehr, als seine Worte. – Beide Männer umarmen sich
+            herzhaft, und die dicht umher waren, sprachen alle: »Es lebe der König und seine Kinder!
+            Sie gleichen ihm und ihr, die ja ewig unter uns lebt!«</p>
+        </sp>
+        <sp who="#mueller #muellerin">
+          <speaker>Müller und Müllerin.</speaker>
+          <p>Ewig!</p>
+        </sp>
+        <sp who="#johanna">
+          <speaker>Johanna.</speaker>
+          <p>– Lebt und uns zum Segen durch Ihr Gedächtniß fort waltet und wirkt!</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller</speaker>
+          <stage>(mit ausbrechendem Herzen).</stage>
+          <p>Weil es denn nun so ist – und unsre Freudigkeit und unsre Kraft darin besteht, daß es
+            so ist; so laßt uns nun zu Rathe gehen, wie wir von diesem Tage ein frommes Gedächtniß
+            stiften.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Ja; denn ich sehe den Tag an, als den ersten Vorboten des großen Friedenstages, den wir
+            mit Gut und Blut und Glauben an Gott und die inwohnende Kraft erworben und errungen
+            haben!</p>
+        </sp>
+        <sp who="#johanna">
+          <speaker>Johanna.</speaker>
+          <p>Ja, laßt uns etwas aussinnen –</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Und damit sogleich unter die übrigen treten.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Die wir aber erst vorher auch hören, daß alles in Einigkeit bleibe! – Einigkeit,
+            Einheit, Ausdauer und Einigkeit – das ist der Segen, um den wir bitten wollen. Durch
+            Eintracht sind wir stark geworden, damit haben <pb n="309"/> wir's hindurch gekämpft,
+            damit allein können wir die Kraft bewahren! –</p>
+        </sp>
+        <sp who="#johanna">
+          <speaker>Johanna.</speaker>
+          <p>Es muß ein Ehrengedächtniß sein.</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Ein jährliches Freudenfest, als etwa eine Heirathsfeier wackerer Leute.</p>
+        </sp>
+        <sp who="#johanna">
+          <speaker>Johanna.</speaker>
+          <p>Oder ein festlicher Vergleich unter uns Eins gewordenen Menschen.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin</speaker>
+          <stage>(die indeß nachgedacht, tritt zwischen Beide).</stage>
+          <p>Nicht so! Die Ehre haben wir gewonnen und können nun das Leben verlieren; aber von der
+            Ehre lassen wir nicht mehr ab. Die Freude ist vorhanden, weil die Ehre gewonnen ist. Die
+            Uneinigkeit wollen wir nicht vorher bedenken. Der kleine Hader ist der Rede nicht werth;
+            vor der innerlichen Zwietracht bewahren uns Gott und die Ehre!</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Was soll's denn sein? Denn ohne Gedächtnißfeier soll der Tag nicht bleiben.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Mann, ich sage dir – wo wir stehen und sind, hat uns nicht der Verstand hingebracht,
+            sondern das Herz und die Liebe. Die Liebe hat den Willen geheiligt und die Kräfte enger
+            zusammen gebracht und gehalten. So laßt uns zur Feier des Tages ein Werk der Liebe
+            stiften und der Treue!</p>
+        </sp>
+        <sp who="#johanna">
+          <speaker>Johanna.</speaker>
+          <p>Das habt Ihr aus meiner Seele gesprochen. Ein Werk der Liebe laßt uns stiften!</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Und mich freut es herzlich, wenn solche Gedanken von den Frauen ausgehen. Sie haben bei
+            uns in großem Trübsal ihren Platz mit Würdigkeit genommen und im Verein aller Tugenden
+            ihren Beruf so geheiligt, daß es in angrenzende Länder, ja weit in die Ferne hinaus
+            gewirkt hat. Wem Gott einen lebendigen Athem gegeben, der schämt sich des Kleinen und
+            Halben. Das Gute ist zur Natur geworden. Aus dem Verderbniß ist das Kräftige und
+            Mächtige empor gestiegen. <pb n="310"/> – Ja – die Menschen lieben und ehren sich unter
+            einander, weil sie allzumal besser geworden sind.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Vierter Auftritt.</head>
+        <stage>Vorige. Heinrich. Sophie. Wilhelm und noch etliche junge Leute.</stage>
+        <sp who="#heinrich">
+          <speaker>Heinrich.</speaker>
+          <p>Vater! Wir haben heraus gebracht –</p>
+        </sp>
+        <sp who="#sophie">
+          <speaker>Sophie.</speaker>
+          <p>Was heute und alle Jahre an diesem Tage geschehen sollte.</p>
+        </sp>
+        <sp who="#wilhelm">
+          <speaker>Wilhelm.</speaker>
+          <p>Und sind fast zugleich darauf verfallen. – Keiner hat ein Vorrecht dabei.</p>
+        </sp>
+        <sp who="#sophie">
+          <speaker>Sophie.</speaker>
+          <p>Ich habe es aber zuerst ausgesprochen –</p>
+        </sp>
+        <sp who="#heinrich">
+          <speaker>Heinrich.</speaker>
+          <p>Und das müßt ihr in's Werk richten, wie es gethan werden soll.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Seid nicht so vorlaut, sage ich –</p>
+        </sp>
+        <sp who="#johanna">
+          <speaker>Johanna.</speaker>
+          <p>Laßt sie immerhin! Wer weit vorgreift, kommt an Ort und Stelle.</p>
+        </sp>
+        <sp who="#heinrich">
+          <speaker>Heinrich.</speaker>
+          <p>Ihr findet ohnedies nichts Besseres.</p>
+        </sp>
+        <sp who="#wilhelm">
+          <speaker>Wilhelm.</speaker>
+          <p>Nein, wahrlich nicht!</p>
+        </sp>
+        <sp who="#sophie">
+          <speaker>Sophie.</speaker>
+          <p>Dafür stehe ich.</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Und ihre Einigkeit ist ja immer meine Freude gewesen.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>So steht es auch im Hause unsers Herrn zu. Einigkeit macht die Hausehre. Wir müßten uns
+            ja schämen, wenn es bei uns anders zugehen könnte.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Fünfter Auftritt.</head>
+        <stage>Vorige. Berthold und Walter, Arm in Arm Jakob Wernau in der Mitte führend.
+          Verwalter.</stage>
+        <sp who="#johanna">
+          <speaker>Johanna.</speaker>
+          <p>Seht – seht nur hin – da kommen sie zusammen!</p>
+        </sp>
+        <pb n="311"/>
+        <sp who="#mueller">
+          <speaker>Müller</speaker>
+          <stage>(schlägt in die Hände).</stage>
+          <p>Ja, wahrlich!</p>
+        </sp>
+        <sp who="#wilhelm">
+          <speaker>Wilhelm.</speaker>
+          <p>Wie? Sie waren ja Todtfeinde!</p>
+        </sp>
+        <sp who="#berthold">
+          <speaker>Berthold</speaker>
+          <stage>(frohlockend).</stage>
+          <p>Aller Zwist hat nun ein Ende.</p>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(mit Jauchzen).</stage>
+          <p>Auf der Stelle selbst haben wir uns verglichen.</p>
+        </sp>
+        <sp who="#berthold">
+          <speaker>Berthold.</speaker>
+          <p>Und ohne Gerichtsperson. Da, unser ehrlicher Freund, der Herr Verwalter, hat's mit ein
+            paar Worten niedergeschrieben.</p>
+        </sp>
+        <sp who="#wernau">
+          <speaker>Wernau.</speaker>
+          <p>Ich ging des Weges und mußte Zeuge sein. Gelobt sei Gott, sprach ich, und Dank dem
+            Freudentage im Hause unsers Herrn und Vaters! Fröhliche Menschen sind gute Menschen; wer
+            die Fröhlichkeit schafft, bringt den Segen!</p>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <p>So sprach er, und wollte von uns und weiter gehen.</p>
+        </sp>
+        <sp who="#berthold">
+          <speaker>Berthold.</speaker>
+          <p>Er darf nicht. Wir leiden's nicht.</p>
+        </sp>
+        <sp who="#heinrich">
+          <speaker>Heinrich.</speaker>
+          <p>Bei uns muß er bleiben.</p>
+        </sp>
+        <sp who="#verwalter">
+          <speaker>Verwalter.</speaker>
+          <p>Wir haben Gedanken für den Freudigen, und für den, der's nicht sein kann.</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Wir – und da die jungen Leute, wir wollen Euch treulich zur Seite bleiben.</p>
+        </sp>
+        <sp who="#wilhelm">
+          <speaker>Wilhelm.</speaker>
+          <p>O, und ich – ich lasse Euch schon gar nicht mehr allein! Ihr seid Jedermann tröstlich
+            und behilflich, so ist's wohl recht und ehrlich, daß wir Euch zur Seite sind, wie wir
+            können und wissen.</p>
+        </sp>
+        <sp who="#heinrich">
+          <speaker>Heinrich.</speaker>
+          <p>Ich wiederhole es nicht, weil der's schon gesagt hat, denke aber sonst eben so viel –
+            Und – seht nur dort hinaus – da kommen mehr Leute aus dem Orte! –</p>
+        </sp>
+        <sp who="#wilhelm">
+          <speaker>Wilhelm.</speaker>
+          <p>Was gilt's, die wollen auch davon reden, daß der Tag nicht so leer ausgehen darf –</p>
+        </sp>
+        <pb n="312"/>
+        <sp who="#sophie">
+          <speaker>Sophie.</speaker>
+          <p>Heute Abend muß getanzt werden!</p>
+        </sp>
+        <spGrp>
+          <sp who="#mueller">
+            <speaker>Müller.</speaker>
+            <p>Nun, nun!</p>
+          </sp>
+          <sp who="#muellerin">
+            <speaker>Müllerin.</speaker>
+            <p>Warum nicht gar!</p>
+          </sp>
+        </spGrp>
+        <sp who="#alle_junge_leute">
+          <speaker>Alle junge Leute.</speaker>
+          <p>Auf den Abend tanzen wir! Wir tanzen!</p>
+        </sp>
+        <sp who="#johanna">
+          <speaker>Johanna.</speaker>
+          <p>Ganz recht! Wenn alles wohl im Hause steht, schlägt das Herz hoch auf, und da kann man
+            nicht an die Stuhllehne rücken und es abwarten. Man muß auf, heraus, herum, sich um
+            einander herum tummeln und in's Weite hinaus rufen: Leid weg, Freude ist da, gebt, wer
+            braucht, schwenkt die Dirne, hebt das Glas, mit dem Vater, mit den Kindern, Freude hier
+            und überall!</p>
+        </sp>
+        <sp who="#alle_junge_leute">
+          <speaker>Alle.</speaker>
+          <p>Freude hier und überall!</p>
+        </sp>
+        <sp who="#wernau">
+          <speaker>Wernau.</speaker>
+          <p>Nun, so bleibe ich denn hier bei euch!</p>
+        </sp>
+        <sp who="#heinrich">
+          <speaker>Heinrich.</speaker>
+          <p>So ist's recht! Mögt Ihr lächeln, mögt Ihr ernst drein sehen. Thut, wie Ihr könnt –
+            lieb seid Ihr Allen! <stage>(Er geht mit Wilhelm den Kommenden entgegen.)</stage></p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Es ist ja nicht gut, daß der Mensch allein bleibe!</p>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter.</speaker>
+          <p>Wir gehören zusammen.</p>
+        </sp>
+        <sp who="#berthold">
+          <speaker>Berthold.</speaker>
+          <p>Wie meinen Vater betrachte ich Euch.</p>
+        </sp>
+        <sp who="#verwalter">
+          <speaker>Verwalter.</speaker>
+          <p>Und Ihr seid uns stets ein Vorbild gewesen in allem, was zu thun war.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Was gilt's, die suchen sich Tänzerinnen!</p>
+        </sp>
+        <sp who="#johanna">
+          <speaker>Johanna.</speaker>
+          <p>Vorwärts mag dringen, wer nie rückwärts gelaufen ist.</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Aber, wo bleibt der Entschluß, die That? – <stage>(Zum Müller.)</stage> Das kommt vom
+            Hinauslaufen – heiße Köpfe stürmen in's Freie! Drinnen muß es bedacht, mit dem
+            Kirchgange angefangen sein, darnach mag man sich auslassen.</p>
+        </sp>
+        <pb n="313"/>
+        <sp who="#wernau">
+          <speaker>Wernau.</speaker>
+          <p>Ja – mit dem Kirchgange sei es begonnen; von daher bringen wir den frischen Sinn, das
+            reine Herz, und die geben die rechte Fröhlichkeit!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Sechster Auftritt.</head>
+        <stage>Vorige. Heinrich, Wilhelm in der Umgebung mehrerer Landleute jedes Geschlechts und
+          Alters.</stage>
+        <sp who="#heinrich">
+          <speaker>Heinrich.</speaker>
+          <p>Hier – haben wir noch Niemand etwas gesagt; das kann Vater und Mutter bezeugen.</p>
+        </sp>
+        <sp who="#wilhelm">
+          <speaker>Wilhelm.</speaker>
+          <p>Und Ihr auch, Frau Johanna –</p>
+        </sp>
+        <sp who="#sophie">
+          <speaker>Sophie.</speaker>
+          <p>Das ist gewiß wahr!</p>
+        </sp>
+        <sp who="#alle">
+          <speaker>Alle</speaker>
+          <stage>(treten im Halbzirkel näher vor).</stage>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Es soll mir lieb sein, wenn du einen gescheiten Gedanken hast; aber das vergiß nur
+            nicht, ein Jeder hat das Recht, seine Gedanken zu sagen.</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Und die mehrsten Stimmen entscheiden.</p>
+        </sp>
+        <sp who="#johanna">
+          <speaker>Johanna.</speaker>
+          <p>Unser lieber Nachbar Jakob soll entscheiden.</p>
+        </sp>
+        <sp who="#heinrich">
+          <speaker>Heinrich.</speaker>
+          <p>Nein, das geht nicht an!</p>
+        </sp>
+        <sp who="#wilhelm">
+          <speaker>Wilhelm.</speaker>
+          <p>Er hat Recht; der kann nicht entscheiden.</p>
+        </sp>
+        <sp who="#sophie">
+          <speaker>Sophie.</speaker>
+          <p>Und Ihr auch nicht, Vater!</p>
+        </sp>
+        <sp who="#wilhelm">
+          <speaker>Wilhelm.</speaker>
+          <p>Weil's Euch mit angeht.</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Nun – ich gehe gern mit den Andern.</p>
+        </sp>
+        <sp who="#wernau">
+          <speaker>Wernau.</speaker>
+          <p>Und ich dränge mich nirgend zu.</p>
+        </sp>
+        <sp who="#walter">
+          <speaker>Walter</speaker>
+          <stage>(zu Heinrich).</stage>
+          <p>So redet!</p>
+        </sp>
+        <sp who="#berthold">
+          <speaker>Berthold.</speaker>
+          <p>Ja. Laßt uns wissen, was Ihr meint.</p>
+        </sp>
+        <sp who="#heinrich">
+          <speaker>Heinrich</speaker>
+          <stage>(verlegen).</stage>
+          <p>Nun sie da alle beisammen sind –</p>
+        </sp>
+        <sp who="#wilhelm">
+          <speaker>Wilhelm.</speaker>
+          <p>Und uns so ansehen –</p>
+        </sp>
+        <sp who="#heinrich">
+          <speaker>Heinrich.</speaker>
+          <p>Will's mit dem Reden nicht recht fort – Sprich du, Sophie!</p>
+        </sp>
+        <sp who="#sophie">
+          <speaker>Sophie.</speaker>
+          <p>Nein, du!</p>
+        </sp>
+        <pb n="314"/>
+        <sp who="#wilhelm">
+          <speaker>Wilhelm.</speaker>
+          <p>Sei's darum, rede! Ehrlich Wort finde gute Statt!</p>
+        </sp>
+        <sp who="#heinrich">
+          <speaker>Heinrich.</speaker>
+          <p>Ich denke – was zu thun war, haben wir gethan, und werden's fernerhin mit Gut und Blut.
+            Heute aber sollten wir zur Kirche gehen und danken, daß unser König, seine guten Kinder
+            und alle Seinen frisch erhalten sind; dann sollten wir sammeln und geben – für die
+            Hinterlassenen derer, die mit dem Leben dargethan, wie sie es mit dem Könige und dem
+            Vaterlande gemeint haben.</p>
+        </sp>
+        <sp who="#alle">
+          <speaker>Alle.</speaker>
+          <p>Ja, ja, ja!</p>
+        </sp>
+        <sp who="#mueller #wernau">
+          <speaker>Müller und Wernau</speaker>
+          <stage>(zugleich).</stage>
+          <p>Zur Kirche!</p>
+        </sp>
+        <sp who="#alle">
+          <speaker>Alle.</speaker>
+          <p>Zur Sammlung für die Hinterlassenen!</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Das ist das Wort unserer Liebe und unseres Willens an die Nachkommenschaft.</p>
+        </sp>
+        <sp who="#johanna">
+          <speaker>Johanna.</speaker>
+          <p>Ich wollte so gern ein Fest der Eintracht –</p>
+        </sp>
+        <sp who="#muellerin">
+          <speaker>Müllerin.</speaker>
+          <p>Aus freudiger Liebe – geht Eintracht hervor. Aus Dünkel und Falschheit kommt der
+            Zwiespalt. Der Segen der Liebe im Herrscherhause war dem Volke Beispiel! – Im Leiden war
+            die verklärte Liebe unser Hoffnungsstern!</p>
+        </sp>
+        <sp who="#mueller">
+          <speaker>Müller.</speaker>
+          <p>Aus Gewalt der treuen Liebe sind wir mächtig geworden und ehrenwerth; aus der Kraft
+            freudiger Liebe ströme unser Dank; heilige Eintracht befestige das Werk! An den
+            Ehrentagen des Volks, huldigen wir für uns und die Nachkommen der Tugend, die uns
+            gerettet hat – der <emph>Eintracht</emph>!</p>
+        </sp>
+        <sp who="#alle">
+          <speaker>Alle.</speaker>
+          <p>Der Eintracht.</p>
+        </sp>
+      </div>
+    </body>
+  </text>
+</TEI>
