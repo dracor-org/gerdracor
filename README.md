@@ -1,6 +1,6 @@
 # GerDraCor
 ## Corpus Description
-This is the German Drama Corpus (GerDraCor), a collection of [TEI P5](https://tei-c.org/guidelines/p5/)-encoded German-language plays from 1650 to the 1940s. The corpus is released under the Creative Commons Zero copyright waiver ([CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)).
+This is the German Drama Corpus (GerDraCor), a collection of [TEI P5](https://tei-c.org/guidelines/p5/)-encoded German-language plays from the 1540s to the 1940s. The corpus is released under the Creative Commons Zero copyright waiver ([CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)).
 
 If you want to cite the corpus, please use this publication:
 
@@ -65,11 +65,11 @@ Result:
 
 ![number of speakers per play over time](numOfSpeakers.png)
 
-Here is a barplot showing the number of plays per decade:
+Here is a barplot showing the number of plays per decade (outdated, not containing most recent changes):
 
 ![number of plays per decade](playsPerDecade.png)
 
 ## A Bit of History
 Until we rebuilt our working corpus under its new name GerDraCor, we've been working with an [intermediary format](https://github.com/dlina/project/tree/master/data/zwischenformat) to conduct [our research](https://dlina.github.io/talks/). This format only held structural information, not the texts themselves. Back then, our research group called itself DLINA (digitally-enabled literary network analysis). Since our focus broadened, we stopped using this name. Our future endeavours will sail under the **Programmable Corpora** flag.
 
-(README last updated on December 28, 2021.)
+(README last updated on December 21, 2022.)
