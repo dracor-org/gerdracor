@@ -1,0 +1,1436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000611" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Doctor Ritter</title>
+        <title type="sub">Dramatisches Gedicht in 1 Aufzuge</title>
+        <author>
+          <persName>
+            <forename>Marie</forename>
+            <nameLink>von</nameLink>
+            <surname>Ebner-Eschenbach</surname>
+          </persName>
+          <idno type="wikidata">Q93525</idno>
+          <idno type="pnd">118528661</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Google Books</name>
+          <idno type="URL"
+            >https://books.google.com/books?id=Ii6-ttFFbbAC&amp;printsec=frontcover</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <author>Marie von Ebner-Eschenbach</author>: <title>Doctor Ritter. Dramatisches Gedicht
+              in 1 Aufzuge</title>. <pubPlace>Wien</pubPlace>: <publisher>Reitmann</publisher>
+            <date>1869</date>. (S. <biblScope unit="page" from="1" to="28">1–28</biblScope>.)</bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="gaertner" sex="MALE">
+            <persName>Gärtner</persName>
+          </person>
+          <person xml:id="vogt" sex="MALE">
+            <persName>Vogt</persName>
+          </person>
+          <person xml:id="schiller" sex="MALE" ana="http://www.wikidata.org/entity/Q22670">
+            <persName>Doctor Ritter (Friedrich Schiller)</persName>
+          </person>
+          <person xml:id="henriette" sex="FEMALE" ana="http://www.wikidata.org/entity/Q55897735">
+            <persName>Henriette von Wolzogen</persName>
+          </person>
+          <person xml:id="charlotte" sex="FEMALE" ana="http://www.wikidata.org/entity/Q72642">
+            <persName>Charlotte</persName>
+          </person>
+          <person xml:id="reinwald" sex="MALE" ana="http://www.wikidata.org/entity/Q1796152">
+            <persName>Bibliothekar Reinwald</persName>
+          </person>
+          <personGrp xml:id="studenten" sex="UNKNOWN">
+            <name>Studenten aus Heidelberg</name>
+          </personGrp>
+          <listRelation type="personal">
+            <relation name="parent_of" active="#henriette" passive="#charlotte"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2023-03-15">(erre) file conversion from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1869">
+        <desc/>
+      </event>
+      <event type="premiere" when="1869-02-21">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000611"
+        passive="http://www.wikidata.org/entity/Q116983809"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <pb n="1"/>
+    <front>
+      <titlePage>
+        <p>Als Manuscript gedruckt.</p>
+        <p>Ausschließliches Eigenthum der Internationalen Theater-Agentur F. Reitmann in Wien.</p>
+        <docTitle>
+          <titlePart type="main">Doctor Ritter.</titlePart>
+          <titlePart type="sub">Dramatisches Gedicht in 1 Aufzuge</titlePart>
+        </docTitle>
+        <docAuthor>von M. v. Eschenbach.</docAuthor>
+        <docImprint>
+          <pubPlace>Wien</pubPlace>
+          <docDate>1869.</docDate>
+          <publisher>Im Verlage von F. Reitmann.</publisher>
+          <publisher>Druck von E. Jasper in Wien.</publisher>
+        </docImprint>
+      </titlePage>
+      <pb n="2"/>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>
+            <role>Henriette v. Wolzogen.</role>
+          </castItem>
+          <castItem>
+            <role>Charlotte,</role>
+            <roleDesc>ihre Tochter.</roleDesc>
+          </castItem>
+          <castItem>
+            <role>Doctor Ritter (Friedrich Schiller).</role>
+          </castItem>
+          <castItem>
+            <role>Bibliothekar Reinwald.</role>
+          </castItem>
+          <castItem>
+            <role>Vogt,</role>
+            <roleDesc>Verwalter in Bauerbach.</roleDesc>
+          </castItem>
+          <castItem>
+            <role>Der Gärtner.</role>
+          </castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Bauerbach 1783.</p>
+      </set>
+    </front>
+    <pb n="3"/>
+    <body>
+      <div type="act">
+        <stage>(Wohnstube im Herrenhause. Blumengewinde an Fenster und Thüren.)</stage>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>(Vogt am Fenster. Gärtner tritt ein.)</stage>
+          <sp who="#gaertner">
+            <speaker>Gärtner.</speaker>
+            <p>Alles fertig, Herr Verwalter, alles bereit.</p>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <p>'s ist auch Zeit. Die Herrschaften können jeden Augenblick da sein</p>
+          </sp>
+          <sp who="#gaertner">
+            <speaker>Gärtner.</speaker>
+            <p>Mögen kommen. Die Schuljugend ist vor dem Triumphbogen aufgestellt und der Herr
+              Pfarrer vor der Schuljugend. Meine Buben neben den Pöllern – Lunten in der Hand. Der
+              Doctor rennt ab und zu, möchte sich um alles in der Welt nützlich machen, aber – aber
+              – – nun, Kränzewinden ist schwerlich sein Metier; wenn er's nicht trifft,
+                <emph>das</emph> nehm' ich ihm nicht übel.</p>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <p>Das <emph>nicht</emph>, und was <emph>denn</emph>?</p>
+          </sp>
+          <sp who="#gaertner">
+            <speaker>Gärtner.</speaker>
+            <p>Nun, ich meine nur, ein Doctor ist er doch. An seinen Curen freilich merkt man's
+              nicht.</p>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <p><foreign xml:lang="lat">Exempli gratia.</foreign> Citire Er ein Beispiel.</p>
+          </sp>
+          <sp who="#gaertner">
+            <speaker>Gärtner.</speaker>
+            <p>Eines aus dem Dutzend. Dem Maier erkrankt eine Kuh und eine Magd. Der Doctor läßt
+              sich nicht lange bitten – gefällig erweist er sich jederzeit gerne – verschreibt
+              Mixtur für Nummer Eins, Pillen für Nummer Zwei. Aber der Maier irrt sich und gibt der
+              Kuh die Pillen, der Magd die Mixtur.</p>
+          </sp>
+          <pb n="4"/>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <p>Was Er sagt. – Und?</p>
+          </sp>
+          <sp who="#gaertner">
+            <speaker>Gärtner.</speaker>
+            <p>– Sind beide gesund worden, Herr Verwalter!</p>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <p>Ein Resultat, erfreulich für den Maier.</p>
+          </sp>
+          <sp who="#gaertner">
+            <speaker>Gärtner.</speaker>
+            <p>Aber bedenklich für den Doctor, denn man kann fragen: »Wenn sich der Maier
+                <emph>nicht</emph> geirrt hätte, was wäre dann geschehen?«</p>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <p>Er ist ein kluger Mann, mein lieber Gärtner.</p>
+          </sp>
+          <sp who="#gaertner">
+            <speaker>Gärtner.</speaker>
+            <p>Ich <emph>bin</emph> ein Gärtner, das weiß ich und das ganze Dorf. Allein ob Doctor
+              Ritter ein Doctor ist, das frag' ich und das ganz Dorf.</p>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <p>Kümmert's auch das Dorf?</p>
+          </sp>
+          <sp who="#gaertner">
+            <speaker>Gärtner.</speaker>
+            <p>Die Leute sind neugierig. Warum gibt er's gar so geheimnißvoll. Kommt zu Fuß daher im
+              tiefen Winter, im tiefen Schnee und – im leichten Rock. Bringt einen Brief von uns'rer
+              gnäd'gen Frau und wird sofort im Herrenhause einlogirt, verköstigt und verpflegt. Das
+              war sechs Wochen vor Neujahr. Wir haben Mai – er ist noch immer da.</p>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <p>Genirt er Ihn?</p>
+          </sp>
+          <sp who="#gaertner">
+            <speaker>Gärtner.</speaker>
+            <p>Halten zu Gnaden, mich genirt der Leute Gemunkel und Geträtsch. Die einen sagen »'s
+              ist ein Spion,« die andern »'s ist ein Deserteur« – noch andere – ei! der Tag ist lang
+              und der Verstand ist kurz –: »Es ist ein Bräutigam für unser Fräulein.«</p>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <p>Ueber die Dummheit! die vermaledeite!</p>
+          </sp>
+          <pb n="5"/>
+          <sp who="#gaertner">
+            <speaker>Gärtner.</speaker>
+            <p>Je nun – die Herrschaft kommt – jetzt, meint man, wird <emph>er</emph> gehen. Nichts
+              da, er bleibt erst recht.</p>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <p>Erst recht? was soll's? – Genug! <stage>(Auf die Thüre weisend.)</stage> – Ich rathe
+              Ihm –</p>
+          </sp>
+          <sp who="#gaertner">
+            <speaker>Gärtner.</speaker>
+            <p>Halten zu Gnaden – ich – – – ich entferne mich. <stage>(Gärtner ab. In der Thüre
+                begegnet ihm Schiller.)</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweiter Auftritt.</head>
+          <stage>(Vogt. Schiller.)</stage>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Sie kommen nicht – mein Freund – begreifen Sie's?</l>
+            <l part="I">Sie kommen nicht!</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l part="F">Geduld, sie werden kommen.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Dies ist ein Tag in meinem Leben, Vogt –</l>
+            <l>Der glücklichste, ach! – oder ganz unselig!</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l>Wenn Sie heut' Abend schlafen geh'n, <foreign xml:lang="lat">amice</foreign>,</l>
+            <l>Dann, wett' ich, sagen Sie: er war nicht das</l>
+            <l part="I">Und jenes nicht.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="F">In Ihrer Herrin Hand</l>
+            <l>Liegt meiner Zukunft Unheil oder Heil.</l>
+            <l>Sie mög' entscheiden, ich – ich beuge mich.</l>
+            <l>Was hat die Edle schon für mich gethan!</l>
+            <l>Sie setzt des Fürsten Gnade auf das Spiel,</l>
+            <l>Die mir verloren, deren sie bedarf,</l>
+            <l>Und bietet Schutz, ein Obdach bietet sie</l>
+            <l>Dem Freund- und Heimatlosen, dem Verbannten.</l>
+            <l>Und mehr noch – mehr! Sie hält mich tröstend aufrecht,</l>
+            <l>Und mild und ernst, wie eine gute Mutter,</l>
+            <l>Ruft sie mir Muth und Rath und Warnung zu.</l>
+            <pb n="6"/>
+            <l>Sie thut so viel – o Freund, es ist <emph>unmöglich</emph>,</l>
+            <l>Daß sie all' dies um meinetwillen thut –</l>
+            <l>Ich bin ihr werth, weil ich es Lotten bin.</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l part="I">Der Raptus! – taucht er wieder auf?</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="F">Vogt! Vogt!</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l>Sie kennen meine Meinung von der Sache;</l>
+            <l>Ich möcht' nicht oft Gesagtes wiederholen.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Und ich nicht oft Gehörtes wieder hören.</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l>Doch <emph>sollten</emph> Sie, und gäbe Gott, es nützte!</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Der Freundin Mund allein fällt hier den Spruch.</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l>Sie wähnen sich geliebt – mag sein – mag nicht – –</l>
+            <l>Es ist noch weit von eines Mädchens Thräne</l>
+            <l>Bei'm Abschied von dem Jugendfreund des Bruders</l>
+            <l part="I">Bis zu der Mutter Segen ...</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="F">O genug!</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l>Man bricht so leicht nicht mit der Tradition;</l>
+            <l>Ein Fräulein von Wolzogen ward noch nie</l>
+            <l part="I">Vermält an einen Dichter.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="F">Alles was</l>
+            <l>Auf dieser Welt geschieht, geschieht einmal</l>
+            <l part="I">Zum erstenmal.</l>
+          </sp>
+          <pb n="7"/>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l part="F">Lockt Sie's voranzuschreiten</l>
+            <l>Auf neuer Bahn, die noch zu brechen ist?</l>
+            <l>Es geht sich besser auf getret'nem Pfad.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Im allgemeinen – das nicht jedem paßt.</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l>Mein junger Freund – fort mit den eitlen Träumen!</l>
+            <l>Und machen Sie es meinem Sohne nach.</l>
+            <l>Der wählt aus seinem Stande sich ein Mädchen,</l>
+            <l>Die Tochter eines schlichten Musicus;</l>
+            <l>Ein schönes Kind und einfach, brav und klug.</l>
+            <l>Kein sich'res Los hat er ihr noch zu bieten –</l>
+            <l>(Er ist so alt wie Sie, just dreiundzwanzig) –</l>
+            <l>Und darum wirbt er nicht; er strebt und ringt</l>
+            <l>Nach einem, freilich nur bescheid'nen Ziel,</l>
+            <l>Doch wenn er sich's errungen, darf er sagen:</l>
+            <l>»Hier ist mein Herd, hier schalte Du als Weib!</l>
+            <l>Mein Reich ist klein, allein es ist das meine,</l>
+            <l>Ich hab's erworben Dir zu Lieb und Dienst.«</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Nun, lieber Vogt! unendlich ist <emph>mein</emph> Reich!</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l>Doch, vor der Hand – noch nicht von dieser Welt.</l>
+          </sp>
+          <stage>(Pöllerschüsse. Zurufe aus der Ferne.)</stage>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l part="I">Sie kommen!</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="M">Ja! ...</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l part="F">Ich eile – folgen Sie! <stage>(Vogt rasch ab.)</stage></l>
+          </sp>
+          <pb n="8"/>
+          <sp who="#schiller">
+            <speaker>Schiller</speaker>
+            <stage>(macht eine Bewegung, als ob er folgen wollte, bleibt dann plötzlich
+              stehen).</stage>
+            <l>Wie angewurzelt! ... Da steht der Phantast! – –</l>
+            <l>Ist's lange her, daß ich geschworen hätte,</l>
+            <l>Mir wüchsen Flügel? – flieg' ihr nun entgegen! –</l>
+            <stage>(Lauscht hinaus.)</stage>
+            <l>Der Wagen hält ... Ihr Fuß betritt den Boden –</l>
+            <l>Denselben Boden, Himmel! der mich trägt! ...</l>
+            <stage>(Hochrufe wiederholt, immer lauter.)</stage>
+            <l>O, ruft nur! ruft ihr zu! – Die Stimme hier,</l>
+            <l>Die keiner hört, jauchzt volleres Entzücken</l>
+            <l>Als Eure laute Luft ausjubeln kann!</l>
+            <stage>(Schritte und Stimmen ganz nahe.)</stage>
+            <l>Sie kommt – hinweg – wohin verberg' ich mich?</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Der Vorige. Henriette. Charlotte. Vogt.</stage>
+          <sp who="#henriette">
+            <speaker>Henriette</speaker>
+            <stage>(auf der Schwelle).</stage>
+            <l part="I">Welch' ein Empfang – habt Dank! habt Dank!</l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Lotte</speaker>
+            <stage>(die Schillern zuerst erblickt).</stage>
+            <l part="F">Da ist er!</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="I">Oh!</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="M">Schiller!</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="F">Freundin! – Beste! – Gütigste! –</l>
+            <l part="I">Charlotte!</l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte.</speaker>
+            <l part="F"><emph>Lotte</emph>! – immer noch wie einst.</l>
+            <l>Sind wir nicht mehr die alten guten Freunde?</l>
+            <l part="I">Nun – reden Sie!</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="F">Ich habe keine Worte.</l>
+          </sp>
+          <pb n="9"/>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l>Herrgott! – und <emph>der</emph> – der will ein Dichter sein!</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Er will – will nicht – hier hört das Wollen auf.</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="I">Sie sind bewegt? Sie leiden?</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="F">Ich? ... O wenn</l>
+            <l><emph>Das</emph> leiden heißt – dann, Freude, fahre wohl! ...</l>
+            <l>Mein Gott, so lang die tiefste Einsamkeit,</l>
+            <l>Und plöglich: <emph>Sie</emph>! ... Ich muß es fassen erst,</l>
+            <l>Das Wunder und das Glück, daß Sie es <emph>sind</emph> ...</l>
+            <l>Mich finden erst – erst zu mir selber kommen! – <stage>(Rasch ab.)</stage></l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte</speaker>
+            <stage>(zu Vogt).</stage>
+            <l part="I">Was fehlt ihm denn?</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l part="M">O dem fehlt viel!</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette</speaker>
+            <stage>(für sich).</stage>
+            <l part="F">Sehr seltsam –</l>
+            <stage>(Zu Vogt.)</stage>
+            <l part="I">Verstehen Sie ...?</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l part="F">Ja leider, nur zu gut.</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="I">Nun dann erklären – –</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l part="F">Wol. Ich werde – <stage>(auf Charlotte deutend)</stage> später.</l>
+          </sp>
+          <pb n="10"/>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l>Es thut mir weh, ihn <emph>so</emph> zu finden, Vogt,</l>
+            <l>Und eben jetzt, in diesem Augenblick ...</l>
+            <stage>(Abbrechend.)</stage>
+            <l>Ich hab' von Dalberg einen Brief an ihn,</l>
+            <l part="I">Der ihn beruft nach Mannheim.</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l part="F">In ein Amt?</l>
+            <l>Ein Amt, das Brot gibt, seinen Mann ernährt?</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="I">Wir wollen 's hoffen.</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l part="F">Er wird angestellt?</l>
+            <l>Warum nicht gar! – Ich bitte Ihro Gnaden,</l>
+            <l part="I">Wird angestellt, als – was?</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="M">Als Dichter.</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l part="F">Oh!</l>
+            <l part="I"><foreign xml:lang="lat">Mehercle!</foreign> ...</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="M">Als Theaterdichter.</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l part="F">Hm!</l>
+            <l>Und davon hoffen Ihro Gnaden – Brot?</l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte.</speaker>
+            <l>Ja! Brot für <emph>ihn</emph>, für <emph>uns</emph> –: Ambrosia!</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l>Von allem was der Jüngling je gewagt,</l>
+            <l>Scheint <emph>dieser</emph> Schritt mir das gewagteste!</l>
+          </sp>
+          <pb n="11"/>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l>Und darum darf er ihn nur freudig thun,</l>
+            <l>Aus eig❜ner Wahl, aus tiefstem Herzensdrang.</l>
+            <l>Blickt er zurück nach dem, was er verläßt,</l>
+            <l>Wirft er nicht ohne Zagen und Besinnen</l>
+            <l>Sich in die Arme seinem Genius,</l>
+            <l>Mit jener festen Siegeszuversicht,</l>
+            <l>Die den Triumf verkündet und verleiht –</l>
+            <l part="I">Dann ist's vorbei.</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l part="F">Noch eh' es angefangen.</l>
+            <l>Ich frag' in Demut: – wär' das Unglück groß? –</l>
+            <l>Indem sich Schiller in das Ausland wendet,</l>
+            <l>Vollzieht er ganz den Bruch mit seinem Fürsten,</l>
+            <l>Und dazu, schwant mir, räth' man besser – nicht.</l>
+            <l>Er hat auch so sich schwer genug versündigt ...</l>
+            <l>Ein Carlsschüler – der »die Räuber« schreibt,</l>
+            <l>Und »die Verschwörung des ...« Wie heißt er doch? –</l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte.</speaker>
+            <l>Fiesco! Ein republikanisch Trauerspiel.</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt</speaker>
+            <stage>(schlägt die Hände zusammen, mit Verzweiflung).</stage>
+            <l>Republikan ... <foreign xml:lang="lat">O Tempora, o mores!</foreign> –</l>
+            <l>Ein Feldscheer, der sich heimlich absentirt,</l>
+            <l>Ein Unterthan, der den Gehorsam bricht,</l>
+            <l>Und schuld'ge Ehrfurcht an den Nagel hängt.</l>
+            <l>Ein Sohn – der einzige – des bravsten Vaters.</l>
+            <l>Der all sein Hoffen nur auf ihn gesetzt</l>
+            <l>Und ihn schon sah, als Doctor und Soldat –</l>
+            <l>Ein Weiser und ein Held! – denselben Sohn,</l>
+            <l>Der jetzt – dem Himmel sei's geklagt – sich der</l>
+            <l>Poeterei ergibt, Gedichte macht,</l>
+            <l>Und Schulden, um – um (mit Respect zu sagen)</l>
+            <l>Den Quark gedruckt der Welt zu offeriren.</l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte.</speaker>
+            <l part="I">O der Barbar!</l>
+          </sp>
+          <pb n="12"/>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l part="F">Mit Gunst – ich liebe ein</l>
+            <l>Gedicht – (besonders wenn's lateinisch ist) –</l>
+            <l>Wenn zum Vergnügen man es schreibt und liest.</l>
+            <l>Ich halte wenig d'rauf – als Broterwerb;</l>
+            <l>Hans Sachs, der gute Schuster und Poet –</l>
+            <l>Das war ein Mann! der trieb's in rechter Weise;</l>
+            <l>Es gab sein Handwerk seiner Kunst zu essen,</l>
+            <l>Zuerst der Stiefel – hernach das Gedicht! –</l>
+            <l>Doch unser Doctor, der ist and'rer Meinung,</l>
+            <l>Der sagt: erst Poesie, dann – Recipe.</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l>Die Medizin ist seine Stärke nicht.</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt.</speaker>
+            <l>Die freilich nicht. Er hat es weit gebracht.</l>
+            <l>Zieht unter fremdem Namen, arm, allein,</l>
+            <l>Ein Heimatloser durch die weite Welt –</l>
+            <l>Es ist ein Graus – und dabei denkt er noch ...</l>
+            <l part="I">Doch <emph>das</emph> – unter vier Augen.</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="F">Nun? – was ist's?</l>
+            <l part="I">So sprechen Sie! ...</l>
+          </sp>
+          <sp who="#vogt">
+            <speaker>Vogt</speaker>
+            <stage>(auf Charlotte deutend).</stage>
+            <l part="M">Ich bitte ...</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="F">Gut denn – gut;</l>
+            <l>So folgen Sie mir auf mein Zimmer.</l>
+          </sp>
+          <stage>(Henriette und Vogt ab nach rechts.)</stage>
+          <sp who="#charlotte">
+            <speaker>Charlotte.</speaker>
+            <l part="I">Ich unterdeß, ich will ...</l>
+          </sp>
+        </div>
+        <pb n="13"/>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <stage>(Die Vorige. Schiller.)</stage>
+          <sp who="#schiller">
+            <speaker>Schiller</speaker>
+            <stage>(tritt Charlotten in der Thüre entgegen).</stage>
+            <l part="F">Wohin, Charlotte?</l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte.</speaker>
+            <l>In's Freie, in den Garten, in den Wald!</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="I">Ich darf wol mit?</l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte.</speaker>
+            <l part="F">O wenn's gefällig ist?</l>
+            <l part="I">Ich will Sie führen ...</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="F">Lotte, liebe Lotte! –</l>
+            <l>Sie waren, als wir schieden, tief ergriffen,</l>
+            <l part="I">Und jetzt – beim Wiedersehen ...</l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte.</speaker>
+            <l part="F">Kommen Sie!</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Ist dies das Auge, das in Thränen schwamm</l>
+            <l>Bei uns'rem letzten Lebewol in Stuttgart?</l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte.</speaker>
+            <l>Ich wüßte nicht, daß es ein and'res wäre.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="I">Sie können scherzen?</l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte.</speaker>
+            <l part="F">Ei! wie frohe Leute.</l>
+          </sp>
+          <pb n="14"/>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="I">Worüber denn so froh?</l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte.</speaker>
+            <l part="F">Nun, daß ich lebe</l>
+            <l>Und daß es Mai ist und die Sonne scheint.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Das vollste Glück, die innig tiefste Freude,</l>
+            <l part="I">Die scherzen nicht.</l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte.</speaker>
+            <l part="F">Die scherzen nicht?</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Sie sind so ernst wie Götter, und das Herz,</l>
+            <l>Das sie beseelen, die Unendlichen,</l>
+            <l>Empfängt sie wonnebebend – bebend ja –</l>
+            <l>Vor ihrer überird'schen Majestät.</l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte</speaker>
+            <stage>(sieht ihn an; nicht verstehend).</stage>
+            <l>Das wird wol nur der Fall bei Dichtern sein.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Es ist der Fall bei jedem, der empfindet.</l>
+            <l>Und warme Herzen fühlen alle gleich;</l>
+            <l>Des Dichters einzig Vorrecht bleibt, daß er,</l>
+            <l>Was alle fühlen, sagen kann allein.</l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte.</speaker>
+            <l>Was alle ... Nein! – vielleicht doch alle – nicht.</l>
+            <l>Es gibt auch Leute, die sich gern bescheiden</l>
+            <l>Mit jener armen Freude, welche – lacht.</l>
+            <l>Was mich betrifft zum Beispiel, lieber Freund,</l>
+            <l>Ich bin zufrieden mit der Heiterkeit,</l>
+            <l>Die mild und sonnig aus der schönen Welt,</l>
+            <l>Herein in meine off'ne Seele strömt.</l>
+            <l>Was Gott uns Gutes gibt, mir und den Meinen,</l>
+            <pb n="15"/>
+            <l>Ich nehm' es dankbar hin. Das Traurige</l>
+            <l>Das kommt von selbst, und kommt es – nun so geb'</l>
+            <l>Ich ihm sein Recht – nicht minder, doch – nicht mehr;</l>
+            <l>Von meiner Freude aber halt ich's fern.</l>
+            <l>Ich will nicht »selig« sein, nur herzlich froh,</l>
+            <l>Und denke still: der Himmel ist gerecht,</l>
+            <l>Versagt er dir ein Uebermaß von Glück,</l>
+            <l>Schickt er wol auch kein Uebermaß von Leid.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Das heißt, den vollen, gold'nen Becher: Leben</l>
+            <l>Mit kühlen Lippen flüchtig nur berühren. –</l>
+            <l>Nicht <emph>dazu</emph> ward er schäumend hingestellt!</l>
+            <l>Wir sollen kosten seinen tiefsten Inhalt,</l>
+            <l>Ihn leeren sollen wir bis auf den Grund.</l>
+            <l>Erschöpfen alles was an Lust und Qual</l>
+            <l>Der Menschheit Pulse mächtig wogend schwellt,</l>
+            <l>Und vorwärts dringen, rastlos, unerschrocken,</l>
+            <l>In alle Tiefen und auf alle Höh'n!</l>
+            <l>Im edlen Kampf, im heiß geführten Streit,</l>
+            <l>Schmilzt uns'res Wesens letzte Schlacke ab;</l>
+            <l><emph>Der</emph> Frieden <emph>bleibt</emph>, den man im Sturm errang!</l>
+            <l>Aus Nacht und Dunkel, Irrthum, Wahn und Schmerz</l>
+            <l>Geht rein und frei der laut're Mensch hervor –</l>
+            <l>Der <emph>Gott</emph> in ihm wird <emph>so</emph>, nur <emph>so</emph> geboren.</l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte.</speaker>
+            <l>Ich wiederhol's – es ist ein Unterschied –</l>
+            <l>Das ist für Sie ... für and're – anderes.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Zufrieden nicht sei mit gemeinem Lose,</l>
+            <l>Dem <emph>edle Gaben</emph> das Geschick verlieh.</l>
+            <l>Dein ist die Seele, höchsten Schwunges fähig,</l>
+            <l>Das reine Herz, der sonnenklare Geist:</l>
+            <l>O zwinge sie nicht nieder in den Staub –</l>
+            <l>Empor zur Heimat, Engel! – auf zum Licht!</l>
+            <l>Ich liebe Dich – vertraue Dich mir an.</l>
+            <l>Ich will Dich führen zum Vortrefflichen,</l>
+            <l>Zum Quell des Schönen will ich Dich erheben!</l>
+          </sp>
+          <pb n="16"/>
+          <sp who="#charlotte">
+            <speaker>Charlotte</speaker>
+            <stage>(verwirrt erschrocken).</stage>
+            <l part="I">Mein Gott! – o Schiller – Schiller –</l>
+          </sp>
+          <stage>(Henriette ist während der letzten Reden eingetreten.)</stage>
+          <sp who="#charlotte">
+            <speaker>Charlotte</speaker>
+            <stage>(erblickt sie, eilt auf sie zu und wirft sich in ihre Arme).</stage>
+            <l part="M">Mutter!</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="F">Geh', mein Kind.</l>
+          </sp>
+          <stage>(Charlotte ab.)</stage>
+        </div>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <stage>(Henriette. Schiller.)</stage>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="I">Charlotte! – Mädchen!</l>
+            <stage>(Will ihr nachstürzen.)</stage>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette</speaker>
+            <stage>(tritt ihm in den Weg).</stage>
+            <l part="F">Bleiben Sie ... Sie bleiben!</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>O Himmel! – ich – Vergebung, theure Frau –</l>
+            <l>Ich liebe – die Empfindung riß mich hin –</l>
+            <l>Ich liebe sie und ich gestand es ihr.</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="I">Auf Gegenliebe hoffend –</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="F">Ihrer fast –</l>
+            <l>Sie zürnen, Freundin? – Ihrer fast gewiß!</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l>Weil Lotte, als Sie Abschied nahmen, weinte? –</l>
+            <l>Es fällt mir schwer, aus allen Ihren Himmeln</l>
+            <l>Mit einem einz'gen Worte Sie zu reißen. –</l>
+            <pb n="17"/>
+            <l>An jenem Tag', mein Freund, da kamen Sie –</l>
+            <l part="I">Sie kamen – nicht allein.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="F">Mit Winkelmann,</l>
+            <l part="I">Der gleichfalls schied –</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="F">– Ihm galten Lotten's Thränen.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Oh! – ich bin blind! ... Ihm galten sie – <emph>ihm</emph> ihr</l>
+            <l>Erröthen, ihr Erblassen – alles <emph>ihm</emph>!</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l>Er weckte in des Mädchens jungem Herzen</l>
+            <l>Die erste Regung, die der Liebe <emph>gleicht</emph>,</l>
+            <l part="I">Nicht Liebe <emph>ist</emph>.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="M">Nicht – Liebe – –?</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="F">Jenes</l>
+            <l>Halb unbewußte, traumhafte Gefühl,</l>
+            <l>Dem Fantasie das luft'ge Dasein gibt,</l>
+            <l>Das seinen ganzen Reichthum <emph>ihr</emph> verdankt,</l>
+            <l>In einem Blick den höchsten Ausdruck findet,</l>
+            <l>Und immer fast – unausgesprochen stirbt.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Das sagen Sie – und jetzt – und sagen mir's? ...</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l>Ich thue mehr – ich sage Ihnen, Schiller,</l>
+            <l>In dieser Einsamkeit, die Ihre Nähe</l>
+            <l>So schön und reich mit allem schmücken wird,</l>
+            <l>Was uns entzücken und begeistern kann,</l>
+            <pb n="18"/>
+            <l>Geliebt von Ihnen, den sie ja bewundert,</l>
+            <l>Wird Lotte Ihrem Einfluß nicht entgeh'n.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="I">Was soll das – großer Gott –?</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="F">Allein – erwägen Sie</l>
+            <l>Das Wort, das nun ich spreche, denn für immer,</l>
+            <l>Für's ganze Leben sprech' ich's aus –: Allein,</l>
+            <l>Selbst <emph>wenn</emph> das Kind Sie liebte, <emph>nie</emph> würd' ich</l>
+            <l>Zu dieser Neigung meinen Segen geben.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Sie spielen fürchterlich mit meinem Herzen!</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l>Mein Freund – Ihr beide <emph>seid</emph> nicht für einander.</l>
+            <l>Der Dichter, mit dem nie erfüllten Streben,</l>
+            <l>Mit seinem Drang in's Unermeßliche,</l>
+            <l>Das heit're Mädchen mit der weichen Seele:</l>
+            <l>Ihr muß das Dasein sanft und ruhig fließen</l>
+            <l>In der Beschränkung schützend stillem Frieden;</l>
+            <l>Zerstören würde sie ein rauh' Berühren.</l>
+            <l>Sie aber, haben Frieden nicht zu bieten,</l>
+            <l>Es ist der Kampf Ihr heimisch Element,</l>
+            <l>In Ihnen ringt der Genius der Welt.</l>
+            <l>Lebendig auferstanden, will durch Sie</l>
+            <l>Ein neuer Geist, der Zeit sich offenbaren.</l>
+            <l>Er kommt im Sturme, in der Wetterwolke –</l>
+            <l>Sie sind sein Priester, sein Verkünder Sie! ...</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller</speaker>
+            <stage>(fällt ihr in's Wort).</stage>
+            <l part="I">Das alles <emph>glaubt'</emph> ich einst!</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette</speaker>
+            <stage>(lächelnd).</stage>
+            <l part="F">Und Leute gibt's,</l>
+            <l>Die glauben es noch jetzt. Hier der Beweis!</l>
+            <pb n="19"/>
+            <stage>(Gibt ihm Dalberg's Brief.)</stage>
+            <l>Erschlossen Ihnen ist die große Laufbahn,</l>
+            <l>Ihr heißer Wunsch erfüllt sich – Dalberg ruft!</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller</speaker>
+            <stage>(wirft den Brief auf einen Tisch).</stage>
+            <l>Der zagende, der unentschloss'ne Dalberg?</l>
+            <l>Der mich verließ in meiner größten Noth,</l>
+            <l>Der Mann der Rücksicht, der da krittelt, mäkelt</l>
+            <l>An jedem freien Wort? – der den Fiesco</l>
+            <l>Also verstümmelt auf die Bühne brachte,</l>
+            <l>So zahm und sanft, daß keiner mehr in ihm</l>
+            <l>Den heißen Funken wiederfinden kann,</l>
+            <l>Der aus den Räubern hell und lodernd sprühte?</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette</speaker>
+            <stage>(dringend, überredend).</stage>
+            <l>Doch Dalberg ist besiegt, und halb und halb</l>
+            <l>Versöhnt ist Herzog Carl. <emph>Heute</emph> noch,</l>
+            <l>In dieser Stunde noch, erwart' ich Reinwald,</l>
+            <l>Der die Verzeihung Ihres Fürsten bringt.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Verzeihung? – o vollkommen wird sie sein,</l>
+            <l>Wenn hin zu ihm ich trete und ihm sage:</l>
+            <l>Ich füge mich. Dein Wille, Herr, geschehe –</l>
+            <l>Was Du an mir gehaßt, das war der Dichter,</l>
+            <l part="I">Der Dichter ist <emph>gewesen</emph>.</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="F">– Und Ihr Ehrgeiz?</l>
+            <l part="I">Der Ruhm, den Sie gehofft?</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="F">Mit welchem Recht? –</l>
+            <l>Schon lange nagt, nie ruhend, mir am Herzen</l>
+            <l>Die Qual des Zweifels an der eig'nen Kraft. –</l>
+            <l>Ich hab' vielleicht mich thöricht überschätzt,</l>
+            <l>Ich bin vielleicht ... Hinweg damit – hinweg!</l>
+            <l>Ich bin nichts, will nichts sein als nur geliebt,</l>
+            <l>Von ihr geliebt ... Und daß ich's werden könnte,</l>
+            <pb n="20"/>
+            <l>Sie sprachen es – und dieses Wort durchflammt</l>
+            <l>Die Nacht in mir! – löst jeden Widerstreit,</l>
+            <l>Zeigt mir den Weg zum Heile und zum Himmel!</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l>Das eine Wort? ... Sie hörten nur das eine? –</l>
+            <l>Ich sprach es als <emph>Befürchtung</emph> aus, nicht als</l>
+            <l part="I">Verheißung.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="F">Gott! ... Wie war mir doch? <emph>Befürchtung</emph>? ...</l>
+            <l>Ich fasse endlich – – ich begreife – Lotte!</l>
+            <l>Ich steh' zu tief für Dich – bin zu gering!</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l>Zu tief? o nein! ... Sie stehen ihr zu hoch,</l>
+            <l><emph>Zu wenig</emph> nicht, Sie sind <emph>zu viel</emph> für sie.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller</speaker>
+            <stage>(bebend, in größter Bewegung).</stage>
+            <l>Dem <emph>Menschen</emph> Schiller wäre sie erreichbar?</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l>Dem <emph>Dichter</emph> Schiller muß ich sie verweigern,</l>
+            <l>Und beide scheinen unzertrennlich mir.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Da liegt der Irrthum! – da liegt auch die Lösung! ...</l>
+            <l><emph>Muß</emph> ich ein Dichter sein? – Daß ich's sein <emph>wollte</emph>,</l>
+            <l>Das war so lang ich denke oder – lebe,</l>
+            <l>Mein Unglück, meine Qual! – Im Namen dessen,</l>
+            <l>Was ich und and're meinen Genius nennen,</l>
+            <l>Kam jedes Leid, das ich erfuhr, heran;</l>
+            <l>Und jeder Stachel, der mich tief verletzte,</l>
+            <l>In seinem Namen ward er eingesenkt!</l>
+            <l>Was keine Zunge nennt, hab' ich gelitten,</l>
+            <l part="I">Um ihn! durch ihn!</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="F">Ein nichts – vergleichen Sie's</l>
+            <l>Mit der Verzweiflung, Freund, ihm zu entsagen.</l>
+          </sp>
+          <pb n="21"/>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Zählt Ihr für <emph>nichts</emph> die Thränen meiner Mutter,</l>
+            <l>Des Vaters Zürnen und des Fürsten Groll? ...</l>
+            <l>O dieser Fürst! ... Ich habe ihn geliebt,</l>
+            <l>Er war mir wie ein Gott. Ich riß mich schwer</l>
+            <l>Und blutend von ihm los – und tat es doch! ...</l>
+            <l>O alles – alles! ... um ein Traumgebild –</l>
+            <l>Ein Ideal, das unerreichbar schön</l>
+            <l>Vor meinem trunk'nen Auge leuchtend schwebte. –</l>
+            <l>Der Schleier reißt – der Zauber ist gebannt –</l>
+            <l>Ich kehr' zurück, zur langentbehren Heimat,</l>
+            <l>Zu meinen Brüdern – zu der Wirklichkeit! –</l>
+            <l>Auch ich will glücklich sein! – ich war es nie ...</l>
+            <l>Es lechzt mein Herz nach Freundschaft und nach Liebe,</l>
+            <l>Mir schaudert vor der eisigkalten Höhe,</l>
+            <l>Auf der ich einsam und entsagend stand,</l>
+            <l>In Eure Mitte tret' ich –: Nehmt mich auf!</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l>Sie täuschen sich – Ihr stürmisches Gefühl,</l>
+            <l>Es reißt Sie hin. – Wir haben für die Welt,</l>
+            <l>Die Sie uns opfern wollen, Ihnen <emph>nichts</emph></l>
+            <l>Des Opfers werth, zu bieten – und darum ...</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Es ist beschlossen, Freundin – ist beschlossen –</l>
+            <l>Für ewig schwör' ich den Poeten ab,</l>
+            <l>Ich will nichts mehr als leben hier, hier sterben!</l>
+          </sp>
+          <stage>(Gärtner kommt.)</stage>
+          <sp who="#gaertner">
+            <speaker>Gärtner.</speaker>
+            <l>Der Bibliothekar aus Stuttgart kommt,</l>
+            <l part="I">Herr Reinwald, gnäd'ge Frau.</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="F">Herein! herein!</l>
+          </sp>
+          <stage>(Gärtner ab.)</stage>
+        </div>
+        <pb n="22"/>
+        <div type="scene">
+          <head>Sechster Auftritt.</head>
+          <stage>(Henriette. Schiller. Reinwald.)</stage>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l>Willkommen, Reinwald! tausendmal willkommen!</l>
+          </sp>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l part="I">Verehrte Frau! ... Mein Schiller! ...</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="F">Sei gegrüßt.</l>
+          </sp>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l>In schlechter Laune? – Schade, lieber Freund.</l>
+            <l>Ich bringe nicht, was sie verbessern kann.</l>
+            <stage>(Zu Henriette.)</stage>
+            <l part="I">Sie seh'n mich tief ergriffen –</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="F">Gott! – der Herzog.</l>
+          </sp>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l>Ein schwerer Schlag trifft ihren armen Vogt –</l>
+            <l>Ich komme ihn zu holen – geben Sie</l>
+            <l part="I">Ihm Urlaub.</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="M">Vogt?</l>
+          </sp>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l part="F">Sein Sohn verzweifelt.</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="I">Was ist gescheh'n?</l>
+          </sp>
+          <pb n="23"/>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l part="F">Das Mädchen, das er liebte –</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l>Ich weiß: die Tochter eines Musikus,</l>
+            <l part="I">Und seine Braut.</l>
+          </sp>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l part="F">Nicht seine Braut, noch hatt'</l>
+            <l>Er nicht gewagt, um ihre Hand zu bitten.</l>
+            <l>Die stille Neigung, die er ihr bewies,</l>
+            <l>Hielt <emph>sie</emph> für Freundschaft wol. Ein anderer</l>
+            <l>Besaß ihr Herz, hatt' es im Sturm gewonnen.</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="I">Und dieser and're ist?</l>
+          </sp>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l part="F"><emph>War</emph> Ferdinand</l>
+            <l part="I">Von Böller, des Ministers Sohn.</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="F">Von Böller?</l>
+          </sp>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l>Des Vaters Stolz, Major in frühen Jahren,</l>
+            <l>Vom Herzog für ein glänzend Los bestimmt.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>O ja! o ja! Die Stufen, welche and're</l>
+            <l>Mit heißem Ringen nicht erklimmen können,</l>
+            <l>Im Schlafe werden <emph>sie</emph> hinauf gehoben!</l>
+          </sp>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l>Doch diesmal kam das Glück an einen Menschen,</l>
+            <l>Der von sich weist des blinden Zufalls Gaben.</l>
+            <pb n="24"/>
+            <l>Den Vorurtheilen der Geburt zum Trotz,</l>
+            <l>Tritt er als Freier um das Geigerskind</l>
+            <l part="I">Vor den erstaunten Musikus.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="F">Und – der?</l>
+          </sp>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l>Nicht seinem Ohr, nicht seinem Auge trauend –</l>
+            <l>Weist ihn an des Ministers Excellenz.</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="I">Wie sich's geziemte.</l>
+          </sp>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l part="F">Feile Späher hatten</l>
+            <l>Von dem Verhältniß seines Sohn's schon längst</l>
+            <l>Dem Herrn Baron die Kunde zugetragen.</l>
+            <l>Doch zählend auf der Jugend Unbestand,</l>
+            <l>Fand er für gut, darüber still zu schweigen.</l>
+            <l>Als Ferdinand ihm kühn entgegen tritt</l>
+            <l>Und von dem Mädchen nie zu lassen schwört,</l>
+            <l>Da übermannt wild rasend ihn die Wut.</l>
+            <l>Er droht dem Sohn mit Fluch, dem Geiger mit</l>
+            <l>Dem Arbeitshaus, der Tochter mit dem Pranger.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller</speaker>
+            <stage>(in höchster Spannung).</stage>
+            <l part="I">Und – der Major?</l>
+          </sp>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l part="F">Bleibt unerschütterlich. –</l>
+            <l>Und nun thut der Baron das Unerhörte:</l>
+            <l>Des Mädchens Tugend weiß er zu verdächt'gen,</l>
+            <l>Stellt, durch verruchte Künste sie,</l>
+            <l>Dem Liebenden als eine – Dirne hin.</l>
+          </sp>
+          <pb n="25"/>
+          <sp who="#schiller">
+            <speaker>Schiller</speaker>
+            <stage>(stärker).</stage>
+            <l part="I">Und – der Major?</l>
+          </sp>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l part="F">– Ein Jüngling, lieber Freund,</l>
+            <l>Bisher vom Glück getragen, dem der Wunsch</l>
+            <l>Stets nur erschien als Bote der Erfüllung –</l>
+            <l>Er ist zum Kampf mit einem solchen Meister</l>
+            <l>– Dem Pfaffen der Gewalt, dem Helden der Kabale –</l>
+            <l>Gerüstet nicht und nicht – verderbt genug.</l>
+            <l>Er unterliegt – er <emph>glaubt</emph> die Lüge – doch,</l>
+            <l>Er <emph>überlebt</emph> sie nicht. Für ihn gibt es</l>
+            <l>In dieser Welt nur die Geliebte, oder –</l>
+            <l part="I">Den Tod. An ihr verzweifelnd wält er –</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller</speaker>
+            <stage>(schreit auf).</stage>
+            <l part="F">Tod?! ...</l>
+            <l part="I">Und – sie?</l>
+          </sp>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l part="M">Das Mädchen starb mit ihm.</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="F">Entsetzlich!</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>– Sie starb mit ihm. Ja – <emph>die</emph> Vermälung war</l>
+            <l>Entsetzlich, aber ewig. Ihre Liebe,</l>
+            <l>So warm wie Leben, grenzenlos wie die</l>
+            <l>Unendlichkeit! ... Und diese beiden Menschen,</l>
+            <l>Die sich gefunden unter Tausenden</l>
+            <l>In einem einz'gen, herrlichen Gefühl,</l>
+            <l>Der schönsten Blume und der seltensten,</l>
+            <l>Die auf des Daseins harten Pfaden sprießt –</l>
+            <l>Sie mußten sterben – und warum? warum? ...</l>
+            <l>Nicht, weil ein großes Schicksal sie zermalmt,</l>
+            <l>Dem man sich beugt, <emph>weil</emph> es ein großes ist;</l>
+            <l>– Um einen Wahn – dem Unsinn starben sie! ...</l>
+            <l>O Menschen! Menschen! – wohin geht die Welt? –</l>
+            <l>Die Narrheit wirft die Pritsche weg und greift</l>
+            <l>Zum Richterschwert,</l>
+            <l>Die Schellenkappe läutet Todte ein!</l>
+          </sp>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l part="I">– Du schweifst in's Maßlose.</l>
+          </sp>
+          <pb n="26"/>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="F">Nicht also – Freund ...</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>»In's Maßlose«? ... »Nicht also«? ... Ihr erbebt</l>
+            <l>Wie ich – Ihr leidet – so wie ich, und weint</l>
+            <l>Und – schweigt?! und lebt getrost in Ruhe weiter,</l>
+            <l>Als wäre nichts gescheh'n, als was da <emph>muß</emph>?! ...</l>
+          </sp>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l part="I">Was sollen wir –</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="F">Was können andres wir</l>
+            <l>Als weinen denn und schweigen – schweigend leiden? –</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Kein Unrecht gäb's, gäb's keinen, der es duldet.</l>
+            <l>Der Bosheit Kinder zieht die Feigheit groß,</l>
+            <l>Und solch ein Mann, wie jene Excellenz –</l>
+            <l>Wir kennen ihn von länger, als von heut –</l>
+            <l>Lebt von der Dumpfheit derer, die er quält;</l>
+            <l>Ich will sie wecken alle, welche schlafen!</l>
+            <l>Ihn aber zieh'n vor einen Richterstuhl,</l>
+            <l>Vor dem er endlich zittern lernen soll. –</l>
+            <l>Erbärmlicher! Du drohtest mit dem Pranger?</l>
+            <l>Dein Pranger steht und fällt an einem Tag;</l>
+            <l>Den Schandpfahl, Mann! an welchen <emph>ich</emph> Dich binde,</l>
+            <l>Versehrt kein Blitz, kein Sturmwind reißt ihn um,</l>
+            <l>Vergeblich rauscht an ihm vorbei die Zeit.</l>
+            <l>Ich will der Erde Deine Schmach verkünden,</l>
+            <l>Ich will ein Bild in Flammenzügen malen,</l>
+            <l>In dem nach hundert noch und hundert Jahren,</l>
+            <l>Das Laster schaudernd sich im Spiegel sieht!</l>
+          </sp>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l>Bedenke nur, bedenk' – daß Du – das ich ...</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Du? Ich? – O Reinwald! <emph>was</emph> bist <emph>Du</emph> und <emph>ich</emph></l>
+            <l>In einer Welt, in der noch Millionen</l>
+            <l>Aus allen Adern schwer und schmerzlich bluten?</l>
+            <l>Kein Ich und Du! es gibt kein eig❜nes Leid:</l>
+            <l>Der Menschheit Jammer, der allein thut weh! –</l>
+          </sp>
+          <pb n="27"/>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l>O Dichter! – <emph>das</emph> sind <emph>Sie</emph> – Sie sind es wieder.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Sie hatten recht. Für mich ist nicht der Friede,</l>
+            <l>Fern bleibe mir, der ihn genießen will.</l>
+            <l part="I">An's Werk, Poet!</l>
+            <stage>(Nimmt Dalberg's Brief.)</stage>
+            <l part="F">Du kamst zur rechten Zeit.</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="I">Nach Mannheim, Schiller!</l>
+          </sp>
+          <sp who="#reinwald">
+            <speaker>Reinwald.</speaker>
+            <l part="F">Ziehe hin, getrost.</l>
+            <l>Der Herzog hindert Deinen Flug nicht mehr;</l>
+            <l>Ein warmes Wort versöhnt ihn – sprich es aus.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l>Es soll gescheh'n, dereinst, bis ich geworden</l>
+            <l>Mehr als zu sein er je mir zugetraut.</l>
+          </sp>
+          <stage>(Draußen aus weiter Entfernung Gesang. Chor aus den Räubern.)</stage>
+          <sp who="#gaertner">
+            <speaker>Gärtner</speaker>
+            <stage>(kommt gelaufen).</stage>
+            <p>Studenten aus Heidelberg! Eine ganze Schaar! Sie sind gekommen, um den Herrn Doctor
+              abzuholen und nach Mannheim zu führen, den Herrn Doctor, der nicht mehr Ritter,
+              sondern Schiller heißt! <stage>(Ab.)</stage></p>
+          </sp>
+          <stage>(Der Gesang näher. Donnernder Hochruf.)</stage>
+          <sp who="#studenten">
+            <p>Hoch Schiller!</p>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l>Der Freunde Segen, er begleitet Sie,</l>
+            <l>Entgegen Ihnen kommt des Volkes Liebe,</l>
+            <l>Mit seinem Lied, mit diesen Klängen grüßt</l>
+            <l>Die deutsche Jugend ihren Freiheits-Dichter! –</l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte</speaker>
+            <stage>(kommt).</stage>
+            <l>Was hör' ich, Schiller? Sie verlassen uns?</l>
+            <l part="I">Und ohne Abschied?</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette</speaker>
+            <stage>(ihr entgegen).</stage>
+            <l part="M">Meine Tochter.</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller</speaker>
+            <stage>(zugleich).</stage>
+            <l part="F">Kleine Lotte!</l>
+            <pb n="28"/>
+            <stage>(Steht vor ihr in heftiger Bewegung, dann, sich mit Gewalt fassend, tritt er
+              näher und legt die Hand auf ihr Haupt.)</stage>
+            <l>Behüt' Dich Gott, der Gott, von dem Du glaubst,</l>
+            <l>Daß er nur Gutes Dir gewähren kann;</l>
+            <l>Und mög'st Du nie und nimmer kennen lernen</l>
+            <l>Den Schmerz, der lacht, die Freude, welche weint.</l>
+          </sp>
+          <sp who="#gaertner">
+            <speaker>Gärtner</speaker>
+            <stage>(kommt).</stage>
+            <p>Kommen Sie, Herr Doctor! kommen Sie! die draußen können's nicht erwarten!</p>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte.</speaker>
+            <l part="I">Sie geh'n?</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="F">Unendlich arm, unendlich reich.</l>
+          </sp>
+          <sp who="#charlotte">
+            <speaker>Charlotte.</speaker>
+            <l>Sie kommen wieder! Hier sind Sie daheim,</l>
+            <l part="I">Hier liebt man Sie ...</l>
+          </sp>
+          <sp who="#henriette">
+            <speaker>Henriette.</speaker>
+            <l part="M">Charlotte –</l>
+          </sp>
+          <sp who="#schiller">
+            <speaker>Schiller.</speaker>
+            <l part="F">Sei'n Sie ruhig. –</l>
+            <l>Des Lebens Mai blüht einmal und nicht wieder.</l>
+            <l>– Ihr alle, die mir ihn verschönt, habt Dank</l>
+            <l>Und lebet wol. Mich treibt's hinweg zu ringen</l>
+            <l>Für Euch, für Eurer Güter heiligste.</l>
+            <l>.................</l>
+            <l>Leih mir die Waffen zum Erlösungswerke,</l>
+            <l>Dein Flammenschwert leih' mir, o Poesie!</l>
+            <l>Ich schwing' es kühn, den Guten eine Leuchte,</l>
+            <l>Ein Wetterstrahl den Nied'ren und Gemeinen,</l>
+            <l>Der tödtlich niederzuckt! Leih' mir die Waffen –</l>
+            <l>Den Sieg verleiht die Kraft – ich fühl' die meine!</l>
+            <l>Lebt wol – geliebt und wol! Die Heimat sei</l>
+            <l>Euch süß! Ich aber – fort in Sturm und Drang –</l>
+            <l>Die Welt mein Haus, die Menschheit meine Liebe!</l>
+          </sp>
+          <stage>(Indem er sich zum Abgehen wendet, und die andern eine Gruppe bilden, fällt der
+            Vorhang.)</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
