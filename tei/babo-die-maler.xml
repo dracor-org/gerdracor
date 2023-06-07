@@ -1,0 +1,1595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000618" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die Maler</title>
+        <title type="sub">Ein Lustspiel</title>
+        <author>
+          <persName>
+            <forename>Joseph</forename>
+            <forename>Marius</forename>
+            <nameLink>von</nameLink>
+            <surname>Babo</surname>
+          </persName>
+          <idno type="wikidata">Q104172</idno>
+          <idno type="pnd">118988107</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Google Books</name>
+          <idno type="URL"
+            >https://books.google.com/books?id=NPU6AAAAcAAJ&amp;printsec=frontcover</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <author>Joseph Marius von Babo</author>: <title>Die Maler. Ein Lustspiel</title>.
+              <pubPlace>München</pubPlace>: <publisher>Strobl</publisher>
+            <date>1783</date>. (S. <biblScope unit="page" from="1" to="62">1–62</biblScope>.)</bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="glimour" sex="MALE">
+            <persName>Glimour</persName>
+          </person>
+          <person xml:id="stephan" sex="MALE">
+            <persName>Stephan</persName>
+          </person>
+          <person xml:id="rose" sex="FEMALE">
+            <persName>Rose</persName>
+          </person>
+          <person xml:id="kranberg" sex="MALE">
+            <persName>Baron Kranberg</persName>
+          </person>
+          <person xml:id="ebrecht" sex="MALE">
+            <persName>Ebrecht</persName>
+          </person>
+          <person xml:id="graefinn" sex="FEMALE">
+            <persName>Gräfinn Herrbach</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="parent_of" active="#ebrecht" passive="#rose"/>
+            <relation name="associated_with" active="#stephan" passive="#glimour"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2023-06-07">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1783">
+        <desc/>
+      </event>
+      <event type="premiere" when="1782-11-15">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000618"
+        passive="http://www.wikidata.org/entity/Q119144422"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <pb n="1"/>
+    <front>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">Die Maler,</titlePart>
+          <titlePart type="sub">ein Lustspiel.</titlePart>
+        </docTitle>
+        <p>Aufgeführt auf dem Churfürstlichen Nationaltheater zu München.</p>
+        <docImprint>
+          <pubPlace>München,</pubPlace>
+          <docDate>1783.</docDate>
+          <publisher>Bey Johann Baptist Strobl.</publisher>
+        </docImprint>
+      </titlePage>
+      <pb n="2"/>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem><role>Glimour.</role></castItem>
+          <castItem><role>Ebrecht.</role></castItem>
+          <castItem><role>Rosa,</role>
+            <roleDesc>Ebrechts Tochter.</roleDesc></castItem>
+          <castItem><role>Baron Kranberg.</role></castItem>
+          <castItem><role>Gräfinn Herrbach.</role></castItem>
+          <castItem><role>Stephan,</role>
+            <roleDesc>Glimours Diener.</roleDesc></castItem>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <pb n="3"/>
+      <div type="scene">
+        <head>Erster Auftritt.</head>
+        <stage>Glimour, Stephan.</stage>
+        <stage>Glimour's Zimmer. Er ist beschäftigt ein Migniaturporträt, welches an seiner Stafelei
+          hängt, ins große zu malen.</stage>
+        <sp who="#glimour">
+          <speaker>Glimour.</speaker>
+          <stage>(Seine Arbeit betrachtend)</stage>
+          <p>Ja, freilich! ein Mädchen wird's immer; auch zur Noth ein hübsch Mädchen. Ob's aber
+            mein Röschen wird! – Es ist verdammt schwer aus so einer winzigen Schülerarbeit eine
+            helle Vorstellung zu fassen. Meine Phantasie arbeitet zu viel für ein Porträt. – Ich
+            mein, die Oberlippe ist noch <pb n="4"/> zu platt, das ist's, was ich in einer
+            Phisiognomie am wenigsten leiden kann! <stage>(malt)</stage> So! – heraus! nicht so
+            spöttisch! edler! so! hm! vielleicht kanns werden! <stage>(malt)</stage> Das Aug mehr
+            offen! Den Winkel nicht so spitzig! – Ha! was ein paar Pinstelstriche nicht thun können!
+            Nu, nu, für einen Historienmaler mag der Kopf immer hingehen.</p>
+        </sp>
+        <sp who="#stephan">
+          <speaker>Stephan.</speaker>
+          <p>Der Herr Baron von Kranberg läßt sich Ihnen empfehlen, und in einer halben Stunde
+            möchte er Sie heimsuchen.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Wird mir lieb seyn. Meine Empfehlung!</p>
+        </sp>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <p>Die Gräfinn Herrbach kömmt mit ihm.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Gut. Meine Empfehlung! – Ich hoffe, daß Ebrecht seine Arbeit fertig hat. <stage>(steht
+              auf)</stage> Das soll ein guter Tag für mich werden, wenn mein Vorhaben gelingt, und
+              <pb n="5"/> ich hoff' es soll. – Stephan! – wenn ich nur der Visiten überhoben wäre;
+            die Leute glauben mir eine Ehre damit zu erzeigen! ja, wenns Männer wären, mit denen
+            sich etwas über Kunst und Geist sprechen ließ! aber so – – Doch, heute gehört ihre
+            stolze Dummheit in meinen Plan! – Stephan?</p>
+        </sp>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <stage>kömmt.</stage>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Die Staffelei auf die Seite! Ein wenig aufgeräumt! <stage>(er nimmt das Gemälde von der
+              Staffelei weg, und stellt's verkehrt an die Wand.)</stage></p>
+        </sp>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <p>Ei! das ist ja – –</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Was! was ist!</p>
+        </sp>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <p>Ich mein, das wär die Mamsell Ebrecht!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Meint er? <stage>(zeigt's ihm)</stage></p>
+        </sp>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <p>Leibhaftig, mein Seel! <stage>(er stellt sich nach dem Licht und betrachtets)</stage>
+            der <pb n="6"/> Kopf geht scharmant hervor, wie lebendig! scharmant! mein Seel! – aber,
+            Herr! sie hat Ihnen ja nicht gesessen, und Sie sahen Sie gewis nicht über drey oder
+            viermal! das konnte mein voriger Herr nicht.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Wer war das?</p>
+        </sp>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <p>Ein Maler, den ich hier bediente.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Wie hieß er?</p>
+        </sp>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <p>Ja sein Name war so kauderwälsch, daß ich ihn niemals behalten konnte. Er war ein
+            Franzose, und hielt sich hier eine Zeitlang auf. Das war mir ein rechter –</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Was?</p>
+        </sp>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <p>Windbeutel! Der machte den Leuten hier einen Dunst vor die Augen. Ich ärgerte mich oft,
+            über meine Landsleute, wenn sie so da standen und Maul und Nase <pb n="7"/> aufsperrten,
+            wenn der Quacksalber ihnen über Dinge räsonnirte, die er so wenig verstund, als sie. Er
+            lief aus einem Herrschaftshause in das andere, küßte die Hände, machte Bücklinge.
+            Deshalb sah' man ihn auch immer in nobler Gesellschaft. Unsre junge Ritter hatten ihren
+            Erzspaß mit ihm; sie nannten ihn schlechtweg bei seinem Namen, sie stießen ihm in die
+            Rippen, peitschten ihn mit ihren Sommerstöckchen um die Waden, und mein Herr lachte sich
+            halb tod über den gnädigen Spaß. Ich glaube er hätte gestolen und gekuppelt, wenn er
+            dafür sich einem Grafen in den Arm hängen, und so mit ihm über die Straße schlenzen,
+            oder mit einer Gräfinn spazieren fahren durfte. Was war's am Ende? Er versäumte seine
+            Arbeiten. Abends war Spiel und Soupper bei ihm, er machte Schulden, konnte nicht <pb
+              n="8"/> zahlen, und gieng auf und davon. Mein Lohn steht noch hinter der Thür.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Das mag wohl das schlimmste an ihm gewesen seyn?</p>
+        </sp>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <p>Nein, mein Seel nicht! wenn's heut in ihrem Belieben stünde ohne mich zu zahlen zu
+            verreißen; so müßte ich als ein ehrlicher Kerl immer sagen: Das war ein wackerer
+            Künstler, nicht stolz, nicht pralend, nicht kriechend, der nicht durch hofiren und
+            Händeküssen sich einen Glanzfirniß zu geben suchte!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Nu, nu, ich dank einsweilen und zahlen werd' ich auch. Gehe er izt zum Herrn Ebrecht,
+            und sag' er ihm, daß ich ihn diesen Morgen mit dem Bewußten zu sehen hoffe! Mein
+            Complement! – Wenn mein Aufwärter einen galonnirten Rock an hätte, so könnte er wohl für
+            einen <pb n="9"/> klugen Mann gelten. Das hätt' ich in einem Farbenreiber nicht gesucht,
+            weil ich es oft in einem Manne von Distinktion suchte und nicht fand. <stage>(er nimmt
+              das Porträt und betrachtet es aufmerksam)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Zweyter Auftritt.</head>
+        <stage>Stephan, Rose, Glimour.</stage>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <p>Hier ist die Mamsell Ebrecht selbst! <stage>(ab)</stage></p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Ha! <stage>(stellt's hastig wieder hin)</stage></p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>Ihre Dienerinn, Monsieur Glimour.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Empfehle mich! <stage>(sieht sie steif an)</stage></p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>Mein Vater läßt – sich Ihnen empfehlen, und ich soll Ihnen melden, daß die bestellte –
+            Arbeit fertig ist. Sie sollen nur befehlen, ob man die Stücke hierher bringen soll.</p>
+        </sp>
+        <pb n="10"/>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Empfehle mich! <stage>(Er merkte auf kein Wort, sondern war ganz Aug', nahm
+              verschiedene Standpunkte um sie von der Seite anzusehen, wie er sie malt)</stage></p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>Befehlen Sie?</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Gehorsamer Diener! <stage>(macht wieder ein Compliment und fährt fort sie zu
+              studiern)</stage></p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>Monsieur Glimour! <stage>(sie wendet das Gesicht weg und scheint das Zimmer zu
+              betrachten)</stage></p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Das frische, jugendliche ist weg und dannoch schön, dannoch mein Röschen – Mamsell
+            Ebrecht! befinden Sie Sich wohl, und ihr Vater, was macht er? Sind die Stücke
+            fertig!</p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>Ich kam um Ihnen zu sagen, daß sie fertig sind.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Wo sind sie?</p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>Zu Hause. Sie sollen befehlen, ob –</p>
+        </sp>
+        <pb n="11"/>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Ja, ja, gleich. Ihr Vater soll mit kommen. Ich will hinschicken!</p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>Lassen Sie, ich gehe selbst!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Nein, nein, <stage>(geht hinaus)</stage></p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>Gut, daß er meine Verwirrung und Thränen nicht bemerkte! Karl! wie tief liegt dein
+            Andenken in meinem Herzen! Ein paar Züge, die dieser Fremde mit dir ähnlich hat, wecken
+            meine ganze Liebe wieder zu Flammen auf!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Dritter Auftritt.</head>
+        <stage>Glimour, Baron Kranberg, Rose.</stage>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>So! so! Monsieur Glimour! schöne Gesellschaft!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <stage>(sieht Rosen wieder steif an, nimmt einen Pinsel, kniet sich zu dem Porträt, kehrt
+            es halb um, so, daß es die andern nicht sehen können, und thut einige Striche)</stage>
+        </sp>
+        <pb n="12"/>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <stage>(zu Rose)</stage>
+          <p>Daß die Virtuosen doch alle einen kleinen Streich haben! Ich gaube er malt uns! Könnten
+            wir ihm nicht eine schönere Gruppe geben? He!</p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>O ja! Ihre Dienerinn! <stage>(ab)</stage></p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Nun, Monsieur Glimour, darf mann's nicht sehen?</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Erlauben Sie, es fiel mit eben was ein – Aber Herr Baron, ließen Sie mir nicht sagen,
+            daß sie nach einer halben Stunde mit der Frau Gräfinn von Herrbach? –</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Ja, ich werde die Dame gleich abholen. Izt bin ich nur gekommen um ein paar Worte mit
+            Ihnen zu sprechen, eben in betreff ihres Glückes.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Sie verbinden mich sehr.</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Wenn sie wünschen sich hier zu etabliren, so könnte mein Rath Ihnen nicht undienlich
+            seyn.</p>
+        </sp>
+        <pb n="13"/>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Zu viel Güte!</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Da Sie ein Ausländer und dazu ein Franzose sind, so haben Sie freilich hier das meiste
+            gewonnen, über dieß haben Sie sich durch ihre Arbeiten bekannt und schätzbar gemacht.
+            Aber Talent allein ist nicht genug um sein Glück zu machen.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Ich hoffe, daß mein Charakter und meine Aufführung –</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Das ist gut, aber nicht genug. Protektion ist die Hauptsache, und um Ihnen die zu
+            verschaffen, hab ich die Gräfinn dahin vermögt, daß sie daher kömmt.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Es wird mich freuen, wenn Ihr meine Arbeit gefällt.</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Ich zweifle nicht. Bedenken sie nur, daß sie eine Frau vor sich haben werden, die sehr
+            reich und angesehen ist, und die den Ton in unsern Gesellschaften angiebt. <pb n="14"/>
+            Machen Sie, daß sie ihr gefallen, so gefällt ihre Arbeit gewiß.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Besizt sie Kenntnisse und Gefühl?</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Kein's von beiden.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>So wird's mich freuen, wenn ich und meine Arbeiten ihr nicht gefallen!</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Aber Ihr Glück!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Mein Glück ist mein, Herr Baron! Für die Kunst und von der Kunst zu leben, das ist mein
+            Glück. Die Kunst giebt sparsame Mahlzeiten, aber sie gedeihen, denn Freiheit ist eine
+            köstliche Würze. Zum Kour machen, zur galonnirten Sclaverei bin ich ein ungerathener
+            Mensch; die Natur hat mich so steif und gerad gemacht, daß es mir wehe thut wenn ich
+            mich tief bücken muß. Ich hab in meinen Historienstücken schon so viele Sultane und
+            Helden und Ritter gemalt, <pb n="15"/> daß ich nun mit dergleichen Geschöpfen ganz ohne
+            Umstände zuwerk gehe, ja manchmal behagte es mir besser bey einem Bauernkopfe, in dem
+            ich mehr Seel und Würde fand. Das Resultat der Beobachtungen, die wir als Künstler in
+            unsern Studierzimmern anstellen, bleibt uns auch da, wo wir nicht als Künstler
+            erscheinen sollen, vor Augen; deshalb taugen wir nicht in ihre sogenannte schöne Welt.
+            Ich nun gar nicht, denn ich fürchte, mein Ideal von Schönheit möchte mir in dieser
+            schönen Welt gar zu Grunde gehen, durch den immerwährenden Anblick vergleisterter, oder
+            krüpelhafter Physiognomien und krüpelhafter Herzen.</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Impertinenter Kerl! – freilich, freilich so räsonniren wir andern in <foreign
+              xml:lang="lat">puncto artis</foreign>, ich weiß es wohl; aber doch muß man einmal eine
+            Rolle in der Welt spielen. Sehen <pb n="16"/> Sie, ich bin doch auch ein Mensch, der was
+            gelernt hat. Bin zwei Jahr in Paris gewesen. <foreign xml:lang="fre">Ma foi! j'ai au
+              tout ce qu'il y a de plus joli en manieres, femmes, scavans et modes; mais</foreign>
+            nun ich in Deutschland bin, muß ich ein deutsch Liedchen singen. <foreign xml:lang="fre"
+              >Apropos!</foreign> haben sie nicht ein paar Landschäftchen fertig? Ich möchte sie
+            gern kaufen, der Graf Nehmgern ist ein großer Liebhaber, und ich brauch ihn zu einem
+            Amt, das ich suche. Haben Sie nichts, lieber Freund?</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Ich habe wirklich nichts, als die zwei Stücke, die sie für die Gräfinn Herrbach
+            bestellt haben. Es ist noch nicht lange, daß ich mich auf die Landschaft verlege.</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Oder Historien, gleich viel!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Da in dem Zimmer stehen einige Stücke; ist Ihnen gefällig sie anzusehen?</p>
+        </sp>
+        <pb n="17"/>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Hernach. Ich will izt die Gräfinn abholen. Leben Sie wohl!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Ihr Diener, Herr Baron! – Was mich der Mann so glücklich machen will! und das alles für
+            ein paar Landschäftchen und Historien, die er kaufen will, mit neuen Rathschlägen oder
+            mit meinem eignen Gelde. Herr Baron! gieb meinem Stephan deinen Titel, und reib du
+            Farben!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Vierter Auftritt.</head>
+        <stage>Stephan bringt zwei Gemälde.</stage>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <p>Hier! das schickt der Herr Ebrecht.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Ist er nicht mitgekommen?</p>
+        </sp>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <p>Nein; aber die Mamsell Ebrecht.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Wo ist sie?</p>
+        </sp>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <p>Sie wartet auf die Tücher.</p>
+        </sp>
+        <pb n="18"/>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <stage>(macht die Tücher von den Gemälden)</stage>
+          <p>Ich ließ sie bitten, herauf zu gehen! – <stage>(sieht die Gemälde an)</stage> Bravo!
+            bravo, Alter! was du machst, ist herrlich; und so verkannt, so arm, so elend bist du? –
+            Warlich! hätt's nicht Ebrecht, mein Lehrmeister, meines Röschen Vater gemalt, so möcht
+            ich's gemalt haben!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Fünfter Auftritt.</head>
+        <stage>Rose, Glimour.</stage>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Und sie wollten wieder nach Hause, ohne mir das Vergnügen zu gönnen, Sie zu sehen? Wie
+            kömmts, Mamsell, daß Sie mich fliehen? In der That, Sie fliehen mich.</p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>O mein Herr, gewiß nicht! Sie sind meines Vaters Wohlthäter.</p>
+        </sp>
+        <pb n="19"/>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Nicht doch! ich bin ihm noch viel, viel schuldig. Ich liebe Ihren Vater und – liebe
+            alles, was ihm angehört.</p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>Er fühlt die ganze Schönheit Ihres Betragens; und wer sollte sie nicht fühlen?</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Loben Sie mich nicht, Mamsell! ich wäre schwach genug, alles zu glauben, was Sie mir
+            sagen; denn, wenn ich in eines Menschen Augen einigen Werth haben möchte, so wär's in
+            den ihrigen.</p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>Sie haben zu viel Werth für meine Hochachtung.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Wenn ich das verstehen dürfte, wie mein Herze wünscht –</p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <stage>(wird verwirrt)</stage>
+          <p>Erlauben Sie – ich will –</p>
+        </sp>
+        <pb n="20"/>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>O bleiben Sie! ich bitte. Hören Sie! Ich möchte es gern wagen, Sie um eine Gefälligkeit
+            zu ersuchen, wenn ich hoffen dürfte –</p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>Was ein Mann, wie Sie, von mir zu verlangen im stande ist, darf ich voraus zusagen.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Wollten Sie die Güte haben, einen Augenblick niederzusitzen? Sehen Sie, ich habe da
+            einen Kopf angefangen, den ich gern vollenden möchte. Ich weis noch nicht, was daraus
+            wird: denn meine Phantasie ist seit einiger Zeit zu zerstreut, als daß sie mein Ideal
+            festhalten könnte. Ich muß sie fixiren, und das auf einen Gegenstand, der mich an meine
+            Idealzüge erinnert.</p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>Mein Herr! ich bin gewiß der Gegenstand nicht, der an etwas Vortrefliches erinnern kann
+            – Doch Sie wollen es haben – <stage>(sezt sich)</stage></p>
+        </sp>
+        <pb n="21"/>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Beim Himmel! Mamsell, Sie erinnern mich an alles Gute und Selige, was die Erde für mich
+            hat!</p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <stage>(für sich)</stage>
+          <p>Ach! auch du mich!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <stage>(nimmt das Pallet zur Hand, und sezt das Gemälde auf die Staffelei)</stage>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <stage>(erschrickt)</stage>
+          <p>Gott!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Sie erschrecken, Mamsell? worüber?</p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>Ich bin ein Kind! Da Sie das Gemälde umkehrten, glaubte ich, es sey mein Porträt. Aber
+            – <stage>(schwermüthig)</stage> es ist's nicht mehr!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Nicht mehr? – Ich weis nicht, was es ist: denn ich sehe nur mein Original, und das ist
+            hier in meinem Herzen. – Wollen Sie so gut seyn, den Kopf ein wenig rechts!</p>
+          <stage>(der alte Ebrecht tritt unbemerkt herein, und bleibt verwundernd stehen)</stage>
+        </sp>
+        <pb n="22"/>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>In der That, mein Herr! wenn Sie mich verschonen wollten: Ihre Arbeit verliert gewiß
+            durch mich, und ich bedenke erst izt, daß ich nach Hause muß!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>So soll der schönste Augenblick für mich verloren gehen! O Röschen! halten Sie mir
+            Wort!</p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>Aber was soll Ihnen dieses älternde Gesicht zu jenem blühenden Kopfe? Sie suchen
+            Mairosen im Herbstmonat. Ach! lassen Sie mich. <stage>(sie sieht auf, und erschrickt, da
+              sie ihren Vater erblickt)</stage> Mein Vater!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Sechster Auftritt.</head>
+        <stage>Ebrecht, Rose, Glimour.</stage>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Nu, Röschen, erschrick nicht! Gehorsamer Diener, Herr Glimour!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Guten Tag, mein Freund! Ach! Herzensmann, was Sie mir da geschickt <pb n="23"/> haben!
+              <stage>(drückt ihm die Hand)</stage> Möge Ihnen dieser Druck sagen, was ich bei Ihrer
+            Arbeit fühl' und nicht sagen kann!</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Nu, so abgelebt bin ich noch nicht, daß ich in dem Händedruck eines simpathisirenden
+            Mannes nicht alles fühl'. Ich hab mit Lust gearbeitet, weil ich bei jedem Pinselstrich
+            dachte: du kömmst in eines Künstlers Aug'! – Aber was arbeiten Sie denn da? – Ei! das
+            ist ja meine Tochter! – Nein, nein – sie war's! – Das ist seltsam! Ich sollte schwören,
+            sie hätte Ihnen vor acht Jahren gesessen: da glich mein Mädchen diesem Kopfe, wie ein
+            Tropfen Wasser dem andern – aber izt nicht mehr!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Aber Ihre Mamsell Tochter ist noch in dem Frühling ihres Lebens; ihre Reize müssen izt
+            mehr entwickelt, mehr entschieden seyn. <stage>(Röschen stielt sich hinaus)</stage></p>
+        </sp>
+        <pb n="24"/>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Sie sollten freilich natürlicherweise – aber der Kummer, der Kummer! Sehen Sie, mein
+            Röschen ist ein herzguts Ding; sie härmte sich ab wegen meiner Armuth, und dann hatte
+            sie auch hier <stage>(zeigt aufs Herz)</stage> einen Verdruß, der ihre Blüthen
+            versengte.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <stage>(äußerst bestürzt)</stage>
+          <p>O mein Gott! eine Liebe!</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Eine Liebe, die unter meinen Augen entstand. Es war der erste Eindruck auf ihr junges
+            Herz, und so, wie es die Natur aus dem edelsten Stof geformt hat, wird dieser Eindruck
+            nicht bald vergehen – ich fürchte, nimmermehr!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Ihre erste Liebe war's? und wie hieß der, den sie liebte?</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Es war ein junger Mensch, den ich aufnahm, und dem ich meinen besten Unterricht gab. Er
+            war von Seiten seines <pb n="25"/> Kopfes und seines Herzens kein Alltagsmensch, für die
+            Kunst schien er geboren. Ich liebte ihn, und wäre, weis Gott! meiner Tochter gram
+            geworden, wenn sie ihn nicht geliebt hätte. Aber dafür war keine Noth. Ihre Empfindungen
+            waren mir kein Geheimniß, und ich freute mich deren, denn es waren zwo edle Seelen. Die
+            Talente des Jünglings entwickelten sich schneller durch die Liebe; in allem, was er
+            malte, Mensch oder Blum, Thier oder Wald, es war Lieb und Leben drinn. Auf einmal, ich
+            weis nicht, wie's kam, ward der Junge schwermüthig; er seufzte über meine Armuth, klagte
+            laut über sein Vaterland, kurz, seine Grillen brachten ihn so weit, daß er den Entschluß
+            faßte, verstohlnerweise auf und davon zu gehen. Ich gehe in die Welt, schrieb er mir,
+            und suche das Glück; und wenn ich's finde, so bring ich's zu Ihnen. Der gute Junge
+            dacht' <pb n="26"/> nicht, welch thörichte Arbeit es sey, etwas zu suchen, was nicht
+            verloren war.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Wer weis? vielleicht fand er's doch! – Aber Ihre Tochter, kränkte sie sich?</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>O! da sah' ich erst, wie weit es mit ihrem Herzen gekommen war. Sie ward krank, kam
+            zwar vom Grab zurück, aber ihre Lebhaftigkeit, ihre jugendliche Reize blieben aus.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <stage>(für sich)</stage>
+          <p>O mein Röschen! – Wenn nun der Mensch zurück käm' und –</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Ei, ei nicht doch! ich will nicht mehr träumen. Lieber von was anderm. Ich kann mich
+            nicht genug verwundern über die Aehnlichkeit dieses Kopfes mit meiner Tochter. Sie hat
+            Ihnen doch nie gesessen? Vor acht Jahren hätt ich meinen Kopf drauf verwettet, daß dieß
+            ihr Porträt wäre; jezt aber kann ich das nicht sagen, und doch – doch ist's mein
+            Röschen!</p>
+        </sp>
+        <pb n="27"/>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Warlich, sonderbar! aber nicht unbegreiflich. Unsre Phantasie trifts manchmal mit der
+            Natur.</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Aber so Zug für Zug!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Daran ist vermuthlich Ihre Tochter schuld. Hätte ich sie nicht gesehen, so wär'
+            vielleicht dieß und das und jenes anders geworden; aber, warlich, so ist's besser!
+              <stage>(er stellt das Porträt wieder umgekehrt auf den Boden)</stage> Nun, mein
+            Freund, will ich Ihnen auch zeigen, was ich gemacht habe. Freilich nur Schülerarbeit
+            gegen die Ihrige!</p>
+          <stage>(stellt zwo Landschaften auf)</stage>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Vortreflich, Herr Glimour! recht brav!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Das ist viel in Ihrem Munde! Aber ich meyn', Sie sollen mich zu gut kennen, um mir zu
+            schmeicheln. Sagen Sie <pb n="28"/> mir nur, ob ich einst im Stande seyn werde, so etwas
+            zu liefern?</p>
+          <stage>(zeigt auf Ebrechts Gemälde)</stage>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Sie sind ein Maler! – daß Sie aber so ganz meine Manier haben, das wundert mich.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Noch nicht so ganz, wie ich wünsche. Sehen Sie nur selbst!</p>
+          <stage>(Ebrechts Stücke betrachtend)</stage>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Ich muß ihnen nur gestehen, daß sich diese Stücke schon ein Jahr fertig habe, und ich
+            halte sie für meine beste Arbeit.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Und Sie machten nicht Ihr Glück mit diesem Meisterwerk? Sie litten Noth, und waren der
+            Mann, der so was machen konnt?</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>O mein Freund! Sie kennen mein Vaterland nicht. Ich bin nicht der einzige und nicht der
+            beste Künstler, der hier darbte. <pb n="29"/> Mancher große Mann nagte hier am
+            Hungertuch und lebte verachtet, und mußte zusehen, wenn man ausländische Arbeiten theuer
+            bezahlte, die er für die Hälfte besser gemacht hätte. Ich könnte Ihnen eine Menge
+            Beispiele nennen. Diese beiden Stücke ließ ich vor langer Zeit einigen sogenannten
+            Kennern und Liebhabern sehen. Man nannt es Schmiererei: denn der hiesige Maler Ebrecht
+            hat's gemacht.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Die Gräfinn Herrbach hat sie vermuthlich nicht gesehen, und der Baron Kranberg.</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Die waren's eben, welche das Urtheil sprachen, daß meine Arbeiten nichts taugen. Es ist
+            Sudelei! sagten sie.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Verdammt! eben die! – Doch, gut! das sollen sie mir widerrufen, hier in Ihren Augen.
+            Freilich wird es Sie mehr <pb n="30"/> verdrüßen, wenn Ihre Arbeiten von solchen
+            Menschen gelobt werden; aber doch des Spaßes halber wollen wir's darauf ankommen lassen.
+            Ich erwarte die Gräfinn und den Baron jeden Augenblick. Wenn sie kommen, so will ich
+            Ihre Stücke für meine Arbeit ausgeben, und Sie, Freund, müssen sagen, das wären Ihre
+            Stücke.</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Aber, Herr Glimour! ist es nicht zu frevelhaft, mit so hohen Herrschaften seinen Spaß
+            zu treiben?</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Guter Mann! wenn nun der liebe Gott diese Leute zum Belachen gemacht hat, warum sollen
+            wir ihm nicht gehorchen und lachen?</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Aber wär's nicht besser, wenn ich weggieng? Ich befinde mich gar nicht gern in so hohen
+            Gegenwarten; sie sehen einen Bürgersmann so über die Schulter an, und das kann ich nicht
+            leiden.</p>
+        </sp>
+        <pb n="31"/>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Bleiben Sie, und denken Sie, wer Sie sind!</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Schon Recht; aber wenn ich nur – –</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Was?</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Wenn ich nur wenigst meine Sonntagsperüke hier hätte!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>O lassen Sie nur Ihre Sonntagsperüke in Ruhe! das würde meinen Gemälden zu viel Ansehen
+            geben. Aber ich will einen Goldlappen umhängen, damit die Ihrigen mehr brilliren. Sie
+            erlauben!</p>
+          <stage>(geht ins Nebenzimmer)</stage>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Ei, ei, ei! und ich soll in diesem Lumpenaufzug erscheinen! Man möchte mich für ein
+            altes Porträt halten, das aus seiner Rahme gelassen wäre. Nein, nein, das geht nicht!
+            Wenn Herr Glimour mit seinem Aussehen meiner Arbeit Ehre macht, <pb n="32"/> so soll
+            meine Sonntagsperüke auch zum Besten seiner Arbeit das ihrige thun. <stage>(Stephan
+              kömmt)</stage> O just recht, lieber Stephan! da, eine frische Prise! <stage>(gibt ihm
+              Taback)</stage> gehe doch geschwind nach meinem Hause! hörst du? und sag meiner
+            Tochter, sie soll mir gleich meine gute Perüke schicken! geschwind, lieber Stephan!</p>
+        </sp>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <p>Sagen Sie nur meinem Herrn, daß die Herrschaften schon ausgestiegen sind!</p>
+          <stage>(eilt ab)</stage>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Wie? was? sie kommen? Lieber Himmel! wär ich nur tausend Meilen von hier! Ich soll sie
+            empfangen? ich? – Herr Glimour! geschwind, geschwind! die Herrschaften kommen!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Gleich! gleich! <stage>(innerhalb)</stage> Empfangen Sie sie nur! machen Sie die
+            Hausehre!</p>
+        </sp>
+        <pb n="33"/>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Ich? Potz Kreuzelement! ich laufe auf und davon, wenn Sie nicht gleich kommen! Zittre
+            ich nicht an Arm und Bein, wie ein Kind, zu dem der Klaubauf kömmt?</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <stage>(prächtig gekleidet)</stage>
+          <p>Wie, mein Freund, Sie sind ja außer Fassung! und das wegen ein paar Menschen, die gewiß
+            an wahrem Gehalt so weit unter Ihnen sind, als – als dieser Rock unter mir. <stage>(für
+              sich)</stage> Wozu lange Sklaverei und Armuth den edelsten Mann nicht bringen
+            können!</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Er hat Recht; aber wenn er wüßte – –</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Siebenter Auftritt.</head>
+        <stage>Gräfinn Herrbach, Baron Kranberg, die Vorigen.</stage>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Frau Gräfinn! ich schätze mich glücklich, daß Sie mich dieser Ehre würdigen. Herr
+            Baron, Ihr Diener!</p>
+        </sp>
+        <pb n="34"/>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Euer hochgräfl. und freiherrl. Gnaden nehmen es nicht zur Ungnade, daß ich – –
+              <stage>(murmelt tiefgebückt sein Kompliment daher, auf das man aber nicht
+              achtet)</stage></p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p><foreign xml:lang="fre">Votre Servante, Monsieur!</foreign> Ich habe so viel von Ihren
+            schönen Piecen gehört, daß ich mich resolvirt habe, Ihre <foreign xml:lang="fre"
+              >connaissance</foreign> zu machen. Wollen Sie uns nicht etwas von Ihren <foreign
+              xml:lang="fre">chef d'oeuvres</foreign> admiriren lassen?</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Hier sind meine neuesten Stücke!</p>
+          <stage>(stellt Ebrechts Landschaften auf)</stage>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Ah! <foreign xml:lang="fre">superbe!</foreign> göttlich! <foreign xml:lang="fre">sur
+              mon honneur! unique!</foreign> so frisch und glänzend! <stage>(durch die Lorgnette
+              betrachtend)</stage></p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Wahrhaftig! scharmant!</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>O ich bitte unterthänig –</p>
+          <stage>(Glimour hält ihm's Maul zu)</stage>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Was die Bäume da so natürlich sind!</p>
+        </sp>
+        <pb n="35"/>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <stage>(leise)</stage>
+          <p>Das ist ein Fels, Gnädige!</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Ja, das <foreign xml:lang="fre">precipice</foreign> ist <foreign xml:lang="fre"
+              >afreux</foreign>! ach! <foreign xml:lang="fre">je tombe en faiblesse!</foreign> –
+            Baron! ist meine <foreign xml:lang="fre">Frisure</foreign> nicht <foreign xml:lang="fre"
+              >dechifon</foreign>nirt? die Thüren sind so niedrig in diesem Hause!</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Alles schön! wie Sie, Gnädige! – Aber sehen Sie nur diese Ochsen da am Wasser!</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Ja, wie natürlich! man glaubt sie brüllen zu hören.</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Ich höre sie wirklich brüllen.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>O lassen Sie doch die Ochsen nur brüllen! betrachten Sie die Komposition, das Licht so
+            – –</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Ja, ja, diese Stücke muß ich haben, <foreign xml:lang="fre">coute qu'il
+            coute</foreign>. <foreign xml:lang="fre">Monsieur</foreign>, morgen beim <foreign
+              xml:lang="fre">dinner</foreign> wollen wir schon <foreign xml:lang="fre"
+              >d'accord</foreign> werden. Hören Sie? <foreign xml:lang="fre">chez moi, au
+              dinner!</foreign></p>
+        </sp>
+        <pb n="36"/>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Aber, gnädige Gräfinn! da müssen Sie ein paar prächtige Rahmen machen lassen.</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p><foreign xml:lang="fre">Sur mon honneur!</foreign> sie meritiren's. Sie gefallen mir
+            besser, als meine Landschaften von Rubens.</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Die vom van Dyk werden Sie meynen, Gnädige?</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Um Vergebung, Herr Baron, ich weis schon, was ich sage.</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p><foreign xml:lang="fre">Mille pardons!</foreign> Aber ist Ihnen nicht gefällig, in das
+            Zimmer da zu spazieren? da hat Herr Glimour noch mehr Piecen.</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p><foreign xml:lang="fre">Sur mon honneur!</foreign> Ich will sie admiriren, das ist
+            meine größte <foreign xml:lang="fre">plaisir</foreign>.</p>
+        </sp>
+        <pb n="37"/>
+      </div>
+      <div type="scene">
+        <head>Achter Auftritt.</head>
+        <sp who="#ebrecht">
+          <speaker>Ebrecht</speaker>
+          <stage>(allein)</stage>
+          <p>Was das für Leute sind! – <stage>(zu seinen Gemälden)</stage> Vor einem halben Jahre
+            war't ihr Sudelei, Schmiererei, und izt seyd ihr, Gott weis, was! <foreign
+              xml:lang="fre">unique</foreign>, scharmant! besser, als Rubens und van Dyk! Ha! ha!
+            Landschaften von Rubens und van Dyk! Ich weis nicht, ich kann mich ihres Lobs nicht
+            freuen; Glimour und sein Kleid haben das Meiste dabei gethan. Was sie zu seinen Stücken
+            sagen werden! Es thät mir wehe für den ehrlichen Mann, wenn sie ihn mit einem Worte
+            kränkten. Es müßte einer keine Augen und keine Seele haben, wenn er das Schöne hier
+            nicht sähe! Ich begreife nicht, warum mir seine Arbeiten so bekannt vorkommen, und doch
+            sind sie neu und originell! <stage>(er stellt Glimours Gemälde zurecht)</stage>
+            <pb n="38"/> Sollte wohl gar die Thorheit so weit gehen, daß man diese Arbeit
+            verachtete, weil ich sie für die meinige ausgebe? O das wäre zu toll, das könnte ich
+            nicht aushalten! Nun, wir wollen sehen! Wenn sie so impertinent dumm sind, so sag ichs
+            ihnen rein unter die Nase, und sollts mich mein Leben kosten.</p>
+        </sp>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <stage>(schaut zur Thür herein)</stage>
+          <p>Herr Ebrecht! sind Sie allein?</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Ja, Stephan, nur herein?</p>
+        </sp>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <p>Hier ist die Perüke!</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Dank, Stephan. Da, eine Prise! Leg' sie nur auf den Sessel!</p>
+        </sp>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <p>So, oblischirt! ich hab zu thun. <stage>(ab)</stage></p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Man wird mich doch hoffentlich jezt anschauen, und da ist's immer ein bischen <pb
+              n="39"/> honnetter, wenn ich – <stage>(da er im Begrif ist, seine Perüke abzunehmen,
+              geht die Seitenthür auf. Er erschrickt, und stellt sich in Positur, um Komplimente zu
+              machen)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Neunter Auftritt.</head>
+        <stage>Gräfinn Herrbach, Baron Kranberg, Glimour, Ebrecht.</stage>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <stage>(im Herausgehen)</stage>
+          <p>Alles <foreign xml:lang="fre">magnifique, sur mon honneur</foreign>! Ich muß mich
+            setzen. <stage>(erblickt die Perüke auf dem Sessel)</stage> Ei, da haben Sie ja ein gar
+            scharmantes Pudelchen!</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Ich meyn', es ist eine Perüke, Gnädige!</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <stage>(ergreift sie hastig)</stage>
+          <p>Es ist mein Pudelchen. Du kleiner Schelm! wer hieß dich nachlaufen? Marsch, nach
+            Hause!</p>
+          <stage>(wirft die Perüke zur Thür hinaus)</stage>
+        </sp>
+        <pb n="40"/>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>O er abscheulicher Mann! er hat dem armen Thierchen gewiß wehe gethan! hört nur, wie's
+            lamentirt!</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <stage>(für sich)</stage>
+          <p>Nun hat sie auch ihre Blödsichtigkeit gezeigt!</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Thut ihm nichts, Euer hochgräfl. Gnaden! S'ist schon an die Püffe gewöhnt!</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Wie ihr Leute doch ohne alles Gefühl seyd! <stage>(indem sie sich sezt, leise und mit
+              Aerger zum Baron)</stage> Viel Dank, mein Herr Baron! Sie möchten mich heute gar zu
+            gern für eine Blinde passiren lassen! Ich deprecire mir die weisen Korrektionen.
+              <foreign xml:lang="fre">M'entendez vous, Monsieur?</foreign></p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p><foreign xml:lang="fre">Mille perdons!</foreign></p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p><foreign xml:lang="fre">Monsieur Glimour!</foreign> wie lange waren Sie in Paris?</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Vier Jahre, Frau Gräfinn!</p>
+        </sp>
+        <pb n="41"/>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Vier Jahre! O wenn ich vier Jahre in Paris passiren könnte! wollte sie gern von meinem
+            Leben abzählen lassen. <foreign xml:lang="fre">Sur mon honneur!</foreign> das wollt'
+            ich. In Paris lebt man doppelt. Man sieht's aber auch Ihren Piecen da wohl an, daß sie
+            nicht auf teutschem Boden gewachsen sind.</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Da haben sie wohl Recht, gnädige Gräfinn!</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p><foreign xml:lang="fre">A propos, Monsieur Glimour!</foreign> könnten Sie mir nicht von
+            den neuesten Coeffuren, die izt zu Paris <foreign xml:lang="fre">à la mode</foreign>
+            sind, eine Zeichnung geben? O ich bitte!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Als ich Paris verließ, war das die neueste. <stage>(zeigt auf ihren
+            Kopfputz)</stage></p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Wie lange ist das?</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Sechs Monat.</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Ah! sechs Monat! O ich schäme mich zu tode! Wart', das will ich <pb n="42"/> meiner
+              <foreign xml:lang="fre">Coeffeuse</foreign>
+            <foreign xml:lang="fre">reprochi</foreign>ren, mich in einem Aufsatz erscheinen zu
+            lassen, der schon vor sechs Monaten Mode war. Ei! ei! – Aber so gehts uns armen Leuten
+            hier in dem abgelegenen Winkel der Welt.</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Wollten Euer hochgräfl. Gnaden nicht – –</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Was? er will über Moden reden? er? ha ha! Nun, so sag' er mir, was trugen die Damen für
+            Hauben in den Zeiten des Schwedenkriegs? hi hi!</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Ha ha ha! O wie superfein! wie witzig! ha ha ha!</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Hi hi!</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Ha ha ha!</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <stage>(zornig)</stage>
+          <p>J – a! J – a! <stage>(lacht, und macht das Geschrei eines Esels nach)</stage> – so
+            superfein, wie unser Siegelwax.</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Nun, so sag' er mir's!</p>
+        </sp>
+        <pb n="43"/>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Erlauben Euer Gnaden! Ich wollte gar nicht von Hauben reden, solche Dinge sind mir
+            freilich zu hoch; ich wollte Sie nur bitten, diese zwo Landschaften anzusehen. Herr
+            Glimour erlaubte mir, sie daher zu bringen, und – –</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Was? er kann malen? nun, das ist noch komiker! Er ist ein Maler?</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Sie werden es doch nicht zur Ungnade nehmen?</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Aber, <foreign xml:lang="fre">mon Dieu</foreign>! wie kann er sich's nur einfallen
+            lassen, seine Barboullerien neben diesen <foreign xml:lang="fre">chef
+              d'oeuvres</foreign> sehen zu lassen?</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Sehen Sie sie nur an, und dann –</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p><foreign xml:lang="fre">A la bonne heure!</foreign> Sehen wir sie, Baron! – O! <foreign
+              xml:lang="fre">mon Dieu!</foreign> das ist <foreign xml:lang="fre"
+            >afreux</foreign>!</p>
+        </sp>
+        <pb n="44"/>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <stage>(pathetisch)</stage>
+          <p>Nicht wahr, das heißt die Natur kennen! Sehen Sie nur diese Erhabenheit der Idee, diese
+            Kühnheit des Lichts, das so meisterhaft vertheilt jeden Gegenstand mit der höchsten
+            Wahrheit darstellt! Sehen Sie hier –</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <stage>(zum Baron und Glimour)</stage>
+          <p>Haben Sie in Ihrem Leben so eine <foreign xml:lang="fre">Charlatanerie</foreign>
+            gesehen? Der Mann lobt sich, wie ein Author, ohne roth zu werden! – Geschwind einen
+            Blick auf Glimours Piecen, sonst möchte die Kunst meine Liebe verlieren! – Nein, guter
+            Mann! ich will's ihm kurz und gut sagen: geb er's auf! Wär er jünger, so wollt' ich ihm
+            rathen, zum Herrn Glimour in die Schule zu gehen, und ein paar Jahre nach Paris. Weil er
+            aber nun <foreign xml:lang="fre">malheureusement</foreign> einmal malen will und muß, so
+            begnüg' er sich, unsre Kirchen mit <foreign xml:lang="lat">ex voto</foreign> Bildlein zu
+            versehen.</p>
+        </sp>
+        <pb n="45"/>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Ha ha ha! O ich bitte Sie, Gnädige! Sie machen mich für Lachen bersten! O Witz über
+            Witz! ha ha!</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Hi hi!</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Um Gotteswillen, Frau Gräfinn, nehmen Sie Ihr Glas; denn ohne Glas kann eine Perüke zum
+            Pudel werden! Schauen Sie nur durch Ihr Glas diese Gemälde an! – Wer hier die Schönheit
+            nicht sieht, nicht fühlt, der hat keine Augen, keine Ohren, kein Gefühl, der muß ein
+            Herz haben, wie – wie eine pariser Sackuhr.</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Hör er! Er ist ein Narr! und ein impertinenter Narr, weil wir ihm seine Schmierereien
+            da nicht loben wollen!</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Ja, das ist er, und ich rathe ihm – –</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Ich ein Narr! das Schmierereien! Nun kann ich nicht mehr, wenn zehen Galgen <pb n="46"
+            /> dastünden, sie müssen's wissen. Sehen Sie, diese Schmierereien hier sind des Herrn
+            Glimours Arbeit, und gute, herrliche Arbeit ist's. Und das da, was Sie <foreign
+              xml:lang="fre">superbe</foreign>, göttlich, <foreign xml:lang="fre">unique</foreign>,
+            scharmant nannten, ist mein. Ich Sudler, ich <foreign xml:lang="lat">ex voto</foreign>
+            Bildleinmaler, ich Hanns Ebrecht, Burger und Maler allhier, <foreign xml:lang="lat">ipse
+              fecit</foreign>. Dem Herrn Glimour ist Gerechtigkeit wiederfahren, da Sie seine
+            herrlichen Stücke Schmierereien nannten, und hätten Sie die meinigen – sehen Sie, diese
+            beiden Stücke hier – nicht schon vor einem halben Jahre auch Schmierereien genannt, so
+            wollte ich sie izt auf ihr Lob ins Feuer werfen; aber nun kommt! ihr müßt nicht ganz
+            schlecht seyn. Empfehle mich!</p>
+          <stage>(nimmt seine Gemälde, und will fort)</stage>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Bleiben Sie hier, mein Freund, ich bitte Sie!</p>
+        </sp>
+        <pb n="47"/>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Ich fall' aus den Wolken! <stage>(sieht den Baron mit großen Augen an)</stage>
+            <foreign xml:lang="fre">Comment!</foreign> die Herren haben ihre <foreign xml:lang="fre"
+              >raillerie</foreign> mit uns gehabt! So, so, so! <stage>(ärgerlich zum Baron)</stage>
+            Stehen Sie nicht da, wie ein Maulaffe! so sagen Sie doch etwas, das uns aus dem <foreign
+              xml:lang="fre">embarras</foreign> hilft!</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Ei, ei, ei, ei!</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Sie sind ein rechter Stock mit Ihrem Ei. Sehen Sie nicht, wie das Bürgergeschmeiß sich
+            über uns moquirt! wissen Sie denn gar nichts, um uns wieder in <foreign xml:lang="fre"
+              >contenance</foreign> zu bringen?</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Ich muß gestehen, daß – daß – daß –</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Daß Sie mehr Kopf als Gehirn haben! Weil ich denn doch einmal statt Ihrer reden muß, so
+            sag ich Ihnen hiemit <foreign xml:lang="fre">franchement</foreign>, daß ich mir Ihre
+            Besuche <pb n="48"/> verbitte. Was sollte mir ein Mensch, der sich in so einer
+            Kleinigkeit nicht zu helfen weiß! da könnte man sich schön auf Sie verlassen, wenn
+            einmal eine <foreign xml:lang="fre">sottise</foreign> zu repariren wäre. Und Sie, Herr
+            Glimour, Ihnen muß ich sagen, daß Sie sehr wenig Lebensart in Paris gelernt haben.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p><foreign xml:lang="fre">Ma foi</foreign>, Frau Gräfinn! in Paris macht man's gerade so,
+            das ist die allerneueste Mode. Ich hoffe nicht, daß Sie auf mich zürnen.</p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>Auf Sie nicht so sehr, als auf diese Antike da!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Auf meinen Freund Ebrecht? O ich bitte für ihn um Pardon! Ich bin hieher gekommen, um
+            unter seiner Aufsicht meine Kunst zu studiren, und ich möchte von nun an in keinem
+            Stücke schlimmer oder <pb n="49"/> besser dran seyn, als er: denn er ist mein Freund,
+            mein Lehrmeister, mein Vater!</p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <stage>(zur Gräfinn)</stage>
+          <p>Ah! jezt hab ich's, Gnädige! geben Sie Acht! <stage>(lacht gezwungen)</stage> ha ha!
+            das ist zum todtlachen! Ihr Herren glaubt gar, wir hätten im Ernste so geredet; lauter
+            Spaß war's, lauter Spaß! Um uns zu amüsiren, nahmen wir uns vor, das Schlechte zu loben,
+            und das Gute zu tadeln; oder glauben die Herren vielleicht, wir könnten nicht so gut
+            unsern Spaß haben, als Sie den Ihrigen? Sagen Sie, Gnädige! war's nicht lustig? he!
+            war's nicht? Ha ha! Kommen Sie, Gnädige!</p>
+          <stage>(bietet seinen Arm an)</stage>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <stage>(hält ihn zurück)</stage>
+          <p>Lachen Sie sich nur recht satt über ihren Spaß; für mich kam er ein wenig zu spät.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Soll ich die Gnade haben? <stage>(bietet auch seinen Arm)</stage></p>
+        </sp>
+        <pb n="50"/>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <stage>(wie oben)</stage>
+          <p>Lachen Sie auch über Ihren Spaß! der kam zu früh.</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Euer hochgräfl. Gnaden wollten vielleicht mir – <stage>(bietet seinen Arm von
+              fern)</stage></p>
+        </sp>
+        <sp who="#graefinn">
+          <speaker>Gräfinn.</speaker>
+          <p>O fi! fi! Ihm kann ich's Lachen nicht anrathen, denn er scheint mir gar nicht dazu
+            gemacht zu seyn. Trag' er seine weinerliche Figur ins Spital! das rath' ich ihm.
+              <foreign xml:lang="fre">Sur mon honneur!</foreign> das haben wir Leute vom Stande
+            davon, wenn wir uns unter so Geschöpfe mischen. Sie emancipiren sich täglich mehr und
+            mehr, und ich glaube gar, auf die lezt bilden sie sich ein, eine Dame von <foreign
+              xml:lang="fre">naissance</foreign> wäre gerade so ein Gemächte, wie eine Bürgersfrau.
+            Es geschieht mir Recht, warum blieb ich nicht bey meines gleichen! da lügt man sich
+            wenigst was vor, und eine höfliche Lüge ist doch immer besser, als eine grobe Wahrheit.
+              <pb n="51"/> Was ihr Leute so unglücklich seyd, daß ihr den <foreign xml:lang="fre"
+              >bon ton</foreign> nicht kennt! Ah! <foreign xml:lang="fre">vive le beau
+              monde!</foreign>
+            <stage>(ab)</stage></p>
+        </sp>
+        <sp who="#kranberg">
+          <speaker>Kranb.</speaker>
+          <p>Ich bin verloren! es ist ihr Ernst! Um des Himmelswillen! so eine ergiebige <foreign
+              xml:lang="fre">Connaissance</foreign> bekomm' ich in meinem Leben nicht wieder! Ich
+            will neben ihrem Wagen hergehen, betrübt hineinblicken, seufzen, an jeder Ecke mich tief
+            bücken! Das wird sie erweichen, wird sie scharmiren, wird mir meine freie Kost
+            wiederschaffen!</p>
+          <stage>(läuft hinaus)</stage>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Zehnter Auftritt.</head>
+        <stage>Glimour, Ebrecht.</stage>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Das wünsch' ich dir von Herzen, denn ich kann nicht leiden, wenn's einen Menschen
+            hungert. Nun, mein Freund! was denken Sie?</p>
+        </sp>
+        <pb n="52"/>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Das sind die Leute, von welchen oft das Fortkommen eines Künstlers abhängt? O da ist
+            mir meine Armuth lieber, als daß ich mich um den Beifall solcher Menschen bewerben
+            wollte!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Ja, mein Freund! das sind die hochgräflichen und hochfreiherrlichen Gnaden, vor welchen
+            Sie sich nicht tief genug bücken konnten. O ich kann mich ärgern, wenn ich sehe, daß der
+            Rücken und die Zunge eines braven Mannes so einem sklavischen Vorurtheile fröhnen! Was
+            haben Sie je für Gnaden von diesen gnädigen Leuten genossen, oder was für Gnaden kann
+            ein Künstler von ihnen genießen? Nichts Gnaden, Freund, nichts Gnaden! Gott sey gnädig;
+            die Menschen, groß und klein, seyen nur gerecht!</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Wohl wahr! das hab' ich oft gedacht; aber der Gebrauch will –</p>
+        </sp>
+        <pb n="53"/>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Will, daß wir kriechende, lächerliche Thoren seyn sollen? Zum Teufel mit dem Gebrauch!
+            Wissen Sie, daß man diesen Gebrauch Ihrem Vaterlande vorwirft, als einen Beweis einer
+            niedrigen, sklavischen Denkart? Beinahe alles ist hier eine Gnaden, was einen ganzen
+            Rock auf dem Leibe hat. Pfui! pfui über die kleinen Menschlein, die sich, ohne zu
+            erröthen, so schelten lassen! Nein, Herr Ebrecht, überlassen Sie diesen elenden Gebrauch
+            dem Troß patentisirter Bettelbuben, die einen hier auf den Straßen bloquiren, jeden
+            Haarbeutel eine Excellenz heißen, und die Barmherzigkeit mit Titulaturen bestürmen.</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Sie haben Recht. Der vernünftige Mann verlangt keine Titel, und der Dummkopf verdient
+            sie nicht. Aber, ich bereue doch meine Hitze, ich hätte die Gräfinn nicht beleidigen
+            sollen.</p>
+        </sp>
+        <pb n="54"/>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Das ist keine Beleidigung, und – was verlieren Sie dabei?</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Je nun! wenn's um mich allein zu thun wäre; aber – Ich will frei von der Brust mit
+            Ihnen reden, Herr Glimour! Sehen Sie, meine Tochter, mein Röschen liegt mir am Herzen.
+            Ich hab für das gute Mädchen keine Aussicht, was soll nach meinem Tode aus ihr werden?
+            Ich suchte sie bei irgend einer Dame in Dienste zu bringen; nun aber wird die Gräfinn
+            Herrbach, die einen großen Arm hat, und als eine sehr kluge Dame bekannt ist –</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Freund! Sie wollten Ihre Tochter, diese edle, sanfte, erhabene Seele, einer solchen
+            Sklaverei aufopfern? Nein, nimmermehr! <stage>(zieht das Mignaturporträt hervor)</stage>
+            Dies holde, liebevolle Geschöpf sollte vielleicht einer Uebermüthigen, Unbesonnenen zum
+            Spiel <pb n="55"/> ihrer Laune, zur Gehilfinn ihrer Ausschweifungen dienen? Nein, sie
+            ist mein, mein, mein! <stage>(drückt's an sein Herz)</stage></p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Wie? was? Um Gotteswillen! lassen Sie mich dieses Porträt sehen! Ja es ist's! Karl
+            hat's gemalt, eben der Junge, von dem ich vorhin sprach! Wie kömmts? Herr Glimour? –</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Wie kömmt's, Vater Ebrecht, daß Sie Ihren Karl nicht kennen? bin ich denn nicht Ihr
+            Lehrjunge, Ihr Karl, Ihr Sohn?</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Herzens – lieber Herzensjunge! du bist's? mein Karl, mein Sohn? O mein Röschen! mein
+            Röschen! Stephan! <stage>(er kömmt)</stage> lauf! meine Tochter soll kommen, lauf!
+              <stage>(Steph. ab)</stage></p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Daß Sie mich aber nicht kannten, Vater!</p>
+        </sp>
+        <pb n="56"/>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Wer sollte dich kennen, Karl! – und doch, wenn ich so deine Gemälde betrachtete, und
+            dein Gesicht, so war mir – Ja, hör nur, Karl! als dich meine Tochter das erstemal sah'
+            durch das kleine Fensterchen in meiner Kammerthür, da fuhr sie mit einem Schrei zurück,
+            und schrie: Karl! Seit du hier bist, war das Mädchen wieder so schwermüthig – aber sag
+            mir, dein Namen! warum hast du ihn verändert? Du heißt ja Karl Glimm!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Ich kannte das Vorurtheil meiner Vaterstadt, und wußte, daß ein ausländischer Schnirkel
+            an meinem Namen meinen Arbeiten eine gute Aufnahme, und mir die Freude verschaffen
+            würde, die Thorheit meiner Landsleute zu belachen – und, o! hab ich nicht auch diese
+            Freude diesem Einfall zu danken?</p>
+        </sp>
+        <pb n="57"/>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Nu, Gott! Gott! wer hätte denken sollen, daß du – Wenn nur mein Röschen käme!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Darf ich auch sagen: mein Röschen?</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Dein, dein, Karl! wär's eine Königinn, dein! Aber, lieber Karl, man muß doch auch ein
+            wenig denken, wovon sich's lebt. Wenn man wissen wird, daß du ein Inländer bist – du
+            kennst deine Vaterstadt – deine Arbeiten werden keinen Werth mehr haben.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Man wird uns doch Luft und Licht in Freiheit vergönnen? mehr verlang' ich nicht. Ich
+            habe Menschen und Städte kennen gelernt, die wahres Gefühl, die Kunst zu lieben, und
+            wahre Kenntnisse, sie zu schätzen, besitzen: für diese wollen wir arbeiten. Wir werden
+            nicht Noth leiden, Vater, gewiß <pb n="58"/> nicht! Freilich wirds uns wehe thun, wenn
+            wir unsre Vaterstadt am Kleinen hängen, Gaukeleien bewundern, Possenreisser bezahlen,
+            und ihre Narrheiten beklatschen sehen; es wird uns wehe thun, wenn ein betitelter
+            Dummkopf sich durch seine Titel berechtigt glaubt, mit Kennermiene unsre Werke zu
+            beschnarchen; wenn man Quacksalber emporhebt, und unser nicht achtet; aber uns drücken
+            und verfolgen wird man nicht, sonst bauen wir unsre Hütte anderswo!</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Nein, nein, Karl! ich meyn', es geht nichts über's liebe Vaterland, und so arg machen
+            sie's eben nicht. Wenn man fein demüthig einherkriecht, und den Kopf nicht aus seiner
+            Höhle reckt; so lassen sie einen hübsch im Stillen hungern. Hab's erfahren! Nu, nu, nu!
+            wir wollen schon zurechtkommen, wenn's noch solche Menschen <pb n="59"/> und Städte
+            giebt, wie du sagst. – Wo bleibt denn das Mädchen? Aber wir wollen ihr's nicht gleich
+            entdecken, hörst du, nicht gleich!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Eilfter Auftritt.</head>
+        <stage>Stephan kömmt.</stage>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <p>Die Mamsell wird gleich hier seyn! Ich zittre noch an Arm und Bein.</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Warum? was ist geschehen?</p>
+        </sp>
+        <sp who="#stephan">
+          <speaker>Steph.</speaker>
+          <p>Ich sitze da draussen im Vorzimmer auf dem Boden, reibe Farben, denk' an nichts. Auf
+            einmal fliegt mir etwas haarigtes auf die Nase! So bin ich in meinem Leben nicht
+            erschrocken. Ich meynt', er hätt' mich schon beym Haarzopf – und da ich's beym Licht
+            besah, war's Ihre Perüke!</p>
+        </sp>
+        <pb n="60"/>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Ha ha! Nun, Stephan! da, eine Prise! Das war spaßigt, wie ich mit guter Art meiner
+            Perüke loswurde.</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Geh' er in meine <foreign xml:lang="fre">Auberge</foreign> und bestell' er mir ein
+            Abendessen für drei Personen! das Beste, was sie haben, und Wein den besten!</p>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Nein, nein! das wär meiner Tochter nicht recht. Sie hat in ihrem Leben ihr Küchentalent
+            nicht besser zeigen können. – Wo bleibt sie dann? Sieh doch, Stephan, ob sie kömmt!
+              <stage>(Stephan ab)</stage> Wir wollen ihr's nicht gleich entdecken! hörst, Karl,
+            nicht gleich!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Zwölfter Auftritt.</head>
+        <stage>Rose, Ebrecht, Glimour.</stage>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Komm, Röschen, komm her! Höre, Röschen! – O ich kann nicht! Ich <pb n="61"/> hab meine
+            Empfindungen nicht am Schnürchen, daß ich loslassen und zurückhalten kann, wie ich will.
+            Wir spielen ja keine Komödie, daß wir die Leute auf den Zehen in Erwartung lassen
+            wollen. – Röschen! da! da! das ist dein Karl! – Nu, Aeffchen! was stehst da, und
+            zitterst, und wirst blaß!</p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>O mein Röschen!</p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>O mein Vater!</p>
+          <stage>(sinkt auf Ebrechts Arme)</stage>
+        </sp>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Nu, nu! was willst mit mir? da! der mag für deine Ohnmachten sorgen! <stage>(schiebt
+              sie in Glimours Arme)</stage></p>
+        </sp>
+        <sp who="#glimour">
+          <speaker>Glim.</speaker>
+          <p>Mein Röschen! willkommen an meiner Brust! O nur einen Blick!</p>
+        </sp>
+        <sp who="#rose">
+          <speaker>Rose.</speaker>
+          <p>Karl! – – du! – – du! – O!</p>
+        </sp>
+        <pb n="62"/>
+        <sp who="#ebrecht">
+          <speaker>Ebr.</speaker>
+          <p>Bleibt so stehen, Kinder! und ich will malen, was noch keines Menschen Aug sah, noch
+            keines Menschen Herz fühlte! – Aber nein, ich gehöre ja auch zu dieser Gruppe!
+              <stage>(legt ihre Hände in einander)</stage> So! und – <stage>(umarmt beide)</stage>
+            So!</p>
+        </sp>
+        <stage>Der Vorhang fällt.</stage>
+      </div>
+    </body>
+  </text>
+</TEI>
