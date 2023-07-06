@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000626" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Apolls Gericht, oder das bestrafte Vorurtheil Vindebonens</title>
+        <title type="sub">Ein allegorisches Drama in einem Akte von einem Wiener</title>
+        <author>
+          <persName>
+            <forename>Joseph</forename>
+            <forename>Bernhard</forename>
+            <surname>Pelzel</surname>
+          </persName>
+          <idno type="wikidata">Q55858581</idno>
+          <idno type="pnd">12200308X</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Wikisource</name>
+          <idno type="URL">https://de.wikisource.org/wiki/Apolls_Gericht</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource"> Anonym [= <author>Joseph Bernhard Pelzel</author>]:
+              <title>Apolls Gericht, oder das bestrafte Vorurtheil Vindebonens. Ein allegorisches
+              Drama in einem Akte von einem Wiener</title>. <pubPlace>Wien</pubPlace>:
+              <publisher>Kurzböck</publisher>
+            <date>1769</date>. (S. <biblScope unit="page" from="1" to="32">1–32</biblScope>.)</bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="apollo" sex="MALE">
+            <persName>Apollo</persName>
+          </person>
+          <person xml:id="der_genius" sex="UNKNOWN">
+            <persName>Der Genius Vindebonens</persName>
+          </person>
+          <person xml:id="das_vorurtheil" sex="MALE">
+            <persName>Das Vorurtheil Vindebonens</persName>
+          </person>
+          <person xml:id="die_eitelkeit" sex="UNKNOWN">
+            <persName>Die Eitelkeit</persName>
+          </person>
+          <person xml:id="die_unwissenheit" sex="UNKNOWN">
+            <persName>Die Unwissenheit</persName>
+          </person>
+          <person xml:id="das_franzoesische_schauspiel" sex="UNKNOWN">
+            <persName>Das Französische Schauspiel</persName>
+          </person>
+          <person xml:id="der_patriotismus" sex="UNKNOWN">
+            <persName>Der Patriotismus</persName>
+          </person>
+          <person xml:id="das_deutsche_schauspiel" sex="UNKNOWN">
+            <persName>Das deutsche Schauspiel</persName>
+          </person>
+          <person xml:id="die_kritik" sex="UNKNOWN">
+            <persName>Die Kritik</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="associated_with" active="#die_eitelkeit #die_unwissenheit"
+              passive="#das_vorurtheil"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2023-07-06">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1769">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000626"
+        passive="http://www.wikidata.org/entity/Q120401569"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <pb n="1"/>
+    <front>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">Apolls Gericht, oder das bestrafte Vorurtheil
+            Vindebonens.</titlePart>
+          <titlePart type="sub">Ein allegorisches Drama in einem Akte von einem Wiener.</titlePart>
+        </docTitle>
+        <docImprint>
+          <pubPlace>Wien,</pubPlace>
+          <publisher>bey Joseph Kurzböck auf dem Hofe</publisher>
+          <docDate>1769.</docDate>
+        </docImprint>
+      </titlePage>
+      <pb n="2"/>
+      <castList>
+        <head>Personen.</head>
+        <castItem><role>Apollo.</role></castItem>
+        <castItem><role>Der Genius Vindebonens.</role></castItem>
+        <castItem><role>Das deutsche Schauspiel.</role></castItem>
+        <castItem><role>Das Französische Schauspiel.</role></castItem>
+        <castItem><role>Der Patriotismus.</role></castItem>
+        <castItem><role>Das Vorurtheil Vindebonens,</role>
+          <roleDesc>als <foreign xml:lang="fre">petit maitre</foreign>
+          gekleidet.</roleDesc></castItem>
+        <castItem><role>Die Kritik.</role></castItem>
+        <castItem><role>Gefolge des Vorurtheils, worunter die Unwissenheit und die
+          Eitelkeit</role></castItem>
+      </castList>
+      <set>
+        <p>Die Bühne zeigt während den drey ersten Auftritten eine schöne ländliche Gegend, die am
+          Fusse des Parnaßus supponiret wird: und dann den Parnaßus.</p>
+      </set>
+      <pb n="3"/>
+      <div type="preface">
+        <head>Vorerinnerung.</head>
+        <p>Dieses kleine Drama war bestimmt bey der neulichen Eröfnung der deutschen Schaubühne zum
+          Vorspiel zu dienen. Einige Umstände, denen man wegen Kürze der Zeit nicht abhelfen konnte,
+          verhinderten die Vorstellung, die doch nur dieser Gelegenheit anpaßend gewesen wäre.</p>
+        <p>Da in dem Stücke selbst durchgängig diejenigen Gesinnungen herrschen, die zu der so
+          sehnlich gewünschten Bildung einer guten nazional Schaubühne in Wien, nothwendig der Grund
+          seyn müssen; so hat man für gut erachtet, das Stück denen Liebhabern dieser Schaubühne
+          gedruckt mitzutheilen –.</p>
+        <p>Nur verbittet man zum voraus alle persönlichen Anwendungen, die etwa ein oder anderer
+          Leser geneigt wäre von den darinn vorkommenden Charakteren <pb n="4"/> zu machen. Die
+          Allegorien dieser Charaktere sind so <emph>allgemein</emph> als die Namen, die ihnen der
+          Dichter ertheilet. Keiner von unseren abgeschmackten französirenden Gecken und Geckinnen
+          ins <emph>besondere</emph>, sondern alle <emph>insgesamt</emph> werden sie durch das
+          personificirte <emph>Vorurtheil</emph> vorgestellet. Die grosse Anzahl der so unhöflich
+          als elend satirisirenden Kunstrichter Deutschlands <emph>überhaupt</emph>, wird durch die
+            <emph>Kritik</emph> vertreten; und der Verfasser hat eben so wenig gedacht, einen dieser
+          Herren insbesondere anzudeuten, als er dachte, sich selbst in Gestalt des Apollo zeigen zu
+          wollen. Sollte man aber doch die so gewöhnliche Deutungsbegierde durchaus in etwas
+          befriedigen wollen, so geschehe es am <emph>Patriotismus</emph>, den man mit des
+          Verfassers vollkommner Erlaubniß, auf den verehrungswürdigen Patrioten, den neuen
+          Unternehmer der deutschen Schauspiele, anwenden darf.</p>
+      </div>
+    </front>
+    <pb n="5"/>
+    <body>
+      <div type="scene">
+        <head>Erster Auftritt.</head>
+        <stage>Apoll sitzet auf einer Rasenbank und der Genius Vindebonens kniet vor ihm.</stage>
+        <sp who="#apollo">
+          <speaker>Apollo.</speaker>
+          <p>Steh auf theurer Genius! dein Eifer ist löblich, und deine Beschwerde gegründet. Nein!
+            ich werde nicht länger verstatten, daß das häßliche Vorurtheil in der Hauptstadt
+            Germaniens, Germaniens Schauspiel verfolge, und deines Freundes des Patriotismus edle
+            Absichten hemme. Dieß <pb n="6"/> Ungeheuer – bestraft' ich nicht bald seine Frechheit –
+            erstickte aufs neu Vindebonens aufblühenden Geschmack. Ich habe nur deine Klagen
+            erwartet, um dir Genugthuung zu verschaffen. Die bereits vor meinen Thron gefoderten
+            Partheien erscheinen in wenig Zeit; und mein Ausspruch sey nicht nur für dein Vindebona,
+            er sey in Zukunft für ganz Germanien wichtig. Du weißt, ob ich dieses Volk liebe.</p>
+        </sp>
+        <sp who="#der_genius">
+          <speaker>Der Genius.</speaker>
+          <p>Und wer ist nicht davon überzeugt, großer Apollo? Welches von allen Völkern erhob sich
+            mit so behendem Fluge in die schönen Gegenden, die den Gipfel deines Thrones umgeben? –
+            Von unthätiger Schlafsucht noch fest an die Erde geheftet, da andere Völker Europens auf
+            muthigen Schwingen des Geistes bereits den erhabenen Pindus besuchten, waren Germaniens
+            Bewohner vor wenig Lustern noch der Spott ihrer Nachbarn. Ein Stral deines göttlichen
+            Feuers schoß Begeisterung in ihre trägen, aber starken Seelen; und sie brauchten <pb
+              n="7"/> nichts anders, um die stolze Höhe der Nachbarn zu erreichen; ja um sie in mehr
+            als einer Gegend zu übersteigen. Nur das Schauspiel, das Schauspiel hat bisher mit
+            minder Erfolg seinen Wettlauf verrichtet.</p>
+        </sp>
+        <sp who="#apollo">
+          <speaker>Apollo.</speaker>
+          <p>Die Ursachen sind mir nicht unbekannt; und zur Hülfe will ich noch heute die
+            dienlichsten Mittel ergreifen. Doch höre! <stage>(man hört Trompeten erschallen, Apoll
+              stehet auf,)</stage> Eine der berufenen Partheien nähert sich schon: das lärmende
+            Getümmel, womit sie ihre Ankunft verkündigt, läßt mich nicht zweifeln, welcher Theil es
+            sey. Komm Genius! indeß sich alles versammelt, besteig ich meinen Richterstuhl.
+              <stage>(gehen ab)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Zweyter Auftritt.</head>
+        <stage>Das Vorurtheil Vindobonens (dem ein Chor lärmender Instrumente, als Trompeten,
+          Pauken, Posaunen vorgehet.) Hinter dem Vorurtheil, die Unwissenheit, und die Eitelkeit:
+            <pb n="8"/> hinter diesen ein zahlreiches Gefolge von prächtig gekleideten Bedienten,
+          Läufern, Heiducken; und hinter allen diesen, mit einer verdrüßlichen Miene, das
+          französische Schauspiel.</stage>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurtheil</speaker>
+          <stage>(giebt ein Zeichen, und die Instrumente schweigen.)</stage>
+          <p>Nun weiß ich keinen Weg mehr. Diese ganze Gegend ist mir unbekannt. <stage>(zur
+              Eitelkeit und Unwissenheit.)</stage> Ihr, meine werthen Hausgenoßen! wißt auch ihr
+            nicht wohin wir uns wenden?</p>
+        </sp>
+        <sp who="#die_eitelkeit">
+          <speaker>Die Eitelkeit.</speaker>
+          <p>Mir ist hier alles fremde.</p>
+        </sp>
+        <sp who="#die_unwissenheit">
+          <speaker>Die Unwissenheit.</speaker>
+          <p>Ich habe Zeitlebens nicht hieher gedacht.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurtheil.</speaker>
+          <p>Eine sonderbare Reise! Vielleicht das gallische Schauspiel kann uns Auskunft ertheilen.
+            Wo ist es? <stage>(Da ers ganz von den Seinigen abgesondert erblickt)</stage> O du
+            wunderlich Ding! Warum verbirgst <pb n="9"/> du dich? fürchtest du hier zu
+            erscheinen?</p>
+        </sp>
+        <sp who="#das_franzoesische_schauspiel">
+          <speaker>Das franz. Schauspiel.</speaker>
+          <p>Nichts weniger. Nur in deiner Gesellschaft fürcht' ich zu erscheinen.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurh.</speaker>
+          <p>Du hast unrecht. Wen ich unterstütze, hat immer gewonnen. Sprich: sind wir noch weit
+            vom Parnaßus entfernt?</p>
+        </sp>
+        <sp who="#das_franzoesische_schauspiel">
+          <speaker>Das franz. Schauspiel.</speaker>
+          <p>Wir sind ihm sehr nah: und niemand kömmt ohne Apolls besondre Erlaubniß ihm näher.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurtheil.</speaker>
+          <p>Desto beßer. Bald wird man auch dort meine Größe bewundern. Schon schmeck ich die süßen
+            Früchte eines neuen Triumphs über den kühnen Patriotismus. – <stage>(zum franz.
+              Schauspiel.)</stage> Und du! du setzest so wenig Vertrauen in mich?</p>
+        </sp>
+        <sp who="#das_franzoesische_schauspiel">
+          <speaker>Das franz. Schauspiel.</speaker>
+          <p>Ich habe gute Gründe. Doch sage: wozu hast du meiner hier nöthig? warum <pb n="10"/>
+            zwingest du mich, an einem Streite Antheil zu nehmen, der dich nur betrift?</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Apolls Befehl heißt auch dich hier erscheinen. – Zudem, ist meine Sache denn nicht
+            zugleich auch die Deine?</p>
+        </sp>
+        <sp who="#das_franzoesische_schauspiel">
+          <speaker>Das franz. Schauspiel.</speaker>
+          <p>Dann wäre mein Herz noch mehr bange.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Wie thöricht, du Furchtsame! Betrachte die Herrlichkeit, womit <emph>ich</emph> dich
+            hier einführe; dies Gefolge; den Chor einer brausenden Musik, deren Getöne die Luft,
+            vielleicht den Parnaßus erschüttert; allen diesen glänzenden Pracht, wodurch ich des
+            Bachus indische Reise in Vergessenheit setze! – Glaubst du, daß Apoll mit all seinen
+            Musen Muth genug habe, einen mir unangenehmen Ausspruch zu thun? Verlaß dich getrost auf
+            mein Ansehn: Niemand hat noch sich an dieses gewaget.</p>
+        </sp>
+        <sp who="#das_franzoesische_schauspiel">
+          <speaker>Das franz. Schausp.</speaker>
+          <p>Dein Ansehn mag in Vindebona noch <pb n="11"/> so viel gelten, hier am Parnaß gilt es
+            nichts. Hätte ich hier zu kämpfen, ich wüßte mir einen mächtigern Beystand als
+            deinen.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Und welcher wär es?</p>
+        </sp>
+        <sp who="#das_franzoesische_schauspiel">
+          <speaker>Das franz. Schausp.</speaker>
+          <p>Mein eigner Werth.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Zum Theil, ja! doch er ist nicht so mächtig, als du dir schmeuchelst. Erinnere dich,
+            wie manch kühnes Urtheil Apoll schon gegen deine Gefährtinnen, die übrigen gallischen
+            Musen, zum Vortheil unsrer unartigen germanischen gefället. Könnte dereinst – ohne
+            meinen Beystand dir nicht ein Gleiches begegnen? Vergißt du, daß Vindebona, Germaniens
+            Hauptstadt seiner ganzen Natur nach bestimmt zu seyn scheine, für die Schaubühnen
+            Deutschlands das Muster zu bilden? – Denk an Albion. Wieviel hat dir dies von der
+            Ehrfurcht entzogen, die es dir vormals erzeigte? Kurtz, keinen Stolz! keine
+            Zuverläßigkeit auf eigne <pb n="12"/> Verdienste! die Mode, der Ton entscheidet in
+            unserm Jahrhundert, und in Vindebona gebe ich den Ton.</p>
+        </sp>
+        <sp who="#das_franzoesische_schauspiel">
+          <speaker>Das franz. Schauspiel.</speaker>
+          <p>Den falschen wohl: aber den ächten?</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Denjenigen, den man dort zu nennen gewohnt ist.</p>
+        </sp>
+        <sp who="#das_franzoesische_schauspiel">
+          <speaker>Das franz. Schausp.</speaker>
+          <stage>lächelnd.)</stage>
+          <p>Deine Lokalgewohnheiten kommen bey der Vernunft nur selten in Erwägung, wie schwankend
+            wäre mein Ruhm, müßten diese ihn stützen!</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Dein Ruhm schwankend? Lokalgewohnheiten – ich verstehe dich nicht. Doch – warum
+            lächelst du? und wie falsch, wie höhnisch, du Boshafte! – das ist nun immer der Dank,
+            den du, den alle deine Gallier mir für meine Wohlthaten weihen. Zum Glücke habt ihr mich
+            an diesen Dank schon gewöhnet: und – was, was soll man nicht eurer allerliebsten
+            Lebhaftigkeit verzeihen? <stage>(er <pb n="13"/> springt dem franz. Schauspiel zu, und
+              umarmet es.)</stage> Nein, nichts nehm' ich dir übel, du spöttische Schöne – Geduld!
+            die Rede die ich dem Apoll, und zwar in gallischer Sprache zu halten bereit bin, die
+            soll dich belehren, ob ich deiner Achtung nicht werth sey.</p>
+        </sp>
+        <sp who="#das_franzoesische_schauspiel">
+          <speaker>Das franz. Schauspiel.</speaker>
+          <p>Ha ha ha! in gallischer Sprache?</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Nu! wäre auch dieses lächerlich?</p>
+        </sp>
+        <sp who="#das_franzoesische_schauspiel">
+          <speaker>Das franz. Schauspiel.</speaker>
+          <p>Gewiß mehr als alles übrige.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Warum? drück' ich mich etwa nicht vollkommen gut in deiner Sprache aus? beßer als in
+            meiner eignen?</p>
+        </sp>
+        <sp who="#das_franzoesische_schauspiel">
+          <speaker>Das franz. Schauspiel.</speaker>
+          <p>Sag weniger schlecht, und du hast alles gesagt. <stage>(lacht)</stage> Ha ha ha! es
+            scheint also, du schmeuchelst dir gallisch zu können, weil du nicht germanisch kannst.
+            Welch ein richtiger Schluß! – Du erinnerst mich an das langohrigte Thier in <pb n="14"/>
+            der Fabel, das fest glaubte, mit den Fischen schwimmen zu können, weil es nicht mit den
+            Vögeln zu fliegen vermochte – Vorurtheil! ich rathe dir, so viel möglich in allen
+            Sprachen – zu schweigen. Ha ha ha!</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurtheil.</speaker>
+          <p>Scherze nur immer, du ewige Spötterin! – Doch sieh! hier kommen schon unsre Gegner: wie
+            niedergeschlagen! wie bürgerlich klein!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Dritter Auftritt.</head>
+        <stage>Der Patriotismus der das deutsche Schauspiel an der Hand führt. Hinter ihm die
+          Kritik, und die Vorigen.</stage>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Wie? solltet ihr den ganzen Gegentheil ausmachen, der wider mich zu kämpfen versucht?
+            Ihr erscheinet nicht zahlreich.</p>
+        </sp>
+        <sp who="#der_patriotismus">
+          <speaker>Der Patriotismus.</speaker>
+          <p>Weißt du nicht, daß hier nur geprüft, nicht gezählt wird?</p>
+        </sp>
+        <pb n="15"/>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Ha! ich erkenne die lakonische Sprache des stolzen Patriotismus. <stage>(zum deutschen
+              Schauspiel)</stage> Und du kleine, traurige Gegnerin! du handelst sehr klug, daß du
+            dich so fest an deinen stürmischen Vertheidiger schmiegest; ohne ihn giengest du längst
+            schon verlohren.</p>
+        </sp>
+        <sp who="#das_deutsche_schauspiel">
+          <speaker>Das deutsche Schauspiel.</speaker>
+          <p>Meine gallische Schwester scheinet in dich viel minder Vertrauen zu setzen.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <stage>(auf die Kritik zeigend)</stage>
+          <p>Aber jene rüstige Dame dort mit einer Geisel in der Hand; sie kömmt doch nicht hieher,
+            mich durch Geiselstreiche zu besiegen? Madame, wär ihre Miene weniger mürrisch, ich
+            wagte die Frage: wer sie sind?</p>
+        </sp>
+        <sp who="#die_kritik">
+          <speaker>Die Kritik.</speaker>
+          <p>Diese Frage beantwort' ich gerne. Ich nenne mich die Kritik.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Die Kritik? meine Freundin? o laß dich umarmen! <stage>(läuft auf sie zu)</stage></p>
+        </sp>
+        <pb n="16"/>
+        <sp who="#die_kritik">
+          <speaker>Die Kritik</speaker>
+          <stage>(indem sie zurück weicht)</stage>
+          <p>Nein! – Ich deine Freundin? <stage>(spöttisch)</stage> ich habe mich nie bestrebt
+            diesen Titel zu verdienen.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Und doch verdienest du ihn, mehr als du vermuthest.</p>
+        </sp>
+        <sp who="#die_kritik">
+          <speaker>Die Kritik.</speaker>
+          <p>Wodurch?</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Durch deine witzigen Urtheile, die mir zum Vergnügen, mehr als einmal Germanien
+            gezeiget, welche gräuliche Flecken alle Geburten des vindebonischen Witzes, woran du
+            nicht Hand legst, entstellen.</p>
+        </sp>
+        <sp who="#die_kritik">
+          <speaker>Die Kritik.</speaker>
+          <p>Du bürdest mir Handlungen auf, deren ich mich schämen würde, wofern –</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Wofern? – ich versteh dich, du Schlaue! du willst in Gegenwart des trotzigen
+            Patriotismus nicht für dasjenige angesehen werden, was du wirklich <pb n="17"/> bist.
+            Verstelle dich nicht! ich habe dich schon für meine Freundin erklärt; dadurch bist du
+            vor aller Welt in Sicherheit. Sprich: bist nicht du es, die schon manchem unsrer
+            Vindoboner durch hämische Beurtheilung ihrer Schriften die übende Feder aus der Hand zu
+            scheuchen getrachtet?</p>
+        </sp>
+        <sp who="#die_kritik">
+          <speaker>Die Kritik.</speaker>
+          <p>So kann nur das Vorurtheil denken. Ich habe unsern Schriftlingen ihre Fehler gewiesen,
+            und sie zum Schreiben ermuntert.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Beydes mit ganz besonderer List. Die Ermunterung empfal dich deinen Lesern, und die
+            Art, womit du die Fehler zeigtest, zwang manchen verhöhnten Schriftsteller den Tag zu
+            verwünschen, da er sich einer Zunft einverleibet, in der allein man seiner ungestraft
+            spotten darf.</p>
+        </sp>
+        <sp who="#die_kritik">
+          <speaker>Die Kritik.</speaker>
+          <p>Ohne satyrischen Salz, (das du mit Unrecht Spott nennest) wären meine Beurtheilungen
+            weniger gelesen worden; das heißt, sie hätten weniger Nutzen gestiftet.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Gewiß weniger Nutzen: und eben dafür <pb n="18"/> bin ich so sehr dir verpflichtet.
+            Dein satyrisches Salz ist Balsam für mich, und Gift für meine Feinde. Du magst nun
+            dieses Salz in deine Schriften streuen, um sie für die Lesenden zu würzen, oder für die
+            Beurtheilten zu vergiften, angehende Dichter zu lehren, oder (was nicht selten
+            geschieht) deinen durch ihre Ununterwürfigkeit beleidigten Lehrstuhl zu rächen; ich habe
+            immer Vortheil dabey.</p>
+        </sp>
+        <sp who="#die_kritik">
+          <speaker>Die Kritik.</speaker>
+          <p>Thörichter!</p>
+        </sp>
+        <sp who="#der_patriotismus">
+          <speaker>Der Patriotis.</speaker>
+          <stage>(leise zur Kritik.)</stage>
+          <p>Siehst du nun, welchen Verdacht du erweckest; – ich habe dich öfter gewarnet.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <stage>(zur Kritik.)</stage>
+          <p>Doch muß ich dir auch bekennen, daß mich deine Würzbegierde bisweilen auch ängstet.</p>
+        </sp>
+        <sp who="#die_kritik">
+          <speaker>Die Kritik.</speaker>
+          <p>Bisweilen? ich glaube, immer.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Nein! nur damals, wenn du blind aus Begier, fremde Fehler zu finden, die lächerlichsten
+            begehst, und das Schiksal der Jäger erfährst, die zu hitzig hinter der Gemse sich auf
+            unbekannten Felsen <pb n="19"/> versteigen. Dann zittre ich für deinen Credit – Und wie
+            oft muß ich zittern!</p>
+        </sp>
+        <sp who="#die_kritik">
+          <speaker>Die Kritik.</speaker>
+          <stage>(zum Patriot.)</stage>
+          <p>Ich möchte für Unwillen bersten.</p>
+        </sp>
+        <sp who="#der_patriotismus">
+          <speaker>Der Patriotismus.</speaker>
+          <p>Antwort' ihm nicht weiter! Stille Verachtung seiner Irrthümer und Standhaftigkeit in
+            edlen Entschlüßen besiegt diesen Gegner. Wortwechsel mit ihm, bringt immer Verdruß, und
+            eigne Erniedrigung. Apoll wird entscheiden.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Vierter Auftritt.</head>
+        <stage>Der Vorhang wird aufgezogen. Man sieht den Parnaß, worauf Apoll mitten unter den
+          Musen, zu Apolls Füßen aber der Genius Vindebonens sitzet.</stage>
+        <sp who="#apollo">
+          <speaker>Apollo.</speaker>
+          <p>Theure Gefärtinnen meines Fleißes! Ihr, die ihr mit unermüdbarem Eifer mein Reich
+            erweitert, und an meinem Ruhme Theil nehmet! Seht nunmehr zu den Füßen unsers Thrones
+            die Partheien versammelt, die mein heutiges Urtheil vorzüglich betrift. Die Beschwerden,
+            die Vindebonens Genius vor mich gebracht, <pb n="20"/> sind euch nicht unbekannt; sie
+            müßen aber auch denen bekannt seyn, die ich zu Zeugen meines Ausspruchs berufen. –
+              <emph>Genius Vindebonens!</emph> wiederhol uns die Gründe, die dich bewogen, das
+              <emph>Vorurtheil</emph> anzuklagen.</p>
+        </sp>
+        <sp who="#der_genius">
+          <speaker>Der Genius.</speaker>
+          <p>Seine thörrichte Verachtung des germanischen Schauspiels, und sein unnatürlicher Haß
+            gegen meinen Freund den Patriotismus: Zwey Verbrechen, wider die milde Absicht, großer
+            Apollo! aus der du mich zum Schutzgeiste Vindebonens ernannt. Verbrechen die dich
+            beleidigen, und mein Volk unterdrücken.</p>
+        </sp>
+        <sp who="#apollo">
+          <speaker>Apollo.</speaker>
+          <p>Diese Verbrechen sind strafbar. Beweis aber itzt, daß die Anklage gegründet.</p>
+        </sp>
+        <sp who="#der_genius">
+          <speaker>Der Genius.</speaker>
+          <p>Ihre Gründlichkeit zu erweisen, brauch' ich nichts anders, als sie meinen Gegner selbst
+            beantworten zu laßen. Er ist auf sein Unrecht zu stolz, um es nicht selbst zu bekennen.
+            Wenn du erlaubest –</p>
+        </sp>
+        <sp who="#apollo">
+          <speaker>Apollo.</speaker>
+          <p>Es ist mir daran gelegen.</p>
+        </sp>
+        <pb n="21"/>
+        <sp who="#der_genius">
+          <speaker>Der Genius.</speaker>
+          <p>Sprich Vorurtheil: liebst du Germaniens Schauspiel?</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Ich habe meine Liebe ihrer gallischen Schwester gewidmet.</p>
+        </sp>
+        <sp who="#der_genius">
+          <speaker>Der Genius.</speaker>
+          <p>Ich fodre nicht, daß du jene nicht liebest: ich fodre nur, daß du nicht zum Nachtheile
+            dieser sie liebest, daß du nicht dieser entmuthigende Verachtung empfinden laßest.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Seit wenn dünkst du dich mächtig genug meinen Willen zu lenken? – wie lächerlich! wer
+            kann mir gebieten; in welchem Grade ich lieben oder hassen soll?</p>
+        </sp>
+        <sp who="#der_genius">
+          <speaker>Der Genius.</speaker>
+          <p>Die Billigkeit. Ist denn Germaniens Schauspiel ganz deiner Verachtung, jenes ganz
+            deiner Liebe werth?</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurh.</speaker>
+          <p>Untersuchen ist nicht meine Sache.</p>
+        </sp>
+        <sp who="#der_genius">
+          <speaker>Der Genius.</speaker>
+          <p>Weißt du aber, wieviel du mir durch deine blinde Leidenschaft schadest?</p>
+        </sp>
+        <pb n="22"/>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Dieß bekümmert mich wenig.</p>
+        </sp>
+        <sp who="#der_genius">
+          <speaker>Der Genius.</speaker>
+          <p>Und eben diese Gleichgültigkeit ist ein neuer Beweis deines Unrechts. Fühlest du nie in
+            dem Innern der Seele die patriotischen Triebe, die der Staat, wovon du ein Mitglied, von
+            dir zu fodern das Recht hat?</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurtheil.</speaker>
+          <p>Sey deutlicher!</p>
+        </sp>
+        <sp who="#der_genius">
+          <speaker>Der Genius.</speaker>
+          <p>Weißt du nicht, daß jeder Bürger verpflichtet ist, nach Maaß seiner Kräfte zur Ehre des
+            Volks beyzutragen, das ihn geboren, das ihn nähret, worein ihn die Natur und die Götter
+            versetzet?</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurtheil</speaker>
+          <p>Mein wohlgewählter Pracht, ich schweige von andern Eigenschaften, sind Vindebonen nicht
+            zur Schande. Ich erscheine hier mit mehr Anstand als meine Gegner.</p>
+        </sp>
+        <sp who="#der_genius">
+          <speaker>Der Genius.</speaker>
+          <p>Du beschimpfest Apollons Thron, so bald du vermuthest, daß eitler Pracht ihn
+            verherrlicht. Nur die Vorzüge des Geistes kommen hier in Betrachtung, nicht schimmerndes
+              <pb n="23"/> Gepränge, das Irrlicht der Thoren. Doch sprich weiter: begreifst du, wie
+            viel Einfluß die Schaubühne auf die Sitten, den Geist, und Geschmack eines Volks
+            hat?</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurtheil.</speaker>
+          <p>Eben dieses Einflußes wegen lieb ich Galliens Schauspiel, und verachte das deine.
+            Galliens Schauspiel erhebt den Geist meines Volkes.</p>
+        </sp>
+        <sp who="#der_genius">
+          <speaker>Der Genius.</speaker>
+          <p>Nicht deines Volkes – es kann nur auf den Geist eines kleinen Theils von deinen
+            Mitbürgern wirken. Hast du denn nie Unterschied des Nutzens überdacht, den jedes von
+            beyden Schauspielen auf dein Volk kann verbreiten? Ich spreche itzt blos vom Nutzen,
+            nicht von der Ehre.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Dergleichen Dinge zu berechnen, gab ich mir niemals die Müh: – Und dann, ist der Haufe
+            meine Achtung wohl würdig?</p>
+        </sp>
+        <sp who="#der_patriotismus">
+          <speaker>Der Patriotismus.</speaker>
+          <p>Verzeih Apoll! diese unverschämte Frage trift mich. Ich empfinde sie zu sehr, um sie
+            unbeantwortet zu laßen.</p>
+        </sp>
+        <pb n="24"/>
+        <sp who="#apollo">
+          <speaker>Apollo.</speaker>
+          <p>Beantworte sie.</p>
+        </sp>
+        <sp who="#der_patriotismus">
+          <speaker>Der Patriotismus.</speaker>
+          <p>Ist der große Theil deines Volkes, den du leichtsinniger Spötter, den Haufen nennest,
+            deiner Achtung nicht würdig, so ist er's der meinen. Das Vaterland, (o fühltest du die
+            Bedeutung des Wortes!) das Vaterland, das gemeine Beste, der Vortheil und Ruhm des
+            Ganzen, nicht einzelner Theile des Staates, ist der Augenmerk des redlichen Bürgers: Ja!
+            partheiliche Neigung für einzelne Theile desselben – gereicht sie dem Ganzen zum
+            Nachtheil – macht uns zu Verräthern. Die wenigen, deren Geist der gallische Witz soll
+            erheben, diese sind unbeträchtlich gegen den Theil deines Volkes, deßen Geist du
+            erstickest.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Und wodurch erstickte ich ihn?</p>
+        </sp>
+        <sp who="#der_patriotismus">
+          <speaker>Der Patriotismus.</speaker>
+          <p>Durch Erniedrigung, durch Unterdrückung meiner Clientin, deren nutzbare Bemühungen
+            deine eigensinnige Partheilichkeit hemmet, deren Ehre du tödtest; durch deinen
+            schändlichen Haß gegen mich. – <pb n="25"/> Schauspiel Galliens! dich selbst fodr' ich
+            auf, mein Recht zu erweisen. Sprich: wem hast du die Pflege deiner Jugend, den Wachsthum
+            des Ruhms, ja diejenige Ehre zu danken, die du so gar mitten in meinem Vaterland, bey
+            einem fremden Volke genießest?</p>
+        </sp>
+        <sp who="#das_franzoesische_schauspiel">
+          <speaker>Das franz. Schauspiel.</speaker>
+          <p>Dem Patriotismus meines Landes.</p>
+        </sp>
+        <sp who="#der_patriotismus">
+          <speaker>Der Patriotismus.</speaker>
+          <p>Vorurtheil! denk diesen Geständniße nach! Es kann dich dein Unrecht, es kann meine
+            Qualen dich lehren. Grausamer! Wie viel fruchtlose Bitten that ich an dich! Wie viel
+            stille Seufzer erpreßte mir dein strafbarer Eigensinn! Wie oft beschwor ich dich nicht,
+            bey deines Vaterlands Ehre – nicht meinen redlichen Zweck zu begünstigen – Nein, nur ihn
+            nicht zu bestreiten; Konnt' ich's erhalten?</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurtheil.</speaker>
+          <p>Von mir wirst du nie was erhalten, das sag ich die frey: denn wiße: dich Schwärmer,
+            veracht' ich.</p>
+        </sp>
+        <sp who="#apollo">
+          <speaker>Apollo.</speaker>
+          <p>Genug! Unverschämter! diese Erklärung <pb n="26"/> enthält alle deine Verbrechen. Indem
+            du den Patriotismus verachtest, nennst du dich selbst aller Pflichten unfähig, worauf
+            dein germanisches Blut dich verweiset, und zeigst dich unwürdig das Mitglied eines
+            schätzbaren Volkes zu heißen. <stage>(zu den Musen)</stage> Mitgenoßen meiner Gewalt!
+            Und Ihr! <stage>(zu den Umstehenden)</stage> Zeugen meines gerechten Entschlußes! Höret
+            mein unwiderrufliches Urtheil über den Unterdrücker des Vindebonischen Genius, den Feind
+            des Patriotismus; höret es, und Fama verkündige es in allen Gegenden des Erdkreises!
+            „Nie soll das strafbare Vorurtheil mehr nach Vindebona wiederkehren“ – Verbannt aus der
+            Hauptstadt Germaniens, wie aus meinem ganzen Gebiete, soll es künftig in dem Reiche der
+            Dummheit seine elenden Tage verleben. Verachtung und Abscheu begleit' es aus diesen
+            Gefilden bis an den Ort seiner Bestimmung; und nie soll in Zukunft von diesem Verderber
+            Erwähnung geschehn, es wäre denn ihm zum Spotte, und seinem Anhang zum Schrecken! – Geh
+              <pb n="27"/> Unwürdiger! flieh meinen Blick, und verhüll' dich auf ewig in deine
+            Schmach.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurtheil.</speaker>
+          <p>Wie? Himmel! was entschließt du Apoll? denk, daß meine Freunde, so große, so viele
+            Verwandte –</p>
+        </sp>
+        <sp who="#apollo">
+          <speaker>Apollo.</speaker>
+          <p>Ich werd' ihre Anzahl vermindern. Kein Wort mehr!</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Ihr Götter! schrecklicher Ausspruch! ich soll so plötzlich mein Vaterland –</p>
+        </sp>
+        <sp who="#apollo">
+          <speaker>Apollo.</speaker>
+          <p>Du hast kein Vaterland mehr, so weit meine Macht sich erstrecket.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Ach ich Unglückseliger! <stage>(zum franz. Schausp.)</stage> Theure Freundin! du, der
+            zu Liebe, unmäßiger Liebe, ich mich ins Verderben gestürzet! Sprich: Kann ich hoffen, in
+            Gallien Hülfe zu finden?</p>
+        </sp>
+        <sp who="#das_franzoesische_schauspiel">
+          <speaker>Das franz. Schauspiel.</speaker>
+          <p>Geschöpfe deiner Art verabscheuet man dort seit langer Zeit.</p>
+        </sp>
+        <sp who="#das_vorurtheil">
+          <speaker>Das Vorurth.</speaker>
+          <p>Falsche! dieß ist nun mein Lohn! – <pb n="28"/> Doch was that ich? – Ich hätte beynahe
+            meine standhafte Seele verläugnet – Wohlan ihr Getreuen! <stage>(zu seinem
+              Gefolge)</stage> kommt! Folget mir muthig in das große Reich der Dummheit. Zu unsrer
+            Rache wollen wir ewig nicht mehr des Patriotismus Namen nur nennen. <stage>(geht mit
+              seinem Gefolge ab.)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Fünfter Auftritt.</head>
+        <sp who="#apollo">
+          <speaker>Apollo.</speaker>
+          <p>Genius Vindebonens, und du edler Patriotismus! seyd ihr nunmehr überzeugt, daß ich
+            diejenigen schütze, die mich lieben? – Fahret fort in euern preiswürdigen Bemühungen, da
+            itzt eurem Eifer kein Hinderniß mehr im Wege steht. – Schauspiel Germaniens! genieße nun
+            ungestört des herrlichen Sieges, den Heute der Patriotismus über das Vorurtheil so
+            entscheidend erhalten. Genieße seiner! – aber fern, dich von siegerischem Stolze
+            dahinreissen zu lassen, verdopple vielmehr itzt deine Anwendung! denn nur diese kann dir
+            in Zukunft die Achtung <pb n="29"/> mit Wucher ersetzen, die dir bisher deine Gegner
+            entzogen.</p>
+        </sp>
+        <sp who="#das_deutsche_schauspiel">
+          <speaker>Das deutsche Schauspiel.</speaker>
+          <p>Großer Apoll! wie strafbar wär' ich – gleich dem Vorurtheil strafbar – sollte Mangel
+            meines Fleißes das Glück und die Ehre vernichten, wozu du so huldreich den Weg mir
+            gebahnet.</p>
+        </sp>
+        <sp who="#apollo">
+          <speaker>Apollo.</speaker>
+          <stage>(Zum franz. Schauspiel.)</stage>
+          <p>Und du liebenswürdige Freundin! ich hoffe, daß auch dich mein Ausspruch nicht
+            kränke.</p>
+        </sp>
+        <sp who="#das_franzoesische_schauspiel">
+          <speaker>Das franz. Schauspiel.</speaker>
+          <p>Du thatst diesen billigen Ausspruch vor langer Zeit, auch meinem Lande zum Besten: wie
+            sollt' er mich kränken?</p>
+        </sp>
+        <sp who="#apollo">
+          <speaker>Apollo.</speaker>
+          <p>Umarmet euch also, ihr holdseeligen Gespielinnen beyde! Küßet euch zum Zeichen
+            beyderseitiger Zufriedenheit! <stage>(sie umarmen und küßen sich)</stage> Liebt euch
+            unaufhörlich als edel denkende Schwestern, die löbliche Aneiferung stets mehr vereinigt,
+            nie die Gewalt des tückischen Neides entzweyet. Seyd beyde gleich kräftig meiner Liebe
+            versichert. Eigensinniger <pb n="30"/> Hang und Partheilichkeit für diese oder jene
+            Weltgegend hat niemals mein väterlichs Herze beflecket. Nur Ungleichheit eures Fleißes
+            würde Ungleichheit in meine Liebe bringen.</p>
+          <p>Du aber Kritik! auch du bist nicht ohne Absicht hieher berufen. Wiß': ich bin nicht
+            ganz mit dir zufrieden.</p>
+        </sp>
+        <sp who="#die_kritik">
+          <speaker>Die Kritik.</speaker>
+          <p>Und doch, hat niemand so eifrig als ich, des Vorurtheils Unfug bestritten.</p>
+        </sp>
+        <sp who="#apollo">
+          <speaker>Apoll.</speaker>
+          <p>Niemand? Ich weis, daß du dir immer mehr schmeichelst als billig. Der Ruhm des
+            besiegten Vorurtheils gebührt dem Patriotismus. Entzieh' diesem nichts von dem Dank, den
+            Vindebona, den ganz Germanien ihm schuldig. Inrichtige und bescheidne Urtheile setze du
+            deine Ehre: denn nur nach diesem Maaßstab bestimmet man hier deinen Werth. Ich wünschte,
+            du hättest bisher, nur hierinn ganz mein Lob, nicht auch meinen Tadel verdienet!</p>
+        </sp>
+        <sp who="#die_kritik">
+          <speaker>Die Kritik.</speaker>
+          <p>Und wodurch deinen Tadel?</p>
+        </sp>
+        <pb n="31"/>
+        <sp who="#apollo">
+          <speaker>Apollo.</speaker>
+          <p>Nicht so viel durch unrichtige Entscheidungen, (auch Kunstrichter reifen durch Fehlen)
+            als durch die unedle Art' deine Meinung zu sagen; durch den spottenden Ton der
+            Verachtung, die einer weit niedrigern Gattung von Seelen zukömmt als die sind, die sich
+            mir widmen.</p>
+        </sp>
+        <sp who="#die_kritik">
+          <speaker>Die Kritik.</speaker>
+          <p>Gott des Geschmackes und Anstands! erklär mir hierüber deinen göttlichen Willen: er
+            soll auf ewig zur Richtschnur mir dienen!</p>
+        </sp>
+        <sp who="#apollo">
+          <speaker>Apollo.</speaker>
+          <p>Bist du ein Kenner des edleren Umgans, so wird es dir leicht seyn, meinen Wunsch zu
+            erfüllen. Höre die Regel, die dich zum Zweck führt! So oft du dich an dein Pult setzest,
+            um ein Werk des Geistes in einer Schrift zu beurtheilen, so bilde dir ein: du befändest
+            dich itzt mit dem Verfaßer des Werks, und all deinen Lesern in Gesellschaft: Betrachte
+            diese Gesellschaft als eine Versammlung gesitteter rechtschaffner Leute, wo du mündlich
+            (vergiß daß du schreibst) mit dem Verfaßer <pb n="32"/> selbst, ohne Heucheln, aber mit
+            Anstand über sein Werk sprichst, indeß die ganze Gesellschaft, auf eure Unterredung
+            aufmerksam, schweiget! – so triffst du den Ton den ich fodre: Denn so vermeidest du
+            sicher allen hämischen Witz, weil weder der Verfasser, noch die Gesellschaft, noch deine
+            eigne Ehre ihn duldet. Sprach ich dir deutlich genug?</p>
+        </sp>
+        <sp who="#die_kritik">
+          <speaker>Die Kritik.</speaker>
+          <p>Ja Unsterblicher! – Verzeih' daß ich bisher deine Absicht verfehlet! die Regel die du
+            mich lehrest, soll mir ewig unvergeßlich seyn.</p>
+        </sp>
+        <sp who="#apollo">
+          <speaker>Apollo.</speaker>
+          <p>Und so wirst du allen, die den Künsten sich weihen, wie dir selbst, die euch gebührende
+            Achtung erhalten, durch anständigere Mittel den Geschmack deines Volkes befördern, und
+            mich dir verpflichten. Geht nun Geliebte! arbeitet unter meinem Schutze, mit
+            vereinbarten Kräften hinfort – für den Ruhm Vindebonens.</p>
+        </sp>
+        <trailer>Ende des Stückes.</trailer>
+      </div>
+    </body>
+  </text>
+</TEI>
