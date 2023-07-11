@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000627" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die Torte</title>
+        <title type="sub">Ein Lustspiel für Kinder in einem Aufzuge</title>
+        <author>
+          <persName>
+            <forename>Johann</forename>
+            <forename>Albrecht</forename>
+            <surname>Huber</surname>
+          </persName>
+          <idno type="wikidata">Q94618658</idno>
+          <idno type="pnd">1035253283</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Google Books</name>
+          <idno type="URL"
+            >https://books.google.com/books?id=unMgNxNwgYEC&amp;printsec=frontcover</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <author>Johann Albrecht Huber</author>: <title>Die Torte. Ein Lustspiel für Kinder in
+              einem Aufzuge</title>. <pubPlace>Frankfurt und Leipzig</pubPlace>
+            <date>1786</date>. (S. <biblScope unit="page" from="1" to="22">1–22</biblScope>.)</bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="karl" sex="MALE">
+            <persName>Graf Karl</persName>
+          </person>
+          <person xml:id="fritz" sex="MALE">
+            <persName>Graf Fritz</persName>
+          </person>
+          <person xml:id="jakob" sex="MALE">
+            <persName>Jakob</persName>
+          </person>
+          <person xml:id="albert" sex="MALE">
+            <persName>Albert</persName>
+          </person>
+          <person xml:id="hofmeister" sex="MALE">
+            <persName>Hofmeister</persName>
+          </person>
+          <person xml:id="hanne" sex="FEMALE">
+            <persName>Hanne</persName>
+          </person>
+          <person xml:id="jobs" sex="MALE">
+            <persName>Jobs</persName>
+          </person>
+          <person xml:id="lotte" sex="FEMALE">
+            <persName>Lotte</persName>
+          </person>
+          <person xml:id="jobsens_weib" sex="FEMALE">
+            <persName>Jobsens Weib</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#karl #fritz"/>
+            <relation name="parent_of" active="#jobs #jobsens_weib" passive="#albert #lotte #hanne"/>
+            <relation name="siblings" mutual="#albert #lotte #hanne"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2023-07-06">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1786">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000627"
+        passive="http://www.wikidata.org/entity/Q120411019"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <pb n="1"/>
+    <front>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">Die Torte</titlePart>
+          <titlePart type="sub">Ein Lustspiel für Kinder in einem Aufzuge.</titlePart>
+        </docTitle>
+        <docImprint>
+          <pubPlace>Frankfurt und Leipzig,</pubPlace>
+          <docDate>1786.</docDate>
+        </docImprint>
+      </titlePage>
+      <pb n="2"/>
+      <pb n="3"/>
+      <div type="dedication">
+        <p>Den Grafen Johann und Duclas Dietrichstein gewidmet von ihrem Freunde Huber.</p>
+      </div>
+      <pb n="4"/>
+      <castList>
+        <head>Personen.</head>
+        <castGroup>
+          <castItem><role>Graf Fritz</role></castItem>
+          <castItem><role>Graf Karl</role></castItem>
+          <roleDesc>Brüder.</roleDesc>
+        </castGroup>
+        <castItem><role>Der Hofmeister.</role></castItem>
+        <castItem><role>Jobs,</role>
+          <roleDesc>ein armer Bürger.</roleDesc></castItem>
+        <castItem><role>Jobsens Weib.</role></castItem>
+        <castGroup>
+          <castItem><role>Albert</role></castItem>
+          <castItem><role>Lotte</role></castItem>
+          <castItem><role>Hanne</role></castItem>
+          <roleDesc>Jobsens Kinder.</roleDesc>
+        </castGroup>
+        <castItem><role>Jakob,</role>
+          <roleDesc>ein Kochjunge.</roleDesc></castItem>
+        <castItem><role>Ein Bedienter.</role></castItem>
+      </castList>
+    </front>
+    <pb n="5"/>
+    <body>
+      <div type="scene">
+        <head>Erster Auftritt.</head>
+        <stage>(Zimmer der Grafen.)</stage>
+        <stage>Karl, Fritz.</stage>
+        <sp who="#karl">
+          <speaker>Karl.</speaker>
+          <p>Lieber Fritze du bist heute so schön!</p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>Soll ich an meines Onkels Geburtstag nicht meine liebsten Kleider wählen? O lieber
+            Karl, ich habe den Onkel so lieb, so lieb, daß er nach meinen Eltern den ersten Platz in
+            meinem Herzen hat.</p>
+        </sp>
+        <sp who="#karl">
+          <speaker>Karl.</speaker>
+          <p>Er ist aber auch so menschenfreundlich, so gut, daß ihn alle Menschen lieben <pb n="6"
+            /> müssen. Ich bin nirgends lieber als bey ihm. Aber sieh Fritze, hier kommt Jakob mit
+            deiner Torte.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Zweyter Auftritt.</head>
+        <stage>Jakob mit einer Torte, Karl, Fritz.</stage>
+        <sp who="#jakob">
+          <speaker>Jakob.</speaker>
+          <p>Der Koch läßt sich empfehlen, und da ist die Torte.</p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>O eine allerliebste Torte, sieh nur Karl, was für schöne Sachen darauf sind!</p>
+        </sp>
+        <sp who="#karl">
+          <speaker>Karl.</speaker>
+          <p>Und der Name des Onkels! J. N. K.</p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>Wo? wo?</p>
+        </sp>
+        <sp who="#karl">
+          <speaker>Karl.</speaker>
+          <p>Siehst du? hier.</p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>Ja wirklich. J. N. K. Das heißt Johann Nepomuck K––b––g.</p>
+        </sp>
+        <sp who="#karl">
+          <speaker>Karl.</speaker>
+          <p>O wenn nur der Hofmeister schon zurück wäre, er ist zum Onkel gegangen, zu sehen, wie
+            er sich befindet.</p>
+        </sp>
+        <pb n="7"/>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>Ich will die Mama fragen, ob wir nicht mit Kasparn gehen dürfen, der Hofmeister wird
+            uns auf der Strasse begegnen.</p>
+          <stage>(Fritz geht ab.)</stage>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Dritter Auftritt.</head>
+        <stage>Karl, und Jakob.</stage>
+        <sp who="#karl">
+          <speaker>Karl.</speaker>
+          <p>Hat er auch etwas zu dieser Torte gemacht?</p>
+        </sp>
+        <sp who="#jakob">
+          <speaker>Jakob.</speaker>
+          <p>Das glaub' ich, ich habe alle die Sachen von Traganteig, da die Einfassung, die Blumen
+            und den Namen gemacht.</p>
+        </sp>
+        <sp who="#karl">
+          <speaker>Karl.</speaker>
+          <p>Die Einfassung ist sehr schön. Aber wie macht man das?</p>
+        </sp>
+        <sp who="#jakob">
+          <speaker>Jakob.</speaker>
+          <p>Zuerst hab ich's von Papier ausgeschnitten, dann mit dem Teig nachgemacht.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Vierter Auftritt.</head>
+        <stage>Fritz, Karl, Jakob.</stage>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>Die Mama hat's erlaubt. Jakob, du gehst auch mit, du mußt die Torte tragen.</p>
+        </sp>
+        <pb n="8"/>
+        <sp who="#jakob">
+          <speaker>Jakob.</speaker>
+          <p>Schon recht. Will's nur erst dem Koch sagen, daß er weiß, wo ich geblieben bin.
+              <stage>(geht ab.)</stage></p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>Unsere Hüte Kaspar! Wir gehen zum Onkel. <stage>(Der Bediente giebt ihnen die
+              Hüte.)</stage> Aber wo ist die Torte, die schöne Torte?</p>
+        </sp>
+        <sp who="#karl">
+          <speaker>Karl.</speaker>
+          <p>Jakob hat sie mit hinausgetragen.</p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>Das ist nichts, die Torte laß ich nicht aus den Augen, Jakob muß sogleich mit uns. Der
+            liebe Onkel muß die schöne Torte unbeschädigt bekommen. Komm Karl! <stage>(geht mit Karl
+              ab, wo Jakob abgegangen ist.)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Fünfter Auftritt.</head>
+        <stage>(Die Scene stellet eine Strasse vor.)</stage>
+        <stage>(Albert allein)</stage>
+        <sp who="#albert">
+          <p>Was soll ich? So mit leeren Händen nach Hause gehen? Nimmermehr. Ich habe zwey <pb
+              n="9"/> Tage meinen armen lahmen Vater hungern gesehen, länger kann ichs nicht. Wenn
+            ich noch einmal hingienge? noch einmal unsere dringende Noth vorstellte? aber der harte
+            Mann schickte mich ja so unwillig fort, daß ich es nicht wieder wagen darf. Du guter
+            Gott, wenn Leute von der Art uns nicht helfen, wie können sich dann unsere Umstände
+            bessern! Der arme Vater, und ein so guter Vater, gegen alle Menschen so gut! Er hungert,
+            er, der so gerne sein Bischen Brod mit seinen Brüdern (wie er alle Menschen nennet,)
+            theilt! Und ich, muß ihn hungern sehen, kann ihm nicht helfen! Wenn ich doch nicht so
+            klein wäre, daß ich Tagewerk arbeiten könnte, von 15 Kreuzer würde der Vater sich, und
+            unsere kleine Familie nähren. Es bleibt mir nichts übrig, als Betteln. Betteln? Ha mir
+            schaudert dafür! auch verboth es mir der Vater ausdrücklich. Aber, wenn er verhungert,
+            wie dann? Wie ist dir zu Muthe bey dem Gedanken: Dein Vater <pb n="10"/> todt? O ich
+            will eher alle Menschen auf den Knien um Erbarmen bitten, als meinen Vater sterben
+            sehen.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Sechster Auftritt.</head>
+        <stage>Fritz, Karl, Jakob, Albert, ein Bedienter, der in einiger Entfernung stehen bleibt,)
+          nachher der Hofmeister.</stage>
+        <sp who="#albert">
+          <speaker>Albert.</speaker>
+          <stage>(Für sich.)</stage>
+          <p>Ich will meinen ersten Versuch an diesen Kindern machen. <stage>(Zu Karl, und
+              Fritzen.)</stage> O meine lieben schönen jungen Herren erbarmen sie sich eines armen
+            Kindes, und eines noch ärmern Vaters, der seit zweyen Tagen Hunger leidet.</p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <stage>(Er will seinen Beutel aus der Tasche nehmen, um dem Knaben etwas zu
+            geben.)</stage>
+          <p>(Zu Karln) Gieb ihm etwas Karl, ich habe meinen Beutel zu Haus gelassen.</p>
+        </sp>
+        <sp who="#karl">
+          <speaker>Karl.</speaker>
+          <stage>(Nachdem er seinen Beutel in beyden Taschen gesucht hat.)</stage>
+          <p>Auch ich den <pb n="11"/> meinigen Bruder. Es thut mir leid! ein andermal –</p>
+        </sp>
+        <sp who="#albert">
+          <speaker>Albert.</speaker>
+          <p>Ich armes unglückliches Kind, ich bin also nicht im Stande meinem Vater zu helfen? Es
+            ist das erstemal, daß ich bettle, und auch das erstemal wird mir Hülfe versagt!</p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>Warum?</p>
+        </sp>
+        <sp who="#albert">
+          <speaker>Albert,</speaker>
+          <p>Sie fragen mich warum?</p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>Da muß er sich nichts daraus machen, meine erste Frage ist allezeit warum. Also warum
+            bettelt er zum erstenmale?</p>
+        </sp>
+        <sp who="#albert">
+          <speaker>Albert.</speaker>
+          <p>Weil uns mein Vater sonst durch seine Handarbeit nährte, itzt ist er durch eine
+            Krankheit lahm, und seit zweyen Tagen haben Eltern und Kinder nichts gegessen. O wenn
+            ich nur meinen kranken Vater nicht leiden sehen dürfte. <stage>(Hier kömmt der
+              Hofmeister, er bleibt in einiger Entfernung, doch so, daß er das Gespräch mit anhören
+              kann.)</stage></p>
+        </sp>
+        <sp who="#karl">
+          <speaker>Karl.</speaker>
+          <p>O die armen Leute dauren mich sehr Bruder.</p>
+        </sp>
+        <pb n="12"/>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>Und dieser Knabe, wie sehr er seinen Vater liebt! Also gar nichts habt ihr zu essen?
+            Nichts zum Frühstück, nichts zu Mittag, kein Vesperbrod und kein Nachtmahl? das ist wohl
+            hart! Und ich habe vollauf zu essen, ich und all mein Geschwister? Dank dir guter Gott
+            für deine Wohlthaten! Aber itzt will ich helfen, wie ich kann. Weißt du Karl, ich will
+            diese Torte dem armen Vater dieses Knaben bringen.</p>
+        </sp>
+        <sp who="#karl">
+          <speaker>Karl.</speaker>
+          <p>Die Torte? die gehört ja für den Onkel!</p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>O der Onkel fragt viel nach meiner Torte, sein Koch macht ihm zwölf in einem Tage, wenn
+            er sie will. Aber für diese Armen ists vielleicht Erhaltung ihres Lebens. Denk Bruder,
+            wenn wir zwey Tage nichts zu essen hätten! Guter Freund, führ er uns geschwind zu seinem
+            Vater.</p>
+        </sp>
+        <sp who="#albert">
+          <speaker>Albert.</speaker>
+          <p>Sehr gerne; aber es sieht so arm bey uns aus. Alles, was uns entbehrlich <pb n="13"/>
+            war, ist verkauft. In diesem Hause zu ebener Erde wohnen wir.</p>
+        </sp>
+        <sp who="#karl">
+          <speaker>Karl.</speaker>
+          <p>Ich bin begierig, wie es da aussehen wird, ich bin noch nie bey armen Leuten
+            gewesen.</p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>Schlecht wird es aussehen Bruder! aber ein Husar muß alles gewöhnen; Ich werde oft in
+            schlechten Hütten wohnen müssen; sagt der Bruder Ludwig. Komm komm!</p>
+          <stage>(Alle gehen mit Alberten ab.)</stage>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Siebenter Auftritt.</head>
+        <stage>(Der Hofmeister allein.)</stage>
+        <sp who="#hofmeister">
+          <p>Ihr guten lieben Geschöpfe! da gehen sie hin voll Feuer, und Freude diesen Armen ihr
+            einziges, das ihnen itzt lieb ist, ihre Torte zu geben. O wenn sie so blieben, wie sie
+            sind, wenn der sogenannte <foreign xml:lang="fre">l'usage du monde</foreign>, der
+              <foreign xml:lang="fre">bon ton</foreign>, <foreign xml:lang="fre">le grand
+              monde</foreign>, das französische <foreign xml:lang="fre">air noble</foreign>, die
+            Beyspiele, das Hohngelächter der Höflinge nicht diese herrlichen Blüthen <pb n="14"/>
+            wegstreifte, welche Früchte müßten sie als Männer der Gesellschaft bringen! Ich will, so
+            lange sie in meinen Händen sind, diesen Verderbnißen entgegen arbeiten, und den Saamen
+            der göttlichen Leutseligkeit, und der thätigen Menschenliebe in diesen fruchtbaren
+            Herzen bearbeiten. Du, von dem alles Gute kömmt, gieb deinen Segen dazu, damit meine
+            Arbeiten nicht fruchtlos werden! Ich will itzt nach, und sehen, was meine kleinen
+            Freunde weiter machen werden.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Achter Auftritt.</head>
+        <stage>Jobs, ein armer Bürger, dessen Weib, Lotte, Hanne.</stage>
+        <stage>(Jobs sitzt auf einem Strohlager, sein Weib spinnt, Lotte strickt, oder macht Netze,
+          Hanne sitzt bey dem Vater.)</stage>
+        <sp who="#hanne">
+          <speaker>Hanne.</speaker>
+          <p>Wird Albert Brod bringen Vater?</p>
+        </sp>
+        <pb n="15"/>
+        <sp who="#jobs">
+          <speaker>Jobs.</speaker>
+          <p>Ich hoff's. <stage>(Er seufzt.)</stage> Du sollst zuerst davon haben, Hanne.</p>
+        </sp>
+        <sp who="#hanne">
+          <speaker>Hanne.</speaker>
+          <p>Nein Vater! erst ihr, dann die Mutter, dann Albert, dann Lotte, und zuletzt die kleine
+            Hanne. Ich will wieder schlafen. Vater, wenn Albert kömmt, bitte, weckt mich.</p>
+        </sp>
+        <stage>Jobsens Weib trocknet sich öfters mit der Schürtze die Augen.</stage>
+        <sp who="#jobs">
+          <speaker>Jobs.</speaker>
+          <p>Die guten Kinder tödten mich mehr mit ihrer Geduld, als wenn sie ungestüm wären.</p>
+        </sp>
+        <sp who="#lotte">
+          <speaker>Lotte.</speaker>
+          <p>Ist's so recht Mutter?</p>
+        </sp>
+        <sp who="#jobsens_weib">
+          <speaker>Jobsens Weib.</speaker>
+          <p>Ja mein Kind! du bist auch schon recht fleißig gewesen.</p>
+        </sp>
+        <sp who="#lotte">
+          <speaker>Lotte.</speaker>
+          <p>Ich möchte gerne bald fertig seyn, damit die Mutter Geld für meine Arbeit bekäme. O
+            Mutter, der Gedanke meinem lieben Vater durch meine Arbeit auch nur auf einen Tag Brod
+            verschaffen zu können, erfüllt mein Herz mit einer Freude, die ich nicht auszusprechen
+            vermag.</p>
+        </sp>
+        <pb n="16"/>
+        <sp who="#jobsens_weib">
+          <speaker>Jobsens Weib.</speaker>
+          <p>Gutes Kind! Gott wird dich segnen dafür, ich kann dir nur danken!</p>
+        </sp>
+        <sp who="#lotte">
+          <speaker>Lotte.</speaker>
+          <p>Ist's nicht meine Pflicht? Er nährte mich 9 Jahre, sorgte Tag und Nacht für mich, und
+            mein Geschwister, und ich soll nicht arbeiten, da er Noth leidet, der gute Vater? O daß
+            ich mit meinem Leben ihm helfen könnte, freudig gäb' ich es dahin! Weckt mich morgen
+            früher gute Mutter, mit der kommenden Sonne will ich künftig anfangen zu arbeiten.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Neunter Auftritt.</head>
+        <stage>Albert, Fritz, Karl, Jakob, (die Vorigen.)</stage>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <stage>(bleibt beim Eintritte einige Augenblicke stehen.)</stage>
+          <p>O die armen Leute! <stage>(Er nimmt Jakoben die Torte ab.)</stage> Hier alter Mann,
+            esset geschwind, daß ihr ja nicht verhungert.</p>
+        </sp>
+        <pb n="17"/>
+        <sp who="#jobsens_weib">
+          <speaker>Jobsens Weib.</speaker>
+          <p>Allmächtiger Gott! sind das deine Engel?</p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>Nein Frau, wir sind schlimme Buben, wollen aber fromm und Engel werden.</p>
+        </sp>
+        <sp who="#karl">
+          <speaker>Karl.</speaker>
+          <p>Ihr weinet guter Mann, essen sollt ihr itzt. Jakob geschwind ein Messer. Bruder,
+            zerschneid die Torte, der furchtsame Mann getraut sich nicht zu essen, hat vielleicht
+            nie so eine Speise gesehen.</p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <stage>(schneidet ein großes Stück von der Torte, das er Jobsen giebt, er macht aus dem
+            übrigen vier Theile, und giebt der Mutter, Lotten, Alberten, der kleinen Hanne legt er
+            ein Stück in die Hand.</stage>
+        </sp>
+        <sp who="#jobs">
+          <speaker>Jobs.</speaker>
+          <p>Hanne! Hanne! hier hast du zu essen!</p>
+        </sp>
+        <sp who="#hanne">
+          <speaker>Hanne.</speaker>
+          <stage>(staunt halb schlaftrunken umher, und fängt an zu essen.)</stage>
+          <p>Das ist recht gut Vater.</p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>Wenn ihr nicht esset, so gehen wir fort, und kommen nie wieder zu euch, und ich möchte
+            euch so gerne öfter besuchen.</p>
+        </sp>
+        <pb n="18"/>
+        <sp who="#jobs">
+          <speaker>Jobs.</speaker>
+          <p>Gott! ich kann für Freude nicht! diese Hilfe so unerwartet, so sonderbar! O es giebt
+            noch edle Seelen. Dank euch edle großmüthige Herzen! –</p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>Essen sollt ihr, sag ich euch, nicht danken.</p>
+        </sp>
+        <stage>(Jobs ißt.)</stage>
+        <sp who="#karl">
+          <speaker>Karl.</speaker>
+          <p>Die Frau muß auch essen, und das Mädchen auch. Thu mir den Gefallen liebes Mädchen,
+            iß!</p>
+        </sp>
+        <sp who="#lotte">
+          <speaker>Lotte.</speaker>
+          <p>Wenns die Mutter erlaubt!</p>
+        </sp>
+        <sp who="#jobsens_weib">
+          <speaker>Jobsen Weib.</speaker>
+          <p>Iß Kind, diese Herren sind uns von Gott zur Hülfe gesandt.</p>
+        </sp>
+        <sp who="#karl">
+          <speaker>Karl.</speaker>
+          <p>Gott hilft oft wunderbar, sagt unser Hofmeister, und bey euch trifft das buchstäblich
+            ein. Wäre nicht heute unsers Onkels Geburtstag, so hätte mein Bruder Fritz keine Torte
+            machen lassen, wir hätten euern Sohn nicht gesehen, also eure Noth nicht erfahren, und
+            ihr hättet noch länger Hunger leiden müssen.</p>
+        </sp>
+        <pb n="19"/>
+        <sp who="#jobs">
+          <speaker>Jobs.</speaker>
+          <p>Albert! Albert! du bist ungehorsam, deinem kranken Vater ungehorsam? Das verbittert mir
+            diese herrliche Speise! Ich verboth Dir ja ausdrücklich zu Betteln.</p>
+        </sp>
+        <sp who="#albert">
+          <speaker>Albert.</speaker>
+          <p>Aber lieber Vater, hätte ich euch, und uns sollen verhungern lassen? Ihr schicktet mich
+            zum Pfarrer, der die Armenpflege hat, er wieß mich an den Armenvater. Dieser sagte, ich
+            sollte kommen, wenn die Woche um wäre, es wäre wider die Ordnung, eher was zu theilen.
+            Ich fragte ihn ganz treuherzig, ob also mein Vater indessen ordnungsmässig verhungern
+            soll, da schalt er uns ein impertinentes Gesind, und drohte mich wegjagen zu lassen. O
+            Vater! wenn allen Bettlern so ums Herz ist, wie es mir ward, als ich diese jungen Herren
+            um Almosen ansprach, so ist Betteln ein bitteres Handwerk.</p>
+        </sp>
+      </div>
+      <pb n="20"/>
+      <div type="scene">
+        <head>Zehenter Auftritt.</head>
+        <stage>Der Hofmeister, die Vorigen.</stage>
+        <sp who="#hofmeister">
+          <speaker>Hofmeister.</speaker>
+          <p>Was machen Sie hier meine Herren? Warum sind Sie nicht beym Onkel?</p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>Ich habe diesem Manne meine Torte geschenkt, Herr Hofmeister.</p>
+        </sp>
+        <sp who="#hofmeister">
+          <speaker>Hofmeister.</speaker>
+          <p>Die Torte, die Sie für den Onkel machen ließen? Das haben Sie nicht schön gemacht.</p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>Wenn es nicht schön ist, so ist es doch gut. Sie thun ja selbst gerne Gutes, geben den
+            Armen so gerne, und soll ichs nicht lieber Hofmeister?</p>
+        </sp>
+        <sp who="#karl">
+          <speaker>Karl.</speaker>
+          <p>Der arme Mann hat zwey Tage nichts gegessen. O lieber Hofmeister! Sie müssen uns bey
+            dem Onkel entschuldigen.</p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>O ja der Hofmeister thuts gewiß.</p>
+        </sp>
+        <sp who="#hofmeister">
+          <speaker>Hofmeister.</speaker>
+          <p>Gute Thaten brauchen keine Entschuldigung. An mein Herz meine lieben Freunde, Sie haben
+            durch diese wohlthätige Handlung den Geburtstag ihres braven Onkels <pb n="21"/>
+            herrlicher gefeyert, als wenn Sie ihm die ausgesuchtesten Freudenfeste veranstaltet
+            hätten. Und ihr guten Unglückliche, Ihr sollet, so lange ihr es nöthig habt, durch diese
+            kleinen Grafen unterstützet werden. Graf Fritz, Karl ich erlaube ihnen von ihrem
+            Taschengelde diesen wahrhaft Dürftigen wochentlich einen Thaler zu schicken. Frau nehmen
+            Sie indessen dieses Wenige Brod, und Fleisch zu kaufen. <stage>(Er giebt ihr
+              Geld.)</stage></p>
+        </sp>
+        <sp who="#fritz">
+          <speaker>Fritz.</speaker>
+          <p>Karl hast du es gehört? der Hofmeister hat Geld auf Fleisch und Brod hergegeben; o das
+            freuet mich! denn sieh Bruder, von der Torte allein wären ihrer vier nicht satt
+            geworden. Und weißt du, ich will die Mama bitten, daß sie unsern Hausdoktor zu dem
+            lahmen Manne schickt, damit er wieder gesund wird.</p>
+        </sp>
+        <sp who="#jobs">
+          <speaker>Jobs.</speaker>
+          <p>Gott! so viele Wohlthaten! aber darf ich um den Namen meiner Wohlthäter bitten?</p>
+        </sp>
+        <pb n="22"/>
+        <sp who="#hofmeister">
+          <speaker>Hofmeister.</speaker>
+          <p>Der Name ist keine Wohlthat Freund. Lebt wohl! Kommen Sie meine Lieben.</p>
+        </sp>
+        <sp who="#karl #fritz">
+          <speaker>Karl. Fritz.</speaker>
+          <p>Adieu!</p>
+        </sp>
+        <sp who="#jobs #jobsens_weib #albert #lotte #hanne">
+          <speaker>Die ganze Familie.</speaker>
+          <p>Gott segne und erhalte unsere Wohlthäter.</p>
+        </sp>
+      </div>
+    </body>
+  </text>
+</TEI>
