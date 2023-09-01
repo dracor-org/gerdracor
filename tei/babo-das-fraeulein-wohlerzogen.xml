@@ -1,0 +1,2277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000643" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Das Fräulein Wohlerzogen</title>
+        <title type="sub">Ein Lustspiel in drei Aufzügen. Ein Sittengemälde aus München</title>
+        <author>
+          <persName>
+            <forename>Joseph</forename>
+            <forename>Marius</forename>
+            <nameLink>von</nameLink>
+            <surname>Babo</surname>
+          </persName>
+          <idno type="wikidata">Q104172</idno>
+          <idno type="pnd">118988107</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Google Books</name>
+          <idno type="URL"
+            >https://books.google.com/books?id=CBxaAAAAcAAJ&amp;printsec=frontcover</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource"> Anonym [= <author>Joseph Marius von Babo</author>]:
+              <title>Das Fräulein Wohlerzogen. Ein Lustspiel in drei Aufzügen. Ein Sittengemälde aus
+              München</title>. München: <publisher>Strobl</publisher>
+            <date>1783</date>. (S. <biblScope unit="page" from="1" to="71">1–71</biblScope>.)</bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="frau_klipper" sex="FEMALE">
+            <persName>Frau Klipper</persName>
+          </person>
+          <person xml:id="klipper" sex="MALE">
+            <persName>Klipper</persName>
+          </person>
+          <person xml:id="therese" sex="FEMALE">
+            <persName>Therese</persName>
+          </person>
+          <person xml:id="margreth" sex="FEMALE">
+            <persName>Margreth</persName>
+          </person>
+          <person xml:id="herr_von_affling" sex="MALE">
+            <persName>Herr von Affling</persName>
+          </person>
+          <person xml:id="monsieur_leger" sex="MALE">
+            <persName>Monsieur Leger</persName>
+          </person>
+          <person xml:id="zoller" sex="MALE">
+            <persName>Zoller</persName>
+          </person>
+          <person xml:id="bediente" sex="MALE">
+            <persName>Bediente</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#klipper #frau_klipper"/>
+            <relation name="parent_of" active="#klipper #frau_klipper" passive="#therese"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2023-09-01">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1783">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000643"
+        passive="http://www.wikidata.org/entity/Q122168239"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <pb n="1"/>
+    <front>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">Das Fräulein Wohlerzogen</titlePart>
+          <titlePart type="sub">ein Lustspiel in drei Aufzügen.</titlePart>
+          <titlePart type="sub">Ein Sittengemälde aus München.</titlePart>
+        </docTitle>
+        <docImprint>
+          <pubPlace>München,</pubPlace>
+          <docDate>1783.</docDate>
+          <publisher>Bey Johann Baptist Strobl.</publisher>
+        </docImprint>
+      </titlePage>
+      <pb n="2"/>
+      <castList>
+        <head>Personen.</head>
+        <castItem>
+          <role>Klipper,</role>
+          <roleDesc>Sekretair.</roleDesc>
+        </castItem>
+        <castItem>
+          <role>Frau Klipper.</role>
+        </castItem>
+        <castItem>
+          <role>Therese,</role>
+          <roleDesc>ihre Tochter.</roleDesc>
+        </castItem>
+        <castItem>
+          <role>Zoller.</role>
+        </castItem>
+        <castItem>
+          <role>Herr von Affling.</role>
+        </castItem>
+        <castItem>
+          <role>Monsieur Leger,</role>
+          <roleDesc>Tanzmeister.</roleDesc>
+        </castItem>
+        <castItem>
+          <role>Margreth,</role>
+          <roleDesc>Köchinn.</roleDesc>
+        </castItem>
+      </castList>
+    </front>
+    <pb n="3"/>
+    <body>
+      <div type="act">
+        <head>Erster Aufzug.</head>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>Klipper, Frau und Therese (beym Theetrinken.)</stage>
+          <sp who="#frau_klipper">
+            <speaker>Fr. Klip.</speaker>
+            <stage>(zum Manne)</stage>
+            <p>Da braucht's gar keine Umstände, sag nur dem Kammerdiener, daß die Dame, welche
+              gestern eine Stunde lang bei Seiner Excellenz war, deine Gemahlin ist, und du wirst
+              sehen, wie die Thüren angelweit vor dir auffliegen werden. Ich sage dir ja, daß <pb
+                n="4"/> es um die Sache gethan ist, du bist Hofkammerrath, und gehst nur hin, um
+              dich zu bedanken.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>So versichert bist du?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Fr. Klip.</speaker>
+            <p>Das bin ich. Seine Excellenz hat mir mit Mund und Hand seine beste Verwendung
+              versprochen. Du weißt, was er auf mich hält; hab ich meinem seligen Mann und dir den
+              Dienst ausgewirkt. Das wär mir recht, wenn der mir was abschlüge. Mach nur, daß du
+              hinkömmst.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Nun ich gehe. Ach! das ist ein harter Gang.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Fr. Klip.</speaker>
+            <p>Herr Gott! – meint man nicht du sollst, wer weiß wohin, gehen! Mir ist's gerade so
+              viel mit Seiner Excellenz umzugehen, als mit dir. Ich will hoffen, du wirst die
+              gemeinen Manieren ablegen, wenn du Hofkammerrath seyn wirst. Herr von Klipper darf
+              nicht mehr so klipperisch thun und denken. Doch das wird die Frau Hofkammerräthinn von
+              Klipper schon machen, du und dein ganzes Haus soll umgeschaffen <pb n="5"/> werden,
+              und ich – nun, wenn ich nicht wüßte, was dazu gehört, so hätte ich dich nicht zum
+              Hofkammerrath gemacht. Geh' nur, geh' nur!</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Adje, Fränzel!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Gute Verrichtung. Wart, da hast du einen Dintenflecken auf der Stirn. <stage>(Wischt
+                ihn ab)</stage> Nur Geduld, das Sekretärsgesicht soll bald anders aussehen.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>He! he! he! Du liebes Fränzel! Nun, adje!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Der Herr Hofkammerrath wird bald wieder kommen.</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Empfehle mich, Papa!</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Frau Klipper, Therese.</stage>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Aber ist es auch gewiß, Mamachen, daß der Papa Hofkammerrath wird? –</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Zweifelst du, ob ich im Stande bin, so was zu machen?</p>
+          </sp>
+          <pb n="6"/>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>O nein, Sie sind eben ein ganzes Mamachen. Wenn Sie mich doch auch lehren wollten,
+              wie man – Nun werd's auch schon – – o ich bin gar zu froh!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Hast auch Ursach; denn sieh, itzt bist du Fräulein Therese!</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Nicht wahr? Fräulein!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Richtig. Fräulein so gut als eine. Und ich – was bin ich?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Frau von Klipper.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>O das <emph>Von</emph> ist gar zu wenig. Um so ein kleins Dingelchen als das
+                <emph>Von</emph> ist, hätt' ich nicht –</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Ja! aber auch gnädige Frau!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Das ist's, das ist's! Der Herr von Affling wird drein schauen, wenn er hört, daß es
+              richtig ist.</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Und Zoller auch! der wird Augen machen.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Hm! mit dem Zoller weis ich nicht recht, wie's gehen wird. Für ein Fräulein gäbs wohl
+              noch eine bessere Partie.</p>
+          </sp>
+          <pb n="7"/>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Freilich, Mamachen, er ist gar so bürgerlich, kein Bischen galant. Ich werd ihn wohl
+              weg zu schieben suchen, meynen Sie nicht?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Hast du einen andern im Visier?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Ich will gleich einen haben.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Komm mir nur nicht mit deinem Lieutenant Dormling, der könnte eine schöne Wäsche mit
+              dir anfangen. Meynst, ich wüßte nicht, daß er neulich erst um zwölf Uhr in der Nacht
+              aus deinem Zimmer geschlichen ist?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>O sorge nur die Mama für so was nicht! Ich bin kein tölpelhaftes Jüngferchen
+              mehr.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Ja, du weißt viel, du! man meynt oft – kurz und gut, das leid ich absolut nicht.</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Ei, die Mama soll auch nicht leiden, daß der Herr von Affling erst um zwei Uhr nach
+              Mitternacht aus unserm Hause schleiche.</p>
+          </sp>
+          <pb n="8"/>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Wer sagt das?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Ich, er ist mir in der Hausthüre begegnet.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Dir? Und wo warst du bis zwei Uhr? Du gehst ja um zehn schlafen!</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Nun, was thut's, wo ich war!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Was es thut! Freilich thut's was! ich will's absolut wissen.</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>O die Mama ist auch gar zu scharf. Ich war ein bischen spazieren.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Pfui! in der Nacht! könntest ja den Schnuppen bekommen, die Nachtluft verdirbt die
+              haut erschrecklich. Sey nur gescheid und vorsichtig. Theresel! A propos, wir wollen
+              die Frau von Wadel und die Schoberin auf ein Spiel einladen, die werden sich ärgern,
+              wenn sie die Neuigkeit hören. Geh' schick zu ihnen, und zieh dich an, versäum aber
+              deine Klavier- und Zeichenlektion nicht, als Fräulein prätendirt man eine honette
+              Erziehung von dir, und gewis, ich thu alles, <pb n="9"/> was ich kann, um dich
+              standesmäßig zu erziehen. Geh' Theresel!</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Empfehle mich, Mama!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Schick mir die Margreth herein.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Frau Klipper.</stage>
+          <sp who="#frau_klipper">
+            <p>Soll man sagen, was die Kinder so schlim werden! wirft die mir schon den Affling vor!
+              Ei! du schnippisches Ding du! weil Affling um zwei fortgeht, darf Dormling um zwölf
+              fortgehen! Je nu! was halt ich mich drüber auf? man lebt in der Welt. Die ganze Stadt
+              mus doch sagen, daß ich meine Tochter sehr wohl erziehe, sie kann alles, was ein
+              Mädchen von Distinktion ziert.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <stage>Margareth kömmt.</stage>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Was befehlen's, Madame!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>War sie auf dem Markte?</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Ja. Hab schon meine Speisen beim Feuer.</p>
+          </sp>
+          <pb n="10"/>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Hat's nichts neues gehört? –</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Die schöne Zibebenlisel ist gestern eingeführt worden. Geschieht ihr recht, der
+              stolzen Dirne! wird ihr freilich nicht viel geschehen, denn die Herren, die sie
+              strafen sollten, werden ihr Barmherzigkeit angedeihen lassen, wie sie ihnen auch oft
+              gethan haben mag: aber der Hochmuth wird ihr doch vergessen. Hab's all mein Lebtag
+              gesagt: Der Hochmuth kömmt vor dem Fall.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Was hat sie denn gethan, daß man sie itzt einführt?</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Man hätte sie freilich schon längst einführen sollen, aber die liebe Obrigkeit
+              bekümmert sich nur um das 7 Geboth, weil bei Diebshistorien auch manches in den Beutel
+              fällt, nach Liederlichkeit und schlechten Lebenswandel fragt sie nichts. Die
+              Zibebenlisel hätte noch lange auf den Kauf umherschlenzen können; wär's ihr nur nicht
+              eingefallen, einem Herrn einen kostbaren Diamantring zu stehlen.</p>
+          </sp>
+          <pb n="11"/>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Gestohlen hat sie? Nu, da geschieht ihr recht, der Diebinn!</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Recht geschieht ihr: aber sie verdient's eher durch die Ursach des Diebstahls, als
+              durch den Diebstahl selbst.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Wie so?</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Sie hat diesen Herrn einmal heimgesucht, und für diese einzige Visite mußte sie den
+              Bader sechs Wochen lang eine Visite bezalen. Da gieng Gut und Blut darauf. Der Herr
+              ersezte ihr keinen Heller, und izt glaubte sie sich an dem Diamantring zu erholen.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Ei! was, erholen! einer Diebinn muß man nichts schenken. Auf Morgen Margreth müssen
+              wir für eine gute Malzeit sorgen.</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Wollen's traktiren?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Und sie erräth gewis nicht, warum.</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Ist doch kein Namenstag. In diesem Monat fällt keiner; ich weis sie alle
+              auswendig.</p>
+          </sp>
+          <pb n="12"/>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Mein Mann ist Hofkammerrath geworden.</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Herr Je! Nu, der Herr hat's gewis verdient, Tag und Nacht schreiben ist kein Spaß; er
+              sah oft aus wie ein lebendiges Dintenfas vor lauter Geschäften. Sehen Sie, das Ding
+              freut mich so, daß mir die Thränen die Backen herunter rollen. – – Aber nicht wahr,
+              Madame, itzt bekomm ich auch einen neuen Bratenwender, der alte ist gar zu liederlich,
+              es hilft kein Flicken mehr.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Wollen schon sehen.</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Und die Altmezgerinn thut mir alle Drangsal an wegen der Fleischrechnung. Sie müssen
+              doch bald machen.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Herr Gott! die Haushaltung kostet eben gar zu viel. Die Erziehung meiner Tochter
+              setzt uns sehr zurück, die Lehrmeister sind sehr theuer. Aber was will man machen, es
+              ist heut zu Tage alles gar hoch getrieben; ein Mädchen soll alles können, und ein
+              Fräulein gar.</p>
+          </sp>
+          <pb n="13"/>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Es ist aber närrisch, daß ihre Lehrmeister ihr nicht einmal sagen, wie man eine
+              Wassersuppe kocht. Davon versteht sie gar nichts.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Dummes Ding! ein Fräulein wird sich doch nicht um die Kocherei bekümmern sollen.</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Ist doch gut, wenn man ein bischen davon versteht.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Wo denkt sie hin, Margreth! ein Fräulein wird in die Küche gehen, und sich am
+              Feuerheerde räuchern! ein Fräulein!</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Herr Je! daran dacht' ich nicht. Itzt ist unsere Mamsell ein Fräulein.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Freilich! Vieles hat sich itzt geändert, liebe Margreth. Ich, meine Tochter und mein
+              Mann sind nicht mehr, was wir waren.</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Herr Je! ich möchte vor Freude zerplazen.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Nun geht alles aus einem andern Tone.</p>
+          </sp>
+          <pb n="14"/>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Eben deswegen! denn wenn die Einkünfte um so viel grösser sind, so – –</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Nicht mehr so schlecht weg, Herr Klipper, Mamsell und Mad – –</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Versteht sich! Geld regiert die Welt! Habs all mein Lebtag gehört: Wer lang hat, läßt
+              lang hangen.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Sie wird wohl wissen, was ich damit sagen will?</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Herr Je! das glaub ich! Gelehrten ist gut predigen. Nun wird's mehr und besser zu
+              kochen geben; werd mich nicht mehr so placken müssen, mit ein paar Zwölfer auf dem
+              Markte und –</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Und sich in's künftig darnach richten.</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Gewis, gewis, Madame! das werd' ich.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Also hinfüro nicht anders, als gnädige Frau – –</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Ha, ha, ha! haben's recht, werd brav lachen über die gnädige Frauen, <pb n="15"/> die
+              oft keine Endte werden kaufen können, wenn ich Fasanen kaufe. Ha, ha, ha! werd' brav
+              lachen über die gnädigen Frauen.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <stage>(für sich)</stage>
+            <p>Das Mensch hat mich, glaub ich, zum Narren.</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Nun; Madame! wenn's nichts mehr befehlen, ich mus in die Küche.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Hör Sie. Sie hat mich nicht verstanden. Kurz und deutlich also: mein Mann ist nun
+              Hofkammerrath, folglich nennt man ihn gnädiger Herr! ich bin Frau Hofkammerräthinn,
+              folglich nennt man mich gnädige Frau! mein Tochter ist Hofkammerraths-Tochter,
+              folglich Fräulein!</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Das ist ja eine gar gnädige Kammer! Nu, nu, ist mir schon recht; gnädige Frau, oder
+              Madame, gilt mir gleich; mein Feuer brennt drum nicht lustiger, wenn nur meine Suppe
+              besser wird. Aber nicht wahr, die Einkünfte sind auch dreimal grösser als sonst?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Noch nicht, Margreth! itzt hat mein Mann nur den Titl, aber mit der Zeit <pb n="16"/>
+              kömmt das andere auch. Denn es sind nur zehn Hofkammerräthe, die vor ihm in Besoldung
+              treten. Drum sey sie ein bischen sparsam in der Küche; der Karakter erfodert itzt
+              mehr, die Erziehung meiner Tochter mus brillanter seyn.</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Hm! so! so!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Nu Margreth!</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Was befehlen's?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Ich mus ihr wohl ihren ganzen Titel geben: Jungfer Köchinn!</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Gnädige Mad – – Frau! was wollen's?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>So Margreth! Nun denk sie an Morgen. <stage>(ab)</stage></p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>So, gnädige Frau! meynt Sie, ich wollt ihr Narr umsonst seyn! Ei! das wär mir eine
+              schöne Historie! Nein, nein nichts gnädig, oder es müßte in meiner Tasche ganz anders
+              rasseln. Was geht mich der Titel an; ein gebratner Titel mag wahrlich eine hungrige
+              Malzeit seyn. Wind ist wolfeil; <pb n="17"/> läßt sich aber auch zu nichts brauchen,
+              als zum Feuer anblasen. So müßt ich meinen Blasbalg einen gnädigen Blasbalg nennen,
+              weil er viel Wind macht? Ha! ha! wär mir schön! hab's doch all mein Lebtag gehört,
+              wenn der Koth Dunger wird, so will er gefahren sein.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <stage>Herr von Affling, Therese.</stage>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Nun so gratulir' ich von Herzen zum Fräulein, aber wo ist denn die Mama, daß ich ihr
+              als gnädigen Frau zum erstenmal die Hand küsse?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Ho! ho! wie der Herr eilt, Sie werden des Händeküssens genug bekommen. Freilich, die
+              Mama hat eine gar schöne Hand! <stage>(Sie betrachtet die ihrige)</stage></p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <stage>(Küßt ihr die Hand)</stage>
+            <p>O ein süßeres Pätschgen kann's nicht geben, als dieses.</p>
+          </sp>
+          <pb n="18"/>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Gehen Sie, Schmeichler! Geben Sie acht, die Wände haben Augen und Ohren.
+                <stage>(drohend)</stage></p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Nun so möcht ich die Wände etwas Schönes sehen und hören lassen, denn sie haben doch
+              keinen Mund, Fräulein!</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Hm! doch. Denn wie könnte ich sonst all die schönen Sachen wissen, die der Herr von
+              Affling hier hat hören lassen!</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Sie schelmisches Fräulein! Nun, was macht denn der Herr Zoller?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Saure Gesichter macht er. Der Mensch ist ein leibhaftes Fastenexempel!</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Aber Dormling! he, nicht wahr, das ist ein ander Exempel?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>A propos! ich mus ihnen etwas erzählen. Dormling ist eifersüchtig zum tollwerden.</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Auf Zoller?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Pah! pah! er hat erfahren, daß ich neulich mit dem Fähndrich delle Spada in seinem
+              Logis Schokolade getrunken habe.</p>
+          </sp>
+          <pb n="19"/>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Und da eifert er? – Ha! ha!</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Unmenschlich. Doch wissen Sie was? schleichen Sie diesen Abend, wenn Sie fortgehen,
+              auf mein Zimmer, da will Ich Ihnen den ganzen Spaß erzählen.</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Aber haben denn die Wände da keine Augen und Ohren?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Mögen Sie, wenn ich Ihnen mit dem Riegel das Maul zustopfe. Gehen Sie itzt nach ihrem
+              Kammerdienst. – Sie kömmt. <stage>(laut)</stage> Also kann ich mich darauf verlassen,
+              Herr von Affling, daß Sie mir die Musik zu Lenardo und Blandine schaffen werden? Aber
+              nur bald, ich bitte Sie, denn dies Melodram ist mein allerliebstes Buch. –</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Sechster Auftritt.</head>
+          <stage>Frau Klipper, die Vorigen.</stage>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Gnädige Frau! ich gratulire Ihnen zu ihrem Glücke, und empfehle mich ferner in Ihre
+              Gnade.</p>
+          </sp>
+          <pb n="20"/>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Mit uns bleibts beim Alten. Sind Sie schon lange da?</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Den Augenblick komm ich erst. Sie müssen mich haben ins Zimmer hereingehen
+              gesehen.</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <stage>(Zieht eine Arbeit hervor, und sezt sich hin. Die Mama giebt zu verstehen, daß
+              das sie gar mächtig ärgert.)</stage>
+            <p/>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Nein, ich wußte gar nicht, daß Sie da sind. Therese! du mußt die Spieltische
+              richten.</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Hab's schon, Mama! <stage>(arbeitet fort)</stage></p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Hast auch befohlen, daß man räuchere, und einheize.</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Ja!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <stage>(Zornig)</stage>
+            <p>Warum kleidest du dich dann nicht an? Ich hab dir's schon einmal gesagt.</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Es ist Niemand da, der mich einschnürt. Das Mädchen ist aus. <stage>(lächelt boshaft
+                für sich)</stage></p>
+          </sp>
+          <pb n="21"/>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <stage>(leise zu Affling)</stage>
+            <p>Soll ich ihr nicht ein paar Ohrfeigen geben?</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Ei bei Leibe nicht! Gute Worte! gute Worte!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Theresel! ich habe den Monsieur Leger herbestellt, er soll dir wieder Lektion geben,
+              damit du dich auf dem Ball kannst sehen lassen. Bedenk nur, Mädchen! was ich an deine
+              Erziehung wende, kostet wieder jede Lektion drey Vier und Zwanziger. Geh' hübsch auf
+              dein Zimmer, und stell dich ein bischen hinter einen Stuhl auswärts, und mach <foreign
+                xml:lang="fre">pliés</foreign>, damit du wieder hineinkömmst. Dein Singmeister wird
+              auch bald kommen. Geh'!</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Erlauben Sie, ich will mich daher stellen. <stage>(stellt sich auswärts hinter einen
+                Sessel, und biegt die Knie.)</stage></p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Soll man nicht aus der Haut fahren? Sie thut's expreß.</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Freilich. Aber lassen Sie sich nur nichts merken. Sehen Sie nicht, wie sie
+              lächelt?</p>
+          </sp>
+          <pb n="22"/>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <stage>(lauft hin, und gibt ihr Ohrfeigen)</stage>
+            <p>Da, du impertinente Vettel, du! ist das die Frucht deiner Erziehung? deine Mutter so
+              zu ärgern! Gleich pack' dich hinaus!</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <stage>(vor Zorn weinend)</stage>
+            <p>Schon gut! schon gut! weis schon, warum die Mama so böse ist. Die Mama soll sich – –
+                <stage>(wirft den Stuhl um, stürzt hinaus, und schlägt die Thüre zu.)</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Siebenter Auftritt.</head>
+          <stage>Frau Klipper, Herr von Affling.</stage>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Sehen Sie, was das für eine boshafte Kreatur ist. Soll einer sagen, daß das Mädchen
+              die beste Erziehung in der ganzen Stadt erhält. Ich möchte von Sinnen kommen, wenn ich
+              sehe, daß meine Sorg und mein Geld so wenig fruchten.</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Werden Sie ruhig, gnädige Frau. Sie hätten in der That nicht so weit gehen sollen.
+              Für Leute vom Stande ist so was höchst unschicklich.</p>
+          </sp>
+          <pb n="23"/>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Ei! Sie sind ja zum Entzücken, Herr von Affling! Mir Vorwürfe! O gehen Sie ihr nach,
+              gehen Sie! hab schon lange gemerkt, was da geflüstert, gekomplotirt, geliebäugelt
+              wird.</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <stage>(wirft sich auf die Knie)</stage>
+            <p>Holdselige! hier lieg ich. Seyen Sie nicht ungerecht gegen mich, und zweifeln Sie
+              nicht an meiner Liebe. Gnädige Frau! am ersten Tage ihrer Gnaden so ungnädig!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <stage>(reicht ihm die Hand zum küssen)</stage>
+            <p>Nun, da! stehen Sie nur auf. Sie wissen nicht, was das Mädchen boshaft ist; sie hat
+              mir Sie heute schon vorgeworfen. Aber nun, lieber Affling! dürfen wir uns nicht mehr
+              so geniren; als Hofkammerräthin kann ich Sie überall als meinen Liebhaber um mich
+              haben, denn ich gehöre nun zur kleinen Noblesse. Ich Frau <emph>von</emph>, Sie Herr
+                <emph>von</emph>, unsere beiden <emph>Von</emph> zusammen genommen gelten schon so
+              viel, als irgend ein <emph>Von</emph> in der Welt. Was mich noch kümmert, ist die
+              Kanzleimiene meines Mannes. Wie werd ich aus <pb n="24"/> diesem Papierfetzen eine
+              ordentliche Figur heraus schnitzeln können?</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>O er ist ja so traktabel!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Sie werden sehen, daß er nicht das mindeste an seiner altfränkischen Tracht und
+              Denkungsart wird ändern wollen. Ich war einmal daran einen neumodischen Haarbeutel an
+              seine Perücke zu hängen, meinen Sie, er hätt es gelitten? Puh! da fieng er an zu
+              schreien und lärmen, ja es kam so weit, daß er lateinisch sprach, und wenn er
+              lateinisch spricht, so ist er gewis berauscht, oder vor Zorn ausser sich.</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Ei! lassen Sie ihn in Gottesnamen, wie er ist. Für das, was er sein soll, ist er gut
+              genug.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Das wär mir schön! Nein, es mus alles aufeinander gehen; in meinem Hause mus alles,
+              wie neu geboren werden; dem Mädchen will ich schon ihre Lektion geben; aber mein Mann!
+              mein Mann!</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Um des Himmels willen, gnädige Frau! wie mögen Sie da viele Umstände <pb n="25"/>
+              machen? Darf er Ihnen widersprechen, wenn Sie sagen, ich will? Waren Sie nicht von
+              jeher Herr und Frau im Hause?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Das bin ich noch; aber, sehen Sie, ich will ihm gern im Kleinigkeiten einen Schein
+              von Ansehen lassen, damit in wichtigen Punkten alles desto sicherer nach meinem Kopfe
+              geht. Es geschieht doch, was ich will, nur mögte ich's so anstellen, daß er's auch zu
+              wollen glaubt.</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>O Weiberpolitik! Sie sind mir eine schlimme! <stage>(küßt ihr die Hand)</stage></p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Aber nur gegen die Männer sind wir schlimm. Gegen euch lose Vögel sollte man's auch
+              sein, aber ihr wißt die Vernunft gleich mit dem Herzen weg zu kappern.</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>O Sie honigsüße! <stage>(küßt schon wieder die Hand)</stage></p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Wie wär's, wenn ich eins probierte? Ich will den Altvatersessel aus meines Mannes
+              Zimmer tragen lassen; wenn er das zugiebt, so komm ich hinter seine abscheuliche
+              Perüke, seine lange Manschetten, seinen <pb n="26"/> Schlafrock von Löschpapier, seine
+              Schlafhaube von Kattun; hinter seine – –</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Halten Sie ein, grausame! womit hab ich's verdient, daß Sie mir das schrecklichste
+              Unglück zubereiten?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Wie? was Unglück?</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Wenn Sie ihren Mann so herausstaffiren, was wird denn aus mir werden? Ungetreue! –
+              Sie werden mich um seinetwillen verlassen!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>O sein Sie ruhig, lieber Affling! wenn ich auch einen Engel aus ihm machen könnte, so
+              blieb ihm doch ein erschrecklicher Fehler, der alles Gute verdunkelt, alles Böse
+              vergrössert, kurz, der ihn nach allen Gesäzen der Mode, der Lebensart und unserer
+              Sitten zum abscheulichsten Menschen in meinen Augen machen mus.</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Das mus ein höllischer Fehler sein! nennen Sie mir ihn, wie heißt er?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Er heißt: – Ehemann! <stage>(ab)</stage></p>
+          </sp>
+          <pb n="27"/>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Ehemann! Nun den Fehler hat Herr Klipper gewis, er ist Ehemann im höchsten Grade. Es
+              fehlt ihm an nichts, was zu einem modernen Ehemann gehört, sowohl von seiner Seite;
+              als von der Seite seiner Frau, und von der meinigen. Ja, wenn's lauter Klipper gäbe;
+              aber so kann unser einer nicht die schönen Frauen, sondern er muß die dummen Männer
+              suchen, es sei dann, daß der Mann irgend einer schönen Frau auch ein liederlicher Bube
+              ist, dann ist er oft froh, wenn einer kömmt, der ihm seine liebe Hälfte verführet. Es
+              ist drum ein lustig's Leben heut zu Tage! vor Zeiten würde man einen aus dem Lande
+              gepeitscht haben, der nach der itzigen Mode hätte leben wollen, und itzt lacht man den
+              aus, der das Gegentheil thut.</p>
+          </sp>
+        </div>
+      </div>
+      <pb n="28"/>
+      <div type="act">
+        <head>Zweiter Aufzug.</head>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>Herr Klipper, Herr von Affling. (Kommen durch verschiedene Thüren herein.)</stage>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Ah, Herr Hofkammerrath! ich gratulire von Herzen, und empfehle mich in ihre
+              Freundschaft.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p><foreign xml:lang="lat">Servus.</foreign> Dank. Bleibt beim alten. Sapperment! ich
+              bin müde. <stage>(sezt sich)</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Frau Klipper, die Vorigen.</stage>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Bist du da, mein Schatz! Nun hab ich nicht recht gehabt?</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Ja. Ist resolvirt zur Ausfertigung des Dekrets.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Also einen Kuß, Herr Hofkammerrath! Nicht wahr, seine Excellenz war recht gnädig?</p>
+          </sp>
+          <pb n="29"/>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>O ja. Ich mußte mich neben ihm sezen auf das gelbe Kanapee neben seinem
+              Schreibtische.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Weis schon.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Sieh' doch einmal her, Schatz! ob ich nichts auf der Stirne habe?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Ich sehe nichts. Warum?</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Er sah mir so auf die Stirne und lächelte. Ich wischte mit der Hand hin und her, weil
+              ich meinte, es wär' etwann ein Dintenfleck, oder ein Floh da; aber je mehr ich
+              wischte, desto mehr sah er hin und lächelte.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Das ist so seine Gewohnheit. Aber vielleicht hat er nach deiner Perücke geschaut; sie
+              ist so altfränkisch. Nicht wahr, Schatz, du wirst dich itzt ein bischen anders mustern
+              in deiner Kleidung und deinem Betragen. Ich mus doch das Ansehen deines Ranges
+              behaupten, und da könntest du mir alles verderben.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <stage>(springt auf, und dreht sich um; während dem küßt der Liebhaber die
+              Frau.)</stage>
+            <p>Sapperment! <pb n="30"/> ist's denn nicht recht so? was fehlt denn? he! Sapperment!
+              das war meines Vaters Gallakleid!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Aber hör nur, Schatz! itzt werden wir in brillante Gesellschaften kommen, da mußt du
+              dich doch präsentiren, wie sich's gehört.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Ei präsentir' du dich nur. Meine alten Spezi auf der Trinkstube wissen schon, was für
+              ein <foreign xml:lang="lat">Socius</foreign> ich bin.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Geh'! geh' nur, du weißt wohl, daß itzt alles anders werden mus.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Anders, Fränzel, anders? Ei, Sapperment, das wüßt' ich nicht. Was soll denn anders
+              werden?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Laß mich nur machen, sollst deine Wunder sehen.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Nu, Raritäten sehe ich gerne.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Vor allem, mein Schatz! mögt' ich dich um eines bitten, und du schlägst mirs gewis
+              nicht ab. Du mußt schon selbst gemerkt haben, wie unschicklich es heraus kömmt, <pb
+                n="31"/> wenn man kein anständiges Kompliment machen kann; wenn du nur das lernen
+              wolltest.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Ich lernen? Sapperment kann ich's denn nicht?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Werd' nur nicht böse, mein Schatz! einen Krazfus kannst du wohl machen, aber kein
+              ordentliches Kompliment: O ich bitte dich, lerne nur das, mit dem Tanzen werd ich dich
+              gleichwohl verschonen.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Sapperment! ich müßte mich ja zu Tode schämen!</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Warum denn schämen, Herr Hofkammerrath?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Ja wohl, man braucht sich nicht zu schämen, etwas zu lernen.</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Und Sie dürfen ja keine Lektion nehmen, wie ein Kind. Sie haben's gleich weg, wenn
+              man's Ihnen nur einmal zeigt.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Nu, wenn das ist – – aber wer soll mir's denn zeigen?</p>
+          </sp>
+          <pb n="32"/>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Ich habe den <foreign xml:lang="fre">Monsieur Leger</foreign> herbestellt, daß er
+              meiner Tochter wieder Lektion gebe, der wird dir's mit einem male beibringen. Und
+              dann, mein Schatz! gewöhne dir doch einen andern Gang an; du gehest immer, als trügst
+              du einen Aktenstos auf dem Rücken. Willst du?</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Aber, mein Schatz, ich bin schon 40 Jahre so gegangen; warum denn itzt auf einmal
+              anders?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Für einen Sekretair war der Gang gut genug, aber als Hofkammerrath – –</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Monsieur Leger, die Vorigen.</stage>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leg.</speaker>
+            <p>Ihr unterthäniger Diener! Ich habe eine Neuigkeit vernommen, die mich ungemein
+              erfreuet hat. Frau Hofkammerräthin ich gratulire von Herzen, Herr Hofkammerrath – – –
+              –</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Dank' gehorsam, Monsieur Leger! Recht gut, daß Sie da sind. Mein Mann <pb n="33"/>
+              möchte gern ein regelmässiges Kompliment machen lernen.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Ich möchte gern, ich? Wenn's niemand lieber mag, als ich, so – – –</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Nun so bleib doch, mein Schatz! Laß dir's nur einmal zeigen.</p>
+          </sp>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leg.</speaker>
+            <stage>(Macht eine langsame regelmässige Verbeugung vor dem Herrn Klipper.)</stage>
+            <p/>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Siehest du, was das herrlich ist, es ziert den ganzen Mann, und nimmt alle Herzen
+              ein.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Das da? ha! ha! ha!</p>
+          </sp>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leg.</speaker>
+            <p>Ich versichere Sie, dieses Kompliment ist seine hundert Dukaten zwischen zwei Brüder
+              werth. Ich habe über zwei Monat dran studirt, um mehr Finesse hinein zu bringen, als
+              sonst gewöhnlich ist, und erst zu Paris hat mir der berühmte Vestris den wahren Geist
+              davon mitgetheilt.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Ha! ha! ha! Nun, wie macht man's denn?</p>
+          </sp>
+          <pb n="34"/>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leger.</speaker>
+            <p>Nicht wahr, so stehen Sie? Und dann schleifen Sie den rechten Fus mit erhobnem Absaz
+              langsam und zierlich, langsam und zierlich, langsam und zierlich daher an die zwote
+              Position. Itzt stehen Sie so! Nun machen Sie das, heut gehen wir nicht weiter. Gerade,
+              den Kopf in die Höhe, die Augen gegen mich, die Hände so, die Knie gestreckt,
+              auswärts. Holla! fallen Sie nicht. Itzt schleifen Sie langsam und zierlich.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <stage>(Streicht einen grossen Krazfuß, und dann zur Thüre hinaus.)</stage>
+            <p/>
+          </sp>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leg.</speaker>
+            <p>Was ist das? Er ist fort, gnädige Frau!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Ich sehe es leider wohl. Aus dem Manne wird in seinem Leben nichts. Aber wart, ich
+              will's von einer andern Seite angreifen, der Schneider soll alle seine Kleider
+              ändern.</p>
+          </sp>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leg.</speaker>
+            <p>Recht, Madame! und lauter Frake daraus machen. Denn sehen Sie, es ist eine gar
+              deliziöse Sache um eine Frake; man kann unmöglich dumm, oder ungeschickt <pb n="35"/>
+              aussehen, wenn die Frake ihren rechten Schnitt hat. Das giebt eine Art, eine Wendung,
+              eine Tourniere, eine Mine, einen Anstand, eine <foreign xml:lang="fre">grace</foreign>
+              – ach! Sie wissen das wohl, gnädige Frau, denn ich glaube nicht, daß eine Dame in der
+              ganzen Stadt das <foreign xml:lang="fre">Scavoir vivre</foreign> so ganz in ihrer
+              Gewalt hat, wie Sie. Aber wo ist denn das Fräulein?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Warten Sie nur einen Augenblick. Ich will sie gleich herschicken. Ihre Dienerinn!
+                <stage>(Sie winkt dem Herrn von Affling, daß er mitgehe.)</stage></p>
+          </sp>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leger.</speaker>
+            <p>Also komm ich wieder zu dir, meine Göttin! Nachdem ich deinen Dienst so lange
+              verlassen, und meinen Weihrauch auf so vielen andern Altären geopfert hatte:
+              himmlische Tanzkunst, du lehrest uns die Schritte in die Herzen der Mädchen und
+              Weiber, in die Schatouillen der Männer, in die Gnade der Grossen! durch deinen Zauber
+              machst du, daß ein paar Füße mehr gelten, als der Kopf; du giebst deinen Eingeweihten
+              in Wohllust und Reichthum zu leben, und in – – <pb n="36"/>
+              <stage>(krazt sich hinter den Ohren)</stage> ja oft im Lazareth zu sterben.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <stage>Therese, Monsieur Leger.</stage>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Ah! Monsieur Leger! willkommen tausendmal.</p>
+          </sp>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leger.</speaker>
+            <p>Ah! schönes Fräulein! nach so langer Trennung hab ich endlich das unaussprechliche
+              Glück wieder. Sagen Sie mir, hat dieses liebe Herzchen des armen Legers nicht ganz
+              vergessen?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Wie konnt ich das? lieber Leger! Sie waren der erste Chapeau, der mich die Liebe
+              kennen lehrte, und auf eine Art, die ewig – – –</p>
+          </sp>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leger.</speaker>
+            <p>O Schönste! Sie tödten mich vor Freuden! Sehen Sie mich hier zu ihren Füssen.</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Ach! Leger – –</p>
+          </sp>
+        </div>
+        <pb n="37"/>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <stage>Zoller, die Vorigen.</stage>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Ha! schön! schön Mamsell! eine schöne Gruppe! Wollen Sie auf einem wollüstigen Ballet
+              figuriren? und Sie, Monsieur, werden Sie dafür bezalt?</p>
+          </sp>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leg.</speaker>
+            <p>Keine Insulte, mein Herr, oder <foreign xml:lang="fre">ma foi</foreign>!</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Kein solches Oder, Monsieur, wenn Sie nicht wollen, daß ich Ihnen ein Oder von meiner
+              Art zeige!</p>
+          </sp>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leg.</speaker>
+            <p><foreign xml:lang="fre">Ma foi!</foreign> Sie müssen schlagen mit mir!</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Ich mit ihnen? ha! ha!</p>
+          </sp>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leg.</speaker>
+            <p>Warum nicht?</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Warum? Ich bin eines Bürgers Sohn, und selbst ein Bürger. Meinen Werth als Sohn und
+              Mann und Freund und Bürger sez ich nicht gegen ein paar verdrehte Beine auf's
+              Spiel.</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Kommen Sie, Monsieur Leger! Lassen Sie's gut sein; der Herr hat so seine <pb n="38"/>
+              sonderbare Begriffe. Auf meinem Zimmer können Sie mir meine Lektion geben, wie die
+              Mama befohlen hat.</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Ein Wort, Mamsell! mit uns hört alles auf; Sie sind meiner zu unwerth. Ihr
+              Diener!</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Der Grobian! Gut, daß ich seiner los bin!</p>
+          </sp>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leg.</speaker>
+            <p>Ich glaube gar, er kennt nicht einmal die vier Positionen! <stage>(geht mit Theresen
+                ab)</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Sechster Auftritt.</head>
+          <stage>Zoller.</stage>
+          <sp who="#zoller">
+            <p>Ha! ha! ha! Was mich der Mensch beschimpft! aber ich räche mich schrecklich an beiden
+              – ich verachte sie. Gut, daß ich dazu kam! schon lange erkannte ich die Denkart des
+              Mädchens und ihre Leichtsinnigkeit. Aber ich hielt es für die Folge jugendlicher
+              Unbesonnenheit, nie argwohnte ich ein verderbtes Herz, und lasterhafte Neigungen. Nun
+              wird mein Herz nicht mehr so impertinent sein, <pb n="39"/> ein Wörtchen zu ihrer
+              Verteidigung zu sagen. – Der Vater dauert mich, aber ich mus ihm die ganze Schande
+              seiner Familie aufdecken, ich mus. <stage>(im Abgehen begegnet ihm
+              Klipper.)</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Siebenter Auftritt.</head>
+          <stage>Zoller, Klipper.</stage>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Guten Morgen, lieber Zoller!</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Eben wollt' ich zu Ihnen. Ich hab viel mit Ihnen zu reden.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Nun! setzen wir uns.</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Vorläufig wünsch ich Ihnen Glück zu ihrer Beförderung. Und dann bitte ich Sie, mich
+              nicht mehr für den Menschen anzusehen, der ihr Schwiegersohn zu werden wünscht.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Was Sapperment! Sie wollen – –</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Ich bitte Sie, lassen Sie mich. Eben fand ich Ihre Tochter in einer sehr zärtlichen
+              Stellung mit ihrem Tanzmeister, ich <pb n="40"/> weis, daß Sie mich zu viel achten,
+              als daß Sie glauben, ich könnte aus solchen Händen eine Frau nehmen. Doch das ist noch
+              nicht alles. Sie könnte noch unschuldig sein, denn wie leicht ist ein junges Mädchen
+              von solch einem Verführer von Profession zu einer kindischen Unbesonnenheit verleitet,
+              aber die Unverschämtheit, mit welcher sie mich hereintreten sahe, mit welcher sie
+              meine Vorwürfe anhörte, und den Buben gegen mich zu vertreten schien, beweiset mir,
+              daß diese und alle andere Leichtfertigkeiten, von welchen man mich zur Warnung
+              benachrichtigt hat, mehr als jugendliche Thorheiten, daß es wahre Ausschweifungen,
+              wahre Verbrechen sind. –</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Sapperment!</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Erlauben Sie mir, daß ich tiefer in ihre Familie gehe. Ich bin schon seit einer
+              halben Stunde in ihrem Hause, und sah mit Verwunderung, was da vorgeht. Wenn ihre
+              Tochter eine verderbte, unglückliche Kreatur ist, so ist sie's durch das Beispiel
+              ihrer Mutter.</p>
+          </sp>
+          <pb n="41"/>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Sapperment! wie so? meine Frau ist doch –</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Eine ausschweifende, stolze, und sittsame Frau. Sie macht sich lustig auf Ihre Kosten
+              mit dem niederträchtigen Affling. Alle Weiber der Stadt, unter welchen vielleicht die
+              wenigsten besser sind, spotten ihrer. Nun gar wird sie keine Schranken mehr kennen.
+              Sie hält die Erhöhung ihres Standes für eine Berechtigung zu grössern Torheiten. Das
+              Haus wimmelt schon von Putzhändlerinnen und Galanteriekrämern, die Mägde sind
+              unterrichtet wegen der Titulatur und neuen Hauseinrichtung. Glauben Sie mir, mein
+              Freund, Ihre Beförderung ist das Urteil ihrer Schande und ihres Verderbens.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>So, so! nun weis ich, warum alles anders werden mus. Sapperment! itzt geht mir auf
+              einmal ein Licht auf.</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Oft that es mir wehe, wenn ich Sie mit ihrem guten Herzen von Arglist und Spott
+              umgeben sah; oft drang mir's auf die Zunge, Ihnen alles zu entdecken, aber das <pb
+                n="42"/> Uebel war noch versteckt, es grif ihre Ehre und Ihr Vermögen noch nicht
+              öffentlich an; da fürchtete ich, es möchte ärger werden, wenn man's berürte, diese
+              einzige Bedenklichkeit hielt mich zurück. Itzt aber, da ich gewis weis, daß die
+              Torheiten ihrer Frau und Tochter ausbrechen, und Sie in Schande und Untergang bringen
+              werden, so konnt ich nicht länger schweigen.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Lieber Zoller! Rathen Sie mir, was soll ich machen? in's Zuchthaus sezen kann ich die
+              Weibsleute doch nicht, aus dem Hause jagen auch nicht, einsperren auch nicht,
+              auszanken – auch nicht – –</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Ha! ha! was können Sie denn?</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Was ich kann? ja, was ich kann – <stage>(nachdenkend)</stage> Still! still! ich
+              hab's, Sapperment! ja ich hab's. Nicht wahr, Zoller, Sie sagten, daß meine
+              Hofkammerrathschaft mein Hauswesen ruiniren wird?</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Durch die Thorheit und Ausschweifung Ihrer Gemalinn und Tochter –</p>
+          </sp>
+          <pb n="43"/>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Gut! soll's nicht, <foreign xml:lang="lat">mi Hercle</foreign>! soll's nicht.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Achter Auftritt.</head>
+          <stage>Margreth, die Vorigen.</stage>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Gnädiger Herr! nehmen's mir's nicht übel auf, es thut mir leid, – aber – ich bitt um
+              meinen Lohn.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Wie? was?</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Meine Zeit ist rum, und ich kann nicht bleiben.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Margreth! Was fallt ihr ein? Ist sie nicht schon acht Jahre bei mir?</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Ja, eben – deswegen <stage>(kann vor Weinen nicht reden)</stage> Sind ein so brafer
+              Herr, und Herr Zoller auch – aber die Frau will alles itzt anders haben. Sie zwakt
+              überall ab in der Küche um's an den Puz zu hängen, sie traktirt uns heut wie
+              Schuhelumpen.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <stage>(weinerlich)</stage>
+            <p>O sei sie gescheid, Margreth! – denk sie, wer soll mir dann meine gute Kraftsuppe
+              machen? <stage>(das Mensch fängt an zu heulen, und Herr Klipper stimmt mit
+                ein.)</stage></p>
+          </sp>
+          <pb n="44"/>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Um Gotteswillen! Herr Hofkammerrath! schämen Sie sich doch?</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Nu, Margreth! bleib sie, bleib sie!</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Mögte gern, aber – kann nicht, die Frau machts gar zu arg, seit dem sie gnädigst ist.
+              Sie wissen doch, daß noch zwei Jahre am Lohn stehen?</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Was? Sapperment! zwei Jahre? und hab meiner Frau ihren Lohn richtig gegeben! So, so!
+              geht mir wieder ein Licht auf! <stage>(zu Zoller)</stage>
+              <foreign xml:lang="lat">recte dixisti; sed mirabilia videbis!</foreign> Gehe sie in
+              die Küche, Margreth, ich werde zu ihr hinunter kommen, sie mus mir zeigen, wie man die
+              gute Kraftsuppe kocht, leg sie einen saubern Küchenschurz für mich zu recht, und wenn
+              sie fort will, so gehe sie noch diesen Morgen; sag sie mir aber, wo sie hingeht, damit
+              ich sie kann hohlen lassen; denn, nicht wahr Margreth! wenn alles wieder auf dem alten
+              Fus ist, so kömmt sie wieder zu mir?</p>
+          </sp>
+          <pb n="45"/>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Recht gern. Ich gehe zu meiner Schwester.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Wohl! gehe sie, ich komme bald!</p>
+          </sp>
+          <sp who="#margreth">
+            <speaker>Margr.</speaker>
+            <p>Wenn und aber die Frau beisammen in der Küche sieht, so jagt sie uns mit einem
+              Feuerbrand hinaus.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Gehe sie nur! – <stage>(Margreth ab)</stage> Nun, Sapperment, nun sollen Sie sehen,
+              was ich machen werde! <foreign xml:lang="lat">mirabilia videbis!</foreign> Mus gleich
+              gehen, daß meine Hitze nicht verraucht. <foreign xml:lang="lat">Servus</foreign> Herr
+              Zoller, kommen Sie den Nachmittag her; ist Spielgesellschaft. Kommen Sie aber gewis!
+              Wir werden gewis alle recht lustig sein.</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Ihr Diener!</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Ei Sapperment! hab ja auch ein Kompliment <foreign xml:lang="fre">a la mode</foreign>
+              gelernet! So! langsam und zierlich, langsam und zierlich. Ha! ha! bin gut dafür, mein
+              alter, ehrlicher Krazfus soll euch besser gefallen, als das raffinirte Kompliment von
+              hundert Dukaten. <foreign xml:lang="lat">Servus!</foreign>
+              <stage>(beide von verschiedenen Seiten ab)</stage></p>
+          </sp>
+        </div>
+      </div>
+      <pb n="46"/>
+      <div type="act">
+        <head>Dritter Aufzug.</head>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>Frau Klipper, Herr von Affling. (Auf der recht und linken Seite des Zimmers steht
+            ein Spieltisch; in der Mitte aber ein anderer mit Kaffeeschalen, Konfekt etc.
+            besezt.)</stage>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Also glauben Sie, ein <foreign xml:lang="fre">brun de Monsieur</foreign> Taffet
+              stünde mir besser, als ein Apfelgrüner?</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Gewis, gewis, gnädige Frau! <foreign xml:lang="fre">Brun de Monsieur</foreign> ist
+              itzt die Königinn aller Farben, so, wie Sie die Königinn aller gnädigen Frauen
+              sind!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>O Sie Schmeichler! Nun so bleibts beim <foreign xml:lang="fre">Brun de
+                Monsieur</foreign>, weil Sie's wollen; aber Apropos! zum <foreign xml:lang="fre"
+                >Brun de Monsieur</foreign> geht meine neue Haube nicht.</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Sie müssen sich eine andere machen lassen.</p>
+          </sp>
+          <pb n="47"/>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Wieder fünfzehn Gulden ausgeben? was würde mein Mann sagen?</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Kommen Sie mir doch nicht mit Ihrem Manne! die Figur wird doch hoffentlich in keinen
+              Betracht kommen. Sie sind mir noch nicht auf dem wahren Tone, gnädige Frau! Wenn Sie's
+              unsern Modedamen, unsern Frauen von Welt und Lebensart gleich thun wollen, so mus sich
+              von dem Dinge, das sich Ihren Mann nennt, gar keine Erwähnung mehr geschehen; es mus
+              eine Null für Sie sein. Denn wenn Sie nach der Idee der pedantischen Ehedespoten leben
+              wollten, so müßten Sie in einer tiefen Haube gehen, müßten fein daheim bleiben, ihr
+              Hauswesen besorgen, ihre Tochter zu einem eben so albernen Ding erziehen; Sie müßten
+              ihrem Manne die Grillen vertreiben, seinen Verdrus theilen, und seine Laune geduldig
+              ertragen; Sie müßten kalt sein wie Eis gegen jeden andern, und hart wie Stal gegen
+              jeden Eindruck fremder Liebe; Sie müßten in ewigem Einerlei hinleben, und kein
+              Vergnügen hoffen, als von der armen, freundschaftlichen Liebe ihres <pb n="48"/>
+              Mannes. Dann würde man sagen: das ist eine rechtschaffne, tugendhafte Frau! wir aber,
+              wir Leute von Welt würden über Sie lachen.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Behüt mich der liebe Gott! daß ich so eine einfältige Rolle spielen wollte! das hab
+              ich doch meistens Ihnen zu danken, lieber Affling! ohne Sie wäre ich wirklich so eine
+              dorfmäßige Frau Base geworden. Wenn ich nur hundert tausend Gulden hätte! da sollten
+              Sie sehen, ob ich für die Welt tauge, aber so mus ich wohl manchmal an meinen Mann
+              denken, denn Sie wissen, wie sehr wir seine Kassa brauchen.</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Leider! daß Sie ihm diesen Hauptposten bis hieher gelassen haben.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Freilich, aber ich fürcht', er wird mir diesen Posten noch von selbst übertragen,
+              wenn er meine Konto's sehen wird. Was mich am meisten ärgert, ist, daß ich dem
+              impertinenten Ding, meiner Tochter auch so eine schöne, theure Haube habe kaufen
+              müssen.</p>
+          </sp>
+          <pb n="49"/>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Aber was wollten Sie machen? Die Ohrfeigen mußten wieder gut gemacht werden. Sein Sie
+              nur behutsam mit der kleinen Hexe, geben Sie ihr nach, halten Sie sie immer auf ihrer
+              Seite.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Das dacht ich auch. Herr Gott! wenn ich nur kein Kind hätte, der liebe Himmel
+              verschont so viele Frauen mit dieser Last – – –</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Therese. Die Vorigen.</stage>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Wo stecken Sie denn, Mamachen? hab' Sie überall gesucht.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Nu, was giebt's?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Wissen Sie, warum der Papa nicht zu Tische kam? Es war nicht Geschäfte halber, wie er
+              sagen ließ.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Warum denn?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Er war in der Küche, und kochte; die Margreth ist fort, und itzt kocht der Papa den
+              Kaffee. Er hat einen Küchenschurz <pb n="50"/> um, ein Kochlöffel an der Seite, o es
+              ist zum todtlachen!</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Ha! ha! ha! das möcht' ich sehen!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Machst du Späß, Mädchen, oder ist das alles wahr?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Alles wahr. Die Mama darf nur hinunter gehen.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Nun so woll' ich denn, daß der Dindon am Bratspieß stäcke! Wart, ich will ihm's
+              Kochen vertreiben.</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Bleiben Sie doch! warum wollen Sie ihn denn nicht kochen lassen?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Kochen! Ei wo denken Sie hin? Gerade, als wenn Ich in die Küche gehen, und eine Suppe
+              machen wollte.</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Ha! das ist was anders! für Sie, für eine Frau von Welt wär es höchst unanständig,
+              aber für den Mann mags wohl angehen. Er will Ihnen heute eine Lust machen, es wäre
+              unbarmherzig, wenn Sie über seinen Spas nicht lachen wollten.</p>
+          </sp>
+          <pb n="51"/>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Ja wohl, Mama! Sie müssen ihm seine Freude nicht verderben! Sie werden sich buklicht
+              lachen, wenn Sie ihn sehen.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Kann mir schon einbilden, wie er aussieht. Aber wie der Mann heute auf so einen
+              Faschingsgedanken geräth?</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Lauter Muthwille! Lassen Sie ihm nur die Hörner ein Bischen abstossen.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Meinetwegen! Wenn er nur heraufkäme! er wird doch den Narren nicht vor der
+              Gesellschaft machen wollen?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Ja Apropos! das hätt' ich bald vergessen. Die Frau von Wadel und die Schoberinn
+              lassen sich exkusiren, ein plözliches Kopfwehe hat sie überfallen.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Beide zugleich?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Ja freilich. Verstehen Sie denn nicht, was das für ein Kopfwehe ist?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Ha! sie haben's gehört! also purer Aerger! o bravo! o gebt nur Acht, ihr Dämchen, es
+              wird noch besser kommen. Ich hab sie doch nur eingeladen, um sie zu ärgern, <pb n="52"
+              /> nun mögen sie bleiben, desto besser. Wir können unser Spielchen doch machen; Zoller
+              kömmt – –</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Zoller schwerlich.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Warum? Er kommt ja alle Tage.</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Ich hab ihm aber heut den Abschied gegeben.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Was?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Die Mama sagte ja selbst, er wäre keine Partie für mich.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Ich hab aber die Sache mit Herrn von Affling überlegt, und er sagt, zum heurathen
+              wär' Zoller ein Mann wie gewünscht, ja wir wollten und eben beratschlagen, wie die
+              Sache je eher, je lieber zu Stande gebracht werden könnte. Siehst du, Theresel! da
+              bist du zu voreilig gewesen. Aber es wird sich schon wieder geben; deine Finesse weis
+              das schon zu machen.</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Hm! ich zweifle, denn ich habe ihm meine Meinung auf eine Art gesagt, die –</p>
+          </sp>
+          <pb n="53"/>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Laß hören, was sagtest du?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Herr Zoller, sagte ich – versteht sich, daß ich nicht gleich so anfieng; ich ließ
+              mich erst dahin bringen, daß ich es sagen mußte – Herr Zoller! mit uns hört alles auf,
+              sie sind meiner zu unwerth.</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Der Teufel! das ist stark.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Wahrhaftig zu stark. Und er?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Machte einen <foreign xml:lang="fre">Serviteur</foreign>, und gieng.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Nun so ist alles aus. Ei! ei! ei!</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Wer wird sich auch so was sagen lassen? Aber wir vergessen ja unsern Koch.</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Warten Sie, ich will ihn rufen, und dann Mama will ich statt des groben Zollers den
+              Monsieur Leger zum Spiel invitiren lassen, so sind wir auch vier, und viere <foreign
+                xml:lang="fre">come il faut</foreign>! <stage>(ab)</stage></p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Da ist unser Projekt schon wieder nichts! daß einem die Kinder doch immer einen
+              Strich durch die Rechnung machen! <pb n="54"/> Auch bei der besten Erziehung ist man
+              davor nicht sicher. Itzt steckt ihr wieder der Leger im Kopfe. Der ist gewis Schuld,
+              daß sie dem Zoller so grob begegnet ist.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Herr und Frau Klipper, Therese, Herr von Affling.</stage>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <stage>(In einem alten Kamisoll, einen Küchenschurz um, und den Kochlöffel an der
+              Seite)</stage>
+            <p>Was befehlens, gnädige Frau!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Ei du Närrchen! was fällt dir denn ein? bist ja dein Lebtag nicht so spassicht
+              gewesen?</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Ha! ha! ha! das ist exzellent!</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Nicht wahr? <stage>(lacht)</stage></p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Die gnädige Frau hat ja gesagt, es soll alles anders werden. Das impertinente Mensch,
+              die Margreth, die mir schon acht Jahre treu gedienet hat, wollte das Anders werden
+              nicht verstehen, sie ist fort.</p>
+          </sp>
+          <pb n="55"/>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Was? So im Stillen auf und davon?</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Ei bei Leibe, Schazel! nicht so im Stillen auf und davon; hab ihr zwei Jahre Lohn
+              bezalen müssen, den ich dir schon einmal gegeben habe. Hast Recht gehabt, Franzel, mus
+              alles anders werden. Spar' du den Lohn auf Häubchen, Schlenderchen, Blümchen,
+              Bänderchen <foreign xml:lang="lat">et caetera</foreign> dafür. Mus alles anders
+              werden. Kochen kann ich, das habt ihr geschmeckt, frisiren kann ich auch, das werdet
+              ihr fühlen, hab schon eurem Friseur sagen lassen, daß wir ihn nicht mehr brauchen.
+              Sapperment! Schazel! mit meiner heutigen Beförderung sind mir tausenderlei Talente
+              zugeflogen. Ich kann mit dem Kochlöffel, dem Friesierkam und Kehrbesen gleich
+              geschickt umgehen; kann alle Küchen und Kammerdienste versehen. Auch den Ihrigen, Herr
+              von Affling!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Hör, Mann! dein Spaß ist – –</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Pst! Pst! nur nenn' mich nicht Mann! denn <foreign xml:lang="lat">mi Hercle! Si virum
+                induere <pb n="56"/> vellem! vos ego! sed motos praestat componere
+              fluctus</foreign>.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <stage>(leise zum Herrn von Affling)</stage>
+            <p>Itzt wird er wild! muß ihn nur plaudern lassen.</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <stage>(für sich)</stage>
+            <p>O wehe! lateinisch!</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Du bist eine wahre Sibille, Franzel! Hast gesagt, wird alles anders werden; ist alles
+              anders worden. Aber das sag ich, Schazel! ich koche nur für dich, und dein gnädiges
+              Fräulein. Für keinen andern Menschen. <stage>(sieht den Herrn von Affling an)</stage>
+              Für keinen andern Menschen, Sapperment!</p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>O ich danke für ihre Suppe.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Und ich danke für ihr Stük Rindfleisch. Du Mädel wirst doch nicht prätentiren, daß
+              ich die Teller spülen soll, die du beschmiert hast. Du gehest in die Küche, und
+              spülest.</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Ich, Papa!</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Ich, Papa! Nein, Ich bin der Papa, nicht Du. Oder ja, du sollst der Papa sein, wenn
+              du die Konto's zalen willst. <pb n="57"/> Gehe nur, liebes Fräulein! Ich schicke dir
+              den Monsieur Leger, kannst ihn wieder zärtlich umarmen.</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Nun weis ich, wer den Papa aufgehezt hat! der grobe Zoller, Mama!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Wart! den Flegel will ich – –</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Nu, nu, er wird bald kommen. Nicht wahr, lieber Schaz! liebe Prophetin! ist alles
+              anders worden?</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Ja vorhin warst du ein Tropf, itzt bist du ein Narr.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Wieder gesprochen wie eine Sibille! vorhin war ich ein Tropf <foreign xml:lat="lat"
+                >per se</foreign>, itzt bin ich ein Narr <foreign xml:lat="lat">per te</foreign>!
+              aber nur Geduld, das närrische kömmt nach – da ist er.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <stage>Zoller. Die Vorigen.</stage>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p><foreign xml:lat="lat">Servus!</foreign> nicht wahr, itzt ist alles anders geworden?
+              hab ich nicht gesagt: <foreign xml:lat="lat">mirabilia videbis!</foreign></p>
+          </sp>
+          <pb n="58"/>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Es ist ein Bedienter draus, der mit ihnen sprechen will.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Soll herein!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>In dem Aufzug willst dich sehen lassen? Um alles in der Welt nicht. <stage>(Sie will
+                ihn halten)</stage></p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <stage>(Schlägt ihr mit dem Kochlöffel auf die Finger)</stage>
+            <p>
+              <foreign xml:lat="lat">Noli me tangere.</foreign>
+            </p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Ach! <stage>(lauft wie eine Furie auf Zoller)</stage> das hab ich Ihnen zu danken,
+              Sie erzgrober, böser Mensch! Sie haben meinen Mann tollsinnig gemacht, und die Ruhe im
+              Hause gestört –</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Madame –</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <stage>(noch zorniger)</stage>
+            <p>Madame auch noch! suchen Sie sich eine Madame! ich bin ihre Madam nicht, Herr
+              Grobian! Gnädige Frau heiß ich, und nicht Madame –</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <stage>(kömmt mit dem Bedienten)</stage>
+            <p>He! Still! da kömmt der Bothe des Friedens. Nu!</p>
+          </sp>
+          <sp who="#bediente">
+            <speaker>Bediente.</speaker>
+            <p>Das hab ich Ihnen einzuhändigen von seiner Excellenz. <stage>(giebt ihm ein
+                versiegeltes Papier)</stage></p>
+          </sp>
+          <pb n="59"/>
+          <sp who="#frau_klipper #therese">
+            <speaker>Frau. Therese.</speaker>
+            <p>Das Dekret!</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Richtig! Das Fiat, daß alles anders werden soll. – Machen Sie mein unterthäniges
+              Kompliment an seine Excellenz.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Wart er, da ist für ein Glas Wein. Sag er nur Niemand, daß er meinen Mann in dem
+              Aufzug gesehen hat, es ist nur ein Familienspaß.</p>
+          </sp>
+          <sp who="#bediente">
+            <speaker>Bediente.</speaker>
+            <p>Sorgen Euer Gnaden nicht. <stage>(ab)</stage></p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Nu Schatz! lies vor.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Meine Augen sind mir trübe vom Feuer! Da lesen Sie! <stage>(reichts dem Herrn von
+                Affling hin)</stage></p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Ich bitte. Ich kann das Geschreibe nicht lesen.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Auch nicht schreiben? Ei können doch Rechnungen machen. Herr Zoller! lesen Sie
+              doch!</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Ich? <stage>(nimmts verdrüslich)</stage></p>
+          </sp>
+          <pb n="60"/>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <stage>(zum Herrn von Affling und Theresen)</stage>
+            <p>Sehet, wie er sich ärgert der Heuchler! itzt lernt man ihn kennen.</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <stage>(liest)</stage>
+            <p>An den Herrn Sekretair Klipper.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>He! Aufgemerkt! <stage>(Frau Klipper und Therese stehen auf den Zehen hinter Zoller
+                und horchen fröhlich und aufmerksam, indem er aber liest, zittern sie zurück, und
+                ihre Mienen ändern sich.)</stage></p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>»Wenn es an dem ist, wie Sie mir in ihrem <foreign xml:lang="lat">Pro
+                Memoria</foreign> bündig vorstellen, daß ihre Beförderung den unfehlbaren <foreign
+                xml:lang="fre">Ruin</foreign> ihres Hauswesens nach sich ziehen würde, hab ich
+              Seiner Durchlaucht mit Vorlegung ihres <foreign xml:lang="lat">Pro Memoria</foreign>
+              darüber <foreign xml:lang="lat">proponirt</foreign>, und das gnädigste <foreign
+                xml:lang="lat">Resolutum</foreign> ist, daß in Rücksicht ihrer langjährigen Dienste
+              und ihrer vorgebrachten Motiven dem jungen Zoller, wenn er ihre Tochter zu heurathen
+              gesonnen wäre, die <foreign xml:lang="lat">vacante</foreign> Hofkammerathsstelle
+              ertheilt werden solle.« Was ist das? Was haben Sie gemacht?</p>
+          </sp>
+          <pb n="61"/>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>
+              <foreign xml:lang="lat">Mirabilia!</foreign>
+              <stage>(Frau Klipper fält ohnmächtig in einen Sessel, Therese ist wie vom Blitz
+                gerürt, und Affling kaut an den Nägeln.</stage>
+            </p>
+          </sp>
+          <sp who="#herr_von_affling">
+            <speaker>Hr. v. Aff.</speaker>
+            <p>Hier ist nichts mehr für mich. Ich werde mir die Ohnmacht zu Nutze machen, und davon
+              schleichen.</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>So sonderbar hab ich noch nichts erlebt! Ich kann mich von meinem Erstaunen nicht
+              erhollen.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Ei! erstaunen Sie ein andermal! Itzt gratulir ich, Herr Hofkammerrath!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Was? Er Hofkammerrath! der Bösewicht! Nein, nimmermehr! Ich laufe nach Hof, schreie,
+              jammere, weine, heule, bis mir der Fürst meine Stelle wieder giebt. Gleich!
+              gleich!</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Sapperment! Schazel bleib da: wirst doch nicht so nach Hofe gehen, so in einem
+                <foreign xml:lang="fre">Pequaige</foreign>!</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Wahrhaftig! ich bin ausser mir, daß ich daran nicht dachte; aber wart' nur; Morgen,
+              morgen!</p>
+          </sp>
+          <pb n="62"/>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Hören Sie, gnädige Frau! ich kann den Schritt des Herrn Klipper nicht loben.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>O es ist schändlich! schändlich! Sie selbst müssen's gestehen.
+              <stage>(weint)</stage></p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Und glauben Sie nicht, daß ich das Geringste davon wußte.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Kein Wort. Hab alles selbst erfunden.</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Es befremdet mich eben so sehr, als Sie, daß man mich ohne mein Wissen zu einer
+              Stelle vorschlägt, die ich nicht gewünscht habe, und nicht annehmen kann.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Wie? <stage>(etwas besänftigt)</stage> Sie wollten's nicht annehmen?</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Was! Sapperment! Sie wollen mein Schwiegersohn nicht werden? <stage>(Therese
+                schleicht auch fort)</stage></p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Verzeihen Sie, ich kann nicht heucheln, und die Sache ist zu wichtig, als daß ich
+              nicht mit Ernst und Warheit meine Meinung sagen sollte. Ihre Freundschaft wird <pb
+                n="63"/> mir immer schätzbar sein, aber ihr Schwiegersohn kann ich nicht werden, –
+              nicht um ein Kaiserthum.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p><foreign xml:lang="lat">O mi Deus!</foreign> könnt ich nur auch in Ohnmacht fallen!
+              Itzt lauf nach Hofe, schreie, jammere, weine, heule, daß ein ehrlicher Mann deine
+              Tochter nicht zur Frau haben will. <stage>(wirft sich in den Sessel)</stage></p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Hat Sie das Betragen meiner Tochter von heute Morgen so mächtig verdrossen? Ich mus
+              Ihnen doch gestehen, daran bin ich meistens Schuld.</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Leider! leider! die Erziehung, die Sie ihrer Tochter gaben –</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Ist die beste in der ganzen Stadt. Gehen Sie durch alle Klassen, ob irgend ein
+              Fraulein so geschickt Klavier spielt, singt, zeichnet, tanzt und französisch
+              spricht!</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Mein Gott! mein Gott! Ist das die ganze Erziehung? Kein Wort vom Herzen, kein Wort
+              von der Denkart, kein Wort von jener Bildung der Seele, die allein glücklich machen
+              kann. Sie wissen, wie sehr <pb n="64"/> mich der Gesang und das Spiel ihrer Tochter
+              entzückte, meine natürliche Liebe zur Musik half dem Reiz ihrer Gestalt mein Herz
+              besiegen, ihr Besitz war mein einziger Wunsch, denn ich glaubte, daß ihr inneres eben
+              so schön, eben so gut gebildet, mit Grundsätzen von Pflicht und Tugend, mit edlen
+              Empfindungen verziert wäre. Aber nach und nach ward ich vom Gegentheil überzeugt, und
+              heut erhielt ich den überzeugendsten Beweis davon.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>O, ich möchte in die Erde sinken!</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Nicht wahr, Schatzel! der pfeift dir eins vor.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <stage>Therese. (weinend)</stage>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Ach, Mama! Mama! Es ist schon alles bekannt. Der niederträchtige Affling erzält die
+              ganze Historie einem jeden, der ihm begegnet. Man lacht und spottet unser.</p>
+          </sp>
+          <pb n="65"/>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>O, die Schande überleb' ich nicht! lieber! lieber Mann! ich bitte dich um
+              Gotteswillen, geh und mach die Sache wieder gut!</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Sapperment! das ist nicht möglich. Was brauchst du dich zu schämen? Ich hab ja die
+              Stelle erhalten, und ich hab sie wieder zurück gegeben.</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Ich wüßte ein Mittel, wie Sie die Achtung der Rechtschaffenen erhalten, und ihre
+              Feinde und Spötter zu Schanden machen könnten.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Lieber Herr Zoller! alles, alles will ich thun.</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Verachten Sie den niederträchtigen Affling, und alle seines gleichen, wie sie's
+              verdienen, werden Sie eine treue, sittsame Gemalin, und brafe Hausmutter – –</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Ja gern, gewis gern! – aber <stage>(weinend)</stage> nicht mehr gnädige – –</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Ja, ja, Schatzel! sollst meine gnädige, gnädigste Frau sein, sollst geehrter, <pb
+                n="66"/> geliebter, glücklicher sein als tausend Hofkammerräthinnen. Werde nur das,
+              was Herr Zoller sagt, und wenn du's bist, so will ich hingehen und sagen: itzt macht
+              mich zum gnädigen Herrn, denn ich hab eine brafe Frau.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Nun, lieber Mann! aber halt Wort!</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Ja die Mama kann wohl in ihren Jahren damit zufrieden sein, aber ich, ich bin
+              beschimpft, die Leute werden mit Fingern auf mich deuten. Ich will lieber alles
+              werden, als wieder Mamsell Klipper. O Papa! ich bitte Sie fußfällig, lassen Sie mich
+              heurathen, damit ich von der Welt komme!</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Recht gern, wer mag dich denn?</p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <p>Leger liebt mich. Sie werden mich und ihn glücklich machen.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Was? Einen solchen Menschen?</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Nu, Schatzel! was willst machen? der Springer ist in ihrem Unglück <pb n="67"/>
+              Schuld, er soll sie haben. Sollst ihn haben, wär's auch ein Pfannenflicker, sollst ihn
+              haben, Fräulein! Sieh, da kömmt ja dein Herzallerliebster, man meint, der Henker sagt
+              ihm's immer, wenn er kommen soll. Schon wieder wie gerufen, Monsieur Leger! kommen Sie
+              her da.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Sechster Auftritt.</head>
+          <stage>Monsieur Leger. Die Vorigen.</stage>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leg.</speaker>
+            <p>Aber Sie müssen nicht wieder davon laufen! tausend andere wären froh, wenn sie das
+              Glück haben könnten, von mir eine Lektion zu bekommen, und Sie – –</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Nu, nu! mit der Lektion hat's noch Zeit. Sagen Sie mir itzt nur, nicht wahr, Sie
+              lieben meine Tochter?</p>
+          </sp>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leg.</speaker>
+            <stage>(blickt spöttisch auf Zoller)</stage>
+            <p>Hat man uns schon verrathen? Nun, so hören Sie mein Geständnis: ja ich liebe sie.
+              Konnte ich so viele Reize sehen, und kalt dabei bleiben? konnte ich meinem Herzen
+              verbieten, <pb n="68"/> zu empfinden? Konnte ich dem Sturm gebieten, daß er nicht
+              tobe, dem Wind, daß er nicht heule, dem Donner, daß er nicht krache, dem Feuer, daß es
+              nicht brenne, dem Regen – –</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Sapperment! ja lassen Sie geschwind regnen, sonst brinnt mir mein Haus ab von ihrer
+              Hitze. Nu, ich will dem Krieg der Elemente balb ein Ende machen. Ich gebe ihnen meine
+              Tochter zur Frau.</p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <stage>(leise)</stage>
+            <p>Pfui! so hinwerfen! hättest ihn erst sollen drum bitten lassen.</p>
+          </sp>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leg.</speaker>
+            <stage>(verlegen)</stage>
+            <p>O Glück! o unaussprechliches Glück! – Aber – aber – heurathen könnt' ich nicht,
+              wenn's auch ihr Ernst wäre.</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Nicht heurathen! Sapperment! und könnten sie lieben, küssen, umarmen.</p>
+          </sp>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leg.</speaker>
+            <p>Ach! das kann ich, das werd ich immer können, aber heurathen ist was ganz anders.
+              Sehen Sie! unser einer macht <pb n="69"/> heut zu Tage diese Betise gar nicht mehr.
+              Ich lebe in der feinen Welt, und sollte diesen Altvaterstreich begehen? Alle meine
+              Schülerinnen, wenn sie nur ein bischen menschlich aussehen, müssen schon bei der
+              dritten Lektion verliebt sein. Ich allein weis, was für <foreign xml:lang="fre"
+                >pas</foreign> dazu gehören bei der ersten Dame und beim Stubenmädchen. Meine
+              Lektionen dringen vom Knöchel des Fußes durch alle Adern, Muskeln, Nerven, Fibern
+              schnell, schnell herauf bis zum Herzen. Kein Vater, keine Mutter, kein Aufseher steht
+              mir im Wege; denn je zärtlicher, schmachtender, frecher, ausgelassner das Töchterchen
+              wird, desto mehr Ehre hab ich davon, für desto vollkommner halten sie die Tänzerinnen,
+              und sie haben recht, denn <foreign xml:lang="fre">ma foi!</foreign> es ist nicht
+              möglich ohne Liebe einen graziösen Menuetschritt zu lernen. Sie sehen also, daß meine
+              Liebe zu ihrer Fräulein Tochter nichts anders, als das gewöhnliche Geheimnis meiner
+              Kunst war, und wenn sie auch ein paar <foreign xml:lang="fre">pliées</foreign> mehr
+              machte, als andere, so kann sie sich auch flattiren meine beste Schülerin zu sein.</p>
+          </sp>
+          <pb n="70"/>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Ha! gratulir! Fräulein Tochter! <foreign xml:lang="lat">gratulor ex animo: et mihi
+                gaudes.</foreign></p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Marsch! niederträchtiger Verführer aus meinem Hause.</p>
+          </sp>
+          <sp who="#monsieur_leger">
+            <speaker>M. Leg.</speaker>
+            <p>So! – nun gleich, gleich! bin so nicht gern, wo vom Heurathen die Rede ist. Ihr
+              Diener. <stage>(ab)</stage></p>
+          </sp>
+          <sp who="#therese">
+            <speaker>Therese.</speaker>
+            <stage>(springt auf)</stage>
+            <p>Sind das deine Betheuerungen, deine Schwüre! Falscher! Betrüger! Verräther!
+                <stage>(lauft ihm nach)</stage></p>
+          </sp>
+          <sp who="#frau_klipper">
+            <speaker>Frau.</speaker>
+            <p>Ich muß ihr nach! sie krazt ihm sonst auf der Strasse die Augen aus. Armes Kind! so
+              wohl erzogen, und so unglücklich. <stage>(ab)</stage></p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>Ich empfehle mich, Herr Klipper!</p>
+          </sp>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Sie mögen also mein Mädchen nie?</p>
+          </sp>
+          <sp who="#zoller">
+            <speaker>Zoller.</speaker>
+            <p>O sie ist mir zu wohlerzogen. <stage>(ab)</stage></p>
+          </sp>
+          <pb n="71"/>
+          <sp who="#klipper">
+            <speaker>Klipper.</speaker>
+            <p>Sapperment! das ist ja noch toller, als eine Komedie! da kriegt doch das Mädchen am
+              Ende einen Mann. Gut, daß es noch Klöster giebt! Nie konnte man sie besser brauchen,
+              als bei unsrer Zeit. Morgen dahin mit ihr! o könnt' ich itzt mit diesem Küchenschurz,
+              mit diesem Kochlöffel in der Hand auf unserm Theater stehen, wollt' mich herzlich gern
+              auslachen lassen, wenn nur mein Beispiel etwas zu denken gäbe <emph>manchem Vater,
+                mancher Mutter, manchem Fräulein Wohlerzogen</emph>.</p>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
