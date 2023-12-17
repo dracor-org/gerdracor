@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000658" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Ramirus</title>
+        <title type="sub">in einem Aufzuge</title>
+        <author>
+          <persName>
+            <forename>Otto</forename>
+            <surname>Sager</surname>
+          </persName>
+          <idno type="wikidata">Q94814224</idno>
+          <idno type="pnd">1050781767</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Google Books</name>
+          <idno type="URL">https://books.google.com/books?id=rNVNAAAAcAAJ&amp;pg=PA101</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">Franz Gaßer (= <author>Otto Sager</author>): <title level="a"
+              >Ramirus in einem Aufzuge</title>. In: <title level="s">Franz Gaßers Briefe über die
+              Freygeister nebst einem kleinen poetischen Anhang, zur Bildung edler Herzen</title>.
+              <pubPlace>Augsburg</pubPlace>: <publisher>Rieger</publisher>
+            <docDate>1775</docDate>, S. <biblScope unit="page" from="101" to="128"
+              >101–128</biblScope>.</bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="melinde" sex="FEMALE">
+            <persName>Melinde</persName>
+          </person>
+          <person xml:id="ramirus" sex="MALE">
+            <persName>Ramirus</persName>
+          </person>
+          <person xml:id="alcmeon" sex="MALE">
+            <persName>Alcmeon</persName>
+          </person>
+          <person xml:id="sohn" sex="MALE">
+            <persName>Sohn</persName>
+          </person>
+          <person xml:id="tochter" sex="FEMALE">
+            <persName>Tochter</persName>
+          </person>
+          <person xml:id="polydor" sex="MALE">
+            <persName>Polydor</persName>
+          </person>
+          <person xml:id="philind" sex="MALE">
+            <persName>Philind</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#ramirus #melinde"/>
+            <relation name="parent_of" active="#ramirus #melinde" passive="#sohn #tochter #philind"/>
+            <relation name="siblings" mutual="#ramirus #polydor"/>
+            <relation name="associated_with" active="#alcmeon" passive="#ramirus"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2023-12-17">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1775">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000658"
+        passive="http://www.wikidata.org/entity/Q123824760"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <pb n="101"/>
+    <front>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">Ramirus</titlePart>
+          <titlePart type="sub">in einem Aufzuge.</titlePart>
+        </docTitle>
+      </titlePage>
+      <set>
+        <p>Der Schauplatz ist eine mit Gebüschen umgebne einsame Gegend, vor der Hütte des
+          Ramirus.</p>
+      </set>
+      <pb n="102"/>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem><role>Ramirus,</role>
+            <roleDesc>ein verunglückter von Adel.</roleDesc></castItem>
+          <castItem><role>Melinde,</role>
+            <roleDesc>dessen Gemahlinn.</roleDesc></castItem>
+          <castGroup>
+            <castItem><role>Sohn</role></castItem>
+            <castItem><role>Tochter</role></castItem>
+            <roleDesc>Kinder des Ramirus.</roleDesc>
+          </castGroup>
+          <castItem><role>Polydor,</role>
+            <roleDesc>Ramirs Bruder.</roleDesc></castItem>
+          <castItem><role>Philind,</role>
+            <roleDesc>Polydors Sohn.</roleDesc></castItem>
+          <castItem><role>Alcmeon,</role>
+            <roleDesc>vertrauter des Ramirs.</roleDesc></castItem>
+        </castList>
+      </div>
+    </front>
+    <pb n="103"/>
+    <body>
+      <div type="scene">
+        <head>Erster Auftritt.</head>
+        <stage>Melinde allein.</stage>
+        <sp who="#melinde">
+          <speaker>Melinde.</speaker>
+          <p>Bald wird der Hunger unserm Jammer ein Ende machen! so dürftig, so arm lebten wir seit
+            fünfzehen Jahre nicht, die wir in diesem Elende, von jedem Ungemach bestürmt,
+            durchschleppten. Nichts ist im Hause; und wenn die guten Kinder, die jetzt im Gebürge
+            Früchte suchen, leer zurück kommen, dann – entsetzlicher Gedanke! – dann wird der beste
+            Gemahl ohne erhohlte Kräfte wieder zur Arbeit gehen müssen. Seine Großmuth findet zwar
+            immer neue Tröstungen, auch dann, wenn uns alle Hülfe fern zu seyn scheinet; aber wenn
+            die armen Kinder zu ihm seine Hände ringen, wenn sie mit gebrochner Stimme zu ihm um
+            Brod schreyen, Himmel! wie das sein zärtlich Herze zerschneiden muß, wenn er diese
+            Unschulden so darben sieht! – so lange wird doch der Himmel dem Flehen der Tugend nicht
+            geschlossen seyn! O! erweichte er doch einmal das Herz des Orgons, daß es unsern Jammer
+            mit mehrerer Mildigkeit begränzte! <pb n="104"/> fünfzehen Jahre bau't Ramirus ihm das
+            Feld, und die Belohnung sind Drohungen und Vorwürfe: wie können doch seine geitzige
+            Blicke uns so schmachten sehen! <stage>(sie weint)</stage> Ich will hingehen, und ihm
+            all unser Leid erzählen, hingehen will ich – vielleicht rührt den kargen Filz das
+            Gemälde unseres Elendes, vielleicht rührts ihn! – doch – da kömmt mein Gemahl.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Zweyter Auftritt.</head>
+        <sp who="#melinde">
+          <p>Sey mir gegrüßt mein Geliebter! <stage>(sie weint)</stage></p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramir:</speaker>
+          <p>sey mir gegrüßt meine Geliebte! Himmel! du weinest?</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde.</speaker>
+          <p>Freund! wer sollte nicht weinen; unser hilfloses Leben; unsre Dürftigkeit, und ich? –
+            Ja ich, ich bin davon die Ursache, Gott! ich bin die Ursache!</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramir:</speaker>
+          <p>Du malest dir das Uebel immer gröser, als es ist. Quäle mich mit solchen Vorwürfen
+            nicht, die meine Zärtlichkeit zu sehr beleidigen. Was wäre mir Reichthum und Ehre ohne
+            dich, mein <pb n="105"/> Kind? O laß dir, laß dir unser Schicksal erträglicher fallen!
+            Gott wacht für die geringste Geschöpfe, und ohne seinen Willen fällt kein Sperling von
+            dem Dach. Auch der Tugend wird er endlich ihren Lohn bestimmen, nur wider seine weise
+            Vorsicht sollen Sterbliche nicht murren. Dank sey ihm, daß er meinen Händen Kräfte zur
+            Arbeit schenkt, die uns noch länger durchschleppen kann, so gering sie auch Orgons Geitz
+            lohnet. Nein, liebste Melinde! nein immer so wird er uns nicht schmachten lassen;
+            vielleicht ist seine Hülfe uns dann am nähesten; wenn die stürmende Wellen jedes Elendes
+            uns zu verschlingen dräuen. Vielleicht – süsse Hoffnung – vielleicht wünscht der
+            versöhnte Vater seinen Sohn schon wieder in seine Arme zurück, dessen ganzes Verbrechen
+            darinnen bestunde, daß er eine Person liebte, die jede Tugend, nur keinen Reichthum,
+            besaß. Fasse dich, Melinde, fasse dich; deine Thränen hemmen nicht unser Elend.</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde:</speaker>
+          <p>deine Großmuth übersteigt jedes Ungemach unseres mühsamen Lebens, und giebt immer
+            meiner Schwachheit neue Kräfte. Aber wenn du <pb n="106"/> fern im Felde arbeitest,
+            dann, Himmel! dann umhüllen die traurigen Bilder unseres Unglücks meine bebende Seele;
+            dann schrecken mich die Schatten jener Nacht – jener grauen-vollen Nacht – da wir vor
+            dem uns verfolgenden Zorne deines Vaters flüchteten: und was mir mein Herz zerschmelzen
+            möchte! dann schreye ich wehmüthig, daß Steine sich meines Winselns erbarmen sollten,
+            unserm Erstgebohrnen, der sich vor zwölf Jahren im Gebürge verlohren, vielleicht von
+            einer Bestie zerrissen, oder vor Hunger verschmachtet ist; heute wirst du, kommen die
+            guten Kinder nicht bald, oder doch ohne Früchte zurück; hungernd zur Arbeit kehren
+            müssen, weil wir nichts zu essen haben; ach! mein Geliebtester, wie mich das quälen muß!
+            du könntest ein Liebling deines Vaters, hättest du nur deine Hand einer Würdigeren
+            geschenkt, im Ueberflusse leben, jetzt mußt du selbst bey härtester und ungewohnter
+            Arbeit schmachten, und, was mehr ist, unsere unschuldige Kinder so darben sehen. So fern
+            von aller Versöhnung mit ihm, daß du dem erzörnten keine Spur unseres Aufenthalts
+            entdecken darfst, um nicht von meiner Seite gerissen zu werden. O! mein <pb n="107"/>
+            Geliebtester, wenn der Schmerz mich ins Grabe drückt, <stage>(sie weint)</stage> dann
+            weine bey dem Moder meiner Hülle noch eine mitleidge Zähre, und fluche dem Staub deiner
+            treuen Melinde nicht mit dem Vorwurf: daß sie die Quelle deines Elendes war!</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramir:</speaker>
+          <p>Himmel! so eines Lasters hältst du mich fähig! dich sollte ich die Quelle meines
+            Elendes nennen? – O! Melinde! geliebteste Freundinn, wie würde mich das noch im Tode
+            kränken! weine nicht; Thränen verbittern nur das Andenken, daß wir hülflos sind. So groß
+            das Elend immer ist, so kanns doch eine gesetzte Tugend noch erträglich machen. Ihre
+            Prüfung fodert Starkmuth und Standhaftigkeit; diese können die Dauer jedes Ungemachs
+            versüssen. Martere dich nicht mit Vorwürfen, von denen mein Herz nichts weiß. Nie fühl
+            ich unser Unglück schmerzlicher, als wenn dein Winseln mich dessen erinnert; die
+            weiseste Vorsicht wird uns nicht immer so schmachten lassen, nein! Melinde, Tugend und
+            Unschuld wird sie nicht immer so schmachten lassen! siehe, diese Hände haben mit
+            mühsamer Arbeit uns fünfzehen Jahre durchgeschleppt, und sie werdens noch länger <pb
+              n="108"/> thun können, wenn sie dein Kleinmuth nicht entkräftet;</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde.</speaker>
+          <p>Zärtlicher Ramirus! der Himmel lohne deinen Großmuth, mit dem du meine Schwachheit so
+            beschämest; verzeihe mirs, nie will ich wieder mit Seufzen deine Gelassenheit, mit der
+            du dieses trostlose Leben duldest, bestürmen, aber – Ramirus – das künftige Schicksal
+            unsrer Kinder? – wie bange wird mirs, wenn ich denke, was einst aus ihnen werden
+            soll!</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramir:</speaker>
+          <p>Die Tugend ist die schönste Erbschaft, die rechtschaffene Eltern ihren Kindern
+            hinterlassen sollen; schmückt sie dieses Kleinod des Himmels, sorge nicht, Melinde, nein
+            sorge nicht; so wird ihr künftiges Schicksal glücklich genug seyn.</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde:</speaker>
+          <p>das ist immer mein sehnlichster Wunsch. Gott! laß diese Unschulden nicht, wie uns, im
+            Elende modern! sehe ich sie einmal glücklich, dann will ich im größesten Sturme jedes
+            Leides, wie ein Ceder im tobenden Nord, immer aufrecht stehen bleiben! – aber,
+            Geliebtester, noch kommen die guten Kinder nicht, und so wirst du ungegessen wieder ins
+            Felde gehen müssen.</p>
+        </sp>
+        <pb n="109"/>
+        <sp who="#ramirus">
+          <speaker>Ramir:</speaker>
+          <p>Laß es gut seyn, Geliebteste, meine Arbeit kömmt mir so sauer nicht, wenn nur du und
+            Kinder nicht mangeln. Ich hoffe auf unsern einzigen Freund Alcmeon; so hart auch sein
+            Schicksal in Orgons Dienste ihm fällt, so war er doch immer mitleidig gegen uns. Heute
+            wird er mich zur Arbeit abhohlen.</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde:</speaker>
+          <p>O ja! der ehrliche, der mitleidige Alcmeon! oft wenn wir jammerten, gab seine Hülfe uns
+            wieder Trost. Jetzt will ich gehen, auf den großen Hügel dort will ich hingehen, und
+            laut umher rufen, ob sie mich hören, die guten Kinder; du wartest auch hier meiner,
+            Ramirus?</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramirus:</speaker>
+          <p>ja, Melinde, deiner warte ich –</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Dritter Auftritt.</head>
+        <stage>Ramirus allein.</stage>
+        <sp who="#ramirus">
+          <p>Himmel! wenn ich durch Verbrechen deinen Zorn gegen mich gereitzet, dann wälze doch das
+            Gebürge unseres Elendes auf meinen Nacken hin! dann laß es mich allein fühlen, in seiner
+            ganzen Größe fühlen! <pb n="110"/> nur meine Melinde, nur meine unschuldigen Kinder
+            nicht, Gott! nur diese laß es nicht fühlen! – welche Verstellung, wie bitter kam sie
+            mir! mein Mund tröstete die traurende Gattin; indeß da meine bebende Seele voll des
+            Grams, voll des Jammers über dieses hilflose Leben ware. Mein Kammer, hätte sie ihn in
+            den Blicken und Minen gelesen, in das Grab würde er sie gedrücket haben, dieser nagende
+            Kummer! Vater – o Vater! wenn du noch athmest, würdest du jetzt deinen Ramirus sehen,
+            dann müßte dieser tragische Auftritt dein väterlich zärtliches Herze zerschmelzen; wo
+            ehe die Furchen des Zorns ihme Rache droheten, da würden jetzt auf der Fläche des
+            Antlitzes Mitleid und Liebe Vergebung ihm zu lächeln. – O Vater! nur solltest du ihn
+            sehen, deinen Ramirus, welchen du ehemals so zärtlich geliebet hast! und was ist jetzt
+            der Gegenstand deines Zornes? eine arme, unschuldige Melinde. Die würdest du mir noch
+            rauben können? wenn ich zu deinen Füssen hinrollte, und für sie und mich deine
+            Versöhnung flehete? Furcht und Hofnung wechseln in der ängstlichen Seele! wenn er sie
+            mir raubte, wenn <pb n="111"/> er sie von meiner Seite hinrisse? – wie mir das Herz im
+            Leibe pocht! – ach! diesen Schritt darf ich nicht wagen – – wie aber? – wenn – alles
+            nichts! wie verlassen wir hier in dieser Wildniß schmachten! ohne Rath! ohne Hilfe!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Vierter Auftritt.</head>
+        <stage>Alcmeon, Ramirus.</stage>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon.</speaker>
+          <p>Ohne Rath, ohne Hülfe! wie vergrösserst du dir durch banges Nachsinnen das Jammervolle,
+            das mühesame deines Lebens! ohne Rath, ohne Hülfe? bist du nicht immer unschlüssig, und
+            den besten Räthen taub?</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramirus.</speaker>
+          <p>Zörne nicht, mein Freund, zörne nicht über meinen Wankelmuth. Mein Herz ist zu traurig,
+            als daß die Vernunft es überwiegen sollte. Heute scheint alles recht auf unser Verderben
+            angesehen zu seyn!</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>und heute, wenn du nur willst, kannst du den Grundstein zu deinem vorigen Glücke legen.
+            Dein Vater, wenn er kein Tyger ist, wird sich besänftigen <pb n="112"/> lassen; das
+            Gemälde deines Elendes wird ihn rühren, ja es wird das innerste seiner Seele zum
+            Mitleide rühren!</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramirus:</speaker>
+          <p>wie? ich sollte mich meinem Vater entdecken?</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>nein! dieses eben nicht, Ramirus. Man kann durch verdeckte Wege die Gesinnungen deines
+            Vaters ausspähen. Schildere deiner Mutter den jammervollen Zustand, in welchem du mit
+            den deinigen schmachtest, schildere ihn lebhaft, ohne das Ort deines Aufenthaltes zu
+            entdecken. Ich will gehen, hingehen will ich, und ihr den Brief bringen; er wird ihr
+            Mutterherze zerschneiden; dann will ich noch die Züge deines Jammers mit meinen Worten
+            erhöhen. Ich will ihr die darbende Unschulden, und die kummervolle tugendhafteste
+            Melinde, die fast in Thränen zerfliesset, zu Gemüthe führen. Laß es, laß es meiner Sorge
+            über. Bleibt sie zu allem unempfindlich, und sind unsere Vorstellungen ohne Wirkung,
+            dann bleibt uns immer dieses hilflose Leben gewiß.</p>
+        </sp>
+        <pb n="113"/>
+        <sp who="#ramirus">
+          <speaker>Ramir:</speaker>
+          <p>Deine Sorgfalt, Alcmeon, richtet mich immer wieder auf. Aber wird auch die furchtsame
+            Melinde in dieses Unternehmen willigen? und wirst du wohl so viele Tage die zu dieser
+            Reise nöthig sind, weg seyn können? du weissest, wie unmenschlich uns Orgon behandelt,
+            er wird dirs nicht erlauben, weg zu gehen.</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon.</speaker>
+          <p>Laß es gut seyn, Ramirus. Noch Melinde, noch Orgon soll von meiner Reise was wissen. O
+            Himmel! segne meine Unternehmungen! laß mich das Vergnügen fühlen, der frommen Melinden
+            ein Glück andeuten zu können, das sie in Erstaunen setzen wird, und das ihrer Tugend
+            würdig ist!</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramirus:</speaker>
+          <p>Gott! schenke mir die Freude! daß ich, mit meinen Eltern versöhnet, meinem einzigen
+            Freunde, seine Sorgfalt nach Verdiensten belohnen kann! siehe Alcmeon, da kömmt sie mit
+            den unschuldigen Kindern!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Fünfter Auftritt.</head>
+        <stage>Melinde Sohn und Tochter an der Hand führend, und die vorigen.</stage>
+        <sp who="#melinde">
+          <speaker>Melinde.</speaker>
+          <p>Siehe, geliebtester, wie fleissig die <pb n="114"/> guten Kinder waren; zwey Körbchen
+            voll Früchten haben sie in dem Hayne gesammelt. Ich will sie nur jetzt noch zubereiten,
+            damit dir deine Arbeit nicht zu sauer kömmt.</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramirus:</speaker>
+          <p>Ja, Geliebteste, wenn du sie so geschwinde zu recht machen kannst. Alcmeon wartet
+            meiner, und die Stunde zur Arbeit wird gleich schlagen.</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>Es thut gar nicht eile, meine liebe Melinde, ich habe für Ramirus schon gesorgt, wir
+            werden beede nicht mangeln; sie wissen, mein weniges steht Ihnen immer zu diensten.
+            Erquicken Sie sich jetzt mit den Kindern, wir wollen zur Arbeit. Orgon sieht auf
+            Minuten, und wenn wir zu spät kämen, dann müßten wir seine drohende Vorwürfe lange noch
+            hören. Geben Sie sich nur zu frieden. Oft bälder enthüllet sich unser Schicksaal, als
+            wirs hoffen.</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde.</speaker>
+          <p>Theuerster Alcmeon! wie verdient machen Sie sich um uns! der Himmel gebe, daß wir einst
+            Ihren Großmuth lohnen mögen.</p>
+          <p>Ihr Schicksaal ist fast so herb, als das unsrige, und dennoch sind sie standhaft genug,
+            dasselbe mit Gelassenheit zu tragen, und von ihrem eigenen Mangel noch dem unsrigen
+            abzuhelfen. Gott! wenn du dem Sehnen der Tugend noch Gehör giebest, dann wird sich <pb
+              n="115"/> unser Elend in Glücke umstalten! und Sie, werthester Alcmeon, werden ein
+            Mitgenoß unserer Zufriedenheit seyn. Aber wie fern ist diese Scene noch!</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramirus:</speaker>
+          <p>nicht so fern, als du meinest, geliebteste.</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>Nicht so fern, als sie meynen, Melinde. Der Himmel sieht lange das Elend des Frommen,
+            aber wenn er hilft, dann ist seine Hilfe dauerhaft, und die gählinge Freude schmeckt dem
+            erhöhten viel süsser. Jetzt ists Zeit, daß wir gehen. Komme Ramirus, heute soll uns die
+            Arbeit nicht ermüden.</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramirus:</speaker>
+          <p>Nein! das soll sie nicht.</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde.</speaker>
+          <p>Der Himmel gebe es: indessen, bis du zurück kömmst, will ich das Nachtmahl so niedlich
+            bereiten, als es unsere Armuth zuläßt.</p>
+        </sp>
+        <stage>Ramirus und Alcm. gehen ab:</stage>
+      </div>
+      <div type="scene">
+        <head>Sechster Auftritt.</head>
+        <stage>Melinde, Tochter, und Sohn.</stage>
+        <sp who="#melinde">
+          <speaker>Melinde:</speaker>
+          <p>Nun, ihr guten Kinder, heute waret ihr fleissig, daß ihr zwey Körbchen Früchten
+            gesammelt habt.</p>
+        </sp>
+        <pb n="116"/>
+        <sp who="#sohn">
+          <speaker>Sohn:</speaker>
+          <p>Und wenn Sie uns nicht gerufen hätten, so würden wir noch viel mehr eingebracht haben.
+            Aber den Ort, wo sie stehen, hab ich mir gut gemerket. Denken Sie doch, liebe Mutter,
+            junge Eichhörnchen weiß ich; ich sahe oft das Alte eine Fichte hinan klettern, ich
+            kletterte auch nach, und fande sie im hohlen Stamme des Baums; ich freute mich, daß ich
+            völlig den Hunger darüber vergaß. Ich will sie bald wegnehmen, die muntern
+            Thierchen.</p>
+        </sp>
+        <sp who="#tochter">
+          <speaker>Tochter:</speaker>
+          <p>Und Sie freuen sich nicht einmal daran? das ist ganz betrübt. Warum sehen Sie denn uns
+            beide so kläglich an, meine liebe Mutter?</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde:</speaker>
+          <p>Kinder, ihr dauert mich, wenn ich euch muß hungern lassen, und just heute gieng es
+            so.</p>
+        </sp>
+        <sp who="#tochter">
+          <speaker>Tochter:</speaker>
+          <p>Trauren Sie nur darum? wir haben ja gleich wiederum etwas, wenn wir gleich zuweilen ein
+            bischen mangeln müssen. Wir trafen einen Maulbeer-Baum an, der voll hieng. Mein
+            Brüderchen pflückte so viel ab, daß ich mich recht satt daran asse. Nun haben wir auch
+            zwey Körbchen voll Früchten –</p>
+        </sp>
+        <sp who="#sohn">
+          <speaker>Sohn:</speaker>
+          <p>Und deren weiß ich noch viel mehr, meine liebe Mutter – aber hier läuft Alcmeon wieder
+            zurücke.</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde:</speaker>
+          <p>Gott! was wird das bedeuten!</p>
+        </sp>
+      </div>
+      <pb n="117"/>
+      <div type="scene">
+        <head>Siebenter Auftritt.</head>
+        <stage>Alcmeon, und die vorigen.</stage>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>Zu Orgon sollen sie kommen, Melinde.</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde:</speaker>
+          <p>was soll ich bey ihm?</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>Das weiß ich eben nicht. Gleich oben da sah' er uns, und rief mich. Laß Melinden zu mir
+            kommen, sprach er, und gienge wieder zurück. Unterdessen eilte Ramirus aufs Felde hin,
+            und ich floge zurück, es Ihnen zu sagen, daß Orgon sie sprechen wollte.</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde:</speaker>
+          <p>Was das wieder werden solle, mein lieber Alcmeon; mir däucht, als ahndete mir nichts
+            gutes! ach! wie mein Herz pocht!</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>Nun, nun! können Sie doch so ängstlich thun, als wenn ein Haus über Sie einstürzen
+            wollte! vielleicht werden Sie ihm sticken oder nähen müssen, ich weiß es eben nicht
+            recht, vergebens würde er Sie doch nicht rufen lassen.</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde:</speaker>
+          <p>Das wäre erwünscht, wenn ich auch einmal was verdienen könnte! nun ich will sehen, was
+            ich bey ihm soll.</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>Und wenn Sie nicht zu lange verweilen, so bleibe ich bey diesen Unschulden hier.</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde:</speaker>
+          <p>Keinen Augenblick werde ich länger bleiben, als es die Umstände erfodern. <stage>(sie
+              geht ab.)</stage></p>
+        </sp>
+      </div>
+      <pb n="118"/>
+      <div type="scene">
+        <head>Achter Auftritt.</head>
+        <stage>Alcmeon, und die zwey Kinder.</stage>
+        <sp who="#sohn">
+          <speaker>Sohn:</speaker>
+          <p>Sage uns, Alcmeon, warum sind unsere Eltern immer so traurig?</p>
+        </sp>
+        <sp who="#tochter">
+          <speaker>Tochter:</speaker>
+          <p>Als wir vom Walde zurück kamen, brachten wir so viele Früchten, daß wir wohl zwey Tage
+            daran genug haben, und dennoch sahe uns die Mutter so kläglich an.</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>Ich denke, es schmerzt sie, wenn sie euch muß darben sehen, und wenn ihr Brod verlanget
+            sie euch keines geben kann, weil sie keins hat.</p>
+        </sp>
+        <sp who="#sohn">
+          <speaker>Sohn:</speaker>
+          <p>Nein doch! das soll sie nicht schmerzen. Ich will ihr wohl keine Stunde mehr sauer
+            machen, und wenn mich zu tode hungerte; kaum zwey Täge sinds, daß ich nach Brod schrie;
+            Kind, sagte sie, und weinte bitter, ich habe keins, wenn ich dich damit vom Tode retten
+            könnte. Weinen Sie nicht, liebe Mutter, weinen Sie doch nicht, schluchzete ich, und
+            gienge fort, denn ich konnte sie nicht mehr weinen sehen.</p>
+        </sp>
+        <sp who="#tochter">
+          <speaker>Tochter:</speaker>
+          <p>Aber, warum giebt uns Orgon von seinem Ueberflusse nichts? mein Vater arbeitet ihm ja
+            so fleissig das Feld um, und er bezahlt ihn so schlecht, daß er kaum das Leben davon
+            bringen kann. Nur erst gienge ich in Orgons Hause, da er noch bey Tische sass'; <pb
+              n="119"/> er reichte mir recht aus Verdruß ein Stück gebratenes Fleisch, und ein
+            Butter-Brod; ich neigte mich, und sprange davon, als wenn ichs gestohlen hätte. Das wird
+            deinem arbeitenden Vater recht gut schmecken, sagte ich zu mir, und eilte zu ihm aufs
+            Felde. Essen Sie, mein lieber Vater, essen Sie, mit so vielem hat mich heute Orgon
+            beschenket; iß du, sagte er, dich hungert ja; nein Sie müssens essen, Sie arbeiten ja,
+            und ich nicht, ich will mir im Mayenthale schon Beer abpflücken, die mir gut genug sind.
+            Auf dieses rollten ihm Zähren von den Wangen. Komm, laß dich küssen, meine Gold-Tochter,
+            der Himmel vergelte dir deine kindliche Liebe. Ich mußte recht vor Freuden weinen, da
+            ich ihn so begierig essen sah. Aber warum, Alcmeon, läßt denn Orgon unsere Eltern so
+            schmachten!</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>Weil er geitzig ist, mein Kind;</p>
+        </sp>
+        <sp who="#sohn">
+          <speaker>Sohn.</speaker>
+          <p>Geizig? was ist denn das?</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>Wenn man seinen Reichthum so zusammen hält, daß man nicht nur dem Elenden nicht
+            beyspringt, sondern auch dem Arbeiter seinen gebührenden Lohn wegraft oder
+            vermindert.</p>
+        </sp>
+        <sp who="#sohn">
+          <speaker>Sohn.</speaker>
+          <p>O das ist ganz abscheulich! wenn ich doch einmal groß wäre und Kräften hätte, ich
+            wollte keinem so wilden Manne, wie Orgon ist, dienen.</p>
+        </sp>
+        <pb n="120"/>
+        <sp who="#tochter">
+          <speaker>Tochter.</speaker>
+          <p>Daß ich noch nicht arbeiten kann! Ich würde alles darauf verwenden, daß ich meinen
+            Eltern das ersetzen möchte, was ihnen der geitzige Orgon raubet.</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon.</speaker>
+          <p>Ihr guten Kinder, ihr, das wird auch schon werden auf die Seite sie machen mich
+            weichmüthig – nun, ich sehe eure Eltern kommen, traget diese Früchten in die Hütte,
+            damit die Mutter das Essen zubereiten möge – <stage>(beede gehen in die
+            Hütte.)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Neunter Auftritt.</head>
+        <stage>Ramirus, Melinde, Alcmeon.</stage>
+        <sp who="#melinde">
+          <speaker>Melinde.</speaker>
+          <p>Alcmeon! –</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramirus:</speaker>
+          <p>Freund! –</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>Himmel! was ist geschehen? reden Sie doch!</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde.</speaker>
+          <p>O! Alcmeon! –</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>Ums Himmelswillen, was ist Ihnen zugestossen! warum schluchzen, warum schnauben sie
+            so?</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde.</speaker>
+          <p>Ich kanns nicht sagen, der Schmerzen erstickt die Sprache – ich kanns nicht sagen –</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramirus:</speaker>
+          <p>Jetzt fängt sich unser Jammer, unser Elend, erst recht an!</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>Sind Sie entdecket worden? verfolgt Sie etwan der Zorn ihres Vaters?</p>
+        </sp>
+        <pb n="121"/>
+        <sp who="#ramirus">
+          <speaker>Ramirus:</speaker>
+          <p>Nein, Alcmeon! das wäre noch zu wünschen; gelassener, ja, weit gelassener wollte ich
+            dieses noch dulden, vielleicht besänftigte ihn unser durch alles Elend fünfzehn Jahre
+            durchgeschlepptes Leben. Aber –</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde:</speaker>
+          <p>Ich sagte es Ihnen, Alcmeon, eh ich zu Orgon gieng, daß mir nichts gutes ahndete, und –
+            Himmel, wie ich zittere!</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>So ist denn Orgon die Ursache Ihres Winselns?</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramirus:</speaker>
+          <p>ja, Orgon ist sie: ich wölbete gleich oben im Garten die jungen Ulmen in eine Laube, da
+            wallte Melinde daher, bebend sanke sie in meine Arme. Ich bin des Todes: ächzete sie,
+            des Todes bin ich, Ramirus!</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon.</speaker>
+          <p>Gott! was das werden soll! reden Sie doch weiter –</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde.</speaker>
+          <p>Erzähle es du, geliebter, das blosse Andenken dieses Lasters macht mich beben!</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramirus:</speaker>
+          <p>Hastig schaute sie auf einmal umher, und seufzete; keine Thräne entfiel dem starren
+            Auge. Ich wollte reden; aber stumm hatte mich diese gählinge Verwirrung gemacht. Endlich
+            stammelte sie ihre Noth aus dem innersten ihrer Seele heraus: meine <pb n="122"/> Ehre
+            will man mir rauben: hier brach ein Strom von Zähren aus den Augen. Deine Ehre, mein
+            Kind? stotterte ich ihr nach. Wer, wer ist der Verbrecher? aber kein Wort redete sie
+            mehr; denn die Thränen hatten ihre Sprache erstickt. Arm in Arme geschlungen, zitterte
+            ich mit ihr zu unsrer Hütte, und ich hörte keine andere Worte aus ihrem Munde, als:
+            meine Ehre will mir Orgon rauben.</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>Was? Orgon will Ihnen zum Laster anführen? zur Untreue gegen den Ramirus?</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde:</speaker>
+          <p>Ach! daß es doch nicht wahr wäre! zeugen sie mirs, Alcmeon, daß er mich rufen liess'.
+            Ich dachte nichts arges. Ich kame, und er lächelte freundlich auf meinen Gruß. Wie leben
+            Sie, Melinde? fragte er. Immer so gut, als es unsere äusserste Armuth zuläßt, sprach
+            ich. Ich bedaure Sie, englische Melinde, fuhr er fort, sagen Sie mirs, wie ich Ihnen
+            dienen kann; so einem holden Kinde mag ich wohl nichts abschlagen, wenn Sie nur – und
+            nun wurde er immer vertraulicher – nein! schrie ich, und flohe bebend zurück, nein
+            Orgon! sollte so ein Laster meine Seele umhüllen, dann würde ich unser Elend viel
+            empfindlicher fühlen, o! dann würde ichs fühlen, wenn die tödtende Marter des verletzten
+            Gewissens mich verfolgen würde. Die Tugend, meinen grösten Reichthum, der mich in meinem
+            Jammer noch tröstet, wollten sie mir rauben? mit dem Laster des Ehebruches sollte ich
+            meine Seele beflecken? schämen Sie sich, boshafter Orgon, schämen Sie sich, daß Sie
+            dieses wildeste der Lastern von mir fodern. So <pb n="123"/> tobte ich. Aber er streckte
+            seine verbrecherischen Hände nach mir. Hätte der Himmel mich nicht beflügelt, dann würde
+            ich diesem Ungeheuer zur Beute geworden seyn. Rasend brüllte er mir nach: Morgen will
+            ich euch aus eurer Hütte jagen; das ware es, was ich noch hörte.</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>So weit hat sich Orgon erfrechet? o Himmel! räche die unterdrückte Tugend!
+            zerschmettere den Lasterhaften! oder lässest du mir die Rache über? so solle ers mit
+            seinem Blute bezahlen, ja, das soll er!</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramir:</speaker>
+          <p>Ja, das soll er heute noch! der Unmensch. Fünfzehen Jahre hab ich ihm gedienet, und für
+            zehen Jahre hat er mir den Lohn für diese armselige Hütte abgedrücket; mit kaltem Blute
+            sah er mich, und Melinden und meine Kinder darben, jetzt erkühnt er sich – ich werde
+            rasend, Alcmeon! komm laß uns den Verbrecher suchen –</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde:</speaker>
+          <p>Nicht, um des Himmels willen nicht. Ramirus! Alcmeon, bey diesen Thränen, bey allem,
+            was Ihnen lieb ist, bitte ich Sie, erzörnen Sie Gott durch keinen Todtschlag. Ach! was
+            würde das werden! mit meinen Kindern will ich das Brod an den Thüren sammeln, der Himmel
+            wird uns nicht lassen, nur von da laßt uns wegfliehen, aber mit dem Gefühl der Tugend.
+            Alcmeon, beflecken Sie ihre Hände nicht mit dem schwarzen Blut dieses Ungeheuers, rathen
+            Sie uns vielmehr, wohin wir flüchten sollen.</p>
+        </sp>
+        <pb n="124"/>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon.</speaker>
+          <p>O Melinde! wie beschämet uns Ihre Frömmigkeit! Ich ziehe mit Ihnen. Ich will Orgon mit
+            keinem Blicke mehr sehen.</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramir:</speaker>
+          <p>Heute ist alles recht auf unser Verderben gemünzet; wo werden wir aber hinflüchten, daß
+            wir sicher sind?</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>Lassen Sie mich sorgen, Ramirus, ich weiß eben – aber hören Sie, was poldert so? –</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde:</speaker>
+          <p>Himmel! zwey Pferde!</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramir:</speaker>
+          <p>Gott, sind wir etwan verrathen?</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>Fassen Sie Muth; es wird sich alles geben –</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Zehenter Auftritt.</head>
+        <stage>Zwey Kriegsleute zu Pferd, und die Vorigen.</stage>
+        <sp who="#polydor">
+          <speaker>Polydor.</speaker>
+          <p>Erschrecken Sie nicht an uns, wir jagten einem Hirschen nach, und verlohren uns in
+            dieser Wildniß. Wollen Sie uns nicht wieder auf die rechte Strasse helfen?</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>Von Herzen gern, meine Herren!</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramir:</speaker>
+          <p>Sie sind so ziemlich weit von dem rechten Wege abgekommen.</p>
+        </sp>
+        <sp who="#philind">
+          <speaker>Philind:</speaker>
+          <p>Haben Sie nicht ein bißchen Futter für unsere Pferde, sie würden einer kleinen
+            Erhohlung recht sehr nöthig haben.</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramir:</speaker>
+          <p>Gras, wie es hier aus der Erden hervor wächst, und Wasser, das kann ich ihnen geben.
+              <pb n="125"/> Ich wünschte mirs, daß ich Ihnen eine Erfrischung aufstellen könnte,
+            denn, so viel ich sehe, sind Sie sehr ermattet. Allein, meine Armuth soll Ihnen für eine
+            Entschuldigung gelten. Lüstern Sie nach wilden Garten-Früchten, so befehlen Sie nur,
+            reicher ist meine Speise-Kammer nicht.</p>
+        </sp>
+        <sp who="#polydor">
+          <speaker>Polydor.</speaker>
+          <p>Verzeihen Sie mirs, mein guter Freund, daß ich ein bischen zu argwöhnisch bin, dieser
+            höfliche Antrag, diese artigen Minen, sind nicht vom Lande, auch das Traurige, das
+            darinnen herrscht, ist noch angenehm. Man kann es in Ihrem blassen Antlitze lesen, daß
+            Sie sich hart in dieser Wildniß nähren müssen.</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramir:</speaker>
+          <p>sie haben beynahe mein Schicksal ganz errathen. Sehen Sie, dieses ist meine beste
+            Gemahlinn, in dieser Hütte sind meine guten Kinder, und dieses ist mein einziger Freund,
+            der unser hilfloses Leben, das wir seit fünfzehen Jahren in dieser Wildniß durchhungert
+            haben, noch immer nach seinen Kräften erleichtert hat, so mühsam und dürftig er sich
+            auch durchschleppen muß.</p>
+        </sp>
+        <sp who="#polydor">
+          <speaker>Polydor.</speaker>
+          <p>Ihr Schicksal dringt mir recht ans Herz. Aber, erlauben Sie, Sie werden doch hier nicht
+            erzogen worden seyn? und welcher Unmensch würde Sie in diese schmachtende Umstände
+            gestürzet haben?</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramir:</speaker>
+          <p>Nein, mein Herr, diese armselige Hütte ist mein Geburtsort nicht, wäre ers, dann fühlte
+            ich vielleicht das Ungemach des Landlebens viel weniger. Auch hat mich kein Unmensch –
+            ach! wie mir das Herz zerschmelzt – kein Unmensch hat mich in dieses Elend verdammet;
+            aber die Urquelle davon soll zu <pb n="126"/> meiner, und meiner besten Gattin
+            Beruhigung noch ein Räthsel bleiben, bis es der Himmel zu unserem Glücke enthüllen
+            wird.</p>
+        </sp>
+        <sp who="#polydor">
+          <speaker>Polydor.</speaker>
+          <p>Wie unruhig bin ich durch das Gemälde ihres hilflosen Lebens geworden! Himmel! wie
+            bange wirds mir!</p>
+        </sp>
+        <sp who="#philind">
+          <speaker>Philind:</speaker>
+          <p>Was fehlet Ihnen Herr Vater? warum irren Ihre Blicke doch so kläglich, so verwirret,
+            herum? –</p>
+        </sp>
+        <sp who="#polydor">
+          <speaker>Polydor:</speaker>
+          <p>Ach! mein Sohn, mir liegt so was am Herzen! fünfzehen Jahre wären Sie hier, mein
+            Freund? – ja fünfzehen Jahre ist er weg! – Gott! welche Minen! – o daß ich mich nicht
+            trügete – Ramirus!</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde.</speaker>
+          <p>Himmel! wir sind verrathen!</p>
+        </sp>
+        <sp who="#polydor">
+          <speaker>Polydor.</speaker>
+          <p>Ramirus, ach! Ramirus umarme mich! umarme deinen Polydor!</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramirus.</speaker>
+          <p>Polydor! Bruder! Gott! wie das möglich ist! –</p>
+        </sp>
+        <sp who="#polydor">
+          <speaker>Polydor.</speaker>
+          <p>Melinde! Frau Schwester! tausendmal küsse ich Ihnen die Hand.</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon:</speaker>
+          <p>Erstaunenswürdige Scene! Wie weisse die Vorsicht das Schicksal der tugendhaften
+            leitet!</p>
+          <stage>(er hohlet die Kinder aus der Hütte.)</stage>
+        </sp>
+        <sp who="#philind">
+          <speaker>Philind.</speaker>
+          <p>Wie? das ist mein Vetter, das meine Muhme, die wir so oft bejammerten, die wir so oft,
+            als todt, als verschmachtete, beseufzten?</p>
+        </sp>
+        <sp who="#polydor">
+          <speaker>Polydor.</speaker>
+          <p>Ja! das sind sie, die der übereilte Zorn eines Vaters in diesen Jammer gestürzet.</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramir:</speaker>
+          <p>Ist er aber weg von seiner Seele, dieser Zorn?</p>
+        </sp>
+        <pb n="127"/>
+        <sp who="#polydor">
+          <speaker>Polydor.</speaker>
+          <p>O ja! du hättest es sehen sollen, mein lieber Bruder. Fünf Jahre dorften weder die
+            Mutter noch ich deinen Namen nennen; da ihn gähling ein Steckfluß beynahe tödtete. Von
+            dieser Stunde an war er immer krank, aber doch viel weichmüthiger, als ehemals. Ach!
+            seufzete er, an einem Tage, als er im grossen Commodsessel ruhete, ach! wo wird mein
+            Ramirus unher irren! und ein Zäher rollte von seinem Auge. Die Mutter weinte auf dieses,
+            und sie weinte so oft man von dir sprach immer. Verzeihe ihm einmal seinen Fehler,
+            stammelte sie zu dem gerührten Alten, vielleicht daß wir ihn finden. O ja! daß ich ihn
+            noch vor meinem Tode umarmen möchte, o! daß ich ihn noch in diese zitternde Arme
+            schliessen möchte! Alle Mühe gaben wir uns dich aus zu spähen, und es war alle Mühe
+            vergebens. Zwey Jahre lebte er noch, der gute Vater, da wuchse die Krankheit. Halb todt
+            liespelte er seinen väterlichen Segen über dich, und bate Verzeihung von dir, er soll
+            mein Erbe seyn; diese Worte zitterte seine matte Zunge noch deutlich; dann starb er.</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramir:</speaker>
+          <p>Gott! wie will ich bey seinem Grabe um Verzeihung flehen! wie will ich sein Ruhort mit
+            kindlichen Thränen der Reue benetzen!</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon.</speaker>
+          <p>Hier, Kinder, kniet nieder. Hurtig umfasset die Knie eueres Vetters.</p>
+        </sp>
+        <sp who="#polydor">
+          <speaker>Polydor.</speaker>
+          <p>Seyd mir gegrüßt, ihr guten Kleinen. Sind das auch alle, Frau Schwester?</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde.</speaker>
+          <p>Nein! Herr Bruder, der erstgebohrne mangelt noch. Ob er lebt, oder todt ist, das macht
+              <pb n="128"/> mich oft beben. Drey Jahre wuchse er, wie eine Ulme, zu meinem Vergnügen
+            auf; da verlohr er sich in dieser Wildniß, und ich sahe ihn nimmer. Wie mir das mein
+            Herz preßte! jetzt würde er ein Jüngling von vierzehen Jahren, schön blühend, wie eine
+            Jasmine, seyn.</p>
+        </sp>
+        <sp who="#philind">
+          <speaker>Philind.</speaker>
+          <p>Das Blut wird mir so warm!</p>
+        </sp>
+        <sp who="#polydor">
+          <speaker>Polydor.</speaker>
+          <p>O Gott im Himmel, eine Freude nach der andern! Philind, du bist nicht mein Sohn, komme,
+            komme, umarme deinen Vater, umarme deine Mutter</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde.</speaker>
+          <p>Ach! mein Herz zerschmelzt mir!</p>
+        </sp>
+        <sp who="#ramirus">
+          <speaker>Ramir:</speaker>
+          <p>O mein Sohn! wie glücklich sind wir heut!</p>
+        </sp>
+        <sp who="#philind">
+          <speaker>Philind.</speaker>
+          <p>Ich kann nicht reden, ich kann nicht reden!</p>
+        </sp>
+        <sp who="#alcmeon">
+          <speaker>Alcmeon.</speaker>
+          <p>Erstaunenswürdige Entwicklung!</p>
+        </sp>
+        <sp who="#polydor">
+          <speaker>Polydor.</speaker>
+          <p>Ja in dieser Wildnis hab ich ihn gefunden, nicht fern von der Strasse. Ich hörte laut
+            kläglich winseln, ich ritte näher diesem winseln, und fande das gute Kind im Grase
+            sitzen. Ich fragte es, aber es redete nicht, und schrie erbärmlich: Mutter, Mutter; mir
+            ward das Herz wie Wachs so weich. Ich nahme das Knäbchen zu mir aufs Pferd, und erzoge
+            ihn, und er nennte mich Vater, und ich nennte ihn Sohn. O wie wird unsere alte Mutter
+            vor Freuden schluchzen, wenn sie euch alle gesund sehen wird. Kommen Sie, heute gehen
+            wir auf das Landgut unseres Freundes, dann, wenn die Morgenröthe den Himmel bepurpert,
+            dann, wenn sie festlich gekleidet, fliegen wir in die Stadt. Alcmeon Sie kommen auch
+            mit, ich werde ihre Freundschaft zu belohnen wissen.</p>
+        </sp>
+        <sp who="#melinde">
+          <speaker>Melinde</speaker>
+          <p>Gott! wie du mit den Menschen spielest! Heute thürmte sich das Elend am höhesten empor,
+            und im nämlichen Augenblicke, wo es uns zu verschlingen dräuete, sind wir glücklich!</p>
+        </sp>
+      </div>
+    </body>
+  </text>
+</TEI>
