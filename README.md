@@ -1,6 +1,6 @@
 # GerDraCor
 ## Corpus Description
-This is the German Drama Corpus (GerDraCor), a collection of [TEI P5](https://tei-c.org/guidelines/p5/)-encoded German-language plays from the 1540s to the 1940s. The corpus is released under the Creative Commons Zero copyright waiver ([CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)).
+This is the German Drama Corpus (GerDraCor), a collection of [TEI P5](https://tei-c.org/guidelines/p5/)-encoded German-language plays from the 1530s to the 1940s. The corpus is released under the Creative Commons Zero copyright waiver ([CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)).
 
 If you want to cite the corpus, please use this publication:
 
