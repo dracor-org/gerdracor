@@ -1,0 +1,2157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000714" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Abschied</title>
+        <title type="sub">Ein Trauerspiel in zwei Aufzügen</title>
+        <author>
+          <persName>
+            <forename>Ludwig</forename>
+            <surname>Tieck</surname>
+          </persName>
+          <idno type="wikidata">Q57239</idno>
+          <idno type="pnd">12989432X</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Projekt Gutenberg-DE</name>
+          <idno type="URL">https://www.projekt-gutenberg.org/tieck/abschied/index.html</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <author>Ludwig Tieck</author>: <title level="a">Der Abschied. Ein Trauerspiel in zwei
+              Aufzügen</title>. In: <title level="s">Tiecks Werke</title>. Herausgegeben von
+              <editor>Gotthold Ludwig Klee</editor>. Kritische durchgesehene und erläuterte Ausgabe.
+              <biblScope unit="volume">Erster</biblScope> Band. <pubPlace>Leipzig und
+              Wien</pubPlace>: <publisher>Bibliographisches Institut</publisher>
+            [<date>1892</date>], S. <biblScope unit="page" from="63" to="100"
+            >63–100</biblScope>.</bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="luise" sex="FEMALE">
+            <persName>Luise</persName>
+          </person>
+          <person xml:id="waller" sex="MALE">
+            <persName>Waller</persName>
+          </person>
+          <person xml:id="aufwaerter" sex="MALE">
+            <persName>Aufwärter</persName>
+          </person>
+          <person xml:id="ramstein" sex="MALE">
+            <persName>Ramstein</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#waller #luise"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Tragedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q80930</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2024-09-23">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1798">
+        <desc/>
+      </event>
+      <event type="written" when="1792">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000714"
+        passive="http://www.wikidata.org/entity/Q130350990"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <pb n="63"/>
+    <front>
+      <titlePage>
+        <docAuthor>Ludwig Tieck</docAuthor>
+        <docTitle>
+          <titlePart type="main">Der Abschied.</titlePart>
+          <titlePart type="sub">Ein Trauerspiel in zwei Aufzügen.</titlePart>
+        </docTitle>
+      </titlePage>
+      <pb n="64"/>
+      <castList>
+        <head>Personen.</head>
+        <castItem><role>Karl Waller.</role></castItem>
+        <castItem><role>Luise,</role>
+          <roleDesc>seine Gattin.</roleDesc></castItem>
+        <castItem><role>Ramstein.</role></castItem>
+        <castItem><role>Ein Aufwärter.</role></castItem>
+      </castList>
+      <set>
+        <p>Die Szene ist in einer kleinen Landstadt.</p>
+      </set>
+      <pb n="65"/>
+      <div type="preface">
+        <head>Einleitung des Herausgebers.</head>
+        <p>Tiecks erste dichterische Versuche sind dramatische Exerzitien. Als Sechzehnjähriger
+          schrieb er (1789) die liebenswürdigen Szenen »Die Sommernacht«, in denen er dem Genius
+          Shakespeares seine erste, kindliche Huldigung darbrachte; dann folgten fünf vollendete
+          Schauspiele und der Anfang eines sechsten, alle im Jahre 1790. Und nach einer kaum
+          zweijährigen Pause gelingt ihm, gegen Ende 1792, bereits das technisch Vollendetste, was
+          seine ganze dramatische Thätigkeit aufzuweisen hat: der im zwanzigsten Lebensjahre
+          stehende Göttinger Student schreibt das zweiaktige Trauerspiel »Der Abschied«. Der Anlaß
+          dazu kam von außen her. Des Dichters Freund Bernhardi in Berlin, der als Dilettant
+          zuweilen Komödie spielte, forderte ihn auf, »ihm eine Tragödie von zwei, höchstens drei
+          Personen zu senden«<note place="foot">Vgl. »Schriften«, Bd. 1, S. XXXVII, und Köpke,
+            »Ludwig Tieck«, Bd. 1, S. 153.</note>, und Tieck lieferte das genannte Stück, das sich
+          als ein bürgerliches Trauerspiel darstellte. Ob es aufgeführt wurde, ist nicht bekannt;
+          wohl aber fand es den lebhaften Beifall der Berliner Freunde. Köpkes Bericht, daß
+          Bernhardi das Stück für <emph>sein</emph> Werk ausgegeben habe, wird widerlegt durch eine
+          Stelle in einem Briefe Wackenroders<note place="foot">»Briefe an Ludwig Tieck«, Bd. 4, S.
+            245 (Januar 1793).</note>, an der dieser schreibt, er habe »das kleine Drama«, das Tieck
+          an Bernhardi geschickt, noch nicht lesen können, weil letzterer es »einem neuen hiesigen
+          Buchhändler, Nauke, zur Probe Deines Stils geliehen hat«, und durch eine andre<note
+            place="foot">A. a. O. S. 263 (5. März 1793).</note>, an der er dem Freunde versichert,
+          Bernhardi habe sich nie der von Tieck erwähnten List bedient, das Drama für sein Werk
+          auszugeben. – Das Stück blieb ziemlich lange Manuskript; erst 1797<note place="foot">Der
+            Titel lautet: »Der Abschied. Ein Trauerspiel in zwey Aufzügen. Berlin, bei Langhoff
+            1798«; Wackenroder starb aber schon Anfang 1798.</note> ließ es der treue Wackenroder
+          drucken, um den auf einer Reise begriffenen Freund zu überraschen.</p>
+        <pb n="66"/>
+        <p>Das älteste Urteil, das uns über den »Abschied« erhalten ist, ist das Wackenroders, der
+          im Januar 1793 von Berlin aus an den Verfasser schrieb<note place="foot">»Briefe an Ludwig
+            Tieck«, Bd. 4, S. 255 f.</note>: »Du hast mir wieder eine sehr glückliche Stunde
+          gemacht, hast mich ganz hineingezaubert in die Zeiten, da mir noch hier zusammen lebten
+          und zusammen empfanden ... Ich fühl' es, ich fühl' es, wie alles aus dem Strom der
+          Empfindung eines vollen Herzens geschöpft ist. Wovon soll ich anfangen? Es hat mich
+          gerührt, entzückt! Ganz in dem Goetheschen Geist des Werthers, der Stella, gedichtet! Ganz
+          Gemälde, treustes Gemälde der erhabenen, ätherischen und schwärmerischen Gefühle, die wir
+          so manches Mal in den Stunden der Seligkeit miteinander wechselten. Hast Du bei der
+          Stelle, wo Luise das von ihrem Geliebten komponierte Lied: ›Wie war ich doch so
+          wonnereich‹, spielt, an mich gedacht, so dank' ich dir: glücklich fühl' ich mich, wenn
+          mein Andenken Dich in <emph>solchen</emph> Stunden umschwebt. Wie lautere Natur ist
+          Ramstein! ... Wie unnachahmlich die zwei Szenen zwischen Luise und Ramstein! Wie wahr der
+          glühende und kochende Ehemann! Wie wahr die lenkbare Schwachheit des weiblichen
+          Charakters! Überall die feinsten Züge verstreut! ... Vielleicht hätte das Ende etwas
+          besser ausgearbeitet sein können; und noch gewisser wage ich zu behaupten, daß
+            <emph>zuweilen</emph> der Dichter die Personen noch immer mehr von ihrer Empfindung
+          sprechen, als sie, ihrer Empfindung gemäß, sich ausdrücken läßt. Doch der Glanz des Ganzen
+          verschlingt diese Flecken. Wärst Du hier, wir wollten's zusammen lesen, und jeden
+          Augenblick würde ich Dir mein Entzücken zu erkennen geben. Aber so kann ich nichts
+          auszeichnen, es ist zu viel, und ich bin zu voll. O laß doch die Reimerei<note
+            place="foot">Bezieht sich auf eine halb in Prosa, halb in Versen abgefaßte, uns nicht
+            erhaltene Erzählung Tiecks »Der Roßtrapp«, die Wackenroder auf das schärfste getadelt
+            hatte.</note> sein! <emph>Hier</emph> ist Dein Wirkungskreis, im Feld des Tragischen und
+          der trüben Melancholie.« Bei aller Überschwänglichkeit begibt sich Wackenroder doch, wie
+          man sieht, durchaus nicht der Kritik; die tadelnde Bemerkung, daß die Personen zuweilen
+          mehr von ihrer Empfindung sprechen, als die Empfindung einfach ausdrücken, ist fein und
+          zutreffend. Aber auch sein Lob ist nicht unbegründet, und die neuere Kritik hat ihm recht
+          gegeben. Während ein Rezensent der »Neuen allgemeinen deutschen Bibliothek«<note
+            place="foot">Band 43 (1799), S. 85 f.; Verfasser war Hofrat Pockels in
+            Braunschweig.</note> durchaus nichts Anziehendes in dem »schwülstigen Trauerspiele«
+          finden konnte, und noch Köpke das wenig beachtete Drama zu den »minder bedeutenden
+          Kleinigkeiten« rechnet, <pb n="67"/> urteilt Haym<note place="foot">»Die romantische
+            Schule«, S. 40.</note> darüber folgendermaßen: »Auf dem kleinen Raum, in welchem das
+          Stück spielt, hat Tieck alle Sorgfalt und alle Geschicklichkeit – mehr als das, hat er
+          alle dramatische Kraft und Leidenschaft, deren er fähig war, versammelt. Das Feuer dieser
+          Leidenschaft ist wohl auch hier mehr gemaltes als wirkliches Feuer – aber er versteht doch
+          zu malen! Die Verwickelung, die er diesmal darstellt, ist wieder zu sehr durch die
+          willenlose Weichheit der Handelnden, durch ihr Blut und Temperament bedingt, aber sie ist
+          doch einfach und menschlich verständlich. Die Stimmungen, die sich daraus ergeben, sind
+          nicht nur bloß phantasierte Reflexionsstimmungen; der Fehler besteht hauptsächlich nur
+          darin, daß sie zu sehr ins Dunkle schattiert sind, daß sie zu sehr wieder in jene ratlose
+          Melancholie hinein klingen, die nur in der eignen Gemütslage des Dichters individuelle
+          Wahrheit und Berechtigung hatte. Es ist wesentlich eine Stimmungstragödie. Die Luft ist
+          schwül und bang, die Beleuchtung düster und grausig. Der rückkehrende Geliebte vor allem
+          ist eine finstre, hypochondrische Figur.« Vor dem zuletzt ausgesprochenen Tadel zwar
+          möchten wir den Dichter in Schutz nehmen, da die trübe Stimmung Ramsteins genügend
+          motiviert ist und die Luft erst mit dessen Auftreten schwül wird; einen andern wunden
+          Punkt des Stückes aber, den auch Haym hervorhebt, hat Tieck selbst in spätern Jahren<note
+            place="foot">»Schriften«, 11. Bd., S. XXXVIII.</note> aufgedeckt: es ist jene
+          bedenkliche Auffassung des Tragischen, die schon an das spätere Schicksalsdrama erinnert.
+          »An ein Bild, Messer, selbst an einen Apfel war etwas Verhängnisvolles geknüpft, was,
+          durch die Erfüllung der Vorahndung zum Orakelmäßigen erhoben, eine tragische Wirkung
+          hervorbringen sollte.« Und daß die ganze Vorgeschichte des Stückes auf einem »Ohngefähr,
+          einem unglücklichen Mißverstand« beruht, wirkt peinlich, obschon nicht so stark, als wenn
+          das rein Zufällige vor unsern Augen geschähe, wie in den Schicksalsdramen seit Werner. An
+          einer andern Stelle weist Tieck auf das Drama hin, aus dem er unzweifelhaft jene
+          fatalistische Anschauung geschöpft hatte. Es war das einaktige Schauspiel »Blunt oder der
+          Gast« von Karl Philipp Moritz, das 1782 zu Berlin erschienen war und dessen Verfasser ihm
+          persönlich nahe stand. Die Vorlage dieses Stückes ist eine 1737 gedichtete dreiaktige
+          Tragödie »Die verhängnisvolle Neugierde« von dem Engländer George Lillo (1693–1739). Zwei
+          in der äußersten Dürftigkeit lebende Eheleute nehmen hier einen Fremden, der sie um ein
+          Nachtlager bittet, bei sich auf, ermorden ihn aber, um <pb n="68"/> sich seines Geldes zu
+          bemächtigen, wobei sich denn zuletzt herausstellt, daß der Ermordete ihr Sohn ist.
+          Vergleicht man die Brutalität dieses Stoffes mit den Voraussetzungen, auf denen sich
+          Tiecks »Abschied« aufbaut, so wird man zugeben, daß letztere weit weniger verletzend sind,
+          da sie dem freien Empfinden und Handeln der Personen einen viel größern Spielraum lassen.
+          Der Litteraturkundige aber erkennt, daß jenes Trauerspiel Lillos oder die Moritzsche
+          Umarbeitung die Quelle war, aus der 1809 Zacharias Werner seinen »Vierundzwanzigsten
+          Februar« schöpfte, die erste eigentliche Schicksalstragödie von litterargeschichtlicher
+          Bedeutung, insofern sie eine lange Reihe Dramen, die von ähnlichen roh fatalistischen
+          Anschauungen erfüllt waren und mit stürmischem Beifall aufgenommen wurden, hervorrief.
+          Tiecks zartere Dichtung, auf die außer der von Wackenroder citierten »Stella« auch Goethes
+          »Clavigo«, Lessings »Sara Sampson« und Schillers »Kabale und Liebe« deutlich eingewirkt
+          haben, blieb dagegen ebenso wie sein 1797 zum erstenmal gedrucktes Ritterschauspiel »Karl
+          von Berneck«, in dem allerdings der Schicksalsspuk in ganz plumper Gestalt auftritt, dem
+          größern Publikum unbekannt. Erst im zweiten Bande der »Schriften« erlebte »Der Abschied«
+          1828 seine litterarische Auferstehung, aber auch jetzt ohne gebührend beachtet zu werden,
+          obwohl er durchaus bühnengerecht ist und an poetischem Gehalt die meisten der Stücke weit
+          übertrifft, die in den zwanziger und dreißiger Jahren laute Erfolge errangen. Daß Tieck
+          selber in Dresden niemals die Aufführung eines seiner größern romantischen Dramen
+          veranlaßte, ist begreiflich; daß er aber auch die Bühnenwirksamkeit dieses kleinen
+          Jugendwerkes sich nie erproben ließ, müßte wundernehmen, wenn nicht die vornehme
+          Zurückhaltung des Dichters in diesem Punkte bekannt wäre und wenn er nicht selbst die
+          Verkehrtheit der Schicksalstragödie unermüdlich an den Pranger gestellt hätte, als deren
+          Vorläufer vor dem Publikum zu erscheinen, er billig Bedenken trug.</p>
+      </div>
+    </front>
+    <pb n="69"/>
+    <body>
+      <div type="act">
+        <head>Erster Aufzug.</head>
+        <stage>Wallers Zimmer, klein und niedlich, mit mehreren Thüren. Auf der linken Seite steht
+          ein Klavier, über welchem das Bildnis eines jungen Mannes hängt.</stage>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(kommt durch die Hinterthür herein, geht nach dem Klavier und sucht ihr
+              Strickzeug; sie geht zurück und bleibt in der Thür wieder stehen).</stage>
+            <p>Ist mir doch, als hätt' ich noch etwas vergessen! – Und doch wüßt' ich nicht, was!
+                <stage>(Sie kömmt zurück.)</stage> Den Hut? – Nein, den wollt' ich nicht.
+                <stage>(Sie steht vor dem Gemälde still, betrachtet es und greift auf dem Klavier
+                unwillkürlich einige Töne.)</stage> Das Klavier ist auch verstimmt; mein Karl wird
+              sich schon die Mühe wieder geben müssen. – – Ich weiß auch gar nicht, warum ich dies
+              Bild hier hängen lasse; es macht mir das ganze Zimmer zu enge. – Ich kann es nicht
+              wegnehmen, es ist das einzige, was ich von ihm noch habe, – ich seh' es gern – – du
+              lächelst mich an, Ferdinand? Noch ganz so wie damals? – es hat sich viel seitdem
+              geändert! Viel! Und doch war eine Zeit, wo ich mir den Gedanken nicht denken konnte,
+              eines andern Gattin zu sein, – es war damals so manches anders als jetzt, – es konnte,
+              es sollte nicht sein. – Bin ich denn nicht glücklich? – Und er hat mich ja vergessen,
+              – ich bleibe ein unkluges Kind, daß mein Herz noch immer so an ihm hängt. <stage>(Sie
+                hört den eintretenden Waller, läßt rasch den Blick fallen und fängt ein rauschendes
+                Allegro an.)</stage></p>
+          </sp>
+        </div>
+        <pb n="70"/>
+        <div type="scene">
+          <head>Zweiter Auftritt.</head>
+          <stage>Luise. Waller.</stage>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Ei, so in Eifer, Luise?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(die zu spielen aufhört).</stage>
+            <p>Das Klavier ist schon wieder verstimmt, Lieber.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Nichts weiter? Ist keine Saite gesprungen? – Denn du warst wirklich in
+              Begeisterung.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Nicht doch – –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Du hast dich aus dem Garten weggestohlen.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ich hatte mir nur meine Arbeit geholt, ich wollte eben zurückkommen.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Ich werde leider bald ausgehn müssen.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ausgehn? Es ist ein so schöner Herbstabend. –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Die Sache ist nicht unwichtig, – der Prozeß des armen Lindner, – du weißt es ja, –
+              wegen des Weinbergs, um den ihn der reiche Geizhals dort betrügen will –</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Dann will ich dich nicht abhalten, – der arme, alte Mann, – versäume ihn ja
+              nicht.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(sie küssend).</stage>
+            <p>Gewiß nicht. – Liebe, mitleidige Seele; – du hast doch immer einen kleinen Hang zur
+              Schwermut. Du betrachtetest eben das Bild sehr traurig, als ich hereinkam.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ich? –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Ich bemerkte es wohl. Dies Gemälde macht dich wirklich melancholisch, – häng' es in
+              das Nebenzimmer.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Laß es! Diese Melancholie ist mir sehr angenehm; – es ist eine gewisse Wehmut, in die
+              mich dies Porträt meines verstorbenen Bruders versetzt, – ich denke dabei an meine
+              Kinderjahre zurück. – Laß es immer, es ist ja das einzige, was ich von ihm
+              übrigbehalten habe. – Du hast mir schon oft gesagt, ich möchte es wegnehmen, – wie
+              kann es dir mißfallen, wenn ich es zuweilen mit einiger Rührung betrachte?</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Mißfallen, Luise? Wie könnte mir an dir etwas mißfallen? – Aber ich weiß nicht, – es
+              ist wirklich eine sonderbare Grille, – sieh, ich wollte, dein Bruder hätte sich in
+              einer andern Stunde malen lassen. – Es ist ein schönes, ein ausdrucksvolles <pb n="71"
+              /> Gesicht, sein Auge, seine Stirn kündigt den denkenden Mann an, – aber keiner von
+              den Zügen in dem Bilde, die ich an dir so sehr liebe. – Es gibt viele Gesichter, die
+              mich auf eine seltsame Art von jeder Vertraulichkeit zurückschrecken, die immer noch
+              etwas Fremdes behalten, wenn man sie auch seit Jahren kennt, – dies Bild gehört zu
+              diesen Leuten. – Sieh, diese Falte um den Mund, – sie hat so etwas Zurückstoßendes, –
+              nichts Boshaftes, – aber eine gewisse so feststehende Kälte, daß es scheint, als
+              könnte sie sich von keiner Rührung, von keinem Lächeln hinwegschmelzen lassen.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Du bist doch auch in allen Sachen Schwärmer, lieber Karl.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Ich gestehe, daß es bloße Grille ist, und darum laß es nur! – Sollte ich auch so früh
+              schon mit dir zu streiten anfangen? Die ersten, goldnen Tage unsrer Ehe sind ja kaum
+              verflossen, – nicht wahr, Luise, wir müssen kein schlimmes Beispiel geben?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Freilich nicht, Karl. – Sollten wir jemals weniger glücklich sein, als wir es jetzt
+              sind?</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Gewiß nicht, Luise, – wenn du dich nur nie unglücklich fühlst.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>An deiner Brust ewig nicht.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Wirst du in unsrer ländlichen Einsamkeit auch nie die große Welt vermissen,
+              Luise?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Die große Welt? – War es nicht von jeher mein Lieblingswunsch, auf dem Lande, nur der
+              schönen Natur und dir zu leben? – Die kleine große Welt<note place="foot">»Wie klein,
+                wie armselig ist diese große Welt!« Tellheim in Lessings »Minna von Barnhelm«, V,
+                9.</note>, wo man sich ewig in einem Zirkel von Langeweile, Affektation und schalen
+              Komplimenten herumdreht, – ach nein, ich fühle, es ist hier besser, mir bleibt nichts
+              zu wünschen übrig.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Auch ich, Luise, auch ich fühle mich ganz glücklich. – Ich habe den ganzen Tag über
+              schon so süß geträumt, ich habe mir unser ganzes Leben so reizend gedacht. – Wir leben
+              hier <pb n="72"/> nun den einen Tag so wie den andern, in einer schönen,
+              ununterbrochenen Einförmigkeit; unser Garten, alle die schönen Gegenden umher, werden
+              uns nach und nach bekannt, wie wir uns selbst, – Luise, Kinder hüpfen um uns her, eine
+              Quelle der Freude öffnet sich nach der andern, – Enkel; – mit Falten in der Stirne,
+              vor Alter zitternd, gehn wir dann froh, Arm in Arm, dem letzten Tage entgegen; wir
+              erzählen uns die Geschichte unsers Glücks und durchleben in der Erinnerung noch einmal
+              den freudenreichen Kreis. – Bei der Linde hinter deinem Hause sah ich dich zuerst, –
+              so erzähl' ich dir beim Sonnenuntergang, – ich brach dir eine Hyazinthe, die du mit
+              süßem Lächeln annahmst. – Weißt du noch, wie du mir auf dem Klavier oft noch so spät
+              etwas vorspieltest, wie ich hundertmal Abschied nehmen wollte und doch immer noch
+              dablieb, – wie ich es endlich einmal in einer dämmernden Laube wagte, dich beim
+              vertraulichen Schein des Abends zu küssen, wie du den ganzen Abend über so still warst
+              und am Morgen wieder so freundlich wie sonst – Luise, nicht wahr, wir werden glücklich
+              sein?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Gewiß! gewiß! – Ach ja, diese Welt hat viele Freuden, sie wäre ein Paradies, wenn
+              alle Menschen so dächten, so empfänden wie du!</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Es wäre nicht gut, du selbst hast ja so oft über meine auffahrende Heftigkeit
+              geklagt.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Und nicht ohne Ursach'. Wie oft hast du mir nicht dadurch schon tausend Angst
+              gemacht. – Etwas sanfter, lieber Karl, und du bist der beste aller Menschen, – wenn
+              ich dich auch vielleicht deiner Wildheit wegen zuerst liebte. Bald stürzest du mit
+              unbändigen Pferden, bald entzweist du dich mit einem Fremden, der dich zu erschießen
+              droht, – wirst du mir noch öfter solchen Kummer machen?</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Nicht doch, sei ohne alle Sorgen. – Auch dieses Grams um mich wirst du dich einst mit
+              Vergnügen erinnern. Welche Erinnerung kann die Liebe nicht versüßen? – <stage>(Indem
+                er Luisen in die Arme faßt.)</stage> Ach Gott, wenn ich der Zeit noch gedenke, wie
+              du mir fremd warst, – oft kann ich es gar nicht fassen, daß du nun <emph>mein</emph>
+              bist! – Luise, jeder Augenblick meines Lebens ist <pb n="73"/> mir itzt kostbarer, als
+              sonst eine Woche, da ich dich noch nicht kannte.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Und du kannst noch fragen, ob ich die Freuden der großen Stadt vermissen werde?</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Wir wollen sie gern vermissen; hier in einer einsamen Häuslichkeit leben wir mit
+              unserm kleinen Vermögen froh und glücklich, pflanzen unsern kleinen Garten und
+              genießen jede Stunde; in deinen Armen erhole ich mich von meinen mühevollern Arbeiten,
+              – so schwimmen wir den schönen, hellen Strom des Lebens hinab, bis unser Kahn nach und
+              nach auseinander zu fallen droht, und dann, Luise, das hoff' ich zu Gott, landen wir
+              an einer schönen Insel.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Scheitern an keiner Klippe.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Und leben in unsern Nachkommen weiter.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Wir gehn sanft unter, wie ein schöner Sommertag, und sehn dann noch einmal heiter auf
+              unsre Bahn zurück, – ohne Reue, ohne Thränen.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Auch ohne Seufzer!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(seufzend).</stage>
+            <p>Ohne Seufzer! –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Und doch seufztest du eben. Aber auch die Freude kann den Busen schwellen und das
+              Herz schwer machen.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Jawohl, Karl.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(sich nach dem Bilde wendend).</stage>
+            <p>Dein Bruder war nicht so glücklich. – Nicht wahr, Luise, so hat er nie gelächelt, wie
+              du itzt lächelst? – Es war ein <emph>kalter</emph> Mann?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Nein, gewiß nicht, – ach, er war oft nur zu warm, zu gefühlvoll.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>So hatte der Maler desto weniger Gefühl.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(ihn anlächelnd).</stage>
+            <p>Mußt du denn immer wieder auf dies Bild zurückkommen?</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Verzeih! – Hast du kein Messer?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(scherzhaft).</stage>
+            <p>Du willst mich doch nicht gar des Bildes wegen erstechen? – Hier.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Bewahre! ich wollte dir nur ein Geschenk machen.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ein Geschenk?</p>
+          </sp>
+          <pb n="74"/>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Sieh, Luise, diesen Apfel! Es ist der erste reife im ganzen Garten.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Wirklich?</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Sieh das schöne Rot, – wie vom Abendschein überflogen oder wie deine Wangen.
+                <stage>(Indem er ihn teilt.)</stage> Da hast du die rote Hälfte.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <stage>(indem sie sie auf das Klavier legt.)</stage>
+            <p>Ich will sie mir zum Abend aufheben.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Vergiß sie auch nicht.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Gewiß nicht.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Ei, du böses Kind, du erinnerst mich auch an nichts; ich wollte ja fortgehen. Adieu,
+              Luise!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Kömmst du bald wieder?</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>In einer halben Stunde.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Gewiß?</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Ich will durch den Garten gehn, der Weg ist dort etwas näher. <stage>(Er
+                geht.)</stage></p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Karl!</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(bleibt stehn).</stage>
+            <p>Was willst du?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Warte nur noch einen Augenblick, ich will dich wenigstens bis zur Gartenthür des
+              Nachbars begleiten, – sieh, wie schön die Sonne untergeht. – Komm! <stage>(Sie faßt
+                ihn unter den Arm, beide gehn ab.)</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Ramstein in Reisekleidern. Ein Aufwärter. Beide treten nach einer Pause
+            herein.</stage>
+          <sp who="#aufwaerter">
+            <speaker>Aufwärter.</speaker>
+            <p>Spazieren Sie indes nur hier herein.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Also nicht zu Hause? – Auch nicht <emph>Madam</emph> Waller?</p>
+          </sp>
+          <sp who="#aufwaerter">
+            <speaker>Aufwärter.</speaker>
+            <p>Ich glaube wohl. Sie wird wahrscheinlich in dem Garten sein, ich will sie sogleich
+              rufen. <stage>(Er geht ab.)</stage>
+            </p>
+          </sp>
+        </div>
+        <pb n="75"/>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ramstein! Nun bist du da! <stage>(Er betrachtet das ganze Zimmer.)</stage> Dies ist
+              also ihre Wohnung? – Wenn sie nun kömmt, was soll ich ihr sagen? Was wird sie mir
+              sagen? – Gott! <emph>hier, hier</emph> lebt sie also, – <emph>hier</emph> in seinen
+              Armen! Mir ist wunderbar zu Mute. – Alles ist hier in den Straßen so häuslich, so
+              ländlich, – wie ich von dem Berg herabfuhr und mir die Glocken des kleinen Kirchturms
+              entgegentönten, – wie ich über die Brücke wollte – und der Strom ganz im Rot des
+              Abends schwamm, – wie ich von der Anhöhe in die kleinen Straßen hineinsah, – der Rauch
+              aus den Dächern stieg, – Gott! mein Herz klopfte so ungestüm und steht noch nicht
+              still. – Alles hier so patriarchalisch, alles in einer glücklichen Eingeschränktheit,
+              – so nachbarlich und zutraulich, – und ich komme hieher, dieses Glück zu stören? –
+              Nein! nur noch einmal sehn will ich sie, ewig von ihr Abschied nehmen, – das kann sie
+              mir nicht verargen. Ich hätte keine Ruhe gehabt, wenn ich sie nicht noch einmal gesehn
+              hätte! – – <stage>(Er erblickt das Bildnis.)</stage> – Sie hat noch mein Gemälde! –
+              Ach! wie es gewaltsam in meinen Busen zurückströmt! Wie alle Erinnerungen so
+              schneidend wiederkommen! – Luise! – Ach, in jenen holdseligen Tagen, als ich ihr
+              gegenüber saß und sie die Langsamkeit des Malers schalt, – wie sie immer noch etwas an
+              dem Gemälde zu tadeln hatte, wie es ihr immer noch nicht schön und vollkommen genug
+              war, wie mein Blick sich in ihr Lächeln verwickelte, – ach, es zerdrückt mir das Herz!
+              – Warum kann ich es nicht vergessen? – Es war eine schöne Zeit, – die Welt war mir
+              damals doch ganz anders, – es war eine schöne Zeit. – Was konnt' ich nicht bei jeder
+              Blume, bei jedem grünen Blatt empfinden! Welcher Sinn der Schönheit lag in jedem
+              rauschenden Baum, – alles ist jetzt so ausgestorben. – <stage>(Er schlägt schwermütig
+                einen Ton des Klaviers an.)</stage> Es ist noch dasselbe Klavier, auf dem sie mir so
+              oft etwas vorgespielt hat. – Wie sie mir so oft Lieder sang und ich ihr so sorgfältig
+              die Blätter umschlug, – wie sie mich dann beim Schluß anlächelte und mir boshaft
+              alles, Ruhe, Freude, Leben stahl, – um es mir nie zurückzugeben! – <stage>(Bitter <pb
+                  n="76"/> lächelnd.)</stage>
+              <emph>Madam Waller!</emph> – Verdammt sei dieser fremde, verhaßte Name! – Ich höre
+              jemand kommen. – Mein Herz klopft hörbar. – Ob sie es ist? – Himmel, wo werd' ich die
+              Fassung hernehmen, nur ein Wort zu sprechen?</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <stage>Ramstein. Luise.</stage>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(hereintretend).</stage>
+            <p>Verzeihen Sie, daß ich Sie habe warten lassen.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein</speaker>
+            <stage>(will auf sie zueilen, er fühlt sich zu schwach und bleibt stehn; seine
+              Empfindung löst sich in den Ausruf auf).</stage>
+            <p>Luise!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(die ihn erkennt, erschreckend).</stage>
+            <p>Ferdinand!</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ach ja, ja! sie ist es noch! es ist noch der Ton der Stimme, der sonst diesen Namen
+              sprach, – ach Luise! Luise!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Gott! – Ferdinand! – Mir –</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>O Himmel, nun hab' ich ja den Augenblick gelebt, den ich zu leben wünschte, ich habe
+              sie ja gesehn, sie hat mich angeblickt, – nun habe ich diese Freude überstanden, nun
+              mag kommen, was da will. – <stage>(Pause.)</stage> Du sprichst nicht? – Du schlägst
+              die Augen nieder? – Verdien' ich denn kein Wort? – Gott im Himmel, Luise, nur einen
+              Blick, nur einen <emph>Laut</emph> aus jener Zeit, oder du machst mich rasend!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Seltsam! – Wie? – Sie kommen zu mir?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Du wunderst dich darüber? – Stand es in meiner Macht, <emph>nicht</emph> zu kommen? –
+              O Luise, sehn mußt' ich dich noch einmal, ich konnte nicht so sterben, und hätt' ich
+              mich dadurch von der Verdammnis loskaufen können!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Und warum – <emph>warum</emph> kommen Sie?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>O frage mich das nicht. – Ach Luise, alles, alles ist in dir ausgestorben. –
+                <emph>Sie</emph> – so begrüßest du deinen Geliebten, der vom Grabe herkömmt, um das
+              letzte Lebewohl von deinen Lippen zu holen und dann ins Grab zurückzugehn? – Auch die
+              letzte, fernste Ahndung meiner verschwundenen Seligkeit willst du mir rauben? – Du
+              bist zu grausam, Luise.</p>
+          </sp>
+          <pb n="77"/>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(verlegen).</stage>
+            <p>Ramstein, – was wollen Sie, – wo kömmst du her?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein</speaker>
+            <stage>(sie mit festem Auge anblickend).</stage>
+            <p>Luise! <stage>(Luise sucht ihre Augen vor seinem Blicke zu verbergen.)</stage> Luise!
+              – Als wir schieden, dacht' ich nicht, daß wir uns <emph>so</emph> wiedersehen
+              würden.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(schmerzlich).</stage>
+            <p>Ferdinand!</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Nein, das glaubt' ich nicht. Ach Luise, warum hast du mir <emph>das</emph> gethan? –
+              Alles konntest du vergessen, alles? – Auch der letzte Funken der Flamme erstarb in
+              dir, die einst so hell für mich brannte? – Alles, alles? – O des wahnsinnigen Thoren,
+              der seine Seligkeit auf Weibertreue setzte! ich mußte verlieren, die Würfel fielen ja
+              aus der Hand eines falschen Spielers! – Ach, Luise!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>O sprich nicht mehr davon, Ferdinand, – es ist geschehn, – wir können es nicht
+              ändern, – und <emph>wollen</emph> es auch nicht ändern.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Nein, nein, wir <emph>wollen</emph> es nicht ändern. – O wie fremd bist du meiner
+              Seele geworden, – das ist nicht Luise, die mich einst ihren Ferdinand nannte.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Du bist mir fremd –</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ja, denn ich gleiche dem Bilde dort nicht mehr, dies ist nicht mehr der Mann, der
+              einst Luisens Blicke auf sich zog, – o was soll mir noch Gesundheit und Leben, da
+                <emph>sie</emph> mich nicht mehr liebt.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ferdinand, es ist genug.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>O ja, ja; – o ich danke dir, Luise. Gottlob! ich fühle den Tod in meinem Innern,
+              lange werd' ich 's nicht mehr machen, dafür hast <emph>du</emph> schon gesorgt.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ich? – ich? – Ferdinand, du thust mir sehr unrecht. – Ach Gott, ich habe viel um dich
+              gelitten. – Grausamer, schon war ich auf dem Wege dich vergessen zu können, und nun
+              kömmst du zurück, schadenfroh, wie ein boshafter Geist, mich an alles zu erinnern, was
+              einst war und nicht mehr ist.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>O, daß es nicht mehr ist, Luise!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Und du sagst das? – O Ferdinand, du solltest mir doch die Vorwürfe erlassen, die ich
+                <emph>dir</emph> dann machen muß.</p>
+          </sp>
+          <pb n="78"/>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Vorwürfe? Luise, mir Vorwürfe?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Wenn ich an deinen zärtlichen Abschied denke, wenn ich daran denke, wie schmerzhaft
+              unsre Seelen zuckten, als sie voneinander gerissen wurden, – deine ersten Briefe,
+              alles so voll von der Sprache des Herzens, – so ganz die hingeströmte Empfindung, –
+              und kurz nachher –</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Nun, Luise, und nachher? – O sprich, sprich weiter!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Mich so bald zu vergessen! – Gar keine Briefe von dir, – bis ich nach einem halben
+              Jahre durch das Gerücht erfuhr, du seist in der Schweiz verheiratet, – o Ferdinand,
+              mein Herz war schwer verwundet, nur langsam fing es an zu genesen, – ich lernte meinen
+              Karl kennen, und – <stage>(eine Pause)</stage> warum antwortest du nicht?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein</speaker>
+            <stage>(mit starrem Blick, kalt).</stage>
+            <p>O, sprich nur weiter.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ich fand dich so sehr in ihm wieder, nur er noch etwas stürmischer, – meine Eltern
+              waren indes gestorben, – sein Bitten, sein Flehn, – er liebte mich mit einer so
+              heißen, so inbrünstigen Liebe, ach, ich war für diesen Kampf zu schwach, – ich gab ihm
+              meine Liebe mit meiner Hand, – wir verließen meinen Geburtsort, ohne daß man wußte,
+              wohin wir gingen, – wir zogen hieher, – und du weißt das Übrige.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ach, ich weiß von mir selbst nichts.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Meinen Brief, den ich dir schrieb, vergib mir, er war kalt, – vielleicht noch etwas
+              mehr, – ich wollte dir jede Kränkung ersparen, – darum meldete ich dir nur mit wenig
+              Worten meine Heirat, – ich hatte von einem Fremden deinen Aufenthalt erfahren, – ich
+              hätte dir nicht schreiben sollen, wenigstens nicht so, – dir nicht den Ort meines
+              Aufenthalts nennen, – o wie gereute mich dieser Brief, als ich ihn abgeschickt hatte,
+              – konnt' ich aber deinen seltsamen Entschluß auch nur ahnden! – Du kömmst zurück, mir
+              Vorwürfe zu machen, mich zu kränken, da du selbst meine Liebe so grausam verschmäht
+              hast; – o Ferdinand, so viel hätt' ich doch wohl um dich verdient, daß du dies nicht
+              thatest?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>O meine Ahndungen; – <stage>(Wehmütig lächelnd.)</stage> Luise, – ich war ja nicht
+              verheiratet, – ach, als ich dir nicht schrieb – <stage>(Mit einer Thräne im
+                Auge.)</stage> da lag ich auf dem <emph>Sterbebette</emph>.</p>
+          </sp>
+          <pb n="79"/>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(zusammenfahrend).</stage>
+            <p>Sterbebette? – Krank? – krank, Ferdinand?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>O wär' ich doch gestorben, so hätt' ich deine Liebe mit ins Grab genommen. – Luise! –
+              es sollte nicht sein.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Krank war mein Ferdinand, nicht treulos? – O Gott, Gott! er war krank? – O vergib,
+              vergib mir.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Was hab' ich dir itzt zu vergeben, Luise? – Das Schicksal ist sehr grausam, – ich war
+              so schwach, daß ich dir nicht einmal schreiben konnte, ein Brief von einer fremden
+              Hand sollte dich nicht erschrecken, – meine überkluge Zärtlichkeit war es, die mich
+              betrog.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ach, Ferdinand, warum hast du mir das gesagt? O, hättest du doch geschwiegen. – Ach,
+              alles kömmt zurück, alles, was ich einst empfand, ach! mit boshafter Freude tritt die
+              schöne Vergangenheit auf mich zu. Ferdinand! lieber Ferdinand, an diesem Irrtum hing
+              mein Glück!</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p><emph>Lieber</emph> Ferdinand, – o, das kömmt nicht aus deinem Herzen, es darf nicht
+              aus deinem Herzen kommen, – kein Wunsch, kein Seufzer darf zu mir zurück über diesen
+              furchtbaren Fels, den die <emph>Tugend</emph> zwischen uns wirft. – Du bist für mich
+              verloren!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p><emph>Verloren</emph> bin ich, Ferdinand! – Auf dem Sterbebette war mein Ferdinand,
+              als ich ihn verwünschte, als ich seufzte: warum hab' ich ihn je gesehn?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Das Verhängnis spielt fürchterlich mit dem Glück der Menschen, Luise, – laß es, es
+              ist nicht anders. <stage>(Mit Bitterkeit.)</stage> Und warum wollen wir denn auch
+              glücklich sein, dazu wurden wir ja nicht geboren.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>O Ferdinand, hör' auf, du spaltest mein Herz –</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Von einer Woche hofft' ich zur andern, – endlich ward ich gesund, – ich schrieb – du
+              hattest damals deinen Geburtsort schon verlassen, – mein Brief kam unerbrochen
+              zurück.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Gott!</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ich stand da wie betäubt, – ich wollt' es lange nicht glauben; du hattest mich
+              verwöhnt, Luise, ich glaubte noch <pb n="80"/> an Glück in dieser Sterblichkeit, das
+              hättest du nicht thun sollen, ich fuhr um so schrecklicher aus meinem Wahne auf.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>O Ferdinand, schone meiner!</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Nur ein fürchterlicher Trost blieb mir noch übrig, – denn daß du mich vergessen
+              habest, daran dacht' ich nicht, – ich glaubte dich <emph>tot</emph>, – ich wollte
+              zurückreisen, es erforschen, – dich finden, oder auf deinem Grabe sterben, – aber die
+              Ungewißheit, die Furcht, – eine neue Krankheit warf mich aufs Lager hin.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ferdinand, ich war es nicht wert, ich Elende, – o Gott! du hast viel um mich
+              gelitten.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Viel? – O <emph>das</emph> war noch wenig. – Als ich wieder die erste Lebenskraft in
+              meinem Körper fühlte, da erhielt ich deinen <emph>letzten</emph> Brief.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>O Himmel!</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Deinen <emph>letzten</emph> Brief. – Es waren meine letzten frohen Augenblicke, meine
+              letzten Augenblicke der Hoffnung, – du unterschriebst dich <emph>Luise Waller</emph>.
+              – O Luise, ich fluchte dir in den ersten Augenblicken. – Doch wem hätt' ich damals
+              nicht geflucht: Ich verwünschte mich, die Welt, das Schicksal, deinen Brief zerriß ich
+              mit den Zähnen. – Beschreiben kann ich dir meine Gefühle nicht, es waren die
+              gräßlichsten Stunden meines Lebens. – Seitdem hab' ich viel erduldet, tausendfache
+              Höllenqualen, – aber ich kann mich kaum dieses Zustandes noch erinnern, – es ist
+              vorüber. – Ich reiste hieher, von dir Abschied zu nehmen, dich noch einmal zu sehn,
+              dies sollte meine letzte Seligkeit sein.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ach Gott! du hättest nicht kommen sollen.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Nicht? O du hast recht, Luise, ich hätte ja auch sterben können, ohne dich noch
+              einmal zu sehn, – wozu geschah es auch, – ich konnte ja leicht einige Tage
+                <emph>später</emph> sterben und dir ein paar mißvergnügte Stunden ersparen.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ach Ferdinand, glaubst du das wirklich von mir? – daß du mich so bitter in meinem
+              Unglück kränkst, das wird dich wahrlich einst gereuen.</p>
+          </sp>
+          <pb n="81"/>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Du weinst Luise, du weinst? O Himmel! vergib, vergib dem Elenden, der zu dir aus dem
+              Staube hinauflästert! – Ich kränke <emph>dich</emph>? – <emph>Ferdinand Luisen?</emph>
+              von deren Blicken er einst lebte, – o vergib, vergib mir!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Dein Tod liegt schwer auf meiner Seele, – Ferdinand, vergib du <emph>mir</emph>!</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Luise, ich gehe freudig aus dieser Welt, ich habe dich noch einmal gesehn, – du hast
+              mich noch nicht vergessen, das ist mehr, als ich erwartete: – ja, wir waren für
+              einander geschaffen, ein Ohngefähr, ein unglücklicher Mißverstand, – aber
+                <emph>dort</emph> –</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Dort! Ja da ist alles anders als hier, Ferdinand. – Dort wollen wir uns freudiger
+              wiedersehn. <stage>(Pause.)</stage> Aber jetzt, – o verzeih mir, Lieber, verzeih dem
+              ängstlichen Weibe, wenn ich dich jetzt bitte, – fortzugehn. – Ach Gott, da siehst du
+              mich nun wieder mit dem wehmütigen Blick an, den ich so fürchtete, – ach, nicht
+                <emph>diesen</emph> Blick, Ferdinand, nicht so, – ich bitte dich, – ich kann ihn
+              nicht aushalten. – Ach, ich fürchte in jedem Augenblick Karls Ankunft, er muß sogleich
+              kommen, – <stage>(Ängstlich seine Hand ergreifend, dringend.)</stage> Lebe, lebe wohl,
+              Ferdinand, – ach, ich liebe dich noch wie ehemals, – aber, – es ist, – ach, es war –
+              geh! geh! – sieh, ich weine, und kannst du mehr als Thränen von mir verlangen?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein</speaker>
+            <stage>(mit erzwungener Kälte).</stage>
+            <p>Freilich nicht, – ich habe nun mein letztes Glück genossen, – lebe wohl, – meine
+              letzte Bitte ist: vergiß mich! – Lebe wohl, wir wollen scheiden. – <stage>(Er reicht
+                ihr abgewandt die Hand.)</stage> Lebe wohl!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(mit weinerlicher, gepreßter Stimme).</stage>
+            <p>Lebe wohl!</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Wir sehn uns nicht wieder. – <stage>(Ihre Hand drückend.)</stage> Lebe wohl, Luise! –
+              ein schwarzer Vorhang fällt zwischen uns, – mit diesem Händedruck gebe ich dir deine
+              Eide zurück, – wir haben uns nicht gekannt. – Lebe ewig wohl!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(schluchzend).</stage>
+            <p>Lebe – wohl – –</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein</speaker>
+            <stage>(geht an die Thür, bleibt stehn; Pause; er blickt rückwärts und sieht Luisen mit
+              einem langen, wehmütigen Blick an; Luise steht nachdenkend und wagt es nicht, sich
+              umzudrehen).</stage>
+            <p>Nein, ich kann nicht, Luise; du <pb n="82"/> siehst mich gern gehen, ich weiß es,
+              aber ich kann jetzt wahrlich noch nicht.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>O mein Herz! mein Herz! – es blutet, Ferdinand! – Ach, ich möchte dich so gern
+              bitten, noch hier zu bleiben, aber ich wage es nicht, mir ahndet –</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ich hatte überdies noch etwas vergessen. – Ach Luise! mit welchem schmerzlichen
+              Vergnügen ich unsern Abschied verlängere, der Giftbecher ist so süß! <stage>(Er zieht
+                seine Brieftasche hervor.)</stage> Sieh, es ist noch dieselbe, die du mir
+              schenktest, – du sagtest, ich sollte deine Briefe drin bewahren, ich hab' es gethan; –
+              hast du die meinigen noch?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Deine Briefe?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ja, Luise.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Mein Karl hätte sie finden können, – ich habe sie – <stage>(furchtsam)</stage>
+              verbrannt –</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Verbrannt? – <stage>(Mit verhaltenen Thränen.)</stage> Das hättest du nicht thun
+              sollen, Luise. – Verbrannt! – Gott! und ich bewahrte die deinigen wie ein Heiligtum! –
+              Nimm sie hier zurück; – es fehlt keiner, – nimm sie, – ich wollte einst, sie sollten
+              mit mir begraben werden, aber Luise hat die meinigen verbrannt, – auch der letzte
+              Faden unsers Bundes ist zerrissen.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(empfängt sie mit zitternden Händen).</stage>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Du erinnerst dich wohl nicht mehr, was du mir damals schriebst? – Ach Luise! Kennst
+              du noch diese Rose? – Du schenktest sie mir auf einem Spaziergang, es war ein schöner
+              Abend, – sieh! ich habe sie so viele Jahre aufbewahrt, – noch diesen Kuß, – noch diese
+              Thränen darauf, – und hier hast du sie zurück!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ferdinand!</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Hier ist noch dein Schatten!<note place="foot">Schattenriß, Silhouette.</note> – Nimm
+              ihn hin, du gabst ihn mir in einer schönen Stunde, – nimm ihn, – ein
+                <emph>Schatten</emph> kann mir nicht genügen, – nimm, denn alles dies war nie mein.
+                <stage>(Er zeigt ihr die Brieftasche.)</stage> Sieh, – sie ist leer, – <pb n="83"/>
+              nun hab' ich nichts mehr in dieser Welt von dir, als meinen Schmerz. – Und nun lebe
+              wohl!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Du willst gehn? – <emph>so</emph> von mir gehn? – O bleibe noch, nur noch eine
+              Minute, sammle dich etwas.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Wozu? – <stage>(Er sinkt ermattet aufs Sofa.)</stage></p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ferdinand! du hast mich zeitlebens unglücklich gemacht.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Luise! sieh um dich! – kömmt es dir auch so finster vor, oder schwebt der Tod schon
+              vor meinen Augen?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Es ist Abend geworden. – Es kömmt jemand. – Gott, er ist es, ich kenne seinen Gang. –
+                <stage>(Ramstein steht vom Sofa auf.)</stage> – Was wird er sagen?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Laß ihn, – ich will ihm alles, doch nein, – sage, ich sei einer deiner Anverwandten.
+              – Ich will dann sogleich gehn. <stage>(Waller tritt herein.)</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Sechster Auftritt.</head>
+          <stage>Vorige. Waller.</stage>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(ohne Ramstein zu sehn).</stage>
+            <p>Nun, da bin ich wieder, Luise. – Nicht wahr? ich bin etwas lange geblieben?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(die sich indes zu sammeln gesucht hat).</stage>
+            <p>Das ich nicht wüßte, denn ich habe unterdessen einen angenehmen Besuch gehabt – Herr
+              Ramstein, einer meiner Verwandten, der von seinen Reisen zurückkömmt.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(der ihn umarmt).</stage>
+            <p>Sein Sie uns tausendmal willkommen! Sie bleiben doch diesen Abend bei uns?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ich –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Ohne alle Umstände. Sie sind ein Verwandter meiner lieben Luise, und wir wollen also
+              als Freunde miteinander umgehn. – Aber Luise, du hast indes etwas Wichtiges vergessen,
+              es ist hier finster.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ich will gleich Licht besorgen. <stage>(Sie geht ab.)</stage></p>
+          </sp>
+        </div>
+        <pb n="84"/>
+        <div type="scene">
+          <head>Siebenter Auftritt.</head>
+          <stage>Waller. Ramstein.</stage>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Verzeihen Sie, ich wollte eigentlich schon wieder fort –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Fort? Wohin? – Sie wollen uns nicht das Vergnügen Ihrer Gesellschaft schenken?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ich reise morgen früh schon weiter –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Um so eher müssen Sie heut' abend bei uns bleiben.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ich muß noch einen Gasthof suchen –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Sie werden keinen finden, der nur mittelmäßig wäre; die Gasthöfe sind in dieser
+              kleinen Stadt äußerst schlecht. – Sie schlafen hier in meinem Hause, es ist wenigstens
+              bequemer und angenehmer als der Gasthof: Sie haben eine hübsche Aussicht in einen
+              kleinen Garten.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Sie sind zu gütig –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Sie müssen mir das nicht abschlagen. – Haben Sie Sachen bei sich?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Nein, – sie stehn im nächsten Städtchen, ich war mit einem Wagen hiehergefahren, –
+              auch um Sie zu sehn.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Und wollten uns doch schon wieder verlassen? – Nun, – Sie bleiben; ich höre nicht
+              eher auf, Sie zu quälen, bis Sie ja gesagt haben.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ich nehme Ihre Freundschaft an, – nun, – ja also.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Das ist schön!</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Achter Auftritt.</head>
+          <stage>Vorige. Luise mit Lichtern.</stage>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Du siehst krank aus.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Nicht doch, – der Schein von den Lichtern.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Wirklich. – <stage>(Luise setzt das eine Licht auf das Klavier, das andere auf einen
+                Tisch; – Waller fixiert Ramstein mit einem Blick.)</stage></p>
+          </sp>
+          <pb n="85"/>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Verzeihen Sie, daß Sie auf das Abendessen etwas warten müssen, – Ihr angenehmer
+              Besuch war uns so unvermutet.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein</speaker>
+            <stage>(verwirrt).</stage>
+            <p>Sie –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Ihr Gesicht kömmt mir so äußerst bekannt vor –</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(mit einem Seitenblick nach dem Gemälde, leise).</stage>
+            <p>Himmel! <stage>(Sie nimmt schnell das Licht vom Klavier und stellt es auf den
+                Tisch.)</stage></p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ihnen?</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Waren Sie nie in Hamburg?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Nein.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Sonderbar, mir ist, als hätt' ich Sie schon oft gesehn, – aber ich kann mich gerade
+              nicht erinnern – <stage>(Luise hat sich im Dunkeln ans Klavier gestellt und
+                klimpert.)</stage></p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Spielen Sie nicht?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Nur sehr wenig,</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Wenn ich bitten dürfte –</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Sehr gern, wenn es Ihnen nicht Langeweile macht <stage>(Sie schlägt ein Buch auf;
+                Ramstein bringt ihr das Licht hin, und schlägt ein andres Blatt auf)</stage></p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein</speaker>
+            <stage>(leise).</stage>
+            <p>Dies, – o Himmel, – diese Noten sind mir so bekannt, – dies Lied, das ich dir einst
+              selbst komponierte.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(singt und spielt).<note place="foot">Die folgenden Verse sind der Anfang eines
+                früher sehr beliebten Liedes (1773) von Ludwig Heinrich Christoph Hölty (1748–76),
+                das sogar noch in den 2. Band von Arnims und Brentanos Volksliedersammlung »Des
+                Knaben Wunderhorn« (1808) Aufnahme gefunden hat.</note></stage>
+            <lg>
+              <l>Wie war ich doch so wonnereich,</l>
+              <l>Dem Kaiser und dem König gleich,</l>
+              <l>In meinen Jünglingsjahren,</l>
+              <l>Als Julia, das schönste Kind,</l>
+              <l>Schön, wie die lieben Engel sind,</l>
+              <l>Und ich beisammen waren. –</l>
+            </lg>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(steht hinter ihnen, in einiger Entfernung; er schlägt den Blick auf und trifft
+              das Gemälde. Er fährt zurück und wird blaß; – mit forschenden Augen, während des
+              Gesanges, leise.)</stage>
+            <p>Wie? – Ja, wahrlich, – er ist es! – Nein! – Es kann, es ist nicht! – Und doch ist
+              er's! – <emph>Das</emph> wär' es also? – Gott! Wie mir ein kalter Schauder durch alle
+                <pb n="86"/> Nerven zittert! – Ein bleicher Nebel bebt um die Lichter, – sie
+              verlöschen. – Ich träume! – Ist das Luise dort? – Ja wahrhaftig! Ich träume nicht.
+                <stage>(Luise hat geendigt. Eine Pause.)</stage></p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Sie spielten schön, – aber die Musik finde ich <emph>jetzt</emph> nicht ausdrucksvoll
+              genug, – zu matt –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(tritt näher).</stage>
+            <p>Luise! Auf ein Wort – <stage>(Er führt sie beiseit, lachend.)</stage> Luise! – Nicht
+              wahr? – das ist das Porträt deines verstorbenen Bruders? – <stage>(Luise steht wie
+                versteinert.)</stage></p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Wollen Sie nicht fortfahren? <stage>(Pause.)</stage></p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(wie aus einem Traum erwachend.)</stage>
+            <p>Fortfahren? – Sie versprachen mir ja eben erst, hier zu bleiben.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ich meinte, – mich dünkt, Sie sehen sehr blaß aus –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Ich?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ja, wirklich.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Mir ist nicht recht wohl, – es ist im Zimmer hier so schwül, – ich habe heut' viel
+              gesessen –</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Es ist Mondschein.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Ja, – wollen Sie mich begleiten? So wollen wir ein wenig im Garten spazieren
+              gehn.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Mit vielem Vergnügen. – <stage>(Zu Luisen.)</stage> Wollen Sie uns nicht Ihre
+              Gesellschaft gönnen?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(auffahrend.)</stage>
+            <p>Nein, – ich, – verzeihen Sie, ich muß die Küche besorgen.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Kommen Sie! – <stage>(Geht mit Ramstein ab.)</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Neunter Auftritt.</head>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Das ist das Porträt deines verstorbenen Bruders? – Gewiß, ich weiß jetzt nicht, ob
+              Karl das wirklich gesagt hat, – es kann nicht sein. – Aber wovor wäre ich denn so
+              erschrocken? – Ich kann keinen andern Gedanken fassen, als mir diese Worte
+              unaufhörlich wiederholen, und mit eben dem Ton. – Was soll <pb n="87"/> ich anfangen?
+              – Soll ich ihm nach, ihm alles entdecken, – das würde mir das Leben kosten. – Gott!
+              wie kann <emph>eine</emph> Stunde alles verändern! – Karl! Ferdinand! – O Himmel,
+              warum gibt es diese <emph>beiden</emph> Namen in der Welt? – Warum lieb' ich Karln?
+              oder warum liebt' ich Ferdinand einst? – Das ist die Strafe der gebrochenen Treue, –
+              ich werde nicht wieder glücklich sein. – Gott, das wird ein schrecklicher Abend sein,
+              er wird mir gegenüber sitzen, – stumm und tot, – Karl neben mir stumm und tot; und
+              dann, – wenn er nun fort ist, wenn ich mit Karl allein bin, – es werden fürchterliche
+              Stunden sein! – Wenn ich doch diese Zeit verschlafen könnte, – oder indes tot sein, –
+              wie froh würd' ich erwachen, – oder auch nicht wieder erwachen, – denn was für
+                <emph>Freuden</emph> hab' ich itzt noch vom Leben zu hoffen? <stage>(Sie geht
+                ab.)</stage></p>
+          </sp>
+        </div>
+      </div>
+      <pb n="88"/>
+      <div type="act">
+        <head>Zweiter Aufzug.</head>
+        <stage>(Dasselbe Zimmer. – Die Vorhänge sind heruntergelassen; es ist Nacht. Eine Nachtlampe
+          brennt auf dem Tisch.)</stage>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>Luise.</stage>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(steht gebückt vor einem Schrank, in welchen sie Wäsche einpackt).</stage>
+            <p>Es ist schon Mitternacht vorbei. – <stage>(Mit einem tiefen Seufzer.)</stage> Ach
+              Gott! – Wie still alles umher ist, – still wie ein Totengewölbe; – mir bangt allein zu
+              sein, und doch mag ich nicht zu Karln gehn. Ob ich jetzt gehe? – Nein, nur noch ein
+              paar Minuten. – Es schlug so dumpf zwölf Uhr. – Nun war' ich ja ganz mit Einpacken
+              fertig, – und nun will ich auch gehn. Ach! ich möchte so gern, daß ich hier noch etwas
+              zu thun hätte, – aber es ist leider nicht wahr. – Ich bin so <emph>allein</emph>, –
+              und Ferdinands Bildnis sieht mich so wehmütig an, – nein, ich kann es nicht länger
+              hier aushalten, – ich will gehn. <stage>(Sie ist im Begriff abzugehn, die Thür öffnet
+                sich, und Ramstein tritt herein.)</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweiter Auftritt.</head>
+          <stage>Luise. Ramstein.</stage>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Luise!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Gott! Du schläfst noch nicht?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ich kann nicht schlafen, – mir ist so sonderbar.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Was fehlt dir? Dein Auge sieht so starr –</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ich weiß nicht, – es ist eine Kinderei, – hast du es wohl hören Zwölfe schlagen,
+              Luise?</p>
+          </sp>
+          <pb n="89"/>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(seufzend)</stage>
+            <p>Ach ja!</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>War es nicht schrecklich?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Es klang so hohl, so dumpf –</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Mir klang es wie meine Sterbeglocke.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Deine Sterbeglocke?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Der letzte Schlag, – so hart, – so fürchterlich schließend, – und hernach alles so
+              still, kein Laut in der ganzen Natur, – alles tot! <emph>tot</emph>, Luise! – Mir war,
+              als würd' ich es nicht hören Eins schlagen.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Wie kömmst du darauf?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Der Wind zittert so in den Fenstern, es ist für mich eine schreckliche Nacht, – als
+              ich mich so allein im Zimmer sah, überfiel mich plötzlich ein sonderbares Entsetzen, –
+              es war, als ständen fremde Männer um mein Bett, die mir mit fürchterlichen Gesichtern
+              den Zugang versperrten.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Du bist sehr krank, – lieber Ferdinand, – und doch steckst du mich mit deiner Furcht
+              an, – seh' ich eben so blaß aus wie du?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Du bist sehr matt.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Horch! wie der Wind um die Ecke der Straße winselt, – es ist wirklich schauerlich. –
+              Das Licht brennt so bleich und matt, – es macht durch die Dämmerung das kleine Zimmer
+              wie einen großen, weiten Saal. – <stage>(Sie schließt sich näher an Ramstein. Waller
+                tritt leise herein und bleibt im Hintergrunde, in der Dunkelheit stehn.)</stage></p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Wir sind krank, Luise, und in der Krankheit wird der Geist wieder zum Kinde.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Du hast recht. – Ach, Ferdinand!</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Warum seufzest du so tief?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Wir sehn uns nicht wieder.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Diesseits nicht.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Diesseits nicht.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Vielleicht auch nicht jenseits, – ich fange an, an allem zu zweifeln.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ich habe es nie so gefühlt, als grade jetzt, was es heißt: dich nicht wieder zu sehn!
+              – Ach, Ferdinand, ich liebe dich <pb n="90"/> noch, ich kann's mir nicht verhehlen, du
+              hast mich unglücklich gemacht. – Dich nicht wiedersehn und unglücklich sein.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Unglücklich?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ich werde nie dein bleiches Gesicht vergessen, nie diesen trüben Blick, der sich so
+              langsam aufhebt; – und auch Karl ist mir fremd geworden.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Wie das?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Du hast es nicht bemerkt? O gewiß, du hast es; so wie heut' war er noch nie, so
+              ernst, so in sich brütend, ohne ein Wort zu sprechen. Nur zuweilen sah er mich
+              seitwärts mit einem festen, prüfenden Blick an, – ich konnte nicht sprechen. – ich
+              suchte die ängstliche Stille einmal durch ein Husten zu unterbrechen, und mein Gesicht
+              glühte eine halbe Stunde, daß ich sie unterbrochen hatte, – er konnte es für Furcht,
+              böses Gewissen, wer weiß wofür, erklären. – Er hatte dein Bild erkannt.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Daher rührte seine Laune? Das Bild hatt' ich ganz vergessen. – O Luise, wir sind sehr
+              unbesonnen gewesen, ich hätte durchaus noch fortgehen sollen, ehe er mich erkannte, –
+              ich dachte gar nicht an dieses verwünschte Bild!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>O schilt es nicht, – ich hatte es auch vergessen, bis ich mit den Lichtern zurückkam.
+              – Du glaubst nicht, mit welchem Herzen ich spielte; du mußt es gesehn haben, wie meine
+              Finger zitterten und kaum den Ton anzuschlagen wagten, und wie ich endlich in der
+              quälendsten Angst fast die Saiten zersprengte. – Was sprach er denn mit dir im
+              Garten?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Nichts, – er ging stumm neben mir, ich hatte sonderbare Empfindungen, – der Mond
+              glänzte wunderbar durch das verschlungene Weinlaub, die Bäume standen so ernst da und
+              rauschten so wehmüthig, ich war die ganze Zeit über wie bezaubert, ich hatte alles
+              vergessen; ich verlor mich in Phantasien meiner Kindheit, – aber als wir zurückkamen,
+              – da sah er mich an, mit einem Blick, – o, ich werde diesen fürchterlichen Blick nie
+              vergessen, – es lag viel in diesem starren, bedeutungslosen Drehen des Auges, – so
+              kalt, so durchbohrend, so wild, als wollt' er durch mein Auge hindurch auf den Grund
+              meiner Seele schauen.</p>
+          </sp>
+          <pb n="91"/>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Er ist fürchterlich, wenn er zürnt. – Er wird sich vielleicht nie mit mir aussöhnen,
+              – Ferdinand, ich habe deiner Liebe ein großes Opfer gebracht.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Nein, das nicht. – Ich sterbe –</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>O sprich nicht so, lieber Ferdinand –</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ich sterbe – und werde nicht mehr genannt. Mit dem toten Feinde versöhnt man sich so
+              leicht, – du erzählst ihm unsre ganze Geschichte, – er müßte ein Unmensch sein, wenn
+              er dich nicht ebenso wie vorher lieben sollte.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Aber ich kann dich nicht wieder vergessen.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ach, Luise, – ich will dich nicht noch einmal daran erinnern. – Ich sterbe, – und
+              Luise vergißt mich, – sie weint, trauert – und lächelt endlich wieder. – Ferdinand ist
+              dann tot und kömmt nicht wieder zurück, sie in ihren Umarmungen zu stören.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ach Ferdinand, du lässest mich viel dulden.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Laß doch morgen das Haus sehr früh öffnen, ich muß noch vor Sonnenaufgang fort, – ich
+              kann deinen Mann nicht wiedersehn! Luise, nun laß uns Abschied nehmen. – Es ist eine
+              feierliche Stunde.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Du scheidest von mir.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Ich scheide. – Liegt itzt nicht alles, was ich je litt, worüber ich mich je freute,
+              wie ein Traum vor mir? Mir ist, als wäre so etwas nie wirklich gewesen. – Daß ich
+                <emph>dich liebte</emph>, daß ich <emph>dich verlor</emph>, diese beiden
+              Empfindungen sind die einzigen, die ich aus dem Ruin gerettet habe; alles übrige liegt
+              in wilden Trümmern.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Nun, dann ist auch aller Zorn in dir untergegangen?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Luise, ich <emph>liebe</emph> nicht mehr, aber ich kann auch nicht mehr
+                <emph>hassen</emph>, – ich nehme als Geist von dir Abschied. – Warum fährst du vor
+              diesem Gedanken zurück? – Und nun, Luise, wirst du mir nun meine letzte Bitte
+              abschlagen?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Was verlangst du?</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Umarme mich zum letztenmal, deinen Kuß will ich dann mit ins ruhige Grab nehmen. –
+              Thu es, Luise, ich werde dann freudiger sterben. <stage>(Luise umschlingt ihn mit
+                ihren Armen, <pb n="92"/> er küßt sie).</stage> Dieser Kuß ist das letzte Andenken,
+              das ich dir gebe. Hörst du, Luise? <emph>zuweilen</emph> denk' noch an mich.
+                <stage>(Luise weint und kann nicht sprechen.)</stage> Wenn's auch nur so kalt und
+              vorübergehend ist, wie man an einen gleichgültigen Bekannten denkt, nur
+                <emph>denk'</emph> zuweilen noch an mich, daß ich mit dem Troste sterben kann, ich
+              sei in deinem Gedächtnis nicht <emph>ganz</emph> gestorben. – Versprichst du mir das,
+              Luise?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(leise).</stage>
+            <p>Ja. – <stage>(Sie fährt erschrocken aus seinen Armen, laut schreiend.)</stage> Es
+              steht jemand hinter uns!</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Wo? – wo?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(ohne sich umzudrehen, hinter sich nach der Wand zeigend).</stage>
+            <p>Dort!</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Es sind unsere Schatten, Luise, – sieh, wie gräßlich verzerrt sie sich hin und her
+              bewegen.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ich mag nicht hinsehn. – Lebe wohl!</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Lebe wohl, – wenn ich fortdaure, soll mein Geist dich stets umschweben.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Nein, Ferdinand, nein – das nicht, o, ich bin zu schwach, – ich fühl's, ich könnte
+              wahnsinnig werden. – Höre, wie der Wind die Wetterhähne wirft! Es ist eine
+              fürchterliche Nacht.</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Nun, so lebe dann wohl!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Lebe wohl! – <stage>(Sie sieht ihn lange und bedeutend an.)</stage> Ach Gott, –
+              Ferdinand!</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Warum starrst du mich so an?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(langsam).</stage>
+            <p>Du siehst fürchterlich aus, – ganz wie eine Leiche! – <stage>(Erschrocken
+                zurückfahrend.)</stage> Hinweg! – Ich glaube, du bist tot!</p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein.</speaker>
+            <p>Luise! <stage>(Er will auf sie zu eilen.)</stage></p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Weg von mir! – <stage>(Sie geht schnell ab.)</stage></p>
+          </sp>
+          <sp who="#ramstein">
+            <speaker>Ramstein</speaker>
+            <stage>(sieht ihr lange nach; eine Pause; – mit schwerer Stimme.)</stage>
+            <p>Es war <emph>vorbei</emph>! – <stage>(Er öffnet die Thür und geht schweigend in sein
+                Zimmer)</stage>
+            </p>
+          </sp>
+        </div>
+        <pb n="93"/>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(steht wie betäubt und tritt hervor. Er geht auf und ab, seine Brust keucht, sein
+              Gesicht glüht, er will sprechen, er kann nicht. Eine Pause.)</stage>
+            <p>Verrat! – Verrat! – Himmel und Erde! – So stehn wir miteinander, Luise? – Betrogen!
+              Ha, wie es siedend zu meinem Herzen strömt! Luft, – Luft! – <stage>(Er geht umher und
+                steht wieder still.)</stage> Wie kalt bin ich auf einmal, – wie wüst ist mein Kopf,
+              – mir schwindelt! – – Luise! – Ein elendes, gemeines Weib! – Ich liebe sie nicht, –
+              ich habe sie <emph>nie</emph> geliebt, – ich verachte, – ich <emph>hasse</emph> sie! –
+              Verflucht sei ihr Name! – – Was sie mögen gesprochen haben, – alle meine Sinne waren
+              betäubt, – ich hörte nur einzelne Worte, – aber seine Umarmung, – sein Kuß – O! – Was
+              hielt mich zurück, daß ich nicht hervorsprang und sie mit diesen Händen erwürgte? –
+                <stage>(Er geht umher, steht still, er tritt ans Klavier und findet die Hälfte des
+                Apfels, den er Luisen gegeben hatte. Er schlägt den Blick empor, steht nachdenkend
+                und scheint seine Begriffe zu ordnen.)</stage> War es nicht heute, als ich ihr
+              diesen Apfel gab? – heute? – Es ist nicht möglich, – bis zur Unkenntlichkeit fern
+              liegt die Zeit, in der ich sie liebte, – und doch war es <emph>heut'</emph>! – Wie hat
+              sich alles geändert! – Dies war ein Geschenk von mir, – dem meine Liebe einen so hohen
+              Wert beilegte, – und sie warf es verächtlich hieher! – O hätte sie es nur aus
+                <emph>seiner</emph> Hand, aus <emph>seiner</emph> Hand gehabt! – Ha! ihre Eide gehn
+              in Erfüllung! ich ernte den Lohn meiner <emph>Liebe</emph> ein! – <emph>Liebe!</emph>
+              Des Klangs ohne Sinn! – Noch niemand hat geliebt, – <emph>mir, mir</emph>
+              Unglückseligen ward diese Empfindung aufbehalten, um aus ihr eine Hölle zu saugen. –
+              Ha! die schöne Zukunft nimmt ihren Anfang, – meine goldenen Träume werden
+                <emph>wirklich</emph>! – Das Messer, mit dem ich diesen Apfel spaltete? – Ist mir
+              doch, als sollt' ich mir diesen Stahl ins Herz stoßen! – Es braust und donnert um mich
+              her, eine unbekannte Gottheit drängt diese Spitze gegen meine Brust, – wenn – o dann
+              wäre ja alles vorüber. – Und ich sollte <emph>ihr</emph> diesen Triumph gönnen? – Ha!
+              wie würde sie den voreiligen Thoren belachen! – Sie liebt ihn, – mein Leichnam wäre
+              der Grund, auf dem sie ihr Glück bauten, – nein, <emph>diesen</emph> Reiz hat <pb
+                n="94"/> das Leben noch für mich, daß mein Dasein sie quälen wird. – Oder kehre
+              diese Schneide gegen diese Schlange selbst! O, Rache, Rache muß so süß sein! – So
+              gelassen sollt' ich es hinnehmen? – Himmel! itzt erst fühl' ich das ganze Gewicht
+              ihres Verbrechens, – mein Blut war in Eis erstarrt, – ich war fühllos wie ein Stein! –
+              So schändlich ward noch kein Mann betrogen. – <stage>(Gegen das Bild gekehrt.)</stage>
+              Ha! verdammtes Gesicht! Hatte nun meine mißtrauische Ahndung nicht Recht, Betrüger? –
+              Du lächelst? – so kalt, so verächtlich lächelst du auf mich herab? – <stage>(Er
+                durchsticht es mit dem Messer.)</stage> Sieh! Dies ist meine Rache! – Noch Lächeln?
+              – <stage>(Er zerfetzt das Gesicht.)</stage> Sieh! Schändlicher! das ist deine Strafe!
+              – <stage>(Er hält ein, lachend.)</stage> Wahnsinniger! Es ist ja nur sein Bild! – Er
+              ruht in stolzer Sicherheit und verlacht deine Ohnmacht! – In Sicherheit? – Und wer
+              macht ihn sicher? Wer? – Hier schallte sein Kuß, – hier drückte er sie an sein Herz, –
+              o, diesen Druck muß ich wieder von seinem Herzen holen! – Er <emph>schläft</emph>,
+              indes tausend Qualen meine Seele nagen! – Er <emph>schläft</emph>, der Bösewicht!
+              indes mich die Verzweiflung peitscht, – O, <emph>schlafen</emph> soll er nicht, ich
+              will ihn wecken! – <stage>(Er geht rasch in das Nebenzimmer.)</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(die leise und furchtsam zurückkommt).</stage>
+            <p>Hier ist er auch nicht, ich kann ihn nirgends finden, – und doch muß ich ihn finden,
+              – ich muß ihm alles sagen, – es zerdrückt mir's Herz: – mag er mich nicht mehr lieben,
+              – mag er mich hassen, – mich verabscheun, – ich muß es ihm sagen. – Hier ist er nicht,
+              im Garten auch nicht, – ich wag' es nicht, noch einmal in den Garten zu gehen, – er
+              muß dort sein! – Die Einsamkeit steht dort so stumm, die stille Nacht wandelt mit
+              leisen Schritten übers Feld. – Karl! – Karl! – Ein banges Ächzen von der Wand her
+              antwortet mir. – Ich kann nicht noch einmal rufen. – Mich schaudert! – <stage>(Sie
+                erblickt das Gemälde.)</stage> Ha! <emph>es ist aus!</emph> – Wahrhaftig, das hat
+              Karl gethan! – Still! War's doch, als ob mir jemand antwortete. <pb n="95"/> – Ach
+              Ferdinand! du siehst entsetzlich aus! – Was ist das? – Das Bild, – das Bild bewegte
+              sich, – seh' ich nicht sein Blut herabfließen? – Mich dünkt, es seufzt, <emph>jetzt
+                stirbt er</emph>! – Er ist <emph>tot</emph>! – Sein Geist schaut wild aus den
+              zerschnittenen Zügen hervor; – ich kann nicht mehr. – Welch Geräusch im Zimmer dort? –
+              Es ist sein Geist! – <stage>(Sie sinkt betäubt aufs Sofa, halb ohnmächtig.)</stage>
+              Komme was da will, ich kann nicht mehr als <emph>sterben</emph>!</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <stage>Luise. Waller.</stage>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(der zurückkömmt, leise für sich, mehr murmelnd als sprechend)</stage>
+            <p>Er schlief, – in seinen Kleidern, – er schlief, hartherziger Mörder! – Nun, und was
+              ist es denn mehr? Er <emph>schläft ja noch</emph>! – es wird ihn niemand stören, – er
+              entschlief sanft. – Wunderbar! Warum läuft mein Blut nicht mehr so schnell, wenn ich
+              an ihn denke? – Er hatte mich tödlich beleidigt, – warum zittr' ich so? ich habe ihn
+              ja nur <emph>gestraft</emph>. – Und was hat er an dieser Welt verloren? Nichts! –
+              Qualen – folternde Schmerzen! – Er hat gewonnen! – Ich bin sein Wohlthäter, – er hätte
+              ja doch einmal sterben müssen. – Der Mond schien ihm grade aufs Gesicht, sein Gesicht
+              war mir seltsam fremd; – er starb ohne zu zucken, – ohne eine Bewegung. – Ein
+              Menschenleben ist doch sehr zerbrechlich! – Fort!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(sich erhebend).</stage>
+            <p>Ferdinand!</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(laut).</stage>
+            <p>Wer ist da?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ich – – ich –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Was willst du?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ach!</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Warum siehst du mich so starr an?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Bist du Karl?</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Denkst du, ich habe etwas Böses gethan, daß du mich so anstarrst?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ach nein! nein! – Nicht wahr? Du bist mein lieber Karl?</p>
+          </sp>
+          <pb n="96"/>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Fort! komm!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Wohin?</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Wohin? – Was weiß ich's?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Karl, – ich merk' es recht gut, – wir sprechen beide ohne Bewußtsein, – aber ich kann
+              nicht dafür, – ich bin sehr krank!</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Krank?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ja, Karl, und du bist es auch.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Nein, – nein, ich bin gesund! – Was sollte mir fehlen?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ich werde bald sterben, ich fühl' es –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Sterben? – <emph>Sterben?</emph> – –</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Zürne nur nach meinem Tode nicht weiter auf mich.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p><emph>Luise!</emph></p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Wir wollten glücklich sein, aber das grausame Schicksal rief: Nein!</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Fürchterlich rief es: Nein!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ich liebte dich – –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Wirklich?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Wie meine Seele –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Du lügst!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ich konnte nicht dafür, daß ich früher als dich <emph>Ferdinand</emph> liebte.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(wie aus einem tiefen Schlaf erwachend).</stage>
+            <p>Ha! das war es! – dieser Name ruft alles in mir zurück! – Steh' ich doch schon so
+              lange und sinne, was mein Schmerz sei, – du triffst die brennende Wunde. – Dieser Name
+              hat mich wahnsinnig gemacht.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ja, Karl, ich will es dir gestehen, ich liebte ihn einst.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>O, gesteh es nur, du liebtest ihn? – nicht wahr? – O, ich bin ja dein Freund, mir
+              darfst du es schon vertrauen, – nicht wahr, du zärtliche Gattin?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ich will es, – hasse mich, – fluche, oder verzeihe mir dann, – wie du willst!</p>
+          </sp>
+          <pb n="97"/>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>O Luise! Luise! – Geh! geh! fort von mir, Schändliche! du bereust nicht einmal dein
+              Verbrechen? – O, hinweg!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Karl, ich liebte ihn, eh' ich dich sah.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Nein! Nein! es ist falsch! – Ich sah ja, wie du ihn umarmtest, – itzt eben, – hier, –
+              sieh, so umschlang er dich, – der Schall eures Kusses flog glühend in mein Ohr, –
+              dieser Ton zerriß meinen Verstand, – dieser Augenblick löschte alles in mir aus,
+              dunkle Nacht wohnt seitdem in mir, dunkel wie der Tod. – Du liebst ihn noch!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Nein! bei Gott!</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Du liebst ihn noch!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Als Freund, – sowie das Andenken eines entfernten Freundes –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Du liebtest ihn nicht noch?</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Bei allem –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(mit schrecklicher Kälte).</stage>
+            <p>Warum zweifl' ich denn noch länger? – Jetzt wirst du ihn freilich nicht mehr
+              lieben.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Nein, Karl –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Beteur' es nicht, ich glaube dir; denn sieh – <stage>(Er zieht das Messer unter
+                seinem Rocke hervor.)</stage></p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Karl!</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Nun, – was ist dir –</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Er ist <emph>tot</emph>!</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Ja, – dies ist sein Blut. <stage>(Luise sinkt nieder.)</stage> O, Künstlerin! – nur
+              ruhig! – Eine Ohnmacht? – Bei Gott! so natürlich, als ich je eine sah, man möchte sie
+              fast für echt halten. – Steh auf! – <stage>(Er reicht ihr die Hand.)</stage></p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise</speaker>
+            <stage>(richtet sich matt auf).</stage>
+            <p>Sein <emph>Blut</emph>?</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Das in seinem Herzen noch ebenso warm für <emph>dich</emph> schlug. – O, Luise!
+                <emph>dein</emph> Werk ist sein Tod, – <emph>dein</emph> Werk, daß ich in
+              Verzweiflung umherirre; über dich komme sein Blut!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Über mich? – Er ist nicht mehr? O, hinweg von mir, Mörder! hinweg! – Er ist also tot?
+              – Berühre mich nicht mit deinen blutigen Händen! – hinweg!</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Luise, – sieh, ich bin nun wieder kalt, – mache mich nicht von neuem wütend.</p>
+          </sp>
+          <pb n="98"/>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>O, sein Blut komme zehnfach über <emph>dich</emph>! – O, ich hasse, ich verabscheue
+              dich, – hassen? Nein, Verachtung,<note place="foot">»<emph>Franz</emph>: Du hassest
+                mich? <emph>Amalia</emph>: Ich verachte dich, geh!« Schillers »Räuber«, I, 3.</note>
+              – mitleidige Verachtung gebührt dem gemeinen Mörder.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(mit den Zähnen knirschend).</stage>
+            <p>Luise!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>O geh, geh, Gebrandmarkter, – siehst du die Henker nicht, die dich fortschleppen
+              wollen? – Dich nannt' ich <emph>mein</emph>? <emph>meinen</emph> Karl? – O, du gehörst
+              dem Hochgericht.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Weib!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ich will nicht mit dir sprechen, – selbst dein Blick entehrt mich. – O, wie tief war
+              ich herabgesunken, von <emph>seiner</emph> Liebe zu <emph>dir</emph>! – O Himmel! von
+                <emph>ihm</emph> so tief herab bis zu <emph>dir</emph>! – So niedrig ward noch keine
+              Liebe verschleudert, so entehrt ward sie noch nie, als daß ein Mädchen
+                <emph>dich</emph> liebte.</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(mit unterbrochener Stimme).</stage>
+            <p>Sieh, – sieh – ich bin in Verzweiflung, – meine Hand zittert, – ich bin
+                <emph>verrückt</emph>, – fürchte mich –</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Dich fürchten? – den ich verachte? – O, meine letzte Kraft will ich aufbieten, dir
+              meinen Haß entgegenzurufen. – Ich war schwach, aber gegen dich –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Fürchte den Verzweifelten, – sieh – ich – ich – o, ich kann nicht sagen, was ich thun
+              könnte – aber es ist schrecklich! – Ich bitte dich, Luise, liebste Luise, schweig!
+              –</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>O, nenne mich nicht. – Flieh! flieh, ehe der Tag dämmert, flieh unter dem Schutz der
+              Nacht, so wie es Mördern geziemt. – Dich wollt' ich um Verzeihung bitten? –
+                <emph>Dich?</emph> – O schändlicher Gedanke! – Gegen deine That ist meine
+              Schwachheit Tugend! – O Scheusal!</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(stürzt rasch auf sie zu und stößt das Messer in ihre Brust; eine Pause; sie
+              sinkt nieder, er betrachtet sie stumm und kalt).</stage>
+            <p>Du hast es gewollt! – <stage>(Pause.)</stage> Luise!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Karl? – Was willst du?</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Luise, um Gotteswillen, wecke mich auf, – ich träume fürchterlich! –
+                <stage>(Schreiend.)</stage> Weck' mich auf!</p>
+          </sp>
+          <pb n="99"/>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ich kann nicht, Karl, – wollte Gott, du träumtest!</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(bitter).</stage>
+            <p>O, das dacht' ich wohl, daß es wahr sein würde! das dachte ich wohl! – Wenn wäre
+                <emph>Unglück</emph> ein Traum? – O, alle meine <emph>Freuden</emph> sind nur ein
+              Traum gewesen, erst seit heute bin ich erwacht!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Karl! – Lebe wohl, ich sterbe –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Du <emph>stirbst</emph>? –</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Ich fühle meine Kräfte schwinden, verzeih mir, ich habe dich wohl sehr
+              gescholten?</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Nein! ach nein! – Du willst sterben? – O, warum willst du das? – Glaubst du nicht,
+              daß ich schon elend genug bin? – Stirb nicht! – Ich leide genug.</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Gib mir deine Hand, – ich werde fortgerissen –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(stürzt neben ihr nieder).</stage>
+            <p>Du sollst, du darfst nicht sterben! – Nein! nein! – O, es kann, es wird noch alles
+              wieder gut werden, – nur nicht sterben, o, das wäre zu viel. – Ha! mir zum Trotz, mich
+              zu zermalmen, wollte das Schicksal vielleicht alle Qualen auf einmal auf mich
+              herabgießen? – <emph>Das</emph> soll es nicht können, – halt' dich an mein Leben fest,
+              Luise, halt' dich fest, – ich will dich umschlungen halten – <stage>(Er nimmt sie in
+                seine Arme.)</stage> Wir <emph>beide</emph> werden doch wohl den Tod abkämpfen
+              können!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Unmöglich!</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller</speaker>
+            <stage>(küßt sie wütend).</stage>
+            <p>Hier bin ich, furchtbares Verhängnis! – Ich wage es, mit dir zu kämpfen, – mag der
+              Himmel und die Erde <emph>Nein</emph> drein donnern, – ich sage: sie <emph>soll</emph>
+              leben!</p>
+          </sp>
+          <sp who="#luise">
+            <speaker>Luise.</speaker>
+            <p>Du rasest, – Karl, – lebe wohl – – denk auf deine Sicherheit – – ich kann nicht
+              weiter –</p>
+          </sp>
+          <sp who="#waller">
+            <speaker>Waller.</speaker>
+            <p>Ha! wie die bösen Geister meiner Ohnmacht lachen! Wie der hinterlistige Tod grinst
+              und spottet. – Es schleicht so eiskalt ihre Wangen hinab – ihr Auge bricht – es
+              schleicht die Brust hinab – <stage>(Sie erschrocken hinwerfend.)</stage> Jetzt brach
+              ihr Herz entzwei. <stage>(Er steht auf.)</stage> Sie ist <emph>tot</emph>! –
+                <stage>(Er betrachtet sie lange stumm.)</stage> Ja wahrlich, sie ist tot! –
+                <stage>(Er wirft das Messer auf den Leichnam.)</stage> Sie wird nie zurück kommen! –
+              Ha! wie kalt, wie leer ist alles in mir, ich könnte lachen, – aber nein! nein! – Die
+              Haare würden <pb n="100"/> sich mir aufrichten! – <stage>(Auf- und abgehend, nach
+                einer Pause.)</stage>
+              <emph>Mörder!</emph> – das Wort hat doch wahrlich wenig Bedeutung. – <stage>(Er setzt
+                sich neben dem Leichnam auf die Erde.)</stage> Ich wohne unter Leichen, – ich bin
+              hier der einzige <emph>Lebende</emph>. – Deine Hand ist so kalt, Luise! – – Hier will
+              ich sitzen bleiben! – hier will ich thronen, wie der Sieger auf dem Schlachtfelde –
+              Tot! Tot! – <stage>(Er sieht stumm auf die Leiche.)</stage></p>
+          </sp>
+          <stage>Der Vorhang fällt.</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
