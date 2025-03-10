@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000719" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Anna Bell</title>
+        <title type="sub">Ein Trauerspiel in einem Akt</title>
+        <author>
+          <persName>
+            <forename>Jonathan</forename>
+            <forename>Gottlieb</forename>
+            <surname>Göntgen</surname>
+          </persName>
+          <idno type="wikidata">Q94941684</idno>
+          <idno type="pnd">142633216</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Google Books</name>
+          <idno type="URL"
+            >https://books.google.com/books?id=42xVAAAAcAAJ&amp;printsec=frontcover</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">[<author>Joseph Anton Waldvogl</author>]: <title>Die falschen
+              Banknoten. Ein Trauerspiel in drey Akten</title>. <pubPlace>Offenbach und
+              Frankfurt</pubPlace>: <publisher>Weiß</publisher>
+            <date>1775</date>. (S. <biblScope unit="page" from="1" to="40">1–40</biblScope>.)</bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="sara" sex="FEMALE">
+            <persName>Sara</persName>
+          </person>
+          <person xml:id="karolina" sex="FEMALE">
+            <persName>Karolina</persName>
+          </person>
+          <person xml:id="bell" sex="FEMALE">
+            <persName>Anna Bell</persName>
+          </person>
+          <person xml:id="eduard" sex="MALE">
+            <persName>Eduard</persName>
+          </person>
+          <person xml:id="daramby" sex="MALE">
+            <persName>Lord Daramby</persName>
+          </person>
+          <person xml:id="simpson" sex="MALE">
+            <persName>Simpson</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="parent_of" active="#daramby" passive="#bell"/>
+            <relation name="parent_of" active="#bell" passive="#eduard"/>
+            <relation name="parent_of" active="#sara" passive="#karolina"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Tragedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q80930</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2025-03-10">(ff) file conversion from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1775">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000719"
+        passive="http://www.wikidata.org/entity/Q131634169"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <pb n="1"/>
+    <front>
+      <titlePage>
+        <docAuthor>[Jonathan Gottlieb Göntgen]</docAuthor>
+        <docTitle>
+          <titlePart type="main">Anna Bell,</titlePart>
+          <titlePart type="sub">ein Trauerspiel in einem Akt.</titlePart>
+        </docTitle>
+        <docImprint>
+          <pubPlace>Offenbach und Frankfurt,</pubPlace>
+          <publisher>gedruckt und zu finden bey Ulrich Weiß,</publisher>
+          <docDate>1775.</docDate>
+        </docImprint>
+      </titlePage>
+      <pb n="2"/>
+      <pb n="3"/>
+      <div type="preface">
+        <head>Vorbericht.</head>
+        <p>Ich liefere hier ein Trauerspiel, das die interessanteste Geschichte für Leser von Gefühl
+          enthält. Ich habe sie nicht selbst erfunden; sondern folgender <emph>rührenden</emph>
+          französischen Schrift gleiches Namens zu verdanken: <foreign xml:lang="fre">Anne Bell,
+            histoire angloise, par Mr. d'Arnaud. Yverdon 1770.</foreign> Wer diese vortrefliche
+          Geschichte gelesen hat, wird leicht einsehen, wie sehr ich sie genutzt, was ich noch
+          hinzugesetzt und weggelassen habe; um sie theils für das deutsche Theater brauchbar;
+          theils desto tragischer <pb n="4"/> zu machen. Ich wünschte nichts mehr, als daß sie in
+          der Form eines Trauerspiels eben den Eindruck machen möge, den sie in dem französischen
+          Original nothwendig befördern muß. Sollte dieses geschehen, so werd' ich mich
+          entschließen, meinen Lesern und Leserinnen das Original selbst in einer neuen Uebersetzung
+          zu liefern, dessen Ausdrücke ich mir wegen ihrer Schönheit in diesem Trauerspiel schon hin
+          und wieder eigen gemacht habe.</p>
+        <signed>der Verfasser.</signed>
+      </div>
+      <pb n="5"/>
+      <castList>
+        <head>Personen.</head>
+        <castItem><role>Lord Daramby.</role></castItem>
+        <castItem><role>Anna Bell,</role>
+          <roleDesc>seine Tochter.</roleDesc></castItem>
+        <castItem><role>Eduard,</role>
+          <roleDesc>Sohn der Bell, ein Kind von ohngefähr 4 Jahren.</roleDesc></castItem>
+        <castItem><role>Simpson,</role>
+          <roleDesc>ein alter Geistlicher.</roleDesc></castItem>
+        <castItem><role>Sara,</role>
+          <roleDesc>eine arme Frau.</roleDesc></castItem>
+        <castItem><role>Karolina,</role>
+          <roleDesc>ihre Tochter.</roleDesc></castItem>
+      </castList>
+      <set>
+        <p>Der Schauplatz ist in einer elenden Hütte, der Wohnung der Sara. Die Handlung fängt mit
+          anbrechendem Tage an.</p>
+      </set>
+    </front>
+    <pb n="6"/>
+    <pb n="7"/>
+    <body>
+      <div type="scene">
+        <head>Erster Auftritt.</head>
+        <stage>Sara. Karolina.</stage>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Schon wieder haben wir einen traurigen Tag erlebt! Die aufgehende Sonne scheint ihren
+            ganzen Glanz auf unsere arme Hütte zu verschwenden, um uns den Kummer zu erleichtern,
+            der unsere beklemmte Herzen drückt! O Karolina! Karolina! vielleicht ist dieses der
+            letzte Tag, den wir zu leben haben. Vielleicht kommen deine Brüder hülflos und ohne Brod
+            aus der Stadt zurück, und wir müssen bey der zunehmenden Hitze verschmachten.</p>
+        </sp>
+        <pb n="8"/>
+        <sp who="#karolina">
+          <speaker>Karolina.</speaker>
+          <p>Es giebt wohl noch empfindungsvolle Seelen, Mutter, die sich der verlassenen Armuth
+            annehmen. Sollte man meinen Brüdern nicht aus den Augen lesen können, daß sie keine von
+            jenen muthwilligen Bettlern sind, die nur die Faulheit arm macht, und daß der betrübte
+            Zustand, den sie von uns erzehlen, keine Erdichtung sey?</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Ja, Karolina, es giebt noch solche Seelen, aber sehr wenige, und diese wenige können
+            vielleicht deine Brüder nicht finden. Wie mancher wirft seinem gemästeten Hund ein Stück
+            Brod vor, um das ihn eben ein Verlassener anfleht. Er blickt auf den Armen mit einer
+            zornigen Mine, und würdigt ihn keiner Antwort. Der Bedürftige, der ein Mensch ist, wie
+            der Reiche, muß hülflos davon gehen, und der Hund, der vielleicht mitleidiger wie sein
+            Herr wäre, wenn er Vernunft hätte, trägt das Brod in den nächsten Winkel und lässet es
+            liegen. Doch wir wollen immer der Vorsicht trauen, und so lange leben, als es ihr
+            gefällt. Müssen wir aber von allen Menschen verlassen, umkommen, so soll auch unsere
+            letzte Thräne keine Thräne der Verzweiflung, nein, eine Thräne des Danks gegen die
+            Vorsicht seyn.</p>
+        </sp>
+        <pb n="9"/>
+        <sp who="#karolina">
+          <speaker>Karolina.</speaker>
+          <p>Ja, gewiß, gewiß soll sie es seyn, liebste Mutter. O es leben wohl noch ärmere Menschen
+            als wir sind, denen ihre Armuth viel empfindlicher ist, weil sie sich dieselbe durch
+            ihre eigene Schuld zugezogen haben. – Dort stehet noch ein wenig Brod und Milch, das uns
+            meine Brüder den vorigen Abend mitgebracht haben. Wollen wir es nicht zu uns nehmen? Ich
+            habe seit gestern am Mittag nichts gessen, und auch jene Speise war schlecht und
+            geringe. <stage>(weinend)</stage> Ich vergehe fast für Hunger.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Ja, bestes Kind, nimm und esse! Esse so lange wir haben. Esse es allein, ich begehre
+            nichts davon.</p>
+        </sp>
+        <sp who="#karolina">
+          <speaker>Karolina.</speaker>
+          <p>Nein, Mutter, ihr müsset mitessen, es wird euch auch hungern. Es wäre undankbar, wenn
+            ich dieses wenige nicht mit euch theilen wollte.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Nein, ich verlange nichts, Karolina. Esse nur!</p>
+        </sp>
+        <sp who="#karolina">
+          <speaker>Karolina.</speaker>
+          <p>Was wollet ihr aber anfangen, wenn meine Brüder leer zurückkommen, wenn sich kein
+            Mensch über uns erbarmet?</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <stage>(weinend)</stage>
+          <p>Ach! ich werde – sterben.</p>
+        </sp>
+        <pb n="10"/>
+        <sp who="#karolina">
+          <speaker>Karolina.</speaker>
+          <p>O ich esse nicht, ich esse nicht, liebste Mutter! lieber will ich mit euch sterben, als
+            euch umkommen sehen.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Gott! dem wir unser Leben zu danken haben, unterstütze doch die verlassene Armuth!
+            Erhalte wenigstens meine Kinder, die dich in Unschuld Vater nennen! –</p>
+        </sp>
+        <sp who="#karolina">
+          <speaker>Karolina.</speaker>
+          <p>Wo wird wol itzt mein Vater seyn! Vielleicht ist er in glücklichern Umständen, als wir;
+            oder die Armuth drückt ihn noch härter als uns. Zwey volle Jahre sind es nun, daß wir
+            nichts von ihm gehört haben.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Verdient er wol noch diesen schönen Namen? Wir würden von der Last des Unglücks weniger
+            gedrückt, wenn er uns nicht verlassen hätte. Wir würden doch immer von seiner Hände
+            Arbeit täglichen, wiewol wenigen Unterhalt genossen haben. Aber er entzog sich der
+            Arbeit, und überdrüßig, mit uns länger in einem dürftigen Zustand die Hand des Himmels
+            zu verehren, verließ er uns und übergab sich einem zweifelhaften Schicksal. Ohne Liebe,
+            ohne Mitleiden verließ er uns. Wenn ihn nur der Himmel nicht noch härter gestraft
+            hat!</p>
+        </sp>
+        <pb n="11"/>
+        <sp who="#karolina">
+          <speaker>Karolina.</speaker>
+          <p>Stille! ich höre jemand kommen. Vielleicht ist es einer von meinen Brüdern, der schon
+            so frühe ein Allmosen empfangen hat. <stage>(sie läuft nach der Thüre)</stage></p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Möcht' es doch der Himmel geben!</p>
+        </sp>
+        <sp who="#karolina">
+          <speaker>Karolina.</speaker>
+          <stage>(kommt wieder zurück)</stage>
+          <p>Nein, Mutter, nein, es ist ein Weib, das eben so elend zu seyn scheint, als wir. Sie
+            geht ganz kraftlos auf unsere Hütte zu. Sie führt ein Kind an ihrem Arm. Hier kommt sie.
+            Ihr Gesicht ist sehr schön – ihre Hände nicht so grob, als die Hände anderer Armen, die
+            viel arbeiten.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Zweyter Auftritt.</head>
+        <stage>Die Vorige. Bell (ganz schwach und abgemattet) Eduard.</stage>
+        <sp who="#bell">
+          <speaker>Bell</speaker>
+          <stage>(im Hereingehen)</stage>
+          <p>So muß denn diese schlechte Hütte die letzte Zuflucht einer Mutter seyn, welche auf der
+            Welt die größte Reichthümer besitzen könnte?</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara</speaker>
+          <stage>(zur Bell)</stage>
+          <p>Wo kommt ihr her, gute Frau? Ihr seyd, wie ich sehe, in einem bedaurenswürdigen
+            Zustand. <pb n="12"/> Ihr seyd sehr schwach. Aber leider findet ihr bey mir die wenigste
+            Hülfe. Ich lebe selbst ganz verlassen mit vier Kindern. Diese hier ist das älteste, und
+            ihre drey Brüder sind nach der Stadt, mitleidige Herzen um einen Bissen Brod
+            anzuflehen.</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Ich bedaure euch sehr, armes Weib! Aber euer Zustand, und wenn er auch noch so betrübt
+            ist, gleicht noch lange nicht dem meinigen <stage>(weinend)</stage> Ich bin noch weit
+            verlassener, als ihr, und dieses Kind – <stage>(sie umarmt Eduard)</stage> o bester
+            Sohn! wer wird sich deiner annehmen?</p>
+        </sp>
+        <sp who="#eduard">
+          <speaker>Eduard.</speaker>
+          <p>Weinet nicht, liebste Mutter!</p>
+        </sp>
+        <sp who="#karolina">
+          <speaker>Karolina.</speaker>
+          <p>Gott! sollte es möglich seyn, daß sie noch verlassener ist, als wir?</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Ich sehe, daß ihr eine Erfrischung nöthig habt. Setzt euch, und esset diese wenige
+            Milch und Brod. Es ist der letzte Rest, den wir übrig haben, und wer weiß, ob wir noch
+            heute etwas mehr erhalten. Ich wollte eben damit den Hunger dieses Mädchens stillen, sie
+            will aber lieber selbst hungern, als mich umkommen sehen.</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Dem Himmel sey Dank, daß ich noch eine mitleidige Person angetroffen habe. Der
+            Nothleidende findet immer eher Zuflucht in der ärmsten <pb n="13"/> Hütte, als in
+            glänzenden Pallästen. – Nein, liebste Wohlthäterin, ich mag, ich kann nichts zu mir
+            nehmen. Meine Kräfte sind schwach, und mein mattes Herz wird bald aufhören zu schlagen.
+            Wollet ihr aber diesem Kleinen etwas reichen, so werdet ihr mich aufs höchste
+            verbindlich machen.</p>
+        </sp>
+        <sp who="#karolina">
+          <speaker>Karolina</speaker>
+          <stage>(die sich immer mit Eduard beschäftiget)</stage>
+          <p>O ja, liebste Mutter, reichet diesem kleinen liebenswürdigen Kinde eine Erfrischung!
+              <stage>(Sara giebt Eduard die Milch und das Brod, welches es sehr begierig
+              ißt.)</stage></p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Ich würde gar nichts von euch gefordert haben, wenn ich nicht Hoffnung hätte, daß ich
+            es euch bald doppelt ersetzen könnte. O beste Frau, ich bin nicht beständig so elend
+            gewesen, als ihr mich hier sehet. Glaubet ihr wohl, daß euch die Tochter eines
+            angesehenen Lords verbindlich ist?</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Wie, die Tochter eines Lords?</p>
+        </sp>
+        <sp who="#karolina">
+          <speaker>Karolina.</speaker>
+          <p>Eines Lords?</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>O ich bitte Sie um Verzeihung, Mylady, wenn ich Ihnen nicht genug dienen kann. Sie
+            kennen mein Elend –</p>
+        </sp>
+        <pb n="14"/>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Ich weiß eure Freygebigkeit, die Grösse eurer Seele, rechtschaffene Wohlthäterin. Ich
+            bin versichert, ihr würdet mich, wenn ihr könntet, voll Mitleiden aufnehmen, wenn mich
+            auch alles, alles verliesse. Ja, meine liebe Freundin – dieser Name kommt euch zu – ja
+            ich bin die Tochter eines Lords, und eure Liebe allein kann mich unterstützen. – Gott!
+            du kennest die Aufrichtigkeit dieses Weibes. Belohne du sie, wenn ich nicht vermögend
+            bin, ihre Gutthat zu vergelten!</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Aber sagen Sie mir doch, Mylady, wie haben Sie in ein so großes Unglück gerathen
+            können? Verzeihen Sie mir, wenn ich Sie durch diese voreilige Frage beleidige.</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Ich will euch alles erzehlen, beste Freundin! denn ich weiß, daß ich alle meine
+            Geheimnisse in euren verschwiegenen Schooß ausschütten darf. Ihr müßt mir aber zuvor
+            noch eine Gefälligkeit erweisen. Könnt ihr mir nicht ein Schreibzeug verschaffen und ein
+            wenig Papier? Mein Vater wird itzt auf seinem Landgut seyn, und dieses ist nur eine
+            Stunde von hier. Ich wollte noch bis auf den nächsten Meyerhof gehen, der ihm angehört;
+            aber meine Schwachheit ließ es nicht zu. Ich muß meinen Vater noch sehen. Hier muß ich
+            noch seinen väterlichen <pb n="15"/> Segen erhalten, ehe ich sterbe. Eure Tochter wird
+            eilen, und meinem Vater den Brief überbringen, den ich schreiben will.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Sie ist ganz zu ihren Diensten! Befehlen Sie nur! Ich habe noch einiges Papier, das
+            sich meine Kinder gesammelt haben, und ein Löschbley, wovon sie Gebrauch machen, wenn
+            sie ihren Kummer einige Zeit vergessen wollen. Weiter habe ich nichts, womit ich Ihnen
+            dienen kann.</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Gut, bringt es nur her.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <stage>(zur Karolina)</stage>
+          <p>Geh, Karolina, und hole das Papier und das Löschbley. <stage>(Karolina geht)</stage>
+            Aber wie, Mylady, ihr Herr Vater ist so nahe?</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Ja, und sein Name ist Daramby. Eure Tochter darf nur den kleinen Fußweg nachgehen, der
+            vor eurer Hütte anfängt, und sie kann nicht irren.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Sie soll eilen, so viel sie kann. – Hörst du, Karolina! was du zu thun hast?</p>
+        </sp>
+        <sp who="#karolina">
+          <speaker>Karolina</speaker>
+          <stage>(die noch Papier und Löschbley suchet)</stage>
+          <p>Ja, Mutter, ich höre alles. Das Landguth, von dem Mylady reden, ist mir sehr wohl
+            bekannt. Ich gehe manchmal hin, und spreche die Bedienten um ein Allmosen an. Erst vor
+              <pb n="16"/> einer Woche hab' ich den Weg dahin gefunden. <stage>(sie kommt mit dem
+              Verlangten)</stage> Ich habe den Herrn schon selbst gesehen. Er ist ein recht artiger
+            Herr. Er sah mich vor zween Tagen mit einem Stück Brod, das man mir gegeben, zu euch
+            zurückgehen. – Hier ist, was Sie verlangen, Lady. <stage>(Bell, die sich vorher schon an
+              ein kleines Tischgen niedergesetzt hat, nimmt es ihr ab)</stage></p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Wie, du kennest meinen Vater?</p>
+        </sp>
+        <sp who="#karolina">
+          <speaker>Karolina.</speaker>
+          <p>Ja, ich kenne ihn. Er hatte damals, als ich ihn sahe, ein schönes reiches Kleid an. Ich
+            konnte mich nicht satt daran sehen.</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>O dürft ich ihn doch noch einmal umarmen! <stage>(sie will anfangen zu
+              schreiben)</stage></p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Erlauben Sie, Mylady, daß wir ein wenig vor die Hutte gehen, damit wir sie nicht
+            stöhren. Sie dürfen nur rufen, wenn wir wiederkommen sollen.</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell</speaker>
+          <stage>(seufzend)</stage>
+          <p>Ja, geht.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Komm, Karolina! <stage>(sie gehen ab)</stage></p>
+        </sp>
+      </div>
+      <pb n="17"/>
+      <div type="scene">
+        <head>Dritter Auftritt.</head>
+        <stage>Bell allein mit Eduard.</stage>
+        <sp who="#bell">
+          <p>Kaum habe ich noch Kräfte genug, dieses leichte Löschbley zu halten. O Syndham,
+            Syndham, ich werde bald bey dir seyn. <stage>(sie schreibt)</stage> – Vater! darf ich
+            mit diesem süssen Namen anfangen? Nein, ich unterstehe michs nicht. Mylord und nichts
+            mehr. <stage>(sie streicht wieder aus, und schreibt wieder)</stage> – Ja, gewiß, er ist
+            mir in diesem Augenblick lieber, schätzbarer, als jemal. – Ich muß auch des Briefes
+            gedenken, den ich ihm noch nicht lange überschickt habe. O warum hab' ich keine Antwort
+            erhalten! <stage>(sie schreibt wieder)</stage> – Meine Schwachheit nimmt immer zu. Ich
+            muß eilen, daß ich fertig werde. – Und was soll ich von dir schreiben, liebstes, bestes
+            Kind! <stage>(sie umarmt ihren Sohn weinend)</stage> O du wirst dich ihm zu Füssen
+            werfen. Du wirst in Unschuld seine Hände drücken, und Gnade für deine Mutter erflehen.
+              <stage>(sie schreibt weiter)</stage> – Nun genug, ich kann nicht weiter. Mein
+            beklemmtes Herz findet keine bessere Ausdrücke. –</p>
+        </sp>
+      </div>
+      <pb n="18"/>
+      <div type="scene">
+        <head>Vierter Auftritt.</head>
+        <stage>Bell. Eduard. Sara. Karolina.</stage>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Seyn Sie fertig, Mylady? <stage>(bey Seite)</stage> Hilf Himmel! Sie werden immer
+            kraftloser.</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Ja, ich bin fertig. Komm, Karolina! Nimm diesen Brief! Eile zu meinem Vater! Laß dich
+            nichts abhalten, ihn selbst zu überreichen.</p>
+        </sp>
+        <sp who="#karolina">
+          <speaker>Karolina.</speaker>
+          <p>Ich will Ihren Befehlen in allem nachkommen, Lady! Möcht' ich Sie doch, wenn ich wieder
+            komme, in einem bessern Zustand antreffen!</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Der Himmel gebe es! Gehe!</p>
+          <stage>(Karolina geht ab)</stage>
+        </sp>
+      </div>
+      <pb n="19"/>
+      <div type="scene">
+        <head>Fünfter Auftritt.</head>
+        <stage>Bell. Eduard. Sara.</stage>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Arme, gutthätige Frau, ich mache euch viele Mühe. Sorget nicht, mein Vater wird euch
+            alles reichlich vergelten, wenn ich auch nicht mehr seyn werde.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>O Mylady, ich bedaure von ganzem Herzen, daß ich Ihnen keine bessere Hülfe schaffen
+            kan, daß ich keine stärkende Mittel besitze, Ihre Schwachheit zu mildern, die mit jedem
+            Augenblick zunimmt. Ich armes Weib bin schon so abgehärtet, daß ich auch noch grösseres
+            Elend würde ertragen lernen. Aber Sie, Mylady, Sie sind nie gewohnt gewesen, Armuth und
+            Kummer zu ertragen.</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Ich verehre in allen Stücken die Hand des Himmels, und wenn ich auch in eurer
+            schlechten Hütte den Geist aufgeben sollte. Ich würde glücklicher seyn, wenn mich nicht
+            der Stolz und die Härte meines Vaters zum Elend verdammt hätte. Vielleicht weckt mein
+            bejammernswürdiger Zustand andere Gesinnungen in ihm auf, wenn er davon benachrichtiget
+            wird. – <pb n="20"/> Ich habe euch versprochen, die traurige Geschichte meines kurzen
+            Lebens zu erzehlen. –</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>O Mylady, wenn Sie nur das Reden nicht noch schwächer macht.</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Ich sehe es als eine besondere Güte des Himmels an, daß er mir noch einige Frist zum
+            Leben schenket. Vielleicht soll ich meinen erzürnten Vater noch sehen. – Ich bin zwar
+            sehr schwach; aber meine Schwachheit hindert nicht, daß ich euch mein Versprechen halten
+            kann. – Höret und erstaunet! – <stage>(mit einer schwachen aber doch vernehmlichen
+              Stimme)</stage> Ich bin die einzige Tochter des Daramby, eines der angesehensten Lords
+            in Engelland. Meine Mutter, die mich auf das zärtlichste liebte, wurde mir in meinen
+            frühsten Jahren durch den Tod entrissen; welcher Verlust ohne Zweifel nicht wenig zu
+            meinem künftigen Unglück beygetragen hat. Mein Vater, der meine Erziehung selbst über
+            sich nahm, erhob mich über alles und liebte mich sehr; aber er redete nie anders mit
+            mir, als in einem harten Thon, der die Jugend schüchtern macht, und sie mehr in
+            Unordnung bringt, als sie bessert. Er verband mit seinem harten Charakter noch einen
+            unerträglichen Stolz. Er glaubte, da ich zu mehreren Jahren gekommen bin, daß ich vor
+            keinen andern, als einen von den Vornehmsten in ganz Engelland, zur <pb n="21"/> Heurath
+            bestimmt seyn könnte. Er zweifelte nicht, daß ich in alles, das er mir anrieth, meine
+            Einwilligung geben würde. Aber ein Zufall machte mich mit einem Jüngling bekannt, der
+            mein Herz fesselte, und der alle hohe Einbildungen meines Vaters auf einmal
+            zernichtete.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Wie verschieden sind nicht die Gesinnungen der Menschen! – Wer sollte von einem Vater
+            eine so gleichgültige Liebe zu seinen Kindern erwarten? Ich würde es kaum glauben, wenn
+            ich nicht selbst Proben davon hätte.</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Ein Abgeordneter von der kleinen Stadt Aylsham machte oft seine Aufwartung bey meinem
+            Vater. Manchmal brachte er seinen Sohn mit, den die Natur mit allen Reitzungen der Seele
+            und des Körpers versehen hatte. Kaum sahen wir einander, so bemächtigte sich die Liebe
+            unserer Herzen. Ein geheimer Zug vereinigte uns; wir gefielen einander; wir liebten uns.
+            Ich dachte an keine Ungleichheit des Standes; ich gab nur den Empfindungen meines
+            Herzens Gehör, und Syndham – dis ist der Name des Jünglings, herrschte allein in
+            demselben. Sein Vater konnte nie vermuthen, daß ein Mädchen von Stande ein
+            Liebesverständniß mit einem Menschen von gemeinem Herkommen unterhalten würde; und
+            niemand <pb n="22"/> achtete deswegen unsere geheime Unternehmungen. – O gutes Weib, die
+            Natur hat keinen Antheil an dem eingebildeten Unterschied des Standes. Alle Menschen
+            haben ein Recht, gegenseitige Neigungen in sich zu erwecken.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Aber wie wenige sind, Mylady, die so denken? Wie manches glückliche Ehepaar würde die
+            Welt kennen, wenn man nur in dieser Sache den Stand außer Acht liesse?</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Mein Beyspiel wird euch bald hierinn noch besser unterrichten. – Wir hielten öfters
+            geheime Zusammenkünfte, weil unsere Wohnungen nicht weit von einander entfernet waren.
+            Eine Sommerlaube muste uns oft in ihre Schatten aufnehmen, wo wir einander ewige Liebe
+            zuschwuren. Wir kannten kein grösser Vergnügen, als das wir in unsern zärtlichen
+            Umarmungen genossen – ein Vergnügen, das allen denen unbekannt ist, die ihre Seelen
+            durch den Mißbrauch der Gesellschaft stumpf gemacht haben, deren verhärtete Sinne jene
+            süsse Bewegungen, jene glückliche Triebe der Natur nicht empfinden können. – Aber, ehe
+            wir es uns versahen, so wurden unsere Begierden heftiger und stürmischer; die Unschuld,
+            das beste Geschenk des Himmels, verließ uns, und wir unterlagen der Verführung des
+            Alters, <pb n="23"/> dem Reitz des Orts und der Umstände. Ich vergaß mein Herkommen,
+            meinen Vater, die Ehre, die Religion; ich ließ mich eine strafbare Schwachheit
+            bemeistern, und fiel – in die Arme des Syndham.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Gott! was höre ich – Unglückliche Lady!</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>O ein solcher Zufall sollte allen jungen Personen schrecklich seyn, die nicht gelernt
+            haben, sich mit Stärke gegen die kleinste Bewegungen der Liebe zu wafnen! – Nun war der
+            Grund zu unserm künftigen Unglück gelegt. Lange von der äusersten Verzweiflung wegen
+            dieser übereilten That gefoltert, wusten wir nicht, was wir anfangen sollten. Endlich
+            faßten wir den Endschluß, unser Geheimniß einem alten Geistlichen, mit Namen Simpson, zu
+            entdecken, der uns wohl kannte, der der ehrwürdigste Mann von der Welt ist, und dessen
+            Gesichtszüge schon Tugend und Frömmigkeit ankündigen. Er versprach uns seine Hülfe. Er
+            ließ sich darauf sogleich bey meinem Vater anmelden. Wir blieben so lange in einem
+            Nebenzimmer, bis Simpson meinen Vater ein wenig vorbereitet hatte. Hierauf gab uns der
+            ehrwürdige Mann ein Zeichen. Wir eilten, zwischen Furcht und Hoffnung getheilt, in das
+            Zimmer, worinnen sich mein Vater mit dem Geistlichen befande. Wir fielen ihm zu Füssen,
+              <pb n="24"/> umfaßten seine Knie, und baten ihn um Vergebung. –</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Und diese werden Sie ohne Zweifel erhalten haben?</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Leider das Gegentheil! Mein Vater war in voller Wuth. – Dieser Elende, rief er, ist
+            dein Mann? Ich glaubte, daß es kein anderer als ein Lord seyn könnte. Gehe mir aus den
+            Augen, Unglückliche! ich gebe dir meinen Fluch! – Ich weinte zu den Füssen des Mylords.
+            Nichts wollte helfen. Er zog seinen Degen, versetzte dem Syndham eine Wunde, daß das
+            Blut stromweise von ihm floß, und er würde ihn gewiß durchstoßen haben, wenn ich den
+            Stich nicht aufgehalten hätte. Ich klagte mich hierauf allein an. Ich bat ihn, daß er
+            mich seiner Wuth aufopfern sollte. – Aber alles, alles war vergebens.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Gerechter Himmel! – Und der Geistliche?</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>O diesen würde er auch durchbohrt haben, wenn ihm nicht noch sein graues Haupt
+            Ehrerbietung eingeflößt hätte. – Ich fiel vor Schrecken in Ohnmacht, und war dem Tode
+            nahe. Simpson schleppte mich weg, und Syndham, der selbst unter der Last der Schmerzen
+            fast umkam, hielt mich fest in seinen Armen, <pb n="25"/> und wich nicht von mir.
+            Simpson brachte uns nach meiner Erholung eilends zu einer seiner Verwandten. Kaum erfuhr
+            es mein Vater, so foderte er uns mit Ungestüm zurück. Was hatten wir also vor ein Mittel
+            übrig, als die Flucht. Wir liefen an einem frühen Morgen vor Anbruch des Tages aus dem
+            Hause, und überliessen uns der Führung des Himmels.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Aber, Mylady! warum haben Sie sich nicht zu dem Vater Ihres Geliebten gewendet? Warum
+            haben Sie nicht bey ihm Rettung und Sicherheit gesucht?</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>O wir würden gewiß zu ihm geflohen seyn, wenn er nicht wenige Tage vorher, nachdem er
+            einen ansehnlichen Banquerot gespielt, vor Kummer gestorben wäre. Syndham, mein theurer
+            Syndham – nur weinend kann ich an ihn denken – war alles seines Vermögens beraubt, und
+            niemand würde sich seiner angenommen haben.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Ich sehe wohl, daß sich alles vereiniget hat, Sie elend zu machen.</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Wir konnten nicht das geringste mitnehmen, das uns vor der Armuth hätte schützen
+            können. Wir reißten einige Tage, begleitet von tausend <pb n="26"/> Unruhen, ehe wir
+            jemand antrafen, der sich unserer angenommen hätte. Endlich, da wir von Kummer und
+            Betrübniß beynahe niedergedrückt worden, erblickte uns ein alter Pachter von einem
+            gewissen Meierhof. Wir entdeckten ihm unsere Umstände. Er hatte Mitleiden mit unserm
+            Elend. Mein Syndham versprach ihm, die härteste Arbeit auf dem Felde zu übernehmen, wenn
+            er uns nur damit täglich einige Bissen Brod verschaffen könnte. Tom, so hieß dieser
+            ehrwürdige Greis, der in einem Alter lebte, worinn die Schwachheit hochgeschätzt wird,
+            und das mehr von Tugend und wohlthätigen Handlungen, als von Jahren überhauft war. Tom
+            öfnete uns seine schwache Arme, liebte uns als seine Kinder, schafte uns so viel
+            Unterhalt und meinem geliebten Syndham so wenig Arbeit, daß ich bald lernte, meine
+            vorige gute Tage zu vergessen, und mit wenigem zufrieden zu seyn. Wir genossen manche
+            heitere Tage der Unschuld und Zufriedenheit. Ich besuchte Syndham oft bey seiner Arbeit.
+            Siehe, sagte er dann zu mir, indem er mich zärtlich küßte – siehe, das ist die
+            Bestimmung des Syndham, den Schooß der Erde zu öfnen, und sie mit seinem Schweiße zu
+            befeuchten; aber das Schicksal wird uns nicht in dieser Erniedrigung umkommen lassen.
+            Wir hatten an unserm redlichen Pachter einen andern Vater, und während unsern <pb n="27"
+            /> erträglichen Umständen schenkte mir der Himmel diesen geliebten Sohn, der mich so
+            zärtlich liebt, und dessen blühende Wangen ich schon oft mit meinen Thränen benetzt
+            habe. <stage>(Sie küßt Eduard)</stage></p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>So bist du der unschuldige Unglückliche, der die Tage seiner geliebten Mutter so
+            traurig macht?</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Aber kaum flossen uns einige Jahre der Ruhe und Zärtlichkeit hin, so verlohren wir
+            unsern edeldenkenden Greifen, und unsere Leiden nahmen mit gedoppelter Heftigkeit zu.
+            Richard, der Sohn dieses Alten, der unharmherzigste Mann, den je die Welt kannte, trat
+            an die Stelle seines Vaters, und begegnete uns mit der unverantwortlichsten Härte. Er
+            überhäufte Syndham mit unerträglicher Arbeit, daß seine Kräfte zusehends abnahmen. Ich
+            wurde untröstbar. Ich warf mich zu seinen Füssen. Ich beschwur ihn bey dem theuren Namen
+            der Menschlichkeit, bey dem Himmel selbst, daß er in der Bedrückung meines Geliebten
+            Mäßigung brauchen sollte. Ich hielt ihm meine Schwachheit vor, und mein Unvermögen harte
+            Arbeit zu ertragen. Allein, er war taub bey meinem Flehen. Er plagte <pb n="28"/>
+            Syndham noch mehr, bis er endlich unter seinem schweren Joch erliegen, und unter freyem
+            Himmel in einer Furche, den Geist aufgeben muste.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Mein Blut erstarrt bey dieser schrecklichen Nachricht! Ist es möglich, daß eine solche
+            Bosheit nicht auf der Stelle gestraft wird?</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>O er hat seine Strafe nur allzufrüh empfangen. – Ich schrieb eilends an meinen Vater,
+            erhielt aber keine Antwort. Richard wollte mich nun nicht mehr in seinem Hause dulden.
+            Er stieß mich und meinen Sohn mit unbarmherziger Hand von sich, ohne mir noch ein Stück
+            Brod auf den Weg zu schenken.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Gott! welche unerhörte Grausamkeit! Möchten doch alle empfindliche Herzen, die dieses
+            hören, eine mitleidige Thräne vergiessen.</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Nun war mein Unglück auf der höchsten Stufe. Die Tochter eines reichen und angesehenen
+            Lords sah sich nun genöthigt, fremdes Mitleiden zu erflehen. Ich hatte noch wenigstens
+            acht Tage zu reisen, bis ich auf dem Landguth <pb n="29"/> meines Vaters anlangte. Ich
+            floh die großen Städte, und gieng nur von einem Dorfe zum andern. Ich traf wenig
+            Menschen an, welche diesen großen Namen verdienten. Die schreckliche Hitze und die
+            äuserste Betrübniß beschleunigten meine Schwachheit – Gestern gieng ich an einem weiten
+            Kirchhof vorbey. Die Müdigkeit, die Betrübniß und dieser melancholische Ort hießen mich
+            stille stehen. Ich setzte mich mit meinem Sohn neben einem Grabmahl nieder. Meine
+            Schwachheit vermehrte sich heftig, und das Andenken eines nahen Todes brachte mich
+            beynahe zur Verzweiflung. Ich sprang auf, lief an einen nahen Graben, wollte dieses
+            unschuldige Kind seines traurigen Schicksals überheben, und dann auch meinem bedrängten
+            Leben ein Ende machen. Mein Eduard fieng an zu schreyen, heftete seine Augen auf mich,
+            hielt mich fest, und vergoß einen Strom von Thränen. Hier erwachten plötzlich in meiner
+            Brust die sanfte Gefühle der Menschheit und der mütterlichen Liebe. – Nein, liebstes
+            Kind, sagte ich zu ihm, nein, ich werde dir nicht das Leben nehmen; dir, in dem ich
+            immer wieder das Bild meines erblaßten Syndhams erblicke. Ich werde dich mit meinen
+            Zähren tränken. Ich werde dich ernähren. Du sollst leben, mich zu beweinen und mich zu
+            lieben. – Ich faßte nun den Endschluß, so weit zu gehen, als mich meine <pb n="30"/>
+            schwache Füsse tragen könnten. – Aber nun höret die schrecklichste Geschichte, die jede
+            fühlende Seele mit Schauer und Entsetzen erfüllen muß.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Nun? kündigen Sie mir wieder ein neues Unglück an? könnte wohl ihr Elend noch höher
+            steigen?</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Kaum gieng ich einige Schritte weiter, so hörte ich in der Ferne ein klägliches Wimmern
+            – Seufzer, die den Seufzern eines Sterbenden ähnlich sind. Ich sah mich um, und
+            erblickte einen Menschen auf einem Stein sitzen, der beynahe ohnmächtig war. Das
+            Mitleiden drang mich, daß ich an eine nahe Quelle gieng, um diesem Fremdling etwas
+            Wasser zu schöpfen. Ich gieng näher zu ihm, und – o Himmel! es war mein Verfolger
+            Richard, der grausame Sohn des Tom, der Syndham unter der Last der Arbeit sterben ließ.
+            Er getraute sich kaum, mich anzusehen. Der Himmel, sagte er, schickt mir noch diese
+            Strafe, daß ich einer Person verbindlich seyn muß, die ich mit der größten Grausamkeit
+            mißhandelt habe. Er versicherte mich, daß er in zween Tagen nichts gessen hätte, und daß
+            er vor Hunger umkäme. Ich theilte mein letztes Stück <pb n="31"/> Brod mit ihm, das ich
+            eben meinem Sohn geben wollte, in zween Theile, und reichte ihm den einen. Sehet,
+            Richard, sprach ich, wo eure Härte uns beyde hingebracht hat. Er konnte mir nur mit
+            Schluchzen antworten. Er erzehlte mir hierauf die Ursache seines Unglücks, wenn anders
+            sein Zustand den Namen des Unglücks verdiente. Mein Geitz, sagte er, machte mich hart
+            und unerbittlich. Ich wollte mich an fremden Gütern bereichern. Man entdeckte meine
+            Bosheit. Man bemächtigte sich meines Meierhofs, eben an dem Tage, an dem ich Sie
+            verstossen habe. Man wollte mich ins Gefängniß schmeißen. Ich entfloh. Nicht genug.
+            Strassenräuber bemächtigten sich des wenigen, das ich noch bey mir hatte, und niemand
+            will sich mehr über mich erbarmen. Der Himmel hat Sie, er hat Syndham genug gerächt.
+            Kaum konnte er noch diese letzte Worte herstammeln, so sank er auf die Seite, und
+            starb.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Dieses war die gerechte Strafe seiner Bosheit. Ich zittre am ganzen Leibe. O Mylady,
+            ich habe ein ähnliches Beyspiel erfahren, das vielleicht eben solche traurige Folgen
+            nach sich gezogen hat. Mein Mann verließ mich und meine Kinder, weil er die Armuth nicht
+            ertragen wollte. Er hätte uns durch Arbeiten wenigstens vor dem Hunger schützen
+            können.</p>
+        </sp>
+        <pb n="32"/>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Wie, armes Weib! ist euer Mann Ursache an eurem Elend?</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Ich würde nicht so viel Antheil an Ihrer Geschichte genommen haben, wenn mir nicht
+            immer die meinige dabey eingefallen wäre. O Mylady! wie wenige Syndhams giebt es auf der
+            Welt!</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Gott! ihr ruft mir den Besten, den Liebenswürdigsten in mein Gedächtniß zurück. Ewig
+            geliebter Syndham! wie oft wollt' ich dir sagen, daß du mein zärtlichster Gatte seyest,
+            wenn du noch lebtest – daß ich die glücklichste Frau auf der Welt wäre – Meine Hände
+            sollten dir jede schlechte Speise zubereiten – Alle meine Zärtlichkeit wollte ich in
+            deinen Schooß ausschütten, um deinen und meinen Gram zu erleichtern – Eins würde für das
+            andere leben – Unser liebstes Kind würde unser Trost im Unglück seyn – Gott! welche
+            Bewegungen erschüttern mein schwaches Herz! – O ich werde dir bald nachfolgen, Syndham!
+            – ich werde bald neue Glückseligkeit mit dir theilen! – Jeder Augenblick nimmt mir meine
+            noch übrige Kräfte. – Gutes Weib, ich bin dem Tode sehr nahe. –</p>
+        </sp>
+        <pb n="33"/>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>O Mylady! beruhigen Sie sich! Ihre Schwachheit vermehret sich merklich bey Ihrem Gram.
+            Wenn ich nur stärkende Mittel hätte!</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Keine stärkende Mittel! – Der Tod ist das beste Labsal, das mir der Himmel schenken
+            kann. – Wenn doch nur mein Vater käme! – Ich werde ihn schwerlich noch sehen. – Ich muß
+            noch einmal alle meine Kräfte sammlen – und einen kleinen Brief aufsetzen – den ihr ihm
+            einhändigen könnet – wenn ich in euren Armen – den Geist aufgeben habe. <stage>(Sie
+              schreibt, indem sie Sara in den Armen hält)</stage> O wie sehr wünschte ich mir noch
+            dieses Glück! – <stage>(Sie schreibt weiter)</stage> – Auch eurer muß ich gedenken,
+            gutes Weib! Euer Beystand versüsset mir noch die letzte Augenblicke meines Lebens. –
+              <stage>(schreibt fort)</stage> – Nun genug! – <stage>(Sie läßt das Löschbley aus der
+              Hand fallen, und in der andern behält sie den Brief)</stage> Mein Vater kennet meine
+            Handschrift – Er wird diesen Brief schon lesen.</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>O Mylady! Mylady! so müssen Sie noch in meiner schlechten Hütte sterben! – Gott! was
+            machen Sie? <stage>(sie hält Bell in den Armen, welche in eine leichte Ohnmacht
+              fällt)</stage> Hülfe! Hülfe! –</p>
+        </sp>
+        <pb n="34"/>
+        <sp who="#eduard">
+          <speaker>Eduard.</speaker>
+          <p>Liebste Mutter! was fehlet euch? <stage>(zur Sara)</stage> Wird denn der bald kommen,
+            von dem Sie mir so viel vorgesagt hat?</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Ja, bestes Kind, er wird bald kommen. Nur noch einige Augenblicke, so wird er hier
+            seyn.</p>
+        </sp>
+        <sp who="#eduard">
+          <speaker>Eduard.</speaker>
+          <p>Warum bleibt er doch so lange? – Liebe Mutter! könnet ihr nichts reden? Redet doch mit
+            mir! küsset mich doch!</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Wer sollte sich bey diesem Anblick der Thränen enthalten können? <stage>(sie
+              weint)</stage></p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell</speaker>
+          <stage>(die sich wieder erholt)</stage>
+          <p>Warum hast du nicht noch einen Stoß gethan – unerbittlicher Tod! – Nur den letzten –
+            und es ist geschehen. – Wo ist mein Sohn? – Wie? – du weinst? – einziger Trost deiner
+            sterbenden Mutter! –</p>
+        </sp>
+        <sp who="#eduard">
+          <speaker>Eduard.</speaker>
+          <p>Ich weine, weil ihr mich nicht ansehen und mich küssen wolltet!</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Armes Kind! – komm – und empfange noch einen Kuß – den letzten auf dieser Welt voll
+            Elend. <stage>(Sie zwingt sich und umarmet und küßt ihren Sohn zärtlich und behält ihn
+              an der Hand)</stage>
+            <pb n="35"/> Wirf dich meinem Vater zu Füssen, wenn er kommt – und erflehe Gnade – für
+            deine Mutter! – Lebe wohl! – <stage>(Eduard weint)</stage></p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Gott! die Augen brechen ihr. –</p>
+        </sp>
+        <sp who="#bell">
+          <speaker>Bell.</speaker>
+          <p>Euch, gutes Weib! – dank' ich – für alle Sorge – die ihr an meinem Ende – für mich
+            thut! – Mein Vater – wird euch – belohnen. – Ach Gott! – vergieb meine menschliche
+            Schwachheiten – vergieb – meinem Verfolger Richard – bringe mich bald – zu meinem –
+            Syndham –</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Sechster Auftritt.</head>
+        <stage>Die Vorige. Lord Daramby. Simpson. Karolina.</stage>
+        <sp who="#daramby">
+          <speaker>Daramby</speaker>
+          <stage>(im Hereingehen)</stage>
+          <p>Meine Tochter in einer so elenden Hütte, und dem Tode nah? Wo ist sie? <stage>(er
+              erblickt sie und stehet erstarrt)</stage> Gott! – Karolina. Wie? ist sie tod?
+              <stage>(sie weint)</stage></p>
+        </sp>
+        <pb n="36"/>
+        <sp who="#bell">
+          <speaker>Bell</speaker>
+          <stage>(die noch ihren Vater und Simpson erblickt, mit gebrochener Stimme)</stage>
+          <p>Ach mein Vater! – Verzeihen Sie! – <stage>(Sie streckt die Arme nach ihm, läßt sie aber
+              sogleich wieder sinken)</stage> Simpson – Lebet alle – wohl! <stage>(Sie
+              stirbt)</stage></p>
+        </sp>
+        <sp who="#simpson">
+          <speaker>Simpson</speaker>
+          <stage>(der auch heftig weint)</stage>
+          <p>So wunderbar sind die Wege des Himmels?</p>
+        </sp>
+        <sp who="#daramby">
+          <speaker>Daramby.</speaker>
+          <p>Sie ist tod? Sie ist tod? – Und dieses Kind? –</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Ist ihr Sohn.</p>
+        </sp>
+        <sp who="#daramby">
+          <speaker>Daramby</speaker>
+          <stage>(der das weinende Kind umarmt)</stage>
+          <p>O bestes Kind! o liebster Sohn! <stage>(Er springt zurück)</stage> Doch, nein ich bin
+            nicht werth, daß ich diesen unschuldigen Knaben umarme! Ich bin schuld an dem Tode
+            seiner Mutter! Und ich Scheusal getraute mich noch, ihr unter die Augen zu treten? Warum
+            hab' ich sie nicht mit offenen Armen empfangen, da sie mir den ersten Brief schrieb?
+            Warum habe ich ihnen nicht gefolgt, Simpson? O verdammter Stolz! verdammte Grausamkeit
+            der Väter! Meine Tochter! Mein einziger Rest von deinen Geschwistern! So weit hat dich
+            meine Grausamkeit gebracht! Kann ich noch leben?</p>
+        </sp>
+        <pb n="37"/>
+        <sp who="#simpson">
+          <speaker>Simpson.</speaker>
+          <p>Beruhigen Sie sich, Mylord! Unterdrücken Sie die Leidenschaft! Geben Sie den Gründen
+            der Religion Gehör!</p>
+        </sp>
+        <sp who="#daramby">
+          <speaker>Daramby.</speaker>
+          <p>Wer? ich? die Leidenschaft? Religion? Unglückliche Tochter! Unglücklicher Sohn! – Aber
+            was hält meine Tochter in der Hand?</p>
+        </sp>
+        <sp who="#sara">
+          <speaker>Sara.</speaker>
+          <p>Es ist ein Brief, den Sie noch kurz vor Ihrem Ende geschrieben hat, und den ich Ihnen
+            einhändigen sollte, weil Sie glaubte, daß Sie Mylord nicht mehr lebend antreffen
+            würde.</p>
+        </sp>
+        <sp who="#daramby">
+          <speaker>Daramby.</speaker>
+          <p>Verfluchter Titul! verfluchter Stand! der mich so grausam gegen mein Kind gemacht hat!
+            Dir, unschuldiger Sohn, überlasse ich Ehre, Rang, Vermögen, alles! – <stage>(Er ließt
+              den Brief)</stage></p>
+          <p>»Mylord!</p>
+          <p>Ich sehe Sie nicht mehr, und der Tod schließt meine Augen auf immer. Alles sagt mir,
+            daß ich das Vergnügen nicht mehr genießen werde, Ihre Umarmung und Ihre Vergebung zu
+            erhalten.« –</p>
+          <p>O es ist dir alles vergeben! Möchte sich doch auch der Himmel über mich erbarmen!</p>
+          <pb n="38"/>
+          <p>»Dieses war die einzige Gnade, die ich noch von dem Himmel erflehte; aber Sie wurde mir
+            versagt. Ich leide viel. Ich werde sterben, ohne Ihre Hände mit Thränen zu benetzen,
+            ohne Sie meinen Vater zu nennen.« –</p>
+          <p>Ach! Unglückliche! ich bin nicht dein Vater – dein Henker bin ich.</p>
+          <p>»Ich habe Sie beleidigt, Mylord. Die Liebe, die Liebe ist allein die Quelle meiner
+            Fehler und meines Unglücks. Welches rührende Beyspiel für alle junge Personen meines
+            Geschlechts. – Sehen Sie hier meinen Aufenthalt. In dieser schlechten Hütte, dem
+            Sammelplatz der Schmerzen, sinkt mein Haupt. Hier ist die Unglückliche, die Ihnen meinen
+            eiskalten Körper zeigen wird, die Ihnen meinen armen Eduard – O Mylord! verstossen Sie
+            ihn nicht! Ich liebe ihn – er wird Ihnen gehorsam seyn, er wird Sie lieben. – Ich sterbe
+            mit dieser letzten Hoffnung. Ihre Schmeicheleyen, Ihre Thränen, die Sie über ihn
+            vergiessen, werde ich noch im Grabe fühlen. Versagen Sie meinen zurückgebliebenen
+            Gebeinen den letzten Segen nicht, den ich lebend nicht erhalten konnte. Lassen Sie Ihre
+            Thränen fliessen! Ach die meinige sind versiegt, Würdigen Sie, ich beschwöre Sie noch,
+            meinen Wohlthäter Simpson Ihres Andenkens, und vergessen <pb n="39"/> Sie nicht, dieses
+            Weib zu belohnen, die noch die einzige auf der Welt war, welche mein Schicksal gerührt
+            hat. Leben Sie wohl mein Vater. Meine ganze Seele spricht diese Worte. Beweinen Sie mich
+            mit meinem Kind.«<note>Wem dieser Brief wegen der außerordentlichen Schwäche der Bell zu
+              lang scheint, dem muß ich sagen, daß er in dem Original bey der nemlichen Situation
+              der Bell noch länger ist. Wenn Arnaud glaubte, daß in einem Roman die
+              Wahrscheinlichkeit nicht litte, warum sollte ich als Trauerspielschreiber nicht noch
+              mehr Entschuldigung verdienen?</note></p>
+          <p>Gott! welche Sprache. Banges Schrecken ergießt sich von Nerve zu Nerve! Bin ich nicht
+            Schuld an diesem Unglück? Soll ich meine Tochter noch überleben? Wo ich hinsehe, öffnet
+            sich mir ein Abgrund – Die Hölle empört sich wider mich mit ihrem ganzen schrecklichen
+            Gefolge – Die abgeschiedene Seele meines Kindes schreyt um Rache! Nagende Gewissensbisse
+            foltern mich – Ich verdiene keinen Augenblick mehr zu athmen. <stage>(Er zieht seinen
+              Degen)</stage> Ha! komm letzte Zuflucht, die meinem schwarzen Leben ein Ende macht.
+            –</p>
+        </sp>
+        <sp who="#simpson">
+          <speaker>Simpson</speaker>
+          <stage>(der ihm den Degen entreißen will)</stage>
+          <p>Gerechter Gott! Mylord! was machen Sie? halten Sie ein!</p>
+        </sp>
+        <pb n="40"/>
+        <sp who="#daramby">
+          <speaker>Daramby</speaker>
+          <stage>(ersticht sich und fällt neben seiner erblaßten Tochter nieder)</stage>
+          <p>Gut, ich habe recht gestossen – Ich eile dem Schatten meiner Tochter nach – Gott!
+            erhöre meine letzte Bitte! – Vergieb einem Ruchlosen! – Versorge diesen Kleinen! –
+            Simpson – verzeihen sie meine Beleidigungen. – Vertreten sie bey Eduard meine Stelle –
+            belohnen sie dieses Weib. Leben sie wohl – Ich sterbe! – <stage>(Er stirbt)</stage></p>
+        </sp>
+        <sp who="#simpson">
+          <speaker>Simpson.</speaker>
+          <p>Schreckliche Geschichte! Das Laster führt immer seine verdiente Strafe mit. O wäre doch
+            kein Vater grausam, so würde kein Kind in der Gefahr stehen, unglücklich zu werden, und
+            seine Aeltern unglücklich zu machen!</p>
+        </sp>
+      </div>
+    </body>
+  </text>
+</TEI>
