@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000722" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Kanonenschlag oder Das Gastmahl des Tantalus</title>
+        <title type="sub">Ein heroisches komisches tragisches Schauspiel</title>
+        <author>
+          <persName>
+            <forename>Karoline</forename>
+            <nameLink>von</nameLink>
+            <surname>Günderode</surname>
+          </persName>
+          <idno type="wikidata">Q62053</idno>
+          <idno type="pnd">118543202</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Karoline von Günderrode: Sämtliche Werke und ausgewählte Studien</name>
+          <idno type="URL">https://doi.org/10.21248/gups.86429</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <author>Karoline von Günderrode</author>: <title level="a">Der Kanonenschlag oder Das
+              Gastmahl des Tantalus</title>. In: Karoline von Günderrode: <title level="s">Sämtliche
+              Werke und ausgewählte Studien</title>. Band <biblScope unit="volume">I</biblScope>:
+            Texte. Herausgegeben von <editor>Walter Morgenthaler</editor>. <pubPlace>Frankfurt am
+              Main und Basel</pubPlace>: <publisher>Stroemfeld</publisher>
+            <date>2006</date>. (S. <biblScope unit="page" from="412" to="420"
+            >412–420</biblScope>.)</bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="jupiter" sex="MALE" ana="http://www.wikidata.org/entity/Q4649">
+            <persName>Jupiter</persName>
+          </person>
+          <person xml:id="juno" sex="FEMALE" ana="http://www.wikidata.org/entity/Q125046">
+            <persName>Juno</persName>
+          </person>
+          <person xml:id="iris" sex="FEMALE" ana="http://www.wikidata.org/entity/Q184570">
+            <persName>Iris</persName>
+          </person>
+          <person xml:id="merkur" sex="MALE" ana="http://www.wikidata.org/entity/Q1150">
+            <persName>Merkur</persName>
+          </person>
+          <person xml:id="tantalus" sex="MALE" ana="http://www.wikidata.org/entity/Q182101">
+            <persName>Tantalus</persName>
+          </person>
+          <person xml:id="xantippe" sex="FEMALE" ana="http://www.wikidata.org/entity/Q233677">
+            <persName>Xantippe</persName>
+          </person>
+          <person xml:id="ganymed" sex="MALE" ana="http://www.wikidata.org/entity/Q131588">
+            <persName>Ganymed</persName>
+          </person>
+          <person xml:id="ceres" sex="FEMALE" ana="http://www.wikidata.org/entity/Q32102">
+            <persName>Ceres</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="associated_with" active="#merkur" passive="#jupiter"/>
+            <relation name="associated_with" active="#ganymed" passive="#jupiter"/>
+            <relation name="associated_with" active="#iris" passive="#juno"/>
+            <relation name="associated_with" active="#xantippe" passive="#tantalus"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2025-03-24">(erre) file conversion from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="written" notBefore="1800" notAfter="1801">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000000"
+        passive="http://www.wikidata.org/entity/Q133257709"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <pb n="412"/>
+    <front>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">Der Kanonenschlag oder Das Gastmahl des Tantalus</titlePart>
+          <titlePart type="sub">Ein heroisches komisches tragisches Schauspiel</titlePart>
+        </docTitle>
+        <note>Zur Warnung u Exempel für thörigter Menschen ungezogne u höchst unkluge Nekkereien,
+          daraus sie eine anständige <foreign xml:lang="fr">Conduite</foreign> erlernen können und
+          sollen.</note>
+      </titlePage>
+      <castList>
+        <castItem>
+          <role>Jupiter</role>
+        </castItem>
+        <castItem>
+          <role>Juno</role>
+        </castItem>
+        <castItem>
+          <role>Ceres</role>
+        </castItem>
+        <castItem>
+          <role>Merkur</role>
+          <roleDesc>ein Kammerherr Jupiters</roleDesc>
+        </castItem>
+        <castItem>
+          <role>Ganymed</role>
+          <roleDesc>Page Jupiters</roleDesc>
+        </castItem>
+        <castItem>
+          <role>Iris</role>
+          <roleDesc>Kammerfrau der Juno</roleDesc>
+        </castItem>
+        <castItem>
+          <role>Tantalus</role>
+          <roleDesc>ein reicher Cavalier</roleDesc>
+        </castItem>
+        <castItem>
+          <role>Xantippe</role>
+          <roleDesc>dessen Haushälterin.</roleDesc>
+        </castItem>
+      </castList>
+    </front>
+    <pb n="413"/>
+    <body>
+      <div type="act">
+        <head>Junos Schlafzimmer</head>
+        <stage>(Juno an der Toilette, Iris um sie beschäftiget, Jupiter im Lehnsessel.)</stage>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <l>Wie die verdamte Langweil mich plagt,</l>
+          <l>Vor ihr ist mir bang so oft es tagt.</l>
+        </sp>
+        <sp who="#juno">
+          <speaker>Juno</speaker>
+          <l><foreign xml:lang="fr">Fi donc!</foreign> Wer wird sich <foreign xml:lang="fr"
+              >ennuiren</foreign>?</l>
+          <l><foreign xml:lang="fr">Monsieur</foreign> sollten sich wissen zu amüsiren</l>
+          <l><foreign xml:lang="fr">Jouer, causer</foreign>, und gewählte Lektüre. –</l>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupi</speaker>
+          <l>Merkur hat schon die Zeitung gelesen</l>
+          <l><foreign xml:lang="fr">Ma foi!</foreign> kehrt mans zusamen mit Besen</l>
+          <l>Kein kluges Wort. Vom Bonapart,</l>
+          <l>Seinem Wohlleben, u frecher Hoffart.</l>
+          <l>Von des russischen Kaisers Akademien</l>
+          <l>Wo sie die Wissenschaften in Scherben ziehen,</l>
+          <l>Wie die selten blühnde Aloe.</l>
+          <l>Vom deutschen Kaiser, der gleich Alexandern</l>
+          <l>(Doch rükwärts nur) die Welt will durchwandern.</l>
+          <l>Und klagt daß keine zweite Welt</l>
+          <l>Ihn vor dem Feinde siecher stellt. –</l>
+          <l>Und lauter schon so bekante Dinge,</l>
+          <l>Wie des alten Phillippus Bokssprünge.</l>
+        </sp>
+        <sp who="#juno">
+          <speaker>Juno</speaker>
+          <l>Sie haben da <foreign xml:lang="fr">tres bien</foreign> philosophiert,</l>
+          <l>Und die Dinge gänzlich approfondirt</l>
+          <stage>(Jupiter sieht zum Fenster hinaus) (Juno zur Iris)</stage>
+          <l><foreign xml:lang="fr">Iris, je vous prie</foreign> die Lokken höher,</l>
+          <l>Die <foreign xml:lang="fr">Draperie</foreign> dem Nakken näher. –</l>
+          <l><stage>(leise)</stage> Wo ist das <foreign xml:lang="fr">Billet</foreign> vom
+            Tantalus?</l>
+          <l>Der Thor! er wähnt mit dem einen Fus</l>
+          <l>Schon fest auf dem Olimp zu stehen.</l>
+          <l>Die Götter Königinn kann sehen</l>
+          <l>Wie er den kühnen Wahnsin hegt</l>
+          <l>Sie lieb ihn; doch es ist zum lachen</l>
+          <l>Und wird uns viel Vergnügen machen.</l>
+        </sp>
+        <pb n="414"/>
+        <sp who="#iris">
+          <speaker>Iris</speaker>
+          <l>Das <foreign xml:lang="fr">Billet</foreign>, u zwei grose Bittschriften</l>
+          <l>Liegen im <foreign xml:lang="fr">Cabinet</foreign> bei <foreign xml:lang="fr">Jean
+              Pauls</foreign> Schriften.</l>
+        </sp>
+        <sp who="#juno">
+          <speaker>Juno</speaker>
+          <l>Kan liegen! Jupiter hat üblen <foreign xml:lang="fr">humeur</foreign>.</l>
+        </sp>
+        <stage>(Merkur kömt)</stage>
+        <sp who="#merkur">
+          <speaker>Merkur</speaker>
+          <l>Guten Morgen Herr! doch eil dich sehr,</l>
+          <l>Kläger, Bitter und Deliquenten</l>
+          <l>Sind vor der Thür, aus allen Ständen;</l>
+          <l>Und bitten um gnädigstes Gehör.</l>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupi</speaker>
+          <l>Ich armer ich geplagter Mann,</l>
+          <l>Was geth mich den der Pöbel an?</l>
+          <l>Und wozu hab ich die Staatsminister?</l>
+        </sp>
+        <sp who="#merkur">
+          <speaker>Merk</speaker>
+          <l>Die haben heut Arzeney eingenommen</l>
+          <l>Weil ihnen dein <foreign xml:lang="fr">Souper</foreign> schlecht bekomen.</l>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupi</speaker>
+          <l>Ich bin doch wahrlich ein guter König,</l>
+          <l>Bekümere mich um fremde Händel wenig</l>
+          <l>Las alles reiten, u fahren, und gehn,</l>
+          <l>Und stehen, was da will stillestehn.</l>
+          <l>Nur wen ich hör das einer raisonirt,</l>
+          <l>So wird er wie sich gehört u gebührt,</l>
+          <l>Auf drei Jahr nach der Vestung geführt.</l>
+          <l>Warum läst mich den das Volk nicht in Ruh</l>
+          <l>Und Warum stürmen die Tölpel auf mich zu?</l>
+        </sp>
+        <sp who="#merkur">
+          <speaker>Merk</speaker>
+          <l>Vom Tantalus ist auch eine Bittschrift gekomen</l>
+          <l>Er wünscht das Majors Diplom zu bekomen.</l>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupi</speaker>
+          <l>Bracht mir der Mann den schon Gewinst?</l>
+          <l>Oder hat er sonst ein Verdinst?</l>
+        </sp>
+        <sp who="#merkur">
+          <speaker>Merk</speaker>
+          <l>Erlaube mir von seinem Leben</l>
+          <l>Dir einen kurzen Auszug zu geben.</l>
+          <l>In seiner Jugend hat er viel Speisen genossen</l>
+          <l>Daraus sein Herr Vater mit Recht geschlossen,</l>
+          <l>Er würde die Feinde so muthig zerstören</l>
+          <pb n="415"/>
+          <l>Wie er könte den Mehlbrei verzehren.</l>
+          <l>Er wurde auch wirklich zum Fähndrich ernant,</l>
+          <l>Nahm tapfer im Kriege die Fahne zur Hand.</l>
+          <l>Gab einem Titan der vor ihm stand</l>
+          <l>Ganz unversehns einen Bakkenstreich.</l>
+          <l>Darob das Regiment ihn respektirt</l>
+          <l>Und er zum Leutenant <foreign xml:lang="fr">avancirt</foreign>.</l>
+          <l>Drauf beflekt er sein Gewissen mit keiner Blutschuld</l>
+          <l>Und erlangte die <foreign xml:lang="fr">Compagnie</foreign> durch Geduld.</l>
+        </sp>
+        <sp who="#juno">
+          <speaker>Juno</speaker>
+          <l>Ich dächte er hätte wohl meritirt</l>
+          <l>Daß er den Titel eines Majors führt.</l>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupi</speaker>
+          <l><foreign xml:lang="fr">Ah! je me souviens!</foreign> Er war ungezogen</l>
+          <l>Der Ceres, noch als Fähndrich, ich hab ihr versprochen</l>
+          <l>Daß er nicht weiter als Hauptmann <foreign xml:lang="fr">avancirt</foreign></l>
+          <l>Weil es die gute Schwester <foreign xml:lang="fr">genirt</foreign></l>
+          <l>Wen sie den Verhasten auf der Parade sieth.</l>
+        </sp>
+        <sp who="#juno">
+          <speaker>Juno</speaker>
+          <l>Sein sie ruhig, ich hab ein <foreign xml:lang="fr">moyen</foreign> gefunden.</l>
+          <l>Tantalus erwartet uns in eingen Stunden</l>
+          <l>Zum <emph>Dinner</emph>, wir nehmen <foreign xml:lang="fr">ma Soeur</foreign> mit.</l>
+        </sp>
+        <sp who="#merkur">
+          <speaker>Merkur</speaker>
+          <l>Vortreflich! bei einer Flasche Wein</l>
+          <l>Leit' ich klüglich die Versöhnung ein.</l>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupi</speaker>
+          <l>Gut! lassen sie die Pferde vorführen</l>
+          <l>Ich geh indes zu <foreign xml:lang="fr">dejeunieren</foreign>
+            <stage>(geth ab)</stage></l>
+        </sp>
+        <sp who="#juno">
+          <speaker>Juno</speaker>
+          <l><emph>Mercure</emph>, ihr Spiel ist nicht <foreign xml:lang="fr">cachirt</foreign>,</l>
+          <l>Ich fürchte <emph>Jupiter</emph> remarquirt,</l>
+          <l>Daß man ihm das Zepter ganz entführt.</l>
+          <l>Und nach der allerlängsten Pause</l>
+          <l>Komt ihm noch oft ne' Herscherflause.</l>
+          <l>Auch bin ich der Ceres Einmischung müde.</l>
+          <l>Das Alles muß enden, soll der Friede</l>
+          <l>Mir werden. – <foreign xml:lang="fr">Mercure, rassurés moi.</foreign></l>
+        </sp>
+        <pb n="416"/>
+        <sp who="#merkur">
+          <speaker>Merkur</speaker>
+          <l><foreign xml:lang="fr">Madame</foreign> unser Glüks Jubiläum ist nah.</l>
+          <l>Ich habe Jupitern durch alle Knochen,</l>
+          <l>Einen Drath den ich nur ziehe, gezogen.</l>
+        </sp>
+        <sp who="#juno">
+          <speaker>Juno</speaker>
+          <l><foreign xml:lang="fr">Bon!</foreign> Und ist Tantalus Major,</l>
+          <l>So spant er sich gern unserm Wagen vor.</l>
+          <l><foreign xml:lang="fr">Apropos!</foreign> melden sie der Residenz</l>
+          <l>Ich gebe diesen Abend Audienz.</l>
+        </sp>
+        <sp who="#merkur">
+          <speaker>Merkur</speaker>
+          <l>Und wen durch meine Hülfe u Mühe</l>
+          <l>Sie ganz allein die Welt regieren,</l>
+          <l>Welche Belohnung werd ich ziehn?</l>
+        </sp>
+        <sp who="#juno">
+          <speaker>Juno</speaker>
+          <l><foreign xml:lang="fr">Fiès moi</foreign>; sie allein sollen die Erlaubnis haben,</l>
+          <l>Das Land mit einer Pharobank zu schaaben.</l>
+        </sp>
+      </div>
+      <div type="act">
+        <head>2ter Akt</head>
+        <stage>(Visiten Zimmer des Tantalus. Tantalus auf u ab gehend)</stage>
+        <sp who="#tantalus">
+          <speaker>Tantalus</speaker>
+          <l>Frau Ceres also hat mir ein Bein gestellt!</l>
+          <l>Sie irrt sich wen sie denkt das einer fällt,</l>
+          <l>Der lange schon passirt als Held.</l>
+          <l>Doch wahrlich es steht nicht lang mehr an</l>
+          <l>So werd ich meine Feinde fahn. –</l>
+          <l>Werde plözlich Oberst u General,</l>
+          <l>Jupiters Freund, und Spezial</l>
+          <l>Und eh' ichs selbst weis auf Einmal</l>
+          <l>Sogar der erste Staatsminister;</l>
+          <l>Mein Sekretär hat ia studirt</l>
+          <l>Weis wie man dergleichen Händel führt,</l>
+          <l>Und an Unterschriften solls nicht fehlen. –</l>
+          <l><stage>(Nachdenkend)</stage> Wie oder wenn ich von Holz u wohlfeilen Rinden</l>
+          <l>Ein Mittel gegens Fieber könt finden?</l>
+          <l>Oder Zukker wüste von Kartoffeln zu kochen;</l>
+          <pb n="417"/>
+          <l>Wahrhaftig! ohne Prahlen u Pochen,</l>
+          <l>Eine Verdinst <foreign xml:lang="fr">Medaille</foreign> wäre mein.</l>
+        </sp>
+        <stage>(Xantippe trit ein)</stage>
+        <sp who="#xantippe">
+          <speaker>Xantippe</speaker>
+          <l>Gnädger Herr! Jupiters Wagen hält am Hof,</l>
+          <l>Juno, u Ceres sitzen drin, u in Stoff,</l>
+          <l>Sind Kutscher, u Lakain gekleitet.</l>
+        </sp>
+        <sp who="#tantalus">
+          <speaker>Tantalus</speaker>
+          <l>Ceres! <foreign xml:lang="fr">bon Dieu!</foreign> wie mich das erschrekt! –</l>
+          <l><stage>(reibt sich die Stirn)</stage> Doch still! da hab ich was erfunden,</l>
+          <l><foreign xml:lang="fr">Vivat</foreign> der Wiz! in wenig Stunden</l>
+          <l>Wird Ceres verwiesen, zum Respekt. – –</l>
+          <l>Xantippe reich sie mir den Federhut</l>
+          <l>Der mir so majestätisch auf der Stirne ruth.</l>
+        </sp>
+        <stage>(Er u Xantippe ab) (kurz drauf trit Ganymed lachend ein)</stage>
+        <sp who="#ganymed">
+          <speaker>Ganymed</speaker>
+          <l>Ha! Ha! da komt uns herr Tantalus entgegen,</l>
+          <l>Das Bein im Stolpstiefel kann er so wenig bewegen</l>
+          <l>Als den schwachen Kopf im grosen Hut.</l>
+          <l>Und Juno ist in Zorn, u Wuth,</l>
+          <l>Weil sie das Füschen sich vertreten.</l>
+        </sp>
+        <stage>(Jupiter Juno Ceres Merkur u Tantalus tretten ein. Grose Complimente)</stage>
+        <sp who="#tantalus">
+          <speaker>Tantalus</speaker>
+          <stage>(zur Juno)</stage>
+          <l><foreign xml:lang="fr">Madame</foreign> ich möchte das Schiksal verklagen</l>
+          <l>Weil sich das Unglük hier zugetragen.</l>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupit</speaker>
+          <l>Wir wollen hoffen s'hat nichts zu sagen.</l>
+        </sp>
+        <sp who="#ceres">
+          <speaker>Ceres</speaker>
+          <l>Mit gereizten Nerven ist nicht zu spasen,</l>
+          <l>Wir wollen Äskulapen holen lassen.</l>
+        </sp>
+        <sp who="#juno">
+          <speaker>Juno</speaker>
+          <stage>(sich setzend)</stage>
+          <l>Bin ich nicht alterirt, u blaß?</l>
+        </sp>
+        <sp who="#ganymed">
+          <speaker>Ganymed</speaker>
+          <l>Die Blässe ist noch nicht durch die Farben gedrungen</l>
+          <l>Die ihrer künstlichen Hand entsprungen.</l>
+        </sp>
+        <pb n="418"/>
+        <sp who="#juno">
+          <speaker>Juno</speaker>
+          <l>Was thun wir hier mit dem bösen Jungen,</l>
+          <l>Dem <foreign xml:lang="fr">Jacobin</foreign>, dem Tituskopf?</l>
+          <l>Ich dächte sie nähmen ihn beim Schopf</l>
+          <l><emph>Jupiter</emph>, u führten ihn hinunter.</l>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupit:</speaker>
+          <stage>(zu Ganymed)</stage>
+          <l>Mein Sohn sei still u geh in die Ekke</l>
+          <l><stage>(Zur Juno)</stage>
+            <foreign xml:lang="fr">Madame</foreign> das Kind ist ia friedlich wie ne' Schnekke</l>
+          <l>Lassen sie ihn von der Gesellschaft profitiren.</l>
+        </sp>
+        <sp who="#juno">
+          <speaker>Juno</speaker>
+          <l><foreign xml:lang="fr">Ingrat!</foreign> doch ich will mich moderieren.</l>
+        </sp>
+        <stage>(Eine servirte Tafel wird gebracht, alle sezen sich darum, Tantalus neben
+          Juno)</stage>
+        <sp who="#tantalus">
+          <speaker>Tantal:</speaker>
+          <stage>(zu Merkur)</stage>
+          <l>Was meldet die Zeitung aus der Residenz?</l>
+        </sp>
+        <sp who="#merkur">
+          <speaker>Merk</speaker>
+          <l>Der Redakteur hat die Hirnviehseuche bekomen,</l>
+          <l>Doch ist ihm die Feder darum nicht entnomen,</l>
+          <l>Er schreibt mit starker, u schneller Hand,</l>
+          <l>Gar vieles von dem In, u dem Ausland.</l>
+          <l>So meldet er nur heut aus Madrit,</l>
+          <l>Daß den König hartnäkkig die Schlafsucht befallen</l>
+          <l>Und nichts erwekt ihn zu einem Schritt</l>
+          <l>Als wen ihn der Nachbar stößt zu wiederholten Malen.</l>
+        </sp>
+        <sp who="#tantalus">
+          <speaker>Tantal:</speaker>
+          <l>Was sie nicht sagen! wer hätt es geglaubt!</l>
+        </sp>
+        <sp who="#ceres">
+          <speaker>Ceres</speaker>
+          <stage>(zu Jupiter)</stage>
+          <l>Herr Tantalus wieget sein weises Haupt!</l>
+          <l>Vermutlich weils so schwer mit Lorbeern belaubt.</l>
+        </sp>
+        <sp who="#tantalus">
+          <speaker>Tantal:</speaker>
+          <stage>(zur Juno)</stage>
+          <l>Ich renne mich in meinen Degen</l>
+          <l>Kann ich sie nicht zum lächlen bewegen.</l>
+        </sp>
+        <sp who="#juno">
+          <speaker>Juno</speaker>
+          <l>Bin heute gar nicht disponirt.</l>
+          <l>Vom fahren noch sehr fatigiert.</l>
+        </sp>
+        <stage>(Ganymed stellt sich hinter Tantalus, u ahmt ihm alle Bewegungen nach)</stage>
+        <stage>(lange Pause)</stage>
+        <sp who="#ceres">
+          <speaker>Ceres</speaker>
+          <l>Herr Tantalus reibt sich die Stirne!</l>
+        </sp>
+        <pb n="419"/>
+        <sp who="#ganymed">
+          <speaker>Ganymed</speaker>
+          <l>Das treibt Gedanken nach dem Hirne.</l>
+        </sp>
+        <stage>(Unter der Ceres Stuhl geth ein Kanonenschlag los. Sie fällt ohnmächtig hin, Jupitern
+          entsinkt der Becher. Allgemeiner Schrekken)</stage>
+        <sp who="#juno">
+          <speaker>Juno</speaker>
+          <l>Es befällt mich Todesschwindel!</l>
+          <l>Der Parze entsinket meine Spindel.</l>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <l>Gleich nach dem Essen! es ist zum sterben.</l>
+        </sp>
+        <sp who="#tantalus">
+          <speaker>Tantalus</speaker>
+          <stage>(bei Seite)</stage>
+          <l>Juchhe! es ist gelungen! <stage>(laut)</stage> O Weh!</l>
+          <l>Was ist das für ein Unglüks <foreign xml:lang="fr">trait</foreign>.</l>
+        </sp>
+        <sp who="#ceres">
+          <speaker>Ceres</speaker>
+          <stage>(sich aufrichtend)</stage>
+          <l>O Weh! O Weh! mir geths' an Kragen</l>
+          <l>Ich liege schon in Charons Nachen.</l>
+        </sp>
+        <sp who="#ganymed">
+          <speaker>Ganymed</speaker>
+          <stage>(findet den Kanonenschlag)</stage>
+          <l>Ihr Götter seth, was hab ich gefunden?</l>
+        </sp>
+        <sp who="#tantalus">
+          <speaker>Tantal</speaker>
+          <l>Schweig Junge! oder du wirst geschunden.</l>
+        </sp>
+        <sp who="#ceres">
+          <speaker>Ceres</speaker>
+          <l>Jupiter ich fodre von dir Rach,</l>
+          <l>Den sieh, es ist ein Kanonenschlag.</l>
+        </sp>
+        <stage>(Jupiter spricht mit Merkur leise)</stage>
+        <sp who="#tantalus">
+          <speaker>Tantal:</speaker>
+          <l>O Juno hilf! es war nur Spas.</l>
+        </sp>
+        <sp who="#juno">
+          <speaker>Juno</speaker>
+          <l><foreign xml:lang="fr">Blasphème!</foreign> es war sehr impertinent,</l>
+          <l>Daß man einen so in Schrekken rent.</l>
+        </sp>
+        <sp who="#ceres">
+          <speaker>Ceres</speaker>
+          <l>Man soll die Götter honorieren</l>
+          <l>Und nicht an der Nase herum führen.</l>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <l>Tantalus sie sind ein Verderben im Staat,</l>
+          <l>Ein Fürstenverächter, ein Illuminat.</l>
+          <l>Und ganz gefallen aus unsrer Gnad.</l>
+          <l>Drum sollen sie zu Straf u Exempel</l>
+          <l>Tragen unsres Zornes Stempel.</l>
+          <l>Man soll sie mit verbundnen Augen</l>
+          <pb n="420"/>
+          <l>Als Pferd in einem Drehwerk brauchen. –</l>
+          <l>Ihr Übrigen folgt in meinen Pallast.</l>
+          <l>Den hier ist für mich nur Ärger u Brast.</l>
+        </sp>
+        <stage>Der Vorhang fällt</stage>
+      </div>
+    </body>
+  </text>
+</TEI>
