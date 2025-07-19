@@ -3,16 +3,56 @@ name: Validate TEI documents
 on:
   workflow_dispatch:
   pull_request:
-  push:
+    branches: [main]
     paths:
       - "tei/*.xml"
+  push:
+    branches: [main]
+    paths:
+      - "tei/*.xml"
+
+permissions:
+  contents: read
 
 jobs:
   validate_tei:
     runs-on: ubuntu-latest
-    name: Validate against TEI_all
+    name: Validate TEI files
     steps:
-      - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      - name: Validate
-        uses: dracor-org/tei-validate-action@94b08b8bf0dd1810fe7962aa59435b46c769bbcb # v1.2.0
+      # We need to checkout with fetch-depth 0 or 2 for push events;
+      # see https://github.com/tj-actions/changed-files?tab=readme-ov-file#usage-
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        if: github.event_name == 'push'
+        with:
+          fetch-depth: 0
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        if: github.event_name != 'push'
+
+      - name: Get changed files
+        id: changed-tei-files
+        uses: tj-actions/changed-files@ed68ef82c095e0d48ec87eccea555d944a631a4c #v46.0.5
+        if: github.event_name == 'push' || github.event_name == 'pull_request'
+        with:
+          files: |
+            tei/*.xml
+
+      - name: Get changed files
+        id: all-tei-files
+        if: github.event_name == 'workflow_dispatch'
+        run: echo 'files=tei/*.xml' >> $GITHUB_OUTPUT
+
+      - name: Validate against TEI-All schema
+        uses: dracor-org/dracor-validate-action@a2cc3c4a18b35605304f8ff6d0b71452feeaab15 # v2.0.0
+        with:
+          files: |
+            ${{ steps.changed-tei-files.outputs.all_changed_files }}
+            ${{ steps.all-tei-files.outputs.files }}
+
+      - name: Validate against DraCor schema
+        uses: dracor-org/dracor-validate-action@a2cc3c4a18b35605304f8ff6d0b71452feeaab15 # v2.0.0
+        with:
+          files: |
+            ${{ steps.changed-tei-files.outputs.all_changed_files }}
+            ${{ steps.all-tei-files.outputs.files }}
+          schema: dracor
+          warn-only: yes
