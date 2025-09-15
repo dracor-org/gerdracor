@@ -42,14 +42,14 @@ jobs:
         run: echo 'files=tei/*.xml' >> $GITHUB_OUTPUT
 
       - name: Validate against TEI-All schema
-        uses: dracor-org/dracor-validate-action@726ce806f2541ea627b1e8d9654850aa1fb95f15 # v2.0.3
+        uses: dracor-org/dracor-validate-action@ef4e7dbdb6eda6f8bd08d7aaf79733399782818f # v2.0.4
         with:
           files: |
             ${{ steps.changed-tei-files.outputs.all_changed_files }}
             ${{ steps.all-tei-files.outputs.files }}
 
       - name: Validate against DraCor schema
-        uses: dracor-org/dracor-validate-action@726ce806f2541ea627b1e8d9654850aa1fb95f15 # v2.0.3
+        uses: dracor-org/dracor-validate-action@ef4e7dbdb6eda6f8bd08d7aaf79733399782818f # v2.0.4
         with:
           files: |
             ${{ steps.changed-tei-files.outputs.all_changed_files }}
