@@ -1,0 +1,1395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000748" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Gerettete Selbstmörder</title>
+        <title type="sub">Ein Schauspiel einem Aufzuge</title>
+        <author>
+          <persName>(Anonym)</persName>
+          <idno type="wikidata">Q4233718</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Google Books</name>
+          <idno type="URL"
+            >https://books.google.com/books?id=k1JZAAAAcAAJ&amp;printsec=frontcover</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">[<author>Anonym</author>:] <title>Der Gerettete Selbstmörder.
+              Ein Schauspiel in einem Aufzuge</title>. <pubPlace>Dessau und Leipzig</pubPlace>:
+              <publisher>Buchhandlung der Gelehrten</publisher>
+            <date>1783</date>. (S. <biblScope unit="page" from="1" to="48">1–48</biblScope>.)</bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="jacob" sex="MALE">
+            <persName>Jacob Tomms</persName>
+          </person>
+          <person xml:id="mariane" sex="FEMALE">
+            <persName>Mariane</persName>
+          </person>
+          <person xml:id="reichard" sex="MALE">
+            <persName>Herr Reichard</persName>
+          </person>
+          <person xml:id="goergen" sex="MALE">
+            <persName>Görgen</persName>
+          </person>
+          <person xml:id="lisgen" sex="FEMALE">
+            <persName>Lisgen</persName>
+          </person>
+          <person xml:id="woller" sex="MALE">
+            <persName>Herr Woller</persName>
+          </person>
+          <person xml:id="thomsen" sex="MALE">
+            <persName>Thomsen</persName>
+          </person>
+          <person xml:id="der_bediente" sex="MALE">
+            <persName>Der Bediente</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#jacob #mariane"/>
+            <relation name="parent_of" active="#jacob #mariane" passive="#goergen #lisgen"/>
+            <relation name="associated_with" active="#jacob" passive="#reichard"/>
+            <relation name="parent_of" active="#woller" passive="#thomsen"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2025-09-29">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1783">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000748"
+        passive="http://www.wikidata.org/entity/Q136402563"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <pb n="1"/>
+    <front>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">Der Gerettete Selbstmörder.</titlePart>
+          <titlePart type="sub">Ein Schauspiel einem Aufzuge.</titlePart>
+        </docTitle>
+        <docImprint>
+          <pubPlace>Dessau und Leipzig,</pubPlace>
+          <publisher>In der Buchhandlung der Gelehrten.</publisher>
+          <date>1783.</date>
+        </docImprint>
+      </titlePage>
+      <pb n="2"/>
+      <castList>
+        <head>Personen.</head>
+        <castItem><role>Jacob Tomms,</role>
+          <roleDesc>ein Gärtner.</roleDesc></castItem>
+        <castItem><role>Mariane,</role>
+          <roleDesc>seine Frau.</roleDesc></castItem>
+        <castGroup>
+          <castItem><role>Görgen,</role>
+            <roleDesc>ein Knabe von 8. Jahren.</roleDesc></castItem>
+          <castItem><role>Lisgen,</role>
+            <roleDesc>ein Mädchen von 10. Jahren.</roleDesc></castItem>
+          <roleDesc>Ihre Kinder.</roleDesc>
+        </castGroup>
+        <castItem><role>Herr Reichard,</role>
+          <roleDesc>Jacobs Lehnherr.</roleDesc></castItem>
+        <castItem><role>Herr Woller,</role>
+          <roleDesc>Pfarrer im Dorfe.</roleDesc></castItem>
+        <castItem><role>Thomsen,</role>
+          <roleDesc>des Pfarrers ältester Sohn.</roleDesc></castItem>
+        <castItem><role>Ein Bedienter.</role></castItem>
+      </castList>
+      <set>
+        <p>Die Scene ist eine ländliche Gegend. Im Hintergrunde Jacobs Strohhütte – Davor eine
+          Rasenbank und ein Kirschbaum: Am Dache hängt eine Leiter.</p>
+      </set>
+    </front>
+    <pb n="3"/>
+    <body>
+      <div type="scene">
+        <head>Erste Scene.</head>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>allein. Auf der Schwelle seiner Hausthüre sizend, den Kopf in die Arme gestüzt;
+            nach einer Pause den Blik gen Himmel richtend.</stage>
+          <p>O Gott! Habe für alles Dank! Für das Leiden, womit Du mich prüfest; wie für das Gute,
+            das Du mir schenktest! Vierzig Jahre lang kannt' ich Dich nur als gütigen Vater. Seit
+            der Krankheit meines Weibes und Kindes, gestern im Hagelwetter und Sturme sah' ich Dich
+            zum ersten Mahl als zürnenden Richter! <stage>Er schlägt die Hände zusammen, und steht
+              auf.</stage> O Gott! Gestern, als ich Deine Sonne hinter den Bergen untergehen sah',
+            weint' ich: Heüte, als sie schöner hinter ihnen hervorstieg, weint' ich. – Bald, bald
+            wird sie wieder von uns Abschied nehmen, <pb n="4"/> und noch drang kein Trost in meine
+            Seele. Wie freündlich ihre lezten Strahlen auf mich fallen! O! säh's nur hier drinne
+              <stage>Er deütet auf seine Brust.</stage> so heiter noch aus, wie in dieser Gegend! –
+            Wie rein diese Luft, die ich athme! Wie kühl die Abendwinde, die mich umsäuseln; und in
+            meinem Kopfe, in meinem Herzen, wie schwühl! Eine Glut, die mich langsam verzehret!
+              <stage>Er fällt auf die Knie.</stage> – Verzieh, verzieh, bester Vater im Himmel! Ich
+            kann, ich kann nicht bethen, wie ich wünschte und sollte! Mein Herz ist so voll von
+            Kummer und Gram, daß ich nichts anders denken, nichts anders empfinden kann, als mein
+            Elend. – Und wenn ich meine armen Kinder, mein krankes, abgezehrtes Weib ansehe, o dann
+            hängt mein Herz nur noch an einem Faden! <stage>Er steht auf.</stage> Doch, da kömmt
+            sie; Armes, wandelndes Todten-Gerippe! –</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Zweyte Scene.</head>
+        <stage>Jacob, Mariane kömmt aus der Hütte, auf einen Stab gestüzt und hustend, sizt auf die
+          Rasenbank.</stage>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <p>Nun, Jacob, bist du in unserm Gärtchen gewesen? Ists denn würklich ganz verheert?</p>
+        </sp>
+        <pb n="5"/>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Liebe, gute Creüztragerin! Leidest du nicht genug von deiner Krankheit? Willst immer
+            neuen Stoff zu Thränen?</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <p>Und was hilfts, wenn du mirs verheelst? Fühlst du nicht Erleichterung des Elends, wenn
+            dus ganz und ohne Rükhalt in meinen Schooß ausgiessest? –</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Mit einem tiefen Seüfzer sich auf die Thürschwelle sezend.</stage>
+          <p>Alle unsre Hofnung ist dahin! Welch ein Anblik? Ein Schauer fährt mir durch alle
+            Glieder, wenn ich dran gedenke. Ein Wolkenguß hat unser Gärtchen überschwemmt; öde
+            ligts, wie eine Sandflur! Alle unsre Blumenstengel zerknikt; Die Kronen liegen im
+            Schlamme; unsre Baüme entlaubt, Blüthen und Früchte hin und her auf'm Boden zerstreüt;
+            und auf heüte verfällt unser wöchentliche Pachtzins, und seit gestern kein Brod mehr in
+            unsrer Hütte; Gott! Gott!</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <stage>Seüfzend und die Hände zusamen schlagend.</stage>
+          <p>Freylich, lieber Jacob, so düster und umwölkt schien uns der Himmel noch nie, als seit
+            gestern und heüte. Aber weist's ja so gut, als ich, immer muß <pb n="6"/> auf Sturm und
+            Ungewitter die Sonne wieder scheinen, und heller glänzt sie denn durchs schwarze Gewölk
+            hervor. Sieh, in dieser Welt ists mit dem Kummer, wie mit der Freude: Beyde gehen gleich
+            schnell vorüber, und verliehren sich zulezt im Grabe.</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Nicht <emph>gleich schnell</emph>, liebe Mariane! Nur die Freüde hat Flügel; Der Kummer
+            schleicht, wie eine Natter.</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <stage>Legt ihre Hand traulich auf seine.</stage>
+          <p>So glauben wirs, so lange wir ihn fühlen. Aber sieh', lieber Jacob, in unsrer Ehe haben
+            wir mit einander sechszehen Frühlinge blühen gesehen: Zwölf Jahre waren geseegnet, und
+            nur viere waren mager. Sollte der liebe Gott nicht eher Dank, als Klagen von uns
+            erwarten?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Steht auf und umarmt sie.</stage>
+          <p>Alles recht, lieber, sanfter Engel! Aber kann ich meinem Herzen befehlen, nicht zu
+            leiden, wenns mir vor Wehmuth zerspringen möchte? Liebe Mariane, du und unsre Kinder
+            haben kein Brod.</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <p>Auch das ist vielleicht gut, lieber Jacob, wenns uns gleich izt bitter schmekt. Niemals
+            kann man <pb n="7"/> sich zu frühe mit Noth und Armuth vertraut machen! Sie sind unsre
+            besten Freünde; aus'm Getümmel der Welt führen sie uns in unser eigen Herz zurük, zeigen
+            uns unsre Fehler alle, und machen uns für Andrer Fehler weich und milde!</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Aber giebts doch so viele Leute, die im Gelde schwimmen, die in ihrem Herzen nur sagen
+            dörfen: »Iß, trink, und sey fröhlich!« Und wir, und unsre Kinder haben kein Brodt. Sind
+            denn jene Leüte beßer, als wir? –</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <p>Vielleicht! Doch, wem ist Gott etwas schuldig? Er giebt, wem's Ihm beliebt; Immer haben
+            wir mehr noch, als wir verdienen!</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Umarmt sie wieder.</stage>
+          <p>Verzieh' mein Murren, edle, sanfte Seele! Ich fühle, du hast Recht. Kann ich arm seyn,
+            da mir der Himmel ein Weib gab, wie du bist? Kennten sie dich, wie viele Reiche würden
+            mich beneiden? Aber so ein Weib, und drey ihrer würdige Kinder in Hunger schmachten
+            sehen, und Mann und Vater seyn – das, das bricht das Herz!</p>
+          <stage>Er wendet sich um und weint.</stage>
+        </sp>
+        <pb n="8"/>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <p>Tröste dich, lieber Jacob! Wie oft haben wir nicht die Hälfte unsers Brodtes mit unsern
+            Nachbarn getheilt, wenn sie keins hatten? Wie oft ihnen Saamenkörner vorgestreket und
+            geschenkt? Die Armen sind gegen einander mitleidig. Wir wollen von ihnen borgen: Gewiß,
+            sie werdens uns nicht versagen.</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Gute Mariane! Wer in unserm Dorfe ist weniger unglüklich, als wir? War nicht die
+            Landplage allgemein? Noch thönt in meinem Ohr das verworrne Geschrey der Verzweiflung,
+            das sich mit dem Getöse der Schloßen, mit dem Rollen des Donners, und mit den Schlägen
+            des Blizes vermischte! Ha! Wenn denn ein schlängelnder Strahl, fürchterlicher als die
+            Finsterniß, die Gegend erhellte, was das für ein Anblik war! Die Weinrebe war nakend,
+            zersplittert, die Kornstengel zerbrochen, die Aehren schwammen im Moraste, die Bäume
+            leer von Blüthe, Laub und Früchten, wie um Weyhnacht; die Erde dicht damit besäet, wie
+            von Schnee und Dufte; Schloßen größer, als Nüße. Noch seh' ich vor mir das Gewimmel der
+            Unglüklichen, die mit Bläße des Todes auf den Wangen, mit zur Erde sinkendem Blik, mit
+            Gebehrden wilder Verzweiflung, <pb n="9"/> die Zernichtung, der Arbeit eines ganzen
+            Jahres, ihren schreklichen Verlust betrachteten, und in der Zukunft nichts, als Jammer,
+            Elend und den Tod vor sich sahen. – Als das Ungewitter vorbey war, was denn für ein
+            tiefes, fürchterliches Stillschweigen drauf erfolgte! Gott! Wie viel ich auf den Bänken
+            vor den Hüttenthüren in Thränen zerfliessende Mütter sah, wie sie wimmerten, wie sie die
+            Hände rangen, ihre Saüglinge an ihren Busen drükten, und zu ihnen sagten: »Gott! Gott!
+            Wenn wir kein Brodt mehr haben, wer wird eüch arme Würmgen nähren?« Ein harter Stein
+            hätte sich erbarmen mögen!!</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <stage>weinend.</stage>
+          <p>Die guten Leüte! Bald würd' ich über ihrem Elend unsern eigenen Jammer vergessen! Aber,
+            Jacob, was hilft das Wimmern, das Zagen? So schlimm auch die Zeiten waren, noch niemahls
+            starben die Vögel in unsern Wäldern, die Fische im Wasser vor Hunger, und Gott sollte
+            den Herrn der Schöpfung, den Menschen, verhungern lassen? Ein unerschrokner Muth
+            erleichtert jede Noth. –</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>unmuthsvoll.</stage>
+          <p>Aber, Mariane, was soll ich mit dir, was mit unsern Kindern anfangen, um eüch Brodt zu
+            schaffen? Soll ich vor den Thüren der Reichen meine <pb n="10"/> Hand zum Betteln
+            darbieten? <emph>Betteln</emph>, welch ein Seelzerschneidendes Wort für den Mann, der
+            sechs Jahre seinem Fürsten und dem Vaterlande gedienet, sein Leben für sie auf's Spiel
+            gesezt, der vierzig Jahre mit Gott und Ehren durch die Welt sich geschleppt hat? Sprich,
+            Mariane, diese Erde, so oft von meinem Schweiße befeüchtet, so oft von meiner Spate
+            durchwühlt, hätte sie mir nicht meinen Unterhalt verschaffen sollen, wenn – – – –</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <stage>Ihm die Hand vor den Mund haltend.</stage>
+          <p>Stille, lieber Jacob! – Unmuth und Verzweiflung, nicht dein Herz, nicht deine Vernunft
+            reden aus dir. – Freüde und Leiden, kommen uns nicht beyde von Gott?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Freylich! Gleichwol sind die Güter dieser Welt sehr ungleich vertheilt. Da dieser
+            Reichard, unser Herr, keinem Hungrigen gäb' er ein Stük verschimmeltes Brodt, keinem
+            Durstigen, der des Tages Last und Hize getragen hat, ein Gläsgen Wein, sind gleich bey
+            ihm Speicher, Scheünen, Keller, und Tonnen voll. –</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <p>Thue Niemand Unrecht, lieber Jacob! Kein Mensch sieht dem Andern ins Herz. Der nur, der
+              <pb n="11"/> über uns ist, sieht und weiß alles. Vielleicht thut Reichard Leüten
+            Gutes, die wir nicht kennen.</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Er? – Keiner Christenseele! Er darbt im Ueberfluß! Doch, Gott! da kömmt er! Liebe
+            Mariane, verlaß mich!</p>
+          <stage>Mariane geht ab.</stage>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Dritte Scene.</head>
+        <stage>Reichard, Jacob.</stage>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Bey Seite.</stage>
+          <p>Gott! Wenn der noch bezahlt seyn will, was wird aus uns werden?</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <stage>Ihm auf die Achsel klopfend.</stage>
+          <p>Guten Abend, Nachbar Jacob, guten Abend! Wie stehts, wie geht Leib und Leben?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Mit einem tiefen Krazfuß, die Achsel zukend.</stage>
+          <p>Lieber Gott! schlimm genug, Herr Reichard! Bald wird unser ganzes Dorf verhungern
+            müßen. In zehen Minuten hat uns der Hagel den Trost des ganzen Jahres geraubt.</p>
+        </sp>
+        <pb n="12"/>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <stage>Kaltblütig.</stage>
+          <p>Für eüch andre arme Teüfels freylich schlimm genug! Müßt' inzwischen Eins ins Andre
+            rechnen. Auf drey, vier Jahre giebts kaum ein Fehljahr. Dörft nur seltener in die
+            Schenke gehen, und Sonntags keine Kegel mehr schieben: S'bringt alles wieder ein.
+              <stage>Mit bitterm Lächeln.</stage> Verstehst du mich? –</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Sezt unwillig den Hut auf.</stage>
+          <p>Nur zu gut, Herr Reichard, hab kein Wort verlohren! Könnten auch in den Städten
+            bisweilen weniger Schmaüse, weniger Bälle, weniger – – – Doch nein! <stage>Er zieht den
+              Hut wieder ab.</stage> Bald hätten Sie mich in Hize gebracht, Herr Reichard, verziehen
+            Sie!</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard</speaker>
+          <stage>bitter.</stage>
+          <p>Ja, ja, Hize! Hat sich was zu erhizen, wenn man vielleicht nicht so viel Brodt im Hause
+            hat, einen Hund damit aus dem Stalle zu loken! –</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Mit verbißner Wuth.</stage>
+          <p>Nur nicht in diesem Tone, Herr Reichard, nur nicht in diesem Tone, ich bitte – – –</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <p>Der Troz eines Bettlers! Ha, ha! Ein drollichter Anblik!</p>
+        </sp>
+        <pb n="13"/>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Sezt wieder den Hut auf, mit Würde auf die Brust schlagend.</stage>
+          <p>Herr Reichard, ich bin ein redlicher Mann, und Armuth ist kein Laster!</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <stage>Die Achsel zükend, verächtlich.</stage>
+          <p>Nicht viel bessers! Sie ist die Frucht und die Wurzel des Lasters.</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Beydes kann eben so gut der Reichthum seyn. – Aber, Herr Reichard, heißt das edel
+            gehandelt, mir meine Armuth vorwerfen? Und wenn ich Ihnen Ihren Reichthum vorwürfe?</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <p>Meinen Reichthum – Durch Gottes Seegen erwarb ich ihn; Bin, trau'n! so gut ein
+            redlicher Mann, als einer: Geh' jeden Sonntag zweymahl zur Predigt, bisweilen sogar in
+            der Woche: Hab Zeit Lebens noch keine Communion versaümt! Auf jedem Blatt in meinen
+            Zins- und Handlungs-Büchern steht oben an: Gott sey Lob!</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Desto beßer für Ihre Erben! Doch Ihr Reichthum giebt Ihnen kein Recht, mit mir in einem
+            so beleidigenden Tone zu sprechen!</p>
+        </sp>
+        <pb n="14"/>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <p>Ich rede, wie es mir gefällt; ich hänge von Niemanden ab.</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Mir aber gefällt dieser Ton nicht; ich kann ihn nicht verdauen.</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <p>Wirst ihn schon dulden lernen, armer Jacob, so wie wir Städter dulden müßen, daß ihr
+            Bauern eüre uns schuldige Zinse auf der Kegelbahn verspielt, und in der Schenke
+            versauft.</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Unmuthig.</stage>
+          <p>Mit Ihrer Kegelbahn und Schenke! Nicht alle Bauern, nur die Taugenichts kegeln und
+            sauffen, und freylich wärs unser Unglük so groß nicht, wenn denen allein s'Wasser in den
+            Mund lief. Allein die Landplage ist allgemein, den redlichsten Hausvater drükt gleiche
+            Armuth, wie den liederlichsten Schlingel.</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <p>Der liebe Gott, der eüch diese Landplage zugeschikt hat, wird dafür seine guten Gründe
+            gehabt haben, wenn ihr sie schon nicht einsehen wollt! Ihr Bauern überhaubt seyd das
+            liederlichste, leichtsinnigste Geschmeiß unter der Sonne. Schenkt eüch Gott ein reiches
+            Jahr, ihr freßt und sauft, und lermt <pb n="15"/> und schwärmt drauf los, als ob der
+            Himmel voller Geigen hieng. Wenns hoch kömmt, zahlt ihr eüern Glaübigern einen Zins. Ha!
+            denkt ihr, die Narren in den Städten mögen paßen und harren! Kömmt dann ein Fehljahr,
+            das heißt, schneidet ihr ein paar Garben zu wenig, giebts ein halb Duzend Körbe Obst,
+            ein paar Eimer Wein weniger, als ihr auf eürer Tafel mit der Kreide gerechnet habt; Ha,
+            ha gehts an ein Wimseln, und Jammern und Zagen; da will alles auf troknem Land
+            ertrinken; da hat denn der Liebe Gott alles gethan, und in allem seyd ihr so unschuldig
+            als der Saügling an der Brust der Mutter – <stage>Den Zeigefinger in die Höhe
+              hebend.</stage> – Aber ich merk' eüre Pfiffe, ihr Schelme! Ich bin eüer Narr nicht in
+            diesem Spiele.</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Mit dem Fuß stampfend, und die Faust ballend.</stage>
+          <p>Bey G––, Herr Reichard, solche Schimpfnammen duld' ich nicht. Gerade, wie in der Stadt,
+            geht's auf'm Lande. Bey Ihnen, wie bey uns, giebts ehrliche Leüte und Schelmen.</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard</speaker>
+          <stage>Bitter lächelnd.</stage>
+          <p>Wohl eben so selten sind bey eüch die Erstern, als die reichen Capitalisten!</p>
+        </sp>
+        <pb n="16"/>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Mit Würde.</stage>
+          <p>Herr Reichard, unser Pfarrer hat uns lezten Sonntags gepredigt: <emph>Richtet nicht,
+              damit ihr nicht gerichtet werdet!</emph> – Uebrigens hin ich wenigstens ein ehrlicher
+            Mann, so arm ich bin.</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <p>Freylich, so ehrlich man seyn kann, wenn man der Schenke und Kegelbahn als seinem
+            Beruffe nachlaüft. –</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Seit ich beweibt bin, hab ich niemahls Kegel geschoben, und das Glas Wein, das ich
+            getrunken habe, ohn' es mit meinem lieben Weibe und mit meinen Kindern zu theilen, werde
+            mir zu Wermuth und Galle, außert zu Bernberg im Schloße, wo's vergebens zugieng; und
+            auch da schien mir der Wein saurer, als unser Apfelmost, wenn ich ihn Glas an Glas mit
+            meiner Mariane trank – Alle Wochen, bis auf diese und die vorige, hab' ich Ihnen Ihren
+            wöchentlichen Pachtzins für Ihr Gärtchen, wie's einem Biedermann zusteht, abgeführt.</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <stage>Bitter lächelnd.</stage>
+          <p>Freylich, freylich! Aber seit vierzehn Tagen hast du den Weg zu meinem Hause vergeßen.
+            Sieh' nun, ob ich nicht dein beßrer Freund bin, als du der <pb n="17"/> meinige. Dir zu
+            liebe thu ich den ersten Schritt, seze mich über die Etiquette weg, und nahm den Weg
+            unter die Füße, um dich an deine Pflicht zu erinnern.</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Sehr bescheiden, den Hut abziehend.</stage>
+          <p>Anfangs der vorigen Woche wurden mein Weib und mein Susgen plözlich krank; da hatt' ich
+            allso Vier Hände weniger zur Arbeit, ich selber so viel weniger Zeit, weil ich ihrer
+            warten muste, und meine zwey Arme konnten nicht das Tagewerk von sechsen verrichten.
+            Auch hatt' ich, und habe noch immer unversehene Unkosten, die mich zurüke bringen.
+            Dieses Unglük macht mirs unmöglich, mein Versprechen zu halten, und bey meiner armen
+            Seele, Herr Reichard! ich hab' mich Tag und Nacht darüber genug gegrämt. Zeit Lebens bin
+            ich noch Niemandem dreyßig Groschen vierzehen Tage lang schuldig geblieben.</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <p>Ha, ha! da haben wir die ehrlichen Leüte! Viel Geschrey und wenig Wolle! Ein schlechter
+            Jäger, der für seinen Fehlschuß keine Ausflucht weiß! Doch ein Wort so gut, als zehen!
+              <stage>Er zieht Jacob zu sich, und schreyt ihm laüt ins Ohr.</stage> Heüte dreyßig
+            Groschen, mein stürmischer Trozkopf, oder Morgens sizt der Vogel im Kefigt, und Weib und
+            Kinder auf der Gaße! Verstehst du mich?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Ums Himmels willen, Herr Reichard! Soll ich <pb n="18"/> diese dreyßig Groschen aus
+            einem Steine schlagen? Kommen Sie, beschauen Sie mein Gärtchen! Nakender siehts aus, als
+            eine Felsenflur – Alle meine Beeten hat der Waldstrohm mit Kieselsteinen überführt –
+            Entlaubt sind alle meine Baüme – Keine Spur weder von Blume, noch Pflanze mehr! Kommen
+            Sie, sehen Sie selber! –</p>
+          <stage>Er pakt ihn bey der Hand: Reichard zieht sie zurüke.</stage>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <p>Je nun; Hab freylich gestern hinter meinen Fensterscheiben dem Ungewitter zugesehen,
+            hat mir auch mehr als ein Duzend Scheiben versplittert, mehr als zwanzig Ziegelsteine
+            auf'm Dache zerschmettert; keinen Menschen bath ich um einen Heller Vergütung.</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Ja, wenn Ungewitter und Schloßen nur über die Städte losbrächen! Ziegelsteine und
+            Fensterscheiben sind leicht zu ersezen!</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <p>Dem sey, wie ihm wolle; Gewiß ists, weder Schloßen noch Plazregen haben meine
+            Schuldforderung aus meinem Zinsbuche weggewischt; Heüt steht sie noch so frisch, als
+            gestern. Verstehst du mich?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Mit Unwille sich erschütternd. Herr Reichard! Welche Rede! Denken Sie, daß zwischen uns
+            beyden Jemand ist, der uns siehet und höret?</p>
+        </sp>
+        <pb n="19"/>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <p>Wie, du droh'st noch? Will dir schön s'drohen vertreiben! <stage>Er schlägt ihn auf die
+              Achsel.</stage> Jacob, ein Wort ein Wort, ein Mann ein Mann! Heüte dreyssig Groschen,
+            oder Morgens im Kefigt; Verstehst du mich?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Um Gottes willen! Herr Reichard! Kommen Sie in meine Hütte; Müßen doch einmahl die
+            Armuth in der Nähe sehen! Diese öden vier Mauren! Mein Weib, den leidenden Engel! Mein
+            Susgen, das wie eine Rose blühte, blaß izt, wie eine Leiche, abgezehrt, wie ein
+            Todten-Gerippe! – Sehen Sie da beyde auf einem Bund Stroh im Fieber hinschmachten! Ihr
+            Labsal ein Trunk kalten Wassers! Versuchen Sie den Ueberrest verschimmelten Brodtes,
+            woraus sie Kühlung saugen! Sehen Sie meine zwey kleinern Kinder, wie sie mir so
+            jämmerlich Brodt betteln, das ich ihnen nicht geben kann! <stage>Er schluchzt laut,
+              nihmt ihn bey der Hand, ihn in die Hütte zu ziehen: Reichard tritt zurüke: Jacob
+              waint.</stage> Sehen Sie, ich war Soldat, ich bin Mann, und waine! Ach! Sie sind auch
+            Mann und Vater! –</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <stage>Kalt bey Seite.</stage>
+          <p>Der Schurke hat etwas rührendes! <stage>Laut.</stage> Eben darum muß ich auch für meine
+            Frau und Kinder sorgen! Wer heißt eüch Bettelgesinde heyrathen, und Kinder erzeügen,
+            wenn ihr selber kein Brodt habet.</p>
+        </sp>
+        <pb n="20"/>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Sollen dem Armen, weil er arm ist, alle Freüden dieses Lebens, auch die reinsten, die
+            unschuldigsten verbotten seyn? Und ohne die Kinder der Armen, wo nähmet Ihr Knechte und
+            Mägde, wo nähme der Fürst seine Soldaten zu eürer Beschüzung?</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <stage>Unwillig.</stage>
+          <p>Zum Henker! Wenn man alle eüre Gründe anhören wollte, ihr Bettler, ewig käme man nicht
+            mit eüch zu Ende, und sähe doch kein Geld! Glaubt ihr, der Schneider, der Fleischer, der
+            Beker, u.s.w. würden sich damit sättigen, wenn ich ihnen sagte: »Seht, lieben Leüte, der
+            Hagel hat die Güter meiner Pachter verheert; ihre Weiber und Kinder liegen krank; ich
+            kann eüre Rechnungen nicht bezahlen«?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Bey Seite.</stage>
+          <p>Wie viel Zeit und Mühe es braucht, nur wenig von denen zu erhalten, die nichts
+            bedürfen! <stage>Laut.</stage> Aber, Herr Reichard, dreyßig Groschen, dreyßig elende
+            Groschen für einen Mann von so viel tausend Thalern?</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <p>Der Himmel weiß es, nichts weniger bin ich, als geizig! Allein, in meinen Sachen lieb'
+            ich Ordnung! Ausstehende Zinse stiften Verwirrung in <emph>Soll</emph> und
+              <emph>Haben</emph>; Das Geld in der Kaße bringt alles ins Reine. Und kurz und gut,
+            dreyßig Groschen, <pb n="21"/> oder der Kefigt! Hab den Verhafts-Befehl in der Tasche!
+              <stage>Er zieht ihn hervor und zeigt ihn ihm.</stage></p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Fällt zu seinen Füßen; bey Seite.</stage>
+          <p>Niemahls hab' ich so sehr die Bitterkeit der Armuth gefühlt! Ein Mann, wie ich, zu
+            eines solchen Schurken Füßen! <stage>Laut.</stage> Daß Sie sehen, Herr Reichard, daß ich
+            ein ehrlicher Mann bin, und Sie nicht betriegen will, rein heraus will ich Ihnen alles
+            beichten. Noch hab' ich diese dreyßig Groschen; allein, Gott im Himmel weiß, das ist
+            auch alles, was ich habe!</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <p>Thut nichts; ich fordre ja nicht mehr. Her, her damit; Wo sind sie?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Ach! An diesen dreyßig Groschen hängt mein, meines kranken Weibes, meiner armen Kinder
+            Leben! Womit soll ich in Zukunft mein kleines Gewerbe unterhalten? Um Ihres Weibes, um
+            ihrer Kinder willen, erbarmen Sie sich der Meinigen!</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <p>Schöne, glatte Worte! Beßer als dieß alles, baares Geld!</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Ich flehe um kein Geschenk, um kein Allmosen, Herr Reichard! Meine Ehre, mein Leben,
+            Alles verpfänd' ich Ihnen, jede Woche sechs Groschen dieser Schuld abzuzahlen, bis sie
+            getilgt ist!</p>
+        </sp>
+        <pb n="23"/>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <p>Ehre! Leben! Firlefanz! Leere Töne! Tief herabgestimmt, Nachbar Jacob! – Zum lezten
+            Mahle <stage>Mit Erhöhung der Stimme.</stage> dreyßig Groschen heüte noch, keinen mehr
+            und keinen weniger, oder Morgens im Kefigt!</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Steht auf, mit Hize.</stage>
+          <p>Und wenn auch mein Weib verschmachten, ich und meine Kinder verhungern müßten?
+            Tigerherz!</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <stage>Kalt.</stage>
+          <p>Durch die Krankheit deines Weibes, und deiner Tochter, durch das verheerende Ungewitter
+            hat dich Gott für deine Sünden züchtigen wollen; s'ist alles zu deinem Besten! Würd' ich
+            deine Schuld dir nachlaßen, so wärst du ja nicht mehr gestraft.</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Schauernd, bey Seite.</stage>
+          <p>Ungeheüer von einem Menschen! Auf'm Todbett erwart' ich dich, wirst denn auch
+            schmachten und hungern.</p>
+        </sp>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <p>Was murmelst du da, Jacob, zwischen den Zähnen?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Sezt den Hut auf, mit Würde.</stage>
+          <p>Nichts: Ich sagte, Sie lästerten, und der liebe Gott laße seiner nicht spotten.
+              <stage>Er sucht aus allen Nähten seiner Kleider Geld zusammen; Reichard strekt die
+              Hand aus: Jacob wirfts ihm mit Verachtung zu.</stage> Da, Herz von Stahl und Marmor!
+            Beßer, vor Hunger, als vor Schande gestorben! –</p>
+        </sp>
+        <pb n="23"/>
+        <sp who="#reichard">
+          <speaker>Reichard.</speaker>
+          <p>Hier der Empfangschein! Doch, daß du siehst, Jacob, daß ich weder geizig, noch
+            hartherzig bin, sondern daß mir nur um Ordnung zu thun ist; Hier einen Groschen zur
+            Erquikung für dein krankes Weib und deine Kinder! – So stark war ich Zeit Lebens nicht
+            gerührt! –</p>
+          <stage>Er will ihn dem Jacob in die Hände drüken: Jacob wirft ihn weg; Reichard legt ihn
+            auf die Rasenbank; Jacob wirft ihn ihm nach; Reichard wendet sich um, raft ihn auf, und
+            stekt ihn in die Tasche; Jacob giebt ihm einen Seelzerschneidenden Blik; Reichard geht
+            ab.</stage>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Vierte Scene.</head>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Allein.</stage>
+          <p>Nun, Barbar, möge dein Geld in deiner Kiste dir zu Stein, oder die Gerichte auf deiner
+            Tafel dir zu Golde werden, damit du lernest, was Hunger ist! Möcht' meine Armuth nicht
+            an deinen Reichthum tauschen, und dein Tigerherz haben! O Armuth, Armuth! Immer wärst du
+            allein noch erträglich: Aber Schande, Verachtung, die dir auf dem Fuße folgen;
+            Erniedrigung von Leüten, die unser nicht werth sind – Dieß, dieß dringt mir durch Mark
+            und Gebeine. Doch, was wird izt aus meiner Mariane, aus meinen armen Kindern werden? Da
+            kommen diese! Welch ein Anblik! <stage>Er wendet sich um.</stage></p>
+        </sp>
+      </div>
+      <pb n="24"/>
+      <div type="scene">
+        <head>Fünfte Scene.</head>
+        <stage>Jacob, Görgen, und Lisgen.</stage>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Sieht sie an.</stage>
+          <p>Was fehlt eüch, ihr guten Kinder, ihr seht ja ganz ausgewaint aus?</p>
+        </sp>
+        <sp who="#goergen">
+          <speaker>Görgen.</speaker>
+          <p>Lieber Vater, wer wollt' auch nicht wainen? Unsre gute Mutter und Susgen sind ja so
+            krank, so krank! – Und die liebe Mutter seüfzt und waint und schluchzt izt schon seit
+            mehr als einer Stunde. Lisgen und ich sind auf ihr Bett gelegen, haben ihr die Wangen
+            gestreichelt, die Thränen weggewischt, und sie geküßt, ach, so herzlich! Und wir haben
+            mit ihr gewaint, und sie gefragt: Wo fehlts dir denn, liebe Mutter, hast du so wehe? Und
+            sie hat uns nichts geantwortet. –</p>
+        </sp>
+        <sp who="#lisgen">
+          <speaker>Lisgen.</speaker>
+          <p>Nicht doch, Görgen, sie hat ja gesagt: »Kinder, hoft auf Gott; es wird alles beßer
+            werden!«</p>
+        </sp>
+        <sp who="#goergen">
+          <speaker>Görgen.</speaker>
+          <p>Hast Recht, Lisgen; Habs vergeßen. Aber, lieber Vater, sprich, wenn wirds beßer?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Sich umwendend, seine Wehmuth zu verbergen.</stage>
+          <p>Das weiß Gott im Himmel, liebe Kinder; ich weiß es nicht.</p>
+        </sp>
+        <pb n="25"/>
+        <sp who="#lisgen">
+          <speaker>Lisgen.</speaker>
+          <stage>Ihn bey der Hand faßend.</stage>
+          <p>Aber, lieber Vater, du bist ja so traurig, als die Mutter? Bist du auch krank? – Mein
+            Gott, wenn ihr beyde stürbet; was würde aus uns armen Kindern werden?</p>
+        </sp>
+        <sp who="#goergen">
+          <speaker>Görgen.</speaker>
+          <stage>Ihn bey der andern Hand faßend.</stage>
+          <p>Lieber Vater, wenn ich dich und die Mutter noch lange traurig sehen muß, sieh', so
+            werd' ich auch krank, und dann müßt ihr mich auch auf den Kirchhof tragen, und ins
+            Gräbchen senken, wo izt Köbchen ligt.</p>
+        </sp>
+        <sp who="#lisgen">
+          <speaker>Lisgen.</speaker>
+          <stage>Munter.</stage>
+          <p>Lieber Vater, bitte dich recht sehr um Görgens und um Lisgens willen, sey munter!
+            Erzähl uns eine hübsche Mähre; sing uns ein schnurriges Lied! Schaukle uns ein bisgen!
+            O! wir wollen dir dafür so brav in der Schule lernen, und dir ein neües Gebethlein
+            hersagen. –</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Mit innigster Rührung.</stage>
+          <p>Ihr guten Kinder! Izt verlebt ihr die glücklichsten Tage eüers Lebens! Mögt ihr sie
+            lange genießen! O! bleibt immer Kinder an Unschuld und Güte! <stage>Er wendet sich von
+              ihnen weg, hält die Hand vors Gesicht und hohlt einen tiefen Seüfzer.</stage> – Gott
+            im Himmel! Sey Du Vater dieser Kleinen! Du siehst und hörst ihr Lallen! <stage>Er wendet
+              sich wieder weg, schlägt auf die Brust, sezt sich langsam auf die Rasenbank, den Kopf
+              in die Arme gestüzt.</stage></p>
+        </sp>
+        <pb n="26"/>
+        <sp who="#lisgen">
+          <speaker>Lisgen.</speaker>
+          <p>Immer trauriger, lieber Vater! Hab' ich etwas versehen? – Bin ich dir ungehorsam
+            gewesen? Betrübt dich das?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Küßt Lisgen und sezts auf seinen Schooß.</stage>
+          <p>Nein, mein Lisgen; Du bist und warst immer die Freüde meines Lebens.</p>
+        </sp>
+        <sp who="#goergen">
+          <speaker>Görgen.</speaker>
+          <stage>Traurig.</stage>
+          <p>Hab' ich mich in etwas verfehlt, lieber Vater?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Küßt ihn und sezt ihn aufs andre Knie.</stage>
+          <p>Auch du nicht, mein Herzensjunge! Ihr seyd beyde die besten, liebsten Kinder; bisher
+            machtet ihr allein mir mein Leben erträglich. – Görgen, hast du heüte Morgens, da du
+            erwachtest, gebethet?</p>
+        </sp>
+        <sp who="#goergen">
+          <speaker>Görgen.</speaker>
+          <p>O! das vergeß' ich niemahls. Sobald mir heüt die Sonn' aufs Bette schien, hab' ich dem
+            lieben Gott gedankt, daß Er sie uns so schön wieder scheinen ließ; denn wenns so stürmt
+            und wittert, wie gestern, so bin ich gar zu traurig. Auch hab' ich Ihn recht sehr
+            gebethen, daß Er unsre liebe Mutter und Susgen bald wieder gesund mache.</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Küßt ihn.</stage>
+          <p>O Junge! Du hast ein Herz, wie Gold! – Und du, Lisgen, hast du auch gebethet?</p>
+        </sp>
+        <pb n="27"/>
+        <sp who="#lisgen">
+          <speaker>Lisgen.</speaker>
+          <p>Warum nicht? Für die schönsten Kirschen und Birnen ließ ich mir s'Bethen nicht
+            abkaufen. Niemahls ists mir leichter und froher ums Herz, als wenn ich bethe. Ists mir
+            doch, wie wenn ich dich oder die Mutter um etwas, das ich recht gern hätte, bäthe. Noch
+            eher giebt mirs der liebe Gott, als ihr beyde, weil Er alles, alles geben kann, warum
+            wir Ihn bitten. Denn Er ist ja auch unser Vater, und reicher, als alle Menschen, selber
+            als unser Gutsherr.</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Ganz gewiß ist Ers! Wär' Er nicht reicher und Mitleidsvoller, als die Menschen, wir
+            alle müßten verhungern. Görgen, was hast du heüt in der Schule gelernt?</p>
+        </sp>
+        <sp who="#goergen">
+          <speaker>Görgen.</speaker>
+          <stage>Hält die Hände zusammen.</stage>
+          <p>Daß wir Gott über alles lieben sollen, und den Nächsten, wie uns selber – – – – Daß Er
+            ein Vater seyn wolle über Alles, was Kinder heiße im Himmel und auf Erden – – – Daß auch
+            die kleinsten Kinder zu Ihm kommen dürfen, daß ihnen das Himmelreich gehöre – – – Daß
+            Ihm auch das Lob der Unmündigen und Saüglinge gefalle.</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Zum Himmel schauend; bey Seite.</stage>
+          <p>O Balsam, der alle meine Wunden kühlet! – <stage>Laut.</stage> Und du Lisgen, was
+            lerntest du in der Schule?</p>
+        </sp>
+        <pb n="28"/>
+        <sp who="#lisgen">
+          <speaker>Lisgen.</speaker>
+          <stage>Auch die Hände gefaltet.</stage>
+          <p>Daß Gott den Hoffärtigen widerstrebe, und den Demüthigen gnädig sey – Daß Er den Armen
+            erhöhe aus dem Staub', und ihn zu Ehren bringe – Daß Er die Stolzen stürze in den Koth –
+            Daß die Armen seelig, und ihrer das Reich Gottes sey – Daß die, so hier trauren, sich
+            dort oben freüen, und daß Niemand ihre Freüde von ihnen nehmen werde – – –</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Heil eüch, Heil eüch, ihr Kinder! <stage>Er drükt sie tief gerührt an seine
+              Brust.</stage> Vergeßt niemahls, was ihr gelernt habet! Traut auf Gott!</p>
+        </sp>
+        <sp who="#goergen">
+          <speaker>Görgen.</speaker>
+          <stage>Schluchzend.</stage>
+          <p>Lieber Vater, zürne nicht mit Görgen!</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Nun, mein Herzensjunge, was willst du?</p>
+        </sp>
+        <sp who="#goergen">
+          <speaker>Görgen.</speaker>
+          <p>Lieber Vater, mich hungert so sehr! Hab' die Hälfte meiner Kirschen Nachbars Babchen
+            gegeben; s'ist kleiner, als ich, und wainte so bitterlich, daß es heüte noch nichts
+            geeßen hätte: Hab ich unrecht gethan?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Seüfzend.</stage>
+          <p>Nein, guter Kleiner, so lang man hat, muß man dem geben, der nichts hat.</p>
+        </sp>
+        <sp who="#goergen">
+          <speaker>Görgen.</speaker>
+          <p>Aber, lieber Vater, nun hungert mich auch. Hast du keine Kirschen, kein Stükgen Brodt
+            mehr für Görgen?</p>
+        </sp>
+        <pb n="29"/>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Steht auf, schlägt Augen und Hände gen Himmel.</stage>
+          <p>Lieber Gott das war wieder ein Herzensstoß! Armer Junge! Kirschen haben wir keine, und
+            seit gestern kein Brodt mehr in der Hütte. Was ich aber habe, ist dein! <stage>Er sucht
+              aus seinen Taschen alle Brosamen zusamen, und giebt Görgen und Lisgen, jedem eine
+              Handvoll.</stage> Ihr guten Kinder, könnt' ich mit meinen Thränen eüch nähren,
+            niemahls müßtet ihr hungern.</p>
+          <stage>Er stüzt Kopf und Arm an den Baum, und seüfzt tief.</stage>
+        </sp>
+        <sp who="#lisgen">
+          <speaker>Lisgen.</speaker>
+          <p>Sieh', Görgen, nun hast du ihn noch trauriger gemacht. Hab' dirs ja gesagt! Hätt' er
+            was gehabt, er hätts uns gegeben, eh' wir ihn drum gebethen hätten. Ist er doch ja so
+            gut, so gut beynahe – wie unser liebe Vater im Himmel, nur nicht so reich.</p>
+        </sp>
+        <sp who="#goergen">
+          <speaker>Görgen.</speaker>
+          <p>Liebster Vater, verzieh' mirs! Kümmre dich nicht! Lisgen und ich wollen hungern
+            lernen.</p>
+        </sp>
+        <sp who="#lisgen">
+          <speaker>Lisgen.</speaker>
+          <p>Ach, ja, lieber Vater! Görgen hats nicht böse gemeynt! Lieber wollten wir beyde
+            sterben, als dich nur die Stirne über uns runzeln, als nur eine Thräne in deinem Auge
+            sehen.</p>
+        </sp>
+        <sp who="#goergen">
+          <speaker>Görgen.</speaker>
+          <stage>Ihm die Brosamen darbietend.</stage>
+          <p>Sieh', Vater, die Brosamen, die du mir gegeben hast – da hast du sie alle!</p>
+        </sp>
+        <pb n="30"/>
+        <sp who="#lisgen">
+          <speaker>Lisgen.</speaker>
+          <stage>Sie auch anbietend.</stage>
+          <p>Sieh, da die Meinigen auch! Vielleicht hungerst du noch mehr, als wir Kinder – Hast
+            auch so viel gearbeitet, daß ich deinen Schweiß noch traüfeln seh' – Wir können und
+            wollen noch warten. –</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Mit äußerster Rührung.</stage>
+          <p>O Reichard, Felsenharter Reichard! – Und solche Kinder könntest du darben sehen? –
+            Verlaßt mich, oder ich vergehe vor Wehmuth! – <stage>Die Kinder gehen traurig ab, und
+              sehen noch einige Mahle nach ihm.</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Sechste Scene.</head>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Allein, ihnen nachsehend.</stage>
+          <p>Ja, Kinder, ihr sollt Brodt haben! <stage>Eine Weile nachdenkend, mit in einander
+              geschlungenen Armen, tiefsinnig hin und her gehend, denn sich an die Stirne
+              schlagend.</stage> Habs gefunden das Mittel! – – Ja, ja: fort mit dem armen Vater! Den
+            süßen Namen verdient er ohnehin nicht mehr, er, der eüch kein Brodt mehr zu geben im
+            Stand' ist. Mag ich auch sterben, eüch hinterlaß' ich einen beßern Vater! Der Pfarrer
+            und das Kirchengut sind Pfleger der Waysen! O ja, theüre Kinder, schämt eüch nicht des
+            Armenbrodtes; es ist Gottes Brodt! Eines Vaters müßtet ihr eüch schämen, der nichts
+            hätte, den Hunger guter Kinder zu stillen! – Wohl mir, mein Tod ist ein Opfer, wodurch
+              <pb n="31"/> ich das Leben meiner Kinder erkaufe! Sterben – was ists denn? Aufhören zu
+            leben – Aufhören zu leiden – – – Für den Reichen, für den Glüklichen nur ist der Tod
+            fürchterlich – – Der Bettler, was verliert er dabey? Seine Armuth – – Heüte mir, Morgens
+            dir! So ruft uns die Todten-Gloke – Vielleicht in zwanzig, in zehen, in fünf Jahren, so
+            laüft mein Stundenglas aus! Damahls war mein Leben mir theüer, als ichs brauchen konnte,
+            meines Weibes und meiner Kinder Leben zu fristen! – Habe Dank, gütiger Vater im Himmel,
+            heißen tausendfältigen Dank für alle jene seeligen Stunden, wenn ich des Abends zwar
+            müde von des Tages Last heim kam, aber alsdann mich mit dir, frommes Weib, mit eüch
+            holden Kindern, beym geseegneten Abendbrodt labte! – Doch – fort, fort mit dieser
+            seeligen Erinnerung; sie erschwehrt mir das Sterben: <stage>Eine lange Pause; er sieht
+              gen Himmel, und schlägt sich wieder auf die Stirne.</stage> Armer Jacob – Aber
+            jenseits des Grabes! Wie siehts dann mit dir aus? – Das Gebott sagt; du sollt nicht
+            töden! Weder Andre, sezt der Pfarrer hinzu, noch dich selber. – <stage>Läßt in tiefer
+              Beklemmung die Arme sinken.</stage> Ich thue vielleicht nicht recht; Aber kann ich
+            beßer thun? <stage>Er fällt auf die Knie.</stage> Lieber Gott, Du kennest mein Herz, Du
+            weist, wie treü und redlich ichs mit Weib und Kindern meyne! Könnt' ich mit meinem Blute
+            sie nähren, mit Freüden wollt' ichs heüte noch bis auf den lezten Tropfen vertraüfeln! –
+            Aber Du <pb n="32"/> siehst auch den Last des Jammers, die auf meinen Schultern liegt;
+            sie drükt mich zu Boden; ich kann, ich mag sie nicht mehr ertragen. <stage>Er steht auf,
+              zieht ein Schnupftuch aus der Tasche, mißt damit den Hals: schauert davor zurük, und
+              läßt es fallen.</stage> Nu, was ists denn? Eine bange Viertelstunde – Hab schon so
+            manche durchlebt! – <stage>Er rafft das Schnupftuch auf, die Hand zittert ihm; er wendt
+              die Augen weg.</stage> Wie stürmisch meit Herz pocht, als wollts mir zum Busen heraus!
+            Will ich denn ein Schelmstük wagen? – Nein! – Vielleicht, daß ich mehr als Eines durch
+            meinen Tod verhüte? <stage>Er sieht nach der Hütte und seüfzt.</stage> Nein, nein,
+            tausendmahl lieber sterb' ich, als daß ich länger lebe, und daß der unerbittliche Hunger
+            mich zum geringsten Betrug, zum kleinsten Diebstahl verleite! – Ha, wie mir schauert vor
+            dem schwarzen Gedanke! Wenn mein eigenes Beyspiel auch nur Eines dieser Hofnungsvollen
+            Kinder in der Verzweiflung zum Stehlen verführte! Wie wird mir vor der schwindlichten
+            Stirne? Schritt vor Schritt seh' ich im Geiste mein Kind, das Kind der besten Mutter,
+            sich verirren vom richtigen Pfade; umsonst eil' ich ihm nach; es stürzt von Abgrund zu
+            Abgrund; und wie denn, bejammernswürdiger Jacob, – die Frucht deines Leibes – sie fällt
+            einst unter des Scharfrichters Hände? – – Aber du, meine Mariane, wirst du den Streich
+            überleben? Desto beßer für dich; im Tode bleiben wir so vereint, wie im Leben, und auch
+            du hungerst <pb n="33"/> und dürstest nicht mehr! <stage>Er staunt wieder, ist sehr
+              unruhig; das Schnupftuch sinkt ihm aus der Hand.</stage> Unser Leben ist nicht unser
+            Eigenthum, ist uns nur anvertraut! Ein Soldat soll seinen Posten nicht verlaßen, bis er
+            abgelößt wird, sagt unser Pfarrer. – – Ganz recht, aber wenn die ganze Armee des Feindes
+            sich der einzelnen Schildwache nähert, wenn sie sicher ist, in Stüken zerhauen zu
+            werden, wenn aller Widerstand Raserey wär', und kein Mittel da, als die Flucht? Handelt
+            der Soldat auch dann noch pflichtlos, wenn er nicht anderst handeln kann? <stage>Er
+              sieht wehmüthig den vom Hagel entblätterten und zersplitterten Baum an.</stage> Ha,
+            sey mir gegrüßt, Gespan meines Unglüks, eben so verwüstet, eben so unnüz, als ich!
+            Sollst mir wenigstens im Tode noch nüzen! – Wie öd und einsam alles um mich her ist! –
+            Hier eine Leiter! <stage>Er bindt die Leiter ab und stellt sie an den Baum.</stage>
+            Pfuy! weibisches Herz! wie pochst du? <stage>Er rafft das Schnupftuch auf, knüpft es
+              sich um den Hals und steigt ein paar Stafeln hinauf.</stage> Nun, lieber Gott, dem ich
+            auf dieser Welt gedient habe, schlecht und recht, so gut mirs meine Einfalt eingab,
+            erbarm dich meiner armen Seele! <stage>Er will den Ueberrest des Schnupftuchs um einen
+              Ast schlingen.</stage></p>
+        </sp>
+      </div>
+      <pb n="34"/>
+      <div type="scene">
+        <head>Siebende Scene.</head>
+        <stage>Woller in Gedanken vertiefft. Jacob.</stage>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <stage>Für sich.</stage>
+          <p>Großer Gott! Im siebenzigsten Jahre meines Lebens schikst du mir noch diese Prüfung.
+            Mein ganzes Kirchspiel eine zerstreüte Heerde! Wo ich hinsehe, nichts als Trauerhaüser,
+            kein heitres Gesicht mehr seit gestern! Er erblikt Jacob. Gerechter Himmel! was seh'
+            ich? Unglüklicher! <stage>Er steigt auf die Leiter, reißt Jacob mit sich herab, und
+              wirft die Leiter um.</stage> Ein Schnupftuch um deinen Hals? Warst du gänzlich von
+            Gott verlaßen? Elender!</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Außer sich selbst, fällt in tiefster Verwirrung der Sinne dem Pfarrer in die
+            Arme.</stage>
+          <p>In deinen Armen bin ich also izt, Heiliger Vater Abraham! Für immer und ewig
+            verschwunden, und tief unter mir liegt nun jener Schauplaz des Jammers. – Nicht wahr, du
+            Verklährter des Himmels! Du bists, der mich zum Richterstuhl führt? Gott weiß es, daß
+            ichs nie böse, und auch bey meinem lezten Schritt in diese Ewigkeit nicht böse gemeynt
+            habe!</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <p>Jacob, Jacob! – Welch ein Wahnsinn beherrscht dich! Und nur der Wahnsinn allein
+            entschuldigt die <pb n="35"/> schwarze That, vor deren Vollziehung der ewige Erbarmer
+            dich noch durch meine schwache Hand bewahrt hat. Jacob, Jacob, und du kennst dich
+            selbst, du kennest deinen Pfarrer nicht mehr?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Fällt ihm zu Füßen.</stage>
+          <p>Himmel! Wie plözlich bin ich wieder in allen Jammer dieses Erdelebens hinuntergeworfen?
+            O Gott! Und wie hätt' ich vor dir erscheinen dürfen, da ich schon vor einem Menschen,
+            vor Ihnen, mein theürer Lehrer, mich tief, tief verbergen möchte unter die Erde? Doch
+            auch nur Ihr Anblik, frommer Mann, ist für mich der Anblik eines Erlösers, der beschämt,
+            aber tröstet.</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <p>Noch zu beklemmt ist mein Herz, noch kann ich weder strafen, noch trösten.</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Dank, ewigen Dank! Gleich einem Engel Gottes erschienen Sie, um mich vom ewigen Tode zu
+            retten.</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <p>Wohl dir! Wenn du mit gedoppeltem Eifer für alle Zukunft jede Versuchung bekämpfest;
+            wenn du das gerettete Leben mehr als jemahls Gott und den Deinigen weyhest! –</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Steht auf.</stage>
+          <p>O des thörichten Jacobs! Eben für die Meinigen, anstatt für sie zu leben, wollt' ich
+            sterben. Ich dachte, <pb n="36"/> nach dem Tode des Vaters haben Wittwe und Waysen an
+            das Armengut gültigern Anspruch.</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <p>Heißt das Ehemann und Vater seyn, Unglüklicher! sein Weib, seine Kinder des Gatten, des
+            Vaters durch ein Verbrechen berauben, mit ewiger Schande sie brandmarken? –</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Mit Beklemmung.</stage>
+          <p>Was soll aber mir und Ihnen, Herr Pfarrer, der Name Mann und Vater, wenn ich mein Weib,
+            meine Kinder weder ernähren, noch kleiden kann?</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <p>Und den Vater im Himmel, hast du den gänzlich vergeßen?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Schon seit vierzehen Tagen, vorzüglich gestern im schreklichen Ungewitter sah' ich nur
+            den Richter, den Rächer, nicht den Vater.</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <p>Du Kleinglaübiger! Heißt das Vertrauen auf seine Fürsehung, im Glüke Gottes vergeßen,
+            seine Wohlthaten als schuldige Belohnungen unsrer Tugend genießen; im Unglük wider Ihn
+            murren, an seiner Hilfe verzweifeln? – So sind die Menschen! –</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Ehrwürdiger Herr Pfarrer! Glauben Sie mirs! Hätt' ich allein hungern, hätt' ich mit
+            Gras und <pb n="37"/> Wurzeln mich nähren, mit stinkendem Waßer mich tränken, hätt' ich
+            halb nakend und zerlumpt die Welt durchstreiffen, von Thüre zu Thüre mein Brodt betteln
+            müßen – Meine Hand hätt' ich auf den Mund gelegt, und gelaßen Alles ertragen. – – –
+            Aber, meine in der Fieberhize schmachtende Mariane, auf'm harten Strohlager, – mein
+            täglich sterbendes, sich selbst abhärmendes Susgen – meine zwey kleinern Kinder, die um
+            Brodt wimseln, und denen ich keines mehr zu geben hatte, das, das zerriß mein Herz in
+            Stüken!</p>
+          <stage>Er wendet sich um, stüzt sich an den Baum, und seüfzt tief.</stage>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <stage>Sich die Augen wischend: bey Seite.</stage>
+          <p>O ihr Reichen, kömmt in die Höhlen der Armuth! Lernt da die Menschheit ehren! <stage>Zu
+              Jacob.</stage> Wahr ists, Jacob, immer hast du als ein redlicher Mann gelebt; desto
+            unbegreiflicher ist dein Unsinn, ein Leben voll Tugend durch einen Selbstmord zu
+            entehren!</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Lieber Herr Pfarrer! Was wollen Sie? Der Gefangene schmachtet nach Freyheit – Der
+            Kranke nach Genesung – Der Hungrige nach Speise! Alle Uebel werden erträglich, sobald
+            man ihr Ziel siehet.</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <p>Aber dieser Augenblik der Freyheit – der Genesung – der Sättigung – oft ist er uns am
+            nächsten, wenn wir ihn am wenigsten ahnden. – Doch, ich weiß es, <pb n="38"/> in einer
+            ruhigern Stunde macht dir dein Herz dringendere Vorwürfe, als ich zu thun fähig bin.</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>O ja! – Aber bedenken Sie, der Hunger, Elend, Verachtung, gänzliche Hilflosigkeit! – –
+            –</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <p>Sieh, Kleinglaübiger! Der Gott, der den Blumen ihren lieblichen Schmelz, den Früchten
+            die Reiffe giebt, der die Hize des Tages und die Kühlung der Nächte in richtigem
+            Ebenmaße abwiegt, der der Sonne befiehlt, jeden Morgen die Natur neü zu beleben, und dem
+            Regen, den Schooß der Erde zu erfrischen, sorgt auch für dich, für dein Weib, für deine
+            Kinder!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Achte Scene.</head>
+        <stage>Die Vorigen, Thomsen. Der die lezten Vorte gehört, hat in jeder Hand einen Korb mit
+          Brodt und Wein.</stage>
+        <sp who="#thomsen">
+          <speaker>Thomsen.</speaker>
+          <p>Ja, ja – da schikt er dem braven Jacob diesen Korb mit Brodten; – Aber, verzieht mirs,
+            lieber Vater lange blieb ich zurük, und noch dazu hab' ich da den andern Korb beynahe
+            gänzlich geleeret.</p>
+        </sp>
+        <pb n="39"/>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Thomsen küßend, indem er ihm den Korb darreicht.</stage>
+          <p>O du lieber, kleiner Engel! – – – Aber darf ich auch würklich? <stage>Zu
+              Woller.</stage> Werden Sie nicht sich selbst oder doch vielleicht würdigere Arme
+            berauben?</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <p>Morgens wird die Vorsicht dir und mir ein mehrers schenken! Soll ein guter Hirt für
+            sich auf die Zukunft sorgen, wenn izt seine Schaafe schmachten?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Mann Gottes, gleich mächtig in Thaten und Worten! Sie beweisen mir, daß ein Gott, und
+            daß Er unendlich gut ist, weil Sie selbst so gut sind. Mein Freünd, mein Vater, mein
+            Bruder, daß ich mich in Ihre Arme werfe! Sie retten mir, meinem Weibe, meinen drey
+            Kindern das Leben.</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <p>Danke nicht mir, lieber Jacob – ich bin genug belohnt! – Geben ist seeliger als
+            empfangen: Heb' deine Augen in die Höhe, und danke dem, der es mir gab! <stage>Jacob
+              eilt mit Freudensprüngen, mit dem Brodt und mit der Flasche in die Hütte.</stage></p>
+        </sp>
+      </div>
+      <pb n="40"/>
+      <div type="scene">
+        <head>Neünte Scene.</head>
+        <stage>Woller und Thomsen.</stage>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <p>Wo bliebst du so lange, wo kamst du mit den Lebensmitteln im andern Korbe hin?</p>
+        </sp>
+        <sp who="#thomsen">
+          <speaker>Thomsen.</speaker>
+          <p>O! da verziehen Sie mir gewiß, Vater! Dort beym Rebhügel saß der alte Johann unter dem
+            zerknikten Traubengeländer beynahe ohnmächtig. Wies mir so wohl that, als ich ihm eine
+            von den Weinflaschen an den Mund sezte, und er so nach und nach wieder zu sich selbst
+            kam; er öfnete so voll süßer Befremdung die Augen; tief ins Innerste des Herzens drangen
+            mir die Seegnungen des sterbenden Greisen, und warum sollt' ich ihm nicht noch eine
+            Flasche und ein Brodt zurüklaßen, die lezten vielleicht, die er noch genießt, bis er bey
+            den Engeln Gottes seyn wird? Kaum vier Schritte war ich weiter, so sah ich die arme
+            Hanne, die mit ihren Vaterlosen Waysen einem hübschen Herrn zu Pferde nachlief; und
+            statt des Allmosens, um das sie schüchtern flehte, schlug der Unmensch, indem er sie
+            fortjagte, sie über die Schulter. Mir wars, der Streich gieng durch die Meinige: Was
+            konnt' ich thun? Auch ihr ließ ich etwas von dem Brodte zurük.</p>
+        </sp>
+        <pb n="41"/>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <stage>Die Hand auf die Scheitel des Knaben.</stage>
+          <p>Du thatest wohl, mein Sohn! Dafür ruhet auf dir der Seegen der Armen! O ihr Reichen und
+            Mächtigen dieser Welt, könntet ihr izt sehen, was in unsrer Seele vorgeht, wie würdet
+            ihr uns beneiden? In meinem Kinde gleichsam verjüngert, möcht' ich über Hügel und Berge
+            mich schwingen! Taüscht mich mein Geist, oder fühl' ich einen Vorgeschmak der
+            Seeligkeit, die uns jenseits des Grabes erwartet? – – Doch, zu sehr überlaß' ich mich
+            der Trunkenheit meiner Empfindungen; ich gehe, um auch Marianen in ihrem Leiden zu
+            stärken. <stage>Thomsen geht ab.</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Zehnde Scene.</head>
+        <stage>Woller, Jacob, Mariane, Görgen, Lisgen.</stage>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Hier, meine Mariane, hier, meine Kinder, mein und eüer Schuzengel, der eüch vom Rande
+            des Abgrunds den Mann, den Vater zurükzog!</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <stage>Fällt ihm langsam zu Füßen; er hebt sie auf; sie küßt ihm die Hand.</stage>
+          <p>O Herr Pfarrer! Unser verklährte Erlöser, den Sie selber in den Dürftigen auf Erde
+            speisen und tränken, vergelt' Ihnen mit tausendfachem Seegen!</p>
+        </sp>
+        <pb n="42"/>
+        <sp who="#lisgen">
+          <speaker>Lisgen.</speaker>
+          <stage>Fällt ihm zu Füßen, und küßt ihm die Hand.</stage>
+          <p>O! wir Kinder wollen Sie unser Lebenlang, wie unsern Vater, lieben und ehren, und
+            täglich für Sie bethen, Morgens, wenn wir aufstehen, und Abends, wenn wir zu Bette
+            gehen.</p>
+        </sp>
+        <sp who="#goergen">
+          <speaker>Görgen.</speaker>
+          <stage>Fällt ihm zu Füßen, und küßt ihm die andre Hand.</stage>
+          <p>O ja, und wir wollen keine Ihrer Predigten versaümen, und alles thun, was Sie uns
+            heißen; Auch wollen wir recht viel hübsche Lieder und Gebethe lernen, und sie in der
+            Kirche Ihnen herbethen.</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <stage>Innigst gerührt, küßt die beyden Kinder und giebt ihnen gedörrte Früchte.</stage>
+          <p>Kein Dank, meine Lieben! Vertrauen auf Gott ist der beste Dank.</p>
+        </sp>
+        <sp who="#lisgen">
+          <speaker>Lisgen.</speaker>
+          <stage>Freüdig und hüpfend zu Jacob und Marianen.</stage>
+          <p>Sieh, lieber Vater, liebe Mutter! Nun sind wir Kinder nicht mehr arm! Seyd nur nicht
+            mehr so traurig!</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <stage>Küßt Lisgen.</stage>
+          <p>Entzükende Unschuld! Liebenswürdige Kleine! Bleibt immer der Trost, die Freüde eürer
+            Eltern, wie ihrs izt seyd! Wem Gott solch Hofnungsvolle Kinder schenkt, der ist nicht
+            arm. – <stage>Zu Jacob und Mariane.</stage> Ihr aber, meine Freünde, verzagt niemahls an
+            der Hilfe von oben! Laßt den Himmel schloßen, regnen und Donner schleüdern! Gott kann
+            die Seinen auch in <pb n="43"/> einer Wüste nähren, und läßt aus Felsen Wasser quillen!
+            Morgens komm' ich wieder zu eüch, und wenns Gott gefällt, bring' ich eüch neüe
+            Hilfe.</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <p>Edler, wohlthätiger Mann! Entblößen Sie sich selber nicht zu sehr um unsertwillen?</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <p>Sorgt nicht, meine Lieben! Heüte Morgens hab' ich eine hebräische Bibel mit goldenen
+            Schlößern in die Stadt zum Verkauf geschikt: Freylich mein liebstes Kleinod! Aber kann
+            ichs zu einem Gott gefälligern Gebrauche verwenden?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Fällt ihm zu Füßen und küßt ihm die Hand.</stage>
+          <p>O mein Vater! – Sind Sie Mensch oder Engel?</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <stage>Hebt ihn auf.</stage>
+          <p>Stille, Freünd! Ehre dem allein, dem vom Himmel und Erde Ehre gebührt!</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <stage>Schlägt die Hände zusamen: bey Seite.</stage>
+          <p>O! Wenn alle Seelen-Hirten diesem ähnlich wären, wie glüklich würden ihre Heerden
+            seyn!</p>
+        </sp>
+      </div>
+      <pb n="44"/>
+      <div type="scene">
+        <head>Eilfte Scene.</head>
+        <stage>Die Vorigen, ein Bedienter In schlechtem Ueberrok.</stage>
+        <sp who="#der_bediente">
+          <speaker>Der Bediente.</speaker>
+          <p>Wohnt hier der Gärtner, Jacob Tomms?</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <p>Der bin ich, guter Freund! Was will er?</p>
+        </sp>
+        <sp who="#der_bediente">
+          <speaker>Der Bediente.</speaker>
+          <p>Einen schönen Gruß von meiner gnädigen Herrschaft; – Doch nicht dieß allein – Sie hat
+            gehört, daß das Ungewitter gestern Abends diese ganze Gegend verheert habe – Daß
+            obbemeldter Jacob Tomms am stärksten darunter gelitten, dabey aber der redlichste Mann
+            im ganzen Kirchspiele wäre – Nun schikt sie ihm hier in diesem Papierchen – sein Name
+            steht drauf – zu einer kleinen Unterstüzung bis auf weiters, drey Carlins.</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Schlägt die Hände zusammen.</stage>
+          <p>Gott im Himmel! Wie tief beschämt denk' ich an mein Mißtrauen zurük! Ich, so ganz
+            unwürdig Deiner Erbarmung! Nihm diese Thräne zum Opfer der tiefsten Reüe und des
+            feürigsten Dankes! Nein – nicht alle Reichen sind Reichards – Giebts ja auch solche, die
+            Du, Allerbarmer im Himmel, zu Werkzeügen Deiner Güte geweyht hast! Wie heißt seine
+            gnädige Herrschaft, Freünd?</p>
+        </sp>
+        <pb n="45"/>
+        <sp who="#der_bediente">
+          <speaker>Der Bediente.</speaker>
+          <stage>Hebt die Hand auf den Mund.</stage>
+          <p>Sachte! – Ihren Namen, will sie nicht, daß Jemand außer dem lieben Gott, Ihr und mir
+            wiße!</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <p>Welche Würde, welche Zärtlichkeit im Wohlthun! Da weiß die linke Hand nicht was die
+            Rechte thut!</p>
+        </sp>
+        <sp who="#der_bediente">
+          <speaker>Der Bediente.</speaker>
+          <p>So viel darf ich wohl von Ihr sagen; die gnädigste, liebreichste Herrschaft ist sie
+            unter der Sonne: Uns Bediente alle erzog sie von Kindesbeinen an. Die Einen hohlte sie
+            aus dem Waysen- andre aus dem Fündlings-Hause; andre nahm sie vom Strassenbettel weg;
+            ließ uns Religion, Schreiben, Lesen, Rechnen, Zeichnen lernen, u.s.w. und nun lieben wir
+            sie alle nicht wie Bedienten ihre Herren, sondern wie Kinder ihre Eltern. Wenn uns eine
+            andere Herrschaft tausend Gulden Jahrgehalt gäbe, keins würd' unsre gnädige Herrschaft
+            verlaßen; Lieber dienten wir Ihr nur für Speise, Trank und Kleider; freüdig würden wir
+            alle für sie durch Feüer und Waßer laufen, und unsern lezten Blutstropfen hergeben, um
+            Ihr Leben zu retten.</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <stage>Sehr gerührt.</stage>
+          <p>Recht so! Mein Freünd! – Ein würdigerer Mann ist er in meinen Augen, als tausend
+            Herren, die im Sammt und Seide prangen! Nicht weniger Ehre machen solche Gesinnungen den
+            Herzen der Bedienten, als ihrer Herrschaft.</p>
+        </sp>
+        <pb n="46"/>
+        <sp who="#der_bediente">
+          <speaker>Der Bediente.</speaker>
+          <p>Ja, Herr, verziehen Sie mir, wenn ich einmahl von meiner gnädigen Herrschaft zu reden
+            anfange, so kann ich so leicht nicht fertig werden. Nicht bloß uns Bediente hält sie,
+            wie Ihre Kinder; mit gleicher väterlicher Liebe sorgt sie auch für Ihre Unterthanen
+            alle: – Ihr ist kein Strohdach zu niedrig, keine Krankenstube zu ekelhaft; sie sezt sich
+            neben das Bette des Kranken, ist zugleich Arzt und Pfarrer; labt, erquikt, stärkt,
+            tröstet, ermahnet, schließt die Augen dem Sterbenden selber. Auch sagt bey uns jeder
+            Bauer, wir haben keinen Landesherrn, nur einen gütigen Vater. Jahr und Tage lang giebts
+            bey uns keine Rechtshändel; sie vergleicht die Streitenden alle. – »Kinder Eines Vaters,
+            sagt sie, sollen nicht mit einander rechten.« – Sie belohnt weit mehr, als sie straft,
+            und wenn sie strafen muß, stehen Ihr immer zuerst die Thränen im Auge. –</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <stage>Die Hände gen Himmel hebend.</stage>
+          <p>Vater im Himmel! Habe Dank, tausend Dank, daß Du unsrer im Argen liegenden Welt von
+            Zeit zu Zeit solche Beyspiele von Tugend schenkest, um das gefallene Menschengeschlecht
+            an ihrer Möglichkeit nicht verzweifeln zu laßen!</p>
+        </sp>
+        <sp who="#lisgen">
+          <speaker>Lisgen.</speaker>
+          <p>Liebe Mutter! Ists doch eine hübsche Sache, reich zu seyn! Wie viel Leüte man mit
+            seinem Gelde froh machen kann!</p>
+        </sp>
+        <pb n="47"/>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <p>Dieß Glük, mein Kind, ist nur wenigen geschenkt. Aber um andern wohl zu thun, muß man
+            nicht immer reich seyn. Sieh', wie viel Gutes uns der Herr Pfarrer gethan hat, und Er
+            ist nicht reich!</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <p>Freylich, Gold und Silber hab ich nicht: Aber mehr als Reichthum gab mir der Himmel; Er
+            gab mir ein zufriednes Herz, ein lebhaftes Gefühl für die Leiden Andrer – Eben so süß
+            ists mir, mit den Trauernden zu wainen, als mit den Fröhlichen zu lachen.</p>
+        </sp>
+        <sp who="#der_bediente">
+          <speaker>Der Bediente.</speaker>
+          <p>Sie sind also der Herr Pfarrer des Kirchspiels?</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <p>Ja, Freünd, hat er was mit mir zu sprechen?</p>
+        </sp>
+        <sp who="#der_bediente">
+          <speaker>Der Bediente.</speaker>
+          <p>Gut; so erspahren Sie mir einen Gang, Herr Pfarrer, da Sie selber da sind – Hab' noch
+            mehr solche Freündschafts-Zettelchen abzugeben – Meine gnädige Herrschaft läßt sich
+            Ihnen empfehlen: Ihnen überläßt sie's, die hier beygeschloßene Summe unter die Armen
+            Ihres Kirchspiels auszutheilen.</p>
+          <stage>Er giebt ihm ein Päkgen mit Geld.</stage>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <stage>Tief gerührt.</stage>
+          <p>Des Himmels bester Seegen wohne, und bleibe <pb n="48"/> auf seiner gnädigen
+            Herrschaft! Lieblich sey'n alle Ihre Wege, und in Ihrem Hause blühe der Friede!</p>
+        </sp>
+        <sp who="#mariane">
+          <speaker>Mariane.</speaker>
+          <p>Sieh', Jacob, hab' ich dirs nicht gesagt, auf Sturm und Ungewitter scheine die Sonne
+            wieder, und schöner geh' sie aus den Wolken hervor.</p>
+        </sp>
+        <sp who="#jacob">
+          <speaker>Jacob.</speaker>
+          <stage>Umarmt sie.</stage>
+          <p>Ja, meine Mariane! – Du bist weiser und männlicher als ich. <stage>Er hebt seine Augen
+              gen Himmel.</stage> O Gott! ich bethe an, und verstumme.</p>
+        </sp>
+        <sp who="#goergen #lisgen">
+          <speaker>Görgen und Lisgen.</speaker>
+          <stage>Zum Bedienten.</stage>
+          <p>Sagt eüerer Gnädigen Herrschaft, wir wollen auch für Sie bethen, und recht gute brave
+            Kinder seyn!</p>
+        </sp>
+        <sp who="#woller">
+          <speaker>Woller.</speaker>
+          <stage>Nihmt Jacob und Mariane beym Arm.</stage>
+          <p>Kommt! Freünde! Dieser Tag soll uns heilig seyn! Ein neües Lied wollen wir dem Herren
+            singen, der uns in die Grube gestürzt, und wieder herausgezogen hat, und niemahls mehr
+            wollen wir an seiner Hülfe verzagen!!</p>
+          <stage>Alle gehen in die Hütte.</stage>
+        </sp>
+        <trailer>Ende.</trailer>
+      </div>
+    </body>
+  </text>
+</TEI>
