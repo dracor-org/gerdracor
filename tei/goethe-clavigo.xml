@@ -34,21 +34,27 @@
           <availability>
             <licence>
               <ab>CC-BY-3.0</ab>
-              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode"
+                >Lizenzvertrag</ref>
             </licence>
           </availability>
           <bibl type="originalSource">
-            <title>Goethes Werke. Hamburger Ausgabe in 14 Bänden. Textkritisch durchgesehen und mit
-              Anmerkungen versehen von Erich Trunz, Hamburg: Christian Wegener, 1948 ff.
-              [Seitenkonkordanz zu einer Mischauflage aus den Jahren 1959 und 1960.]</title>
-          </bibl>
+            <author>Johann Wolfgang Goethe</author>: <title level="a">Clavigo. Ein
+              Trauerspiel</title>. In: <title level="s">Goethes Werke</title>. Hamburger Ausgabe in
+            14 Bänden. Band <biblScope unit="volume">IV</biblScope>: Dramatische Dichtungen.
+              <biblScope unit="volume">Zweiter</biblScope> Band. Textkritisch durchgesehen und mit
+            Anmerkungen versehen von <editor>Wolfgang Kayser</editor>. <edition>Vierte
+              Auflage.</edition>
+            <pubPlace>Hamburg</pubPlace>: <publisher>Wegner</publisher>
+            <date>1960</date>, S. <biblScope unit="page" from="260" to="306"
+            >260–306</biblScope>.</bibl>
         </bibl>
       </sourceDesc>
     </fileDesc>
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="clavigo" sex="MALE">
+          <person xml:id="clavigo" sex="MALE" ana="http://www.wikidata.org/entity/Q1363385">
             <persName>Clavigo</persName>
           </person>
           <person xml:id="carlos" sex="MALE">
@@ -58,10 +64,10 @@
             <persName>Buenco</persName>
           </person>
           <person xml:id="sophie" sex="FEMALE">
-            <persName>Sophie</persName>
+            <persName>Sophie Guilbert</persName>
           </person>
           <person xml:id="marie" sex="FEMALE">
-            <persName>Marie</persName>
+            <persName>Marie Beaumarchais</persName>
           </person>
           <person xml:id="guilbert" sex="MALE">
             <persName>Guilbert</persName>
@@ -75,12 +81,13 @@
           <person xml:id="saint_george" sex="MALE">
             <persName>Saint George</persName>
           </person>
-          <person xml:id="die_maenner" sex="MALE">
-            <persName>Die Männer</persName>
-          </person>
+          <personGrp xml:id="die_maenner" sex="MALE">
+            <name>Die Männer</name>
+          </personGrp>
           <listRelation type="personal">
             <relation name="friends" mutual="#carlos #clavigo"/>
             <relation name="spouses" mutual="#guilbert #sophie"/>
+            <relation name="siblings" mutual="#beaumarchais #sophie #marie"/>
           </listRelation>
         </listPerson>
       </particDesc>
@@ -105,32 +112,42 @@
       <event type="print" when="1774">
         <desc/>
       </event>
-      <event type="premiere" when="1774">
+      <event type="premiere" when="1774-08-23">
+        <desc/>
+      </event>
+      <event type="written" when="1774">
         <desc/>
       </event>
     </listEvent>
     <listRelation>
-      <relation name="wikidata" active="https://dracor.org/entity/ger000157" passive="http://www.wikidata.org/entity/Q466752"/>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000157"
+        passive="http://www.wikidata.org/entity/Q466752"/>
     </listRelation>
   </standOff>
   <text>
+    <pb n="260"/>
     <front>
-      <div type="front">
-        <head>Johann Wolfgang Goethe</head>
-        <head>Clavigo</head>
-        <head>Ein Trauerspiel</head>
-        <pb n="260"/>
-      </div>
+      <titlePage>
+        <docAuthor>Johann Wolfgang Goethe</docAuthor>
+        <docTitle>
+          <titlePart type="main">Clavigo</titlePart>
+          <titlePart type="sub">Ein Trauerspiel</titlePart>
+        </docTitle>
+      </titlePage>
       <castList>
-        <head>Personen.</head>
-        <castItem>Clavigo, Archivarius des Königs</castItem>
-        <castItem>Carlos, dessen Freund</castItem>
-        <castItem>Beaumarchais</castItem>
-        <castItem>Marie Beaumarchais</castItem>
-        <castItem>Sophie Guilbert, geborne Beaumarchais</castItem>
-        <castItem>Guilbert, ihr Mann</castItem>
-        <castItem>Buenco</castItem>
-        <castItem>Saint George</castItem>
+        <head>Personen</head>
+        <castItem><role>Clavigo,</role>
+          <roleDesc>Archivarius des Königs</roleDesc></castItem>
+        <castItem><role>Carlos,</role>
+          <roleDesc>dessen Freund</roleDesc></castItem>
+        <castItem><role>Beaumarchais</role></castItem>
+        <castItem><role>Marie Beaumarchais</role></castItem>
+        <castItem><role>Sophie Guilbert,</role>
+          <roleDesc>geborne Beaumarchais</roleDesc></castItem>
+        <castItem><role>Guilbert,</role>
+          <roleDesc>ihr Mann</roleDesc></castItem>
+        <castItem><role>Buenco</role></castItem>
+        <castItem><role>Saint George</role></castItem>
       </castList>
       <set>
         <p>Der Schauplatz ist zu Madrid.</p>
@@ -142,18 +159,18 @@
         <stage>Clavigos Wohnung.</stage>
         <stage>Clavigo. Carlos.</stage>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>vom Schreibtisch aufstehend.</stage>
           <p>Das Blatt wird eine gute Wirkung tun, es muß alle Weiber bezaubern. Sag mir, Carlos,
             glaubst du nicht, daß meine Wochenschrift jetzt eine der ersten in Europa ist?</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Wir Spanier wenigstens haben keinen neueren Autor, der so viel Stärke des Gedankens, so
             viel blühende Einbildungskraft mit einem so glänzenden und leichten Stil verbände.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Laß mich! Ich muß unter dem Volke noch der Schöpfer des guten Geschmacks werden. Die
             Menschen sind willig, allerlei Eindrücke anzunehmen; ich habe einen Ruhm, ein Zutrauen
             unter meinen Mitbürgern; und, unter uns gesagt, meine Kenntnisse breiten sich täglich
@@ -161,14 +178,14 @@
             stärker.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Gut, Clavigo! Doch wenn du mir's nicht übelnehmen willst, so gefiel mir damals deine
             Schrift weit besser, als du sie noch zu Mariens Füßen schriebst, als noch das liebliche,
-            muntere Geschöpf auf dich Einfluß hatte. Ich <pb n="260"/> weiß nicht, das Ganze hatte
+            muntere Geschöpf auf dich Einfluß hatte. Ich <pb n="261"/> weiß nicht, das Ganze hatte
             ein jugendlicheres, blühenderes Ansehen.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Es waren gute Zeiten, Carlos, die nun vorbei sind. Ich gestehe dir gern, ich schrieb
             damals mit offnerem Herzen, und wahr ist's, sie hatte viel Anteil an dem Beifall, den
             das Publikum mir gleich anfangs gewährte. Aber in der Länge, Carlos, man wird der Weiber
@@ -176,13 +193,13 @@
             mir vornahm, sie zu verlassen!</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Du wärst versauert. Sie sind gar zu einförmig. Nur, dünkt mich, wär's wieder Zeit, daß
             du dich nach einem neuen Plan umsähest, es ist doch auch nichts, wenn man so ganz auf'm
             Sand ist.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Mein Plan ist der Hof, und da gilt kein Feiern. Hab ich's für einen Fremden, der ohne
             Stand, ohne Namen, ohne Vermögen hieher kam, nicht weit genug gebracht? Hier an einem
             Hofe! unter dem Gedräng von Menschen, wo es so schwer hält, sich bemerken zu machen? Mir
@@ -193,7 +210,7 @@
             Weiber, die Weiber! Man vertändelt gar zu viel Zeit mit ihnen.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Narre, das ist deine Schuld. Ich kann nie ohne Weiber leben, und mich hindern sie an
             gar nichts. Auch sag ich ihnen nicht so viel schöne Sachen, röste mich nicht monatelang
             an Sentiments und dergleichen; wie ich denn mit honetten Mädchen am ungernsten zu tun
@@ -203,13 +220,13 @@
             nachdenkend, Clavigo?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ich kann die Erinnerung nicht loswerden, daß ich Marien verlassen – hintergangen habe,
             nenn's, wie du willst.</p>
-          <pb n="261"/>
         </sp>
+        <pb n="262"/>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Wunderlich! Mich dünkt doch, man lebt nur Einmal in der Welt, hat nur Einmal diese
             Kräfte, diese Aussichten, und wer sie nicht zum besten braucht, wer sich nicht so weit
             treibt als möglich, ist ein Tor. Und heiraten! heiraten just zur Zeit, da das Leben erst
@@ -219,121 +236,121 @@
             eine Narrheit, und wenn du Wort gehalten hättest, wär's gar Raserei gewesen.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Sieh, ich begreife den Menschen nicht. Ich liebte sie wahrlich, sie zog mich an, sie
             hielt mich, und wie ich zu ihren Füßen saß, schwur ich ihr, schwur ich mir, daß es ewig
             so sein sollte, daß ich der Ihrige sein wollte, sobald ich ein Amt hätte, einen Stand –
             Und nun, Carlos!</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Es wird noch Zeit genug sein, wenn du ein gemachter Mann bist, wenn du das erwünschte
             Ziel erreicht hast, daß du alsdann, um all dein Glück zu krönen und zu befestigen, dich
             mit einem angesehenen und reichen Hause durch eine kluge Heirat zu verbinden suchst.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Sie ist verschwunden! glatt aus meinem Herzen verschwunden, und wenn mir ihr Unglück
             nicht manchmal durch den Kopf führe – Daß man so veränderlich ist!</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Wenn man beständig wäre, wollt ich mich verwundern. Sieh doch, verändert sich nicht
             alles in der Welt? warum sollten unsere Leidenschaften bleiben? Sei du ruhig, sie ist
             nicht das erste verlaßne Mädchen, und nicht das erste, das sich getröstet hat. Wenn ich
             dir raten soll, da ist die junge Witwe gegenüber –</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Du weißt, ich halte nicht viel auf solche Vorschläge. Ein Roman, der nicht ganz von
             selbst kommt, ist nicht imstande, mich einzunehmen.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Über die delikaten Leute!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Laß das gut sein, und vergiß nicht, daß unser Hauptwerk gegenwärtig sein muß, uns dem
             neuen Minister notwendig zu machen. Daß Whal das Gouvernement von Indien niederlegt, ist
             immer beschwerlich für uns. Zwar ist mir's weiter nicht bange; sein Einfluß bleibt –
-            Grimaldi <pb n="262"/> und er sind Freunde, und wir können schwatzen und uns bücken
+            Grimaldi <pb n="263"/> und er sind Freunde, und wir können schwatzen und uns bücken
             –</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Und denken und tun, was wir wollen.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Das ist die Hauptsache in der Welt. Schellt dem Bedienten. Tragt das Blatt in die
             Druckerei!</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Sieht man Euch den Abend?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Nicht wohl. Nachfragen könnt Ihr ja.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Ich möchte heut abend gar zu gern was unternehmen, das mir das Herz erfreute; ich muß
             diesen ganzen Nachmittag wieder schreiben. Das endigt nicht.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Laß es gut sein! Wenn wir nicht für so viele Leute arbeiteten, wären wir so viel Leuten
             nicht über den Kopf gewachsen. <stage>Ab.</stage></p>
           <stage>Guilberts Wohnung.</stage>
           <stage>Sophie Guilbert. Marie Beaumarchais. Don Buenco.</stage>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Sie haben eine üble Nacht gehabt?</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Ich sagt's ihr gestern abend. Sie war so ausgelassen lustig und hat geschwatzt bis
             eilfe, da war sie erhitzt, konnte nicht schlafen, und nun hat sie wieder keinen Atem und
             weint den ganzen Morgen.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Daß unser Bruder nicht kommt! Es sind zwei Tage über die Zeit.</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Nur Geduld, er bleibt nicht aus.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE</speaker>
+          <speaker>Marie</speaker>
           <stage>aufstehend.</stage>
           <p>Wie begierig bin ich, diesen Bruder zu sehen; meinen Richter und meinen Retter. Ich
             erinnere mich seiner kaum.</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>O ja, ich kann mir ihn noch wohl vorstellen; er war ein feuriger, offner, braver Knabe
             von dreizehn Jahren, als uns unser Vater hierher schickte.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Eine edle, große Seele Sie haben den Brief gelesen, so den er schrieb, als er mein
             Unglück erfuhr. Jeder Buchstabe davon steht in meinem Herzen. »Wenn du schuldig bist«,
             schreibt er, »so erwarte keine Vergebung; über dein Elend soll noch die Verachtung eines
             Bruders auf dir schwer werden, und der Fluch eines Vaters. Bist du unschuldig – o dann
             alle Rache, alle, alle glühende Rache auf den Verräter!« – Ich zittere! Er wird kommen.
-            Ich zittere, nicht <pb n="263"/> für mich, ich stehe vor Gott in meiner Unschuld. – Ihr
+            Ich zittere, nicht <pb n="264"/> für mich, ich stehe vor Gott in meiner Unschuld. – Ihr
             müßt, meine Freunde – Ich weiß nicht, was ich will! O Clavigo!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Du hörst nicht! Du wirst dich umbringen.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Ich will stille sein! Ja ich will nicht weinen. Mich dünkt auch, ich hätte keine Tränen
             mehr! Und warum Tränen? Es ist mir nur leid, daß ich euch das Leben sauer mache. Denn im
             Grunde, worüber beklag' ich mich? Ich habe viel Freude gehabt, solang unser alter Freund
@@ -343,22 +360,22 @@
             ausquält?</p>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Um Gottes willen, Mademoiselle!</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Ob's ihm wohl einerlei ist – daß er mich nicht mehr liebt? Ach! warum bin ich nicht
             mehr liebenswürdig? Aber bedauern, bedauern sollt er mich! daß die Arme, der er sich so
             notwendig gemacht hatte, nun ohne ihn ihr Leben hinschleichen, hinjammern soll. –
             Bedauern! Ich mag nicht von dem Menschen bedauert sein.</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Wenn ich dich ihn könnte verachten lehren, den Nichtswürdigen! den Hassenswürdigen!</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Nein, Schwester, ein Nichtswürdiger ist er nicht; und muß ich denn den verachten, den
             ich hasse? – Hassen! Ja, manchmal kann ich ihn hassen, manchmal, wenn der spanische
             Geist über mich kommt. Neulich, o neulich, als wir ihm begegneten, sein Anblick wirkte
@@ -369,39 +386,40 @@
             versteht sich.</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Närrisches Mädchen!</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Meine Einbildungskraft führte mich ihm nach, ich sah ihn, wie er zu den Füßen seiner
-            neuen Geliebten alle die Freundlichkeit, alle die Demut verschwendete, mit der <pb n="264"/> er mich vergiftet hat – ich zielte nach dem Herzen des Verräters! Ach,
+            neuen Geliebten alle die Freundlichkeit, alle die Demut verschwendete, mit der <pb
+              n="265"/> er mich vergiftet hat – ich zielte nach dem Herzen des Verräters! Ach,
             Buenco! – Auf einmal war das gutherzige französische Mädchen wieder da, das keine
             Liebestränke kennt und keine Dolche zur Rache. Wir sind übel dran! Vaudevilles, unsere
             Liebhaber zu unterhalten, Fächer, sie zu strafen, und wenn sie untreu sind? – Sag,
             Schwester, wie machen sie's in Frankreich, wenn die Liebhaber untreu sind?</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Man verwünscht sie.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Und?</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Und läßt sie laufen.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Laufen! Nun, und warum soll ich Clavigo nicht laufen lassen? Wenn das in Frankreich
             Mode ist, warum soll's nicht in Spanien sein? Warum soll eine Französin in Spanien nicht
             Französin sein? Wir wollen ihn laufen lassen und uns einen andern nehmen; mich dünkt,
             sie machen's bei uns auch so.</p>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Er hat eine feierliche Zusage gebrochen, und keinen leichtsinnigen Roman, kein
             gesellschaftliches Attachement. Mademoiselle, Sie sind bis ins innerste Herz beleidigt,
             gekränkt. O, mir ist mein Stand, daß ich ein unbedeutender ruhiger Bürger von Madrid
@@ -409,7 +427,7 @@
             unvermögend fühle, Ihnen gegen den falschen Höfling Gerechtigkeit zu schaffen!</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Wie er noch Clavigo war, noch nicht Archivarius des Königs, wie er der Fremdling, der
             Ankömmling, der Neueingeführte in unserm Hause war, wie liebenswürdig war er, wie gut!
             Wie schien all sein Ehrgeiz, all sein Aufstreben ein Kind seiner Liebe zu sein! Für mich
@@ -417,40 +435,40 @@
           <stage>Guilbert kommt.</stage>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT</speaker>
+          <speaker>Guilbert</speaker>
           <stage>heimlich zu seiner Frau.</stage>
           <p>Der Bruder kommt.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Der Bruder! – <stage>Sie zittert, man führt sie in einen Sessel.</stage> Wo? wo? Bringt
             mir ihn! Bringt mich hin!</p>
           <stage>Beaumarchais kommt.</stage>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Meine Schwester! <stage>Von der ältesten weg, nach der jüngsten zustürzend.</stage>
             Meine Schwester! Meine Freunde! O meine Schwester!</p>
-          <pb n="265"/>
         </sp>
+        <pb n="266"/>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Bist du da? Gott sei Dank, du bist da!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Laß mich zu mir selbst kommen!</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Mein Herz, mein armes Herz!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Beruhigt euch! Lieber Bruder, ich hoffte, dich gelassener zu sehn.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Gelassener! Seid ihr denn gelassen? Seh ich nicht an der zerstörten Gestalt dieser
             Lieben, an deinen verweinten Augen, deiner Blässe des Kummers, an dem toten
             Stillschweigen eurer Freunde, daß ihr so elend seid, wie ich mir euch den ganzen langen
@@ -458,15 +476,15 @@
             Gegenwart verdoppelt meine Gefühle, o meine Schwester!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Und unser Vater?</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Er segnet euch und mich, wenn ich euch rette.</p>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Mein Herr, erlauben Sie einem Unbekannten, der den edlen braven Mann in Ihnen beim
             ersten Anblick erkennt, seinen innigsten Anteil an Tag zu legen, den er bei dieser
             ganzen Sache empfindet. Mein Herr! Sie machen diese ungeheure Reise, Ihre Schwester zu
@@ -474,7 +492,7 @@
             beschämen!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Ich hoffte, mein Herr, in Spanien solche Herzen zu finden, wie das Ihre ist; das hat
             mich angespornt den Schritt zu tun. Nirgend, nirgend in der Welt mangelt es an
             teilnehmenden, beistimmenden Seelen; wenn nur einer auftritt, dessen Umstände ihm völlig
@@ -484,18 +502,18 @@
             schwach, bis dahinauf zu reichen.</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Kommt, Schwester! Kommt! Legt Euch einen Augenblick nieder! <stage>Sie ist ganz außer
               sich. Sie führen sie weg.</stage></p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Mein Bruder!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Will's Gott, du bist unschuldig, und dann alle, alle Rache über den Verräter! Marie,
-            Sophie ab. Mein Bruder! Meine Freunde! ich seh's an euren Blicken, daß <pb n="266"/>
+            Sophie ab. Mein Bruder! Meine Freunde! ich seh's an euren Blicken, daß <pb n="267"/>
             ihr's seid. Laßt mich zu mir selbst kommen! Und dann! Eine reine, unparteiische
             Erzählung der ganzen Geschichte. Die soll meine Handlungen bestimmen. Das Gefühl einer
             guten Sache soll meinen Entschluß befestigen; und glaubt mir, wenn wir recht haben,
@@ -507,7 +525,7 @@
         <stage>Das Haus des Clavigo.</stage>
         <stage>Clavigo.</stage>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Wer die Franzosen sein mögen, die sich bei mir haben melden lassen? – Franzosen! Sonst
             war mir diese Nation willkommen! – Und warum nicht jetzt? Es ist wunderbar, ein Mensch,
             der sich über so vieles hinaussetzt, wird doch an einer Ecke mit Zwirnsfäden angebunden.
@@ -516,26 +534,26 @@
           <stage>Ein Bedienter.</stage>
         </sp>
         <sp who="#bedienter">
-          <speaker>BEDIENTER.</speaker>
+          <speaker>Bedienter.</speaker>
           <p>Die Fremden, mein Herr.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Führe sie herein! Du sagtest doch ihrem Bedienten, daß ich sie zum Frühstück
             erwarte?</p>
         </sp>
         <sp who="#bedienter">
-          <speaker>BEDIENTER.</speaker>
+          <speaker>Bedienter.</speaker>
           <p>Wie Sie befahlen.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ich bin gleich wieder hier. <stage>Ab.</stage></p>
           <stage>Beaumarchais. Saint George.</stage>
           <stage>Der Bediente setzt ihnen Stühle und geht.</stage>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Es ist mir so leicht! so wohl! mein Freund, daß ich endlich hier bin, daß ich ihn habe;
             er soll mir nicht entwischen. Sein Sie ruhig; wenigstens zeigen Sie ihm die gelassenste
             Außenseite! Meine Schwester! meine Schwester! Wer glaubte, daß du so unschuldig als
@@ -545,49 +563,49 @@
             klug handle als möglich!</p>
         </sp>
         <sp who="#saint_george">
-          <speaker>SAINT GEORGE.</speaker>
-          <p>Ja diese Klugheit, alles, mein Freund, was <pb n="267"/> Sie jemals von Überlegung
+          <speaker>Saint George.</speaker>
+          <p>Ja diese Klugheit, alles, mein Freund, was <pb n="268"/> Sie jemals von Überlegung
             bewiesen haben, nehm ich in Anspruch. Sagen Sie mir's zu, mein Bester, noch einmal daß
             Sie bedenken, wo Sie sind. In einem fremden Königreiche, wo alle Ihre Beschützer, wo all
             Ihr Geld nicht imstande ist, Sie gegen die geheimen Maschinen nichtswürdiger Feinde zu
             sichern.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Sein Sie ruhig! Spielen Sie Ihre Rolle gut, er soll nicht wissen, mit welchem von uns
             beiden er's zu tun hat. Ich will ihn martern. O, ich bin guten Humors genug, um den Kerl
             an einem langsamen Feuer zu braten.</p>
           <stage>Clavigo kommt wieder.</stage>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Meine Herren, es ist mir eine Freude, Männer von einer Nation bei mir zu sehen, die ich
             immer geschätzt habe.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Mein Herr, ich wünsche, daß auch wir der Ehre würdig sein mögen, die Sie unsern
             Landsleuten anzutun belieben.</p>
         </sp>
         <sp who="#saint_george">
-          <speaker>SAINT GEORGE.</speaker>
+          <speaker>Saint George.</speaker>
           <p>Das Vergnügen, Sie kennen zu lernen, hat bei uns die Bedenklichkeit überwunden, daß wir
             beschwerlich sein könnten.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Personen, die der erste Anblick empfiehlt, sollten die Bescheidenheit nicht so weit
             treiben.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Freilich kann Ihnen nicht fremd sein, von Unbekannten besucht zu werden, da Sie durch
             die Vortrefflichkeit Ihrer Schriften sich ebensosehr in auswärtigen Reichen bekannt
             gemacht haben, als die ansehnlichen Ämter, die Ihro Majestät Ihnen anvertrauen, Sie in
             Ihrem Vaterlande distinguieren.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Der König hat viel Gnade für meine geringen Dienste, und das Publikum viel Nachsicht
             für die unbedeutenden Versuche meiner Feder; ich wünschte, daß ich einigermaßen etwas zu
             der Verbesserung des Geschmacks in meinem Lande, zur Ausbreitung der Wissenschaften
@@ -597,8 +615,8 @@
             getrennt werden.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
-          <p>Es ist entzückend, einen Mann so reden zu <pb n="268"/> hören, der gleichen Einfluß auf
+          <speaker>Beaumarchais.</speaker>
+          <p>Es ist entzückend, einen Mann so reden zu <pb n="269"/> hören, der gleichen Einfluß auf
             den Staat und auf die Wissenschaften hat. Auch muß ich gestehen, Sie haben mir das Wort
             aus dem Munde genommen, und mich geradeswegs auf das Anliegen gebracht, um dessen willen
             Sie mich hier sehen. Eine Gesellschaft gelehrter würdiger Männer hat mir den Auftrag
@@ -608,11 +626,11 @@
             bekannt sind, ein Mann, mit dem ich die Ehre habe zu reden –</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>macht eine verbindliche Beugung.</stage>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Und der eine besondere Zierde der Gelehrten ist, indem er gewußt hat, mit seinen
             Talenten einen solchen Grad von Weltklugheit zu verbinden; dem es nicht fehlen kann, die
             glänzenden Stufen zu besteigen, deren ihn sein Charakter und seine Kenntnisse würdig
@@ -620,7 +638,7 @@
             wenn ich sie mit einem solchen Manne verbinde.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Kein Vorschlag in der Welt konnte mir erwünschter sein, meine Herren: ich sehe dadurch
             die angenehmsten Hoffnungen erfüllt, mit denen sich mein Herz oft ohne Aussicht einer
             glücklichen Gewährung beschäftigte. Nicht daß ich glaubte, durch meinen Briefwechsel den
@@ -633,7 +651,7 @@
             der das Glück hat, durch Umsetzung der einheimischen Produkte den Ruhm seines
             Vaterlandes auszubreiten und darüber es noch mit fremden Schätzen zu bereichern. Und so
             erlauben Sie, mein Herr, daß ich einen Mann, der mit solcher Freimütigkeit eine so
-            angenehme <pb n="269"/> Botschaft bringt, nicht wie einen Fremden behandle; erlauben
+            angenehme <pb n="270"/> Botschaft bringt, nicht wie einen Fremden behandle; erlauben
             Sie, daß ich frage, was für ein Geschäft, was für ein Anliegen Sie diesen weiten Weg
             geführt hat? Nicht, als wollt ich durch diese Indiskretion eine eitle Neugier
             befriedigen; nein, glauben Sie vielmehr, daß es in der reinsten Absicht geschieht, alle
@@ -642,17 +660,17 @@
             Geschäfte, besonders bei Hofe, unzählige Schwierigkeiten entgegensetzen.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Ich nehme ein so gefälliges Anerbieten mit allem Dank an. Ich habe keine Geheimnisse
             für Sie, mein Herr, und dieser Freund wird bei meiner Erzählung nicht zuviel sein; er
             ist sattsam von dem unterrichtet, was ich Ihnen zu sagen habe.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>betrachtet Saint George mit Aufmerksamkeit.</stage>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Ein französischer Kaufmann, der bei einer starken Anzahl von Kindern wenig Vermögen
             besaß, hatte viele Korrespondenten in Spanien. Einer der reichsten kam vor fünfzehn
             Jahren nach Paris und tat ihm den Vorschlag: »Gebt mir zwei von Euern Töchtern, ich
@@ -669,21 +687,21 @@
             Geschäfte zu erweitern.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>wird immer aufmerksamer.</stage>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
-          <p>Ungefähr um eben die Zeit hatte sich <pb n="270"/> ein junger Mensch, von den
+          <speaker>Beaumarchais.</speaker>
+          <p>Ungefähr um eben die Zeit hatte sich <pb n="271"/> ein junger Mensch, von den
             Kanarischen Inseln bürtig, in dem Hause vorstellen lassen.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>verliert alle Munterkeit aus seinem Gesicht, und sein Ernst geht nach und nach in
             eine Verlegenheit über, die immer sichtbarer wird.</stage>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Ungeachtet seines geringen Standes und Vermögens nimmt man ihn gefällig auf. Die
             Frauenzimmer, die eine große Begierde zur französischen Sprache an ihm bemerkten,
             erleichtern ihm alle Mittel, sich in weniger Zeit große Kenntnisse zu erwerben.</p>
@@ -699,26 +717,27 @@
             meine Einwilligung nicht versagen.«</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>bewegt sich in höchster Verwirrung auf seinem Sessel.</stage>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Die jüngste schlägt verschiedene ansehnliche Partieen aus; ihre Neigung gegen den
             Menschen nimmt zu und hilft ihr die Sorge einer ungewissen Erwartung tragen; sie
             interessiert sich für sein Glück wie für ihr eigenes, und ermuntert ihn, das erste Blatt
             seiner Wochenschrift zu geben, das unter einem vielversprechenden Titel erscheint.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>ist in der entsetzlichsten Verlegenheit.</stage>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS</speaker>
+          <speaker>Beaumarchais</speaker>
           <stage>ganz kalt.</stage>
           <p>Das Werk macht ein erstaunendes Glück; der König selbst, durch diese liebenswürdige
             Produktion ergetzt, gab dem Autor öffentliche Zeichen seiner Gnade. Man versprach ihm
-            das erste ansehnliche Amt, das sich auftun würde. Von dem Augenblick an entfernt <pb n="271"/> er alle Nebenbuhler von seiner Geliebten, indem er ganz öffentlich sich um
+            das erste ansehnliche Amt, das sich auftun würde. Von dem Augenblick an entfernt <pb
+              n="272"/> er alle Nebenbuhler von seiner Geliebten, indem er ganz öffentlich sich um
             sie bemühte. Die Heirat verzog sich nur in Erwartung der zugesagten Versorgung. –
             Endlich, nach sechs Jahren Harrens, ununterbrochener Freundschaft, Beistands und Liebe
             von seiten des Mädchens, nach sechs Jahren Ergebenheit, Dankbarkeit, Bemühungen,
@@ -726,12 +745,12 @@
             verschwindet.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>es entfährt ihm ein tiefer Seufzer, den er zu verbergen sucht, und ganz außer sich
             ist.</stage>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Die Sache hatte zu großes Aufsehn gemacht, als daß man die Entwicklung sollte
             gleichgültig angesehen haben. Ein Haus für zwei Familien war gemietet. Die ganze Stadt
             sprach davon. Alle Freunde waren aufs höchste aufgebracht und suchten Rache. Man wendete
@@ -750,14 +769,14 @@
             eine unschuldige, unglückliche Schwester zu rächen. Ich komme, bewaffnet mit der besten
             Sache und aller Entschlossenheit, einen Verräter zu entlarven, mit blutigen Zügen seine
             Seele auf sein Gesicht zu zeichnen, und der Verräter – bist du!</p>
-          <pb n="272"/>
         </sp>
+        <pb n="273"/>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Hören Sie mich, mein Herr – Ich bin – Ich habe – Ich zweifle nicht –</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Unterbrechen Sie mich nicht. Sie haben mir nichts zu sagen und viel von mir zu hören.
             Nun um einen Anfang zu machen, sein Sie so gütig, vor diesem Herrn, der expreß mit mir
             aus Frankreich gekommen ist, zu erklären: ob meine Schwester durch irgend eine
@@ -765,47 +784,47 @@
             Beschimpfung um Sie verdient habe.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Nein, mein Herr. Ihre Schwester, Donna Maria, ist ein Frauenzimmer voll Geist,
             Liebenswürdigkeit und Tugend.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Hat sie Ihnen jemals seit Ihrem Umgange eine Gelegenheit gegeben, sich über sie zu
             beklagen, oder sie geringer zu achten?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Nie! Niemals!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS</speaker>
+          <speaker>Beaumarchais</speaker>
           <stage>aufstehend.</stage>
           <p>Und warum, Ungeheuer! hattest du die Grausamkeit, das Mädchen zu Tode zu quälen? Nur
             weil dich ihr Herz zehn andern vorzog, die alle rechtschaffner und reicher waren als
             du.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Oh mein Herr! Wenn Sie wüßten, wie ich verhetzt worden bin, wie ich durch mancherlei
             Ratgeber und Umstände –</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Genug! Zu Saint George. Sie haben die Rechtfertigung meiner Schwester gehört; gehn Sie
             und breiten Sie es aus! Was ich dem Herrn weiter zu sagen habe, braucht keine
             Zeugen.</p>
           <stage>Clavigo steht auf. Saint George geht.</stage>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Bleiben Sie! Bleiben Sie! Beide setzen sich wieder. Da wir nun so weit sind, will ich
             Ihnen einen Vorschlag tun, den Sie hoffentlich billigen werden. Es ist Ihre Konvenienz
             und meine, daß Sie Marien nicht heiraten, und Sie fühlen wohl, daß ich nicht gekommen
             bin, den Komödienbruder zu machen, der den Roman entwickeln und seiner Schwester einen
             Mann schaffen will. Sie haben ein ehrliches Mädchen mit kaltem Blute beschimpft, weil
             Sie glaubten, in einem fremden Lande sei sie ohne Beistand und Rächer. So handelt ein
-            Niederträchtiger, ein <pb n="273"/> Nichtswürdiger. Und also, zuvörderst erklären Sie
+            Niederträchtiger, ein <pb n="274"/> Nichtswürdiger. Und also, zuvörderst erklären Sie
             eigenhändig, freiwillig, bei offenen Türen, in Gegenwart Ihrer Bedienten: daß Sie ein
             abscheulicher Mensch sind, der meine Schwester betrogen, verraten, sie ohne die mindeste
             Ursache erniedrigt hat; und mit dieser Erklärung geh ich nach Aranjuez, wo sich unser
@@ -815,11 +834,11 @@
             meiner Schwester sich legt, befriedigt ist und sie mir selbst Einhalt tut.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ich tue diese Erklärung nicht.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Das glaub ich, denn vielleicht tät ich sie an Ihrer Stelle ebensowenig. Aber hier ist
             das andere: Schreiben Sie nicht, so bleib ich von diesem Augenblicke bei Ihnen, ich
             verlasse Sie nicht, ich folge Ihnen überallhin, bis Sie, einer solchen Gesellschaft
@@ -833,14 +852,15 @@
             Gemälde betrachtend.</stage>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Luft! Luft! – Das hat dich überrascht, angepackt wie einen Knaben – Wo bist du,
             Clavigo? Wie willst du das enden? – Wie kannst du das enden? – Ein schrecklicher
             Zustand, in den dich deine Torheit, deine Verräterei gestürzt hat! Er greift nach dem
             Degen auf dem Tische. Ha! Kurz und gut! – Er läßt ihn liegen. – Und da wäre kein Weg,
             kein Mittel, als Tod – oder Mord, abscheulicher Mord! – Das unglückliche Mädchen ihres
             letzten Trostes, ihres einzigen Beistandes zu berauben, ihres Bruders! – Des edeln,
-            braven Menschen Blut zu sehen! – Und so den doppelten unerträglichen Fluch einer <pb n="274"/> vernichteten Familie auf dich zu laden! – O, das war die Aussicht nicht, als
+            braven Menschen Blut zu sehen! – Und so den doppelten unerträglichen Fluch einer <pb
+              n="275"/> vernichteten Familie auf dich zu laden! – O, das war die Aussicht nicht, als
             das liebenswürdige Geschöpf dich die ersten Stunden ihrer Bekanntschaft mit so viel
             Reizen anzog! Und da du sie verließest, sahst du nicht die gräßlichen Folgen deiner
             Schandtat! – Welche Seligkeit wartete dein in ihren Armen in der Freundschaft solch
@@ -849,11 +869,11 @@
             mir auf in Hoffnung! – Mein Herr!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Was beschließen Sie?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Hören Sie mich! Mein Betragen gegen Ihre Schwester ist nicht zu entschuldigen. Die
             Eitelkeit hat mich verführt. Ich fürchtete, meine Plane, meine Aussichten auf ein
             ruhmvolles Leben durch diese Heirat zugrunde zu richten. Hätte ich wissen können, daß
@@ -867,38 +887,38 @@
             Hand eine Gattin die Vergebung aller meiner Fehler zu erhalten!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Es ist zu spät! Meine Schwester liebt Sie nicht mehr, und ich verabscheue Sie.
             Schreiben Sie die so verlangte Erklärung, das ist alles, was ich von Ihnen fordere, und
             überlassen Sie mir die Sorgfalt einer ausgesuchten Rache!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ihre Hartnäckigkeit ist weder gerecht noch klug. Ich gebe Ihnen zu, daß es hier nicht
             auf mich ankommt, ob ich eine so sehr verschlimmerte Sache wieder gutmachen will. – Ob
             ich sie gutmachen kann, das hängt von dem Herzen Ihrer vortrefflichen Schwester ab, ob
-            sie einen Elenden wieder ansehn mag, der nicht verdient, das <pb n="275"/> Tageslicht zu
+            sie einen Elenden wieder ansehn mag, der nicht verdient, das <pb n="276"/> Tageslicht zu
             sehen. Allein Ihre Pflicht ist's, mein Herr, das zu prüfen und darnach sich zu betragen,
             wenn Ihr Schritt nicht einer jugendlichen unbesonnenen Hitze ähnlich sehen soll. Wenn
             Donna Maria unbeweglich ist – o ich kenne das Herz! o ihre Güte, ihre himmlische Seele
             schwebt mir ganz lebhaft vor! Wenn sie unerbittlich ist dann ist es Zeit, mein Herr.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Ich bestehe auf der Erklärung.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>nach dem Tisch zu gehend.</stage>
           <p>Und wenn ich nach dem Degen greife?</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS</speaker>
+          <speaker>Beaumarchais</speaker>
           <stage>gehend.</stage>
           <p>Gut, mein Herr! Schön, mein Herr!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>ihn zurückhaltend.</stage>
           <p>Noch ein Wort. Sie haben die gute Sache; lassen Sie mich die Klugheit für Sie haben.
             Bedenken Sie, was Sie tun! Auf beide Fälle sind wir alle unwiederbringlich verloren.
@@ -907,11 +927,11 @@
             dann – der Mörder des Clavigo würde die Pyrenäen nicht zurückmessen.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Die Erklärung, mein Herr, die Erklärung!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>So sei's denn. Ich will alles tun, um Sie von der aufrichtigen Gesinnung zu überzeugen,
             die mir Ihre Gegenwart einflößt. Ich will die Erklärung schreiben, ich will sie
             schreiben aus Ihrem Munde. Nur versprechen Sie mir, nicht eher Gebrauch davon zu machen,
@@ -920,11 +940,11 @@
             Vorwort bei meiner Geliebten eingelegt hat. So lange, mein Herr!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Ich gehe nach Aranjuez.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Gut denn, bis Sie wiederkommen, so lange bleibt die Erklärung in Ihrem Portefeuille;
             hab ich meine Vergebung nicht, so lassen Sie Ihrer Rache vollen Lauf. Dieser Vorschlag
             ist gerecht, anständig, klug, und wenn Sie nicht wollen, so sei's denn unter uns beiden
@@ -932,138 +952,138 @@
             Ihre arme Schwester.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Es steht Ihnen an, die zu bedauern, die Sie unglücklich gemacht haben.</p>
-          <pb n="276"/>
         </sp>
+        <pb n="277"/>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>sich setzend.</stage>
           <p>Sind Sie das zufrieden?</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Gut denn, ich gebe nach! Aber keinen Augenblick länger. Ich komme von Aranjuez, ich
             frage, ich höre! Und hat man Ihnen nicht vergeben, wie ich denn hoffe, wie ich's
             wünsche! – gleich auf, und mit dem Zettel in die Druckerei.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>nimmt Papier.</stage>
           <p>Wie verlangen Sie's?</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Mein Herr! in Gegenwart Ihrer Bedienten.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Wozu das?</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Befehlen Sie nur, daß sie in der anstoßenden Galerie gegenwärtig sind. Man soll nicht
             sagen, daß ich Sie gezwungen habe.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Welche Bedenklichkeiten!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Ich bin in Spanien, und habe mit Ihnen zu tun.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Nun denn! <stage>Er klingelt. Ein Bedienter.</stage> Ruft meine Leute zusammen, und
             begebt euch auf die Galerie herbei! <stage>Der Bediente geht, die übrigen kommen und
               besetzen die Galerie.</stage></p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Sie überlassen mir, die Erklärung zu schreiben.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Nein, mein Herr! Schreiben Sie, ich bitte, schreiben Sie, wie ich's Ihnen sage.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>schreibt.</stage>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Ich Unterzeichneter, Joseph Clavigo, Archivarius des Königs –</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Des Königs.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>– bekenne, daß, nachdem ich in dem Hause der Madame Guilbert freundschaftlich
             aufgenommen worden –</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Worden.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>– ich Mademoiselle von Beaumarchais, ihre Schwester, durch hundertfältig wiederholte
             Heiratsversprechungen betrogen habe. – Haben Sie's? –</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Mein Herr!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Haben Sie ein ander Wort dafür?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ich dächte –</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Betrogen habe. Was Sie getan haben, können Sie ja noch eher schreiben. – Ich habe sie
-            verlassen, ohne daß irgend ein Fehler oder Schwachheit von ihrer <pb n="277"/> Seite
+            verlassen, ohne daß irgend ein Fehler oder Schwachheit von ihrer <pb n="278"/> Seite
             einen Vorwand oder Entschuldigung dieses Meineids veranlaßt hätte.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Nun!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Im Gegenteil ist die Aufführung des Frauenzimmers immer rein, untadelig und aller
             Ehrfurcht würdig gewesen.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Würdig gewesen.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Ich bekenne, daß ich durch mein Betragen, den Leichtsinn meiner Reden, durch die
             Auslegung, der sie unterworfen waren, öffentlich dieses tugendhafte Frauenzimmer
             erniedrigt habe; weswegen ich sie um Vergebung bitte, ob ich mich gleich nicht wert
             achte, sie zu erhalten.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>hält inne.</stage>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Schreiben Sie! Schreiben Sie! – Welches Zeugnis ich mit freiem Willen und ungezwungen
             von mir gegeben habe, mit dem besondern Versprechen, daß, wenn diese Satisfaktion der
             Beleidigten nicht hinreichend sein sollte, ich bereit bin, sie auf alle andere
             erforderliche Weise zu geben. Madrid.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>steht auf, winkt den Bedienten, sich wegzubegeben, und reicht ihm das
             Papier.</stage>
           <p>Ich habe mit einem beleidigten, aber mit einem edeln Menschen zu tun. Sie halten Ihr
@@ -1074,28 +1094,28 @@
             sind Sie.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Bilden Sie sich das nicht ein!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Wenigstens sagen Sie ihr die bittere herzliche Reue, die Sie an mir gesehn haben. Das
             ist alles, alles, warum ich Sie bitte; schlagen Sie mir's nicht ab; ich müßte einen
             andern, weniger kräftigen Vorsprecher wählen, und Sie sind ihr ja eine treue Erzählung
             schuldig. Erzählen Sie ihr, wie Sie mich gefunden haben!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Gut, das kann ich, das will ich. Und so adieu.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Leben Sie wohl. <stage>Er will seine Hand nehmen, Beaumarchais hält sie
             zurück.</stage></p>
-          <pb n="278"/>
         </sp>
+        <pb n="279"/>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>allein.</stage>
           <p>So unerwartet aus einem Zustand in den andern. Man taumelt, man träumt! – Diese
             Erklärung, ich hätte sie nicht geben sollen. – Es kam so schnell, so unerwartet als ein
@@ -1103,105 +1123,105 @@
           <stage>Carlos kommt.</stage>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Was hast du für Besuch gehabt? Das ganze Haus ist in Bewegung; was gibt's?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Mariens Bruder.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Ich vermutet's. Der Hund von einem alten Bedienten, der sonst bei Guilberts war und der
             mir nun trätscht, weiß es schon seit gestern, daß man ihn erwartet habe, und trifft mich
             erst diesen Augenblick. Er war da?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ein vortrefflicher Junge.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Den wollen wir bald los sein. Ich habe den Weg über schon gesponnen! – Was hat's denn
             gegeben? Eine Ausforderung? eine Ehrenerklärung? War er fein hitzig, der Bursch?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Er verlangte eine Erklärung, daß seine Schwester mir keine Gelegenheit zur Veränderung
             gegeben.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Und du hast sie ausgestellt?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ich hielt es fürs Beste.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Gut, sehr gut! Ist sonst nichts vorgefallen?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Er drang auf einen Zweikampf oder die Erklärung.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Das letzte war das Gescheitste. Wer wird sein Leben gegen einen so romantischen Fratzen
             wagen. Und forderte er das Papier ungestüm?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Er diktierte mir's, und ich mußte die Bedienten in die Galerie rufen.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Ich versteh! Ah! nun hab ich dich, Herrchen! das bricht ihm den Hals. Heiß mich einen
             Schreiber, wenn ich den Buben nicht in zwei Tagen im Gefängnis habe, und mit dem
             nächsten Transport nach Indien.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Nein, Carlos. Die Sache steht anders, als du denkst.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Wie?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ich hoffe, durch seine Vermittlung, durch mein eifriges Bestreben, Verzeihung von der
             Unglücklichen zu erhalten.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Clavigo!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
-          <p>Ich hoffe, all das Vergangene zu tilgen,<pb n="279"/> das Zerrüttete wieder
+          <speaker>Clavigo.</speaker>
+          <p>Ich hoffe, all das Vergangene zu tilgen, <pb n="280"/> das Zerrüttete wieder
             herzustellen und so in meinen Augen und in den Augen der Welt wieder zum ehrlichen Mann
             werden.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Zum Teufel, bist du kindisch geworden? Man spürt dir doch immer an, daß du ein
             Gelehrter bist. – Dich so betören zu lassen! Siehst du nicht, daß das ein einfältig
             angelegter Plan ist, um dich ins Garn zu sprengen?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Nein, Carlos, er will die Heirat nicht; sie sind dagegen, sie will nichts von mir
             hören.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Das ist die rechte Höhe. Nein, guter Freund, nimm mir's nicht übel, ich hab wohl in
             Komödien gesehen, daß man einen Landjunker so geprellt hat.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Du beleidigst mich. Ich bitte, spare deinen Humor auf meine Hochzeit! Ich bin
             entschlossen, Marien zu heiraten. Freiwillig, aus innerm Trieb. Meine ganze Hoffnung,
             meine ganze Glückseligkeit ruht auf dem Gedanken, ihre Vergebung zu erhalten. Und dann
@@ -1211,15 +1231,15 @@
             macht. Leb wohl! ich muß hin! ich muß die Guilbert wenigstens sprechen.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Warte nur bis nach Tisch!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Keinen Augenblick.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS</speaker>
+          <speaker>Carlos</speaker>
           <stage>ihm nachsehend und eine Weile schweigend.</stage>
           <p>Da macht wieder jemand einmal einen dummen Streich. <stage>Ab.</stage></p>
         </sp>
@@ -1229,25 +1249,25 @@
         <stage>Guilberts Wohnung.</stage>
         <stage>Sophie Guilbert. Marie Beaumarchais.</stage>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Du hast ihn gesehen? Mir zittern alle Glieder! Du hast ihn gesehen? Ich war nah an
             einer Ohnmacht, als ich hörte, er käme, und du hast ihn gesehen? Nein, ich kann, ich
             werde, nein, ich kann ihn nie wieder sehn.</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Ich war außer mir, als er hereintrat; denn ach! liebt ich ihn nicht, wie du, mit der
-            vollsten, reinsten, <pb n="280"/> schwesterlichsten Liebe? Hat mich nicht seine
+            vollsten, reinsten, <pb n="281"/> schwesterlichsten Liebe? Hat mich nicht seine
             Entfernung gekränkt, gemartert? – Und nun, den Rückkehrenden, den Reuigen zu meinen
             Füßen! – Schwester! es ist so was Bezauberndes in seinem Anblick, in dem Ton seiner
             Stimme. Er –</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Nimmer, nimmermehr!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Er ist noch der alte, noch ebendas gute, sanfte, fühlbare Herz, noch ebendie Heftigkeit
             der Leidenschaft. Es ist noch ebendie Begier, geliebt zu werden, und das ängstliche,
             marternde Gefühl, wenn ihm Neigung versagt wird. Alles! alles! Und von dir spricht er,
@@ -1257,11 +1277,11 @@
             neue Lebhaftigkeit zu geben.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Du redst ihm das Wort?</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Nein, Schwester, auch versprach ich's ihm nicht. Nur, meine Beste, seh ich die Sachen,
             wie sie sind. Du und der Bruder, ihr seht sie in einem allzu romantischen Lichte. Du
             hast das mit gar manchem guten Kinde gemein, daß dein Liebhaber treulos ward und dich
@@ -1270,11 +1290,11 @@
             würde.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Mein Herz würde reißen!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Ich glaube dir. Der erste Anblick muß auf dich eine empfindliche Wirkung machen – und
             dann, meine Beste, ich bitte dich, halt diese Bangigkeit, diese Verlegenheit, die dir
             alle Sinne zu übermeistern scheint, nicht für eine Wirkung des Hasses, für keinen
@@ -1282,33 +1302,33 @@
             dich nicht, ihn wiederzusehen, weil du seine Rückkehr so sehnlich wünschest.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Sei barmherzig!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Du sollst glücklich werden. Fühlt ich, daß du ihn verachtetest, daß er dir gleichgültig
             wäre, so wollt ich kein Wort weiter reden, so sollt er mein Angesicht nicht mehr sehen.
-            Doch so, meine Liebe – Du wirst mir danken, daß <pb n="281"/> ich dir geholfen habe,
+            Doch so, meine Liebe – Du wirst mir danken, daß <pb n="282"/> ich dir geholfen habe,
             diese ängstliche Unbestimmtheit zu überwinden, die ein Zeichen der innigsten Liebe
             ist.</p>
           <stage>Die Vorigen. Guilbert. Buenco.</stage>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Kommen Sie, Buenco! Guilbert, kommen Sie! Helft mir dieser Kleinen Mut einsprechen,
             Entschlossenheit, jetzt, da es gilt.</p>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Ich wollte, daß ich sagen dürfte: Nehmt ihn nicht wieder an!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Buenco!</p>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Mein Herz wirft sich mir im Leib herum bei dem Gedanken: Er soll diesen Engel noch
             besitzen, den er so schändlich beleidigt, den er an das Grab geschleppt hat. Und
             besitzen? – warum? – wodurch macht er das alles wieder gut, was er verbrochen hat? – Daß
@@ -1322,60 +1342,60 @@
             feig, als er nichtswürdig ist!</p>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT.</speaker>
+          <speaker>Guilbert.</speaker>
           <p>Ihr redet wie ein Spanier, und als wenn Ihr die Spanier nicht kenntet. Wir schweben
             diesen Augenblick in einer größern Gefahr, als ihr alle nicht seht.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Bester Guilbert!</p>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT.</speaker>
+          <speaker>Guilbert.</speaker>
           <p>Ich ehre die unternehmende Seele unsers Bruders, ich habe im stillen seinem Heldengange
             zugesehen und wünsche, daß alles gut ausschlagen möge, wünsche, daß Marie sich
             entschließen könnte, Clavigo ihre Hand zu geben, denn – lächelnd ihr Herz hat er doch.
             –</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Ihr seid grausam.</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Hör ihn, ich bitte dich, hör ihn!</p>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT.</speaker>
+          <speaker>Guilbert.</speaker>
           <p>Dein Bruder hat ihm eine Erklärung abgedrungen, die dich vor den Augen aller Welt
             rechtfertigen soll, und die wird uns verderben.</p>
-          <pb n="282"/>
         </sp>
+        <pb n="283"/>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Wie?</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>O Gott!</p>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT.</speaker>
+          <speaker>Guilbert.</speaker>
           <p>Er stellte sie aus in der Hoffnung, dich zu bewegen. Bewegt er dich nicht, so muß er
             alles anwenden, um das Papier zu vernichten; er kann's, er wird's. Dein Bruder will es
             gleich nach seiner Rückkehr von Aranjuez drucken und ausstreuen. Ich fürchte, wenn du
             beharrest, er wird nicht zurückkehren.</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Lieber Guilbert!</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Ich vergehe!</p>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT.</speaker>
+          <speaker>Guilbert.</speaker>
           <p>Clavigo kann das Papier nicht auskommen lassen. Verwirfst du seinen Antrag und er ist
             ein Mann von Ehre, so geht er deinem Bruder entgegen, und einer von beiden bleibt; und
             dein Bruder sterbe oder siege, er ist verloren. Ein Fremder in Spanien! Mörder dieses
@@ -1383,51 +1403,51 @@
             sich und die Seinigen zugrunde zu richten –</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Rate mir, Sophie, hilf mir!</p>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT.</speaker>
+          <speaker>Guilbert.</speaker>
           <p>Und, Buenco, widerlegen Sie mich!</p>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Er wagt's nicht, er fürchtet für sein Leben; sonst hätt er gar nicht geschrieben, sonst
             böt er Marien seine Hand nicht an.</p>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT.</speaker>
+          <speaker>Guilbert.</speaker>
           <p>Desto schlimmer; so findet er hundert, die ihm ihren Arm leihen, hundert, die unserm
             Bruder tückisch auf dem Wege das Leben rauben. Ha! Buenco, bist du so jung? Ein Hofmann
             sollte keine Meuchelmörder im Solde haben?</p>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Der König ist groß und gut.</p>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT.</speaker>
+          <speaker>Guilbert.</speaker>
           <p>Auf denn! Durch alle die Mauern, die ihn umschließen, die Wachen, das Zeremoniell und
             alle das, womit die Hofschranzen ihn von seinem Volke geschieden haben, dringen Sie
             durch und retten Sie uns! – Wer kommt?</p>
           <stage>Clavigo kommt.</stage>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ich muß! Ich muß!</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE</speaker>
+          <speaker>Marie</speaker>
           <stage>tut einen Schrei und fällt Sophien in die Arme.</stage>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Grausamer! in welchen Zustand versetzen Sie uns!</p>
           <stage>Guilbert und Buenco treten zu ihr.</stage>
-          <pb n="283"/>
         </sp>
+        <pb n="284"/>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ja, sie ist's! Sie ist's! Und ich bin Clavigo. – Hören Sie mich, Beste, wenn Sie mich
             nicht ansehen wollen! Zu der Zeit, da mich Guilbert mit Freundlichkeit in sein Haus
             aufnahm, da ich ein armer unbedeutender Junge war, da ich in meinem Herzen eine
@@ -1453,18 +1473,18 @@
             beklagen, daß es uns gegangen ist wie allen andern, und wollen wir uns strafbar machen,
             indem wir diese Gelegenheit von uns stoßen, das Vergangene herzustellen, eine zerrüttete
             Familie wieder aufzurichten, die heldenmütige Tat eines edeln Bruders zu belohnen und
-            unser <pb n="284"/> eigen Glück auf ewig zu befestigen? – Meine Freunde um die ich's
+            unser <pb n="285"/> eigen Glück auf ewig zu befestigen? – Meine Freunde um die ich's
             nicht verdient habe, meine Freunde, die es sein müssen, weil Sie Freunde der Tugend
             sind, zu der ich rückkehre, verbinden Sie Ihr Flehen mit dem meinigen! Marie! Er wirft
             sich nieder. Marie! Kennst du meine Stimme nicht mehr? Vernimmst du nicht mehr den Ton
             meines Herzens? Marie! Marie!</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>O Clavigo!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>springt auf und faßt ihre Hand mit entzückten Küssen.</stage>
           <p>Sie vergibt mir, sie liebt mich! <stage>Er umarmt den Guilbert, den Buenco.</stage> Sie
             liebt mich noch! O Marie, mein Herz sagte mir's! Ich hätte mich zu deinen Füßen werfen,
@@ -1476,110 +1496,110 @@
           <stage>Beaumarchais tritt auf.</stage>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Ha!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>ihm entgegen fliegend.</stage>
           <p>Mein Bruder!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Du vergibst ihm?</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Laßt, laßt mich! Meine Sinne vergehn. <stage>Man führt sie weg.</stage></p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Sie hat ihm vergeben?</p>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Es sieht so aus.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Du verdienst dein Glück nicht.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Glaube, daß ich's fühle!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE</speaker>
+          <speaker>Sophie</speaker>
           <stage>kommt zurück.</stage>
           <p>Sie vergibt ihm. Ein Strom von Tränen brach aus ihren Augen. »Er soll sich entfernen«,
             rief sie schluchzend, »daß ich mich erhole! Ich vergeb ihm. Ach Schwester!« rief sie und
             fiel mir um den Hals, »woher weiß er, daß ich ihn so liebe?«</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>ihr die Hand küssend.</stage>
           <p>Ich bin der glücklichste Mensch unter der Sonne. Mein Bruder!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS</speaker>
+          <speaker>Beaumarchais</speaker>
           <stage>umarmt ihn.</stage>
           <p>Von Herzen denn. Ob ich Euch schon sagen muß: noch kann ich Euch nicht lieben. Und
-            somit seid Ihr der Unsrige, und vergessen sei alles! Das <pb n="285"/> Papier, das Ihr
+            somit seid Ihr der Unsrige, und vergessen sei alles! Das <pb n="286"/> Papier, das Ihr
             mir gabt, hier ist's. <stage>Er nimmt's aus der Brieftasche, zerreißt es und gibt's ihm
               hin.</stage></p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ich bin der Eurige, ewig der Eurige.</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Ich bitte, entfernt Euch, daß sie Eure Stimme nicht hört, daß sie sich beruhigt.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>sie rings umarmend.</stage>
           <p>Lebt wohl! Lebt wohl! – Tausend Küsse dem Engel! <stage>Ab.</stage></p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Es mag denn gut sein, ob ich gleich wünschte, es wäre anders. <stage>Lächelnd.</stage>
             Es ist doch ein gutherziges Geschöpf, so ein Mädchen – Und, meine Freunde, auch muß
             ich's sagen: es war ganz der Gedanke, der Wunsch unsers Gesandten, daß ihm Marie
             vergeben und daß eine glückliche Heirat diese verdrießliche Geschichte endigen möge.</p>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT.</speaker>
+          <speaker>Guilbert.</speaker>
           <p>Mir ist auch wieder ganz wohl.</p>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Er ist euer Schwager, und so adieu! Ihr seht mich in eurem Hause nicht wieder.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Mein Herr!</p>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT.</speaker>
+          <speaker>Guilbert.</speaker>
           <p>Buenco!</p>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Ich haß ihn nun einmal bis ans Jüngste Gericht. Und gebt acht, mit was für einem
             Menschen ihr zu tun habt! <stage>Ab.</stage></p>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT.</speaker>
+          <speaker>Guilbert.</speaker>
           <p>Er ist ein melancholischer Unglücksvogel. Und mit der Zeit läßt er sich doch wieder
             bereden, wenn er sieht, es geht alles gut.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Doch war's übereilt, daß ich ihm das Papier zurückgab.</p>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT.</speaker>
+          <speaker>Guilbert.</speaker>
           <p>Laßt! Laßt! Keine Grillen! <stage>Ab.</stage></p>
         </sp>
       </div>
@@ -1587,95 +1607,95 @@
         <head>Vierter Akt</head>
         <stage>Clavigos Wohnung.</stage>
         <sp who="#carlos">
-          <speaker>CARLOS</speaker>
+          <speaker>Carlos</speaker>
           <stage>allein.</stage>
           <p>Es ist löblich, daß man dem Menschen, der durch Verschwendung oder andere Torheiten
             zeigt, daß sein Verstand sich verschoben hat, von Amts wegen Vormünder setzt. Tut das
             die Obrigkeit, die sich doch sonst nicht viel um uns bekümmert, wie sollten wir's nicht
-            an einem <pb n="286"/> Freunde tun? Clavigo, du bist in übeln Umständen! Noch hoff' ich!
+            an einem <pb n="287"/> Freunde tun? Clavigo, du bist in übeln Umständen! Noch hoff' ich!
             Und wenn du nur noch halbweg lenksam bist wie sonst, so ist's eben noch Zeit, dich vor
             einer Torheit zu bewahren, die bei deinem lebhaften, empfindlichen Charakter das Elend
             deines Lebens machen und dich vor der Zeit ins Grab bringen muß. Er kommt.</p>
           <stage>Clavigo nachdenkend.</stage>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Guten Tag, Carlos.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Ein schwermütiges, gepreßtes: Guten Tag! Kommst du in dem Humor von deiner Braut?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Es ist ein Engel! Es sind vortreffliche Menschen!</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Ihr werdet doch mit der Hochzeit nicht so sehr eilen, daß man sich noch ein Kleid dazu
             kann sticken lassen?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Scherz oder Ernst, bei unserer Hochzeit werden keine gestickten Kleider paradieren.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Ich glaub's wohl.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Das Vergnügen an uns selbst, die freundschaftliche Harmonie sollen der Prunk dieser
             Feierlichkeit sein.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Ihr werdet eine stille, kleine Hochzeit machen?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Wie Menschen, die fühlen, daß ihr Glück ganz in ihnen selbst beruht.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>In den Umständen ist es recht gut.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Umständen! Was meinst du mit den Umständen?</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Wie die Sache nun steht und liegt und sich verhält.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Höre, Carlos, ich kann den Ton des Rückhalts an Freunden nicht ausstehen. Ich weiß, du
             bist nicht für diese Heirat; demungeachtet, wenn du etwas dagegen zu sagen hast, sagen
             willst: so sag's geradezu! Wie steht denn die Sache? wie verhält sie sich?</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Es kommen einem im Leben mehr unerwartete, wunderbare Dinge vor, und es wäre schlimm,
             wenn alles im Gleise ginge. Man hätte nichts, sich zu verwundern, nichts, die Köpfe
             zusammenzustoßen, nichts in Gesellschaft zu verschneiden.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Aufsehn wird's machen.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Des Clavigo Hochzeit! das versteht sich. Wie manches Mädchen in Madrid harrt auf dich,
             hofft auf dich, und wenn du ihnen nun diesen Streich spielst?</p>
-          <pb n="287"/>
         </sp>
+        <pb n="288"/>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Das ist nun nicht anders.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Sonderbar ist's. Ich habe wenig Männer gekannt, die so großen und allgemeinen Eindruck
             auf die Weiber machten als du. Unter allen Ständen gibt's gute Kinder, die sich mit
             Planen und Aussichten beschäftigen, dich habhaft zu werden. Die eine bringt ihre
@@ -1685,58 +1705,58 @@
             was zuziehen.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Du spottest.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Wenn ich nicht schon Vorschläge, Anträge in Händen gehabt hätte, geschrieben von eignen
             zärtlichen, kritzlichen Pfötchen, so unorthographisch, als ein originaler Liebesbrief
             eines Mädchens nur sein kann. Wie manche hübsche Duenna ist mir bei der Gelegenheit
             unter die Finger gekommen!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Und du sagtest mir von allem dem nichts?</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Weil ich dich mit leeren Grillen nicht beschäftigen wollte, und niemals raten konnte,
             daß du mit einer einzigen Ernst gemacht hättest. O Clavigo, ich habe dein Schicksal im
             Herzen getragen wie mein eigenes! Ich habe keinen Freund als dich; die Menschen sind mir
             alle unerträglich, und du fängst auch an, mir unerträglich zu werden.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ich bitte dich, sei ruhig!</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Brenn einem das Haus ab, daran er zehen Jahre gebauet hat, und schick ihm einen
             Beichtvater, der ihm die christliche Geduld empfiehlt! – Man soll sich für niemand
             interessieren als für sich selbst; die Menschen sind nicht so wert – –</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Kommen deine feindseligen Grillen wieder?</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Wenn ich aufs neue ganz drein versinke, wer ist schuld dran als du? Ich sagte zu mir:
             Was soll ihm jetzt die vorteilhafteste Heirat? ihm, der es für einen gewöhnlichen
             Menschen weit genug gebracht hätte; aber mit seinem Geist, mit seinen Gaben ist es
             unverantwortlich – ist es unmöglich, daß er bleibt, was er ist. – Ich machte meine
-            Projekte. Es gibt so wenig Menschen, die so unternehmend <pb n="288"/> und biegsam, so
+            Projekte. Es gibt so wenig Menschen, die so unternehmend <pb n="289"/> und biegsam, so
             geistvoll und fleißig zugleich sind. Er ist in alle Fächer gerecht; als Archivarius kann
             er sich schnell die wichtigsten Kennt nisse erwerben, er wird sich notwendig machen, und
             laßt eine Veränderung vorgehn, so ist er Minister.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ich gesteh dir, das waren oft auch meine Träume!</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Träume! So gewiß ich den Turm erreiche und erklettere, wenn ich darauf losgehe, mit dem
             festen Vorsatze, nicht abzulassen, bis ich ihn erstiegen habe, so gewiß hättest du auch
             alle Schwierigkeiten überwunden. Und hernach wäre mir für das übrige nicht bang gewesen.
@@ -1750,13 +1770,13 @@
             nur um an der Herrlichkeit des zweiten Königs teilnehmen zu dürfen – und nun –</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Du bist ungerecht, du setzest meinen gegenwärtigen Zustand zu tief herab. Und glaubst
             du denn, daß ich mich nicht weiter treiben, nicht auch noch mächtigere Schritte tun
             kann?</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Lieber Freund, brich du einer Pflanze das Herz aus, sie mag hernach treiben und
             treiben, unzählige Nebenschößlinge – es gibt vielleicht einen starken Busch, aber der
             stolze königliche Wuchs des ersten Schusses ist dahin. Und denke nur nicht, daß man
@@ -1765,53 +1785,53 @@
             Gedanken eingab, sie zu verlassen? Soll ich dir sie an den Fingern herzählen?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Der Gedanke hat mich auch schon gepeinigt, daß so wenige diesen Schritt billigen
             werden.</p>
-          <pb n="289"/>
         </sp>
+        <pb n="290"/>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Keiner! Und deine hohen Freunde sollten nicht aufgebracht sein, daß du, ohne sie zu
             fragen, ohne ihren Rat, dich so geradezu hingegeben hast, wie ein unbesonnener Knabe auf
             dem Markte sein Geld gegen wurmstichige Nüsse wegwirft?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Das ist unartig, Carlos, und übertrieben.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Nicht um einen Zug. Denn daß einer aus Leidenschaft einen seltsamen Streich macht, das
             laß ich gelten. Ein Kammermädchen zu heiraten, weil sie schön ist wie ein Engel! gut,
             der Mensch wird getadelt, und doch beneiden ihn die Leute.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Die Leute, immer die Leute.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Du weißt, ich frage nicht ängstlich nach andrer Beifall, doch das ist ewig wahr: wer
             nichts für andere tut, tut nichts für sich; und wenn die Menschen dich nicht bewundern
             oder beneiden, bist du auch nicht glücklich.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Die Welt urteilt nach dem Scheine. O! wer Mariens Herz besitzt, ist zu beneiden!</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Was die Sache ist, scheint sie auch. Aber freilich dacht ich, daß das verborgene
             Qualitäten sein müssen, die dein Glück beneidenswert machen; denn was man mit seinen
             Augen sieht, mit seinem Menschenverstande begreifen kann –</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Du willst mich zugrunde richten.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Wie ist das zugegangen? wird man in der Stadt fragen. Wie ist das zugegangen? fragt man
             bei Hofe. Um Gottes willen, wie ist das zugegangen? Sie ist arm, ohne Stand; hätte
             Clavigo nicht einmal ein Abenteuer mit ihr gehabt, man wüßte gar nicht, daß sie in der
@@ -1820,16 +1840,16 @@
             reizend, ausnehmend schön. – Da ist's zu begreifen, sagt ein anderer –</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>wird verwirrt, ihm entfahrt ein tiefer Seufzer.</stage>
           <p>Ach!</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Schön? O! sagt die eine, es geht an! Ich hab sie in sechs Jahren nicht gesehn, da kann
             sich schon was verändern, sagt eine andere. Man muß doch achtgeben, er wird sie bald
             produzieren, sagt die dritte. Man fragt, man guckt, man geht zu Gefallen, man wartet,
-            man ist ungeduldig, <pb n="290"/> erinnert sich immer des stolzen Clavigo, der sich nie
+            man ist ungeduldig, <pb n="291"/> erinnert sich immer des stolzen Clavigo, der sich nie
             öffentlich sehen ließ, ohne eine stattliche, herrliche, hochäugige Spanierin im Triumph
             aufzuführen, deren volle Brust, ihre glühenden Wangen, ihre heißen Augen die Welt
             ringsumher zu fragen schienen: bin ich nicht meines Begleiters wert? und die in ihrem
@@ -1842,14 +1862,14 @@
             nicht begreifen können –</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>ihn bei der Hand fassend.</stage>
           <p>Mein Freund, mein Bruder, ich bin in einer schrecklichen Lage. Ich sage dir, ich
             gestehe dir: Ich erschrak, als ich Marien wieder sah! Wie entstellt sie ist, – wie
             bleich, abgezehrt! O das ist meine Schuld, meiner Verräterei! –</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Possen! Grillen! Sie hatte die Schwindsucht, da dein Roman noch sehr im Gange war. Ich
             sagte dir's tausendmal, und – aber ihr Liebhaber habt keine Augen, keine Nasen. Clavigo,
             es ist schändlich! So alles, alles zu vergessen, eine kranke Frau, die dir die Pest
@@ -1859,25 +1879,25 @@
             mir!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Carlos, was soll ich dir sagen! Als ich sie wieder sah: im ersten Taumel flog ihr mein
             Herz entgegen – und ach! – da der vorüber war – Mitleiden – innige, tiefe Erbarmung
             flößte sie mir ein; aber Liebe – sieh! es war, als wenn mir in der Fülle der Freuden die
             kalte Hand des Todes übern Nacken führe. Ich strebte, munter zu sein, wieder vor denen
             Menschen, die mich umgaben, den Glücklichen zu spielen – es war alles vorbei, alles so
-            steif, so ängstlich. <pb n="291"/> Wären sie weniger außer sich gewesen, sie müßten's
+            steif, so ängstlich. <pb n="292"/> Wären sie weniger außer sich gewesen, sie müßten's
             gemerkt haben.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Hölle! Tod und Teufel! und du willst sie heiraten? –</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>steht ganz in sich selbst versunken, ohne zu antworten.</stage>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Du bist hin! verloren auf ewig! Leb wohl, Bruder, und laß mich alles vergessen, laß
             mich mein einsames Leben noch so ausknirschen über das Schicksal deiner Verblendung! Ha!
             das alles! sich in den Augen der Welt verächtlich zu machen, und nicht einmal dadurch
@@ -1886,11 +1906,11 @@
             abscheulich macht!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Carlos! Carlos!</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Wärst du nie gestiegen, um nie zu fallen! Mit welchen Augen werden sie das ansehn! Da
             ist der Bruder, werden sie sagen! das muß ein braver Kerl sein, der hat ihn ins
             Bockshorn gejagt, er hat sich nicht getraut, ihm die Spitze zu bieten. Ha! werden unsre
@@ -1900,27 +1920,27 @@
             sein.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>fällt in dem Ausbruch der heftigsten Beängstigung, mit einem Strom von Tränen, dem
             Carlos um den Hals.</stage>
           <p>Rette mich! Freund! mein Bester, rette mich! Rette mich von dem gedoppelten Meineid,
             von der unübersehlichen Schande, von mir selbst – ich vergehe!</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Armer! Elender! Ich hoffte, diese jugendlichen so Rasereien, diese stürmenden Tränen,
             diese versinkende Wehmut sollte vorüber sein, ich hoffe, dich als Mann nicht mehr
             erschüttert, nicht mehr in dem beklemmenden Jammer zu sehen, den du ehemals so oft in
             meinen Busen ausgeweint hast. Ermanne dich, Clavigo, ermanne dich!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Laß mich weinen! <stage>Er wirft sich in einen Sessel.</stage></p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Weh dir, daß du eine Bahn betreten hast, die du nicht endigen wirst! Mit deinem Herzen,
-            deinen Gesinnungen, die einen ruhigen Bürger glücklich machen würden, <pb n="292"/>
+            deinen Gesinnungen, die einen ruhigen Bürger glücklich machen würden, <pb n="293"/>
             mußtest du den unseligen Hang nach Größe verbinden! Und was ist Größe, Clavigo? Sich in
             Rang und Ansehn über andre zu erheben? Glaub es nicht! Wenn dein Herz nicht größer ist
             als andrer Herzen, wenn du nicht imstande bist, dich gelassen über Verhältnisse
@@ -1929,12 +1949,12 @@
             dich, beruhige dich!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>richtet sich auf, sieht Carlos an und reicht ihm die Hand, die Carlos mit
             Heftigkeit anfaßt.</stage>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Auf! auf, mein Freund und entschließe dich. Sieh, ich will alles beiseitesetzen, ich
             will sagen: Hier liegen zwei Vorschläge auf gleichen Schalen. Entweder du heiratest
             Marien und findest dein Glück in einem stillen bürgerlichen Leben, in den ruhigen
@@ -1954,13 +1974,13 @@
             will ich sagen, du bist ein ganzer Kerl –</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Einen Funken, Carlos, deiner Stärke, deines Muts.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Er schläft in dir, und ich will blasen, bis er in Flammen schlägt. Sieh auf der andern
-            Seite das Glück und die <pb n="293"/> Größe, die dich erwarten. Ich will dir diese
+            Seite das Glück und die <pb n="294"/> Größe, die dich erwarten. Ich will dir diese
             Aussichten nicht mit dichterischen bunten Farben vormalen; stelle sie dir selbst in der
             Lebhaftigkeit dar, wie sie in voller Klarheit vor deiner Seele standen, ehe der
             französische Strudelkopf dir die Sinne verwirrte. Aber auch da, Clavigo, sei ein ganzer
@@ -1974,11 +1994,11 @@
             warum sollten wir's nicht tun, um ihnen ähnlich zu werden?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Carlos, ich bin ein kleiner Mensch.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Wir sind nicht klein, wenn Umstände uns zu schaffen machen, nur, wenn sie uns
             überwältigen. Noch einen Atemzug, und du bist wieder bei dir selber. Wirf die Reste
             einer erbärmlichen Leidenschaft von dir, die dich in jetzigen Tagen ebensowenig kleiden
@@ -1990,32 +2010,32 @@
             dreißig Jahren das Abc gelehrt hat? Nun, Clavigo?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Das ist all gut; im ganzen magst du recht haben, es mag also sein; nur, wie helfen wir
             uns aus der Verwirrung, in der wir stecken? Da gib Rat, da schaff Hülfe, und dann
             rede!</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Gut! Du willst also?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Mach mich können, so will ich. Ich habe kein Nachdenken; hab's für mich!</p>
-          <pb n="294"/>
         </sp>
+        <pb n="295"/>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Also denn. Zuerst gehst du, den Herrn an einen dritten Ort zu bescheiden, und alsdann
             forderst du mit der Klinge die Erklärung zurück, die du gezwungen und unbesonnen
             ausgestellt hast.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ich habe sie schon, er zerriß und gab mir sie.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Trefflich! Trefflich! Schon den Schritt getan – und du hast mich so lange reden lassen?
             – Also kürzer! Du schreibst ihm ganz gelassen: Du fändest nicht für gut, seine Schwester
             zu heiraten; die Ursache könnte er erfahren, wenn er sich heute nacht, von einem Freunde
@@ -2024,11 +2044,11 @@
             Teufel zugehen –</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>geht nach dem Tische.</stage>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Höre! Ein Wort! Wenn ich's so recht bedenke, ist das ein einfältiger Vorschlag. Wer
             sind wir, um uns gegen einen aufgebrachten Abenteurer zu wagen? Und die Aufführung des
             Menschen, sein Stand verdient nicht, daß wir ihn für unsersgleichen achten. Also hör
@@ -2039,35 +2059,35 @@
             erfahren, was das heißt, einen Spanier mitten in der bürgerlichen Ruhe zu befehden.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Du hast recht.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Wenn wir nun aber unterdessen, bis der Prozeß eingeleitet ist, bis dahin uns der Herr
             noch allerlei Streiche machen könnte, das Gewisse spielten, und ihn kurz und gut beim
             Kopfe nähmen?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ich verstehe, und kenne dich, daß du Mann bist, es auszuführen.</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Nun auch! wenn ich, der ich schon fünfundzwanzig Jahre mitlaufe und dabei war, da den
             Ersten unter den Menschen die Angsttropfen auf dem Gesichte standen – wenn ich so ein
-            Possenspiel nicht entwickeln wollte! Und somit <pb n="295"/> lässest du mir freie Hand;
+            Possenspiel nicht entwickeln wollte! Und somit <pb n="296"/> lässest du mir freie Hand;
             du brauchst nichts zu tun, nichts zu schreiben. Wer den Bruder einstecken läßt, gibt
             pantomimisch zu verstehen, daß er die Schwester nicht mag.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Nein, Carlos: es gehe, wie es wolle, das kann, das wird ich nicht leiden! Beaumarchais
             ist ein würdiger Mensch, und er soll in keinem schimpflichen Gefängnisse verschmachten
             um seiner gerechten Sache willen. Einen andern Vorschlag, Carlos, einen andern!</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Pah! pah! Kindereien! Wir wollen ihn nicht fressen, er soll wohl aufgehoben und
             versorgt werden, und so lang kann's auch nicht währen. Denn siehe, wenn er spürt, daß es
             Ernst ist, kriecht sein theatralischer Eifer gewiß zum Kreuz, er kehrt bedutzt nach
@@ -2076,11 +2096,11 @@
             war.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>So sei's denn! Nur verfahrt gut mit ihm!</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Sei unbesorgt! – Noch eine Vorsicht! Man kann nicht wissen, wie's verschwätzt wird, wie
             er Wind kriegt, und er überläuft dich, und alles geht zugrunde. Drum begib dich aus
             deinem Hause, daß auch kein Bedienter weiß, wohin. Laß nur das Nötigste zusammenpacken.
@@ -2089,291 +2109,291 @@
             Adieu.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Leb wohl!</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Frisch! Frisch! Wenn's vorbei ist, Bruder, wollen wir uns laben.</p>
           <stage>Guilberts Wohnung.</stage>
           <stage>Sophie Guilbert. Marie Beaumarchais, mit Arbeit.</stage>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>So ungestüm ist Buenco fort?</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Das war natürlich. Er liebt dich, und wie konnte er den Anblick des Menschen ertragen,
             den er doppelt hassen muß?</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Er ist der beste, tugendhafteste Bürger, den ich je gekannt habe. Ihr die Arbeit
             zeigend. Mich dünkt, ich mach es so? Ich ziehe das hier ein, und das Ende steck ich
             hinauf. Es wird gut stehn.</p>
-          <pb n="296"/>
         </sp>
+        <pb n="297"/>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Recht gut. Und ich will Pailleband zu dem Häubchen nehmen! es kleid't mich keins
             besser. Du lächelst?</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Ich lache über mich selbst. Wir Mädchen sind doch eine wunderliche Nation: kaum heben
             wir den Kopf nur ein wenig wieder, so ist gleich Putz und Band, was uns beschäftigt.</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Das kannst du dir nicht nachsagen; seit dem Augenblick, da Clavigo dich verließ, war
             nichts imstande, dir eine Freude zu machen.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE</speaker>
+          <speaker>Marie</speaker>
           <stage>fährt zusammen und sieht nach der Tür.</stage>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Was hast du?</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE</speaker>
+          <speaker>Marie</speaker>
           <stage>beklemmt.</stage>
           <p>Ich glaubte, es käme jemand! Mein armes Herz! O, es wird mich noch umbringen. Fühl, wie
             es schlägt, von dem leeren Schrecken!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Sei ruhig. Du siehst blaß; ich bitte dich, meine Liebe!</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE</speaker>
+          <speaker>Marie</speaker>
           <stage>auf die Brust deutend.</stage>
           <p>Es drückt mich hier so. – Es sticht mich so. – Es wird mich umbringen.</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Schone dich!</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Ich bin ein närrisches, unglückliches Mädchen. Schmerz und Freude haben mit all ihrer
             Gewalt mein armes Leben untergraben. Ich sage dir, es ist nur halbe Freude, daß ich ihn
             wiederhabe. Ich werde das Glück wenig genießen, das mich in seinen Armen erwartet;
             vielleicht gar nicht.</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Schwester, meine liebe Einzige! Du nagst mit solchen Grillen an dir selber.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Warum soll ich mich betrügen?</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Du bist jung und glücklich und kannst alles hoffen.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Hoffnung! O der süße einzige Balsam des Lebens bezaubert oft meine Seele. Mutige
             jugendliche Träume schweben vor mir und begleiten die geliebte Gestalt des
             Unvergleichlichen, der nun wieder der Meine wird. O Sophie, wie reizend er ist! Seit ich
             ihn nicht sah, hat er – ich weiß nicht, wie ich's ausdrücken soll – es haben sich alle
             großen Eigenschaften, die ehemals in seiner Bescheidenheit verborgen lagen, entwickelt.
             Er ist ein Mann worden, und muß mit diesem reinen Gefühle seiner selbst, mit dem er
-            auftritt, das so ganz ohne Stolz, ohne Eitelkeit ist, <pb n="297"/> er muß alle Herzen
+            auftritt, das so ganz ohne Stolz, ohne Eitelkeit ist, <pb n="298"/> er muß alle Herzen
             wegreißen. – Und er soll der Meinige werden? – Nein, Schwester, ich war seiner nicht
             wert – Und jetzt bin ich's viel weniger!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Nimm ihn nur und sei glücklich! – Ich höre deinen Bruder!</p>
           <stage>Beaumarchais kommt.</stage>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Wo ist Guilbert?</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Er ist schon eine Weile weg; lang kann er nicht mehr ausbleiben.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Was hast du, Bruder? – Aufspringend und ihm um den Hals fallend. Lieber Bruder, was
             hast du?</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Nichts! Laß mich, meine Marie!</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Wenn ich deine Marie bin, so sag mir, was du auf dem Herzen hast!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Laß ihn! Die Männer machen oft Gesichter, ohne just was auf dem Herzen zu haben.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Nein, nein. Ich sehe dein Angesicht nur wenige Zeit; aber schon drückt es mir alle
             deine Empfindungen aus, ich lese jedes Gefühl dieser unverstellten, unverdorbenen Seele
             auf deiner Stirne. Du hast etwas, das dich stutzig macht. Rede, was ist's?</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Es ist nichts, meine Lieben. Ich hoffe, im Grunde ist's nichts. Clavigo –</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Wie?</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Ich war bei Clavigo. Er ist nicht zu Hause.</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Und das verwirrt dich?</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Sein Pförtner sagt, er sei verreist, er wisse nicht, wohin; es wisse niemand, wie
             lange. Wenn er sich verleugnen ließe! Wenn er wirklich verreist wäre! Wozu das? Warum
             das?</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Wir wollen's abwarten.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Deine Zunge lügt. Ha! Die Blässe deiner Wangen, das Zittern deiner Glieder, alles
             spricht und zeugt, daß du das nicht abwarten kannst. Liebe Schwester! Er faßt sie in
             seine Arme. An diesem klopfenden, ängstlich bebenden Herzen schwör ich dir. Höre mich,
             Gott, der du gerecht bist! Höret mich an, alle seine Heiligen! Du sollst gerächt werden,
             wenn er – die Sinne vergehn mir über dem Gedanken – wenn er rückfiele, wenn er doppeltes
-            gräßliches <pb n="298"/> Meineids sich schuldig machte, unsers Elends spottete – Nein,
+            gräßliches <pb n="299"/> Meineids sich schuldig machte, unsers Elends spottete – Nein,
             es ist, es ist nicht möglich, nicht möglich – Du sollst gerächt werden!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Alles zu früh, zu voreilig. Schone ihrer, ich bitte dich, mein Bruder!</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE</speaker>
+          <speaker>Marie</speaker>
           <stage>setzt sich.</stage>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Was hast du? du wirst ohnmächtig.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Nein, nein. Du bist gleich so besorgt.</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE</speaker>
+          <speaker>Sophie</speaker>
           <stage>reicht ihr Wasser.</stage>
           <p>Nimm das Glas!</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Laß doch! wozu soll's? – Nun meinetwegen, gib her.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Wo ist Guilbert? Wo ist Buenco? Schick nach ihnen, ich bitte dich. <stage>Sophie
               ab.</stage> Wie ist dir, Marie?</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Gut, ganz gut! Denkst du denn, Bruder –?</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Was, meine Liebe?</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Ach!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Der Atem wird dir schwer?</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Das unbändige Schlagen meines Herzens versetzt mir die Luft.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Habt ihr denn kein Mittel? Brauchst du nichts Niederschlagendes?</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Ich weiß ein Mittel, und darum bitt ich Gott schon lange.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Du sollst's haben, und ich hoffe, von meiner Hand.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Schon gut.</p>
           <stage>Sophie kommt.</stage>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Soeben gibt ein Kurier diesen Brief ab; er kommt von Aranjuez.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Das ist das Siegel und die Hand unsers Gesandten.</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Ich hieß ihn absteigen und einige Erfrischungen zu sich nehmen; er wollte nicht, weil
             er noch mehr Depeschen habe.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Willst du doch, Liebe, das Mädchen nach dem Arzte schicken?</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Fehlt dir was? Heiliger Gott! was fehlt dir?</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Du wirst mich ängstigen, daß ich zuletzt kaum traue, ein Glas Wasser zu begehren –
             Sophie! – Bruder! – Was enthält der Brief? Sieh, wie er zittert! wie ihn aller Mut
             verläßt!</p>
-          <pb n="299"/>
         </sp>
+        <pb n="300"/>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Bruder, mein Bruder!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS</speaker>
+          <speaker>Beaumarchais</speaker>
           <stage>wirft sich sprachlos in einen Sessel und läßt den Brief fallen.</stage>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Mein Bruder! <stage>Sie hebt den Brief auf und liest.</stage></p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Laß mich ihn sehn! ich muß – <stage>Sie will aufstehn.</stage> Weh! Ich fühl's. Es ist
             das Letzte. Schwester, aus Barmherzigkeit den letzten schnellen Todesstoß! Er verrät
             uns!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS</speaker>
+          <speaker>Beaumarchais</speaker>
           <stage>aufspringend.</stage>
           <p>Er verrät uns! <stage>An die Stirn schlagend und auf die Brust.</stage> Hier! hier! es
             ist alles so dumpf, so tot vor meiner Seele, als hätt ein Donnerschlag meine Sinne
@@ -2383,15 +2403,15 @@
           <stage>Guilbert kommt.</stage>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Guilbert! Rat! Hülfe! Wir sind verloren!</p>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT.</speaker>
+          <speaker>Guilbert.</speaker>
           <p>Weib!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Lies! Lies! Der Gesandte meldet unserm Bruder: Clavigo habe ihn peinlich angeklagt, als
             sei er unter einem falschen Namen in sein Haus geschlichen, habe ihm im Bette die
             Pistole vorgehalten, habe ihn gezwungen, eine schimpfliche Erklärung zu unterschreiben;
@@ -2399,7 +2419,7 @@
             Gefängnis, daraus ihn zu befreien der Gesandte vielleicht selbst nicht imstande ist.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS</speaker>
+          <speaker>Beaumarchais</speaker>
           <stage>aufspringend.</stage>
           <p>Ja, sie sollen's! sie sollen's! sollen mich ins Gefängnis schleppen. Aber von seinem
             Leichname weg, von der Stätte weg, wo ich mich in seinem Blute werde geletzt haben. –
@@ -2412,21 +2432,21 @@
             vernichten!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Du bist fürchterlich, Bruder.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
-          <p>Desto besser. – Ach! Keinen Degen, kein <pb n="300"/> Gewehr! Mit diesen Händen will
+          <speaker>Beaumarchais.</speaker>
+          <p>Desto besser. – Ach! Keinen Degen, kein <pb n="301"/> Gewehr! Mit diesen Händen will
             ich ihn erwürgen, daß mein die Wonne sei! ganz mein eigen das Gefühl: ich hab ihn
             vernichtet!</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Mein Herz! Mein Herz!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Ich habe dich nicht retten können, so sollst du gerächet werden. Ich schnaube nach
             seiner Spur, meine Zähne gelüstet's nach seinem Fleisch, meinen Gaumen nach seinem Blut.
             Bin ich ein rasendes Tier geworden? Mir glüht in jeder Ader, mir zuckt in jeder Nerve
@@ -2435,109 +2455,109 @@
             Wo ist Buenco? Helft mir ihn finden!</p>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT.</speaker>
+          <speaker>Guilbert.</speaker>
           <p>Rette dich! Rette dich! Du bist außer dir.</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Fliehe, mein Bruder!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Führ ihn weg, er bringt seine Schwester um.</p>
           <stage>Buenco kommt.</stage>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Auf, Herr! Fort! Ich sah's voraus. Ich gab auf alles acht. Und nun! man stellt Euch
             nach, Ihr seid verloren, wenn Ihr nicht im Augenblick die Stadt verlaßt.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Nimmermehr! Wo ist Clavigo?</p>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Ich weiß nicht.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Du weißt's. Ich bitte dich fußfällig, sag mir's!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Um Gottes willen, Buenco!</p>
         </sp>
         <sp who="#marie">
-          <speaker>MARIE.</speaker>
+          <speaker>Marie.</speaker>
           <p>Ach! Luft! Luft! <stage>Sie fällt zurück.</stage> Clavigo!</p>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Hülfe, sie stirbt!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Verlaß uns nicht, Gott im Himmel! – Fort, mein Bruder, fort!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS</speaker>
+          <speaker>Beaumarchais</speaker>
           <stage>fällt vor Marien nieder, die ungeachtet aller Hülfe nicht wieder zu sich selbst
             kommt.</stage>
           <p>Dich verlassen! Dich verlassen!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>So bleib, und verderb uns alle, wie du Marien getötet hast! Du bist hin, o meine
             Schwester! durch die Unbesonnenheit deines Bruders.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Halt, Schwester!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE</speaker>
+          <speaker>Sophie</speaker>
           <stage>spottend.</stage>
           <p>Retter! – Rächer! – Hilf dir selber!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Verdien ich das?</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
-          <p>Gib mir sie wieder! Und dann geh in Kerker, <pb n="301"/> geh aufs Martergerüst, geh,
+          <speaker>Sophie.</speaker>
+          <p>Gib mir sie wieder! Und dann geh in Kerker, <pb n="302"/> geh aufs Martergerüst, geh,
             vergieße dein Blut, und gib mir sie wieder!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Sophie!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Ha! und ist sie hin, ist sie tot – so erhalte dich uns! <stage>Ihm um den Hals
               fallend.</stage> Mein Bruder, erhalte dich uns! unserm Vater! Eile, eile! Das war ihr
             Schicksal! Sie hat's geendet. Und ein Gott ist im Himmel, dem laß die Rache.</p>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Fort! fort! Kommen Sie mit mir, ich verberge Sie bis wir Mittel finden, Sie aus dem
             Königreiche zu schaffen.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS</speaker>
+          <speaker>Beaumarchais</speaker>
           <stage>fällt auf Marien und küßt sie.</stage>
           <p>Schwester! <stage>Sie reißen ihn los, er faßt Sophien, sie macht sich los, man bringt
               Marien weg, und Buenco mit Beaumarchais ab.</stage></p>
           <stage>Guilbert. Ein Arzt.</stage>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE</speaker>
+          <speaker>Sophie</speaker>
           <stage>aus dem Zimmer zurückkommend, darein man Marien gebracht hat.</stage>
           <p>Zu spät! Sie ist hin! Sie ist tot!</p>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT.</speaker>
+          <speaker>Guilbert.</speaker>
           <p>Kommen Sie, mein Herr! Sehen Sie selbst! Es ist nicht möglich! <stage>Ab.</stage></p>
         </sp>
       </div>
@@ -2548,67 +2568,67 @@
           Fackeln. Clavigo, in einen Mantel gewickelt, den Degen unterm Arm, kommt. Ein Bedienter
           geht voraus mit einer Fackel.</stage>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ich sagte dir's, du solltest diese Straße meiden.</p>
         </sp>
         <sp who="#bedienter">
-          <speaker>BEDIENTER.</speaker>
+          <speaker>Bedienter.</speaker>
           <p>Wir hätten einen gar großen Umweg nehmen müssen, und Sie eilen so. Es ist nicht weit
             von hier, wo Don Carlos sich aufhält.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Fackeln dort?</p>
         </sp>
         <sp who="#bedienter">
-          <speaker>BEDIENTER.</speaker>
+          <speaker>Bedienter.</speaker>
           <p>Eine Leiche. Kommen Sie, mein Herr.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Mariens Wohnung! Eine Leiche! Mir fährt ein Todesschauer durch alle Glieder. Geh, frag,
             wen sie begraben?</p>
         </sp>
         <sp who="#bedienter">
-          <speaker>BEDIENTER</speaker>
+          <speaker>Bedienter</speaker>
           <stage>geht zu den Männern.</stage>
           <p>Wen begrabt ihr?</p>
         </sp>
         <sp who="#die_maenner">
-          <speaker>DIE MÄNNER.</speaker>
+          <speaker>Die Männer.</speaker>
           <p>Marien Beaumarchais.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>setzt sich auf einen Stein und verhüllt sich.</stage>
-          <pb n="302"/>
         </sp>
+        <pb n="303"/>
         <sp who="#bedienter">
-          <speaker>BEDIENTER</speaker>
+          <speaker>Bedienter</speaker>
           <stage>kommt zurück.</stage>
           <p>Sie begraben Marien Beaumarchais.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>aufspringend.</stage>
           <p>Mußtest du's wiederholen, Verräter! Das Donnerwort wiederholen, das mir alles Mark aus
             meinen Gebeinen schlägt!</p>
         </sp>
         <sp who="#bedienter">
-          <speaker>BEDIENTER.</speaker>
+          <speaker>Bedienter.</speaker>
           <p>Stille, mein Herr, kommen Sie! Bedenken Sie die Gefahr, in der Sie schweben!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Geh in die Hölle! ich bleibe.</p>
         </sp>
         <sp who="#bedienter">
-          <speaker>BEDIENTER.</speaker>
+          <speaker>Bedienter.</speaker>
           <p>O Carlos! O daß ich dich fände, Carlos! Er ist außer sich! <stage>Ab.</stage></p>
           <stage>Clavigo. In der Ferne die Leichenmänner.</stage>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Tot! Marie tot! Die Fackeln dort! ihre traurigen Begleiter! – Es ist ein Zauberspiel,
             ein Nachtgesicht, das mich erschreckt, das mir einen Spiegel vorhält, darin ich das Ende
             meiner Verrätereien ahndungsweise erkennen soll. – Noch ist es Zeit! Noch! – Ich bebe,
@@ -2627,7 +2647,7 @@
             mit dir! nimm mich mit dir! <stage>Eine traurige Musik tönt einige Laute von
               innen.</stage> Sie beginnen den Weg zum Grabe! Haltet, haltet! Schließt den Sarg
             nicht! Laßt mich sie noch einmal sehen! <stage>Er geht aufs Haus los.</stage> Ha! wem,
-            wem wag ich's unters Gesicht zu treten? wem in seinen entsetzlichen <pb n="303"/>
+            wem wag ich's unters Gesicht zu treten? wem in seinen entsetzlichen <pb n="304"/>
             Schmerzen zu begegnen? – Ihren Freunden? Ihrem Bruder? dem wütender Jammer den Busen
             füllt! Die Musik geht wieder an. Sie ruft mir! sie ruft mir! Ich komme! Welche Angst
             umgibt mich! Welches Beben hält mich zurück!</p>
@@ -2638,207 +2658,208 @@
           <stage>Guilbert, Buenco, in tiefer Trauer.</stage>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>hervortretend.</stage>
           <p>Haltet!</p>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT.</speaker>
+          <speaker>Guilbert.</speaker>
           <p>Welche Stimme!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Haltet! <stage>Die Träger stehen.</stage></p>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Wer untersteht sich, den ehrwürdigen Zug zu stören?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Setzt nieder!</p>
         </sp>
         <sp who="#guilbert">
-          <speaker>GUILBERT.</speaker>
+          <speaker>Guilbert.</speaker>
           <p>Ha!</p>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Elender! Ist deiner Schandtaten kein Ende? Ist dein Opfer im Sarge nicht sicher vor
             dir?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Laßt! macht mich nicht rasend! die Unglücklichen sind gefährlich! Ich muß sie sehen!
               <stage>Er wirft das Tuch ab. Marie liegt weiß gekleidet und mit gefalteten Händen im
               Sarge.</stage></p>
           <stage>Clavigo tritt zurück und verbirgt sein Gesicht.</stage>
         </sp>
         <sp who="#buenco">
-          <speaker>BUENCO.</speaker>
+          <speaker>Buenco.</speaker>
           <p>Willst du sie erwecken, um sie wieder zu töten?</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Armer Spötter! – Marie! <stage>Er fällt vor dem Sarge nieder.</stage></p>
           <stage>Beaumarchais kommt.</stage>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Buenco hat mich verlassen. Sie ist nicht tot, sagen sie, ich muß sehen, trotz dem
             Teufel! Ich muß sie sehen. Fackeln! Leiche! <stage>Er rennt auf sie los, erblickt den
               Sarg und fällt sprachlos drüber hin; man hebt ihn auf, er ist wie ohnmächtig. Guilbert
               hält ihn.</stage></p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>der an der andern Seite des Sargs aufsteht.</stage>
           <p>Marie! Marie!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS</speaker>
+          <speaker>Beaumarchais</speaker>
           <stage>auffahrend.</stage>
           <p>Das ist seine Stimme! Wer ruft Marie? Wie mit dem Klang der Stimme sich eine glühende
             Wut in meine Adern goß!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ich bin's.</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS</speaker>
+          <speaker>Beaumarchais</speaker>
           <stage>wild hinsehend und nach dem Degen greifend.</stage>
           <stage>Guilbert hält ihn.</stage>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
-          <p>Ich fürchte deine glühenden Augen nicht, nicht <pb n="304"/> die Spitze deines Degens!
+          <speaker>Clavigo.</speaker>
+          <p>Ich fürchte deine glühenden Augen nicht, nicht <pb n="305"/> die Spitze deines Degens!
             Sieh hierher, dieses geschlossene Auge, diese gefalteten Hände!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Zeigst du mir das? <stage>Er reißt sich los, dringt auf Clavigo ein, der zieht, sie
               fechten, Beaumarchais stößt ihm den Degen in die Brust.</stage></p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>sinkend.</stage>
           <p>Ich danke dir, Bruder! Du vermählst uns. <stage>Er sinkt auf den Sarg.</stage></p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS</speaker>
+          <speaker>Beaumarchais</speaker>
           <stage>ihn wegreißend.</stage>
           <p>Weg von dieser Heiligen, Verdammter!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Weh! <stage>Die Träger halten ihn.</stage></p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Blut! Blick auf, Marie, blick auf deinen Brautschmuck, und dann schließ deine Augen auf
             ewig. Sieh, wie ich deine Ruhestätte geweiht habe mit dem Blute deines Mörders! Schön!
             Herrlich!</p>
           <stage>Sophie kommt.</stage>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Bruder! Gott! was gibt's?</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Tritt näher, Liebe, und schau! Ich hoffte, ihr Brautbette mit Rosen zu bestreuen – sieh
             die Rosen, mit denen ich sie ziere auf ihrem Wege zum Himmel.</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Wir sind verloren!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Rette dich, Unbesonnener! rette dich, eh der Tag anbricht. Gott, der dich zum Rächer
             sandte, geleite dich! – Sophie – vergib mir! – Bruder – Freunde, vergebt mir!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS.</speaker>
+          <speaker>Beaumarchais.</speaker>
           <p>Wie sein fließendes Blut alle die glühende Rache meines Herzens auslöscht! wie mit
             seinem wegfliehenden Leben meine Wut abschwindet! <stage>Auf ihn losgehend.</stage>
             Stirb, ich vergebe dir!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Deine Hand! und deine, Sophie! Und Eure!</p>
           <stage>Buenco zaudert.</stage>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Gib sie ihm, Buenco!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ich danke dir! du bist die alte. Ich danke euch! Und wenn du noch hier diese Stätte
             umschwebst, Geist meiner Geliebten, schau herab, sieh diese himmlische Güte, sprich
             deinen Segen dazu, und vergib mir auch! – Ich komme! ich komme! – Rette dich, mein
             Bruder! Sagt mir, vergab sie mir? Wie starb sie?</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Ihr letztes Wort war dein unglücklicher Name. Sie schied weg ohne Abschied von uns.</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ich will ihr nach, und ihr den eurigen bringen.</p>
-          <stage><pb n="305"/> Carlos. Ein Bedienter.</stage>
+          <pb n="306"/>
+          <stage>Carlos. Ein Bedienter.</stage>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Clavigo? Mörder!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Höre mich, Carlos! Du siehest hier die Opfer deiner Klugheit – Und nun, um des Blutes
             willen, in dem mein Leben unaufhaltsam dahinfließt! rette meinen Bruder –</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS.</speaker>
+          <speaker>Carlos.</speaker>
           <p>Mein Freund! Ihr steht da? Lauft nach Wundärzten!</p>
           <stage>Bedienter ab.</stage>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Es ist vergebens. Rette! rette den unglücklichen Bruder! – Deine Hand darauf! Sie haben
             mir vergeben, und so vergeb ich dir. Du begleitest ihn bis an die Grenze, und – ah!</p>
         </sp>
         <sp who="#carlos">
-          <speaker>CARLOS</speaker>
+          <speaker>Carlos</speaker>
           <stage>mit dem Fuße stampfend.</stage>
           <p>Clavigo! Clavigo!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO</speaker>
+          <speaker>Clavigo</speaker>
           <stage>sich dem Sarge nähernd, auf den sie ihn niederlassen.</stage>
           <p>Marie! deine Hand! <stage>Er entfaltet ihre Hände und faßt die rechte.</stage></p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE</speaker>
+          <speaker>Sophie</speaker>
           <stage>zu Beaumarchais.</stage>
           <p>Fort, Unglücklicher! fort!</p>
         </sp>
         <sp who="#clavigo">
-          <speaker>CLAVIGO.</speaker>
+          <speaker>Clavigo.</speaker>
           <p>Ich hab ihre Hand! Ihre kalte Totenhand! Du bist die Meinige – Und noch diesen
             Bräutigamskuß. Ah!</p>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE.</speaker>
+          <speaker>Sophie.</speaker>
           <p>Er stirbt! Rette dich, Bruder!</p>
         </sp>
         <sp who="#beaumarchais">
-          <speaker>BEAUMARCHAIS</speaker>
+          <speaker>Beaumarchais</speaker>
           <stage>fällt Sophien um den Hals.</stage>
         </sp>
         <sp who="#sophie">
-          <speaker>SOPHIE</speaker>
+          <speaker>Sophie</speaker>
           <stage>umarmt ihn, indem sie zugleich eine Bewegung macht, ihn zu entfernen.</stage>
         </sp>
       </div>
