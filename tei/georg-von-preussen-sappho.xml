@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000750" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Sappho</title>
+        <title type="sub">Drama in einem Aufzuge</title>
+        <author>
+          <persName>
+            <forename>Georg</forename>
+            <nameLink>von</nameLink>
+            <surname>Preußen</surname>
+          </persName>
+          <idno type="wikidata">Q105946</idno>
+          <idno type="pnd">101471920</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Berlin State Library</name>
+          <idno type="URL">https://resolver.staatsbibliothek-berlin.de/SBB0003354000000000</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <author>G. Conrad</author> [= Georg von Preußen]: <title>Sappho. Drama in einem
+              Aufzuge</title>. <pubPlace>Berlin</pubPlace>: <publisher>Voß</publisher>
+            <date>1887</date>. (S. <biblScope unit="page" from="1" to="41">1–41</biblScope>.)</bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <personGrp xml:id="nereiden" sex="FEMALE">
+            <name>Nereiden</name>
+          </personGrp>
+          <personGrp xml:id="tritonen" sex="MALE">
+            <name>Tritonen</name>
+          </personGrp>
+          <person xml:id="oberpriester" sex="MALE">
+            <persName>Oberpriester</persName>
+          </person>
+          <person xml:id="daphne" sex="FEMALE">
+            <persName>Daphne</persName>
+          </person>
+          <person xml:id="lais" sex="FEMALE">
+            <persName>Laïs</persName>
+          </person>
+          <person xml:id="phaon" sex="MALE" ana="http://www.wikidata.org/entity/Q595876">
+            <persName>Phaon</persName>
+          </person>
+          <person xml:id="sappho" sex="FEMALE" ana="http://www.wikidata.org/entity/Q17892">
+            <persName>Sappho</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2025-11-05">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1887">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000750"
+        passive="http://www.wikidata.org/entity/Q136706902"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <pb n="1"/>
+    <front>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">Sappho.</titlePart>
+          <titlePart type="sub">Drama in einem Aufzuge</titlePart>
+        </docTitle>
+        <docAuthor>von G. Conrad.</docAuthor>
+        <note>Den Bühnen gegenüber Manuscript.</note>
+        <docImprint>
+          <pubPlace>Berlin</pubPlace>
+          <date>1887.</date>
+          <publisher>Vossische Buchhandlung. (Strikker).</publisher>
+        </docImprint>
+      </titlePage>
+      <pb n="2"/>
+      <pb n="3"/>
+      <epigraph>
+        <lg>
+          <head>An Grillparzer.</head>
+          <l>Wie meine Phädra Du mir einst <emph>verziehen</emph>,</l>
+          <l>– Denn sie auch ziert der Lorber und die Leyer, –</l>
+          <l>So hättest Du für meine Sappho wohl</l>
+          <l>Ein freundlich Wort gehabt, erhabner Meister!</l>
+          <l>Und deshalb weih' ich sie mit frohem Muthe</l>
+          <l>Dir, Oesterreichs hohem, unerreichten Dichter.</l>
+        </lg>
+        <bibl>Conrad.</bibl>
+      </epigraph>
+      <pb n="4"/>
+      <pb n="5"/>
+      <castList>
+        <head>Personen.</head>
+        <castItem><role>Sappho.</role></castItem>
+        <castItem><role>Phaon.</role></castItem>
+        <castItem><role>Laïs.</role></castItem>
+        <castItem><role>Daphne.</role></castItem>
+        <castItem><role>Der Oberpriester Apollos.</role></castItem>
+        <castItem><role>Nereiden und Tritonen.</role></castItem>
+      </castList>
+      <set>
+        <p>Ort der Handlung: Mitylene auf der Insel Lesbos.</p>
+      </set>
+    </front>
+    <pb n="6"/>
+    <pb n="7"/>
+    <body>
+      <div type="scene">
+        <head>Erster Auftritt.</head>
+        <stage>(Marmorsaal in Sappho's Wohnung zu Lesbos, im Hintergrunde das Meer, rechts und links
+          von Rosenbüschen etwas versteckt).</stage>
+        <sp who="#nereiden #tritonen">
+          <speaker>Nereiden und Tritonen</speaker>
+          <stage>(im Meere erscheinend).</stage>
+          <l>Wir wiegen uns sorglos auf leuchtenden Fluthen,</l>
+          <l>Der heiteren Gegenwart leben wir nur,</l>
+          <l>Der glühenden Liebe, dem frohen Gesange,</l>
+          <l>Es giebt keine Sorgen, es giebt keinen Schmerz.</l>
+        </sp>
+        <sp who="#nereiden">
+          <speaker>Nereide</speaker>
+          <stage>(auf einem Felsblock im Meere sitzend).</stage>
+          <lg>
+            <l>Töne, mein Lied, auf crystallener Fluth,</l>
+            <l>Töne hinaus in die Ferne,</l>
+            <l>Rühme des Oceans siegende Macht,</l>
+            <l>Seine wild brausenden Wogen. – –</l>
+          </lg>
+          <lg>
+            <l>Wollt ihr noch weilen im Sonnenbrand,</l>
+            <l>Rasender Leidenschaft Opfer?</l>
+            <l>Bald kehrt Phöbus Apollo zurück</l>
+            <l>Zum bläulichen, dunkelen Meere.</l>
+          </lg>
+          <lg>
+            <l>Sinkt nicht das glühende Meteor</l>
+            <l>Unter in schäumende Wellen,</l>
+            <l>Sehn't ihr euch nicht zur Tiefe hinab,</l>
+            <l>Zum stillen, crystallenen Grunde? – –</l>
+          </lg>
+          <lg>
+            <l>Ewige Wonnen sind unser Loos,</l>
+            <l>Selige Träume der Liebe,</l>
+            <l>Goldener Tag, tief dunkele Nacht</l>
+            <l>Lächeln den Göttern des Meeres! – –</l>
+          </lg>
+        </sp>
+        <pb n="8"/>
+        <sp who="#tritonen">
+          <speaker>Tritonen.</speaker>
+          <l>Jubelnd feiern Tritonen Dich jetzt,</l>
+          <l>Dreizackschwinger Poseidon,</l>
+          <l>Nereiden umkreisen sanft</l>
+          <l>Den Muschelwagen des Gottes.</l>
+        </sp>
+        <sp who="#tritonen #nereiden">
+          <speaker>Tritonen und Nereiden.</speaker>
+          <l>Schenke uns Deinen mächtigen Schutz,</l>
+          <l>Schütze die Treuen, die Deinen,</l>
+          <l>Brausende Wetter, strahlender Tag,</l>
+          <l>Wollet uns fröhlich vereinen!</l>
+        </sp>
+        <sp who="#nereiden">
+          <speaker>Nereiden.</speaker>
+          <l>Vernehmet die Warnung unsterblicher Wesen,</l>
+          <l>Erhaltet euch frei von drückenden Banden,</l>
+          <l>O gebt keinem Andern euch thöricht gefangen,</l>
+          <l>Ein Opfer gebühret Olympiern allein.</l>
+          <l>Mißachtend verschmähen die Staubgebor'nen</l>
+          <l>Des Genius gottbegnadete Macht,</l>
+          <l>Es zieht sie hinweg zu nichtigen Freuden,</l>
+          <l>Sie meiden den Altar des delphischen Gottes.</l>
+        </sp>
+        <sp who="#nereiden #tritonen">
+          <speaker>Nereiden und Tritonen.</speaker>
+          <l>O strebt nicht vergebens in lockende Fernen,</l>
+          <l>Ihr findet nur Qualen, Enttäuschung und Schmerz,</l>
+          <l>Vernehmt uns're Warnung, Geweihte Apollos,</l>
+          <l>Wir schützen des Gottes begeisterte Schaar.</l>
+        </sp>
+        <stage>(Sie entfernen sich nach beiden Seiten, andere versinken in den Wellen.)</stage>
+      </div>
+      <pb n="9"/>
+      <div type="scene">
+        <head>Zweiter Auftritt.</head>
+        <stage>Der Oberpriester Apollos, Daphne, Laïs, dann Phaon, zuletzt Sappho.</stage>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Wir alle haben Sappho schon gewarnt,</l>
+          <l>Doch hört sie nicht auf ihrer Freunde Stimme.</l>
+        </sp>
+        <sp who="#daphne">
+          <speaker>Daphne.</speaker>
+          <l>Sie liebt; man soll die Wahrheit ihr nicht sagen.</l>
+        </sp>
+        <sp who="#lais">
+          <speaker>Laïs.</speaker>
+          <l>Sie faßt sie nicht, sie will sie jetzt nicht fassen.</l>
+          <l>Phaon ist treulos, kalt und undankbar,</l>
+          <l>Er ahnt die Größe einer Sappho kaum,</l>
+          <l>Die Priesterin Apollos bleibt ihm fremd,</l>
+          <l>Die hohe, gotterfüllte Dichterin.</l>
+          <l>Wie herrlich könnte sich ihr Genius</l>
+          <l>Entfalten in dem stillen, heitern Lesbos.</l>
+          <l>Hier hat sie Wunderbares schon geschaffen,</l>
+          <l>Entzückt lauscht Hellas ihren süßen Liedern.</l>
+          <l>Doch jetzt ist sie verschlossen, sorgenvoll,</l>
+          <l>Gequält wird sie durch Phaons Flattersinn,</l>
+          <l>Sie fürchtet ihn auf ewig zu verlieren,</l>
+          <l>Ihr fehlt der Frieden, des Gemüthes Stille.</l>
+        </sp>
+        <sp who="#daphne">
+          <speaker>Daphne.</speaker>
+          <l>Wenn ihre Leyer einst verstummen müßte,</l>
+          <l>Wenn Phaons Härte es so weit gebracht,</l>
+          <l>So würde eine Welt ihm fluchen müssen,</l>
+          <l>Denn sinnlos hätt' er Herrliches zerstört.</l>
+        </sp>
+        <pb n="10"/>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Doch Phaon zöge fröhlich, sorglos weiter,</l>
+          <l>Und unsre Leiden würd' er bald vergessen.</l>
+          <l>Was kümmert ihn das Loos der Anderen?</l>
+          <l>Er will sich nur des kurzen Lebens freu'n.</l>
+        </sp>
+        <sp who="#lais">
+          <speaker>Laïs.</speaker>
+          <l>Und Sappho mag auf keine Warnung hören!</l>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Verschlossen bleibt der Sinn der Liebenden,</l>
+          <l>Sie wollen nicht aus ihrem Rausch erwachen.</l>
+        </sp>
+        <sp who="#lais">
+          <speaker>Laïs.</speaker>
+          <l>Noch hofft sie fest auf ihres Phaon Treue.</l>
+        </sp>
+        <sp who="#daphne">
+          <speaker>Daphne.</speaker>
+          <l>Treu war er nie und wird es niemals sein.</l>
+        </sp>
+        <sp who="#lais">
+          <speaker>Laïs.</speaker>
+          <l>So klug, so reich begabt auch Sappho ist,</l>
+          <l>Hier hilft ihr nicht die Macht des Genius,</l>
+          <l>Sie läßt sich täuschen von dem falschen Manne,</l>
+          <l>Vertrauensvoll hat sie sich ihm ergeben.</l>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Wann wird sie diesen Irrthum einseh'n lernen?</l>
+        </sp>
+        <sp who="#lais">
+          <speaker>Laïs.</speaker>
+          <l>Die Liebe kommt und geht, sie spottet unsrer,</l>
+          <l>Ausfüllen kann sie wohl ein ganzes Leben,</l>
+          <l>Sie stirbt an einem Wort, an einem Blick.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon</speaker>
+          <stage>(eintretend).</stage>
+          <l>Ihr sprecht von Eros, von der Macht des Gottes?</l>
+          <pb n="11"/>
+          <l>Was man auch über Liebe sagen mag,</l>
+          <l>Und sei es noch so kühn, so eigenartig,</l>
+          <l>Es trifft schon zu, wenn wir's auch nicht erfahren,</l>
+          <l>Denn Millionen beugen sich dem Eros,</l>
+          <l>Und jeder fühlt auf eine and're Weise.</l>
+          <l>Wem soll man Recht, wem soll man Unrecht geben?</l>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Wie man empfängt, so soll man auch erwidern,</l>
+          <l>Kein Spiel läßt sich mit tiefer Neigung treiben.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>An schönen Worten fehlt's den Frauen nie;</l>
+          <l>Sie sprechen gern von ewigen Gefühlen,</l>
+          <l>Doch sind es Schwäche nur und Lebenslust,</l>
+          <l>Die hinter solchen Reden sich verbergen.</l>
+          <l>Sie denken auch wohl manchmal, was sie sagen,</l>
+          <l>Doch wird es meist beim guten Willen bleiben.</l>
+          <l>Glaubt mir und trauet meinem Wort.</l>
+          <l>Ich ward zu oft getäuscht und hintergangen.</l>
+        </sp>
+        <sp who="#daphne">
+          <speaker>Daphne.</speaker>
+          <l>Empörend find' ich solche Lästerung.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Der Jugend wollt ihr alle euch erfreuen,</l>
+          <l>Und schelmisch wißt Ihr tiefen Ernst zu heucheln.</l>
+          <l>Wie freut es euch, könnt ihr uns hintergehen!</l>
+        </sp>
+        <sp who="#lais">
+          <speaker>Laïs.</speaker>
+          <l>Spricht man zu Sapphos Schülerinnen so?</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Und warum nicht? Auch sie ist glücksbedürftig.</l>
+        </sp>
+        <pb n="12"/>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Doch weshalb kehrt sie nicht zu uns zurück?</l>
+        </sp>
+        <sp who="#lais">
+          <speaker>Laïs.</speaker>
+          <l>Sie fuhr hinaus, weit in das blaue Meer.</l>
+          <l>Dort singt sie oft zum vollen Klang der Leyer,</l>
+          <l>Dort findet sie die herrlichsten Gesänge.</l>
+          <l>Oft lauscht' ich schon den silberreinen Tönen:</l>
+          <l>Bezaubert von der Anmuth ihrer Lieder,</l>
+          <l>Der tiefen Gluth, der heißen Leidenschaft,</l>
+          <l>Glaubt' bald Euterpes Stimme ich zu hören,</l>
+          <l>Bald der Sirenen göttlich schöne Klänge.</l>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Was wir von Orpheus und Arion hörten,</l>
+          <l>Durch Sappho ward es holde Wirklichkeit.</l>
+        </sp>
+        <sp who="#daphne">
+          <speaker>Daphne.</speaker>
+          <l>Dort naht das Boot, sie kehrt zu uns zurück.</l>
+          <l>O seht das weiße, wallende Gewand,</l>
+          <l>Den frischen Kranz von dunkeln Lorberzweigen,</l>
+          <l>Die gold'ne Leyer, die Arion trug.</l>
+          <l>Sie scheint der Musen liebliche Gefährtin,</l>
+          <l>Die Grazien geleiten ihren Schritt,</l>
+          <l>Begeistert blickt sie auf zum Himmelszelt!</l>
+        </sp>
+        <stage>(Sappho steigt aus dem Nachen und bleibt am Meeresufer stehen.)</stage>
+        <sp who="#sappho">
+          <speaker>Sappho</speaker>
+          <stage>(einzelne Accorde und Arpeggien auf der Leyer mit dem Plectron von Elfenbein
+            anschlagend).</stage>
+          <lg>
+            <l>Wallet nieder, duftige Wolkenschleier,</l>
+            <l>Plätschert leiser, leuchtende Meereswellen,</l>
+            <pb n="13"/>
+            <l>Laßt mich finden ewige, tiefe Ruhe,</l>
+            <l>Volles Vergessen!</l>
+          </lg>
+          <lg>
+            <l>Reiche Harmonien entlockt wohl nimmer</l>
+            <l>Gold'nen Saiten lieblich das weiße Plectron.</l>
+            <l>Sapphos Lieder verhallen auf ewig hier an</l>
+            <l>Lesbos' Gestade.</l>
+          </lg>
+          <lg>
+            <l>Zum Parnaß einst hob mich empor Apollo,</l>
+            <l>Musen fand ich, Grazien, sanft belehrend,</l>
+            <l>Doch die Gunst der Himmlischen trennte mich von</l>
+            <l>Irdischen Freuden.</l>
+          </lg>
+          <lg>
+            <l>Klagend am leukadischen Felsen endet</l>
+            <l>Rasch ein schönheitstrunkenes Leben; Freunde,</l>
+            <l>Laßt auf meinem grünenden Hügel sprießen</l>
+            <l>Blühende Veilchen.</l>
+          </lg>
+          <lg>
+            <l>Fremd ward ich dem Treiben der Welt, unnahbar</l>
+            <l>Soll ich sein den heiteren Lebensfreuden,</l>
+            <l>Einsam, trauernd bleib' ich verlassen hier als</l>
+            <l>Liebling der Götter.</l>
+          </lg>
+          <lg>
+            <l>Ungestraft erklimmen wir nicht die Höhen,</l>
+            <l>Die uns meist verschlossen das dunkle Schicksal,</l>
+            <l>Zu den Göttern sollen sich nicht erheben</l>
+            <l>Sterbliche Wesen.</l>
+          </lg>
+          <lg>
+            <l>Auch Titanen endeten in dem Kampfe,</l>
+            <l>Den sie sich zu wagen vermaßen, krachend</l>
+            <l>Sanken sie zum Orkus hernieder, stolze</l>
+            <l>Grausige Opfer.</l>
+          </lg>
+          <lg>
+            <l>Sind dort Götter, selige Götter, dort oben?</l>
+            <l>Glüh'n im Hades lodernde Feuerströme?</l>
+            <l>Oder bricht einst Alles zusammen, weichend</l>
+            <l>Sinnlosem Wüthen?</l>
+          </lg>
+          <lg>
+            <l>Still, verschlossen, brennenden Schmerz im Busen,</l>
+            <l>Fühl' ich schon des nahenden Endes Schauer,</l>
+            <pb n="14"/>
+            <l>Fragend, rathlos blick' ich umher, und niemand</l>
+            <l>Löst mir das Räthsel?</l>
+          </lg>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>So traurig tönte Sapphos Lied noch nie.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon</speaker>
+          <stage>(zu Sappho).</stage>
+          <l>Vergiß die Sorgen in der Freunde Kreis.</l>
+        </sp>
+        <sp who="#daphne">
+          <speaker>Daphne.</speaker>
+          <l>Echt sapphisch klingt dies Lied in sanftem Rhythmus,</l>
+          <l>Dem voll Entzücken oft ich lauschen durfte,</l>
+          <l>Der seinen Ursprung Dir allein verdankt.</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Hier ist das Plectron, Daphne, hier die Leyer,</l>
+          <l>Ihr sollt noch heut in ihre Saiten greifen.</l>
+        </sp>
+        <sp who="#daphne">
+          <speaker>Daphne.</speaker>
+          <l part="I">O heißen Dank!</l>
+        </sp>
+        <sp who="#lais">
+          <speaker>Laïs.</speaker>
+          <l part="F">Welch' selt'ne, hohe Gunst!</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Apollos Oberpriester zürne nicht,</l>
+          <l>Wenn ich erst jetzt in Ehrfurcht ihn begrüße. –</l>
+          <l>An jenem Felsenufer weilt' ich lange,</l>
+          <l>Gefesselt durch die wunderbarsten Töne.</l>
+          <l>Sie klangen jubelnd erst und dann auch klagend,</l>
+          <l>Wie ernste Warnungsstimmen guter Geister.</l>
+          <l>Aus einer Höhle schienen sie zu dringen,</l>
+          <l>Die nie mein Aug' erblickte, ja von der</l>
+          <l>Ich niemals Kunde noch erhielt, wenn mir</l>
+          <l>Auch Lesbos' schönes, freundliches Gestade</l>
+          <pb n="15"/>
+          <l>Und seine hohen Felsen längst vertraut sind.</l>
+          <l>Von blauen Wellen ward der Eingang fast</l>
+          <l>Verhüllt, nur einmal blickt' ich in die Tiefe,</l>
+          <l>In eine weite, hochgewölbte Grotte.</l>
+          <l>War sie aus einem einzigen Sapphir</l>
+          <l>Gebildet? Leuchtend schienen ihre Wände</l>
+          <l>Und leuchtend das Azur der blauen Fluth.</l>
+          <l>Doch woher tönten diese Wunderklänge,</l>
+          <l>Wem galt der hehre, zauberische Chor?</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Es waren Nereiden und Tritonen,</l>
+          <l>Die eine seltne Gunst Dir, Sappho, schenkten.</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Nie find' ich diese Melodien wieder</l>
+          <l>Und glaube sie doch immerfort zu hören.</l>
+          <stage>(Sie blickt sinnend nieder.)</stage>
+          <l>O welch' ein Zauber, welcher Anmuth Fülle!</l>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Wenn Du das Höchste auch vernommen hast,</l>
+          <l>So solltest Du doch andern Tönen nicht</l>
+          <l>Dein Ohr verschließen, mannigfaltig ist</l>
+          <l>Das Schöne, und den Göttern nahen wir</l>
+          <l>Nicht stets auf gleiche Art. Apollo nimmt</l>
+          <l>Auch Lieder günstig, segenspendend auf,</l>
+          <l>Die unserm Ideale nicht entsprechen.</l>
+          <l>Ist nicht Verschiedenheit in der Natur</l>
+          <l>Begründet, festgestellt? Erfreut uns nur</l>
+          <l>Die schlanke Palme und die starke Eiche,</l>
+          <l>Nicht auch der Kräuter und der Blumen Schöne?</l>
+          <l>Bewundern wir die ew'gen Sterne nur,</l>
+          <pb n="16"/>
+          <l>Des Tages flammenstrahlendes Gestirn,</l>
+          <l>Nicht auch am Rosenblatt den Silbertropfen,</l>
+          <l>Erfüllt vom hellen Licht der Morgensonne?</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Das Zarte, das Bescheidene kann auch</l>
+          <l>Erfreuen und entzücken, trifft es uns</l>
+          <l>Zur rechten Zeit; so ruhen wir uns aus</l>
+          <l>Von all zu hohem, all zu kühnem Streben.</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Es kann wohl sein, so ist der Mensch geartet,</l>
+          <l>Aus Himmelshöhen sehnt er sich zur Tiefe. – –</l>
+          <l>Zur Leyer werd' ich heut wohl nicht mehr greifen,</l>
+          <l>Mir fehlt die Sammlung, des Gemüthes Stille.</l>
+          <l>Du, Daphne, zeige Deine Kunst, Du bist</l>
+          <l>Ja Sapphos Schülerin; die Leyer nimm,</l>
+          <l>O Laïs, spiele wie ich Dich gelehrt.</l>
+        </sp>
+        <sp who="#daphne">
+          <speaker>Daphne</speaker>
+          <stage>(sprechend, während Laïs sie auf der Leyer begleitet).</stage>
+          <l>Duftende Blumen, rieselnde Quellen</l>
+          <l>Füllen die Brust mir mit hohem Entzücken,</l>
+          <l>Flammende Pracht der leuchtenden Sterne,</l>
+          <l>Läßt die Nähe der Götter mich ahnen. –</l>
+          <l>Strahlt ihr vom Haupte des hehren Kronion,</l>
+          <l>Schmückt ihr der Venus goldnes Gelock,</l>
+          <l>Blinkt ihr vom Scheitel der Dioskuren</l>
+          <l>Und an Orions glänzendem Speer? –</l>
+          <l>Reich ist die Welt an herrlichen Wundern,</l>
+          <l>Die wir nur ahnen und nicht erfassen,</l>
+          <l>Die uns entzücken, die uns begeistern</l>
+          <l>Und zu lichteren Sphären uns zieh'n. –</l>
+          <pb n="17"/>
+          <l>Giebt es wohl Höheres, könnt Ihr es nennen?</l>
+          <l>Giebt es wohl Edleres, habt Ihr's empfunden?</l>
+          <l>Eines nur weiß ich, das Alles besieget,</l>
+          <l>Alles vernichtet, ich nenn' es die Liebe. – –</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Nein, nein! die Liebe ist das Höchste nicht!</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l part="I">Was ist es dann?</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l part="F">Die Kraft, der Heldenmuth!</l>
+          <l>Was hilft uns alles Reden, alles Singen?</l>
+          <l>Zum Schwerte muß der Muthige doch greifen.</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Es folgt der Kluge gern dem Rath des Weisen.</l>
+          <l>Wie herrlich leben wir im Reich des Schönen,</l>
+          <l>Im Schutz der Musen und der Grazien!</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Doch größer ist es zu vollbringen Thaten</l>
+          <l>Voll Heldenkraft, den Uebermuth zu strafen,</l>
+          <l>Wie Jason, Theseus, Heracles gethan,</l>
+          <l>Unsterblichkeit in Siegen zu erringen,</l>
+          <l>Als sie zu rühmen bei der Leyer Klang.</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Was wär' von Agamemnon und Achilles,</l>
+          <l>Von Hector und Odysseus uns bekannt,</l>
+          <l>Wenn sie nicht lebten durch Homers Gesänge.</l>
+          <l>Als die Heroen Staub zu Staub geworden,</l>
+          <l>Der Rost die blanken Waffen rasch zerstörte,</l>
+          <l><emph>Da blieb das Lied</emph>, Unsterblichkeit verleihend.</l>
+        </sp>
+        <pb n="18"/>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Der Menschen undankbare Sinnesart</l>
+          <l>Vergißt Erhabenes nur allzufrüh.</l>
+          <l>Das Höchste ist die That. Was liegt daran,</l>
+          <l>Ob eine dunkle, unbekannte Nachwelt,</l>
+          <l>Die ewig uns verborgen bleiben muß,</l>
+          <l>Die großen Männer feiert oder nicht?</l>
+          <l>Sie dienten ihrer Zeit und ihrem Lande,</l>
+          <l>An Nachruhm haben sie wohl kaum gedacht. –</l>
+          <l>Und können Dichter, weichere Naturen,</l>
+          <l>Sich wohl in ihre Sinnesart versenken,</l>
+          <l>Und sagen, was sie fühlten, was sie dachten,</l>
+          <l>Was sie gelitten, was sie einst beglückte?</l>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Kannst Du es selbst, Du allzu kühner Frager?</l>
+          <l>Der Dichter, sagst Du, kennt den Helden nicht,</l>
+          <l>Und kennt der Held den Dichter? Was bist Du?</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Ich bin ein Mensch, der nach Erkenntniß ringt.</l>
+          <l>Ich sage nicht, daß ich ein Dichter sei, –</l>
+          <l>Darüber mögen Andere entscheiden,</l>
+          <l>Doch sehn' ich glühend mich ein Held zu werden.</l>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Sei, was Du willst, es wird Dir Niemand danken,</l>
+          <l>Nicht dauernd danken, deß' bin ich gewiß,</l>
+          <l>Die Anerkennung reizt zu scharfem Tadel:</l>
+          <l>Die Griechen rächen gern sich an den Geistern,</l>
+          <l>Die zur Bewunderung sie einst gezwungen.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Ich zweifle an der Dichter Wahrheitsliebe.</l>
+          <pb n="19"/>
+          <l>Ein edles Kunstwerk suchen sie zu schaffen,</l>
+          <l>Und die Gestalten der Vergangenheit</l>
+          <l>Sind ihnen nur der Thon, den sie willkürlich</l>
+          <l>Nach ihrem eignen Wohlgefallen kneten.</l>
+          <l>Die großen Schatten können es nicht hindern,</l>
+          <l>Im Treiben hoch erregter Phantasien</l>
+          <l>Verfallen sie dem leichten Spiel der Dichter.</l>
+          <l>Nur unvollkommen sind die Rhapsodien,</l>
+          <l>Sie enden wie der Blumen frische Pracht,</l>
+          <l>Denn Alles wird zuletzt zu Staub und Asche,</l>
+          <l>Versinkt vergessen in das Reich des Nichts.</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Mir graut vor solchen finsteren Gedanken.</l>
+          <l>Nie wird Castalias crystall'ne Quelle</l>
+          <l>Versiegen, nie der dunkle Lorberhain,</l>
+          <l>Der sie beschattet in dem Sonnenbrande,</l>
+          <l>Verdorren und zerstäuben!</l>
+          <l>Trost und Erhebung sollen Sapphos Lieder</l>
+          <l>Auch nach Jahrhunderten den Liebenden,</l>
+          <l>Den Schwergeprüften freundlich noch gewähren,</l>
+          <l>Und in den seligen Gefilden nahet</l>
+          <l>Der Dichterin noch manche stille Seele,</l>
+          <l>Die Trost in ihren Worten einst gefunden. –</l>
+          <l>Ich liebe diese Erde wohl zu sehr</l>
+          <l>Und mag nicht in Vergessenheit versinken,</l>
+          <l>Die Flamme, die in meinem Busen lodert,</l>
+          <l>Soll auch nicht im Elysium erkalten,</l>
+          <l>Dem kühlen Trank aus Lethes klaren Fluthen</l>
+          <l>Erlieg' ich nicht, ich wäre nicht mehr Sappho.</l>
+        </sp>
+        <sp who="#lais">
+          <speaker>Laïs.</speaker>
+          <l>Wenn Liebesflammen unsre Brust durchglühen,</l>
+          <pb n="20"/>
+          <l>Ein Sturm der Leidenschaft uns mit sich reißt,</l>
+          <l>Erkennen wir das Reich des Ewigen.</l>
+          <l>Wie könnte enden, was vom Himmel stammt?</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Wie schwärmerisch erscheint mir diese Rede!</l>
+          <l>Wozu sich nur an <emph>einen</emph> Menschen ketten,</l>
+          <l>Wozu von ihm allein das Glück erwarten,</l>
+          <l>Wenn viele es uns doch gewähren können?</l>
+          <l>Wenn wir von <emph>einer</emph> Seele Alles hoffen,</l>
+          <l>So dürfte sie der Gottheit nur gehören,</l>
+          <l>Und Zeus allein gebührte dieses Opfer,</l>
+          <l>Dies Aufgeh'n in die höchste Macht der Welt.</l>
+          <l>Im Wechsel liegt das Schöne, in dem Neuen,</l>
+          <l>Dem Nichtgekannten, Tiefverborgnen.</l>
+          <l>Wenn wir nicht rastlos weiterstreben sollen,</l>
+          <l>Wenn uns kein fernes Ziel mehr locken darf,</l>
+          <l>Erlischt auch bald des Lebens höchster Reiz.</l>
+          <l>Zu viel des Schönen bietet uns die Erde,</l>
+          <l>Verlockend scheint manch holdes Antlitz uns,</l>
+          <l>Wie könnten wir da theilnahmlos erscheinen,</l>
+          <l>Uns <emph>einer</emph> Schönheit nur gefangen geben?</l>
+          <l>Und denken Andere nicht so, wie ich?</l>
+          <l>Ist's da nicht Wohlthat, offen sich zu zeigen,</l>
+          <l>Die volle Freiheit ehrlich sich zu gönnen?</l>
+          <l>Zuletzt gebührt der Wahrheit doch der Sieg.</l>
+        </sp>
+        <sp who="#daphne">
+          <speaker>Daphne.</speaker>
+          <l>Dem Schmetterlinge nur ziemt solches Leben.</l>
+        </sp>
+        <sp who="#lais">
+          <speaker>Laïs.</speaker>
+          <l>Wir sind gewarnt, es war nicht wohlgethan,</l>
+          <l>So offen diese Meinung auszusprechen.</l>
+        </sp>
+        <pb n="21"/>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Ich that es früher schon, Ihr wißt es wohl,</l>
+          <l>Und meine Kühnheit ließ man ungestraft.</l>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Tiefsinnig ist der Liebe holder Gott,</l>
+          <l>Den Leugner hat er furchtbar stets gestraft.</l>
+          <l>Nicht nur der Liebe Wonnen, auch die Schmerzen,</l>
+          <l>Die heißen Qualen, die sie in sich trägt,</l>
+          <l>Der Eifersucht, der Sehnsucht tiefes Leid</l>
+          <l>Wirst Du noch einst empfinden – und verzweifeln –</l>
+          <l>Und dann erst fühlen, was die Andern litten.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Kronions Oberpriester schreckt mich nicht,</l>
+          <l>Ich werde nie mich unterjochen lassen.</l>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Entrinnen kannst Du nicht des Gottes Macht.</l>
+        </sp>
+        <sp who="#lais">
+          <speaker>Laïs.</speaker>
+          <l>Ein Schmerz, den lächelnd Du verhängen konntest,</l>
+          <l>Kehrt sich noch einmal grausam gegen Dich.</l>
+          <l>Gedenken wirst Du Deiner Opfer dann,</l>
+          <l>In eigner Qual die fremde erst erkennen.</l>
+          <l>Wenn es zu spät ist, wirst Du Reue fühlen,</l>
+          <l>Des Lebens tieferen Gehalt erfassen.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Wie schauerlich das klingt, Ihr wollt mich schrecken,</l>
+          <l>Ihr möchtet gern mich unterliegen seh'n.</l>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Dem allgemeinen Loos entrinnst Du nicht,</l>
+          <l>Der Macht des Gottes bleibst auch Du verfallen.</l>
+        </sp>
+        <pb n="22"/>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Ohne Fesseln, ohne Sorgen</l>
+          <l>Will ich durch das Leben zieh'n,</l>
+          <l>Alles liebt auf dieser Erde,</l>
+          <l>Freut sich gern des Sonnenlichts.</l>
+          <l>Nachtigallen singen lieblich</l>
+          <l>In dem hohen, dunklen Hain,</l>
+          <l>Schmetterlinge flattern munter</l>
+          <l>Zwischen Blumen in dem Thal. –</l>
+          <l>Jauchzend wirft sich schon die Lerche</l>
+          <l>In die Lüfte, liebetrunken,</l>
+          <l>In dem Glanz der Morgenröthe</l>
+          <l>Trillert sie ihr helles Liedchen. –</l>
+          <l>Blumen duften, Wellen rauschen,</l>
+          <l>Mächtig braust's im Eichenwald,</l>
+          <l>Ungestüm ruft Alles: liebe,<note place="foot">Liebe (Imperativ!).</note></l>
+          <l>Liebe! – und die Welt ist Dein! –</l>
+          <l>Ich bin nur heimisch in dem Reich der Freude,</l>
+          <l>Erfassen kann ich nur die Gegenwart,</l>
+          <l>Vergänglich ist die Welt, wie wir es sind,</l>
+          <l>Wie sollten wir da Ewiges verlangen?</l>
+        </sp>
+        <sp who="#lais">
+          <speaker>Laïs.</speaker>
+          <l>O schweige, schweige, nichts mehr will ich hören,</l>
+          <l>Verführen darf uns nicht Dein gleißend Wort.</l>
+        </sp>
+        <sp who="#daphne">
+          <speaker>Daphne.</speaker>
+          <l>Unsterblich ist der Mensch allein auf Erden,</l>
+          <l>Und deshalb sucht er auch das Ewige.</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho</speaker>
+          <stage>(für sich).</stage>
+          <l>Was muß ich hören? Ach, ich faß' es kaum.</l>
+          <pb n="23"/>
+          <l>Sagt er sich los von mir auf immerdar?</l>
+          <l>Groß ist mein Schmerz und qualvoll diese Angst,</l>
+          <l>Doch meinem Genius will ich vertrau'n.</l>
+        </sp>
+        <sp who="#daphne">
+          <speaker>Daphne.</speaker>
+          <l>Und Sappho nimmt nicht Theil an uns'rem Kampfe,</l>
+          <l>Versagt sie zweifelnd ihre Hülfe uns?</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho</speaker>
+          <stage>(sich fassend).</stage>
+          <l>Laßt mir nur Zeit, ich werde Worte finden</l>
+          <l>In diesem Wettstreit lieblicher Gesänge.</l>
+          <l>Ich gönne jedem seine Sinnesart,</l>
+          <l>Wenn ich auch meinem Gott begeistert diene.</l>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Den Streit zu schlichten solltest Du versuchen.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Wenn Wasser sich und Feuer einst vermählen,</l>
+          <l>Fügt meine Sinnesart sich einer fremden.</l>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Dem edlen Maße bleibst Du ewig fern.</l>
+          <l>Giebt es nur <emph>eine</emph> richt'ge Denkungsart?</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Es giebt nur eine, die ich gelten lasse,</l>
+          <l>Der reinen Wahrheit volle Ueberzeugung.</l>
+        </sp>
+        <sp who="#daphne">
+          <speaker>Daphne.</speaker>
+          <l>Doch gilt dieselbe Wahrheit nicht für alle,</l>
+          <l>Was <emph>diesem</emph> ziemt, bleibt <emph>jenem</emph> unerreichbar.</l>
+        </sp>
+        <sp who="#lais">
+          <speaker>Laïs.</speaker>
+          <l>Was Frauen fühlen, fassen Männer kaum.</l>
+        </sp>
+        <pb n="24"/>
+        <sp who="#daphne">
+          <speaker>Daphne.</speaker>
+          <l>Nur selten können sie uns ganz verstehen.</l>
+        </sp>
+        <sp who="#lais">
+          <speaker>Laïs.</speaker>
+          <l>Hingebend sind nur wir, aufopfernd, treu,</l>
+          <l>Denn Liebe kann nur mit dem Leben enden.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Der ersten Jugend falsche Schwärmerei!</l>
+          <l>O Laïs, glaubst Du wirklich, was Du sagst?</l>
+        </sp>
+        <sp who="#lais">
+          <speaker>Laïs.</speaker>
+          <l part="I">So zweifelst Du?</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l part="F">Wir kennen uns zu gut,</l>
+          <l>So übertrieben streng glaubt' ich Dich nicht.</l>
+        </sp>
+        <sp who="#daphne">
+          <speaker>Daphne.</speaker>
+          <l>Wohl klang es schön, was Du gesungen hast,</l>
+          <l>Verwirren konnt' es uns auf kurze Zeit,</l>
+          <l>War auch der Sinn der Worte frevelhaft.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Ich kehrte zur Natur, zur Einfachheit,</l>
+          <l>Zur richtigen Erkenntniß rasch zurück.</l>
+          <l>In hoch erhabenen Gefühlen schwelgen</l>
+          <l>Die Liebenden nur allzu leicht, als glaubten</l>
+          <l>Sie an der Dichter, an der Sänger Worte.</l>
+          <l>In Phantasiegebilden haben sie,</l>
+          <l>Die Thörichten, sich eingewiegt, als ahnten</l>
+          <l>Sie keine Uebertreibung, keine Lüge.</l>
+          <l>Wer liebt, wird unwahr gegen sich und and're,</l>
+          <l>Er spricht die Sprache, die er vorgefunden,</l>
+          <pb n="25"/>
+          <l>Die er aus Ueberlieferung schon kennt.</l>
+          <l>Das wollt' ich sagen, davor wollt' ich warnen.</l>
+          <l>Ich rede nicht der Theilnahmlosigkeit</l>
+          <l>Das Wort, ich will nur ein bestimmtes Maß</l>
+          <l>Und keine Täuschung, keine Uebertreibung.</l>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>So jung, und doch so schroff, so selbstbewußt!</l>
+        </sp>
+        <sp who="#daphne">
+          <speaker>Daphne.</speaker>
+          <l>Zur bösen That ist Dein Gesang geworden.</l>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>In Manchem kann ich Dir nicht Unrecht geben,</l>
+          <l>Doch scheint Dein Urtheil wenig schonend mir.</l>
+          <l>Du bist voll Ehrfurcht vor den Himmlischen.</l>
+          <l>Ja Anbetung geziemt den Göttern nur,</l>
+          <l>Den schwachen Sterblichen gebührt sie nicht.</l>
+          <l>Du meinst es gut, doch bist Du wohl zu herb,</l>
+          <l>Die Schönen wenden zürnend sich hinweg.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Wer weiß, vielleicht reizt sie mein Widerstand.</l>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Bleibt Sappho still in sich gekehrt, verschlossen?</l>
+          <l>In wessen Banne weilt sie regungslos?</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho</speaker>
+          <stage>(sitzend, auf ihre Leyer gestützt).</stage>
+          <l>So war mir nie. – Was trägt mich zu den Sternen?</l>
+          <l>Es braust electrisch, wetterleuchtend auf!</l>
+          <stage>(Sie steht auf.)</stage>
+          <l>Apollo ist's, der mächtig mich erregt,</l>
+          <l>Des Gottes Nah'n fühl' ich in heil'gen Schauern.</l>
+          <l>Welch' flammende Begeisterung durchdringt</l>
+          <l>Mich jetzt, wie weht es leuchtend um mich her?</l>
+          <pb n="26"/>
+          <l>Dein bin ich, Phöbus, hehrer Sonnenlenker,</l>
+          <l>Du wirst nicht Deine Priesterin verlassen!</l>
+          <l>Noch einmal greif ich in die goldnen Saiten,</l>
+          <l>Noch einmal töne jubelnder Gesang,</l>
+          <l>Und sollt' ich auch mit meinem Lied vergehen,</l>
+          <l>Und sollte auch in fiebernder Erregung</l>
+          <l>Dies glüh'nde Herz zum letzten Male schlagen,</l>
+          <l>Ich nehm' ihn auf, den Kampf, ich wanke nicht!</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Als Zeus der Semele als Gott erschien,</l>
+          <l>Da mußte sie in seinem Glanz vergehen,</l>
+          <l>Sie ward verzehrt von seiner Flammenglorie;</l>
+          <l>Vermessen war das Fleh'n der Sterblichen.</l>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Es liegt ein tiefer Sinn in Deinen Worten.</l>
+          <l>Aufreiben muß sich Sappho vor der Zeit,</l>
+          <l part="I">Ich warne Dich!</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l part="F">Den Tod fürcht' ich nicht mehr,</l>
+          <l>Kein Flug ist mir zu kühn, kein Ziel zu hoch,</l>
+          <l>In meiner Kunst kann ich mich nicht beschränken,</l>
+          <l>Die höchste Kraft hab' ich stets eingesetzt,</l>
+          <l>Und siegen will ich, oder untergeh'n!</l>
+          <stage>(Sie schlägt begeistert einige mächtige Accorde auf der Leyer an und spricht rasch
+            und feurig in großer Aufregung:)</stage>
+          <lg>
+            <l>Holde Sangesweisen, Harfentöne</l>
+            <l>Wallen um mich her in vollem Chor,</l>
+            <l>Reiche Harmonien, Himmelsklänge</l>
+            <l>Ziehen zu den Sternen mich empor. – –</l>
+          </lg>
+          <lg>
+            <l><stage>(glühend)</stage> Als ich Dich in meinem Arm gehalten,</l>
+            <l>Fragend mich in Deinen Blick versenkte,</l>
+            <pb n="27"/>
+            <l>Ward mir tiefstes Leid und höchstes Glück,</l>
+            <l>Das der Gottheit hehre Macht mir schenkte. – –</l>
+          </lg>
+          <lg>
+            <l><stage>(außer sich)</stage> Und in Strömen seligen Entzückens,</l>
+            <l>In der Freude gold'nem Himmelsglanz</l>
+            <l>Fand ich auch, ergriffen und durchschauert,</l>
+            <l>Liebe, Deinen lichten Sternenkranz! – –</l>
+          </lg>
+          <lg>
+            <l>Jauchzend laß uns jetzt zur Sonne dringen,</l>
+            <l>Zu der Götter hehrem Aufenthalt,</l>
+            <l>Um den Preis des Glücks mit ihnen ringen,</l>
+            <l>Stark durch Eros' himmlische Gewalt! – –</l>
+          </lg>
+          <lg>
+            <l>Und in einem Wonnemeere</l>
+            <l>Endet dann der Todesstreit,</l>
+            <l>Erdenfesseln müssen reißen</l>
+            <l>Und die Seele ist befreit!</l>
+          </lg>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Die Wangen glühen, und die Augen leuchten</l>
+          <l>Erbebend und durchschauert, hingerissen</l>
+          <l>Von trunkener Begeisterung scheinst Du</l>
+          <l>Dem Treiben dieser dunklen Welt entrückt.</l>
+        </sp>
+        <sp who="#daphne">
+          <speaker>Daphne.</speaker>
+          <l>Von dieser Welt sind solche Töne nicht.</l>
+          <l>Apollo ist Dir nah, Du Göttliche,</l>
+          <l>Dir rauscht Castalias silberheller Born!</l>
+          <l>Ward denn dem Worte solche Macht verlieh'n,</l>
+          <l>Daß es die Seele bis zur tiefsten Tiefe</l>
+          <l part="I">Bewegen und erschüttern kann?</l>
+        </sp>
+        <sp who="#lais">
+          <speaker>Laïs.</speaker>
+          <l part="F">O niemals</l>
+          <l>Hab' ich so Schönes, Herrliches geahnt,</l>
+          <pb n="28"/>
+          <l>Emporgerissen fühl' ich mich, bezaubert</l>
+          <l>Durch Deines Liedes wunderbaren Klang!</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho</speaker>
+          <stage>(leise, wie allmählig sich erholend, zu sich selbst kommend).</stage>
+          <l>Ich hab' nur ausgesprochen, was Ihr fühltet,</l>
+          <l>Der Geist Apollos sank auf mich hernieder,</l>
+          <l>Und volle Harmonien umrauschten mich,</l>
+          <l>Die wunderbar die Seele mir erfüllten.</l>
+          <l>Es flüsterte in heil'gen Lorberbäumen,</l>
+          <l>Dort auf den reinen Höhen des Parnaß,</l>
+          <l>Ich fühlte von den Göttern mich umringt,</l>
+          <l>Und lichte Wolken hielten mich umwallt</l>
+          <l>Im gold'nen Purpurscheine des Olymp.</l>
+        </sp>
+        <sp who="#oberpriester">
+          <speaker>Oberpriester.</speaker>
+          <l>Nur selten solltest Du, o Sappho, Dich</l>
+          <l>Versteigen in solch' schwindelnd hohe Sphären!</l>
+          <l>Den Göttern nah'n wir nicht, sie nahen uns,</l>
+          <l>In scheuer Ehrfurcht müssen wir erwarten,</l>
+          <l>Daß sie der schwachen Sterblichen gedenken.</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Ein Mißton fehlt dem edlen Streite nicht.</l>
+        </sp>
+        <sp who="#lais">
+          <speaker>Laïs.</speaker>
+          <l>O höre nicht auf ihn, er war entzückt,</l>
+          <l>Wie wir es alle sind, und zur Entrüstung</l>
+          <l>Zwingt er sich nur, den frommen Schein zu wahren.</l>
+        </sp>
+        <sp who="#daphne">
+          <speaker>Daphne.</speaker>
+          <l>Wer kann nach Dir die Leyer noch berühren?</l>
+          <l>Was wird aus uns, wer achtet unsrer Lieder?</l>
+        </sp>
+        <pb n="29"/>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Die Gottheit gab Dir eine Seele, Freundin!</l>
+          <l>Was Du in Schmerz und Lust erfahren hast,</l>
+          <l>Verkünde uns Dein anmuthvolles Lied! –</l>
+          <l>Doch laßt mich jetzt allein, ich sehne mich</l>
+          <l>Nach Ruhe und nach tiefer Einsamkeit.</l>
+        </sp>
+        <stage>(Laïs und Daphne entfernen sich mit dem Oberpriester.)</stage>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>So früh willst Du von unsern Freunden scheiden?</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Die Kräfte lassen nach; der frohe Muth,</l>
+          <l>Der mich sonst aufrecht hielt, entschwindet mir.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l part="I">Du zürnst mir, Sappho?</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l part="F">Nein, ich zürne nicht.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l part="I">Ich that Dir weh.</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l part="F">Vielleicht ist es Dein Recht,</l>
+          <l>Ich hab' mich ganz in Deine Hand gegeben.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>So still, in Dich gekehrt? Liebst Du mich noch?</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Willst Du Dein Spiel von Neuem mit mir treiben?</l>
+          <l>Mir schlugen hohe Flammen aus der Seele,</l>
+          <l>Ich hab' Dich ungestüm an mich gerissen,</l>
+          <l>Von einem Sturm der Leidenschaft erfaßt,</l>
+          <l>Und nicht gefragt, ob es Dir heilsam sei.</l>
+        </sp>
+        <pb n="30"/>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Es war ein Tag der rauschendsten Triumphe,</l>
+          <l>Dir huldigte die Blüthe Griechenlands</l>
+          <l>Von nah und fern herbeigeströmt, Du sangst</l>
+          <l>Von einem Gott begeistert, hingerissen</l>
+          <l>Von trunkenem Entzücken; eine Muse,</l>
+          <l>Ja, eine Göttin glaubten wir zu seh'n:</l>
+          <l>Die Stimme bebte und die Blicke flammten.</l>
+          <l>Durchschauert von der Macht Phöbus Apollos</l>
+          <l>Fühlt' ich die Allgewalt der Poesie</l>
+          <l>Zum erstenmal in ihrer ganzen Kraft.</l>
+          <l>Was nur ein Menschenherz bewegen kann</l>
+          <l>In Haß und Liebe und in Schmerz und Wonne,</l>
+          <l>Was nur uns zu den gold'nen Sternen trägt</l>
+          <l>In lautem Jubel, seliger Extase,</l>
+          <l>Was uns erfaßt mit des Orkanes Macht,</l>
+          <l>Dem konntest Du den vollen Ausdruck geben.</l>
+          <l>Geblendet schloß ich Dich in meine Arme,</l>
+          <l>In Deinem Flammenscheine zu vergehen</l>
+          <l>Glaubt' ich, wie Semele in Zeus' Umarmung.</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Geblendet warst Du, nicht gerührt, Du kannst</l>
+          <l>Nicht fassen, was ich einst um Dich gelitten.</l>
+          <l>Die Götter sahen meinen Schmerz, nur sie,</l>
+          <l>Nur sie allein. Von den Erinnyen</l>
+          <l>Ward ich gejagt zum Reich der Finsterniß,</l>
+          <l>Ich litt die Qualen alle der Verdammten,</l>
+          <l>Und schaudernd sah' ich mich dem Wahnsinn nahe.</l>
+          <l>Durch Dich ward ich zum Aeußersten getrieben.</l>
+          <l>Du weißt nicht, was das heißt: verschmähte Liebe</l>
+          <l>Du kennst die Foltern nicht der Eifersucht,</l>
+          <l>Du hast nach einem Worte, einem Blicke,</l>
+          <pb n="31"/>
+          <l>Wohl nie verschmachtend, jammernd Dich gesehnt! –</l>
+          <l>Wie konntet Ihr ein solches Leid verhängen,</l>
+          <l>Ihr Ewigen, und weshalb über mich? –</l>
+          <l>Womit erzürnt' ich Euch? – Was that ich nur? –</l>
+          <l>So hab' ich meiner Macht mich überhoben,</l>
+          <l>Mein Glück dem Euren frevelnd gleichgestellt?</l>
+          <l>Vergaß' ich stolz der Ehrfurcht heilige Fessel?</l>
+          <l>War ich von meinem Ruhme so erfüllt,</l>
+          <l>Daß ich nichts anerkannte über mir?</l>
+          <l>War meiner Liebe Gluth, ihr wildes Lodern,</l>
+          <l>Ein frevelhaftes, rasendes Erkühnen?</l>
+          <l>Geziemte sie der Staubgebornen nicht?</l>
+          <l>Muß ich deshalb dem tiefsten Leid erliegen?</l>
+          <l>Ward nicht Prometheus auch von Euch gemartert,</l>
+          <l>Weil er des Himmels Feuer einst geraubt?</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Fast scheint mir Deine Klage übertrieben.</l>
+          <l>Ein dichterischer Sinn fühlt Alles stärker,</l>
+          <l>Gefällt sich wohl in heißen Liebesschmerzen,</l>
+          <l>Und in dem Rasen wilder Eifersucht</l>
+          <l>Sieht er der Phädra, der Medea Qualen.</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Nicht Andere, nur mich könnt' ich zerstören,</l>
+          <l>Nur Segen fleht' ich stets auf Dich hernieder.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Wer Liebe fühlt, muß Eifersucht auch kennen.</l>
+          <l>Warst Du nicht glücklich einst an meiner Seite,</l>
+          <l>Hast Du, was Dich bewegte, nicht verkündet</l>
+          <l>In manchem glüh'nden, tiefbewegten Hymnus?</l>
+          <l>Beneidet und gepriesen ward Dein Loos,</l>
+          <l part="I">Von vielen heißersehnt.</l>
+        </sp>
+        <pb n="32"/>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l part="F">Ich weiß es wohl,</l>
+          <l>Und ewig dank' ich Dir dies kurze Glück,</l>
+          <l>Das seines Gleichen nicht auf Erden sah.</l>
+          <l>O wärst Du sorglos Andern nicht gefolgt,</l>
+          <l>Doch bald vergessen war der Liebe Schwur,</l>
+          <l>Die Götter haben reich Dich ausgestattet,</l>
+          <l>Mit hohen Gaben herrlich Dich bedacht;</l>
+          <l>Der Muth des Helden und des Dichters Schwung,</l>
+          <l>Der Anmuth Zauber und der Schönheit Macht,</l>
+          <l>Sie wurden Dir in reichem Maß zu Theil.</l>
+          <l>Doch von der Treue hörtest Du wohl nie?</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Es konnten and're flüchtig mir gefallen,</l>
+          <l>Dich habe ich geliebt aus voller Seele</l>
+          <l>Und stets bin ich zu Dir zurückgekehrt.</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Was hat es mir geholfen, daß die Welt</l>
+          <l>Durch meinen Genius geblendet ward,</l>
+          <l>Daß ich zu stürmischer Begeisterung</l>
+          <l>Die Völker einst entflammte, Du hast mich</l>
+          <l>Vergessen und mißachtet!</l>
+          <l>O lerne mich versteh'n in dieser Stunde!</l>
+          <l>Noch kennst Du nicht den Geist, der mich erfüllt,</l>
+          <l>Bescheiden folgt' ich Deiner Sinnesart,</l>
+          <l>Und zeigte mich so, wie es Dir gefällt,</l>
+          <l>Die Flügel nahm ich vorsichtig zusammen,</l>
+          <l>Du ahntest nicht die Gluth der Leidenschaft,</l>
+          <l>Die in mir lodert, die mich tödten wird.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Mehr liegt der Gottheit wohl an uns, als uns,</l>
+          <pb n="33"/>
+          <l>Den schwachen Staubgebornen an der Gottheit.</l>
+          <l>Der höh're Geist muß mächtiger empfinden.</l>
+          <l>In diesem Leben sehen wir es schon;</l>
+          <l>Der Reichbegabte liebt mit tief'rer Gluth,</l>
+          <l>Und diese Gluth, ein Funken nur des Himmels,</l>
+          <l>Hat ihren Ursprung in dem Reich des Lichts,</l>
+          <l>Auf hohen Wolkenthronen des Olymp. –</l>
+          <l>Apollo liebte Daphne, jene Nymphe,</l>
+          <l>Die ihres Schicksals Größe nicht verstand.</l>
+          <l>Vor ihm, dem schönsten Gott, dem Sonnenlenker,</l>
+          <l>Dem Sänger auf den Höhen des Parnaß,</l>
+          <l>Floh sie den Schutz der Himmlischen erflehend.</l>
+          <l>Vor Phöbus' glühender Umarmung wich</l>
+          <l>Die schwache Sterbliche erschreckt zurück.</l>
+          <l>In einen Lorber ward sie da verwandelt.</l>
+          <l>Erscheint Dir Phöbus' Loos beklagenswerth?</l>
+          <l>Er suchte Liebe und er fand den Ruhm.</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Giebt es wohl Trost in solchem Augenblick?</l>
+          <l>Und was ersetzt verlor'nes Liebesglück?</l>
+          <l>Ich gönne Dich den ander'n Frauen nicht,</l>
+          <l>Sind sie es werth, von Dir geliebt zu werden?</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Ich dachte Deiner nicht in jenen Tagen,</l>
+          <l>Da ich gleich einer flüchtigen Libelle</l>
+          <l>Von einer Blume zu der andern flog.</l>
+          <l>Das war so meine Art seit frühster Zeit,</l>
+          <l>Ich konnte mich nicht binden und beschränken.</l>
+          <l>In schrankenloser Freiheit wuchs ich auf,</l>
+          <l>Zu ernsthaft nahm ich nicht die leichten Schönen,</l>
+          <l>Die nur ein kurzes Glück gewähren können.</l>
+          <pb n="34"/>
+          <l>Wie rasch vergaß ich solche Tändeleien!</l>
+          <l>Ich brach die Treue nicht, denn, von dem Reize</l>
+          <l>Des Augenblicks entzückt, wußt' ich wohl kaum</l>
+          <l>In meiner Trunkenheit von ernsten Banden.</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Ist solch ein frevles Spiel wohl unsrer würdig,</l>
+          <l>Und glaubst Du wirklich, was ich glauben soll?</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>O nimm dies flücht'ge Leben nicht zu ernst,</l>
+          <l>Wie früh kann es ein jähes Ende finden!</l>
+          <l>Durch Sorgen trübe nicht den frohen Tag,</l>
+          <l>Wer weiß, ob es nicht schon der letzte ist?</l>
+          <l>O Sappho, laß uns, eh' wir sterben müssen,</l>
+          <l>Noch alle Blumen, alle Blüthen rasch</l>
+          <l>Zusammenraffen, jeden Augenblick</l>
+          <l>Genießen, den die Götter uns noch schenken.</l>
+          <l>Wie Todesahnung zieht's durch meine Seele</l>
+          <l>In stillen Stunden und bei frohen Festen:</l>
+          <l>Dort unten bei den trüben Schatten werden</l>
+          <l>Wir uns noch nach dem goldnen Sonnenlichte,</l>
+          <l>Dem blauen Himmelszelte glühend sehnen –</l>
+          <l>Auch nach den Schmerzen, fanden wir sie doch</l>
+          <l>In dieser Welt, die uns're Heimath bleibt,</l>
+          <l>Erwachten wir in ihr doch zum Bewußtsein.</l>
+          <l>Die Zeit verrinnt, Verlornes kehrt nicht wieder,</l>
+          <l>Wir müssen uns der schönen Stunde freuen.</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho</speaker>
+          <stage>(sinnend).</stage>
+          <l>Der schönen Stunde? – Sagtest Du nicht so? –</l>
+          <l>Wer weiß, ob sie nicht schon die letzte ist. –</l>
+          <l>Ja, Du hast Recht, zum Glück bist Du geboren,</l>
+          <l>Das Reich der Freude nur ist Deine Heimath.</l>
+          <pb n="35"/>
+          <l>Wie konnt' ich Deinen frischen Sinn nur trüben</l>
+          <l>Mit banger Ahnung und mit finstern Sorgen!</l>
+          <l>Wozu mußt' ich Dir klagend anvertrau'n,</l>
+          <l>Was meine Seele schmerzlich einst bewegte?</l>
+          <l>Genug, genug, ich dachte nur an mich.</l>
+          <l>Hast Du Dich mir nicht lange schon entfremdet?</l>
+          <l>Ich muß mich sammeln, muß mich wiederfinden.</l>
+          <l>Ich will <emph>Dein Glück</emph> vor Allem, nicht das meine,</l>
+          <l>Versteh' mich recht: Nur <emph>Dein</emph> Glück ist das meine,</l>
+          <l>Ein andres kenn' ich nicht in dieser Welt.</l>
+          <l>Hab' Nachsicht, ach, ich bin zu weich, zu schwach!</l>
+          <l>Vergessen will ich, was ich einst gelitten,</l>
+          <l>Noch fühl' ich mich in Deinem Zauberbanne,</l>
+          <l>Und neue Kraft kann mir die Gottheit geben.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l>Durch Sorgen trübe nicht die schönen Stunden,</l>
+          <l>Der Lust, der Freude seien sie geweiht.</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>So wird es uns'rer heitern Jugend ziemen,</l>
+          <l>Was sich nicht ändern läßt, bleib' ungesagt.</l>
+          <l>Auf neue Freuden wollen wir noch hoffen</l>
+          <l>Und leicht und sorglos durch das Leben zieh'n.</l>
+          <stage>(für sich)</stage>
+          <l>Unruhig schweift sein Blick schon in die Ferne,</l>
+          <l>Es duldet ihn nicht mehr in meiner Nähe;</l>
+          <l>Wie Andre glühend sich nach Sappho sehnen,</l>
+          <l>So freut es ihn, wenn er sie meiden kann.</l>
+          <l>Laß kurze Zeit mich hier allein, allein</l>
+          <l>Mit meiner Leyer, meiner treuen Freundin,</l>
+          <l>Nur ihr will ich vertrau'n, was mich bewegt,</l>
+          <l>Mein Schmerz fällt Anderen nicht mehr zur Last.</l>
+          <pb n="36"/>
+          <l>Mit hellem Lächeln, strahlend, neu belebt</l>
+          <l part="I">Sollst Du mich wiederseh'n.</l>
+        </sp>
+        <sp who="#phaon">
+          <speaker>Phaon.</speaker>
+          <l part="F">Ich kehre bald zurück.</l>
+          <l>Wie ich Dir einst gefolgt, so folge mir,</l>
+          <l>Dem starken Manne und dem Liebenden.</l>
+        </sp>
+        <stage>(Er geht ab.)</stage>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Dir soll ich folgen? – Ich vermag es nicht. –</l>
+          <l>Um meine Liebe muß ich ewig ringen,</l>
+          <l>Es giebt kein Glück auf Erden ohne Kampf,</l>
+          <l>Vergebens bleibt die Sehnsucht, bleibt das Hoffen,</l>
+          <l>Vergebens jeder Traum von wahrem Frieden.</l>
+          <l>Was will ich noch in dieser trüben Welt? –</l>
+          <l>Nur Ruhe, Stille, ewiges Vergessen! –</l>
+          <l>Ich kann an Dich nicht denken ohne Schmerz,</l>
+          <l>Auf harte Proben hast Du mich gestellt,</l>
+          <l>Muthwillig schöne Träume mir zerstört,</l>
+          <l>Den hohen Flug des Genius gehemmt.</l>
+          <l>Ich wollte jubelnd zu den Sternen dringen,</l>
+          <l>Du nahmst mir allen Muth und alle Kraft,</l>
+          <l>Du nahmst die Stimmung, die Begeist'rung mir.</l>
+          <l>Was hätt' ich schaffen können, wäre nicht</l>
+          <l>Mein Leben längst in Angst und Sorgen nutzlos</l>
+          <l>Dahin gebracht; mißachtend lachtest Du</l>
+          <l>Zu meinen Qualen fast. – Dir sollt' ich folgen? –</l>
+          <l>Den goldnen Sternenkranz, der Götter Schmuck,</l>
+          <l>Willst Du von dem geweihten Haupte reißen,</l>
+          <l>Erniedrigt willst Du mich im Staube seh'n,</l>
+          <l>Gleich andern Frauen, die Du längst vergaßest,</l>
+          <l>Und die sich ruhig in ihr Schicksal fanden? –</l>
+          <l>Doch nein, so schmachvoll denkst Du nicht von mir,</l>
+          <pb n="37"/>
+          <l>Du kannst Dich nur in meine Sinnesart</l>
+          <l>Nicht finden, und aus hohen Himmelswolken</l>
+          <l>Strebst Du zurück zur Erde buntem Treiben.</l>
+          <l>Du theilst ja nur das allgemeine Loos, –</l>
+          <l>Zum Idealen läßt sich wohl nicht führen</l>
+          <l>Ein leichter Sinn, so viel ich mich auch mühe. –</l>
+          <l>So trennt uns Alles denn in dieser Welt,</l>
+          <l>Du möchtest mich noch halten, mich noch fesseln,</l>
+          <l>Und sagst mit jedem Wort Dich von mir los. –</l>
+          <l>Wie soll das enden? – Und es wird ja enden,</l>
+          <l>Denn neue Schmerzen mag ich nicht erdulden. –</l>
+          <l>Und dennoch, dennoch kann ich Dich nicht lassen!</l>
+          <l>Dich nicht mehr sehen, nicht mehr von Dir hören,</l>
+          <l>Das trag ich nicht, zu groß wär' meine Qual!</l>
+          <l>Find' ich heraus aus diesem Labyrinthe,</l>
+          <l>Giebt es noch eine Hoffnung, die nicht trügt? –</l>
+          <l>Gefangen hält mich noch der Ungetreue,</l>
+          <l>Sein Blick, sein Lächeln, seiner Stimme Klang,</l>
+          <l>Der Zauber seines Wesens fesselt mich,</l>
+          <l>Und nie auf Erden find' ich seines Gleichen.</l>
+          <l>Was klag' ich noch, da ich ihn lieben darf?</l>
+          <l>Was wär' ich noch, wenn diese Gluth erlöschte?</l>
+          <l>Ein bleicher Schatten, der zum Hades wallte,</l>
+          <l>Ein welkes Blatt, vom Winde fortgetrieben. –</l>
+          <l>Ich liebte nicht, die mich einst glühend liebten,</l>
+          <l>Jetzt trifft auch mich das nie gekannte Leid. –</l>
+          <l>Wie müde bin ich, ach wie sterbensmüde,</l>
+          <l>Sein Bild läßt nimmer mich zur Ruhe kommen,</l>
+          <l>Mich nie den heißersehnten Frieden finden. –</l>
+          <l>O könnt' ich gleich der Sonne dort erlöschen!</l>
+          <l>In glüh'ndem Purpurschein sinkt sie hernieder</l>
+          <l>Zum blauen Meer, es leuchtet in den Wolken,</l>
+          <l>Die tiefes Violet jetzt überfluthet,</l>
+          <pb n="38"/>
+          <l>Wie goldner Glanz, wie flammende Rubinen.</l>
+          <l>Und immer dunkler wird des Meeres Blau,</l>
+          <l>Und immer tiefer diese heil'ge Stille.</l>
+          <l>Apollos Sonnenwagen fährt hernieder,</l>
+          <l>Die weißen Rosse tauchen in die Fluth.</l>
+          <l>Verschwunden ist das Strahlenmeteor,</l>
+          <l>Versunken dieses Tages Herrlichkeit. –</l>
+          <l>Die Abendluft kühlt meine heiße Stirn,</l>
+          <l>Die Nacht verhüllt mit ihrem dunklen Schleier</l>
+          <l>Die Stätte meiner Leiden, meiner Freuden.</l>
+          <stage>(Sie ergreift die Leyer.)</stage>
+          <l>Goldene Leyer, Apollo geheiligt,</l>
+          <l>Tönst Du von Neuem in kundigen Händen?</l>
+          <l>Ströme des Wohllauts läßt Du erklingen,</l>
+          <l>Heiliger Weisen melodische Wogen</l>
+          <l>Kehren sie wieder?</l>
+          <l>Soll ich die Pracht der reichsten Accorde</l>
+          <l>Lieblich erwecken im Dienste des Gottes,</l>
+          <l>Rauscht am Parnasse Castalias Quelle,</l>
+          <l>Soll ich begeistert Dich offenbaren,</l>
+          <l>Fülle der Schönheit?</l>
+          <l>Laute Gelage berauschter Bacchanten</l>
+          <l>Feiern auf Naxos Dionysos' Schaaren,</l>
+          <l>Taumelnd durchrasen die Insel Ariadnens</l>
+          <l>Jauchzend in wilder, dämonischer Freude</l>
+          <l>Trunkne Mänaden.</l>
+          <l>Aber zu reineren, lichteren Höhen</l>
+          <l>Zieh'n wir im Dienste des schönsten der Götter,</l>
+          <l>Segnend begrüßen uns heilige Musen,</l>
+          <l>Maßvoll und mildernd erscheinen die Grazien,</l>
+          <l>Phöbus' Gefolge.</l>
+          <l>Lenker der Sonne, Kronion entsproßen,</l>
+          <l>Schütze die Deinen, Du kannst sie erheben,</l>
+          <pb n="39"/>
+          <l>Kannst sie befreien von drückenden Banden,</l>
+          <l>Herrscher der Seelen!</l>
+          <l>Gönne mir Ruhe auf sonnigen Höhen,</l>
+          <l>Zieh' mich zum heiligen Berge empor,</l>
+          <l>Reich mir, Kronide, die göttliche Rechte;</l>
+          <l>Wär' es mein Ende, laß sie mich fühlen,</l>
+          <l>Himmlische Wonnen! – – –</l>
+          <stage>(Entfernte Musik vom Meere ertönend.)</stage>
+          <l>O welche Töne dringen an mein Ohr? –</l>
+          <l>Klingt so bezaubernd irdischer Gesang? –</l>
+          <l>Ihm hab' ich schon gelauscht, – ich kenn' ihn wieder, –</l>
+          <l>Dort an der blauen Sapphirgrotte war's, – –</l>
+          <l>Sie nah'n, sie nah'n, – o Wonne ohne Gleichen, –</l>
+          <l>Des Meeres Götter suchen hier mich auf!</l>
+        </sp>
+        <sp who="#nereiden #tritonen">
+          <speaker>Nereiden und Tritonen</speaker>
+          <stage>(allmählich sich nähernd).</stage>
+          <l>Wir wiegen uns sorglos auf schimmernden Wellen,</l>
+          <l>Wir tauchen hervor aus durchsichtigen Tiefen,</l>
+          <l>Wir ruhen auf hellem crystallenen Grunde</l>
+          <l>Und feiern Poseidon mit frohem Gesange.</l>
+        </sp>
+        <sp who="#nereiden">
+          <speaker>Nereiden.</speaker>
+          <l>Bei uns nur ist Glück und Frohsinn und Lust,</l>
+          <l>Hier auf den blauen, den schäumenden Wogen,</l>
+          <l>Zum Himmel steigt jauchzend das jubelnde Lied,</l>
+          <l>Es giebt keine Sorgen, es giebt keinen Schmerz!</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho.</speaker>
+          <l>Ihr kennt die Qualen nicht der Staubgebornen,</l>
+          <l>Die heißen Kämpfe nicht, die ich bestand.</l>
+          <l>Unsterblichkeit sollt Ihr nicht erst erringen,</l>
+          <l>Verwandt seid Ihr dem weiten Ocean,</l>
+          <l>Belebt von seiner Kraft, von seiner Frische,</l>
+          <l>Müßt Ihr zu neuen Freuden stets erwachen.</l>
+        </sp>
+        <pb n="40"/>
+        <sp who="#nereiden">
+          <speaker>Nereiden.</speaker>
+          <l>O folge uns, und Du wirst glücklich sein,</l>
+          <l>Die Gluth des Busens kühlen rasch die Wellen,</l>
+          <l>Dir brennt die Stirn, es glühen Deine Wangen,</l>
+          <l>O komm hinab, dort ist es frisch und still!</l>
+        </sp>
+        <sp who="#tritonen">
+          <speaker>Tritonen.</speaker>
+          <l>Willst Du sie nicht lassen, die staubige Erde,</l>
+          <l>Verschmachtend Dich quälen am glühn'den Gestade?</l>
+          <l>Schon fühlst Du des Meeres erfrischende Kühle,</l>
+          <l>Die Wellen umspülen das lichte Gewand.</l>
+        </sp>
+        <sp who="#nereiden #tritonen">
+          <speaker>Nereiden und Tritonen</speaker>
+          <stage>(indem sie Sappho sanft in das Wasser ziehen).</stage>
+          <l>Nur tiefer, tiefer, namenlose Wonne,</l>
+          <l>Vertraue uns, bald wird Dir wohler sein.</l>
+        </sp>
+        <sp who="#sappho">
+          <speaker>Sappho</speaker>
+          <stage>(allmählich versinkend).</stage>
+          <l>Den Fesseln entgehen, den Leiden entfliehen,</l>
+          <l>In Harmonieen dem Leben entschwinden,</l>
+          <l>Im All sich verlieren, in Wellen verrauschen,</l>
+          <l>O selige Stunde, ich fühle Dich nahen.</l>
+        </sp>
+        <sp who="#nereiden #tritonen">
+          <speaker>Nereiden und Tritonen.</speaker>
+          <l>Bei uns nur ist Glück und Frohsinn und Lust,</l>
+          <l>O komm zu dem hohen, leukadischen Felsen</l>
+          <l>Und lausche der Stimme des brausenden Meeres,</l>
+          <l>Es giebt keine Sorgen, es giebt keinen Schmerz!</l>
+        </sp>
+        <stage>(Sappho versinkt, langsam von Tritonen und Nereiden zur Tiefe gezogen. Sanfte,
+          plätschernde Musik allmählig verhallend).</stage>
+      </div>
+      <pb n="41"/>
+      <div type="epilogue">
+        <head>Sapphisches Versmaaß.</head>
+        <lg>
+          <l>— ◡ — ◡ — ◡ ◡ — ◡ — ◡</l>
+          <l>— ◡ — ◡ — ◡ ◡ — ◡ — ◡</l>
+          <l>— ◡ — ◡ — ◡ ◡ — ◡ — ◡</l>
+          <l>— ◡ ◡ — ◡</l>
+        </lg>
+        <p>Sappho lebte um 600 v. Chr. zu Mitylene auf der Insel Lesbos. Es haben sich nur wenige
+          von ihren Dichtungen erhalten.</p>
+      </div>
+    </body>
+  </text>
+</TEI>
