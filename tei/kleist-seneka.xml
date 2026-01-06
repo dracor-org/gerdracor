@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000756" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Seneka</title>
+        <title type="sub">Ein Traurspiel</title>
+        <author>
+          <persName>
+            <forename>Ewald</forename>
+            <forename>Christian</forename>
+            <nameLink>von</nameLink>
+            <surname>Kleist</surname>
+          </persName>
+          <idno type="wikidata">Q28494</idno>
+          <idno type="pnd">118563076</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:r08t.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode"
+                >Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <author>Ewald Christian von Kleist</author>: <title level="a">Seneka[,] ein
+              Traurspiel</title>. In: <title level="s">Sämtliche Werke</title>. Herausgegeben von
+              <editor>Jürgen Stenzel</editor>. <pubPlace>Stuttgart</pubPlace>:
+              <publisher>Reclam</publisher>
+            <date>1971</date>, S. <biblScope unit="page" from="116" to="134"
+            >116–134</biblScope>.</bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="seneka" sex="MALE" ana="http://www.wikidata.org/entity/Q2054">
+            <persName>Seneka</persName>
+          </person>
+          <person xml:id="pompeja" sex="FEMALE" ana="http://www.wikidata.org/entity/Q459183">
+            <persName>Pompeja</persName>
+          </person>
+          <person xml:id="polybius" sex="MALE">
+            <persName>Polybius</persName>
+          </person>
+          <person xml:id="der_hauptmann" sex="MALE">
+            <persName>Der Hauptmann</persName>
+          </person>
+          <person xml:id="ein_soldat" sex="MALE">
+            <persName>Ein Soldat</persName>
+          </person>
+          <person xml:id="piso" sex="MALE">
+            <persName>Piso</persName>
+          </person>
+          <person xml:id="der_bote" sex="MALE">
+            <persName>Der Bote</persName>
+          </person>
+          <person xml:id="fenius" sex="MALE">
+            <persName>Fenius</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#seneka #pompeja"/>
+            <relation name="friends" mutual="#seneka #polybius"/>
+            <relation name="friends" mutual="#seneka #piso"/>
+            <relation name="friends" mutual="#seneka #fenius"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Tragedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q80930</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-01-06">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1758">
+        <desc/>
+      </event>
+      <event type="written" notBefore="1757" notAfter="1758">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000756"
+        passive="http://www.wikidata.org/entity/Q137710523"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <pb n="116"/>
+    <front>
+      <titlePage>
+        <docAuthor>Ewald Christian von Kleist</docAuthor>
+        <docTitle>
+          <titlePart type="main">Seneka</titlePart>
+          <titlePart type="sub">ein Traurspiel.</titlePart>
+        </docTitle>
+      </titlePage>
+      <div type="preface">
+        <head>Vorbericht.</head>
+        <p>Ich habe diese ersten Züge eines <emph>Traurspiels</emph> in der Absicht entworfen, um
+          nach denselben ein Traurspiel in Versen auszuarbeiten. Weil ich aber an meinem Vorsatz
+          gehindert werde, und meine Freunde mir sagen, daß auch die Anlage nicht mißfalle; so habe
+          ich sie dem Druck übergeben wollen. Wenn das Publicum so gütig davon urtheilen sollte, als
+          meine Freunde; würde ich die Mühe die ich darauf gewandt, hinlänglich belohnt halten.</p>
+        <p>Vor einigen Jahren ist schon ein deutsches Traurspiel vom Tode des Seneka,
+          herausgekommen. Man wird aber leicht sehen, daß ich es nicht gelesen habe.</p>
+        <signed>Der Verfaßer.</signed>
+      </div>
+      <castList>
+        <head>Personen:</head>
+        <castItem><role>Seneka,</role>
+          <roleDesc>ehemahliger Rath des Kaysers Nero.</roleDesc></castItem>
+        <castItem><role>Pompeja,</role>
+          <roleDesc>des Seneka Gemahlin.</roleDesc></castItem>
+        <castItem><role>Polybius,</role>
+          <roleDesc>ein Freund des Seneka und Vertrauter der Agrippina, Mutter des
+          Nero.</roleDesc></castItem>
+        <castItem><role>Piso,</role>
+          <roleDesc>ein Freund des Seneka.</roleDesc></castItem>
+        <castItem><role>Fenius,</role>
+          <roleDesc>ein Freund des Seneka.</roleDesc></castItem>
+        <castItem><role>Ein Hauptmann des Heerführers Fabius.</role></castItem>
+        <castItem><role>Die Wache.</role></castItem>
+        <castItem><role>Ein Bothe.</role></castItem>
+      </castList>
+      <set>
+        <p>Die Scene ist auf dem Land-Guthe des Seneka.</p>
+      </set>
+    </front>
+    <pb n="117"/>
+    <body>
+      <div type="scene">
+        <head>Erste Handlung.</head>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>Seneka und Pompeja.</stage>
+          <sp who="#seneka">
+            <speaker>Seneka.</speaker>
+            <p>Ja, Pompeja! Ich habe den betrüglichen Reichthümern und den gefährlichen
+              Ehrenstellen, mit mehreren Freuden entsagt, als sie übernommen. Mein künftiges Glück
+              war ungewiß, als ich sie übernahm, und es ist gewiß, da ich mich ihrer entschüttet
+              habe. – Gehab dich wohl, ungetreuer Hof, wo man mit wenigerer Sicherheit einhergeht,
+              als auf einem Boden voll unterirrdischer Höhlen, der Erschütterungen, Einsturz und
+              Verwüstung drohet! Ihr Spiele! Ihr Feste! Erfindungen des Stolzes und der schwarzen
+              Wollust! Ihr güldnen Palläste, darin Grausamkeit und ein prächtiges Elend wohnt,
+              gehabt euch wol! Der niedrige Ehrgeitz mag am Fuße eines Thrones zittern, von welchem
+              ein Henker gebietet. Und ihr, treue Gefilde! einsame und friedliche Wälder! ihr
+              Wohnungen der Ruhe und der Glückseeligkeit, seyd mir gegrüßt! Hier, Pompeja, wollen
+              wir uns selbst leben! Hier sollen die Tage unsers Lebens lauter Frühlings-Tage seyn.
+              Die geschäftige und anmuthsvolle Weltweisheit wird mich hier entzücken, und durch ihre
+              Lehren und durch ihren Reitz mein Leben verlängern. – – Allein wird mich auch die
+              Erinnerung meines geliebten und gequälten Vaterlandes verlaßen, das noch immer ein
+              Raub der Grausamkeit und wilder Leidenschaften bleibt? – O Rom! o Vaterland! o
+              Beherrscherin der Welt! wenn wirst du dich der Knechtschaft entreißen! Wie lange
+              seufzest du unter der schweren Hand der Tyranney, die dich zu Boden drückt! Wenn
+              werden Tugend und Ruhe in deine Mauren zurückkehren, und <pb n="118"/> Wißenschaften
+              und Künste darin blühen! Wie gerne wollte ich mein Leben deiner Wohlfart aufopfern,
+              wenn ich wüste, daß sie dadurch befördert würde! Allein der Wütrich würde mir das
+              Leben rauben, und Rom würde dennoch wehklagen!</p>
+          </sp>
+          <sp who="#pompeja">
+            <speaker>Pompeja.</speaker>
+            <p>So ist es Seneka! Dein Tod der gewiß erfolget wäre, wenn du Rom nicht verlaßen
+              hättest, – denn du hast dem Bösewicht nur zu kühn seine Laster und Grausamkeiten
+              vorgeworffen – dein Tod würde nur das Unglück deines Vaterlandes, und nicht sein Glück
+              befördern. Der Blutdurst des Tyrannen würde durch die Gewohnheit noch immer mehr
+              zunehmen, und was könnte ihm noch heilig seyn, nachdem er deiner nicht geschonet? –
+              Sey also vergnügt, Seneka! Das Ungewitter, das über unserm Haupt schwebte, hat sich
+              verzogen. Die Fürsehung hat dich der Welt geschenkt, und hat dich mir geschenkt; denn
+              ach! was wäre ich ohne dich! Vergiß, was nicht in deiner Gewalt ist, und überlaß die
+              Strafe des Wüterichs und die Errettung deines Vaterlandes dem Wesen, das über alles
+              wacht, das, wie du mich oft gelehret hast, alles zur Glückseeligkeit der Welt lenkt,
+              und die Thränen des Tugendhaften und des Weisen, an seinen Feinden rächet. Siehe! die
+              Natur winkt dir! Sie haucht mit unaussprechlicher Anmuth, Zufriedenheit aus. Laß dich
+              von ihr zur Freude einladen! Dein Gemüth sey so ruhig und heiter wie sie, da es, wie
+              sie, unschuldig ist. Sey groß in dir selber, und hülle dich in deine Tugend! Die
+              Niederträchtigen mögen trauren, die der hochmüthige Zorn, der blaße Neid, der finstre
+              Menschenhaß und die verborgene Schaam, wechselsweise foltert. – –</p>
+          </sp>
+          <sp who="#seneka">
+            <speaker>Seneka.</speaker>
+            <p>Es gehet mir, Pompeja, wie denen, die nach überstandenen schweren Ungewittern auf dem
+              Meere, das Ufer betreten. Der feste Boden scheinet ihnen zu wanken, das Bild der
+              rasenden Wellen ist ihnen noch immer gegenwärtig, und sie fürchten sich auf dem Lande,
+              von ihnen verschlungen zu <pb n="119"/> werden. Bald wird mir der Boden nicht mehr
+              wanken! Die Zeit wird die traurigen Bilder in mir verlöschen! Ich werde bald die Natur
+              in ihrer Schönheit sehen, und ausgebreitete grüne Gefilde, und Gärte und Hügel voll
+              fruchtbarer Bäume, wo ich jetzt noch Wellen erblicke. Die Weltweisheit wird mich zu
+              jenen hellen Höhen führen, da ich sehen werde, wie sich im unermeßlichen Raum die
+              Sterne unter meinen Füßen drehen, und da mir die Erde ein Staub, und ihre Hoheit und
+              Pracht, und die Rathschläge und der Stolz ihrer Bewohner ein Nichts seyn wird. Dann
+              wird meine Glückseeligkeit erst anfangen, und die bisherige Widerwärtigkeiten werden
+              mir dienen, mein Glück zu fühlen. Ich wäre niemals glücklich geworden, wäre ich nicht
+              unglücklich gewesen. – Aber du scheinest mir vorzuwerffen, Pompeja, daß ich dem Nero
+              seine Grausamkeiten zu kühn verwiesen. Kann man gegen einen Bösewicht zu kühn seyn?
+              Und hätte ich mich nicht durch Stillschweigen seiner Frevelthaten theilhaft gemacht?
+              Wer Lastern wehren kann, und wehrt ihnen nicht, der verübt sie selber.</p>
+          </sp>
+          <sp who="#pompeja">
+            <speaker>Pompeja.</speaker>
+            <p>Es ist deiner Denkungsart und deines Herzens würdig, daß du dich des Wütrichs
+              Bosheiten wiedersetzt. Hättest du aber nicht vielleicht durch Sanftmuth und
+              anhaltendes Bitten und Vorstellungen mehr ausgerichtet, als durch Heftigkeit? – Doch
+              Polybius kommt, er –</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Polybius und die Vorigen.</stage>
+          <sp who="#polybius">
+            <speaker>Polybius.</speaker>
+            <p>Und du hast dein Vaterland verlaßen, Seneka, und hast nicht erwogen, daß du es
+              verwayset hinterließest? Seit deiner Entfernung ist Rom ein großes Gefangenhaus, das
+              von den Klagen der Elenden und Unterdrückten wiederhallet. Welch ein Jammer, die
+              Tugend ewig mit erblaßtem Angesichte <pb n="120"/> und in Zähren zerfließen zu sehen!
+              Kein Rechtschaffner öffnet die Augen mehr der Freude; ein jeder glaubt, daß ihm ein
+              entblößtes Schwert über der Scheitel hange, und der immer erneuerte Gram verfinstert
+              ihm die Aussicht in frohere Tage. Gestern – ach, daß der schwarze Tag ewig aus dem
+              Angedenken der Menschen könnte verloschen werden! – gestern hat des Nero große und
+              tugendhafte Gemahlin, auf das Geheiß des Barbaren, den Giftbecher –</p>
+          </sp>
+          <sp who="#pompeja">
+            <speaker>Pompeja.</speaker>
+            <p>Wie? Octavia ist durch Gift hingerichtet? Octavia, meine Freundin? O Himmel, wer wird
+              nun mehr leben wollen! Was hat sie verbrochen, die Fürtreffliche, was hat sie
+              verbrochen? Wie hat sich das Bild der Schönheit und der Sanftmuth, den Haß des
+              Bösewichts zuziehen können?</p>
+          </sp>
+          <sp who="#polybius">
+            <speaker>Polybius.</speaker>
+            <p>Ja, Pompeja! sie ist nicht mehr, die schöne Unschuld, die Ehre der Menschheit, sie
+              ist nicht mehr! Nach langer Quaal hat sie, die vergangene Nacht, die große Seele dem
+              Himmel zugeschickt; und sie genießt jetzo schon den Lohn ihrer Tugend. Ihr Verbrechen
+              war ihre Unschuld und ihre großen Eigenschaften; und wehe den Edeln und
+              Rechtschaffnen, sie werden noch viele Verbrechen begehen! –</p>
+          </sp>
+          <sp who="#pompeja">
+            <speaker>Pompeja.</speaker>
+            <p>Ist es möglich, daß die Bosheit des menschlichen Herzens so weit kann getrieben
+              werden, als Nero sie treibt, daß die Natur sich so verleugnen, und so tief von ihrer
+              Höhe fallen kann! Octavia ist nicht mehr, Octavia, die würdig war, ewig zu leben!
+              Finstrer Tag, der der Welt ihr bestes Kleinod raubt, o daß ich dir die Augen öffnen
+              muß! Warum verzögre ich mit dir zu erblaßen, o meine Freundin, o meine geliebteste
+              Freundin! –</p>
+          </sp>
+          <sp who="#seneka">
+            <speaker>Seneka.</speaker>
+            <p>Erschreckliche Nachricht! Nun hat die Mordsucht des Nero den höchsten Gipfel
+              erstiegen. Die Geschichte der barbarischsten <pb n="121"/> Nationen zeigen uns keine
+              Beyspiele von ähnlicher Grausamkeit. – Aber, Pompeja, laß dich diesen Zufall nicht zu
+              sehr erschüttern! Octavia verdiente alle Glückseeligkeit, deren Sterbliche fähig sind,
+              und ich hätte selbst mein Leben willig für sie gelaßen. Allein sie war hinfällig, wie
+              alles irrdische, und hätte doch sterben müßen. Sie ist ihrer Glückseeligkeit entgegen
+              gegangen, auf die wir alle noch warten. Beruhige dein Gemüth, und mißgönne ihr ihr
+              Glück nicht. Sie ist jetzo eine Zierde des Himmels, und weiß nichts mehr von dem
+              Elende der Sterblichen. In unaussprechlicher Wonne genießt sie den Lohn ihrer großen
+              Tugenden.</p>
+          </sp>
+          <sp who="#polybius">
+            <speaker>Polybius.</speaker>
+            <p>Ja, den genießt sie. Sie hörte mit bewundernswürdiger Standhaftigkeit den Befehl des
+              Tyrannen an, und wie sie den Giftbecher getrunken hatte, versammelte sie ihre
+              gegenwärtigen Freunde und Freundinnen um sich herum und sagte: – <emph>Ach, nimmer
+                werde ich den süßen Ton vergeßen, mit dem sie dieses aussprach; und nimmer ihre
+                heitre und himmlisch-hohe Mine!</emph> Sie sagte: ›Ich gehe nun in seeligere
+              Wohnungen, in Wohnungen der Freude und der Ruhe. Gehabt euch wohl, meine Geliebtesten!
+              meine Freunde! auch ihr, die ihr jetzo nicht gegenwärtig seyd, aber meinem Fall
+              bedauern werdet; gehabt euch alle ewig wohl! Ihr seyd das einzige, das ich ungern auf
+              der Welt zurücklaße. Allein ein kleiner Zeitpunkt scheidet nur eure Glückseeligkeit
+              von der meinigen. Bald werdet ihr mir folgen; denn will ich in den ewig-heitern
+              Gefilden euch auch um mich herum versammeln, und unsre Freude wird alle Vorstellung
+              übertreffen.‹</p>
+          </sp>
+          <sp who="#pompeja">
+            <speaker>Pompeja.</speaker>
+            <p>Ich werde dir am ersten folgen, o Göttliche! ich werde dir am ersten folgen! Das
+              Leben ist mir zur Last, und der Tod hat Wollust für mich. Ach, warum bin ich bey
+              deinem Tode <pb n="122"/> nicht gegenwärtig gewesen, o du, in deren Seele die meinige
+              ganz eingewebet war! Warum habe ich dir nicht die Augen zugedrückt! Ich wäre so mit
+              dir zugleich erblaßet. – – Entsetzlicher Verlust! – Unerhörte Grausamkeit! – Wer kann
+              auftreten und Octavien nur eines Fehlers beschuldigen? Die schönste Seele wohnte in
+              dem schönsten Leibe. Die Glückseeligkeit ihrer Freunde und des ganzen menschlichen
+              Geschlechts, war ihr einziger Wunsch, ihre einzige Sorge. Die Gutthätigen und
+              Mitleidigen schienen ihr nur groß zu seyn, und sie setzte ihren einzigen Werth nur in
+              Mitleiden und Gutthätigkeit. – Und dich soll ich nicht mehr sehen, o Blume des
+              menschlichen Geschlechts! o meine geliebteste Freundin! Ich soll nicht mehr deine süße
+              Gespräche hören, und deine große Gesinnungen bewundern, die mich zur Tugend anfeurten!
+              Ach unmöglich kann ich nun das Leben länger vertragen. – Ich fühle schon die Schauer
+              des Todes in meinen Adern –</p>
+          </sp>
+          <sp who="#polybius">
+            <speaker>Polybius.</speaker>
+            <p>Du must leben, Pompeja! Du must deinem Gemahl und der Wohlfarth der Welt leben.
+              Erheitre dein Gemüth, und laß es unter dem Schmerz nicht erliegen! – Agrippina hat
+              mich abgesandt und beschwöret dich, Seneka, bey der Heiligkeit der Tugend und der
+              Religion, sie und Rom nicht zu verlaßen, sondern deine Ehrenstellen, die für dich
+              aufgehoben sind, wieder anzunehmen. Du bist der einzige, der der Raserey des Kaysers
+              Einhalt thun kann, weil er dein Ansehn bey dem Volke fürchtet. –</p>
+          </sp>
+          <sp who="#pompeja">
+            <speaker>Pompeja.</speaker>
+            <p>Der Wütrich hat die allgemeine Liebe Roms zu Octavien nicht gefürchtet, und wer ist
+              Bürge, daß er dieserwegen meines Gemals schonen werde? Er haßet ihn, der Vorwürffe
+              wegen, die er ihm schon gemacht, zu viel, als daß er sich Folgen seiner Grausamkeit
+              vorstellen sollte, und neue Vorwürffe würden ihn noch mehr erbittern. Nein, nein, man
+              gönne Seneka, nach vieler überstandner Arbeit und erlittenem <pb n="123"/> Ungemach,
+              die Ruhe, und mich überhäuffe man nicht mit Unglück, deßen schwere Lasten ich ohnedem
+              nicht mehr ertragen kann. Die Vorsehung wird schon die Rechte der Tugend behaupten,
+              und die Feßeln Roms zerbrechen.</p>
+          </sp>
+          <sp who="#polybius">
+            <speaker>Polybius.</speaker>
+            <p>Du hast zu wenig Vertrauen zu Agrippinens und zu meiner Freundschaft. Wie würde
+              Agrippina, die deinen Gemahl verehrt, von ihm etwas verlangen, dabey sein Leben Gefahr
+              liefe? Und ich, dem es nicht schwer seyn würde, für Seneka zu sterben, – dem es nicht
+              schwer seyn würde, – wie könnte ich ihm zu etwas gefährlichen rathen? Granius
+              Sylvanus, und die größten Heer führer haben sich wieder Nero verschworen, und das
+              ganze Heer wartet ungeduldig, den Wütrich zu bestraffen. Seneka soll das letzte
+              versuchen, und ihm die Folgen seines Blutdursts und Unsinns vorstellen. Entweder er
+              gehet in sich, und wird wider der Vater seines Volks, wie er es ehedem war, oder eine
+              ewige Gefangenschaft ist, mit Agrippinens Einwilligung, der Lohn seiner Bosheiten.
+              Piso, der, wie ich höre, nebst Fenius eben bey dir seyn soll, Piso, der
+              Rechtschaffene, der ehe sein Leben verlöre, als ein Laster beginge, der tugendhaft
+              seyn würde, wenn es eine Schmach wäre, Tugend auszuüben, wird den entweyhten Thron
+              besteigen, ihn durch seine Thaten heiligen, und Rom Ruhe, Sitten und Glückseelichkeit
+              wieder schenken. –</p>
+          </sp>
+          <sp who="#pompeja">
+            <speaker>Pompeja.</speaker>
+            <p>Allein, wer ist Bürge, daß mein Gemahl nicht ein Opfer von des Tyrannen erstem
+              Ausbruche des Zorns wird? Und ach! geliebtester Seneka! du bleibest ewig der Welt,
+              deinem Vaterlande und mir entrißen, wenn man gleich nachher deinen Tod an dem Wütrich
+              mit den grausamsten Martern rächete!</p>
+          </sp>
+          <sp who="#seneka">
+            <speaker>Seneka.</speaker>
+            <p>Du besorgst zu viel, Pompeja! Du fürchtest nur den Verlust meiner; fürchte mehr den
+              Untergang Roms! Polybius hat <pb n="124"/> Recht, man muß das letzte versuchen. Ich
+              werde es schon mit Glimpf, und nicht mehr, wie vormals, mit Heftigkeit thun. – Wie
+              glücklich wollte ich mich schätzen, wenn ich Rom nicht von Nero befreyen, sondern Nero
+              seinem Volke wieder schenken könnte! Er, der ehemals meine Lust, und die Lust des
+              menschlichen Geschlechts war, ach möchte er es doch wieder werden! Wie froh wollte ich
+              einmal mein graues Haupt zur Ruhe legen, wenn ich den Verirrten auf die Bahn der
+              Tugend zurück bringen könnte! Ich würde glauben, den Himmel offen zu sehen, und die
+              Freude der Unsterblichen zu empfinden!</p>
+          </sp>
+          <sp who="#polybius">
+            <speaker>Polybius.</speaker>
+            <p>Vielleicht bist du so glücklich, Seneka! Wenigstens kann man hoffen, daß die Furcht
+              für traurige Folgen, deren Herannäherung man ihm verdeckt zeigen muß, ihn von fernerer
+              Grausamkeit abhalten werde. – Ach, geliebtester Freund! Du schenkst durch deinen
+              Entschluß Agrippinen und mir das Leben, und Rom seine Wohlfarth wieder! Säume nicht,
+              dein Versprechen zu erfüllen. Ich will eilen und Agrippinen die frohe Nachricht von
+              deiner baldigen Ankunft in Rom, überbringen.</p>
+          </sp>
+          <stage>(Er geht ab.)</stage>
+          <sp who="#seneka">
+            <speaker>Seneka.</speaker>
+            <p>Und wir, Pompeja, wollen Fenius und Piso aufsuchen, und ihnen entdecken, was
+              vorgegangen ist.</p>
+          </sp>
+          <trailer>Ende der ersten Handlung.</trailer>
+        </div>
+      </div>
+      <pb n="125"/>
+      <div type="act">
+        <head>Zwote Handlung.</head>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <sp who="#polybius">
+            <speaker>Polybius,</speaker>
+            <stage>der zurück kommt.</stage>
+            <p>Himmel, was bedeutet dieses! Das Landgut des Seneka ist ringsum mit Kriegern besetzt.
+              – Ich finde keinen Ausgang, wohin ich mich wende. – Gewiß ist es um des Redlichen
+              Leben geschehen. Wenn du gerecht bist, o Gottheit! wenn du gerecht bist, so verstatte
+              dieses Unglück nicht. Schone der größten menschlichen Tugend! Schone den, der auf der
+              Welt dir am ähnlichsten ist! Verhänge über mich Schmerz und Elend, Verlust der Güter,
+              Gefangenschaft und Verweisung und alles Unglück; nur laß Seneka leben! – Der große
+              Seneka, das Bild aller menschlichen Vollkommenheiten, soll von der Hand eines
+              Verruchten erblaßen. – Welch ein Gedanke für mich! Wie werde ich des Tages Licht
+              ertragen können, wenn er nicht mehr seyn wird. Gedanke, der mich mit Schrecken und
+              Verzweiflung erfüllet, und –</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweeter Auftritt.</head>
+          <stage>Ein Hauptmann des Fabius, nebst der Wache, und Polybius.</stage>
+          <sp who="#der_hauptmann">
+            <speaker>Der Hauptmann.</speaker>
+            <p>Bist du Seneka?</p>
+          </sp>
+          <sp who="#polybius">
+            <speaker>Polybius.</speaker>
+            <stage>(Die ersten Worte bey Seite.)</stage>
+            <p>Er kennt mich nicht! – Ich bins; ich bin der, den du suchst.</p>
+          </sp>
+          <sp who="#der_hauptmann">
+            <speaker>Der Hauptmann.</speaker>
+            <p>Der Kayser hat den Heerführer Fabius Befehl ertheilet, den Tod dir anzukündigen, und
+              Fabius hat es mir aufgetragen. Du weißt, daß ich dich suche, du wirst auch dein
+              Verbrechen, die Ursachen deines Todes wißen.</p>
+          </sp>
+          <pb n="126"/>
+          <sp who="#polybius">
+            <speaker>Polybius.</speaker>
+            <p>Die Ursachen meines Todes weis ich: Nero ist ein Tyrann, und ich habe es ihm gesagt.
+              Meine Verbrechen weis ich nicht. Ich sterbe gern. Mein Gewißen klagt mich nicht an,
+              und der Tod ist mir erträglicher als die beständige Furcht des Todes, worinn der
+              Grausame alle Redliche und Edelgesinnte von Rom unterhält; erträglicher als der
+              Schmerz, den ich schon zu lange über die Unterdrückung und das Elend der
+              Rechtschaffnen empfinde. – Sage Nero, daß er ein Wütrich ist! Sage ihm, daß ich mir
+              einen Ruhm daraus mache, auf sein Geheiß zu sterben, da noch kein Bösewicht durch ihn
+              das Leben verlohren. Glückseeliges Rom, wenn ich der letzte Unschuldige bin, den er
+              hinrichtet! – <stage>(bey Seite)</stage> Ach wäre ich der letzte! Ach möchte sich
+              Seneka verbergen, und nachdem der Hauptmann zu Nero zurückgekehrt, sich mit der Flucht
+              retten! – – Aber warum hat der Heerführer Fabius mir nicht selbst den Tod
+              angekündiget? Warum gebraucht er dich zu einem so unbarmherzigen Geschäfte?</p>
+          </sp>
+          <sp who="#der_hauptmann">
+            <speaker>Der Hauptmann.</speaker>
+            <p>Ich weis nicht, warum er dir den Tod nicht selbst angekündiget. Mich aber gebraucht
+              er dazu, weil ihm meine Treue gegen den Kayser bekannt ist. Man ist nicht
+              unbarmherzig, wenn man sich gegen Verbrecher gebrauchen läßt. Du hast den Tod schon
+              durch das, was ich höre, verdient.</p>
+          </sp>
+          <sp who="#polybius">
+            <speaker>Polybius.</speaker>
+            <p>Nichtswürdiger! Nero hat die Strafe des Himmels und den Abscheu der Welt verdienet,
+              und diejenigen, die ihm in seinen Bosheiten treu sind, Marter, Verachtung und Schande.
+              – Bösewicht! baue nur dein Glück auf den Gehorsam gegen einen Unsinnigen! Er belaste
+              dich mit seiner Gnade und erfülle dich mit seinen schwarzen Freuden! Aber wiße: Hohn
+              und Schande wird dir auf dem Fuße folgen, und der Zorn des Himmels wird über dich
+              kommen, wie eine Überschwemmung. – – Und was für eine Todesart hat mir der Grausame
+              auferlegt?</p>
+          </sp>
+          <pb n="127"/>
+          <sp who="#der_hauptmann">
+            <speaker>Der Hauptmann.</speaker>
+            <p>Verräther! Der Kayser ist nur zu gnädig; er überläßt sie deiner Wahl. Ich –</p>
+          </sp>
+          <sp who="#polybius">
+            <speaker>Polybius.</speaker>
+            <p>Meiner Wahl? <stage>(er entblößt die Brust)</stage> Hier ist die Brust! Erstich mich,
+              und eile dem Kayser, dem Mörder, die frohe Nachricht von meinem Tode zu überbringen. –
+              Erstich mich, Feiger!</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Seneka und die Vorigen.</stage>
+          <sp who="#seneka">
+            <speaker>Seneka.</speaker>
+            <p>Welch ein Auftritt! Was willst du, Polybius?</p>
+          </sp>
+          <sp who="#polybius">
+            <speaker>Polybius.</speaker>
+            <p>Sterben!</p>
+          </sp>
+          <sp who="#der_hauptmann">
+            <speaker>Der Hauptmann.</speaker>
+            <p>Er will nicht sterben, der feige Seneka! Aber er muß sterben! Nero und Fabius haben
+              ihre Befehle keinem Schwachen, keinem Weichlinge anvertraut. –</p>
+          </sp>
+          <sp who="#seneka">
+            <speaker>Seneka.</speaker>
+            <p>Wenn Seneka sterben soll, so muß ich sterben, und nicht Polybius. Ich bin Seneka!</p>
+          </sp>
+          <sp who="#ein_soldat">
+            <speaker>Ein Soldat</speaker>
+            <stage>zu dem Hauptmanne.</stage>
+            <p>Dieser ist Seneka, und nicht der erstere, der sich für Seneka ausgab. Ich kenne ihn,
+              und habe ihn oft bey dem Kayser auf dem Kapitol gesehen.</p>
+          </sp>
+          <sp who="#der_hauptmann">
+            <speaker>Der Hauptmann.</speaker>
+            <p>Wunderbare Verwirrung! Schon war ich bereit, mein Schwert in den Busen des falschen
+              Seneka zu stoßen – Doch <pb n="128"/> es wäre nur von dem Blute eines Unrechten
+              gefärbt worden, aber nicht von dem Blute eines Unschuldigen. Sie sind beyde Feinde des
+              Kaysers. <stage>(zum Polybius)</stage> Aber was für ein Unsinn bewegt dich, den Tod zu
+              suchen? Durch deine treulose Gesinnungen gegen den Nero, wirst du ihn finden, ohne ihn
+              zu suchen.</p>
+          </sp>
+          <sp who="#polybius">
+            <speaker>Polybius.</speaker>
+            <p>Laß ihn mich finden, Grausamer! Laß ihn mich finden! Er ist mir nicht furchtbar. Aber
+              furchtbar ist mir der Tod des tugendhaften Seneka. Schone diesen Gerechten, diesen
+              Freund des Kaysers! der sein ganzes Leben und seine Glückseeligkeit dem Wohle des Nero
+              und des Vaterlandes aufgeopfert hat, und es noch thun wird. Schone ihn, wenn du das
+              sanfte Gefühl des Mitleidens und die Pflichten kennest, womit du der Welt und Rom
+              verbunden bist. – – Diese einzige edle That wird dich glücklicher machen, als alle
+              Ehren und Reichthümer der Welt. Das Angedenken derselben wird dich, dein ganzes Leben
+              durch, begleiten, und dir ein Schild seyn gegen Elend und widrige Zufälle.</p>
+          </sp>
+          <sp who="#der_hauptmann">
+            <speaker>Der Hauptmann.</speaker>
+            <p>Mein Glück hängt von meinem Gehorsam ab. Seneka muß sterben. Ich bin nicht befehligt,
+              seine Schuld oder Unschuld zu untersuchen; aber ihm den Tod – –</p>
+          </sp>
+          <sp who="#polybius">
+            <speaker>Polybius.</speaker>
+            <p>Glaube der Stimme Roms, wenn du mir nicht glaubst! Rom kennt seine Unschuld und
+              fordert sein Leben – Vergeblich, o Niederträchtiger, machst du dir Hoffnung, durch
+              Bosheit groß zu werden. Der baldige Fall deines tyrannischen Abgotts wird dich
+              erdrücken, du –</p>
+          </sp>
+          <sp who="#seneka">
+            <speaker>Seneka.</speaker>
+            <p>Entrüste dich nicht, Polybius! Laß mich sterben. Zu was für Ausschweifungen verleitet
+              dich deine Freundschaft gegen mich! Wie wäre es mir ergangen, wenn du, statt meiner,
+              das <pb n="129"/> Leben verlohren hättest. Ich hätte den Tod nicht gemieden, sondern
+              ihn zehnfach gefühlt. Ach Freund, ach Redlichster unter den Sterblichen! Deine
+              Freundschaft ist mir zum erstenmale zur Last. Ich kann dir meine Schuld nicht
+              bezahlen, so gern ich es wollte! Wie viel vergnügter würde ich sterben, wenn ich nur
+              deinetwegen sterben könnte, und nicht weil es Nero befiehlt! – – Ach laß mich sterben,
+              und erhalte du dein Leben zur Wohlfahrt der Welt. Es ist unedel, das Leben zu
+              verachten, so lange man der Welt Nutzen schaffen, und glücklich seyn kann. Laß
+              diejenigen es verachten, die Alter und Unglück zu Boden drückt, oder die es auf Befehl
+              grausamer Regenten hingeben müßen. –</p>
+          </sp>
+          <sp who="#der_hauptmann">
+            <speaker>Der Hauptmann.</speaker>
+            <p>Verachte es also! Du mußt es hingeben. Wähle dir eine Todesart nach eigenem Gefallen.
+              Verachte es – –</p>
+          </sp>
+          <sp who="#seneka">
+            <speaker>Seneka.</speaker>
+            <p>Ich will deine und deines Kaysers Freude nicht verzögern. Erlaube nur, daß ich von
+              meinen anwesenden Freunden Abschied nehmen darf.</p>
+          </sp>
+          <stage>(Sie gehen, ab.)</stage>
+          <trailer>Ende der zwoten Handlung.</trailer>
+        </div>
+      </div>
+      <div type="act">
+        <head>Dritte Handlung.</head>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>Seneka mit verbundnen Adern, Pompeja Paulina, Piso, Fenius, Polybius, der Hauptmann
+            und die Wache.</stage>
+          <sp who="#seneka">
+            <speaker>Seneka</speaker>
+            <stage>mit schwacher Stimme.</stage>
+            <p>Es wird nicht nöthig seyn, daß ich mir die Adern wieder öffnen laße. Schwachheit und
+              Onmacht überfällt mich schon, und ich fühle das Ende meiner Tage sich nahen. O <pb
+                n="130"/> ewiges, unbegreifliches Wesen! auf deßen Ruff das verwirrte Chaos, Leben
+              und Gestalten, Schönheit und Ordnung annahm! das auch den denkenden, unsterblichen
+              Geist des Menschen werden ließ! Ich fürchte mich nicht vor dir zu erscheinen,
+              ohngeachtet du mit mächtigem Arme die furchtbare Wage hältst, die die Thaten der
+              Sterblichen richtet. Ich bin der Vernunft, die du mir zur Führerin gegeben, gefolgt.
+              Nie hat mich Bosheit entehrt, nur Schwachheit hat mich zu Fehlern verleitet. – O
+              welche Pracht, welche Herrlichkeit muß dich umgeben, da deiner Hände Werk, der Bau der
+              Welt, die Sonne und der gestirnte Himmel mit so viel Majestät geschmückt ist! –</p>
+          </sp>
+          <sp who="#pompeja">
+            <speaker>Pompeja.</speaker>
+            <p>Du bist deiner Glückseeligkeit und dem Lohne deiner Tugend nahe, mein Seneka! Aber
+              mich und deine Freunde läßest du zurück. Ach, weßen Schmerz ist dem meinigen gleich!
+              Wer hilft mir meine Last tragen? Octaviens Tod hätte ich schon nicht überleben können,
+              wenn ich dich nicht zugleich hätte verlieren müßen. Der Besitz deiner und deine Liebe
+              überwog bey mir alle Pein, und schien mir der schrecklichsten Martern werth. Allein
+              jetzo erdrückt mich die Hand des Unglücks! Nun ist mir des Tages Licht unerträglich! –
+              Gerechter Himmel, warum tödtest du nicht gleich diejenigen, die du elend machst! Wie
+              leicht ist der Tod, aber wie entsetzlich sind oft seine Ursachen! – Doch endlich
+              befreyt er von aller Quaal. Er wird mich auch davon befreyen! Ich will ihn schon
+              finden. Ein kurzer Schmerz ist einem langen Übel vorzuziehen. Ich will mit dir
+              zugleich erblaßen, o du, die beste Helfte meines Lebens!</p>
+          </sp>
+          <sp who="#seneka">
+            <speaker>Seneka.</speaker>
+            <p>Der Tod wird mir nicht schwer, nur der Verlust deiner, o Pompeja; und der Verlust
+              eurer, meine Freunde, wird es mir. Doch ihr werdet bald bey mir seyn, und ich bin
+              glücklich genug gewesen, daß ich euch beseßen habe. O ihr vormals mein Wunsch und
+              Trost, jetzt meine Quaal, lebt ewig <pb n="131"/> wohl! Euer Glück sey euren großen
+              Verdiensten gleich. Errettet euer Vaterland von der Knechtschaft, richtet die
+              unterdruckte Tugend auf und wischet die Thränen von den Augen der Gerechten! Der sey
+              unter euch der größte, der der willigste ist, die Glückseeligkeit Roms mit Ketten und
+              Wunden, und alle seinem Blute zu erkauffen. –</p>
+          </sp>
+          <sp who="#piso">
+            <speaker>Piso.</speaker>
+            <p>Ach, er stirbt, der größte unter uns! Er stirbt, und verlieret all sein Blut für die
+              Glückseeligkeit Roms! Warum verhängst du seinem Tod, o Himmel! Warum verhängst du, daß
+              ich dabey gegenwärtig seyn muß! Ich glaubte durch meinen Besuch, mein Gemüth zu
+              erheitern, und Bilder, schwärzer als die Nacht des Todes, erfüllen es, und werden
+              niemals wieder daraus verlöschen! Künftige, weit entfernte Jahrhunderte werden deinen
+              Fall bedauren, o Edelster unter den wenigen Edeln der Welt! und sie werden dem Wütrich
+              fluchen, der ihn veranlaßt – Aber besorge nicht, daß deine Freunde jemals die
+              Gesinnungen verleugnen werden, die sie deinem Umgange und deinem Unterrichte zu danken
+              haben. Du wirst immer mitten unter uns seyn, wir werden glauben, daß dein Geist auf
+              unsre Thaten sieht, daß seine Gegenwart uns umgiebt, wie der Äther, und bey allen
+              zweyfelhaften Fällen werden wir uns befragen: wie würde dieses Seneka aufnehmen? – wie
+              würde er handeln? – – Kein dir unwürdiger Gedanke soll jemals deine Freunde entehren,
+              und wem nur ein Schatten davon vor der Seele vorübergeht, den wird Abscheu und eine
+              edle Angst erfüllen, wenn er an dich gedenkt. Er wird dein Bildniß sehen und ein
+              heiliger Schauer wird sein innerstes durchdringen. –</p>
+          </sp>
+          <sp who="#seneka">
+            <speaker>Seneka.</speaker>
+            <p>Denkt nicht zu lange an mich und meinen Tod, meine Geliebtesten! Nur eine kurze Zeit
+              beweinet euern Freund. – Mein Lebensende ist nahe! – Die Brust wird mir zu enge – Ich
+              –</p>
+          </sp>
+          <pb n="132"/>
+          <sp who="#polybius">
+            <speaker>Polybius.</speaker>
+            <p>Ach, er stirbt! – Er ist erkaltet! – Himmel, warum muß ich ein Zeuge dieses Unglücks
+              seyn! Was wird meinen Verlust ersetzen; Nimmer werde ich diesen abscheulichen Tag
+              vergeßen, der mir meinen fürtrefflichen Freund, und dem menschlichen Geschlechte seine
+              Zierde raubt. –</p>
+          </sp>
+          <sp who="#pompeja">
+            <speaker>Pompeja.</speaker>
+            <p>Nun ist es um mich geschehen! Mein Seneka! mein Seneka! wie erschrecklich beugst du
+              mich! Sage mir noch einmal, daß du mich liebst! – Er hat seinen Geist schon zu den
+              Unsterblichen geschickt. – Ach, wer errettet mich von der Angst, die meine Seele
+              überfällt! Unaussprechliche Martern zerreißen mich! Meine schwachen Füße zittern und
+              erhalten mich nicht mehr, und die Brust wallt für unnatürlicher Spannung – Wo bist du,
+              mein Seneka? Wo bist du? Kehre zu mir Verlaßenen zurück! – Nattern – Heere von Nattern
+              eilen auf dich zu, und wollen dich tödten. – Seht, wie sie den schuppichten Leib
+              krümmen! Hört, wie sie zischen! – Rettet ihn! o rettet meinen Geliebten! – Aber – wie
+              ist mir! Unbeschreibliche Angst zerrüttet meine Natur. O Tod! nur du kannst mich von
+              meinen Elend befreyen. O mein Seneka! – –</p>
+          </sp>
+          <stage>(Sie ersticht sich.)</stage>
+          <sp who="#polybius">
+            <speaker>Polybius.</speaker>
+            <p>Himmel, was für entsetzlicher Pein bin ich aufgehoben! Unglück folgt auf Unglück, und
+              Jammer auf Jammer. O mein Freund, o meine Freundinn! In was für einem Zustande
+              hinterlaßt ihr mich! Wie werde ich ohne euch die Last des Lebens ertragen! Die Ehre
+              Roms und die Ehre des menschlichen Geschlechts ist dahin, und Nero und ihre Schande
+              lebt! Wenn wirst du deine Rechte schützen, o Vorsehung! Wer wird das Werkzeug deiner
+              gewißen Rache seyn! Piso, Fenius, ihr Edeln –</p>
+          </sp>
+          <sp who="#seneka">
+            <speaker>Seneka,</speaker>
+            <stage>der sich von der Ohnmacht erhohlt.</stage>
+            <p>Ach! – Ist das Ende meiner Quaal noch nicht vorhanden? – <pb n="133"/> Eine Zeitlang
+              hatte mich das Gefühl verlaßen, allein, nun empört sich die Brust aufs neue – Himmel,
+              was ist hier geschehen! – Pompeja in ihrem Blute! Entsetzlicher Anblick, der mich mehr
+              beunruhiget, als alles, was ich jemals erlitten habe. – Pompeja! o Allzugetreue!
+              Verzeuch, verzeuch, bis ich zugleich mit dir erblaße. Öffnet mir die Binden, daß alle
+              mein Blut dahin fließe! daß meines Elendes ein Ende werde! – –</p>
+          </sp>
+          <stage>(Pompeja wird weggebracht.)</stage>
+        </div>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Ein Bote und die Vorigen.</stage>
+          <sp who="#der_bote">
+            <speaker>Der Bote.</speaker>
+            <p>Ein erschrecklicher Zufall verwüstet deine Vorwerke am Gestade des Meers, o Seneka!
+              Ich bin abgeschickt, es dir zu sagen. Gewaltige Winde erhuben sich plötzlich,
+              Finsterniß bedeckte den Himmel, so daß die Vögel der Nacht erwachten. Flammen fuhren
+              aus der Erde. Sie krachte, als wenn alle Felsen des Grundes bis zum Mittelpunkte der
+              Erde gespaltet würden. Die See schien zu klagen, erhub sich und riß aus ihren Ufern.
+              Viele Gebäude stürzten ein, vor der Macht der Wellen; und Schrecken und Angst erfüllte
+              die ganze Gegend – – Allein, ihr Götter! was sehe ich! Nun weis ich, was dieser
+              fürchterliche Zufall verkündiget hat. –</p>
+          </sp>
+          <sp who="#fenius">
+            <speaker>Fenius.</speaker>
+            <p>Ja, leider, kannst du es hier sehen! Seneka, dein Herr, der größte und der
+              tugendhafteste Mann unter allen Sterblichen, der Freund des Himmels und die Zierde der
+              Natur, stirbt, auf Befehl des elendesten Bösewichts, den jemals die Erde getragen hat.
+              Nicht nur die Seinigen werden den Tod des Edeln beweinen, sondern die weite Welt, die
+              er belehret <pb n="134"/> hat, und deren Glückseeligkeit er suchte. Der Himmel kündigt
+              ihr durch die entsetzliche und wunderbare Begebenheit die Größe ihres Verlustes an – –
+              –</p>
+          </sp>
+          <sp who="#der_bote">
+            <speaker>Der Bote.</speaker>
+            <p>Ach, welch ein Unglücksbothe muß ich seyn! Die Wuth der Elemente hat Furcht und
+              Schrecken in der Gegend, von der ich komme, verbreitet; aber die Nachricht, die ich
+              ihr bringen werde, wird alle Bewohner derselben mit Verzweiflung erfüllen. Sie werden
+              nun die wehklagende Stimme des Sturmes verstehen, und das rufende Meer wird ihnen
+              sagen, daß Seneka, ihre Freude und ihre Glückseeligkeit stirbt! Für Schmerz werden sie
+              sich die Brust schlagen und das Haar sich von ihren Häuptern reißen. O gerechte
+              Götter! o Seneka! o mein geliebtester Herr!</p>
+          </sp>
+          <stage>(Er geht ab.)</stage>
+        </div>
+        <div type="scene">
+          <head>Letzter Auftritt.</head>
+          <stage>Seneka, Piso, Polybius, Fenius, der Hauptmann und die Wache.</stage>
+          <sp who="#seneka">
+            <speaker>Seneka.</speaker>
+            <p>Nun nahet sich das Ziel meiner Tage! Athemlosigkeit und kalter Schweiß überfällt
+              mich, und die Gegenstände schwimmen mir schon vor den Augen – – O Wesen aller Wesen,
+              beflügle meinen Ausgang aus der Welt! – – – Gehabt euch wohl, meine Freunde! Gehabt
+              euch wohl! – – Ich – – sterbe!</p>
+          </sp>
+          <stage>(Der Vorhang fällt zu.)</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
