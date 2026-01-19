@@ -21,16 +21,16 @@ jobs:
     steps:
       # We need to checkout with fetch-depth 0 or 2 for push events;
       # see https://github.com/tj-actions/changed-files?tab=readme-ov-file#usage-
-      - uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         if: github.event_name == 'push'
         with:
           fetch-depth: 0
-      - uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         if: github.event_name != 'push'
 
       - name: Get changed files
         id: changed-tei-files
-        uses: tj-actions/changed-files@24d32ffd492484c1d75e0c0b894501ddb9d30d62 #v47.0.0
+        uses: tj-actions/changed-files@e0021407031f5be11a464abee9a0776171c79891 #v47.0.1
         if: github.event_name == 'push' || github.event_name == 'pull_request'
         with:
           files: |
@@ -42,14 +42,14 @@ jobs:
         run: echo 'files=tei/*.xml' >> $GITHUB_OUTPUT
 
       - name: Validate against TEI-All schema
-        uses: dracor-org/dracor-validate-action@ef4e7dbdb6eda6f8bd08d7aaf79733399782818f # v2.0.4
+        uses: dracor-org/dracor-validate-action@5430d01df4e6dd52bb99d0bf9d94f09ad5a05ed1 # v2.1.0
         with:
           files: |
             ${{ steps.changed-tei-files.outputs.all_changed_files }}
             ${{ steps.all-tei-files.outputs.files }}
 
       - name: Validate against DraCor schema
-        uses: dracor-org/dracor-validate-action@ef4e7dbdb6eda6f8bd08d7aaf79733399782818f # v2.0.4
+        uses: dracor-org/dracor-validate-action@5430d01df4e6dd52bb99d0bf9d94f09ad5a05ed1 # v2.1.0
         with:
           files: |
             ${{ steps.changed-tei-files.outputs.all_changed_files }}
