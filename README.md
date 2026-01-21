@@ -14,6 +14,14 @@ If you just want to download the corpus in its current state in XML-TEI, do this
 
 `svn export https://github.com/dracor-org/gerdracor/trunk/tei`
 
+### Credits
+
+* Editors: [Frank Fischer](https://lehkost.github.io/), [Peer Trilcke](https://www.uni-potsdam.de/de/lit-19-jhd/peertrilcke/)
+* Support during the initial compilation of the corpus from TextGrid Repository: Mathias Göbel, [Dario Kampkaspar](https://www.ulb.tu-darmstadt.de/die_bibliothek/ueberuns/organisation/kontakt_details_17792.en.jsp) (Technical University of Darmstadt/ACDH-CH, Vienna)
+* Additional encoders: [Erik Renz](https://www.germanistik.uni-rostock.de/personen/wiss-mitarbeitende/erik-renz/) (University of Rostock)
+* Bibliographic research: [Lilly Welz](https://www.temporal-communities.de/people/welz/index.html) (Freie Universität Berlin)
+* Character annotations: [Nathalie Wiedmer](https://uni-tuebingen.de/forschung/forschungsschwerpunkte/sonderforschungsbereiche/sfb-andere-aesthetik/organisation/mitglieder-alphabetisch/nathalie-wiedmer/) (University of Tübingen), [Janis Pagel](https://janispagel.de/), [Nils Reiter](https://nilsreiter.de/) (both University of Cologne)
+
 ### Character Relations
 
 Character relations encode the information provided in the *dramatis personae* and make it machine-readable. This is mainly about family and power relations.
@@ -72,4 +80,4 @@ Here is a barplot showing the number of plays per decade (outdated, not containi
 ## A Bit of History
 Until we rebuilt our working corpus under its new name GerDraCor, we've been working with an [intermediary format](https://github.com/dlina/project/tree/master/data/zwischenformat) to conduct [our research](https://dlina.github.io/talks/). This format only held structural information, not the texts themselves. Back then, our research group called itself DLINA (digitally-enabled literary network analysis). Since our focus broadened, we stopped using this name. Our future endeavours will sail under the **Programmable Corpora** flag.
 
-(README last updated on December 21, 2022.)
+(README last updated on January 21, 2026.)
