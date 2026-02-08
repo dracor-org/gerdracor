@@ -1,0 +1,2831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000765" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Die Entführung, oder: die zärtliche Mutter</title>
+        <title type="sub">Ein Drama in fünf Aufzügen</title>
+        <author>
+          <persName>
+            <forename>Friederike</forename>
+            <forename>Sophie</forename>
+            <surname>Hensel</surname>
+          </persName>
+          <idno type="wikidata">Q86931</idno>
+          <idno type="pnd">116720964</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Göttingen State and University Library</name>
+          <idno type="URL">http://resolver.sub.uni-goettingen.de/purl?PPN857233920</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">
+            <author>Friederike Sophie Hensel</author>: <title>Die Entführung, oder: die zärtliche
+              Mutter. Ein Drama in fünf Aufzügen</title>. <pubPlace>Wien</pubPlace>:
+              <publisher>Logenmeister</publisher>
+            <date>1772</date>. (S. <biblScope unit="page" from="1" to="88">1–88</biblScope>.)</bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="robert" sex="MALE">
+            <persName>Robert</persName>
+          </person>
+          <person xml:id="arabelle" sex="FEMALE">
+            <persName>Arabelle</persName>
+          </person>
+          <person xml:id="lady" sex="FEMALE">
+            <persName>Lady Danby</persName>
+          </person>
+          <person xml:id="graf" sex="MALE">
+            <persName>Graf Drummond</persName>
+          </person>
+          <person xml:id="julie" sex="FEMALE">
+            <persName>Julie</persName>
+          </person>
+          <person xml:id="karl" sex="MALE">
+            <persName>Karl</persName>
+          </person>
+          <person xml:id="lord" sex="MALE">
+            <persName>Lord Digby</persName>
+          </person>
+          <person xml:id="frau_williams" sex="FEMALE">
+            <persName>Frau Williams</persName>
+          </person>
+          <person xml:id="karoline" sex="FEMALE">
+            <persName>Karoline</persName>
+          </person>
+          <person xml:id="bedienter_4-8" sex="MALE">
+            <persName>Ein Bedienter (IV/8)</persName>
+          </person>
+          <person xml:id="bedienter_5-3" sex="MALE">
+            <persName>Ein Bedienter (V/3)</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="parent_of" active="#lady" passive="#karoline #julie"/>
+            <relation name="siblings" mutual="#karoline #julie"/>
+            <relation name="siblings" mutual="#lady #lord"/>
+            <relation name="associated_with" active="#karl" passive="#lady"/>
+            <relation name="associated_with" active="#arabelle" passive="#lady"/>
+            <relation name="associated_with" active="#frau_williams" passive="#lady"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-02-08">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1772">
+        <desc/>
+      </event>
+      <event type="premiere" when="1772-07-18">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000765"
+        passive="http://www.wikidata.org/entity/Q85756841"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <pb n="1"/>
+    <front>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">Die Entführung, oder: die zärtliche Mutter,</titlePart>
+          <titlePart type="sub">Ein Drama in fünf Aufzügen.</titlePart>
+        </docTitle>
+        <docAuthor>Von Friederike Sophie Hensel.</docAuthor>
+        <note>Mit röm. kais. allergnädigster Freyheit.</note>
+        <docImprint>
+          <publisher>Zu finden bey dem Logenmeister.</publisher>
+          <pubPlace>Wien,</pubPlace>
+          <docDate>1772.</docDate>
+        </docImprint>
+      </titlePage>
+      <pb n="2"/>
+      <castList>
+        <head>Personen.</head>
+        <castItem><role>Lady Danby,</role>
+          <roleDesc>eine Wittwe.</roleDesc></castItem>
+        <castGroup>
+          <castItem><role>Karoline,</role></castItem>
+          <castItem><role>Julie,</role></castItem>
+          <roleDesc>Ihre Töchter.</roleDesc>
+        </castGroup>
+        <castItem><role>Lord Digby,</role>
+          <roleDesc>Ihr Bruder.</roleDesc></castItem>
+        <castItem><role>Drummond,</role>
+          <roleDesc>ein Schottländischer Graf.</roleDesc></castItem>
+        <castItem><role>Karl,</role>
+          <roleDesc>ein junger Edelmann in der Lady Haus erzogen.</roleDesc></castItem>
+        <castItem><role>Arabella,</role>
+          <roleDesc>Kammerjungfer der Lady.</roleDesc></castItem>
+        <castItem><role>Frau Williams,</role>
+          <roleDesc>eine Verwalters Frau, ehemalige Kammerjungfer der Lady.</roleDesc></castItem>
+        <castItem><role>Robert,</role>
+          <roleDesc>ein Bedienter.</roleDesc></castItem>
+        <castItem><roleDesc>Verschiedene andere Bedienten.</roleDesc></castItem>
+      </castList>
+      <set>
+        <p>Der Schauplatz ist auf dem Landgut der Lady Danby.</p>
+        <p>Das Theater ist ein Saal, welcher auf beyden Seiten Thüren und in der Mitte eine
+          Hauptthüre hat.</p>
+      </set>
+      <pb n="3"/>
+      <div type="preface">
+        <head>Vorbericht.</head>
+        <p>Ohne auf die stolze Einbildung zu gerathen, daß dieses Stück welches bisher unter dem
+          Titel, Die Familie auf dem Lande, bekannt gewesen, jemals eine Art der Vollkommenheit
+          erhalten könnte: glaub ich doch, daß es durch einige kleine Veränderungen, die ich damit
+          vorgenommen, wenigstens etwas verbessert seyn wird. Dieses in einer Vorrede anzukündigen,
+          würde sehr überflüßig seyn, wenn ich es nicht darum für nothwendig hielte; weil ich auf
+          Anrathen einiger Freunde den Titel verändert habe. Der Titel, die Familie auf dem Lande
+          ist fast durchgängig getadelt worden, weil er mehr etwas <pb n="4"/> komisches, als etwas
+          rührendes zu versprechen scheint. Da nun solche Täuschungen nicht immer angenehm sind, so
+          glaube ich, daß der itzige, mehr Analog mit der Geschichte des Stücks seyn wird. Wenn man
+          mit den Veränderungen die ich gemacht, nur einigermassen zufrieden ist, so wird dieß die
+          angenehmste Belohnung für die kleine Mühe so ich mir gegeben, und die stärkste
+          Aufmunterung seyn, mich künftig zu bestreben, eine bessere Frucht meiner noch schüchternen
+          Muse zu liefern, die es itzt nur versucht hat, einen Fuß in die Welt zu setzen.</p>
+        <signed>F. S. Hensel.</signed>
+      </div>
+    </front>
+    <pb n="5"/>
+    <body>
+      <div type="act">
+        <head>Erster Aufzug.</head>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <sp who="#robert">
+            <speaker>Robert,</speaker>
+            <stage>in einem Ueberrocke, mit Papilloten in den Haaren, bringt den Saal in
+              Ordnung.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Arabelle, kömmt auf den Zähen geschlichen, Robert.</stage>
+          <sp who="#arabelle">
+            <speaker>Arabelle.</speaker>
+            <p>Robert mach er doch nicht so viel Lärm auf dem Saale, die arme gnädige Frau ist diese
+              Nacht ohnedem so spät zu Bette gegangen, er möchte sie in der Ruhe stören.</p>
+          </sp>
+          <pb n="6"/>
+          <sp who="#robert">
+            <speaker>Robert.</speaker>
+            <p>Ja, es hat sich was zu stören! Die gute Lady ist schon vor mehr als anderthalb
+              Stunden in den Garten gegangen. <stage>(sieht sich um)</stage> Da kömmt sie schon
+              wieder zurück. O wie blaß, wie niedergeschlagen sie aussieht.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Lady Danby. Robert. Arabelle.</stage>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(zu Robert)</stage>
+            <p>Ist noch niemand von London angekommen?</p>
+          </sp>
+          <sp who="#robert">
+            <speaker>Robert.</speaker>
+            <p>Nein gnädige Frau.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Ich will im Gartenhause frühstücken.</p>
+          </sp>
+          <sp who="#robert">
+            <speaker>Robert.</speaker>
+            <p>Gut, gnädige Frau.</p>
+            <stage>(Robert ab.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <stage>Lady Danby. Arabelle.</stage>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(wirft sich unruhig in einen Stuhl.)</stage>
+          </sp>
+          <sp who="#arabelle">
+            <speaker>Arabelle.</speaker>
+            <stage>(in einem schmeichelhaften Ton)</stage>
+            <p>Gnädige Frau! haben Sie mir etwa geläutet daß ich es nicht gehört habe? Sie haben
+              sich allein angezogen? Vergeben Sie mir; ich glaubte nicht, daß Sie so früh aufstehen
+              würden. Sie haben ja kaum drey Stunden geruht!</p>
+          </sp>
+          <pb n="7"/>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Ach Arabelle! heute ist der zwölfte Tag und noch ist mir das Schicksal meines Kindes
+              unbekannt. Glaubst du wohl, daß eine Mutter unter solchen Umständen einiger Ruhe fähig
+              ist? Ich war eine glückliche Mutter! ich wurde von meinen Kindern geliebt, ich hatte
+              Ursache mit ihrer Aufführung zufrieden zu seyn. Karolinens Flucht hat mein Herz
+              zerrissen, meine ganze Glückseligkeit vernichtet. Auch selbst die Hofnung sie wieder
+              zu finden, kann mich nicht trösten. Wenn ich sie zu Grunde gerichtet – lasterhaft
+              wieder finden sollte! – Ach Arabelle denn – denn würde die Entdeckung ihres
+              Aufenthalts mir schrecklicher seyn, als mir itzt die Ungewißheit ihres Schicksals
+              ist.</p>
+          </sp>
+          <sp who="#arabelle">
+            <speaker>Arabelle.</speaker>
+            <p>Gnädige Frau! martern Sie sich doch nicht mit solchen Vorstellungen. Sie ist gewiß
+              noch tugendhaft. Es muß ja alles gut werden, was um Sie ist. Ich selbst, ich gestehe
+              es, ich bin vorher lange nicht so gut gewesen als ich itzt bin. Sonst konnte ich wenig
+              von anderer Leute Unglück gerührt werden; ich gab einem Armen sehr selten, und fast
+              immer mit Widerwillen: aber seitdem ich bey Ihnen bin, so mache ich mir eine rechte
+              Wollust daraus, allen Dürftigen, die mich ansprechen etwas mitzutheilen, und wenn es
+              auch mein letzter Heller wäre. Sehn Sie was ein so fürtreffliches Beyspiel thun kann.
+              Wie! <pb n="8"/> sollte nun Ihre Tochter nicht alle Ihre Tugenden gelernt haben?</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>O mein gutes Kind! Du weist nicht welchen Gefahren ein junges unerfahrenes Mädchen
+              ausgesetzt ist. – Sollte eine unglückliche Leidenschaft – doch nein! – Vielleicht
+              quäle ich mich mit unnützen Sorgen! – Vielleicht hat ein Bösewicht sich wider ihren
+              Willen ihrer bemächtiget – vielleicht hebt sie in diesem Augenblick, da ein
+              ungerechter Zweifel an ihre Tugend mich martert, ihre Hände trostlos gen Himmel den
+              Allmächtigen um ihre Errettung anzuflehen, und –</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <stage>Lady Danby. Arabelle. Robert.</stage>
+          <sp who="#robert">
+            <speaker>Robert.</speaker>
+            <p>Gnädige Frau, den Augenblick ist der Graf Drummond angelangt.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(mit Verwunderung)</stage>
+            <p>Der Graf Drummond? Wo ist er?</p>
+          </sp>
+          <sp who="#robert">
+            <speaker>Robert.</speaker>
+            <p>Er ist mir auf den Fuße gefolgt, hier ist er schon. <stage>(geht ab.)</stage></p>
+          </sp>
+        </div>
+        <pb n="9"/>
+        <div type="scene">
+          <head>Sechster Auftritt.</head>
+          <stage>Der Graf. Lady Danby. Arabelle.</stage>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(indem sie ihm entgegen geht)</stage>
+            <p>welch ein glücklicher Zufall führt sie so unverhoft zu uns, da ich es am wenigsten
+              vermuthete?</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Die Freundschaft und Liebe waren die Triebfedern bey meinen Geschäften: Sie mußten
+              also geschwind von statten gehen; noch ehe ich es vermuthete waren sie zu Ende.
+              Allein, ich war viel zu ungeduldig Engeland wieder zu sehen, als daß ich Ihnen meine
+              Abreise erst hätte melden sollen. Verzeihen Sie mir diese Ueberraschung gnädige
+              Frau!</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Verzeihen? Sagen Sie vielmehr daß ich ihnen den verbündlichsten Dank schuldig bin.
+                <stage>(zu Arabellen)</stage> Geh, melde meiner Tochter die Ankunft unsers Gastes.
+                <stage>(Arabelle geht ab)</stage> Liebster Freund! in welcher Zeit führt sie der
+              Himmel zu mir! Sie waren ehemals Zeuge meines Glückes. Seyn sie nun ein Zeuge meines
+              Schmerzens. Ihr Mitleid, Ihr Trost, wird meinen Kummer mildern.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Himmel! so ist dieses Gerüchte doch wahr? – Wie viel Antheil nimmt mein Herz an ihrer
+              Betrübniß. Ich kam gestern spät in London an, ich erkundigte mich bey dem Wirth, ob
+              ihr Herr Bruder schon die Stadt verlassen? er theilte mir die traurige Nachricht mit:
+              daß Fräulein Karoline <pb n="10"/> schon seit eilf Tagen verschwunden sey. Sie können
+              leicht denken, wie heftig mich diese Nachricht erschreckt hat, so sehr ich auch an der
+              Gewißheit derselben zweifelte. Ich eilte also hieher, entweder sie ungegründet zu
+              finden, oder auch Ihnen, gnädige Frau! meine Dienste anzubiethen, im Fall es sich
+              wirklich so verhalten sollte.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Diese schreckliche Nachricht ist nur zu gewiß! Urtheilen Sie von meinem Zustande, da
+              seit zwölf Tagen alle Mühe vergebens gewesen ist, auch nur die geringste Spur von
+              ihrem Aufenthalt zu entdecken. Sie kennen meine Zärtlichkeit für meine Kinder. Ich
+              liebe sie beyde unaussprechlich! allein ich weiß nicht, welcher geheime Zug Karolinen
+              immer zu meinem Liebling machte. Vielleicht weil sie das letzte Pfand einer zärtlichen
+              Ehe war? Ah! vielleicht hat der Himmel mein Herz für diesen Vorzug bestrafen wollen;
+              obgleich meine Julie mir deßwegen nicht minder theuer war.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Darf ich wissen, gnädige Frau! auf welche Art ihre Entfernung zugegangen ist? und ob
+              sich gar kein Verdacht auf den Urheber davon findet?</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Nicht der geringste. Sie wissen, daß ich meinem Bruder zu Gefallen wechselsweise alle
+              Jahr, einer von meinen Töchtern erlaubte, einige Monate bey ihm in der Stadt <pb
+                n="11"/> zuzubringen. Es war also diesen Winter die Reihe an Karolinen. Sie kennen
+              die strenge Wachsamkeit meiner Schwägerinn; es würde ihren Augen gewiß nicht verborgen
+              geblieben seyn, wenn sie sich mit Jemand in ein Verständniß eingelassen hätte. Allein,
+              auch nicht ein Schatten war vorhanden, der uns auf eine solche Vermuthung hätte leiten
+              können. Nur das haben wir bemerkt, daß sie seit einiger Zeit in eine Art von
+              Schwermuth versenkt war, die wir aber bloß ihrer schwachen Gesundheit zugeschrieben
+              haben.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Dieser Umstand ist wichtig. Es ist gewiß, ihr junges Herz muß von einer Neigung
+              hingerissen worden seyn, die sie vor der Familie verborgen hat: vielleicht weil sie
+              befürchtete, man möchte sie nicht billigen. Doch wie hat sie sich den scharfsichtigen
+              Augen ihrer Tante entziehen, und ihre Flucht bewerkstelligen können?</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Da die Zeit herangekommen war, wo mein Bruder die Stadt zu verlassen gewohnt ist, bat
+              sie sich den Tag vor ihrer Abreise die Erlaubniß aus, bey einer Freundinn, die eine
+              Nachbarinn von meinem Bruder ist, zu frühstücken. Sie hatte den Bedienten, der sie
+              hinbegleitete, an der Thüre ihrer Freundinn zurück geschickt, und ihm befohlen, sie
+              erst gegen Mittag wieder abzuholen. (Dieses Haus hat einen Durchgang, der in die St.
+              Jamesstraße <pb n="12"/> führt). Da der Bediente sie abzuholen kam, sagte man ihm: daß
+              man sie zwar diesen Morgen nach der St. Jamesstraße hinausgehen, bey ihrer Freundinn
+              aber nicht gesehen hätte. Dies ist alles, was wir von ihr wissen; denn alle Mühe, die
+              wir uns in den eilf Tagen gegeben haben, ist vergebens gewesen. Auch nicht das
+              Geringste haben wir von ihr entdecken können.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Sonderbar! Aber faßen Sie sich, gnädige Frau! ich will meine Sorge mit der Ihrigen
+              vereinigen. Ich werde, wenn Sie mir es erlauben, nur heute bey Ihnen zubringen, und
+              Morgen nach London zurück gehen, wo ich alle Mühe anwenden will, Ihnen zu dienen. Ich
+              bin nicht sehr bekannt; man weiß noch nicht, welchen Antheil ich an Ihrer Familie
+              nehme – Vielleicht gelingt es mir daher am ehsten, durch dieses Geheimniß hindurch zu
+              brechen. – Doch gnädige Frau! darf ich bitten, daß Sie mir itzt erlauben, Fräulein
+              Julie meine Schuldigkeit zu bezeigen? mein Herz ist ungeduldig sie zu sehen.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Kommen Sie, liebster Freund! ich will Sie zu ihr führen. Doch da kommt sie
+              selbst.</p>
+          </sp>
+        </div>
+        <pb n="13"/>
+        <div type="scene">
+          <head>Siebenter Auftritt.</head>
+          <stage>Julie. Lady Danby. Der Graf Drummond.</stage>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <stage>(der Julie entgegen geht)</stage>
+            <p>Wie glücklich schätze ich mich, Sie wieder zu sehen! Wie lang hat mir die Zeit,
+              meiner Entfernung von Ihnen, geschienen.</p>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <p>Ich freue mich, Herr Graf! über das unvermuthete Vergnügen, sie wieder in Engelland
+              zu sehen.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>O, gnädiges Fräulein! dürft ich doch dieses nach meinen Wünschen erklären? wie
+              glücklich werde ich seyn, wenn meine Zurückkunft Ihnen nur wenigstens nicht unangenehm
+              ist, und wenn ich hoffen darf: daß Sie sich zuweilen eines Freundes erinnert
+              haben.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Zweifeln Sie nicht daran. Sie sind stets der liebste Gegenstand unserer Gespräche
+              gewesen.</p>
+          </sp>
+        </div>
+        <pb n="14"/>
+        <div type="scene">
+          <head>Achter Auftritt.</head>
+          <stage>Robert. Lady Danby. Der Graf Drummond. Julie.</stage>
+          <sp who="#robert">
+            <speaker>Robert.</speaker>
+            <p>Gnädige Frau! Sir Karl ist angekommen.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Geschwind laßt ihn hereinkommen.</p>
+          </sp>
+          <sp who="#robert">
+            <speaker>Robert.</speaker>
+            <p>Hier kömmt er schon. <stage>(ab)</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Neunter Auftritt.</head>
+          <stage>Karl. Julie. Der Graf Drummond. Lady Danby.</stage>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(küßt der Lady Danby die Hand, und macht, indem er Julie zärtlich ansieht, ihr
+              eine sehr ehrerbietige Verbeugung.)</stage>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Nun, mein Lieber Karl! darf ich hoffen, daß Ihre Bemühungen von einigem Nutzen waren?
+              – Werde ich etwas von meiner Tochter hören?</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <p>Sie sehen mich voller Verzweiflung, gnädige Frau! daß alle meine Nachforschungen
+              fruchtlos gewesen sind. Nicht das geringste habe ich entdecken können.</p>
+          </sp>
+          <pb n="15"/>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(außer sich)</stage>
+            <p>Gott! so ist denn alles umsonst! – So soll ich sie nicht wieder sehen? –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Fassen Sie Muth, gnädige Frau! große Unglücksfälle sind selten anhaltend. Oft sehen
+              wir unsern Kummer geendiget, wenn wir es am wenigsten vermuthen.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Sie haben Recht! Die Vorsicht, die mich prüft, kann die Wolken, die mich itzt
+              umgeben, auch wieder zerstreuen. <stage>(nach einer Pause)</stage> Erlauben Sie mir
+              itzt Ihnen meinen Sohn vorzustellen. Sie haben ihn noch nicht gesehen, weil er eben
+              auf seinen Reisen war, da Sie uns in Engelland besuchten. Erst seit 14. Tagen ist er
+              zurück gekommen. Sie haben seinen rechtschaffenen Vater, den würdigen Freund meines
+              Gemahls gekannt. Sein Sohn wird es nie an derjenigen Ehrerbiethung fehlen lassen, die
+              man ihrer Tugend schuldig ist. <stage>(zu Karl)</stage> Sie sehen hier den Graf
+              Drummond.</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(mit einer tiefen Verbeugung)</stage>
+            <p>Ich schätze mich glücklich, den würdigen Freund meiner Wohlthäterinn kennen zu
+              lernen, von dem ich sie seit meiner Zurückkunft so oft mit Entzückung habe sprechen
+              hören. Auch ich werde mich bestreben, mich eines kleinen Theils ihrer Freundschaft
+              würdig zu machen.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Lady Danby liebt Sie. Sie haben also schon ein Recht auf meine Freundschaft. <pb
+                n="16"/> Wenn sie anders für Sie von einigem Werthe seyn kann.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zehnter Auftritt.</head>
+          <stage>Die Vorigen. Robert.</stage>
+          <sp who="#robert">
+            <speaker>Robert.</speaker>
+            <p>Gnädige Frau! das Frühstück ist im Gartenhause bereitet.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Kommen Sie, Herr Graf! – Kommt meine Kinder. <stage>(zum Grafen, indem sie ihm die
+                Hand giebt.)</stage> Welche Gewalt hat die Freundschaft über mein Herz! Ich fühle,
+              daß ich itzt nur halb so unglücklich bin, als ich noch vor einer Stunde war.</p>
+            <stage>(sie gehen ab)</stage>
+          </sp>
+          <trailer>Ende des ersten Aufzugs.</trailer>
+        </div>
+      </div>
+      <pb n="17"/>
+      <div type="act">
+        <head>Zweyter Aufzug.</head>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>Lady Danby. Graf Drummond. (beyde im Gespräch begriffen.)</stage>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Sie wollen morgen nach London zurück? Lassen Sie uns also meine Angelegenheiten einen
+              Augenblick vergessen, um an die Ihrigen zu denken. Erlauben Sie mir, Sie zu fragen: ob
+              wir Hoffnung haben können, Sie auf immer bey uns zu behalten?</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Ja, gnädige Frau! voller Entzückung kann ich Ihnen sagen, daß mich nichts mehr davon
+              abhält. Mein Prozeß ist zu meinem Vortheil geendiget, und alle meine Sachen in Ordnung
+              gebracht. England soll nun mein Vaterland seyn. Ich werde meine Tage hier beschließen;
+              und wenn nur Ihr Kummer geendiget ist, und Sie mir noch erlauben, auf eine Verbindung
+              mit der liebenswürdigen Julie zu hoffen, so werden Sie unaussprechlich glücklich seyn.
+              Darf ich mir schmeicheln, gnädige Frau! daß Ihre Gesinnungen <pb n="18"/> noch eben so
+              gütig für mich sind, als bey meiner Abreise?</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Was könnte sie wohl ändern? Ich kenne kein größers Glück für meine Tochter, als mit
+              einem so rechtschaffenen Manne verbunden zu seyn. Auf ihr eigenes Verlangen habe ich
+              bis diesen Augenblick Julien nichts von unseren Absichten entdeckt. Nun aber, da alle
+              Hindernisse gehoben sind, will ich Sie noch heute meiner Tochter, als ihren künftigen
+              Gemahl vorstellen. Ich weiß, daß ich von ihrem Gehorsam versichert seyn kann.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Nein, gnädige Frau! verzeihen Sie mir, wenn ich Sie bitte, ihr mütterliches Ansehen
+              hier nicht zu gebrauchen. Julie muß ihre freye Wahl haben. Wenn ich so glücklich bin,
+              ihre Hand zu erhalten, so muß sie ein Geschenk ihres Herzens seyn. Ich liebe sie zu
+              sehr, als daß ich den Gedanken ertragen könnte, ihren Neigungen auch nur den
+              geringsten Zwang anzuthun. Sie werden mich zwar verbinden, wenn sie ihr meine ganze
+              Liebe zeigen; allein, welchen Ausspruch sie auch thut, so muß ihr Herz ungekränkt, und
+              von allem Zwang frey bleiben.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Wie sehr erheben diese Gesinnungen Ihren Werth in meinen Augen! Welch ein Herz wird
+              Ihre künftige Gattinn besitzen! Julie wird Ihren Werth gewiß nicht verkennen. Nur
+              dahin zielten meine Reden, <pb n="19"/> als ich vom Gehorsam sprach. So sehr ich auch
+              diese Vereinigung wünsche, bin ich doch so wenig, wie Sie selbst gesinnt, von meiner
+              Tochter bey dem wichtigsten Schritt ihres Lebens, einen blinden Gehorsam zu fodern.
+              Ich werde ihr den ganzen Umfang ihres Glücks zeigen, und denn ihr Herz den Ausspruch
+              thun lassen. – Sind Sie nun zufrieden?</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <stage>(indem er ihr die Hand küßt)</stage>
+            <p>Ja, gnädige Frau! auf diese Art überlasse ich Ihnen das Schicksal meiner Liebe.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Robert. Lady Danby. Graf Drummond.</stage>
+          <sp who="#robert">
+            <speaker>Robert.</speaker>
+            <p>Gnädige Frau! Mylord Digby, Ihr Herr Bruder – <stage>(geht ab)</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Lord Digby. Graf Drummond. Lady Danby.</stage>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <stage>(tritt stürmisch ins Zimmer, ohne den Grafen zu sehen. Mit einem rauhen
+              Tone)</stage>
+            <p>Nun, Schwester! nun kann ich Ihnen endlich die erfreuliche Nachricht bringen, wo Ihr
+              feines Töchtergen ist.</p>
+          </sp>
+          <pb n="20"/>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Himmel! – Liebster Bruder! – O ich sterbe für Freuden! – Geschwind stillen Sie mein
+              ungeduldiges Verlangen.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>O, wenn Sie Lust haben, vor Freuden zu sterben, so werden Sie wohl diesesmal noch
+              keine Gelegenheit dazu finden. Wünschen Sie sich lieber, daß wir es nie erfahren
+              hätten. Ich möchte bersten, wenn ich daran denke! – Einen solchen Schimpf! – Wenn ich
+              sie hätte – vor Ihren Augen Schwester! – ja, vor Ihren Augen wollte ich ihr den Hals
+              umdrehen.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Um des Himmels willen! reißen Sie mich aus dieser Ungewißheit. Wo ist sie? wo ist
+              mein Kind?</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Ein saubers Thierchen, wahrhaftig! Sie kennen doch den lüderlichen Kerl, der vorigen
+              Winter so frech war, um Julien anzuhalten?</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Ogliby? – –</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Ja, ja, eben der! das ist der feine Paris, der diese schöne Helena entführt hat. Sie
+              ist mit ihm auf eines seiner Freunde Landguth entlaufen. – Aber der Teufel weiß, wer
+              der schöne Freund ist, der so mildthätig gewesen, zwey solche Nichtswürdige
+              aufzunehmen – Ohne Zweifel eben ein so lüderlicher Pursche, als Ogliby. Wahrhaftig,
+              eine feine Gesellschaft für ein junges Frauenzimmer! <stage>(Lady Danby fällt ganz
+                ausser sich auf einen Stuhl)</stage> Ja, ja, Schwester! daß kömmt von <pb n="21"/>
+              Eurer klugen Erziehung her, daß ihr Eure Kinder so verzärtelt. Nun mögt ihr auch die
+              Früchte davon schmecken.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <stage>(ruft in die Scene)</stage>
+            <p>Ist niemand da? – <stage>(der Lord, der den Grafen erst gewahr wird, ist voller
+                Verwunderung ihn zu sehen. Der Graf kömmt wieder zurück, geht zur Lady)</stage>
+              Gnädige Frau! ich bitte Sie, begeben Sie sich in ihr Zimmer. Fassen Sie sich,
+              vielleicht ist die Sache nicht so schlimm, als man sie dem Lord berichtet hat.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Nicht so schlimm? – da seht, – – <stage>(sucht in der Tasche)</stage></p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Mylord, schonen Sie Ihrer Schwester! –</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <stage>Die Vorigen. Arabelle.</stage>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <stage>(zu Arabellen)</stage>
+            <p>Führe Sie Mylady in ihr Zimmer. <stage>(zur Lady)</stage> Gnädige Frau! fassen Sie
+              alle Ihre Standhaftigkeit zusammen, damit wir mit gesetztem Muth überlegen, wie wir
+              ein geschehenes Uebel wenigstens mildern können.</p>
+            <stage>(Lady Danby geht ab, indem Arabelle sie schon unter letzten Rede bis an die Thüre
+              gebracht hat)</stage>
+          </sp>
+        </div>
+        <pb n="22"/>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <stage>Graf Drummond. Lord Digby.</stage>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Nun kann sie es haben. Ich habe ihr immer gesagt, ihre Erziehung taugt nichts! Sie
+              hat den Mädchens zu viel Willen gelassen. Aber, da war ich ein harter Mann, und –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Sie sind ungerecht, Mylord! Ihre Erziehung ist an diesem Unglück gewiß nicht Schuld.
+              Zärtlichkeit, wenn sie von der Klugheit geleitet wird, ist bey der Erziehung der
+              Kinder nützlicher, als eine allzugrosse Strenge.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Ja, das sehen wir itzt. – Doch, genug von den ungerathenen Mädgen. – Ich bin voller
+              Verwunderung über Ihre Gegenwart. Wo Henker kommen Sie denn her, ohne daß man ein
+              Wörtchen davon gehört hat?</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Verzeihen Sie, daß ich Ihnen meine Schuldigkeit noch nicht habe bezeigen können. Ich
+              kam gestern erst in London an, wo ich etwas von der traurigen Geschichte hörte. Meine
+              Freundschaft für Ihre Schwester ließ mich also keine Zeit verliehren, sie zu
+              sehen.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Nun, nun, es hat nichts zu sagen; Ich haße ohnedem die Komplimente. Seyn Sie mir
+              willkommen! Wie stehts mit Ihren schottischen Geschäften? sind Sie damit zu
+              Stande?</p>
+          </sp>
+          <pb n="23"/>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Ja, Mylord! alles ist, wie ich es wünschte.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Nun, das freut mich. – Es bleibt doch noch bey unserer Abrede, wegen meiner Nichte?
+              Ich will froh seyn, wenn sie an einen ehrlichen Mann gebracht ist, ehe sie uns auch
+              noch einen Streich spielt. Haben Sie mit meiner Schwester schon gesprochen?</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Ja, Mylord! und sie ist so gütig gewesen, mir ihr Wort von neuem zu geben.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Das ist doch einmal vernünftig! Meine Nichte weiß es doch?</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Nein, noch ist keine Zeit dazu gewesen.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Keine Zeit? – o zu solchen Sachen ist immer Zeit. Doch, Sie haben Recht, es ist auch
+              nicht nöthig, sie erst zu fragen. Sie muß wohl: denn wenn wir erst Komplimente mit ihr
+              machen wollen, so wird gewiß nichts draus.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Und woher vermuthen Sie das?</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Woher? – je, weil sie immer eine widersinnige Kreatur gewesen ist; Sie hat schon
+              einmal eine vortheilhafte Verbindung ausgeschlagen; und, sehen Sie nur, da ihre
+              Schwester, die immer die sittsame vorstellte, den Streich gespielt hat: so gebe ich
+              nicht eine Priese Taback drum, daß die nicht auch lieber mit einem Taugenichts
+              fortläuft, als daß sie, zur Ehre der Familie, einen rechtschaffenen Mann heurathen
+              wird.</p>
+          </sp>
+          <pb n="24"/>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Sie gehen zu weit mit Ihrem Eyfer. Doch, lassen Sie uns davon abbrechen. Auf welche
+              Art haben Sie Karolinens Auffenthalt entdeckt? Ist die Nachricht auch gewiß? oder sind
+              es vielleicht nur bloße Muthmassungen?</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Muthmassungen? Glauben Sie denn daß ich mir was weis machen lasse? Da, lesen Sie.
+                <stage>(giebt ihm einen Brief.)</stage></p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <stage>(liest)</stage>
+            <p>»Mylord! es ist Zeit, daß Sie erfahren, wo Ihre Nichte hingekommen ist. Wir liebten
+              uns lange in Geheim. Allein, da wir die Vorurtheile kannten, die Ihre Familie wider
+              mich hatte, so wagten wir es nicht uns zu entdecken. Um unsere Liebe desto besser zu
+              verstecken, und unseren Anschlag ungehinderter auszuführen, hielt ich um Julien an,
+              weil wir wohl wußten, daß man sie mir abschlagen würde. Ich habe das kostbare Pfand
+              meiner Liebe, Karolinen, auf eines meiner Freunde Landgüther geführt, und die
+              sichersten Maßregeln genommen: so, daß sie vielleicht schon meine Gemahlinn ist, wenn
+              Sie dieses lesen. Es steht nun bey Ihnen, ob Sie uns verzeihen wollen oder nicht. Wir
+              werden in dem letzten Fall nicht weniger glücklich seyn, als in dem ersten.</p>
+            <p>Ogliby.«</p>
+            <pb n="25"/>
+            <p><stage>(der Graf giebt den Brief zurück)</stage> Trotz aller Ueberzeugung scheint es
+              mir doch unglaublich. Karoline! die Sittsamkeit selbst!</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Alles Verstellung. – Verdammte Verstellung! – Aber, glauben Sie mir, die Weiber sind
+              alle so. Der Henker kann sie nicht ergründen, wenn sie einmal angeschossen sind.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Sechster Auftritt.</head>
+          <stage>Die Vorigen. Karl.</stage>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(tritt tiefsinnnig ins Zimmer. Lord, der ihn gewahr wird, ärgert sich)</stage>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>He, Pürschgen! ist er auch schon wieder hier? <stage>(höhnisch)</stage> Doch, er
+              kommt ja wohl kürzlich aus der Stadt: Kann er nicht sagen, wo sich sein vortreflicher
+              Freund, Lord Ogliby befindet?</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <p>Mylord! ich verdiene den Vorwurf nicht. Ich gestehe es, daß er mein Freund war, ehe
+              ich ihn kannte. Aber seit meiner Zurückkunft habe ich ihn nicht gesehen. Denn schon
+              vor meiner Abreise wurde ich von seiner schändlichen Lebensart unterrichtet.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Nun, nun, nicht so groß gethan! Wir wollen nicht untersuchen, ob er im Grunde mehr
+              taugt, als jener. Es fehlt ihm vielleicht nur am Vermögen, um eben so liederlich zu
+              seyn. Aber was macht er denn schon <pb n="26"/> wieder hier? Ich habe es meiner
+              Schwester hundertmal gesagt: es schickt sich nicht, einen so jungen Menschen in einem
+              Hause zu haben, wo eine Wittwe mit erwachsenen Töchtern allein lebt. Seine Gegenwart
+              ist hier anstößig, versteht er mich, junger Pursche?</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <p>Verzeihen Sie, Mylord! Ich bin auf Befehl Ihrer Frau Schwester gekommen, um ihr von
+              meinen Bemühungen wegen Karolinen Rechenschaft zu geben.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <stage>(höhnisch)</stage>
+            <p>Und welche Nachrichten haben Sie, wenn ich fragen darf?</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <p>Keine, trotz aller Mühe die ich angewandt.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Nun, so kann ich ihm welche geben. Wenn er will, so kann er sie bey seinem ehemaligen
+              Freund, Lord Ogliby finden, mit dem sie entlauffen ist, und dessen Bekanntschaft sie
+              vielleicht Ihm zu verdanken hat. Er wird Karolinen vielleicht willkommen seyn; und mir
+              wird er einen großen Gefallen thun, wenn er geht: Denn ich kann seine Gegenwart hier
+              nicht leiden.</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(empfindlich)</stage>
+            <p>Mylord! ich verehre Sie zwar als den Bruder meiner Wohlthäterinn, allein, ich werde
+              hier keine andern Befehle, als von ihr annehmen. Nur sie kann mir gebieten zu
+              gehen.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Ich glaube gar Du unterstehst dich, mir naseweis zu begegnen – Wart, ich will Dir
+              Mores lehren.</p>
+          </sp>
+          <pb n="27"/>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Mäßigen Sie sich. Wodurch hat Karl sich einen solchen Unwillen zugezogen? Hat er Sie
+              beleidiget?</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Beleidigt? ja wahrhaftig, das wollt ich ihm rathen! Das fehlte mir noch, daß mich so
+              ein Habenichts beleidigen sollte, der ohne meine Schwester verhungern müßte. Das
+              Gehirn – –</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(hitzig)</stage>
+            <p>Danken Sie es der Verwandtschaft mit Lady Danby, daß ich die Beleydigung nicht so
+              beantworte, wie ich sie einem jeden andern beantworten würde. <stage>(zeigt auf seinen
+                Degen)</stage> Ich bin arm, es ist wahr, aber diese Armuth schändet mich nicht. Ich
+              bin ein Edelmann, und Lady Danby hat mich zu ihrem Sohn erhoben. Diesen Rang werde ich
+              zu behaupten wissen, und ihn durch keine kriechende Erduldung schimpflicher
+              Beleidigungen entehren. Nur der Bruder einer solchen Wohlthäterinn darf es wagen,
+              ungestraft in einem so unanständigen Tone mit mir zu reden.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <stage>(voller Wuth)</stage>
+            <p>He du – – –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Kommen Sie Mylord, zu Ihrer Schwester.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>So ein Taugenichts untersteht sich –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <stage>(reißt ihn fort)</stage>
+            <p>Kommen Sie, wenn Sie wollen, daß ich Ihr Freund seyn soll.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Gut. – Verdank es dem Grafen, daß ich jetzt deine Frechheit ungestraft lasse. Aber
+              wir sprechen uns wieder, wir sprechen uns wieder. <stage>(er geht mit den Grafen
+                ab)</stage></p>
+          </sp>
+        </div>
+        <pb n="28"/>
+        <div type="scene">
+          <head>Siebenter Auftritt.</head>
+          <sp who="#karl">
+            <speaker>Karl,</speaker>
+            <stage>allein.</stage>
+            <p>Geh nur, grausamer und unhöflicher Mann, der du auf deine Reichthümer trotzest; deine
+              Drohungen schrecken mich nicht. Schon lange genug habe ich deine Beleidigungen
+              ertragen. Und warum muß ich sie ertragen? Weil das Schicksaal günstiger gegen dich
+              gewesen ist, als gegen mich? – Weil du Glücksgüter besitzest die dir nichts gekostet
+              haben? – So ist es denn ein Verbrechen in dieser Welt, wenn man nicht reich ist? –
+              Verdient man darum verachtet zu werden? – <stage>(hitzig)</stage> Aber, beym Himmel!
+              ich will es nicht länger leiden – Unsinniger! gegen wem willst du dich auflehnen? ist
+              es nicht der Bruder deiner Wohlthäterinn, deiner zweyten Mutter? – Der Onkel meiner
+              Julie! – meiner Julie, die ich anbete, die ich mehr, als mich selbst, – Unglücklicher!
+              darf ich mich erkühnen dieses Wort auszusprechen? – Darf ich ihr ein Herz anbieten,
+              auf welches ich einer andern schon ein Recht gegeben? – und welch einer andern?
+              Karolinen ihrer Schwester. – Doch habe ich sie je recht geliebt? – Sie liebte mich,
+              und ihre Zärtlichkeit riß mich fort. – Allein hat sie nicht selbst meine Fesseln
+              aufgelößt, da sie sich einem andern ergeben? – So ist es; mein Herz ist in diesem
+              Augenblick <pb n="29"/> wieder frey. – Entweder meine Liebe täuscht mich, oder ich
+              habe in Juliens Blicken mein Glück gelesen. <stage>(sieht sich um)</stage> Sie kommt,
+              ich will dieses Geheimniß ergründen, und ihr Herz zu erhalten wagen.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Achter Auftritt.</head>
+          <stage>Julie. Karl.</stage>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <stage>(ängstlich)</stage>
+            <p>Um des Himmels willen Karl, was haben Sie mit meinem Onkel gehabt? ich habe ihn
+              entsetzlich auf sie schmähen hören. Der Graf wandte alle Mühe an ihn zu besänftigen.
+              Haben Sie ihn beleidiget? dieß würde mir sehr unangenehm seyn.</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <p>Sie kennen ja sein ungestümes Wesen. Einige Worte die mir aus Empfindlichkeit über
+              sein verächtliches Betragen gegen mich entfuhren, haben ihn in Wuth gebracht. Aber
+              befürchten sie nicht, daß ich je vergeße, daß er ihr Onkel ist. Ach ganz andere Sorgen
+              beschäftigen mich. Morgen, vielleicht noch heute, muß ich nach London zurück. Erlauben
+              Sie mir theureste Julie, ihnen ein Geheimniß zu entdecken, dessen Last mich zu Boden
+              drückt. Sie haben mein Glück, und Unglück in ihren Händen. Ich liebe sie, ja, ich bete
+              sie an. Zu ihren Füßen beschwör ich sie, mir mein Urtheil zu sprechen, Ihr Ausspruch –
+              –</p>
+          </sp>
+          <pb n="30"/>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <stage>(die während dieser Rede sehr unruhig gewesen, faßt sich, und fällt ihm mit einem
+              angenommenen ernsthaften Tone ein)</stage>
+            <p>Dürfen Sie sich so vergessen, mir zu einer Zeit, da alles in der größten Unruhe ist,
+              einen solchen Antrag zu thun. Ich hätte ihnen mehr Empfindungen zugetraut, als daß Sie
+              es wagen sollten mir eine Liebe zu entdecken, die, die zärtlichste Mutter vielleicht
+              beleidigen, und die Unruhe der Familie vergrössern würde, wenn ich ihr Gehör gäbe.
+              Verlassen Sie mich Karl, und machen Sie ihre Unbesonnenheit dadurch gut, daß Sie nie
+              wieder eine Neigung gegen mich erwähnen, die ich niemals billigen werde.</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <p>Sie haben recht. Ihr Haß läßt mich den ganzen Umfang meiner Verwegenheit einsehen,
+              daß ich meine Augen bis zu ihnen erhoben habe. Aber, der Himmel, der sich schon von
+              meiner Geburt an wieder mich verschworen, wollte das Maaß seiner Grausamkeit dadurch
+              voll machen, daß er mir die heftigste Liebe gegen eine Unempfindliche einflößte. Gut,
+              sie und das unversöhnliche Schicksal, das mich verfolgt, sollen befriedigt werden. Ich
+              will ihr Angesicht nie wieder sehen; aber hoffen sie nicht, Grausame, daß meine Liebe
+              eher, als mit meinem Leben aufhören wird.</p>
+            <stage>(geht voller Verzweiflung ab.)</stage>
+          </sp>
+        </div>
+        <pb n="31"/>
+        <div type="scene">
+          <head>Neunter Auftritt.</head>
+          <sp who="#julie">
+            <speaker>Julie,</speaker>
+            <stage>allein.</stage>
+            <p>Unglücklicher, der du mich anklagst, wüßtest du, daß meine Seele, von eben den
+              Martern zerrissen wird, die dich bestürmen! ja, daß ich selbst noch unglücklicher bin,
+              als du, weil ich mir den einzigen Trost versagen muß, von dir beklagt zu werden. Ach,
+              blos aus Zärtlichkeit für dich, hält dieses Herz, das du für grausam hältst, ein
+              Geständniß zurück, das dich vielleicht noch unglücklicher machen würde: denn welche
+              Hofnung können wir haben? Niemals wird meine Mutter in unsere Verbindung willigen? –
+              Aber, der Graf – Schreckliche Vermuthung – Ich sollte meine Hand einem andern geben?
+              O, niemals niemals! Ich würde diesen rechtschaffenen Mann, den ich hoch schätze,
+              selbst beleidigen, wenn ich ihm meine Hand geben wollte, da das Herz für einen andern
+              schlägt.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zehnter Auftritt.</head>
+          <stage>Lady Danby. Julie.</stage>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Ich habe dich gesucht meine Julie. – Aber du scheinst betrübt zu seyn; – Du hast
+              geweint. – Wenn dein Herz von etwas beunruhiget wird, so schütte deinen <pb n="32"/>
+              Kummer in den Schoos deiner Mutter aus. Du kannst nie eine Freundinn haben die dein
+              Vertrauen mehr verdiente. – Schon wieder Thränen? – O, mein Kind! könntest du wohl
+              Geheimniße vor einer Mutter haben, die nichts, als deine Glückseligkeit wünscht? –</p>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <stage>(küßt ihr die Hand)</stage>
+            <p>Meine theureste Mutter, ich habe keinen Kummer mehr, so bald ich sie wieder zufrieden
+              sehe; meine Thränen. –</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Laß dich an meine Brust drücken; Du bist ein gutes Kind. Itzt höre, was ich dir zu
+              sagen habe. – Du kennst die Verdienste des Grafen, du weißt wie sehr ich ihn verehre.
+              Er liebt dich aufs zärtlichste. Nur blos aus Liebe für dich hat er sein Vaterland
+              verlassen. Ich darf dir nicht erst sagen, wie sehr ich eine Verbindung mit ihm
+              wünsche; Sie würde das ganze Glück meines Lebens ausmachen, und die Schmerzen meiner
+              verwundeten Seele wenigstens lindern, wenn sie auch nicht geheilt werden können. Er
+              wird morgen verreisen. Er wünscht deine Entschließung mitzunehmen. Doch überlasse ich
+              dich ganz dir selbst. – So sehr mich auch eine abschlägige Antwort betrüben würde, so
+              will ich doch deinem Herzen keinen Zwang auflegen. Die Zärtlichkeit des Grafen selbst
+              verlangt es; dich von allem Zwang frey zu sprechen. Er will deine Hand blos dem
+              Ausspruche deines Herzens zu verdanken haben.</p>
+          </sp>
+          <pb n="33"/>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <p>Liebste, gütigste Mutter! –</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Itzt nichts mehr mein Kind; ich lasse dir Zeit zur Ueberlegung. <stage>(geht
+                ab.)</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Eilfter Auftritt.</head>
+          <sp who="#julie">
+            <speaker>Julie,</speaker>
+            <stage>allein.</stage>
+            <p>Gott! diese schreckliche Vermuthung ist also eingetroffen! wie grausam ist der
+              Kummer, der mir zubereitet wird. Jeder Entschluß wird für mich schrecklich seyn. Wenn
+              ich die Wünsche der besten, der zärtlichsten Mutter zernichte, so werde ich ihr Herz
+              noch tiefer verwunden; erfülle ich sie, so wird das meinige unter der Last der
+              grausamsten Martern erliegen. <stage>(geht ab.)</stage></p>
+          </sp>
+          <trailer>Ende des zweyten Aufzugs.</trailer>
+        </div>
+      </div>
+      <div type="act">
+        <head>Dritter Aufzug.</head>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>Graf Drummond. Lady Danby. Lord Digby.</stage>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Nun, wird das Gewinsel bald ein Ende haben Schwester? Es verlohnt sich wohl <pb
+                n="34"/> der Mühe, so viel unnütze Thränen über eine ungerathene Tochter zu
+              vergießen. Ich bin es müde lauter weinerliche Gesichter zu sehen. Ich gehe diesen
+              Abend wieder in die Stadt zurück; lassen sie mich also wissen, was sie in Ansehung des
+              saubern Paars zu thun gesonnen sind. Haben sie es überlegt.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Ja, mein Bruder. –</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Nun, was haben sie beschlossen?</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Sie ihrem Verderben zu überlassen, und sie auf ewig aus meinem mütterlichen Herzen zu
+              reißen.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Ist das ihr Ernst, Schwester? – Ein schöner Entschluß, wahrhaftig! Sie ihrem
+              Vergnügen ungestört zu überlassen, und uns von dem nichtswürdigen Kerl in die Zähne
+              hinein auslachen zu lassen! das fehlte mir noch! Nein, bey meiner Seele! – Doch, ich
+              hoffe, Schwester, daß das ihr Ernst nicht ist.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Sie können versichert seyn, daß es mein fester Entschluß ist. Der unwürdige
+              Gegenstand ihrer Wahl selbst wird ihre Strafe seyn, und mir gar zu früh alle die
+              Qualen an ihr rächen die sie mir verursacht.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Gut, Schwester: wenn Sie so einfältig seyn, und den Schimpf so gutwillig verschlucken
+              wollen, so will ich für sie denken. Ich will es wahrhaftig nicht leiden, daß die
+              Schlange uns allen so eine Nase gedreht hat. Morgen des Tages will ich sie dem
+              verdammten Kerl durch Hülfe der Gesetze entreissen lassen; <pb n="35"/> Sie soll
+              heraus, er mag sie auch verborgen haben wo er will.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Nicht zu hitzig, Mylord; nehmen Sie sich Zeit, die Sache besser zu überlegen, und die
+              Ehre ihrer Familie zu Rathe zu ziehen.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Eben zur Ehre der Familie will ich es thun, die Nichtswürdige! Zeit Lebens
+              einsperren, und ihren vortrefflichen Geliebten nach der größten Strenge bestrafen
+              lassen.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Sie bedenken es nicht, mein Freund: Solche Sachen, wenn sie einmal geschehen sind,
+              muß man vor der Welt zu unterdrücken, und nicht weiter auszubreiten suchen. Wenn sich
+              Ogliby mit ihrer Nichte vermählt hat, so wird die Welt einen Fehltritt leicht
+              vergessen, den man ihrer Jugend, und der Verblendung einer heftigen Leidenschaft,
+              zuschreiben kann.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Aber, Sie bedenken nicht Freund, daß man dem gemeinen Wesen ein Beyspiel schuldig
+              ist, das andere ungerathene Töchter abschrecken kann, ihre Familie zu beschimpfen.
+              Zudem meynen Sie, daß ich ihr den Streich soll so hingehen lassen? wenn sie nicht aus
+              meinem Hause entlaufen wäre, so wollte ich noch nichts sagen; Aber nun fällt der
+              Schimpf doppelt auf mich. Man wird mich für einen Dummkopf halten, daß ich mich so
+              habe betrügen lassen. – Nein Herr, bey meiner Seele! das leide ich nicht. Sie soll für
+              den Verdruß büßen den sie uns allen gemacht hat.</p>
+          </sp>
+          <pb n="36"/>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Ich werde niemals darein willigen, Bruder; ich habe mich erklärt, und ich bestehe
+              fest darauf. Ich hoffe Sie werden mir das Recht in dieser Sache nicht benehmen, und
+              nichts ohne meine Einwilligung thun. –</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Ich möchte bersten! – Was! ihr wollt – –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Verzeihen Sie mir, Mylord, daß ich ganz auf Ihrer Schwester Seite trete, und daß ich
+              Ihnen sage, daß sie vollkommen nach den Regeln der Vernunft handelt. Ueberlegen Sie es
+              nur, und Sie werden finden, daß die Ehre der Familie es erfordert, von dieser Sache
+              kein weiteres Aufsehen zu machen.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Meynen Sie das im Ernste, Herr Graf? – Glauben Sie wirklich, daß es gut ist, wenn wir
+              stille schweigen?</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Ganz gewiß, ich würde nie einen Rath geben, der Ihnen Nachtheil bringen könnte. Ich
+              nehme zu viel Antheil an demjenigen, was diese Familie angeht.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Nun, wenn Sie glauben daß es gut ist, so mag es drum seyn. Ich weiß wohl, Sie
+              überlegen eine Sache besser, als unser einer: ich will Ihnen also folgen. Aber, das
+              sage ich Ihnen Schwester: nicht über Ihre Schwelle muß sie gelassen werden; nicht
+              einen Heller muß sie von Ihnen bekommen; Sie muß enterbt werden, und sich niemals
+              unterstehen zu sagen, daß sie meine Nichte ist.</p>
+          </sp>
+          <pb n="37"/>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Ich verspreche es Ihnen Bruder, daß Sie mein Angesicht nie wieder sehen soll.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Gut. – Und Julie muß noch heute dem Grafen ihr Wort geben, oder –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Mylord, darf ich Sie bitten mir Gesellschaft zu leisten. Ich habe eben erfahren, daß
+              sich Lady Alton auf ihrem Landhause befindet, und da es so nahe in der Nachbarschaft
+              ist, so möchte sie empfindlich werden, wenn ich wieder in die Stadt zurück kehrte,
+              ohne ihr aufgewartet zu haben. Sie wissen, ihr Gemahl war einer meiner besten
+              Freunde.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Zur Lady Alton? – Nein, Herr Graf, da werde ich nicht mitgehen. Ich kann das Weib
+              nicht ausstehen; sie redet in lauter Sittensprüchen. Die klugen Weiber sind mir
+              unerträglich. Man muß immer denken wenn man mit ihnen spricht, um sich keine höhnische
+              Gesichter reissen zu lassen; und das ist meine Sache nicht.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Unser Besuch soll ganz kurz seyn.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Nein, nein, ich will Ihnen das Vergnügen allein gönnen; ich weiß wohl, Sie
+              vernünfteln gerne. Meine gewöhnliche Stunde zur Mittagsruhe ist ohnedem schon bald
+              vorbey; und ich bin den ganzen Tag keine Priese Taback werth, wenn ich den Schlaf
+              übergehe.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <stage>(zu Lady)</stage>
+            <p>So erlauben Sie mir denn Mylady, daß ich Sie auf eine kurze Zeit <pb n="38"/>
+              verlasse, Ihrer Freundinn meine Schuldigkeit zu bezeugen.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Ich will Sie nicht abhalten Herr Graf; doch hoffe ich Sie bald wieder zu sehen.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Lord Digby. Lady Danby.</stage>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Und ich will indessen meinen Mittagsschlaf verrichten; damit ich mit vollen Kräften
+              das große Werk, mit Julien, und dem Grafen, zu Stande bringen kann: Denn das sag ich
+              Ihnen Schwester, es muß heute zur Richtigkeit kommen <stage>(will abgehen, kehrt aber
+                wieder um)</stage> Noch eins: Sie werden doch Karln heute wieder nach London
+              schicken?</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Aber, Lieber Bruder, warum wollen Sie nun dem armen Karl einige Stunden mißgönnen,
+              die er hier zubringen kann?</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Warum? Ich habe es Ihnen schon tausendmal gesagt; es schickt sich nicht die Welt
+              spricht davon. –</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Die Welt würde sehr unvernünftig handeln, wenn sie sich über die Besuche dieses
+              jungen Menschen aufhalten sollte, da man weiß daß ich ihn als meinen Sohn ansehe.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Unvernünftig oder nicht; genug daß sie es thut. Und wenn es die Welt auch nicht <pb
+                n="39"/> thäte, so ist mir doch seine Gegenwart anstößig; ich habe meine Ursachen
+              dazu. Und was meine Nichte anlangt, so können Sie indessen mit ihr sprechen. Sobald
+              ich ausgeschlaffen habe und der Graf zurück kömmt, muß sie ja sagen, wenn wir gute
+              Freunde bleiben sollen. Verstehen Sie mich Schwester? darnach kann sie sich richten,
+              nicht einen Augenblick länger.</p>
+            <stage>(geht ab.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <sp who="#lady">
+            <speaker>Lady Danby,</speaker>
+            <stage>allein.</stage>
+            <p>Immer stürmisch. – Welch ein Mann. –</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <stage>Arabelle. Lady Danby.</stage>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Wo ist meine Tochter? –</p>
+          </sp>
+          <sp who="#arabelle">
+            <speaker>Arabelle.</speaker>
+            <p>Ich habe sie vorhin im Garten gesehen.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Sage ihr, daß ich sie in meinem Zimmer erwarte. <stage>(geht ab.)</stage></p>
+          </sp>
+        </div>
+        <pb n="40"/>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <sp who="#arabelle">
+            <speaker>Arabelle,</speaker>
+            <stage>allein.</stage>
+            <p>Ich kann gar nicht klug werden, was wieder neues vorgegangen ist. Das Fräulein ist so
+              unruhig, und der arme Karl – Ha, da kömmt das gnädige Fräulein.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Sechster Auftritt.</head>
+          <stage>Julie. Arabelle.</stage>
+          <sp who="#arabelle">
+            <speaker>Arabelle.</speaker>
+            <p>Es ist gut, daß Sie kommen gnädiges Fräulein. Ihre Mama erwartet Sie in ihrem Zimmer,
+              sie will Sie sprechen. <stage>(Julie will abgeben, Arabelle hält sie
+              zurück.)</stage></p>
+          </sp>
+          <sp who="#arabelle">
+            <speaker>Arabelle.</speaker>
+            <p>O gnädiges Fräulein, nur ein Wort! der Mylord, ihr Onkel, muß gewiß dem armen Sir
+              Karl wieder Verdruß gemacht haben: denn er kam vor einer Weile ganz betrübt aus seinem
+              Zimmer; Sene Augen waren noch ganz vom Weinen aufgeschwollen. Er rief seinem
+              Bedienten, und befahl ihm, die Pferde um 4. Uhr fertig zu halten.</p>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <stage>(unruhig)</stage>
+            <p>Wo ist er itzt? – –</p>
+          </sp>
+          <sp who="#arabelle">
+            <speaker>Arabelle.</speaker>
+            <p>Der Graf kam gleich aus dem Saale, er hatte Karls Befehl an seinen Bedienten gehört,
+              und bat ihn recht sehr bis morgen zu warten, damit sie zusammen nach London fahren
+              können. Karl wollte nicht, <pb n="41"/> aber der Graf zog ihn halb mit Gewalt in den
+              Wagen und fuhr mit ihm zur Lady Alton, nachdem er zuvor Karls Bedienten zugeruffen,
+              sein Herr würde erst morgen in die Stadt zurück gehen.</p>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <p>Sobald sie wieder zurück kommen, so sage sie dem Grafen, daß ich ihn zu sprechen
+              wünschte. <stage>(geht ab)</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Siebenter Auftritt.</head>
+          <stage>Frau Williams. Arabelle.</stage>
+          <sp who="#frau_williams">
+            <speaker>Fr. Williams.</speaker>
+            <p>Wo ist die gnädige Frau? Ich muß sie unverzüglich sprechen; es ist höchst
+              wichtig.</p>
+          </sp>
+          <sp who="#arabelle">
+            <speaker>Arabelle.</speaker>
+            <p>Sie ist in ihrem Zimmer, sie hat etwas mit dem Fräulein zu reden.</p>
+          </sp>
+          <sp who="#frau_williams">
+            <speaker>Fr. Williams.</speaker>
+            <p>Ich muß sie den Augenblick sprechen.</p>
+          </sp>
+          <sp who="#arabelle">
+            <speaker>Arabelle.</speaker>
+            <p>Nun, so warte Sie, ich will es ihr sagen. <stage>(geht in der Lady Zimmer
+                ab.)</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Achter Auftritt.</head>
+          <sp who="#frau_williams">
+            <speaker>Frau Williams,</speaker>
+            <stage>allein.</stage>
+            <p>Ich fürchte sie wird mir nacheilen, mich dünkt ich höre schon ein Geräusch. O, wenn
+              ich nur die Lady erst gesprochen hätte.</p>
+          </sp>
+        </div>
+        <pb n="42"/>
+        <div type="scene">
+          <head>Neunter Auftritt.</head>
+          <stage>Lady Danby. Julie. Arabelle. Frau Williams.</stage>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Sie erschreckt mich Frau Williams, was hat sie mir zu sagen?</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zehnter Auftritt.</head>
+          <stage>Die Vorigen. Einige Bediente, hernach Karoline.</stage>
+          <stage>(Die Bedienten drängen sich herein, einer will dem andern zuvorkommen, schreyen
+            voller Freuden) Fräulein Karoline.</stage>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <stage>(kömmt zu gleicher Zeit gelaufen, und sieht sich ganz verstört um, läuft aber, da
+              sie ihre Mutter sieht, auf sie zu. Diese sinkt voll Schrecken auf einen Stuhl;
+              Karoline schlingt sich um ihre Knie, und läßt den Kopf in der Lady Schoos
+              sinken.)</stage>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <stage>(steht ganz versteinert. Frau Williams winket den Bedienten fortzugehen;)
+              und</stage>
+          </sp>
+          <sp who="#arabelle">
+            <speaker>Arabelle.</speaker>
+            <stage>(giebt der Lady etwas zu riechen. Lady erholt sich, steht auf, reißt sich von
+              Karolinen los.)</stage>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Gütiger Gott! welch eine Erscheinung! <stage>(Karoline fällt ihr um den Hals; <pb
+                  n="43"/> Lady hält sie von sich ab)</stage> Ungerathenes, undankbares Kind! was
+              suchst du hier?</p>
+          </sp>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <p>Sie wollen mich also nicht annehmen? O, Gott! wo soll ich hinfliehen? Ich werde dem
+              grausamen Menschen wieder in die Hände fallen; und da werden sie mich umbringen.
+                <stage>(läuft zu Julie)</stage> O meine Schwester, willst du deine arme Karoline
+              auch fortstossen? Kennest du mich nicht mehr? Ich muß mich freylich sehr verändert
+              haben, denn ich habe viel, viel ausgestanden; aber du kannst mir glauben daß ich deine
+              Schwester bin. <stage>(Julie fällt ihr um den Hals)</stage> Du erkennst mich also? O,
+              Gott lob! nun wird meine Mama auch glauben daß ich ihre Tochter bin, und mich nicht
+              verstossen. <stage>(läuft zur Lady)</stage> Nicht wahr, meine gute Mama, sie nehmen
+              mich wieder vor dem bösen Menschen in Schutz? O, sie haben mich sehr gequält! mein
+              Kopf ist ganz davon umgekehrt worden.</p>
+          </sp>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <stage>(schlingt sich der Lady, die sich an einen Stuhl lehnt wieder um den
+              Hals.)</stage>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Gott! was ist das? welch ein Zustand? – O, Frau Williams, was ist mit dieser
+              Unglücklichen vorgegangen? Sollte sie wohl unschuldig seyn?</p>
+          </sp>
+          <sp who="#frau_williams">
+            <speaker>Frau Williams.</speaker>
+            <p>Zweiflen Sie nicht daran gnädige Frau. Der gottlose Mensch, Ogliby, hat sie, Gott
+              weiß, durch welche List, entführt. Er brachte sie in des Herrn Grevils Landhaus, wo er
+              sie eingesperrt hielt; und allem <pb n="44"/> Gesinde im Hause wurde der Zutritt
+              verbothen. Die Haushälterinn die eine gute Freundinn von mir ist, glaubte anfänglich
+              daß es eine von den gewöhnlichen Creaturen sey, die sie so oft in diesem Hause zu
+              sehen gewohnt ist, und bekümmerte sich nicht darum. Aus den vielen Bewegungen aber
+              muthmassete sie endlich die Wahrheit. Sie wagte es, da alles schlief, in ihr Zimmer zu
+              gehen, wo sie das gute Fräulein auf dem Boden liegen, ihre Hände gen Himmel gestreckt,
+              und in Thränen schwimmen sahe. Das Fräulein sprang bey ihrem Anblick auf, fiel ihr zu
+              Füßen und beschwor sie, sie zu retten. Die Frau versprach ihr ihren Beystand; und da
+              das Fräulein ihr entdeckte, wer sie wäre, so sagte sie ihr, daß ich in der Nähe
+              wohnte, und daß sie sie die folgende Nacht zu mir bringen wollte. Sie hielt ihr
+              Versprechen, und ich eilte so viel möglich sie zu Ihnen zu bringen, wie sie aber in
+              des Bösewichts Hände gefallen, weiß ich nicht: denn Sie sehen in welcher Verfaßung
+              ihre Sinnen sind.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Großer Gott! welch eine Betrügerey! Unglückliches Kind! so muß ich dich denn mit dem
+              Verluste deines Verstandes wieder sehen? Doch ich will lieber den Verlust deiner
+              Sinnen, als den Verlust deiner Tugend beweinen. O, mein Kind! meine arme Karoline! was
+              mußt du gelitten haben!</p>
+          </sp>
+          <pb n="45"/>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <p>O, meine liebe Mama! Sie wollen mich also nicht wieder von sich jagen? Gott Lob! Frau
+              Williams weiß was ich ausgestanden habe: denn ihr hat es, wie ich glaube, jemand
+              erzählt. O der Jemand war ein Engel! Gott weiß, was sie mit mir gemacht haben würden!
+              Ich glaube, sie würden mich getödtet haben: denn den Ogliby hätte ich niemals
+              geheurathet.</p>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <stage>(läuft zu Karolinen, und umarmt sie)</stage>
+            <p>Meine arme Schwester, liebste Karoline!</p>
+          </sp>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <stage>(zu ihrer Mutter)</stage>
+            <p>Liebe Mama! warum weint denn die arme Julie? Ist ihr auch übel begegnet worden? Sie
+              ist ja, wie ich denke, bey einer so zärtlichen Mutter gewesen! Sie werden ihr gewiß
+              nichts gethan haben.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Gott! gieb mir Kräfte, dieses zu ertragen! Beruhige dich, unglückliches Kind, deine
+              Schwester weint aus Zärtlichkeit über dich. Beruhige deine Sinnen, du bist wieder bey
+              deiner Mutter. Deine Leiden sind nun geendiget. Arabelle! siehe, ob mein Bruder
+              aufgestanden ist; rufe ihn.</p>
+          </sp>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <stage>(hält Arabellen zurück, und kniet vor ihr nieder)</stage>
+            <p>Meinen Onkel? O nein! nein! ich will wieder gehen, mein Onkel ist böse auf mich; ich
+              kann seinen zornigen Anblick nicht ertragen!</p>
+          </sp>
+          <pb n="46"/>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(hebt sie auf)</stage>
+            <p>Gut, mein Kind, du hast Recht! er soll dich nicht sehen. <stage>(zu
+                Arabellen)</stage> Sage im Haus, daß man niemanden etwas von ihrer Ankunft meldet.
+              Wo sind denn meines Bruders Bediente.</p>
+          </sp>
+          <sp who="#arabelle">
+            <speaker>Arabelle.</speaker>
+            <p>Sie sind alle außer dem Hause.</p>
+            <stage>(Arabelle geht ab)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Eilfter Auftritt.</head>
+          <stage>Lady Danby. Julie. Karoline. Frau Williams.</stage>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <stage>(zur Lady)</stage>
+            <p>Auch Karl soll es nicht wissen? – –</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Nein, mein Kind! Eh wir nicht die wahren Umstände entdecken, muß es ihm verborgen
+              bleiben. Denn seine Hitze möchte ihn zu einer Rache reitzen, die ihm selbst
+              nachtheilig seyn könnte. Geh, führe die liebe Unglückliche in dein Zimmer; ich werde
+              euch bald folgen.</p>
+            <stage>Julie will Karolinen wegführen, sie reißt sich los, und hält sich an der Lady
+              fest.</stage>
+          </sp>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <p>Wo willst du mich hinführen? willst du mich auch betrügen? O, liebste Schwester! du
+              bist gut? du wirst mich nicht wieder von meiner Mutter trennen? Nein! ich lasse mich
+              nicht wieder von ihr reißen.</p>
+          </sp>
+          <pb n="47"/>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(ganz außer sich)</stage>
+            <p>O, Julie! nimm sie, führe sie von mir, ich kann es nicht ausstehen! <stage>(zu
+                Karolinen)</stage> Gehe mit deiner Schwester, mein Kind! dein Onkel möchte uns sonst
+              überfallen.</p>
+          </sp>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <stage>(fährt bey diesen Worten zusammen)</stage>
+            <p>Mein Onkel? Nein, nein! ich will gehen. Komm, führe mich, wohin du willst; nur nicht
+              zu meinem Onkel.</p>
+            <stage>(geht voller Angst mit Julien ab)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zwölfter Auftritt.</head>
+          <stage>Lady Danby. Frau William.</stage>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>O, Frau Williams! wie soll ich das ertragen? Der Bösewicht!</p>
+          </sp>
+          <sp who="#frau_williams">
+            <speaker>Williams.</speaker>
+            <p>Fassen Sie sich, gnädige Frau! ihre Vernunft wird gewiß zurücke kehren, da sie wieder
+              in dem Schoose ihrer Familie ist. Doch ich will zu ihr gehen; kommen Sie doch bald
+              nach.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Gehe Sie zu ihr. So bald ich mich ein wenig gefaßt habe, will ich Ihr folgen.</p>
+            <stage>(Frau Williams geht ab)</stage>
+          </sp>
+        </div>
+        <pb n="48"/>
+        <div type="scene">
+          <head>Dreyzehnter Auftritt.</head>
+          <stage>Robert. Lady Danby.</stage>
+          <sp who="#robert">
+            <speaker>Robert.</speaker>
+            <p>Gnädige Frau! eben war ich einiger Geschäfte wegen ausgegangen, als ich von weitem
+              zwey Herren zu Pferde kommen sahe. Der eine stieg ab, und der andere ritt mit den
+              Pferden zurück. Ich war neugierig und blieb stehen. Er schlich in den Garten des
+              Wirthshauses, und sahe sich immer um, als ob er kein gutes Gewissen hätte. Ich lief
+              durch die Vorderthüre ins Haus, und versteckte mich, da sahe ich den Lord Ogliby ins
+              Haus kommen.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Ogliby?</p>
+          </sp>
+          <sp who="#robert">
+            <speaker>Robert.</speaker>
+            <p>Ja, gnädige Frau! Er sprach heimlich mit der Wirthinn, und gab ihr Geld. Darauf
+              führte sie ihn die Treppe hinauf: wo ich ihn fluchen hörte, wenn sie ihn entdeckte, so
+              wollte er sie todt prügeln lassen. Als sie hinauf waren, schlich ich mich aus dem
+              Hause, und lief was ich konnte es Ihnen zu sagen, weil ich befürchtete, es hätte was
+              zu bedeuten. Er ist als ein böser Mensch ausgeschrien, und des Lords Bediente haben
+              mir gesagt, daß er das Fräulein Karoline entführt habe.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Geht Robert, gebt auf das Haus genau Achtung, und beobachtet jeden Schritt, den der
+              Bösewicht thut.</p>
+          </sp>
+          <pb n="49"/>
+          <sp who="#robert">
+            <speaker>Robert.</speaker>
+            <p>Gut, gnädige Frau! – Ich habe in dem Hause gegenüber Bekannte, die sollen gewiß auf
+              alles Achtung geben. <stage>(geht ab)</stage></p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(allein)</stage>
+            <p>Gerechter Himmel! in welche neue Verwirrung setzt mich diese Nachricht. – Wenn Karl
+              ihn entdeckte, oder mein Bruder! – Gütiger Gott! verhüte neue Unglücksfälle! oder wenn
+              du noch mehrere über mein Haupt verhängt hast, so gieb mir Kräfte, sie zu ertragen,
+              und laß mich nicht unter deiner prüfenden Ruthe erliegen. <stage>(geht ab)</stage></p>
+          </sp>
+          <trailer>Ende des dritten Aufzugs.</trailer>
+        </div>
+      </div>
+      <div type="act">
+        <head>Vierter Aufzug.</head>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>Graf Drummond. Karl.</stage>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Nein, Sir Karl, Sie werden mich nicht überreden. Es ist gewiß, daß ihre Seele von
+              einer mächtigen Leidenschaft bestürmt wird. Ich sahe die Heftigkeit, mit welcher Sie
+              Ihrem Bedienten den Befehl ertheilten, Ihre Pferde fertig zu halten; ja, noch mehr,
+                <pb n="50"/> ich sahe ihre Augen noch naß von Thränen; und dieses war die Ursache,
+              warum ich Sie bat mir zu folgen. Ich glaubte Sie dadurch zu zerstreuen, aber ich habe
+              den Zwang, den es Ihnen kostete, nur gar zu wohl bemerkt. Ich verlange nicht aus
+              Neugiergkeit in Ihr Geheimniß zu dringen, nein, mein lieber Karl! mein Herz fühlt sich
+              auf eine angenehme Art von Ihnen eingenommen. Setzen Sie einiges Vertrauen in meine
+              Freundschaft, und glauben Sie, wenn ich fähig bin, Ihnen zu dienen, daß ich mir ein
+              wahres Vergnügen daraus machen werde.</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <p>Verzeihen Sie mir, ich muß es wiederholen, daß ich für mich keine Ursache zur Unruhe
+              habe. Wenn ich von Gram durchdrungen zu seyn scheine, so ist es bloß der Kummer meiner
+              Wohlthäterinn, der mir am Herzen liegt; und eben dieses ist die Ursache, warum ich
+              noch heute nach London zurück eilen will, um alle Mühe anzuwenden, die wahren Umstände
+              von dem zu entdecken, was Lord Digby uns berichtet hat. Haben Sie also die Gütigkeit,
+              mir zu verzeihen, daß ich Ihrem schmeichelhaften Andenken nicht nachgeben kann.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Und was würde Ihnen eine weitere Untersuchung nützen? Der Brief des Ogliby erklärt
+              uns genug, daß die Sache so weit gekommen ist, daß sie nicht weiter untersucht werden
+              muß. Doch, ich muß Ihnen gestehen, <pb n="51"/> daß ich versichert bin, die
+              Angelegenheiten der Lady Danby sind nicht die einzige Ursache einer so heftigen
+              Bewegung. Allein, da Sie es nicht für gut befinden, mir ihr Vertrauen zu schenken, so
+              will ich nicht weiter in Sie dringen. Doch bitte ich Sie, überzeugt zu seyn, daß ich
+              bloß aus Eifer Ihnen zu dienen, die Ursache Ihres Kummers zu entdecken gesucht
+              habe.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Arabelle. Die Vorigen.</stage>
+          <sp who="#arabelle">
+            <speaker>Arabelle.</speaker>
+            <stage>(zum Grafen)</stage>
+            <p>Gnädiger Herr! Mylady wünscht Sie allein zu sprechen. Sie wird gleich hier seyn.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Sage Sie, daß ich sie erwarte.</p>
+            <stage>(Arabelle geht ab)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Graf Drummond. Karl.</stage>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(will abgehen.</stage>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Nur noch eins will ich Sie bitten, Sir! haben Sie die Gütigkeit, wenigstens nicht
+              eher abzureisen, bis ich sie wieder gesprochen habe.</p>
+            <stage>(Karl geht ab.)</stage>
+          </sp>
+        </div>
+        <pb n="52"/>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <sp who="#graf">
+            <speaker>Graf</speaker>
+            <stage>allein. (Sieht Karln mit einer bedenklichen Miene nach)</stage>
+            <p>Armer Karl! vielleicht sehe ich tiefer in sein Herz, als er vermuthet. – Himmel! wenn
+              diese Vermuthung wahr ist – – Wenn Julie – – Ich muß dieses Geheimniß erforschen.
+              Diese Entdeckung wird mir zwar das Herz durchbohren; aber ich werde nur allein
+              unglücklich seyn; und meine Liebe soll nicht länger die Ruhe der Liebenswürdigsten
+              ihres Geschlechts stören.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <stage>Lady Danby. Graf Drummond.</stage>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Liebster Freund! sehen Sie mich vor Freud und Schmerz zugleich durchdrungen: Ich habe
+              den Liebling meines Herzens wieder gefunden. Endlich ist sie mir wieder geschenkt
+              worden! Aber, o Gott! in welchem Zustande! – – Der Bösewicht, von dem wir glaubten, er
+              habe ihr Herz verführt, hat sie, wider ihren Willen, ihrer Familie entrissen. Die
+              Mittel, die dieser Schändliche angewendet hat, sie zu einer Heurath zu zwingen, und
+              die Angst, die sie erduldet hat, haben ihre <pb n="53"/> Sinnen zerrüttet; Dennoch
+              danke ich der Vorsicht! die sie aus den Händen dieses Menschen gerettet hat, ohne daß
+              diese Zerrüttung ihrer Tugend nachtheilig gewesen ist.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Ist es möglich! – Was für ein niederträchtig und abscheuliches Geschöpf muß dieser
+              Ogliby seyn! – Aber, durch welch einen glücklichen Zufall ist sie den Händen dieses
+              Unmenschen entrissen worden?</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Sie sollen alles erfahren. Sie werden dabey sehen, wie wunderbar die Wege sind, durch
+              welche der Himmel die Unschuld zu retten weiß. Vor allen Dingen aber muß ich Sie
+              bitten, ihre Zurückkunft vor meinem Bruder und Karln so lange geheim zu halten, bis
+              ich die wahren Umstände entdeckt habe, durch welche Mittel meine Tochter in die
+              unglückliche Schlinge gefallen ist.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Sie haben also die eigentliche Beschaffenheit ihrer Entführung noch nicht
+              erfahren?</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Dieses ist noch ein Räthsel für mich. Ich würde schon in sie gedrungen seyn; allein
+              ich sehe, daß sie heftig beunruhiget wird, wenn ich etwas von dieser Sache erwähne.
+              Ich muß sie also schonen, und mich gedulden, bis sich ihre Sinnen ein wenig gesammlet
+              haben. Aber eine neue Sorge beunruhiget mich, man hat mir eben entdeckt, daß sich
+              Ogliby in der Nähe aufhält. Robert hat ihn gesehen. Ich zittere vor neuen Auftritten
+              der Bosheit. Vor <pb n="54"/> allen Dingen aber bin ich für meinen Bruder und Karln
+              besorgt, wenn sie ihn sehen sollten.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Besorgen Sie nichts. Ich werde ein wachsames Auge halten, und auf alles Achtung
+              geben.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>O, wie werde ich Ihre Freundschaft belohnen können! Doch, ich habe meinen Bruder in
+              den Garten gehen sehen. Lassen Sie uns zu ihm eilen, und zugleich Karln suchen, damit
+              wir sie nicht aus den Augen lassen.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Sechster Auftritt.</head>
+          <stage>Lady Danby. Julie. Graf Drummond.</stage>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Mein liebes Kind! warum hast du deine Schwester verlassen? Du weißt, ihre
+              Einbildungskraft ist geschäftig.</p>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <p>Sie scheint ein wenig zu schlummern. Arabelle und Frau Williams sind bey ihr. Ich
+              wollte mich also ein wenig von dem Kummer erholen, den ihr Anblick mir verursacht.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Das ist gut! Vielleicht ist dieser Schlummer von einer glücklichen Wirkung. Laß uns
+              einen Augenblick auf dich zurück kommen. – Solltest du mir nichts zu sagen haben,
+              meine Julie? – – Hast du an das gedacht, was ich dir gesagt habe? Ich bin ungeduldig,
+              deine Entschließung zu hören.</p>
+          </sp>
+          <pb n="55"/>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <p>Liebste Mutter! darf ich Sie um die einzige Gewogenheit bitten, daß ich meine
+              Gesinnungen diesem würdigen Manne selbst entdecken darf? Es wird mich weniger Zwang
+              kosten, wenn ich ihm allein mein Herz aufschließen kann.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Gut, meine Tochter. Ob ich gleich mehr Vertrauen von dir erwarten könnte, so will ich
+              dir doch deine Bitte gewähren. <stage>(zum Grafen)</stage> Ich werde meinen Bruder
+              abhalten, Sie in der Unterredung mit meiner Tochter zu stören, und sie mit Ungeduld
+              erwarten.</p>
+            <stage>(Lady geht ab)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Siebenter Auftritt.</head>
+          <stage>Julie. Graf Drummond.</stage>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Dieses ist also, gnädiges Fräulein! der Augenblick, der mein Schicksal entscheiden
+              soll? O! wie sehr fürchte ich, daß Ihr Ausspruch die schönsten Hofnungen meines Lebens
+              zernichten wird!</p>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <stage>(unruhig)</stage>
+            <p>Wenn ich nicht das allervollkommenste Vertrauen zu ihrem edelmüthigen Carrakter
+              hätte, so würde mich das, was ich ihnen sagen werde, nicht wenig in Verlegenheit
+              setzen. Allein, Ihre erhabene Denkungsart flößt mir den Muth ein, Ihnen mein ganzes
+              Herz zu zeigen. Niemals kann ein Frauenzimmer eine stärkere Hochachtung, <pb n="56"/>
+              (Verehrung mögte ich sagen) für einen Menschen haben, als ich für sie empfinde.
+              Allein, das Herz ist unserm Willen nicht stets unterthan; und ich erröthe zu gestehen
+              – –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Wohlan, gnädiges Fräulein! Sie haben mir also mein Todesurtheil gesprochen.
+                <stage>(er sucht eine gesetzte Miene anzunehmen)</stage> Doch, nichts mehr – Ich
+              habe kein Recht mich zu beklagen. Ich war nie gesonnen, ihren Neigungen einen Zwang
+              aufzulegen. Ich werde Sie noch heute durch meine Entfernung von einem beschwerlichen
+              Liebhaber, und durch eine feyerliche Erklärung, daß ich aller Hoffnung auf ihr Herz
+              entsage, von dem dringenden Anhalten Ihrer Verwandten, befreyen. Die liebenswürdige
+              Julie wird mir wenigstens eine Thräne des Mitleids nicht versagen! <stage>(der Graf
+                ist ganz gerührt)</stage></p>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <p>Edelmüthiger Mann! Sie durchbohren mein Herz. – Warum muß es doch – O, beklagen Sie
+              mich! denn ich werde nie das Glück genießen, mit einem Manne verbunden zu werden, den
+              ich liebe.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Sie haben mich versichert, mein Fräulein! daß sie einiges Vertrauen auf mich setzen.
+              Meine Empfindungen für Sie sagen mir, daß ich es ganz verdiene. Da ich meinem Glück
+              entsagen muß, so würde es meine Schmerzen um ein großes erleichtern, wenn ich
+              wenigstens das Ihrige befestigen könnte. Das, was sie eben gesagt haben, läßt mich <pb
+                n="57"/> schließen, daß dieses Herz schon ein anderer besitzt, nach welchem meine
+              zärtliche Wünsche strebten. Ihre Wahl, dies weiß ich, kann auf keinen unwürdigen
+              Gegenstand gefallen seyn. Scheuen Sie sich also nicht, liebenswürdige Julie! mir den
+              Mann zu nennen, den sie ihrer Liebe würdig halten. – Karl – –</p>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <stage>(wird roth, und verbigt ihr Gesicht)</stage>
+            <p>Ach! – –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Ich weiß genug, mein Fräulein! Befürchten Sie nicht, daß ich Ihr Vertrauen
+              misbrauche. Wenn ich es gewagt habe, bis in ihr Herz zu dringen, so geschah es blos,
+              um es mit dem sanften Frieden zu erfüllen, der für mich auf immer verlohren ist.
+              Beruhigen Sie sich; ich werde dieses Haus nicht eher verlassen, bis ich meine
+              Freundinn zufrieden weiß. <stage>(geht in die Scene)</stage> Ist niemand da?</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Achter Auftritt.</head>
+          <stage>Der Graf. Julie. Ein Bedienter.</stage>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Wo ist Sir Karl?</p>
+          </sp>
+          <sp who="#bedienter_4-8">
+            <speaker>Bedienter.</speaker>
+            <p>In seinem Zimmer.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Bitte er ihn in meinem Namen mir auf einige Augenblick seine Gegenwart zu gönnen.</p>
+            <stage>(der Bediente geht ab)</stage>
+          </sp>
+        </div>
+        <pb n="58"/>
+        <div type="scene">
+          <head>Neunter Auftritt.</head>
+          <stage>Julie. Graf Drummond.</stage>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <p>Sie glauben also – –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Ich glaube, daß Karl Sie liebt; auch daß er das Glück hat ihr Herz zu besitzen, und
+              daß sie eines für das andere gebohren sind. <stage>(der Graf geht wieder nach der
+                Scene zu)</stage></p>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <stage>(ängstlich)</stage>
+            <p>Was wollen Sie thun?</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Sie glücklich machen, oder nicht leben.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zehnter Auftritt.</head>
+          <stage>Karl. Die Vorigen.</stage>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <stage>(der Karln entgegen geht)</stage>
+            <p>Ich habe die Ursache ihres Kummers gefunden. Trocknen Sie Ihre Thränen, und
+              überlassen Sie sich ganz ihrer Liebe, und der Hoffnung, ihre Wünsche bald erfüllt zu
+              sehen. Erwarten Sie mich beyde hier: ich werde bald wieder bey ihnen seyn, Ihnen den
+              Anschlag zu Ihrem Glücke zu entdecken.</p>
+            <stage>(der Graf geht ab)</stage>
+          </sp>
+        </div>
+        <pb n="59"/>
+        <div type="scene">
+          <head>Eilfter Auftritt.</head>
+          <stage>Julie. Karl.</stage>
+          <stage>(Julie äusserst verlegen. Karl ganz erstaunt. Beyde einige Augenblicke ohne zu
+            reden)</stage>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <p>Was für ein Räthsel! – wie soll ich es erklären? – Ist es ein Traum? oder kann ich
+              wirklich hoffen meinem Glücke so nahe zu seyn? <stage>(Julie wendet sich unruhig von
+                ihm weg)</stage> Ha, Grausame! man täuscht mich; ich errathe mein Unglück: der Graf
+              ist mein glücklicher Nebenbuhler! Sie opferten, um seinen Triumph zu erhöhen, ihm mein
+              Geheimniß auf; und dieser Unmensch ließ mich nur darum ruffen, um sich an meiner
+              Unruhe zu weiden. Aber, zittern Sie für ihn, ich werde diesen Schimpf nicht ertragen.
+              Das Leben ist mir eine Last: er soll es hinnehmen, oder mit dem seinigen für diesen
+              Uebermuth bezahlen.</p>
+            <stage>(will wüthend abgehen, Julie hält ihn auf.)</stage>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <p>Bleiben Sie Karl, hüten Sie sich die erhabenste Tugend zu beleidigen.</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(will sich losreißen)</stage>
+            <p>Lassen Sie mich, er muß erst dieses Herz durchboren, ehe er das ihrige besitzen
+              kann.</p>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <stage>(hält ihn)</stage>
+            <p>Unsinniger, was wollen Sie thun! ihm allein verdanken Sie es daß Sie mein Geheimniß
+              erfahren. Undankbarer! indem <pb n="60"/> er aus Großmuth seiner Liebe entsagt; alle
+              Hoffnungen auf meinen Besitz aufgiebt, um Ihnen ein Herz zu überlassen, in welchem Sie
+              schon lange im Stillen herrschten; da er sich für unser Glück beschäftiget: so sind
+              Sie im Begriff ihn zu beleidigen? – O, Karl! auf ihm alleine beruhet unsere Hoffnung.
+              Nur sein Beystand kann uns glücklich machen.</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(fällt ihr zu Füßen)</stage>
+            <p>Himmel, was habe ich gehört! Meine Freude ist ohne Gränzen. <stage>(küßt ihr die
+                Hand, Julie lehnt sich auf ihn, bleiben einige Augenblicke in dieser Stellung ohne
+                zu reden.)</stage></p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(indem er sich aufgerichtet)</stage>
+            <p>Aber meine theuerste Julie, wenn der Graf Sie getäuscht hätte; wenn er unser
+              Geheimniß mißbrauchte. – Wie würde es uns ergehen! ich bebe bey dem Gedanken, daß man
+              uns auf immer trennen möchte.</p>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <p>Befürchten Sie nichts. Dieser großmüthige Mann ist zu einer solchen Hinterlist
+              unfähig. Er liebt mich, meine Mutter wünschte mich mit ihm zu verbinden; und mein
+              Onkel dringt mit Ungestüm darauf. Da ich die Vortrefflichkeit seines Karrakters kenne
+              so faßte ich den Entschluß, alles zu wagen, um sie nicht zu verlieren. Ich wußte
+              zugleich, daß ich keinen beßern Beystand finden könnte als ihn. Ich endeckte ihm also
+              mein Herz: und ich bin versichert, wir können seiner Klugheit unser Schicksal ruhig
+              überlassen.</p>
+          </sp>
+          <pb n="61"/>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(fällt wieder vor ihr nieder, und hält ihre Hand in die seinige
+              geschlossen)</stage>
+            <p>Theuerste, vortreffliche Julie, konnte ich jemals so viele Gütigkeit hoffen! ich
+              hielt mich für einen Verworfenen, der bestimmt war, das Opfer einer hofnungslosen
+              Liebe zu werden. Aber, diese gütige Hand entreißt mich dem Abgrunde, und verwandelt
+              die Thränen des Schmerzens, in Thränen der Entzückung, und der äußersten Freude.</p>
+            <stage>(küßt ihr die Hand.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zwölfter Auftritt.</head>
+          <stage>Die Vorigen. Lady Danby. Graf. Lord Digby.</stage>
+          <stage>Kommen in dem Augenblicke, da Karl Julie die Hand küßt herein, Karl springt voller
+            Schrecken auf; Julie bedeckt ihr Gesicht, Lord drückt sein Erstaunen aus.</stage>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(nach einer Pause)</stage>
+            <p>Himmel, was ist das? –</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Da haben wirs! – wir haben schöne Früchte von ihrer Erziehung zu erwarten.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(nähert sich Julie)</stage>
+            <p>Unglückliche! Was hat mir dieser Auftritt endeckt? <stage>(Julie fällt vor ihrer
+                Mutter nieder, und umfaßt sie, Lady will sich losreißen.)</stage></p>
+          </sp>
+          <pb n="62"/>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Was verlangst du von mir? –</p>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <p>Vergebung, liebste Mutter, oder vor Schmerz zu ihren Füßen zu sterben.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(indem sie sich auf einen Stuhl setzt)</stage>
+            <p>Gott! – –</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Das habe ich vorhergesehen. Aber, warte, Nichtswürdiger! –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <stage>(hält ihn)</stage>
+            <p>Sie müssen ruhig seyn, mein Freund.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Ruhig! – Herr! ihr Phlegma ist hier übel angebracht. Lassen Sie mich!</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(nähert sich dem Lord in einer demüthigen Stellung)</stage>
+            <p>Mylord, verzeihen Sie! – <stage>(Der Lord will ihn von sich stossen, der Graf hält
+                ihn zurück.)</stage></p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Mylord Sie müßen nicht grausam seyn, und aus Gefälligkeit für mich Karln Gehör
+              geben.</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <p>So verhaßt ich auch Ihnen seyn mag, so hab ich doch noch das Herz, Sie um Ihren
+              Beystand anzuflehen. Ich weiß mein unglücklicher Zustand wird Sie rühren; und Sie
+              werden mir Ihr Mitleiden schenken.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Mich rühren? Meynst du, mich durch deine listige Schmeichelzunge in deine Schlinge zu
+              ziehen? Du glaubst, weil du den Grafen eingeschläfert hast, es soll dir bey mir auch
+              so gelingen? Nein, zum Henker!</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Halten Sie ein; seyn Sie nicht unerbittlich Mylord: sie müßen ihm vergeben.</p>
+          </sp>
+          <pb n="63"/>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Das werd ich wahrhaftig nicht! Alles will ich Ihnen zu gefallen thun, nur das nicht.
+              Gehe mir aus den Augen, Pursche, das sage ich dir, meynst du, daß du eben so
+              ungestraft die Familie beschimpfen willst, als dein würdiger Freund! Nein, bey meiner
+              Seele! es soll dir nicht so hingehen.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Aus welchen Gründen können Sie sich denn durch Karls Liebe beschimpft halten?</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Aus welchen Gründen? So ein Bettler soll so verwägen seyn, nach einer Verbindung mit
+              meiner Nichte zu streben?</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Ich wünschte zur Ehre Ihres Herzens Mylord, daß Sie eine andere Ursache anführen
+              möchten; Dieser Grundsatz ist Ihrer unwürdig. Wenn das Fräulein ihn liebt, und ihn für
+              den Mann hält, der Sie glücklich machen kann: so würde es grausam von ihren Verwandten
+              seyn, ihn um eine solche Ursache zu verwerfen, da sie selbst Vermögen genug besitzt.
+              Doch dieser Punkt kann gehoben werden. Ich nehme seine Aussteuer über mich; und Sie
+              sollen ihm von dieser Seite nichts vorzuwerfen haben. Was sagen Sie dazu?</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Sie sind ein sonderbarer Liebhaber. Es thut mir leid, daß ich mich in Ihre Sache
+              gemischt habe; aber ich glaubte Sie liebten meine Nichte. Doch, ich sehe wohl, es ist
+              mit euch Philosophen nichts anzufangen. Indessen, wenn Sie sie auch nicht haben
+              wollen, so soll sie doch deßwegen dieser Mensch nicht <pb n="64"/> heurathen, dem sie
+              mit allem ihrem Gelde, doch das Hauptsächlichste nicht geben können; Er ist ein Mensch
+              ohne Familie, ohne Titel.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Gut, Mylord: ich nehme ihn zu meinem Sohne an.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <stage>(ist halb erweicht)</stage>
+            <p>O, lassen Sie mich! – –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <stage>(winkt Karln.)</stage>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(indem er vor dem Lord kniet)</stage>
+            <p>Ist es möglich Mylord, daß Sie ein solches Beyspiel sehen können ohne ihm
+              nachzunahmen? Dieser großmüthige Mann hat mich vorher niemals gesehen; und doch ist
+              sein Herz so edel, mir seinen Beystand zu schenken. Mein Vater war einst der Freund
+              ihres Herzens; wie oft habe ich seinem Andenken einen Seufzer schenken sehen. Er
+              erhielt ihnen einst mit Gefahr seines Lebens das Ihrige; und dennoch können Sie gegen
+              seinen Sohn unmenschlich seyn? Sie können ihn zu Ihren Füßen verzweiflen sehen?</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <stage>(ist gerührt)</stage>
+            <p>Stehe auf – stehe auf, Karl.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <stage>(zum Lord)</stage>
+            <p>O, verbergen Sie diese Thräne nicht; sie fließt Ihnen zur Ehre: Und nun vergeben Sie
+              dem armen Karl. Nicht wahr Sie werden es thun mein Freund?</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Sie sind ein verzweifelter Mensch. Nun, gut, Karl; ich vergebe ihm; und wenn ich es
+              auch nicht thäte, so würde es doch meine Schwester thun. Ich befreye Sie von allem
+              Zwange Schwester; thut, was ihr für <pb n="65"/> gut befindet. <stage>(zum
+                Grafen)</stage> Ich muß mich wieder erholen: denn ich bin ganz bewegt.</p>
+            <stage>(Lord geht ab.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dreyzehnter Auftritt.</head>
+          <stage>Graf. Lady Danby. Karl. Julie.</stage>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(kniet vor der Lady)</stage>
+            <p>Darf ich es wagen großmüthige Wohlthäterin, auch um ihre Verzeihung zu bitten, oder
+              wollen Sie den Unglücklichen, den sie mit mehr als mütterlichen Sorgfalt erzogen, für
+              die Kühnheit die er gehabt hat, das Herz ihrer Tochter zu rauben, zu einer
+              immerwährenden Qual verdammen?</p>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <stage>(kömmt von der andern Seite)</stage>
+            <p>O, meine Mutter, versagen Sie uns ihr Mitleiden, ihre Verzeihung nicht!</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(hebt sie beide auf, und sieht sie zärtlich an)</stage>
+            <p>Ja, ich kann nicht mehr widerstehen; ich folge dem Beyspiele meines Bruders: ich
+              vergebe euch beyden.</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <p>Theureste Lady! – Herr Graf! – Julie! O wie soll ich – Nein, Worte können weder meine
+              Dankbarkeit, noch meine Freude ausdrücken.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(führt Julie Karln zu)</stage>
+            <p>Sie ist die Ihrige Karl. O, mein Sohn, ich werde nun doppelte Ursache haben dich zu
+              lieben.</p>
+          </sp>
+          <sp who="#julie #karl">
+            <speaker>Julie und Karl</speaker>
+            <stage>zugleich)</stage>
+            <p>Gütigste, beste Mutter!</p>
+          </sp>
+        </div>
+        <pb n="66"/>
+        <div type="scene">
+          <head>Vierzehnter Auftritt.</head>
+          <stage>Graf. Karl. Julie. Karoline.</stage>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <stage>(kömmt hereingeschlichen, und bleibt furchtsam in der Thüre stehen.)</stage>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Nichts mehr meine Kinder. <stage>(sie küßt Julie)</stage> Ja meine Julie, Karl ist
+              auf ewig dein. möchte doch euere Liebe euch so glücklich machen, als ich es
+              wünsche!</p>
+            <stage>Bey diesen Worten stürzt Karoline hervor. Karl flieht bey ihrem Anblick voll
+              Schrecken zurück, und lehnt sich an die Scene: Julie voller Schrecken und Unruhe, Lady
+              stüzt sich auf den Grafen. Karoline folgt Karl nach, und ergreift seine Hand, indem
+              sie die Worte der Lady wiederholt.)</stage>
+          </sp>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <p>Dein, Julie – Nein, diese Hand ist mein. Karl gehört mir zu; ich habe sein
+              Versprechen. Gieb dich zufrieden arme Julie! Ich werde bald an einen anderen Ort
+              kommen; dann kannst du ihn nehmen: denn ein Versprechen geht wie ich glaube nicht
+              übers Grab hinaus. <stage>(zu Karl)</stage> Nicht wahr, Sie glaubten, ich sey tot?
+              Sonst hätten Sie meine Schwester nicht betrügen können. Ich habe, viel gelitten: aber,
+              lassen Sie es gut seyn – Sie hätten es wohl gerne gesehen, wenn ich gestorben wäre –
+              aber, vielleicht geschieht <pb n="67"/> es noch; und dann können sie ihr Versprechen
+              zurück nehmen.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfzehnter Auftritt.</head>
+          <stage>Frau Williams. Arabelle. Vorige.</stage>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(nähert sich Karoline)</stage>
+            <p>Theuerstes, unglückliches Kind! <stage>(sucht sie von Karl loszumachen.)</stage></p>
+          </sp>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <stage>(zu Karl)</stage>
+            <p>Sie wollen mich von Ihnen reißen; O, Karl, lassen Sie es nicht zu; bitten Sie meine
+              Mama, daß sie es nicht thut; sagen Sie ihr, daß Sie mein sind, und daß Sie Juliens
+              nicht seyn können.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Reden Sie Karl, erklären Sie uns dieses schreckliche Geheimniß. Ihr Verstand ist
+              zerstört, allein dieß scheint mehr, als bloßer Wahnwitz zu seyn.</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(mit zitternder Stimme, indem er sich aufrichtet)</stage>
+            <p>Gnädige Frau – o, Gott, was soll ich ihr sagen!</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Himmel! Diese Bestürzung – <stage>(zu Karolinen)</stage> Rede, meine liebe; hat dir
+              Karl jemals von Liebe vorgesagt? hat er dir etwas versprochen?</p>
+          </sp>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <p>Ja, ja, liebe Mama; und er hat auch mein Versprechen <stage>(bey diesen Worten fällt
+                Julie ohnmächtig auf einen Stuhl; Karl stüzt sich voller Verzweiflung auf einen
+                andern, Karoline fährt fort zu reden) (zur <pb n="68"/> Lady)</stage> Aber seyn Sie
+              nicht böse auf ihn. – Ich weiß Ihnen zwar nicht zu sagen, wenn, und wo es geschehen
+              ist; Aber <stage>(als ob sie sich besinne)</stage> ja, ich glaube ich habe noch einen
+              Beweis, davon: Denn mein armer Kopf ist so schwindlicht, daß ich mich fast an nichts
+              mehr erinnern kann.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(zum Grafen)</stage>
+            <p>Dieß ist mehr, als ich ertragen kann. Stehen Sie mir bey; mein Herz erliegt unter
+              diesem neuen Streiche <stage>(zu Karl)</stage> Undankbarer Verräther!</p>
+          </sp>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <p>O, liebe Mama, schmähen Sie nicht auf ihn; er kann nicht dafür; er glaubte vielleicht
+              nicht, daß sie mich so quälen würden <stage>(sieht Karln auf dem Stuhle)</stage> Sehen
+              Sie, sehen sie, er stirbt! O, das war mein Wille nicht; ich dachte nicht daß ich ihn
+              so erschrecken würde.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Komm theure Unglückliche; Verlaß diesen Bösewicht, der uns alle betrogen hat; Komm
+              und vergiß an meinem Busen deine Leiden.</p>
+          </sp>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <p>O, ja, ich will gehen: denn, mein Anblick tödtet den armen Karl. Aber thun Sie ihm
+              nichts Mama; er hat es nicht gerne gethan. – Er wollte mich sprechen; und da haben sie
+              mich aufgefangen. – Ich bin ganz matt. <stage>(fällt der Lady in die Arme, Frau
+                Williams eilt ihr zu Hülfe)</stage></p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(zum Grafen, indem sie Karoline fort führt)</stage>
+            <p>Verlassen Sie mich in dieser <pb n="69"/> Stunde der Trübsal nicht, wo der Zorn des
+              Himmels wie eine Fluth auf mich herabströmt. – Meine Julie – O, stehen Sie ihr bey;
+                <stage>(Karl springt auf, will sich ihr zu Füßen werfen, sie stößt ihn von
+                sich)</stage> Geh, unwürdiger Gegenstand meiner Sorgfalt; Fliehe dieses Haus auf
+              ewig, das du mit Schimpf und Gram erfüllt hast, und laß mich dein Angesicht nie, nie
+              wieder sehen.</p>
+            <stage>(sie gehn ab.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Sechzehnter Auftritt.</head>
+          <stage>Graf. Julie. Karl. Arabelle.</stage>
+          <stage>Karl bleibt in dieser Stellung liegen, ohne zu reden.</stage>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Schrecken und Erstaunen haben meine Zunge gefeßelt, alles ist, wie ein Traum.
+                <stage>(sieht Julien an, und sagt zu Arabellen)</stage> Sie scheint sich zu erholen;
+              bringe sie in ihr Zimmer.</p>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <stage>(schlägt die Augen auf, sieht indem sie Arabelle wegführt, Karln, und sagt mit
+              schwacher Stimme)</stage>
+            <p>Unglücklicher, was hast du gethan! <stage>(sie geht mit Arabellen ab.)</stage></p>
+          </sp>
+        </div>
+        <pb n="70"/>
+        <div type="scene">
+          <head>Siebenzehnter Auftritt.</head>
+          <stage>Karl. Graf Drummond.</stage>
+          <stage>Graf will der Lady nachgehn, Karl hält ihn.</stage>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <p>Sie, der Sie sich eines Verworfenen annahmen, versagen Sie mir die letzte Gnade
+              nicht. Verstatten Sie mir, daß ich mich wenigstens rechtfertigen darf.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Welche Rechtfertigung können sie haben? Alles verdammt sie.</p>
+            <stage>(er will gehen.)</stage>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <p>Ich beschwöre Sie, versagen Sie mir diese Bitte nicht. Vielleicht ist noch etwas, daß
+              meine Schuld mildern kann.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Gut, ich will Sie hören. Erwarten Sie mich in ihrem Zimmer, sobald ich die
+              unglückliche Familie von der ersten Bestürzung ein wenig beruhiget sehe. Wie sehr
+              wünsche ich, zu unserer aller Ruhe, daß sie nicht so strafbar seyn mögen, als es der
+              Schein vermuthen läßt! Denn, auch ich habe mir, indem ich ihrer Liebe beygestanden,
+              Vorwürfe zu machen.</p>
+            <stage>(er geht ab.)</stage>
+          </sp>
+        </div>
+        <pb n="71"/>
+        <div type="scene">
+          <head>Achtzehnter Auftritt.</head>
+          <sp who="#karl">
+            <speaker>Karl,</speaker>
+            <stage>allein.</stage>
+            <p>So ist denn das Maaß meines Unglücks voll. Unselige Leidenschaft! wohin hast du mich
+              geführt! Mit Verachtung und Fluch belegt, werde ich nun aus einem Hause gestoßen, in
+              welchem ich mit Wohlthaten überhäuft wurde. Julie hält mich für einen Verräther, und
+              die gütigste Frau für einen Bösewicht. O, diese Vorstellung ist mehr als eine ganze
+              Hölle für mich. <stage>(wirft sich in einen Stuhl, und springt nach einer Pause wieder
+                auf)</stage> Ja ich will dieses Haus fliehen, welches alles, was ich liebe, in sich
+              faßt; Dieses soll die Strafe meiner Unbesonnenheit, und meines Leichtsinnes seyn.
+              Aber, ehe ich es verlasse, soll Julie erst wissen daß ich wenigstens an ihr nicht zum
+              Verräther ward, und daß selbst mein Verbrechen eine Frucht der heftigsten Liebe für
+              sie war. <stage>(er geht ab.)</stage></p>
+          </sp>
+          <trailer>Ende des vierten Aufzugs.</trailer>
+        </div>
+      </div>
+      <pb n="72"/>
+      <div type="act">
+        <head>Fünfter Aufzug.</head>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>Lady Danby. Graf Drummond.</stage>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Gnädige Frau, ich habe stets die sanfteste Menschenliebe an Ihnen bewundert. Ihre
+              erhabene Tugend ist unfähig, jemand zu verdammen, ohne ihn gehört zu haben. Karl hat
+              mich beschworen ihn zu hören; und aus der Art, wie er es gethan hat, habe ich in der
+              That schließen können, daß er noch einige Gründe haben muß, die seine Schuld
+              wenigstens mildern können.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Die Güte ihres Herzens verhindert sie daran zu denken, daß es einem Bösewicht nicht
+              schwer seyn muß, den höchsten Grad der Verstellung anzunehmen.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Belegen Sie einen Fehltritt nicht mit einem so harten Namen, der von einem jungen
+              Menschen vielleicht aus blosem Leichtsinn und ohne Absicht, Böses zu thun, ist
+              begangen worden. Ich will seinen Fehler nicht dadurch vertheidigen; ich wünschte nur,
+              daß <pb n="73"/> Sie ihn anhören mögten, ehe Sie einen Menschen dem Verderben
+              überlassen, den Sie so viele Jahre als ihren Sohn betrachtet haben.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Eben dieses macht ihn noch strafbarer. Doch damit ich nicht ungerecht in ihren Augen
+              scheine, so muß ich Ihnen die ganze Größe seiner Schändlichkeit zeigen, die ich zur
+              Ehre der Menschlichkeit nur ungern aufdecke. Sie haben gehört, daß meine unglückliche
+              Tochter von einem Beweise sprach, den sie noch zu haben glaubte. Als ich sie in ihr
+              Zimmer gebracht hatte, bat ich sie, sich an diesen Beweis zu erinnern, weil mir daran
+              gelegen wäre; Sie besann sich eine Weile; und zog endlich dieß Billet aus ihrer
+              Tasche. Hier sehen Sie. Ich weiß sie werden zittern, daß ein menschliches Herz die
+              Quelle von einer so schwarzen Verrätherey hat seyn können.</p>
+            <stage>(giebt ihm einen Brief.)</stage>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <stage>(lieset)</stage>
+            <p>»Theureste Karoline! ich bin heute endlich wieder in mein Vaterland zurück gekommen;
+              welches ich nur darum so sehnlich wiederum zu sehen gewünscht habe, weil ich sie, die
+              beste Geliebte, darinn zurück gelassen habe. Wie ungeduldig ist mein Herz, Sie wieder
+              zu sehen! Zu meinem Unglücke verhindert mich der Haß Ihres Onkels, meine zärtliche
+              Sehnsucht zu befriedigen. Doch wenn ich meiner Karoline noch so schätzbar bin, als <pb
+                n="74"/> sie mich sonst versichert hat: so wird sie Mittel finden, morgen früh, auf
+              eine Stunde aus ihres Onkels Hause zu kommen. Des Lord Ogliby Schwester ist zu
+              Brumton, wo ich sie erwarten will, weil sie die einzige ist die unser Geheimniß weiß.
+              Ihre Kutsche soll in der Mitte der St. Jamesstraße auf sie warten. Ich erbitte diese
+              Gefälligkeit von Ihnen als einen Beweis, daß Sie denjenigen noch lieben, der mit der
+              größten Zärtlichkeit ist, ganz der Ihrige Karl.«</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Welch ein Gewebe der schwärzesten Bosheit! Was für ein niederträchtiger Verräther ist
+              dieser Mensch! – welch eine Belohnung für so viele Wohlthaten! Nein, höher kann der
+              Undank nicht getrieben werden.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Sie sehen, daß diese Natter, die ich in meinem eigenen Busen ernährt habe, mein
+              ganzes Haus zu vergiften gesucht hat. Nachdem er Karolinens Zärtlichkeit müde war,
+              sucht er das Herz ihrer Schwester einzunehmen, und um sich von den Hindernissen, die
+              er von Karolinens Seite befürchtete, zu befreyen, vereinigte er sich mit dem
+              schändlichen Gehülfen seiner Laster, mein armes Kind in seine Hände zu spielen; denn
+              Sie sehen, daß dieses Billet das ganze Geheimniß aufschließt, wie sie in des Ogliby
+              Gewalt gefallen ist. –</p>
+          </sp>
+        </div>
+        <pb n="75"/>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Karl. Graf. Lady.</stage>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(indem sie Karl sieht)</stage>
+            <p>Himmel, welche Frechheit! darfst du es noch wagen, meine Augen durch deine Gegenwart
+              zu beleidigen? Zum letztenmale gebiete ich Ihnen, mir Ihren Anblick zu entziehen, und
+              dieses Haus auf immer zu verlassen.</p>
+            <stage>(sie will geben)</stage>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(der sie zurück hält)</stage>
+            <p>Gnädige Frau! ich habe Ihren Zorn verdient; und ich bitte nur um die einzige Gnade,
+              die man auch dem größten Verbrecher nicht versagt: um die Gnade mich einen Augenblick
+              anzuhören.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Und was könnte ich von einem so elenden Verräther noch wohl anders erwarten als
+              Betrug? oder glaubst du vielleicht, daß ich deine ganze Schändlichkeit noch nicht
+              kenne? so überzeuge dich denn, daß nichts mehr vor mir verborgen ist. <stage>(giebt
+                ihm den Brief)</stage> Indem ich Ihnen eine mütterliche Zärtlichkeit schenkte, und
+              mit der größten Sorgfalt auf ihr Glück bedacht war, machten Sie den Entwurf mir das
+              Herz zu zerreißen; vereinigten sich mit einem ihnen an Lastern ähnlichen Freund, mir
+              meine Tochter zu rauben, um auch der andern desto ungehinderter das Unglück kennen zu
+              lernen, mit einem Lasterhaften verbunden zu seyn.</p>
+          </sp>
+          <pb n="76"/>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(hat indessen das Billet gelesen) (heftig)</stage>
+            <p>Welcher verfluchte Bösewicht hat sich unterstanden, meine Hand nachzumahlen, um mir
+              ein Bubenstück aufzubürden, um dessentwillen, wenn ich dazu fähig gewesen, ich mir
+              selbst ein Herz herausreißen wollte, daß eine solche Verrätherey hätte ausbrüten
+              können.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(erbittert)</stage>
+            <p>Ja dieses hat noch zu deiner Niederträchtigkeit gefehlt, daß du so gar die Frechheit
+              hast, deine eigene Hand zu leugnen. Unwürdiger! Dein Anblick ist mir unerträglich.</p>
+            <stage>Will abgehen, Karl hält sie voller Verzweiflung zurück, indem er vor ihr nieder
+              kniet.</stage>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <p>Ich beschwöre Sie Mylady, hören Sie meine Vertheidigung. Meine Verzweiflung ist ohne
+              Gränzen. Ich habe nichts mehr zu verlieren; ich bin bis in den tiefsten Abgrund des
+              Elendes hinab gestürzt; Aber, lassen Sie mich wenigstens vorher meine Ehre retten. Das
+              Leben ist mir eine Last; ich bin bereit, es hier zu ihren Füßen aufzugeben.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Karl. Lady. Der Graf. Ein Bedienter mit einem Briefe.</stage>
+          <sp who="#bedienter_5-3">
+            <speaker>Bedienter.</speaker>
+            <p>Sir Karl! dieser Brief ist an Sie, der Herr, von dem er ist, erwartet Sie am Ende des
+              Thiergartens.</p>
+            <stage>(der Bediente geht ab)</stage>
+          </sp>
+          <pb n="77"/>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(erbricht den Brief, und sieht nach der Unterschrift)</stage>
+            <p>»Ogliby!«</p>
+            <stage>(zieht den Degen, und läuft voller Wuth ab)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <stage>Der Graf. Lady Danby.</stage>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Trotz des Unglücks, das er über mich gebracht hat, fühl ich doch noch etwas in meinem
+              Herzen, welches für ihn spricht, und daß mich für ihn zittern läßt. Haben Sie gesehen
+              mit welcher Wuth er uns verließ? Was wird der Unglückliche thun? O, liebster Freund!
+              –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Beruhigen Sie sich gnädige Frau! ich will ihm nacheilen und alle meine Kräfte
+              anwenden, ihn zu verhindern daß er zu dem Unheil, das er angerichtet hat, wenigstens
+              nicht noch einen Mord hinzufüge.</p>
+            <stage>(der Graf geht ab.)</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <stage>Frau Williams. Lady Danby.</stage>
+          <sp who="#frau_williams">
+            <speaker>Frau Williams.</speaker>
+            <p>O, gnädige Frau wir können das gute Fräulein nicht mehr erhalten; es scheint als ob
+              sich durch den letzten Streich ihre Sinnen wieder sammlen wollten; <pb n="78"/> denn
+              seit dem ich sie wieder gesehen, habe ich sie noch nicht so zusammenhangend reden
+              hören. Sie will zu Ihnen. Fräulein Julie hielt sie zurück, aber sie bat mit Thränen,
+              sie nicht aufzuhalten. Sie wollte zu ihren Füßen für den armen Karl um Gnade flehen.
+              Darauf lief ich fort, um sie zu bitten, daß Sie zu ihr gehen, und sie trösten möchten,
+              doch ich höre sie schon.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Sechster Auftritt.</head>
+          <stage>Frau Williams. Karoline. Julie.</stage>
+          <stage>Karoline kömmt eilig; Julie folgt ihr ängstlich.</stage>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <stage>(stürzt sich zu ihrer Mutter Füßen)</stage>
+            <p>Liebste, theureste Mama, verzeihen Sie Ihrer unglücklichen Tochter die Unruhe, die
+              sie Ihnen verursacht. Ich bin ein verworfenes Geschöpf, das bestimmt ist, alle die zu
+              betrüben, die mir theurer sind als mein Leben, und die –</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(will sie aufheben)</stage>
+            <p>Beruhige dich meine Karoline; du bist mein liebes Kind; ich liebe dich – –</p>
+          </sp>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <p>Nein Mama, ich werde nicht ehender ihre Füße verlassen, bis Sie auch Karln verziehen
+              haben. Ich alleine bin an allem schuld. O, Sie wissen nicht, was ich für ein
+              ungehorsames Mädgen bin; aber der <pb n="79"/> Himmel hat mich dafür gestraft.
+                <stage>(bedeckt ihr Gesicht, als ob sie sich schämte)</stage> Ich liebte Karln
+              zuerst; ich konnte es ihm nicht verbergen. Ach vielleicht hätte er sonsten nicht an
+              mich gedacht.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Siebenter Auftritt.</head>
+          <stage>Die Vorigen. Lord Digby.</stage>
+          <stage>Karoline da sie den Lord sieht, springt auf, und verfällt wieder in ihr voriges
+            verstörtes Wesen; sucht sich furchtsam an ihrer Mutter Busen zu verstecken.</stage>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Ja, da ist ja das saubere Töchterchen. Ich habe eben die schönen Neuigkeiten im Hause
+              erfahren. Aber gebt euch zufrieden, ihr werdet bald gerächt seyn. Um mich von alle dem
+              Gewinsel zu erholen, das hier im Hause herrscht, gieng ich zu dem Jäger seine Hunde zu
+              besehen; und da ich wieder zurück kam, sahe ich am Ende des Thiergartens Karln mit
+              seinem Freund Ogliby fechten. Der Graf lief auf sie zu; allein, ich halte ihn für so
+              vernünftig daß er sie nicht stören wird: denn es würde sehr gut seyn wenn ein
+              Bösewicht den andern aufriebe, so hätten sie beyde ihren Lohn. Ich gieng fort, um
+              nichts zu sehen, was mir Verantwortung bringen könnte; und als ich ins Haus kam,
+              erzehlte man mir die ganze Geschichte, die hier vorgegangen ist. Doch <pb n="80"/> ich
+              hoffe, wenigstens einer von den würdigen Freunden wird schon seinen Theil bekommen
+              haben.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady,</speaker>
+            <stage>weint,</stage>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie</speaker>
+            <stage>bezeugt sich ängstlich.</stage>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <stage>(mit einem starken Tone)</stage>
+            <p>Du sollst ihn nie wieder sehen. <stage>(Karoline fährt schüchtern zusammen, und fällt
+                ganz betrübt der Lady in die Arme, diese bringt sie auf einen Stuhl; und der Lord
+                fährt fort zu reden)</stage> Wenn er am Leben bleibt will ich ihn krum schließen
+              lassen, und nach Amerika schicken. Der verfluchte Kerl hat uns schön bey der Nase
+              herum geführt! da habt ihr nun den Dank, Schwester für eure Barmherzigkeit.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Achter Auftritt.</head>
+          <stage>Der Graf Drummond. Lady Danby. Lord Digby. Karoline. Julie. Frau Williams.</stage>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <stage>(indem er dem Grafen entgegen geht)</stage>
+            <p>Nun Freund, welcher von den Buben hat seinen Lohn bekommen?</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(winkt auf Karoline und sagt ängstlich)</stage>
+            <p>Herr Graf – –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Ich verstehe Sie gnädige Frau; allein befürchten Sie nichts, was ich Ihnen sagen
+              werde, wird, wie ich hoffe, mehr zur Beruhigung als zum Schrecken der Familie
+              dienen.</p>
+          </sp>
+          <pb n="81"/>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Also ist ja wohl – –</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(indem sie auf die Karoline zeigt)</stage>
+            <p>Bruder – –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Mylord, gnädige Frau ich bitte Sie, mich einen Augenblick ruhig anzuhören. Sie werden
+              aus meiner Erzählung hören, daß Karl an dem Verbrechen vollkommen unschuldig ist,
+              welches wir, durch den Schein verführt, ihm alle zur Last gelegt haben.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Was, Herr? – –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Einen Augenblick Geduld. Ich kam, da ich Karln nacheilte, eben bey dem Gefechte an,
+              als er den Ogliby entwaffnet, ihm den Degen auf die Brust setzte, und von ihm
+              verlangte, er solle den Augenblick alles bekennen; besonders wer jenes Billet
+              geschrieben, durch welches Karoline in seine Schlinge gezogen worden. Ogliby fiel
+              feigherzig vor Karln auf die Knie, und bat ihn, ihm nur das Leben zu schenken, so
+              wolle er alles entdecken.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Die feige Memme! und Karl –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Ogliby erzählte, er habe diesen Winter um Julie angehalten, wäre aber auf eine sehr
+              verächtliche Art abgewiesen worden.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>So wie er es verdiente</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Diß hab ihn verdroßen; und da er blos sein Augenmerk auf ihr Vermögen gerichtet, so
+              habe er aus Rache beschloßen eine von den beyden Schwestern zu entführen. Weil nun
+              Karl vor seiner Abreise ihm vertraut habe, daß er sich mit Karolinen in ein
+              Verständniß <pb n="82"/> eingelassen, aber gegen Julie eine weit heftigere
+              Leidenschaft fühlte –</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Der Schurke! – –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>So habe er seinen Anschlag auf Karolinen gemacht, in der Hofnung Karln dadurch auf
+              seine Seite zu bekommen; weil er ihm durch dieses Mittel, von seiner Verbindung mit
+              Karoline befreyte. Er habe aber auf keine Weise seinen Anschlag ausführen können bis
+              er Karls Zurückkunft erfahren, und daß ihm der Zutritt in des Lords Haus versagt
+              sey.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Hätte meine kluge Schwester –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Ich bitte lassen Sie mich ausreden.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Hmm, hmm, hmm –</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>So gleich sey er auf den Einfall gerathen, Karls Hand nachzumahlen und Karolinen zu
+              einer Unterredung einzuladen. Dieß sey ihm geglückt. Er würde sie auch gewiß gezwungen
+              haben seine Frau zu werden, wenn Sie ihm die vorige Nacht nicht entwischt wäre.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Der verdammte Kerl –</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Aber wie durft er es wagen, Karln aufzusuchen; wenn dieser nicht um seine Anschläge
+              gewußt hat.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Weil er sich nicht vorstellen können, daß sich Karl durch diese Entführung für
+              beleidigt halten könnte; vielmehr habe er sich seinen Beystand, zu einem neuen
+              Anschlage, sie wieder in seine Hände zu bringen versprochen. Karl ließ ihn nach diesem
+              Geständniß <pb n="83"/> laufen, und sagte ihm, er überließ es der Familie ihn durch
+              die Gesetze für dieses Bubenstück zu bestrafen.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Da hat Karl sehr übel gethan. Er hätte ihn fest halten sollen, damit man ihn gleich
+              nach seinen Thaten hätte belohnen können.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Sie sehen daraus gnädige Frau, daß Karl mehr unglücklich, als lasterhaft, und daß
+              sein Fehler blos aus jugendlicher Uebereilung entsprungen ist. Ich nehme mich noch
+              einmal seiner an, und bitte Sie, seine Rechtfertigung anzuhören.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Ich erstaune über alles, was ich gehört habe. Doch freu' ich mich Karl weniger
+              strafbar zu finden, als ich geglaubt.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Ist das also nicht genug, zwey Schwestern auf einmal zu verführen? Ich, für mein
+              Theil, rathe ihm, mir nicht unters Gesicht zu kommen; das sage ich ihnen.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Da man ihm in Ansehung der letzten Beschuldigung so sehr zu nahe gethan hat, so ist
+              man ihm die Genugthuung schuldig, ihm diese Bitte zu gewähren. <stage>(zum
+                Grafen)</stage> Lassen Sie ihn kommen liebster Freund; ich will ihn noch einmal
+              sehen.</p>
+          </sp>
+          <sp who="#lord">
+            <speaker>Lord.</speaker>
+            <p>Halten Sie, daß ich erst Zeit habe fortzugehen. Ich sehe alles zum Voraus, was
+              geschehen wird. Ich will an euerer Narrheit keinen Antheil haben; macht was ihr wollt.
+              Aber, das sage ich euch, Schwester, wenn eure Thorheit dahinaus schlägt; wo ich es <pb
+                n="84"/> vermuthe so will ich euere Schwelle nie wieder betreten, und euere Kinder
+              haben sich in dem Falle auf keinen Heller von meinem Vermögen Rechnung zu machen; ja
+              ich will niemals sagen, daß diese unvernünftige Familie mir angehört. Da habt ihr
+              meinen festen Entschluß. Euer Diener. <stage>(geht ab)</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Neunter Auftritt.</head>
+          <stage>Graf. Lady Danby. Karoline. Julie. Frau Williams.</stage>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Lassen Sie ihn gehen; seine Gegenwart würde uns nur Zwang auflegen. Er wird sich mit
+              der Zeit schon wieder besänftigen.</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <stage>(der an die Scene geht)</stage>
+            <p>Kommen Sie Karl, die Gütigkeit der Mylady erlaubt es Ihnen.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zehnter Auftritt.</head>
+          <stage>Die Vorigen. Karl.</stage>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(nähert sich der Lady in einer demüthigen Stellung)</stage>
+            <p>Darf ich es wagen gnädige Frau, noch einmal ihr Mitleiden anzuflehen? – Verzeihung
+              darf ich nicht erwarten; allein, wenigstens wünsche ich sie zu überzeugen, daß mein
+              Herz an dieser Vergehung keinen Antheil gehabt. Unbesonnenheit und Leichtsinn haben
+              mich in diesen Abgrund gezogen. Ich verehrte Karoline, und liebte ihre Schwester. <pb
+                n="85"/> Da ich aber keine Hofnung sahe, von dieser wieder geliebt zu werden, konnte
+              ich der Zärtlichkeit mit welcher mich Karoline beehrte, nicht wiederstehen. Ich
+              glaubte sogar, über meine Liebe zu Julie gesiegt zu haben. Da aber bey meiner
+              Zurückkunft in Engelland, die unglückliche Entführung mich zu überzeugen schien, daß
+              Karoline ihr Herz einem andern überlassen, glaubte ich, ohne ein Verbrechen, das
+              meinige Julie anbieten zu können. Der Himmel hat meine Verwegenheit gestraft; und ich
+              will, wenn sie mich nur ihres Mitleids würdigen, ohne Murren das Elend erdulden das
+              künftig auf mich wartet.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Wenigstens hätte ich mehr Offenherzigkeit von Ihnen erwarten können. O, Karl, wie
+              vielen Kummer hätten Sie uns dadurch erspart!</p>
+          </sp>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <stage>(schlägt die Augen auf, sieht Karln, läuft auf ihn zu, und sagt mit einem
+              zärtlichen Tone)</stage>
+            <p>Hat man sie mir wieder geschenkt? <stage>(sieht sich schüchtern um)</stage> Mein
+              Onkel wollte es nicht haben. Ich will Sie Julien nicht entreißen: denn ich wollte sie
+              um aller Welt willen nicht betrüben; ich bin zufrieden; wenn Sie mich nur nicht
+              hassen.</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(kniet vor Karoline)</stage>
+            <p>Liebenswürdige Freundinn, werden auch Sie dem Elenden verzeihen der die unschuldige
+              Ursache aller ihrer Leiden ist? O, wäre ich nicht zu tief gesunken! dürft ich mich
+              noch erkühnen, auf eine Verbindung <pb n="86"/> mit dieser Familie zu hoffen, so würde
+              ich meine ganze Lebenszeit dazu anwenden, eine so große Zärtlichkeit zu verdienen.</p>
+          </sp>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <stage>(scheint vergnügt, über das, was er sagt, hält sich fest an ihm, und sieht sich
+              schüchtern um, als ob sich fürchtete, man möchte sie ihm entreißen.)</stage>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <p>Gnädige Frau, sollte diese Reue nicht ihre Vergebung verdienen. <stage>(Lady hat sich
+                unter dieser Rede Karoline genähert.)</stage></p>
+          </sp>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <stage>(hebt Karln auf)</stage>
+            <p>Liebe Mama, warum hat Karl vor mir gekniet? Er gehört ja Julie. Ich habe ja den armen
+              Karl beleidiget. Aber, Gott weiß es ich habe es nicht gerne gethan.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Beruhige dich meine Liebe; ich habe Karln alles vergeben. Ach, Karl! mögte doch ihre
+              Reue aufrichtig, und die Empfindungen, die Sie itzt äußern keine Verstellung seyn.</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(heftig)</stage>
+            <p>Ich würde ein Ungeheuer seyn, wenn diese Empfindungen nicht aus dem innersten meiner
+              Seele kämen. Könnte ich wohl bey einer solchen Zärtlichkeit, die alle Proben der
+              Verfolgung ausgehalten hat, ungerührt bleiben? die selbst in der äußersten Zerrüttung
+              ihrer Sinnen sich nicht verläugnet hat. Nein, gnädige Frau, mein Leben selbst würde
+              mir eine Kleinigkeit scheinen, wenn ich dadurch die Ruhe dieser liebenswürdigen Person
+              wieder herstellen könnte.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(weint)</stage>
+            <p>Wohlan, Karl! mit diesen Gesinnungen verdienen Sie meine ganze <pb n="87"/>
+              Vergebung. So seyn Sie denn zum zweytenmale mein Sohn. Sie sollen Karolinens Hand
+              empfangen, sobald der Himmel ihre zerstörten Sinnen wieder hergestellt hat. <stage>(zu
+                Karolinen)</stage> Ja, mein Kind, dann soll Karl auf immer der deinige seyn.</p>
+          </sp>
+          <sp who="#karl">
+            <speaker>Karl.</speaker>
+            <stage>(will der Lady zu Füßen fallen, sie läßt es aber nicht zu)</stage>
+            <p>So viele Gütigkeit habe ich nicht verdient.</p>
+          </sp>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <stage>(schmeichelhaft)</stage>
+            <p>Karl soll nun nicht mehr von mir gehen? Aber, liebe Mama wird die arme Julie nicht
+              betrübt seyn, wenn Karl mein ist? Sie liebt ihn ja.</p>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <stage>(indem sie zu Karolinen läuft und sie küßt)</stage>
+            <p>Nein, meine Schwester, ich bin nicht betrübt, so bald ich dich glücklich sehe.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <stage>(zum Grafen)</stage>
+            <p>Wodurch, großmüthiger Freund, werde ich die Mühe vergelten können, die sie heute für
+              das Wohl meiner Kinder, und für meine Ruhe gehabt haben?</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf</speaker>
+            <stage>(sieht Julie zärtlich an)</stage>
+            <p>Gnädiges Fräulein ich entsagte ihrer, da ihr Herz andere Feßeln trug – itzt – o, wenn
+              ich hoffen dürfte! –</p>
+          </sp>
+          <sp who="#julie">
+            <speaker>Julie.</speaker>
+            <p>Herr Graf, das Vertrauen, das ich Ihnen heute gezeigt habe, muß Ihnen ein Beweis
+              seyn, wie groß meine Hochachtung für Sie gewesen ist. Der heutige Tag hat sie
+              unendlich vermehrt. Er hat mir den ganzen Werth ihres erhabenen Karakters kennen
+              lernen. Aber eben weil ich ihn kenne, muß ich ihm Gerechtigkeit wiederfahren lassen.
+              Sie verdienen ein <pb n="88"/> Herz, das von jeder anderen Leidenschaft gereiniget
+              ist. – Lassen Sie mir Zeit mich ihrer würdig zu machen – Herr Graf! fürtrefflicher
+              Mann! – Beste Mutter! – darf ich mir schmeicheln, daß Sie mit dieser Erklärung
+              zufrieden sind?</p>
+          </sp>
+          <sp who="#graf">
+            <speaker>Graf.</speaker>
+            <stage>(indem er Julie die Hände küßt)</stage>
+            <p>Theureste Julie! da Sie mir erlauben zu hoffen, so machen Sie mich zu dem
+              glücklichsten Menschen.</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Bestes Mädgen. Diese Gesinnungen sind dieses edlen Mannes und deiner würdig. Ich bin
+              versichert nur wenige Zeit wird dich in den Stand setzen die glücklichste Frau zu
+              werden.</p>
+          </sp>
+          <sp who="#karoline">
+            <speaker>Karoline.</speaker>
+            <stage>(freudig)</stage>
+            <p>So wird meine Schwester auch glücklich seyn? und ich auch? ich werde nicht wieder von
+              hier gerissen werden? und Karl bleibt auch hier?</p>
+          </sp>
+          <sp who="#lady">
+            <speaker>Lady.</speaker>
+            <p>Ja mein Kind. Der Himmel der uns genug geprüft hat, wird deine Vernunft zurücke
+              bringen, und dann werden wir alle glücklich seyn. <stage>(zur Frau Williams)</stage>
+              Meine liebe Frau Williams, ich werde den Dienst den Sie mir heute geleistet haben,
+              gewiß nicht vergessen. <stage>(tritt zwischen ihre Kinder)</stage> Kommt meine Kinder,
+              laßt uns die Schmerzen dieses Tages vergessen, und jeden künftigen unsers Lebens zur
+              Ausübung der Tugend anwenden: so werden wir, wenn auch ein Wetter über unsern Häuptern
+              steht, doch stets auf den Schutz der Vorsicht bauen können.</p>
+          </sp>
+          <trailer>Ende.</trailer>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
