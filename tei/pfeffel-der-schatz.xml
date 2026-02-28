@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000768" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Der Schatz</title>
+        <title type="sub">Ein Schäferspiel von einem Aufzuge</title>
+        <author>
+          <persName>
+            <forename>Gottlieb</forename>
+            <forename>Konrad</forename>
+            <surname>Pfeffel</surname>
+          </persName>
+          <idno type="wikidata">Q77742</idno>
+          <idno type="pnd">118740709</idno>
+        </author>
+        <respStmt>
+          <resp>Converted to TEI by</resp>
+          <persName ref="https://orcid.org/0000-0003-2419-6629">Frank Fischer</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>ÖNB Digital</name>
+          <idno type="URL">https://data.onb.ac.at/rep/105CDC6E</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource"><author>Gottlieb Konrad Pfeffel</author>: <title>Der Schatz.
+              Ein Schäferspiel von einem Aufzuge</title>. <pubPlace>Franckfurt am Mayn</pubPlace>:
+              <publisher>Garbe</publisher>
+            <date>1761</date>. (S. <biblScope unit="page" from="1" to="32">1–32</biblScope>.)</bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="chrysant" sex="MALE">
+            <persName>Chrysant</persName>
+          </person>
+          <person xml:id="hylas" sex="MALE">
+            <persName>Hylas</persName>
+          </person>
+          <person xml:id="margaris" sex="FEMALE">
+            <persName>Margaris</persName>
+          </person>
+          <person xml:id="myrtha" sex="FEMALE">
+            <persName>Myrtha</persName>
+          </person>
+          <person xml:id="palaemon" sex="MALE">
+            <persName>Palämon</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="parent_of" active="#palaemon" passive="#hylas"/>
+            <relation name="parent_of" active="#myrtha" passive="#margaris"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-02-28">(ff) file conversion from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1761">
+        <desc/>
+      </event>
+      <event type="premiere" when="1767-05-12">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000768"
+        passive="http://www.wikidata.org/entity/Q138329683"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <pb/>
+    <front>
+      <titlePage>
+        <docAuthor>[Gottlieb Konrad Pfeffel]</docAuthor>
+        <docTitle>
+          <titlePart type="main">Der Schatz</titlePart>
+          <titlePart type="sub">ein Schäferspiel von einem Aufzuge.</titlePart>
+        </docTitle>
+        <docImprint>
+          <pubPlace>Franckfurt am Mayn,</pubPlace>
+          <publisher>bey Johann Gottlieb Garbe,</publisher>
+          <docDate>1761.</docDate>
+        </docImprint>
+      </titlePage>
+      <pb/>
+      <pb/>
+      <div type="dedication">
+        <head>Zueignung an den Herrn Professor Gellert.</head>
+        <l>Als in Thessaliens Gefilden</l>
+        <l>Apoll, voll Menschen-Freundlichkeit,</l>
+        <l>Noch GOtt im hänfnen Schäfer-Kleid,</l>
+        <l>Bemühet war die Hirten umzubilden;</l>
+        <l>Da sein harmonischer Gesang</l>
+        <pb/>
+        <l>Und seiner Flöte Zauber-Klang</l>
+        <l>Durch die entzückten Fluren wallte,</l>
+        <l>Und, voll von einem edlen Trieb,</l>
+        <l>Der Jüngling auch sich eine Flöte hieb,</l>
+        <l>Das Mädchen Phöbus Lieder lallte:</l>
+        <l>In jener ersten goldnen Zeit,</l>
+        <l>Saß einst Apoll im Schatten junger Myrthen,</l>
+        <l>Und blies und sang, behorcht von einem kleinen Hirten,</l>
+        <l>Ein göttlich Lied von der Zufriedenheit.</l>
+        <l>Der Knabe fühlt. Wer müßte da nicht fühlen?</l>
+        <pb/>
+        <l>Berauscht von dem was er empfand,</l>
+        <l>Ergrif er schnell den Phöbus bey der Hand,</l>
+        <l>Und bat: O laß mich auch ein kleines Liedgen spielen!</l>
+        <l>Der holde Gott reicht ihm das Rohr.</l>
+        <l>Der Knabe hüpft und lacht und fährt damit zum Munde.</l>
+        <l>Schon bläßt und fingert er bald eine halbe Stunde,</l>
+        <l>Allein noch kommt kein Lied hervor.</l>
+        <l>Wie schauerte bey diesem Meisterstücke</l>
+        <pb/>
+        <l>Des guten Phöbus zartes Ohr!</l>
+        <l>Zulezt nahm er mit einem süssen Blicke</l>
+        <l>Das allzu lang entweihte Rohr</l>
+        <l>Aus der verwegnen Hand zurücke.</l>
+        <l>Das Ding ist würcklich schwer; so schwur der kleine Mann:</l>
+        <l>Mich dünckt er brauchte nicht zu schwören.</l>
+        <l>Doch, fuhr er kindisch fort, was ich izt noch nicht kan,</l>
+        <l>O Phöbus, das mußt du mich lehren.</l>
+      </div>
+      <pb/>
+      <div type="epigraph">
+        <p>Der Schatz</p>
+        <p>Ein Schäferspiel.</p>
+        <epigraph>
+          <quote xml:lang="fr">
+            <lg>
+              <l>Aux vrais biens par un doux mensonge,</l>
+              <l>L'Eglogue rend ainsi les coeurs:</l>
+              <l>La raison sçait que c'est un songe,</l>
+              <l>Mais elle en saisit les douceurs.</l>
+            </lg>
+          </quote>
+          <bibl>Gresset.</bibl>
+        </epigraph>
+      </div>
+      <pb/>
+      <castList>
+        <head>Personen.</head>
+        <castItem>
+          <role>Chrysant,</role>
+          <roleDesc>ein vornehmer Bürger aus der Stadt.</roleDesc>
+        </castItem>
+        <castItem>
+          <role>Hylas,</role>
+          <roleDesc>ein junger Schäfer.</roleDesc>
+        </castItem>
+        <castItem>
+          <role>Palämon,</role>
+          <roleDesc>sein Vater.</roleDesc>
+        </castItem>
+        <castItem>
+          <role>Margaris,</role>
+          <roleDesc>eine junge Schäferin.</roleDesc>
+        </castItem>
+        <castItem>
+          <role>Myrtha,</role>
+          <roleDesc>ihre Mutter.</roleDesc>
+        </castItem>
+      </castList>
+      <set>
+        <p>Der Schauplatz ist in einem Walde.</p>
+      </set>
+    </front>
+    <pb n="1"/>
+    <body>
+      <div type="scene">
+        <head>Erster Auftritt.</head>
+        <sp who="#chrysant">
+          <speaker>Chrysant</speaker>
+          <stage>(alleine mit einer Hacke in der Hand, die er voll Verzweiflung wegwirft.)</stage>
+          <l>Mein Graben ist umsonst. Nun bin ich ganz verloren.</l>
+          <l>Grausamer Jupiter! bin ich denn nur geboren</l>
+          <l>Der Unglückseligste der Sterblichen zu seyn?</l>
+          <l>Ach! warum gabst du mir den tollen Anschlag ein</l>
+          <l>Mein Gold dem eiteln Schutz der Faunen zu vertrauen?</l>
+          <l>Doch, überfiel mich nicht ein ahnungs volles grauen,</l>
+          <l>Indem ich das Gefäß mit Erde zugedeckt?</l>
+          <l>O warum hat mich nicht dein Donner abgeschreckt?</l>
+          <l>Doch, diesen brauchst du nur um Welten umzukehren,</l>
+          <l>Um dein und unser Werck tyrannisch zu zerstören.</l>
+          <pb n="2"/>
+          <l>So ward mein Marmor-Haus ein Lustspiel deiner Wuth,</l>
+          <l>Und mich, verwünschter Schutz, entriß dein Arm der Gluth.</l>
+          <l>Ich sollte länger noch für neue Martern leben.</l>
+          <l>Doch, was du mir versagst, den Tod, kan ich mir geben.</l>
+          <l>Ich will barmherziger, als alle Götter seyn.</l>
+          <l part="I">Zu lang versparter Dolch, erlöse mich! <stage>(Er will sich
+            ermorden)</stage></l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Zweyter Auftritt.</head>
+        <stage>Chrysant, Hylas (der aus einem Busche hervor springt und den Arm des Chrysands
+          aufhält:)</stage>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="F">Halt ein,</l>
+          <l part="I">Verzweiflungs voller Greis!</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="M">Wie?</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="F">Gib mir dieses Eisen.</l>
+        </sp>
+        <pb n="3"/>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="I">Laß mich.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="F">So muß ich es dir mit Gewalt entreissen.</l>
+          <stage>(Er windet es ihm aus der Hand.)</stage>
+          <l>Euch, Göttern sey gedanckt! Ihr stärcktet meine Hand,</l>
+          <l>Und habt mir warlich selbst mein buntes Schaf entwandt,</l>
+          <l>Damit, wenn ich es hier im Walde suchen wolte,</l>
+          <l>Ich diesen fremden Mann vom Tod erretten solte.</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l>Verlaß mich, kühner Hirt, mein Herze danckt dir nicht,</l>
+          <l>Und haßt dich, weil dein Mund vom Schutz der Götter spricht.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l>Ich zittre. Doch wolan kan mich dein Herz gleich hassen,</l>
+          <l>Ich liebe dich, und will dich darum nicht verlassen.</l>
+          <l>Des hohen Pans Gebot: Sey deines Feindes Freund,</l>
+          <l>Ist viel zu schön, und du, du bist mein erster Feind.</l>
+          <pb n="4"/>
+          <l part="I">Mich liebt die ganze Flur.</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="F">So muß auch ich dich lieben;</l>
+          <l>Du kleiner Zauberer hast meine Wuth vertrieben.</l>
+          <l>Nimm diesen Ring zum Lohn für deine Tugend an,</l>
+          <l part="I">Und suche nun dein Schaf.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas</speaker>
+          <stage>(traurig)</stage>
+          <l part="F">Was hab ich dir gethan?</l>
+          <l>Du sprichst, du liebest mich, und willst mich von dir treiben?</l>
+          <l>Behalte deinen Ring und laß mich bey dir bleiben.</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="I">Nein, nein.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="F">So nimm ihn doch, ich dancke dir dafür.</l>
+          <l>Sieh nur, ich habe ja schon einen schönern hier.</l>
+          <l>Den meine Margaris aus Veilgen und Narcissen</l>
+          <l>Mir heut geflochten hat. O Ring ich muß dich küssen! <stage>(er küßt ihn)</stage></l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l>Beglückter Jüngling! doch entfleuch mit deinem Glück,</l>
+          <l>Sein Anblick stürzet mich in meinen Gram zurück.</l>
+          <l part="I">Ach!</l>
+        </sp>
+        <pb n="5"/>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="F">Lieber alter Mann, was grosses muß dich quälen.</l>
+          <l>Doch warum willst du denn mir deinen Schmerz verhelen?</l>
+          <l>Es ist ja niemand hier, der uns belauschen kan.</l>
+          <l part="I">Ich weinte gern mit dir.</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="F">So höre mich denn an.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l>Wie stöhnet deine Brust! wie zittern deine Glieder!</l>
+          <l>Komm, laß dich neben mir auf diesen Rasen nieder.</l>
+          <stage>(Hylas unterstützt ihn indem er sich niedersetzt)</stage>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l>Ich war ein reicher Mann, der in der grossen Stadt</l>
+          <l>Ein königliches Haus als Herr bewohnet hat.</l>
+          <l>Der fürchterliche Krieg, durch den seit zweyen Jahren,</l>
+          <l>Die Gränzen unsers Lands so oft verheeret waren,</l>
+          <l>Bewog mich, alles Geld das mein Gewölb verschloß,</l>
+          <l>Der Raubsucht zu entziehn. Die Summe war sehr groß,</l>
+          <pb n="6"/>
+          <l>Und .... doch vernimm zuvor den ersten Streich der Götter:</l>
+          <l>Vor einer Woche schlug ein fürchterliches Wetter,</l>
+          <l>Das diese Fluren auch, doch nur gelinde traf ...</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l>Gelinde, sagest du? Es raubte mir ein Schaf,</l>
+          <l>Und hat die fettste Trift durch seine Flut zerstöret.</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l>Und mir hat es mein Haus zu Staub und Graus verzehret.</l>
+          <l>Doch nicht mein Haus allein, mein ganzes grosses Gut</l>
+          <l>Ward unter seinem Dach ein Raub der schnellen Glut.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l>O damals hat Damöt von jenen schroffen Höhen,</l>
+          <l>Wie er mir selbst erzehlt ein fernes Feur gesehen.</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l>Ich brachte nichts davon, als dieses schlechte Kleid,</l>
+          <l part="I">Und die Verzweiflung ....</l>
+        </sp>
+        <pb n="7"/>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="F">Ach wie rühret mich dein Leid!</l>
+          <l part="I">Doch ....</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="F">Höre mich erst ganz. Ich wußte viele Stunden</l>
+          <l>Vor Wuth nicht, wo ich war. Als ich mich selbst gefunden,</l>
+          <l>So winckte mir ein Trost in dem verborgnen Schatz.</l>
+          <l>Ich selbst vergrub ihn, hier auf diesen Zauber-Platz.</l>
+          <l>Allein, ihr Götter, lacht! auch dieser ist verschwunden.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas</speaker>
+          <stage>(für sich)</stage>
+          <l>O Himmel! <stage>(laut)</stage> Freue dich, ich hab ihn jüngst gefunden.</l>
+          <l>In einem Augenblick komm ich zu dir zurück.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Dritter Auftritt.</head>
+        <sp who="#chrysant">
+          <speaker>Chrysant</speaker>
+          <stage>(alleine indem er sich aufrichtet.)</stage>
+          <l>Hab ich auch recht gehört? O wunderbares Glück</l>
+          <pb n="8"/>
+          <l>Das diesen jungen Hirt zu mir hieher gesendet!</l>
+          <l>Wie aber, wenn er sich nicht wieder zu mir wendet?</l>
+          <l>Nein, er ist redlich. Doch warum nahm er die Flucht?</l>
+          <l>Wenn er mich auch betrügt, so sey auch er verflucht!</l>
+          <l part="I">Allein was seh ich!</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Vierter Auftritt.</head>
+        <stage>Chrysant, Hylas (mit einem Hute voll Geld)</stage>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="F">Hier, sind deine Schätze wieder.</l>
+          <l>Wie freudig leg ich sie zu deinen Füssen nieder!</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="I">Wie? was?</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="F">Ich habe zwar die Stücke nicht gezehlt,</l>
+          <l>Allein ich glaube nicht, daß nur ein einzigs fehlt.</l>
+          <l>Sie lagen unversehrt in einer holen Fichte.</l>
+        </sp>
+        <pb n="9"/>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l>Ist diese Scene nicht ein süsses Traum-Gesichte?</l>
+          <l>Welch ein erhabnes Herz! O komm, umarme mich,</l>
+          <l>Geliebter bester Freund, der Himmel segne dich!</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l>O Wollust, innres Fest, das ich noch nie empfunden!</l>
+          <l>Ihr Götter! seyd gelobt, daß ich den Topf gefunden!</l>
+          <l part="I">Doch lieber guter Greis ....</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="F">Ich mercke dich, mein Sohn:</l>
+          <l>Hier ist mein ganzes Gut, nimm, was du willst, davon.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l>Wer? Ich? Was denckest du? Wie kanst du mich so kräncken.</l>
+          <l>Was nützte mir dein Schatz? Willst du mir etwas schencken,</l>
+          <l part="I">So gieb mir ....</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="M">Und was denn?</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="F">Den Topf, der ihn verschlos.</l>
+        </sp>
+        <pb n="10"/>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l>Wie machst du mich so klein, und wie bist du so gros!</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l>Mein alter Vater wird bald sein Geburts-Fest feyern,</l>
+          <l>Da will ich das Gefäß mit zartem Sande scheuern,</l>
+          <l>Und es, voll süssen Raums, mit Blumen ausgeziert,</l>
+          <l part="I">Den guten Göttern weihn.</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="F">O tugendhafter Hirt!</l>
+          <l>Wie selig, wie erlaucht ist jener Greis zu nennen,</l>
+          <l part="I">Der dir das Leben gab!</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="F">O möchtest du ihn kennen!</l>
+          <l>Es kan kein frömmerer, kein beßrer Vater seyn.</l>
+          <l>Komm, lieber Alter, komm, der Abend bricht herein,</l>
+          <l>Ich will dich gleich zu ihm in unsre Hütte leiten,</l>
+          <l>Und dir ein kühles Mahl von Brodt und Milch bereiten.</l>
+          <l>Du sollst die Nacht hindurch auf weichen Fellen ruhn.</l>
+          <pb n="11"/>
+          <l>O komm, wir wollen dir mit Freuden gutes thun!</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Fünfter Auftritt.</head>
+        <stage>Margaris, die Vorigen.</stage>
+        <sp who="#margaris">
+          <speaker>Margaris.</speaker>
+          <l>Ach Hylas! bist du hier? Man kan dich gar nicht finden;</l>
+          <l>Ich suchte dich umsonst am Bach und bey den Linden.</l>
+          <stage>(leise)</stage>
+          <l part="I">Was will der fremde Greis?</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="F">Der Greis? er liebet mich.</l>
+          <l>Und weiß er, wer du bist, so liebet er auch dich.</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l>Ist das die Schäferin von der du mir erzehlet?</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l>Ja, das ist Margaris, die sich mein Herz erwehlet.</l>
+        </sp>
+        <pb n="12"/>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="I">Sey tausendmal gegrüßt, mein Kind.</l>
+        </sp>
+        <sp who="#margaris">
+          <speaker>Margaris.</speaker>
+          <l part="F">Ich dancke dir.</l>
+          <l part="I">Ach!</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="M">Warum seufzest du?</l>
+        </sp>
+        <sp who="#margaris">
+          <speaker>Margaris.</speaker>
+          <l part="F">Nun ist es aus mit mir!</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="I">Wie bebt mein Herz!</l>
+        </sp>
+        <sp who="#margaris">
+          <speaker>Margaris.</speaker>
+          <l part="F">Ich weis, ich werde dich betrüben.</l>
+          <l part="I">Ich soll ....</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="M">Nun was?</l>
+        </sp>
+        <sp who="#margaris">
+          <speaker>Margaris.</speaker>
+          <l part="F">Ich soll den alten Damon lieben.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l>Ihr Götter! Welch ein Schlag! Was hab ich euch gethan?</l>
+          <l part="I">Den reichen Damon?</l>
+        </sp>
+        <sp who="#margaris">
+          <speaker>Margaris.</speaker>
+          <l part="F">Ja. Heut hielt er um mich an,</l>
+          <pb n="13"/>
+          <l>Und meine Mutter hat ihn alles hoffen lassen.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l>Eh du die seine wirst mußt du mich sehn erblassen.</l>
+        </sp>
+        <sp who="#margaris">
+          <speaker>Margaris.</speaker>
+          <l>Die Stunde dieses Bands wird meine letzte seyn.</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l>Ihr Götter, nimmt euch nicht ein edles Mitleid ein?</l>
+          <l>Ist das der schöne Lohn der tugendhaften Triebe?</l>
+          <l>O warum schafft ihr denn die Herzen für die Liebe?</l>
+          <l>Ach, Kinder, holdes Paar, wie rührt mich euer Schmerz!</l>
+          <l part="I">Doch ....</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="F">Welch ein Donnerschlag für meines Vaters Herz!</l>
+          <l>Er weihte meine Gluth mit heilgen Freuden-Zähren,</l>
+          <l>Und wollte morgen dich zu meiner Braut begehren.</l>
+          <l part="I">Doch nun, nun ists umsonst!</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="F">Ermannet, tröstet euch,</l>
+          <l part="I">Wer weiß? vielleicht ....</l>
+        </sp>
+        <pb n="14"/>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="F">Ach nein, der Hirt ist allzu reich:</l>
+          <l>Er läßt auf unsrer Flur bey fünfzig Schafen weiden,</l>
+          <l>Und ich nur zwölfe. Doch, was soll ich ihn beneiden?</l>
+          <l>Der Himmel segnet ihn, auch ich war niemals arm.</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="I">Du Held!</l>
+        </sp>
+        <sp who="#margaris">
+          <speaker>Margaris.</speaker>
+          <l part="F">Komm, Hylas, komm, wir wollen unsern Harm</l>
+          <l>Und unsre Zärtlichkeit vor meine Mutter bringen.</l>
+          <l>Vielleicht läßt sich zuletzt ihr gutes Herz bezwingen;</l>
+          <l>Sie liebte dich ja sonst und sprach mir oft von dir.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="I">Hilf grosser Pan! Sie kommt.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Sechster Auftritt.</head>
+        <stage>Myrtha, die vorigen.</stage>
+        <sp who="#myrtha">
+          <speaker>Myrtha.</speaker>
+          <l part="F">So, Mädgen, bist du hier?</l>
+          <pb n="15"/>
+          <l>Gewis, es steht recht fein die Lämmer irren lassen,</l>
+          <l>Um in dem duncklen Wald den Schäfern aufzupassen.</l>
+          <l part="I">Nur fort!</l>
+        </sp>
+        <sp who="#margaris">
+          <speaker>Margaris.</speaker>
+          <l part="M">Vergebt es mir, der arme Hylas ...</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="F">Ach!</l>
+        </sp>
+        <sp who="#myrtha">
+          <speaker>Myrtha.</speaker>
+          <l>Der arme Hylas! Ey, du läufst ihm schmachtend nach,</l>
+          <l>Und denckst nicht mehr an das, was ich vor einer Stunde ...</l>
+          <l>Doch, Hylas, hör es nun aus meinem eignen Munde.</l>
+          <l>Ich weis, du gönnst es uns, weil du vernünftig bist,</l>
+          <l>Daß Margaris die Braut des reichen Damons ist.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="I">Ihr Götter! <stage>(er sinckt ohnmächtig ins Gras)</stage></l>
+        </sp>
+        <sp who="#margaris">
+          <speaker>Margaris.</speaker>
+          <l part="M">Ach er stirbt! <stage>(sie sinckt neben ihn hin)</stage></l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="F">Nun weide deine Blicke,</l>
+          <l part="I">Grausame Mutter!</l>
+        </sp>
+        <pb n="16"/>
+        <sp who="#myrtha">
+          <speaker>Myrtha.</speaker>
+          <l part="F">Ach! ich wolte beyder Glücke.</l>
+          <l part="I">Ihr Kinder wachet auf!</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="F">Mein Sohn erhole dich!</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas</speaker>
+          <stage>(mit schwacher Stimme.)</stage>
+          <l part="I">Wo bist du Margaris?</l>
+        </sp>
+        <sp who="#margaris">
+          <speaker>Margaris</speaker>
+          <stage>(ohnmächtig)</stage>
+          <l part="F">Wie? ruft mein Hylas mich?</l>
+        </sp>
+        <sp who="#myrtha">
+          <speaker>Myrtha.</speaker>
+          <l part="I">Steht auf ihr Kinder!</l>
+        </sp>
+        <sp who="#margaris">
+          <speaker>Margaris.</speaker>
+          <l part="F">Nein, laß uns dein Knie umfassen,</l>
+          <l>Und wenn dein Wort uns trennt vor dir zugleich erblassen.</l>
+        </sp>
+        <sp who="#myrtha">
+          <speaker>Myrtha.</speaker>
+          <l>Es kan, es kan nicht seyn; Mein Herz bedauret euch,</l>
+          <l part="I">Allein ihr seyd zu arm.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="F">Die Götter sind noch reich.</l>
+          <l>Ihr milder Segen hilft den Tugendhaften leben,</l>
+          <l>Mein guter Vater will mir sieben Schafe geben.</l>
+        </sp>
+        <pb n="17"/>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l>Wenn du die Tugend liebst, so knüpfe dieses Band.</l>
+        </sp>
+        <sp who="#myrtha">
+          <speaker>Myrtha.</speaker>
+          <l part="I">Und Damon?</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="F">Dieser hat kein Recht auf ihre Hand.</l>
+          <l part="I">Sie liebet ihn ja nicht.</l>
+        </sp>
+        <sp who="#margaris">
+          <speaker>Margaris.</speaker>
+          <l part="F">Man zwingt mich ihn zu hassen.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="I">O Myrtha!</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="F">Kanst du sie vergebens flehen lassen?</l>
+        </sp>
+        <sp who="#myrtha">
+          <speaker>Myrtha.</speaker>
+          <l part="I">Ihr Nymphen rathet mir!</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="F">Gehorche der Natur,</l>
+          <l>Bis morgen ist der Hirt der reichste dieser Flur.</l>
+          <l><stage>(zum Hylas)</stage> Mein Sohn ich kaufe dir zum Brautschatz eine Heerde.</l>
+          <l>Gesegnet sey der Tag, an dem ich fähig werde</l>
+          <l>Ein Werck-Zeug zu dem Glück der Redlichen zu seyn.</l>
+          <pb n="18"/>
+          <l>Ich will zum erstenmal mein Gold den Göttern weyhn.</l>
+        </sp>
+        <sp who="#margaris">
+          <speaker>Margaris.</speaker>
+          <l part="I">O Himmel!</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="F">Bester Greis, sie werden dich belohnen.</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l>Umarmt mich, holdes Paar, für euch gehörten Cronen.</l>
+        </sp>
+        <sp who="#myrtha">
+          <speaker>Myrtha.</speaker>
+          <l>Betrüget mich kein Traum? Heyl dir du bester Mann!</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Siebender Auftritt.</head>
+        <stage>Palämon, die vorigen.</stage>
+        <sp who="#palaemon">
+          <speaker>Palämon</speaker>
+          <stage>(ohne die andern zu sehen)</stage>
+          <l>Ihr Faunen! saget mir, wo ich ihn finden kan.</l>
+        </sp>
+        <sp who="#margaris">
+          <speaker>Margaris.</speaker>
+          <l>Drängt nicht Palämon sich durch jene dichten Buchen?</l>
+        </sp>
+        <pb n="19"/>
+        <sp who="#hylas">
+          <speaker>Hylas</speaker>
+          <stage>(lauft ihm entgegen)</stage>
+          <l part="I">O Vater!</l>
+        </sp>
+        <sp who="#palaemon">
+          <speaker>Palämon.</speaker>
+          <l part="F">Lieber Sohn! kaum kont ich dich noch suchen.</l>
+          <l>Dem Himmel sey gedanckt, der über dich gewacht.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l>Wie quälet sich mein Herz, daß ich dir Angst gemacht!</l>
+          <l>Doch Vater, wenn ich dir mein grosses Glück erzähle,</l>
+          <l>Ich weis, du freuest dich mit deiner ganzen Seele.</l>
+        </sp>
+        <sp who="#palaemon">
+          <speaker>Palämon</speaker>
+          <stage>(für sich)</stage>
+          <l>Es kan nicht möglich seyn, daß er schon alles weis.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l>So höre mich denn an und liebe diesen Greis.</l>
+          <l>Jüngst will ich hier im Wald, bey Phöbus ersten Blicken,</l>
+          <l>Für meine Margaris bethaute Himbern pflücken;</l>
+          <l>Und Phylax, der die Spur von einem Maulwurf roch,</l>
+          <l>Scharrt neben diesem Busch ein tiefes tiefes Loch.</l>
+          <l>Itzt blick ich einmal hin, und sehe recht mit Schrecken,</l>
+          <l>Ein rostiges Gefäß im Schoos der Erde stecken.</l>
+          <pb n="20"/>
+          <l>Ich deck es endlich auf, noch bebte mir das Herz,</l>
+          <l>Und fand den ganzen Topf voll runder Stückgen Erz.</l>
+        </sp>
+        <sp who="#palaemon">
+          <speaker>Palämon.</speaker>
+          <l part="I">Das weis ich alles nicht.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="F">Du mußt es mir verzeihen,</l>
+          <l>Ich wolte dich damit an deinem Fest erfreuen.</l>
+          <l>Ich warf das unnütz Erz in jenen holen Stamm,</l>
+          <l>Und heute sucht ich hier mein buntes Mutter-Lamm,</l>
+          <l>Als meinem irren Blick der beste Greis begegnet,</l>
+          <l part="I">Dem alles zugehört.</l>
+        </sp>
+        <sp who="#palaemon">
+          <speaker>Palämon.</speaker>
+          <l part="F">O Fügung sey gesegnet!</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l>Allein du weist noch nicht, was er an mir gethan.</l>
+          <l>Damit ich Margaris auch glücklich machen kan,</l>
+          <l>Sie, deren schöne Hand der reichste Hirt begehrte,</l>
+          <l>So kauft er für sein Gold mir morgen eine Heerde.</l>
+        </sp>
+        <sp who="#palaemon">
+          <speaker>Palämon.</speaker>
+          <l>Erhabner fremder Freund, wie sehr bewegst du mich!</l>
+          <pb n="21"/>
+          <l>Sie, die du nachgeahmt, die Götter segnen dich.</l>
+          <l>Doch nimm nur dein Geschenck mit diesem Kuß zurücke,</l>
+          <l part="I">Mein Sohn bedarf nichts mehr.</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="F">Tyrannisches Geschicke!</l>
+          <l>Soll ich an diesem Tag denn stäts erniedrigt seyn?</l>
+        </sp>
+        <sp who="#myrtha">
+          <speaker>Myrtha.</speaker>
+          <l part="I">Doch ....</l>
+        </sp>
+        <sp who="#palaemon">
+          <speaker>Palämon</speaker>
+          <stage>(zu Hylas und Margaris)</stage>
+          <l part="F">Damon setzet euch zu seinen Kindern ein.</l>
+        </sp>
+        <sp who="#myrtha">
+          <speaker>Myrtha.</speaker>
+          <l part="I">Wer? Damon?</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <l part="M">Himmel! was?</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="F">Ich muß den Schäfer sprechen.</l>
+          <l part="I">Wo ist er?</l>
+        </sp>
+        <sp who="#palaemon">
+          <speaker>Palämon.</speaker>
+          <l part="F">Ach! mein Freund, er wolte Kirschen brechen,</l>
+          <pb n="22"/>
+          <l>Und fiel, indem ich matt vor seinem Garten saß,</l>
+          <l part="I">Vom höchsten Ast herab.</l>
+        </sp>
+        <sp who="#margaris">
+          <speaker>Margaris.</speaker>
+          <l part="F">Ihr Götter was ist das!</l>
+        </sp>
+        <sp who="#palaemon">
+          <speaker>Palämon.</speaker>
+          <l>Ich eilte zu ihm hin. Er sprach mit schwachem Munde:</l>
+          <l>Wie glücklich bin ich doch in meiner letzten Stunde!</l>
+          <l>Palämon höre mich: dein Hylas muß allein</l>
+          <l>Besitzer meiner Braut und meiner Heerde seyn.</l>
+          <l>Er liebt die Margaris, die ich ihm rauben wolte,</l>
+          <l>Der Himmel gab nicht zu, daß es geschehen solte.</l>
+          <l>Sein stets gerechter Zorn straft meine Grausamkeit.</l>
+          <l>Doch, fuhr er heiter fort, er läßt mir ja noch Zeit,</l>
+          <l>Am Rande meines Grabs mein Unrecht auszusöhnen,</l>
+          <l>Und eine schöne Glut, die von ihm stammt, zu krönen.</l>
+          <pb n="23"/>
+          <l>Heyl! Heyl! dem frommen Paar. Jetzt lief auf mein Geschrey</l>
+          <l>Die ganze Nachbarschaft bestürzungsvoll herbey.</l>
+          <l>Ihr Freunde, weinet nicht, weil ich mit Freuden sterbe.</l>
+          <l>Lebt wohl: Palämons Sohn, mein Hylas ist mein Erbe.</l>
+          <l part="I">So sprach er und verschied.</l>
+          <stage>(Sie weinen alle.)</stage>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="F">Nun hab ich es gehört.</l>
+          <l>Das Schicksal hält mich nicht der süssen Ehre werth,</l>
+          <l>Durch eine schöne That die Tugend zu belohnen.</l>
+          <stage>(zum Palämon indem er ihm sein Geld zeiget)</stage>
+          <l>Freund, nimm mein ganzes Gut und laß mich bey dir wohnen.</l>
+          <l>Ich will mein schnödes Herz der hohen Unschuld weihn,</l>
+          <l>Und ferne von der Welt noch endlich glücklich seyn.</l>
+        </sp>
+        <sp who="#hylas">
+          <speaker>Hylas.</speaker>
+          <stage>(läuft auf ihn zu und küßt ihm die Hand)</stage>
+          <l part="I">O wie entzückst du mich!</l>
+        </sp>
+        <sp who="#palaemon">
+          <speaker>Palämon.</speaker>
+          <l part="F">Ich habe reich zu leben.</l>
+          <pb n="24"/>
+          <l>Willst du der Götter Gut den Göttern wieder geben,</l>
+          <l part="I">Wolan ....</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="M">Was soll ich thun?</l>
+        </sp>
+        <sp who="#palaemon">
+          <speaker>Palämon.</speaker>
+          <l part="F">Zween Schäfer an dem Fluß,</l>
+          <l>Verloren jüngst ihr Vieh durch einen Wetter-Guß.</l>
+          <l>Für diese, theurer Greis, für diese kaufe Heerden,</l>
+          <l>So wirst du selbst ein Gott auf unsren Fluren werden.</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l part="I">Ich kan nicht reden.</l>
+        </sp>
+        <sp who="#palaemon">
+          <speaker>Palämon.</speaker>
+          <l part="F">Auf! die Dämmerung bricht ein,</l>
+          <l>Du sollst von jetzund an mein Gast und Bruder seyn,</l>
+          <l>Und morgen dieses Paar zu dem Altar begleiten.</l>
+        </sp>
+        <sp who="#chrysant">
+          <speaker>Chrysant.</speaker>
+          <l>Kommt, Freunde, lehret mich der Tugend Seligkeiten.</l>
+        </sp>
+      </div>
+      <pb n="25"/>
+      <div type="epilogue">
+        <head>Schreiben an einen Freund.</head>
+        <p>ICh hätte Ihnen schon lange geschrieben, wenn ich nicht meinen Brief mit dem abgedruckten
+          Einsiedler hätte begleiten wollen. Hier ist er, und in wenig Wochen wird auch der Schatz
+          die Presse verlassen. Zu was für einer Toll-Kühnheit hat die Nachsicht meiner
+          vaterländischen Aristarchen meine sonst so furchtsame Muse verleitet! und dennoch würde
+          sie schwerlich in ihren einsamen Winckel zurück fliehen, wenn man ihr auch die Freyheit
+          dazu gestatten wolte. Sie verspricht sich von ihrer öffentlichen Erscheinung einen
+          Vortheil, den sie hinter der grossen Scene niemals würde erhalten haben. Sie wird in der
+          Fremde gewis <pb n="26"/> unpartheyischere Richter antreffen, als sie in ihrer Heymath
+          gefunden hat. Die strenge Critick wird jede schlaffe Saite, jeden falschen Ton ihrer Leyer
+          entdecken, und die willige Muse gelobet ihr in allen Stücken einen heiligen Gehorsam, auch
+          alsdann, wenn derselben ein ewiges Stillschweigen auferleget wird. Sie wissen, mein
+          Freund, wie ungerne ich die Zeit verderbe, und wie viel mehr Ehre ich darinnen suche, das
+          Schöne in fremden Wercken zu fühlen, als selber ein entbehrlicher Autor zu werden.
+          Deswegen will ich nicht eher Plane zu neuen Schauspielen entwerfen, bis ich weis, wie
+          meine ersten Versuche von den Richtern des Parnaßes aufgenommen worden. Ich nenne diese
+          beyden Stücke meine ersten Versuche, weil ich noch unentschlossen bin, ob ich das ältere
+          prosaische Lustspiel dem Druck übergeben werde.</p>
+        <pb n="27"/>
+        <p>Lassen sie mich nun wieder auf den Einsiedler kommen. Der Herr Verleger ist damit so
+          eilfertig zu Wercke gegangen, daß ich mit meiner Nach-Erinnerung, welche eben nicht ganz
+          überflüßig war, zu späte gekommen bin. Ich erklärte mich darinnen über den Titel dieses
+          kleinen Schauspiels, und suchte zu beweisen, daß ich mehr Recht hatte, ihm den Nahmen des
+          Trauerspiels, als der Comödie beyzulegen. Eigentlich machen solche Stücke das Band
+          zwischen den zwo Haupt-Arten der dramatischen Dichtkunst aus; weil sie aber unmöglich mit
+          allen beyden in gleichem Grade der Aehnlichkeit stehen können, so darf man sie, wie mich
+          dünckt, in Ermanglung eines besondern Nahmens, herzhaft nach denjenigen Schauspielen
+          benennen, mit welchen sie am nächsten verwandt sind. Die Natur, unsere älteste
+          Lehrmeisterin, <pb n="28"/> hat neben andern Eigenschaften dem Trauerspiel das Weinen, dem
+          Lustspiel das Lachen beygelegt; und wenn ich mich nicht betrüge, so war sie es, die mir
+          eingab den Einsiedler eher eine Tragödie, als eine Comödie zu heissen. Ich habe sogar die
+          Eitelkeit zu glauben, daß Aristoteles selbst mich nicht gänzlich verdammen könte, weil er
+          in seiner Dichtkunst alle ernsthafte und traurige Vorstellungen aus dem Lustspiel
+          verbannet hat. Doch vielleicht habe ich ihn nicht verstanden, und in diesem Falle wünschte
+          ich nur, daß alle Fehler meines kleinen Schauspiels eben so leicht als dessen Titel zu
+          verbessern wären. Sie wissen, daß ich es dem Herrn Ackermann übergeben habe; allein meinen
+          Endzweck werden Sie vielleicht nicht errathen.</p>
+        <pb n="29"/>
+        <p>So oft nach der Aufführung des Polyeukts, der Zayre, und selbst der Cenie, oder des
+          natürlichen Sohnes ein lustiges Nachspiel angekündiget wurde, so oft habe ich mich mit
+          einem unüberwindlichen Wiederwillen von dem Schauplatze geflüchtet, weil man mich nun
+          zwingen wolte, über einen Gecken zu lachen, da ich vor wenig Augenblicken so süsse Thränen
+          über die unglückliche Tugend vergossen hatte. Ich wünschte, daß die Schauspieler nach
+          allen rührenden Stücken entweder gar keine, oder doch nur solche Nachspiele vorstellen
+          möchten, welche das Gemüthe in seiner melancholischen Wolllust erhalten könten. Ich bin
+          der erste nicht, der dieses gewünschet hat, und vielleicht können nur diejenigen, welche
+          blos zum Zeitvertreib das Theater besuchen, an der plötzlichen Abwechslung des traurigen
+            <pb n="30"/> mit dem lächerlichen ein Vergnügen finden. Dem ohngeachtet haben wir nur
+          sehr wenige Nachspiele, welche geschickt sind, Thränen abzulocken, und obgleich der
+          Einsiedler weiter nichts als eine Kleinigkeit ist, so schmeichle ich mir doch, daß er
+          einem Herzen, welches noch um den Polyeukt trauret, keine so widerwärtige Empfindungen
+          aufdringet, als der Herzog Michel, oder die Liebe durch Wechsel-Briefe.</p>
+        <p>Nun habe ich Ihnen ohne es zu mercken meinen ganzen Nachbericht abgeschrieben, und hätte
+          fast Lust diesen wichtigen Brief, der Nachwelt zur Entschädigung, hinter den Schatz
+          andrucken zu lassen, bey welchem ich ohnehin nichts zu erinnern habe, als daß ich es
+          versuchen wolte etwas mehr Contrast und Interesse in unser Schäferspiel zu <pb n="31"/>
+          bringen, ohne seine wesentliche Einfalt zu verletzen. Nun, mein Freund, könte ich meinen
+          Brief schliessen; allein Sie werden mir, einem Autor, doch nicht zumuthen eine so schöne
+          weisse Seite unbeschrieben zu lassen. Ich will sie mit dem Verzeichnis der Druckfehler
+          anfüllen, die mir im Einsiedler aufgestossen sind. Vielleicht bewege ich Sie dadurch das
+          Stück zum andern male zu lesen.</p>
+        <p>Auf der 7ten Zeile der 29ten Seite muß es anstatt <emph>allmächtig</emph>,
+            <emph>allmählich</emph> heissen. Der siebende und neunte Auftritt haben keine
+          Uberschriften. Seite 40, Zeile 19 setzen Sie anstatt <emph>einem</emph>,
+            <emph>jenem</emph>. Auf der 9ten Zeile der nächstfolgenden Seite ist dem Fromhold ein
+            <emph>Und</emph> in den Mund gelegt worden, <pb n="32"/> welches noch zu der Rede der
+          Seraphina gehöret. Doch der ärgerlichste Schnitzer befindet sich am Ende der 46ten Seite,
+          da vor den Worten <emph>kniet vor Seraphinen nieder</emph>, der Nahme
+            <emph>Adelskron</emph> ausgelassen ist, welches einen abgeschmackten Misverstand
+          verursachet. Hingegen bin ich dem Herrn Corrector für ein paar vortheilhafte
+          Wort-Verbesserungen sehr verbunden, ohngeachtet ich nicht errathen kan, warum der Anfang
+          der 17ten Seite <emph>mein Herze bebt zurück</emph> verändert worden, da selbst der Herr
+          von Hagedorn <emph>Herz</emph> und <emph>Herze</emph> sonder Unterschied gebraucht hat.
+          Doch wenn von der Reinigkeit der Deutschen Sprache die Frage ist, so müssen wir Elsasser
+          die Hand auf den Mund legen. Leben Sie wol.</p>
+      </div>
+    </body>
+  </text>
+</TEI>
