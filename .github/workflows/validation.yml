@@ -30,7 +30,7 @@ jobs:
 
       - name: Get changed files
         id: changed-tei-files
-        uses: tj-actions/changed-files@22103cc46bda19c2b464ffe86db46df6922fd323 #v47.0.5
+        uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96 #v47.0.6
         if: github.event_name == 'push' || github.event_name == 'pull_request'
         with:
           files: |
@@ -42,14 +42,14 @@ jobs:
         run: echo 'files=tei/*.xml' >> $GITHUB_OUTPUT
 
       - name: Validate against TEI-All schema
-        uses: dracor-org/dracor-validate-action@bf3d565b8af9d7cb5d3a0a2cb21ebac68f85eb33 # v2.3.0
+        uses: dracor-org/dracor-validate-action@4d668e6429efcbe8d8a89cb60aaf8de9f0ac0ef8 # v2.4.0
         with:
           files: |
             ${{ steps.changed-tei-files.outputs.all_changed_files }}
             ${{ steps.all-tei-files.outputs.files }}
 
       - name: Validate against DraCor schema
-        uses: dracor-org/dracor-validate-action@bf3d565b8af9d7cb5d3a0a2cb21ebac68f85eb33 # v2.3.0
+        uses: dracor-org/dracor-validate-action@4d668e6429efcbe8d8a89cb60aaf8de9f0ac0ef8 # v2.4.0
         with:
           files: |
             ${{ steps.changed-tei-files.outputs.all_changed_files }}
