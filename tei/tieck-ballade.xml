@@ -17,15 +17,8 @@
           <idno type="pnd">118973665</idno>
         </author>
         <respStmt>
-          <resp>Converted to TEI under the supervision of</resp>
-          <persName ref="https://orcid.org/0000-0003-2419-6629">Frank Fischer</persName>
-        </respStmt>
-        <respStmt>
           <resp>Converted to TEI by</resp>
           <persName ref="https://orcid.org/0000-0001-6519-9266">Marius Hug</persName>
-        </respStmt>
-        <respStmt>
-          <resp>Converted to TEI by</resp>
           <persName ref="https://orcid.org/0000-0002-1096-3957">Frank Wiegand</persName>
         </respStmt>
       </titleStmt>
@@ -54,36 +47,38 @@
     </fileDesc>
     <profileDesc>
       <particDesc>
-        <person xml:id="graf" sex="MALE">
-          <persName>Graf</persName>
-        </person>
-        <person xml:id="pater" sex="MALE">
-          <persName>Pater</persName>
-        </person>
-        <person xml:id="fraeulein" sex="FEMALE">
-          <persName>Fräulein</persName>
-        </person>
-        <person xml:id="adelheid" sex="FEMALE">
-          <persName>Adelheid</persName>
-        </person>
-        <person xml:id="agnes" sex="FEMALE">
-          <persName>Agnes</persName>
-        </person>
-        <person xml:id="ritter" sex="MALE">
-          <persName>Ritter</persName>
-        </person>
-        <person xml:id="witwe" sex="FEMALE">
-          <persName>Witwe</persName>
-        </person>
-        <person xml:id="nonne" sex="FEMALE">
-          <persName>Nonne</persName>
-        </person>
-        <person xml:id="adelbert" sex="MALE">
-          <persName>Adelbert</persName>
-        </person>
-        <person xml:id="jaegerin" sex="MALE">
-          <persName>Jägerin</persName>
-        </person>
+        <listPerson>
+          <person xml:id="graf" sex="MALE">
+            <persName>Graf</persName>
+          </person>
+          <person xml:id="pater" sex="MALE">
+            <persName>Pater</persName>
+          </person>
+          <person xml:id="fraeulein_nonne" sex="FEMALE">
+            <persName>Fräulein/Nonne</persName>
+          </person>
+          <person xml:id="adelheid_jaegerin" sex="FEMALE">
+            <persName>Adelheid/Jägerin</persName>
+          </person>
+          <person xml:id="agnes" sex="FEMALE">
+            <persName>Agnes</persName>
+          </person>
+          <person xml:id="ritter" sex="MALE">
+            <persName>Ritter</persName>
+          </person>
+          <person xml:id="witwe" sex="FEMALE">
+            <persName>Witwe</persName>
+          </person>
+          <person xml:id="adelbert" sex="MALE">
+            <persName>Adelbert</persName>
+          </person>
+          <listRelation>
+            <relation name="parent_of" active="#graf" passive="#fraeulein_nonne"/>
+            <relation name="siblings" mutual="#adelbert #adelheid_jaegerin"/>
+            <relation name="lover_of" active="#ritter" passive="#fraeulein_nonne"/>
+            <relation name="spouses" mutual="#ritter #adelheid_jaegerin"/>
+          </listRelation>
+        </listPerson>
       </particDesc>
     </profileDesc>
     <revisionDesc>
@@ -165,18 +160,18 @@
       </div>
       <div type="scene">
         <stage>(Maskensaal.)</stage>
-        <sp who="#fraeulein">
+        <sp who="#fraeulein_nonne">
           <speaker>Fräulein.</speaker>
           <p>Was folgst du mir, mein Kind?</p>
         </sp>
-        <sp who="#adelheid">
+        <sp who="#adelheid_jaegerin">
           <speaker>Adelheid.</speaker>
           <p>Ihr seyd so still, da alle munter sind. Mich fodert niemand auf zum Tanz, so gern ich
             möchte. Wenn nur mein Bruder wieder käme! O da hätt' ich Freude! Mich müsst' er reiten
             lehren, jagen, und ich sässe nicht so viel daheim bey meinem alten Vater. – Was wollt
             ihr weinen? Alle tanzen gern mit euch, und ihr gebt keinem eure Hand.</p>
         </sp>
-        <sp who="#fraeulein">
+        <sp who="#fraeulein_nonne">
           <speaker>Fräulein.</speaker>
           <p>Mein Kind, dort naht ein Ritter, geh, er bittet dich. – Wie froh sie ist! – O Agnes,
             komm, verlass den widerlichen Schwarm, und tritt mit mir in dieses Fenster.</p>
@@ -186,7 +181,7 @@
           <speaker>Agnes.</speaker>
           <p>Für euch giebt euer Vater dieses Fest, und ihr –</p>
         </sp>
-        <sp who="#fraeulein">
+        <sp who="#fraeulein_nonne">
           <speaker>Fräulein.</speaker>
           <p>Ach, Agnes, ich drehe mich in den bunten Kreisen, und jede Gestalt, die nur die fernste
             Aehnlichkeit mit dem Verlohrnen, in Gang, in Stellung hat, füllt mich mit süssem
@@ -197,7 +192,7 @@
           <speaker>Agnes.</speaker>
           <p>O wie beklag' ich euch!</p>
         </sp>
-        <sp who="#fraeulein">
+        <sp who="#fraeulein_nonne">
           <speaker>Fräulein.</speaker>
           <p>Sieh, wenn ich von diesen hellen Sälen hinunter auf die öde Gasse blicke, die der Mond
             so kalt erleuchtet, wenn ich dann eine einsame Gestalt unter diesen Fenstern vorüber
@@ -214,7 +209,7 @@
       </div>
       <div type="scene">
         <stage>(Garten. Ein Ritter führt das Fräulein.)</stage>
-        <sp who="#fraeulein">
+        <sp who="#fraeulein_nonne">
           <speaker>Fräulein.</speaker>
           <l>Ein schöner Morgen haucht erquickend uns</l>
           <l part="I">Mit seinem Athem an.</l>
@@ -224,7 +219,7 @@
           <l part="F">O könnt' ich sagen,</l>
           <l>Wie glücklich ich an eurer Seite bin!</l>
         </sp>
-        <sp who="#fraeulein">
+        <sp who="#fraeulein_nonne">
           <speaker>Fräulein.</speaker>
           <l>In Bäumen, Sträuchen, kleinen Blumen quillt</l>
           <l>In tausend Knospen schon der Frühling, hoffend</l>
@@ -240,7 +235,7 @@
           <l>O lasst mir nur für eine ferne Zukunft</l>
           <l>Auf euer schönes Herz die Hoffnung übrig!</l>
         </sp>
-        <sp who="#fraeulein">
+        <sp who="#fraeulein_nonne">
           <speaker>Fräulein.</speaker>
           <l>Glaubt mir, mein theurer Freund, ich bin so schwach,</l>
           <l>Dass ich nicht wünschen kann, dass ihr auf mich</l>
@@ -259,7 +254,7 @@
           <l>Die meinigen, und sprecht, dass ihr vielleicht</l>
           <l>In fernen Zeiten noch die meine seyd.</l>
         </sp>
-        <sp who="#fraeulein">
+        <sp who="#fraeulein_nonne">
           <speaker>Fräulein.</speaker>
           <l><emph>So</emph> standen wir in voller Frühlingspracht</l>
           <l>Einander gegenüber, und von Händen,</l>
@@ -275,7 +270,7 @@
       </div>
       <div type="scene">
         <stage>(Hütte.)</stage>
-        <sp who="#fraeulein">
+        <sp who="#fraeulein_nonne">
           <speaker>Fräulein.</speaker>
           <p>Nehmt, gute Frau, erquickt euch. Wie geht es eurem holden Knaben?</p>
         </sp>
@@ -284,7 +279,7 @@
           <p>O seht nur, wie er wieder frey und freundlich um sich blickt, wie er mit kindischer
             Freude auf sein neues buntes Röckchen zeigt, das eure Güte ihm geschenkt.</p>
         </sp>
-        <sp who="#fraeulein">
+        <sp who="#fraeulein_nonne">
           <speaker>Fräulein.</speaker>
           <p>Ein schönes Kind! Ihr seyd recht glücklich mit dem Knaben.</p>
         </sp>
@@ -295,14 +290,14 @@
             zum Himmel steigen, dass eure Güte mir die Mittel gab, ihn von der Krankheit zu erlösen,
             denn ohne euch läge alle meine Hoffnung nun im kalten finstern Grabe.</p>
         </sp>
-        <sp who="#fraeulein">
+        <sp who="#fraeulein_nonne">
           <speaker>Fräulein.</speaker>
           <p>Ach! meine Hoffnung liegt im kalten finstern Grabe.</p>
         </sp>
       </div>
       <div type="scene">
         <stage>(Kloster. Nonne hinter dem Sprachgitter.)</stage>
-        <sp who="#nonne">
+        <sp who="#fraeulein_nonne">
           <speaker>Nonne.</speaker>
           <p>Ihr habt zu sprechen mich gewünscht, edler Herr.</p>
         </sp>
@@ -310,7 +305,7 @@
           <speaker>Ritter.</speaker>
           <p>Ach, Fräulein, dass ich euch in diesen Mauern finden muss.</p>
         </sp>
-        <sp who="#nonne">
+        <sp who="#fraeulein_nonne">
           <speaker>Nonne.</speaker>
           <p>O neidet meine Ruhe, mir meinen Frieden nicht.</p>
         </sp>
@@ -318,7 +313,7 @@
           <speaker>Ritter.</speaker>
           <p>All meine Hoffnung find' ich hier begraben.</p>
         </sp>
-        <sp who="#nonne">
+        <sp who="#fraeulein_nonne">
           <speaker>Nonne.</speaker>
           <p>Begraben hab' ich hier den Schmerz, der in der Welt so grausam mich zerstört.</p>
         </sp>
@@ -328,7 +323,7 @@
           <p>Die schöne Ruhe dieser Augen zieht mich wieder gewaltig an. O lehrt vergessen mich den
             Schmerz, der wüthend mich ergreift.</p>
         </sp>
-        <sp who="#nonne">
+        <sp who="#fraeulein_nonne">
           <speaker>Nonne.</speaker>
           <l>Kämpft nicht, der Liebe Kummer zu vergessen,</l>
           <l>Gebt euch ihm freundlich hin, vergesst die Welt,</l>
@@ -430,7 +425,7 @@
           <p>Sieh, theure Schwester, dort ruht ein fremder Mann, er ist der Retter meines
             Lebens.</p>
         </sp>
-        <sp who="#jaegerin">
+        <sp who="#adelheid_jaegerin">
           <speaker>Jägerin.</speaker>
           <p>Welch Glück, euch hier zu finden! Wie habt ihr stets euch unsern Wünschen entzogen!</p>
         </sp>
@@ -440,7 +435,7 @@
             nicht.</p>
         </sp>
         <pb n="76"/>
-        <sp who="#jaegerin">
+        <sp who="#adelheid_jaegerin">
           <speaker>Jägerin.</speaker>
           <p>O kommt zu unserm Vater, der euch mit Freuden in seine Arme schliessen wird.</p>
         </sp>
@@ -459,7 +454,7 @@
             ahndende Herz an, sie kamen Abschied zu nehmen. Da kam die Jägerin aus dem Gebüsch, und
             alle Schatten wichen der Macht des Frühlings und der Jugend.</p>
         </sp>
-        <sp who="#jaegerin">
+        <sp who="#adelheid_jaegerin">
           <speaker>Jägerin.</speaker>
           <p>Und wie wir uns gesehn, und wie wir uns gegrüsst, <pb n="77"/> ach in den ersten
             Augenblicken schon schwur jeder Treue dem andern für sein ganzes Leben.</p>
@@ -469,12 +464,12 @@
           <p>Lasst jetzt die lauten frohen Melodieen schweigen, es spreche unser Glück in sanften
             Tönen nur, indess wir diesen stillen Mauern hier vorüberziehen.</p>
         </sp>
-        <sp who="#jaegerin">
+        <sp who="#adelheid_jaegerin">
           <speaker>Jägerin.</speaker>
           <p>Ach wie beklag' ich sie, die Armen, die ein hartes Schicksal von der frohen Welt
             getrennt!</p>
         </sp>
-        <sp who="#nonne">
+        <sp who="#fraeulein_nonne">
           <speaker>Nonne</speaker>
           <stage>oben an einem kleinen Fenster.</stage>
           <p>Das matte Herz erhebt sich wieder in der Krankheit, Musik spricht dort unten aus dem
