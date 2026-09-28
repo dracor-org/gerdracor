@@ -26,14 +26,15 @@
       <sourceDesc>
         <bibl type="digitalSource">
           <name>Google Books</name>
-          <idno type="URL">https://books.google.com/books?id=KU04AQAAIAAJ&amp;printsec=frontcover</idno>
+          <idno type="URL"
+            >https://books.google.com/books?id=KU04AQAAIAAJ&amp;printsec=frontcover</idno>
           <availability status="free">
             <p>In the public domain.</p>
           </availability>
           <bibl type="originalSource"><author>Hermann Sudermann</author>: <title>Die
               Schmetterlingsschlacht. Komödie in vier Akten</title>. <edition>Fünfte
               Auflage</edition>. <pubPlace>Stuttgart</pubPlace>: <publisher>Cotta</publisher>
-            <date>1895</date>.</bibl>
+            <date>1895</date>, S. <biblScope unit="page" from="3" to="170">3–170</biblScope>.</bibl>
         </bibl>
       </sourceDesc>
     </fileDesc>
@@ -96,44 +97,55 @@
       <event type="print" when="1895">
         <desc/>
       </event>
-      <event type="premiere" when="1894">
+      <event type="premiere" when="1894-10-06">
         <desc/>
       </event>
     </listEvent>
     <listRelation>
-      <relation name="wikidata" active="https://dracor.org/entity/ger000521" passive="http://www.wikidata.org/entity/Q104664855"/>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000521"
+        passive="http://www.wikidata.org/entity/Q104664855"/>
     </listRelation>
   </standOff>
   <text>
     <pb n="3"/>
     <front>
-      <div type="front">
-        <head>Die Schmetterlingsschlacht.</head>
-        <head>Komödie in vier Akten von Hermann Sudermann.</head>
-        <p>Fünfte Auflage.</p>
-        <p>Stuttgart 1895.</p>
-        <p>Verlag der J.G. Cotta'schen Buchhandlung Nachfolger.</p>
-      </div>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">Die Schmetterlingsschlacht.</titlePart>
+          <titlePart type="sub">Komödie in vier Akten</titlePart>
+        </docTitle>
+        <docAuthor>von Hermann Sudermann.</docAuthor>
+        <docEdition>Fünfte Auflage.</docEdition>
+        <docImprint>
+          <pubPlace>Stuttgart</pubPlace>
+          <date>1895.</date>
+          <publisher>Verlag der J.G. Cotta'schen Buchhandlung Nachfolger.</publisher>
+        </docImprint>
+      </titlePage>
       <pb n="4"/>
       <pb n="5"/>
-      <div type="Dramatis_Personae">
-        <castList>
-          <head>Personen.</head>
-          <castItem>Frau Hergentheim, Steuerinspektorswitwe.</castItem>
-          <castGroup>
-            <castItem>Else, verw. Frau Schmidt</castItem>
-            <castItem>Laura</castItem>
-            <castItem>Rosi</castItem>
-            <roleDesc>ihre drei Töchter.</roleDesc>
-          </castGroup>
-          <castItem>Wilhelm Vogel, Apothekerlehrling, ihr Neffe.</castItem>
-          <castItem>Winkelmann.</castItem>
-          <castItem>Max, sein Sohn.</castItem>
-          <castItem>Richard Keßler, Reisender im Winkelmannschen Geschäft.</castItem>
-          <castItem>Dr. Kosinsky, Oberlehrer.</castItem>
-          <castItem>Ein Comptoirdiener.</castItem>
-        </castList>
-      </div>
+      <castList>
+        <head>Personen.</head>
+        <castItem><role>Frau Hergentheim,</role>
+          <roleDesc>Steuerinspektorswitwe.</roleDesc></castItem>
+        <castGroup>
+          <castItem><role>Else,</role>
+            <roleDesc>verw. Frau Schmidt</roleDesc></castItem>
+          <castItem><role>Laura</role></castItem>
+          <castItem><role>Rosi</role></castItem>
+          <roleDesc>ihre drei Töchter.</roleDesc>
+        </castGroup>
+        <castItem><role>Wilhelm Vogel,</role>
+          <roleDesc>Apothekerlehrling, ihr Neffe.</roleDesc></castItem>
+        <castItem><role>Winkelmann.</role></castItem>
+        <castItem><role>Max,</role>
+          <roleDesc>sein Sohn.</roleDesc></castItem>
+        <castItem><role>Richard Keßler,</role>
+          <roleDesc>Reisender im Winkelmannschen Geschäft.</roleDesc></castItem>
+        <castItem><role>Dr. Kosinsky,</role>
+          <roleDesc>Oberlehrer.</roleDesc></castItem>
+        <castItem><role>Ein Comptoirdiener.</role></castItem>
+      </castList>
       <set>
         <p>Ort: Berlin.</p>
         <p>Zeit: Die Gegenwart.</p>
@@ -2564,7 +2576,8 @@
           <sp who="#winkelmann">
             <speaker>Winkelmann.</speaker>
             <p>Ha? Erlaub mal, mein liebes Kind. Ich bin 'n armer, hilfloser, alter Mensch, aber
-              wenn man mir grob kommen will, dann muß man was geleistet haben im Geschäft. <pb n="67"/> Ich erlaube mir die Frage: Was hast du geleistet fürs Geschäft? Also
+              wenn man mir grob kommen will, dann muß man was geleistet haben im Geschäft. <pb
+                n="67"/> Ich erlaube mir die Frage: Was hast du geleistet fürs Geschäft? Also
               verbitt' ich mir das.</p>
           </sp>
           <sp who="#frau_hergentheim">
@@ -2967,7 +2980,8 @@
           </sp>
           <sp who="#kessler">
             <speaker>Keßler.</speaker>
-            <p>Nu – du wirst doch nu <foreign>grande dame</foreign> und Prinzipalin und –</p>
+            <p>Nu – du wirst doch nu <foreign xml:lang="fr">grande dame</foreign> und Prinzipalin
+              und –</p>
           </sp>
           <sp who="#else">
             <speaker>Else</speaker>
@@ -4201,8 +4215,9 @@
           <pb n="107"/>
           <sp who="#dr_kosinski">
             <speaker>Dr. Kosinski.</speaker>
-            <p>Nja, ein armer Schulmeister möcht' auch mal bißchen den Hof machen. <foreign>Mais ça
-                n'empêche pas les sentiments</foreign>, wie der Franzose sagt.</p>
+            <p>Nja, ein armer Schulmeister möcht' auch mal bißchen den Hof machen. <foreign
+                xml:lang="fr">Mais ça n'empêche pas les sentiments</foreign>, wie der Franzose
+              sagt.</p>
           </sp>
           <sp who="#else">
             <speaker>Else.</speaker>
@@ -4667,9 +4682,9 @@
           <pb n="118"/>
           <sp who="#kessler">
             <speaker>Keßler.</speaker>
-            <p><foreign>Parole d'honneur!</foreign> Das ist nämlich das <emph>große</emph>
-              Ehrenwort. Und wenn ich mal mein großes Ehrenwort geb', dann kann die Welt
-              untergehn...</p>
+            <p><foreign xml:lang="fr">Parole d'honneur!</foreign> Das ist nämlich das
+                <emph>große</emph> Ehrenwort. Und wenn ich mal mein großes Ehrenwort geb', dann kann
+              die Welt untergehn...</p>
           </sp>
           <sp who="#rosi">
             <speaker>Rosi.</speaker>
@@ -4816,8 +4831,8 @@
           <sp who="#kessler">
             <speaker>Keßler.</speaker>
             <p>Nu will die <emph>auch</emph> sterben! – Aber italienisch klingt die Geschichte erst.
-                <stage>(Singt auf italienisch die Refraintakte von <foreign>Vorrei
-                morire</foreign>).</stage></p>
+                <stage>(Singt auf italienisch die Refraintakte von <foreign xml:lang="it">Vorrei
+                  morire</foreign>).</stage></p>
           </sp>
           <pb n="122"/>
           <sp who="#rosi">
@@ -4848,7 +4863,7 @@
           <sp who="#else">
             <speaker>Else</speaker>
             <stage>(singt).</stage>
-            <p><foreign>In primavera –</foreign></p>
+            <p><foreign xml:lang="it">In primavera –</foreign></p>
           </sp>
           <sp who="#rosi">
             <speaker>Rosi.</speaker>
@@ -4868,7 +4883,7 @@
           <sp who="#else">
             <speaker>Else</speaker>
             <stage>(summt träumerisch).</stage>
-            <p><foreign>Vorrei morir.</foreign> Lalalala!</p>
+            <p><foreign xml:lang="it">Vorrei morir.</foreign> Lalalala!</p>
           </sp>
           <sp who="#kessler">
             <speaker>Keßler.</speaker>
@@ -5474,7 +5489,7 @@
           </sp>
           <sp who="#winkelmann">
             <speaker>Winkelmann.</speaker>
-            <p>Na, was hielt sich denn wieder zurück?</p>
+            <p>Na, was hielt dich denn wieder zurück?</p>
           </sp>
           <sp who="#max">
             <speaker>Max</speaker>
