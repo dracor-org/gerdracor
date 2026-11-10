@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000773" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Die glückliche Ueberschwemmung</title>
+        <title type="sub">Ein ländliches Schauspiel in einem Aufzuge</title>
+        <author>
+          <persName>(Anonym)</persName>
+          <idno type="wikidata">Q4233718</idno>
+        </author>
+        <respStmt>
+          <resp>Converted to TEI by</resp>
+          <persName ref="https://orcid.org/0000-0003-2419-6629">Frank Fischer</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Google Books</name>
+          <idno type="URL"
+            >https://books.google.com/books?id=ZumtSnlN66YC&amp;printsec=frontcover</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource">[<author>Anonym</author>:] <title>Die glückliche
+              Überschwemmung. Ein ländliches Schauspiel in einem Aufzuge</title>.
+              <pubPlace>Leipzig</pubPlace>: <publisher>Kummer</publisher>
+            <date>1799</date>. (S. <biblScope unit="page" from="1" to="60">1–60</biblScope>.)</bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="juerge" sex="MALE">
+            <persName>Vater Jürge</persName>
+          </person>
+          <person xml:id="barbara" sex="FEMALE">
+            <persName>Mutter Barbara</persName>
+          </person>
+          <person xml:id="suschen" sex="FEMALE">
+            <persName>Suschen</persName>
+          </person>
+          <person xml:id="von_kronenburg" sex="MALE">
+            <persName>Herr von Kronenburg</persName>
+          </person>
+          <person xml:id="treublut" sex="MALE">
+            <persName>Herr Treublut</persName>
+          </person>
+          <person xml:id="martin" sex="MALE">
+            <persName>Martin</persName>
+          </person>
+          <person xml:id="schwarze" sex="MALE">
+            <persName>Der Oberförster Schwarze</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="friends" mutual="#von_kronenburg #treublut"/>
+            <relation name="parent_of" active="#schwarze" passive="#martin"/>
+            <relation name="spouses" mutual="#juerge #barbara"/>
+            <relation name="related_with" active="#suschen" passive="#juerge"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-06-04">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1799">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000773"
+        passive="http://www.wikidata.org/entity/Q140032758"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <pb n="1"/>
+    <front>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">Die glückliche Ueberschwemmung.</titlePart>
+          <titlePart type="sub">Ein ländliches Schauspiel in einem Aufzuge.</titlePart>
+        </docTitle>
+        <docImprint><pubPlace>Leipzig,</pubPlace>
+          <publisher>bei Paul Gotthelf Kummer.</publisher>
+          <date>1799.</date></docImprint>
+      </titlePage>
+      <pb n="2"/>
+      <pb n="3"/>
+      <castList>
+        <head>Personen.</head>
+        <castItem><role>Herr von Kronenburg.</role></castItem>
+        <castItem><role>Herr Treublut,</role>
+          <roleDesc>sein Freund.</roleDesc></castItem>
+        <castItem><role>Der Oberförster Schwarze.</role></castItem>
+        <castItem><role>Martin,</role>
+          <roleDesc>dessen Sohn, Jägerbursche.</roleDesc></castItem>
+        <castItem><role>Vater Jürge,</role>
+          <roleDesc>ein Bauer.</roleDesc></castItem>
+        <castItem><role>Mutter Barbara,</role>
+          <roleDesc>dessen Frau.</roleDesc></castItem>
+        <castItem><role>Suschen,</role>
+          <roleDesc>dessen Muhme.</roleDesc></castItem>
+      </castList>
+      <set>
+        <p>Das Theater stellt einen offnen Dorfplatz vor, an der Seite ist Jürgens elende Hütte, im
+          Hintergrunde ein ausgetretener Fluß mit Feldfrüchten bedeckt.</p>
+      </set>
+    </front>
+    <pb n="4"/>
+    <pb n="5"/>
+    <body>
+      <div type="scene">
+        <head>Erster Auftritt.</head>
+        <stage>Vater Jürge und Mutter Barbara.</stage>
+        <sp who="#juerge">
+          <speaker>Jürge.</speaker>
+          <stage>(nach dem Flusse hinsehend)</stage>
+          <p>Ach Gott! so ist auch dies Jahr uns wieder alle Hofnung zum Aufkommen entzogen!</p>
+        </sp>
+        <sp who="#barbara">
+          <speaker>Barbara.</speaker>
+          <p>Wie fleissig, wie unverdrossen haben wir das ganze Jahr gearbeitet, um durch die zu
+            erwartende reichliche Erndte uns völlig aus unsern Drangsalen zu reißen, aber Gott will
+            es noch nicht, daß wir so glücklich werden sollen. <stage>(weint)</stage></p>
+        </sp>
+        <sp who="#juerge">
+          <speaker>Jürge.</speaker>
+          <p>Beruhige dich, Mutter! Gott hat uns noch nie verlassen, es wird auch in diesem Jahre
+            nicht geschehen, er ist ja ein so guter, mitleidiger Gott, er wird uns auch jetzt in
+            seine weise Obhut nehmen.</p>
+        </sp>
+        <pb n="6"/>
+        <sp who="#barbara">
+          <speaker>Barbara.</speaker>
+          <p>Ich traue auf ihn in unserer höchsten Noth! Freilich geht nun auch auf dieses Jahr
+            unsere schöne Hofnung wegen Suschen wieder verloren, vielleicht hätte Martins Vater
+            sichs noch gefallen lassen, mit der Hälfte zufrieden zu sein, wenn wir ihm die hätten
+            schaffen können, und ihm die andere Hälfte nebst Zinsen im kommenden Jahre gegeben
+            hätten, da wir einmal für das gute Suschen als für unser eignes Kind zu sorgen
+            versprochen haben. Wenn nur der alte geizige Mann nicht unterdessen eine andere
+            Schwiegertochter findet! – Gern wollt' ich bis zum kommenden Jahre mit Brod und Wasser
+            vorlieb nehmen und auch meine entbehrlichen Kleider hingeben, wenn wir es zusammen
+            bringen könnten.</p>
+        </sp>
+        <sp who="#juerge">
+          <speaker>Jürge.</speaker>
+          <p>Ja, ja! Barbara! es hätte müssen gehen, wenn uns Gott das Unglück nicht geschickt
+            hätte, aber nun gehts nicht und wenn wir alles zu Gelde machten, wir sind nicht im
+            Stande so viel zusammenzumachen. Sie dauert mich um so mehr, da wir <pb n="7"/> nun
+            alles verloren haben und unsere elende Hütte kaum so viel werth ist, als wir von Suschen
+            in Händen haben und ihr wieder zu geben schuldig sind – wenn sie nur nicht auch wegen
+            der hundert Thaler am Ende gefährdet wird!</p>
+        </sp>
+        <sp who="#barbara">
+          <speaker>Barbara.</speaker>
+          <p>Das wolle Gott nicht! wir wollen arbeiten, bis uns das Blut unter den Nägeln
+            hervorspritzt – wir werden doch so viel erwerben, als zu unserm kärglichen Unterkommen
+            gehört, alles übrige sei ihr! durch ihr Geld waren wir ja nur im Stande, uns aus unsrer
+            unverschuldeten ersten Noth aufzuhelfen – wir sind keine gottlosen Verschwender gewesen
+            und haben alles mögliche, jeden Dreier zu Rathe gehalten, er wird uns auch nun nicht
+            vergessen der gute Gott, und wird es nicht geschehen lassen, daß Suschen um das Ihrige
+            kommen sollte.</p>
+        </sp>
+        <sp who="#juerge">
+          <speaker>Jürge.</speaker>
+          <stage>(der in der Zeit, da Barbara gesprochen, in Gedanken gestanden, springt hurtig
+            auf)</stage>
+          <p>Das war ein guter Gedanke! noch ist nicht alles verloren, Barbara! vielleicht kann <pb
+              n="8"/> ich noch etwas retten – sieh, wie überschwemmt der Fluß mit allen Früchten des
+            mühsamen Landmanns ist, das meiste ist von mir, weil meine Felder zunächst am Flusse
+            liegen – vielleicht kann ich noch etwas erhalten! an Mühe und Fleis will ich es auch
+            hier nicht fehlen lassen; glückts nicht, so habe ich doch das meine gethan und mir
+            nichts vorzuwerfen. <stage>(er will nach dem Flusse zu, sie hält ihn heftig schreiend
+              zurück)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Zweiter Auftritt.</head>
+        <stage>Suschen hurtig aus der Hütte kommend, Vorige.</stage>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Mutter! was ist denn? was schreit Ihr denn so? Ihr habt mich recht erschreckt!</p>
+        </sp>
+        <sp who="#barbara">
+          <speaker>Barbara.</speaker>
+          <p>Suschen! ich bitte dich um Gotteswillen! halt den Vater zurück! Du weißts, daß wir
+            durch die Ueberschwemmung ganz unglücklich geworden sind, daß wir die ganze Erndte
+            verloren haben und nun das ganze <pb n="9"/> Jahr über nicht wissen, wovon wir leben
+            sollen, daß unsre ganze elende Hütte nicht so viel werth ist, als wir von dir in Händen
+            haben.</p>
+        </sp>
+        <sp who="#juerge">
+          <speaker>Jürge.</speaker>
+          <p>Du weißt auch, Suschen! daß wir dir gern zu deinem Martin helfen wollen, und wenn das
+            Unglück nicht darein gekommen wäre, wir es auch vielleicht möglich gemacht hätten, daß
+            du nun aber auch dieses Glück mit Martin entbehren mußt, denn wie lange wirds werden, so
+            findet sich statt deiner eine reiche Schwiegertochter beim Oberförster und dann ist
+            Martin für dich verloren! drum will ich sehen, was noch von dem Unglück, von unserm
+            Verlust aus den Fluthen zu retten ist.</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Gott bewahre! Vater Jürge! wo denkt Ihr hin? Ihr setzt Euch ja der offenbarsten
+            Lebensgefahr aus, der Himmel wird Euch schon wieder helfen und um mich seid ganz ruhig,
+            Ihr seid mir nichts schuldig, nie in meinem ganzen Leben werde ich Euch das, was Ihr an
+            mir gethan habt, vergelten <pb n="10"/> können. Erhaltet Euch mir und der guten Mutter!
+            mein Martin bleibt mir gewiß, denn noch heute hat er mirs zugeschworen, daß ihn weder
+            sein Vater, noch irgend eine Gewalt dahin bringen soll, einem andern Mädchen die Hand zu
+            geben, eher verläßt er seinen Vater und sucht sein Glück anderswo, und ich habe es ihm
+            versprochen, nie eines andern Mannes Weib zu werden, als bis er im Stande ist, mich zu
+            der seinigen zu machen. – Seht, Vater! so könnt Ihr ganz ruhig sein, Ihr seid ja nicht
+            der einzige Unglückliche und seid es noch dazu ohne Euer Verschulden; auch ich und
+            Martin werden alles anwenden, daß Ihr nicht Noth leiden sollt.</p>
+        </sp>
+        <sp who="#juerge">
+          <speaker>Jürge.</speaker>
+          <p>Ich traue auf Gott und er wird mich nicht verlassen! Drum will ich um so mehr alles
+            anwenden, um das zu retten, was noch zu retten ist. Ich werde mich nicht muthwillig in
+            Gefahr begeben, doch bin ich es mir, meinem guten Weibe und dir, gutes, liebes Suschen!
+            schuldig, alles zu thun, was nur <pb n="11"/> möglich ist. Lebt wohl, Kinder! bittet den
+            Himmel, daß er mein Bemühen segnet.</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Nein, Vater Jürge! ich lasse Euch nicht, wie leicht könntet Ihr unglücklich sein, und
+            ach! dann wären wir doppelt elend, weil wir auch Eurer Beihülfe, Eures Trostes entbehren
+            müßten.</p>
+        </sp>
+        <sp who="#barbara">
+          <speaker>Barbara.</speaker>
+          <p>Nein, Vater! du darfst nicht hin, denke, was uns der Herr Pfarrer bei jedem Unglück ans
+            Herz legt: der Herr hats gegeben, der Herr hats genommen. Denke, wir hätten auch dieses
+            Jahr Miswachs gehabt, da könntest du ja auch nicht helfen und unser Suschen siehts ja,
+            daß wir nicht etwa muthwillig daran schuld sind – daß wir ihr gern helfen wollten, wenn
+            wir nur könnten.</p>
+        </sp>
+        <sp who="#juerge">
+          <speaker>Jürge.</speaker>
+          <p>Ach laßt mich! es ist ja keine Gefahr dabei, und ich werde immer dabei an Euch denken
+            und das wird meinen Armen Kraft geben. <stage>(er geht, einen Rechen in der Hand, nach
+              dem Flusse zu, ohngeachtet Suschen und Barbara ihn abzuhalten suchen)</stage></p>
+        </sp>
+      </div>
+      <pb n="12"/>
+      <div type="scene">
+        <head>Dritter Auftritt.</head>
+        <stage>Barbara und Suschen.</stage>
+        <sp who="#barbara">
+          <speaker>Barbara.</speaker>
+          <p>Ach Gott! er hört nicht! welche entsetzliche und unbeschreibliche Angst überfällt mich!
+            daß nur der Vater nicht unglücklich ist! ich habe diese Nacht so einen erschrecklichen
+            Traum gehabt, daß mir noch alle Glieder zittern, wenn ich dran denke.</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Liebe Mutter! auch ich hatte einen fürchterlichen Traum, ich wollte ihn Euch gar nicht
+            erzählen, damit ich Euch nicht bei unserm jetzigen Unglück noch trauriger machen wollte
+            – ich habe aber heute Martinen diesen Traum erzählt, und der hat mich belehrt, daß man
+            auf Träume nicht achten müsse, weil sie nur ein Spiel unserer Einbildungen wären.
+            Ueberdies könnt Ihr mir glauben, so fürchterlich auch der Traum erst war, so gut endigte
+            er sich, und ich möchte fast wünschen, daß er wahr würde, gern wollte ich die
+            vorhergehenden Gefahren ausstehen – ich ward Martinen zum Weibe gegeben <pb n="13"/> und
+            ich machte meine lieben Pflegeltern glücklich.</p>
+        </sp>
+        <sp who="#barbara">
+          <speaker>Barbara.</speaker>
+          <p>Wenn ich die einzige Freude noch auf dieser Welt erlebe, daß ich dich mit deinem guten
+            Martin versorgt weis, dann will ich gern mit meinem lieben Vater Jürgen sterben, nur du
+            liegst uns noch am Herzen! – wir wollen dich glücklich machen, ich versprachs meiner
+            sterbenden Schwester, deiner guten Mutter, aber leider! wirst du durch uns noch
+            unglücklicher, auch den geringen väterlichen Nachlaß wirst du durch uns noch
+            einbüsen.</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <stage>(fällt ihr um den Hals)</stage>
+          <p>Mutter! Ihr kränkt mich und meinen Martin mit solchen Reden! Wäre Martin in dem Stande,
+            mich ohne seinen Vater zur Frau nehmen zu können, er würde, so sehr er seinen Vater
+            liebt, keinen Anstand nehmen, und vielleicht hilft der Himmel bald, dann könnt Ihr
+            sicher darauf rechnen, daß ihr diese armselige, aber mir so theure, so werthe Hütte
+            verlassen und bei uns wohnen müßt. Was wir thun können, <pb n="14"/> Euch Eure mir
+            erzeigten Wohlthaten zu vergelten und Euch Euer Alter sorgenfrei zu machen, werden wir
+            gewiß nicht unterlassen. Ich liebe Euch so herzlich, wie Ihr davon überführt sein
+            werdet, aber Martin liebt Euch noch mehr, weil er weis, daß Ihr durch die mir mit so
+            vielen Kosten gegebene gute Erziehung mehr als Eltern gewesen seid. <stage>(Man hört vom
+              Flusse her ein Geschrei um Hülfe)</stage> Gott! was ist das? hört Ihr nicht um Hülfe
+            rufen?</p>
+        </sp>
+        <sp who="#barbara">
+          <speaker>Barbara.</speaker>
+          <p>Ach Gott! mein Traum! mein fürchterlicher Traum geht in Erfüllung! es ist der Vater, er
+            ist in den Fluthen verunglückt! <stage>(anstatt zur Hülfe zu eilen, sinkt sie sinnlos
+              nieder)</stage></p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <stage>(äußerst bestürzt)</stage>
+          <p>Ich armes schwaches Geschöpf, wo soll ich nun zuerst Hülfe schaffen! Mutter Barbara
+            wird wieder aus ihrer Ohnmacht zurückkommen, der Schreck hat sie nur niedergeworfen,
+            dort aber betrift es Menschen- ja Vaterrettung – es war seine Stimme, ich will das ganze
+            Dorf <pb n="15"/> ihm zur Hülfe rege machen. <stage>(läuft mit großem Geschrei nach dem
+              Flusse zu)</stage> Hülfe, Hülfe! Erbarmen! steht meinem Vater bei! <stage>(hierdurch
+              bewogen, treten)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Vierter Auftritt.</head>
+        <stage>Herr von Kronenburg und Herr Treublut auf, Barbara, die noch immer ohnmächtig auf der
+          Erde liegt, Suschen.</stage>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Was ists mein schönes Kind? was schreist du so ängstlich?</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Ach, Vater Jürge, er ist tod! er ist hin und um meinetwillen, in den Fluthen findet er
+            sein Grab!</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Wenn noch Rettung möglich ist, so wollen wir es versuchen, vielleicht – <stage>(er geht
+              nach dem Flusse hin. Suschen fällt dem Herrn von Kronenburg zu Füßen und bittet
+              flehentlich)</stage></p>
+        </sp>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Was thäte ich nicht dir zu gefallen! und nun frisch zum Werke, <pb n="16"/> es gilt,
+            wie der große Herzog Leopold sich erklärte, es gilt hier Menschenrettung!</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <stage>(der indessen zurückgekommen)</stage>
+          <p>Freund! Sie wagen zu viel! Sie sind der Welt, dem Lande, Ihrem Vater, Ihren Freunden
+            ein so theures Leben zu erhalten schuldig – Sie sehen die augenscheinlichste Todesgefahr
+            für sich und keine Hülfe für den Unglücklichen.</p>
+        </sp>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Wer überlegt, thut nichts, also ohne Zaudern! <stage>(ihn näher nach dem Flusse
+              führend)</stage> Sehen Sie, wie der Arme uns um Hülfe anruft, wie er sich nur mit
+            äußerster Anstrengung noch über dem Wasser erhält. Wohlan! Hülfe oder Tod! <stage>(er
+              springt in den Fluß)</stage></p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Gott seegne dein Bemühen, edler, großer, junger Mensch! durch diese That wirst du ganz
+            deines theuern Vaters würdig, so sehr dich auch deine Mutter verzog.</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <stage>(betend)</stage>
+          <p>O du guter Gott! laß es nicht zu, daß dieser liebenswürdige <pb n="17"/> Jüngling durch
+            die freiwillig über sich genommene Rettung meines guten Vater Jürgens selbst in
+            Lebensgefahr gerathe, stehe ihm bei, erhalte ihn und laß sein Bemühen geseegnet sein.
+              <stage>(sie fällt auf die Knie und betet inbrünstig)</stage> Steh auch der Mutter
+            bei!</p>
+        </sp>
+        <sp who="#barbara">
+          <speaker>Barbara.</speaker>
+          <stage>(erwacht durch Treubluts Bemühen und durch dessen Bestreichen mit <foreign
+              xml:lang="fr">eau de vie</foreign>)</stage>
+          <p>Wo bin ich? wer sind Sie? wo ist Vater Jürge? er ist tod! laßt mich mit ihm
+            sterben!</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Beruhigt Euch, noch ist vielleicht Hülfe möglich! <stage>(Kronenburg bringt Jürgen ans
+              Ufer)</stage> Seht Mutter! dieser edle Jüngling rettete mit augenscheinlicher selbst
+            eigner Lebensgefahr euern Mann! Komm Mädchen! hülf dem braven Kronenburg die Last
+            erleichtern, ihr aber, Mutter! bleibt hier, ihr seid noch zu schwach, erholt Euch erst.
+              <stage>(geht mit Suschen an den Fluß, sie bringen Jürgen vollends aus dem Wasser
+              heraus, küßt Kronenburgen und sagt gerührt)</stage> Die Rettung dieses Mannes ist dein
+            Werk! welch frohes Gefühl <pb n="18"/> muß das in dir erwecken. Das ganze Land wird dirs
+            Dank wissen, wie ich und diese durch dich beglückte Familie es thun wird. Doch
+            Kronenburg! fassen Sie den armen Verunglückten an, wir wollen ihn in seine Hütte tragen,
+            damit nicht im geringsten etwas versehen werde und wir nichts versäumen, was zu seiner
+            Rettung erforderlich ist. <stage>(Kronenburg und Treublut mit Suschens Beihülfe heben
+              ihn von der Erde auf und tragen ihn in die Hütte, Suschen kommt, nachdem sie mit
+              Barbara in die Hütte gegangen, sogleich zurück)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Fünfter Auftritt.</head>
+        <stage>Suschen allein sehr betrübt.</stage>
+        <sp who="#suschen">
+          <p>So wenig ich noch je über meine Armuth geklagt habe, so sehr kränkt mich dieselbe
+            jetzt, da ich nicht im Stande bin, den Muth dieses braven jungen Menschen zu belohnen –
+            nichts, gar nichts habe ich, was ich ihm anbieten könnte – ich habe nichts als diesen
+            armseligen Blumenstraus – armseligen Blumenstraus <pb n="19"/> sage ich? – ja freilich
+            bist du einem dritten von keinem Werth, aber mir wärst du für den schönsten diamantnen
+            Schmuck nicht feil, denn du bist von meinem Martin, er ist ein Andenken seiner Liebe!
+            wenn er doch hier wäre, mein lieber Martin, daß auch er dem liebenswürdigen Jüngling
+            dankte!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Sechster Auftritt.</head>
+        <stage>Herr von Kronenburg, (aus der Hütte kommend) Suschen.</stage>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Freue dich, liebes Mädchen! bald wird dein Vater völlig wieder hergestellt sein, mein
+            Freund Treublut, ein guter geschickter Arzt, versichert, daß er außer aller Gefahr ist.
+            Du liebst wohl deinen Vater außerordentlich sehr, liebes Kind?</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Wer sollte den braven Jürgen nicht lieben! alle Menschen im Dorfe thuns. Ich liebe ihn
+            so sehr, als wenn er mein leiblicher Vater wäre, denn ohngeachtet <pb n="20"/> ich nur
+            seine Anverwandte bin, so hat er doch so viel an mir gethan und noch mehr, als wenn ich
+            seine Tochter wäre. Wäre ich nur nicht so sehr arm, gern wollt ich Sie für Ihr groß- und
+            edelmüthig seinetwegen gewagtes Leben lohnen, aber ich bin so arm, daß ich auch Ihnen
+            nicht einmal ein geringes Andenken geben kann. <stage>(weinend)</stage> Das kränkt mich,
+            noch nie habe ich meine Armuth so sehr gefühlt, als eben jetzt. <stage>(sie fällt vor
+              ihn nieder)</stage> Nehmen Sie meinen Dank und Gottes Seegen dafür, der Himmel lohne
+            Ihnen Ihre edle That und beglückte Sie auf immer dafür.</p>
+        </sp>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <stage>(hebt sie auf)</stage>
+          <p>Das ist mir der schönste Lohn, daß mein Bemühen nicht fruchtlos war und daß ich dadurch
+            dich, liebes Kind! kennen lernte und dir einen Gefallen erzeigte, einen Dienst erwies.
+            Ich verlange keinen Dank, denn auch mir ist, wie Bürgers braven Bauer, mein Leben für
+            Gold nicht feil – aber eine Bitte habe ich – <pb n="21"/> einen Kuß und ein Andenken von
+            dir muß ich haben – wie meinst du, gutes Mädchen!</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Dem Retter, dem Erhalter meines guten Vaters, wie könnte ich dem einen Kuß verweigern?
+              <stage>(sie küßt ihn mit allem Dank und Wonnegefühl)</stage> aber ein Andenken Ihnen
+            zu geben, bin ich nicht vermögend, Sie sehen hier meinen ganzen Reichthum.</p>
+        </sp>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Dieser Blumenstraus, er stak an deinen reizenden Busen, soll er zur Erinnerung an dich
+            mein sein?</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Diesen Blumenstraus verlangen Sie? <stage>(für sich)</stage> Gott! er ist mir so
+            unendlich werth, er ist mir das theuerste, was ich habe und immer wollte ich ihn
+            behalten. <stage>(laut)</stage> Wie könnten diese Blumen, schon der Verwelkung nahe,
+            Ihnen, gnädiger Herr! ein Andenken von mir sein, sie sind schon fast verblüht – und mein
+            Andenken wäre sogleich erloschen! nein, ich binde Ihnen einen frischen Straus, suche
+            Blumen, <pb n="22"/> die nicht so bald hinwelken und Sie erinnern sich meiner vielleicht
+            eine Zeit länger – ich gehe sie zu suchen, denn noch so bald dürfen Sie uns nicht
+            verlassen.</p>
+        </sp>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Nein, Kind! um diesen Straus bitte ich dich, weil er an deinem Busen stack, ist er mir
+            theuer.</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Sie verlangen ihn, so theuer und werth er mir auch ist, ich übergebe ihn Ihnen mit dem
+            besten Herzen – nur bitte ich Sie flehentlich, lassen Sie ihn nie in unrechte Hände
+            kommen, ich hatte beschlossen, ihn auf immer zu behalten, doch Ihnen kann und darf ich
+            nichts abschlagen. <stage>(sie giebt ihm den Straus, er steckt ihn an und küßt sie mit
+              einigen Widerstreben von Seiten ihrer)</stage></p>
+        </sp>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Du hast mir also gegeben, was dir das liebste ist, ohngeachtet ich die Ursache davon
+            nicht weis, auch du mußt ein mir theures Andenken von mir haben. <stage>(er giebt ihr
+              ein bei sich habendes Souvenir, welches sie nach vielen Sträuben gleichsam in Gedanken
+                <pb n="23"/> annimmt und einsteckt, Treublut kommt aus der Hütte heraus, hört das
+              Gespräch, und bleibt, das Gespräch belauschend, unbemerkt in der Entfernung
+              stehen)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Siebenter Auftritt.</head>
+        <stage>Treublut in der Entfernung, Vorige.</stage>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Kronenburg geräth wieder auf seine alten Abwege, sein feuriges Temperament führt wieder
+            einmal seinen Kopf mit dem Verstande davon. Ich muß ihn und das Mädchen retten, vor
+            allen Dingen will ich erst Suschens Gesinnungen zu erfahren suchen.</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Gnädiger Herr! ich brauche von Ihnen kein Andenken, Sie werden mir in der Ewigkeit noch
+            unvergeßlich bleiben, Sie haben in der Ewigkeit noch den Lohn, Sie haben mit eigner
+            Lebensgefahr meinen Vater Jürgen gerettet, so was kann ich nie vergessen, so oft ich
+            künftig meinen Vater ansehe, werde ich an Sie und die von Ihnen seinetwegen übernommene
+            Lebensgefahr denken.</p>
+        </sp>
+        <pb n="24"/>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Deine Dankbarkeit freut mich unendlich, ich habe aber keinen Dank verdient und du
+            scheinst mich fast zu vergöttern. Auch dein Vater würde, wenn er mich in solcher Gefahr
+            gesehen hätte, ohne mich zu kennen, das nemliche gethan haben, und ich that weniger für
+            ihn, denn du nur warst die wahre Bewegursache. Wie konnte ich dich sehen, ohne dich zu
+            lieben? und was wagt man nicht um den geliebten Gegenstand?</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Sie spotten meiner, gnädiger Herr! wie könnte so ein vornehmer und reicher junger Herr
+            sich um ein armes verlaßnes Bauermädchen bekümmern!</p>
+        </sp>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Ich versichere es bei meiner Ehre! ich liebe dich zärtlich, nur in deinem Besitz finde
+            ich mein Lebensglück, wenn du nun glaubst, daß ich Dank um dich verdient habe, so gieb
+            mir dein Herz! liebe mich, ich will dich glücklich machen.</p>
+        </sp>
+        <pb n="25"/>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Ich liebe Sie herzlich, Sie haben es um die Menschheit, Sie haben es um Ihres guten
+            Herzens, Sie haben es um mein und meiner guten Eltern willen verdient, stets werde ich
+            Sie ehren und hochschätzen, auch für Ihr Wohlsein beten, Sie sind der Erhalter unserer
+            Familie – nie aber kann und darf ich Ihnen mehr versprechen.</p>
+        </sp>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Nein, Mädchen! ich lasse dich nicht, ich hätte deinen Vater mit Lebensgefahr gerettet
+            und durch dich sollte ich unglücklich werden? <stage>(er will sie von neuen
+              küssen)</stage></p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Nun ists die höchste Zeit, ich weis genug. <stage>(tritt vor)</stage> Mein liebes
+            Suschen! Herr von Kronenburg! Vater Jürge, der nun so weit wieder hergestellt ist, daß
+            er alle Gegenstände um sich her kennt, wünscht nichts mehr, als seinen Retter zu sehen
+            und ihm zu danken. Kronenburg! Freund! verderben Sie ihm die Freude nicht, er wollte
+            sogleich heraus und Ihnen nacheilen, noch <pb n="26"/> finde ich aber dieses nicht für
+            dienlich, gehen Sie zu ihm – und auch du, liebes Suschen! sollst ihm nachher Freude
+            gewähren, ohne Unterlaß hat er nach dir gefragt. Gehen Sie, Kronenburg! und beruhigen
+            Sie den braven Mann.</p>
+        </sp>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>So wenig ich Dank verlange, so gerne will ich zu ihm gehen, wenn es zu seiner
+            Beruhigung und Genesung beitragen kann. Ich sehe dich wieder, liebes Suschen!
+              <stage>(geht in die Hütte und sieht mit einem bedeutenden Blick auf Suschen
+              zurück)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Achter Auftritt.</head>
+        <stage>Suschen für sich ihm nachsehend, Treublut.</stage>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Ja freilich werde ich dich, muß ich dich wieder sehen, du hasts zu sehr um uns
+            verdient! aber du kränkst mich auch zu sehr, du machst mich zur undankbarsten Person,
+            und Undank ist, wie ich jederzeit gehört habe, das schändlichste Laster. Gott! nie <pb
+              n="27"/> hätte ich geglaubt, daß ich bis zum Laster herabsinken sollte. Ich liebe dich
+            herzlich, ich verehre dich, ich schätze dich als den Vater und Erhalter der Meinigen,
+            aber mehr kann ich nicht, ich habe ohnedies mehr gethan, als ich thun sollte, ich habe
+            dich ohne Martins Vorwissen geküßt, ich küßte aber in dir nicht den Liebhaber, nein, das
+            bleibt mein Martin einzig und allein, ich habe dir auch mein Theuerstes, den von
+            Martinen an meinem Geburtstage erhaltenen Straus gegeben, damit ists genug, mehr
+            verlange nicht, Liebe kann ich dir nicht gewähren.</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <stage>(der ihr bewundernd zugehört)</stage>
+          <p>Mädchen! du entzückst mich durch deine edle Denkungsart! wie ich höre, so liebst du
+            deinen Martin zärtlich – so ein gutes Kind, wie du gewiß bist, ich nenne dich so, da ich
+            deine Gesinnungen nicht nur aus dem zwischen dir und Kronenburgen gehaltenen und deinem
+            selbsteignen belauschten Gespräch kennen gelernt, sondern auch so viel gutes von dir
+            durch <pb n="28"/> deine Eltern erfahren habe, muß nicht einer drohenden Gefahr
+            ausgesetzt werden. Kronenburg, so ein braver Jüngling er auch ist, kann der Mann nicht
+            sein, der dich glücklich macht, folge seinen Reizungen nicht, bleibe deinem Martin
+            getreu! Kronenburg von alt adlichen Geschlecht, eines guten, aber stolzen Vaters Sohn,
+            kann nie der Deinige werden, die Geburt zieht eine gar zu große Unterscheidungslinie
+            zwischen euch, der Vater würde nie seine Bewilligung geben und du wärst unglücklich,
+            wenn er dich auch wirklich liebte und es nicht blos eine aus deiner Schönheit entsproßne
+            aufbrausende und bald vorübergehende Leidenschaft wäre. Liebe deinen Martin, bleib ihm
+            getreu, er muß ein guter Mensch sein, da du ihn so zärtlich liebst.</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Ja, das ist er! Sie müssen ihn selbst sehen, und haben Sie ihn nur einmal gesprochen,
+            so müssen Sie ihm so gut sein, wie ich ihm bin. Da kommt er eben selbst.</p>
+        </sp>
+      </div>
+      <pb n="29"/>
+      <div type="scene">
+        <head>Neunter Auftritt.</head>
+        <stage>Martin mit unterschiednen Pakten, Vorige.</stage>
+        <sp who="#martin">
+          <speaker>Martin.</speaker>
+          <p>Suschen! bestes Suschen! ich habe das Unglück im Walde gehört – er ist also dahin,
+            unser guter lieber Vater Jürge? O warum mußte ich heute auf den unseeligen Einfall
+            gerathen, in den Wald zu gehen, so sehr ich auch innerlich dawider gewarnt ward, ich
+            hätte ihn nicht an den Fluß gelassen, und hätte ich ihn mit Gewalt zurückhalten sollen.
+            Mein ganzes Leben ist mir nun zur Last! und wo sollen wir nun hingehen, um auf seinem
+            Grabe Segen für uns durch ihn von oben herab zu erbitten! Mein Vater wird nun um so
+            weniger seine Bewilligung zu unserer Heirath geben, da ihr nun durch seinen Tod völlig
+            geschlagen seid. <stage>(er windet die Hände)</stage></p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <stage>(die ihn schon oft unterbrechen wollte, aber nicht dazu kommen konnte, auch von
+            Treublut daran verhindert ward, fällt ihm in die Arme)</stage>
+          <p>Sei ruhig, lieber Martin! freue dich, <pb n="30"/> unser guter Vater Jürge ist durch
+            dieses braven Mannes edelmüthigen Freund, einen liebenswürdigen Jüngling, aus den
+            Fluthen dem Tode entrissen und von diesem Manne alle Gefahr, so durch die heftige
+            Erschütterung seinem Leben drohte, vertrieben worden. Ich habe bereits seinem jungen
+            Freunde meinen Dank gezollt, ich habe ihn geküßt und daß du alles weißt, ich habe ihm
+            den von dir mir an meinem Geburtstage geschenkten Straus, welchen ich dir auf immer
+            aufzuheben versprach, auf sein Verlangen zum Andenken gegeben. Du wirst nicht darüber
+            zürnen, es war das einzige, was ich hatte, und er bat mich so sehr darum.</p>
+        </sp>
+        <sp who="#martin">
+          <speaker>Martin.</speaker>
+          <p>Ich traue deiner Liebe und Tugend zu viel, als daß ich dabei auf einen unrechten
+            Gedanken gerathen könnte. Aber auch ich muß ihm danken, ihm, der uns unser alles
+            erhielt, und zugleich Ihnen, würdiger Mann! Freund des biedern Jünglings, sage ich für
+            die Erhaltung des guten Vater <pb n="31"/> Jürgens den schuldigsten Dank. Suschen!
+            vereinige deinen Dank mit dem meinigen.</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Kinder! ihr seid einander werth! ihr liebt euch, warum aber verzögerte Vater Jürge euer
+            Glück? <stage>(Suschen will ihm die Hand küssen, er verhindert es und schließt sie in
+              die Arme)</stage> Einem Manne, wie mir, kannst du auch in deines Bräutigams Beisein
+            einen Kuß nicht versagen. Liebt euch Kinder! und seid in einander glücklich! das ist
+            mein heisester Wunsch, aber beantwortet meine Frage.</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Vater Jürge und Mutter Barbara sind gar nicht die Ursache, warum wir nicht schon längst
+            vereinigt sind, sie geben sehr gern ihre Bewilligung, aber nur –</p>
+        </sp>
+        <sp who="#martin">
+          <speaker>Martin.</speaker>
+          <p>Erspare dir die Bekümmerniß, Suschen! ich wills Ihnen alles mit kurzen Worten sagen.
+            Mein Vater, der Oberförster hiesiger Gegend, ist, so gut er sonst an und für sich ist,
+            ein äußerst genauer und geiziger Mann, er will aus Liebe zu mir <pb n="32"/> mich gleich
+            zum wohlhabenden Manne machen und deshalb meine Liebe zu Suschen schlechterdings nicht
+            genehmigen, wenn sie mir nicht ebenfalls 500 Thaler mitbringt, als so viel er mir zur
+            Einrichtung der Wirthschaft zu geben sich entschlossen hat. Suschen ist ein armes
+            Mädchen, die nur hundert Thaler Vatertheil besitzt, sie stehen auf Vater Jürgens Gute,
+            aber auch diese sind nun durch die Ueberschwemmung, wodurch Jürge völlig ruinirt worden,
+            verlohren, und nun sehe ich nicht ein, wie mein Vater befriedigt werden soll.</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Also wegen elender fünfhundert Thaler soll euer Lebensglück gestört werden? wäre ich
+            ein reicher Mann, mit Vergnügen wollte ich euch damit helfen. Freilich, bei diesen
+            Umständen thut ihr wohl, wenn ihr von einander laßt und ihr euch jedes einen andern
+            Gatten sucht.</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Ich werde nie einen andern Gatten wählen, als Martinen, kann es dieser <pb n="33"/>
+            nicht sein, so soll mich nie ein anderer sein Weib nennen.</p>
+        </sp>
+        <sp who="#martin">
+          <speaker>Martin.</speaker>
+          <p>Nochmals schwöre ich es dir zu, daß ich ohne dich nicht leben mag, und Herr! Sie müssen
+            nie wahr geliebt haben, wenn Sie so gleichgültig von Trennung eines liebenden Paares
+            reden können.</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Auch ich kenne die Liebe, und um so schätzbarer seid ihr mir, da ihr so beständig seid.
+            Alle meine Kräfte will ich anwenden, euch glücklich zu machen. Doch, mein lieber Martin!
+            was trägt Er da bei sich, was bringt Er hieher?</p>
+        </sp>
+        <sp who="#martin">
+          <speaker>Martin.</speaker>
+          <p>Das letzte, was mir von meinem Verdienste übrig geblieben war, denn noch gestern nahm
+            mir ein armer, kranker, reisender Kammerad das Wenige, was ich hatte, fast ganz ab, habe
+            ich angewendet, um in der Geschwindigkeit diesen unglücklichen Leuten zu helfen.</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <stage>(küßt ihn)</stage>
+          <p>Braver Martin! man muß Ihn wegen seines guten Gemüths <pb n="34"/> schätzen, Er
+            verdient Belohnung. Gehe Er jetzt mit Suschen zu Vater Jürgen und erfreue Er ihn durch
+            seine Gegenwart. <stage>(er will mit Suschen in das Haus gehen, indes tritt
+              heraus)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Zehnter Auftritt.</head>
+        <stage>Herr von Kronenburg, die Vorigen.</stage>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Gutes Suschen! du hast einen sehr braven Vater, er kann dich nicht genug rühmen, und
+            wie angenehm war mir dieses, da ich dich so herzlich liebe.</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Ich freue mich allezeit recht herzlich, wenn ich höre, daß mir die Leute gut sind, wie
+            viel größer muß mir die Freude sein, wenn ich sehe, daß so vornehme und angesehene Leute
+            mich ihrer Liebe nicht unwürdig halten. Lieber Martin! das ist der edelmüthige Mann, der
+            sein Leben für unsern guten Vater Jürgen wagte, und ihn so glücklich gerettet hat. Auch
+            du bist ihm so viel Dank schuldig, daß du dich dessen Zeitlebens nicht entledigen
+            kannst.</p>
+        </sp>
+        <pb n="35"/>
+        <sp who="#martin">
+          <speaker>Martin.</speaker>
+          <p>Mein Leben reicht nicht zu, Ihnen diese Wohlthat zu vergelten, da Sie –</p>
+        </sp>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Verschont mich mit euerm Dank, ihr macht mich sonst stolz, da ich doch nichts als meine
+            Schuldigkeit gethan – doch jetzt geht zu Vater Jürgen, er verlangt heftig nach euch.
+            Suschen! wir sprechen uns hernach wieder.</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <stage>(sie will ihm die Hand küssen, er umarmt sie nicht ohne merkliches, doch sehr
+            anständiges Sträuben)</stage>
+          <p>Immer werde ich meinem Wohlthäter zu Gebote stehen, denn ich weis es, ein so
+            liebenswürdiger und edeldenkender Mann kann und wird nichts unbilliges von mir fordern.
+              <stage>(sie geht mit Martin in die Hütte)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Eilfter Auftritt.</head>
+        <stage>Herr von Kronenburg und Treublut.</stage>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Es ist ein Engel das Mädchen! zur glücklichsten Stunde sind wir hieher gekommen. Sie
+            liebt mich! ihr Kuß <pb n="36"/> verrieth so viel Feuer, daß ich die wahre Herzensliebe
+            gar nicht verkennen kann. Mit ihr werde ich meine kurze Lebenswallfahrt antreten und mit
+            ihr glücklich sein.</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Ich finde jetzt in Ihnen blos den aufbrausenden, reizbaren Jüngling wieder. Wie könnten
+            Sie, wenn es nicht blos aufwallende Glut ist, was Sie zu diesem reizenden Mädchen führt,
+            selbige unglücklich machen wollen?</p>
+        </sp>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Ich sie unglücklich? Das wolle Gott verhüten! Nur ihr und mein Glück suche ich bei und
+            in ihr, sie liebt mich, ich habe zu viel Beweise.</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Ja, sie liebt Sie, wie sie ihren Vater, ihre Freunde, ihren Wohlthäter liebt, aber
+            nehmen Sie an, daß auch wahre von Ihnen vermuthete Liebe in ihr zu Ihnen entstanden
+            wäre, ohngeachtet ich es gewis weis, daß dieses nicht ist, was wollten Sie thun? könnten
+            Sie dieselbe nach Ihrem edeldenkenden Karakter fort nähren, oder <pb n="37"/> müßten Sie
+            nicht vielmehr selbige in der Geburt zu ersticken suchen? Sie wissen es, Ihr sonst so
+            guter, aber auf seinen alten Adel stolzer Vater, würde nie in eine Mesallianz zwischen
+            Ihnen und dem schönen Suschen willigen, – und nun eine Frage an Ihr Herz: könnten Sie
+            wohl das gute Mädchen zu Ihrer Buhlerin erniedrigen wollen?</p>
+        </sp>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Nur durch das gute Mädchen kann ich glücklich sein! verschonen Sie mich mit allen
+            Einwendungen, ich habe mir bereits alle Vorstellungen deshalb selbst gemacht, aber ich
+            fühle es, ohne sie würde ich bei allem meinen Reichthum ein sehr armer Mensch sein. Nun
+            habe ich meinen Entschluß gefaßt, er steht fest, ich werde diesen Ort nicht wieder
+            verlassen, bis Suschen mein ist, man soll mich von ihr mit Gewalt wegreißen und doch
+            werde ich sie nie lassen – und käm ein Engel vom Himmel und wollte mich eines andern
+            belehren, ich würde ihm nicht <pb n="38"/> glauben, Suschen liebt mich, darauf sterbe
+            ich.</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Wenn alles bei Ihnen nicht helfen will, keine Vorstellungen, nicht das in Ihnen rege
+            gemachte Gefühl der kindlichen Liebe, Ihres Standes und der demselben schuldigen
+            Pflichten, so muß ich Sie auf eine andre Art zurückzuführen suchen. Wissen Sie denn
+            also, eingebildeter junger Mann! Suschen liebt einen andern, eben den Jäger, mit welchem
+            sie jetzt zu ihrem Vater gieng, Suschens Vater billigt diese Liebe und wünscht nichts
+            mehr, als sie mit ihm zu verbinden – auch würde dieses schon geschehen sein, wenn nicht
+            Suschens Armuth und Martins Vaters Geiz es bisher verhindert hätten. Jetzt zeigen Sie,
+            ob Sie Suschen wirklich lieben. Fünf hundert Thaler sind es, die der Oberförster,
+            Martins Vater, von seiner künftigen Schwiegertochter zur Mitgabe verlangt, dadurch würde
+            Suschen mit ihrem Martin glücklich. Sie haben der armen Familie so <pb n="39"/> viel
+            Gutes erzeigt, machen Sie dieselbe vollends ganz glücklich, was sind Ihnen fünf hundert
+            Thaler? und wie sehr wird Suschen und Martin, wie sehr wird die ganze Familie Sie
+            seegnen, Sie entzücken dadurch auf immer ein Paar dürftige Liebende, und wie angenehm
+            muß Sie das Bewußtsein, der Schöpfer der Freuden eines so lieben Paares zu sein,
+            erheben!</p>
+        </sp>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Ich soll also gar meinem Nebenbuhler die Geliebte erkaufen! – verlangen Sie alles von
+            mir, die Hälfte meines Vermögens, sie soll Ihnen werden, nur nicht die Entsagung des
+            Besitzes meines lieben Suschens.</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>So wollen Sie also das liebe Mädchen gränzenlos elend machen, denn nur ihren Martin
+            liebt sie und ohne ihm ist ihr alles gleich, wie sie mir selbst gestanden. Verlangen Sie
+            von Jürgen Suschens Hand, er wird sie Ihnen aus Dankbarkeit nicht abschlagen, Suschen
+            wird als gehorsames Kind sie Ihnen <pb n="40"/> nicht verweigern, aber sicher können Sie
+            darauf rechnen, Suschens Loos ist dann auf ihre kurze Lebenszeit Elend, Kummer und Tod.
+            Welche betrübte Aussichten für Sie selbst sowohl als für das liebenswürdige Suschen!
+            Kommen Sie, wir wollen einen Spaziergang nach dem Flusse zu machen, ich will Ihr edles
+            Herz in die Presse nehmen, und ich hoffe, daß vernünftige Vorstellungen bei Ihnen noch
+            Eingang finden werden.</p>
+        </sp>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Hoffen Sie nicht zu viel, noch finde ich, da Amalie für mich verloren ist, keinen
+            andern Ersatz in meinem Herzen als Suschen.</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Ein Mann, wie Sie, wird immer eine gleichtönende Seele seines Standes finden, ohne erst
+            ein Paar glücklich Liebende trennen zu müssen. <stage>(er geht mit Kronenburgen
+              ab)</stage></p>
+        </sp>
+      </div>
+      <pb n="41"/>
+      <div type="scene">
+        <head>Zwölfter Auftritt.</head>
+        <stage>Vater Jürge noch ganz schwach von Martin, und Barbara von Suschen geführt, aus der
+          Hütte heraus.</stage>
+        <sp who="#martin">
+          <speaker>Martin.</speaker>
+          <p>Nur gemach, Vater Jürge! strengt Euch nicht zu sehr an, Ihr seid noch zu schwach, wie
+            leicht könnte es Euch schaden, und da Euch Gott diesmal so wunderlich errettet und von
+            der augenscheinlichsten Todesgefahr befreit hat, so seid Ihr um so mehr schuldig, für
+            die Erhaltung Eures Lebens zu sorgen.</p>
+        </sp>
+        <sp who="#barbara">
+          <speaker>Barbara.</speaker>
+          <p>Ja, Vater! weißt du, was die beiden guten Herren sagten? Du solltest dich ja in Acht
+            nehmen und dich schonen, damit du dir durch zu heftige Anspannung deiner Nerven nicht
+            eine gefährliche Krankheit zuzögest und das letzte Uebel ärger würde als das erste.
+            Folge ja, lieber Jürge! und setze uns nicht von neuem in solches Schrecken!</p>
+        </sp>
+        <pb n="42"/>
+        <sp who="#juerge">
+          <speaker>Jürge.</speaker>
+          <p>Ich danke Euch allen zusammen für eure Bemühung, für eure Sorge für mich und vergebt
+            mirs, daß ich euch so in Bestürzung gebracht und erschreckt habe, ihr hättet den Tod
+            davon haben können, besonders du, gutes altes Mütterchen!</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Ja, Vater! viel fehlte nicht, sie wäre mir fast unter den Händen gestorben, sie sank
+            nieder, da sie Euch so kläglich um Hülfe rufen hörte und glaubte, daß sie Euch nie
+            wieder sehen würde und noch dazu mußte ich sie in diesem elenden Zustande liegen lassen,
+            um nur zu Eurer Rettung um Hülfe zu rufen. Meine Stimme war auch so durchdringend
+            gewesen, daß sie Euren edelmüthigen Retter und seinen Freund, Euren Arzt, herbeizog. Als
+            ich vom Flusse wieder zurücke und nach ihr hieher lief, lag die arme Mutter noch immer
+            ohne Bewußtsein und nur durch starke Wasser brachte sie der Fremde wieder zu sich.</p>
+        </sp>
+        <pb n="43"/>
+        <sp who="#juerge #martin">
+          <speaker>Jürge und Martin.</speaker>
+          <p>Der Name des Herrn sei gelobt!</p>
+        </sp>
+        <sp who="#barbara">
+          <speaker>Barbara.</speaker>
+          <p>Wo mögen aber die guten Herren hingekommen sein, sie versprachen doch hier unsrer zu
+            erwarten, denn auch unsern Dank haben sie bisher zu vermeiden gesucht.</p>
+        </sp>
+        <sp who="#juerge">
+          <speaker>Jürge.</speaker>
+          <p>Was ich bin und habe, gehört ihnen, alles sei ihr Eigenthum! bist du es zufrieden
+            Suschen?</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Sie verdienen es um Euer, um Mutter Barbara's, um unserer aller willen, sie werden aber
+            gewiß nichts annehmen und wenn Ihr schon Reichthums die Fülle hättet, mein Leben ist um
+            Gold nicht feil, sagte Euer edelmüthiger Retter, auch scheint er mir selbst ein junger
+            reicher Mann zu sein, wie ich aus seines Freundes Reden geschlossen habe.</p>
+        </sp>
+        <sp who="#martin">
+          <speaker>Martin.</speaker>
+          <p>Gebt ihm alles, alles was Ihr habt, nur erhaltet mir mein Suschen, wir wollen durch
+            unserer Hände Arbeit Euch <pb n="44"/> schon auf Euer Alter ruhige Tage machen, denn
+            mein Vater wird sich doch noch endlich erweichen lassen – und wollte er ganz das
+            väterliche Gefühl verleugnen, so wollen wir einen gewissen Zeitpunkt abwarten, nur bleib
+            mir unterdessen so getreu, wie ich es Dir immer bleiben werde. <stage>(er küßt Suschen,
+              indes tritt)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Dreizehnter Auftritt.</head>
+        <stage>Der Oberförster Schwarze ein, Vorige.</stage>
+        <sp who="#schwarze">
+          <speaker>Oberförster.</speaker>
+          <p>Stehst du wieder hier und treibst deine Löffelei? ich denke, du bist im Walde und
+            weisest die Holzschläger an. Wie vielmal habe ich dir es gesagt, daß ich dir meine
+            Einwilligung zu einer Heirath mit Suschen nicht geben kann? Es ist zwar wahr, das
+            Mädchen ist gut und ohne Tadel, ich habe auch wider ihre Aufführung nichts einzuwenden,
+            allein sie kann dir nichts helfen, du mußt eine Frau haben, die dir etwas mitbringt, <pb
+              n="45"/> da ich selbst nicht im Stande bin, dir viel mitzugeben.</p>
+        </sp>
+        <sp who="#martin">
+          <speaker>Martin.</speaker>
+          <p>O liebster Vater! Suschen hat einen größern Schatz als alle Reichthümer der Welt
+            zusammen, sie ist fromm, tugendhaft, schön, sie liebt mich.</p>
+        </sp>
+        <sp who="#schwarze">
+          <speaker>Oberförster.</speaker>
+          <p>Komm mir nicht mit deiner Romanensprache! – es lebt sich verteufelt knapp von der
+            Liebe, man muß sehr schmale Bissen machen, wenn man davon leben will und ich muß allemal
+            lachen, aber auch zugleich heimlich mich ärgern, wenn ich so was höre. Aber was machst
+            du jetzt hier? warum bist du nicht, wie ich dir es geheisen, im Walde?</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Verzeihen Sie ihm, Herr Oberförster! er war eben im Walde, da er meines Vaters Unglück
+            hörte, die Liebe beflügelte seine Schritte, er wollte Trost und Hülfe bringen, ein edler
+            fremder Jüngling aber war ihm schon zuvorgekommen und hatte auf mein Geschrei und Bitten
+            meinen Vater mit eigner <pb n="46"/> Lebensgefahr vom Tode gerettet. Es schmerzt uns nur
+            alle, daß wir ihm seine That nicht belohnen können.</p>
+        </sp>
+        <sp who="#schwarze">
+          <speaker>Oberförster.</speaker>
+          <p>Das ist eben dein Hauptfehler, daß du so arm bist, freilich kannst du nicht dafür, aber
+            nur andere können nicht darunter leiden. Ich muß euch daher meine letzte Erklärung thun,
+            daß nun schlechterdings nichts aus einer Heirath zwischen euch beiden Leuten werden kann
+            und eben habe ich dich, Martin, der Verwalterstochter von Markwitz angetragen, 's ist
+            auch ein braves Mädchen, freilich ist sie nicht wie Suschen, aber sie ist jung, hübsch
+            und reich, auch gerade so, wie sie sich für dich schickt.</p>
+        </sp>
+        <sp who="#juerge">
+          <speaker>Jürge.</speaker>
+          <p>Herr Oberförster! trennen Sie doch nicht weiter ein Band unter diesen beiden Liebenden,
+            das der Himmel selbst geknüpft zu haben scheint, sie lieben sich so aufrichtig, so
+            zärtlich, daß ich alter abgestumpfter Mann mein einziges Vergnügen darinnen finde.</p>
+        </sp>
+        <pb n="47"/>
+        <sp who="#barbara">
+          <speaker>Barbara.</speaker>
+          <p>Setzen Sie sich an der Kinder Stelle – was würden Sie in Ihrer Jugend gethan haben,
+            wenn Sie auf Ihres Vaters Befehl Ihrer Liebe hätten entsagen und wider Ihre Neigung eine
+            andere hätten lieben sollen?</p>
+        </sp>
+        <sp who="#schwarze">
+          <speaker>Oberförster.</speaker>
+          <p>Ich bin nicht so thöricht gewesen, mich zu verlieben, wenn ich nicht absah, daß der
+            Gegenstand meiner Achtung mich glücklich machen könne.</p>
+        </sp>
+        <sp who="#juerge">
+          <speaker>Jürge.</speaker>
+          <p>Auch Martin glaubt mit Suschen glücklich zu werden und sie werden es gewiß, sie sind
+            ein Paar so gute fromme Kinder, daß es ihnen schlechterdings wohl gehen muß. Trennen Sie
+            das rechtschaffene Paar nicht. Gottes Seegen wird sie auch bei Wenigem vergnügt und froh
+            machen. <stage>(Suschen und Martin fallen vor ihm auf die Knie)</stage></p>
+        </sp>
+        <sp who="#schwarze">
+          <speaker>Oberförster.</speaker>
+          <stage>(etwas gerührt, entwindet sich ihnen)</stage>
+          <p>Keine Bokssprünge! ich kann die Zierereien nicht leiden! Bin kein Komödiantenvater, den
+            man damit überlistet – also ohne <pb n="48"/> Umstände – es bleibt beim alten, keine
+            kann meine Schwiegertochter werden, welche nicht wenigstens fünfhundert Thaler besitzt,
+            damit hat die Litanei ein Ende. Vater Jürge hat jetzt gar nichts mehr, er kann die
+            elende Hütte verkaufen und betteln gehen, wenn er will – freilich hat er es nicht
+            verschuldet, zwei Jahr hinter einander Miswachs und die diesjährige Ueberschwemmung
+            haben ihn völlig zu Grunde gerichtet, aber darunter kann ich und mein Martin nicht
+            leiden – jetzt komm, Martin! und wage es nicht, ohne mein Vorwissen, wieder einen Fuß
+            hieher zu setzen.</p>
+        </sp>
+        <sp who="#martin">
+          <speaker>Martin.</speaker>
+          <p>Sie sind also unerbittlich, Vater! Sie wollen mir Suschen, die ich so herzlich liebe
+            und die mich wieder liebt, nicht zum Weibe geben? ich soll ein Mädchen nehmen, die ich
+            hasse und verabscheue! Nein, Vater! wenn alles geschieht, das gewiß nicht! Sie können
+            mir zwar Suschen entreißen, aber eine andere zu heirathen, dazu soll mich keine Gewalt
+            zwingen. Ich verlasse die hiesige <pb n="49"/> Gegend, bleiben Sie in Ihrem Alter
+            kinderlos – denn, bei Gott! Sie stoßen ein gutes Kind aus und ich will nur wünschen, daß
+            Sie meine Verstoßung dereinst schmerzlich bereuen. Suschen! bleib mir getreu, Gott wird
+            dich segnen! dereinst sehen wir uns wieder. Lebt wohl, lieben Eltern! <stage>(er küßt
+              Suschen und will abgehen, Oberförster und Jürge halten ihn zurück)</stage></p>
+        </sp>
+        <sp who="#schwarze">
+          <speaker>Oberförster.</speaker>
+          <p>Bube! so sprichst du mit deinem Vater? du wagst es, ihm zu drohen?</p>
+        </sp>
+        <sp who="#juerge">
+          <speaker>Jürge.</speaker>
+          <p>Des Vaters Seegen bauet den Kindern Häuser! Martin! verschmähe den Seegen deines Vaters
+            nicht freventlich, folge ihm, er muß am besten wissen, was dir dienlich ist.</p>
+        </sp>
+        <sp who="#barbara">
+          <speaker>Barbara.</speaker>
+          <stage>(zu Suschen, welche schluchzt)</stage>
+          <p>Tröste dich, Suschen! du bist jederzeit ein gehorsames Kind gewesen, es kann dir nicht
+            fehlen, du wirst noch glücklich sein.</p>
+        </sp>
+        <pb n="50"/>
+        <sp who="#martin">
+          <speaker>Martin.</speaker>
+          <p>Ich habe keinen Vater mehr, er verleugnet aus Geldgier alles väterliche Gefühl. Noch
+            einen Versuch! ich will den Retter Jürgens aufsuchen, er und sein Freund sind solche gut
+            gesinnte Leute, vielleicht vermögen die etwas über das harte Herz meines Vaters. Da
+            kommen sie so eben.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Vierzehnter Auftritt.</head>
+        <stage>Herr von Kronenburg, Herr Treublut, Vorige.</stage>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Ei, sieh da! da ist ja unser lieber Vater Jürge wieder und sieht so frisch und munter
+            aus, es freut mich, daß alles so gut abgegangen ist und ihr mit dem bloßem Schreck davon
+            gekommen seid, auch Mutter Barbara hat sich wieder erholt. Aber was ist euch? ihr seht
+            mir ja alle so bestürzt aus, sogar du, mein liebes Suschen mit Martinen? was ist hier
+            vorgefallen? <pb n="51"/> Sagts! ist euch mein Hiersein zuwider, so will ich euch nur
+            ein Lebewohl sagen und sogleich mit meinem Freunde Treublut abreisen.</p>
+        </sp>
+        <sp who="#juerge">
+          <speaker>Jürge.</speaker>
+          <p>Wie könnte uns mein und unser aller Engel zuwider sein. Nein, nie dürften Sie diese
+            Hütte wieder verlassen, wenn nicht alles zu schlecht bei uns und unsere Umstände zu
+            elend wären. Nur unser Suschen und der gute Martin machen uns betrübt, ob wir sie gleich
+            so herzlich lieben.</p>
+        </sp>
+        <sp who="#martin">
+          <speaker>Martin.</speaker>
+          <p>Gnädiger Herr! Sie und Ihr Freund haben solche mitleidige Gesichter, daß ich in meiner
+            Noth mich an Sie wage. Ich liebe das schöne Suschen schon seit mehrern Jahren, ihre
+            Eltern hatten nichts dawider und billigen noch unsere Liebe, nur mein Vater hat jedes
+            väterliche Gefühl ausgezogen und will mir Suschen versagen, weil sie ihm nicht reich
+            genug ist – fünfhundert Thaler verlangt er schlechterdings von ihr, sonst soll <pb
+              n="52"/> ich sie ganz verliehren und wider meine Neigung eine andere heirathen. O ich
+            flehe Sie an, reden Sie meinem Vater zu, daß er in sich geht, daß er mir Suschen zum
+            Weibe giebt, denn sonst müssen wir beide unglücklich sein.</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Herr Oberförster! also nichts weiter haben Sie an Suschen auszusetzen, als daß sie arm
+            ist?</p>
+        </sp>
+        <sp who="#schwarze">
+          <speaker>Oberförster.</speaker>
+          <p>Suschen wird mir als Tochter willkommen und lieber als alle andere sein, wenn sie im
+            Stande ist, meinem Sohne ebenfalls fünfhundert Thaler zuzubringen, als so viel ich ihm
+            zum Anfange geben kann. Ich bedaure nur, daß das arme Suschen solches nicht kann, denn
+            Vater Jürge ist nun nach zweijährigen Miswachs und der heurigen Ueberschwemmung
+            dergestalt geschlagen, daß auch die hundert Thaler, welche er von Suschen auf seinem
+            Hause hat, nun sehr in Gefahr sind, denn was würde die elende Hütte <pb n="53"/> werth
+            sein, wenn sie auch verkauft würde und wo sollten Vater Jürge und Mutter Barbara auf
+            ihre alten Tage ein Obdach finden.</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Wenns das ist, so sollt Ihr meinen Freund und mich nicht umsonst gebeten haben. Nicht
+            wahr, lieber Kronenburg?</p>
+        </sp>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Sie beugen mich tief, liebster Treublut! doch Ihre Gründe haben mich überzeugt. Da ich
+            selbst Suschen nicht besitzen kann, so soll wenigstens ihr Glück mir Freude und
+            Vergnügen gewähren. Ich lasse Ihnen in allem freie Hand und genehmige alles.</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Suschen! bitte den Herrn Oberförster um seine Einwilligung und um seinen väterlichen
+            Seegen. Mein Freund, der Herr von Kronenburg, der edle Sohn des verdienstvollen und
+            würdigen Herrn geheimen Rath von Kronenburg, nimmt es auf sich, <pb n="54"/> die dir
+            fehlenden fünfhundert Thaler Heirathsgut zu geben und bestellt deinen Martin zum Förster
+            auf seinen Gütern, jedoch unter der einzigen Bedingung, daß Ihr Vater Jürgen und Mutter
+            Barbaren zu Euch nehmt und sie als Eure Eltern liebt und verehrt, seid Ihr das
+            zufrieden?</p>
+        </sp>
+        <sp who="#martin">
+          <speaker>Martin.</speaker>
+          <stage>(umfaßt Suschen und führt sie zu seinem Vater)</stage>
+          <p>Vater! haben Sie nun noch etwas darwider? darf ich nun Suschen mein nennen?</p>
+        </sp>
+        <sp who="#schwarze">
+          <speaker>Oberförster.</speaker>
+          <stage>(legt beide Hände in einander)</stage>
+          <p>Gott seegne Euch, meine Kinder! liebt Euch und seid glücklich, verehrt eure Eltern euer
+            Lebelang und dankt euern erhabenen Wohlthäter, den Sohn des mir so verehrungswürdigen
+            und vom ganzen Lande geseegneten Mannes. Herr von Kronenburg, Sie sind ein edler Mann,
+            ganz Ihres großen Vaters würdig! Sie haben uns alle beglückt, vielleicht, daß auch ich
+            Ihnen eine Freude machen <pb n="55"/> kann. Ihr Herr Vater wird morgen früh, wenn nicht
+            noch heute hier ankommen und bei mir mit der verwitbeten Kammerherrin von Neuendorf, der
+            ehemaligen Fräulein Amalie von Heinitz abtreten. Ich habe das Glück, der Frau von
+            Neuendorf Kurator zu sein und wegen verschiedener auf ihren Gütern vorzunehmender
+            Veränderungen soll unter uns eine Konferenz gehalten werden, – außerdem sind Sie,
+            welchen der Herr Vater mit Ungeduld von seinen Reisen zurückerwartet, vom gnädigsten
+            Fürsten zum Nachfolger des verstorbenen Oberforstmeisters in Gnaden ernannt worden und
+            sind von nun an mein hoher Vorgesetzter, dessen hoher Protektion ich mich andurch
+            unterthänigst empfehle. Lesen Sie selbst, Herr Oberforstmeister! die Bestätigung alles
+            dessen, was ich Ihnen so eben zu sagen die Ehre gehabt habe, aus Ihres Herrn Vaters
+            Briefe. <stage>(er übergiebt ihm den Brief)</stage></p>
+        </sp>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <stage>(nachdem er den Brief gelesen)</stage>
+          <p>Freund! bester Treublut! ich bin nun <pb n="56"/> glücklich, Amalie ist Wittbe, sie
+            lebt in Freundschaft mit meinem Vater, mein neuer Freund, der Herr Oberförster ist ihr
+            Kurator, er wird mir nicht entgegen sein, vielmehr auf alle Art behülflich, der
+            unvergleichlichen, so sehr geliebten Amalie Hand zu erhalten.</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Es kann Ihnen nicht fehlen und ich statte Ihnen meinen doppelten Glückwunsch ab, ich
+            freue mich sehr, daß ich sehe, wie schön Ihre edle Denkungsart belohnt wird. Um nichts
+            mehr bitte ich, als daß Sie mir auch auf die Zukunft Ihre fernere Freundschaft schenken,
+            wenn Sie mich bis jetzt derselben nicht unwürdig gefunden haben.</p>
+        </sp>
+        <sp who="#von_kronenburg">
+          <speaker>von Kronenburg.</speaker>
+          <p>Wie könnte ich meinen Treublut, den Gespielen meiner Kindheit, den Freund meiner
+            Jugend, den Lehrer und erprobten getreuen Begleiter und Gefährten auf meinen Reisen je
+            von mir lassen? <pb n="57"/> Sie dürfen nie von mir und müssen mein beständiger
+            Rathgeber bleiben! Versprechen Sie mir das? <stage>(er küßt ihn)</stage></p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Mein Kronenburg ist mir zu theuer, als daß ich ihm irgend etwas abschlagen könnte. Ihr
+            Verlangen zu erfüllen, wird mein angenehmstes Geschäft sein.</p>
+        </sp>
+        <sp who="#schwarze">
+          <speaker>Oberförster.</speaker>
+          <p>Treublut heißen Sie und ohnstreitig Karl Treublut? nicht?</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Ja, Herr Oberförster! wozu diese Frage? und woher wissen Sie meinen Vornamen sogar?</p>
+        </sp>
+        <sp who="#schwarze">
+          <speaker>Oberförster.</speaker>
+          <stage>(ihn hastig umarmend)</stage>
+          <p>Weil du der Sohn meiner verstorbenen Schwester bist. Sie war mit deinem Vater, dem
+            Diakonus, Magister Treublut, in der Residenz verheirathet, aber kurz nach deiner Geburt
+            starb sie – daher und weil dein Vater mit mir in Feindschaft gerieth, hast du niemals
+            etwas von deinem Oheim, dem Oberförster <pb n="58"/> Schwarze in hiesiger Gegend
+            erfahren, so sehr ich mich auch von Zeit zu Zeit nach dir erkundigt habe.</p>
+        </sp>
+        <sp who="#treublut">
+          <speaker>Treublut.</speaker>
+          <p>Wie entzückt bin ich, Ihnen meine kindliche Ehrfurcht bezeigen zu können, und mich dem
+            Bruder meiner theuern ungekannten Mutter und seiner fernern Liebe zu empfehlen – daher
+            kam der innerliche Trieb mich Ihnen zu nähern. Um so mehr freue ich mich, da ich durch
+            mein Bemühen und meine Fürsprache bei meinem Freund Kronenburg, meinem nächsten Freund
+            und Verwandten, dem guten Martin gedient und ihm sein Suschen verschaft habe. Lieber
+            Vetter! Förster Schwarze! Sie sind doch nicht etwa auf mich eifersüchtig, daß ich vorhin
+            mit Suschen allein gesprochen und sie geküßt habe?</p>
+        </sp>
+        <sp who="#martin">
+          <speaker>Martin.</speaker>
+          <stage>(sucht ihn zu umarmen, traut sich aber noch nicht so recht, und nur da Treublut ihm
+            entgegen kommt, fällt er ihm hastig in die <pb n="59"/> Arme)</stage>
+          <p>Ein so braver Mann, wie Sie, kann nie eine Gelegenheit zum schändlichen Laster der
+            Eifersucht geben, und übrigens ist mir Suschens Tugend so fest, daß es ein Verbrechen
+            wäre, nur im geringsten daran zu zweifeln.</p>
+        </sp>
+        <sp who="#suschen">
+          <speaker>Suschen.</speaker>
+          <p>Nimm dich in acht, Martin! traue mir nicht zu viel, denn ich muß dir es nur gerade
+            heraus sagen, der gnädige Herr von Kronenburg und der Herr Vetter Treublut fangen bald
+            an dir gefährlich zu werden. <stage>(sie umarmt und küßt beide)</stage> Nehmen Sie mit
+            meinem guten Willen vorlieb. Sie haben alles gethan, um mich und meinen Martin zu
+            beglücken, nehmen Sie meinen wärmsten Dank dafür.</p>
+        </sp>
+        <sp who="#juerge">
+          <speaker>Jürge.</speaker>
+          <p>Ich stehe hier, wie im Traume, wer hätte sich von der Ueberschwemmung so viel Glück
+            träumen lassen? Nicht wahr, gute Mutter Barbara!</p>
+        </sp>
+        <pb n="60"/>
+        <sp who="#barbara">
+          <speaker>Barbara.</speaker>
+          <p>Jawohl, Väterchen! das ist für uns eine wahre glückliche Ueberschwemmung!</p>
+        </sp>
+        <stage>(Der Vorhang fällt.)</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

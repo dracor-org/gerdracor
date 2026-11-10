@@ -1,0 +1,3279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ger000761" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Antonio del Bassanio</title>
+        <title type="sub">Ein bürgerliches Trauerspiel in fünf Aufzügen</title>
+        <author>
+          <persName>
+            <forename>Anton</forename>
+            <forename>Peter</forename>
+            <surname>Pollinger</surname>
+          </persName>
+          <idno type="wikidata">Q94692959</idno>
+          <idno type="pnd">104580214X</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <availability>
+          <licence target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>Library of the Czech Academy of Sciences</name>
+          <idno type="URL"
+            >https://bcbt.lib.cas.cz/records/c3db7f10-4535-4f23-83c1-93855f093efb</idno>
+          <availability status="free">
+            <p>In the public domain.</p>
+          </availability>
+          <bibl type="originalSource"><author>Anton Peter Pollinger</author>: <title>Antonio del
+              Bassanio, ein bürgerliches Trauerspiel in fünf Aufzügen</title>.
+              <pubPlace>Prag</pubPlace>: <publisher>Fitzky</publisher>
+            <date>1778</date>. (S. <biblScope unit="page" from="1" to="107"
+            >1–107</biblScope>.)</bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="antonio" sex="MALE">
+            <persName>Antonio del Bassanio</persName>
+          </person>
+          <person xml:id="johann" sex="MALE">
+            <persName>Johann</persName>
+          </person>
+          <person xml:id="prospero" sex="MALE">
+            <persName>Prospero</persName>
+          </person>
+          <person xml:id="valerio" sex="MALE">
+            <persName>Valerio</persName>
+          </person>
+          <person xml:id="hannach" sex="FEMALE">
+            <persName>Hannach</persName>
+          </person>
+          <person xml:id="jenny" sex="FEMALE">
+            <persName>Jenny</persName>
+          </person>
+          <person xml:id="montroso" sex="MALE">
+            <persName>Montroso</persName>
+          </person>
+          <person xml:id="campo" sex="MALE">
+            <persName>Campo</persName>
+          </person>
+          <person xml:id="lucio" sex="MALE">
+            <persName>Lucio</persName>
+          </person>
+          <person xml:id="castro" sex="MALE">
+            <persName>Castro</persName>
+          </person>
+          <person xml:id="signora_castro" sex="FEMALE">
+            <persName>Signora Castro</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="friends" mutual="#antonio #prospero #valerio"/>
+            <relation name="parent_of" active="#montroso" passive="#jenny"/>
+            <relation name="spouses" mutual="#jenny #campo"/>
+            <relation name="related_with" active="#castro" passive="#montroso"/>
+            <relation name="spouses" mutual="#castro #signora_castro"/>
+            <relation name="associated_with" active="#hannach" passive="#jenny"/>
+            <relation name="associated_with" active="#johann" passive="#antonio"/>
+            <relation name="associated_with" active="#lucio" passive="#montroso"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Tragedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q80930</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-01-31">(ff) convert from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1778">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/ger000761"
+        passive="http://www.wikidata.org/entity/Q133289064"/>
+    </listRelation>
+  </standOff>
+  <text>
+    <front>
+      <pb n="1"/>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">Antonio del Bassanio,</titlePart>
+          <titlePart type="sub">ein bürgerliches Trauerspiel in fünf Aufzügen.</titlePart>
+        </docTitle>
+        <docAuthor>Von Anton Peter Pollinger.</docAuthor>
+        <docImprint>
+          <pubPlace>Prag,</pubPlace>
+          <publisher>gedruckt bey Johann Norbert Fitzky, im Karolin,</publisher>
+          <docDate>1778.</docDate>
+        </docImprint>
+      </titlePage>
+      <pb n="2"/>
+      <pb n="3"/>
+      <castList>
+        <head>Personen.</head>
+        <castItem><role>Antonio del Bassanio.</role></castItem>
+        <castGroup>
+          <castItem><role>Prospero,</role></castItem>
+          <castItem><role>Valerio,</role></castItem>
+          <roleDesc>dessen Freunde.</roleDesc>
+        </castGroup>
+        <castItem><role>Montroso.</role></castItem>
+        <castItem><role>Jenny,</role>
+          <roleDesc>dessen Tochter.</roleDesc></castItem>
+        <castItem><role>Campo,</role>
+          <roleDesc>ihr angedrungener Geliebter.</roleDesc></castItem>
+        <castItem><role>Castro,</role>
+          <roleDesc>Schwager des Montroso.</roleDesc></castItem>
+        <castItem><role>Signor Castro,</role>
+          <roleDesc>dessen Frau.</roleDesc></castItem>
+        <castItem><role>Hannach,</role>
+          <roleDesc>Mädchen der Jenny.</roleDesc></castItem>
+        <castItem><role>Johann,</role>
+          <roleDesc>Bediente des Antonio.</roleDesc></castItem>
+        <castItem><role>Lucio,</role>
+          <roleDesc>Bediente des Montroso.</roleDesc></castItem>
+      </castList>
+      <set>
+        <p>Der Schauplatz ist in Genua. – Die Handlung hebt des Morgens an, und währt achtzehn
+          Stunden.</p>
+      </set>
+    </front>
+    <pb n="4"/>
+    <pb n="5"/>
+    <body>
+      <div type="act">
+        <head>Erster Aufzug.</head>
+        <stage>Die Scene, das Zimmer des Antonio.</stage>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <sp who="#antonio">
+            <speaker>Antonio,</speaker>
+            <stage>im Nachtkleide.</stage>
+            <p>Grausame Nacht! – Elender Traum! wie hintergiengst du mich! – O meine Jenny! dich
+              hielt ich in meinen Armen! deine Lippen deckten die meinigen! hingegossen an deine
+              zaubernde Gestalt, lag ich ganz sinnlos, ungewiß, was ich bin, und was ich seyn werde!
+              – – Und doch fühlt' ich all' die Wonne in seiner ganzen Fülle, all' die Lieb, die mir
+              deine Lippen einflößten, all' die Schläge deines warmen Herzens. – O meine Theuerste!
+              könnte ich dich nur itzt wachend so umarmen, welcher Wunsch blieb da noch unerfüllt!
+              welcher Sterblicher <pb n="6"/> glich mir an Glückseligkeit! – Und doch ist alles nur
+              ein Traum, alles verschwunden, alles leer um mich her. – <stage>Nach einigem
+                Stillschweigen.</stage> Aber was hält mich von dir zurück Geliebteste? was vereitelt
+              meinen Wunsch? warum kann ich dich nicht frey lieben? ist es dein erzürnter
+              eigensinniger Vater? Ach welches Kind – welches gute Kind kann aus ihm nicht den
+              besten, den gütigsten Vater umschaffen! <stage>wiederum nach einigen
+                Stillschweigen.</stage> O eigensinniger Mann! warum willst du das trennen, was die
+              Natur, unserer aller Mutter, so genau zu verbinden scheint? was ist die Ursache, daß
+              du mich hassest? daß dich mein Vater, ein Freund, und Priester der Gerechtigkeit zur
+              Zurückstellung einer unrechtmäßigen Erbschaft verdammte? sollte er deinetwegen das
+              Kleid der Gerechtigkeit, in welchen ihn die ganze Welt erkannte, ausziehen, und sich
+              mit den prächtigen Lumpen der Ränke, und Schwänke kleiden? deine ihm angetragene
+              Ungerechtigkeit von Demant, und Smaragd an Finger tragen? – Nein, das that er nicht!
+              denn, – leicht sey die Erde auf ihm –, er war rechtschaffen, der größte Ruhm, der
+              größte Schatz, <stage>Johann kömmt.</stage> den er mir hinterließ. –</p>
+          </sp>
+          <sp who="#johann">
+            <speaker>Johann.</speaker>
+            <p>Gnädiger Herr!</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Wer unterbricht mich? – <stage>sieht Johann.</stage> was ists?</p>
+          </sp>
+          <sp who="#johann">
+            <speaker>Johann.</speaker>
+            <p>Ihr Freund Prospero ist im Vorzimmer.</p>
+          </sp>
+          <pb n="7"/>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Prospero? laßt ihn kommen, gleich kommen, <stage>Johann geht ab.</stage> gewiß bringt
+              er mir Nachricht von meiner Jenny.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Prospero, Antonio.</stage>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Tausendmal guten Morgen Antonio!</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Wiederum soviel, edler Prospero, aber warum so viel Umstände mit deinem Freunde?</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Auch Freunden kann man ungelegen seyn.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Von meiner Art nie. – Doch bringst du mir Nachricht von meiner Jenny? – Gewiß Bester,
+              sag mir, denn ich habe mich deines so frühen Besuchs nicht gewärtiget. –</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Nachricht wohl, aber nichts weiter als Nachricht.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Nichts weiter als Nachricht? O Jenny auch du fängst schon an mich zu vergessen! nun
+              sage.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Kaum verließest du gestern die Gesellschaft, so that Jenny mit Campo vertrauter.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Mit Campo?</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Ja mit Campo, sie mußt es thun, scheint mir, ihr Vater kam, und raunte ihr was ins
+              Ohr; darauf sprach sie lange mit Campo, eine freudige <pb n="8"/> Mine folgte der
+              andern, ein Lächeln erzeugte das andere, ein wechselweises Händedrücken war der
+              Ausdruck der Sympathie ihrer Seelen.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Gott schone meiner! – Nur allzuwohl malst du mir diese Scene, sage lieber: wie ihre
+              Augen um mich herumeilten, wie beredt ihr Mund von mir sprach; wie ihre Seele die
+              meinige aufzusuchen schien. Geh mein Bester! – sag mirs, begehe diese Lüge, aus
+              Barmherzigkeit begehe sie – oder nein, sey stille, – du kannst nicht lügen; denn das
+              ist keine Lüge, die aus Unglücklichen Glückliche macht. – – Glaubst du aber, daß du
+              annoch lügest, wenn du mir dieß sagtest, so lüge, – und ich will dich dafür in das
+              geheiligte Buch der Freundschaft an die erste Stelle setzen, dich lieben, und
+              anbethen. – Wolltest du aber weder das, so male fort mit deinem tödtenden Pinsel, und
+              male so lange, bis mein Herz, das ohnehin einer Fluth gleichet, welche durch viele
+              Regengüsse, und Wolkenbrüche zu ihrer äußersten Höhe angeschwollen ist, – seine enge
+              Gränzen <stage>sich auf das Herz deutend</stage> verläßt, und auf einmal dasjenige
+              Gebiethe ereilt, wo man keinen Schmerz kennt, noch fühlt.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Beruhige dich, um Gottes Willen beruhige dich! du entstellst dich völlig, sag mir,
+              was gieng vor, was ist geschehen, du hattest gewiß eine böse Nacht?</p>
+          </sp>
+          <pb n="9"/>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Böse Nacht Prospero? – Du bist mein größter Feind, wenn du dieß sag'st – du hast
+              diese schöne Nacht verleumdet, bitt ihr ab, oder sage, daß der Tag, die Stunde meiner
+              Geburt böse war. – Ich will dir's sagen: in dieser Nacht war ich der Glücklichste
+              aller Sterblichen, in dieser Nacht genoß ich alles, was die Götter in Olimp genüssen
+              können; denn mir traumte von meiner Jenny, mir traumte, ich hielte sie in meinen
+              Armen, – sie spräche von Freundschaft, und Liebe, O! – Ich höre noch immer ihre
+              göttliche Stimme, sie ist der Tonkunst Harmonie. – Ich sah mich gedoppelt in dem
+              Glanze ihres Gesichts, es glich der Sonne, und verwandelte die schwarze, schwere Nacht
+              in den schönsten, anmuthigsten Tag. – Ihre Augen – glichen zweyen Cometen, die in der
+              finstern Nacht am Himmel hangend große unerwartete Veränderungen, und Begebenheiten
+              ankündigen, und den leichtglaubigen Pöbel Furcht, und Schröcken verursachen. – O
+              Freund! der Mann, der von dem Feuer ihrer Augen, von dem Glanze ihres Gesichts, von
+              dem Hub ihrer Reizungen nicht gerühret wird, der Mann, sag ich, hat kein Herz, gewiß
+              kein's! – O! hätt ich nur fort traumen können, wär mein Leben ein stetter Traum, und
+              ich ganz Auge, daß ich dich Jenny ewig so hätte anstaunen mögen! – Aber Gott! durch
+              was für Zufall, durch wessen Zuthun ich nur immer erwachte, so war's gewiß keines <pb
+                n="10"/> Geringern Werk, als des Lucifers selbst! – Denn die Hölle hätte weinen
+              müssen, da sie mich erwachen sah, ich, der ich so betäubt, – so trunken von Wonne, und
+              rasend von Vergnügen war, mit einem Augenblick aus dem Glücklichsten, der
+              Unglücklichste zu werden, – O! das ist hart! – Das ist nicht anders, als wenn ich als
+              Jupiter aus dem obersten der obersten Himmeln bis in die tiefeste der tiefesten Höllen
+              wäre hinabgestürzet worden, da erwachet, und gesehen, was ich verlohren, und
+              empfunden, was ich zu dulden hätte. – O Jenny! wo ist nun die Purpurfarbe! wo die
+              himmlische Schönheit! – Wo bist du! du! die mich mir selbst entrissen.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Höre auf, noch immer wachend zu traumen, bester Antonio, – deine Phantasie wird zu
+              lebhaft, sie verläßt den sichern Weg der Vernunft, und klettert auf steilen Wegen, und
+              Klippen. – Man verachtet die Träume, wenn man sie recht kennt, und nur der wird ihr
+              lächerliches Opfer, der sie nicht kennt. – Beruhige dich demnach, du kannst noch alle
+              deine Wünsche im kurzen erfüllt sehen.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Alle meine Wünsche? O sie vereinigen sich alle in einem – in einem einzigen – in dem
+              Besitz meiner Jenny, dieß ist mit jeden Tag, mit jeder Stunde mein erster, dieß mein
+              letzter Wunsch, den ich fühle.</p>
+          </sp>
+          <pb n="11"/>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Nun wohl Antonio, ich sehe, daß du deine Jenny über alles liebst, daß sie deine ganze
+              Glückseligkeit, dein ganzes Leben sey, daß sie deine ganze Beschäftigung aller Zeit
+              ausmache, und dein einziger Wunsch ist. – Itzt mein Lieber, sage deinem Freund, hast
+              du ihr schon deine so brennende Liebe entdecket? Schenkte sie dir Gegenliebe? Ist ihre
+              Liebe der deinigen gleich?</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Der meinigen gleich? Welche Liebe läßt sich mit der meinigen messen? – Es ist wahr,
+              sie liebt mich; denn da ich sie bey Quancio das erstemal sah, entbrannte mein Herz in
+              Liebe gegen sie. – Ich war trunken von ihrer himmlischen Gestalt, – bezaubert von
+              ihren ganzen Betragen. – Ich suchte verdeckte heimliche Wege sie zu sehen, zu
+              sprechen, – und ich fand sie. – In des Quancio großen Garten unter jenen hohen
+              Kastanienbäumen entdeckte ich ihr meine Liebe; o Prospero! sie bebte bey meinen ersten
+              Worten zurück, wurde blaß, verlor alles Leben, und auf einmal fiel sie voll von
+              zärtlicher Unschuld in meine Arme. Ich glaubte den Himmel in meinen Händen zu haben,
+              und darauf versicherte sie mich mit stammelnden Worten ihrer Gegenliebe, sie schwur
+              mich ewig zu lieben, und ich sie ewig anzubethen, – und so Schwur gegen Schwur
+              schienen sich unsere Herzen zu vereinigen. Wir hielten unsere Liebe vor aller Welt
+              geheim, nur dir Prospero habe ich sie entdeckt, weil man eines <pb n="12"/> Freundes
+              in der Liebe höchst bedarf. Aber Gott! Nun, nun wird sie meyneidig! die Treulose! –
+              ihres Vaters wegen meyneidig! Treulos.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Warum meyneidig – treulos? Sie kann dich ja noch immer lieben, und sie liebt dich
+              gewiß noch; – Aber Montroso ihr Vater, dieser alte Bube, dein größter Feind, fordert,
+              befiehlt, gebiethet, daß sie den Campo liebe.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Und sie liebt ihn, – sie muß ihn lieben? Nun – so bin ich verloren, auf ewig
+              verloren.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Sie liebt ihn vielleicht noch nicht, und sie muß ihn nicht lieben.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Sie muß ihn nicht lieben? Wenn es der grausame Montroso mit seinem Donner
+              gebiethet?</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Kann sie ihn nicht durch Bitten, Vorstellungen, und List dahin bringen, dir zu
+              vergeben, der du nichts verschuldet.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Mir zu vergeben! – Sein Herz ist härter als ein Fels von Demant, sein Ohr taub, bey
+              den Bitten, und Flehen seiner Tochter, sein Herz verschlossen vor den Namen des
+              Mitleids, weder meinen Namen darf er hören, so brüllt er schon tausend fürchterliche
+              Flüche heraus, – schreyt über die Ungerechtigkeit, und Diebstal meines rechtschaffenen
+              Vaters, und nennt mich seine Brut.</p>
+          </sp>
+          <pb n="13"/>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Liebt dich Jenny aber nicht mehr als ihren Vater, ist sie so sehr seines Eigensinns
+              Unterthan.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Sie liebt mich Prospero, sie liebt mich, – so wie ihren Vater – aber die Bande der
+              Natur, diese so süsse Fesseln, – du kennst sie ja Prospero, sie ist das holdseligste,
+              liebenswürdigste, und mildeste Mädchen von der Welt, ein wenig zaghaft, weil sie ein
+              Mädchen ist. – Sie liebt ihren Vater, weil es die Natur will, und kann, und will ihm
+              nie zuwider thun, sie hält es für die größte Sünde ihn nur zu betrüben, und für das
+              abscheulichste Laster ihn zu hintergehen. – Und wird sie demnach auf sein Zureden, auf
+              seine ihr gemachte Vorstellungen, auf sein Bitten, und Drohen mich nicht vergessen,
+              und den wählen, durch Zwang wählen, den ihr unbesonnener Vater ihr aufdringt? – O
+              Gehorsam! was für ein Wesen bist du? Wie verkennen dich die meisten, du Mutter so
+              vielen Zwistes, Zankes, und Haders! – Du Gebärerinn so vieler Mord, und Todtschlägen!
+              – Du Quelle so vieler Unruhen, und Unglückes! – Wo hast du dein Edles gelassen? Wahrer
+              Gehorsam! – Wo bist du Gehorsam von dem Schöpfer in die Natur gegraben? – Du Vater der
+              Ordnung und Einigkeit! du Unterschied von Vater und Sohn! von Großen und Kleinen! von
+              König, und Unterthanen! du erste Pflicht der ganzen Natur gegen ihrem Schöpfer.</p>
+          </sp>
+        </div>
+        <pb n="14"/>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Valerio, die vorigen.</stage>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Willkommen meine Freunde – willkommen. Wie treff ich beyde schon so früh? doch was
+              frag ich; Ihr seyd ja Herzens Freunde, und die pippen stetts wie Leim zusammen. Aber
+              was fehlt dir Antonio, warum so finster, so schwarz, bin ich euch vielleicht zu viel?
+              sagt, – ich will gehen.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O nein bester Valerio, du bist uns gewiß von Herzen lieb.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Wenn das ist Antonio, so spare deine Runzeln auf deiner sonst heitern Stirne, bis die
+              Pflugschar der Zeit sie dir aufdringen wird, dann habe, – dann trage sie mit Ehren,
+              aber itzt sey munter, fröhlich, und heiter, wie der heutige Morgen. – Auch du Prospero
+              bist heute zu ernsthaft, sonst gewohnt unter Freunden anmuthig, und fein zu scherzen,
+              – gewiß – gewiß ist euch was quer in Wege gelaufen.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Nichts – fürwahr nichts. Daß ich etwas ernsthaft bin, ist Antonio Ursache, ich kam
+              her, er stand eben auf, war noch schlaftrunken, und da erbte ich so was ein Bischen
+              von ihm.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Und das ist er noch, dünkt mich. – So seyd ihr Leute, ihr bleibt so lang unter euerer
+                <pb n="15"/> Federbatterie, bis euch die Sonne herauszieht, wäret ihr so früh
+              aufgestanden, wie ich, die Sonne aufgehen sehen, gewiß eins der prächtigsten
+              Schauspielen der Natur, den alten Montroso besuchet, mit ihm ein gut Glas Wein
+              gefrühstücket, fürwahr ihr würdet munterer, fröhlicher seyn.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Den Montroso besuchet?</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Ja den Montroso.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Ohnweit der Pauluskirche?</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Eben den.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <stage>Voll Verwunderung.</stage>
+            <p>Wie kennst du ihn?</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Wie ich ihn kenne! – Wir sind ja sehr nahe Verwandte.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Mit Montroso sehr nahe Verwandte? – O so laß dich küssen <stage>(er küsset
+                ihn)</stage> Von nun an sollst du mir doppelt lieb seyn, du sollst, – du mußt mein
+              Busens Freund – mein Herzens Freund seyn; weil du auch der Verwandte, der Freund eines
+              Engels, einer Göttinn bist.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <stage>Erstaunt.</stage>
+            <p>Wen meynst du?</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Kannst du noch fragen? – meine Jenny! – die ich liebe! – anbethe! – mein anders ich!
+              –</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Deine Jenny? – die du liebst, anbethest? und heute mit Campo verlobet wird.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Verlobt mit Campo! heute! O Donnerwort in meinen Ohren, das alle Seligkeit
+              darniederschlägt, und allen Sturm, allen Schmerz, <pb n="16"/> und jede Verzweiflung
+              aufweckt. <stage>Er wirft sich in einen Sessel.</stage> – Ich bin verloren, auf ewig
+              verloren, – ich werde den Tag, die Stunde nicht erleben, wo du mir meyneidig, treulos
+              wirst. – <stage>Pause.</stage> Mir? Jenny meyneidig? – treulos? <stage>(aufspringend
+                zu Valerio)</stage> Du lügst Verdammter! du hintergehest mich! schwarze, schändliche
+              Lüge! – Verleumdung! – Gott!</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Ermanne dich – sey ein Mann. – Ich will dir alles sagen, alles entfalten, kein
+              Umstand, nicht der geringste, soll mir entschlüpfen, und reine Wahrheit sollst du
+              hören.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Nun ja! – Ich will den letzten Muth fassen, und alle Kräfte, alle Stärke aufbieten, –
+              mich ermannen, und dich hören, – jeden Umstand, auch den kleinsten, will ich von dir
+              erfahren, – jede Kleinigkeit sollst du mir erzählen, sie mag in deinem Sinne noch so
+              gering seyn, sie kann von größten Belange bey mir werden. – Aber keine Lüge! reine
+              lautere Wahrheit; sonst Valerio – dein Leben! – Nun wie kamst du heute so früh zu
+              Montroso?</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Gestern, da ich nach Hause gehen wollte, schien mir der Mond so schön, daß ich mich
+              nicht entschlüssen konnte, zu Bette zu gehen, denn es war die schönste Nacht, die ich
+              noch gesehen. – Eine Nacht, die die schönste Braut des Tages seyn konnte. – Ich
+              beschloß also die große Allee einigemal durchzugehen, – und ich gieng. – Da ich nun
+                <pb n="17"/> in diesen himmlischen Empfindungen einige Zeit lustwandelte, kam ein
+              Mensch auf mich zugelaufen, – und es war der Bediente des Montroso. – Ich suche sie
+              schon seit Achten, sagte er, denn es war eben schon Mitternacht – und konnte sie
+              nirgends treffen; Mein alter Herr läßt sich empfehlen, und sagen: sie möchten Morgens
+              mit der Sonne bey ihm seyn. Ich versprach ihms, und er gieng, – und ich sah mich noch
+              einmal um meinen Mond, und alle Sterne um, erinnerte mich meiner vorigen Lust, und
+              verließ den mir so angenehmen Schauplatz, kehrte nach Hause, legte mich, um
+              auszuruhen, müde von meiner Wanderung – auf einige Stunden zu Bette, und stand, wie
+              der Morgen zu dämmern begann, wieder auf, und da die Sonne noch hinter jenen Hügeln
+              war, gieng ich zu Montroso, und kam eben mit der Sonne dahin. – – Da ich in das Haus
+              trat, erstaunte ich, da ich alles wachend, alles lebend, alles beschäftigt antraf; den
+              alten Montroso auf der Treppe mit einer Flasche voll guten Weins in der Hand. – Da er
+              mich sah, schrie er aus vollem Halse: guten Morgen Vetter! guten Morgen! – Sie haben
+              Wort gehalten, bravo, wir wollen gleich zum Werke, im Garten muß es heute geschehen,
+              der Morgen ist zu schön.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Und ich, Valerio, habe ihn, in himmlischen Phantasieen verwebt, – verträumt, – diesen
+              so schönen Morgen. – Sage weiter.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Wir giengen in Garten, und er sagte, <pb n="18"/> wir würden ein Trio beym Frühstück
+              ausmachen, denn es käme noch Campo, und er wisse nicht, wo er so lang wegbliebe, er
+              wäre sonst pünctlich. – Kaum sagte er das, so erschien Campo, – Freude Munterkeit, und
+              Erwartung thronte auf seiner Stirne, er begrüßte mit einem Kuß den Alten, und dann
+              auch mich mit einer Verbeugung, aber ganz fremd. – Darauf sprach Montroso zu mir: hier
+              habe ich die Ehre ihnen einen Mann bekannt zu machen, der würdig ist meine Jenny zu
+              besitzen, und mein Schwiegersohn zu heißen, – und das soll er noch heute vor Tische, –
+              auch sie Vetter sollen dabey seyn, und mit Theil nehmen, dann wollen wir allzusammt
+              recht fröhlich, und aufgeraumt bey Tische ein wahres Bachanal halten.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Nun ist im Grabe Leben für mich! o Jenny! dich – dich Engel wollen sie mir
+              entreissen! die Barbaren! Gott! was wird aus mir werden? – Rede Valerio.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Ich erstaunte, da ich dieß hörte. Darauf wandte sich Montroso zu Campo, und sagte:
+              hier hab ich die Ehre ihnen meinen liebsten, und würdigsten Vettern den Valerio
+              vorzustellen. – Plauderte noch sehr vieles von meiner Freundschaft gegen ihn, von
+              seiner Verbündlichkeit gegen mich, und wir setzten uns zum Frühstück. – Campo wurd
+              gegen mich aufmerksam, so kalt er von Anfang war, und sagte mir sehr viel
+              verbündliches, worauf ich <pb n="19"/> ihm zurückgab: es wäre schon genug der
+              Schwiegersohn eines Montroso zu seyn, um ihn hochzuschätzen.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Ich vergehe!</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Weiters ward das Gespräch allgemein, man schwatzte von allen, wozu einer dem andern
+              Gelegenheit gab, und ich wurde gewahr, daß Campo ein ziemlich offener Junge sey, und
+              entweder mit dem Finger auf der Charte, oder selbst mit schnellem Flug die Welt
+              durchgereiset habe.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Sey stille Freund! sage mir nichts von ihm, das mindeste Lob von ihm. –</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Nichts weiter von ihm – nichts weiter. – Da wir nun so eine Zeit lang beysammen
+              sassen, und schwatzten, stund Campo auf, und sagte: er wolle den so schönen Garten ein
+              wenig durchgehen, und er gieng. – Nun war ich mit Montroso alleine, und wir füllten
+              unsere leeren Gläser noch einmal voll. Da sagte mir Montroso in einem vertrauten Tone,
+              wer Campo sey; Er ist, sagte er, der einzige Sohn eines reichen Kaufmanns aus den
+              sicilianischen Inseln, dessen Vermögen ohne Grenzen – ein Mann, auf dessen so nahe
+              Verwandtschaft, ich äußerst stolz bin, und der Heyrath wegen schickte er seinen Sohn
+              hieher, welcher meine Tochter liebt, wie er sie lieben soll, – nicht so voll von
+              schwärmerischen Träumen, von rasenden Unsinn, und Vergessen seiner selbst, wie die
+              meisten <pb n="20"/> unserer empfindsamen winselnden Stadtherrchen – er liebt sie mit
+              Vernunft ohne Leidenschaft.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O Jenny; er liebt dich nicht. Wer kann dich sehen, und den richtigen Gebrauch aller
+              seiner Sinne fodern!</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>In einem fürchterlichen Tone fuhr er fort mir zu vertrauen, daß Jenny den Campo nicht
+              lieben wolle, daß sie stets um Aufschub flehe, und daß er erfahren, ein Nichtswürdiger
+              habe ihre Neigung, ihr Herz geraubt, er wolle ja nicht hoffen, daß es so wäre, sonst
+              würde er sie mit aller Stärke, und Härte eines Vaters dazu nöthigen. – Sie habe zwar
+              schon vor langer Zeit für einen Taugenichts geglühet, lange bey ihm um den Unwürdigen
+              angehalten, aber die Ungerechtigkeit seines Vaters, sagte er, machte mein Ohr taub vor
+              den Bitten, und Flehen meiner Tochter.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Freund! dieser Unglückliche, dieser Taugenichts bin ich, – bins noch immer, weil ich
+              sie noch liebe, weil sie mich vielleicht noch liebt.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Eine ganze Legion von Flüchen, sprach er also über dich aus. – Ich will sie schon zu
+              meinem Tone stimmen, sagte er, die Unwürdige, durch Flüche, Härte, Zorn, rauhe Worte,
+              und Drohungen will ich sie schon harmonisch machen.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O schone Barbar! – Schone deines Kindes – meiner Jenny.</p>
+          </sp>
+          <pb n="21"/>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Hier traf Campo wieder zu uns, lobte den Garten, alle Bäume, Blumen, die kleinsten
+              Stäudchen, und sagte: daß er viel Geschmack in der Anlage verriethe, wo ich ihm
+              beystimmte, um das Gespräch zu unterhalten. – Darauf fieng der alte Montroso an, er
+              habe heute noch vieles zu bestellen, was die heutige Feyer nöthig hätte, und wir
+              giengen. – Beym Abschiede sagte er: Vetter ich sehe sie gewiß um die zwölfte Stunde!
+              sie sollen mit Zeuge der Verlobung seyn! – und von da kam ich zu dir.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Du! – Freund! zeuge meines Unglücks! – O so sey zuvor Zeuge meines Todes <stage>(er
+                greift nach den Degen, der auf den Tisch liegt, Valerio, Prospero stürzen auf ihn
+                hin, und entreissen ihm den Degen.)</stage></p>
+          </sp>
+          <sp who="#valerio #prospero">
+            <speaker>Valerio. Prospero.</speaker>
+            <p>Gott! Unsinniger! halte.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Ihr habt recht, ich halte. – Es wäre Unsinn, Sünde, ohne Abschied, ohne Lebewohl
+              meiner Jenny zu sagen, diese mir so enge Welt zu verlassen, und in das traurige,
+              schwarze Grab zu stürzen. – Ich muß sie zuvor sehen, – gleich sehen, sie sprechen
+                <stage>(er schält hastig den Bedienten)</stage> und wenn es mein, – dein – sein –
+              oder euer Leben kosten sollte! <stage>Johann kömmt</stage> Mein Kleid Johann,
+              geschwind alter, redlicher.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Bedenke die Gefahr, in die du dich wagst.</p>
+          </sp>
+          <pb n="22"/>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Bleib, wag es nicht, ich will zu deiner Jenny, und alles befolgen, was du mir
+              aufträgst <stage>Johann kömmt, Antonio zieht das Kleid an.</stage></p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Geschwind Johann. – Ich muß sie sehen, sie sprechen, vielleicht das letztemal. –
+              Alles will ich unternehmen, alles mit Gefahr meines Lebens selbst wagen, bis ich
+              entweder glücklicher als itzt, oder völlig unglücklich – hin – und nicht mehr –
+                <stage>den Hut nehmend, und nach dem Degen greifend, den Valerio ihm nicht geben
+                will.</stage> Meinen Degen!</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Bey Gott nimmermehr!</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Fürchtet nichts! bey meiner Ehre, die mir stets heilig war, bey Gott! ihr habt nichts
+              zu fürchten.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Wohl denn; hier ist er. Aber wohin bester Antonio?</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Zu meiner Jenny, ich hole mir Leben.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Wir wollen dich begleiten, und bevor die große Allee ein paarmal durchgehen,
+              vielleicht verfällt Valerio auf List.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Ja vielleicht ist noch Rettung möglich, vielleicht geräthst du auf andere Gedanken,
+              vielleicht –</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O zermalme durch dein verfluchtes vielleicht das ohnehin schon zermalmte – sage gewiß
+              ich bin gerettet, gewiß ich besitze meine Jenny, und das wird göttliche Musik für mein
+              dumpfklingendes Ohr seyn. <stage>Alle ab.</stage></p>
+          </sp>
+        </div>
+      </div>
+      <pb n="23"/>
+      <div type="act">
+        <head>Zweyter Aufzug.</head>
+        <stage>Das Zimmer der Jenny.</stage>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>Jenny und Hannach aus dem Cabinete trettend.</stage>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Sie schliefen sehr unruhig heute Nacht, Gnädiges Fräulein, ich hörte sie oft munter
+              und seufzen.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Du hast recht Hannach, böse, schwarze, fürchterliche Träume warens, die mich
+              beunruhigten; denn bald träumte mir: ich sähe meine Mutter, ein blasses Bild, jenem,
+              das in meines Vaters Zimmer hängt – ganz ungleich, in der schmerzlichsten Stellung,
+              und auf mich mit dem Finger drohend; – bald war mir's, ich stund auf einem hohen Fels,
+              – wo Bachus sein Spiel mit den Libanten hielte, – und stürzte voll Eckel gegen dieses
+              Spiel von diesem Fels in eine unermeßliche Tiefe, die mich verschlang, und dann, dieß
+              war das letzte, – traumte mir, Campo und Antonio wären miteinander in Zweykampf
+              gerathen, und Antonios Leben stunde in Gefahr, ich, dessen Auge diese fürchterliche
+                <pb n="24"/> Scene nicht aushalten konnte, weil ich ein Mädchen bin, und Anspruch
+              auf Zagheit habe, ich, – sprang hin beyde entweder zu Freunden zu machen, oder allen
+              Mord zu verhindern, und Antonio in der Hitze in den flammenden Grimm, durchbohrte mich
+              unerkannt statt seines Feindes, weil ich ihm vor die Spitze kam. – O Hannach – ich
+              fühlte noch, da ich erwachte diesen Stich, ich war unwillig, daß es nur ein Traum, ein
+              Nachtgesicht war, denn es war mir nicht anders, als es käme mit dem Stoß eine
+              Gottheit, die mich all meines Schmerzens, all meiner Qual, Pein, und Verzweiflung
+              entrissen hätte, und sicher an ihrer Hand geleitet, mich an jenen Ort gebracht, wovon
+              die Dichter so viel schönes zu sagen wissen, – ich meine in's Elisium.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Seyn sie ruhig mein Fräulein, Träume sind von keiner Bedeutung, denn sie verfliegen
+              bald.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Gutes Mädchen, sie haben auch oft die Stelle der Propheten ersetzet. – O Hannach!
+              mein Herz ahndet traurige Scenen, mir ist alles zu enge, zu klein – es drückt mich
+              alles.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Was ängstigt sie so mein Fräulein, sagen sie <stage>(Jenny sieht auf Hannach –
+                Hannach kläglich)</stage> hab ich nicht mehr ihr Zutrauen verdient? theilten sie
+              nicht immer alle Freude mit mir, wollen sie den Kummer alleine tragen.</p>
+          </sp>
+          <pb n="25"/>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Bestes Mädchen, – laß mir ihn – er ist meine Freude, er naht mich reiner wahrer
+              Glückseligkeit.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <stage>Kläglicher</stage>
+            <p>So hab ich ihr Zutrauen verloren.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Nein Hannach, das gewiß nicht, – ich weiß ja, daß alles in deinen Herzen
+              eingeklammert wird, was ich dir antraue.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Und?</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Ich will dir alles entdecken, alles sagen, was mich drückt, ach! was mich auch dir
+              entreissen wird; – der heutige Tag Hannach, der ist Hölle für mich, der wird mich wie
+              ein Donner schwanger von mächtigen Blitzen dahin stürzen. – Er entreißt mich meinem
+              Antonio, – Gott! – was wirst du sagen Antonio? Du wirst mich meyneidig, treulos
+              nennen, mir fluchen, mich verwünschen, weil du mich liebst; – und ich doch unschuldig.
+              – Was kann das unschuldige Lamm dafür, daß es der Wolf seinem Eigenthümer raubt; – was
+              die zärtliche Täubinn, wann – hangend am Halse ihres zärtlich girrenden Gatten – auf
+              sie der Habicht hoch aus den Wolken herunter stürzt, und sie ihm entreißt. – Er wird
+              ihr durch alle Lüfte mit kläglichem Gegirre nacheilen, aber umsonst erreicht er den
+              hohen Flug des Raubers, er sucht sie vergebens wieder zu sehen. – findet nichts –
+              sieht nichts. – Auf einmal erblickt er ihr so schön mannigfältigfärbiges <pb n="26"/>
+              Gewand die Luft durchsegeln, er eilt voll Freude darauf los, – aber – da er näher kam,
+              sah er, daß es mit Blut, – mit heißen Blut gefärbet sey. Himmel! – Da eilt er voll
+              Traurigkeit, voll Schmerz nach seiner Heymat, schwört ihr ein ewig traurendes
+              Andenken, und verseufzt von Kummer aufgezehrt seine wenige Tage. – Du warst aufmerksam
+              auf mein Geschwätze Beste, nicht wahr? Der Kummer ist stets beredt, wie ein Redner,
+              und findet leicht Bilder, die ihm nahe, – gleich kommen.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Sie sagen Antonio würde sie verfluchen, verwünschen – das gewiß nicht, er wird die
+              Nase ein wenig krümmen, mit dem Kopf wackeln, sagen: holl sie der Teufel, und
+              vergessen.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Bey Gott nein; sage dieß nicht noch einmal Hannach, sonst müßt ich dich hassen. – Er
+              ist nicht einer von den gemeinen Liebhabern, die nur ihre Leidenschaften sättigen
+              wollen, wie Campo, der würde es vielleicht so thun. – Aber Antonio liebt mich so voll,
+              so warm, daß er gewiß meinen Verlust nicht so gleichgiltig ertragen wird, und wie, –
+              wo soll ich den seinigen ertragen? – Im Grabe, in dumpfen Grabe da – da werd ich ihn
+              Hannach ertragen.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Auch mich hat ein Unverschämter durch goldene Worte, und süsse Gebehrden
+              hintergangen, da ihre gottselige Mama noch lebte; sie haben ihn wohl auch als noch ein
+              kleines Fräulein gesehen, <pb n="27"/> sind gar oft voll Freude, und lauteren
+              Vergnügen um uns herumgehüpft, und schenkten gar oft dem Unwürdigen ein frohes
+              Lächeln, besonders da er ihnen die Hand küßte.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>O Hannach! sey stille, – erinnere mich nicht jener Zeit, da ich alle Lust, alle
+              Wonne, alle Seligkeit in ihrer ganzen reinen Fülle genoß. – Es ist wahr; wann ich in
+              den Spiegel meiner ersten verträumten Jahre zurück sehe, und da erblicke mit was für
+              Freude, Ruhe, ungekünstellten Vergnügen ich in den Cirkel meiner Gespielinnen
+              herumsprang, sie vor gleiche glückliche Geschöpfe ansah; mich mit ihnen, und unsern
+              Puppen unterhielt, und wir keinen Haß, keinen Groll, kein Böses kannten, und wenn mein
+              Vater müd von seinen Geschäften ein hartes Wort auf mich warf, ich zu meiner Mutter
+              eilte, mich in ihren Schoß verbarg, um den rauhen Ton dieser Worte nicht zu hören,
+              Hannach –! O da erinnere ich mich noch all der Seligkeit, die ich in vollem Maaße
+              genoß, all der Seelens Ruhe, all des innig gehabten Vergnügens. – Und itzt da ich
+              denke, daß alle diese Seligkeit, alle Wonne, all Vergnügen nur Stärkungen für mein
+              itziges Elend, und Leiden waren, damit ich länger leiden, länger sie tragen müsse, und
+              daß meine Mutter nicht mehr sey, in derer Schoß ich mich sonst verbarg. – Da Hannach,
+              da denke ich – hätte ich diese Seligkeit, diese Ruhe der Seele, dieses Vergnügen nie
+              genossen – nie gehabt – nie –</p>
+          </sp>
+          <pb n="28"/>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Gedenken sie nicht so sehr mein Fräulein der vergangenen Glückseligkeit nach, ihre
+              Erinnerung macht den Unglücklichen nur noch mehr unglücklich.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Du hast recht holdes Mädchen. – Wenn ich mich der Zeit, der Stunde erinnere, wo ich
+              zum erstenmal dem Antonio meine Liebe schenkte, Gott! wie viel Seligkeiten? – tausend
+              Seligkeiten lagen damals in mir! Alle Kraft, alle Macht, alle Stärke fühlte ich von
+              Seligkeit angeschwollen. – Und itzt – itzt ist es diese Seligkeit, die mein Elend,
+              meinen Kummer, meinen Untergang ausmacht.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Beruhigen sie sich mein Fräulein, sonst würde ihre blasse Wange, ihr hohles Auge, ihr
+              tödtender Blick alles verrathen, allen ihren Haß gegen Campo, und ihre so brennende
+              Neigung gegen Antonio.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Das sollen sie – diese Wangen, blaß, wie das Bild meiner Mutter, das ich diese Nacht
+              sah, so blaß sollen sie seyn; – mein Auge so tief, wie der Abgrund, in den ich im
+              Traume fiel, und mein Blick so tödtend, wie die Spitze des Antonio in meiner Seite.
+              Aber die Erscheinung, die Wonne, die ich fühlte bey dem Stoß, die, Hannach, die sollen
+              sie nicht fühlen. – Sehen sollen sie, – wissen sollen sie, daß sie meinen Kummer, mein
+              Elend, meine Verzweiflung ausmachen – daß sie mich tödten! – Ist mein Vater schon
+              lange aufgestanden?</p>
+          </sp>
+          <pb n="29"/>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>O das ganze Haus ist schon seit vier Uhr in Bewegung, in der Küche ist so ein Lärm,
+              und Geschwätz, wie in der Werkstätte des Neptuns.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Gutes Mädchen, du willst sagen, wie in der Werkstätte des Vulkans. – Neptun ist Gott
+              des Meers, der allen denen, die sich darauf wagen, mit seinem furchtbaren Dreyzack
+              Angst und Schrecken verursachet.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Ich bin freylich nicht so erfahren, wie sie, mein Fräulein, in der Götterlehre.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Still Hannach, ich höre Jemanden die Treppe herauf kommen, geh, sieh, wer es ist
+                <stage>(Hannach geht zur Thür hinaus.)</stage> gewiß ist es mein Vater, ich fürchte
+              seinen Zorn, seine Befehle; <stage>(Hannach kehrt ganz verwirrt zurück.)</stage> Was
+              ist Hannach?</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Gott! Antonio eilt herauf, es will ihn jemand zurückhalten, aber er läßt sich
+              nicht.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <stage>Auf die Thüre zueilend, Antonio ihr entgegen kommend, und sie ihm ohnmächtig in
+              die Arme fallend.</stage>
+          </sp>
+          <spGrp>
+            <sp who="#antonio">
+              <speaker>Antonio.</speaker>
+              <p>Jenny!</p>
+            </sp>
+            <sp who="#jenny">
+              <speaker>Jenny.</speaker>
+              <p>Antonio!</p>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Antonio, die Vorigen.</stage>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O Engel des Himmels! in deinen Augen les ich mein künftiges Schicksal. – Hülfe
+              Hannach! Hülfe! sie ist verloren. <stage>Antonio und Hannach führen Jenny in einen
+                Sessel.</stage></p>
+          </sp>
+          <pb n="30"/>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Gott! mein Fräulein!</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Lauf Hannach, hole Hülfe, Wasser! <stage>Hannach lauft ab.</stage> – O Jenny! Jenny!
+              höre deinen Antonio, der dich bis zum Verbrechen liebt; Jenny! Jenny!</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <stage>Zu sich kommend.</stage>
+            <p>Welch eine Stimme, dessen Ton mir all mein Leben wiedergiebt. <stage>Den Antonio
+                erblickend.</stage> Ha Antonio! Antonio! Nur dein Namen, deine Stimme konnte meine
+              schon scheidende Seele aufhalten. – Gott! Wie kamst du hieher? zu deiner Jenny? – Wie
+              konntest du das wagen?</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Um deinetwillen Jenny; – um deinetwillen, und hätte es mir mein Leben kosten sollen.
+              – Ich sollte dich verlieren, ohne Abschied, ohne Lebewohl dir zu sagen? Nein Jenny,
+              das konnte ich nicht, weil ich dich noch liebe, obschon das Eigenthum eines andern zu
+              lieben, ein Verbrechen ist.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Ich? – Das Eigenthum eines andern? Gott nimmermehr, – nimmermehr! Wer kann mich dir
+              entreißen? Wer kann die junge Knospe von dem Stamme brechen, ohne daß sie im kurzen
+              verwelke? – Wer kann mir das Herz aus dem Leibe reissen, um mir Leben zu geben?
+                <stage>Hannach kömmt.</stage></p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Hier Wasser! – Ist ihnen schon besser mein Fräulein? – Haben sie sich schon völlig
+              erholt?</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Gute Hannach, du brachtest mir Wasser zur Hülfe, und die Hülfe stand mir zur Seite.
+                <pb n="31"/> Aber ich danke dir Mädchen, du wolltest mir doch helfen.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Gewiß mein Fräulein, und wär es mit meinem Leben. – Ihr Papa stand unten, da ich das
+              Wasser holte, und fragte mich: ist sie schon aufgestanden? geh, sag ihr, sie soll sich
+              ein wenig ankleiden, ich werde bald hinauf kommen, und ihr einen Gast mitbringen.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Gott! – Mein Vater heraufkommen! und gewiß mit Campo, und – dich Antonio, dich hier
+              treffen. – Da sind wir beyde verloren, du wärst gewiß das blutige Opfer seiner Rache,
+              seines brennenden Grimms. – Hannach! beste Hannach! liebstes Mädchen, geh, ich bitte
+              dich, – geh, und beobachte meinen Vater, und wenn er kommen sollte, so gieb uns
+              Nachricht. – Geh gutes Mädchen, geh, sey die Wache meines Glückes. –</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <stage>Gehend.</stage>
+            <p>O könnte ich es ewig bewachen, und ewig ein Zeuge davon seyn.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Nun Jenny, nun sind wir alleine beysammen, vereinigt, und im kurzen nicht mehr. –
+              Nimmermehr werd ich so selige Augenblicke genüssen, – nimmermehr mit so viel Wonne,
+              reinem Vergnügen, und lauterer Glückseligkeit an deiner Seite stehen, dir die Hand
+              küssen, und Liebe, wo ein Stral des Schmerzens hineinblitzt, in deinen Augen lesen. –
+              Der heutige Tag, Jenny, der entreißt dich mir; – Gott! Der wird mich auch tödten.</p>
+          </sp>
+          <pb n="32"/>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Und mich hat er schon halb zum finstern Grabe gebracht. – Antonio! Antonio! Nur bey
+              dir find ich Leben, nur an deiner Seite ist alle Seligkeit für mich, – und fern von
+              dir ist überall Tod – überall finster, ja ein Thron, der auf den Besitz der ganzen
+              Welt gepflanzet wäre, – wäre ohne dich Antonio ein Grab, – ein dumpfes Grab für
+              mich.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O Geschöpf! holdes Geschöpf für eine ganz andere Welt geschaffen, durch was – durch
+              welch ein Verdienst habe ich deine Liebe so verdient. – O Jenny! Ich werde die Stunde
+              nicht erleben, in welcher du durch Zwang, und harte Worte dem Nichtswürdigen, der dich
+              mir entreißt, die Hand reichen wirst, die Hand, die ich so oft an meine Lippen
+              gedrückt, und selbe entflammten.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Himmel! woher weißt du alles?</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Das Gerücht, – das Gerücht hat es mit tausend tödtenden Zungen um mich verbreitet. –
+              Schon Prospero kam in der Frühe zu mir mit trauriger Nachricht, da ich eben von einem
+              Traume aufgestanden, wo ich in deinen Armen lag, und der Glücklichste der Sterblichen
+              gewesen – der sagte: dein Vater wäre gestern zu Castro gekommen, da ich eben nur weg
+              war, dir was in's Ohr geraunt, und darauf hättest du dem Campo vertraut
+              zugelächelt.</p>
+          </sp>
+          <pb n="33"/>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Ja es war ein Lächeln, so ein Lächeln, wie der Wanderer die Schlange anlächelt, die
+              ihm in Wege liegt, und ihn durch ihren doppelten Biß zu tödten sucht. – Mein Vater
+              geboth es mir zwar mit harten Worten: lächle ihm zu, zeuge ihm, daß du ihn liebst, –
+              und da war ich das erstemal ungehorsam. – Welche Verbrechen!</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Um meinetwillen also vergaßest du zum erstenmal diese dir so heilige Pflicht. – Nein
+              Jenny du bist noch rein, kein Verbrechen, nicht das geringste schwärzt deine so reine
+              Tugend. Du warst nicht ungehorsam, denn hier wäre Gehorchen zum Verbrechen worden,
+              weil dieß eigensinnige harte Gesetz, meine Ruhe, deine Ruhe, mein, und vielleicht dein
+              Leben gekostet hätte.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Gewiß Antonio, es hätte mein Leben gekostet – meine Ruhe war ohnehin schon verloren,
+              und – es wird es vielleicht noch kosten.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Bey Gott! Nein! Das soll nicht geschehen, meine Jenny soll leben, muß leben, wer
+              würde sonst den unglücklichen Antonio, dem die Welt ohne seine Jenny zu öde, zu enge
+              war, und nichts kannte, als sie, – wann er von dem Verlust seiner Jenny aufgezehrt,
+              todt, – hingestreckt – blaß als eine Speise träger Motten den Boden zieren wird, – wer
+              würde für den Unruhigen, der für die letzten Augenblicke seines Lebens keine größere
+              Seligkeit kannte, als an deiner Seite zu seyn, – <pb n="34"/> wer für ihn und sein
+              Schicksal eine mitleidige Thräne fallen lassen, und ihn ins kühle Grab begleiten? –
+              Wenn du Jenny, du meine Wonne, mein Leben, mein anderes ich dahin wär'st.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Wie verkennst du deine Jenny! – Bey der Nachricht, daß du nicht mehr sey'st, würde
+              sie, das gute Mädchen todt zu Boden fallen, sich im Tode wälzend deinen Namen Antonio
+              ohne Aufhören lallen, und deiner großen Seele mit schnellem Fluge nacheilen.
+                <stage>Nach einem Stillschweigen:</stage> Komm Antonio! Ehe das geschehen soll, will
+              ich, – will mit dir zu den Freunden der Todten eilen, sie bitten, damit sie die Erde
+              für uns wühlen, und sie nicht eher schlüssen, bis wir mit ineinander geschlungenen
+              Händen an unsern Lippen hangend da liegen. Dann sollen sie die kalte Erde auf uns
+              werfen, und unsere Seelen in dieser Stellung vor dem Allliebenden erscheinen.
+                <stage>Hannach kömmt.</stage></p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Eilen sie bester Antonio, – eilen sie, der alte Herr wird gleich da seyn.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Nun soll ich Abschied nehmen von dir – mich trennen von meinem Selbst – Jenny!
+              Abgerissen von dir, werd ich wie, die Knospe gerissen von Stamme, – welk da liegen. –
+              Dich nimmer sehen – nimmer in deinen Armen liegen. Itzt dein! – Du Jenny mein! – und
+              in kurzen, geschieden, getrennt, abgerissen, hin – und todt. – Doch Jenny der Schmerz
+              hat wenig Worte. Lebe <pb n="35"/> wohl Beste! – Engel des Himmels lebe wohl! – Gott
+              gebe dir all die guten Tage, all' die Seligkeiten, die er mir abzieht. – Zum
+              letztenmale denn, – zum letztenmale küsse ich deine wohlthätige Hand, – die Hand, die
+              mir so viel Seligkeit zuwarf. – Lebe wohl! – Jenny! <stage>er will gehen, und Jenny
+                halt ihn in dem Ausdruck des höchsten Schmerzens zurück.</stage></p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Bleibe Antonio, bleibe, ich will mit dir Geliebter, dir folgen, überall an deiner
+              Seite seyn. – Was ist ein Körper ohne Seele? – bleib Antonio, verlasse nicht deine
+              unglückliche Jenny.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Gott! ich vergehe, ich fühle es, daß ich mich meinem Ende nahe! – Jenny! Jenny! ich
+              muß scheiden, sonst mach ich dich noch unglücklicher. – Lebe wohl Geliebte! – Lebe
+              wohl meine Wonne, meine Seligkeit. – Ich sehe dich wieder – wieder Jenny. – Lebe wohl
+              – das übrige sage dir all mein tiefer Schmerz. <stage>Er kömmt los, und geht, Jenny
+                von Schmerz trunken, wird endlich gewahr, daß Antonio geht.</stage></p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <stage>nacheilend.</stage>
+            <p>Antonio! Antonio! rette deine Jenny!</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <stage>zurückkehrend, und ihr in die Arme fallend.</stage>
+            <p>Mit meinem Leben Jenny, das ohnehin dein gehört! – Gott! siehe unter dir, und schicke
+              Trost den Elenden.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Eilen sie mein Herr, eilen sie. Er wird gleich da seyn.</p>
+          </sp>
+          <pb n="36"/>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Lebewohl Geliebte! – Um deinet – um meinet Willen laß mich. Wir sehen uns wieder, und
+              bald.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <stage>Mit Lächeln der Verzweiflung.</stage>
+            <p>Nun ja bald – bald soll ich dich wieder sehen, bald um dich herum schweben, bald! –
+              bald Antonio.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Lebe wohl! auf ewig Jenny! tausend Segen über dich. <stage>eilt ab.</stage></p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Antonio! Antonio! – Gott! er ist fort, – verlassen seine Jenny. Antonio! Antonio! o!
+              er will mich nicht mehr hören.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Seyn sie ruhig mein Fräulein, um ihres Antonio Willen bitt ich sie, seyn sie ruhig;
+              ihr Papa wird gleich da seyn, ich hör ihn kommen.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Um meines Antonio Willen? – nun ja Mädchen, da kannst du ja alles erhalten.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Montroso, Campo, die Vorigen.</stage>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <stage>hereintrettend.</stage>
+            <p>Kommen sie Herr Schwiegersohn, kommen sie. – Guten Morgen meine Tochter – guten
+              Morgen. <stage>Jenny, und Hannach küssen ihm die Hand.</stage> Hier bring ich dir
+              einen Gast der heute die Glückseligkeit deines ganzen Lebens festsetzen wird.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <stage>der Jenny die Hand küssend.</stage>
+            <p>Sie vergeben Signor. – Durch den Besitz ihrer liebenswürdigsten Tochter, meiner Jenny
+              nähere – ja besitze <pb n="37"/> ich all die Glückseligkeit, die je Sterblichen
+              gegönnet ist. – O Jenny! könnte ich sie nur auch durch meine Liebe, durch meine so
+              heftige Neigung gegen sie, durch meinen Besitz glücklich machen. – Ja Jenny sie sollen
+              – sie müssen über mich gebiethen, befehlen, und ich will sie stetts als eine Göttinn
+              verehren, anbeten, und ewig ihr Sklave seyn.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Nicht so niedrig mein Herr, sie vergessen was sie sind. – Männer müssen nie Sklaven
+              der Weiber werden, und das Weib erniedrigt sich selbst, das ihren Mann beherrschen
+              will.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Gut meine Tochter! – das ist noch so eine Lehre, die dir deine Mutter oft, noch als
+              ein kleines Mädchen zugeschrien, und die sie stets befolgte, denn sie ließ sich stets
+              beherrschen, und herrschte nie.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>O wär es mir nur vergönnt gewesen, ihre Mama, liebste Jenny, gekannt zu haben.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Bey Gott, wünschen sie das nicht, daß sie sie gekannt hätten, und heute noch athme, –
+              sonst –</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Warum meine Tochter, gewiß, sie würde den stärksten Antheil an unserer heutigen
+              Feyer, und deinem Glücke nehmen.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>Und ich würde heute an diesen Freuden Tag nicht nur eine zärtliche Gattinn, sondern
+              auch die beste, und liebenswürdigste Schwiegermutter erhalten.</p>
+          </sp>
+          <pb n="38"/>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Beydes werden sie auch noch heute; denn meine Jenny gleicht ihrer Mutter völlig am
+              Geiste so wohl als an Gestalt, und so empfangen sie von mir eine Gattinn, und
+              Schwiegermutter.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>O lassen sie mich ihre Hand, – ihre väterliche Hand küssen, die mir so viel Seligkeit
+              reicht; <stage>zu Jenny</stage> und auch die ihrige, die mich mit aller Seligkeit
+              sättigt.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Was fehlt dir Mädchen? Du zitterst, siehst blaß wie der Tod, ich wollte schon eher
+              fragen – alle Reize entflohen deinen sonst so sanft erröthenden, und gefährlichen
+              Wangen, – du bist völlig entstellt, sag, was fehlt dir? – Ist dir was meine
+              Tochter?</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Nichts mein Vater, nichts.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>Lassen sie Signor, lassen sie. – Das ist die gefährlichste Lage der Mädchen für uns,
+              – sie gewinnen stets dabey, machen stets Niederlagen, sind stets Ulisses, und Fingal
+              Sieger mit Lorbern gekrönt.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Das Fräulein war heute Nacht stets munter, und unruhig.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Sag warum; ihr Mädchen seyd ja stets bey solchen Fräulein die geheimen Sekretairs
+              ihrer Herzen.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Sie klagt über alles.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Sag Jenny; ich habe vortrefliche Arzneyen. – Wo fehlts dir, im Kopfe, oder im
+              Magen?</p>
+          </sp>
+          <pb n="39"/>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Etwas höher, gnädiger Herr.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Nun gut, dem ist bald geholfen. Gutes Mädchen, du mußtest so viel dulden, – dein
+              Schweigen ist Ursache, – Ich habe in meinem Keller einen Wein, den dein Urvater schon
+              gepflanzet, der bringt alles wieder in Ordnung, was in Magen, und außer ihm in
+              Unordnung gerathen ist.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Der ist nur für Männer Arzney, aber uns, uns Mädchen würde er vielleicht gar tödten.
+                <stage>vor sich</stage> Und wenn ich das wüßte. <stage>laut</stage> Ich habe zwar
+              vor Zeiten einen Arzt von einer Arzney sprechen hören, die allen Schmerz auch den
+              größten, jede Krankheit unter was immer für Namen heile, und zugleich die Thüre zur
+              wahren, reinen, lauteren, und ununterbrochenen Glückseligkeit öfne. – Nach dieser
+              Arzney mein Vater verlangt es ihre Tochter, die würde sie heilen, und jeden
+              entschlafenen Reiz, auch den geringsten wieder aufwecken.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Närrisches Mädchen, nach dieser würdest du nicht alleine verlangen.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Wenn ich mich recht entsinne, so hieß ers Arsenicum.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Gott! das ist das tödtlichste Gift, meine Tochter.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Gift? – Das tödtlichste? – Nun so hab ich eben nicht so sehr geirrt mein Vater: denn
+              auch Gift kann zur Arzney werden. <stage>Es kömmt Lucio.</stage></p>
+          </sp>
+          <pb n="40"/>
+          <sp who="#lucio">
+            <speaker>Lucio.</speaker>
+            <stage>Zu Campo.</stage>
+            <p>Gnädiger Herr, ihr Diener ist draußen, und wollt sie gerne sprechen.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>Ich komme gleich. <stage>Lucio ab, zu Montroso.</stage> Signor, sie vergeben, daß ich
+              mich auf eine kurze Zeit entferne, der Mittag kömmt schon nahe, und ich muß mich zu
+              der heut bestimmten Feyer ein wenig bereiten.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Ich hoffe sie also in wenig Stunden wieder zu sehen.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>In einer Signor, in einer.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Ich erwarte sie schon itzt mit Freuden.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <stage>Der Jenny die Hand küßend.</stage>
+            <p>Sie erlauben mir zum Abschiede ihre Hand zu küssen, die im kurzen mein Glück und
+              Wonne ausmachen wird.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Sie vergeben ihrer Jenny itzt frühe, sie werden sie schon besser bekleidet
+              treffen.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>Welch ein Kleid? – welche Pracht, welcher Putz kann meiner Jenny mehr Reiz, mehr
+              Anziehendes geben, als das Kleid der Unschuld, in welchem ich sie stets treffe.
+                <stage>Geht ab.</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <stage>Montroso, Jenny, Hannach.</stage>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Nun sage deinem Vater Jenny, was in deinem Herzen vorgegangen, ich weis, es fehlt dir
+              da, aber vor Campo wollt ich es nicht ahnden. – Rede.</p>
+          </sp>
+          <pb n="41"/>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Nichts mein Vater. Ich bin ruhig, mein Herz ist ruhig.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Ruhig, – Wie ein Wanderer dem Rauber seine letzte Nahrung raubten. – Ha Mädchen! ich
+              wollte nicht, daß meine Ahndungen auf Wahrheit gegründet wären, bey Gott! Der heutige
+              Tag! – Der –</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <stage>sich ihrem Vater zu Füssen werfend.</stage>
+            <p>Vergeben sie mein Vater, vergeben sie ihrer Tochter. – Eine Bitte! Eine Bitte! von
+              ihrer Jenny, – von ihrer unglücklichen Jenny.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Bey Gott! – Nichts!</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Die letzte, die letzte mein Vater.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>So rede Ungehorsame!</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>O nennen sie mich nicht so, ich will gehorchen, ich gehorche. Aber mein Vater eine
+              Bitte.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Nun!</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Aufschub der Trauung mein Vater; um damit sich das unglückliche Mädchen ein wenig
+              erholen könnte. – Heute die Verlobung, Morgen die Trauung, das würde sie nicht
+              ertragen, nur einige Tage mein Vater, und dann alles nach ihrem Willen.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Nimmermehr Eigensinnige! – Morgen – Morgen soll alles vollzohen seyn.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Gott!</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Ha! wie wahr ist alles, was ich ahnde; – und solltest du heute durch dein blasses
+              Gesicht, <pb n="42"/> durch deinen Eigensinn diese heutige Feyer hemmen, dann – dann
+              soll aller Segen deiner Mutter sich in Verwünschungen, und Flüche, verwandeln, und
+              dein Vater Flüche, – die den Himmel stehend machen, und die Todten aus ihren Gräbern
+              hervorruffen, auf dich werfen.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <stage>Ihren Vater haltend.</stage>
+            <p>Gott! mein Vater!</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <stage>Sich losreißend.</stage>
+            <p>Fort Ungehorsame, Eigensinnige! – Fort Elende. <stage>eilt ab.</stage></p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <stage>noch kniend.</stage>
+            <p>Mein Vater! mein Vater!</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Stehen sie auf mein Fräulein, beruhigen sie sich.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <stage>aufstehend.</stage>
+            <p>Gott! – Hannach! – Mein Vater! – Wie hart Hannach.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Seyn sie ruhig mein Fräulein, kommen sie in ihr Schlafgemach, ich will sie
+              ankleiden.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Ja Hannach, so ein Kleid, in welchem die Todten gerne erscheinen, so ein's Hannach, –
+              so ein's. <stage>gehen ab.</stage></p>
+          </sp>
+        </div>
+      </div>
+      <pb n="43"/>
+      <div type="act">
+        <head>Dritter Aufzug.</head>
+        <stage>Ein Zimmer in Montrosos Hause.</stage>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <sp who="#lucio">
+            <speaker>Lucio</speaker>
+            <stage>alleine.</stage>
+            <p>Das arme Fräulein Jenny! sie sieht ganz blaß, ganz Kummervoll aus. Es ist freylich
+              eine harte Sache, den zu verlassen, auf ewig zu verlassen, den man liebt. – Ich werde
+              ihr wohl in kurzen gleichen, wann ich meine Hannach verliehren sollte. – Nein Hannach!
+              – Ich folge dir mit meinen schon ziemlich alten Knochen in alle Welt.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Hannach und Lucio.</stage>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Ach Lucio! tref ich ihn hier, das ganze Haus gieng ich seinetwegen durch.</p>
+          </sp>
+          <sp who="#lucio">
+            <speaker>Lucio.</speaker>
+            <p>Ich danke ihr Hannach, wenn es meinetwegen geschah. Ich werde sie wohl in kurzen
+              länger suchen, das ganze Haus wie ein Unsinniger durchlaufen, und doch nicht die
+              geringste Hofnung finden sie wieder zu sehen.</p>
+          </sp>
+          <pb n="44"/>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Wienach Lucio? Red' er!</p>
+          </sp>
+          <sp who="#lucio">
+            <speaker>Lucio.</speaker>
+            <p>Campo kam itzt eilends zu dem alten Herrn, und sagte, er habe einen Brief von seinem
+              Vater erhalten, worinnen er schreibe, er solle gleich nach der Trauung auf das
+              schleinigste nacher Hause kehren, die Ursache wäre dringend, und leide keinen
+              Aufschub. – Sie sprachen noch sehr vieles, das ich nicht vernehmen konnte, und da
+              Campo weg gieng, so brummte der alte Herr, da er von der Begleitung zurückkehrte, was
+              mit sich selbst, und ich konnte nichts verstehen, als: Hannach muß mit ihr, alleine
+              kann sie nicht. – Nun Hannach kann sie denken, wie schwer diese Worte auf meine Seele
+              fielen, es war mir nicht anders, als durchbohrte mich ein Blitz! – Ich verlor alle
+              meine Gegenwart, wollte gehen, und konnte die Thüre nicht treffen, bis mich der alte
+              Herr mit seinen Flüchen zurückbrachte.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Aber wohin, bester Lucio?</p>
+          </sp>
+          <sp who="#lucio">
+            <speaker>Lucio.</speaker>
+            <p>Wohin anders? Als mit Campo, und seiner jungen Frau ihrem Fräulein übers Meer zu
+              seinem Vater, und wo ist da Hofnung sie wieder zu sehen? Wo werden sie, wann ich ihr
+              auch nacheilen wollte – meine alte Knochen aufsuchen, und sie Kleinod wieder finden? –
+              Und Hannach ist sie auch gewiß, daß sie all den Gefahren, und Klippen entgehet, die
+              ihr drohen, wie viel tausende verschlung schon der unersättliche Rachen des Meers, <pb
+                n="45"/> wann er von Fieber Anfällen seinen Rücken zu schütteln begann. – Und ich
+              Hannach – ich werde meinen Untergang – wann sie nicht mehr ist – gewiß nicht
+              entgehen.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Nein dazu kömmt es nimmermehr, denn obschon ich mein armes unglückliches Fräulein
+              recht sehr liebe, so ist es doch nur so eine Liebe, die ein Knecht seinem Herrn
+              schuldig ist, der ihn mehr als freundschaftlich behandelt, aber mein Mitleiden, meine
+              Theilnehmung an ihrem Unglücke, das hat sie völlig. – zu ihm – aber mein Lucio zieht
+              mich ganz ein mächtigerer Zug; es ist nicht Freundschaft, nicht Mitleiden, nicht kalte
+              Gegenliebe, aber so was, – das sich nur fühlen, und nicht sagen läßt, und um doch was
+              zu sagen, so ist es so was, – das zwey Geschöpfe ohne beyde zu zernichten, und zu
+              zermalmen, unzertrennlich, und zu Eins macht.</p>
+          </sp>
+          <sp who="#lucio">
+            <speaker>Lucio.</speaker>
+            <p>O Hannach! wird sie auch Muth genug haben, sich von ihrem unglücklichen Fräulein zu
+              trennen, wann sie mit Campo fort sollte? Wird sie wohl da auch auf ihren Lucio, der
+              sie über alle Welt liebt, zurück denken, und ihn suchen glücklich zu machen? O ich
+              zweifle! – Von Mitleiden, von unzeitiger Theilnehmung hingerissen, wird sie sich von
+              ihrer unglücklichen Jenny wohl losreissen können? Ich zweifle! – ich zweifle! –
+              Vergessen auf Lucio, und seine Liebe, wird sie dahin eilen, wo sie sein schwacher Fuß
+              nicht mehr einholen kann.</p>
+          </sp>
+          <pb n="46"/>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Mit seinen Zweifeln, die Zweifeln werden zu größten Verbrechern an uns, sie machen,
+              daß wir Sachen unternehmen, die uns zu unternehmen verbothen sind, und was wir
+              unternehmen sollten, aus Furcht nicht zu erhalten, unterlassen. – Sorg er nicht, er
+              kennt die Macht der Liebe zu wenig mein lieber Lucio, wenn er zweifelt, – und ich
+              glaube gar, er zweifelt auch an meiner Liebe gegen ihn? – Zehn – ihm allein getreue
+              Jahre, dunkt mich, sind wohl Liebes Beweise genug.</p>
+          </sp>
+          <sp who="#lucio">
+            <speaker>Lucio.</speaker>
+            <p>An ihrer Liebe zweifelte ich nie, aber ich fürchte nur, daß sie wegen des Fräuleins
+              von Schmerz trunken mich, und die zehen getreue Jahre vergisst, und glaubt, da wo sie
+              hinkömmt, auch einen Lucio zu finden.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Bey Gott! nein, ich gehe nicht von ihm, ich lasse ihn nicht allein zurück, denn, wo
+              würde ich einen Mann finden, der so für meine Gesinnungen, für meine Empfindungen, für
+              meine Laune wäre, wie er.</p>
+          </sp>
+          <sp who="#lucio">
+            <speaker>Lucio.</speaker>
+            <p>Wenn sie so denkt, nun so laß sie mich ihre Hand küssen, Hannach, ich werde sie gewiß
+              nicht beleidigen, nie etwas zuwider thun.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Und ich werde ihm stets in allen gehorchen. – Aber itzt muß ich gehen mein guter
+              Lucio, mein Fräulein ist ganz alleine, und ist so schwach, daß sie kaum gehen kann. –
+              Wo ist denn sein Herr?</p>
+          </sp>
+          <pb n="47"/>
+          <sp who="#lucio">
+            <speaker>Lucio.</speaker>
+            <p>Wie mir scheint, so gieng er zum Fräulein, ihr die angenehme Bothschaft, die Campo
+              brachte, mit seiner gewöhnlichen Art zu hinterbringen.</p>
+          </sp>
+          <sp who="#hannach">
+            <speaker>Hannach.</speaker>
+            <p>Gott! so wird er sie gar vollends mit seiner Strenge tödten. – Gutes Fräulein!
+              grausamer Vater! – Ich muß eilen, leb er wohl Lucio. <stage>eilt ab</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <sp who="#lucio">
+            <speaker>Lucio</speaker>
+            <stage>allein.</stage>
+            <p>Sagt ich es nicht, daß, wenn sie von ihrem Fräulein was hört, daß sie gleich nicht
+              weis, was um sie geschieht, wer um sie ist, und sich selbst vergißt. – – So seyd ihr
+              Mädchen, gleich berauscht von dem, was auf euch gegenwärtig wirkt, vergesst ihr alles
+              andere, was euch auch vorher tausendmal mehr Seligkeit zuwarf, vergesst euern
+              treuesten Liebhaber, euere beste Freunde, Gespielen, und Vertraute, und unterhalt euch
+              nur mit euerm neuen Gegenstand. – Ihr faßt ihn, umarmt ihn, küßt ihn, und wär es ein
+              zottiger Hund, wenn er euch nur neu, und fremd ist. – Aber meine Hannach sollte doch
+              gegen ihren Lucio anders gesinnt seyn, sie hat ja das Fräulein zum Muster, die gewiß
+              eine Ausnahme von dieser allgemeinen Regel ist</p>
+          </sp>
+        </div>
+        <pb n="48"/>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <stage>Montroso, Lucio.</stage>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Ist niemand da?</p>
+          </sp>
+          <sp who="#lucio">
+            <speaker>Lucio.</speaker>
+            <p>Nein, gnädiger Herr.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Geht, und besorgt euer Geschäft, und vergesst auch nichts, was Unordnung gebären
+              könnte. <stage>Lucio ab.</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <sp who="#montroso">
+            <speaker>Montroso</speaker>
+            <stage>allein.</stage>
+            <p>Die Ungehorsame! – wäre sie nicht die einzige Frucht meiner Ehe, ich würde sie mit
+              Füssen getretten haben. – Ich wollte ja nicht, daß ihre Mutter meinem Bette wäre
+              untreu gewesen! aber ein solch Kind, – ein so ungehorsames Kind konnte mein Blut nicht
+              zeugen. – Doch ich will sie schon beugsam machen, ich will sie schon nach meinem
+              Willen lenken. – Ihre blasse Wange, ihr schwacher Gang soll mir gewiß nicht das
+              geringste Mitleid und Nachsicht abzwingen, denn ich kenne die Pfiffe der Mädchen zu
+              gut. – Sie muß, – sie muß in zwey Tagen gleich nach der Trauung mit Campo fort. – Sie
+              wird sich schon in das finden, was nicht zu ändern ist, und Beyspiele lehren uns, daß
+              wir gar oft das, was wir Anfangs haßten, zuletzt hochschätzen und lieben.</p>
+          </sp>
+        </div>
+        <pb n="49"/>
+        <div type="scene">
+          <head>Sechster Auftritt.</head>
+          <stage>Montroso, Campo.</stage>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Willkommen Herr Schwiegersohn, willkommen, schon wieder da? das heiß ich
+              pünktlich.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>Hier Signor <stage>(ihm ein Papier gebend.)</stage> ist die Verschreibung von meinem
+              Vater an ihre liebenswürdigste Tochter meine Jenny.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <stage>Lesend, und ihm das Papier zurückgebend.</stage>
+            <p>Das ist zu viel Signor Campo, zweymal hundert tausend Scudi, – ist zu viel, meiner
+              Tochter Mitgift würde ihrer Verschreibung nicht das Gleichgewicht halten können.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>Wer fodert von ihrer Jenny eine Mitgift, die dieser Verschreibung gleich, oder nur
+              nahe kommen soll? – Nein, nicht das geringste fodert Campo, und sein Vater von ihnen,
+              sie würden dadurch nur den hohen Werth ihrer holden Jenny verkleinern, heruntersetzen,
+              ja vielleicht gar tilgen, denn der erkaufte Werth ist kein Werth, so wie erkaufte
+              Tugend keine Tugend ist.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Meine Jenny ist die einzige Erbinn meines ganzen Vermögens, das ihrer Verschreibung
+              gleichen wird; und es sollte sie weit übertreffen, wann mir nicht der ungerechte del
+              Bassanio mit dem Gewandte der Gerechtigkeit, und Macht umhüllt, eine Erbschaft,
+              dessentwegen ich mich nach <pb n="50"/> Italien zog – entrissen hätte, die mein
+              Vermögen weit überstieg. – Nun warum sollte meine Jenny nicht die Hälfte meines
+              itzigen Vermögens gegen eine solche Verschreibung mitbringen, und diese Hälfte itzt
+              schon geniessen da sie einst alles haben, – alles geniessen soll.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>Nein Signor. – Sie sollen alles geniessen, so lang der Himmel ihnen Leben, und
+              glückliche Tage verleihen wird, – und sollte sie der unerbittliche Tod mit seiner
+              Sense, einst nach langen Jahren wegnehmen, so sollen sie ihr Vermögen jenen
+              hinterlassen, die sich um sie am meisten verdient gemacht haben. – Jenny wird ohnehin
+              eine Besitzerinn meines ganzen Vermögens, welches ihr gewiß in kurzen so wie mir, und
+              meinem Vater – gleich einem vollkommen gesättigten die in der Menge aufgetragene
+              Gerichte – nur zum Eckel, und Ueberdruß dienen.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Mein so schwer, und sauer erworbenes Gut, sollte also in fremde Hände kommen? – Nein!
+              nimmermehr! – Nie werd ich das zugeben! – Meine Jenny soll, und muß es besitzen, und
+              sollte sie über alle Schätze des Grossmogols gebiethten.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>Ich glaube nur dadurch ihren vielleicht bedürftigen Freunden zu helfen, die es mehr
+              nützen, mehr vergnügen, ja vielleicht zu Glücklichsten machen würde.</p>
+          </sp>
+          <pb n="51"/>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>O die mögen sehen, sich durch Mühe, Arbeit, und anhaltenden Fleiß das zu erwerben,
+              was sie höchst bedürfen. – Auch ich muß es thun, und ihrer wegen hätte ich gewiß nicht
+              so viel gethan. – Und damit ich versichert bleibe, daß einst meine Jenny all meine
+              Habe besitze, so will ich ihr all mein Vermögen zur Mitgift aufdringen, welches so
+              dann ihrer Verschreibung gleichen wird, und an ihrer Seite meine noch geringe Tage
+              verseufzen.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>Nur unter dieser Bedingung kann Jenny ihre Mitgift annehmen. Glückliche Jenny!
+              glücklicher Campo! die ihr das Glücke geniessen wird, euer Vergnügen, euere Wonne, mit
+              eueren zur Seite stehenden Vätern zu theilen, wo unterdeß euere besten Mütter über
+              euch herumschweben, und alles Heil euch zurufen. – O Signor! mit was für wackelnder
+              Freude, grauen Vergnügen, und zitternder Wonne, wird sie das weiße Haupt, und die
+              zitternde Hand meines Vaters empfangen, ich fürchte, – ich fürchte, daß ihn nur all
+              diese Freude, und Wonne nicht vollends drücke; denn allzu große Freude, ist eben so
+              schädlich, wie höchster Schmerz. – – Hier haben sie den Brief, in welchem er auf das
+              schleunigste meine Ruckkehr fodert, sie können ihn zur gelegenen Zeit durchgehen, er
+              ist ungeduldig mich in meinem Glücke zu erblicken, und durch mich eine verdiente
+              Tochter zu finden.</p>
+          </sp>
+          <pb n="52"/>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Ich werde ihn hernach mit der größten Aufmerksamkeit durchlesen. <stage>er steckt den
+                Brief zu sich.</stage> Ich habe es schon meiner Jenny hinterbracht, daß sie in zwey
+              Tagen mit ihnen fort soll.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>Und wie gab sie sich darein?</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>So wie's Mädchen zu thun pflegen, die zum erstenmale ihre väterliche Wohnung
+              verlassen, und auf ewig Abschied nehmen müssen. Sie nahm ihre Zuflucht zu den Thränen,
+              bat um Aufschub, damit sie sich ein wenig erholen, und zur Reise bereiten könne.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>Und sie konnten sie weinen sehen?</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>O das haben sie in ihrer Gewalt, wie der Sackpfeifer den Ton. – Und itzt – itzt wird
+              sie sich schon darein geben, da sie hören wird, daß ihr Vater nicht nur allein ihr
+              Reisegefährte, sondern auch ihr Gesellschafter bleibt.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>Das wird gewiß allen ihren Schmerz lindern, und ihr allen Muth verschafen, sich einem
+              Brett anzuvertrauen, zwischen welchem Tod, und Leben sitzt. – O ich dank ihnen Signor,
+              sie erlauben doch ihrem Sohn, daß er sie Vater nenne.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Das soll mein größter Stolz seyn, diesen Namen zu verdienen, also auch von nun an,
+              will ich sie meinen Sohn nennen.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>Und das bin ich, und werde es stets suchen zu seyn. Mit der kindlichsten Ergebenheit
+              küsse ich also die Hand – ihre väterliche Hand. <stage>die <pb n="53"/> Hand
+                küssend.</stage> Lassen sie Signor. – O glücklicher Tag! du Tag alles Lichts, und
+              aller Wonne, du giebst mir eine zärtliche Gattinn, und machst mich zum Sohne eines so
+              würdigen Mannes. Nie sollst du meinen Sinnen entfallen, alle Jahre will ich dein
+              Andenken feyern, und mich aller Wonne, all's Vergnügens erinnern, und es zu verdienen
+              suchen. <stage>Es kömmt Lucio.</stage></p>
+          </sp>
+          <sp who="#lucio">
+            <speaker>Lucio.</speaker>
+            <p>Gnädiger Herr, man will sie sprechen.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Augenblicklich. <stage>Lucio ab.</stage> – Mein Sohn, wollen sie nicht ein wenig zu
+              meiner Jenny auf ihr Zimmer gehen?</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>Sie wird sich vielleicht ankleiden, und da wäre mein Besuch nicht willkommen, ich
+              werde hier ein wenig verweilen.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Sie vergeben also, daß ich mich entferne; meine Geschäften, nicht ich sind
+              Ursache.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>Keine Umstände mit ihrem erst jüngst gebornen Sohn.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Ich werde gleich wieder da seyn. <stage>ab.</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Siebender Auftritt.</head>
+          <sp who="#campo">
+            <speaker>Campo</speaker>
+            <stage>alleine.</stage>
+            <p>Nun Campo, – nun wirst du in kurzem den Willen deines alten Vaters, und deiner
+              Neigung genüge gethan haben. – O ich fühle schon itzt die Wonne, die mich erwartet,
+              meine Jenny <pb n="54"/> mit allen Empfindungen der Liebe in meine Arme zu schlüssen.
+              – Ein Mädchen dessen sinkendes Auge einem alles Mitleid, und jede Theilnehmung raubt,
+              und dessen ganzes Betragen einem jedem Neigung, Begierde, und Wunsch einflößt sie zu
+              besitzen, und anzubethen. – Und nun Mädchen bist du mein – mein Eigenthum. Gott!
+              welche Wonne in all den Gedanken, dich besitzen Jenny du Göttinn auf Erden! – – Aber
+              Campo du bist alleine, alles ist leer um dich her; die Wände lernten schweigen, hast
+              keinen Gesellschafter um dich, als dein Gewissen, – und in dieser Gesellschaft hat
+              stets Wahrheit Platz, frage dich also in der Gesellschaft deines Gewissens, wirst du
+              stets für Jenny gleiche Flammen fühlen? – Wirst du deine Göttinn stets mit gleichen
+              Eifer anbethen? – Ihr stets mit gleichen Feuer in die Arme fallen? – Wird der Genuß
+              der Liebe nicht alles nach und nach tödten? – Werden ihre Reitze, die itzt im
+              Frühlinge aufgehn, in harten Sommer nicht verwelken? – Wirst du eine Speise nicht
+              satt, ja gar bis zum Eckel, die du täglich geniessest? – Frag einmal so, und antworte.
+                <stage>Nach einigen Nachdenken.</stage> Nein! nimmermehr! stets mit einer Neigung,
+              stets mit neuem Wunsche, und lauteren Vergnügen will ich in deine Arme fallen Jenny! –
+              Dir Göttinn stets neue Opfer bringen, und nie soll ich dich satt, und um so weniger du
+              mir zum Eckel werden. – <stage>Nach einigen Stillschweigen.</stage>
+              <pb n="55"/> Und solltest du auch einst alle Macht auf mich verloren haben, und ich
+              der Speise, die ich täglich geniesse, satt werden. – O so giebt es ja noch Köche, die
+              für baare Münze Gerichte bereiten können, die den stumpfen Gaum aufs neue reizen, und
+              kützeln.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Achter Auftritt.</head>
+          <stage>Campo, Valerio, Castro.</stage>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Willkommen Signor!</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>Wahrhaftig herzlich willkommen.</p>
+          </sp>
+          <sp who="#castro">
+            <speaker>Castro.</speaker>
+            <p>Die freudenreiche Stunde ist nahe, alle unsere Wünsche sollen sie begleiten, und zur
+              Seite stehen.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>Ich danke. – Mich verlangt recht sehr darnach, denn ich glaube, man kann nichts
+              anständigeres, höheres, und treflicheres auf diesem Boden Gottes verlangen, – wenn man
+              doch etwas verlangt, – als eine zärtliche Gattinn, und sie erhalten, ist Himmel auf
+              Erden. – Da kömmt ja eben mein bester Vater.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Neunter Auftritt.</head>
+          <stage>Montroso. Die Vorigen.</stage>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Ha! Willkommen in meinem Hause, – von Herzen! <stage>er küßt den Castro.</stage> Wo
+              hast du meine beste Schwägerinn gelassen?</p>
+          </sp>
+          <pb n="56"/>
+          <sp who="#castro">
+            <speaker>Castro.</speaker>
+            <p>Sie eilte zu ihrer Nichte – deiner Jenny, sie ein wenig zur herannahenden Stunde in
+              allen Fällen zu unterrichten, und vorzubereiten.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>O über das vortrefliche Weib! in ihr lebt noch immer meine gottselige Frau, – ihre
+              Schwester, sie ist stets so munter, so frölich, so entschlossen, so herzhaft, und weiß
+              das Harte mit dem Weichen, das Angenehme mit dem Unangenehmen so zu verbünden, daß sie
+              gewiß meine Jenny zu Rechte stimmen wird, – sie lehrt ohne beschwerlich zu werden, ja
+              sie gebiethet so gar, ohne den harten Ton anzunehmen. – Das Mädchen liebt sie dafür,
+              wie ihre selige Mutter, denn sie hat sie völlig gewonnen, und kann alles aus ihr
+              machen.</p>
+          </sp>
+          <sp who="#castro">
+            <speaker>Castro.</speaker>
+            <p>Sie wird dir viel Dank wissen, daß du sie deiner Frau so ähnlich stellst, und ihr so
+              viel Lobes giebst. Deine Frau hatte alle Vorzüge, alle Tugenden, alles Schöne, und
+              Bezauberende, das je in einem Weibe zu finden war. Deine Jenny ist der Sprößling von
+              diesem schönen und vollkommenen Stamme, sie trug alle Sorge in seinem ersten zartesten
+              Alter, um einst alles in doppeltem Maaße wieder in diesem so schönen Sprößling zu
+              finden, wann diesen Stamm der Reif der Jahre einst abbrennen sollte.</p>
+          </sp>
+        </div>
+        <pb n="57"/>
+        <div type="scene">
+          <head>Zehender Auftritt.</head>
+          <stage>Signora Castro, Jenny, Hannach, Vorigen.</stage>
+          <sp who="#signora_castro">
+            <speaker>Sign. Castro.</speaker>
+            <stage>Im hereintretten zu Jenny.</stage>
+            <p>Thun sie munter beste Nichte, wer weiß, was vorgeht. <stage>zu Montroso.</stage> Hier
+              bester Schwager bring ich ihnen eine Tochter, die völlig nach ihrem Willen gemodelt
+              ist, und einst die Freude und Trost, und all Vergnügen ihres weisen Hauptes seyn
+              wird.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Ich danke ihnen Signora, – von Herzen dank ich ihnen. – – O wie sind sie all mein
+              Wünschen, Bitten so schnell zuvorgekommen! nur sie konnten mehr thun, als der Vater,
+              nur sie können das Wilde zahm, das Unangenehme angenehm machen. Welche Kunst!</p>
+          </sp>
+          <sp who="#signora_castro">
+            <speaker>Sign. Castro.</speaker>
+            <stage>zu Campo.</stage>
+            <p>Und sie würdiger Mann, Signor Campo, sie empfangen hier von mir meine Nichte, da ich
+              heute die Stelle ihrer Mutter vertrette, zur Braut; Ueberlegen sie, daß sie heute ihre
+              künftige Ruhe, und all ihre Glückseligkeit festsetzen, und fragen sie sich, ob ihnen
+              das arme Mädchen auch heute noch reizend genug vorkömmt, und ist sie in ihren Augen
+              auch heute noch die Schwester der lächlenden Venus, so fragen sie weiter, ob dieses
+              itzt so holde Mädchen, ihre künftige Gattinn, gleiches in einigen glücklich
+              verträumten und verspielten Jahren auf sie noch wirken wird, und antwortet ihr <pb
+                n="58"/> Herz ja, und ist ihnen für eine ganze Ewigkeit Bürge, so nehmen sie hin
+              dieses Kleinod, den einzigen Stamm, und Schatz des Hauses von Montroso, und denken
+              dabey, daß ihre Mutter, die schon lange Geistern von höherer Art Gesellschaft leistet,
+              daß diese Mutter, und der Himmel sie unverletzt vom Kummer, und rein von allem Schmerz
+              aus ihren Armen einst abfodern wird.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <p>O Signora! wie kann ich meinen Dank durch Worte ganz, so, wie ich ihn fühle,
+              ausdrücken, der Himmel schicke allen Seegen über sie, denn sie arbeiteten an meinem
+              Glücke, ja es ist vielleicht ihr ganzes Geschöpf. – Ewig soll ich ihnen Dank wissen,
+              daß sie mir diesen Schatz aller Schätzen, mir Unwürdigen antrauen, <stage>zu
+                Jenny.</stage> O Jenny besitzte ich nur alle Vollkommenheiten eines Liebhabers, alle
+              Künste eines Weisen, alle Tugenden eines rechtschaffenen Mannes, alle Schätze des
+              reichen Indien, kurz alles – alles, was die Natur je schön, je reizend, je bezaubernd,
+              je wundervoll, und vollkommen schuf, und aus ihrem mütterlichen Schoß mit liebreicher
+              verschwenderischer Hand den Sterblichen zuwarf. O besitzte ich nur alles dieses, um es
+              zu ihren Füssen zu legen, sie zur Beherrscherinn und Frau zu bestimmen, und um mich
+              ihrer noch immer Unwürdigen ihrer würdig, und werth zu machen.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Die Erfüllung aller ihrer itzt gethanen Wünsche, würden sie wenig, oder gar nichts
+              nützen, <pb n="59"/> wenn mein Herz nicht für sie spricht. <stage>Montroso sieht zur
+                Uhr, und schällt den Bedienten.</stage></p>
+          </sp>
+          <sp who="#signora_castro">
+            <speaker>Sign. Castro.</speaker>
+            <p>Sie haben recht beste Nichte, daß man in der Liebe der Sympathie unserer Seelen
+              folgen soll, aber wie oft verkennt nicht das liebende Mädchen den geliebten
+              Gegenstand, und wird von der geringsten Kleinigkeit hingerissen, wo sie dann beräubt,
+              und trunken von Liebe, allen Einsprüchen der Vernunft, und Anrathen der besten
+              Freunden entsagt, und das Kleine für das Größte, und das Unvollkommene für das
+              Vollkommeneste hält. Man muß auch die Vernunft unsere beste Wegweiserinn zu Rathe
+              ziehen, obschon die Liebe sehr selten mit Vernunft gepaart ist. – Nicht wahr Valerio?
+              ihre Aufmerksamkeit winkte mir Beyfall zu. Warum heute so nachdenkend, gewiß hat ihn
+              sein letztes Mädchen ein wenig metamorphosirt.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Ich überdachte den Zustand der Liebenden, und pries mich, und jeden, der frey von
+              knüpfender Liebe ist, glücklich.</p>
+          </sp>
+          <sp who="#lucio">
+            <speaker>Lucio.</speaker>
+            <stage>Kömmt.</stage>
+            <p>Was befehlen sie gnädiger Herr?</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Ist schon alles bestellt, und in Ordnung gebracht?</p>
+          </sp>
+          <sp who="#lucio">
+            <speaker>Lucio.</speaker>
+            <p>Alles, alles aufs pünktlichste.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Ist es itzt gelegen werthen Freunde unsere Wünsche erfüllt zu wissen, so wollen wir
+              gehen, und zum Werke schreiten. Sie beste Schwägerinn, sie müßen heute schon noch die
+              Stelle ihrer <pb n="60"/> Mutter vertretten, – und du Castro, und sie Valerio Zeugen
+              dieser glücklichen, und höchst erwünschten Verlobung seyn. Alle Freude, Wonne,
+              Vergnügen, und Lust seye unter uns, und jeder vergesse allen Kummer, schwere Sorgen,
+              und jedes Ungeheuer, das ihm sein Leben verbitterte.</p>
+          </sp>
+          <sp who="#castro">
+            <speaker>Castro.</speaker>
+            <p>Ja nichts, als Freude, und Vergnügen herrsche unter uns.</p>
+          </sp>
+          <sp who="#signora_castro">
+            <speaker>Sign. Castro.</speaker>
+            <p>Dies soll ein rechter Freuden-Tag seyn.</p>
+          </sp>
+          <sp who="#campo">
+            <speaker>Campo.</speaker>
+            <stage>Zu Jenny.</stage>
+            <p>Und für uns der glücklichste, der schönste, den die Zeit aufzuweisen hat.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>O vielleicht hat er für mich auch was süßes – was erwünschtes! – Gott! – Mein Vater!
+              – Meine Mutter! – Mein – <stage>Alle ab.</stage></p>
+          </sp>
+        </div>
+      </div>
+      <pb n="61"/>
+      <div type="act">
+        <head>Vierter Aufzug.</head>
+        <stage>Das Zimmer des Antonio.</stage>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <stage>Auf einem Sessel eine Weile sitzend, und dann voll Schmerz aufspringend.</stage>
+            <p>Ich kann ihr nicht entfliehen! überall verfolgt mich ihre himmlische Gestalt!
+              unzertrennlich von mir steht sie mir stets, gleich meinem Schatten, zur Seite. – Und
+              ihr Barbaren, Mörder meines Vergnügens, meiner einzigen Wonne, ihr, – ihr entreißt sie
+              aus meinen Armen. O wie gut, daß ihr zu meinem Herzen keinen Weg finden könnt, den da
+              ist er dieser Engel, da erfüllt er allen Raum, so, daß weder ein ungeborner fremder
+              Gedanke da Platz finden könnte. – Und da sollst du bleiben Jenny so lange dein
+              unglücklicher Antonio athmet, der letzte stammelnde Gedanke soll dein honigsüsser Name
+              seyn, und seine abgeschiedene Seele stets dich Begleiten, – dir folgen! <stage>(nach
+                einer Pause.)</stage> O ihr schlaffen Kräfte, – matte Wirkungen, – verlorne Macht, –
+              Schwäche, und jedes fühlende Unvermögen! – Diener des größten Wesens aller Wesen! –
+              Ihr Propheten, <pb n="62"/> und sichere Wahrsager meines künftigen Untergangs – meines
+              nahen Endes! seyd mir willkommen, – von Herzen willkommen! Ich dank euch für euere –
+              mir zur anderen Zeit sehr unwillkommene und traurige, für itzt aber höchst erwünschte
+              Nachricht. – Ihr Ueberbringer dieser schrecklichen, und doch erwünschten Nachricht,
+              ihr seyd meine besten letzten Freunde! ihr werdt mich in kurzen meiner Qual
+              entreissen, und mein, und aller Geschaffenen Schicksal vollziehen helfen! <stage>Er
+                geht mit geschlungenen Armen einigemal im Zimmer auf und nieder. Sieht auf die Uhr,
+                die auf den Tisch stehet, und schreyt voll Schmerz.</stage> Himmel schon Eilf! die
+              Stunde meines Verderbens! die Stunde! wo ich meine Jenny verliere, auf ewig verliere!
+              – Die Stunde! – wo das gute gequälte Mädchen ihre zitternde Hand dem Unverschämten,
+              Tollkühnen reichen wird! – O schwarzer, trüber Tag! der du die schreckliche Stunde
+              meines Unglücks gebärst! verlöscht, verflucht, sey du aus aller Zeit! – Es schlaffe,
+              es sterbe alle Gerechtigkeit, alle Güte, alle Barmherzigkeit, Mitleiden, Freundschaft,
+              alle Treue, Freude, kindliche, und väterliche Liebe an diesen Tag! – Und erwache,
+              lebe, tobe und rase alle Ungerechtigkeit, alle Mordsucht, alle Feindschaft, Härte,
+              aller Zank, Hader, Zwist, aller verheerende Krieg, Unruhe, zähnblöckender Hunger, und
+              jede Verzweiflung! – Dem Manne werde an diesen Tag sein sonst stets getreues <pb
+                n="63"/> Weib ungetreu! – Dem Jüngling werde seine einzig Geliebte der letzte Trost,
+              und Nahrung seines Lebens durch schändliche Gewalt entrissen! – Den Vater würge der
+              Sohn! – Die Mutter durchbohre die Tochter! – O Zeit hemme deinen schnellen Lauf, laß
+              nie die zwölfte Stunde nahen, – laß ewig Eilf seyn! Du tödtest durch deinen Lauf mich
+              Unglücklichen, was hab ich verschuldet, was verbrochen, daß du mit so schnellen Flug
+              auf mich, und meinen Tod zueilest! – O Jenny! – Mädchen! – Wunder der Natur! dich soll
+              ich nimmer sehen, nimmer deine Reden, in welchen die Vollkommenheit aller
+              Wohlredenheit schimmert, und hervorblitzt, mit hungerigen Ohren auffangen, sie in mein
+              Herze werfen, da keimen, blühen, und mit Wucher einerndten sehen! Deine Empfindungen,
+              die den meinigen so oft begegneten, – gleiches fühlten, und Kunst genug fanden, es
+              auch andern fühlbar zu machen, nicht mehr gewahr werden! – O Hölle! – tiefe schwarze
+              Verzweiflung in den Gedanken <stage>(nach einer Pause.)</stage> Fort mit dir Gedanke
+              aus meiner Seele! du raubst mir die letzte Kraft zu widerstehen, – den letzten Faden
+              meiner geringen Hofnung, und schüttest jede Schwermuth Verzweiflung, und Unsinn über
+              mich aus! <stage>Valerio kömmt.</stage></p>
+          </sp>
+        </div>
+        <pb n="64"/>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <stage>Antonio, Valerio.</stage>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Liebster Antonio, damit du überzeugt bist, daß ich dein Freund bin, daß ich es war,
+              und durch alle Zeit seyn werde, hab ich mich von dieser mir deinetwegen so
+              beschwerlichen Gesellschaft losgerissen. – Unter dem Vorwande, ich müßte noch vor
+              Tische ein kleines Geschäfte besorgen, und dem Versprechen in einer Viertel Stunde
+              wieder bey ihnen zu seyn, bin ich entkommen. – Ich hab dir vieles zu sagen, und wenn
+              dir nur die Menge und Größe der Nachrichten – nicht aber ihr Inhalt stets angenehm
+              war, und noch ist, so bring ich dir viel angenehmes, achtest du aber auf ihren Werth
+              und Inhalt, so prüfe dich zu erst, ob du Muth, und Stärke genug hast, selbe zu
+              hören.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Sage – sage alles – rede; Was kanst du mir schrecklicheres, verzehrenderes,
+              furchtbareres und mehr tödtendes sagen, als, daß die Verlobung vollzohen, und ich
+              meine Jenny – mein Ich auf ewig ohne aller Hofnung verloren habe, – und das alles
+              sagte mir mein Kummer, meine Schwermuth, meine keimende Raserey schon lange, – diese
+              schwarze tödtende Nachrichten las ich schon lange in dem Buche des Schicksals, und die
+              waren es eben, und sind es noch immer, die auch meinen Tod, gleich einer Sterbeglocke,
+              ankündigen. – <pb n="65"/> Gott! Jenny! – Du verlobt! mir entrissen! durch Gewalt! O
+              öfne Erde deinen Schlund und verschlinge diese Tygerherzen, diese Ungeheuer von
+              Menschen, die dein Auge betrüben, und meines vollends tödten! – Sage Valerio, ist die
+              Verlobung schon vorüber? – – – Rede!</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <stage>Spricht nichts.</stage>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O dein Schweigen sagt mir das, was deine Zunge aus Mitleiden gegen mich nicht
+              aussprechen kann. – Freund eine Bitte von deinem Antonio, eine, und gewiß die letzte,
+              aber dein Jawort, und alles aufs geringste.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Fodere, fodere, meine Habe – mein Blut, mein Leben, und mit Lächeln, mit aller Freude
+              sollst du alles aus meinen Händen holen können.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Sage, erzähle, wie hat sich das unglückliche Mädchen, unglücklich durch mich, – Gott!
+              welch eine Hölle in den Gedanken! – bey der Verlobung betragen? was für dumpfe Wolken
+              umzohen, und verhüllten ihr göttlich schimmerndes Antlitz?</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Alles – alles sollst du wissen, vielleicht ist da noch Wonne, noch Vergnügen für den
+              Unglücklichen, sein Schicksal, dessen Bestandtheile Unglück und Tod sind, ganz mit
+              allen seinen Verzierungen vom Kummer, Elende, und Schmerz zu wissen.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Wenn der Unglückliche noch eine Wonne fühlen kann, so ist es gewiß diese. Denn er
+              übersieht <pb n="66"/> hernach mit einem Blick sein ganzes künftiges Schicksal. – Er
+              überschlägt im Buche des Schicksals das Blatt seines gegenwärtigen Zustandes, und
+              durchwühlet alle Blätter der Zukunft, die nur den Göttern heilig sind. Findet er da
+              ewigen Schmerz, anhaltenden Kummer, verzehrende Schwermuth geschrieben, so erwartet er
+              sein Ende mit traurig gesenktem Haupte, und preiset den Tod, als seinen Erlöser aller
+              Pein. – Und funkelt ein Stral belebender Hoffnung, und noch schlafenden Glückes aus
+              ihnen hervor, O! so giebt es ihm Muth, Stärke, und Macht, das gegenwärtige Uebel zu
+              ertragen, und von blühender Hoffnung belebt, schaut er auch dem künftig noch drohenden
+              muthig, und freudig entgegen. – Sage also Valerio, wie giengs zu in der Werkstätte
+              meines Unglücks, wie wurde mein Unglück geschmiedet?</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>So hart, – so fest, daß es alle Zeit nicht auflösen kann.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O Valerio sage das nicht! – begehe keine Ungerechtigkeit an der Zeit, sondern laß ihr
+              ihr Vorrecht, – ihr mir so sehr gewünschtes Vorrecht, daß sie alles tilge, alles
+              auflöse, was noch so sehr gebunden, und geschmiedet zu seyn scheint. – Sie ist auch
+              barmherzig, weil sie dem Unglücklichen zu seinem Grabe schneller läuft, – gütig, weil
+              sie ihm sein Ende durch sichere Vorboten ankündiget, und höchst wohlthätig, weil sie
+              ihm Mittel, und Wege <pb n="67"/> zeigt, seinem Unglücke zu steuern, wenn ihm zu
+              steuern ist, wo nicht, so durch Muth und Herz selben vollends zu entfliehen.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Laß sie Antonio nur gegen anderer Schicksal auf so eine Art barmherzig seyn, bey dir
+              solls sie nicht, muß sie's nicht, denn in eben dem Augenblicke, da sie gegen dir
+              barmherzig wäre, begienge sie an mir, und vielen andern die größte Tyranney, weil sie
+              mir, und allen deinen Freunden einen Mann rauben möchte, der unsere Freud, unser
+              Vergnügen – ja das Salz unsers Lebens ist, ohne welchem wir bald, gleich todten
+              Fleisches, vermodern müßten.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Der Mensch, Liebster, kann sein Unglück und seine Bürde, nur bis auf einen gewissen
+              Grad ertragen, wenn er nun selben nahe kömmt, so fühlet er Schwäche, Mangel an
+              Kräften, und Unvermögen – in seinem Gemüthe wird es trübe, und in seiner Seele Nacht.
+              – Hat er aber jenen Grad durch langen Gang völlig erreicht, so wird er von selben
+              vollends zu Boden geschlagen, und unterlieget ganz.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Ich will mich mit allen deinen Freunden im Wege stellen, deinen Gang zu unterbrechen,
+              denn was würde aus uns werden, und was aus deiner ganz entstellten Jenny, die
+              deinetwegen so viel duldet, – deinetwegen ihrem Untergange so nahe steht, –
+              deinetwegen alle Welt haßt.</p>
+          </sp>
+          <pb n="68"/>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O Valerio verdopple nicht die Vorwürfe, die ich mir selbst mache, – vermehre nicht
+              das Geschrey meines eigenen Gewissens, sey du zum wenigsten barmherzig, wenn ich auch
+              selbst meinen Folterer im Busen trage. Du sagtest, deine entstellte Jenny, – und
+              meinetwegen, weil du mich noch liebst, entstellt! – Laß ab Jenny von deiner Liebe,
+              liebe keinen Unglücklichen, der mit dir nichts, als sein Unglück theilen kann, sey
+              mitleidig gegen ihm, denn du tödtest ihn völlig mit deiner Liebe. – O Jenny um meinet
+              – und deinetwegen hasse, verabscheue mich, du würdest glücklich, und ich – ich, – O
+              wenn du mich gleich hasstest, verabscheutest – würde – müßte dich doch lieben – dich
+              anbeten, und nichts als deinen Namen seufzen.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Auch deine Jenny würde gleiches thun. Du hättest sie sehen sollen, Antonio, mit was
+              für Schwäche, Unvermögen sie zur Verlobung schwankte, es war nicht anders, als gienge
+              sie zu ihrem Tod. Ihre Stirne war finster, ihr Auge trübe, ihre blühende Wangen
+              welkend, die Bewegung ihrer Lippen bitter, und entschlossen zu aller That; – kurz ihr
+              ganzes Gesicht war Schmerz, wo zuweilen das Lächeln der Verzweiflung hinein blitzte,
+              gleich einem Blitz in die schwarze, tiefe Mitternacht.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Und sie schonten ihrer nicht, – O ihr Creaturen – ihr seyd von furchtbaren Kaukasus
+              geboren, und von blutdürstigen Tygern gesäugt!</p>
+          </sp>
+          <pb n="69"/>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Ihre Hand, die sie ihrem Angedrungenen reichte, war zitternd, bebend wie Espenlaub,
+              Thränen traten ihr in die Augen, und verdrangen ihre ohnehin stammlende Worte, – da
+              sie die gewöhnlich gestellte Fragen beantworten sollte. – Aller Augen ruhten auf ihrem
+              Gesichte, und jedes Ohr hebte sich voll Ungeduld, ihre Stimme und Reden aufzufangen. –
+              Ihr langes Stillschweigen, welches man ihrer zärtlichen Unschuld zuschrieb, – weckte
+              alle Aufmerksamkeit, die Anfangs sehr fest entschlaffen, bis sie endlich in dem Tone
+              der Verzweiflung aller erforderlichen Ceremonie Genüge gethan.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>So ist die Verlobung vorüber! und du mir Jenny durch schändliche Gewalt entrissen!
+              was zögere, was athme, was bin ich noch! Warum bin ich schon lange nicht um dich, über
+              dich! – Der wurmstüchige Apfel fällt ja von dem kleinsten Zephyr angehauchet, und was
+              geschieht mit ihm, wie tief fällt, und vergräbt er sich in die weiche Erde? wenn
+              brausende Orkane auf ihn zu toben? – Und so laß auch mich fallen Jenny! deinen
+              unglücklichen Antonio! der kein Vergnügen, keine Wonne, keine Lust mehr kennt. – Er
+              soll nicht durch dich, sondern durch sich selbst fallen, – sich selbst das Grab öfnen,
+              und du Jenny – du meine Seligkeit, du sollst es nur schließen, und mit deinen Thränen
+              benetzen.</p>
+          </sp>
+          <pb n="70"/>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Sey ruhig! sey getrost! und gebe einer vernünftigen Vorstellung Gehör! entflamme
+              nicht stetts die Gluth, die deinen Schmerz noch mehr anfacht! – Laß dich nicht so sehr
+              von dieser verzehrenden Leidenschaft beherrschen! sey nicht der Sklave deiner Sinnen,
+              – setze nicht deine ganze Glückseligkeit in den Besitz eines unglücklichen Mädchens,
+              und werde nicht das traurige Opfer des tyrannischen Schmerzens! – O Antonio gedenke,
+              daß uns der Allliebende einen Schirm wider alle unsere Leidenschaften, sie mögen noch
+              so brausen, noch so toben, zur Gegenwehr gegeben. Ergreife deine stets siegende Waffen
+              die Vernunft, laß sie nicht gleich von langer Ruhe gerostetem Eisen unbrauchbar und
+              zerbrechlich werden, – und zerspalte, verwunde zum wenigsten als ein Held deine
+              verzehrende Leidenschaft, wo du selbe nicht vollends tödten kannst.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Schöne Worte! und schön vorgebracht! – O die Vernunft, die kann wohl dem kalten Blute
+              Gesetze vorschreiben! – – Und was bist du dann Vernunft? bist du ein Wesen, das mich
+              alles kennen lehrt, und nur selbst unbekannt bleibt? alles begreifen, alles
+              beurtheilen lehrt, und selbst weder begriffen, weder beurtheilet werden kann? – Oder
+              ein König, der allen Gesetze gibt, und selbst keines kennt? – Oder bist du – da unser
+              Leben aus einem steten Kampf der Leidenschaften besteht, – eine der kalten,
+              erloschenen halbtodten Leidenschaft, <pb n="71"/> die aus Unvermögen gleiches zu thun,
+              wie eine im dunklen Kleid verhüllte, und verjährte Jungfrau, allen übrigen Regeln, und
+              Gesätze geben will? Oder bist du ein bloßer Hauch, ein bloßer Athem, den der stolze
+              Sterbliche, von einer entgegengesetzten Leidenschaft umhergetrieben, dem Verbrechen,
+              seinem Zwillinge, zuruft, und zuschreyt?</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Alle meine vernünftige Vorstellungen erhitzen noch mehr dein Blut, statt es zu
+              besänftigen, mir thut es leid, daß mich mein gegebenes Wort von dir ruft, und ich dich
+              so entflammt, und erhitzt verlassen muß. Doch hier kömmt Prospero, vielleicht kann er
+              mehr als ich.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Prospero, die Vorigen.</stage>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Willkommen Prospero!</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Meine Sorge für dich bester Antonio bringt mich zu euch, ich glaubte dich alleine,
+              und war darüber sehr bekümmert, aber itzt fällt mir die ganze Last von Besorgniß und
+              Kummer von meinem Rücken, da ich Valerio hier finde, und ich kann wieder aufrecht
+              gehen, – denn muntere Gesellschaft ist die einzige Arzney für Schwermüthige, und
+              Unglückliche, so wie Einsamkeit, und Selbstgespräch ihr sicherer Fall sind, und gleich
+              Todeszeichen vorhergehen.</p>
+          </sp>
+          <pb n="72"/>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Wenn aber der Schwermüthige, und Unglückliche deine Arzney nicht annehmen wollte, was
+              wolltest du da thun.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Ihm selbe mit Gewalt, oder List beybringen.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Du würdest ihn also durch deine Arzney sein letztes, und einziges Vergnügen
+              rauben.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Wie so Antonio?</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Glaubt mir Freunde! Der Tiefsinnige, Finstere, Schwermüthige findt in seiner
+              Schwermuth und Unglück selbst sein noch letztes Vergnügen, denn er suchet selbst alle
+              Gelegenheit alle Zeit selbe zu finden, wenn sie je aus seiner Seele gewichen, er
+              entfliehet aller munteren Gesellschaft, suchet Einsamkeit, und wenn er selbe gefunden,
+              so macht er die Schwermuth zu seinem Gesellschafter, der ihm noch einiges Vergnügen,
+              gleich einem heuchlerischen Freund durch verlarvte Miene verschaffet, und so weidet er
+              sich in seinem vergnügenden Misvergnügen ganze Stunden, ja ganze Tage, wenn nicht
+              seine wahren Freunde, – die in seinem kranken Sinne, Störer seiner Lust sind, – ihn
+              seiner vergnügenden Traurigkeit entreißeten.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>O könnten wir das! Hätten wir doch Stärke, und Macht genug, die Schwermuth, und
+              finstere schwarze Melancholie, die du so fest in dein Herze gegraben, herauszureissen,
+              sie zu zerfetzen, zerspalten, zermahlen, ja völlig zu tilgen, und <pb n="73"/> ihrer
+              statt, alle deine tiefentschlafene Munterkeit, Scherz, und Fröhlichkeit aufzuwecken,
+              wirken, und handeln zu machen. O könnten wir das! sag ich, so hätten wird dich, dir
+              selbst wiedergegeben, und uns einen thätigen Freund aufs neue geschaffen.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Und das könnt ihr! Das könnt ihr Freunde, wenn ihr zur Ausführung meines eben itzt
+              gemachten Plans mir euere Hülfe nicht versagen wollt.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Sage, rede, fodere, und ich gehe, laufe, renne, und befolge alles, brauchst du meine
+              Habe! mein Blut, komm, – ich will mich gleich dem Tode arm machen, und mein Blut soll
+              bis zur Häfen für dich fliessen.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O ihr seyd aller Trost, den mir die Götter noch gewehren. – Eben du Valerio sollst
+              das meiste dabey thun, dein freyer Zutritt in das Haus von Montroso, deine
+              Verwandtschaft, die allen Argwohn auslöscht, und der Mantel, die Decke unserer
+              Unternehmung seyn soll, läßt mich alles hoffen, macht alle im Weg stehende Berge und
+              Felsen eben.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Wäre ich so klug, und glücklich, als ich redlich, und dir zu dienen bereit bin, so
+              kannst du das sicherste hoffen. Sage, rede Antonio, und Adlers Schwingen sollen mich
+              zur That führen.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Du sollst es gleich hören, nur schwöre zu erst bey allen den Göttern, die dir stets
+              furchtbar, <pb n="74"/> und schröcklich sind, daß du jedes Wort aufs genaueste
+              befolgen, keinem unser Unternehmen entdecken, und alle Hinderniße, Bedenklichkeiten,
+              Furcht, alle diese Gaben der Weiber, aus deiner Seele verbannen willst.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Das will ich, das werde ich, sage mir, ich brenne schon vor Diensteifer, ich muß
+              gehen, die Zeit wird sonst zu kurz.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Höret also Freunde! Die Nachricht des gähen Verlust meiner Jenny, und der barbarische
+              Schmerz erfüllten bis zur Zeit meine Sinne so sehr, daß kein Stral von Hoffnung in
+              meinem Gemüthe blitzte; – Ich war trunken, betäubt vom Schmerz, und konnte allen euern
+              Einsprüchen, allen euern Rathschlägen kein Gehör geben. – Ich hielte sie für Worte,
+              deren Wesen Luft, und Athem der Vater ist; kurz ich habe geschwatzt, wo ich handeln
+              sollte. Aber itzt beginnt es wieder in meiner Seele zu dämmern; ich errinnere mich
+              Valerio deiner mir angerathenen List, Genua zu verlassen.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Thue es Antonio, thue es, der fremde Ort, die Zeit, die Entfernung von den
+              schmerzensvollen Gegenständen, wird allen deinen Schmerz tilgen, und es wird im kurzen
+              in deiner Seele wieder lachender Mittag seyn.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Ja ich will es, – ich thue es, aber meine Jenny muß mein Reisegefährte, mein
+              Beschützer, mein Reisegott werden, den ich bey der <pb n="75"/> geringsten Gefahr an
+              mein Herze drücken, und voll der Andacht so lange küssen will, bis alle drohende
+              Gefahr vorüber. – Und diesen Engel, – hoffe, verspreche mir durch dich, – durch dich
+              Valerio zu erhalten, so wie alles übrige, das nur immer zu unserer Flucht nöthig seyn
+              wird, Prospero besorgen, und bestellen soll.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Sage also, was soll ich thun, was unternehmen, rede, die Augen der Liebe sehen stets
+              schärfer, und weiter, – – sie gleichen einem Sehrohr, das sehr weit in die Ferne
+              trägt, und jeden Gegenstand, auch den kleinsten groß findt.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Geh also, und bemühe dich Zeit, und Gelegenheit zu finden, meine Jenny alleine zu
+              sprechen, und hast du selbe gefunden, so sage ihr, daß ich sie noch immer liebe, –
+              noch immer anbethe, und so zwar, daß es sich nur denken, und empfinden, nicht aber
+              sagen läßt, dann sage ihr, ihr unglücklicher Antonio wolle Genua verlassen, aber ohne
+              sie könnte er's nicht, ohne sie wäre die große Welt für ihn ein Kerker, eine Hölle,
+              der Tag Nacht, das Feuer der Sonne Dunkelheit, und des still, und friedsam wandelnden
+              Mond's sanftes Licht tiefe Finsterniß. – Wenn sie ihn, und sein Unglück also noch
+              liebe, so wolle er sie aus den gierigen Händen der Barbaren reissen, sie sicher an
+              Bord bringen, und mit ihr so weit fliehen, bis sie frey und sicher alle Freude, Wonne,
+              Vergnügen, und ununterbrochene <pb n="76"/> Glückseligkeit an der Seite ihres höchst
+              glücklichsten Antonio wird geniessen können.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Wie ist das möglich! welche Zeit, – welchen Ort wirst du bestimmen, der nicht dein
+              ganzes Vorhaben in größte Gefahr setzen thäte.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Die Nacht Valerio, – die Nacht, die Mutter so vieler bösen Thaten, tollkühner
+              Unternehmungen, soll auch diese in ihrem mütterlichen Schoß verbergen, und ihren
+              schwarzen Schleyer vorziehen. In dieser heutigen schwarzen Nacht Prospero wollen wir
+              Genua verlassen, müssen es verlassen, sie ist gegen unglücklich liebende gütig, milde,
+              und ihre Finsterniß selbst leichtet ihren Unternehmungen. In des Quancios großen
+              Garten, wo ich sie zum erstenmale sahe, und sie mich mit dem ersten ihrer himmlischen
+              Blicke besiegte, wo ich ihr zum ersten meine Liebe schwur, und sie mir ihre Liebe
+              zurückgab, in diesem Garten Valerio will ich sie erwarten, wenn sie mich liebt, so
+              wird sie gewiß Zeit, und Wege finden, dahin zu kommen, – Muth, und Stärke, diese That
+              zu unternehmen, wird ihr die Liebe geben, und alle Gefahren tilgen: denn die Liebe ist
+              tollkühn, rasend, und kennt keine Gefahr, die ihr zu ihrem Ziel in Wege steht.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Ich will also gehen, sie sogleich aufsuchen, und die Sache so ausführen, wie es Zeit
+              und Umstände zugeben werden.</p>
+          </sp>
+          <pb n="77"/>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O geschicktes Werkzeug meines Glücks! gehe also, und befolge alles, was ich dir
+              aufgetragen. Zeuge ihr alle Glückseligkeit, die uns erwartet, und tilge, verbanne alle
+              ihre Bedenklichkeiten, wann je die Natur der schnellen Trennung ihres Vaters wegen,
+              etwelche in ihrer Seele aufsteigen läßt, aus ihrem weiblichen Busen, und lerne sie
+              Mann zu seyn. Alles übrige laß mich durch sichere, und schnelle Bothen wissen.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Das werd ich, Antonio. – Nichts soll mich abhalten im kurzen wieder bey dir zu seyn,
+              und erwünschte Nachricht zu überbringen. <stage>geht ab.</stage></p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O die Götter mögen alle deine Unternehmungen segnen, und jeden deiner Schritten
+              begleiten. – Prospero alles übrige, was unsere Flucht benöthiget, überlasse ganz
+              deiner Sorge. Sorge nur, damit alles zur gelegenen Stunde am Bord zu treffen sey, und
+              wir ohn' aller Hinderniß, und Gefahr auf dem heuchlerischen Rücken des Meers unter
+              himmlischen Entzückungen dahin eilen können. – Aber Prospero du mußt, – da du an
+              meinem Unglücke, und Kummer so viel Theil nahmst, und allen Schmerz, alle Sorge mit
+              mir theiltest – du mußt auch an meinem künftigen Glücke, Wonne, Seligkeit, und
+              entzückenden Vergnügen Theil nehmen.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Den größten Antonio. – Denn alle meine Zeit, jede Stunde, jede Minute soll deinem <pb
+                n="78"/> Andenken geweiht seyn, und dir von den Göttern allen Segen erflehen.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Nicht so Freund, du sollst Augenzeuge davon seyn, und die Krone aller unserer
+              Glückseligkeit werden. – Thue das liebster Prospero, verlasse mit uns heute Nacht
+              Genua, den Sammelplatz, und Jahrmarkt aller bösen Thaten, den Wohnsitz des
+              tyrannischen Montroso, und werde ein steter Gesellschafter deines Freundes, der all
+              das Bißchen Liebe, das ihm seine Jenny übrig ließ, an dich verschenkte. – Wie
+              freundlich, wie munter, wie fröhlich wird Jenny den Freund ihres Antonio empfangen,
+              wie wird sie all ihr Lächeln, all ihre himmlische Blicke, all ihre entzückende
+              Geberden, unter uns theilen, und uns dadurch in jenes paradisische Leben setzen, wovon
+              so viele Menschen träumten.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Auch das soll geschehen, weil es Antonio wünscht. – Prospero will Genua, will all
+              seine Freunde, will die Welt verlassen, wenn dadurch Antonio's Glückseligkeit
+              wächst.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Du gewährest also meiner Bitte, und verlassest Genua deines Freundes wegen. O
+              Unendlicher! was für Dank ist dir ein Nichts für einen solchen Freund schuldig! für
+              einen Freund, der all die bittern blutigen Opfer der unersättlichen Freundschaft
+              sättiget! – O Prospero wie wenig gleichet die Freundschaft des Orest, und Pilades, –
+              des Polybius für seinen Seneca der deinigen, ein <pb n="79"/> jeder kämpfte um den
+              Tod, den sein Freund erdulden sollte, Polybius erborgte den Namen des Seneca um an
+              seiner statt zu sterben, und Rom zu retten. Die Liebe zum Vaterlande verknüpfte sich
+              bey ihm mit der Freundschaft, und gebar diese edle That in ihm. Bey dir Prospero ist
+              die Freundschaft allein die Mutter deiner edlen Thaten, dich spornt keine
+              Vaterlandsliebe, – keine Ruhmbegierde, – kein Stolz, dich deinem Freunde aufzuopferen;
+              denn was für Ruhm, – was für Würde kann dir ein Freund zum Lohne, zur Vergeltung
+              geben, der bisher auf dem Pfade des Unglückes daher schwankte.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Deine edle Freundschaft, und Liebe gegen mich Antonio, ist mir Lohnes und Ruhmes
+              genug, ja es soll mein größter Stolz seyn, der Freund eines Antonio zu seyn.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Ich danke dir, – ich danke dir Prospero! – – Itzt eile nur, und besorge deine und
+              meine Geschäfte, und lasse nichts unsere Ausführung stören. – In des Quantio Garten
+              treffen wir uns einander gewiß, wann dich deine Geschäfte mich eher zu sprechen
+              abhalten sollten. Die Zeit werd ich dir wissen lassen, und das, sobald sie Jenny wird
+              bestimmet haben.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Alles sollst du nach Wunsche befolgt wissen, lebe wohl! Gott möge uns günstig seyn!
+                <stage>Geht ab.</stage></p>
+          </sp>
+          <pb n="80"/>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Lebe wohl edler Prospero! – Ist wohl in ganz Genua solch ein Freund zu finden! – – O
+              Antonio! geleitet von deinen edlen Freunden, wirst du im Kurzen den Tempel der
+              Glückseligkeit erstiegen haben, und ihn ewig mit dir Jenny, mit dir Göttinn bewohnen.
+              O Jenny! – Welch Freude erwartet unser, wo wird der Seligkeit, der Wonne Anfang, und
+              Ende seyn, – wo die Zeit, der Ort, der nicht Augenzeuge von unsern Umarmungen, und
+              ewig daurenden Zärtlichkeit seyn wird, und davon zum Redner werden soll. – – Gehab
+              dich also wohl Genua, du Vaterstadt der unglücklichen, aber stets rechtschaffenen
+              Bassanios! – Du aber murrischer Graukopf, und unverschämter feiger Campo, wütet, –
+              stürmet, – brauset, – tobet, – und raset nach eueren verlohrnen unschätzbaren Raub,
+              denn ihr habt mich dieses Schatzes beraubt, ihr nichtswürdige, unverschämte,
+              teuflische Barbaren! gleich Strassenräubern, die den – von langen Gehen entschlafenen
+              Wanderer, feig genug ihn wachend anzufallen, seine letzte Nahrung für seinen kranken
+              Magen entreißen, und vor den Augen des erwachten Eigenthümers verzehren, – – sollte
+              ich nun auch wie jener gekränkte die Hände ringen, – die Augen verdrehen, – mit den
+              Zähnen knirschen, – mein Haar verstümpeln, – den Kopf an die Faust stossen, – und mit
+              den Füssen die Erde durchbohren, – <pb n="81"/> sollte ich das? damit ich euch zu
+              euerem Unterhalt ein Possenspiel mache, und ihr euch an mich satt lachen könnt. – –
+              Nein nimmermehr, das soll nie geschehen, so lange Jenny ihren Antonio liebt, fürchtet
+              vielmehr, daß dieß angefangene Possenspiel im kurzen wider alle Regel sich nicht als
+              ein Trauerspiel endige, und Antonio dieser beraubte Bettler von Wuth und Verzweiflung
+              beherzt, als euer Held und Sieger den Schauplatz betrette. <stage>Geht ab.</stage></p>
+          </sp>
+        </div>
+      </div>
+      <pb n="82"/>
+      <div type="act">
+        <head>Fünfter Aufzug.</head>
+        <stage>Die Scene der Garten des Quancio, von beyden Seiten eine Allee. Im Hintergrunde zwey
+          große Kastanienbäume.</stage>
+        <div type="scene">
+          <head>Erster Auftritt.</head>
+          <stage>Antonio, Johann herein tretend.</stage>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Um eilf Uhr, sagtest du, wolle sie gewiß da seyn? – Sprachst du sie selbst? – Doch
+              was frage ich! deine Gestalt sagt es mir ja laut. O Johann! du bist nicht mehr der
+              zerbrechliche, schwache, furchtsame, Fehlervolle, unvollkommene Johann, mir doppelt
+              lieb und werth, bist du ein Wesen, das durch die Annäherung dieser Gottheit die
+              Schwingen und das Feuer eines Seraphs um seine Schulter trägt.</p>
+          </sp>
+          <sp who="#johann">
+            <speaker>Johann.</speaker>
+            <p>Das war ich gnädiger Herr, da sie mit mir sprach, ihre weiße Hand entblößte, und mir
+              selbe zu küssen reichte. Alle Musik der Schwären ist gegen ihre Stimme rauh, und
+              mistönend; ihre Lilien-Hand, gnädiger Herr, o! wär ich ein Handschuh an dieser Hand,
+              um sie stets küssen zu können! – Mit heiliger Ehrfurcht, und tiefer Demuth <pb n="83"
+              /> gleich einen Pilgrim näherte ich mich ihr, da sie mir ihre Hand zu küssen gab, und
+              senkte meine Lippen auf dieß Heiligthum herab, und plötzlich mit dem Kuß durchströmte
+              mich ein himmlisches Entzücken, ich glaubte ein Engel, ein Gott zu seyn.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Sagte ich's dir nicht oft genug, daß es gefährlich sey sie zu sehen, zu sprechen, sie
+              raube einem mit dem ersten Blick alle Besinnungskraft, und mache alle Sehnen
+              trunken.</p>
+          </sp>
+          <sp who="#johann">
+            <speaker>Johann.</speaker>
+            <p>Sie haben Recht gnädiger Herr. – Aber itzt ist mir, als wenn ich aus einem
+              glücklichen Traume, worinn ich ein Gott gewesen, wäre geschrecket worden, und bin
+              wieder ihr alter Johann, ihr treuer Bediente, der sie liebt, und ihnen diesen Engel
+              wünscht, heute wünscht, ja in einer Stunde wünscht, wo sie und ich glücklich sind.</p>
+            <p>O mein Herr! vergeben sie ihrem alten Diener, der sie gar oft noch als ein lallendes
+              Geschöpf auf diesen Händen trug, und ein holdes Lächeln auf ihren Wangen bemerkte,
+              vergeben sie ihm all die Lästerungen, all den Unwillen, all dieß ungestümme Betragen,
+              das er gegen ihre Liebe äusserte, es war bloß Sorgfalt für sie, er bemerkte ihr
+              sonderes Betragen, ihre Abnahme an Munterkeit, ihren Hang nach Einsamkeit, ihre
+              Schwäche, ihr Unvermögen, und fürchtete vollends ihren Tod. – O Gott! was wär aus mir
+              worden, wann sie mein Herr – O der Gedanke tödtet mich schon.</p>
+          </sp>
+          <pb n="84"/>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Guter, ehrlicher, bester Johann!</p>
+          </sp>
+          <sp who="#johann">
+            <speaker>Johann.</speaker>
+            <p>Aber itzt, ist alles vorüber, und sie werden im Kurzen der Glücklichste seyn. Sie
+              haben nicht zu viel gethan gnädiger Herr, ich selbst würde mein altes, und noch zehn
+              junge Leben für ihre Jenny geben.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Und ich Johann, – hätt' ich so viel Leben, wie Hydra Köpfe, alle – alle sollten
+              meiner Jenny geopfert seyn. O! sie ist die Quelle, woraus ein reissender Strom von
+              ununterbrochener Glückseligkeit hervorquillt, der jedes Theilchen meines Wesens mit
+              Wonne des Himmels füllt. – Und Johann sonst sprach sie nichts? Was meynst du? Wird sie
+              wohl Muth genug haben ihren Vater, Freund, all ihre Habe zu verlassen, und mir zu
+              folgen, – einem Unglücklichen zu folgen?</p>
+          </sp>
+          <sp who="#johann">
+            <speaker>Johann.</speaker>
+            <p>Sie ist ein Mädchen mit mehr als männlichen Muth bewaffnet. Sage dem Geliebten meiner
+              Seele, sprach sie: um eilf Uhr soll er mich gewiß da treffen, ich habe Muth genug den
+              Weg zu meinem Antonio, – bey dem allein all mein Bißchen Leben, Glückseligkeit, und
+              künftige Wonne herrscht, – mitten in allen Gefahren, umschlossen von Tygern, und
+              Leoparden zu suchen, und selben zu finden, – gewiß zu finden, soll er meiner List
+              überlassen.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O Weib meiner Seele! unaussprechlich über alles Geliebte! woher all – all die
+              Aufopferung für einen Unglücklichen! doch du bist es, für <pb n="85"/> die ich allein
+              geschaffen bin. O Johann all meine Nerven möchten zerbrechen, zerreissen vor Sehnsucht
+              meine Jenny mit all des Wissens einer ewigen Wonne in meinem armen Herz an Herze zu
+              drücken.</p>
+          </sp>
+          <sp who="#johann">
+            <speaker>Johann.</speaker>
+            <p>Das werden sie ja gnädiger Herr, das werden sie, und bald.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Und bald? O Bester! in jeder der Minuten kleinste liegt Ewigkeit der Erwartung für
+              Liebende. – Auch Prospero verweilt zu lange, eile an Bord, denn dort ist er gewiß zu
+              finden, und sag: daß ich ihn hier erwarte, in aller Eil' erwarte. – Deine Geschäfte
+              sind ja alle besorgt?</p>
+          </sp>
+          <sp who="#johann">
+            <speaker>Johann.</speaker>
+            <p>So wie sie mir selbe aufgetragen. Der Nothgedrückten armen Wittwe, gab ich auf ein
+              ganzes Jahr zum voraus, den übrigen auf vier Monate, sie weinten alle, und wollten mir
+              die Ursache damit abzwingen.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Und dein Vorgeben?</p>
+          </sp>
+          <sp who="#johann">
+            <speaker>Johann.</speaker>
+            <p>Eine schnelle Reise, und baldige Wiederkehr.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Gut, gut! auch soll's ihnen nie entgehen, und in meiner Abwesenheit selbst, sollen
+              sie's durch Valerio erhalten, so lange Antonio athmet, – und das wird er itzt lange.
+              Eile, und erwarte uns bald. – Sey aufmerksam auf alles, damit uns nichts störe, nichts
+              aufhalte.</p>
+          </sp>
+          <sp who="#johann">
+            <speaker>Johann.</speaker>
+            <p>Das werd' ich gnädiger Herr. <stage>für sich.</stage> Aber nie, – nie verließ ich
+              dich mit so schweren <pb n="86"/> Herzen, so ungern, so furchtsam. Gott! mein Herr!
+                <stage>ab.</stage></p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweyter Auftritt.</head>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Was sprach er wohl mit sich selbst? Er nahm gewiß Abschied von diesen holden
+              Gefilden. – Auch ich – auch ich bin euch ein langes Lebewohl schuldig. – Vergieb mir
+              du glänzende Fackel der Nacht, – die du mir so oft diese ganze Gegend zum Paradiese
+              schufst, da du dein gelberes Grün über die dunkeln Bäume ausgoßst, und die Berge, und
+              Spitze der Stadt versilbertest, – vergebt mir ihr beglückte, liebevollen Gegenden, wo
+              ewige Freude wohnet, vergebt einem Liebetrunkenen, daß er euch seine Aufmerksamkeit so
+              lange entzog, aber lange – lange sollt ihr ihn itzt beschäftigen mit frohem Errinneren
+              all des stäten Vergnügens – all des unsterblichen Glückes, das er in euerem Angesicht
+              genoß, denn jede der Errinnerung kleinste füllet meine Nerven, meine Sehnen mit
+              unaussprechlicher Wonne. O wenn ich mich erinnere, wenn ich in die vergangene Tage der
+              höchsten Glückseligkeit zurücksehe, und all das schüchterne Geständniß unserer ersten
+              Liebe, all die göttlichen Umarmungen, und liebetrunkenen Umhalsungen, all die
+              Wonnevollen stammelnde Worte erblicke, und jede der Regungen der himmlischen <pb
+                n="87"/> Empfindungen mindeste in mein liebekrankes Gemüthe zurückführe und alle
+              diese meine abgestorbene Freuden im Kleide der ewig daurenden Glückseligkeit, der
+              meinigen itzt lebenden im dunkeln Haine der Phantasie einander begegnen. O dann, –
+              dann fühle ich, daß ich ein Geschöpf, ein unvermögendes Geschöpf, aber doch ein ewiges
+              Wesen bin, so wie diese holde Erinnerung, diese meine Liebe zu meiner Geliebten ewig,
+              ja ewig ist, und seyn muß! – <stage>Pause</stage> Und das alles genoß ich in euerem
+              Angesichte ihr holden Gefilde, ihr, – ihr seyd die lebendigen Zeugen all dieser
+              Glückseligkeit, und euch – euch soll – euch muß ich verlassen? O! wenn ich aus ganz
+              Genua was mitnehmen wollte, so wäre es diese beglückte über alles beglückte Gegend! –
+              Aber ewiges Errinneren, stätes Andenken sey der Tribut meiner Dankbarkeit. – Gehabt
+              euch also wohl ihr Liebeschaffende holde Gefilde! – gehabt euch wohl ihr Zeugen meiner
+              ewigen, festen Zärtlichkeit, und gegrüsset sey du weite Welt – du noch unbekannter
+              Aufenthalt meiner Liebe, meiner Glückseligkeit! <stage>Pause</stage> O Gott! wie
+              schnell sind deine Wege vom Unglücke zum Glücke, wie nahe deine Hülfe an der Schwelle
+              des Abgrunds, wie ächzte ich noch vor kleinen Stunden nach der letzten Zuflucht in der
+              Verzweiflung, und lächelte, gleich der verzweifelnden Hekuba, meinem Tode entgegen,
+              und itzt – itzt all den großen Plan von Glückseligkeit vor meiner, – all die
+              unendliche Aussicht <pb n="88"/> von ewiger Dauer, all das himmlische Wissen meine
+              Jenny zu besitzen, – im Kurzen zu besitzen; – Ha wie werd' ich meine Arme nach ihr –
+              nach den Engel ausstrecken, sie an mein Herze drücken, in stummen liebetrunkenen
+              Bewegungen mit ihr sprechen, und sie – sie – wie wird sie meine Geliebte von Pflicht,
+              und Liebe getheilt, groß in ihrem Streit daher schwanken! – Gott! – wohlthätige
+              Phantasie! du zeugst mir sie! – Ha sie ist es! – Sie ist es! laß dich umarmen, laß
+              dich umhalsen Engel des Himmels! du! du! über – über alles Geliebteste! <stage>(er
+                macht ein Geberde der Umarmung)</stage> O! Betrug! – schändlicher Betrug!
+              trügerische Phantasie. Gott! – ich glaubte dich Jenny dich – dich – zu umarmen, und
+              umarmete Luft, leeren Raum. <stage>Pause.</stage> Doch, ich höre Schritte eines
+              Kommenden, gewiß – gewiß bist du es Jenny. <stage>Prospero kömmt.</stage> O Prospero!
+              auch du willkommen, – willkommen Hälfte meiner Seele!</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt.</head>
+          <stage>Prospero, Antonio.</stage>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>O Freund! <stage>er küßt ihn,</stage> nun, nun bist du deinem Ziele am nächsten. Alle
+              Anstalten sind getroffen, und die spröde Aurora soll uns schon auf dem Meere finden. –
+              Alles – alles scheint unser Vorhaben zu begünstigen, <pb n="89"/> selbst die brausende
+              Orkane, die heute auf allen Fluthen, und Meeren ein lautes Gebrüll anstimmten, sind in
+              der hohlen Tiefe der Erde verschlossen, und stumm geworden.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Auch ich – auch ich werde in diesen so seligen Aufenthalt meiner Glückseligkeit,
+              diese so feyerliche tiefe Stille gewahr. – Nichts als kühlende Weste hauchen umher,
+              und schmiegen die Blätter dieser Stämme, – gleich einem Paar zärtlich Geliebten,
+              aneinander.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Das Schiff liegt bereit, und günstige Winde küssen mit froher Ungeduld die
+              schwellende Segel. Eine schnelle Fahrt soll uns bald an Ort und Stelle bringen. – Nur
+              sage, welchen Ort hast du zu deinem künftigen Aufenthalt, – zu dem Genuß deiner ewigen
+              Seligkeit bestimmt.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Engelland, der Sitz zweyer meiner besten Freunden, sey unser Aufenthalt. M. Surrey,
+              und M. Quinkly beyde Männer von viel bedeutenden Verdiensten, und der stärksten
+              Freundschaft fähig, werden uns mit offenen Armen, und Herzen empfangen, und all ihr
+              Glücke mit uns theilen.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Nun so sey Engelland die Freystadt deiner Liebe, – der Schutz unserer Glückseligkeit.
+              – Ich hab von allen meinen Freunden stillen Abschied genommen, und folge dir in alle
+              Welt. – Hast du aber auch für deinen künftigen Unterhalt gesorgt?</p>
+          </sp>
+          <pb n="90"/>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Das hab ich. Von meinem Oheim nahm ich Abschied, ohne daß er's wußte. Aber Gott! das
+              war ein Lebewohl, daß mir ein zweytes das Leben kosten würde. – O siehe – den alten
+              rechtschaffenen Bassanio! das Ebenbild meines Vaters, wie er meine Verwirrung gewahr
+              wurde, wie er bat ihm alles zu entdecken, und er wolle mir seine Hülfe nie versagen. –
+              Heiße Thränen füllten das Auge des Greises, sie rollten, wie Regen, über seine Wangen,
+              er suchte sie zu verbergen, und indem er sie verbirgt, fielen selbe auf mich,
+              entzunden meine Wangen, und es strömten Kanäle von Thränen über mein krankes Gesicht.
+              – – O Prospero! es fehlte unendlich wenig, um ihm alles zu entdecken, aber unendlich
+              wenig war hier genug, – stark zu bleiben. – Ich riß mich aus seinen schwachen Armen,
+              und verließ ihn laut weinend. – Er floh mir nach, und schrie – O! ich höre noch immer
+              seine thränenschwangere Worte! – Wohin Neffe? du bist fürchterlich, bleib, kann ich
+              dir helfen mit meinem Leben, das ohnehin nur kurze Tage dauern wird! – Aber seine
+              Stimme war zu schwach mich zu halten.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Noch kann sie's, noch ist es Zeit. Und er würde gewiß dir nichts in Wege setzen, –
+              dein Vorhaben gewiß nicht unterbrechen.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Unterbrechen nicht, auch nichts in Wege legen, aber verlängern, – erschweren würde
+              er's doch, und wer weiß, was seine Sorgfalt, und Liebe alles thäte.</p>
+          </sp>
+          <pb n="91"/>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Deine übrige Freunde vergaßest du doch nicht?</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Wie sollt' ich – wie sollt ich das? Allen sagte ich ein stilles Lebewohl. Zuletzt,
+              gegen neun Uhr, da eben dieser so bleiche Mond langsam aufstand, seinen frechen,
+              gebieterischen Arm ausstreckte, und den dicken schwarzen Schleyer der Nacht zerriß, –
+              besuchte ich die Grabstätte meines Vaters, ein schreckliches Bild für Liebende; vor
+              kurzen Jahren dacht ich so liebevoll, wie du, gegen seine Gattinn deine Mutter, und
+              itzt beyde eine Hand voll Staub. – O Gott! ich warf mich laut weinend auf den kaum
+              erhabenen Hügel seines Grabes, und brachte ihm den letzten Zoll meiner Thränen; Du
+              warst nicht einer von den Vätern, sprach ich, laut schluchzend, deren Eigensinn, und
+              Grausamkeit die Kinder zwingt, ihre väterliche Fluren zu verlassen! – und doch muß ich
+              – muß dein Grabe, – dich verlassen.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>O! wie richtig sind deine Anmerkungen, Freund! Wie viele entfliehen nicht der Luft
+              ihres Vaterlandes, wie viele nützliche Glieder verlieret nicht der blühende Staat, wie
+              viele Freunde der Freund, und das alles durch dich verdammter Zwang! – Verwünschter
+              Eigensinn!</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>In diesen Empfindungen meines Nichts, in diesem Gefühle meines geringen,
+              nichtsbedeutenden Daseyns, und in diesem Sturm vom Schmerz und Betäubung harrte ich
+              beynahe eine <pb n="92"/> ganze Stunde. Aber auf einmal gieng meine ganze Seele auf in
+              Hoffnung – in Hoffnung der ewigen Glückseligkeit; Ich verließ den finstern Platz des
+              traurigen Erinnerns, und eilte hieher in Begleitung meines treuen Johanns, um im
+              Kurzen dich, und meine Jenny – mein Leben zu finden.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Ich wär eher da gewesen, aber die Sorge für die Bequemlichkeit deiner Jenny
+              verlängerte meine Geschäfte. Johann begegnete mich an der ersten Gartenthüre, ich war
+              im Fluge hieher, und glaubte dich mit deiner Geliebten schon bereit zu finden.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Die eilfte Stunde setzte sie fest.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Und die ist schon nahe.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O! sie wird kommen – gewiß kommen, mein Herz – mein Herz sagt mir das. – O denke
+              einmal, was ihr das alles kosten wird, ihren Vater, ihr Vaterland, ihre Freunde zu
+              verlassen. – O Prospero der Kampf ist schwer, – ist fürchterlich für ein Mädchen.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>O das liebende Mädchen findet Vater, Vaterland, Freund, alles in dem Manne ihrer
+              Seele, in dem über alles alles Geliebtesten.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Und der Geliebte alle Glückseligkeit, alles Leben, alle Unsterblichkeit in dem Weibe
+              seines Herzens. – Aber Prospero ein beständiger Wechsel von Furcht und Hoffnung
+              durchbebet meine Seele, unwillkührliche Schauer durchlaufen meine Glieder. <pb n="93"
+              /> – Ich höre ein Geräusch! wer kömmt! Schritte! – <stage>Jenny innerhalb der
+                Bühne</stage> Antonio! – Antonio!</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Ha! sie ist es! sie ist es! meine Jenny! Jenny!</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt.</head>
+          <stage>Jenny. In nachläßiger Kleidung, ihr Haar aufgelöst herunterhangend, von Furcht und
+            Schrecken betäubt.</stage>
+          <stage>Die Vorigen.</stage>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <stage>dem Antonio in die Arme laufend.</stage>
+            <p>O Antonio! rette – rette deine Jenny!</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Wovon Geliebte meiner Seele! sage, was ist dir begegnet?</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Ha! ich bin bey dir, in deinen Armen! nun verfolgt mich nichts – nun fürcht ich
+              nichts – nun sind alle diese Ungeheuer fort, verschwunden, nicht mehr!</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Was für Ungeheuer verfolgten meine Jenny? Wo sind sie? Rede Geliebte.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Hier nahe in jenem Gestrippe lauerten auf mich ein Heer von Ungeheuer, Löwen, Tyger,
+              Schlangen, die alle von zehntägigen Hunger entbrannt, mein Blut schon von ferne
+              lechzten. Aber ich floh, schrie deinen Namen, und aus Ehrfurcht für ihn wichen sie
+              zurück.</p>
+          </sp>
+          <pb n="94"/>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Es war nichts Jenny, nur Bilder, Ungeheuer, die deine Furcht, – diese große
+              Eigenschaft aller Weiber – gebärte, und für das sie auch meine Jenny hält.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Da ich nur bey dir bin Geliebtester – da ich nur dich wieder umarmen kann, so ist
+              alles gut, so bekommt die todte Jenny wieder Leben. <stage>Sie umarmt ihn.</stage></p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Hange – hange hier, – wie die Rose, Weib meiner Seele, bis der Stamm stirbt, und dann
+              –</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Und dann? Und dann stirbt die Rose gewiß.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Nicht so meine Jenny! lange – lange lebe itzt der Stamm, der all seinen Werth, Größe,
+              Schönheit, und Zierde, von der hangenden Blüthe erhält. – Kein stürmischer Winter
+              entblättere diese Blüthe, sondern ewige Sonnen, stäte Frühlinge geben ihr ein ewig
+              langes Leben.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>O Antonio Schauder, Furcht, Schrecken durchbohren noch immer das liebesieche Mädchen.
+              Komm! – Komm, eile von hier, – verlasse diesen Aufenthalt unserer verstorbenen
+              Freuden, verlasse Genua – komm! Antonio komm!</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Das wollen wir, – das wollen wir, und gleich. – O! wer wünscht es mehr als Antonio
+              seine Jenny sicher, frey von Furcht besitzen zu können. Auch Prospero mein Freund,
+              dein Freund, <pb n="95"/> verlaßt um seines Freundeswillen Genua, wird unser
+              Gesellschafter, und Jenny wird dem Vertrauten ihres Antonio ihre Freundschaft nicht
+              versagen.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Wie könnt' ich – wie könnt ich das? – O Prospero auch sie sollen um meines Antonio
+              Willen von mir geliebet seyn. Da sie an aller Gefahr, an allem Unglücke so viel Theil
+              nehmen. – Aber machen – machen sie, daß wir fortkommen, <stage>sie faßt ihn bey der
+                Hand.</stage> O! ich bitte sie, machen sie, seyn sie auch mein Freund, da sie der
+              Freund meines Antonio sind.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>In kleinen Minuten soll all ihr Verlangen vollzohen seyn. – Ich will nur die hintere
+              Gartenthüre öffnen lassen, damit wir eher am Bord sind. –</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Eilen sie, – eilen sie! und dieß soll die Krone all ihrer Freundschaft seyn. Nur bald
+              – nur bald. <stage>Prospero ab.</stage></p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Besorge nichts meine Jenny. Das Ungewitter ist itzt vorüber, und der schwarzdrohende
+              Himmel ist aufgeheitert, und ehern. – In den Armen deines Antonio sollst du bald
+              sicher vor Nachstellung auf dem Meere seyn, und dann! – bedenke Jenny! welches Glücke!
+              welche Seligkeit! welch ein Himmel! welch eine ununterbrochene Kette von himmlischen
+              Entzückungen erwartet unser. – O! bedenke das einmal, und alle Furcht, Angst,
+              Schrecken, alle diese Kinder der leichtglaubigen Zaghaftigkeit ersterben in deiner
+              Seele.</p>
+          </sp>
+          <pb n="96"/>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Erkranken können sie wohl, aber sterben nie. – Siehe nur das arme gekränkte Mädchen,
+              wie sie – aus Liebe für den Liebling ihrer Seele, an dem Tage, wo sie ihrem
+              Angedrungenen die Hand reichen soll, – dem Hause ihres grausamen Vaters, – wo alles
+              Aug, alles Ohr ist, entrinnt, – zu dem Geliebten ihrer Seele voll Verlangen, voll
+              Sehnsucht mit ihm ewig vereinigt zu seyn, eilt, – ihn findet, ihn umarmet, umhalset,
+              rasend von Vergnügen, und Hofnung einer ewigen Dauer da stehet – und auf einmal
+              vermißt die Grausamkeit, die Tyranney den schwachen Gegenstand, – man wütet! man
+              raset! man suchet! – man findet! Gott! – findet das Liebende Mädchen in den Händen, in
+              den Armen ihres wahrhaft Geliebten! – und dann, – dann – man entreisset sie ihm, und
+              er – er wird das schnelle Opfer ihrer Rache, ihres Grimmes. – Gott! Barbaren!
+              Unglückliche!</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Das soll nie, – das wird nie geschehen. Beruhige dich! besorge Nichts meine Jenny. –
+              Nun bist du bey mir, und im Kurzen mit mir, weit – weit von deinem grausamen Vater –
+              von Genua deiner – meiner Vaterstadt.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Ich habe keinen Vater, denn Väter können nicht so grausam seyn. Die Welt ist meine
+              Vaterstadt, und dieß – dieß <stage>(sie zieht einen Dolch hervor.</stage>
+              <pb n="97"/> mein Freund, der Freund aller Unglücklichen, Armen, Gefangenen,
+              Betrübten, Kummervollen.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Was soll das? Wozu das. Jenny gieb – gieb mir ihn.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Ja du sollst ihn haben. Hier <stage>(sie giebt ihm den Dolch)</stage> hier hast du
+              den Freund deiner Jenny, der sie alle Gefahren, alle Gewalt verachten lehrte. Ich
+              raubte ihn dem alten Montroso, und trug ihn schon seit drey Tagen bey mir. – Ich
+              wollte mir nur den Weg zu meinem Antonio damit bahnen, wenn ihn einer kühn genug
+              unterbrechen wollte; aber Niemand – Niemand bemerkte meine Flucht, ich verließ durch
+              ein Vorgeben die trunkene Gesellschaft, eilte in mein Zimmer, entfernte durch List
+              meine Hannach, lief die Treppe hinunter und fort – fort immer fort – Gott! ich glaube
+              den Weg vor meiner verschlungen zu haben, – bis ich bey dir war, bis du bey mir warst
+              – bis wir beysammen waren.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Und das sollen wir auch ewig seyn. Nichts Jenny – nichts soll uns trennen, nichts
+              scheiden, selbst der Tod – der Tod, dieses so sichere Ziel unsers Lebens, soll uns
+              nicht theilen, – sterben wollen wir einst, – sterben müssen wir, aber beysammen
+              vereinigt, miteinander, in tausend Umarmungen, Umhalsungen – und in dieser Stellung
+              unaussprechliche Ewigkeiten durchleben vor dem Throne des Weisesten.</p>
+          </sp>
+          <pb n="98"/>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Schon lange wollte Jenny ihr Leben für ihren Antonio hingeben, das kann dieser Dolch
+              sagen.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O Jenny! so wolltest du für deinen Antonio sterben, erblassen.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Ja – ja den heiligen Selbstmord zur Rettung eines qualvollen lasterhaften Lebens,
+              denn ich könnte ohne dich nicht glücklich, nicht tugendhaft – nicht fromm seyn.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Und ich Weib, ich wollte tausendmal sterben, und wieder aufleben, und noch immer
+              fragen, ob ich noch tausend Leben, noch ein Gefühl hätte für dich zu leiden, für dich
+              zu sterben. – O Jenny – Jenny die Göttinn der Liebe hat alle ihre heiligen Städte, und
+              geweihten Haine verlassen, und sich völlig, – ganz in mich gestürzt.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Meine Thathen schreien dir laut genug zu, sie liebt dich! sie liebt dich über alles!
+              – aber um dieser Liebe Willen komm – komm, verlassen wir diesen Ort, eile von hier,
+              tausend Gedanken, alle so schwarz wie die tiefe Nacht – durchkreuzen meine Seele, die
+              Erde scheint unter meinen Füssen zu wanken, zu beben, komm! – komm! – eile!</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Nur noch einen Kuß, den letzten, den Abschiedskuß von Genua, und dann fort, fort weit
+              fort. – <stage>Prospero kömmt.</stage> Gut, daß du kommest Prospero, meine Jenny
+              fürchtet, wir wollen fort, komm, eile!</p>
+          </sp>
+          <pb n="99"/>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Die Thüre ist geöfnet, ich selbst that's, und da wurde ich ein Geräusch an der
+              Terrasse gewahr.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Ein Geräusch! was für ein Geräusch? Reden sie.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Nichts mein Fräulein. Ein unbedeutender Zwist von Schwelgern, Unruhigen. –
+              Drunkenbolde.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Wie sie mir Angst machten.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Sorge nichts. Deine Hand, und wir gehen. Komm Geliebteste, komm Weib meiner
+              Seele.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>O lebet wohl ihr Gefilde lebet wohl ihr stillen Zeugen meiner ewigen Liebe. Ganz
+              Genua will ich vergessen, nur euch – nur euch sey ewiges Andenken geweiht. – O in
+              deinen Armen. Antonio – wie glücklich! <stage>Sie gehen.</stage></p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <stage>in abgehen</stage>
+            <p>Wer kömmt da so eilig gelaufen? – Himmel täuscht mich mein Gesicht? – Oder ist es
+              Traum.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Gott! es ist Valerio, was will er? Was bringt er?</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Er will gewiß noch einmal Abschied nehmen.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Himmel! er sieht blaß! er zittert.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Nicht so Jenny, beruhige dich, der Mond – der Mond gab ihm die Farbe.</p>
+          </sp>
+        </div>
+        <pb n="100"/>
+        <div type="scene">
+          <head>Fünfter Auftritt.</head>
+          <stage>Valerio, die Vorigen.</stage>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <stage>Athemlos.</stage>
+            <p>O! Freund! – Freund! – Jenny! – Unglückliche! –</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Rede, sage, glaubst du mich zu schwach deine Worte zu ertragen, rede. O! ich sehe
+              schon, die Hölle, die tiefste Hölle liegt auf deiner Zunge, entlade sie! entlade!
+              Gott!</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>O! verrathen! entdecket! gefunden! – verloren! –</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Welcher Teufel! welcher Verdammter hat das? –</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Der Bediente des Campo sah Jenny hieher in Garten fliehen.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Und ich sah ihn nicht, ertappte ihn nicht, erhaschte ihn nicht, und stieß nicht den
+              Dolch in sein verrätherisches Herz, daß er stumm geworden wäre, so stumm – so stumm
+              wie das Grab. Gott! Elende! o rette dich Antonio! rette mich! retten wir uns! komm –
+              komm –</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Wohin? In die Hände des Unsinnigen! – in die Hände, die noch von Blut träufen.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Von Blut! wessen Blut! von meinen!</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Hannach die Unglückliche war das Opfer seiner ersten Wuth.</p>
+          </sp>
+          <pb n="101"/>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Hannach, Hannach! du todt, meinetwegen das Opfer des Tyrannen. O spalte Erde, falle
+              Himmel, wütet ihr Elemente, brauset Orkane, wütet, raset, verheeret, vertilget, tödtet
+              alles, was einem Vater ähnlich ist, und laßt die Welt keinen Schauplatz mehr seyn, wo
+              grausame Väter herrschen. – Aber komm Antonio! fliehen wir an Bord! und fort! und wer
+              wird uns da einholen? – Komm!</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Auch das ist vergebens. Das Schiff das für euch bereit lag, ist bewachet, alle
+              Anstalten zerstöret, und an jeder Gartenthüre Aufseher gestellt, die euch ihn in die
+              Hände lieferten. – Bleibt, vielleicht vergiebt er euch –</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>So hat uns der Himmel auch diese letzte Hoffnung geraubt. O Allgütiger! warum goßest
+              du noch vor kurzen Stunden so viel Hoffnung in meine Seele, warum beschäftigtest mich
+              mit so viel Aussichten der ewigen Wonne, warum zeigtest du mir den großen Plan von
+              Glückseligkeit? – Um itzt den Verlust alles dessen stärker zu fühlen, um gerissen,
+              getrennt von meiner Jenny den Tod tausendfach zu empfinden. – O Gott! welche Qual –
+              welche Pein – welche Hölle ist der meinigen gleich?</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>O glaube nichts Antonio! glaube nichts, wer soll uns da aufhalten, wer soll, wer kann
+              das, – hast du nicht einen Dolch, und eine männliche Faust. <pb n="102"/> Komm, gieb
+              mir ihn, gieb mir ihn, ich bin ein Weib, und will dich's lehren. Komm! – Komm!</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Schönste, beste, liebste Jenny! bleibe hier, hier bey deinem Antonio, in meinen
+              Armen, an meinen Halse soll er dich finden. Wo willst du hin, du entfliehest von den
+              Trümmern des zerrütteten Schiffes um desto eher zu verderben.</p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>Ha! ich sehe ihn dort unten herauf kommen, seine Wuth voran. Gott er ist
+              fürchterlich, ich will ihm entgegen, ihn mit meinen schwachen Armen zurückhalten. – O
+              unglückliche Jenny! unglücklicher Antonio! <stage>ab.</stage></p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>O er kommt! er kommt! und wir bleiben da? Und du bleibst da Antonio? – O Mond
+              verhülle dein Gesicht! und du tiefe Nacht laß deinen schwarzen Schleier auf uns
+              fallen! erlöschet ihr Sterne, und speyet Finsterniß herab! o möchte diese Nacht –
+              diese so sündige Nacht aus aller Zeit vertilgt seyn! o möchte sie dunkel und öde, wie
+              die Hölle seyn! immer nach dem ersten Strale des Morgens seufzen, und ihn vergebens
+              erwarten! keine Stimme der Freude, kein Seufzer der Liebe belebe diese Gegend! sondern
+              lärmende, tobende, wütende Verzweiflung erschalle von allen Seiten, das Winseln der
+              armen Elenden fülle die Luft, und das Hohngelächter der Hölle jauchze über den
+              Triumpf, den die Barbarey erhält! – Denn du bist es Nacht, die mich der Tyranney in
+              die Hände giebt.</p>
+          </sp>
+          <pb n="103"/>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Noch bist du's nicht, – noch bist du in meinen Armen – in den Armen deines Antonio,
+              und wer uns trennen will, muß ein Feuer von Himmel stehlen, dessen Gewalt, Welten von
+              Welten, Sonnen von Sonnen scheiden kann. – O Prospero! und du stehst da wild,
+              sprachlos, entseelt.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>Der Schmerz, – der Antheil, den ich an eueren Schicksale fühle, hat meine Zunge
+              gebunden, – hat alle meine Sinnen betäubt, getödtet.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O Prospero! der Himmel hatte mir alles hienieden gegeben, eine Geliebte – eine
+              Gattinn, die die Seele meines schwachen Körpers ist, und einen Freund, der mir sein
+              Leben opferte. – O ich kann ruhig sterben – ruhig euch verlassen; – denn wo kann ich
+              leben, – wo athmen ohne dich – ohne dich stets über alles geliebteste! – Nur noch
+              einen Dienst Prospero, eile zu meinem Oheim, entdecke ihm mein ganzes Vorhaben,
+              erzähle ihm alles, zeige ihm das ganze widrige Verhängniß, das auf mich los stürzt,
+              und sey die Sterbeglocke meines Todes, sag ihm: daß ich meine Jenny verliere, und mit
+              ihr all mein Leben dahineile, ich sey schwach, und werde diesen Verlust nicht
+              aushalten.</p>
+          </sp>
+          <sp who="#prospero">
+            <speaker>Prospero.</speaker>
+            <p>O grausames Geschick! verdammtes Verhängniß! – Ich fliehe zu dir redlicher Bassanio,
+              damit du eilest, laufest, ihn rettest. – O! vielleicht kannst du es. <stage>lauft
+                ab.</stage></p>
+          </sp>
+          <pb n="104"/>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Horch! ich höre ihn kommen, hörst du nicht sein lautes Jauchzen? Das Brüllen seines
+              Grimmes? Die tolle Freude seines Triumpfes? Fort! – fort! – du Ungeheuer von meiner
+              Seite! fahre nicht nach meinen Antonio! o siehst du Antonio? Seine Haare sind
+              Schlangen, seine Augen funkeln – hörst du das Knirschen der Zähne? Das Aechzen seiner
+              Wuth? O Gott, seine Hände voll Blut und Dolche! <stage>sie fällt dem Antonio in die
+                Arme.</stage></p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Ich sehe nichts Jenny, höre nichts, als dich. Gott! du träumest, bist fürchterlich,
+              dein Geist blickt wild aus deinem Gesichte hervor, und macht mich zittern.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Ist er noch nicht da? Ha! so wird er kommen, mich dir entreissen, dich verfolgen,
+              beleidigen, und dann mich Morgens über alle Meere schleppen! wo ich dich nimmer finde,
+              wo du mich nimmer findest. – O Antonio! Antonio! gieb – gieb mir meinen Dolch, und
+              dann – dann sollen sie kommen – und mich dir rauben! die Grausamen.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Nein Jenny! nein Geliebteste! – Ich fürchte, deine kranken Sinnen – die Sorge für
+              dich – laß – laß, du bist ein Weib!</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>Ha! meine Sinnen sind gesund, du bist Antonio mein Geliebter, – ich Jenny dein Weib,
+              – der Barbar der mich dir entreißt Montroso. – Ha! keine kranke Sinnen! – O!
+                <stage>sie fällt ihm zu Füssen.</stage> Gieb mir diesen Dolch, damit ich <pb n="105"
+              /> dich rette, mich rette, o Antonio gieb – gieb! um all der Liebe Willen! um all der
+              ehemaligen Glückseligkeit.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O du brichst mir in dieser Stellung das Herz. – Steh auf meine Jenny. – Die Liebe zu
+              dir Geliebte – deine Zerstreuung – bedenke was du foderst.</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <stage>Verzweiflend.</stage>
+            <p>Auch du grausam, Antonio! o Grausamer! so zeig mir ihn nur, und meine ganze Seele
+              sollst du in meinem Augen finden.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Da – <stage>er zieht den Dolch in der Faust haltend hervor, und zeiget ihn der
+                Jenny.</stage> Da ist er – aber –</p>
+          </sp>
+          <sp who="#jenny">
+            <speaker>Jenny.</speaker>
+            <p>O! du bist es noch! noch mein Freund! du befreyest mich von Campo, und vereinigest
+              mich ewig mit Antonio. <stage>Sie ergreift die Faust des Antonio und durchstößt sich
+                die Brust.</stage> Antonio! <stage>fallend.</stage> Ha! – geschehen, geschehen,
+              deine Gnade Barmherzigster! Antonio! An – tonio – <stage>sie stirbt.</stage></p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <stage>Er fällt von Schmerz betäubt auf den Leichnam nieder.</stage>
+            <p>O Jenny! Jenny! Jenny! du todt! Grausame! warum müßtest du mich zurücklassen! mich
+              verlassen! Gott! Gott! du todt! und ich lebe! Jenny! Jenny! wie kann ich leben, da
+              mein Herz todt ist! – O verfluchter Arm! verfluchte Nerven, die ihr diesen Stoß nicht
+              zurückhalten konntet! – aber du bist glücklich Jenny! glücklicher als ich. – O Jenny!
+              du winkst mir zu, du rufst <pb n="106"/> mir zu, wo ich bleibe! warum ich zögere! o
+              ich komme – komme in deine Arme! <stage>er ergreift den Dolch springt auf in höchster
+                Verzweiflung, und will sich durchstossen. – auf einmal wirft er den Dolch von
+                sich.</stage> Fort Gedanke! fort! fort aus meiner Seele! in dir steckt ein
+              Verbrechen, das keine Reue mehr zuläßt! – O Jenny! <stage>er fällt wieder neben ihr
+                nieder</stage> Jenny! Liebste! Beste! Weib meiner Seele! hier! hier zu deinen Füssen
+              will ich mein Leben aushauchen! – werde es! – O ich fühle schon.</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <stage>innerhalb der Scene.</stage>
+            <p>Wo ist sie? Wo ist sie? Die Ungehorsame.</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O komm Teufel und siehe dein Werk.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Sechster, und letzter Auftritt.</head>
+          <stage>Montroso. Mit entblößten Dolch, den Valerio zurückhalten will.</stage>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <stage>in höchster Wuth.</stage>
+            <p>Fort! – O Ungehorsame! Eigensinnige! Verfluchte! Wo bist du? <stage>er erblickt
+                Jenny</stage> O Tochter! Tochter! Jenny!</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>Sieh dein Werk Barbar!</p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Du da! <stage>er ersticht mit zwey Stößen den Antonio.</stage> Verdammter,
+              verfluchter, mörderischer Bube! stirb! – stirb!</p>
+          </sp>
+          <sp who="#antonio">
+            <speaker>Antonio.</speaker>
+            <p>O ich danke dir! du erfüllest alle meine Wünsche! – giebst mir alle Glückseligkeit! –
+                <pb n="107"/> du vereinigest uns! aber wisse, – nicht ich – nicht ich – sie selbst
+              hat diesen Tempel entheiliget – sie vergiebt dir – ich vergieb dir Jenny! – Jenny! –
+              ich komme! <stage>er stirbt.</stage></p>
+          </sp>
+          <sp who="#montroso">
+            <speaker>Montroso.</speaker>
+            <p>Ist das wahr! O wo kann ich Vergebung finden? Wo eine Marter die das Vergehen
+              auslösche? – O meine Jenny! o unglücklicher Bassanio, und doch glücklicher als ich,
+              Gott! Gott! warum zögert deine Rache, laß Feuer vom Himmel fallen, und mich verzehren!
+              Ach Gott! Valerio! <stage>er fällt in die Arme des Valerio.</stage></p>
+          </sp>
+          <sp who="#valerio">
+            <speaker>Valerio.</speaker>
+            <p>O Jenny! o Antonio! wer kann euer Schicksal genug beweinnen? O Gott! wie schön, wie
+              angenehm, wie bezaubernd ist es ein Vater zu seyn, und wie schändlich, häßlich,
+              verdammt, teuflisch ist es, die Gewalt eines Vaters zu misbrauchen.</p>
+          </sp>
+          <trailer>Ende des Trauerspiels.</trailer>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

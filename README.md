@@ -1,6 +1,6 @@
 # GerDraCor
 ## Corpus Description
-This is the German Drama Corpus (GerDraCor), a collection of [TEI P5](https://tei-c.org/guidelines/p5/)-encoded German-language plays from the 1500s to the 1940s. The corpus is released under the Creative Commons Zero copyright waiver ([CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)).
+This is the German Drama Corpus (GerDraCor), a collection of [TEI P5](https://tei-c.org/guidelines/p5/)-encoded German-language plays from the 1500s to the 1940s. The corpus is released under the Creative Commons Zero copyright waiver ([CC0](https://creativecommons.org/public-domain/cc0/)).
 
 If you want to cite the corpus, please use this publication:
 
@@ -10,17 +10,14 @@ We started to build the corpus by extracting all plays from TextGrid Repository 
 
 GerDraCor is an autonomous corpus and will be maintained independently. Yet it is also integrated into the [dracor.org website](https://dracor.org/), the showcase for our newly introduced **"Programmable Corpora"** concept.
 
-If you just want to download the corpus in its current state in XML-TEI, do this:
-
-`svn export https://github.com/dracor-org/gerdracor/trunk/tei`
-
 ### Credits
 
 * Editors: [Frank Fischer](https://lehkost.github.io/), [Peer Trilcke](https://www.uni-potsdam.de/de/lit-19-jhd/peertrilcke/)
-* Support during the initial compilation of the corpus from TextGrid Repository: Mathias Göbel, [Dario Kampkaspar](https://www.ulb.tu-darmstadt.de/die_bibliothek/ueberuns/organisation/kontakt_details_17792.en.jsp) (Technical University of Darmstadt/ACDH-CH, Vienna)
+* Support during the initial compilation of the corpus from TextGrid Repository: [Mathias Göbel](https://sub.uni-goettingen.de/en/contact/staff-a-z/staff-details/person/mathias-goebel/) (Göttingen State and University Library), [Dario Kampkaspar](https://www.ulb.tu-darmstadt.de/die_bibliothek/ueberuns/organisation/kontakt_details_17792.en.jsp) (Technical University of Darmstadt/ACDH-CH, Vienna)
 * Additional encoders: [Erik Renz](https://www.germanistik.uni-rostock.de/personen/wiss-mitarbeitende/erik-renz/) (University of Rostock)
 * Bibliographic research: [Lilly Welz](https://www.temporal-communities.de/people/welz/index.html) (Freie Universität Berlin)
 * Character annotations: [Nathalie Wiedmer](https://uni-tuebingen.de/forschung/forschungsschwerpunkte/sonderforschungsbereiche/sfb-andere-aesthetik/organisation/mitglieder-alphabetisch/nathalie-wiedmer/) (University of Tübingen), [Janis Pagel](https://janispagel.de/), [Nils Reiter](https://nilsreiter.de/) (both University of Cologne)
+* Systematic OCR error cleanup: [Jan Jokisch](https://www.aesthetics.mpg.de/institut/mitarbeiterinnen/jan-jokisch.html) (Max-Planck-Institut für empirische Ästhetik)
 
 ### Character Relations
 
@@ -40,44 +37,56 @@ The following relations have been annotated (by [Nathalie Wiedmer et al.](https:
 
 All relations are marked in XML in the `<listPerson>` element within `<listRelation>`. Directed relations are encoded with an `active` and `passive` attribute where the active part is always the one in front of the relation, if expressed as a sentence. E.g., *Odoardo is parent of Emilia* translates to this:
 
-  <relation name="parent_of" active="#odoardo_galotti" passive="#emilia" />
+`<relation name="parent_of" active="#odoardo_galotti" passive="#emilia" />`
 
 Undirected relations use the `mutual` attribute to collect all IDs that are part of a relationship:
 	
-  <relation name="spouses" mutual="#baerbel #adam"/>
+`<relation name="spouses" mutual="#baerbel #adam"/>`
 
 The label from the table above is contained in the `name` attribute.
 
 ## API
-An easy way to download the network data (instead of the actual TEI files) is to use our API ([documentation here](https://dracor.org/doc/api)). If you have [jq](https://blog.appoptics.com/jq-json/) installed, it would work like this:
+An easy way to download the network data (instead of the actual TEI files) is to use our API ([documentation here](https://dracor.org/doc/api)). If you have [jq](https://jqlang.org/) installed, it would work like this:
 
 ```
-for play in `curl 'https://dracor.org/api/corpora/ger' | jq -r ".dramas[] .name"`; do
-    wget -O "$play".csv https://dracor.org/api/corpora/ger/play/"$play"/networkdata/csv
+for play in `curl 'https://dracor.org/api/v1/corpora/ger' | jq -r ".plays[] .name"`; do
+    wget -O "$play".csv https://dracor.org/api/v1/corpora/ger/plays/"$play"/networkdata/csv
 done
 ```
 
-The API info page is at `https://dracor.org/api/info`. It also tells you which version of eXist-db we're running on dracor.org.
+The API info page is at `https://dracor.org/api/v1/info`. It also tells you which version of eXist-db we're running on dracor.org.
 
-## Simple Visualisation with R
-To take a first look at the distribution of the number of speakers per play over time, you could feed the metadata table into R:
-
+## Visualising GerDraCor with R
+Explore the distribution of speakers per play over time by loading the metadata directly from the API:
 ```
 library(data.table)
 library(ggplot2)
-gerdracor <- fread("https://dracor.org/api/corpora/ger/metadata/csv")
+gerdracor <- fread("https://dracor.org/api/v1/corpora/ger/metadata/csv")
 ggplot(gerdracor[], aes(x = yearNormalized, y = numOfSpeakers)) + geom_point()
 ```
 
-Result:
+This produces a scatter plot showing character counts across centuries:
 
 ![number of speakers per play over time](numOfSpeakers.png)
 
-Here is a barplot showing the number of plays per decade (outdated, not containing most recent changes):
+To visualise the temporal distribution of plays by decade:
+
+```
+library(httr)
+library(jsonlite)
+response <- GET("https://dracor.org/api/v1/corpora/ger/metadata")
+metadata <- fromJSON(content(response, "text", encoding = "UTF-8"))
+decades <- floor(metadata$yearNormalized / 10) * 10
+all_decades <- seq(min(decades, na.rm = TRUE), max(decades, na.rm = TRUE), 10)
+barplot(table(factor(decades, levels = all_decades)), col = "lightgray", las = 2, xlab = "decade", ylab = "numOfPlays")
+grid(nx = NA, ny = NULL)
+```
+
+This creates a barplot of play frequencies across decades:
 
 ![number of plays per decade](playsPerDecade.png)
 
 ## A Bit of History
-Until we rebuilt our working corpus under its new name GerDraCor, we've been working with an [intermediary format](https://github.com/dlina/project/tree/master/data/zwischenformat) to conduct [our research](https://dlina.github.io/talks/). This format only held structural information, not the texts themselves. Back then, our research group called itself DLINA (digitally-enabled literary network analysis). Since our focus broadened, we stopped using this name. Our future endeavours will sail under the **Programmable Corpora** flag.
+GerDraCor evolved from earlier work under the DLINA (digitally-enabled literary network analysis) project, which used an [intermediary format](https://github.com/dlina/project/tree/master/data/zwischenformat) containing only structural data for [network analysis research](https://dlina.github.io/talks/). As our research agenda expanded beyond network analysis, we developed the **Programmable Corpora** paradigm, enabling programmatic access to complete dramatic texts alongside their structural features.
 
-(README last updated on January 21, 2026.)
+(README last updated on February 8, 2026.)
