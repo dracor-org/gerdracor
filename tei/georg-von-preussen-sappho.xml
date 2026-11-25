@@ -16,6 +16,10 @@
           <idno type="wikidata">Q105946</idno>
           <idno type="pnd">101471920</idno>
         </author>
+        <respStmt>
+          <resp>Converted to TEI by</resp>
+          <persName ref="https://orcid.org/0000-0003-2419-6629">Frank Fischer</persName>
+        </respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher xml:id="dracor">DraCor</publisher>
@@ -31,11 +35,17 @@
           <availability status="free">
             <p>In the public domain.</p>
           </availability>
-          <bibl type="originalSource">
-            <author>G. Conrad</author> [= Georg von Preußen]: <title>Sappho. Drama in einem
-              Aufzuge</title>. <pubPlace>Berlin</pubPlace>: <publisher>Voß</publisher>
-            <date>1887</date>. (S. <biblScope unit="page" from="1" to="41">1–41</biblScope>.)</bibl>
         </bibl>
+        <bibl type="originalSource">
+          <author>G. Conrad</author> [= Georg von Preußen]: <title>Sappho. Drama in einem
+            Aufzuge</title>. <pubPlace>Berlin</pubPlace>: <publisher>Voß</publisher>
+          <date>1887</date>. (S. <biblScope unit="page" from="1" to="41">1–41</biblScope>.)</bibl>
+        <bibl type="wikidata"><idno>Q136706902</idno></bibl>
+        <listEvent>
+          <event type="print" when="1887">
+            <desc/>
+          </event>
+        </listEvent>
       </sourceDesc>
     </fileDesc>
     <profileDesc>
@@ -47,6 +57,9 @@
           <personGrp xml:id="tritonen" sex="MALE">
             <name>Tritonen</name>
           </personGrp>
+          <person xml:id="nereide" sex="FEMALE">
+            <persName>Nereide</persName>
+          </person>
           <person xml:id="oberpriester" sex="MALE">
             <persName>Oberpriester</persName>
           </person>
@@ -56,11 +69,13 @@
           <person xml:id="lais" sex="FEMALE">
             <persName>Laïs</persName>
           </person>
-          <person xml:id="phaon" sex="MALE" ana="http://www.wikidata.org/entity/Q595876">
+          <person xml:id="phaon" sex="MALE">
             <persName>Phaon</persName>
+            <idno type="wikidata">Q595876</idno>
           </person>
-          <person xml:id="sappho" sex="FEMALE" ana="http://www.wikidata.org/entity/Q17892">
+          <person xml:id="sappho" sex="FEMALE">
             <persName>Sappho</persName>
+            <idno type="wikidata">Q17892</idno>
           </person>
         </listPerson>
       </particDesc>
@@ -71,16 +86,6 @@
       </listChange>
     </revisionDesc>
   </teiHeader>
-  <standOff>
-    <listEvent>
-      <event type="print" when="1887">
-        <desc/>
-      </event>
-    </listEvent>
-    <listRelation>
-      <relation name="wikidata" active="https://dracor.org/entity/ger000750" passive="http://www.wikidata.org/entity/Q136706902"/>
-    </listRelation>
-  </standOff>
   <text>
     <pb n="1"/>
     <front>
@@ -93,7 +98,7 @@
         <note>Den Bühnen gegenüber Manuscript.</note>
         <docImprint>
           <pubPlace>Berlin</pubPlace>
-          <date>1887.</date>
+          <docDate>1887.</docDate>
           <publisher>Vossische Buchhandlung. (Strikker).</publisher>
         </docImprint>
       </titlePage>
@@ -141,7 +146,7 @@
           <l>Der glühenden Liebe, dem frohen Gesange,</l>
           <l>Es giebt keine Sorgen, es giebt keinen Schmerz.</l>
         </sp>
-        <sp who="#nereiden">
+        <sp who="#nereide">
           <speaker>Nereide</speaker>
           <stage>(auf einem Felsblock im Meere sitzend).</stage>
           <lg>
@@ -1487,7 +1492,9 @@
         <stage>(Sappho versinkt, langsam von Tritonen und Nereiden zur Tiefe gezogen. Sanfte,
           plätschernde Musik allmählig verhallend).</stage>
       </div>
-      <pb n="41"/>
+    </body>
+    <pb n="41"/>
+    <back>
       <div type="epilogue">
         <head>Sapphisches Versmaaß.</head>
         <lg>
@@ -1499,6 +1506,6 @@
         <p>Sappho lebte um 600 v. Chr. zu Mitylene auf der Insel Lesbos. Es haben sich nur wenige
           von ihren Dichtungen erhalten.</p>
       </div>
-    </body>
+    </back>
   </text>
 </TEI>
